@@ -205,13 +205,13 @@ docker exec promtail wget -q -O- http://loki:3100/ready
 ### Network Issues
 
 ```bash
-# Check DNS resolution
+# Check DNS resolution (requires dnsutils package, or bind-utils on RHEL)
 docker exec promtail nslookup loki
 
-# Check network connectivity
+# Check network connectivity (requires netcat-openbsd package)
 docker exec promtail nc -zv loki 3100
 
-# Check if Loki port is open
+# Check if Loki port is open (requires net-tools package)
 netstat -tlnp | grep 3100
 ```
 

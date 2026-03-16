@@ -48,9 +48,9 @@ static-deploy/
 all:
   hosts:
     web1:
-      ansible_host: 10.0.1.10
+      ansible_host: <WEB_SERVER_1_IP>
     web2:
-      ansible_host: 10.0.1.11
+      ansible_host: <WEB_SERVER_2_IP>
   vars:
     ansible_user: deploy
     env_name: production
@@ -61,7 +61,7 @@ all:
 all:
   hosts:
     staging1:
-      ansible_host: 10.0.2.10
+      ansible_host: <STAGING_SERVER_IP>
   vars:
     ansible_user: deploy
     env_name: staging

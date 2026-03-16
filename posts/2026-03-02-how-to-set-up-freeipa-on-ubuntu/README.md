@@ -52,7 +52,7 @@ sudo nano /etc/hosts
 
 ```text
 # Add this line (replace with your actual IP)
-192.168.1.10   ipa.example.com ipa
+<SERVER_IP>   ipa.example.com ipa
 ```
 
 ## Installing FreeIPA Server

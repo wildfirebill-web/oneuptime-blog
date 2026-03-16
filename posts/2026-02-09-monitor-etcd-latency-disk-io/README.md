@@ -152,9 +152,9 @@ metadata:
   namespace: kube-system
 subsets:
 - addresses:
-  - ip: 10.0.1.10  # Control plane node 1
-  - ip: 10.0.1.11  # Control plane node 2
-  - ip: 10.0.1.12  # Control plane node 3
+  - ip: <ETCD_NODE_1_IP>  # Control plane node 1
+  - ip: <ETCD_NODE_2_IP>  # Control plane node 2
+  - ip: <ETCD_NODE_3_IP>  # Control plane node 3
   ports:
   - name: metrics
     port: 2381

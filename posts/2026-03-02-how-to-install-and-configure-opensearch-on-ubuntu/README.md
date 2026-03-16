@@ -114,7 +114,7 @@ http.port: 9200
 discovery.type: single-node
 
 # For multi-node cluster:
-# discovery.seed_hosts: ["192.168.1.10", "192.168.1.11"]
+# discovery.seed_hosts: ["<OPENSEARCH_NODE_1_IP>", "<OPENSEARCH_NODE_2_IP>"]
 # cluster.initial_cluster_manager_nodes: ["os-node-01", "os-node-02"]
 
 # Security plugin configuration

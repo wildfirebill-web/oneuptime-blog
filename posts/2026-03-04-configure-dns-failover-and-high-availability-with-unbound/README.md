@@ -25,8 +25,8 @@ sudo vi /etc/resolv.conf
 ```
 
 ```bash
-nameserver 10.0.1.10
-nameserver 10.0.1.11
+nameserver <PRIMARY_DNS_IP>
+nameserver <SECONDARY_DNS_IP>
 options timeout:2 attempts:2
 ```
 
@@ -61,7 +61,7 @@ vrrp_instance DNS_VIP {
     advert_int 1
 
     virtual_ipaddress {
-        10.0.1.100/24
+        <VIP_ADDRESS>/24
     }
 
     track_script {
@@ -83,8 +83,8 @@ Configure Unbound to forward specific zones to multiple servers:
 ```yaml
 stub-zone:
     name: "internal.example.com"
-    stub-addr: 10.0.1.10
-    stub-addr: 10.0.1.11
+    stub-addr: <PRIMARY_DNS_IP>
+    stub-addr: <SECONDARY_DNS_IP>
     stub-first: yes
 ```
 

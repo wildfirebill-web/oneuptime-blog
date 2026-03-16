@@ -60,8 +60,8 @@ For a production Ceph cluster, consider the following minimum requirements:
 
 ```bash
 # Example network layout for Ceph cluster
-# Public Network (client access): 192.168.1.0/24
-# Cluster Network (OSD replication): 192.168.2.0/24
+# Public Network (client access): <PUBLIC_NETWORK>  (e.g., 192.168.1.0/24)
+# Cluster Network (OSD replication): <CLUSTER_NETWORK>  (e.g., 192.168.2.0/24)
 
 # Verify network connectivity between nodes
 ping -c 3 ceph-node1
@@ -82,11 +82,11 @@ sudo hostnamectl set-hostname ceph-node1  # Run on each node with appropriate na
 
 # Configure /etc/hosts on all nodes for name resolution
 sudo tee -a /etc/hosts << 'EOF'
-192.168.1.10 ceph-node1
-192.168.1.11 ceph-node2
-192.168.1.12 ceph-node3
-192.168.1.13 ceph-node4
-192.168.1.14 ceph-node5
+<CEPH_NODE1_IP> ceph-node1
+<CEPH_NODE2_IP> ceph-node2
+<CEPH_NODE3_IP> ceph-node3
+<CEPH_NODE4_IP> ceph-node4
+<CEPH_NODE5_IP> ceph-node5
 EOF
 
 # Ensure time synchronization is configured
@@ -175,12 +175,12 @@ cephadm version
 # Bootstrap the Ceph cluster from the first node
 # This creates the initial monitor and manager daemons
 sudo cephadm bootstrap \
-    --mon-ip 192.168.1.10 \
+    --mon-ip <CEPH_NODE1_IP> \
     --initial-dashboard-user admin \
-    --initial-dashboard-password SecurePassword123 \
+    --initial-dashboard-password <DASHBOARD_PASSWORD> \
     --dashboard-password-noupdate \
     --allow-fqdn-hostname \
-    --cluster-network 192.168.2.0/24
+    --cluster-network <CLUSTER_NETWORK>
 
 # The bootstrap process will output:
 # - Dashboard URL and credentials
@@ -216,21 +216,21 @@ ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph-node5
 
 # Add hosts to the cluster with their labels
 # Labels help organize and target daemon placement
-ceph orch host add ceph-node2 192.168.1.11 --labels _admin,mon,osd
-ceph orch host add ceph-node3 192.168.1.12 --labels mon,osd
-ceph orch host add ceph-node4 192.168.1.13 --labels osd
-ceph orch host add ceph-node5 192.168.1.14 --labels osd
+ceph orch host add ceph-node2 <CEPH_NODE2_IP> --labels _admin,mon,osd
+ceph orch host add ceph-node3 <CEPH_NODE3_IP> --labels mon,osd
+ceph orch host add ceph-node4 <CEPH_NODE4_IP> --labels osd
+ceph orch host add ceph-node5 <CEPH_NODE5_IP> --labels osd
 
 # Verify hosts were added
 ceph orch host ls
 
 # Expected output:
-# HOST        ADDR          LABELS                  STATUS
-# ceph-node1  192.168.1.10  _admin,mon,mgr,osd
-# ceph-node2  192.168.1.11  _admin,mon,osd
-# ceph-node3  192.168.1.12  mon,osd
-# ceph-node4  192.168.1.13  osd
-# ceph-node5  192.168.1.14  osd
+# HOST        ADDR             LABELS                  STATUS
+# ceph-node1  <CEPH_NODE1_IP>  _admin,mon,mgr,osd
+# ceph-node2  <CEPH_NODE2_IP>  _admin,mon,osd
+# ceph-node3  <CEPH_NODE3_IP>  mon,osd
+# ceph-node4  <CEPH_NODE4_IP>  osd
+# ceph-node5  <CEPH_NODE5_IP>  osd
 ```
 
 ### Deploy Additional Monitors
@@ -247,9 +247,9 @@ ceph orch apply mon --placement="ceph-node1,ceph-node2,ceph-node3"
 ceph mon stat
 
 # Expected output:
-# e3: 3 mons at {ceph-node1=[v2:192.168.1.10:3300/0,v1:192.168.1.10:6789/0],
-#                ceph-node2=[v2:192.168.1.11:3300/0,v1:192.168.1.11:6789/0],
-#                ceph-node3=[v2:192.168.1.12:3300/0,v1:192.168.1.12:6789/0]},
+# e3: 3 mons at {ceph-node1=[v2:<CEPH_NODE1_IP>:3300/0,v1:<CEPH_NODE1_IP>:6789/0],
+#                ceph-node2=[v2:<CEPH_NODE2_IP>:3300/0,v1:<CEPH_NODE2_IP>:6789/0],
+#                ceph-node3=[v2:<CEPH_NODE3_IP>:3300/0,v1:<CEPH_NODE3_IP>:6789/0]},
 # election epoch 8, leader 0 ceph-node1, quorum 0,1,2 ceph-node1,ceph-node2,ceph-node3
 ```
 
@@ -1128,14 +1128,14 @@ fsid = a7f64266-0894-4f1e-a635-d0aeaca0e993
 cluster = ceph
 
 # Monitor addresses - comma-separated list of all monitors
-mon_host = 192.168.1.10,192.168.1.11,192.168.1.12
+mon_host = <CEPH_NODE1_IP>,<CEPH_NODE2_IP>,<CEPH_NODE3_IP>
 mon_initial_members = ceph-node1,ceph-node2,ceph-node3
 
 # Network configuration
 # Public network: client communication and inter-daemon communication
-public_network = 192.168.1.0/24
+public_network = <PUBLIC_NETWORK>
 # Cluster network: OSD replication traffic (optional but recommended)
-cluster_network = 192.168.2.0/24
+cluster_network = <CLUSTER_NETWORK>
 
 # Authentication settings
 auth_cluster_required = cephx

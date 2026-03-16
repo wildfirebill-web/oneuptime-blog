@@ -108,20 +108,20 @@ The most common discovery method:
 
 ```bash
 # Discover targets using SendTargets protocol
-sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.10
+sudo iscsiadm --mode discovery --type sendtargets --portal <ISCSI_TARGET_IP>
 
 # Discovery with specific port
-sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.10:3260
+sudo iscsiadm --mode discovery --type sendtargets --portal <ISCSI_TARGET_IP>:3260
 
 # Discover from multiple portals (for redundancy)
-sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.10
-sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.11
+sudo iscsiadm --mode discovery --type sendtargets --portal <ISCSI_TARGET_IP>
+sudo iscsiadm --mode discovery --type sendtargets --portal <ISCSI_TARGET_IP_2>
 ```
 
 Example output:
 ```text
-192.168.1.10:3260,1 iqn.1992-08.com.netapp:sn.storage01:vs.1
-192.168.1.11:3260,2 iqn.1992-08.com.netapp:sn.storage01:vs.1
+<ISCSI_TARGET_IP>:3260,1 iqn.1992-08.com.netapp:sn.storage01:vs.1
+<ISCSI_TARGET_IP_2>:3260,2 iqn.1992-08.com.netapp:sn.storage01:vs.1
 ```
 
 The `,1` and `,2` are portal group tags (PGT) - the SAN presents the same target through multiple portals for redundancy.
@@ -146,7 +146,7 @@ sudo iscsiadm --mode discovery --type isns --portal isns-server.example.com
 # Log in to a specific target and portal
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --login
 
 # Log in to all discovered targets
@@ -180,7 +180,7 @@ Configure targets to reconnect automatically after reboots:
 # Mark a node for automatic startup
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.startup \
   --value automatic
@@ -199,20 +199,20 @@ Most enterprise SANs require CHAP authentication. Configure it before attempting
 # Set up outbound CHAP (host authenticates to SAN)
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.session.auth.authmethod --value CHAP
 
 # Set the CHAP username and password
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.session.auth.username --value san_user
 
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.session.auth.password --value 'SecurePassword!'
 ```
@@ -223,13 +223,13 @@ For mutual CHAP (bidirectional authentication):
 # In credentials - the SAN authenticates back to the host
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.session.auth.username_in --value host_user
 
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op update \
   --name node.session.auth.password_in --value 'HostPassword!'
 ```
@@ -279,11 +279,11 @@ When SAN portals change or new portals are added:
 # Remove stale node entries for a target
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op delete
 
 # Re-run discovery to get fresh portal list
-sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.10
+sudo iscsiadm --mode discovery --type sendtargets --portal <ISCSI_TARGET_IP>
 ```
 
 ## Logging Out and Cleanup
@@ -292,7 +292,7 @@ sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.1.10
 # Log out from a specific session
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --logout
 
 # Log out from all sessions
@@ -301,7 +301,7 @@ sudo iscsiadm --mode node --logoutall=all
 # Remove a node record entirely (won't auto-reconnect)
 sudo iscsiadm --mode node \
   --targetname iqn.1992-08.com.netapp:sn.storage01:vs.1 \
-  --portal 192.168.1.10:3260 \
+  --portal <ISCSI_TARGET_IP>:3260 \
   --op delete
 ```
 
@@ -311,8 +311,9 @@ sudo iscsiadm --mode node \
 # Check iscsid logs
 sudo journalctl -u iscsid -f
 
-# Connection refused
-nc -zv 192.168.1.10 3260
+# Connection refused — install netcat first if not available:
+# sudo apt install netcat-openbsd
+nc -zv <ISCSI_TARGET_IP> 3260
 
 # Authentication failure - check CHAP credentials match SAN config
 sudo iscsiadm --mode node --op show

@@ -49,7 +49,7 @@ az group create --name netapp-rg --location eastus2
 az network vnet create \
   --resource-group netapp-rg \
   --name netapp-vnet \
-  --address-prefix 10.10.0.0/16 \
+  --address-prefix <VNET_ADDRESS_SPACE> \
   --location eastus2
 
 # Create a delegated subnet for Azure NetApp Files
@@ -58,7 +58,7 @@ az network vnet subnet create \
   --resource-group netapp-rg \
   --vnet-name netapp-vnet \
   --name netapp-subnet \
-  --address-prefix 10.10.1.0/24 \
+  --address-prefix <SUBNET_PREFIX> \
   --delegations "Microsoft.NetApp/volumes"
 ```
 
@@ -81,7 +81,7 @@ If you plan to use SMB volumes, you need to join the NetApp account to an Active
 az netappfiles account ad add \
   --resource-group netapp-rg \
   --account-name mynetappaccount \
-  --dns "10.10.0.4" \
+  --dns "<AD_DNS_SERVER_IP>" \
   --domain "corp.contoso.com" \
   --smb-server-name "netappsmb" \
   --username "adjoin-svc" \
@@ -133,7 +133,7 @@ az netappfiles volume create \
   --vnet netapp-vnet \
   --subnet netapp-subnet \
   --protocol-types NFSv4.1 \
-  --allowed-clients "10.10.0.0/16" \
+  --allowed-clients "<VNET_ADDRESS_SPACE>" \
   --rule-index 1 \
   --unix-read-write true
 ```
@@ -191,7 +191,7 @@ sudo mkdir -p /mnt/appdata
 # Mount the volume using NFSv4.1
 # Replace the IP with the mount target IP from the previous command
 sudo mount -t nfs -o rw,hard,rsize=65536,wsize=65536,vers=4.1,tcp \
-  10.10.1.4:/appdata /mnt/appdata
+  <MOUNT_IP>:/appdata /mnt/appdata
 
 # Verify the mount
 df -h /mnt/appdata
@@ -207,7 +207,7 @@ Add to `/etc/fstab` for persistence:
 
 ```bash
 # Add to fstab for automatic mounting on boot
-echo "10.10.1.4:/appdata /mnt/appdata nfs rw,hard,rsize=65536,wsize=65536,vers=4.1,tcp 0 0" | sudo tee -a /etc/fstab
+echo "<MOUNT_IP>:/appdata /mnt/appdata nfs rw,hard,rsize=65536,wsize=65536,vers=4.1,tcp 0 0" | sudo tee -a /etc/fstab
 ```
 
 ## Configuring Volume Export Policies
@@ -222,7 +222,7 @@ az netappfiles volume export-policy add \
   --pool-name premium-pool \
   --volume-name app-data-vol \
   --rule-index 2 \
-  --allowed-clients "10.10.2.0/24" \
+  --allowed-clients "<READONLY_CLIENT_SUBNET>" \
   --nfsv41 true \
   --unix-read-only true
 ```
