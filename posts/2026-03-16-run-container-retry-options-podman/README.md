@@ -19,7 +19,7 @@ Network issues can cause image pulls to fail intermittently, especially in CI/CD
 Podman supports two retry-related flags:
 
 - `--retry <count>` - Number of times to retry a failed image pull (default: 3)
-- `--retry-delay <duration>` - Time to wait between retry attempts (default: 0, no delay)
+- `--retry-delay <duration>` - Time to wait between retry attempts (default: exponential backoff starting at 2 seconds)
 
 These flags apply to the image pull operation that occurs when you run a container and the image is not available locally.
 

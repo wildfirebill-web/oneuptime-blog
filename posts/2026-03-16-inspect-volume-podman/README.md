@@ -166,8 +166,8 @@ done
 ## JSON Output for Programmatic Use
 
 ```bash
-# Full JSON output
-podman volume inspect mydata --format json
+# Full JSON output (default output is already JSON)
+podman volume inspect mydata
 
 # Parse with jq
 podman volume inspect mydata | jq '.[0].Mountpoint'

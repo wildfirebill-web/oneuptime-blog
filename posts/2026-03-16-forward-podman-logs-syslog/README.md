@@ -75,7 +75,7 @@ Point rsyslog directly at Podman's log files.
 
 ```bash
 # Find the container log file path
-podman inspect --format '{{.LogPath}}' my-container
+podman inspect --format '{{.HostConfig.LogConfig.Path}}' my-container
 
 # Create an rsyslog config to watch the log file
 sudo tee /etc/rsyslog.d/podman-files.conf << 'EOF'

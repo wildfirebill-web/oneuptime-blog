@@ -105,8 +105,9 @@ In CI/CD pipelines, the local cache may be empty on each run. You can use `--cac
 # Pull the previous build to use as cache source
 podman pull registry.example.com/myapp:cache || true
 
-# Build using the pulled image as cache
+# Build using the pulled image as cache (--layers is required for --cache-from)
 podman build \
+  --layers \
   --cache-from=registry.example.com/myapp:cache \
   -t myapp:latest \
   .

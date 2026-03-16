@@ -150,16 +150,17 @@ podman run -d --name app \
     myapp:latest node server.js
 ```
 
-## Entrypoint with Shell Form vs Exec Form
+## Entrypoint with JSON Array vs String Form
 
 ```bash
-# Exec form (preferred) — command receives signals properly
+# JSON array form (preferred) — command receives signals properly
 podman run --entrypoint '["node", "server.js"]' myapp
 
-# Shell form — runs through /bin/sh -c
-podman run --entrypoint "node server.js" myapp
+# String form — treated as a single executable path
+# If it does not parse as JSON, Podman treats it as a literal command
+podman run --entrypoint /usr/bin/node myapp server.js
 
-# The exec form is preferred because:
+# The JSON array form is preferred because:
 # - The process receives SIGTERM on container stop
 # - The process is PID 1 (not a child of sh)
 # - Proper signal handling for graceful shutdown

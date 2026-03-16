@@ -114,7 +114,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
 # Layer 3: App dependencies
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --production
+RUN npm ci --omit=dev
 
 # Layer 4: App source
 COPY . .
@@ -134,7 +134,7 @@ WORKDIR /app
 
 # Layer 1: Production dependencies (cached separately)
 COPY package.json package-lock.json ./
-RUN npm ci --production && cp -R node_modules /prod_modules
+RUN npm ci --omit=dev && cp -R node_modules /prod_modules
 
 # Layer 2: All dependencies (for building)
 RUN npm ci

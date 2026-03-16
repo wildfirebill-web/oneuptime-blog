@@ -93,13 +93,16 @@ podman machine stop
 podman machine stop dev-heavy
 ```
 
-### Force Stop
+### Unresponsive Machine
 
-If the machine is unresponsive:
+If the machine is unresponsive, you may need to stop it and then remove and recreate it:
 
 ```bash
-# Force stop the machine (not recommended for regular use)
-podman machine stop --force
+# Attempt to stop the machine
+podman machine stop
+
+# If the machine does not respond, on macOS you can kill the VM process
+pkill -f "applehv\|qemu" 2>/dev/null
 ```
 
 ### What Happens During Stop
@@ -292,11 +295,8 @@ podman machine start
 If the machine hangs during stop:
 
 ```bash
-# Force stop after timeout
-podman machine stop --force
-
-# If still stuck, on macOS you can kill the QEMU process
-pkill -f qemu 2>/dev/null
+# On macOS, kill the VM process
+pkill -f "applehv\|qemu" 2>/dev/null
 
 # On Windows, use Task Manager to end the podman/wsl processes
 ```

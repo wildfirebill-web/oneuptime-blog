@@ -109,26 +109,29 @@ podman start my-service
 
 ## Restart Policies with systemd Integration
 
-For containers that should survive host reboots, generate a systemd service:
+For containers that should survive host reboots, use Quadlet unit files (the recommended approach since Podman 4.7; `podman generate systemd` is deprecated):
 
 ```bash
-# Create and run a container with a restart policy
-podman run -d --name production-web \
-  --restart always \
-  -p 8080:80 \
-  nginx:latest
+# Create a Quadlet container unit file
+mkdir -p ~/.config/containers/systemd
 
-# Generate a systemd unit file for the container
-podman generate systemd --name production-web --new --files
+cat > ~/.config/containers/systemd/production-web.container << 'EOF'
+[Container]
+Image=nginx:latest
+PublishPort=8080:80
 
-# Install the service for the current user
-mkdir -p ~/.config/systemd/user/
-cp container-production-web.service ~/.config/systemd/user/
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
+
+# Reload systemd to pick up the new unit
+systemctl --user daemon-reload
 
 # Enable and start the service
-systemctl --user daemon-reload
-systemctl --user enable container-production-web.service
-systemctl --user start container-production-web.service
+systemctl --user enable --now production-web.service
 
 # Enable user lingering so services run without login
 loginctl enable-linger $(whoami)
@@ -229,7 +232,7 @@ Restart policies keep your containers running without manual intervention:
 - `on-failure[:max]`: Restart only on errors, with optional retry limit
 - `always`: Always restart regardless of exit code
 - `unless-stopped`: Like `always` but respects manual stops
-- Use `podman generate systemd` for boot-persistent services
+- Use Quadlet unit files for boot-persistent services (preferred over the deprecated `podman generate systemd`)
 - Use `podman update --restart` to change policies on running containers
 
 For production services, `always` or `unless-stopped` combined with systemd integration provides the most reliable operation.

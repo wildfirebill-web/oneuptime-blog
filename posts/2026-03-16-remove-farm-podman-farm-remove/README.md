@@ -119,14 +119,11 @@ echo "Temporary farm removed."
 
 ## Removing All Farms
 
-There is no built-in command to remove all farms at once, but you can script it:
+Use the `--all` flag to remove all farms at once:
 
 ```bash
 # Remove all farms
-podman farm list --format '{{.Name}}' | while read -r FARM; do
-    podman farm remove "${FARM}"
-    echo "Removed: ${FARM}"
-done
+podman farm remove --all
 
 # Verify
 podman farm list

@@ -150,17 +150,20 @@ podman attach crash-test
 ### Interactive Database Client
 
 ```bash
-# Start a Redis container
-podman run -d --name my-redis redis:latest
+# Create a shared network
+podman network create redis-net
 
-# Start redis-cli in a detached interactive container
-podman run -dit --name redis-cli --link my-redis:redis redis:latest redis-cli -h redis
+# Start a Redis container on the shared network
+podman run -d --name my-redis --network redis-net redis:latest
+
+# Start redis-cli in a detached interactive container on the same network
+podman run -dit --name redis-cli --network redis-net redis:latest redis-cli -h my-redis
 
 # Attach to use redis-cli interactively
 podman attach redis-cli
-# redis:6379> SET mykey "hello"
+# my-redis:6379> SET mykey "hello"
 # OK
-# redis:6379> GET mykey
+# my-redis:6379> GET mykey
 # "hello"
 ```
 
@@ -169,6 +172,7 @@ podman attach redis-cli
 ```bash
 podman stop my-logger my-shell web-server my-node my-api crash-test my-redis redis-cli 2>/dev/null
 podman rm my-logger my-shell web-server my-node my-api crash-test my-redis redis-cli 2>/dev/null
+podman network rm redis-net 2>/dev/null
 ```
 
 ## Summary

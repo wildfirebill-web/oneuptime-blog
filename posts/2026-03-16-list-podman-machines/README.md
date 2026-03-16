@@ -94,7 +94,7 @@ podman machine ls --format "table {{.Name}}\t{{.CPUs}}\t{{.Memory}}\t{{.DiskSize
 podman machine ls --format "{{.Name}} — Last up: {{.LastUp}}"
 ```
 
-Available template fields include `Name`, `VMType`, `Created`, `Running`, `Starting`, `LastUp`, `CPUs`, `Memory`, and `DiskSize`.
+Available template fields include `Name`, `Default`, `VMType`, `Created`, `Running`, `LastUp`, `Stream`, `CPUs`, `Memory`, and `DiskSize`.
 
 ## Checking If Any Machines Exist
 

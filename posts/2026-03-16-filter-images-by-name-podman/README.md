@@ -82,8 +82,8 @@ Stack multiple filters to narrow results further.
 # Find nginx images that are dangling (untagged)
 podman images --filter reference='*nginx*' --filter dangling=true
 
-# Find alpine images created in the last week
-podman images --filter reference='alpine*' --filter since=7d
+# Find alpine images created before the last week
+podman images --filter reference='alpine*' --filter until=168h
 
 # Find Python images with a specific label
 podman images --filter reference='python*' --filter label=maintainer

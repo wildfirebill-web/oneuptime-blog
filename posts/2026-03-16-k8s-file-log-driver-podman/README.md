@@ -59,13 +59,8 @@ podman run -d \
   --name web \
   nginx:latest
 
-# Set log file size with rotation
-podman run -d \
-  --log-driver k8s-file \
-  --log-opt max-size=10m \
-  --log-opt max-file=5 \
-  --name web \
-  nginx:latest
+# Note: The max-file option (number of rotated log files) is not
+# currently supported by Podman's k8s-file driver. Only max-size is supported.
 
 # Check the log file size
 LOG_PATH=$(podman inspect --format '{{.LogPath}}' web)
@@ -189,7 +184,6 @@ services:
       driver: k8s-file
       options:
         max-size: "10m"
-        max-file: "3"
 
   api:
     image: my-api:latest
@@ -201,4 +195,4 @@ services:
 
 ## Summary
 
-The k8s-file driver is Podman's default and stores logs in a Kubernetes-compatible text format with timestamps, stream identifiers, and partial-line markers. It is human-readable, has lower overhead than JSON, and supports size limits via `max-size`. Use `awk` to parse the structured fields, and configure `max-size` and `max-file` to prevent unbounded log growth.
+The k8s-file driver is Podman's default and stores logs in a Kubernetes-compatible text format with timestamps, stream identifiers, and partial-line markers. It is human-readable, has lower overhead than JSON, and supports size limits via `max-size`. Use `awk` to parse the structured fields, and configure `max-size` to prevent unbounded log growth.

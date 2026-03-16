@@ -47,7 +47,7 @@ podman machine init --cpus 8
 
 ### Modifying CPU After Creation
 
-To change the CPU allocation of an existing machine, you need to use `podman machine set`:
+To change the CPU allocation of an existing machine, you can use `podman machine set`. Note that `--cpus` is only supported for QEMU-based machines. On Apple Silicon Macs (applehv), you must recreate the machine with `podman machine init` to change CPU allocation.
 
 ```bash
 # Stop the machine first
@@ -76,6 +76,8 @@ podman machine init --memory 16384
 ```
 
 ### Modifying Memory After Creation
+
+Note: `--memory` on `podman machine set` is only supported for QEMU-based machines. On Apple Silicon Macs (applehv), you must recreate the machine with `podman machine init` to change memory allocation.
 
 ```bash
 # Stop the machine
@@ -255,7 +257,7 @@ If your machine runs out of resources:
 
 ```bash
 # Check which containers are using the most resources
-podman stats --no-stream --sort=mem
+podman stats --no-stream
 
 # Kill resource-heavy containers
 podman stop <container-name>
@@ -264,7 +266,7 @@ podman stop <container-name>
 podman system prune -a
 
 # If the machine itself is unresponsive
-podman machine stop --force
+podman machine stop
 podman machine set --memory 16384
 podman machine start
 ```

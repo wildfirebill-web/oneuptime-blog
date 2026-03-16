@@ -43,8 +43,8 @@ podman farm list
 You can add several connections in one command:
 
 ```bash
-# Add multiple connections at once
-podman farm update --add arm64-builder --add ppc64le-builder my-farm
+# Add multiple connections at once (comma-separated)
+podman farm update --add arm64-builder,ppc64le-builder my-farm
 
 # Or add them one at a time
 podman farm update --add s390x-builder my-farm

@@ -175,14 +175,22 @@ podman stop debug-app && podman rm debug-app
 
 ## Read-Only with --read-only-tmpfs
 
-Podman can automatically add tmpfs mounts to common writable locations:
+When `--read-only` is set, Podman automatically adds tmpfs mounts to common writable locations (`/tmp`, `/run`, `/var/tmp`, `/dev`, `/dev/shm`) because `--read-only-tmpfs` defaults to `true`. You can disable this behavior:
 
 ```bash
-# The --read-only-tmpfs flag adds tmpfs to /dev/shm and /run automatically
-podman run --read-only --read-only-tmpfs \
+# Default behavior: --read-only-tmpfs is true when --read-only is set
+# Tmpfs is automatically added to /tmp, /run, /var/tmp, /dev, /dev/shm
+podman run --read-only \
   --rm alpine sh -c "
     echo 'test' > /run/test.txt && echo '/run is writable'
     echo 'test' > /dev/shm/test.txt && echo '/dev/shm is writable'
+    echo 'test' > /tmp/test.txt && echo '/tmp is writable'
+  "
+
+# Disable automatic tmpfs mounts with --read-only-tmpfs=false
+podman run --read-only --read-only-tmpfs=false \
+  --rm alpine sh -c "
+    echo 'test' > /tmp/test.txt 2>&1 || echo '/tmp is read-only'
   "
 ```
 

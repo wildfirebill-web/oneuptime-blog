@@ -150,7 +150,7 @@ Instead of all devices, grant access to only what you need:
 podman run --device /dev/fuse -it alpine ls -la /dev/fuse
 
 # Grant access with custom permissions (read/write/mknod)
-podman run --device /dev/sda:r -it alpine sh -c "
+podman run --device /dev/sda:/dev/sda:r -it alpine sh -c "
   dd if=/dev/sda bs=512 count=1 2>/dev/null | hexdump -C | head -5
 "
 ```

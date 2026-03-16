@@ -134,7 +134,8 @@ You can specify a custom init binary with `--init-path`:
 # podman run --init --init-path /path/to/custom-init alpine sh
 
 # Check what init binary Podman uses by default
-podman info --format '{{.Host.OCIRuntime.Path}}'
+# The default init binary is catatonit, located at /usr/libexec/podman/catatonit
+# or /usr/bin/catatonit depending on the distribution
 ```
 
 ## Init with Shell Scripts

@@ -139,8 +139,8 @@ EOF
 See detailed build progress with the `--log-level` flag.
 
 ```bash
-# Build with debug output
-podman build --log-level debug -t myapp:latest .
+# Build with debug output (--log-level is a global Podman flag)
+podman --log-level debug build -t myapp:latest .
 
 # Build with build progress displayed
 podman build --format docker -t myapp:latest .

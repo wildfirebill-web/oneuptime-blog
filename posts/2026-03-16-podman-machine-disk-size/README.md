@@ -53,7 +53,7 @@ podman machine init \
 
 ## Modifying Disk Size After Creation
 
-Use `podman machine set` to change the disk size:
+Use `podman machine set` to change the disk size. Note that `--disk-size` is only supported for QEMU-based machines. On Apple Silicon Macs (applehv), you must recreate the machine with `podman machine init` to change disk size.
 
 ```bash
 # Stop the machine first

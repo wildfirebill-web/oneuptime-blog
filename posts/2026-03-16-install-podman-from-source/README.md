@@ -202,8 +202,7 @@ sudo cp /tmp/podman-src/vendor/github.com/containers/image/v5/registries.conf /e
 
 # Create a basic registries configuration
 sudo tee /etc/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io']
+unqualified-search-registries = ['docker.io', 'quay.io']
 EOF
 
 # Create a basic policy file

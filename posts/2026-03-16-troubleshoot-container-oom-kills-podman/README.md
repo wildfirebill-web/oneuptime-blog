@@ -124,6 +124,7 @@ Strategies to avoid OOM kills in production.
 podman run -d --memory 520m my-image:latest
 
 # Strategy 2: Disable OOM killer and let the container handle memory pressure
+# Note: --oom-kill-disable is not supported on cgroups V2 systems
 podman run -d --memory 512m --oom-kill-disable my-image:latest
 
 # Strategy 3: Set OOM score adjustment (lower = less likely to be killed)

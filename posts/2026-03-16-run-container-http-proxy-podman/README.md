@@ -68,23 +68,25 @@ podman run --rm \
 For system-wide proxy settings that apply to all containers, edit the Podman configuration file.
 
 ```bash
-# Check the location of your containers.conf
-podman info --format '{{.Host.ConfigFile}}'
+# Common locations for containers.conf:
+# System: /usr/share/containers/containers.conf
+# System override: /etc/containers/containers.conf
+# User: ~/.config/containers/containers.conf
 
 # Edit the user-level configuration
 mkdir -p ~/.config/containers
 cat >> ~/.config/containers/containers.conf << 'EOF'
 [containers]
 http_proxy = true
-
-[engine.env]
-HTTP_PROXY = "http://proxy.example.com:8080"
-HTTPS_PROXY = "http://proxy.example.com:8443"
-NO_PROXY = "localhost,127.0.0.1,.example.com"
+env = [
+  "HTTP_PROXY=http://proxy.example.com:8080",
+  "HTTPS_PROXY=http://proxy.example.com:8443",
+  "NO_PROXY=localhost,127.0.0.1,.example.com"
+]
 EOF
 ```
 
-With `http_proxy = true` set in `containers.conf`, Podman automatically passes the host's proxy environment variables into every container.
+With `http_proxy = true` set in `containers.conf`, Podman automatically passes the host's proxy environment variables into every container. The `env` array under `[containers]` sets default environment variables for all containers.
 
 ## Proxy with Authentication
 

@@ -36,16 +36,16 @@ Control read, write, and mknod permissions on the device:
 
 ```bash
 # Read-only access to a device
-podman run --rm --device /dev/sda:r alpine sh -c "
+podman run --rm --device /dev/sda:/dev/sda:r alpine sh -c "
   ls -la /dev/sda
   echo 'Read-only access granted'
 "
 
 # Read-write access (default)
-podman run --rm --device /dev/fuse:rw alpine ls -la /dev/fuse
+podman run --rm --device /dev/fuse:/dev/fuse:rw alpine ls -la /dev/fuse
 
 # Read, write, and mknod
-podman run --rm --device /dev/fuse:rwm alpine ls -la /dev/fuse
+podman run --rm --device /dev/fuse:/dev/fuse:rwm alpine ls -la /dev/fuse
 ```
 
 Permission flags:
@@ -241,7 +241,7 @@ podman stop device-test && podman rm device-test
 Device access in Podman provides targeted hardware exposure:
 
 - Use `--device /dev/path` to expose specific devices
-- Set permissions with `:r`, `:rw`, or `:rwm` suffixes
+- Set permissions with the three-part format `/host/dev:/container/dev:rwm`
 - Map devices to different container paths with `/host/dev:/container/dev`
 - Supports GPUs, USB, serial ports, cameras, sound, FUSE, and KVM
 - Always prefer `--device` over `--privileged` for security

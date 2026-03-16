@@ -154,8 +154,8 @@ podman ps --size --format "table {{.Names}}\t{{.Image}}\t{{.Size}}"
 # Show containers with their labels
 podman ps --format "table {{.Names}}\t{{.Labels}}"
 
-# Show a specific label value
-podman ps --format "{{.Names}}: {{.Label \"environment\"}}"
+# Show containers with their labels (use inspect for specific label values)
+podman ps --format "{{.Names}}: {{.Labels}}"
 ```
 
 ### Container Details

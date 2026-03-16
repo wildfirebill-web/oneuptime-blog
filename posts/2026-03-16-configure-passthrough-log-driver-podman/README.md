@@ -61,20 +61,20 @@ podman run -d \
 Both drivers avoid storing logs, but they behave differently.
 
 ```bash
-# passthrough: output passes through to the parent process
+# passthrough: actual stdio file descriptors are passed directly to the container
 # If run in foreground, you see the output
 podman run --log-driver passthrough alpine echo "You see this"
 # Output: You see this
 
-# none: output is discarded completely
-podman run --log-driver none alpine echo "You will NOT see this"
-# No output
+# none: output is still visible on the terminal but not stored
+podman run --log-driver none alpine echo "You see this but it is not stored"
+# Output: You see this but it is not stored
 
 # Verify the difference:
 # passthrough - output reaches the terminal
 podman run --rm --log-driver passthrough alpine echo "passthrough test"
 
-# none - output is dropped
+# none - output is visible but not stored for later retrieval
 podman run --rm --log-driver none alpine echo "none test"
 
 # Both fail with podman logs:

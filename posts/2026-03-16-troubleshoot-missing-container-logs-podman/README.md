@@ -154,7 +154,7 @@ podman info --format '{{.Host.LogSizeMax}}'
 
 # If max-size is very small (e.g., 1k), logs rotate immediately
 # Increase the limit
-podman run -d --log-opt max-size=50m --log-opt max-file=3 my-image:latest
+podman run -d --log-opt max-size=50m my-image:latest
 ```
 
 ## Step 8: Check journald (if using journald driver)

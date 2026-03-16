@@ -24,10 +24,10 @@ podman farm list
 Default output:
 
 ```
-Name            Connections
-dev-farm        amd64-builder
-prod-farm       amd64-builder,arm64-builder,ppc64le-builder
-arm-test-farm   arm64-builder
+Name            Connections                                    Default  ReadWrite
+dev-farm        amd64-builder                                  false    true
+prod-farm       amd64-builder,arm64-builder,ppc64le-builder    true     true
+arm-test-farm   arm64-builder                                  false    true
 ```
 
 ## Formatting Output
@@ -51,11 +51,15 @@ Example JSON output:
 [
   {
     "Name": "dev-farm",
-    "Connections": "amd64-builder"
+    "Connections": "amd64-builder",
+    "Default": false,
+    "ReadWrite": true
   },
   {
     "Name": "prod-farm",
-    "Connections": "amd64-builder,arm64-builder,ppc64le-builder"
+    "Connections": "amd64-builder,arm64-builder,ppc64le-builder",
+    "Default": true,
+    "ReadWrite": true
   }
 ]
 ```

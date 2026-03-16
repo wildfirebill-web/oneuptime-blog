@@ -118,9 +118,9 @@ podman manifest add \
   --arch amd64 \
   myapp:latest myapp:windows-ltsc2019
 
-# Add with OS features
+# Add with features
 podman manifest add \
-  --os-features "win32k" \
+  --features "win32k" \
   myapp:latest myapp:windows-special
 ```
 

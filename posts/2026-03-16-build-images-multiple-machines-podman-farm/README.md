@@ -33,14 +33,15 @@ done
 
 ```bash
 # Build an image across all farm nodes
-podman farm build --farm my-farm -t myapp:latest .
+# Note: podman farm build requires a full registry path in the -t flag
+podman farm build --farm my-farm -t registry.example.com/myapp:latest .
 ```
 
 This command:
 1. Sends the build context (current directory) to each node
 2. Runs `podman build` on each node natively
-3. Pulls the built images back to the local machine
-4. Creates a manifest list combining all architecture-specific images
+3. Pushes the built images directly to the registry
+4. Creates a manifest list and pushes it to the registry as well
 
 ## Specifying a Containerfile
 
@@ -91,7 +92,7 @@ podman system connection add localhost \
 podman farm update --add localhost my-farm
 
 # Build will now include the local machine
-podman farm build --farm my-farm -t myapp:latest .
+podman farm build --farm my-farm -t registry.example.com/myapp:latest .
 ```
 
 ## Monitoring Build Progress
@@ -100,7 +101,7 @@ The build command shows output from each node as it progresses:
 
 ```bash
 # Verbose output shows per-node build progress
-podman farm build --farm my-farm -t myapp:latest . 2>&1 | tee build.log
+podman farm build --farm my-farm -t registry.example.com/myapp:latest . 2>&1 | tee build.log
 
 # Check the log for any errors
 grep -i "error" build.log
@@ -118,14 +119,11 @@ FARM="${FARM:-prod-farm}"
 
 echo "Building ${IMAGE} on farm ${FARM}..."
 
-# Build across all farm nodes
-podman farm build --farm "${FARM}" -t "${IMAGE}" .
-
-# Log in to registry if needed
+# Log in to registry before building (farm build pushes directly to registry)
 podman login registry.example.com
 
-# Push the manifest list with all architecture images
-podman manifest push --all "${IMAGE}" "docker://${IMAGE}"
+# Build across all farm nodes (images and manifest are pushed to registry automatically)
+podman farm build --farm "${FARM}" -t "${IMAGE}" .
 
 echo "Successfully built and pushed ${IMAGE}"
 ```
@@ -136,7 +134,7 @@ If a build fails on one node, the entire farm build fails:
 
 ```bash
 # Check which node failed by examining the output
-podman farm build --farm my-farm -t myapp:latest . 2>&1
+podman farm build --farm my-farm -t registry.example.com/myapp:latest . 2>&1
 
 # Test building on individual nodes
 podman --connection amd64-builder build -t myapp:test .
@@ -144,7 +142,7 @@ podman --connection arm64-builder build -t myapp:test .
 
 # If one node is problematic, temporarily remove it
 podman farm update --remove broken-node my-farm
-podman farm build --farm my-farm -t myapp:latest .
+podman farm build --farm my-farm -t registry.example.com/myapp:latest .
 ```
 
 ## Using .containerignore for Smaller Contexts
@@ -163,7 +161,7 @@ docs/
 EOF
 
 # Build with reduced context
-podman farm build --farm my-farm -t myapp:latest .
+podman farm build --farm my-farm -t registry.example.com/myapp:latest .
 ```
 
 ## Performance Tips
@@ -174,9 +172,9 @@ podman farm build --farm my-farm -t myapp:latest .
 # Use fast SSH connections between nodes
 
 # Monitor transfer speeds
-time podman farm build --farm my-farm -t myapp:latest .
+time podman farm build --farm my-farm -t registry.example.com/myapp:latest .
 ```
 
 ## Summary
 
-The `podman farm build` command distributes your container build across every node in a farm, producing native architecture-specific images that are combined into a manifest list. Use it for production multi-arch builds where QEMU emulation is too slow or unreliable. Keep build contexts small with `.containerignore` and test individual node connectivity before running farm builds.
+The `podman farm build` command distributes your container build across every node in a farm. The built images are pushed directly to the registry specified in the `--tag` flag, and a manifest list is created and pushed as well. The `-t` flag must specify a full registry path in the format `registry/repository/imageName[:tag]`. Use it for production multi-arch builds where QEMU emulation is too slow or unreliable. Keep build contexts small with `.containerignore` and test individual node connectivity before running farm builds.

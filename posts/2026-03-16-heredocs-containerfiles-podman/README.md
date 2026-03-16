@@ -72,7 +72,7 @@ cat > Containerfile <<'OUTER'
 FROM python:3.12-slim
 
 # Run a Python script inline
-RUN <<EOF python3
+RUN python3 <<EOF
 import json
 import os
 
@@ -140,16 +140,18 @@ OUTER
 podman build -t heredoc-nginx:latest .
 ```
 
-## Multiple Heredocs in a Single RUN
+## Multiple Heredocs in Separate RUN Instructions
 
-You can use multiple heredocs in one instruction.
+You can use heredocs to create configuration files in separate RUN instructions.
 
 ```bash
 cat > Containerfile <<'OUTER'
 # syntax=docker/dockerfile:1
 FROM alpine:3.19
 
-# Create multiple files in a single layer
+# Create configuration files using heredocs
+RUN mkdir -p /etc/app
+
 RUN <<SCRIPT1 cat > /etc/app/database.conf
 host=localhost
 port=5432

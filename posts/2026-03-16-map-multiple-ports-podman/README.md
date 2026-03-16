@@ -186,7 +186,7 @@ podman port frontend
 podman inspect frontend --format '{{json .NetworkSettings.Ports}}' | jq
 
 # Find which container uses a specific port
-podman ps --filter publish=8080
+podman ps --format "{{.Names}}\t{{.Ports}}" | grep 8080
 ```
 
 ## Checking for Port Conflicts

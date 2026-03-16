@@ -107,13 +107,13 @@ podman machine list
 podman machine init \
   --cpus 4 \
   --memory 8192 \
-  --image-path /path/to/custom-image.qcow2
+  --image /path/to/custom-image.qcow2
 
 # Or specify an image URL
 podman machine init \
   --cpus 4 \
   --memory 8192 \
-  --image-path https://example.com/custom-vm.qcow2
+  --image https://example.com/custom-vm.qcow2
 ```
 
 ## Step 5: Initialize with Volume Mounts

@@ -86,7 +86,7 @@ If you want to remove both the manifest list and the images it references:
 
 ```bash
 # First, note the image digests in the manifest
-podman manifest inspect myapp:latest --format '{{range .Manifests}}{{.Digest}}{{"\n"}}{{end}}'
+podman manifest inspect myapp:latest | jq -r '.manifests[].digest'
 
 # Remove the manifest list
 podman manifest rm myapp:latest

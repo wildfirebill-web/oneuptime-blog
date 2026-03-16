@@ -80,7 +80,7 @@ source ~/.zshrc
 
 # Or install the podman-docker helper
 # This creates a 'docker' symlink pointing to podman
-brew install podman-compose
+brew install podman-docker
 ```
 
 Enable the Docker-compatible socket:

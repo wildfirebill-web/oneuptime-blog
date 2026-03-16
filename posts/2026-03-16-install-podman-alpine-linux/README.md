@@ -64,7 +64,7 @@ Load the required kernel modules:
 sudo modprobe tun
 
 # Make it persistent across reboots
-echo "tun" | sudo tee -a /etc/modules-load.d/podman.conf
+echo "tun" | sudo tee -a /etc/modules
 ```
 
 ## Step 5: Configure Rootless Containers
@@ -137,11 +137,7 @@ Set up default container registries:
 ```bash
 # Configure search registries
 sudo tee /etc/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io']
-
-[registries.block]
-registries = []
+unqualified-search-registries = ['docker.io', 'quay.io']
 EOF
 ```
 

@@ -179,7 +179,9 @@ podman pull 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
 Create a systemd service for containers that should survive reboots:
 
 ```bash
-# Generate a systemd unit for a running container
+# Generate a systemd unit for a running container (note: podman generate systemd
+# is deprecated; consider using Quadlet .container files for new deployments)
+mkdir -p ~/.config/systemd/user
 podman generate systemd --new --name web-app > ~/.config/systemd/user/container-web-app.service
 
 # Reload and enable the service
@@ -207,8 +209,7 @@ If you cannot pull images from Docker Hub:
 ```bash
 # Configure registries
 sudo tee /etc/containers/registries.conf.d/docker.conf <<EOF
-[registries.search]
-registries = ['docker.io']
+unqualified-search-registries = ['docker.io']
 EOF
 ```
 

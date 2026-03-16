@@ -18,11 +18,11 @@ Podman supports multiple log drivers that control how container stdout and stder
 
 Podman supports the following log drivers:
 
-- **k8s-file** (default): Writes logs to a file in Kubernetes log format.
-- **journald**: Sends logs to the systemd journal.
-- **json-file**: Writes logs to a file in JSON format (Docker-compatible).
-- **passthrough**: No logging by Podman; output goes to the terminal.
-- **none**: Disables logging entirely.
+- **journald** (default): Sends logs to the systemd journal.
+- **k8s-file**: Writes logs to a file in Kubernetes log format.
+- **json-file**: Alias for k8s-file (provided for Docker scripting compatibility).
+- **passthrough**: No log storage by Podman; output passes directly through to the parent process.
+- **none**: Disables log storage; output is still visible in interactive sessions but cannot be replayed with `podman logs`.
 
 ## Check the Current Log Driver
 
@@ -46,7 +46,7 @@ podman run -d --log-driver journald --name my-app my-image:latest
 # Use the json-file log driver
 podman run -d --log-driver json-file --name my-app my-image:latest
 
-# Use the k8s-file log driver (default)
+# Use the k8s-file log driver
 podman run -d --log-driver k8s-file --name my-app my-image:latest
 
 # Use passthrough (no log capture)
@@ -160,18 +160,18 @@ services:
 Here is a quick decision guide:
 
 ```bash
-# Use k8s-file (default) when:
+# Use k8s-file when:
 # - You want simple file-based logs
 # - You are running Podman-generated Kubernetes YAML
 # - You want logs accessible via podman logs
 
-# Use journald when:
+# Use journald (default) when:
 # - You want centralized system logging
 # - You need structured metadata (container name, ID, image)
 # - You want to query logs with journalctl
 
-# Use json-file when:
-# - You need Docker-compatible log format
+# Use json-file (alias for k8s-file) when:
+# - You need Docker-compatible scripting
 # - You want to parse logs programmatically
 # - You want log rotation via max-size/max-file
 
@@ -183,8 +183,9 @@ Here is a quick decision guide:
 # Use none when:
 # - The container generates excessive, unneeded logs
 # - You want to minimize disk I/O
+# - Note: output is still visible in interactive sessions, just not stored
 ```
 
 ## Summary
 
-Podman's log driver configuration gives you control over where container logs are stored and how they are formatted. Set the driver per container with `--log-driver`, pass options with `--log-opt`, or change the system-wide default in `containers.conf`. Choose between k8s-file for simplicity, journald for system integration, json-file for Docker compatibility, or passthrough for minimal overhead.
+Podman's log driver configuration gives you control over where container logs are stored and how they are formatted. Set the driver per container with `--log-driver`, pass options with `--log-opt`, or change the system-wide default in `containers.conf`. The default log driver is journald. Choose between journald for system integration, k8s-file for file-based logs, json-file (alias for k8s-file) for Docker compatibility, or passthrough for minimal overhead.

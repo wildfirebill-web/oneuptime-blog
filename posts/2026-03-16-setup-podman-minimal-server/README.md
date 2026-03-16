@@ -106,8 +106,7 @@ EOF
 # Set up default registries (still as podman-user)
 mkdir -p ~/.config/containers
 cat > ~/.config/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io']
+unqualified-search-registries = ['docker.io', 'quay.io']
 EOF
 ```
 

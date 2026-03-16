@@ -87,11 +87,11 @@ podman inspect web --format '{{.Architecture}}'
 Many images are only available for x86_64. Enable Rosetta for fast translation:
 
 ```bash
-# Stop the machine
+# Rosetta must be enabled at machine creation time
+# Remove the existing machine and reinitialize with --rosetta
 podman machine stop
-
-# Enable Rosetta
-podman machine set --rosetta
+podman machine rm
+podman machine init --rosetta
 
 # Start the machine
 podman machine start
@@ -129,8 +129,11 @@ Maximize performance on Apple Silicon:
 
 # Allocate appropriate resources based on your Mac
 # M1 Pro/Max: 6-8 CPUs, 8-16 GB RAM
+# Note: --cpus and --memory on podman machine set are only supported for QEMU machines.
+# On Apple Silicon (applehv), set resources during machine creation:
 podman machine stop
-podman machine set --cpus 6 --memory 8192
+podman machine rm
+podman machine init --cpus 6 --memory 8192 --rosetta
 podman machine start
 
 # Use named volumes instead of host mounts for better I/O
@@ -189,9 +192,10 @@ podman run -d --name app \
 
 ```bash
 # Issue: "exec format error" when running containers
-# Solution: The image might be x86_64 only — enable Rosetta
+# Solution: The image might be x86_64 only — recreate with Rosetta enabled
 podman machine stop
-podman machine set --rosetta
+podman machine rm
+podman machine init --rosetta
 podman machine start
 
 # Or specify the platform explicitly
@@ -211,9 +215,10 @@ podman machine start 2>&1
 # Check current allocation
 podman machine inspect | jq '.Resources'
 
-# Adjust resources
+# Adjust resources (on applehv, recreate the machine with new resource values)
 podman machine stop
-podman machine set --cpus 4 --memory 8192
+podman machine rm
+podman machine init --cpus 4 --memory 8192
 podman machine start
 ```
 
@@ -224,7 +229,7 @@ podman machine start
 | `podman machine init --rosetta` | Create machine with Rosetta |
 | `podman machine inspect \| jq '.VMType'` | Verify Apple HV is used |
 | `podman run --platform linux/amd64 ...` | Run x86_64 container |
-| `podman machine set --cpus 4 --memory 8192` | Adjust resources |
+| `podman machine init --cpus 4 --memory 8192` | Set resources at creation |
 
 ## Summary
 

@@ -77,10 +77,10 @@ Podman wait supports the `--condition` flag to wait for specific container state
 podman run -d --name my-task docker.io/library/alpine:latest sleep 5
 podman wait --condition stopped my-task
 
-# Wait for a container to be removed
+# Wait for a container to enter the removing state
 podman run -d --name removable docker.io/library/alpine:latest sleep 3
 # In another terminal or script: podman rm removable
-podman wait --condition removed removable &
+podman wait --condition removing removable &
 sleep 5
 podman rm removable
 wait
@@ -88,7 +88,11 @@ wait
 
 Available conditions include:
 - `stopped` - Wait until the container has stopped (default)
-- `removed` - Wait until the container is removed
+- `removing` - Wait until the container is being removed
+- `exited` - Wait until the container has exited
+- `running` - Wait until the container is running
+- `healthy` - Wait until the container is healthy
+- `unhealthy` - Wait until the container is unhealthy
 
 ## Using Wait in CI/CD Pipelines
 

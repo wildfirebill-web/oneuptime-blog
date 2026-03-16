@@ -14,6 +14,8 @@ The Linux Out-Of-Memory (OOM) killer is a kernel mechanism that terminates proce
 
 This guide explains how to disable OOM kill, when it makes sense, and what safeguards to put in place.
 
+**Important:** The `--oom-kill-disable` flag is not supported on cgroups v2 systems. Check your cgroup version with `podman info --format '{{.Host.CgroupVersion}}'`.
+
 ---
 
 ## How the OOM Killer Works with Containers

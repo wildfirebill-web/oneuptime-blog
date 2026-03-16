@@ -131,17 +131,30 @@ podman inspect my-nginx --format '{{.HostConfig.RestartPolicy.Name}}'
 
 ## Restarting Containers After Host Reboot
 
-Use `podman generate systemd` to create systemd services that restart containers on boot.
+Use Quadlet unit files to create systemd services that restart containers on boot. Note that `podman generate systemd` is deprecated in favor of Quadlet.
 
 ```bash
-# Generate a systemd unit file for a container
-podman generate systemd --name my-nginx --new > ~/.config/systemd/user/my-nginx.service
+# Create a Quadlet container unit file
+mkdir -p ~/.config/containers/systemd
 
-# Enable it to start on boot
-systemctl --user enable my-nginx.service
+cat > ~/.config/containers/systemd/my-nginx.container << 'EOF'
+[Container]
+Image=docker.io/library/nginx:latest
+PublishPort=8080:80
+ContainerName=my-nginx
 
-# Start the service
-systemctl --user start my-nginx.service
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
+
+# Reload systemd to pick up the new unit
+systemctl --user daemon-reload
+
+# Enable and start the service
+systemctl --user enable --now my-nginx.service
 ```
 
 ## Scripting Rolling Restarts

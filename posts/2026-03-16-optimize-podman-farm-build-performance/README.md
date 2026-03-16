@@ -80,7 +80,7 @@ RUN apk add --no-cache tini
 COPY package.json package-lock.json ./
 
 # Layer 3: Install dependencies (cached if package files unchanged)
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 # Layer 4: Application code (changes most often)
 COPY src/ ./src/
@@ -172,7 +172,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # npm ci already uses parallel downloads
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 COPY . .
 RUN npm run build

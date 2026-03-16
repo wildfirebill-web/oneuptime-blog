@@ -20,9 +20,10 @@ Podman machines come with certain host directories mounted by default. The exact
 
 ```bash
 # Check current mounts on a machine
-podman machine inspect my-machine | jq '.Mounts'
+podman machine inspect my-machine
 
-# On macOS, common default mounts include:
+# On macOS, the default volume mount is $HOME:$HOME
+# Common default mounts include:
 # /Users — your home directory tree
 # /private — macOS private directories
 # /var/folders — temporary files
@@ -47,18 +48,21 @@ podman machine init my-machine \
 
 ## Adding Mounts to an Existing Machine
 
-You can add mounts to an existing machine using `podman machine set`.
+To add a mount to an existing machine, remove it and reinitialize with the desired volumes:
 
 ```bash
-# Stop the machine first
+# Stop and remove the machine
 podman machine stop my-machine
+podman machine rm my-machine
 
-# Add a volume mount
-podman machine set --volume /Users/dev/projects:/projects my-machine
+# Reinitialize with the new volume mount
+podman machine init my-machine --volume /Users/dev/projects:/projects
 
 # Start the machine
 podman machine start my-machine
 ```
+
+Note: The `podman machine set` command does not support adding volume mounts. To change mounts, you must recreate the machine with `podman machine init`.
 
 ## Verifying Mounts Inside the Machine
 
@@ -120,8 +124,8 @@ Directory mounts through a VM have performance implications:
 # VirtioFS (default on macOS with Apple Virtualization Framework)
 # provides the best performance
 
-# Check which filesystem sharing is used
-podman machine inspect my-machine | jq '.VMType'
+# Check which VM type is used
+podman machine inspect my-machine --format '{{.VMType}}'
 
 # For best performance on macOS, ensure you are using applehv
 # which uses VirtioFS for file sharing
@@ -157,16 +161,16 @@ podman run -v /Users/dev/data:/data:z myimage    # Shared label
 
 ## Removing Mounts
 
-To remove a volume mount from a machine:
+To remove a volume mount from a machine, recreate it without the mount:
 
 ```bash
-# Stop the machine
+# Stop and remove the machine
 podman machine stop my-machine
+podman machine rm my-machine
 
-# Remove a specific volume mount
-podman machine set --volume /Users/dev/projects:/projects- my-machine
+# Reinitialize without the volume mount you want to remove
+podman machine init my-machine
 
-# The trailing dash (-) removes the mount
 # Start the machine
 podman machine start my-machine
 ```
@@ -180,7 +184,7 @@ podman machine ssh my-machine -- ls -la /Users/dev/projects
 
 # Issue: Permission denied when writing
 # Check mount options
-podman machine inspect my-machine | jq '.Mounts'
+podman machine inspect my-machine
 
 # Issue: Slow file access
 # Consider using named volumes for dependency directories
@@ -197,10 +201,9 @@ podman run -e CHOKIDAR_USEPOLLING=true -v /Users/dev/app:/app node:20 npm run de
 | Command | Purpose |
 |---|---|
 | `podman machine init --volume /host:/guest <name>` | Create machine with mount |
-| `podman machine set --volume /host:/guest <name>` | Add mount to existing machine |
-| `podman machine set --volume /host:/guest- <name>` | Remove a mount |
+| `podman machine rm <name> && podman machine init --volume ... <name>` | Change mounts on existing machine |
 | `podman run -v /host:/container ...` | Mount into a container |
 
 ## Summary
 
-Mounting host directories into a Podman machine is essential for development workflows on macOS and Windows. Use the `--volume` flag during initialization or `podman machine set` for existing machines. For best performance, use VirtioFS through the Apple Virtualization Framework and keep large dependency trees in named volumes rather than host mounts. Always verify mounts are accessible inside the machine before attempting to use them in containers.
+Mounting host directories into a Podman machine is essential for development workflows on macOS and Windows. Use the `--volume` flag during `podman machine init` to configure mounts. To change mounts on an existing machine, remove and reinitialize it. For best performance, use VirtioFS through the Apple Virtualization Framework and keep large dependency trees in named volumes rather than host mounts. Always verify mounts are accessible inside the machine before attempting to use them in containers.

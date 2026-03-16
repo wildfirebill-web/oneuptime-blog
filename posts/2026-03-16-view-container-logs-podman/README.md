@@ -59,7 +59,7 @@ done
 
 # View logs from a pod's containers
 podman pod ps  # List pods
-podman logs -c container-name my-pod  # Logs from a specific container in a pod
+podman pod logs -c container-name my-pod  # Logs from a specific container in a pod
 ```
 
 ## Control Log Output

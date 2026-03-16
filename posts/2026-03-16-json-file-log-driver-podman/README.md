@@ -56,22 +56,20 @@ The JSON structure contains:
 Prevent log files from growing indefinitely with rotation options.
 
 ```bash
-# Set maximum log file size and number of files
+# Set maximum log file size
 podman run -d \
   --log-driver json-file \
   --log-opt max-size=10m \
-  --log-opt max-file=3 \
   --name web \
   nginx:latest
 
-# This creates up to 3 files of 10MB each:
-# container-log.json
-# container-log.json.1
-# container-log.json.2
+# Note: In Podman, json-file is aliased to the k8s-file driver.
+# The max-size option is supported, but max-file (number of rotated files)
+# is not currently supported by Podman's logging drivers.
 
 # Check the current log file size
 LOG_PATH=$(podman inspect --format '{{.LogPath}}' web)
-ls -lh "$LOG_PATH"*
+ls -lh "$LOG_PATH"
 ```
 
 ## Parse JSON Logs Programmatically
@@ -160,11 +158,11 @@ mkdir -p ~/.config/containers
 cat >> ~/.config/containers/containers.conf << 'EOF'
 [containers]
 log_driver = "json-file"
-
-[containers.log_opts]
-max_size = "10m"
-max_file = "3"
+log_size_max = 10485760
 EOF
+
+# The log_size_max value is in bytes (10485760 = 10MB)
+# Note: json-file is aliased to k8s-file in Podman
 
 # Verify the configuration
 podman info --format '{{.Host.LogDriver}}'
@@ -181,7 +179,6 @@ services:
       driver: json-file
       options:
         max-size: "10m"
-        max-file: "5"
 
   api:
     image: my-api:latest
@@ -189,9 +186,8 @@ services:
       driver: json-file
       options:
         max-size: "50m"
-        max-file: "3"
 ```
 
 ## Summary
 
-The json-file log driver stores container logs as structured JSON, making them easy to parse with tools like `jq` and Python. Configure `max-size` and `max-file` options to enable log rotation and prevent disk exhaustion. The JSON format is Docker-compatible, making it a good choice for environments transitioning from Docker to Podman or for workflows that require programmatic log processing.
+The json-file log driver stores container logs as structured JSON, making them easy to parse with tools like `jq` and Python. Configure the `max-size` option to limit log file size and prevent disk exhaustion. Note that in Podman, json-file is aliased to the k8s-file driver. The JSON format is Docker-compatible, making it a good choice for environments transitioning from Docker to Podman or for workflows that require programmatic log processing.

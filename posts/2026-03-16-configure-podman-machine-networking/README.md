@@ -34,17 +34,17 @@ curl http://localhost:8080
 
 ## User Mode Networking
 
-User mode networking uses a userspace network stack instead of a kernel-level bridge. This is the default on macOS.
+User mode networking uses a userspace network stack (gvproxy) instead of a kernel-level bridge. On macOS and Linux, user-mode networking is always enabled because these providers depend on gvproxy. The `--user-mode-networking` flag is only meaningful on Windows with the WSL backend, where it defaults to false.
 
 ```bash
-# Create a machine with user mode networking
+# On Windows/WSL, create a machine with user mode networking
 podman machine init my-machine --user-mode-networking
 
 # Check if user mode networking is enabled
 podman machine inspect my-machine | jq '.UserModeNetworking'
 ```
 
-User mode networking is simpler but has some limitations compared to bridge networking. It does not support connecting to the machine from other hosts on your network.
+User mode networking is simpler but has some limitations compared to bridge networking. It does not support connecting to the machine from other hosts on your network. It is useful in VPN configurations where the VPN may drop traffic from alternate network interfaces.
 
 ## Port Forwarding
 

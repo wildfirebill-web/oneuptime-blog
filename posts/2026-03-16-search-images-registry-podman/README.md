@@ -62,9 +62,6 @@ podman search nginx --limit 5
 
 # Show more results (up to 100)
 podman search nginx --limit 100
-
-# Search with no limit
-podman search nginx --limit 0
 ```
 
 ## Searching for Official Images

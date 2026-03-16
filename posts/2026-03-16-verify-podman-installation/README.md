@@ -209,8 +209,8 @@ podman system check 2>/dev/null || echo "system check not available in this vers
 # Check for any storage inconsistencies
 podman system df
 
-# Prune unused resources
-podman system prune --dry-run 2>/dev/null
+# View unused resources that could be pruned
+podman system df
 ```
 
 ## Comprehensive Verification Script

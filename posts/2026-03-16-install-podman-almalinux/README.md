@@ -164,7 +164,8 @@ podman run -d \
   -p 8080:80 \
   docker.io/library/nginx:latest
 
-# Generate a systemd unit file
+# Generate a systemd unit file (note: podman generate systemd is deprecated;
+# consider using Quadlet .container files for new deployments)
 mkdir -p ~/.config/systemd/user
 podman generate systemd --new --name alma-web > ~/.config/systemd/user/container-alma-web.service
 

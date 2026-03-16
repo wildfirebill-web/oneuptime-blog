@@ -104,8 +104,7 @@ Set up default registries for pulling images:
 ```bash
 # Create registries configuration
 sudo tee /etc/containers/registries.conf.d/00-shortnames.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+unqualified-search-registries = ['docker.io', 'quay.io', 'ghcr.io']
 EOF
 ```
 

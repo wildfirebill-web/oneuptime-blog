@@ -72,8 +72,7 @@ Debian's Podman installation may not include default registry configuration. Set
 ```bash
 # Create the containers registries configuration
 sudo tee /etc/containers/registries.conf.d/shortnames.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+unqualified-search-registries = ['docker.io', 'quay.io', 'ghcr.io']
 EOF
 ```
 

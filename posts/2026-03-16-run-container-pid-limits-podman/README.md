@@ -74,8 +74,9 @@ podman run --rm --pids-limit 10 alpine sh -c "
 Check the default PID limit configuration:
 
 ```bash
-# Check the default PID limit in Podman
-podman info --format '{{.Host.PidsLimit}}'
+# The default PID limit in Podman is 2048 on systems with the pids cgroup controller
+# Check cgroup controllers available on your system
+podman info --format '{{.Host.CgroupControllers}}'
 
 # Run a container and check its default limit
 podman run --rm alpine sh -c "cat /sys/fs/cgroup/pids.max 2>/dev/null || echo 'No cgroup pids limit file'"
