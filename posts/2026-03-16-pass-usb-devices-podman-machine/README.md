@@ -1,0 +1,189 @@
+# How to Pass USB Devices to a Podman Machine
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, USB Devices
+
+Description: Learn how to pass USB devices from your host system through a Podman machine to containers for hardware access and device testing.
+
+---
+
+> Passing USB devices to a Podman machine enables containers to interact with physical hardware like serial devices, storage, and development boards.
+
+Podman machines are virtual machines, which means USB devices attached to your host are not automatically available inside the machine or its containers. Passing USB devices through requires configuring both the VM layer and the container runtime. This guide walks you through the process on different platforms.
+
+---
+
+## Understanding the Device Path
+
+USB devices on the host appear as device files. First, identify the device you want to pass through.
+
+```bash
+# List USB devices on macOS
+system_profiler SPUSBDataType
+
+# List USB devices on Linux
+lsusb
+
+# Find the device path on Linux
+ls -la /dev/ttyUSB*
+ls -la /dev/ttyACM*
+
+# Get detailed device information on Linux
+udevadm info -a -n /dev/ttyUSB0
+```
+
+## Passing Devices on Linux
+
+On Linux, where Podman can run natively without a machine VM, device passthrough is straightforward:
+
+```bash
+# Pass a USB serial device to a container
+podman run -it --device /dev/ttyUSB0 --rm alpine sh
+
+# Pass a USB device with specific permissions
+podman run -it --device /dev/ttyUSB0:/dev/ttyUSB0:rwm --rm alpine sh
+
+# Pass multiple devices
+podman run -it \
+    --device /dev/ttyUSB0 \
+    --device /dev/ttyUSB1 \
+    --rm alpine sh
+```
+
+## Device Passthrough with Podman Machine (QEMU)
+
+When using a Podman machine with QEMU as the backend, USB passthrough requires additional configuration.
+
+```bash
+# First, identify the USB device vendor and product ID
+# On macOS:
+system_profiler SPUSBDataType | grep -A 5 "Product ID"
+
+# On Linux:
+lsusb
+# Output example: Bus 001 Device 005: ID 1a86:7523 QinHeng Electronics CH340 serial converter
+# Vendor ID: 1a86, Product ID: 7523
+```
+
+## Configuring QEMU USB Passthrough
+
+For QEMU-based machines, you need to modify the machine configuration to add USB device passthrough.
+
+```bash
+# Stop the machine
+podman machine stop my-machine
+
+# Find the QEMU configuration file
+podman machine inspect my-machine | jq -r '.ConfigDir.Path'
+
+# You may need to edit the QEMU launch arguments to add:
+# -device usb-host,vendorid=0x1a86,productid=0x7523
+
+# After editing, start the machine
+podman machine start my-machine
+```
+
+## Using Volume Mounts for Device Files
+
+An alternative approach is to mount device files into the machine using volume mounts.
+
+```bash
+# SSH into the machine and check available devices
+podman machine ssh my-machine -- ls -la /dev/ttyUSB* 2>/dev/null
+podman machine ssh my-machine -- ls -la /dev/ttyACM* 2>/dev/null
+```
+
+## Running Containers with Device Access
+
+Once the device is available inside the Podman machine, pass it to containers:
+
+```bash
+# Pass a serial device to a container
+podman run -it --device /dev/ttyUSB0 --rm python:3.12 bash
+
+# Inside the container, install pyserial and access the device
+# pip install pyserial
+# python -c "import serial; s = serial.Serial('/dev/ttyUSB0', 9600); print(s.name)"
+```
+
+## Privileged Mode for Full Device Access
+
+When you need access to all devices, use privileged mode:
+
+```bash
+# Run a container with full device access (use with caution)
+podman run -it --privileged --rm alpine sh
+
+# Inside the container, all host devices are available
+ls /dev/
+
+# This is a security trade-off — only use when necessary
+```
+
+## Working with Arduino and Serial Devices
+
+A common use case is accessing Arduino or other microcontroller boards:
+
+```bash
+# Find the Arduino device
+podman machine ssh my-machine -- ls -la /dev/ttyACM*
+
+# Run a container with Arduino CLI
+podman run -it --device /dev/ttyACM0 --rm arduino/arduino-cli:latest sh
+
+# Inside the container
+# arduino-cli board list
+# arduino-cli compile --fqbn arduino:avr:uno ./my-sketch
+# arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno ./my-sketch
+```
+
+## Verifying Device Access Inside Containers
+
+Confirm that the device is accessible from within the container:
+
+```bash
+# Check device availability
+podman run -it --device /dev/ttyUSB0 --rm alpine sh -c "ls -la /dev/ttyUSB0"
+
+# Test reading from a serial device
+podman run -it --device /dev/ttyUSB0 --rm alpine sh -c "cat /dev/ttyUSB0"
+
+# Check device permissions
+podman run -it --device /dev/ttyUSB0 --rm alpine sh -c "stat /dev/ttyUSB0"
+```
+
+## Troubleshooting Device Passthrough
+
+Common issues and their solutions:
+
+```bash
+# Issue: Permission denied when accessing device
+# Solution: Add the device with explicit permissions
+podman run -it --device /dev/ttyUSB0:/dev/ttyUSB0:rwm --rm alpine sh
+
+# Issue: Device not visible inside the machine
+# Solution: Check if the device is recognized by the VM
+podman machine ssh my-machine -- dmesg | tail -20
+
+# Issue: Device disappears after reconnection
+# Solution: Use udev rules to create a stable symlink
+podman machine ssh my-machine
+echo 'SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="my-device"' | \
+    sudo tee /etc/udev/rules.d/99-my-device.rules
+sudo udevadm control --reload-rules
+exit
+```
+
+## Quick Reference
+
+| Command | Purpose |
+|---|---|
+| `podman run --device /dev/ttyUSB0 ...` | Pass a specific device |
+| `podman run --device /dev/ttyUSB0:/dev/ttyUSB0:rwm ...` | Pass with permissions |
+| `podman run --privileged ...` | Full device access |
+| `podman machine ssh <name> -- ls /dev/` | Check devices in machine |
+
+## Summary
+
+Passing USB devices to Podman machines requires getting the device into the virtual machine first, then passing it to containers using the `--device` flag. On native Linux, this is straightforward. On macOS and Windows where Podman uses a VM, you may need QEMU USB passthrough configuration or privileged mode. Always prefer specific device passthrough over privileged mode for better security.
