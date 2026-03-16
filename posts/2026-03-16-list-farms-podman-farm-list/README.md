@@ -23,7 +23,7 @@ podman farm list
 
 Default output:
 
-```
+```text
 Name            Connections                                    Default  ReadWrite
 dev-farm        amd64-builder                                  false    true
 prod-farm       amd64-builder,arm64-builder,ppc64le-builder    true     true
@@ -98,7 +98,7 @@ podman farm list --format '{{.Name}} {{.Connections}}' | \
 
 Output:
 
-```
+```text
 amd64-builder
 arm64-builder
 ppc64le-builder

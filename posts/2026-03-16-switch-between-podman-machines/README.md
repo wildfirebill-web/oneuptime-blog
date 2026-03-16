@@ -23,7 +23,7 @@ The default machine is the one that receives all Podman commands when no specifi
 podman machine ls
 ```
 
-```
+```text
 NAME        VM TYPE     CREATED        LAST UP            CPUS    MEMORY      DISK SIZE
 dev*        qemu        2 days ago     Currently running  2       4.295GB     107.4GB
 staging     qemu        5 days ago     Currently running  4       8.59GB      214.7GB
@@ -93,7 +93,7 @@ podman system connection ls --format "{{.Name}}"
 
 Output:
 
-```
+```text
 Name        URI                                                     Identity                    Default
 dev         ssh://core@localhost:54321/run/podman/podman.sock       /home/user/.ssh/podman-rsa  false
 staging     ssh://core@localhost:54322/run/podman/podman.sock       /home/user/.ssh/podman-rsa  true

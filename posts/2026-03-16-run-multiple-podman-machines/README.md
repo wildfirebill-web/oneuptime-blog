@@ -49,7 +49,7 @@ podman machine ls
 
 The output shows each machine and its state:
 
-```
+```text
 NAME        VM TYPE     CREATED        LAST UP            CPUS    MEMORY      DISK SIZE
 web-dev*    qemu        1 minute ago   Currently running  2       4.295GB     53.69GB
 db-dev      qemu        1 minute ago   Currently running  4       8.59GB      214.7GB
@@ -95,7 +95,7 @@ podman system connection ls
 
 Output:
 
-```
+```text
 Name        URI                                                         Identity                    Default
 web-dev     ssh://core@localhost:54321/run/podman/podman.sock          /home/user/.ssh/podman-rsa  true
 db-dev      ssh://core@localhost:54322/run/podman/podman.sock          /home/user/.ssh/podman-rsa  false

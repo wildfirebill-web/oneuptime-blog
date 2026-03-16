@@ -23,7 +23,7 @@ podman volume list
 
 Default output:
 
-```
+```text
 DRIVER    VOLUME NAME
 local     appdata
 local     mydata

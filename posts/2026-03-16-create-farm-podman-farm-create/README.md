@@ -45,7 +45,7 @@ podman farm list
 
 Expected output:
 
-```
+```text
 Name       Connections
 my-farm    amd64-builder,arm64-builder
 ```

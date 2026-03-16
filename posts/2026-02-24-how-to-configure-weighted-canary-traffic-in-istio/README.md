@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Canary Traffic, Weighted Routing, Deployments
+Tags: Istio, Kubernetes, Canary Traffic, Weighted Routing, Deployment
 
 Description: Step-by-step guide to configuring weighted traffic splitting in Istio for canary deployments with practical examples of progressive weight adjustment.
 

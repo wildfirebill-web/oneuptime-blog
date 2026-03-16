@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Feature Flags, ConfigMap, Deployments
+Tags: Flux CD, GitOps, Kubernetes, Feature Flags, ConfigMap, Deployment
 
 Description: Deploy and manage feature flags using GitOps with Flux CD by storing flag configuration in Git and reconciling it to Kubernetes ConfigMaps consumed by your applications.
 

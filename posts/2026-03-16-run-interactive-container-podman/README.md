@@ -30,8 +30,8 @@ podman run -it fedora bash
 ```
 
 The flags:
-- `-i` (interactive) — Keeps STDIN open so you can type commands.
-- `-t` (tty) — Allocates a pseudo-terminal for proper formatting.
+- `-i` (interactive) - Keeps STDIN open so you can type commands.
+- `-t` (tty) - Allocates a pseudo-terminal for proper formatting.
 
 ## Auto-Remove on Exit
 
@@ -52,7 +52,7 @@ Without `--rm`, exited containers remain on disk and appear in `podman ps -a`.
 Different images come with different shells:
 
 ```bash
-# Alpine uses sh (ash) by default — bash is not included
+# Alpine uses sh (ash) by default - bash is not included
 podman run -it --rm alpine sh
 
 # Install bash in Alpine if needed
@@ -108,10 +108,10 @@ Mount your local directory for interactive development:
 podman run -it --rm -v $(pwd):/workspace -w /workspace node:20 bash
 
 # Inside the container:
-# ls                    — see your local files
-# npm install           — install dependencies
-# npm test              — run tests
-# exit                  — changes to /workspace persist on host
+# ls                    - see your local files
+# npm install           - install dependencies
+# npm test              - run tests
+# exit                  - changes to /workspace persist on host
 ```
 
 ## Debugging a Running Container
@@ -168,8 +168,8 @@ podman run -it --rm \
     node:20 bash
 
 # Inside:
-# echo $NODE_ENV    — development
-# echo $DEBUG       — app:*
+# echo $NODE_ENV    - development
+# echo $DEBUG       - app:*
 ```
 
 ## Detaching from an Interactive Container

@@ -25,7 +25,7 @@ podman machine list
 
 This produces output similar to:
 
-```
+```text
 NAME                     VM TYPE     CREATED        LAST UP            CPUS        MEMORY      DISK SIZE
 podman-machine-default*  qemu        2 days ago     Currently running  2           2.147GB     107.4GB
 dev-machine              qemu        5 days ago     3 hours ago        4           4.295GB     214.7GB
@@ -38,13 +38,13 @@ The asterisk (`*`) next to a machine name indicates that it is the currently act
 
 Each column in the listing provides important information:
 
-- **NAME** — The machine name. An asterisk marks the active default machine.
-- **VM TYPE** — The virtualization backend (qemu, applehv, hyperv, wsl).
-- **CREATED** — When the machine was first initialized.
-- **LAST UP** — When the machine was last running or if it is currently running.
-- **CPUS** — Number of CPU cores allocated to the machine.
-- **MEMORY** — Amount of RAM allocated.
-- **DISK SIZE** — Virtual disk size allocated to the machine.
+- **NAME** - The machine name. An asterisk marks the active default machine.
+- **VM TYPE** - The virtualization backend (qemu, applehv, hyperv, wsl).
+- **CREATED** - When the machine was first initialized.
+- **LAST UP** - When the machine was last running or if it is currently running.
+- **CPUS** - Number of CPU cores allocated to the machine.
+- **MEMORY** - Amount of RAM allocated.
+- **DISK SIZE** - Virtual disk size allocated to the machine.
 
 ## Using the Short Alias
 
@@ -91,7 +91,7 @@ podman machine ls --format "{{.Name}}\t{{.Running}}"
 podman machine ls --format "table {{.Name}}\t{{.CPUs}}\t{{.Memory}}\t{{.DiskSize}}"
 
 # Show name and last up time
-podman machine ls --format "{{.Name}} — Last up: {{.LastUp}}"
+podman machine ls --format "{{.Name}} - Last up: {{.LastUp}}"
 ```
 
 Available template fields include `Name`, `Default`, `VMType`, `Created`, `Running`, `LastUp`, `Stream`, `CPUs`, `Memory`, and `DiskSize`.

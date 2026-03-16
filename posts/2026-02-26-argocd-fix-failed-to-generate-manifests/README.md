@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Troubleshooting, Manifests
+Tags: ArgoCD, GitOps, Kubernetes, Troubleshooting, Manifest
 
 Description: Fix the ArgoCD failed to generate manifests error by resolving repo server issues, fixing source configuration, addressing tool detection problems, and handling timeout failures.
 

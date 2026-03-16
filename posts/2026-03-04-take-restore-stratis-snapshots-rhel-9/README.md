@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Stratis, Snapshots, Storage, Linux
+Tags: RHEL, Stratis, Snapshot, Storage, Linux
 
 Description: Learn how to create, manage, and restore Stratis filesystem snapshots on RHEL for point-in-time data recovery and testing purposes.
 

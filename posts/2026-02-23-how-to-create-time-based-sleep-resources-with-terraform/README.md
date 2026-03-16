@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Time Provider, Time Sleep, Infrastructure as Code, Deployments
+Tags: Terraform, Time Provider, Time Sleep, Infrastructure as Code, Deployment
 
 Description: Learn how to use time_sleep resources in Terraform to handle propagation delays, staged deployments, rate limiting, and resource dependency timing issues.
 

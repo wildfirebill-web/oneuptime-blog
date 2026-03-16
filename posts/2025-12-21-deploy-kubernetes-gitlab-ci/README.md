@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Kubernetes, Deployments, DevOps, Helm, Kubectl
+Tags: GitLab, CI/CD, Kubernetes, Deployment, DevOps, Helm, Kubectl
 
 Description: Learn how to deploy applications to Kubernetes clusters using GitLab CI. This guide covers kubectl deployments, Helm charts, environments, and production-ready deployment strategies.
 

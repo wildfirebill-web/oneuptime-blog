@@ -10,7 +10,7 @@ Description: Learn how to run Podman containers as a specific user for security 
 
 > Running containers as a specific user limits the damage from container breakouts and ensures proper file ownership.
 
-By default, many container images run their processes as root. This is a security risk — if an attacker escapes the container, they might gain root access to the host. Running containers as a non-root user is a security best practice that limits the impact of potential vulnerabilities. This guide covers all methods for specifying the user.
+By default, many container images run their processes as root. This is a security risk - if an attacker escapes the container, they might gain root access to the host. Running containers as a non-root user is a security best practice that limits the impact of potential vulnerabilities. This guide covers all methods for specifying the user.
 
 ---
 
@@ -130,7 +130,7 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 EOF
 
-# Build and run — the container runs as appuser
+# Build and run - the container runs as appuser
 podman build -t myapp .
 podman run -d --name app -p 3000:3000 myapp
 

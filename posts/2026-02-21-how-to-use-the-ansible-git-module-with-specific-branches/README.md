@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Git, Branches, Deployments
+Tags: Ansible, Git, Branches, Deployment
 
 Description: Learn how to use the Ansible git module to clone and switch between specific Git branches for environment-based deployments and feature testing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bicep, ARM Templates, Troubleshooting, Infrastructure as Code, Deployments
+Tags: Azure, Bicep, ARM Templates, Troubleshooting, Infrastructure as Code, Deployment
 
 Description: Diagnose and fix InvalidTemplateDeployment errors in Azure Bicep deployments with practical examples covering validation failures and parameter issues.
 

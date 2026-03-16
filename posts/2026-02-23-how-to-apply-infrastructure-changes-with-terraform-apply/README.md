@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform apply, Infrastructure as Code, DevOps, Deployments
+Tags: Terraform, Terraform apply, Infrastructure as Code, DevOps, Deployment
 
 Description: Learn how to use terraform apply to create and modify infrastructure including confirmation flows, saved plans, targeting, and error recovery strategies.
 

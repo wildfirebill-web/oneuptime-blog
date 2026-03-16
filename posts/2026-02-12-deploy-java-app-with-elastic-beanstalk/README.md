@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Elastic Beanstalk, Java, Deployments
+Tags: AWS, Elastic Beanstalk, Java, Deployment
 
 Description: Step-by-step guide to deploying Java applications on AWS Elastic Beanstalk, covering Spring Boot, WAR files, Corretto runtime, and production configuration.
 

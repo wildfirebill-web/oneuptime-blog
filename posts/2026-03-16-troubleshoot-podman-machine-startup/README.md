@@ -253,4 +253,4 @@ podman machine ls
 
 ## Summary
 
-Podman machine startup failures typically fall into a few categories: stale state, resource constraints, corrupted configurations, or system-level issues. Start with the basics — check the error message, verify resources, and try a stop/start cycle. If those do not work, remove and recreate the machine. As a last resort, a full system reset gives you a clean slate. Use the diagnostic script to quickly identify the root cause of startup issues.
+Podman machine startup failures typically fall into a few categories: stale state, resource constraints, corrupted configurations, or system-level issues. Start with the basics - check the error message, verify resources, and try a stop/start cycle. If those do not work, remove and recreate the machine. As a last resort, a full system reset gives you a clean slate. Use the diagnostic script to quickly identify the root cause of startup issues.

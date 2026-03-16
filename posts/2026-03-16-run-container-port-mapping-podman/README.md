@@ -123,7 +123,7 @@ Ports on the host can only be used by one container at a time:
 # This works
 podman run -d --name web1 -p 8080:80 nginx
 
-# This fails — port 8080 is already in use
+# This fails - port 8080 is already in use
 podman run -d --name web2 -p 8080:80 nginx
 # Error: port 8080 already in use
 

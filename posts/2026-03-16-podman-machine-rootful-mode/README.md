@@ -10,7 +10,7 @@ Description: Learn how to configure a Podman machine to run in rootful mode, ena
 
 > Rootful mode gives your containers root privileges inside the Podman machine, enabling operations that rootless mode restricts.
 
-By default, Podman machines run in rootless mode, which provides better security by running containers without root privileges. However, some workloads require root access — binding to ports below 1024, accessing certain device files, or running software that expects to run as root. This guide shows you how to configure rootful mode.
+By default, Podman machines run in rootless mode, which provides better security by running containers without root privileges. However, some workloads require root access - binding to ports below 1024, accessing certain device files, or running software that expects to run as root. This guide shows you how to configure rootful mode.
 
 ---
 
@@ -18,8 +18,8 @@ By default, Podman machines run in rootless mode, which provides better security
 
 In rootless mode, the Podman daemon runs as a regular user inside the VM. In rootful mode, it runs as root. This affects what containers can do:
 
-- **Rootless** — Containers cannot bind to ports below 1024, limited device access, better security isolation.
-- **Rootful** — Containers can bind to any port, full device access, runs with root privileges.
+- **Rootless** - Containers cannot bind to ports below 1024, limited device access, better security isolation.
+- **Rootful** - Containers can bind to any port, full device access, runs with root privileges.
 
 ## Creating a Machine in Rootful Mode
 
@@ -62,7 +62,7 @@ podman machine inspect my-machine | jq '.Rootful'
 You can also verify by checking the connection details:
 
 ```bash
-# List connections — rootful machines have a root connection
+# List connections - rootful machines have a root connection
 podman system connection ls
 ```
 

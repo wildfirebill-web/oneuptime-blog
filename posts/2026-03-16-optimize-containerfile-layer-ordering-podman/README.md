@@ -18,7 +18,7 @@ Every instruction in a Containerfile creates a layer. When Podman detects that a
 
 Place instructions that change least frequently at the top, and those that change most frequently at the bottom.
 
-```
+```text
 Least frequent changes  →  TOP of Containerfile
     Base image (FROM)
     System packages

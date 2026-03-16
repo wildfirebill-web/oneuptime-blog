@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, StatefulSets, Deployments, Persistent Storage, Prometheus
+Tags: OpenTelemetry, Collector, Kubernetes, StatefulSets, Deployment, Persistent Storage, Prometheus
 
 Description: Deploy OpenTelemetry Collectors as StatefulSets for stable network identities, persistent storage, and predictable scaling in Kubernetes environments.
 

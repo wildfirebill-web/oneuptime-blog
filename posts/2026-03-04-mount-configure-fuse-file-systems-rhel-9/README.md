@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, FUSE, Filesystems, Linux
+Tags: RHEL, FUSE, Filesystem, Linux
 
 Description: Learn how to install, mount, and configure FUSE-based file systems on RHEL for user-space filesystem access.
 

@@ -118,7 +118,7 @@ podman run -it --privileged --rm alpine sh
 # Inside the container, all host devices are available
 ls /dev/
 
-# This is a security trade-off — only use when necessary
+# This is a security trade-off - only use when necessary
 ```
 
 ## Working with Arduino and Serial Devices

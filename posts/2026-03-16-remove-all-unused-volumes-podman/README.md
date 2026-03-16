@@ -23,7 +23,7 @@ podman volume prune
 
 Podman asks for confirmation before proceeding:
 
-```
+```text
 WARNING! This will remove all not currently used volumes.
 Are you sure you want to continue? [y/N] y
 ```

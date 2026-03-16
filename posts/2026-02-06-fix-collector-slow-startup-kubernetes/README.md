@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Troubleshooting, Kubernetes, Performance, Deployments
+Tags: OpenTelemetry, Collector, Troubleshooting, Kubernetes, Performance, Deployment
 
 Description: Comprehensive guide to diagnosing and fixing slow OpenTelemetry Collector startup issues in Kubernetes environments with configuration examples and optimization techniques.
 

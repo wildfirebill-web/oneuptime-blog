@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Load Balancer, Delegation, Deployments
+Tags: Ansible, Load Balancer, Delegation, Deployment
 
 Description: Learn how to use Ansible delegation to manage load balancers during rolling deployments for zero-downtime updates.
 

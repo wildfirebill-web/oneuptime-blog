@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, YAML, Deployments
+Tags: ArgoCD, GitOps, Kubernetes, YAML, Deployment
 
 Description: Learn how to deploy multiple Kubernetes YAML files from a single directory in ArgoCD, including multi-document files, ordering, and managing large file sets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lightsail, SSH, Deployments
+Tags: AWS, Lightsail, SSH, Deployment
 
 Description: Step-by-step guide to creating an Amazon Lightsail instance, connecting via SSH and browser terminal, and configuring it for your first web project.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Canary, Ingress, Deployments
+Tags: Calico, Kubernetes, Canary, Ingress, Deployment
 
 Description: Test canary rollout behavior with live production traffic in Calico environments to validate gradual release strategies.
 

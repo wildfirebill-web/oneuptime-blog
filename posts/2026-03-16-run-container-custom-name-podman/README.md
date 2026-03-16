@@ -33,13 +33,13 @@ podman start web-server
 Compare managing containers with and without names:
 
 ```bash
-# Without names — hard to identify
+# Without names - hard to identify
 podman ps
 # CONTAINER ID  IMAGE   NAMES
 # a3f5b2c1d4e6  nginx   fervent_archimedes
 # 7b8c9d0e1f2a  redis   laughing_galileo
 
-# With names — immediately clear
+# With names - immediately clear
 podman ps
 # CONTAINER ID  IMAGE   NAMES
 # a3f5b2c1d4e6  nginx   web-server
@@ -51,13 +51,13 @@ podman ps
 Container names must follow these rules:
 
 ```bash
-# Valid names — alphanumeric, hyphens, underscores, periods
+# Valid names - alphanumeric, hyphens, underscores, periods
 podman run -d --name web-server nginx           # hyphens
 podman run -d --name web_server nginx           # underscores
 podman run -d --name web.server nginx           # periods
 podman run -d --name webserver01 nginx          # numbers
 
-# Names must be unique — this fails if web-server already exists
+# Names must be unique - this fails if web-server already exists
 podman run -d --name web-server nginx
 # Error: container name "web-server" is already in use
 ```

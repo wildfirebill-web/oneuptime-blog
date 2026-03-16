@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cockpit, KVM, Virtual Machines, Linux
+Tags: RHEL, Cockpit, KVM, Virtual Machine, Linux
 
 Description: Learn how to create, manage, and monitor KVM virtual machines through the Cockpit web console on RHEL, including storage, networking, and snapshot management.
 

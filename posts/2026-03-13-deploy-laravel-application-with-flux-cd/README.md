@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Laravel, PHP, FPM, NGINX, Deployments
+Tags: Flux CD, Kubernetes, GitOps, Laravel, PHP, FPM, NGINX, Deployment
 
 Description: Deploy a PHP Laravel application to Kubernetes using Flux CD, with PHP-FPM and Nginx serving, database migrations, and queue workers.
 

@@ -554,6 +554,7 @@
   "pnpm",
   "pow Function",
   "ppc64el",
+  "ppc64le",
   "pprof",
   "preStop",
   "proc",

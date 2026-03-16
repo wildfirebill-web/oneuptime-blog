@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Kubernetes, Deployments, Progressive Delivery
+Tags: Flagger, Canary, Kubernetes, Deployment, Progressive Delivery
 
 Description: Learn how to configure a Flagger Canary resource to automate progressive delivery for Kubernetes Deployments with traffic shifting and automated rollback.
 

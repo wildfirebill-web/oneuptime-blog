@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Journald, Systemd, Logging, Linux
+Tags: RHEL, journald, Systemd, Logging, Linux
 
 Description: Learn how to configure systemd-journald for persistent log storage and set up log rotation policies to manage disk space on RHEL.
 

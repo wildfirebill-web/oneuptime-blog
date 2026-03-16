@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Migration, Virtual Machines, Cloud
+Tags: RHEL, Migration, Virtual Machine, Cloud
 
 Description: Migrate RHEL VMs between on-premises and cloud platforms.
 

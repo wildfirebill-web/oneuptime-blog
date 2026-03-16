@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Kubernetes, Helm, DevOps, Deployments
+Tags: Ansible, Kubernetes, Helm, DevOps, Deployment
 
 Description: Deploy and manage Helm charts using Ansible's helm module for installing, upgrading, and configuring applications on Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, VolumeSnapshotClass, Snapshots, Backup, Storage
+Tags: Flux CD, Kubernetes, GitOps, VolumeSnapshotClass, Snapshot, Backup, Storage
 
 Description: Manage VolumeSnapshotClass resources using Flux CD GitOps for version-controlled Kubernetes volume snapshot capabilities.
 

@@ -21,7 +21,7 @@ A Podman farm consists of:
 - Remote machines (nodes) accessible via SSH, each with a different architecture
 - System connections that link your local Podman to each remote node
 
-```
+```text
 Local Machine (orchestrator)
     ├── SSH → amd64 node (builds linux/amd64 images)
     ├── SSH → arm64 node (builds linux/arm64 images)
@@ -88,7 +88,7 @@ podman system connection list
 
 You should see output like:
 
-```
+```text
 Name          URI                                                          Identity                    Default
 amd64-node    ssh://user@amd64-node.example.com/run/user/1000/podman/...  /home/you/.ssh/podman_farm  false
 arm64-node    ssh://user@arm64-node.example.com/run/user/1000/podman/...  /home/you/.ssh/podman_farm  false

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, Charts, Packaging, Deployments
+Tags: Helm, Kubernetes, Charts, Packaging, Deployment
 
 Description: Step-by-step guide to creating a Helm chart from scratch including templates, values, helpers, and best practices.
 

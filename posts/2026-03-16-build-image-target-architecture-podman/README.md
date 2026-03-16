@@ -154,10 +154,10 @@ podman build --platform linux/arm64 -t myapp:arm64 .
 ```
 
 The automatic build arguments provided by Podman include:
-- `TARGETPLATFORM` — full platform string (e.g., `linux/arm64`)
-- `TARGETOS` — operating system (e.g., `linux`)
-- `TARGETARCH` — architecture (e.g., `arm64`)
-- `TARGETVARIANT` — variant if applicable (e.g., `v7`)
+- `TARGETPLATFORM` - full platform string (e.g., `linux/arm64`)
+- `TARGETOS` - operating system (e.g., `linux`)
+- `TARGETARCH` - architecture (e.g., `arm64`)
+- `TARGETVARIANT` - variant if applicable (e.g., `v7`)
 
 ## Performance Considerations
 

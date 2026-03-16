@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Error Handling, Deployments, Playbook
+Tags: Ansible, Error Handling, Deployment, Playbook
 
 Description: Learn how to use max_fail_percentage in Ansible to control failure thresholds and prevent mass outages during rolling deployments.
 

@@ -25,7 +25,7 @@ podman machine rm my-machine
 
 Podman will prompt you for confirmation before proceeding:
 
-```
+```text
 The following files will be deleted:
 
 /home/user/.local/share/containers/podman/machine/qemu/my-machine.json

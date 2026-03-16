@@ -94,7 +94,7 @@ DATABASE_URL=postgres://prod-user:secret@prod-db:5432/myapp
 REDIS_URL=redis://prod-cache:6379
 EOF
 
-# Use both files — later files override earlier ones
+# Use both files - later files override earlier ones
 podman run -d --name api \
     --env-file base.env \
     --env-file production.env \

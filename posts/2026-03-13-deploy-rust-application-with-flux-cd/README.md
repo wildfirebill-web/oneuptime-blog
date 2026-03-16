@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Rust, Axum, Deployments, Performance
+Tags: Flux CD, Kubernetes, GitOps, Rust, Axum, Deployment, Performance
 
 Description: Deploy a Rust application container to Kubernetes using Flux CD, taking advantage of Rust's zero-cost abstractions for high-performance, memory-safe microservices.
 

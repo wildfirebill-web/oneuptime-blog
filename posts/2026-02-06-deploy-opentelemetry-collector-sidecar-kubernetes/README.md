@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, Sidecar, Deployments
+Tags: OpenTelemetry, Collector, Kubernetes, Sidecar, Deployment
 
 Description: Complete guide to deploying the OpenTelemetry Collector as a sidecar container in Kubernetes for application-specific telemetry collection.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, .NET, C#, ASP.NET Core, Deployments
+Tags: Flux CD, Kubernetes, GitOps, .NET, C#, ASP.NET Core, Deployment
 
 Description: Deploy a .NET Core ASP.NET application to Kubernetes using Flux CD GitOps, with health checks, graceful shutdown, and environment-based configuration.
 

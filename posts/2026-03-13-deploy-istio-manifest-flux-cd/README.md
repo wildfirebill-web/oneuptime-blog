@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Istio, Service Mesh, Istioctl, Manifests
+Tags: Flux CD, Kubernetes, GitOps, Istio, Service Mesh, Istioctl, Manifest
 
 Description: Deploy Istio using the istioctl manifest install approach managed by Flux CD by generating and committing manifests to your GitOps repository.
 

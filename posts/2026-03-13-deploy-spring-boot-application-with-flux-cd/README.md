@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Spring Boot, Java, Deployments
+Tags: Flux CD, Kubernetes, GitOps, Spring Boot, Java, Deployment
 
 Description: Deploy a Spring Boot Java application to Kubernetes using Flux CD, with ConfigMaps for externalized configuration and graceful shutdown support.
 

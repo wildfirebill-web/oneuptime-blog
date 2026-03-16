@@ -8,7 +8,7 @@ Description: Learn how to map multiple ports in a single Podman container for se
 
 ---
 
-> Many services expose multiple ports for different purposes — HTTP, HTTPS, admin panels, metrics, and debugging endpoints all need their own port mappings.
+> Many services expose multiple ports for different purposes - HTTP, HTTPS, admin panels, metrics, and debugging endpoints all need their own port mappings.
 
 Real-world applications frequently expose more than one port. A web server needs both HTTP and HTTPS. An application server might expose a service port and a metrics port. A database might have a data port and a management port. This guide covers mapping multiple ports to a single container.
 
@@ -229,4 +229,4 @@ fi
 
 ## Summary
 
-Mapping multiple ports is straightforward — add a `-p` flag for each port or use ranges for consecutive ports. Use different host interfaces to control access (all interfaces for public services, localhost for admin tools). Mix TCP and UDP as needed, and always check for port conflicts before deploying. This approach lets you expose all the endpoints your service needs while maintaining control over access patterns.
+Mapping multiple ports is straightforward - add a `-p` flag for each port or use ranges for consecutive ports. Use different host interfaces to control access (all interfaces for public services, localhost for admin tools). Mix TCP and UDP as needed, and always check for port conflicts before deploying. This approach lets you expose all the endpoints your service needs while maintaining control over access patterns.

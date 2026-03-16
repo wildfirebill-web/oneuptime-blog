@@ -10,7 +10,7 @@ Description: Learn how to override and customize container entrypoints in Podman
 
 > Custom entrypoints let you change what a container runs at startup without modifying the image itself.
 
-Every container image defines a default command or entrypoint that runs when the container starts. Sometimes you need to override this — to run a different command, debug startup issues, or use the same image for different purposes. This guide covers how entrypoints work and how to customize them in Podman.
+Every container image defines a default command or entrypoint that runs when the container starts. Sometimes you need to override this - to run a different command, debug startup issues, or use the same image for different purposes. This guide covers how entrypoints work and how to customize them in Podman.
 
 ---
 
@@ -18,8 +18,8 @@ Every container image defines a default command or entrypoint that runs when the
 
 Container images have two startup directives:
 
-- **ENTRYPOINT** — The main executable. Always runs.
-- **CMD** — Default arguments to the entrypoint. Can be easily overridden.
+- **ENTRYPOINT** - The main executable. Always runs.
+- **CMD** - Default arguments to the entrypoint. Can be easily overridden.
 
 ```bash
 # See an image's default entrypoint and command
@@ -153,10 +153,10 @@ podman run -d --name app \
 ## Entrypoint with JSON Array vs String Form
 
 ```bash
-# JSON array form (preferred) — command receives signals properly
+# JSON array form (preferred) - command receives signals properly
 podman run --entrypoint '["node", "server.js"]' myapp
 
-# String form — treated as a single executable path
+# String form - treated as a single executable path
 # If it does not parse as JSON, Podman treats it as a literal command
 podman run --entrypoint /usr/bin/node myapp server.js
 

@@ -24,9 +24,9 @@ podman machine inspect my-machine
 
 # On macOS, the default volume mount is $HOME:$HOME
 # Common default mounts include:
-# /Users — your home directory tree
-# /private — macOS private directories
-# /var/folders — temporary files
+# /Users - your home directory tree
+# /private - macOS private directories
+# /var/folders - temporary files
 ```
 
 ## Creating a Machine with Custom Mounts
@@ -88,8 +88,8 @@ podman run -it --rm \
     node:20 bash
 
 # Inside the container:
-# ls /app    — shows your project files
-# npm install — writes to your host filesystem
+# ls /app    - shows your project files
+# npm install - writes to your host filesystem
 
 # Mount with read-only access in the container
 podman run -it --rm \

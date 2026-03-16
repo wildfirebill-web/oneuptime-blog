@@ -200,4 +200,4 @@ podman run -d --name db \
 
 ## Summary
 
-Environment variables are the primary configuration mechanism for containers. Use the `-e` flag to pass individual variables, chain multiple `-e` flags for comprehensive configuration, and pass host environment variables by name for dynamic values. Be mindful of security — avoid putting sensitive values in command history or inspect-visible configurations. For managing many variables, consider using environment files which are covered in the next guide.
+Environment variables are the primary configuration mechanism for containers. Use the `-e` flag to pass individual variables, chain multiple `-e` flags for comprehensive configuration, and pass host environment variables by name for dynamic values. Be mindful of security - avoid putting sensitive values in command history or inspect-visible configurations. For managing many variables, consider using environment files which are covered in the next guide.

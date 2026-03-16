@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Go, Golang, Deployments
+Tags: Flux CD, Kubernetes, GitOps, Go, Golang, Deployment
 
 Description: Deploy a compiled Go application to Kubernetes using Flux CD GitOps, leveraging Go's minimal runtime footprint for lean container images and fast startup.
 

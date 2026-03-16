@@ -28,7 +28,7 @@ grep -i "error\|failed\|not found" build.log
 
 A typical failure looks like this:
 
-```
+```text
 STEP 4/8: RUN apt-get install -y nonexistent-package
 E: Unable to locate package nonexistent-package
 Error: building at STEP "RUN apt-get install -y nonexistent-package": while running runtime: exit status 100

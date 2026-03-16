@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Node.js, Express, Deployments
+Tags: AWS, Node.js, Express, Deployment
 
 Description: A complete guide to deploying a Node.js Express application to AWS, covering EC2, Elastic Beanstalk, ECS with Fargate, and Lambda with API Gateway deployment options.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, LVM, Snapshots, Storage, Linux
+Tags: RHEL, LVM, Snapshot, Storage, Linux
 
 Description: Learn how to create, manage, and restore LVM snapshots on RHEL for safe backups and rollback capabilities.
 

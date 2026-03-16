@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Journald, Ansible
+Tags: RHEL, System Roles, journald, Ansible
 
 Description: Use RHEL System Roles to automate journald configuration across multiple systems.
 

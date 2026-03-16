@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, FastAPI, Deployments, Production, DevOps
+Tags: Python, FastAPI, Deployment, Production, DevOps
 
 Description: A comprehensive guide to deploying FastAPI applications to production, covering Gunicorn, Docker, Nginx, SSL, and cloud platform deployments.
 

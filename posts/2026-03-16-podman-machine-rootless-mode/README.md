@@ -10,7 +10,7 @@ Description: Learn how to configure and optimize Podman machines for rootless mo
 
 > Rootless mode is Podman's default and most secure configuration, running containers without root privileges.
 
-Rootless containers are one of Podman's defining features. By running the container engine without root privileges, you gain a significant security advantage — even if a container is compromised, the attacker does not gain root access to the host. This guide covers configuring and working effectively with rootless Podman machines.
+Rootless containers are one of Podman's defining features. By running the container engine without root privileges, you gain a significant security advantage - even if a container is compromised, the attacker does not gain root access to the host. This guide covers configuring and working effectively with rootless Podman machines.
 
 ---
 

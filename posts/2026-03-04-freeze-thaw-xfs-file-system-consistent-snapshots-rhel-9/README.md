@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, XFS, Snapshots, Storage, Linux
+Tags: RHEL, XFS, Snapshot, Storage, Linux
 
 Description: Learn how to use xfs_freeze to freeze and thaw XFS file systems on RHEL, enabling consistent point-in-time snapshots for backups and disaster recovery.
 

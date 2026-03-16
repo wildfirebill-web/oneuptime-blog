@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Rust, Deployments, ECS, Lambda
+Tags: AWS, Rust, Deployment, ECS, Lambda
 
 Description: Learn how to deploy Rust web applications and APIs to AWS using ECS Fargate, Lambda, and EC2 with optimized container builds and production configurations.
 

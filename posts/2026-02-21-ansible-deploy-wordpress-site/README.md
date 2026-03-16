@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, WordPress, PHP, MySQL, Deployments
+Tags: Ansible, WordPress, PHP, MySQL, Deployment
 
 Description: Automate WordPress deployment with Ansible including MySQL setup, PHP-FPM, Nginx, wp-cli, and security hardening.
 

@@ -55,9 +55,9 @@ podman run -it --rm alpine sh
 ```
 
 The flags mean:
-- `-i` — Keep STDIN open (interactive).
-- `-t` — Allocate a pseudo-TTY (terminal).
-- `--rm` — Automatically remove the container when it exits.
+- `-i` - Keep STDIN open (interactive).
+- `-t` - Allocate a pseudo-TTY (terminal).
+- `--rm` - Automatically remove the container when it exits.
 
 Inside the container, try some commands:
 

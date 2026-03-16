@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Argo CD, GitOps, Kubernetes, Deployments
+Tags: Istio, Argo CD, GitOps, Kubernetes, Deployment
 
 Description: How to manage Istio resources with Argo CD using a GitOps workflow for consistent and auditable mesh configuration.
 

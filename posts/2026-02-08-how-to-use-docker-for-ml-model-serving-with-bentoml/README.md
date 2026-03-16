@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, BentoML, Machine Learning, Model Serving, MLOps, API, Python, Deployments
+Tags: Docker, BentoML, Machine Learning, Model Serving, MLOps, API, Python, Deployment
 
 Description: Step-by-step guide to packaging and serving machine learning models as Docker containers using BentoML.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Bun, Deployments, Docker, Kubernetes
+Tags: Bun, Deployment, Docker, Kubernetes
 
 Description: A comprehensive guide to deploying Bun applications to production using Docker, Kubernetes, systemd, with health checks, logging, monitoring, and CI/CD pipelines.
 

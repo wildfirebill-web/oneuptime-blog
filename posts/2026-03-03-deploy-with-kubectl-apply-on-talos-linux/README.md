@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Kubectl, Deployments, DevOps
+Tags: Talos Linux, Kubernetes, Kubectl, Deployment, DevOps
 
 Description: A practical guide to deploying and managing applications using kubectl apply on a Talos Linux Kubernetes cluster.
 

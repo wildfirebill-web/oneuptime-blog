@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Consul, Service Discovery, Receiver Creator, Dynamic Targets
+Tags: OpenTelemetry, Consul, Service Discovery, Receiver Creator, Dynamic Target
 
 Description: Use Consul service discovery with the OpenTelemetry Collector receiver creator to dynamically discover and scrape metric endpoints.
 

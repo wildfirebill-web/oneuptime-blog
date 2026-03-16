@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Python, Flask, WSGI, Deployments
+Tags: Ansible, Python, Flask, WSGI, Deployment
 
 Description: Automate Flask application deployment with Ansible covering gunicorn configuration, static files, and production best practices.
 

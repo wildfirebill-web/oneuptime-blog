@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Docker, Rollback, Deployments, DevOps
+Tags: Ansible, Docker, Rollback, Deployment, DevOps
 
 Description: Automate container deployment rollbacks with Ansible including health check verification, automatic rollback triggers, and version tracking.
 

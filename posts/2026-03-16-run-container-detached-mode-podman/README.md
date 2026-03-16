@@ -25,7 +25,7 @@ podman run -d nginx
 
 Podman prints the full container ID and returns to your prompt:
 
-```
+```text
 a3f5b2c1d4e6f7890123456789abcdef0123456789abcdef0123456789abcdef
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, SSH, Filesystems, Storage
+Tags: Ubuntu, SSH, Filesystem, Storage
 
 Description: Learn how to install and configure SSHFS on Ubuntu to mount remote directories over SSH, enabling transparent file access to remote servers as local filesystems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Journald, Disk Usage, Log Management, Systemd, VACUUM
+Tags: RHEL, journald, Disk Usage, Log Management, Systemd, VACUUM
 
 Description: Control systemd journal disk consumption on RHEL by setting size limits, vacuuming old entries, and configuring automatic retention policies.
 

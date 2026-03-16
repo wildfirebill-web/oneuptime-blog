@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Typha, CNI, Networking, Scaling, Deployments
+Tags: Calico, Kubernetes, Typha, CNI, Networking, Scaling, Deployment
 
 Description: Deploy Calico Typha manually without the Calico Operator, configuring the Deployment, Service, and RBAC resources step by step.
 

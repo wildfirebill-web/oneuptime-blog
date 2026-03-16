@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Blue-Green, Deployments, Kustomize
+Tags: Flux CD, GitOps, Kubernetes, Blue-Green, Deployment, Kustomize
 
 Description: Implement blue-green environment switching using Flux CD Kustomizations and Kubernetes Services to achieve zero-downtime deployments with instant rollback capability.
 

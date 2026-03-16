@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Kubernetes, Strimzi, StatefulSets, Deployments
+Tags: Kafka, Kubernetes, Strimzi, StatefulSets, Deployment
 
 Description: Learn how to deploy Apache Kafka on Kubernetes using Strimzi operator for production-ready message streaming.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Kubernetes, Helm, DevOps, Deployments
+Tags: Ansible, Kubernetes, Helm, DevOps, Deployment
 
 Description: Deploy Helm charts to Kubernetes using Ansible for automated, repeatable chart installations with environment-specific value overrides.
 

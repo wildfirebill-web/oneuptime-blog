@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Terraform, Azure, Cloud, Virtual Machines, Linux
+Tags: RHEL, Terraform, Azure, Cloud, Virtual Machine, Linux
 
 Description: Deploy RHEL virtual machines on Microsoft Azure using Terraform, covering resource groups, networking, and VM configuration.
 

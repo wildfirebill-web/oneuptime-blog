@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Edge Computing, Updates, OTA, Deployments
+Tags: Edge Computing, Updates, OTA, Deployment
 
 Description: Learn to create edge updates for safely deploying software to distributed edge devices.
 

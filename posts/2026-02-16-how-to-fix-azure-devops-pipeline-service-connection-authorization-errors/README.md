@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure DevOps, CI/CD, Service Connections, Pipeline Authorization, DevOps, Troubleshooting, Deployments
+Tags: Azure DevOps, CI/CD, Service Connections, Pipeline Authorization, DevOps, Troubleshooting, Deployment
 
 Description: Fix Azure DevOps pipeline service connection authorization errors including expired credentials, missing permissions, and pipeline authorization issues.
 

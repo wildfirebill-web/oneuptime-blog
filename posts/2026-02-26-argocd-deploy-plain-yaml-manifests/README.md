@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, YAML, Deployments
+Tags: ArgoCD, GitOps, Kubernetes, YAML, Deployment
 
 Description: Learn how to deploy plain Kubernetes YAML manifests with ArgoCD without Helm or Kustomize, using the directory source type for straightforward GitOps workflows.
 

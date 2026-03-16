@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Deployments, Failure
+Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Deployment, Failure
 
 Description: Learn how to configure Flux alerts that notify you immediately when deployments fail, enabling rapid incident response.
 

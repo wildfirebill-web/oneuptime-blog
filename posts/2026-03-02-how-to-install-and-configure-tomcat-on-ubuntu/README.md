@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Java, Tomcat, Web Server, Deployments
+Tags: Ubuntu, Java, Tomcat, Web Server, Deployment
 
 Description: Install and configure Apache Tomcat on Ubuntu, set up a dedicated service user, configure systemd, and deploy web applications securely.
 

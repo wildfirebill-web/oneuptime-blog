@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, XFS, Filesystems, Storage, Linux
+Tags: RHEL, XFS, Filesystem, Storage, Linux
 
 Description: Learn how to create, mount, and configure XFS file systems on RHEL, including partition preparation, formatting options, and persistent mount configuration.
 

@@ -53,7 +53,7 @@ podman --version
 
 You should see output similar to:
 
-```
+```text
 podman version 5.x.x
 ```
 

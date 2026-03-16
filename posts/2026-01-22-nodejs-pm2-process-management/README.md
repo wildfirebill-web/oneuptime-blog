@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, PM2, Process Management, Production, Deployments
+Tags: NodeJS, PM2, Process Management, Production, Deployment
 
 Description: Learn how to use PM2 to manage Node.js applications in production including clustering, monitoring, log management, and zero-downtime deployments.
 

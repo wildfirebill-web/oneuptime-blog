@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, LXD, Containers, Snapshots, Backup
+Tags: Ubuntu, LXD, Containers, Snapshot, Backup
 
 Description: Learn how to create, manage, and restore LXD container snapshots on Ubuntu, including automated snapshot scheduling and using snapshots for container cloning.
 

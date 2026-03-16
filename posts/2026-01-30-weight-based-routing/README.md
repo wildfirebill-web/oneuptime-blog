@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Traffic Management, Routing, Deployments
+Tags: API Gateway, Traffic Management, Routing, Deployment
 
 Description: Learn how to implement weight-based routing for traffic distribution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, React, S3, CloudFront, Deployments
+Tags: AWS, React, S3, CloudFront, Deployment
 
 Description: Complete walkthrough for deploying React single-page applications to AWS S3 with CloudFront CDN, custom domains, and automated CI/CD deployments.
 

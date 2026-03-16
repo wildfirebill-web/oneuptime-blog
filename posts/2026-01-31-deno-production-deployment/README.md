@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Deno, Deployments, Docker, Kubernetes
+Tags: Deno, Deployment, Docker, Kubernetes
 
 Description: A comprehensive guide to deploying Deno applications to production environments using Docker, Kubernetes, systemd, and CI/CD pipelines with best practices for security, monitoring, and scalability.
 

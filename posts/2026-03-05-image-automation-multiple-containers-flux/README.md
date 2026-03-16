@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Image Automation, Multi-Container, Deployments
+Tags: Flux CD, GitOps, Kubernetes, Image Automation, Multi-Container, Deployment
 
 Description: Learn how to set up Flux image automation for pods that run multiple container images, including init containers and sidecars.
 

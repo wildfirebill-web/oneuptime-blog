@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Linux, Filesystems, FUSE
+Tags: Ubuntu, Linux, Filesystem, FUSE
 
 Description: Learn how FUSE (Filesystem in Userspace) works on Ubuntu, how to set it up, and how to use popular FUSE-based filesystems including sshfs, encfs, and s3fs.
 

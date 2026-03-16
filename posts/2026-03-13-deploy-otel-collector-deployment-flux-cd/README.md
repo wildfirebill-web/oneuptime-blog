@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, OpenTelemetry, OTEL Collector, Deployments, Observability
+Tags: Flux CD, Kubernetes, GitOps, OpenTelemetry, OTEL Collector, Deployment, Observability
 
 Description: Deploy OpenTelemetry Collector as a central Deployment using Flux CD for aggregating and processing telemetry from multiple application sources before exporting to backends.
 

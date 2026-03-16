@@ -1186,6 +1186,7 @@
 - Background Fetch
 - Background Index
 - Background Jobs
+- Background Processes
 - Background Processing
 - Background Queue
 - Background Services
@@ -1401,6 +1402,7 @@
 - Block Blobs
 - Block Device Encryption
 - Block Devices
+- Block IO
 - Block Scalars
 - Block Size
 - Block Storage
@@ -1459,7 +1461,7 @@
 - Boot Process
 - Boot Protection
 - Boot Services
-- Boot Targets
+- Boot Target
 - Boot Time
 - Boot Troubleshooting
 - Bootable USB
@@ -2365,6 +2367,7 @@
 - Comments
 - Commercial APM
 - Commission
+- Commit
 - Commit History
 - Commit Messages
 - Commit SHA
@@ -2609,6 +2612,7 @@
 - Container Analysis
 - Container Apps
 - Container Architecture
+- Container Attach
 - Container Attached Storage
 - Container Build
 - Container Communication
@@ -2616,10 +2620,13 @@
 - Container Dependencies
 - Container Distribution
 - Container Events
+- Container Exec
+- Container Export
 - Container Hardening
 - Container Host
 - Container Images
 - Container Insights
+- Container Inspection
 - Container Instances
 - Container Isolation
 - Container Jobs
@@ -2629,7 +2636,9 @@
 - Container Metrics
 - Container Migration
 - Container Monitoring
+- Container Mount
 - Container Networking
+- Container Operations
 - Container Optimization
 - Container Orchestration
 - Container Ordering
@@ -2638,7 +2647,7 @@
 - Container Patterns
 - Container Platform
 - Container Port
-- Container recovery
+- Container Recovery
 - Container Registries
 - Container Registry
 - Container Resources
@@ -2646,6 +2655,7 @@
 - Container Scanning
 - Container Security
 - Container Setup
+- Container Shell
 - Container Signing
 - Container Startup
 - Container Storage Interface
@@ -2660,6 +2670,7 @@
 - ContainerCreating
 - Containerd
 - Containerfile
+- Containerignore
 - Containerization
 - Containers
 - ContainerStorage
@@ -3061,6 +3072,7 @@
 - Custom Origin
 - Custom Packages
 - Custom Partitioner
+- Custom Path
 - Custom Platforms
 - Custom Policies
 - Custom Policy
@@ -3093,7 +3105,7 @@
 - Custom Services
 - Custom Spans
 - Custom Tags
-- Custom Targets
+- Custom Target
 - Custom Tasks
 - Custom Templates
 - Custom Tooling
@@ -3561,6 +3573,7 @@
 - Deploy
 - Deploy Keys
 - DeployIfNotExists
+- Deployment
 - Deployment Annotations
 - Deployment Approvals
 - Deployment Automation
@@ -3591,7 +3604,6 @@
 - Deployment Verification
 - Deployment Windows
 - Deployment Workflow
-- Deployments
 - Deprecation
 - Deref
 - Derive
@@ -3613,6 +3625,7 @@
 - Destinations
 - Destroy
 - Destructuring
+- Detach Keys
 - Detached Mode
 - Detection
 - Detection Rules
@@ -4127,7 +4140,7 @@
 - Dynamic Routing
 - Dynamic Rules
 - Dynamic Secrets
-- Dynamic Targets
+- Dynamic Target
 - Dynamic Thresholds
 - Dynamic Tuning
 - Dynamic Variables
@@ -4819,10 +4832,10 @@
 - Filesha256 Function
 - Filesha512 Function
 - Filestore
+- Filesystem
 - Filesystem Mirror
 - Filesystem Recovery
 - Filesystem Scanning
-- Filesystems
 - FileUpload
 - Filter
 - Filter Chain
@@ -5908,7 +5921,7 @@
 - IBM Cloud
 - Ibm container registry
 - IBM Kubernetes Service
-- IBM POWER
+- IBM Power
 - IBM Z
 - IBus
 - ICA
@@ -5975,6 +5988,7 @@
 - Image Classification
 - Image Cleaner
 - Image Distribution
+- Image Export
 - Image Factory
 - Image Filtering
 - Image Gallery
@@ -6550,7 +6564,7 @@
 - Joins
 - Journal
 - Journalctl
-- Journald
+- journald
 - JPA
 - Jq
 - Jre
@@ -7314,7 +7328,7 @@
 - MachineDeployment
 - MachineHealthCheck
 - Macie
-- MacOS
+- macOS
 - Macros
 - MACsec
 - Macvlan
@@ -7371,9 +7385,10 @@
 - Management Cluster
 - Management Groups
 - Mandatory Access Control
+- Manifest
 - Manifest Generation
+- Manifest List
 - Manifest Validation
-- Manifests
 - Manipulation
 - Manticore Search
 - Manual Instrumentation
@@ -8261,6 +8276,7 @@
 - No Reboot
 - No_log
 - No-advertise
+- No-Cache
 - No-Code
 - No-Proxy
 - Noatime
@@ -8593,7 +8609,7 @@
 - OpenSSH
 - OpenSSL
 - OpenStack
-- OpenSUSE
+- openSUSE
 - OpenTelemetry
 - OpenTelemetry Collector
 - Opentelemetry_phoenix
@@ -9080,6 +9096,7 @@
 - Pi-hole
 - Pick
 - Pickle
+- PID Limits
 - PID Namespace
 - PII
 - PII Detection
@@ -9247,6 +9264,8 @@
 - Podman
 - Podman Compose
 - Podman Desktop
+- Podman Farm
+- Podman Machine
 - PodMonitor
 - Pods
 - PodSecurityPolicy
@@ -9380,6 +9399,7 @@
 - PowerTOP
 - PPA
 - Ppc64el
+- ppc64le
 - Pprof
 - PR-Environments
 - Pre-aggregation
@@ -9704,6 +9724,7 @@
 - Pull
 - Pull Errors
 - Pull Mode
+- Pull Policy
 - Pull Request Automation
 - Pull Request Testing
 - Pull Requests
@@ -9786,6 +9807,7 @@
 - Quantum Computing
 - Quarkus
 - Quay
+- Quay.io
 - Queries
 - Query
 - Query Acceleration
@@ -9984,6 +10006,7 @@
 - Real-Time Processing
 - Real-Time Replication
 - Real-Time Search
+- Real-Time Stats
 - Real-time Systems
 - Real-Time Translation
 - Real-Time Updates
@@ -10179,7 +10202,7 @@
 - Remote State
 - Remote Storage
 - Remote Tap
-- Remote URLs
+- Remote URL
 - Remote User
 - Remote Work
 - Remote Write
@@ -10417,6 +10440,7 @@
 - Retrieval Augmented Generation
 - Retry
 - Retry Logic
+- Retry Options
 - Retry Pattern
 - Retry Pipelines
 - Retry Policies
@@ -10525,11 +10549,14 @@
 - Root Detection
 - Root Password
 - Root Security
+- Rootfs
+- Rootful
 - Rootkit
 - Rootkit Detection
 - Rootkit Protection
 - Rootless
 - Rootless Containers
+- Rosetta
 - Rotation
 - Rotel
 - Round Robin
@@ -10634,7 +10661,7 @@
 - S/4HANA
 - S3
 - S3 Backend
-- S390x
+- s390x
 - S3fs
 - S3fs-fuse
 - SaaS
@@ -11381,9 +11408,9 @@
 - Snapcraft
 - Snappy
 - Snappy Compression
+- Snapshot
 - Snapshot Debugger
 - Snapshot Testing
-- Snapshots
 - SnapStart
 - SNAT
 - SNI
@@ -11793,6 +11820,7 @@
 - STONITH
 - Stop
 - Stop Start
+- Stop Timeout
 - Stop Words
 - Stopping
 - STOPSIGNAL
@@ -12156,6 +12184,7 @@
 - Tape Gateway
 - Tar
 - Tarball
+- Target
 - Target Allocator
 - Target Groups
 - Target Namespace
@@ -12164,7 +12193,6 @@
 - Targetcli
 - Targeted Operations
 - Targeting
-- Targets
 - Task
 - Task Automation
 - Task Chaining
@@ -12989,6 +13017,7 @@
 - Usage-Based Billing
 - USB
 - USB Boot
+- USB Devices
 - USB Security
 - USBGuard
 - Use Cases
@@ -13204,7 +13233,7 @@
 - Virtual Interfaces
 - Virtual IP
 - Virtual Kubelet
-- Virtual Machines
+- Virtual Machine
 - Virtual Mailboxes
 - Virtual Memory
 - Virtual Network

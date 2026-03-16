@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Strategy, Large Scale, Deployments, Performance
+Tags: Ansible, Strategy, Large Scale, Deployment, Performance
 
 Description: Configure Ansible strategy plugins, forks, serial, and performance settings for deploying to hundreds or thousands of hosts reliably and efficiently.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Spring Boot, Azure App Service, Java, API Development, Spring GraphQL, Deployments
+Tags: GraphQL, Spring Boot, Azure App Service, Java, API Development, Spring GraphQL, Deployment
 
 Description: Learn how to build a GraphQL API with Spring Boot using Spring for GraphQL and deploy it to Azure App Service for production-ready hosting.
 

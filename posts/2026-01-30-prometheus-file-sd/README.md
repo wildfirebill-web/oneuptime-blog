@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, File Service Discovery, Configuration, Targets
+Tags: Prometheus, File Service Discovery, Configuration, Target
 
 Description: Learn to implement Prometheus file-based service discovery with JSON/YAML targets, automatic reloading, and integration patterns.
 

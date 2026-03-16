@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Service Discovery, Kubernetes, Scraping, Targets
+Tags: Prometheus, Service Discovery, Kubernetes, Scraping, Target
 
 Description: Deep dive into how Prometheus discovers scrape targets in Kubernetes using pod, service, and endpoint service discovery.
 

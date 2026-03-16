@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Node.js, JavaScript, Deployments
+Tags: Flux CD, Kubernetes, GitOps, Node.js, JavaScript, Deployment
 
 Description: Step-by-step guide to deploying a containerized Node.js application to Kubernetes using Flux CD GitOps, from Dockerfile to automated reconciliation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, MacOS, Homebrew, DevOps
+Tags: Ansible, macOS, Homebrew, DevOps
 
 Description: How to install and configure Ansible on macOS using Homebrew, including troubleshooting common issues and setting up your first project.
 

@@ -192,7 +192,7 @@ podman run -d --name app \
 
 ```bash
 # Issue: "exec format error" when running containers
-# Solution: The image might be x86_64 only — recreate with Rosetta enabled
+# Solution: The image might be x86_64 only - recreate with Rosetta enabled
 podman machine stop
 podman machine rm
 podman machine init --rosetta

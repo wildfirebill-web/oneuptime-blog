@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Azure, Cloud, Virtual Machines, Linux
+Tags: RHEL, Azure, Cloud, Virtual Machine, Linux
 
 Description: Deploy and configure RHEL on Azure Virtual Machines with proper disk setup, networking, and integration with Azure services.
 

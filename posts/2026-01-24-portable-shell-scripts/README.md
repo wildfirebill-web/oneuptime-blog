@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Shell Scripting, POSIX, Bash, Portability, Linux, MacOS, DevOps
+Tags: Shell Scripting, POSIX, Bash, Portability, Linux, macOS, DevOps
 
 Description: Learn how to write shell scripts that work across different Unix-like systems including Linux, macOS, and BSD by following POSIX standards and avoiding shell-specific features.
 

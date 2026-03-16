@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Testing, Manifests
+Tags: ArgoCD, GitOps, Kubernetes, Testing, Manifest
 
 Description: Learn how to test and validate ArgoCD application manifests locally before pushing to Git, catching errors early in your GitOps workflow.
 

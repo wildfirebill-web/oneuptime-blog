@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Jenkins, Kubernetes, CI/CD, DevOps, Docker, Automation, Deployments
+Tags: Jenkins, Kubernetes, CI/CD, DevOps, Docker, Automation, Deployment
 
 Description: A complete guide to deploying applications to Kubernetes from Jenkins, covering pipeline configuration, kubectl integration, Helm deployments, rolling updates, and production best practices.
 

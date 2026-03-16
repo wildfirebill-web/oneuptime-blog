@@ -49,7 +49,7 @@ done
 
 Example output:
 
-```
+```text
 qemu-aarch64: enabled
 qemu-arm: enabled
 qemu-mips64el: enabled

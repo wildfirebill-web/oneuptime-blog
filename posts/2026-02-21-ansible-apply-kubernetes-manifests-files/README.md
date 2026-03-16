@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Kubernetes, Manifests, YAML, DevOps
+Tags: Ansible, Kubernetes, Manifest, YAML, DevOps
 
 Description: Apply existing Kubernetes YAML manifest files using Ansible for integrating pre-existing manifests into your automation pipeline.
 

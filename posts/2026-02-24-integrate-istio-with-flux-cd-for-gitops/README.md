@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Flux CD, GitOps, Kubernetes, Deployments
+Tags: Istio, Flux CD, GitOps, Kubernetes, Deployment
 
 Description: How to manage Istio service mesh configuration using Flux CD for GitOps-based deployment and reconciliation.
 

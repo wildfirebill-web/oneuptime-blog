@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Flask, Python, Gunicorn, Deployments
+Tags: Flux CD, Kubernetes, GitOps, Flask, Python, Gunicorn, Deployment
 
 Description: Deploy a Python Flask application to Kubernetes using Flux CD, with Gunicorn as the production WSGI server and GitOps-driven configuration management.
 

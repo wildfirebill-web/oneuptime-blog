@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Manifests, Cluster Bootstrap, GitOps
+Tags: Talos Linux, Kubernetes, Manifest, Cluster Bootstrap, GitOps
 
 Description: Learn how to use extra manifests in Talos Linux to automatically deploy Kubernetes resources during cluster bootstrap and configuration.
 

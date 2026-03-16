@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Timeout, Health Check, Troubleshooting, Kubernetes, GitOps, Deployments
+Tags: Flux CD, Timeout, Health Check, Troubleshooting, Kubernetes, GitOps, Deployment
 
 Description: A comprehensive guide to diagnosing and resolving timeout errors in Flux CD when resources take too long to become ready, covering timeout configuration, resource constraints, and deployment issues.
 

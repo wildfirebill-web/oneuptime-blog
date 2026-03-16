@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Helm, DevOps, Package Management, Deployments
+Tags: Kubernetes, Helm, DevOps, Package Management, Deployment
 
 Description: Learn how to use Helm for managing Kubernetes applications, including chart creation, values customization, release management, and best practices for production deployments.
 

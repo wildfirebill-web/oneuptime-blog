@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Docker, Swarm, Stack, Deployments
+Tags: Ansible, Docker, Swarm, Stack, Deployment
 
 Description: Deploy and manage Docker Stacks on Swarm clusters using Ansible with compose files and the docker_stack module.
 
