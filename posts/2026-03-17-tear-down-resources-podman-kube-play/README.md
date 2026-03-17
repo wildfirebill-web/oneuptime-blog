@@ -29,14 +29,14 @@ The `--down` flag stops and removes all pods and containers that were created fr
 ## What Gets Removed
 
 ```bash
-# Before tear down — check running resources
+# Before tear down - check running resources
 podman pod ls
 podman ps -a
 
 # Tear down
 podman kube play --down deployment.yaml
 
-# After tear down — pods and containers are gone
+# After tear down - pods and containers are gone
 podman pod ls
 podman ps -a
 ```
@@ -55,7 +55,7 @@ Resources that persist after `--down`:
 ## Tearing Down Multi-Document YAML
 
 ```yaml
-# multi-app.yaml — contains multiple pods
+# multi-app.yaml - contains multiple pods
 apiVersion: v1
 kind: Pod
 metadata:
@@ -119,7 +119,7 @@ podman kube play deployment.yaml
 
 ```bash
 #!/bin/bash
-# redeploy.sh — tear down and redeploy in one script
+# redeploy.sh - tear down and redeploy in one script
 YAML_FILE="$1"
 
 echo "Tearing down existing deployment..."

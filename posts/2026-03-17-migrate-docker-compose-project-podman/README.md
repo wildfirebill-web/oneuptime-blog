@@ -8,7 +8,7 @@ Description: Learn how to migrate an existing Docker Compose project to Podman w
 
 ---
 
-> Migrating from Docker Compose to Podman requires only a few adjustments — mainly image names, volume labels, and rootless networking.
+> Migrating from Docker Compose to Podman requires only a few adjustments - mainly image names, volume labels, and rootless networking.
 
 Most Docker Compose projects work with Podman with minimal changes. The main differences involve fully qualified image names, SELinux volume labels, rootless port restrictions, and the absence of a long-running daemon. This guide walks through a complete migration.
 
@@ -129,7 +129,7 @@ sudo systemctl stop docker
 
 ```bash
 #!/bin/bash
-# migrate-check.sh — verify compose file compatibility
+# migrate-check.sh - verify compose file compatibility
 
 COMPOSE_FILE="${1:-docker-compose.yml}"
 
@@ -137,7 +137,7 @@ echo "Checking $COMPOSE_FILE for migration issues..."
 
 # Check for short image names
 if grep -P '^\s+image:\s+[a-z]+:' "$COMPOSE_FILE" | grep -v '/'; then
-  echo "WARNING: Found short image names — use fully qualified paths"
+  echo "WARNING: Found short image names - use fully qualified paths"
 fi
 
 # Check for privileged ports

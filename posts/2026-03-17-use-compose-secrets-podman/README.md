@@ -117,7 +117,7 @@ secrets:
 ## Reading Secrets in Application Code
 
 ```python
-# app.py — reading a secret from file
+# app.py - reading a secret from file
 import os
 
 def read_secret(name):
@@ -132,13 +132,13 @@ api_key = read_secret("api_key")
 ## Secrets vs Environment Variables
 
 ```yaml
-# Environment variables — visible in process listing and logs
+# Environment variables - visible in process listing and logs
 services:
   app:
     environment:
       DB_PASSWORD: exposed_in_env  # Less secure
 
-# Secrets — mounted as files, not visible in process listing
+# Secrets - mounted as files, not visible in process listing
 services:
   app:
     secrets:

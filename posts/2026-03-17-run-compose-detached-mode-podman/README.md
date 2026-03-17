@@ -28,10 +28,10 @@ podman-compose up -d
 ## Foreground vs Detached
 
 ```bash
-# Foreground — logs stream to terminal, Ctrl+C stops services
+# Foreground - logs stream to terminal, Ctrl+C stops services
 podman-compose up
 
-# Detached — services run in background, terminal is free
+# Detached - services run in background, terminal is free
 podman-compose up -d
 ```
 
@@ -104,7 +104,7 @@ podman-compose down
 
 ```bash
 #!/bin/bash
-# deploy.sh — start services and verify health
+# deploy.sh - start services and verify health
 
 # Start services in the background
 podman-compose up -d

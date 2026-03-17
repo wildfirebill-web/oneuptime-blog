@@ -19,12 +19,12 @@ When working on multiple applications or microservice architectures, you often n
 Each compose project uses a project name prefix to avoid container name collisions.
 
 ```bash
-# Project A — runs in /home/user/project-a
+# Project A - runs in /home/user/project-a
 cd /home/user/project-a
 podman-compose up -d
 # Creates: project-a_web_1, project-a_db_1
 
-# Project B — runs in /home/user/project-b
+# Project B - runs in /home/user/project-b
 cd /home/user/project-b
 podman-compose up -d
 # Creates: project-b_web_1, project-b_db_1
@@ -154,7 +154,7 @@ podman-compose -p backend logs -f
 
 ```bash
 #!/bin/bash
-# manage-projects.sh — start/stop all projects
+# manage-projects.sh - start/stop all projects
 ACTION="${1:-up}"
 PROJECTS=(project-a project-b project-c)
 

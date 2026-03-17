@@ -63,7 +63,7 @@ WantedBy=default.target
 # Reload systemd
 systemctl --user daemon-reload
 
-# Start — the image is built first, then the container runs
+# Start - the image is built first, then the container runs
 systemctl --user start myapp
 
 # Verify the image was built
@@ -118,7 +118,7 @@ Label=version=1.0
 ## Multi-Stage Build
 
 ```dockerfile
-# Containerfile — multi-stage
+# Containerfile - multi-stage
 FROM docker.io/library/node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
@@ -159,7 +159,7 @@ systemctl --user stop myapp
 # Remove the old image to force a rebuild
 podman rmi localhost/myapp:latest
 
-# Start again — Quadlet triggers a fresh build
+# Start again - Quadlet triggers a fresh build
 systemctl --user start myapp
 ```
 

@@ -183,14 +183,14 @@ systemctl --user start webapp
 
 ```bash
 #!/bin/bash
-# health-check.sh — check container health by name
+# health-check.sh - check container health by name
 CONTAINER="my-webserver"
 
 STATUS=$(podman inspect "$CONTAINER" --format '{{.State.Status}}')
 if [ "$STATUS" = "running" ]; then
   echo "$CONTAINER is healthy"
 else
-  echo "$CONTAINER is $STATUS — restarting..."
+  echo "$CONTAINER is $STATUS - restarting..."
   systemctl --user restart webapp
 fi
 ```

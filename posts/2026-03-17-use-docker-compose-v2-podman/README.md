@@ -59,7 +59,7 @@ docker compose build
 ## Compose v2 Features with Podman
 
 ```yaml
-# docker-compose.yml — using Compose v2 features
+# docker-compose.yml - using Compose v2 features
 services:
   web:
     image: docker.io/library/nginx:alpine
@@ -93,10 +93,10 @@ docker compose watch
 ## Compose v2 vs podman-compose
 
 ```bash
-# Docker Compose v2 — official tool, more features, uses socket API
+# Docker Compose v2 - official tool, more features, uses socket API
 docker compose up -d
 
-# podman-compose — Python-based, calls podman CLI directly
+# podman-compose - Python-based, calls podman CLI directly
 podman-compose up -d
 
 # Both read the same docker-compose.yml format

@@ -70,7 +70,7 @@ services:
 ```
 
 ```bash
-# Deploy — all variables from app.env are injected into the container
+# Deploy - all variables from app.env are injected into the container
 podman-compose up -d
 
 # Verify the variables are set

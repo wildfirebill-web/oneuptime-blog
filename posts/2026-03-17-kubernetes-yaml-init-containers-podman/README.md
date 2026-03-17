@@ -42,7 +42,7 @@ spec:
 ```
 
 ```bash
-# Deploy the pod — init container runs first
+# Deploy the pod - init container runs first
 podman kube play pod-with-init.yaml
 
 # Check that the init container ran and completed

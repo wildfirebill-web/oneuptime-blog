@@ -68,7 +68,7 @@ WantedBy=default.target
 # Reload systemd
 systemctl --user daemon-reload
 
-# Start the postgres service — volume is created automatically
+# Start the postgres service - volume is created automatically
 systemctl --user start postgres
 
 # Verify the volume exists
@@ -154,7 +154,7 @@ podman volume ls
 # Stop the service
 systemctl --user stop postgres
 
-# The volume persists — remove it manually if needed
+# The volume persists - remove it manually if needed
 podman volume rm pgdata
 ```
 

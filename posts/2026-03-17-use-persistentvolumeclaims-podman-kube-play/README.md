@@ -74,7 +74,7 @@ podman exec postgres-db psql -U postgres -c "INSERT INTO test (name) VALUES ('pe
 # Tear down the pod
 podman kube play --down postgres-pvc.yaml
 
-# Re-deploy the pod — data is still there
+# Re-deploy the pod - data is still there
 podman kube play postgres-pvc.yaml
 
 # Verify data survived the restart

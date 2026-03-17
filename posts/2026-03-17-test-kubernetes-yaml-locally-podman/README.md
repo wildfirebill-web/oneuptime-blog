@@ -112,7 +112,7 @@ podman logs -f test-app-web
 
 ```bash
 #!/bin/bash
-# test-yaml.sh — quick iteration script
+# test-yaml.sh - quick iteration script
 YAML_FILE="$1"
 
 # Tear down any previous run

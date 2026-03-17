@@ -130,7 +130,7 @@ networks:
 
 ```bash
 #!/bin/bash
-# compat-compose.sh — wrapper for CI/CD compatibility
+# compat-compose.sh - wrapper for CI/CD compatibility
 if command -v docker-compose &> /dev/null; then
   docker-compose "$@"
 elif command -v podman-compose &> /dev/null; then

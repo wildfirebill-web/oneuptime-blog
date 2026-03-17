@@ -51,7 +51,7 @@ services:
   web:
     image: docker.io/library/nginx:alpine
     ports:
-      # Bind to localhost only — not accessible from external
+      # Bind to localhost only - not accessible from external
       - "127.0.0.1:8080:80"
 
       # Bind to a specific interface

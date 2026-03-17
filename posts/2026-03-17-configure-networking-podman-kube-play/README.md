@@ -104,7 +104,7 @@ podman exec frontend-web curl http://backend:5000
 ## Using Host Network
 
 ```bash
-# Deploy with host networking — no network isolation
+# Deploy with host networking - no network isolation
 podman kube play --network host web-pod.yaml
 
 # The container binds directly to host interfaces

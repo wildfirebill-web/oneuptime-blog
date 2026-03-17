@@ -34,7 +34,7 @@ volumes:
 ```
 
 ```bash
-# Start the service — volume is created automatically
+# Start the service - volume is created automatically
 podman-compose up -d
 
 # Verify the volume exists
@@ -89,7 +89,7 @@ services:
 
 ## tmpfs Mounts
 
-tmpfs mounts store data in memory — fast but not persistent.
+tmpfs mounts store data in memory - fast but not persistent.
 
 ```yaml
 # docker-compose.yml

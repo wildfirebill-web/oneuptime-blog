@@ -75,7 +75,7 @@ curl -s --unix-socket /run/user/$(id -u)/podman/podman.sock \
 
 ## Socket Activation
 
-The Podman socket uses systemd socket activation — the Podman service starts on demand when a client connects.
+The Podman socket uses systemd socket activation - the Podman service starts on demand when a client connects.
 
 ```bash
 # Check the socket unit file

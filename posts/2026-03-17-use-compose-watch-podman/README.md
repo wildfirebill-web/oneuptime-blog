@@ -124,7 +124,7 @@ services:
 ```
 
 ```bash
-# Start watching — changes to src/ are synced instantly
+# Start watching - changes to src/ are synced instantly
 docker compose watch
 ```
 

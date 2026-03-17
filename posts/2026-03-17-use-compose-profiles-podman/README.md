@@ -24,13 +24,13 @@ services:
     image: docker.io/library/nginx:alpine
     ports:
       - "8080:80"
-    # No profile — always starts
+    # No profile - always starts
 
   db:
     image: docker.io/library/postgres:16-alpine
     environment:
       POSTGRES_PASSWORD: secret
-    # No profile — always starts
+    # No profile - always starts
 
   adminer:
     image: docker.io/library/adminer:latest

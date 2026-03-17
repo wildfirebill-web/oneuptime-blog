@@ -35,7 +35,7 @@ services:
 ```
 
 ```bash
-# Start services — web and api share a pod
+# Start services - web and api share a pod
 podman-compose up -d
 
 # Verify the pod was created

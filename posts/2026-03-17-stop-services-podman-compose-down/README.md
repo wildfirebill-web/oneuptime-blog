@@ -100,7 +100,7 @@ podman-compose down -t 30
 
 ```bash
 #!/bin/bash
-# clean-all.sh — remove everything from a compose project
+# clean-all.sh - remove everything from a compose project
 echo "Stopping all services..."
 podman-compose down -v --rmi all
 

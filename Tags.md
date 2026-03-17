@@ -858,6 +858,7 @@
 - Auto-Stop
 - Auto-Unlock
 - Auto-Unseal
+- Auto-Update
 - Auto-Updates
 - Auto-Upgrade
 - AutoAssign
@@ -2492,6 +2493,7 @@
 - Config Sync
 - Config-rs
 - ConfigMap
+- ConfigMaps
 - Configuration
 - Configuration as Code
 - Configuration Drift
@@ -3690,6 +3692,7 @@
 - DevOps Guru
 - Devpi
 - DevPod
+- devpts
 - DevSecOps
 - DevSpace
 - DevStack
@@ -5601,6 +5604,7 @@
 - Health Check
 - Health Check Rewriting
 - Health Checking
+- Health Checks
 - Health Dashboard
 - Health Data
 - Health Diagnostics
@@ -6537,6 +6541,7 @@
 - JMS
 - JMX
 - JMX Receiver
+- Job
 - Job Bookmarks
 - Job Dependencies
 - Job Flows
@@ -8052,6 +8057,7 @@
 - Namespace Routing
 - Namespace Security
 - Namespace Selectors
+- Namespaces
 - NameSuffix
 - Naming
 - Naming Convention
@@ -8910,6 +8916,7 @@
 - Passwordless
 - Passwordless Authentication
 - Passwords
+- Pasta
 - PAT
 - PATCH
 - Patch Distribution
@@ -9354,6 +9361,7 @@
 - Portainer
 - Portal
 - Portfolio Rebalancing
+- Ports
 - Portworx
 - POSIX
 - POSIX Permissions
@@ -10843,6 +10851,7 @@
 - SDK Testing
 - SDK v2
 - SDN
+- sdnotify
 - SDP
 - Seal Wrap
 - Sealed Classes
@@ -11366,6 +11375,7 @@
 - Slim
 - Slim CI
 - Slim images
+- slirp4netns
 - SLM
 - SLO
 - Slog
@@ -11436,6 +11446,7 @@
 - Social Login
 - Social Media
 - Social Networks
+- Socket
 - Socket Activation
 - Socket Parameters
 - Socket.IO

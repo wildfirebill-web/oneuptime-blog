@@ -86,7 +86,7 @@ services:
   web:
     image: docker.io/library/nginx:alpine
     configs:
-      # Short syntax — mounts to /<config_name> in the container
+      # Short syntax - mounts to /<config_name> in the container
       - nginx_config
 
 configs:
@@ -152,13 +152,13 @@ ENV=prod podman-compose up -d
 ## Configs vs Bind Mounts
 
 ```yaml
-# Bind mount — syncs changes in real time (good for development)
+# Bind mount - syncs changes in real time (good for development)
 services:
   web:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
 
-# Config — snapshot at deploy time (good for production-like setups)
+# Config - snapshot at deploy time (good for production-like setups)
 services:
   web:
     configs:

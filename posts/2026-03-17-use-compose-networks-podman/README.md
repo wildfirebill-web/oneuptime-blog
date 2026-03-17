@@ -81,7 +81,7 @@ podman exec project_web_1 ping -c 1 api
 
 # web cannot reach db (different networks)
 podman exec project_web_1 ping -c 1 db
-# This will fail — web is not on the backend network
+# This will fail - web is not on the backend network
 ```
 
 ## Named Networks

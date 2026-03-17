@@ -130,7 +130,7 @@ spec:
 
 ```bash
 #!/bin/bash
-# compose-to-kube.sh — convert a Compose project to Kubernetes YAML
+# compose-to-kube.sh - convert a Compose project to Kubernetes YAML
 
 # Step 1: Start services with podman-compose
 podman-compose up -d

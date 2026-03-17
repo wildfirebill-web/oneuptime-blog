@@ -113,7 +113,7 @@ WantedBy=default.target
 ## Managing User Services
 
 ```bash
-# No sudo needed — these are user services
+# No sudo needed - these are user services
 systemctl --user start devserver
 systemctl --user stop devserver
 systemctl --user restart devserver

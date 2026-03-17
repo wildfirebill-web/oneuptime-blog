@@ -51,7 +51,7 @@ WantedBy=default.target
 ```
 
 ```bash
-# Reload and start — the image is pulled first
+# Reload and start - the image is pulled first
 systemctl --user daemon-reload
 systemctl --user start web
 
@@ -71,7 +71,7 @@ Image=registry.example.com/myteam/myapp:v1.5
 # Login to the registry first
 podman login registry.example.com
 
-# Then start the service — it pulls from the private registry
+# Then start the service - it pulls from the private registry
 systemctl --user start myapp
 ```
 

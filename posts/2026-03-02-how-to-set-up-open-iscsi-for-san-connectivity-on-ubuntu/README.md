@@ -311,7 +311,7 @@ sudo iscsiadm --mode node \
 # Check iscsid logs
 sudo journalctl -u iscsid -f
 
-# Connection refused — install netcat first if not available:
+# Connection refused - install netcat first if not available:
 # sudo apt install netcat-openbsd
 nc -zv <ISCSI_TARGET_IP> 3260
 
