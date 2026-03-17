@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, HPA, Horizontal Pod Autoscaler, Replica, Conflicts, GitOps, Kubernetes
+Tags: Flux CD, HPA, Horizontal Pod Autoscaler, Replicas, Conflicts, GitOps, Kubernetes
 
 Description: Understand and resolve the conflict between Flux CD's GitOps reconciliation and Kubernetes HPA when both try to manage Deployment replica counts.
 

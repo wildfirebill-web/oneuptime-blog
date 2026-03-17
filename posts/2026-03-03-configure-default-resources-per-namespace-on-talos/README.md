@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Resource Management, Namespace, LimitRange
+Tags: Talos Linux, Kubernetes, Resource Management, Namespaces, LimitRange
 
 Description: Learn how to configure default CPU, memory, and storage resources per namespace on Talos Linux to ensure predictable scheduling and prevent resource starvation.
 

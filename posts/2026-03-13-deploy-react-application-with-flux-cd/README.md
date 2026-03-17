@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, React, JavaScript, SPA, NGINX
+Tags: Flux CD, Kubernetes, GitOps, React, JavaScript, SPA, Nginx
 
 Description: Deploy a React single-page application to Kubernetes using Flux CD and Nginx, with automated image updates and environment-specific configuration.
 

@@ -16,7 +16,7 @@ When Podman auto-update restarts a container with a new image, it needs to know 
 
 ## The Update Verification Flow
 
-```
+```text
 1. Auto-update pulls new image
 2. Container service restarts with new image
 3. Application starts and initializes
@@ -27,7 +27,7 @@ When Podman auto-update restarts a container with a new image, it needs to know 
 
 If step 4 fails:
 
-```
+```text
 4. Health check fails repeatedly
 5. TimeoutStartSec expires
 6. systemd considers the service failed

@@ -18,7 +18,7 @@ A container's process starting is not the same as the application being ready. D
 
 Without readiness notification, systemd considers a service active as soon as the process starts:
 
-```
+```text
 [Timeline without readiness]
 0s: Container process starts -> systemd marks as "active"
 5s: Application still initializing
@@ -88,7 +88,7 @@ WantedBy=default.target
 
 ## Startup Timeline with Readiness
 
-```
+```text
 [Timeline with readiness]
 0s: Database container starts -> systemd marks as "activating"
 3s: Health check runs -> fails (still starting)

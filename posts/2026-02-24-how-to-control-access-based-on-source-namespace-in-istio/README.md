@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Authorization, Namespace, Security, Kubernetes
+Tags: Istio, Authorization, Namespaces, Security, Kubernetes
 
 Description: Practical guide to using Istio authorization policies for namespace-based access control to isolate services across team and environment boundaries.
 

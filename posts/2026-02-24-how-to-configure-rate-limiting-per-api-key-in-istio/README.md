@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Rate Limiting, API Key, Envoy, API Management
+Tags: Istio, Rate Limiting, API Keys, Envoy, API Management
 
 Description: How to implement per-API-key rate limiting in Istio using Envoy filters and the external rate limit service with Redis backend.
 

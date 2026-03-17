@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Port, Developer Portal
+Tags: ArgoCD, GitOps, Kubernetes, Ports, Developer Portal
 
 Description: Learn how to integrate ArgoCD with Port developer portal to create a unified service catalog with real-time deployment status and self-service actions.
 

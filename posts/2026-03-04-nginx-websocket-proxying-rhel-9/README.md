@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, WebSocket, Proxy, Linux
+Tags: RHEL, Nginx, WebSocket, Proxy, Linux
 
 Description: How to configure Nginx to proxy WebSocket connections on RHEL for real-time applications.
 

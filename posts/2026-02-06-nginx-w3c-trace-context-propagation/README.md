@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, W3C Trace Context, Header Propagation
+Tags: OpenTelemetry, Nginx, W3C Trace Context, Header Propagation
 
 Description: Configure NGINX to properly propagate W3C traceparent and tracestate headers to upstream services for end-to-end distributed tracing.
 

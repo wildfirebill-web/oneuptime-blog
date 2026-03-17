@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kustomization, Kubernetes, GitOps, Post-Build, Variable Substitution, ConfigMap
+Tags: Flux, Kustomization, Kubernetes, GitOps, Post-Build, Variable Substitution, ConfigMaps
 
 Description: Learn how to use ConfigMap references in Flux Kustomization post-build variable substitution for dynamic configuration.
 

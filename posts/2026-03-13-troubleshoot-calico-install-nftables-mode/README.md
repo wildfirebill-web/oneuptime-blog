@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Troubleshooting
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Troubleshooting
 
 Description: A diagnostic guide for resolving Calico installation and policy enforcement failures when running in nftables mode.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Sharding, Namespace, Scalability
+Tags: Flux, Kubernetes, GitOps, Sharding, Namespaces, Scalability
 
 Description: Learn how to configure Flux controller sharding by namespace to distribute reconciliation workloads across multiple controller instances for improved scalability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Systemd, Timer, Auto-Update
+Tags: Podman, Containers, DevOps, Systemd, Timers, Auto-Update
 
 Description: Learn how to set up systemd timers to periodically check for and apply Podman container image updates.
 

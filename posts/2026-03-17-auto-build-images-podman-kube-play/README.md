@@ -16,7 +16,7 @@ During development you often need to rebuild images and redeploy pods in a tight
 
 ## Project Structure
 
-```
+```text
 my-app/
 ├── Containerfile
 ├── app.py

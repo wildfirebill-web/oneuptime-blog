@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Namespace, Configuration
+Tags: Flux CD, GitOps, Kubernetes, Namespaces, Configuration
 
 Description: Learn how to install and run Flux CD controllers in a custom namespace instead of the default flux-system namespace.
 

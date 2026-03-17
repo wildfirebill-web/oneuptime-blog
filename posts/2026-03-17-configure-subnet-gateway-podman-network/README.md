@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Subnet, Gateway, IP
+Tags: Podman, Containers, DevOps, Networking, Subnets, Gateway, IP
 
 Description: Learn how to configure custom subnets and gateways for Podman networks to control container IP addressing.
 

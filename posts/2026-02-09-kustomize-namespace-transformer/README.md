@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kustomize, Namespace
+Tags: Kubernetes, Kustomize, Namespaces
 
 Description: Learn how to leverage Kustomize namespace transformer to deploy applications across multiple namespaces efficiently while maintaining clean separation of concerns.
 

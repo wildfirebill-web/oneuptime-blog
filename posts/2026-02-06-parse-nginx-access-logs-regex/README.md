@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, Log Parsing, Filelog Receiver, Regex
+Tags: OpenTelemetry, Nginx, Log Parsing, Filelog Receiver, Regex
 
 Description: Parse NGINX access logs into structured OpenTelemetry log attributes using custom regex patterns in the filelog receiver.
 

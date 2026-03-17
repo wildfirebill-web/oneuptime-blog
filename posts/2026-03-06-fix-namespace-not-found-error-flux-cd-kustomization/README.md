@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kustomization, Namespace, Dependencies, GitOps, Troubleshooting, Kubernetes
+Tags: Flux CD, Kustomization, Namespaces, Dependencies, GitOps, Troubleshooting, Kubernetes
 
 Description: A practical guide to resolving 'namespace not found' errors in Flux CD Kustomizations by setting up proper dependency ordering and namespace creation strategies.
 

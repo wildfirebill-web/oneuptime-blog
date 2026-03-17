@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespace, Safe Rollout
+Tags: Calico, Kubernetes, Network Policy, Namespaces, Safe Rollout
 
 Description: A phased rollout strategy for Calico namespace-based network policies that prevents outages by validating namespace labels before enforcing isolation.
 

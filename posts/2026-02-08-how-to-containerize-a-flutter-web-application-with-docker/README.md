@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Flutter, Containerization, DevOps, Web Development, NGINX
+Tags: Docker, Flutter, Containerization, DevOps, Web Development, Nginx
 
 Description: Complete guide to building and serving Flutter web applications with Docker, including multi-stage builds with Nginx and optimization strategies.
 

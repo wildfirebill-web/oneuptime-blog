@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Namespace, Finalizer
+Tags: Kubernetes, Namespaces, Finalizer
 
 Description: Learn how to implement namespace deletion finalizers in Kubernetes to ensure proper cleanup of external resources and dependencies before namespace removal.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Storage, Volume Mounts, Security, SubPath
+Tags: Kubernetes, Storage, Volume Mounts, Security, Subpaths
 
 Description: Learn how to safely use subPath in Kubernetes volume mounts to isolate data within shared volumes while understanding and mitigating security risks including symlink attacks and container escapes.
 

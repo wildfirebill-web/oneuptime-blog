@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EventBridge, Authentication, OAuth, API Key, Connection, Security
+Tags: AWS, EventBridge, Authentication, OAuth, API Keys, Connection, Security
 
 Description: Deep dive into EventBridge Connection resources for managing authentication to external APIs and webhook endpoints
 

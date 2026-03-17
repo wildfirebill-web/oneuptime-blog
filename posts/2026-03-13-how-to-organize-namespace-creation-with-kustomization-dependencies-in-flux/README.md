@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Namespace, Dependencies, Repository Structure
+Tags: Flux, Kubernetes, GitOps, Namespaces, Dependencies, Repository Structure
 
 Description: Learn how to organize namespace creation as a dependency in your Flux repository to ensure namespaces exist before resources are deployed into them.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, IP Range, Subnets
+Tags: Podman, Containers, DevOps, Networking, IP Ranges, Subnets
 
 Description: Learn how to configure custom IP address ranges and subnets when creating Podman networks.
 

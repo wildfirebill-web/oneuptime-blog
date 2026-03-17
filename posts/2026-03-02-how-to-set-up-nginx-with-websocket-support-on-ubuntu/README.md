@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, WebSocket, Reverse Proxy
+Tags: Ubuntu, Nginx, WebSocket, Reverse Proxy
 
 Description: Learn how to configure Nginx as a reverse proxy with WebSocket support on Ubuntu, including proper header forwarding and connection upgrade handling.
 

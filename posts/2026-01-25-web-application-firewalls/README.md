@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WAF, Security, Kubernetes, ModSecurity, AWS WAF, NGINX, Application Security
+Tags: WAF, Security, Kubernetes, ModSecurity, AWS WAF, Nginx, Application Security
 
 Description: Learn how to implement Web Application Firewalls in Kubernetes environments. This guide covers ModSecurity, cloud WAF integration, and custom rule development for protecting web applications.
 

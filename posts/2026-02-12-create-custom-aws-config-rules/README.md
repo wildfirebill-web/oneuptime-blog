@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Config, Compliance, Lambda, Security
+Tags: AWS, Configs, Compliance, Lambda, Security
 
 Description: Learn how to build custom AWS Config rules using Lambda functions to enforce organization-specific compliance policies that managed rules don't cover.
 

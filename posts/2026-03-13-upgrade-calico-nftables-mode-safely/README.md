@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Upgrade
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Upgrade
 
 Description: A safe upgrade procedure for Calico when running in nftables mode on a Kubernetes cluster.
 

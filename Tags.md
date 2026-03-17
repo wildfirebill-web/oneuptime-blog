@@ -489,8 +489,8 @@
 - API Groups
 - API Instrumentation
 - API Integration
-- API Key
 - API Key Authentication
+- API Keys
 - API Lifecycle
 - API Management
 - Api migration
@@ -825,6 +825,7 @@
 - Authselect
 - Auto
 - Auto DevOps
+- Auto Mapping
 - Auto mTLS
 - Auto Recovery
 - Auto Repair
@@ -859,7 +860,6 @@
 - Auto-Unlock
 - Auto-Unseal
 - Auto-Update
-- Auto-Updates
 - Auto-Upgrade
 - AutoAssign
 - Autoclass
@@ -1999,6 +1999,7 @@
 - Clear Linux
 - Clevis
 - CLI
+- CLI Arguments
 - CLI Commands
 - CLI Flags
 - CLI Tools
@@ -2484,7 +2485,6 @@
 - Confidential GKE
 - Confidential Ledger
 - Confidential VMs
-- Config
 - Config Connector
 - Config Management
 - Config Management Plugins
@@ -2492,8 +2492,8 @@
 - Config Source
 - Config Sync
 - Config-rs
-- ConfigMap
 - ConfigMaps
+- Configs
 - Configuration
 - Configuration as Code
 - Configuration Drift
@@ -3628,6 +3628,7 @@
 - Destroy
 - Destructuring
 - Detach Keys
+- Detached
 - Detached Mode
 - Detection
 - Detection Rules
@@ -3936,6 +3937,7 @@
 - Docker Commands
 - Docker commit
 - Docker Compose
+- Docker Compose v2
 - Docker Config
 - Docker Containers
 - Docker Context
@@ -4068,6 +4070,7 @@
 - Drop
 - DROP DATABASE
 - Drop Logs
+- Drop-In
 - Droplets
 - DRS
 - Drug Interactions
@@ -4375,6 +4378,7 @@
 - Environment
 - Environment Configuration
 - Environment Drift
+- Environment Files
 - Environment Management
 - Environment Parity
 - Environment Promotion
@@ -4691,6 +4695,7 @@
 - Failure
 - Failure Analysis
 - Failure Domains
+- Failure Handling
 - Failure Recovery
 - Fair-Share Scheduling
 - Fairness
@@ -4771,7 +4776,6 @@
 - Fields
 - FIFO
 - FIFO Queue
-- File
 - File Access
 - File API
 - File Contexts
@@ -4793,6 +4797,7 @@
 - File Loading
 - File Management
 - File Monitoring
+- File Mount
 - File Operations
 - File Organization
 - File Parsing
@@ -4830,6 +4835,7 @@
 - Filemd5 Function
 - Filenames
 - FileResponse
+- Files
 - Fileset Function
 - Filesha1 Function
 - Filesha256 Function
@@ -4884,7 +4890,7 @@
 - Firewall Policy
 - Firewall Rules
 - Firewall Zones
-- Firewalld
+- firewalld
 - Firmware
 - Firmware Update
 - FIS
@@ -5195,6 +5201,8 @@
 - Ghost
 - Ghost CMS
 - Ghz
+- GID
+- gidmap
 - GIL
 - Gin
 - GIN Index
@@ -5601,7 +5609,6 @@
 - Headless Service
 - Health
 - Health Apps
-- Health Check
 - Health Check Rewriting
 - Health Checking
 - Health Checks
@@ -5731,6 +5738,7 @@
 - Horizontal Scaling
 - Hospital Integration
 - Hospitality
+- Host Access
 - Host Control
 - Host Endpoint
 - Host Exclusion
@@ -5988,6 +5996,7 @@
 - Image Automation Controller
 - Image Builder
 - Image Building
+- Image Builds
 - Image Caching
 - Image Classification
 - Image Cleaner
@@ -6171,6 +6180,7 @@
 - Information Security
 - INFORMATION_SCHEMA
 - Informers
+- Infra Container
 - Infracost
 - Infrastructure
 - Infrastructure as Code
@@ -6306,6 +6316,7 @@
 - Interleaved Tables
 - Intermediate CA
 - Intermittent
+- Internal
 - Internal Developer Platform
 - Internal DNS
 - Internal Error
@@ -6389,6 +6400,7 @@
 - IP Allowlist
 - IP Allowlisting
 - IP Autodetection
+- IP Binding
 - Ip Command
 - IP Configuration
 - IP Denylist
@@ -6416,7 +6428,7 @@
 - IPAddressPool
 - IPAM
 - IPAMConfiguration
-- Ipc
+- IPC
 - Iperf
 - Iperf3
 - IPFamilyPolicy
@@ -6541,7 +6553,6 @@
 - JMS
 - JMX
 - JMX Receiver
-- Job
 - Job Bookmarks
 - Job Dependencies
 - Job Flows
@@ -6568,7 +6579,7 @@
 - Join Function
 - Joins
 - Journal
-- Journalctl
+- journalctl
 - journald
 - JPA
 - Jq
@@ -6652,6 +6663,7 @@
 - Kea
 - KEDA
 - Keep-Alive
+- keep-id
 - Keepalive
 - Keepalived
 - KeepHistory
@@ -6752,6 +6764,7 @@
 - KSPP
 - KsqlDB
 - Ktor
+- Kube Play
 - Kube-bench
 - Kube-dns
 - Kube-linter
@@ -7011,14 +7024,16 @@
 - Lightweight Search
 - Lima
 - LIME
-- Limit
 - Limit Ranges
 - LimitRange
+- Limits
 - Limits.conf
 - Line Filters
 - Line_profiler
 - Linear Regression
+- Linger
 - Link Aggregation
+- Link-Local
 - Linkding
 - Linked Servers
 - Linked Services
@@ -7125,6 +7140,7 @@
 - Local Environment
 - Local Execution
 - Local Files
+- Local Images
 - Local Inference
 - Local Modules
 - Local Network
@@ -7236,6 +7252,7 @@
 - Logical Replication
 - Login
 - Login.defs
+- loginctl
 - Logind
 - Logistics
 - LogQL
@@ -7270,6 +7287,7 @@
 - Lookup
 - Lookup Plugins
 - Loop_control
+- Loopback
 - Loops
 - LoRaWAN
 - Lorax
@@ -7836,11 +7854,11 @@
 - Mosquitto
 - MOTD
 - Motor
-- Mount
 - Mount Errors
 - Mount Options
 - Mount Units
 - Mounting
+- Mounts
 - Move Semantics
 - MOVED
 - Moved Blocks
@@ -8046,7 +8064,6 @@
 - Named IP Lists
 - Named Locations
 - NamePrefix
-- Namespace
 - Namespace Configuration
 - Namespace Isolation
 - Namespace Management
@@ -8247,8 +8264,8 @@
 - Nexus Repository
 - NFS
 - Nfsstat
-- Nftables
-- NGINX
+- nftables
+- Nginx
 - NGINX Ingress
 - NGINX Plus
 - Nginx Unit
@@ -9103,6 +9120,7 @@
 - Pi-hole
 - Pick
 - Pickle
+- PID
 - PID Limits
 - PID Namespace
 - PII
@@ -9273,6 +9291,7 @@
 - Podman Desktop
 - Podman Farm
 - Podman Machine
+- podman-compose
 - PodMonitor
 - Pods
 - PodSecurityPolicy
@@ -9336,7 +9355,6 @@
 - POP3
 - Populate
 - Population Health
-- Port
 - Port Allocation
 - Port Availability
 - Port Binding
@@ -9716,6 +9734,7 @@
 - Psycopg2
 - PTP
 - PTR
+- PTY
 - Pub-Sub
 - Pub/Sub
 - Pub/Sub Lite
@@ -10174,6 +10193,7 @@
 - Reliability Reviews
 - Reliability Testing
 - Reliable Messaging
+- Reload
 - Reloader
 - Remediation
 - Remi
@@ -10229,9 +10249,9 @@
 - ReplacingMergeTree
 - Replatform
 - Replay
-- Replica
 - Replica Placement
 - Replica Set
+- Replicas
 - Replicated Storage
 - Replicated Volume
 - Replication
@@ -10551,6 +10571,7 @@
 - Rook-Ceph
 - Room
 - Rooms API
+- Root
 - Root Access
 - Root CA
 - Root Cause Analysis
@@ -10969,6 +10990,7 @@
 - Selective Execution
 - Selective Indexing
 - Selective Sync
+- Selective Updates
 - Selector Labels
 - Selectors
 - Selenium
@@ -11446,7 +11468,6 @@
 - Social Login
 - Social Media
 - Social Networks
-- Socket
 - Socket Activation
 - Socket Parameters
 - Socket.IO
@@ -11741,6 +11762,7 @@
 - Stargz
 - Starlette
 - StarRocks
+- Start Period
 - Start Time
 - Starter
 - Startup
@@ -11748,7 +11770,7 @@
 - Startup Latency
 - Startup optimization
 - Startup Order
-- Startup Probe
+- Startup Probes
 - Startup Scripts
 - Startup Time
 - Stat Module
@@ -11955,18 +11977,18 @@
 - Subcharts
 - Subcollections
 - Subelements
-- Subgid
+- subgid
 - Subiquity
 - Submariner
 - Submodules
-- Subnet
 - Subnet Access
 - Subnet conflict
 - Subnet Groups
 - Subnet Mask
 - Subnet Routing
+- Subnets
 - Subnetting
-- SubPath
+- Subpaths
 - Subprocess
 - Subprotocols
 - Subqueries
@@ -11986,7 +12008,7 @@
 - Substitution
 - Substitution Variables
 - Subtitles
-- Subuid
+- subuid
 - Subversion
 - Subworkflows
 - Success Rate
@@ -12129,7 +12151,7 @@
 - System.IO.Pipelines
 - System.Text.Json
 - SystemAdmin
-- Systemctl
+- systemctl
 - Systemd
 - Systemd Logs
 - Systemd Timers
@@ -12574,7 +12596,7 @@
 - TLS Version
 - Tls-termination
 - TLSRoute
-- Tmpfs
+- tmpfs
 - Tmux
 - Tofu Controller
 - Tofuenv
@@ -12908,6 +12930,9 @@
 - UI Extensions
 - UI Testing
 - UI/UX
+- UID
+- UID Mapping
+- uidmap
 - UKI
 - Ulimit
 - Ultra Disk
@@ -13077,6 +13102,7 @@
 - UserDefaults
 - UseRef
 - Usermod
+- userns
 - Users
 - UseSearchParams
 - UseState
@@ -13430,7 +13456,7 @@
 - WasmEdge
 - WasmPlugin
 - Waste Detection
-- WATCH
+- Watch
 - Watchdog
 - Watchdog Timer
 - Watcher

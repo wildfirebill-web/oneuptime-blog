@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Configuration
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Configuration
 
 Description: A guide to configuring Calico's Felix, IP pools, and network settings when running in nftables mode.
 

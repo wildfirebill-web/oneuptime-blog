@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Performance, Production
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Performance, Production
 
 Description: A guide to tuning Calico's nftables mode for production performance and stability.
 

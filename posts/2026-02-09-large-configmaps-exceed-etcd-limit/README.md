@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ConfigMap, Performance
+Tags: Kubernetes, ConfigMaps, Performance
 
 Description: Learn strategies for managing large configuration data in Kubernetes when ConfigMaps exceed the 1MB etcd size limit, including splitting, compression, and alternative storage approaches.
 

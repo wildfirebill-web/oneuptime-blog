@@ -103,7 +103,7 @@ podman exec myapp env | grep -E 'NODE_ENV|DATABASE_HOST|LOG_LEVEL'
 
 Expected output:
 
-```
+```text
 NODE_ENV=production
 DATABASE_HOST=db.example.com
 LOG_LEVEL=info

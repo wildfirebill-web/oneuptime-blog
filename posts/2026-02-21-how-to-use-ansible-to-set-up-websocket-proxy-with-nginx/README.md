@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, WebSocket, DevOps
+Tags: Ansible, Nginx, WebSocket, DevOps
 
 Description: Automate the configuration of Nginx as a WebSocket reverse proxy using Ansible playbooks for real-time application deployments.
 

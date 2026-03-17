@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Playbook, Limit, Host Targeting
+Tags: Ansible, Playbook, Limits, Host Targeting
 
 Description: Learn how to use Ansible's limit flag and patterns to run playbooks against a single host, a subset of hosts, or exclude specific machines.
 

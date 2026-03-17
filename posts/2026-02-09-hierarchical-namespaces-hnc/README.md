@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Namespace, HNC
+Tags: Kubernetes, Namespaces, HNC
 
 Description: Learn how to implement hierarchical namespaces using the Hierarchical Namespace Controller (HNC) for delegated administration, policy inheritance, and organizational structure in Kubernetes clusters.
 

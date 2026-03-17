@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, NGINX, Ingress Controller, Load Balancer
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Nginx, Ingress Controller, Load Balancer
 
 Description: Learn how to deploy the NGINX Ingress Controller on Kubernetes using a Flux HelmRelease for production-grade HTTP routing and load balancing.
 

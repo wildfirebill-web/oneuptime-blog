@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, HTTP, File, Performance
+Tags: Go, HTTP, Files, Performance
 
 Description: Learn how to efficiently handle large file downloads in Go with streaming, progress tracking, and proper resource management.
 

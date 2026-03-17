@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Play
+Tags: Podman, Containers, DevOps, Kubernetes, YAML, Plays
 
 Description: Learn how to use podman play kube to create containers and pods from Kubernetes YAML manifests.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Caching, Performance, Optimization, Web Server
+Tags: Nginx, Caching, Performance, Optimization, Web Server
 
 Description: A complete guide to configuring Nginx caching for static assets and proxy responses, including cache zones, purging strategies, and performance tuning.
 

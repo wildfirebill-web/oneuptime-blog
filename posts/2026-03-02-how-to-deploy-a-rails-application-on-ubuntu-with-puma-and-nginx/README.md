@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Rails, Puma, NGINX, Ruby
+Tags: Ubuntu, Rails, Puma, Nginx, Ruby
 
 Description: Deploy a Ruby on Rails application on Ubuntu using Puma as the application server and Nginx as the reverse proxy, including Capistrano-friendly directory structure and zero-downtime deploys.
 

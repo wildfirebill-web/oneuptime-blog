@@ -23,7 +23,7 @@ podman auto-update --dry-run
 
 Output:
 
-```
+```text
 UNIT                    CONTAINER       IMAGE                              POLICY      UPDATED
 webapp.service          abc123def456    docker.io/myorg/webapp:latest      registry    pending
 api.service             def456abc789    docker.io/myorg/api:latest         registry    false

@@ -51,7 +51,7 @@ journalctl -t quadlet-generator
 
 ### Error: File Not Found
 
-```
+```text
 quadlet-generator: error loading "webapp.container": no such file
 ```
 
@@ -67,7 +67,7 @@ ls /etc/containers/systemd/
 
 ### Error: Invalid Directive
 
-```
+```text
 quadlet-generator: unsupported key "InvalidKey" in section "Container"
 ```
 

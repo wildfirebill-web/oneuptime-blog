@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Network Policies
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Network Policies
 
 Description: A guide to testing network policy enforcement when Calico is running in nftables mode.
 

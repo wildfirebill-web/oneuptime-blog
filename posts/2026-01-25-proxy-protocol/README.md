@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Proxy Protocol, Load Balancing, HAProxy, NGINX, TCP, Client IP
+Tags: Networking, Proxy Protocol, Load Balancing, HAProxy, Nginx, TCP, Client IP
 
 Description: Learn how to configure Proxy Protocol to preserve client IP addresses through load balancers and proxies. This guide covers HAProxy, NGINX, and AWS ELB configurations with practical examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, PHP-FPM, Linux
+Tags: RHEL, Nginx, PHP-FPM, Linux
 
 Description: How to set up Nginx with PHP-FPM on RHEL to serve PHP applications efficiently.
 

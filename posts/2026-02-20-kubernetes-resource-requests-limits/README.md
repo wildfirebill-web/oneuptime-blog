@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Resources, Request, Limit, Best Practices
+Tags: Kubernetes, Resources, Request, Limits, Best Practices
 
 Description: Best practices for setting CPU and memory resource requests and limits in Kubernetes to avoid OOMKill and CPU throttling.
 

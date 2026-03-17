@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespace, Logging, Audit
+Tags: Calico, Kubernetes, Network Policy, Namespaces, Logging, Audit
 
 Description: Configure comprehensive logging and auditing for Calico namespace-based network policies to track cross-namespace traffic decisions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Load Balancing, High Availability, DevOps, Scalability
+Tags: Nginx, Load Balancing, High Availability, DevOps, Scalability
 
 Description: A practical guide to implementing load balancing with Nginx, covering round-robin, weighted, least connections, and IP hash algorithms with production-ready configurations.
 

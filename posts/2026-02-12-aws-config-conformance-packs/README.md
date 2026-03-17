@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Config, Compliance, Conformance Packs, Governance
+Tags: AWS, Configs, Compliance, Conformance Packs, Governance
 
 Description: Learn how to deploy AWS Config conformance packs to apply groups of compliance rules across your AWS accounts for frameworks like CIS, PCI DSS, and HIPAA.
 

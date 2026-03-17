@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Resource Quota, Multi-Tenancy, Namespace
+Tags: Kubernetes, Resource Quota, Multi-Tenancy, Namespaces
 
 Description: Implement namespace resource quotas that prevent resource monopolization in multi-team Kubernetes clusters.
 

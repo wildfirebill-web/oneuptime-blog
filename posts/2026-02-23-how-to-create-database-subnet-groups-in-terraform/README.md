@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Database, Networking, VPC, Subnet, Infrastructure as Code
+Tags: Terraform, AWS, Database, Networking, VPC, Subnets, Infrastructure as Code
 
 Description: Learn how to create and configure database subnet groups in Terraform for RDS, Aurora, ElastiCache, DocumentDB, Neptune, and other AWS services.
 

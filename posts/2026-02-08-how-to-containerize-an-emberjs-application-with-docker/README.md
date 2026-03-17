@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Ember.js, Containerization, Frontend, DevOps, NGINX
+Tags: Docker, Ember.js, Containerization, Frontend, DevOps, Nginx
 
 Description: Complete guide to containerizing Ember.js applications with Docker using multi-stage builds and production Nginx configuration
 

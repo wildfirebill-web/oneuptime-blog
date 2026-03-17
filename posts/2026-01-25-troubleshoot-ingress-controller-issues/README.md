@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Networking, Troubleshooting, NGINX
+Tags: Kubernetes, Ingresses, Networking, Troubleshooting, Nginx
 
 Description: Learn systematic approaches to debug Kubernetes Ingress controller problems, including 502/503 errors, TLS issues, routing failures, and configuration validation techniques.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Nftables, Verification
+Tags: Calico, Kubernetes, Networking, CNI, nftables, Verification
 
 Description: A guide to verifying Calico pod networking when running with the nftables dataplane backend.
 

@@ -79,7 +79,7 @@ podman auto-update
 
 Example output:
 
-```
+```text
 UNIT                    CONTAINER       IMAGE                              POLICY      UPDATED
 webapp.service          abc123def456    docker.io/myorg/webapp:latest      registry    true
 ```

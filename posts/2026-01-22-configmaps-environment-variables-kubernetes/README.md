@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ConfigMap, Environment Variables, Configuration, DevOps
+Tags: Kubernetes, ConfigMaps, Environment Variables, Configuration, DevOps
 
 Description: Learn how to inject ConfigMap data as environment variables in Kubernetes pods. This guide covers single values, bulk injection, and best practices for configuration management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Blue-Green Deployment, Namespace, Kubernetes, GitOps, Zero Downtime
+Tags: Flux CD, Blue-Green Deployment, Namespaces, Kubernetes, GitOps, Zero Downtime
 
 Description: A practical guide to implementing blue-green deployments using separate Kubernetes namespaces managed by Flux CD.
 

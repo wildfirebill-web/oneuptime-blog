@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Networking, CIDR, Kubernetes, Subnet
+Tags: Talos Linux, Networking, CIDR, Kubernetes, Subnets
 
 Description: Learn how to configure custom pod and service CIDR subnets in Talos Linux to match your network architecture.
 

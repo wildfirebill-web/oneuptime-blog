@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Sync Windows, Namespace
+Tags: ArgoCD, GitOps, Kubernetes, Sync Windows, Namespaces
 
 Description: Learn how to apply ArgoCD sync windows to specific Kubernetes namespaces, enabling different deployment schedules for different environments and teams sharing the same cluster.
 

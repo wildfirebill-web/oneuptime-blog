@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Firewalld, Firewall, Security, RHEL
+Tags: Ansible, firewalld, Firewall, Security, RHEL
 
 Description: Automate firewalld zone and service configuration on RHEL, CentOS, and Fedora servers using Ansible with zone-based network segmentation.
 

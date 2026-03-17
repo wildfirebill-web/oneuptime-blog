@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Limit Ranges, Resource Management, Namespace
+Tags: Talos Linux, Kubernetes, Limit Ranges, Resource Management, Namespaces
 
 Description: Learn how to configure LimitRange objects per namespace on Talos Linux to set default resource requests, limits, and constraints for containers and pods.
 

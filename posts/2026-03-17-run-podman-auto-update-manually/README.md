@@ -25,7 +25,7 @@ podman auto-update --dry-run
 
 Example output:
 
-```
+```text
 UNIT                    CONTAINER       IMAGE                              POLICY      UPDATED
 webapp.service          abc123def456    docker.io/myorg/webapp:latest      registry    pending
 api.service             def456abc789    docker.io/myorg/api:latest         registry    false
@@ -46,7 +46,7 @@ podman auto-update
 
 Example output:
 
-```
+```text
 UNIT                    CONTAINER       IMAGE                              POLICY      UPDATED
 webapp.service          abc123def456    docker.io/myorg/webapp:latest      registry    true
 api.service             def456abc789    docker.io/myorg/api:latest         registry    false

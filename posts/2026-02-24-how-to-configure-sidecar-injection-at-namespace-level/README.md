@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Sidecar Injection, Namespace, Kubernetes, Service Mesh
+Tags: Istio, Sidecar Injection, Namespaces, Kubernetes, Service Mesh
 
 Description: Complete guide to configuring Istio sidecar injection at the namespace level, including labels, revisions, and troubleshooting common injection issues.
 

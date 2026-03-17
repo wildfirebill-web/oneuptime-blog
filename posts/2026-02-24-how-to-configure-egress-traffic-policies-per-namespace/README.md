@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Egress, Namespace, Kubernetes, Network Policy
+Tags: Istio, Egress, Namespaces, Kubernetes, Network Policy
 
 Description: Learn how to set up different egress traffic rules for different namespaces in Istio using Sidecar resources and ServiceEntry visibility.
 

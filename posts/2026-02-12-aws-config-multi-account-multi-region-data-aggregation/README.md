@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Config, Compliance, Multi-Account, Governance
+Tags: AWS, Configs, Compliance, Multi-Account, Governance
 
 Description: Configure AWS Config aggregators to collect compliance and configuration data from multiple accounts and regions into a single dashboard.
 

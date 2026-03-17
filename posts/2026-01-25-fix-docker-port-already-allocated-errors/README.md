@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Troubleshooting, Networking, DevOps, Port
+Tags: Docker, Troubleshooting, Networking, DevOps, Ports
 
 Description: Diagnose and resolve Docker port binding conflicts including identifying processes using ports, cleaning up stale containers, and implementing strategies to avoid port collisions.
 

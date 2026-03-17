@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker Compose, Socket, Compatibility
+Tags: Podman, Containers, DevOps, Docker Compose, Sockets, Compatibility
 
 Description: Learn how to use the official Docker Compose tool with Podman by enabling the Podman socket as a Docker-compatible API endpoint.
 

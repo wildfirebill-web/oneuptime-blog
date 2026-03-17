@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nftables, Troubleshooting, Linux
+Tags: RHEL, nftables, Troubleshooting, Linux
 
 Description: Practical troubleshooting steps for when your nftables rules aren't behaving as expected on RHEL, covering common mistakes and debugging techniques.
 

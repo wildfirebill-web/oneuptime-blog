@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Tmpfs, Fstab, Linux
+Tags: RHEL, tmpfs, Fstab, Linux
 
 Description: Learn how to configure persistent tmpfs mounts in /etc/fstab on RHEL so your RAM-based filesystems are automatically created at boot.
 

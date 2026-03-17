@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, VNet, Subnet, Networking, IP Address, Troubleshooting, CIDR
+Tags: Azure, VNet, Subnets, Networking, IP Address, Troubleshooting, CIDR
 
 Description: Fix SubnetIsFull errors in Azure by understanding IP address exhaustion, subnet sizing, and strategies for expanding address space in virtual networks.
 

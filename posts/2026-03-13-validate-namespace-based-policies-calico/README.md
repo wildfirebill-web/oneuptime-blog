@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespace, Validation
+Tags: Calico, Kubernetes, Network Policy, Namespaces, Validation
 
 Description: Build a validation framework for Calico namespace-based network policies that verifies namespace labels and policy selectors before production deployment.
 

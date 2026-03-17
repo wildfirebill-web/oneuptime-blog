@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespace, Debugging
+Tags: Calico, Kubernetes, Network Policy, Namespaces, Debugging
 
 Description: Diagnose and fix namespace-based Calico network policy failures when cross-namespace traffic is unexpectedly blocked.
 

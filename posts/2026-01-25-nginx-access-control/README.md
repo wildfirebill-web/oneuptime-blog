@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Security, Access Control, Authentication, IP Filtering
+Tags: Nginx, Security, Access Control, Authentication, IP Filtering
 
 Description: Learn how to implement access control in Nginx using IP-based restrictions, basic authentication, and geographic filtering to secure your web applications.
 

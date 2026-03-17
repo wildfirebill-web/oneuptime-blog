@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Cost Allocation, FinOps, Namespace, Resource Management
+Tags: Flux CD, GitOps, Kubernetes, Cost Allocation, FinOps, Namespaces, Resource Management
 
 Description: Learn how to implement namespace-level cost allocation in Kubernetes using Flux CD to manage resource quotas, labels, and cost tracking integrations through GitOps.
 

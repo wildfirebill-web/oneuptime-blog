@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, VPC, Networking, CIDR, Subnet, IP Management
+Tags: AWS, VPC, Networking, CIDR, Subnets, IP Management
 
 Description: Learn how to use VPC subnet CIDR reservations to control IP address allocation and prevent conflicts in your AWS networking infrastructure.
 

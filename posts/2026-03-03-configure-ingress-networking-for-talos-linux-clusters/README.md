@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Ingresses, Networking, Kubernetes, NGINX, Traefik
+Tags: Talos Linux, Ingresses, Networking, Kubernetes, Nginx, Traefik
 
 Description: Complete guide to setting up ingress controllers and configuring external traffic routing for Talos Linux Kubernetes clusters on bare metal.
 
