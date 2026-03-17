@@ -162,7 +162,7 @@ systemctl --user enable --now redis-dev mailhog
 
 ```bash
 # Preview generated unit files for user services
-/usr/lib/podman/quadlet --dryrun --user
+/usr/libexec/podman/quadlet --dryrun --user
 
 # Check for configuration errors
 systemctl --user status devserver

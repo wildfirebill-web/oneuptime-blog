@@ -40,14 +40,17 @@ podman run -d \
   --health-retries 3 \
   --health-start-period 45s \
   --health-on-failure restart \
-  --restart on-failure:10 \
   production-api:latest
 
 # This configuration:
 # - Waits 45 seconds before counting failures
 # - Checks every 20 seconds with a 10-second timeout
 # - Restarts after 3 consecutive failures
-# - Stops restarting after 10 restart attempts
+#
+# Note: Do not combine --health-on-failure restart with --restart.
+# The Podman documentation advises against using both together.
+# When running inside a systemd unit, use the kill or stop action
+# instead and let systemd handle restarts.
 ```
 
 ## Health Check with Restart for Different Services
@@ -91,20 +94,23 @@ podman inspect --format='{{.RestartCount}}' auto-restart-app
 
 ## Avoiding Restart Loops
 
+When using `--health-on-failure restart` outside of systemd, the container will keep restarting as long as it becomes unhealthy. To prevent infinite loops, use higher `--health-retries` values and longer intervals:
+
 ```bash
-# Combine restart limit with health checks to prevent infinite loops
+# Use higher retries and longer intervals to limit restart frequency
 podman run -d \
   --name safe-restart-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \
-  --health-interval 30s \
+  --health-interval 60s \
   --health-retries 5 \
+  --health-start-period 30s \
   --health-on-failure restart \
-  --restart on-failure:5 \
   my-app:latest
 
-# After 5 restart attempts, the container will stop restarting
+# For systemd-managed containers, prefer --health-on-failure kill
+# and let systemd's Restart=on-failure handle recovery with limits
 ```
 
 ## Summary
 
-Configuring health checks with `--health-on-failure restart` creates self-healing containers that automatically recover from application failures. Combine this with `--restart on-failure:N` to prevent infinite restart loops, and use `--health-start-period` to give applications time to initialize. This approach provides reliable service recovery without requiring external orchestration.
+Configuring health checks with `--health-on-failure restart` creates self-healing containers that automatically recover from application failures. Use `--health-start-period` to give applications time to initialize. When running inside a systemd unit, prefer the `kill` or `stop` action and let systemd handle restarts instead of using the `restart` action. Do not combine `--health-on-failure restart` with the `--restart` flag.

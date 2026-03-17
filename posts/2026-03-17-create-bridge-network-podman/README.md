@@ -122,7 +122,8 @@ podman network create --subnet 10.2.0.0/24 backend-bridge
 podman run -d --name web --network frontend-bridge \
   docker.io/library/nginx:latest
 podman run -d --name db --network backend-bridge \
-  docker.io/library/postgres:16 -e POSTGRES_PASSWORD=secret
+  -e POSTGRES_PASSWORD=secret \
+  docker.io/library/postgres:16
 
 # This will fail - different networks are isolated
 podman exec web ping -c 1 db

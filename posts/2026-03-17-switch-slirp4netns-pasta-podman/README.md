@@ -48,7 +48,7 @@ pasta --version
 mkdir -p ~/.config/containers
 
 cat >> ~/.config/containers/containers.conf << 'EOF'
-[containers]
+[network]
 default_rootless_network_cmd = "pasta"
 EOF
 

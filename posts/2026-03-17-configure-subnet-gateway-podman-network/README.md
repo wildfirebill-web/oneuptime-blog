@@ -97,7 +97,8 @@ podman network create --subnet 10.50.0.0/24 --gateway 10.50.0.1 static-net
 podman run -d --name db \
   --network static-net \
   --ip 10.50.0.10 \
-  docker.io/library/postgres:16 -e POSTGRES_PASSWORD=secret
+  -e POSTGRES_PASSWORD=secret \
+  docker.io/library/postgres:16
 
 podman run -d --name cache \
   --network static-net \

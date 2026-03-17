@@ -60,10 +60,10 @@ podman run -d --name frontend \
 
 ## Read-Only Image Volumes
 
-Image volumes are inherently read-only since they come from immutable image layers:
+By default, image volumes are mounted read-only. You can make them writable with `rw=true`, but changes are discarded when the container is removed:
 
 ```bash
-# Mount as explicitly read-only
+# Mount as explicitly read-only (the default)
 podman run -d --name app \
   --mount type=image,source=myapp-data:v1,target=/config,readonly \
   docker.io/library/node:20 tail -f /dev/null
@@ -71,6 +71,11 @@ podman run -d --name app \
 # Attempting to write will fail
 podman exec app touch /config/newfile
 # Output: touch: cannot touch '/config/newfile': Read-only file system
+
+# Mount as read-write (changes are ephemeral)
+podman run -d --name app-rw \
+  --mount type=image,source=myapp-data:v1,target=/config,rw=true \
+  docker.io/library/node:20 tail -f /dev/null
 ```
 
 ## Versioning Data with Image Tags
@@ -115,7 +120,7 @@ podman run -d --pod myapp-pod --name webserver \
 | Pre-populated | Yes (from image) | Manual initialization |
 | Versioning | Image tags | Manual backup |
 | Portability | Push/pull via registry | Export/import |
-| Mutability | Read-only | Read-write |
+| Mutability | Read-only by default (rw=true optional) | Read-write |
 
 ## Summary
 

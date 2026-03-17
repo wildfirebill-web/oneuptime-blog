@@ -28,8 +28,8 @@ Image=docker.io/myorg/myapp:latest
 PublishPort=8080:8080
 
 # Drop all capabilities and add back only what is needed
-PodmanArgs=--cap-drop=all
-PodmanArgs=--cap-add=net_bind_service
+DropCapability=all
+AddCapability=net_bind_service
 
 [Service]
 Restart=on-failure
@@ -107,7 +107,7 @@ Prevent the container process from gaining additional privileges:
 [Container]
 Image=docker.io/myorg/myapp:latest
 PodmanArgs=--security-opt=no-new-privileges:true
-PodmanArgs=--cap-drop=all
+DropCapability=all
 ReadOnly=true
 ```
 
@@ -128,4 +128,4 @@ podman inspect secure-app --format '{{.HostConfig.ReadonlyRootfs}}'
 
 ## Summary
 
-Quadlet provides several directives and PodmanArgs options for container security hardening. Drop unnecessary capabilities, use read-only root filesystems, configure SELinux labels, apply custom seccomp profiles, and prevent privilege escalation. Following the principle of least privilege helps protect your host and other containers.
+Quadlet provides native directives like `DropCapability`, `AddCapability`, `ReadOnly`, and SELinux label options, plus `PodmanArgs` for additional security options. Drop unnecessary capabilities, use read-only root filesystems, configure SELinux labels, apply custom seccomp profiles, and prevent privilege escalation. Following the principle of least privilege helps protect your host and other containers.

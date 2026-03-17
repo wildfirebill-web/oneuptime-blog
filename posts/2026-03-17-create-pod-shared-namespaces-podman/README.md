@@ -21,6 +21,7 @@ By default, Podman pods share the network, UTS, and IPC namespaces. You can cont
 podman pod create --name default-pod
 
 # By default, the following namespaces are shared:
+# - cgroup: Cgroup namespace
 # - ipc: Inter-process communication
 # - net: Network interfaces and routing
 # - uts: Hostname
@@ -94,4 +95,4 @@ podman pod inspect pid-pod --format '{{.SharedNamespaces}}'
 
 ## Summary
 
-Podman pods share network, IPC, and UTS namespaces by default. Use the `--share` flag to add PID sharing for cross-container process visibility, or restrict sharing for tighter isolation. This flexibility lets you match Kubernetes pod semantics or create custom grouping behavior.
+Podman pods share cgroup, IPC, network, and UTS namespaces by default. Use the `--share` flag to add PID sharing for cross-container process visibility, or restrict sharing for tighter isolation. This flexibility lets you match Kubernetes pod semantics or create custom grouping behavior.

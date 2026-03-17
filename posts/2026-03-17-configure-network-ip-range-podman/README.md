@@ -67,8 +67,9 @@ podman exec app2 ip addr show eth0
 podman network create \
   --subnet 10.60.0.0/24 \
   --gateway 10.60.0.1 \
-  --ipv6-subnet fd00:10:60::/64 \
-  --ipv6-gateway fd00:10:60::1 \
+  --ipv6 \
+  --subnet fd00:10:60::/64 \
+  --gateway fd00:10:60::1 \
   dualstack-net
 
 # Run a container on the dual-stack network

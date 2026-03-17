@@ -142,7 +142,7 @@ sudo systemctl restart nginx-proxy
 
 ```bash
 # Preview generated unit files
-sudo /usr/lib/podman/quadlet --dryrun
+sudo /usr/libexec/podman/quadlet --dryrun
 
 # Check for errors
 sudo systemctl status nginx-proxy

@@ -24,8 +24,8 @@ If you have been running containers with `podman run` commands, converting them 
 | `-e, --env` | `Environment=` |
 | `--env-file` | `EnvironmentFile=` |
 | `--network` | `Network=` |
-| `--cap-add` | `PodmanArgs=--cap-add` |
-| `--cap-drop` | `PodmanArgs=--cap-drop` |
+| `--cap-add` | `AddCapability=` |
+| `--cap-drop` | `DropCapability=` |
 | `--read-only` | `ReadOnly=true` |
 | `--label` | `Label=` |
 | `--health-cmd` | `HealthCmd=` |
@@ -146,8 +146,8 @@ ReadOnly=true
 Tmpfs=/tmp
 EnvironmentFile=/opt/myapp/.env
 AutoUpdate=registry
-PodmanArgs=--cap-drop=all
-PodmanArgs=--cap-add=net_bind_service
+DropCapability=all
+AddCapability=net_bind_service
 PodmanArgs=--memory=512m
 PodmanArgs=--cpus=1.5
 

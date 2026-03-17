@@ -10,7 +10,7 @@ Description: Learn how to view and follow logs from containers within a Podman p
 
 > Viewing pod logs lets you see the output of all containers in a pod to diagnose issues and monitor behavior.
 
-Podman does not have a single `podman pod logs` command that aggregates all container logs by default. Instead, you view logs for individual containers within the pod or use scripting to combine them. This guide covers both approaches.
+Podman provides `podman pod logs` to aggregate logs from all containers in a pod. You can also view logs for individual containers within the pod. This guide covers both approaches.
 
 ---
 

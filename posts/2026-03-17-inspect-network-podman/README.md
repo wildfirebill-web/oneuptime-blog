@@ -85,8 +85,8 @@ podman network inspect mynetwork --format '{{ .IPv6Enabled }}'
 ## Inspecting Multiple Networks
 
 ```bash
-# Inspect all networks at once
-podman network inspect --all
+# Inspect multiple networks by name
+podman network inspect frontend backend
 
 # Compare two networks
 echo "=== frontend ==="

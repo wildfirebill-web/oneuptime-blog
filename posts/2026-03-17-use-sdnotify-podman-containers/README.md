@@ -16,10 +16,10 @@ The sd_notify protocol allows a service to notify systemd about its startup stat
 
 ## How sdnotify Works with Podman
 
-Podman supports three sdnotify modes:
+Podman supports four sdnotify modes:
 
-- **container** - The container process sends sd_notify messages (Podman proxies them).
-- **conmon** - The conmon process sends READY when the container starts (default).
+- **container** - The container process sends sd_notify messages (Podman proxies them). This is the default.
+- **conmon** - The conmon process sends READY when the container starts.
 - **healthy** - Podman sends READY when the container's health check passes.
 - **ignore** - No notification is sent.
 
