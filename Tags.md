@@ -255,6 +255,7 @@
 - AI Inference
 - AI Infrastructure
 - AI Integration
+- AI Lab
 - AI Language
 - AI Monitoring
 - AI Ops
@@ -690,6 +691,7 @@
 - Artifact Optimization
 - Artifact Registry
 - Artifact Storage
+- Artifact Store
 - Artifactgenerator
 - Artifacts
 - Artillery
@@ -806,6 +808,7 @@
 - Aurora
 - Aurora Serverless
 - Ausearch
+- Auth Files
 - Auth Proxy
 - Auth0
 - Authelia
@@ -1420,6 +1423,7 @@
 - Blue Ocean
 - Blue-Green
 - Blue-Green Deployment
+- Blue-Green Deployments
 - Blue-green mirroring
 - Blue/Green Deployment
 - BlueGreen
@@ -2002,6 +2006,7 @@
 - CLI Arguments
 - CLI Commands
 - CLI Flags
+- CLI Plugins
 - CLI Tools
 - Cli_parse
 - Click
@@ -2621,6 +2626,7 @@
 - Container Configuration
 - Container Dependencies
 - Container Distribution
+- Container Escape
 - Container Events
 - Container Exec
 - Container Export
@@ -2675,6 +2681,7 @@
 - Containerignore
 - Containerization
 - Containers
+- containers.conf
 - ContainerStorage
 - Content Analysis
 - Content Block
@@ -2709,6 +2716,7 @@
 - Context-Aware Access
 - Context.Context
 - Contextlib
+- Contexts
 - Continuous
 - Continuous Access Evaluation
 - Continuous Aggregates
@@ -3088,6 +3096,7 @@
 - Custom Queries
 - Custom Ranking
 - Custom Receiver
+- Custom Registry
 - Custom Resource Definitions
 - Custom Resources
 - Custom Response
@@ -3166,6 +3175,7 @@
 - Dashboard Management
 - Dashboard Templates
 - Dashboard Variables
+- Dashboards
 - Dashboards as Code
 - Dask
 - DAST
@@ -3936,6 +3946,7 @@
 - Docker CLI
 - Docker Commands
 - Docker commit
+- Docker Compatibility
 - Docker Compose
 - Docker Compose v2
 - Docker Config
@@ -3974,6 +3985,7 @@
 - Docker Volumes
 - Docker Wait
 - Docker_container
+- DOCKER_HOST
 - Docker-compose
 - Docker-py
 - Dockerfile
@@ -4071,6 +4083,7 @@
 - DROP DATABASE
 - Drop Logs
 - Drop-In
+- Drop-In Files
 - Droplets
 - DRS
 - Drug Interactions
@@ -4332,6 +4345,7 @@
 - Energy Management
 - Enforcement
 - Engagement
+- Engine Settings
 - Engineering
 - Engineering Culture
 - Engineering Efficiency
@@ -4776,6 +4790,7 @@
 - Fields
 - FIFO
 - FIFO Queue
+- File
 - File Access
 - File API
 - File Contexts
@@ -6000,16 +6015,21 @@
 - Image Caching
 - Image Classification
 - Image Cleaner
+- Image Cleanup
+- Image Commit
 - Image Distribution
 - Image Export
 - Image Factory
 - Image Filtering
+- Image Format
 - Image Gallery
 - Image Garbage Collection
 - Image Generation
 - Image Import
+- Image Inspection
 - Image Management
 - Image manifest
+- Image Metadata
 - Image Migration
 - Image Mirror
 - Image Optimization
@@ -6020,6 +6040,7 @@
 - Image Pull
 - Image Pull Policy
 - Image Pull Secrets
+- Image Push
 - Image Recognition
 - Image Redaction
 - Image Reflector
@@ -6029,7 +6050,9 @@
 - Image Signing
 - Image Size
 - Image specification
+- Image Sync
 - Image Tagging
+- Image Transfer
 - Image update automation
 - Image Updater
 - Image Updates
@@ -6243,6 +6266,7 @@
 - Input Redirection
 - Input Sanitization
 - Input Validation
+- Insecure
 - Insert Idempotency
 - Insert Optimization
 - Insider Threats
@@ -7255,6 +7279,7 @@
 - loginctl
 - Logind
 - Logistics
+- Logout
 - LogQL
 - Logrotate
 - Logs
@@ -7412,6 +7437,7 @@
 - Manifest Generation
 - Manifest List
 - Manifest Validation
+- Manifests
 - Manipulation
 - Manticore Search
 - Manual Instrumentation
@@ -7704,6 +7730,7 @@
 - Minikube
 - Minimal
 - Minimal API
+- Minimal Containers
 - Minimal Images
 - Minimal Install
 - Minimal Profile
@@ -7717,6 +7744,7 @@
 - Mirroring
 - MirrorMaker
 - MirrorMaker 2
+- Mirrors
 - Misconceptions
 - Misconfiguration
 - Mise
@@ -7807,6 +7835,7 @@
 - Modes
 - Modprobe
 - ModSecurity
+- Modular Configuration
 - Modular Deployment
 - Modular Design
 - Module Arguments
@@ -7854,6 +7883,7 @@
 - Mosquitto
 - MOTD
 - Motor
+- Mount
 - Mount Errors
 - Mount Options
 - Mount Units
@@ -8099,6 +8129,7 @@
 - Natural Language
 - Natural Language API
 - Natural Language Generation
+- Natural Language Processing
 - Navigation
 - Navigation Guards
 - NB-IoT
@@ -8136,6 +8167,7 @@
 - NetApp
 - NetApp Files
 - NetApp ONTAP
+- Netavark
 - NetBox
 - Netcat
 - NetCommon
@@ -8771,6 +8803,7 @@
 - Overlay
 - Overlay Networks
 - Overlay2
+- OverlayFS
 - Overprivileged
 - Overprovisioning
 - Override
@@ -10054,6 +10087,7 @@
 - Receiver
 - Receiver Creator
 - Recent Activity
+- Recipes
 - ReclaimPolicy
 - Recombine Operator
 - Recommendation Engine
@@ -10181,6 +10215,7 @@
 - Release Jobs
 - Release Management
 - Release Metadata
+- Release Pipeline
 - Release Pipelines
 - Release promotion
 - Release Tracking
@@ -10443,6 +10478,7 @@
 - Restoration
 - Restore
 - Restorecon
+- Restricted Environments
 - Restricted PSS
 - RestTemplate
 - Result
@@ -10667,6 +10703,7 @@
 - Runc
 - Rundeck
 - Runlevels
+- Runner
 - Runners
 - Running Totals
 - Runtime
@@ -10690,6 +10727,7 @@
 - S/4HANA
 - S3
 - S3 Backend
+- S3 Compatible
 - s390x
 - S3fs
 - S3fs-fuse
@@ -10841,6 +10879,7 @@
 - Scrapy
 - Scratch
 - Scratch Image
+- Scratch Images
 - Scrcpy
 - Screen
 - Screen Capture Protection
@@ -10853,6 +10892,7 @@
 - Screenshots
 - Script Execution
 - Script Module
+- Scripted Builds
 - Scripted Fields
 - Scripting
 - Scripts
@@ -10890,6 +10930,7 @@
 - Search Index
 - Search Infrastructure
 - Search Optimization
+- Search Order
 - Search Parameters
 - Search Performance
 - Search Ranking
@@ -11211,6 +11252,7 @@
 - Setfacl
 - Setifnotpresent
 - Sets
+- Settings
 - Settings Management
 - Setup
 - Severity
@@ -11319,6 +11361,7 @@
 - Signal to Metrics
 - SignalR
 - Signals
+- Signature Server
 - Signature Verification
 - Signatures
 - Signed Commits
@@ -11468,6 +11511,7 @@
 - Social Login
 - Social Media
 - Social Networks
+- Socket
 - Socket Activation
 - Socket Parameters
 - Socket.IO
@@ -12099,6 +12143,7 @@
 - SysAdmin
 - Sysbench
 - Syscall Filtering
+- Syscalls
 - Sysctl
 - Sysdig
 - Sysfs
@@ -12116,6 +12161,7 @@
 - System Clock
 - System Commands
 - System Configuration
+- System Connections
 - System Design
 - System Diagnostics
 - System Extensions
@@ -12136,6 +12182,7 @@
 - System Resources
 - System Restore
 - System Roles
+- System Service
 - System Services
 - System Settings
 - System State
@@ -12523,6 +12570,7 @@
 - Time Comparison
 - Time Configuration
 - Time Drift
+- Time Filtering
 - Time Functions
 - Time Machine
 - Time Management
@@ -12562,6 +12610,7 @@
 - Timeout Pattern
 - Timeout Settings
 - TimeoutError
+- Timeouts
 - Timer Trigger
 - Timers
 - TimescaleDB
@@ -12935,6 +12984,7 @@
 - uidmap
 - UKI
 - Ulimit
+- Ulimits
 - Ultra Disk
 - Umami
 - Umask
@@ -12991,6 +13041,7 @@
 - Unroll
 - Unsafe
 - Unsafe Rust
+- Unshare
 - Unstructured Logs
 - Untyped Constants
 - Unused
@@ -13013,6 +13064,7 @@
 - Upgrade Safety
 - Upgrade Strategy
 - Upgrade Testing
+- Upgrades
 - Uplink
 - Upload
 - Upload Optimization
@@ -13178,6 +13230,7 @@
 - Vendoring
 - Venv
 - VeraCrypt
+- Verbose
 - Verbose Mode
 - Verbosity
 - Vercel
@@ -13271,6 +13324,7 @@
 - Virtual IP
 - Virtual Kubelet
 - Virtual Machine
+- Virtual Machines
 - Virtual Mailboxes
 - Virtual Memory
 - Virtual Network

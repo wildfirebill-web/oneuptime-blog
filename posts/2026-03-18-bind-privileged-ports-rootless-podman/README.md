@@ -118,7 +118,7 @@ sudo apt-get install iptables-persistent  # Debian/Ubuntu
 sudo netfilter-persistent save
 ```
 
-## Method 5: Set Ambient Capabilities
+## Method 4: Set Ambient Capabilities
 
 You can grant the specific capability to bind low ports to the Podman binary:
 
