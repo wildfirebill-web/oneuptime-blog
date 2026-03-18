@@ -1,0 +1,341 @@
+# How to Use Podman Containers with WireGuard VPN
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Podman, WireGuard, VPN, Containers, Security, Networking
+
+Description: Learn how to route Podman container traffic through a WireGuard VPN tunnel, run WireGuard inside a container, and create secure inter-host container communication.
+
+---
+
+> WireGuard is a modern, high-performance VPN protocol that integrates cleanly with Linux networking. When combined with Podman, it enables secure tunnels for container traffic, encrypted inter-host communication, and privacy-preserving container deployments.
+
+There are many reasons to route container traffic through a VPN: securing communication between hosts, accessing private networks, protecting container traffic on untrusted networks, or ensuring all outbound traffic exits through a specific endpoint. WireGuard's simplicity and performance make it an ideal VPN protocol for containerized environments.
+
+This guide covers three approaches: running WireGuard on the host and routing containers through it, running WireGuard inside a Podman container, and creating encrypted tunnels between Podman hosts.
+
+---
+
+## Prerequisites
+
+- Podman 4.0 or later
+- WireGuard tools installed (`wg` and `wg-quick`)
+- Linux kernel 5.6 or later (WireGuard is built into the kernel)
+- Root access for network configuration
+
+Install WireGuard tools:
+
+```bash
+# Fedora/RHEL
+sudo dnf install wireguard-tools
+
+# Ubuntu/Debian
+sudo apt install wireguard-tools
+```
+
+Verify WireGuard kernel module is available:
+
+```bash
+sudo modprobe wireguard
+lsmod | grep wireguard
+```
+
+## Generating WireGuard Keys
+
+Generate a key pair for each peer:
+
+```bash
+# Generate private key
+wg genkey | tee privatekey | wg pubkey > publickey
+
+# View the keys
+cat privatekey
+cat publickey
+```
+
+For each additional peer, generate a separate key pair.
+
+## Approach 1: Host-Level WireGuard with Container Routing
+
+This approach sets up WireGuard on the host and routes all container traffic through the tunnel.
+
+### Configure the WireGuard Interface
+
+```bash
+sudo cat > /etc/wireguard/wg0.conf << 'EOF'
+[Interface]
+PrivateKey = YOUR_PRIVATE_KEY_HERE
+Address = 10.0.0.1/24
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o wg0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o wg0 -j MASQUERADE
+
+[Peer]
+PublicKey = PEER_PUBLIC_KEY_HERE
+AllowedIPs = 0.0.0.0/0
+Endpoint = vpn-server.example.com:51820
+PersistentKeepalive = 25
+EOF
+```
+
+Start the WireGuard interface:
+
+```bash
+sudo wg-quick up wg0
+```
+
+Verify the connection:
+
+```bash
+sudo wg show
+```
+
+### Route Container Traffic Through WireGuard
+
+Create a Podman network that routes through the WireGuard interface:
+
+```bash
+podman network create vpn-net --subnet 10.89.0.0/24
+```
+
+Configure routing rules to send container traffic through WireGuard:
+
+```bash
+# Get the Podman network bridge interface
+BRIDGE=$(podman network inspect vpn-net | python3 -c "import sys,json; print(json.load(sys.stdin)[0]['network_interface'])")
+
+# Route traffic from the container bridge through WireGuard
+sudo iptables -t nat -A POSTROUTING -s 10.89.0.0/24 -o wg0 -j MASQUERADE
+sudo iptables -A FORWARD -i "$BRIDGE" -o wg0 -j ACCEPT
+sudo iptables -A FORWARD -i wg0 -o "$BRIDGE" -m state --state RELATED,ESTABLISHED -j ACCEPT
+```
+
+Run a container on the VPN-routed network:
+
+```bash
+podman run -d \
+  --name vpn-app \
+  --network vpn-net \
+  docker.io/library/nginx:alpine
+```
+
+Verify traffic is going through the VPN:
+
+```bash
+podman exec vpn-app curl -s https://ifconfig.me
+```
+
+The returned IP should match your WireGuard endpoint, not your host's public IP.
+
+## Approach 2: WireGuard Inside a Podman Container
+
+Running WireGuard in a container keeps the VPN configuration isolated and does not affect the host network.
+
+### Create the WireGuard Configuration
+
+```bash
+mkdir -p ~/wireguard-container/config
+
+cat > ~/wireguard-container/config/wg0.conf << 'EOF'
+[Interface]
+PrivateKey = YOUR_PRIVATE_KEY_HERE
+Address = 10.0.0.2/24
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = PEER_PUBLIC_KEY_HERE
+AllowedIPs = 0.0.0.0/0
+Endpoint = vpn-server.example.com:51820
+PersistentKeepalive = 25
+EOF
+chmod 600 ~/wireguard-container/config/wg0.conf
+```
+
+### Run the WireGuard Container
+
+```bash
+podman run -d \
+  --name wireguard \
+  --cap-add NET_ADMIN \
+  --cap-add SYS_MODULE \
+  --sysctl net.ipv4.conf.all.src_valid_mark=1 \
+  --sysctl net.ipv4.ip_forward=1 \
+  -v ~/wireguard-container/config:/config:Z \
+  -p 51820:51820/udp \
+  docker.io/linuxserver/wireguard
+```
+
+The `NET_ADMIN` capability is required for WireGuard to create and manage network interfaces. The `SYS_MODULE` capability allows loading kernel modules if needed.
+
+### Share the VPN Connection with Other Containers
+
+Use Podman's network namespace sharing to let other containers use the WireGuard container's network:
+
+```bash
+podman run -d \
+  --name vpn-client \
+  --network container:wireguard \
+  docker.io/library/nginx:alpine
+```
+
+The `--network container:wireguard` flag shares the WireGuard container's network namespace, so `vpn-client` uses the VPN tunnel for all its traffic.
+
+Verify:
+
+```bash
+podman exec vpn-client curl -s https://ifconfig.me
+```
+
+## Approach 3: Inter-Host Container Communication
+
+Connect Podman containers running on different hosts through a WireGuard tunnel.
+
+### Host A Configuration
+
+```bash
+sudo cat > /etc/wireguard/wg0.conf << 'EOF'
+[Interface]
+PrivateKey = HOST_A_PRIVATE_KEY
+Address = 10.0.0.1/24
+ListenPort = 51820
+
+[Peer]
+PublicKey = HOST_B_PUBLIC_KEY
+AllowedIPs = 10.0.0.2/32, 10.90.0.0/24
+Endpoint = host-b.example.com:51820
+PersistentKeepalive = 25
+EOF
+
+sudo wg-quick up wg0
+```
+
+Create a container network and set up routing:
+
+```bash
+podman network create cross-host-net --subnet 10.89.0.0/24
+
+# Route traffic to Host B's container network through WireGuard
+sudo ip route add 10.90.0.0/24 via 10.0.0.2
+```
+
+### Host B Configuration
+
+```bash
+sudo cat > /etc/wireguard/wg0.conf << 'EOF'
+[Interface]
+PrivateKey = HOST_B_PRIVATE_KEY
+Address = 10.0.0.2/24
+ListenPort = 51820
+
+[Peer]
+PublicKey = HOST_A_PUBLIC_KEY
+AllowedIPs = 10.0.0.1/32, 10.89.0.0/24
+Endpoint = host-a.example.com:51820
+PersistentKeepalive = 25
+EOF
+
+sudo wg-quick up wg0
+```
+
+```bash
+podman network create cross-host-net --subnet 10.90.0.0/24
+
+# Route traffic to Host A's container network through WireGuard
+sudo ip route add 10.89.0.0/24 via 10.0.0.1
+```
+
+### Test Cross-Host Communication
+
+On Host A:
+
+```bash
+podman run -d --name service-a --network cross-host-net docker.io/library/nginx:alpine
+```
+
+On Host B:
+
+```bash
+podman run --rm --network cross-host-net docker.io/library/alpine \
+  wget -qO- http://10.89.0.2:80
+```
+
+## DNS Resolution Through the VPN
+
+Configure containers to use DNS servers accessible through the VPN:
+
+```bash
+podman run -d \
+  --name vpn-dns-app \
+  --network vpn-net \
+  --dns 10.0.0.1 \
+  docker.io/library/nginx:alpine
+```
+
+Or configure DNS at the network level:
+
+```bash
+podman network create vpn-dns-net \
+  --subnet 10.91.0.0/24 \
+  --dns 10.0.0.1
+```
+
+## Kill Switch Configuration
+
+A kill switch ensures that if the VPN connection drops, container traffic is blocked rather than leaking over the regular network:
+
+```bash
+# Block all traffic from the container subnet except through WireGuard
+sudo iptables -I FORWARD -s 10.89.0.0/24 ! -o wg0 -j DROP
+sudo iptables -I FORWARD -s 10.89.0.0/24 -o wg0 -j ACCEPT
+```
+
+To make these rules persistent:
+
+```bash
+sudo sh -c 'iptables-save > /etc/iptables/rules.v4'
+```
+
+## Monitoring the VPN Connection
+
+Create a monitoring script:
+
+```bash
+cat > ~/vpn-monitor.sh << 'SCRIPT'
+#!/bin/bash
+echo "=== WireGuard Status ==="
+sudo wg show wg0
+
+echo ""
+echo "=== Container VPN Status ==="
+for container in $(podman ps --format "{{.Names}}"); do
+  IP=$(podman exec "$container" curl -s --max-time 5 https://ifconfig.me 2>/dev/null)
+  if [ -n "$IP" ]; then
+    echo "$container: Exit IP = $IP"
+  else
+    echo "$container: No external connectivity"
+  fi
+done
+SCRIPT
+chmod +x ~/vpn-monitor.sh
+```
+
+## Running WireGuard as a Systemd Service
+
+Ensure WireGuard starts on boot:
+
+```bash
+sudo systemctl enable wg-quick@wg0
+```
+
+For the containerized WireGuard approach:
+
+```bash
+podman generate systemd --name wireguard --files --new
+sudo mv container-wireguard.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable container-wireguard.service
+```
+
+## Conclusion
+
+WireGuard and Podman together provide a flexible foundation for securing container network traffic. Whether you run WireGuard on the host for simplicity, inside a container for isolation, or between hosts for cross-site communication, the configuration remains straightforward. WireGuard's minimal overhead means the performance impact on container traffic is negligible, and its integration with the Linux networking stack makes it compatible with all of Podman's networking features. For production deployments, combine the VPN setup with a kill switch and monitoring to ensure traffic always flows through the encrypted tunnel.

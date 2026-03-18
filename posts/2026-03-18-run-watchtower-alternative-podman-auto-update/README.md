@@ -1,0 +1,309 @@
+# How to Run Watchtower Alternative with Podman Auto-Update
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Podman, Auto-Update, Watchtower, Containers, Linux, DevOps, Automation, Systemd
+
+Description: Learn how to use Podman's built-in auto-update feature as a native alternative to Watchtower for automatically keeping your containers up to date.
+
+---
+
+> Watchtower is a popular tool for auto-updating Docker containers, but Podman has this capability built in. No extra container is needed. Podman auto-update works natively with systemd to keep your containers current.
+
+In the Docker ecosystem, Watchtower is the standard tool for automatically pulling new container images and restarting containers. Podman takes a different approach: instead of running a separate container to watch other containers, Podman includes a built-in `podman auto-update` command that checks for newer images and restarts containers when updates are available. Combined with systemd timers, this provides a native, lightweight, and secure auto-update mechanism with no additional containers required. This guide explains how to set it up.
+
+---
+
+## Why Not Just Run Watchtower on Podman?
+
+While Watchtower technically can run on Podman, it was designed for Docker and relies on the Docker socket. Using it with Podman requires enabling the Podman socket and granting Watchtower privileged access to it. Podman's native auto-update approach is better because:
+
+| Aspect | Watchtower on Podman | Podman Auto-Update |
+|--------|---------------------|--------------------|
+| Extra container needed | Yes | No |
+| Socket access required | Yes (privileged) | No |
+| Systemd integration | Manual | Built-in |
+| Rollback support | No | Yes (with systemd) |
+| Per-container control | Via labels | Via labels |
+| Logging | Container logs | Systemd journal |
+
+---
+
+## Step 1: Understand How Podman Auto-Update Works
+
+Podman auto-update follows this process:
+
+1. It checks each container that has the `io.containers.autoupdate` label.
+2. It compares the running image digest with the registry's latest digest.
+3. If a newer image is available, it pulls the new image.
+4. It restarts the container using its systemd service file with the new image.
+
+There are two update policies:
+
+- `registry` - Checks the remote registry for a newer version of the image tag.
+- `local` - Updates the container if a newer local image exists (useful for CI/CD pipelines that push images locally).
+
+---
+
+## Step 2: Create a Container with the Auto-Update Label
+
+When running any container you want to auto-update, add the `io.containers.autoupdate` label:
+
+```bash
+# Run an Nginx container with the auto-update label
+podman run -d \
+  --name nginx-web \
+  -p 8080:80 \
+  --label io.containers.autoupdate=registry \
+  docker.io/library/nginx:latest
+```
+
+The label `io.containers.autoupdate=registry` tells Podman to check the remote registry for updates to this container's image.
+
+You can apply this label to any container. Here is another example with a Redis container:
+
+```bash
+# Run Redis with auto-update enabled
+podman run -d \
+  --name redis-cache \
+  -p 6379:6379 \
+  --label io.containers.autoupdate=registry \
+  -v redis-data:/data:Z \
+  docker.io/library/redis:7-alpine
+```
+
+---
+
+## Step 3: Generate Systemd Service Files
+
+Podman auto-update requires containers to be managed by systemd. Generate a service file for each container:
+
+```bash
+# Generate a systemd service file for the Nginx container
+podman generate systemd --name nginx-web --new --files
+
+# Generate a systemd service file for the Redis container
+podman generate systemd --name redis-cache --new --files
+```
+
+The `--new` flag is important: it tells systemd to create a fresh container from the image each time the service starts, which is how auto-update applies new images.
+
+### Install the Service Files
+
+For root containers:
+
+```bash
+# Move the generated files to the systemd system directory
+sudo mv container-nginx-web.service /etc/systemd/system/
+sudo mv container-redis-cache.service /etc/systemd/system/
+
+# Reload systemd
+sudo systemctl daemon-reload
+
+# Enable the services so they start on boot
+sudo systemctl enable container-nginx-web.service
+sudo systemctl enable container-redis-cache.service
+```
+
+For rootless containers:
+
+```bash
+# Create the user systemd directory if it does not exist
+mkdir -p ~/.config/systemd/user/
+
+# Move the generated files
+mv container-nginx-web.service ~/.config/systemd/user/
+mv container-redis-cache.service ~/.config/systemd/user/
+
+# Reload the user systemd daemon
+systemctl --user daemon-reload
+
+# Enable the services
+systemctl --user enable container-nginx-web.service
+systemctl --user enable container-redis-cache.service
+```
+
+### Stop the Original Containers and Start via Systemd
+
+```bash
+# Stop and remove the manually started containers
+podman stop nginx-web redis-cache
+podman rm nginx-web redis-cache
+
+# Start them through systemd instead
+sudo systemctl start container-nginx-web.service
+sudo systemctl start container-redis-cache.service
+```
+
+---
+
+## Step 4: Test Auto-Update Manually
+
+Before setting up a timer, verify that auto-update works:
+
+```bash
+# Check which containers have updates available (dry run)
+podman auto-update --dry-run
+
+# Example output:
+# UNIT                           CONTAINER       IMAGE                           POLICY      UPDATED
+# container-nginx-web.service    abc123def456    docker.io/library/nginx:latest  registry    false
+# container-redis-cache.service  789ghi012jkl    docker.io/library/redis:7-alpine registry   false
+
+# Run the actual update (pulls new images and restarts if needed)
+podman auto-update
+
+# For rootless containers, just run it as your user:
+podman auto-update
+```
+
+The `--dry-run` flag checks for updates without applying them. This is useful for monitoring or testing.
+
+---
+
+## Step 5: Enable the Automatic Timer
+
+Podman ships with a systemd timer that runs auto-update on a schedule:
+
+### System-Level Timer (Root)
+
+```bash
+# Enable the podman auto-update timer
+sudo systemctl enable podman-auto-update.timer
+sudo systemctl start podman-auto-update.timer
+
+# Verify the timer is active
+sudo systemctl list-timers | grep podman
+
+# Check the default schedule
+sudo systemctl cat podman-auto-update.timer
+```
+
+### User-Level Timer (Rootless)
+
+```bash
+# Enable the user-level timer
+systemctl --user enable podman-auto-update.timer
+systemctl --user start podman-auto-update.timer
+
+# Verify
+systemctl --user list-timers | grep podman
+```
+
+The default schedule runs daily. To change the frequency, override the timer:
+
+```bash
+# Create an override for the timer to run every 6 hours
+sudo systemctl edit podman-auto-update.timer
+```
+
+Add the following content:
+
+```ini
+# Override the default daily schedule to run every 6 hours
+[Timer]
+OnCalendar=
+OnCalendar=*-*-* 00/6:00:00
+RandomizedDelaySec=900
+```
+
+The empty `OnCalendar=` line clears the default schedule before setting the new one.
+
+---
+
+## Step 6: Monitor Auto-Update Activity
+
+Check the journal for auto-update events:
+
+```bash
+# View auto-update logs from the systemd journal
+sudo journalctl -u podman-auto-update.service --no-pager --since "24 hours ago"
+
+# For rootless setups
+journalctl --user -u podman-auto-update.service --no-pager --since "24 hours ago"
+
+# Check the last time the timer ran
+sudo systemctl status podman-auto-update.timer
+```
+
+---
+
+## Step 7: Rollback a Failed Update
+
+One advantage of the systemd integration is rollback capability. If a container fails to start after an update, systemd can restart the previous version:
+
+```bash
+# Check if a service failed after an update
+sudo systemctl status container-nginx-web.service
+
+# View the failure logs
+sudo journalctl -u container-nginx-web.service --no-pager -n 50
+
+# Manually roll back by specifying the previous image digest
+podman pull docker.io/library/nginx@sha256:<previous-digest>
+
+# Restart the service
+sudo systemctl restart container-nginx-web.service
+```
+
+---
+
+## Step 8: Selective Auto-Update Policies
+
+You do not have to auto-update every container. Use labels selectively:
+
+```bash
+# This container auto-updates from the registry
+podman run -d --name app-frontend \
+  --label io.containers.autoupdate=registry \
+  docker.io/myorg/frontend:latest
+
+# This container only updates when a new local image is available
+# (useful when you build images locally via CI/CD)
+podman run -d --name app-backend \
+  --label io.containers.autoupdate=local \
+  docker.io/myorg/backend:latest
+
+# This container does NOT auto-update (no label)
+podman run -d --name database \
+  docker.io/library/postgres:15
+```
+
+---
+
+## Complete Example: Auto-Updating a Media Stack
+
+Here is a practical example of setting up auto-update for a complete media server stack:
+
+```bash
+# Run Jellyfin with auto-update
+podman run -d --name jellyfin \
+  --label io.containers.autoupdate=registry \
+  -p 8096:8096 \
+  -v ~/jellyfin/config:/config:Z \
+  docker.io/jellyfin/jellyfin:latest
+
+# Run Sonarr with auto-update
+podman run -d --name sonarr \
+  --label io.containers.autoupdate=registry \
+  -p 8989:8989 \
+  -v ~/sonarr/config:/config:Z \
+  docker.io/linuxserver/sonarr:latest
+
+# Generate systemd files for all labeled containers
+podman generate systemd --name jellyfin --new --files
+podman generate systemd --name sonarr --new --files
+
+# Install and enable everything
+sudo mv container-*.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable container-jellyfin.service container-sonarr.service
+sudo systemctl enable podman-auto-update.timer
+sudo systemctl start podman-auto-update.timer
+```
+
+---
+
+## Conclusion
+
+Podman's built-in auto-update mechanism is a native, secure alternative to Watchtower that requires no additional container. By labeling containers with `io.containers.autoupdate=registry` and managing them through systemd, you get automatic image pulls, container restarts, and journal-based logging. The systemd timer controls the schedule, and the `--dry-run` flag lets you check for updates without applying them. For anyone running containers on Podman, this is the recommended approach to keeping images up to date.
