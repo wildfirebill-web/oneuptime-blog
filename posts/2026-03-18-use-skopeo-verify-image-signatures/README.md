@@ -69,7 +69,7 @@ EOF
 # For local file-based signature storage, create the directory
 sudo mkdir -p /var/lib/containers/sigstore
 
-# Copy and sign an image — the signature goes to sigstore-staging
+# Copy and sign an image - the signature goes to sigstore-staging
 skopeo copy \
   --sign-by "your-email@example.com" \
   docker://docker.io/library/alpine:3.19 \
@@ -159,7 +159,7 @@ Integrate image signing into your CI/CD pipeline.
 
 ```bash
 #!/bin/bash
-# sign-and-push.sh — Build, sign, and push an image in CI/CD
+# sign-and-push.sh - Build, sign, and push an image in CI/CD
 
 IMAGE_NAME="registry.example.com/myapp"
 TAG="${CI_COMMIT_TAG:-latest}"
@@ -186,7 +186,7 @@ skopeo inspect "docker://${IMAGE_NAME}:${TAG}" && \
 Configure a strict policy that rejects any unsigned images.
 
 ```bash
-# Strict policy — reject all unsigned images from all registries
+# Strict policy - reject all unsigned images from all registries
 sudo tee /etc/containers/policy.json << 'EOF'
 {
   "default": [

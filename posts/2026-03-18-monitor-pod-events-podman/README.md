@@ -8,7 +8,7 @@ Description: Learn how to monitor pod events with Podman to track pod lifecycle 
 
 ---
 
-> Pod events give you visibility into the orchestration layer — understanding how your pod groups are managed is essential for multi-container applications.
+> Pod events give you visibility into the orchestration layer - understanding how your pod groups are managed is essential for multi-container applications.
 
 Podman pods group multiple containers that share namespaces and network configurations, similar to Kubernetes pods. Monitoring pod events gives you visibility into pod creation, startup, shutdown, and removal. This is critical when running multi-container applications where containers within a pod depend on each other. This guide covers how to monitor pod events effectively.
 

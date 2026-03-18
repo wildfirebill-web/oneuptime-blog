@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Swarm, Migration, Kubernetes, Systemd
+Tags: Podman, Containers, DevOps, Docker, Swarm, Migration, Kubernetes, systemd
 
 Description: Learn how to migrate Docker Swarm services to Podman using pods, systemd services, and Kubernetes as orchestration alternatives.
 
@@ -262,7 +262,7 @@ Automate the assessment of your Swarm-to-Podman migration.
 
 ```bash
 #!/bin/bash
-# swarm-migration-checklist.sh — Assess Swarm services for Podman migration
+# swarm-migration-checklist.sh - Assess Swarm services for Podman migration
 
 echo "=== Docker Swarm Migration Assessment ==="
 

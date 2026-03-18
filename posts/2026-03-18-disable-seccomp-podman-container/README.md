@@ -8,7 +8,7 @@ Description: Learn how to disable seccomp filtering in Podman containers for deb
 
 ---
 
-> Disabling seccomp removes the syscall firewall entirely — understand the risks before turning it off.
+> Disabling seccomp removes the syscall firewall entirely - understand the risks before turning it off.
 
 Seccomp (Secure Computing Mode) is a kernel-level security feature that restricts which system calls a container can make. Podman applies a default seccomp profile that blocks dangerous syscalls. However, during debugging, profiling, or running specialized workloads, seccomp can interfere with legitimate operations. In these cases, you can disable it temporarily.
 
@@ -26,7 +26,7 @@ Certain tools and workloads require syscalls that the default seccomp profile bl
 - Kernel module loading or system-level testing
 
 ```bash
-# Demonstrate a seccomp restriction — strace needs ptrace syscalls
+# Demonstrate a seccomp restriction - strace needs ptrace syscalls
 # This will fail under the default seccomp profile in many configurations
 podman run --rm docker.io/library/alpine:latest \
   sh -c "apk add --no-cache strace && strace -e trace=open echo hello" \
@@ -64,7 +64,7 @@ podman run --rm \
   docker.io/library/alpine:latest \
   sh -c "grep Seccomp /proc/self/status"
 
-# Compare with the default — seccomp is active (value of 2)
+# Compare with the default - seccomp is active (value of 2)
 podman run --rm \
   docker.io/library/alpine:latest \
   sh -c "grep Seccomp /proc/self/status"

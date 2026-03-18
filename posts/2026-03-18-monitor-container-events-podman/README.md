@@ -8,7 +8,7 @@ Description: Learn how to monitor container events with Podman to track lifecycl
 
 ---
 
-> Monitoring container events is the foundation of container observability — without it, you are flying blind in production.
+> Monitoring container events is the foundation of container observability - without it, you are flying blind in production.
 
 Container events provide a detailed record of everything happening in your Podman environment. Every time a container starts, stops, dies, or gets removed, Podman generates an event. Monitoring these events gives you real-time insight into container behavior, helps with debugging, and forms the basis for automated alerting and auditing. This guide walks you through the essentials of monitoring container events with Podman.
 

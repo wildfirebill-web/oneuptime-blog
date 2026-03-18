@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Systemd, Linux
+Tags: RHEL, systemd, Linux
 
 Description: Step-by-step guide on configure systemd-networkd as a lightweight network manager using Red Hat Enterprise Linux 9.
 

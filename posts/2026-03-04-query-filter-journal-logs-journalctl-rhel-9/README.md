@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, journalctl, Systemd, Logging, Linux
+Tags: RHEL, journalctl, systemd, Logging, Linux
 
 Description: Master journalctl on RHEL 9 to query, filter, and analyze systemd journal logs.
 

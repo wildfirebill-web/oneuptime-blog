@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Systemd, Linux
+Tags: RHEL, systemd, Linux
 
 Description: Step-by-step guide on use systemd journal namespaces for log isolation using Red Hat Enterprise Linux 9.
 

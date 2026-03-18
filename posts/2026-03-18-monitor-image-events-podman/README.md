@@ -8,7 +8,7 @@ Description: Learn how to monitor image events with Podman to track image pulls,
 
 ---
 
-> Monitoring image events is a security imperative — knowing what images enter and leave your environment is the foundation of supply chain security.
+> Monitoring image events is a security imperative - knowing what images enter and leave your environment is the foundation of supply chain security.
 
 Container images are the building blocks of your deployments. Monitoring image events lets you track when images are pulled from registries, tagged, untagged, pushed, or removed. This visibility is essential for security auditing, compliance, and operational awareness. This guide shows you how to monitor and act on image events in Podman.
 
@@ -34,7 +34,7 @@ podman events --filter type=image
 
 ## Monitoring Image Pull Events
 
-Track when images are pulled from registries — a critical security concern.
+Track when images are pulled from registries - a critical security concern.
 
 ```bash
 # Start monitoring image pulls

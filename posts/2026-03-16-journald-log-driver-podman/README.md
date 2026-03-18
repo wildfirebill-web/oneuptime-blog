@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, journald, Systemd
+Tags: Podman, Containers, DevOps, Logging, journald, systemd
 
 Description: Learn how to configure Podman to use the journald log driver, query container logs with journalctl, and leverage structured metadata for advanced log filtering.
 

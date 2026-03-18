@@ -50,7 +50,7 @@ aws ecr get-login-password --region us-east-1 | \
   podman login --username AWS --password-stdin \
   123456789.dkr.ecr.us-east-1.amazonaws.com
 
-# Verify — Skopeo can now access the registry without extra auth
+# Verify - Skopeo can now access the registry without extra auth
 skopeo inspect docker://registry.example.com/myapp:latest
 skopeo list-tags docker://registry.example.com/myapp
 ```
@@ -137,7 +137,7 @@ In CI/CD pipelines, manage credentials carefully using environment variables and
 
 ```bash
 #!/bin/bash
-# ci-auth-setup.sh — Set up registry auth for CI/CD
+# ci-auth-setup.sh - Set up registry auth for CI/CD
 
 # Create a temporary auth file for this pipeline run
 AUTH_FILE=$(mktemp /tmp/auth-XXXXXX.json)

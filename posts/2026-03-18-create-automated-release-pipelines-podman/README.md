@@ -225,7 +225,7 @@ echo "Signature verified"
 
 A complete GitHub Actions workflow for automated releases.
 
-```yaml
+````yaml
 # .github/workflows/release.yml
 name: Release Pipeline
 
@@ -293,10 +293,10 @@ jobs:
           generate_release_notes: true
           body: |
             ## Container Image
-            ```
+            ```bash
             podman pull ghcr.io/${{ github.repository }}:${{ env.VERSION }}
             ```
-```
+````
 
 ## Generating a Changelog
 

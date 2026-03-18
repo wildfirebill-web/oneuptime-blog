@@ -8,7 +8,7 @@ Description: Learn how to use Skopeo to inspect container images in remote regis
 
 ---
 
-> Skopeo inspect lets you examine image metadata, labels, layers, and configuration directly from the registry — no download required.
+> Skopeo inspect lets you examine image metadata, labels, layers, and configuration directly from the registry - no download required.
 
 Before pulling a container image, you often need to know its details: what platform it targets, when it was created, what environment variables are set, or how large it is. Skopeo allows you to inspect images stored in remote registries without ever downloading them. This saves bandwidth and time, especially when evaluating images across multiple registries. This guide covers all the practical ways to inspect remote images with Skopeo.
 
@@ -136,7 +136,7 @@ You can use Skopeo inspect to compare images in different registries to verify t
 
 ```bash
 #!/bin/bash
-# compare-images.sh — Compare image digests across two registries
+# compare-images.sh - Compare image digests across two registries
 
 IMAGE="myapp:v2.0"
 REG1="registry-a.example.com"
@@ -153,7 +153,7 @@ echo "Registry B digest: ${DIGEST2}"
 if [ "$DIGEST1" = "$DIGEST2" ]; then
   echo "Images are identical."
 else
-  echo "Images differ — consider re-syncing."
+  echo "Images differ - consider re-syncing."
 fi
 ```
 

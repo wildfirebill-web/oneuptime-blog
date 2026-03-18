@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Edge Computing, GitOps, Bandwidth Optimization, Oci artifacts
+Tags: Flux CD, Kubernetes, Edge Computing, GitOps, Bandwidth Optimization, OCI Artifacts
 
 Description: Optimize Flux CD for low-bandwidth network environments using OCI artifacts, shallow clones, and manifest compression to minimize data transfer.
 

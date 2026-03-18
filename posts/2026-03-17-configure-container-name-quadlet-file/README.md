@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Naming
+Tags: Podman, Containers, DevOps, Quadlet, systemd, Naming
 
 Description: Learn how to configure and customize container names in Quadlet unit files for predictable naming and service discovery.
 

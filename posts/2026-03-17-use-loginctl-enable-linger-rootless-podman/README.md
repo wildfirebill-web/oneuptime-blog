@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Systemd, Rootless, Linger, loginctl
+Tags: Podman, Containers, DevOps, systemd, Rootless, Linger, loginctl
 
 Description: Learn how to use loginctl enable-linger to keep rootless Podman services running after logout and start them at boot.
 

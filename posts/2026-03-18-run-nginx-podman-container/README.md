@@ -10,7 +10,7 @@ Description: Learn how to run Nginx as a web server and reverse proxy inside a P
 
 > Nginx in a Podman container gives you a lightweight, rootless web server ready for production traffic in seconds.
 
-Nginx is one of the most widely used web servers and reverse proxies in the world. Running it inside a Podman container lets you isolate your web server, manage configurations declaratively, and deploy consistently across environments. This guide walks you through pulling the Nginx image, running it with custom configurations, serving static content, and setting up reverse proxying — all using Podman.
+Nginx is one of the most widely used web servers and reverse proxies in the world. Running it inside a Podman container lets you isolate your web server, manage configurations declaratively, and deploy consistently across environments. This guide walks you through pulling the Nginx image, running it with custom configurations, serving static content, and setting up reverse proxying - all using Podman.
 
 ---
 

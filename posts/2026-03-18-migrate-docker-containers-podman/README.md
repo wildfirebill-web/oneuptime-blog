@@ -8,7 +8,7 @@ Description: Learn how to migrate your running Docker containers, images, and co
 
 ---
 
-> Migrating from Docker to Podman does not require rebuilding your images — you can export and import containers directly while preserving their state and configuration.
+> Migrating from Docker to Podman does not require rebuilding your images - you can export and import containers directly while preserving their state and configuration.
 
 Moving from Docker to Podman is a common step for teams seeking a daemonless, rootless container runtime. The good news is that Podman uses the same OCI image format as Docker, so your images are fully compatible. This guide walks through a practical migration process for moving your Docker containers, images, and configurations to Podman.
 
@@ -109,7 +109,7 @@ Use the extracted configuration to create equivalent Podman containers.
 
 ```bash
 #!/bin/bash
-# migrate-container.sh — Recreate a Docker container in Podman
+# migrate-container.sh - Recreate a Docker container in Podman
 
 CONTAINER_NAME="myapp"
 
@@ -163,7 +163,7 @@ Automate the migration of all Docker containers to Podman.
 
 ```bash
 #!/bin/bash
-# batch-migrate.sh — Migrate all Docker containers to Podman
+# batch-migrate.sh - Migrate all Docker containers to Podman
 
 echo "Starting batch migration from Docker to Podman..."
 

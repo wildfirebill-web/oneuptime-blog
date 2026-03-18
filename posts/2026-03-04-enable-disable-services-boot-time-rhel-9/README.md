@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Systemd, Boot Services, systemctl, Linux
+Tags: RHEL, systemd, Boot Services, systemctl, Linux
 
 Description: Learn how to control which services start automatically at boot on RHEL using systemctl enable and disable, and understand what happens under the hood.
 

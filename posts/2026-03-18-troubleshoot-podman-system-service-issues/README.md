@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Troubleshooting, Systemd, Debugging
+Tags: Podman, Containers, DevOps, Troubleshooting, systemd, Debugging
 
 Description: Learn how to diagnose and fix common Podman system service issues including socket failures, API errors, permission problems, and storage corruption.
 

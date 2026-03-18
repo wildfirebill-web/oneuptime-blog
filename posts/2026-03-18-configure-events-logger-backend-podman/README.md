@@ -18,9 +18,9 @@ Podman supports multiple event logger backends that control where container even
 
 Podman supports three events logger backends:
 
-- **journald** — Stores events in the systemd journal (default on systemd systems)
-- **file** — Stores events in a plain text file
-- **none** — Disables event logging entirely
+- **journald** - Stores events in the systemd journal (default on systemd systems)
+- **file** - Stores events in a plain text file
+- **none** - Disables event logging entirely
 
 ```bash
 # Check the current events logger

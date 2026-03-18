@@ -8,7 +8,7 @@ Description: Learn how to unmask default-hidden filesystem paths in Podman conta
 
 ---
 
-> Unmasking paths grants the container access to system information that Podman hides by default — do so only when the workload genuinely requires it.
+> Unmasking paths grants the container access to system information that Podman hides by default - do so only when the workload genuinely requires it.
 
 Podman masks several `/proc` and `/sys` paths by default to prevent containers from reading sensitive host information. However, certain workloads such as monitoring agents, hardware diagnostic tools, and system utilities need access to these paths to function correctly. Podman provides the `--security-opt unmask=` flag to selectively expose masked paths.
 

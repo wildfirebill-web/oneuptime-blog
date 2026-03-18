@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage Migration, Upgrades
+Tags: Podman, Containers, DevOps, Storage Migration, Upgrade
 
 Description: Learn how to safely migrate Podman storage when upgrading between major versions to avoid data loss and storage incompatibilities.
 

@@ -79,7 +79,7 @@ podman login source-registry.example.com
 # Log in to the destination registry using Podman
 podman login dest-registry.example.com
 
-# Now copy the image — Skopeo uses the same auth file
+# Now copy the image - Skopeo uses the same auth file
 skopeo copy \
   docker://source-registry.example.com/myapp:v2.1 \
   docker://dest-registry.example.com/myapp:v2.1
@@ -138,7 +138,7 @@ For large-scale migrations, you can script the copy process to handle many image
 
 ```bash
 #!/bin/bash
-# bulk-copy.sh — Copy a list of images from one registry to another
+# bulk-copy.sh - Copy a list of images from one registry to another
 
 SOURCE_REGISTRY="docker.io/library"
 DEST_REGISTRY="registry.internal.com"

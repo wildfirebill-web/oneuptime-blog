@@ -116,7 +116,7 @@ Automate the migration of all custom Docker networks.
 
 ```bash
 #!/bin/bash
-# migrate-networks.sh — Migrate Docker networks to Podman
+# migrate-networks.sh - Migrate Docker networks to Podman
 
 echo "Starting Docker network migration to Podman..."
 

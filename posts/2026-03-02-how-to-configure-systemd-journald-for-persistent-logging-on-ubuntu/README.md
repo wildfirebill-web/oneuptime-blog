@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Logging, Systemd, journald, System Administration
+Tags: Ubuntu, Logging, systemd, journald, System Administration
 
 Description: Configure systemd-journald for persistent log storage on Ubuntu, set storage limits, control retention policies, and ensure logs survive system reboots.
 

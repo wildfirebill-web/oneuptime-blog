@@ -43,7 +43,7 @@ Use `--cap-drop` to remove a specific capability from the container.
 podman run --rm \
   --cap-drop CHOWN \
   docker.io/library/alpine:latest \
-  sh -c "chown nobody /tmp && echo 'success'" || echo "chown failed — capability dropped"
+  sh -c "chown nobody /tmp && echo 'success'" || echo "chown failed - capability dropped"
 
 # Drop SETUID to prevent the container from changing user IDs
 # This stops binaries with the setuid bit from escalating privileges
@@ -75,7 +75,7 @@ podman run --rm \
 The most secure approach is to drop all capabilities and then add back only what the container specifically needs.
 
 ```bash
-# Drop all capabilities — the container runs with zero privileges
+# Drop all capabilities - the container runs with zero privileges
 podman run --rm \
   --cap-drop ALL \
   docker.io/library/alpine:latest \
@@ -125,7 +125,7 @@ Dropping `NET_RAW` prevents containers from sending crafted network packets, whi
 podman run --rm \
   --cap-drop NET_RAW \
   docker.io/library/alpine:latest \
-  ping -c 1 8.8.8.8 || echo "ping failed — NET_RAW dropped"
+  ping -c 1 8.8.8.8 || echo "ping failed - NET_RAW dropped"
 
 # Compare with a container that has NET_RAW
 podman run --rm \

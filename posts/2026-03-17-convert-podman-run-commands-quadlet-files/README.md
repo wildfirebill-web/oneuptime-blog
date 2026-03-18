@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Migration, Systemd
+Tags: Podman, Containers, DevOps, Quadlet, Migration, systemd
 
 Description: Learn how to convert existing podman run commands into Quadlet container files for systemd-managed container services.
 

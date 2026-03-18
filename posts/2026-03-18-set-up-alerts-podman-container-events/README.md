@@ -8,9 +8,9 @@ Description: Learn how to set up automated alerts based on Podman container even
 
 ---
 
-> Automated alerts transform passive event logging into active incident detection — you know about problems before your users do.
+> Automated alerts transform passive event logging into active incident detection - you know about problems before your users do.
 
-Monitoring container events is only half the equation. The other half is acting on them — specifically, getting notified when something goes wrong. By setting up alerts based on Podman events, you can detect container crashes, unexpected restarts, resource exhaustion, and other critical situations automatically. This guide walks you through building an alerting system on top of Podman events.
+Monitoring container events is only half the equation. The other half is acting on them - specifically, getting notified when something goes wrong. By setting up alerts based on Podman events, you can detect container crashes, unexpected restarts, resource exhaustion, and other critical situations automatically. This guide walks you through building an alerting system on top of Podman events.
 
 ---
 

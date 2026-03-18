@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Systemd, Linux, DevOps, Configuration Management
+Tags: Ansible, systemd, Linux, DevOps, Configuration Management
 
 Description: Learn how to create, deploy, and manage custom systemd unit files using Ansible templates and the systemd module for reliable service management.
 

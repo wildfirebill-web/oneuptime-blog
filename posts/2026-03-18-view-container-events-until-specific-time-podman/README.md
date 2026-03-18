@@ -10,7 +10,7 @@ Description: Learn how to view Podman container events until a specific time to 
 
 > Bounding your event queries with an end time prevents noise from after the incident and keeps your investigation focused.
 
-When analyzing container events, you often need to look at a specific time window — not just since a time, but until a certain point. The `--until` flag in Podman lets you set an upper boundary on your event query, creating precise time windows for investigation. This guide shows you how to use the `--until` flag effectively, both alone and in combination with `--since`.
+When analyzing container events, you often need to look at a specific time window - not just since a time, but until a certain point. The `--until` flag in Podman lets you set an upper boundary on your event query, creating precise time windows for investigation. This guide shows you how to use the `--until` flag effectively, both alone and in combination with `--since`.
 
 ---
 

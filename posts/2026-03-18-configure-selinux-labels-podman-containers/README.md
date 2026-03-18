@@ -105,14 +105,14 @@ When mounting host directories, SELinux labels must be set correctly or the cont
 mkdir -p /tmp/selinux-test
 echo "test data" > /tmp/selinux-test/data.txt
 
-# Mount with :z for shared label — multiple containers can access
+# Mount with :z for shared label - multiple containers can access
 # The :z flag relabels the directory with container_file_t
 podman run --rm \
   -v /tmp/selinux-test:/data:z \
   docker.io/library/fedora:latest \
   cat /data/data.txt
 
-# Mount with :Z for private label — only this container can access
+# Mount with :Z for private label - only this container can access
 # The :Z flag relabels with a unique MCS label
 podman run --rm \
   -v /tmp/selinux-test:/data:Z \

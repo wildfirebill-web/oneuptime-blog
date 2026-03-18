@@ -22,9 +22,9 @@ Docker CLI plugins are executables stored in `~/.docker/cli-plugins/` that exten
 # List Docker CLI plugins
 ls ~/.docker/cli-plugins/
 # Common plugins:
-# docker-compose  — Multi-container orchestration
-# docker-buildx   — Extended build capabilities
-# docker-scout    — Image vulnerability scanning
+# docker-compose  - Multi-container orchestration
+# docker-buildx   - Extended build capabilities
+# docker-scout    - Image vulnerability scanning
 
 # Docker plugins run as: docker compose, docker buildx, etc.
 ```
@@ -68,7 +68,7 @@ Docker Buildx provides multi-platform builds and advanced build features. Podman
 # Docker Buildx multi-platform build
 docker buildx build --platform linux/amd64,linux/arm64 -t myapp:latest .
 
-# Podman equivalent — use --platform directly
+# Podman equivalent - use --platform directly
 podman build --platform linux/amd64,linux/arm64 -t myapp:latest .
 
 # Build for a specific platform
@@ -114,7 +114,7 @@ Build a wrapper script that handles common Docker plugin commands with Podman al
 
 ```bash
 #!/bin/bash
-# /usr/local/bin/docker — Plugin-aware Docker-to-Podman wrapper
+# /usr/local/bin/docker - Plugin-aware Docker-to-Podman wrapper
 
 case "$1" in
   compose)
@@ -138,7 +138,7 @@ case "$1" in
         exec podman manifest "$@"
         ;;
       *)
-        echo "Buildx subcommand '$1' — using podman build instead"
+        echo "Buildx subcommand '$1' - using podman build instead"
         shift
         exec podman build "$@"
         ;;
@@ -215,7 +215,7 @@ Adjust CI/CD pipelines that use Docker plugins to work with Podman.
 
 ```bash
 #!/bin/bash
-# ci-build.sh — CI/CD build script compatible with both Docker and Podman
+# ci-build.sh - CI/CD build script compatible with both Docker and Podman
 
 # Detect the available runtime
 if command -v podman &>/dev/null; then

@@ -20,12 +20,12 @@ Skopeo uses transport prefixes to identify where images live.
 
 ```bash
 # Transport types:
-# docker://         — Remote Docker-compatible registry
-# containers-storage: — Local Podman/CRI-O storage
-# dir:              — Local directory with raw blobs
-# oci:              — OCI image layout directory
-# docker-archive:   — Docker tar archive file
-# oci-archive:      — OCI tar archive file
+# docker://         - Remote Docker-compatible registry
+# containers-storage: - Local Podman/CRI-O storage
+# dir:              - Local directory with raw blobs
+# oci:              - OCI image layout directory
+# docker-archive:   - Docker tar archive file
+# oci-archive:      - OCI tar archive file
 ```
 
 ## Copying from Local Podman Storage to a Registry
@@ -148,7 +148,7 @@ Use Skopeo for transferring images to air-gapped environments.
 
 ```bash
 #!/bin/bash
-# export-for-airgap.sh — Export images for offline transfer
+# export-for-airgap.sh - Export images for offline transfer
 
 EXPORT_DIR="/media/usb-drive/images"
 mkdir -p "$EXPORT_DIR"
@@ -175,7 +175,7 @@ echo "Export complete. Transfer ${EXPORT_DIR} to the air-gapped system."
 
 ```bash
 #!/bin/bash
-# import-airgap.sh — Import images on the air-gapped system
+# import-airgap.sh - Import images on the air-gapped system
 
 IMPORT_DIR="/media/usb-drive/images"
 REGISTRY="airgapped-registry.internal:5000"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Repos, Git Tags, Release Pipelines, Versioning, CI/CD, Azure Pipelines, Semantic Versioning
+Tags: Azure Repos, Git Tags, Release Pipeline, Versioning, CI/CD, Azure Pipelines, Semantic Versioning
 
 Description: Learn how to configure Azure Pipelines to trigger builds and releases based on Git tags for structured versioning and controlled release workflows.
 

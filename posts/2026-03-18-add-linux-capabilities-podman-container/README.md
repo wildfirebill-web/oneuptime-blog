@@ -28,12 +28,12 @@ capsh --print
 
 Some commonly needed capabilities include:
 
-- `NET_BIND_SERVICE` — bind to ports below 1024
-- `NET_ADMIN` — configure network interfaces and routing
-- `SYS_PTRACE` — trace and debug processes
-- `SYS_ADMIN` — broad administrative operations (use with caution)
-- `CHOWN` — change file ownership
-- `DAC_OVERRIDE` — bypass file read/write/execute permission checks
+- `NET_BIND_SERVICE` - bind to ports below 1024
+- `NET_ADMIN` - configure network interfaces and routing
+- `SYS_PTRACE` - trace and debug processes
+- `SYS_ADMIN` - broad administrative operations (use with caution)
+- `CHOWN` - change file ownership
+- `DAC_OVERRIDE` - bypass file read/write/execute permission checks
 
 ## Checking Default Capabilities
 
@@ -127,7 +127,7 @@ podman stop web-server
 In rare cases during development or debugging, you may want to grant all capabilities.
 
 ```bash
-# Add all capabilities — use only for debugging, never in production
+# Add all capabilities - use only for debugging, never in production
 # This effectively gives the container full root privileges
 podman run --rm \
   --cap-add ALL \

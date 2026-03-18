@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Systemd, Service Management, API
+Tags: Podman, Containers, DevOps, systemd, Service Management, API
 
 Description: Learn how to configure and run the Podman system service as a systemd unit for reliable, automatic API availability on boot.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Build, Images
+Tags: Podman, Containers, DevOps, Quadlet, systemd, Build, Images
 
 Description: Learn how to create a Quadlet .build unit file to build container images from Containerfiles as part of the systemd service lifecycle.
 

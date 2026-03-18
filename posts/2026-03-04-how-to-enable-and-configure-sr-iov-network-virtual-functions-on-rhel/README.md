@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SR-IOV, Networking, Virtualization, VFs, Performance
+Tags: RHEL, SR-IOV, Networking, Virtualization, VFS, Performance
 
 Description: Learn how to enable and configure SR-IOV (Single Root I/O Virtualization) virtual functions on RHEL for near-native network performance in virtual machines.
 

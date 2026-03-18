@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Edge Computing, GitOps, Oci artifacts, Bandwidth
+Tags: Flux CD, Kubernetes, Edge Computing, GitOps, OCI Artifacts, Bandwidth
 
 Description: Use OCI artifacts to minimize bandwidth for edge deployments with Flux, replacing Git cloning with efficient artifact-based manifest delivery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Systemd, Logging
+Tags: RHEL, Linux, systemd, Logging
 
 Description: Step-by-step guide on manage systemd journal disk space on rhel 9 with practical examples and commands.
 

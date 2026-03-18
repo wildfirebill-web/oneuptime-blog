@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Dependencies
+Tags: Podman, Containers, DevOps, Quadlet, systemd, Dependencies
 
 Description: Learn how to configure service dependencies between Quadlet containers so services start and stop in the correct order.
 

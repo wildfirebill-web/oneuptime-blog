@@ -8,9 +8,9 @@ Description: Learn how to migrate your Dockerfiles to Containerfiles for use wit
 
 ---
 
-> Containerfiles and Dockerfiles use the same syntax — renaming is optional, but adopting Containerfile signals your commitment to open standards and avoids Docker-specific assumptions.
+> Containerfiles and Dockerfiles use the same syntax - renaming is optional, but adopting Containerfile signals your commitment to open standards and avoids Docker-specific assumptions.
 
-Podman and Buildah support both Dockerfiles and Containerfiles. A Containerfile is functionally identical to a Dockerfile — it uses the same instructions, same syntax, and same build behavior. The name change reflects the shift toward vendor-neutral container tooling. This guide covers the practical steps for migrating, the few differences you should be aware of, and how to maintain compatibility with both ecosystems.
+Podman and Buildah support both Dockerfiles and Containerfiles. A Containerfile is functionally identical to a Dockerfile - it uses the same instructions, same syntax, and same build behavior. The name change reflects the shift toward vendor-neutral container tooling. This guide covers the practical steps for migrating, the few differences you should be aware of, and how to maintain compatibility with both ecosystems.
 
 ---
 
@@ -90,7 +90,7 @@ MAKEFILE
 While the syntax is identical, there are a few Podman-specific improvements to adopt.
 
 ```dockerfile
-# Containerfile — with Podman-optimized practices
+# Containerfile - with Podman-optimized practices
 
 # Use fully qualified image references (avoids registry ambiguity)
 FROM docker.io/library/python:3.12-slim AS builder
@@ -216,7 +216,7 @@ Migrate all Dockerfiles in a project or monorepo.
 
 ```bash
 #!/bin/bash
-# migrate-dockerfiles.sh — Rename all Dockerfiles to Containerfiles
+# migrate-dockerfiles.sh - Rename all Dockerfiles to Containerfiles
 
 PROJECT_ROOT="${1:-.}"
 

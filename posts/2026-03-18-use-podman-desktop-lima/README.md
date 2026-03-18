@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Lima, macOS, Virtual Machines
+Tags: Podman, Containers, DevOps, Podman Desktop, Lima, macOS, Virtual Machine
 
 Description: Learn how to use Podman Desktop with Lima to run Linux containers on macOS with lightweight virtual machines and native file sharing.
 

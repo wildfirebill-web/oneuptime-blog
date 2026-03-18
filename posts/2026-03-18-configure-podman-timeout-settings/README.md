@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Performance, Timeouts
+Tags: Podman, Containers, DevOps, Configuration, Performance, Timeout
 
 Description: Learn how to configure timeout settings in Podman for container operations, service idle time, and network connections to optimize reliability and performance.
 

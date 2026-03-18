@@ -96,7 +96,7 @@ For more control, use a wrapper script instead of a simple alias.
 
 ```bash
 #!/bin/bash
-# /usr/local/bin/docker — Wrapper script for Docker-to-Podman compatibility
+# /usr/local/bin/docker - Wrapper script for Docker-to-Podman compatibility
 
 # Handle docker-specific subcommands that differ in Podman
 case "$1" in

@@ -8,7 +8,7 @@ Description: Learn how to audit container activities using Podman events to main
 
 ---
 
-> A complete audit trail of container activities is not optional in regulated environments — it is a compliance requirement.
+> A complete audit trail of container activities is not optional in regulated environments - it is a compliance requirement.
 
 Container auditing is essential for security compliance, incident forensics, and operational governance. Podman events provide a built-in mechanism to track every container operation, from creation and configuration to execution and removal. This guide shows you how to build a comprehensive container audit system using Podman events.
 
@@ -79,7 +79,7 @@ done
 
 ## Auditing Container Exec Operations
 
-Exec events are critical for security — they show when someone runs commands inside a container.
+Exec events are critical for security - they show when someone runs commands inside a container.
 
 ```bash
 # Start a container for testing exec auditing

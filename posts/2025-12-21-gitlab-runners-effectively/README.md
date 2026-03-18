@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Runners, DevOps, Infrastructure, Kubernetes, Docker
+Tags: GitLab, CI/CD, Runner, DevOps, Infrastructure, Kubernetes, Docker
 
 Description: Master GitLab Runners to optimize your CI/CD pipelines. Learn about runner types, registration, configuration, scaling strategies, and best practices for efficient job execution.
 

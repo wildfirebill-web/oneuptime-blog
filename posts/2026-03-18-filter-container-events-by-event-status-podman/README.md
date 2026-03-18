@@ -10,7 +10,7 @@ Description: Learn how to filter Podman events by event status to monitor specif
 
 > Filtering by event status lets you focus on exactly the container state transitions that matter to your operations.
 
-Podman containers go through many state transitions during their lifecycle. Each transition generates an event with a specific status. By filtering on event status, you can monitor only the transitions you care about — whether that is containers starting, stopping unexpectedly, running out of memory, or being removed. This guide covers all the event statuses available in Podman and how to filter for them effectively.
+Podman containers go through many state transitions during their lifecycle. Each transition generates an event with a specific status. By filtering on event status, you can monitor only the transitions you care about - whether that is containers starting, stopping unexpectedly, running out of memory, or being removed. This guide covers all the event statuses available in Podman and how to filter for them effectively.
 
 ---
 
@@ -100,7 +100,7 @@ podman rm create-test
 
 ## Filtering for Exec Events
 
-Monitor when commands are executed inside running containers — useful for security auditing.
+Monitor when commands are executed inside running containers - useful for security auditing.
 
 ```bash
 # Monitor exec events

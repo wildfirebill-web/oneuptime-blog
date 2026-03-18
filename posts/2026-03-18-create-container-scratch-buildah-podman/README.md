@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Scratch Images, Minimal Containers, Security
+Tags: Podman, Containers, DevOps, Buildah, Scratch Image, Minimal Containers, Security
 
 Description: Learn how to build a container image from scratch using Buildah and Podman for minimal, secure containers with no base image overhead.
 

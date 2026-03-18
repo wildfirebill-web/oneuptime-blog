@@ -72,7 +72,7 @@ Automate the cleanup of old tags using a script that lists and filters tags befo
 
 ```bash
 #!/bin/bash
-# cleanup-old-tags.sh — Delete tags older than a specified pattern
+# cleanup-old-tags.sh - Delete tags older than a specified pattern
 
 REGISTRY="registry.example.com"
 IMAGE="myapp"
@@ -100,7 +100,7 @@ Use Skopeo inspect to check image creation dates before deleting.
 
 ```bash
 #!/bin/bash
-# delete-old-images.sh — Delete images older than N days
+# delete-old-images.sh - Delete images older than N days
 
 REGISTRY="registry.example.com"
 IMAGE="myapp"
@@ -152,7 +152,7 @@ Always verify before deleting to avoid removing images that are in use.
 
 ```bash
 #!/bin/bash
-# safe-delete.sh — Delete with confirmation and logging
+# safe-delete.sh - Delete with confirmation and logging
 
 REGISTRY="registry.example.com"
 IMAGE="$1"

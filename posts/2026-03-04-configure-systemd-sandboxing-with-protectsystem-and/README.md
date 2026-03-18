@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Systemd, Linux
+Tags: RHEL, systemd, Linux
 
 Description: Step-by-step guide on configure systemd sandboxing with protectsystem and privatetmp using Red Hat Enterprise Linux 9.
 

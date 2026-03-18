@@ -47,11 +47,11 @@ podman stop mask-check && podman rm mask-check
 
 Masked paths prevent the container from accessing host kernel internals that could be exploited:
 
-- `/proc/kcore` — raw kernel memory, could leak host secrets
-- `/proc/keys` — cryptographic keys held by the kernel
-- `/proc/timer_list` — timing information useful for side-channel attacks
-- `/proc/sched_debug` — scheduler details exposing host process information
-- `/sys/firmware` — firmware and BIOS data from the host
+- `/proc/kcore` - raw kernel memory, could leak host secrets
+- `/proc/keys` - cryptographic keys held by the kernel
+- `/proc/timer_list` - timing information useful for side-channel attacks
+- `/proc/sched_debug` - scheduler details exposing host process information
+- `/sys/firmware` - firmware and BIOS data from the host
 
 ```bash
 # Demonstrate that masked paths return empty or error responses

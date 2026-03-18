@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Security, Files
+Tags: Podman, Containers, DevOps, Secrets, Security, File
 
 Description: Learn how to create Podman secrets from files to securely manage passwords, certificates, and configuration data.
 

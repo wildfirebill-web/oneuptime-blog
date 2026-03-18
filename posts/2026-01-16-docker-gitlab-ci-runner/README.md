@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, GitLab, CI/CD, DevOps, Runners
+Tags: Docker, GitLab, CI/CD, DevOps, Runner
 
 Description: Learn how to set up and configure GitLab CI Runner with Docker executor, including registration, configuration options, caching strategies, and troubleshooting common issues.
 

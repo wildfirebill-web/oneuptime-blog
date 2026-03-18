@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Tmpfs, Filesystem
+Tags: Podman, Containers, DevOps, Security, tmpfs, Filesystem
 
 Description: Learn how to configure tmpfs mounts with read-only options in Podman to control ephemeral storage and minimize container attack surfaces.
 

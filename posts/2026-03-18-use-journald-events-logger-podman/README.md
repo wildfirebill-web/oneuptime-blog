@@ -8,7 +8,7 @@ Description: Learn how to use the journald events logger with Podman to store an
 
 ---
 
-> The journald backend gives Podman events the full power of systemd journal — structured logging, efficient storage, and rich query capabilities.
+> The journald backend gives Podman events the full power of systemd journal - structured logging, efficient storage, and rich query capabilities.
 
 On systems running systemd, Podman can store container events in the systemd journal using the journald backend. This gives you access to journald's powerful querying, filtering, and retention features for container events. This guide covers how to configure, use, and get the most out of the journald events logger in Podman.
 

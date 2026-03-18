@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab CI, Kubernetes, CI/CD, DevOps, Runners
+Tags: GitLab CI, Kubernetes, CI/CD, DevOps, Runner
 
 Description: Configure GitLab CI runners on Kubernetes with pod templates to create flexible, scalable build environments with custom images, resource allocation, and service dependencies.
 

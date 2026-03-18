@@ -8,7 +8,7 @@ Description: Learn how to use podman events as a debugging tool to diagnose cont
 
 ---
 
-> When a container misbehaves, the event stream is your first line of investigation — it tells you exactly what happened and when.
+> When a container misbehaves, the event stream is your first line of investigation - it tells you exactly what happened and when.
 
 Debugging container issues can be frustrating without visibility into what is happening behind the scenes. The `podman events` command serves as a powerful debugging tool that shows you the sequence of events leading up to a problem. Whether a container fails to start, crashes unexpectedly, or behaves erratically, the event stream provides the timeline you need to diagnose the issue. This guide shows you how to use Podman events effectively for debugging.
 

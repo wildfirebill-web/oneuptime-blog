@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Systemd, Linux
+Tags: RHEL, systemd, Linux
 
 Description: Step-by-step guide on set up template units with systemd instantiated services using Red Hat Enterprise Linux 9.
 

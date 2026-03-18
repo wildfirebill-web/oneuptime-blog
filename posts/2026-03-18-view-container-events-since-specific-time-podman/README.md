@@ -8,7 +8,7 @@ Description: Learn how to view Podman container events since a specific time to 
 
 ---
 
-> Time-based event filtering is the cornerstone of incident investigation — knowing what happened since a specific moment tells the story of any outage.
+> Time-based event filtering is the cornerstone of incident investigation - knowing what happened since a specific moment tells the story of any outage.
 
 When investigating an incident or reviewing container activity, you often need to see events starting from a specific point in time. Podman's `--since` flag lets you look back at events from a relative duration or an absolute timestamp. This guide covers all the ways to filter Podman events by start time.
 

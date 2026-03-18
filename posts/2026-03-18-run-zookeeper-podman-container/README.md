@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Zookeeper, Coordination, Distributed Systems
+Tags: Podman, Containers, DevOps, ZooKeeper, Coordination, Distributed Systems
 
 Description: Learn how to run Apache Zookeeper in a Podman container for distributed coordination, configuration management, and service discovery.
 

@@ -51,8 +51,8 @@ Docker Compose mostly works with Podman, but some features differ.
 # - depends_on, healthcheck
 
 # Features with differences:
-# docker compose watch (live sync) — limited support
-# docker compose profiles — supported in podman-compose
+# docker compose watch (live sync) - limited support
+# docker compose profiles - supported in podman-compose
 
 # Use podman-compose for best compatibility
 pip3 install podman-compose

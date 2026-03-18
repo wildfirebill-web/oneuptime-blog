@@ -50,7 +50,7 @@ jobs:
 
       - name: Log in to registry
         run: |
-          # Podman login — credentials are shared with Skopeo
+          # Podman login - credentials are shared with Skopeo
           echo "${{ secrets.REGISTRY_PASSWORD }}" | \
             podman login registry.example.com \
               --username "${{ secrets.REGISTRY_USERNAME }}" \
@@ -135,7 +135,7 @@ A common CI/CD pattern promotes images through environments (dev, staging, produ
 
 ```bash
 #!/bin/bash
-# promote-image.sh — Promote an image between environments
+# promote-image.sh - Promote an image between environments
 
 IMAGE="myapp"
 SOURCE_TAG="$1"       # e.g., abc123 (commit SHA)
@@ -162,7 +162,7 @@ esac
 
 echo "Promoting ${IMAGE}:${SOURCE_TAG} -> ${TARGET_REGISTRY}/${IMAGE}:${TARGET_TAG}"
 
-# Copy directly between registries — no local pull needed
+# Copy directly between registries - no local pull needed
 skopeo copy \
   "docker://${DEV_REGISTRY}/${IMAGE}:${SOURCE_TAG}" \
   "docker://${TARGET_REGISTRY}/${IMAGE}:${TARGET_TAG}"
@@ -179,7 +179,7 @@ Integrate image scanning into the pipeline using Skopeo to fetch images for scan
 
 ```bash
 #!/bin/bash
-# scan-and-promote.sh — Scan an image before promoting it
+# scan-and-promote.sh - Scan an image before promoting it
 
 IMAGE="registry.example.com/myapp:${CI_COMMIT_SHA}"
 SCAN_DIR="/tmp/scan-image"
@@ -214,7 +214,7 @@ Build and push multi-arch images in CI/CD using Podman and Skopeo.
 
 ```bash
 #!/bin/bash
-# multiarch-build.sh — Build and push multi-arch images
+# multiarch-build.sh - Build and push multi-arch images
 
 IMAGE="registry.example.com/myapp"
 TAG="${CI_COMMIT_TAG:-latest}"

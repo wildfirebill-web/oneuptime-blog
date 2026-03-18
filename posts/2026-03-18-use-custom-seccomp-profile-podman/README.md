@@ -132,7 +132,7 @@ cat > ~/podman-seccomp/no-network.json << 'EOF'
 }
 EOF
 
-# Test the no-network profile — network operations should fail
+# Test the no-network profile - network operations should fail
 podman run --rm \
   --security-opt seccomp=$HOME/podman-seccomp/no-network.json \
   docker.io/library/alpine:latest \

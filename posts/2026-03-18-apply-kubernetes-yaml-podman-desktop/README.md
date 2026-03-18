@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Kubernetes, YAML, Manifests
+Tags: Podman, Containers, DevOps, Podman Desktop, Kubernetes, YAML, Manifest
 
 Description: Learn how to apply Kubernetes YAML manifests directly from Podman Desktop to create and manage resources on your connected clusters.
 

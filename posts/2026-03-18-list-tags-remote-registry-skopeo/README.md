@@ -119,7 +119,7 @@ You can compare available tags between two registries to find missing images.
 
 ```bash
 #!/bin/bash
-# compare-tags.sh — Find tags in source that are missing from destination
+# compare-tags.sh - Find tags in source that are missing from destination
 
 IMAGE="myapp"
 SOURCE="docker://source-registry.example.com/${IMAGE}"
@@ -146,7 +146,7 @@ Set up a script to detect when new tags appear for an image you depend on.
 
 ```bash
 #!/bin/bash
-# watch-tags.sh — Detect new tags for a monitored image
+# watch-tags.sh - Detect new tags for a monitored image
 
 IMAGE="docker://docker.io/library/nginx"
 CACHE_FILE="/tmp/nginx-tags-cache.txt"

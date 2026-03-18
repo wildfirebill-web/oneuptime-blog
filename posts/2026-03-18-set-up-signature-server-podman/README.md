@@ -19,7 +19,7 @@ When using GPG-based image signing with Podman, signatures need to be stored som
 Podman stores and retrieves signatures using a well-defined URL pattern. When an image is signed, the signature is stored in a path based on the image reference and digest. The signature server simply serves these files over HTTP or HTTPS.
 
 The URL pattern follows this structure:
-```
+```text
 <sigstore-url>/<image-name>@<digest-algorithm>=<digest-hex>/signature-<n>
 ```
 

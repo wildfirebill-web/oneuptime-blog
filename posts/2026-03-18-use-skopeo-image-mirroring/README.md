@@ -72,7 +72,7 @@ Create a script to mirror all the images your organization depends on.
 
 ```bash
 #!/bin/bash
-# mirror-images.sh — Mirror a curated set of images to a local registry
+# mirror-images.sh - Mirror a curated set of images to a local registry
 
 MIRROR_REGISTRY="mirror.internal.com:5000"
 LOG_FILE="/var/log/image-mirror.log"
@@ -221,7 +221,7 @@ Periodically verify that mirrored images match their upstream sources.
 
 ```bash
 #!/bin/bash
-# verify-mirror.sh — Compare mirror digests with upstream
+# verify-mirror.sh - Compare mirror digests with upstream
 
 MIRROR="mirror.internal.com:5000"
 IMAGES=("library/nginx:1.25" "library/redis:7" "library/postgres:16")
@@ -233,7 +233,7 @@ for IMG in "${IMAGES[@]}"; do
   if [ "$UPSTREAM" = "$MIRROR_D" ]; then
     echo "MATCH: ${IMG}"
   else
-    echo "MISMATCH: ${IMG} — upstream=${UPSTREAM} mirror=${MIRROR_D}"
+    echo "MISMATCH: ${IMG} - upstream=${UPSTREAM} mirror=${MIRROR_D}"
   fi
 done
 ```

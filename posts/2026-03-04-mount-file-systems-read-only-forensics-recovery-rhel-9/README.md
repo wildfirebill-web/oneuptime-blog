@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, Forensics, Recovery, Mounts, Storage, Security, Linux
+Tags: RHEL, Forensics, Recovery, Mount, Storage, Security, Linux
 
 Description: Learn how to mount file systems in read-only mode on RHEL for forensic analysis and data recovery without altering evidence or source data.
 

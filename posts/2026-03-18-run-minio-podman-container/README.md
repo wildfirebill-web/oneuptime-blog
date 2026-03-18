@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Minio, Object Storage, S3 Compatible
+Tags: Podman, Containers, DevOps, MinIO, Object Storage, S3 Compatible
 
 Description: Learn how to run Minio in a Podman container for S3-compatible object storage with persistent data, bucket management, and the web console.
 

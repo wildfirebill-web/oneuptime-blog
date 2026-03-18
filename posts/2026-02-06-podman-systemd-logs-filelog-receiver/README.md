@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Podman, Systemd, Filelog Receiver
+Tags: OpenTelemetry, Podman, systemd, Filelog Receiver
 
 Description: Configure Podman containers managed by systemd to export structured logs to the OpenTelemetry Collector filelog receiver for centralized logging.
 

@@ -104,7 +104,7 @@ jobs:
 Update GitLab CI pipelines to use Podman.
 
 ```yaml
-# .gitlab-ci.yml — Podman-based pipeline
+# .gitlab-ci.yml - Podman-based pipeline
 stages:
   - build
   - test
@@ -146,7 +146,7 @@ deploy:
 Update Jenkins pipelines to use Podman.
 
 ```groovy
-// Jenkinsfile — Podman-based pipeline
+// Jenkinsfile - Podman-based pipeline
 pipeline {
     agent any
 
@@ -212,7 +212,7 @@ Create pipelines that work with both Docker and Podman.
 
 ```bash
 #!/bin/bash
-# ci-build.sh — Runtime-agnostic build script
+# ci-build.sh - Runtime-agnostic build script
 
 # Auto-detect the container runtime
 if command -v podman &>/dev/null; then

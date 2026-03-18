@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Systemd, Linger, Persistence
+Tags: Podman, Containers, DevOps, Rootless, systemd, Linger, Persistence
 
 Description: A practical guide to keeping rootless Podman containers running after you log out of your session, using systemd user services and loginctl linger.
 

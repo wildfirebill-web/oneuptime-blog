@@ -78,7 +78,7 @@ skopeo sync \
 For production setups, define your sync configuration in a YAML file to manage multiple repositories and tag filters.
 
 ```yaml
-# sync-config.yaml — Define which images and tags to sync
+# sync-config.yaml - Define which images and tags to sync
 registry.source.com:
   images:
     nginx:
@@ -153,7 +153,7 @@ Set up a cron job or systemd timer to keep registries synchronized automatically
 
 ```bash
 #!/bin/bash
-# registry-sync.sh — Automated registry sync script
+# registry-sync.sh - Automated registry sync script
 
 LOG_FILE="/var/log/registry-sync.log"
 CONFIG_FILE="/etc/skopeo/sync-config.yaml"

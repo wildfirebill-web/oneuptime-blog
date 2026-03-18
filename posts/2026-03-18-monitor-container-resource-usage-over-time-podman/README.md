@@ -10,7 +10,7 @@ Description: Learn how to monitor container resource usage over time with Podman
 
 > Monitoring resource usage over time reveals trends, detects anomalies, and prevents outages before they happen.
 
-While Podman events track lifecycle changes, monitoring resource usage over time gives you performance data — CPU consumption, memory usage, network throughput, and disk I/O. By collecting these metrics periodically, you can identify trends, detect resource leaks, and right-size your containers. This guide shows you how to track container resource usage over time using Podman.
+While Podman events track lifecycle changes, monitoring resource usage over time gives you performance data - CPU consumption, memory usage, network throughput, and disk I/O. By collecting these metrics periodically, you can identify trends, detect resource leaks, and right-size your containers. This guide shows you how to track container resource usage over time using Podman.
 
 ---
 

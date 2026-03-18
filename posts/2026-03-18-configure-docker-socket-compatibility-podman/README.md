@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Socket, API Compatibility, Systemd
+Tags: Podman, Containers, DevOps, Docker, Socket, API Compatibility, systemd
 
 Description: Learn how to configure Podman's Docker-compatible socket so that tools expecting the Docker daemon can work seamlessly with Podman.
 
@@ -132,7 +132,7 @@ docker-compose up -d
 Set up the Podman socket for common development tools.
 
 ```bash
-# VS Code Dev Containers — set in settings.json
+# VS Code Dev Containers - set in settings.json
 # "docker.host": "unix:///run/user/1000/podman/podman.sock"
 
 # Testcontainers (Java/Python/Go)

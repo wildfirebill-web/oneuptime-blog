@@ -76,7 +76,7 @@ profile podman-webapp flags=(attach_disconnected,mediate_deleted) {
   /tmp/** rw,
   /var/tmp/** rw,
 
-  # Allow network operations — tcp and udp
+  # Allow network operations - tcp and udp
   network inet tcp,
   network inet udp,
   network inet6 tcp,

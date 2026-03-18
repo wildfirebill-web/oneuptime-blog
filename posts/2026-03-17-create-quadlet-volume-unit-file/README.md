@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Volumes, Storage
+Tags: Podman, Containers, DevOps, Quadlet, systemd, Volumes, Storage
 
 Description: Learn how to create a Quadlet .volume unit file to manage Podman volumes as systemd resources for persistent container storage.
 

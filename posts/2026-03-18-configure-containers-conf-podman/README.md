@@ -132,4 +132,4 @@ diff /usr/share/containers/containers.conf ~/.config/containers/containers.conf
 
 ## Summary
 
-The `containers.conf` file is Podman's primary configuration mechanism, using a layered TOML format with vendor, system, and user-level files. By understanding the file hierarchy and key sections — containers, engine, and network — you can customize Podman to fit your exact workflow. Always validate changes with `podman info` and keep backups of working configurations.
+The `containers.conf` file is Podman's primary configuration mechanism, using a layered TOML format with vendor, system, and user-level files. By understanding the file hierarchy and key sections - containers, engine, and network - you can customize Podman to fit your exact workflow. Always validate changes with `podman info` and keep backups of working configurations.

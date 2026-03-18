@@ -179,4 +179,4 @@ podman rm -f apache-static apache-custom apache-vhosts
 
 ## Summary
 
-Running Apache HTTP Server in a Podman container gives you all the flexibility of Apache — modules, virtual hosts, URL rewriting, and more — without installing it directly on your system. By mounting configuration files and document roots as volumes, you can iterate on your setup quickly and keep everything version-controlled. Podman's rootless mode adds a security advantage, making Apache containers safe for development and suitable for production deployments behind a load balancer.
+Running Apache HTTP Server in a Podman container gives you all the flexibility of Apache - modules, virtual hosts, URL rewriting, and more - without installing it directly on your system. By mounting configuration files and document roots as volumes, you can iterate on your setup quickly and keep everything version-controlled. Podman's rootless mode adds a security advantage, making Apache containers safe for development and suitable for production deployments behind a load balancer.

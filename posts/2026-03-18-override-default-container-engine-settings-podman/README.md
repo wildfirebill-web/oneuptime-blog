@@ -10,7 +10,7 @@ Description: Learn how to override Podman's default container engine settings in
 
 > Overriding Podman's engine defaults lets you optimize performance, change runtimes, and control how containers are managed on your system.
 
-The `[engine]` section of `containers.conf` controls Podman's core behavior — from which OCI runtime it uses to how it handles images and events. By overriding these defaults, you can tune Podman for development speed, production stability, or resource-constrained environments. This guide covers the most important engine settings and how to change them.
+The `[engine]` section of `containers.conf` controls Podman's core behavior - from which OCI runtime it uses to how it handles images and events. By overriding these defaults, you can tune Podman for development speed, production stability, or resource-constrained environments. This guide covers the most important engine settings and how to change them.
 
 ---
 
@@ -210,4 +210,4 @@ print('Event Logger:', host.get('eventLogger'))
 
 ## Summary
 
-Podman's engine settings control the core behavior of the container runtime, from which OCI runtime is used to how images are pulled and events are logged. By overriding these defaults in `containers.conf`, you can optimize Podman for your specific use case — whether that means faster rootless containers with crun, controlled image pulling, or file-based event logging. Always verify changes with `podman info` after modifying engine settings.
+Podman's engine settings control the core behavior of the container runtime, from which OCI runtime is used to how images are pulled and events are logged. By overriding these defaults in `containers.conf`, you can optimize Podman for your specific use case - whether that means faster rootless containers with crun, controlled image pulling, or file-based event logging. Always verify changes with `podman info` after modifying engine settings.

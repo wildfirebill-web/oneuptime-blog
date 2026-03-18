@@ -1423,7 +1423,6 @@
 - Blue Ocean
 - Blue-Green
 - Blue-Green Deployment
-- Blue-Green Deployments
 - Blue-green mirroring
 - Blue/Green Deployment
 - BlueGreen
@@ -2716,7 +2715,6 @@
 - Context-Aware Access
 - Context.Context
 - Contextlib
-- Contexts
 - Continuous
 - Continuous Access Evaluation
 - Continuous Aggregates
@@ -3175,7 +3173,6 @@
 - Dashboard Management
 - Dashboard Templates
 - Dashboard Variables
-- Dashboards
 - Dashboards as Code
 - Dask
 - DAST
@@ -4850,7 +4847,6 @@
 - Filemd5 Function
 - Filenames
 - FileResponse
-- Files
 - Fileset Function
 - Filesha1 Function
 - Filesha256 Function
@@ -7121,7 +7117,7 @@
 - LiveView
 - LizardFS
 - LKE
-- Llama.cpp
+- llama.cpp
 - LlamaIndex
 - LLAP
 - LLDP
@@ -7437,7 +7433,6 @@
 - Manifest Generation
 - Manifest List
 - Manifest Validation
-- Manifests
 - Manipulation
 - Manticore Search
 - Manual Instrumentation
@@ -7744,7 +7739,6 @@
 - Mirroring
 - MirrorMaker
 - MirrorMaker 2
-- Mirrors
 - Misconceptions
 - Misconfiguration
 - Mise
@@ -7888,7 +7882,6 @@
 - Mount Options
 - Mount Units
 - Mounting
-- Mounts
 - Move Semantics
 - MOVED
 - Moved Blocks
@@ -8546,7 +8539,7 @@
 - OCaml
 - OCB
 - OCI
-- Oci artifacts
+- OCI Artifacts
 - OCI Images
 - OCI Registry
 - Oci vault
@@ -10216,7 +10209,6 @@
 - Release Management
 - Release Metadata
 - Release Pipeline
-- Release Pipelines
 - Release promotion
 - Release Tracking
 - Releases
@@ -10704,7 +10696,6 @@
 - Rundeck
 - Runlevels
 - Runner
-- Runners
 - Running Totals
 - Runtime
 - Runtime Fields
@@ -10879,7 +10870,6 @@
 - Scrapy
 - Scratch
 - Scratch Image
-- Scratch Images
 - Scrcpy
 - Screen
 - Screen Capture Protection
@@ -11515,7 +11505,6 @@
 - Socket Activation
 - Socket Parameters
 - Socket.IO
-- Sockets
 - SOCKS Proxy
 - SOCKS5
 - Soft Delete
@@ -12183,7 +12172,6 @@
 - System Restore
 - System Roles
 - System Service
-- System Services
 - System Settings
 - System State
 - System Tables
@@ -12199,7 +12187,7 @@
 - System.Text.Json
 - SystemAdmin
 - systemctl
-- Systemd
+- systemd
 - Systemd Logs
 - Systemd Timers
 - Systemd-boot
@@ -12610,7 +12598,6 @@
 - Timeout Pattern
 - Timeout Settings
 - TimeoutError
-- Timeouts
 - Timer Trigger
 - Timers
 - TimescaleDB
@@ -12984,7 +12971,6 @@
 - uidmap
 - UKI
 - Ulimit
-- Ulimits
 - Ultra Disk
 - Umami
 - Umask
@@ -13041,7 +13027,7 @@
 - Unroll
 - Unsafe
 - Unsafe Rust
-- Unshare
+- unshare
 - Unstructured Logs
 - Untyped Constants
 - Unused
@@ -13064,7 +13050,6 @@
 - Upgrade Safety
 - Upgrade Strategy
 - Upgrade Testing
-- Upgrades
 - Uplink
 - Upload
 - Upload Optimization
@@ -13267,7 +13252,7 @@
 - Veth
 - VEX
 - VFIO
-- VFs
+- VFS
 - VG
 - VGPU
 - VHD
@@ -13324,7 +13309,6 @@
 - Virtual IP
 - Virtual Kubelet
 - Virtual Machine
-- Virtual Machines
 - Virtual Mailboxes
 - Virtual Memory
 - Virtual Network

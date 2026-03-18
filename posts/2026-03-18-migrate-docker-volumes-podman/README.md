@@ -94,7 +94,7 @@ Automate the migration of all Docker volumes to Podman.
 
 ```bash
 #!/bin/bash
-# migrate-volumes.sh — Migrate all Docker volumes to Podman
+# migrate-volumes.sh - Migrate all Docker volumes to Podman
 
 BACKUP_DIR="/tmp/volume-backups"
 mkdir -p "$BACKUP_DIR"
@@ -181,7 +181,7 @@ docker run -d \
   --name myapp \
   myimage:latest
 
-# Podman equivalent — exactly the same syntax
+# Podman equivalent - exactly the same syntax
 podman run -d \
   -v /host/data:/container/data \
   --name myapp \
@@ -222,7 +222,7 @@ After migration, verify data integrity.
 
 ```bash
 #!/bin/bash
-# verify-volumes.sh — Compare Docker and Podman volume contents
+# verify-volumes.sh - Compare Docker and Podman volume contents
 
 VOLUMES=$(docker volume ls -q)
 

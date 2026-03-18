@@ -8,7 +8,7 @@ Description: Learn how to disable SELinux enforcement for individual Podman cont
 
 ---
 
-> Disabling SELinux for a container removes mandatory access control — use it as a diagnostic step, not a permanent solution.
+> Disabling SELinux for a container removes mandatory access control - use it as a diagnostic step, not a permanent solution.
 
 SELinux enforces mandatory access control on Podman containers, restricting file access, network operations, and inter-process communication based on security labels. While this is excellent for production security, it can interfere with development workflows, legacy applications, or containers that need broad filesystem access. Podman lets you disable SELinux enforcement per container without affecting the rest of the system.
 
