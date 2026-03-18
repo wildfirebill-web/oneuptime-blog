@@ -243,8 +243,8 @@ podman volume prune
 # Remove only unused networks
 podman network prune
 
-# Remove build cache
-podman buildx prune --all
+# Remove build cache (use podman system prune with --build flag)
+podman system prune --build
 ```
 
 ### Size-aware cleanup

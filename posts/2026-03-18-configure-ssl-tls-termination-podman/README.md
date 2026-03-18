@@ -251,10 +251,13 @@ Enable HTTP/2 for better performance with multiplexed connections:
 
 ```nginx
 server {
-    listen 443 ssl http2;
+    listen 443 ssl;
+    http2 on;
     # ... rest of configuration
 }
 ```
+
+Note: The `http2` parameter on the `listen` directive (e.g., `listen 443 ssl http2`) was deprecated in Nginx 1.25.1. Use the separate `http2 on;` directive instead, which is supported in Nginx 1.25.1 and later.
 
 ## Certificate Renewal Script
 

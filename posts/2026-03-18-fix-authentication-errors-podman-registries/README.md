@@ -179,15 +179,10 @@ podman pull nginx
 Podman may prompt you to select a registry or fail with an error. Configure default search registries in `/etc/containers/registries.conf`:
 
 ```toml
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
-```
-
-Or for newer versions of the configuration format:
-
-```toml
 unqualified-search-registries = ["docker.io", "quay.io", "ghcr.io"]
 ```
+
+Note: Older Podman versions used a v1 format with `[registries.search]` sections. This format is deprecated and cannot be mixed with the current v2 format shown above.
 
 For rootless users, create `~/.config/containers/registries.conf` with the same content.
 

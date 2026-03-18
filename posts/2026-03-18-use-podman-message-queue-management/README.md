@@ -240,7 +240,6 @@ podman run -d \
   --network host \
   -e KAFKA_CLUSTERS_0_NAME=local \
   -e KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=localhost:9092 \
-  -p 8080:8080 \
   docker.io/provectuslabs/kafka-ui:latest
 ```
 

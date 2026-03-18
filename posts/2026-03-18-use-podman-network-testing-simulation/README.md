@@ -302,9 +302,9 @@ class NetworkTestEnvironment:
         cmd = ["podman", "run", "-d",
                "--name", f"{self.name}-{name}",
                "--network", self.network]
+        cmd.append(image)
         if command:
             cmd.extend(command)
-        cmd.append(image)
 
         result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode == 0:
@@ -355,7 +355,7 @@ env.setup()
 
 env.add_server("web", "nginx:latest", 80)
 env.add_server("client", "fedora:latest", 0,
-               ["fedora:latest", "sleep", "infinity"])
+               ["sleep", "infinity"])
 
 time.sleep(3)  # Wait for containers to start
 

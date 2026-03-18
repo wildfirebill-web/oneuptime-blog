@@ -236,7 +236,8 @@ print(f"CuPy version: {cp.__version__}")
 print(f"CUDA version: {cp.cuda.runtime.runtimeGetVersion()}")
 
 device = cp.cuda.Device(0)
-print(f"GPU: {device.attributes['DeviceName']}")
+props = cp.cuda.runtime.getDeviceProperties(device.id)
+print(f"GPU: {props['name'].decode()}")
 print(f"GPU Memory: {device.mem_info[1] / 1024**3:.1f} GB total")
 
 # Matrix multiplication benchmark: CPU vs GPU

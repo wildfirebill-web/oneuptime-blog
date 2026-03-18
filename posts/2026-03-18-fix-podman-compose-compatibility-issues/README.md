@@ -290,6 +290,7 @@ For Podman, use systemd to manage container restarts. Generate a systemd unit fi
 podman-compose up -d
 
 # Generate systemd service for a specific container
+# Note: podman generate systemd is deprecated. Use Quadlet files for new deployments.
 podman generate systemd --name myproject_web_1 --files --new
 
 # Install and enable the service
@@ -321,10 +322,10 @@ services:
     platform: linux/amd64    # Platform may be ignored
 ```
 
-For resource limits, use Podman's native flags instead:
+For resource limits, use Podman's native flags by running containers directly:
 
 ```bash
-podman-compose run --cpus 0.5 --memory 512m app
+podman run --cpus 0.5 --memory 512m myapp:latest
 ```
 
 Or switch to using `docker compose` (v2) with the Podman socket, which has better compatibility with the full compose specification:

@@ -203,15 +203,43 @@ podman rm plex
 
 ## Running as a Systemd Service
 
-```bash
-# Generate the systemd unit file
-podman generate systemd --name plex --new --files
+Use Quadlet, the recommended way to run Podman containers under systemd (note that `podman generate systemd` is deprecated):
 
-# Install and enable it
-sudo mv container-plex.service /etc/systemd/system/
+```bash
+# Create the Quadlet directory
+sudo mkdir -p /etc/containers/systemd
+
+# Create a Quadlet container file
+sudo tee /etc/containers/systemd/plex.container > /dev/null <<'EOF'
+[Unit]
+Description=Plex Media Server Container
+
+[Container]
+ContainerName=plex
+Image=docker.io/linuxserver/plex:latest
+Network=host
+Volume=~/plex/config:/config:Z
+Volume=~/plex/transcode:/transcode:Z
+Volume=~/plex/movies:/data/movies:Z
+Volume=~/plex/tvshows:/data/tvshows:Z
+Volume=~/plex/music:/data/music:Z
+Environment=TZ=America/New_York
+Environment=PUID=1000
+Environment=PGID=1000
+
+[Service]
+Restart=unless-stopped
+
+[Install]
+WantedBy=default.target
+EOF
+
+# Reload systemd and start the service
 sudo systemctl daemon-reload
-sudo systemctl enable container-plex.service
-sudo systemctl start container-plex.service
+sudo systemctl enable --now plex.service
+
+# Verify the service is running
+sudo systemctl status plex.service
 ```
 
 ---

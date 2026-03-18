@@ -133,7 +133,7 @@ ENV PORT=3000
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY . .
 
 USER node
@@ -383,7 +383,7 @@ ENV PORT=3000
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY . .
 
 # Version might change on each build (place near the end)

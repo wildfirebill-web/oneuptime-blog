@@ -241,8 +241,12 @@ tar czf ~/radarr-backup-$(date +%Y%m%d).tar.gz ~/radarr/config/
 
 ## Running as a Systemd Service
 
+> **Note:** `podman generate systemd` is deprecated in Podman 4.4 and later. The recommended approach is to use Quadlet files. The legacy method is shown first, followed by the Quadlet approach.
+
+### Legacy Method (podman generate systemd)
+
 ```bash
-# Generate the systemd unit file
+# Generate the systemd unit file (deprecated)
 podman generate systemd --name radarr --new --files
 
 # Install and enable
@@ -250,6 +254,40 @@ sudo mv container-radarr.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable container-radarr.service
 sudo systemctl start container-radarr.service
+```
+
+### Recommended Method (Quadlet)
+
+Create a file at `~/.config/containers/systemd/radarr.container` (rootless) or `/etc/containers/systemd/radarr.container` (root):
+
+```ini
+[Unit]
+Description=Radarr Container
+
+[Container]
+ContainerName=radarr
+Image=docker.io/linuxserver/radarr:latest
+PublishPort=7878:7878
+Volume=%h/radarr/config:/config:Z
+Volume=%h/media/movies:/movies:Z
+Volume=%h/downloads:/downloads:Z
+Environment=PUID=1000
+Environment=PGID=1000
+Environment=TZ=America/New_York
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Then reload and start:
+
+```bash
+systemctl --user daemon-reload
+systemctl --user start radarr.service
+systemctl --user enable radarr.service
 ```
 
 ---

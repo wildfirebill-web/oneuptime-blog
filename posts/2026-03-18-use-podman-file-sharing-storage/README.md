@@ -93,17 +93,15 @@ Create buckets and upload files using the MinIO client:
 
 ```bash
 podman run --rm --network host \
+  --entrypoint /bin/sh \
   docker.io/minio/mc:latest \
-  alias set local http://localhost:9000 minioadmin minioadmin123
+  -c "mc alias set local http://localhost:9000 minioadmin minioadmin123 && mc mb local/my-bucket"
 
 podman run --rm --network host \
-  docker.io/minio/mc:latest \
-  mb local/my-bucket
-
-podman run --rm --network host \
+  --entrypoint /bin/sh \
   -v ~/uploads:/uploads:ro,Z \
   docker.io/minio/mc:latest \
-  cp /uploads/file.txt local/my-bucket/
+  -c "mc alias set local http://localhost:9000 minioadmin minioadmin123 && mc cp /uploads/file.txt local/my-bucket/"
 ```
 
 ## Using MinIO with Python

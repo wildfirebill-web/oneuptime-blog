@@ -206,8 +206,9 @@ For CI/CD pipelines where local layer caches are not preserved between runs, use
 # Pull the previous build to use as cache source
 podman pull your-registry.com/app:cache || true
 
-# Build using the pulled image as cache
+# Build using the pulled image as cache (--layers is required for --cache-from)
 podman build \
+  --layers \
   --cache-from=your-registry.com/app:cache \
   -t your-registry.com/app:latest \
   -t your-registry.com/app:cache \
@@ -287,19 +288,17 @@ buildah rm $container
 Build performance also depends on system configuration:
 
 ```bash
-# Use tmpfs for build storage (faster I/O)
-podman build --tmpfs /tmp:exec -t your-app:latest .
-
-# Increase available memory for builds
-# In /etc/containers/containers.conf
-[engine]
-# Allow builds to use more memory
-memory = "8g"
-
 # Use SSD-backed storage for the image store
 # In ~/.config/containers/storage.conf
 [storage]
 graphroot = "/fast-ssd/containers/storage"
+```
+
+You can also limit or allocate memory for individual builds using the `--memory` flag:
+
+```bash
+# Allow the build to use up to 8GB of memory
+podman build --memory 8g -t your-app:latest .
 ```
 
 For large builds, ensure your system has enough memory and fast storage:

@@ -222,10 +222,9 @@ Start the Podman API service with TLS:
 ```bash
 podman system service --time=0 \
   tcp://0.0.0.0:8443 \
-  --tls-verify \
-  --tls-ca-file=/etc/podman/tls/ca.pem \
-  --tls-cert-file=/etc/podman/tls/server-cert.pem \
-  --tls-key-file=/etc/podman/tls/server-key.pem
+  --tls-cert=/etc/podman/tls/server-cert.pem \
+  --tls-key=/etc/podman/tls/server-key.pem \
+  --tls-client-ca=/etc/podman/tls/ca.pem
 ```
 
 ### Connecting with Client Certificates

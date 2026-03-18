@@ -36,16 +36,25 @@ podman create \
   /scripts/run-backup.sh
 ```
 
-Generate a systemd unit file:
+Create a Quadlet container unit file (the modern replacement for the deprecated `podman generate systemd`):
 
-```bash
-podman generate systemd --new --name backup-job > ~/.config/systemd/user/backup-job.service
+```ini
+# ~/.config/containers/systemd/backup-job.container
+[Container]
+ContainerName=backup-job
+Image=backup-image:latest
+Volume=/data:/data:ro,Z
+Volume=/backups:/backups:Z
+Exec=/scripts/run-backup.sh
+
+[Service]
+Type=oneshot
 ```
 
 Create a timer file:
 
 ```ini
-# ~/.config/systemd/user/backup-job.timer
+# ~/.config/containers/systemd/backup-job.timer
 [Unit]
 Description=Run backup job daily
 
@@ -139,16 +148,15 @@ echo "[$(date)] Old backups cleaned up"
 Prevent runaway jobs from consuming all system resources:
 
 ```bash
-podman run --rm \
+timeout 3600 podman run --rm \
   --memory 512m \
   --cpus 1.0 \
   --pids-limit 100 \
-  --timeout 3600 \
   -v /data:/data:Z \
   processing-job:latest
 ```
 
-The `--timeout` flag automatically kills the container if it runs longer than the specified number of seconds.
+The `timeout` command (from coreutils) automatically kills the container process if it runs longer than the specified number of seconds.
 
 ## Job Monitoring and Alerting
 
@@ -296,8 +304,8 @@ for job in config['jobs']:
     volumes = ' '.join(f'-v {v}:Z' for v in job.get('volumes', []))
     env_file = f'--env-file {job[\"env_file\"]}' if 'env_file' in job else ''
     memory = f'--memory {job[\"memory\"]}' if 'memory' in job else ''
-    timeout_val = f'--timeout {job[\"timeout\"]}' if 'timeout' in job else ''
-    print(f'{job[\"schedule\"]} /usr/local/bin/run-job.sh {job[\"name\"]} {memory} {timeout_val} {volumes} {env_file} {job[\"image\"]}')
+    timeout_val = f'timeout {job[\"timeout\"]}' if 'timeout' in job else ''
+    print(f'{job[\"schedule\"]} {timeout_val} /usr/local/bin/run-job.sh {job[\"name\"]} {memory} {volumes} {env_file} {job[\"image\"]}')
 ") | crontab -
 ```
 

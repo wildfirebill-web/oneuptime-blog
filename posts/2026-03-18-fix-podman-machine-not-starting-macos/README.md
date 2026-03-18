@@ -56,7 +56,7 @@ podman machine init --log-level=debug 2>&1 | grep -i "downloading\|url"
 curl -C - -L -o fedora-coreos.qcow2 <image-url>
 
 # Initialize with the local image
-podman machine init --image-path ./fedora-coreos.qcow2
+podman machine init --image ./fedora-coreos.qcow2
 ```
 
 ### 2. Hypervisor Framework Permission Denied
@@ -93,7 +93,7 @@ A corrupted VM image is one of the most common causes of startup failure. Sympto
 podman machine list
 
 # If it shows "Currently running" but is not responsive:
-podman machine stop --force
+podman machine stop
 
 # Remove and recreate the machine
 podman machine rm podman-machine-default --force
@@ -174,7 +174,7 @@ Switch to the Apple Hypervisor backend if available:
 
 ```bash
 podman machine rm podman-machine-default --force
-podman machine init --vmtype applehv
+podman machine init --provider applehv
 podman machine start
 ```
 
@@ -228,13 +228,13 @@ Sometimes the machine gets stuck and will not respond to start or stop commands:
 
 ```bash
 # Force stop
-podman machine stop --force
+podman machine stop
 
 # If that does not work, kill the underlying processes
 pkill -f "vfkit\|qemu\|gvproxy"
 
 # Then stop and restart
-podman machine stop --force
+podman machine stop
 podman machine start
 ```
 

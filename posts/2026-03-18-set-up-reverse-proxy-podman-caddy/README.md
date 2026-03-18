@@ -249,13 +249,33 @@ Caddy performs a graceful reload, ensuring existing connections are not interrup
 
 ## Running as a Systemd Service
 
-Create a systemd unit to start Caddy automatically:
+The recommended way to run Podman containers under systemd is using Quadlet files. The older `podman generate systemd` command is deprecated.
+
+Create a Quadlet container file:
 
 ```bash
-podman generate systemd --name caddy --files --new
-mv container-caddy.service ~/.config/systemd/user/
+mkdir -p ~/.config/containers/systemd
+
+cat > ~/.config/containers/systemd/caddy.container << 'EOF'
+[Container]
+ContainerName=caddy
+Image=docker.io/library/caddy:2-alpine
+Network=caddy-net
+PublishPort=80:80
+PublishPort=443:443
+Volume=%h/caddy/Caddyfile:/etc/caddy/Caddyfile:ro,Z
+Volume=%h/caddy/data:/data:Z
+Volume=%h/caddy/config:/config:Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
+
 systemctl --user daemon-reload
-systemctl --user enable container-caddy.service
+systemctl --user enable caddy.service
 loginctl enable-linger $USER
 ```
 

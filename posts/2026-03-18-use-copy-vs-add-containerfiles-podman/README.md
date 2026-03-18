@@ -239,14 +239,15 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-RUN python setup.py sdist
+RUN python setup.py sdist && \
+    tar xzf dist/myapp-1.0.tar.gz -C /tmp/
 
 FROM python:3.12-slim
 
 WORKDIR /app
 
-# ADD to extract the source distribution
-ADD --from=builder /app/dist/myapp-1.0.tar.gz .
+# Use COPY --from for multi-stage builds (ADD does not support --from)
+COPY --from=builder /tmp/myapp-1.0/ ./myapp-1.0/
 
 RUN pip install --no-cache-dir myapp-1.0/ && \
     rm -rf myapp-1.0/
@@ -254,6 +255,8 @@ RUN pip install --no-cache-dir myapp-1.0/ && \
 USER 1001
 CMD ["myapp"]
 ```
+
+Note: ADD does not support the `--from` flag. To transfer files between build stages, always use COPY with `--from`. If you need to extract a tar archive from a previous stage, extract it in that stage first, then use `COPY --from` to bring the extracted files into the final stage.
 
 ## Practical Patterns
 

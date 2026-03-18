@@ -122,13 +122,13 @@ sudo apt install aardvark-dns
 
 ### Container DNS Only Works on Custom Networks
 
-The default `podman` network does not enable DNS by default. You must create a custom network:
+The default `podman` network does not enable DNS by default. You must create a custom network. Custom networks have DNS enabled by default:
 
 ```bash
-podman network create --dns-enabled mynet
+podman network create mynet
 ```
 
-Verify DNS is enabled on the network:
+If you need to explicitly disable DNS on a custom network, use the `--disable-dns` flag. To verify DNS is enabled on the network:
 
 ```bash
 podman network inspect mynet --format '{{.DNSEnabled}}'
@@ -197,7 +197,7 @@ nslookup google.com
 pasta passes through the host's DNS configuration more directly. If DNS fails with pasta, check:
 
 ```bash
-podman run --rm --network pasta myimage cat /etc/resolv.conf
+podman run --rm --network=pasta myimage cat /etc/resolv.conf
 ```
 
 The resolv.conf should contain the host's actual DNS servers. If it contains `127.0.0.53`, apply the systemd-resolved fixes from earlier.
@@ -337,4 +337,4 @@ podman run --network slirp4netns:enable_ipv6=false myimage
 
 ## Conclusion
 
-DNS resolution failures in Podman containers most commonly come from three sources: systemd-resolved using `127.0.0.53` (which is unreachable from container namespaces), missing aardvark-dns for container-to-container resolution, and using the default network instead of a custom network with DNS enabled. Fix systemd-resolved issues by pointing `/etc/resolv.conf` to `/run/systemd/resolve/resolv.conf` or by configuring explicit DNS servers in `containers.conf`. For inter-container DNS, create custom networks with `--dns-enabled` and ensure aardvark-dns is installed. When in doubt, test with `--dns 8.8.8.8` to confirm the issue is DNS configuration and not a broader networking problem.
+DNS resolution failures in Podman containers most commonly come from three sources: systemd-resolved using `127.0.0.53` (which is unreachable from container namespaces), missing aardvark-dns for container-to-container resolution, and using the default network instead of a custom network with DNS enabled. Fix systemd-resolved issues by pointing `/etc/resolv.conf` to `/run/systemd/resolve/resolv.conf` or by configuring explicit DNS servers in `containers.conf`. For inter-container DNS, create custom networks (which have DNS enabled by default) and ensure aardvark-dns is installed. When in doubt, test with `--dns 8.8.8.8` to confirm the issue is DNS configuration and not a broader networking problem.

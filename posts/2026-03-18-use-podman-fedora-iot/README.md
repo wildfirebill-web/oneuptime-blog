@@ -33,7 +33,7 @@ sudo arm-image-installer \
 For x86_64 devices, use the ISO installer or write the raw image directly:
 
 ```bash
-sudo dd if=Fedora-IoT-39-x86_64.raw.xz of=/dev/sdX bs=4M status=progress
+xzcat Fedora-IoT-39-x86_64.raw.xz | sudo dd of=/dev/sdX bs=4M status=progress
 ```
 
 ## Initial System Setup

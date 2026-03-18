@@ -229,14 +229,14 @@ lb.example.com:53 {
 }
 
 # Split-horizon DNS
-internal:53 {
+example.com:53 {
     view internal {
         expr incidr(client_ip(), '10.0.0.0/8')
     }
     file /etc/coredns/zones/internal.db
 }
 
-external:53 {
+example.com:53 {
     file /etc/coredns/zones/external.db
 }
 
@@ -279,21 +279,7 @@ podman run -d \
 
 ## DNS-Based Health Checking
 
-Use CoreDNS to provide health-aware DNS resolution:
-
-```
-# Corefile with health checking
-services.local:53 {
-    health_check {
-        interval 10s
-        timeout 3s
-    }
-    template IN A services.local {
-        answer "{{ .Name }} 60 IN A {{ .Healthcheck }}"
-    }
-    log
-}
-```
+CoreDNS does not include a built-in plugin for application-level health checking of backend services. However, you can implement health-aware DNS resolution by combining etcd-based service discovery with an external health-check script that updates DNS records based on service availability.
 
 A custom health-check script:
 

@@ -71,6 +71,8 @@ podman pull rocm/dev-ubuntu-22.04:6.0
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   rocm/dev-ubuntu-22.04:6.0 \
   bash -c "rocm-smi && echo '---' && rocminfo | head -40"
 ```
@@ -180,6 +182,8 @@ EOF
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -v /tmp/rocm-demo:/workspace:Z \
   rocm/dev-ubuntu-22.04:6.0 \
   bash -c "cd /workspace && hipcc -o vector_add vector_add.hip && ./vector_add"
@@ -268,6 +272,8 @@ EOF
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -v /tmp/rocm-demo:/workspace:Z \
   rocm/dev-ubuntu-22.04:6.0 \
   bash -c "cd /workspace && hipcc -o rocblas_gemm rocblas_gemm.cpp -lrocblas && ./rocblas_gemm"
@@ -339,6 +345,8 @@ EOF
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -v /tmp/rocm-demo:/workspace:Z \
   rocm/pytorch:rocm6.0_ubuntu22.04_py3.10_pytorch_2.1.1 \
   python3 /workspace/train_model.py
@@ -384,6 +392,8 @@ podman build -t my-rocm-dev:latest -f /tmp/rocm-demo/Containerfile /tmp/rocm-dem
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -v /tmp/rocm-demo:/workspace:Z \
   rocm/dev-ubuntu-22.04:6.0 \
   bash -c "cd /workspace && hipcc -o vector_add vector_add.hip && \
@@ -393,6 +403,8 @@ podman run --rm -it \
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   --cap-add SYS_ADMIN \
   -v /tmp/rocm-demo:/workspace:Z \
   rocm/dev-ubuntu-22.04:6.0 \
@@ -407,6 +419,8 @@ podman run --rm -it \
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -e HIP_VISIBLE_DEVICES=0 \
   -e HSA_OVERRIDE_GFX_VERSION=11.0.0 \
   -e GPU_MAX_HEAP_SIZE=100 \
@@ -427,6 +441,8 @@ podman run --rm -it \
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   rocm/dev-ubuntu-22.04:6.0 \
   bash -c "hipconfig --full && echo '---' && hipcc --version"
 
@@ -440,6 +456,8 @@ ls -la /dev/kfd
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
+  --security-opt seccomp=unconfined \
+  --group-add video \
   -e HSA_OVERRIDE_GFX_VERSION=10.3.0 \
   rocm/dev-ubuntu-22.04:6.0 \
   rocminfo

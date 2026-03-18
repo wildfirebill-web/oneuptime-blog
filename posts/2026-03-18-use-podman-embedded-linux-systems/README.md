@@ -214,11 +214,19 @@ Embedded systems typically do not have internet access. Configure Podman to not 
 
 ```bash
 cat > /etc/containers/registries.conf <<EOF
-[registries.search]
-registries = []
+unqualified-search-registries = []
 
-[registries.block]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+[[registry]]
+location = "docker.io"
+blocked = true
+
+[[registry]]
+location = "quay.io"
+blocked = true
+
+[[registry]]
+location = "ghcr.io"
+blocked = true
 EOF
 ```
 

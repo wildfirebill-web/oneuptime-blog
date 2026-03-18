@@ -274,7 +274,7 @@ podman ps --pod
 One benefit of using pods is Kubernetes compatibility:
 
 ```bash
-podman generate kube myapp > myapp-k8s.yaml
+podman kube generate myapp > myapp-k8s.yaml
 ```
 
 This produces a Kubernetes-compatible manifest that you can deploy directly to a cluster.

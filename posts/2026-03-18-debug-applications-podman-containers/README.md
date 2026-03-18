@@ -315,7 +315,7 @@ podman events
 podman events --filter container=my-container
 
 # Show only specific event types
-podman events --filter event=die --filter event=start
+podman events --filter event=died --filter event=start
 
 # Show events from the last hour
 podman events --since 1h

@@ -396,7 +396,7 @@ default_ulimits = [
 
 # Disable features you do not need
 no_hosts = true
-httproxy = false
+http_proxy = false
 
 [engine]
 # Reduce event logging overhead

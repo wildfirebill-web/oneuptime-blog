@@ -158,7 +158,7 @@ FROM node:20-alpine
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY . .
 
 # Main API port

@@ -183,8 +183,7 @@ Configure registries:
 ```bash
 mkdir -p ~/.config/containers
 cat > ~/.config/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+unqualified-search-registries = ['docker.io', 'quay.io', 'ghcr.io']
 EOF
 ```
 

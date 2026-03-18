@@ -74,15 +74,64 @@ podman run -d \
 
 ---
 
-## Step 3: Generate Systemd Service Files
+## Step 3: Create Systemd Service Files
 
-Podman auto-update requires containers to be managed by systemd. Generate a service file for each container:
+Podman auto-update requires containers to be managed by systemd. You can create service files using Quadlet (recommended) or the legacy `podman generate systemd` command.
+
+### Recommended Method (Quadlet)
+
+Create Quadlet files in `~/.config/containers/systemd/` (rootless) or `/etc/containers/systemd/` (root).
+
+For the Nginx container, create `nginx-web.container`:
+
+```ini
+[Unit]
+Description=Nginx Web Container
+
+[Container]
+ContainerName=nginx-web
+Image=docker.io/library/nginx:latest
+PublishPort=8080:80
+Label=io.containers.autoupdate=registry
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+For the Redis container, create `redis-cache.container`:
+
+```ini
+[Unit]
+Description=Redis Cache Container
+
+[Container]
+ContainerName=redis-cache
+Image=docker.io/library/redis:7-alpine
+PublishPort=6379:6379
+Label=io.containers.autoupdate=registry
+AutoUpdate=registry
+Volume=redis-data:/data:Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+### Legacy Method (podman generate systemd)
+
+> **Note:** `podman generate systemd` is deprecated in Podman 4.4 and later. Use Quadlet files instead.
 
 ```bash
-# Generate a systemd service file for the Nginx container
+# Generate a systemd service file for the Nginx container (deprecated)
 podman generate systemd --name nginx-web --new --files
 
-# Generate a systemd service file for the Redis container
+# Generate a systemd service file for the Redis container (deprecated)
 podman generate systemd --name redis-cache --new --files
 ```
 
@@ -273,33 +322,61 @@ podman run -d --name database \
 
 ## Complete Example: Auto-Updating a Media Stack
 
-Here is a practical example of setting up auto-update for a complete media server stack:
+Here is a practical example of setting up auto-update for a complete media server stack using Quadlet files.
+
+Create `~/.config/containers/systemd/jellyfin.container`:
+
+```ini
+[Unit]
+Description=Jellyfin Media Server
+
+[Container]
+ContainerName=jellyfin
+Image=docker.io/jellyfin/jellyfin:latest
+PublishPort=8096:8096
+Volume=%h/jellyfin/config:/config:Z
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Create `~/.config/containers/systemd/sonarr.container`:
+
+```ini
+[Unit]
+Description=Sonarr TV Manager
+
+[Container]
+ContainerName=sonarr
+Image=docker.io/linuxserver/sonarr:latest
+PublishPort=8989:8989
+Volume=%h/sonarr/config:/config:Z
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Then enable everything:
 
 ```bash
-# Run Jellyfin with auto-update
-podman run -d --name jellyfin \
-  --label io.containers.autoupdate=registry \
-  -p 8096:8096 \
-  -v ~/jellyfin/config:/config:Z \
-  docker.io/jellyfin/jellyfin:latest
+# Reload systemd to pick up the Quadlet files
+systemctl --user daemon-reload
 
-# Run Sonarr with auto-update
-podman run -d --name sonarr \
-  --label io.containers.autoupdate=registry \
-  -p 8989:8989 \
-  -v ~/sonarr/config:/config:Z \
-  docker.io/linuxserver/sonarr:latest
+# Enable and start the containers
+systemctl --user enable jellyfin.service sonarr.service
+systemctl --user start jellyfin.service sonarr.service
 
-# Generate systemd files for all labeled containers
-podman generate systemd --name jellyfin --new --files
-podman generate systemd --name sonarr --new --files
-
-# Install and enable everything
-sudo mv container-*.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable container-jellyfin.service container-sonarr.service
-sudo systemctl enable podman-auto-update.timer
-sudo systemctl start podman-auto-update.timer
+# Enable the auto-update timer
+systemctl --user enable podman-auto-update.timer
+systemctl --user start podman-auto-update.timer
 ```
 
 ---

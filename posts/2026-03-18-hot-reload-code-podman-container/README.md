@@ -163,15 +163,16 @@ podman run -it --rm \
   python manage.py runserver 0.0.0.0:8000
 ```
 
-If you experience issues, you can force the stat reloader:
+If you experience issues with the default reloader, you can force the stat reloader by setting an environment variable:
 
 ```bash
 podman run -it --rm \
   -v $(pwd):/app:Z \
   -w /app \
   -p 8000:8000 \
+  -e DJANGO_WATCHMAN_TIMEOUT=0 \
   my-django-image \
-  python manage.py runserver 0.0.0.0:8000 --use-static-handler
+  python manage.py runserver 0.0.0.0:8000
 ```
 
 ### Python with Uvicorn (FastAPI)

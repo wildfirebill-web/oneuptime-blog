@@ -243,10 +243,10 @@ RUN gcc -O2 -o myapp main.c && \
 Podman can squash all layers into a single layer, eliminating space wasted by files that were created and then deleted across layers:
 
 ```bash
-# Build with layer squashing
+# Build with layer squashing (squashes only new layers, keeps base image layers for caching)
 podman build --squash -t your-image:optimized .
 
-# Or squash only new layers (keeps base image layers for caching)
+# Or squash all layers including base image layers into a single layer
 podman build --squash-all -t your-image:optimized .
 ```
 

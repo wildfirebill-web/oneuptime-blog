@@ -116,7 +116,7 @@ podman run -d --pod planka \
   -e DEFAULT_ADMIN_USERNAME=admin \
   -v planka-uploads:/app/public/user-avatars:Z \
   -v planka-attachments:/app/private/attachments:Z \
-  docker.io/ghcr.io/plankanban/planka:latest
+  ghcr.io/plankanban/planka:latest
 ```
 
 ## RSS Reader with FreshRSS
@@ -156,7 +156,7 @@ podman run -d \
   -e ALLOW_SIGNUP=true \
   -e TZ=America/New_York \
   -v mealie-data:/app/data:Z \
-  docker.io/hkotel/mealie:latest
+  ghcr.io/mealie-recipes/mealie:latest
 ```
 
 ## URL Shortener with Shlink

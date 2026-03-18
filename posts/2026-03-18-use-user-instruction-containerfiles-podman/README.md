@@ -84,7 +84,7 @@ RUN addgroup -g 1001 -S appgroup && \
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 COPY --chown=appuser:appgroup . .
 
@@ -196,7 +196,7 @@ WORKDIR /app
 
 # Set ownership during copy
 COPY --chown=app:app package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 COPY --chown=app:app . .
 
@@ -235,7 +235,7 @@ RUN addgroup -g 1001 -S app && adduser -u 1001 -S app -G app
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 COPY --chown=app:app . .
 
@@ -259,7 +259,7 @@ FROM node:20-alpine
 
 WORKDIR /app
 COPY --chown=node:node package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY --chown=node:node . .
 
 USER node
@@ -390,7 +390,7 @@ RUN addgroup -g 1001 -S app && adduser -u 1001 -S app -G app
 
 WORKDIR /app
 COPY --chown=app:app . .
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 USER app
 ENTRYPOINT ["tini", "--"]
@@ -454,7 +454,7 @@ RUN addgroup -g 1001 -S app && \
 # 2. Install dependencies as root
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 # 3. Copy files with correct ownership
 COPY --chown=app:app . .

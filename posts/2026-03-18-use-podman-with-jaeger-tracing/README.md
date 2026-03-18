@@ -49,7 +49,7 @@ Add tracing to a Python Flask application:
 
 ```bash
 pip install opentelemetry-api opentelemetry-sdk \
-    opentelemetry-exporter-jaeger \
+    opentelemetry-exporter-otlp-proto-grpc \
     opentelemetry-instrumentation-flask \
     opentelemetry-instrumentation-requests
 ```
@@ -117,14 +117,14 @@ const { NodeTracerProvider } = require('@opentelemetry/sdk-trace-node');
 const { BatchSpanProcessor } = require('@opentelemetry/sdk-trace-base');
 const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
 const { Resource } = require('@opentelemetry/resources');
-const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
+const { ATTR_SERVICE_NAME } = require('@opentelemetry/semantic-conventions');
 const { HttpInstrumentation } = require('@opentelemetry/instrumentation-http');
 const { ExpressInstrumentation } = require('@opentelemetry/instrumentation-express');
 const { registerInstrumentations } = require('@opentelemetry/instrumentation');
 
 const provider = new NodeTracerProvider({
     resource: new Resource({
-        [SemanticResourceAttributes.SERVICE_NAME]: 'inventory-service',
+        [ATTR_SERVICE_NAME]: 'inventory-service',
     }),
 });
 
@@ -299,13 +299,24 @@ curl -s "http://localhost:16686/api/traces?service=api-gateway&operation=POST%20
 Configure trace sampling to manage volume in production:
 
 ```bash
+# Create a sampling strategies file
+cat > /tmp/sampling-strategies.json << 'EOF'
+{
+  "default_strategy": {
+    "type": "probabilistic",
+    "param": 0.1
+  }
+}
+EOF
+
 podman run -d \
   --name jaeger \
-  -e COLLECTOR_SAMPLING_INITIAL_SAMPLING_PROBABILITY=0.1 \
+  -v /tmp/sampling-strategies.json:/etc/jaeger/sampling-strategies.json:ro,Z \
+  -e SAMPLING_STRATEGIES_FILE=/etc/jaeger/sampling-strategies.json \
   jaegertracing/all-in-one:latest
 ```
 
-For more control, use a remote sampling configuration:
+For more control, use a per-service sampling configuration:
 
 ```json
 {

@@ -301,12 +301,13 @@ from podman import PodmanClient
 with PodmanClient() as client:
     # Remove dangling images only
     pruned = client.images.prune(filters={"dangling": True})
-    reclaimed = sum(img.get("Size", 0) for img in pruned.get("ImagesDeleted", []) or [])
-    print(f"Pruned dangling images, reclaimed {reclaimed / 1024 / 1024:.1f} MB")
+    space = pruned.get("SpaceReclaimed", 0)
+    print(f"Pruned dangling images, reclaimed {space / 1024 / 1024:.1f} MB")
 
     # Remove all unused images (not just dangling)
-    pruned = client.images.prune(filters={"all": True})
-    print(f"Pruned all unused images")
+    pruned = client.images.prune()
+    space = pruned.get("SpaceReclaimed", 0)
+    print(f"Pruned all unused images, reclaimed {space / 1024 / 1024:.1f} MB")
 ```
 
 ## Saving and Loading Images

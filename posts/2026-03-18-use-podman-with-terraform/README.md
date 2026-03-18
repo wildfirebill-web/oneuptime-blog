@@ -354,11 +354,6 @@ resource "docker_container" "app" {
     external = var.port
   }
 
-  dynamic "env" {
-    for_each = var.env
-    content {}
-  }
-
   env = [for k, v in var.env : "${k}=${v}"]
 }
 

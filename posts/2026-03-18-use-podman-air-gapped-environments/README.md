@@ -209,14 +209,22 @@ On each Podman host in the air-gapped network:
 mkdir -p ~/.config/containers
 
 cat > ~/.config/containers/registries.conf <<EOF
-[registries.search]
-registries = ['registry.internal:5000']
+unqualified-search-registries = ['registry.internal:5000']
 
-[registries.insecure]
-registries = []
+[[registry]]
+location = "registry.internal:5000"
 
-[registries.block]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+[[registry]]
+location = "docker.io"
+blocked = true
+
+[[registry]]
+location = "quay.io"
+blocked = true
+
+[[registry]]
+location = "ghcr.io"
+blocked = true
 EOF
 ```
 

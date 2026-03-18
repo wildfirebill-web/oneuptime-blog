@@ -109,9 +109,9 @@ sudo podman container checkpoint web-server --tcp-established
 
 This is essential for checkpointing web servers, database clients, or any container with active network connections.
 
-### Checkpoint without preserving the file locks
+### Checkpoint with file locks
 
-If the container holds file locks that may conflict on restore:
+If the application running in the container uses file locks, you must include them in the checkpoint. Without this flag, checkpointing a container that holds file locks will fail:
 
 ```bash
 sudo podman container checkpoint my-app --file-locks

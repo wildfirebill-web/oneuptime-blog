@@ -327,13 +327,30 @@ Ensure WireGuard starts on boot:
 sudo systemctl enable wg-quick@wg0
 ```
 
-For the containerized WireGuard approach:
+For the containerized WireGuard approach, create a Quadlet unit file:
+
+```ini
+# /etc/containers/systemd/wireguard.container
+[Container]
+ContainerName=wireguard
+Image=docker.io/linuxserver/wireguard
+AddCapability=NET_ADMIN
+AddCapability=SYS_MODULE
+Sysctl=net.ipv4.conf.all.src_valid_mark=1
+Sysctl=net.ipv4.ip_forward=1
+Volume=~/wireguard-container/config:/config:Z
+PublishPort=51820:51820/udp
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target default.target
+```
 
 ```bash
-podman generate systemd --name wireguard --files --new
-sudo mv container-wireguard.service /etc/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl enable container-wireguard.service
+sudo systemctl enable --now wireguard.service
 ```
 
 ## Conclusion

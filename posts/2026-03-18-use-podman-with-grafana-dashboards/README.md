@@ -333,7 +333,7 @@ Restore from backup:
 ```bash
 # Restore the volume
 podman volume create grafana-data
-podman volume import grafana-data < /backups/grafana/20240101/grafana-volume.tar
+podman volume import grafana-data /backups/grafana/20240101/grafana-volume.tar
 
 # Restart Grafana
 podman restart grafana

@@ -186,8 +186,7 @@ podman run --rm \
   fedora:latest \
   bash -c '
     dnf install -y chromium mesa-dri-drivers dejavu-sans-fonts
-    chromium-browser \
-      --enable-features=UseOzonePlatform \
+    chromium \
       --ozone-platform=wayland \
       --no-sandbox
   '

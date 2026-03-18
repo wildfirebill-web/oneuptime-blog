@@ -48,7 +48,9 @@ nvidia-ctk cdi list
 Verify GPU access:
 
 ```bash
-podman run --rm --device nvidia.com/gpu=all \
+podman run --rm \
+  --device nvidia.com/gpu=all \
+  --security-opt=label=disable \
   nvidia/cuda:12.3.1-base-ubuntu22.04 \
   nvidia-smi
 ```
@@ -102,6 +104,7 @@ Here is how to launch a training job with GPU access and persistent storage for 
 ```bash
 podman run --rm \
   --device nvidia.com/gpu=all \
+  --security-opt=label=disable \
   --shm-size=8g \
   --memory 32g \
   --cpus 8.0 \
@@ -251,6 +254,7 @@ CMD ["jupyter", "lab", \
 ```bash
 podman run --rm -d \
   --device nvidia.com/gpu=all \
+  --security-opt=label=disable \
   --shm-size=8g \
   -p 8888:8888 \
   -v $(pwd)/notebooks:/workspace/notebooks:Z \
@@ -365,6 +369,7 @@ for i in "${!EXPERIMENTS[@]}"; do
 
     podman run --rm \
       --device nvidia.com/gpu=all \
+      --security-opt=label=disable \
       --shm-size=8g \
       -v $(pwd)/data:/workspace/data:ro,Z \
       -v $(pwd)/results/$exp_name:/workspace/models:Z \

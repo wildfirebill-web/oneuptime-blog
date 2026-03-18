@@ -102,7 +102,6 @@ ExecStart=/usr/bin/podman run \
     --rm \
     --sdnotify=conmon \
     --replace \
-    --publish 8080:80 \
     docker.io/library/nginx:latest
 ExecStop=/usr/bin/podman stop my-web
 TimeoutStartSec=90
@@ -250,7 +249,7 @@ SocketMode=0660
 
 ## Generating Systemd Units from Containers
 
-Podman can generate systemd unit files from running containers:
+Note: The `podman generate systemd` command is deprecated as of Podman 4.4. Use Quadlet files (shown above) instead for new deployments. The command below still works but will not receive new features:
 
 ```bash
 # Create and configure a container first
@@ -258,13 +257,13 @@ podman create --name my-service \
   -p 8080:80 \
   nginx:latest
 
-# Generate systemd unit files
+# Generate systemd unit files (DEPRECATED - use Quadlet instead)
 podman generate systemd --new --name my-service \
   --files \
   --restart-policy=on-failure
 ```
 
-This creates service files that you can enhance with socket activation.
+This creates service files that you can enhance with socket activation. For new projects, prefer writing Quadlet `.container` files directly.
 
 ## Monitoring Socket-Activated Services
 

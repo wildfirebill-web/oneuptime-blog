@@ -55,7 +55,7 @@ Deploy using Compose:
 version: "3"
 services:
   clair:
-    image: quay.io/projectquackery/clair:latest
+    image: quay.io/projectquay/clair:latest
     restart: always
     ports:
       - "6060:6060"
@@ -356,7 +356,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       clair:
-        image: quay.io/projectquackery/clair:latest
+        image: quay.io/projectquay/clair:latest
         ports:
           - 6060:6060
       clair-db:

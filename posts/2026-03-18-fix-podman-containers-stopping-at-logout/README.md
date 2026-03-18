@@ -58,13 +58,13 @@ This is the simplest fix and works immediately for all containers you start from
 
 ## Fix 2: Generate and Use Systemd Unit Files
 
-For production deployments, you should manage containers with systemd rather than running them manually. Podman can generate systemd unit files automatically:
+For production deployments, you should manage containers with systemd rather than running them manually. Podman can generate systemd unit files automatically. Note that `podman generate systemd` is deprecated in favor of Quadlet (see Fix 3), but it still works:
 
 ```bash
 # First, create and start the container
 podman run -d --name my-web-app -p 8080:80 nginx:latest
 
-# Generate a systemd unit file
+# Generate a systemd unit file (deprecated, prefer Quadlet)
 podman generate systemd --new --name my-web-app --files
 ```
 

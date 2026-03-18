@@ -69,8 +69,10 @@ driver = "overlay"
 
 [storage.options.overlay]
 mount_program = "/usr/bin/fuse-overlayfs"
-mountopt = "nodev,metacopy=on"
+mountopt = "nodev"
 ```
+
+Note: The `metacopy=on` mount option is only supported with the native kernel overlay driver (requires root). It is not compatible with fuse-overlayfs in rootless mode.
 
 Verify the configuration:
 
@@ -90,7 +92,17 @@ driver = "overlay"
 
 [storage.options.overlay]
 mount_program = "/usr/bin/fuse-overlayfs"
-# Enable metacopy for faster file operations
+mountopt = "nodev"
+```
+
+If you are running Podman as root with the native kernel overlay driver (not fuse-overlayfs), you can enable `metacopy=on` for faster file operations:
+
+```ini
+# /etc/containers/storage.conf (root only, native overlay)
+[storage]
+driver = "overlay"
+
+[storage.options.overlay]
 mountopt = "nodev,metacopy=on"
 ```
 
@@ -374,7 +386,7 @@ sudo podman run ...  # Uses kernel overlay, fastest option
 # For rootless, ensure fuse-overlayfs is current
 fuse-overlayfs --version  # Check for latest version
 
-# Use metacopy option for faster operations
+# Use metacopy option for faster operations (root/native overlay only)
 # In storage.conf: mountopt = "nodev,metacopy=on"
 
 # Use tmpfs for ephemeral containers

@@ -103,12 +103,10 @@ Notary server configuration:
 Initialize content trust for a container image repository:
 
 ```bash
-# Set environment variables
-export DOCKER_CONTENT_TRUST=1
-export DOCKER_CONTENT_TRUST_SERVER=https://notary.example.com:4443
-
-# Initialize trust for a repository
-notary init registry.example.com/myapp
+# Initialize trust for a repository using the notary CLI
+# Note: Podman does not support the DOCKER_CONTENT_TRUST environment variable.
+# Use the notary CLI directly and Podman's native policy.json for trust enforcement.
+notary -s https://notary.example.com:4443 init registry.example.com/myapp
 
 # This generates the root, targets, snapshot, and timestamp keys
 # Keep the root key secure and offline
@@ -122,9 +120,9 @@ Sign and push a trusted image:
 # Build the image
 podman build -t registry.example.com/myapp:v1.0.0 .
 
-# Push with content trust enabled
-export DOCKER_CONTENT_TRUST=1
-podman push registry.example.com/myapp:v1.0.0
+# Push and sign the image using Podman's native GPG signing
+podman push --sign-by image-signing@example.com \
+  registry.example.com/myapp:v1.0.0
 
 # Or sign using notary directly
 notary addhash \

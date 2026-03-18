@@ -153,10 +153,10 @@ sudo du -sh /var/lib/containers/storage/overlay-containers/*/userdata/ctr.log
 Limit log size when running containers:
 
 ```bash
-podman run --log-opt max-size=10m --log-opt max-file=3 myimage
+podman run --log-opt max-size=10m myimage
 ```
 
-This limits each log file to 10 MB and keeps at most 3 rotated log files.
+This limits the log file to 10 MB. When the limit is reached, the log file is truncated. Note that Podman does not support the `max-file` option for log rotation (unlike Docker). Only `max-size` is available.
 
 To set default log limits for all containers, edit `~/.config/containers/containers.conf`:
 
@@ -184,10 +184,10 @@ Containers     5      2       1.2GB    800MB (66%)
 Local Volumes  12     4       3.4GB    2.1GB (61%)
 ```
 
-Remove dangling build cache:
+Remove dangling images and build cache:
 
 ```bash
-podman builder prune -f
+podman image prune -f
 ```
 
 ## Temporary Files and /tmp Space

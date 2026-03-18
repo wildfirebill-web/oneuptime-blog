@@ -216,10 +216,10 @@ podman restart wireguard
 
 ## Running as a Systemd Service
 
-To ensure WireGuard starts automatically on boot, generate a systemd unit file:
+To ensure WireGuard starts automatically on boot, generate a systemd unit file. Note that `podman generate systemd` is deprecated in favor of Quadlet. The command still works but will not receive new features. For new deployments, consider using Quadlet `.container` files instead (see the [Podman Quadlet documentation](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html)):
 
 ```bash
-# Generate a systemd service file for the container
+# Generate a systemd service file for the container (deprecated, use Quadlet for new setups)
 podman generate systemd --name wireguard --new --files
 
 # Move the generated file to the systemd directory

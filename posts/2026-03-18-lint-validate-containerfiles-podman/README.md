@@ -249,23 +249,23 @@ chmod +x validate-containerfile.sh
 ./validate-containerfile.sh Containerfile
 ```
 
-## Image Analysis with container-diff
+## Image Analysis with Skopeo and Podman Inspect
 
 After building, analyze the resulting image to understand what it contains:
 
 ```bash
-# Install container-diff
-curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64
-chmod +x container-diff-linux-amd64
-sudo mv container-diff-linux-amd64 /usr/local/bin/container-diff
+# Inspect image metadata
+podman inspect my-app:latest
 
-# Analyze an image's packages
-container-diff analyze my-app:latest --type=pip
-container-diff analyze my-app:latest --type=apt
-container-diff analyze my-app:latest --type=size
+# Compare image layers and sizes
+podman image tree my-app:latest
 
-# Compare two image versions
-container-diff diff my-app:1.0 my-app:2.0 --type=size
+# Use skopeo to inspect remote images without pulling
+skopeo inspect docker://docker.io/library/python:3.11-slim
+
+# Compare two image versions by inspecting their layers
+podman history my-app:1.0
+podman history my-app:2.0
 ```
 
 ## Security Scanning with Trivy

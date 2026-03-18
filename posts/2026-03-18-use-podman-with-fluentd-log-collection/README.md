@@ -87,24 +87,24 @@ Create the Fluentd configuration file:
 
 ## Sending Container Logs to Fluentd
 
-Configure your application containers to send logs to Fluentd using the Fluentd logging driver:
+Podman does not support the `fluentd` logging driver. Podman's supported log drivers are `k8s-file` (default), `journald`, `none`, `passthrough`, and `passthrough-tty`. To forward container logs to Fluentd, pipe them from `podman logs` or mount shared log volumes:
 
 ```bash
-# Run a container with Fluentd logging
-podman run -d \
-  --name myapp \
-  --log-driver fluentd \
-  --log-opt fluentd-address=localhost:24224 \
-  --log-opt tag="app.{{.Name}}" \
-  myapp:latest
-```
-
-Alternatively, forward logs manually from containers:
-
-```bash
-# Pipe container logs to Fluentd
+# Forward logs by piping podman logs to Fluentd
 podman logs -f myapp 2>&1 | \
   fluent-cat -h localhost -p 24224 app.myapp
+```
+
+Alternatively, write application logs to a shared volume that Fluentd monitors:
+
+```bash
+# Run a container that writes logs to a shared volume
+podman run -d \
+  --name myapp \
+  -v ~/fluentd/logs/containers:/var/log/app:Z \
+  myapp:latest
+
+# Fluentd picks up logs from the shared volume via its tail input plugin
 ```
 
 ## Building a Custom Fluentd Image

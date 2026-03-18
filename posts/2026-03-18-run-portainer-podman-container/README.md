@@ -232,8 +232,12 @@ podman rm portainer
 
 ## Running as a Systemd Service
 
+> **Note:** `podman generate systemd` is deprecated in Podman 4.4 and later. The recommended approach is to use Quadlet files. The legacy method is shown first, followed by the Quadlet approach.
+
+### Legacy Method (podman generate systemd)
+
 ```bash
-# Generate the systemd unit file
+# Generate the systemd unit file (deprecated)
 sudo podman generate systemd --name portainer --new --files
 
 # Install and enable
@@ -241,6 +245,37 @@ sudo mv container-portainer.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable container-portainer.service
 sudo systemctl start container-portainer.service
+```
+
+### Recommended Method (Quadlet)
+
+Create a file at `/etc/containers/systemd/portainer.container`:
+
+```ini
+[Unit]
+Description=Portainer CE Container
+
+[Container]
+ContainerName=portainer
+Image=docker.io/portainer/portainer-ce:latest
+PublishPort=8000:8000
+PublishPort=9443:9443
+Volume=/run/podman/podman.sock:/var/run/docker.sock:Z
+Volume=portainer_data:/data:Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Then reload and start:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl start portainer.service
+sudo systemctl enable portainer.service
 ```
 
 ---

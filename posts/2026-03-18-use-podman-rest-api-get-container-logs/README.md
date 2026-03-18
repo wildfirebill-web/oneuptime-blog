@@ -176,10 +176,10 @@ Podman also provides a Docker-compatible API endpoint for logs:
 
 ```bash
 curl --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/containers/my-container/logs?stdout=true&stderr=true&tail=50"
+  "http://localhost/v1.41/containers/my-container/logs?stdout=true&stderr=true&tail=50"
 ```
 
-Note the difference in the URL path: the compat API omits `/libpod/` from the path. This is useful when you are migrating from Docker and want to reuse existing tooling.
+Note the differences in the URL path: the compat API omits `/libpod/` from the path and uses the Docker API version (e.g., `v1.41`) instead of the Podman API version. This is useful when you are migrating from Docker and want to reuse existing tooling.
 
 ## Error Handling
 

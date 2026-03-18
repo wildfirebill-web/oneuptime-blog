@@ -144,10 +144,9 @@ rm -f *.csr *.cnf *.srl
 ```bash
 podman system service --time=0 \
   tcp://0.0.0.0:8443 \
-  --tls-verify \
-  --tls-ca-file=/etc/podman/tls/ca.pem \
-  --tls-cert-file=/etc/podman/tls/server-cert.pem \
-  --tls-key-file=/etc/podman/tls/server-key.pem
+  --tls-cert=/etc/podman/tls/server-cert.pem \
+  --tls-key=/etc/podman/tls/server-key.pem \
+  --tls-client-ca=/etc/podman/tls/ca.pem
 ```
 
 ### Verify Client Certificate Authentication
@@ -404,19 +403,20 @@ access_log /var/log/nginx/podman-audit.log podman_audit;
 Restrict which images can be pulled and run:
 
 ```toml
-# /etc/containers/registries.conf
-[registries.search]
-registries = ['registry.example.com']
+# /etc/containers/registries.conf (v2 format)
+unqualified-search-registries = ['registry.example.com']
 
-[registries.insecure]
-registries = []
+[[registry]]
+prefix = "docker.io"
+blocked = true
 
-[registries.block]
-registries = ['docker.io']
+[[registry]]
+prefix = "registry.example.com"
+insecure = false
 ```
 
-```toml
-# /etc/containers/policy.json
+```json
+// /etc/containers/policy.json
 {
     "default": [{"type": "reject"}],
     "transports": {

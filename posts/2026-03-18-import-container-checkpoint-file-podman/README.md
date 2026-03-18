@@ -109,18 +109,24 @@ This shows the image name and tag that the container was using when it was check
 
 ## Import with Port Mapping Changes
 
-When importing on a different host, you may need different port mappings if the original ports are already in use:
+When importing on a different host, you may need different port mappings if the original ports are already in use. Podman supports the `--publish` (or `-p`) flag with `--import` to override port mappings during restore:
 
 ```bash
 # Import with the original port mapping (from the checkpoint)
 sudo podman container restore --import=/tmp/web-app-checkpoint.tar.gz --name=web-app
 
-# If port 80 is already in use, the restore will fail
-# You may need to stop conflicting services first
-sudo podman ps --filter "publish=80"
+# Import with different port mappings
+sudo podman container restore --import=/tmp/web-app-checkpoint.tar.gz \
+  --name=web-app-alt \
+  --publish 8080:80
+
+# Map to a different host port if the original is in use
+sudo podman container restore --import=/tmp/web-app-checkpoint.tar.gz \
+  --name=web-app-copy \
+  -p 9090:80
 ```
 
-Currently, Podman does not support changing port mappings during import. The container is restored with the same port mappings it had when checkpointed. If those ports are in use, you need to free them first.
+The `--publish` flag replaces the ports that the container originally published with a new set of port forwarding rules. This flag only works when used with `--import`.
 
 ## Import from Remote Storage
 

@@ -249,7 +249,7 @@ def exec_in_container(client, container_name, command, user=None):
     output = response.text
 
     # Step 3: Get exit code
-    response = session.get(f"{base}/exec/{exec_id}/inspect")
+    response = session.get(f"{base}/exec/{exec_id}/json")
     exit_code = response.json().get("ExitCode", -1)
 
     return {"output": output, "exit_code": exit_code}

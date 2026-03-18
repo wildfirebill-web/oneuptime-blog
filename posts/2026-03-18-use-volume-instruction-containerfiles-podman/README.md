@@ -343,7 +343,7 @@ podman volume rm myvolume
 # Remove all unused volumes
 podman volume prune
 
-# Remove all volumes (including those in use)
+# Remove all unused volumes without confirmation prompt
 podman volume prune --force
 
 # Export volume data

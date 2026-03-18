@@ -265,11 +265,11 @@ podman run --rm -it \
   rocm/dev-ubuntu-22.04:6.0 \
   rocm-smi
 
-# Use HIP_VISIBLE_DEVICES to control GPU visibility
+# Use ROCR_VISIBLE_DEVICES to control GPU visibility (recommended on Linux)
 podman run --rm -it \
   --device /dev/kfd:/dev/kfd \
   --device /dev/dri:/dev/dri \
-  -e HIP_VISIBLE_DEVICES=0 \
+  -e ROCR_VISIBLE_DEVICES=0 \
   rocm/pytorch:rocm6.0_ubuntu22.04_py3.10_pytorch_2.1.1 \
   python3 -c "import torch; print(f'Visible GPUs: {torch.cuda.device_count()}')"
 ```

@@ -208,6 +208,8 @@ The Cockpit interface shows a dropdown to switch between "User containers" and "
 
 ## Integrating with Systemd Services
 
+> **Note:** The `podman generate systemd` command is deprecated since Podman 4.7. For new deployments, consider using Quadlet files placed in `~/.config/containers/systemd/` (rootless) or `/etc/containers/systemd/` (rootful) instead. The example below still works but may be removed in a future Podman release.
+
 Cockpit's system services view can show Podman containers managed by systemd:
 
 ```bash

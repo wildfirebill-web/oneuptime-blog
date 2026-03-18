@@ -313,13 +313,32 @@ Traefik picks up the change automatically without requiring a restart.
 
 ## Running Traefik as a Systemd Service
 
-Generate a systemd unit for the Traefik container:
+The recommended way to run Podman containers under systemd is using Quadlet files. The older `podman generate systemd` command is deprecated.
+
+Create a Quadlet container file:
 
 ```bash
-podman generate systemd --name traefik --files --new
-mv container-traefik.service ~/.config/systemd/user/
+mkdir -p ~/.config/containers/systemd
+
+cat > ~/.config/containers/systemd/traefik.container << 'EOF'
+[Container]
+ContainerName=traefik
+Image=docker.io/library/traefik:v3.0
+Network=traefik-net
+PublishPort=80:80
+PublishPort=8080:8080
+Volume=%h/traefik/config/traefik.yml:/etc/traefik/traefik.yml:ro,Z
+Volume=%h/traefik/dynamic:/etc/traefik/dynamic:ro,Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
+
 systemctl --user daemon-reload
-systemctl --user enable container-traefik.service
+systemctl --user enable traefik.service
 loginctl enable-linger $USER
 ```
 

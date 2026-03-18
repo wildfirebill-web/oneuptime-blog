@@ -35,19 +35,25 @@ curl -s --unix-socket /run/podman/podman.sock \
 
 The Podman REST API provides container statistics through two main endpoints:
 
-### Single Container Stats
-
-```
-GET /v4.0.0/libpod/containers/{name}/stats
-```
-
-### All Containers Stats
+### All Containers Stats (Libpod)
 
 ```
 GET /v4.0.0/libpod/containers/stats
 ```
 
-Both endpoints support the following query parameters:
+This endpoint supports the following query parameters:
+
+- **stream** (boolean): Continuously stream stats. Defaults to true.
+- **containers** (array): Names or IDs of containers to report on.
+- **interval** (integer): Time in seconds between stats reports. Defaults to 5.
+
+### Single Container Stats (Compat)
+
+```
+GET /v4.0.0/containers/{name}/stats
+```
+
+The Docker-compatible endpoint supports:
 
 - **stream** (boolean): Continuously stream stats. Defaults to true.
 - **one-shot** (boolean): Return a single stats reading and disconnect. Only works with `stream=false`.
@@ -58,7 +64,7 @@ To get a one-time snapshot of a container's resource usage:
 
 ```bash
 curl -s --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/libpod/containers/my-container/stats?stream=false" | jq .
+  "http://localhost/v4.0.0/libpod/containers/stats?stream=false&containers=my-container" | jq .
 ```
 
 The response contains detailed resource metrics:
@@ -104,7 +110,7 @@ To continuously monitor container resource usage, use the streaming mode:
 ```bash
 curl -s --unix-socket /run/podman/podman.sock \
   --no-buffer \
-  "http://localhost/v4.0.0/libpod/containers/my-container/stats?stream=true" | \
+  "http://localhost/v4.0.0/libpod/containers/stats?stream=true&containers=my-container" | \
   while read -r line; do
     echo "$line" | jq '{cpu: .CPU, mem_mb: (.MemUsage / 1048576), pids: .PIDs}'
   done
@@ -187,7 +193,7 @@ When using the Docker-compatible stats endpoint, you may need to calculate CPU p
 
 ```bash
 curl -s --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/containers/my-container/stats?stream=false&one-shot=true" | \
+  "http://localhost/v1.41/containers/my-container/stats?stream=false&one-shot=true" | \
   jq '{
     cpu_percent: ((.cpu_stats.cpu_usage.total_usage - .precpu_stats.cpu_usage.total_usage) /
                   (.cpu_stats.system_cpu_usage - .precpu_stats.system_cpu_usage) *
@@ -215,7 +221,7 @@ PREV_OUT=0
 
 while true; do
   STATS=$(curl -s --unix-socket "$SOCKET" \
-    "http://localhost/v4.0.0/libpod/containers/$CONTAINER/stats?stream=false")
+    "http://localhost/v4.0.0/libpod/containers/stats?stream=false&containers=$CONTAINER")
 
   NET_IN=$(echo "$STATS" | jq '.NetInput')
   NET_OUT=$(echo "$STATS" | jq '.NetOutput')
@@ -238,7 +244,7 @@ The Docker-compatible endpoint provides a different response format that matches
 
 ```bash
 curl -s --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/containers/my-container/stats?stream=false&one-shot=true" | jq .
+  "http://localhost/v1.41/containers/my-container/stats?stream=false&one-shot=true" | jq .
 ```
 
 This format includes more granular data such as per-CPU usage, detailed memory breakdown (cache, RSS, swap), and per-interface network statistics. Use this endpoint if you need compatibility with existing Docker monitoring tools.
@@ -250,12 +256,12 @@ Common error scenarios when fetching stats:
 ```bash
 # Container not found
 curl -s -o /dev/null -w "%{http_code}" --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/libpod/containers/nonexistent/stats?stream=false"
+  "http://localhost/v4.0.0/libpod/containers/stats?stream=false&containers=nonexistent"
 # Returns: 404
 
 # Container not running
 curl -s -o /dev/null -w "%{http_code}" --unix-socket /run/podman/podman.sock \
-  "http://localhost/v4.0.0/libpod/containers/stopped-container/stats?stream=false"
+  "http://localhost/v4.0.0/libpod/containers/stats?stream=false&containers=stopped-container"
 # Returns: 409 (Conflict - container is not running)
 ```
 
@@ -263,7 +269,7 @@ Always verify the container state before attempting to fetch stats in automated 
 
 ## Performance Tips
 
-- Use `stream=false` with `one-shot=true` when you only need a single reading.
+- Use `stream=false` when you only need a single reading. On the Docker-compatible endpoint, you can additionally pass `one-shot=true`.
 - When monitoring multiple containers, prefer the all-containers endpoint over individual requests.
 - Implement client-side rate limiting to avoid excessive API calls.
 - Cache stats data when multiple consumers need the same metrics.

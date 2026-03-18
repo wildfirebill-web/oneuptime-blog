@@ -218,18 +218,30 @@ This gracefully reloads the configuration without dropping existing connections.
 
 ## Running as a Systemd Service
 
-To ensure the reverse proxy starts automatically on boot, generate a systemd unit file:
+The recommended way to run Podman containers under systemd is using Quadlet files. The older `podman generate systemd` command is deprecated.
+
+Create a Quadlet container file:
 
 ```bash
-podman generate systemd --name nginx-proxy --files --new
-mv container-nginx-proxy.service ~/.config/systemd/user/
+mkdir -p ~/.config/containers/systemd
+
+cat > ~/.config/containers/systemd/nginx-proxy.container << 'EOF'
+[Container]
+ContainerName=nginx-proxy
+Image=docker.io/library/nginx:alpine
+Network=proxy-net
+PublishPort=80:80
+Volume=%h/nginx-proxy/conf.d:/etc/nginx/conf.d:ro,Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
+
 systemctl --user daemon-reload
-systemctl --user enable container-nginx-proxy.service
-```
-
-Enable lingering so the service runs even when you are not logged in:
-
-```bash
+systemctl --user enable nginx-proxy.service
 loginctl enable-linger $USER
 ```
 

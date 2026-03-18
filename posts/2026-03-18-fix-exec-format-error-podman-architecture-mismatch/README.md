@@ -19,7 +19,7 @@ The "exec format error" is a Linux kernel error that occurs when you try to exec
 When you see this error, it looks like:
 
 ```
-Error: crun: executable file '/usr/bin/python3' exec format error: OCI permission denied
+Error: crun: executable file '/usr/bin/python3' exec format error: OCI runtime error
 ```
 
 Or:

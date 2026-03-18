@@ -117,11 +117,12 @@ sudo podman container checkpoint my-app \
 Compress the checkpoint and use fast transfer methods:
 
 ```bash
-# Direct stream: checkpoint, compress, and transfer in one pipeline
+# Checkpoint and transfer in quick succession
 sudo podman container checkpoint my-app \
     --tcp-established \
-    --export /dev/stdout | \
-    ssh user@dest-host 'cat > /tmp/my-app-migration.tar.gz'
+    --export /tmp/my-app-migration.tar.gz
+
+scp /tmp/my-app-migration.tar.gz user@dest-host:/tmp/
 ```
 
 For very large containers, consider using `rsync` with compression or a dedicated high-speed transfer tool.

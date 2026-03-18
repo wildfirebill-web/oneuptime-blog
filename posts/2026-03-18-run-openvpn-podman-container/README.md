@@ -212,22 +212,42 @@ podman restart openvpn
 
 ## Running as a Systemd Service
 
-Make OpenVPN start automatically on boot:
+Make OpenVPN start automatically on boot using Quadlet, the recommended way to run Podman containers under systemd (note that `podman generate systemd` is deprecated):
 
 ```bash
-# Generate a systemd unit file for the container
-podman generate systemd --name openvpn --new --files
+# Create the Quadlet directory
+sudo mkdir -p /etc/containers/systemd
 
-# Install the unit file
-sudo mv container-openvpn.service /etc/systemd/system/
+# Create a Quadlet container file
+sudo tee /etc/containers/systemd/openvpn.container > /dev/null <<'EOF'
+[Unit]
+Description=OpenVPN Server Container
 
-# Enable and start the service
+[Container]
+ContainerName=openvpn
+Image=docker.io/kylemanna/openvpn:latest
+AddCapability=NET_ADMIN
+Sysctl=net.ipv6.conf.all.disable_ipv6=0
+Sysctl=net.ipv6.conf.default.forwarding=1
+Sysctl=net.ipv6.conf.all.forwarding=1
+Volume=openvpn-data:/etc/openvpn:Z
+PublishPort=1194:1194/udp
+
+[Service]
+Restart=unless-stopped
+
+[Install]
+WantedBy=default.target
+EOF
+
+# Reload systemd to pick up the new Quadlet file
 sudo systemctl daemon-reload
-sudo systemctl enable container-openvpn.service
-sudo systemctl start container-openvpn.service
+
+# Start and enable the service
+sudo systemctl enable --now openvpn.service
 
 # Verify the service is running
-sudo systemctl status container-openvpn.service
+sudo systemctl status openvpn.service
 ```
 
 ---

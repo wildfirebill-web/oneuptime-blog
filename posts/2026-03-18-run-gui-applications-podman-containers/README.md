@@ -352,7 +352,7 @@ Create `.desktop` files to launch containerized apps like native applications:
 [Desktop Entry]
 Name=Firefox (Container)
 Comment=Firefox running in a Podman container
-Exec=podman run --rm -e DISPLAY=%DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --device /dev/dri -v firefox-profile:/home/firefox/.mozilla:Z --shm-size=2g firefox-container
+Exec=bash -c 'podman run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --device /dev/dri -v firefox-profile:/home/firefox/.mozilla:Z --shm-size=2g firefox-container'
 Icon=firefox
 Type=Application
 Categories=Network;WebBrowser;

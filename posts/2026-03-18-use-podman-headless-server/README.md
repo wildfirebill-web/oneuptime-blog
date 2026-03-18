@@ -74,8 +74,7 @@ Configure registries for the service account:
 ```bash
 mkdir -p ~/.config/containers
 cat > ~/.config/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
+unqualified-search-registries = ['docker.io', 'quay.io', 'ghcr.io']
 EOF
 ```
 
@@ -110,6 +109,8 @@ ssh podman-svc@your-server.example.com "podman ps --format '{{.Names}} {{.Status
 ---
 
 ## Generating Systemd Units for Auto-Start
+
+**Note:** `podman generate systemd` is deprecated. Quadlet (shown in the next section) is the recommended approach. The command below still works but will not receive new features.
 
 One of Podman's most powerful features for headless servers is the ability to generate systemd unit files from running containers:
 

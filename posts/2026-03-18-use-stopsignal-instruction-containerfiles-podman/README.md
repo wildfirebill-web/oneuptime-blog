@@ -41,7 +41,7 @@ Understanding the full stop sequence is important. When you run `podman stop`, t
 You can customize the grace period:
 
 ```bash
-podman stop --timeout 30 my-container
+podman stop --time 30 my-container
 ```
 
 The STOPSIGNAL instruction controls step 1 of this sequence.
@@ -257,7 +257,7 @@ podman logs --tail 20 test-app
 
 # Test with a short timeout to verify behavior under pressure
 podman run -d --name test-app-2 my-app
-podman stop --timeout 2 test-app-2
+podman stop --time 2 test-app-2
 podman inspect test-app-2 --format '{{.State.ExitCode}}'
 ```
 

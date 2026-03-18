@@ -43,6 +43,10 @@ The lifecycle of ONBUILD involves two phases:
 
 Let us see this in action.
 
+## Important: Use Docker Format with ONBUILD
+
+Podman defaults to the OCI image format, which does not support the ONBUILD instruction. If you build with the default format, ONBUILD triggers will be silently ignored. You must use the Docker format by passing `--format docker` to `podman build`, or by setting the environment variable `BUILDAH_FORMAT=docker`.
+
 ## Building a Reusable Node.js Base Image
 
 Create a base image for Node.js applications:
@@ -55,7 +59,7 @@ WORKDIR /app
 
 # These run when child images are built
 ONBUILD COPY package*.json ./
-ONBUILD RUN npm ci --only=production
+ONBUILD RUN npm ci --omit=dev
 ONBUILD COPY . .
 
 EXPOSE 3000
@@ -65,7 +69,7 @@ CMD ["node", "server.js"]
 Build the base image:
 
 ```bash
-podman build -t my-node-base -f base/Containerfile .
+podman build --format docker -t my-node-base -f base/Containerfile .
 ```
 
 Now any Node.js project can use this base with a minimal Containerfile:
@@ -79,7 +83,7 @@ That is it. When this child image is built, Podman automatically executes the ON
 
 ```bash
 cd my-node-app
-podman build -t my-app -f Containerfile .
+podman build --format docker -t my-app -f Containerfile .
 ```
 
 Behind the scenes, the effective build is equivalent to:
@@ -88,7 +92,7 @@ Behind the scenes, the effective build is equivalent to:
 FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY . .
 EXPOSE 3000
 CMD ["node", "server.js"]
@@ -107,7 +111,7 @@ This will output:
 ```json
 [
   "COPY package*.json ./",
-  "RUN npm ci --only=production",
+  "RUN npm ci --omit=dev",
   "COPY . ."
 ]
 ```
@@ -126,7 +130,7 @@ RUN pip install --no-cache-dir poetry && \
 WORKDIR /app
 
 ONBUILD COPY pyproject.toml poetry.lock* ./
-ONBUILD RUN poetry install --no-dev --no-interaction --no-ansi
+ONBUILD RUN poetry install --without dev --no-interaction --no-ansi
 ONBUILD COPY . .
 
 CMD ["python", "main.py"]
@@ -177,7 +181,7 @@ WORKDIR /app
 # Ensure child images have required files
 ONBUILD COPY package.json ./
 ONBUILD RUN test -f package.json || (echo "package.json is required" && exit 1)
-ONBUILD RUN npm ci --only=production
+ONBUILD RUN npm ci --omit=dev
 ONBUILD COPY . .
 
 # Validate the application structure

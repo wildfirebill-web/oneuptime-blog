@@ -127,7 +127,6 @@ podman run -d --name postgres \
   -e POSTGRES_USER=poweruser \
   -e POSTGRES_PASSWORD=secure_password \
   -e POSTGRES_DB=enterprise \
-  -e POSTGRES_SHARED_BUFFERS=2GB \
   -v pgdata:/var/lib/postgresql/data:Z \
   --memory 8g \
   --cpus 4 \

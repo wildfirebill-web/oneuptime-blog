@@ -18,7 +18,7 @@ This guide walks through setting up Podman on FreeBSD and running OCI containers
 
 ## Prerequisites
 
-Podman on FreeBSD requires FreeBSD 13.0 or later. The container support uses a combination of FreeBSD jails, ZFS, and the Linux compatibility layer. Ensure your system is up to date:
+Podman on FreeBSD requires FreeBSD 13.1 or later (FreeBSD 14.0 or later is recommended for the best compatibility). The container support uses a combination of FreeBSD jails, ZFS, and the Linux compatibility layer. Ensure your system is up to date:
 
 ```bash
 sudo freebsd-update fetch

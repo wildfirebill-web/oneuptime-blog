@@ -220,10 +220,9 @@ Note: Running the Podman API over TCP without TLS is insecure. For production us
 
 ```bash
 podman system service --time=0 \
-  --tls-verify \
   --tls-key=/path/to/server-key.pem \
   --tls-cert=/path/to/server-cert.pem \
-  --tls-cacert=/path/to/ca.pem \
+  --tls-client-ca=/path/to/ca.pem \
   tcp:0.0.0.0:8080
 ```
 

@@ -232,7 +232,7 @@ check_service() {
 }
 
 check_service "Jellyfin" "http://localhost:8096/health"
-check_service "Navidrome" "http://localhost:4533/ping"
+check_service "Navidrome" "http://localhost:4533/health"
 check_service "Audiobookshelf" "http://localhost:13378/ping"
 check_service "Radarr" "http://localhost:7878/ping"
 check_service "Sonarr" "http://localhost:8989/ping"

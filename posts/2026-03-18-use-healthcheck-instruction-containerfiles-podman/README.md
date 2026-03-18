@@ -273,13 +273,32 @@ The `depends_on` with `condition: service_healthy` ensures the API container onl
 
 ## Health Checks with Systemd Integration
 
-Podman integrates with systemd, and health checks work well in this context. You can generate systemd units and configure restart policies based on health:
+Podman integrates with systemd through Quadlet, and health checks work well in this context. Create a Quadlet container file to manage your service:
 
-```bash
-podman generate systemd --new --name web > web-container.service
+```ini
+# ~/.config/containers/systemd/web.container
+[Container]
+Image=my-web-app
+ContainerName=web
+HealthCmd=curl -f http://localhost:3000/health || exit 1
+HealthInterval=15s
+HealthRetries=3
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
 ```
 
-You can also configure Podman to restart unhealthy containers:
+Then reload systemd and start the service:
+
+```bash
+systemctl --user daemon-reload
+systemctl --user start web
+```
+
+You can also set health check options directly when running a container:
 
 ```bash
 podman run -d --name web \

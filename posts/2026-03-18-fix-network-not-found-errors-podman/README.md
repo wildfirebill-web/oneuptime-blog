@@ -63,10 +63,14 @@ Create a network with specific options:
 podman network create --subnet 10.89.0.0/24 --gateway 10.89.0.1 mynetwork
 ```
 
-To create a network that allows containers to communicate by name (DNS resolution):
+DNS resolution is enabled by default for custom networks created with Netavark. If you need to explicitly disable it, use the `--disable-dns` flag:
 
 ```bash
-podman network create --dns-enabled mynetwork
+# DNS is enabled by default, no flag needed
+podman network create mynetwork
+
+# To disable DNS resolution
+podman network create --disable-dns mynetwork
 ```
 
 ## Rootful vs Rootless Network Stores

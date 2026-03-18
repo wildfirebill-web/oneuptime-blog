@@ -365,23 +365,59 @@ SCRIPT
 chmod +x ~/lb-monitor.sh
 ```
 
-## Running as Systemd Services
+## Running as Systemd Services with Quadlet
 
-Generate systemd units for each component:
+Podman Quadlet is the recommended way to run containers under systemd. Create Quadlet unit files in `~/.config/containers/systemd/` for rootless setups:
 
 ```bash
-podman generate systemd --name nginx-lb --files --new
-mv container-nginx-lb.service ~/.config/systemd/user/
+mkdir -p ~/.config/containers/systemd/
+```
 
+Create a Quadlet file for the load balancer:
+
+```ini
+# ~/.config/containers/systemd/nginx-lb.container
+[Container]
+ContainerName=nginx-lb
+Image=docker.io/library/nginx:alpine
+Network=lb-net
+PublishPort=80:80
+Volume=%h/nginx-lb/conf.d:/etc/nginx/conf.d:ro,Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Create Quadlet files for each backend:
+
+```bash
 for i in 1 2 3; do
-  podman generate systemd --name backend-$i --files --new
-  mv container-backend-$i.service ~/.config/systemd/user/
+cat > ~/.config/containers/systemd/backend-$i.container << EOF
+[Container]
+ContainerName=backend-$i
+Image=docker.io/library/nginx:alpine
+Network=lb-net
+Hostname=backend-$i
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+EOF
 done
+```
 
+Reload systemd and enable the services:
+
+```bash
 systemctl --user daemon-reload
-systemctl --user enable container-nginx-lb.service
+systemctl --user start nginx-lb.service
 for i in 1 2 3; do
-  systemctl --user enable container-backend-$i.service
+  systemctl --user start backend-$i.service
 done
 loginctl enable-linger $USER
 ```

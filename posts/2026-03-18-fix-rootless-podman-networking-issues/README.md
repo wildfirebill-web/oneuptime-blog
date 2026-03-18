@@ -31,7 +31,7 @@ A newer, faster alternative to slirp4netns that uses a different approach to use
 Check which backend you are using:
 
 ```bash
-podman info --format '{{.Host.NetworkBackendInfo.DNS.Package}}'
+podman info --format '{{.Host.NetworkBackend}}'
 ```
 
 Or check directly:

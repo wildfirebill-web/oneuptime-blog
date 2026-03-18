@@ -151,8 +151,11 @@ podman run --memory=512m --memory-swap=1536m your-image
 
 Control swap priority with memory swappiness:
 
+> **Note:** The `--memory-swappiness` flag is only supported on cgroups v1 rootful systems. It is not available on cgroups v2, which is the default on most modern Linux distributions (Fedora 31+, Ubuntu 21.10+, RHEL 9+). Check your cgroup version with `stat -fc %T /sys/fs/cgroup/`.
+
 ```bash
 # Reduce swap tendency (0-100, lower = less swapping)
+# Only works on cgroups v1 rootful systems
 podman run --memory=512m \
   --memory-swappiness=10 \
   your-image
@@ -212,6 +215,9 @@ Configure how containers behave when they hit memory limits:
 
 ```bash
 # Disable OOM killer (container pauses instead of dying)
+# Note: --oom-kill-disable is NOT supported on cgroups v2 systems.
+# On cgroups v2 (default on modern distros), this flag will produce an error.
+# It only works on cgroups v1 rootful systems.
 podman run --memory=512m --oom-kill-disable your-image
 
 # Set OOM score adjustment (-1000 to 1000, lower = less likely to be killed)
@@ -221,8 +227,10 @@ podman run --memory=512m --oom-score-adj=-500 your-image
 Monitor for OOM events:
 
 ```bash
-# Watch for OOM events
-podman events --filter event=oom
+# Watch for container died events (includes OOM kills)
+# Note: Podman does not have a dedicated "oom" event type.
+# Use the "died" event and check exit codes or OOMKilled status.
+podman events --filter event=died
 
 # Check if a container was OOM-killed
 podman inspect --format '{{.State.OOMKilled}}' my-container
@@ -240,7 +248,7 @@ Create an OOM monitoring script:
 # oom-monitor.sh - Alert on container OOM events
 echo "Monitoring for OOM events..."
 
-podman events --filter event=oom --format json | while read event; do
+podman events --filter event=died --format json | while read event; do
   CONTAINER=$(echo "$event" | jq -r '.Actor.Attributes.name')
   TIME=$(echo "$event" | jq -r '.time')
 

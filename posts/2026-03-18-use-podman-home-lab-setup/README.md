@@ -220,10 +220,10 @@ podman run -d \
 
 ## WireGuard VPN
 
-Access your home lab remotely through a WireGuard VPN container:
+Access your home lab remotely through a WireGuard VPN container. Note that WireGuard requires loading kernel modules, so you must load the `wireguard` module on the host first (`sudo modprobe wireguard`) and run the container as root:
 
 ```bash
-podman run -d \
+sudo podman run -d \
   --name wireguard \
   --cap-add=NET_ADMIN \
   --cap-add=SYS_MODULE \

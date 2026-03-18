@@ -177,7 +177,7 @@ BROKER = os.getenv("MQTT_BROKER", "localhost")
 TOPIC = os.getenv("MQTT_TOPIC", "sensors/temperature")
 DEVICE_ID = os.getenv("DEVICE_ID", "iot-001")
 
-client = mqtt.Client(client_id=DEVICE_ID)
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=DEVICE_ID)
 client.connect(BROKER, 1883, 60)
 client.loop_start()
 

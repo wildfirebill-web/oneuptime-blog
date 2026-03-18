@@ -89,12 +89,12 @@ curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
 Send a specific signal to a container process.
 
 ```bash
-# Send SIGTERM (default)
+# Send SIGKILL (default)
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   http://localhost/v4.0.0/libpod/containers/my-nginx/kill
 
-# Send SIGKILL
+# Send SIGKILL explicitly
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   "http://localhost/v4.0.0/libpod/containers/my-nginx/kill?signal=SIGKILL"
@@ -143,7 +143,7 @@ curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   "http://localhost/v4.0.0/libpod/containers/my-task/wait?condition=stopped"
 ```
 
-Valid conditions include `not-running`, `next-exit`, `removed`, and `stopped`.
+Valid conditions include `configured`, `created`, `exited`, `healthy`, `initialized`, `paused`, `removing`, `running`, `stopped`, `stopping`, and `unhealthy`.
 
 ## Removing a Container
 

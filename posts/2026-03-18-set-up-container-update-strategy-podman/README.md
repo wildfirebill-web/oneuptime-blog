@@ -28,7 +28,7 @@ podman auto-update --dry-run
 podman auto-update
 ```
 
-For auto-update to work, containers must be labeled:
+For auto-update to work, containers must meet two requirements: they must be labeled with the auto-update policy, and they must run inside a systemd unit (created via Quadlet or `podman generate systemd`):
 
 ```bash
 podman run -d \
@@ -36,6 +36,8 @@ podman run -d \
   --label io.containers.autoupdate=registry \
   docker.io/library/nginx:stable
 ```
+
+**Important:** The label alone is not sufficient. The container must be managed by a systemd service for `podman auto-update` to function. See the Quadlet section below for the recommended approach.
 
 ## Auto-Update Policies
 

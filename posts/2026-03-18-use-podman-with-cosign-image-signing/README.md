@@ -230,8 +230,6 @@ jobs:
           podman push registry.example.com/myapp:${{ github.ref_name }}
 
       - name: Sign image (keyless)
-        env:
-          COSIGN_EXPERIMENTAL: "1"
         run: |
           cosign sign registry.example.com/myapp:${{ github.ref_name }}
 

@@ -123,7 +123,7 @@ podman load -i my-image-backup.tar
 
 ### 5. Rootless Mode and User Namespace Issues
 
-Rootless Podman relies on user namespaces, and the overlay driver in rootless mode requires either the `fuse-overlayfs` utility or kernel 5.11 or later with native rootless overlay support.
+Rootless Podman relies on user namespaces, and the overlay driver in rootless mode requires either the `fuse-overlayfs` utility or kernel 5.13 or later with native rootless overlay support. While kernel 5.11 introduced unprivileged overlay mounting, a bug with SELinux was not fixed until kernel 5.13.
 
 Check your kernel version:
 
@@ -131,7 +131,7 @@ Check your kernel version:
 uname -r
 ```
 
-If your kernel is older than 5.11, install `fuse-overlayfs`:
+If your kernel is older than 5.13, install `fuse-overlayfs`:
 
 ```bash
 # Fedora / RHEL / CentOS

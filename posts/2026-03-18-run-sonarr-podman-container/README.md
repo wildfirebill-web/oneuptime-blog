@@ -211,8 +211,12 @@ tar czf ~/sonarr-backup-$(date +%Y%m%d).tar.gz ~/sonarr/config/
 
 ## Running as a Systemd Service
 
+> **Note:** `podman generate systemd` is deprecated in Podman 4.4 and later. The recommended approach is to use Quadlet files. The legacy method is shown first, followed by the Quadlet approach.
+
+### Legacy Method (podman generate systemd)
+
 ```bash
-# Generate the systemd unit file
+# Generate the systemd unit file (deprecated)
 podman generate systemd --name sonarr --new --files
 
 # Install and enable the service
@@ -220,6 +224,40 @@ sudo mv container-sonarr.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable container-sonarr.service
 sudo systemctl start container-sonarr.service
+```
+
+### Recommended Method (Quadlet)
+
+Create a file at `~/.config/containers/systemd/sonarr.container` (rootless) or `/etc/containers/systemd/sonarr.container` (root):
+
+```ini
+[Unit]
+Description=Sonarr Container
+
+[Container]
+ContainerName=sonarr
+Image=docker.io/linuxserver/sonarr:latest
+PublishPort=8989:8989
+Volume=%h/sonarr/config:/config:Z
+Volume=%h/media/tvshows:/tv:Z
+Volume=%h/downloads:/downloads:Z
+Environment=PUID=1000
+Environment=PGID=1000
+Environment=TZ=America/New_York
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+Then reload and start:
+
+```bash
+systemctl --user daemon-reload
+systemctl --user start sonarr.service
+systemctl --user enable sonarr.service
 ```
 
 ---

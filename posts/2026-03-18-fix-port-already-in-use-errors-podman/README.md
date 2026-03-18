@@ -74,7 +74,7 @@ The port might be taken by another Podman container:
 podman ps --all --format "{{.ID}} {{.Names}} {{.Ports}}"
 
 # Find which container is using a specific port
-podman ps --all --filter "publish=8080"
+podman ps --all --format "{{.ID}} {{.Names}} {{.Ports}}" | grep 8080
 ```
 
 ## Solutions

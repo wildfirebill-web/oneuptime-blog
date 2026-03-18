@@ -122,7 +122,7 @@ If the machine was interrupted during creation or a Windows update disrupted it:
 
 ```powershell
 # Force stop the machine
-podman machine stop --force
+podman machine stop
 
 # Remove the corrupted machine
 podman machine rm podman-machine-default --force
@@ -277,7 +277,7 @@ If the machine hangs during startup:
 
 ```powershell
 # Force stop
-podman machine stop --force
+podman machine stop
 
 # If that does not work, terminate the WSL distribution
 wsl --terminate podman-machine-default

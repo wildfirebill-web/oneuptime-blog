@@ -55,8 +55,8 @@ Once QEMU is set up, you can build and run containers for any supported architec
 # Build a Go application for ARM64
 podman build --platform linux/arm64 -t myapp:arm64 .
 
-# Build for multiple platforms at once
-podman build --platform linux/amd64,linux/arm64 -t myapp:multi .
+# Build for multiple platforms at once using a manifest
+podman build --platform linux/amd64,linux/arm64 --manifest myapp:multi .
 ```
 
 A simple Containerfile that works across architectures:

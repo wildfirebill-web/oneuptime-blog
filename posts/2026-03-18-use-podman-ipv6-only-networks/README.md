@@ -48,11 +48,10 @@ For container networks, ULA addresses (`fd00::/8`) are the standard choice for i
 
 ## Creating an IPv6-Only Podman Network
 
-Create a network with only an IPv6 subnet:
+Create a network with only an IPv6 subnet. Note that the `--ipv6` flag enables dual-stack (both IPv4 and IPv6), so for a true IPv6-only network, specify only an IPv6 subnet without the `--ipv6` flag:
 
 ```bash
 podman network create \
-  --ipv6 \
   --subnet fd00:dead:beef::/64 \
   --gateway fd00:dead:beef::1 \
   ipv6-net
@@ -113,13 +112,13 @@ podman exec static-ipv6 ip -6 addr show
 
 ## Dual-Stack Configuration
 
-Dual-stack networks support both IPv4 and IPv6, allowing containers to communicate over either protocol:
+Dual-stack networks support both IPv4 and IPv6, allowing containers to communicate over either protocol. Use the `--ipv6` flag along with both an IPv4 and IPv6 subnet:
 
 ```bash
 podman network create \
+  --ipv6 \
   --subnet 10.100.0.0/24 \
   --gateway 10.100.0.1 \
-  --ipv6 \
   --subnet fd00:100::/64 \
   --gateway fd00:100::1 \
   dual-stack-net

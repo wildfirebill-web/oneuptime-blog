@@ -51,14 +51,7 @@ By default, Podman on Debian may not have container registries configured. Creat
 ```bash
 sudo mkdir -p /etc/containers
 sudo tee /etc/containers/registries.conf <<EOF
-[registries.search]
-registries = ['docker.io', 'quay.io', 'ghcr.io']
-
-[registries.insecure]
-registries = []
-
-[registries.block]
-registries = []
+unqualified-search-registries = ['docker.io', 'quay.io', 'ghcr.io']
 EOF
 ```
 
@@ -70,9 +63,6 @@ Configure the storage driver for the ChromeOS environment. The `overlay` driver 
 sudo tee /etc/containers/storage.conf <<EOF
 [storage]
 driver = "overlay"
-
-[storage.options]
-mount_program = "/usr/bin/fuse-overlayfs"
 
 [storage.options.overlay]
 mount_program = "/usr/bin/fuse-overlayfs"

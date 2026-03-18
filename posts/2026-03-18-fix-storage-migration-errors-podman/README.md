@@ -210,7 +210,7 @@ for img in $(podman images --format '{{.Repository}}:{{.Tag}}' | grep -v '<none>
 done
 
 # Export container configurations (not data volumes)
-podman container inspect --all > containers-backup.json
+podman container inspect $(podman ps -aq) > containers-backup.json
 
 # Reset and reload
 podman system reset --force

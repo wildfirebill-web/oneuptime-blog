@@ -145,10 +145,10 @@ Podman pods map directly to Kubernetes pods, making migration straightforward:
 
 ```bash
 # Generate Kubernetes YAML from a running pod
-podman generate kube myapp > myapp-k8s.yaml
+podman kube generate myapp > myapp-k8s.yaml
 
 # Deploy Kubernetes YAML with Podman
-podman play kube myapp-k8s.yaml
+podman kube play myapp-k8s.yaml
 ```
 
 ```yaml

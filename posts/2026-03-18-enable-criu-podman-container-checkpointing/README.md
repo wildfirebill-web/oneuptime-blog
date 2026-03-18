@@ -78,7 +78,7 @@ Verify the installation:
 criu --version
 ```
 
-You should see output like `Version: 3.17` or newer. For Podman checkpoint/restore to work reliably, CRIU 3.15 or later is recommended.
+You should see output like `Version: 3.17` or newer. For Podman checkpoint/restore to work, CRIU 3.11 or later is required. CRIU 3.12 or later is recommended for checkpoint image support, and 3.13 or later for full SELinux support.
 
 ## Installing CRIU on Ubuntu and Debian
 
@@ -214,7 +214,7 @@ Remember to set it back to enforcing after testing and install the proper policy
 
 ## Common Installation Issues
 
-**CRIU version too old**: Podman requires CRIU 3.15+. Check with `criu --version` and upgrade if needed.
+**CRIU version too old**: Podman requires CRIU 3.11+. Check with `criu --version` and upgrade if needed.
 
 **Permission denied errors**: Checkpoint/restore requires root. Use `sudo podman` instead of rootless Podman.
 

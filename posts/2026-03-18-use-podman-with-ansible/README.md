@@ -252,6 +252,8 @@ ansible-playbook rolling-deploy.yml -e deploy_version=v2.1.0
 
 ## Systemd Integration with Ansible
 
+> **Note:** The `generate_systemd` option and `podman generate systemd` command are deprecated since Podman 4.7. The recommended approach for new deployments is to use Quadlet files for systemd integration. The example below still works but may be removed in a future Podman release.
+
 Generate and manage systemd units for Podman containers:
 
 ```yaml

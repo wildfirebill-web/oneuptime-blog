@@ -307,11 +307,6 @@ print(f"\nBuilt image: {image_id}")
 Remove build cache and intermediate images to free disk space.
 
 ```bash
-# Prune the build cache
-curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
-  -X POST \
-  http://localhost/v4.0.0/libpod/build/prune
-
 # Prune all unused images (including build intermediates)
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \

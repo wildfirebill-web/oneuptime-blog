@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, CRIU, Containers, Checkpoint, Live Backup
 
-Description: A detailed guide on using Podman's --leave-running and --pre-dump options to create container checkpoints while keeping the workload active, including strategies for minimizing downtime and maintaining service availability.
+Description: A detailed guide on using Podman's --leave-running and --pre-checkpoint options to create container checkpoints while keeping the workload active, including strategies for minimizing downtime and maintaining service availability.
 
 ---
 
@@ -104,27 +104,22 @@ sudo podman container checkpoint web-app --leave-running
 
 You will see a spike in latency (or timeouts) during the freeze phase, followed by a return to normal. The spike duration corresponds to the CRIU dump time.
 
-## Reducing Freeze Time with Pre-Dump
+## Reducing Freeze Time with Pre-Checkpoint
 
-For containers with large memory footprints, the freeze time can be significant. CRIU supports a pre-dump mechanism that copies memory pages while the container is still running, reducing the final freeze time.
-
-While Podman does not directly expose CRIU's pre-dump functionality through its CLI, you can use CRIU directly for advanced scenarios:
+For containers with large memory footprints, the freeze time can be significant. Podman supports a `--pre-checkpoint` (or `-P`) flag that dumps the container's memory information only while leaving the container running. A subsequent checkpoint using `--with-previous` then only needs to capture the memory pages that changed since the pre-checkpoint, resulting in a much shorter freeze:
 
 ```bash
-# Get the container's PID
-CONTAINER_PID=$(sudo podman inspect my-app --format '{{.State.Pid}}')
+# Step 1: Pre-checkpoint - copies memory pages while container runs (no freeze)
+sudo podman container checkpoint my-app --pre-checkpoint
 
-# Pre-dump: copy memory pages while container runs (no freeze)
-sudo criu pre-dump -t ${CONTAINER_PID} --images-dir /tmp/pre-dump-dir
-
-# Final dump with parent reference: shorter freeze
-sudo criu dump -t ${CONTAINER_PID} \
-  --prev-images-dir /tmp/pre-dump-dir \
-  --images-dir /tmp/final-dump-dir \
-  --leave-running
+# Step 2: Final checkpoint with reference to the pre-checkpoint - shorter freeze
+sudo podman container checkpoint my-app \
+  --with-previous \
+  --leave-running \
+  --export=/tmp/my-app-checkpoint.tar.gz
 ```
 
-The pre-dump copies all memory pages without freezing. The final dump only needs to copy pages that changed since the pre-dump, resulting in a much shorter freeze.
+The `--pre-checkpoint` flag relies on the Linux kernel's soft-dirty bit, which may not be available on all systems depending on the architecture and kernel configuration. Note that `--pre-checkpoint` and `--leave-running` cannot be used together on the same command, as `--pre-checkpoint` already implies the container keeps running.
 
 ## Building a Zero-Downtime Checkpoint Workflow
 

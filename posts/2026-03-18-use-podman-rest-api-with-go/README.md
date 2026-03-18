@@ -47,7 +47,8 @@ func newPodmanClient(socketPath string) *http.Client {
     return &http.Client{
         Transport: &http.Transport{
             DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
-                return net.Dial("unix", socketPath)
+                dialer := net.Dialer{}
+                return dialer.DialContext(ctx, "unix", socketPath)
             },
         },
         Timeout: 30 * time.Second,
@@ -145,7 +146,8 @@ func NewPodmanClient(socketPath string) *PodmanClient {
         httpClient: &http.Client{
             Transport: &http.Transport{
                 DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
-                    return net.Dial("unix", socketPath)
+                    dialer := net.Dialer{}
+                    return dialer.DialContext(ctx, "unix", socketPath)
                 },
             },
             Timeout: 30 * time.Second,

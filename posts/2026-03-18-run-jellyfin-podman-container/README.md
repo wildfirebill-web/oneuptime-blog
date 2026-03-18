@@ -55,8 +55,6 @@ podman run -d \
   -v ~/media/movies:/media/movies:ro,Z \
   -v ~/media/tvshows:/media/tvshows:ro,Z \
   -v ~/media/music:/media/music:ro,Z \
-  -e PUID=1000 \
-  -e PGID=1000 \
   -e TZ=America/New_York \
   --restart unless-stopped \
   docker.io/jellyfin/jellyfin:latest
@@ -112,8 +110,6 @@ podman run -d \
   -v ~/media/movies:/media/movies:ro,Z \
   -v ~/media/tvshows:/media/tvshows:ro,Z \
   -v ~/media/music:/media/music:ro,Z \
-  -e PUID=1000 \
-  -e PGID=1000 \
   -e TZ=America/New_York \
   --restart unless-stopped \
   docker.io/jellyfin/jellyfin:latest
@@ -141,8 +137,6 @@ podman run -d \
   -v ~/jellyfin/cache:/cache:Z \
   -v ~/media/movies:/media/movies:ro,Z \
   -v ~/media/tvshows:/media/tvshows:ro,Z \
-  -e PUID=1000 \
-  -e PGID=1000 \
   -e TZ=America/New_York \
   -e NVIDIA_VISIBLE_DEVICES=all \
   -e NVIDIA_DRIVER_CAPABILITIES=compute,video,utility \
@@ -167,8 +161,6 @@ podman run -d \
   -v ~/jellyfin/cache:/cache:Z \
   -v ~/media/movies:/media/movies:ro,Z \
   -v ~/media/tvshows:/media/tvshows:ro,Z \
-  -e PUID=1000 \
-  -e PGID=1000 \
   -e TZ=America/New_York \
   --restart unless-stopped \
   docker.io/jellyfin/jellyfin:latest
@@ -184,8 +176,6 @@ podman run -d \
   -v ~/jellyfin/cache:/cache:Z \
   -v ~/media/movies:/media/movies:ro,Z \
   -v ~/media/tvshows:/media/tvshows:ro,Z \
-  -e PUID=1000 \
-  -e PGID=1000 \
   -e TZ=America/New_York \
   --restart unless-stopped \
   docker.io/jellyfin/jellyfin:latest

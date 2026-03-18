@@ -522,7 +522,7 @@ RUN npm run build
 FROM node:20-bookworm-slim
 WORKDIR /app
 COPY api/package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 COPY api/ .
 
 # Copy the built React files into a public directory

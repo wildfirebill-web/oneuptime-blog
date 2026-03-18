@@ -92,7 +92,7 @@ FROM node:20-alpine AS deps
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 
 # Stage 3: Runtime
 FROM node:20-alpine
@@ -279,7 +279,7 @@ COPY . .
 RUN npm run build
 
 FROM base AS production
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 COPY --from=build /app/dist ./dist
 
 USER node

@@ -39,7 +39,7 @@ podman logs --since 2024-01-01T00:00:00 my-container
 
 ## Configuring Logging Drivers
 
-Podman supports `journald`, `k8s-file`, `json-file`, and `none` as logging drivers:
+Podman supports `journald`, `k8s-file`, `none`, `passthrough`, and `passthrough-tty` as logging drivers. Note that `json-file` is accepted as an alias for `k8s-file` for Docker compatibility:
 
 ```bash
 # Use journald (integrates with systemd journal)
@@ -48,11 +48,10 @@ podman run -d --log-driver=journald --name app my-app
 # Use k8s-file (default for rootless)
 podman run -d --log-driver=k8s-file --name app my-app
 
-# Set log size limits
+# Set log size limits (note: Podman supports max-size but not max-file)
 podman run -d \
   --log-driver=k8s-file \
   --log-opt max-size=10mb \
-  --log-opt max-file=3 \
   --name app my-app
 ```
 
@@ -254,10 +253,9 @@ logger.setLevel(logging.INFO)
 Configure automatic log rotation to prevent disk exhaustion:
 
 ```bash
-# Set log limits per container
+# Set log size limit per container (Podman rotates the log file when the limit is reached)
 podman run -d \
   --log-opt max-size=50mb \
-  --log-opt max-file=5 \
   --name app my-app
 ```
 

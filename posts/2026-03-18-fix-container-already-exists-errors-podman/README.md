@@ -48,7 +48,7 @@ Check the container's status:
 podman inspect myapp --format '{{.State.Status}}'
 ```
 
-Possible states include `created`, `running`, `paused`, `exited`, and `stopped`.
+Possible states include `created`, `running`, `paused`, `exited`, `stopping`, and `removing`.
 
 ## Solution 1: Remove the Existing Container
 
@@ -71,7 +71,7 @@ You can combine stop and remove:
 podman rm -f myapp
 ```
 
-The `-f` flag forces removal even if the container is running. Use this carefully in production since it sends SIGKILL without a graceful shutdown period.
+The `-f` flag forces removal even if the container is running. It sends SIGTERM first, then SIGKILL after the stop timeout (default 10 seconds). Use this carefully in production.
 
 For a graceful stop followed by removal:
 

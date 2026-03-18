@@ -150,7 +150,6 @@ Prevent logs from filling up disk space:
 podman run -d \
   --name api \
   --log-opt max-size=50m \
-  --log-opt max-file=5 \
   my-api:latest
 ```
 
@@ -208,8 +207,8 @@ journalctl CONTAINER_NAME=api -o json
 # Follow with filtering
 journalctl CONTAINER_NAME=api -f | grep "error"
 
-# Query across all containers
-journalctl SYSLOG_IDENTIFIER=conmon
+# Query by container ID
+journalctl CONTAINER_ID=<container-id>
 ```
 
 ## Contextual Log Fields

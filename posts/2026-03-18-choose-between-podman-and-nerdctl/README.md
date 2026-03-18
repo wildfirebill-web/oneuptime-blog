@@ -147,7 +147,7 @@ Podman uses Buildah for image building:
 ```bash
 # Podman build
 podman build -t myapp .
-podman build --layers --cache-from myapp:cache -t myapp .
+podman build --layers --cache-from=registry.example.com/myapp:cache -t myapp .
 ```
 
 nerdctl uses BuildKit, which provides advanced caching and build features:
@@ -241,8 +241,8 @@ sudo nerdctl --namespace k8s.io logs <container-id>
 Podman generates and consumes Kubernetes YAML:
 
 ```bash
-podman generate kube myapp > deployment.yaml
-podman play kube deployment.yaml
+podman kube generate myapp > deployment.yaml
+podman kube play deployment.yaml
 ```
 
 ## Performance

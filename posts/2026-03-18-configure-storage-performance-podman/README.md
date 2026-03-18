@@ -316,8 +316,7 @@ graphroot = "/home/user/.local/share/containers/storage"
 runroot = "/run/user/1000/containers"
 
 [storage.options]
-# Increase the maximum number of UID/GID mappings
-size = 65536
+# Additional storage options can be set here
 
 [storage.options.overlay]
 # Use native overlay on kernel 5.11+
