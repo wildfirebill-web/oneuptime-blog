@@ -107,7 +107,9 @@ describe('UsersService', () => {
 
     service = module.get<UsersService>(UsersService);
     repository = module.get<Repository<User>>(getRepositoryToken(User));
+  });
 
+  afterEach(() => {
     // Clear all mock calls between tests
     jest.clearAllMocks();
   });
@@ -213,7 +215,10 @@ describe('UsersController', () => {
 
     controller = module.get<UsersController>(UsersController);
     service = module.get<UsersService>(UsersService);
+  });
 
+  afterEach(() => {
+    // Clear all mock calls between tests
     jest.clearAllMocks();
   });
 
