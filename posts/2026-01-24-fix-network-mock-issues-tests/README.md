@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Mocking, Network, Jest, Python, HTTP, Unit Tests, Integration Tests
+Tags: Testing, Mocking, Networks, Jest, Python, HTTP, Unit Tests, Integration Tests
 
 Description: Learn how to properly mock network requests in your tests to avoid flaky behavior, unmocked requests, and common pitfalls that cause test failures.
 

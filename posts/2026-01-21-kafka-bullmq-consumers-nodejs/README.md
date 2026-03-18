@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, BullMQ, Node.js, Message Queue, Redis, Event-Driven, TypeScript, Backend
+Tags: Kafka, BullMQ, Node.js, Message Queues, Redis, Event-Driven, TypeScript, Backend
 
 Description: Learn how to build reliable message consumers in Node.js using Kafka and BullMQ.
 

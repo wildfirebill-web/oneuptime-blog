@@ -30,7 +30,7 @@ podman --version
 
 When you create a Podman network, it creates a bridge interface on the host. Each container gets a virtual ethernet (veth) pair connecting it to the bridge. IP forwarding controls whether the kernel routes packets between these bridges and other interfaces.
 
-```
+```text
 Container A (10.89.0.2) <--veth--> Bridge A (10.89.0.1)
                                         |
                                   Host (IP Forward)

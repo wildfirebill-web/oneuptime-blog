@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Shovel, Data Replication, Distributed Systems
+Tags: RabbitMQ, Message Queues, Shovel, Data Replication, Distributed Systems
 
 Description: A comprehensive guide to configuring the RabbitMQ Shovel plugin for reliable message transfer between brokers.
 

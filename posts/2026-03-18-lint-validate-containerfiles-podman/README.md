@@ -51,7 +51,7 @@ hadolint Containerfile
 
 Sample output:
 
-```
+```text
 Containerfile:3 DL3008 warning: Pin versions in apt-get install
 Containerfile:5 DL3003 warning: Use WORKDIR to switch to a directory
 Containerfile:8 DL4006 warning: Set the SHELL option -o pipefail before RUN with a pipe in
@@ -373,7 +373,7 @@ repos:
 
 While not strictly a linting tool, the ignore file prevents unnecessary files from being sent to the build context:
 
-```
+```text
 # .containerignore
 .git
 .github

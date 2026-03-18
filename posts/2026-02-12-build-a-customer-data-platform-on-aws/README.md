@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Customer Data Platform, CDP, Data Pipeline, Kinesis, Redshift, Personalization
+Tags: AWS, Customer Data Platform, CDP, Data Pipelines, Kinesis, Redshift, Personalization
 
 Description: Build a customer data platform on AWS that unifies customer data from multiple sources for segmentation, personalization, and analytics
 

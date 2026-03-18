@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Distributed Systems, Performance, Architecture
+Tags: RabbitMQ, Message Queues, Distributed Systems, Performance, Architecture
 
 Description: Learn effective strategies for handling large messages in RabbitMQ, including chunking, external storage patterns, compression, and streaming approaches with practical code examples.
 

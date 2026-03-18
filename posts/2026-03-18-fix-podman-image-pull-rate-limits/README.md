@@ -27,7 +27,7 @@ Docker Hub rate limits are based on your authentication status and account type:
 
 The rate limit error in Podman looks like:
 
-```
+```text
 Error: pulling image: Error response from registry: toomanyrequests: You have reached your pull rate limit.
 ```
 
@@ -44,7 +44,7 @@ curl -s -H "Authorization: Bearer $TOKEN" -I "https://registry-1.docker.io/v2/ra
 
 The response headers show:
 
-```
+```text
 RateLimit-Limit: 100;w=21600
 RateLimit-Remaining: 95;w=21600
 ```

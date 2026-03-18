@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipeline, Data Types, Type Conversion, ETL
+Tags: Data Pipelines, Data Types, Type Conversion, ETL
 
 Description: Learn to create data type conversion for handling type mismatches between source and target systems.
 

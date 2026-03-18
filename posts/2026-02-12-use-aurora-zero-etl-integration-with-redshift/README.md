@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Aurora, Redshift, ETL, Analytics, Data Pipeline
+Tags: AWS, Aurora, Redshift, ETL, Analytics, Data Pipelines
 
 Description: Set up Aurora Zero-ETL integration with Redshift to replicate transactional data for analytics without building or maintaining ETL pipelines.
 

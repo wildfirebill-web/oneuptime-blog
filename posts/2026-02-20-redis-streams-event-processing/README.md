@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Event Processing, Consumer Groups, Message Queue
+Tags: Redis, Streams, Event Processing, Consumer Groups, Message Queues
 
 Description: Learn how to use Redis Streams with consumer groups for reliable event processing and message queuing.
 

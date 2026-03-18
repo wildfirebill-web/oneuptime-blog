@@ -35,13 +35,13 @@ The critical rule is: **files referenced in COPY and ADD must be inside the buil
 
 The most common error is trying to copy a file that is outside the context directory:
 
-```
+```text
 COPY failed: file not found in build context
 ```
 
 Given this directory structure:
 
-```
+```text
 /project/
   /shared/
     config.json
@@ -93,7 +93,7 @@ find . -not -path './.git/*' | wc -l
 
 Create a `.dockerignore` file in the root of your build context to exclude unnecessary files:
 
-```
+```text
 # .dockerignore
 .git
 .gitignore

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Network, Performance, Tuning, Linux, TCP
+Tags: RHEL, Networks, Performance, Tuning, Linux, TCP
 
 Description: Learn how to tune network performance on RHEL by adjusting kernel parameters, buffer sizes, and NIC settings.
 

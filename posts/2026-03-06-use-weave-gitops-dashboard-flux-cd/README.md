@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Weave GitOps, Dashboard, Kubernetes, GitOps, Monitoring
+Tags: Flux CD, Weave GitOps, Dashboards, Kubernetes, GitOps, Monitoring
 
 Description: A practical guide to installing and using the Weave GitOps Dashboard for visualizing and managing Flux CD resources in your Kubernetes cluster.
 

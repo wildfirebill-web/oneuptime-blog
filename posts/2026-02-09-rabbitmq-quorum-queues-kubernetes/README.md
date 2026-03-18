@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RabbitMQ, Message Queue
+Tags: Kubernetes, RabbitMQ, Message Queues
 
 Description: Configure RabbitMQ with quorum queues on Kubernetes to achieve high availability and message durability using the Raft consensus algorithm for distributed messaging.
 

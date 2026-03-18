@@ -40,7 +40,7 @@ curl --unix-socket /run/podman/podman.sock http://localhost/v4.0.0/libpod/info
 
 The Podman REST API exposes container logs through the following endpoint:
 
-```
+```text
 GET /v4.0.0/libpod/containers/{name}/logs
 ```
 
@@ -122,7 +122,7 @@ curl --unix-socket /run/podman/podman.sock \
 
 The output will include an RFC 3339 timestamp at the beginning of each line:
 
-```
+```text
 2026-03-18T14:23:45.123456789Z Starting application server...
 2026-03-18T14:23:45.234567890Z Listening on port 8080
 2026-03-18T14:23:46.345678901Z Connected to database

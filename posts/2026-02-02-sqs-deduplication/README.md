@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Message Queue, Deduplication, Distributed Systems, Node.js
+Tags: AWS, SQS, Message Queues, Deduplication, Distributed Systems, Node.js
 
 Description: Learn how to implement message deduplication in Amazon SQS using FIFO queues, content-based deduplication, and custom deduplication strategies to prevent duplicate processing in distributed systems.
 

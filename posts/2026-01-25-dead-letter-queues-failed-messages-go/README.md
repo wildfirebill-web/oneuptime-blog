@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Dead Letter Queue, Message Queue, Error Handling, Reliability
+Tags: Go, Dead Letter Queue, Message Queues, Error Handling, Reliability
 
 Description: Learn how to implement dead letter queues in Go to handle failed messages gracefully, prevent message loss, and build more resilient message-driven applications.
 

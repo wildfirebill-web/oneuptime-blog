@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Message Queue, RabbitMQ, NATS, Async, Consumer Patterns
+Tags: Go, Golang, Message Queues, RabbitMQ, NATS, Async, Consumer Patterns
 
 Description: A practical guide to building reliable message queue consumers in Go with proper error handling, retries, and graceful shutdown.
 

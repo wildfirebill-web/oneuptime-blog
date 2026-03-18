@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, BigQuery, Streaming Ingestion, Zero-Code, Data Pipeline
+Tags: GCP, Pub/Sub, BigQuery, Streaming Ingestion, Zero-Code, Data Pipelines
 
 Description: Learn how to use Pub/Sub BigQuery subscriptions to stream data directly from Pub/Sub topics into BigQuery tables without writing any pipeline code.
 

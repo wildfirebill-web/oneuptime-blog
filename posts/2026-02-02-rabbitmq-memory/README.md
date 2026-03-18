@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Memory Management, Performance, Monitoring, Message Queue
+Tags: RabbitMQ, Memory Management, Performance, Monitoring, Message Queues
 
 Description: Learn how to diagnose, resolve, and prevent memory issues in RabbitMQ for optimal message broker performance.
 

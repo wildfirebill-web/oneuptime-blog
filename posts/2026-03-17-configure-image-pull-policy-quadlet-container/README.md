@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, Image Pull
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, Image Pull
 
 Description: Learn how to configure image pull policies in Podman Quadlet container files to control when container images are fetched from registries.
 

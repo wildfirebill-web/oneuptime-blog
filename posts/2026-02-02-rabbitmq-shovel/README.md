@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Cross-Datacenter, Shovel, Message Queue, Replication, Distributed Systems, High Availability
+Tags: RabbitMQ, Cross-Datacenter, Shovel, Message Queues, Replication, Distributed Systems, High Availability
 
 Description: A comprehensive guide to implementing RabbitMQ Shovel for cross-datacenter message replication, covering architecture design, configuration, failover strategies, and production best practices.
 

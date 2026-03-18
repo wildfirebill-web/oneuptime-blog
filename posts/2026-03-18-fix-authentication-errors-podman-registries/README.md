@@ -39,7 +39,7 @@ podman login --get-login docker.io 2>&1
 
 This is the most common error. It occurs when pulling images that require authentication, especially from Docker Hub with rate limiting:
 
-```
+```text
 Error: initializing source docker://myrepo/myimage:latest: unable to retrieve auth token: invalid username/password: unauthorized: authentication required
 ```
 
@@ -101,7 +101,7 @@ echo 'export REGISTRY_AUTH_FILE=$HOME/.config/containers/auth.json' >> ~/.bashrc
 
 Docker Hub imposes pull rate limits: 100 pulls per 6 hours for anonymous users and 200 pulls per 6 hours for authenticated users. If you hit these limits, you will see:
 
-```
+```text
 Error: initializing source: toomanyrequests: You have reached your pull rate limit
 ```
 
@@ -135,7 +135,7 @@ location = "mirror.gcr.io"
 
 When using a private registry with self-signed TLS certificates, you will see:
 
-```
+```text
 Error: pinging container registry: x509: certificate signed by unknown authority
 ```
 

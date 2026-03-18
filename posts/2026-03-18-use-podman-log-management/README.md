@@ -175,7 +175,7 @@ podman run -d \
 
 Access Grafana at `http://localhost:3000`, add Loki as a data source with the URL `http://loki:3100`, and start querying logs using LogQL:
 
-```
+```text
 # Find all error logs
 {job="podman"} |= "error"
 

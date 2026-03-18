@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Publisher Confirms, Message Queue, Reliability, Node.js, Python, Java, Messaging
+Tags: RabbitMQ, Publisher Confirms, Message Queues, Reliability, Node.js, Python, Java, Messaging
 
 Description: Learn how to implement RabbitMQ publisher confirms to guarantee message delivery and build reliable messaging systems.
 

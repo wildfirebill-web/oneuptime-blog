@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Validation, systemd
+Tags: Podman, Containers, DevOps, Quadlet, Validation, Systemd
 
 Description: Learn how to validate Quadlet container files before deployment using the Podman Quadlet generator dry-run mode.
 

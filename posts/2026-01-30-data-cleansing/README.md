@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Quality, Data Engineering, ETL, Data Pipeline
+Tags: Data Quality, Data Engineering, ETL, Data Pipelines
 
 Description: Learn how to implement data cleansing pipelines for improving data quality.
 

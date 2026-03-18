@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Redis, Redis Streams, Message Queue, Kubernetes, GitOps
+Tags: Flux CD, Redis, Redis Streams, Message Queues, Kubernetes, GitOps
 
 Description: A practical guide to deploying Redis with Streams enabled on Kubernetes using Flux CD for real-time event streaming.
 

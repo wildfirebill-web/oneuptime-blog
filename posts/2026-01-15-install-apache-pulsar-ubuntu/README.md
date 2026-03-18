@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Apache Pulsar, Message Queue, Streaming, Tutorial
+Tags: Ubuntu, Apache Pulsar, Message Queues, Streaming, Tutorial
 
 Description: Complete guide to installing and configuring Apache Pulsar distributed messaging on Ubuntu.
 

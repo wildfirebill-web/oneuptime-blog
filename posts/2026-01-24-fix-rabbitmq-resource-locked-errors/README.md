@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Troubleshooting, AMQP, Backend, Distributed Systems, Error Handling
+Tags: RabbitMQ, Message Queues, Troubleshooting, AMQP, Backend, Distributed Systems, Error Handling
 
 Description: Learn how to diagnose and fix RabbitMQ resource locked errors caused by exclusive queue access and competing consumers.
 

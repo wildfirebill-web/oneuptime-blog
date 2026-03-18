@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Windows Containers, Dockerfile, Image Building, Multi-Stage Build, DevOps, Windows
+Tags: Docker, Windows Containers, Dockerfile, Image Building, Multi-Stage Builds, DevOps, Windows
 
 Description: Master building Windows container images with Dockerfiles, multi-stage builds, layer optimization, and best practices for smaller, faster images.
 

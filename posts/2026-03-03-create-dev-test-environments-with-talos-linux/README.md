@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Development Environment, Testing, Kubernetes, Developer Experience
+Tags: Talos Linux, Development Environments, Testing, Kubernetes, Developer Experience
 
 Description: Build isolated development and testing environments using Talos Linux clusters, giving each developer or team their own Kubernetes instance for safe experimentation.
 

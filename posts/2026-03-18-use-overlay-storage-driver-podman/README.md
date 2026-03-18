@@ -18,7 +18,7 @@ The storage driver determines how Podman manages image layers and container file
 
 OverlayFS stacks multiple directories into a single unified view:
 
-```
+```text
 Container View (merged)
 ├── /app/server          (from upper layer - container writes)
 ├── /usr/bin/curl        (from lower layer 2 - image layer)

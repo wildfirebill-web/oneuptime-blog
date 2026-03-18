@@ -24,7 +24,7 @@ mkdir -p ~/coredns/config
 
 Create the Corefile (CoreDNS configuration):
 
-```
+```text
 # ~/coredns/config/Corefile
 .:53 {
     forward . 8.8.8.8 8.8.4.4
@@ -61,7 +61,7 @@ nslookup example.com localhost
 
 Define custom DNS zones for your internal services:
 
-```
+```text
 # ~/coredns/config/Corefile
 
 # Internal zone for your services
@@ -90,7 +90,7 @@ dev.local:53 {
 
 Create the zone files:
 
-```
+```dns
 ; ~/coredns/config/zones/internal.example.com.db
 $ORIGIN internal.example.com.
 @       IN SOA  ns1.internal.example.com. admin.internal.example.com. (
@@ -117,7 +117,7 @@ _http._tcp.web    IN SRV 10 100 3000 web.internal.example.com.
 _postgres._tcp.db IN SRV 10 100 5432 db.internal.example.com.
 ```
 
-```
+```dns
 ; ~/coredns/config/zones/dev.local.db
 $ORIGIN dev.local.
 @       IN SOA  ns1.dev.local. admin.dev.local. (
@@ -137,7 +137,7 @@ database    IN A    127.0.0.1
 
 Use the etcd plugin for dynamic service discovery:
 
-```
+```text
 # Corefile with etcd backend
 services.local:53 {
     etcd {
@@ -215,7 +215,7 @@ volumes:
 
 CoreDNS is highly extensible through plugins. Here are useful configurations:
 
-```
+```text
 # Rewrite queries
 rewrite.example.com:53 {
     rewrite name old-api.example.com new-api.example.com
@@ -309,7 +309,7 @@ done
 
 CoreDNS exposes Prometheus metrics:
 
-```
+```text
 # Add to Corefile
 .:53 {
     prometheus :9153

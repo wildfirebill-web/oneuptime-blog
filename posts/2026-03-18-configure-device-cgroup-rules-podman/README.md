@@ -52,7 +52,7 @@ cat /proc/devices
 
 The `--device-cgroup-rule` flag uses the following syntax:
 
-```
+```text
 --device-cgroup-rule='TYPE MAJOR:MINOR ACCESS'
 ```
 

@@ -102,7 +102,7 @@ Open your JetBrains IDE and navigate to the Docker connection settings.
 
 Select **Unix socket** and enter the Podman socket path:
 
-```
+```text
 unix:///run/user/1000/podman/podman.sock
 ```
 
@@ -112,7 +112,7 @@ Replace `1000` with your actual user ID (run `id -u` to find it).
 
 Select **Unix socket** and enter the path from the `podman machine inspect` command:
 
-```
+```text
 unix:///Users/yourname/.local/share/containers/podman/machine/podman.sock
 ```
 
@@ -122,7 +122,7 @@ Alternatively, if you have Podman Desktop installed, you can select **Podman** f
 
 Select **TCP socket** or **Named pipe** and enter:
 
-```
+```text
 npipe:////./pipe/podman-machine-default
 ```
 
@@ -197,7 +197,7 @@ JetBrains IDEs can run and debug applications directly inside Podman containers.
 2. Click **+** and select **Docker > Dockerfile**
 3. Configure the settings:
 
-```
+```text
 Dockerfile:       ./Containerfile
 Image tag:        myapp:dev
 Container name:   myapp-dev

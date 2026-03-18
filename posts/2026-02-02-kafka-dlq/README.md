@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Message Queue, DLQ, Dead Letter Queue, Event Streaming, Error Handling, Java, Node.js
+Tags: Kafka, Message Queues, DLQ, Dead Letter Queue, Event Streaming, Error Handling, Java, Node.js
 
 Description: Learn how to implement Dead Letter Queue (DLQ) patterns in Apache Kafka to handle failed messages gracefully. Covers retry strategies, error classification, monitoring, and production best practices.
 

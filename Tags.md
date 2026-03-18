@@ -165,6 +165,7 @@
 - Adaptive Sampling
 - ADB
 - ADC
+- ADD
 - ADD Instruction
 - Add_host
 - Add-ons
@@ -951,6 +952,7 @@
 - AWS Glacier
 - AWS Global Accelerator
 - AWS Glue
+- AWS Graviton
 - AWS IAM
 - AWS IoT Core
 - AWS IRSA
@@ -1251,7 +1253,7 @@
 - Barman
 - Barriers
 - Base
-- Base Image
+- Base Images
 - Base64
 - Base64decode
 - Base64encode
@@ -1582,7 +1584,7 @@
 - Build Checks
 - Build Configuration
 - Build Context
-- Build Environment
+- Build Environments
 - Build error
 - Build failed
 - Build Farm
@@ -1615,6 +1617,7 @@
 - BuildKit
 - Buildkite
 - Buildpacks
+- Buildroot
 - Buildx
 - Built-In
 - Built-In Endpoints
@@ -1706,6 +1709,7 @@
 - Callback Plugins
 - Calling SDK
 - Calver
+- Camera
 - Campaigns
 - Canal
 - Canaries
@@ -1778,6 +1782,7 @@
 - CD
 - CDAP
 - CDC
+- CDI
 - CDK
 - CDK for Terraform
 - CDK8s
@@ -1899,8 +1904,10 @@
 - Checkout Funnel
 - Checkout Optimization
 - Checkov
-- Checkpoint
+- Checkpoint Export
+- Checkpoint Import
 - Checkpointing
+- Checkpoints
 - Checks
 - Checksums
 - Chef
@@ -1981,6 +1988,7 @@
 - Claims
 - Claims Adjudication
 - Claims Processing
+- Clair
 - ClamAV
 - Clang
 - Clap
@@ -2269,6 +2277,7 @@
 - ClusterTrustBundle
 - ClusterUpgrade
 - CMake
+- CMD
 - CMDB
 - CMEK
 - CMP
@@ -2623,6 +2632,7 @@
 - Container Build
 - Container Communication
 - Container Configuration
+- Container Creation
 - Container Dependencies
 - Container Distribution
 - Container Escape
@@ -2640,6 +2650,7 @@
 - Container Lifecycle
 - Container Logs
 - Container Management
+- Container Metadata
 - Container Metrics
 - Container Migration
 - Container Monitoring
@@ -2653,11 +2664,12 @@
 - Container Parser
 - Container Patterns
 - Container Platform
-- Container Port
+- Container Ports
 - Container Recovery
 - Container Registries
 - Container Registry
 - Container Resources
+- Container Restore
 - Container Runtime
 - Container Scanning
 - Container Security
@@ -2665,6 +2677,9 @@
 - Container Shell
 - Container Signing
 - Container Startup
+- Container State
+- Container Stats
+- Container Storage
 - Container Storage Interface
 - Container switching
 - Container Testing
@@ -3167,12 +3182,12 @@
 - Dark Launches
 - Dart
 - DASH
-- Dashboard
 - Dashboard Design
 - Dashboard Links
 - Dashboard Management
 - Dashboard Templates
 - Dashboard Variables
+- Dashboards
 - Dashboards as Code
 - Dask
 - DAST
@@ -3286,8 +3301,8 @@
 - Data Path
 - Data Permissions
 - Data Persistence
-- Data Pipeline
 - Data Pipeline Automation
+- Data Pipelines
 - Data Plane
 - Data Platform
 - Data Preparation
@@ -3659,7 +3674,7 @@
 - Developer Tooling
 - Developer Tools
 - Development
-- Development Environment
+- Development Environments
 - Development Practices
 - Development Tools
 - Development Workflow
@@ -4206,6 +4221,7 @@
 - Edge Caching
 - Edge Cases
 - Edge Computing
+- Edge Deployment
 - Edge Devices
 - Edge Functions
 - Edge Gateway
@@ -4298,6 +4314,7 @@
 - Embed
 - Embedded
 - Embedded Analytics
+- Embedded Linux
 - Embedded Systems
 - Embedding
 - Ember.js
@@ -4384,6 +4401,7 @@
 - Entry Points
 - Entrypoint
 - Enums
+- ENV
 - Env0
 - Envelope Encryption
 - Environment
@@ -4407,6 +4425,7 @@
 - Envsubst
 - Envtest
 - EPEL
+- Ephemeral
 - Ephemeral Clusters
 - Ephemeral Containers
 - Ephemeral Disks
@@ -4761,6 +4780,9 @@
 - Federated Query
 - Federation
 - Fedora
+- Fedora CoreOS
+- Fedora IoT
+- Fedora Silverblue
 - FedRAMP
 - Feed Ranking
 - Feedback
@@ -5108,7 +5130,7 @@
 - Game Day
 - Game Development
 - Game Economy
-- Game Server
+- Game Servers
 - Game State
 - GameLift
 - Gamification
@@ -5515,6 +5537,7 @@
 - GRS
 - GRUB
 - GRUB2
+- Grype
 - GSConnect
 - GSLB
 - GSLT
@@ -5688,6 +5711,7 @@
 - High Availability
 - High Cardinality
 - High Concurrency
+- High Density
 - High Memory
 - High Performance
 - High Performance Computing
@@ -5708,6 +5732,7 @@
 - HikariCP
 - Hilt
 - Hints
+- HIP
 - HIPAA
 - Histogram
 - Historical Data
@@ -6049,6 +6074,7 @@
 - Image Sync
 - Image Tagging
 - Image Transfer
+- Image Trust
 - Image update automation
 - Image Updater
 - Image Updates
@@ -6076,6 +6102,7 @@
 - Immutability
 - Immutable
 - Immutable Configuration
+- Immutable Desktop
 - Immutable Fields
 - Immutable Infrastructure
 - Immutable OS
@@ -6175,6 +6202,7 @@
 - Indirect Maps
 - Indoor Maps
 - Indoor Positioning
+- Industrial
 - Industrial Automation
 - Industrial IoT
 - Industrial Monitoring
@@ -6321,6 +6349,7 @@
 - Intel SGX
 - Intelligent Document Processing
 - Intelligent-Tiering
+- IntelliJ
 - IntelliJ IDEA
 - Intent Recognition
 - Intentions
@@ -7096,7 +7125,9 @@
 - Litmus
 - Litmus Chaos
 - LitmusChaos
+- Live Backup
 - Live Broadcasting
+- Live Checkpoint
 - Live configuration
 - Live Debug
 - Live Events
@@ -7104,6 +7135,7 @@
 - Live Migration
 - Live Monitoring
 - Live Patching
+- Live Reloading
 - Live Restore
 - Live Stream API
 - Live Streaming
@@ -7513,6 +7545,7 @@
 - Media Asset Management
 - Media CDN
 - Media Files
+- Media Management
 - Media Offloading
 - Media Pipeline
 - Media Processing
@@ -7580,6 +7613,7 @@
 - Merged APIs
 - MergeTree
 - Mermaid Diagrams
+- MERN
 - MES
 - Mesh Federation
 - Mesh Network
@@ -7606,7 +7640,7 @@
 - Message Passing
 - Message Patterns
 - Message Processing
-- Message Queue
+- Message Queues
 - Message Reliability
 - Message Retention
 - Message Retry
@@ -7885,6 +7919,7 @@
 - Move Semantics
 - MOVED
 - Moved Blocks
+- Movies
 - Moving Average
 - Mozilla SOPS
 - MPI
@@ -7988,7 +8023,7 @@
 - Multi-Stack
 - Multi-Stage
 - Multi-Stage Attacks
-- Multi-Stage Build
+- Multi-Stage Builds
 - Multi-Stage Pipeline
 - Multi-Step
 - Multi-Stream
@@ -8100,7 +8135,7 @@
 - Namespaces
 - NameSuffix
 - Naming
-- Naming Convention
+- Naming Conventions
 - Naming Standards
 - Nano
 - Nano server
@@ -8138,10 +8173,12 @@
 - Neovim
 - Neptune
 - NER
+- nerdctl
 - Nessus
 - NEST
 - Nested
 - Nested Blocks
+- Nested Containers
 - Nested Data
 - Nested Deployments
 - Nested Groups
@@ -8175,7 +8212,6 @@
 - Netplan
 - Netstat
 - NetWeaver
-- Network
 - Network ACLs
 - Network Administration
 - Network Aliases
@@ -8269,6 +8305,7 @@
 - NetworkManager
 - NetworkPolicies
 - NetworkPolicy
+- Networks
 - NetworkSet
 - Neural Voice
 - Neuron SDK
@@ -8749,7 +8786,7 @@
 - OT
 - OT Security
 - OTA
-- OTA Update
+- OTA Updates
 - OTAP
 - OTEL
 - OTel Arrow
@@ -8796,7 +8833,6 @@
 - Overlay
 - Overlay Networks
 - Overlay2
-- OverlayFS
 - Overprivileged
 - Overprovisioning
 - Override
@@ -9443,6 +9479,7 @@
 - Power Platform
 - Power Query
 - Power Systems
+- POWER10
 - PowerDNS
 - PowerShell
 - PowerShell DSC
@@ -9818,6 +9855,7 @@
 - PXE Boot
 - Py-spy
 - Pybreaker
+- PyCharm
 - Pydantic
 - Pyenv
 - PyMongo
@@ -12151,6 +12189,7 @@
 - System Commands
 - System Configuration
 - System Connections
+- System Containers
 - System Design
 - System Diagnostics
 - System Extensions
@@ -12168,6 +12207,7 @@
 - System Reliability
 - System Replication
 - System Requirements
+- System Reset
 - System Resources
 - System Restore
 - System Roles
@@ -12187,7 +12227,7 @@
 - System.Text.Json
 - SystemAdmin
 - systemctl
-- systemd
+- Systemd
 - Systemd Logs
 - Systemd Timers
 - Systemd-boot
@@ -12892,6 +12932,7 @@
 - Turborepo
 - Turn-Based
 - Tutorial
+- TV Shows
 - Twelve-Factor
 - Twelve-Factor App
 - Twig
@@ -13100,6 +13141,7 @@
 - UseEffect
 - UseImperativeHandle
 - UseMemo
+- USER
 - User Activity
 - User Analytics
 - User Audit
@@ -13159,6 +13201,7 @@
 - UX
 - V Language
 - V-model
+- V4L2
 - VA-API
 - VAAPI
 - VACUUM
@@ -13400,6 +13443,7 @@
 - VoIP
 - Volcano
 - VoLTE
+- VOLUME
 - Volume Expansion
 - Volume Gateway
 - Volume Management
@@ -13453,6 +13497,7 @@
 - Vulkan
 - Vulnerabilities
 - Vulnerability
+- Vulnerability Analysis
 - Vulnerability Assessment
 - Vulnerability Database
 - Vulnerability detection
@@ -13731,6 +13776,7 @@
 - Writing
 - Wrk
 - WSGI
+- WSL
 - WSL 2
 - WSL2
 - WTForms
@@ -13792,6 +13838,7 @@
 - YARP
 - Yield
 - Yjs
+- Yocto
 - YSQL
 - YubiKey
 - YugabyteDB

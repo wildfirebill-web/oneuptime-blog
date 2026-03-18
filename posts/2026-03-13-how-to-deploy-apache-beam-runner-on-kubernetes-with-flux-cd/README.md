@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Apache Beam, Dataflow, Data Pipeline, HelmRelease, Kustomization
+Tags: Flux CD, Kubernetes, GitOps, Apache Beam, Dataflow, Data Pipelines, HelmRelease, Kustomization
 
 Description: Learn how to deploy Apache Beam pipelines on Kubernetes using the Portable Runner managed by Flux CD for GitOps-driven data pipeline execution.
 

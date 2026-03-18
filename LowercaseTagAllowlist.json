@@ -1,4 +1,5 @@
 [
+  "aarch64",
   "abs Function",
   "ack",
   "adapter-node",
@@ -78,6 +79,7 @@
   "boto3",
   "bpftool",
   "bpftrace",
+  "cgroups",
   "cAdvisor",
   "cProfile",
   "cStor",
@@ -464,6 +466,7 @@
   "mysqlbinlog",
   "mysqldump",
   "n8n",
+  "nerdctl",
   "net/http",
   "netcat",
   "netstat",

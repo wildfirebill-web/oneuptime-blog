@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Authentication, Security, Troubleshooting, Debugging, DevOps, Message Queue
+Tags: RabbitMQ, Authentication, Security, Troubleshooting, Debugging, DevOps, Message Queues
 
 Description: Learn how to diagnose and fix common RabbitMQ authentication errors including access refused, permission denied, and credential issues.
 

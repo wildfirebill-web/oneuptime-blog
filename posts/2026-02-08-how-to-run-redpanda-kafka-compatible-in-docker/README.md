@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Redpanda, Kafka, Streaming, Message Queue, DevOps
+Tags: Docker, Redpanda, Kafka, Streaming, Message Queues, DevOps
 
 Description: Deploy Redpanda in Docker as a Kafka-compatible streaming platform without ZooKeeper, JVM, or complex configuration.
 

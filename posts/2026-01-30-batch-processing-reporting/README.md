@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Batch Processing, Reporting, Analytics, Data Pipeline
+Tags: Batch Processing, Reporting, Analytics, Data Pipelines
 
 Description: Learn to implement batch reporting for generating execution summaries and data quality reports.
 

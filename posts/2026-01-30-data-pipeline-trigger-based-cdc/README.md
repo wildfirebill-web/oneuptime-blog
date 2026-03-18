@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipeline, CDC, Database Triggers, Data Capture
+Tags: Data Pipelines, CDC, Database Triggers, Data Capture
 
 Description: Learn to create trigger-based CDC for capturing data changes using database triggers and shadow tables.
 

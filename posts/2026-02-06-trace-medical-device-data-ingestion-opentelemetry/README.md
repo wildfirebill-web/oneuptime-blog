@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Medical Devices, IoT, Data Pipeline
+Tags: OpenTelemetry, Medical Devices, IoT, Data Pipelines
 
 Description: Trace the complete data flow from medical devices through ingestion pipelines to clinical systems using OpenTelemetry distributed tracing.
 

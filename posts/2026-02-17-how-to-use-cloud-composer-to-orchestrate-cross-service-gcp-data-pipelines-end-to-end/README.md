@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Composer, Airflow, Data Pipeline, Data Engineering
+Tags: GCP, Cloud Composer, Airflow, Data Pipelines, Data Engineering
 
 Description: Learn how to use Cloud Composer 2 to orchestrate end-to-end data pipelines that span multiple GCP services including Cloud Storage, BigQuery, Dataflow, and Dataproc.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Squid, Transparent Proxy, iptables, Network, Linux
+Tags: RHEL, Squid, Transparent Proxy, iptables, Networks, Linux
 
 Description: Configure Squid as a transparent proxy on RHEL so client machines are automatically routed through the proxy without any client-side configuration.
 

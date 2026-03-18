@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Grafana, Monitoring, Visualization, Dashboard
+Tags: Podman, Containers, DevOps, Grafana, Monitoring, Visualization, Dashboards
 
 Description: Learn how to run Grafana in a Podman container with persistent dashboards, custom data sources, and provisioned configurations.
 

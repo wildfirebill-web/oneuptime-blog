@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, Pods
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, Pods
 
 Description: Learn how to create a Quadlet .pod unit file to group related containers into a Podman pod managed by systemd.
 

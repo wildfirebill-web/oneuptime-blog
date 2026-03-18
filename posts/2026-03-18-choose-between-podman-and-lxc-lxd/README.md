@@ -37,7 +37,7 @@ lxc exec my-server -- bash
 
 Podman containers share the host kernel and run a single process tree:
 
-```
+```text
 Host Kernel
   └── podman container (nginx)
        └── nginx process
@@ -47,7 +47,7 @@ Host Kernel
 
 LXC/LXD containers share the host kernel but run a full init system:
 
-```
+```text
 Host Kernel
   └── LXD container (my-server)
        └── systemd (PID 1)

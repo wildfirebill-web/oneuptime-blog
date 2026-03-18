@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Apache Pulsar, Message Queue, Streaming, Multi-Tenancy
+Tags: Flux CD, Kubernetes, GitOps, Apache Pulsar, Message Queues, Streaming, Multi-Tenancy
 
 Description: Deploy Apache Pulsar distributed messaging and streaming platform on Kubernetes using Flux CD HelmRelease for GitOps-managed Pulsar clusters.
 

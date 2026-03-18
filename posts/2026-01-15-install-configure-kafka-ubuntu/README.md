@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Kafka, Streaming, Message Queue, Big Data, Tutorial
+Tags: Ubuntu, Kafka, Streaming, Message Queues, Big Data, Tutorial
 
 Description: Comprehensive guide to installing Apache Kafka on Ubuntu for high-throughput distributed streaming and event-driven architectures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, Dependencies, Service Management
+Tags: Podman, Containers, DevOps, Systemd, Dependencies, Service Management
 
 Description: Learn how to configure systemd dependencies between Podman container services for proper startup ordering and failure handling.
 

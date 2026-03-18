@@ -1,10 +1,10 @@
-# How to Fix "exec format error" in Podman (Architecture Mismatch)
+# How to Fix 'exec format error' in Podman (Architecture Mismatch)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Architecture, ARM, Multi-platform
+Tags: Podman, Containers, Architecture, ARM, Multi-Platform
 
-Description: Learn how to fix the "exec format error" in Podman caused by running containers built for a different CPU architecture, and how to build and run multi-architecture images.
+Description: Learn how to fix the 'exec format error' in Podman caused by running containers built for a different CPU architecture, and how to build and run multi-architecture images.
 
 ---
 
@@ -18,13 +18,13 @@ The "exec format error" is a Linux kernel error that occurs when you try to exec
 
 When you see this error, it looks like:
 
-```
+```text
 Error: crun: executable file '/usr/bin/python3' exec format error: OCI runtime error
 ```
 
 Or:
 
-```
+```text
 exec /docker-entrypoint.sh: exec format error
 ```
 

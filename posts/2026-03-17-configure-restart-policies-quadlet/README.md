@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, Restart Policies
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, Restart Policies
 
 Description: Learn how to configure restart policies for Podman containers managed by Quadlet using systemd service directives.
 

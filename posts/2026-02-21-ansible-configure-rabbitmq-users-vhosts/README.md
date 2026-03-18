@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, RabbitMQ, Access Control, Message Queue
+Tags: Ansible, RabbitMQ, Access Control, Message Queues
 
 Description: Automate RabbitMQ user creation, virtual host management, and permission assignment using Ansible for secure multi-tenant messaging.
 

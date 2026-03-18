@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Message Queue, Consumer Groups, Reliable Messaging, Event-Driven
+Tags: Redis, Streams, Message Queues, Consumer Groups, Reliable Messaging, Event-Driven
 
 Description: A comprehensive guide to implementing reliable message queues with Redis Streams, including consumer groups, acknowledgments, dead letter handling, and production-ready patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
 
 Description: Monitor the effectiveness of ICMP and Ping Rules in Calico using metrics and analytics.
 

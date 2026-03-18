@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, RabbitMQ, MassTransit, Message Queue, C#, Microservices
+Tags: .NET, RabbitMQ, MassTransit, Message Queues, C#, Microservices
 
 Description: Learn how to build reliable RabbitMQ consumers using MassTransit in .NET applications with practical examples covering message handling, retry policies, and error handling.
 

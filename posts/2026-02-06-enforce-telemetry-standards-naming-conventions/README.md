@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Standard, Naming Convention, Governance
+Tags: OpenTelemetry, Standard, Naming Conventions, Governance
 
 Description: Enforce consistent telemetry naming conventions and attribute standards across platform teams using validation at multiple layers of the telemetry pipeline.
 

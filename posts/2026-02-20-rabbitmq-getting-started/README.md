@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, AMQP, Exchange, Queue
+Tags: RabbitMQ, Message Queues, AMQP, Exchange, Queue
 
 Description: A beginner's guide to RabbitMQ covering exchanges, queues, bindings, and common messaging patterns.
 

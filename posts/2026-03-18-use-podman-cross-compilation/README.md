@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Containers, Cross-Compilation, Multi-Architecture, DevOps
 
-Description: Learn how to use Podman to cross-compile software for different CPU architectures and operating systems using emulation, multi-platform builds, and cross-compilation toolchains.
+Description: Use Podman to cross-compile software for different CPU architectures using QEMU emulation, multi-platform builds, and cross-compilation toolchains.
 
 ---
 

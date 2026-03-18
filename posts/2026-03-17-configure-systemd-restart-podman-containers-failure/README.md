@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, Restart, Reliability
+Tags: Podman, Containers, DevOps, Systemd, Restart, Reliability
 
 Description: Learn how to configure systemd restart policies for Podman containers to automatically recover from crashes and failures.
 

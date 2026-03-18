@@ -41,7 +41,7 @@ Most applications and system utilities respect the `TZ` environment variable. Th
 
 Common timezone values:
 
-```
+```text
 America/New_York
 America/Chicago
 America/Denver

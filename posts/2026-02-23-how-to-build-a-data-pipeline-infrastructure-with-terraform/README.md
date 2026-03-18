@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Data Pipeline, AWS, ETL, Data Engineering, Infrastructure as Code, Glue
+Tags: Terraform, Data Pipelines, AWS, ETL, Data Engineering, Infrastructure as Code, Glue
 
 Description: Learn how to build a data pipeline infrastructure on AWS using Terraform with S3 data lakes, Glue ETL jobs, Athena queries, and step function orchestration.
 

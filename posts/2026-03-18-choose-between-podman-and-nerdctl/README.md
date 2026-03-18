@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, nerdctl, containerd, Containers, CLI
+Tags: Podman, nerdctl, Containerd, Containers, CLI
 
 Description: Compare Podman and nerdctl as Docker-compatible container CLI tools, examining their architecture, features, and how they integrate with different container runtimes.
 
@@ -20,13 +20,13 @@ This guide compares both tools to help you decide which fits your workflow.
 
 Podman is a standalone tool with its own container management stack:
 
-```
+```text
 podman CLI → conmon (container monitor) → crun/runc → container
 ```
 
 nerdctl is a CLI frontend for the containerd daemon:
 
-```
+```text
 nerdctl CLI → containerd daemon → runc → container
 ```
 

@@ -1,10 +1,10 @@
-# How to Fix "ERRO[0000] cannot find UID/GID" Errors in Podman
+# How to Fix 'ERRO[0000] cannot find UID/GID' Errors in Podman
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, Containers, Linux, User Namespaces, Troubleshooting
 
-Description: A thorough guide to resolving "cannot find UID/GID" errors in Podman, covering subuid/subgid configuration, user namespace mapping, NSS modules, and container user management.
+Description: A thorough guide to resolving 'cannot find UID/GID' errors in Podman, covering subuid/subgid configuration, user namespace mapping, NSS modules, and container user management.
 
 ---
 
@@ -25,13 +25,13 @@ Linux assigns each user a range of subordinate UIDs and GIDs that they can use i
 
 Each line has the format:
 
-```
+```text
 username:start_id:count
 ```
 
 For example:
 
-```
+```text
 jsmith:100000:65536
 ```
 
@@ -99,7 +99,7 @@ cat /etc/subgid
 
 Assign non-overlapping ranges:
 
-```
+```text
 user1:100000:65536
 user2:200000:65536
 user3:300000:65536
@@ -119,7 +119,7 @@ cat /etc/nsswitch.conf
 
 The `passwd` and `group` lines should include appropriate sources:
 
-```
+```text
 passwd: files systemd
 group:  files systemd
 ```
@@ -255,7 +255,7 @@ podman unshare cat /proc/self/gid_map
 
 This should show a mapping like:
 
-```
+```text
          0       1000          1
          1     100000      65536
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Calico, NetworkPolicy, Security, Network
+Tags: Kubernetes, Calico, NetworkPolicy, Security, Networks
 
 Description: Learn how to implement advanced NetworkPolicy rules with Calico including egress filtering, CIDR-based policies, named ports, and global network policies for comprehensive cluster security.
 

@@ -310,7 +310,7 @@ chmod +x vagrant-podman.sh
 
 The Podman provider trades some features for speed:
 
-```
+```text
 Feature              | VirtualBox Provider | Podman Provider
 ---------------------|--------------------|-----------------
 Start time           | 30-120 seconds     | 2-5 seconds

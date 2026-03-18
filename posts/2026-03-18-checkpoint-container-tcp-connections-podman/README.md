@@ -38,7 +38,7 @@ sudo podman container checkpoint my-web-app --tcp-established
 
 Without this flag, if the container has any established TCP connections, the checkpoint will fail:
 
-```
+```text
 Error: checkpointing container: CRIU: TCP connection with established state found
 ```
 
@@ -98,7 +98,7 @@ After restoring, the TCP connections may or may not work depending on:
 
 When CRIU checkpoints a TCP connection, it saves:
 
-```
+```text
 - Local and remote IP addresses and ports
 - TCP state (ESTABLISHED, CLOSE_WAIT, etc.)
 - Send and receive sequence numbers

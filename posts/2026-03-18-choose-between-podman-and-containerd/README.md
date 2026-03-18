@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, containerd, Containers, Kubernetes, Container Runtime
+Tags: Podman, Containerd, Containers, Kubernetes, Container Runtime
 
 Description: Compare Podman and containerd as container runtimes to understand their architectures, use cases, and how each fits into container orchestration and standalone deployment scenarios.
 
@@ -22,7 +22,7 @@ Podman is a user-facing tool that handles the full container lifecycle: pulling 
 
 containerd is a daemon-based runtime that provides a core set of container operations. It is designed to be embedded in higher-level systems. Docker uses containerd as its runtime backend, and Kubernetes uses it as its default container runtime through the CRI (Container Runtime Interface).
 
-```
+```text
 Podman architecture:
   User → podman CLI → conmon → crun/runc → container
 

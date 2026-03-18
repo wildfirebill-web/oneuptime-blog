@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Routing Keys, Message Queue, Exchange Types, Topic Exchange, Direct Exchange, Node.js, Python
+Tags: RabbitMQ, Routing Keys, Message Queues, Exchange Types, Topic Exchange, Direct Exchange, Node.js, Python
 
 Description: Learn how to design and implement effective RabbitMQ routing key strategies for flexible message distribution using direct, topic, and headers exchanges.
 

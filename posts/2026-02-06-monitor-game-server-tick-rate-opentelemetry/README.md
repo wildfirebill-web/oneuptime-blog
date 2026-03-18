@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Gaming, Game Server, Tick Rate, Custom Metrics
+Tags: OpenTelemetry, Gaming, Game Servers, Tick Rate, Custom Metrics
 
 Description: Learn how to build custom OpenTelemetry metrics to track multiplayer game server tick rate and frame processing latency in real time.
 

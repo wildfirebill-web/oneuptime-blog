@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Kafka, Backpressure, Message Queue, Streaming
+Tags: Rust, Kafka, Backpressure, Message Queues, Streaming
 
 Description: Learn how to build robust Kafka consumers in Rust that handle backpressure gracefully, preventing memory exhaustion and ensuring reliable message processing under heavy load.
 

@@ -46,7 +46,7 @@ du -sh * | sort -rh | head -20
 
 Create a `.containerignore` file (or `.dockerignore`) to exclude unnecessary files:
 
-```
+```text
 # .containerignore
 .git
 node_modules

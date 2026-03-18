@@ -37,7 +37,7 @@ The Podman REST API provides container statistics through two main endpoints:
 
 ### All Containers Stats (Libpod)
 
-```
+```text
 GET /v4.0.0/libpod/containers/stats
 ```
 
@@ -49,7 +49,7 @@ This endpoint supports the following query parameters:
 
 ### Single Container Stats (Compat)
 
-```
+```text
 GET /v4.0.0/containers/{name}/stats
 ```
 

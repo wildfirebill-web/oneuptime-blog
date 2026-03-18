@@ -1,10 +1,10 @@
-# How to Fix "Error: invalid reference format" in Podman
+# How to Fix 'Error: invalid reference format' in Podman
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Containers, Docker, Troubleshooting, DevOps
 
-Description: Learn how to diagnose and fix "invalid reference format" errors in Podman caused by malformed image names, variable expansion issues, whitespace, and registry path problems.
+Description: Learn how to diagnose and fix 'invalid reference format' errors in Podman caused by malformed image names, variable expansion issues, whitespace, and registry path problems.
 
 ---
 
@@ -20,13 +20,13 @@ The image reference format follows strict rules: it can contain lowercase letter
 
 A valid image reference follows this pattern:
 
-```
+```text
 [registry/][namespace/]name[:tag][@digest]
 ```
 
 Examples of valid references:
 
-```
+```text
 nginx
 nginx:latest
 docker.io/library/nginx:1.25
@@ -36,7 +36,7 @@ my-registry.io/app@sha256:abc123...
 
 Examples of invalid references:
 
-```
+```text
 My-App:latest          # uppercase letters
 nginx: latest          # space after colon
 my app:v1              # space in name

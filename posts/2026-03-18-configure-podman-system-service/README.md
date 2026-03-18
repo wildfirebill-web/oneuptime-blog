@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, System Service, API, systemd
+Tags: Podman, Containers, DevOps, System Service, API, Systemd
 
 Description: Learn how to configure and manage the Podman system service to enable the REST API and support tools that require a Docker-compatible daemon.
 

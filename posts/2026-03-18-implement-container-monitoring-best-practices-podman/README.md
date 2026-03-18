@@ -251,7 +251,7 @@ def metrics_endpoint():
 
 Track these essential metrics for every container:
 
-```
+```text
 Container Level:
 - CPU usage percentage
 - Memory usage and limits

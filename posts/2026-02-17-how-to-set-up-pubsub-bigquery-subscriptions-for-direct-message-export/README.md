@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, BigQuery, Data Pipeline, Streaming
+Tags: GCP, Pub/Sub, BigQuery, Data Pipelines, Streaming
 
 Description: Learn how to configure Pub/Sub BigQuery subscriptions to write messages directly to BigQuery tables without intermediate processing, reducing pipeline complexity.
 

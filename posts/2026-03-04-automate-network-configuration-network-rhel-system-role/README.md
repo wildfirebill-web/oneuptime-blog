@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Network, Ansible
+Tags: RHEL, System Roles, Networks, Ansible
 
 Description: Use the network RHEL System Role to automate network interface configuration.
 

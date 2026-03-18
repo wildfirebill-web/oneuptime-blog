@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Troubleshooting, Networking, DevOps, Connection Management
+Tags: RabbitMQ, Message Queues, Troubleshooting, Networking, DevOps, Connection Management
 
 Description: Diagnose and resolve RabbitMQ connection reset errors caused by network issues, heartbeat timeouts, and resource limits.
 

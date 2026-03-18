@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Event Streaming, Message Queue, Distributed Systems, Apache
+Tags: Kafka, Event Streaming, Message Queues, Distributed Systems, Apache
 
 Description: A beginner's guide to Apache Kafka covering topics, partitions, consumer groups, and producers for event streaming.
 

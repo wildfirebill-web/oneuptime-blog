@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Message Queue, Production, DevOps, Distributed Systems
+Tags: Kafka, Message Queues, Production, DevOps, Distributed Systems
 
 Description: A comprehensive guide to setting up Apache Kafka for production environments, covering cluster configuration, replication, security, and monitoring.
 

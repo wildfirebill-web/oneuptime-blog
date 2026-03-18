@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Troubleshooting, Distributed Systems, Replication, Message Queue, DevOps
+Tags: Kafka, Apache Kafka, Troubleshooting, Distributed Systems, Replication, Message Queues, DevOps
 
 Description: Learn how to diagnose and fix the InvalidReplicationFactorException in Apache Kafka by understanding replication factors, broker configurations, and topic creation settings.
 

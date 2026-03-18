@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Scratch, Distroless, Base Image, Container Security, Image Optimization
+Tags: Docker, Scratch, Distroless, Base Images, Container Security, Image Optimization
 
 Description: A practical guide to choosing between scratch and distroless Docker base images for production containers
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Observability, Grafana, Monitoring, Dashboard, Hubble
+Tags: Cilium, Observability, Grafana, Monitoring, Dashboards, Hubble
 
 Description: Set up and use Grafana dashboards for Cilium observability, including network flow visualization, policy monitoring, Hubble metrics analysis, and custom dashboard creation for cluster-specific...
 

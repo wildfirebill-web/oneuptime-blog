@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dev Containers, Docker, VS Code, Development Environment, DevEx
+Tags: Dev Containers, Docker, VS Code, Development Environments, DevEx
 
 Description: Learn how to create Dev Containers for consistent development environments, including configuration, features, and IDE integration.
 

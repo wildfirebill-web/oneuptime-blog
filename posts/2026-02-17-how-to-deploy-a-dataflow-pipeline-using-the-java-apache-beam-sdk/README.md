@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Dataflow, Apache Beam, Java, Data Pipeline, ETL
+Tags: GCP, Dataflow, Apache Beam, Java, Data Pipelines, ETL
 
 Description: A complete guide to building and deploying a Google Cloud Dataflow pipeline using the Java Apache Beam SDK with Maven or Gradle.
 

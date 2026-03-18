@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, RabbitMQ, Message Queue, AMQP, DevOps
+Tags: Ubuntu, RabbitMQ, Message Queues, AMQP, DevOps
 
 Description: Learn how to install and configure RabbitMQ on Ubuntu, covering virtual hosts, users, exchanges, queues, and the management web interface.
 

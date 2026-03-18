@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, Unit Files, Service Management
+Tags: Podman, Containers, DevOps, Systemd, Unit Files, Service Management
 
 Description: Learn how to use podman generate systemd to create systemd unit files from existing Podman containers for service management.
 

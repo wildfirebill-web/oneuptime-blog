@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Message Queue, Auto-Reconnection, RabbitMQ, Reliability
+Tags: Go, Message Queues, Auto-Reconnection, RabbitMQ, Reliability
 
 Description: Learn how to build a resilient message queue client in Go that automatically reconnects after failures, with practical examples using RabbitMQ and production-ready patterns.
 

@@ -1,10 +1,10 @@
-# How to Fix "no space left on device" Errors in Podman
+# How to Fix 'no space left on device' Errors in Podman
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, Containers, Linux, Storage, Troubleshooting
 
-Description: A detailed guide to diagnosing and fixing "no space left on device" errors in Podman, including storage driver configuration, pruning strategies, and overlay filesystem tuning.
+Description: A detailed guide to diagnosing and fixing 'no space left on device' errors in Podman, including storage driver configuration, pruning strategies, and overlay filesystem tuning.
 
 ---
 
@@ -177,7 +177,7 @@ podman system df
 
 This shows a breakdown of space used by images, containers, and volumes. The output looks like:
 
-```
+```text
 TYPE           TOTAL  ACTIVE  SIZE     RECLAIMABLE
 Images         45     3       12.3GB   10.1GB (82%)
 Containers     5      2       1.2GB    800MB (66%)

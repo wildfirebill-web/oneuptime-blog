@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipeline, Data Loading, ETL, Data Warehouse
+Tags: Data Pipelines, Data Loading, ETL, Data Warehouse
 
 Description: Learn to implement data loading patterns for efficiently writing data to target systems.
 

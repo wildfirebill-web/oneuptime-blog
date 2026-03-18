@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Pub/Sub, Event-Driven Architecture, GCP, Message Queue, Microservices
+Tags: Google Pub/Sub, Event-Driven Architecture, GCP, Message Queues, Microservices
 
 Description: Learn how to use Google Pub/Sub for event-driven architecture with topics, subscriptions, push/pull delivery, and ordering guarantees.
 

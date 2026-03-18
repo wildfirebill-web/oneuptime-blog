@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, DevOps, Production, Infrastructure, High Availability, Monitoring
+Tags: RabbitMQ, Message Queues, DevOps, Production, Infrastructure, High Availability, Monitoring
 
 Description: A comprehensive guide to setting up RabbitMQ for production environments, covering installation, security hardening, performance tuning, clustering, monitoring, and operational best practices.
 

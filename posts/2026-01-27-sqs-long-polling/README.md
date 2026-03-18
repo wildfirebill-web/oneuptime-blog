@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, Long Polling, Message Queue, Cost Optimization, Distributed Systems, Cloud Architecture
+Tags: AWS, SQS, Long Polling, Message Queues, Cost Optimization, Distributed Systems, Cloud Architecture
 
 Description: A comprehensive guide to implementing long polling in Amazon SQS to reduce costs, decrease latency, and improve message processing efficiency in your distributed systems.
 

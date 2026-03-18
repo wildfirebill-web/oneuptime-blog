@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Message Queue, Consumer Lag, Backlog, Monitoring, Kafka, RabbitMQ
+Tags: OpenTelemetry, Message Queues, Consumer Lag, Backlog, Monitoring, Kafka, RabbitMQ
 
 Description: Learn how to monitor message queue backlog and consumer lag with OpenTelemetry across Kafka, RabbitMQ, and SQS for proactive capacity management.
 

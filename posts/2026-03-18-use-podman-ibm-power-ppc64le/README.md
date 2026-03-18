@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, IBM Power, ppc64le, Containers, Linux, DevOps, Enterprise, POWER10
 
-Description: Learn how to install and run Podman on IBM Power servers with the ppc64le architecture. This guide covers installation, container image compatibility, leveraging Power hardware features, building multi-architecture images, and running AI and database workloads on POWER9 and POWER10 systems.
+Description: Learn to install and run Podman on IBM Power (ppc64le) servers, covering image compatibility, multi-arch builds, and AI workloads on POWER9/POWER10.
 
 ---
 

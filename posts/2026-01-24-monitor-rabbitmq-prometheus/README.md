@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Prometheus, Monitoring, Metrics, Grafana, Observability, Message Queue, DevOps
+Tags: RabbitMQ, Prometheus, Monitoring, Metrics, Grafana, Observability, Message Queues, DevOps
 
 Description: A complete guide to setting up Prometheus monitoring for RabbitMQ, including metric collection, alerting rules, and Grafana dashboards.
 

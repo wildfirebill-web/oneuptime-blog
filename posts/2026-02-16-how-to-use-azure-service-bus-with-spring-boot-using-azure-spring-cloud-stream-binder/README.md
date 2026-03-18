@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Spring Boot, Spring Cloud Stream, Message Queue, Java, Event-Driven, Microservices
+Tags: Azure Service Bus, Spring Boot, Spring Cloud Stream, Message Queues, Java, Event-Driven, Microservices
 
 Description: Learn how to integrate Azure Service Bus with Spring Boot using the Spring Cloud Stream binder for building event-driven microservices with queues and topics.
 

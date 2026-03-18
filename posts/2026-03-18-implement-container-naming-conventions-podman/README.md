@@ -48,7 +48,7 @@ podman ps --format "{{.Names}}"
 
 Use a hierarchical pattern that includes project, environment, and role:
 
-```
+```text
 {project}-{environment}-{role}[-{instance}]
 ```
 
@@ -77,7 +77,7 @@ podman run -d --name myapp-prod-worker-3 my-worker
 
 Pods group related containers, so name them by project and environment:
 
-```
+```text
 {project}-{environment}-pod
 ```
 
@@ -91,7 +91,7 @@ podman pod create --name blog-prod-pod -p 80:80
 
 Volumes store persistent data. Name them by what data they contain:
 
-```
+```text
 {project}-{environment}-{service}-{type}
 ```
 
@@ -110,7 +110,7 @@ podman volume create myapp-staging-redis-data
 
 Networks define communication boundaries:
 
-```
+```text
 {project}-{environment}-{purpose}
 ```
 
@@ -127,7 +127,7 @@ podman network create myapp-staging-backend
 
 For locally built images:
 
-```
+```text
 {registry}/{organization}/{project}-{component}:{version}
 ```
 
@@ -269,7 +269,7 @@ exec /usr/bin/podman "$@"
 
 Apply conventions to Quadlet files as well:
 
-```
+```text
 ~/.config/containers/systemd/
 ├── myapp-prod.network
 ├── myapp-prod-db.container
@@ -285,7 +285,7 @@ Apply conventions to Quadlet files as well:
 
 Maintain a reference document for your team:
 
-```
+```markdown
 ## Container Naming Convention
 
 ### Pattern

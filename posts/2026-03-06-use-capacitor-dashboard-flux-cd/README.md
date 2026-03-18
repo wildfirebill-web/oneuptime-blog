@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Capacitor, Dashboard, Kubernetes, GitOps, Monitoring, UI
+Tags: Flux CD, Capacitor, Dashboards, Kubernetes, GitOps, Monitoring, UI
 
 Description: A practical guide to installing and using the Capacitor Dashboard as a lightweight UI for monitoring and managing Flux CD workloads.
 

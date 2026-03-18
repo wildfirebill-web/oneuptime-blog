@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, SELinux, Volumes, Linux, Security
 
-Description: Learn how to fix "permission denied" errors when mounting volumes in Podman containers on SELinux-enabled systems using the :z and :Z flags, context labels, and proper security policies.
+Description: Learn how to fix 'permission denied' errors when mounting volumes in Podman containers on SELinux-enabled systems using the :z and :Z flags, context labels, and proper security policies.
 
 ---
 
@@ -28,7 +28,7 @@ ls -Z /path/to/your/directory
 
 Output will look something like:
 
-```
+```text
 unconfined_u:object_r:user_home_t:s0 my-data-file
 ```
 

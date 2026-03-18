@@ -34,7 +34,7 @@ podman info --format '{{.Store.VolumePath}}'
 
 The storage directory contains:
 
-```
+```text
 ~/.local/share/containers/storage/
 ├── overlay/          # Container filesystem layers
 ├── overlay-images/   # Image metadata

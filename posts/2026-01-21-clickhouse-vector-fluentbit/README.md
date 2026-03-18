@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Vector, Fluent Bit, Log Streaming, Observability, Data Pipeline
+Tags: ClickHouse, Vector, Fluent Bit, Log Streaming, Observability, Data Pipelines
 
 Description: A comprehensive guide to streaming logs to ClickHouse using Vector and Fluent Bit for high-performance log analytics and observability.
 

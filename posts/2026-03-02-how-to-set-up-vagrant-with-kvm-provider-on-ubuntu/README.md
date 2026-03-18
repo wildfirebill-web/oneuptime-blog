@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Vagrant, KVM, Virtualization, Development Environment
+Tags: Ubuntu, Vagrant, KVM, Virtualization, Development Environments
 
 Description: Configure Vagrant to use KVM as the virtualization provider on Ubuntu instead of VirtualBox, offering better performance and native Linux hypervisor integration.
 

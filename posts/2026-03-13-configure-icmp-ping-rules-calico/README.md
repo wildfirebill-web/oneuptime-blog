@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
 
 Description: A step-by-step guide to configuring ICMP and Ping Rules in Calico.
 

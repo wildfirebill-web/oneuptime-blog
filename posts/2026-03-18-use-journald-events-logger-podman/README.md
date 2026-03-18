@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, journald, systemd, Logging
+Tags: Podman, Containers, DevOps, Monitoring, Events, journald, Systemd, Logging
 
 Description: Learn how to use the journald events logger with Podman to store and query container events through the systemd journal.
 

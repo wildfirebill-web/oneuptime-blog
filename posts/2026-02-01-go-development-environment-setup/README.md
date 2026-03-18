@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Development Environment, Setup, IDE, VS Code, Tools
+Tags: Go, Golang, Development Environments, Setup, IDE, VS Code, Tools
 
 Description: A practical guide to setting up a complete Go development environment with modern tooling, IDE configuration, and best practices for 2026.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, BigQuery, Data Pipeline
+Tags: GCP, Cloud Functions, Pub/Sub, BigQuery, Data Pipelines
 
 Description: Build a real-time data pipeline using Python Cloud Functions triggered by Pub/Sub to ingest, transform, and load streaming data into BigQuery.
 

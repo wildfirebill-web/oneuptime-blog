@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, RabbitMQ, Kubernetes, Message Queue, AMQP, DevOps
+Tags: Talos Linux, RabbitMQ, Kubernetes, Message Queues, AMQP, DevOps
 
 Description: Deploy RabbitMQ message broker on Talos Linux using the RabbitMQ Cluster Operator with clustering, management UI, and persistent queues.
 

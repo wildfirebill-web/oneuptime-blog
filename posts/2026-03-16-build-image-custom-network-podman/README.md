@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Network, Configuration
+Tags: Podman, Containers, DevOps, Container Images, Build, Networks, Configuration
 
 Description: Learn how to configure custom network settings during Podman image builds, including host networking, custom DNS, and proxy configuration.
 

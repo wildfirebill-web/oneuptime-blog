@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, RabbitMQ, Message Queue, Metrics, Observability, Microservices
+Tags: OpenTelemetry, Collector, RabbitMQ, Message Queues, Metrics, Observability, Microservices
 
 Description: Configure the RabbitMQ receiver in OpenTelemetry Collector to monitor message queues, track queue depths, measure consumer performance.
 

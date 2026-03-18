@@ -1,10 +1,10 @@
-# How to Fix "image not known" Errors in Podman
+# How to Fix 'image not known' Errors in Podman
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, Containers, Images, Registry, Troubleshooting
 
-Description: A thorough guide to resolving "image not known" errors in Podman, covering registry configuration, image naming, storage issues, and rootless vs rootful image stores.
+Description: A thorough guide to resolving 'image not known' errors in Podman, covering registry configuration, image naming, storage issues, and rootless vs rootful image stores.
 
 ---
 
@@ -86,12 +86,12 @@ rm ~/.cache/containers/short-name-aliases.conf
 One of the most common causes of "image not known" is pulling an image with `sudo podman` and then trying to use it with rootless `podman`, or vice versa. These have completely separate storage locations.
 
 Rootful images are stored in:
-```
+```text
 /var/lib/containers/storage/
 ```
 
 Rootless images are stored in:
-```
+```text
 ~/.local/share/containers/storage/
 ```
 

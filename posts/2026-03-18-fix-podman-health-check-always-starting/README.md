@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Containers, Health Checks, Monitoring, DevOps
 
-Description: Learn how to fix Podman health checks that remain stuck in the "starting" state due to misconfigured commands, timing issues, permission problems, and missing tools inside containers.
+Description: Learn how to fix Podman health checks that remain stuck in the 'starting' state due to misconfigured commands, timing issues, permission problems, and missing tools inside containers.
 
 ---
 

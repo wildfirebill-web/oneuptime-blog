@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microsoft Purview, Data Lineage, Data Governance, Data Pipeline, Azure Data Factory, Azure Cloud, Metadata Management
+Tags: Microsoft Purview, Data Lineage, Data Governance, Data Pipelines, Azure Data Factory, Azure Cloud, Metadata Management
 
 Description: A practical guide to tracking data lineage across your entire data pipeline using Microsoft Purview for impact analysis and compliance.
 

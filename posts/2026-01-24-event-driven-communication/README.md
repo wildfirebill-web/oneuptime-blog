@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Event-Driven Architecture, Microservices, Kafka, RabbitMQ, Message Queue, Async Communication, DevOps
+Tags: Event-Driven Architecture, Microservices, Kafka, RabbitMQ, Message Queues, Async Communication, DevOps
 
 Description: A practical guide to implementing event-driven communication in microservices using message brokers, event schemas, and reliable delivery patterns.
 

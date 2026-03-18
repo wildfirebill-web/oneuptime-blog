@@ -77,7 +77,7 @@ Key flags explained:
 
 Open your browser and navigate to:
 
-```
+```text
 http://<your-host-ip>:8989
 ```
 
@@ -91,7 +91,7 @@ On first launch, Sonarr will present a clean dashboard ready for configuration.
 
 The root folder tells Sonarr where your TV show library lives:
 
-```
+```text
 Settings > Media Management > Root Folders
   - Click "Add Root Folder"
   - Path: /tv
@@ -102,7 +102,7 @@ Settings > Media Management > Root Folders
 
 Indexers are the search engines Sonarr uses to find episodes. If you use Prowlarr, it can sync indexers automatically. Otherwise, add them manually:
 
-```
+```text
 Settings > Indexers > Add
   - Select your indexer type (Newznab, Torznab, etc.)
   - Enter the indexer URL and API key
@@ -114,7 +114,7 @@ Settings > Indexers > Add
 
 Connect Sonarr to your download client:
 
-```
+```text
 Settings > Download Clients > Add
   - Select your client (SABnzbd, NZBGet, Transmission, qBittorrent, etc.)
   - Host: Use the IP address of your download client
@@ -128,7 +128,7 @@ Settings > Download Clients > Add
 
 Set up consistent file naming for imported episodes:
 
-```
+```text
 Settings > Media Management
   - Enable "Rename Episodes"
   - Standard Episode Format:

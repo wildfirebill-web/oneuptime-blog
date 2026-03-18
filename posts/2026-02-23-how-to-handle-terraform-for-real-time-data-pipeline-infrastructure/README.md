@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Data Pipeline, Streaming, Kinesis, Kafka, Infrastructure as Code
+Tags: Terraform, Data Pipelines, Streaming, Kinesis, Kafka, Infrastructure as Code
 
 Description: Learn how to build real-time data pipeline infrastructure with Terraform, including Kinesis streams, MSK clusters, Lambda processors, and monitoring for streaming data workloads.
 

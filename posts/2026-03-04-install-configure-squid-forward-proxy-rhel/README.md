@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Squid, Proxy, Caching, Network, Linux
+Tags: RHEL, Squid, Proxy, Caching, Networks, Linux
 
 Description: Install and configure Squid as a forward proxy server on RHEL to cache web content, control internet access, and improve network performance.
 

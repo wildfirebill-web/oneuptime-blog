@@ -42,7 +42,7 @@ sudo podman logs counter
 
 You should see incrementing count lines:
 
-```
+```text
 Count: 0
 Count: 1
 Count: 2
@@ -112,7 +112,7 @@ sudo ls /var/lib/containers/storage/overlay-containers/<container-id>/userdata/c
 
 The files include:
 
-```
+```text
 core-*.img        # Process core state
 mm-*.img          # Memory maps
 pages-*.img       # Memory page contents

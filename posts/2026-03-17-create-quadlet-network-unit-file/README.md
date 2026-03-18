@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, Networking
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, Networking
 
 Description: Learn how to create a Quadlet .network unit file to define Podman networks as systemd-managed resources for container communication.
 

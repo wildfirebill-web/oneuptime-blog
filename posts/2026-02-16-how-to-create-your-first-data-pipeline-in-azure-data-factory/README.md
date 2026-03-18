@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Data Factory, Data Pipeline, ETL, Azure, Data Engineering, Cloud
+Tags: Azure Data Factory, Data Pipelines, ETL, Azure, Data Engineering, Cloud
 
 Description: A beginner-friendly walkthrough for creating your first data pipeline in Azure Data Factory to move and transform data in the cloud.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Development Environment, DevOps, Local Development
+Tags: Podman, Containers, Development Environments, DevOps, Local Development
 
 Description: A step-by-step guide to installing Podman and configuring a local containerized development environment on macOS, Linux, and Windows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Redpanda, Kafka, Streaming, Message Queue
+Tags: Flux CD, Kubernetes, GitOps, Redpanda, Kafka, Streaming, Message Queues
 
 Description: Deploy Redpanda Kafka-compatible streaming platform on Kubernetes using Flux CD HelmRelease for GitOps-managed high-performance event streaming.
 

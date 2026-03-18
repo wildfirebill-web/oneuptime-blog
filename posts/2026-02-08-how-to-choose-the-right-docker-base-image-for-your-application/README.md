@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Base Image, Alpine, Debian, Ubuntu, Image Size, Security, Best Practices
+Tags: Docker, Base Images, Alpine, Debian, Ubuntu, Image Size, Security, Best Practices
 
 Description: A practical guide to selecting the best Docker base image for your application based on size, compatibility, and security needs.
 

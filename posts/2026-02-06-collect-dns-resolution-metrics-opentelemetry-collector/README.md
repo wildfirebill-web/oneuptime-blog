@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, DNS, Network, Resolution, Metrics, Observability, Monitoring
+Tags: OpenTelemetry, Collector, DNS, Networks, Resolution, Metrics, Observability, Monitoring
 
 Description: Learn how to collect DNS resolution metrics using the OpenTelemetry Collector to monitor query latency, failure rates, and resolver health.
 

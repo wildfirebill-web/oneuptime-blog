@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: CDC, Data Pipeline, Database, Streaming
+Tags: CDC, Data Pipelines, Database, Streaming
 
 Description: Learn how to implement change data capture for real-time data synchronization.
 

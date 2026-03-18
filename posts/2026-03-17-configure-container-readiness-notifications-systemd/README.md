@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, Readiness, Health Checks
+Tags: Podman, Containers, DevOps, Systemd, Readiness, Health Checks
 
 Description: Learn how to configure Podman container readiness notifications with systemd so dependent services start only after containers are fully ready.
 

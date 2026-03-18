@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Data Transfer Service, ETL, Data Pipeline, Troubleshooting
+Tags: GCP, BigQuery, Data Transfer Service, ETL, Data Pipelines, Troubleshooting
 
 Description: Step-by-step guide to diagnosing and resolving BigQuery Data Transfer Service runs that get stuck in pending state and never complete.
 

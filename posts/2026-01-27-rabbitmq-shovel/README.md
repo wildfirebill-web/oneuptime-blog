@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Shovel, Federation, Distributed Systems, DevOps, Messaging, Cross-Cluster
+Tags: RabbitMQ, Message Queues, Shovel, Federation, Distributed Systems, DevOps, Messaging, Cross-Cluster
 
 Description: A comprehensive guide to building RabbitMQ Shovel for reliable message transfer between brokers.
 

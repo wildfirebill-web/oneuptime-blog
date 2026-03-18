@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
 
 Description: Implement zero trust security using ICMP and Ping Rules in Calico.
 

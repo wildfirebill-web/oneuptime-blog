@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, ActiveMQ, Artemis, Message Queue, JMS, AMQP
+Tags: Flux CD, Kubernetes, GitOps, ActiveMQ, Artemis, Message Queues, JMS, AMQP
 
 Description: Deploy the ActiveMQ Artemis Operator for enterprise messaging on Kubernetes using Flux CD HelmRelease for GitOps-managed JMS brokers.
 

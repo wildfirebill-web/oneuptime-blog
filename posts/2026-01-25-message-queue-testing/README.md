@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Message Queue, RabbitMQ, Testing, Integration Testing, DevOps
+Tags: Message Queues, RabbitMQ, Testing, Integration Testing, DevOps
 
 Description: Learn to test message queue integrations effectively, including producer and consumer testing, dead letter queue handling, retry logic, and message ordering verification.
 

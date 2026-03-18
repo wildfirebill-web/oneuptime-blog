@@ -261,7 +261,7 @@ podman system df -v
 
 Example output:
 
-```
+```text
 TYPE           TOTAL  ACTIVE  SIZE     RECLAIMABLE
 Images         15     5       4.2GB    2.8GB (66%)
 Containers     8      3       512MB    256MB (50%)

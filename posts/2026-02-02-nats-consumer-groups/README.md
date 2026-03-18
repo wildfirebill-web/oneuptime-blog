@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Consumer Groups, Message Queue, Distributed Systems, Scalability
+Tags: NATS, Consumer Groups, Message Queues, Distributed Systems, Scalability
 
 Description: Learn how to implement and manage consumer groups in NATS for distributed message processing, load balancing, and horizontal scaling of your messaging workloads.
 

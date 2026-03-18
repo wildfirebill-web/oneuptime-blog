@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Go, Golang, Build Optimization, Layer Caching, Multi-Stage Build
+Tags: Docker, Go, Golang, Build Optimization, Layer Caching, Multi-Stage Builds
 
 Description: Optimize Docker builds for Go applications with module caching and compilation strategies
 

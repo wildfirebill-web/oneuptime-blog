@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Data Fusion, BigQuery, ETL, Data Pipeline, Data Integration
+Tags: GCP, Cloud Data Fusion, BigQuery, ETL, Data Pipelines, Data Integration
 
 Description: A practical guide to configuring Cloud Data Fusion pipelines that load data from various sources into BigQuery tables on Google Cloud Platform.
 

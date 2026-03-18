@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Message Queue, Kafka, RabbitMQ, Async Communication, Event-Driven, Reliability, Dead Letter Queue
+Tags: Microservices, Message Queues, Kafka, RabbitMQ, Async Communication, Event-Driven, Reliability, Dead Letter Queue
 
 Description: Learn how to prevent and recover from message loss in asynchronous communication systems, including idempotency, acknowledgments, and dead letter queues.
 

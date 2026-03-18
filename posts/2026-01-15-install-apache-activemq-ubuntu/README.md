@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, ActiveMQ, Message Queue, JMS, Tutorial
+Tags: Ubuntu, ActiveMQ, Message Queues, JMS, Tutorial
 
 Description: Complete guide to installing and configuring Apache ActiveMQ message broker on Ubuntu.
 

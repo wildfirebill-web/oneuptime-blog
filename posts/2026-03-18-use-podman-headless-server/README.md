@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Headless Server, Containers, Linux, DevOps, Systemd, Production, SSH
 
-Description: Learn how to install, configure, and manage Podman on headless Linux servers without a graphical interface. This guide covers remote management via SSH, systemd integration, auto-start containers, monitoring, and production best practices.
+Description: Learn to install and manage Podman on headless Linux servers, covering SSH remote management, systemd integration, auto-start containers, and monitoring.
 
 ---
 

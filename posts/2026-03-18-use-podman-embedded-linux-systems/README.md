@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Embedded Linux, Containers, Yocto, Buildroot, DevOps, OTA Updates, Industrial
 
-Description: Learn how to integrate and run Podman on embedded Linux systems built with Yocto Project and Buildroot. This guide covers adding Podman to custom Linux images, creating minimal container images for embedded targets, OTA container updates, and production deployment patterns for resource-constrained embedded hardware.
+Description: Learn to run Podman on embedded Linux systems built with Yocto and Buildroot, covering custom images, OTA updates, and production deployment patterns.
 
 ---
 

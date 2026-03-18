@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Clustering, High Availability, Troubleshooting, Message Queue
+Tags: RabbitMQ, Clustering, High Availability, Troubleshooting, Message Queues
 
 Description: Learn how to diagnose and resolve node down errors in RabbitMQ clusters to maintain high availability.
 

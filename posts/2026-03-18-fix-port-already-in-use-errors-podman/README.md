@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Containers, Networking, Troubleshooting, DevOps
 
-Description: Learn how to diagnose and resolve "port already in use" errors in Podman, including finding conflicting processes, managing container port mappings, and handling rootless networking constraints.
+Description: Learn how to diagnose and resolve 'port already in use' errors in Podman, including finding conflicting processes, managing container port mappings, and handling rootless networking constraints.
 
 ---
 
@@ -24,13 +24,13 @@ podman run -d -p 8080:80 nginx
 
 This command maps host port 8080 to container port 80. If another process is already listening on host port 8080, Podman will fail with:
 
-```
+```text
 Error: rootlessport cannot expose privileged port 80, you can add 'net.ipv4.ip_unprivileged_port_start=80' to /etc/sysctl.conf, or choose a larger port number (>= 1024): listen tcp 0.0.0.0:80: bind: permission denied
 ```
 
 Or:
 
-```
+```text
 Error: unable to start container: port 8080 is already in use
 ```
 
@@ -47,7 +47,7 @@ ss -tlnp | grep 8080
 
 The output will show the process ID and name:
 
-```
+```text
 LISTEN  0  511  0.0.0.0:8080  0.0.0.0:*  users:(("nginx",pid=12345,fd=6))
 ```
 

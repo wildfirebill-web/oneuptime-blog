@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Vector, Logging, Metrics, Observability, GitOps, Kubernetes, Data Pipeline
+Tags: Flux CD, Vector, Logging, Metrics, Observability, GitOps, Kubernetes, Data Pipelines
 
 Description: A practical guide to deploying Vector on Kubernetes using Flux CD for high-performance observability data collection, transformation, and routing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, RabbitMQ, Message Queue, DevOps
+Tags: Ansible, RabbitMQ, Message Queues, DevOps
 
 Description: Step-by-step guide to automating RabbitMQ installation and basic configuration using Ansible for reliable message queuing.
 

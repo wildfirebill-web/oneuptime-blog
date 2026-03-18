@@ -76,7 +76,7 @@ Key flags explained:
 
 Open your browser and go to:
 
-```
+```text
 http://<your-host-ip>:8096
 ```
 
@@ -117,7 +117,7 @@ podman run -d \
 
 After starting the container with GPU access, enable hardware transcoding in the Jellyfin dashboard:
 
-```
+```text
 Dashboard > Playback > Transcoding
   - Hardware acceleration: VA-API
   - VA-API Device: /dev/dri/renderD128

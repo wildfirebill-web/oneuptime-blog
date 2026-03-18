@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Config Management Plugins, Build Environment
+Tags: ArgoCD, GitOps, Kubernetes, Config Management Plugins, Build Environments
 
 Description: Learn how to access and use ArgoCD build environment variables in custom Config Management Plugins for dynamic manifest generation with full application context.
 

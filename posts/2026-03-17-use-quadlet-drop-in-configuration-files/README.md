@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, Drop-In, Configuration
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, Drop-In, Configuration
 
 Description: Learn how to use systemd drop-in files to override and extend Quadlet container configurations without modifying the original files.
 

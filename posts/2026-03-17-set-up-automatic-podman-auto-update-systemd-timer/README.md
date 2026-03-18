@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, systemd, Timers
+Tags: Podman, Containers, DevOps, Auto-Update, Systemd, Timers
 
 Description: Learn how to set up the systemd timer that automatically runs podman auto-update to keep containers current.
 

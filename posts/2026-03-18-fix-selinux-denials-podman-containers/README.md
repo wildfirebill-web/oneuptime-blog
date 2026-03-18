@@ -20,7 +20,7 @@ The temptation to run `setenforce 0` and disable SELinux is strong, but doing so
 
 Every file and process on an SELinux-enabled system has a security context with four components:
 
-```
+```text
 user:role:type:level
 ```
 
@@ -50,7 +50,7 @@ sudo ausearch -m avc -ts recent
 
 This shows Access Vector Cache (AVC) messages with details about what was denied. A typical denial looks like:
 
-```
+```text
 type=AVC msg=audit(1710700000.123:456): avc:  denied  { read } for
 pid=12345 comm="nginx" name="index.html" dev="sda1" ino=789
 scontext=system_u:system_r:container_t:s0:c123,c456
@@ -167,7 +167,7 @@ sudo ausearch -m avc -ts recent | audit2allow -m mycontainer
 
 This outputs a policy module. Review it carefully:
 
-```
+```text
 module mycontainer 1.0;
 
 require {

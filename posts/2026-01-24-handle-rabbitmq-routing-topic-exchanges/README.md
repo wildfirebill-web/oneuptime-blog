@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Topic Exchange, Routing, Microservices, Event-Driven Architecture
+Tags: RabbitMQ, Message Queues, Topic Exchange, Routing, Microservices, Event-Driven Architecture
 
 Description: Master RabbitMQ topic exchanges to implement flexible message routing patterns using wildcards and routing keys.
 

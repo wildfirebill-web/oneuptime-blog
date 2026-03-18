@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Troubleshooting, Receiver, Network, Debugging
+Tags: OpenTelemetry, Collector, Troubleshooting, Receiver, Networks, Debugging
 
 Description: Step-by-step guide to diagnosing and fixing connection drops in OpenTelemetry Collector receivers with practical debugging techniques and configuration solutions.
 

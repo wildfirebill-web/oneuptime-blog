@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Quorum Queues, Message Queue, High Availability, Distributed Systems, Raft, Clustering
+Tags: RabbitMQ, Quorum Queues, Message Queues, High Availability, Distributed Systems, Raft, Clustering
 
 Description: A comprehensive guide to configuring RabbitMQ quorum queues for high availability and data safety in distributed messaging systems.
 

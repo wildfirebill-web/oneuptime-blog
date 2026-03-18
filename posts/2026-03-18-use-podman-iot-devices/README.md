@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, IoT, Containers, Linux, Embedded, Sensors, MQTT, Raspberry Pi, DevOps
 
-Description: Learn how to deploy and manage Podman containers on IoT devices for sensor data collection, MQTT messaging, and local processing. This guide covers installation on resource-constrained IoT hardware, lightweight container images, sensor integration, OTA updates, and security hardening for connected devices.
+Description: Learn to deploy Podman containers on IoT devices for sensor data, MQTT messaging, and local processing, with lightweight images, OTA updates, and security.
 
 ---
 

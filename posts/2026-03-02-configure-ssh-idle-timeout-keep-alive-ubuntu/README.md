@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, SSH, Network, Server Administration
+Tags: Ubuntu, SSH, Networks, Server Administration
 
 Description: Configure SSH idle timeout and keep-alive settings on Ubuntu to disconnect stale sessions automatically and prevent connections from dropping due to network inactivity.
 

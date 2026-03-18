@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ETL, Data Pipeline, Data Engineering, Architecture
+Tags: ETL, Data Pipelines, Data Engineering, Architecture
 
 Description: Learn how to design extract, transform, load pipelines for data integration and warehousing.
 

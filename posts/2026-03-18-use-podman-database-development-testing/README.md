@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Database, PostgreSQL, MySQL, MongoDB, Testing
 
-Description: Learn how to use Podman to run databases for local development and testing, covering PostgreSQL, MySQL, MongoDB, and Redis with data persistence, initialization scripts, and automated testing workflows.
+Description: Learn how to use Podman to run databases for local development and testing, covering PostgreSQL, MySQL, MongoDB, Redis, data persistence, and test workflows.
 
 ---
 

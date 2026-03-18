@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Air-Gapped, Containers, Security, Linux, DevOps, Offline, Registry, Compliance
 
-Description: Learn how to deploy and manage Podman containers in air-gapped environments with no internet connectivity. This guide covers building offline image bundles, running a private registry, image verification, offline builds, and operational workflows for secure, disconnected infrastructure.
+Description: Deploy and manage Podman containers in air-gapped environments with no internet access, covering offline image bundles, private registries, and image verification.
 
 ---
 

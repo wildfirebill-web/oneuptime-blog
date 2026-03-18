@@ -129,7 +129,7 @@ vulnerabilities:
 
 Or use a simple ignore file:
 
-```
+```text
 # .trivyignore
 # Accepted risks
 CVE-2023-12345

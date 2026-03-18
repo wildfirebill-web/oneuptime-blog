@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Prometheus, SNMP, Monitoring, Network, Exporter, Grafana
+Tags: Docker, Prometheus, SNMP, Monitoring, Networks, Exporter, Grafana
 
 Description: Deploy the Prometheus SNMP Exporter in Docker to collect metrics from network devices and visualize them with Grafana dashboards.
 

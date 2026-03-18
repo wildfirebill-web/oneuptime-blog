@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Power Automate, Azure Data Lake, Power BI, Data Pipeline, ETL, Analytics, Azure
+Tags: Power Automate, Azure Data Lake, Power BI, Data Pipelines, ETL, Analytics, Azure
 
 Description: Build an end-to-end data pipeline that collects data through Power Automate, stores it in Azure Data Lake, transforms it, and visualizes it in Power BI.
 

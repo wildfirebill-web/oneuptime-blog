@@ -234,25 +234,25 @@ podman run -d \
 
 **Least Connections:**
 
-```
+```text
 balance leastconn
 ```
 
 **Source IP Hash:**
 
-```
+```text
 balance source
 ```
 
 **URI Hash:**
 
-```
+```text
 balance uri
 ```
 
 **Random:**
 
-```
+```text
 balance random
 ```
 
@@ -304,7 +304,7 @@ upstream backend_pool {
 
 For HAProxy:
 
-```
+```text
 server backend3 backend-3:80 check disabled
 ```
 

@@ -37,7 +37,7 @@ If IP connectivity works but DNS does not, the problem is specifically with DNS 
 
 The most common cause of DNS failures in Podman containers is `systemd-resolved`. On many modern Linux distributions (Ubuntu, Fedora, Arch), DNS is handled by systemd-resolved, which listens on `127.0.0.53`. The host's `/etc/resolv.conf` points to this address:
 
-```
+```text
 nameserver 127.0.0.53
 ```
 

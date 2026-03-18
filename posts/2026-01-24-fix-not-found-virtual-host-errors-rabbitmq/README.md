@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Virtual Hosts, DevOps, Troubleshooting, Multi-Tenancy
+Tags: RabbitMQ, Message Queues, Virtual Hosts, DevOps, Troubleshooting, Multi-Tenancy
 
 Description: Diagnose and resolve RabbitMQ virtual host not found errors by understanding vhost configuration, permissions, and connection settings.
 

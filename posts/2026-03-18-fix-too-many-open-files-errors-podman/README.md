@@ -1,10 +1,10 @@
-# How to Fix "too many open files" Errors in Podman
+# How to Fix 'too many open files' Errors in Podman
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Containers, Linux, Troubleshooting, DevOps
 
-Description: Learn how to diagnose and fix "too many open files" errors in Podman containers by adjusting ulimits, tuning kernel parameters, and configuring container runtime settings.
+Description: Learn how to diagnose and fix 'too many open files' errors in Podman containers by adjusting ulimits, tuning kernel parameters, and configuring container runtime settings.
 
 ---
 
@@ -38,7 +38,7 @@ When Podman launches a container, it inherits ulimit values from the host or fro
 
 The error typically looks like this in container logs:
 
-```
+```text
 Error: too many open files
 accept4: too many open files
 socket: too many open files
@@ -104,7 +104,7 @@ sudo sysctl --system
 
 For rootless Podman, you also need to ensure your user account has adequate limits. Edit `/etc/security/limits.conf`:
 
-```
+```ini
 your-username  soft  nofile  65535
 your-username  hard  nofile  65535
 ```

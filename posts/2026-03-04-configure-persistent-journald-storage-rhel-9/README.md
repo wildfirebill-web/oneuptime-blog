@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, journald, systemd, Logging, Linux
+Tags: RHEL, journald, Systemd, Logging, Linux
 
 Description: Configure persistent journald storage on RHEL 9 so logs survive reboots.
 

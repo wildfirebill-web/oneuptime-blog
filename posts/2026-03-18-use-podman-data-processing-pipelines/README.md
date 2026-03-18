@@ -18,7 +18,7 @@ Data processing pipelines move data through a series of transformation stages, f
 
 A containerized data pipeline consists of discrete stages connected through shared volumes or network communication. Each stage is a container with a specific responsibility:
 
-```
+```text
 [Extract] -> [Validate] -> [Transform] -> [Enrich] -> [Load]
    |             |              |             |          |
 Container 1  Container 2  Container 3  Container 4  Container 5

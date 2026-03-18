@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, APT, Package Caching, Network, System Administration
+Tags: Ubuntu, APT, Package Caching, Networks, System Administration
 
 Description: Learn how to install and configure APT Cacher NG on Ubuntu to cache Debian and Ubuntu package downloads, reducing bandwidth usage and speeding up package installations across multiple machines.
 

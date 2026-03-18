@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Consumer, Backpressure, Performance, Java, Scaling, Throttling, Message Queue
+Tags: Kafka, Apache Kafka, Consumer, Backpressure, Performance, Java, Scaling, Throttling, Message Queues
 
 Description: A comprehensive guide to handling backpressure in Apache Kafka consumers, including detection strategies, consumer configuration, flow control patterns, and scaling techniques.
 

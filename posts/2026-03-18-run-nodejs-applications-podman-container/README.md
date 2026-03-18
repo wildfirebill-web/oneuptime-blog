@@ -76,7 +76,7 @@ app.listen(PORT, '0.0.0.0', () => {
 
 Create a `.dockerignore` file to exclude unnecessary files from the build context:
 
-```
+```text
 # .dockerignore
 # Exclude files that should not be copied into the container image
 

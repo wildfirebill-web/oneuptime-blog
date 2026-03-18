@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, ChromeOS, Containers, Linux, DevOps, Crostini, Development
 
-Description: Learn how to install and use Podman on ChromeOS using the built-in Linux development environment. This guide covers setup, rootless containers, networking, and practical workflows for running containerized applications on your Chromebook.
+Description: Learn how to install and use Podman on ChromeOS via the built-in Linux environment, covering setup, rootless containers, networking, and practical workflows.
 
 ---
 

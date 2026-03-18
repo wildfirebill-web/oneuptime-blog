@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Astro, Containerization, Node.js, Static Site, SSR, Multi-Stage Build
+Tags: Docker, Astro, Containerization, Node.js, Static Site, SSR, Multi-Stage Builds
 
 Description: Build Docker images for Astro applications covering both static output and SSR server modes
 

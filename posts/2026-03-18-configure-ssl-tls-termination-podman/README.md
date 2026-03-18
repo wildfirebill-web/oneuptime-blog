@@ -33,7 +33,7 @@ openssl version
 
 In a TLS termination setup, the architecture looks like this:
 
-```
+```text
 Client (HTTPS) --> Reverse Proxy (terminates TLS) --> Backend Container (HTTP)
 ```
 

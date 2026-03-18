@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IoT, IoT Analytics, Data Processing, Data Pipeline, Analytics
+Tags: AWS, IoT, IoT Analytics, Data Processing, Data Pipelines, Analytics
 
 Description: A practical guide to using AWS IoT Analytics to build data pipelines that ingest, process, store, and analyze IoT device data at scale.
 

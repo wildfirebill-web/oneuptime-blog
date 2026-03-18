@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Connection Blocked, Troubleshooting, Memory Management, Flow Control, Message Queue, Performance
+Tags: RabbitMQ, Connection Blocked, Troubleshooting, Memory Management, Flow Control, Message Queues, Performance
 
 Description: Learn how to diagnose and resolve RabbitMQ connection blocked errors caused by memory pressure, disk space issues, and flow control mechanisms.
 

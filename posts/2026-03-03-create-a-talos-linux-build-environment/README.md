@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Build Environment, Development, Docker, Toolchain
+Tags: Talos Linux, Build Environments, Development, Docker, Toolchain
 
 Description: Complete guide to setting up a development build environment for Talos Linux, including all required tools, dependencies, and configuration for compiling Talos from source.
 

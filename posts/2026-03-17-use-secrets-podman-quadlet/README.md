@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Quadlet, systemd
+Tags: Podman, Containers, DevOps, Secrets, Quadlet, Systemd
 
 Description: Learn how to use Podman secrets with Quadlet unit files for systemd-managed containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, DisconnectException, Troubleshooting, Network, Connection, Configuration
+Tags: Apache Kafka, DisconnectException, Troubleshooting, Networks, Connection, Configuration
 
 Description: Learn how to diagnose and fix DisconnectException errors in Kafka, including network issues, broker problems, and client configuration.
 

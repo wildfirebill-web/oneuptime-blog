@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Spring AMQP, RabbitMQ, Message Queue, Microservices, Event-Driven
+Tags: Java, Spring Boot, Spring AMQP, RabbitMQ, Message Queues, Microservices, Event-Driven
 
 Description: Learn how to build robust message consumers with Spring AMQP and RabbitMQ. This guide covers listener configuration, error handling, message acknowledgment, and production-ready patterns.
 

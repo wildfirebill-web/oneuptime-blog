@@ -73,7 +73,7 @@ Key flags explained:
 
 Open your browser:
 
-```
+```text
 http://<your-host-ip>:7878
 ```
 
@@ -85,7 +85,7 @@ Radarr will present a clean dashboard. The first time you access it, you will ne
 
 ### Add a Root Folder
 
-```
+```text
 Settings > Media Management > Root Folders
   - Click "Add Root Folder"
   - Path: /movies
@@ -96,7 +96,7 @@ Settings > Media Management > Root Folders
 
 Consistent naming helps media servers like Plex and Jellyfin match metadata correctly:
 
-```
+```text
 Settings > Media Management
   - Enable "Rename Movies"
   - Standard Movie Format:
@@ -108,7 +108,7 @@ Settings > Media Management
 
 ### Add Indexers
 
-```
+```text
 Settings > Indexers > Add
   - Select your indexer type (Newznab for Usenet, Torznab for torrents)
   - Enter the URL and API key
@@ -121,7 +121,7 @@ If you use Prowlarr as an indexer manager, it can push indexer configurations to
 
 ### Add a Download Client
 
-```
+```text
 Settings > Download Clients > Add
   - Select your download client type
   - Host: The IP or hostname of your client
@@ -135,7 +135,7 @@ Settings > Download Clients > Add
 
 Radarr comes with default quality profiles, but you can customize them:
 
-```
+```text
 Settings > Profiles
   - Edit an existing profile or create a new one
   - Drag quality tiers to set preference order
@@ -162,7 +162,7 @@ From the Radarr dashboard:
 
 If you already have movies on disk:
 
-```
+```text
 Movies > Library Import
   - Point it to /movies
   - Radarr will scan the directory and match folders to movies
@@ -202,7 +202,7 @@ On a shared network, use container names as hostnames. For example, if your down
 
 Radarr can notify you when movies are grabbed, downloaded, or upgraded:
 
-```
+```text
 Settings > Connect > Add
   - Choose a notification type (Email, Slack, Discord, Telegram, etc.)
   - Configure the connection details

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Chrony, NTP, Network, System Administration
+Tags: Ubuntu, Chrony, NTP, Networks, System Administration
 
 Description: Configure Ubuntu as an NTP time server using chrony to serve accurate time to client machines on your network, with proper access controls and monitoring.
 

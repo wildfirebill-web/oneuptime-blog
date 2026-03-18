@@ -92,7 +92,7 @@ Key flags explained:
 
 After the container starts, Plex needs a minute to initialize its database. Then open your browser:
 
-```
+```text
 http://<your-host-ip>:32400/web
 ```
 
@@ -164,7 +164,7 @@ After starting with GPU access, enable hardware transcoding in the Plex web inte
 
 After initial setup, adjust these settings in the Plex web interface for better performance:
 
-```
+```text
 Settings > Library
   - Enable "Scan my library automatically" for new media detection
   - Enable "Run a partial scan when changes are detected"

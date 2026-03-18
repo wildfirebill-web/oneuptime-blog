@@ -57,7 +57,7 @@ tar tzf /tmp/web-app-checkpoint.tar.gz
 
 The archive includes:
 
-```
+```text
 checkpoint/          # CRIU image files
   core-1.img         # Process core state
   mm-1.img           # Memory maps

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Data Factory, Azure Databricks, Data Pipeline, ETL, Data Engineering, Spark, Orchestration
+Tags: Azure Data Factory, Azure Databricks, Data Pipelines, ETL, Data Engineering, Spark, Orchestration
 
 Description: Build an end-to-end data pipeline using Azure Data Factory to orchestrate Azure Databricks notebooks for scalable data transformations.
 

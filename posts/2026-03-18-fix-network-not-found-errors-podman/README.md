@@ -1,10 +1,10 @@
-# How to Fix "network not found" Errors in Podman
+# How to Fix 'network not found' Errors in Podman
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, Containers, Networking, CNI, Troubleshooting
 
-Description: A complete guide to fixing "network not found" errors in Podman, covering network backends, CNI vs Netavark migration, rootless networking, and network configuration files.
+Description: A complete guide to fixing 'network not found' errors in Podman, covering network backends, CNI vs Netavark migration, rootless networking, and network configuration files.
 
 ---
 
@@ -78,24 +78,24 @@ podman network create --disable-dns mynetwork
 Like images, networks are stored separately for rootful and rootless Podman. A network created with `sudo podman network create mynet` is not visible to rootless `podman`.
 
 Rootful network configs (Netavark):
-```
+```text
 /etc/containers/networks/
 ```
 
 Rootless network configs (Netavark):
-```
+```text
 ~/.config/containers/networks/
 ```
 
 For CNI backend, the paths are:
 
 Rootful:
-```
+```text
 /etc/cni/net.d/
 ```
 
 Rootless:
-```
+```text
 ~/.config/cni/net.d/
 ```
 

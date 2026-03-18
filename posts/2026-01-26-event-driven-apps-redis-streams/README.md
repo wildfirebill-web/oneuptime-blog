@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Event-Driven, Message Queue, Consumer Groups, Microservices
+Tags: Redis, Streams, Event-Driven, Message Queues, Consumer Groups, Microservices
 
 Description: Learn how to build event-driven applications using Redis Streams for reliable message delivery, consumer groups, and event sourcing. This guide covers producers, consumers, and handling failures.
 

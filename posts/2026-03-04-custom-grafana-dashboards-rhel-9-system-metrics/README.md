@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Grafana, Dashboard, Monitoring
+Tags: RHEL, Grafana, Dashboards, Monitoring
 
 Description: Create custom Grafana dashboards for visualizing RHEL 9 system metrics.
 

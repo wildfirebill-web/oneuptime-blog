@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, JetStream, Message Queue, Persistence, Distributed Systems
+Tags: NATS, JetStream, Message Queues, Persistence, Distributed Systems
 
 Description: Learn how to use NATS JetStream for persistent messaging with streams, consumers, and exactly-once delivery semantics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, LibreNMS, Monitoring, SNMP, Network, Linux
+Tags: RHEL, LibreNMS, Monitoring, SNMP, Networks, Linux
 
 Description: Install LibreNMS on RHEL with Nginx, PHP-FPM, and MariaDB to create a full-featured network monitoring system with auto-discovery and alerting.
 

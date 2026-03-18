@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Grafana, Dashboard, Observability, ConfigMaps
+Tags: Flux CD, Kubernetes, GitOps, Grafana, Dashboards, Observability, ConfigMaps
 
 Description: Learn how to manage Grafana dashboards as code in Kubernetes using ConfigMaps and Flux CD, enabling version-controlled, automatically reconciled dashboard deployments.
 

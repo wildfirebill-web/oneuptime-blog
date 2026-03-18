@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Dataflow, Apache Beam, Python, Data Pipeline, ETL
+Tags: GCP, Dataflow, Apache Beam, Python, Data Pipelines, ETL
 
 Description: A complete guide to building and deploying a Google Cloud Dataflow pipeline using the Python Apache Beam SDK from development to production.
 

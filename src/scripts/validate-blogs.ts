@@ -2127,6 +2127,7 @@ function checkTagNormalization(blogsJson: BlogEntry[]): void {
     'ps|pss', 'vm|vms', 'vms|vmss',
     'label|labels', 'join|joins', 'array|arrays',
     'datasource|datasources',
+    'user|users', 'volume|volumes',
   ]);
 
   for (const key of normalizedKeys) {
@@ -2151,8 +2152,17 @@ function checkTagNormalization(blogsJson: BlogEntry[]): void {
     }
   }
 
+  // Allowed casing variants — these intentionally differ (e.g. Dockerfile instructions
+  // like SHELL, ENTRYPOINT, HEALTHCHECK vs general terms Shell, Entrypoint, HealthCheck;
+  // Redis commands like EXEC vs general Exec).
+  const allowedCasingVariants = new Set([
+    'shell', 'exec', 'entrypoint', 'healthcheck',
+  ]);
+
   // Find case-variant groups (same lowercase, different casing)
-  const caseVariants = Array.from(tagVariants.entries()).filter(([_, variants]) => variants.size > 1);
+  const caseVariants = Array.from(tagVariants.entries()).filter(
+    ([normalized, variants]) => variants.size > 1 && !allowedCasingVariants.has(normalized)
+  );
 
   const hasIssues = caseVariants.length > 0 || pluralGroups.length > 0;
 

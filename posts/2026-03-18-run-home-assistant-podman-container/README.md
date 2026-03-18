@@ -71,7 +71,7 @@ Key flags explained:
 
 After the container starts, Home Assistant needs a minute or two to initialize. Then open your browser and navigate to the setup wizard:
 
-```
+```text
 http://<your-host-ip>:8123
 ```
 

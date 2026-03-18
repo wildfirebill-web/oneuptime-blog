@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Performance, Optimization, AMQP, Microservices, Backend
+Tags: RabbitMQ, Message Queues, Performance, Optimization, AMQP, Microservices, Backend
 
 Description: A comprehensive guide to optimizing RabbitMQ performance for production workloads.
 

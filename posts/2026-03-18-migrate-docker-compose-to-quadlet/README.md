@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Quadlet, Docker Compose, Migration, systemd
+Tags: Podman, Quadlet, Docker Compose, Migration, Systemd
 
 Description: A practical guide to converting Docker Compose files into Podman Quadlet unit files for native systemd integration, including networks, volumes, dependencies, and service management.
 

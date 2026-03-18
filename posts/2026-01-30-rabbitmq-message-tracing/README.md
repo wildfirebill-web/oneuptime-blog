@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Tracing, Debugging, Observability
+Tags: RabbitMQ, Message Queues, Tracing, Debugging, Observability
 
 Description: Enable and use RabbitMQ message tracing with the Firehose tracer for debugging message flows, routing issues, and queue behaviors.
 

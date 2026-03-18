@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Memory Management, Troubleshooting, Performance, Message Queue
+Tags: RabbitMQ, Memory Management, Troubleshooting, Performance, Message Queues
 
 Description: Learn how to diagnose, resolve, and prevent memory alarm errors that block publishers in RabbitMQ.
 

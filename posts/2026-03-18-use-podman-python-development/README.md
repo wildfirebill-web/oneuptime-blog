@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
 Create a `requirements.txt`:
 
-```
+```text
 flask==3.1.0
 ```
 

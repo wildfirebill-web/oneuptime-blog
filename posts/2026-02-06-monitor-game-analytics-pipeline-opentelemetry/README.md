@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Gaming, Analytics, Data Pipeline, Event Ingestion
+Tags: OpenTelemetry, Gaming, Analytics, Data Pipelines, Event Ingestion
 
 Description: Monitor your game analytics event ingestion pipeline with OpenTelemetry to ensure data completeness and catch dropped events early.
 

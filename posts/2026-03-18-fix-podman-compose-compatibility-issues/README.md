@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Podman, Docker Compose, Podman Compose, Containers, DevOps
 
-Description: A comprehensive guide to fixing compatibility issues when using Docker Compose files with Podman, covering podman-compose vs docker-compose, networking differences, volume handling, and common migration pitfalls.
+Description: Fix compatibility issues when using Docker Compose files with Podman, including networking, volume handling, and common migration pitfalls.
 
 ---
 

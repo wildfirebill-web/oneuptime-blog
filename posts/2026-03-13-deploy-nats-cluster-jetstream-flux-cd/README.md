@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, NATS, JetStream, Message Queue, Streaming
+Tags: Flux CD, Kubernetes, GitOps, NATS, JetStream, Message Queues, Streaming
 
 Description: Deploy NATS messaging with JetStream persistence on Kubernetes using Flux CD HelmRelease for GitOps-managed cloud-native messaging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, systemd, User Services, Rootless
+Tags: Podman, Containers, DevOps, Quadlet, Systemd, User Services, Rootless
 
 Description: Learn where to place Quadlet unit files for rootless user-level Podman services that run without root privileges.
 

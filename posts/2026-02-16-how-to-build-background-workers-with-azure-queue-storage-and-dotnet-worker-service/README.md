@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Queue Storage, .NET Worker Service, Background Jobs, C#, Message Queue, Azure Storage, Microservices
+Tags: Azure Queue Storage, .NET Worker Service, Background Jobs, C#, Message Queues, Azure Storage, Microservices
 
 Description: Learn how to build reliable background workers using Azure Queue Storage and .NET Worker Service to decouple long-running tasks from your web application.
 

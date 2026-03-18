@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, systemctl, Management
+Tags: Podman, Containers, DevOps, Systemd, systemctl, Management
 
 Description: Learn how to manage Podman containers using systemctl commands for starting, stopping, monitoring, and troubleshooting container services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Message Ordering, Event-Driven Architecture, Kafka, RabbitMQ, Distributed Systems, Message Queue, Event Sourcing
+Tags: Message Ordering, Event-Driven Architecture, Kafka, RabbitMQ, Distributed Systems, Message Queues, Event Sourcing
 
 Description: A practical guide to understanding, diagnosing, and fixing message ordering issues in event-driven systems using partitioning, sequencing, and idempotency patterns.
 

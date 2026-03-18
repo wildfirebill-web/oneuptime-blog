@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Troubleshooting, DevOps, Messaging, AMQP, Error Handling
+Tags: RabbitMQ, Message Queues, Troubleshooting, DevOps, Messaging, AMQP, Error Handling
 
 Description: Learn how to diagnose and fix unroutable message errors in RabbitMQ by understanding exchange types, binding configurations, and implementing proper message handling strategies.
 

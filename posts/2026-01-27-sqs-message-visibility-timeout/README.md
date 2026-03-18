@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, Visibility Timeout, Message Queue, Cloud, Distributed Systems
+Tags: AWS, SQS, Visibility Timeout, Message Queues, Cloud, Distributed Systems
 
 Description: Learn how to configure and handle SQS message visibility timeout for reliable message processing, including extension strategies, error handling, and dead letter queues.
 

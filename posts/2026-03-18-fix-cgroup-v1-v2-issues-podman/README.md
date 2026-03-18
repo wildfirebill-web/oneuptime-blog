@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, cgroups, Linux, Troubleshooting
+Tags: Podman, Containers, Cgroups, Linux, Troubleshooting
 
 Description: A detailed guide to diagnosing and fixing cgroup v1 vs v2 compatibility issues in Podman, including migration strategies, hybrid configurations, and container runtime adjustments.
 
@@ -25,13 +25,13 @@ mount | grep cgroup
 
 If you see `cgroup2` in the output, your system uses cgroup v2:
 
-```
+```text
 cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime)
 ```
 
 If you see multiple `cgroup` mounts (one per controller), you are on cgroup v1:
 
-```
+```text
 cgroup on /sys/fs/cgroup/cpu type cgroup (rw,nosuid,nodev,noexec,relatime,cpu)
 cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
 ```
@@ -54,7 +54,7 @@ podman info --format '{{.Host.CgroupVersion}}'
 
 ### Error: OCI runtime error with cgroup
 
-```
+```text
 Error: OCI runtime error: crun: the requested cgroup controller `cpu` is not available
 ```
 
@@ -100,7 +100,7 @@ cat /sys/fs/cgroup/user.slice/user-$(id -u).slice/cgroup.controllers
 
 ### Error: Failed to Create Container with Resource Limits
 
-```
+```text
 Error: setting cgroup config for procHooks process: failed to write "max 104857600"
 to "/sys/fs/cgroup/.../memory.max": permission denied
 ```

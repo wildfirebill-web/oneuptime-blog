@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Batch Processing, Scheduling, Airflow, Data Pipeline
+Tags: Batch Processing, Scheduling, Airflow, Data Pipelines
 
 Description: Learn to implement batch scheduling patterns for reliable and efficient batch job execution.
 

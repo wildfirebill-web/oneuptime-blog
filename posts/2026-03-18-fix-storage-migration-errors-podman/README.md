@@ -26,13 +26,13 @@ Podman uses a BoltDB database to track image layers, containers, and their metad
 
 You will typically see errors like:
 
-```
+```text
 Error: migrating containers: error reading container state: invalid character '\x00' looking for beginning of value
 ```
 
 Or:
 
-```
+```text
 Error: error loading storage metadata: the database is corrupted
 ```
 

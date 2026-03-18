@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RAG, Document Processing, LLM, Data Pipeline
+Tags: RAG, Document Processing, LLM, Data Pipelines
 
 Description: Learn to implement document ingestion for processing and preparing documents for RAG systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Clustering, High Availability, Message Queue, DevOps, Infrastructure, Scalability
+Tags: RabbitMQ, Clustering, High Availability, Message Queues, DevOps, Infrastructure, Scalability
 
 Description: Learn how to set up and configure a RabbitMQ cluster for high availability and improved throughput in production environments.
 

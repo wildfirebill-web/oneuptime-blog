@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipeline, Bulk Load, Data Warehouse, Performance
+Tags: Data Pipelines, Bulk Load, Data Warehouse, Performance
 
 Description: Learn to create bulk loading strategies for high-performance data ingestion into databases.
 

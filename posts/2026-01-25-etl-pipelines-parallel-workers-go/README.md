@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, ETL, Data Pipeline, Parallel Processing, Concurrency
+Tags: Go, ETL, Data Pipelines, Parallel Processing, Concurrency
 
 Description: Learn how to build efficient ETL pipelines in Go using goroutines and channels. This guide covers worker pools, error handling, backpressure management, and patterns that scale to millions of records.
 

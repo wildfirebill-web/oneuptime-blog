@@ -123,7 +123,7 @@ Note that in a rootless setup, Portainer will only see and manage containers run
 
 Open your browser and navigate to:
 
-```
+```text
 https://<your-host-ip>:9443
 ```
 

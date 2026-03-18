@@ -119,7 +119,7 @@ func main() {
 
 Use consistent log levels across all services:
 
-```
+```text
 FATAL  - Application cannot continue, immediate shutdown
 ERROR  - Operation failed, requires attention
 WARN   - Unexpected condition, but operation continues

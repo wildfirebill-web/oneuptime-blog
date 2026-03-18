@@ -1,10 +1,10 @@
-# How to Fix "permission denied" Errors in Podman
+# How to Fix 'permission denied' Errors in Podman
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
 Tags: Podman, Containers, Linux, Permissions, Troubleshooting
 
-Description: A comprehensive guide to diagnosing and resolving "permission denied" errors in Podman, covering rootless mode, file ownership, volume mounts, and user namespace mapping.
+Description: A comprehensive guide to diagnosing and resolving 'permission denied' errors in Podman, covering rootless mode, file ownership, volume mounts, and user namespace mapping.
 
 ---
 
@@ -31,7 +31,7 @@ cat /etc/subgid
 
 You should see an entry like:
 
-```
+```text
 youruser:100000:65536
 ```
 

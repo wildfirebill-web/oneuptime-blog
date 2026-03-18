@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Performance, AMQP, Backend, Distributed Systems, Configuration
+Tags: RabbitMQ, Message Queues, Performance, AMQP, Backend, Distributed Systems, Configuration
 
 Description: Learn how to configure RabbitMQ consumer prefetch to optimize message distribution and prevent consumer overload.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queue, Messaging, Exchange Types, Event-Driven Architecture, Python, Node.js, Microservices
+Tags: RabbitMQ, Message Queues, Messaging, Exchange Types, Event-Driven Architecture, Python, Node.js, Microservices
 
 Description: Learn how to implement all four RabbitMQ exchange types - Direct, Fanout, Topic, and Headers. Covers practical examples with Python and Node.js, routing patterns, and production best practices.
 

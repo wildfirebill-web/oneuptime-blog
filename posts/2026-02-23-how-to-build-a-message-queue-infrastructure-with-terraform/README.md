@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Message Queue, SQS, SNS, RabbitMQ, AWS, Infrastructure Patterns
+Tags: Terraform, Message Queues, SQS, SNS, RabbitMQ, AWS, Infrastructure Patterns
 
 Description: Build robust message queue infrastructure with Terraform using SQS, SNS, Amazon MQ, dead letter queues, and fan-out patterns for reliable async communication.
 

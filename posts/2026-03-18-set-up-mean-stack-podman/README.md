@@ -25,7 +25,7 @@ cd mean-project
 
 The final structure will look like this:
 
-```
+```text
 mean-project/
   api/               # Express.js backend
   frontend/          # Angular frontend

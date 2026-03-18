@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, KRaft, ZooKeeper, Distributed Systems, Message Queue, DevOps, Configuration
+Tags: Apache Kafka, KRaft, ZooKeeper, Distributed Systems, Message Queues, DevOps, Configuration
 
 Description: A comprehensive guide to configuring Apache Kafka in KRaft mode, eliminating the need for ZooKeeper and simplifying cluster management.
 

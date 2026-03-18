@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, systemd, sdnotify, Readiness
+Tags: Podman, Containers, DevOps, Systemd, sdnotify, Readiness
 
 Description: Learn how to use sd_notify with Podman containers to signal service readiness and status to systemd.
 

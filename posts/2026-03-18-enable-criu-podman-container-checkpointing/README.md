@@ -49,7 +49,7 @@ grep -E "CONFIG_CHECKPOINT_RESTORE|CONFIG_NAMESPACES|CONFIG_PID_NS|CONFIG_NET_NS
 
 You should see output like:
 
-```
+```text
 CONFIG_CHECKPOINT_RESTORE=y
 CONFIG_NAMESPACES=y
 CONFIG_PID_NS=y
@@ -118,13 +118,13 @@ sudo criu check
 
 If everything is configured correctly, you will see:
 
-```
+```text
 Looks good.
 ```
 
 If there are problems, CRIU will report which kernel features are missing. Common issues include:
 
-```
+```text
 Error (criu/cr-check.c:1234): Dirty tracking is not supported
 Warn  (criu/cr-check.c:1235): Soft dirty not available, will use slow memory tracking
 ```

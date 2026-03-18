@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Message Queue, Linux
+Tags: RHEL, Message Queues, Linux
 
 Description: Step-by-step guide on set up rabbitmq shovel plugin for cross-cluster replication using Red Hat Enterprise Linux 9.
 

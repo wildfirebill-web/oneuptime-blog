@@ -41,7 +41,7 @@ The debug output shows the exact CRIU command being executed and its output.
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: CRIU binary not found
 ```
 
@@ -78,7 +78,7 @@ sudo ln -s /path/to/criu /usr/sbin/criu
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: CRIU too old: requires at least version 31600
 ```
 
@@ -105,13 +105,13 @@ sudo make install
 
 **Error message:**
 
-```
+```text
 Error (criu/cr-check.c:XXX): CONFIG_CHECKPOINT_RESTORE is not set
 ```
 
 or
 
-```
+```text
 Looks like the kernel does not support checkpoint/restore
 ```
 
@@ -144,13 +144,13 @@ sudo criu check --all 2>&1 | grep -i error
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: not supported for rootless containers
 ```
 
 or
 
-```
+```text
 Error: checkpointing container: permission denied
 ```
 
@@ -173,7 +173,7 @@ Rootless Podman does not support checkpoint/restore in most configurations. This
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: CRIU: avc: denied { checkpoint_restore }
 ```
 
@@ -204,7 +204,7 @@ sudo setenforce 1
 
 **Error message:**
 
-```
+```text
 Error: container is not running
 ```
 
@@ -230,7 +230,7 @@ sudo podman container checkpoint my-container
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: CRIU: TCP socket in established state found
 ```
 
@@ -250,7 +250,7 @@ sudo podman container checkpoint my-container --tcp-established
 
 **Error message:**
 
-```
+```text
 Error: container name already in use
 ```
 
@@ -273,13 +273,13 @@ sudo podman container restore --import=/tmp/checkpoint.tar.gz --name=my-containe
 
 **Error message:**
 
-```
+```text
 Error: container image not known
 ```
 
 or
 
-```
+```text
 Error: image not found
 ```
 
@@ -302,13 +302,13 @@ sudo podman container restore --import=/tmp/checkpoint.tar.gz
 
 **Error message:**
 
-```
+```text
 Error: rootlessport: cannot expose privileged port 80
 ```
 
 or
 
-```
+```text
 Error: address already in use
 ```
 
@@ -335,13 +335,13 @@ sudo podman container restore --import=/tmp/checkpoint.tar.gz
 
 **Error message:**
 
-```
+```text
 Error: checkpointing container: CRIU: dumping failed
 ```
 
 with debug output showing:
 
-```
+```text
 Error (criu/cr-dump.c:XXX): Can't dump pages
 ```
 
@@ -366,7 +366,7 @@ If the container uses huge pages, you may need to configure CRIU's huge page sup
 
 **Error message:**
 
-```
+```text
 Error: restoring container: CRIU: architecture mismatch
 ```
 
@@ -385,13 +385,13 @@ uname -m
 
 **Error message:**
 
-```
+```text
 Error: restoring container: mount point does not exist
 ```
 
 or
 
-```
+```text
 Error: restoring container: volume not found
 ```
 

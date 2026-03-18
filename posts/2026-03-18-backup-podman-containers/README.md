@@ -35,7 +35,7 @@ podman ps -a --format "{{.ID}} {{.Names}} {{.Status}} {{.Image}}"
 
 This gives you a clear picture of every container on the system. You might see output like:
 
-```
+```text
 a1b2c3d4e5f6 web-app Up 3 hours docker.io/library/nginx:latest
 f6e5d4c3b2a1 redis-cache Up 3 hours docker.io/library/redis:7
 b2c3d4e5f6a1 postgres-db Exited (0) 1 hour ago docker.io/library/postgres:16

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Docker, Docker Compose, Message Queue, Streaming, DevOps
+Tags: Apache Kafka, Docker, Docker Compose, Message Queues, Streaming, DevOps
 
 Description: A comprehensive guide to running Apache Kafka in Docker containers, covering single-node development setups, multi-broker production configurations.
 

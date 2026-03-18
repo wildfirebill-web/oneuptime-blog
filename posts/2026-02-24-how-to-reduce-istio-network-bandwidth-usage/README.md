@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Network, Bandwidth, Kubernetes, Performance
+Tags: Istio, Networks, Bandwidth, Kubernetes, Performance
 
 Description: Techniques to minimize the network bandwidth overhead introduced by Istio sidecars, including xDS optimization, mTLS tuning, and protocol configuration.
 

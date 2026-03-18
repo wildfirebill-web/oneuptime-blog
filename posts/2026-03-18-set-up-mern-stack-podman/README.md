@@ -23,7 +23,7 @@ cd mern-project
 
 The project structure:
 
-```
+```text
 mern-project/
   api/               # Express.js backend
   frontend/          # React frontend
