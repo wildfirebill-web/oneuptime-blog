@@ -199,14 +199,15 @@ metadata:
   namespace: default
   labels:
     kubernetes.io/service-name: external-service
-addressType: IPv4
-ports:
-  - port: 80
-endpoints:
-  - addresses:
-    - "192.168.1.100"
-  - addresses:
-    - "192.168.1.101"
+spec:
+  addressType: IPv4
+  ports:
+    - port: 80
+  endpoints:
+    - addresses:
+      - "192.168.1.100"
+    - addresses:
+      - "192.168.1.101"
 ```
 
 ## Step 9: Monitor Service Health

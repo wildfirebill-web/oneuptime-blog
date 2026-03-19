@@ -66,7 +66,7 @@ alertmanager:
     receivers:
       - name: "pagerduty-critical"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
+          - routing_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
             severity: critical
             description: '{{ .CommonLabels.alertname }}: {{ .CommonAnnotations.summary }}'
             details:
@@ -75,7 +75,7 @@ alertmanager:
               namespace: '{{ .CommonLabels.namespace }}'
       - name: "pagerduty-warning"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
+          - routing_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
             severity: warning
             description: '{{ .CommonLabels.alertname }}: {{ .CommonAnnotations.summary }}'
 ```
@@ -113,11 +113,11 @@ alertmanager:
     receivers:
       - name: "pagerduty-platform"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/pagerduty-platform-key/integration-key
+          - routing_key_file: /etc/alertmanager/secrets/pagerduty-platform-key/integration-key
             severity: '{{ .CommonLabels.severity }}'
       - name: "pagerduty-app"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/pagerduty-app-key/integration-key
+          - routing_key_file: /etc/alertmanager/secrets/pagerduty-app-key/integration-key
             severity: '{{ .CommonLabels.severity }}'
 ```
 
@@ -129,7 +129,7 @@ Enrich PagerDuty incidents with additional context by configuring the details fi
 receivers:
   - name: "pagerduty-detailed"
     pagerduty_configs:
-      - service_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
+      - routing_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
         severity: '{{ .CommonLabels.severity }}'
         class: '{{ .CommonLabels.alertname }}'
         component: '{{ .CommonLabels.service }}'
@@ -159,7 +159,7 @@ PagerDuty incidents can be automatically resolved when alerts clear. This is ena
 receivers:
   - name: "pagerduty-auto-resolve"
     pagerduty_configs:
-      - service_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
+      - routing_key_file: /etc/alertmanager/secrets/alertmanager-pagerduty-secret/integration-key
         send_resolved: true
 ```
 

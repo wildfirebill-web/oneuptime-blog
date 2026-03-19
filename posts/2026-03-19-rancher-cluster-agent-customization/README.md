@@ -37,7 +37,7 @@ Set resource requests and limits for the cluster agent:
 
 ```yaml
 # Cluster agent resource configuration
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cattle-cluster-agent

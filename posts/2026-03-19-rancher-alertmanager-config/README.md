@@ -131,7 +131,7 @@ alertmanager:
 
       - name: "critical-alerts"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/pagerduty-key/key
+          - routing_key_file: /etc/alertmanager/secrets/pagerduty-key/key
             severity: critical
             send_resolved: true
         slack_configs:
@@ -153,7 +153,7 @@ alertmanager:
 
       - name: "platform-critical"
         pagerduty_configs:
-          - service_key_file: /etc/alertmanager/secrets/pd-platform/key
+          - routing_key_file: /etc/alertmanager/secrets/pd-platform/key
         slack_configs:
           - channel: "#platform-critical"
 
