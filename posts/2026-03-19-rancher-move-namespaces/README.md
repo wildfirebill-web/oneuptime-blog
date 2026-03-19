@@ -1,0 +1,246 @@
+# How to Move Namespaces Between Projects in Rancher
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Rancher, Kubernetes, Projects, Namespaces
+
+Description: Learn how to move Kubernetes namespaces between Rancher projects to reorganize workloads and align with team changes.
+
+As organizations evolve, you may need to move namespaces between projects. A team might be restructured, an application might change ownership, or you might need to consolidate projects. Rancher makes it possible to reassign namespaces to different projects. This guide walks through the process and its implications.
+
+## Prerequisites
+
+- Rancher v2.7+ with cluster owner or administrator access
+- Existing projects with namespaces that need to be moved
+- Understanding of the access control implications of moving namespaces
+
+## Understanding What Happens When You Move a Namespace
+
+When you move a namespace from one project to another:
+
+1. **RBAC changes immediately**: The namespace inherits the RBAC bindings of the new project. Users who had access through the old project lose access. Users assigned to the new project gain access.
+2. **Resource quotas change**: The namespace's resource consumption counts against the new project's quotas instead of the old project's quotas.
+3. **Network policies may change**: If project network isolation is enabled, the namespace's network access changes to match the new project's isolation settings.
+4. **Workloads continue running**: Pods and other resources in the namespace are not affected. They keep running without interruption.
+
+## Step 1: Check Current Namespace Assignment
+
+Before moving a namespace, verify its current project assignment:
+
+**Via the UI:**
+
+1. Navigate to your cluster.
+2. Go to **Cluster > Projects/Namespaces**.
+3. Find the namespace in the list. It will be grouped under its current project.
+
+**Via kubectl:**
+
+```bash
+# Check which project a namespace belongs to
+kubectl get namespace <namespace-name> -o jsonpath='{.metadata.annotations.field\.cattle\.io/projectId}'
+```
+
+```bash
+# List all namespaces with their project assignments
+kubectl get namespaces -o json | \
+  jq -r '.items[] | "\(.metadata.name)\t\(.metadata.annotations["field.cattle.io/projectId"] // "unassigned")"' | \
+  column -t -s $'\t'
+```
+
+## Step 2: Move a Namespace via the Rancher UI
+
+1. Navigate to your cluster.
+2. Go to **Cluster > Projects/Namespaces**.
+3. Find the namespace you want to move.
+4. Click the three-dot menu next to the namespace.
+5. Select **Move**.
+6. In the dialog, select the target project from the dropdown.
+7. Click **Move** to confirm.
+
+The namespace immediately appears under the new project with the new project's RBAC rules.
+
+## Step 3: Move a Namespace via kubectl
+
+Update the project annotation on the namespace:
+
+```bash
+# Move namespace to a different project
+kubectl annotate namespace <namespace-name> \
+  field.cattle.io/projectId="c-m-xxxxx:p-yyyyy" \
+  --overwrite
+```
+
+Where `c-m-xxxxx` is the cluster ID and `p-yyyyy` is the target project ID.
+
+You also need to update the label:
+
+```bash
+kubectl label namespace <namespace-name> \
+  field.cattle.io/projectId="p-yyyyy" \
+  --overwrite
+```
+
+## Step 4: Move a Namespace via the Rancher API
+
+```bash
+# Get the namespace details
+NAMESPACE="my-app-staging"
+CLUSTER_ID="c-m-xxxxx"
+TARGET_PROJECT="c-m-xxxxx:p-yyyyy"
+
+# Update the namespace's project assignment
+curl -X PUT \
+  "https://<rancher-url>/v3/clusters/${CLUSTER_ID}/namespaces/${NAMESPACE}" \
+  -H 'Authorization: Bearer <api-token>' \
+  -H 'Content-Type: application/json' \
+  -d "{
+    \"projectId\": \"${TARGET_PROJECT}\"
+  }"
+```
+
+## Step 5: Move Multiple Namespaces at Once
+
+When reorganizing projects, you may need to move several namespaces:
+
+```bash
+#!/bin/bash
+# move-namespaces.sh
+
+CLUSTER_ID="c-m-xxxxx"
+TARGET_PROJECT_ID="p-yyyyy"
+NAMESPACES=("app-staging" "app-testing" "app-integration")
+
+for ns in "${NAMESPACES[@]}"; do
+  echo "Moving namespace: $ns to project: $TARGET_PROJECT_ID"
+
+  kubectl annotate namespace $ns \
+    field.cattle.io/projectId="${CLUSTER_ID}:${TARGET_PROJECT_ID}" \
+    --overwrite
+
+  kubectl label namespace $ns \
+    field.cattle.io/projectId="${TARGET_PROJECT_ID}" \
+    --overwrite
+
+  echo "  Done."
+done
+
+echo "All namespaces moved successfully."
+```
+
+## Step 6: Move a Namespace to No Project (Unassign)
+
+To remove a namespace from any project:
+
+```bash
+# Remove the project assignment
+kubectl annotate namespace <namespace-name> \
+  field.cattle.io/projectId-
+
+kubectl label namespace <namespace-name> \
+  field.cattle.io/projectId-
+```
+
+The namespace will appear as unassigned in the Rancher UI. It will not inherit any project-level RBAC or resource quotas.
+
+## Step 7: Handle Resource Quota Conflicts
+
+When moving a namespace to a project with resource quotas, check for conflicts:
+
+```bash
+# Check the target project's remaining quota
+kubectl get projects.management.cattle.io <target-project-id> -n <cluster-id> -o json | \
+  jq '.spec.resourceQuota'
+
+# Check the namespace's current resource usage
+kubectl describe resourcequota -n <namespace-name>
+```
+
+If the namespace's current usage exceeds the target project's available quota, the move will succeed but new resource creation in the namespace may be blocked until the quota is adjusted.
+
+To handle this:
+
+1. Check the current usage of the namespace.
+2. Verify the target project has enough quota headroom.
+3. If needed, increase the target project's quota before moving.
+4. Move the namespace.
+5. Adjust quotas as needed after the move.
+
+## Step 8: Update Access After Moving
+
+After moving a namespace, verify that the right people have access:
+
+```bash
+# Check who can access the namespace now
+kubectl get rolebindings -n <namespace-name> -o json | \
+  jq -r '.items[] | "\(.metadata.name)\t\(.roleRef.name)\t\(.subjects[]? | "\(.kind)/\(.name)")"' | \
+  column -t -s $'\t'
+```
+
+If specific users need access to the namespace in its new project, add them as project members:
+
+1. Navigate to the new project.
+2. Go to **Project > Members**.
+3. Add any users who need access but are not yet members.
+
+## Step 9: Move Namespaces with Terraform
+
+Manage namespace moves declaratively:
+
+```hcl
+# Move a namespace from one project to another by changing the project_id
+resource "rancher2_namespace" "app_staging" {
+  name        = "app-staging"
+  # Change this from the old project ID to the new one
+  project_id  = rancher2_project.new_team.id
+  description = "Staging environment for the app"
+}
+```
+
+```bash
+terraform plan  # Review the change
+terraform apply # Execute the move
+```
+
+## Step 10: Verify the Move
+
+After moving, confirm everything is in order:
+
+```bash
+# Verify the namespace is in the correct project
+kubectl get namespace <namespace-name> -o json | \
+  jq '{
+    name: .metadata.name,
+    project: .metadata.annotations["field.cattle.io/projectId"],
+    labels: .metadata.labels
+  }'
+
+# Verify workloads are still running
+kubectl get pods -n <namespace-name>
+
+# Verify RBAC is correct
+kubectl auth can-i list pods -n <namespace-name> --as=<new-project-member>
+kubectl auth can-i list pods -n <namespace-name> --as=<old-project-member>
+```
+
+## Common Scenarios
+
+**Team restructuring**: When teams merge or split, move their namespaces to match the new structure.
+
+**Environment promotion**: Move a namespace from a development project to a staging project as part of a promotion workflow.
+
+**Resource rebalancing**: Move namespaces between projects to redistribute resource quotas.
+
+**Cleanup**: Move orphaned namespaces from the Default project into proper team projects.
+
+## Best Practices
+
+- **Communicate before moving**: Inform affected teams before moving namespaces, as their access will change.
+- **Move during low-traffic periods**: While workloads keep running, RBAC changes could temporarily affect ongoing operations.
+- **Check quotas first**: Verify the target project has sufficient quota before moving.
+- **Update documentation**: Keep records of which namespaces belong to which projects.
+- **Use Terraform**: Manage namespace-to-project assignments in code for auditability.
+- **Test in staging**: Practice namespace moves in a non-production environment first.
+
+## Conclusion
+
+Moving namespaces between projects in Rancher is a straightforward operation with significant implications for access control and resource management. By understanding the effects on RBAC, resource quotas, and network policies, you can reorganize your cluster structure confidently. Always communicate changes to affected teams and verify access after the move completes.
