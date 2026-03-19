@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Receiver, Webhook, Monitoring, Prometheus, Grafana, Metrics, Observability
+Tags: Flux, Kubernetes, GitOps, Receiver, Webhooks, Monitoring, Prometheus, Grafana, Metrics, Observability
 
 Description: A complete guide to monitoring Flux Receiver webhook calls using Prometheus metrics, Grafana dashboards, and alerting rules to track delivery success rates and latency.
 

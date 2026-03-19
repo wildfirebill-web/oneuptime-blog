@@ -22,7 +22,7 @@ Set up a project in the Google Cloud Console:
 1. Go to the Google Cloud Console at console.cloud.google.com.
 2. Click the project dropdown and select **New Project**.
 
-```
+```plaintext
 Project Name: rancher-auth
 Organization: example.com
 ```
@@ -39,7 +39,7 @@ Set up the consent screen that users will see:
 
 Fill in the consent screen details:
 
-```
+```plaintext
 App Name: Rancher
 User Support Email: admin@example.com
 App Logo: (optional)
@@ -57,7 +57,7 @@ Add scopes:
 1. Click **Add or Remove Scopes**.
 2. Select the following scopes:
 
-```
+```plaintext
 openid
 email
 profile
@@ -74,7 +74,7 @@ Create OAuth 2.0 client credentials:
 
 Configure the client:
 
-```
+```plaintext
 Application Type: Web application
 Name: Rancher OAuth Client
 Authorized JavaScript Origins: https://rancher.example.com
@@ -83,7 +83,7 @@ Authorized Redirect URIs: https://rancher.example.com/verify-auth
 
 3. Click **Create** and note the credentials:
 
-```
+```plaintext
 Client ID: xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
 Client Secret: GOCSPX-xxxxxxxxxxxxxxxxxxxxxxxx
 ```
@@ -111,7 +111,7 @@ To support group-based access, create a service account:
 1. Navigate to **IAM & Admin** then **Service Accounts**.
 2. Click **Create Service Account**.
 
-```
+```plaintext
 Service Account Name: rancher-group-lookup
 Service Account ID: rancher-group-lookup
 Description: Service account for Rancher to lookup Google Workspace groups
@@ -140,7 +140,7 @@ In the Google Workspace Admin Console:
 4. Enter the service account Client ID.
 5. Add the OAuth scopes:
 
-```
+```plaintext
 https://www.googleapis.com/auth/admin.directory.user.readonly
 https://www.googleapis.com/auth/admin.directory.group.readonly
 ```
@@ -157,7 +157,7 @@ Set up Google authentication in Rancher:
 
 Enter the configuration:
 
-```
+```plaintext
 Client ID: xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
 Client Secret: GOCSPX-xxxxxxxxxxxxxxxxxxxxxxxx
 Hostname or IP Address for Admin SDK API: admin.googleapis.com
@@ -207,7 +207,7 @@ Assign Rancher roles to Google Workspace groups:
 2. Search for Google Workspace groups.
 3. Assign roles.
 
-```
+```plaintext
 Google Group: platform-admins@example.com -> Administrator
 Google Group: devops@example.com -> Standard User
 Google Group: developers@example.com -> Standard User
@@ -216,7 +216,7 @@ Google Group: readonly@example.com -> User-Base
 
 For cluster-level access:
 
-```
+```plaintext
 Google Group: team-backend@example.com -> Cluster Member (production)
 Google Group: team-frontend@example.com -> Cluster Member (staging)
 Google Group: qa@example.com -> Cluster Member (qa-cluster)

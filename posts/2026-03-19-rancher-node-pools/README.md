@@ -23,7 +23,7 @@ A node pool defines a group of nodes that share the same node template and Kuber
 
 Design your node pool structure before creating clusters:
 
-```
+```plaintext
 Cluster: production-us-east
 ├── Pool: etcd-pool
 │   ├── Template: aws-etcd-m5-xlarge
@@ -54,7 +54,7 @@ When creating a new cluster with an infrastructure provider:
 
 For the etcd pool:
 
-```
+```plaintext
 Name Prefix: etcd
 Count: 3
 Template: aws-etcd-m5-xlarge
@@ -68,7 +68,7 @@ Click **Add Node Pool** to create additional pools:
 
 For the control plane pool:
 
-```
+```plaintext
 Name Prefix: controlplane
 Count: 3
 Template: aws-cp-m5-xlarge
@@ -78,7 +78,7 @@ Auto Replace: 5 minutes
 
 For the worker pool:
 
-```
+```plaintext
 Name Prefix: worker
 Count: 5
 Template: aws-worker-t3-large
@@ -93,7 +93,7 @@ Auto-replace automatically replaces unresponsive nodes:
 1. For each node pool, set the **Auto Replace** timeout.
 2. This defines how long Rancher waits before replacing a non-responsive node.
 
-```
+```plaintext
 Auto Replace Timeout: 5 minutes (300 seconds)
 ```
 

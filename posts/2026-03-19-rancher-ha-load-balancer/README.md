@@ -20,7 +20,7 @@ A load balancer in front of your Rancher HA cluster provides a single entry poin
 
 The load balancer sits in front of three K3s server nodes running Rancher:
 
-```
+```plaintext
                     +--> Node 1 (192.168.1.101)
 Client --> LB (192.168.1.100) +--> Node 2 (192.168.1.102)
                     +--> Node 3 (192.168.1.103)
@@ -214,7 +214,7 @@ doctl compute load-balancer create \
 
 Create a DNS A record pointing your domain to the load balancer IP:
 
-```
+```plaintext
 rancher.example.com  A  192.168.1.100
 ```
 

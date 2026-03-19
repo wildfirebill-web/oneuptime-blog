@@ -162,7 +162,7 @@ kubectl describe vpa my-app-vpa -n default
 
 Look for the `Recommendation` section:
 
-```
+```plaintext
 Recommendation:
   Container Recommendations:
     Container Name:  my-app

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Nginx, Ingress Controller, Kubernetes, Networking
+Tags: Istio, NGINX, Ingress Controller, Kubernetes, Networking
 
 Description: How to run NGINX Ingress Controller alongside Istio service mesh and get the best of both tools.
 

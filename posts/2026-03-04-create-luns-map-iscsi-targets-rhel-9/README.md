@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, ISCSI, LUN, Targetcli, Storage, Linux
+Tags: RHEL, iSCSI, LUN, Targetcli, Storage, Linux
 
 Description: Create and map multiple LUNs to iSCSI targets on RHEL using targetcli for granular storage provisioning.
 

@@ -64,7 +64,7 @@ Since ClusterIP is the default type, you can omit `type: ClusterIP` and it will 
 
 ClusterIP services are accessible via DNS within the cluster. The DNS format is:
 
-```
+```xml
 <service-name>.<namespace>.svc.cluster.local
 ```
 

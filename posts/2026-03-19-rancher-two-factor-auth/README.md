@@ -35,7 +35,7 @@ Keycloak provides built-in TOTP-based 2FA that applies to Rancher logins.
 
 Configure the OTP settings:
 
-```
+```plaintext
 OTP Type: Time-Based (TOTP)
 OTP Hash Algorithm: SHA1
 Number of Digits: 6
@@ -49,7 +49,7 @@ OTP Token Period: 30 seconds
 2. Find **Configure OTP** in the list.
 3. Set it as **Default Action** so new users must configure it on first login.
 
-```
+```plaintext
 Configure OTP:
   Enabled: ON
   Default Action: ON
@@ -61,7 +61,7 @@ Configure OTP:
 2. Duplicate the **Browser** flow.
 3. Add an OTP execution step:
 
-```
+```plaintext
 Browser Flow (copy):
   ├── Cookie (Alternative)
   ├── Identity Provider Redirector (Alternative)
@@ -93,7 +93,7 @@ Browser Flow (copy):
 
 Configure the policy:
 
-```
+```plaintext
 Name: Rancher MFA Requirement
 Assignments:
   Users: All users (or specific groups)
@@ -114,7 +114,7 @@ Session:
 1. Navigate to **Azure AD** then **Security** then **Authentication methods**.
 2. Enable the MFA methods your organization supports:
 
-```
+```plaintext
 ☑ Microsoft Authenticator (push notifications)
 ☑ OATH hardware tokens
 ☑ OATH software tokens (TOTP apps)
@@ -137,7 +137,7 @@ Session:
 2. Navigate to **Security** then **Multifactor**.
 3. Enable MFA factors:
 
-```
+```plaintext
 Factor Types:
   ☑ Okta Verify (push/TOTP)
   ☑ Google Authenticator
@@ -152,7 +152,7 @@ Factor Types:
 2. Click the **Sign On** tab.
 3. Add a sign-on rule:
 
-```
+```plaintext
 Rule Name: Require MFA for Rancher
 Conditions:
   When user signs in: All users
@@ -179,7 +179,7 @@ Users will be prompted to enroll in MFA on their next login attempt:
 2. Navigate to **Authentication security**.
 3. Enable **Require two-factor authentication**:
 
-```
+```plaintext
 ☑ Require two-factor authentication for everyone in the organization
 ```
 

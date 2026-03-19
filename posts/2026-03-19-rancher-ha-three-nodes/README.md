@@ -173,7 +173,7 @@ Set up DNS to point to all three node IPs. You can create either:
 
 For DNS round-robin:
 
-```
+```plaintext
 rancher.example.com  A  192.168.1.101
 rancher.example.com  A  192.168.1.102
 rancher.example.com  A  192.168.1.103

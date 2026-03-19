@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboard
+Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboards
 
 Description: Step-by-step guide to building custom UI extensions for the Rancher dashboard, including project setup, component development, and deployment.
 
@@ -31,7 +31,7 @@ cd my-extension
 
 This scaffolds a project with the following structure:
 
-```
+```plaintext
 my-extension/
   pkg/
     my-extension/

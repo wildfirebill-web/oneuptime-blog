@@ -26,7 +26,7 @@ kubectl rollout history deployment/my-app -n default
 
 Output:
 
-```
+```plaintext
 REVISION  CHANGE-CAUSE
 1         Initial deployment
 2         Updated image to v1.1
@@ -90,7 +90,7 @@ kubectl rollout status deployment/my-app -n default
 
 Output:
 
-```
+```plaintext
 deployment "my-app" successfully rolled out
 ```
 

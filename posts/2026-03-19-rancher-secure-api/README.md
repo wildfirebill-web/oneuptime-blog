@@ -158,7 +158,7 @@ Replace local authentication with an external identity provider for stronger sec
 2. Select **ActiveDirectory**.
 3. Configure the LDAP connection:
 
-```
+```plaintext
 Server: ldap.yourdomain.com
 Port: 636
 TLS: true

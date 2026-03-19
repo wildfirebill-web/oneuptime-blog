@@ -26,7 +26,7 @@ Create a client application in your OIDC provider. The following example uses Ke
 1. Log in to the Keycloak Admin Console.
 2. Navigate to **Clients** and click **Create client**.
 
-```
+```plaintext
 Client Type: OpenID Connect
 Client ID: rancher
 Client Authentication: ON (confidential)
@@ -34,14 +34,14 @@ Client Authentication: ON (confidential)
 
 3. Configure the redirect URI:
 
-```
+```plaintext
 Valid Redirect URIs: https://rancher.example.com/verify-auth
 Web Origins: https://rancher.example.com
 ```
 
 4. Note the client credentials:
 
-```
+```plaintext
 Client ID: rancher
 Client Secret: (from the Credentials tab)
 ```
@@ -89,7 +89,7 @@ For Keycloak:
 1. In the Rancher client, go to **Client scopes**.
 2. Add a mapper:
 
-```
+```plaintext
 Mapper Type: Group Membership
 Name: groups
 Token Claim Name: groups
@@ -122,7 +122,7 @@ Set up the OIDC authentication provider:
 
 Enter the configuration:
 
-```
+```plaintext
 Client ID: rancher
 Client Secret: <your-client-secret>
 Issuer URL: https://keycloak.example.com/realms/your-realm
@@ -137,7 +137,7 @@ Rancher URL: https://rancher.example.com
 
 Map OIDC claims to Rancher user attributes:
 
-```
+```plaintext
 UID Claim: sub
 Display Name Claim: name
 User Name Claim: preferred_username
@@ -147,7 +147,7 @@ Email Claim: email
 
 For Auth0 with custom claims:
 
-```
+```plaintext
 Groups Claim: https://rancher.example.com/groups
 ```
 
@@ -155,13 +155,13 @@ Groups Claim: https://rancher.example.com/groups
 
 Set the OIDC scopes that Rancher requests:
 
-```
+```plaintext
 Scopes: openid profile email groups
 ```
 
 For providers that use different scope names:
 
-```
+```bash
 # Keycloak (default scopes)
 Scopes: openid profile email
 
@@ -208,7 +208,7 @@ Assign roles based on OIDC groups:
 2. Search for OIDC groups.
 3. Assign roles.
 
-```
+```plaintext
 OIDC Group: platform-admins -> Administrator
 OIDC Group: devops -> Standard User
 OIDC Group: developers -> Standard User

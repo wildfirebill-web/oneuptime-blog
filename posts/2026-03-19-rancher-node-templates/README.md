@@ -39,7 +39,7 @@ To create a node template for Amazon EC2:
 
 Configure the instance settings:
 
-```
+```plaintext
 Region: us-east-1
 Availability Zone: us-east-1a
 VPC/Subnet: Select your target VPC and subnet
@@ -53,7 +53,7 @@ SSH User: ubuntu
 
 Configure IAM settings:
 
-```
+```plaintext
 IAM Instance Profile: kubernetes-node-profile
 Request Spot Instance: No
 ```
@@ -68,7 +68,7 @@ For Azure virtual machines:
 
 Configure the settings:
 
-```
+```plaintext
 Location: eastus
 Resource Group: kubernetes-nodes-rg
 Availability Set: kubernetes-nodes-as
@@ -91,7 +91,7 @@ For VMware vSphere environments:
 
 Configure the virtual machine settings:
 
-```
+```plaintext
 Data Center: dc01
 Resource Pool: /dc01/host/cluster01/Resources/kubernetes
 Datastore: vsanDatastore
@@ -152,7 +152,7 @@ Configure Docker settings in the node template:
 
 1. Under **Engine Options**, set the Docker version and storage driver.
 
-```
+```plaintext
 Docker Version: 24.0.x
 Storage Driver: overlay2
 Log Driver: json-file
@@ -191,7 +191,7 @@ Save time by cloning existing templates:
 3. Modify the settings as needed (for example, change the instance type or region).
 4. Give the new template a descriptive name.
 
-```
+```plaintext
 Original: aws-us-east-1-t3-large-production
 Clone: aws-us-west-2-t3-large-production
 Change: Region from us-east-1 to us-west-2
@@ -227,7 +227,7 @@ Apply node templates when creating clusters:
 3. In the **Node Pools** section, click **Add Node Pool**.
 4. Select the node template for each pool.
 
-```
+```plaintext
 Pool 1 - Control Plane:
   Template: aws-controlplane-m5-xlarge
   Count: 3

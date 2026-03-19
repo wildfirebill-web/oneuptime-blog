@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, VMware, DRS, VSphere, Automation
+Tags: Ansible, VMware, DRS, vSphere, Automation
 
 Description: Automate VMware Distributed Resource Scheduler configuration using Ansible playbooks for optimal cluster resource balancing.
 

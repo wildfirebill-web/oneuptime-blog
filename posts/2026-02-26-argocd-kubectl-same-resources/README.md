@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Kubectl, Troubleshooting
+Tags: ArgoCD, GitOps, Kubernetes, kubectl, Troubleshooting
 
 Description: Learn how to handle conflicts when both kubectl and ArgoCD manage the same Kubernetes resources, including drift detection, ownership disputes, and workflow best practices.
 

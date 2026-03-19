@@ -136,7 +136,7 @@ kubectl create namespace test-no-labels
 
 Expected output:
 
-```
+```plaintext
 Error from server (Forbidden): admission webhook "validation.gatekeeper.sh" denied the request:
 [ns-must-have-owner] Missing required labels: {"environment", "owner"}
 ```

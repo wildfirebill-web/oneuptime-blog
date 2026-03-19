@@ -134,7 +134,7 @@ kubectl get backups.resources.cattle.io
 
 You will see output with each scheduled execution listed:
 
-```
+```plaintext
 NAME                    STATUS    LAST BACKUP                              AGE
 rancher-daily-backup    Ready     rancher-daily-backup-2026-03-19.tar.gz   1d
 ```

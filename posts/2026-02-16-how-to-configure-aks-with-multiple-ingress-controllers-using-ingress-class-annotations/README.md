@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Kubernetes, Ingresses, Nginx, Azure, Networking, Traffic Management
+Tags: AKS, Kubernetes, Ingresses, NGINX, Azure, Networking, Traffic Management
 
 Description: Learn how to run multiple ingress controllers on AKS and use IngressClass annotations to route traffic to the correct controller for each service.
 

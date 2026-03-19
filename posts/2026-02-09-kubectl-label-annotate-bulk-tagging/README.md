@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, Resource Management
+Tags: Kubernetes, kubectl, Resource Management
 
 Description: Learn how to use kubectl label and annotate commands to add metadata to Kubernetes resources in bulk, enabling better organization, filtering, and automation workflows.
 

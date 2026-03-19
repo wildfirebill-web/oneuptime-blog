@@ -24,7 +24,7 @@ If you do not already have a realm, create one:
 2. Click the realm dropdown in the top-left corner.
 3. Click **Create Realm**.
 
-```
+```plaintext
 Realm Name: rancher-org
 Enabled: ON
 ```
@@ -38,14 +38,14 @@ Register Rancher as a SAML client:
 1. In your realm, navigate to **Clients**.
 2. Click **Create client**.
 
-```
+```plaintext
 Client Type: SAML
 Client ID: https://rancher.example.com/v1-saml/keycloak/saml/metadata
 ```
 
 3. Click **Next** and configure the settings:
 
-```
+```plaintext
 Name: Rancher
 Description: Rancher Kubernetes Management Platform
 Enabled: ON
@@ -65,7 +65,7 @@ Fine-tune the SAML settings:
 
 1. In the Rancher client settings, configure the following:
 
-```
+```plaintext
 Sign Documents: ON
 Sign Assertions: ON
 Signature Algorithm: RSA_SHA256
@@ -79,7 +79,7 @@ Force Name ID Format: ON
 
 2. Under **Logout Settings**:
 
-```
+```plaintext
 Front Channel Logout: ON
 Logout Service POST Binding URL: https://rancher.example.com/v1-saml/keycloak/saml/slo
 ```
@@ -95,7 +95,7 @@ Add attribute mappers to send user information to Rancher:
 Create the following mappers:
 
 **Display Name mapper:**
-```
+```plaintext
 Mapper Type: User Attribute
 Name: displayName
 User Attribute: firstName
@@ -104,7 +104,7 @@ SAML Attribute NameFormat: Basic
 ```
 
 **Username mapper:**
-```
+```plaintext
 Mapper Type: User Property
 Name: userName
 Property: username
@@ -113,7 +113,7 @@ SAML Attribute NameFormat: Basic
 ```
 
 **UID mapper:**
-```
+```plaintext
 Mapper Type: User Property
 Name: uid
 Property: username
@@ -122,7 +122,7 @@ SAML Attribute NameFormat: Basic
 ```
 
 **Email mapper:**
-```
+```plaintext
 Mapper Type: User Property
 Name: email
 Property: email
@@ -131,7 +131,7 @@ SAML Attribute NameFormat: Basic
 ```
 
 **Groups mapper:**
-```
+```plaintext
 Mapper Type: Group list
 Name: groups
 Group attribute name: groups
@@ -147,7 +147,7 @@ Set up groups for Rancher access control:
 1. Navigate to **Groups** in your Keycloak realm.
 2. Create groups that correspond to Rancher roles.
 
-```
+```yaml
 Groups:
   - rancher-admins
   - rancher-devops
@@ -183,7 +183,7 @@ Set up the Keycloak auth provider in Rancher:
 
 Enter the configuration:
 
-```
+```plaintext
 Display Name Field: displayName
 User Name Field: userName
 UID Field: uid
@@ -238,7 +238,7 @@ Assign Rancher roles to Keycloak groups:
 2. Search for Keycloak groups.
 3. Assign roles.
 
-```
+```plaintext
 Keycloak Group: rancher-admins -> Administrator
 Keycloak Group: rancher-devops -> Standard User
 Keycloak Group: rancher-developers -> Standard User

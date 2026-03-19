@@ -28,7 +28,7 @@ Users with only **Cluster Member** access can view cluster-level resources and c
 
 Before configuring access, design your project layout:
 
-```
+```plaintext
 Cluster: production
 ├── Project: frontend-team
 │   ├── Namespace: frontend-prod

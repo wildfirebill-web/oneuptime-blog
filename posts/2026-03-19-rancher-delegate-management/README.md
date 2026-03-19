@@ -19,7 +19,7 @@ As organizations scale their Kubernetes usage, a single platform team cannot man
 
 Plan who manages what:
 
-```
+```plaintext
 Platform Team (Admins)
 ├── Manages Rancher itself
 ├── Creates clusters
@@ -85,7 +85,7 @@ Cluster owners can create projects within their cluster. Guide them through the 
 
 The cluster owner should create projects that align with their team's structure:
 
-```
+```plaintext
 Frontend Cluster
 ├── Project: web-app (for the web application team)
 ├── Project: mobile-api (for the mobile API team)

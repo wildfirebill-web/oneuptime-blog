@@ -24,7 +24,7 @@ Kubernetes container logs come in several formats depending on the container run
 ```
 
 **CRI format:**
-```
+```plaintext
 2026-03-19T10:00:00.000000000Z stdout F 2026-03-19T10:00:00Z INFO Starting application
 ```
 

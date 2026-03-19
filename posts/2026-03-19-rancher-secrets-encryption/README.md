@@ -36,7 +36,7 @@ rke2 secrets-encrypt status
 
 Expected output:
 
-```
+```plaintext
 Encryption Status: Enabled
 Current Rotation Stage: start
 ```

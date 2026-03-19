@@ -20,7 +20,7 @@ OpenLDAP is the most widely deployed open-source LDAP directory server. Integrat
 
 Ensure your OpenLDAP directory has the required structure. A typical setup looks like:
 
-```
+```plaintext
 dc=example,dc=com
 ├── ou=users
 │   ├── uid=admin
@@ -119,7 +119,7 @@ Set up the OpenLDAP authentication provider:
 
 Enter the connection settings:
 
-```
+```plaintext
 Hostname or IP Address: ldap.example.com
 Port: 636
 TLS: ☑ Enabled
@@ -132,7 +132,7 @@ Service Account Password: <password>
 
 Set the user search parameters:
 
-```
+```plaintext
 User Search Base: ou=users,dc=example,dc=com
 Username Attribute: uid
 User Login Attribute: uid
@@ -148,7 +148,7 @@ If your OpenLDAP does not use the `memberOf` overlay, leave **User Member Attrib
 
 Set the group search parameters:
 
-```
+```plaintext
 Group Search Base: ou=groups,dc=example,dc=com
 Group Object Class: groupOfNames
 Group Name Attribute: cn
@@ -161,7 +161,7 @@ Nested Group Membership: ☐ Disabled
 
 For `groupOfUniqueNames` (used by some OpenLDAP configurations):
 
-```
+```plaintext
 Group Object Class: groupOfUniqueNames
 Group Member Mapping Attribute: uniqueMember
 ```
@@ -226,7 +226,7 @@ Assign Rancher roles to OpenLDAP groups:
 2. Search for OpenLDAP groups.
 3. Assign roles.
 
-```
+```plaintext
 Group: rancher-admins -> Administrator
 Group: rancher-users -> Standard User
 Group: rancher-readonly -> User-Base
@@ -234,7 +234,7 @@ Group: rancher-readonly -> User-Base
 
 For cluster-level access:
 
-```
+```plaintext
 Group: team-backend -> Cluster Member (production)
 Group: team-frontend -> Cluster Member (staging)
 ```

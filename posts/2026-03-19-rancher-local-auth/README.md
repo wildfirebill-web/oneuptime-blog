@@ -34,7 +34,7 @@ Add new local users:
 1. Click **Create**.
 2. Fill in the user details:
 
-```
+```plaintext
 Username: jdoe
 Display Name: John Doe
 Description: Backend developer
@@ -44,7 +44,7 @@ Confirm Password: <strong-password>
 
 3. Assign a global role:
 
-```
+```plaintext
 ☑ Standard User
 ☐ Administrator
 ☐ User-Base
@@ -132,7 +132,7 @@ Grant local users access to specific clusters and projects:
 4. Search for the local user.
 5. Select the cluster role.
 
-```
+```plaintext
 User: jdoe
 Cluster Role: Cluster Member
 
@@ -148,7 +148,7 @@ Cluster Role: Cluster Owner
 4. Search for the local user.
 5. Select the project role.
 
-```
+```plaintext
 User: jdoe
 Project: backend-services
 Project Role: Project Member
@@ -166,7 +166,7 @@ Create API keys for local users:
 2. Select **Account & API Keys**.
 3. Click **Create API Key**.
 
-```
+```plaintext
 Description: CI/CD Pipeline Access
 Scope: No Scope (access all clusters)
 Expires: In 90 days

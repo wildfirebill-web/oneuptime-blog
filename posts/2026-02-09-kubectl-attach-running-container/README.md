@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, Debugging
+Tags: Kubernetes, kubectl, Debugging
 
 Description: Learn how to use kubectl attach to connect to running container processes in Kubernetes for debugging, monitoring output, and interactive troubleshooting without restarting containers.
 

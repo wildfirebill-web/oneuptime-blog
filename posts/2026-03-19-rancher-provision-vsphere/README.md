@@ -41,7 +41,7 @@ Import the OVA into vSphere and convert it to a template.
 
 Create a vSphere role with the following permissions for Rancher:
 
-```
+```yaml
 Datastore:
   - Allocate space
   - Browse datastore
@@ -115,7 +115,7 @@ VM settings:
 - **Folder**: VM folder path (e.g., `/Datacenter/vm/Rancher`)
 - **Template**: Path to your VM template
 
-```
+```plaintext
 Template: /Datacenter/vm/Templates/ubuntu-22.04-template
 ```
 

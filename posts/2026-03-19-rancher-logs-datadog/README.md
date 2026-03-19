@@ -196,7 +196,7 @@ Create alerts in Datadog based on log patterns:
 2. Select **Log Monitor**.
 3. Configure the query:
 
-```
+```plaintext
 source:kubernetes status:error service:my-api
 ```
 

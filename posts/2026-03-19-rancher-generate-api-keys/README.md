@@ -38,7 +38,7 @@ Click the **Create API Key** button. You will see a form with the following fiel
 
 After clicking **Create**, Rancher displays the Access Key, Secret Key, and Bearer Token. Copy these immediately because the Secret Key and Bearer Token are only shown once.
 
-```
+```plaintext
 Access Key:  token-abc12
 Secret Key:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Bearer Token: token-abc12:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -58,7 +58,7 @@ rancher clusters ls
 
 This outputs a table with cluster names, IDs, states, and node counts:
 
-```
+```plaintext
 CURRENT   ID              NAME          STATE    NODES   PROVIDER
 *         c-m-abc12345    production    active   5       rke2
           c-m-def67890    staging       active   3       rke2

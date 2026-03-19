@@ -58,7 +58,7 @@ spec:
 
 In the Rancher UI, set these values under the agent customization section:
 
-```
+```plaintext
 Cluster Agent CPU Request: 200m
 Cluster Agent CPU Limit: 500m
 Cluster Agent Memory Request: 256Mi
@@ -92,7 +92,7 @@ spec:
 
 In the UI:
 
-```
+```plaintext
 Node Agent CPU Request: 50m
 Node Agent CPU Limit: 200m
 Node Agent Memory Request: 128Mi

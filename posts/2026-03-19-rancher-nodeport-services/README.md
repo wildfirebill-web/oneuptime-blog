@@ -139,7 +139,7 @@ For RKE clusters, edit the cluster configuration in Rancher:
 
 1. Go to **Cluster Management** > **Your Cluster** > **Edit Config**.
 2. Under **Advanced Options**, add to the kube-apiserver arguments:
-   ```
+   ```plaintext
    service-node-port-range: 20000-40000
    ```
 3. Save and wait for the cluster to reconcile.
@@ -178,7 +178,7 @@ Setting `externalTrafficPolicy: Local` preserves the client's source IP but only
 
 In bare-metal environments, combine NodePort with an external load balancer:
 
-```
+```plaintext
                     +-----------+
                     |  External |
                     |    LB     |

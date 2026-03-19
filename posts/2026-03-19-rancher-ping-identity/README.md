@@ -19,7 +19,7 @@ Ping Identity is an enterprise identity management platform that provides SSO, M
 
 Collect the Rancher Service Provider details needed for Ping Identity:
 
-```
+```plaintext
 Entity ID: https://rancher.example.com/v1-saml/ping/saml/metadata
 ACS URL: https://rancher.example.com/v1-saml/ping/saml/acs
 SLO URL: https://rancher.example.com/v1-saml/ping/saml/slo
@@ -41,7 +41,7 @@ Configure Rancher as a Service Provider in PingFederate:
 
 Import the Rancher metadata:
 
-```
+```plaintext
 Connection Type: SP
 Connection Template: Browser SSO
 Partner's Entity ID: https://rancher.example.com/v1-saml/ping/saml/metadata
@@ -50,7 +50,7 @@ Connection Name: Rancher
 
 Or manually enter:
 
-```
+```plaintext
 Base URL: https://rancher.example.com
 ```
 
@@ -61,7 +61,7 @@ Set up the Browser SSO profile:
 1. Under **Browser SSO**, click **Configure**.
 2. Select the SAML profiles:
 
-```
+```plaintext
 ☑ SP-Initiated SSO
 ☑ SP-Initiated SLO
 ☑ IdP-Initiated SSO
@@ -69,7 +69,7 @@ Set up the Browser SSO profile:
 
 3. Configure the assertion lifetime:
 
-```
+```plaintext
 Minutes Before: 5
 Minutes After: 5
 ```
@@ -80,7 +80,7 @@ Define the SAML attributes to send to Rancher:
 
 1. Under **Attribute Contract**, extend the default contract with:
 
-```
+```plaintext
 Attribute Name: displayName
 Attribute Format: urn:oasis:names:tc:SAML:2.0:attrname-format:basic
 
@@ -104,7 +104,7 @@ Configure the attribute source and mapping:
 1. Under **Authentication Source Mapping**, select your identity store (LDAP, AD, or database).
 2. Map the attributes:
 
-```
+```plaintext
 SAML Attribute    -> Source Attribute
 displayName       -> displayName (from LDAP)
 userName          -> sAMAccountName (from AD) or uid (from LDAP)
@@ -115,7 +115,7 @@ groups            -> memberOf
 
 For group attribute mapping, configure a custom data source:
 
-```
+```plaintext
 Type: LDAP
 Base DN: ou=groups,dc=example,dc=com
 Filter: (member=${SAML_SUBJECT})
@@ -126,7 +126,7 @@ Attribute: cn
 
 Set the protocol-specific options:
 
-```
+```plaintext
 Assertion Consumer Service URL: https://rancher.example.com/v1-saml/ping/saml/acs
 Binding: POST
 SLO Service URL: https://rancher.example.com/v1-saml/ping/saml/slo
@@ -164,7 +164,7 @@ Set up the Ping auth provider in Rancher:
 
 Enter the configuration:
 
-```
+```plaintext
 Display Name Field: displayName
 User Name Field: userName
 UID Field: uid
@@ -206,7 +206,7 @@ Map Ping Identity groups to Rancher roles:
 2. Search for groups that were returned in the SAML assertion.
 3. Assign roles.
 
-```
+```plaintext
 Group: Platform-Admins -> Administrator
 Group: DevOps -> Standard User
 Group: Developers -> Standard User
@@ -223,7 +223,7 @@ If using PingOne instead of PingFederate:
 3. Click **Add Application** and select **SAML**.
 4. Enter the Rancher details:
 
-```
+```plaintext
 Application Name: Rancher
 ACS URL: https://rancher.example.com/v1-saml/ping/saml/acs
 Entity ID: https://rancher.example.com/v1-saml/ping/saml/metadata

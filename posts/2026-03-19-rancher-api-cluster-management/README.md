@@ -21,7 +21,7 @@ Before you begin, make sure you have:
 
 The Rancher API follows a RESTful design and is available at your Rancher server URL under the `/v3` path. All cluster-related endpoints are under `/v3/clusters`.
 
-```
+```plaintext
 https://your-rancher-server/v3/clusters
 ```
 

@@ -172,7 +172,7 @@ kubectl apply -f test-violation.yaml
 
 Expected output when enforce is set to restricted:
 
-```
+```plaintext
 Error from server (Forbidden): error when creating "test-violation.yaml":
 pods "test-violation" is forbidden: violates PodSecurity "restricted:latest":
 privileged (container "test" must not set securityContext.privileged=true)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Receiver, Webhook, Troubleshooting, Debugging, Reconciliation
+Tags: Flux, Kubernetes, GitOps, Receiver, Webhooks, Troubleshooting, Debugging, Reconciliation
 
 Description: A systematic troubleshooting guide for diagnosing and fixing issues when a Flux Receiver accepts webhooks but does not trigger resource reconciliation.
 

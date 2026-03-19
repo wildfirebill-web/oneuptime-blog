@@ -55,7 +55,7 @@ helm history my-redis -n default
 
 Output:
 
-```
+```plaintext
 REVISION    UPDATED                     STATUS          CHART           APP VERSION     DESCRIPTION
 1           Mon Mar 10 10:00:00 2026    superseded      redis-18.0.0    7.2.0           Install complete
 2           Tue Mar 12 14:30:00 2026    superseded      redis-18.1.0    7.2.1           Upgrade complete

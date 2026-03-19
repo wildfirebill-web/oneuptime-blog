@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboard
+Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboards
 
 Description: Learn how to install, manage, and troubleshoot Rancher UI extensions to add new features and integrations to your Rancher dashboard.
 
@@ -33,7 +33,7 @@ kubectl get pods -n cattle-ui-plugin-system
 
 You should see the `ui-plugin-operator` pod running:
 
-```
+```plaintext
 NAME                                   READY   STATUS    RESTARTS   AGE
 ui-plugin-operator-xxxxxxxxx-xxxxx     1/1     Running   0          2m
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, RBAC
+Tags: Kubernetes, kubectl, RBAC
 
 Description: Learn how to verify RBAC permissions with kubectl auth can-i before deploying resources, preventing authorization failures and debugging permission issues in Kubernetes clusters.
 

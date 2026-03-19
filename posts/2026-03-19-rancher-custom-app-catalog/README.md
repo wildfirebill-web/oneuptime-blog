@@ -27,7 +27,7 @@ A Rancher catalog is essentially a Helm chart repository with an optional Ranche
 
 Set up your Git repository with the following structure:
 
-```
+```plaintext
 my-catalog/
 ├── charts/
 │   ├── my-web-app/

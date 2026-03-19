@@ -36,7 +36,7 @@ Click the **Add Template** button to start creating a new template.
 
 Fill in the basic information:
 
-```
+```plaintext
 Template Name: production-standard
 Description: Standard production cluster template with Calico networking and CIS hardening
 ```
@@ -145,7 +145,7 @@ Configure who can use the template:
    - **Owner**: Can modify and delete the template
    - **Member**: Can use the template to create clusters
 
-```
+```plaintext
 Member: devops-team
 Role: Member
 

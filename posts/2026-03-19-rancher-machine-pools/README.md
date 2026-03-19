@@ -28,7 +28,7 @@ Begin the cluster creation process:
 3. Choose **RKE2** or **K3s** as the Kubernetes distribution.
 4. Enter the cluster name.
 
-```
+```plaintext
 Cluster Name: production-rke2
 Kubernetes Version: v1.28.x+rke2r1
 ```
@@ -40,7 +40,7 @@ Configure the control plane machine pool:
 1. In the **Machine Pools** section, the first pool is created automatically.
 2. Configure it for control plane and etcd roles.
 
-```
+```plaintext
 Pool Name: control-plane
 Machine Count: 3
 Roles: ☑ etcd  ☑ Control Plane  ☐ Worker
@@ -57,7 +57,7 @@ Cloud Provider Settings:
 
 Click **Add Machine Pool** and configure the worker nodes:
 
-```
+```plaintext
 Pool Name: workers
 Machine Count: 5
 Roles: ☐ etcd  ☐ Control Plane  ☑ Worker
@@ -78,7 +78,7 @@ Set up advanced options for each machine pool:
 
 Configure drain and replacement behavior:
 
-```
+```plaintext
 Drain Before Delete: Yes
 Max Unhealthy: 1
 Machine Deploy Strategy: RollingUpdate
@@ -222,7 +222,7 @@ kubectl get machinesets -n fleet-default
 
 Example output:
 
-```
+```plaintext
 NAME       CLUSTER            REPLICAS   READY   AVAILABLE   AGE
 workers    production-rke2    5          5       5           24h
 cp-pool    production-rke2    3          3       3           24h
@@ -249,7 +249,7 @@ To recreate a pool with updated specifications:
 
 Deploy machine pools across availability zones for high availability:
 
-```
+```plaintext
 Pool: workers-us-east-1a
   Count: 3
   Region: us-east-1

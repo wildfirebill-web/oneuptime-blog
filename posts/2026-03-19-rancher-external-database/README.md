@@ -18,7 +18,7 @@ By default, K3s uses an embedded SQLite or etcd database. For production Rancher
 
 ## Architecture
 
-```
+```plaintext
 K3s Node 1 --+
               +--> External Database (MySQL/PostgreSQL)
 K3s Node 2 --+

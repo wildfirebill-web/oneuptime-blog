@@ -23,7 +23,7 @@ Create a dedicated service account in AD for Rancher:
 1. Open **Active Directory Users and Computers** on your domain controller.
 2. Create a new user account:
 
-```
+```plaintext
 Username: svc-rancher
 Password: <strong-password>
 Description: Rancher LDAP service account
@@ -37,7 +37,7 @@ User Cannot Change Password: Yes
 
 Collect the following information from your AD environment:
 
-```
+```plaintext
 Domain Controller Hostname: dc01.example.com
 Port: 636 (LDAPS) or 389 (LDAP)
 Base DN: DC=example,DC=com
@@ -78,7 +78,7 @@ Enable Active Directory authentication:
 
 Fill in the AD connection details:
 
-```
+```plaintext
 Hostname or IP Address: dc01.example.com
 Port: 636
 TLS: ☑ Enabled
@@ -102,7 +102,7 @@ Paste the contents of `ad-ca-cert.pem` into the Certificate field.
 
 Set up the search parameters:
 
-```
+```plaintext
 User Search Base: OU=Users,DC=example,DC=com
 Username Attribute: sAMAccountName
 User Login Attribute: sAMAccountName
@@ -154,7 +154,7 @@ Assign Rancher roles to AD groups:
 2. Search for an AD group.
 3. Assign global roles to the group.
 
-```
+```plaintext
 AD Group: DevOps-Team
 Rancher Role: Standard User
 
@@ -173,7 +173,7 @@ For cluster-level access:
 4. Search for the AD group.
 5. Assign the cluster role.
 
-```
+```plaintext
 AD Group: App-Team-A
 Cluster Role: Cluster Member
 

@@ -26,7 +26,7 @@ The behavior of cluster deletion depends on how the cluster was created:
 
 Before deleting any cluster, complete this checklist:
 
-```
+```plaintext
 Pre-Deletion Checklist
 ======================
 [ ] Confirm no critical workloads are running on the cluster

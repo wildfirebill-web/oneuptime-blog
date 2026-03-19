@@ -246,7 +246,7 @@ helm upgrade rancher rancher-stable/rancher \
 
 Create a staging upgrade report:
 
-```
+```plaintext
 Staging Upgrade Report
 ======================
 Date: YYYY-MM-DD

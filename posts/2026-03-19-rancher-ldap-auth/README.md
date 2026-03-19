@@ -83,7 +83,7 @@ Common LDAP schemas:
 
 Enter the LDAP server connection details:
 
-```
+```plaintext
 Hostname or IP Address: ldap.example.com
 Port: 636
 TLS: ☑ Enabled
@@ -94,7 +94,7 @@ Service Account Password: <password>
 
 For StartTLS instead of LDAPS:
 
-```
+```plaintext
 Port: 389
 TLS: ☑ Enabled
 StartTLS: ☑ Enabled
@@ -104,7 +104,7 @@ StartTLS: ☑ Enabled
 
 Set up how Rancher finds users in your directory:
 
-```
+```plaintext
 User Search Base: ou=users,dc=example,dc=com
 Username Attribute: uid
 User Login Attribute: uid
@@ -119,7 +119,7 @@ User Enabled Attribute: (leave blank for most LDAP servers)
 
 Set up how Rancher finds groups:
 
-```
+```plaintext
 Group Search Base: ou=groups,dc=example,dc=com
 Group Object Class: groupOfNames
 Group Name Attribute: cn
@@ -147,7 +147,7 @@ kubectl logs -l app=rancher -n cattle-system --tail=100 | grep -i ldap
 
 Common test failures and fixes:
 
-```
+```plaintext
 Error: "Invalid credentials"
 Fix: Verify the bind DN and password. Use the full DN, not just the username.
 
@@ -177,7 +177,7 @@ For global roles:
 2. Search for an LDAP group by name.
 3. Assign a global role.
 
-```
+```plaintext
 LDAP Group: cn=platform-admins,ou=groups,dc=example,dc=com
 Role: Administrator
 
@@ -205,7 +205,7 @@ Set up multiple LDAP servers for high availability:
 
 In the Rancher configuration, you can specify additional LDAP servers:
 
-```
+```plaintext
 Primary Server: ldap1.example.com:636
 ```
 
@@ -219,7 +219,7 @@ _ldaps._tcp.example.com.  IN SRV 1 100 636 ldap2.example.com.
 
 Then use the domain name in Rancher:
 
-```
+```plaintext
 Hostname: ldap.example.com
 ```
 

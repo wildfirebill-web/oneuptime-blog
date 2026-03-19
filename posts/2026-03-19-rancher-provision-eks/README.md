@@ -105,7 +105,7 @@ Configure API server endpoint access:
 - **Private**: API server accessible only within the VPC
 - **Public and Private**: Both access methods enabled
 
-```
+```plaintext
 Public Access Sources: 0.0.0.0/0 (or restrict to specific CIDRs)
 ```
 
@@ -123,7 +123,7 @@ Enable EKS control plane logging:
 
 Optionally enable envelope encryption for Kubernetes secrets using an AWS KMS key:
 
-```
+```plaintext
 KMS Key ARN: arn:aws:kms:us-east-1:123456789:key/your-key-id
 ```
 
@@ -163,14 +163,14 @@ To reduce costs, you can configure spot instances:
 
 Add labels to the node group:
 
-```
+```plaintext
 environment: production
 team: platform
 ```
 
 Add taints if needed:
 
-```
+```plaintext
 dedicated: gpu:NoSchedule
 ```
 

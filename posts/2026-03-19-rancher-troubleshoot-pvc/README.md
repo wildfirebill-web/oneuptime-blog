@@ -110,7 +110,7 @@ kubectl get events -n <namespace> --field-selector involvedObject.name=<pod-name
 
 ### FailedAttachVolume
 
-```
+```plaintext
 Warning  FailedAttachVolume  Unable to attach or mount volumes
 ```
 
@@ -129,7 +129,7 @@ kubectl describe node <node-name> | grep -A 5 "Allocatable"
 
 ### FailedMount
 
-```
+```plaintext
 Warning  FailedMount  MountVolume.MountDevice failed
 ```
 

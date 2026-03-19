@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, Security
+Tags: Kubernetes, kubectl, Security
 
 Description: Learn how to generate ServiceAccount tokens in Kubernetes using kubectl create token, including expiration settings, audience configuration, and secure authentication practices.
 

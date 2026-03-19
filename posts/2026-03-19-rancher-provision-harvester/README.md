@@ -42,7 +42,7 @@ You need a cloud image for provisioning VMs. In the Harvester UI:
 2. Click **Create**
 3. Upload an image or provide a URL:
 
-```
+```plaintext
 Name: ubuntu-22.04-cloud
 URL: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 ```

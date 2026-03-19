@@ -110,7 +110,7 @@ You should see pods for Prometheus, Grafana, Alertmanager, node-exporter, and ku
 
 Expected output:
 
-```
+```plaintext
 NAME                                                     READY   STATUS    RESTARTS   AGE
 alertmanager-rancher-monitoring-alertmanager-0            2/2     Running   0          3m
 prometheus-rancher-monitoring-prometheus-0                3/3     Running   0          3m

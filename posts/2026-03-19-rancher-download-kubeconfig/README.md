@@ -254,7 +254,7 @@ chmod 600 ~/.kube/rancher/*.yaml
 
 Add kubeconfig patterns to your `.gitignore`:
 
-```
+```plaintext
 **/kubeconfig*
 **/*.kubeconfig
 .kube/

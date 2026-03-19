@@ -28,7 +28,7 @@ Rancher projects work well for soft multi-tenancy. For hard multi-tenancy with u
 
 Map your tenants to Rancher projects:
 
-```
+```plaintext
 Shared Cluster
 ├── Project: tenant-alpha
 │   ├── Namespace: alpha-frontend

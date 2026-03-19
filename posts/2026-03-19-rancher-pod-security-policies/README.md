@@ -222,7 +222,7 @@ kubectl apply -f test-privileged.yaml
 
 This should be rejected with an error message indicating PSP violation:
 
-```
+```plaintext
 Error from server (Forbidden): error when creating "test-privileged.yaml":
 pods "test-privileged" is forbidden: PodSecurityPolicy: unable to validate against any pod security policy
 ```

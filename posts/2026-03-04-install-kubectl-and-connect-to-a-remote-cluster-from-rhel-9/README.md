@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubectl, Linux
+Tags: RHEL, kubectl, Linux
 
 Description: Learn how to install kubectl and Connect to a Remote Cluster from RHEL on RHEL with step-by-step instructions, configuration examples, and best practices.
 

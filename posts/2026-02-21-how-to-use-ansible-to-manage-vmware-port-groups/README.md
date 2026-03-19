@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, VMware, Networking, Port Groups, VSphere
+Tags: Ansible, VMware, Networking, Port Groups, vSphere
 
 Description: Learn how to create and manage VMware port groups on standard and distributed switches with Ansible for consistent network configuration.
 

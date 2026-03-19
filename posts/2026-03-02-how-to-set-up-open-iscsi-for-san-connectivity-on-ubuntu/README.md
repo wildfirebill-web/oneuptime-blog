@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, ISCSI, SAN, Storage, Open-iscsi
+Tags: Ubuntu, iSCSI, SAN, Storage, Open-iscsi
 
 Description: Configure open-iscsi on Ubuntu to connect to enterprise SAN storage arrays, manage persistent sessions, and handle automatic reconnection after reboots.
 

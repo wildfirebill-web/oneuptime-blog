@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Nginx, Logs, Web Server, Observability, Infrastructure
+Tags: OpenTelemetry, Collector, NGINX, Logs, Web Server, Observability, Infrastructure
 
 Description: Learn how to collect and parse NGINX access and error logs using the OpenTelemetry Collector filelog receiver with structured attribute extraction.
 

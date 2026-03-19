@@ -72,7 +72,7 @@ Rancher provides a UI for managing PSA on projects and namespaces:
 3. Click on the namespace you want to configure.
 4. Under **Labels**, add the PSA labels:
 
-```
+```plaintext
 pod-security.kubernetes.io/enforce = baseline
 pod-security.kubernetes.io/enforce-version = latest
 pod-security.kubernetes.io/audit = restricted

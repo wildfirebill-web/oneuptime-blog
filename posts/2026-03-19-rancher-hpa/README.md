@@ -213,7 +213,7 @@ kubectl get hpa my-app-hpa -n default
 
 Output:
 
-```
+```plaintext
 NAME         REFERENCE           TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 my-app-hpa   Deployment/my-app   35%/70%   2         10        2          5m
 ```

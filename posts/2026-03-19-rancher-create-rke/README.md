@@ -135,7 +135,7 @@ If running on a cloud provider, select it to enable cloud-specific features:
 
 If using a private registry, configure it:
 
-```
+```plaintext
 URL: registry.yourdomain.com
 User: registry-user
 Password: registry-password

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Job, Workloads
+Tags: Rancher, Kubernetes, Jobs, Workloads
 
 Description: Learn how to deploy a one-time Job workload in Rancher for batch processing, data migrations, and other tasks that run to completion.
 

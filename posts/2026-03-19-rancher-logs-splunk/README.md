@@ -249,7 +249,7 @@ kubectl logs -n cattle-logging-system -l app.kubernetes.io/name=fluentd -c fluen
 
 Search in Splunk:
 
-```
+```plaintext
 index=kubernetes source=kubernetes earliest=-15m
 ```
 

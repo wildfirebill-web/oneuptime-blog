@@ -257,7 +257,7 @@ kubectl exec -it $RANCHER_POD -n cattle-system -- env | grep NO_PROXY
 
 The `NO_PROXY` setting should include:
 
-```
+```plaintext
 localhost,127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.svc,.cluster.local
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, Krew
+Tags: Kubernetes, kubectl, Krew
 
 Description: Discover how to install and manage kubectl plugins using Krew, the official package manager that extends kubectl with hundreds of community-built tools and utilities.
 

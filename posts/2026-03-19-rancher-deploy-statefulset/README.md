@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, StatefulSet, Workloads
+Tags: Rancher, Kubernetes, StatefulSets, Workloads
 
 Description: Learn how to deploy a StatefulSet workload in Rancher for stateful applications that require stable network identities and persistent storage.
 
@@ -184,13 +184,13 @@ kubectl get pvc -l app=my-postgres -n default
 
 One advantage of StatefulSets is DNS-based discovery. Each pod is addressable at:
 
-```
+```xml
 <pod-name>.<headless-service>.<namespace>.svc.cluster.local
 ```
 
 For example:
 
-```
+```plaintext
 my-postgres-0.my-postgres-headless.default.svc.cluster.local
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Nginx, Ingress Controller, TLS, Kubernetes, Azure, HTTPS
+Tags: AKS, NGINX, Ingress Controller, TLS, Kubernetes, Azure, HTTPS
 
 Description: Step-by-step guide to deploying NGINX Ingress Controller on AKS and configuring TLS termination with certificates for secure HTTPS traffic.
 

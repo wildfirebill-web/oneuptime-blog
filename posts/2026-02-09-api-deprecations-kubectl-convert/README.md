@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, API Deprecation, Kubectl
+Tags: Kubernetes, API Deprecation, kubectl
 
 Description: Learn how to handle Kubernetes API deprecations using kubectl-convert to migrate manifests to newer API versions, ensuring compatibility with cluster upgrades.
 

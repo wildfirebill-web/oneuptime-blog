@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, VMware, VM Cloning, VSphere, Automation
+Tags: Ansible, VMware, VM Cloning, vSphere, Automation
 
 Description: Learn how to clone VMware virtual machines with Ansible, including full clones, linked clones, and customization during the cloning process.
 

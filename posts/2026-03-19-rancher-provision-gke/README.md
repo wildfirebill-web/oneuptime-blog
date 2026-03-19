@@ -107,7 +107,7 @@ Select the GKE Kubernetes version. GKE offers:
 
 Enable VPC-native networking (recommended):
 
-```
+```plaintext
 Cluster IP range: /14 (default)
 Services IP range: /20 (default)
 ```
@@ -124,7 +124,7 @@ For private clusters:
 
 Restrict which IP ranges can access the API server:
 
-```
+```plaintext
 Name: office-network
 CIDR: 203.0.113.0/24
 
@@ -174,14 +174,14 @@ Select the node image:
 
 Add labels:
 
-```
+```plaintext
 environment: production
 tier: general
 ```
 
 Add taints if needed for specialized node pools:
 
-```
+```plaintext
 workload-type: gpu:NoSchedule
 ```
 

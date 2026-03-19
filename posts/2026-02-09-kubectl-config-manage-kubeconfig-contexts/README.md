@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, Configuration Management
+Tags: Kubernetes, kubectl, Configuration Management
 
 Description: Master kubectl config commands to manage multiple clusters, contexts, and namespaces efficiently, enabling seamless switching between development, staging, and production environments.
 

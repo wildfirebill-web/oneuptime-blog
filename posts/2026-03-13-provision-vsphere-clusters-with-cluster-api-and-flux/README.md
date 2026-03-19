@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Cluster API, CAPI, VSphere, CAPV, GitOps, Kubernetes, On-Premise
+Tags: Flux CD, Cluster API, CAPI, vSphere, CAPV, GitOps, Kubernetes, On-Premise
 
 Description: Learn how to provision and manage on-premises Kubernetes clusters on VMware vSphere using Cluster API Provider vSphere (CAPV) and Flux CD, creating a GitOps-driven workflow for VM-based cluster...
 

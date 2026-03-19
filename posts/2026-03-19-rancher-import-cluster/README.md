@@ -50,7 +50,7 @@ Enter a descriptive name for the cluster as it will appear in Rancher (e.g., `pr
 
 Add labels to help organize and filter clusters:
 
-```
+```plaintext
 environment: production
 team: platform
 region: us-east-1

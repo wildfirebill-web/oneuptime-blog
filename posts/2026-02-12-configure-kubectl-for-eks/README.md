@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EKS, Kubernetes, Kubectl
+Tags: AWS, EKS, Kubernetes, kubectl
 
 Description: A complete guide to configuring kubectl for Amazon EKS clusters, including authentication, context management, and troubleshooting common connection issues.
 

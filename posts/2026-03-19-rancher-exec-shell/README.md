@@ -227,7 +227,7 @@ kubectl cp default/my-app-pod-abc123:/app/data.json ./data.json -c my-container
 
 This usually means the shell binary does not exist in the container:
 
-```
+```plaintext
 OCI runtime exec failed: exec failed: unable to start container process: exec: "/bin/bash": stat /bin/bash: no such file or directory
 ```
 

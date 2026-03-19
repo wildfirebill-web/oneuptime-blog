@@ -542,6 +542,7 @@
 - Apollo GraphQL
 - Apollo Server
 - App Attach
+- App Catalog
 - App Center
 - App Development
 - App Engine
@@ -942,6 +943,7 @@
 - AWS Console
 - Aws controllers for kubernetes
 - AWS Cost Explorer
+- AWS EBS
 - AWS EC2
 - AWS ECR
 - AWS ECS
@@ -2084,6 +2086,7 @@
 - Cloud Cost
 - Cloud Cost Management
 - Cloud Cost Optimization
+- Cloud Credentials
 - Cloud Data
 - Cloud Data Fusion
 - Cloud Database
@@ -3021,7 +3024,7 @@
 - Cumulative Metrics
 - CUPS
 - CUR
-- Curl
+- curl
 - Current Values
 - Cursor
 - Cursor-based pagination
@@ -5418,6 +5421,7 @@
 - Google GKE
 - Google Kubernetes Engine
 - Google Maps
+- Google OAuth
 - Google Play Console
 - Google Pub/Sub
 - Google Search
@@ -5597,6 +5601,7 @@
 - Hardware Watchdog
 - Harness
 - Harness CD
+- Harvester
 - Harvester HCI
 - Hash
 - Hash Slots
@@ -6507,7 +6512,7 @@
 - ISC
 - ISC DHCP
 - Isc-kea
-- ISCSI
+- iSCSI
 - ISE
 - IServiceCollection
 - ISMS
@@ -6825,11 +6830,11 @@
 - KubeArmor
 - Kubeaudit
 - Kubebuilder
-- Kubeconfig
+- kubeconfig
 - Kubeconform
 - KubeControllersConfiguration
 - Kubecost
-- Kubectl
+- kubectl
 - Kubectl Provider
 - KubeEdge
 - KubeFed
@@ -8327,7 +8332,7 @@
 - NFS
 - Nfsstat
 - nftables
-- Nginx
+- NGINX
 - NGINX Ingress
 - NGINX Plus
 - Nginx Unit
@@ -8425,6 +8430,7 @@
 - Node Status
 - Node Surge
 - Node Taints
+- Node Templates
 - Node Termination Handler
 - Node Troubleshooting
 - Node-cache
@@ -9200,6 +9206,7 @@
 - Pine64
 - Pinecone
 - Ping
+- Ping Identity
 - Ping-Pong
 - PingCAP
 - Pingdom
@@ -10459,7 +10466,7 @@
 - Resource Processor
 - Resource Protection
 - Resource Providers
-- Resource Quota
+- Resource Quotas
 - Resource recommendations
 - Resource Replacement
 - Resource Requests
@@ -13484,7 +13491,7 @@
 - VSAN
 - VSCode
 - Vsftpd
-- VSphere
+- vSphere
 - VTL
 - Vtysh
 - Vue
@@ -13615,11 +13622,11 @@
 - WebDriver
 - Webex
 - WebFlux
-- Webhook
 - Webhook Authentication
 - Webhook Development
 - Webhook Security
 - Webhook Triggers
+- Webhooks
 - WebJobs
 - Webmail
 - Webmin

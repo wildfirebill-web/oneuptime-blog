@@ -89,7 +89,7 @@ kubectl get pods -n cattle-logging-system
 
 Expected output:
 
-```
+```plaintext
 NAME                                           READY   STATUS    RESTARTS   AGE
 rancher-logging-7f8d5c9b6-xxxxx                1/1     Running   0          2m
 rancher-logging-fluentbit-xxxxx                 1/1     Running   0          2m

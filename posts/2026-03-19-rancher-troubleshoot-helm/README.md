@@ -60,7 +60,7 @@ kubectl describe pod <pod-name> -n default
 
 Look for events like:
 
-```
+```plaintext
 Failed to pull image "my-app:v2.0": rpc error: code = Unknown desc = Error response from daemon: manifest for my-app:v2.0 not found
 ```
 
@@ -103,7 +103,7 @@ kubectl describe pod <pod-name> -n default
 
 Look for events like:
 
-```
+```plaintext
 0/3 nodes are available: 3 Insufficient memory. 3 Insufficient cpu.
 ```
 
@@ -161,7 +161,7 @@ kubectl describe pvc <pvc-name> -n default
 
 Look for:
 
-```
+```plaintext
 waiting for first consumer to be created before binding
 no persistent volumes available for this claim
 ```
@@ -231,7 +231,7 @@ helm install my-app my-chart --dry-run -f values.yaml -n default
 
 Common errors:
 
-```
+```plaintext
 Error: template: my-chart/templates/deployment.yaml:15:20: executing "my-chart/templates/deployment.yaml" at <.Values.image.tag>: nil pointer evaluating interface {}.tag
 ```
 

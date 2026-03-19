@@ -18,7 +18,7 @@ DNS is a critical component of Kubernetes networking, enabling pods and services
 
 Every Kubernetes service gets a DNS entry automatically. The full DNS name follows this pattern:
 
-```
+```xml
 <service-name>.<namespace>.svc.<cluster-domain>
 ```
 
@@ -53,17 +53,17 @@ nslookup kube-dns.kube-system.svc.cluster.local
 Kubernetes creates different DNS records depending on the service type:
 
 **ClusterIP services** get an A record:
-```
+```plaintext
 my-service.default.svc.cluster.local -> 10.43.0.100
 ```
 
 **Headless services** (ClusterIP: None) get A records for each pod:
-```
+```plaintext
 my-headless.default.svc.cluster.local -> 10.42.0.5, 10.42.1.3, 10.42.2.7
 ```
 
 **SRV records** are created for named ports:
-```
+```plaintext
 _http._tcp.my-service.default.svc.cluster.local -> 0 100 80 my-service.default.svc.cluster.local
 ```
 
@@ -77,7 +77,7 @@ kubectl get configmap coredns -n kube-system -o yaml
 
 The default Corefile looks like:
 
-```
+```plaintext
 .:53 {
     errors
     health {
@@ -108,7 +108,7 @@ kubectl edit configmap coredns -n kube-system
 
 Add a `hosts` plugin for static entries:
 
-```
+```plaintext
 .:53 {
     errors
     health {
@@ -139,7 +139,7 @@ CoreDNS will automatically reload after the ConfigMap changes.
 
 Forward DNS queries to specific upstream servers:
 
-```
+```plaintext
 .:53 {
     errors
     health
@@ -161,7 +161,7 @@ Forward DNS queries to specific upstream servers:
 
 For domain-specific forwarding:
 
-```
+```plaintext
 example.com:53 {
     forward . 10.0.0.53
     cache 30
@@ -245,7 +245,7 @@ spec:
 
 Each pod gets a stable DNS name:
 
-```
+```plaintext
 db-0.db-headless.default.svc.cluster.local
 db-1.db-headless.default.svc.cluster.local
 db-2.db-headless.default.svc.cluster.local

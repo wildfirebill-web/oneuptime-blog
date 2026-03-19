@@ -25,7 +25,7 @@ Create an app registration for Rancher:
 
 Enter the registration details:
 
-```
+```plaintext
 Name: Rancher
 Supported account types: Accounts in this organizational directory only (Single tenant)
 Redirect URI:
@@ -39,7 +39,7 @@ Click **Register**.
 
 After registration, record the following values from the **Overview** page:
 
-```
+```plaintext
 Application (client) ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Directory (tenant) ID: yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
 ```
@@ -52,14 +52,14 @@ Generate a client secret for the application:
 2. Click **New client secret**.
 3. Enter a description and select an expiration period.
 
-```
+```plaintext
 Description: Rancher Authentication
 Expires: 24 months
 ```
 
 4. Click **Add** and immediately copy the **Value** field. This is the client secret and cannot be retrieved later.
 
-```
+```plaintext
 Client Secret Value: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
@@ -72,7 +72,7 @@ Set up the required API permissions:
 3. Select **Microsoft Graph**.
 4. Choose **Delegated permissions** and add:
 
-```
+```yaml
 Delegated Permissions:
   - openid
   - profile
@@ -82,7 +82,7 @@ Delegated Permissions:
 5. Click **Add a permission** again.
 6. Select **Microsoft Graph** then **Application permissions** and add:
 
-```
+```yaml
 Application Permissions:
   - Directory.Read.All
   - Group.Read.All
@@ -121,7 +121,7 @@ Set up the Azure AD auth provider in Rancher:
 
 Enter the configuration details:
 
-```
+```plaintext
 Tenant ID: yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
 Application ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Application Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -133,7 +133,7 @@ Auth Endpoint: https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authori
 
 For government cloud environments:
 
-```
+```plaintext
 Endpoint: https://login.microsoftonline.us/
 Graph Endpoint: https://graph.microsoft.us
 ```
@@ -171,7 +171,7 @@ Configure Azure AD to send group claims:
 2. Click **Add groups claim**.
 3. Select the group types:
 
-```
+```plaintext
 ☑ Security groups
 ☑ Directory roles
 ☐ Groups assigned to the application
@@ -202,7 +202,7 @@ Assign Rancher roles to Azure AD groups:
 2. Search for Azure AD groups by name or object ID.
 3. Assign global roles.
 
-```
+```plaintext
 Azure AD Group: Platform-Admins (Object ID: xxx) -> Administrator
 Azure AD Group: DevOps (Object ID: xxx) -> Standard User
 Azure AD Group: Developers (Object ID: xxx) -> Standard User

@@ -30,7 +30,7 @@ In the panel editor:
 
 ### Time Series Panel for CPU Usage
 
-```
+```plaintext
 Query: sum(rate(container_cpu_usage_seconds_total{namespace="$namespace", container!=""}[5m])) by (pod)
 Legend: {{ pod }}
 Unit: short
@@ -38,7 +38,7 @@ Unit: short
 
 ### Gauge Panel for Memory Percentage
 
-```
+```plaintext
 Query: (1 - sum(node_memory_MemAvailable_bytes) / sum(node_memory_MemTotal_bytes)) * 100
 Unit: percent (0-100)
 Thresholds: 0=green, 70=yellow, 85=red
@@ -46,7 +46,7 @@ Thresholds: 0=green, 70=yellow, 85=red
 
 ### Stat Panel for Pod Count
 
-```
+```plaintext
 Query: count(kube_pod_info{namespace="$namespace"})
 Unit: short
 Color mode: Value
@@ -54,7 +54,7 @@ Color mode: Value
 
 ### Table Panel for Top Resource Consumers
 
-```
+```plaintext
 Query A: topk(10, sum(rate(container_cpu_usage_seconds_total{container!=""}[5m])) by (namespace, pod))
 Query B: topk(10, sum(container_memory_working_set_bytes{container!=""}) by (namespace, pod))
 Format: Table
@@ -69,7 +69,7 @@ Variables make dashboards interactive by allowing users to filter data:
 
 ### Namespace Variable
 
-```
+```plaintext
 Name: namespace
 Type: Query
 Data source: Prometheus
@@ -79,7 +79,7 @@ Sort: Alphabetical (asc)
 
 ### Pod Variable
 
-```
+```plaintext
 Name: pod
 Type: Query
 Data source: Prometheus
@@ -91,7 +91,7 @@ Include All option: enabled
 
 ### Node Variable
 
-```
+```plaintext
 Name: node
 Type: Query
 Data source: Prometheus

@@ -35,7 +35,7 @@ Set up Amazon Web Services credentials:
 2. Select **Amazon** as the cloud credential type.
 3. Enter the credential details.
 
-```
+```plaintext
 Name: aws-production
 Description: Production AWS account credentials
 Access Key: AKIAIOSFODNN7EXAMPLE
@@ -87,7 +87,7 @@ Set up Microsoft Azure credentials:
 2. Select **Azure** as the cloud credential type.
 3. Enter the Azure service principal details.
 
-```
+```plaintext
 Name: azure-production
 Description: Production Azure subscription credentials
 Subscription ID: 12345678-1234-1234-1234-123456789012
@@ -154,7 +154,7 @@ Set up VMware vSphere credentials:
 2. Select **VMware vSphere** as the cloud credential type.
 3. Enter the vCenter details.
 
-```
+```plaintext
 Name: vsphere-datacenter
 Description: vSphere datacenter credentials
 vCenter Server: vcenter.example.com
@@ -179,7 +179,7 @@ Set up DigitalOcean credentials:
 2. Select **DigitalOcean** as the cloud credential type.
 3. Enter the API token.
 
-```
+```plaintext
 Name: digitalocean-production
 Description: DigitalOcean production account
 Access Token: dop_v1_your-personal-access-token

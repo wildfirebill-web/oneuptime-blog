@@ -110,7 +110,7 @@ docker run -d \
 
 Open your web browser and navigate to:
 
-```
+```plaintext
 https://<your-server-ip>
 ```
 
@@ -126,7 +126,7 @@ You will then be prompted to:
 
 Set the server URL to the address that your downstream clusters will use to communicate with Rancher. This should be a DNS name or IP address that is reachable from all nodes:
 
-```
+```plaintext
 https://rancher.yourdomain.com
 ```
 

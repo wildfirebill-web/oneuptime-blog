@@ -51,7 +51,7 @@ Define who approves upgrades:
 
 Document everything that the upgrade touches:
 
-```
+```yaml
 Environment Inventory
 =====================
 Management Cluster:
@@ -80,7 +80,7 @@ Integrations:
 
 Create a checklist to run before every upgrade:
 
-```
+```plaintext
 Pre-Upgrade Checklist
 =====================
 [ ] Review release notes for target version

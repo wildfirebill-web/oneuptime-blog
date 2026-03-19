@@ -95,7 +95,7 @@ Select the AKS Kubernetes version from the available options.
 
 #### Network Configuration (Azure CNI)
 
-```
+```plaintext
 Virtual Network: Select existing or create new
 Subnet: Select a subnet with sufficient IP space
 Service CIDR: 10.0.0.0/16
@@ -116,7 +116,7 @@ Select a network policy provider:
 
 Configure authorized IP ranges for the API server:
 
-```
+```plaintext
 Authorized IP Ranges: 203.0.113.0/24, <RANCHER_IP>/32
 ```
 
@@ -162,7 +162,7 @@ Add a user node pool for application workloads:
 
 Select availability zones for node distribution:
 
-```
+```plaintext
 Zones: 1, 2, 3
 ```
 
@@ -170,14 +170,14 @@ Zones: 1, 2, 3
 
 Add labels:
 
-```
+```plaintext
 environment: production
 workload-type: general
 ```
 
 Add taints for specialized pools:
 
-```
+```plaintext
 dedicated: high-memory:NoSchedule
 ```
 
@@ -187,7 +187,7 @@ dedicated: high-memory:NoSchedule
 
 Add Azure resource tags:
 
-```
+```plaintext
 team: platform
 cost-center: engineering
 managed-by: rancher
@@ -197,7 +197,7 @@ managed-by: rancher
 
 Enable Azure Monitor for containers:
 
-```
+```plaintext
 Container Insights: Enabled
 Log Analytics Workspace: Select or create
 ```

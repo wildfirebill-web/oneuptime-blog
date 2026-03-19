@@ -179,7 +179,7 @@ ETCDCTL_API=3 etcdctl snapshot status /var/lib/rancher/rke2/server/db/snapshots/
 
 Expected output shows hash, revision, total keys, and total size:
 
-```
+```plaintext
 +----------+----------+------------+------------+
 |   HASH   | REVISION | TOTAL KEYS | TOTAL SIZE |
 +----------+----------+------------+------------+

@@ -74,7 +74,7 @@ ldapsearch -x -H ldaps://ipa.example.com:636 \
 
 FreeIPA uses the following standard paths:
 
-```
+```plaintext
 Users: cn=users,cn=accounts,dc=example,dc=com
 Groups: cn=groups,cn=accounts,dc=example,dc=com
 Service Accounts: cn=sysaccounts,cn=etc,dc=example,dc=com
@@ -110,7 +110,7 @@ Set up the connection using Rancher's OpenLDAP provider:
 
 Enter the connection details:
 
-```
+```plaintext
 Hostname or IP Address: ipa.example.com
 Port: 636
 TLS: ☑ Enabled
@@ -123,7 +123,7 @@ Service Account Password: <password>
 
 Set up the user search parameters for FreeIPA:
 
-```
+```plaintext
 User Search Base: cn=users,cn=accounts,dc=example,dc=com
 Username Attribute: uid
 User Login Attribute: uid
@@ -145,7 +145,7 @@ Note the FreeIPA-specific settings:
 
 Set up the group search parameters:
 
-```
+```plaintext
 Group Search Base: cn=groups,cn=accounts,dc=example,dc=com
 Group Object Class: groupofnames
 Group Name Attribute: cn
@@ -199,7 +199,7 @@ Create role mappings:
 2. Search for FreeIPA groups.
 3. Assign roles.
 
-```
+```plaintext
 FreeIPA Group: admins -> Administrator
 FreeIPA Group: devops -> Standard User
 FreeIPA Group: developers -> Standard User
@@ -246,7 +246,7 @@ ipa passwd
 
 For high availability, configure Rancher to connect to a load-balanced FreeIPA endpoint:
 
-```
+```plaintext
 Hostname: ipa-lb.example.com
 ```
 

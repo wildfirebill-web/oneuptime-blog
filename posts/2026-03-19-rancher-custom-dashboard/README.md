@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Dashboard, UI Extensions, Monitoring
+Tags: Rancher, Kubernetes, Dashboards, UI Extensions, Monitoring
 
 Description: Learn how to create custom dashboards in Rancher using UI extensions, Grafana integration, and the Rancher monitoring stack.
 

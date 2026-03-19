@@ -45,7 +45,7 @@ kubectl get pods -n cattle-resources-system
 
 You should see output similar to:
 
-```
+```plaintext
 NAME                              READY   STATUS    RESTARTS   AGE
 rancher-backup-5d4b8c7f9d-abcde   1/1     Running   0          30s
 ```

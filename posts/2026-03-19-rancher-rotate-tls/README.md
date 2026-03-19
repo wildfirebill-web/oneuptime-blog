@@ -26,7 +26,7 @@ kubectl get secret tls-rancher-ingress -n cattle-system -o jsonpath='{.data.tls\
 
 Output example:
 
-```
+```plaintext
 notBefore=Jan 1 00:00:00 2025 GMT
 notAfter=Apr 1 00:00:00 2026 GMT
 ```

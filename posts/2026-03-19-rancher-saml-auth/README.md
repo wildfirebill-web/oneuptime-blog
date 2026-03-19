@@ -36,7 +36,7 @@ First, obtain the Rancher Service Provider (SP) metadata:
 3. Select your SAML provider (e.g., **Ping**, **Keycloak**, **ADFS**, or **Shibboleth**).
 4. Note the SP metadata URL, typically:
 
-```
+```plaintext
 https://rancher.example.com/v1-saml/adfs/saml/metadata
 ```
 
@@ -53,7 +53,7 @@ Register Rancher as a Service Provider in your IdP. The general process involves
 1. Import or manually enter the Rancher SP metadata.
 2. Configure the following endpoints:
 
-```
+```plaintext
 Entity ID: https://rancher.example.com/v1-saml/adfs/saml/metadata
 ACS URL: https://rancher.example.com/v1-saml/adfs/saml/acs
 Single Logout URL: https://rancher.example.com/v1-saml/adfs/saml/slo
@@ -61,7 +61,7 @@ Single Logout URL: https://rancher.example.com/v1-saml/adfs/saml/slo
 
 3. Configure attribute mappings to include:
 
-```
+```plaintext
 UID Attribute: uid (or preferred username attribute)
 Display Name Attribute: displayName
 User Name Attribute: userName
@@ -107,7 +107,7 @@ curl -sk "https://idp.example.com/idp/shibboleth" > idp-metadata.xml
 
 Extract the key information from the metadata:
 
-```
+```plaintext
 IdP Entity ID: https://adfs.example.com/adfs/services/trust
 SSO URL: https://adfs.example.com/adfs/ls/
 SLO URL: https://adfs.example.com/adfs/ls/?wa=wsignout1.0
@@ -122,7 +122,7 @@ Enter the IdP details in Rancher:
 2. Select your SAML provider.
 3. Fill in the configuration:
 
-```
+```plaintext
 Display Name Field: displayName
 User Name Field: userName
 UID Field: uid
@@ -134,7 +134,7 @@ IDP Metadata: (paste the IdP metadata XML)
 
 Or enter the fields manually:
 
-```
+```plaintext
 IdP Entity ID: https://adfs.example.com/adfs/services/trust
 SAML SSO URL: https://adfs.example.com/adfs/ls/
 IDP Certificate: (paste the IdP signing certificate in PEM format)
@@ -144,7 +144,7 @@ IDP Certificate: (paste the IdP signing certificate in PEM format)
 
 Map SAML groups to Rancher roles:
 
-```
+```plaintext
 SAML Group Attribute Name: groups
 
 Group Mappings:
@@ -199,7 +199,7 @@ Set up Single Logout (SLO) so that logging out of Rancher also logs the user out
 
 1. In your IdP, configure the SLO endpoint:
 
-```
+```plaintext
 SLO URL: https://rancher.example.com/v1-saml/adfs/saml/slo
 SLO Binding: HTTP-Redirect
 ```

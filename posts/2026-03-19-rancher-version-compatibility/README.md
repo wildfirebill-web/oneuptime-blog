@@ -158,7 +158,7 @@ Some Rancher versions require specific ingress controller versions or configurat
 
 Before proceeding with the upgrade, compile a checklist:
 
-```
+```plaintext
 Upgrade Compatibility Checklist
 ================================
 Current Rancher version: ___

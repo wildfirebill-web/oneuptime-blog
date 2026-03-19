@@ -131,7 +131,7 @@ The ingress should show your configured hostname.
 
 Open your browser and navigate to:
 
-```
+```plaintext
 https://rancher.yourdomain.com
 ```
 

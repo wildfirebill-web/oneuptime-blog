@@ -77,7 +77,7 @@ Select the CNI:
 
 Configure the network ranges if the defaults conflict with your network:
 
-```
+```plaintext
 Cluster CIDR: 10.42.0.0/16
 Service CIDR: 10.43.0.0/16
 Cluster DNS: 10.43.0.10

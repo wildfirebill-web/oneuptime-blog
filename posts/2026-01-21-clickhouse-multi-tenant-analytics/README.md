@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Multi-Tenant, Analytics Platform, SaaS, Tenant Isolation, Resource Quota
+Tags: ClickHouse, Multi-Tenant, Analytics Platform, SaaS, Tenant Isolation, Resource Quotas
 
 Description: A comprehensive guide to building a multi-tenant analytics platform with ClickHouse, covering tenant isolation strategies, resource quotas, query routing.
 

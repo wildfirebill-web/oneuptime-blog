@@ -38,7 +38,7 @@ Navigate to **Cluster Management** then **RKE Templates** and click **Add Templa
 
 Enter the template details:
 
-```
+```plaintext
 Name: standard-rke-cluster
 Description: Organization-standard RKE cluster configuration
 ```

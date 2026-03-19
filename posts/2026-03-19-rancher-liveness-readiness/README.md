@@ -276,7 +276,7 @@ kubectl describe pod my-app-pod -n default
 
 Look for events like:
 
-```
+```plaintext
 Warning  Unhealthy  3s  kubelet  Liveness probe failed: HTTP probe failed with statuscode: 503
 Warning  Unhealthy  3s  kubelet  Readiness probe failed: HTTP probe failed with statuscode: 503
 ```

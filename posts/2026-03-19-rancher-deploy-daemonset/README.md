@@ -151,7 +151,7 @@ kubectl get daemonset fluentd-logger -n kube-system
 
 The output shows:
 
-```
+```plaintext
 NAME              DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE
 fluentd-logger    3         3         3       3             3
 ```

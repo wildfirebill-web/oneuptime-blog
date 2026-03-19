@@ -26,7 +26,7 @@ Set up the Rancher application in Okta:
 
 Enter the general settings:
 
-```
+```plaintext
 App Name: Rancher
 App Logo: (upload the Rancher logo if desired)
 App Visibility: Do not display application icon to users (optional)
@@ -38,7 +38,7 @@ Click **Next** to proceed to SAML settings.
 
 Enter the Rancher SAML endpoints:
 
-```
+```plaintext
 Single sign-on URL: https://rancher.example.com/v1-saml/okta/saml/acs
 Audience URI (SP Entity ID): https://rancher.example.com/v1-saml/okta/saml/metadata
 Default RelayState: (leave blank)
@@ -48,7 +48,7 @@ Application username: Okta username
 
 Configure the response and assertion:
 
-```
+```plaintext
 Response: Signed
 Assertion Signature: Signed
 Signature Algorithm: RSA-SHA256
@@ -60,7 +60,7 @@ Assertion Encryption: Unencrypted
 
 Add the following attribute statements in Okta:
 
-```
+```plaintext
 Name: displayName
 Name Format: Unspecified
 Value: user.displayName
@@ -80,7 +80,7 @@ Value: user.email
 
 Add group attribute statements:
 
-```
+```plaintext
 Name: groups
 Name Format: Unspecified
 Filter: Matches regex: .*
@@ -88,7 +88,7 @@ Filter: Matches regex: .*
 
 This sends all groups the user belongs to. You can narrow the filter to only send specific groups:
 
-```
+```plaintext
 Filter: Starts with: rancher-
 ```
 
@@ -121,7 +121,7 @@ Assign users to the Rancher application:
 2. Click **Assign** and select **Assign to Groups**.
 3. Search for and assign the relevant groups.
 
-```
+```yaml
 Assigned Groups:
   - Everyone (or specific groups)
   - DevOps-Team
@@ -139,7 +139,7 @@ Now configure Rancher to use Okta:
 
 Enter the configuration details:
 
-```
+```plaintext
 Display Name Field: displayName
 User Name Field: userName
 UID Field: uid
@@ -151,7 +151,7 @@ IdP Metadata: (paste the downloaded Okta metadata XML)
 
 Or manually enter:
 
-```
+```plaintext
 IdP Entity ID: http://www.okta.com/xxxxx
 SAML SSO URL: https://your-org.okta.com/app/xxxxx/sso/saml
 IDP Certificate: (paste the Okta X.509 certificate)
@@ -198,7 +198,7 @@ Configure role mappings for Okta groups:
 
 Global role mappings:
 
-```
+```plaintext
 Okta Group: Platform-Engineers -> Administrator
 Okta Group: DevOps-Team -> Standard User
 Okta Group: Developers -> Standard User
@@ -212,7 +212,7 @@ Cluster-level mappings:
 3. Search for the Okta group.
 4. Assign the cluster role.
 
-```
+```plaintext
 Okta Group: App-Team-Backend -> Cluster Member (production-cluster)
 Okta Group: App-Team-Frontend -> Cluster Member (production-cluster)
 Okta Group: QA-Team -> Cluster Member (staging-cluster)

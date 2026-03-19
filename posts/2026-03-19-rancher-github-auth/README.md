@@ -25,7 +25,7 @@ Register Rancher as an OAuth application in GitHub:
 
 Fill in the application details:
 
-```
+```plaintext
 Application Name: Rancher
 Homepage URL: https://rancher.example.com
 Application Description: Rancher Kubernetes Management Platform
@@ -38,13 +38,13 @@ Authorization callback URL: https://rancher.example.com/verify-auth
 
 After registration, you will see:
 
-```
+```plaintext
 Client ID: xxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 Click **Generate a new client secret** and copy it immediately:
 
-```
+```plaintext
 Client Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
@@ -60,14 +60,14 @@ Set up GitHub authentication in Rancher:
 
 Enter the credentials:
 
-```
+```plaintext
 Client ID: xxxxxxxxxxxxxxxxxxxxxxx
 Client Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 For GitHub Enterprise Server, also provide:
 
-```
+```plaintext
 GitHub Enterprise Host: github.company.com
 GitHub Enterprise API: https://github.company.com/api/v3
 TLS: ☑ Enabled
@@ -80,14 +80,14 @@ Set which GitHub users and organizations can access Rancher:
 
 1. Under **Site Access**, select the access level:
 
-```
+```plaintext
 ☐ Allow any GitHub user (not recommended for production)
 ☑ Restrict access to specific GitHub users, organizations, or teams
 ```
 
 2. Add authorized organizations and teams:
 
-```
+```yaml
 Authorized Organizations:
   - my-company-org
 
@@ -133,7 +133,7 @@ For global roles:
 2. Search for GitHub organizations or teams.
 3. Assign the appropriate role.
 
-```
+```plaintext
 GitHub Team: my-company-org/platform-admins -> Administrator
 GitHub Team: my-company-org/devops -> Standard User
 GitHub Team: my-company-org/developers -> Standard User
@@ -147,7 +147,7 @@ For cluster-level roles:
 3. Search for the GitHub team.
 4. Assign the cluster role.
 
-```
+```plaintext
 GitHub Team: my-company-org/backend-team -> Cluster Member (production)
 GitHub Team: my-company-org/frontend-team -> Cluster Member (staging)
 ```
@@ -159,7 +159,7 @@ For organizations using GitHub Enterprise Server:
 1. In the GitHub auth configuration, toggle **GitHub Enterprise**.
 2. Enter your GitHub Enterprise details:
 
-```
+```plaintext
 Hostname: github.company.com
 TLS: ☑ Enabled
 Certificate: (paste the CA certificate)

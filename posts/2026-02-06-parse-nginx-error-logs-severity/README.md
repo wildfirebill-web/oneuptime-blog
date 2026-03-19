@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Nginx, Error Logs, Severity, Filelog Receiver
+Tags: OpenTelemetry, NGINX, Error Logs, Severity, Filelog Receiver
 
 Description: Parse NGINX error logs and extract severity levels into OpenTelemetry log records using the filelog receiver operator chain.
 

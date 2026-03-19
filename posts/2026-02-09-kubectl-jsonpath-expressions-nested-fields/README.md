@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kubectl, JSONPath
+Tags: Kubernetes, kubectl, JSONPath
 
 Description: Master kubectl JSONPath expressions to extract deeply nested fields from Kubernetes resources, filter results, and build powerful custom queries for cluster analysis.
 

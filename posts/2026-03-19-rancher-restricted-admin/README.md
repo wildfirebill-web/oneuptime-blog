@@ -143,7 +143,7 @@ Use this sparingly, as it partially defeats the purpose of restricted admin.
 
 Create a structure where full admins manage the platform, restricted admins manage clusters, and standard users consume resources:
 
-```
+```plaintext
 Full Administrators (2-3 people)
 ├── Manage Rancher installation
 ├── Access the local cluster

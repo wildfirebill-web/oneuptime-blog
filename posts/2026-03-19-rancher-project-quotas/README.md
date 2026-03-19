@@ -195,7 +195,7 @@ done
 
 When a team hits their quota, they will see errors like:
 
-```
+```plaintext
 Error from server (Forbidden): pods "my-pod" is forbidden: exceeded quota:
 default-xxxxx, requested: pods=1, used: pods=100, limited: pods=100
 ```

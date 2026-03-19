@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Namespaces, Resource Quota, LimitRange, Multi-Tenancy
+Tags: Kubernetes, Namespaces, Resource Quotas, LimitRange, Multi-Tenancy
 
 Description: Learn how to use resource quotas and limit ranges to manage resource allocation across Kubernetes namespaces.
 

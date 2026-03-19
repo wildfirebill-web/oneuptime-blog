@@ -50,12 +50,12 @@ Let us create a global role that allows a user to manage authentication configur
    - **New Rule**: Select the API resources related to authentication.
 4. Configure the permissions:
 
-```
+```plaintext
 Resource: authconfigs
 Verbs: get, list, watch, update
 ```
 
-```
+```plaintext
 Resource: users
 Verbs: get, list, watch
 ```

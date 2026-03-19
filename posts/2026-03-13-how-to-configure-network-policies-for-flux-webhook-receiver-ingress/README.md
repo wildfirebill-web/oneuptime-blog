@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Security, Network Policies, Webhook, Ingress
+Tags: Flux, Kubernetes, GitOps, Security, Network Policies, Webhooks, Ingress
 
 Description: Secure the Flux notification-controller webhook receiver by configuring Kubernetes NetworkPolicies that restrict inbound traffic to only trusted sources.
 

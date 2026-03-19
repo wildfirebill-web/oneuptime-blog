@@ -182,7 +182,7 @@ When creating downstream Kubernetes clusters from Rancher behind a proxy, you ne
 1. Go to Cluster Management and click Create
 2. Under Advanced Options, add the following Agent Environment Variables:
 
-```
+```plaintext
 HTTP_PROXY=http://proxy.corp.example.com:3128
 HTTPS_PROXY=http://proxy.corp.example.com:3128
 NO_PROXY=localhost,127.0.0.1,0.0.0.0,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.svc,.cluster.local

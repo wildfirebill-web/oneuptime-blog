@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nginx, SELinux, Troubleshooting, Linux
+Tags: RHEL, NGINX, SELinux, Troubleshooting, Linux
 
 Description: A focused guide to diagnosing and fixing SELinux network connection denials for Nginx on RHEL.
 

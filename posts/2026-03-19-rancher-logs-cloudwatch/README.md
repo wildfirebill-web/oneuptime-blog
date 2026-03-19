@@ -203,7 +203,7 @@ Common retention periods: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 5
 
 After logs are flowing to CloudWatch, use CloudWatch Insights for querying:
 
-```
+```bash
 # Find error logs
 fields @timestamp, @message
 | filter @message like /ERROR/

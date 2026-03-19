@@ -66,7 +66,7 @@ kubectl apply -f backend-api.yaml
 
 Other pods can now reach this service using:
 
-```
+```plaintext
 backend-api                              # same namespace
 backend-api.default                      # with namespace
 backend-api.default.svc.cluster.local    # fully qualified
@@ -96,7 +96,7 @@ kubectl run env-test --image=busybox --rm -it -- env | grep BACKEND
 
 Output:
 
-```
+```plaintext
 BACKEND_API_SERVICE_HOST=10.43.0.100
 BACKEND_API_SERVICE_PORT=80
 BACKEND_API_PORT=tcp://10.43.0.100:80
@@ -188,7 +188,7 @@ kubectl run test --image=busybox --rm -it -- nslookup db-headless
 
 Individual pods are addressable:
 
-```
+```plaintext
 database-0.db-headless.default.svc.cluster.local
 database-1.db-headless.default.svc.cluster.local
 database-2.db-headless.default.svc.cluster.local
