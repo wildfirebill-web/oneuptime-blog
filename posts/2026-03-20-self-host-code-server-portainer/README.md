@@ -1,0 +1,91 @@
+# How to Self-Host a Code Server (VS Code) with Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Code Server, VS Code, Self-Hosting, Docker, Development, Remote IDE
+
+Description: Learn how to deploy code-server, a browser-based VS Code environment, via Portainer for remote development accessible from any device.
+
+---
+
+Code-server brings the full VS Code editor to the browser. You can edit code, run terminals, and install extensions from any device without setting up local development environments. Portainer simplifies deployment and management.
+
+## Compose Stack
+
+```yaml
+version: "3.8"
+
+services:
+  code-server:
+    image: codercom/code-server:latest
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    environment:
+      # Password to access the editor
+      PASSWORD: changeme-strong-password
+      SUDO_PASSWORD: changeme-sudo-pass    # For sudo inside the container
+    volumes:
+      # Persist your home directory and project files
+      - code_server_data:/home/coder
+      - /mnt/projects:/home/coder/projects  # Mount your project directory
+    user: "1000:1000"
+
+volumes:
+  code_server_data:
+```
+
+## Deploying
+
+1. In Portainer go to **Stacks > Add Stack**.
+2. Name it `code-server`.
+3. Set a strong `PASSWORD`.
+4. Click **Deploy the stack**.
+
+Open `http://<host>:8443`. Enter the password and you'll have a full VS Code environment.
+
+## Installing Common Tools
+
+From the code-server terminal, install development tools:
+
+```bash
+# Install Node.js via nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm install 20
+
+# Install Python tools
+pip3 install virtualenv black flake8 mypy
+
+# Install Go
+wget https://go.dev/dl/go1.22.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+```
+
+## HTTPS with a Reverse Proxy
+
+For production access, put code-server behind Nginx with HTTPS:
+
+```nginx
+server {
+    listen 443 ssl;
+    server_name code.example.com;
+
+    location / {
+        proxy_pass http://localhost:8443;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}
+```
+
+## Persisting Extensions
+
+VS Code extensions install to `~/.local/share/code-server/extensions/`, which is inside the `code_server_data` volume. Updating the container image does not lose your installed extensions.
+
+## Monitoring
+
+Use OneUptime to monitor `http://<host>:8443` for HTTP 200/302 (redirect to login). Alert on downtime to know when your remote development environment needs attention.

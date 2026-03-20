@@ -1,0 +1,131 @@
+# How to Configure IPv6 Firewall on OpenWrt
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenWrt, IPv6, Firewall, ip6tables, nftables
+
+Description: Configure ip6tables-based IPv6 firewall rules on OpenWrt using the nftables fw4 framework or iptables-based rules.
+
+## Overview
+
+Configure ip6tables-based IPv6 firewall rules on OpenWrt using the nftables fw4 framework or iptables-based rules.
+
+## Prerequisites
+
+- OpenWrt 21.02+ (for improved IPv6 support with fw4/nftables)
+- SSH access to the router
+- IPv6 connectivity from ISP or tunnel
+
+## OpenWrt IPv6 Architecture
+
+OpenWrt uses several components for IPv6:
+- **odhcp6c**: DHCPv6 client for WAN
+- **odhcpd**: DHCPv6 server + RA daemon for LAN
+- **dnsmasq**: DNS resolver (handles AAAA records)
+- **fw4/nftables** or **iptables**: IPv6 firewall
+
+## UCI Configuration
+
+OpenWrt uses UCI (Unified Configuration Interface) for all configuration:
+
+```bash
+# View current network configuration
+uci show network
+
+# View IPv6 specific settings
+uci show network | grep ipv6
+
+# Apply changes
+uci commit network
+/etc/init.d/network restart
+```
+
+## Network Interface Configuration
+
+### WAN6 (DHCPv6)
+
+```bash
+# Configure WAN6 for DHCPv6
+uci set network.wan6.proto='dhcpv6'
+uci set network.wan6.reqaddress='try'
+uci set network.wan6.reqprefix='auto'
+uci commit network
+```
+
+### In /etc/config/network
+
+```
+config interface 'wan6'
+    option device 'eth0'
+    option proto 'dhcpv6'
+    option reqaddress 'try'
+    option reqprefix 'auto'
+
+config interface 'lan'
+    option device 'br-lan'
+    option proto 'static'
+    option ipaddr '192.168.1.1'
+    option netmask '255.255.255.0'
+    # IPv6 via prefix delegation
+    option ip6assign '60'
+```
+
+## DHCP/RA Configuration (/etc/config/dhcp)
+
+```
+config dhcp 'lan'
+    option interface 'lan'
+    option start '100'
+    option limit '150'
+    option leasetime '12h'
+    option dhcpv6 'server'
+    option ra 'server'
+    option ra_management '1'
+    list dns '2001:4860:4860::8888'
+```
+
+## IPv6 Firewall Rules
+
+```bash
+# For fw4 (nftables-based, OpenWrt 22.03+)
+# /etc/config/firewall
+
+# Allow ICMPv6 (essential!)
+uci add firewall rule
+uci set firewall.@rule[-1].name='Allow-ICMPv6'
+uci set firewall.@rule[-1].proto='icmp'
+uci set firewall.@rule[-1].family='ipv6'
+uci set firewall.@rule[-1].icmp_type='echo-request destination-unreachable'
+uci set firewall.@rule[-1].target='ACCEPT'
+uci commit firewall
+```
+
+## Checking IPv6 Status
+
+```bash
+# Check IPv6 addresses
+ip -6 addr show
+
+# Check IPv6 routes
+ip -6 route show
+
+# Check DHCPv6 client status
+logread | grep odhcp6c | tail -20
+
+# Check RA daemon
+logread | grep odhcpd | tail -20
+
+# Test IPv6 connectivity
+ping6 -c 3 2001:4860:4860::8888
+
+# Check NDP neighbors
+ip -6 neigh show
+```
+
+## Monitoring with OneUptime
+
+Use [OneUptime](https://oneuptime.com) to monitor your OpenWrt router's IPv6 connectivity. Ping monitors targeting the router's IPv6 LAN address and IPv6 DNS servers verify the full IPv6 stack is functional.
+
+## Conclusion
+
+How to Configure IPv6 Firewall on OpenWrt primarily involves UCI configuration files at `/etc/config/network` and `/etc/config/dhcp`. The key components are odhcp6c (WAN DHCPv6 client) and odhcpd (LAN DHCPv6 server + RA). Always check logs with `logread` when troubleshooting IPv6 issues.

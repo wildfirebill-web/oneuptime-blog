@@ -1,0 +1,116 @@
+# How to Set Up Inter-Service Communication in Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Microservices, Docker Networks, Service Communication, DNS, Container Networking
+
+Description: Learn how to configure inter-service communication between containers in Portainer using Docker networks and DNS-based service discovery.
+
+---
+
+Services in a Portainer-managed Docker environment communicate through Docker networks. Understanding how Docker's built-in DNS resolves container names enables reliable service-to-service communication.
+
+## Docker's Built-in Service DNS
+
+When containers share a Docker network, they can reach each other by container name or service name (in Compose stacks). Docker's embedded DNS automatically resolves these names to container IPs:
+
+```bash
+# From inside container A, reach container B by service name
+curl http://user-service:3001/api/users
+#           ^^^^^^^^^^^  Service name from compose
+#                        resolves to container IP automatically
+```
+
+## Setting Up a Shared Network
+
+**Option 1: Single Compose Stack (simplest)**
+
+Services in the same Compose stack share a default network automatically:
+
+```yaml
+version: "3.8"
+services:
+  web:
+    image: nginx:alpine
+  api:
+    image: node:20-alpine
+    # 'web' can reach 'api' as: http://api:3000
+```
+
+**Option 2: Named Network for Cross-Stack Communication**
+
+```yaml
+version: "3.8"
+networks:
+  shared_net:
+    name: shared_network    # Fixed name so other stacks can join
+
+services:
+  api:
+    image: myapi:latest
+    networks:
+      - shared_net
+```
+
+In a second stack, join the same network:
+
+```yaml
+version: "3.8"
+networks:
+  shared_net:
+    external: true          # Network already exists
+    name: shared_network
+
+services:
+  worker:
+    image: myworker:latest
+    networks:
+      - shared_net
+    # Can now reach 'api' from the other stack
+```
+
+## Testing Connectivity
+
+```bash
+# Test from inside a container via Portainer Exec console
+curl -f http://api:3000/health && echo "Connected" || echo "Failed"
+
+# DNS resolution test
+nslookup api
+# Returns: Address: 172.18.0.x (container IP)
+```
+
+## Service Communication Patterns
+
+```javascript
+// Node.js service calling another service by container name
+const fetch = require('node-fetch');
+
+async function getUserById(userId) {
+  // Use service name (not IP) - DNS resolves dynamically
+  const res = await fetch(`http://user-service:3001/users/${userId}`);
+  return res.json();
+}
+```
+
+## Isolating Services
+
+Use separate networks to control which services can communicate:
+
+```yaml
+services:
+  frontend:
+    networks:
+      - frontend_net       # Can reach nginx
+  nginx:
+    networks:
+      - frontend_net       # Bridges frontend and backend
+      - backend_net
+  api:
+    networks:
+      - backend_net        # Cannot be reached by frontend directly
+
+networks:
+  frontend_net:
+  backend_net:
+```

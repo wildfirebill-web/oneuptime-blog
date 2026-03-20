@@ -1,0 +1,161 @@
+# How to Set Up Longhorn for Database Workloads
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Longhorn, Database, PostgreSQL, MySQL, Kubernetes, Storage, StatefulSet, Performance
+
+Description: Learn how to configure Longhorn storage for database workloads including StatefulSets for PostgreSQL and MySQL, with optimizations for data locality, IOPS, and backup scheduling.
+
+---
+
+Databases are the most demanding stateful workloads in Kubernetes. Running them on Longhorn requires careful configuration of replica count, data locality, backup schedules, and resource isolation to ensure durability and performance.
+
+---
+
+## Recommended Longhorn Settings for Databases
+
+| Setting | Recommended Value | Reason |
+|---|---|---|
+| Number of replicas | 3 | High durability |
+| Data locality | best-effort | Reduce read latency |
+| Revision counter | disabled | Slightly better write IOPS |
+| Snapshots | daily | Granular recovery points |
+| Backups | every 6 hours | RPO of 6 hours |
+
+---
+
+## Step 1: Create a Database-Optimized StorageClass
+
+```yaml
+# storageclass-database.yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: longhorn-database
+provisioner: driver.longhorn.io
+allowVolumeExpansion: true
+parameters:
+  numberOfReplicas: "3"
+  staleReplicaTimeout: "2880"
+  # Best-effort places primary replica on the same node as the DB pod
+  dataLocality: "best-effort"
+  # Disable revision counter to reduce write overhead
+  disableRevisionCounter: "true"
+  # Use disk labeled "ssd" for better IOPS
+  diskSelector: "ssd"
+reclaimPolicy: Retain
+volumeBindingMode: WaitForFirstConsumer
+```
+
+---
+
+## Step 2: Deploy PostgreSQL as a StatefulSet
+
+```yaml
+# postgres-statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: databases
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          resources:
+            requests:
+              cpu: "1"
+              memory: 2Gi
+            limits:
+              cpu: "4"
+              memory: 8Gi
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: [ReadWriteOnce]
+        storageClassName: longhorn-database
+        resources:
+          requests:
+            storage: 100Gi
+```
+
+---
+
+## Step 3: Configure Recurring Backups
+
+```yaml
+# recurring-backup-db.yaml
+apiVersion: longhorn.io/v1beta2
+kind: RecurringJob
+metadata:
+  name: db-backup-6h
+  namespace: longhorn-system
+spec:
+  cron: "0 */6 * * *"
+  task: backup
+  groups:
+    - database
+  retain: 7         # 7 backups = 42 hours of history
+  concurrency: 1
+  labels:
+    workload: database
+```
+
+Label the database volumes to add them to the `database` group:
+
+```bash
+kubectl patch lhvolume <postgres-pvc-volume-name> \
+  -n longhorn-system \
+  --type merge \
+  -p '{"spec":{"recurringJobSelector":[{"name":"db-backup-6h","isGroup":true}]}}'
+```
+
+---
+
+## Step 4: Pre-Upgrade Snapshot Before Migrations
+
+```bash
+# Create a snapshot before running database migrations
+kubectl apply -f - <<EOF
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: pre-migration-$(date +%Y%m%d%H%M)
+  namespace: databases
+spec:
+  volumeSnapshotClassName: longhorn-snapshot-vsc
+  source:
+    persistentVolumeClaimName: data-postgres-0
+EOF
+```
+
+---
+
+## Best Practices
+
+- Use `reclaimPolicy: Retain` for database StorageClasses — never auto-delete database volumes.
+- Set `volumeBindingMode: WaitForFirstConsumer` to ensure the volume is created on the same node as the pod.
+- Schedule database-specific backups more frequently than general workloads.
+- Test backup restore on a staging database at least monthly to verify recovery capability.

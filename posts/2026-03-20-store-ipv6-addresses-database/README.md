@@ -1,0 +1,158 @@
+# How to Store IPv6 Addresses in a Database
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: IPv6, Database, PostgreSQL, MySQL, Storage, INET6, Binary
+
+Description: Store IPv6 addresses efficiently in PostgreSQL, MySQL, and SQLite using native types, binary storage, and indexed queries for high-performance lookups.
+
+## Introduction
+
+Storing IPv6 addresses correctly requires understanding address length, normalization, and query performance. PostgreSQL has a native `inet` type; MySQL 8+ has `INET6_ATON`; SQLite uses text. Choosing the right approach avoids common pitfalls like storing non-canonical forms or using columns too short for IPv6.
+
+## PostgreSQL: Native inet Type
+
+```sql
+-- Create table with native inet type
+CREATE TABLE connections (
+    id         BIGSERIAL PRIMARY KEY,
+    client_ip  INET NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Insert IPv6 address
+INSERT INTO connections (client_ip) VALUES ('2001:db8::1');
+INSERT INTO connections (client_ip) VALUES ('::1');
+INSERT INTO connections (client_ip) VALUES ('::ffff:192.0.2.1');  -- IPv4-mapped
+
+-- Query by exact address
+SELECT * FROM connections WHERE client_ip = '2001:db8::1';
+
+-- Query by subnet
+SELECT * FROM connections WHERE client_ip <<= '2001:db8::/32';
+
+-- Index for fast subnet queries
+CREATE INDEX idx_connections_ip ON connections USING GIST (client_ip inet_ops);
+
+-- Find all /64 subnet connections
+SELECT client_ip, COUNT(*)
+FROM connections
+WHERE client_ip <<= '2001:db8::/64'
+GROUP BY client_ip;
+```
+
+## MySQL: INET6_ATON Binary Storage
+
+```sql
+-- Store as VARBINARY(16) for efficient binary storage
+CREATE TABLE connections (
+    id         BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    client_ip  VARBINARY(16) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_ip (client_ip)
+);
+
+-- Insert IPv6 address
+INSERT INTO connections (client_ip)
+VALUES (INET6_ATON('2001:db8::1'));
+
+-- IPv4 address (stored as 4 bytes)
+INSERT INTO connections (client_ip)
+VALUES (INET6_ATON('203.0.113.1'));
+
+-- Query by exact address
+SELECT INET6_NTOA(client_ip) AS ip, created_at
+FROM connections
+WHERE client_ip = INET6_ATON('2001:db8::1');
+
+-- Query all from a /32 prefix (2001:db8::/32)
+-- MySQL doesn't support native subnet queries easily
+-- Use bit masking:
+SELECT INET6_NTOA(client_ip) AS ip
+FROM connections
+WHERE client_ip >= INET6_ATON('2001:db8::')
+  AND client_ip <= INET6_ATON('2001:db8:ffff:ffff:ffff:ffff:ffff:ffff');
+```
+
+## MySQL: Alternative TEXT Storage
+
+```sql
+-- Simple approach: store canonical form as VARCHAR(45)
+-- 45 = max length of IPv6 address in full form with IPv4 notation
+CREATE TABLE connections (
+    id         BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    client_ip  VARCHAR(45) NOT NULL,
+    INDEX idx_ip (client_ip)
+);
+
+-- Always normalize before inserting
+-- In application code: str(ipaddress.ip_address(raw_ip))
+INSERT INTO connections (client_ip) VALUES ('2001:db8::1');
+```
+
+## Python: Normalize Before Storage
+
+```python
+import ipaddress
+from typing import Optional
+
+def normalize_ip_for_storage(raw_ip: str) -> Optional[str]:
+    """
+    Normalize an IP address to its canonical form for database storage.
+    Handles IPv4, IPv6, and IPv4-mapped IPv6 addresses.
+    """
+    try:
+        addr = ipaddress.ip_address(raw_ip)
+        # Unpack IPv4-mapped IPv6 addresses
+        if isinstance(addr, ipaddress.IPv6Address) and addr.ipv4_mapped:
+            return str(addr.ipv4_mapped)
+        return str(addr)
+    except ValueError:
+        return None
+
+# Examples
+print(normalize_ip_for_storage("2001:DB8::1"))      # 2001:db8::1 (lowercase)
+print(normalize_ip_for_storage("::ffff:192.0.2.1")) # 192.0.2.1 (unmapped)
+print(normalize_ip_for_storage("::1"))              # ::1
+```
+
+## Django ORM Example
+
+```python
+# models.py
+from django.db import models
+
+class Connection(models.Model):
+    # GenericIPAddressField handles both IPv4 and IPv6
+    client_ip = models.GenericIPAddressField(
+        protocol='both',
+        unpack_ipv4=True,  # Store ::ffff:1.2.3.4 as 1.2.3.4
+        db_index=True,
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+# Query by IPv6 subnet (PostgreSQL with inet field)
+from django.db.models import Q
+connections_in_subnet = Connection.objects.filter(
+    client_ip__startswith='2001:db8:'
+)
+```
+
+## Indexing Strategy
+
+```sql
+-- PostgreSQL: use GiST index for range/subnet queries
+CREATE INDEX idx_ip_gist ON connections USING GiST (client_ip inet_ops);
+
+-- MySQL: full text for VARCHAR, binary compare for VARBINARY
+CREATE INDEX idx_ip ON connections (client_ip);
+
+-- For high-volume tables: partition by /32 prefix
+-- PostgreSQL partitioning example
+CREATE TABLE connections_2001db8 PARTITION OF connections
+    FOR VALUES FROM ('2001:db8::') TO ('2001:db9::');
+```
+
+## Conclusion
+
+PostgreSQL's native `inet` type with GiST indexing is the best choice for IPv6 addresses — it supports subnet operators natively. MySQL works well with `VARBINARY(16)` and `INET6_ATON`/`INET6_NTOA`. Always normalize addresses before storage using `ipaddress.ip_address()`. Use `VARCHAR(45)` minimum for text storage. Monitor database query performance for IP-range queries with OneUptime.

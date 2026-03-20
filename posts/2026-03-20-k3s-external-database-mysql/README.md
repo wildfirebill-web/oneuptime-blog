@@ -1,0 +1,132 @@
+# How to Configure K3s with an External Database (MySQL)
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: K3s, MySQL, External Database, Kubernetes, High Availability, SUSE Rancher, Cluster Storage
+
+Description: Learn how to configure K3s to use an external MySQL database as the cluster datastore instead of the embedded SQLite, enabling multi-server HA deployments.
+
+---
+
+By default K3s uses embedded SQLite which only supports a single server node. Switching to an external MySQL database enables running multiple K3s server nodes for high availability.
+
+---
+
+## Step 1: Set Up MySQL
+
+Install and configure MySQL 8.0+:
+
+```bash
+# Install MySQL on a dedicated database node
+sudo apt-get install -y mysql-server
+
+# Secure the installation
+sudo mysql_secure_installation
+```
+
+Create the K3s database and user:
+
+```sql
+-- Connect as root
+-- Create the k3s database
+CREATE DATABASE k3s CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Create a dedicated user with limited privileges
+CREATE USER 'k3suser'@'%' IDENTIFIED BY 'strongpassword123';
+GRANT ALL PRIVILEGES ON k3s.* TO 'k3suser'@'%';
+FLUSH PRIVILEGES;
+```
+
+Enable remote connections in MySQL:
+
+```bash
+# Edit /etc/mysql/mysql.conf.d/mysqld.cnf
+# Change bind-address from 127.0.0.1 to 0.0.0.0 or the server IP
+sudo sed -i 's/bind-address.*/bind-address = 0.0.0.0/' \
+  /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo systemctl restart mysql
+```
+
+---
+
+## Step 2: Install K3s Server with MySQL Datastore
+
+On the first K3s server node, provide the MySQL DSN via the `--datastore-endpoint` flag:
+
+```bash
+# Format: mysql://user:password@tcp(host:port)/database
+curl -sfL https://get.k3s.io | sh -s - server \
+  --datastore-endpoint="mysql://k3suser:strongpassword123@tcp(192.168.1.50:3306)/k3s" \
+  --tls-san="k3s-lb.example.com" \
+  --tls-san="192.168.1.10"
+```
+
+Or use the configuration file:
+
+```yaml
+# /etc/rancher/k3s/config.yaml
+datastore-endpoint: "mysql://k3suser:strongpassword123@tcp(192.168.1.50:3306)/k3s"
+tls-san:
+  - "k3s-lb.example.com"
+  - "192.168.1.10"
+```
+
+---
+
+## Step 3: Start Additional Server Nodes
+
+Additional server nodes connect to the same MySQL database. K3s automatically coordinates leadership via the database:
+
+```bash
+# On each additional server node
+curl -sfL https://get.k3s.io | sh -s - server \
+  --datastore-endpoint="mysql://k3suser:strongpassword123@tcp(192.168.1.50:3306)/k3s" \
+  --tls-san="k3s-lb.example.com" \
+  --token="<token-from-first-server>"
+```
+
+---
+
+## Step 4: Add a Load Balancer
+
+Put a load balancer (HAProxy, Nginx, or cloud LB) in front of all server nodes on ports 6443 (API) and 6444 (supervisor):
+
+```
+backend k3s-servers
+    server k3s-1 192.168.1.11:6443 check
+    server k3s-2 192.168.1.12:6443 check
+    server k3s-3 192.168.1.13:6443 check
+```
+
+---
+
+## Step 5: Verify the Setup
+
+```bash
+# From any server node
+kubectl get nodes
+
+# Verify datastore connectivity
+journalctl -u k3s | grep -i "datastore"
+```
+
+---
+
+## MySQL Backup and Maintenance
+
+```bash
+# Back up the K3s database
+mysqldump -h 192.168.1.50 -u k3suser -p k3s > k3s-backup-$(date +%Y%m%d).sql
+
+# Restore from backup
+mysql -h 192.168.1.50 -u k3suser -p k3s < k3s-backup-20260320.sql
+```
+
+---
+
+## Best Practices
+
+- Use MySQL with read replicas and point K3s at the primary for writes.
+- Enable SSL/TLS for the MySQL connection: append `?tls=true` to the DSN.
+- Back up the MySQL database before every K3s upgrade.
+- Monitor MySQL replication lag — if the replica lags significantly, K3s HA may be affected during failover.

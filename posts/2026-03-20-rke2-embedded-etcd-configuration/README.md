@@ -1,0 +1,126 @@
+# How to Configure RKE2 with Embedded etcd
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: RKE2, etcd, Embedded etcd, Kubernetes, SUSE Rancher, Cluster Storage, HA
+
+Description: Learn how to configure and tune RKE2's built-in embedded etcd cluster, including snapshot schedules, compaction settings, and performance tuning for production use.
+
+---
+
+RKE2 ships with an embedded etcd that is automatically configured for high availability when you run three or more server nodes. This guide covers how to tune, back up, and maintain the embedded etcd.
+
+---
+
+## Embedded etcd Architecture
+
+RKE2's embedded etcd uses the same ports and security as a standalone etcd cluster but is fully managed by RKE2. Each server node runs an etcd member, and RKE2 handles certificate management and cluster bootstrapping automatically.
+
+---
+
+## Step 1: Enable etcd Snapshots
+
+Configure automatic etcd snapshots in `/etc/rancher/rke2/config.yaml`:
+
+```yaml
+# /etc/rancher/rke2/config.yaml
+
+token: my-cluster-token
+tls-san:
+  - "rke2.example.com"
+
+# etcd snapshot settings
+etcd-snapshot-schedule-cron: "0 */6 * * *"   # every 6 hours
+etcd-snapshot-retention: 10                    # keep last 10 snapshots
+etcd-snapshot-dir: /var/lib/rancher/rke2/server/db/snapshots
+
+# Optional: push snapshots to S3
+etcd-s3: true
+etcd-s3-bucket: my-rke2-etcd-backups
+etcd-s3-region: us-east-1
+etcd-s3-access-key: <access-key>
+etcd-s3-secret-key: <secret-key>
+```
+
+---
+
+## Step 2: Configure etcd Performance Options
+
+For clusters with many resources or high write throughput, tune the etcd heartbeat and election timeouts:
+
+```yaml
+# Add to /etc/rancher/rke2/config.yaml
+
+# etcd heartbeat interval in milliseconds (default 100ms)
+etcd-arg:
+  - "heartbeat-interval=150"
+  # Election timeout — should be 10x heartbeat
+  - "election-timeout=1500"
+  # Disk quota (8GB for large clusters)
+  - "quota-backend-bytes=8589934592"
+  # Compact historical data after 1 hour
+  - "auto-compaction-retention=1h"
+  - "auto-compaction-mode=periodic"
+```
+
+---
+
+## Step 3: Take a Manual Snapshot
+
+```bash
+# Take a snapshot on demand
+rke2 etcd-snapshot save \
+  --name manual-snapshot-$(date +%Y%m%d%H%M%S)
+
+# List available snapshots
+rke2 etcd-snapshot ls
+```
+
+---
+
+## Step 4: Check etcd Cluster Health
+
+```bash
+export ETCDCTL_API=3
+ETCD_ARGS="--endpoints https://127.0.0.1:2379 \
+  --cacert /var/lib/rancher/rke2/server/tls/etcd/server-ca.crt \
+  --cert /var/lib/rancher/rke2/server/tls/etcd/client.crt \
+  --key /var/lib/rancher/rke2/server/tls/etcd/client.key"
+
+# Check cluster health
+/var/lib/rancher/rke2/bin/etcdctl $ETCD_ARGS endpoint health
+
+# Check member list
+/var/lib/rancher/rke2/bin/etcdctl $ETCD_ARGS member list
+
+# Check endpoint status (shows leader and db size)
+/var/lib/rancher/rke2/bin/etcdctl $ETCD_ARGS endpoint status --write-out=table
+```
+
+---
+
+## Step 5: Restore from a Snapshot
+
+If the cluster needs to be restored from a snapshot, stop RKE2 on all server nodes first:
+
+```bash
+# On all server nodes
+systemctl stop rke2-server
+
+# On the node where you are restoring
+rke2 server \
+  --cluster-reset \
+  --cluster-reset-restore-path=/var/lib/rancher/rke2/server/db/snapshots/my-snapshot.db
+
+# Restart on all nodes
+systemctl start rke2-server
+```
+
+---
+
+## Best Practices
+
+- Use SSD storage for etcd data — HDD latency causes etcd heartbeat timeouts and leader elections.
+- Monitor etcd database size (`db_size` metric) — when it approaches the quota, defrag or increase the quota.
+- Always test restores on a non-production cluster to validate your backup process.
+- Enable S3 snapshots in addition to local snapshots for disaster recovery coverage.

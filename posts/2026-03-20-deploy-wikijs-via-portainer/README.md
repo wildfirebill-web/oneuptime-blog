@@ -1,0 +1,85 @@
+# How to Deploy Wiki.JS via Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Wiki.js, Documentation, Docker, Self-Hosting, PostgreSQL, Markdown
+
+Description: Learn how to deploy Wiki.js, the powerful Node.js-based wiki platform, via Portainer with a PostgreSQL backend and Git synchronization support.
+
+---
+
+Wiki.js is a modern, feature-rich wiki built on Node.js. It supports Markdown, WYSIWYG editing, Git synchronization for version control, and granular access permissions. Portainer makes the two-container stack straightforward to manage.
+
+## Prerequisites
+
+- Portainer running
+- At least 512MB RAM
+
+## Compose Stack
+
+```yaml
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: wiki
+      POSTGRES_USER: wikijs
+      POSTGRES_PASSWORD: wikijspass      # Change this
+    volumes:
+      - wikijs_db:/var/lib/postgresql/data
+
+  wiki:
+    image: ghcr.io/requarks/wiki:2
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "3100:3000"
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: wikijs
+      DB_PASS: wikijspass                # Must match db service
+      DB_NAME: wiki
+
+volumes:
+  wikijs_db:
+```
+
+## Deploying
+
+1. In Portainer go to **Stacks > Add Stack**.
+2. Name it `wikijs`.
+3. Update the database password.
+4. Click **Deploy the stack**.
+
+Open `http://<host>:3100` to complete the setup wizard. Create your administrator account on the first run.
+
+## Git Storage Backend
+
+Wiki.js can sync all pages to a Git repository, providing automatic version history:
+
+1. Go to **Administration > Storage**.
+2. Enable **Git** storage.
+3. Configure your repository URL and SSH key or token.
+4. Set the sync interval (e.g., every 5 minutes).
+
+All page edits will be committed to your Git repository automatically.
+
+## Access Control
+
+Wiki.js has granular permissions per page, group, and namespace. Create groups under **Administration > Groups** and assign permissions by path pattern:
+
+```
+/public/*     → Read for guests
+/internal/*   → Read/Write for Staff group only
+/admin/*      → Manage for Administrators only
+```
+
+## Monitoring
+
+Use OneUptime to monitor `http://<host>:3100` for HTTP 200. Wiki.js serves a login page at the root. Configure an alert so that documentation becomes available again quickly after any outage.

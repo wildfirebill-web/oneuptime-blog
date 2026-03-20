@@ -1,0 +1,165 @@
+# How to Configure Elasticsearch Cluster with IPv6
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Elasticsearch, IPv6, Search, Cluster, Distributed, Kibana, ELK Stack
+
+Description: Configure an Elasticsearch cluster with IPv6 node addresses, covering network binding, discovery configuration, TLS setup, and Kibana connectivity over IPv6.
+
+---
+
+Elasticsearch is a distributed search and analytics engine. Configuring it for IPv6 requires setting IPv6 network host addresses in `elasticsearch.yml` and ensuring the JVM resolves names using IPv6.
+
+## Elasticsearch IPv6 Configuration
+
+```yaml
+# /etc/elasticsearch/elasticsearch.yml
+
+# Cluster name
+cluster.name: my-elasticsearch-cluster
+
+# Node name
+node.name: es-node-1
+
+# Data and log directories
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+# Network binding - use IPv6 address
+network.host: "2001:db8::1"
+
+# Or use special values:
+# network.host: _local:ipv6_   (loopback IPv6)
+# network.host: _site:ipv6_    (site-local IPv6)
+# network.host: _global:ipv6_  (global unicast IPv6)
+
+# HTTP API port
+http.port: 9200
+
+# Transport port (inter-node)
+transport.port: 9300
+
+# Seed hosts for cluster discovery (IPv6 with brackets)
+discovery.seed_hosts:
+  - "[2001:db8::1]:9300"
+  - "[2001:db8::2]:9300"
+  - "[2001:db8::3]:9300"
+
+# Initial master-eligible nodes
+cluster.initial_master_nodes:
+  - "es-node-1"
+  - "es-node-2"
+  - "es-node-3"
+```
+
+## JVM Options for IPv6
+
+```bash
+# /etc/elasticsearch/jvm.options.d/ipv6.options
+-Djava.net.preferIPv6Addresses=true
+-Djava.net.preferIPv4Stack=false
+```
+
+## Starting Elasticsearch
+
+```bash
+# Start Elasticsearch
+sudo systemctl enable --now elasticsearch
+
+# Verify listening on IPv6
+ss -tlnp | grep "9200\|9300"
+
+# Check cluster health
+curl -6 http://[2001:db8::1]:9200/_cluster/health?pretty
+
+# Check nodes
+curl -6 http://[2001:db8::1]:9200/_cat/nodes?v
+```
+
+## Elasticsearch with Security (TLS) over IPv6
+
+For production, enable TLS:
+
+```yaml
+# /etc/elasticsearch/elasticsearch.yml
+
+# Enable security
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: true
+xpack.security.http.ssl.enabled: true
+
+# TLS certificates
+xpack.security.transport.ssl.key: /etc/elasticsearch/certs/node.key
+xpack.security.transport.ssl.certificate: /etc/elasticsearch/certs/node.crt
+xpack.security.transport.ssl.certificate_authorities: /etc/elasticsearch/certs/ca.crt
+
+xpack.security.http.ssl.key: /etc/elasticsearch/certs/node.key
+xpack.security.http.ssl.certificate: /etc/elasticsearch/certs/node.crt
+```
+
+Generate certificates with IPv6 SANs:
+
+```bash
+# Generate CA and node certificates
+/usr/share/elasticsearch/bin/elasticsearch-certutil ca \
+  --out /etc/elasticsearch/certs/ca.p12
+
+/usr/share/elasticsearch/bin/elasticsearch-certutil cert \
+  --ca /etc/elasticsearch/certs/ca.p12 \
+  --dns es-node-1.example.com \
+  --ip 2001:db8::1 \
+  --out /etc/elasticsearch/certs/node.p12
+```
+
+## Testing Elasticsearch over IPv6
+
+```bash
+# Create an index
+curl -6 -X PUT "http://[2001:db8::1]:9200/my-index?pretty"
+
+# Index a document
+curl -6 -X POST "http://[2001:db8::1]:9200/my-index/_doc?pretty" \
+  -H "Content-Type: application/json" \
+  -d '{"title": "IPv6 Test Document", "content": "Testing Elasticsearch over IPv6"}'
+
+# Search
+curl -6 -X GET "http://[2001:db8::1]:9200/my-index/_search?pretty" \
+  -H "Content-Type: application/json" \
+  -d '{"query": {"match_all": {}}}'
+```
+
+## Configuring Kibana for IPv6 Elasticsearch
+
+```yaml
+# /etc/kibana/kibana.yml
+
+# Kibana server address (IPv6)
+server.host: "2001:db8::1"
+server.port: 5601
+
+# Elasticsearch connection over IPv6
+elasticsearch.hosts:
+  - "http://[2001:db8::1]:9200"
+  - "http://[2001:db8::2]:9200"
+  - "http://[2001:db8::3]:9200"
+```
+
+```bash
+sudo systemctl restart kibana
+# Access: http://[2001:db8::1]:5601
+```
+
+## Firewall Rules for Elasticsearch IPv6
+
+```bash
+# HTTP API
+sudo ip6tables -A INPUT -p tcp --dport 9200 -j ACCEPT
+# Transport
+sudo ip6tables -A INPUT -p tcp --dport 9300 -j ACCEPT
+# Kibana
+sudo ip6tables -A INPUT -p tcp --dport 5601 -j ACCEPT
+
+sudo ip6tables-save > /etc/ip6tables/rules.v6
+```
+
+Elasticsearch's `network.host` configuration with IPv6 special values or explicit addresses provides a clean way to deploy the ELK stack on IPv6 networks for log aggregation, search, and analytics.

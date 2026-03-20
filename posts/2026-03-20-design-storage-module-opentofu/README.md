@@ -1,0 +1,151 @@
+# How to Design a Storage Module for OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, S3, Storage, AWS, Modules, Encryption
+
+Description: Learn how to design a reusable S3 storage module for OpenTofu with encryption, versioning, lifecycle policies, and access control configurations.
+
+## Introduction
+
+An S3 storage module should create buckets with security best practices by default: encryption, blocked public access, versioning, and lifecycle rules. It should let callers opt into specific configurations without needing to understand the underlying AWS resources.
+
+## variables.tf
+
+```hcl
+variable "bucket_name"  { type = string }
+variable "environment"  { type = string }
+variable "purpose"      { type = string; default = "general" }
+
+variable "versioning_enabled" { type = bool; default = false }
+variable "force_destroy"      { type = bool; default = false }
+
+variable "server_side_encryption" {
+  type    = string
+  default = "AES256"  # "AES256" or "aws:kms"
+}
+variable "kms_key_id" { type = string; default = null }
+
+variable "lifecycle_rules" {
+  type = list(object({
+    id                            = string
+    enabled                       = bool
+    prefix                        = optional(string, "")
+    transition_days               = optional(number)
+    transition_storage_class      = optional(string)
+    expiration_days               = optional(number)
+    noncurrent_expiration_days    = optional(number)
+  }))
+  default = []
+}
+
+variable "cors_rules" {
+  type = list(object({
+    allowed_headers = list(string)
+    allowed_methods = list(string)
+    allowed_origins = list(string)
+    max_age_seconds = number
+  }))
+  default = []
+}
+
+variable "bucket_policy_json" { type = string; default = "" }
+variable "tags" { type = map(string); default = {} }
+```
+
+## main.tf
+
+```hcl
+locals {
+  tags = merge({
+    Environment = var.environment
+    Purpose     = var.purpose
+    ManagedBy   = "OpenTofu"
+  }, var.tags)
+}
+
+resource "aws_s3_bucket" "main" {
+  bucket        = var.bucket_name
+  force_destroy = var.force_destroy
+  tags          = merge(local.tags, { Name = var.bucket_name })
+}
+
+# Block all public access by default
+resource "aws_s3_bucket_public_access_block" "main" {
+  bucket                  = aws_s3_bucket.main.id
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
+resource "aws_s3_bucket_versioning" "main" {
+  bucket = aws_s3_bucket.main.id
+  versioning_configuration {
+    status = var.versioning_enabled ? "Enabled" : "Suspended"
+  }
+}
+
+resource "aws_s3_bucket_server_side_encryption_configuration" "main" {
+  bucket = aws_s3_bucket.main.id
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = var.server_side_encryption
+      kms_master_key_id = var.kms_key_id
+    }
+    bucket_key_enabled = var.server_side_encryption == "aws:kms"
+  }
+}
+
+resource "aws_s3_bucket_lifecycle_configuration" "main" {
+  count  = length(var.lifecycle_rules) > 0 ? 1 : 0
+  bucket = aws_s3_bucket.main.id
+
+  dynamic "rule" {
+    for_each = var.lifecycle_rules
+    content {
+      id     = rule.value.id
+      status = rule.value.enabled ? "Enabled" : "Disabled"
+
+      filter {
+        prefix = rule.value.prefix
+      }
+
+      dynamic "transition" {
+        for_each = rule.value.transition_days != null ? [1] : []
+        content {
+          days          = rule.value.transition_days
+          storage_class = rule.value.transition_storage_class
+        }
+      }
+
+      dynamic "expiration" {
+        for_each = rule.value.expiration_days != null ? [1] : []
+        content {
+          days = rule.value.expiration_days
+        }
+      }
+    }
+  }
+}
+
+resource "aws_s3_bucket_policy" "main" {
+  count  = var.bucket_policy_json != "" ? 1 : 0
+  bucket = aws_s3_bucket.main.id
+  policy = var.bucket_policy_json
+  depends_on = [aws_s3_bucket_public_access_block.main]
+}
+```
+
+## outputs.tf
+
+```hcl
+output "bucket_id"            { value = aws_s3_bucket.main.id }
+output "bucket_arn"           { value = aws_s3_bucket.main.arn }
+output "bucket_domain_name"   { value = aws_s3_bucket.main.bucket_domain_name }
+output "bucket_regional_domain_name" { value = aws_s3_bucket.main.bucket_regional_domain_name }
+```
+
+## Conclusion
+
+This S3 module enforces security best practices by default — public access is always blocked, encryption is always enabled, and versioning can be toggled. Lifecycle rules with dynamic blocks handle any number of transition and expiration policies. The bucket policy is optional and passed as a pre-rendered JSON string for maximum flexibility.

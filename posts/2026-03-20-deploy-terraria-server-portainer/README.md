@@ -1,0 +1,125 @@
+# How to Deploy a Terraria Server via Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Terraria, Game Server, Portainer, Docker, Self-Hosted, Gaming, TShock
+
+Description: Deploy a dedicated Terraria server with TShock plugin support using Portainer for persistent world storage and easy server management.
+
+---
+
+Terraria is a beloved 2D adventure game with excellent multiplayer support. Running a dedicated server via Portainer with TShock gives you a managed, pluggable server with commands, permissions, and user management.
+
+## Step 1: Deploy the Terraria Stack
+
+```yaml
+# terraria-stack.yml
+version: "3.8"
+
+services:
+  terraria:
+    image: ryshe/terraria:tshock-latest
+    environment:
+      # World settings
+      - world=/root/.local/share/Terraria/Worlds/MyWorld.wld
+      - worldname=MyWorld
+      - worldsize=3      # 1=small, 2=medium, 3=large
+      - difficulty=0     # 0=classic, 1=expert, 2=master, 3=journey
+      - maxplayers=8
+      - port=7777
+      - password=your_join_password
+      - autocreate=3     # Auto-create if world doesn't exist (size)
+    volumes:
+      # Persistent world and TShock config
+      - terraria-worlds:/root/.local/share/Terraria/Worlds
+      - terraria-plugins:/plugins
+      - terraria-config:/config
+    ports:
+      - "7777:7777"    # Game port (TCP)
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+
+volumes:
+  terraria-worlds:
+  terraria-plugins:
+  terraria-config:
+```
+
+## Step 2: Configure TShock
+
+After first run, configure TShock at `/config/config.json`:
+
+```json
+{
+  "ServerPassword": "your_join_password",
+  "ServerPort": 7777,
+  "MaxSlots": 8,
+  "DefaultRegistrationGroupName": "default",
+  "DefaultGuestGroupName": "guest",
+  "EnableGeoIP": false,
+  "DisplayIPToAdmins": false,
+  "EnableTokenEndpointAuthentication": false,
+  "RespawnSeconds": 5,
+  "MaxDamage": 1175,
+  "MaxProjDamage": 1175,
+  "SpawnProtection": true,
+  "SpawnProtectionRadius": 10,
+  "EnableWhitelist": false
+}
+```
+
+## Step 3: Set Up TShock Admin
+
+The first time TShock runs, it outputs a setup code. Check the container logs in Portainer:
+
+```
+TShock Setup Code: 12345678
+```
+
+Use this code in-game to become an admin:
+```
+/setup 12345678
+/user add adminname adminpassword superadmin
+```
+
+## Step 4: Install TShock Plugins
+
+Copy plugin DLLs to the mounted plugins directory:
+
+```bash
+# Download popular plugins to the mounted plugins directory
+cd /var/lib/docker/volumes/terraria-plugins/_data
+
+# AutoRegister — automatically register new players
+wget https://github.com/nicatronTg/AutoRegister/releases/latest/download/AutoRegister.dll
+
+# Essentials — essential commands
+wget https://github.com/nicatronTg/EssentialsPlus/releases/latest/download/EssentialsPlus.dll
+```
+
+Restart the container from Portainer to load the new plugins.
+
+## Step 5: World Backups
+
+Use Portainer's volume backup or a scheduled script:
+
+```bash
+#!/bin/bash
+# terraria-backup.sh — run as a Portainer scheduled job
+BACKUP_DIR=/opt/terraria/backups
+mkdir -p "$BACKUP_DIR"
+
+# Copy world files from the volume
+docker run --rm \
+  -v terraria-worlds:/worlds:ro \
+  -v "$BACKUP_DIR":/backups \
+  alpine tar czf "/backups/terraria-$(date +%Y%m%d-%H%M%S).tar.gz" /worlds
+
+# Keep only the last 14 backups
+ls -t "$BACKUP_DIR"/*.tar.gz | tail -n +15 | xargs -r rm
+```
+
+## Summary
+
+Terraria with TShock on Portainer gives you a managed server with plugin support, permissions, and easy world management. Portainer's log viewer makes it easy to monitor player activity and server health.

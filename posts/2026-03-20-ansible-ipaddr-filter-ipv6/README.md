@@ -1,0 +1,142 @@
+# How to Use the Ansible ipaddr Filter for IPv6 Address Manipulation
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Ansible, IPv6, ipaddr, Jinja2, Filters, Network Automation
+
+Description: A practical guide to using Ansible's ipaddr() Jinja2 filter to validate, parse, and manipulate IPv6 addresses and subnets in playbooks.
+
+The `ipaddr()` filter (from `ansible.netcommon`) provides a powerful set of operations for working with IP addresses in Ansible. It can validate, convert, extract, and calculate IPv6 address properties directly within Jinja2 expressions.
+
+## Installing the Collection
+
+```bash
+ansible-galaxy collection install ansible.netcommon
+```
+
+## Basic IPv6 Validation
+
+```yaml
+# ipaddr-basics.yml
+---
+- name: Demonstrate ipaddr() filter basics for IPv6
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    valid_ipv6: "2001:db8::1"
+    invalid_string: "not-an-ip"
+    ipv6_cidr: "2001:db8::/32"
+
+  tasks:
+    - name: Validate an IPv6 address
+      ansible.builtin.debug:
+        # Returns the address if valid, False if not
+        msg: "Valid: {{ valid_ipv6 | ansible.netcommon.ipaddr('bool') }}"
+
+    - name: Check if a string is an IPv6 address specifically
+      ansible.builtin.debug:
+        msg: "Is IPv6: {{ valid_ipv6 | ansible.netcommon.ipv6 }}"
+
+    - name: Filter a list to only IPv6 addresses
+      ansible.builtin.debug:
+        msg: "{{ ['10.0.0.1', '2001:db8::1', 'not-ip', '::1'] | ansible.netcommon.ipv6 }}"
+        # Output: ['2001:db8::1', '::1']
+```
+
+## Extracting Address Components
+
+```yaml
+# ipaddr-extract.yml - Extract prefix, host, and network info
+---
+  tasks:
+    - name: Get the network address from a CIDR
+      ansible.builtin.debug:
+        # Returns: 2001:db8::
+        msg: "{{ '2001:db8::100/64' | ansible.netcommon.ipaddr('network') }}"
+
+    - name: Get the prefix length
+      ansible.builtin.debug:
+        # Returns: 64
+        msg: "{{ '2001:db8::100/64' | ansible.netcommon.ipaddr('prefix') }}"
+
+    - name: Get the host address (without mask)
+      ansible.builtin.debug:
+        # Returns: 2001:db8::100
+        msg: "{{ '2001:db8::100/64' | ansible.netcommon.ipaddr('address') }}"
+
+    - name: Get the first usable address in a subnet
+      ansible.builtin.debug:
+        # Returns: 2001:db8::1/64
+        msg: "{{ '2001:db8::/64' | ansible.netcommon.ipaddr('1') }}"
+
+    - name: Get the last usable address
+      ansible.builtin.debug:
+        msg: "{{ '2001:db8::/64' | ansible.netcommon.ipaddr('-1') }}"
+```
+
+## Subnet Calculations
+
+```yaml
+# ipaddr-subnets.yml - Calculate subnets and check membership
+---
+  tasks:
+    - name: Check if an address is within a subnet
+      ansible.builtin.debug:
+        # Returns the address if it's in the subnet, False otherwise
+        msg: "{{ '2001:db8::50' | ansible.netcommon.ipaddr('2001:db8::/64') }}"
+
+    - name: Expand a compressed IPv6 address
+      ansible.builtin.debug:
+        # Returns the expanded form: 2001:0db8:0000:0000:0000:0000:0000:0001
+        msg: "{{ '2001:db8::1' | ansible.netcommon.ipaddr('expanded') }}"
+
+    - name: Compress an IPv6 address
+      ansible.builtin.debug:
+        msg: "{{ '2001:0db8:0000:0000:0000:0000:0000:0001' | ansible.netcommon.ipaddr('compressed') }}"
+```
+
+## Real-World Use: Building Configuration from IPv6 Variables
+
+```yaml
+# ipaddr-real-world.yml - Build nginx config with IPv6 listen directives
+---
+- name: Build nginx listen configuration for dual-stack
+  hosts: web_servers
+  vars:
+    listen_addresses:
+      - "0.0.0.0"
+      - "::"
+
+  tasks:
+    - name: Generate nginx listen lines
+      ansible.builtin.set_fact:
+        nginx_listen_lines: >-
+          {{
+            listen_addresses
+            | map('ansible.netcommon.ipwrap')
+            | map('regex_replace', '^(.+)$', 'listen \1:80;')
+            | list
+          }}
+      # Result: ['listen 0.0.0.0:80;', 'listen [::]:80;']
+
+    - name: Show generated listen lines
+      ansible.builtin.debug:
+        var: nginx_listen_lines
+```
+
+## Using ipwrap for IPv6 in URLs
+
+```yaml
+    - name: Wrap IPv6 addresses in brackets for URL use
+      ansible.builtin.debug:
+        # Returns: [2001:db8::1]
+        msg: "{{ '2001:db8::1' | ansible.netcommon.ipwrap }}"
+
+    - name: Build a URL for an IPv6 endpoint
+      ansible.builtin.debug:
+        msg: "http://{{ '2001:db8::1' | ansible.netcommon.ipwrap }}:8080/api"
+        # Result: http://[2001:db8::1]:8080/api
+```
+
+The `ipaddr()` filter family transforms IPv6 address handling from error-prone string manipulation into expressive, readable Jinja2 expressions that work reliably across all Ansible playbooks and templates.

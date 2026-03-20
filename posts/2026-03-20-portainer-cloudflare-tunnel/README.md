@@ -1,0 +1,169 @@
+# How to Set Up Cloudflare Tunnel for Portainer Access
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Cloudflare, Tunnel, Zero Trust, Security
+
+Description: Learn how to expose Portainer securely through a Cloudflare Tunnel without opening firewall ports, enabling safe remote access to your container management interface from anywhere.
+
+## Introduction
+
+Cloudflare Tunnel (formerly Argo Tunnel) creates an encrypted outbound connection from your server to Cloudflare's network, allowing you to expose Portainer without opening inbound firewall ports. This is ideal for home servers, servers behind NAT, and environments where you want to avoid exposing ports 443 or 80 directly. This guide covers setting up a Cloudflare Tunnel for Portainer access.
+
+## Prerequisites
+
+- A Cloudflare account with a domain managed by Cloudflare
+- Docker installed on your host
+- Port outbound access to Cloudflare (typically already open)
+
+## Step 1: Create a Tunnel via Cloudflare Dashboard
+
+1. Log into [Cloudflare Zero Trust Dashboard](https://one.dash.cloudflare.com/)
+2. Go to **Networks** → **Tunnels** → **Create a tunnel**
+3. Choose **Cloudflared**
+4. Name your tunnel: `portainer-tunnel`
+5. Copy the tunnel token — you'll need it for the container configuration
+
+The tunnel token looks like:
+```
+eyJhIjoiYWNjb3VudC1pZCIsInQiOiJ0dW5uZWwtaWQiLCJzIjoic2VjcmV0LWtleSJ9...
+```
+
+## Step 2: Configure Tunnel Routing in Cloudflare
+
+Still in the tunnel setup wizard:
+
+1. Under **Public Hostname**, add a route:
+   ```
+   Subdomain:  portainer
+   Domain:     example.com
+   Path:       (leave blank)
+   Type:       HTTP
+   URL:        portainer:9000
+   ```
+
+   The URL `portainer:9000` refers to the Portainer container name on the shared Docker network.
+
+2. Click **Save tunnel**
+
+## Step 3: Deploy Cloudflared as a Docker Container
+
+```yaml
+# docker-compose.yml
+version: "3.8"
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: "${CLOUDFLARE_TUNNEL_TOKEN}"    # Set as env var
+    networks:
+      - proxy    # Must be on same network as Portainer
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    networks:
+      - proxy
+    # No port mappings needed — accessed via Cloudflare Tunnel
+
+networks:
+  proxy:
+    name: proxy
+    driver: bridge
+
+volumes:
+  portainer_data:
+```
+
+```bash
+# Create .env file for the token
+echo "CLOUDFLARE_TUNNEL_TOKEN=your-tunnel-token-here" > .env
+
+# Deploy
+docker compose up -d
+
+# Verify cloudflared connected
+docker logs cloudflared --follow
+# Expected: "Connection registered" messages
+```
+
+## Step 4: Verify Tunnel Connection
+
+```bash
+# Check cloudflared is connected
+docker logs cloudflared 2>&1 | grep -i "registered\|connected\|error"
+
+# Expected output:
+# INF Registered tunnel connection connIndex=0 connection=UUID...
+# INF Registered tunnel connection connIndex=1 connection=UUID...
+
+# Test access
+curl -I https://portainer.example.com
+# Expected: 200 or Portainer's initial setup page
+```
+
+## Step 5: Secure the Tunnel with Cloudflare Access
+
+Add authentication so only your team can access Portainer:
+
+1. In Cloudflare Zero Trust → **Access** → **Applications** → **Add an application**
+2. Choose **Self-hosted**
+3. Configure:
+   ```
+   Application name: Portainer
+   Session duration: 24 hours
+   Application domain: portainer.example.com
+   ```
+4. Add a policy:
+   ```
+   Policy name: Allow Team
+   Action: Allow
+   Include rule: Emails ending in @yourcompany.com
+   ```
+
+Now accessing `portainer.example.com` requires Cloudflare Access authentication before reaching Portainer.
+
+## Step 6: Handle WebSockets for Portainer Console
+
+Portainer's terminal requires WebSocket support. Cloudflare Tunnel supports WebSockets natively, but verify:
+
+1. In Cloudflare Dashboard → **Websites** → `example.com` → **Network**
+2. Enable **WebSockets**
+
+If Portainer console disconnects:
+```yaml
+# In the tunnel public hostname configuration, set:
+Additional application settings:
+  HTTP Settings:
+    HTTP Host Header: portainer.example.com
+    No TLS Verify: true (if Portainer uses self-signed cert internally)
+```
+
+## Step 7: Monitor Tunnel Status
+
+```bash
+# Check tunnel metrics
+curl http://localhost:2000/metrics    # cloudflared metrics endpoint
+
+# Expose metrics port in docker-compose
+services:
+  cloudflared:
+    ports:
+      - "127.0.0.1:2000:2000"    # Metrics only on localhost
+    command: tunnel --no-autoupdate --metrics 0.0.0.0:2000 run
+
+# View connection status
+docker exec cloudflared cloudflared tunnel info
+```
+
+## Conclusion
+
+Cloudflare Tunnel provides a secure way to access Portainer without exposing any firewall ports. Cloudflared makes outbound connections to Cloudflare's network, with routing configured entirely within the Cloudflare dashboard. For production use, combine the tunnel with Cloudflare Access policies to add identity-based authentication in front of Portainer — blocking unauthorized users at the Cloudflare edge before requests ever reach your server.

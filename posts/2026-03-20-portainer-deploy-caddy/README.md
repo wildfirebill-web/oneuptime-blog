@@ -1,0 +1,177 @@
+# How to Deploy Caddy via Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Docker, Caddy, Reverse Proxy, SSL, Self-Hosted
+
+Description: Deploy Caddy web server via Portainer as an automatic HTTPS reverse proxy with the simplest configuration syntax and built-in Let's Encrypt certificate management.
+
+## Introduction
+
+Caddy is a modern web server with automatic HTTPS, an extremely simple configuration syntax (Caddyfile), and excellent performance. Unlike Traefik, Caddy uses a simple text configuration file that is intuitive for most web server use cases. Deploy it via Portainer for automatic SSL and clean reverse proxy configuration.
+
+## Deploy as a Stack
+
+```yaml
+version: "3.8"
+
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"   # HTTP/3 (QUIC)
+    volumes:
+      # Caddyfile configuration
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      # Site files (for static hosting)
+      - ./site:/srv:ro
+      # Caddy data (certificates, cache)
+      - caddy_data:/data
+      # Caddy config
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:
+```
+
+## Caddyfile Configuration
+
+Create `Caddyfile` in your stack directory:
+
+```caddyfile
+# Caddyfile - Caddy web server configuration
+
+# Global options
+{
+    email admin@example.com
+    
+    # Use Let's Encrypt staging for testing
+    # acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+# Reverse proxy for web application
+app.example.com {
+    reverse_proxy myapp:3000 {
+        health_uri /health
+        health_interval 30s
+    }
+    
+    # Enable compression
+    encode gzip zstd
+    
+    # Security headers
+    header {
+        X-Frame-Options DENY
+        X-Content-Type-Options nosniff
+        X-XSS-Protection "1; mode=block"
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        -Server   # Remove Server header
+    }
+}
+
+# Static website hosting
+www.example.com {
+    root * /srv
+    file_server
+    
+    # Redirect example.com to www
+    redir example.com{uri} https://www.example.com{uri}
+}
+
+# API endpoint with rate limiting
+api.example.com {
+    reverse_proxy api-service:8080
+    
+    # Rate limiting via Caddy plugin (if installed)
+    rate_limit {remote_host} 100r/m
+}
+
+# PHPMyAdmin behind authentication
+db.example.com {
+    basicauth /* {
+        admin $2a$14$hashedpassword
+    }
+    reverse_proxy phpmyadmin:80
+}
+
+# HTTP to HTTPS redirect for all other domains
+http:// {
+    redir https://{host}{uri} permanent
+}
+```
+
+## Local Development Caddyfile
+
+For development with self-signed certificates:
+
+```caddyfile
+localhost:80 {
+    reverse_proxy myapp:3000
+}
+
+localhost:443 {
+    tls internal   # Caddy's local CA
+    reverse_proxy myapp:3000
+}
+```
+
+## Caddy with Docker Labels (Docker Plugin)
+
+For dynamic routing similar to Traefik, use the caddy-docker-proxy plugin:
+
+```yaml
+version: "3.8"
+
+services:
+  caddy:
+    image: lucaslorentz/caddy-docker-proxy:ci-alpine
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - CADDY_INGRESS_NETWORKS=caddy-network
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - caddy_data:/data
+    networks:
+      - caddy-network
+    restart: unless-stopped
+
+  myapp:
+    image: nginx:alpine
+    labels:
+      caddy: app.example.com
+      caddy.reverse_proxy: "{{upstreams 80}}"
+    networks:
+      - caddy-network
+
+networks:
+  caddy-network:
+    external: true
+
+volumes:
+  caddy_data:
+```
+
+## Reloading Configuration
+
+```bash
+# Reload Caddy configuration without downtime
+docker exec caddy caddy reload --config /etc/caddy/Caddyfile
+
+# Validate configuration before reloading
+docker exec caddy caddy validate --config /etc/caddy/Caddyfile
+
+# Format/lint the Caddyfile
+docker exec caddy caddy fmt --overwrite /etc/caddy/Caddyfile
+```
+
+## Conclusion
+
+Caddy deployed via Portainer provides the simplest path to automatic HTTPS for self-hosted services. The Caddyfile syntax is readable and concise compared to Nginx or Apache configurations. Automatic certificate renewal means you never need to manually manage SSL certificates again. For home labs and small deployments, Caddy's simplicity often makes it the preferred choice over Traefik.

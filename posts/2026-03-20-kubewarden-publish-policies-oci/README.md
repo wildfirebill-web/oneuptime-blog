@@ -1,0 +1,325 @@
+# How to Publish Custom Kubewarden Policies to OCI Registries
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Kubewarden, Kubernetes, OCI, Policy, Distribution
+
+Description: Learn how to package, annotate, and publish custom Kubewarden policies to OCI-compatible container registries for distribution and reuse across your organization.
+
+## Introduction
+
+Once you have written and tested a custom Kubewarden policy, the next step is publishing it to an OCI registry so it can be deployed to your clusters and shared with your team or the broader community. Kubewarden uses OCI registries (the same infrastructure as container images) to distribute policy Wasm modules, making distribution straightforward and familiar.
+
+This guide covers the complete workflow: building, annotating, testing, tagging, and publishing Kubewarden policies to OCI registries.
+
+## Prerequisites
+
+- A built Kubewarden policy Wasm file
+- `kwctl` CLI installed
+- Access to an OCI registry (Docker Hub, GHCR, Harbor, ECR, etc.)
+- Docker or `regctl` for registry authentication
+
+## Understanding Kubewarden OCI Artifacts
+
+Kubewarden policies are stored in OCI registries as OCI artifacts (not container images). They follow the OCI Image Specification but use a custom media type that identifies them as Kubewarden policies. The artifact contains:
+- The WebAssembly binary
+- Policy metadata (rules, settings schema, documentation)
+- Annotations with policy details
+
+## Step 1: Build Your Policy
+
+```bash
+# Rust policy
+cargo build --target wasm32-wasi --release
+WASM_FILE="target/wasm32-wasi/release/my_policy.wasm"
+
+# Go policy
+tinygo build -target wasi -o policy.wasm .
+WASM_FILE="policy.wasm"
+
+# Verify the Wasm file exists and check its size
+ls -lh "${WASM_FILE}"
+```
+
+## Step 2: Create Policy Metadata
+
+The `metadata.yml` file describes your policy and becomes embedded in the OCI artifact:
+
+```yaml
+# metadata.yml - Complete policy metadata
+rules:
+  - apiGroups: [""]
+    apiVersions: ["v1"]
+    resources: ["pods"]
+    operations:
+      - CREATE
+      - UPDATE
+
+# Whether this policy modifies resources
+mutating: false
+
+# Whether this policy needs Kubernetes API access
+contextAware: false
+
+# Execution mode (use kubewarden-wapc for standard policies)
+executionMode: kubewarden-wapc
+
+# Policy annotations (displayed in the Policy Hub)
+annotations:
+  # Required annotations
+  io.kubewarden.policy.title: "My Custom Policy"
+  io.kubewarden.policy.description: |
+    This policy enforces custom organizational security requirements.
+    It validates that all pods meet our internal standards.
+
+  # Author and source
+  io.kubewarden.policy.author: "Platform Team <platform@example.com>"
+  io.kubewarden.policy.url: "https://github.com/my-org/my-kubewarden-policies"
+  io.kubewarden.policy.source: "https://github.com/my-org/my-kubewarden-policies"
+
+  # Categorization
+  io.kubewarden.policy.category: "Pod Security"
+  io.kubewarden.policy.severity: "medium"
+
+  # License
+  io.kubewarden.policy.license: "Apache-2.0"
+
+  # Version history (semantic versioning)
+  io.kubewarden.policy.version: "0.1.0"
+
+  # Documentation
+  io.kubewarden.policy.usage: |
+    Deploy this policy with the following settings:
+    ```yaml
+    settings:
+      requiredAnnotations:
+        - team
+        - cost-center
+    ```
+
+  # Minimum Kubewarden version required
+  io.kubewarden.policy.rangeStart: "1.0.0"
+```
+
+## Step 3: Annotate the Wasm Module
+
+```bash
+# Annotate the Wasm file with the metadata
+kwctl annotate \
+  "${WASM_FILE}" \
+  --metadata-path metadata.yml \
+  --output annotated-policy.wasm
+
+# Verify the annotation was applied
+kwctl inspect annotated-policy.wasm
+```
+
+## Step 4: Test the Annotated Policy
+
+```bash
+# Run tests on the annotated policy
+kwctl run \
+  annotated-policy.wasm \
+  --request-path tests/valid-request.json
+
+kwctl run \
+  annotated-policy.wasm \
+  --request-path tests/invalid-request.json
+
+# Validate settings
+kwctl run \
+  --validate-settings \
+  annotated-policy.wasm \
+  --settings-json '{"requiredAnnotations": ["team"]}'
+
+echo "All tests passed"
+```
+
+## Step 5: Push to an OCI Registry
+
+### Docker Hub
+
+```bash
+# Login to Docker Hub
+docker login registry-1.docker.io
+
+# Push to Docker Hub
+kwctl push \
+  annotated-policy.wasm \
+  registry://registry-1.docker.io/my-org/my-custom-policy:v0.1.0
+
+# Push with latest tag as well
+kwctl push \
+  annotated-policy.wasm \
+  registry://registry-1.docker.io/my-org/my-custom-policy:latest
+```
+
+### GitHub Container Registry (GHCR)
+
+```bash
+# Login to GHCR
+echo "${GITHUB_TOKEN}" | docker login ghcr.io \
+  --username "${GITHUB_USERNAME}" \
+  --password-stdin
+
+# Push to GHCR
+kwctl push \
+  annotated-policy.wasm \
+  registry://ghcr.io/my-org/my-custom-policy:v0.1.0
+```
+
+### Amazon ECR
+
+```bash
+# Login to ECR
+aws ecr get-login-password --region us-east-1 | \
+  docker login \
+  --username AWS \
+  --password-stdin \
+  123456789.dkr.ecr.us-east-1.amazonaws.com
+
+# Create the ECR repository if it doesn't exist
+aws ecr create-repository \
+  --repository-name kubewarden-policies/my-custom-policy \
+  --region us-east-1
+
+# Push to ECR
+kwctl push \
+  annotated-policy.wasm \
+  registry://123456789.dkr.ecr.us-east-1.amazonaws.com/kubewarden-policies/my-custom-policy:v0.1.0
+```
+
+### Private Harbor Registry
+
+```bash
+# Login to Harbor
+docker login harbor.internal.example.com
+
+# Create the project in Harbor (via UI or API)
+# Project: kubewarden-policies
+
+# Push to Harbor
+kwctl push \
+  annotated-policy.wasm \
+  registry://harbor.internal.example.com/kubewarden-policies/my-custom-policy:v0.1.0
+```
+
+## Step 6: Verify the Published Policy
+
+```bash
+# Pull and inspect the published policy
+kwctl pull \
+  registry://ghcr.io/my-org/my-custom-policy:v0.1.0
+
+# Inspect the pulled policy
+kwctl inspect \
+  registry://ghcr.io/my-org/my-custom-policy:v0.1.0
+
+# Get the Kubewarden manifest for deployment
+kwctl manifest \
+  registry://ghcr.io/my-org/my-custom-policy:v0.1.0 \
+  --type ClusterAdmissionPolicy
+```
+
+## Step 7: Deploy the Published Policy
+
+```yaml
+# deploy-custom-policy.yaml
+apiVersion: policies.kubewarden.io/v1
+kind: ClusterAdmissionPolicy
+metadata:
+  name: my-org-custom-policy
+spec:
+  # Reference the published OCI artifact
+  module: registry://ghcr.io/my-org/my-custom-policy:v0.1.0
+
+  settings:
+    requiredAnnotations:
+      - team
+      - cost-center
+
+  rules:
+    - apiGroups: [""]
+      apiVersions: ["v1"]
+      resources: ["pods"]
+      operations: ["CREATE", "UPDATE"]
+  mutating: false
+  mode: monitor  # Start in monitor mode for safety
+```
+
+## Automating Publication in CI/CD
+
+```yaml
+# .github/workflows/publish-policy.yml
+name: Build and Publish Kubewarden Policy
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32-wasi
+
+      - name: Install kwctl
+        run: |
+          curl -LO https://github.com/kubewarden/kwctl/releases/latest/download/kwctl-linux-amd64
+          chmod +x kwctl-linux-amd64
+          sudo mv kwctl-linux-amd64 /usr/local/bin/kwctl
+
+      - name: Build policy
+        run: cargo build --target wasm32-wasi --release
+
+      - name: Annotate policy
+        run: |
+          kwctl annotate \
+            target/wasm32-wasi/release/my_policy.wasm \
+            --metadata-path metadata.yml \
+            --output annotated-policy.wasm
+
+      - name: Run tests
+        run: |
+          kwctl run annotated-policy.wasm --request-path tests/valid.json
+          kwctl run annotated-policy.wasm --request-path tests/invalid.json
+
+      - name: Login to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Push policy to GHCR
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/}"
+          kwctl push annotated-policy.wasm \
+            "registry://ghcr.io/${{ github.repository_owner }}/my-policy:${VERSION}"
+          kwctl push annotated-policy.wasm \
+            "registry://ghcr.io/${{ github.repository_owner }}/my-policy:latest"
+```
+
+## Versioning Strategy
+
+Follow semantic versioning for your policies:
+- `v0.1.0`: Initial release
+- `v0.1.1`: Bug fixes
+- `v0.2.0`: New settings added (backward compatible)
+- `v1.0.0`: Stable API, first major release
+
+```bash
+# List all versions of a policy
+kwctl pull --list-tags \
+  registry://ghcr.io/my-org/my-custom-policy
+```
+
+## Conclusion
+
+Publishing Kubewarden policies to OCI registries follows familiar container workflows, making it easy to integrate into existing CI/CD pipelines. By properly annotating your policies with metadata, running comprehensive tests before publishing, and using semantic versioning, you create a reliable policy distribution system that teams can trust. Whether publishing to a public registry like GHCR for community sharing or a private Harbor registry for internal distribution, the `kwctl push` command handles all the OCI artifact formatting automatically.

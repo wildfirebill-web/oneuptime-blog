@@ -1,0 +1,96 @@
+# How to Configure macvlan Interfaces on Linux
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Linux, macvlan, Networking, Containers, Docker, Virtual Networking, iproute2
+
+Description: Create macvlan interfaces on Linux to assign multiple MAC addresses and IP addresses to a single physical interface without bridging.
+
+## Introduction
+
+macvlan creates virtual network interfaces that each have their own unique MAC address, derived from the parent interface. Unlike bridges, macvlan does not require a separate bridge device — each macvlan interface appears as an independent NIC. macvlan is widely used for Docker and container networking when containers need direct Layer 2 access to the physical network.
+
+## macvlan Modes
+
+| Mode | Description |
+|---|---|
+| `bridge` | macvlan interfaces can communicate with each other and the physical network |
+| `vepa` | All traffic sent to an external switch, even inter-macvlan |
+| `private` | macvlan interfaces cannot communicate with each other |
+| `passthru` | Only one macvlan per parent; used for SR-IOV setups |
+
+## Create a macvlan Interface (Bridge Mode)
+
+```bash
+# Create a macvlan interface named macvlan0 on top of eth0
+ip link add macvlan0 link eth0 type macvlan mode bridge
+
+# Assign an IP
+ip addr add 192.168.1.200/24 dev macvlan0
+
+# Bring it up
+ip link set macvlan0 up
+
+# Verify
+ip addr show macvlan0
+```
+
+## Create Multiple macvlan Interfaces
+
+```bash
+# Each macvlan gets a different IP and unique MAC
+ip link add macvlan0 link eth0 type macvlan mode bridge
+ip addr add 192.168.1.200/24 dev macvlan0
+ip link set macvlan0 up
+
+ip link add macvlan1 link eth0 type macvlan mode bridge
+ip addr add 192.168.1.201/24 dev macvlan1
+ip link set macvlan1 up
+```
+
+## macvlan for Container/Namespace Isolation
+
+```bash
+# Create a namespace
+ip netns add container1
+
+# Create a macvlan and move it to the namespace
+ip link add macvlan0 link eth0 type macvlan mode bridge
+ip link set macvlan0 netns container1
+
+# Configure inside the namespace
+ip netns exec container1 ip addr add 192.168.1.200/24 dev macvlan0
+ip netns exec container1 ip link set macvlan0 up
+ip netns exec container1 ip link set lo up
+ip netns exec container1 ip route add default via 192.168.1.1
+```
+
+## Host Cannot Reach Its Own macvlan Interfaces
+
+A limitation of macvlan: the host cannot directly communicate with its own macvlan interfaces due to how Linux processes ingress traffic. Use a bridge or a macvtap workaround if host-to-macvlan communication is needed.
+
+## Docker macvlan Network
+
+Docker supports macvlan natively:
+
+```bash
+# Create a Docker macvlan network
+docker network create -d macvlan \
+    --subnet=192.168.1.0/24 \
+    --gateway=192.168.1.1 \
+    -o parent=eth0 \
+    macvlan_net
+
+# Run a container on the macvlan network
+docker run --network macvlan_net --ip 192.168.1.200 nginx
+```
+
+## Delete macvlan Interface
+
+```bash
+ip link delete macvlan0
+```
+
+## Conclusion
+
+macvlan interfaces provide a lightweight way to assign multiple independent MAC and IP addresses to a single physical interface. They are ideal for containers needing direct Layer 2 network access. The bridge mode is the most commonly used and allows macvlan interfaces to communicate with each other and external hosts. Note that the host cannot directly reach its own macvlan interfaces.

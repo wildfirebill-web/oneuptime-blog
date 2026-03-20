@@ -1,0 +1,173 @@
+# How to Configure LDAP User Search Base DN in Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, LDAP, Authentication, Configuration, Directory Services
+
+Description: Configure the LDAP User Search Base DN and filters in Portainer to control which directory users can authenticate.
+
+## Introduction
+
+The LDAP User Search Base DN is the starting point in your directory tree where Portainer searches for user accounts during login. Getting this right is critical — too broad and performance suffers, too narrow and legitimate users can't log in. This guide explains how to configure optimal Base DN settings.
+
+## Understanding Base DN
+
+The Base DN (Distinguished Name) specifies the root node in the LDAP tree from which searches begin. For example:
+
+```
+dc=example,dc=com                              # Entire directory
+ou=users,dc=example,dc=com                    # Just the users OU
+ou=staff,ou=users,dc=example,dc=com           # Nested OU
+dc=corp,dc=example,dc=com                     # Subdomain
+```
+
+Portainer searches the Base DN and all its sub-entries (subtree scope) to find users matching the filter.
+
+## Common Base DN Patterns
+
+### Single OU
+
+```
+User Base DN: ou=users,dc=example,dc=com
+```
+
+Best for: Small organizations with a flat user structure.
+
+### Department-based OUs
+
+For multiple departments:
+```
+ou=employees,dc=example,dc=com
+```
+
+And a filter that excludes disabled accounts:
+```
+User Filter: (&(objectClass=inetOrgPerson)(!(pwdAccountLockedTime=*)))
+```
+
+### Active Directory Domains
+
+```
+User Base DN: dc=corp,dc=example,dc=com
+```
+
+With a filter for enabled accounts only:
+```
+User Filter: (&(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+```
+
+The `userAccountControl` filter excludes disabled AD accounts.
+
+## Configuring Multiple Search Bases
+
+Portainer supports multiple user search settings, allowing you to search multiple OUs:
+
+```bash
+TOKEN=$(curl -s -X POST \
+  https://portainer.example.com/api/auth \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"adminpassword"}' \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
+
+curl -X PUT \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  https://portainer.example.com/api/settings \
+  -d '{
+    "AuthenticationMethod": 2,
+    "ldapsettings": {
+      "Servers": [{"Host": "ldap.example.com", "Port": 389}],
+      "SearchSettings": [
+        {
+          "BaseDN": "ou=admins,dc=example,dc=com",
+          "Username": "uid",
+          "Filter": "(objectClass=inetOrgPerson)"
+        },
+        {
+          "BaseDN": "ou=developers,dc=example,dc=com",
+          "Username": "uid",
+          "Filter": "(objectClass=inetOrgPerson)"
+        },
+        {
+          "BaseDN": "ou=contractors,dc=example,dc=com",
+          "Username": "uid",
+          "Filter": "(&(objectClass=inetOrgPerson)(departmentNumber=IT))"
+        }
+      ]
+    }
+  }'
+```
+
+## Discovering Your LDAP Structure
+
+Use `ldapsearch` to explore your directory before configuring Portainer:
+
+```bash
+# List top-level OUs
+ldapsearch -x \
+  -H ldap://ldap.example.com:389 \
+  -D "cn=portainer-bind,dc=example,dc=com" \
+  -w bindpassword \
+  -b "dc=example,dc=com" \
+  -s one \
+  "(objectClass=organizationalUnit)" dn
+
+# List users under a specific OU
+ldapsearch -x \
+  -H ldap://ldap.example.com:389 \
+  -D "cn=portainer-bind,dc=example,dc=com" \
+  -w bindpassword \
+  -b "ou=users,dc=example,dc=com" \
+  "(objectClass=inetOrgPerson)" uid cn mail \
+  | grep -E "^dn:|^uid:|^cn:|^mail:"
+
+# Count users in a base DN (performance planning)
+ldapsearch -x \
+  -H ldap://ldap.example.com:389 \
+  -D "cn=portainer-bind,dc=example,dc=com" \
+  -w bindpassword \
+  -b "ou=users,dc=example,dc=com" \
+  "(objectClass=inetOrgPerson)" dn \
+  | grep -c "^dn:"
+```
+
+## LDAP Filter Best Practices
+
+### Basic user filter (OpenLDAP)
+```
+(objectClass=inetOrgPerson)
+```
+
+### Users with email (requires email to be present)
+```
+(&(objectClass=inetOrgPerson)(mail=*))
+```
+
+### Active Directory - active users only
+```
+(&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+```
+
+### Restrict to specific group members
+```
+(&(objectClass=inetOrgPerson)(memberOf=cn=portainer-users,ou=groups,dc=example,dc=com))
+```
+
+### Active Directory - users in a specific group (nested groups)
+```
+(&(objectClass=user)(memberOf:1.2.840.113556.1.4.1941:=cn=portainer-users,ou=groups,dc=corp,dc=example,dc=com))
+```
+
+## Performance Considerations
+
+| Base DN Scope | User Count | Search Time |
+|---------------|-----------|-------------|
+| Entire directory | 50,000+ | Slow |
+| Department OU | 500-5,000 | Acceptable |
+| Specific OU | <500 | Fast |
+
+Use the most specific Base DN that still includes all users who need access.
+
+## Conclusion
+
+The LDAP User Search Base DN is one of the most important settings in your Portainer LDAP configuration. Use the most specific DN that covers your user population, combine it with appropriate filters to exclude disabled or irrelevant accounts, and test with `ldapsearch` before configuring Portainer. Multiple search settings let you include users from different parts of the directory without using the root.

@@ -1,0 +1,195 @@
+# How to Back Up Portainer Data Before an Upgrade
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: portainer, backup, disaster-recovery, upgrade, data-protection
+
+Description: A comprehensive guide to backing up Portainer CE and Business Edition data before upgrades, covering volume backups, database exports, and automated backup strategies.
+
+## Overview
+
+Creating a backup before upgrading Portainer is essential for ensuring you can roll back if an issue occurs. Portainer stores all its data in the `/data` directory within the `portainer_data` volume. This guide covers multiple backup methods to protect your Portainer configuration before any upgrade.
+
+## Understanding Portainer Data
+
+Portainer stores the following in its data directory:
+- User accounts and authentication data
+- Environment/endpoint configurations
+- Stack configurations
+- Registry credentials
+- SSL certificates (if uploaded)
+- License key (BE)
+- Settings and preferences
+
+Location: Docker volume `portainer_data` → `/data/portainer.db` (BoltDB)
+
+## Method 1: Docker Volume Backup (tar archive)
+
+The most reliable backup method:
+
+```bash
+# Stop Portainer for a clean backup (optional but recommended)
+docker stop portainer
+
+# Create a tar archive of the data volume
+docker run --rm \
+  -v portainer_data:/data \
+  -v $(pwd):/backup \
+  alpine \
+  tar czf /backup/portainer-backup-$(date +%Y%m%d-%H%M%S).tar.gz \
+  -C /data .
+
+# Restart Portainer
+docker start portainer
+
+# Verify backup was created
+ls -lh portainer-backup-*.tar.gz
+```
+
+## Method 2: Copy BoltDB File Directly
+
+```bash
+# Stop Portainer (required for consistent copy)
+docker stop portainer
+
+# Copy the database file
+docker run --rm \
+  -v portainer_data:/data \
+  -v $(pwd):/backup \
+  alpine cp /data/portainer.db /backup/portainer-$(date +%Y%m%d).db
+
+# Restart Portainer
+docker start portainer
+```
+
+## Method 3: Portainer BE Built-in Backup
+
+Portainer Business Edition has a built-in backup feature:
+
+### Via UI
+
+```
+Portainer UI → Settings → Backup → Download backup
+```
+
+This downloads a ZIP file containing:
+- Database (portainer.db)
+- TLS certificates
+- Configuration files
+
+### Via API
+
+```bash
+# Export backup via Portainer API
+TOKEN=$(curl -s -k \
+  -X POST https://portainer:9443/api/auth \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"yourpassword"}' \
+  | jq -r '.jwt')
+
+# Download backup
+curl -s -k \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -X POST "https://portainer:9443/api/backup" \
+  -H "Content-Type: application/json" \
+  -d '{"password": "encryption-password"}' \
+  -o portainer-backup-$(date +%Y%m%d).zip
+```
+
+## Method 4: Kubernetes ConfigMap/PVC Backup
+
+For Kubernetes deployments:
+
+```bash
+# Backup PVC using a Job
+kubectl apply -f - << 'EOF'
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: portainer-backup
+  namespace: portainer
+spec:
+  template:
+    spec:
+      containers:
+        - name: backup
+          image: alpine
+          command:
+            - sh
+            - -c
+            - |
+              tar czf /backup/portainer-$(date +%Y%m%d).tar.gz -C /data .
+              echo "Backup complete: $(ls -lh /backup/)"
+          volumeMounts:
+            - name: portainer-data
+              mountPath: /data
+            - name: backup-dir
+              mountPath: /backup
+      volumes:
+        - name: portainer-data
+          persistentVolumeClaim:
+            claimName: portainer
+        - name: backup-dir
+          emptyDir: {}
+      restartPolicy: Never
+EOF
+```
+
+## Automated Pre-Upgrade Backup Script
+
+```bash
+#!/bin/bash
+# pre-upgrade-backup.sh
+
+set -e
+
+BACKUP_DIR="${BACKUP_DIR:-$HOME/portainer-backups}"
+mkdir -p "${BACKUP_DIR}"
+
+BACKUP_FILE="${BACKUP_DIR}/portainer-$(date +%Y%m%d-%H%M%S).tar.gz"
+
+echo "Creating pre-upgrade backup..."
+
+# Create backup
+docker run --rm \
+  -v portainer_data:/data \
+  -v "${BACKUP_DIR}:/backup" \
+  alpine \
+  tar czf "/backup/$(basename ${BACKUP_FILE})" -C /data .
+
+echo "Backup created: ${BACKUP_FILE}"
+echo "Backup size: $(ls -lh ${BACKUP_FILE} | awk '{print $5}')"
+
+# Keep only last 5 backups
+ls -t "${BACKUP_DIR}/portainer-*.tar.gz" | tail -n +6 | xargs -r rm
+echo "Old backups cleaned up. Current backups:"
+ls -lh "${BACKUP_DIR}/portainer-*.tar.gz"
+```
+
+## Backup Verification
+
+```bash
+# Verify the backup is valid
+docker run --rm \
+  -v $(pwd):/backup \
+  alpine \
+  tar tzf /backup/portainer-20260320.tar.gz | head -20
+
+# Should list files including portainer.db
+```
+
+## Offsite Backup
+
+```bash
+# Copy backup to S3 (requires aws CLI)
+aws s3 cp portainer-backup-$(date +%Y%m%d).tar.gz \
+  s3://my-backups/portainer/
+
+# Or use rclone for multi-cloud backup
+rclone copy portainer-backup-$(date +%Y%m%d).tar.gz \
+  remote:portainer-backups/
+```
+
+## Conclusion
+
+Always create a backup before upgrading Portainer, regardless of the upgrade method. The tar-based volume backup is the most reliable and universally compatible approach. Store backups in at least two locations (local + remote) and verify backup integrity by listing the archive contents. For Portainer Business Edition, the built-in backup UI/API provides a convenient additional backup method with optional encryption.

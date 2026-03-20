@@ -1,0 +1,107 @@
+# How to Configure RabbitMQ Management Plugin for IPv4
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: RabbitMQ, Management Plugin, IPv4, HTTP API, Web UI, Monitoring
+
+Description: Configure the RabbitMQ management plugin to listen on a specific IPv4 address, restrict access, enable HTTPS, and use the HTTP API for monitoring and administration.
+
+## Introduction
+
+The RabbitMQ management plugin provides a web UI and REST API on port 15672. By default it listens on all interfaces. Restricting it to a specific IPv4 (or localhost) and enabling HTTPS prevents unauthorized access to the admin interface.
+
+## Enabling the Management Plugin
+
+```bash
+# Enable the management plugin
+sudo rabbitmq-plugins enable rabbitmq_management
+
+# Restart to apply
+sudo systemctl restart rabbitmq-server
+
+# Default access: http://localhost:15672 (guest/guest)
+```
+
+## Restricting to Specific IPv4
+
+```bash
+# /etc/rabbitmq/rabbitmq.conf
+
+# Bind management to specific IP
+management.listener.ip = 10.0.0.5
+management.listener.port = 15672
+
+# Or restrict to localhost only (access via SSH tunnel)
+# management.listener.ip = 127.0.0.1
+# management.listener.port = 15672
+
+# Allow origin for CORS (if using API from browser)
+# management.cors.allow_origins.1 = https://admin.example.com
+```
+
+## Enabling HTTPS for Management
+
+```bash
+# /etc/rabbitmq/rabbitmq.conf
+
+# HTTPS management (SSL)
+management.ssl.port = 15671
+management.ssl.cacertfile = /etc/rabbitmq/ca.crt
+management.ssl.certfile   = /etc/rabbitmq/server.crt
+management.ssl.keyfile    = /etc/rabbitmq/server.key
+
+# Disable plain HTTP (optional)
+# management.listener.port = 0
+```
+
+## Creating Management Users
+
+```bash
+# Create admin user with management tag
+sudo rabbitmqctl add_user mqadmin AdminPass123
+sudo rabbitmqctl set_user_tags mqadmin administrator
+
+# Create monitoring user (read-only)
+sudo rabbitmqctl add_user monitor MonitorPass
+sudo rabbitmqctl set_user_tags monitor monitoring
+
+# Grant permissions on all vhosts
+sudo rabbitmqctl set_permissions -p "/" mqadmin ".*" ".*" ".*"
+
+# Remove default guest user
+sudo rabbitmqctl delete_user guest
+```
+
+## Using the HTTP API
+
+```bash
+# List all queues via API
+curl -s -u mqadmin:AdminPass123 \
+  http://10.0.0.5:15672/api/queues | python3 -m json.tool
+
+# Get queue details
+curl -s -u mqadmin:AdminPass123 \
+  "http://10.0.0.5:15672/api/queues/%2F/my-queue"
+
+# Check node health
+curl -s -u mqadmin:AdminPass123 \
+  http://10.0.0.5:15672/api/healthchecks/node
+
+# List connections with source IPs
+curl -s -u mqadmin:AdminPass123 \
+  "http://10.0.0.5:15672/api/connections" | \
+  python3 -c "import sys,json; [print(c['peer_host'],c['user']) for c in json.load(sys.stdin)]"
+```
+
+## SSH Tunnel for Remote Access
+
+```bash
+# If management is bound to 127.0.0.1, access remotely via SSH tunnel:
+ssh -L 15672:127.0.0.1:15672 user@10.0.0.5
+
+# Then access in browser: http://localhost:15672
+```
+
+## Conclusion
+
+Restrict the RabbitMQ management plugin to a specific IPv4 using `management.listener.ip`. For the most secure setup, bind to `127.0.0.1` and use SSH tunnels for remote access. Enable HTTPS with `management.ssl.*` settings. Remove the default `guest` user and create named admin accounts. The HTTP API on port 15672/15671 provides programmatic access for monitoring and automation.

@@ -1,0 +1,137 @@
+# How to Troubleshoot Active Directory Login Failures in Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Active Directory, Troubleshooting, LDAP, Authentication
+
+Description: Diagnose and fix common Active Directory login failures in Portainer including credential errors, DNS issues, and SSL certificate problems.
+
+---
+
+AD authentication failures in Portainer can be frustrating. This guide provides a systematic approach to identifying and resolving the most common issues.
+
+## Step 1: Check Portainer Logs
+
+```bash
+# Enable debug logging and watch for AD-related messages
+docker logs portainer 2>&1 | grep -i "ldap\|auth\|error\|warn" | tail -50
+
+# Real-time debug monitoring during a login attempt
+docker logs -f portainer 2>&1 | grep -i "ldap\|auth"
+```
+
+## Step 2: Verify Network Connectivity
+
+```bash
+# From inside the Portainer container
+docker exec portainer /bin/sh -c "
+  # Check DNS resolution
+  nslookup dc01.corp.example.com
+
+  # Check LDAPS port reachability
+  nc -zv dc01.corp.example.com 636 2>&1
+  nc -zv dc01.corp.example.com 389 2>&1
+"
+```
+
+## Step 3: Validate Service Account Credentials
+
+```bash
+# Test the service account bind from outside the container
+ldapwhoami \
+  -H ldaps://dc01.corp.example.com:636 \
+  -x \
+  -D "CN=portainer-svc,OU=Service Accounts,DC=corp,DC=example,DC=com" \
+  -w "ServicePassword!" \
+  -ZZ
+
+# Common error codes:
+# 49 = Invalid credentials (wrong password or DN)
+# 32 = No such object (wrong BaseDN)
+# 13 = Confidentiality required (TLS required)
+```
+
+## Step 4: Test User Authentication
+
+```bash
+# Test a specific user's login via LDAP bind
+ldapwhoami \
+  -H ldaps://dc01.corp.example.com:636 \
+  -x \
+  -D "CORP\jsmith" \
+  -w "UserPassword"
+# OR using UPN format
+ldapwhoami \
+  -H ldaps://dc01.corp.example.com:636 \
+  -x \
+  -D "jsmith@corp.example.com" \
+  -w "UserPassword"
+```
+
+## Common AD Errors and Fixes
+
+### Error: "data 52e" — Invalid Credentials
+
+```bash
+# Error code 52e means bad username or password
+# Check the UserNameAttribute setting
+# If sAMAccountName: user logs in as "jsmith" (no domain)
+# If userPrincipalName: user logs in as "jsmith@corp.example.com"
+
+# Find a user's sAMAccountName
+ldapsearch -H ldaps://dc01.corp.example.com:636 \
+  -x -D "CN=portainer-svc,..." -w "pass" \
+  -b "DC=corp,DC=example,DC=com" \
+  "(mail=jsmith@corp.example.com)" \
+  sAMAccountName userPrincipalName
+```
+
+### Error: "data 525" — User Not Found
+
+```bash
+# Search filter not matching the user
+# Check BaseDN includes the user's OU
+ldapsearch -H ldaps://dc01.corp.example.com:636 \
+  -x -D "CN=portainer-svc,..." -w "pass" \
+  -b "DC=corp,DC=example,DC=com" \
+  "(sAMAccountName=jsmith)" dn
+```
+
+### Error: "data 533" — Account Disabled
+
+```bash
+# User account is disabled in AD
+# Add filter to exclude disabled accounts in the search settings
+# Filter: (&(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+```
+
+### Error: SSL Certificate Verification Failed
+
+```bash
+# Get the DC's SSL certificate
+openssl s_client -connect dc01.corp.example.com:636 -showcerts </dev/null 2>/dev/null | \
+  openssl x509 -noout -subject -issuer -enddate
+
+# If the cert is from internal CA, trust it
+openssl s_client -connect dc01.corp.example.com:636 </dev/null 2>/dev/null | \
+  openssl x509 > /tmp/dc-cert.pem
+
+sudo cp /tmp/dc-cert.pem /usr/local/share/ca-certificates/dc01.crt
+sudo update-ca-certificates
+docker restart portainer
+```
+
+## Portainer AD Diagnostic Checklist
+
+- [ ] DNS resolves the DC hostname from inside the container
+- [ ] Port 636 (LDAPS) is reachable from inside the container
+- [ ] Service account credentials are correct and account is not expired
+- [ ] Service account is not locked out
+- [ ] BaseDN is correct (use the full DN)
+- [ ] Search filter returns users when tested with ldapsearch
+- [ ] SSL certificate is valid and trusted
+- [ ] UserNameAttribute matches the attribute used for login
+
+---
+
+*Add real-time alerting for authentication failures with [OneUptime](https://oneuptime.com).*

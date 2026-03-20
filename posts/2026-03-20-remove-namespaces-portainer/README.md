@@ -1,0 +1,86 @@
+# How to Remove Namespaces in Portainer
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Portainer, Kubernetes, Namespaces, Cleanup, DevOps
+
+Description: Learn how to safely remove Kubernetes namespaces and all their resources through the Portainer UI.
+
+## Warning: Namespace Deletion Is Destructive
+
+Deleting a namespace removes **all** resources within it — deployments, pods, services, ConfigMaps, Secrets, and PVCs. This action is irreversible. Always verify the contents of a namespace before deletion.
+
+## Removing a Namespace in Portainer
+
+1. Select your Kubernetes environment.
+2. Go to **Namespaces** in the sidebar.
+3. Check the checkbox next to the namespace(s) to remove.
+4. Click **Remove** and confirm.
+
+Alternatively, click on the namespace and find a **Delete** button in the detail view.
+
+## Reviewing Namespace Contents Before Deletion
+
+```bash
+# Check all resources in a namespace before deleting it
+kubectl get all --namespace=my-namespace
+
+# Check PVCs (not shown by 'get all')
+kubectl get pvc --namespace=my-namespace
+
+# Check ConfigMaps and Secrets
+kubectl get configmaps secrets --namespace=my-namespace
+
+# Check for any finalizers that might block deletion
+kubectl get namespace my-namespace -o json | jq '.spec.finalizers'
+```
+
+## Deleting a Namespace via CLI
+
+```bash
+# Delete the namespace (and all its contents)
+kubectl delete namespace my-namespace
+
+# Watch the deletion progress (may take a minute for all resources to terminate)
+kubectl get namespace my-namespace --watch
+```
+
+## Stuck Namespace Deletion
+
+Sometimes namespaces get stuck in `Terminating` state due to finalizers:
+
+```bash
+# Check what's blocking termination
+kubectl describe namespace my-namespace | grep -A5 Conditions
+
+# Force removal of a stuck namespace by patching out finalizers
+kubectl get namespace my-namespace -o json | \
+  jq '.spec.finalizers = []' | \
+  kubectl replace --raw /api/v1/namespaces/my-namespace/finalize -f -
+```
+
+## Preventing Accidental Deletion
+
+Add a Portainer access restriction so only admins can delete namespaces:
+
+```yaml
+# Add a "do-not-delete" label as a reminder
+kubectl label namespace production \
+  lifecycle=permanent \
+  team=platform
+```
+
+In Portainer, restrict namespace management to environment administrators only.
+
+## System Namespaces You Should Never Delete
+
+| Namespace | Purpose |
+|-----------|---------|
+| `default` | Default namespace for resources without a namespace |
+| `kube-system` | Kubernetes system components |
+| `kube-public` | Publicly accessible cluster info |
+| `kube-node-lease` | Node heartbeat leases |
+
+## Conclusion
+
+Namespace deletion in Portainer is quick but irreversible. Always audit a namespace's contents — especially PVCs with important data — before removing it. Use the `kubectl get all` and `kubectl get pvc` commands to do a final check before confirming deletion.

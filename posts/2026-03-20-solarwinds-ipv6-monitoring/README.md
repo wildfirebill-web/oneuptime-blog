@@ -1,0 +1,146 @@
+# How to Configure SolarWinds for IPv6 Monitoring
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: SolarWinds, IPv6, Network Monitoring, NPM, SNMP, Enterprise
+
+Description: Configure SolarWinds Network Performance Monitor (NPM) to discover, monitor, and alert on IPv6-addressed network devices and interfaces.
+
+---
+
+SolarWinds NPM provides enterprise-grade IPv6 monitoring capabilities including node discovery, interface monitoring, and topology mapping for IPv6 networks.
+
+## SolarWinds NPM IPv6 Prerequisites
+
+```
+Requirements:
+- SolarWinds NPM 12.x or later (for full IPv6 support)
+- Polling engine with IPv6 connectivity
+- SNMP v2c or v3 configured on IPv6 devices
+- DNS AAAA records for clean hostname resolution
+- Additional Polling Engine (APE) in IPv6-only segments
+
+Verify IPv6 capability:
+Settings > All Settings > Polling Settings
+Check IPv6 Polling is enabled
+```
+
+## Adding IPv6 Nodes to SolarWinds
+
+```
+Method 1: Manual Add
+1. My Dashboards > Network > Manage Nodes > Add Node
+2. Enter IPv6 address: 2001:db8::router1
+   (SolarWinds accepts IPv6 addresses directly)
+3. Select Polling Method: SNMP
+4. SNMP Version: v2c
+   Community: public
+   OR
+   SNMP Version: v3
+   Username: snmpv3user
+   Auth: SHA / Password
+   Priv: AES / Password
+5. Click Next, select Resources to monitor
+6. Add Node
+
+Method 2: Network Discovery
+1. Settings > Network Discovery > New Discovery
+2. Add IPv6 Subnets: 2001:db8:network::/48
+   (Note: discovery of /64 is impractical - use subnets)
+3. Configure SNMP credentials for IPv6 devices
+4. Run discovery
+```
+
+## IPv6 Interface Monitoring in NPM
+
+```
+After node is added:
+1. Node Details page > Interfaces tab
+2. Select interfaces to monitor
+3. Interface statistics collected via SNMP over IPv6:
+   - InOctets/OutOctets (64-bit counters)
+   - InErrors/OutErrors
+   - Interface utilization %
+   - Operational status
+
+For IPv6-specific interface stats:
+1. Manage Nodes > Select IPv6 device
+2. Add Custom SNMP Pollers:
+   OID: 1.3.6.1.2.1.4.31.1.1.3.2 (IPv6 packets in)
+   OID: 1.3.6.1.2.1.4.31.1.1.4.2 (IPv6 packets out)
+```
+
+## SolarWinds NCM (Network Configuration Manager) for IPv6
+
+```
+Configure NCM for IPv6 device management:
+1. Settings > NCM Settings
+2. Enable SSH for device connection
+3. Configure credential profiles with IPv6:
+   - SSH to 2001:db8::device
+   - Telnet over IPv6 (not recommended)
+
+NCM can back up configs from:
+- Cisco devices with IPv6 management IPs
+- Juniper devices reachable via IPv6
+- Any SSH-accessible device with IPv6 address
+```
+
+## Alerting on IPv6 Node Issues
+
+```
+Create IPv6-specific alerts:
+1. Alerts & Activity > Manage Alerts > Add Alert
+2. Object Type: Node
+3. Condition:
+   - "IP Address" contains "2001:db8"  (for your IPv6 prefix)
+   - "Status" is "Down"
+4. Trigger Action: Email, SNMP Trap, Webhook
+5. Reset Action: Send all-clear
+
+Custom Properties for IPv6:
+1. Settings > Manage Custom Properties > Add Property
+2. Property: "IP_Version" (Text)
+3. Assign "IPv6" to all IPv6 nodes
+4. Filter dashboards/alerts by Custom Property
+```
+
+## IPv6 Topology in NetPath and NPM
+
+```
+SolarWinds NetPath with IPv6:
+1. My Dashboards > NetPath > New Service
+2. Target: [2001:db8::destination]:80
+3. Protocol: TCP or UDP
+4. NetPath traces path to IPv6 destination
+
+Network Atlas/Maps:
+1. Add IPv6 nodes to network maps
+2. Color-code by IP version for visual distinction
+3. Map shows real-time status of IPv6 infrastructure
+```
+
+## SolarWinds API Queries for IPv6
+
+```powershell
+# Query SolarWinds API for IPv6 nodes (PowerShell)
+$swis = Connect-Swis -Hostname localhost -Username admin -Password pass
+
+# Get all IPv6 nodes
+$query = "SELECT NodeID, Caption, IPAddress, Status
+          FROM Orion.Nodes
+          WHERE IPAddress LIKE '2001:%' OR IPAddress LIKE 'fd%'"
+
+$results = Get-SwisData $swis $query
+$results | Format-Table
+
+# Get IPv6 interface data
+$intQuery = "SELECT n.Caption, i.Name, i.InBitsPerSec, i.OutBitsPerSec
+             FROM Orion.Nodes n
+             JOIN Orion.NPM.Interfaces i ON n.NodeID = i.NodeID
+             WHERE n.IPAddress LIKE '2001:%'"
+
+Get-SwisData $swis $intQuery | Format-Table
+```
+
+SolarWinds NPM's IPv6 support enables enterprise monitoring of IPv6 infrastructure with the same dashboards, alerts, and reports as IPv4, with manual node addition by IPv6 address being more practical than subnet discovery due to IPv6 address space size.

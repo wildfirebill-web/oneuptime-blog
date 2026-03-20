@@ -1,0 +1,109 @@
+# How to Set Up Docker IPv4 Networking Behind a Corporate Proxy
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Docker, Networking, IPv4, Proxy, Corporate, Configuration
+
+Description: Configure Docker daemon and containers to use a corporate HTTP/HTTPS proxy for IPv4 traffic, set no-proxy exceptions for internal networks, and ensure containers can pull images and reach the internet.
+
+## Introduction
+
+Behind a corporate proxy, Docker needs to be configured at two levels: the Docker daemon (for pulling images) and individual containers (for runtime HTTP requests). Missing either level causes image pull failures or application connectivity issues.
+
+## Step 1: Configure the Docker Daemon Proxy
+
+Create a systemd override for the Docker service:
+
+```bash
+sudo mkdir -p /etc/systemd/system/docker.service.d
+
+sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf << 'EOF'
+[Service]
+Environment="HTTP_PROXY=http://proxy.corp.example.com:3128"
+Environment="HTTPS_PROXY=http://proxy.corp.example.com:3128"
+Environment="NO_PROXY=localhost,127.0.0.1,10.0.0.0/8,192.168.0.0/16,.corp.example.com"
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+## Verifying the Daemon Proxy
+
+```bash
+# Check that Docker daemon uses the proxy for image pulls
+docker info | grep -i proxy
+
+# Test image pull
+docker pull hello-world
+```
+
+## Step 2: Configure Proxy for Container Runtime
+
+Set environment variables in `~/.docker/config.json`:
+
+```json
+{
+  "proxies": {
+    "default": {
+      "httpProxy": "http://proxy.corp.example.com:3128",
+      "httpsProxy": "http://proxy.corp.example.com:3128",
+      "noProxy": "localhost,127.0.0.1,10.0.0.0/8,.corp.example.com"
+    }
+  }
+}
+```
+
+Docker injects these as environment variables into all new containers automatically.
+
+## Step 3: Verify Proxy in a Running Container
+
+```bash
+# Check that proxy env vars are injected
+docker run --rm alpine env | grep -i proxy
+
+# Test outbound HTTP through the proxy
+docker run --rm alpine wget -qO- https://httpbin.org/ip
+```
+
+## Setting Proxy Credentials
+
+If the proxy requires authentication:
+
+```json
+{
+  "proxies": {
+    "default": {
+      "httpProxy": "http://username:password@proxy.corp.example.com:3128",
+      "httpsProxy": "http://username:password@proxy.corp.example.com:3128",
+      "noProxy": "localhost,127.0.0.1,10.0.0.0/8"
+    }
+  }
+}
+```
+
+**Security note:** Do not put credentials in Dockerfiles or environment variables that are visible in `docker inspect`.
+
+## Proxy in Docker Compose
+
+```yaml
+services:
+  app:
+    image: my-app:latest
+    environment:
+      HTTP_PROXY: "http://proxy.corp.example.com:3128"
+      HTTPS_PROXY: "http://proxy.corp.example.com:3128"
+      NO_PROXY: "localhost,127.0.0.1,.corp.example.com,db"
+```
+
+## Bypassing Proxy for Internal Container Communication
+
+The `NO_PROXY` variable is critical — container-to-container communication (by name or IP) must bypass the proxy:
+
+```
+NO_PROXY=localhost,127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.svc,.cluster.local
+```
+
+## Conclusion
+
+Configure Docker daemon proxy through systemd environment variables (for image pulls) and `~/.docker/config.json` (for container runtime). Set comprehensive `NO_PROXY` values to exclude local and internal networks, preventing corporate proxy from intercepting container-to-container communication.
