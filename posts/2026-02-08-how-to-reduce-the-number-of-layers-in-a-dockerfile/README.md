@@ -38,6 +38,7 @@ Check the layers in an existing image:
 
 ```bash
 # View all layers and their sizes
+
 docker history myapp:latest
 
 # More detailed view

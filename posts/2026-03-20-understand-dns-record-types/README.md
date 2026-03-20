@@ -14,6 +14,7 @@ DNS stores different types of information in different record types. Each type s
 
 ```bash
 # A: IPv4 address for a hostname
+
 # Format: hostname. TTL IN A IPv4-address
 example.com.     3600  IN  A  93.184.216.34
 www.example.com. 3600  IN  A  93.184.216.34
@@ -160,4 +161,4 @@ dig _sip._tcp.example.com SRV
 
 ## Conclusion
 
-Each DNS record type serves a specific purpose. A/AAAA map names to IPs. CNAME creates aliases. MX routes email. NS identifies authoritative nameservers. SOA contains zone metadata. PTR provides reverse lookups. TXT stores text for email authentication and verification. SRV enables service discovery with priority and load balancing. Understanding record types is foundational to DNS configuration, troubleshooting, and security — most DNS problems reduce to missing, incorrect, or misconfigured records of a specific type.
+Each DNS record type serves a specific purpose. A/AAAA map names to IPs. CNAME creates aliases. MX routes email. NS identifies authoritative nameservers. SOA contains zone metadata. PTR provides reverse lookups. TXT stores text for email authentication and verification. SRV enables service discovery with priority and load balancing. Understanding record types is foundational to DNS configuration, troubleshooting, and security - most DNS problems reduce to missing, incorrect, or misconfigured records of a specific type.

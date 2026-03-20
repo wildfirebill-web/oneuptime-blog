@@ -169,6 +169,7 @@ For applications with multiple services, Docker Compose provides easier orchestr
 
 ```yaml
 # docker-compose.test.yml
+
 version: '3.8'
 
 services:

@@ -39,6 +39,7 @@ Install the AWS KMS plugin on each control plane node:
 
 ```bash
 # Download AWS KMS plugin
+
 curl -LO https://github.com/kubernetes-sigs/aws-encryption-provider/releases/download/v0.0.7/aws-encryption-provider_linux_amd64
 
 # Install to standard location

@@ -33,6 +33,7 @@ Before starting, you need:
 
 ```bash
 # Install Flux CLI on macOS
+
 brew install fluxcd/tap/flux
 
 # Install on Linux

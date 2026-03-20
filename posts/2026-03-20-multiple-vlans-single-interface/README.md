@@ -27,6 +27,7 @@ echo "8021q" > /etc/modules-load.d/8021q.conf
 
 ```bash
 # Bring up the parent interface (no IP needed on the parent)
+
 ip link set eth0 up
 
 # VLAN 10 - Management
@@ -103,7 +104,7 @@ network:
 # Enable IP forwarding to route between VLANs
 sysctl -w net.ipv4.ip_forward=1
 
-# Each VLAN subnet is directly connected — routes are automatic
+# Each VLAN subnet is directly connected - routes are automatic
 # Hosts on 10.10.0.0/24 can reach 10.20.0.0/24 via the Linux router
 ```
 

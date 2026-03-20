@@ -16,6 +16,7 @@ Description: Learn how to use tofu version to check which version of OpenTofu is
 tofu version
 
 # Output:
+
 # OpenTofu v1.6.2
 # on darwin_arm64
 # + provider registry.opentofu.org/hashicorp/aws v5.31.0

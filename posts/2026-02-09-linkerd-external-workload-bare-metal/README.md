@@ -24,6 +24,7 @@ Install Linkerd with external workload support enabled:
 
 ```bash
 # Install Linkerd CLI
+
 curl -sL https://run.linkerd.io/install | sh
 export PATH=$PATH:$HOME/.linkerd2/bin
 

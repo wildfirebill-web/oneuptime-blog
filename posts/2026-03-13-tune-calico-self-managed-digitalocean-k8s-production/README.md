@@ -87,6 +87,7 @@ Ensure the Kubernetes scheduler places Calico pods on nodes with sufficient reso
 
 ```yaml
 # Patch calico-node DaemonSet resources
+
 kubectl patch daemonset calico-node -n kube-system --type=json \
   -p='[{"op":"replace","path":"/spec/template/spec/containers/0/resources","value":{"requests":{"cpu":"250m","memory":"256Mi"},"limits":{"cpu":"1","memory":"512Mi"}}}]'
 ```

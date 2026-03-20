@@ -1,4 +1,4 @@
-# How to Deploy BorgBackup with Borgmatic via Portainer
+# How to Deploy BorgBackup with Borgmatic via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ BorgBackup (Borg) is a deduplicating backup program with compression and encrypt
 mkdir -p /opt/borgmatic/config /opt/borgmatic/ssh
 
 # Create borgmatic config
+
 cat > /opt/borgmatic/config/config.yaml << 'EOF'
 location:
     source_directories:
@@ -135,4 +136,4 @@ docker exec borgmatic crontab -l
 
 ## Conclusion
 
-Borgmatic's `config.yaml` drives all Borg operations — creation, pruning, checking, and restoration. The container runs Borgmatic on a cron schedule defined via environment variables. Set `encryption_passphrase` in the config or use a passphrase file. Mount only the directories you need to back up as read-only volumes to limit exposure.
+Borgmatic's `config.yaml` drives all Borg operations - creation, pruning, checking, and restoration. The container runs Borgmatic on a cron schedule defined via environment variables. Set `encryption_passphrase` in the config or use a passphrase file. Mount only the directories you need to back up as read-only volumes to limit exposure.

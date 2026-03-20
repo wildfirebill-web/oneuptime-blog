@@ -43,6 +43,7 @@ These commands set up the dataset and HL7v2 store with Pub/Sub notifications ena
 
 ```bash
 # Create a Healthcare API dataset
+
 gcloud healthcare datasets create healthcare-pipeline \
   --location=us-central1
 

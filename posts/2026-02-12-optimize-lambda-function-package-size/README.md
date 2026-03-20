@@ -18,6 +18,7 @@ Before optimizing, understand what's taking up space:
 
 ```bash
 # Check total package size
+
 du -sh node_modules/
 # 147M  node_modules/
 

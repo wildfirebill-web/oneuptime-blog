@@ -21,6 +21,7 @@ Use custom roles when:
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -69,7 +70,7 @@ resource "azurerm_role_definition" "vm_operator" {
 
 ## Creating a Custom Role for a CI/CD Pipeline
 
-This role grants exactly what a deployment pipeline needs — no more, no less.
+This role grants exactly what a deployment pipeline needs - no more, no less.
 
 ```hcl
 # cicd_role.tf
@@ -157,7 +158,7 @@ resource "azurerm_role_definition" "app_admin" {
 ## Best Practices
 
 - Version custom role definitions in git alongside the infrastructure that uses them.
-- Use descriptive names and `description` fields — future team members will thank you.
+- Use descriptive names and `description` fields - future team members will thank you.
 - Test role permissions using `az role assignment list` and the Azure portal's "Check Access" feature before assigning to production principals.
-- Custom roles count against Azure's limit of 5,000 custom roles per tenant — consolidate where possible.
+- Custom roles count against Azure's limit of 5,000 custom roles per tenant - consolidate where possible.
 - Periodically review and remove unused custom roles to reduce the attack surface.

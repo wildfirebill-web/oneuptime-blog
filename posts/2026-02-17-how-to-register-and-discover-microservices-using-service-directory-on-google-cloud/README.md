@@ -34,6 +34,7 @@ Start by enabling the API and creating a namespace. Namespaces are organizationa
 
 ```bash
 # Enable the Service Directory API
+
 gcloud services enable servicedirectory.googleapis.com
 
 # Create a namespace for your production services

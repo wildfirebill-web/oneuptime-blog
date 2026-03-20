@@ -8,7 +8,7 @@ Description: Learn how to reliably deploy and manage containerized applications 
 
 ## Introduction
 
-Many edge devices — remote sensors, vehicles, construction sites, ships — operate in environments where internet connectivity is sporadic. Standard deployment workflows that assume always-on connectivity will fail in these scenarios. Portainer's async Edge Agent mode is specifically designed for this challenge.
+Many edge devices - remote sensors, vehicles, construction sites, ships - operate in environments where internet connectivity is sporadic. Standard deployment workflows that assume always-on connectivity will fail in these scenarios. Portainer's async Edge Agent mode is specifically designed for this challenge.
 
 ## Prerequisites
 
@@ -53,13 +53,14 @@ Your application containers must work without network access:
 
 ```yaml
 # offline-first-app.yml
+
 # All services designed to run without internet connectivity
 version: "3.8"
 
 services:
-  # Local application — reads from local DB only
+  # Local application - reads from local DB only
   app:
-    image: myorg/edge-app:2.1.0  # Always pin versions — no :latest for offline
+    image: myorg/edge-app:2.1.0  # Always pin versions - no :latest for offline
     restart: always
     environment:
       - DB_HOST=postgres
@@ -73,7 +74,7 @@ services:
       interval: 30s
       retries: 5
 
-  # Local database — all data stored on device
+  # Local database - all data stored on device
   postgres:
     image: postgres:15-alpine
     restart: always
@@ -214,11 +215,11 @@ def forward_data():
 
 ## Best Practices
 
-- **Pin all image versions** — never use `:latest` for offline deployments.
-- **Design for local autonomy** — your app must function without cloud services.
-- **Buffer outbound data** — use local queues (MQTT, Redis, flat files) to hold data until reconnection.
-- **Set realistic poll intervals** — balance freshness against bandwidth costs.
-- **Test offline scenarios** — deliberately disconnect a test device before deployment.
+- **Pin all image versions** - never use `:latest` for offline deployments.
+- **Design for local autonomy** - your app must function without cloud services.
+- **Buffer outbound data** - use local queues (MQTT, Redis, flat files) to hold data until reconnection.
+- **Set realistic poll intervals** - balance freshness against bandwidth costs.
+- **Test offline scenarios** - deliberately disconnect a test device before deployment.
 
 ## Conclusion
 

@@ -31,6 +31,7 @@ Policies use the targetRef field to specify what they apply to:
 
 ```yaml
 # Example policy structure
+
 apiVersion: vendor.example.com/v1alpha1
 kind: CustomPolicy
 metadata:

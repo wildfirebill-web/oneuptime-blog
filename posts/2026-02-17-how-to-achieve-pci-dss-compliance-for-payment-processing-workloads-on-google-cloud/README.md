@@ -39,6 +39,7 @@ The foundation of PCI compliance on Google Cloud is isolating your Cardholder Da
 
 ```bash
 # Create a dedicated project for the PCI CDE
+
 gcloud projects create pci-cde-project \
   --organization=123456789 \
   --folder=PCI_FOLDER_ID

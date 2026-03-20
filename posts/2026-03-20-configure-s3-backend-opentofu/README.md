@@ -15,13 +15,14 @@ The S3 backend is the most widely used remote backend for AWS-based infrastructu
 Before configuring the backend, create the required AWS resources:
 
 ```hcl
-# bootstrap/main.tf — Run this once to create state infrastructure
+# bootstrap/main.tf - Run this once to create state infrastructure
 
 provider "aws" {
   region = "us-east-1"
 }
 
 # S3 bucket for state
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "my-company-terraform-state"
 

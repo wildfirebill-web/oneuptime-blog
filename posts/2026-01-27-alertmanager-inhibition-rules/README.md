@@ -65,6 +65,7 @@ Matchers use a simple syntax to select alerts based on their labels.
 
 ```yaml
 # Equality matcher
+
 - severity = critical
 
 # Negative equality matcher

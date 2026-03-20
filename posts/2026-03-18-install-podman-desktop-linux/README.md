@@ -25,6 +25,7 @@ Before installing, ensure your system meets the minimum requirements:
 
 ```bash
 # Check your distribution
+
 cat /etc/os-release
 
 # Check if Podman is installed

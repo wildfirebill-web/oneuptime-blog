@@ -20,6 +20,7 @@ sudo dnf install -y httpd-tools
 
 ```bash
 # 1000 requests, 10 concurrent
+
 ab -n 1000 -c 10 http://localhost/
 ```
 

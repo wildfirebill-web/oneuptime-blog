@@ -180,6 +180,7 @@ Istio relies on the port name in your Kubernetes Service to determine the protoc
 
 ```yaml
 # Wrong - no protocol prefix
+
 apiVersion: v1
 kind: Service
 metadata:

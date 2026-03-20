@@ -29,6 +29,7 @@ Field masks control which flow fields are included in the export. Use them to ex
 
 ```yaml
 # cilium-secure-export.yaml
+
 hubble:
   enabled: true
   export:

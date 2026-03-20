@@ -32,6 +32,7 @@ LXD VMs require QEMU/KVM support:
 
 ```bash
 # Verify KVM is available
+
 kvm-ok
 
 # Check LXD version (4.0+ required for VM support)

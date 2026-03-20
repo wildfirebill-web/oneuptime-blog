@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, networksetup, Terminal, Network Configuration
+Tags: IPv6, macOS, Networksetup, Terminal, Network Configuration
 
 Description: A comprehensive reference for networksetup commands used to manage IPv6 configuration on macOS, covering address assignment, DNS, routing, and interface management.
 
@@ -10,6 +10,7 @@ Description: A comprehensive reference for networksetup commands used to manage 
 
 ```bash
 # List all available network services
+
 networksetup -listallnetworkservices
 
 # Output example:

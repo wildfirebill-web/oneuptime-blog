@@ -20,6 +20,7 @@ Description: Tracing IPv4 packet flow involves using tools like traceroute, ping
 
 ```bash
 # Linux: UDP probes by default
+
 traceroute 8.8.8.8
 
 # ICMP-based traceroute (requires root)

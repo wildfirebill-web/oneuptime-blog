@@ -80,6 +80,7 @@ This command retrieves the current OSD count and calculates recommended PGs:
 
 ```bash
 # Get the number of OSDs in the cluster
+
 ceph osd stat
 
 # Example output: 12 osds: 12 up, 12 in

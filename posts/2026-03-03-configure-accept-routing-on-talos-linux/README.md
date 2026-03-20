@@ -39,6 +39,7 @@ In Talos Linux, you configure accept routing through the `machine.sysctls` secti
 
 ```yaml
 # Enable accept routing for MetalLB and DSR
+
 machine:
   sysctls:
     # Accept packets with local source addresses

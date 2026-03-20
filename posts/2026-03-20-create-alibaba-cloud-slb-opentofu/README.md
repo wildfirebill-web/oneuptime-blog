@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Alibaba Cloud, SLB, Load Balancers, Infrastructure as Code
+Tags: OpenTofu, Alibaba Cloud, SLB, Load Balancer, Infrastructure as Code
 
 Description: Learn how to create Alibaba Cloud SLB (Server Load Balancer) instances with OpenTofu, including listener rules, backend server groups, and health checks.
 

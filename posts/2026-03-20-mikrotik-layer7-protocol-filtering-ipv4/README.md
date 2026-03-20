@@ -14,6 +14,7 @@ MikroTik Layer 7 protocol matching uses regular expressions to inspect the first
 
 ```mikrotik
 # Block BitTorrent
+
 /ip firewall layer7-protocol add \
   name=BITTORRENT \
   regexp="^(\\x13bittorrent protocol|azver\\x01\$|get /scrape\\\?info_hash=get /announce\\\?info_hash=|get /client\\\?peerid=|\\.torrent|announce\\.php\\\?passkey=)" \
@@ -100,7 +101,7 @@ MikroTik Layer 7 protocol matching uses regular expressions to inspect the first
 
 ## Performance Considerations
 
-```
+```text
 Layer 7 matching is CPU-intensive:
   - Inspect only necessary chains (not global)
   - Apply L7 rules after basic IP/port filters
@@ -111,4 +112,4 @@ Layer 7 matching is CPU-intensive:
 
 ## Conclusion
 
-MikroTik Layer 7 protocol filtering provides application-layer traffic control using regex patterns against packet payloads. It is powerful but CPU-intensive — apply it only after lighter IP/port filters and use connection marking so the regex runs only on the first packet exchange, not every subsequent packet.
+MikroTik Layer 7 protocol filtering provides application-layer traffic control using regex patterns against packet payloads. It is powerful but CPU-intensive - apply it only after lighter IP/port filters and use connection marking so the regex runs only on the first packet exchange, not every subsequent packet.

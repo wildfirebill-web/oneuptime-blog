@@ -43,6 +43,7 @@ VPN Troubleshoot stores its diagnostic output in an Azure Storage account. You n
 
 ```bash
 # Verify Network Watcher is enabled
+
 az network watcher list --output table
 
 # Create a storage account for diagnostic output (if you don't have one)

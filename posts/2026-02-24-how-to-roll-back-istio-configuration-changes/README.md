@@ -20,6 +20,7 @@ For a single resource, you can apply the previous YAML:
 
 ```bash
 # If you have the previous version saved
+
 kubectl apply -f previous-virtual-service.yaml
 ```
 

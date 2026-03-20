@@ -70,6 +70,7 @@ my-application/
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: my-application
 description: Full application stack

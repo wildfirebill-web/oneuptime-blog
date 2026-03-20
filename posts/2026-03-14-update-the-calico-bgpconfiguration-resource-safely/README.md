@@ -29,6 +29,7 @@ Before making any changes, export the current state as your baseline:
 
 ```bash
 # Export current resource to YAML
+
 calicoctl get bgpconfiguration -o yaml > bgpconfiguration-backup.yaml
 
 # Store the backup safely

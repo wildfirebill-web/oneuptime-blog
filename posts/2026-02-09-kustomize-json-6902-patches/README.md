@@ -22,6 +22,7 @@ Here's a simple example that replaces an image tag:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

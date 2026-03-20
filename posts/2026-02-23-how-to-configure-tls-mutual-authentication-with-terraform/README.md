@@ -26,6 +26,7 @@ Before configuring Terraform, you need certificates. Here is how to generate the
 
 ```bash
 # Generate a CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Generate a self-signed CA certificate

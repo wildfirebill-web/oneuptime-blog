@@ -97,6 +97,7 @@ Create policies for each service:
 
 ```yaml
 # api-gateway can be called by frontend
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

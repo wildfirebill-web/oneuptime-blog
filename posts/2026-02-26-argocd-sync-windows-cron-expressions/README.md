@@ -37,6 +37,7 @@ Each field can contain:
 
 ```yaml
 # Every day at midnight
+
 schedule: '0 0 * * *'
 
 # Every day at 2 AM

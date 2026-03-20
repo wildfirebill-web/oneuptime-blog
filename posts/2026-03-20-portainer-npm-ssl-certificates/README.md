@@ -18,20 +18,20 @@ Nginx Proxy Manager handles SSL certificate provisioning and renewal through its
 
 ## Step 1: Let's Encrypt HTTP Challenge Certificate
 
-The simplest certificate type — requires port 80 accessible from the internet:
+The simplest certificate type - requires port 80 accessible from the internet:
 
 1. In NPM, go to **SSL Certificates** → **Add SSL Certificate**
 2. Select **Let's Encrypt**
 3. Configure:
 
-```
+```text
 Domain Names:     portainer.example.com
 Email Address:    admin@example.com
 Use a DNS Challenge: OFF    (HTTP challenge)
 Agree to Let's Encrypt TOS: checked
 ```
 
-4. Click **Save** — NPM provisions the certificate automatically.
+4. Click **Save** - NPM provisions the certificate automatically.
 
 ## Step 2: Wildcard Certificate via DNS Challenge
 
@@ -41,7 +41,7 @@ For `*.example.com` wildcard covering all subdomains:
 2. Select **Let's Encrypt**
 3. Configure:
 
-```
+```text
 Domain Names:
   *.example.com
   example.com        (include apex domain separately)
@@ -60,8 +60,9 @@ DNS Provider: Cloudflare
 
 **Other DNS providers configuration:**
 
-```
+```text
 # AWS Route53
+
 dns_route53_region = us-east-1
 # IAM credentials via environment or instance role
 
@@ -82,7 +83,7 @@ For self-signed or enterprise CA certificates:
 3. Select **Custom**
 4. Upload:
 
-```
+```text
 Certificate Key:     Your private key (.key file)
 Certificate:         Your certificate (.crt file)
 Intermediate Certificate: Your CA chain/bundle (if applicable)
@@ -111,7 +112,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 2. Edit the Portainer proxy host
 3. **SSL Tab**:
 
-```
+```sql
 SSL Certificate:  Select your certificate from the dropdown
 Force SSL:        ON
 HTTP/2 Support:   ON
@@ -174,4 +175,4 @@ docker run --rm \
 
 ## Conclusion
 
-Nginx Proxy Manager makes SSL certificate management for Portainer straightforward through its web interface. Let's Encrypt HTTP challenge works for publicly accessible servers with just a domain and email. For wildcard certificates or private servers, the DNS challenge requires DNS provider API credentials but eliminates the need for port 80 access. Always monitor certificate expiry even with auto-renewal enabled — network or DNS issues can cause renewal failures that NPM will log but may not alert on immediately.
+Nginx Proxy Manager makes SSL certificate management for Portainer straightforward through its web interface. Let's Encrypt HTTP challenge works for publicly accessible servers with just a domain and email. For wildcard certificates or private servers, the DNS challenge requires DNS provider API credentials but eliminates the need for port 80 access. Always monitor certificate expiry even with auto-renewal enabled - network or DNS issues can cause renewal failures that NPM will log but may not alert on immediately.

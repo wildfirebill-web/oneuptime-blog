@@ -60,6 +60,7 @@ Wrangler is Cloudflare's CLI tool for managing Workers. Install it globally usin
 
 ```bash
 # Install Wrangler globally
+
 npm install -g wrangler
 
 # Verify installation

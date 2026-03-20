@@ -20,6 +20,7 @@ Use the `--read-only` flag to mount the container's root filesystem as read-only
 
 ```bash
 # Run a container with a read-only filesystem
+
 podman run --read-only --rm alpine sh -c "
   echo 'Testing read-only filesystem...'
   touch /test-file 2>&1 || echo 'Cannot write to root filesystem (expected)'

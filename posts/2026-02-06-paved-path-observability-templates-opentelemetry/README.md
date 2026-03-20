@@ -40,6 +40,7 @@ Here is a production-ready template for a Python FastAPI service. It initializes
 
 ```python
 # otel_paved_path/setup.py
+
 # Drop this module into your FastAPI service.
 # Call init_observability() in your app startup.
 import os

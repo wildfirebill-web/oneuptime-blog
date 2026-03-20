@@ -1,14 +1,14 @@
-# How to Manage Swarm Nodes in Portainer
+# How to Manage Swarm Nodes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Nodes, Cluster Management, DevOps
+Tags: Portainer, Docker Swarm, Node, Cluster Management, DevOps
 
 Description: Learn how to add, configure, drain, and remove Docker Swarm nodes using Portainer's node management interface.
 
 ## Introduction
 
-Docker Swarm nodes are the foundation of your cluster. Portainer provides comprehensive node management capabilities — from viewing node details and health to changing availability modes and managing labels. This guide covers all aspects of Swarm node management through the Portainer interface.
+Docker Swarm nodes are the foundation of your cluster. Portainer provides comprehensive node management capabilities - from viewing node details and health to changing availability modes and managing labels. This guide covers all aspects of Swarm node management through the Portainer interface.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Each node row shows:
 
 Click on any node to see detailed information:
 
-```
+```bash
 Node ID:       abc123def456789
 Hostname:      worker-01
 Address:       10.0.1.11:2377
@@ -57,6 +57,7 @@ Portainer doesn't directly SSH into servers, so you add nodes via CLI:
 
 ```bash
 # On the Swarm manager, get the join token
+
 docker swarm join-token worker
 # Outputs: docker swarm join --token SWMTKN-1-xxxxx <manager-ip>:2377
 
@@ -80,7 +81,7 @@ Node availability controls whether the Swarm scheduler assigns new tasks:
 
 | Availability | Behavior |
 |-------------|---------|
-| **Active** | Normal — accepts new task assignments |
+| **Active** | Normal - accepts new task assignments |
 | **Pause** | No new tasks assigned, existing tasks continue running |
 | **Drain** | No new tasks, existing tasks are rescheduled to other nodes |
 

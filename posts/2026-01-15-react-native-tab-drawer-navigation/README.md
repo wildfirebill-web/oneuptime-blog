@@ -20,6 +20,7 @@ First, let us install the necessary packages:
 
 ```bash
 # Core navigation packages
+
 npm install @react-navigation/native
 
 # Required peer dependencies

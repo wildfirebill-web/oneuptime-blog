@@ -15,7 +15,8 @@ Cross-account resource access is a core pattern in AWS multi-account architectur
 The central (hub) account manages the OpenTofu execution and assumes roles in spoke accounts:
 
 ```hcl
-# Hub account — default provider (the account running OpenTofu)
+# Hub account - default provider (the account running OpenTofu)
+
 provider "aws" {
   region = "us-east-1"
   # Uses the CI/CD role in the hub account

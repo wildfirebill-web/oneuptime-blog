@@ -16,6 +16,7 @@ Like `package_facts`, service information is not gathered during the default fac
 
 ```yaml
 # basic-service-facts.yml
+
 # Gathers service facts and shows a summary
 ---
 - name: Gather service facts

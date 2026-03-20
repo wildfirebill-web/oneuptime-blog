@@ -14,6 +14,7 @@ Docker containers can experience packet fragmentation when their network MTU dif
 
 ```bash
 # Check host interface MTU:
+
 ip link show eth0 | grep mtu
 
 # Check Docker bridge MTU:

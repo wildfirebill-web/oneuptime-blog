@@ -17,6 +17,7 @@ IP source address spoofing is the technique of sending packets with a forged sou
 ```bash
 pip install scapy
 # Root/sudo required for raw socket access
+
 ```
 
 ## Sending a Single Spoofed ICMP Packet
@@ -64,7 +65,7 @@ from scapy.all import IP, ICMP, send
 # Send a packet with a source IP from a completely different range
 # Should be dropped if BCP38 is enforced on your router
 pkt = IP(
-    src="1.2.3.4",         # External IP — should not originate from your subnet
+    src="1.2.3.4",         # External IP - should not originate from your subnet
     dst="8.8.8.8"          # Send toward the internet
 ) / ICMP()
 
@@ -95,14 +96,14 @@ Test that your firewall correctly drops spoofed traffic from untrusted ranges:
 ```python
 from scapy.all import IP, TCP, sr1
 
-# Send a SYN from a private range — should be blocked by the firewall
+# Send a SYN from a private range - should be blocked by the firewall
 probe = IP(src="192.168.99.1", dst="TARGET_IP") / TCP(dport=443, flags="S")
 response = sr1(probe, timeout=2, verbose=False)
 
 if response is None:
-    print("No response — firewall is blocking (expected)")
+    print("No response - firewall is blocking (expected)")
 else:
-    print(f"Got response: {response.summary()} — check your firewall rules")
+    print(f"Got response: {response.summary()} - check your firewall rules")
 ```
 
 ## Capturing Responses to Spoofed Packets

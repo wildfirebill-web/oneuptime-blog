@@ -14,6 +14,7 @@ Monitoring Windows nodes requires a Windows-specific metrics exporter since the 
 
 ```yaml
 # windows-exporter-ds.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

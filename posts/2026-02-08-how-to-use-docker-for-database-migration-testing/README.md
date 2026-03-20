@@ -22,6 +22,7 @@ The pattern is always the same: start a database, load a schema and optional see
 
 ```bash
 # Start a PostgreSQL container with a specific version matching production
+
 docker run -d \
   --name migration-test-db \
   -e POSTGRES_USER=app \

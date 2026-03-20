@@ -43,6 +43,7 @@ roles/ssl_certs/
 
 ```yaml
 # roles/ssl_certs/defaults/main.yml
+
 # Certificate provider: letsencrypt or selfsigned
 ssl_provider: letsencrypt
 

@@ -59,6 +59,7 @@ Add a CI step that runs migrations on a test database and dumps the resulting sc
 
 ```yaml
 # .github/workflows/schema-check.yaml
+
 name: Schema Version Check
 on:
   pull_request:

@@ -22,6 +22,7 @@ First, see how many ENIs you're using and what the limit is.
 
 ```bash
 # Count the total ENIs in your account for the region
+
 aws ec2 describe-network-interfaces \
   --query 'length(NetworkInterfaces)'
 

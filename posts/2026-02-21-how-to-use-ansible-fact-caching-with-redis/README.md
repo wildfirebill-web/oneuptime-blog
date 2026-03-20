@@ -33,6 +33,7 @@ First, install the Redis Python client on your Ansible control node:
 
 ```bash
 # Install the redis Python library
+
 pip install redis
 ```
 

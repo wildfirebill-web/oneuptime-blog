@@ -15,6 +15,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Allow individual IPs and CIDR blocks
+
 ALLOWED = [
     ipaddress.IPv4Network("192.168.1.0/24"),
     ipaddress.IPv4Network("10.0.0.0/8"),
@@ -160,4 +161,4 @@ def check_ip():
 
 ## Conclusion
 
-Use `ipaddress.IPv4Network` and the `in` operator for CIDR-based allow lists in Python. In Node.js, `ipaddr.js` handles both IPv4 and IPv4-mapped IPv6 addresses. Cache database-loaded whitelists with a short TTL to avoid per-request DB calls. Apply whitelist middleware globally to admin routes or sensitive endpoints only — public API routes typically use rate limiting rather than IP restriction. Always verify the source IP from a trusted connection before acting on forwarded headers.
+Use `ipaddress.IPv4Network` and the `in` operator for CIDR-based allow lists in Python. In Node.js, `ipaddr.js` handles both IPv4 and IPv4-mapped IPv6 addresses. Cache database-loaded whitelists with a short TTL to avoid per-request DB calls. Apply whitelist middleware globally to admin routes or sensitive endpoints only - public API routes typically use rate limiting rather than IP restriction. Always verify the source IP from a trusted connection before acting on forwarded headers.

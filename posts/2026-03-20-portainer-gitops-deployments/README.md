@@ -19,7 +19,7 @@ GitOps is a practice where your Git repository is the single source of truth for
 
 ## GitOps Workflow with Portainer
 
-```
+```text
 Developer pushes to Git → Portainer polls/webhook → Stack updated automatically
                                                    ↓
                                           Container restarted with new config/image
@@ -29,7 +29,7 @@ Developer pushes to Git → Portainer polls/webhook → Stack updated automatica
 
 Structure your repository for Portainer GitOps:
 
-```
+```text
 my-app-infra/
 ├── production/
 │   ├── docker-compose.yml      # Production stack definition
@@ -43,6 +43,7 @@ Example `docker-compose.yml` for GitOps:
 
 ```yaml
 # production/docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -116,7 +117,7 @@ For instant updates on push (faster than polling):
 Store non-sensitive environment variables in your repo:
 
 ```bash
-# .env.portainer (committed to repo — no secrets!)
+# .env.portainer (committed to repo - no secrets!)
 APP_NAME=myapp
 APP_ENV=production
 LOG_LEVEL=info
@@ -125,7 +126,7 @@ MAX_CONNECTIONS=100
 
 In Portainer stack settings:
 - Point to this file in the **Env file** section
-- Add sensitive variables (passwords, API keys) directly in Portainer's **Environment variables** section — these won't be stored in Git
+- Add sensitive variables (passwords, API keys) directly in Portainer's **Environment variables** section - these won't be stored in Git
 
 ## Step 6: GitOps via the Portainer API
 

@@ -32,6 +32,7 @@ Here is a straightforward example that uses different users for different operat
 
 ```yaml
 # playbooks/multi-user-deploy.yml
+
 # Deploy a full stack application with proper user isolation
 ---
 - name: Deploy full stack application

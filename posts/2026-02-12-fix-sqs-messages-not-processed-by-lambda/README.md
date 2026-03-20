@@ -16,6 +16,7 @@ Lambda polls SQS through an event source mapping. If this mapping doesn't exist,
 
 ```bash
 # List event source mappings for your Lambda function
+
 aws lambda list-event-source-mappings \
     --function-name my-function \
     --query 'EventSourceMappings[].{UUID:UUID,Source:EventSourceArn,State:State,BatchSize:BatchSize}'

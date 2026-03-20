@@ -14,6 +14,7 @@ Helm fetches chart packages from HTTP/HTTPS repositories and OCI registries. Whe
 
 ```bash
 # Add an HTTP Helm repository over IPv6
+
 helm repo add myrepo "http://[2001:db8::chartserver]:8080/charts"
 
 # Add an HTTPS Helm repository over IPv6
@@ -131,7 +132,7 @@ volumes:
 ## Kubernetes Helm with IPv6 Service
 
 ```yaml
-# chartmuseum-service.yaml — Dual-stack service
+# chartmuseum-service.yaml - Dual-stack service
 
 apiVersion: v1
 kind: Service

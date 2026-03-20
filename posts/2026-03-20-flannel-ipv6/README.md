@@ -14,6 +14,7 @@ Flannel is a simple CNI plugin that provides overlay networking for Kubernetes p
 
 ```bash
 # Download Flannel manifest
+
 curl -LO https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
 
 # Apply initial Flannel installation
@@ -125,7 +126,7 @@ kubectl exec pod1 -- ip -6 addr show eth0
 
 ## Flannel vs Other CNI Plugins for IPv6
 
-```
+```text
 Flannel IPv6 Limitations:
   - No network policy support (use with NetworkPolicy provider)
   - VXLAN only for IPv6 (no host-gw mode for IPv6)
@@ -144,4 +145,4 @@ Alternatives with richer IPv6 support:
 
 ## Conclusion
 
-Configure Flannel for dual-stack Kubernetes by adding `"IPv6Network"` and `"EnableIPv6": true` to the `net-conf.json` in the `kube-flannel-cfg` ConfigMap, then restarting the Flannel DaemonSet. Flannel assigns IPv6 subnets per node based on the configured IPv6Network, visible in `/run/flannel/subnet.env`. Verify pod IPv6 addresses with `kubectl get pod -o jsonpath='{.status.podIPs}'`. Note that Flannel does not support native NetworkPolicy for IPv6 — use Calico or Cilium if network policy enforcement is required.
+Configure Flannel for dual-stack Kubernetes by adding `"IPv6Network"` and `"EnableIPv6": true` to the `net-conf.json` in the `kube-flannel-cfg` ConfigMap, then restarting the Flannel DaemonSet. Flannel assigns IPv6 subnets per node based on the configured IPv6Network, visible in `/run/flannel/subnet.env`. Verify pod IPv6 addresses with `kubectl get pod -o jsonpath='{.status.podIPs}'`. Note that Flannel does not support native NetworkPolicy for IPv6 - use Calico or Cilium if network policy enforcement is required.

@@ -28,6 +28,7 @@ This guide covers installing the Hubble CLI, establishing connectivity to the Hu
 HUBBLE_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/hubble/master/stable.txt)
 
 # Linux AMD64
+
 curl -L --remote-name-all \
   "https://github.com/cilium/hubble/releases/download/${HUBBLE_VERSION}/hubble-linux-amd64.tar.gz"
 tar xzvf hubble-linux-amd64.tar.gz

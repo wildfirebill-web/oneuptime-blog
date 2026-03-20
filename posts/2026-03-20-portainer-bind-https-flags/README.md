@@ -1,4 +1,4 @@
-# How to Use the --bind and --bind-https Flags in Portainer
+# How to Use the --bind and --bind-https Flags in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer's HTTP and HTTPS listening addresses using the 
 
 ## Introduction
 
-By default, Portainer listens on all interfaces (`0.0.0.0`) on ports 9000 (HTTP) and 9443 (HTTPS). The `--bind` and `--bind-https` flags let you change these defaults — binding to a specific interface, a non-standard port, or restricting to localhost for security.
+By default, Portainer listens on all interfaces (`0.0.0.0`) on ports 9000 (HTTP) and 9443 (HTTPS). The `--bind` and `--bind-https` flags let you change these defaults - binding to a specific interface, a non-standard port, or restricting to localhost for security.
 
 ## Understanding the Flags
 
@@ -23,6 +23,7 @@ These flags accept an `address:port` format.
 
 ```bash
 # Listen only on localhost (no external access)
+
 docker run -d \
   -p 127.0.0.1:9000:9000 \
   --name portainer \

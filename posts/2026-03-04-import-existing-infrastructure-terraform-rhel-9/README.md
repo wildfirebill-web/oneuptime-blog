@@ -45,6 +45,7 @@ Then import the resource:
 
 ```bash
 # Import an existing EC2 instance by its ID
+
 terraform import aws_instance.existing_server i-0abc123def456789
 
 # Import a security group

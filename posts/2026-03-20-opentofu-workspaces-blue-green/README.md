@@ -6,7 +6,7 @@ Tags: OpenTofu, Workspaces, Blue-Green Deployment, Zero Downtime, Infrastructure
 
 Description: Use OpenTofu workspaces to implement blue-green deployments that enable zero-downtime infrastructure updates by maintaining two parallel environments.
 
-Blue-green deployments eliminate downtime by keeping two identical environments — blue and green — and switching traffic between them. OpenTofu workspaces make it straightforward to manage both environments from a single configuration.
+Blue-green deployments eliminate downtime by keeping two identical environments - blue and green - and switching traffic between them. OpenTofu workspaces make it straightforward to manage both environments from a single configuration.
 
 ## How Blue-Green Works
 
@@ -28,6 +28,7 @@ At any point, one environment serves live traffic while the other is updated and
 
 ```bash
 # Create both workspaces
+
 tofu workspace new blue
 tofu workspace new green
 
@@ -150,7 +151,7 @@ echo "Traffic is now on $NEW_SLOT. Old slot can be cleaned up."
 
 ## Best Practices
 
-- **Keep workspaces symmetric**: Always ensure blue and green share identical infrastructure shapes — only the AMI or container image version differs.
+- **Keep workspaces symmetric**: Always ensure blue and green share identical infrastructure shapes - only the AMI or container image version differs.
 - **Test before flipping**: Run automated smoke tests against the idle environment before switching traffic.
 - **Use workspace outputs**: Export key endpoints as `tofu output` values so scripts can discover them dynamically.
 - **Rollback is instant**: If the new slot has problems, re-run the flip script with the old slot name.

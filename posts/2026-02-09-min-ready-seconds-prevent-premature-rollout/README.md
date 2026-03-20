@@ -82,6 +82,7 @@ Watch a rollout with minReadySeconds set to see the behavior:
 
 ```bash
 # Start a rollout
+
 kubectl set image deployment/api-server \
   api=myregistry.io/api-server:v2.1.0
 

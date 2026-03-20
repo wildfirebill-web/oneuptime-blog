@@ -146,6 +146,7 @@ from google.cloud import vision
 from google.cloud import storage
 
 # Initialize clients outside the function for reuse
+
 vision_client = vision.ImageAnnotatorClient()
 storage_client = storage.Client()
 

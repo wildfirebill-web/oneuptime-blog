@@ -28,6 +28,7 @@ Helm is the most common external installer for Cilium:
 
 ```bash
 # Add the Cilium Helm repository
+
 helm repo add cilium https://helm.cilium.io/
 helm repo update
 

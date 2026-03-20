@@ -18,6 +18,7 @@ The `buildah mount` command mounts a container's root filesystem to a directory 
 
 ```bash
 # Ensure Buildah is installed
+
 buildah --version
 
 # Buildah mount requires root privileges or unshare

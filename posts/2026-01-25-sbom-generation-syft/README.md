@@ -28,6 +28,7 @@ Syft is a single binary available for all major platforms:
 
 ```bash
 # macOS with Homebrew
+
 brew install syft
 
 # Linux (download from GitHub releases)

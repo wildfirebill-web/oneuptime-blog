@@ -20,6 +20,7 @@ By default, GitHub Actions runs all jobs in parallel. Consider the following wor
 
 ```yaml
 # .github/workflows/parallel-example.yml
+
 # Without dependencies, all jobs start simultaneously
 name: Parallel Jobs Example
 

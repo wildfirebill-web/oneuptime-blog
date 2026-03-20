@@ -14,6 +14,7 @@ Kafka SSL encryption protects data in transit between clients and brokers, and b
 
 ```bash
 # Step 1: Create CA
+
 openssl req -new -x509 -keyout ca-key.pem -out ca-cert.pem -days 3650 \
   -subj "/CN=Kafka CA" -passout pass:capassword
 

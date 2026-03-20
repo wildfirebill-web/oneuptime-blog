@@ -31,6 +31,7 @@ CIS failures typically fall into these categories:
 
 ```bash
 # Check if anonymous auth is enabled (should be disabled)
+
 # For RKE2, edit the server configuration
 sudo vi /etc/rancher/rke2/config.yaml
 ```

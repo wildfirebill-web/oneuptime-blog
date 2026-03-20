@@ -263,6 +263,7 @@ logFormat:
 
 ```bash
 # All 503 errors
+
 kubectl logs deploy/my-service -c istio-proxy | jq 'select(.response_code == "503")'
 
 # Slow requests

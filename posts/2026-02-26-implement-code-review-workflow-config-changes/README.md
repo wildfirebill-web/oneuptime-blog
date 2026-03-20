@@ -28,6 +28,7 @@ Start with branch protection on your main branch:
 
 ```bash
 # Using GitHub CLI to configure branch protection
+
 gh api repos/myorg/backend-api-config/branches/main/protection \
   --method PUT \
   --field required_status_checks='{"strict":true,"contexts":["validate-kustomize","kubeconform","policy-check"]}' \
@@ -182,7 +183,7 @@ jobs:
           for env in dev staging production; do
             DIFF=$(diff -u "/tmp/${env}-main.yaml" "/tmp/${env}-pr.yaml" || true)
             if [ -n "$DIFF" ]; then
-              DIFF_OUTPUT="${DIFF_OUTPUT}\n### ${env}\n\`\`\`diff\n${DIFF}\n\`\`\`\n"
+              DIFF_OUTPUT="${DIFF_OUTPUT}\n### ${env}\n```diff\n${DIFF}\n```\n"
             fi
           done
 

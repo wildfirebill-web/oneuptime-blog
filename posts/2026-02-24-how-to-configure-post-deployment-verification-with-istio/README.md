@@ -275,6 +275,7 @@ Most CI/CD tools support running a verification step after deployment. Here's ho
 
 ```yaml
 # In your CI/CD pipeline (example: GitHub Actions)
+
 steps:
   - name: Deploy
     run: kubectl apply -f manifests/

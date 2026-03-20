@@ -236,7 +236,7 @@ receivers:
                 - targets: ['{{.PodIP}}:{{index .Annotations "prometheus.io/port"}}']
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Add resource attributes to telemetry collected from dynamically created receivers.
 

@@ -8,7 +8,7 @@ Description: An explanation of DS-Lite (Dual-Stack Lite), an ISP transition tech
 
 ## What Is DS-Lite?
 
-DS-Lite (Dual-Stack Lite), defined in RFC 6333, is an IPv6 transition technology designed for ISPs. It allows carriers to deploy IPv6-only infrastructure in the access network while still providing subscribers with IPv4 internet connectivity — without assigning each subscriber a public IPv4 address.
+DS-Lite (Dual-Stack Lite), defined in RFC 6333, is an IPv6 transition technology designed for ISPs. It allows carriers to deploy IPv6-only infrastructure in the access network while still providing subscribers with IPv4 internet connectivity - without assigning each subscriber a public IPv4 address.
 
 DS-Lite achieves this by:
 1. Tunneling subscriber IPv4 traffic over IPv6 (using a Softwire tunnel)
@@ -65,7 +65,7 @@ The B4 needs to know the AFTR's IPv6 address. This is typically provided via:
 
 DS-Lite adds a 40-byte IPv6 tunnel header to every IPv4 packet. This reduces the effective MTU for IPv4 traffic:
 
-```
+```text
 Physical link MTU: 1500 bytes
 IPv6 tunnel header: 40 bytes
 Effective IPv4 MTU: 1460 bytes

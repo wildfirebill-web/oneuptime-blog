@@ -16,6 +16,7 @@ To see all running processes on a node:
 
 ```bash
 # List all processes on a node
+
 talosctl processes --nodes 192.168.1.10
 ```
 

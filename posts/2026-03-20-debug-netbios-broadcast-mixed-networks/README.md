@@ -27,12 +27,13 @@ H-node is the recommended type for most networks.
 
 ```bash
 # Capture all NetBIOS name service traffic on UDP port 137
+
 sudo tcpdump -i eth0 -n -v "udp port 137"
 ```
 
 Example output:
 
-```
+```text
 14:00:01.123 IP 192.168.1.50.137 > 192.168.1.255.137: NBT UDP PACKET(137): QUERY
   NMB Name Query REQ for FILESERVER<20>
 ```
@@ -77,7 +78,7 @@ Configure WINS via DHCP option 44 to avoid manual configuration on each Windows 
 
 In `isc-dhcp-server` (`/etc/dhcp/dhcpd.conf`):
 
-```
+```text
 subnet 192.168.1.0 netmask 255.255.255.0 {
   range 192.168.1.100 192.168.1.200;
   option routers 192.168.1.1;
@@ -102,7 +103,7 @@ On Linux with Samba:
 ## Blocking NetBIOS Broadcasts at Subnet Boundaries
 
 ```bash
-# On a Linux router — block NetBIOS broadcasts from being forwarded
+# On a Linux router - block NetBIOS broadcasts from being forwarded
 sudo iptables -A FORWARD -p udp --dport 137 -d 255.255.255.255 -j DROP
 sudo iptables -A FORWARD -p udp --dport 138 -d 255.255.255.255 -j DROP
 ```

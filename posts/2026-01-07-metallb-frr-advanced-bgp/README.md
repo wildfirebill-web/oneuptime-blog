@@ -124,6 +124,7 @@ The following commands add the official MetalLB Helm repository and update your 
 
 ```bash
 # Add the MetalLB Helm repository to your Helm installation
+
 helm repo add metallb https://metallb.github.io/metallb
 
 # Update the Helm repository cache to fetch the latest chart versions

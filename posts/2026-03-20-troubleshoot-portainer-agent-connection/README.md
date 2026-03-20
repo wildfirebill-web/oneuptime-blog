@@ -1,4 +1,4 @@
-# How to Troubleshoot Portainer Agent Connection Issues
+# How to Troubleshoot Portainer Agent Connection Issues - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ The Portainer Agent communicates with the Portainer server on TCP port 9001. Pro
 
 ```bash
 # Check agent container status
+
 docker ps --filter name=portainer_agent
 
 # View agent logs for errors

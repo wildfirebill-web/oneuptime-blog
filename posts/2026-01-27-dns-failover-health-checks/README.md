@@ -50,6 +50,7 @@ HTTP checks verify your web application responds correctly. They can check statu
 
 ```bash
 # Simple HTTP health check endpoint
+
 # Returns 200 if healthy, 503 if unhealthy
 
 # Example health endpoint in your application

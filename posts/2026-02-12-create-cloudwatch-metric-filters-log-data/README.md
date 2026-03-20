@@ -38,6 +38,7 @@ Let's start with the most common use case: counting errors. Suppose your applica
 
 ```bash
 # Create a metric filter that counts ERROR occurrences
+
 aws logs put-metric-filter \
   --log-group-name "/myapp/production/api" \
   --filter-name "ErrorCount" \

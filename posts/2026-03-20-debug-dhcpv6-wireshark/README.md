@@ -8,13 +8,13 @@ Description: Learn how to capture and analyze DHCPv6 traffic using Wireshark to 
 
 ## Overview
 
-Wireshark is one of the most powerful tools for debugging DHCPv6. It lets you inspect the full contents of every DHCPv6 message — including options, identifiers, and status codes — in a readable GUI or at the command line with `tshark`.
+Wireshark is one of the most powerful tools for debugging DHCPv6. It lets you inspect the full contents of every DHCPv6 message - including options, identifiers, and status codes - in a readable GUI or at the command line with `tshark`.
 
 ## Capturing DHCPv6 Traffic
 
 DHCPv6 uses UDP ports **546** (client) and **547** (server). Use this display filter in Wireshark:
 
-```
+```text
 dhcpv6
 ```
 
@@ -22,6 +22,7 @@ To capture only DHCPv6 from the command line with `tshark`:
 
 ```bash
 # Capture DHCPv6 traffic on eth0 and save to a file
+
 tshark -i eth0 -f "udp port 546 or udp port 547" -w /tmp/dhcpv6.pcap
 
 # Then read and display it
@@ -32,7 +33,7 @@ tshark -r /tmp/dhcpv6.pcap -V -Y dhcpv6
 
 A successful DHCPv6 address assignment follows four messages. Here is what each looks like in Wireshark:
 
-```
+```text
 Frame 1: DHCPv6 Solicit
   Source: fe80::1 → Destination: ff02::1:2 (All DHCPv6 servers)
   Message Type: Solicit (1)
@@ -57,7 +58,7 @@ Frame 4: DHCPv6 Reply
 
 ## Useful Wireshark Display Filters
 
-```
+```text
 # All DHCPv6 traffic
 dhcpv6
 
@@ -99,10 +100,10 @@ tshark -r /tmp/dhcpv6.pcap -Y dhcpv6 \
 
 | Symptom | What to Look For in Wireshark |
 |---------|-------------------------------|
-| Client not getting address | No Advertise after Solicit — server unreachable or not running |
-| Status code NoAddrsAvail (2) | Address pool exhausted — check IA_NA status in Reply |
+| Client not getting address | No Advertise after Solicit - server unreachable or not running |
+| Status code NoAddrsAvail (2) | Address pool exhausted - check IA_NA status in Reply |
 | Client ignores Advertise | DUID mismatch or server preference too low |
-| Constant Renew/Rebind loop | Server not responding to Renew — check unicast routing to server |
+| Constant Renew/Rebind loop | Server not responding to Renew - check unicast routing to server |
 
 ## Live Capture with Wireshark GUI
 

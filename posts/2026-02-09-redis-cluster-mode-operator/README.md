@@ -30,6 +30,7 @@ Deploy the Redis Operator to manage Redis clusters:
 
 ```bash
 # Create namespace
+
 kubectl create namespace redis
 
 # Install using Helm

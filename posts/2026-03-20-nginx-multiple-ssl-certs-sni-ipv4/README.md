@@ -36,7 +36,7 @@ Each `server` block listens on the same IP:port but serves a different certifica
 # /etc/nginx/conf.d/site1.conf
 
 server {
-    # Both listen on same IPv4:port — SNI selects the right one
+    # Both listen on same IPv4:port - SNI selects the right one
     listen 203.0.113.10:443 ssl;
     server_name api.example.com;
 
@@ -58,7 +58,7 @@ server {
 # /etc/nginx/conf.d/site2.conf
 
 server {
-    # Same listen address — Nginx uses SNI to differentiate
+    # Same listen address - Nginx uses SNI to differentiate
     listen 203.0.113.10:443 ssl;
     server_name app.example.com;
 
@@ -82,6 +82,7 @@ Avoid repeating SSL settings across server blocks using an include file:
 
 ```nginx
 # /etc/nginx/ssl-common.conf
+
 ssl_protocols TLSv1.2 TLSv1.3;
 ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256;
 ssl_prefer_server_ciphers off;

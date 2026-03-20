@@ -73,6 +73,7 @@ To investigate, look at the Memory Analysis in the diagnostic tools. For .NET ap
 
 ```bash
 # Navigate to the process explorer in Kudu
+
 # Then use the "Collect Memory Dump" option for your w3wp process
 # Or use the API directly:
 curl -X POST https://your-app.scm.azurewebsites.net/api/processes/0/dump?dumpType=2

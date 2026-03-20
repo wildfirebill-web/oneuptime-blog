@@ -37,6 +37,7 @@ The API server:
 
 ```bash
 # Get API server pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o wide
 
 # Check for restarts

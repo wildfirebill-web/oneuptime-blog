@@ -20,6 +20,7 @@ Create a kustomization.yaml with secretGenerator:
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

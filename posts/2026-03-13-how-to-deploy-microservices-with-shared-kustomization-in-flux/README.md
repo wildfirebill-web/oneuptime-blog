@@ -54,6 +54,7 @@ Create a root kustomization.yaml that aggregates all microservice directories.
 
 ```yaml
 # apps/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

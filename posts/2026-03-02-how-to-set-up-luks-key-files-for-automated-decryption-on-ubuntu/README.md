@@ -27,6 +27,7 @@ If the key file is ever compromised, you remove it from its slot and add a new o
 
 ```bash
 # Check LUKS version of an encrypted device
+
 sudo cryptsetup luksDump /dev/sda3 | grep "Version"
 
 # LUKS2 is the default on Ubuntu 20.04+

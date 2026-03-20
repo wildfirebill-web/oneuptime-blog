@@ -35,6 +35,7 @@ Business services represent customer-facing capabilities. Navigate to **Services
 
 ```yaml
 # Example business service structure
+
 business_services:
   - name: "Web Application"
     description: "Customer-facing web portal"

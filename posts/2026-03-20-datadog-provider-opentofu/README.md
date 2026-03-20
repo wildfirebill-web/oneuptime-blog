@@ -20,6 +20,7 @@ The Datadog provider for OpenTofu lets you manage monitors, dashboards, SLOs, sy
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.6.0"
   required_providers {

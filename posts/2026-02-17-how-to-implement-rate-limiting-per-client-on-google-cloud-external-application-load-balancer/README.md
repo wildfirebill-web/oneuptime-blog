@@ -34,6 +34,7 @@ Start by creating a security policy that will hold your rate limiting rules:
 
 ```bash
 # Create a new Cloud Armor security policy for rate limiting
+
 gcloud compute security-policies create rate-limit-policy \
     --description="Per-client rate limiting policy for API endpoints"
 ```

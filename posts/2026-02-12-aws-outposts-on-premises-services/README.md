@@ -52,6 +52,7 @@ Ordering happens through the AWS console or your AWS account team.
 
 ```bash
 # List available Outpost configurations (catalog items)
+
 aws outposts list-catalog-items \
   --query "CatalogItems[].{Id:CatalogItemId, EC2Capacities:EC2Capacities, PowerKva:PowerKva}" \
   --output table

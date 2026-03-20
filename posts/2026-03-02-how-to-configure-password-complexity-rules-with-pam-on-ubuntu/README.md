@@ -22,6 +22,7 @@ On Ubuntu 20.04 and later, `libpam-pwquality` is usually already installed:
 
 ```bash
 # Check if the package is installed
+
 dpkg -l libpam-pwquality
 
 # Install if not present

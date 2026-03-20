@@ -14,6 +14,7 @@ IPv6 streaming latency issues can stem from routing inefficiencies, buffer misco
 
 ```bash
 # Measure round-trip time to streaming server over IPv6
+
 ping6 -c 20 2001:db8::stream-server
 
 # Analyze with mtr (traceroute + ping)
@@ -145,4 +146,4 @@ sudo ip6tables -t mangle -A OUTPUT \
 sudo tcpdump -i eth0 -nn ip6 -v | grep "DSCP\|traffic class"
 ```
 
-IPv6 streaming latency troubleshooting follows the same systematic approach as IPv4 — measure, trace, buffer-tune — with additional attention to ICMPv6 packet-too-big handling for PMTU discovery, NDP cache health, and ensuring IPv6 extension headers are not being added unnecessarily along the path.
+IPv6 streaming latency troubleshooting follows the same systematic approach as IPv4 - measure, trace, buffer-tune - with additional attention to ICMPv6 packet-too-big handling for PMTU discovery, NDP cache health, and ensuring IPv6 extension headers are not being added unnecessarily along the path.

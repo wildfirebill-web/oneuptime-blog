@@ -136,6 +136,7 @@ Schedule this query:
 
 ```bash
 # Schedule the CDC query to run every hour
+
 bq query --use_legacy_sql=false \
   --schedule="every 1 hours" \
   --display_name="Customer CDC Tracker" \

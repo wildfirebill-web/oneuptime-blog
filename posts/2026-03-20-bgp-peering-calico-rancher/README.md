@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, bgp, calico, networking, kubernetes
+Tags: Rancher, BGP, Calico, Networking, Kubernetes
 
 Description: Step-by-step guide to configuring BGP peering with Calico CNI in Rancher for route advertisement.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

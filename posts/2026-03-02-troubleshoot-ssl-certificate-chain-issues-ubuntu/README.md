@@ -28,6 +28,7 @@ The client needs to verify each link in the chain. Root CA certificates are buil
 
 ```bash
 # Connect and show the full certificate chain presented by the server
+
 openssl s_client -connect yourdomain.com:443 -showcerts
 
 # Cleaner version showing just the chain summary

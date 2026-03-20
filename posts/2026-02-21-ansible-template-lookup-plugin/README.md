@@ -26,6 +26,7 @@ Here is a simple example that renders a template and uses the result:
 
 ```yaml
 # basic_template_lookup.yml - Render template inline
+
 ---
 - name: Use template lookup
   hosts: all

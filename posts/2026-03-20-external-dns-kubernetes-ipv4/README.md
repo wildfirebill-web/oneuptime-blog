@@ -12,6 +12,7 @@ ExternalDNS watches Kubernetes Services and Ingresses and automatically creates 
 
 ```bash
 # Ensure your services have external IPs (MetalLB or cloud LB)
+
 kubectl get svc -A | grep LoadBalancer
 
 # You'll need DNS provider credentials (example uses Cloudflare)
@@ -122,7 +123,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: my-ingress
-  # No ExternalDNS annotation needed for Ingress — it reads the spec.rules[].host
+  # No ExternalDNS annotation needed for Ingress - it reads the spec.rules[].host
 spec:
   rules:
   - host: app.example.com  # ExternalDNS creates A record for this

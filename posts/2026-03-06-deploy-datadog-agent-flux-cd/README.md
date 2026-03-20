@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Datadog, Monitoring, Agents, GitOps, Kubernetes, Observability, APM
+Tags: Flux CD, Datadog, Monitoring, Agent, GitOps, Kubernetes, Observability, APM
 
 Description: A practical guide to deploying the Datadog Agent on Kubernetes using Flux CD for GitOps-managed monitoring, APM, and log collection.
 
@@ -39,6 +39,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/datadog/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

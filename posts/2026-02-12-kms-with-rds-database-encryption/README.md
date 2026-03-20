@@ -29,6 +29,7 @@ First, set up a KMS key with the right permissions for RDS.
 
 ```bash
 # Create a KMS key for RDS
+
 aws kms create-key \
   --description "RDS encryption key for production databases" \
   --tags '[

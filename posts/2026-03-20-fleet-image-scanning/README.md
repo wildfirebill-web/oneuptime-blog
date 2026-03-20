@@ -36,6 +36,7 @@ The image scanning integration in a Fleet pipeline works as follows:
 
 ```bash
 # Install Trivy (GitHub Actions example)
+
 # .github/workflows/build-and-scan.yml
 
 # Build and scan the Docker image before pushing

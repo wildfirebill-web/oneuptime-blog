@@ -43,6 +43,7 @@ The most common cause. GCP requires you to explicitly enable each API before use
 
 ```bash
 # Check if the specific API is enabled
+
 gcloud services list --enabled \
     --filter="name:compute.googleapis.com" \
     --project=my-project

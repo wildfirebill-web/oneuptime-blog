@@ -27,6 +27,7 @@ This guide covers the infrastructure and processes needed to prevent test enviro
 
 ```bash
 # Label nodes for dedicated testing
+
 kubectl label nodes node-perf-1 node-perf-2 node-role=perf-testing
 
 

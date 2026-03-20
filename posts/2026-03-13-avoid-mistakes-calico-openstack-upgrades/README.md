@@ -23,6 +23,7 @@ OpenStack-specific Calico upgrade mistakes often involve the Neutron ML2 plugin 
 
 ```bash
 # WRONG - upgrading Kubernetes Calico without upgrading OpenStack agents
+
 kubectl patch installation default --type=merge -p '{"spec":{"version":"v3.28.0"}}'
 # calico-felix on compute nodes still on old version = version mismatch = breakage!
 

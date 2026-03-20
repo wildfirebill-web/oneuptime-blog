@@ -118,6 +118,7 @@ def count_s3_objects(bucket, prefix=""):
     return object_count, total_size
 
 # Compare source and target
+
 local_count, local_size = count_local_files("/data/uploads")
 s3_count, s3_size = count_s3_objects("my-migrated-bucket", "uploads/")
 

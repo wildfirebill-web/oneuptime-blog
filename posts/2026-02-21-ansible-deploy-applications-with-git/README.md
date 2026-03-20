@@ -47,6 +47,7 @@ git-deploy/
 
 ```yaml
 # group_vars/all.yml
+
 app_name: myapp
 app_user: deploy
 app_group: deploy

@@ -24,6 +24,7 @@ Verify your cluster supports ephemeral containers:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Check feature gate (not needed in 1.25+)

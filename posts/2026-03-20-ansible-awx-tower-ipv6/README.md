@@ -14,6 +14,7 @@ AWX itself must have IPv6 connectivity to reach managed IPv6 hosts. On a Kuberne
 
 ```bash
 # Check if AWX pods have IPv6 addresses
+
 kubectl get pods -n awx -o wide
 kubectl exec -n awx <awx-task-pod> -- ip -6 addr show
 ```

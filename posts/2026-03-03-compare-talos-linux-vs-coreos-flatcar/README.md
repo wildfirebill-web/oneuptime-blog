@@ -28,6 +28,7 @@ This is where the two systems diverge most sharply.
 
 ```bash
 # Flatcar: SSH access is available
+
 ssh core@flatcar-node
 systemctl status docker
 journalctl -u kubelet

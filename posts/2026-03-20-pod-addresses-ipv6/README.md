@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Pod, Addresses, Dual-Stack, Verification
+Tags: Kubernetes, IPv6, Pods, Addresses, Dual-Stack, Verification
 
 Description: Verify that Kubernetes pods have received IPv6 addresses in dual-stack clusters, check pod network configuration from inside containers, and troubleshoot IPv6 address assignment failures.
 
@@ -14,6 +14,7 @@ In dual-stack Kubernetes clusters, pods should receive both IPv4 and IPv6 addres
 
 ```bash
 # Check pod IPs for a specific pod
+
 kubectl get pod mypod -o jsonpath='{.status.podIPs}'
 # [{"ip":"10.244.0.5"},{"ip":"fd00:10:244::5"}]
 
@@ -60,7 +61,7 @@ kubectl exec mypod -- ping6 -c 3 "$OTHER_POD_IPV6"
 
 ```bash
 #!/bin/bash
-# check_pod_ipv6.sh — verify all running pods have IPv6 addresses
+# check_pod_ipv6.sh - verify all running pods have IPv6 addresses
 
 PASS=0
 FAIL=0
@@ -116,4 +117,4 @@ ssh node1 "cat /proc/sys/net/ipv6/conf/all/disable_ipv6"
 
 ## Conclusion
 
-Verify pod IPv6 addresses using `kubectl get pod -o jsonpath='{.status.podIPs}'` — in dual-stack clusters, this should return an array with both IPv4 and IPv6 entries. Check IPv6 inside containers with `kubectl exec pod -- ip -6 addr show eth0`. If pods only show IPv4, check that the node's `podCIDRs` includes an IPv6 range, the CNI plugin is configured for IPv6, and IPv6 is enabled on the node. Use the batch verification script to check all pods at once after cluster configuration changes.
+Verify pod IPv6 addresses using `kubectl get pod -o jsonpath='{.status.podIPs}'` - in dual-stack clusters, this should return an array with both IPv4 and IPv6 entries. Check IPv6 inside containers with `kubectl exec pod -- ip -6 addr show eth0`. If pods only show IPv4, check that the node's `podCIDRs` includes an IPv6 range, the CNI plugin is configured for IPv6, and IPv6 is enabled on the node. Use the batch verification script to check all pods at once after cluster configuration changes.

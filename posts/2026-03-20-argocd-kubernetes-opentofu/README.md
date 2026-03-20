@@ -14,6 +14,7 @@ ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes. It monit
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -54,7 +55,7 @@ resource "helm_release" "argocd" {
   values = [
     yamlencode({
       server = {
-        # Disable internal TLS — let ingress handle it
+        # Disable internal TLS - let ingress handle it
         extraArgs = ["--insecure"]
 
         ingress = {
@@ -181,8 +182,8 @@ resource "kubernetes_manifest" "app" {
 
 ## Best Practices
 
-- Use ArgoCD Projects to create boundaries between teams — a misconfigured production Application can't accidentally deploy to another team's namespace.
-- Enable `selfHeal = true` so ArgoCD immediately reverts manual kubectl changes — this ensures Git is always the truth.
+- Use ArgoCD Projects to create boundaries between teams - a misconfigured production Application can't accidentally deploy to another team's namespace.
+- Enable `selfHeal = true` so ArgoCD immediately reverts manual kubectl changes - this ensures Git is always the truth.
 - Store the ArgoCD admin password as a bcrypt hash, not plaintext, in your OpenTofu configuration.
-- Use ArgoCD's App of Apps pattern — a root Application that deploys other Applications — for managing large numbers of services.
+- Use ArgoCD's App of Apps pattern - a root Application that deploys other Applications - for managing large numbers of services.
 - Regularly review sync statuses and set up Slack/webhook notifications for failed syncs.

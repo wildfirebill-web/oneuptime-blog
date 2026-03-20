@@ -48,6 +48,7 @@ This script creates the app registration and service principal:
 
 ```bash
 # Create an app registration for GitHub Actions
+
 APP_NAME="github-actions-deploy"
 
 APP_ID=$(az ad app create \

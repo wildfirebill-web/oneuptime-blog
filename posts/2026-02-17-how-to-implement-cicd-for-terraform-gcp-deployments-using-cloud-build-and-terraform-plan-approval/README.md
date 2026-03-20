@@ -69,6 +69,7 @@ Create the state bucket:
 
 ```bash
 # Create the state bucket with versioning enabled
+
 gsutil mb -l us-central1 gs://my-project-terraform-state
 gsutil versioning set on gs://my-project-terraform-state
 ```

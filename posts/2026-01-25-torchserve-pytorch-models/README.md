@@ -28,6 +28,7 @@ Install TorchServe and its dependencies:
 
 ```bash
 # Install Java 11 (required)
+
 # On Ubuntu:
 sudo apt-get install openjdk-11-jdk
 

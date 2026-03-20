@@ -79,6 +79,7 @@ For Python, use auto-instrumentation at startup:
 
 ```bash
 # Run with auto-instrumentation
+
 opentelemetry-instrument --service_name my-service python app.py
 
 # Or initialize manually at the top of your entry point

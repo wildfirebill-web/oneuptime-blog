@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Redirect, URL Rewriting, SEO, Web Server, DevOps
+Tags: Nginx, Redirect, URL Rewriting, SEO, Web Server, DevOps
 
 Description: Learn how to configure URL redirects in Nginx properly, including 301 vs 302 redirects, HTTP to HTTPS, www to non-www, trailing slashes, and complex redirect patterns.
 
@@ -35,6 +35,7 @@ flowchart TB
 
 ```nginx
 # Simple 301 redirect
+
 location /old-page {
     return 301 /new-page;
 }

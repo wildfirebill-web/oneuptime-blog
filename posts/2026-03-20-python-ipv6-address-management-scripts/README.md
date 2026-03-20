@@ -1,8 +1,8 @@
-# How to Build IPv6 Address Management Scripts in Python
+# How to Build IPv6 Address Management Scripts in Python - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, IPAM, Address Management, Automation, Network
+Tags: Python, IPv6, IPAM, Address Management, Automation, Networks
 
 Description: Build IPv6 address management (IPAM) scripts in Python to allocate prefixes, track assignments, and generate reports.
 
@@ -101,6 +101,7 @@ class IPv6IPAM:
         }
 
 # Usage example
+
 ipam = IPv6IPAM("2001:db8::/40")
 
 # Allocate prefixes for different customers

@@ -607,6 +607,7 @@ Use these commands to verify your EVPN configuration is working correctly.
 
 ```bash
 # Check BGP EVPN neighbor status
+
 show bgp l2vpn evpn summary
 
 # Expected output shows established sessions

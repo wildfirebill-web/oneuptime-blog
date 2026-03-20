@@ -44,6 +44,7 @@ An IDS endpoint is the resource that receives mirrored traffic and performs anal
 
 ```bash
 # Enable the Cloud IDS API
+
 gcloud services enable ids.googleapis.com --project=my-network-project
 
 # Create a Cloud IDS endpoint

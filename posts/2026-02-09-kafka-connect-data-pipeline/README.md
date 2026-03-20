@@ -42,6 +42,7 @@ Create a Dockerfile:
 FROM confluentinc/cp-kafka-connect:7.5.0
 
 # Install additional connectors
+
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.7.4
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:14.0.9
 RUN confluent-hub install --no-prompt debezium/debezium-connector-postgresql:2.4.0

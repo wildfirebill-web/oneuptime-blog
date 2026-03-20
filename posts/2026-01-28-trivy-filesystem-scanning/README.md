@@ -50,6 +50,7 @@ flowchart LR
 
 ```bash
 # Scan the current directory
+
 trivy fs .
 
 # Scan a specific directory

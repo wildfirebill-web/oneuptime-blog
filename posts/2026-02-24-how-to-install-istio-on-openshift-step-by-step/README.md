@@ -74,6 +74,7 @@ Create an OpenShift-specific configuration:
 
 ```yaml
 # istio-openshift.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

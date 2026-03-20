@@ -16,6 +16,7 @@ First, set up a new CDKTF project configured for AWS:
 
 ```bash
 # Create a new directory for your project
+
 mkdir cdktf-aws-project && cd cdktf-aws-project
 
 # Initialize with TypeScript

@@ -443,6 +443,7 @@ Test webhook behavior under various failure conditions:
 
 ```bash
 # Scale webhook to zero to simulate failure
+
 kubectl scale deployment admission-webhook -n webhooks --replicas=0
 
 # Try creating a pod with Fail policy (should be blocked)

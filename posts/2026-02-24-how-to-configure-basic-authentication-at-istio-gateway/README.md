@@ -21,6 +21,7 @@ First, generate the base64-encoded credentials:
 ```bash
 echo -n "admin:secretpassword" | base64
 # Output: YWRtaW46c2VjcmV0cGFzc3dvcmQ=
+
 ```
 
 Now create the EnvoyFilter:

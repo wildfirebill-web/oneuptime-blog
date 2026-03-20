@@ -25,6 +25,7 @@ This guide covers deploying Calico on a kubeadm-provisioned Kubernetes cluster r
 
 ```bash
 # Allow VXLAN traffic between Kubernetes nodes
+
 az network nsg rule create \
   --resource-group my-k8s-rg \
   --nsg-name my-k8s-nsg \

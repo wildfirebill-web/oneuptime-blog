@@ -128,6 +128,7 @@ This is the most reliable way to figure out what's happening. Get the config dum
 
 ```bash
 # Before
+
 kubectl exec -it deploy/my-app -c istio-proxy -- pilot-agent request GET config_dump > before.json
 
 # Apply your filter

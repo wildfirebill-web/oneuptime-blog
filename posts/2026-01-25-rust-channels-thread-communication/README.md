@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Concurrency, Channels, Threads, Message Passing
+Tags: Rust, Concurrency, Channels, Thread, Message Passing
 
 Description: Learn how to use channels for safe communication between threads in Rust. This guide covers mpsc channels, sync channels, crossbeam channels, and practical patterns for concurrent programming.
 

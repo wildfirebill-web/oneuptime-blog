@@ -39,6 +39,7 @@ Service returning server errors to clients. User-facing impact likely.
 
 ```bash
 # Get the specific error codes
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'sum(rate(istio_requests_total{response_code=~"5.."}[5m])) by (destination_service, response_code, source_workload)'

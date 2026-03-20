@@ -37,6 +37,7 @@ You can create and attach the disk in a single command:
 
 ```bash
 # Create a 256 GB Premium SSD and attach it to the VM
+
 az vm disk attach \
   --resource-group myResourceGroup \
   --vm-name myLinuxVM \

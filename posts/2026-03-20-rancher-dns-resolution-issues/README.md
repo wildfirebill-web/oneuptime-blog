@@ -14,6 +14,7 @@ DNS failures in Kubernetes can manifest as pod startup errors, service connectiv
 
 ```bash
 # Check CoreDNS pods
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns
 
 # If pods are not Running, describe them for events
@@ -56,7 +57,7 @@ kubectl get configmap -n kube-system coredns -o yaml
 
 A typical CoreDNS Corefile looks like:
 
-```
+```text
 .:53 {
     errors
     health {

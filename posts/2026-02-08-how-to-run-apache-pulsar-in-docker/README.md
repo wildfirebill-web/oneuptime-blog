@@ -32,6 +32,7 @@ The standalone mode bundles everything into one container. Start here for local 
 
 ```bash
 # Run Pulsar standalone with persistent data
+
 docker run -d \
   --name pulsar \
   -p 6650:6650 \

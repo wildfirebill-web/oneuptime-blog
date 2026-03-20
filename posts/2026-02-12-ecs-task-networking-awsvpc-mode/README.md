@@ -94,6 +94,7 @@ When creating a service, you specify the networking details - which subnets and 
 
 ```hcl
 # Terraform - ECS service with awsvpc networking
+
 resource "aws_ecs_service" "web" {
   name            = "web-app"
   cluster         = aws_ecs_cluster.main.id

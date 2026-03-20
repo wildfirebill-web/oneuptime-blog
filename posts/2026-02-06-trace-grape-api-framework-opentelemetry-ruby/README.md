@@ -27,6 +27,7 @@ Create a Grape API project and add OpenTelemetry gems:
 
 ```ruby
 # Gemfile
+
 gem 'grape'
 gem 'rack'
 gem 'opentelemetry-sdk'

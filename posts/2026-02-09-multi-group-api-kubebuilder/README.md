@@ -28,6 +28,7 @@ Initialize a Kubebuilder project with multi-group support:
 
 ```bash
 # Create project
+
 kubebuilder init \
   --domain example.com \
   --repo github.com/myorg/myoperator \

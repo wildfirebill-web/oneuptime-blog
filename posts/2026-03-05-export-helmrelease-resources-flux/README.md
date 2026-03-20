@@ -18,6 +18,7 @@ Export a single HelmRelease to stdout.
 
 ```bash
 # Export a single HelmRelease
+
 flux export helmrelease my-app -n default
 ```
 

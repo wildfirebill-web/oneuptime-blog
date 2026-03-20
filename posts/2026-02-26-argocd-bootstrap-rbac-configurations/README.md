@@ -71,6 +71,7 @@ Start with a set of ClusterRoles that cover common access patterns. Avoid giving
 
 ```yaml
 # bootstrap/rbac/cluster-roles/developer.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

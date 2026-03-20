@@ -1,4 +1,4 @@
-# How to Manage Docker Configs in Portainer on Swarm
+# How to Manage Docker Configs in Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -46,6 +46,7 @@ You see a table of all configs with:
 
 ```nginx
 # nginx.conf
+
 server {
     listen 80;
     server_name _;
@@ -97,14 +98,14 @@ docker config inspect --format '{{json .Spec.Data}}' nginx-config | \
 4. Select the config name from the dropdown
 5. Set the **Target path** where the file should appear in the container:
 
-```
+```text
 Config:       nginx-config
 Target path:  /etc/nginx/conf.d/default.conf
 ```
 
 6. Optionally set:
-   - **UID/GID** — File ownership
-   - **Mode** — File permissions (e.g., `0644`)
+   - **UID/GID** - File ownership
+   - **Mode** - File permissions (e.g., `0644`)
 
 ### Via Stack Compose File
 
@@ -136,7 +137,7 @@ configs:
 
 ## Step 5: Update a Config
 
-Docker Configs are **immutable** — you cannot update a config's content in place. Instead, create a new config version and update the service to use it:
+Docker Configs are **immutable** - you cannot update a config's content in place. Instead, create a new config version and update the service to use it:
 
 ```bash
 # Create v2 of the config
@@ -207,4 +208,4 @@ In Portainer: select configs and click the remove button.
 
 ## Conclusion
 
-Docker Configs in Swarm provide a clean, scalable way to distribute configuration files to services. Portainer's config management UI makes it easy to create, view, and attach configs without needing to know CLI commands. Remember that configs are immutable — adopt a versioning convention from the start to make config updates manageable in production.
+Docker Configs in Swarm provide a clean, scalable way to distribute configuration files to services. Portainer's config management UI makes it easy to create, view, and attach configs without needing to know CLI commands. Remember that configs are immutable - adopt a versioning convention from the start to make config updates manageable in production.

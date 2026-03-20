@@ -35,6 +35,7 @@ You can set this option in your Application manifest:
 
 ```yaml
 # Application with ApplyOutOfSyncOnly enabled
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

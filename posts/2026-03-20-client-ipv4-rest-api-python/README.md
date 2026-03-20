@@ -27,6 +27,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 # Tell Flask to trust the first proxy in the chain
+
 app.config["TRUSTED_PROXIES"] = 1
 # Flask 2.3+ uses ProxyFix middleware
 from werkzeug.middleware.proxy_fix import ProxyFix
@@ -63,7 +64,7 @@ def is_trusted_proxy(ip: str) -> bool:
 def get_real_ip() -> str:
     xff = request.headers.get("X-Forwarded-For", "")
     if xff and is_trusted_proxy(request.remote_addr):
-        # Take the leftmost IP — the original client
+        # Take the leftmost IP - the original client
         return xff.split(",")[0].strip()
     return request.remote_addr
 
@@ -115,4 +116,4 @@ async def whoami(request: Request):
 
 ## Conclusion
 
-Never read `X-Forwarded-For` without first verifying that `request.remote_addr` is a trusted proxy — an attacker can spoof this header on direct connections. In Flask, use `werkzeug.middleware.proxy_fix.ProxyFix` with `x_for=1` to safely unwrap one level of proxy. In FastAPI, validate the incoming connection address before trusting forwarded headers. Always document the expected number of proxy hops so the configuration remains correct as infrastructure changes.
+Never read `X-Forwarded-For` without first verifying that `request.remote_addr` is a trusted proxy - an attacker can spoof this header on direct connections. In Flask, use `werkzeug.middleware.proxy_fix.ProxyFix` with `x_for=1` to safely unwrap one level of proxy. In FastAPI, validate the incoming connection address before trusting forwarded headers. Always document the expected number of proxy hops so the configuration remains correct as infrastructure changes.

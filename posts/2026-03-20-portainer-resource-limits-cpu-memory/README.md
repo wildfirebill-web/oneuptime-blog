@@ -21,8 +21,8 @@ Docker supports two types of resource constraints:
 
 | Type | CPU | Memory | Description |
 |------|-----|--------|-------------|
-| **Limit** (hard) | `--cpus` | `--memory` | Maximum allowed — enforced strictly |
-| **Reservation** (soft) | `--cpu-shares` | `--memory-reservation` | Guaranteed minimum — used for scheduling |
+| **Limit** (hard) | `--cpus` | `--memory` | Maximum allowed - enforced strictly |
+| **Reservation** (soft) | `--cpu-shares` | `--memory-reservation` | Guaranteed minimum - used for scheduling |
 
 - **Limit**: Container cannot exceed this amount. If memory limit is hit, the container is OOM-killed.
 - **Reservation**: Guarantees this amount is available when the system is under pressure.
@@ -39,9 +39,10 @@ Docker supports two types of resource constraints:
 
 Enter the maximum memory the container can use:
 
-```
+```text
 Memory limit: 512   (MB)
 # Container will be OOM-killed if it exceeds 512 MB
+
 ```
 
 Common values:
@@ -54,7 +55,7 @@ Common values:
 
 Enter the memory reserved/guaranteed for the container:
 
-```
+```bash
 Memory reservation: 256   (MB)
 # Docker scheduler ensures 256 MB is available for this container
 ```
@@ -63,7 +64,7 @@ The reservation should be less than or equal to the memory limit.
 
 ### Memory + Swap
 
-```
+```text
 Memory limit:  512 MB
 Memory swap:   1024 MB   (total memory + swap)
 # Swap available = 1024 - 512 = 512 MB of swap
@@ -71,7 +72,7 @@ Memory swap:   1024 MB   (total memory + swap)
 
 Setting swap to the same value as the memory limit disables swap:
 
-```
+```text
 Memory limit: 512 MB
 Memory swap:  512 MB   # No additional swap available
 ```
@@ -82,7 +83,7 @@ Memory swap:  512 MB   # No additional swap available
 
 Specify how many CPUs the container can use:
 
-```
+```text
 CPU limit: 0.5
 # Container can use up to 50% of one CPU core
 
@@ -96,7 +97,7 @@ This maps to Docker's `--cpus` flag.
 
 The minimum CPU guaranteed to the container:
 
-```
+```text
 CPU reservation: 0.25
 # Container always gets at least 25% of one CPU
 ```
@@ -195,8 +196,8 @@ If a container is being OOM-killed:
 - **Always set memory limits** on production containers to prevent runaway processes.
 - **Set realistic reservations** based on baseline memory usage observed in testing.
 - **Use CPU limits for batch workers** to prevent them from starving real-time services.
-- **Monitor for OOM kills** — they indicate the container needs more memory or has a leak.
-- **Leave headroom on the host** — don't reserve 100% of host resources across containers.
+- **Monitor for OOM kills** - they indicate the container needs more memory or has a leak.
+- **Leave headroom on the host** - don't reserve 100% of host resources across containers.
 
 ## Conclusion
 

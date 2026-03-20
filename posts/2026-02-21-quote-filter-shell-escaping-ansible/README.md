@@ -16,6 +16,7 @@ Consider this seemingly innocent task:
 
 ```yaml
 # DANGEROUS - Do not do this without quoting
+
 - name: Create a backup file
   ansible.builtin.shell: "cp /etc/myapp/config.yml /backup/{{ backup_name }}.yml"
 ```

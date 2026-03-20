@@ -24,6 +24,7 @@ If you have not installed the Ops Agent yet, here is how to do it on a single VM
 
 ```bash
 # Install the Ops Agent on a Compute Engine VM
+
 curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh
 sudo bash add-google-cloud-ops-agent-repo.sh --also-install
 ```

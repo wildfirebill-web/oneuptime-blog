@@ -16,6 +16,7 @@ Create secrets from literals (for non-sensitive defaults):
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

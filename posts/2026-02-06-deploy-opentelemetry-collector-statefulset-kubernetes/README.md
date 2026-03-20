@@ -59,6 +59,7 @@ Here's a complete StatefulSet deployment for OpenTelemetry Collectors:
 
 ```yaml
 # collector-statefulset.yaml
+
 # Deploy collectors with stable identities and persistent storage
 apiVersion: v1
 kind: Namespace

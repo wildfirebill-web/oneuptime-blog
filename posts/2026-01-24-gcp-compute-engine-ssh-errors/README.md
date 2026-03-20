@@ -39,6 +39,7 @@ This usually means the firewall is blocking traffic or the instance has no exter
 
 ```bash
 # List instance details
+
 gcloud compute instances describe my-instance \
     --zone=us-central1-a \
     --format="yaml(networkInterfaces[0].accessConfigs)"

@@ -18,6 +18,7 @@ An exemplar is a sample data point attached to a metric that links back to a spe
 
 ```python
 # tracing_with_exemplars.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.metrics import MeterProvider

@@ -38,6 +38,7 @@ Configure Kafka Connect to expose JMX metrics:
 
 ```bash
 # kafka-connect-env.sh
+
 export KAFKA_JMX_OPTS="-Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.authenticate=false \
   -Dcom.sun.management.jmxremote.ssl=false \

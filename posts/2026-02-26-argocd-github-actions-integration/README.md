@@ -33,6 +33,7 @@ The most common pattern is having GitHub Actions update the image tag in your de
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Build and Deploy
 
 on:

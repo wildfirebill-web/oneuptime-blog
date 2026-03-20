@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Security, Hardening, Linux
+Tags: RHEL, Nginx, Security, Hardening, Linux
 
 Description: Practical security hardening steps for Nginx on RHEL, covering server information hiding, security headers, TLS configuration, and access restrictions.
 
@@ -24,6 +24,7 @@ By default, Nginx sends its version in the Server header and error pages:
 
 ```nginx
 # In the http block of /etc/nginx/nginx.conf
+
 server_tokens off;
 ```
 

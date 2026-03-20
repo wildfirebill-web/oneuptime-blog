@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Routing, Debugging, ip route, IPv4
+Tags: Linux, Networking, Routing, Debugging, Ip route, IPv4
 
 Description: Use the ip route get command on Linux to query the kernel's routing decision for any destination, including policy routing, source address selection, and interface selection.
 
 ## Introduction
 
-`ip route get` queries the Linux kernel's routing subsystem to show exactly how a packet would be routed for a given destination. Unlike `ip route show` which displays the routing table, `ip route get` simulates the actual forwarding decision — including policy routing rules (ip rules), source address selection, and outgoing interface determination.
+`ip route get` queries the Linux kernel's routing subsystem to show exactly how a packet would be routed for a given destination. Unlike `ip route show` which displays the routing table, `ip route get` simulates the actual forwarding decision - including policy routing rules (ip rules), source address selection, and outgoing interface determination.
 
 ## Basic Usage
 
 ```bash
 # Find the route to a destination
+
 ip route get 8.8.8.8
 # Output: 8.8.8.8 via 192.168.1.1 dev eth0 src 192.168.1.10 uid 1000
 #   cache
@@ -35,7 +36,7 @@ ip route get 10.20.0.1 from 192.168.5.10
 # If policy routing is active, result may differ from regular lookup:
 ip route get 10.20.0.1
 ip route get 10.20.0.1 from 192.168.5.10
-# Compare both — different results indicate a policy routing rule is active
+# Compare both - different results indicate a policy routing rule is active
 ```
 
 ## Querying a Specific Table
@@ -101,4 +102,4 @@ traceroute -n -m 3 10.20.0.1 | head -5
 
 ## Conclusion
 
-`ip route get` is an indispensable debugging tool that tells you exactly what the kernel will do with a packet, not just what routes are configured. It accounts for policy routing rules, routing tables, and source address selection — making it far more useful than simply reading the routing table when diagnosing forwarding issues.
+`ip route get` is an indispensable debugging tool that tells you exactly what the kernel will do with a packet, not just what routes are configured. It accounts for policy routing rules, routing tables, and source address selection - making it far more useful than simply reading the routing table when diagnosing forwarding issues.

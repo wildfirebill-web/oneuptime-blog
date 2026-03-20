@@ -32,6 +32,7 @@ Start by creating a dedicated service account for your function. Give it a descr
 
 ```bash
 # Create a service account specifically for the image processing function
+
 gcloud iam service-accounts create image-processor-sa \
   --display-name "Image Processor Cloud Function" \
   --description "Service account for the image processing Cloud Function"

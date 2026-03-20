@@ -8,12 +8,13 @@ Description: Configure Windows Server DNS to serve AAAA records, create IPv6 rev
 
 ## Introduction
 
-Windows Server DNS supports IPv6 fully — it can listen on IPv6, serve AAAA records, host ip6.arpa reverse zones, and integrate with Active Directory. PowerShell provides scripted management of all these features.
+Windows Server DNS supports IPv6 fully - it can listen on IPv6, serve AAAA records, host ip6.arpa reverse zones, and integrate with Active Directory. PowerShell provides scripted management of all these features.
 
 ## Step 1: Enable IPv6 Listening
 
 ```powershell
 # Check current listening addresses
+
 Get-DnsServer | Select -ExpandProperty ServerSetting | 
     Select ListeningIPAddress
 

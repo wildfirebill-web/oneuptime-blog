@@ -20,6 +20,7 @@ Use the `--health-startup-cmd` flag for the startup-specific check:
 
 ```bash
 # Define separate startup and regular health checks
+
 podman run -d \
   --name slow-start-app \
   --health-startup-cmd "curl -f http://localhost:8080/startup || exit 1" \

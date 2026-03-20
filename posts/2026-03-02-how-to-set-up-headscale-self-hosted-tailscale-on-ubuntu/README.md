@@ -32,6 +32,7 @@ This means:
 
 ```bash
 # Download the latest Headscale release
+
 # Check https://github.com/juanfont/headscale/releases for current version
 curl -LO https://github.com/juanfont/headscale/releases/download/v0.23.0/headscale_0.23.0_linux_amd64.deb
 

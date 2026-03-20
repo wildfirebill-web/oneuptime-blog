@@ -48,6 +48,7 @@ The base configuration defines shared receivers, exporters, and processors that 
 
 ```yaml
 # base/receivers.yaml
+
 # Shared receiver definitions used across all environments.
 receivers:
   otlp:

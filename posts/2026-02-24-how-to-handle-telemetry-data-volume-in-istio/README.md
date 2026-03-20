@@ -24,6 +24,7 @@ Check your current metric cardinality:
 
 ```bash
 # Count unique time series for Istio metrics
+
 kubectl exec deploy/prometheus-server -n monitoring -- curl -s localhost:9090/api/v1/label/__name__/values | python3 -c "
 import json, sys
 data = json.load(sys.stdin)

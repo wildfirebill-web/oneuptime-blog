@@ -34,6 +34,7 @@ This is a cluster-wide issue that affects all pods simultaneously, making it mor
 
 ```bash
 # Test from multiple namespaces
+
 for NS in default production staging; do
   kubectl run test --image=busybox -n $NS --restart=Never --rm -i \
     --timeout=10s -- nslookup kubernetes.default 2>&1 | head -3

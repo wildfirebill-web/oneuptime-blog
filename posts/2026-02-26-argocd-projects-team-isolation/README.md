@@ -40,6 +40,7 @@ Projects prevent all of these by defining explicit allow lists for sources, dest
 
 ```bash
 # Create a project for the payments team
+
 argocd proj create payments \
   --description "Payments team applications" \
   --src "https://github.com/my-org/payments-*" \

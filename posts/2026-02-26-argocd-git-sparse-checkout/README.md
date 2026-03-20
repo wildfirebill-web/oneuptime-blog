@@ -155,6 +155,7 @@ While sparse checkout reduces the impact of monorepos, the cleanest solution is 
 
 ```yaml
 # Application pointing to a dedicated repo
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

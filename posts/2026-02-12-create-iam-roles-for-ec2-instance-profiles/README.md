@@ -38,6 +38,7 @@ First, create a role with a trust policy that allows EC2 to assume it:
 
 ```bash
 # Create the trust policy document
+
 cat > trust-policy.json << 'EOF'
 {
     "Version": "2012-10-17",

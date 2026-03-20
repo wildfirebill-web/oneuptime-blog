@@ -14,7 +14,7 @@ One of the most significant architectural differences between IPv4 and IPv6 is t
 
 In IPv4, broadcast had significant drawbacks:
 
-1. **Every host must interrupt to process**: A broadcast to 255.255.255.255 or a subnet broadcast (e.g., 192.168.1.255) forces every host on the subnet to stop what it is doing and inspect the packet — even if the packet is not relevant to them.
+1. **Every host must interrupt to process**: A broadcast to 255.255.255.255 or a subnet broadcast (e.g., 192.168.1.255) forces every host on the subnet to stop what it is doing and inspect the packet - even if the packet is not relevant to them.
 
 2. **Broadcast storms**: Misconfigured or malicious hosts can flood a network with broadcasts, consuming all available bandwidth and CPU on every host.
 
@@ -36,7 +36,7 @@ In IPv4, broadcast had significant drawbacks:
 
 ## NDP: The ARP Replacement
 
-The most impactful change is NDP replacing ARP. In IPv4, finding the MAC for 192.168.1.100 broadcasts to every host on the subnet. In IPv6, the Neighbor Solicitation is sent to a **solicited-node multicast address** — which only the target host (and a tiny group of other hosts with similar last 24 bits) must process:
+The most impactful change is NDP replacing ARP. In IPv4, finding the MAC for 192.168.1.100 broadcasts to every host on the subnet. In IPv6, the Neighbor Solicitation is sent to a **solicited-node multicast address** - which only the target host (and a tiny group of other hosts with similar last 24 bits) must process:
 
 ```python
 import ipaddress
@@ -53,6 +53,7 @@ def solicited_node(unicast: str) -> str:
     return str(ipaddress.IPv6Address(prefix | last_24))
 
 # Example: resolving 2001:db8::1234:5678
+
 target = "2001:db8::1234:5678"
 sn_addr = solicited_node(target)
 print(f"NS sent to: {sn_addr}")
@@ -79,7 +80,7 @@ ip -6 maddr show dev eth0
 
 ## Performance Benefits
 
-```
+```text
 IPv4 /24 subnet (254 hosts):
   ARP request: sent to all 254 hosts
   Each host: interrupt CPU, inspect packet, discard if not target
@@ -90,11 +91,11 @@ IPv6 /64 subnet (same hosts):
   All other hosts: uninterrupted by the packet
 ```
 
-On a switch level, multicast can be constrained by MLD snooping so only ports subscribed to a group receive the traffic — further reducing unnecessary processing.
+On a switch level, multicast can be constrained by MLD snooping so only ports subscribed to a group receive the traffic - further reducing unnecessary processing.
 
 ## No "All-Ones" Subnet Address
 
-In IPv4, the all-ones host address in a subnet (e.g., 192.168.1.255 in a /24) was the subnet broadcast and was unusable. IPv6 has no such restriction — every address from `::0` to `::ffff:ffff:ffff:ffff` within a /64 is potentially usable as a host address.
+In IPv4, the all-ones host address in a subnet (e.g., 192.168.1.255 in a /24) was the subnet broadcast and was unusable. IPv6 has no such restriction - every address from `::0` to `::ffff:ffff:ffff:ffff` within a /64 is potentially usable as a host address.
 
 ```python
 import ipaddress
@@ -110,4 +111,4 @@ print(f"IPv6 /64 usable hosts: {ipv6_net.num_addresses:,}")  # 18,446,744,073,70
 
 ## Conclusion
 
-The elimination of broadcast in IPv6 is a major architectural improvement. By replacing broadcast with targeted multicast, IPv6 ensures that packets are only processed by hosts that have a legitimate interest in receiving them. This reduces CPU interrupts, eliminates broadcast storms, and scales far better as subnet populations grow. Understanding this difference is key to appreciating why IPv6 is not just "IPv4 with bigger addresses" — it is a fundamentally redesigned protocol.
+The elimination of broadcast in IPv6 is a major architectural improvement. By replacing broadcast with targeted multicast, IPv6 ensures that packets are only processed by hosts that have a legitimate interest in receiving them. This reduces CPU interrupts, eliminates broadcast storms, and scales far better as subnet populations grow. Understanding this difference is key to appreciating why IPv6 is not just "IPv4 with bigger addresses" - it is a fundamentally redesigned protocol.

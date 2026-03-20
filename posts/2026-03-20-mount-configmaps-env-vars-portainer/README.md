@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMap, Environment Variables, Configuration
+Tags: Portainer, Kubernetes, ConfigMaps, Environment Variables, Configuration
 
 Description: Learn how to inject Kubernetes ConfigMap data into application containers as environment variables in Portainer.
 
@@ -70,6 +70,7 @@ When deploying or editing an application:
 
 ```yaml
 # Inject from multiple ConfigMaps in one container
+
 envFrom:
   - configMapRef:
       name: app-config          # Application settings
@@ -101,4 +102,4 @@ kubectl rollout restart deployment/my-app --namespace=production
 
 ## Conclusion
 
-Injecting ConfigMaps as environment variables is the most straightforward way to configure Kubernetes applications. Portainer's UI makes the process visual — just select the ConfigMap and the keys, and Portainer handles the YAML generation.
+Injecting ConfigMaps as environment variables is the most straightforward way to configure Kubernetes applications. Portainer's UI makes the process visual - just select the ConfigMap and the keys, and Portainer handles the YAML generation.

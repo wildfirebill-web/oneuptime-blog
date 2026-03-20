@@ -16,6 +16,7 @@ The first step is to boot into a working kernel from the GRUB menu:
 
 ```bash
 # At the GRUB boot screen, select "Advanced options" or
+
 # press 'e' to edit the default entry
 
 # If GRUB is hidden, press Esc or hold Shift during boot

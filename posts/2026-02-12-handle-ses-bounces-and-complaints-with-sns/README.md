@@ -28,6 +28,7 @@ First, create SNS topics for each notification type. Keeping them separate makes
 
 ```bash
 # Create topics for bounces, complaints, and deliveries
+
 aws sns create-topic --name ses-bounces
 aws sns create-topic --name ses-complaints
 aws sns create-topic --name ses-deliveries

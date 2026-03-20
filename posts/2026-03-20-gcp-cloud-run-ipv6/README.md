@@ -8,7 +8,7 @@ Description: Configure Google Cloud Run services to accept IPv6 client connectio
 
 ## Introduction
 
-Cloud Run services do not directly expose IPv6 addresses — they receive traffic through Google's global infrastructure. To serve IPv6 clients, you place a Global HTTP(S) Load Balancer in front of Cloud Run using a Serverless Network Endpoint Group (NEG). The load balancer holds the IPv6 VIP and forwards requests to Cloud Run. For outbound IPv6 connectivity from Cloud Run, use VPC egress with a dual-stack VPC.
+Cloud Run services do not directly expose IPv6 addresses - they receive traffic through Google's global infrastructure. To serve IPv6 clients, you place a Global HTTP(S) Load Balancer in front of Cloud Run using a Serverless Network Endpoint Group (NEG). The load balancer holds the IPv6 VIP and forwards requests to Cloud Run. For outbound IPv6 connectivity from Cloud Run, use VPC egress with a dual-stack VPC.
 
 ## Create Cloud Run Service with IPv6 Frontend
 
@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Step 1: Deploy Cloud Run service
+
 gcloud run deploy web-service \
     --project="$PROJECT" \
     --region="$REGION" \

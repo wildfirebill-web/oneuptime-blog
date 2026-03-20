@@ -33,6 +33,7 @@ This guide focuses on Open Source and Container scanning.
 
 ```bash
 # npm (works across platforms)
+
 npm install -g snyk
 
 # macOS with Homebrew

@@ -16,6 +16,7 @@ AWS Route 53 fully supports IPv6 through AAAA record types and ALIAS records tha
 ZONE_ID="/hostedzone/ABCDEFGHIJKLMN"
 
 # Create AAAA record for a static IPv6 address
+
 aws route53 change-resource-record-sets \
     --hosted-zone-id "$ZONE_ID" \
     --change-batch '{
@@ -179,4 +180,4 @@ aws route53 list-resource-record-sets \
 
 ## Conclusion
 
-Route 53 AAAA records are the foundation of IPv6 DNS — create them alongside A records for every dual-stack service. ALIAS records for AWS resources (ALB, NLB, CloudFront) automatically resolve to the correct IPv4 or IPv6 address based on the resource's configuration. Use latency-based, geolocation, and weighted routing policies with AAAA records just as you would with A records. Route 53 health checks support IPv6 endpoints, enabling automatic failover for IPv6 services.
+Route 53 AAAA records are the foundation of IPv6 DNS - create them alongside A records for every dual-stack service. ALIAS records for AWS resources (ALB, NLB, CloudFront) automatically resolve to the correct IPv4 or IPv6 address based on the resource's configuration. Use latency-based, geolocation, and weighted routing policies with AAAA records just as you would with A records. Route 53 health checks support IPv6 endpoints, enabling automatic failover for IPv6 services.

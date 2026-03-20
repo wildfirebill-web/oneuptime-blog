@@ -42,6 +42,7 @@ Register your automotive clusters with ArgoCD using labels that reflect the depl
 
 ```yaml
 # Register cloud clusters
+
 apiVersion: v1
 kind: Secret
 metadata:

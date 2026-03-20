@@ -29,6 +29,7 @@ The most common mistake is forgetting to set the `DATASTORE_TYPE` environment va
 
 ```bash
 # WRONG: Missing datastore type (may default to etcd)
+
 calicoctl get nodes
 # Error: connection to etcd failed
 

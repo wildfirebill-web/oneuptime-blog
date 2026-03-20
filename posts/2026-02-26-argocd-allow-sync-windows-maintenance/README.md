@@ -231,6 +231,7 @@ After configuring maintenance windows, verify they work as expected.
 
 ```bash
 # List all windows for the project
+
 argocd proj windows list production
 
 # Check if sync is currently allowed

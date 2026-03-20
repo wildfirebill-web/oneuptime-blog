@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NTP, NTP Pool, IPv6, Time Synchronization, chrony, ntpd
+Tags: NTP, NTP Pool, IPv6, Time Synchronization, Chrony, ntpd
 
 Description: Configure your systems to use the NTP Pool Project servers over IPv6, including selecting IPv6-specific pool zones and verifying IPv6 connectivity to pool servers.
 
@@ -14,8 +14,9 @@ The NTP Pool Project (pool.ntp.org) is a global network of thousands of voluntee
 
 The NTP Pool Project provides IPv6-specific zones:
 
-```
+```text
 # Global IPv6 pool
+
 2.pool.ntp.org           # AAAA records (IPv6) plus A records
 ipv6.pool.ntp.org        # IPv6-only pool
 

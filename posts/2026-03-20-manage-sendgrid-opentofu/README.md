@@ -31,6 +31,7 @@ provider "sendgrid" {
 
 ```hcl
 # API key with restricted permissions for application use
+
 resource "sendgrid_api_key" "app_transactional" {
   name = "app-transactional-${var.environment}"
 

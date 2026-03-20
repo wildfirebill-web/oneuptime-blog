@@ -56,6 +56,7 @@ ipa user-show jsmith --all
 
 ```bash
 # Find all users
+
 ipa user-find
 
 # Search by name

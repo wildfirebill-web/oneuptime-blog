@@ -45,6 +45,7 @@ flowchart TD
 
 ```ini
 # inventory/kafka.ini
+
 [kafka_brokers]
 kafka-1 ansible_host=10.0.8.10 kafka_broker_id=1
 kafka-2 ansible_host=10.0.8.11 kafka_broker_id=2

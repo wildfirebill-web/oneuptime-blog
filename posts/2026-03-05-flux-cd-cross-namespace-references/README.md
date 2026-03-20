@@ -38,6 +38,7 @@ To reference a source in another namespace, you specify the `namespace` field in
 
 ```yaml
 # Kustomization in team-a namespace referencing a GitRepository in flux-system
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

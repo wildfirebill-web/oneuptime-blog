@@ -21,6 +21,7 @@ When a Longhorn replica fails or a new replica needs to be built (due to scaling
 
 ```bash
 # Check volume robustness - degraded means rebuilding or missing replicas
+
 kubectl get volumes.longhorn.io -n longhorn-system \
   -o custom-columns="NAME:.metadata.name,STATE:.status.state,ROBUSTNESS:.status.robustness"
 

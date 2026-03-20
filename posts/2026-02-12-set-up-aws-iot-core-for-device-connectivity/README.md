@@ -40,6 +40,7 @@ A Thing is IoT Core's representation of your physical device. Start by creating 
 
 ```bash
 # Create a thing in IoT Core
+
 aws iot create-thing \
     --thing-name "temperature-sensor-001" \
     --thing-type-name "TemperatureSensor" \

@@ -36,6 +36,7 @@ CloudWatch Synthetics canaries are Lambda functions that run on a schedule. You 
 
 ```yaml
 # CloudFormation template for canary infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   CanaryBucket:

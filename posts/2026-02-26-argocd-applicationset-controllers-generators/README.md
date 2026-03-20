@@ -44,6 +44,7 @@ The ApplicationSet controller runs as part of the ArgoCD installation (bundled s
 
 ```bash
 # Check if the ApplicationSet controller is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/component=applicationset-controller
 
 # Check controller logs

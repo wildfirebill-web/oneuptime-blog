@@ -22,6 +22,7 @@ The simplest installation uses the standard channel, which includes stable and g
 
 ```bash
 # Install the latest stable Gateway API CRDs
+
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.0.0/standard-install.yaml
 
 # Verify installation

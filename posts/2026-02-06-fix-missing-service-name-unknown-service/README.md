@@ -163,6 +163,7 @@ Or check the Collector logs:
 
 ```bash
 # Enable debug logging in the Collector
+
 service:
   telemetry:
     logs:

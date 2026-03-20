@@ -46,6 +46,7 @@ def normalize_ipv6(raw: str) -> str | None:
         return None
 
 # Test cases
+
 test_cases = [
     "2001:0DB8:0000:0000:0000:0000:0000:0001",  # Full form
     "2001:db8::1",                               # Already compressed
@@ -53,7 +54,7 @@ test_cases = [
     "::FFFF:192.168.1.1",                        # IPv4-mapped (uppercase)
     "fe80::1%eth0",                              # Link-local with zone ID
     "::1",                                       # Loopback
-    "192.168.1.1",                               # IPv4 (not IPv6 — returns None)
+    "192.168.1.1",                               # IPv4 (not IPv6 - returns None)
 ]
 
 for addr in test_cases:
@@ -166,4 +167,4 @@ def normalize_log_record(record: dict[str, Any]) -> dict[str, Any]:
 
 ## Conclusion
 
-Normalize IPv6 addresses at the earliest point in the log pipeline — ideally in the log collection agent (Fluent Bit, Vector) rather than at query time. The normalization steps are: strip zone IDs (`%eth0`), extract from URI brackets (`[addr]:port`), strip whitespace, then apply `ipaddress.ip_address()` or equivalent to produce RFC 5952 canonical form. Store the `ip_version` alongside the normalized IP for efficient filtering. Normalizing IPv4-mapped addresses (`::ffff:192.168.1.1`) ensures they are consistently recognized as IPv6 rather than sometimes matching IPv4-only filters.
+Normalize IPv6 addresses at the earliest point in the log pipeline - ideally in the log collection agent (Fluent Bit, Vector) rather than at query time. The normalization steps are: strip zone IDs (`%eth0`), extract from URI brackets (`[addr]:port`), strip whitespace, then apply `ipaddress.ip_address()` or equivalent to produce RFC 5952 canonical form. Store the `ip_version` alongside the normalized IP for efficient filtering. Normalizing IPv4-mapped addresses (`::ffff:192.168.1.1`) ensures they are consistently recognized as IPv6 rather than sometimes matching IPv4-only filters.

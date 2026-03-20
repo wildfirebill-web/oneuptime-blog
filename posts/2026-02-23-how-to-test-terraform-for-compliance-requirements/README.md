@@ -36,6 +36,7 @@ variables {
 }
 
 # Compliance: All S3 buckets must have encryption enabled
+
 run "s3_encryption_enabled" {
   command = plan
 

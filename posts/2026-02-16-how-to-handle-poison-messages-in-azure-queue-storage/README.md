@@ -50,6 +50,7 @@ queue_client = QueueClient.from_connection_string(
 )
 
 # Receive messages from the queue
+
 messages = queue_client.receive_messages(visibility_timeout=30)
 
 for message in messages:

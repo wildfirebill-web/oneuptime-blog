@@ -423,6 +423,7 @@ module.exports = {
 
 ```yaml
 # docker-compose.test.yml
+
 version: '3.8'
 services:
   test-db:

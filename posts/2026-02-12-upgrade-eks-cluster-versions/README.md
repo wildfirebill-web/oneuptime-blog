@@ -36,6 +36,7 @@ flowchart LR
 
 ```bash
 # Check current cluster version
+
 aws eks describe-cluster --name my-cluster \
   --query "cluster.version" --output text
 

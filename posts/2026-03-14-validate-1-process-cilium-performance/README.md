@@ -63,6 +63,7 @@ echo "PASS: All runs above minimum threshold"
 # validate-cpu-isolation.sh
 
 # Check pod has exclusive CPUs
+
 CPUSET=$(kubectl exec single-process-app -- cat /sys/fs/cgroup/cpuset/cpuset.cpus)
 echo "Pod CPUs: $CPUSET"
 

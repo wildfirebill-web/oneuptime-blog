@@ -120,6 +120,7 @@ For deeper directory structures, use glob patterns to match nested directories.
 
 ```yaml
 # Repository structure:
+
 # teams/
 #   frontend/
 #     apps/

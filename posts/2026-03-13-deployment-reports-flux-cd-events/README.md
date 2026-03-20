@@ -29,6 +29,7 @@ Flux emits different event types that map to deployment lifecycle stages:
 
 ```bash
 # View the event types Flux generates
+
 kubectl get events -n flux-system \
   -o jsonpath='{range .items[*]}{.reason}{"\n"}{end}' \
   | sort -u

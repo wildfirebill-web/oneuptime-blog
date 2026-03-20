@@ -18,6 +18,7 @@ Without `delegate_facts`, gathering facts on the database server from an app ser
 
 ```yaml
 # without-delegate-facts.yml - Showing the default (confusing) behavior
+
 ---
 - name: Show default fact assignment behavior
   hosts: appservers

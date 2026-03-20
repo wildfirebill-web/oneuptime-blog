@@ -8,7 +8,7 @@ Description: Learn how to provision a MySQL RDS instance with parameter groups, 
 
 ---
 
-AWS RDS MySQL provides a managed relational database with automated patching, backups, and Multi-AZ failover. OpenTofu lets you declare the entire MySQL stack — from networking to parameter tuning — as reproducible code.
+AWS RDS MySQL provides a managed relational database with automated patching, backups, and Multi-AZ failover. OpenTofu lets you declare the entire MySQL stack - from networking to parameter tuning - as reproducible code.
 
 ---
 

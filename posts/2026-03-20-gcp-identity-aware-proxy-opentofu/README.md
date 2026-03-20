@@ -14,6 +14,7 @@ GCP Identity-Aware Proxy (IAP) controls access to your applications and VMs base
 
 ```hcl
 # main.tf - Enable IAP API
+
 resource "google_project_service" "iap" {
   service = "iap.googleapis.com"
 }

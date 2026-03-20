@@ -36,6 +36,7 @@ calicoctl ipam check 2>/dev/null | head -30
 
 ```bash
 # Run IPAM check
+
 calicoctl ipam check 2>/dev/null
 
 # If leaks found, release them

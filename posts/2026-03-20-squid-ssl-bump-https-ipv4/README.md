@@ -16,6 +16,7 @@ Generate a local CA certificate for Squid to sign bumped connections:
 
 ```bash
 # Generate CA key and certificate
+
 openssl req -new -newkey rsa:4096 -sha256 -days 3650 -nodes -x509 \
   -subj "/C=US/O=Corporate CA/CN=Squid Proxy CA" \
   -keyout /etc/squid/ssl/squid.key \
@@ -114,4 +115,4 @@ sudo tail -f /var/log/squid/cache.log | grep ssl
 
 ## Conclusion
 
-Squid SSL Bump enables HTTPS inspection by generating per-site certificates signed by a trusted CA. Deploy the CA certificate to client browsers, configure `ssl_bump peek/splice/bump` rules to control which sites are intercepted, and always create an exclusion list for sensitive financial and healthcare sites. SSL Bump has significant privacy and legal implications—use only on networks where users have given informed consent.
+Squid SSL Bump enables HTTPS inspection by generating per-site certificates signed by a trusted CA. Deploy the CA certificate to client browsers, configure `ssl_bump peek/splice/bump` rules to control which sites are intercepted, and always create an exclusion list for sensitive financial and healthcare sites. SSL Bump has significant privacy and legal implications-use only on networks where users have given informed consent.

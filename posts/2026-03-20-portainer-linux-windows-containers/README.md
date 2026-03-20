@@ -42,6 +42,7 @@ Docker on Windows supports two container modes: Linux containers (via WSL2 or Hy
 
 ```powershell
 # Switch to Windows containers
+
 & "C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon
 
 # Verify current mode
@@ -182,7 +183,7 @@ services:
 
 ## Best Practices
 
-1. **Default to Linux containers** for most workloads — better image availability and smaller sizes
+1. **Default to Linux containers** for most workloads - better image availability and smaller sizes
 2. **Only switch to Windows containers** when you specifically need Windows OS APIs or .NET Framework
 3. **Use a Linux-based Portainer server** with remote agents for Windows hosts
 4. **Document your workflows** for teams that need to switch modes

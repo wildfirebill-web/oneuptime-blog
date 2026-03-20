@@ -1,4 +1,4 @@
-# How to Set Up Split DNS for Portainer Services
+# How to Set Up Split DNS for Portainer Services - Services
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure split DNS so your Portainer services resolve
 
 ---
 
-Split DNS (also called split-horizon DNS) lets the same hostname resolve differently depending on where the query originates. For Portainer services, this means internal clients hit your server directly on the LAN IP while external clients go through your public IP and reverse proxy — reducing latency, avoiding hairpin NAT, and keeping internal traffic off the internet.
+Split DNS (also called split-horizon DNS) lets the same hostname resolve differently depending on where the query originates. For Portainer services, this means internal clients hit your server directly on the LAN IP while external clients go through your public IP and reverse proxy - reducing latency, avoiding hairpin NAT, and keeping internal traffic off the internet.
 
 ---
 
@@ -41,6 +41,7 @@ This guide uses **dnsmasq** as it's lightweight and easy to configure.
 
 ```bash
 # Install dnsmasq on your DNS server (Ubuntu/Debian)
+
 sudo apt update && sudo apt install -y dnsmasq
 
 # Stop systemd-resolved if it conflicts on port 53
@@ -88,8 +89,8 @@ nslookup portainer.example.com 127.0.0.1
 
 In your domain registrar or Cloudflare DNS, create public records pointing to your external IP.
 
-```
-# Public DNS (e.g., Cloudflare) — resolves to your public IP
+```text
+# Public DNS (e.g., Cloudflare) - resolves to your public IP
 portainer.example.com   A   203.0.113.10
 app1.example.com        A   203.0.113.10
 app2.example.com        A   203.0.113.10

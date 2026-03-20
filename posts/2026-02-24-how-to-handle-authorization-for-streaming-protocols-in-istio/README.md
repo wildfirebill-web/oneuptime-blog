@@ -188,6 +188,7 @@ This means that revoking access requires terminating existing connections. You c
 
 ```bash
 # Force close all connections on a pod (use with caution)
+
 kubectl exec -n backend deployment/ws-service -c istio-proxy -- \
   curl -X POST localhost:15000/drain_listeners
 ```

@@ -29,6 +29,7 @@ There are several ways to install tfsec:
 
 ```bash
 # macOS with Homebrew
+
 brew install tfsec
 
 # Linux (download binary)

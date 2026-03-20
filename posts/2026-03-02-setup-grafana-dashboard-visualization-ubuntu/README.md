@@ -16,6 +16,7 @@ Grafana maintains their own APT repository for Ubuntu:
 
 ```bash
 # Install required packages
+
 sudo apt update
 sudo apt install -y apt-transport-https software-properties-common wget
 

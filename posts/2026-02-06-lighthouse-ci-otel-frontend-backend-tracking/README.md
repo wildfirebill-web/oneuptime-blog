@@ -51,6 +51,7 @@ After Lighthouse CI runs, parse the results and push them as OpenTelemetry metri
 
 ```python
 # lighthouse_to_otel.py
+
 import json
 import glob
 from opentelemetry import metrics

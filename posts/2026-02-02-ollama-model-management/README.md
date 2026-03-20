@@ -66,6 +66,7 @@ Download a model using its name from the registry.
 
 ```bash
 # Pull the latest version of Llama 3.2
+
 # Ollama automatically selects an appropriate size based on your hardware
 ollama pull llama3.2
 ```

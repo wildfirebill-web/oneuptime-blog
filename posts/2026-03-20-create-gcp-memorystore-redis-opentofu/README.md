@@ -95,6 +95,7 @@ resource "google_redis_instance" "ha" {
 
 ```hcl
 # Required for PRIVATE_SERVICE_ACCESS connect mode
+
 resource "google_compute_global_address" "private_ip_alloc" {
   name          = "memorystore-private-ip"
   purpose       = "VPC_PEERING"

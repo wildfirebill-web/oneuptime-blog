@@ -68,6 +68,7 @@ Install the required dependencies for a Node.js environment:
 
 ```bash
 # Core OpenTelemetry packages for SDK initialization and tracing
+
 npm install @opentelemetry/sdk-node \
             @opentelemetry/api \
             @opentelemetry/sdk-trace-node \

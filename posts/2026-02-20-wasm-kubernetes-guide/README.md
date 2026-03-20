@@ -38,6 +38,7 @@ SpinKube is the most mature solution for running WASM workloads on Kubernetes. I
 
 ```bash
 # Install cert-manager (required by SpinKube)
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.yaml
 kubectl wait --for=condition=Available --timeout=300s deployment/cert-manager -n cert-manager
 

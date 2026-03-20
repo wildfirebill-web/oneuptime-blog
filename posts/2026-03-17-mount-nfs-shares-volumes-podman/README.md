@@ -18,6 +18,7 @@ NFS (Network File System) mounts let containers access remote storage over the n
 
 ```bash
 # Install NFS client utilities
+
 # On Fedora/RHEL
 sudo dnf install nfs-utils -y
 

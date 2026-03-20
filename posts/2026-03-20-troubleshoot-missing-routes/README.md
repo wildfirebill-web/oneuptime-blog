@@ -14,6 +14,7 @@ A missing route is one of the most common networking problems. Traffic to a dest
 
 ```bash
 # Check the main routing table
+
 ip route show
 
 # Search for a specific prefix
@@ -48,7 +49,7 @@ cat /etc/netplan/*.yaml | grep -A5 "routes"
 ## Step 3: OSPF Route Missing
 
 ```bash
-# Check OSPF neighbor state — must be FULL for route exchange
+# Check OSPF neighbor state - must be FULL for route exchange
 vtysh -c "show ip ospf neighbor"
 
 # Check if OSPF has the route in its own database

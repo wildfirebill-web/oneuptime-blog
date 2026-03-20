@@ -39,6 +39,7 @@ flowchart LR
 
 ```bash
 # Simple tmpfs mount
+
 docker run --tmpfs /tmp nginx
 
 # With options

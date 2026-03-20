@@ -83,6 +83,7 @@ Static URLs work for simple setups, but production systems need dynamic routing 
 
 ```yaml
 # alerting-config.yaml
+
 alerts:
   - name: high_latency
     expr: histogram_quantile(0.99, http_request_duration_seconds_bucket) > 0.5

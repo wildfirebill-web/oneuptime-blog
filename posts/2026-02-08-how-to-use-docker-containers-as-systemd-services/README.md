@@ -20,6 +20,7 @@ Create a unit file for a web application:
 
 ```ini
 # /etc/systemd/system/myapp.service
+
 # Manages the main web application Docker container
 
 [Unit]

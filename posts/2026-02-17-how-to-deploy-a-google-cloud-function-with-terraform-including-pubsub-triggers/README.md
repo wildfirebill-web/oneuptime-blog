@@ -18,6 +18,7 @@ Enable the required APIs:
 
 ```hcl
 # apis.tf - Required APIs for Cloud Functions and Pub/Sub
+
 resource "google_project_service" "cloudfunctions" {
   project = var.project_id
   service = "cloudfunctions.googleapis.com"

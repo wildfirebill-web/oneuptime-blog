@@ -24,6 +24,7 @@ This "find or add" behavior is what makes it ideal for managing configuration se
 
 ```yaml
 # If a line starting with "MAX_CONN=" exists, replace it.
+
 # If it does not exist, add it at the end.
 - name: Set max connections
   ansible.builtin.lineinfile:

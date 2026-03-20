@@ -12,7 +12,7 @@ When a router advertises multiple prefixes in its Router Advertisements, SLAAC-c
 
 ## How Multiple Prefixes Arise
 
-```
+```nginx
 Scenarios with Multiple IPv6 Prefixes:
 
 1. Renumbering (old + new prefix):
@@ -44,6 +44,7 @@ Scenarios with Multiple IPv6 Prefixes:
 
 ```bash
 # Router advertising two prefixes (radvd config):
+
 # interface eth1 {
 #     AdvSendAdvert on;
 #     prefix 2001:db8:a::/64 {
@@ -72,7 +73,7 @@ ip -6 addr show eth0
 
 ## Source Address Selection with Multiple Prefixes
 
-```
+```text
 RFC 6724 Source Address Selection Rules:
 
 When multiple source addresses exist for an outbound connection,

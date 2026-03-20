@@ -1,4 +1,4 @@
-# How to Schedule Workloads on Windows Nodes in Rancher
+# How to Schedule Workloads on Windows Nodes in Rancher - Workloads Nodes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -54,6 +54,7 @@ spec:
 
 ```yaml
 # Apply taints to Windows nodes
+
 # kubectl taint node win-node-1 os=windows:NoSchedule
 
 # Add toleration to Windows workloads

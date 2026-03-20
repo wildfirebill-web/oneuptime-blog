@@ -46,6 +46,7 @@ If you prefer downloading directly without running a script, grab the tarball fr
 
 ```bash
 # Linux amd64
+
 wget https://github.com/istio/istio/releases/download/1.24.0/istio-1.24.0-linux-amd64.tar.gz
 tar -xzf istio-1.24.0-linux-amd64.tar.gz
 

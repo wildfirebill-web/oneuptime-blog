@@ -26,6 +26,7 @@ GSConnect is available through the GNOME Extensions website or via the command l
 
 ```bash
 # Install the GNOME Shell browser extension connector
+
 sudo apt install gnome-shell-extension-manager -y
 # or
 sudo apt install chrome-gnome-shell -y

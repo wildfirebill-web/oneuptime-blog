@@ -94,6 +94,7 @@ The following command logs you into Pulumi Cloud and sets it as your default bac
 
 ```bash
 # Login to Pulumi Cloud
+
 pulumi login
 
 # Verify your login status

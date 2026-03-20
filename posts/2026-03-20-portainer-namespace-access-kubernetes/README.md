@@ -1,4 +1,4 @@
-# How to Configure Namespace-Level Access in Portainer for Kubernetes
+# How to Configure Namespace-Level Access in Portainer for Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ This enables namespace-level access control in the Portainer UI.
 
 ```bash
 # Create namespaces via Portainer or directly via kubectl
+
 kubectl create namespace backend-team
 kubectl create namespace frontend-team
 kubectl create namespace data-team
@@ -116,7 +117,7 @@ curl -s \
 # Should only show: backend-team (and default, kube-system as read-only)
 ```
 
-## Resource Quotas per Namespace
+Resource Quotas per Namespace
 
 Set resource quotas to prevent one team from consuming all cluster resources:
 

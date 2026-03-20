@@ -18,6 +18,7 @@ The attack path is straightforward. If a user has permission to create ClusterRo
 
 ```bash
 # Malicious or accidental privilege escalation
+
 kubectl create clusterrolebinding escalate-privileges \
   --clusterrole=cluster-admin \
   --user=attacker@company.com

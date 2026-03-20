@@ -52,6 +52,7 @@ ArgoCD includes a built-in export/import tool:
 
 ```bash
 # Export all ArgoCD configuration to YAML
+
 argocd admin export > argocd-backup-$(date +%Y%m%d).yaml
 
 # This exports:

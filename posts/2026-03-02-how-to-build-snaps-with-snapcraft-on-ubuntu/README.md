@@ -14,6 +14,7 @@ Snapcraft is the official build tool for snap packages. It takes your applicatio
 
 ```bash
 # Install snapcraft as a snap (the recommended way)
+
 sudo snap install snapcraft --classic
 
 # Verify installation

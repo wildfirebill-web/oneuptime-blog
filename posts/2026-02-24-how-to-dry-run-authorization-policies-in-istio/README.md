@@ -95,6 +95,7 @@ Istio exposes metrics for dry-run policy evaluations:
 
 ```promql
 # Requests that would be denied by dry-run policies
+
 sum(rate(istio_requests_total{
   destination_service_name="my-service",
   response_flags=~".*shadow_denied.*"

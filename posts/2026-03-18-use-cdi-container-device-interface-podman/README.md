@@ -20,6 +20,7 @@ Without CDI, passing a GPU to a container might look like this:
 
 ```bash
 # The old way: manual device mapping (fragile and error-prone)
+
 podman run --rm -it \
   --device /dev/nvidia0:/dev/nvidia0 \
   --device /dev/nvidiactl:/dev/nvidiactl \

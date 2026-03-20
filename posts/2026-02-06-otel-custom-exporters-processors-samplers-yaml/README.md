@@ -16,6 +16,7 @@ You can define multiple processors in your trace pipeline, each with its own exp
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 tracer_provider:

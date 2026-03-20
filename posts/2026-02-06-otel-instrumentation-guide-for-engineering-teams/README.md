@@ -105,6 +105,7 @@ Many teams skip this section and then spend days debugging broken traces. Explai
 
 ```python
 # When calling another service via HTTP, context propagates automatically
+
 # through the W3C Trace Context headers (traceparent, tracestate).
 # No manual action needed if you use the OpenTelemetry HTTP instrumentation.
 

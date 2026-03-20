@@ -171,6 +171,7 @@ Configure your pod to give enough time for graceful shutdown:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

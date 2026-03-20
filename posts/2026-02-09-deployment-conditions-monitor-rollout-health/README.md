@@ -36,6 +36,7 @@ View conditions with kubectl:
 
 ```bash
 # Get all conditions
+
 kubectl get deployment api-server -o jsonpath='{.status.conditions[*]}' | jq
 
 # Get specific condition

@@ -16,6 +16,7 @@ Git rebase rewrites commit history by replaying your commits on top of another b
 
 ```bash
 # The error you see
+
 git rebase main
 error: cannot rebase: You have unstaged changes.
 error: Please commit or stash them.

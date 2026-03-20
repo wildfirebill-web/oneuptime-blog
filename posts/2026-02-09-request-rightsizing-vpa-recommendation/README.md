@@ -24,6 +24,7 @@ Create VPA objects in recommendation-only mode:
 
 ```yaml
 # vpa-recommendation.yaml
+
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
 metadata:

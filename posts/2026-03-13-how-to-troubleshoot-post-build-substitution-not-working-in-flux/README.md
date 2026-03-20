@@ -89,6 +89,7 @@ Flux uses `${VAR_NAME}` syntax for substitution. Common syntax mistakes include:
 
 ```yaml
 # Correct
+
 replicas: ${REPLICAS}
 
 # Wrong - missing braces

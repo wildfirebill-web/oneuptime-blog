@@ -304,6 +304,7 @@ Make sure your metrics pipeline is healthy:
 
 ```bash
 # Check collector metrics
+
 kubectl port-forward -n istio-system svc/otel-collector 8888:8888
 curl localhost:8888/metrics | grep otelcol
 

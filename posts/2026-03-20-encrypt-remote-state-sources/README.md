@@ -14,7 +14,7 @@ When using the `terraform_remote_state` data source to read state from another O
 
 If a remote state is encrypted, reading it without decryption configuration will fail:
 
-```
+```text
 Error: Failed to read remote state
   The remote state file appears to be encrypted and cannot be read.
   Configure decryption using the remote_state_data_sources block.
@@ -26,6 +26,7 @@ The source configuration writes encrypted state:
 
 ```hcl
 # networking/encryption.tf (source configuration)
+
 terraform {
   encryption {
     key_provider "aws_kms" "state_key" {

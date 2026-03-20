@@ -1,4 +1,4 @@
-# How to Override Module Calls in OpenTofu Tests
+# How to Override Module Calls in OpenTofu Tests - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -155,6 +155,7 @@ Override modules at multiple levels:
 
 ```hcl
 # Root uses module "platform"
+
 # "platform" uses module "networking"
 
 run "nested_module_override" {

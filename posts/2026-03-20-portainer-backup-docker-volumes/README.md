@@ -1,4 +1,4 @@
-# How to Back Up Docker Volumes via Portainer
+# How to Back Up Docker Volumes via Portainer - Backup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to back up Docker volumes in Portainer using temporary co
 
 ## Introduction
 
-Docker volumes contain your application's persistent data — databases, user uploads, configuration, and more. Unlike containers (which are disposable), volume data is critical and must be backed up. This guide covers practical approaches to backing up Docker volumes, from simple one-off backups to automated scheduled backups.
+Docker volumes contain your application's persistent data - databases, user uploads, configuration, and more. Unlike containers (which are disposable), volume data is critical and must be backed up. This guide covers practical approaches to backing up Docker volumes, from simple one-off backups to automated scheduled backups.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Since Docker volumes are directories on the host, the backup approach uses a tem
 
 ```bash
 # Core pattern: run a container, mount the volume + backup destination, create archive
+
 docker run --rm \
   -v source_volume:/data:ro \
   -v /backup/destination:/backup \
@@ -267,4 +268,4 @@ echo "Start your containers to use the restored data"
 
 ## Conclusion
 
-Docker volume backups are essential for data protection. The core pattern — running a temporary Alpine container to archive volume data — is simple and reliable. For production environments, implement scheduled backups using Portainer Edge Jobs or a dedicated backup container, upload to S3 for off-host storage, and regularly test your restore process. For databases, use native dump tools (pg_dump, mysqldump) rather than filesystem backups for consistency.
+Docker volume backups are essential for data protection. The core pattern - running a temporary Alpine container to archive volume data - is simple and reliable. For production environments, implement scheduled backups using Portainer Edge Jobs or a dedicated backup container, upload to S3 for off-host storage, and regularly test your restore process. For databases, use native dump tools (pg_dump, mysqldump) rather than filesystem backups for consistency.

@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, NAT, IPv4, VoIP, Gaming
 
-Description: Learn the four NAT types defined by RFC 3489 — Full Cone, Restricted Cone, Port Restricted Cone, and Symmetric — and their impact on peer-to-peer and VoIP applications.
+Description: Learn the four NAT types defined by RFC 3489 - Full Cone, Restricted Cone, Port Restricted Cone, and Symmetric - and their impact on peer-to-peer and VoIP applications.
 
 ## Why NAT Types Matter
 
 Different NAT behaviors affect:
 - **Peer-to-peer applications** (gaming, WebRTC, torrents)
-- **VoIP (SIP/RTP)** — media traversal
+- **VoIP (SIP/RTP)** - media traversal
 - **NAT traversal** (STUN, TURN, ICE)
-- **Gaming consoles** — PlayStation NAT type 1/2/3, Xbox Open/Moderate/Strict
+- **Gaming consoles** - PlayStation NAT type 1/2/3, Xbox Open/Moderate/Strict
 
 ## The Four NAT Types
 
@@ -20,7 +20,7 @@ Different NAT behaviors affect:
 
 Once a mapping `(internal IP:port → public IP:port)` is created by any outbound packet, **any external host** can send packets back to that public IP:port.
 
-```
+```text
 Inside: 192.168.1.10:5000 → Public: 203.0.113.1:10000
 Any internet host → 203.0.113.1:10000 → 192.168.1.10:5000 ✓
 ```
@@ -31,7 +31,7 @@ Any internet host → 203.0.113.1:10000 → 192.168.1.10:5000 ✓
 
 Same mapping as Full Cone, but **only** hosts that the internal client has previously sent packets to can send back.
 
-```
+```text
 Inside: 192.168.1.10:5000 sent to 8.8.8.8 → mapping created
 8.8.8.8 can now send to 203.0.113.1:10000 ✓
 1.1.1.1 cannot → dropped ✗ (unless also contacted previously)
@@ -43,7 +43,7 @@ Inside: 192.168.1.10:5000 sent to 8.8.8.8 → mapping created
 
 Like Restricted Cone, but the restriction includes both the IP **and the port** of the external host.
 
-```
+```text
 Inside sent to 8.8.8.8:80 → mapping created
 8.8.8.8:80 can reply ✓
 8.8.8.8:443 cannot (different port) ✗
@@ -55,7 +55,7 @@ Inside sent to 8.8.8.8:80 → mapping created
 
 Each unique `(destination IP, destination port)` creates a **different** external port mapping. The mapping is tied to the specific destination.
 
-```
+```text
 192.168.1.10:5000 → 8.8.8.8:80   mapped to 203.0.113.1:10001
 192.168.1.10:5000 → 1.1.1.1:80   mapped to 203.0.113.1:10002 (different!)
 ```
@@ -77,6 +77,7 @@ External hosts cannot initiate connections. STUN cannot work reliably because th
 
 ```bash
 # Install stun client
+
 apt install stun-client
 
 # Test against a STUN server

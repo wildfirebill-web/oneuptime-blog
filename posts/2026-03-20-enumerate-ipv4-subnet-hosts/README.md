@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Subnet, Networking, ipaddress, CIDR
+Tags: Python, IPv4, Subnets, Networking, Ipaddress, CIDR
 
 Description: Learn how to enumerate all host addresses in an IPv4 subnet in Python using the ipaddress module, with examples for host iteration, address generation, and subnet scanning.
 
@@ -14,6 +14,7 @@ import ipaddress
 net = ipaddress.IPv4Network("192.168.1.0/24")
 
 # .hosts() yields all addresses except network and broadcast
+
 for host in net.hosts():
     print(host)
 # 192.168.1.1
@@ -52,7 +53,7 @@ def iter_hosts(cidr: str) -> Iterator[ipaddress.IPv4Address]:
     net = ipaddress.IPv4Network(cidr, strict=False)
     yield from net.hosts()
 
-# /16 has 65534 hosts — iterate without building a list
+# /16 has 65534 hosts - iterate without building a list
 count = 0
 for host in iter_hosts("10.0.0.0/16"):
     count += 1

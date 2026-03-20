@@ -25,6 +25,7 @@ This guide provides a complete validation suite for VXLAN and IP-in-IP modes in 
 
 ```bash
 # Check configured overlay mode
+
 calicoctl get ippool default-ipv4-ippool -o yaml
 
 # Expected for VXLAN:

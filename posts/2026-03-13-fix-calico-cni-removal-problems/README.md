@@ -30,6 +30,7 @@ Manual finalizer removal should be done carefully - finalizers exist to prevent 
 
 ```bash
 # Check what's stuck
+
 kubectl get ipamblocks.crd.projectcalico.org 2>/dev/null | head
 kubectl get crd | grep calico
 ```

@@ -29,6 +29,7 @@ Any Document AI processor can detect tables, but the Form Parser and OCR Process
 
 ```bash
 # Install the required libraries
+
 pip install google-cloud-documentai pandas
 ```
 

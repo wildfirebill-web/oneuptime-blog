@@ -14,6 +14,7 @@ State files grow over time as resources accumulate. Large state files slow down 
 
 ```bash
 # Check current state file size
+
 tofu state pull | wc -c
 # Output in bytes; 1MB+ warrants attention, 10MB+ requires action
 
@@ -111,4 +112,4 @@ echo "State file size: ${STATE_SIZE} bytes - OK"
 
 ## Conclusion
 
-State file size is best managed proactively: split states by component before they get large, regularly remove orphaned resources, and monitor state size in CI. A state file over 5MB warrants splitting; over 20MB will cause noticeable performance problems. The most durable fix is architectural — properly split states prevent unbounded growth.
+State file size is best managed proactively: split states by component before they get large, regularly remove orphaned resources, and monitor state size in CI. A state file over 5MB warrants splitting; over 20MB will cause noticeable performance problems. The most durable fix is architectural - properly split states prevent unbounded growth.

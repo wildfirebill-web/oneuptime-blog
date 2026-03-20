@@ -1,4 +1,4 @@
-# Portainer vs CasaOS: Home Server OS Comparison
+# Portainer vs CasaOS: Home Server OS Comparison - Home Server
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,11 +27,11 @@ CasaOS is a home server operating system overlay that provides an app store, fil
 
 CasaOS positions itself as "the home cloud OS":
 
-- **App Store** — one-click install for popular self-hosted apps (Plex, Nextcloud, etc.)
-- **File Manager** — browser-based file management
-- **Dashboard** — system overview with resource usage
-- **Widgets** — customizable dashboard with app widgets
-- **ZimaOS** (evolved version) — targets NAS-like hardware
+- **App Store** - one-click install for popular self-hosted apps (Plex, Nextcloud, etc.)
+- **File Manager** - browser-based file management
+- **Dashboard** - system overview with resource usage
+- **Widgets** - customizable dashboard with app widgets
+- **ZimaOS** (evolved version) - targets NAS-like hardware
 
 Install CasaOS:
 
@@ -62,4 +62,4 @@ CasaOS actually supports running Portainer as an app from its app store. Many ho
 
 ## Summary
 
-CasaOS and Portainer serve different ends of the technical spectrum. CasaOS makes home server management approachable for non-technical users with its app store and file manager. Portainer gives technical users full control. They're complementary — CasaOS for consumer convenience, Portainer for power user control.
+CasaOS and Portainer serve different ends of the technical spectrum. CasaOS makes home server management approachable for non-technical users with its app store and file manager. Portainer gives technical users full control. They're complementary - CasaOS for consumer convenience, Portainer for power user control.

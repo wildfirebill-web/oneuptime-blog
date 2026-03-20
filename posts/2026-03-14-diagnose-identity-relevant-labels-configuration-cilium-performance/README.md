@@ -28,6 +28,7 @@ This guide provides the specific steps for managing identity-relevant labels con
 
 ```bash
 # View the current identity-relevant label configuration
+
 cilium config view | grep -E "^labels"
 
 # If empty, ALL labels are identity-relevant (default behavior)

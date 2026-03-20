@@ -14,6 +14,7 @@ Atlantis integrates with GitHub, GitLab, and Bitbucket to run `tofu plan` when P
 
 ```yaml
 # atlantis.yaml - Repository-level configuration
+
 version: 3
 
 projects:

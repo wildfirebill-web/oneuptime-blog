@@ -27,6 +27,7 @@ If Terraform runs on an EC2 instance, attach an IAM instance profile:
 
 ```hcl
 # Create the IAM role
+
 resource "aws_iam_role" "terraform" {
   name = "terraform-execution"
 

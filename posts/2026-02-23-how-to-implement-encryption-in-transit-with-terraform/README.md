@@ -18,6 +18,7 @@ Most encryption in transit starts with TLS certificates. AWS Certificate Manager
 
 ```hcl
 # Request a certificate for your domain
+
 resource "aws_acm_certificate" "main" {
   domain_name       = "example.com"
   validation_method = "DNS"

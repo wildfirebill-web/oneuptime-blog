@@ -24,6 +24,7 @@ Check the number of active time series the receiver is tracking:
 
 ```bash
 # Query the Collector's internal metrics
+
 curl -s http://localhost:8888/metrics | grep "scrape_series"
 ```
 

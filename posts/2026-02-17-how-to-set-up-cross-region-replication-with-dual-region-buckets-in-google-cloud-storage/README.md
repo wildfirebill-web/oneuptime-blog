@@ -51,6 +51,7 @@ GCS offers several predefined dual-region pairs:
 
 ```bash
 # Create a bucket in the NAM4 dual-region (Iowa + Virginia)
+
 gcloud storage buckets create gs://my-dual-region-bucket \
   --location=nam4
 ```

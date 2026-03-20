@@ -16,7 +16,7 @@ The `title` function in OpenTofu converts a string to title case, capitalizing t
 title(string)
 ```
 
-- **string** — any string value
+- **string** - any string value
 - Returns the string with the first letter of each word capitalized
 - All other letters are lowercased
 

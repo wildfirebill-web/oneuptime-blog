@@ -163,6 +163,7 @@ If the CRD is installed but with a different version, update your manifests:
 
 ```bash
 # Check available versions
+
 kubectl get crd certificates.cert-manager.io -o jsonpath='{.spec.versions[*].name}'
 ```
 

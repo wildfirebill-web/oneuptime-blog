@@ -36,6 +36,7 @@ A sensor publishes a temperature reading to `home/temp`. Any client subscribed t
 
 ```bash
 # Create directory structure for Mosquitto
+
 mkdir -p ~/mosquitto/{config,data,log}
 cd ~/mosquitto
 ```

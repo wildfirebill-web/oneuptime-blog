@@ -16,6 +16,7 @@ Add a Prometheus metrics endpoint to your application. Here's an example using t
 
 ```python
 # app.py - Flask application with custom metrics
+
 from flask import Flask
 from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTENT_TYPE_LATEST
 import time

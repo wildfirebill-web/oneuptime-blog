@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, docker-swarm, kubernetes
+Tags: Rancher, Migration, Docker-swarm, Kubernetes
 
 Description: Step-by-step guide to migrating containerized workloads from Docker Swarm to Rancher Kubernetes.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

@@ -24,6 +24,7 @@ Rook manages CephFS through the `CephFilesystem` CRD, and the CSI driver exposes
 
 ```yaml
 # infrastructure/storage/rook-ceph/filesystem.yaml
+
 apiVersion: ceph.rook.io/v1
 kind: CephFilesystem
 metadata:

@@ -14,6 +14,7 @@ The Portainer data volume contains everything: the BoltDB database (users, stack
 
 ```bash
 # Inspect the Portainer data volume contents
+
 docker run --rm -v portainer_data:/data alpine ls -la /data
 
 # Typical contents:

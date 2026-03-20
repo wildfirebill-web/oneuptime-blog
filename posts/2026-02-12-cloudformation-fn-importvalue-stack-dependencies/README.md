@@ -32,6 +32,7 @@ First, the exporting stack needs an `Output` with an `Export` block:
 
 ```yaml
 # network-stack.yaml - Exports VPC and subnet information
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Shared network infrastructure
 

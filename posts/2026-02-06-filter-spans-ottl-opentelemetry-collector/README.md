@@ -44,6 +44,7 @@ Here is a basic configuration filtering health check spans:
 
 ```yaml
 # Basic span filtering configuration
+
 processors:
   filter:
     # Define spans to exclude

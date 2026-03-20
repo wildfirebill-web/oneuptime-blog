@@ -56,6 +56,7 @@ Install the core LlamaIndex package along with the OpenAI integration for embedd
 
 ```bash
 # Install core LlamaIndex and OpenAI integration
+
 pip install llama-index llama-index-llms-openai llama-index-embeddings-openai
 
 # Optional: Install additional integrations as needed

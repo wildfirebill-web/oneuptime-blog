@@ -30,8 +30,8 @@ Benefits:
 
 Use ULA (Unique Local Addresses, fc00::/7) for management networks:
 
-```
-Management network:     fd00:mgmt::/48   (ULA — never routed to internet)
+```text
+Management network:     fd00:mgmt::/48   (ULA - never routed to internet)
 Router loopbacks:       fd00:mgmt:0::/64
 Switch management:      fd00:mgmt:1::/64
 Server IPMI/BMC:        fd00:mgmt:2::/64
@@ -42,7 +42,7 @@ ULA ensures management addresses can never appear in the global routing table.
 
 ## Cisco: Management VRF for IPv6
 
-```
+```text
 ! Create a management VRF
 vrf definition MGMT
  address-family ipv6
@@ -69,8 +69,9 @@ ipv6 access-list IPv6-MGMT-ACL
 
 ## Juniper: Routing Instance for Management
 
-```
+```text
 # JunOS: Use the dedicated fxp0 management interface
+
 set interfaces fxp0 unit 0 family inet6 address fd00:mgmt:0::1/64
 
 # Restrict SSH to management interface only
@@ -138,7 +139,7 @@ ip6tables -A INPUT -p tcp --dport 830 -j DROP
 
 On routers, use Control Plane Policing to rate-limit traffic destined for the router CPU:
 
-```
+```text
 ! Cisco: CoPP for IPv6 management traffic
 policy-map COPP-POLICY
  class MGMT-TRAFFIC

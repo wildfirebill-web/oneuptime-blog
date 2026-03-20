@@ -17,6 +17,7 @@ PORTAINER_URL="https://portainer.example.com"
 ADMIN_TOKEN="admin_api_token"
 
 # Create a user for tenant A
+
 curl -s -X POST \
   -H "Authorization: Bearer $ADMIN_TOKEN" \
   -H "Content-Type: application/json" \
@@ -218,4 +219,4 @@ curl -s -X PUT \
 
 ## Conclusion
 
-Multi-tenancy in Portainer ranges from simple user-to-environment access restrictions (CE) to full team-based RBAC with security policies (Business Edition). The most important isolation principle is giving each tenant their own environment (Docker host or Swarm cluster) — this provides complete separation at the infrastructure level. When sharing a host, enforce network isolation through dedicated subnets per team and disable privileged mode for standard users. Regular audit of team memberships and environment access policies ensures that access rights stay aligned with organizational changes.
+Multi-tenancy in Portainer ranges from simple user-to-environment access restrictions (CE) to full team-based RBAC with security policies (Business Edition). The most important isolation principle is giving each tenant their own environment (Docker host or Swarm cluster) - this provides complete separation at the infrastructure level. When sharing a host, enforce network isolation through dedicated subnets per team and disable privileged mode for standard users. Regular audit of team memberships and environment access policies ensures that access rights stay aligned with organizational changes.

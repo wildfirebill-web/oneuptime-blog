@@ -72,6 +72,7 @@ def create_response_play(api_key, name, description, actions):
     return response.json()
 
 # Example: Create a major incident response play
+
 create_response_play(
     api_key="YOUR_API_KEY",
     name="Major Incident Response",

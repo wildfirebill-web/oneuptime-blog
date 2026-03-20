@@ -30,6 +30,7 @@ GDPR Article 44 restricts cross-border transfers of personal data. Declare data 
 
 ```yaml
 # clusters/eu-west-1/flux-system/data-residency.yaml
+
 # This cluster is designated for EU personal data processing only
 apiVersion: v1
 kind: ConfigMap

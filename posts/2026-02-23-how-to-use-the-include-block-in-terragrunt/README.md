@@ -20,6 +20,7 @@ At its simplest, `include` tells Terragrunt to merge another configuration file 
 # live/dev/vpc/terragrunt.hcl
 
 # Include the root configuration
+
 include "root" {
   path = find_in_parent_folders()
 }

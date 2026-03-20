@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, upgrade, docker-swarm, update
+Tags: Portainer, Upgrade, Docker-swarm, Updates
 
 Description: A guide to upgrading Portainer CE deployed on Docker Swarm, covering service updates and maintaining Portainer agent connectivity.
 
@@ -20,6 +20,7 @@ In a Docker Swarm deployment, Portainer typically runs as:
 
 ```bash
 # On the manager node where Portainer is running
+
 # Find which node is running Portainer
 docker service ps portainer --filter desired-state=running
 

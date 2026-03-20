@@ -28,6 +28,7 @@ For public repositories, you only need the URL:
 
 ```yaml
 # repositories/public-repo.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

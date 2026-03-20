@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS
 
 Description: Learn how to configure the OpenTofu S3 backend with native state locking using S3 conditional writes, eliminating the need for a separate DynamoDB table.
 
@@ -30,7 +30,7 @@ terraform {
 
 Native S3 locking uses S3's conditional writes (`If-None-Match: *`) to create a lock file atomically:
 
-```
+```text
 Lock file: s3://my-tofu-state/production/terraform.tfstate.tflock
 ```
 
@@ -97,6 +97,7 @@ If a lock gets stuck (e.g., a run crashed):
 
 ```bash
 # List the lock file
+
 aws s3 ls s3://my-tofu-state/production/terraform.tfstate.tflock
 
 # Remove the stuck lock

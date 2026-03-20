@@ -72,6 +72,7 @@ Create a configuration file that tells Flask where to store the SQLite database 
 
 ```python
 # config.py
+
 # Flask configuration with SQLite database settings
 import os
 

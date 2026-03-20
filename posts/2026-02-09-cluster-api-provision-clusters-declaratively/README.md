@@ -22,6 +22,7 @@ Start by installing clusterctl, the CLI tool for managing Cluster API:
 
 ```bash
 # Download the latest clusterctl binary
+
 curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.6.0/clusterctl-linux-amd64 \
   -o clusterctl
 

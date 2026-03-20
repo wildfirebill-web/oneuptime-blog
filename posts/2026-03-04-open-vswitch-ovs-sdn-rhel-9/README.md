@@ -25,6 +25,7 @@ graph TD
 
 ```bash
 # Install OVS packages
+
 sudo dnf install -y openvswitch3.1
 
 # Start and enable the OVS service

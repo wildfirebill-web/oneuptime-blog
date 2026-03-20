@@ -32,6 +32,7 @@ The simplest way to enable cross-mesh discovery is to give each mesh's control p
 
 ```bash
 # Give cluster-west access to cluster-east's API server
+
 istioctl create-remote-secret \
   --context=cluster-east \
   --name=cluster-east | \

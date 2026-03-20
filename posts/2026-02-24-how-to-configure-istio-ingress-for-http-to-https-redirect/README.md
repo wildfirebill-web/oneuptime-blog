@@ -300,6 +300,7 @@ Test with curl (follow redirects disabled to see the 301):
 
 ```bash
 # See the redirect
+
 curl -v http://myapp.example.com/
 
 # Follow the redirect

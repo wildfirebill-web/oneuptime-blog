@@ -99,7 +99,7 @@ gantt
 ## Roadmap Template
 
 ```markdown
-# IPv6 Migration Roadmap — [Organization Name]
+# IPv6 Migration Roadmap - [Organization Name]
 
 ## Program Objectives
 - Enable IPv6 on all public-facing services by Q3 2026
@@ -140,4 +140,4 @@ gantt
 
 ## Conclusion
 
-An effective IPv6 migration roadmap follows four phases: Assessment (understand gaps), Foundation (core infrastructure), Services (application-level enablement), and Validation. Keep phases short (1-3 months each) with clear milestones to maintain momentum. Prioritize enabling IPv6 on DNS and monitoring in Phase 2 — this provides visibility before broader rollout and catches issues early without user impact.
+An effective IPv6 migration roadmap follows four phases: Assessment (understand gaps), Foundation (core infrastructure), Services (application-level enablement), and Validation. Keep phases short (1-3 months each) with clear milestones to maintain momentum. Prioritize enabling IPv6 on DNS and monitoring in Phase 2 - this provides visibility before broader rollout and catches issues early without user impact.

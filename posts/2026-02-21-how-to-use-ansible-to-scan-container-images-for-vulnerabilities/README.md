@@ -14,6 +14,7 @@ Container images can contain vulnerable software packages that attackers exploit
 
 ```yaml
 # roles/image_scanning/tasks/install_trivy.yml
+
 # Install Trivy vulnerability scanner
 - name: Download Trivy
   ansible.builtin.get_url:

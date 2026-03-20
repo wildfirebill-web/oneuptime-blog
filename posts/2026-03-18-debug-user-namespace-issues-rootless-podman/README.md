@@ -20,6 +20,7 @@ A user namespace provides UID and GID isolation. Rootless Podman maps container 
 
 ```bash
 # View your subordinate UID range
+
 cat /etc/subuid
 # Example output: youruser:100000:65536
 # Meaning: your user can map 65536 UIDs starting from 100000

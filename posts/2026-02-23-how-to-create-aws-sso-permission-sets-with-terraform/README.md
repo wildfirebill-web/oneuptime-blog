@@ -18,6 +18,7 @@ A permission set is a collection of IAM policies that you create in IAM Identity
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

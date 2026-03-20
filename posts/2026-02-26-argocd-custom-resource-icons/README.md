@@ -84,6 +84,7 @@ ArgoCD supports Font Awesome icons. You can use any icon from the Font Awesome f
 
 ```yaml
 # Common useful icons for DevOps resources
+
 data:
   # Database-related CRDs
   resource.customizations.icon.postgresql.cnpg.io_Cluster: |
@@ -140,7 +141,7 @@ base64 -i my-icon.svg | tr -d '\n'
 echo "data:image/svg+xml;base64,$(base64 -i my-icon.svg | tr -d '\n')"
 ```
 
-## Resource Customization for Operator CRDs
+Resource Customization for Operator CRDs
 
 When deploying operators through ArgoCD, adding icons for their CRDs makes the resource tree much more readable. Here is a comprehensive example for a typical production setup.
 

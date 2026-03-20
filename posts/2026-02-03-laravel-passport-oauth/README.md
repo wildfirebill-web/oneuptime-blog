@@ -42,6 +42,7 @@ Let us start by installing Passport via Composer.
 
 ```bash
 # Install Laravel Passport via Composer
+
 composer require laravel/passport
 ```
 

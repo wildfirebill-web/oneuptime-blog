@@ -18,6 +18,7 @@ The Application Insights Java agent is a standalone JAR file that you attach to 
 
 ```bash
 # Download the latest Application Insights Java agent
+
 curl -L -o applicationinsights-agent-3.4.0.jar \
   https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.0/applicationinsights-agent-3.4.0.jar
 ```

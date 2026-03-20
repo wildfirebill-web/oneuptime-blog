@@ -44,6 +44,7 @@ Configure ArgoCD Notifications to fire on each health transition.
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

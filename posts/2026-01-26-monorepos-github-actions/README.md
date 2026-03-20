@@ -36,6 +36,7 @@ Only run workflows when relevant files change:
 
 ```yaml
 # .github/workflows/api.yml
+
 name: API CI
 
 on:

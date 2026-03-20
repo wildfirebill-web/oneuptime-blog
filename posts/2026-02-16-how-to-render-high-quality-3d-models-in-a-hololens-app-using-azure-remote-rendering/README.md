@@ -38,6 +38,7 @@ The latency is typically 60-80 milliseconds, which is noticeable if you are look
 
 ```bash
 # Create an Azure Remote Rendering account
+
 az remote-rendering-account create \
   --resource-group myResourceGroup \
   --name myRenderingAccount \

@@ -16,6 +16,7 @@ The `lower` function takes a string and returns a new string with all cased lett
 
 ```hcl
 # Basic syntax
+
 lower(string)
 ```
 

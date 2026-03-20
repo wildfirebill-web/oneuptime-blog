@@ -12,6 +12,7 @@ Hubble is Cilium's built-in network observability platform. It provides real-tim
 
 ```bash
 # Enable Hubble on an existing Cilium installation
+
 cilium hubble enable
 
 # Or during initial installation

@@ -66,6 +66,7 @@ When starting a container, always apply the team label:
 
 ```bash
 # Start a container with team ownership label
+
 docker run -d \
   --name backend-api \
   --label team=backend \

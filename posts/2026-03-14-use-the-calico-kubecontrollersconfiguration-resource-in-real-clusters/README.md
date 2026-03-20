@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward KubeControllersConfigur
 
 ```bash
 # Verify current KubeControllersConfiguration resources
+
 calicoctl get kubecontrollersconfiguration -o yaml
 
 # Check the effective configuration on a specific node

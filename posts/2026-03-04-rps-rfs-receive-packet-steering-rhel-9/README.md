@@ -34,6 +34,7 @@ graph TD
 
 ```bash
 # Check how many hardware queues the NIC supports
+
 ethtool -l ens3
 
 # Check the current interrupt affinity

@@ -65,6 +65,7 @@ First, we need to create a dedicated pool for Kubernetes persistent volumes. The
 
 ```bash
 # Create an RBD pool named 'kubernetes' with 128 placement groups
+
 # Placement groups (PGs) determine data distribution across OSDs
 # Formula: Target PGs = (OSDs * 100) / replica count, rounded to power of 2
 ceph osd pool create kubernetes 128 128

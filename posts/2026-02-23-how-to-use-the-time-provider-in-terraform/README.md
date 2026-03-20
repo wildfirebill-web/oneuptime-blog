@@ -16,6 +16,7 @@ In this guide, we will explore every resource in the time provider. We will cove
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

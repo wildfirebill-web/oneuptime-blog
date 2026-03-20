@@ -30,6 +30,7 @@ Verify the current state before planning the upgrade.
 
 ```bash
 # Check k0sctl version
+
 k0sctl version
 
 # Check k0s cluster version

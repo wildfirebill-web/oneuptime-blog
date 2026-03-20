@@ -24,6 +24,7 @@ The fastest fix is reducing the number of resources Portainer must manage:
 
 ```bash
 # Remove stopped containers
+
 docker container prune -f
 
 # Remove dangling images (untagged intermediate layers)

@@ -61,6 +61,7 @@ SQS is one of the most common event sources for Lambda. Here is how to filter ba
 
 ```bash
 # Create an event source mapping with a filter for SQS
+
 aws lambda create-event-source-mapping \
   --function-name order-processor \
   --event-source-arn arn:aws:sqs:us-east-1:123456789012:all-events \

@@ -33,6 +33,7 @@ Provision a new AKS cluster with Azure CNI networking and Calico network policie
 
 ```bash
 # Create a resource group for the new cluster
+
 az group create --name myResourceGroup --location eastus
 
 # Create AKS cluster with Calico network policy enabled

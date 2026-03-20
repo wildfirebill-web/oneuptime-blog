@@ -24,6 +24,7 @@ Reference a resource by name using field refs.
 
 ```yaml
 # vpc.yaml
+
 apiVersion: ec2.aws.upbound.io/v1beta1
 kind: VPC
 metadata:

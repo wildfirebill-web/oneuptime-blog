@@ -18,6 +18,7 @@ The `-state` flag tells Terraform to use a specific file as the state:
 
 ```bash
 # Use a custom state file for plan
+
 terraform plan -state=custom.tfstate
 
 # Use a custom state file for apply

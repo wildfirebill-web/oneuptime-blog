@@ -47,6 +47,7 @@ spring:
       file-size-threshold: 2KB
 
 # Custom upload configuration
+
 upload:
   directory: ${java.io.tmpdir}/uploads
   allowed-extensions: jpg,jpeg,png,gif,pdf,doc,docx,xls,xlsx

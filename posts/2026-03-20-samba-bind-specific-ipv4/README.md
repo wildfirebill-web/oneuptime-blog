@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, IPv4, Bind, SMB, Configuration, Network
+Tags: Samba, IPv4, BIND, SMB, Configuration, Networks
 
 Description: Configure Samba's smb.conf to listen on a specific IPv4 address using the interfaces and bind interfaces only directives, restricting SMB/CIFS to a single network interface.
 
@@ -85,6 +85,7 @@ By default, Samba listens on all available network interfaces, including loopbac
 
 ```bash
 # Create directory and set permissions
+
 sudo mkdir -p /srv/samba/shared
 sudo groupadd sambausers
 sudo chgrp sambausers /srv/samba/shared

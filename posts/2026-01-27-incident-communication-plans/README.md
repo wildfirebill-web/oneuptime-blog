@@ -52,6 +52,7 @@ Before an incident occurs, identify every group that needs information during an
 
 ```yaml
 # stakeholder-map.yaml
+
 # Define your stakeholder groups and their communication preferences
 
 stakeholders:

@@ -46,6 +46,7 @@ The simplest configuration ejects backends after a specified number of consecuti
 
 ```bash
 # Configure outlier detection on a backend service
+
 gcloud compute backend-services update my-api-backend \
     --global \
     --outlier-detection=\

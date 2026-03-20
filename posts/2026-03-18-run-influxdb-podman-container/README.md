@@ -20,6 +20,7 @@ Download the official InfluxDB 2.x image.
 
 ```bash
 # Pull the latest InfluxDB 2.x image
+
 podman pull docker.io/library/influxdb:2.7
 
 # Verify the image

@@ -23,6 +23,7 @@ Download the M3DB binary:
 
 ```bash
 # Download M3DB binary
+
 VERSION="1.5.3"
 curl -Lo /tmp/m3dbnode https://github.com/m3db/m3/releases/download/v${VERSION}/m3dbnode-linux-amd64
 

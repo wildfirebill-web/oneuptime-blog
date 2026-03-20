@@ -20,6 +20,7 @@ Create the library repository:
 
 ```bash
 # Library structure
+
 jenkins-k8s-library/
 ├── vars/
 │   ├── buildDockerImage.groovy

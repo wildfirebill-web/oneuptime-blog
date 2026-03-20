@@ -51,6 +51,7 @@ Add OpenTelemetry gems alongside Delayed Job:
 # Gemfile
 
 # Background job processing
+
 gem 'delayed_job'
 gem 'delayed_job_active_record'  # or delayed_job_mongoid
 

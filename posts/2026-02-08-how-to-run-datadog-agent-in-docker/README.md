@@ -18,6 +18,7 @@ You need a Datadog account and an API key. If you do not have one, Datadog offer
 
 ```bash
 # Store your Datadog API key as an environment variable
+
 export DD_API_KEY="your-datadog-api-key-here"
 
 # Verify Docker is running
@@ -231,7 +232,7 @@ docker exec datadog-agent agent configcheck
 docker exec datadog-agent agent diagnose --include connectivity
 ```
 
-## Resource Considerations
+Resource Considerations
 
 The Datadog Agent typically uses 256-512MB of RAM and about 10% of a CPU core. With APM and log collection enabled, memory usage can climb higher. Set resource limits in your Compose file to prevent the agent from consuming too many resources.
 

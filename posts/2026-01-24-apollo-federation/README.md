@@ -43,6 +43,7 @@ For the gateway:
 
 ```bash
 # Create a new directory for the gateway
+
 mkdir apollo-gateway && cd apollo-gateway
 
 # Initialize the project

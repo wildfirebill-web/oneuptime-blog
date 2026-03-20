@@ -18,6 +18,7 @@ When you upload a model to Vertex AI, it creates a new model resource. When you 
 
 ```python
 # versioning/upload_versions.py
+
 from google.cloud import aiplatform
 
 aiplatform.init(project="my-project", location="us-central1")

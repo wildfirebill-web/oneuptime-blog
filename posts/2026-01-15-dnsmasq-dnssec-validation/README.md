@@ -83,6 +83,7 @@ If your distribution's package lacks DNSSEC support:
 
 ```bash
 # Install dependencies
+
 sudo apt install build-essential libnetfilter-conntrack-dev libidn2-dev libgmp-dev nettle-dev
 
 # Download and extract

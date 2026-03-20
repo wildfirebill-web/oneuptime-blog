@@ -16,6 +16,7 @@ Terraform automatically detects dependencies when one resource references anothe
 
 ```hcl
 # VPC must exist before subnets
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 
@@ -343,7 +344,7 @@ resource "aws_s3_bucket_versioning" "data" {
 
 ## Debugging Dependency Issues
 
-### Resource Already Exists
+Resource Already Exists
 
 When Terraform tries to create a resource that already exists, check if the dependency order ensures proper cleanup.
 

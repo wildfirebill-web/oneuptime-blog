@@ -1,4 +1,4 @@
-# How to List All Running Containers Across Environments in Portainer
+# How to List All Running Containers Across Environments in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ Use the search and filter options in Portainer:
 
 ```bash
 # Using Docker CLI equivalent
+
 docker inspect container-name
 
 # View formatted output

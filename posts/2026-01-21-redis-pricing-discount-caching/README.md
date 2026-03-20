@@ -124,6 +124,7 @@ class PriceCache:
             r.delete(*keys)
 
 # Usage
+
 cache = PriceCache()
 
 # Cache product price

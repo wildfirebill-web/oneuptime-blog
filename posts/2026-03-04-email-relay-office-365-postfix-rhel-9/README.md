@@ -55,6 +55,7 @@ If your tenant has security defaults enabled, you may need to create an app pass
 
 ```bash
 # Install Postfix and SASL support
+
 sudo dnf install -y postfix cyrus-sasl cyrus-sasl-plain
 ```
 

@@ -1,4 +1,4 @@
-# Portainer vs Caprover: PaaS Comparison
+# Portainer vs Caprover: PaaS Comparison - Paas
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ Caprover wraps Docker Swarm in a developer-friendly PaaS:
 
 ```bash
 # Install Caprover CLI
+
 npm install -g caprover
 
 # Login to your Caprover server

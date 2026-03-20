@@ -14,6 +14,7 @@ Jumbo frames are Ethernet frames with a payload larger than the standard 1500-by
 
 ```bash
 # Check current MTU of all interfaces:
+
 ip link show | grep mtu
 
 # Check if NIC supports jumbo frames:
@@ -134,7 +135,7 @@ vmstat 1 5 | awk '{print "usr:", $13, "sys:", $14}'
 
 ## Switch/Network Requirements
 
-```
+```text
 For jumbo frames to work:
 1. All NIC adapters on the path: must support 9000 MTU
 2. All switch ports: must be configured for jumbo frames
@@ -148,4 +149,4 @@ Partial jumbo support = frames get fragmented or dropped at the non-jumbo hop
 
 ## Conclusion
 
-Jumbo frames improve large-data LAN performance by reducing packet overhead and CPU interrupts. Enable with `ip link set eth0 mtu 9000` and test with `ping -M do -s 8972`. All devices on the LAN path (NICs, switches, VMs) must support the jumbo frame size. Verify with the test script before enabling in production. The performance gain is most noticeable for storage replication, backup streams, and HPC workloads — typical improvement is 5-10% throughput and a significant reduction in CPU utilization for network-intensive workloads.
+Jumbo frames improve large-data LAN performance by reducing packet overhead and CPU interrupts. Enable with `ip link set eth0 mtu 9000` and test with `ping -M do -s 8972`. All devices on the LAN path (NICs, switches, VMs) must support the jumbo frame size. Verify with the test script before enabling in production. The performance gain is most noticeable for storage replication, backup streams, and HPC workloads - typical improvement is 5-10% throughput and a significant reduction in CPU utilization for network-intensive workloads.

@@ -1,4 +1,4 @@
-# How to Audit Container Security with Portainer
+# How to Audit Container Security with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -64,7 +64,7 @@ check() {
         echo "[PASS] $container: $check_name"
         ((PASS++))
     else
-        echo "[WARN] $container: $check_name — $result"
+        echo "[WARN] $container: $check_name - $result"
         ((WARN++))
     fi
 }
@@ -105,6 +105,7 @@ TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -d '{"Username":"admin","Password":"adminpassword"}' | jq -r .jwt)
 
 # Get activity logs for the last 24 hours
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "https://portainer.example.com/api/audit?limit=100" | \
   jq '.logs[] | {time: .Timestamp, user: .Username, action: .Action}'

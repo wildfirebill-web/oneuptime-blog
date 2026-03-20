@@ -30,6 +30,7 @@ Common causes:
 
 ```bash
 # Check if port is in use
+
 lsof -i :5432     # PostgreSQL default port
 lsof -i :6379     # Redis default port
 lsof -i :27017    # MongoDB default port

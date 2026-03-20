@@ -16,6 +16,7 @@ The `coalesce` function takes any number of arguments and returns the first one 
 
 ```hcl
 # Returns the first non-null, non-empty argument
+
 coalesce(val1, val2, val3, ...)
 ```
 

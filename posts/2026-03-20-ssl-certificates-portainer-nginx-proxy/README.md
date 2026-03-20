@@ -91,7 +91,7 @@ docker compose up -d
 
 After the certificate is issued, access Portainer at:
 
-```
+```text
 https://portainer.yourdomain.com
 ```
 

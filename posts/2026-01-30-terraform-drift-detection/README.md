@@ -298,6 +298,7 @@ send_critical_alert() {
 }
 
 # Main execution
+
 drift_found=false
 for env in "${ENVIRONMENTS[@]}"; do
     if ! check_drift "${env}"; then

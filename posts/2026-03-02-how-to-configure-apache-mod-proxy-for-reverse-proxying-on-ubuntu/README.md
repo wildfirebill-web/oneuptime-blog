@@ -16,6 +16,7 @@ Apache ships with mod_proxy but it is disabled by default. Enable it along with 
 
 ```bash
 # Enable the proxy modules
+
 sudo a2enmod proxy
 sudo a2enmod proxy_http       # For HTTP/HTTPS proxying
 sudo a2enmod proxy_balancer   # For load balancing

@@ -50,6 +50,7 @@ DynamoDB Streams supports four different view types that determine what data is 
 
 ```yaml
 # cloudformation-dynamodb-stream.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: DynamoDB table with streams enabled for CDC
 

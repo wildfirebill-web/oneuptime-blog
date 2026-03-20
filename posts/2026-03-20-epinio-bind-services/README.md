@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Epinio, Services, Kubernetes, PaaS, Databases
+Tags: Epinio, Services, Kubernetes, PaaS, Database
 
 Description: Connect databases and other services to Epinio applications using service bindings for seamless integration.
 
@@ -21,6 +21,7 @@ How to Bind Services to Applications in Epinio demonstrates how Epinio simplifie
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

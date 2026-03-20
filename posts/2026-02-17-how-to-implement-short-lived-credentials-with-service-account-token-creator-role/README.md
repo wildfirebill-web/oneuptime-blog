@@ -46,6 +46,7 @@ First, create the service account that will be impersonated. Grant it only the s
 
 ```bash
 # Create a service account for deploying to Cloud Run
+
 gcloud iam service-accounts create cloud-run-deployer \
     --project=my-project \
     --display-name="Cloud Run Deployer" \

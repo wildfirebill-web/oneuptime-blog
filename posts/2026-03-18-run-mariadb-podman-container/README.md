@@ -20,6 +20,7 @@ Download the official MariaDB image.
 
 ```bash
 # Pull the latest MariaDB image
+
 podman pull docker.io/library/mariadb:11
 
 # Verify the image is available

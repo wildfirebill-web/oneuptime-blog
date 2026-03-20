@@ -86,6 +86,7 @@ sequenceDiagram
 
 ```yaml
 # prometheus.yml
+
 # Global configuration for all alerting rules
 global:
   # How often Prometheus evaluates alerting rules

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Network Scanning, ipaddress, Hosts, Enumeration
+Tags: Python, IPv6, Network Scanning, Ipaddress, Hosts, Enumeration
 
 Description: Enumerate hosts in IPv6 networks using Python, handling the unique challenges of large address spaces with generators and sampling techniques.
 
@@ -24,7 +24,8 @@ The `hosts()` method works for small subnets:
 ```python
 import ipaddress
 
-# Works for small subnets — generates addresses lazily
+# Works for small subnets - generates addresses lazily
+
 subnet = ipaddress.IPv6Network("2001:db8:1::/126")
 
 print(f"Network: {subnet}")
@@ -52,17 +53,17 @@ def safe_enumerate_hosts(network_str: str):
 
     if host_count > MAX_SAFE_HOSTS:
         raise ValueError(
-            f"Network {network_str} has {host_count:,} hosts — too large to enumerate. "
+            f"Network {network_str} has {host_count:,} hosts - too large to enumerate. "
             f"Consider using NDP discovery instead."
         )
 
     return list(network.hosts())
 
-# Small subnet — safe
+# Small subnet - safe
 hosts = safe_enumerate_hosts("2001:db8:1::/120")
 print(f"Found {len(hosts)} hosts")
 
-# Large subnet — raises error
+# Large subnet - raises error
 try:
     safe_enumerate_hosts("2001:db8:1::/64")
 except ValueError as e:

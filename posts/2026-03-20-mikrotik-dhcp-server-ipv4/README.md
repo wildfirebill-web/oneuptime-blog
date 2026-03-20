@@ -13,7 +13,8 @@ MikroTik's built-in DHCP server handles IPv4 address assignment for LAN clients.
 ## Quick Setup with DHCP Setup Wizard
 
 ```mikrotik
-# Automated wizard — follow the prompts
+# Automated wizard - follow the prompts
+
 /ip dhcp-server setup
 
 # Select interface: ether2 (LAN)

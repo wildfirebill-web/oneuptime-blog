@@ -21,6 +21,7 @@ Before migrating, you need to pick the right Filestore tier. Google offers sever
 
 ```bash
 # Create a Filestore instance - Basic SSD tier
+
 gcloud filestore instances create my-filestore \
   --zone us-central1-a \
   --tier BASIC_SSD \

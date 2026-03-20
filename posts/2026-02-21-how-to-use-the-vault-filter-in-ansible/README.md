@@ -20,6 +20,7 @@ The filter takes the vault password as a required argument:
 
 ```yaml
 # Encrypt a string at runtime using the vault filter
+
 - name: Encrypt a value dynamically
   ansible.builtin.debug:
     msg: "{{ 'my-secret-value' | vault('my-vault-password') }}"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, include, DRY, Configuration Inheritance
+Tags: OpenTofu, Terragrunt, Include, DRY, Configuration Inheritance
 
 Description: Learn how to use Terragrunt include blocks to inherit configuration from parent and shared files, eliminating repetition across hundreds of module configurations.
 
@@ -16,6 +16,7 @@ Terragrunt `include` blocks pull in configuration from other `terragrunt.hcl` fi
 # environments/prod/networking/terragrunt.hcl
 
 # Include the root config (backend, provider, common tags)
+
 include "root" {
   path = find_in_parent_folders()
 }
@@ -30,7 +31,7 @@ inputs = {
 }
 ```
 
-The `find_in_parent_folders()` function walks up the directory tree until it finds a `terragrunt.hcl` without an `include` block — that becomes the root.
+The `find_in_parent_folders()` function walks up the directory tree until it finds a `terragrunt.hcl` without an `include` block - that becomes the root.
 
 ## Multiple includes
 

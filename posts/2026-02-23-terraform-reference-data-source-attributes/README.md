@@ -18,6 +18,7 @@ When you define a data source and want to use the values it returns, you use the
 
 ```hcl
 # Define a data source to look up the latest Amazon Linux 2 AMI
+
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]

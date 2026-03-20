@@ -96,6 +96,7 @@ ServiceEntries can be namespace-scoped, giving you fine-grained control over whi
 
 ```yaml
 # Only the payments namespace can access Stripe
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

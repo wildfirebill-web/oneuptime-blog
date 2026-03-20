@@ -16,6 +16,7 @@ VXLAN requires UDP/4789 to work between VTEPs:
 
 ```bash
 # Test underlay reachability
+
 ping -c 3 10.0.0.2
 
 # Test UDP port 4789 is reachable (from another host)

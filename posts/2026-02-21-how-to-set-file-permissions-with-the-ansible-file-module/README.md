@@ -18,6 +18,7 @@ The most common way to set permissions in Ansible is with octal (numeric) mode:
 
 ```yaml
 # Set a file to 644 (owner read/write, group read, others read)
+
 - name: Set standard file permissions
   ansible.builtin.file:
     path: /etc/myapp/config.yml

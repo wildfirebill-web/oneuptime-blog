@@ -48,6 +48,7 @@ On your internet-connected workstation, install the Flux CLI.
 
 ```bash
 # Install Flux CLI on the connected workstation
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the version

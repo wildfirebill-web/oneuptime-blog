@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, SQS, Dead Letter Queues, Messaging, Infrastructure as Code, Reliability
+Tags: OpenTofu, AWS, SQS, Dead Letter Queue, Messaging, Infrastructure as Code, Reliability
 
 Description: Learn how to create AWS SQS queues with dead letter queues (DLQ) using OpenTofu to ensure reliable message processing and isolate failed messages for investigation.
 
@@ -14,6 +14,7 @@ Dead letter queues (DLQs) capture messages that couldn't be successfully process
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -43,9 +44,9 @@ resource "aws_sqs_queue" "orders_dlq" {
 # 2. Create the main processing queue with DLQ configured
 resource "aws_sqs_queue" "orders" {
   name                       = "${var.environment}-orders"
-  visibility_timeout_seconds = 300   # 5 minutes — must be >= Lambda timeout
+  visibility_timeout_seconds = 300   # 5 minutes - must be >= Lambda timeout
   message_retention_seconds  = 86400 # 1 day
-  receive_wait_time_seconds  = 20    # Long polling — reduces empty receives
+  receive_wait_time_seconds  = 20    # Long polling - reduces empty receives
 
   kms_master_key_id = "alias/aws/sqs"
 
@@ -132,7 +133,7 @@ resource "aws_iam_policy" "orders_producer" {
 
 ```hcl
 # monitoring.tf
-# Alert when messages land in the DLQ — this always indicates processing failures
+# Alert when messages land in the DLQ - this always indicates processing failures
 resource "aws_cloudwatch_metric_alarm" "orders_dlq_not_empty" {
   alarm_name          = "${var.environment}-orders-dlq-not-empty"
   comparison_operator = "GreaterThanThreshold"
@@ -143,7 +144,7 @@ resource "aws_cloudwatch_metric_alarm" "orders_dlq_not_empty" {
   statistic           = "Sum"
   threshold           = 0  # Alert on ANY message in the DLQ
 
-  alarm_description = "Messages are in the orders DLQ — investigate processing failures"
+  alarm_description = "Messages are in the orders DLQ - investigate processing failures"
   alarm_actions     = [var.alert_sns_topic_arn]
   ok_actions        = [var.alert_sns_topic_arn]
 
@@ -155,8 +156,8 @@ resource "aws_cloudwatch_metric_alarm" "orders_dlq_not_empty" {
 
 ## Best Practices
 
-- Always alert when any message lands in a DLQ — it always means something went wrong in processing.
-- Set `maxReceiveCount` based on your processing idempotency — 3 is a common default.
+- Always alert when any message lands in a DLQ - it always means something went wrong in processing.
+- Set `maxReceiveCount` based on your processing idempotency - 3 is a common default.
 - Set `visibility_timeout_seconds` to at least 6x your Lambda function timeout to prevent duplicate processing.
 - Use long polling (`receive_wait_time_seconds = 20`) to reduce empty receives and SQS costs.
 - Use DLQ redrive (replay) in the SQS console to reprocess failed messages after fixing the bug that caused them to fail.

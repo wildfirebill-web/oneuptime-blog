@@ -34,6 +34,7 @@ Edit the manifest to match your cluster's pod CIDR. The default is `10.244.0.0/1
 
 ```bash
 # If your cluster uses a different CIDR, update it
+
 sed -i 's|10.244.0.0/16|<your-pod-cidr>|g' canal.yaml
 ```
 

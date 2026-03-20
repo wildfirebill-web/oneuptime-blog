@@ -16,6 +16,7 @@ When a Docker container fails to start or exits immediately, finding the root ca
 
 ```bash
 # List all containers including stopped ones
+
 docker ps -a
 
 # Example output:

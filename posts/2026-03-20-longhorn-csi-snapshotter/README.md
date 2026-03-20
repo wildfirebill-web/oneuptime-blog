@@ -1,8 +1,8 @@
-# How to Configure Longhorn CSI Snapshotter
+# How to Configure Longhorn CSI Snapshotter - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, CSI, Snapshots, Kubernetes, VolumeSnapshot, Storage, SUSE Rancher
+Tags: Longhorn, CSI, Snapshot, Kubernetes, VolumeSnapshot, Storage, SUSE Rancher
 
 Description: Learn how to configure the Longhorn CSI snapshotter to create, manage, and restore Kubernetes VolumeSnapshots using the standard CSI snapshot API.
 
@@ -18,6 +18,7 @@ The CSI snapshot controller must be installed in the cluster before Longhorn can
 
 ```bash
 # Install the CSI snapshot CRDs
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/master/client/config/crd/snapshot.storage.k8s.io_volumesnapshotclasses.yaml
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/master/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/master/client/config/crd/snapshot.storage.k8s.io_volumesnapshotcontents.yaml
@@ -141,4 +142,4 @@ spec:
 
 - Use `type: backup` in the VolumeSnapshotClass to create off-cluster backups (requires a Longhorn backup target).
 - Schedule CSI snapshots via Longhorn RecurringJobs for consistent, automated protection.
-- Test snapshot restore regularly — create a restore and verify data integrity before relying on snapshots for disaster recovery.
+- Test snapshot restore regularly - create a restore and verify data integrity before relying on snapshots for disaster recovery.

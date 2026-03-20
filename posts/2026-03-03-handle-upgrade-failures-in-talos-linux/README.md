@@ -32,6 +32,7 @@ These are the easiest to handle because the node never left its working state.
 
 ```bash
 # Symptom: upgrade command returns an error about pulling the image
+
 # Error: failed to pull installer image
 
 # Diagnosis:

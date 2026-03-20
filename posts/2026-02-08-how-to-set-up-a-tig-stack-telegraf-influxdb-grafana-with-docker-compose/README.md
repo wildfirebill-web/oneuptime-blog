@@ -48,6 +48,7 @@ tig-stack/
 
 ```yaml
 # TIG Stack - Telegraf, InfluxDB, Grafana
+
 version: "3.8"
 
 services:
@@ -306,7 +307,7 @@ Or collect metrics from a PostgreSQL database:
 
 Grafana supports alerting based on metric thresholds. You can configure alerts directly in Grafana's UI, or provision them via YAML. For example, an alert that fires when CPU usage exceeds 80% for 5 minutes.
 
-## Resource Tuning
+Resource Tuning
 
 For local development, the default settings work fine. For production, tune InfluxDB's memory and Telegraf's collection interval:
 

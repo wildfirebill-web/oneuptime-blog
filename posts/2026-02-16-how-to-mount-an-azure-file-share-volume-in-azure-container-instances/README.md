@@ -38,6 +38,7 @@ If you do not have them yet:
 
 ```bash
 # Create a storage account
+
 az storage account create \
     --name mystorageaccount \
     --resource-group my-resource-group \

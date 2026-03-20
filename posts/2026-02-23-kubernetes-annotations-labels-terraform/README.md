@@ -24,6 +24,7 @@ Here is how to set labels on a namespace and deployment.
 
 ```hcl
 # Create a namespace with labels
+
 resource "kubernetes_namespace" "app" {
   metadata {
     name = "my-application"

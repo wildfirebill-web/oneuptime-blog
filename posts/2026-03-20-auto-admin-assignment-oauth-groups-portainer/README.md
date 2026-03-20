@@ -27,6 +27,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Configure OAuth with admin group assignment
+
 curl -X PUT \
   https://localhost:9443/api/settings \
   -H "Authorization: Bearer $TOKEN" \
@@ -102,7 +103,7 @@ for u in users:
 
 ## Security Considerations
 
-- The `AdminGroupName` setting is case-sensitive — ensure exact match with the IdP group name
+- The `AdminGroupName` setting is case-sensitive - ensure exact match with the IdP group name
 - Use a dedicated IdP group for Portainer admins, separate from general IT admin groups
 - Regularly audit IdP group membership for the admin group
 - Keep at least one local admin account active as a fallback

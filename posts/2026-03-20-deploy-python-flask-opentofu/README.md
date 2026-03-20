@@ -16,6 +16,7 @@ Use Mangum to wrap Flask as an ASGI/WSGI handler for Lambda.
 
 ```hcl
 # Package the Flask app as a ZIP
+
 data "archive_file" "flask_app" {
   type        = "zip"
   source_dir  = "${path.module}/app"

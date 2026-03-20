@@ -14,6 +14,7 @@ The CIS (Center for Internet Security) Benchmark provides detailed security conf
 
 ```bash
 # Install the role from Ansible Galaxy
+
 ansible-galaxy install ansible-lockdown.rhel9_cis
 
 # Or clone directly from GitHub

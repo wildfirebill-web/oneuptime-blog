@@ -10,7 +10,7 @@ Puppet enables consistent IPv6 configuration across fleets of Linux servers thro
 
 ## Puppet Module Structure
 
-```
+```text
 modules/ipv6/
 ├── manifests/
 │   ├── init.pp          # Main class
@@ -107,6 +107,7 @@ class ipv6::sysctl {
 
 ```puppet
 # modules/ipv6/manifests/firewall.pp
+
 # Using puppetlabs/firewall module with ip6tables support
 
 class ipv6::firewall {
@@ -224,4 +225,4 @@ puppet agent --test --verbose
 puppet agent --test --noop
 ```
 
-Puppet's declarative approach ensures IPv6 configuration is consistently applied and idempotent — running the manifest multiple times produces the same result, making it safe to apply across large server fleets.
+Puppet's declarative approach ensures IPv6 configuration is consistently applied and idempotent - running the manifest multiple times produces the same result, making it safe to apply across large server fleets.

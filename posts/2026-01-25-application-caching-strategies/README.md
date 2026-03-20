@@ -55,6 +55,7 @@ The most common pattern. The application manages the cache explicitly:
 
 ```python
 # cache_aside.py
+
 import redis
 import json
 import hashlib

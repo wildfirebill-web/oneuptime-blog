@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Debugging, Agent, Networking, curl, telnet
+Tags: Portainer, Troubleshooting, Debugging, Agent, Networking, curl, Telnet
 
 Description: Learn how to systematically debug Portainer Agent connectivity issues using telnet, curl, and other network diagnostic tools to isolate the root cause.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```bash
 # On the agent host
+
 docker ps --filter "name=portainer_agent" --format "{{.Status}}"
 
 # If not running, check why

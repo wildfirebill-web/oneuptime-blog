@@ -50,6 +50,7 @@ Here is a minimal configuration to get the store gateway running with S3-compati
 
 ```yaml
 # store-gateway-config.yaml
+
 # Basic Mimir Store Gateway configuration for production use
 
 target: store-gateway

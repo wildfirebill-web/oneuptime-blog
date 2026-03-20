@@ -66,6 +66,7 @@ If an entire namespace should not have injection, either remove the injection la
 
 ```bash
 # Remove the label entirely
+
 kubectl label namespace monitoring istio-injection-
 
 # Or explicitly disable it

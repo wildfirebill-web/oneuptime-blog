@@ -22,6 +22,7 @@ The simplest way to rekey a vault file is the interactive method, where Ansible 
 
 ```yaml
 # First, let's create a sample vault-encrypted file to work with
+
 # This creates a file called secrets.yml encrypted with your chosen password
 ansible-vault create secrets.yml
 ```

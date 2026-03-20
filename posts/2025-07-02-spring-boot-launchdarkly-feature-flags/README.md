@@ -148,6 +148,7 @@ Configure LaunchDarkly in your `application.yml`:
 
 ```yaml
 # application.yml
+
 launchdarkly:
   # SDK key from LaunchDarkly dashboard
   # Found in Account Settings > Projects > Your Project > Environments

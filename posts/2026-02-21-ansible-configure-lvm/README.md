@@ -28,6 +28,7 @@ This playbook installs LVM2 on target hosts:
 
 ```yaml
 # install-lvm.yml - Ensure LVM tools are available
+
 ---
 - name: Install LVM Prerequisites
   hosts: all

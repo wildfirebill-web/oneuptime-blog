@@ -429,6 +429,7 @@ Deploy your worker service with proper pod configuration:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

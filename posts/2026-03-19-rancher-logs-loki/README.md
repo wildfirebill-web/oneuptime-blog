@@ -189,6 +189,7 @@ Use LogQL to query logs in Grafana's Explore view:
 
 ```logql
 # All logs from a namespace
+
 {namespace="production"}
 
 # Filter by pod name

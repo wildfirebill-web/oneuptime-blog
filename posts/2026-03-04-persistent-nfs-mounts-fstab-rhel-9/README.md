@@ -24,6 +24,7 @@ server:/export  /mount-point  nfs  options  0 0
 
 ```bash
 # Add a persistent NFS mount to fstab
+
 echo "192.168.1.10:/srv/nfs/shared  /mnt/nfs-shared  nfs  defaults  0 0" | sudo tee -a /etc/fstab
 ```
 

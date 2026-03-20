@@ -76,6 +76,7 @@ Configure ArgoCD:
 
 ```yaml
 # argocd-cm ConfigMap
+
 # This configures the OIDC provider for ArgoCD authentication
 apiVersion: v1
 kind: ConfigMap

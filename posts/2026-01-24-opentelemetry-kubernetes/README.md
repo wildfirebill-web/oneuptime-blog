@@ -59,6 +59,7 @@ The OpenTelemetry Operator simplifies collector deployment and management.
 
 ```yaml
 # Install the OpenTelemetry Operator using Helm
+
 # helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 # helm install opentelemetry-operator open-telemetry/opentelemetry-operator
 

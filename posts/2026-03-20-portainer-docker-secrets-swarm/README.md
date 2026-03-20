@@ -1,4 +1,4 @@
-# How to Manage Docker Secrets via Portainer on Swarm
+# How to Manage Docker Secrets via Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ Fill in:
 
 ```bash
 # Create a secret from a string
+
 echo "MySecurePassword123!" | docker secret create db_password -
 
 # Create a secret from a file

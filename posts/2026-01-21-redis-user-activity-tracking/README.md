@@ -95,6 +95,7 @@ class EventTracker:
         return self.track(user_id, 'feature_use', properties)
 
 # Usage
+
 tracker = EventTracker('my_app')
 
 # Track various events

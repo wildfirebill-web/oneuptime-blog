@@ -278,6 +278,7 @@ Track upload performance through Envoy metrics:
 
 ```bash
 # Check active connections
+
 kubectl exec -it <pod-name> -c istio-proxy -n default -- \
   pilot-agent request GET stats | grep "downstream_cx_active\|upstream_cx_active"
 

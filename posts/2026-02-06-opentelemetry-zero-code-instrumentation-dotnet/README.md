@@ -43,6 +43,7 @@ Download the latest release for your platform:
 
 ```bash
 # For Linux (x64)
+
 curl -L -o otel-dotnet-auto-install.sh https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/latest/download/otel-dotnet-auto-install.sh
 
 chmod +x otel-dotnet-auto-install.sh

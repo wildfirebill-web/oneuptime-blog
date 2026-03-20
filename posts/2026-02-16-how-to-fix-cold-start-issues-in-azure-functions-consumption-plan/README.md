@@ -136,6 +136,7 @@ import logging
 import pyodbc
 
 # Initialize the connection at module level so it persists across invocations
+
 # This avoids re-establishing the connection on every function call
 _connection = None
 

@@ -20,6 +20,7 @@ Here is a simple example that restarts nginx only when the config file is update
 
 ```yaml
 # Playbook that updates nginx config and conditionally restarts
+
 ---
 - name: Configure nginx
   hosts: webservers

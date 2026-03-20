@@ -30,6 +30,7 @@ Create a FastAPI backend for namespace management:
 
 ```python
 # namespace_api.py
+
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from kubernetes import client, config

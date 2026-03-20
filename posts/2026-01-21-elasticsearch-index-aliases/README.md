@@ -25,6 +25,7 @@ An alias is an alternative name that points to one or more indices. Aliases prov
 
 ```bash
 # Create alias for a single index
+
 curl -X POST "https://localhost:9200/_aliases" \
   -H "Content-Type: application/json" \
   -u elastic:password \

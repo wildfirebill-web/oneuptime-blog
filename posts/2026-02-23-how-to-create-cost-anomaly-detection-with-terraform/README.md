@@ -22,6 +22,7 @@ AWS Cost Anomaly Detection is a managed service that uses machine learning to id
 
 ```hcl
 # Service-level anomaly monitor
+
 # Monitors spending across all AWS services independently
 resource "aws_ce_anomaly_monitor" "service_monitor" {
   name              = "service-level-anomaly-monitor"

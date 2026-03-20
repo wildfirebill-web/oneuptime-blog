@@ -22,6 +22,7 @@ Qdrant is a Rust-based vector database with a REST and gRPC API. Its data model 
 
 ```yaml
 # docker-compose-qdrant.yml
+
 version: "3.8"
 
 services:

@@ -18,6 +18,7 @@ Azure DevOps uses YAML pipeline files. Create an `azure-pipelines.yml` in the ro
 
 ```yaml
 # azure-pipelines.yml - Basic Ansible pipeline
+
 trigger:
   branches:
     include:

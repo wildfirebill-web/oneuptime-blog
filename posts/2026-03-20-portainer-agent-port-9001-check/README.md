@@ -1,8 +1,8 @@
-# How to Check If Port 9001 Is Accessible for Portainer Agent
+# How to Check If Port 9001 Is Accessible for Portainer Agent - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, Network, Port 9001, Troubleshooting, Firewall
+Tags: Portainer, Agent, Networks, Port 9001, Troubleshooting, Firewall
 
 Description: Verify that port 9001 is open and accessible between your Portainer server and Portainer Agent using various network diagnostic tools.
 
@@ -14,6 +14,7 @@ Port 9001 is the default communication port for the Portainer Agent. If this por
 
 ```bash
 # Method 1: netcat (most universally available)
+
 nc -zv AGENT_HOST_IP 9001
 # Success: "Connection to 192.168.1.50 9001 port [tcp/*] succeeded!"
 # Failure: "Connection to 192.168.1.50 9001 port [tcp/*] failed: Connection refused"

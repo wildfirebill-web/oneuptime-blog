@@ -16,6 +16,7 @@ Deprecation is a staged process. First, a feature is marked as deprecated with a
 
 ```bash
 # Example deprecation warning during plan
+
 Warning: Argument is deprecated
 
   with aws_s3_bucket.data,

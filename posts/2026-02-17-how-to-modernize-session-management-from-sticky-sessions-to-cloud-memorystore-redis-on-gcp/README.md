@@ -35,6 +35,7 @@ First, create a Memorystore Redis instance. You can do this through the console 
 
 ```bash
 # Create a standard-tier Redis instance with 1GB memory in your VPC
+
 gcloud redis instances create session-store \
   --size=1 \
   --region=us-central1 \

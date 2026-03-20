@@ -16,6 +16,7 @@ Monitoring log collection infrastructure is often neglected until an incident re
 
 ```yaml
 # Alert on Fluent Bit output errors
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

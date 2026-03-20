@@ -124,6 +124,7 @@ Good liveness checks verify critical functionality:
 
 ```python
 # Python Flask example
+
 from flask import Flask, jsonify
 import threading
 import time

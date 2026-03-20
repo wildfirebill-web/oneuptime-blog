@@ -24,6 +24,7 @@ A typical telecom BSS/OSS order flow touches these systems:
 
 ```python
 # order_management.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode, SpanKind
 from opentelemetry.context import attach, detach

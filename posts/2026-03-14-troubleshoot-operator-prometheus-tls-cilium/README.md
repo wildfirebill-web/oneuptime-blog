@@ -28,6 +28,7 @@ When Prometheus reports TLS errors:
 
 ```bash
 # Check Prometheus target errors
+
 curl -s http://localhost:9090/api/v1/targets | \
     jq '.data.activeTargets[] | select(.labels.job | contains("operator")) | {health: .health, lastError: .lastError}'
 

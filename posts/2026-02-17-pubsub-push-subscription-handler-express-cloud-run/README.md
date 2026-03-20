@@ -20,6 +20,7 @@ When a message is published to a Pub/Sub topic, the push subscription delivers i
 
 ```bash
 # Create a topic
+
 gcloud pubsub topics create order-events
 
 # Create a push subscription pointing to your Cloud Run service

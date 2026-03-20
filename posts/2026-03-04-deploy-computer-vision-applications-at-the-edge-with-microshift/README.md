@@ -18,6 +18,7 @@ You need MicroShift installed on a RHEL 9 system with a supported GPU or neural 
 
 ```bash
 # Add the NVIDIA container toolkit repo
+
 curl -s -L https://nvidia.github.io/libnvidia-container/rhel9.0/libnvidia-container.repo \
   | sudo tee /etc/yum.repos.d/nvidia-container-toolkit.repo
 

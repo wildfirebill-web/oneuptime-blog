@@ -14,6 +14,7 @@ SAML (Security Assertion Markup Language) federation allows users to authenticat
 
 ```hcl
 # The metadata XML is obtained from your IdP (Okta, Azure AD, etc.)
+
 resource "aws_iam_saml_provider" "corporate_idp" {
   name                   = "corporate-sso"
   saml_metadata_document = file("${path.module}/saml-metadata.xml")
@@ -134,4 +135,4 @@ tofu apply tfplan
 
 ## Summary
 
-SAML federation with AWS allows your organization to use existing corporate identity infrastructure for AWS access. OpenTofu manages the SAML provider registration, IAM role trust policies, and permissions — enabling auditable, code-driven SSO configuration.
+SAML federation with AWS allows your organization to use existing corporate identity infrastructure for AWS access. OpenTofu manages the SAML provider registration, IAM role trust policies, and permissions - enabling auditable, code-driven SSO configuration.

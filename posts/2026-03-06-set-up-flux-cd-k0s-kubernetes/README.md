@@ -30,6 +30,7 @@ Install the Flux CLI on your workstation:
 
 ```bash
 # Install the latest Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the installation
@@ -415,7 +416,7 @@ spec:
     createNamespace: true
 ```
 
-### Resource Limits
+Resource Limits
 
 k0s environments are often resource-constrained. Always set resource requests and limits in your Flux-managed workloads to prevent resource contention.
 

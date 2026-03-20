@@ -34,6 +34,7 @@ tmpfs  /mnt/ramdisk  tmpfs  defaults,size=2G  0 0
 
 ```bash
 # Create the directory
+
 mkdir -p /mnt/ramdisk
 ```
 

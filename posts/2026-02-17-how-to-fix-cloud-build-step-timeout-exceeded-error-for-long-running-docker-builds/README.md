@@ -25,6 +25,7 @@ Update your `cloudbuild.yaml` to set a longer build timeout:
 
 ```yaml
 # cloudbuild.yaml with extended timeout
+
 timeout: '3600s'  # 1 hour total build timeout
 
 steps:

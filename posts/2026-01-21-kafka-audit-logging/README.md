@@ -28,6 +28,7 @@ Audit logging should capture:
 # log4j.properties
 
 # Authorizer audit logger
+
 log4j.logger.kafka.authorizer.logger=INFO, authorizerAppender
 log4j.additivity.kafka.authorizer.logger=false
 

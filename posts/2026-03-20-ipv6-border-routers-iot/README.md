@@ -28,6 +28,7 @@ flowchart LR
 
 ```bash
 # Prerequisites: 802.15.4 USB radio (e.g., atusb or cc2531)
+
 # Install required packages
 sudo apt-get install wpan-tools radvd
 

@@ -52,6 +52,7 @@ The caller can override just what they need:
 
 ```hcl
 # Override only instance_type and volume_size
+
 config_overrides = {
   instance_type = "m5.large"
   volume_size   = 100

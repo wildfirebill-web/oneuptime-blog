@@ -192,6 +192,7 @@ resource "aws_s3_bucket" "data" {
 
 ```hcl
 # Variable validation: runs during parsing, before any plan
+
 variable "region" {
   type = string
   validation {

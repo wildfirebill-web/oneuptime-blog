@@ -16,6 +16,7 @@ UFW makes subnet-based rules straightforward with its `from` syntax.
 
 ```bash
 # Allow SSH from a specific subnet
+
 sudo ufw allow from 192.168.1.0/24 to any port 22
 
 # Allow from multiple specific subnets (one rule per subnet)

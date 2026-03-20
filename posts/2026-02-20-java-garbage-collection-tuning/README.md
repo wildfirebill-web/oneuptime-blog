@@ -65,6 +65,7 @@ GC logs are essential for understanding collection behavior before tuning.
 ```bash
 #!/bin/bash
 # Enable detailed GC logging for analysis
+
 # These flags work with Java 17+
 
 JAVA_OPTS=""

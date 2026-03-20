@@ -83,6 +83,7 @@ If sending 100% from the SDK is too expensive for your network, use a ratio samp
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

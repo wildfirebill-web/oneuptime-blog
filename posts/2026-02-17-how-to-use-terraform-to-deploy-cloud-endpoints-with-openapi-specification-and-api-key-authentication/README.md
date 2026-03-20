@@ -31,6 +31,7 @@ Start with the OpenAPI (Swagger) spec that defines your API. This file describes
 
 ```hcl
 # Create the OpenAPI spec as a template so we can inject the backend URL
+
 locals {
   openapi_spec = templatefile("${path.module}/openapi.yaml.tpl", {
     backend_url  = google_cloud_run_v2_service.backend.uri

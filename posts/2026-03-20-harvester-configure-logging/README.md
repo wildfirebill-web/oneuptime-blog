@@ -8,7 +8,7 @@ Description: Learn how to configure centralized logging in Harvester to collect,
 
 ## Introduction
 
-Centralized logging in Harvester enables you to collect logs from all cluster components — Kubernetes, VMs, system services, and applications — in one place for troubleshooting, auditing, and compliance. Harvester supports log forwarding through its integrated logging subsystem built on Banzai Cloud Logging Operator, which can send logs to various backends including Elasticsearch, Loki, Splunk, and any Fluentd-compatible endpoint.
+Centralized logging in Harvester enables you to collect logs from all cluster components - Kubernetes, VMs, system services, and applications - in one place for troubleshooting, auditing, and compliance. Harvester supports log forwarding through its integrated logging subsystem built on Banzai Cloud Logging Operator, which can send logs to various backends including Elasticsearch, Loki, Splunk, and any Fluentd-compatible endpoint.
 
 ## Logging Architecture
 
@@ -36,6 +36,7 @@ graph LR
 
 ```bash
 # Enable Harvester logging subsystem
+
 kubectl apply -f - <<EOF
 apiVersion: harvesterhci.io/v1beta1
 kind: Setting

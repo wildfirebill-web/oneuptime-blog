@@ -43,6 +43,7 @@ On the GitHub App settings page, scroll down to the **Private keys** section and
 
 ```bash
 # Verify the private key file was downloaded
+
 ls -la *.pem
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Caching, Performance, DevOps
+Tags: Ansible, Nginx, Caching, Performance, DevOps
 
 Description: Automate Nginx proxy caching and static asset caching configuration with Ansible to improve web application performance across your infrastructure.
 
@@ -55,6 +55,7 @@ These defaults cover the most common caching scenarios. The proxy cache stores u
 
 ```yaml
 # roles/nginx_cache/defaults/main.yml
+
 # Proxy cache settings
 nginx_cache_path: "/var/cache/nginx"
 nginx_cache_zone_name: "app_cache"

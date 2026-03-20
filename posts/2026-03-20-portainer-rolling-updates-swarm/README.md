@@ -55,6 +55,7 @@ Alternatively, trigger from the CLI:
 
 ```bash
 # Update the service image
+
 docker service update \
   --image myregistry.example.com/my-app:v1.5.0 \
   --update-parallelism 1 \

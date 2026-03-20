@@ -20,6 +20,7 @@ First, find out how journald is currently storing logs.
 
 ```bash
 # Check the current journal storage location and size
+
 journalctl --disk-usage
 
 # See which boots are recorded (if persistent, you will see multiple entries)

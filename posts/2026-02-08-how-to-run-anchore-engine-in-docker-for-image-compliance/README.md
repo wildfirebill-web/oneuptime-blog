@@ -47,6 +47,7 @@ Anchore Engine consists of several microservices: the API, a catalog service, a 
 
 ```yaml
 # docker-compose.yml - Anchore Engine deployment
+
 version: "3.8"
 
 services:

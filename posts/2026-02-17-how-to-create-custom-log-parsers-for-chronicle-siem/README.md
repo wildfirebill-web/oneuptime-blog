@@ -266,6 +266,7 @@ You can also use the Chronicle API for automated deployments.
 
 ```bash
 # Upload a custom parser using the Chronicle API
+
 curl -X POST \
     "https://backstory.googleapis.com/v2/parsers" \
     -H "Authorization: Bearer $(gcloud auth print-access-token)" \

@@ -38,6 +38,7 @@ Named volumes are the recommended approach for most production scenarios. Docker
 
 ```bash
 # Create a named volume that Docker will manage automatically
+
 docker volume create myapp-data
 
 # The volume exists independently of any container

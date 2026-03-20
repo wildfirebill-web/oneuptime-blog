@@ -18,6 +18,7 @@ If you have an existing Docker Compose project, you can run it with Podman using
 
 ```bash
 # Navigate to your project directory containing docker-compose.yml
+
 cd /path/to/project
 
 # Start all services in the foreground

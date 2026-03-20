@@ -43,6 +43,7 @@ SQLite comes pre-installed. Verify with:
 
 ```bash
 # Check SQLite version
+
 sqlite3 --version
 # Example output: 3.43.2 2023-10-10 12:14:04
 ```

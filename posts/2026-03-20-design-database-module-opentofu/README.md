@@ -8,11 +8,11 @@ Description: Learn how to design a reusable RDS database module for OpenTofu tha
 
 ## Introduction
 
-A database module should handle the complexity of RDS configuration — subnet groups, parameter groups, security groups, and option groups — while exposing a clean interface for application teams who just need a database with sensible defaults.
+A database module should handle the complexity of RDS configuration - subnet groups, parameter groups, security groups, and option groups - while exposing a clean interface for application teams who just need a database with sensible defaults.
 
 ## Module Structure
 
-```
+```text
 modules/database/
 ├── main.tf
 ├── variables.tf

@@ -33,6 +33,7 @@ Use hints when:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install postgresql-16-pg-hint-plan
 
 # RHEL/CentOS

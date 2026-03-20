@@ -27,6 +27,7 @@ Start by creating a new project for your construct:
 
 ```bash
 # Create project directory
+
 mkdir cdktf-aws-secure-bucket
 cd cdktf-aws-secure-bucket
 

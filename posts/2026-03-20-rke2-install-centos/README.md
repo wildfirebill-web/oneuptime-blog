@@ -19,6 +19,7 @@ RKE2 provides a secure, compliant Kubernetes distribution that is well-suited fo
 
 ```bash
 # Update system packages
+
 sudo yum update -y
 
 # Disable swap

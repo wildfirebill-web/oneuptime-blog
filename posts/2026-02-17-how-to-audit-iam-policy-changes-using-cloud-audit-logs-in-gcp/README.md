@@ -43,6 +43,7 @@ For command-line access, use gcloud to query the logs:
 
 ```bash
 # View all IAM policy changes in the last 24 hours
+
 gcloud logging read 'protoPayload.methodName="SetIamPolicy"' \
     --project=my-project \
     --freshness=1d \

@@ -16,6 +16,7 @@ The `var` parameter takes a variable name as a plain string (no Jinja2 curly bra
 
 ```yaml
 # Using var to print a simple variable
+
 - name: Show the deploy version
   ansible.builtin.debug:
     var: deploy_version

@@ -306,6 +306,7 @@ The `expression` field uses CEL (Common Expression Language) to filter which req
 
 ```yaml
 # Log only errors
+
 filter:
   expression: "response.code >= 400"
 

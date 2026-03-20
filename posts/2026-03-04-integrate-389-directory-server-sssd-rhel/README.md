@@ -14,6 +14,7 @@ SSSD (System Security Services Daemon) provides a way for RHEL clients to authen
 
 ```bash
 # Install SSSD with LDAP provider support
+
 sudo dnf install -y sssd sssd-ldap oddjob-mkhomedir
 ```
 

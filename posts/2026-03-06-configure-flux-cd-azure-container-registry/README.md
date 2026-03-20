@@ -42,6 +42,7 @@ This is the most secure approach as it requires no stored credentials in the clu
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export CLUSTER_NAME="aks-fluxcd-demo"
 export ACR_NAME="acrfluxcddemo"

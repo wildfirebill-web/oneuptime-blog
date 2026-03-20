@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Persistent Disks, Storage, OpenTofu, Compute Engine, Infrastructure
+Tags: GCP, Persistent Disk, Storage, OpenTofu, Compute Engine, Infrastructure
 
 Description: Learn how to create and manage GCP Persistent Disks with OpenTofu including disk types, regional disks, and attaching them to Compute Engine instances.
 
@@ -14,6 +14,7 @@ GCP Persistent Disks provide durable block storage for Compute Engine instances.
 
 ```hcl
 # main.tf - Various persistent disk types
+
 # pd-standard: HDD, cheapest, good for sequential read/write
 resource "google_compute_disk" "standard_disk" {
   name  = "app-standard-disk"

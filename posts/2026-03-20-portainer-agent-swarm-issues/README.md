@@ -1,4 +1,4 @@
-# How to Fix Agent Communication Issues on Docker Swarm
+# How to Fix Agent Communication Issues on Docker Swarm - Portainer Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Running the Portainer Agent as a Docker Swarm service introduces additional comp
 
 ```bash
 # Check Swarm nodes
+
 docker node ls
 
 # Look for nodes in state "Down" or "Unreachable"
@@ -41,9 +42,9 @@ docker service create \
 ```
 
 Key flags:
-- `--mode global` — runs on every node
-- `--publish mode=host` — uses host networking, not mesh routing
-- `AGENT_CLUSTER_ADDR` — enables agent cluster discovery
+- `--mode global` - runs on every node
+- `--publish mode=host` - uses host networking, not mesh routing
+- `AGENT_CLUSTER_ADDR` - enables agent cluster discovery
 
 ## Step 3: Create the Required Overlay Network
 
@@ -66,7 +67,7 @@ docker network inspect portainer-agent-network
 version: "3.8"
 
 services:
-  # Portainer server — runs on a manager node
+  # Portainer server - runs on a manager node
   portainer:
     image: portainer/portainer-ce:latest
     command: -H tcp://tasks.portainer-agent:9001 --tlsskipverify
@@ -85,7 +86,7 @@ services:
         constraints:
           - node.role == manager
 
-  # Portainer Agent — runs on every node
+  # Portainer Agent - runs on every node
   portainer-agent:
     image: portainer/agent:latest
     volumes:
@@ -122,7 +123,7 @@ docker stack deploy -c portainer-swarm.yml portainer
 # Check if the overlay network is healthy
 docker network inspect portainer-agent-network
 
-# Look at "Peers" section — should list all Swarm nodes
+# Look at "Peers" section - should list all Swarm nodes
 # If nodes are missing, they can't communicate
 
 # Test connectivity between nodes
@@ -134,9 +135,9 @@ docker exec -it $(docker ps -q -f name=portainer-agent) ping tasks.portainer-age
 
 ```bash
 # Check required Swarm ports are open between nodes
-# Port 2377 — Swarm management (TCP)
-# Port 7946 — Node communication (TCP/UDP)
-# Port 4789 — Overlay network traffic (UDP)
+# Port 2377 - Swarm management (TCP)
+# Port 7946 - Node communication (TCP/UDP)
+# Port 4789 - Overlay network traffic (UDP)
 
 # On each node, verify these ports are accessible
 sudo ufw allow 2377/tcp

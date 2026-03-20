@@ -25,6 +25,7 @@ Install the required collection if you have not already:
 
 ```bash
 # Install the Kubernetes collection from Ansible Galaxy
+
 ansible-galaxy collection install kubernetes.core
 
 # Install the Python client library

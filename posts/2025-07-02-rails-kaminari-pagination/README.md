@@ -83,6 +83,7 @@ Add Kaminari to your Gemfile:
 # Gemfile
 
 # Kaminari is the most popular pagination gem for Rails
+
 # It provides a clean, scope-based API for paginating collections
 gem 'kaminari'
 ```

@@ -24,6 +24,7 @@ Not all authentication events are logged by default. Data Access logs, which inc
 
 ```bash
 # Get the current audit log configuration for the organization
+
 gcloud organizations get-iam-policy ORG_ID > /tmp/org-policy.yaml
 ```
 

@@ -49,6 +49,7 @@ Determine appropriate requests by measuring actual resource consumption over tim
 
 ```bash
 # Check current pod resource usage
+
 kubectl top pods -n production
 
 # View detailed metrics for specific pod

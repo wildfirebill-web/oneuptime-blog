@@ -1,4 +1,4 @@
-# How to Fix Agent Issues When SELinux Is Enabled
+# How to Fix Agent Issues When SELinux Is Enabled - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Resolve Portainer Agent connection and permission failures caused b
 
 ## Introduction
 
-SELinux (Security-Enhanced Linux) enforces mandatory access control policies that can prevent the Portainer Agent from accessing the Docker socket, volume paths, and network ports — even when standard Linux permissions would allow it. This guide covers how to diagnose SELinux-related Agent issues and apply the appropriate fixes without completely disabling SELinux.
+SELinux (Security-Enhanced Linux) enforces mandatory access control policies that can prevent the Portainer Agent from accessing the Docker socket, volume paths, and network ports - even when standard Linux permissions would allow it. This guide covers how to diagnose SELinux-related Agent issues and apply the appropriate fixes without completely disabling SELinux.
 
 ## Step 1: Verify SELinux Is the Cause
 
 ```bash
 # Check SELinux status
+
 getenforce
 # Outputs: Enforcing, Permissive, or Disabled
 
@@ -195,4 +196,4 @@ services:
 
 ## Conclusion
 
-SELinux issues with the Portainer Agent are best fixed by using the `:z` or `:Z` volume mount label, which tells Docker to relabel the mounted paths for SELinux access. For network port issues, use `semanage port` to add port 9001 to the allowed list. Avoid disabling SELinux entirely — instead, use `audit2allow` to generate a precise policy module that allows only what Portainer needs.
+SELinux issues with the Portainer Agent are best fixed by using the `:z` or `:Z` volume mount label, which tells Docker to relabel the mounted paths for SELinux access. For network port issues, use `semanage port` to add port 9001 to the allowed list. Avoid disabling SELinux entirely - instead, use `audit2allow` to generate a precise policy module that allows only what Portainer needs.

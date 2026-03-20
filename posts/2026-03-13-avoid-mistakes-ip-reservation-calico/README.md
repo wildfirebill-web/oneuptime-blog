@@ -27,6 +27,7 @@ Before configuring reservations, enumerate all IPs in your pod CIDR that are in 
 
 ```bash
 # Check which IPs in your pod CIDR are currently allocated
+
 calicoctl ipam show --show-blocks
 
 # Check for external services/appliances using IPs in the pod CIDR range

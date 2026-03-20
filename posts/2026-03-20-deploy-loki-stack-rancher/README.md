@@ -27,6 +27,7 @@ helm repo update
 
 ```yaml
 # loki-values.yaml
+
 loki:
   auth_enabled: false    # Single-tenant mode
 

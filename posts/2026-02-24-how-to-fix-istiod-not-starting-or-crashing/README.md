@@ -32,7 +32,7 @@ kubectl logs -l app=istiod -n istio-system --previous
 
 The `--previous` flag shows logs from the last crashed instance.
 
-## Resource Limits Too Low
+Resource Limits Too Low
 
 OOMKilled is extremely common with Istiod, especially in large clusters. Istiod keeps the entire mesh configuration in memory, and for clusters with thousands of services and pods, that adds up fast.
 

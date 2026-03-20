@@ -14,6 +14,7 @@ Linkerd is a lightweight, security-first service mesh for Kubernetes. It automat
 
 ```hcl
 # main.tf - Generate trust anchor and issuer certificates for Linkerd
+
 resource "tls_private_key" "trust_anchor" {
   algorithm = "ECDSA"
   ecdsa_curve = "P256"
@@ -212,4 +213,4 @@ resource "kubernetes_manifest" "service_profile" {
 
 ## Summary
 
-Linkerd deployed with OpenTofu provides a lightweight service mesh with zero-configuration mTLS using the proxy injection model. The Viz extension delivers golden metrics — success rate, requests per second, and latency percentiles — for every meshed service. ServiceProfiles add per-route timeout and retry logic, and TrafficSplit enables progressive delivery without application changes.
+Linkerd deployed with OpenTofu provides a lightweight service mesh with zero-configuration mTLS using the proxy injection model. The Viz extension delivers golden metrics - success rate, requests per second, and latency percentiles - for every meshed service. ServiceProfiles add per-route timeout and retry logic, and TrafficSplit enables progressive delivery without application changes.

@@ -29,6 +29,7 @@ Docker and Docker Compose installed. Directus runs on Node.js and uses around 30
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

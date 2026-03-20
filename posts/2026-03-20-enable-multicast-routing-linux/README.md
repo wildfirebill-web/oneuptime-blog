@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Multicast, Routing, Linux, PIM, IGMP, pimd, smcroute, Networking
+Tags: Multicast, Routing, Linux, PIM, IGMP, Pimd, Smcroute, Networking
 
 Description: Enable IPv4 multicast routing on Linux using kernel configuration, pimd, and smcroute to forward multicast traffic between network interfaces and subnets.
 
 ## Introduction
 
-Linux supports multicast routing through the kernel's multicast routing subsystem, which requires both kernel support and a userspace multicast routing daemon. The daemon (pimd, smcrouted, or mrouted) manages multicast routing entries — the kernel just provides the forwarding plane. This setup allows a Linux machine to act as a multicast router, forwarding multicast streams between different subnets or interfaces.
+Linux supports multicast routing through the kernel's multicast routing subsystem, which requires both kernel support and a userspace multicast routing daemon. The daemon (pimd, smcrouted, or mrouted) manages multicast routing entries - the kernel just provides the forwarding plane. This setup allows a Linux machine to act as a multicast router, forwarding multicast streams between different subnets or interfaces.
 
 ## Enable Multicast Routing in Kernel
 
 ```bash
 # Check if multicast routing is compiled in:
+
 grep -i "CONFIG_IP_MROUTE" /boot/config-$(uname -r)
 # CONFIG_IP_MROUTE=y means it's available
 
@@ -190,4 +191,4 @@ for i in range(3):
 
 ## Conclusion
 
-Linux multicast routing requires IP forwarding enabled, a multicast-capable interface (`ip link set eth0 multicast on`), and a routing daemon. Use `smcroute` for simple static multicast forwarding between known interfaces. Use `pimd` for dynamic PIM-SM routing in larger networks with a Rendezvous Point. Monitor with `cat /proc/net/ip_mr_cache` and `ip mroute show`. Always verify that multicast packets are received with the correct TTL — routers decrement TTL by 1, so TTL must be higher than the hop count for packets to reach the receiver.
+Linux multicast routing requires IP forwarding enabled, a multicast-capable interface (`ip link set eth0 multicast on`), and a routing daemon. Use `smcroute` for simple static multicast forwarding between known interfaces. Use `pimd` for dynamic PIM-SM routing in larger networks with a Rendezvous Point. Monitor with `cat /proc/net/ip_mr_cache` and `ip mroute show`. Always verify that multicast packets are received with the correct TTL - routers decrement TTL by 1, so TTL must be higher than the hop count for packets to reach the receiver.

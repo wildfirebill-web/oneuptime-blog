@@ -24,6 +24,7 @@ Create a new Azure Functions project with the Apollo Server integration:
 
 ```bash
 # Create the project directory
+
 mkdir graphql-azure-functions && cd graphql-azure-functions
 
 # Initialize Azure Functions project with TypeScript

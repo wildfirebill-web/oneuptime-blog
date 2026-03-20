@@ -20,6 +20,7 @@ Log out from a specific registry.
 
 ```bash
 # Log out from Docker Hub
+
 podman logout docker.io
 # Removed login credentials for docker.io
 

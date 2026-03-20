@@ -52,6 +52,7 @@ The `action.yml` file defines your action's interface - its inputs, outputs, and
 
 ```yaml
 # action.yml - Defines the action's metadata and interface
+
 name: 'Slack Deployment Notifier'
 description: 'Posts deployment notifications to a Slack channel'
 author: 'Your Name'

@@ -44,6 +44,7 @@ Create the complete `docker-compose.yml` with all necessary services.
 
 ```yaml
 # docker-compose.yml - Grafana OnCall stack
+
 version: "3.8"
 
 services:

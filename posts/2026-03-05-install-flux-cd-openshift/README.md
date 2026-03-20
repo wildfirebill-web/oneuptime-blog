@@ -24,6 +24,7 @@ Confirm you can access the OpenShift cluster and have the necessary permissions.
 
 ```bash
 # Verify OpenShift CLI access
+
 oc whoami
 
 # Check cluster version

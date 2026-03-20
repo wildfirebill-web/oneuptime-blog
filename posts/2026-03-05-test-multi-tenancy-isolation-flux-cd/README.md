@@ -35,6 +35,7 @@ TENANT_B="team-beta"
 echo "=== Testing RBAC Isolation ==="
 
 # Test 1: Tenant A can create resources in their own namespace
+
 echo "Test 1: Tenant A can create in own namespace"
 kubectl auth can-i create deployments \
   --as=system:serviceaccount:${TENANT_A}:${TENANT_A} \

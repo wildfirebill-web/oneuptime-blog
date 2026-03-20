@@ -46,6 +46,7 @@ On your Linux Ansible control node, install the Kerberos client libraries:
 
 ```bash
 # For RHEL/CentOS/Rocky Linux
+
 sudo yum install -y krb5-workstation krb5-libs krb5-devel gcc python3-devel
 
 # For Ubuntu/Debian

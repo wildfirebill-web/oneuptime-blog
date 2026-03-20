@@ -20,6 +20,7 @@ Start by capturing the exact error message from your container.
 
 ```bash
 # Check container logs for permission errors
+
 podman logs my-container 2>&1 | grep -i "permission denied"
 
 # Run the container interactively to see errors in real time

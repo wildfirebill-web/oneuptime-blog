@@ -1,4 +1,4 @@
-# How to Use Ephemeral Containers in Rancher
+# How to Use Ephemeral Containers in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Master ephemeral containers in Rancher Kubernetes clusters to debug
 
 ## Introduction
 
-Ephemeral containers are a special type of container that can be added to a running pod for debugging purposes. Unlike regular containers, they cannot be restarted and are not listed in the pod spec—they're truly temporary. This makes them ideal for debugging minimal or distroless containers that lack debugging tools. This guide covers working with ephemeral containers in Rancher.
+Ephemeral containers are a special type of container that can be added to a running pod for debugging purposes. Unlike regular containers, they cannot be restarted and are not listed in the pod spec-they're truly temporary. This makes them ideal for debugging minimal or distroless containers that lack debugging tools. This guide covers working with ephemeral containers in Rancher.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Ephemeral containers are a special type of container that can be added to a runn
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify ephemeral container RBAC

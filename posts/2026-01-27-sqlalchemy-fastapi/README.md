@@ -22,6 +22,7 @@ SQLAlchemy 2.0 introduced a completely rewritten async engine. Here is how to co
 
 ```bash
 # Install required packages
+
 pip install fastapi sqlalchemy[asyncio] asyncpg alembic uvicorn
 ```
 

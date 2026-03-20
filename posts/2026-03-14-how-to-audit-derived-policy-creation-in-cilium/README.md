@@ -26,6 +26,7 @@ echo "Date: $(date)"
 echo ""
 
 # Overall statistics
+
 TOTAL_ENDPOINTS=$(cilium endpoint list -o json | jq '. | length')
 READY_ENDPOINTS=$(cilium endpoint list -o json | jq '[.[] | select(.status.state == "ready")] | length')
 TOTAL_POLICIES=$(kubectl get ciliumnetworkpolicies --all-namespaces --no-headers | wc -l)

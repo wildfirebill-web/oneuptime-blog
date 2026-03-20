@@ -16,6 +16,7 @@ Install the Pub/Sub client library.
 
 ```bash
 # Install the Pub/Sub Python client
+
 pip install google-cloud-pubsub
 ```
 

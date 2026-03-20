@@ -28,6 +28,7 @@ Starting with Kubernetes 1.27, you can set the RuntimeDefault seccomp profile as
 
 ```yaml
 # Talos machine config patch to enable default seccomp
+
 cluster:
   apiServer:
     admissionControl:

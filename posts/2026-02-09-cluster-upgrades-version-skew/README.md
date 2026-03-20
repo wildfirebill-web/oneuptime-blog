@@ -26,6 +26,7 @@ Identify versions across all cluster components.
 
 ```bash
 # Check control plane version
+
 kubectl version --short
 
 # Check individual control plane component versions

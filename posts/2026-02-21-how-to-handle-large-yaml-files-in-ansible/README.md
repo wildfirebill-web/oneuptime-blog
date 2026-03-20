@@ -22,6 +22,7 @@ Large YAML files in Ansible are a maintenance burden. They are slow to parse, ha
 
 ```yaml
 # Before: one massive group_vars/all.yml
+
 # After: split into logical files
 
 # group_vars/all/network.yml

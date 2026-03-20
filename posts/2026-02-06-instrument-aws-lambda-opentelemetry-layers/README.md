@@ -55,6 +55,7 @@ First, find the latest layer ARN for your region and runtime:
 
 ```bash
 # List available ADOT layer versions for Python in us-east-1
+
 # Pick the latest version number from the output
 aws lambda list-layer-versions \
   --layer-name aws-otel-python-amd64-ver-1-25-0 \

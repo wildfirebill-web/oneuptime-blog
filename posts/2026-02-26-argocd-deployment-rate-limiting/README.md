@@ -27,6 +27,7 @@ ArgoCD sync waves let you control the order in which resources are deployed with
 
 ```yaml
 # Infrastructure first (wave 0)
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

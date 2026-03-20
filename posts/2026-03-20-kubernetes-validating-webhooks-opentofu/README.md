@@ -8,12 +8,13 @@ Description: Learn how to create Kubernetes Validating Admission Webhooks with O
 
 ## Overview
 
-Kubernetes Validating Admission Webhooks intercept API requests and can accept or reject them based on custom logic. Unlike mutating webhooks, they cannot modify objects—only approve or deny them. Common uses include enforcing label requirements, image registry policies, and resource limit mandates.
+Kubernetes Validating Admission Webhooks intercept API requests and can accept or reject them based on custom logic. Unlike mutating webhooks, they cannot modify objects-only approve or deny them. Common uses include enforcing label requirements, image registry policies, and resource limit mandates.
 
 ## Step 1: Deploy the Validation Webhook Server
 
 ```hcl
 # main.tf - Deploy the validating webhook server
+
 resource "kubernetes_deployment_v1" "validator_server" {
   metadata {
     name      = "policy-validator"

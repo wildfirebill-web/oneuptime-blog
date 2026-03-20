@@ -14,6 +14,7 @@ MySQL connections over IPv4 can be intercepted on untrusted networks. SSL/TLS en
 
 ```bash
 # MySQL 8.0+ includes mysql_ssl_rsa_setup
+
 sudo mysql_ssl_rsa_setup --uid=mysql
 
 # Or generate manually with OpenSSL:

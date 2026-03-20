@@ -60,6 +60,7 @@ A flow is the core resource in MediaConnect. It has one source input and can hav
 
 ```bash
 # Create a basic MediaConnect flow with SRT source
+
 aws mediaconnect create-flow \
   --name "studio-feed" \
   --source '{

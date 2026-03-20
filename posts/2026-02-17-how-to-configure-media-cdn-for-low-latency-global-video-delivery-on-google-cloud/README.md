@@ -32,6 +32,7 @@ Media CDN addresses all of these with a cache hierarchy designed for media workl
 
 ```bash
 # Enable Media CDN API
+
 gcloud services enable networkservices.googleapis.com
 
 # Install gcloud beta components for Media CDN commands

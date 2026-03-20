@@ -24,6 +24,7 @@ Check the current settings:
 
 ```bash
 # Check if multicast snooping is enabled on docker0
+
 cat /sys/devices/virtual/net/docker0/bridge/multicast_snooping
 # 1 = enabled (default), 0 = disabled
 

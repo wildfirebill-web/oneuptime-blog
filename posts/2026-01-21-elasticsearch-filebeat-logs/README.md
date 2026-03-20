@@ -55,6 +55,7 @@ docker run -d \
 
 ```yaml
 # /etc/filebeat/filebeat.yml
+
 filebeat.inputs:
   - type: log
     enabled: true

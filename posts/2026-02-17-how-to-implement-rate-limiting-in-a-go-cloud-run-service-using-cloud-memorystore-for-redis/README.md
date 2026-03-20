@@ -18,6 +18,7 @@ First, create a Redis instance and set up the VPC connector for Cloud Run.
 
 ```bash
 # Create a Redis instance
+
 gcloud redis instances create rate-limiter \
   --region=us-central1 \
   --tier=basic \

@@ -301,6 +301,7 @@ import json
 kinesis = boto3.client("kinesis")
 
 # Put a single record
+
 kinesis.put_record(
     StreamName="event-stream",
     Data=json.dumps({"event": "page_view", "user_id": "123", "page": "/home"}),

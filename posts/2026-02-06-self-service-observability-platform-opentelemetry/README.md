@@ -50,6 +50,7 @@ Here is a Backstage catalog entry that includes observability configuration.
 
 ```yaml
 # catalog-info.yaml - Service registration with observability config
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:

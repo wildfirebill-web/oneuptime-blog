@@ -8,12 +8,13 @@ Description: Learn how null routes and blackhole routing work, when to use them 
 
 ## Introduction
 
-A null route (also called a blackhole route) silently discards all traffic destined for a specific prefix. Unlike a firewall DROP rule, a null route works at the routing level — the kernel discards packets before any network processing. Null routes are used for DDoS mitigation, loop prevention with route summarization, and blocking unwanted traffic efficiently.
+A null route (also called a blackhole route) silently discards all traffic destined for a specific prefix. Unlike a firewall DROP rule, a null route works at the routing level - the kernel discards packets before any network processing. Null routes are used for DDoS mitigation, loop prevention with route summarization, and blocking unwanted traffic efficiently.
 
 ## Creating Null Routes on Linux
 
 ```bash
-# Add a blackhole route — packets to 192.0.2.0/24 are silently dropped
+# Add a blackhole route - packets to 192.0.2.0/24 are silently dropped
+
 ip route add blackhole 192.0.2.0/24
 
 # Alternative: use the null device explicitly
@@ -24,7 +25,7 @@ ip route add unreachable 192.0.2.0/24
 ip route show 192.0.2.0/24
 # blackhole 192.0.2.0/24 proto static
 
-# Test — packets to this range are silently dropped
+# Test - packets to this range are silently dropped
 ping -c 3 192.0.2.1
 # No response, and no ICMP unreachable sent to the source
 ```

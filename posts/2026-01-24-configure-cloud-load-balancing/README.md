@@ -53,6 +53,7 @@ First, create instance groups and health checks.
 
 ```bash
 # Create a health check
+
 gcloud compute health-checks create http my-health-check \
     --port=80 \
     --request-path="/health" \

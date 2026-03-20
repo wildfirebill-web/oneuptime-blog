@@ -30,6 +30,7 @@ Flux can send a webhook to GitHub's workflow dispatch endpoint when a reconcilia
 
 ```yaml
 # clusters/staging/notifications/github-e2e-trigger.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

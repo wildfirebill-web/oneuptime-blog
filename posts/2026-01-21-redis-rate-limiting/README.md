@@ -64,6 +64,7 @@ class FixedWindowRateLimiter:
 
 
 # Usage
+
 limiter = FixedWindowRateLimiter(limit=100, window_seconds=60)
 
 # Test

@@ -14,6 +14,7 @@ Description: Learn the essential virsh commands for managing KVM virtual machine
 
 ```bash
 # List running VMs
+
 sudo virsh list
 
 # List all VMs (including stopped)
@@ -105,7 +106,7 @@ sudo virsh domdisplay rhel9-vm
 # Returns the VNC/SPICE connection URI
 ```
 
-## Resource Management on the Fly
+Resource Management on the Fly
 
 ```bash
 # Change memory allocation (live)

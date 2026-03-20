@@ -163,6 +163,7 @@ Use different semver constraints per environment:
 
 ```yaml
 # staging-app.yaml
+
 metadata:
   name: myapp-staging
   annotations:

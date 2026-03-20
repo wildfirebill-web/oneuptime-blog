@@ -26,6 +26,7 @@ Labels are 32-bit values with: 20 bits label value, 3 bits traffic class (QoS), 
 
 ```bash
 # Check if MPLS modules are available
+
 ls /lib/modules/$(uname -r)/kernel/net/mpls/
 
 # Check if the modules are loaded

@@ -14,6 +14,7 @@ UDP flood attacks overwhelm a target by sending massive volumes of UDP packets t
 
 ```bash
 # Check if you're under UDP flood:
+
 # Method 1: Watch interface statistics
 watch -n 1 "ip -s link show eth0 | grep -A2 'RX:'"
 # Rapidly increasing packet counter with no corresponding application load = flood

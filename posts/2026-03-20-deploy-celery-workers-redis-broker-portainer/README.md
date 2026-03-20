@@ -1,4 +1,4 @@
-# How to Deploy Celery Workers with Redis Broker via Portainer
+# How to Deploy Celery Workers with Redis Broker via Portainer - Deploy Workers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Celery is the most popular Python task queue for background job processing. Comb
 
 ```yaml
 # celery-stack.yml
+
 version: "3.8"
 services:
   # Redis as message broker and result backend
@@ -41,9 +42,9 @@ services:
     networks:
       - celery-net
 
-  # Celery worker — processes tasks from the queue
+  # Celery worker - processes tasks from the queue
   celery-worker:
-    image: myapp:1.2.3    # Same image as webapp — has the task definitions
+    image: myapp:1.2.3    # Same image as webapp - has the task definitions
     command: celery -A myapp.celery worker --loglevel=info --concurrency=4
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
@@ -55,7 +56,7 @@ services:
     networks:
       - celery-net
 
-  # Celery Beat — scheduled task runner
+  # Celery Beat - scheduled task runner
   celery-beat:
     image: myapp:1.2.3
     command: celery -A myapp.celery beat --loglevel=info --scheduler django_celery_beat.schedulers:DatabaseScheduler
@@ -68,7 +69,7 @@ services:
     networks:
       - celery-net
 
-  # Flower — web-based Celery monitoring
+  # Flower - web-based Celery monitoring
   flower:
     image: mher/flower:2.0
     command: celery flower --broker=redis://redis:6379/0
@@ -94,7 +95,7 @@ networks:
 ## Step 2: Define Celery Tasks
 
 ```python
-# tasks.py — define the tasks processed by workers
+# tasks.py - define the tasks processed by workers
 from celery import Celery
 import os
 
@@ -126,13 +127,13 @@ def send_email(to, subject, body):
 broker_url = os.environ.get("CELERY_BROKER_URL", "redis://localhost:6379/0")
 result_backend = os.environ.get("CELERY_RESULT_BACKEND", "redis://localhost:6379/1")
 
-# Task routing — send different tasks to different queues
+# Task routing - send different tasks to different queues
 task_routes = {
     "tasks.process_image": {"queue": "image-processing"},
     "tasks.send_email": {"queue": "email"},
 }
 
-# Worker queues — specify which queues each worker processes
+# Worker queues - specify which queues each worker processes
 # In Portainer, add environment variable: CELERY_QUEUES=image-processing
 ```
 

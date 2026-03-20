@@ -37,6 +37,7 @@ Pattern: `{service-name}` or `{service-name}-{context}`
 
 ```yaml
 # Good: Clear which service this routes to
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

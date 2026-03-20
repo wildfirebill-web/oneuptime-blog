@@ -49,6 +49,7 @@ Each region's gateway collector has a similar base configuration but with region
 
 ```yaml
 # us-east-gateway-config.yaml
+
 # Gateway collector for the US-East region.
 # Processes telemetry locally and exports to the central backend.
 receivers:

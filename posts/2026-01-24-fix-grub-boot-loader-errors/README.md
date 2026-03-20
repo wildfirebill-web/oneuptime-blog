@@ -76,6 +76,7 @@ error: file '/boot/vmlinuz-5.15.0-generic' not found.
 
 ```bash
 # List available partitions
+
 grub rescue> ls
 (hd0) (hd0,msdos1) (hd0,msdos2) (hd0,msdos5)
 

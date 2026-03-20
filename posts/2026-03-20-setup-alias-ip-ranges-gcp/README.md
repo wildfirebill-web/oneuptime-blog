@@ -16,6 +16,7 @@ Alias IP ranges allow a VM's network interface to have additional secondary IPv4
 PROJECT_ID="my-gcp-project"
 
 # Create a VM with an alias IP range for pods
+
 gcloud compute instances create k8s-node-01 \
   --project=$PROJECT_ID \
   --zone=us-central1-a \
@@ -26,7 +27,7 @@ gcloud compute instances create k8s-node-01 \
   --aliases=/24
 ```
 
-`--aliases=/24` allocates a /24 block from the subnet as an alias range — the VM can use any IP in that block.
+`--aliases=/24` allocates a /24 block from the subnet as an alias range - the VM can use any IP in that block.
 
 ## Adding Alias IP Range to an Existing Instance
 

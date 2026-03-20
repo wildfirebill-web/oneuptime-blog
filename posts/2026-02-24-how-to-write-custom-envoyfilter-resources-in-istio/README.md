@@ -232,6 +232,7 @@ When your EnvoyFilter is not working as expected, use these debugging steps:
 
 ```bash
 # Check the Envoy configuration dump
+
 istioctl proxy-config all deploy/my-app -n default -o json > /tmp/envoy-config.json
 
 # Search for your filter name

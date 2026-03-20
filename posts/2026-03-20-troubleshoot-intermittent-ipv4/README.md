@@ -17,6 +17,7 @@ Run a continuous ping to establish a baseline:
 ```bash
 ping -i 1 8.8.8.8 | tee /tmp/ping-log.txt &
 # Let it run for 30+ minutes
+
 ```
 
 Check for packet loss:

@@ -18,6 +18,7 @@ Start by setting up providers for each cloud:
 
 ```hcl
 # providers.tf
+
 # Multi-cloud provider configuration
 
 terraform {

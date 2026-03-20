@@ -18,6 +18,7 @@ Running `podman-compose up` without the `-d` flag starts services in the foregro
 
 ```bash
 # Start all services in the background
+
 podman-compose up -d
 
 # Output shows each container starting

@@ -20,6 +20,7 @@ When you run `podman build`, the last argument specifies the build context direc
 
 ```bash
 # The "." means the current directory is the build context
+
 podman build -t my-app .
 
 # You can specify a different context

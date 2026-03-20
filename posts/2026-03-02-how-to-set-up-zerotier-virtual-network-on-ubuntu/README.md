@@ -27,6 +27,7 @@ ZeroTier provides a one-line install script, or you can add their repository man
 
 ```bash
 # Option 1: Using the install script (downloads and runs automatically)
+
 curl -s https://install.zerotier.com | sudo bash
 
 # Option 2: Manual repository setup

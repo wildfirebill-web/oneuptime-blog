@@ -89,6 +89,7 @@ Deploy your data pipeline across environments using an ApplicationSet:
 
 ```yaml
 # app-of-apps/data-platform.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

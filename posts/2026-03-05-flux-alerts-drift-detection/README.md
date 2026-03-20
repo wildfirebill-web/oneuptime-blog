@@ -28,6 +28,7 @@ Create an alert that captures Kustomization events where drift was detected and 
 
 ```yaml
 # Alert for drift detection on Kustomization resources
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

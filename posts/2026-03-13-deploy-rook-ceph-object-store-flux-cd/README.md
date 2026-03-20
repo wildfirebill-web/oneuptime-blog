@@ -25,6 +25,7 @@ Deploying Rook-Ceph through Flux CD gives you GitOps control over your storage c
 
 ```yaml
 # infrastructure/sources/rook-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -8,7 +8,7 @@ Description: Learn how to configure a credentials helper in OpenTofu to authenti
 
 ---
 
-OpenTofu supports credentials helpers — external executables that supply authentication tokens for private module registries and other services. This avoids storing credentials directly in configuration files.
+OpenTofu supports credentials helpers - external executables that supply authentication tokens for private module registries and other services. This avoids storing credentials directly in configuration files.
 
 ---
 
@@ -16,6 +16,7 @@ OpenTofu supports credentials helpers — external executables that supply authe
 
 ```hcl
 # ~/.tofurc
+
 credentials "registry.example.com" {
   token = "my-private-token"
 }
@@ -52,7 +53,7 @@ case "$ACTION" in
     echo "{"token": "${TOKEN}"}"
     ;;
   store|forget)
-    # Read-only helper — do nothing
+    # Read-only helper - do nothing
     ;;
 esac
 ```

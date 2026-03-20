@@ -20,6 +20,7 @@ Here is a typical encrypted variables file:
 
 ```yaml
 # group_vars/production/vault.yml (before encryption)
+
 # Sensitive variables that will be encrypted with ansible-vault
 vault_db_password: "supersecret123"
 vault_api_key: "ak_live_abc123def456"

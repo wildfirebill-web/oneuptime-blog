@@ -8,7 +8,7 @@ Description: Configure reverse DNS PTR records for IPv6 mail server addresses to
 
 ## Introduction
 
-PTR (pointer) records provide reverse DNS lookup — mapping an IP address back to a hostname. Most receiving mail servers check that your sending IP has a valid PTR record and that the resulting hostname has an A or AAAA record pointing back to the same IP (forward-confirmed reverse DNS, FCrDNS). This is especially important for IPv6 mail servers.
+PTR (pointer) records provide reverse DNS lookup - mapping an IP address back to a hostname. Most receiving mail servers check that your sending IP has a valid PTR record and that the resulting hostname has an A or AAAA record pointing back to the same IP (forward-confirmed reverse DNS, FCrDNS). This is especially important for IPv6 mail servers.
 
 ## How IPv6 Reverse DNS Works
 
@@ -16,7 +16,7 @@ IPv6 PTR records live in the `ip6.arpa` zone. An IPv6 address is reversed nibble
 
 For example, the address `2001:db8::10` becomes:
 
-```
+```text
 0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa
 ```
 
@@ -26,6 +26,7 @@ A utility to convert IPv6 to its reverse DNS name:
 
 ```bash
 # Python helper to generate the reverse DNS name
+
 python3 -c "
 import ipaddress
 addr = ipaddress.ip_address('2001:db8::10')

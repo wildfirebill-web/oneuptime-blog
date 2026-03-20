@@ -255,6 +255,7 @@ Then reference these in your Web ACL rules. The allowlist should have the highes
 
 ```hcl
 # Allow trusted IPs (add this to your web_acl rules)
+
 rule {
   name     = "allow-trusted-ips"
   priority = 0

@@ -50,6 +50,7 @@ For automation and consistency, use the CLI:
 
 ```bash
 # Apply a delete lock to a production SQL database
+
 az lock create \
   --name "prevent-deletion" \
   --resource-group "rg-production" \

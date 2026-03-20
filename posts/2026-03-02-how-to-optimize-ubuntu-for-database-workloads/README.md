@@ -16,6 +16,7 @@ The most impactful single change for database performance. THP causes intermitte
 
 ```bash
 # Check current THP status
+
 cat /sys/kernel/mm/transparent_hugepage/enabled
 cat /sys/kernel/mm/transparent_hugepage/defrag
 

@@ -48,6 +48,7 @@ resource "aws_instance" "web" {
 ```bash
 #!/bin/bash
 # scripts/register-instance.sh
+
 set -e
 
 echo "Registering instance $INSTANCE_ID in region $REGION"
@@ -215,4 +216,4 @@ provisioner "local-exec" {
 
 ## Conclusion
 
-Use `local-exec` for scripts that run on the OpenTofu host machine — good for API calls, file operations, and external system notifications. Use `remote-exec` for scripts that must run on the created resource itself — but prefer user_data or Systems Manager when possible. Always pass dynamic values through environment variables rather than shell variable interpolation to avoid injection risks. Keep scripts small and focused; complex logic belongs in configuration management tools, not provisioners.
+Use `local-exec` for scripts that run on the OpenTofu host machine - good for API calls, file operations, and external system notifications. Use `remote-exec` for scripts that must run on the created resource itself - but prefer user_data or Systems Manager when possible. Always pass dynamic values through environment variables rather than shell variable interpolation to avoid injection risks. Keep scripts small and focused; complex logic belongs in configuration management tools, not provisioners.

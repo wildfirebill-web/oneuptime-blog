@@ -24,6 +24,7 @@ HAProxy expects the certificate and private key in a single PEM file:
 
 ```bash
 # Combine the certificate and key into one file
+
 sudo cat /etc/pki/tls/certs/server.crt /etc/pki/tls/private/server.key > /etc/haproxy/certs/site.pem
 
 # If you have a CA chain, include it

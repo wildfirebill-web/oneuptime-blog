@@ -24,6 +24,7 @@ nslookup performs simple DNS lookups:
 
 ```bash
 # Query from a pod
+
 kubectl exec -it my-pod -- nslookup kubernetes.default.svc.cluster.local
 
 # Output shows:

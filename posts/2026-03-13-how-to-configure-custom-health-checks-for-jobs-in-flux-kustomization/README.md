@@ -287,6 +287,7 @@ When a Job health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization db-migration
 
 # Check Job status

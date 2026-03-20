@@ -27,6 +27,7 @@ Create a Cosmos DB account using the Azure CLI:
 
 ```bash
 # Create a resource group
+
 az group create --name cosmos-demo-rg --location eastus
 
 # Create a Cosmos DB account with the SQL API

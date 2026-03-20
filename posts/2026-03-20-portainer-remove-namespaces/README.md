@@ -8,7 +8,7 @@ Description: Learn how to safely remove Kubernetes namespaces in Portainer, incl
 
 ## Introduction
 
-Removing a Kubernetes namespace in Portainer deletes ALL resources contained within it — pods, services, deployments, PVCs, secrets, and more. This is a destructive operation that requires careful planning. This guide covers the safe namespace removal process.
+Removing a Kubernetes namespace in Portainer deletes ALL resources contained within it - pods, services, deployments, PVCs, secrets, and more. This is a destructive operation that requires careful planning. This guide covers the safe namespace removal process.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Before deleting, list all resources to understand what will be lost:
 
 ```bash
 # Comprehensive resource list
+
 kubectl get all -n old-namespace
 
 # Storage (PVCs contain data!)

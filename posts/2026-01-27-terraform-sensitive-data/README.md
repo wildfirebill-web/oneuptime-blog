@@ -42,6 +42,7 @@ When applied:
 
 ```text
 # terraform plan output:
+
 # aws_db_instance.main will be created
 #   + password = (sensitive value)
 ```

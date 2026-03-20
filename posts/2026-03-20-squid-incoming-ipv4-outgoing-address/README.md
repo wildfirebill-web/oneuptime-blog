@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, IPv4, Proxy, tcp_outgoing_address, ACL, Configuration, Networking
+Tags: Squid, IPv4, Proxy, Tcp_outgoing_address, ACL, Configuration, Networking
 
 Description: Learn how to configure Squid to use different outgoing IPv4 source addresses based on which port or client the incoming request arrives on.
 
@@ -22,6 +22,7 @@ Your server must have multiple IPv4 addresses assigned to its network interface.
 
 ```bash
 # Assign additional IPv4 addresses to eth0
+
 ip addr add 203.0.113.10/24 dev eth0
 ip addr add 203.0.113.11/24 dev eth0
 

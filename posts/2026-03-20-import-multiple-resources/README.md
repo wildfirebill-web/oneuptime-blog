@@ -16,6 +16,7 @@ For a small number of resources:
 
 ```hcl
 # imports.tf
+
 import { to = aws_vpc.main      id = "vpc-0a1b2c3d" }
 import { to = aws_subnet.pub1   id = "subnet-0a1b2c" }
 import { to = aws_subnet.pub2   id = "subnet-0d4e5f" }

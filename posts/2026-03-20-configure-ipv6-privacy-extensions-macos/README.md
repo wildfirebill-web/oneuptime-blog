@@ -14,6 +14,7 @@ macOS implements two IPv6 privacy features by default:
 
 ```bash
 # View current IPv6 addresses to see privacy addresses
+
 ifconfig en0 | grep inet6
 
 # Output typically shows:

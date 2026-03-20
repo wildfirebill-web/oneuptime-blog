@@ -27,6 +27,7 @@ By default, Istio uses "permissive" mode, which accepts both plain text and mTLS
 
 ```yaml
 # Mesh-wide strict mTLS
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

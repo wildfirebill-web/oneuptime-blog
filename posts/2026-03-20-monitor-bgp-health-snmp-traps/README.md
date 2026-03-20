@@ -8,7 +8,7 @@ Description: Learn how to configure SNMP traps for BGP session state changes on 
 
 ## Why SNMP Traps for BGP?
 
-BGP session failures can be silent—traffic stops flowing but no alarm fires unless you have monitoring in place. SNMP traps send notifications to your NMS (Network Management System) the moment a BGP session changes state. This gives you near-real-time alerting without continuous polling.
+BGP session failures can be silent-traffic stops flowing but no alarm fires unless you have monitoring in place. SNMP traps send notifications to your NMS (Network Management System) the moment a BGP session changes state. This gives you near-real-time alerting without continuous polling.
 
 ## Relevant BGP SNMP MIBs
 
@@ -21,7 +21,7 @@ The BGP4-MIB (RFC 4273) defines objects for BGP monitoring:
 
 First, configure SNMPv2c or SNMPv3 on the Cisco IOS device:
 
-```
+```text
 ! Configure SNMPv2c
 Router(config)# snmp-server community public RO
 Router(config)# snmp-server community private RW
@@ -38,7 +38,7 @@ Router(config)# snmp-server location "DC1-CoreRouter-Rack42"
 
 Enable BGP-specific traps:
 
-```
+```text
 ! Enable BGP traps for session state changes
 Router(config)# snmp-server enable traps bgp
 
@@ -49,7 +49,7 @@ Router(config)# snmp-server enable traps bgp
 
 Verify traps are enabled:
 
-```
+```text
 Router# show snmp
 
 ! Output should include:
@@ -60,7 +60,7 @@ Router# show snmp
 
 Set the source interface for SNMP traps so the NMS can identify the router:
 
-```
+```text
 ! Use the loopback as the source for consistent identification
 Router(config)# snmp-server trap-source Loopback0
 
@@ -74,6 +74,7 @@ Use `snmpwalk` to poll BGP peer states from your NMS:
 
 ```bash
 # Walk the bgpPeerTable to get all neighbor states
+
 snmpwalk -v2c -c public 192.168.1.1 1.3.6.1.2.1.15.3
 
 # Get peer state for a specific neighbor (X.X.X.X = neighbor IP as OID)
@@ -133,7 +134,7 @@ curl -s -X POST "https://your-alerting-system.example.com/webhook" \
 
 For production environments, use SNMPv3 with authentication and encryption:
 
-```
+```text
 ! Configure SNMPv3 user
 Router(config)# snmp-server user bgpmonitor NetOps-Group v3 \
   auth sha AuthPassw0rd! priv aes 128 PrivPassw0rd!

@@ -18,6 +18,7 @@ View existing PriorityLevelConfigurations:
 
 ```bash
 # List all priority levels
+
 kubectl get prioritylevelconfigurations
 
 # View detailed configuration

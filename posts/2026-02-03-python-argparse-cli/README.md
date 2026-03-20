@@ -266,6 +266,7 @@ $ python greet.py Alice -u -e
 HELLO, ALICE!
 
 # Flags can be combined
+
 $ python greet.py Alice -ue --greeting "Welcome"
 WELCOME, ALICE!
 ```

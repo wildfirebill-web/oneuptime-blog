@@ -18,6 +18,7 @@ Start with a basic dataset creation.
 
 ```bash
 # Create a BigQuery dataset in the US multi-region
+
 bq mk --dataset \
     --location=US \
     --description="Sales analytics data" \

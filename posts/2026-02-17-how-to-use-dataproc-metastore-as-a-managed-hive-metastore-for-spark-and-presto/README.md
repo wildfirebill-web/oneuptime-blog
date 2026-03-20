@@ -24,6 +24,7 @@ Set up a metastore instance in your region:
 
 ```bash
 # Enable the Dataproc Metastore API
+
 gcloud services enable metastore.googleapis.com
 
 # Create a metastore instance

@@ -88,6 +88,7 @@ def date_shift_text(project_id, text, lower_bound=-30, upper_bound=30):
     return response.item.value
 
 # Test it
+
 date_shift_text(
     "my-project",
     "Patient DOB: 1985-03-15, Admission: 2024-01-10, Discharge: 2024-01-17"

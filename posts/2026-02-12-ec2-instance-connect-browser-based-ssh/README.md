@@ -55,6 +55,7 @@ Check if the agent is already installed:
 
 ```bash
 # On Amazon Linux 2
+
 rpm -q ec2-instance-connect
 
 # On Ubuntu

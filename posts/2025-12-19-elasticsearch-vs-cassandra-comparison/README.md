@@ -424,6 +424,7 @@ from cassandra.cluster import Cluster
 from elasticsearch import Elasticsearch
 
 # Initialize clients
+
 cassandra = Cluster(['cassandra-host']).connect('ecommerce')
 es = Elasticsearch(['http://elasticsearch-host:9200'])
 

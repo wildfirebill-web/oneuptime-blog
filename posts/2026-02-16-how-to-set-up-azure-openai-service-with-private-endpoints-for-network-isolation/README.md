@@ -44,6 +44,7 @@ If you do not already have a VNet, create one. You need at least two subnets: on
 
 ```bash
 # Create a resource group for all networking resources
+
 az group create --name rg-openai-network --location eastus
 
 # Create the virtual network with two subnets

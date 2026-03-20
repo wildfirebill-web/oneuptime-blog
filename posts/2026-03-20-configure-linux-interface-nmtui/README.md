@@ -14,6 +14,7 @@ Description: Use the nmtui text user interface to configure static and DHCP IPv4
 
 ```bash
 # Start the TUI (requires NetworkManager to be running)
+
 sudo nmtui
 ```
 
@@ -68,7 +69,7 @@ resolvectl status | grep "DNS Servers"
 
 1. From the nmtui main menu, select **Set system hostname**
 2. Type the new hostname
-3. Press Enter — the change takes effect immediately
+3. Press Enter - the change takes effect immediately
 
 ```bash
 # Verify hostname change

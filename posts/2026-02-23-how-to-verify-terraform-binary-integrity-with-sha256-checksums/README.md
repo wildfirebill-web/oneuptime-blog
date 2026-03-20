@@ -27,6 +27,7 @@ When downloading Terraform manually, you need three files:
 
 ```bash
 # Set the version
+
 TERRAFORM_VERSION="1.7.5"
 
 # Download the Terraform binary zip

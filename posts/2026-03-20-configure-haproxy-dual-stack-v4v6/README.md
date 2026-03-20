@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, HAProxy, Dual-Stack, v4v6, Load Balancer
+Tags: IPv6, HAProxy, Dual-Stack, V4v6, Load Balancer
 
 Description: Learn how to configure HAProxy dual-stack mode using the v4v6 bind option to accept both IPv4 and IPv6 connections on a single socket, and when to use separate bind directives instead.
 
@@ -99,6 +99,7 @@ frontend http_dual
 
 ```bash
 # Verify HAProxy config
+
 haproxy -c -f /etc/haproxy/haproxy.cfg
 
 # Test IPv4 connection

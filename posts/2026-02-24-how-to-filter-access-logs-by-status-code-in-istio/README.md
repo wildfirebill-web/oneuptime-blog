@@ -117,6 +117,7 @@ You can set different filtering levels per namespace. For example, production ge
 
 ```yaml
 # Production: errors only
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

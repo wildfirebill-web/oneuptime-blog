@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, VLANs, Routing, Linux, 802.1Q, Layer3
+Tags: Networking, VLAN, Routing, Linux, 802.1Q, Layer3
 
 Description: Understand how inter-VLAN routing works and configure it on Linux using 802.1Q VLAN subinterfaces to route traffic between isolated Layer 2 segments.
 
 ## Introduction
 
-VLANs segment a network at Layer 2, meaning hosts on different VLANs cannot communicate directly — even if they're on the same physical switch. To route between VLANs, you need a Layer 3 device: either a router with a trunk link (router-on-a-stick), a Layer 3 switch with SVIs, or a Linux host with VLAN subinterfaces.
+VLANs segment a network at Layer 2, meaning hosts on different VLANs cannot communicate directly - even if they're on the same physical switch. To route between VLANs, you need a Layer 3 device: either a router with a trunk link (router-on-a-stick), a Layer 3 switch with SVIs, or a Linux host with VLAN subinterfaces.
 
 ## How Router-on-a-Stick Works
 
@@ -29,6 +29,7 @@ A single trunk interface carries tagged frames for multiple VLANs. The router cr
 
 ```bash
 # Ensure the 802.1Q VLAN kernel module is loaded
+
 modprobe 8021q
 echo "8021q" >> /etc/modules
 ```

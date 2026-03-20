@@ -141,6 +141,7 @@ Go templates support several comparison operators.
 
 ```yaml
 # Equality check
+
 '{{if eq .env "production"}}prod-value{{end}}'
 
 # Not equal

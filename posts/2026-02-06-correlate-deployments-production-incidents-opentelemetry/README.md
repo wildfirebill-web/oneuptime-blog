@@ -36,6 +36,7 @@ The foundation of deployment correlation is making sure every piece of telemetry
 
 ```python
 # resource_config.py
+
 # This module configures the OpenTelemetry resource with deployment metadata.
 # The version, commit hash, and deploy timestamp are pulled from environment
 # variables that your CI/CD pipeline sets during deployment.

@@ -14,6 +14,7 @@ Redis supports TLS natively since version 6.0. Enabling TLS ensures that data in
 
 ```bash
 # Create a Certificate Authority (CA) and server certificate
+
 # For production: use your organization's CA or Let's Encrypt
 
 # Create CA key and certificate

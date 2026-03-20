@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Automated Backups, PITR, Disaster Recovery, Infrastructure as Code
+Tags: OpenTofu, AWS, RDS, Automated Backup, PITR, Disaster Recovery, Infrastructure as Code
 
 Description: Learn how to configure RDS automated backups, backup windows, and retention periods using OpenTofu to enable point-in-time recovery for your databases.
 
@@ -64,6 +64,7 @@ resource "aws_db_instance" "main" {
 
 ```hcl
 # Share automated backups (DB cluster snapshots) with another account
+
 # Note: Automated backups can be shared for cross-account restoration
 
 # First, find the latest automated backup

@@ -33,6 +33,7 @@ Create the execution role first.
 
 ```bash
 # Create trust policy for ECS tasks
+
 cat > /tmp/ecs-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Rancher, Kubernetes, Helm, StatefulSet, Search, Databases, SUSE Rancher, Observability
+Tags: Elasticsearch, Rancher, Kubernetes, Helm, StatefulSets, Search, Database, SUSE Rancher, Observability
 
 Description: Learn how to deploy a production-ready Elasticsearch cluster on a Rancher-managed Kubernetes cluster using the Elastic Helm chart with persistent storage, security, and Kibana.
 
@@ -16,6 +16,7 @@ Elasticsearch on Kubernetes provides a scalable search and analytics engine. Dep
 
 ```bash
 # Add the official Elastic Helm repository
+
 helm repo add elastic https://helm.elastic.co
 helm repo update
 
@@ -80,7 +81,7 @@ resources:
     cpu: 2000m
     memory: 4Gi
 
-# JVM heap size — set to half of container memory limit
+# JVM heap size - set to half of container memory limit
 esJavaOpts: "-Xmx2g -Xms2g"
 
 # Persistent storage
@@ -243,6 +244,6 @@ elasticsearch_indices_search_fetch_time_seconds
 
 ## Best Practices
 
-- Always set `esJavaOpts` heap to 50% of the container memory limit — Elasticsearch needs the other 50% for OS file cache.
+- Always set `esJavaOpts` heap to 50% of the container memory limit - Elasticsearch needs the other 50% for OS file cache.
 - Use `minimumMasterNodes` equal to `(replicas / 2) + 1` to prevent split-brain scenarios.
-- Enable Elasticsearch security (`xpack.security.enabled: true`) even in development — it is much harder to add later without cluster downtime.
+- Enable Elasticsearch security (`xpack.security.enabled: true`) even in development - it is much harder to add later without cluster downtime.

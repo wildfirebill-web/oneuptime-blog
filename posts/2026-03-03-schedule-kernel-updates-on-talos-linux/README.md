@@ -18,6 +18,7 @@ When Siderolabs releases a new version of Talos Linux, it includes an updated ke
 
 ```bash
 # Check the current kernel version on a node
+
 talosctl dmesg -n <node-ip> | head -5
 
 # Or use the read command to check kernel info

@@ -24,6 +24,7 @@ If you are using Cilium as your CNI plugin on Talos Linux, the simplest approach
 
 ```yaml
 # Cilium Helm values to enable WireGuard encryption
+
 # Apply this when installing or upgrading Cilium
 encryption:
   enabled: true

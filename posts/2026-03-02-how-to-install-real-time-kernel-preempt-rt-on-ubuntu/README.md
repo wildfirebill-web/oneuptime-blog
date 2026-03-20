@@ -36,6 +36,7 @@ Ubuntu ships a low-latency kernel that provides improved responsiveness though i
 
 ```bash
 # Install the Ubuntu low-latency kernel
+
 sudo apt update
 sudo apt install -y linux-lowlatency
 

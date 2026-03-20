@@ -14,6 +14,7 @@ Zero Trust on AWS assumes no implicit trust based on network location. Every acc
 
 ```hcl
 # main.tf - AWS Verified Access replaces VPN with identity-based access
+
 resource "aws_verifiedaccess_instance" "zero_trust" {
   description = "Zero Trust access instance"
 }

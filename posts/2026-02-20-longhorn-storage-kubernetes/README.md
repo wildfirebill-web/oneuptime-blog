@@ -36,6 +36,7 @@ Each Longhorn volume has its own dedicated storage controller (engine) that repl
 
 ```bash
 # Longhorn requires open-iscsi on all nodes
+
 # Install on Ubuntu/Debian
 sudo apt-get update
 sudo apt-get install -y open-iscsi

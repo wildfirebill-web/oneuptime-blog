@@ -27,6 +27,7 @@ The most straightforward method is building a custom ArgoCD repo server image:
 
 ```dockerfile
 # Dockerfile.repo-server
+
 FROM quay.io/argoproj/argocd:v2.9.3
 
 USER root

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, Monitoring, Cache Hit Rate, IPv4, squidclient, Metrics, Performance
+Tags: Squid, Monitoring, Cache Hit Rate, IPv4, Squidclient, Metrics, Performance
 
 Description: Learn how to monitor Squid proxy cache hit rates and performance metrics for IPv4 traffic using the cache manager interface and access log analysis.
 
@@ -16,6 +16,7 @@ The `squidclient` tool queries Squid's built-in cache manager interface.
 
 ```bash
 # Enable cache manager access in squid.conf (allow from localhost by default)
+
 # No extra configuration needed for local access
 
 # Get overall cache statistics
@@ -27,7 +28,7 @@ squidclient -h localhost -p 3128 mgr:counters
 
 Key metrics from `mgr:info`:
 
-```
+```text
 Cache information for squid:
     Hits as % of all requests:   5min: 42.3%, 60min: 38.7%
     Hits as % of bytes sent:     5min: 61.2%, 60min: 57.8%
@@ -91,11 +92,11 @@ access_log /var/log/squid/access.log combined
 
 ```bash
 #!/bin/bash
-# monitor_squid.sh — Print cache hit rate every 10 seconds
+# monitor_squid.sh - Print cache hit rate every 10 seconds
 while true; do
     STATS=$(squidclient -h localhost -p 3128 mgr:info 2>/dev/null)
     HIT5=$(echo "$STATS" | grep "5min:" | head -1 | grep -oP '\d+\.\d+(?=%)')
-    echo "$(date '+%H:%M:%S') — 5-min cache hit rate: ${HIT5}%"
+    echo "$(date '+%H:%M:%S') - 5-min cache hit rate: ${HIT5}%"
     sleep 10
 done
 ```

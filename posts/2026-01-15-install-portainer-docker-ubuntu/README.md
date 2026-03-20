@@ -22,6 +22,7 @@ Portainer is a lightweight management UI for Docker that lets you manage contain
 
 ```bash
 # Create volume for Portainer data
+
 docker volume create portainer_data
 ```
 

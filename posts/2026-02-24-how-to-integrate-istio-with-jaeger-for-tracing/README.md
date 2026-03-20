@@ -162,6 +162,7 @@ Deploy Jaeger with the Jaeger Operator:
 
 ```bash
 # Install the Jaeger Operator
+
 kubectl create namespace observability
 kubectl apply -f https://github.com/jaegertracing/jaeger-operator/releases/download/v1.51.0/jaeger-operator.yaml -n observability
 ```

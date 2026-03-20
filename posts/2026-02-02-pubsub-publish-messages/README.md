@@ -54,6 +54,7 @@ Creating a topic using the gcloud CLI:
 
 ```bash
 # Set your project ID
+
 export PROJECT_ID="your-project-id"
 
 # Create a new Pub/Sub topic

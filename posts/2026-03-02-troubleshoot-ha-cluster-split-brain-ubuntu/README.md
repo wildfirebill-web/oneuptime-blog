@@ -28,6 +28,7 @@ Signs that split-brain has occurred or is imminent:
 
 ```bash
 # Check cluster status
+
 sudo pcs status
 
 # Signs to look for:

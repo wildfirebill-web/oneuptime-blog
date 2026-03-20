@@ -37,6 +37,7 @@ Here is a basic configuration:
 
 ```yaml
 # Collector configuration with spanmetrics connector
+
 receivers:
   otlp:
     protocols:

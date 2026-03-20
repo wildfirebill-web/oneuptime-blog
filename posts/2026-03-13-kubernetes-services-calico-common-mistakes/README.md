@@ -29,6 +29,7 @@ The most common service-policy mistake is writing ingress policy that tries to m
 **Example of the mistake**:
 ```yaml
 # This will never match - ClusterIP is not the source on the backend
+
 ingress:
 - from:
   - ipBlock:

@@ -42,6 +42,7 @@ SIGKILL cannot be caught or ignored. It immediately terminates the process witho
 
 ```dockerfile
 # Using the signal name
+
 STOPSIGNAL SIGQUIT
 
 # Using the signal number

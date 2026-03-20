@@ -18,6 +18,7 @@ SoftEther isn't in Ubuntu's standard repositories, so you'll download it from th
 
 ```bash
 # Install build dependencies
+
 sudo apt update
 sudo apt install -y build-essential libssl-dev libreadline-dev zlib1g-dev \
     libncurses-dev libpthread-stubs0-dev

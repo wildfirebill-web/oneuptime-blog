@@ -77,6 +77,7 @@ Check where pods landed:
 
 ```bash
 # View pod distribution
+
 kubectl get pods -l app=web -o wide | awk '{print $7}' | tail -n +2 | sort | uniq -c
 
 # Expected: pods spread across many nodes

@@ -35,6 +35,7 @@ Create a values file for deploying a chart from a traditional Helm repository:
 
 ```yaml
 # helm-release-values.yaml
+
 values:
   repository:
     url: "https://charts.bitnami.com/bitnami"

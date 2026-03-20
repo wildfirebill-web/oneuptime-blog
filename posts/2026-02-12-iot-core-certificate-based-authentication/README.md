@@ -42,6 +42,7 @@ The simplest approach is letting AWS generate the certificates for you.
 
 ```bash
 # Generate a certificate and key pair
+
 aws iot create-keys-and-certificate \
   --set-as-active \
   --certificate-pem-outfile device-cert.pem \

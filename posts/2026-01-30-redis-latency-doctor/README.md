@@ -36,6 +36,7 @@ First, you need to configure the latency threshold. This threshold determines th
 
 ```bash
 # Set the latency threshold to 100 milliseconds
+
 redis-cli CONFIG SET latency-monitor-threshold 100
 
 # Verify the setting

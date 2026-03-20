@@ -16,6 +16,7 @@ The standard `otelcol-contrib` binary includes every component in the contrib re
 
 ```bash
 # Install the latest OCB
+
 go install go.opentelemetry.io/collector/cmd/builder@latest
 
 # Verify the installation

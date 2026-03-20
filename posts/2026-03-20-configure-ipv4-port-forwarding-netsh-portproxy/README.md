@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netsh, Port Forwarding, IPv4, portproxy
+Tags: Windows, Networking, Netsh, Port Forwarding, IPv4, Portproxy
 
 Description: Configure TCP port forwarding on Windows using netsh interface portproxy to redirect traffic from one IPv4 address and port to another, enabling reverse proxy and service redirection.
 
 ## Introduction
 
-`netsh interface portproxy` creates a TCP port forwarding rule at the kernel level — incoming connections on a specific IP:port are transparently redirected to a target IP:port. This is useful for service migration, exposing local containers, and building simple reverse proxies.
+`netsh interface portproxy` creates a TCP port forwarding rule at the kernel level - incoming connections on a specific IP:port are transparently redirected to a target IP:port. This is useful for service migration, exposing local containers, and building simple reverse proxies.
 
 ## Adding a Port Forwarding Rule
 
@@ -36,7 +36,7 @@ netsh interface portproxy show all
 
 Output:
 
-```
+```text
 Listen on ipv4:             Connect to ipv4:
 Address         Port        Address         Port
 --------------- ----------  --------------- ----------
@@ -50,6 +50,7 @@ WSL2 and Docker containers run on internal IPs. Forward a Windows port to a cont
 
 ```powershell
 # Get the WSL2 IP address
+
 $wslIP = (wsl hostname -I).Trim()
 
 # Forward Windows port 8080 to WSL2 port 3000
@@ -62,7 +63,7 @@ netsh interface portproxy add v4tov4 `
 
 ## Allowing the Port Through Windows Firewall
 
-portproxy alone is not enough — the firewall must also allow inbound connections:
+portproxy alone is not enough - the firewall must also allow inbound connections:
 
 ```cmd
 :: Allow inbound connections on the forwarded port
@@ -91,7 +92,7 @@ netsh interface portproxy reset
 ## Verifying the Forwarding
 
 ```cmd
-:: On a remote host — connect to the forwarded port
+:: On a remote host - connect to the forwarded port
 telnet 192.168.1.10 8080
 
 :: Or test with PowerShell

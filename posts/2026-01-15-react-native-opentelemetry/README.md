@@ -43,6 +43,7 @@ Let us start by installing the necessary packages for OpenTelemetry in your Reac
 
 ```bash
 # Core OpenTelemetry packages
+
 npm install @opentelemetry/api
 npm install @opentelemetry/sdk-trace-base
 npm install @opentelemetry/sdk-trace-web
@@ -928,7 +929,7 @@ const AppNavigationContainer: React.FC<{ children: React.ReactNode }> = ({
 export default AppNavigationContainer;
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Resource attributes provide context about the application and device:
 

@@ -35,6 +35,7 @@ Store the Discord webhook URL in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Discord webhook URL
+
 kubectl create secret generic discord-webhook-url \
   --namespace=flux-system \
   --from-literal=address=https://discord.com/api/webhooks/CHANNEL_ID/WEBHOOK_TOKEN

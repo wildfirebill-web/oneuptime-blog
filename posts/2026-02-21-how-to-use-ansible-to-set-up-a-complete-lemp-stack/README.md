@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, LEMP Stack, NGINX, MySQL, PHP-FPM
+Tags: Ansible, LEMP Stack, Nginx, MySQL, PHP-FPM
 
 Description: Deploy a production-ready LEMP stack (Linux, Nginx, MySQL, PHP-FPM) with Ansible including reverse proxy configuration and performance tuning.
 
@@ -14,6 +14,7 @@ The LEMP stack replaces Apache with Nginx and uses PHP-FPM instead of mod_php. N
 
 ```yaml
 # inventories/production/group_vars/all.yml
+
 nginx_worker_processes: auto
 nginx_worker_connections: 1024
 

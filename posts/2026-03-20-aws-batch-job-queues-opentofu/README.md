@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Batch, Job Queues, HPC, Infrastructure as Code
+Tags: OpenTofu, AWS, Batch, Job Queue, HPC, Infrastructure as Code
 
 Description: Learn how to create AWS Batch job queues, configure priority-based scheduling, and define job definitions using OpenTofu.
 
@@ -31,6 +31,7 @@ resource "aws_batch_job_queue" "standard" {
 }
 
 # High-priority queue for urgent jobs
+
 resource "aws_batch_job_queue" "priority" {
   name     = "${var.app_name}-priority-${var.environment}"
   state    = "ENABLED"

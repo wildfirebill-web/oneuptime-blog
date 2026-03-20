@@ -262,6 +262,7 @@ For a mesh-wide RED overview:
 
 ```promql
 # Top 10 services by request rate
+
 topk(10, sum(rate(istio_requests_total{reporter="destination"}[5m])) by (destination_service_name))
 
 # Services with error rates above 0

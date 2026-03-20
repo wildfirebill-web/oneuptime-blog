@@ -12,13 +12,13 @@ pfSense and OPNsense can run FRR (Free Range Routing) to add dynamic routing cap
 
 ## Installing FRR on pfSense
 
-```
+```text
 System → Package Manager → Available Packages
 Search: "frr" → Install "FRR"
 ```
 
 On OPNsense:
-```
+```text
 System → Firmware → Plugins
 Search: "os-frr" → Install
 ```
@@ -36,7 +36,7 @@ Search: "os-frr" → Install
 
 ### Global Settings
 
-```
+```text
 FRR Global Settings:
   Enable: ✓
   Default Router ID: 10.0.0.1 (pfSense WAN IP or loopback)
@@ -46,7 +46,7 @@ FRR Global Settings:
 
 ### BGP Configuration
 
-```
+```text
 BGP Router ID: 10.0.0.1
 AS Number: 65001
 Networks to Advertise: 192.168.1.0/24  (your LAN subnet)
@@ -54,10 +54,11 @@ Networks to Advertise: 192.168.1.0/24  (your LAN subnet)
 
 ### Adding a BGP Neighbor
 
-```
+```nginx
 Neighbor IP: 10.0.0.2     (upstream router's IPv4)
 Remote AS: 65100          (upstream router's ASN)
 Description: Upstream ISP
+
 Update Source: WAN        (interface facing the upstream router)
 ```
 
@@ -67,6 +68,7 @@ For advanced settings, edit FRR configuration directly.
 
 ```bash
 # Access FRR CLI
+
 vtysh
 
 # Show current BGP summary
@@ -74,7 +76,7 @@ show bgp summary
 show ip bgp
 ```
 
-```
+```nginx
 # /etc/frr/frr.conf (do not edit directly; use vtysh or the web UI)
 !
 frr version 8.x
@@ -112,7 +114,7 @@ vtysh -c "show ip bgp neighbors 10.0.0.2 received-routes"
 
 BGP uses TCP port 179. Ensure firewall rules allow BGP traffic.
 
-```
+```text
 pfSense: Firewall → Rules → WAN
 Add rule: Protocol=TCP, Destination=WAN address, Destination Port=179, Action=Pass
 ```

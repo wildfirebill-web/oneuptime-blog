@@ -26,6 +26,7 @@ Our cross-region setup replicates these components:
 
 ```hcl
 # providers.tf - Multi-region configuration
+
 provider "aws" {
   alias  = "primary"
   region = var.primary_region

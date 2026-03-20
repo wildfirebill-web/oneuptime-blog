@@ -24,7 +24,7 @@ flowchart LR
 
 Configure IPv6 on the Cable interface and enable DHCPv6 relay:
 
-```
+```text
 ! Enable IPv6 on cable interface
 interface Cable1/0/0
  ipv6 address 2001:db8:cmts:1::1/64
@@ -45,8 +45,9 @@ interface Loopback0
 
 DOCSIS configuration files sent to cable modems must include IPv6 parameters:
 
-```
+```text
 # DOCSIS config file (binary, shown in text format)
+
 # Enable IPv6 on the cable modem
 NetworkAccess 1;
 
@@ -94,7 +95,7 @@ Configure ISC Kea to handle CMTS subscriber prefix delegation:
 
 ## Verifying Cable Modem IPv6 Status
 
-```
+```text
 ! Cisco CMTS - verify cable modems have IPv6
 show cable modem ipv6
 
@@ -109,7 +110,7 @@ show ipv6 dhcp relay binding
 
 Cable TV and IPTV over IPv6 multicast requires MLD (Multicast Listener Discovery) on the CMTS:
 
-```
+```text
 ! Enable MLD on cable interface
 interface Cable1/0/0
  ipv6 mld join-group ff02::1

@@ -61,6 +61,7 @@ Each tenant gets a dedicated namespace with labels for identification and policy
 
 ```yaml
 # tenant-namespace.yaml - Namespace for Tenant A
+
 apiVersion: v1
 kind: Namespace
 metadata:

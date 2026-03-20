@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Parsing, net, net/netip, Programming
+Tags: Go, IPv6, Parsing, Net, Net/netip, Programming
 
 Description: Parse IPv6 addresses in Go from strings, URLs, log files, and various formats using net and net/netip packages.
 
@@ -237,4 +237,4 @@ func main() {
 
 ## Conclusion
 
-Go provides two ways to parse IPv6 addresses: the older `net.ParseIP()` returning a `net.IP` slice, and the newer `net/netip.ParseAddr()` returning a value type. Prefer `net/netip` for new code — it handles zone IDs, is comparable with `==`, and is more memory efficient. For URL parsing, `url.Parse()` handles bracket removal automatically via `u.Hostname()`.
+Go provides two ways to parse IPv6 addresses: the older `net.ParseIP()` returning a `net.IP` slice, and the newer `net/netip.ParseAddr()` returning a value type. Prefer `net/netip` for new code - it handles zone IDs, is comparable with `==`, and is more memory efficient. For URL parsing, `url.Parse()` handles bracket removal automatically via `u.Hostname()`.

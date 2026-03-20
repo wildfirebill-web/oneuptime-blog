@@ -1,4 +1,4 @@
-# How to Set Up Longhorn for Database Workloads
+# How to Set Up Longhorn for Database Workloads - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Longhorn storage optimally for database workloads includi
 
 ## Introduction
 
-Running databases on Kubernetes with Longhorn storage requires careful configuration to ensure data integrity, optimal performance, and reliable backup/recovery. Databases have unique storage requirements — they need predictable low latency, high IOPS, durable writes, and consistent backup mechanisms. This guide covers the complete setup for running production databases on Longhorn.
+Running databases on Kubernetes with Longhorn storage requires careful configuration to ensure data integrity, optimal performance, and reliable backup/recovery. Databases have unique storage requirements - they need predictable low latency, high IOPS, durable writes, and consistent backup mechanisms. This guide covers the complete setup for running production databases on Longhorn.
 
 ## Key Requirements for Database Storage
 
@@ -19,22 +19,23 @@ Running databases on Kubernetes with Longhorn storage requires careful configura
 | Filesystem | XFS for databases like PostgreSQL, MongoDB |
 | Backup | Automated recurring backups to external target |
 | IOPS | NVMe disks with dedicated storage class |
-| I/O Pattern | Random read/write — avoid HDD-backed storage |
+| I/O Pattern | Random read/write - avoid HDD-backed storage |
 
 ## Step 1: Create a Database Storage Class
 
 ```yaml
 # storageclass-database.yaml - Optimized storage class for databases
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: longhorn-database
   annotations:
-    # This is NOT the default class — databases should explicitly request it
+    # This is NOT the default class - databases should explicitly request it
     storageclass.kubernetes.io/is-default-class: "false"
 provisioner: driver.longhorn.io
 allowVolumeExpansion: true
-reclaimPolicy: Retain   # Keep PVs when PVCs are deleted — prevents accidental data loss
+reclaimPolicy: Retain   # Keep PVs when PVCs are deleted - prevents accidental data loss
 volumeBindingMode: Immediate
 parameters:
   # Three replicas for durability

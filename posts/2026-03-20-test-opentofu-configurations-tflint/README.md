@@ -58,6 +58,7 @@ tflint --init
 
 ```bash
 # Lint current directory
+
 tflint
 
 # Lint specific directory

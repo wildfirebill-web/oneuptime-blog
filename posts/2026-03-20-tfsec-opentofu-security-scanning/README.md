@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tfsec, Security Scanning, SAST, Compliance
+Tags: OpenTofu, Tfsec, Security Scanning, SAST, Compliance
 
 Description: Learn how to use tfsec to scan OpenTofu configurations for security misconfigurations, with custom checks and CI/CD integration for continuous security validation.
 
@@ -14,6 +14,7 @@ tfsec is a static security analysis tool for Terraform and OpenTofu configuratio
 
 ```bash
 # macOS
+
 brew install tfsec
 
 # Linux

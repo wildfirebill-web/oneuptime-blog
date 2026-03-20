@@ -31,6 +31,7 @@ provider "slack" {
 
 ```hcl
 # Standard project channels
+
 locals {
   project_name = var.project_name  # e.g., "payment-service"
 
@@ -163,4 +164,4 @@ output "deployment_channel_id" { value = slack_conversation.deployments.id }
 
 ## Conclusion
 
-Managing Slack channels with OpenTofu is most valuable when combined with monitoring tool configuration in the same apply — creating alert channels and configuring New Relic or PagerDuty to send to those channels in a single operation. Use the module pattern to create a standard set of channels for every new project, ensuring consistent naming conventions and descriptions across your workspace.
+Managing Slack channels with OpenTofu is most valuable when combined with monitoring tool configuration in the same apply - creating alert channels and configuring New Relic or PagerDuty to send to those channels in a single operation. Use the module pattern to create a standard set of channels for every new project, ensuring consistent naming conventions and descriptions across your workspace.

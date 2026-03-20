@@ -32,6 +32,7 @@ For automation, you can query the API:
 
 ```bash
 # List all available extensions for a specific Talos version
+
 curl -s https://factory.talos.dev/version/v1.7.0/extensions/official | jq '.[]'
 
 # Filter for storage-related extensions

@@ -33,6 +33,7 @@ graph TD
 
 ```bash
 # install-falco.sh
+
 # Deploy Falco as a DaemonSet so it runs on every node
 
 # Add the Falcosecurity Helm repository

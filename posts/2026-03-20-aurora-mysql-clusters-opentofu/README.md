@@ -33,6 +33,7 @@ resource "aws_db_subnet_group" "aurora" {
 
 ```hcl
 # Cluster parameter group
+
 resource "aws_rds_cluster_parameter_group" "aurora_mysql" {
   name        = "${var.project_name}-aurora-mysql-cluster-pg"
   family      = "aurora-mysql8.0"
@@ -184,4 +185,4 @@ tofu apply
 
 ## Conclusion
 
-Aurora MySQL clusters provide a production-ready database with automatic failover, up to 15 read replicas sharing the same storage layer, and continuous backups to S3. Direct read traffic to the reader endpoint and writes to the cluster endpoint—Aurora handles routing automatically. Enable Performance Insights and Enhanced Monitoring for visibility into query performance and instance-level metrics.
+Aurora MySQL clusters provide a production-ready database with automatic failover, up to 15 read replicas sharing the same storage layer, and continuous backups to S3. Direct read traffic to the reader endpoint and writes to the cluster endpoint-Aurora handles routing automatically. Enable Performance Insights and Enhanced Monitoring for visibility into query performance and instance-level metrics.

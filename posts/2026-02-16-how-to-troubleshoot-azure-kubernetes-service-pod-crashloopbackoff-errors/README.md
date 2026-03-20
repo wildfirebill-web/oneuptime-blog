@@ -22,6 +22,7 @@ Start by looking at the pod's current state and recent events.
 
 ```bash
 # Get the pod status with details
+
 kubectl get pods -n <namespace> -o wide
 
 # Describe the pod for events and conditions

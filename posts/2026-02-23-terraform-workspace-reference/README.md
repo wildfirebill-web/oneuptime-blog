@@ -18,6 +18,7 @@ The `terraform.workspace` expression returns a string containing the name of the
 
 ```hcl
 # This always returns a string - the current workspace name
+
 output "current_workspace" {
   value = terraform.workspace  # "default", "dev", "staging", "production", etc.
 }

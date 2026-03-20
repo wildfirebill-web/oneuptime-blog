@@ -1,4 +1,4 @@
-# How to Set Resource Requests and Limits for Kubernetes Apps in Portainer
+# How to Set Resource Requests and Limits for Kubernetes Apps in Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,7 +21,7 @@ When deploying an application in Portainer:
 
 ## Understanding CPU Units
 
-```
+```text
 1 CPU = 1000m (millicores)
 0.5 CPU = 500m
 0.1 CPU = 100m
@@ -31,6 +31,7 @@ When deploying an application in Portainer:
 
 ```yaml
 # Resource requests and limits in a Deployment spec
+
 spec:
   containers:
     - name: api
@@ -46,7 +47,7 @@ spec:
           memory: 512Mi   # 512 mebibytes
 ```
 
-## Resource Sizing Guidelines
+Resource Sizing Guidelines
 
 | App Type | CPU Request | CPU Limit | Memory Request | Memory Limit |
 |----------|------------|-----------|----------------|--------------|

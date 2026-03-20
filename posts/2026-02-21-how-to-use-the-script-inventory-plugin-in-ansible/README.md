@@ -72,6 +72,7 @@ Here is a complete Python inventory script:
 ```python
 #!/usr/bin/env python3
 # my_inventory.py
+
 # Custom dynamic inventory script
 
 import json

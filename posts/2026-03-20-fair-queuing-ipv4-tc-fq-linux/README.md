@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, Fair Queuing, IPv4, Linux, QoS, fq_codel
+Tags: tc, Fair Queuing, IPv4, Linux, QoS, Fq_codel
 
 Description: Configure Linux tc fair queuing qdiscs (fq, fq_codel, CAKE) to ensure equitable bandwidth distribution among IPv4 flows without per-IP configuration.
 
@@ -20,6 +20,7 @@ Fair queuing distributes bandwidth equally among competing flows without requiri
 
 ```bash
 # Replace the default pfifo_fast qdisc with fq
+
 sudo tc qdisc replace dev eth0 root fq
 
 # Configure with custom parameters
@@ -105,4 +106,4 @@ ping -c 50 8.8.8.8
 # With fq_codel, ping RTT should remain low even during download
 ```
 
-Fair queuing qdiscs are drop-in improvements over the default `pfifo_fast` — simply replacing the default qdisc with `fq_codel` or CAKE substantially reduces latency during congestion.
+Fair queuing qdiscs are drop-in improvements over the default `pfifo_fast` - simply replacing the default qdisc with `fq_codel` or CAKE substantially reduces latency during congestion.

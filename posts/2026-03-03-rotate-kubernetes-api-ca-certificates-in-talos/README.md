@@ -24,6 +24,7 @@ All of these are embedded in the Talos machine configuration for control plane n
 
 ```bash
 # View the current Kubernetes certificates on a control plane node
+
 talosctl -n 10.0.1.10 get certificate
 
 # Check the Kubernetes API server certificate expiration

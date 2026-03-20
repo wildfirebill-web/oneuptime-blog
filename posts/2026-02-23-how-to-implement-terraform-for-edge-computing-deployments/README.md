@@ -16,6 +16,7 @@ In this guide, we will cover how to deploy edge computing infrastructure with Te
 
 ```hcl
 # edge/cloudfront.tf
+
 # CloudFront distribution with Lambda@Edge functions
 
 resource "aws_cloudfront_distribution" "main" {

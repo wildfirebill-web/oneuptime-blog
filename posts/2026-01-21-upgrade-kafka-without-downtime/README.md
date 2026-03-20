@@ -38,6 +38,7 @@ Check the release notes for your target version to understand:
 
 ```bash
 # Check for under-replicated partitions
+
 bin/kafka-topics.sh --bootstrap-server localhost:9092 \
   --describe --under-replicated-partitions
 

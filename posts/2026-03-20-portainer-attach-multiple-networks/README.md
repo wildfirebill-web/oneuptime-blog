@@ -1,4 +1,4 @@
-# How to Attach Containers to Multiple Networks in Portainer
+# How to Attach Containers to Multiple Networks in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to attach Docker containers to multiple networks in Porta
 
 ## Introduction
 
-Attaching containers to multiple networks is a core pattern for multi-tier application architectures. A container can belong to several Docker networks simultaneously, enabling it to act as a bridge between network segments — for example, an API server that is reachable from a frontend network while also accessing a private database network. Portainer makes this straightforward both at container creation and for running containers.
+Attaching containers to multiple networks is a core pattern for multi-tier application architectures. A container can belong to several Docker networks simultaneously, enabling it to act as a bridge between network segments - for example, an API server that is reachable from a frontend network while also accessing a private database network. Portainer makes this straightforward both at container creation and for running containers.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Attaching containers to multiple networks is a core pattern for multi-tier appli
 
 ## Why Multiple Networks
 
-```
+```text
 Frontend Network (dmz)    ←→    nginx (proxy)    ←→    App Network (backend)
                                      ↓
                           app (api server)       ←→    DB Network (data)
@@ -25,14 +25,15 @@ Frontend Network (dmz)    ←→    nginx (proxy)    ←→    App Network (back
                                                        postgres (db)
 ```
 
-- `nginx` is on `dmz` and `backend` — receives external traffic, proxies to `app`
-- `app` is on `backend` and `data` — talks to both nginx and postgres
-- `postgres` is only on `data` — not reachable from dmz
+- `nginx` is on `dmz` and `backend` - receives external traffic, proxies to `app`
+- `app` is on `backend` and `data` - talks to both nginx and postgres
+- `postgres` is only on `data` - not reachable from dmz
 
 ## Step 1: Create Networks First
 
 ```bash
 # Create three isolated networks:
+
 docker network create --driver bridge dmz-network
 docker network create --driver bridge --internal app-network
 docker network create --driver bridge --internal data-network
@@ -76,7 +77,7 @@ docker inspect my-api-container --format '{{range $name, $conf := .NetworkSettin
 ## Step 4: Multi-Network Docker Compose Configuration
 
 ```yaml
-# docker-compose.yml — multi-tier architecture
+# docker-compose.yml - multi-tier architecture
 version: "3.8"
 
 services:

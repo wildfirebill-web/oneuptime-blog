@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ARP, Networking, MAC Address, IPv4, Layer 2
 
-Description: ARP (Address Resolution Protocol) resolves IPv4 addresses to MAC addresses by broadcasting a "who has this IP?" query on the local network, enabling layer-2 frame delivery on Ethernet networks.
+Description: ARP (Address Resolution Protocol) resolves IPv4 addresses to MAC addresses by broadcasting a 'who has this IP?' query on the local network, enabling layer-2 frame delivery on Ethernet networks.
 
 ## Why ARP Is Necessary
 
@@ -26,7 +26,7 @@ sequenceDiagram
 
 ## ARP Packet Structure
 
-```
+```text
 Hardware Type:    1 (Ethernet)
 Protocol Type:    0x0800 (IPv4)
 HW Address Len:   6 (MAC = 6 bytes)
@@ -65,6 +65,7 @@ Hosts cache ARP replies to avoid broadcasting for every packet. The cache has a 
 
 ```bash
 # View the ARP cache on Linux
+
 ip neigh show
 
 # Or with arp command
@@ -81,7 +82,7 @@ arp -a
 
 When sending traffic off-subnet, the host sends packets to the default gateway's MAC address. The gateway's IP is resolved via ARP:
 
-```
+```text
 Destination: 8.8.8.8 (off-subnet)
 → Host ARPs for 192.168.1.1 (default gateway)
 → Gets gateway's MAC

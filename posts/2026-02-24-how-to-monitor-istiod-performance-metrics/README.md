@@ -126,12 +126,13 @@ When the root CA certificate expires. Set an alert well in advance:
 
 This fires when the root cert is less than 30 days from expiry.
 
-## Resource Usage Metrics
+Resource Usage Metrics
 
 ### CPU and Memory
 
 ```promql
 # CPU usage
+
 rate(container_cpu_usage_seconds_total{pod=~"istiod-.*", namespace="istio-system"}[5m])
 
 # Memory usage

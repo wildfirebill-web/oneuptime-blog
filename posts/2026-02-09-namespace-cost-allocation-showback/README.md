@@ -173,6 +173,7 @@ class NamespaceCostCalculator:
         return pd.DataFrame(costs)
 
 # Usage
+
 calculator = NamespaceCostCalculator('http://prometheus:9090')
 report = calculator.generate_monthly_report()
 print(report.groupby('team')['total_cost'].sum())

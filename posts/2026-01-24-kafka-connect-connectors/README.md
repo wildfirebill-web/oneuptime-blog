@@ -37,6 +37,7 @@ graph LR
 # connect-distributed.properties
 
 # Kafka cluster connection
+
 bootstrap.servers=kafka-1:9092,kafka-2:9092,kafka-3:9092
 
 # Connect cluster identity

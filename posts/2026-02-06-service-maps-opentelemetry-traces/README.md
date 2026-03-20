@@ -90,6 +90,7 @@ The OpenTelemetry Collector has a built-in connector called `spanmetrics` that e
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

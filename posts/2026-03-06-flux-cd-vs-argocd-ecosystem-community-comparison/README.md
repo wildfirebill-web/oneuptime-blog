@@ -61,6 +61,7 @@ Flux CD integrates with the broader Kubernetes ecosystem through its controller-
 
 ```yaml
 # Flux CD ecosystem integration example:
+
 # Using Flux with Terraform Controller for infrastructure
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

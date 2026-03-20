@@ -22,6 +22,7 @@ Run Checkmk with a single Docker command.
 
 ```bash
 # Run Checkmk Raw Edition with persistent data
+
 docker run -d \
   --name checkmk \
   --restart unless-stopped \

@@ -51,6 +51,7 @@ With PgBouncer:
 
 ```bash
 # Install PgBouncer
+
 sudo apt-get update
 sudo apt-get install pgbouncer
 

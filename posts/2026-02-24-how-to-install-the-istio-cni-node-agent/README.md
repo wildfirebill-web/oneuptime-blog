@@ -44,6 +44,7 @@ The simplest installation method:
 
 ```yaml
 # istio-cni.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

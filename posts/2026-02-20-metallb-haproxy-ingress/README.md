@@ -51,6 +51,7 @@ If MetalLB is not yet configured, create an IP pool:
 
 ```yaml
 # metallb-pool.yaml
+
 # Reserve a range of IPs for the HAProxy Ingress Controller.
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

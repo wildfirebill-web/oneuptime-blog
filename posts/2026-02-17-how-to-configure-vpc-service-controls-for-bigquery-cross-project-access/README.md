@@ -40,6 +40,7 @@ The simplest case. If both projects are in the same perimeter, cross-project que
 
 ```bash
 # Verify both projects are in the same perimeter
+
 gcloud access-context-manager perimeters describe my-perimeter \
   --policy=$ACCESS_POLICY_ID \
   --format="value(status.resources)"

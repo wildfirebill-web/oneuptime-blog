@@ -35,6 +35,7 @@ To set up CMK encryption, you need:
 
 ```bash
 # Create a Key Vault with soft delete and purge protection enabled
+
 # Purge protection prevents permanent deletion of keys - required for disk encryption
 az keyvault create \
   --name my-disk-encryption-kv \

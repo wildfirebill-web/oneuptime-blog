@@ -16,6 +16,7 @@ Before upgrading, you need to understand exactly what changed. This determines y
 
 ```bash
 # Compare two versions of a module
+
 # Clone the module repository and diff the versions
 git clone https://github.com/myorg/terraform-aws-vpc.git
 cd terraform-aws-vpc

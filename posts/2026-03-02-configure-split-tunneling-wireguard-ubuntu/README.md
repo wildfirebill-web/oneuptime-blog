@@ -47,6 +47,7 @@ PrivateKey = CLIENT_PRIVATE_KEY
 Address = 10.0.0.2/24
 
 # No DNS override - keep using your normal DNS for internet
+
 # DNS = 10.10.0.1   # Uncomment if you need to resolve corporate hostnames
 
 [Peer]

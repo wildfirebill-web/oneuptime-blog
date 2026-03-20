@@ -26,6 +26,7 @@ Every `flux create` command supports the `--export` flag. When used, the resourc
 
 ```bash
 # Apply directly to the cluster
+
 flux create source git my-repo --url=https://github.com/myorg/my-app --branch=main
 
 # Export as YAML instead of applying

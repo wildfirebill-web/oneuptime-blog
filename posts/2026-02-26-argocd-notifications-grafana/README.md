@@ -272,6 +272,7 @@ In Grafana, create an annotation query filtered by both `argocd` and the applica
 
 ```bash
 # Check notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test Grafana annotation API directly

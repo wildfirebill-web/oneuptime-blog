@@ -493,6 +493,7 @@ class MonotonicRedisClient:
 
 
 # Usage example
+
 def demonstrate_monotonic_reads():
     client = MonotonicRedisClient(
         master_host="redis-master",

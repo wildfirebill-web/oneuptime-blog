@@ -32,6 +32,7 @@ The simplest way to see MetalLB events is to describe the service:
 
 ```bash
 # Describe the service to see all events including MetalLB allocations
+
 kubectl describe svc my-service
 ```
 

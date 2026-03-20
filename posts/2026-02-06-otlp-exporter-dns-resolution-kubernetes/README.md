@@ -28,6 +28,7 @@ Kubernetes DNS follows a specific naming convention. If your Collector runs in t
 
 ```bash
 # This will fail if the app is NOT in the 'observability' namespace
+
 export OTEL_EXPORTER_OTLP_ENDPOINT="http://otel-collector:4317"
 
 # This is the correct fully qualified service name

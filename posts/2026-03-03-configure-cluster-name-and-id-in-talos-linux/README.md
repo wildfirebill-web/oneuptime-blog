@@ -20,6 +20,7 @@ The cluster ID is a unique cryptographic identifier that Talos generates automat
 
 ```bash
 # The cluster name is "production-us-east" in this example
+
 talosctl gen config production-us-east https://192.168.1.100:6443
 ```
 

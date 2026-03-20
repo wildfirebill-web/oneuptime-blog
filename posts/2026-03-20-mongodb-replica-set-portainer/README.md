@@ -1,4 +1,4 @@
-# How to Deploy a MongoDB Replica Set via Portainer
+# How to Deploy a MongoDB Replica Set via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ A MongoDB Replica Set maintains multiple copies of your data across multiple ser
 
 ```bash
 # Generate authentication key for replica set members
+
 openssl rand -base64 756 > /opt/mongodb/keyfile
 chmod 400 /opt/mongodb/keyfile
 chown 999:999 /opt/mongodb/keyfile  # MongoDB container user

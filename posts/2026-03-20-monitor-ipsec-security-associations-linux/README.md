@@ -12,6 +12,7 @@ IPsec Security Associations (SAs) are the negotiated parameters that govern how 
 
 ```bash
 # Quick status overview
+
 sudo ipsec status
 # Expected output:
 # site-to-site{1}: INSTALLED, TUNNEL mode, reqid 1, ESP in UDP SPIs: ...
@@ -29,7 +30,7 @@ sudo ipsec statusall
 
 ## Reading ipsec statusall Output
 
-```
+```text
 site-to-site[1]: ESTABLISHED 2 hours ago, 1.2.3.4[gateway-a]...5.6.7.8[gateway-b]
   site-to-site[1]: IKEv2 SPIs: abc12345_i def67890_r*, ...
   site-to-site[1]: IKE proposal: AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048
@@ -78,7 +79,7 @@ sudo tcpdump -i eth0 -c 100 -n proto 50 | wc -l
 
 ```bash
 #!/bin/bash
-# monitor-ipsec.sh — Print SA status and alert on stale tunnels
+# monitor-ipsec.sh - Print SA status and alert on stale tunnels
 
 MAX_AGE_SECONDS=300  # Alert if no traffic for 5 minutes
 

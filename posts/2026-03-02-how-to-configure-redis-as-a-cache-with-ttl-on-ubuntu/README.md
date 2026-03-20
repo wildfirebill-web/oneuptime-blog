@@ -26,6 +26,7 @@ sudo nano /etc/redis/redis.conf
 
 ```text
 # Required: set a memory limit
+
 maxmemory 2gb
 
 # Eviction policy - what to remove when memory is full

@@ -49,6 +49,7 @@ The simplest way to create a super stream is using the `rabbitmq-streams` CLI to
 
 ```bash
 # Create a super stream with 3 partitions
+
 rabbitmq-streams add_super_stream orders --partitions 3
 
 # Verify the super stream was created

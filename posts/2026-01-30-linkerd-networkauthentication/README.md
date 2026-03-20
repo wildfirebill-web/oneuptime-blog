@@ -29,6 +29,7 @@ Here is the complete specification for a `NetworkAuthentication` resource:
 
 ```yaml
 # NetworkAuthentication defines identity based on source IP addresses
+
 apiVersion: policy.linkerd.io/v1alpha1
 kind: NetworkAuthentication
 metadata:

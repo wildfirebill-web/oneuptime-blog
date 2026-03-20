@@ -75,6 +75,7 @@ By default, `xfs_fsr` runs for two hours. You can specify a different time limit
 
 ```bash
 # Run for 30 minutes
+
 sudo xfs_fsr -t 1800 /data
 ```
 

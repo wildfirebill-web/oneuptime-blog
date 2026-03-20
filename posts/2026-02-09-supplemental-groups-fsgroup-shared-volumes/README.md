@@ -51,6 +51,7 @@ kubectl exec fsgroup-demo -- ls -la /data
 
 kubectl exec fsgroup-demo -- id
 # Shows: uid=0(root) gid=0(root) groups=2000
+
 ```
 
 ## Using supplementalGroups

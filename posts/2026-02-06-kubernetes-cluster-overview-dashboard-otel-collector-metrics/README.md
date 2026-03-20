@@ -30,6 +30,7 @@ Here is the collector config for the cluster-level deployment:
 
 ```yaml
 # otel-collector-cluster.yaml
+
 # Deploy this as a single-replica Deployment (not a DaemonSet)
 receivers:
   k8scluster:

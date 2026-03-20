@@ -22,6 +22,7 @@ Before configuring mTLS in your gateway, you need certificates for both the gate
 
 ```bash
 # Generate a private CA
+
 openssl genrsa -out ca-key.pem 4096
 openssl req -new -x509 -days 3650 -key ca-key.pem -out ca-cert.pem \
   -subj "/CN=Internal CA/O=YourOrg"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, IPv4, Server Reflection, Go, Python, grpcurl, Testing
+Tags: gRPC, IPv4, Server Reflection, Go, Python, Grpcurl, Testing
 
 Description: Enable gRPC server reflection on IPv4 servers in Go and Python so clients can discover available services and methods without proto files, using grpcurl and grpc_cli.
 
@@ -83,6 +83,7 @@ if __name__ == "__main__":
 
 ```bash
 # Install grpcurl
+
 brew install grpcurl
 
 # List all services

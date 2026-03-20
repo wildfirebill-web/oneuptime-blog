@@ -24,6 +24,7 @@ Start by creating the infrastructure that ArgoCD will manage.
 
 ```hcl
 # providers.tf
+
 # Configure the AWS provider and EKS module
 terraform {
   required_version = ">= 1.0"

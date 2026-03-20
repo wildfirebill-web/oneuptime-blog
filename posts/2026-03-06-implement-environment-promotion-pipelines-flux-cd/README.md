@@ -30,6 +30,7 @@ graph LR
 
 ```yaml
 # Recommended directory structure
+
 # fleet-infra/
 #   apps/
 #     base/                    (shared manifests)

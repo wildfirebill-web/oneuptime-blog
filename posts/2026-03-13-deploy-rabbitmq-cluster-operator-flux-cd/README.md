@@ -24,6 +24,7 @@ Deploying RabbitMQ through Flux CD ensures your message broker topology, configu
 
 ```yaml
 # infrastructure/sources/rabbitmq-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

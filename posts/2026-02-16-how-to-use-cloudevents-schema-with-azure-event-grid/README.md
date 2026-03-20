@@ -57,6 +57,7 @@ When you create an Event Grid topic, specify the input schema as CloudEvents.
 
 ```bash
 # Create a topic that accepts CloudEvents schema
+
 az eventgrid topic create \
   --name topic-orders-cloudevents \
   --resource-group rg-events \

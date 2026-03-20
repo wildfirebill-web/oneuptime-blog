@@ -35,6 +35,7 @@ If your `/home` is on a separate partition, you can encrypt it without reinstall
 
 ```bash
 # Back up /home to an external drive
+
 sudo rsync -aHAXv /home/ /mnt/backup/home/
 
 # Verify the backup looks correct

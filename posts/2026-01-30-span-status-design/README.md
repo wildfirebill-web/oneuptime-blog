@@ -53,6 +53,7 @@ The UNSET status is the default state for any span. When a span completes withou
 
 ```python
 # Python example: UNSET status (default behavior)
+
 from opentelemetry import trace
 
 # Get the tracer

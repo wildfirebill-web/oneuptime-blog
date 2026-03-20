@@ -14,7 +14,7 @@ OpenTofu (the open-source Terraform fork) can provision both the controller infr
 
 ## Project Structure
 
-```
+```text
 ingress/
 ├── main.tf
 ├── helm.tf

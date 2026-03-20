@@ -28,6 +28,7 @@ You need a GKE cluster with workloads running on it. Create one if you do not al
 
 ```bash
 # Create a GKE cluster for chaos testing
+
 gcloud container clusters create chaos-testing-cluster \
   --zone=us-central1-a \
   --num-nodes=3 \

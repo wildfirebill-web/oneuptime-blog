@@ -14,6 +14,7 @@ Node Exporter defaults to listening on all interfaces (0.0.0.0:9100). On servers
 
 ```bash
 # Install Node Exporter
+
 NODEEXPORTER_VERSION="1.7.0"
 wget https://github.com/prometheus/node_exporter/releases/download/v${NODEEXPORTER_VERSION}/node_exporter-${NODEEXPORTER_VERSION}.linux-amd64.tar.gz
 tar xzf node_exporter-*.tar.gz

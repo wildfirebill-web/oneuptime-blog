@@ -26,6 +26,7 @@ DHCPv6 provides stateful IPv6 address assignment and DNS server information to c
 
 ```wireshark
 # Show ALL DHCPv6 messages
+
 dhcpv6
 
 # Show only Solicit messages
@@ -45,7 +46,7 @@ udp.port == 546 || udp.port == 547
 
 A successful stateful DHCPv6 exchange follows SARR pattern:
 
-```
+```text
 1. Client  → ff02::1:2 (All-DHCPv6-Relay-Agents-and-Servers): SOLICIT
 2. Server  → Client link-local: ADVERTISE (offers an address)
 3. Client  → ff02::1:2: REQUEST (requests the offered address)

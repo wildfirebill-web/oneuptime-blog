@@ -31,6 +31,7 @@ First, let's set up the mail configuration. Open your `.env` file and configure 
 
 ```env
 # Using SMTP (common for development with Mailtrap)
+
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525

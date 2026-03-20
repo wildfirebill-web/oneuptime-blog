@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Network Automation, Resource Modules, Idempotent, Cisco IOS, BGP, VLANs
+Tags: Ansible, Network Automation, Resource Modules, Idempotent, Cisco IOS, BGP, VLAN
 
 Description: Learn how to use Ansible network resource modules to manage network device configuration idempotently, including interfaces, VLANs, BGP, and ACLs on Cisco IOS and other platforms.
 
@@ -10,7 +10,7 @@ Description: Learn how to use Ansible network resource modules to manage network
 
 Ansible network resource modules provide a structured, idempotent way to manage network configuration using `state` parameters: `merged`, `replaced`, `overridden`, `deleted`, and `gathered`.
 
-## Resource Module States
+Resource Module States
 
 | State | Behavior |
 |-------|----------|

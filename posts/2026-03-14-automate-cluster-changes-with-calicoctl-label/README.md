@@ -30,6 +30,7 @@ Instead of using `calicoctl label` imperatively, manage labels declaratively thr
 
 ```yaml
 # calico-node-labels/worker-1.yaml
+
 apiVersion: projectcalico.org/v3
 kind: Node
 metadata:

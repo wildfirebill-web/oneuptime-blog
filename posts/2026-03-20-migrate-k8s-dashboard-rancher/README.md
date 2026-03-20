@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, kubernetes-dashboard, ui
+Tags: Rancher, Migration, Kubernetes-dashboard, UI
 
 Description: Guide to transitioning cluster management from the Kubernetes Dashboard to Rancher's more powerful UI.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

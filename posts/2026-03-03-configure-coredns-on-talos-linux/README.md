@@ -20,6 +20,7 @@ Check the current CoreDNS status:
 
 ```bash
 # View CoreDNS pods
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns
 
 # View the CoreDNS Service

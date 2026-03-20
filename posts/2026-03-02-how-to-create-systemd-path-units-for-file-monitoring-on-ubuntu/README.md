@@ -47,6 +47,7 @@ User=www-data
 Group=www-data
 
 # Script that processes the files
+
 ExecStart=/usr/local/bin/process-uploads.sh
 
 # Don't start another instance while one is running

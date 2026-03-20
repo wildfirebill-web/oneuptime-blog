@@ -136,6 +136,7 @@ sudo nvme connect -t tcp -a 192.168.1.10 -s 4420 \
 
 ```bash
 # List NVMe devices
+
 sudo nvme list
 
 # Check the connected controllers

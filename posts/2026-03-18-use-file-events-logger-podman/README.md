@@ -20,6 +20,7 @@ Configure Podman to use the file events logger.
 
 ```bash
 # Create the configuration directory
+
 mkdir -p ~/.config/containers/
 
 # Set file as the events logger

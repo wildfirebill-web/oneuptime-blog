@@ -64,6 +64,7 @@ Apply the policy.
 
 ```bash
 # Create the metric-absence alert
+
 gcloud alpha monitoring policies create --policy-from-file=absence-alert.json
 ```
 

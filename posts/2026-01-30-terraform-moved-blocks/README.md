@@ -105,6 +105,7 @@ Start with resources in your root module.
 
 ```hcl
 # main.tf (before)
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"
@@ -462,7 +463,7 @@ Commit moved blocks in the same PR as the resource changes. This creates a clear
 
 ## Troubleshooting
 
-### Resource Not Found in State
+Resource Not Found in State
 
 If Terraform cannot find the source address, check your state file.
 

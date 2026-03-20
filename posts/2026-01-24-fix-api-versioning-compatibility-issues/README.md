@@ -55,6 +55,7 @@ The most explicit approach - version in the URL path:
 
 ```python
 # url_versioning.py
+
 from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
 from typing import Optional, List

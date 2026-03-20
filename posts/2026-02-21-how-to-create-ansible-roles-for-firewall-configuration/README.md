@@ -33,6 +33,7 @@ roles/firewall/
 
 ```yaml
 # roles/firewall/defaults/main.yml
+
 # Whether to enable the firewall (safety switch during setup)
 fw_enabled: true
 

@@ -25,6 +25,7 @@ Processes in the background (`command &`) are still in the shell's job list and 
 
 ```bash
 # Basic usage
+
 nohup command &
 
 # Run a long script that survives disconnect

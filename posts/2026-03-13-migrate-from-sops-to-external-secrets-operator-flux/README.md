@@ -29,6 +29,7 @@ Before migrating, inventory all SOPS-encrypted secrets in your repository:
 
 ```bash
 # Find all SOPS-encrypted files
+
 find clusters/ -name "*.yaml" -exec \
   grep -l "^sops:" {} \;
 

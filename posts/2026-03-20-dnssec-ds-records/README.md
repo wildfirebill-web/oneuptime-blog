@@ -10,7 +10,7 @@ Description: Generate, publish, and manage DNSSEC DS (Delegation Signer) records
 
 DS (Delegation Signer) records live in the parent zone and create the chain of trust to the child zone:
 
-```
+```text
 Root zone         → DS for .com
 .com zone         → DS for example.com
 example.com zone  → Contains AAAA, MX, etc. (DNSSEC-signed)
@@ -23,7 +23,7 @@ The DS record contains a hash of the child zone's KSK (DNSKEY with flag 257). Wh
 
 ## DS Record Format
 
-```
+```text
 ; DS record format:
 ; <name> <ttl> IN DS <key-tag> <algorithm> <digest-type> <digest>
 
@@ -40,6 +40,7 @@ example.com.  3600 IN DS  12345  13  2  a1b2c3d4e5f6...
 
 ```bash
 # Method 1: dnssec-dsfromkey (from .key file)
+
 dnssec-dsfromkey Kexample.com.+013+YYYYY.key
 
 # Output (multiple digest types):
@@ -109,7 +110,7 @@ dig +dnssec A www.example.com | grep -E "flags:|RRSIG|NSEC"
 
 ## Managing DS During Key Rollover
 
-```
+```text
 KSK Rollover process with DS records:
 
 Phase 1: Prepare
@@ -129,7 +130,7 @@ Phase 3: Cleanup
 
 ```bash
 #!/bin/bash
-# ksk-rollover-add-new.sh — Phase 1: Add new KSK
+# ksk-rollover-add-new.sh - Phase 1: Add new KSK
 
 ZONE="example.com"
 KEY_DIR="/var/named/keys/${ZONE}"
@@ -154,7 +155,7 @@ rndc reload "${ZONE}"
 
 ```bash
 #!/bin/bash
-# monitor-ds.sh — Alert if DS records are missing or mismatched
+# monitor-ds.sh - Alert if DS records are missing or mismatched
 
 ZONE="example.com"
 KEY_DIR="/var/named/keys/${ZONE}"
@@ -185,4 +186,4 @@ done
 
 ## Conclusion
 
-DS records are the glue that connects a signed child zone to its parent in the DNSSEC chain of trust. Generate DS records from the KSK `.key` file using `dnssec-dsfromkey -2` (SHA-256, digest type 2 — avoid SHA-1). Submit the DS record to your registrar via their web portal or API. During KSK rollover, the DS transition is the critical step — add the new DS before removing the old KSK, and wait for the old DS TTL to expire before completing the rollover. Monitor DS publication with `dig DS @parent-ns` and alert if the published DS hash doesn't match any active KSK.
+DS records are the glue that connects a signed child zone to its parent in the DNSSEC chain of trust. Generate DS records from the KSK `.key` file using `dnssec-dsfromkey -2` (SHA-256, digest type 2 - avoid SHA-1). Submit the DS record to your registrar via their web portal or API. During KSK rollover, the DS transition is the critical step - add the new DS before removing the old KSK, and wait for the old DS TTL to expire before completing the rollover. Monitor DS publication with `dig DS @parent-ns` and alert if the published DS hash doesn't match any active KSK.

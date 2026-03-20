@@ -75,6 +75,7 @@ An audit policy is a YAML file that defines rules for logging API requests. Rule
 
 ```yaml
 # /etc/kubernetes/audit-policy.yaml
+
 # Basic audit policy structure
 
 apiVersion: audit.k8s.io/v1

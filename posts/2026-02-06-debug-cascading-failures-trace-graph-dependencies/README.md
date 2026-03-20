@@ -143,6 +143,7 @@ def calculate_blast_radius(dependency_graph, failing_service):
     return affected
 
 # Example usage during an incident
+
 blast = calculate_blast_radius(graph, "postgres-primary")
 print(f"Affected services: {blast}")
 # Output: {'payment-service', 'checkout-service', 'api-gateway', 'order-service'}

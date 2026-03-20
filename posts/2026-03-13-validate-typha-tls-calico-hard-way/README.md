@@ -16,6 +16,7 @@ Validating Typha TLS goes beyond confirming that Felix can connect - it involves
 
 ```bash
 # Typha server certificate
+
 echo "=== Typha Server Certificate ==="
 kubectl get secret calico-typha-tls -n calico-system \
   -o jsonpath='{.data.tls\.crt}' | base64 -d | \

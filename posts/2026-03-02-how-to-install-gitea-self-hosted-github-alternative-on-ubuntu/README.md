@@ -16,6 +16,7 @@ Gitea supports SQLite, MySQL/MariaDB, and PostgreSQL. SQLite works fine for smal
 
 ```bash
 # Install PostgreSQL
+
 sudo apt update
 sudo apt install -y postgresql postgresql-contrib
 

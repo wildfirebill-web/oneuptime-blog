@@ -14,6 +14,7 @@ The Logz.io exporter is available in the `opentelemetry-collector-contrib` distr
 
 ```bash
 # Download the contrib distribution
+
 docker pull otel/opentelemetry-collector-contrib:latest
 ```
 

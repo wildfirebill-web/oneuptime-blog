@@ -1,4 +1,4 @@
-# How to Remove Volumes in Portainer
+# How to Remove Volumes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Go to **Volumes** in the left sidebar to see all volumes on the connected enviro
 
 ```bash
 # Create a simple named volume
+
 docker volume create myapp-data
 
 # Create with custom driver options

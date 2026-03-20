@@ -24,6 +24,7 @@ Access Transparency requires one of the following support levels: Premium Suppor
 
 ```bash
 # Verify your organization setup
+
 gcloud organizations list
 
 # Check your support level (this needs to be done in the console)

@@ -68,6 +68,7 @@ After cluster creation, download your connection string. It follows the PostgreS
 
 ```bash
 # Connection string format from the CockroachDB Cloud Console
+
 # The sslmode and sslrootcert parameters ensure encrypted connections
 cockroach sql --url "postgresql://username:password@free-tier.gcp-us-central1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
 ```

@@ -1,4 +1,4 @@
-# How to Fix Docker Healthcheck Not Displaying in Portainer
+# How to Fix Docker Healthcheck Not Displaying in Portainer - Not Displaying
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Fix issues where Docker healthcheck status doesn't display correctl
 
 ## Introduction
 
-Docker healthchecks provide a way for containers to report their own health status. In Portainer, healthcheck status should appear as a colored indicator next to containers — green for healthy, yellow for starting, red for unhealthy. When this indicator is missing or always shows as "unknown", it usually means the HEALTHCHECK instruction is not defined, the container is too young, or Portainer's snapshot is stale.
+Docker healthchecks provide a way for containers to report their own health status. In Portainer, healthcheck status should appear as a colored indicator next to containers - green for healthy, yellow for starting, red for unhealthy. When this indicator is missing or always shows as "unknown", it usually means the HEALTHCHECK instruction is not defined, the container is too young, or Portainer's snapshot is stale.
 
 ## Step 1: Verify the Image Has a HEALTHCHECK
 
 ```bash
 # Check if the image defines a HEALTHCHECK
+
 docker inspect nginx:latest | jq '.[0].Config.Healthcheck'
 
 # Typical output for an image with healthcheck:
@@ -24,7 +25,7 @@ docker inspect nginx:latest | jq '.[0].Config.Healthcheck'
 #   "Retries": 3
 # }
 
-# If null or empty — the image has no built-in healthcheck
+# If null or empty - the image has no built-in healthcheck
 ```
 
 ## Step 2: Add a HEALTHCHECK via Dockerfile
@@ -115,7 +116,7 @@ docker inspect container-name | jq '.[0].State.Health.Log'
 Portainer updates container status via periodic snapshots:
 
 ```bash
-# The snapshot may be stale — force a refresh
+# The snapshot may be stale - force a refresh
 # Via API:
 TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \

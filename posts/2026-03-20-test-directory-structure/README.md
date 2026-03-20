@@ -14,7 +14,7 @@ A well-organized test directory structure makes it easier to find, run, and main
 
 For a single module, co-locate tests in a `tests/` subdirectory:
 
-```
+```text
 networking-module/
 ├── main.tf
 ├── variables.tf
@@ -34,7 +34,7 @@ networking-module/
 
 For a repository with many modules:
 
-```
+```text
 infra/
 ├── modules/
 │   ├── networking/
@@ -60,7 +60,7 @@ infra/
 
 Organize by test speed and scope:
 
-```
+```text
 module/
 └── tests/
     ├── unit/           # Fast, no real infra (plan-only)
@@ -80,6 +80,7 @@ Test fixtures provide reusable configurations for tests:
 
 ```hcl
 # tests/fixtures/minimal/main.tf
+
 module "under_test" {
   source = "../../"
 

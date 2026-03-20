@@ -23,6 +23,7 @@ Portainer can manage ACI deployments using Docker's Azure context integration:
 
 ```bash
 # Install the Docker ACI integration (on the Portainer host)
+
 docker context create aci my-aci-context \
   --subscription-id <your-subscription-id> \
   --resource-group <your-resource-group> \

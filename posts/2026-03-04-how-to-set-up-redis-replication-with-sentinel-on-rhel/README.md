@@ -21,6 +21,7 @@ Redis Sentinel provides high availability by monitoring Redis instances and perf
 
 ```conf
 # /etc/redis/redis.conf on 192.168.1.101
+
 bind 0.0.0.0
 port 6379
 requirepass master-password

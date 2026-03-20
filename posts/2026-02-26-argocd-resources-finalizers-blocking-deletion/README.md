@@ -66,6 +66,7 @@ The Application itself will not delete because its cascade finalizer is waiting 
 
 ```bash
 # Check if the application has a deletionTimestamp
+
 kubectl get application my-app -n argocd -o jsonpath='{.metadata.deletionTimestamp}'
 
 # Check what finalizers are on it

@@ -16,6 +16,7 @@ The first step is understanding what APT is actually complaining about. APT erro
 
 ```bash
 # Run with verbose output for more detail
+
 sudo apt install -y somepackage 2>&1 | tee /tmp/apt-debug.log
 
 # Look for the actual error, not the downstream effects

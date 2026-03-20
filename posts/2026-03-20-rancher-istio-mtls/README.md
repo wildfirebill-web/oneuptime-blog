@@ -26,6 +26,7 @@ Istio supports three peer authentication modes:
 
 ```bash
 # Check the current peer authentication policies
+
 kubectl get peerauthentication -A
 
 # Verify the default mesh-wide policy

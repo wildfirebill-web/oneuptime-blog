@@ -27,6 +27,7 @@ The simplest approach is a shell script that takes parameters and creates everyt
 ```bash
 #!/bin/bash
 # provision-namespace.sh
+
 # Usage: ./provision-namespace.sh <namespace> <team-name> <cpu-quota> <memory-quota>
 
 set -euo pipefail

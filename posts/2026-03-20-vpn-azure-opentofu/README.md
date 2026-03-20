@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure VPN, Azure, Networking, Site-to-Site VPN, Infrastructure as Code
 
-Description: Learn how to configure Azure VPN Gateway using OpenTofu — setting up virtual network gateways, local network gateways, and VPN connections for site-to-site connectivity.
+Description: Learn how to configure Azure VPN Gateway using OpenTofu - setting up virtual network gateways, local network gateways, and VPN connections for site-to-site connectivity.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Azure VPN Gateway connects on-premises networks or other clouds to Azure virtual
 
 ```hcl
 # Azure requires a subnet named exactly "GatewaySubnet"
+
 resource "azurerm_subnet" "gateway" {
   name                 = "GatewaySubnet"   # Must be exactly this name
   resource_group_name  = azurerm_resource_group.main.name
@@ -180,4 +181,4 @@ output "vpn_gateway_bgp_peering_address" {
 
 ## Conclusion
 
-Azure VPN Gateway with OpenTofu requires a GatewaySubnet (exactly that name), a public IP, the virtual network gateway, a local network gateway for each on-premises site, and a connection resource. The VpnGw1AZ SKU provides zone-redundant deployment for production. Enable BGP for dynamic routing — it exchanges routes automatically as your on-premises network changes. Use active-active mode for higher availability in critical connections.
+Azure VPN Gateway with OpenTofu requires a GatewaySubnet (exactly that name), a public IP, the virtual network gateway, a local network gateway for each on-premises site, and a connection resource. The VpnGw1AZ SKU provides zone-redundant deployment for production. Enable BGP for dynamic routing - it exchanges routes automatically as your on-premises network changes. Use active-active mode for higher availability in critical connections.

@@ -8,10 +8,10 @@ Description: A systematic guide to diagnosing and resolving MLD snooping problem
 
 ## Common MLD Snooping Problems
 
-1. **Multicast not reaching subscribers** — Correct groups not in snooping table
-2. **Multicast flooding all ports** — Snooping table missing entries
-3. **Multicast stops periodically** — Membership timeouts, no querier
-4. **NDP/RA breaks after enabling snooping** — Link-local multicast blocked
+1. **Multicast not reaching subscribers** - Correct groups not in snooping table
+2. **Multicast flooding all ports** - Snooping table missing entries
+3. **Multicast stops periodically** - Membership timeouts, no querier
+4. **NDP/RA breaks after enabling snooping** - Link-local multicast blocked
 
 ## Problem 1: Multicast Not Reaching Subscribers
 
@@ -20,6 +20,7 @@ Description: A systematic guide to diagnosing and resolving MLD snooping problem
 **Diagnosis**:
 ```bash
 # On Linux bridge: check if the subscriber's port is in the multicast DB
+
 bridge mdb show | grep 'ff3e::stream'
 # If empty: snooping table missing the entry
 

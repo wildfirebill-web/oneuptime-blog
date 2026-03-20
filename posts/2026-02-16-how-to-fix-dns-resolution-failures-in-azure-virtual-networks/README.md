@@ -28,6 +28,7 @@ First, figure out which DNS servers your VNet is actually using:
 
 ```bash
 # Check the DNS server configuration on the VNet
+
 az network vnet show \
   --resource-group myResourceGroup \
   --name myVNet \

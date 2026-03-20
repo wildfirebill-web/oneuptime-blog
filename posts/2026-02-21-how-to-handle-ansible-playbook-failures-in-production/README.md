@@ -16,6 +16,7 @@ This is your primary tool for production error handling:
 
 ```yaml
 # playbooks/deploy.yml
+
 - name: Deploy application with failure handling
   hosts: app_servers
   become: yes

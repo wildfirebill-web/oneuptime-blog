@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, mod_proxy_fcgi, PHP-FPM, IPv4, FastCGI, Performance
+Tags: Apache, Mod_proxy_fcgi, PHP-FPM, IPv4, FastCGI, Performance
 
 Description: Configure Apache mod_proxy_fcgi to communicate with PHP-FPM over an IPv4 TCP socket, enabling efficient PHP processing with connection pooling.
 
@@ -20,6 +20,7 @@ sudo a2enmod setenvif
 sudo systemctl reload apache2
 
 # Verify
+
 apache2ctl -M | grep proxy_fcgi
 ```
 

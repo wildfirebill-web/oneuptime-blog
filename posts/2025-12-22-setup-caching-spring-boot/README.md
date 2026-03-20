@@ -215,6 +215,7 @@ public class CacheConfig {
 
 ```yaml
 # application.yml
+
 spring:
   cache:
     type: caffeine

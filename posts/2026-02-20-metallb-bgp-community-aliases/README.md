@@ -52,6 +52,7 @@ Create a file called `community.yaml`:
 
 ```yaml
 # community.yaml
+
 # Defines named aliases for BGP community strings.
 # These aliases can be referenced by BGPAdvertisement resources
 # instead of repeating raw numeric values everywhere.

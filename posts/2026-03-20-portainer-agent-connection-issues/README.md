@@ -14,6 +14,7 @@ Agent connection failures are one of the most common Portainer issues. Environme
 
 ```bash
 # On the Docker host running the agent
+
 docker ps | grep portainer_agent
 docker logs portainer_agent --tail 50
 docker stats portainer_agent --no-stream

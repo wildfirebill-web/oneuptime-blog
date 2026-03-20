@@ -62,6 +62,7 @@ Before migrating, catalog everything:
 
 ```bash
 # What services exist in Harness?
+
 # Export from Harness UI: Setup > Applications > [App] > Services
 
 # What environments?

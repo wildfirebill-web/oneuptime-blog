@@ -36,6 +36,7 @@ Here is a MetricTemplate that queries the error rate of an application:
 
 ```yaml
 # metric-template.yaml
+
 apiVersion: flagger.app/v1beta1
 kind: MetricTemplate
 metadata:

@@ -28,6 +28,7 @@ Start with a base mTLS configuration managed as an ArgoCD Application. This sets
 
 ```yaml
 # mtls-base-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

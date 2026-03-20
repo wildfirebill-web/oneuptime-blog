@@ -10,8 +10,9 @@ Description: Configure DHCPv6 relay on Juniper MX and EX series devices to forwa
 
 Juniper implements DHCPv6 relay through the `dhcp-local-server` and `dhcp-relay` configuration hierarchy:
 
-```
-# Basic DHCPv6 relay — Junos MX
+```text
+# Basic DHCPv6 relay - Junos MX
+
 # Forward from clients on ge-0/0/1 to server at 2001:db8::dhcp-server
 
 set forwarding-options helpers bootp-enable
@@ -29,7 +30,7 @@ set forwarding-options dhcp-relay v6 server-group DHCP-SERVERS 2001:db8::dhcp-se
 
 ## Complete DHCPv6 Relay Configuration
 
-```
+```text
 # Full Junos configuration for DHCPv6 relay
 
 # Define DHCPv6 server group
@@ -50,7 +51,7 @@ set forwarding-options dhcp-relay v6 group CLIENTS interface-id-option include
 
 ## DHCPv6 Relay with VRF (Routing Instances)
 
-```
+```text
 # Relay in specific routing instance (VRF)
 set routing-instances Tenant1 forwarding-options dhcp-relay v6 server-group DHCP-SERVERS 2001:db8::dhcp-server
 set routing-instances Tenant1 forwarding-options dhcp-relay v6 group CLIENT-RELAY active-server-group DHCP-SERVERS
@@ -59,15 +60,15 @@ set routing-instances Tenant1 forwarding-options dhcp-relay v6 group CLIENT-RELA
 
 ## RA (Router Advertisement) Configuration for DHCPv6
 
-```
+```text
 # Configure RA flags to direct clients to use DHCPv6
 # M-flag=1: use DHCPv6 for addresses
 # O-flag=1: use DHCPv6 for other info only
 
-# Managed (full DHCPv6) — M-flag
+# Managed (full DHCPv6) - M-flag
 set protocols router-advertisement interface ge-0/0/1.0 managed-configuration
 
-# Other (stateless DHCPv6) — O-flag
+# Other (stateless DHCPv6) - O-flag
 set protocols router-advertisement interface ge-0/0/1.0 other-stateful-configuration
 
 # RA interval
@@ -77,8 +78,8 @@ set protocols router-advertisement interface ge-0/0/1.0 min-advertisement-interv
 
 ## EX Series (Switch) DHCPv6 Relay
 
-```
-# Juniper EX switch — VLAN-based DHCPv6 relay
+```text
+# Juniper EX switch - VLAN-based DHCPv6 relay
 set vlans CLIENTS-VLAN vlan-id 100
 
 # SVI (IRB) for client VLAN
@@ -92,7 +93,7 @@ set forwarding-options dhcp-relay v6 group VLAN-RELAY interface irb.100
 
 ## Verification Commands
 
-```
+```text
 # Show DHCPv6 relay statistics
 show dhcp v6 relay statistics
 
@@ -117,7 +118,7 @@ clear dhcp v6 relay statistics all
 
 ## Troubleshooting
 
-```
+```text
 # Check relay is active
 show dhcp v6 relay group | match Active
 

@@ -60,6 +60,7 @@ Using the CLI, the process is even faster.
 
 ```bash
 # Add a custom subdomain to your Static Web App
+
 az staticwebapp hostname set \
   --name my-static-app \
   --resource-group myResourceGroup \

@@ -110,6 +110,7 @@ Always verify that containers run with the expected user context:
 
 ```bash
 # Check the process user
+
 kubectl exec multi-user-pod -c web-server -- id
 # uid=101(nginx) gid=101(nginx) groups=5000
 

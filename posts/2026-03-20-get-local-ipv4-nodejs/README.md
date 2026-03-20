@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv4, os module, Networking, Network Interfaces
+Tags: Node.js, IPv4, Os module, Networking, Network Interfaces
 
 Description: Learn how to programmatically retrieve the local IPv4 address in Node.js using the os module and network interface enumeration.
 

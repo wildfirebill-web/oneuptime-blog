@@ -42,6 +42,7 @@ The `increase()` function calculates the increase over a time range. By aligning
 
 ```promql
 # Total increase since start of day
+
 increase(http_requests_total[1d])
 ```
 

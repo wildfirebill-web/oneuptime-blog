@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for Expressions, Collections, Grouping, Infrastructure
+Tags: OpenTofu, Terraform, For Expressions, Collections, Grouping, Infrastructure
 
 Description: Learn how to group resources and data by attribute values using for expressions in OpenTofu, enabling environment-based organization, multi-key aggregation, and data partitioning.
 
 ## Overview
 
-Grouping resources by a shared attribute — such as environment, region, or team — is a common pattern when managing infrastructure at scale. OpenTofu's `for` expressions support grouping with the `...` (ellipsis) operator, which aggregates multiple values with the same key into a list instead of overwriting them.
+Grouping resources by a shared attribute - such as environment, region, or team - is a common pattern when managing infrastructure at scale. OpenTofu's `for` expressions support grouping with the `...` (ellipsis) operator, which aggregates multiple values with the same key into a list instead of overwriting them.
 
 ## Basic Grouping with the Ellipsis Operator
 
 ```hcl
 # Group a list of resources by a shared attribute
+
 locals {
   all_services = [
     { name = "api",       env = "prod",    team = "platform" },

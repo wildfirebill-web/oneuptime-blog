@@ -12,7 +12,7 @@ MASQUERADE is a special form of SNAT that automatically uses the current IP addr
 
 ## Gateway Setup
 
-```
+```text
 [LAN Clients]          [Linux Gateway]          [Internet]
 192.168.1.0/24   eth0(192.168.1.1)  eth1(DHCP)  8.8.8.8
 ```
@@ -21,6 +21,7 @@ MASQUERADE is a special form of SNAT that automatically uses the current IP addr
 
 ```bash
 # Confirm interface assignments
+
 ip addr show eth0  # LAN interface: 192.168.1.1/24
 ip addr show eth1  # WAN interface: DHCP address
 ```

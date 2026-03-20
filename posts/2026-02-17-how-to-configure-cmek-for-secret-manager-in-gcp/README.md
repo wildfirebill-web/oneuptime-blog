@@ -40,6 +40,7 @@ Enable the APIs:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   secretmanager.googleapis.com \
   cloudkms.googleapis.com \

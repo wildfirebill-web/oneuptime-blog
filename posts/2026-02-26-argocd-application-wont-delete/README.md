@@ -32,6 +32,7 @@ If you just want the Application resource gone and do not care about cleaning up
 
 ```bash
 # Remove the finalizer from the Application
+
 kubectl -n argocd patch application my-app \
   -p '{"metadata": {"finalizers": null}}' \
   --type merge

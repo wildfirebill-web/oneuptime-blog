@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Nginx, ipv6only, Web Server, Dual-Stack
+Tags: IPv6, Nginx, Ipv6only, Web Server, Dual-Stack
 
-Description: A detailed explanation of the Nginx ipv6only listen parameter — what it does, when to use it, and how it interacts with the Linux kernel's bindv6only sysctl.
+Description: A detailed explanation of the Nginx ipv6only listen parameter - what it does, when to use it, and how it interacts with the Linux kernel's bindv6only sysctl.
 
 ## What is ipv6only?
 
@@ -12,6 +12,7 @@ The `ipv6only` parameter on a `listen [::]:PORT` directive controls whether the 
 
 ```nginx
 # ipv6only=on: only accept pure IPv6 connections
+
 listen [::]:80 ipv6only=on;
 
 # ipv6only=off: accept both IPv6 and IPv4-mapped IPv6
@@ -64,7 +65,7 @@ Benefits:
 server {
     # Single socket handles both IPv4 and IPv6
     listen [::]:80 ipv6only=off;
-    # Note: Do NOT also add listen 80; — it would conflict
+    # Note: Do NOT also add listen 80; - it would conflict
 
     server_name example.com;
 }
@@ -110,4 +111,4 @@ nginx -t 2>&1 | grep -i 'already in use\|bind'
 
 ## Summary
 
-The `ipv6only` parameter controls whether a `listen [::]:PORT` socket accepts only IPv6 or also IPv4-mapped connections. Use `ipv6only=on` for explicit dual-stack (with a separate `listen 0.0.0.0:PORT` for IPv4) — this is the recommended approach. It prevents the "Address already in use" error when combining IPv4 and IPv6 listeners. Check the system-level `net.ipv6.bindv6only` sysctl as it sets the default behavior when `ipv6only` is not specified.
+The `ipv6only` parameter controls whether a `listen [::]:PORT` socket accepts only IPv6 or also IPv4-mapped connections. Use `ipv6only=on` for explicit dual-stack (with a separate `listen 0.0.0.0:PORT` for IPv4) - this is the recommended approach. It prevents the "Address already in use" error when combining IPv4 and IPv6 listeners. Check the system-level `net.ipv6.bindv6only` sysctl as it sets the default behavior when `ipv6only` is not specified.

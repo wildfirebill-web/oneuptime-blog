@@ -163,6 +163,7 @@ After cutover, you need to prove everything works. Do not skip this to save time
 
 ```bash
 # Functional validation script
+
 #!/bin/bash
 
 echo "=== Post-Migration Validation ==="

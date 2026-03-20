@@ -27,6 +27,7 @@ This guide walks through deploying the External Secrets Operator using a Flux He
 
 ```yaml
 # clusters/my-cluster/external-secrets/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -16,8 +16,8 @@ The `cidrhost` function in OpenTofu calculates a specific host IP address within
 cidrhost(prefix, hostnum)
 ```
 
-- **prefix** — a CIDR notation block (e.g., `"10.0.0.0/24"`)
-- **hostnum** — the host number within the block (0 = network address, -1 = last host, etc.)
+- **prefix** - a CIDR notation block (e.g., `"10.0.0.0/24"`)
+- **hostnum** - the host number within the block (0 = network address, -1 = last host, etc.)
 - Returns an IP address string
 
 ## Basic Examples

@@ -38,6 +38,7 @@ tracing/
 
 ```yaml
 # tracing/tempo/Chart.yaml
+
 apiVersion: v2
 name: tempo
 description: Wrapper chart for Grafana Tempo

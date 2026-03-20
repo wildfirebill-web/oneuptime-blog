@@ -30,6 +30,7 @@ Calicoctl connects to etcd using a configuration file or environment variables:
 
 ```yaml
 # /etc/calicoctl/calicoctl.cfg
+
 apiVersion: projectcalico.org/v3
 kind: CalicoAPIConfig
 metadata:

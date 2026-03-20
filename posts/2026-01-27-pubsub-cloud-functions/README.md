@@ -121,6 +121,7 @@ async function handleOrderPlaced(data) {
 
 ```python
 # main.py
+
 # Cloud Function triggered by Pub/Sub messages
 # Uses the functions-framework library for CloudEvent handling
 

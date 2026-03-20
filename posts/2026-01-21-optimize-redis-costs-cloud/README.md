@@ -67,6 +67,7 @@ def analyze_redis_usage(redis_client):
     return analysis
 
 # Usage
+
 r = redis.Redis(host='your-redis', port=6379)
 usage = analyze_redis_usage(r)
 print(json.dumps(usage, indent=2))

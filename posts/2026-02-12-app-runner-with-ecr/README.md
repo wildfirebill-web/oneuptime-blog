@@ -18,6 +18,7 @@ Start with an ECR repository configured for production use:
 
 ```bash
 # Create the repository with image scanning and immutable tags
+
 aws ecr create-repository \
   --repository-name my-service \
   --image-scanning-configuration scanOnPush=true \

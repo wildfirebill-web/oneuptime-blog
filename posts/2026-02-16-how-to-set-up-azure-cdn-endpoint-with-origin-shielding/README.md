@@ -61,6 +61,7 @@ If you do not have one already, create a CDN profile:
 
 ```bash
 # Create a CDN profile (using Microsoft Standard tier)
+
 az cdn profile create \
   --resource-group myResourceGroup \
   --name myCDNProfile \

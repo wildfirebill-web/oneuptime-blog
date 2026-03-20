@@ -25,6 +25,7 @@ resource "tfe_workspace" "app_infra" {
 }
 
 # Enable OTLP export from the Terraform Cloud agent
+
 resource "tfe_variable" "otel_exporter" {
   key          = "OTEL_TRACES_EXPORTER"
   value        = "otlp"

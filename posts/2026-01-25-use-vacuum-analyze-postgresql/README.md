@@ -160,6 +160,7 @@ ORDER BY n_dead_tup DESC;
 # postgresql.conf
 
 # Enable autovacuum
+
 autovacuum = on
 
 # When to vacuum (threshold + scale_factor * n_live_tup)

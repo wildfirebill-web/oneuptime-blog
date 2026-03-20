@@ -58,6 +58,7 @@ Start with a simple synchronous caching implementation using Redis strings.
 
 ```python
 # cache/basic.py
+
 # Basic Redis caching utilities
 import redis
 import json

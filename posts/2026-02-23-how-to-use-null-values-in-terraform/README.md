@@ -29,6 +29,7 @@ This is different from an empty string:
 
 ```hcl
 # null = argument not set, uses provider default behavior
+
 key_name = null
 
 # empty string = argument IS set to an empty value

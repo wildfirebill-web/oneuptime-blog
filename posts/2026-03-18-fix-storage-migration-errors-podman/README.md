@@ -42,6 +42,7 @@ Start by identifying the exact state of your storage:
 
 ```bash
 # Check Podman version
+
 podman --version
 
 # Check storage information

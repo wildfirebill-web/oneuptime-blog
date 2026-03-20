@@ -12,10 +12,11 @@ Wireshark provides the most detailed view of UDP traffic available: every packet
 
 ## Capture Filters for UDP
 
-```
+```text
 Capture filters (BPF syntax, set before capture starts):
 
 # All UDP traffic:
+
 udp
 
 # UDP on specific port:
@@ -37,7 +38,7 @@ udp and greater 1400
 
 ## Display Filters for UDP
 
-```
+```text
 Display filters (applied to already-captured traffic):
 
 # Show only UDP:
@@ -66,7 +67,7 @@ icmp.type == 3 and icmp.code == 3
 
 ## Protocol Dissection for Known UDP Protocols
 
-```
+```text
 Wireshark automatically dissects these UDP protocols:
 
 DNS (port 53):

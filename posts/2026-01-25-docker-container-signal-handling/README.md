@@ -39,6 +39,7 @@ Shell form CMD creates a shell as PID 1:
 
 ```dockerfile
 # Shell form - shell is PID 1
+
 CMD node server.js
 # Process tree:
 # PID 1: /bin/sh -c "node server.js"

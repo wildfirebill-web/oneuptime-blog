@@ -49,6 +49,7 @@ repository: https://github.com/myorg/my-collection
 ```bash
 ansible-galaxy collection build
 # Creates my_namespace-my_collection-1.0.0.tar.gz
+
 ```
 
 ## Publishing to Galaxy

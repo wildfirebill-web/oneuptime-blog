@@ -31,6 +31,7 @@ kubectl describe pod -n kube-system -l k8s-app=node-local-dns | grep -A5 "Events
 
 ```bash
 # Deploy debug pod on affected node
+
 kubectl run dns-debug --image=busybox \
   --overrides='{"spec":{"nodeName":"affected-node"}}' -- sleep 3600
 

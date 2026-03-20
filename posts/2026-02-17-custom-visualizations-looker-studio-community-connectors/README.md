@@ -412,6 +412,7 @@ Define what options users can configure:
 
 ```bash
 # Upload visualization files to GCS
+
 gsutil mb gs://my-viz-bucket/
 gsutil cp -r funnel-chart/ gs://my-viz-bucket/
 gsutil iam ch allUsers:objectViewer gs://my-viz-bucket/

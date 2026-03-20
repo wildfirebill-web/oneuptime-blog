@@ -20,6 +20,7 @@ Without governance, teams will use any provider they find. Some providers may no
 
 ```yaml
 # provider-catalog/catalog.yaml
+
 # Internal Terraform Provider Catalog
 
 catalog_version: "2.0"

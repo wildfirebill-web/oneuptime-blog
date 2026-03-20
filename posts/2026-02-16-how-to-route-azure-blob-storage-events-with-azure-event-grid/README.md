@@ -32,6 +32,7 @@ Let's start with the most common scenario - triggering an Azure Function when a 
 
 ```bash
 # Get the storage account resource ID
+
 STORAGE_ID=$(az storage account show \
   --name stfileprocessing \
   --resource-group rg-files \

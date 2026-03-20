@@ -27,6 +27,7 @@ This guide covers configuring Istio RequestAuthentication for multiple JWT provi
 
 ```yaml
 # clusters/my-cluster/istio-auth/request-authentication.yaml
+
 apiVersion: security.istio.io/v1
 kind: RequestAuthentication
 metadata:

@@ -33,6 +33,7 @@ resource "aws_s3_bucket" "website" {
 }
 
 # Block all public access
+
 resource "aws_s3_bucket_public_access_block" "website" {
   bucket                  = aws_s3_bucket.website.id
   block_public_acls       = true
@@ -137,4 +138,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront OAI restricts S3 bucket access to CloudFront only, preventing users from bypassing the CDN. OpenTofu manages the OAI, bucket policy, and distribution configuration together — ensuring your S3 content is only accessible through CloudFront's global edge network.
+CloudFront OAI restricts S3 bucket access to CloudFront only, preventing users from bypassing the CDN. OpenTofu manages the OAI, bucket policy, and distribution configuration together - ensuring your S3 content is only accessible through CloudFront's global edge network.

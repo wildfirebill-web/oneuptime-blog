@@ -480,6 +480,7 @@ public class CheckpointingConsumer {
 
 ```bash
 # Describe consumer group
+
 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --describe --group my-consumer-group
 

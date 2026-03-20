@@ -16,6 +16,7 @@ The `selectattr` filter selects items from a list where a specified attribute pa
 
 ```yaml
 # playbook-selectattr-basic.yml
+
 # Filters a list of servers to find only those that are running
 - name: Filter servers by status
   hosts: localhost

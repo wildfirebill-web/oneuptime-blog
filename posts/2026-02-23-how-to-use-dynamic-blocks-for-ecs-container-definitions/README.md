@@ -58,6 +58,7 @@ Here is how you define containers using this variable:
 
 ```hcl
 # terraform.tfvars or locals
+
 containers = {
   app = {
     image     = "123456789.dkr.ecr.us-east-1.amazonaws.com/myapp:latest"

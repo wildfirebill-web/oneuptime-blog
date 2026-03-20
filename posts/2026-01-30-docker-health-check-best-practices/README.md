@@ -48,6 +48,7 @@ This Dockerfile adds a simple health check to an Nginx container that verifies t
 FROM nginx:alpine
 
 # Copy custom configuration
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY html /usr/share/nginx/html
 

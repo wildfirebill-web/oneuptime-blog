@@ -14,6 +14,7 @@ Microservices on Azure use AKS for container orchestration, Azure API Management
 
 ```hcl
 # main.tf - AKS cluster for microservices
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "microservices-aks"
   location            = azurerm_resource_group.rg.location

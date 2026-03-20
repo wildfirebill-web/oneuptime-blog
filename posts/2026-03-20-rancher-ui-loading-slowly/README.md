@@ -31,6 +31,7 @@ Key requests to watch:
 
 ```bash
 # Check Rancher pod CPU and memory consumption
+
 kubectl top pod -n cattle-system -l app=rancher
 
 # Check node pressure
@@ -78,7 +79,7 @@ Large numbers of stale Kubernetes resources slow down list API calls:
 ```bash
 # Count resources per namespace
 kubectl get events -A --no-headers | wc -l
-# Events older than 1 hour are generally useless — K8s auto-prunes them
+# Events older than 1 hour are generally useless - K8s auto-prunes them
 
 # Check the number of ConfigMaps and Secrets (often bloated by Helm releases)
 kubectl get configmap -A --no-headers | wc -l

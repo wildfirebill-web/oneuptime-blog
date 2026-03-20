@@ -28,6 +28,7 @@ The simplest active-passive setup uses a StatefulSet with one replica. Kubernete
 
 ```yaml
 # single-replica-statefulset.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

@@ -297,6 +297,7 @@ For G1GC, start with these adjustments:
 
 ```bash
 # Start with conservative pause target
+
 -XX:MaxGCPauseMillis=150
 
 # If pauses still exceed target, try:

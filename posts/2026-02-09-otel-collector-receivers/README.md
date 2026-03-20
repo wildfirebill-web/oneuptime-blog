@@ -73,6 +73,7 @@ Test the OTLP receiver:
 
 ```bash
 # Send test trace via grpc
+
 grpcurl -plaintext -d @ localhost:4317 \
   opentelemetry.proto.collector.trace.v1.TraceService/Export <<EOF
 {

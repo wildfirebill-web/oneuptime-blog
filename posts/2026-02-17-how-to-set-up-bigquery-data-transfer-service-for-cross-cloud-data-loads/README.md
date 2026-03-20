@@ -71,6 +71,7 @@ Use the bq CLI to create the transfer.
 
 ```bash
 # Create an S3 to BigQuery transfer
+
 bq mk --transfer_config \
   --project_id=my_project \
   --data_source=amazon_s3 \

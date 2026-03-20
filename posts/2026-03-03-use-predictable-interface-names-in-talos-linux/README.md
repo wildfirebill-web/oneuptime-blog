@@ -51,6 +51,7 @@ On a running Talos node, list the interfaces:
 
 ```bash
 # List all network links
+
 talosctl get links --nodes 192.168.1.10
 ```
 

@@ -20,6 +20,7 @@ Docker CLI plugins are executables stored in `~/.docker/cli-plugins/` that exten
 
 ```bash
 # List Docker CLI plugins
+
 ls ~/.docker/cli-plugins/
 # Common plugins:
 # docker-compose  - Multi-container orchestration

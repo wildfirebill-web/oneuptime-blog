@@ -2,26 +2,27 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OSPFv3, IPv6, Link-Local, Adjacency, fe80
+Tags: OSPFv3, IPv6, Link-Local, Adjacency, Fe80
 
 Description: Understand why OSPFv3 uses IPv6 link-local addresses for neighbor adjacencies and the implications for routing and troubleshooting.
 
 ## Overview
 
-One of the most significant design changes in OSPFv3 is that all neighbor adjacencies are formed using **IPv6 link-local addresses** (fe80::/10) rather than global unicast addresses. This is not a limitation — it is an intentional architectural decision with important benefits.
+One of the most significant design changes in OSPFv3 is that all neighbor adjacencies are formed using **IPv6 link-local addresses** (fe80::/10) rather than global unicast addresses. This is not a limitation - it is an intentional architectural decision with important benefits.
 
 ## Why Link-Local Adjacencies?
 
 Link-local addresses provide:
-1. **Automatic availability** — Every IPv6-capable interface has a link-local address, even before global addresses are assigned
-2. **Topology independence** — OSPFv3 adjacencies survive global address renumbering
-3. **Protocol cleanliness** — OSPF topology discovery is separated from address configuration
-4. **Bootstrap capability** — Two routers can establish OSPFv3 adjacency before any global addresses are configured
+1. **Automatic availability** - Every IPv6-capable interface has a link-local address, even before global addresses are assigned
+2. **Topology independence** - OSPFv3 adjacencies survive global address renumbering
+3. **Protocol cleanliness** - OSPF topology discovery is separated from address configuration
+4. **Bootstrap capability** - Two routers can establish OSPFv3 adjacency before any global addresses are configured
 
 ## How OSPFv3 Hello Packets Use Link-Local Addresses
 
 ```bash
 # Capture OSPFv3 Hello messages to see the link-local source addresses
+
 sudo tcpdump -i eth0 -n "ip6 proto 89"
 
 # Expected output:
@@ -36,7 +37,7 @@ The source is always a link-local address (fe80::), and the destination is the O
 Because OSPFv3 adjacencies use link-local addresses, routes installed by OSPFv3 also use link-local next hops:
 
 ```bash
-# Show OSPFv3-installed routes — notice link-local next hops
+# Show OSPFv3-installed routes - notice link-local next hops
 ip -6 route show proto ospf
 # 2001:db8:1::/48 via fe80::2 dev eth0 proto ospf metric 20
 # 2001:db8:2::/48 via fe80::3 dev eth1 proto ospf metric 30
@@ -74,7 +75,7 @@ ip -6 addr show dev eth0
 ```bash
 # Check if the interface has a link-local address
 ip -6 addr show dev eth0 | grep "scope link"
-# Must show fe80:: address — if missing, OSPFv3 cannot form adjacency
+# Must show fe80:: address - if missing, OSPFv3 cannot form adjacency
 
 # Verify OSPFv3 multicast subscription
 ip -6 maddr show dev eth0 | grep "ff02::5\|ff02::6"

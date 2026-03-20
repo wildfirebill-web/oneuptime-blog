@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Step 1: Create Cloud Router
+
 gcloud compute routers create router-main \
     --project="$PROJECT" \
     --region="$REGION" \

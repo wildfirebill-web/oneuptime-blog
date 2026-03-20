@@ -1,4 +1,4 @@
-# How to Set Placement Preferences and Constraints in Portainer for Kubernetes
+# How to Set Placement Preferences and Constraints in Portainer for Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Before using placement rules, ensure nodes have appropriate labels:
 
 ```bash
 # Add labels to nodes
+
 kubectl label node worker-01 environment=production
 kubectl label node worker-01 disktype=ssd
 kubectl label node worker-01 zone=us-east-1a
@@ -39,7 +40,7 @@ The simplest way to constrain pods to specific nodes:
 
 In the application form under **Placement**:
 
-```
+```text
 Node selector:
   Key:   disktype    Value: ssd
   Key:   environment Value: production
@@ -237,4 +238,4 @@ kubectl describe pod <pod-name> -n production | grep -A20 "Events:"
 
 ## Conclusion
 
-Kubernetes placement controls — from simple node selectors to complex affinity rules — give you precise control over workload distribution. Use node selectors for straightforward requirements, node affinity for complex conditions, pod anti-affinity to spread replicas across failure domains, and topology spread constraints for even distribution. Portainer exposes basic placement through the form UI; for advanced affinity rules, use the YAML editor for full control.
+Kubernetes placement controls - from simple node selectors to complex affinity rules - give you precise control over workload distribution. Use node selectors for straightforward requirements, node affinity for complex conditions, pod anti-affinity to spread replicas across failure domains, and topology spread constraints for even distribution. Portainer exposes basic placement through the form UI; for advanced affinity rules, use the YAML editor for full control.

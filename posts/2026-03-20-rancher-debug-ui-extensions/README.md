@@ -22,7 +22,8 @@ Debugging Rancher UI Extensions requires a different approach than traditional w
 The fastest way to debug is to serve your extension locally against a live Rancher instance:
 
 ```bash
-# Start the local dev server — this proxy your extension into a running Rancher
+# Start the local dev server - this proxy your extension into a running Rancher
+
 API=https://<rancher-url> yarn dev
 
 # The Rancher UI will be available at http://localhost:8005
@@ -135,9 +136,9 @@ kubectl logs -n cattle-system -l app=my-extension --tail=100
 
 Look for errors in the browser console. Common causes:
 
-- **`Cannot read properties of undefined`** — A store getter returned `undefined` before data was loaded. Use `computed()` and guard with `?.`.
-- **`[Vue warn]: Missing required prop`** — The parent component isn't passing required props.
-- **`NavigationDuplicated`** — You're navigating to the current route. Guard with `if (route.name !== targetName)`.
+- **`Cannot read properties of undefined`** - A store getter returned `undefined` before data was loaded. Use `computed()` and guard with `?.`.
+- **`[Vue warn]: Missing required prop`** - The parent component isn't passing required props.
+- **`NavigationDuplicated`** - You're navigating to the current route. Guard with `if (route.name !== targetName)`.
 
 ### CORS Errors in Dev Mode
 

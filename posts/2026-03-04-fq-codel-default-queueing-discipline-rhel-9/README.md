@@ -16,6 +16,7 @@ Every network interface has a queue where outgoing packets wait before being tra
 
 ```bash
 # Check what qdisc your interface uses
+
 tc qdisc show dev ens192
 # On RHEL, you'll likely see: fq_codel
 ```

@@ -231,6 +231,7 @@ The decorator syntax makes it easy to protect any function with a circuit breake
 import requests
 
 # Create circuit breaker for payment service
+
 payment_circuit = CircuitBreaker(
     name="payment-service",
     failure_threshold=5,

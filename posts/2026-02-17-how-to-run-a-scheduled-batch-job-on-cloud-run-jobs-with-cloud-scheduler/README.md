@@ -28,6 +28,7 @@ Here is a Python script that processes data from Cloud Storage and writes result
 
 ```python
 # batch_job.py - Process daily data from Cloud Storage
+
 import os
 import sys
 import json

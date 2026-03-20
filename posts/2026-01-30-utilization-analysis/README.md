@@ -473,7 +473,7 @@ flowchart TD
     end
 ```
 
-### Resource Type Analyzer
+Resource Type Analyzer
 
 ```typescript
 type UtilizationCategory = 'waste' | 'underutilized' | 'optimal' | 'high' | 'critical';

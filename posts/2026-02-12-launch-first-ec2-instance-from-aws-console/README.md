@@ -74,6 +74,7 @@ On Mac or Linux, set the right permissions on your key file immediately:
 
 ```bash
 # Restrict permissions so only you can read the key file
+
 chmod 400 ~/Downloads/my-aws-key.pem
 ```
 

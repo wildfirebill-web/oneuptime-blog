@@ -30,6 +30,7 @@ Install the collection if you do not have it:
 
 ```bash
 # Install the community.general collection which includes the consul plugin
+
 ansible-galaxy collection install community.general
 ```
 

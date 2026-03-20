@@ -30,6 +30,7 @@ Install the Rancher Monitoring app on each managed cluster via the Rancher UI or
 
 ```bash
 # Enable monitoring on a cluster via Helm
+
 helm repo add rancher-charts https://charts.rancher.io
 helm repo update
 

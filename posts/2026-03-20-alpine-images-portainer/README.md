@@ -1,4 +1,4 @@
-# How to Use Alpine-Based Images for Smaller Containers in Portainer
+# How to Use Alpine-Based Images for Smaller Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Before deploying, ensure your environment is ready:
 
 ```bash
 # Check available resources
+
 free -h          # Memory
 df -h            # Disk space
 nproc            # CPU cores

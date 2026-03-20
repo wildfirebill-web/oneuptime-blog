@@ -25,6 +25,7 @@ Configure a request timeout for an HTTPRoute. Note that timeout support depends 
 
 ```yaml
 # basic-timeout.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:

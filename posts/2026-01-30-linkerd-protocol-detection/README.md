@@ -60,6 +60,7 @@ Linkerd waits for a configurable amount of time to receive enough bytes for prot
 
 ```yaml
 # linkerd-config ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

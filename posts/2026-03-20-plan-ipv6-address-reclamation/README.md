@@ -15,7 +15,7 @@ IPv6 address reclamation recovers prefixes and addresses that are assigned in IP
 ```mermaid
 flowchart TD
     A[Identify Unused Addresses] --> B{Last seen on network?}
-    B -->|< 30 days| C[Keep — may be offline]
+    B -->|< 30 days| C[Keep - may be offline]
     B -->|> 30 days| D[Mark as Deprecated in IPAM]
     D --> E{Confirmed decommissioned?}
     E -->|No| F[Notify owner, wait 14 days]
@@ -59,6 +59,7 @@ def is_in_ndp(ipv6_addr: str) -> bool:
     return bool(result.stdout.strip())
 
 # Find active IPAM addresses not seen recently
+
 print("Checking reclamation candidates...")
 candidates = []
 
@@ -187,4 +188,4 @@ ip -6 neigh show 2001:db8::10
 
 ## Conclusion
 
-IPv6 address reclamation follows a workflow: identify candidates (not seen on network or in NDP table), notify owners with a 14-day grace period, then reclaim by removing DNS records, clearing IPAM assignments, and marking the address as deprecated. Automation reduces the operational burden — schedule monthly reclamation scans and batch process candidates rather than handling individually. Keep reclaimed addresses in IPAM as "deprecated" rather than deleting them to preserve audit history showing when and why addresses were used.
+IPv6 address reclamation follows a workflow: identify candidates (not seen on network or in NDP table), notify owners with a 14-day grace period, then reclaim by removing DNS records, clearing IPAM assignments, and marking the address as deprecated. Automation reduces the operational burden - schedule monthly reclamation scans and batch process candidates rather than handling individually. Keep reclaimed addresses in IPAM as "deprecated" rather than deleting them to preserve audit history showing when and why addresses were used.

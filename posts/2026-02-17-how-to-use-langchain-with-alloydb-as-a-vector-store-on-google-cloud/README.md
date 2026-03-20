@@ -24,6 +24,7 @@ Before writing code, you need an AlloyDB instance with the pgvector extension en
 
 ```python
 # First, set up your AlloyDB instance via the CLI or console
+
 # Then connect and enable pgvector
 
 from google.cloud.alloydb.connector import Connector

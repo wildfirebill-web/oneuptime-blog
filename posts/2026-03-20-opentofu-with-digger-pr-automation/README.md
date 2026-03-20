@@ -14,6 +14,7 @@ Digger runs OpenTofu operations inside GitHub Actions, using your existing CI/CD
 
 ```yaml
 # .github/workflows/digger.yml
+
 name: Digger OpenTofu
 
 on:
@@ -135,4 +136,4 @@ backend:
 
 ## Conclusion
 
-Digger provides Atlantis-like PR automation without requiring a dedicated server — it runs entirely within GitHub Actions. The `digger.yml` configuration defines projects and their dependencies, and the GitHub Actions workflow handles execution. This makes Digger particularly easy to adopt for teams already using GitHub Actions.
+Digger provides Atlantis-like PR automation without requiring a dedicated server - it runs entirely within GitHub Actions. The `digger.yml` configuration defines projects and their dependencies, and the GitHub Actions workflow handles execution. This makes Digger particularly easy to adopt for teams already using GitHub Actions.

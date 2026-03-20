@@ -170,6 +170,7 @@ Update callers to use HTTP instead of HTTPS:
 
 ```python
 # Before
+
 response = requests.get("https://payment-service:8443/api/charge",
                         cert=("client.crt", "client.key"),
                         verify="ca.crt")

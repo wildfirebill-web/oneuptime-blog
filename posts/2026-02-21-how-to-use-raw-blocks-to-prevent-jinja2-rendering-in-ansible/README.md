@@ -46,6 +46,7 @@ This is probably the single most common use case for raw blocks in real-world An
 ```jinja2
 {# templates/prometheus_rules.yml.j2 - Prometheus rules with Go template annotations #}
 # Prometheus Alert Rules
+
 # Environment: {{ environment }}
 # Generated: {{ ansible_date_time.iso8601 }}
 

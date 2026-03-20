@@ -28,6 +28,7 @@ There are several places to configure agent forwarding. The most common is in `a
 
 ```ini
 # ansible.cfg - Enable SSH agent forwarding
+
 [ssh_connection]
 ssh_args = -o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s
 ```

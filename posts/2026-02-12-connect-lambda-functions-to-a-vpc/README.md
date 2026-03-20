@@ -66,6 +66,7 @@ If you're using Infrastructure as Code (and you should be), here's how to config
 
 ```yaml
 # CloudFormation template for a VPC-connected Lambda function
+
 Resources:
   MyLambdaFunction:
     Type: AWS::Lambda::Function

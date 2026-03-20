@@ -42,6 +42,7 @@ First, create a Front Door profile and endpoint if you do not have one:
 
 ```bash
 # Create a Front Door profile (Standard tier)
+
 az afd profile create \
   --resource-group myResourceGroup \
   --profile-name myFrontDoor \

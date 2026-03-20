@@ -34,6 +34,7 @@ Promtail runs on every server, tails log files, attaches labels, and pushes them
 
 ```ini
 # inventory/hosts.ini
+
 [loki]
 loki-01 ansible_host=10.0.2.10
 

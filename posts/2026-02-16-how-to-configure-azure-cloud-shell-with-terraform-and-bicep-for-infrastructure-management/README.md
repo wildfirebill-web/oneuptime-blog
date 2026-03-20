@@ -34,6 +34,7 @@ Create a logical directory structure in your persistent storage:
 
 ```bash
 # Set up a project directory structure in the persistent clouddrive
+
 mkdir -p ~/clouddrive/infrastructure/{terraform,bicep,scripts,state}
 
 # Terraform projects organized by environment

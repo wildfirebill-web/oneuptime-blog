@@ -48,6 +48,7 @@ MediaConvert uses queues to manage transcoding jobs. There are two types:
 
 ```hcl
 # On-demand queue for standard video processing
+
 resource "aws_media_convert_queue" "standard" {
   name        = "standard-processing"
   description = "Queue for standard video transcoding jobs"

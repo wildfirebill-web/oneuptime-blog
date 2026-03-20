@@ -1,8 +1,8 @@
-# How to List All Endpoints via the Portainer API
+# How to List All Endpoints via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Endpoints, Automation, DevOps
+Tags: Portainer, API, Endpoint, Automation, DevOps
 
 Description: Learn how to list and filter all environments (endpoints) in Portainer via the REST API, including environment type filtering, pagination, and extracting endpoint IDs for further operations.
 
@@ -23,6 +23,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-jwt-or-api-key"
 
 # List all endpoints (using JWT)
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints" | jq .
 
@@ -50,13 +51,13 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 ```
 
 Endpoint types:
-- `1` — Docker Standalone
-- `2` — Docker Agent
-- `3` — Azure ACI
-- `4` — Edge Agent (Docker)
-- `5` — Kubernetes via kubeconfig
-- `6` — Kubernetes Agent
-- `7` — Kubernetes via kubeconfig (cloud)
+- `1` - Docker Standalone
+- `2` - Docker Agent
+- `3` - Azure ACI
+- `4` - Edge Agent (Docker)
+- `5` - Kubernetes via kubeconfig
+- `6` - Kubernetes Agent
+- `7` - Kubernetes via kubeconfig (cloud)
 
 ## Step 3: Filter by Environment Type
 
@@ -124,11 +125,11 @@ curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints?search=production" | jq '.[] | {id: .Id, name: .Name}'
 ```
 
-## Step 7: Full Example — Iterate Over All Endpoints
+## Step 7: Full Example - Iterate Over All Endpoints
 
 ```bash
 #!/bin/bash
-# iterate-endpoints.sh — Perform an action on all endpoints
+# iterate-endpoints.sh - Perform an action on all endpoints
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN=$(curl -s -X POST "${PORTAINER_URL}/api/auth" \
@@ -164,7 +165,7 @@ echo $ENDPOINTS | jq -c '.[]' | while read -r ENDPOINT; do
 
   STATUS_NAME=$( [ "$STATUS" -eq 1 ] && echo "Up" || echo "Down" )
 
-  echo "  [$ID] $NAME — Type: $TYPE_NAME — Status: $STATUS_NAME"
+  echo "  [$ID] $NAME - Type: $TYPE_NAME - Status: $STATUS_NAME"
 
   # Get container count for Docker environments
   if [ "$TYPE" -eq 1 ] || [ "$TYPE" -eq 2 ]; then

@@ -18,6 +18,7 @@ You need Docker Desktop 4.8 or later and the Docker Extensions CLI plugin.
 
 ```bash
 # Verify Docker Desktop version
+
 docker version --format '{{.Client.Version}}'
 
 # Install the Docker Extensions CLI (if not already included)

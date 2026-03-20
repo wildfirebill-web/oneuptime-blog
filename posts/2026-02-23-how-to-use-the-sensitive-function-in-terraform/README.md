@@ -16,6 +16,7 @@ The `sensitive` function takes any value and returns the same value marked as se
 
 ```hcl
 # Mark a value as sensitive
+
 > sensitive("my-secret-password")
 (sensitive value)
 ```

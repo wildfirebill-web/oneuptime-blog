@@ -18,6 +18,7 @@ The most basic operation is installing a package from a local `.rpm` file.
 
 ```bash
 # Install a package from a local RPM file
+
 sudo rpm -ivh /tmp/custom-agent-2.1.0-1.el9.x86_64.rpm
 ```
 

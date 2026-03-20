@@ -20,6 +20,7 @@ Here is a basic search for roles related to Nginx:
 
 ```bash
 # Search for roles matching the keyword "nginx"
+
 ansible-galaxy search nginx
 ```
 

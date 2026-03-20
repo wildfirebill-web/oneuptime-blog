@@ -57,6 +57,7 @@ The following configuration sets resource requests and limits for Envoy sidecars
 
 ```yaml
 # IstioOperator configuration to set global sidecar resource limits
+
 # This applies to all sidecars unless overridden at the pod level
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator

@@ -22,6 +22,7 @@ Calico IPAM release workflows reclaim IP addresses that have been allocated but 
 
 ```bash
 # Run IPAM check to identify leaked allocations
+
 calicoctl ipam check --show-all-ips 2>&1 | grep "allocated" | head -20
 
 # Or use the check output to find specific issues

@@ -20,6 +20,7 @@ This creates a minimal role with CloudWatch Logs access:
 
 ```bash
 # Create the trust policy document
+
 cat > trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

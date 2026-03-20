@@ -14,6 +14,7 @@ The IdM Web UI provides a graphical interface for managing identity resources. I
 
 ```bash
 # First, ensure your browser can reach the IdM server
+
 # Navigate to: https://idm1.example.com/ipa/ui/
 
 # If using a workstation not enrolled in IdM, you may need to

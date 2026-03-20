@@ -26,6 +26,7 @@ This guide assumes you have a Kubernetes cluster initialized with kubeadm. If no
 
 ```bash
 # Install kubeadm, kubelet, kubectl
+
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl
 

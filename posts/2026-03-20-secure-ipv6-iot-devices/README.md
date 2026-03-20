@@ -27,6 +27,7 @@ The border router is the primary defense for the entire IoT segment:
 
 ```bash
 # /etc/ip6tables-iot.rules
+
 # Applied on the Linux border router's infrastructure interface (eth0)
 
 # Default policies
@@ -178,4 +179,4 @@ openssl x509 -req -in /etc/iot/device-sensor1.csr \
 
 ## Conclusion
 
-Securing IPv6 IoT devices requires a multi-layer approach: firewall rules at the border router to control what traffic reaches the devices, DTLS for encrypted application-layer communication, 802.15.4 link-layer security for mesh networks, network segmentation to isolate IoT from enterprise systems, and certificate-based device identity. The direct addressability of IPv6 makes these protections critical — without them, every IoT device is directly exposed to the internet.
+Securing IPv6 IoT devices requires a multi-layer approach: firewall rules at the border router to control what traffic reaches the devices, DTLS for encrypted application-layer communication, 802.15.4 link-layer security for mesh networks, network segmentation to isolate IoT from enterprise systems, and certificate-based device identity. The direct addressability of IPv6 makes these protections critical - without them, every IoT device is directly exposed to the internet.

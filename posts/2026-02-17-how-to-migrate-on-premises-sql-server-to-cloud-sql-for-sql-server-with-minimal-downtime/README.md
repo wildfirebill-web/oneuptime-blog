@@ -72,6 +72,7 @@ Create the target instance:
 
 ```bash
 # Create a Cloud SQL for SQL Server instance
+
 gcloud sql instances create my-sqlserver \
   --database-version SQLSERVER_2019_STANDARD \
   --tier db-custom-8-32768 \

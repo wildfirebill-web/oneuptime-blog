@@ -18,6 +18,7 @@ Modern Ubuntu uses Netplan as a frontend for systemd-networkd or NetworkManager.
 
 ```yaml
 # configure static IP with Netplan on Ubuntu
+
 ---
 - name: Configure static IP (Netplan)
   hosts: ubuntu_servers

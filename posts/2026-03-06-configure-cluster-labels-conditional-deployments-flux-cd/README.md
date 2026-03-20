@@ -63,6 +63,7 @@ Each cluster stores its metadata in a ConfigMap that Flux uses for variable subs
 
 ```yaml
 # clusters/prod-us-east-gpu/cluster-config.yaml
+
 # Cluster metadata ConfigMap: GPU-enabled production cluster in US East
 apiVersion: v1
 kind: ConfigMap

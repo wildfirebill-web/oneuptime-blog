@@ -136,6 +136,7 @@ Different teams may have different needs:
 
 ```yaml
 # Team with monitoring stack
+
 orphanedResources:
   warn: true
   ignore:

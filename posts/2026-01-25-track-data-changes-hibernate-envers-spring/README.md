@@ -284,6 +284,7 @@ Add these properties to your `application.properties` for fine-tuned control:
 
 ```properties
 # Store entity data on delete (keeps the last state before deletion)
+
 spring.jpa.properties.org.hibernate.envers.store_data_at_delete=true
 
 # Custom suffix for audit tables (default is _AUD)

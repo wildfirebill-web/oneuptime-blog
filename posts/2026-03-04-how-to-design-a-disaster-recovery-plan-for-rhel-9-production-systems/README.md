@@ -23,6 +23,7 @@ Define your targets:
 
 ```bash
 # Using rear (Relax-and-Recover)
+
 sudo dnf install -y rear
 
 # Configure rear

@@ -14,6 +14,7 @@ MikroTik includes a built-in DNS caching resolver. When enabled, it handles DNS 
 
 ```mikrotik
 # Configure upstream DNS servers and enable local caching
+
 /ip dns set \
   servers=8.8.8.8,1.1.1.1 \
   allow-remote-requests=yes \
@@ -47,7 +48,7 @@ MikroTik includes a built-in DNS caching resolver. When enabled, it handles DNS 
 # Now all DHCP clients use the router as their DNS server
 ```
 
-## Firewall Rule — Block External DNS Queries from LAN
+## Firewall Rule - Block External DNS Queries from LAN
 
 ```mikrotik
 # Prevent LAN clients from bypassing the router's DNS

@@ -24,6 +24,7 @@ Before setting targets, measure how your application performs at different resou
 
 ```bash
 # Deploy your application
+
 kubectl apply -f deployment.yaml
 
 # Start with fixed replicas

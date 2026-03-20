@@ -111,6 +111,7 @@ def generate_code_verifier(length: int = 64) -> str:
 
 
 # Example usage
+
 verifier = generate_code_verifier()
 print(f"Code Verifier: {verifier}")
 print(f"Length: {len(verifier)} characters")

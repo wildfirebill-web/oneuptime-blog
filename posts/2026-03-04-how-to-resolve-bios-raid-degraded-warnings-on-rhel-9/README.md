@@ -73,6 +73,7 @@ MAILADDR admin@example.com
 EOF
 
 # Enable the monitoring daemon
+
 sudo systemctl enable --now mdmonitor
 ```
 

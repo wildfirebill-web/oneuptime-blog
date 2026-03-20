@@ -22,6 +22,7 @@ KEDA (Kubernetes Event-Driven Autoscaling) is a CNCF project that extends Kubern
 
 ```yaml
 # clusters/production/infrastructure/keda.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

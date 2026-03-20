@@ -33,6 +33,7 @@ This is configured through the `compatibilityVersion` field in the mesh configur
 
 ```yaml
 # istio-compat.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

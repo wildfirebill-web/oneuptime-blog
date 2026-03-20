@@ -63,6 +63,7 @@ resource "hcloud_ssh_key" "team" {
 
 ```hcl
 # team.tfvars
+
 ssh_keys = {
   "alice" = "ssh-ed25519 AAAA...alice"
   "bob"   = "ssh-ed25519 AAAA...bob"
@@ -79,7 +80,7 @@ resource "hcloud_server" "web" {
   server_type = "cx22"
   location    = "nbg1"
 
-  # Reference all team keys — any matching key can access the server
+  # Reference all team keys - any matching key can access the server
   ssh_keys = [for key in hcloud_ssh_key.team : key.id]
 }
 ```

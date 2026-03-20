@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, EFS, AWS, Shared Storage, NFS, Infrastructure as Code
 
-Description: Learn how to configure Amazon Elastic File System (EFS) with OpenTofu — creating file systems, mount targets, access points, lifecycle policies, and attaching EFS to EC2 and ECS workloads.
+Description: Learn how to configure Amazon Elastic File System (EFS) with OpenTofu - creating file systems, mount targets, access points, lifecycle policies, and attaching EFS to EC2 and ECS workloads.
 
 ## Introduction
 
@@ -70,6 +70,7 @@ resource "aws_security_group" "efs" {
 
 ```hcl
 # Each application gets its own access point with a dedicated directory
+
 resource "aws_efs_access_point" "app" {
   file_system_id = aws_efs_file_system.app.id
 

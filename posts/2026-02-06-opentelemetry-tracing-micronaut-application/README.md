@@ -65,6 +65,7 @@ Configure OpenTelemetry in your `application.yml` file.
 
 ```yaml
 # application.yml
+
 tracing:
   # Enable tracing
   enabled: true

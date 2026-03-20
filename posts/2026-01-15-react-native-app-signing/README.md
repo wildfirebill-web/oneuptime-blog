@@ -99,6 +99,7 @@ Before Apple can issue you a certificate, you need to generate a Certificate Sig
 
 ```bash
 # Open Keychain Access on your Mac
+
 # From the menu: Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority
 
 # Fill in:

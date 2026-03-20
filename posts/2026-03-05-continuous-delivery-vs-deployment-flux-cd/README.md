@@ -26,6 +26,7 @@ Here is a standard Flux setup that implements continuous deployment.
 
 ```yaml
 # GitRepository source polling the main branch every minute
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

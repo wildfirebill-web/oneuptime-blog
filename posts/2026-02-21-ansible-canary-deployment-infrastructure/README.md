@@ -27,6 +27,7 @@ graph LR
 
 ```yaml
 # roles/canary/defaults/main.yml - Canary deployment settings
+
 canary_weight: 10
 canary_promotion_steps:
   - weight: 10

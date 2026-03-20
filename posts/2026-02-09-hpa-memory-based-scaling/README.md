@@ -86,6 +86,7 @@ Apply the configuration.
 kubectl apply -f hpa.yaml
 
 # Check HPA status
+
 kubectl get hpa cache-memory-hpa -n production
 
 # Verify memory metrics are available

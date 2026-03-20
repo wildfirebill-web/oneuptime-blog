@@ -80,6 +80,7 @@ You can also check via the API:
 
 ```bash
 # List enrolled devices (requires Directory API access)
+
 gcloud endpoint-verification list \
   --organization=ORGANIZATION_ID
 ```

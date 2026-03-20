@@ -8,7 +8,7 @@ Description: Monitor Rancher Server pod resources, etcd health, API server metri
 
 ## Introduction
 
-Monitoring Rancher Server itself—not just the downstream clusters it manages—is critical for ensuring the management platform remains healthy. An overloaded or degraded Rancher Server impacts your ability to manage all downstream clusters simultaneously.
+Monitoring Rancher Server itself-not just the downstream clusters it manages-is critical for ensuring the management platform remains healthy. An overloaded or degraded Rancher Server impacts your ability to manage all downstream clusters simultaneously.
 
 ## Key Metrics to Monitor
 
@@ -25,6 +25,7 @@ Monitoring Rancher Server itself—not just the downstream clusters it manages�
 
 ```yaml
 # Add ServiceMonitor for Rancher Server
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -129,7 +130,7 @@ Key panels to add:
 
 Add a synthetic check in [OneUptime](https://oneuptime.com) for the Rancher API health endpoint:
 
-```
+```text
 Monitor URL: https://rancher.example.com/healthz
 Expected Response: 200 OK
 Alert Condition: Response time > 5s or status != 200

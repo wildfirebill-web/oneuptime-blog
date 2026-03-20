@@ -19,6 +19,7 @@ When LXD creates a bridge network (like `lxdbr0`), it automatically inserts ipta
 
 ```bash
 # View LXD's iptables rules
+
 sudo iptables -L -n -v
 
 # Look for rules referencing lxdbr0

@@ -14,6 +14,7 @@ Envoy supports several sampling strategies. The simplest is random sampling, whi
 
 ```yaml
 # envoy.yaml
+
 http_connection_manager:
   tracing:
     provider:

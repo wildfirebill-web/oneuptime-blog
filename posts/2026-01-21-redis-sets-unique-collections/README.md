@@ -35,6 +35,7 @@ Common use cases:
 
 ```bash
 # Add single element
+
 SADD myset "apple"
 
 # Add multiple elements

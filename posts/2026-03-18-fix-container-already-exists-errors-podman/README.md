@@ -24,6 +24,7 @@ podman run -d --name myapp nginx
 
 podman run -d --name myapp nginx
 # Error: creating container storage: the container name "myapp" is already in use
+
 ```
 
 The first container might be running, stopped, or in a "created" state. In all cases, the name is reserved.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, PHP, Apache, NGINX, Containerization, DevOps, Web Development
+Tags: Docker, PHP, Apache, Nginx, Containerization, DevOps, Web Development
 
 Description: Build production-ready Docker images for PHP applications with proper web server configuration, extensions, and performance tuning.
 
@@ -33,6 +33,7 @@ The Dockerfile for PHP with Apache:
 
 ```dockerfile
 # Dockerfile - PHP with Apache
+
 FROM php:8.3-apache
 
 # Enable Apache mod_rewrite for clean URLs

@@ -12,7 +12,7 @@ A /48 prefix is the standard IPv6 allocation given to organizations by their ISP
 
 ## The Math
 
-```
+```text
 /48 prefix has 128 - 48 = 80 bits remaining
 /64 subnets use the next 64 - 48 = 16 bits for subnet IDs
 Interface addresses use the final 64 bits
@@ -22,7 +22,7 @@ Available /64 subnets from a /48 = 2^16 = 65,536
 
 ## Visual Representation
 
-```
+```yaml
 |<------ 48 bits ------>|<-- 16 bits -->|<----- 64 bits ----->|
 |    Organization prefix |  Subnet ID    |  Interface ID       |
 |    2001:db8:1::/48     |  0000-ffff    |  host portion       |
@@ -60,7 +60,7 @@ list_subnets_from_48("2001:db8:acad::/48", count=5)
 ```
 
 Output:
-```
+```text
 Prefix: 2001:db8:acad::/48
 Total /64 subnets available: 65536
 
@@ -83,7 +83,7 @@ Last 5 subnets:
 
 ### Decimal Sequential (Simplest)
 
-```
+```text
 2001:db8:acad:0001::/64  →  VLAN 1
 2001:db8:acad:0002::/64  →  VLAN 2
 2001:db8:acad:0003::/64  →  VLAN 3
@@ -93,7 +93,7 @@ Last 5 subnets:
 
 ### Hexadecimal with Meaning
 
-```
+```text
 2001:db8:acad:0001::/64  →  Site 1 LAN
 2001:db8:acad:0100::/64  →  Site 1 WAN/infrastructure
 2001:db8:acad:0101::/64  →  Site 1 VLAN 1
@@ -104,8 +104,9 @@ Last 5 subnets:
 
 ### Site-Based (for Multi-Site Organizations)
 
-```
+```text
 # 8 bits for site number, 8 bits for VLAN
+
 2001:db8:acad:SSLL::/64
   SS = site number (00-ff = 256 sites)
   LL = VLAN/subnet number within site (00-ff = 256 subnets/site)
@@ -150,4 +151,4 @@ allocate_56_from_48("2001:db8:acad::/48")
 
 ## Conclusion
 
-A /48 provides more than enough address space for any organization, with 65,536 /64 subnets available. The key decisions are how to number your subnet IDs (bits 49-64) to make your addressing scheme readable, hierarchical, and easy to summarize in routing. Plan your subnet numbering scheme before deployment — changing it later requires renumbering.
+A /48 provides more than enough address space for any organization, with 65,536 /64 subnets available. The key decisions are how to number your subnet IDs (bits 49-64) to make your addressing scheme readable, hierarchical, and easy to summarize in routing. Plan your subnet numbering scheme before deployment - changing it later requires renumbering.

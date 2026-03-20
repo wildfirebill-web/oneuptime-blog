@@ -18,6 +18,7 @@ SQLite is a lightweight, serverless database that is perfect for small applicati
 import sqlite3
 
 # Connect to database (creates file if it does not exist)
+
 conn = sqlite3.connect("myapp.db")
 
 # Create a cursor to execute SQL

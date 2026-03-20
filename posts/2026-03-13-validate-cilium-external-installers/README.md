@@ -29,6 +29,7 @@ Determine how Cilium was installed and what version is running.
 
 ```bash
 # Check which Cilium version is deployed
+
 kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].spec.containers[0].image}'
 

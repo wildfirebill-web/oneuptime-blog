@@ -233,6 +233,7 @@ Keep an eye on probe failures to catch issues early:
 
 ```bash
 # Check for restarts caused by liveness probe failures
+
 kubectl get pods -o custom-columns='NAME:.metadata.name,RESTARTS:.status.containerStatuses[*].restartCount'
 
 # Look at events for probe failures

@@ -28,6 +28,7 @@ Dead-lettered events go to an Azure Blob Storage container. You need to create a
 
 ```bash
 # Create a storage account for dead-lettered events
+
 az storage account create \
   --name stdeadletterevents \
   --resource-group rg-events \

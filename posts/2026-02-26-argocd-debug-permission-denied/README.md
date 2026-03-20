@@ -35,6 +35,7 @@ Start by viewing the active RBAC configuration:
 
 ```bash
 # View the RBAC ConfigMap
+
 kubectl get configmap argocd-rbac-cm -n argocd -o yaml
 ```
 

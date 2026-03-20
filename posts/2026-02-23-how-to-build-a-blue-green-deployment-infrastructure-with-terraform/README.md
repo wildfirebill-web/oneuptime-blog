@@ -31,6 +31,7 @@ Some resources are shared between both environments.
 
 ```hcl
 # Application Load Balancer - shared between blue and green
+
 resource "aws_lb" "app" {
   name               = "app-${var.environment}"
   internal           = false

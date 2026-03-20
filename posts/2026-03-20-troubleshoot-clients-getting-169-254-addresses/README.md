@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCP, APIPA, Troubleshooting, Networking, 169.254, Network Diagnostics
 
-Description: When a client shows a 169.254.x.x address, it failed to obtain a DHCP lease and fell back to Automatic Private IP Addressing (APIPA), indicating a DHCP communication problem that requires systematic diagnosis.
+Description: When a client shows a 169.254.x.x address, it failed to obtain a DHCP lease and fell back to Automatic Private IP Addressing (APIPA), indicating a DHCP communication problem that requires...
 
 ## Why 169.254.x.x Appears
 
@@ -27,12 +27,13 @@ sudo ip link set eth0 up
 
 ip -s link show eth0
 # Look for TX/RX errors
+
 ```
 
 ### Step 2: Attempt a Manual DHCP Request
 
 ```bash
-# Verbose — shows exact failure point
+# Verbose - shows exact failure point
 sudo dhclient -v eth0
 
 # Capture to verify traffic is sent
@@ -60,7 +61,7 @@ sudo nmap --script broadcast-dhcp-discover -e eth0
 ### Step 5: Check DHCP Pool Exhaustion
 
 ```bash
-# On the DHCP server — count active leases
+# On the DHCP server - count active leases
 grep -c "binding state active" /var/lib/dhcp/dhcpd.leases
 # Compare to pool size; if equal, pool is exhausted
 ```
@@ -88,6 +89,6 @@ sudo iptables -A INPUT -p udp --dport 68 -j ACCEPT
 ## Key Takeaways
 
 - 169.254.x.x = APIPA = DHCP failed. Local-only connectivity, no internet access.
-- `dhclient -v eth0` is the best first diagnostic — shows exactly what fails.
+- `dhclient -v eth0` is the best first diagnostic - shows exactly what fails.
 - Check for pool exhaustion before assuming the server is down.
 - VLAN misconfigurations are a common root cause in enterprise environments.

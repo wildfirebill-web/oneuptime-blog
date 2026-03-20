@@ -18,6 +18,7 @@ Here is a simple example:
 
 ```yaml
 # check-services.yml - Check multiple services, even if some are not installed
+
 ---
 - name: Check service statuses
   hosts: all

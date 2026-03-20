@@ -104,7 +104,7 @@ spec:
 
 This ensures istiod replicas are spread across different nodes. If one node goes down, the other replicas continue serving.
 
-## Resource Planning
+Resource Planning
 
 ### Control Plane Sizing
 
@@ -232,6 +232,7 @@ Verify metrics are flowing:
 
 ```bash
 # Check Prometheus targets
+
 kubectl port-forward -n monitoring svc/prometheus 9090:9090
 
 # Check Grafana dashboards

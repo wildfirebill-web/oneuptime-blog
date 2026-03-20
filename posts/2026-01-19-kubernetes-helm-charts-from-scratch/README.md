@@ -34,6 +34,7 @@ flowchart TD
 
 ```bash
 # Create a new chart
+
 helm create myapp
 
 # This creates the following structure:

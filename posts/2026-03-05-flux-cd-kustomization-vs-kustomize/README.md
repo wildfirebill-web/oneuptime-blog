@@ -35,6 +35,7 @@ Kustomize is a standalone tool for customizing Kubernetes manifests without usin
 
 ```yaml
 # kustomization.yaml - a Kustomize file that composes manifests
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

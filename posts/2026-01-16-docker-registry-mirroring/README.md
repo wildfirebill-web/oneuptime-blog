@@ -71,6 +71,7 @@ volumes:
 
 ```yaml
 # config.yml
+
 version: 0.1
 storage:
   filesystem:

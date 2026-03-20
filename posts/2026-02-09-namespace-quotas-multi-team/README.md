@@ -177,6 +177,7 @@ Track quota consumption to identify teams approaching limits:
 
 ```bash
 # View all quotas across namespaces
+
 kubectl get resourcequota --all-namespaces
 
 # Check specific quota details

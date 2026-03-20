@@ -16,6 +16,7 @@ Ubuntu's repositories include PostgreSQL, but they lag behind the current releas
 
 ```bash
 # Install prerequisites
+
 sudo apt install curl ca-certificates -y
 
 # Add PostgreSQL apt repository

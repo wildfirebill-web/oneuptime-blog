@@ -14,6 +14,7 @@ RHEL's default installation does not include proprietary multimedia codecs due t
 
 ```bash
 # Enable the CodeReady Builder repository (provides additional dependencies)
+
 sudo subscription-manager repos --enable=codeready-builder-for-rhel-9-x86_64-rpms
 
 # Install EPEL for additional packages

@@ -30,6 +30,7 @@ Common symptoms that indicate duplicate IP addresses:
 
 ```bash
 # Check for duplicate IPs across all pods
+
 kubectl get pods --all-namespaces -o wide --no-headers | \
   awk '{print $7}' | sort | uniq -d
 

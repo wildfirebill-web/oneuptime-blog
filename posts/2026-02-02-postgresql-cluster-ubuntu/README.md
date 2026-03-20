@@ -75,6 +75,7 @@ The following script adds the official PostgreSQL repository and installs Postgr
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install required dependencies

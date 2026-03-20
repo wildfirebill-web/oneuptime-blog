@@ -46,6 +46,7 @@ Add tcpdump to containers:
 
 ```bash
 # Debian/Ubuntu
+
 kubectl exec -it my-pod -- apt-get update && apt-get install -y tcpdump
 
 # Alpine Linux

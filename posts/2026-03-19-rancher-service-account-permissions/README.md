@@ -189,6 +189,7 @@ Generate a time-limited token for a service account to use outside the cluster:
 
 ```bash
 # Create a short-lived token (1 hour)
+
 kubectl create token app-deployer -n production --duration=1h
 ```
 

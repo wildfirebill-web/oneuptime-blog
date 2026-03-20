@@ -29,6 +29,7 @@ Here's the encryption policy:
 
 ```bash
 # Create an encryption policy for all collections matching the pattern
+
 # AWS-managed key is simpler; use customer-managed KMS for more control
 aws opensearchserverless create-security-policy \
     --name "default-encryption" \

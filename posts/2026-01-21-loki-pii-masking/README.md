@@ -377,6 +377,7 @@ pipeline_stages:
 # test-masking.sh
 
 # Test patterns
+
 test_patterns=(
   "user email: john@example.com should be masked"
   "credit card: 4111-1111-1111-1111 needs masking"

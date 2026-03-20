@@ -20,6 +20,7 @@ Before deleting images, ensure you have the right tools and permissions.
 
 ```bash
 # Install Skopeo
+
 sudo dnf install -y skopeo    # Fedora/RHEL
 sudo apt-get install -y skopeo # Ubuntu/Debian
 

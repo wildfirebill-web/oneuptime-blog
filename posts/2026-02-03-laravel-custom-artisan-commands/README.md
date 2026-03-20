@@ -380,6 +380,7 @@ Usage:
 
 ```bash
 # Preview what would be deleted
+
 php artisan users:cleanup --dry-run
 
 # Delete with confirmation

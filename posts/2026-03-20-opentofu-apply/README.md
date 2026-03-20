@@ -16,6 +16,7 @@ Description: Learn how to use tofu apply to create, update, and destroy infrastr
 tofu apply
 
 # OpenTofu shows the plan and asks:
+
 # Do you want to perform these actions?
 # Only 'yes' will be accepted to approve.
 # Enter a value: yes
@@ -74,7 +75,7 @@ tofu apply -target=aws_s3_bucket.data
 tofu apply -target=module.networking
 ```
 
-Use `-target` sparingly — it can leave state inconsistent if dependencies are not considered.
+Use `-target` sparingly - it can leave state inconsistent if dependencies are not considered.
 
 ## Parallelism
 
@@ -135,4 +136,4 @@ tofu apply
 
 ## Conclusion
 
-`tofu apply` is the command that makes real infrastructure changes. Always plan before applying, and use saved plan files in pipelines to ensure that exactly what was reviewed gets applied. The `-auto-approve` flag is for automation only — interactive applies should always include the confirmation prompt. After a partial failure, fix the root cause and re-run `tofu apply` — it will continue from where it left off.
+`tofu apply` is the command that makes real infrastructure changes. Always plan before applying, and use saved plan files in pipelines to ensure that exactly what was reviewed gets applied. The `-auto-approve` flag is for automation only - interactive applies should always include the confirmation prompt. After a partial failure, fix the root cause and re-run `tofu apply` - it will continue from where it left off.

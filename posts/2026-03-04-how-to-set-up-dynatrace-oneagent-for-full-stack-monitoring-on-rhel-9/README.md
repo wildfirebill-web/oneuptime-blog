@@ -46,6 +46,7 @@ Dynatrace auto-discovers processes, but you can add custom detection rules in th
 
 ```bash
 # OneAgent automatically detects common log files
+
 # For custom log paths, configure in Dynatrace UI:
 # Settings > Log Monitoring > Log sources and storage
 ```

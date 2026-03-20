@@ -38,6 +38,7 @@ Amazon Cognito simplifies web identity federation by acting as a broker between 
 
 ```bash
 # Create a Cognito Identity Pool
+
 aws cognito-identity create-identity-pool \
   --identity-pool-name MyAppUsers \
   --allow-unauthenticated-identities false \

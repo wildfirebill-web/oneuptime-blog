@@ -29,6 +29,7 @@ FastAPI supports multiple authentication patterns:
 
 ```python
 # FastAPI processes requests through a pipeline:
+
 # Request -> Middleware -> Route Handler -> Middleware -> Response
 ```
 

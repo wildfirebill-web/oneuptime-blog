@@ -26,6 +26,7 @@ MirrorMaker needs authenticated access to both source and target clusters:
 
 ```yaml
 # infrastructure/messaging/mirrormaker/mm2-source-user.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaUser
 metadata:

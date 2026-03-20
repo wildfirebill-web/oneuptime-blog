@@ -291,6 +291,7 @@ Some AWS data sources offer both a `tags` argument and filter blocks. The `tags`
 
 ```hcl
 # Using the tags argument (shorthand)
+
 data "aws_vpc" "main" {
   tags = {
     Environment = "production"

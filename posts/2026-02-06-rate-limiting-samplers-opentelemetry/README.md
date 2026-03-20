@@ -243,6 +243,7 @@ A practical approach is to use the `tail_sampling` processor with a `composite` 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

@@ -29,6 +29,7 @@ export BUCKET_NAME="my-cluster-velero-backups"
 export REGION="us-central1"
 
 # Create a multi-regional bucket for maximum durability
+
 gsutil mb \
   -p "${PROJECT_ID}" \
   -l "US" \

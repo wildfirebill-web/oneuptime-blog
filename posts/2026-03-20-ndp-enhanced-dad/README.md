@@ -34,6 +34,7 @@ sequenceDiagram
 
 ```bash
 # Enhanced DAD is controlled by the ndisc_notify setting
+
 # Linux kernel 4.10+ supports Enhanced DAD via RFC 7527
 
 # Check current DAD settings
@@ -72,7 +73,7 @@ ip link set veth1 up
 # Try to assign IPv6 address to bridge interface
 ip -6 addr add 2001:db8::1/64 dev br0
 
-# Observe DAD behavior — with Enhanced DAD, should detect loop
+# Observe DAD behavior - with Enhanced DAD, should detect loop
 dmesg | grep -E "DAD|duplicate"
 
 # Clean up
@@ -98,8 +99,8 @@ nstat -z | grep -i "dad\|Nd6\|Icmp6"
 
 ## Enhanced DAD in Network Equipment
 
-```
-! Cisco IOS-XE — Enhanced DAD is on by default
+```text
+! Cisco IOS-XE - Enhanced DAD is on by default
 ! Verify DAD behavior
 show ipv6 interface GigabitEthernet0/0 | include DAD
 ! "DAD enabled, 1 DAD attempts, max interval 1000 ms"
@@ -108,7 +109,7 @@ show ipv6 interface GigabitEthernet0/0 | include DAD
 interface GigabitEthernet0/0
  no ipv6 nd dad attempts
 
-! Juniper — Enhanced DAD supported in Junos 17.3+
+! Juniper - Enhanced DAD supported in Junos 17.3+
 show ipv6 neighbors detail | match "DAD"
 ```
 
@@ -136,4 +137,4 @@ def send_nd_with_nonce(iface, target_addr, nonce_value):
 
 ## Conclusion
 
-Enhanced DAD adds nonce values to Neighbor Solicitation messages to distinguish loopbacks from genuine address conflicts. It's supported in Linux kernels 4.10+ and most modern network equipment. When a node receives its own NS (same nonce), it identifies a loop and continues DAD rather than treating it as a duplicate. This prevents false address conflicts in bridged environments. Enhanced DAD is enabled by default when `dad_transmits` is set — no additional configuration needed on modern Linux systems.
+Enhanced DAD adds nonce values to Neighbor Solicitation messages to distinguish loopbacks from genuine address conflicts. It's supported in Linux kernels 4.10+ and most modern network equipment. When a node receives its own NS (same nonce), it identifies a loop and continues DAD rather than treating it as a duplicate. This prevents false address conflicts in bridged environments. Enhanced DAD is enabled by default when `dad_transmits` is set - no additional configuration needed on modern Linux systems.

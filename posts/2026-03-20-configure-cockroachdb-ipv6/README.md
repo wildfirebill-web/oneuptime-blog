@@ -10,6 +10,7 @@ Description: Learn how to configure CockroachDB nodes to listen on IPv6 addresse
 
 ```bash
 # Start CockroachDB on a specific IPv6 address
+
 cockroach start \
     --listen-addr=[2001:db8::10]:26257 \
     --advertise-addr=[2001:db8::10]:26257 \

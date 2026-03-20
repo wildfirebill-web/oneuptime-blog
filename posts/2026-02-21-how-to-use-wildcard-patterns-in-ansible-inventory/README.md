@@ -18,6 +18,7 @@ Given this inventory:
 
 ```ini
 # inventory.ini
+
 [webservers]
 web-prod-01.example.com
 web-prod-02.example.com

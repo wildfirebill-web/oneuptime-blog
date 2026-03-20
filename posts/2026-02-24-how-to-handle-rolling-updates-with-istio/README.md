@@ -181,6 +181,7 @@ Start with 10% traffic to v2. Monitor error rates and latency. If everything loo
 
 ```bash
 # Gradually shift traffic
+
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

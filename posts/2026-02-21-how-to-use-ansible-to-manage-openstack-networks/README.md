@@ -46,6 +46,7 @@ The foundation of your OpenStack networking is the network and subnet pair. Each
 
 ```yaml
 # playbooks/create-networks.yml
+
 ---
 - name: Create OpenStack networks and subnets
   hosts: localhost

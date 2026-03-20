@@ -20,6 +20,7 @@ import boto3
 ses = boto3.client('ses', region_name='us-east-1')
 
 # Verify a sender email address
+
 ses.verify_email_identity(EmailAddress='sender@example.com')
 print("Verification email sent - check your inbox")
 

@@ -1,4 +1,4 @@
-# How to Create an Application Load Balancer with OpenTofu on AWS
+# How to Create an Application Load Balancer with OpenTofu on AWS (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to provision an AWS Application Load Balancer with listen
 
 ---
 
-An AWS Application Load Balancer (ALB) distributes HTTP/HTTPS traffic to backend targets based on rules. OpenTofu lets you define the entire ALB configuration — listeners, target groups, and health checks — as version-controlled infrastructure.
+An AWS Application Load Balancer (ALB) distributes HTTP/HTTPS traffic to backend targets based on rules. OpenTofu lets you define the entire ALB configuration - listeners, target groups, and health checks - as version-controlled infrastructure.
 
 ---
 

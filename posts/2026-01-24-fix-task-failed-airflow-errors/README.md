@@ -34,6 +34,7 @@ stateDiagram-v2
 
 ```bash
 # View task logs from CLI
+
 airflow tasks logs <dag_id> <task_id> <execution_date>
 
 # Example

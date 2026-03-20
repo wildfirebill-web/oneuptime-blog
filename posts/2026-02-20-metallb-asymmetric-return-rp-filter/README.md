@@ -71,6 +71,7 @@ sequenceDiagram
 
 ```bash
 # SSH into each node and check rp_filter settings
+
 # Check the default and per-interface settings
 sysctl net.ipv4.conf.all.rp_filter
 sysctl net.ipv4.conf.default.rp_filter

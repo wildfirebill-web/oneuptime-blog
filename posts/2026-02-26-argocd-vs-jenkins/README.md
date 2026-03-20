@@ -136,6 +136,7 @@ ArgoCD provides multiple rollback approaches. You can revert the Git commit (the
 
 ```bash
 # ArgoCD rollback using CLI - instant and auditable
+
 argocd app history my-app
 argocd app rollback my-app 3
 ```

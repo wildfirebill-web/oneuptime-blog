@@ -28,6 +28,7 @@ Install the VS Code extension from the marketplace:
 
 ```bash
 # Or from command line
+
 code --install-extension nocalhost.nocalhost
 ```
 

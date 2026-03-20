@@ -181,6 +181,7 @@ EOF
 
 ```yaml
 # typha-ha-deploy.yml
+
 ---
 - name: Configure Typha HA
   hosts: control_plane

@@ -42,6 +42,7 @@ The OTel Arrow link is specifically between the regional gateway and the central
 
 ```yaml
 # regional-gateway-config.yaml (deployed in each region)
+
 receivers:
   otlp:
     protocols:

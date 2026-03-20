@@ -1,4 +1,4 @@
-# How to Set a Custom Logo in Portainer
+# How to Set a Custom Logo in Portainer - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -42,6 +42,7 @@ Paste the full URL to your logo image and click **Save**. The logo appears immed
 
 ```bash
 # Authenticate
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \
@@ -66,7 +67,7 @@ echo "Custom logo configured"
 If your logo isn't publicly accessible, you can host it inside the same Docker environment:
 
 ```yaml
-# docker-compose.yml — Include a simple nginx server to host the logo
+# docker-compose.yml - Include a simple nginx server to host the logo
 version: "3.8"
 
 services:

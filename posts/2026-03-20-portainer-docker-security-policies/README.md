@@ -1,4 +1,4 @@
-# How to Set Up Docker Security Policies in Portainer
+# How to Set Up Docker Security Policies in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure comprehensive Docker security policies in Po
 
 ## Introduction
 
-Portainer provides a centralized way to enforce Docker security policies across your container infrastructure. By configuring security settings at the environment level, you can ensure all containers — regardless of who deploys them — adhere to your organization's security standards.
+Portainer provides a centralized way to enforce Docker security policies across your container infrastructure. By configuring security settings at the environment level, you can ensure all containers - regardless of who deploys them - adhere to your organization's security standards.
 
 ## Prerequisites
 
@@ -48,6 +48,7 @@ TOKEN="your-admin-token"
 ENDPOINT_ID=1
 
 # Apply comprehensive security policy
+
 curl -s -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -92,7 +93,7 @@ curl -s -X PUT \
 Create approved App Templates that already include security settings:
 
 ```json
-// portainer-templates.json — Secure application templates
+// portainer-templates.json - Secure application templates
 [
   {
     "type": 1,
@@ -120,7 +121,7 @@ Upload templates in Portainer:
 On the Docker host itself, configure secure defaults:
 
 ```json
-// /etc/docker/daemon.json — Docker daemon security settings
+// /etc/docker/daemon.json - Docker daemon security settings
 {
   "icc": false,                          // Disable inter-container communication by default
   "no-new-privileges": true,             // Prevent privilege escalation in containers
@@ -148,7 +149,7 @@ docker info | grep -E "(Security|Namespace|Seccomp)"
 
 ```bash
 #!/bin/bash
-# security-audit.sh — Audit running containers for security violations
+# security-audit.sh - Audit running containers for security violations
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-token"
@@ -176,17 +177,17 @@ echo $CONTAINERS | jq -c '.[]' | while read -r CONTAINER; do
 
   # Check for violations
   if [ "$PRIVILEGED" = "true" ]; then
-    echo "VIOLATION: $NAME — Running in PRIVILEGED mode"
+    echo "VIOLATION: $NAME - Running in PRIVILEGED mode"
     VIOLATIONS=$((VIOLATIONS + 1))
   fi
 
   if [ "$PID_MODE" = "host" ]; then
-    echo "VIOLATION: $NAME — Running with HOST PID namespace"
+    echo "VIOLATION: $NAME - Running with HOST PID namespace"
     VIOLATIONS=$((VIOLATIONS + 1))
   fi
 
   if [ "$NET_MODE" = "host" ]; then
-    echo "WARNING: $NAME — Running with HOST network mode"
+    echo "WARNING: $NAME - Running with HOST network mode"
   fi
 done
 

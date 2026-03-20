@@ -23,6 +23,7 @@ mkdir -p /opt/traefik/{data,config}
 mkdir -p /opt/portainer/data
 
 # Create Let's Encrypt certificate storage
+
 touch /opt/traefik/data/acme.json
 chmod 600 /opt/traefik/data/acme.json
 
@@ -33,7 +34,7 @@ mkdir -p /opt/traefik/config
 ## Step 2: Create the Traefik Static Configuration
 
 ```yaml
-# /opt/traefik/traefik.yml — Static configuration
+# /opt/traefik/traefik.yml - Static configuration
 api:
   dashboard: true    # Enable Traefik dashboard
 
@@ -158,7 +159,7 @@ docker logs traefik --follow
 
 Point your domain records to your server's IP:
 
-```
+```text
 portainer.example.com  A  YOUR_SERVER_IP
 traefik.example.com    A  YOUR_SERVER_IP
 ```
@@ -175,8 +176,8 @@ curl -v https://portainer.example.com 2>&1 | grep -i "Let's Encrypt"
 
 ## Step 6: Verify the Setup
 
-1. Open `https://portainer.example.com` — should show Portainer setup page
-2. Open `https://traefik.example.com` — should show Traefik dashboard (with auth)
+1. Open `https://portainer.example.com` - should show Portainer setup page
+2. Open `https://traefik.example.com` - should show Traefik dashboard (with auth)
 3. HTTP should redirect to HTTPS automatically
 
 ```bash

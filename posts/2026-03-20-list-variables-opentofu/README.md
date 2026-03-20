@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, List, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Lists, Collections, Infrastructure as Code, DevOps
 
 Description: A guide to declaring and using list type variables in OpenTofu to work with ordered collections of values.
 
@@ -14,6 +14,7 @@ List variables in OpenTofu hold ordered sequences of values of the same type. Th
 
 ```hcl
 # List of strings
+
 variable "availability_zones" {
   type = list(string)
 }

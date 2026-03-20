@@ -28,6 +28,7 @@ Here is how to create a tmpfs volume with a 100MB size limit:
 
 ```bash
 # Create a tmpfs volume limited to 100MB stored entirely in RAM
+
 docker volume create --driver local \
   --opt type=tmpfs \
   --opt device=tmpfs \

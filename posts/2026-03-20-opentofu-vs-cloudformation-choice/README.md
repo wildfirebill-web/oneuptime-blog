@@ -80,7 +80,8 @@ CloudFormation automatically rolls back the entire stack if any resource fails d
 
 ```yaml
 # In CloudFormation, failed deployments automatically restore previous state
-# No equivalent needed in the template — it's the default behavior
+
+# No equivalent needed in the template - it's the default behavior
 ```
 
 OpenTofu does not roll back automatically; you must run `tofu destroy` or fix and re-apply.
@@ -96,7 +97,7 @@ CloudFormation manages resources not available in any provider:
 
 ### No State File
 
-CloudFormation stores state within AWS itself — no external state backend to manage or secure.
+CloudFormation stores state within AWS itself - no external state backend to manage or secure.
 
 ### Change Sets
 
@@ -130,7 +131,7 @@ CloudFormation cannot manage non-AWS resources natively.
 
 ### Readable Plan Output
 
-```
+```text
 aws_instance.web will be updated in-place
   ~ instance_type = "t3.micro" -> "t3.medium"
 ```

@@ -33,6 +33,7 @@ Download and configure the Java agent for your application server:
 
 ```bash
 # Download the agent
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 

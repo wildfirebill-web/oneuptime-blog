@@ -193,6 +193,7 @@ Query HPA metrics in Prometheus:
 
 ```promql
 # Current replica count
+
 kube_horizontalpodautoscaler_status_current_replicas{
   horizontalpodautoscaler="webapp-hpa"
 }

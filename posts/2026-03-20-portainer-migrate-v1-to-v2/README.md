@@ -1,8 +1,8 @@
-# How to Migrate Portainer from Version 1.x to 2.x
+# How to Migrate Portainer from Version 1.x to 2.x - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, migration, upgrade, v1, v2
+Tags: Portainer, Migration, Upgrade, V1, V2
 
 Description: A guide to migrating from Portainer version 1.x to the modern 2.x architecture, covering data migration, configuration changes, and breaking changes.
 
@@ -47,6 +47,7 @@ Before starting, document everything in your Portainer 1.x:
 
 ```bash
 # List all endpoints configured in Portainer 1.x
+
 # Screenshot or export from Portainer 1.x UI:
 # - Endpoints list
 # - User list
@@ -59,7 +60,7 @@ Before starting, document everything in your Portainer 1.x:
 
 In Portainer 1.x, export all stack compose files:
 
-```
+```text
 Portainer 1.x → Stacks → Each stack → Editor → Copy compose content
 ```
 
@@ -88,7 +89,7 @@ docker run -d \
 
 ### Step 4: Configure Portainer 2.x
 
-```
+```bash
 1. Access https://server:9444
 2. Create admin account (set a new password)
 3. Add environments:
@@ -112,7 +113,7 @@ docker service create \
 
 In Portainer 2.x, redeploy each stack:
 
-```
+```text
 Portainer 2.x → Stacks → Add Stack
 → Paste saved docker-compose content
 → Configure environment variables

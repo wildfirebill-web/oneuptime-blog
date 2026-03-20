@@ -30,6 +30,7 @@ This guide covers setting up CAPV on a management cluster, creating vSphere clus
 Create a VM template and configure vSphere permissions for CAPV.
 ```bash
 # Download and import the CAPV OVA template into vSphere
+
 export GOVC_URL=https://vcenter.example.com
 export GOVC_USERNAME=administrator@vsphere.local
 export GOVC_PASSWORD=<password>

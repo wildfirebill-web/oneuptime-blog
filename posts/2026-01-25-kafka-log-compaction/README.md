@@ -45,6 +45,7 @@ Configure cleanup.policy to enable compaction.
 
 ```bash
 # Create a compacted topic
+
 kafka-topics.sh --create \
   --topic user-profiles \
   --bootstrap-server localhost:9092 \

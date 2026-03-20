@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Azure, NSG, Network Security Groups, Dynamic Blocks
+Tags: OpenTofu, Terraform, Azure, NSG, Network Security Group, Dynamic Blocks
 
 Description: Learn how to use dynamic blocks in OpenTofu to generate Azure Network Security Group rules from variable-driven lists, replacing repetitive static rule definitions.
 
@@ -148,4 +148,4 @@ resource "azurerm_network_security_group" "tier" {
 
 ## Conclusion
 
-Dynamic blocks for Azure NSGs make security rule management data-driven. Define rules in variables or data files, and the same resource block generates the correct NSG configuration for any number of rules. This approach also makes code reviews clearer — reviewers can focus on the rule data rather than parsing repetitive HCL blocks.
+Dynamic blocks for Azure NSGs make security rule management data-driven. Define rules in variables or data files, and the same resource block generates the correct NSG configuration for any number of rules. This approach also makes code reviews clearer - reviewers can focus on the rule data rather than parsing repetitive HCL blocks.

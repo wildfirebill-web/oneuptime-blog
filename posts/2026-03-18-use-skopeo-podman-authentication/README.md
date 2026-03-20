@@ -20,6 +20,7 @@ Podman, Skopeo, and Buildah all read from the same authentication file by defaul
 
 ```bash
 # The default auth file location
+
 # On Linux: ${XDG_RUNTIME_DIR}/containers/auth.json
 # Fallback: ~/.config/containers/auth.json
 

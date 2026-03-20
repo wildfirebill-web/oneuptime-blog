@@ -201,6 +201,7 @@ Your application can read this header to determine the client identity:
 
 ```bash
 # The XFCC header contains fields like:
+
 # By=<server cert URI>;Hash=<cert hash>;Subject="CN=my-client,O=MyOrg";URI=<client URI>
 ```
 

@@ -33,6 +33,7 @@ Server configuration to enable compression:
 
 ```yaml
 # mongod.conf
+
 net:
   compression:
     compressors: zstd,snappy,zlib

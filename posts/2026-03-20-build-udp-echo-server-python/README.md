@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Python, Socket, Echo Server, Networking, Programming
+Tags: UDP, Python, Sockets, Echo Server, Networking, Programming
 
 Description: Build a UDP echo server in Python using the socket module, with examples for both blocking and non-blocking modes and multi-client handling.
 
 ## Introduction
 
-A UDP echo server is the simplest possible UDP server: receive a datagram, send the same data back to the sender. It is an essential building block for testing network connectivity, measuring round-trip latency, and understanding how UDP sockets work. Unlike TCP, there is no connection to accept — each datagram arrives independently with the sender's address.
+A UDP echo server is the simplest possible UDP server: receive a datagram, send the same data back to the sender. It is an essential building block for testing network connectivity, measuring round-trip latency, and understanding how UDP sockets work. Unlike TCP, there is no connection to accept - each datagram arrives independently with the sender's address.
 
 ## Basic UDP Echo Server
 
@@ -158,6 +158,7 @@ asyncio.run(main())
 
 ```bash
 # Start the echo server
+
 python3 udp_echo_server.py &
 
 # Test with netcat
@@ -175,4 +176,4 @@ tcpdump -i lo -n 'udp port 5000' -A
 
 ## Conclusion
 
-A UDP echo server in Python requires just `socket.socket(AF_INET, SOCK_DGRAM)`, `bind()`, and a `recvfrom()/sendto()` loop. The sender's address comes back with every `recvfrom()` call, making it trivial to respond to any client. For production use, switch to the async version to handle many concurrent clients without blocking. The echo server pattern is also the foundation for building latency measurement tools — record the time before `sendto()` and after `recvfrom()` to measure UDP round-trip time precisely.
+A UDP echo server in Python requires just `socket.socket(AF_INET, SOCK_DGRAM)`, `bind()`, and a `recvfrom()/sendto()` loop. The sender's address comes back with every `recvfrom()` call, making it trivial to respond to any client. For production use, switch to the async version to handle many concurrent clients without blocking. The echo server pattern is also the foundation for building latency measurement tools - record the time before `sendto()` and after `recvfrom()` to measure UDP round-trip time precisely.

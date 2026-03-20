@@ -415,6 +415,7 @@ DNS is often the first thing to update during a DR event. Here is a standalone s
 set -euo pipefail
 
 # Configuration
+
 CLOUDFLARE_API="https://api.cloudflare.com/client/v4"
 ZONE_ID="${CLOUDFLARE_ZONE_ID}"
 API_TOKEN="${CLOUDFLARE_API_TOKEN}"

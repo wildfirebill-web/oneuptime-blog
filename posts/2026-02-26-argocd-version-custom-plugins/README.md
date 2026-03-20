@@ -54,6 +54,7 @@ my-registry/argocd-cmp-sops:v2.0.0  # Breaking change
 
 ```bash
 # Build and tag with semantic version
+
 docker build -t my-registry/argocd-cmp-sops:v1.2.0 .
 
 # Also tag with major and minor for floating references

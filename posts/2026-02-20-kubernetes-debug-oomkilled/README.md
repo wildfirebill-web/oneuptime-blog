@@ -35,6 +35,7 @@ graph TD
 
 ```bash
 # Check pod status for OOMKilled
+
 kubectl get pods -n your-namespace
 
 # Get detailed container status

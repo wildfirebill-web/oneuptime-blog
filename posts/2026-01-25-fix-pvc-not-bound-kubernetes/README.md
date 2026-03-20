@@ -34,6 +34,7 @@ Start by examining the PVC state and its events:
 
 ```bash
 # List PVCs and their status
+
 kubectl get pvc -n your-namespace
 
 # Example output showing unbound PVC

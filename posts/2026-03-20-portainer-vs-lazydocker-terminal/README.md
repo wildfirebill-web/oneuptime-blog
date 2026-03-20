@@ -1,4 +1,4 @@
-# Portainer vs Lazydocker: Terminal Docker Management Comparison
+# Portainer vs Lazydocker: Terminal Docker Management Comparison - Terminal
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,9 +12,9 @@ Lazydocker is a terminal UI (TUI) for Docker and Docker Compose, built with Go a
 
 ## Key Difference
 
-**Lazydocker** is a terminal application — you run it on the host (or via SSH) and get a keyboard-navigable TUI. No server to maintain, no browser required, no data stored.
+**Lazydocker** is a terminal application - you run it on the host (or via SSH) and get a keyboard-navigable TUI. No server to maintain, no browser required, no data stored.
 
-**Portainer** is a server application — it runs as a container, stores state in a volume, and is accessed via a browser from anywhere.
+**Portainer** is a server application - it runs as a container, stores state in a volume, and is accessed via a browser from anywhere.
 
 ## Feature Comparison
 
@@ -37,6 +37,7 @@ Lazydocker provides a fast, keyboard-driven experience:
 
 ```bash
 # Install Lazydocker
+
 brew install lazydocker
 # or
 go install github.com/jesseduffield/lazydocker@latest
@@ -46,14 +47,14 @@ lazydocker
 ```
 
 In the TUI:
-- `Arrow keys` / `hjkl` — navigate panels
-- `Enter` — select and focus
-- `d` — remove a container
-- `r` — restart a container
-- `l` — view logs
-- `e` — view environment variables
-- `[` / `]` — cycle through tabs
-- `?` — help panel
+- `Arrow keys` / `hjkl` - navigate panels
+- `Enter` - select and focus
+- `d` - remove a container
+- `r` - restart a container
+- `l` - view logs
+- `e` - view environment variables
+- `[` / `]` - cycle through tabs
+- `?` - help panel
 
 ## Portainer Workflow
 

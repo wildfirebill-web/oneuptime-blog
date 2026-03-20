@@ -116,6 +116,7 @@ print(`Index size: ${stats.totalIndexSize / 1024 / 1024} MB`);
 
 ```bash
 # Real-time statistics
+
 mongostat --host localhost:27017
 
 # With authentication

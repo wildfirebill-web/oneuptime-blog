@@ -143,6 +143,7 @@ On cgroup v2 systems, you can verify the cgroup settings for the sidecar:
 
 ```bash
 # Find the pod's cgroup path
+
 kubectl exec -it deploy/my-app -c istio-proxy -- cat /proc/self/cgroup
 ```
 

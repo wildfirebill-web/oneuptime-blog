@@ -26,6 +26,7 @@ Before you begin, make sure you have Podman 5.x or later installed with artifact
 
 ```bash
 # Check your Podman version
+
 podman --version
 
 # Verify artifact subcommand is available

@@ -24,6 +24,7 @@ The default histogram buckets are designed for HTTP latency in seconds: `[0, 5, 
 
 ```python
 # views.py
+
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.sdk.metrics.view import View, ExplicitBucketHistogramAggregation

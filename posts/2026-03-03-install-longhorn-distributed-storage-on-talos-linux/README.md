@@ -27,6 +27,7 @@ Longhorn requires iSCSI support and specific host paths to be available. Create 
 
 ```yaml
 # longhorn-patch.yaml
+
 machine:
   install:
     extensions:

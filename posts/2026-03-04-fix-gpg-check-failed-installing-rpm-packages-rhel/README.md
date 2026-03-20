@@ -14,6 +14,7 @@ GPG signature verification protects against tampered or corrupted packages. When
 
 ```bash
 # Typical error messages:
+
 # warning: /path/package.rpm: Header V4 RSA/SHA256 Signature, key ID xxxxxx: NOKEY
 # Public key for package.rpm is not installed
 # GPG check FAILED

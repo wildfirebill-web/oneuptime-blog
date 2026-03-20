@@ -29,6 +29,7 @@ This is the most common Cilium question in production environments.
 
 ```bash
 # Step 1: Identify which policy is selecting the affected pod
+
 kubectl get ciliumnetworkpolicies -A -o yaml | grep -B 5 "app: my-pod"
 
 # Step 2: Check Cilium endpoint identity for the affected pod

@@ -14,6 +14,7 @@ The `ansible.builtin.package` module is a generic package manager that automatic
 
 ```yaml
 # Works on any Linux distribution
+
 - name: Install common packages
   ansible.builtin.package:
     name:

@@ -12,7 +12,7 @@ After a TCP connection is closed by the active closer, it passes through FIN_WAI
 
 ## FIN_WAIT States Explained
 
-```
+```text
 Active closer (sends first FIN):
 
 ESTABLISHED → FIN_WAIT1 (FIN sent, waiting for ACK)
@@ -28,6 +28,7 @@ If remote never sends FIN, connection stays in FIN_WAIT2
 
 ```bash
 # Show FIN_WAIT1 connections
+
 ss -tn state fin-wait-1
 
 # Show FIN_WAIT2 connections

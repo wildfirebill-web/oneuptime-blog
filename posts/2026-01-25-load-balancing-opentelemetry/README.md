@@ -62,6 +62,7 @@ The load balancing exporter distributes telemetry across multiple backends using
 
 ```yaml
 # agent-config.yaml
+
 receivers:
   otlp:
     protocols:

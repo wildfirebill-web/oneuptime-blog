@@ -18,6 +18,7 @@ If the file is already on the system, `dpkg -S` (search) is the fastest approach
 
 ```bash
 # Find which package owns a specific file
+
 dpkg -S /usr/bin/curl
 
 # Output:

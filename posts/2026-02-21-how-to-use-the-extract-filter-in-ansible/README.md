@@ -18,6 +18,7 @@ At its simplest, `extract` pulls a value from a dictionary by key:
 
 ```yaml
 # Extract a value from a dictionary using a key
+
 - name: Extract single value
   ansible.builtin.debug:
     msg: "{{ 'port' | extract(config) }}"

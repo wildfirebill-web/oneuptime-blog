@@ -34,6 +34,7 @@ Check kernel version:
 ```bash
 uname -r
 # Should be 5.4+ on Ubuntu 20.04, or 5.15+ on 22.04
+
 ```
 
 For Ubuntu 20.04, install the WireGuard kernel module if needed:

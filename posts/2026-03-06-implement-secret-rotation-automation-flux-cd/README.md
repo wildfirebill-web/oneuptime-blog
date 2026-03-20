@@ -43,6 +43,7 @@ External Secrets Operator (ESO) syncs secrets from external backends into Kubern
 
 ```yaml
 # infrastructure/external-secrets/helmrelease.yaml
+
 # Deploy External Secrets Operator using Flux HelmRelease
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

@@ -16,6 +16,7 @@ The `dnf` module accepts a local file path or URL as the package name:
 
 ```yaml
 # Install an RPM file that is already on the remote host
+
 - name: Install custom application from RPM
   ansible.builtin.dnf:
     name: /tmp/myapp-2.5.0-1.el9.x86_64.rpm

@@ -18,6 +18,7 @@ On RHEL, kernel modules live in `/lib/modules/$(uname -r)/` and have the `.ko` (
 
 ```bash
 # List all currently loaded modules
+
 lsmod
 
 # Count how many modules are loaded

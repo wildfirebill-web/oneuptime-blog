@@ -20,6 +20,7 @@ Start by installing Fiber, OpenTelemetry SDK, and the otelfiber instrumentation 
 
 ```bash
 # Install Fiber web framework
+
 go get -u github.com/gofiber/fiber/v2
 
 # Install OpenTelemetry core packages

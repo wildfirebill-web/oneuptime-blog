@@ -1,8 +1,8 @@
-# How to Back Up Portainer Data Before an Upgrade
+# How to Back Up Portainer Data Before an Upgrade - Backup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, backup, disaster-recovery, upgrade, data-protection
+Tags: Portainer, Backup, Disaster-recovery, Upgrade, Data-protection
 
 Description: A comprehensive guide to backing up Portainer CE and Business Edition data before upgrades, covering volume backups, database exports, and automated backup strategies.
 
@@ -29,6 +29,7 @@ The most reliable backup method:
 
 ```bash
 # Stop Portainer for a clean backup (optional but recommended)
+
 docker stop portainer
 
 # Create a tar archive of the data volume
@@ -68,7 +69,7 @@ Portainer Business Edition has a built-in backup feature:
 
 ### Via UI
 
-```
+```text
 Portainer UI → Settings → Backup → Download backup
 ```
 

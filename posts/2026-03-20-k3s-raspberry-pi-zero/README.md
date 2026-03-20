@@ -8,7 +8,7 @@ Description: A detailed guide to installing K3s on the Raspberry Pi Zero, optimi
 
 ## Introduction
 
-The Raspberry Pi Zero is the most constrained device in the Raspberry Pi family — a single-core ARMv6 CPU running at 1GHz and only 512MB of RAM. Running Kubernetes on such hardware sounds impractical, but K3s was specifically designed for exactly this use case. This guide covers how to install K3s as an agent on a Pi Zero, joining it to a cluster managed by more capable hardware.
+The Raspberry Pi Zero is the most constrained device in the Raspberry Pi family - a single-core ARMv6 CPU running at 1GHz and only 512MB of RAM. Running Kubernetes on such hardware sounds impractical, but K3s was specifically designed for exactly this use case. This guide covers how to install K3s as an agent on a Pi Zero, joining it to a cluster managed by more capable hardware.
 
 ## Hardware Specifications
 
@@ -34,6 +34,7 @@ Use Raspberry Pi OS Lite (32-bit) for the Pi Zero:
 
 ```bash
 # SSH into the Pi Zero (may take 2-3 minutes to boot)
+
 ssh pi@raspberrypi.local
 
 # Update the system
@@ -49,7 +50,7 @@ sudo systemctl mask bluetooth
 
 ## Step 3: Enable Required cgroup Settings
 
-This is the most important step — without it, K3s will not start:
+This is the most important step - without it, K3s will not start:
 
 ```bash
 # Edit the kernel boot parameters

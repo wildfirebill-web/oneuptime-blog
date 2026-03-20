@@ -32,6 +32,7 @@ First, deploy both versions of your application via Portainer Stacks:
 
 ```yaml
 # app-v1-v2-stack.yaml - Deploy via Portainer Kubernetes manifest
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

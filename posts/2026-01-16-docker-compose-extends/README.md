@@ -29,6 +29,7 @@ flowchart LR
 
 ```yaml
 # base.yml
+
 services:
   base-node:
     image: node:20-alpine

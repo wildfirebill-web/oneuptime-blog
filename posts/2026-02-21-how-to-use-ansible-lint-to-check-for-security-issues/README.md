@@ -22,6 +22,7 @@ Before diving in, make sure you have a recent version installed. Security rules 
 
 ```bash
 # Install the latest ansible-lint with pip
+
 pip install ansible-lint --upgrade
 
 # Verify the installed version

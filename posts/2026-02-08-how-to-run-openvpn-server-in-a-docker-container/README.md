@@ -18,6 +18,7 @@ Open the required port in your firewall:
 
 ```bash
 # Allow UDP traffic on port 1194 for OpenVPN
+
 sudo ufw allow 1194/udp
 ```
 

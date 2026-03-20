@@ -14,17 +14,17 @@ Good IPv4 documentation goes beyond recording which IP is assigned to which devi
 
 A consistent hostname format encodes meaning into the name itself:
 
-```
+```text
 {function}-{site}-{number}.{domain}
 ```
 
 Examples:
-```
-web-nyc-01.prod.example.com    — Web server, New York, production, instance 1
-db-lhr-02.prod.example.com     — Database, London Heathrow, production, instance 2
-fw-sfo-01.mgmt.example.com     — Firewall, San Francisco, management
-sw-nyc-core-01.mgmt.example.com — Core switch, New York
-vpn-aws-use1-01.prod.example.com — VPN, AWS US-East-1, production
+```text
+web-nyc-01.prod.example.com    - Web server, New York, production, instance 1
+db-lhr-02.prod.example.com     - Database, London Heathrow, production, instance 2
+fw-sfo-01.mgmt.example.com     - Firewall, San Francisco, management
+sw-nyc-core-01.mgmt.example.com - Core switch, New York
+vpn-aws-use1-01.prod.example.com - VPN, AWS US-East-1, production
 ```
 
 ## IP Address Documentation Fields
@@ -49,7 +49,7 @@ Each IP record should capture:
 
 Document subnets with the same rigor as individual IPs:
 
-```
+```text
 Subnet: 10.1.1.0/24
 Purpose: NYC Production Servers
 VLAN: 10
@@ -82,16 +82,16 @@ When DNS records match IPAM records, you have two independent sources of truth.
 
 Always document reserved IP ranges to prevent accidental use:
 
-```
-10.1.1.0      — Network address (do not use)
-10.1.1.1      — Default gateway (router)
-10.1.1.2-9    — Reserved for future infrastructure
-10.1.1.10-20  — Network management devices (switches, APs)
-10.1.1.100-199 — Static server assignments
-10.1.1.200-250 — DHCP pool for temporary use
-10.1.1.251-253 — Reserved for VIPs/HSRP
-10.1.1.254    — Reserved
-10.1.1.255    — Broadcast (do not use)
+```text
+10.1.1.0      - Network address (do not use)
+10.1.1.1      - Default gateway (router)
+10.1.1.2-9    - Reserved for future infrastructure
+10.1.1.10-20  - Network management devices (switches, APs)
+10.1.1.100-199 - Static server assignments
+10.1.1.200-250 - DHCP pool for temporary use
+10.1.1.251-253 - Reserved for VIPs/HSRP
+10.1.1.254    - Reserved
+10.1.1.255    - Broadcast (do not use)
 ```
 
 ## Automating Documentation Updates
@@ -101,6 +101,7 @@ Use pre/post provisioning hooks to keep documentation current:
 ```bash
 #!/bin/bash
 # Called after server provisioning to update IPAM documentation
+
 update_ipam() {
   local ip="$1" hostname="$2" owner="$3" function="$4"
   

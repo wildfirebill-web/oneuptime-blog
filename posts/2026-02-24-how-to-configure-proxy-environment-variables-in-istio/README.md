@@ -58,6 +58,7 @@ The `proxyMetadata` field sets environment variables on the sidecar container. A
 kubectl apply -f my-app.yaml
 
 # Check the env vars on the sidecar container
+
 kubectl get pod -l app=my-app -o jsonpath='{.items[0].spec.containers[?(@.name=="istio-proxy")].env}' | jq .
 ```
 

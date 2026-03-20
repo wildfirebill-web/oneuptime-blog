@@ -44,6 +44,7 @@ If using static provisioning, check that a PV exists with matching criteria:
 kubectl get pv
 
 # Check PV details
+
 kubectl get pv -o custom-columns='NAME:.metadata.name,CAPACITY:.spec.capacity.storage,ACCESS:.spec.accessModes,CLASS:.spec.storageClassName,STATUS:.status.phase'
 ```
 

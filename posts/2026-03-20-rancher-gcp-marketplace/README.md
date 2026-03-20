@@ -28,6 +28,7 @@ Google Cloud Marketplace offers SUSE Rancher as a click-to-deploy application on
 
 ```bash
 # Set project and zone
+
 gcloud config set project my-project-id
 gcloud config set compute/region us-central1
 

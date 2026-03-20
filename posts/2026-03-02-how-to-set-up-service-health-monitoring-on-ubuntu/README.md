@@ -16,6 +16,7 @@ systemd tracks whether service processes are running and can restart them on fai
 
 ```ini
 # /etc/systemd/system/myapp.service
+
 [Unit]
 Description=My Application
 After=network.target
@@ -303,7 +304,7 @@ curl -s -X POST "$SLACK_WEBHOOK" \
     \"attachments\": [{
       \"color\": \"danger\",
       \"title\": \"Service: ${SERVICE_NAME}\",
-      \"text\": \"\`\`\`${JOURNAL}\`\`\`\",
+      \"text\": \"```${JOURNAL}```\",
       \"footer\": \"$(date)\"
     }]
   }"

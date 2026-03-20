@@ -20,6 +20,7 @@ The key differences between local_sensitive_file and local_file are permission d
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

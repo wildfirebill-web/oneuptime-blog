@@ -74,6 +74,7 @@ This command creates a network access scope that checks for internet-to-instance
 
 ```bash
 # Create a network access scope
+
 aws ec2 create-network-insights-access-scope \
   --match-paths '[
     {

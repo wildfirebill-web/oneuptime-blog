@@ -47,6 +47,7 @@ Update your system and install the required packages.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install BIND9 DNS server and utilities

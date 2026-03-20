@@ -14,6 +14,7 @@ Description: Master curl on Ubuntu for HTTP requests, API testing, file download
 
 ```bash
 # Simple GET request - output to terminal
+
 curl https://httpbin.org/get
 
 # Save output to a file

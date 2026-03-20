@@ -36,6 +36,7 @@ First, configure your OpenTelemetry Collector to export metrics via Prometheus r
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collector configured to remote write metrics to Prometheus
 receivers:
   otlp:

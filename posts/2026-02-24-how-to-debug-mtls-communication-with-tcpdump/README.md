@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, mTLS, Tcpdump, Debugging, Kubernetes
+Tags: Istio, mTLS, tcpdump, Debugging, Kubernetes
 
 Description: Use tcpdump and other network tools to debug mTLS communication issues between services in an Istio service mesh at the packet level.
 
@@ -44,6 +44,7 @@ If you have node access, you can enter the pod's network namespace:
 
 ```bash
 # Find the pod's container ID
+
 CONTAINER_ID=$(kubectl get pod my-pod -o jsonpath='{.status.containerStatuses[0].containerID}' | cut -d/ -f3)
 
 # Find the PID

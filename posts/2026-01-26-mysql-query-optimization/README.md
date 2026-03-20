@@ -311,6 +311,7 @@ You can analyze the slow query log with `mysqldumpslow`:
 
 ```bash
 # Show top 10 slowest queries sorted by average time
+
 mysqldumpslow -s at -t 10 /var/log/mysql/slow-query.log
 
 # Show queries sorted by count (most frequent slow queries)

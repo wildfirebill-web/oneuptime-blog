@@ -28,6 +28,7 @@ The `label_values()` function is specific to Grafana and returns unique values f
 
 ```promql
 # Get all values for a label across all metrics
+
 label_values(label_name)
 
 # Get label values from a specific metric

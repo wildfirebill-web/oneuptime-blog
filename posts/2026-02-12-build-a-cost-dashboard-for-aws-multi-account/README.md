@@ -42,6 +42,7 @@ Enable CUR in your management account through the Billing console, or use CloudF
 
 ```yaml
 # CloudFormation for Cost and Usage Report delivery to S3
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   CURBucket:

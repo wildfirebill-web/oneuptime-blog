@@ -29,6 +29,7 @@ KEDA's Prometheus scaler queries Prometheus directly. Verify the endpoint:
 
 ```bash
 # Get Prometheus service
+
 kubectl get svc -n monitoring prometheus-operated
 
 # Test the query

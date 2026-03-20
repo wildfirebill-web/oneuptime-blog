@@ -16,6 +16,7 @@ Moto is a Python library that mocks AWS services at the API level. Unlike basic 
 pip install moto[all]  # install all service mocks
 
 # Or install specific services
+
 pip install moto[s3,dynamodb,sqs,lambda,iam]
 ```
 

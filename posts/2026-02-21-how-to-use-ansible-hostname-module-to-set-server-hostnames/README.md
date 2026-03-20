@@ -40,6 +40,7 @@ The `ansible.builtin.hostname` module sets the system hostname on remote servers
 
 ```yaml
 # Use a custom hostname pattern
+
 - name: Set hostname based on role and index
   ansible.builtin.hostname:
     name: "{{ host_role }}-{{ host_index }}.{{ domain }}"

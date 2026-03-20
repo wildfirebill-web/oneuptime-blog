@@ -16,6 +16,7 @@ Let us look at what happens when Ansible runs a single task. With maximum verbos
 
 ```bash
 # Watch the module transfer process in detail
+
 ansible webserver01 -m ping -vvvv
 ```
 

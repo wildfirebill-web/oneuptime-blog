@@ -198,6 +198,7 @@ locals {
 # main.tf
 
 # Security group for the ALB
+
 resource "aws_security_group" "alb" {
   name_prefix = "${var.name}-alb-"
   description = "Security group for ${var.name} ALB"

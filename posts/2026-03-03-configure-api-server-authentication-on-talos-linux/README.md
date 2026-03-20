@@ -35,6 +35,7 @@ Out of the box, a Talos Linux cluster uses:
 
 ```bash
 # Check what authentication modes are active
+
 talosctl logs kube-apiserver -n <control-plane-ip> | grep -E "auth|token|cert|oidc"
 ```
 

@@ -16,6 +16,7 @@ If you can still SSH in or access a console, start with a quick assessment:
 
 ```bash
 # Check which filesystems are full
+
 df -h
 
 # Example output showing a full root partition:

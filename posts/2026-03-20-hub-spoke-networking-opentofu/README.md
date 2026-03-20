@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Hub-Spoke, VPC Peering, Transit Gateway, Networking, AWS, Infrastructure as Code
 
-Description: Learn how to implement hub-and-spoke network topology using OpenTofu — connecting multiple spoke VPCs through a central hub for shared services and centralized egress.
+Description: Learn how to implement hub-and-spoke network topology using OpenTofu - connecting multiple spoke VPCs through a central hub for shared services and centralized egress.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Hub-and-spoke topology has a central hub VPC (shared services, security tools, c
 
 ```hcl
 # Hub VPC
+
 resource "aws_vpc" "hub" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
@@ -75,13 +76,13 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "spoke" {
 ## Transit Gateway Route Tables
 
 ```hcl
-# Hub route table — can see all spokes
+# Hub route table - can see all spokes
 resource "aws_ec2_transit_gateway_route_table" "hub" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags               = { Name = "hub-route-table" }
 }
 
-# Spoke route table — can only see hub
+# Spoke route table - can only see hub
 resource "aws_ec2_transit_gateway_route_table" "spoke" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags               = { Name = "spoke-route-table" }
@@ -113,7 +114,7 @@ resource "aws_ec2_transit_gateway_route_table_propagation" "spoke_to_hub_rt" {
 ## VPC Route Tables
 
 ```hcl
-# Spoke VPC route tables — route to hub via TGW
+# Spoke VPC route tables - route to hub via TGW
 resource "aws_route" "spoke_to_hub" {
   for_each = aws_vpc.spoke
 

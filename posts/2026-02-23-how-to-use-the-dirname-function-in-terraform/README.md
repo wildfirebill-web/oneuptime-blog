@@ -16,6 +16,7 @@ The `dirname` function takes a string containing a file path and returns everyth
 
 ```hcl
 # dirname(path)
+
 # Returns the directory portion of a path
 dirname("/etc/nginx/nginx.conf")    # Returns: "/etc/nginx"
 dirname("configs/app/settings.yaml") # Returns: "configs/app"

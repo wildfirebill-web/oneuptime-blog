@@ -35,12 +35,12 @@ Kubeconfig files downloaded from Portainer contain access tokens that grant kube
 1. In the environment settings, scroll to the **Security** section.
 2. Find the **Kubeconfig expiry** field.
 3. Choose a duration from the dropdown or enter a custom value:
-   - `0` — No expiry (not recommended for production)
-   - `4h` — Expires in 4 hours
-   - `8h` — Expires in 8 hours
-   - `24h` — Expires in 24 hours (common for daily use)
-   - `7d` — Expires in 7 days
-   - `30d` — Expires in 30 days
+   - `0` - No expiry (not recommended for production)
+   - `4h` - Expires in 4 hours
+   - `8h` - Expires in 8 hours
+   - `24h` - Expires in 24 hours (common for daily use)
+   - `7d` - Expires in 7 days
+   - `30d` - Expires in 30 days
 4. Click **Save environment settings**.
 
 ## Step 3: Verify the Expiry Is Applied
@@ -49,6 +49,7 @@ After setting expiry, new kubeconfigs downloaded by users will contain time-limi
 
 ```bash
 # Download a fresh kubeconfig
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')
@@ -80,7 +81,7 @@ date -d @$EXP  # Linux
 
 When a token expires, kubectl commands return:
 
-```
+```text
 error: You must be logged in to the server (Unauthorized)
 ```
 

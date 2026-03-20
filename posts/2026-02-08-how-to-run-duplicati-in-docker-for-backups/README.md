@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Duplicati, Backup, Disaster-Recovery, Self-Hosted, Encryption
+Tags: Docker, Duplicati, Backup, Disaster-recovery, Self-Hosted, Encryption
 
 Description: Deploy Duplicati in Docker for encrypted, deduplicated backups to local storage, S3, Backblaze B2, and other cloud destinations.
 
@@ -25,6 +25,7 @@ Good backup software needs three properties: encryption (so your data is safe at
 
 ```bash
 # Create the Duplicati project directory
+
 mkdir -p ~/duplicati/config
 cd ~/duplicati
 ```
@@ -86,6 +87,7 @@ Click "Add backup" and choose "Configure a new backup." The wizard walks through
 ```text
 Name: Daily Server Backup
 Description: Backs up home directories and configurations
+
 Encryption: AES-256, built-in
 Passphrase: (set a strong passphrase - you need this to restore)
 ```

@@ -30,6 +30,7 @@ Copy the endpoint and API key from the resource's "Keys and Endpoint" page.
 
 ```bash
 # Install the Azure Face SDK
+
 pip install azure-cognitiveservices-vision-face
 ```
 

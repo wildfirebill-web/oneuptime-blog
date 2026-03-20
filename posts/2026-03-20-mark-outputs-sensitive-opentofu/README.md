@@ -15,7 +15,7 @@ Output values marked as `sensitive = true` are redacted in the terminal and CI/C
 ## Marking an Output as Sensitive
 
 ```hcl
-# outputs.tf — sensitive output examples
+# outputs.tf - sensitive output examples
 
 output "database_connection_string" {
   description = "Full database connection string with credentials"
@@ -47,6 +47,7 @@ output "api_credentials" {
 tofu apply
 
 # Non-sensitive output:
+
 # Outputs:
 # instance_public_ip = "54.23.45.67"
 # s3_bucket_name = "my-data-bucket"
@@ -87,7 +88,7 @@ OpenTofu will error if you try to output a sensitive value without marking the o
 # This WILL ERROR if var.database_password is sensitive
 output "db_url" {
   value = "postgresql://admin:${var.database_password}@${aws_db_instance.main.endpoint}/app"
-  # Error: Output refers to a sensitive value — must add: sensitive = true
+  # Error: Output refers to a sensitive value - must add: sensitive = true
 }
 
 # CORRECT:
@@ -110,7 +111,7 @@ output "connection_string" {
   sensitive = true
 }
 
-# main.tf — parent module
+# main.tf - parent module
 # module.database.connection_string is now automatically treated as sensitive
 output "app_db_url" {
   value     = module.database.connection_string
@@ -122,4 +123,4 @@ output "app_db_url" {
 
 ## Summary
 
-Mark outputs as `sensitive = true` whenever they contain credentials, private keys, or other values that shouldn't appear in logs. OpenTofu enforces this — it will error if a sensitive variable is used in an output that isn't marked sensitive. Access sensitive output values explicitly with `tofu output -raw <name>` or `tofu output -json <name>` when needed in scripts.
+Mark outputs as `sensitive = true` whenever they contain credentials, private keys, or other values that shouldn't appear in logs. OpenTofu enforces this - it will error if a sensitive variable is used in an output that isn't marked sensitive. Access sensitive output values explicitly with `tofu output -raw <name>` or `tofu output -json <name>` when needed in scripts.

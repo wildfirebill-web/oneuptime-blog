@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GraphQL, Error Handling, Resolvers, API Development, Node.js, Apollo Server, Best Practices
+Tags: GraphQL, Error Handling, Resolver, API Development, Node.js, Apollo Server, Best Practices
 
 Description: Learn comprehensive strategies for handling errors in GraphQL resolvers including custom error types, error formatting, and client-friendly responses.
 
@@ -388,6 +388,7 @@ Define error types in your GraphQL schema for type-safe error handling.
 
 ```graphql
 # schema.graphql
+
 # Error interface for all error types
 interface Error {
   message: String!

@@ -16,6 +16,7 @@ Sharing modules across teams requires a publishing mechanism and a clear version
 
 ```bash
 # In your module repository
+
 git tag -a v1.0.0 -m "Initial stable release of VPC module"
 git tag -a v1.1.0 -m "Add support for IPv6 subnets"
 git tag -a v2.0.0 -m "Breaking: rename subnet variables for consistency"
@@ -45,7 +46,7 @@ module "vpc_dev" {
 
 Organize your module monorepo so each module is independently versioned:
 
-```
+```text
 tofu-modules/
 ├── modules/
 │   ├── vpc/

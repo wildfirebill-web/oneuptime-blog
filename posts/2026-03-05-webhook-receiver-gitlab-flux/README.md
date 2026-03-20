@@ -23,6 +23,7 @@ Create a Kubernetes secret containing a token that GitLab will use to authentica
 
 ```bash
 # Generate a random token
+
 TOKEN=$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f1)
 
 # Create the secret in the flux-system namespace

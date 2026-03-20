@@ -24,6 +24,7 @@ Start by checking the pod status to confirm the CrashLoopBackOff state.
 
 ```bash
 # Check pod status
+
 kubectl get pods
 
 # Output shows:

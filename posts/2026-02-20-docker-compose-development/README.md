@@ -33,6 +33,7 @@ graph TD
 
 ```yaml
 # docker-compose.yml
+
 # Compose file for a typical web application
 
 services:
@@ -364,7 +365,7 @@ services:
       start_period: 30s
 ```
 
-## Resource Limits
+Resource Limits
 
 Prevent services from consuming all your machine's resources:
 

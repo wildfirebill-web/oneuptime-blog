@@ -19,6 +19,7 @@ Lambda event source mappings for SQS enable Lambda to automatically poll and pro
 
 ```hcl
 # Dead letter queue for failed processing
+
 resource "aws_sqs_queue" "dlq" {
   name                      = "${var.queue_name}-dlq"
   message_retention_seconds = 1209600

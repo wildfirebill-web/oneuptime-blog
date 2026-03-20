@@ -54,6 +54,7 @@ ECS has two types of IAM roles, and understanding the difference is critical for
 
 ```hcl
 # Task execution role - used by ECS agent
+
 resource "aws_iam_role" "ecs_execution" {
   name = "ecs-execution-role"
 

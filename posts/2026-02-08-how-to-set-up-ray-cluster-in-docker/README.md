@@ -35,6 +35,7 @@ The simplest way to use Ray is in a single container:
 
 ```bash
 # Start Ray in single-node mode with the dashboard
+
 docker run -it --rm \
   --name ray-single \
   --shm-size=2g \

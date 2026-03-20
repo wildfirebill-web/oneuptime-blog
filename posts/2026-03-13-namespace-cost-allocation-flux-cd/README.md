@@ -29,6 +29,7 @@ Create namespace manifests with cost center labels managed by Flux.
 
 ```yaml
 # namespaces/team-alpha-ns.yaml
+
 # Namespace for team-alpha with cost allocation labels
 apiVersion: v1
 kind: Namespace

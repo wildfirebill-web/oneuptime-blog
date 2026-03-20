@@ -29,6 +29,7 @@ Store the Opsgenie API key in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Opsgenie API key
+
 kubectl create secret generic opsgenie-api-key \
   --namespace=flux-system \
   --from-literal=token=YOUR_OPSGENIE_API_KEY

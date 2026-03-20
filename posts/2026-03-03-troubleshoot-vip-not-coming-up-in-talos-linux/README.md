@@ -18,6 +18,7 @@ Before diving deep, run through these quick checks:
 
 ```bash
 # 1. Check if VIP is assigned to any node
+
 for node in <cp1-ip> <cp2-ip> <cp3-ip>; do
   echo -n "Node $node: "
   talosctl -n $node get addresses 2>/dev/null | grep "<vip-address>" || echo "no VIP"

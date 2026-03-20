@@ -282,6 +282,7 @@ Don't just flip the switch blindly. Verify green is healthy first:
 #!/bin/bash
 
 # Check green pods are ready
+
 READY=$(kubectl get pods -l app=myapp,version=green -n default \
   -o jsonpath='{.items[*].status.conditions[?(@.type=="Ready")].status}')
 

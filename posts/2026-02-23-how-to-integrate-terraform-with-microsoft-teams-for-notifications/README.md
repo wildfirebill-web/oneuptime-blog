@@ -30,6 +30,7 @@ The most straightforward approach uses Terraform's `null_resource` with a `local
 
 ```hcl
 # variables.tf
+
 # Define variables for Teams integration
 variable "teams_webhook_url" {
   description = "Microsoft Teams incoming webhook URL"

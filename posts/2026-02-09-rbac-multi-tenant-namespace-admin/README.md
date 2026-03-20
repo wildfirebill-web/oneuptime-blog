@@ -26,6 +26,7 @@ Start by defining a ClusterRole that contains the permissions a namespace admin 
 
 ```yaml
 # namespace-admin-clusterrole.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

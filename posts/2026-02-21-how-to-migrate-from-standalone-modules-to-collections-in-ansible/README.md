@@ -27,6 +27,7 @@ The most visible change is how you reference modules. Here is the mapping patter
 
 ```yaml
 # Before (standalone module names)
+
 - name: Create a Docker container
   docker_container:
     name: myapp

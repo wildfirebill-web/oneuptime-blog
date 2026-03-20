@@ -8,12 +8,13 @@ Description: Configure IPv6 networking in Oracle VirtualBox virtual machines usi
 
 ## Introduction
 
-VirtualBox supports IPv6 for virtual machine networking in bridged, NAT, NAT Network, and Host-Only adapter modes. Bridged mode is the simplest for IPv6 — the VM appears directly on the physical network and receives SLAAC or DHCPv6 addresses. NAT mode supports IPv6 but requires the host to have IPv6 connectivity. Configuration is done via the VirtualBox GUI or VBoxManage command-line tool.
+VirtualBox supports IPv6 for virtual machine networking in bridged, NAT, NAT Network, and Host-Only adapter modes. Bridged mode is the simplest for IPv6 - the VM appears directly on the physical network and receives SLAAC or DHCPv6 addresses. NAT mode supports IPv6 but requires the host to have IPv6 connectivity. Configuration is done via the VirtualBox GUI or VBoxManage command-line tool.
 
 ## Bridged Adapter (Full IPv6)
 
 ```bash
 # VBoxManage: Set VM to use bridged adapter on physical NIC
+
 VBoxManage modifyvm "MyVM" \
     --nic1 bridged \
     --bridgeadapter1 eth0
@@ -25,7 +26,7 @@ VBoxManage startvm "MyVM" --type headless
 # or can be configured statically
 ```
 
-```
+```sql
 # VirtualBox GUI:
 # 1. VM Settings → Network → Adapter 1
 # 2. Attached to: Bridged Adapter
@@ -182,4 +183,4 @@ VBoxManage showvminfo "MyVM" | grep -A5 "NIC 1"
 
 ## Conclusion
 
-VirtualBox supports IPv6 across all network adapter modes. Bridged mode provides the most transparent IPv6 experience — VMs appear directly on the physical network and receive SLAAC addresses automatically. NAT Network mode supports IPv6 with built-in DHCPv6. Host-Only networks require manual IPv6 configuration on both the `vboxnet` interface (via `VBoxManage hostonlyif ipconfig --ipv6`) and inside the VM. For development environments, Host-Only IPv6 networks using ULA prefixes (`fd00::/8`) are convenient for host-VM communication without requiring physical network IPv6 connectivity.
+VirtualBox supports IPv6 across all network adapter modes. Bridged mode provides the most transparent IPv6 experience - VMs appear directly on the physical network and receive SLAAC addresses automatically. NAT Network mode supports IPv6 with built-in DHCPv6. Host-Only networks require manual IPv6 configuration on both the `vboxnet` interface (via `VBoxManage hostonlyif ipconfig --ipv6`) and inside the VM. For development environments, Host-Only IPv6 networks using ULA prefixes (`fd00::/8`) are convenient for host-VM communication without requiring physical network IPv6 connectivity.

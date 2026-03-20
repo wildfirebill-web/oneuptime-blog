@@ -239,6 +239,7 @@ class BM25:
 
 
 # Example usage demonstrating the BM25 implementation
+
 if __name__ == "__main__":
     # Sample corpus of technical documentation
     corpus = [

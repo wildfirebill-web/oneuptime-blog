@@ -35,6 +35,7 @@ Let's start with the simplest possible CLI application - a greeting command.
 
 ```python
 # greet.py
+
 import click
 
 # The @click.command() decorator turns a function into a CLI command

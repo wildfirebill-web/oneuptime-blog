@@ -28,6 +28,7 @@ First, confirm the exit code:
 
 ```bash
 # Check the container's exit code
+
 docker inspect my-container --format '{{.State.ExitCode}}'
 
 # Check the container logs for any output before the crash

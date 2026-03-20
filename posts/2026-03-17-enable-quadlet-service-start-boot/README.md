@@ -20,6 +20,7 @@ The `[Install]` section in your Quadlet file defines the boot target:
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application
 

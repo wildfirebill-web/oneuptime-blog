@@ -29,6 +29,7 @@ All three spans share the same OpenTelemetry trace ID because they are part of t
 
 ```python
 # sentry_otel_dedup.py - Attach trace context to Sentry events
+
 import sentry_sdk
 from opentelemetry import trace
 

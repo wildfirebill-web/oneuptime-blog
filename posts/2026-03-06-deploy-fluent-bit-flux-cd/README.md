@@ -37,6 +37,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/fluent-bit/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -34,6 +34,7 @@ Start by creating an App Service plan and web app. For multi-tenant SaaS, you wa
 
 ```bash
 # Create a resource group for the SaaS application
+
 az group create --name rg-saas-app --location eastus
 
 # Create an App Service plan with Standard S1 tier for custom domain support

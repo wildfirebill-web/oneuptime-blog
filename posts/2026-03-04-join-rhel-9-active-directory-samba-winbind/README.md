@@ -27,6 +27,7 @@ Use Winbind when your primary goal is running Samba file servers that need tight
 
 ```bash
 # Install Samba, Winbind, and related tools
+
 sudo dnf install samba samba-winbind samba-winbind-clients \
   samba-common-tools krb5-workstation oddjob oddjob-mkhomedir -y
 ```

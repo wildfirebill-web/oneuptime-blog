@@ -171,6 +171,7 @@ This implementation handles multi-column sorting with proper tuple comparison.
 
 ```python
 # keyset_pagination.py
+
 # Multi-column keyset pagination using SQLAlchemy
 from fastapi import FastAPI, Query, Depends, HTTPException
 from sqlalchemy.orm import Session

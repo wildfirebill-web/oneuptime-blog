@@ -35,6 +35,7 @@ Flux CD treats Helm as a first-class citizen through HelmRelease custom resource
 
 ```yaml
 # HelmRelease with advanced configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

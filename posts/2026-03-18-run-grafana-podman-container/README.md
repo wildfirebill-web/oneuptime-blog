@@ -20,6 +20,7 @@ Download the official Grafana image.
 
 ```bash
 # Pull the latest Grafana image
+
 podman pull docker.io/grafana/grafana:latest
 
 # Verify the image

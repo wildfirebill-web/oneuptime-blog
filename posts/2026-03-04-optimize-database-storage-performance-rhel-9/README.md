@@ -64,6 +64,7 @@ For database workloads, use mq-deadline on HDDs and none on SSDs:
 
 ```bash
 # SSDs and NVMe
+
 echo "none" | sudo tee /sys/block/nvme0n1/queue/scheduler
 
 # HDDs

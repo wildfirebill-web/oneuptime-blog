@@ -16,6 +16,7 @@ OpenTofu's import feature brings existing cloud resources under management witho
 # imports.tf
 
 # Basic import
+
 import {
   id = "my-existing-bucket"
   to = aws_s3_bucket.main
@@ -64,7 +65,7 @@ tofu apply
 
 ## Common AWS Import ID Formats
 
-```
+```javascript
 Resource Type                    Import ID
 ---------------------------------   --------------------------
 aws_s3_bucket                    bucket-name
@@ -94,7 +95,7 @@ aws_sqs_queue                    queue-url
 
 ## Common Azure Import ID Formats
 
-```
+```text
 Resource Type                    Import ID
 ---------------------------------   ---------------------------
 azurerm_resource_group           /subscriptions/{sub}/resourceGroups/{name}
@@ -105,7 +106,7 @@ azurerm_subnet                   /subscriptions/{sub}/resourceGroups/{rg}/provid
 
 ## Common GCP Import ID Formats
 
-```
+```text
 Resource Type                    Import ID
 ---------------------------------   ---------------------------
 google_storage_bucket            project/bucket-name
@@ -134,4 +135,4 @@ tofu plan
 
 ## Summary
 
-Import blocks are the modern, declarative way to import existing cloud resources. Use `for_each` on import blocks for bulk imports, `-generate-config-out` to auto-generate HCL configuration, and always run `tofu plan` after importing to verify no unexpected changes. Remove import blocks after successful import — they're only needed for the initial import operation. The CLI `tofu import` command is still available for quick one-off imports but import blocks are preferred for reproducible workflows.
+Import blocks are the modern, declarative way to import existing cloud resources. Use `for_each` on import blocks for bulk imports, `-generate-config-out` to auto-generate HCL configuration, and always run `tofu plan` after importing to verify no unexpected changes. Remove import blocks after successful import - they're only needed for the initial import operation. The CLI `tofu import` command is still available for quick one-off imports but import blocks are preferred for reproducible workflows.

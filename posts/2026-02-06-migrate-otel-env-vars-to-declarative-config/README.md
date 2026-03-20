@@ -74,6 +74,7 @@ Before writing any YAML, collect all the OpenTelemetry environment variables cur
 ```bash
 #!/bin/bash
 # audit-otel-env-vars.sh
+
 # Finds all OTEL_* environment variables in a Kubernetes namespace
 
 NAMESPACE="${1:-default}"

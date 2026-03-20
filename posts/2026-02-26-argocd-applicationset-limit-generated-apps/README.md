@@ -160,6 +160,7 @@ Instead of one ApplicationSet generating 500 applications, split into multiple s
 
 ```yaml
 # Split by team
+
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet

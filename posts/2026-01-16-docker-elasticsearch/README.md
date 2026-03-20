@@ -203,6 +203,7 @@ services:
 
 ```bash
 # Increase vm.max_map_count for Elasticsearch
+
 sudo sysctl -w vm.max_map_count=262144
 
 # Persist the setting

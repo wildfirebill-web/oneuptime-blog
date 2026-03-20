@@ -16,6 +16,7 @@ The foundation of multi-region modules is provider aliases. You create multiple 
 
 ```hcl
 # Root module - configure providers for each region
+
 provider "aws" {
   alias  = "us_east_1"
   region = "us-east-1"

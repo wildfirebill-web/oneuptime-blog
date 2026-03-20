@@ -210,6 +210,7 @@ After making changes, verify that the interception is working as expected:
 
 ```bash
 # Check the iptables rules in a pod
+
 kubectl exec my-pod -c istio-proxy -- iptables -t nat -L -v -n
 
 # Verify Envoy is receiving traffic

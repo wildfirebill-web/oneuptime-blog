@@ -16,6 +16,7 @@ Raw `show ip route` output is human-readable but difficult to process programmat
 pip install netmiko ntc-templates
 
 # ntc-templates provides pre-built TextFSM templates for many Cisco commands
+
 python3 -c "from netmiko import ConnectHandler; print('OK')"
 ```
 

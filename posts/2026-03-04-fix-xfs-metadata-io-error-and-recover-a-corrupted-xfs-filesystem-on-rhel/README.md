@@ -14,6 +14,7 @@ XFS metadata I/O errors indicate corruption or hardware issues on an XFS filesys
 
 ```bash
 # Check kernel messages for XFS errors
+
 dmesg | grep -i xfs
 
 # Typical error messages:

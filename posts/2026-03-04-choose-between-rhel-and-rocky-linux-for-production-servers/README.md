@@ -44,6 +44,7 @@ Rocky Linux was created as a direct RHEL-compatible replacement after CentOS shi
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

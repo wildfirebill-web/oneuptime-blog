@@ -16,6 +16,7 @@ The built-in Istio access log supports a template format that covers many use ca
 
 ```yaml
 # Standard Istio access logging config
+
 meshConfig:
   accessLogFile: /dev/stdout
   accessLogFormat: "[%START_TIME%] \"%REQ(:METHOD)% %REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%\" %RESPONSE_CODE%\n"

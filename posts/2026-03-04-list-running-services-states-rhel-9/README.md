@@ -18,6 +18,7 @@ The most basic command shows all currently loaded and active units:
 
 ```bash
 # List all active services
+
 systemctl list-units --type=service
 ```
 

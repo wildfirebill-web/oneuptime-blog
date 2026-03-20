@@ -31,6 +31,7 @@ Sign up for an Omni account at omni.siderolabs.com. After creating your account,
 
 ```bash
 # Install omnictl - the CLI for Omni
+
 curl -sL https://omni.siderolabs.com/install/omnictl | sh
 
 # Authenticate with your Omni account

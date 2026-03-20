@@ -43,6 +43,7 @@ Create topics with the appropriate replication factor for your durability needs.
 
 ```bash
 # Create a topic with replication factor 3
+
 # Data exists on 3 different brokers simultaneously
 kafka-topics.sh --create \
   --topic orders \

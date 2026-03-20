@@ -8,12 +8,13 @@ Description: Diagnose sudden or gradual TCP throughput drops caused by network c
 
 ## Introduction
 
-TCP throughput can drop suddenly due to congestion events (packet loss), gradually due to competing traffic filling the bottleneck link, or intermittently due to periodic congestion from bursty applications. Diagnosing which type is occurring guides the appropriate fix — whether that's congestion control tuning, QoS implementation, or traffic shaping.
+TCP throughput can drop suddenly due to congestion events (packet loss), gradually due to competing traffic filling the bottleneck link, or intermittently due to periodic congestion from bursty applications. Diagnosing which type is occurring guides the appropriate fix - whether that's congestion control tuning, QoS implementation, or traffic shaping.
 
 ## Step 1: Identify the Drop Pattern
 
 ```bash
 # Monitor throughput over time to identify the pattern
+
 # Run a sustained transfer and watch throughput
 iperf3 -c 10.20.0.5 -t 120 -i 5   # 120-second test, report every 5 seconds
 

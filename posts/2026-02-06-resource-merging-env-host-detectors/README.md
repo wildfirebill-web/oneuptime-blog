@@ -16,6 +16,7 @@ Each resource detector produces a `Resource` object with a set of key-value attr
 
 ```python
 # resource_setup.py
+
 from opentelemetry.sdk.resources import Resource, get_aggregated_resources
 from opentelemetry.sdk.resources import (
     OTELResourceDetector,     # Reads OTEL_RESOURCE_ATTRIBUTES

@@ -54,6 +54,7 @@ Environment variables with the `TF_VAR_` prefix override default values.
 
 ```bash
 # This overrides the default "t3.micro"
+
 export TF_VAR_instance_type="t3.small"
 
 terraform plan

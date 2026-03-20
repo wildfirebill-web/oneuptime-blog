@@ -168,6 +168,7 @@ After starting the node, verify it is running correctly:
 
 ```bash
 # Check node status
+
 sudo calicoctl node status
 
 # Verify the container is running

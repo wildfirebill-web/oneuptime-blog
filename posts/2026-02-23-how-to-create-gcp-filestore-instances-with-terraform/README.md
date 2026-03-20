@@ -16,6 +16,7 @@ Terraform lets you define Filestore instances as code, so you can provision shar
 
 ```hcl
 # Enable Filestore API
+
 resource "google_project_service" "filestore" {
   project = var.project_id
   service = "file.googleapis.com"

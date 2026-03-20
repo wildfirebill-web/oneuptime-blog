@@ -18,6 +18,7 @@ GitLab maintains a Terraform template at `Terraform.gitlab-ci.yml`. Include it i
 
 ```yaml
 # .gitlab-ci.yml
+
 # Use GitLab's official Terraform template
 
 include:

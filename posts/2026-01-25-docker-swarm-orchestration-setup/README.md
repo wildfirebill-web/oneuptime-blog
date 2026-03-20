@@ -43,6 +43,7 @@ On the first manager node, initialize the swarm.
 
 ```bash
 # Initialize swarm on the first manager
+
 # --advertise-addr specifies the address other nodes use to join
 docker swarm init --advertise-addr 192.168.1.10
 

@@ -104,6 +104,7 @@ Get the Okta metadata for Rancher:
 
 ```bash
 # Download the metadata
+
 curl -s "https://your-org.okta.com/app/xxxxx/sso/saml/metadata" > okta-metadata.xml
 ```
 

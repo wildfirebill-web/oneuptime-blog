@@ -40,6 +40,7 @@ Start by creating namespaces for each component:
 
 ```bash
 # Create all namespaces
+
 kubectl create namespace argocd
 kubectl create namespace argo-rollouts
 kubectl create namespace argo

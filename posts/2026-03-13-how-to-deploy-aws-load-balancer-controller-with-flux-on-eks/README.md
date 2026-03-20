@@ -42,6 +42,7 @@ Download and create the IAM policy for the Load Balancer Controller:
 
 ```bash
 # Download the official IAM policy
+
 curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 
 # Create the policy

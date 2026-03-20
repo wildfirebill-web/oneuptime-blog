@@ -18,6 +18,7 @@ Before diving into specific errors, know how to get more information. Terraform 
 
 ```bash
 # Enable trace-level logging (most verbose)
+
 TF_LOG=TRACE terraform plan
 
 # Enable debug logging (less verbose but still detailed)

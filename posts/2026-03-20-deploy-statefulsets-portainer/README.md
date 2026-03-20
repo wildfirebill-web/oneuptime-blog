@@ -8,7 +8,7 @@ Description: Learn how to create and manage Kubernetes StatefulSets through Port
 
 ---
 
-StatefulSets manage pods that require stable network identities, ordered deployment, and persistent storage — ideal for databases, message queues, and caching systems. Portainer provides a UI to deploy and manage StatefulSets.
+StatefulSets manage pods that require stable network identities, ordered deployment, and persistent storage - ideal for databases, message queues, and caching systems. Portainer provides a UI to deploy and manage StatefulSets.
 
 ---
 
@@ -87,6 +87,7 @@ The headless service gives each pod a stable DNS name: `postgres-0.postgres-head
 
 ```bash
 # Scale via kubectl
+
 kubectl scale statefulset postgres --replicas=3
 
 # In Portainer: Workloads → StatefulSets → Edit → change replicas

@@ -50,6 +50,7 @@ file="/path/to/file.txt"
 dir="/path/to/directory"
 
 # Existence tests
+
 if [[ -e "$file" ]]; then
     echo "File exists"
 fi

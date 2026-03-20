@@ -1,4 +1,4 @@
-# How to Configure State Encryption with AWS KMS in OpenTofu
+# How to Configure State Encryption with AWS KMS in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Using AWS Key Management Service (KMS) with OpenTofu state encryption provides e
 
 ```hcl
 # kms.tf - Create a KMS key for state encryption
+
 resource "aws_kms_key" "terraform_state" {
   description             = "KMS key for OpenTofu state encryption"
   deletion_window_in_days = 10
@@ -158,7 +159,7 @@ key_provider "aws_kms" "state_key" {
 tofu init
 tofu apply
 
-# Verify KMS is being used — CloudTrail should show:
+# Verify KMS is being used - CloudTrail should show:
 # kms:GenerateDataKey calls during apply
 # kms:Decrypt calls during plan/show
 ```

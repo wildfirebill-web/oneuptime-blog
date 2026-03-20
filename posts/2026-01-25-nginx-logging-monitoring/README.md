@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Logging, Monitoring, Observability, Metrics
+Tags: Nginx, Logging, Monitoring, Observability, Metrics
 
 Description: Learn how to configure comprehensive logging and monitoring in Nginx, including custom log formats, real-time metrics, and integration with monitoring systems.
 
@@ -115,6 +115,7 @@ Configure error log verbosity:
 
 ```nginx
 # Error log levels (from most to least verbose)
+
 # debug, info, notice, warn, error, crit, alert, emerg
 
 # Development: verbose logging

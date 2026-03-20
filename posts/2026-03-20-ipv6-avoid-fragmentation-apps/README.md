@@ -12,7 +12,7 @@ IPv6 fragmentation should be a last resort. Fragmented packets are more likely t
 
 ## Strategies to Avoid Fragmentation
 
-```
+```text
 Anti-fragmentation strategies ranked by preference:
 
 1. Use TCP (handles PMTUD and MSS automatically)
@@ -99,6 +99,7 @@ DNS is a real-world example of fragmentation avoidance strategy:
 
 ```bash
 # DNS uses UDP with max 512 bytes traditionally (fits in any MTU)
+
 # EDNS0 extends to 4096 bytes with fragmentation risk
 
 # Check if DNS responses require fragmentation
@@ -119,7 +120,7 @@ dig @8.8.8.8 cloudflare.com DNSKEY +dnssec +bufsize=1232
 
 ## QUIC and Modern Protocols
 
-```
+```text
 Modern protocol approaches to avoid fragmentation:
 
 QUIC (RFC 9000):
@@ -141,4 +142,4 @@ WireGuard:
 
 ## Conclusion
 
-The best way to avoid IPv6 fragmentation is to use TCP for connections that need it (TCP handles PMTUD automatically through MSS negotiation) and to keep UDP payloads conservative (within 1280 bytes for guaranteed delivery, or implementing application-level PMTUD for higher efficiency). The `IPV6_DONTFRAG` socket option is invaluable during development — it surfaces MTU problems as explicit errors rather than silent fragmentation failures. For DNS specifically, RFC 8900 recommends limiting UDP response sizes to 1232 bytes to avoid fragmentation on all IPv6 paths.
+The best way to avoid IPv6 fragmentation is to use TCP for connections that need it (TCP handles PMTUD automatically through MSS negotiation) and to keep UDP payloads conservative (within 1280 bytes for guaranteed delivery, or implementing application-level PMTUD for higher efficiency). The `IPV6_DONTFRAG` socket option is invaluable during development - it surfaces MTU problems as explicit errors rather than silent fragmentation failures. For DNS specifically, RFC 8900 recommends limiting UDP response sizes to 1232 bytes to avoid fragmentation on all IPv6 paths.

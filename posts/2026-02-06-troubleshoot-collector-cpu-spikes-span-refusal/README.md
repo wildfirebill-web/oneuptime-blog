@@ -14,6 +14,7 @@ First, check which component is consuming the most CPU. The Collector exposes pr
 
 ```yaml
 # collector-config.yaml
+
 service:
   telemetry:
     metrics:

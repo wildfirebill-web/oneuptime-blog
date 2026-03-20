@@ -18,6 +18,7 @@ A Kubernetes context combines three pieces of information: a cluster (API server
 
 ```bash
 # View your current kubeconfig with all contexts
+
 kubectl config view
 
 # List all available contexts

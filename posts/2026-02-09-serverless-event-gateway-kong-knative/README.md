@@ -22,6 +22,7 @@ Deploy Kong using the Kubernetes ingress controller:
 
 ```bash
 # Install Kong
+
 kubectl create namespace kong
 helm repo add kong https://charts.konghq.com
 helm repo update

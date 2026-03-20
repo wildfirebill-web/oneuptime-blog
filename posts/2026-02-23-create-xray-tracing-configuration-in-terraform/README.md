@@ -44,6 +44,7 @@ By default, X-Ray encrypts trace data with an AWS-managed key. You can use your 
 
 ```hcl
 # KMS key for X-Ray trace encryption
+
 resource "aws_kms_key" "xray" {
   description             = "KMS key for X-Ray trace data encryption"
   deletion_window_in_days = 7

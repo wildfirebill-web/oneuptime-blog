@@ -1,4 +1,4 @@
-# How to Toggle System Resource Visibility in Portainer for Kubernetes
+# How to Toggle System Resource Visibility in Portainer for Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,9 +10,9 @@ Description: Learn how to show or hide Kubernetes system resources and namespace
 
 Kubernetes system resources are workloads and configurations that manage the cluster itself, running in:
 
-- `kube-system` — Core components (kube-dns, kube-proxy, metrics-server, CNI plugins)
-- `kube-public` — Public cluster information
-- `portainer` — The Portainer agent itself
+- `kube-system` - Core components (kube-dns, kube-proxy, metrics-server, CNI plugins)
+- `kube-public` - Public cluster information
+- `portainer` - The Portainer agent itself
 
 By default, Portainer hides these to keep the UI focused on user workloads.
 
@@ -36,6 +36,7 @@ After enabling system resources:
 
 ```bash
 # List all namespaces including system namespaces
+
 kubectl get namespaces
 
 # View pods in the kube-system namespace

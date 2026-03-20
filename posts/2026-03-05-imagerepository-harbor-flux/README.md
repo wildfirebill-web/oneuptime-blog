@@ -38,6 +38,7 @@ Create a Kubernetes Secret with the robot account credentials.
 
 ```bash
 # Create a docker-registry secret for Harbor authentication
+
 kubectl create secret docker-registry harbor-credentials \
   --docker-server=harbor.example.com \
   --docker-username="robot\$my-project+flux-reader" \

@@ -25,6 +25,7 @@ If you do not already have a MinIO instance, you can deploy one using Helm.
 
 ```bash
 # Add the MinIO Helm repository
+
 helm repo add minio https://charts.min.io/
 helm repo update
 

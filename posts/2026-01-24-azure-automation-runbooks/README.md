@@ -50,6 +50,7 @@ First, create an Automation Account with a system-assigned managed identity:
 
 ```bash
 # Create resource group
+
 az group create \
     --name rg-automation \
     --location eastus

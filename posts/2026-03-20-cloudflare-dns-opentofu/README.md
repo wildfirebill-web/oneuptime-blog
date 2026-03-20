@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     cloudflare = {
@@ -46,7 +47,7 @@ data "cloudflare_zone" "main" {
   name = var.domain_name
 }
 
-# Proxied A record — goes through Cloudflare CDN and DDoS protection
+# Proxied A record - goes through Cloudflare CDN and DDoS protection
 resource "cloudflare_record" "root" {
   zone_id = data.cloudflare_zone.main.id
   name    = var.domain_name
@@ -76,7 +77,7 @@ resource "cloudflare_record" "mail" {
   name    = "mail"
   type    = "A"
   value   = var.mail_server_ip
-  proxied = false  # Direct DNS — email servers can't use CDN proxy
+  proxied = false  # Direct DNS - email servers can't use CDN proxy
   ttl     = 300
 }
 
@@ -157,7 +158,7 @@ resource "cloudflare_page_rule" "no_cache_api" {
 ## Best Practices
 
 - Use `proxied = true` for HTTP/HTTPS records to get Cloudflare DDoS protection and CDN without additional configuration.
-- Never proxy non-HTTP services (mail, FTP, VPN) — use `proxied = false` for those records.
+- Never proxy non-HTTP services (mail, FTP, VPN) - use `proxied = false` for those records.
 - Set `min_tls_version = "1.2"` and `always_use_https = "on"` for all production zones.
-- Use the Cloudflare API token (not Global API Key) with minimal scopes — `Zone:DNS:Edit` for DNS management only.
+- Use the Cloudflare API token (not Global API Key) with minimal scopes - `Zone:DNS:Edit` for DNS management only.
 - Add `prevent_destroy = true` lifecycle rules on critical DNS records in production zones.

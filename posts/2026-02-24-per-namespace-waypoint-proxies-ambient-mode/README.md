@@ -20,6 +20,7 @@ Before you start, make sure you have:
 
 ```bash
 # Verify Istio ambient installation
+
 istioctl version
 
 # Make sure ztunnel is running

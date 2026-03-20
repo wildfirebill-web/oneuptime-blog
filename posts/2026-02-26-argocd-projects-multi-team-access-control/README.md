@@ -61,6 +61,7 @@ Each team gets their own project with appropriate restrictions:
 
 ```yaml
 # Team structure:
+
 # - Platform team: manages infrastructure
 # - Backend team: manages APIs and services
 # - Frontend team: manages web applications

@@ -12,6 +12,7 @@ Azure Management Groups provide a governance hierarchy above subscriptions. Poli
 
 ```hcl
 # Root management group (every tenant has one automatically)
+
 data "azurerm_management_group" "root" {
   name = var.tenant_id  # Root MG ID is the tenant ID
 }

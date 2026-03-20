@@ -18,6 +18,7 @@ Uptime checks are the foundation of outage detection. They probe your endpoints 
 
 ```bash
 # Create an HTTPS uptime check that runs from all available checker regions
+
 gcloud monitoring uptime create \
   --display-name="Production API - Primary Region" \
   --uri="https://api.example.com/health" \

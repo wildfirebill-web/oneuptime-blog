@@ -30,6 +30,7 @@ When creating or editing an application in Portainer:
 
 ```yaml
 # Deployment metadata annotations
+
 metadata:
   name: my-app
   annotations:

@@ -33,6 +33,7 @@ You can adjust the kubelet log rotation settings through the Talos machine confi
 
 ```yaml
 # kubelet-log-rotation.yaml
+
 # Adjust container log rotation settings
 machine:
   kubelet:

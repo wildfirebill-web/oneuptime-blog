@@ -20,6 +20,7 @@ Create a Flux HelmRelease to deploy Gatekeeper:
 
 ```yaml
 # gatekeeper-helmrelease.yaml
+
 # Deploy OPA Gatekeeper via Flux HelmRelease
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

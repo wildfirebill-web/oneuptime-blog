@@ -30,6 +30,7 @@ Bridge is the default mode. Docker creates a virtual bridge (`docker0`) and assi
 
 ```bash
 # Check the docker0 bridge on the host
+
 ip link show docker0
 ip addr show docker0
 # inet 172.17.0.1/16 - this is the gateway for containers

@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Baserow
+
 version: "3.8"
 
 services:
@@ -98,7 +99,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 BASEROW_DOMAIN=baserow.yourdomain.com
 DB_PASSWORD=your-secure-db-password
 SECRET_KEY=your-50-char-secret-key

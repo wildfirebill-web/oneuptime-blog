@@ -130,6 +130,7 @@ The following commands create an OSD with dedicated WAL and DB devices. This is 
 
 ```bash
 # Create an OSD with dedicated NVMe devices for WAL and DB
+
 # The main data device can be a slower SSD
 # WAL: Handles write-ahead logging (small, very fast)
 # DB: Stores RocksDB metadata (larger, fast)

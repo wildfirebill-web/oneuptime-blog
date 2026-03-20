@@ -1,4 +1,4 @@
-# How to Deploy a Kubernetes Application via YAML Manifest in Portainer
+# How to Deploy a Kubernetes Application via YAML Manifest in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -181,6 +181,7 @@ spec:
 
 ```bash
 # Equivalent kubectl command
+
 kubectl apply -f my-api.yaml -n production
 ```
 

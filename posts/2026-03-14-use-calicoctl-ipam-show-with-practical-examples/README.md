@@ -27,6 +27,7 @@ This guide provides practical examples of using `calicoctl ipam show` for common
 
 ```bash
 # Show overall IPAM utilization
+
 calicoctl ipam show
 ```
 

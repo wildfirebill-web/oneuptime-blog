@@ -21,6 +21,7 @@ How to Use Container Images with Epinio demonstrates how Epinio simplifies appli
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

@@ -150,6 +150,7 @@ Istio comes with some powerful dashboards. Access them through istioctl:
 
 ```bash
 # Kiali - service mesh observability
+
 istioctl dashboard kiali
 
 # Grafana - metrics dashboards

@@ -18,6 +18,7 @@ Raw command output is often hard to read at a glance. The `column` command forma
 
 ```bash
 # Format whitespace-separated data into columns
+
 echo -e "name age city\nAlice 30 London\nBob 25 Tokyo\nCharlie 35 Paris" | column -t
 ```
 

@@ -6,12 +6,13 @@ Tags: IPv6, Port Scanning, nmap, Security Testing, Network Reconnaissance, TCP
 
 Description: A guide to IPv6 port scanning techniques using nmap and other tools, covering SYN scans, UDP scans, version detection, and evasion techniques over IPv6.
 
-IPv6 port scanning uses the same TCP/UDP scanning techniques as IPv4, but requires IPv6-capable tools and specific flags. The primary challenge with IPv6 is host discovery (addressed in separate guides) — once you have a target IPv6 address, port scanning proceeds similarly to IPv4.
+IPv6 port scanning uses the same TCP/UDP scanning techniques as IPv4, but requires IPv6-capable tools and specific flags. The primary challenge with IPv6 is host discovery (addressed in separate guides) - once you have a target IPv6 address, port scanning proceeds similarly to IPv4.
 
 ## Basic IPv6 Port Scanning with nmap
 
 ```bash
 # Full port scan of a single IPv6 host
+
 nmap -6 -p- 2001:db8::target
 
 # Fast scan (top 100 ports)
@@ -33,7 +34,7 @@ sudo nmap -6 -sS 2001:db8::target
 # TCP Connect scan (no root required, more detectable)
 nmap -6 -sT 2001:db8::target
 
-# FIN scan (sends FIN without SYN — evades some filters)
+# FIN scan (sends FIN without SYN - evades some filters)
 sudo nmap -6 -sF 2001:db8::target
 
 # NULL scan (no flags set)
@@ -141,4 +142,4 @@ nmap -6 -sV -iL ipv6-targets.txt -oA scan-results
 # 2001:db8::gateway
 ```
 
-Always obtain written authorization before port scanning any system. IPv6 doesn't provide anonymity — scans are logged by target hosts just as IPv4 scans are.
+Always obtain written authorization before port scanning any system. IPv6 doesn't provide anonymity - scans are logged by target hosts just as IPv4 scans are.

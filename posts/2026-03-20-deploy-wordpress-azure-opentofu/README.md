@@ -10,7 +10,7 @@ Description: Learn how to deploy a production-ready WordPress site on Azure usin
 
 Deploying WordPress on Azure with OpenTofu uses Azure App Service for managed hosting, Azure Database for MySQL Flexible Server for the database, and Azure Files for shared WordPress content. This combination provides a fully managed, scalable platform with minimal operational overhead.
 
-## Resource Group and Networking
+Resource Group and Networking
 
 ```hcl
 resource "azurerm_resource_group" "wordpress" {

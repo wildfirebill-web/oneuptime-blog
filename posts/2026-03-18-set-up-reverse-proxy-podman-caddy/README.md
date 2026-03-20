@@ -228,6 +228,7 @@ Caddy exposes an admin API for dynamic configuration changes. By default, it lis
 
 ```bash
 # View current configuration
+
 podman exec caddy curl -s http://localhost:2019/config/ | python3 -m json.tool
 
 # Add a new route dynamically

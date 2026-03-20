@@ -20,6 +20,7 @@ You can create replication groups with or without cluster mode. Without cluster 
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

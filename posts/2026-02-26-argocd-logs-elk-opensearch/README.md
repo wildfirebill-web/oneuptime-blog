@@ -30,6 +30,7 @@ First, configure ArgoCD to output JSON-formatted logs. This makes parsing reliab
 
 ```yaml
 # Set JSON log format for all ArgoCD components
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -27,6 +27,7 @@ Set up the Google provider for Terraform:
 
 ```hcl
 # Configure the Google provider
+
 provider "google" {
   project = var.project_id
   region  = var.region

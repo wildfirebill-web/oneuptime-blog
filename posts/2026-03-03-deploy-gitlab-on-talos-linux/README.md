@@ -31,6 +31,7 @@ GitLab has several components that benefit from tuned kernel parameters:
 
 ```yaml
 # talos-gitlab-patch.yaml
+
 machine:
   sysctls:
     vm.max_map_count: "262144"
@@ -424,7 +425,7 @@ kubectl exec -it deploy/gitlab-toolbox -n gitlab -- \
   ls -la /srv/gitlab/tmp/backups/
 ```
 
-## Resource Planning
+Resource Planning
 
 GitLab is resource-intensive. Here is a rough guide:
 

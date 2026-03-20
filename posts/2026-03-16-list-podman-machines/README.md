@@ -20,6 +20,7 @@ The simplest way to see all your Podman machines is with the `podman machine lis
 
 ```bash
 # List all Podman machines
+
 podman machine list
 ```
 

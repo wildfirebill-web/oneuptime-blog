@@ -16,6 +16,7 @@ GitLab provides official packages. Here is the Ansible playbook to install it on
 
 ```yaml
 # playbook-gitlab-install.yml
+
 # Installs GitLab Community Edition on Ubuntu using the official repository
 - name: Install GitLab CE
   hosts: gitlab_servers

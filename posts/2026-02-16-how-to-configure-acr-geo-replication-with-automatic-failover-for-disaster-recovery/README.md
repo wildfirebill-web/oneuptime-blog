@@ -18,6 +18,7 @@ ACR geo-replication requires the Premium SKU. If you are on Basic or Standard, y
 
 ```bash
 # Check your current ACR SKU
+
 az acr show --name myacr --query sku.name -o tsv
 
 # Upgrade to Premium if needed

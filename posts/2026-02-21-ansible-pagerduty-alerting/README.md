@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # tasks/pagerduty-incident.yml
+
 ---
 - name: Create PagerDuty incident
   community.general.pagerduty_alert:

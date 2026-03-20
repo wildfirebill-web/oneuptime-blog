@@ -27,6 +27,7 @@ Talos Linux lets you tune the failover behavior through machine configuration:
 
 ```yaml
 # failover-config-patch.yaml
+
 cluster:
   etcd:
     extraArgs:

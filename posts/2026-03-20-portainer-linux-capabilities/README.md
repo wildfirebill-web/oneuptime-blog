@@ -1,4 +1,4 @@
-# How to Configure Linux Capabilities for Containers in Portainer
+# How to Configure Linux Capabilities for Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,8 +19,9 @@ Linux capabilities break root's monolithic privilege into fine-grained units. In
 
 By default, Docker grants containers a subset of Linux capabilities:
 
-```
+```text
 # Default capabilities granted by Docker:
+
 CAP_AUDIT_WRITE        - Write audit log
 CAP_CHOWN              - Arbitrary file ownership changes
 CAP_DAC_OVERRIDE       - Bypass file read/write/execute permission checks

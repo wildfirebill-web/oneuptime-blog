@@ -24,6 +24,7 @@ Before running connectivity tests, make sure the Network Management API is enabl
 
 ```bash
 # Enable the Network Management API for connectivity tests
+
 gcloud services enable networkmanagement.googleapis.com --project=my-project
 ```
 

@@ -25,6 +25,7 @@ Here is a quick demonstration:
 
 ```bash
 # Create a container with an anonymous volume, then remove the container without -v
+
 docker run -d --name temp_app -v /data alpine sleep 3600
 docker stop temp_app
 docker rm temp_app

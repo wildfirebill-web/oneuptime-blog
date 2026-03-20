@@ -39,6 +39,7 @@ Start with a `azure-pipelines.yml` file at the root of your repository. Here is 
 
 ```yaml
 # Azure Pipeline for Python project with pytest and virtual environments
+
 trigger:
   branches:
     include:

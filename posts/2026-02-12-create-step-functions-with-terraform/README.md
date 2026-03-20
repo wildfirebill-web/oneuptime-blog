@@ -20,6 +20,7 @@ First, the IAM role that Step Functions assumes when executing your workflow:
 
 ```hcl
 # IAM role for Step Functions
+
 resource "aws_iam_role" "step_functions" {
   name = "step-functions-execution-role"
 

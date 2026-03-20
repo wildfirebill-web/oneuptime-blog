@@ -26,6 +26,7 @@ RFC 8215 defines `64:ff9b:1::/48` as a locally assigned prefix for NAT64 deploym
 import ipaddress
 
 # Local-use space: 64:ff9b:1::/48
+
 # Operator can carve /96 sub-prefixes for different NAT64 gateways
 
 LOCAL_USE_BLOCK = ipaddress.IPv6Network("64:ff9b:1::/48")
@@ -50,13 +51,13 @@ print(embed_ipv4(gw2_prefix, "8.8.8.8"))  # 64:ff9b:1:2::808:808
 ## DNS64 Configuration for Local-Use Prefix
 
 ```bash
-# Unbound — configure DNS64 with local-use prefix
+# Unbound - configure DNS64 with local-use prefix
 # /etc/unbound/unbound.conf
 module-config: "dns64 validator iterator"
 dns64:
   prefix: 64:ff9b:1:1::/96   # Use local-use prefix, not WKP
 
-# BIND — DNS64 with non-default prefix
+# BIND - DNS64 with non-default prefix
 # /etc/named.conf
 dns64 64:ff9b:1:1::/96 {
     clients { any; };
@@ -81,7 +82,7 @@ ip -6 route add 64:ff9b:1:1::/96 dev eth0
 
 ## When to Use Local-Use vs WKP
 
-```
+```text
 Use 64:ff9b::/96 (WKP) when:
   - Single NAT64 gateway
   - Clients use default DNS64 (no special configuration)

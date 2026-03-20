@@ -180,6 +180,7 @@ Before applying selector changes to production, verify which namespaces would be
 
 ```bash
 # For opt-in model
+
 kubectl get namespaces -l istio-injection=enabled
 
 # For opt-out model

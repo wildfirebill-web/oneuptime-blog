@@ -14,6 +14,7 @@ Cilium is a high-performance CNI plugin using eBPF for packet processing in the 
 
 ```bash
 # Install Cilium CLI
+
 CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
 curl -L --fail --remote-name-all \
     "https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-amd64.tar.gz"
@@ -42,7 +43,7 @@ cilium status --wait
 ## Helm Chart Installation for IPv6
 
 ```yaml
-# cilium-values.yaml — dual-stack Helm values
+# cilium-values.yaml - dual-stack Helm values
 
 # Enable both IP families
 ipv4:

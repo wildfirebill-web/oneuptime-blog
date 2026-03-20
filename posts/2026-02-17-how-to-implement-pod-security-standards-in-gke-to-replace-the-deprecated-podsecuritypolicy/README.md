@@ -34,6 +34,7 @@ Before enforcing any policies, audit your existing workloads to see what would b
 
 ```bash
 # Dry-run check: see which pods in a namespace would violate baseline policy
+
 kubectl label --dry-run=server --overwrite ns default \
   pod-security.kubernetes.io/enforce=baseline
 ```

@@ -75,6 +75,7 @@ const client = new DynamoDBClient({ region: 'us-east-1' });
 
 ```bash
 # List tables in different regions
+
 for region in us-east-1 us-west-2 eu-west-1; do
   echo "Region: $region"
   aws dynamodb list-tables --region $region --query 'TableNames[*]' --output text

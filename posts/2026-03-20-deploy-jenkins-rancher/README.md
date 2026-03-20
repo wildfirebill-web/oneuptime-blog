@@ -1,8 +1,8 @@
-# How to Deploy Jenkins on Rancher
+# How to Deploy Jenkins on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, jenkins, cicd, kubernetes, helm
+Tags: Rancher, Jenkins, CI/CD, Kubernetes, Helm
 
 Description: Guide to deploying Jenkins CI/CD platform on Rancher for automated build and deployment pipelines.
 
@@ -24,6 +24,7 @@ How to Deploy Jenkins on Rancher on Rancher gives your team a production-ready d
 kubectl create namespace jenkins
 
 # Configure project in Rancher
+
 kubectl annotate namespace jenkins   field.cattle.io/projectId=YOUR_PROJECT_ID
 ```
 

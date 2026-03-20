@@ -29,6 +29,7 @@ gcloud compute routers create prod-router \
 
 ```bash
 # Create NAT that covers all subnets in the region automatically
+
 gcloud compute routers nats create prod-nat \
   --project=$PROJECT_ID \
   --router=prod-router \

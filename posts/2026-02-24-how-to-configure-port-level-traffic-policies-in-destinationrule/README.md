@@ -216,6 +216,7 @@ Check that Envoy has the correct per-port configuration:
 
 ```bash
 # Check cluster for port 8080
+
 istioctl proxy-config cluster <pod-name> \
   --port 8080 --fqdn my-service.default.svc.cluster.local -o json
 

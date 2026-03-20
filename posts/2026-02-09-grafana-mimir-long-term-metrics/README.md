@@ -200,6 +200,7 @@ Create S3 bucket and credentials:
 
 ```bash
 # Create bucket
+
 aws s3 mb s3://mimir-blocks --region us-east-1
 
 # Create IAM user and policy

@@ -37,6 +37,7 @@ The CIS Kubernetes Benchmark is commonly used as a bridge between NIST controls 
 
 ```bash
 # Deploy kube-bench as a Job
+
 kubectl apply -f - <<EOF
 apiVersion: batch/v1
 kind: Job

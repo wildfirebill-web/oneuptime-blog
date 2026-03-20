@@ -24,6 +24,7 @@ Here is the basic structure:
 
 ```yaml
 # Application with per-app compare options
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

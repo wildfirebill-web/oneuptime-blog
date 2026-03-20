@@ -27,6 +27,7 @@ Check your current Windows networking mode:
 
 ```bash
 # On a Windows node (via PowerShell)
+
 Get-HNSNetwork | Format-Table Name, Type, SubnetPrefix
 ```
 

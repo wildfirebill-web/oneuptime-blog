@@ -27,7 +27,8 @@ TACOS platforms address these gaps with purpose-built features.
 Atlantis is the most popular open-source option and runs as a server that receives GitHub/GitLab webhooks:
 
 ```yaml
-# atlantis.yaml — repository configuration
+# atlantis.yaml - repository configuration
+
 version: 3
 
 projects:
@@ -62,7 +63,7 @@ ATLANTIS_TOFU_VERSION=1.7.0
 ```
 
 PR workflow with Atlantis:
-```
+```hcl
 # In a GitHub PR comment:
 atlantis plan    # Runs tofu plan, posts output as comment
 atlantis apply   # Runs tofu apply after approval
@@ -180,7 +181,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan\n\`\`\`\n${plan}\n\`\`\``
+              body: `## OpenTofu Plan\n```\n${plan}\n````
             })
 
   apply:

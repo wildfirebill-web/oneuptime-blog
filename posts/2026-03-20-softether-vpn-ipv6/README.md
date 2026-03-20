@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SoftEther, IPv6, VPN, Multi-Protocol, Network, Japan
+Tags: SoftEther, IPv6, VPN, Multi-Protocol, Networks, Japan
 
 Description: A guide to configuring SoftEther VPN for IPv6 connectivity, including IPv6 listener setup, tunnel configuration, and dual-stack client connectivity.
 
@@ -12,6 +12,7 @@ SoftEther VPN is a high-performance, multi-protocol VPN software developed at th
 
 ```bash
 # Download SoftEther VPN Server (Linux x64)
+
 wget https://www.softether-download.com/files/softether/\
 v4.43-9799-beta-2023.08.31-tree/Linux/SoftEther_VPN_Server/\
 64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.43-9799-beta-2023.08.31-linux-x64-64bit.tar.gz
@@ -42,7 +43,7 @@ ListenerList
 
 ## SoftEther with IPv6 via vpncmd Commands
 
-```
+```sql
 # Connect to server
 > ServerPasswordSet
 
@@ -108,7 +109,7 @@ OpenVpnMakeConfig /FILE:openvpn-config.zip
 
 ## Configuration File (vpn_server.config)
 
-```
+```text
 # In vpn_server.config (advanced, direct file editing)
 # IPv6 listeners are configured as TCP listeners with "::" binding
 

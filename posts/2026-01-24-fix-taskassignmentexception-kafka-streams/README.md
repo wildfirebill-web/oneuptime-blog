@@ -72,6 +72,7 @@ Verify all instances share the same application ID:
 
 ```bash
 # List consumer groups to check application IDs
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list | grep streams
 
 # Check members of a specific streams application

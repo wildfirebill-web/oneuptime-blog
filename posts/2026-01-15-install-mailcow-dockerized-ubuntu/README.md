@@ -44,6 +44,7 @@ Before installing Mailcow, ensure your system meets the following requirements.
 
 ```bash
 # Minimum recommended specifications
+
 # - CPU: 2 cores (4+ recommended for production)
 # - RAM: 4 GB minimum (6+ GB recommended)
 # - Storage: 20 GB minimum (SSD recommended for better performance)

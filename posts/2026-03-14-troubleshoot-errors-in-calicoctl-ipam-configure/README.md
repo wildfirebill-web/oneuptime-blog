@@ -26,6 +26,7 @@ Error: unauthorized to modify IPAM configuration
 
 ```bash
 # Check current RBAC
+
 kubectl auth can-i update ipamconfigurations --as=system:serviceaccount:kube-system:calicoctl
 
 # Create necessary RBAC

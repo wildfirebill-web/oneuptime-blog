@@ -42,6 +42,7 @@ First, understand everything running on the cluster. ArgoCD makes this easy:
 
 ```bash
 # List all applications deployed to the cluster being decommissioned
+
 argocd app list --dest-server https://old-cluster.k8s.example.com
 
 # Export the list for review

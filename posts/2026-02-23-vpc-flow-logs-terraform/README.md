@@ -18,6 +18,7 @@ The simplest setup sends flow logs to a CloudWatch Logs group:
 
 ```hcl
 # flow-logs.tf
+
 # CloudWatch Logs group for flow logs
 resource "aws_cloudwatch_log_group" "flow_logs" {
   name              = "/vpc/flow-logs/${var.vpc_name}"

@@ -23,6 +23,7 @@ Install pre-commit:
 ```bash
 pip install pre-commit
 # or
+
 brew install pre-commit
 ```
 

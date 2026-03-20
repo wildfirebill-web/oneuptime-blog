@@ -341,6 +341,7 @@ CONNECT_URL="${CONNECT_URL:-http://localhost:8083}"
 ALERT_WEBHOOK="${ALERT_WEBHOOK:-}"
 
 # Get list of all connectors
+
 connectors=$(curl -s "$CONNECT_URL/connectors" | jq -r '.[]')
 
 for connector in $connectors; do

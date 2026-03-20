@@ -66,6 +66,7 @@ Verify the installation:
 
 ```bash
 # Check the ZFS module is loaded
+
 lsmod | grep zfs
 
 # Check version

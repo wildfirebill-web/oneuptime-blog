@@ -45,6 +45,7 @@ graph LR
 
 ```bash
 # Create the SignalR Service
+
 az signalr create \
     --name my-signalr-service \
     --resource-group my-rg \

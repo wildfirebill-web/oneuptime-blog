@@ -29,6 +29,7 @@ Each cluster in the mesh must have a unique ID (1-255):
 
 ```yaml
 # clusters/cluster-west/cilium/helmrelease.yaml (existing, add these values)
+
 # Add to your Cilium HelmRelease:
     cluster:
       id: 1

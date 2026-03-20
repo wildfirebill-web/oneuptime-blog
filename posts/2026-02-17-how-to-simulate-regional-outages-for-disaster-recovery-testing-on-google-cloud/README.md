@@ -55,6 +55,7 @@ The safest way to simulate a regional outage is to use firewall rules to block a
 
 ```bash
 # Create a firewall rule that blocks all ingress to the primary region
+
 gcloud compute firewall-rules create dr-test-block-ingress \
     --network=my-vpc \
     --direction=INGRESS \

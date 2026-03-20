@@ -24,6 +24,7 @@ Access a YugabyteDB pod to run backup commands:
 
 ```bash
 # Get a shell in a tablet server pod
+
 kubectl exec -it yb-tserver-0 -n yugabyte -- bash
 
 # Backup a single database

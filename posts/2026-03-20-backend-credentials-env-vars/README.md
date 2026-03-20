@@ -8,12 +8,13 @@ Description: Learn how to provide OpenTofu backend credentials securely through 
 
 ## Introduction
 
-Every OpenTofu backend supports passing credentials via environment variables. This is the recommended approach for CI/CD pipelines and production environments — it keeps secrets out of your `.tf` files and version control, and integrates naturally with secrets managers and CI/CD secret injection.
+Every OpenTofu backend supports passing credentials via environment variables. This is the recommended approach for CI/CD pipelines and production environments - it keeps secrets out of your `.tf` files and version control, and integrates naturally with secrets managers and CI/CD secret injection.
 
 ## S3 Backend Environment Variables
 
 ```bash
 # Standard AWS credential variables (used by S3 backend)
+
 export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
 export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 export AWS_SESSION_TOKEN="FwoGZXIvYXdzEJr..."  # For temporary credentials
@@ -28,7 +29,7 @@ export AWS_S3_BUCKET="my-terraform-state"  # Alternative to inline config
 ```
 
 ```hcl
-# backend.tf — no credentials needed with env vars
+# backend.tf - no credentials needed with env vars
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

@@ -18,6 +18,7 @@ Changing the owner and group of a file is straightforward:
 
 ```yaml
 # Change ownership of a single file
+
 - name: Set ownership on application config
   ansible.builtin.file:
     path: /etc/myapp/config.yml

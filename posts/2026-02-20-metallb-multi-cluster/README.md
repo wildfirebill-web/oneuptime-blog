@@ -48,6 +48,7 @@ The simplest approach is to divide your available IP range into non-overlapping 
 
 ```yaml
 # ip-plan.yaml
+
 # Central document tracking IP allocations per cluster
 # Keep this in version control as the source of truth
 clusters:

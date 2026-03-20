@@ -52,6 +52,7 @@ First, ensure you have Tekton Pipelines installed:
 
 ```bash
 # Install Tekton Pipelines (if not already installed)
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Install Tekton Triggers

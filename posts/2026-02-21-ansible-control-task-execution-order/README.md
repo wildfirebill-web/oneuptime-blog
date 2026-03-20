@@ -26,6 +26,7 @@ Here is a playbook demonstrating all sections:
 
 ```yaml
 # execution-order.yml - Shows the complete execution order
+
 ---
 - name: Demonstrate execution order
   hosts: webservers

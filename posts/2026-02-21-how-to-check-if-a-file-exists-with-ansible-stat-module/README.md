@@ -16,6 +16,7 @@ The simplest use case: check if a file exists, then do something based on the re
 
 ```yaml
 # file-exists.yml - Basic file existence check
+
 ---
 - name: Check if a file exists
   hosts: all

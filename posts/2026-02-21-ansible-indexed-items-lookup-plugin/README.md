@@ -22,6 +22,7 @@ This playbook shows indexed iteration:
 
 ```yaml
 # playbook.yml - Basic indexed iteration
+
 ---
 - name: Iterate with indices
   hosts: localhost

@@ -273,6 +273,7 @@ public class SpecificAvroProducer {
 
 ```python
 # Schema definition
+
 user_schema_str = """
 {
   "type": "record",

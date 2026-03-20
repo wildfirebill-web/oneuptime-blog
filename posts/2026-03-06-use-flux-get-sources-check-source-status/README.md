@@ -27,6 +27,7 @@ The quickest way to see every source in your cluster:
 
 ```bash
 # List all source types across all namespaces
+
 flux get sources all -A
 ```
 

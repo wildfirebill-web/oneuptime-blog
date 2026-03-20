@@ -27,6 +27,7 @@ The `noexec` mount option directly blocks step 3.
 
 ```bash
 # View how /dev/shm is currently mounted
+
 mount | grep shm
 
 # Common default output:

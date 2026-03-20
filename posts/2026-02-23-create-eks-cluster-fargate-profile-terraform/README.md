@@ -53,6 +53,7 @@ data "aws_availability_zones" "available" {
 }
 
 # Public subnets for the NAT gateway and load balancers
+
 resource "aws_subnet" "public" {
   count             = 2
   vpc_id            = aws_vpc.eks.id
@@ -419,7 +420,7 @@ resource "aws_iam_role_policy" "fargate_logging" {
 }
 ```
 
-## Resource Sizing on Fargate
+Resource Sizing on Fargate
 
 One thing that trips people up: Fargate pods have specific CPU and memory combinations you can request. You cannot ask for 3 vCPUs and 1 GB of memory. The valid combinations are documented by AWS, but the common ones are:
 

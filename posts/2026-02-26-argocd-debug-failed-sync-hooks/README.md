@@ -18,6 +18,7 @@ Start by checking the sync operation details:
 
 ```bash
 # View the sync operation result
+
 argocd app get my-app --show-operation
 ```
 

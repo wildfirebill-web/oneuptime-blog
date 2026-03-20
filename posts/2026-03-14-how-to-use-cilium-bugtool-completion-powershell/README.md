@@ -31,6 +31,7 @@ This guide covers generating, installing, and using cilium-bugtool PowerShell co
 
 ```powershell
 # Generate and load completions in current session
+
 cilium-bugtool completion powershell | Out-String | Invoke-Expression
 
 # Test completion

@@ -53,6 +53,7 @@ Instead of deploying all VMs in a single zone, spread them across zones.
 
 ```bash
 # Create VMs in different availability zones behind a load balancer
+
 az vm create \
   --resource-group prod-rg \
   --name web-vm-1 \

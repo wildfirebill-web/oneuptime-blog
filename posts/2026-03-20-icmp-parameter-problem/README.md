@@ -20,7 +20,7 @@ ICMP Parameter Problem (Type 12) is generated when a router or destination host 
 
 ## Packet Format
 
-```
+```text
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 | Type = 12     |   Code        |           Checksum            |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -40,6 +40,7 @@ The **Pointer** value indicates the byte offset in the original header where the
 
 ```bash
 # Capture ICMP Type 12 messages
+
 tcpdump -i eth0 -n -v 'icmp[0] = 12'
 
 # More specific: capture with verbose output to see the pointer field
@@ -113,4 +114,4 @@ ss -tnope | grep your-process
 
 ## Conclusion
 
-ICMP Parameter Problem messages are diagnostic gold — the pointer field tells you exactly which byte of your packet is malformed. They typically indicate bugs in raw socket implementations, custom protocol stacks, or misconfigured network middleware. These messages are rare in well-behaved networks; their presence almost always signals a software bug that deserves investigation.
+ICMP Parameter Problem messages are diagnostic gold - the pointer field tells you exactly which byte of your packet is malformed. They typically indicate bugs in raw socket implementations, custom protocol stacks, or misconfigured network middleware. These messages are rare in well-behaved networks; their presence almost always signals a software bug that deserves investigation.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Authentication, Login, v2.30, JWT, Upgrade
+Tags: Portainer, Troubleshooting, Authentication, Login, V2.30, JWT, Upgrade
 
 Description: Learn how to fix login failures introduced in Portainer v2.30.0, including JWT changes, admin password reset procedures, and database migration issues.
 
@@ -16,6 +16,7 @@ Before anything else, clear all browser-stored Portainer state:
 
 ```bash
 # In browser DevTools (F12) > Application > Storage > Clear site data
+
 # This removes stored JWTs, cookies, and cached login state
 ```
 

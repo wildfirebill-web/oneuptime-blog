@@ -18,6 +18,7 @@ The simplest way to skip a module is the `skip` flag in its `terragrunt.hcl`:
 # dev/legacy-app/terragrunt.hcl
 
 # Skip this module entirely - Terragrunt will not run any commands on it
+
 skip = true
 
 terraform {

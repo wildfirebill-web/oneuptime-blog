@@ -335,7 +335,7 @@ val attemptedIO: IO[Either[Throwable, Int]] = failingIO.attempt
 // Result: IO(Left(RuntimeException("Something went wrong")))
 ```
 
-### Resource Management with Resource
+Resource Management with Resource
 
 The Resource type ensures that resources are properly acquired and released, even in the presence of errors or cancellation.
 

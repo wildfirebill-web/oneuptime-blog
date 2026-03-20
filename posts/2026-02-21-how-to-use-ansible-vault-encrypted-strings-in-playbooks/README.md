@@ -16,6 +16,7 @@ An encrypted string in Ansible YAML uses the `!vault` tag followed by a pipe (`|
 
 ```yaml
 # A normal YAML variable
+
 app_port: 8080
 
 # A vault-encrypted variable (the actual secret is encrypted inside)

@@ -27,6 +27,7 @@ Generate a new Age key pair that will be used for encryption and decryption.
 
 ```bash
 # Generate an Age key pair
+
 age-keygen -o age.agekey
 
 # View the public key (you will need this for encryption)

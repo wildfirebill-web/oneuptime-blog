@@ -31,6 +31,7 @@ Chef recipe:
 
 ```ruby
 # cookbooks/nginx/recipes/default.rb
+
 package 'nginx' do
   action :install
 end

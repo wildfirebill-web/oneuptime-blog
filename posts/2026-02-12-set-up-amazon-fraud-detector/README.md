@@ -39,6 +39,7 @@ Start by defining what an event looks like. For a payment fraud detector, the ev
 
 ```bash
 # Create event variables
+
 aws frauddetector put-event-type \
     --name "online_transaction" \
     --event-variables '[

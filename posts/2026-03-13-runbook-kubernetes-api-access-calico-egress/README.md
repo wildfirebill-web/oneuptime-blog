@@ -38,6 +38,7 @@ KUBE_IP=$(kubectl get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 
 kubectl exec $POD -n $NAMESPACE -- nc -zv $KUBE_IP 443 2>&1
 # If this fails: API is blocked by egress policy
+
 ```
 
 **Step 2: Find the blocking policy**

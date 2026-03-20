@@ -358,6 +358,7 @@ Where possible, wrap runbook steps in scripts:
 ```bash
 #!/bin/bash
 # scripts/scale-ecs-service.sh
+
 # Automated version of the ECS scaling runbook
 
 set -euo pipefail

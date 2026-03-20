@@ -506,6 +506,7 @@ flowchart TD
 
 ```promql
 # Conversion rate over the last hour
+
 # Calculates percentage of cart views that result in purchases
 sum(rate(business_funnel_step_total{step="order_confirmed"}[1h]))
 /

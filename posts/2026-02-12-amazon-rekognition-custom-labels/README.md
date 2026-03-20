@@ -52,6 +52,7 @@ import time
 rekognition = boto3.client('rekognition', region_name='us-east-1')
 
 # Create a project
+
 project_response = rekognition.create_project(
     ProjectName='product-quality-inspection'
 )

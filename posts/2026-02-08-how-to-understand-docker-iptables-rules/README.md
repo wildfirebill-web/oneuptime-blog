@@ -41,6 +41,7 @@ Docker creates several custom chains. List them all:
 
 ```bash
 # Show all Docker-related chains in the filter table
+
 sudo iptables -L -n | grep -E "^Chain (DOCKER|FORWARD)"
 
 # Show all Docker-related chains in the nat table

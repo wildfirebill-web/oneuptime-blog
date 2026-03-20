@@ -18,6 +18,7 @@ This config enables internal metrics and exposes them on a Prometheus endpoint:
 
 ```yaml
 # otel-gateway-config.yaml
+
 receivers:
   otlp:
     protocols:

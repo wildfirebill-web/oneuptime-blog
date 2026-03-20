@@ -189,6 +189,7 @@ no persistent volumes available for this claim
 
 ```bash
 # Check for hook pods
+
 kubectl get pods -n default | grep -E "(pre-install|post-install|pre-upgrade|post-upgrade)"
 
 # View hook pod logs

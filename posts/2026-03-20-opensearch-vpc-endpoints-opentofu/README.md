@@ -34,7 +34,7 @@ resource "aws_opensearch_domain" "private" {
     volume_size = 100
   }
 
-  # VPC configuration — deploys domain inside the VPC
+  # VPC configuration - deploys domain inside the VPC
   vpc_options {
     subnet_ids = [
       aws_subnet.private_a.id,

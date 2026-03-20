@@ -21,6 +21,7 @@ Before starting, ensure your Ubuntu system meets these requirements:
 
 ```bash
 # Update your system packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential dependencies

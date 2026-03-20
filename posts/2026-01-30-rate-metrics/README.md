@@ -50,6 +50,7 @@ rate = (value_end - value_start) / (time_end - time_start)
 
 ```python
 # Basic rate calculation function
+
 # Takes two counter samples and returns the rate per second
 
 def calculate_rate(

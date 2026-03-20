@@ -38,6 +38,7 @@ The `--stage` flag tells Talos to prepare the upgrade without rebooting:
 
 ```bash
 # Stage an upgrade on a specific node
+
 talosctl upgrade --nodes 192.168.1.10 \
   --image ghcr.io/siderolabs/installer:v1.7.0 \
   --stage

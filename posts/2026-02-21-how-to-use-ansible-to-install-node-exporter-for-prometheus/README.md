@@ -60,6 +60,7 @@ node-exporter/
 
 ```yaml
 # roles/node_exporter/defaults/main.yml
+
 node_exporter_version: "1.7.0"
 node_exporter_platform: "linux-amd64"
 

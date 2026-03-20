@@ -1,10 +1,10 @@
-# How to Fix "Cannot Use Console" Errors in Portainer
+# How to Fix 'Cannot Use Console' Errors in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Containers, Debugging, Troubleshooting
 
-Description: Learn how to diagnose and fix "Cannot use console" errors when trying to access the interactive terminal for Docker containers in Portainer.
+Description: Learn how to diagnose and fix 'Cannot use console' errors when trying to access the interactive terminal for Docker containers in Portainer.
 
 ## Introduction
 
@@ -19,16 +19,17 @@ The "Cannot use console" error in Portainer appears when the container console (
 
 ### Cause 1: Wrong Shell Path
 
-The most common cause — you specified a shell that doesn't exist in the container.
+The most common cause - you specified a shell that doesn't exist in the container.
 
 **Symptoms:**
-```
+```text
 Error: "OCI runtime exec failed: exec failed: unable to start container process: exec: '/bin/bash': stat /bin/bash: no such file or directory"
 ```
 
 **Fix:**
 ```bash
 # Check which shells are available:
+
 docker exec my-container ls /bin/sh /bin/bash /bin/ash 2>/dev/null
 
 # For Alpine images, use /bin/sh:
@@ -80,7 +81,7 @@ docker unpause my-container
 Distroless images don't include a shell, making exec impossible.
 
 **Symptoms:**
-```
+```text
 Error: "OCI runtime exec failed: exec failed: no such file or directory"
 (even when specifying /bin/sh or /bin/bash)
 ```
@@ -109,10 +110,10 @@ docker run -it --rm \
 **Fix: Rebuild with debugging tools temporarily**
 
 ```dockerfile
-# Debug Dockerfile — add shell to existing distroless image
+# Debug Dockerfile - add shell to existing distroless image
 FROM gcr.io/distroless/base:latest AS production
 
-# Debug stage — add busybox shell
+# Debug stage - add busybox shell
 FROM production AS debug
 COPY --from=busybox:static /bin/busybox /busybox
 RUN ["/busybox", "ln", "-s", "/busybox", "/bin/sh"]
@@ -133,7 +134,7 @@ Your Portainer user role might not allow console access.
 4. Grant them the `Operator` or `Administrator` role.
 5. Alternatively, assign a custom role that includes "Container console" access.
 
-```
+```text
 Portainer roles and console access:
 - Read-only:    NO console access
 - Helpdesk:     NO console access (view logs only)
@@ -187,7 +188,7 @@ sudo firewall-cmd --add-port=9001/tcp --permanent && sudo firewall-cmd --reload
 Some container configurations don't allocate a TTY.
 
 **Symptoms:**
-```
+```text
 Error: "cannot enable tty mode on non-tty input"
 ```
 
@@ -235,7 +236,7 @@ fi
 # 2. Check container is running
 STATUS=$(docker inspect --format '{{.State.Status}}' "${CONTAINER}")
 echo "Status: ${STATUS}"
-[ "$STATUS" != "running" ] && echo "✗ Container is not running — start it first" && exit 1
+[ "$STATUS" != "running" ] && echo "✗ Container is not running - start it first" && exit 1
 
 # 3. Check available shells
 echo "Available shells:"

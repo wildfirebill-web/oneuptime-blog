@@ -24,6 +24,7 @@ You can tell which one happened by checking the pod status:
 
 ```bash
 # Check the termination reason for OOMKilled pods
+
 kubectl get pod your-pod-name -n your-namespace -o jsonpath='{.status.containerStatuses[0].lastState.terminated.reason}'
 ```
 

@@ -14,6 +14,7 @@ AWS ElastiCache supports IPv6 connections through dual-stack mode for both Redis
 
 ```bash
 # Create subnet group with IPv6-enabled subnets
+
 aws elasticache create-cache-subnet-group \
     --cache-subnet-group-name ipv6-cache-subnet-group \
     --cache-subnet-group-description "IPv6 cache subnet group" \

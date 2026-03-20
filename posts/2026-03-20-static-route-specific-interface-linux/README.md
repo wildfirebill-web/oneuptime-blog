@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Static Route, Interface, Linux, ip route, IPv4, Networking, Multi-homing
+Tags: Static Routes, Interface, Linux, Ip route, IPv4, Networking, Multi-homing
 
 Description: Learn how to add a static route through a specific network interface on Linux using the dev parameter, and when interface-bound routes are necessary for correct routing behavior.
 
@@ -14,6 +14,7 @@ By default, Linux routes traffic based on the longest-match prefix and next-hop 
 
 ```bash
 # Route to 10.10.0.0/24 via gateway 10.10.0.1 on eth1
+
 ip route add 10.10.0.0/24 via 10.10.0.1 dev eth1
 
 # Route without a gateway (directly connected network on eth1)

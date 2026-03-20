@@ -16,6 +16,7 @@ The service has an IP, but connections time out:
 
 ```bash
 # Service shows an assigned IP
+
 kubectl get svc my-service
 ```
 

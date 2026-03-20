@@ -52,6 +52,7 @@ Before retiring any alert, establish clear criteria. Not every quiet alert is us
 
 ```yaml
 # alert-retirement-criteria.yaml
+
 retirement_candidates:
   # Time-based criteria
   never_fired:

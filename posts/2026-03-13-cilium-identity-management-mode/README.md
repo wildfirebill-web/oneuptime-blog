@@ -29,6 +29,7 @@ Configure CRD-based identity allocation (default):
 
 ```bash
 # CRD-based allocation is the default - verify it's enabled
+
 kubectl -n kube-system get configmap cilium-config -o yaml | grep identity-allocation-mode
 # Should show: identity-allocation-mode: crd
 

@@ -21,6 +21,7 @@ ng new cognito-angular-app --routing --style=scss
 cd cognito-angular-app
 
 # Install the AWS Cognito SDK
+
 npm install @aws-sdk/client-cognito-identity-provider
 
 # Install jwt-decode for reading token claims

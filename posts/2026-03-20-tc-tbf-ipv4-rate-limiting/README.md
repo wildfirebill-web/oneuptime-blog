@@ -12,7 +12,7 @@ The Token Bucket Filter (TBF) is the simplest tc qdisc for rate limiting. It all
 
 TBF maintains a virtual "bucket" that fills at the configured `rate`. Each packet consumes tokens from the bucket. When the bucket is full, excess tokens are discarded. When empty, packets are delayed until enough tokens accumulate.
 
-```
+```text
 Packet arrives → Enough tokens in bucket? → Send immediately
                       No tokens left?     → Queue (up to latency limit)
                       Queue too long?     → Drop packet
@@ -22,6 +22,7 @@ Packet arrives → Enough tokens in bucket? → Send immediately
 
 ```bash
 # Limit interface eth0 to 10 Mbps outbound
+
 sudo tc qdisc add dev eth0 root tbf \
   rate 10mbit \      # Target rate: 10 megabits per second
   burst 32kbit \     # Size of the token bucket (must be >= rate/HZ)
@@ -91,4 +92,4 @@ sudo tc qdisc del dev eth0 root
 
 ## Combining TBF with Other qdiscs
 
-TBF is a classless qdisc — it doesn't support multiple traffic classes. For per-class rate limits, use HTB. Use TBF when you simply need a flat rate cap on an entire interface without prioritization.
+TBF is a classless qdisc - it doesn't support multiple traffic classes. For per-class rate limits, use HTB. Use TBF when you simply need a flat rate cap on an entire interface without prioritization.

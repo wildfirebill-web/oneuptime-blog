@@ -18,6 +18,7 @@ The `count` argument accepts a whole number:
 
 ```hcl
 # Create exactly 3 instances of the module
+
 module "worker" {
   source = "./modules/worker"
   count  = 3

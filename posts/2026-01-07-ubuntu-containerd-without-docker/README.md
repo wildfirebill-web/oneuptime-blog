@@ -52,6 +52,7 @@ Before starting the installation, ensure your Ubuntu system meets these requirem
 
 ```bash
 # Check Ubuntu version - containerd works best on Ubuntu 20.04 or later
+
 cat /etc/os-release
 
 # Ensure you have sudo privileges

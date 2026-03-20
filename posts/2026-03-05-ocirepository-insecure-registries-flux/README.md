@@ -38,6 +38,7 @@ First, create a secret containing the CA certificate.
 
 ```bash
 # Create a secret with the CA certificate that signed the registry's TLS cert
+
 kubectl create secret generic registry-ca-cert \
   --namespace flux-system \
   --from-file=ca.crt=/path/to/your-ca.crt

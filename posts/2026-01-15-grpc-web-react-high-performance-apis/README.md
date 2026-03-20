@@ -57,6 +57,7 @@ Ensure you have the following installed:
 
 ```bash
 # Check Node.js version (18+ recommended)
+
 node --version
 
 # Create a new React project with TypeScript

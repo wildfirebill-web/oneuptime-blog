@@ -24,6 +24,7 @@ On macOS, install Earthly through Homebrew.
 
 ```bash
 # Install Earthly CLI on macOS
+
 brew install earthly/earthly/earthly
 
 # Bootstrap Earthly (pulls the buildkit daemon image)

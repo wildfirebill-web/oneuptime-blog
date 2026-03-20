@@ -1,4 +1,4 @@
-# How to Fix "Error: Duplicate Resource" in OpenTofu
+# How to Fix 'Error: Duplicate Resource' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Description: Learn how to resolve duplicate resource definition errors in OpenTo
 
 ## Error Messages
 
-```
+```hcl
 Error: Duplicate resource "aws_instance" configuration
   on main.tf line 25:
   A aws_instance resource named "web" was already declared at main.tf line 8.
@@ -27,6 +27,7 @@ Error: Duplicate module "vpc" call
 
 ```bash
 # Search for duplicate resource declarations
+
 grep -rn "resource \"aws_instance\" \"web\"" .
 
 # Search for duplicate module calls
@@ -36,13 +37,13 @@ grep -rn "module \"vpc\"" .
 Once found, remove or rename the duplicate:
 
 ```hcl
-# File: main.tf — has one declaration
+# File: main.tf - has one declaration
 resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.medium"
 }
 
-# File: compute.tf — has a duplicate (remove this one)
+# File: compute.tf - has a duplicate (remove this one)
 # resource "aws_instance" "web" {   # DELETE THIS
 #   ...
 # }
@@ -109,7 +110,7 @@ tofu state mv module.vpc module.vpc_east
 OpenTofu's `moved` block documents resource renames without requiring manual state operations:
 
 ```hcl
-# moved.tf — declare the rename
+# moved.tf - declare the rename
 moved {
   from = aws_instance.web
   to   = aws_instance.web_primary
@@ -123,7 +124,7 @@ resource "aws_instance" "web_primary" {
 ```
 
 ```bash
-# Run plan — OpenTofu handles the state move automatically
+# Run plan - OpenTofu handles the state move automatically
 tofu plan
 # Shows: aws_instance.web has moved to aws_instance.web_primary
 

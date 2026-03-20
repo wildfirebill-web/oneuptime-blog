@@ -14,6 +14,7 @@ UDP rate limiting with iptables protects services from UDP floods, prevents a si
 
 ```bash
 # Limit all UDP to 1000 packets/second globally:
+
 iptables -A INPUT -p udp -m limit \
   --limit 1000/sec \
   --limit-burst 2000 \

@@ -29,6 +29,7 @@ Before acting, understand exactly what was deleted and which Flux resources are 
 
 ```bash
 # Confirm the namespace is gone
+
 kubectl get namespace production
 
 # List all Flux Kustomizations that targeted the deleted namespace

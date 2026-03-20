@@ -42,6 +42,7 @@ Run queries and manage BigQuery datasets without constructing raw HTTP requests.
 
 ```yaml
 # bigquery-connector.yaml
+
 main:
   steps:
     # Run a BigQuery query using the connector

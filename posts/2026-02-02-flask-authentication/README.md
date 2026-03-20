@@ -41,6 +41,7 @@ Here's how to set it up:
 
 ```python
 # app.py
+
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from flask_sqlalchemy import SQLAlchemy

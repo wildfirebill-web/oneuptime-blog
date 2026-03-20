@@ -19,6 +19,7 @@ The `callback_whitelist` setting in ansible.cfg specifies which callback plugins
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # This sets the output format (only one at a time)
 stdout_callback = yaml

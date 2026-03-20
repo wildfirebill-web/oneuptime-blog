@@ -214,6 +214,7 @@ After switching to REGISTRY_ONLY, monitor for blocked connections:
 
 ```bash
 # Look for 502 responses in sidecar logs (indicates blocked outbound)
+
 kubectl logs deploy/my-app -c istio-proxy | grep "502"
 
 # Check Prometheus for blocked traffic

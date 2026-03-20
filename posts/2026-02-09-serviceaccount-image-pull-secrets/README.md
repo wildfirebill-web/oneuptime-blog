@@ -24,6 +24,7 @@ Start by creating a secret containing registry credentials:
 
 ```bash
 # Create a docker-registry secret
+
 kubectl create secret docker-registry my-registry-secret \
   --docker-server=registry.example.com \
   --docker-username=myuser \

@@ -71,6 +71,7 @@ Bullet is the most popular gem for detecting N+1 queries in Rails:
 
 ```ruby
 # Gemfile
+
 group :development, :test do
   # Detect N+1 queries and unused eager loading
   gem 'bullet'

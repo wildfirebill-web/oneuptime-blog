@@ -14,6 +14,7 @@ pgpool-II sits between your application and PostgreSQL, providing connection poo
 
 ```bash
 # Install pgpool-II from the PostgreSQL repository
+
 sudo dnf install -y https://www.pgpool.net/yum/rpms/4.5/redhat/rhel-9-x86_64/pgpool-II-pg16-4.5.0-1pgdg.rhel9.x86_64.rpm
 
 # Or install from EPEL/AppStream if available

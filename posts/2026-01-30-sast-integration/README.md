@@ -35,6 +35,7 @@ SonarQube is a comprehensive code quality and security platform. It supports 30+
 
 ```yaml
 # docker-compose.yml
+
 # Defines the SonarQube server and its PostgreSQL database
 version: "3.8"
 services:

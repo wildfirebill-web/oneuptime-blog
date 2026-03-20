@@ -16,6 +16,7 @@ Redis Sentinel monitors Redis instances, notifies administrators of issues, and 
 # /etc/redis/redis.conf (Primary)
 
 # Bind to specific IPv6 address and loopback
+
 bind 2001:db8::1 ::1
 
 # Or bind to all interfaces:

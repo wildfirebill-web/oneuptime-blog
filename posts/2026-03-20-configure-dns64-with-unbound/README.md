@@ -16,6 +16,7 @@ Description: Learn how to enable DNS64 in the Unbound recursive resolver to synt
 
 ```bash
 # Ubuntu/Debian
+
 apt update && apt install unbound
 
 # RHEL/CentOS/Fedora

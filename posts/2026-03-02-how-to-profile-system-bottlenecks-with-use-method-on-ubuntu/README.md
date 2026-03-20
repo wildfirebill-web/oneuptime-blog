@@ -12,7 +12,7 @@ The USE Method is a performance analysis methodology developed by Brendan Gregg.
 
 The beauty of USE is that it's a checklist: work through every resource type, collect the three metrics for each, and the bottleneck reveals itself.
 
-## Resources to Check
+Resources to Check
 
 The main resource categories:
 1. CPUs (per-core and overall)
@@ -27,6 +27,7 @@ The main resource categories:
 ### Utilization
 ```bash
 # Per-CPU utilization
+
 mpstat -P ALL 1 5
 
 # Overall CPU utilization trend

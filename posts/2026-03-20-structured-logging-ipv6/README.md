@@ -31,6 +31,7 @@ def canonical_ip(addr: str) -> str:
         return addr  # Return as-is if invalid
 
 # Examples
+
 print(canonical_ip("2001:0DB8:0000:0000:0000:0000:0000:0001"))  # 2001:db8::1
 print(canonical_ip("[2001:db8::1]"))                             # 2001:db8::1
 print(canonical_ip("::FFFF:192.168.1.1"))                       # ::ffff:192.168.1.1
@@ -84,7 +85,7 @@ handler.setFormatter(IPv6JSONFormatter())
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
 
-# Usage — add extra fields for IP addresses
+# Usage - add extra fields for IP addresses
 logger.info(
     "Request received",
     extra={"client_ip": "2001:0DB8::1", "method": "GET", "path": "/api/users"}
@@ -156,7 +157,7 @@ Use consistent field names across all services:
 
 **Problem: Logging raw socket address strings**
 ```python
-# BAD: logs "[2001:db8::1]:54321" — hard to query
+# BAD: logs "[2001:db8::1]:54321" - hard to query
 logger.info(f"Connection from {request.remote_addr}")
 
 # GOOD: extract and normalize the IP

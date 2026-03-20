@@ -20,6 +20,7 @@ Launch a simple registry container for development use.
 
 ```bash
 # Create a volume for persistent storage
+
 podman volume create registry-data
 
 # Start the registry container

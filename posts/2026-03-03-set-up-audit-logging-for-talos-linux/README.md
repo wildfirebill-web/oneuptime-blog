@@ -35,6 +35,7 @@ A practical policy balances security visibility with storage costs:
 
 ```yaml
 # audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

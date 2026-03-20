@@ -61,6 +61,7 @@ Queries without limits can return massive datasets that take too long to process
 
 ```graphql
 # Dangerous: No limit on results
+
 query {
   users {
     id

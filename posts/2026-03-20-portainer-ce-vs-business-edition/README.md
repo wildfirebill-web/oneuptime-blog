@@ -39,7 +39,7 @@ Both CE and BE provide full Docker management:
 
 ## Kubernetes Features
 
-```
+```text
 CE:
 - Basic Kubernetes environment connection
 - View and manage pods, deployments, services
@@ -79,13 +79,13 @@ CE provides two roles: admin and user.
 
 BE provides a fine-grained role model:
 
-```
+```text
 BE Roles:
-- Environment Admin   — full access to a specific environment
-- Operator            — can manage containers but not stacks
-- Helpdesk            — read-only access + console/logs
-- Standard User       — limited deployment capabilities
-- Read-Only User      — view resources only
+- Environment Admin   - full access to a specific environment
+- Operator            - can manage containers but not stacks
+- Helpdesk            - read-only access + console/logs
+- Standard User       - limited deployment capabilities
+- Read-Only User      - view resources only
 
 + Custom roles with granular permissions per resource type
 ```
@@ -102,10 +102,10 @@ BE Roles:
 
 ## Compliance Features (BE Only)
 
-- **Audit logs** — records all user actions with timestamps
-- **Activity reporting** — usage reports per team
-- **Image scanning** — integration with Trivy for vulnerability scanning
-- **Registry access policies** — restrict which images can be deployed
+- **Audit logs** - records all user actions with timestamps
+- **Activity reporting** - usage reports per team
+- **Image scanning** - integration with Trivy for vulnerability scanning
+- **Registry access policies** - restrict which images can be deployed
 
 ## When to Choose CE
 

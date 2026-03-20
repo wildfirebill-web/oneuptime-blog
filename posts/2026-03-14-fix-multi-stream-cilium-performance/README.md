@@ -30,6 +30,7 @@ The most common fix for multi-stream issues is ensuring enough NIC queues:
 
 ```bash
 # Check current queue count
+
 ethtool -l eth0
 
 # Set queues to match CPU count

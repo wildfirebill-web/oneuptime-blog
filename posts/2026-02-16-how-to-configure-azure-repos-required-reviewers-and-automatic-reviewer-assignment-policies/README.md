@@ -119,6 +119,7 @@ Path filters support:
 
 ```text
 # Example: Different teams review different parts of the codebase
+
 Frontend Team    -> /src/frontend/*; /src/components/*; *.css; *.html
 Backend Team     -> /src/api/*; /src/services/*; /src/models/*
 Data Team        -> /src/data/*; /src/pipelines/*; *.sql

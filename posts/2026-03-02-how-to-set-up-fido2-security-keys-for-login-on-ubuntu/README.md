@@ -24,6 +24,7 @@ The key needs to support FIDO2/WebAuthn. Keys that only support FIDO U2F (older 
 
 ```bash
 # Install libpam-u2f for PAM integration
+
 sudo apt update
 sudo apt install libpam-u2f
 

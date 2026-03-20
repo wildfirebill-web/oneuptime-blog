@@ -194,6 +194,7 @@ Before going live, test your rate limits. The easiest way is to write a quick sc
 
 ```bash
 # Send 150 requests rapidly to test a 100-per-minute rate limit
+
 # You should see 429 responses starting around request 101
 for i in $(seq 1 150); do
     STATUS=$(curl -s -o /dev/null -w "%{http_code}" \

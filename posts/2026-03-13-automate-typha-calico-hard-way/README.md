@@ -16,6 +16,7 @@ Automating Typha in a hard way installation addresses three recurring operationa
 
 ```ini
 # inventory/hosts
+
 [control_plane]
 master-01 ansible_host=10.0.0.10
 

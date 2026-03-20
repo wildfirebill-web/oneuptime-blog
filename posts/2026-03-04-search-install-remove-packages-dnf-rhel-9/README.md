@@ -26,6 +26,7 @@ The `dnf search` command looks through package names and summaries:
 
 ```bash
 # Search for packages related to nginx
+
 dnf search nginx
 ```
 

@@ -26,6 +26,7 @@ Schedule layers are the foundation of PagerDuty on-call configurations. Each lay
 
 ```yaml
 # Example schedule layer configuration
+
 # Layer 1: Primary On-Call Rotation
 schedule:
   name: "Backend Team Primary"

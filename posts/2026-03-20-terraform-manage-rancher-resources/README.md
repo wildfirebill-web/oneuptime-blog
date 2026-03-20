@@ -1,4 +1,4 @@
-# How to Use Terraform to Manage Rancher Resources
+# How to Use Terraform to Manage Rancher Resources - Manage Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Managing Rancher through the UI is fine for small deployments but becomes error-
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     rancher2 = {

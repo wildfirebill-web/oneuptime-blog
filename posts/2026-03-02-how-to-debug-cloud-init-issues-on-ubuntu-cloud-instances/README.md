@@ -16,6 +16,7 @@ cloud-init writes to two main log files:
 
 ```bash
 # Main log with timestamps and module execution details
+
 sudo cat /var/log/cloud-init.log
 
 # Combined output from all commands run during initialization

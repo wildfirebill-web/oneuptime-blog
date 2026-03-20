@@ -24,6 +24,7 @@ Enable ReadOnlyRootFilesystem in the container's security context.
 
 ```yaml
 # readonly-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

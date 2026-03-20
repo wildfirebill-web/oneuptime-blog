@@ -50,6 +50,7 @@ Rate-based metrics measure throughput as a velocity over time. They answer "how 
 
 ```python
 # Rate-based throughput calculation
+
 # Measures instantaneous processing velocity
 
 import time

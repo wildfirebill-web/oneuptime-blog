@@ -43,6 +43,7 @@ Organize your Git repository to support multiple clusters with shared and cluste
 
 ```yaml
 # fleet-repo/
+
 #   base/                    # Shared configurations
 #     apps/
 #       frontend/

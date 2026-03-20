@@ -8,13 +8,13 @@ Description: Learn why applying without a saved plan is risky and how to enforce
 
 ## Introduction
 
-Running `tofu apply` without a saved plan file means OpenTofu generates and applies a new plan in one step — giving you no opportunity to verify what will happen before it happens. Between when you ran `tofu plan` and when you run `tofu apply`, someone else might have changed the configuration, or the cloud API might return different results. A saved plan file guarantees apply matches exactly what was reviewed.
+Running `tofu apply` without a saved plan file means OpenTofu generates and applies a new plan in one step - giving you no opportunity to verify what will happen before it happens. Between when you ran `tofu plan` and when you run `tofu apply`, someone else might have changed the configuration, or the cloud API might return different results. A saved plan file guarantees apply matches exactly what was reviewed.
 
 ## The Risk: Plan Drift Between Review and Apply
 
 What can change between an unsaved plan and apply.
 
-```
+```hcl
 Timeline without saved plan:
 09:00 - You run: tofu plan  → shows: 1 resource to create
 09:01 - Colleague merges a change that adds: destroy production database
@@ -34,6 +34,7 @@ Always use the three-step plan-review-apply workflow.
 
 ```bash
 # Step 1: Create a named plan file
+
 tofu plan -out=reviewed.tfplan
 
 # Step 2: Show the plan in human-readable format and review it
@@ -44,7 +45,7 @@ tofu show -json reviewed.tfplan | jq '.resource_changes[]'
 
 # Step 3: Apply the exact saved plan
 tofu apply reviewed.tfplan
-# No confirmation prompt needed — the plan was already reviewed
+# No confirmation prompt needed - the plan was already reviewed
 ```
 
 ## CI/CD: Enforce Plan Files
@@ -118,7 +119,7 @@ workflows:
 
 ## Making Plans Expirable
 
-Saved plans become stale if too much time passes — enforce freshness.
+Saved plans become stale if too much time passes - enforce freshness.
 
 ```bash
 #!/bin/bash
@@ -147,4 +148,4 @@ tofu apply "$PLAN_FILE"
 
 ## Summary
 
-Always use `tofu plan -out=plan.tfplan` followed by `tofu apply plan.tfplan` in any environment where the plan was reviewed. The saved plan file is a cryptographic commitment — it captures the exact set of changes OpenTofu will make, and applying it executes precisely those changes regardless of what changed in the configuration afterward. Enforce this pattern in CI/CD by passing plan files as artifacts between pipeline stages and requiring manual approval before the apply stage.
+Always use `tofu plan -out=plan.tfplan` followed by `tofu apply plan.tfplan` in any environment where the plan was reviewed. The saved plan file is a cryptographic commitment - it captures the exact set of changes OpenTofu will make, and applying it executes precisely those changes regardless of what changed in the configuration afterward. Enforce this pattern in CI/CD by passing plan files as artifacts between pipeline stages and requiring manual approval before the apply stage.

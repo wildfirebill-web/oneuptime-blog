@@ -270,6 +270,7 @@ CERT_DIR="$HOME/certs"
 CONTAINER_NAME="tls-proxy"
 
 # Copy new certificates into place
+
 cp /path/to/new/cert.crt "$CERT_DIR/server.crt"
 cp /path/to/new/cert.key "$CERT_DIR/server.key"
 

@@ -39,6 +39,7 @@ Install collections and SDKs for all three providers.
 
 ```bash
 # Install Ansible collections for each cloud
+
 ansible-galaxy collection install amazon.aws
 ansible-galaxy collection install azure.azcollection
 ansible-galaxy collection install google.cloud

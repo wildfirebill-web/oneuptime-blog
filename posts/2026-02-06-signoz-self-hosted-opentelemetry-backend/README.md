@@ -42,6 +42,7 @@ First, clone the SigNoz repository which contains the Docker Compose configurati
 
 ```bash
 # Clone the SigNoz repository
+
 git clone -b main https://github.com/SigNoz/signoz.git
 
 # Navigate to the Docker deployment directory

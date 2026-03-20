@@ -16,6 +16,7 @@ The best part? It is opinionated and automatic. There is nothing to configure. R
 
 ```bash
 # Format all .tf files in the current directory
+
 terraform fmt
 ```
 

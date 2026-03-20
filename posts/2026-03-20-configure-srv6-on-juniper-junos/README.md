@@ -1,4 +1,4 @@
-# How to Configure SRv6 on Juniper Junos
+# How to Configure SRv6 on Juniper Junos - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,8 +12,9 @@ Juniper Junos supports SRv6 from Junos 19.4R1 onward. Configuration uses the hie
 
 ## Step 1: Enable SRv6 and Define a Locator
 
-```
+```javascript
 # Enable SRv6 globally and define the locator
+
 set routing-options source-packet-routing srv6 locator LOC1 prefix 5f00:1:1::/48
 
 # Configure locator block, node, and function lengths
@@ -27,7 +28,7 @@ set routing-options source-packet-routing srv6 source-address 5f00:1:1::1
 
 ## Step 2: Enable SRv6 in IS-IS
 
-```
+```text
 # Advertise the SRv6 locator via IS-IS
 set protocols isis interface ge-0/0/0.0 family inet6
 set protocols isis interface lo0.0 family inet6
@@ -40,7 +41,7 @@ set protocols isis source-packet-routing srv6
 
 ## Step 3: Configure SIDs for L3VPN Services
 
-```
+```text
 # Create a VRF for customer traffic
 set routing-instances CUSTOMER_A instance-type vrf
 set routing-instances CUSTOMER_A interface ge-0/0/1.0
@@ -57,7 +58,7 @@ set routing-instances CUSTOMER_A routing-options srv6 locator LOC1
 
 ## Step 4: Configure SRv6 Traffic Engineering
 
-```
+```text
 # Create a static SRv6 segment list
 set routing-options source-packet-routing srv6 segment-list EXPLICT-PATH-1 \
   segment index 10 srv6-sid 5f00:1:2:0:e001::
@@ -75,7 +76,7 @@ set routing-options source-packet-routing srv6 \
 
 ## Step 5: Verify SRv6 Configuration
 
-```
+```text
 # Show SRv6 locators
 show segment-routing srv6 locator detail
 
@@ -99,7 +100,7 @@ traceroute inet6 5f00:2:1::1 routing-instance CORE
 
 ## Step 6: SRv6 Statistics and Monitoring
 
-```
+```text
 # Show SRv6 packet statistics
 show segment-routing srv6 statistics
 
@@ -112,12 +113,12 @@ show segment-routing srv6 sid summary
 
 ## Junos SRv6 Operational Commands
 
-```
-show segment-routing srv6 locator           — All configured locators
-show segment-routing srv6 sid               — All SIDs and their functions
-show segment-routing srv6 statistics        — Encap/decap packet counts
-show route protocol segment-routing inet6   — SRv6 routes in RIB
-show bgp summary                            — BGP sessions with SRv6 SID exchange
+```text
+show segment-routing srv6 locator           - All configured locators
+show segment-routing srv6 sid               - All SIDs and their functions
+show segment-routing srv6 statistics        - Encap/decap packet counts
+show route protocol segment-routing inet6   - SRv6 routes in RIB
+show bgp summary                            - BGP sessions with SRv6 SID exchange
 ```
 
 ## Conclusion

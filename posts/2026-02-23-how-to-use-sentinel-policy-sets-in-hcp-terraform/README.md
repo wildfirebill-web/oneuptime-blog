@@ -81,6 +81,7 @@ my-policy-repo/
 
 ```bash
 # Using the Terraform CLI or API to create a policy set
+
 # Or configure it through the HCP Terraform UI
 
 # Navigate to:

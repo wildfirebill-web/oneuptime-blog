@@ -8,7 +8,7 @@ Description: Explain why IPv6 was designed without NAT, how global address avail
 
 ## The NAT Problem IPv6 Solves
 
-```
+```text
 IPv4 exhaustion → NAT invented as a workaround
   192.168.x.x → NAT → One public IPv4 address
 
@@ -20,9 +20,9 @@ IPv6: 340 undecillion addresses
 
 ## How IPv4 NAT Works
 
-NAT translates private addresses to a shared public IP — a workaround, not a feature.
+NAT translates private addresses to a shared public IP - a workaround, not a feature.
 
-```
+```text
 Home device: 192.168.1.10:12345
      |
      v
@@ -45,6 +45,7 @@ With IPv6, every device has a globally unique, routable address.
 
 ```bash
 # IPv6 home device gets a real, globally routable address
+
 ip -6 addr show | grep "scope global"
 # 2001:db8:home:1:abc:def:123:456/64
 
@@ -58,7 +59,7 @@ ip -6 addr show | grep "scope global"
 python3 -m http.server --bind 2001:db8:home:1:abc:def:123:456 8080
 # Accessible worldwide via: http://[2001:db8:home:1:abc:def:123:456]:8080
 
-# No port forwarding needed — firewall rule is sufficient
+# No port forwarding needed - firewall rule is sufficient
 ```
 
 ## NAT Security Was a Side Effect, Not a Feature
@@ -80,7 +81,7 @@ table inet firewall {
     chain forward {
         type filter hook forward priority 0; policy drop;
 
-        # Allow established connections (stateful — same as NAT behavior)
+        # Allow established connections (stateful - same as NAT behavior)
         ct state established,related accept
 
         # Allow ALL outbound from LAN (same as NAT)
@@ -116,7 +117,7 @@ nft add rule inet firewall forward \
     iif eth0 ip6 daddr 2001:db8:home:1::laptop \
     tcp dport 22 ct state new accept
 
-# Multiple services — same device, no NAT confusion
+# Multiple services - same device, no NAT confusion
 # (NAT could only forward one port to one device)
 nft add rule inet firewall forward \
     iif eth0 ip6 daddr 2001:db8:home:1::media-server \
@@ -152,9 +153,9 @@ config interface 'lan'
     option ip6ifaceid '::1'
 
 # ULA gives privacy + a stateful firewall gives security
-# Best of both worlds — no NAT needed
+# Best of both worlds - no NAT needed
 ```
 
 ## Conclusion
 
-IPv6 was designed without NAT because the enormous address space (a /56 per home provides 256 networks with 18 quintillion addresses each) eliminates the scarcity that made NAT necessary in IPv4. The security benefit attributed to NAT was always a side effect of connection tracking, not address translation itself — a stateful IPv6 firewall with a default-drop forward policy provides identical protection. End-to-end connectivity is restored with IPv6: VoIP, gaming, P2P, and hosting services from home all work without port forwarding. Add explicit firewall rules to allow specific inbound services. Use ULA addresses (fd00::/8) if you want non-routable internal addresses alongside your global IPv6 prefix.
+IPv6 was designed without NAT because the enormous address space (a /56 per home provides 256 networks with 18 quintillion addresses each) eliminates the scarcity that made NAT necessary in IPv4. The security benefit attributed to NAT was always a side effect of connection tracking, not address translation itself - a stateful IPv6 firewall with a default-drop forward policy provides identical protection. End-to-end connectivity is restored with IPv6: VoIP, gaming, P2P, and hosting services from home all work without port forwarding. Add explicit firewall rules to allow specific inbound services. Use ULA addresses (fd00::/8) if you want non-routable internal addresses alongside your global IPv6 prefix.

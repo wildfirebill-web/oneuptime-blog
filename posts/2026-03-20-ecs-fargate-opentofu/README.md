@@ -20,6 +20,7 @@ AWS Fargate is a serverless compute engine for ECS that removes the need to prov
 
 ```hcl
 # ECS Cluster with Fargate capacity providers
+
 resource "aws_ecs_cluster" "fargate" {
   name = "${var.project_name}-fargate"
 
@@ -180,4 +181,4 @@ aws cloudwatch get-metric-statistics \
 
 ## Conclusion
 
-Use ARM64 Fargate tasks when possible—Graviton processors provide up to 20% better price/performance compared to x86. FARGATE_SPOT is ideal for web services, batch workloads, and CI/CD tasks that can handle 2-minute interruption notices; combine it with a small on-demand base to ensure continuity. Container Insights is essential for Fargate since you can't SSH to underlying hosts—it provides the only visibility into task-level CPU, memory, and network metrics.
+Use ARM64 Fargate tasks when possible-Graviton processors provide up to 20% better price/performance compared to x86. FARGATE_SPOT is ideal for web services, batch workloads, and CI/CD tasks that can handle 2-minute interruption notices; combine it with a small on-demand base to ensure continuity. Container Insights is essential for Fargate since you can't SSH to underlying hosts-it provides the only visibility into task-level CPU, memory, and network metrics.

@@ -33,7 +33,7 @@ def serve(bind_address: str = "0.0.0.0:50051") -> None:
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     hello_pb2_grpc.add_GreeterServicer_to_server(GreeterServicer(), server)
 
-    # Insecure (no TLS) — fine for internal services behind mTLS mesh
+    # Insecure (no TLS) - fine for internal services behind mTLS mesh
     server.add_insecure_port(bind_address)
     server.start()
     print(f"gRPC server listening on {bind_address}")
@@ -124,6 +124,7 @@ from concurrent import futures
 
 server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 # ... add servicers ...
+
 server.add_insecure_port("0.0.0.0:50051")
 server.start()
 

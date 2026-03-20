@@ -53,6 +53,7 @@ mkdir -p istio-migration/security
 mkdir -p istio-migration/telemetry
 
 # Networking resources
+
 kubectl get virtualservices -A -o yaml > istio-migration/networking/virtualservices.yaml
 kubectl get destinationrules -A -o yaml > istio-migration/networking/destinationrules.yaml
 kubectl get gateways -A -o yaml > istio-migration/networking/gateways.yaml

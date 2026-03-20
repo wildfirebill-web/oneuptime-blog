@@ -16,6 +16,7 @@ The `chage` command reads and writes password aging information stored in `/etc/
 
 ```bash
 # View current password aging settings for a user
+
 sudo chage -l alice
 
 # Example output:

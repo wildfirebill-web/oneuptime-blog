@@ -26,6 +26,7 @@ Before downgrading, protect your existing data:
 
 ```bash
 # Check the current version
+
 podman --version
 
 # Stop all running containers

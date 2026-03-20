@@ -22,6 +22,7 @@ Signs of a corrupted ext4 filesystem:
 
 ```bash
 # Check kernel ring buffer for filesystem errors
+
 sudo dmesg | grep -i "ext4\|filesystem\|i/o error"
 
 # Check system journal for filesystem-related messages

@@ -62,6 +62,7 @@ Use Standard for data that is accessed frequently or has unpredictable access pa
 
 ```bash
 # Create a Standard storage bucket
+
 gsutil mb -c standard -l us-central1 gs://my-app-assets/
 
 # Upload frequently accessed data

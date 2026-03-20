@@ -187,6 +187,7 @@ int main(void) {
 
 ```bash
 # Generate a private key and self-signed certificate
+
 openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt \
     -days 365 -nodes -subj "/CN=localhost"
 

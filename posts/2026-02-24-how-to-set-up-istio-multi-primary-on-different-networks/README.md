@@ -79,6 +79,7 @@ When Istio sees that endpoints are on a different network, it knows to route tra
 
 ```yaml
 # cluster1-config.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

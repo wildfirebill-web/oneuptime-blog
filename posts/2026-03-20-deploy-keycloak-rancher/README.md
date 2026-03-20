@@ -1,8 +1,8 @@
-# How to Deploy Keycloak on Rancher
+# How to Deploy Keycloak on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, keycloak, iam, sso, kubernetes
+Tags: Rancher, Keycloak, IAM, SSO, Kubernetes
 
 Description: Complete guide to deploying Keycloak identity and access management on Rancher for enterprise SSO.
 
@@ -22,6 +22,7 @@ This guide covers deploying ukeycloak on Rancher with production-ready configura
 
 ```bash
 # Add the chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

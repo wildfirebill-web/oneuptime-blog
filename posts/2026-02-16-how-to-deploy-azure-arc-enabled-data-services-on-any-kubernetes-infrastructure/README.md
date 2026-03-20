@@ -44,6 +44,7 @@ Before deploying, you need:
 
 ```bash
 # Install the arcdata extension
+
 az extension add --name arcdata --upgrade
 
 # Verify your cluster meets the requirements

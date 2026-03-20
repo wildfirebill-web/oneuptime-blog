@@ -37,6 +37,7 @@ SQL Managed Instance requires a dedicated subnet with specific configurations. T
 
 ```hcl
 # Primary region resources
+
 resource "azurerm_resource_group" "primary" {
   name     = "rg-sqlmi-primary"
   location = "eastus"

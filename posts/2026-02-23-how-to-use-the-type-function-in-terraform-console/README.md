@@ -38,6 +38,7 @@ To use `type`, first start the console:
 
 ```bash
 # Start the console in a directory with Terraform files
+
 terraform console
 
 # Or start it with a specific state file

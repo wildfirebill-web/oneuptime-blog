@@ -33,6 +33,7 @@ semantic-release is the gold standard for automated versioning. It analyzes comm
 
 ```yaml
 # .github/workflows/release.yml
+
 name: Release
 
 on:

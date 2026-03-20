@@ -18,6 +18,7 @@ Kube-proxy settings live under `cluster.proxy` in the Talos machine configuratio
 
 ```yaml
 # Basic kube-proxy configuration
+
 cluster:
   proxy:
     disabled: false

@@ -247,6 +247,7 @@ Then analyze:
 
 ```bash
 # View goroutine stacks
+
 go tool pprof http://localhost:6060/debug/pprof/goroutine
 
 # Dump all goroutines

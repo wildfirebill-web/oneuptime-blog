@@ -31,6 +31,7 @@ MySQL performance depends heavily on storage I/O. Configure your Talos Linux nod
 
 ```yaml
 # talos-storage-patch.yaml
+
 machine:
   disks:
     - device: /dev/sdb

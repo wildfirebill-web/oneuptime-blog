@@ -1,4 +1,4 @@
-# How to Deploy OpenTelemetry Collector on Rancher
+# How to Deploy OpenTelemetry Collector on Rancher - Otel
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ The OpenTelemetry Collector is a vendor-agnostic agent for receiving, processing
 
 ```bash
 # Add OpenTelemetry Helm repository
+
 helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 helm repo update
 

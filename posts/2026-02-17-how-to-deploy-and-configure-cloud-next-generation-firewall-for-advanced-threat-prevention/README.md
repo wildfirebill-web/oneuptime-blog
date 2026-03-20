@@ -30,6 +30,7 @@ Cloud NGFW requires enabling the Network Security API and creating firewall endp
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable networksecurity.googleapis.com \
   --project=my-network-project
 

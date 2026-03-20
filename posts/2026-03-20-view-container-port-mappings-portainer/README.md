@@ -30,6 +30,7 @@ For scripted or automated use cases, Docker CLI provides powerful filtering:
 
 ```bash
 # Filter running containers
+
 docker ps --filter "status=running"
 
 # Filter by label key=value

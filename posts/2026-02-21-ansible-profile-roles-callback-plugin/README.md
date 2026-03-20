@@ -16,6 +16,7 @@ Enable it in your `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Enable role profiling
+
 [defaults]
 callback_whitelist = profile_roles
 ```

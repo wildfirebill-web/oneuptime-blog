@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PIM-SSM, Multicast, Source-Specific Multicast, Network
+Tags: IPv6, PIM-SSM, Multicast, Source-Specific Multicast, Networks
 
 Description: A guide to configuring PIM-SSM (Source-Specific Multicast) for IPv6, enabling more efficient and secure multicast routing without a Rendezvous Point.
 
 ## What Is PIM-SSM?
 
-PIM-SSM (Source-Specific Multicast) is a mode of PIM that eliminates the need for a Rendezvous Point (RP). Instead of joining a multicast group `(*,G)`, receivers join `(S,G)` — specifying both the source and group. Traffic only flows from the authorized source to the group.
+PIM-SSM (Source-Specific Multicast) is a mode of PIM that eliminates the need for a Rendezvous Point (RP). Instead of joining a multicast group `(*,G)`, receivers join `(S,G)` - specifying both the source and group. Traffic only flows from the authorized source to the group.
 
 For IPv6, the SSM address range is `ff3x::/32` (where `x` is the scope nibble).
 
@@ -27,6 +27,7 @@ For IPv6, the SSM address range is `ff3x::/32` (where `x` is the scope nibble).
 
 ```bash
 # Install FRRouting
+
 apt install frr
 
 # Enable pimd daemon

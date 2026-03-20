@@ -1,4 +1,4 @@
-# How to Fix Environment Variable Issues on Synology with Portainer
+# How to Fix Environment Variable Issues on Synology with Portainer - Env Var
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Resolve environment variable handling problems when running Portain
 
 ## Introduction
 
-Synology NAS devices run Docker through DSM (DiskStation Manager), which uses an older Docker version and has some non-standard behaviors. When running Portainer on Synology, environment variable issues are common — values containing special characters get corrupted, `.env` files don't parse correctly, or variables passed to containers via Portainer's UI behave differently than expected.
+Synology NAS devices run Docker through DSM (DiskStation Manager), which uses an older Docker version and has some non-standard behaviors. When running Portainer on Synology, environment variable issues are common - values containing special characters get corrupted, `.env` files don't parse correctly, or variables passed to containers via Portainer's UI behave differently than expected.
 
 ## Understanding the Synology Docker Environment
 
@@ -22,6 +22,7 @@ Synology DSM Docker:
 
 ```bash
 # SSH into your Synology NAS
+
 ssh admin@synology-ip
 
 # Check Docker version
@@ -208,4 +209,4 @@ docker compose config --env-file /volume1/docker/myapp/.env
 
 ## Conclusion
 
-Environment variable issues on Synology with Portainer are primarily caused by special character handling in the Portainer web editor and CRLF line endings in `.env` files. The most reliable approach is to store sensitive environment variables in a `.env` file on a Synology volume and reference it via `env_file` in your compose stack — avoiding the need to type special characters in the Portainer UI altogether.
+Environment variable issues on Synology with Portainer are primarily caused by special character handling in the Portainer web editor and CRLF line endings in `.env` files. The most reliable approach is to store sensitive environment variables in a `.env` file on a Synology volume and reference it via `env_file` in your compose stack - avoiding the need to type special characters in the Portainer UI altogether.

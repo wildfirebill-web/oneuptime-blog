@@ -72,6 +72,7 @@ import traceback
 from concurrent import futures
 
 # Configure detailed logging
+
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'

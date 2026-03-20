@@ -37,6 +37,7 @@ per-tenant request rate limit exceeded
 
 ```bash
 # Query outstanding requests metric
+
 curl -s http://loki:3100/metrics | grep -E "loki_query_frontend_outstanding_requests|loki_request_duration"
 
 # Check rate limiting metrics

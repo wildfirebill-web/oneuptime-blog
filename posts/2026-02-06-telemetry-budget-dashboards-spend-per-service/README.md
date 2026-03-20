@@ -28,6 +28,7 @@ The Collector exposes internal telemetry about its own operations. Enable the Pr
 
 ```yaml
 # Collector config that exposes internal metrics and per-pipeline
+
 # throughput data via a Prometheus endpoint.
 receivers:
   otlp:

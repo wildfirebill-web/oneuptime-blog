@@ -42,6 +42,7 @@ Apply the manifest to create the Deployment, then verify both the Deployment res
 
 ```bash
 # Create or update the Deployment from the YAML file
+
 kubectl apply -f deploy.yaml
 
 # Check the Deployment status (READY column shows available replicas)

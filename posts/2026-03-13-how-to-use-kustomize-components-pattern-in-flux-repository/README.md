@@ -50,6 +50,7 @@ A component uses `kind: Component` instead of `kind: Kustomization`:
 
 ```yaml
 # components/prometheus-sidecar/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1alpha1
 kind: Component
 patches:

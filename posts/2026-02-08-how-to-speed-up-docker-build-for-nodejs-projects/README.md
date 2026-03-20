@@ -16,6 +16,7 @@ A typical naive Dockerfile copies everything, then installs dependencies:
 
 ```dockerfile
 # BAD: This reinstalls ALL dependencies on every code change
+
 FROM node:20-alpine
 WORKDIR /app
 COPY . .

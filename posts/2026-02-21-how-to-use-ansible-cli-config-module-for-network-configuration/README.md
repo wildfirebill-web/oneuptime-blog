@@ -36,6 +36,7 @@ Here is the simplest way to push configuration with `cli_config`:
 
 ```yaml
 # playbook-basic-config.yml
+
 # Pushes a simple configuration change to a network device
 - name: Basic configuration push
   hosts: ios_routers

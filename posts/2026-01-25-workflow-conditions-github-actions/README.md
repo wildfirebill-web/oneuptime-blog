@@ -44,6 +44,7 @@ GitHub provides several context objects for building conditions:
 
 ```yaml
 # Event type
+
 if: github.event_name == 'push'
 if: github.event_name == 'pull_request'
 if: github.event_name == 'workflow_dispatch'

@@ -1,4 +1,4 @@
-# How to Deploy a Team Fortress 2 Server via Portainer
+# How to Deploy a Team Fortress 2 Server via Portainer - Tf2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Running your own dedicated game server gives you full control over game settings
 
 ```bash
 # Open game server ports
+
 ufw allow 27015:27015/udp 27015:27015/tcp
 ufw reload
 ```

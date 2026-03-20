@@ -39,6 +39,7 @@ First, define a standard event schema that any service in your system can emit:
 
 ```python
 # Notification event schema and emitter
+
 import boto3
 import json
 from datetime import datetime

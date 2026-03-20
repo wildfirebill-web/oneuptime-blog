@@ -29,6 +29,7 @@ This guide covers automating cilium-dbg bgp route-policies for monitoring and al
 ```bash
 #!/bin/bash
 # collect-bgp-route-policies-state.sh
+
 set -euo pipefail
 
 NAMESPACE="${CILIUM_NAMESPACE:-kube-system}"

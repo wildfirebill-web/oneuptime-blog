@@ -50,6 +50,7 @@ Every pod IP is routable from every other pod. kube-proxy (or Cilium's eBPF-base
 
 ```bash
 # Verify Cilium has no policies loaded
+
 kubectl exec -n kube-system ds/cilium -- cilium policy get
 # Expected: empty policy list
 

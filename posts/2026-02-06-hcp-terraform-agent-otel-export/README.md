@@ -27,6 +27,7 @@ Deploy the Collector as a sidecar to the HCP Terraform agent:
 
 ```yaml
 # docker-compose.yaml for self-hosted agents
+
 version: "3.8"
 services:
   tfc-agent:

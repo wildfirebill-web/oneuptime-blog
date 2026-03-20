@@ -16,6 +16,7 @@ The most comprehensive way to collect debug information is the support bundle co
 
 ```bash
 # Collect a support bundle from all nodes
+
 talosctl -n <node-ip-1>,<node-ip-2>,<node-ip-3> support --output support-bundle.zip
 
 # Collect from a single node

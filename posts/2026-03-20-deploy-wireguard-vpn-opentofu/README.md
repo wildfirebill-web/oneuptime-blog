@@ -110,6 +110,7 @@ terraform {
 }
 
 # Generate server keypair
+
 resource "wireguard_asymmetric_key" "server" {}
 
 # Generate client keypairs

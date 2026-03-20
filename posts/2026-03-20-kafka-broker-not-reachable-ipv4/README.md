@@ -14,6 +14,7 @@ Kafka "broker not reachable" errors can stem from incorrect `advertised.listener
 
 ```bash
 # Step 1: Is the broker process running?
+
 sudo systemctl status kafka
 sudo ps aux | grep kafka
 
@@ -50,9 +51,9 @@ sudo systemctl restart kafka
 
 ```bash
 # Kafka requires specific ports open:
-# 9092 — default client port
-# 9091 — inter-broker (if configured)
-# 9093 — controller (KRaft) or SSL
+# 9092 - default client port
+# 9091 - inter-broker (if configured)
+# 9093 - controller (KRaft) or SSL
 
 # Check iptables
 sudo iptables -L INPUT -n | grep -E "9092|9091"

@@ -25,6 +25,7 @@ The key difference with the AWS VPC CNI is that each pod gets an IP address from
 
 ```bash
 # Verify you are on EKS
+
 kubectl get nodes -o wide
 # Node names should be EC2 instance IDs or EKS-formatted names
 

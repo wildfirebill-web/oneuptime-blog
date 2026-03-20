@@ -31,6 +31,7 @@ Configure global scrape settings in Prometheus:
 
 ```yaml
 # prometheus-values.yaml (for kube-prometheus-stack)
+
 prometheus:
   prometheusSpec:
     # Global scrape interval

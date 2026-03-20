@@ -35,6 +35,7 @@ The official installation script always provides the latest version:
 
 ```bash
 # Download and run the official installation script
+
 # This script automatically detects your system architecture and installs the appropriate version
 curl https://rclone.org/install.sh | sudo bash
 ```

@@ -65,6 +65,7 @@ flowchart TD
 ```bash
 kubectl run debug --image=nginx --port=80
 # Check access logs
+
 kubectl logs <nginx-pod> | grep "client_ip\|remote_addr"
 ```
 

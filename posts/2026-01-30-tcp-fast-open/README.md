@@ -134,6 +134,7 @@ Enable TFO on Linux systems by adjusting kernel parameters:
 
 ```bash
 # Check current TFO setting
+
 # Values: 0=disabled, 1=client only, 2=server only, 3=both
 cat /proc/sys/net/ipv4/tcp_fastopen
 

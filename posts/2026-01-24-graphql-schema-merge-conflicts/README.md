@@ -48,6 +48,7 @@ Different services define types with the same name but different structures.
 
 ```graphql
 # Users Service - defines User type
+
 type User {
   id: ID!
   email: String!

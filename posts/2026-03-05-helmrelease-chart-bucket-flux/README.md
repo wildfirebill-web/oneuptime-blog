@@ -32,6 +32,7 @@ Create a Bucket source that points to your S3-compatible storage:
 
 ```yaml
 # Bucket source pointing to an S3 bucket with Helm charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: Bucket
 metadata:

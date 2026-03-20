@@ -30,6 +30,7 @@ Monit's main configuration is at `/etc/monit/monitrc`. Additional checks go in `
 
 ```bash
 # View existing configuration
+
 sudo cat /etc/monit/monitrc
 
 # List enabled configurations

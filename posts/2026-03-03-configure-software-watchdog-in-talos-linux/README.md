@@ -24,6 +24,7 @@ The soft lockup detector works by running a high-priority kernel thread on each 
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   sysctls:
     # Soft lockup detection settings

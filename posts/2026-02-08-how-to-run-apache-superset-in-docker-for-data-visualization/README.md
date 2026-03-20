@@ -27,6 +27,7 @@ The Superset project provides an official Docker Compose setup. Clone the reposi
 
 ```bash
 # Clone the official Superset repository
+
 git clone https://github.com/apache/superset.git
 cd superset
 

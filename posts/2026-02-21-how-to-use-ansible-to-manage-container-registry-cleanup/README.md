@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # roles/registry_cleanup/tasks/dockerhub.yml
+
 # Clean up old images from Docker Hub
 - name: Get repository tags
   ansible.builtin.uri:

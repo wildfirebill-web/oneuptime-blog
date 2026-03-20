@@ -39,6 +39,7 @@ The key parameters that control rolling update behavior are `maxSurge` and `maxU
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

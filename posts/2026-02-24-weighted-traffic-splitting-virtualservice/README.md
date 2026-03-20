@@ -143,6 +143,7 @@ Verify:
 
 ```bash
 # Check the route config
+
 istioctl proxy-config routes deploy/my-service-v1 -n my-app
 
 # Send test traffic and count responses

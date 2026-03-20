@@ -14,6 +14,7 @@ Azure Storage lifecycle management lets you automatically transition blobs betwe
 
 ```hcl
 # main.tf - Storage account with lifecycle management support
+
 resource "azurerm_storage_account" "storage" {
   name                     = "mylifecyclestorage"
   resource_group_name      = azurerm_resource_group.rg.name

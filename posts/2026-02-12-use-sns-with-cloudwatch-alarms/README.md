@@ -33,6 +33,7 @@ Start by creating topics for different severity levels.
 
 ```bash
 # Create topics for different alert severities
+
 aws sns create-topic --name critical-alerts
 aws sns create-topic --name warning-alerts
 aws sns create-topic --name info-alerts

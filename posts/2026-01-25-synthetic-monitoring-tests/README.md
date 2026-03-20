@@ -26,6 +26,7 @@ Initialize a synthetic monitoring project with Playwright:
 
 ```bash
 # Create project directory
+
 mkdir synthetic-monitoring && cd synthetic-monitoring
 
 # Initialize npm project

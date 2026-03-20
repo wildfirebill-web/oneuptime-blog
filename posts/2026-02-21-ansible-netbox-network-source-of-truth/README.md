@@ -14,6 +14,7 @@ Netbox is an open-source infrastructure resource modeling (IRM) tool designed fo
 
 ```yaml
 # inventories/netbox.yml
+
 plugin: netbox.netbox.nb_inventory
 api_endpoint: https://netbox.example.com
 token: "{{ netbox_api_token }}"

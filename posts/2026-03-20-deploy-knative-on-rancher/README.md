@@ -20,6 +20,7 @@ Knative extends Kubernetes with serverless capabilities: automatic scale-to-zero
 
 ```bash
 # Install Knative Serving CRDs
+
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.14.0/serving-crds.yaml
 
 # Install Knative Serving core

@@ -74,6 +74,7 @@ Organize shared services into dedicated namespaces:
 
 ```bash
 # Create namespaces
+
 for ns in monitoring logging ingress cert-manager shared-databases; do
   cat <<EOF | kubectl apply -f -
 apiVersion: v1

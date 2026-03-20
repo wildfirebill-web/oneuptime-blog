@@ -20,6 +20,7 @@ Volume plugins run as separate services and communicate with Podman over a Unix 
 
 ```bash
 # List available volume plugins
+
 ls /run/containers/plugins/ 2>/dev/null
 ls /var/run/docker/plugins/ 2>/dev/null
 

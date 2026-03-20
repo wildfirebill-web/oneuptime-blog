@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, terraform_data, Triggers, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Terraform_data, Trigger, Infrastructure as Code, DevOps
 
 Description: A guide to using the terraform_data resource in OpenTofu for storing arbitrary data and triggering replacements without external providers.
 
@@ -14,6 +14,7 @@ The `terraform_data` resource is a built-in resource type that stores arbitrary 
 
 ```hcl
 # Store arbitrary data in state
+
 resource "terraform_data" "config_version" {
   input = {
     version    = var.app_version

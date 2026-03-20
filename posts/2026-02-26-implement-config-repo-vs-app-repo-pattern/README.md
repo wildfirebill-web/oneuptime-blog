@@ -69,6 +69,7 @@ The CI pipeline in the app repo builds the container image and then updates the 
 
 ```yaml
 # .github/workflows/build.yaml
+
 name: Build and Update Config
 on:
   push:

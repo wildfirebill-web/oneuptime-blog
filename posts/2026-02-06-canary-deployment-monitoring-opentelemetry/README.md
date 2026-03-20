@@ -40,6 +40,7 @@ The most important step is ensuring every piece of telemetry from your applicati
 
 ```python
 # otel_setup.py
+
 # Configure OpenTelemetry with version-aware resource attributes
 
 import os

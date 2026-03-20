@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Clusters, IPv4, Endpoints, Load Balancing, Upstream
+Tags: Envoy, Cluster, IPv4, Endpoint, Load Balancing, Upstream
 
 Description: Configure Envoy clusters to define IPv4 upstream endpoints with load balancing, health checks, and connection pool settings for HTTP and TCP traffic.
 
@@ -152,6 +152,7 @@ clusters:
 
 ```bash
 # View cluster endpoint health via Envoy admin API
+
 curl http://127.0.0.1:9901/clusters
 
 # Get detailed cluster stats

@@ -33,6 +33,7 @@ This guide covers pre-deployment checks, node preparation steps, and ongoing ope
 
 ```bash
 # Pre-flight check script for a new node
+
 NODE=<new-node-hostname>
 
 # Check kernel modules

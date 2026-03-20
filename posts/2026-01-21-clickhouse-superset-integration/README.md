@@ -75,6 +75,7 @@ volumes:
 
 ```bash
 # Inside Superset container
+
 pip install clickhouse-connect
 
 # Or add to requirements-local.txt

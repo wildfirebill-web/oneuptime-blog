@@ -14,6 +14,7 @@ VLAN interfaces created with `ip link add` are lost on reboot. For production sy
 
 ```yaml
 # /etc/netplan/01-vlans.yaml
+
 network:
   version: 2
   renderer: networkd

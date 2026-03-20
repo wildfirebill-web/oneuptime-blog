@@ -16,6 +16,7 @@ The agent must be deployed as a global service (one instance per node) and must 
 
 ```bash
 # Deploy the agent stack on your Swarm manager
+
 docker stack deploy --compose-file agent-stack.yml portainer_agent
 ```
 

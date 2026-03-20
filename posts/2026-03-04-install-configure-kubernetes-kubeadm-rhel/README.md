@@ -16,6 +16,7 @@ Disable swap and configure kernel modules on every node (control plane and worke
 
 ```bash
 # Disable swap (required for Kubernetes)
+
 sudo swapoff -a
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 

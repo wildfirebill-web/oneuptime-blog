@@ -77,6 +77,7 @@ Before installing EdgeX:
 
 ```bash
 # Create EdgeX directory
+
 mkdir edgex-deployment && cd edgex-deployment
 
 # Download the docker-compose file for the latest release

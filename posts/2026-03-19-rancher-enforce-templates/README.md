@@ -64,6 +64,7 @@ Check that the following settings are locked in your templates:
 
 ```yaml
 # Critical locked settings checklist
+
 network:
   plugin: canal  # Locked
 

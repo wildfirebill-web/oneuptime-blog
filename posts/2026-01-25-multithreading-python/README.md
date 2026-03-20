@@ -14,6 +14,7 @@ Python's `threading` module enables concurrent execution of code. While Python's
 
 ```python
 # Threading: Good for I/O-bound tasks
+
 # - Network requests
 # - File operations
 # - Database queries

@@ -56,6 +56,7 @@ Here's a complete DaemonSet configuration using the OpenTelemetry Operator:
 
 ```yaml
 # otel-collector-daemonset.yaml
+
 # Collector running as a DaemonSet - one per node for local data collection
 apiVersion: opentelemetry.io/v1beta1
 kind: OpenTelemetryCollector

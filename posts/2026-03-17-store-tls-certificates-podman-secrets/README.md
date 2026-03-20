@@ -18,6 +18,7 @@ TLS certificates and private keys are essential for secure communications but re
 
 ```bash
 # Store the TLS certificate
+
 podman secret create tls_cert /path/to/server.crt
 
 # Store the TLS private key

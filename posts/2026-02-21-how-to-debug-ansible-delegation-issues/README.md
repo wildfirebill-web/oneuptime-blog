@@ -16,6 +16,7 @@ The first step in debugging any Ansible issue is to increase the verbosity. For 
 
 ```bash
 # Run with maximum verbosity to see connection details
+
 ansible-playbook site.yml -vvvv
 
 # Or target just the problematic host for less noise

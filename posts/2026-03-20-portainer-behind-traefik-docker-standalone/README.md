@@ -22,6 +22,7 @@ Create `traefik/traefik.yml`:
 
 ```yaml
 # Traefik static configuration
+
 api:
   dashboard: true
   insecure: false  # Disable insecure dashboard

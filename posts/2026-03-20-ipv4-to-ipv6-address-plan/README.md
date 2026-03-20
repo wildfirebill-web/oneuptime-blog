@@ -8,11 +8,11 @@ Description: Learn how to map your existing IPv4 address plan to an IPv6 equival
 
 ## Introduction
 
-Transitioning from an IPv4 address plan to IPv6 does not mean discarding what you have — it means creating an IPv6 parallel that mirrors your existing structure, then gradually shifting preference from IPv4 to IPv6. The key is maintaining dual-stack operation during the transition so services remain accessible over both protocols.
+Transitioning from an IPv4 address plan to IPv6 does not mean discarding what you have - it means creating an IPv6 parallel that mirrors your existing structure, then gradually shifting preference from IPv4 to IPv6. The key is maintaining dual-stack operation during the transition so services remain accessible over both protocols.
 
 ## Mapping IPv4 to IPv6 Structure
 
-```
+```text
 IPv4 Plan Example:
   10.0.1.0/24    HQ User LAN      (VLAN 1)
   10.0.10.0/24   HQ Servers       (VLAN 10)
@@ -85,6 +85,7 @@ graph LR
 
 ```bash
 # Add IPv6 address alongside IPv4 on each interface
+
 sudo ip addr add 192.168.1.1/24 dev eth0         # IPv4 (existing)
 sudo ip -6 addr add 2001:db8:corp:1::1/64 dev eth0  # IPv6 (new)
 

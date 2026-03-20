@@ -20,6 +20,7 @@ The problem:
 
 ```yaml
 # This is NOT production ready
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

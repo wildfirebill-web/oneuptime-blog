@@ -38,6 +38,7 @@ terraform import <resource_type>.<resource_name> <azure_resource_id>
 
 ```hcl
 # First, write the resource configuration
+
 resource "azurerm_resource_group" "main" {
   name     = "existing-rg"
   location = "eastus"

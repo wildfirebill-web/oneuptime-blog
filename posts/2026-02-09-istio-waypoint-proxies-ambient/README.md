@@ -30,6 +30,7 @@ Deploy the sample applications if you haven't already:
 
 ```yaml
 # sample-apps.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

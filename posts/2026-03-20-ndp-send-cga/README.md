@@ -12,7 +12,7 @@ Cryptographically Generated Addresses (CGA, RFC 3972) are IPv6 addresses where t
 
 ## CGA Generation Algorithm
 
-```
+```text
 CGA Generation (RFC 3972 Section 4):
 
 Inputs:
@@ -39,7 +39,7 @@ Step 4: CGA = SubnetPrefix + InterfaceIdentifier
 
 ## CGA Structure
 
-```
+```text
 IPv6 CGA Interface Identifier layout (64 bits):
 
  0 1 2 3 4 5 6 7  (first byte)

@@ -117,6 +117,7 @@ This mesh-wide policy ensures all service-to-service communication uses mTLS. Ve
 
 ```bash
 # Check mTLS status for a specific service
+
 istioctl x describe pod my-app-pod
 
 # Verify the connection is using mTLS

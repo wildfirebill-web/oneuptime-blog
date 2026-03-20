@@ -24,6 +24,7 @@ This guide covers creating and managing Network Policies with Flux CD, from basi
 
 ```yaml
 # Organize network policies by scope
+
 # infrastructure/
 #   network-policies/
 #     base/

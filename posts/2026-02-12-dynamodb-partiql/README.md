@@ -259,6 +259,7 @@ You can also run PartiQL from the command line:
 
 ```bash
 # Select items
+
 aws dynamodb execute-statement \
   --statement "SELECT * FROM Users WHERE userId = 'user-001'"
 

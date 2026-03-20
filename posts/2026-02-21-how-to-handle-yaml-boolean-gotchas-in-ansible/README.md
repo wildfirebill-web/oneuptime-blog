@@ -32,6 +32,7 @@ off, Off, OFF
 
 ```yaml
 # This looks like it sets string values, but it does not
+
 features:
   ssl: on        # Boolean true, not the string "on"
   debug: off     # Boolean false, not the string "off"

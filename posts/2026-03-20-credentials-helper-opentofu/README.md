@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Credentials Helper, Authentication, Security, Infrastructure as Code
+Tags: OpenTofu, Credentials Helpers, Authentication, Security, Infrastructure as Code
 
-Description: Learn how OpenTofu credentials helpers work — storing and retrieving registry tokens via external programs, enabling integration with system keychains and secrets managers.
+Description: Learn how OpenTofu credentials helpers work - storing and retrieving registry tokens via external programs, enabling integration with system keychains and secrets managers.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ OpenTofu credentials helpers are external programs that provide authentication t
 
 ## How Credentials Helpers Work
 
-```
+```hcl
 tofu init (needs token for private-registry.example.com)
   ↓
 Check ~/.terraformrc for credentials block
@@ -27,10 +27,11 @@ OpenTofu uses token for registry authentication
 
 ## Static Credentials (No Helper)
 
-The simplest approach — token stored in plaintext:
+The simplest approach - token stored in plaintext:
 
 ```hcl
 # ~/.terraformrc
+
 credentials "registry.mycompany.com" {
   token = "my-registry-token"
 }
@@ -122,7 +123,7 @@ EOF
 
 ```bash
 #!/bin/bash
-# terraform-credentials-keychain — use macOS Keychain for tokens
+# terraform-credentials-keychain - use macOS Keychain for tokens
 
 COMMAND="$1"
 HOSTNAME="$2"
@@ -167,7 +168,7 @@ echo 'credentials_helper "keychain" {}' >> ~/.terraformrc
 
 ## CI/CD: Environment Variables Instead of Helpers
 
-For CI/CD, use environment variables — no credentials helper needed:
+For CI/CD, use environment variables - no credentials helper needed:
 
 ```bash
 # GitHub Actions: pass token as environment variable
@@ -180,11 +181,11 @@ For CI/CD, use environment variables — no credentials helper needed:
 
 ```bash
 # The TF_TOKEN_ prefix tells OpenTofu to use the value as the token
-# for that hostname — no .terraformrc needed
+# for that hostname - no .terraformrc needed
 export TF_TOKEN_registry_mycompany_com="my-token-value"
 tofu init  # Uses the token automatically
 ```
 
 ## Conclusion
 
-OpenTofu credentials helpers let you store registry tokens in secure external stores (system keychains, Vault, secrets managers) instead of plaintext configuration files. Implement a helper by creating a binary named `terraform-credentials-HELPERNAME` that handles `get`, `store`, and `forget` subcommands, then reference it in `~/.terraformrc`. For CI/CD environments, use `TF_TOKEN_hostname` environment variables — they take precedence over all credentials configuration and require no file-based configuration.
+OpenTofu credentials helpers let you store registry tokens in secure external stores (system keychains, Vault, secrets managers) instead of plaintext configuration files. Implement a helper by creating a binary named `terraform-credentials-HELPERNAME` that handles `get`, `store`, and `forget` subcommands, then reference it in `~/.terraformrc`. For CI/CD environments, use `TF_TOKEN_hostname` environment variables - they take precedence over all credentials configuration and require no file-based configuration.

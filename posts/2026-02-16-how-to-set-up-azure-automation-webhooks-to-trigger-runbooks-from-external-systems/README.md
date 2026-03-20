@@ -35,6 +35,7 @@ If you do not already have one:
 
 ```bash
 # Create an Azure Automation account
+
 az automation account create \
   --name myAutomationAccount \
   --resource-group myRG \

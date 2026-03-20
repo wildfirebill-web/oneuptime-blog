@@ -26,6 +26,7 @@ Start by checking the pod status to confirm ImagePullBackOff.
 
 ```bash
 # Check pod status
+
 kubectl get pods
 
 # Output shows:

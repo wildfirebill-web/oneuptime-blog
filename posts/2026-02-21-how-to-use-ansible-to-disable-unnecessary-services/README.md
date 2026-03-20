@@ -20,6 +20,7 @@ This task lists all running services and saves the output for review:
 
 ```yaml
 # discover_services.yml - Find all running services on target hosts
+
 ---
 - name: Discover running services
   hosts: all

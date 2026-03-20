@@ -35,6 +35,7 @@ Each snapshot is identified by a timestamp and is read-only. You can browse the 
 
 ```bash
 # Create a snapshot of an Azure File Share
+
 az storage share snapshot \
   --account-name myfilesaccount \
   --name myfileshare

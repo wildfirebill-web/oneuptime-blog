@@ -20,6 +20,7 @@ You need:
 
 ```bash
 # On the bastion host: Download the OpenShift installer and CLI
+
 curl -O https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-install-linux.tar.gz
 curl -O https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-linux.tar.gz
 

@@ -22,6 +22,7 @@ Because of this, the Docker daemon socket is owned by root and the `docker` grou
 ```bash
 ls -la /var/run/docker.sock
 # srw-rw---- 1 root docker 0 Mar 2 09:00 /var/run/docker.sock
+
 ```
 
 Only root and members of the `docker` group can access it.

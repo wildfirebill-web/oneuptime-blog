@@ -26,6 +26,7 @@ This is the simpler and more commonly used approach. You enable it with a single
 
 ```hcl
 # Subnet group spanning multiple AZs - required for Multi-AZ
+
 resource "aws_db_subnet_group" "main" {
   name       = "multi-az-db-subnets"
   subnet_ids = var.private_subnet_ids

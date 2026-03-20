@@ -41,6 +41,7 @@ CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 
 # Check available disk space
+
 kubectl -n kube-system exec "$CILIUM_POD" -c cilium-agent -- \
   df -h /tmp
 

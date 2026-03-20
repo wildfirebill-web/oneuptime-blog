@@ -54,6 +54,7 @@ Before doing anything, confirm that no operation is actually running. Look at th
 
 ```bash
 # Check if the CI runner is still running
+
 # For GitHub Actions, check the Actions tab
 # For GitLab, check the pipeline page
 

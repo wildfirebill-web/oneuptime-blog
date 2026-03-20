@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Comparison, Sorting, ipaddress, Networking
+Tags: Python, IPv4, Comparison, Sorting, Ipaddress, Networking
 
 Description: Learn how to compare IPv4 addresses programmatically in Python and other languages, using integer-based comparison to correctly handle ordering, equality, and range checks.
 
@@ -16,6 +16,7 @@ b = ipaddress.IPv4Address("192.168.1.100")
 c = ipaddress.IPv4Address("192.168.1.1")
 
 # All standard comparison operators work
+
 print(a == c)   # True
 print(a < b)    # True
 print(b > a)    # True
@@ -115,4 +116,4 @@ print(ip_in_range("10.0.0.101","10.0.0.1", "10.0.0.100"))  # False
 
 ## Conclusion
 
-Never compare IPv4 addresses as plain strings — lexicographic order produces wrong results (e.g., `"10.0.0.200" < "10.0.0.9"`). Always convert to an integer or use a typed wrapper (`IPv4Address` in Python, `net.IP` + `bytes.Compare` in Go) before comparing. Python's `IPv4Address` implements all six comparison operators, making it a drop-in replacement wherever ordered comparisons are needed.
+Never compare IPv4 addresses as plain strings - lexicographic order produces wrong results (e.g., `"10.0.0.200" < "10.0.0.9"`). Always convert to an integer or use a typed wrapper (`IPv4Address` in Python, `net.IP` + `bytes.Compare` in Go) before comparing. Python's `IPv4Address` implements all six comparison operators, making it a drop-in replacement wherever ordered comparisons are needed.

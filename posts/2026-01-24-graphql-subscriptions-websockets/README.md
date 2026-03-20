@@ -44,6 +44,7 @@ First, install the required dependencies for subscriptions.
 
 ```bash
 # Install Apollo Server, Express, and subscription dependencies
+
 # graphql-ws is the modern WebSocket implementation for GraphQL
 npm install @apollo/server express graphql graphql-ws ws
 npm install @graphql-tools/schema

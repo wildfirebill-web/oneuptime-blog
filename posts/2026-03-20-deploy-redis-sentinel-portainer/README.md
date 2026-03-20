@@ -126,6 +126,7 @@ docker exec -it $(docker ps -qf name=sentinel1) \
   redis-cli -p 26379 sentinel masters
 
 # Check replication state on the primary
+
 docker exec -it $(docker ps -qf name=redis-primary) \
   redis-cli -a redispassword info replication
 ```

@@ -263,6 +263,7 @@ If you're using the Python Temporal SDK, the setup is similar but uses Python's 
 
 ```python
 # worker.py - Temporal worker with OpenTelemetry in Python
+
 from temporalio.client import Client
 from temporalio.worker import Worker
 from temporalio.contrib.opentelemetry import TracingInterceptor

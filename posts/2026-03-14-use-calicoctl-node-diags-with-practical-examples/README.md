@@ -27,6 +27,7 @@ This guide shows practical examples of collecting, customizing, and analyzing Ca
 
 ```bash
 # Collect diagnostics from the current node
+
 sudo calicoctl node diags
 ```
 

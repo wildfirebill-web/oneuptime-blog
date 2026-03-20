@@ -48,6 +48,7 @@ Caching is configured in `ansible.cfg`. Here is the basic setup:
 
 ```ini
 # ansible.cfg
+
 [inventory]
 # Enable caching for inventory plugins
 cache = true

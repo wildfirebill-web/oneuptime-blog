@@ -51,6 +51,7 @@ from google.cloud import aiplatform
 import uuid
 
 # Initialize the AI Platform SDK
+
 aiplatform.init(project="your-project-id", location="us-central1")
 
 class SessionManager:

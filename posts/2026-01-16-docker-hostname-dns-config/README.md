@@ -16,6 +16,7 @@ Containers need proper hostname and DNS configuration for network communication.
 
 ```bash
 # Set hostname when running container
+
 docker run --hostname myapp.local myimage
 
 # Verify

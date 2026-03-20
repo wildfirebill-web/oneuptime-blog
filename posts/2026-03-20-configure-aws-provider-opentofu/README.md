@@ -8,12 +8,13 @@ Description: Learn how to configure the AWS provider in OpenTofu, including regi
 
 ## Introduction
 
-The AWS provider is the most widely used OpenTofu provider. Configuring it correctly—with the right region, authentication method, and global tags—sets the foundation for all AWS resources you manage with OpenTofu.
+The AWS provider is the most widely used OpenTofu provider. Configuring it correctly-with the right region, authentication method, and global tags-sets the foundation for all AWS resources you manage with OpenTofu.
 
 ## Minimal Configuration
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     aws = {

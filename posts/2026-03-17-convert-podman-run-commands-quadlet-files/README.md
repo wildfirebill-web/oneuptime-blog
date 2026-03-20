@@ -49,6 +49,7 @@ Converted Quadlet file:
 
 ```ini
 # ~/.config/containers/systemd/nginx.container
+
 [Unit]
 Description=Nginx web server
 

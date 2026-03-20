@@ -18,6 +18,7 @@ Before diving into networking, make sure the instance itself is healthy:
 
 ```bash
 # Check instance status and get the connection details
+
 gcloud redis instances describe my-redis-instance \
   --region=us-central1 \
   --format="yaml(host,port,currentLocationId,state,authorizedNetwork)"

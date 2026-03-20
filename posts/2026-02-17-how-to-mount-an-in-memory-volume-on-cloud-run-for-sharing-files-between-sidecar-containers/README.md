@@ -38,6 +38,7 @@ Enable the Cloud Run API if you have not already:
 
 ```bash
 # Enable the Cloud Run API in your GCP project
+
 gcloud services enable run.googleapis.com
 ```
 

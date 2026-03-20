@@ -32,6 +32,7 @@ Understanding the components helps plan the deployment:
 
 ```yaml
 # talos-pulsar-patch.yaml
+
 machine:
   sysctls:
     vm.max_map_count: "262144"

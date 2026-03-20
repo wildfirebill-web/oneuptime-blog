@@ -16,6 +16,7 @@ A naive Rust Dockerfile looks like this:
 
 ```dockerfile
 # BAD: Compiles EVERYTHING from scratch on every change
+
 FROM rust:1.77
 WORKDIR /app
 COPY . .

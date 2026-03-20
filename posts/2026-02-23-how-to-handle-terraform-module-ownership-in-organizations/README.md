@@ -28,6 +28,7 @@ A single platform or infrastructure team owns all modules:
 
 ```text
 # Ownership: Platform Team owns everything
+
 modules/
   networking/     # Platform Team
   compute/        # Platform Team

@@ -27,6 +27,7 @@ Aurora with multiple replicas across availability zones provides the fastest in-
 
 ```hcl
 # aurora-cluster.tf - Aurora cluster with hot standby replicas
+
 resource "aws_rds_cluster" "main" {
   cluster_identifier = "${var.project_name}-aurora-cluster"
 

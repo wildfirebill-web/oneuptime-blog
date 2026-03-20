@@ -363,6 +363,7 @@ Test the connection:
 
 ```bash
 # Use openssl to verify SNI routing
+
 openssl s_client -connect <gateway-ip>:443 -servername api.example.com
 ```
 

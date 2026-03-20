@@ -27,6 +27,7 @@ This guide covers deploying a k3s cluster with embedded etcd, configuring a high
 
 ```bash
 # On the first control plane node
+
 # K3S_TOKEN is a shared secret for cluster joining
 export K3S_TOKEN="my-shared-cluster-secret"
 

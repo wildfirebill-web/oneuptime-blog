@@ -35,6 +35,7 @@ IL4 Assured Workloads has stricter prerequisites than other compliance regimes:
 
 ```bash
 # Verify organization setup
+
 gcloud organizations list
 
 # Enable required APIs

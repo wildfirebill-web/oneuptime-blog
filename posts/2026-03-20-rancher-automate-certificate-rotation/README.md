@@ -1,8 +1,8 @@
-# How to Automate Certificate Rotation in Rancher
+# How to Automate Certificate Rotation in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, certificates, tls, automation, cert-manager, security
+Tags: Rancher, Certificates, TLS, Automation, Cert-Manager, Security
 
 Description: A guide to automating TLS certificate rotation in Rancher environments using cert-manager, RKE2 certificate rotation, and automated renewal workflows.
 
@@ -18,6 +18,7 @@ The recommended approach for Rancher TLS is to use cert-manager, which automatic
 
 ```bash
 # Install cert-manager
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.0/cert-manager.yaml
 
 # Wait for cert-manager to be ready

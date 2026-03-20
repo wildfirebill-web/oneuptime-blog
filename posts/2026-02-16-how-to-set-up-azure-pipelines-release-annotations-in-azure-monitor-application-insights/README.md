@@ -41,6 +41,7 @@ First, make sure you have the Application Insights resource and know its resourc
 
 ```yaml
 # Pipeline that deploys and creates a release annotation
+
 trigger:
   - main
 

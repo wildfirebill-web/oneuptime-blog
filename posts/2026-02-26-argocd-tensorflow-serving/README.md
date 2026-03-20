@@ -33,6 +33,7 @@ Start with a straightforward deployment that serves a model from cloud storage:
 
 ```yaml
 # apps/tf-serving/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

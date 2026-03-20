@@ -92,6 +92,7 @@ The following commands download and install Vault on a Linux system using the of
 
 ```bash
 # Add HashiCorp GPG key
+
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 
 # Add HashiCorp repository

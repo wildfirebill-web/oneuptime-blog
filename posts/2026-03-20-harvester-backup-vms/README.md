@@ -8,7 +8,7 @@ Description: A complete guide to configuring and executing VM backups in Harvest
 
 ## Introduction
 
-VM backups in Harvester store complete copies of VM disk data to an external target — either an S3-compatible object store or an NFS share. Unlike snapshots (which stay on the cluster), backups provide off-cluster data protection that survives hardware failures, data corruption, or complete cluster loss. This guide covers configuring the backup target and creating both manual and scheduled backups.
+VM backups in Harvester store complete copies of VM disk data to an external target - either an S3-compatible object store or an NFS share. Unlike snapshots (which stay on the cluster), backups provide off-cluster data protection that survives hardware failures, data corruption, or complete cluster loss. This guide covers configuring the backup target and creating both manual and scheduled backups.
 
 ## Backup Architecture
 
@@ -19,7 +19,7 @@ graph LR
     BackupController --> NFS["NFS Share"]
 ```
 
-Backups are incremental by default — only changed blocks are transferred after the initial full backup, making subsequent backups fast and storage-efficient.
+Backups are incremental by default - only changed blocks are transferred after the initial full backup, making subsequent backups fast and storage-efficient.
 
 ## Step 1: Configure the Backup Target
 
@@ -27,7 +27,7 @@ Backups are incremental by default — only changed blocks are transferred after
 
 Navigate to **Settings** → **Backup Target** in the Harvester UI:
 
-```
+```text
 Type:                S3
 Endpoint:            https://s3.amazonaws.com  (or your MinIO/Ceph endpoint)
 Bucket Name:         harvester-vm-backups
@@ -40,7 +40,7 @@ Virtual Hosted-Style: true  (for AWS S3)
 
 ### Using NFS
 
-```
+```text
 Type:           NFS
 Server Address: 192.168.1.50
 Mount Point:    /exports/harvester-backups
@@ -50,6 +50,7 @@ Mount Point:    /exports/harvester-backups
 
 ```yaml
 # backup-target-s3.yaml
+
 # Configure S3 as the backup target
 
 apiVersion: v1

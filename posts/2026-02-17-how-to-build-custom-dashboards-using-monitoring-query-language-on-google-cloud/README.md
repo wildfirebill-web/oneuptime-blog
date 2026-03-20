@@ -33,6 +33,7 @@ Let us start with a practical example. Here is a dashboard that shows CPU utiliz
 
 ```text
 # Average CPU utilization per zone, aligned to 5-minute intervals
+
 fetch gce_instance::compute.googleapis.com/instance/cpu/utilization
 | group_by [resource.zone], mean(val())
 | every 5m

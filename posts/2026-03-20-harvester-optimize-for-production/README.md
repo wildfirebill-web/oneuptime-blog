@@ -12,7 +12,7 @@ Running Harvester in production requires more than a basic installation. Product
 
 ## Production Readiness Checklist
 
-```
+```text
 Hardware:
   ✓ At least 3 nodes for HA
   ✓ IOMMU enabled (for future PCI passthrough)
@@ -43,7 +43,7 @@ Operations:
 
 ## Step 1: BIOS/UEFI Performance Settings
 
-```
+```text
 Recommended BIOS Settings:
 ├── Performance Profile: Maximum Performance
 ├── CPU Power Management: High Performance (disable C-states)
@@ -60,6 +60,7 @@ For CPU power management on the host OS:
 
 ```bash
 # Set CPU governor to performance mode on all nodes
+
 for NODE in harvester-node-01 harvester-node-02 harvester-node-03; do
     ssh rancher@${NODE} "sudo cpupower frequency-set -g performance"
 done

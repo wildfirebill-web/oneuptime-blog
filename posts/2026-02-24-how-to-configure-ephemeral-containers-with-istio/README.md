@@ -181,6 +181,7 @@ Other useful admin endpoints:
 
 ```bash
 # Cluster information
+
 curl -s http://localhost:15000/clusters
 
 # Listener information

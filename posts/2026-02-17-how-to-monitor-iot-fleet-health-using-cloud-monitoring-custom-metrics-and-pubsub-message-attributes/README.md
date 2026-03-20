@@ -159,6 +159,7 @@ This function triggers on Pub/Sub messages and writes health metrics to Cloud Mo
 
 ```python
 # main.py - Cloud Function triggered by Pub/Sub messages
+
 import base64
 import json
 import time

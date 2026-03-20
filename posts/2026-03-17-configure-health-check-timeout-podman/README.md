@@ -20,6 +20,7 @@ Use the `--health-timeout` flag to specify the maximum allowed duration:
 
 ```bash
 # Allow up to 10 seconds for the health check to complete
+
 podman run -d \
   --name my-service \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

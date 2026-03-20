@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: my_servers is a list, not a single server
+
 vars:
   my_servers:
     - name: web1

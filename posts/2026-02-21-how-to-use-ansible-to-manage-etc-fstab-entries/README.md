@@ -30,6 +30,7 @@ Here is how to add a filesystem mount that takes effect immediately and persists
 
 ```yaml
 # Mount a data disk and add to fstab
+
 - name: Mount data volume
   ansible.posix.mount:
     path: /data

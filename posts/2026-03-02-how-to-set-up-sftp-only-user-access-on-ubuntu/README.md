@@ -26,6 +26,7 @@ The `internal-sftp` command is a built-in SFTP implementation in OpenSSH that do
 
 ```bash
 # Create a user with no interactive shell
+
 sudo useradd -m -s /usr/sbin/nologin sftpuser1
 
 # Set the user's password

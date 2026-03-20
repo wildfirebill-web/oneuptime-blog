@@ -22,6 +22,7 @@ You need a Quay.io account and a local image to push.
 # Create a Quay.io account at https://quay.io if you don't have one
 
 # Have an image ready
+
 podman build -t myapp:v1.0.0 .
 ```
 

@@ -55,6 +55,7 @@ Creating multiple EC2 instances demonstrates the basic count pattern.
 
 ```hcl
 # Define the number of instances to create
+
 variable "instance_count" {
   description = "Number of EC2 instances to provision"
   type        = number

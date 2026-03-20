@@ -118,6 +118,7 @@ Consumer<String> keyShared = client.newConsumer(Schema.STRING)
 
 ```bash
 # Kafka uses ACLs for isolation
+
 kafka-acls.sh --bootstrap-server localhost:9092 \
   --add --allow-principal User:tenant1 \
   --operation All \

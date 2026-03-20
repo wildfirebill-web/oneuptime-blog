@@ -77,6 +77,7 @@ Kustomize is built into kubectl and works well for managing environment-specific
 
 ```yaml
 # base/mesh-config/peer-authentication.yaml
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

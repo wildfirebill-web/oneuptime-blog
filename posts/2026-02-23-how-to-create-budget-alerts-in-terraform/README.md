@@ -43,6 +43,7 @@ The simplest budget type tracks total account spending:
 
 ```hcl
 # Monthly cost budget for the entire account
+
 resource "aws_budgets_budget" "monthly_total" {
   name         = "monthly-total-cost"
   budget_type  = "COST"

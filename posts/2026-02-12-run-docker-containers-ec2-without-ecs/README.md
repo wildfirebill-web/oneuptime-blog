@@ -20,6 +20,7 @@ Install and start Docker on Amazon Linux 2023:
 
 ```bash
 # Update the system
+
 sudo yum update -y
 
 # Install Docker

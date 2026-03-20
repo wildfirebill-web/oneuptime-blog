@@ -14,6 +14,7 @@ When a span starts, `on_start` is called with a mutable span reference. When a s
 
 ```python
 # on_start: span is writable - you can set attributes
+
 def on_start(self, span, parent_context=None):
     span.set_attribute("my.key", "my.value")  # Works
 

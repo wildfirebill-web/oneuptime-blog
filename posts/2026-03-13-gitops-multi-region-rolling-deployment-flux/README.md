@@ -45,6 +45,7 @@ Each regional overlay sets the image tag. During a rollout you update the tags o
 
 ```yaml
 # apps/my-app/us-east-1/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

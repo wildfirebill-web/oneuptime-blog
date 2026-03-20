@@ -26,6 +26,7 @@ This guide covers deploying Argo Events using Flux CD and building a sample even
 
 ```yaml
 # clusters/my-cluster/argo-events/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

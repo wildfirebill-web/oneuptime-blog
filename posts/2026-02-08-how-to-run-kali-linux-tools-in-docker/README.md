@@ -33,6 +33,7 @@ Kali Linux maintains official Docker images on Docker Hub.
 
 ```bash
 # Pull the base Kali image (minimal, ~300MB)
+
 docker pull kalilinux/kali-rolling
 
 # Pull and run an interactive Kali shell

@@ -42,6 +42,7 @@ First, install the required packages:
 
 ```bash
 # Install the OpenTelemetry SDK and the logging instrumentation
+
 pip install opentelemetry-api \
             opentelemetry-sdk \
             opentelemetry-instrumentation-logging

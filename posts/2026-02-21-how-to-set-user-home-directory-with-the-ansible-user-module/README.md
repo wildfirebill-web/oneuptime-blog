@@ -16,6 +16,7 @@ When you create a user without specifying a home directory, the system follows i
 
 ```yaml
 # default-home.yml - User with default home directory
+
 - name: Create user with default home
   hosts: all
   become: yes

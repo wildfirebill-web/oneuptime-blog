@@ -66,6 +66,7 @@ Create the master configuration file with settings optimized for replication:
 
 ```conf
 # Network binding - bind to all interfaces for cluster communication
+
 bind 0.0.0.0
 
 # Default Redis port for master

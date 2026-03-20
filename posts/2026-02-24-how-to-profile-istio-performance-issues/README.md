@@ -30,6 +30,7 @@ Check the Envoy access log timing:
 
 ```bash
 # Enable detailed access logging temporarily
+
 kubectl apply -f - <<EOF
 apiVersion: telemetry.istio.io/v1alpha1
 kind: Telemetry

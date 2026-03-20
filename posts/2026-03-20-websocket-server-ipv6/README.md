@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, IPv6, Node.js, Real-time, Networking
+Tags: WebSocket, IPv6, Node.js, Real-Time, Networking
 
 Description: Configure WebSocket servers in Node.js and Python to accept connections over IPv6, including proper address handling and dual-stack configuration.
 
@@ -18,7 +18,7 @@ const WebSocket = require('ws');
 
 // Create WebSocket server on all IPv6 interfaces
 const wss = new WebSocket.Server({
-    host: '::',   // IPv6 wildcard — accepts both IPv4 and IPv6 on most systems
+    host: '::',   // IPv6 wildcard - accepts both IPv4 and IPv6 on most systems
     port: 8080,
 });
 
@@ -84,13 +84,14 @@ wss.on('connection', (ws, req) => {
 
 ```python
 # server.py
+
 import asyncio
 import websockets
 import json
 
 async def handler(websocket):
     """Handle incoming WebSocket connections over IPv6."""
-    # Get client address — websocket.remote_address is (host, port) tuple
+    # Get client address - websocket.remote_address is (host, port) tuple
     # For IPv6: ('2001:db8::1', 12345, 0, 0)
     remote = websocket.remote_address
     client_ip = remote[0] if remote else 'unknown'

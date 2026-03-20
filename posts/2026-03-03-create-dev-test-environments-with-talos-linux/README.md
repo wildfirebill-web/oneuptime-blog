@@ -30,6 +30,7 @@ For individual developers, the Docker provider is the fastest path to a local en
 
 ```bash
 # Create a development cluster
+
 talosctl cluster create \
   --provisioner docker \
   --name dev-$(whoami) \
@@ -272,7 +273,7 @@ export KUBECONFIG=~/.kube/dev-config
 skaffold dev
 ```
 
-## Resource Management
+Resource Management
 
 Dev environments can consume significant resources on the host machine. Implement guardrails:
 

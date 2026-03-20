@@ -44,6 +44,7 @@ Before setting resources, measure actual usage. Deploy workloads with generous l
 
 ```bash
 # Check current resource usage for a deployment
+
 kubectl top pods -n production -l app=myapp
 
 # View historical resource usage from metrics-server

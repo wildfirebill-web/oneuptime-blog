@@ -26,6 +26,7 @@ Install required tools:
 
 ```bash
 # Install kind for local Kubernetes
+
 brew install kind  # macOS
 # OR
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64

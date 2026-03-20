@@ -31,6 +31,7 @@ Before rolling back, confirm the upgrade caused the issue:
 
 ```bash
 # Check release status
+
 helm status my-app -n default
 
 # View release history

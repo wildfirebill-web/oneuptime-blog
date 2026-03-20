@@ -35,6 +35,7 @@ Each component is responsible for different things:
 
 ```bash
 # API Server logs
+
 kubectl logs -n argocd deploy/argocd-server --tail=100
 
 # Application Controller logs

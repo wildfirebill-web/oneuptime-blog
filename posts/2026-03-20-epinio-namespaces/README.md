@@ -21,6 +21,7 @@ How to Configure Epinio Namespaces demonstrates how Epinio simplifies applicatio
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

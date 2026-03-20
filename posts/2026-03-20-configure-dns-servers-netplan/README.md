@@ -1,4 +1,4 @@
-# How to Configure DNS Servers with Netplan
+# How to Configure DNS Servers with Netplan - Servers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,6 +17,7 @@ Netplan is the default network configuration tool on Ubuntu 20.04+. DNS settings
 ```bash
 ls /etc/netplan/
 # 00-installer-config.yaml  or  01-netcfg.yaml
+
 ```
 
 ---

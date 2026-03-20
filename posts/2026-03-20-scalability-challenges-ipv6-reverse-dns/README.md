@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Reverse DNS, Scalability, ip6.arpa, DNS Operations
+Tags: IPv6, Reverse DNS, Scalability, Ip6.arpa, DNS Operations
 
 Description: An analysis of why IPv6 reverse DNS doesn't scale the same way as IPv4 rDNS and what strategies organizations and ISPs use to manage the massive address space.
 
 ## The Scale Problem
 
-IPv4 has approximately 4 billion addresses. IPv6 has 340 undecillion (3.4 × 10^38) addresses. A single organization with a /48 IPv6 prefix has 2^80 possible addresses — roughly a trillion trillion addresses. Creating individual PTR records for all possible IPv6 addresses in a prefix is physically impossible.
+IPv4 has approximately 4 billion addresses. IPv6 has 340 undecillion (3.4 × 10^38) addresses. A single organization with a /48 IPv6 prefix has 2^80 possible addresses - roughly a trillion trillion addresses. Creating individual PTR records for all possible IPv6 addresses in a prefix is physically impossible.
 
 ## IPv4 vs IPv6 Reverse DNS Scale Comparison
 
@@ -30,7 +30,7 @@ IPv6 networks are intentionally sparsely addressed. A /64 subnet has 2^64 addres
 
 IPv6 SLAAC and privacy extensions generate addresses automatically and change them frequently. A single device may use many different source IPv6 addresses over time:
 
-```
+```text
 Stable SLAAC:   2001:db8:1::204:75ff:fead:4a76  (permanent)
 Temporary addr: 2001:db8:1::6b31:2a4c:ab12:cd56  (changes daily)
 Another temp:   2001:db8:1::8f2a:1234:5678:90ab  (previous day's)
@@ -46,6 +46,7 @@ For DHCPv6 deployments, addresses change on lease expiration. Dynamic PTR record
 
 ```bash
 # ISC DHCPv6 can be configured to update DNS dynamically
+
 # /etc/dhcp/dhcpd6.conf
 
 ddns-updates on;
@@ -71,7 +72,7 @@ A fully populated reverse zone for a /48 would be enormous. Even a moderately po
 
 Unlike IPv4 which can delegate at arbitrary CIDR boundaries using RFC 2317 CNAME delegation, IPv6 rDNS delegation is strictly limited to nibble boundaries (every 4 bits):
 
-```
+```text
 Possible delegation sizes:
 /4, /8, /12, /16, /20, /24, /28, /32, /36, /40, /44, /48, /52, /56, /60, /64...
 

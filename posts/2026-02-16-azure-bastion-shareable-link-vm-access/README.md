@@ -24,6 +24,7 @@ If you do not already have Bastion deployed, let us set it up.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-bastion \
   --location eastus

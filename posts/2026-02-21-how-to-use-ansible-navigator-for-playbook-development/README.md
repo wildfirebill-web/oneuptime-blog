@@ -16,6 +16,7 @@ Start by installing ansible-navigator and configuring it for development work:
 
 ```bash
 # Install ansible-navigator
+
 pip install ansible-navigator
 
 # Create a project-level configuration

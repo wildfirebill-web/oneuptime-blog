@@ -16,6 +16,7 @@ This is the simplest way to expose Portainer without a cloud load balancer.
 
 ```bash
 # Install Portainer with NodePort service type
+
 helm install portainer portainer/portainer \
   --namespace portainer \
   --create-namespace \

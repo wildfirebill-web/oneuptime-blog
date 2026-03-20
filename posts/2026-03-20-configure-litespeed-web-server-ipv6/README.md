@@ -14,6 +14,7 @@ LiteSpeed Web Server supports IPv6 and HTTP/3 out of the box. Configuring it for
 
 ```bash
 # OpenLiteSpeed (open source version)
+
 sudo apt install wget curl -y
 
 # Add OpenLiteSpeed repository

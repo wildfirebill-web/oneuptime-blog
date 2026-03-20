@@ -48,6 +48,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Shared resource for both metrics and traces
+
 resource = Resource.create({
     "service.name": "llm-cost-tracker",
     "service.version": "1.0.0",

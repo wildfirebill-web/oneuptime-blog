@@ -41,6 +41,7 @@ The Lambda security group needs outbound access to the MSK broker ports. The MSK
 
 ```bash
 # Allow Lambda to reach MSK brokers (IAM auth port)
+
 aws ec2 authorize-security-group-egress \
   --group-id sg-lambda-msk \
   --protocol tcp \

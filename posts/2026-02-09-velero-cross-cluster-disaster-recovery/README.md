@@ -32,6 +32,7 @@ Install Velero on your primary production cluster:
 
 ```bash
 # Install Velero on primary cluster
+
 velero install \
   --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0 \

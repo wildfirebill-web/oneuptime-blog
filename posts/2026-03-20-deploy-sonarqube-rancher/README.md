@@ -1,8 +1,8 @@
-# How to Deploy SonarQube on Rancher
+# How to Deploy SonarQube on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, sonarqube, code-quality, kubernetes, helm
+Tags: Rancher, SonarQube, Code-quality, Kubernetes, Helm
 
 Description: Step-by-step guide to deploying SonarQube on Rancher for continuous code quality analysis.
 
@@ -24,6 +24,7 @@ How to Deploy SonarQube on Rancher on Rancher gives your team a production-ready
 kubectl create namespace sonarqube
 
 # Configure project in Rancher
+
 kubectl annotate namespace sonarqube   field.cattle.io/projectId=YOUR_PROJECT_ID
 ```
 

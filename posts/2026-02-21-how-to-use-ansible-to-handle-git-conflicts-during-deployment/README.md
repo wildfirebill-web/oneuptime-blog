@@ -24,6 +24,7 @@ Check the state of the working directory before attempting deployment:
 
 ```yaml
 # playbook-detect-conflicts.yml
+
 # Checks for local modifications before attempting a Git pull
 - name: Pre-deployment conflict check
   hosts: webservers

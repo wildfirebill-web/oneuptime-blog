@@ -16,6 +16,7 @@ In plain Terraform, you use a module by calling it in a `.tf` file:
 
 ```hcl
 # Plain Terraform - you'd copy this for every environment
+
 module "vpc" {
   source = "git::https://github.com/org/modules.git//vpc?ref=v1.2.0"
 

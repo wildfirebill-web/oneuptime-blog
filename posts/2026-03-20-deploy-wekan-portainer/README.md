@@ -1,4 +1,4 @@
-# How to Deploy Wekan (Kanban Board) via Portainer
+# How to Deploy Wekan (Kanban Board) via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Wekan open-source kanban board using Portainer as a self-hos
 
 ## Introduction
 
-Wekan is an open-source, self-hosted Kanban board built with Meteor and MongoDB. It supports boards, lists, cards, labels, checklists, due dates, and file attachments — a Trello-compatible alternative for teams.
+Wekan is an open-source, self-hosted Kanban board built with Meteor and MongoDB. It supports boards, lists, cards, labels, checklists, due dates, and file attachments - a Trello-compatible alternative for teams.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Wekan
+
 version: "3.8"
 
 services:
@@ -71,7 +72,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 WEKAN_DOMAIN=wekan.yourdomain.com
 ```
 
@@ -125,4 +126,4 @@ docker exec wekan_mongo mongorestore /tmp/restore_backup
 
 ## Conclusion
 
-Wekan requires `ROOT_URL` to be set to the exact URL used to access the application — incorrect values cause login and redirect issues. The `--oplogSize 128` MongoDB flag limits the oplog to 128 MB for single-node deployments. For production, configure SMTP via `MAIL_URL=smtp://user:pass@host:port` and `MAIL_FROM=noreply@yourdomain.com` for email notifications.
+Wekan requires `ROOT_URL` to be set to the exact URL used to access the application - incorrect values cause login and redirect issues. The `--oplogSize 128` MongoDB flag limits the oplog to 128 MB for single-node deployments. For production, configure SMTP via `MAIL_URL=smtp://user:pass@host:port` and `MAIL_FROM=noreply@yourdomain.com` for email notifications.

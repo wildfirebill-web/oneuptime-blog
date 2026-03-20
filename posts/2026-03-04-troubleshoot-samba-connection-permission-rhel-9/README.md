@@ -18,6 +18,7 @@ Samba problems typically fall into three categories: the client cannot connect a
 
 ```bash
 # Verify smbd and nmbd are active
+
 sudo systemctl status smb nmb
 
 # If not running, start them

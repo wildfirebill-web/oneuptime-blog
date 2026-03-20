@@ -16,6 +16,7 @@ You can search for RHEL AMIs directly from the AWS CLI:
 
 ```bash
 # List available official RHEL PAYG AMIs in your region
+
 aws ec2 describe-images \
   --owners 309956199498 \
   --filters "Name=name,Values=RHEL-9*" \

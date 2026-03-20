@@ -32,6 +32,7 @@ Remote functions use BigQuery connections to reach external services. The connec
 
 ```bash
 # List your BigQuery connections
+
 bq ls --connection --project_id=my-project --location=US
 
 # Show connection details to find the service account

@@ -47,6 +47,7 @@ Use a CI pipeline to validate and apply Calico configuration changes:
 
 ```yaml
 # .github/workflows/calico-deploy.yaml
+
 name: Deploy Calico Config
 on:
   push:

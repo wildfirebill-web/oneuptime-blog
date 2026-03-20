@@ -35,6 +35,7 @@ This condition typically occurs in two scenarios: Calico was removed without a r
 ```bash
 kubectl describe pod <stuck-pod-name> | grep -A 10 "Warning\|Event"
 # Look for: failed to find plugin "calico"
+
 ```
 
 **Step 2: Check CNI config on the node**

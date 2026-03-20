@@ -38,6 +38,7 @@ Start by documenting your requirements in a policy document.
 
 ```yaml
 # image-lifecycle-policy.yaml
+
 # Defines retention and promotion rules for Docker images
 
 policies:

@@ -17,7 +17,7 @@ IPv6 accounting extends this with additional attributes to log the assigned IPv6
 
 ## Accounting Attributes for IPv6 Sessions
 
-```
+```text
 Typical Accounting-Request (Start) with IPv6:
 
   Acct-Status-Type:       Start
@@ -45,8 +45,9 @@ CREATE INDEX idx_framedipv6 ON radacct(framedipv6prefix);
 CREATE INDEX idx_delegatedipv6 ON radacct(delegatedipv6prefix);
 ```
 
-```
+```sql
 # /etc/freeradius/3.0/mods-config/sql/main/mysql/queries.conf
+
 # Update accounting queries to include IPv6 attributes
 
 accounting_start_query = "\
@@ -69,7 +70,7 @@ accounting_start_query = "\
 
 ## FreeRADIUS: Detail File Accounting
 
-```
+```text
 # /etc/freeradius/3.0/mods-enabled/detail
 # Log all accounting to detail files (including IPv6 attrs)
 
@@ -186,8 +187,8 @@ EOF
 
 ## Cisco NAS: Accounting Configuration
 
-```
-! Cisco BNG — send accounting with IPv6 attributes
+```text
+! Cisco BNG - send accounting with IPv6 attributes
 
 aaa accounting network default start-stop group RADIUS_GRP
 
@@ -205,4 +206,4 @@ show aaa accounting
 
 ## Conclusion
 
-RADIUS IPv6 accounting captures session details including `Framed-IPv6-Prefix` and `Delegated-IPv6-Prefix` in Start, Interim-Update, and Stop packets. Extend the FreeRADIUS SQL schema with `nasipv6address`, `framedipv6prefix`, and `delegatedipv6prefix` columns, and update accounting queries to populate them. Test with `radclient` sending accounting packets to UDP port 1813. Use SQL queries on `radacct` for usage reports — remember to account for Gigawords overflow (`acctinputgigawords * 4294967296`) for high-bandwidth sessions. Monitor for accounting gaps (sessions without Stop records and no recent interim update) which indicate NAS reachability issues.
+RADIUS IPv6 accounting captures session details including `Framed-IPv6-Prefix` and `Delegated-IPv6-Prefix` in Start, Interim-Update, and Stop packets. Extend the FreeRADIUS SQL schema with `nasipv6address`, `framedipv6prefix`, and `delegatedipv6prefix` columns, and update accounting queries to populate them. Test with `radclient` sending accounting packets to UDP port 1813. Use SQL queries on `radacct` for usage reports - remember to account for Gigawords overflow (`acctinputgigawords * 4294967296`) for high-bandwidth sessions. Monitor for accounting gaps (sessions without Stop records and no recent interim update) which indicate NAS reachability issues.

@@ -65,6 +65,7 @@ For development clusters, Longhorn can store data on the existing EPHEMERAL part
 
 ```yaml
 # No extra disk configuration needed
+
 # Longhorn will use /var/lib/longhorn on the EPHEMERAL partition
 ```
 

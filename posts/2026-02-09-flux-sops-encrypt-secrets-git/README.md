@@ -30,6 +30,7 @@ Install the SOPS CLI:
 
 ```bash
 # macOS
+
 brew install sops
 
 # Linux

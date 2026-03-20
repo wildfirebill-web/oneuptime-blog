@@ -25,6 +25,7 @@ Let's create sample data for our examples:
 
 ```bash
 # Create index with sample e-commerce data
+
 curl -X PUT "localhost:9200/orders" -H 'Content-Type: application/json' -d'
 {
   "mappings": {

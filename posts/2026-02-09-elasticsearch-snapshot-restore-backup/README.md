@@ -29,6 +29,7 @@ Set up AWS S3 for snapshots:
 
 ```bash
 # Install repository-s3 plugin (usually pre-installed)
+
 kubectl exec -it elasticsearch-master-0 -n logging -- \
   bin/elasticsearch-plugin install repository-s3
 

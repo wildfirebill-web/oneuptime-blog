@@ -28,6 +28,7 @@ The `vars` lookup takes one or more variable names as strings and returns their 
 
 ```yaml
 # vars-lookup-basic.yml - Dynamic variable reference
+
 ---
 - name: Demonstrate vars lookup
   hosts: localhost

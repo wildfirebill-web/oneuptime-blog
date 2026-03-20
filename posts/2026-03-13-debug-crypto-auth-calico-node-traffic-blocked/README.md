@@ -37,6 +37,7 @@ spec:
 
 ```bash
 # Apply configuration
+
 calicoctl apply -f wireguard-config.yaml
 
 # Verify on each node

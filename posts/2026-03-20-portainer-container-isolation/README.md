@@ -1,8 +1,8 @@
-# How to Configure Container Isolation in Portainer
+# How to Configure Container Isolation in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Container Isolation, Security, Docker, Network Isolation, Namespace
+Tags: Portainer, Container Isolation, Security, Docker, Network Isolation, Namespaces
 
 Description: Learn how to configure container isolation in Portainer using network segmentation, user namespaces, PID isolation, and IPC isolation to prevent containers from affecting each other.
 
@@ -66,6 +66,7 @@ Verify remapping is active:
 ```bash
 docker info | grep -A 5 "Runtimes"
 # Should show: userns-remap: default
+
 ```
 
 ## PID Namespace Isolation
@@ -82,7 +83,7 @@ To prevent containers from seeing each other's processes, ensure they don't shar
 ```yaml
 services:
   api:
-    # Do NOT use: pid: "host"  — this shares the host's PID namespace
+    # Do NOT use: pid: "host"  - this shares the host's PID namespace
     image: my-api:latest
 ```
 

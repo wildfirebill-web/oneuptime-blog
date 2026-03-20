@@ -30,6 +30,7 @@ The most important decision is whether your default rule should allow or deny. F
 
 ```bash
 # Default: allow all traffic (standard for public apps)
+
 gcloud app firewall-rules update default \
   --action=ALLOW \
   --project=your-project-id

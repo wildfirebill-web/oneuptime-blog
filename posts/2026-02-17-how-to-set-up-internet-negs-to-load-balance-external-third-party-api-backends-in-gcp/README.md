@@ -32,6 +32,7 @@ For most external services, you will use an FQDN-based endpoint:
 
 ```bash
 # Create a global internet NEG
+
 gcloud compute network-endpoint-groups create third-party-neg \
     --network-endpoint-type=INTERNET_FQDN_PORT \
     --global

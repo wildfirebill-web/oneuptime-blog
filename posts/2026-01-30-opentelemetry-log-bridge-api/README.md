@@ -1235,6 +1235,7 @@ export { loggerProvider, shutdown };
 
 ```bash
 # Required
+
 export ONEUPTIME_TOKEN="your-token-here"
 export OTEL_EXPORTER_OTLP_LOGS_ENDPOINT="https://oneuptime.com/otlp/v1/logs"
 

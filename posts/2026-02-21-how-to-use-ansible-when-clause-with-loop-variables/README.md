@@ -18,6 +18,7 @@ Here is a straightforward example:
 
 ```yaml
 # Install only packages that are marked as required
+
 - name: Install required packages only
   ansible.builtin.apt:
     name: "{{ item.name }}"

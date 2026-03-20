@@ -30,6 +30,7 @@ The simplest approach uses a dictionary. This works well for small examples with
 import pandas as pd
 
 # Create a simple DataFrame from a dictionary
+
 # Each key becomes a column name, values become rows
 df = pd.DataFrame({
     'name': ['Alice', 'Bob', 'Charlie'],

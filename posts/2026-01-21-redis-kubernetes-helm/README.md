@@ -28,6 +28,7 @@ If you do not have Helm installed:
 
 ```bash
 # macOS
+
 brew install helm
 
 # Linux

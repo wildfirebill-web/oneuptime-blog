@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Feature Parity, Comparison, Infrastructure as Code, Migration
 
-Description: Understand what features OpenTofu and Terraform share, where they've diverged, and what OpenTofu-exclusive features are available — helping you evaluate the migration path and capabilities.
+Description: Understand what features OpenTofu and Terraform share, where they've diverged, and what OpenTofu-exclusive features are available - helping you evaluate the migration path and capabilities.
 
 ## Introduction
 
@@ -18,6 +18,7 @@ Everything from Terraform ≤ 1.5.7 works identically:
 # All of these work identically in both tools
 
 # Resources, data sources, providers
+
 resource "aws_instance" "web" { /* ... */ }
 data "aws_ami" "latest" { /* ... */ }
 

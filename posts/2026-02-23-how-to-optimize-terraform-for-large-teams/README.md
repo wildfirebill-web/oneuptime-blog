@@ -46,6 +46,7 @@ Each directory has its own state file. Engineers working on networking do not bl
 
 ```hcl
 # networking/main.tf
+
 terraform {
   backend "s3" {
     bucket = "company-terraform-state"
@@ -118,7 +119,7 @@ For large teams, your Git workflow matters as much as your Terraform code struct
 
 Require plan output in pull requests so reviewers can see exactly what will change:
 
-```yaml
+````yaml
 # GitHub Actions workflow for Terraform PRs
 name: Terraform Plan
 on:
@@ -150,9 +151,9 @@ jobs:
         with:
           script: |
             const output = `#### Terraform Plan
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
             `;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -160,7 +161,7 @@ jobs:
               repo: context.repo.repo,
               body: output
             });
-```
+````
 
 ## Use Workspaces Thoughtfully
 

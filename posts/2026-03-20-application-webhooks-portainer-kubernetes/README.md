@@ -8,7 +8,7 @@ Description: Learn how to configure application webhooks in Portainer to trigger
 
 ## What Are Application Webhooks?
 
-Portainer can expose a webhook URL for any Kubernetes application. When an external system (like a CI/CD pipeline) calls this URL, Portainer triggers a redeploy — pulling the latest version of the container image. This enables automated deployments without direct Portainer API access.
+Portainer can expose a webhook URL for any Kubernetes application. When an external system (like a CI/CD pipeline) calls this URL, Portainer triggers a redeploy - pulling the latest version of the container image. This enables automated deployments without direct Portainer API access.
 
 ## Enabling a Webhook in Portainer
 
@@ -20,7 +20,7 @@ Portainer can expose a webhook URL for any Kubernetes application. When an exter
 6. Copy the generated webhook URL.
 
 The URL looks like:
-```
+```text
 https://portainer.mycompany.com/api/webhooks/abc123def456...
 ```
 
@@ -30,6 +30,7 @@ Call the webhook URL with an HTTP POST request to trigger a redeploy:
 
 ```bash
 # Trigger a redeploy via curl
+
 curl -X POST \
   "https://portainer.mycompany.com/api/webhooks/abc123def456..."
 

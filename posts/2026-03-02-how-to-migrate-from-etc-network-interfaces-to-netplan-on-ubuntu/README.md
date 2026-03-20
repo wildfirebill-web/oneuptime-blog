@@ -20,6 +20,7 @@ Before touching anything:
 
 ```bash
 # Check what is currently managing networking
+
 systemctl status networking
 systemctl status systemd-networkd
 systemctl status NetworkManager

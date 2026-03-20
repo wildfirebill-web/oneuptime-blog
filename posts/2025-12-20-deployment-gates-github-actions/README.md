@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Deployment, Gates, Approval, Environment, DevOps
+Tags: GitHub Actions, CI/CD, Deployment, Gates, Approval, Environments, DevOps
 
 Description: Learn how to implement deployment gates in GitHub Actions using environments, required reviewers, wait timers, and custom protection rules to ensure safe, controlled deployments to production.
 
@@ -35,6 +35,7 @@ Navigate to your repository Settings > Environments and create environments for 
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy
 
 on:

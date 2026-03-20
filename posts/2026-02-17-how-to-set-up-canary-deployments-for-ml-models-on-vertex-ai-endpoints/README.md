@@ -35,6 +35,7 @@ Start by deploying the new model alongside the existing production model with a 
 
 ```python
 # canary/deploy_canary.py
+
 from google.cloud import aiplatform
 import json
 

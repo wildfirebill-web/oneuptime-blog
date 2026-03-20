@@ -71,6 +71,7 @@ pip install faker
 
 ```python
 # test/factories/user_factory.py
+
 from faker import Faker
 from datetime import datetime, timedelta
 import random

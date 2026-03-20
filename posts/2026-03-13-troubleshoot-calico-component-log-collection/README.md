@@ -16,6 +16,7 @@ Calico log collection failures fall into two categories: logs that are not being
 
 ```bash
 # Check if calico-node pods are generating logs at all
+
 kubectl logs -n calico-system -l k8s-app=calico-node -c calico-node --tail=5
 
 # If empty: check the log level setting

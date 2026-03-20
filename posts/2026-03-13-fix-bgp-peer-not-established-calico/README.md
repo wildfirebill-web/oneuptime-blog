@@ -36,6 +36,7 @@ calicoctl get bgppeer -o yaml
 
 ```bash
 # Edit the BGPPeer resource with correct values
+
 calicoctl get bgppeer <peer-name> -o yaml > /tmp/bgppeer.yaml
 # Edit /tmp/bgppeer.yaml to fix peerIP and asNumber
 calicoctl apply -f /tmp/bgppeer.yaml

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Rate Limits, Providers, AWS, GitHub, Best Practices
+Tags: OpenTofu, Rate Limits, Provider, AWS, GitHub, Best Practices
 
 Description: Learn how to handle provider-specific rate limits in OpenTofu for AWS, GitHub, and other providers using retry configuration and request batching strategies.
 
@@ -31,6 +31,7 @@ Common AWS rate-limited services:
 
 ```bash
 # For IAM-heavy applies, reduce parallelism
+
 tofu apply -parallelism=3 -var-file=production.tfvars
 ```
 
@@ -147,4 +148,4 @@ TF_LOG=DEBUG tofu apply 2>&1 | grep -i "throttl\|rate limit\|429\|RequestThrottl
 
 ## Summary
 
-Provider rate limits require a combination of reduced parallelism, increased retry counts, request batching, and off-peak scheduling for large applies. Understanding each provider's specific limits and using cached data sources reduces unnecessary API calls — making large applies more reliable.
+Provider rate limits require a combination of reduced parallelism, increased retry counts, request batching, and off-peak scheduling for large applies. Understanding each provider's specific limits and using cached data sources reduces unnecessary API calls - making large applies more reliable.

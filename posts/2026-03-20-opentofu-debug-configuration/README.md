@@ -1,4 +1,4 @@
-# How to Debug OpenTofu Configuration Issues
+# How to Debug OpenTofu Configuration Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Learn how to debug OpenTofu configuration issues using console commands, logging
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

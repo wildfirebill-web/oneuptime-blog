@@ -83,6 +83,7 @@ Before resetting, capture what exists so you can verify recovery:
 
 ```bash
 # Save the list of all Flux resources
+
 flux get all -A > flux-state-before-reset.txt
 
 # Save the current cluster resources

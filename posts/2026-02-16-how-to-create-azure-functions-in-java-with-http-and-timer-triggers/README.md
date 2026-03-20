@@ -29,6 +29,7 @@ Azure Functions for Java uses Maven archetypes for project scaffolding.
 
 ```bash
 # Generate a new Azure Functions project
+
 mvn archetype:generate \
   -DarchetypeGroupId=com.microsoft.azure \
   -DarchetypeArtifactId=azure-functions-archetype \

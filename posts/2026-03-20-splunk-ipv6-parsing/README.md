@@ -21,6 +21,7 @@ Splunk's automatic field extraction often misidentifies IPv6 as multiple fields 
 
 ```ini
 # /opt/splunk/etc/system/local/props.conf
+
 # Extract IPv6 addresses from common log formats
 
 [syslog]
@@ -68,7 +69,7 @@ ff00::/8,multicast,Multicast
 
 ## SPL: IPv6 Search Patterns
 
-```
+```text
 | SPL queries for IPv6 analysis
 
 -- Search for all events with IPv6 source addresses
@@ -98,9 +99,9 @@ index=network
 
 ## SPL: IPv6 Subnet Matching
 
-```
+```text
 | Splunk doesn't natively support IPv6 CIDR matching
-| Use cidrmatch() — it works for IPv6 in Splunk 8.x+
+| Use cidrmatch() - it works for IPv6 in Splunk 8.x+
 
 index=firewall
 | where cidrmatch("2001:db8::/32", src_ip)
@@ -122,7 +123,7 @@ index=firewall
 
 ## IPv6 Address Expansion for Normalization
 
-```
+```text
 | Splunk eval: expand compressed IPv6 for consistent lookup
 
 index=network

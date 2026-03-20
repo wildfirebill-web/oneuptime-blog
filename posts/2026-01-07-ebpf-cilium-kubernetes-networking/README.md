@@ -128,6 +128,7 @@ The following command checks your kernel version to ensure compatibility:
 
 ```bash
 # Check your Linux kernel version
+
 # Cilium requires kernel 4.19+ for basic functionality
 # Kernel 5.4+ enables advanced features like socket-level load balancing
 uname -r

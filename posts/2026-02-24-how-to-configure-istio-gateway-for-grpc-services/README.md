@@ -243,6 +243,7 @@ export GATEWAY_IP=$(kubectl -n istio-system get service istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # With TLS
+
 grpcurl -d '{"name": "World"}' \
   -authority grpc.example.com \
   $GATEWAY_IP:443 \

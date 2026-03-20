@@ -1,8 +1,8 @@
-# How to Set Up Rancher for Media and Entertainment
+# How to Set Up Rancher for Media and Entertainment - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, media, entertainment, gpu, rendering, kubernetes, streaming
+Tags: Rancher, Media, Entertainment, GPU, Rendering, Kubernetes, Streaming
 
 Description: A guide to configuring Rancher for media and entertainment workloads, covering GPU-accelerated rendering, video transcoding, content delivery, and burst scaling.
 
@@ -12,7 +12,7 @@ Media and entertainment organizations use Kubernetes for video transcoding, real
 
 ## Architecture
 
-```
+```text
 Production Cluster (RKE2 + GPU nodes)
 ├── Video Transcoding Farm
 ├── Rendering Pipeline
@@ -35,6 +35,7 @@ Configure worker nodes for GPU-accelerated media workloads:
 
 ```bash
 # Install NVIDIA GPU Operator via Helm
+
 helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm install gpu-operator nvidia/gpu-operator \
   --namespace gpu-operator \

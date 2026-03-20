@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # View node labels
+
 kubectl get nodes --show-labels
 
 # Add label to node

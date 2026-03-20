@@ -48,6 +48,7 @@ Document the key route types operators will see:
 
 ```bash
 # Example route table entries and their meanings
+
 # Document these for your operations team
 
 # Local VM route - traffic to a VM on this compute node

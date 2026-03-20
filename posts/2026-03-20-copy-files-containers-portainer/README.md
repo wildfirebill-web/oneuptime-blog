@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Files, DevOps
+Tags: Portainer, Docker, Containers, File, DevOps
 
 Description: Use Portainer's interface and Docker commands to copy files between your host system and running containers.
 
@@ -39,6 +39,7 @@ Use the search and filter options in Portainer:
 
 ```bash
 # Using Docker CLI equivalent
+
 docker inspect container-name
 
 # View formatted output

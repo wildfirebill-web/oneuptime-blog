@@ -16,6 +16,7 @@ Group related variables into objects instead of flat lists.
 
 ```hcl
 # variables.tf
+
 variable "database" {
   description = "Database configuration"
   type = object({
@@ -54,7 +55,7 @@ variable "networking" {
 
 Split one large `.tfvars` into multiple focused files.
 
-```
+```text
 environments/prod/
 ├── database.tfvars
 ├── application.tfvars

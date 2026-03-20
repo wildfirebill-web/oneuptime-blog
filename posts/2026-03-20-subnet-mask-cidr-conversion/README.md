@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, CIDR, Subnet, Networking, ipaddress
+Tags: Python, IPv4, CIDR, Subnets, Networking, Ipaddress
 
 Description: Learn how to convert between dotted-decimal subnet masks and CIDR prefix lengths in Python, with validation, lookup tables, and edge case handling.
 
@@ -59,8 +59,8 @@ def is_valid_mask(mask: str) -> bool:
 
 print(is_valid_mask("255.255.255.0"))   # True
 print(is_valid_mask("255.255.255.128")) # True
-print(is_valid_mask("255.0.255.0"))     # False — non-contiguous
-print(is_valid_mask("255.255.256.0"))   # False — octet > 255
+print(is_valid_mask("255.0.255.0"))     # False - non-contiguous
+print(is_valid_mask("255.255.256.0"))   # False - octet > 255
 ```
 
 ## Lookup Table for All Common Masks
@@ -107,6 +107,7 @@ print(normalize_network("192.168.1.0/255.255.255.0"))
 
 print(normalize_network("10.0.0.5/8"))
 # {'network': '10.0.0.0', 'prefix': 8, 'mask': '255.0.0.0', ...}
+
 ```
 
 ## Conclusion

@@ -258,6 +258,7 @@ After updating the ConfigMap, verify links appear correctly:
 
 ```bash
 # Restart the ArgoCD server to pick up ConfigMap changes
+
 kubectl rollout restart deployment argocd-server -n argocd
 
 # Check the ConfigMap is applied

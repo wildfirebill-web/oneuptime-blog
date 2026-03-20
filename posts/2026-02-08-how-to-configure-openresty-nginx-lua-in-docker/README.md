@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, OpenResty, NGINX, Lua, Web Server, API Gateway, DevOps
+Tags: Docker, OpenResty, Nginx, Lua, Web Server, API Gateway, DevOps
 
 Description: Deploy OpenResty in Docker to extend Nginx with Lua scripting for custom API gateways, authentication, and dynamic routing
 
@@ -20,6 +20,7 @@ Real-world uses include API gateways (Kong is built on OpenResty), dynamic authe
 
 ```bash
 # Run OpenResty with a mounted configuration
+
 docker run -d \
   --name openresty \
   -p 8080:8080 \

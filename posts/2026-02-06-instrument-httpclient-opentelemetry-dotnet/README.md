@@ -45,6 +45,7 @@ Start by installing the required packages for HttpClient instrumentation.
 
 ```bash
 # Core OpenTelemetry packages
+
 dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Extensions.Hosting
 

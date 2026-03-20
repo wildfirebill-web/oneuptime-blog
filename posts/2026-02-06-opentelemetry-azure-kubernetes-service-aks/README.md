@@ -46,6 +46,7 @@ The OpenTelemetry Operator for Kubernetes manages Collector deployments and can 
 
 ```bash
 # Install cert-manager (required by the OpenTelemetry Operator)
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.yaml
 
 # Wait for cert-manager to be ready

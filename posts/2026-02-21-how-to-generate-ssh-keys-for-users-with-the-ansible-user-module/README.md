@@ -16,6 +16,7 @@ The `generate_ssh_key` parameter tells the `user` module to create an SSH key pa
 
 ```yaml
 # generate-ssh-key-basic.yml - Generate a basic SSH key pair
+
 - name: Generate SSH key for user
   hosts: all
   become: yes

@@ -1,8 +1,8 @@
-# How to Configure Container Ulimits in Portainer
+# How to Configure Container Ulimits in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Ulimits, Security, Performance
+Tags: Portainer, Docker, Ulimit, Security, Performance
 
 Description: Configure system resource limits (ulimits) for Docker containers in Portainer for security and performance tuning.
 
@@ -39,6 +39,7 @@ Use the search and filter options in Portainer:
 
 ```bash
 # Using Docker CLI equivalent
+
 docker inspect container-name
 
 # View formatted output

@@ -274,6 +274,7 @@ When services aren't resolving correctly:
 
 ```bash
 # Check what endpoints Envoy has for a service
+
 istioctl proxy-config endpoint my-pod --cluster "outbound|443||api.stripe.com"
 
 # Check the cluster configuration

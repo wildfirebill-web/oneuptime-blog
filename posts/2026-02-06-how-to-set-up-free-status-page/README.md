@@ -201,6 +201,7 @@ OneUptime provides a public API to programmatically fetch status page data:
 
 ```bash
 # Get overall status
+
 curl -X POST https://oneuptime.com/status-page-api/overview/:statusPageId
 
 # Get uptime data

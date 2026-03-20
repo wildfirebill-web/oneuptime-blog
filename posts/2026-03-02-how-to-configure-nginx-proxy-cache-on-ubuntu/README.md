@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, Caching, Web Server, Performance
+Tags: Ubuntu, Nginx, Caching, Web Server, Performance
 
 Description: Configure Nginx as a caching reverse proxy on Ubuntu to cache upstream responses, reduce backend load, and serve content faster to end users.
 
@@ -16,6 +16,7 @@ Nginx should be installed and running. The `proxy_cache` module is included in t
 
 ```bash
 # Install Nginx if not already installed
+
 sudo apt update
 sudo apt install nginx -y
 

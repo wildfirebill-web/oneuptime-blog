@@ -46,6 +46,7 @@ kubectl exec -n flux-system deploy/kustomize-controller -- \
 
 ```promql
 # Average reconciliation duration
+
 rate(gotk_reconcile_duration_seconds_sum{kind="Kustomization"}[10m])
 /
 rate(gotk_reconcile_duration_seconds_count{kind="Kustomization"}[10m])

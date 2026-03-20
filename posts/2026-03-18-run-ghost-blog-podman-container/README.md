@@ -20,6 +20,7 @@ Download the official Ghost image.
 
 ```bash
 # Pull the latest Ghost image
+
 podman pull docker.io/library/ghost:5
 
 # Verify the image

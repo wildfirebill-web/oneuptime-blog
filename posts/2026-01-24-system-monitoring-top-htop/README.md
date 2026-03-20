@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # Basic usage
+
 top
 
 # Start with specific update interval (seconds)

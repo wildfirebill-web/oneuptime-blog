@@ -41,6 +41,7 @@ For namespace-level control:
 
 ```bash
 # Create an imagePullSecret in a namespace
+
 kubectl create secret docker-registry registry-credentials \
   --docker-server=registry.mycompany.com \
   --docker-username=myuser \

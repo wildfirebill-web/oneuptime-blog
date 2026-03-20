@@ -27,6 +27,7 @@ The recommended approach on AKS is to use the `provider: azure` field, which int
 
 ```yaml
 # imagerepository-acr.yaml
+
 # Scan an Azure ACR image using native Azure provider authentication
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

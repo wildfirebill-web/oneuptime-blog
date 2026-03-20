@@ -16,6 +16,7 @@ The split filter divides a string by a specified delimiter:
 
 ```yaml
 # Split a comma-separated string into a list
+
 - name: Basic split
   ansible.builtin.debug:
     msg: "{{ 'web01,web02,web03,db01' | split(',') }}"

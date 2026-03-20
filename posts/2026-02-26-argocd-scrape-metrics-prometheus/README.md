@@ -49,6 +49,7 @@ For standalone Prometheus installations using a configuration file, add static s
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   # ArgoCD Application Controller
   - job_name: 'argocd-application-controller'

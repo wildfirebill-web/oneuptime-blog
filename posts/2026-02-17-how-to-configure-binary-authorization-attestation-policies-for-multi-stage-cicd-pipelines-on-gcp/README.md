@@ -37,6 +37,7 @@ You need a separate attestor for each stage of your pipeline. Each attestor has 
 
 ```bash
 # Create KMS keyring for attestation keys
+
 gcloud kms keyrings create binauthz-keys \
     --location=global
 

@@ -42,6 +42,7 @@ This is the most common error when Workload Identity is not properly configured.
 
 ```bash
 # Verify Workload Identity is enabled on the cluster
+
 gcloud container clusters describe my-cluster \
     --zone us-central1-a \
     --format="value(workloadIdentityConfig.workloadPool)"

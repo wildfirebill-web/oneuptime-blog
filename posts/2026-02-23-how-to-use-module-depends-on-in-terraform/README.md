@@ -22,6 +22,7 @@ The most common real-world case. You create an IAM role in one module and use it
 
 ```hcl
 # Module that creates IAM roles and policies
+
 module "iam" {
   source = "./modules/iam"
 

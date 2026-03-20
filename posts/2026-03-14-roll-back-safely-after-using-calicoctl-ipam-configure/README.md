@@ -22,6 +22,7 @@ IPAM configuration changes can have immediate effects on pod IP allocation. If e
 
 ```bash
 # Check current setting
+
 calicoctl ipam show --show-configuration
 
 # Revert to the previous setting

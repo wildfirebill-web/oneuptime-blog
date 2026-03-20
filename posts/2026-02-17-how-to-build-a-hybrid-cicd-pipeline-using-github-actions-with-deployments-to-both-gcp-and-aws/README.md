@@ -39,6 +39,7 @@ Set up workload identity federation for GitHub Actions:
 
 ```bash
 # Create a workload identity pool
+
 gcloud iam workload-identity-pools create github-pool \
   --location=global \
   --display-name="GitHub Actions Pool"

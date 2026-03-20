@@ -18,6 +18,7 @@ The most fundamental level is setting environment variables that most command-li
 
 ```yaml
 # configure-proxy.yml - Set system-wide proxy configuration
+
 ---
 - name: Configure system-wide proxy settings
   hosts: all

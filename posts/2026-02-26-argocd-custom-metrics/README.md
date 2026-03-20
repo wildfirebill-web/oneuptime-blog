@@ -18,6 +18,7 @@ Before creating custom metrics, understand what ArgoCD already provides:
 
 ```promql
 # Application health and sync status
+
 argocd_app_info{name, project, health_status, sync_status}
 
 # Sync operation counts

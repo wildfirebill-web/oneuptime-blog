@@ -77,6 +77,7 @@ Never trust client-provided role information.
 
 ```python
 # BAD: Role comes from user input
+
 @app.route('/api/register', methods=['POST'])
 def register():
     data = request.get_json()

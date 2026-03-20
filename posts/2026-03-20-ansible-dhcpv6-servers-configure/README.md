@@ -10,7 +10,7 @@ DHCPv6 provides stateful IPv6 address assignment and DNS configuration to client
 
 ## Playbook Structure
 
-```
+```text
 dhcpv6-role/
 ├── tasks/
 │   └── main.yml
@@ -26,6 +26,7 @@ dhcpv6-role/
 
 ```yaml
 # defaults/main.yml
+
 ---
 dhcpv6_interface: "eth0"
 dhcpv6_subnet: "2001:db8:1::/64"
@@ -75,7 +76,7 @@ dhcpv6_valid_lifetime: 7200
 
 ## DHCPv6 Configuration Template
 
-```
+```text
 # templates/dhcpd6.conf.j2 - ISC DHCPv6 server configuration
 # Managed by Ansible - do not edit manually
 

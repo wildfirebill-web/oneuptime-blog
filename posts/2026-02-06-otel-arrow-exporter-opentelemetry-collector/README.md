@@ -50,6 +50,7 @@ Here's a minimal configuration to get started with the OTel Arrow exporter:
 
 ```yaml
 # Basic OTel Arrow exporter configuration
+
 exporters:
   otelarrow:
     # The endpoint of the receiving collector with Arrow receiver

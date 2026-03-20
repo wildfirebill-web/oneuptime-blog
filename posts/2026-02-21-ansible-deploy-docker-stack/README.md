@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Docker, Swarm, Stack, Deployment
+Tags: Ansible, Docker, Swarm, Stacks, Deployment
 
 Description: Deploy and manage Docker Stacks on Swarm clusters using Ansible with compose files and the docker_stack module.
 
@@ -28,6 +28,7 @@ You need a running Docker Swarm cluster and the `community.docker` collection:
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 ```
 

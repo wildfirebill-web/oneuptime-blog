@@ -16,6 +16,7 @@ The first step in debugging any Ansible connection issue is increasing verbosity
 
 ```bash
 # Level 1: Basic output
+
 ansible all -m ping -v
 
 # Level 2: More detail

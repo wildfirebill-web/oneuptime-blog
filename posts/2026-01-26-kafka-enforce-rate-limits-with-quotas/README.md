@@ -43,6 +43,7 @@ Use `kafka-configs.sh` to configure quotas.
 
 ```bash
 # Set quota for a specific user
+
 # Limit user "analytics" to 50 MB/s produce, 100 MB/s consume
 kafka-configs.sh --alter \
   --entity-type users \

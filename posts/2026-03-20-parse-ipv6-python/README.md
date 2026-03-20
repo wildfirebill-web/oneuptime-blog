@@ -1,8 +1,8 @@
-# How to Parse IPv6 Addresses in Python
+# How to Parse IPv6 Addresses in Python - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Python, ipaddress, Parsing, Networking
+Tags: IPv6, Python, Ipaddress, Parsing, Networking
 
 Description: Parse, manipulate, and analyze IPv6 addresses in Python using the built-in ipaddress module, covering address normalization, prefix extraction, and type detection.
 
@@ -14,6 +14,7 @@ The `ipaddress` module (Python 3.3+) is the standard library for IPv6 parsing.
 import ipaddress
 
 # Parse a single IPv6 address
+
 addr = ipaddress.ip_address("2001:db8::1")
 print(addr)                   # 2001:db8::1 (normalized)
 print(addr.compressed)        # 2001:db8::1 (shortest form)
@@ -81,7 +82,7 @@ print(net.num_addresses)      # 79228162514264337593543950336
 addr = ipaddress.ip_address("2001:db8::1")
 print(addr in net)            # True
 
-# Subnets — split a /32 into /48s
+# Subnets - split a /32 into /48s
 subnets_48 = list(net.subnets(new_prefix=48))
 print(f"Number of /48s in a /32: {len(subnets_48)}")
 print(f"First /48: {subnets_48[0]}")

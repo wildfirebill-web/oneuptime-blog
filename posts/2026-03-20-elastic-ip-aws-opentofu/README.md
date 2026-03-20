@@ -8,7 +8,7 @@ Description: Learn how to allocate and associate AWS Elastic IP addresses with O
 
 ## Introduction
 
-Elastic IPs (EIPs) are static public IPv4 addresses that persist independently of instances. When an EC2 instance is stopped and restarted, its public IP changes—but an associated Elastic IP stays constant. This is critical for DNS records, firewall whitelists, and any system that references your instance by IP.
+Elastic IPs (EIPs) are static public IPv4 addresses that persist independently of instances. When an EC2 instance is stopped and restarted, its public IP changes-but an associated Elastic IP stays constant. This is critical for DNS records, firewall whitelists, and any system that references your instance by IP.
 
 ## Allocating an Elastic IP
 
@@ -60,9 +60,10 @@ AWS charges for EIPs that are allocated but not associated with a running resour
 
 ```hcl
 # Best practice: output the EIP so you can track and monitor it
+
 output "web_eip" {
   value       = aws_eip.web.public_ip
-  description = "Stable public IP for the web server — update DNS records to point here"
+  description = "Stable public IP for the web server - update DNS records to point here"
 }
 ```
 
@@ -100,4 +101,4 @@ output "eip_allocation_id" { value = aws_eip.web.id }
 
 ## Conclusion
 
-Elastic IPs are a simple but essential tool for maintaining stable IP addresses in AWS. Attach them to instances or NAT Gateways, export their addresses as outputs, and whitelist them in upstream systems. Avoid leaving EIPs unattached—they incur charges even when idle.
+Elastic IPs are a simple but essential tool for maintaining stable IP addresses in AWS. Attach them to instances or NAT Gateways, export their addresses as outputs, and whitelist them in upstream systems. Avoid leaving EIPs unattached-they incur charges even when idle.

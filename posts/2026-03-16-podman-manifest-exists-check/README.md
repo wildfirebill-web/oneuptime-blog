@@ -20,6 +20,7 @@ The `podman manifest exists` command checks if a manifest list exists in local s
 
 ```bash
 # Check if a manifest list exists
+
 podman manifest exists myapp:latest
 
 # Check the exit code

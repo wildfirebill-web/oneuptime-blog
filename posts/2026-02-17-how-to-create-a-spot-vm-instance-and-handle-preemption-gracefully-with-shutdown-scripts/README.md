@@ -18,6 +18,7 @@ Creating a Spot VM is as simple as adding the `--provisioning-model=SPOT` flag:
 
 ```bash
 # Create a Spot VM instance
+
 gcloud compute instances create my-spot-vm \
     --zone=us-central1-a \
     --machine-type=e2-medium \

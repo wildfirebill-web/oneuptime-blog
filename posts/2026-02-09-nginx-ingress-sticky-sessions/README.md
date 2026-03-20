@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, NGINX, Session Management
+Tags: Kubernetes, Nginx, Session Management
 
 Description: Learn how to configure sticky sessions and cookie-based session affinity in NGINX Ingress Controller to ensure users are routed to the same backend pod for stateful applications in Kubernetes.
 
@@ -29,6 +29,7 @@ Install NGINX Ingress Controller if not already present:
 
 ```bash
 # Using Helm
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

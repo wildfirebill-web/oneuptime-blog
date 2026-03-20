@@ -64,6 +64,7 @@ Here is how to set it using gcloud:
 
 ```bash
 # Set shared_buffers to 40% of instance RAM (for a 16GB instance, ~6.5GB)
+
 # This requires a database restart
 gcloud sql instances patch my-instance \
   --database-flags shared_buffers=6710886400

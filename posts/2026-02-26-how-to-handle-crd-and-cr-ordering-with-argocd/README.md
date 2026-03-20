@@ -31,6 +31,7 @@ Sync waves are the primary mechanism for ordering resources in ArgoCD. Resources
 
 ```yaml
 # Wave -1: Namespace (if needed)
+
 apiVersion: v1
 kind: Namespace
 metadata:

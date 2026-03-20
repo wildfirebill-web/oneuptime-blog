@@ -502,6 +502,7 @@ Deploy your instrumented application with the necessary environment variables:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -16,6 +16,7 @@ OIDC federation lets external identity providers (like GitHub Actions, GitLab CI
 
 ```bash
 # For GitHub Actions
+
 aws iam create-open-id-connect-provider   --url https://token.actions.githubusercontent.com   --client-id-list sts.amazonaws.com   --thumbprint-list 6938fd4d98bab03faadb97b34396831e3780aea1
 ```
 

@@ -48,6 +48,7 @@ spec:
 
 ```bash
 # Apply policy
+
 calicoctl apply -f avoid-mistakes-globalnetworkpolicy.yaml
 
 # Verify policy is active

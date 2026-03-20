@@ -174,6 +174,7 @@ Create a telemetry configuration module that sets up gRPC exporters for all sign
 
 ```python
 # telemetry.py
+
 import os
 import atexit
 from opentelemetry import trace, metrics

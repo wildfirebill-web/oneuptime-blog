@@ -22,6 +22,7 @@ The Capsule host needs:
 
 ```bash
 # Register the Capsule host to the Satellite Server
+
 sudo subscription-manager register --org="MyOrg" --activationkey="capsule-key"
 
 # Enable required repositories

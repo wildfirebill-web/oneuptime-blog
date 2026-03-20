@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: certbot, IPv6, ACME, Let's Encrypt, TLS, SSL, DevOps
+Tags: Certbot, IPv6, ACME, Let's Encrypt, TLS, SSL, DevOps
 
 Description: Configure certbot to perform ACME domain validation over IPv6, including binding preferences, challenge type selection, and dual-stack server considerations.
 
@@ -22,6 +22,7 @@ When Let's Encrypt validates your domain, it performs an HTTP request (for HTTP-
 
 ```bash
 # Verify AAAA record exists
+
 dig AAAA yourdomain.example.com +short
 
 # Check if port 80 is reachable over IPv6 from the internet
@@ -157,4 +158,4 @@ EOF
 chmod +x /etc/letsencrypt/renewal-hooks/post/reload-nginx.sh
 ```
 
-certbot's support for IPv6 is mature — with proper DNS configuration and the right challenge type, you can fully automate certificate issuance and renewal on any IPv6-enabled server.
+certbot's support for IPv6 is mature - with proper DNS configuration and the right challenge type, you can fully automate certificate issuance and renewal on any IPv6-enabled server.

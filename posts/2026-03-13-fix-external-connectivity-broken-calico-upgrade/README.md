@@ -32,6 +32,7 @@ A secondary but equally important fix is completing interrupted upgrades. When c
 
 ```bash
 # Get current IP pool configuration
+
 calicoctl get ippool -o yaml > /tmp/ippool-backup.yaml
 
 # Edit to re-enable natOutgoing

@@ -36,6 +36,7 @@ Here's a minimal configuration to send traces to Sentry. This example focuses on
 
 ```yaml
 # Receivers for collecting telemetry data
+
 receivers:
   otlp:
     protocols:

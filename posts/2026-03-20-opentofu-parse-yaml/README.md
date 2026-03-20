@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, YAML, yamldecode, Configuration, Helm, Kubernetes
+Tags: OpenTofu, YAML, Yamldecode, Configuration, Helm, Kubernetes
 
 Description: Learn how to parse YAML configuration files in OpenTofu using yamldecode to drive Kubernetes and Helm deployments from YAML-based configuration.
 
@@ -14,6 +14,7 @@ OpenTofu's `yamldecode` function parses YAML into HCL data structures, enabling 
 
 ```hcl
 # main.tf - Parse YAML configuration files
+
 locals {
   # Parse a YAML configuration file
   app_config = yamldecode(file("${path.module}/config/app.yaml"))

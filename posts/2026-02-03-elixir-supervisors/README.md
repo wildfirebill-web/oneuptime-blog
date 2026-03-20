@@ -71,6 +71,7 @@ Before diving into code, it helps to understand why Elixir takes this approach. 
 
 ```python
 # Python - defensive programming everywhere
+
 def process_order(order_id):
     try:
         order = fetch_order(order_id)

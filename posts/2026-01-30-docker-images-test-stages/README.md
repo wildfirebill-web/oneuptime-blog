@@ -46,6 +46,7 @@ The key insight is that Docker stops building when any stage fails. By placing t
 # syntax=docker/dockerfile:1
 
 # Stage 1: Install dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./

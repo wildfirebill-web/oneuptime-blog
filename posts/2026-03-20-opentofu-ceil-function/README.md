@@ -8,7 +8,7 @@ Description: Learn how to use the ceil function in OpenTofu to round numbers up 
 
 ## Introduction
 
-The `ceil` function in OpenTofu rounds a number up to the nearest whole integer. This is useful in infrastructure configurations where you need to ensure you always provision enough resources — for example, rounding up the number of nodes needed to handle a given load.
+The `ceil` function in OpenTofu rounds a number up to the nearest whole integer. This is useful in infrastructure configurations where you need to ensure you always provision enough resources - for example, rounding up the number of nodes needed to handle a given load.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ The `ceil` function in OpenTofu rounds a number up to the nearest whole integer.
 ceil(number)
 ```
 
-- **number** — any numeric value (integer or float)
+- **number** - any numeric value (integer or float)
 - Returns the smallest integer greater than or equal to the input.
 
 ## Basic Examples

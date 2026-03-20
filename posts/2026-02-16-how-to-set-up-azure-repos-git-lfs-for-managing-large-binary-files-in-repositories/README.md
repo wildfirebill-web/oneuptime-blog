@@ -53,6 +53,7 @@ Git LFS is a separate extension that needs to be installed on each developer's m
 
 ```bash
 # macOS (using Homebrew)
+
 brew install git-lfs
 
 # Ubuntu/Debian

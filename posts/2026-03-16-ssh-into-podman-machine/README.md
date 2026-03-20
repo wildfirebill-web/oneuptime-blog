@@ -25,6 +25,7 @@ The Podman machine is a Linux virtual machine running behind the scenes on macOS
 
 ```bash
 # Ensure the machine is running
+
 podman machine start
 
 # SSH into the default machine

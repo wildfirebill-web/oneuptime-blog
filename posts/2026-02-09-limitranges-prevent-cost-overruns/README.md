@@ -26,6 +26,7 @@ Start with conservative limits that prevent extreme resource requests while allo
 
 ```yaml
 # limitrange-production.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

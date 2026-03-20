@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # Check for memory pressure on nodes
+
 kubectl describe nodes | grep -A5 "Conditions:"
 
 # Example output:

@@ -14,6 +14,7 @@ High availability on GCP uses Regional Managed Instance Groups to distribute VMs
 
 ```hcl
 # main.tf - Regional MIG for zone-distributed HA
+
 resource "google_compute_instance_template" "app" {
   name_prefix  = "ha-app-"
   machine_type = "n2-standard-4"

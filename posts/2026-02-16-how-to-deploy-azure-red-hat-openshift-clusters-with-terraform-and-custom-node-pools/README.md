@@ -45,6 +45,7 @@ You also need the Azure Red Hat OpenShift resource provider registered in your s
 
 ```bash
 # Register the resource provider
+
 az provider register --namespace Microsoft.RedHatOpenShift
 
 # Verify registration

@@ -134,6 +134,7 @@ takeHeapSnapshot();
 
 ```python
 # profiling_example.py
+
 import cProfile
 import pstats
 import io

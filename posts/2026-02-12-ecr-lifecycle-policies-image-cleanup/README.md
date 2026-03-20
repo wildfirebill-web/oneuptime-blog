@@ -251,6 +251,7 @@ Before applying a lifecycle policy, you can preview which images would be affect
 
 ```bash
 # Preview the policy's effect without actually deleting anything
+
 aws ecr get-lifecycle-policy-preview \
   --repository-name my-web-app
 

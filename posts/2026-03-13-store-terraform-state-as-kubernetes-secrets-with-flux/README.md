@@ -28,6 +28,7 @@ When no `backendConfig` is specified in a `Terraform` resource, the Tofu Control
 
 ```yaml
 # infrastructure/terraform/simple-state-example.yaml
+
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:

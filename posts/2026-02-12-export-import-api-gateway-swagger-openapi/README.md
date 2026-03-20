@@ -18,6 +18,7 @@ Export your API to OpenAPI 3.0:
 
 ```bash
 # Export as OpenAPI 3.0 JSON
+
 aws apigateway get-export \
   --rest-api-id abc123api \
   --stage-name prod \

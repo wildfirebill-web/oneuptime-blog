@@ -8,11 +8,11 @@ Description: Understand how TCP fast retransmit and fast recovery avoid waiting 
 
 ## Introduction
 
-Before fast retransmit and fast recovery, a lost TCP segment required waiting for the full RTO (Retransmission Timeout) — typically hundreds of milliseconds to seconds. Fast retransmit detects loss earlier using three duplicate ACKs, and fast recovery allows the connection to continue sending at reduced rate during retransmission rather than restarting from scratch.
+Before fast retransmit and fast recovery, a lost TCP segment required waiting for the full RTO (Retransmission Timeout) - typically hundreds of milliseconds to seconds. Fast retransmit detects loss earlier using three duplicate ACKs, and fast recovery allows the connection to continue sending at reduced rate during retransmission rather than restarting from scratch.
 
 ## Fast Retransmit: How It Works
 
-```
+```text
 Normal operation:
 Sender: segment 1, 2, 3, 4, 5
 ACK:           1, 2,    4, 4, 4  ← segment 3 was lost
@@ -25,7 +25,7 @@ After 3 duplicate ACKs of ACK=3:
 
 ## Fast Recovery: Continued Transmission
 
-```
+```text
 Without fast recovery (Reno original):
 After loss: CWND = 1 MSS → restart slow start from scratch
 
@@ -41,6 +41,7 @@ After 3 dup ACKs:
 
 ```bash
 # Capture to observe fast retransmit
+
 tcpdump -i eth0 -n -w /tmp/fastretrans.pcap 'tcp and host 10.20.0.5'
 
 # Analyze: look for same sequence number appearing twice
@@ -50,7 +51,7 @@ tshark -r /tmp/fastretrans.pcap -Y "tcp.analysis.fast_retransmission" \
 
 ## Wireshark Filters
 
-```
+```text
 # Fast retransmission (triggered by 3 dup ACKs)
 tcp.analysis.fast_retransmission
 

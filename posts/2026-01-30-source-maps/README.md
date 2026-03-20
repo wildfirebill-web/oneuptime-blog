@@ -411,6 +411,7 @@ Upload source maps to your error tracking service during deployment, but never s
 # deploy.sh - Upload source maps to Sentry
 
 # Build with hidden source maps
+
 npm run build
 
 # Upload to Sentry

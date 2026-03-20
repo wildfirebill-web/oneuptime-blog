@@ -49,6 +49,7 @@ For automated setup, use the gcloud CLI to run Airflow commands:
 
 ```bash
 # Create a PostgreSQL connection
+
 gcloud composer environments run my-composer-env \
   --location=us-central1 \
   connections add -- postgres_default \

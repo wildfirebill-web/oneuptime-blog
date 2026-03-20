@@ -28,6 +28,7 @@ This is the production-grade approach. You package your Wasm binary as an OCI ar
 
 ```bash
 # Install ORAS CLI for OCI artifact management
+
 brew install oras  # macOS
 # or download from https://oras.land
 

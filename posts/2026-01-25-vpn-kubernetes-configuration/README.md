@@ -31,6 +31,7 @@ flowchart TB
 
 ```yaml
 # wireguard-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

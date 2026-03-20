@@ -16,6 +16,7 @@ First, understand what resource kinds exist in your application.
 
 ```bash
 # List all unique resource kinds in an application
+
 argocd app resources my-app --output json | \
   jq -r '[.[] | .kind] | unique | .[]'
 

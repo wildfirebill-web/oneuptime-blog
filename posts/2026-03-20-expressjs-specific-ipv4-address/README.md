@@ -43,6 +43,7 @@ app.listen(PORT, HOST, () => {
 
 ```bash
 # Bind to all interfaces (default)
+
 node app.js
 
 # Bind to localhost only
@@ -102,7 +103,7 @@ const server = app.listen(3000, "0.0.0.0", () => {
 });
 
 process.on("SIGTERM", () => {
-    console.log("SIGTERM received — shutting down gracefully");
+    console.log("SIGTERM received - shutting down gracefully");
     server.close(() => {
         console.log("All connections closed");
         process.exit(0);

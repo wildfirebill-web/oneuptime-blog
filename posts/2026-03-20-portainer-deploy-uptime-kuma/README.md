@@ -1,10 +1,10 @@
-# How to Deploy Uptime Kuma via Portainer
+# How to Deploy Uptime Kuma via Portainer - A Practical Guide
 
-Author: [Nawaz Dhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Uptime Kuma, Monitoring, Self-Hosted, Docker, Uptime Monitoring, Status Page
 
-Description: Learn how to deploy Uptime Kuma, the self-hosted uptime monitoring tool, via Portainer using Docker Compose. This guide covers persistent storage, notification integrations, reverse proxy setup with Traefik, and best practices for reliable service monitoring.
+Description: Learn how to deploy Uptime Kuma, the self-hosted uptime monitoring tool, via Portainer using Docker Compose. This guide covers persistent storage, notification integrations, reverse proxy setup...
 
 ---
 
@@ -47,7 +47,7 @@ services:
       # Set timezone for accurate timestamps in notifications
       - TZ=UTC
     labels:
-      # Traefik v3 labels — remove if not using Traefik
+      # Traefik v3 labels - remove if not using Traefik
       - "traefik.enable=true"
       - "traefik.http.routers.uptime-kuma.rule=Host(`status.example.com`)"
       - "traefik.http.routers.uptime-kuma.entrypoints=websecure"
@@ -89,7 +89,7 @@ After logging in, click **Add New Monitor** and configure:
 
 For an HTTP monitor checking a website:
 
-```
+```text
 Monitor Type: HTTP(S)
 Friendly Name: My Website
 URL: https://example.com

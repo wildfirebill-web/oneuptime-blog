@@ -1,4 +1,4 @@
-# How to Create Persistent Volumes in Portainer via Manifest
+# How to Create Persistent Volumes in Portainer via Manifest - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,18 +20,18 @@ Kubernetes PersistentVolumes (PVs) provide cluster-wide storage resources that p
 
 Key terms before creating volumes:
 
-```
-PersistentVolume (PV)     — Cluster-level storage resource (admin creates)
-PersistentVolumeClaim (PVC) — Namespace-level storage request (developer creates)
-StorageClass              — Dynamic provisioning template
+```text
+PersistentVolume (PV)     - Cluster-level storage resource (admin creates)
+PersistentVolumeClaim (PVC) - Namespace-level storage request (developer creates)
+StorageClass              - Dynamic provisioning template
 Access Modes:
-  ReadWriteOnce (RWO)     — Single node read-write
-  ReadOnlyMany (ROX)      — Multiple nodes read-only
-  ReadWriteMany (RWX)     — Multiple nodes read-write (NFS, CephFS)
+  ReadWriteOnce (RWO)     - Single node read-write
+  ReadOnlyMany (ROX)      - Multiple nodes read-only
+  ReadWriteMany (RWX)     - Multiple nodes read-write (NFS, CephFS)
 Reclaim Policies:
-  Retain                  — Keep data after PVC deletion (manual cleanup)
-  Delete                  — Delete storage after PVC deletion
-  Recycle                 — Deprecated, scrub and reuse
+  Retain                  - Keep data after PVC deletion (manual cleanup)
+  Delete                  - Delete storage after PVC deletion
+  Recycle                 - Deprecated, scrub and reuse
 ```
 
 ## Step 1: Create a Static PersistentVolume
@@ -125,6 +125,7 @@ Deploy both in one multi-document YAML for simple setups:
 
 ```yaml
 # HostPath PV (for single-node or testing environments)
+
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -246,7 +247,7 @@ kubectl patch pvc my-app-data-pvc -n production \
 When a PVC is deleted and the PV policy is `Retain`:
 
 ```bash
-# PV enters Released state — data is preserved
+# PV enters Released state - data is preserved
 kubectl get pv | grep Released
 
 # To reuse a Released PV, remove the claimRef

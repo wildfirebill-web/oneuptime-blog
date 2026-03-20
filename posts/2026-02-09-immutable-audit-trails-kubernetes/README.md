@@ -24,6 +24,7 @@ Start with comprehensive audit policy configuration that captures all security-r
 
 ```yaml
 # immutable-audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

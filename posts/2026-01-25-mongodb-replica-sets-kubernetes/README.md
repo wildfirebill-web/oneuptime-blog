@@ -57,6 +57,7 @@ Before starting:
 
 ```yaml
 # mongodb-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -378,7 +379,7 @@ affinity:
         topologyKey: kubernetes.io/hostname
 ```
 
-### Resource Requests and Limits
+Resource Requests and Limits
 
 ```yaml
 resources:

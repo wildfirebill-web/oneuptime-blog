@@ -47,6 +47,7 @@ Acceptance tests typically need API credentials. Use environment variables to pr
 
 ```bash
 # Set environment variables for your provider
+
 export TF_ACC=1
 export EXAMPLE_API_KEY="your-api-key"
 export EXAMPLE_API_URL="https://api.example.com"

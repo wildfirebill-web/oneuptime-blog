@@ -14,11 +14,12 @@ Node Exporter exposes detailed network interface statistics that Prometheus can 
 
 ```bash
 # Download and install Node Exporter
+
 wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.linux-amd64.tar.gz
 tar xzf node_exporter-*.linux-amd64.tar.gz
 mv node_exporter-*/node_exporter /usr/local/bin/
 
-# Create systemd service — bind to IPv4 only
+# Create systemd service - bind to IPv4 only
 cat > /etc/systemd/system/node-exporter.service << 'EOF'
 [Unit]
 Description=Prometheus Node Exporter
@@ -106,7 +107,7 @@ scrape_configs:
 ## Grafana Panel Examples
 
 ```promql
-# Panel: Network In (Mbps) — useful for identifying bandwidth hogs
+# Panel: Network In (Mbps) - useful for identifying bandwidth hogs
 rate(node_network_receive_bytes_total{device!="lo"}[5m]) * 8 / 1000000
 
 # Panel: Network Out (Mbps)

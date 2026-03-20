@@ -36,6 +36,7 @@ flowchart LR
 
 ```bash
 # Export all deployments
+
 kubectl get deployments -A -o yaml > deployments.yaml
 
 # Export all services

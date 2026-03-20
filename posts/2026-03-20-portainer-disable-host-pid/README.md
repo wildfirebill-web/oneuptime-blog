@@ -1,8 +1,8 @@
-# How to Disable Host PID Access for Non-Admin Users in Portainer
+# How to Disable Host PID Access for Non-Admin Users in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Security, Docker, Hardening, Container
+Tags: Portainer, Security, Docker, Hardening, Containers
 
 Description: Learn how to prevent non-admin users from running containers with host PID namespace sharing in Portainer, blocking a critical container escape vector.
 
@@ -16,6 +16,7 @@ When a container runs with `--pid=host`:
 
 ```bash
 # Inside a container with --pid=host, the user can:
+
 # See all host processes
 ps aux  # Shows ALL host processes
 
@@ -25,7 +26,7 @@ kill -9 HOST_PID  # Can crash the host OS or services
 # Attach to host processes (with ptrace capability)
 strace -p HOST_PROCESS_PID
 
-# Access /proc/[pid]/environ of host processes — may expose secrets
+# Access /proc/[pid]/environ of host processes - may expose secrets
 cat /proc/1/environ  # Read init process environment variables
 
 # Read memory of other processes
@@ -87,7 +88,7 @@ docker run --pid=host -v /proc:/host/proc:ro prom/node-exporter
 
 ```bash
 #!/bin/bash
-# apply-security-restrictions.sh — Apply all restrictions to all environments
+# apply-security-restrictions.sh - Apply all restrictions to all environments
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN=$(curl -s -X POST "${PORTAINER_URL}/api/auth" \
@@ -145,7 +146,7 @@ curl -s -X PUT \
 Teach users to rely on secure container defaults:
 
 ```yaml
-# Secure docker-compose.yml — No host namespace sharing needed
+# Secure docker-compose.yml - No host namespace sharing needed
 version: "3.8"
 services:
   app:

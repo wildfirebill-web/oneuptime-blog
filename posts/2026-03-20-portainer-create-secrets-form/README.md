@@ -1,4 +1,4 @@
-# How to Create Secrets via Form in Portainer
+# How to Create Secrets via Form in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create Kubernetes Secrets using Portainer's form-based
 
 ## Introduction
 
-Kubernetes Secrets store sensitive data — passwords, API tokens, TLS certificates, SSH keys — in a way that is separate from application code and container images. While Secrets are base64-encoded (not encrypted) by default, they integrate with Kubernetes RBAC and can be encrypted at rest when properly configured. Portainer's form interface makes creating Secrets straightforward. This guide covers creating Secrets using the Portainer form UI.
+Kubernetes Secrets store sensitive data - passwords, API tokens, TLS certificates, SSH keys - in a way that is separate from application code and container images. While Secrets are base64-encoded (not encrypted) by default, they integrate with Kubernetes RBAC and can be encrypted at rest when properly configured. Portainer's form interface makes creating Secrets straightforward. This guide covers creating Secrets using the Portainer form UI.
 
 ## Prerequisites
 
@@ -20,13 +20,13 @@ Kubernetes Secrets store sensitive data — passwords, API tokens, TLS certifica
 
 Different secret types serve different purposes:
 
-```
-Opaque                     — Arbitrary key-value data (most common)
-kubernetes.io/tls          — TLS certificate and private key
-kubernetes.io/dockerconfigjson — Container registry credentials
-kubernetes.io/service-account-token — Service account tokens
-kubernetes.io/ssh-auth     — SSH private keys
-kubernetes.io/basic-auth   — Username and password pairs
+```text
+Opaque                     - Arbitrary key-value data (most common)
+kubernetes.io/tls          - TLS certificate and private key
+kubernetes.io/dockerconfigjson - Container registry credentials
+kubernetes.io/service-account-token - Service account tokens
+kubernetes.io/ssh-auth     - SSH private keys
+kubernetes.io/basic-auth   - Username and password pairs
 ```
 
 ## Step 1: Navigate to Secrets in Portainer
@@ -41,7 +41,7 @@ kubernetes.io/basic-auth   — Username and password pairs
 
 For an Opaque secret (most common type):
 
-```
+```text
 Name:       my-app-secrets
 Namespace:  production
 
@@ -59,7 +59,7 @@ Portainer automatically base64-encodes the values when storing them.
 
 For pulling images from private registries:
 
-```
+```text
 Name:              registry-credentials
 Namespace:         production
 Type:              kubernetes.io/dockerconfigjson
@@ -74,6 +74,7 @@ Or via kubectl for reference:
 
 ```bash
 # Docker Hub or generic registry
+
 kubectl create secret docker-registry registry-credentials \
   --docker-server=docker.io \
   --docker-username=myusername \
@@ -94,7 +95,7 @@ kubectl create secret docker-registry ecr-credentials \
 For HTTPS/TLS termination at an Ingress:
 
 In Portainer's Secret form:
-```
+```text
 Name:    my-tls-secret
 Type:    kubernetes.io/tls
 

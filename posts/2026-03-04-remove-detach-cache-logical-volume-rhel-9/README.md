@@ -16,6 +16,7 @@ Check the current cache configuration:
 
 ```bash
 # Show cached volumes and their status
+
 lvs -a -o lv_name,segtype,cache_mode,cache_dirty_blocks vg_data
 ```
 

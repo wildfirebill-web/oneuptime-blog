@@ -52,6 +52,7 @@ To create the change stream using gcloud:
 
 ```bash
 # Add a change stream to your database schema
+
 gcloud spanner databases ddl update my-database \
     --instance=my-spanner-instance \
     --ddl='CREATE CHANGE STREAM OrderChanges FOR Orders, Payments'

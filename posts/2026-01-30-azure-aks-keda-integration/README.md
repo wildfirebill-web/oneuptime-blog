@@ -63,6 +63,7 @@ This approach lets Azure manage KEDA upgrades and ensures compatibility with you
 
 ```bash
 # Enable the KEDA add-on on an existing AKS cluster
+
 az aks update \
   --resource-group myResourceGroup \
   --name myAKSCluster \

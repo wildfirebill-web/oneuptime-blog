@@ -16,6 +16,7 @@ The `present` state is the most commonly used and safest option. It means "make 
 
 ```yaml
 # Install nginx if it is not already installed
+
 - name: Ensure nginx is installed
   ansible.builtin.apt:
     name: nginx

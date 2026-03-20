@@ -90,6 +90,7 @@ Copy your corporate CA certificate to the system trust store:
 
 ```bash
 # For Ubuntu/Debian
+
 sudo cp corporate-ca.crt /usr/local/share/ca-certificates/corporate-ca.crt
 sudo update-ca-certificates
 

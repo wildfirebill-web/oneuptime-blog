@@ -106,6 +106,7 @@ This example demonstrates a production-ready ETL pipeline with proper structure,
 
 ```python
 # dags/etl_pipeline.py
+
 # This DAG implements a complete ETL pipeline for sales data processing.
 # It extracts data from a PostgreSQL database, transforms it using pandas,
 # and loads the results into a data warehouse.

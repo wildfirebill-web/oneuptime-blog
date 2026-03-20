@@ -141,6 +141,7 @@ On the VM, install the Istio sidecar. For Debian/Ubuntu:
 
 ```bash
 # Add the Istio apt repository
+
 curl -LO https://storage.googleapis.com/istio-release/releases/1.20.0/deb/istio-sidecar.deb
 
 # Install

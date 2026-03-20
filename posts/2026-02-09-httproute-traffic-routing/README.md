@@ -22,6 +22,7 @@ Start with simple hostname and path-based routing.
 
 ```yaml
 # httproute-basic.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:

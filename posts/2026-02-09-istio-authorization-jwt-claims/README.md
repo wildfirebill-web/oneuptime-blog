@@ -26,6 +26,7 @@ Deploy sample applications:
 
 ```yaml
 # sample-apps.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -24,6 +24,7 @@ If you are starting from scratch, use the `collection init` command:
 
 ```bash
 # Initialize a new collection skeleton
+
 ansible-galaxy collection init my_namespace.my_collection
 ```
 

@@ -31,6 +31,7 @@ from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 import time
 
 # Tracing setup
+
 trace_provider = TracerProvider()
 trace_provider.add_span_processor(BatchSpanProcessor(OTLPSpanExporter()))
 trace.set_tracer_provider(trace_provider)

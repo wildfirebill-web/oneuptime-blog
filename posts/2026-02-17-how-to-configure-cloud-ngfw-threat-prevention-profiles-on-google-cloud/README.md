@@ -42,6 +42,7 @@ Start by creating a baseline profile in detection-only mode.
 
 ```bash
 # Create a security profile for threat prevention in detection mode
+
 gcloud network-security security-profiles threat-prevention create detection-profile \
     --organization=123456789 \
     --location=global \

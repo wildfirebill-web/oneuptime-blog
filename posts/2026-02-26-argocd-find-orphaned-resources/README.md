@@ -41,6 +41,7 @@ spec:
 
 ```bash
 # Get the project details including orphaned resources
+
 argocd proj get production -o json | jq '.status.orphanedResources'
 ```
 

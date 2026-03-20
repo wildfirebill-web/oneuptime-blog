@@ -1,4 +1,4 @@
-# How to Deploy Varnish Cache via Portainer
+# How to Deploy Varnish Cache via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,7 +26,8 @@ vcl 4.1;
 
 import std;
 
-# Backend — your application server
+# Backend - your application server
+
 backend default {
     .host = "myapp";    # Docker service name on the same network
     .port = "8080";
@@ -134,10 +135,10 @@ networks:
 ## Step 3: Test Cache Behavior
 
 ```bash
-# First request — should be a MISS
+# First request - should be a MISS
 curl -I http://localhost/
 
-# Second request — should be a HIT
+# Second request - should be a HIT
 curl -I http://localhost/
 # Look for: X-Cache: HIT
 

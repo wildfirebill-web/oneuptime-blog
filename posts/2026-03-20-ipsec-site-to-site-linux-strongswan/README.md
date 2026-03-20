@@ -10,7 +10,7 @@ strongSwan is the leading open-source IPsec implementation for Linux. This guide
 
 ## Network Topology
 
-```
+```text
 Gateway A (Left):          Gateway B (Right):
 LAN: 192.168.1.0/24        LAN: 192.168.2.0/24
 WAN: 1.2.3.4               WAN: 5.6.7.8
@@ -20,6 +20,7 @@ WAN: 1.2.3.4               WAN: 5.6.7.8
 
 ```bash
 # On both gateways
+
 sudo apt install strongswan strongswan-pki -y
 ```
 

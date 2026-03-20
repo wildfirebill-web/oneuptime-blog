@@ -18,6 +18,7 @@ Make sure you have these APIs enabled in your project:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable cloudfunctions.googleapis.com
 gcloud services enable firestore.googleapis.com
 gcloud services enable eventarc.googleapis.com

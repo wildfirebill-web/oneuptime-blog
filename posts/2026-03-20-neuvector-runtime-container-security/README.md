@@ -8,7 +8,7 @@ Description: Learn how to configure NeuVector's runtime container security to de
 
 ## Introduction
 
-Runtime security is NeuVector's most powerful capability. Unlike static image scanning, runtime security monitors container behavior in real time — detecting unauthorized process execution, unexpected network connections, file access violations, and malicious activity patterns. This guide explains how to set up comprehensive runtime protection.
+Runtime security is NeuVector's most powerful capability. Unlike static image scanning, runtime security monitors container behavior in real time - detecting unauthorized process execution, unexpected network connections, file access violations, and malicious activity patterns. This guide explains how to set up comprehensive runtime protection.
 
 ## How NeuVector Runtime Security Works
 
@@ -32,6 +32,7 @@ The NeuVector Enforcer is a privileged DaemonSet that uses eBPF and kernel capab
 
 ```bash
 # Verify enforcers are running on all nodes
+
 kubectl get daemonset neuvector-enforcer-pod -n neuvector
 
 # Check enforcer logs for runtime events
@@ -47,9 +48,9 @@ After NeuVector has been running in Discover mode for at least 24-48 hours, revi
 
 1. Navigate to **Policy** > **Groups** in the NeuVector UI
 2. Select a workload group (e.g., `nv.nginx.default`)
-3. Review the **Process Profile** tab — discovered processes
-4. Review the **Network Rules** tab — learned connections
-5. Review the **File Access** tab — accessed files
+3. Review the **Process Profile** tab - discovered processes
+4. Review the **Network Rules** tab - learned connections
+5. Review the **File Access** tab - accessed files
 
 Via API:
 

@@ -16,6 +16,7 @@ The pattern is: collect data from all hosts, then compare on localhost:
 
 ```yaml
 # playbook-basic-compare.yml
+
 # Collects kernel versions from all hosts and identifies inconsistencies
 - name: Collect data from all hosts
   hosts: all

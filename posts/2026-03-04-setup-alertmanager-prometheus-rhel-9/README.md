@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Create a system user
+
 sudo useradd --no-create-home --shell /bin/false alertmanager
 
 # Create directories

@@ -1,4 +1,4 @@
-# How to Use the -exclude Flag in OpenTofu
+# How to Use the -exclude Flag in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `-exclude` flag is the inverse of `-target`. Instead of specifying what to i
 
 ```bash
 # Exclude a specific resource from the plan
+
 tofu plan -exclude=aws_instance.web
 
 # Exclude a resource from apply
@@ -100,7 +101,7 @@ tofu plan -exclude=aws_vpc.main
 ## Temporary Workaround Pattern
 
 ```bash
-# Known issue with a module in staging — skip it for now
+# Known issue with a module in staging - skip it for now
 tofu apply \
   -exclude=module.legacy-service \
   -var-file=environments/staging.tfvars \
@@ -122,4 +123,4 @@ tofu apply -refresh=false
 
 ## Conclusion
 
-The `-exclude` flag lets you skip specific resources while applying the rest of the configuration. Use it when a known-failing resource is blocking deployment of unrelated changes, or when a module needs to be temporarily bypassed. Like `-target`, `-exclude` creates partial state — always follow up with a full plan to verify consistency. Track excluded resources in a comment or issue so they are not forgotten.
+The `-exclude` flag lets you skip specific resources while applying the rest of the configuration. Use it when a known-failing resource is blocking deployment of unrelated changes, or when a module needs to be temporarily bypassed. Like `-target`, `-exclude` creates partial state - always follow up with a full plan to verify consistency. Track excluded resources in a comment or issue so they are not forgotten.

@@ -40,6 +40,7 @@ journalctl -u kubelet | grep "CRI"
 
 ```bash
 # Check which socket kubelet is using
+
 sudo cat /var/lib/kubelet/kubeadm-flags.env | grep "container-runtime-endpoint"
 
 # Or check kubelet config

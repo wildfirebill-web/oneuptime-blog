@@ -88,6 +88,7 @@ Here's a foundational configuration enabling basic telemetry inspection:
 
 ```yaml
 # extensions section configures remote tap
+
 extensions:
   # Remote tap extension for pipeline inspection
   remote_tap:

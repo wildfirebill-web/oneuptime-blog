@@ -24,6 +24,7 @@ Kustomize is built into kubectl (version 1.14 and later), so you may already hav
 
 ```bash
 # Use Kustomize through kubectl
+
 kubectl kustomize --help
 
 # Check your kubectl version

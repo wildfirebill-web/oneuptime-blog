@@ -24,6 +24,7 @@ Find which secrets are used for Git authentication:
 
 ```bash
 # List all GitRepository sources and their secret references
+
 flux get sources git -A -o json | jq -r '.[] | "\(.namespace)/\(.name): \(.spec.secretRef.name // "none")"'
 
 # Check the current secret structure

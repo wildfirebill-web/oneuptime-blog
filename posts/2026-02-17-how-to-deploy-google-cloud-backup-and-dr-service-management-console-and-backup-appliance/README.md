@@ -34,6 +34,7 @@ Start by enabling the required APIs:
 
 ```bash
 # Enable the Backup and DR API and its dependencies
+
 gcloud services enable backupdr.googleapis.com \
     --project=my-project
 

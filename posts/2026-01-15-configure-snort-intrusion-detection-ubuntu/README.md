@@ -67,6 +67,7 @@ First, install the required dependencies:
 
 ```bash
 # Update system packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install build dependencies

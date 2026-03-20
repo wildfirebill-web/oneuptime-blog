@@ -280,6 +280,7 @@ When routing does not work as expected, here are the tools to use:
 
 ```bash
 # Check what VirtualServices are applied
+
 kubectl get virtualservices -n default -o yaml
 
 # Check the Envoy configuration on a specific pod

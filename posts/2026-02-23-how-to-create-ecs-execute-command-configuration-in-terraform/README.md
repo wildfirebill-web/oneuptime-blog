@@ -50,6 +50,7 @@ data "aws_subnets" "private" {
 }
 
 # Security group for VPC endpoints
+
 resource "aws_security_group" "vpc_endpoints" {
   name_prefix = "vpc-endpoints-"
   vpc_id      = data.aws_vpc.main.id

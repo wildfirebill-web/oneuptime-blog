@@ -45,6 +45,7 @@ For new clusters, enable Azure AD RBAC at creation time. For existing clusters, 
 
 ```bash
 # Create an AKS cluster with Azure AD RBAC enabled
+
 az aks create \
   --resource-group myResourceGroup \
   --name myAKSCluster \

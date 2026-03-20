@@ -20,6 +20,7 @@ When a container fails to start, events reveal the sequence of what happened.
 
 ```bash
 # Try to run a container with a broken command
+
 podman run --name debug-start alpine nonexistent-command 2>/dev/null
 
 # Check the events to see what happened

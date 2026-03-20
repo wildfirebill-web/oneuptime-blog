@@ -95,6 +95,7 @@ resource "azuread_service_principal" "web_app" {
 }
 
 # Client secret for server-side authentication
+
 resource "azuread_application_password" "web_app" {
   application_object_id = azuread_application.web_app.object_id
   display_name          = "Managed by OpenTofu"

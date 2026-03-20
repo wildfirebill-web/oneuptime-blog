@@ -49,6 +49,7 @@ Before creating Telemetry resources, configure your providers in the MeshConfig.
 
 ```yaml
 # istio-config.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

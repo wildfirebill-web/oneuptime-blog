@@ -22,6 +22,7 @@ The `pip` module creates the virtualenv automatically if it does not exist:
 
 ```yaml
 # Create a virtualenv and install packages into it
+
 - name: Install Flask application dependencies
   ansible.builtin.pip:
     name:

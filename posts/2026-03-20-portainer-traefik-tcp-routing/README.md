@@ -22,6 +22,7 @@ Add TCP-specific entrypoints in `traefik.yml`:
 
 ```yaml
 # traefik.yml
+
 entryPoints:
   web:
     address: ":80"
@@ -71,7 +72,7 @@ services:
 ## Step 3: TCP Routing for PostgreSQL
 
 ```yaml
-# Portainer stack — PostgreSQL with TCP routing
+# Portainer stack - PostgreSQL with TCP routing
 services:
   postgres:
     image: postgres:15-alpine
@@ -87,12 +88,12 @@ services:
       # TCP routing labels (different from HTTP labels)
       - "traefik.enable=true"
 
-      # TCP router — HostSNI matches on any host (no TLS SNI on raw TCP)
+      # TCP router - HostSNI matches on any host (no TLS SNI on raw TCP)
       - "traefik.tcp.routers.postgres.rule=HostSNI(`*`)"
       - "traefik.tcp.routers.postgres.entrypoints=postgres"
       - "traefik.tcp.routers.postgres.service=postgres"
 
-      # TCP service — target port inside container
+      # TCP service - target port inside container
       - "traefik.tcp.services.postgres.loadbalancer.server.port=5432"
 
 secrets:
@@ -109,7 +110,7 @@ networks:
 Route multiple TCP services on port 443 using TLS SNI (requires TLS passthrough or termination):
 
 ```yaml
-# TLS Passthrough — backend handles TLS itself
+# TLS Passthrough - backend handles TLS itself
 services:
   postgres-tls:
     image: postgres:15-alpine
@@ -127,7 +128,7 @@ services:
 ```
 
 ```yaml
-# TLS Termination — Traefik terminates TLS, connects to backend in plaintext
+# TLS Termination - Traefik terminates TLS, connects to backend in plaintext
 services:
   redis:
     image: redis:7-alpine
@@ -139,7 +140,7 @@ services:
       - "traefik.tcp.routers.redis-secure.entrypoints=websecure"
       - "traefik.tcp.routers.redis-secure.tls=true"
       - "traefik.tcp.routers.redis-secure.tls.certresolver=letsencrypt"    # Traefik gets cert
-      # No passthrough — Traefik terminates TLS
+      # No passthrough - Traefik terminates TLS
       - "traefik.tcp.routers.redis-secure.service=redis-secure"
       - "traefik.tcp.services.redis-secure.loadbalancer.server.port=6379"    # Plain Redis port
 ```

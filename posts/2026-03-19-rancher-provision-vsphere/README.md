@@ -32,6 +32,7 @@ For cloud-init enabled images, you can use the official cloud images:
 
 ```bash
 # Download Ubuntu cloud image
+
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.ova
 ```
 

@@ -14,6 +14,7 @@ Google Cloud Platform provides certified RHEL images for Compute Engine instance
 
 ```bash
 # Create a RHEL instance on GCP
+
 gcloud compute instances create rhel9-instance \
   --zone=us-central1-a \
   --machine-type=e2-standard-4 \

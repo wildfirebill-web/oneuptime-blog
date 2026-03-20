@@ -169,6 +169,7 @@ Enable virtual threads in Spring Boot 3.2+ with a single property.
 
 ```yaml
 # application.yml - Enable virtual threads in Spring Boot
+
 spring:
   threads:
     # Use virtual threads for handling HTTP requests

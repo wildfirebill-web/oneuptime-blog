@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, REDIRECT, NAT, Linux, Port Forwarding, Networking
+Tags: iptables, Redirect, NAT, Linux, Port Forwarding, Networking
 
 Description: Use iptables REDIRECT to transparently redirect traffic from one port to another on the same host, enabling non-privileged applications to bind to low ports.
 
@@ -12,6 +12,7 @@ Port redirection solves a common problem: applications can't bind to privileged 
 
 ```bash
 # Redirect incoming TCP port 80 to port 8080 on the same host
+
 sudo iptables -t nat -A PREROUTING \
   -p tcp --dport 80 \
   -j REDIRECT --to-port 8080
@@ -112,4 +113,4 @@ sudo iptables -t nat -D PREROUTING 1
 sudo iptables -t nat -D PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
 
-Port redirection with iptables is the most lightweight alternative to running applications as root or using capabilities — a single rule enables secure deployment of web servers and other services.
+Port redirection with iptables is the most lightweight alternative to running applications as root or using capabilities - a single rule enables secure deployment of web servers and other services.

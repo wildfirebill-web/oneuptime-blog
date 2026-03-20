@@ -14,6 +14,7 @@ FFmpeg is the Swiss Army knife of media processing. It supports IPv6 for all net
 
 ```bash
 # IPv6 addresses in FFmpeg URLs use bracket notation
+
 # Protocol://[ipv6address]:port/path
 
 # Examples:

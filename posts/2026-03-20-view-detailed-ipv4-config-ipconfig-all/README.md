@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, ipconfig, IPv4, Network Diagnostics, DHCP
+Tags: Windows, Networking, Ipconfig, IPv4, Network Diagnostics, DHCP
 
 Description: Use ipconfig /all to view the complete IPv4 network configuration on Windows, including MAC addresses, DHCP lease details, DNS servers, and adapter-specific settings.
 
@@ -20,7 +20,7 @@ ipconfig /all
 
 **Host-level information (top of output):**
 
-```
+```text
 Windows IP Configuration
    Host Name . . . . . . . . . . . . : MY-PC
    Primary Dns Suffix  . . . . . . . : corp.example.com
@@ -31,7 +31,7 @@ Windows IP Configuration
 
 **Per-adapter information:**
 
-```
+```text
 Ethernet adapter Ethernet:
    Connection-specific DNS Suffix  . : dhcp.example.com
    Description . . . . . . . . . . . : Intel(R) Ethernet Connection
@@ -53,7 +53,7 @@ Ethernet adapter Ethernet:
 
 | Field | What to Check |
 |---|---|
-| Physical Address | MAC — confirm it matches expected NIC |
+| Physical Address | MAC - confirm it matches expected NIC |
 | DHCP Enabled | Yes = dynamic IP; No = static |
 | IPv4 Address with `(Preferred)` | Currently active address |
 | Lease Obtained / Expires | DHCP lease validity period |
@@ -81,7 +81,7 @@ ipconfig /all | findstr /i "Description\|Physical"
 
 - **APIPA address (169.254.x.x)**: DHCP server unreachable → check DHCP service or network connectivity
 - **DHCP Enabled: No with unexpected IP**: wrong static IP configured → check with IT or netsh
-- **DNS showing 127.0.0.53**: resolved through systemd-resolved (if using WSL) — check resolver chain
+- **DNS showing 127.0.0.53**: resolved through systemd-resolved (if using WSL) - check resolver chain
 - **Lease expires soon**: renew with `ipconfig /renew`
 
 ## Exporting Configuration

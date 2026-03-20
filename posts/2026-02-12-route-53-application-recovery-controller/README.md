@@ -53,6 +53,7 @@ Create a recovery group and readiness check:
 
 ```bash
 # Create a recovery group - this represents your application
+
 aws route53-recovery-readiness create-recovery-group \
   --recovery-group-name "order-app" \
   --tags Key=Application,Value=OrderService

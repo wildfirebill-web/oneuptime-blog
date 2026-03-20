@@ -29,6 +29,7 @@ Here is how to create these buckets using the gcloud CLI. Each bucket is created
 
 ```bash
 # Create a bucket for short-lived debug logs with 7-day retention
+
 gcloud logging buckets create debug-logs \
   --location=global \
   --retention-days=7 \

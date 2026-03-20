@@ -20,6 +20,7 @@ Create a pipeline YAML file that installs and uses Podman on Microsoft-hosted ag
 
 ```yaml
 # azure-pipelines.yml
+
 # Pipeline that uses Podman for container operations
 trigger:
   branches:

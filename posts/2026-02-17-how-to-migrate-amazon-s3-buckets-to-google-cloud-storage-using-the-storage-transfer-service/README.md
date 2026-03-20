@@ -55,6 +55,7 @@ Generate access keys for this user and store them in Google Cloud Secret Manager
 
 ```bash
 # Store AWS credentials in Secret Manager
+
 echo -n "AKIAIOSFODNN7EXAMPLE" | \
   gcloud secrets create aws-access-key-id \
     --data-file=- \

@@ -32,6 +32,7 @@ In standalone mode, all components run in a single process. In distributed mode,
 
 ```bash
 # Install Java 17
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 ```
 

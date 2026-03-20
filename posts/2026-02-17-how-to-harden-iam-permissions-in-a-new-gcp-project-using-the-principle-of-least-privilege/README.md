@@ -30,6 +30,7 @@ New GCP projects come with some default access that you should clean up:
 
 ```bash
 # Check the current IAM policy
+
 gcloud projects get-iam-policy my-project --format=yaml
 
 # Remove the default Compute Engine service account's Editor role

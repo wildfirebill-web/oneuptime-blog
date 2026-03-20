@@ -14,6 +14,7 @@ When your organization has an existing Certificate Authority (CA), you can insta
 
 ```bash
 # Set hostname
+
 sudo hostnamectl set-hostname idm1.example.com
 
 # Install required packages

@@ -16,6 +16,7 @@ Whisker's primary value is in troubleshooting network policy issues. The denied 
 
 ```bash
 # Verify Whisker is running
+
 kubectl get pods -n calico-system | grep whisker
 
 # Access Whisker UI

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ARP, ARP Table, Overflow, Switch, Router, Network
+Tags: ARP, ARP Table, Overflow, Switch, Router, Networks
 
 Description: Learn how to detect and fix ARP table overflow on switches and routers, where the hardware ARP table becomes full and new address resolutions fail, causing intermittent connectivity.
 
@@ -17,7 +17,8 @@ Network switches and routers have hardware-limited ARP tables (CAM/TCAM tables).
 ## Step 1: Check ARP Table Usage
 
 ```bash
-# Linux router/host — check ARP table
+# Linux router/host - check ARP table
+
 ip neigh show
 ip neigh show | wc -l    # Count entries
 
@@ -32,7 +33,7 @@ sysctl net.ipv4.neigh.default.gc_thresh3    # Maximum (hard limit)
 # net.ipv4.neigh.default.gc_thresh3 = 1024  <- Maximum ARP entries
 ```
 
-```
+```text
 ! Cisco IOS
 Router# show arp | count
 Router# show arp summary
@@ -54,8 +55,8 @@ grep -i "arp" /var/log/syslog | grep -i "overflow\|full"
 dmesg -w | grep neighbour
 ```
 
-```
-! Cisco IOS — look for ARP overflow messages
+```text
+! Cisco IOS - look for ARP overflow messages
 Router# show log | include ARP
 Router# show log | include TCAM
 ! Look for: %IP-4-ARPREQUESTLIMIT: ARP rate limit exceeded
@@ -64,7 +65,7 @@ Router# show log | include TCAM
 ## Step 3: Increase ARP Table Limits
 
 ```bash
-# Linux — increase ARP table size for large networks
+# Linux - increase ARP table size for large networks
 sudo tee -a /etc/sysctl.conf << 'EOF'
 
 # ARP table limits
@@ -80,8 +81,8 @@ EOF
 sudo sysctl -p
 ```
 
-```
-! Cisco IOS — increase ARP timeout to reduce thrashing
+```text
+! Cisco IOS - increase ARP timeout to reduce thrashing
 Router(config)# arp timeout 1200    ! 20 minutes (default is 4 hours)
 
 ! On some platforms, adjust ARP table allocation
@@ -93,10 +94,10 @@ Router(config)# ip arp proxy disable   ! Disable proxy ARP if not needed
 ```bash
 # Identify what's filling the ARP table
 ip neigh show | awk '{print $5}' | sort | uniq -c | sort -rn
-# REACHABLE — active entries (needed)
-# STALE — aged but not removed (check count)
-# FAILED — failed resolutions (remove)
-# NOARP — no ARP on interface
+# REACHABLE - active entries (needed)
+# STALE - aged but not removed (check count)
+# FAILED - failed resolutions (remove)
+# NOARP - no ARP on interface
 
 # Remove failed entries
 ip neigh flush nud failed
@@ -108,15 +109,15 @@ ip neigh flush nud stale
 ip neigh flush all
 ```
 
-## Step 5: Address Root Cause — Oversized Subnets
+## Step 5: Address Root Cause - Oversized Subnets
 
 ```bash
 # The most common cause: a /16 subnet with thousands of devices
 # creates an ARP table with potentially 65534 entries
 
 # Solution: segment large subnets into smaller /24s
-# Before: 10.0.0.0/16 — one broadcast domain, up to 65534 hosts
-# After: 10.0.1.0/24, 10.0.2.0/24, ... — max 254 hosts per ARP table
+# Before: 10.0.0.0/16 - one broadcast domain, up to 65534 hosts
+# After: 10.0.1.0/24, 10.0.2.0/24, ... - max 254 hosts per ARP table
 
 # Calculate how many subnets you need
 python3 -c "
@@ -130,13 +131,13 @@ print(f'Need {subnets_needed} x /24 subnets for {total_hosts} hosts')
 ## Step 6: Disable Proxy ARP Where Unnecessary
 
 ```bash
-# Linux — disable proxy ARP (can cause extra entries)
+# Linux - disable proxy ARP (can cause extra entries)
 sudo sysctl -w net.ipv4.conf.eth0.proxy_arp=0
 sudo sysctl -w net.ipv4.conf.all.proxy_arp=0
 ```
 
-```
-! Cisco IOS — disable proxy ARP per interface
+```text
+! Cisco IOS - disable proxy ARP per interface
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# no ip proxy-arp
 
@@ -163,4 +164,4 @@ fi
 
 ## Conclusion
 
-ARP table overflow is detected via `dmesg | grep "neighbour table overflow"` and confirmed by comparing `ip neigh show | wc -l` against `gc_thresh3`. Fix immediately by flushing stale entries with `ip neigh flush nud stale` and increasing `gc_thresh3` in sysctl. The root cause is usually oversized subnets — segment large /16 networks into /24 subnets to keep individual ARP tables manageable. Disable proxy ARP where not needed to reduce unnecessary entries.
+ARP table overflow is detected via `dmesg | grep "neighbour table overflow"` and confirmed by comparing `ip neigh show | wc -l` against `gc_thresh3`. Fix immediately by flushing stale entries with `ip neigh flush nud stale` and increasing `gc_thresh3` in sysctl. The root cause is usually oversized subnets - segment large /16 networks into /24 subnets to keep individual ARP tables manageable. Disable proxy ARP where not needed to reduce unnecessary entries.

@@ -384,6 +384,7 @@ def generate_coverage_report(analyzer: CoverageAnalyzer) -> dict:
 
 
 # Example usage
+
 if __name__ == "__main__":
     analyzer = CoverageAnalyzer()
 

@@ -233,6 +233,7 @@ Django has built-in CSRF protection that's enabled by default.
 
 ```python
 # settings.py
+
 MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',  # Enable CSRF protection
     # ... other middleware

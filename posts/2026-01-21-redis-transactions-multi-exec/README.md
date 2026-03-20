@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transactions, MULTI, EXEC, Atomicity, Watch, Optimistic Locking, Python, Node.js
+Tags: Redis, Transactions, MULTI, Exec, Atomicity, Watch, Optimistic Locking, Python, Node.js
 
 Description: A comprehensive guide to Redis transactions using MULTI/EXEC commands. Learn atomic operations, optimistic locking with WATCH, error handling, and when to use transactions vs Lua scripts.
 
@@ -39,6 +39,7 @@ Client B: GET balance:A         <- waits until EXEC completes
 
 ```bash
 # Basic transaction flow
+
 MULTI                  # Start transaction
 SET key1 value1       # Queue command (returns QUEUED)
 SET key2 value2       # Queue command (returns QUEUED)

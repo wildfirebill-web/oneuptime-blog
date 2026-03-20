@@ -44,6 +44,7 @@ MemoryDB clusters need a subnet group that defines which subnets the nodes run i
 
 ```hcl
 # Subnet group spanning multiple availability zones
+
 resource "aws_memorydb_subnet_group" "main" {
   name        = "memorydb-subnet-group"
   description = "MemoryDB subnet group for production cluster"

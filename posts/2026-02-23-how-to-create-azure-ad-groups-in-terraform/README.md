@@ -16,6 +16,7 @@ This guide covers creating different types of Azure AD groups in Terraform, mana
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -86,6 +86,7 @@ This creates an SNS subscription for RDS failover events.
 
 ```bash
 # Create an event subscription for failover events
+
 aws rds create-event-subscription \
   --subscription-name failover-alerts \
   --sns-topic-arn arn:aws:sns:us-east-1:123456789:rds-alerts \

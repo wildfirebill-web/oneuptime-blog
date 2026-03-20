@@ -14,6 +14,7 @@ RHEL System Roles provide Ansible roles for common system configurations. The `k
 
 ```bash
 # Install the system roles package
+
 sudo dnf install -y rhel-system-roles
 
 # The roles are installed to /usr/share/ansible/roles/

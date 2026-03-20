@@ -271,6 +271,7 @@ If you deploy ArgoCD with Helm, configure the theme through values:
 
 ```yaml
 # values.yaml
+
 server:
   config:
     ui.cssurl: "https://static.example.com/argocd/theme.css"

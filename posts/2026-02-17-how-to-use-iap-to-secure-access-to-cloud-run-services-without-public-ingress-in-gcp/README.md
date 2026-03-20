@@ -36,6 +36,7 @@ Deploy your Cloud Run service and set the ingress to `internal-and-cloud-load-ba
 
 ```bash
 # Deploy a Cloud Run service with internal-only ingress
+
 gcloud run deploy my-internal-app \
     --image=gcr.io/my-project-id/my-app:latest \
     --region=us-central1 \

@@ -345,6 +345,7 @@ SELECT get_relation_type('my_relation');
 
 ```python
 # Python example: Perform operations based on relation type
+
 import psycopg2
 
 def safe_truncate(conn, relation_name):

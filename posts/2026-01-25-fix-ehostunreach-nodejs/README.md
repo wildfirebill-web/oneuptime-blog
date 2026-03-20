@@ -27,6 +27,7 @@ First, check if the host is reachable from your system:
 
 ```bash
 # Test basic connectivity
+
 ping 192.168.1.100
 
 # Test specific port

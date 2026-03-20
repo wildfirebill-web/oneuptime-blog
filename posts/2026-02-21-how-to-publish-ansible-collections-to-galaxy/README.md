@@ -25,6 +25,7 @@ The namespace in your `galaxy.yml` must exactly match a namespace you own on Gal
 
 ```yaml
 # galaxy.yml - Namespace must match your Galaxy namespace
+
 ---
 namespace: your_namespace
 name: your_collection

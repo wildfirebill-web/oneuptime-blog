@@ -12,6 +12,7 @@ When using the OpenTelemetry Collector as a gateway to Lightstep (ServiceNow Clo
 
 ```yaml
 # otel-collector-lightstep.yaml
+
 receivers:
   otlp:
     protocols:

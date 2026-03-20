@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Temporal
+
 version: "3.8"
 
 services:
@@ -85,7 +86,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 ```
 
@@ -165,4 +166,4 @@ temporal workflow describe --workflow-id order-workflow-1 --address localhost:72
 
 ## Conclusion
 
-Temporal persists every workflow step in PostgreSQL, enabling automatic retries and resumption after failures — your worker code doesn't need retry logic. The `auto-setup` image handles database schema migration on first run. The `temporalio/ui` container provides the web interface for monitoring. For production, set `TEMPORAL_TLS_*` environment variables to enable mTLS between workers and the server.
+Temporal persists every workflow step in PostgreSQL, enabling automatic retries and resumption after failures - your worker code doesn't need retry logic. The `auto-setup` image handles database schema migration on first run. The `temporalio/ui` container provides the web interface for monitoring. For production, set `TEMPORAL_TLS_*` environment variables to enable mTLS between workers and the server.

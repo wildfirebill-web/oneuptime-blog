@@ -22,8 +22,9 @@ In the Cloudflare Zero Trust dashboard:
 
 Portainer inside Docker is typically plain HTTP (port 9000). Set the tunnel origin accordingly:
 
-```
+```text
 # In Cloudflare Tunnel configuration (config.yml)
+
 ingress:
   - hostname: portainer.example.com
     service: http://portainer:9000    # Use http, not https

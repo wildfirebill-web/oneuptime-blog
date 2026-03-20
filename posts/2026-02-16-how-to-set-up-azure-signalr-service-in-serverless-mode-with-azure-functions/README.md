@@ -57,6 +57,7 @@ Create a new Azure Functions project. I will use JavaScript/TypeScript, but C# a
 
 ```bash
 # Create a new Azure Functions project
+
 func init signalr-demo --typescript
 cd signalr-demo
 

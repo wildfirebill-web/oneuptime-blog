@@ -16,6 +16,7 @@ The error appears when you use relative imports (with dots) in a file that Pytho
 
 ```python
 # my_module.py
+
 from . import helper  # This causes the error when running: python my_module.py
 ```
 

@@ -30,6 +30,7 @@ Before writing YAML, agree on a label standard. Document it in your repository.
 
 ```yaml
 # docs/label-standards.yaml
+
 # Required labels for all Flux-managed resources:
 #
 # app.kubernetes.io/name: <application-name>

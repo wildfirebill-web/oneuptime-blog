@@ -10,7 +10,7 @@ IO Graphs transform packet lists into time-series charts, making it easy to see 
 
 ## Open IO Graphs
 
-```
+```text
 Statistics → I/O Graph
 
 The graph window shows:
@@ -28,7 +28,7 @@ Controls:
 
 The power of IO Graphs comes from overlaying filtered views:
 
-```
+```text
 In the IO Graph window, bottom panel shows graph lines:
 
 Line 1 (default): [Enabled] [Color] [Filter: empty] → all traffic
@@ -43,6 +43,7 @@ Each line shows the rate of packets matching that filter over time.
 
 ```wireshark
 # Graph 1: Total TCP traffic
+
 tcp
 
 # Graph 2: Retransmissions (should be near zero)
@@ -61,7 +62,7 @@ dns
 
 ## Analyze Bandwidth Over Time
 
-```
+```text
 In IO Graphs:
   Y Axis → Bits/s (instead of Packets/s)
   Interval → 1 second
@@ -75,7 +76,7 @@ This shows bandwidth usage over time:
 
 ## Identify Traffic Spikes and Drops
 
-```
+```text
 Steps:
 1. Open IO Graph
 2. Set interval to 0.1s (100ms) for high resolution
@@ -92,7 +93,7 @@ Click on the graph at the spike time
 
 ## Export Graph Data
 
-```
+```bash
 In the IO Graph window:
   Copy → Copies the graph image to clipboard
   Save As → Saves as PNG or SVG
@@ -119,4 +120,4 @@ tshark -r capture.pcap -q -z io,stat,1,"tcp.analysis.retransmission"
 # 3.000    15   ← spike in retransmissions at second 3
 ```
 
-IO Graphs reveal the temporal relationship between events — showing not just that retransmissions occurred, but exactly when and whether they correlate with traffic changes.
+IO Graphs reveal the temporal relationship between events - showing not just that retransmissions occurred, but exactly when and whether they correlate with traffic changes.

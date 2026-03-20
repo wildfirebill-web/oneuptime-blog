@@ -33,6 +33,7 @@ Set up your EKS Anywhere cluster and verify access.
 
 ```bash
 # Check your EKS Anywhere cluster
+
 eksctl anywhere get clusters
 
 # Set kubeconfig

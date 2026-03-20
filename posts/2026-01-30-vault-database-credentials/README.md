@@ -55,6 +55,7 @@ The database secrets engine must be enabled at a path before you can configure c
 
 ```bash
 # Enable the database secrets engine at the default path
+
 # You can specify a different path with -path=custom/path
 vault secrets enable database
 ```

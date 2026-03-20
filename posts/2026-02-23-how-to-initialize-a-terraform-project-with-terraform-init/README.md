@@ -23,6 +23,7 @@ When you run `terraform init`, Terraform performs several operations in sequence
 
 ```bash
 # Run terraform init in your project directory
+
 terraform init
 ```
 

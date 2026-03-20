@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, distinct, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Distinct, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the distinct function in OpenTofu to remove duplicate values from a list while preserving order.
 
@@ -121,7 +121,7 @@ locals {
 
   # toset: returns a set (unordered, all unique)
   as_set = toset(local.with_dupes)
-  # toset(["a", "b", "c"]) — order not guaranteed
+  # toset(["a", "b", "c"]) - order not guaranteed
 }
 ```
 
@@ -131,4 +131,4 @@ Use `distinct()` when you need a list with preserved order. Use `toset()` when o
 
 ## Summary
 
-`distinct(list)` removes duplicate values from a list, keeping only the first occurrence of each value and maintaining order. Use it when combining multiple lists that may have overlapping values — like merging security group IDs from different sources, collecting unique regions from service configs, or deduplicating tag lists. For unordered deduplication, `toset()` is an alternative.
+`distinct(list)` removes duplicate values from a list, keeping only the first occurrence of each value and maintaining order. Use it when combining multiple lists that may have overlapping values - like merging security group IDs from different sources, collecting unique regions from service configs, or deduplicating tag lists. For unordered deduplication, `toset()` is an alternative.

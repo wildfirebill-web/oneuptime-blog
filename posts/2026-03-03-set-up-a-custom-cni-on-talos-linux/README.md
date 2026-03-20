@@ -20,6 +20,7 @@ The key setting is `cluster.network.cni`:
 
 ```yaml
 # View the current CNI configuration
+
 # Default Talos configuration uses Flannel
 cluster:
   network:

@@ -42,6 +42,7 @@ You need a running TimescaleDB instance. Docker provides the quickest setup for 
 
 ```bash
 # Pull and run TimescaleDB container
+
 docker run -d --name timescaledb \
   -p 5432:5432 \
   -e POSTGRES_PASSWORD=password \

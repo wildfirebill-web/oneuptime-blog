@@ -28,6 +28,7 @@ Create a certificate map:
 
 ```bash
 # Create a DNS authorization
+
 gcloud certificate-manager dns-authorizations create app-dns-auth \
   --domain="app.example.com"
 

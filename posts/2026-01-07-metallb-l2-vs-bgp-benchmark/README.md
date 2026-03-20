@@ -75,6 +75,7 @@ This deployment creates 6 nginx replicas spread across nodes with anti-affinity 
 
 ```yaml
 # test-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

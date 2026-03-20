@@ -40,6 +40,7 @@ Add Tokio and related dependencies to your project:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "async-demo"
 version = "0.1.0"

@@ -18,6 +18,7 @@ The OpenTelemetry project reorganized its semantic conventions to improve consis
 
 ```text
 # HTTP attribute renames (old -> new)
+
 http.method          ->  http.request.method
 http.url             ->  url.full
 http.target          ->  url.path + url.query

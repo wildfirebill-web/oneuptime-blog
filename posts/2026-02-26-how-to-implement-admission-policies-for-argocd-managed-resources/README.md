@@ -45,6 +45,7 @@ Starting with Kubernetes 1.28, ValidatingAdmissionPolicy is GA. It is a built-in
 
 ```yaml
 # Require resource limits on all Deployments
+
 apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingAdmissionPolicy
 metadata:

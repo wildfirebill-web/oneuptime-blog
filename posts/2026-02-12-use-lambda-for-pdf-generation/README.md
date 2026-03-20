@@ -20,6 +20,7 @@ First, set up your project:
 
 ```bash
 # Initialize project and install PDFKit
+
 mkdir pdf-generator && cd pdf-generator
 npm init -y
 npm install @aws-sdk/client-s3 pdfkit

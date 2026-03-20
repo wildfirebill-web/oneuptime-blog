@@ -68,6 +68,7 @@ def analyze_key_patterns(host, password):
     return dict(patterns)
 
 # Identify keys that need hash tags
+
 patterns = analyze_key_patterns('localhost', 'password')
 for pattern, count in sorted(patterns.items(), key=lambda x: -x[1])[:20]:
     print(f"{count:>8} {pattern}")

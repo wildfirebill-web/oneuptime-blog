@@ -18,6 +18,7 @@ Before writing playbooks, set up your inventory with the correct connection para
 
 ```yaml
 # inventory/switches.yml - Switch inventory with connection details
+
 ---
 all:
   children:

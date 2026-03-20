@@ -24,6 +24,7 @@ Ingress rules are defined within NetworkRuleConfig documents:
 
 ```yaml
 # Basic ingress firewall rule
+
 apiVersion: v1alpha1
 kind: NetworkRuleConfig
 name: allow-https

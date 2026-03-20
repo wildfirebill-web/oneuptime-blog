@@ -33,6 +33,7 @@ Before trying fixes, understand what state the container is in:
 
 ```bash
 # Get detailed container state
+
 docker inspect problem-container --format '{{json .State}}' | jq
 
 # Check for any errors in state

@@ -32,6 +32,7 @@ Both machines need IP forwarding enabled to route traffic:
 
 ```bash
 # Enable IP forwarding temporarily
+
 sudo sysctl -w net.ipv4.ip_forward=1
 
 # Make it persistent

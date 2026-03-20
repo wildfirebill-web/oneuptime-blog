@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Install Clevis with TPM2 support
+
 sudo dnf install clevis clevis-luks clevis-dracut tpm2-tools -y
 
 # Verify TPM is available

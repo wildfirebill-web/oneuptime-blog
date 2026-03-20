@@ -13,7 +13,8 @@ BGP session health monitoring is critical for detecting peering failures before 
 ## Core FRRouting Monitoring Commands
 
 ```bash
-# Quick health check — session states and prefix counts
+# Quick health check - session states and prefix counts
+
 vtysh -c "show bgp ipv6 unicast summary"
 
 # Detailed neighbor status including uptime and reset count
@@ -38,7 +39,7 @@ vtysh -c "show bgp neighbors 2001:db8::peer" | grep -A 3 "Last notification"
 BFD provides sub-second failure detection for BGP sessions, much faster than the Hold timer:
 
 ```bash
-# FRRouting — Enable BFD for a BGP IPv6 neighbor
+# FRRouting - Enable BFD for a BGP IPv6 neighbor
 vtysh
 configure terminal
 

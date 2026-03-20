@@ -24,6 +24,7 @@ A histogram tracks the distribution of values by counting how many observations 
 
 ```yaml
 # Example: HTTP request duration histogram
+
 http_request_duration_seconds_bucket{le="0.005"} 24054
 http_request_duration_seconds_bucket{le="0.01"}  33444
 http_request_duration_seconds_bucket{le="0.025"} 100392

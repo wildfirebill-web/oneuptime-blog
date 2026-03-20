@@ -29,6 +29,7 @@ The admin role is defined internally in ArgoCD and cannot be modified. You can v
 
 ```yaml
 # The admin role effectively has this policy (built-in, not configurable)
+
 p, role:admin, applications, *, */*, allow
 p, role:admin, clusters, *, *, allow
 p, role:admin, repositories, *, *, allow

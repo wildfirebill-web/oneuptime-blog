@@ -38,6 +38,7 @@ Consul's service discovery also includes health checking at the Consul level (in
 
 ```bash
 # Consul service discovery - query services across platforms
+
 consul catalog services
 
 # Check service health

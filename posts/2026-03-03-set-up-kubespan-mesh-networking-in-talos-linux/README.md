@@ -42,6 +42,7 @@ KubeSpan is enabled in the machine configuration. The simplest setup is:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     kubespan:

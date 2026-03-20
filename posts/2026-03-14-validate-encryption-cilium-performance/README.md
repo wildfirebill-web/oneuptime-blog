@@ -32,6 +32,7 @@ set -euo pipefail
 
 echo "=== Encryption Validation ==="
 # Verify encryption is active
+
 cilium encrypt status | grep -q "Encryption:" || { echo "FAIL: No encryption"; exit 1; }
 
 # Throughput validation

@@ -1243,7 +1243,7 @@ describe('RegistrationForm Accessibility', () => {
 
 ---
 
-## Resources and Tools
+Resources and Tools
 
 **Testing Tools:**
 - [axe DevTools](https://www.deque.com/axe/) - Browser extension for accessibility audits

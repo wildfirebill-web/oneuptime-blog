@@ -36,6 +36,7 @@ Before creating a GPU batch job, verify you have sufficient GPU quota in your re
 
 ```bash
 # Check NVIDIA T4 GPU quota in us-central1
+
 gcloud compute regions describe us-central1 \
   --format="table(quotas.filter(metric='NVIDIA_T4_GPUS').metric, quotas.filter(metric='NVIDIA_T4_GPUS').limit, quotas.filter(metric='NVIDIA_T4_GPUS').usage)"
 

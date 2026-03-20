@@ -16,6 +16,7 @@ The simplest pattern is looping over a list of hosts and delegating each task it
 
 ```yaml
 # basic_delegate_loop.yml - Run a command on multiple hosts via delegation
+
 ---
 - name: Check disk space on all database servers from monitoring host
   hosts: monitoring

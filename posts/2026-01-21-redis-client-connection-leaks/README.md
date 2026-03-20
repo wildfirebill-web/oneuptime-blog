@@ -25,6 +25,7 @@ A connection leak happens when:
 
 ```bash
 # Current connected clients
+
 redis-cli INFO clients
 
 # Key metrics:

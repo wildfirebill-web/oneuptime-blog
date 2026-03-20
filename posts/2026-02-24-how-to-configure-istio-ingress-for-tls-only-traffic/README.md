@@ -39,6 +39,7 @@ The `credentialName` references a Kubernetes Secret that contains your TLS certi
 
 ```bash
 # Create the TLS secret
+
 kubectl create secret tls my-tls-cert \
   --cert=cert.pem \
   --key=key.pem \

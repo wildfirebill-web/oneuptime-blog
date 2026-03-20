@@ -42,6 +42,7 @@ Before migrating, ensure:
 
 ```bash
 # Check Helm 2 version
+
 helm version --client
 
 # Check Helm 3 is installed

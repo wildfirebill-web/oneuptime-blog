@@ -31,6 +31,7 @@ You can find your Ubuntu base codename with this command.
 
 ```bash
 # Get the Ubuntu codename underlying your Mint installation
+
 cat /etc/upstream-release/lsb-release | grep CODENAME
 ```
 

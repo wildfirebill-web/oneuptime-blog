@@ -30,6 +30,7 @@ Add capability labels to nodes:
 
 ```bash
 # Hardware capabilities
+
 kubectl label node edge-node-01 \
   gpu=nvidia-t4 \
   storage-type=nvme \

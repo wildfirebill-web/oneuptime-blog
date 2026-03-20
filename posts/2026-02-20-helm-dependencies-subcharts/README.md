@@ -33,6 +33,7 @@ Add dependencies to your `Chart.yaml`:
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: myapp
 description: Full-stack application with database and cache

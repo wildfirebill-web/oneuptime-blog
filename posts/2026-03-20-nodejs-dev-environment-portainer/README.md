@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Node.js, Development Environment, Docker, Hot Reload, JavaScript
+Tags: Portainer, Node.js, Development Environments, Docker, Hot Reload, JavaScript
 
 Description: Learn how to set up a Node.js development environment with hot-reload and debugging in a Docker container managed by Portainer.
 
@@ -48,7 +48,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  // Edit this and save — nodemon picks it up
+  // Edit this and save - nodemon picks it up
   res.json({ message: 'Node.js dev environment running' });
 });
 
@@ -104,6 +104,7 @@ For projects requiring different Node versions, change the image tag in Portaine
 
 ```yaml
 # Node 18 LTS
+
 image: node:18-alpine
 
 # Node 20 LTS

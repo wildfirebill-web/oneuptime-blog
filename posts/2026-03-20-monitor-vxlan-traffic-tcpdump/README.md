@@ -14,6 +14,7 @@ Monitoring VXLAN traffic with tcpdump lets you verify encapsulation, troubleshoo
 
 ```bash
 # Capture all VXLAN UDP traffic on the physical interface
+
 tcpdump -i eth0 udp port 4789 -n
 
 # Verbose output showing VXLAN headers

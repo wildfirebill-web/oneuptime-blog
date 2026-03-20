@@ -18,6 +18,7 @@ Start with overall job status:
 
 ```bash
 # Get job status
+
 kubectl get job failed-job
 
 # Detailed status

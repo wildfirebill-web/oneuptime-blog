@@ -24,6 +24,7 @@ Google provides several base images in Artifact Registry:
 
 ```bash
 # List available base images
+
 # These are the official Cloud Workstations base images
 gcloud artifacts docker images list \
     us-central1-docker.pkg.dev/cloud-workstations-images/predefined

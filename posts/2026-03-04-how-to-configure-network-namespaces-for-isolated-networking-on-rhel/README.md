@@ -14,6 +14,7 @@ Network namespaces provide isolated network stacks, each with its own interfaces
 
 ```bash
 # Create a new network namespace
+
 sudo ip netns add ns1
 
 # List all network namespaces

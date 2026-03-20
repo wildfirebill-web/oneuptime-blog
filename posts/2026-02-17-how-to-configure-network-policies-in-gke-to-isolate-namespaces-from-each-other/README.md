@@ -23,6 +23,7 @@ For new clusters, I recommend Dataplane V2 as it provides better performance and
 
 ```bash
 # Create a cluster with network policy support using Dataplane V2
+
 gcloud container clusters create my-cluster \
   --region us-central1 \
   --enable-dataplane-v2 \

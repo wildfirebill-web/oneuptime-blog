@@ -12,7 +12,7 @@ UDP over IPv6 normally has a maximum payload of 65527 bytes (65535 payload minus
 
 ## UDP Length Field in Jumbograms
 
-```
+```text
 Standard UDP header (RFC 768):
   Source Port  [16 bits]
   Dest Port    [16 bits]
@@ -87,6 +87,7 @@ def calculate_udp_jumbogram_checksum(
     return ~checksum & 0xFFFF
 
 # Example: Calculate checksum for a 100,000-byte UDP jumbogram payload
+
 payload = b'X' * 100000
 checksum = calculate_udp_jumbogram_checksum("2001:db8::1", "2001:db8::2", payload)
 print(f"UDP jumbogram checksum: 0x{checksum:04X}")
@@ -141,7 +142,7 @@ sudo sysctl -w net.core.wmem_max=134217728   # 128 MB
 
 ## Practical Considerations
 
-```
+```text
 When to use large UDP over IPv6:
 
 1. NFS over RDMA (InfiniBand): Uses large UDP-like transport

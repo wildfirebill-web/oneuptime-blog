@@ -45,6 +45,7 @@ You can see what istiod knows about your services through the debug endpoint:
 
 ```bash
 # Port-forward to istiod
+
 kubectl port-forward -n istio-system deploy/istiod 15014:15014
 
 # Query the service registry

@@ -20,6 +20,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ```bash
 # Check if IPv6 package is installed (RouterOS 6.x)
+
 /system package print
 
 # Enable the IPv6 package if not running
@@ -32,7 +33,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ### IPv6 Address Assignment
 
-```
+```text
 # Add static IPv6 address to ether1
 /ipv6 address add address=2001:db8::1/64 interface=ether1
 
@@ -45,7 +46,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ### IPv6 Routes
 
-```
+```text
 # Add IPv6 default route
 /ipv6 route add dst-address=::/0 gateway=2001:db8:wan::254
 
@@ -58,7 +59,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ### IPv6 Firewall Rules
 
-```
+```text
 # Allow established connections
 /ipv6 firewall filter add chain=input connection-state=established,related action=accept
 
@@ -74,7 +75,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ### DHCPv6 Server
 
-```
+```text
 # Create DHCPv6 server
 /ipv6 dhcp-server add name=dhcpv6 interface=bridge address-pool=ipv6-pool
 
@@ -87,7 +88,7 @@ Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Win
 
 ### Router Advertisements (ND)
 
-```
+```text
 # Configure RA for SLAAC
 /ipv6 nd add interface=bridge   advertise-dns=yes   dns=2001:4860:4860::8888   managed-address-configuration=no   other-configuration=no
 
@@ -105,7 +106,7 @@ For GUI configuration:
 
 ## Monitoring Traffic
 
-```
+```text
 # Real-time traffic monitoring (Torch)
 /tool torch interface=ether1 ip-protocol=ipv6
 

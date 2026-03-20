@@ -26,6 +26,7 @@ This command prints the current date and timezone abbreviation inside a running 
 
 ```bash
 # Check current timezone in a running container
+
 docker exec my-container date
 # Output: Sat Feb  8 14:30:00 UTC 2026
 ```

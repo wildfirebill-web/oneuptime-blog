@@ -25,6 +25,7 @@ The `system` parameter is what tells Ansible to create a system user instead of 
 
 ```yaml
 # create-system-user.yml - Create a basic system user
+
 - name: Create a system user for a service
   hosts: all
   become: yes

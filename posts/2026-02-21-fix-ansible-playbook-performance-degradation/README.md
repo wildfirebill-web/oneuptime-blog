@@ -18,6 +18,7 @@ More hosts means more time, especially with the default forks of 5:
 
 ```ini
 # ansible.cfg - Increase parallelism
+
 [defaults]
 forks = 50  # Default is 5, increase for large inventories
 ```

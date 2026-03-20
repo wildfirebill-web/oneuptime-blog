@@ -28,6 +28,7 @@ The latest version of Kubernetes Dashboard (v3+) uses a Helm chart for installat
 
 ```bash
 # Add the Kubernetes Dashboard Helm repository
+
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 helm repo update
 ```

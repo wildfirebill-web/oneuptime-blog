@@ -31,6 +31,7 @@ Start with a simple backend service. This example uses a basic REST API:
 
 ```yaml
 # backend.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -55,6 +55,7 @@ This error means calicoctl cannot reach the Kubernetes API server or etcd endpoi
 
 ```bash
 # Verify the DATASTORE_TYPE environment variable
+
 echo $DATASTORE_TYPE
 
 # For Kubernetes datastore (most common)

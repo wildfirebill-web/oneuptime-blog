@@ -62,6 +62,7 @@ Configure OpenTelemetry through your application.yml file. The starter supports 
 
 ```yaml
 # Basic OpenTelemetry configuration
+
 otel:
   # Service name appears in all traces and metrics
   service:

@@ -72,6 +72,7 @@ Define a structured schema for all alerts in your system. This ensures consisten
 
 ```yaml
 # alert-definition.yaml
+
 apiVersion: alerts.oneuptime.com/v1
 kind: AlertDefinition
 metadata:

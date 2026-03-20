@@ -30,6 +30,7 @@ Getting started with Fastify requires just a few packages. Start by initializing
 
 ```bash
 # Create project directory
+
 mkdir fastify-api && cd fastify-api
 
 # Initialize package.json

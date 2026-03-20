@@ -24,6 +24,7 @@ Spring Boot provides sensible defaults out of the box:
 # application.properties
 
 # Set root logging level
+
 logging.level.root=INFO
 
 # Set logging level for specific packages

@@ -25,6 +25,7 @@ Create a machine user account (e.g., `atlantis-bot`) and generate a PAT:
 
 ```bash
 # Required token scopes:
+
 # - repo (full control of private repositories)
 # - read:org (if using team-based access control)
 

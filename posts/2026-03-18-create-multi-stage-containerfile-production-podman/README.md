@@ -22,6 +22,7 @@ The basic structure looks like this:
 
 ```dockerfile
 # Stage 1: Build
+
 FROM build-image AS builder
 # ... build your application ...
 

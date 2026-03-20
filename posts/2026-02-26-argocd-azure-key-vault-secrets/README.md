@@ -33,6 +33,7 @@ graph LR
 
 ```bash
 # Enable workload identity on an existing cluster
+
 az aks update \
   --resource-group my-rg \
   --name my-aks \

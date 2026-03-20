@@ -575,6 +575,7 @@ Once metrics are generated, you can query them in Prometheus and visualize in Gr
 
 ```promql
 # Request rate between services
+
 rate(traces_service_graph_request_total[5m])
 
 # Error rate between specific services

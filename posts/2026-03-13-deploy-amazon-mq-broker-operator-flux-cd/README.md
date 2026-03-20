@@ -25,6 +25,7 @@ Using the ACK Amazon MQ controller with Flux CD means your broker configuration,
 
 ```yaml
 # infrastructure/sources/ack-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

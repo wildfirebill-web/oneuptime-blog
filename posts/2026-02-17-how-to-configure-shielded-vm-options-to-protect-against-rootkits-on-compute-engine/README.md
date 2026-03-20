@@ -30,6 +30,7 @@ When creating a new instance, enable all three Shielded VM features:
 
 ```bash
 # Create a Shielded VM with all security features enabled
+
 gcloud compute instances create secure-vm \
     --zone=us-central1-a \
     --machine-type=e2-medium \

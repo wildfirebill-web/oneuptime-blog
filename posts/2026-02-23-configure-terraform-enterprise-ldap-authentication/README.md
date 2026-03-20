@@ -47,6 +47,7 @@ TFE needs several pieces of information to connect to your directory:
 
 ```bash
 # For Active Directory, create a service account using PowerShell
+
 New-ADUser -Name "TFE Service Account" \
   -SamAccountName "svc-tfe-ldap" \
   -UserPrincipalName "svc-tfe-ldap@corp.example.com" \

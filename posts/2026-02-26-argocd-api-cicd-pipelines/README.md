@@ -20,6 +20,7 @@ Create a dedicated service account for your CI/CD pipeline:
 
 ```bash
 # Create an API token for a local account named 'ci-bot'
+
 # First, ensure the account exists in argocd-cm ConfigMap
 kubectl patch configmap argocd-cm -n argocd --type merge -p '{
   "data": {

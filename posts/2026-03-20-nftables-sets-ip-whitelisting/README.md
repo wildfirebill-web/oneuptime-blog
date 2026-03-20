@@ -22,6 +22,7 @@ Anonymous sets are defined directly in a rule using `{ }`. They are useful when 
 
 ```bash
 # Allow SSH from a small set of known IPs
+
 nft add rule inet filter input ip saddr { 10.0.0.1, 10.0.0.2, 203.0.113.50 } tcp dport 22 accept
 ```
 

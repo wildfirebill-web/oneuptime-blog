@@ -61,6 +61,7 @@ Here's how to create one with the maximum 7 partitions:
 
 ```bash
 # Create a partition placement group
+
 aws ec2 create-placement-group \
   --group-name distributed-cluster \
   --strategy partition \

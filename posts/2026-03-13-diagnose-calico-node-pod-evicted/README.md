@@ -41,6 +41,7 @@ kubectl get pods -n kube-system -l k8s-app=calico-node -o wide | grep -E "Evicte
 ```bash
 kubectl describe node <node-name> | grep -A 20 "Conditions:"
 # Look for: DiskPressure, MemoryPressure, PIDPressure
+
 ```
 
 **Step 3: Check node resource usage**

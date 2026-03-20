@@ -20,6 +20,7 @@ Rootless Podman stores data in user-owned directories.
 
 ```bash
 # Verify you are running rootless Podman
+
 podman info --format '{{.Host.Security.Rootless}}'
 
 # Check rootless storage paths

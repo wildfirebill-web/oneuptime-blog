@@ -1,4 +1,4 @@
-# How to Create a Stack from a Git Repository in Portainer
+# How to Create a Stack from a Git Repository in Portainer - From
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ Deploying stacks from a Git repository is the recommended production approach fo
 
 Structure your repository to include the Compose file and any supporting configs:
 
-```
+```text
 my-app-infra/
 ├── docker-compose.yml        # Main stack definition
 ├── docker-compose.prod.yml   # Production overrides (optional)
@@ -79,6 +79,7 @@ For private repositories, create a deploy key:
 
 ```bash
 # Generate an SSH key pair:
+
 ssh-keygen -t ed25519 -C "portainer-deploy" -f portainer_deploy_key -N ""
 
 # Add the PUBLIC key to your repository:
@@ -96,7 +97,7 @@ cat portainer_deploy_key
 3. Select **Repository** as the build method.
 4. Configure the Git settings:
 
-```
+```text
 Repository URL:  https://github.com/myorg/my-app-infra
                  (or git@github.com:myorg/my-app-infra for SSH)
 Repository ref:  refs/heads/main
@@ -113,7 +114,7 @@ Compose path:    docker-compose.yml
 
 In the **Environment variables** section below the Git configuration:
 
-```
+```text
 IMAGE_TAG        v1.2.3
 API_URL          https://api.example.com
 DATABASE_URL     postgresql://user:pass@postgres:5432/mydb
@@ -127,7 +128,7 @@ These are injected at deploy time and override any `.env` file in the repo.
 
 Target specific branches or tags for environment-specific deployments:
 
-```
+```text
 # For production (from main branch):
 Repository ref: refs/heads/main
 
@@ -168,4 +169,4 @@ docker ps --filter "label=com.docker.compose.project=my-app"
 
 ## Conclusion
 
-Deploying stacks from Git repositories is the production-grade approach to stack management in Portainer. Your Compose files gain version history, peer review via pull requests, and rollback capability. Combined with Portainer's auto-update polling, your infrastructure automatically stays synchronized with your Git repository — achieving a GitOps workflow without requiring a dedicated CD tool. Use environment variables in Portainer to inject secrets that should not be committed to the repository.
+Deploying stacks from Git repositories is the production-grade approach to stack management in Portainer. Your Compose files gain version history, peer review via pull requests, and rollback capability. Combined with Portainer's auto-update polling, your infrastructure automatically stays synchronized with your Git repository - achieving a GitOps workflow without requiring a dedicated CD tool. Use environment variables in Portainer to inject secrets that should not be committed to the repository.

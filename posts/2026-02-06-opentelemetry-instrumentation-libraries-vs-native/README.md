@@ -152,6 +152,7 @@ Native instrumentation provides complete flexibility. You can structure your spa
 
 ```python
 # Native instrumentation with custom span hierarchy
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer(__name__)

@@ -192,6 +192,7 @@ public class CheckpointConfiguration {
 
 ```bash
 # Trigger a savepoint manually using the Flink CLI
+
 # The savepoint is stored in the specified directory
 flink savepoint <job-id> /path/to/savepoints
 

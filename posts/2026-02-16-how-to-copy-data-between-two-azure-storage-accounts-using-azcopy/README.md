@@ -37,6 +37,7 @@ Log in with Azure AD credentials that have access to both storage accounts:
 
 ```bash
 # Log in with Azure AD - this works for both source and destination
+
 azcopy login
 ```
 

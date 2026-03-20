@@ -75,6 +75,7 @@ First, we need to install the `targetcli-fb` package which provides the modern L
 
 ```bash
 # Update the package repository to ensure we get the latest package versions
+
 sudo apt update
 
 # Install targetcli-fb (the 'fb' stands for 'free branch' - the community-maintained version)

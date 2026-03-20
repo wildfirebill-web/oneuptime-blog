@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Routing, iproute2, Policy Routing, ip rule, Networking
+Tags: Linux, Routing, iproute2, Policy Routing, Ip rule, Networking
 
 Description: List all routing tables and policy routing rules on Linux using iproute2 commands to audit and understand how traffic is routed across multiple tables.
 
@@ -14,6 +14,7 @@ Linux uses multiple routing tables evaluated in priority order. The `ip rule` co
 
 ```bash
 # Show all ip rules (policy routing database)
+
 ip rule list
 
 # Sample output:

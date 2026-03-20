@@ -37,6 +37,7 @@ Here is a playbook that rotates a PostgreSQL password without downtime:
 
 ```yaml
 # playbooks/rotate-db-password.yml
+
 # Rotate database password with zero downtime
 ---
 - name: Generate new database password

@@ -30,6 +30,7 @@ Confirm the CNI configuration file on nodes shows NCP as primary and Cilium as c
 
 ```bash
 # Check the CNI configuration directory on a node
+
 # The conflist should show NCP plugin first, followed by Cilium
 kubectl -n kube-system exec -it \
   $(kubectl -n kube-system get pods -l k8s-app=cilium -o name | head -1) -- \

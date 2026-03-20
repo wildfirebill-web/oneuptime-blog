@@ -44,6 +44,7 @@ Update your `application.yml` to remove Eureka config:
 
 ```yaml
 # Remove all of this
+
 eureka:
   client:
     serviceUrl:

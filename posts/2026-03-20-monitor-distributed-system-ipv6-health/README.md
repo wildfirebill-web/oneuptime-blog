@@ -20,6 +20,7 @@ global:
   evaluation_interval: 15s
 
 # Alertmanager with IPv6
+
 alerting:
   alertmanagers:
     - static_configs:

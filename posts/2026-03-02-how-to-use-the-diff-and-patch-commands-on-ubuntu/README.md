@@ -36,6 +36,7 @@ The `c` means changed, `a` means added, `d` means deleted. The numbers indicate 
 
 ```bash
 # -u flag produces unified diff, -N context lines (default 3)
+
 diff -u file1.txt file2.txt
 ```
 

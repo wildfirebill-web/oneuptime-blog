@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Kustomize, Kubernetes, GitOps, Overlays, Configuration Management
+Tags: IPv6, Kustomize, Kubernetes, GitOps, Overlay, Configuration Management
 
-Description: Use Kustomize overlays to manage IPv6-specific Kubernetes configuration across environments, including service IP family patches, environment-specific IPv6 addresses, and strategic merge patches for dual-stack networking.
+Description: Use Kustomize overlays to manage IPv6-specific Kubernetes configuration across environments, including service IP family patches, environment-specific IPv6 addresses, and strategic merge patches...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Kustomize enables environment-specific Kubernetes configuration through overlays
 
 ## Directory Structure
 
-```
+```text
 kubernetes/
 ├── base/
 │   ├── kustomization.yaml
@@ -36,6 +36,7 @@ kubernetes/
 
 ```yaml
 # kubernetes/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -46,7 +47,7 @@ resources:
 ```
 
 ```yaml
-# kubernetes/base/service.yaml — Default service (IPv4 only in base)
+# kubernetes/base/service.yaml - Default service (IPv4 only in base)
 apiVersion: v1
 kind: Service
 metadata:
@@ -57,7 +58,7 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-  # No ipFamilyPolicy — defaults to SingleStack IPv4
+  # No ipFamilyPolicy - defaults to SingleStack IPv4
 ```
 
 ## IPv6-Only Overlay

@@ -93,6 +93,7 @@ Create a TKE-specific configuration with Tencent's CLB (Cloud Load Balancer) ann
 
 ```yaml
 # istio-tke.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

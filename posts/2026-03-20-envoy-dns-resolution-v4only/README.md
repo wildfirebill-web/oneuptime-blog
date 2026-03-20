@@ -112,6 +112,7 @@ clusters:
 
 ```bash
 # Check which IPs Envoy resolved for a cluster
+
 curl http://127.0.0.1:9901/clusters | grep backend_service
 
 # Sample output shows IPv4 addresses:

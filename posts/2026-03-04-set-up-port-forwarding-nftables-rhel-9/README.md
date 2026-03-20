@@ -40,6 +40,7 @@ The kernel needs to forward packets between network interfaces. Enable it tempor
 
 ```bash
 # Check current status of IP forwarding
+
 sysctl net.ipv4.ip_forward
 
 # Enable IP forwarding immediately (non-persistent)

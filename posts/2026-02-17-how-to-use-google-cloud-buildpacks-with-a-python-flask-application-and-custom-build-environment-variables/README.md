@@ -30,6 +30,7 @@ Let me start with a simple Flask application.
 
 ```python
 # app.py - A Flask API with a few endpoints
+
 import os
 from flask import Flask, jsonify
 

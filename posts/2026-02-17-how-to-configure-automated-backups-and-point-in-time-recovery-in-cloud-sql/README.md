@@ -32,6 +32,7 @@ If backups are not already enabled on your instance, turn them on:
 
 ```bash
 # Enable automated backups with a 3 AM backup window
+
 gcloud sql instances patch my-instance \
     --backup-start-time=03:00
 ```

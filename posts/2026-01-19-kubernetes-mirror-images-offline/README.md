@@ -44,6 +44,7 @@ flowchart LR
 
 ```yaml
 # harbor-values.yaml
+
 expose:
   type: nodePort
   nodePort:

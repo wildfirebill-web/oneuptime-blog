@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with Native State Locking in OpenTofu
+# How to Configure S3 Backend with Native State Locking in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Traditionally, the S3 backend required a DynamoDB table for state locking. OpenT
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket  = "my-terraform-state"
@@ -34,7 +35,7 @@ terraform {
 }
 ```
 
-The `use_lockfile = true` setting enables a lock file approach — OpenTofu creates a `.tfstate.lock` file in S3 to prevent concurrent operations.
+The `use_lockfile = true` setting enables a lock file approach - OpenTofu creates a `.tfstate.lock` file in S3 to prevent concurrent operations.
 
 ## How Native Locking Works
 
@@ -110,7 +111,7 @@ With native locking, you need slightly different S3 permissions:
 }
 ```
 
-No DynamoDB permissions needed — a significant simplification.
+No DynamoDB permissions needed - a significant simplification.
 
 ## Migrating from DynamoDB Locking to Native Locking
 

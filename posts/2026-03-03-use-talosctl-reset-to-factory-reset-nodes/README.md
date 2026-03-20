@@ -26,6 +26,7 @@ The result is a clean node that has no memory of its previous cluster membership
 
 ```bash
 # Reset a node with default settings (graceful mode)
+
 talosctl reset --nodes <node-ip>
 ```
 

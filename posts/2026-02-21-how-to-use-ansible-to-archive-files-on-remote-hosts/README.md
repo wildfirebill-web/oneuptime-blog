@@ -16,6 +16,7 @@ The simplest use creates a gzipped tar archive of a directory.
 
 ```yaml
 # Create a tar.gz archive of the application directory
+
 - name: Archive application directory
   community.general.archive:
     path: /opt/myapp

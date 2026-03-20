@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, VNet Peering, Network, Connectivity, Hub-Spoke, Infrastructure as Code
+Tags: OpenTofu, Azure, VNet Peering, Networks, Connectivity, Hub-Spoke, Infrastructure as Code
 
 Description: Learn how to configure Azure Virtual Network peering with OpenTofu to connect VNets within the same region or across regions for private traffic routing without gateways.
 
 ## Introduction
 
-Azure VNet Peering connects two VNets using the Azure backbone network—traffic between peered VNets routes through Microsoft's private network at low latency and high bandwidth without internet exposure. Peering can connect VNets in the same region (regional peering) or across regions (global peering). Hub-spoke topologies use peering to connect spoke VNets to a central hub VNet that hosts shared services like firewalls, VPN gateways, and monitoring infrastructure.
+Azure VNet Peering connects two VNets using the Azure backbone network-traffic between peered VNets routes through Microsoft's private network at low latency and high bandwidth without internet exposure. Peering can connect VNets in the same region (regional peering) or across regions (global peering). Hub-spoke topologies use peering to connect spoke VNets to a central hub VNet that hosts shared services like firewalls, VPN gateways, and monitoring infrastructure.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Azure VNet Peering connects two VNets using the Azure backbone network—traffic
 
 ```hcl
 # Peering from VNet A to VNet B
+
 resource "azurerm_virtual_network_peering" "a_to_b" {
   name                      = "${var.project_name}-a-to-b"
   resource_group_name       = var.vnet_a_resource_group
@@ -169,4 +170,4 @@ ping <vm-private-ip-in-vnet-b>
 
 ## Conclusion
 
-Peering is non-transitive: if VNet A peers with hub, and hub peers with VNet B, VNet A cannot route to VNet B without direct peering or using Azure Firewall/NVA in the hub as a router. For hub-spoke architectures, set `allow_gateway_transit = true` on hub-to-spoke peerings and `use_remote_gateways = true` on spoke-to-hub peerings to allow spokes to use the hub's VPN or ExpressRoute gateway for on-premises connectivity. VNet address spaces must not overlap—plan IP ranges carefully before peering since address space changes require disconnecting and reconnecting peerings.
+Peering is non-transitive: if VNet A peers with hub, and hub peers with VNet B, VNet A cannot route to VNet B without direct peering or using Azure Firewall/NVA in the hub as a router. For hub-spoke architectures, set `allow_gateway_transit = true` on hub-to-spoke peerings and `use_remote_gateways = true` on spoke-to-hub peerings to allow spokes to use the hub's VPN or ExpressRoute gateway for on-premises connectivity. VNet address spaces must not overlap-plan IP ranges carefully before peering since address space changes require disconnecting and reconnecting peerings.

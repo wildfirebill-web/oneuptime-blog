@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Install Infracost
+
 brew install infracost  # or use the installer script
 
 # Authenticate
@@ -140,7 +141,7 @@ jobs:
 ## Usage-Based Cost Estimates
 
 ```hcl
-# infracost_usage.yml — define expected usage for better estimates
+# infracost_usage.yml - define expected usage for better estimates
 resource "aws_lambda_function" "processor" {
   # Infracost uses these comments for usage estimates
   # infracost-usage: {"monthly_requests": 10000000, "average_request_duration_ms": 100}
@@ -152,8 +153,8 @@ resource "aws_lambda_function" "processor" {
 
 ## Best Practices
 
-- Run `infracost breakdown` before submitting PRs — it takes seconds and surfaces surprises before reviewers see the code.
-- Set cost gate thresholds in CI/CD — block PRs that increase monthly spend by more than a defined threshold without manager approval.
+- Run `infracost breakdown` before submitting PRs - it takes seconds and surfaces surprises before reviewers see the code.
+- Set cost gate thresholds in CI/CD - block PRs that increase monthly spend by more than a defined threshold without manager approval.
 - Use Infracost usage files to estimate variable costs (Lambda invocations, API Gateway calls, data transfer) more accurately.
-- Share cost estimates in team Slack channels for high-cost changes — visibility drives accountability.
+- Share cost estimates in team Slack channels for high-cost changes - visibility drives accountability.
 - Compare costs across environments: `infracost diff --path environments/dev --compare-to environments/production` shows how close staging is to production costs.

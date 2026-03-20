@@ -29,6 +29,7 @@ Enable the key-auth plugin globally or per-route. First, create a consumer with 
 
 ```bash
 # Create consumer with API key
+
 curl http://127.0.0.1:9180/apisix/admin/consumers \
   -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' \
   -X PUT -d '{

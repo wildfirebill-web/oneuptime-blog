@@ -117,6 +117,7 @@ This multi-stage Dockerfile uses a caching trick to speed up builds:
 
 ```dockerfile
 # Stage 1: Build the Rust application
+
 FROM rust:1.77-alpine AS build
 
 # Install musl-dev for static linking

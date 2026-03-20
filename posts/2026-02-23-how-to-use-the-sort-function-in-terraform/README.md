@@ -16,6 +16,7 @@ The `sort` function takes a list of strings and returns a new list with the elem
 
 ```hcl
 # Basic sort - alphabetical ordering
+
 > sort(["banana", "apple", "cherry"])
 [
   "apple",

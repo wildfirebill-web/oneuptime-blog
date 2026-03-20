@@ -16,6 +16,7 @@ The quickest way to publish a message.
 
 ```bash
 # Publish a simple text message
+
 aws sns publish \
   --topic-arn arn:aws:sns:us-east-1:123456789012:order-notifications \
   --message "New order received: ORD-12345"

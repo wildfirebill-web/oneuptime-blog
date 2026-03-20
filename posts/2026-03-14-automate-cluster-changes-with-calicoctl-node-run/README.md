@@ -31,6 +31,7 @@ Deploy Calico node across multiple hosts using SSH:
 ```bash
 #!/bin/bash
 # deploy-calico-fleet.sh
+
 # Usage: ./deploy-calico-fleet.sh <hosts-file>
 
 HOSTS_FILE="${1:-hosts.txt}"

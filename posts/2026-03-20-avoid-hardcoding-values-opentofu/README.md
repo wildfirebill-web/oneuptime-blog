@@ -16,6 +16,7 @@ Common categories of hardcoded values to avoid.
 
 ```hcl
 # BAD: Everything hardcoded
+
 resource "aws_s3_bucket" "app" {
   bucket = "my-company-app-prod-us-east-1"  # hardcoded name
   region = "us-east-1"                       # hardcoded region

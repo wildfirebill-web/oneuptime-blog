@@ -44,6 +44,7 @@ Auto-instrumentation is configured entirely through environment variables. This 
 
 ```bash
 # Service identification
+
 export OTEL_SERVICE_NAME="django-api"
 export OTEL_RESOURCE_ATTRIBUTES="service.namespace=production,service.version=1.0.0"
 

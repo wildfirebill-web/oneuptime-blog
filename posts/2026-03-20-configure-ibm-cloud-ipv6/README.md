@@ -14,6 +14,7 @@ IBM Cloud VPC supports IPv6 addressing. IPv6 can be enabled on VPC subnets, and 
 
 ```bash
 # Install IBM Cloud CLI with VPC plugin
+
 ibmcloud plugin install vpc-infrastructure
 
 # Create VPC

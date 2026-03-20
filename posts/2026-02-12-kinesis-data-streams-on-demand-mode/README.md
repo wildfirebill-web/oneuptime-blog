@@ -28,6 +28,7 @@ Creating an on-demand stream is simpler than provisioned because you skip the sh
 
 ```bash
 # Create a Kinesis stream in on-demand mode
+
 # No need to specify shard count - Kinesis manages capacity automatically
 aws kinesis create-stream \
     --stream-name "orders-stream" \

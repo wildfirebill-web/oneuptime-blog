@@ -18,6 +18,7 @@ The simplest method works in any CI system:
 
 ```bash
 # Download the latest version for Linux (most CI runners use Linux)
+
 curl -sSL -o /usr/local/bin/argocd \
   https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
 chmod +x /usr/local/bin/argocd

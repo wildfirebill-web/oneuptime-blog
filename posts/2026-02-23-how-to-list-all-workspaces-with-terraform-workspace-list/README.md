@@ -14,6 +14,7 @@ When you are managing infrastructure across multiple workspaces, you need to kno
 
 ```bash
 # List all workspaces in the current configuration
+
 terraform workspace list
 ```
 

@@ -475,6 +475,7 @@ Check broker configuration:
 
 ```bash
 # Get broker configuration
+
 kafka-configs.sh --bootstrap-server localhost:9092 \
   --entity-type brokers \
   --entity-default \

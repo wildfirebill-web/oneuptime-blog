@@ -26,6 +26,7 @@ The broadest range selects the latest available version.
 
 ```yaml
 # imagepolicy-semver-any.yaml
+
 # Select the latest semver tag regardless of major version
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

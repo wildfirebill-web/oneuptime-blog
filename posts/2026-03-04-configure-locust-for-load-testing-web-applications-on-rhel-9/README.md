@@ -30,6 +30,7 @@ Locust stands out from other load testing tools because:
 
 ```bash
 # Install Locust
+
 pip3 install --user locust
 ```
 

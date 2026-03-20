@@ -18,6 +18,7 @@ First, install the required packages. The Bedrock integration lives in the `lang
 
 ```bash
 # Install LangChain and the AWS integration
+
 pip install langchain langchain-aws boto3
 ```
 

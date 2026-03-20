@@ -34,6 +34,7 @@ Verify your Docker installation before proceeding.
 
 ```bash
 # Check Docker and Docker Compose versions
+
 docker --version
 docker compose version
 ```

@@ -38,6 +38,7 @@ Let's create a system topic for an Azure Storage Account to react to blob events
 
 ```bash
 # First, create a storage account if you do not have one
+
 az storage account create \
   --name stblobevents2026 \
   --resource-group rg-events \

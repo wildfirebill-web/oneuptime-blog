@@ -25,6 +25,7 @@ From your local machine, test the handshake directly:
 
 ```bash
 # Test SSL connection and show certificate details
+
 openssl s_client -connect your-domain.com:443 -servername your-domain.com
 
 # Get just the certificate information

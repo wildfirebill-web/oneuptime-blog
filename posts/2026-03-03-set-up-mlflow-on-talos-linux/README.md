@@ -38,6 +38,7 @@ Start with MinIO, which provides S3-compatible storage:
 
 ```yaml
 # minio-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

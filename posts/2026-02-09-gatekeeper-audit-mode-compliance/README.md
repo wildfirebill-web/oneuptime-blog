@@ -107,6 +107,7 @@ Users see warnings when creating resources:
 ```bash
 kubectl apply -f deployment.yaml
 # Warning: Constraint violation: Container missing resource limits
+
 # deployment.apps/api created
 ```
 

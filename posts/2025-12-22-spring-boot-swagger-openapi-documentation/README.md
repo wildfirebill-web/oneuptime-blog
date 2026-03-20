@@ -41,6 +41,7 @@ With just the dependency added, you get:
 
 ```yaml
 # application.yml
+
 springdoc:
   api-docs:
     path: /api-docs

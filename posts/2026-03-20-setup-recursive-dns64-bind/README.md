@@ -12,7 +12,7 @@ DNS64 (RFC 6147) synthesizes AAAA records from A records when no AAAA record exi
 
 ## Architecture
 
-```
+```text
 IPv6-only client
     → DNS64 resolver (BIND)
         → if AAAA exists: return real AAAA
@@ -96,6 +96,7 @@ named-checkconf
 systemctl restart bind9
 
 # Test with a domain that has only A records
+
 dig AAAA ipv4only.example.com @::1
 # Expected: synthesized AAAA like 64:ff9b::c000:0201
 

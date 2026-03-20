@@ -14,6 +14,7 @@ Vector is a high-performance observability data pipeline built in Rust. It colle
 
 ```bash
 # Add the Vector repository
+
 cat << 'REPO' | sudo tee /etc/yum.repos.d/timber-vector.repo
 [timber-vector]
 name=timber-vector

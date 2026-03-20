@@ -115,6 +115,7 @@ flowchart TD
 
 ```python
 # Instance family specifications for sizing decisions
+
 INSTANCE_SPECS = {
     't3.micro': {'vcpu': 2, 'memory_gb': 1, 'price_hourly': 0.0104},
     't3.small': {'vcpu': 2, 'memory_gb': 2, 'price_hourly': 0.0208},

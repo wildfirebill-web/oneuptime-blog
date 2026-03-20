@@ -28,6 +28,7 @@ First, create an incoming webhook in Slack by going to your Slack workspace sett
 
 ```hcl
 # variables.tf
+
 # Define the Slack webhook URL as a variable
 variable "slack_webhook_url" {
   description = "Slack incoming webhook URL for notifications"

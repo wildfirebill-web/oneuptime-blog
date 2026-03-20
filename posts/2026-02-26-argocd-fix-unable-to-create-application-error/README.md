@@ -30,6 +30,7 @@ The user or service account does not have permission to create applications.
 
 ```bash
 # Check what the current user can do
+
 argocd account can-i create applications '*'
 
 # Check the RBAC policy

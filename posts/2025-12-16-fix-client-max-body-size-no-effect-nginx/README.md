@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, File Upload, Configuration, Proxy, PHP
+Tags: Nginx, Troubleshooting, File Upload, Configuration, Proxy, PHP
 
 Description: Learn why client_max_body_size might not work as expected in Nginx and how to properly configure upload limits across all contexts including proxy and FastCGI configurations.
 
@@ -37,6 +37,7 @@ The directive must be in the correct context. Settings in inner blocks override 
 
 ```nginx
 # This won't work for location /upload/
+
 http {
     client_max_body_size 100M;  # Applied to http context
 

@@ -15,6 +15,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 
 # Async engine - instrumentation may not work
+
 engine = create_async_engine("postgresql+asyncpg://user:pass@localhost/db")
 async_session = sessionmaker(engine, class_=AsyncSession)
 

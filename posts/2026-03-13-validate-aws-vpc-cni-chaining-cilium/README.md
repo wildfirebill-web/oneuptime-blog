@@ -30,6 +30,7 @@ Confirm that Cilium is configured in chaining mode with aws-node.
 
 ```bash
 # Check the Cilium ConfigMap for chaining mode
+
 kubectl get configmap -n kube-system cilium-config \
   -o jsonpath='{.data.cni-chaining-mode}'
 

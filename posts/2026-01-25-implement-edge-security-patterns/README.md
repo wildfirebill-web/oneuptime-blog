@@ -59,6 +59,7 @@ graph TB
 
 ```python
 # device_auth.py
+
 # Device authentication using X.509 certificates
 
 from cryptography import x509

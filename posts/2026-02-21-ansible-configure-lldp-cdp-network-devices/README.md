@@ -24,6 +24,7 @@ In a mixed-vendor environment, LLDP is the way to go. In a Cisco-only shop, CDP 
 
 ```yaml
 # group_vars/all_network/discovery.yml - Discovery protocol settings
+
 ---
 discovery_config:
   # Global CDP settings

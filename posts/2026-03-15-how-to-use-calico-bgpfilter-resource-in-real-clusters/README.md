@@ -203,6 +203,7 @@ Validate filters are active and functioning in production:
 
 ```bash
 # List all filters
+
 calicoctl get bgpfilter -o wide
 
 # Check which peers use which filters

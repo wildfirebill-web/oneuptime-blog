@@ -16,6 +16,7 @@ The first thing to check is always the job stdout. Every failed job in AWX has d
 
 ```bash
 # Get the stdout of a failed job
+
 curl -s -H "Authorization: Bearer ${AWX_TOKEN}" \
   "https://awx.example.com/api/v2/jobs/42/stdout/?format=txt"
 ```

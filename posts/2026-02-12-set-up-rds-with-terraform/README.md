@@ -44,6 +44,7 @@ terraform {
 }
 
 # Subnet group - tells RDS which subnets to use
+
 resource "aws_db_subnet_group" "main" {
   name        = "${var.project_name}-db-subnet-group"
   description = "Database subnet group for ${var.project_name}"

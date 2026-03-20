@@ -416,6 +416,7 @@ Track rate limit metrics with Prometheus:
 
 ```bash
 # Rate limit hit count
+
 envoy_http_local_rate_limit_enabled
 envoy_http_local_rate_limit_enforced
 envoy_http_local_rate_limit_ok

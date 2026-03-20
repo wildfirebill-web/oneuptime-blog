@@ -27,6 +27,7 @@ The missing attribute value length limit is the dangerous one. A single string a
 
 ```python
 # setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider, SpanLimits
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

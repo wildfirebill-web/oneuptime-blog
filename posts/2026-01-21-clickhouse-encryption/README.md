@@ -27,6 +27,7 @@ First, create SSL certificates for your ClickHouse server:
 
 ```bash
 # Create a directory for certificates
+
 mkdir -p /etc/clickhouse-server/certs
 cd /etc/clickhouse-server/certs
 

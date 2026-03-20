@@ -18,6 +18,7 @@ Let me start with a FastAPI app that has a few endpoints. This example is a simp
 
 ```python
 # main.py
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional

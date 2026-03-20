@@ -24,6 +24,7 @@ Managed instance groups need an instance template that defines how to create VMs
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

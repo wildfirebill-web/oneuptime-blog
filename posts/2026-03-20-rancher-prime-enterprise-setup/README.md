@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, rancher-prime, enterprise, setup, kubernetes
+Tags: Rancher, Rancher-prime, Enterprise, Setup, Kubernetes
 
 Description: A comprehensive guide to setting up Rancher Prime for enterprise environments, covering licensing, enterprise features, support access, and production hardening.
 
@@ -29,6 +29,7 @@ Before installing Rancher Prime, prepare your infrastructure:
 
 ```bash
 # Rancher Prime requires a Kubernetes cluster to run on
+
 # Minimum: 3-node HA cluster (RKE2 recommended)
 
 # Node requirements for production:
@@ -118,7 +119,7 @@ kubectl -n cattle-system rollout status deploy/rancher
 
 ## Step 6: Configure Enterprise Authentication
 
-```
+```text
 Rancher UI → Global Settings → Authentication → Active Directory
 
 Settings:
@@ -218,7 +219,7 @@ spec:
 
 Register your Rancher Prime installation with SUSE:
 
-```
+```text
 1. Log in to https://scc.suse.com with your SUSE account
 2. Navigate to Organizations → Your Org → Subscriptions
 3. Find your Rancher Prime subscription

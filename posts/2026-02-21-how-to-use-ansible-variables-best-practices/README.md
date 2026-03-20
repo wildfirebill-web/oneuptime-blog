@@ -32,6 +32,7 @@ Use this to your advantage by defining variables at the appropriate level:
 
 ```yaml
 # roles/nginx/defaults/main.yml
+
 # LOWEST priority - safe fallback values
 # Users SHOULD override these
 nginx_worker_connections: 1024

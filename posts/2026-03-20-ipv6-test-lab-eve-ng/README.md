@@ -18,6 +18,7 @@ EVE-NG (Emulated Virtual Environment - Next Generation) is a network emulation p
 
 ```bash
 # On EVE-NG server, add FRR as a custom Linux image
+
 # SSH to EVE-NG server
 ssh root@eve-ng-server
 
@@ -91,8 +92,8 @@ def add_network(lab_path, name, network_type="pnet0"):
 
 ## Cisco IOS IPv6 Configuration in EVE-NG
 
-```
-! Cisco IOS/IOS-XE — OSPFv3 and BGP IPv6
+```text
+! Cisco IOS/IOS-XE - OSPFv3 and BGP IPv6
 
 ! Enable IPv6 routing
 ipv6 unicast-routing
@@ -127,8 +128,8 @@ router bgp 65001
 
 ## Juniper vSRX IPv6 in EVE-NG
 
-```
-# Juniper Junos — OSPFv3 configuration
+```text
+# Juniper Junos - OSPFv3 configuration
 set interfaces ge-0/0/0 unit 0 family inet6 address 2001:db8:12::1/64
 set interfaces lo0 unit 0 family inet6 address 2001:db8:1::1/128
 

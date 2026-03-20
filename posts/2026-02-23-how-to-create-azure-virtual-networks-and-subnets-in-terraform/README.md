@@ -40,6 +40,7 @@ provider "azurerm" {
 
 ```hcl
 # Resource group for networking
+
 resource "azurerm_resource_group" "networking" {
   name     = "rg-networking-prod-eus"
   location = "East US"

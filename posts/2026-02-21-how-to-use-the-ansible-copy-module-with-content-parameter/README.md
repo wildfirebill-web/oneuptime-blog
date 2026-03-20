@@ -18,6 +18,7 @@ Instead of `src`, use `content` to specify what goes into the file:
 
 ```yaml
 # Write a simple string to a file on the remote host
+
 - name: Create a basic config file
   ansible.builtin.copy:
     content: "ENVIRONMENT=production\nDEBUG=false\nLOG_LEVEL=warn\n"

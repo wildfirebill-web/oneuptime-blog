@@ -29,6 +29,7 @@ Cilium exports WireGuard-related metrics automatically when encryption is enable
 
 ```bash
 # Verify metrics are available
+
 kubectl exec -n kube-system ds/cilium -- cilium metrics list | grep -i encrypt
 
 # Key metrics:

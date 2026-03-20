@@ -243,6 +243,7 @@ Once profile data reaches your backend, you can generate flame graphs filtered b
 
 ```bash
 # Using a tool like pprof to analyze profiles for a specific trace
+
 # (This depends on your backend supporting trace-filtered profile queries)
 go tool pprof -http=:8081 \
   "https://profiling-backend.internal/api/v1/profiles?trace_id=abc123&type=cpu"

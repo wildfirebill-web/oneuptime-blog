@@ -52,6 +52,7 @@ object-storage-bucket/
 
 ```bash
 # Backup Kubernetes ConfigMaps
+
 kubectl get configmap loki-config -n loki -o yaml > loki-config-backup.yaml
 
 # Backup Helm values

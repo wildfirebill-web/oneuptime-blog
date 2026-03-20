@@ -16,6 +16,7 @@ This guide covers how destroy works, how to use it safely, and how to protect cr
 
 ```bash
 # Destroy all managed resources
+
 terraform destroy
 ```
 
@@ -183,7 +184,7 @@ In most organizations, production destruction should go through a change managem
 
 ## Handling Destroy Errors
 
-### Resources That Fail to Destroy
+Resources That Fail to Destroy
 
 Sometimes a resource fails to destroy due to dependencies or state:
 

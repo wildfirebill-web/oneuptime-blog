@@ -20,6 +20,7 @@ def first(items: list) -> object:
 
 result = first([1, 2, 3])
 # result is typed as 'object', not 'int'
+
 ```
 
 The problem here is that we lose type information. The caller knows they passed a list of integers, but the return type is just `object`. Generics solve this by preserving type relationships.

@@ -40,6 +40,7 @@ First, create the Certificate Authority that both sides will trust.
 
 ```bash
 # Generate the CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Create the CA certificate (valid for 10 years)

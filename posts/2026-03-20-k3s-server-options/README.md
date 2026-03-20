@@ -18,6 +18,7 @@ The default configuration file is `/etc/rancher/k3s/config.yaml`. K3s reads this
 sudo mkdir -p /etc/rancher/k3s
 sudo tee /etc/rancher/k3s/config.yaml > /dev/null <<EOF
 # K3s server configuration
+
 token: "SecureToken123"
 EOF
 ```

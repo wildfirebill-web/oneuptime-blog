@@ -35,6 +35,7 @@ The simplest way to enable always-on sampling is in the SDK configuration of the
 
 ```python
 # tracing.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import ALWAYS_ON

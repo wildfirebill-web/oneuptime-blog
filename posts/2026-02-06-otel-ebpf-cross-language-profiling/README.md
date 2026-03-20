@@ -20,6 +20,7 @@ First, pull the OpenTelemetry eBPF profiler agent. It ships as a container image
 
 ```bash
 # Pull the profiler agent image
+
 docker pull ghcr.io/open-telemetry/opentelemetry-ebpf-profiler:v0.8.0
 
 # Run the profiler agent

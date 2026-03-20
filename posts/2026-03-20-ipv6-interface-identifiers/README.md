@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Networking, Interface Identifier, EUI-64, Privacy Extensions
 
-Description: Understand the role and types of IPv6 interface identifiers — the lower 64 bits of an IPv6 address — including EUI-64, stable privacy, and temporary addresses.
+Description: Understand the role and types of IPv6 interface identifiers - the lower 64 bits of an IPv6 address - including EUI-64, stable privacy, and temporary addresses.
 
 ## Introduction
 
@@ -16,7 +16,7 @@ The lower 64 bits of an IPv6 address are the **Interface Identifier (IID)**. The
 
 Derived from the 48-bit MAC address by inserting `ff:fe` in the middle and flipping the Universal/Local (U/L) bit:
 
-```
+```text
 MAC address:   00:1A:2B:3C:4D:5E
                ↓
 Insert ff:fe:  00:1A:2B:FF:FE:3C:4D:5E
@@ -28,6 +28,7 @@ IID:           021a:2bff:fe3c:4d5e
 
 ```python
 # Python: compute EUI-64 IID from MAC address
+
 def mac_to_eui64_iid(mac):
     # Remove separators and split into bytes
     mac_bytes = mac.replace(":", "").replace("-", "")
@@ -50,7 +51,7 @@ print(mac_to_eui64_iid("00:1A:2B:3C:4D:5E"))
 
 Generates a consistent but non-traceable IID by hashing the prefix, interface name, and a secret key:
 
-```
+```text
 IID = F(Prefix, Interface_Identifier, Network_ID, DAD_Counter, secret_key)
 ```
 
@@ -89,7 +90,7 @@ Manually configured for servers and network equipment:
 
 The first byte of an IID contains two special bits:
 
-```
+```text
 Bit 7 (Universal/Local, U/L):
   0 = Universally administered (globally unique, e.g., from MAC)
   1 = Locally administered (manual or random)

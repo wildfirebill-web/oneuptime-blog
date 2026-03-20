@@ -36,6 +36,7 @@ import json
 bedrock_runtime = boto3.client('bedrock-runtime', region_name='us-east-1')
 
 # Claude 3.5 Sonnet - Best balance of speed and intelligence
+
 response = bedrock_runtime.converse(
     modelId='anthropic.claude-3-5-sonnet-20240620-v1:0',
     messages=[{

@@ -48,6 +48,7 @@ FastAPI has excellent support for streaming responses through its `StreamingResp
 
 ```bash
 # Install the required packages
+
 pip install fastapi uvicorn openai
 ```
 

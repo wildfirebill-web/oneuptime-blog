@@ -67,6 +67,7 @@ Let us start by installing the necessary packages and configuring TanStack Query
 
 ```bash
 # Using npm
+
 npm install @tanstack/react-query
 
 # Using yarn
@@ -1600,7 +1601,7 @@ Key takeaways from this guide:
 
 With these patterns and practices, you will be well-equipped to build robust, performant React Native applications that handle server state elegantly. TanStack Query continues to evolve, so be sure to check the official documentation for the latest features and best practices.
 
-## Resources
+Resources
 
 - [TanStack Query Documentation](https://tanstack.com/query/latest)
 - [React Native Documentation](https://reactnative.dev/)

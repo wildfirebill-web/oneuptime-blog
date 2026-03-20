@@ -48,6 +48,7 @@ First, document your existing setup:
 
 ```bash
 # Export current forwarding rules
+
 gcloud compute forwarding-rules describe my-https-rule \
     --global \
     --format=yaml > current-forwarding-rule.yaml

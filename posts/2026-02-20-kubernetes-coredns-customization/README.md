@@ -28,6 +28,7 @@ CoreDNS is configured through a ConfigMap in the `kube-system` namespace.
 
 ```bash
 # View the current CoreDNS configuration
+
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 

@@ -52,6 +52,7 @@ flowchart TB
 
 ```bash
 # Package chart to see size
+
 helm package charts/myapp
 ls -lh myapp-*.tgz
 

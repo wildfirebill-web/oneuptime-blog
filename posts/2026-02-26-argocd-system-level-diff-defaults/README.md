@@ -18,6 +18,7 @@ System-level diff customizations live in the `argocd-cm` ConfigMap in the ArgoCD
 
 ```bash
 # View the current configuration
+
 kubectl get cm argocd-cm -n argocd -o yaml
 
 # Edit it directly

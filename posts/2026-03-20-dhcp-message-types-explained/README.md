@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCP, Networking, Protocol, DHCP Messages, Network Diagnostics
 
-Description: DHCP defines eight message types (1–8) carried in option 53, each serving a specific role in the lease lifecycle from initial discovery through release and decline, plus the DHCPINFORM for stateless configuration.
+Description: DHCP defines eight message types (1–8) carried in option 53, each serving a specific role in the lease lifecycle from initial discovery through release and decline, plus the DHCPINFORM for...
 
 ## DHCP Message Type Option (Option 53)
 
@@ -24,7 +24,7 @@ DHCP message type is carried in option 53, a single byte:
 ## Message Flows
 
 ### Normal DORA (New Lease)
-```
+```text
 Client → DHCPDISCOVER (broadcast)
 Server → DHCPOFFER (broadcast/unicast)
 Client → DHCPREQUEST (broadcast, confirms offer)
@@ -32,13 +32,13 @@ Server → DHCPACK (broadcast/unicast, confirms lease)
 ```
 
 ### Renewal (T1)
-```
+```text
 Client → DHCPREQUEST (unicast to server)
 Server → DHCPACK (unicast) or DHCPNAK (if invalid)
 ```
 
 ### DHCPDECLINE (IP Already in Use)
-```
+```text
 Client → DHCPDISCOVER
 Server → DHCPOFFER (192.168.1.50)
 Client → arp probes 192.168.1.50 ... conflict detected!
@@ -46,7 +46,7 @@ Client → DHCPDECLINE
 ```
 
 ### DHCPINFORM (Get Options Without IP)
-```
+```text
 Client → DHCPINFORM (has static IP, wants DNS/domain options)
 Server → DHCPACK (options only, no IP in packet)
 ```
@@ -55,6 +55,7 @@ Server → DHCPACK (options only, no IP in packet)
 
 ```bash
 # Capture DHCP traffic and show message types
+
 sudo tcpdump -i eth0 'port 67 or port 68' -v -n 2>/dev/null | \
   grep -E "DHCP|Message|Request|Offer|Discover|Ack|Nak"
 

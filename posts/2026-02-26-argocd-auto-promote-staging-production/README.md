@@ -64,6 +64,7 @@ Create a CI pipeline that handles the entire flow from staging update to product
 
 ```yaml
 # .github/workflows/auto-promote.yaml
+
 name: Auto-Promote to Production
 
 on:

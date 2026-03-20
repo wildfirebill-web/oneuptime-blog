@@ -35,6 +35,7 @@ If you have it in DER format (binary), convert it first:
 
 ```bash
 # Convert DER to PEM
+
 openssl x509 -inform DER -in ca-cert.der -out ca-cert.crt
 
 # Verify the converted certificate

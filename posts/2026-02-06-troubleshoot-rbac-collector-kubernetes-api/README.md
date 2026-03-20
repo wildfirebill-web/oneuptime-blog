@@ -16,6 +16,7 @@ Check the Collector logs for RBAC-related errors:
 kubectl logs -n observability deployment/otel-collector | grep -i "forbidden\|rbac\|unauthorized"
 
 # Typical errors:
+
 # "failed to list pods: pods is forbidden: User \"system:serviceaccount:observability:otel-collector\"
 #  cannot list resource \"pods\" in API group \"\" at the cluster scope"
 ```

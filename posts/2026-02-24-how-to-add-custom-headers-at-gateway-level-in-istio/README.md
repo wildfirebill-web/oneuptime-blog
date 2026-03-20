@@ -304,6 +304,7 @@ From outside the cluster, test with curl:
 export GATEWAY_IP=$(kubectl -n istio-system get svc istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Check request headers (use httpbin deployed inside the mesh)
+
 curl -s -H "Host: httpbin.example.com" http://$GATEWAY_IP/headers | python3 -m json.tool
 
 # Check response headers

@@ -14,6 +14,7 @@ Elemental cloud-config is a YAML-based configuration system (compatible with clo
 
 ```yaml
 # Structure of Elemental cloud-config
+
 cloud-config:
   # User accounts
   users: []

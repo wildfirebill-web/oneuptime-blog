@@ -87,6 +87,7 @@ Here is the equivalent cloudbuild.yaml:
 
 ```yaml
 # cloudbuild.yaml - Migrated from Jenkins
+
 substitutions:
   _DEPLOY_ENV: 'production'
 

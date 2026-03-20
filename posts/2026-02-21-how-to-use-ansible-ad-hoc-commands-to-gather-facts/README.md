@@ -16,6 +16,7 @@ The `setup` module is what Ansible uses internally to gather facts. When you run
 
 ```bash
 # Gather all facts from all hosts
+
 ansible all -m setup
 ```
 

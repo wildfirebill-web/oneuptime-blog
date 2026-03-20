@@ -22,6 +22,7 @@ The simplest approach is using the system package manager.
 
 ```yaml
 # Install Ruby from system packages
+
 - name: Install Ruby and development headers
   ansible.builtin.package:
     name:

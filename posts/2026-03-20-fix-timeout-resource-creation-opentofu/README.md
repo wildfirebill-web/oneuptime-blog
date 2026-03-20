@@ -12,7 +12,7 @@ Timeout errors occur when a cloud resource takes longer to provision than the de
 
 ## Common Timeout Error Messages
 
-```
+```text
 Error: waiting for EC2 Transit Gateway (tgw-0abc123) to become available: timeout while waiting for state to become 'available' (last state: 'pending', timeout: 10m0s)
 
 Error: waiting for RDS DB Instance (prod-postgres) to be created: timeout after 40m0s
@@ -33,7 +33,7 @@ resource "aws_db_instance" "main" {
 
   # Increase the create timeout for large instances
   timeouts {
-    create = "60m"   # Default is often 40m — increase to 60m
+    create = "60m"   # Default is often 40m - increase to 60m
     update = "80m"
     delete = "60m"
   }
@@ -61,6 +61,7 @@ Before increasing timeouts, investigate why the resource is slow:
 
 ```bash
 # Enable debug logging to see what the provider is waiting on
+
 TF_LOG=DEBUG tofu apply 2>&1 | grep -iE "waiting|polling|status|state"
 
 # For AWS: check resource status directly

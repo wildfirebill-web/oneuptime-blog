@@ -32,6 +32,7 @@ Let us start with an HTTP API, which is the newer, faster, and cheaper option fo
 
 ```hcl
 # HTTP API Gateway
+
 resource "aws_apigatewayv2_api" "main" {
   name          = "main-api"
   protocol_type = "HTTP"

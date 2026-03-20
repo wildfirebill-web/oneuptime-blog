@@ -27,6 +27,7 @@ Here's a password policy that aligns with most compliance frameworks (SOC 2, PCI
 
 ```bash
 # Set a strong password policy for the AWS account
+
 aws iam update-account-password-policy \
   --minimum-password-length 14 \
   --require-symbols \

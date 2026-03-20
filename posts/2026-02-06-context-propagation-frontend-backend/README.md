@@ -43,6 +43,7 @@ Install the OpenTelemetry browser packages:
 
 ```bash
 # Install the OpenTelemetry web SDK and auto-instrumentations
+
 npm install @opentelemetry/sdk-trace-web \
   @opentelemetry/instrumentation-fetch \
   @opentelemetry/instrumentation-xml-http-request \

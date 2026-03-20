@@ -16,12 +16,13 @@ Docker Swarm automatically load-balances traffic across service replicas using a
 
 ```yaml
 # swarm-load-balanced-stack.yml
+
 version: "3.8"
 services:
   webapp:
     image: myapp:1.2.3
     deploy:
-      replicas: 3      # 3 instances — traffic distributed round-robin
+      replicas: 3      # 3 instances - traffic distributed round-robin
       update_config:
         parallelism: 1    # Update one at a time
         delay: 10s

@@ -37,6 +37,7 @@ Design your configuration with a clear hierarchy. More specific settings overrid
 
 ```yaml
 # config-hierarchy.yaml
+
 # Configuration is resolved in order from least to most specific.
 # Later entries override earlier ones.
 levels:

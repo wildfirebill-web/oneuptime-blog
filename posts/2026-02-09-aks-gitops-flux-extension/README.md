@@ -24,6 +24,7 @@ Enable the extension on AKS clusters:
 
 ```bash
 # Register required providers
+
 az provider register --namespace Microsoft.Kubernetes
 az provider register --namespace Microsoft.KubernetesConfiguration
 az provider register --namespace Microsoft.ContainerService

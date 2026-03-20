@@ -23,6 +23,7 @@ It's built on Meteor and MongoDB. The Docker Compose deployment is the most stra
 
 ```bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER
 newgrp docker

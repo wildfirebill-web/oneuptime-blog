@@ -1,4 +1,4 @@
-# How to Upgrade Portainer CE on Docker Swarm
+# How to Upgrade Portainer CE on Docker Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ When Portainer is deployed as a Docker Swarm service, upgrading involves updatin
 
 ```bash
 # Run on the Swarm manager node where Portainer data lives
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

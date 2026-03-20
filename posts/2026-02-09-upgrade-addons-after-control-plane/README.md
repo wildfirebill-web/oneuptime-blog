@@ -22,6 +22,7 @@ Before upgrading addons, you need to know what versions are currently running an
 
 ```bash
 # Check CoreDNS version
+
 kubectl get deployment coredns -n kube-system -o jsonpath='{.spec.template.spec.containers[0].image}'
 
 # Check kube-proxy version

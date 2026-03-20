@@ -16,6 +16,7 @@ GraphQL allows clients to request deeply nested data in a single query. Without 
 
 ```graphql
 # This query could return millions of records
+
 query DangerousQuery {
   users(first: 1000) {
     posts(first: 100) {

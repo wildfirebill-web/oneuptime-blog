@@ -35,6 +35,7 @@ helm repo update
 
 ```yaml
 # drone-values.yaml
+
 ingress:
   enabled: true
   annotations:
@@ -186,6 +187,6 @@ drone build create my-org/my-app --branch main
 
 ## Best Practices
 
-- Use Kubernetes-native runners (`drone-runner-kube`) rather than Docker runners on Rancher — they integrate naturally with Kubernetes RBAC, resource limits, and namespace isolation.
-- Store all secrets in Drone's secret manager or in Kubernetes Secrets — never hardcode credentials in `.drone.yml`.
+- Use Kubernetes-native runners (`drone-runner-kube`) rather than Docker runners on Rancher - they integrate naturally with Kubernetes RBAC, resource limits, and namespace isolation.
+- Store all secrets in Drone's secret manager or in Kubernetes Secrets - never hardcode credentials in `.drone.yml`.
 - Set `DRONE_RUNNER_CAPACITY` based on your cluster's available CPU and memory to prevent pipeline runs from starving each other.

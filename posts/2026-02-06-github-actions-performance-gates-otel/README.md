@@ -18,6 +18,7 @@ Keep your performance thresholds version-controlled alongside your code:
 
 ```yaml
 # .github/perf-thresholds.yaml
+
 gates:
   - name: "API Response Time"
     metric: "http_request_duration_seconds"

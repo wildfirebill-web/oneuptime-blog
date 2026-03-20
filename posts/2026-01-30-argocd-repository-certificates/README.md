@@ -233,6 +233,7 @@ When installing ArgoCD via Helm, you can configure certificates in the values fi
 
 ```yaml
 # values.yaml
+
 configs:
   tls:
     certificates:

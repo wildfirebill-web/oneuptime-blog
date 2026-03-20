@@ -480,6 +480,7 @@ flowchart LR
 
 ```python
 # lambda_function.py
+
 import json
 import boto3
 import os

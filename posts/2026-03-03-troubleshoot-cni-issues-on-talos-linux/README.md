@@ -29,6 +29,7 @@ Start with the big picture. Are all nodes healthy?
 
 ```bash
 # Check node status
+
 kubectl get nodes -o wide
 
 # Look for NotReady nodes

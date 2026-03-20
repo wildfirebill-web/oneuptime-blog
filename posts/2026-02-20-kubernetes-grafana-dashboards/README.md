@@ -44,6 +44,7 @@ The kube-prometheus-stack includes many dashboards by default. You can also impo
 
 ```bash
 # Port-forward Grafana to access the UI
+
 kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80
 
 # Default credentials (if using kube-prometheus-stack):

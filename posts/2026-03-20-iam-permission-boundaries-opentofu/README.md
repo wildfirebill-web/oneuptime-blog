@@ -8,7 +8,7 @@ Description: Learn how to configure IAM Permission Boundaries using OpenTofu to 
 
 ## Introduction
 
-IAM Permission Boundaries set the maximum permissions an IAM entity can have, regardless of the identity-based policies attached. They enable safe delegation—you can allow developers to create IAM roles for their services without risking privilege escalation beyond what you've defined as the boundary.
+IAM Permission Boundaries set the maximum permissions an IAM entity can have, regardless of the identity-based policies attached. They enable safe delegation-you can allow developers to create IAM roles for their services without risking privilege escalation beyond what you've defined as the boundary.
 
 ## Prerequisites
 
@@ -19,6 +19,7 @@ IAM Permission Boundaries set the maximum permissions an IAM entity can have, re
 
 ```hcl
 # Permission boundary limits what any role created by developers can do
+
 # Even if a developer attaches AdministratorAccess, the boundary caps it
 resource "aws_iam_policy" "developer_boundary" {
   name        = "DeveloperPermissionBoundary"
@@ -165,4 +166,4 @@ tofu apply
 
 ## Conclusion
 
-IAM Permission Boundaries enable safe delegation—developers can create IAM roles for their services without risk of privilege escalation beyond the defined boundary. The key insight is that effective permissions are the intersection of identity-based policies AND the boundary. Always add a `DenyBoundaryRemoval` policy to ensure developers cannot simply remove the boundary from roles they create.
+IAM Permission Boundaries enable safe delegation-developers can create IAM roles for their services without risk of privilege escalation beyond the defined boundary. The key insight is that effective permissions are the intersection of identity-based policies AND the boundary. Always add a `DenyBoundaryRemoval` policy to ensure developers cannot simply remove the boundary from roles they create.

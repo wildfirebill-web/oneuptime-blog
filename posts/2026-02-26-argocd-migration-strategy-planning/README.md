@@ -70,6 +70,7 @@ Set up ArgoCD in a dedicated management cluster or within your existing cluster:
 
 ```yaml
 # values.yaml for Helm installation
+
 server:
   replicas: 2
   autoscaling:

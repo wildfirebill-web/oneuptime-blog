@@ -41,6 +41,7 @@ Install MicroK8s and enable required addons.
 
 ```bash
 # Install MicroK8s
+
 sudo snap install microk8s --classic --channel=1.28/stable
 
 # Add your user to the microk8s group
@@ -322,7 +323,7 @@ spec:
           image: localhost:32000/my-app:v1
 ```
 
-### Resource Limits
+Resource Limits
 
 MicroK8s on a development machine may have limited resources. Monitor ArgoCD's resource usage.
 

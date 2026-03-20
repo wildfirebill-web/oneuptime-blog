@@ -10,7 +10,7 @@ GCP's Global External HTTP(S) Load Balancer automatically translates IPv6 client
 
 ## How GCP IPv6-to-IPv4 Translation Works
 
-```
+```text
 IPv6 Client → GCP Global LB (IPv6 frontend) → IPv4 backend
               ↑ Translation happens here
               - Assigns IPv6 global address
@@ -27,6 +27,7 @@ The key insight: your backends can remain IPv4-only while clients can connect us
 
 ```hcl
 # Backend with IPv4 instances (no IPv6 required on backends)
+
 resource "google_compute_backend_service" "main" {
   name     = "main-backend"
   protocol = "HTTP"
@@ -37,7 +38,7 @@ resource "google_compute_backend_service" "main" {
 
   health_checks = [google_compute_health_check.main.id]
 
-  # No IPv6 configuration required here — backends are IPv4
+  # No IPv6 configuration required here - backends are IPv4
 }
 
 resource "google_compute_health_check" "main" {
@@ -140,4 +141,4 @@ tail -f /var/log/nginx/access.log | grep -E "2001:|fe80:|::1"
 - Some protocols that embed IP addresses (like FTP active mode) won't work
 - True end-to-end IPv6 requires IPv6-capable backend instances
 
-GCP's IPv6-to-IPv4 translation at the load balancer is the recommended starting point for adding IPv6 support to existing GCP workloads — it enables IPv6 connectivity immediately without any infrastructure changes.
+GCP's IPv6-to-IPv4 translation at the load balancer is the recommended starting point for adding IPv6 support to existing GCP workloads - it enables IPv6 connectivity immediately without any infrastructure changes.

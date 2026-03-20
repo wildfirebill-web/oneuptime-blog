@@ -43,6 +43,7 @@ Start by adding OpenTelemetry dependencies to all services. Create a shared conf
 
 ```elixir
 # In each service's mix.exs
+
 defp deps do
   [
     {:opentelemetry, "~> 1.3"},

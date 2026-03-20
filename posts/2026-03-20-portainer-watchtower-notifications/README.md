@@ -8,7 +8,7 @@ Description: Learn how to configure Watchtower to send notifications when contai
 
 ## Introduction
 
-Watchtower notifications keep your team informed when containers are automatically updated. Without notifications, auto-updates happen silently — you won't know when a new image was deployed or if an update caused issues. This guide covers configuring Watchtower notifications for common platforms when running as a Portainer stack.
+Watchtower notifications keep your team informed when containers are automatically updated. Without notifications, auto-updates happen silently - you won't know when a new image was deployed or if an update caused issues. This guide covers configuring Watchtower notifications for common platforms when running as a Portainer stack.
 
 ## Prerequisites
 
@@ -19,7 +19,8 @@ Watchtower notifications keep your team informed when containers are automatical
 ## Step 1: Slack Notifications
 
 ```yaml
-# Portainer stack — Watchtower with Slack notifications
+# Portainer stack - Watchtower with Slack notifications
+
 services:
   watchtower:
     image: containrrr/watchtower:latest
@@ -163,7 +164,7 @@ docker run --rm \
 
 A typical Watchtower Slack notification looks like:
 
-```
+```text
 Watchtower@production-server: Updated containers
 
 Updated:
@@ -179,4 +180,4 @@ All containers updated successfully
 
 ## Conclusion
 
-Watchtower notifications are essential visibility into your automated update process. Configure Slack or Teams webhooks for real-time team awareness when containers get updated, and use email for formal audit trails. Set `WATCHTOWER_NOTIFICATIONS_LEVEL=info` to avoid noise from successful scans with no updates — you want to be notified about changes, not every poll cycle. Store sensitive credentials like SMTP passwords and webhook tokens as Portainer environment variables rather than hardcoding them in the stack definition.
+Watchtower notifications are essential visibility into your automated update process. Configure Slack or Teams webhooks for real-time team awareness when containers get updated, and use email for formal audit trails. Set `WATCHTOWER_NOTIFICATIONS_LEVEL=info` to avoid noise from successful scans with no updates - you want to be notified about changes, not every poll cycle. Store sensitive credentials like SMTP passwords and webhook tokens as Portainer environment variables rather than hardcoding them in the stack definition.

@@ -29,6 +29,7 @@ The simplest option is using the AWS-managed SNS key. No key creation or policy 
 
 ```bash
 # Enable encryption on an existing topic using the default SNS key
+
 aws sns set-topic-attributes \
   --topic-arn arn:aws:sns:us-east-1:123456789012:order-notifications \
   --attribute-name KmsMasterKeyId \

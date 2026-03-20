@@ -18,6 +18,7 @@ In a Kafka cluster, brokers communicate with each other for partition leadership
 broker.id=1
 
 # Two listeners: one for clients, one for broker-to-broker
+
 listeners=CLIENT://10.0.0.1:9092,BROKER://10.0.0.1:9091
 
 # What clients see
@@ -42,7 +43,7 @@ inter.broker.listener.name=BROKER
 ## Zookeeper or KRaft for Controller
 
 ```properties
-# KRaft mode (Kafka 3.3+) — no Zookeeper needed
+# KRaft mode (Kafka 3.3+) - no Zookeeper needed
 # Controller communication uses a dedicated port too
 process.roles=broker,controller
 node.id=1

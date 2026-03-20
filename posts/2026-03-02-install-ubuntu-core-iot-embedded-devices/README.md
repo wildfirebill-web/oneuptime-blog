@@ -54,6 +54,7 @@ The Raspberry Pi 4 is the most popular Ubuntu Core target. Here is the complete 
 
 ```bash
 # Download Ubuntu Core 24 for Raspberry Pi (arm64)
+
 wget https://cdimage.ubuntu.com/ubuntu-core/24/stable/current/ubuntu-core-24-arm64+raspi.img.xz
 
 # Verify

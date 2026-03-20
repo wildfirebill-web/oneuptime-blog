@@ -18,6 +18,7 @@ With IMDSv1, accessing metadata is as simple as:
 
 ```bash
 # IMDSv1 - simple GET request, no authentication
+
 curl http://169.254.169.254/latest/meta-data/iam/security-credentials/MyRole
 ```
 

@@ -47,6 +47,7 @@ resource "aws_route53_health_check" "primary_api" {
 
 ```hcl
 # Health check based on an existing CloudWatch alarm
+
 resource "aws_route53_health_check" "cloudwatch_based" {
   type = "CLOUDWATCH_METRIC"
 

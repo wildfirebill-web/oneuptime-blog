@@ -18,6 +18,7 @@ When running stateful applications with `podman kube play`, you need storage tha
 
 ```yaml
 # postgres-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

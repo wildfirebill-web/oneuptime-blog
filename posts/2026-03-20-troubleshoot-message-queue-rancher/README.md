@@ -1,8 +1,8 @@
-# How to Troubleshoot Message Queue Issues in Rancher
+# How to Troubleshoot Message Queue Issues in Rancher - Message Queue
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Troubleshooting, Message Queue, RabbitMQ, Kafka, Debugging
+Tags: Rancher, Troubleshooting, Message Queues, RabbitMQ, Kafka, Debugging
 
 Description: A systematic guide to diagnosing and resolving common message queue issues in Rancher including consumer lag, broker failures, and networking problems.
 
@@ -16,6 +16,7 @@ Start with basic pod health. Most issues are visible here.
 
 ```bash
 # Check pod status and restarts
+
 kubectl get pods -n messaging
 
 # Describe a pod to see events and conditions

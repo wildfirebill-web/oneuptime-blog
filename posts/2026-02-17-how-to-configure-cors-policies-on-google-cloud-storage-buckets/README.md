@@ -45,6 +45,7 @@ Apply it to your bucket:
 
 ```bash
 # Apply the CORS configuration to the bucket
+
 gcloud storage buckets update gs://my-bucket \
   --cors-file=cors.json
 ```

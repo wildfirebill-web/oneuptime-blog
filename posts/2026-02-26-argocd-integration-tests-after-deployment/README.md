@@ -173,6 +173,7 @@ RUN pip install -r requirements.txt
 COPY integration/ integration/
 
 # Default command runs all integration tests
+
 CMD ["pytest", "integration/", "-v"]
 ```
 

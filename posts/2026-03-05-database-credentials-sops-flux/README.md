@@ -58,6 +58,7 @@ Create a Kubernetes Secret manifest for your database credentials:
 
 ```yaml
 # clusters/my-cluster/secrets/database-credentials.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -1,4 +1,4 @@
-# How to Deploy ZeroMQ-Based Applications via Portainer
+# How to Deploy ZeroMQ-Based Applications via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy applications using ZeroMQ for high-performance asynchronous 
 
 ## Introduction
 
-ZeroMQ (ZMQ) is a lightweight, high-performance messaging library that runs inside application processes — it has no separate broker process. It provides building blocks for message patterns: PUB/SUB (broadcast), PUSH/PULL (pipeline), and REQ/REP (request-reply). This guide deploys ZeroMQ-based microservices via Portainer.
+ZeroMQ (ZMQ) is a lightweight, high-performance messaging library that runs inside application processes - it has no separate broker process. It provides building blocks for message patterns: PUB/SUB (broadcast), PUSH/PULL (pipeline), and REQ/REP (request-reply). This guide deploys ZeroMQ-based microservices via Portainer.
 
 ## ZeroMQ Patterns Overview
 
@@ -24,6 +24,7 @@ Create a `Dockerfile` for your ZeroMQ service:
 
 ```dockerfile
 # Dockerfile - Python service with ZeroMQ
+
 FROM python:3.12-slim
 
 WORKDIR /app
@@ -184,4 +185,4 @@ print('Received:', msg)
 
 ## Conclusion
 
-ZeroMQ runs inside application processes with no separate broker, making it extremely fast (millions of messages/second) and operationally simple. Use PUB/SUB for broadcasting events to multiple consumers, PUSH/PULL for distributing work across a pool of workers, and REQ/REP for synchronous request-reply RPCs. In Docker environments, use Docker service names as ZeroMQ endpoints — subscribers `connect()` to publishers and workers `connect()` to task producers. Never expose ZeroMQ ports externally; keep them within Docker networks.
+ZeroMQ runs inside application processes with no separate broker, making it extremely fast (millions of messages/second) and operationally simple. Use PUB/SUB for broadcasting events to multiple consumers, PUSH/PULL for distributing work across a pool of workers, and REQ/REP for synchronous request-reply RPCs. In Docker environments, use Docker service names as ZeroMQ endpoints - subscribers `connect()` to publishers and workers `connect()` to task producers. Never expose ZeroMQ ports externally; keep them within Docker networks.

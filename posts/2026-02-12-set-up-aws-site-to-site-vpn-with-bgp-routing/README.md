@@ -38,6 +38,7 @@ The Customer Gateway (CGW) represents your on-premises VPN device in AWS. You ne
 
 ```bash
 # Create a Customer Gateway with your on-premises device's public IP and BGP ASN
+
 aws ec2 create-customer-gateway \
   --type ipsec.1 \
   --public-ip 203.0.113.12 \

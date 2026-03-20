@@ -6,12 +6,13 @@ Tags: tcpdump, BPF, Linux, Networking, Filtering, Packet Capture
 
 Description: Write effective tcpdump filters using host, port, and protocol primitives to capture only the packets you need and reduce noise in network analysis.
 
-Without filters, tcpdump captures everything — gigabytes of unrelated traffic drowning out what you're looking for. tcpdump's Berkeley Packet Filter (BPF) syntax lets you express precise capture conditions directly at the kernel level.
+Without filters, tcpdump captures everything - gigabytes of unrelated traffic drowning out what you're looking for. tcpdump's Berkeley Packet Filter (BPF) syntax lets you express precise capture conditions directly at the kernel level.
 
 ## Host Filters
 
 ```bash
 # Capture traffic to or from a specific host
+
 sudo tcpdump host 192.168.1.50
 
 # Capture traffic originating FROM a host
@@ -121,4 +122,4 @@ sudo tcpdump -X 'tcp and dst port 80'
 sudo tcpdump -A 'tcp and dst port 80 and tcp[tcpflags] & tcp-push != 0'
 ```
 
-Good tcpdump filters follow the "as specific as possible" principle — narrow your capture to exactly the traffic you care about to avoid overwhelming output and reduce disk usage when saving captures.
+Good tcpdump filters follow the "as specific as possible" principle - narrow your capture to exactly the traffic you care about to avoid overwhelming output and reduce disk usage when saving captures.

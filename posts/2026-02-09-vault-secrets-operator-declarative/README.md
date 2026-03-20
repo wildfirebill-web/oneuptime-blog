@@ -22,6 +22,7 @@ Deploy VSO using Helm:
 
 ```bash
 # Add HashiCorp Helm repository
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 

@@ -42,6 +42,7 @@ The most direct fix is to grant the `roles/iam.serviceAccountTokenCreator` role 
 
 ```bash
 # Grant token creator role on the target service account
+
 gcloud iam service-accounts add-iam-policy-binding \
     target-sa@target-project.iam.gserviceaccount.com \
     --member="serviceAccount:caller-sa@source-project.iam.gserviceaccount.com" \

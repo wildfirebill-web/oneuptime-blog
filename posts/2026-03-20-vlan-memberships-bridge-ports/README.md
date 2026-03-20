@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VLAN, Bridge, Linux, bridge vlan, 802.1Q, VLAN-aware Bridge, Networking
+Tags: VLAN, Bridge, Linux, Bridge vlan, 802.1Q, VLAN-aware Bridge, Networking
 
 Description: Learn how to configure VLAN memberships on Linux bridge ports using the VLAN-aware bridge mode, enabling 802.1Q VLAN filtering and trunk/access port behavior.
 
@@ -14,6 +14,7 @@ Linux bridges support 802.1Q VLAN filtering when `vlan_filtering=1` is enabled. 
 
 ```bash
 # Create VLAN-aware bridge
+
 ip link add br0 type bridge
 ip link set br0 type bridge vlan_filtering 1
 ip link set br0 up
@@ -95,7 +96,7 @@ VLANFiltering=yes
 ```
 
 ```ini
-# /etc/systemd/network/eth0.network — trunk port
+# /etc/systemd/network/eth0.network - trunk port
 [Match]
 Name=eth0
 
@@ -109,7 +110,7 @@ VLAN=30
 ```
 
 ```ini
-# /etc/systemd/network/tap0.network — access port VLAN 10
+# /etc/systemd/network/tap0.network - access port VLAN 10
 [Match]
 Name=tap0
 

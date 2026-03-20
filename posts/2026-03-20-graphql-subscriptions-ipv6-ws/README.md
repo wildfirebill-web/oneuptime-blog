@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, WebSocket, Subscriptions, IPv6, Real-time
+Tags: GraphQL, WebSocket, Subscriptions, IPv6, Real-Time
 
 Description: Set up GraphQL subscriptions using WebSocket transport over IPv6 for real-time data delivery.
 
@@ -22,6 +22,7 @@ Each framework has specific ways to bind to IPv6 interfaces. The general pattern
 
 ```bash
 # Verify IPv6 is available on your system
+
 ip -6 addr show
 ping6 -c 3 ::1
 ```
@@ -73,7 +74,7 @@ sudo ip6tables -A INPUT -p tcp --dport 4000 -j ACCEPT
 
 Add an AAAA record pointing to your server's IPv6 address:
 
-```
+```text
 example.com.  300  IN  AAAA  2001:db8::1
 ```
 

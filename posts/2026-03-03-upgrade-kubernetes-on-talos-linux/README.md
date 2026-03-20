@@ -25,6 +25,7 @@ Before upgrading, know what you are running:
 
 ```bash
 # Check the current Kubernetes version
+
 kubectl version
 
 # Check Talos version (to verify Kubernetes compatibility)

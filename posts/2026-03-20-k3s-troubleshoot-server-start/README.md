@@ -16,6 +16,7 @@ Start with the systemd service status:
 
 ```bash
 # Check K3s service status
+
 systemctl status k3s
 
 # View the most recent service logs

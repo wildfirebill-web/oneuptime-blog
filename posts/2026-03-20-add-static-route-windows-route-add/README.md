@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, route, Static Route, IPv4, Routing
+Tags: Windows, Networking, Routes, Static Routes, IPv4, Routing
 
 Description: Add temporary and persistent static IPv4 routes on Windows using the route add command, specify the metric, and verify the route was added to the routing table.
 
@@ -69,6 +69,7 @@ route print | findstr "10.0.0.0"
 
 ```powershell
 # Add route using PowerShell (persistent by default)
+
 New-NetRoute -InterfaceAlias "Ethernet" `
     -DestinationPrefix "10.0.0.0/8" `
     -NextHop "192.168.1.254" `
@@ -87,7 +88,7 @@ Find-NetRoute -RemoteIPAddress 10.5.5.5
 
 ## Complete Route Add Syntax
 
-```
+```text
 route [-p] add <destination> mask <mask> <gateway> [metric <M>] [if <interface>]
 
   -p              Persistent (survives reboot)

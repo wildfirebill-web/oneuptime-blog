@@ -84,6 +84,7 @@ By default, Grafana keeps all versions. Configure retention in `grafana.ini`:
 ```ini
 [dashboards]
 # Maximum versions to store per dashboard (0 = unlimited)
+
 versions_to_keep = 20
 
 # Minimum interval between saves (seconds)

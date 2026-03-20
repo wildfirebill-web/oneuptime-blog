@@ -57,6 +57,7 @@ Install FluentBit on Linux systems using the official packages:
 
 ```bash
 # Ubuntu/Debian installation
+
 curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
 
 # Start the service

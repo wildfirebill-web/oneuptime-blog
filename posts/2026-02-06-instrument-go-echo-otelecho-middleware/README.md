@@ -26,6 +26,7 @@ Start by installing Echo, OpenTelemetry SDK, and the otelecho instrumentation pa
 
 ```bash
 # Install Echo framework
+
 go get -u github.com/labstack/echo/v4
 
 # Install OpenTelemetry SDK and API

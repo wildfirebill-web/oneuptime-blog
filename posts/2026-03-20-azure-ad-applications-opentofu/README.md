@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure AD, Applications, OpenTofu, Identity, OAuth2
+Tags: Azure, Azure AD, Application, OpenTofu, Identity, OAuth2
 
 Description: Learn how to create and configure Azure Active Directory applications with OpenTofu for OAuth2/OIDC authentication, API permissions, and service principal setup.
 
@@ -14,6 +14,7 @@ Azure AD Applications (now Microsoft Entra ID App Registrations) are the foundat
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     azuread = {

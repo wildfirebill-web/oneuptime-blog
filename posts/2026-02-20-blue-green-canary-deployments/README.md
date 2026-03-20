@@ -46,6 +46,7 @@ The key is using a Kubernetes Service with a selector that you can switch betwee
 
 ```yaml
 # blue-deployment.yaml
+
 # The currently active production deployment
 apiVersion: apps/v1
 kind: Deployment

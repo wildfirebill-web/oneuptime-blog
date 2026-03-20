@@ -1,11 +1,10 @@
----
-title: "Versioning OpenTofu Modules with Git Tags"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, git, versioning
-description: "Learn how to version your OpenTofu modules using Git tags for reproducible, pinned module references."
----
-
 # Versioning OpenTofu Modules with Git Tags
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Git, Versioning
+
+Description: Learn how to version your OpenTofu modules using Git tags for reproducible, pinned module references.
 
 Git tags are the most common way to version OpenTofu modules when not using a formal registry. By tagging specific commits, you create stable, reproducible references that won't unexpectedly change when you push new commits.
 
@@ -13,9 +12,10 @@ Git tags are the most common way to version OpenTofu modules when not using a fo
 
 ```bash
 # Create a lightweight tag
+
 git tag v1.0.0
 
-# Create an annotated tag (recommended — includes metadata)
+# Create an annotated tag (recommended - includes metadata)
 git tag -a v1.0.0 -m "Initial stable release"
 
 # Tag a specific commit
@@ -56,13 +56,13 @@ Follow semantic versioning (semver) for your module tags:
 ```bash
 # v{MAJOR}.{MINOR}.{PATCH}
 
-# PATCH — backward-compatible bug fixes
+# PATCH - backward-compatible bug fixes
 git tag -a v1.0.1 -m "Fix subnet CIDR calculation"
 
-# MINOR — new backward-compatible features
+# MINOR - new backward-compatible features
 git tag -a v1.1.0 -m "Add support for IPv6"
 
-# MAJOR — breaking changes
+# MAJOR - breaking changes
 git tag -a v2.0.0 -m "Breaking: renamed vpc_id output to id"
 ```
 
@@ -81,7 +81,7 @@ module "vpc_dev" {
 ## Module Version Management Strategy
 
 ```hcl
-# versions.tf — centralize version pinning
+# versions.tf - centralize version pinning
 locals {
   # Update this when you want to upgrade modules
   modules_version = "v3.2.0"
@@ -111,7 +111,7 @@ module "eks" {
 ## [3.0.0] - 2026-03-15
 ### Breaking Changes
 - Renamed `subnet_ids` output to `private_subnet_ids` and `public_subnet_ids`
-- Removed `az_count` variable — use `availability_zones` list instead
+- Removed `az_count` variable - use `availability_zones` list instead
 
 ### Migration Guide
 ```hcl
@@ -138,7 +138,7 @@ module "vpc" {
 ## [2.0.1] - 2026-01-15
 ### Fixed
 - Incorrect route table associations in multi-AZ deployments
-```
+```hcl
 
 ## Automating Releases with GitHub Actions
 

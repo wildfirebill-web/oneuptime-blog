@@ -10,7 +10,7 @@ Description: Monitor gRPC traffic over IPv4 using Prometheus interceptors, OpenT
 
 gRPC traffic is HTTP/2, which makes traditional L7 monitoring harder than plain HTTP/1.1. The recommended approach combines server-side Prometheus metrics via interceptors with distributed tracing using OpenTelemetry.
 
-## Go — Prometheus Interceptors
+## Go - Prometheus Interceptors
 
 ```go
 package main
@@ -52,6 +52,7 @@ func main() {
 
 ```promql
 # Request rate per method
+
 rate(grpc_server_handled_total[5m])
 
 # Error rate
@@ -87,7 +88,7 @@ conn, _ := grpc.Dial(
 )
 ```
 
-## Python — OpenTelemetry Instrumentation
+## Python - OpenTelemetry Instrumentation
 
 ```python
 from opentelemetry import trace

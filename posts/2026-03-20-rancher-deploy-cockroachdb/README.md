@@ -1,8 +1,8 @@
-# How to Deploy CockroachDB on Rancher
+# How to Deploy CockroachDB on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, CockroachDB, Databases, Distributed SQL
+Tags: Rancher, Kubernetes, CockroachDB, Database, Distributed SQL
 
 Description: Deploy CockroachDB on Rancher-managed Kubernetes clusters for a distributed, geo-replicated, PostgreSQL-compatible SQL database with zero-downtime operations.
 
@@ -21,6 +21,7 @@ CockroachDB is a distributed SQL database built for cloud-native environments. I
 
 ```bash
 # Add CockroachDB Helm repository
+
 helm repo add cockroachdb https://charts.cockroachdb.com/
 helm repo update
 

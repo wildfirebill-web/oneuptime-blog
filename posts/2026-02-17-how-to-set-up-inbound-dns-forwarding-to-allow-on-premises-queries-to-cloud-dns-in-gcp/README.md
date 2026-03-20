@@ -55,6 +55,7 @@ DNS server policies control DNS behavior at the VPC level. Create one with inbou
 
 ```bash
 # Create a DNS policy with inbound forwarding enabled
+
 gcloud dns policies create inbound-policy \
     --description="Enable inbound DNS forwarding from on-premises" \
     --networks=my-vpc \

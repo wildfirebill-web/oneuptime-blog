@@ -23,6 +23,7 @@ In Active Directory, create a dedicated read-only service account:
 
 ```powershell
 # Run in PowerShell on a domain controller or RSAT system
+
 New-ADUser `
   -Name "portainer-svc" `
   -UserPrincipalName "portainer-svc@corp.example.com" `

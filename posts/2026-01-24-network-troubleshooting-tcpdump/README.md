@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Tcpdump, Packet Analysis, Troubleshooting, System Administration, Security
+Tags: Linux, Networking, tcpdump, Packet Analysis, Troubleshooting, System Administration, Security
 
 Description: Master tcpdump for capturing and analyzing network traffic to diagnose connectivity issues, performance problems, and security incidents.
 
@@ -52,6 +52,7 @@ tcpdump [options] [filter expression]
 
 ```bash
 # Show all interfaces
+
 tcpdump -D
 
 # Common output:

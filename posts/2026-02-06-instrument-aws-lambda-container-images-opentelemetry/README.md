@@ -39,6 +39,7 @@ Start with the AWS-provided base image for your runtime. These images include th
 
 ```dockerfile
 # Use the official AWS Lambda Python base image.
+
 # This includes the Lambda runtime interface and is
 # optimized for the Lambda execution environment.
 FROM public.ecr.aws/lambda/python:3.12

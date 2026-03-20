@@ -16,6 +16,7 @@ The `slurp` module takes a single parameter: the path to the file you want to re
 
 ```yaml
 # Read the contents of a remote file
+
 - name: Read the application version file
   ansible.builtin.slurp:
     src: /opt/myapp/VERSION

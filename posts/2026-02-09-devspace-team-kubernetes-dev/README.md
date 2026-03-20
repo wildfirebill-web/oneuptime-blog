@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DevSpace, Kubernetes, Development, Team, Collaboration
+Tags: DevSpace, Kubernetes, Development, Teams, Collaboration
 
 Description: Configure DevSpace for team-based Kubernetes development enabling multiple developers to work independently while sharing common dependencies, services, and infrastructure resources.
 
@@ -30,6 +30,7 @@ Install DevSpace CLI:
 
 ```bash
 # macOS or Linux
+
 curl -s -L "https://github.com/loft-sh/devspace/releases/latest" | sed -nE 's!.*"([^"]*devspace-linux-amd64)".*!https://github.com\1!p' | xargs -n 1 curl -L -o devspace
 chmod +x devspace
 sudo mv devspace /usr/local/bin
@@ -477,25 +478,25 @@ app.listen(3000);
 
 Document workflows in your repository:
 
-```markdown
+````markdown
 # Development with DevSpace
 
 ## Quick Start
 
 1. Set up your namespace:
-   \`\`\`bash
+   ```bash
    ./scripts/setup-dev-namespace.sh $USER
-   \`\`\`
+   ```
 
 2. Start development:
-   \`\`\`bash
+   ```bash
    devspace dev
-   \`\`\`
+   ```
 
 3. Access your service:
-   \`\`\`bash
+   ```bash
    devspace open
-   \`\`\`
+   ```
 
 ## Shared Services
 
@@ -516,9 +517,9 @@ All developers share these services in the \`shared-services\` namespace:
 ## Sharing Your Environment
 
 Create a shareable link:
-\`\`\`bash
+```bash
 devspace run share
-\`\`\`
 ```
+````
 
 DevSpace with shared dependencies provides team members with independent development environments while maximizing resource efficiency. Configure it once, and every developer gains instant access to a complete, isolated workspace.

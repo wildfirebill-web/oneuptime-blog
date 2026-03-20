@@ -48,6 +48,7 @@ Build a library of platform-approved Helm charts that encode your organization's
 
 ```yaml
 # charts/web-service/Chart.yaml
+
 apiVersion: v2
 name: web-service
 description: Golden path for deploying web services

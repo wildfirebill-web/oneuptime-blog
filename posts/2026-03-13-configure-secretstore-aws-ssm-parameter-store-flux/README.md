@@ -60,6 +60,7 @@ This guide covers configuring a `SecretStore` for AWS SSM Parameter Store using 
 
 ```yaml
 # clusters/my-cluster/external-secrets/service-account.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

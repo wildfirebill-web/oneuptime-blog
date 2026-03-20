@@ -25,6 +25,7 @@ Before creating new swap, see what you already have:
 
 ```bash
 # Show current swap configuration
+
 swapon --show
 ```
 

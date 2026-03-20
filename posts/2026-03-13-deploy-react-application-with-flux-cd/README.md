@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, React, JavaScript, SPA, NGINX
+Tags: Flux CD, Kubernetes, GitOps, React, JavaScript, SPA, Nginx
 
 Description: Deploy a React single-page application to Kubernetes using Flux CD and Nginx, with automated image updates and environment-specific configuration.
 
@@ -27,6 +27,7 @@ This guide covers building a React app into an Nginx container, writing the Kube
 
 ```dockerfile
 # Dockerfile - two-stage build: build React, serve with Nginx
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

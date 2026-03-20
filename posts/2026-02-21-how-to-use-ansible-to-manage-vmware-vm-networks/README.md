@@ -31,6 +31,7 @@ Use the `community.vmware.vmware_guest` module to add or modify network adapters
 
 ```yaml
 # add-network-adapter.yml
+
 ---
 - name: Add network adapters to a virtual machine
   hosts: localhost

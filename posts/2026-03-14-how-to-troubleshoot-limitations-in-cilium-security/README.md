@@ -30,6 +30,7 @@ The first step in troubleshooting is determining whether policies are being appl
 
 ```bash
 # List all Cilium endpoints and their policy enforcement status
+
 cilium endpoint list -o json | \
   jq '.[] | {id: .id, labels: .status.labels, policy: .status.policy.realized}'
 

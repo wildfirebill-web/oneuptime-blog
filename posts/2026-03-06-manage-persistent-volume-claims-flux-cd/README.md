@@ -45,6 +45,7 @@ Start by managing your StorageClasses through Flux:
 
 ```yaml
 # infrastructure/storage/storage-classes.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

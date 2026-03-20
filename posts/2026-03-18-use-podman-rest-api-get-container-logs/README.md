@@ -94,6 +94,7 @@ You can filter logs by timestamp using the `since` and `until` parameters:
 
 ```bash
 # Logs from the last hour
+
 curl --unix-socket /run/podman/podman.sock \
   "http://localhost/v4.0.0/libpod/containers/my-container/logs?since=2026-03-18T10:00:00Z"
 

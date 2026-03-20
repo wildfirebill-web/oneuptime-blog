@@ -8,12 +8,13 @@ Description: Learn how to configure OpenTofu state encryption using Google Cloud
 
 ## Introduction
 
-Google Cloud KMS provides centralized key management with IAM access control for OpenTofu state encryption. Combined with a GCS backend, this gives you client-side encryption with GCP-native key management — the GCS bucket can be compromised without exposing plaintext state.
+Google Cloud KMS provides centralized key management with IAM access control for OpenTofu state encryption. Combined with a GCS backend, this gives you client-side encryption with GCP-native key management - the GCS bucket can be compromised without exposing plaintext state.
 
 ## Configuration
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.7"
 
@@ -79,7 +80,7 @@ gcloud auth application-default login
 # Service account key file
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/sa-key.json"
 
-# Workload Identity (when running on GKE — no credentials file needed)
+# Workload Identity (when running on GKE - no credentials file needed)
 ```
 
 ## Multi-Region Key for Redundancy

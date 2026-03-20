@@ -96,6 +96,7 @@ import psycopg2
 from psycopg2 import pool
 
 # Create a connection pool
+
 connection_pool = psycopg2.pool.ThreadedConnectionPool(
     minconn=5,
     maxconn=20,

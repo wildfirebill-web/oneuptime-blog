@@ -57,6 +57,7 @@ async function safeDelete(filePath, retries = 5, delay = 100) {
 
 ```bash
 # Error during npm install
+
 npm ERR! Error: EPERM: operation not permitted, rename 'node_modules\...'
 ```
 

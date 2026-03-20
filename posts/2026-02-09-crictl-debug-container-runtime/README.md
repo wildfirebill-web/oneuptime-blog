@@ -37,6 +37,7 @@ Configure crictl to work with your runtime:
 
 ```bash
 # For containerd (default on most systems)
+
 cat <<EOF | sudo tee /etc/crictl.yaml
 runtime-endpoint: unix:///run/containerd/containerd.sock
 image-endpoint: unix:///run/containerd/containerd.sock

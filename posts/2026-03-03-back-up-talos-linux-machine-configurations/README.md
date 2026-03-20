@@ -30,6 +30,7 @@ The most reliable way to back up configurations is to pull them directly from ru
 
 ```bash
 # Extract machine config from a control plane node
+
 talosctl get machineconfig --nodes <cp-node-ip> -o yaml > cp-node-1-config.yaml
 
 # Extract from a worker node

@@ -27,6 +27,7 @@ The `package` module auto-detects the package manager, but it only supports basi
 
 ```bash
 # Install a single package on Ubuntu/Debian hosts
+
 ansible webservers -m apt -a "name=nginx state=present" --become
 
 # Install a package on RHEL/CentOS hosts

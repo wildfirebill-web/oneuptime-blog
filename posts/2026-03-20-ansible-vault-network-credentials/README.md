@@ -16,6 +16,7 @@ Ansible Vault encrypts secrets using AES256 so they can be safely stored in vers
 
 ```bash
 # Create a secure vault password file (don't commit this!)
+
 echo "my_very_strong_vault_password" > ~/.ansible_vault_pass
 chmod 600 ~/.ansible_vault_pass
 
@@ -162,4 +163,4 @@ ansible-vault rekey group_vars/all/vault.yml \
 
 ## Conclusion
 
-Ansible Vault protects network credentials with AES256 encryption. Create a `vault.yml` file with `ansible-vault create` for each group, store actual credentials there, and reference them via `{{ vault_variable_name }}` in your plain-text vars files. Provide the vault password via `--vault-password-file` at runtime or via the `ANSIBLE_VAULT_PASSWORD_FILE` environment variable in CI/CD pipelines. Never commit the vault password file to source control — add it to `.gitignore`.
+Ansible Vault protects network credentials with AES256 encryption. Create a `vault.yml` file with `ansible-vault create` for each group, store actual credentials there, and reference them via `{{ vault_variable_name }}` in your plain-text vars files. Provide the vault password via `--vault-password-file` at runtime or via the `ANSIBLE_VAULT_PASSWORD_FILE` environment variable in CI/CD pipelines. Never commit the vault password file to source control - add it to `.gitignore`.

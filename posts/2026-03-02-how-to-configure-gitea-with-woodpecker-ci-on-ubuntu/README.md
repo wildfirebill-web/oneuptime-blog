@@ -38,6 +38,7 @@ Woodpecker needs a Gitea account to perform webhook management and API calls:
 
 ```bash
 # In Gitea admin interface, or via API:
+
 # Create a service account user named "woodpecker"
 # This account will manage webhooks on repositories
 

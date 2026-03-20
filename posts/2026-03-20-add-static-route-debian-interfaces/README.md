@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Debian, Static Routes, /etc/network/interfaces, ifupdown, Networking, Routing
+Tags: Debian, Static Routes, /etc/network/interfaces, Ifupdown, Networking, Routing
 
 Description: Configure persistent static routes on Debian using the up/down commands or post-up directives in /etc/network/interfaces for the ifupdown network stack.
 
@@ -14,6 +14,7 @@ Debian with the traditional ifupdown network stack uses `/etc/network/interfaces
 
 ```bash
 # /etc/network/interfaces
+
 auto eth0
 iface eth0 inet static
     address 10.0.0.100

@@ -18,6 +18,7 @@ The first thing to determine in any incident is which servers are reachable:
 
 ```bash
 # Quick connectivity check across all hosts
+
 ansible all -m ping -f 50 --one-line
 
 # Check a specific group
@@ -68,7 +69,7 @@ ansible all -m shell -a "dmesg | grep -i 'out of memory' | tail -5" --become
 ansible all -m shell -a "journalctl -p crit --since '30 minutes ago' --no-pager"
 ```
 
-## Resource Exhaustion Checks
+Resource Exhaustion Checks
 
 Many incidents are caused by running out of resources. Check all of them at once:
 

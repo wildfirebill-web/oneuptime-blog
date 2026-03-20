@@ -52,6 +52,7 @@ fi
 
 ```bash
 # Verify all allocated CIDRs belong to active nodes
+
 kubectl get ciliumnodes -o json | jq -r '.items[] | {
   name: .metadata.name,
   cidrs: .spec.ipam.podCIDRs

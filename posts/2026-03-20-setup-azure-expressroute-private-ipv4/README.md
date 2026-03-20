@@ -12,7 +12,7 @@ ExpressRoute provides a private, dedicated network connection from your on-premi
 
 ## ExpressRoute Components
 
-```
+```text
 On-Premises Network
     ↓
 Customer Edge Router (CE)
@@ -55,6 +55,7 @@ Provide the service key to your connectivity provider to provision the physical 
 
 ```bash
 # Configure Azure private peering
+
 az network express-route peering create \
   --resource-group $RESOURCE_GROUP \
   --circuit-name my-er-circuit \

@@ -39,6 +39,7 @@ AKS offers the Secrets Store CSI Driver as a managed add-on. This is the recomme
 
 ```bash
 # Enable the Secrets Store CSI Driver add-on on your AKS cluster
+
 # This installs the CSI driver DaemonSet and the Azure Key Vault provider
 az aks enable-addons \
   --addons azure-keyvault-secrets-provider \

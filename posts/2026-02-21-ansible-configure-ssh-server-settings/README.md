@@ -23,6 +23,7 @@ Here is a playbook that configures the most common SSH server settings:
 
 ```yaml
 # configure_sshd.yml - Configure SSH server settings
+
 ---
 - name: Configure SSH server
   hosts: all

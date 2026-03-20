@@ -35,6 +35,7 @@ Here is how to configure a basic active-backup bond in Talos Linux:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

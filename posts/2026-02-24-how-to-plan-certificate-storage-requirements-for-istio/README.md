@@ -33,6 +33,7 @@ The root CA is stored as a Kubernetes secret in the istio-system namespace:
 
 ```bash
 # Check the CA secret
+
 kubectl get secret istio-ca-secret -n istio-system -o yaml
 
 # Or if using a custom CA

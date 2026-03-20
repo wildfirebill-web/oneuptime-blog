@@ -61,6 +61,7 @@ Start by creating a new Durable Functions project with the proper dependencies a
 
 ```bash
 # Create project directory
+
 mkdir workflow-functions
 cd workflow-functions
 

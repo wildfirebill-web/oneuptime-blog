@@ -118,6 +118,7 @@ def traceroute_udp(destination: str, max_hops: int = 30, base_port: int = 33434)
 from scapy.all import traceroute
 
 # Scapy has a built-in traceroute that returns results and can graph them
+
 result, unans = traceroute(["8.8.8.8", "1.1.1.1"], maxttl=20, verbose=False)
 result.show()
 

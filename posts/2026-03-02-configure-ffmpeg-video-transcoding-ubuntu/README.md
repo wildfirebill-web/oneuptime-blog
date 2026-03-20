@@ -16,6 +16,7 @@ The quickest path is the Ubuntu repository package:
 
 ```bash
 # Install FFmpeg from the official Ubuntu repositories
+
 sudo apt update
 sudo apt install ffmpeg -y
 

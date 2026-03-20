@@ -33,6 +33,7 @@ Parameters:
 
 ```bash
 # Sequential output only
+
 bonnie++ -d /mnt/test -u root -s 4G -b
 
 # With direct I/O

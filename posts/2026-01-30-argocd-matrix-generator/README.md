@@ -384,6 +384,7 @@ First, label your clusters with appropriate metadata.
 
 ```bash
 # Add cluster with labels
+
 argocd cluster add us-east-1-context --name us-east-1
 kubectl -n argocd patch secret us-east-1 \
   --type='json' \

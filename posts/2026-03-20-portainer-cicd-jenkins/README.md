@@ -1,4 +1,4 @@
-# How to Set Up CI/CD with Portainer and Jenkins
+# How to Set Up CI/CD with Portainer and Jenkins - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,7 +37,7 @@ In Jenkins → **Manage Jenkins** → **Credentials** → **Global** → **Add C
 ## Step 3: Basic Jenkinsfile (Webhook Deploy)
 
 ```groovy
-// Jenkinsfile — Basic CI/CD with Portainer webhook
+// Jenkinsfile - Basic CI/CD with Portainer webhook
 pipeline {
     agent any
 
@@ -121,7 +121,7 @@ pipeline {
 ## Step 4: Advanced Jenkinsfile (API-Based Deploy)
 
 ```groovy
-// Jenkinsfile — Advanced deployment using Portainer API
+// Jenkinsfile - Advanced deployment using Portainer API
 pipeline {
     agent {
         docker {
@@ -210,7 +210,7 @@ pipeline {
                             echo "Health check passed!"
                             exit 0
                         fi
-                        echo "Attempt \$i/\$MAX_RETRIES — retrying in 15s..."
+                        echo "Attempt \$i/\$MAX_RETRIES - retrying in 15s..."
                         sleep 15
                     done
                     echo "Health check failed!"

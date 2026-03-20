@@ -1,4 +1,4 @@
-# How to Configure Container DNS Settings in Portainer
+# How to Configure Container DNS Settings in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,6 +37,7 @@ Docker's DNS resolution for containers:
 
 ```yaml
 # docker-compose.yml equivalent
+
 services:
   app:
     image: myorg/myapp:latest
@@ -54,7 +55,7 @@ services:
 ```
 
 In Portainer:
-```
+```text
 DNS server: 8.8.8.8
 DNS server: 8.8.4.4
 ```
@@ -78,7 +79,7 @@ services:
 With `dns_search: internal.example.com`, the container can resolve `database` as `database.internal.example.com`.
 
 In Portainer:
-```
+```text
 DNS search: internal.example.com
 DNS search: corp.mycompany.com
 ```
@@ -99,7 +100,7 @@ services:
 ```
 
 In Portainer, add under **DNS options**:
-```
+```text
 ndots: 5
 timeout: 2
 attempts: 3
@@ -161,7 +162,7 @@ services:
   airgapped-app:
     dns:
       - 192.168.1.53     # Local DNS only
-    # No public DNS servers — all resolution stays internal
+    # No public DNS servers - all resolution stays internal
 ```
 
 ## Step 6: Set Global DNS Defaults in Docker Daemon
@@ -222,4 +223,4 @@ docker exec my-container cat /etc/resolv.conf
 
 ## Conclusion
 
-DNS configuration in Portainer allows you to customize how containers resolve hostnames — critical for enterprise environments with internal DNS servers, private search domains, or specific DNS requirements. By configuring DNS per-container or via Docker daemon defaults, you ensure containers can reach the services they need without relying on public DNS that may be blocked or unavailable.
+DNS configuration in Portainer allows you to customize how containers resolve hostnames - critical for enterprise environments with internal DNS servers, private search domains, or specific DNS requirements. By configuring DNS per-container or via Docker daemon defaults, you ensure containers can reach the services they need without relying on public DNS that may be blocked or unavailable.

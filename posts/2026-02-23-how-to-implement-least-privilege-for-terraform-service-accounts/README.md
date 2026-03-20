@@ -29,6 +29,7 @@ Begin with broader permissions and iteratively remove them:
 
 ```hcl
 # Phase 1: Start with managed policies (broad)
+
 resource "aws_iam_role" "terraform" {
   name = "terraform-deploy"
 

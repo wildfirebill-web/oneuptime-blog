@@ -39,6 +39,7 @@ Deployment slots are available on Standard tier and above. The number of availab
 
 ```bash
 # Create a staging deployment slot
+
 az webapp deployment slot create \
     --name my-app-service \
     --resource-group my-resource-group \

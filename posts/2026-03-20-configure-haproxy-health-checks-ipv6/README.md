@@ -108,6 +108,7 @@ backend ipv6_servers
 
 ```bash
 # Check backend server status
+
 echo "show servers state" | socat stdio /var/run/haproxy/admin.sock
 
 # Output shows:

@@ -19,6 +19,7 @@ Node conditions report the health status of each node. During upgrades, monitori
 echo "Monitoring node conditions during upgrade..."
 
 # Watch all node conditions
+
 watch -n 5 'kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\
 STATUS:.status.conditions[?(@.type==\"Ready\")].status,\

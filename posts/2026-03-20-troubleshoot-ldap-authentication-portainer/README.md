@@ -1,4 +1,4 @@
-# How to Troubleshoot LDAP Authentication Issues in Portainer
+# How to Troubleshoot LDAP Authentication Issues in Portainer - Authentication
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Start with debug logs to see what Portainer is attempting:
 
 ```bash
 # Restart Portainer with debug logging
+
 docker stop portainer && docker container rm portainer
 
 docker run -d \

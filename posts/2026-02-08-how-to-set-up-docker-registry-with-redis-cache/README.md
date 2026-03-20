@@ -39,6 +39,7 @@ The registry checks Redis first for any cacheable data. On a hit, it returns the
 
 ```yaml
 # Docker Registry with Redis cache
+
 version: "3.8"
 
 services:

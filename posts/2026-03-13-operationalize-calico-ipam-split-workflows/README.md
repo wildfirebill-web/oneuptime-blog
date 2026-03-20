@@ -98,6 +98,7 @@ Expected: "IPAM is consistent"
 
 ### Step 7 - Verify new allocations go to correct sub-pools
 # Restart a test pod and confirm its IP is in the expected sub-pool CIDR
+
 kubectl delete pod <test-pod> -n <namespace>
 kubectl get pod <test-pod> -n <namespace> -o jsonpath='{.status.podIP}'
 

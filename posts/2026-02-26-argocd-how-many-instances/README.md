@@ -100,6 +100,7 @@ A variation of this is the hub-and-spoke pattern where a central ArgoCD manages 
 
 ```yaml
 # Central ArgoCD deploys ArgoCD to each cluster
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -366,6 +366,7 @@ When React Native code is bundled for production, it's minified and obfuscated. 
 
 ```bash
 # For iOS
+
 npx react-native bundle \
   --platform ios \
   --dev false \

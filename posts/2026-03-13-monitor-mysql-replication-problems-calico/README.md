@@ -22,6 +22,7 @@ MySQL replication in Kubernetes is sensitive to network disruptions. Even brief 
 
 ```yaml
 # mysql-exporter.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

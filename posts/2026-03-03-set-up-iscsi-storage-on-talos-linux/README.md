@@ -75,6 +75,7 @@ Since Talos does not have a traditional package manager, iSCSI management tools 
 
 ```yaml
 # iscsi-tools-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

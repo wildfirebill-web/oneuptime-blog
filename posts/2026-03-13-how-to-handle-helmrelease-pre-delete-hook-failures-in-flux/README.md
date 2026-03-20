@@ -98,6 +98,7 @@ If the pre-delete hook performs an important function, fix the underlying issue 
 
 ```bash
 # Check why the hook failed
+
 kubectl describe job my-app-pre-delete -n production
 kubectl logs job/my-app-pre-delete -n production
 

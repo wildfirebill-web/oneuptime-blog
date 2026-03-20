@@ -14,6 +14,7 @@ IPv6 traffic should perform similarly to IPv4 on a properly configured network. 
 
 ```bash
 # Compare download speed over IPv4 vs IPv6
+
 echo "IPv4 speed:"
 time curl -4 -s -o /dev/null https://ipv4.speedtest.net/test/
 
@@ -119,7 +120,7 @@ traceroute6 -n 2001:4860:4860::8888
 ethtool -k eth0 | grep "tcp-segmentation-offload\|generic-segmentation\|large-receive"
 
 # Try disabling TSO for IPv6 to test if it improves performance
-# (only for testing — measure before and after)
+# (only for testing - measure before and after)
 sudo ethtool -K eth0 tso off
 sudo ethtool -K eth0 gso off
 iperf3 -c server -6 -t 10

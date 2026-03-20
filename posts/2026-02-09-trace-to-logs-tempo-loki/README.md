@@ -18,6 +18,7 @@ Start by deploying both Tempo and Loki in your Kubernetes cluster:
 
 ```yaml
 # tempo-deployment.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

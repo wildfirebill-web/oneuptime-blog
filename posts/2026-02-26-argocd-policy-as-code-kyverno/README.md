@@ -37,6 +37,7 @@ Deploy Kyverno as an ArgoCD Application to manage it through GitOps.
 
 ```yaml
 # kyverno-application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

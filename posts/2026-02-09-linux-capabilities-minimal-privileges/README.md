@@ -137,6 +137,7 @@ Nginx traditionally runs as root to bind port 80, then drops privileges. With ca
 FROM nginx:alpine
 
 # Create non-root user
+
 RUN addgroup -g 1000 nginx-user && \
     adduser -D -u 1000 -G nginx-user nginx-user
 

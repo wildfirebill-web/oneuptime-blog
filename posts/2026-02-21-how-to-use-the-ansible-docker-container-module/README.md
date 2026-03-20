@@ -16,6 +16,7 @@ You need the `community.docker` collection and the Docker Python SDK installed.
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Python SDK
@@ -231,7 +232,7 @@ Mount host directories or Docker volumes into containers.
           - "/tmp"
 ```
 
-## Resource Limits
+Resource Limits
 
 Prevent containers from consuming all host resources.
 

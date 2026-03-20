@@ -46,6 +46,7 @@ Here is a pipeline that builds, tests, and then promotes a NuGet package through
 
 ```yaml
 # azure-pipelines.yml - Build, test, and promote a NuGet package
+
 trigger:
   branches:
     include:

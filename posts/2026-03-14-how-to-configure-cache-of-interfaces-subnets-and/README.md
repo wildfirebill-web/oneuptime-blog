@@ -27,6 +27,7 @@ This guide covers configuring the interface, subnet, and virtual network cache f
 
 ```yaml
 # cilium-azure-ipam.yaml
+
 ipam:
   mode: azure
   azure:

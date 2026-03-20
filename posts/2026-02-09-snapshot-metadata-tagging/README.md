@@ -127,6 +127,7 @@ ISO_TIMESTAMP=$(date -Iseconds)
 SNAPSHOT_NAME="${PVC_NAME}-${TIMESTAMP}"
 
 # Get application info from PVC labels
+
 APP_NAME=$(kubectl get pvc $PVC_NAME -o jsonpath='{.metadata.labels.app}')
 ENVIRONMENT=$(kubectl get pvc $PVC_NAME -o jsonpath='{.metadata.labels.environment}')
 TIER=$(kubectl get pvc $PVC_NAME -o jsonpath='{.metadata.labels.tier}')

@@ -14,6 +14,7 @@ The "Cannot connect to the Docker daemon" error prevents all Docker commands fro
 
 ```bash
 # Common error messages
+
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 
 docker: Cannot connect to the Docker daemon at tcp://localhost:2375. Is the docker daemon running?

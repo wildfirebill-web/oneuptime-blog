@@ -31,6 +31,7 @@ The following Compose v3 file deploys a simple Nginx web server with two replica
 
 ```yaml
 # docker-compose.yml for a Swarm stack deployment
+
 version: "3.8"
 
 services:
@@ -87,4 +88,4 @@ To update an existing stack in Portainer, navigate to **Stacks**, click the stac
 
 ## Conclusion
 
-Portainer simplifies Swarm stack deployments with a visual editor, environment variable injection, and one-click updates — ideal for teams who prefer UI-driven workflows over CLI management.
+Portainer simplifies Swarm stack deployments with a visual editor, environment variable injection, and one-click updates - ideal for teams who prefer UI-driven workflows over CLI management.

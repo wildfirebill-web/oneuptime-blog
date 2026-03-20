@@ -57,6 +57,7 @@ Query AWS for EC2 instances using the amazon.aws collection.
 
 ```bash
 # Install required collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install boto3 (AWS SDK)

@@ -1,4 +1,4 @@
-# How to Explain the Difference Between Declarative and Imperative IaC with OpenTofu
+# Declarative vs Imperative IaC with OpenTofu Explained
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ Imperative IaC specifies the exact steps to execute. Shell scripts are the class
 # Imperative: step-by-step instructions
 
 # Check if bucket exists first (you manage the logic)
+
 if ! aws s3api head-bucket --bucket my-app-data 2>/dev/null; then
   echo "Creating bucket..."
   aws s3api create-bucket \
@@ -65,7 +66,7 @@ resource "aws_s3_bucket_versioning" "app_data" {
 
 ## Side-by-Side Comparison
 
-```
+```hcl
 Scenario: Add a tag to an EC2 instance
 
 Imperative (bash):                    Declarative (OpenTofu):
@@ -86,7 +87,7 @@ fi                                    tofu apply
 
 ## Why Declarative Scales Better
 
-```
+```hcl
 Imperative problems at scale:
 - You must handle ALL state transitions manually
 - Order of operations matters and is error-prone
@@ -131,7 +132,7 @@ resource "aws_instance" "app" {
 
 ## Choosing Declarative vs Imperative
 
-```
+```text
 Use declarative (OpenTofu) when:
 ✓ Managing cloud resources with CRUD lifecycle
 ✓ Team needs to review infrastructure changes
@@ -148,4 +149,4 @@ Use imperative (scripts) when:
 
 ## Summary
 
-Declarative IaC with OpenTofu lets you describe what your infrastructure should look like and trusts the tool to figure out how to get there. This is fundamentally different from imperative scripts where you specify every step. Declarative approaches scale better because OpenTofu handles idempotency, dependency ordering, drift detection, and state management — problems that grow exponentially complex when solved imperatively.
+Declarative IaC with OpenTofu lets you describe what your infrastructure should look like and trusts the tool to figure out how to get there. This is fundamentally different from imperative scripts where you specify every step. Declarative approaches scale better because OpenTofu handles idempotency, dependency ordering, drift detection, and state management - problems that grow exponentially complex when solved imperatively.

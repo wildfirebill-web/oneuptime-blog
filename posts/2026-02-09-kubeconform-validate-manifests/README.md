@@ -26,6 +26,7 @@ Install Kubeconform locally for testing:
 
 ```bash
 # Install on Linux
+
 wget https://github.com/yannh/kubeconform/releases/download/v0.6.3/kubeconform-linux-amd64.tar.gz
 tar -xzf kubeconform-linux-amd64.tar.gz
 sudo mv kubeconform /usr/local/bin/

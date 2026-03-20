@@ -67,6 +67,7 @@ resource "aws_db_instance" "multi_az" {
 
 ```hcl
 # Alarm that triggers on Multi-AZ failover events
+
 resource "aws_cloudwatch_metric_alarm" "failover" {
   alarm_name          = "${var.project_name}-rds-failover"
   alarm_description   = "RDS Multi-AZ failover occurred"
@@ -142,4 +143,4 @@ tofu apply
 
 ## Conclusion
 
-RDS Multi-AZ provides automatic database failover with typically 1-2 minutes of downtime, during which the DNS endpoint automatically redirects to the standby. Unlike read replicas, the Multi-AZ standby is not accessible for reads—it exists solely for failover. For both high availability AND read scaling, combine Multi-AZ with read replicas. Always test failover in a maintenance window to validate your application's reconnection logic.
+RDS Multi-AZ provides automatic database failover with typically 1-2 minutes of downtime, during which the DNS endpoint automatically redirects to the standby. Unlike read replicas, the Multi-AZ standby is not accessible for reads-it exists solely for failover. For both high availability AND read scaling, combine Multi-AZ with read replicas. Always test failover in a maintenance window to validate your application's reconnection logic.

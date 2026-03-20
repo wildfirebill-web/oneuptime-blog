@@ -1,4 +1,4 @@
-# How to View and Filter Secrets in Portainer
+# How to View and Filter Secrets in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Select a namespace from the dropdown at the top of the list to scope the view:
 
 ```bash
 # List secrets in a specific namespace
+
 kubectl get secrets --namespace=production
 
 # List across all namespaces (values not shown)

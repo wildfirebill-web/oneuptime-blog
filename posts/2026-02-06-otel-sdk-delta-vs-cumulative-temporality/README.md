@@ -33,6 +33,7 @@ Both carry the same information, but the format differs. Cumulative is simpler f
 
 ```python
 # metrics_setup.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import (

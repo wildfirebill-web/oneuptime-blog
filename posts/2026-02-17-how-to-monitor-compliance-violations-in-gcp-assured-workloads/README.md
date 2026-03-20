@@ -30,6 +30,7 @@ Start by checking the current state of your Assured Workloads environment:
 
 ```bash
 # List all Assured Workloads in your organization
+
 gcloud assured workloads list \
   --organization=ORG_ID \
   --location=us \
@@ -62,7 +63,7 @@ The output includes the violation category, the specific resource that caused it
 
 ## Types of Violations
 
-### Resource Location Violations
+Resource Location Violations
 
 These occur when someone creates a resource outside the allowed regions. For FedRAMP Moderate, only US regions are permitted.
 

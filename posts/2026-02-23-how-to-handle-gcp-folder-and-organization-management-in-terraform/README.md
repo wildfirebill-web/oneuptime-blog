@@ -18,6 +18,7 @@ You typically do not create the organization itself with Terraform - that is set
 
 ```hcl
 # Look up the organization by domain
+
 data "google_organization" "org" {
   domain = var.org_domain
 }

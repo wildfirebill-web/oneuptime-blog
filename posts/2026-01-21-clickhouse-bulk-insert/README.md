@@ -46,6 +46,7 @@ from datetime import datetime
 client = clickhouse_connect.get_client(host='localhost')
 
 # Collect rows in a batch
+
 batch = []
 batch_size = 100000
 

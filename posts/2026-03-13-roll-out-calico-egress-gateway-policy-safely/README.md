@@ -48,6 +48,7 @@ spec:
 
 ```bash
 # Apply policy
+
 calicoctl apply -f roll-out-egress-gateway.yaml
 
 # Verify policy is active

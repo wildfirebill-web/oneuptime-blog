@@ -40,6 +40,7 @@ Before you can send emails, you need to verify that you own the email address or
 
 ```bash
 # Verify a domain
+
 aws ses verify-domain-identity \
   --domain "example.com" \
   --region us-east-1

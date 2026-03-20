@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu plan, Getting Started, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu plan, Getting Started, Infrastructure as Code, DevOps
 
 Description: A guide to understanding and running the tofu plan command to preview infrastructure changes before applying them.
 
 ## Introduction
 
-`tofu plan` is the command that shows you what OpenTofu will do before actually making any changes. It compares your desired state (defined in .tf files) with the current state (stored in state file) and shows you the differences. Running a plan is like a dry run — it lets you review changes safely.
+`tofu plan` is the command that shows you what OpenTofu will do before actually making any changes. It compares your desired state (defined in .tf files) with the current state (stored in state file) and shows you the differences. Running a plan is like a dry run - it lets you review changes safely.
 
 ## Running a Basic Plan
 
 ```bash
 # Navigate to your project directory
+
 cd /path/to/your/project
 
 # First, initialize if not already done

@@ -39,6 +39,7 @@ Invalidate a single file:
 
 ```bash
 # Invalidate a single file
+
 aws cloudfront create-invalidation \
   --distribution-id E1234567890 \
   --paths "/index.html"

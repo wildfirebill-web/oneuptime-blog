@@ -78,6 +78,7 @@ sum(rate(istio_tcp_connections_opened_total{
 
 ```promql
 # Total new connections in the last hour
+
 sum(increase(istio_tcp_connections_opened_total{
   reporter="destination",
   destination_workload="postgres"

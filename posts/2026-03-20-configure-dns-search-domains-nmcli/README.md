@@ -14,6 +14,7 @@ DNS search domains allow you to resolve short hostnames without typing the full 
 
 ```bash
 # Add a single search domain
+
 nmcli connection modify "Wired connection 1" \
     ipv4.dns-search "corp.example.com"
 

@@ -181,6 +181,7 @@ Some capabilities are particularly dangerous and should almost never be granted:
 
 ```yaml
 # DO NOT USE IN PRODUCTION
+
 apiVersion: v1
 kind: Pod
 metadata:

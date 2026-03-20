@@ -22,6 +22,7 @@ Deploy using Helm:
 
 ```bash
 # Add Temporal Helm repo
+
 helm repo add temporalio https://go.temporal.io/helm-charts
 helm repo update
 

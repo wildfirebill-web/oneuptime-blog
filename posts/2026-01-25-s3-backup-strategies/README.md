@@ -63,6 +63,7 @@ Create a bucket with versioning and encryption:
 
 ```bash
 # Create the bucket
+
 aws s3 mb s3://company-backups-prod --region us-east-1
 
 # Enable versioning

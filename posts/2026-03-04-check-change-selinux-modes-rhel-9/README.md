@@ -32,6 +32,7 @@ graph TD
 
 ```bash
 # Show the current SELinux mode in one word
+
 getenforce
 ```
 

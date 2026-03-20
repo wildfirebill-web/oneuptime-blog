@@ -238,6 +238,7 @@ Artillery configuration:
 
 ```yaml
 # tests/performance/artillery.yml
+
 config:
   target: 'http://localhost:3000'
   phases:

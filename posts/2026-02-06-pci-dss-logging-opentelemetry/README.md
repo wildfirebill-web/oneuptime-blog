@@ -28,6 +28,7 @@ Every access to cardholder data needs a trace span with the fields PCI-DSS Requi
 
 ```python
 # Instrument cardholder data access with PCI-DSS required fields
+
 from opentelemetry import trace
 from datetime import datetime, timezone
 

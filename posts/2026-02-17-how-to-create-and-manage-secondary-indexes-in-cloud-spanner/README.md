@@ -128,6 +128,7 @@ To see all indexes on a database, inspect the DDL:
 
 ```bash
 # Show the complete schema including all index definitions
+
 gcloud spanner databases ddl describe my-database \
     --instance=my-spanner-instance
 ```

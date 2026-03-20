@@ -20,6 +20,7 @@ Start with a single Couchbase node.
 
 ```bash
 # Pull and run Couchbase Server
+
 docker run -d \
   --name couchbase-node1 \
   -p 8091-8096:8091-8096 \

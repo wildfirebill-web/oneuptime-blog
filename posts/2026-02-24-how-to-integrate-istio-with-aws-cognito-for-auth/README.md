@@ -161,6 +161,7 @@ aws cognito-idp create-group \
   --description "Developer users"
 
 # Add user to group
+
 aws cognito-idp admin-add-user-to-group \
   --user-pool-id us-east-1_aBcDeFgHi \
   --username user@example.com \

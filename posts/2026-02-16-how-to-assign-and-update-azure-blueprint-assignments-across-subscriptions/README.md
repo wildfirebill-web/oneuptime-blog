@@ -40,6 +40,7 @@ Each assignment includes:
 
 ```bash
 # Assign a blueprint to a subscription
+
 # The assignment name must be unique within the subscription
 az rest --method put \
   --url "https://management.azure.com/subscriptions/<subscription-id>/providers/Microsoft.Blueprint/blueprintAssignments/baseline-v1?api-version=2018-11-01-preview" \

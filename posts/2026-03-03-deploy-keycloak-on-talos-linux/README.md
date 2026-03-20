@@ -29,6 +29,7 @@ Start with a dedicated namespace for Keycloak:
 
 ```bash
 # Create a namespace for Keycloak
+
 kubectl create namespace keycloak
 ```
 

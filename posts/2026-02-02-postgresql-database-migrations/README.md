@@ -714,6 +714,7 @@ ROLLBACK_FILE=$3
 DB_URL=$DATABASE_URL
 
 # Function to log with timestamp
+
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
 }

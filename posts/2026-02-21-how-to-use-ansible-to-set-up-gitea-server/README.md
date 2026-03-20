@@ -14,6 +14,7 @@ Gitea is a lightweight, self-hosted Git service that provides a web interface, r
 
 ```yaml
 # playbook-gitea-install.yml
+
 # Installs Gitea from the official binary release
 - name: Install Gitea
   hosts: git_servers

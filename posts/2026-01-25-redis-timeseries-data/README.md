@@ -32,6 +32,7 @@ Redis TimeSeries requires the RedisTimeSeries module. Using Docker is the easies
 
 ```bash
 # Run Redis with TimeSeries module
+
 docker run -d --name redis-ts -p 6379:6379 redislabs/redistimeseries:latest
 
 # Or with persistence

@@ -26,6 +26,7 @@ Calico supports requesting a specific IP at pod creation time, but this does NOT
 
 ```bash
 # What Calico can do:
+
 # - Assign a specific IP when a pod is first created (via annotation)
 # - Reserve an IP so it's not assigned to other pods
 

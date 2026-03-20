@@ -12,6 +12,7 @@ The simplest way to set DNS servers including IPv6:
 
 ```bash
 # Edit /etc/resolv.conf
+
 cat > /etc/resolv.conf << 'EOF'
 # IPv6 DNS servers (Google Public DNS)
 nameserver 2001:4860:4860::8888
@@ -109,7 +110,7 @@ Domains=example.com
 
 ## Well-Known IPv6 DNS Servers
 
-```
+```text
 Google Public DNS:
   Primary:   2001:4860:4860::8888
   Secondary: 2001:4860:4860::8844

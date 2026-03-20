@@ -1,4 +1,4 @@
-# How to Deploy Ollama for Local LLM Inference via Portainer
+# How to Deploy Ollama for Local LLM Inference via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Ollama to run large language models locally using Portainer 
 
 ## Introduction
 
-Ollama makes it trivially easy to run large language models like Llama 3, Mistral, CodeLlama, and many others locally on your own hardware. By deploying Ollama via Portainer, you get a centrally managed LLM inference server that your entire team can access, with full control over your data — no API keys, no data leaving your infrastructure.
+Ollama makes it trivially easy to run large language models like Llama 3, Mistral, CodeLlama, and many others locally on your own hardware. By deploying Ollama via Portainer, you get a centrally managed LLM inference server that your entire team can access, with full control over your data - no API keys, no data leaving your infrastructure.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Ollama makes it trivially easy to run large language models like Llama 3, Mistra
 
 ```bash
 # Add NVIDIA container toolkit repository
+
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
   sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 

@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Create a VNet with subnets for AKS and private endpoints
+
 az network vnet create \
   --resource-group myResourceGroup \
   --name myVNet \

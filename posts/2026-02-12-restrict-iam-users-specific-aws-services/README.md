@@ -293,6 +293,7 @@ Organize users into groups and attach the service-specific policies:
 
 ```bash
 # Create groups for each role
+
 aws iam create-group --group-name FrontendDevelopers
 aws iam create-group --group-name BackendDevelopers
 aws iam create-group --group-name DataAnalysts

@@ -30,6 +30,7 @@ Before configuring MetalLB with IPv6, ensure your environment meets these requir
 
 ```bash
 # Check if your cluster supports IPv6
+
 # Your CNI must support IPv6 (Calico, Cilium, Flannel with IPv6 config)
 kubectl get nodes -o wide
 

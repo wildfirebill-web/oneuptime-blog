@@ -30,6 +30,7 @@ You need a GKE cluster with private nodes:
 
 ```bash
 # Create GKE cluster with private nodes
+
 gcloud container clusters create private-cluster \
   --zone=us-central1-a \
   --enable-ip-alias \

@@ -424,6 +424,7 @@ Here is the equivalent implementation in Python using Flask.
 
 ```python
 # compression_middleware.py
+
 # Flask middleware for handling compression headers
 
 import gzip

@@ -12,7 +12,7 @@ A classic GRE tunnel symptom: small pings work but large TCP transfers fail or l
 
 ## Understanding the Issue
 
-```
+```text
 Physical MTU:      1500 bytes
 GRE overhead:       -24 bytes (20 IP + 4 GRE)
 Tunnel MTU:        1476 bytes
@@ -24,6 +24,7 @@ TCP MSS (correct): 1436 bytes (1476 - 40 for IP+TCP headers)
 
 ```bash
 # Small ping succeeds
+
 ping -s 100 -M do -c 3 192.168.2.1
 
 # Large ping fails with "Message too long" or no reply
@@ -84,7 +85,7 @@ tcpdump -i gre0 "tcp[tcpflags] & tcp-syn != 0" -n
 
 ## Layered Overhead for Different Tunnel Types
 
-```
+```text
 GRE:          1476 (1500 - 24)
 GRE+IPsec:    1422 (1500 - 24 GRE - 54 IPsec)
 VXLAN:        1450 (1500 - 50 VXLAN overhead)

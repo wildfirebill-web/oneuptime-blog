@@ -20,6 +20,7 @@ Description: Configure Linux 802.3ad LACP bonding (mode 4) for dynamic link aggr
 
 ```bash
 # Load bonding module
+
 modprobe bonding
 
 # Create bond in 802.3ad mode

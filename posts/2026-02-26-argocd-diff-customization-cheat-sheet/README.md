@@ -69,6 +69,7 @@ These go in the `argocd-cm` ConfigMap:
 
 ```yaml
 # Ignore specific fields for Deployments
+
 resource.customizations.ignoreDifferences.apps_Deployment: |
   jsonPointers:
     - /spec/replicas

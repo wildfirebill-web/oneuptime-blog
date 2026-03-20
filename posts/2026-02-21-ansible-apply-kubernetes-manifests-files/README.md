@@ -29,6 +29,7 @@ The simplest case: apply one YAML file to your cluster.
 
 ```yaml
 # playbook: apply-manifest.yml
+
 # Applies a single Kubernetes manifest file from disk
 ---
 - name: Apply Kubernetes manifest from file

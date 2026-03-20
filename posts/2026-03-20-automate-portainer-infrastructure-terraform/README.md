@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     portainer = {
@@ -185,4 +186,4 @@ terraform apply -var="docker_host_count=5"
 
 ## Conclusion
 
-Full Portainer infrastructure automation with Terraform enables on-demand, repeatable cluster provisioning. A single `terraform apply` can provision VMs, configure Docker, register environments in Portainer, and deploy all application stacks — turning hours of manual work into minutes.
+Full Portainer infrastructure automation with Terraform enables on-demand, repeatable cluster provisioning. A single `terraform apply` can provision VMs, configure Docker, register environments in Portainer, and deploy all application stacks - turning hours of manual work into minutes.

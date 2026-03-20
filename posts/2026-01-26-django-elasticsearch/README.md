@@ -59,6 +59,7 @@ The architecture keeps your primary data in PostgreSQL while Elasticsearch handl
 
 ```bash
 # Install the required packages
+
 pip install django-elasticsearch-dsl elasticsearch
 
 # If you need async support

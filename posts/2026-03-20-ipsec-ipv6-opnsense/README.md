@@ -16,7 +16,7 @@ OPNsense uses strongSwan for IPsec and provides a web UI for configuration under
 
 Navigate to **VPN → IPsec → Connections → Add**:
 
-```
+```text
 General Settings:
   Connection: Enabled
   Description: IPv6-Site-To-Site
@@ -48,7 +48,7 @@ Dead Peer Detection:
 
 Under the Phase 1 entry, click **Add Phase 2**:
 
-```
+```text
 General:
   Description: site1-to-site2
   Mode: Tunnel IPv6
@@ -75,8 +75,9 @@ Click **Save** and then **Apply Changes**.
 
 Navigate to **Firewall → Rules → WAN**:
 
-```
+```text
 # Rule 1: Allow IKEv2
+
 Action:           Pass
 Interface:        WAN
 Direction:        in
@@ -100,7 +101,7 @@ Source:           2001:db8:gw2::1/128
 
 Navigate to **Firewall → Rules → IPsec**:
 
-```
+```text
 Action:           Pass
 Interface:        IPsec
 TCP/IP Version:   IPv6
@@ -108,13 +109,14 @@ Protocol:         Any
 Source:           2001:db8:site2::/48
 Destination:      2001:db8:site1::/48
 Description:      Allow tunnel traffic from Site2
+
 ```
 
 ## Monitoring from OPNsense UI
 
 Navigate to **VPN → IPsec → Status Overview**:
 
-```
+```text
 Active Tunnels:
   Connection        Remote Gateway         State
   IPv6-S2S          2001:db8:gw2::1        ESTABLISHED

@@ -14,6 +14,7 @@ Description: Diagnose and resolve 'No route to host' errors on RHEL by checking 
 
 ```bash
 # Reproduce the error to note the exact destination
+
 ping 192.168.2.100
 # ping: connect: No route to host
 

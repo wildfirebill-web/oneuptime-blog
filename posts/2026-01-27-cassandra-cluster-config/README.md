@@ -48,6 +48,7 @@ The `cassandra.yaml` file is the heart of Cassandra configuration. Located in `/
 # cassandra.yaml - Core cluster configuration
 
 # Unique name for your cluster. All nodes must share this value.
+
 # Changing this after data exists requires a full cluster rebuild.
 cluster_name: 'production-cassandra'
 

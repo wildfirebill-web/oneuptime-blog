@@ -34,6 +34,7 @@ In practice, your lists come from playbook variables, inventory, or gathered fac
 
 ```yaml
 # playbook.yml - Using join filter with variables
+
 - name: Configure allowed hosts
   hosts: web_servers
   vars:

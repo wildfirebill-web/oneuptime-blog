@@ -56,6 +56,7 @@ Always use `visudo -f` for files in `/etc/sudoers.d/`. It applies the same synta
 
 ```bash
 # Check syntax of all sudoers files
+
 sudo visudo -c
 ```
 

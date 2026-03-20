@@ -64,6 +64,7 @@ The flutter_bloc package provides the core BLoC functionality, while equatable h
 
 ```yaml
 # pubspec.yaml
+
 dependencies:
   flutter:
     sdk: flutter

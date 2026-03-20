@@ -226,6 +226,7 @@ Create different snapshot classes for different use cases:
 
 ```yaml
 # Fast, short-term snapshots for development
+
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshotClass
 metadata:

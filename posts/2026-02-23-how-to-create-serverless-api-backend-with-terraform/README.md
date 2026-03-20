@@ -28,6 +28,7 @@ Start with the data layer:
 
 ```hcl
 # DynamoDB table for the API
+
 resource "aws_dynamodb_table" "items" {
   name         = "api-items"
   billing_mode = "PAY_PER_REQUEST"  # Serverless billing

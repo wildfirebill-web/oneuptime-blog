@@ -29,6 +29,7 @@ Here is a Pulumi program in Python that provisions infrastructure and exports va
 
 ```python
 # __main__.py
+
 import pulumi
 import pulumi_aws as aws
 

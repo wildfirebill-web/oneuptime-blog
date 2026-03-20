@@ -61,6 +61,7 @@ Credential scanning is the highest-priority security check. A leaked credential 
 
 ```yaml
 # Focused credential scanning pipeline
+
 steps:
   - task: CredScan@3
     displayName: 'Scan for credentials'

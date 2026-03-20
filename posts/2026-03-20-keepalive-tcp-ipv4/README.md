@@ -19,7 +19,7 @@ sequenceDiagram
     B->>A: ACK (peer alive)
     Note over A,B: Another 10s idle
     A->>B: TCP Keep-Alive probe
-    B--xA: (no response — 6 retries)
+    B--xA: (no response - 6 retries)
     A->>A: ECONNRESET / connection dead
 ```
 
@@ -77,6 +77,7 @@ def enable_keepalive(sock: socket.socket,
         sock.setsockopt(socket.IPPROTO_TCP, TCP_KEEPALIVE, idle_sec)
 
 # Usage
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect(("192.168.1.100", 9000))
 enable_keepalive(s, idle_sec=30, interval_sec=5, max_fails=3)
@@ -156,4 +157,4 @@ sysctl -w net.ipv4.tcp_keepalive_time=60
 
 ## Conclusion
 
-Enable TCP keepalive with `SO_KEEPALIVE` on long-lived connections such as database links, message broker connections, and persistent client sessions. On Linux, tune `TCP_KEEPIDLE` (idle time before probing), `TCP_KEEPINTVL` (probe interval), and `TCP_KEEPCNT` (max failures) per socket using `setsockopt` — this overrides the system-wide defaults for that socket only. When a dead peer is detected, the next `recv()` or `send()` returns an error (`ECONNRESET` or `ETIMEDOUT`). For protocols that already implement heartbeats (WebSocket ping/pong, gRPC PING frames), TCP keepalive provides an additional lower-level safety net for infrastructure failures.
+Enable TCP keepalive with `SO_KEEPALIVE` on long-lived connections such as database links, message broker connections, and persistent client sessions. On Linux, tune `TCP_KEEPIDLE` (idle time before probing), `TCP_KEEPINTVL` (probe interval), and `TCP_KEEPCNT` (max failures) per socket using `setsockopt` - this overrides the system-wide defaults for that socket only. When a dead peer is detected, the next `recv()` or `send()` returns an error (`ECONNRESET` or `ETIMEDOUT`). For protocols that already implement heartbeats (WebSocket ping/pong, gRPC PING frames), TCP keepalive provides an additional lower-level safety net for infrastructure failures.

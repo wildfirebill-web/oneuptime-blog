@@ -29,6 +29,7 @@ Start by looking at your CDN logs to understand the breakdown of hits, misses, a
 
 ```bash
 # Get a breakdown of cache status from recent logs
+
 gcloud logging read \
     'resource.type="http_load_balancer" AND timestamp>="2026-02-17T00:00:00Z"' \
     --format="value(jsonPayload.statusDetails)" \

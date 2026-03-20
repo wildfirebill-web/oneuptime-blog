@@ -196,6 +196,7 @@ Define complexity costs directly in your schema using directives.
 
 ```graphql
 # schema.graphql
+
 # Define the complexity directive
 directive @complexity(
   value: Int!

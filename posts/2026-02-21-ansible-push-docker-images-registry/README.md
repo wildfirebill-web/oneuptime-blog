@@ -31,6 +31,7 @@ You need the `community.docker` collection installed, and Docker must be running
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 ```
 

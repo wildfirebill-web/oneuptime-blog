@@ -69,6 +69,7 @@ Name: lv-var    Size: 20 GB   Format: ext4   Mount: /var
 Name: lv-home   Size: 10 GB   Format: ext4   Mount: /home
 Name: lv-swap   Size: 4 GB    Format: swap   Mount: none
 # Leave 10-20 GB unallocated in the VG
+
 ```
 
 The unallocated space is the key: it gives you room to expand any LV later, create snapshots, or add temporary volumes.

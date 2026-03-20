@@ -25,6 +25,7 @@ This guide covers the complete AWS S3 backend setup including bucket creation wi
 
 ```bash
 # Primary backup bucket
+
 aws s3api create-bucket \
   --bucket my-cluster-velero-primary \
   --region us-east-1

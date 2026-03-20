@@ -8,11 +8,11 @@ Description: Diagnose and fix MTU black hole issues where TCP connections establ
 
 ## Introduction
 
-An MTU black hole exists when a router on the path discards oversized packets with DF bit set but does NOT send ICMP Fragmentation Needed messages back to the sender. The sender never learns the correct MTU and continues sending oversized packets — all of which are silently dropped. The result is a TCP connection that completes the handshake (small packets work), but data transfer hangs (large packets are silently dropped).
+An MTU black hole exists when a router on the path discards oversized packets with DF bit set but does NOT send ICMP Fragmentation Needed messages back to the sender. The sender never learns the correct MTU and continues sending oversized packets - all of which are silently dropped. The result is a TCP connection that completes the handshake (small packets work), but data transfer hangs (large packets are silently dropped).
 
 ## Classic Black Hole Symptoms
 
-```
+```bash
 Symptoms of an MTU black hole:
   - SSH connects and shell prompt appears, but commands with large output hang
   - HTTP connects and sends request, but response body never arrives
@@ -26,6 +26,7 @@ Symptoms of an MTU black hole:
 
 ```bash
 # Step 1: Confirm connection works (small packets):
+
 ping -c 3 10.20.0.5      # Small ICMP - should succeed
 curl -I http://10.20.0.5  # HTTP HEAD - small response
 

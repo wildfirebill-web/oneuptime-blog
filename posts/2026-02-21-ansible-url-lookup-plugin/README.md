@@ -22,6 +22,7 @@ This playbook fetches a public IP address from an API:
 
 ```yaml
 # playbook.yml - Fetch data from a URL
+
 ---
 - name: Get external information from APIs
   hosts: localhost

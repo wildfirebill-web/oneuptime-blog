@@ -16,6 +16,7 @@ An L2Advertisement tells MetalLB how to announce IPs from one or more IPAddressP
 
 ```yaml
 # A basic L2Advertisement that announces all IP pools on all interfaces
+
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
 metadata:

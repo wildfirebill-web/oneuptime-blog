@@ -18,6 +18,7 @@ The `Listen` directive in `/etc/apache2/ports.conf` (Debian/Ubuntu) or `/etc/htt
 
 ```apache
 # /etc/apache2/ports.conf (Ubuntu/Debian)
+
 # or /etc/httpd/conf/httpd.conf (RHEL/CentOS)
 
 # Remove or comment out the default Listen 80
@@ -112,7 +113,7 @@ sudo systemctl restart apache2
 # RHEL/CentOS/Fedora
 sudo systemctl restart httpd
 
-# Graceful reload (preferred for production—no dropped connections)
+# Graceful reload (preferred for production-no dropped connections)
 sudo systemctl reload apache2
 ```
 
@@ -131,4 +132,4 @@ sudo apache2ctl configtest && sudo systemctl restart apache2
 
 ## Conclusion
 
-Binding Apache to a specific IPv4 address is a one-line change in `ports.conf`—replace `Listen 80` with `Listen <IPv4>:80`. Update your VirtualHost directives to match the same IP:port. This approach improves security by reducing the attack surface and enables running separate Apache configurations on different network interfaces of the same server.
+Binding Apache to a specific IPv4 address is a one-line change in `ports.conf`-replace `Listen 80` with `Listen <IPv4>:80`. Update your VirtualHost directives to match the same IP:port. This approach improves security by reducing the attack surface and enables running separate Apache configurations on different network interfaces of the same server.

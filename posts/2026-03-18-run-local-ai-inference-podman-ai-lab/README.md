@@ -18,6 +18,7 @@ Running AI inference locally means your prompts and responses never leave your m
 
 ```bash
 # Verify Podman is running with adequate resources
+
 podman machine inspect --format 'CPUs: {{.Resources.CPUs}}, Memory: {{.Resources.Memory}}MB'
 
 # Ensure you have at least one model downloaded

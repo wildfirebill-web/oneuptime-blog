@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, nftables, Migration, Linux
+Tags: IPv6, Ip6tables, nftables, Migration, Linux
 
 Description: Step-by-step guide to migrating from ip6tables to nftables, using automated conversion tools and manual review to ensure no security policy gaps during the transition.
 
@@ -14,6 +14,7 @@ ip6tables is deprecated on modern Linux distributions in favor of nftables. The 
 
 ```bash
 # Verify nftables is available
+
 nft --version
 
 # Verify translation tools are installed
@@ -123,7 +124,7 @@ After translating ip6tables rules, consider upgrading to unified inet format:
 # 1. Back up current ip6tables rules
 ip6tables-save > /tmp/ip6tables-backup.rules
 
-# 2. Safety timer — auto-reverts if testing fails
+# 2. Safety timer - auto-reverts if testing fails
 at now + 5 minutes << 'EOF'
 nft flush ruleset
 ip6tables-restore < /tmp/ip6tables-backup.rules

@@ -22,6 +22,7 @@ The official PHP images come in three main flavors:
 
 ```bash
 # CLI image - PHP without a web server, good for scripts and workers
+
 podman pull docker.io/library/php:8.3-cli
 
 # Apache image - PHP with Apache and mod_php built in

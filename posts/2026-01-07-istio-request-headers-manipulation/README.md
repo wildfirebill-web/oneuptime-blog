@@ -82,6 +82,7 @@ The following VirtualService configuration adds custom headers to all requests d
 
 ```yaml
 # VirtualService that adds custom headers to incoming requests
+
 # These headers will be visible to the destination service
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

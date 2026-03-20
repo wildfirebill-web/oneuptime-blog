@@ -15,6 +15,7 @@ The router distributes DNS server IP addresses to WiFi clients as part of the DH
 **Consumer Router (OpenWrt):**
 ```bash
 # /etc/config/dhcp
+
 config dnsmasq
     option domainneeded '1'
     option boguspriv '1'

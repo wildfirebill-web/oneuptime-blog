@@ -37,6 +37,7 @@ Require signed commits so ArgoCD can verify that manifests come from trusted con
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

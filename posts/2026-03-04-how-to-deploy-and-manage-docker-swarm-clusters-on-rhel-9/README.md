@@ -55,6 +55,7 @@ sudo docker service scale web=5
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   web:

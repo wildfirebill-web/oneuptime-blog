@@ -28,6 +28,7 @@ The following commands install the WASM target and wasm-pack, which handles all 
 
 ```bash
 # Install the WebAssembly target for Rust
+
 rustup target add wasm32-unknown-unknown
 
 # Install wasm-pack - this tool builds, tests, and publishes WASM packages

@@ -16,6 +16,7 @@ To understand why `clear_host_errors` exists, you need to know how Ansible track
 
 ```yaml
 # Scenario where host error state matters
+
 ---
 - name: Demonstrate host error tracking
   hosts: all

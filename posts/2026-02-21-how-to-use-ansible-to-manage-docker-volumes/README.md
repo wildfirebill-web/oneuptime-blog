@@ -24,6 +24,7 @@ Volumes are preferred because Docker manages their lifecycle, they work on both 
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Docker Python SDK

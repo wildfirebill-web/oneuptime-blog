@@ -26,6 +26,7 @@ Smart inventories use the same filter syntax as the AWX host search. The `host_f
 
 ```bash
 # Create a smart inventory that finds all hosts with "web" in the name
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

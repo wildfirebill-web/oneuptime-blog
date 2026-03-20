@@ -28,6 +28,7 @@ The core pattern is simple: define multiple provider blocks with different alias
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     azurerm = {

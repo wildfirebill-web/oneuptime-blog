@@ -16,6 +16,7 @@ Terratest uses the same authentication methods as the Azure CLI and Terraform Az
 
 ```bash
 # Option 1: Azure CLI authentication
+
 az login
 
 # Option 2: Service principal environment variables

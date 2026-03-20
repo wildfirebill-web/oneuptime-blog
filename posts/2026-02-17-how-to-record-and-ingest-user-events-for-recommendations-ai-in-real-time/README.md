@@ -35,6 +35,7 @@ Install the Retail API client library and configure access.
 
 ```bash
 # Install the client library
+
 pip install google-cloud-retail
 ```
 

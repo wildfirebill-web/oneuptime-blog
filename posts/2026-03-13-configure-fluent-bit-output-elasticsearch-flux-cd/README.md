@@ -29,6 +29,7 @@ Never put credentials in plaintext in Git. Use Sealed Secrets or External Secret
 
 ```yaml
 # Example: create the Secret manually (use Sealed Secrets in production)
+
 # kubectl create secret generic elasticsearch-credentials \
 #   -n logging \
 #   --from-literal=username=elastic \

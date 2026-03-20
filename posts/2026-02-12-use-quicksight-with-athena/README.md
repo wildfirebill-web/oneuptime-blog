@@ -18,6 +18,7 @@ Before connecting QuickSight, create a dedicated Athena workgroup. This isolates
 
 ```bash
 # Create a workgroup specifically for QuickSight
+
 aws athena create-work-group \
   --name quicksight-workgroup \
   --configuration '{

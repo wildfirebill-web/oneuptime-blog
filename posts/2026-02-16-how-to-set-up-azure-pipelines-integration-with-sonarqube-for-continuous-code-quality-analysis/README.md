@@ -104,6 +104,7 @@ SonarQube can analyze pull requests and post comments directly on the PR in Azur
 
 ```yaml
 # PR-triggered pipeline for SonarQube analysis
+
 trigger: none
 
 pr:

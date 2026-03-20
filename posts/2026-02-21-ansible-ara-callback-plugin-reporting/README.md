@@ -27,6 +27,7 @@ ARA can run as a simple SQLite-based recorder or a full server with a web UI:
 
 ```bash
 # Install ARA with its API server
+
 pip install "ara[server]"
 
 # For just the callback (no web UI), install the base package

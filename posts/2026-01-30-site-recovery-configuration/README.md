@@ -62,6 +62,7 @@ For PostgreSQL cross-region replication:
 
 ```yaml
 # primary-postgresql.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

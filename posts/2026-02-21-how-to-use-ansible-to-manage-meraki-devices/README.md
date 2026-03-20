@@ -20,6 +20,7 @@ Install the Meraki collection and required Python library.
 
 ```bash
 # Install the Cisco Meraki Ansible collection
+
 ansible-galaxy collection install cisco.meraki
 
 # Install the Meraki Python SDK

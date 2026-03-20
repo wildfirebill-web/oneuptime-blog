@@ -113,7 +113,7 @@ public class PremiumFeaturesController : ControllerBase
 }
 ```
 
-## Resource-Based Authorization
+Resource-Based Authorization
 
 Sometimes authorization depends on the specific resource being accessed. You might allow users to edit their own posts but not others'. This requires passing the resource to the authorization check.
 

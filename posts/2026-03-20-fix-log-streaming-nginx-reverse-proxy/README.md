@@ -22,6 +22,7 @@ By default, Nginx buffers the entire response before sending it to the client. F
 
 ```bash
 # Test if logs stream without the proxy
+
 curl -N "http://portainer:9000/api/endpoints/1/docker/containers/<id>/logs?follow=true&stdout=true"
 
 # If logs appear in real-time without the proxy but not through Nginx,

@@ -22,6 +22,7 @@ Create a controlled Docker environment for running performance benchmarks.
 
 ```yaml
 # docker-compose.benchmark.yml - Performance benchmarking environment
+
 version: "3.8"
 
 services:

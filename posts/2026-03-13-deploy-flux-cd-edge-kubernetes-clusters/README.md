@@ -30,6 +30,7 @@ Before deploying Flux, understand your edge node's resource envelope.
 
 ```bash
 # Check available resources on edge node
+
 kubectl describe node | grep -A 10 "Allocated resources"
 
 # Typical edge constraints:

@@ -14,6 +14,7 @@ Monitoring IPv6 traffic in Docker containers involves capturing traffic on bridg
 
 ```bash
 # Find bridge interface for a Docker network
+
 BRIDGE=$(docker network inspect mynet \
     --format "{{.Options}}" | grep -o 'br-[a-f0-9]*' | head -1)
 
@@ -85,7 +86,7 @@ watch -n 5 'docker exec mycontainer ss -t6 | grep -c ESTAB'
 ## Prometheus Monitoring with cAdvisor
 
 ```yaml
-# compose.yaml — IPv6 monitoring stack
+# compose.yaml - IPv6 monitoring stack
 
 networks:
   monitoring:
@@ -142,4 +143,4 @@ topk(10, rate(container_network_receive_bytes_total{name!=""}[5m]))
 
 ## Conclusion
 
-Monitor Docker IPv6 traffic using `tcpdump -i br-<id> ip6` to capture raw traffic on bridge interfaces, `docker stats` for aggregate network I/O, and the Docker stats API for per-container detailed metrics. Run cAdvisor with Prometheus for time-series container network monitoring with dashboards. Use `ss -t6` inside containers to monitor active IPv6 TCP connections. Bridge interface names follow the pattern `br-<first-12-chars-of-network-id>` — find them with `ip link show type bridge`.
+Monitor Docker IPv6 traffic using `tcpdump -i br-<id> ip6` to capture raw traffic on bridge interfaces, `docker stats` for aggregate network I/O, and the Docker stats API for per-container detailed metrics. Run cAdvisor with Prometheus for time-series container network monitoring with dashboards. Use `ss -t6` inside containers to monitor active IPv6 TCP connections. Bridge interface names follow the pattern `br-<first-12-chars-of-network-id>` - find them with `ip link show type bridge`.

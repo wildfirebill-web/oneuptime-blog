@@ -14,6 +14,7 @@ Switching between DHCP and static IP is a common task for servers that start wit
 
 ```bash
 # View current connection (DHCP)
+
 nmcli connection show eth0 | grep -E "ipv4.method|GENERAL.STATE"
 # ipv4.method: auto
 
@@ -110,5 +111,5 @@ nmcli connection up eth0
 
 - Use `nmcli connection modify <name> ipv4.method manual` with IP/gateway to switch to static.
 - Use `ipv4.method auto` with empty addresses/gateway/dns to switch back to DHCP.
-- Apply changes with `nmcli connection up <name>` — modifications are not applied until the connection is (re)activated.
+- Apply changes with `nmcli connection up <name>` - modifications are not applied until the connection is (re)activated.
 - Maintain a separate DHCP and static profile per interface for safe switching without risk of losing access.

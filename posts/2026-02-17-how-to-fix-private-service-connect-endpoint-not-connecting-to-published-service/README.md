@@ -22,6 +22,7 @@ Start by checking the status of the PSC endpoint (forwarding rule):
 
 ```bash
 # Describe the PSC forwarding rule to see its status
+
 gcloud compute forwarding-rules describe your-psc-endpoint \
     --region=us-central1 \
     --format="json(name, IPAddress, target, pscConnectionStatus, pscConnectionId)"

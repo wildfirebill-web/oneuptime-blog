@@ -20,6 +20,7 @@ Using the AWS CLI:
 
 ```bash
 # Create a Function URL with no authentication (publicly accessible)
+
 aws lambda create-function-url-config \
   --function-name my-api-handler \
   --auth-type NONE

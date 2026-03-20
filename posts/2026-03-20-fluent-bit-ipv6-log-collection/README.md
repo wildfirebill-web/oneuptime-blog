@@ -21,6 +21,7 @@ Fluent Bit is a lightweight log collector and forwarder commonly deployed as a D
     Log_Level     info
 
 # Syslog input bound to all IPv6 interfaces
+
 [INPUT]
     Name          syslog
     Mode          tcp

@@ -27,6 +27,7 @@ The `tfplan/v2` mock is the one you will create most often. Here is the complete
 
 ```python
 # mock-tfplan-v2.sentinel
+
 # Complete mock for the tfplan/v2 import
 
 # Resource changes - the most important part

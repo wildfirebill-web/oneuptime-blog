@@ -35,6 +35,7 @@ The simplest approval gate is turning off automated sync for production applicat
 
 ```yaml
 # Dev - auto-syncs immediately
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

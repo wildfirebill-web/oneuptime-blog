@@ -16,6 +16,7 @@ On Ubuntu Desktop, GParted may already be installed. If not:
 
 ```bash
 # Install GParted
+
 sudo apt-get update
 sudo apt-get install -y gparted
 

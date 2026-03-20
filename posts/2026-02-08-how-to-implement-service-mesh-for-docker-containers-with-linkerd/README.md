@@ -30,6 +30,7 @@ Install k3s on your server:
 
 ```bash
 # Install k3s - a lightweight Kubernetes distribution
+
 # This gives you Kubernetes without the heavy overhead
 curl -sfL https://get.k3s.io | sh -
 
@@ -343,7 +344,7 @@ spec:
 
 This sends 90% of requests to the stable version and 10% to the canary. Monitor error rates through the viz dashboard and increase the canary weight gradually.
 
-## Resource Usage
+Resource Usage
 
 One concern with service meshes is overhead. Linkerd's proxy is written in Rust and is lightweight. Check the resource consumption:
 

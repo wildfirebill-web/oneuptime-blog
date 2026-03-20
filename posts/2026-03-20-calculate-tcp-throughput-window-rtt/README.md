@@ -12,7 +12,7 @@ TCP throughput can be precisely calculated using the bandwidth-delay product (BD
 
 ## The TCP Throughput Formula
 
-```
+```text
 Maximum Throughput = Receive Window Size / RTT
 
 Where:
@@ -24,6 +24,7 @@ Where:
 
 ```bash
 # Measure RTT with ping (in milliseconds)
+
 ping -c 20 10.20.0.5 | tail -3
 # rtt min/avg/max/mdev = 45.2/46.8/48.1/0.7 ms
 
@@ -102,4 +103,4 @@ iperf3 -c 10.20.0.5 -t 10
 
 ## Conclusion
 
-The BDP formula is a powerful diagnostic tool. If your calculated maximum throughput is much lower than your network's capacity, increasing TCP buffer sizes will directly improve performance. If actual throughput is much lower than the calculated maximum, packet loss or congestion is limiting you — no amount of buffer tuning will help there. Always measure both to direct your optimization effort correctly.
+The BDP formula is a powerful diagnostic tool. If your calculated maximum throughput is much lower than your network's capacity, increasing TCP buffer sizes will directly improve performance. If actual throughput is much lower than the calculated maximum, packet loss or congestion is limiting you - no amount of buffer tuning will help there. Always measure both to direct your optimization effort correctly.

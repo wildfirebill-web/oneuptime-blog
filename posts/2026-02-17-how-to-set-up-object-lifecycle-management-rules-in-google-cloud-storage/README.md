@@ -53,6 +53,7 @@ Apply this to your bucket using the gcloud CLI:
 
 ```bash
 # Apply the lifecycle configuration file to a bucket
+
 gcloud storage buckets update gs://my-bucket \
   --lifecycle-file=lifecycle.json
 ```

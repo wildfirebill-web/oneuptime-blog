@@ -28,6 +28,7 @@ This guide walks through the complete migration procedure with pre-flight checks
 
 ```bash
 # Verify current Calico installation type
+
 kubectl get pods -n kube-system | grep calico
 kubectl get pods -n calico-system 2>/dev/null || echo "calico-system namespace not found (manifest install)"
 

@@ -57,6 +57,7 @@ Let us build a real-time notification and chat system to demonstrate these conce
 
 ```bash
 # Create a new project directory and initialize it
+
 mkdir graphql-realtime-demo
 cd graphql-realtime-demo
 npm init -y

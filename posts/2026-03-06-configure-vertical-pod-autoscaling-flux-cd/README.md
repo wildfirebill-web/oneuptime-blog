@@ -27,6 +27,7 @@ First, deploy the VPA controller using a Flux HelmRelease:
 
 ```yaml
 # infrastructure/controllers/vpa-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

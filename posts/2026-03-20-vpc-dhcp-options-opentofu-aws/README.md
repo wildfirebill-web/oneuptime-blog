@@ -19,6 +19,7 @@ DHCP options sets define network configuration distributed to EC2 instances at l
 
 ```hcl
 # Custom DHCP options set specifying corporate DNS and domain
+
 resource "aws_vpc_dhcp_options" "custom" {
   # Custom domain name for instances in this VPC
   domain_name = "corp.example.com"

@@ -82,6 +82,7 @@ You can also subscribe via the CLI.
 
 ```bash
 # List available data sets for a specific product
+
 aws dataexchange list-data-sets \
   --query "DataSets[].{Name:Name, Id:Id}" \
   --output table

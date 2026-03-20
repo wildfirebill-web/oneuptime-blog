@@ -33,6 +33,7 @@ Grafana maintains an official APT repository:
 
 ```bash
 # Import the Grafana GPG key
+
 sudo mkdir -p /etc/apt/keyrings
 wget -q -O - https://apt.grafana.com/gpg.key | \
   gpg --dearmor | \

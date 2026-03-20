@@ -25,6 +25,7 @@ PMM Server runs as a Docker container. Pull and start it with a named volume for
 
 ```bash
 # Pull the latest PMM Server image
+
 docker pull percona/pmm-server:2
 
 # Create a volume for persistent data

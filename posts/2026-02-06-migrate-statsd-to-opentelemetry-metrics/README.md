@@ -26,6 +26,7 @@ The smoothest migration path starts by pointing your existing StatsD clients at 
 
 ```yaml
 # otel-collector-config.yaml
+
 # This configuration accepts StatsD metrics and exports them as OTLP
 receivers:
   # StatsD receiver listens on the same port as a traditional StatsD daemon

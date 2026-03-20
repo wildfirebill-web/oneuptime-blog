@@ -38,6 +38,7 @@ If the active slave loses its link and the bond does not switch to a backup, the
 
 ```bash
 # Verify the bond configuration
+
 cat /proc/net/bonding/bond0 | grep -E "MII|Polling"
 ```
 

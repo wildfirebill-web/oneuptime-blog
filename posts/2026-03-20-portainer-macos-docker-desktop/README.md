@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, macos, docker-desktop, installation, apple-silicon
+Tags: Portainer, macOS, Docker-desktop, Installation, Apple-silicon
 
 Description: A guide to installing and running Portainer CE on macOS using Docker Desktop, covering both Apple Silicon and Intel Macs.
 
@@ -20,6 +20,7 @@ Docker Desktop for macOS provides a seamless Docker experience on both Apple Sil
 
 ```bash
 # Install via Homebrew (recommended)
+
 brew install --cask docker
 
 # Or download from: https://www.docker.com/products/docker-desktop
@@ -63,7 +64,7 @@ docker ps | grep portainer
 ## Step 4: Access Portainer
 
 Open your browser and navigate to:
-```
+```text
 https://localhost:9443
 ```
 
@@ -105,11 +106,11 @@ Docker Desktop on macOS uses a VM for Linux compatibility. File system performan
 # Container application data should also use Docker volumes when possible
 ```
 
-### Resource Allocation
+Resource Allocation
 
 Configure Docker Desktop resources:
 
-```
+```bash
 Docker Desktop → Settings → Resources
 - Memory: 4-8GB (more = better container performance)
 - CPUs: 4+ for multiple containers

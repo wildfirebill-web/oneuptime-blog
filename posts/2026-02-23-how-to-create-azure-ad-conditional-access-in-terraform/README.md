@@ -18,6 +18,7 @@ Conditional Access policies evaluate signals such as user identity, device state
 
 ```hcl
 # Configure the Azure AD provider for Conditional Access
+
 terraform {
   required_providers {
     azuread = {

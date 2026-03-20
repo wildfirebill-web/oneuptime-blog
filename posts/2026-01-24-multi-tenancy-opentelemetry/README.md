@@ -75,6 +75,7 @@ def create_tenant_tracer_provider(tenant_id, tenant_name):
     return provider
 
 # Usage for a specific tenant
+
 tenant_provider = create_tenant_tracer_provider(
     tenant_id="tenant-123",
     tenant_name="Acme Corp"

@@ -45,6 +45,7 @@ podman run --rm --platform linux/arm64 alpine uname -m
 
 podman run --rm --platform linux/s390x alpine uname -m
 # Should output: s390x
+
 ```
 
 ## Basic Cross-Architecture Builds

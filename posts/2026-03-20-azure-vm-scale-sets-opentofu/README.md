@@ -190,6 +190,7 @@ tofu plan
 tofu apply
 
 # Check current instance count
+
 az vmss show \
   --resource-group <rg> \
   --name <vmss-name> \
@@ -210,4 +211,4 @@ az vmss list-instances \
 
 ## Conclusion
 
-Use `upgrade_mode = "RollingUpgrade"` in production to update VMs in batches without taking down the entire fleet—combine with `automatic_os_upgrade_policy` to keep OS patches current. Set the minimum capacity in autoscale to at least 2 to maintain availability during single VM failures. The scale-out cooldown should be shorter than scale-in cooldown to react quickly to load spikes but avoid thrashing during transient traffic variations. Use `instances` to set the initial count, but let autoscaling manage runtime capacity once deployed.
+Use `upgrade_mode = "RollingUpgrade"` in production to update VMs in batches without taking down the entire fleet-combine with `automatic_os_upgrade_policy` to keep OS patches current. Set the minimum capacity in autoscale to at least 2 to maintain availability during single VM failures. The scale-out cooldown should be shorter than scale-in cooldown to react quickly to load spikes but avoid thrashing during transient traffic variations. Use `instances` to set the initial count, but let autoscaling manage runtime capacity once deployed.

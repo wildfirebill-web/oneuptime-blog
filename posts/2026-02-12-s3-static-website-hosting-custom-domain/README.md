@@ -32,6 +32,7 @@ Create a bucket that matches your domain name and configure it for website hosti
 
 ```bash
 # Create the main site bucket
+
 aws s3api create-bucket \
   --bucket example.com \
   --region us-east-1

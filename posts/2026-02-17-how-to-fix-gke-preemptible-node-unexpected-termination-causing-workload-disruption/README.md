@@ -105,6 +105,7 @@ Set the termination grace period in your pod spec. This controls how long the ku
 
 ```yaml
 # Set a grace period that fits within the preemption window
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

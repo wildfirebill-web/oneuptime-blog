@@ -469,6 +469,7 @@ When you encounter this error, follow these steps:
 
 ```bash
 # Look in node_modules/@types/package-name
+
 # Or node_modules/package-name/index.d.ts
 ```
 

@@ -28,6 +28,7 @@ Here is a Terraform configuration for a composite alert that requires both high 
 
 ```hcl
 # terraform/composite_alert.tf
+
 resource "google_monitoring_alert_policy" "service_degradation" {
   display_name = "Service Degradation - High Errors AND High Latency"
   combiner     = "AND"  # All conditions must be true

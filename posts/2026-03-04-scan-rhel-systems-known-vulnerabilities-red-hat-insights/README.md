@@ -16,6 +16,7 @@ Your RHEL systems must be registered with Red Hat Insights. If not already regis
 
 ```bash
 # Register with Insights
+
 sudo insights-client --register
 
 # Run an initial data collection

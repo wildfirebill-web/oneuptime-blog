@@ -41,6 +41,7 @@ Before configuring diagnostic settings, you need a Log Analytics workspace. If y
 
 ```bash
 # Create a resource group for monitoring infrastructure
+
 az group create \
   --name "rg-monitoring" \
   --location "eastus"

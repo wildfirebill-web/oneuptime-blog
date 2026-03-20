@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Configuration, Performance, Snapshots, Docker
+Tags: Portainer, Configuration, Performance, Snapshot, Docker
 
 Description: Learn how to adjust Portainer's environment snapshot interval to balance data freshness with system performance.
 
 ---
 
-Portainer periodically polls connected environments to update the state displayed in the UI — this is called a snapshot. By default, snapshots occur every 5 minutes. On busy or resource-constrained systems, you may want to adjust this interval.
+Portainer periodically polls connected environments to update the state displayed in the UI - this is called a snapshot. By default, snapshots occur every 5 minutes. On busy or resource-constrained systems, you may want to adjust this interval.
 
 ## What is a Snapshot?
 
@@ -33,6 +33,7 @@ You can also set the snapshot interval at container startup:
 
 ```bash
 # Start Portainer with a custom snapshot interval (60 seconds)
+
 docker run -d \
   -p 8000:8000 \
   -p 9443:9443 \

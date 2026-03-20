@@ -17,6 +17,7 @@ Description: Learn strategies to extend the life of your IPv4 private address sp
 
 ```python
 # Scan all subnets and measure actual utilization
+
 import subprocess
 from ipaddress import ip_network
 
@@ -47,7 +48,7 @@ for subnet in subnets:
 
 Many networks over-allocate out of caution, wasting 70-80% of space:
 
-```
+```text
 Before (over-allocated):
   Department A: 10.1.0.0/22 (1022 usable, 45 actual hosts)
   Department B: 10.1.4.0/22 (1022 usable, 12 actual hosts)
@@ -55,9 +56,9 @@ Before (over-allocated):
   Total wasted: ~2900 addresses
 
 After (right-sized):
-  Department A: 10.1.0.0/26 (62 usable, 45 hosts — 20% headroom)
-  Department B: 10.1.0.64/27 (30 usable, 12 hosts — 150% headroom)
-  Department C: 10.1.0.96/27 (30 usable, 8 hosts — 275% headroom)
+  Department A: 10.1.0.0/26 (62 usable, 45 hosts - 20% headroom)
+  Department B: 10.1.0.64/27 (30 usable, 12 hosts - 150% headroom)
+  Department C: 10.1.0.96/27 (30 usable, 8 hosts - 275% headroom)
   Reclaimed: ~2850 addresses from just 3 subnets
 ```
 
@@ -84,10 +85,10 @@ print(f"After summarization: {len(summaries)} prefixes: {summaries}")
 
 Instead of 10.0.0.0/8, consider 172.16.0.0/12 for small networks:
 
-```
+```text
 Available private space review:
-  10.0.0.0/8 — Currently using 10.0.0.0-10.10.255.255 (11 /16s)
-  10.11.0.0/8 through 10.255.0.0/16 — completely unused!
+  10.0.0.0/8 - Currently using 10.0.0.0-10.10.255.255 (11 /16s)
+  10.11.0.0/8 through 10.255.0.0/16 - completely unused!
 
   Action: Audit and document the unused range, make it available for
   new projects instead of requesting public IP space.
@@ -137,7 +138,7 @@ precedence ::ffff:0:0/96 10   # Deprioritize IPv4-mapped IPv6
 
 If you must stay IPv4-only, use Carrier-Grade NAT (CGN):
 
-```
+```text
 RFC 6598 shared address space: 100.64.0.0/10
   Used between ISP and customer, or large internal NAT pools
   4 million addresses: 100.64.0.0 - 100.127.255.255

@@ -45,6 +45,7 @@ Start by creating the hub VNet. This will host your shared infrastructure.
 
 ```bash
 # Create a resource group for the entire hub-and-spoke deployment
+
 az group create \
   --name rg-hub-spoke \
   --location eastus

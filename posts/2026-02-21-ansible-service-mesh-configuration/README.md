@@ -22,6 +22,7 @@ Here is a role that installs Istio on a Kubernetes cluster:
 
 ```yaml
 # roles/istio_install/tasks/main.yml
+
 # Install Istio service mesh on Kubernetes
 ---
 - name: Download Istio release

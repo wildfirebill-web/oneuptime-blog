@@ -48,6 +48,7 @@ First, set up a DNS probe that the collector can scrape:
 
 ```yaml
 # config.yaml - DNS monitoring with active probes
+
 receivers:
   # Use the httpcheck receiver to monitor endpoints
   # DNS resolution time is included in the connection metrics

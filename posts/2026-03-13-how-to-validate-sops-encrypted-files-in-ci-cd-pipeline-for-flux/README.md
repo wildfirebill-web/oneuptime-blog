@@ -168,6 +168,7 @@ echo "=== SOPS Encryption Validation ==="
 echo ""
 
 # Check 1: .sops.yaml exists and is valid
+
 echo "--- Check 1: .sops.yaml configuration ---"
 if [ ! -f .sops.yaml ]; then
   echo "ERROR: .sops.yaml not found"

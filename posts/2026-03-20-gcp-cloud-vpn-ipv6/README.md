@@ -20,6 +20,7 @@ GCP Cloud VPN IPv6 enables private IPv6 connectivity between cloud resources and
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 gcloud compute networks subnets list --filter='ipv6AccessType=INTERNAL OR ipv6AccessType=EXTERNAL'
 ```
 

@@ -18,6 +18,7 @@ The `coalescelist` function takes any number of list arguments and returns the f
 
 ```hcl
 # Returns the first non-empty list
+
 coalescelist(list1, list2, list3, ...)
 ```
 

@@ -65,6 +65,7 @@ Before scaling out, maximize single-machine performance:
 
 ```python
 # locustfile.py - High performance user class
+
 from locust import task, between
 from locust.contrib.fasthttp import FastHttpUser
 

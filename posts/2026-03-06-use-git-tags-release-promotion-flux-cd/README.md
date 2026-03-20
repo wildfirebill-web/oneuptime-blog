@@ -79,6 +79,7 @@ Establish a clear tagging convention that Flux can use to select the right relea
 
 ```bash
 # Release candidates for staging validation
+
 git tag v1.0.0-rc.1
 git tag v1.0.0-rc.2
 

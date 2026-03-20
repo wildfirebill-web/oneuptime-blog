@@ -31,6 +31,7 @@ This command initializes Firebase in your project directory with Functions suppo
 
 ```bash
 # Install Firebase CLI globally
+
 npm install -g firebase-tools
 
 # Log in and initialize your project

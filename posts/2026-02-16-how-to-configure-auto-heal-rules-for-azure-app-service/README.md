@@ -66,6 +66,7 @@ For programmatic configuration, use the Azure CLI with a JSON configuration:
 
 ```bash
 # Create a JSON file with Auto-Heal rules
+
 # This configuration recycles the process when:
 # - More than 50 requests take longer than 30 seconds in a 2-minute window
 # - More than 100 HTTP 500 errors occur in a 5-minute window

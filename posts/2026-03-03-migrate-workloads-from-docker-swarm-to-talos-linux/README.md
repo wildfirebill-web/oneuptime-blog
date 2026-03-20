@@ -39,6 +39,7 @@ Start by documenting everything running on your Swarm:
 
 ```bash
 # List all services
+
 docker service ls
 
 # Get detailed info for each service

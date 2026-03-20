@@ -23,6 +23,7 @@ This guide covers zero trust Kubernetes NetworkPolicy Basics in Calico with prod
 
 ```yaml
 # Standard Kubernetes NetworkPolicy (enforced by Calico)
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

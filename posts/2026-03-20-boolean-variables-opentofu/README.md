@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Boolean, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Booleans, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using boolean type variables in OpenTofu to enable or disable features conditionally.
 
@@ -14,6 +14,7 @@ Boolean variables hold `true` or `false` values and are used for feature flags, 
 
 ```hcl
 # Basic boolean variable
+
 variable "enable_monitoring" {
   type = bool
 }

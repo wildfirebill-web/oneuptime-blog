@@ -20,6 +20,7 @@ Start at the operating system level. Verify that Talos itself is running correct
 
 ```bash
 # Verify talosctl can reach the nodes
+
 talosctl version --nodes 192.168.1.101
 
 # Output shows both client and server versions

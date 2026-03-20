@@ -26,6 +26,7 @@ Kubernetes automatically rotates bound tokens mounted in pods. Configure the rot
 
 ```yaml
 # auto-rotating-token.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

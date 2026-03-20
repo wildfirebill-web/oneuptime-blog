@@ -18,6 +18,7 @@ Start with a Quarkus project that has the dependencies you need:
 
 ```bash
 # Generate a Quarkus project with REST and health extensions
+
 mvn io.quarkus.platform:quarkus-maven-plugin:3.6.0:create \
     -DprojectGroupId=com.example \
     -DprojectArtifactId=quarkus-gke-app \

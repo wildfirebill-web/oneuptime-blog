@@ -29,6 +29,7 @@ Start with a deny-all baseline:
 
 ```yaml
 # clusters/my-cluster/consul-intentions/default-deny.yaml
+
 # Default deny via Consul ServiceIntentions CRD
 apiVersion: consul.hashicorp.com/v1alpha1
 kind: ServiceIntentions

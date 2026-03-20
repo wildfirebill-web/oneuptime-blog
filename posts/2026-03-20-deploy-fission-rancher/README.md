@@ -1,8 +1,8 @@
-# How to Deploy Fission on Rancher
+# How to Deploy Fission on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, fission, serverless, kubernetes, functions
+Tags: Rancher, Fission, Serverless, Kubernetes, Functions
 
 Description: Guide to deploying Fission serverless framework on Rancher for fast function execution with warm pods.
 
@@ -22,6 +22,7 @@ Fission is a fast, open-source serverless framework for Kubernetes. Unlike other
 
 ```bash
 # Add Fission Helm repository
+
 helm repo add fission-charts https://fission.github.io/fission-charts/
 helm repo update
 

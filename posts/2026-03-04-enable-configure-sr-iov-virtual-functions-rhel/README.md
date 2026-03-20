@@ -14,6 +14,7 @@ SR-IOV allows a single physical network adapter to present multiple virtual func
 
 ```bash
 # Verify the NIC supports SR-IOV
+
 lspci -v | grep -A10 "Ethernet" | grep "SR-IOV"
 
 # Check if IOMMU is enabled (required for VF passthrough)

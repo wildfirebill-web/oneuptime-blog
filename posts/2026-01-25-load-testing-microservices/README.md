@@ -16,6 +16,7 @@ Install k6 on your system:
 
 ```bash
 # macOS
+
 brew install k6
 
 # Linux (Debian/Ubuntu)

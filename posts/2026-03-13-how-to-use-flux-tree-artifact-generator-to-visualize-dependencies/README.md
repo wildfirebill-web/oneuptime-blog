@@ -170,6 +170,7 @@ Use this with `jq` for filtering:
 
 ```bash
 # Find all generators with failing inputs
+
 flux tree artifactgenerator -A -o json | \
   jq '.[] | select(.inputs[] | .ready == false) | .name'
 ```

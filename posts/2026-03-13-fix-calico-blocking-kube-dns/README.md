@@ -84,6 +84,7 @@ spec:
 kubectl apply -f allow-dns-ingress-to-coredns.yaml
 
 # Test from multiple namespaces
+
 for NS in default production staging; do
   kubectl run dns-test --image=busybox -n $NS --restart=Never --rm -i \
     --timeout=15s -- nslookup kubernetes.default 2>&1 \

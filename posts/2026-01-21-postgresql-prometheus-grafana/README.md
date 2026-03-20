@@ -32,6 +32,7 @@ PostgreSQL --> postgres_exporter --> Prometheus --> Grafana
 
 ```bash
 # Download latest release
+
 wget https://github.com/prometheus-community/postgres_exporter/releases/download/v0.15.0/postgres_exporter-0.15.0.linux-amd64.tar.gz
 
 # Extract

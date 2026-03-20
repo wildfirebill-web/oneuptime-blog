@@ -14,6 +14,7 @@ HashiCorp Consul provides service discovery, service mesh with mTLS, health chec
 
 ```hcl
 # main.tf - Deploy HashiCorp Consul via Helm
+
 resource "helm_release" "consul" {
   name             = "consul"
   repository       = "https://helm.releases.hashicorp.com"

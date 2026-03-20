@@ -14,6 +14,7 @@ AWS Transit Gateway (TGW) acts as a regional network hub connecting multiple VPC
 
 ```bash
 # Create TGW
+
 TGW_ID=$(aws ec2 create-transit-gateway \
     --description "Dual-stack TGW" \
     --options \

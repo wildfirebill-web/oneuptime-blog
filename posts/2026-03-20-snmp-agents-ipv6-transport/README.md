@@ -14,6 +14,7 @@ SNMP (Simple Network Management Protocol) agents can be configured to listen on 
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install snmpd snmp -y
 
 # RHEL/CentOS
@@ -122,7 +123,7 @@ sudo ip6tables-save > /etc/ip6tables/rules.v6
 
 ## Configuring SNMP on Network Devices
 
-```
+```text
 ! Cisco IOS - Enable SNMP over IPv6
 snmp-server community public RO
 snmp-server host 2001:db8::nms version 2c public

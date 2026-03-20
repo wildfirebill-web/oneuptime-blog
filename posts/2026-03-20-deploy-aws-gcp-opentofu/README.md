@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS, GCP, Multi-Cloud, Infrastructure as Code, DevOps
 
-Description: Learn how to use OpenTofu to provision resources across both AWS and Google Cloud Platform simultaneously — deploying a multi-cloud architecture from a single configuration.
+Description: Learn how to use OpenTofu to provision resources across both AWS and Google Cloud Platform simultaneously - deploying a multi-cloud architecture from a single configuration.
 
 ## Introduction
 
-AWS and GCP are often used together — for example, AWS for primary compute with GCP BigQuery for analytics, or GCP for data pipelines feeding AWS-hosted applications. OpenTofu manages both from a single configuration.
+AWS and GCP are often used together - for example, AWS for primary compute with GCP BigQuery for analytics, or GCP for data pipelines feeding AWS-hosted applications. OpenTofu manages both from a single configuration.
 
 ## Provider Configuration
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     aws = {

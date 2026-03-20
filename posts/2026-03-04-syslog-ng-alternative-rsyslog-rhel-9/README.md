@@ -37,6 +37,7 @@ Syslog-ng is available from the EPEL repository:
 
 ```bash
 # Enable EPEL if not already enabled
+
 sudo dnf install epel-release -y
 
 # Install syslog-ng

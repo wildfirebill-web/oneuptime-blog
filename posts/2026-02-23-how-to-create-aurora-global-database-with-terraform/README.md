@@ -24,6 +24,7 @@ You need Terraform 1.0 or later, AWS credentials with permissions across multipl
 
 ```hcl
 # Primary region
+
 provider "aws" {
   region = "us-east-1"
   alias  = "primary"

@@ -149,6 +149,7 @@ Here is a full setup for three teams:
 
 ```yaml
 # argocd-cmd-params-cm
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

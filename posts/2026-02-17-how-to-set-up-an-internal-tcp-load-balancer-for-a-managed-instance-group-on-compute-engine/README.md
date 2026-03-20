@@ -40,6 +40,7 @@ First, create an instance template for the backend instances. This template incl
 
 ```bash
 # Create an instance template for backend services
+
 gcloud compute instance-templates create backend-template \
     --machine-type=e2-medium \
     --image-family=debian-12 \

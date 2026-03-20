@@ -25,6 +25,7 @@ Deploying YugabyteDB through Flux CD gives you GitOps control over cluster sizin
 
 ```yaml
 # infrastructure/sources/yugabytedb-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

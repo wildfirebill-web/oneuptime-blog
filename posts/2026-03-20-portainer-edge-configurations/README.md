@@ -40,6 +40,7 @@ Provide the following:
 
 ```nginx
 # Example: nginx.conf for an edge-deployed reverse proxy
+
 # Stored as an edge configuration in Portainer
 
 worker_processes auto;
@@ -77,7 +78,7 @@ http {
 
 Specify where the file should be written on the edge device:
 
-```
+```text
 # Target directory on edge host:
 /etc/edge-configs/nginx/nginx.conf
 
@@ -102,7 +103,7 @@ All endpoints in the selected groups will receive the file.
 Once configurations are distributed, your Edge Stack can use them via bind mounts:
 
 ```yaml
-# docker-compose.yml — uses the edge-distributed config file
+# docker-compose.yml - uses the edge-distributed config file
 version: "3.8"
 
 services:

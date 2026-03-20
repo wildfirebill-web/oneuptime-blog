@@ -23,6 +23,7 @@ graph LR
 
 ```yaml
 # roles/rundeck/tasks/main.yml
+
 ---
 - name: Add Rundeck repository
   ansible.builtin.apt_repository:

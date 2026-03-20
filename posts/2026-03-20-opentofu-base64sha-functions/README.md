@@ -10,8 +10,8 @@ Description: Learn how to use base64sha256 and base64sha512 in OpenTofu to produ
 
 OpenTofu provides Base64-encoded variants of its SHA hash functions:
 
-- `base64sha256(string)` — computes a SHA-256 hash and returns it Base64-encoded
-- `base64sha512(string)` — computes a SHA-512 hash and returns it Base64-encoded
+- `base64sha256(string)` - computes a SHA-256 hash and returns it Base64-encoded
+- `base64sha512(string)` - computes a SHA-512 hash and returns it Base64-encoded
 
 These are most commonly needed for AWS Lambda's `source_code_hash` attribute, which specifically requires a Base64-encoded SHA-256 hash to detect code changes.
 
@@ -21,6 +21,7 @@ The primary use case is computing the hash of a Lambda deployment package.
 
 ```hcl
 # The filebase64sha256 function is the preferred way to hash Lambda ZIP files,
+
 # but base64sha256 works with string content.
 
 resource "aws_lambda_function" "processor" {
@@ -130,7 +131,7 @@ resource "aws_lambda_function" "api" {
 
 ## Important Notes
 
-- For file-based hashing, prefer `filebase64sha256` over `base64sha256(filebase64(...))` — they are equivalent but the file-specific function is more readable.
+- For file-based hashing, prefer `filebase64sha256` over `base64sha256(filebase64(...))` - they are equivalent but the file-specific function is more readable.
 - `base64sha256` is more compact than `sha256` (Base64 is ~33% shorter than hex for the same data).
 - AWS Lambda's `source_code_hash` specifically requires Base64-encoded SHA-256.
 

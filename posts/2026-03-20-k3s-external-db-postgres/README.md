@@ -1,4 +1,4 @@
-# How to Configure K3s with an External Database (PostgreSQL)
+# How to Configure K3s with an External Database (PostgreSQL) - Postgres
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ PostgreSQL is a powerful, enterprise-grade relational database that K3s supports
 
 K3s uses the following format for PostgreSQL:
 
-```
+```text
 postgres://username:password@hostname:port/dbname?sslmode=disable
 postgres://username:password@hostname:port/dbname?sslmode=require
 ```
@@ -23,6 +23,7 @@ postgres://username:password@hostname:port/dbname?sslmode=require
 
 ```bash
 # Install PostgreSQL on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y postgresql postgresql-contrib
 
@@ -86,7 +87,7 @@ sudo nano /etc/postgresql/*/main/pg_hba.conf
 
 Add these lines:
 
-```
+```text
 # K3s server nodes - allow MD5 authentication
 host    k3s    k3suser    192.168.1.100/32    md5
 host    k3s    k3suser    192.168.1.101/32    md5

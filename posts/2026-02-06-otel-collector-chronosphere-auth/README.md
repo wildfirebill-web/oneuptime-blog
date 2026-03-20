@@ -12,6 +12,7 @@ Chronosphere uses service accounts for machine-to-machine authentication. When c
 
 ```yaml
 # otel-collector-chronosphere.yaml
+
 receivers:
   otlp:
     protocols:

@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tshark, Wireshark, Command Line, Packet Analysis, Network
+Tags: tshark, Wireshark, Command Line, Packet Analysis, Networks
 
-Description: Learn how to use tshark, Wireshark's command-line interface, to capture and analyze network packets without a GUI, extract specific fields, generate statistics, and automate packet analysis in scripts.
+Description: Learn how to use tshark, Wireshark's command-line interface, to capture and analyze network packets without a GUI, extract specific fields, generate statistics, and automate packet analysis in...
 
 ## Installing tshark
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install tshark wireshark-common
 
 # RHEL/CentOS/Rocky
@@ -56,7 +57,7 @@ tshark -r /tmp/capture.pcap -Y 'http'
 tshark -r /tmp/capture.pcap -Y 'ip.addr == 192.168.1.50'
 tshark -r /tmp/capture.pcap -Y 'tcp.flags.reset == 1'
 
-# Read with capture filter (faster — uses BPF, applied before parsing)
+# Read with capture filter (faster - uses BPF, applied before parsing)
 tshark -r /tmp/capture.pcap -R 'host 192.168.1.50'
 
 # Save filtered subset to new PCAP

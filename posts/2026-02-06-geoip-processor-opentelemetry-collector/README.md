@@ -42,6 +42,7 @@ Here's a minimal GeoIP Processor configuration that enriches telemetry with coun
 
 ```yaml
 # Configure receivers to accept telemetry
+
 receivers:
   otlp:
     protocols:

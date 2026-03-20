@@ -10,6 +10,7 @@ Description: A practical guide to using tcpdump to capture and analyze IPv6 mult
 
 ```bash
 # Capture all IPv6 multicast traffic on eth0
+
 tcpdump -i eth0 -n 'ip6 multicast'
 
 # Capture all IPv6 traffic (includes multicast)

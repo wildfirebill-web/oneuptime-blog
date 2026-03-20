@@ -16,6 +16,7 @@ Before diving into specific problems, collect the basic KubeSpan state from affe
 
 ```bash
 # Check KubeSpan identity
+
 talosctl get kubespanidentity --nodes <node-ip>
 
 # Check peer status (this is your primary diagnostic tool)

@@ -22,6 +22,7 @@ pip install fastapi redis[hiredis] uvicorn python-jose[cryptography]
 
 ```python
 # app/core/redis.py
+
 from redis.asyncio import Redis, ConnectionPool
 from contextlib import asynccontextmanager
 import os

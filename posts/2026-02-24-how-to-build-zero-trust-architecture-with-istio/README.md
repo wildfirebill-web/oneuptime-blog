@@ -32,6 +32,7 @@ Create dedicated service accounts for every service:
 
 ```yaml
 # Don't share service accounts between services
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

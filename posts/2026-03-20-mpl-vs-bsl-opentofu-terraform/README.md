@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Licensing, MPL, BSL, Open Source
+Tags: OpenTofu, Terraform, Licensing, MPLS, BSL, Open Source
 
-Description: Understand the license change that triggered the OpenTofu fork — the difference between Mozilla Public License 2.0 and Business Source License 1.1 — and what it means for infrastructure teams using IaC tools.
+Description: Understand the license change that triggered the OpenTofu fork - the difference between Mozilla Public License 2.0 and Business Source License 1.1 - and what it means for infrastructure teams...
 
 ## Introduction
 
@@ -14,7 +14,7 @@ In August 2023, HashiCorp changed Terraform's license from the Mozilla Public Li
 
 MPL 2.0 is an OSI-approved open source license:
 
-```
+```text
 Key permissions:
 - Commercial use: YES, unrestricted
 - Distribution: YES
@@ -38,7 +38,7 @@ Practical meaning: You can use OpenTofu in commercial products, build services o
 
 BSL is NOT an OSI-approved open source license:
 
-```
+```text
 Key permissions:
 - Internal use: YES
 - Non-production use: YES
@@ -81,19 +81,19 @@ Regular users provisioning their own infrastructure are generally unaffected in 
 
 The OpenTofu fork was initiated by a coalition of companies (Gruntwork, Spacelift, env0, Massdriver, Harness, Terramate, and others) through the Linux Foundation:
 
-```
+```hcl
 Timeline:
-Aug 10, 2023  — HashiCorp announces BSL license change
-Aug 14, 2023  — OpenTF Manifesto published, calls for MPL restoration
-Sep 20, 2023  — OpenTofu joins Linux Foundation
-Nov 13, 2023  — OpenTofu 1.6.0 alpha released
-Jan 11, 2024  — OpenTofu 1.6.0 stable released
-Ongoing       — OpenTofu adds features not available in Terraform
+Aug 10, 2023  - HashiCorp announces BSL license change
+Aug 14, 2023  - OpenTF Manifesto published, calls for MPL restoration
+Sep 20, 2023  - OpenTofu joins Linux Foundation
+Nov 13, 2023  - OpenTofu 1.6.0 alpha released
+Jan 11, 2024  - OpenTofu 1.6.0 stable released
+Ongoing       - OpenTofu adds features not available in Terraform
 ```
 
 ## Practical Decision Guidance
 
-```
+```hcl
 Are you building a product or service on top of Terraform/OpenTofu?
 → YES: Use OpenTofu (MPL 2.0, no competitive restrictions)
 
@@ -111,11 +111,11 @@ Are you a regular enterprise user provisioning your own infra?
 
 OpenTofu is committed to remaining under MPL 2.0 via the Linux Foundation:
 
-```
+```hcl
 "OpenTofu will always be open source under the MPL 2.0 license.
 The OpenTofu Steering Committee controls the project and is
 committed to keeping it free and open source."
-— OpenTofu Charter, Linux Foundation
+- OpenTofu Charter, Linux Foundation
 ```
 
 ## Conclusion

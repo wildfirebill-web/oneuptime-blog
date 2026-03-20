@@ -36,6 +36,7 @@ Create a common geo-replication user or use root. From the master node:
 
 ```bash
 # Generate SSH key on the master primary node
+
 sudo ssh-keygen -t rsa -b 4096 -f /root/.ssh/id_rsa -N ""
 
 # Create the geo-rep session which will push keys

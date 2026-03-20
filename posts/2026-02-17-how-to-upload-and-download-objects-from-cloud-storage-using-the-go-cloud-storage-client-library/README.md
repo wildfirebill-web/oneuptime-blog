@@ -18,6 +18,7 @@ First, install the Cloud Storage client library for Go.
 
 ```bash
 # Initialize your module and add the storage dependency
+
 go mod init storage-demo
 go get cloud.google.com/go/storage
 ```

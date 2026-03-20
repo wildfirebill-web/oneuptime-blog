@@ -28,6 +28,7 @@ Confidential containers on AKS require specific VM sizes and configuration.
 
 ```bash
 # Check that your subscription has access to confidential VM sizes
+
 az vm list-sizes --location eastus -o table | grep -i "Standard_DC"
 
 # The DCas_v5 and DCads_v5 series support AMD SEV-SNP

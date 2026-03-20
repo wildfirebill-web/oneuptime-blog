@@ -24,6 +24,7 @@ Scan your system for SHA-1 certificates and keys:
 
 ```bash
 # Find certificates using SHA-1 signatures
+
 find /etc/pki -name "*.pem" -o -name "*.crt" | while read cert; do
   sig_algo=$(openssl x509 -in "$cert" -noout -text 2>/dev/null | grep "Signature Algorithm" | head -1)
   if echo "$sig_algo" | grep -qi "sha1"; then

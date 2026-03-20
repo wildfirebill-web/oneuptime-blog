@@ -84,6 +84,7 @@ Once your function is deployed, create an Event Grid subscription pointing to it
 
 ```bash
 # Get the function's resource ID
+
 FUNCTION_ID="/subscriptions/{sub-id}/resourceGroups/rg-app/providers/Microsoft.Web/sites/func-order-handler/functions/HandleOrderEvent"
 
 # Create the subscription

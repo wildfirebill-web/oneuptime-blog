@@ -38,6 +38,7 @@ OpenSearch Serverless with a vector search collection is purpose-built for this 
 
 ```python
 # Set up OpenSearch Serverless vector collection
+
 import boto3
 import json
 import time

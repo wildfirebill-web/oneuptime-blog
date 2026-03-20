@@ -13,12 +13,13 @@ Using `image:latest` is convenient during development but dangerous in productio
 - A new deployment might pull a breaking change invisibly
 - Rollback becomes harder when the "old" image tag no longer maps to the same content
 - Debugging is harder because the environment changed without a visible configuration change
-- Environments drift — dev, staging, and prod may run different image versions
+- Environments drift - dev, staging, and prod may run different image versions
 
 ## The Problem with `:latest`
 
 ```yaml
 # DANGER: unpredictable
+
 services:
   app:
     image: nginx:latest   # What version is this today? Tomorrow?
@@ -44,7 +45,7 @@ This ensures every deployment pulls exactly the same image version.
 
 ## Pinning by Digest (Most Reliable)
 
-Tags are mutable — a registry owner can push a new image to the same tag. Digest pinning is immutable:
+Tags are mutable - a registry owner can push a new image to the same tag. Digest pinning is immutable:
 
 ```yaml
 services:
@@ -137,7 +138,7 @@ Reference it in your compose file and in Portainer's environment variable config
 
 ## Best Practices
 
-1. **Never use `:latest` in production** — always pin to a specific version or digest
+1. **Never use `:latest` in production** - always pin to a specific version or digest
 2. **Use semantic versions** in compose files and update them in version control
 3. **Pin base images** in your own Dockerfiles too (`FROM node:20.11.0-alpine`)
 4. **Automate image scanning** before promoting new versions

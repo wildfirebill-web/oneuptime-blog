@@ -24,6 +24,7 @@ Using the echo app is the recommended way to test Cilium features before deployi
 
 ```bash
 # Deploy the echo app using the connectivity test
+
 cilium connectivity test --deploy-only
 
 # Or deploy manually

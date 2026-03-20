@@ -16,6 +16,7 @@ The challenge with SNMP is that the configuration is verbose and security-sensit
 
 ```yaml
 # install-snmp.yml - Install SNMP daemon and tools
+
 ---
 - name: Install SNMP agent
   hosts: all

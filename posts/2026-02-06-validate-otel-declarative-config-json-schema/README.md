@@ -16,6 +16,7 @@ The schema lives in the OpenTelemetry specification repository. You can download
 
 ```bash
 # Download the schema for the version you are targeting
+
 curl -o otel-config-schema.json \
   https://raw.githubusercontent.com/open-telemetry/opentelemetry-configuration/main/schema/opentelemetry_configuration.json
 ```

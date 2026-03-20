@@ -29,6 +29,7 @@ First, create a HelmRepository resource that points to the prometheus-community 
 
 ```yaml
 # clusters/my-cluster/monitoring/helm-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

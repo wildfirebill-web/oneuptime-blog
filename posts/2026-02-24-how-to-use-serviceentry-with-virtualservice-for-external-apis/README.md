@@ -22,6 +22,7 @@ The pattern is always the same:
 
 ```yaml
 # Step 1: Register the external service
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

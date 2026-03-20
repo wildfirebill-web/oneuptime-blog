@@ -25,6 +25,7 @@ The Flux CLI provides the quickest way to check the status of all GitRepository 
 
 ```bash
 # List all GitRepository sources across all namespaces
+
 flux get source git -A
 ```
 

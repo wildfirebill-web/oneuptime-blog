@@ -32,6 +32,7 @@ First, install Vitest and the required testing utilities:
 
 ```bash
 # Install Vitest and Vue Test Utils
+
 npm install -D vitest @vue/test-utils happy-dom
 
 # For TypeScript support

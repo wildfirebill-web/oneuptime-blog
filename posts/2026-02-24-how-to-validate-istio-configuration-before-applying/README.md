@@ -33,6 +33,7 @@ The `--dry-run=server` flag sends the request to the API server, which validates
 
 ```bash
 # Validate a DestinationRule
+
 kubectl apply --dry-run=server -f destination-rule.yaml
 
 # Validate all files in a directory

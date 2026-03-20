@@ -33,6 +33,7 @@ If you are experiencing high latency and using Priority or Weighted routing, tha
 
 ```bash
 # Check the current routing method
+
 az network traffic-manager profile show \
   --resource-group myResourceGroup \
   --name myTrafficManagerProfile \

@@ -56,6 +56,7 @@ The most common pattern is transitioning objects to cheaper storage classes as t
 
 ```hcl
 # Bucket with tiered storage transitions
+
 resource "google_storage_bucket" "tiered" {
   name          = "${var.project_id}-tiered-storage"
   location      = var.region

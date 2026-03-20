@@ -18,6 +18,7 @@ Running AI models on a CPU works but can be slow, especially for larger models. 
 
 ```bash
 # Check if you have a GPU available
+
 lspci | grep -iE "vga|3d|display"
 
 # For NVIDIA GPUs, check the driver version

@@ -29,6 +29,7 @@ Here is an exporter configuration that supports a 60-second RPO for metrics by u
 
 ```yaml
 # collector-config.yaml
+
 # This configuration uses a persistent file-based queue so telemetry data
 # survives collector restarts. The queue size and retry settings are tuned
 # to buffer roughly 60 seconds of metric data.

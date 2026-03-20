@@ -1,4 +1,4 @@
-# How to Use the compact Function in OpenTofu
+# How to Use the compact Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -45,6 +45,7 @@ You can enable the change feed through the Azure Portal, CLI, or ARM templates.
 
 ```bash
 # Enable blob change feed on a storage account
+
 # Optionally set a retention period in days
 az storage account blob-service-properties update \
   --account-name mystorageaccount \

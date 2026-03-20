@@ -271,6 +271,7 @@ This often happens with npm/yarn linking or mismatched dependencies.
 
 ```bash
 # Check for duplicate React packages
+
 npm ls react
 
 # Expected output (single version):

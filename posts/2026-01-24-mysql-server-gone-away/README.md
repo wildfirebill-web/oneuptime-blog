@@ -67,6 +67,7 @@ Edit your MySQL configuration file (`my.cnf` or `my.ini`):
 ```ini
 [mysqld]
 # Timeout for non-interactive connections (applications)
+
 wait_timeout = 28800
 
 # Timeout for interactive connections (mysql client)

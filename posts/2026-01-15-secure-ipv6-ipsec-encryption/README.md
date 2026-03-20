@@ -87,6 +87,7 @@ Before implementing IPsec with IPv6, ensure you have:
 
 ```bash
 # Update package repositories
+
 sudo apt update
 
 # Install strongSwan for IPsec implementation

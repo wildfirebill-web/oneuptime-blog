@@ -44,6 +44,7 @@ First, configure Prometheus to load rule files:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

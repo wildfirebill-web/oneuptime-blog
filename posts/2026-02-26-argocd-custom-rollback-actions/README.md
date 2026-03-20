@@ -20,6 +20,7 @@ ArgoCD supports two types of rollback:
 
 ```bash
 # Built-in application rollback
+
 argocd app rollback my-app <history-id>
 ```
 

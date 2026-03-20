@@ -331,6 +331,7 @@ After adding a custom listener, verify it exists:
 
 ```bash
 # List all listeners
+
 istioctl proxy-config listeners deploy/my-app -n default
 
 # Check your specific listener

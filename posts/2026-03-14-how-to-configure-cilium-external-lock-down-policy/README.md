@@ -26,6 +26,7 @@ Start by denying all egress traffic:
 
 ```yaml
 # default-deny-egress.yaml
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

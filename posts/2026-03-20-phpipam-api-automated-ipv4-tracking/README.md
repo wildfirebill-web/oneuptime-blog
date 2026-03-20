@@ -23,6 +23,7 @@ phpIPAM supports token-based authentication:
 
 ```bash
 # Authenticate and obtain a token
+
 TOKEN=$(curl -s -X POST \
   "http://phpipam.example.com/api/myapp/user/" \
   -H "Content-Type: application/json" \

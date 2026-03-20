@@ -81,6 +81,7 @@ AWS Route53 health checks can detect when a cluster is unhealthy and automatical
 
 ```yaml
 # Managed with Crossplane or Terraform
+
 apiVersion: route53.aws.upbound.io/v1beta1
 kind: HealthCheck
 metadata:

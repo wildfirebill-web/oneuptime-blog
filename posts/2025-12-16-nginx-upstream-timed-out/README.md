@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, Upstream, Timeout, Proxy, DevOps
+Tags: Nginx, Troubleshooting, Upstream, Timeout, Proxy, DevOps
 
 Description: Learn how to diagnose and fix Nginx upstream timed out errors that occur when backend servers fail to respond within configured timeouts. Includes configuration examples and debugging strategies.
 
@@ -68,6 +68,7 @@ flowchart TB
 
 ```bash
 # View recent upstream timeout errors
+
 tail -f /var/log/nginx/error.log | grep "upstream timed out"
 
 # Count timeouts by upstream server

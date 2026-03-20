@@ -18,6 +18,7 @@ Docker Desktop is for desktop OS. Windows Server uses Docker Engine (Mirantis Co
 
 ```powershell
 # Install Containers and Hyper-V features
+
 Install-WindowsFeature -Name Containers
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
 
@@ -81,7 +82,7 @@ New-NetFirewallRule `
 ## Step 4: Access Portainer
 
 Open a browser and navigate to:
-```
+```text
 https://SERVER_IP:9443
 ```
 

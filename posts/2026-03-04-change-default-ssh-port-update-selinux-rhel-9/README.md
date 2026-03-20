@@ -16,6 +16,7 @@ Pick a port above 1024 that is not used by other services. Common choices are in
 
 ```bash
 # Make sure the port is not already in use
+
 sudo ss -tlnp | grep 2222
 ```
 

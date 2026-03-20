@@ -17,6 +17,7 @@ When `fork()` is called, the child process gets a copy of the parent's memory. H
 
 ```python
 # This initialization happens in the main process
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

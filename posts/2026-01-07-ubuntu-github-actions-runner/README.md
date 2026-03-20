@@ -68,6 +68,7 @@ Create a dedicated non-root user to run the GitHub Actions runner service secure
 
 ```bash
 # Create a new user for running GitHub Actions
+
 # Using a dedicated user improves security by limiting permissions
 sudo useradd -m -s /bin/bash github-runner
 

@@ -32,6 +32,7 @@ Memory limits are the most critical constraint. Without them, a memory leak can 
 
 ```bash
 # Run container with 512MB memory limit
+
 # The container will be killed if it exceeds this limit
 docker run -d --name api-server \
   --memory=512m \

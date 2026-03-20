@@ -897,6 +897,7 @@ xychart-beta
 
 ```yaml
 # prometheus-alerts.yaml
+
 # Alert rules for percentage-based metrics
 
 groups:

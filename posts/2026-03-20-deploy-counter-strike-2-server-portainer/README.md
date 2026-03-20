@@ -1,4 +1,4 @@
-# How to Deploy a Counter-Strike 2 Server via Portainer
+# How to Deploy a Counter-Strike 2 Server via Portainer - Deploy Counter Strike
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,13 +14,14 @@ Counter-Strike 2 replaced CS:GO in 2023 and supports dedicated servers for compe
 
 ```yaml
 # cs2-stack.yml
+
 version: "3.8"
 
 services:
   cs2:
     image: joedwards32/cs2:latest
     environment:
-      # Steam Game Server Account token — get one at steamcommunity.com/dev/managegameservers
+      # Steam Game Server Account token - get one at steamcommunity.com/dev/managegameservers
       - CS2_GSLT=your_game_server_login_token
       # Server settings
       - CS2_SERVERNAME=My CS2 Server | Portainer

@@ -32,6 +32,7 @@ mkdir cdktf-java-demo
 cd cdktf-java-demo
 
 # Initialize with the Java template
+
 cdktf init --template=java --local
 ```
 

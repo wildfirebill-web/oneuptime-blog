@@ -245,6 +245,7 @@ xpack.security.authc.realms.active_directory.ad1:
 
 ```bash
 # Map LDAP group to Elasticsearch role
+
 curl -u elastic:password -X PUT "localhost:9200/_security/role_mapping/ldap_admins" -H 'Content-Type: application/json' -d'
 {
   "roles": ["superuser"],

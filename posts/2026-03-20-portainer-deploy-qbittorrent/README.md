@@ -1,4 +1,4 @@
-# How to Deploy qBittorrent via Portainer
+# How to Deploy qBittorrent via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -60,8 +60,8 @@ For Sonarr/Radarr integration, the download category is important:
 - In Radarr: Create category `radarr`
 
 qBittorrent separates downloads into category subdirectories:
-- `/downloads/sonarr/` — TV show downloads
-- `/downloads/radarr/` — Movie downloads
+- `/downloads/sonarr/` - TV show downloads
+- `/downloads/radarr/` - Movie downloads
 
 ## VPN Kill Switch Configuration
 
@@ -99,7 +99,7 @@ services:
 
 Configure in qBittorrent **Options > Downloads**:
 
-```
+```text
 Default save path: /downloads
 Keep incomplete torrents in: /downloads/incomplete
 

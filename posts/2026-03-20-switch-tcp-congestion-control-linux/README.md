@@ -8,12 +8,13 @@ Description: Change the TCP congestion control algorithm on Linux at the system 
 
 ## Introduction
 
-Linux allows you to change the TCP congestion control algorithm system-wide or per-socket. The system default applies to all new connections unless overridden at the application level. Switching algorithms — particularly from CUBIC to BBR — can dramatically improve throughput on high-latency or lossy network paths.
+Linux allows you to change the TCP congestion control algorithm system-wide or per-socket. The system default applies to all new connections unless overridden at the application level. Switching algorithms - particularly from CUBIC to BBR - can dramatically improve throughput on high-latency or lossy network paths.
 
 ## Viewing Available Algorithms
 
 ```bash
 # List all available algorithms
+
 sysctl net.ipv4.tcp_available_congestion_control
 # cubic reno bbr ...
 
@@ -121,4 +122,4 @@ ss -tin state established | head -30
 
 ## Conclusion
 
-Changing congestion control on Linux is a one-line sysctl command. Load the desired algorithm's module first (`modprobe tcp_bbr`), set it as the default, and persist in `/etc/sysctl.conf`. Applications can also override per-socket using `TCP_CONGESTION`. Run a brief iperf3 comparison test before committing to a change in production — the right algorithm depends on your specific network characteristics.
+Changing congestion control on Linux is a one-line sysctl command. Load the desired algorithm's module first (`modprobe tcp_bbr`), set it as the default, and persist in `/etc/sysctl.conf`. Applications can also override per-socket using `TCP_CONGESTION`. Run a brief iperf3 comparison test before committing to a change in production - the right algorithm depends on your specific network characteristics.

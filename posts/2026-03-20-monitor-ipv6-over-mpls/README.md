@@ -14,6 +14,7 @@ Monitoring IPv6 over MPLS requires both IPv6 and MPLS OAM (Operations, Administr
 
 ```bash
 # Cisco IOS - LSP ping for IPv6 prefix (6PE)
+
 ping mpls ipv6 2001:db8:site-b::/48 verbose
 # Sends MPLS OAM probe along the label-switched path
 # Verifies PE2 can reach the IPv6 prefix with correct labels

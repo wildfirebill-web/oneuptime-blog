@@ -90,6 +90,7 @@ sudo setsebool -P container_manage_cgroup 1
 docker stop portainer && docker rm portainer
 docker pull portainer/portainer-ce:latest
 # Re-run the deploy command
+
 ```
 
 ## Conclusion

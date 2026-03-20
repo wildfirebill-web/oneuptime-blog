@@ -69,6 +69,7 @@ flowchart TB
 
 ```bash
 # Check current soft limit for your session
+
 # This is the limit currently enforced
 ulimit -Sn
 

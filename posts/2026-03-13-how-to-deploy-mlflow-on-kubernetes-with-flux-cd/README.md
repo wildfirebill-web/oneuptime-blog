@@ -28,6 +28,7 @@ In this guide you will deploy MLflow with PostgreSQL backend and S3-compatible a
 
 ```yaml
 # clusters/production/sources/bitnami.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

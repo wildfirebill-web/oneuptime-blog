@@ -26,6 +26,7 @@ The most basic indicator of load balancing effectiveness is whether requests are
 
 ```promql
 # Request rate per pod for a specific service
+
 sum(rate(istio_requests_total{
   destination_service="my-service.default.svc.cluster.local",
   reporter="destination"

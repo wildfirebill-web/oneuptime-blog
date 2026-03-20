@@ -195,6 +195,7 @@ Use CloudFormation or the CLI to create your pipeline:
 
 ```yaml
 # pipeline.yaml - CloudFormation Template
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: CI/CD Pipeline for My Application
 

@@ -58,6 +58,7 @@ Here is a simple data structure for tracking Five Whys analysis:
 
 ```python
 # five_whys.py
+
 # A simple class to conduct and store Five Whys analysis
 
 from dataclasses import dataclass, field

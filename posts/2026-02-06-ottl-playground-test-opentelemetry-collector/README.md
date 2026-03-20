@@ -27,6 +27,7 @@ For local development, you can also run the OpenTelemetry Collector with the deb
 
 ```yaml
 # Local testing configuration
+
 receivers:
   otlp:
     protocols:

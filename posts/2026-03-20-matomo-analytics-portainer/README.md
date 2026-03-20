@@ -21,6 +21,7 @@ Matomo (formerly Piwik) is the world's most popular self-hosted web analytics pl
 
 ```bash
 # Create directories for persistent storage
+
 mkdir -p /opt/matomo/data
 mkdir -p /opt/matomo/db
 ```
@@ -33,7 +34,7 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor**:
 version: "3.8"
 
 services:
-  # MariaDB — Matomo's database
+  # MariaDB - Matomo's database
   matomo-db:
     image: mariadb:10.11
     container_name: matomo-db
@@ -114,12 +115,12 @@ networks:
    - **Database setup**: Use the credentials from the compose file
    - **Create admin account**: Set a strong password
    - **Set up first website**: Enter your website's URL and name
-3. Matomo generates a tracking code — save it
+3. Matomo generates a tracking code - save it
 
 ## Step 5: Add the Tracking Code
 
 ```html
-<!-- Matomo tracking code — add before </head> -->
+<!-- Matomo tracking code - add before </head> -->
 <script>
   var _paq = window._paq = window._paq || [];
   _paq.push(['trackPageView']);

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PPTP, IPv6, VPN, Security, Legacy, Deprecated
+Tags: PPTP, IPv6, VPN, Security, LEGACY, Deprecated
 
 Description: An overview of PPTP VPN's IPv6 limitations and security problems, explaining why PPTP should not be used and what modern alternatives provide better IPv6 support.
 
@@ -12,7 +12,7 @@ PPTP (Point-to-Point Tunneling Protocol) is one of the oldest VPN protocols and 
 
 PPTP was designed in the late 1990s when IPv6 barely existed. Its IPv6 support is limited and implementation-dependent:
 
-```
+```text
 PPTP uses:
 - GRE (Generic Routing Encapsulation) for data
 - TCP port 1723 for control
@@ -38,6 +38,7 @@ IPv6 over PPTP:
 
 ```bash
 # PPTP MS-CHAPv2 has been cracked:
+
 # The CloudCracker service showed in 2012 that MS-CHAPv2
 # provides zero effective security
 # Bruce Schneier: "PPTP must no longer be used"

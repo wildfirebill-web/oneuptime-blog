@@ -19,6 +19,7 @@ A rolling upgrade minimizes downtime by upgrading one node at a time, draining w
 
 ```bash
 # STEP 1: Take an etcd snapshot backup
+
 sudo rke2 etcd-snapshot save \
   --name rolling-upgrade-backup-$(date +%Y%m%d)
 

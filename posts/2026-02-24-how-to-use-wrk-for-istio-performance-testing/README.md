@@ -18,6 +18,7 @@ Here is how to use wrk to performance test services running inside an Istio serv
 
 ```bash
 # macOS
+
 brew install wrk
 
 # Ubuntu/Debian

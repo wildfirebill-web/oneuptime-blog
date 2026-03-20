@@ -42,6 +42,7 @@ The scan runs against the locally built image before it is pushed to the registr
 
 ```yaml
 # .github/workflows/build-scan-push.yml
+
 name: Build, Scan, and Push
 
 on:

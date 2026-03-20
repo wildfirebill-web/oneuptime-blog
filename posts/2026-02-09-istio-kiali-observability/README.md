@@ -16,6 +16,7 @@ The easiest way to install Kiali is through the Istio operator or Helm chart. Fo
 
 ```bash
 # Add the Kiali Helm repository
+
 helm repo add kiali https://kiali.org/helm-charts
 helm repo update
 

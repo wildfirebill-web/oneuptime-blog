@@ -20,6 +20,7 @@ FinOps operates on three pillars: Inform (visibility into spending), Optimize (r
 
 ```hcl
 # Enforce tags on every resource for cost attribution
+
 provider "aws" {
   region = var.region
 

@@ -36,6 +36,7 @@ You need:
 
 ```bash
 # Verify prerequisites
+
 kubectl get nodes
 kubectl get storageclass
 helm version

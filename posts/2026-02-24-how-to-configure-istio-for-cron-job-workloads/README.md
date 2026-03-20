@@ -227,7 +227,7 @@ spec:
     mode: REGISTRY_ONLY
 ```
 
-## Resource Limits for CronJob Sidecars
+Resource Limits for CronJob Sidecars
 
 CronJob pods are short-lived, so keep the sidecar minimal:
 
@@ -270,6 +270,7 @@ Check for stuck CronJob pods:
 
 ```bash
 # Find pods from CronJobs that have been running longer than expected
+
 kubectl get pods -n scheduled-jobs --field-selector=status.phase=Running -o json | \
   jq '.items[] | select(.metadata.ownerReferences[]?.kind == "Job") | {name: .metadata.name, startTime: .status.startTime}'
 

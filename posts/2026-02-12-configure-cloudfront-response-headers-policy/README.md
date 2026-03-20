@@ -25,6 +25,7 @@ AWS provides several pre-built response headers policies. Start here before crea
 
 ```bash
 # List available managed policies
+
 aws cloudfront list-response-headers-policies \
     --type managed \
     --query 'ResponseHeadersPolicyList.Items[].{Id:ResponseHeadersPolicy.Id,Name:ResponseHeadersPolicy.ResponseHeadersPolicyConfig.Name}' \

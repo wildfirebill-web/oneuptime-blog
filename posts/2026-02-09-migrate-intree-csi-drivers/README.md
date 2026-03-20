@@ -21,6 +21,7 @@ In-tree plugins are compiled into Kubernetes binaries, while CSI drivers run as 
 echo "=== Detecting In-Tree Volumes ==="
 
 # Find PVs using in-tree plugins
+
 kubectl get pv -o json | jq -r '.items[] | select(.spec.awsElasticBlockStore or .spec.gcePersistentDisk or .spec.azureDisk or .spec.vsphereVolume) | .metadata.name'
 
 # Count by type

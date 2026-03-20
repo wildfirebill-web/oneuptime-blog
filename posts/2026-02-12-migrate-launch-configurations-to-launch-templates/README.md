@@ -33,6 +33,7 @@ This command lists all your Launch Configurations with their associated Auto Sca
 
 ```bash
 # List all Launch Configurations
+
 aws autoscaling describe-launch-configurations \
   --query 'LaunchConfigurations[].{Name:LaunchConfigurationName,AMI:ImageId,Type:InstanceType,Key:KeyName,SGs:SecurityGroups}' \
   --output table

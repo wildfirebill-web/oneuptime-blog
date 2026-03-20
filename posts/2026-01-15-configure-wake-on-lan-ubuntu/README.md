@@ -52,6 +52,7 @@ Install ethtool if it is not already present on your system. This tool is essent
 
 ```bash
 # Install ethtool for network interface configuration
+
 sudo apt update && sudo apt install -y ethtool
 ```
 

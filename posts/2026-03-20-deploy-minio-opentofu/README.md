@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Minio, Object Storage, S3-Compatible, Self-Hosted
+Tags: OpenTofu, MinIO, Object Storage, S3-Compatible, Self-Hosted
 
 Description: Learn how to deploy MinIO object storage on AWS using OpenTofu with ECS Fargate and EFS for persistent storage, providing an S3-compatible API for your applications.
 
@@ -125,6 +125,7 @@ resource "aws_ecs_task_definition" "minio" {
 
 ```hcl
 # MinIO API endpoint
+
 resource "aws_lb_target_group" "minio_api" {
   name        = "minio-api-${var.environment}"
   port        = 9000

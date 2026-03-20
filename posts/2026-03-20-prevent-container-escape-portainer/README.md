@@ -1,4 +1,4 @@
-# How to Prevent Container Escape Attacks with Portainer Settings
+# How to Prevent Container Escape Attacks with Portainer Settings (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Privileged containers are equivalent to root on the host:
 
 ```yaml
 # DANGEROUS - allows container escape
+
 services:
   api:
     privileged: true  # Never do this unless absolutely required
@@ -212,4 +213,4 @@ services:
 
 ## Conclusion
 
-Container escape prevention is achieved through defense-in-depth: no privileged mode, no dangerous mounts, capability dropping, `no-new-privileges`, seccomp filtering, and optionally user namespace remapping. Each layer independently blocks different attack vectors. Regular audits using `docker inspect` to check for privileged mode and socket mounts are essential — these settings can drift as teams add new services. Portainer's stack YAML is the authoritative source of truth; reviewing it in code reviews catches security regressions before deployment.
+Container escape prevention is achieved through defense-in-depth: no privileged mode, no dangerous mounts, capability dropping, `no-new-privileges`, seccomp filtering, and optionally user namespace remapping. Each layer independently blocks different attack vectors. Regular audits using `docker inspect` to check for privileged mode and socket mounts are essential - these settings can drift as teams add new services. Portainer's stack YAML is the authoritative source of truth; reviewing it in code reviews catches security regressions before deployment.

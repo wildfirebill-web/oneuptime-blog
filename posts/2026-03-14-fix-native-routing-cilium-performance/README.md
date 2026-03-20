@@ -41,6 +41,7 @@ helm upgrade cilium cilium/cilium --namespace kube-system \
 
 ```bash
 # If autoDirectNodeRoutes doesn't work (e.g., different subnets)
+
 # Use BGP control plane
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set bgpControlPlane.enabled=true

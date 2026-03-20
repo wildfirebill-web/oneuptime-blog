@@ -29,6 +29,7 @@ The most common Kubernetes integration failure is the Cilium agent losing connec
 
 ```bash
 # Check Cilium's view of the API server connection
+
 kubectl -n kube-system exec ds/cilium -- cilium status | grep -A3 "Kubernetes"
 
 # Look for API server errors in Cilium logs

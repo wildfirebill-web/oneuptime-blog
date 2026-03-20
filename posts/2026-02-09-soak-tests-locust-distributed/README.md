@@ -26,6 +26,7 @@ First, create a Locust test file that defines user behavior for your application
 
 ```python
 # locustfile.py
+
 from locust import HttpUser, task, between
 import random
 import json

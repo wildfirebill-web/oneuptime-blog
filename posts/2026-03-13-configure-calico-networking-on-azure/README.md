@@ -43,6 +43,7 @@ IP Forwarding must be enabled on every VM NIC that will forward pod traffic:
 
 ```bash
 # Get NIC IDs for worker VMs
+
 for vm in worker-1 worker-2 worker-3; do
   NIC_ID=$(az vm show -g k8s-rg -n $vm \
     --query "networkProfile.networkInterfaces[0].id" -o tsv)

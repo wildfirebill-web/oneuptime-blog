@@ -169,6 +169,7 @@ Before applying fixes, it helps to know exactly what is happening. Check how man
 
 ```bash
 # Find the container's PID
+
 podman inspect --format '{{.State.Pid}}' my-container
 
 # Count open file descriptors for that PID

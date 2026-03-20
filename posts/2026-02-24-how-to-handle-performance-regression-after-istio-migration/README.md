@@ -16,6 +16,7 @@ Before fixing anything, measure the actual impact. Vague complaints about "thing
 
 ```bash
 # Compare current latencies against pre-migration baseline
+
 # P50 latency by service
 curl -G http://prometheus:9090/api/v1/query \
   --data-urlencode 'query=histogram_quantile(0.5, sum(rate(istio_request_duration_milliseconds_bucket[1h])) by (le, destination_service_name))'

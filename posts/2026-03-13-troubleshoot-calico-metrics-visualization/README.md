@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # Step 1: Test the query in Prometheus directly
+
 kubectl port-forward -n monitoring svc/prometheus-operated 9090 &
 
 # Test a basic Felix query

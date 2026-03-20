@@ -30,6 +30,7 @@ Deploy the Sealed Secrets controller using a Flux HelmRelease.
 
 ```yaml
 # infrastructure/sealed-secrets/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

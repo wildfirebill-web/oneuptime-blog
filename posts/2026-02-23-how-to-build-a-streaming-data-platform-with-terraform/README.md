@@ -28,6 +28,7 @@ MSK provides a managed Kafka cluster. This is the heart of the streaming platfor
 
 ```hcl
 # msk.tf - Managed Kafka cluster
+
 resource "aws_msk_cluster" "main" {
   cluster_name           = "${var.project_name}-kafka"
   kafka_version          = "3.5.1"

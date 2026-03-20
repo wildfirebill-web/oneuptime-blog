@@ -61,6 +61,7 @@ locals {
 }
 
 # ECS task definition - created for all service types
+
 resource "aws_ecs_task_definition" "service" {
   family                   = var.service_config.name
   requires_compatibilities = ["FARGATE"]

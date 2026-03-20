@@ -44,6 +44,7 @@ resource "aws_lambda_function" "api" {
 
 ```hcl
 # Create a "live" alias pointing to the latest published version
+
 # Provisioned concurrency is configured on aliases or specific versions
 resource "aws_lambda_alias" "live" {
   name             = "live"

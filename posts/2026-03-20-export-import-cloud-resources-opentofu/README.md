@@ -16,6 +16,7 @@ Find what resources need to be imported.
 
 ```bash
 # AWS: List resources by type
+
 aws ec2 describe-vpcs --query 'Vpcs[*].[VpcId,Tags[?Key==`Name`].Value|[0]]' --output table
 aws s3api list-buckets --query 'Buckets[*].Name' --output text
 aws rds describe-db-instances --query 'DBInstances[*].[DBInstanceIdentifier,DBInstanceStatus]' --output table
@@ -93,7 +94,7 @@ resource "aws_vpc" "main" {
 
 ## Step 4: Clean Up Generated Configuration
 
-The generated config is verbose — clean it up to keep only necessary attributes.
+The generated config is verbose - clean it up to keep only necessary attributes.
 
 ```hcl
 # Before cleanup (verbose, generated)
@@ -158,7 +159,7 @@ resource "aws_s3_bucket" "existing" {
 
 Different resources use different ID formats.
 
-```
+```javascript
 Resource Type               ID Format
 --------------------------------------------
 aws_s3_bucket               bucket name

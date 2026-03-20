@@ -25,6 +25,7 @@ Unlike Kubernetes-native traffic splitting (which works at L4), Cilium L7 traffi
 
 ```yaml
 # backend-v1.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

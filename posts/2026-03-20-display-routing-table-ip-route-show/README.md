@@ -14,6 +14,7 @@ The routing table determines how the kernel forwards packets. `ip route show` is
 
 ```bash
 # Show the main routing table
+
 ip route show
 
 # Equivalent short form
@@ -23,7 +24,7 @@ ip r
 
 Sample output:
 
-```
+```text
 default via 192.168.1.1 dev eth0 proto dhcp src 192.168.1.100 metric 100
 192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.100
 10.0.0.0/8 via 192.168.1.254 dev eth0 proto static metric 200
@@ -53,9 +54,9 @@ ip route show 10.0.0.0/8
 ip route get 8.8.8.8
 ```
 
-`ip route get` is invaluable for debugging — it shows exactly which route the kernel would use and what source address would be selected:
+`ip route get` is invaluable for debugging - it shows exactly which route the kernel would use and what source address would be selected:
 
-```
+```text
 8.8.8.8 via 192.168.1.1 dev eth0 src 192.168.1.100 uid 1000
 ```
 

@@ -18,6 +18,7 @@ When you build a Spring Boot application into a Docker image the traditional way
 
 ```dockerfile
 # Traditional approach - one big layer for the entire fat JAR
+
 FROM eclipse-temurin:17-jre
 COPY target/my-app.jar /app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]

@@ -29,6 +29,7 @@ import pickle
 import json
 
 # Define a simple Flax model
+
 class TextClassifier(nn.Module):
     vocab_size: int = 50000
     embed_dim: int = 256

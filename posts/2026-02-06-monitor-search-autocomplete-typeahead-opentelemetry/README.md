@@ -24,6 +24,7 @@ tracer = trace.get_tracer("search.autocomplete")
 meter = metrics.get_meter("search.autocomplete")
 
 # Core latency histogram with buckets tuned for autocomplete
+
 autocomplete_latency = meter.create_histogram(
     "search.autocomplete.latency",
     unit="ms",

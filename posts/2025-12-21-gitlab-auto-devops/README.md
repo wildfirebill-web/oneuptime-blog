@@ -45,6 +45,7 @@ You can also explicitly include the Auto DevOps template.
 
 ```yaml
 # .gitlab-ci.yml
+
 include:
   - template: Auto-DevOps.gitlab-ci.yml
 ```

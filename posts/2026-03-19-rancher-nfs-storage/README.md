@@ -21,6 +21,7 @@ If you do not have an NFS server, set one up on a Linux machine:
 
 ```bash
 # Install NFS server
+
 sudo apt update
 sudo apt install nfs-kernel-server -y
 

@@ -38,6 +38,7 @@ Set up keyless signing in a GitHub Actions workflow:
 
 ```yaml
 # .github/workflows/build-and-sign.yaml
+
 name: Build and Sign
 on:
   push:

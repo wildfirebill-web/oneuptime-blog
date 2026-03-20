@@ -92,6 +92,7 @@ Map your organizational structure to cluster access using groups:
 
 ```bash
 # Grant the dev-team group access to the development cluster
+
 curl -X POST 'https://<rancher-url>/v3/clusterroletemplatebindings' \
   -H 'Authorization: Bearer <api-token>' \
   -H 'Content-Type: application/json' \

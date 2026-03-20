@@ -100,6 +100,7 @@ Apply both configurations when creating a node pool.
 
 ```bash
 # Create a node pool with custom Linux and kubelet configuration
+
 az aks nodepool add \
   --resource-group myResourceGroup \
   --cluster-name myAKSCluster \

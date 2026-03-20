@@ -468,6 +468,7 @@ Install and run Miri:
 
 ```bash
 # Install Miri
+
 rustup +nightly component add miri
 
 # Run tests under Miri

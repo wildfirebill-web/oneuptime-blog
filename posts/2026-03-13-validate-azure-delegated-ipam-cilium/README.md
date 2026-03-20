@@ -30,6 +30,7 @@ Confirm the subnet delegation is correctly set up in Azure before checking the K
 
 ```bash
 # List subnets in the VNet and confirm the delegation to Microsoft.ContainerService/managedClusters
+
 az network vnet subnet list \
   --resource-group <resource-group> \
   --vnet-name <vnet-name> \

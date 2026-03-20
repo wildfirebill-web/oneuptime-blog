@@ -127,6 +127,7 @@ This script wraps a PostgreSQL backup with heartbeat signals at start, success, 
 # backup-postgres.sh - PostgreSQL backup with OneUptime monitoring
 
 # Your unique heartbeat URL from the OneUptime monitor
+
 HEARTBEAT_URL="https://your-domain.com/heartbeat/db_backup_abc123"
 
 # Capture start time for duration calculation

@@ -31,6 +31,7 @@ We will build a three-service microservice application: an API gateway, a user s
 
 ```bash
 # Create the project structure for our microservices
+
 mkdir -p portable-microservices/{api-gateway,user-service,order-service}
 cd portable-microservices
 ```

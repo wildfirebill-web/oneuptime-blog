@@ -77,6 +77,7 @@ The Z-score measures how many standard deviations a data point is from the mean.
 
 ```python
 # z_score_detector.py
+
 # Statistical anomaly detection using Z-score method
 # Works well for normally distributed cost data with stable patterns
 

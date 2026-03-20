@@ -51,6 +51,7 @@ GKE Sandbox requires a dedicated node pool with the sandbox runtime enabled.
 
 ```bash
 # Create a node pool with GKE Sandbox enabled
+
 gcloud container node-pools create sandbox-pool \
   --cluster my-cluster \
   --region us-central1 \

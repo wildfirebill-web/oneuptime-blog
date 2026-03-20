@@ -43,6 +43,7 @@ These are the most important metrics for ongoing replication tasks.
 
 ```bash
 # Query CDCLatencyTarget for the last hour to spot trending issues
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/DMS \
   --metric-name CDCLatencyTarget \

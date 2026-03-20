@@ -22,6 +22,7 @@ Create multi-stage builds using Distroless for the runtime stage.
 
 ```dockerfile
 # Dockerfile for Go application
+
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /app

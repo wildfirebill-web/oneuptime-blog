@@ -36,6 +36,7 @@ You also need the Recommender API enabled on your project. Here is how to enable
 
 ```bash
 # Enable the Recommender API for your project
+
 gcloud services enable recommender.googleapis.com --project=my-project-id
 ```
 

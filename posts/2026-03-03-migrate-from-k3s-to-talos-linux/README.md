@@ -33,6 +33,7 @@ Start by documenting what is running in your k3s cluster:
 
 ```bash
 # List all nodes and their roles
+
 kubectl get nodes -o wide
 
 # Get all workloads across namespaces

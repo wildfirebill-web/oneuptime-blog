@@ -104,6 +104,7 @@ When a deployment exceeds its progress deadline, Kubernetes updates the deployme
 
 ```bash
 # Check deployment status
+
 kubectl get deployment api-server -n production -o wide
 
 # View detailed conditions including progress status
@@ -262,7 +263,7 @@ kubectl describe pod -l app=api-server -n production | grep -A3 "Warning"
 kubectl run test-pull --image=ghcr.io/example/api:v2.1.0 --dry-run=server
 ```
 
-### Resource Constraints
+Resource Constraints
 
 Pods cannot schedule when the cluster lacks sufficient CPU, memory, or GPU resources. Resource quotas may also block pod creation.
 

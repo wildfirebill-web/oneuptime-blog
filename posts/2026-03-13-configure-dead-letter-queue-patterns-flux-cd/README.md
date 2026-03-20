@@ -41,6 +41,7 @@ Kafka doesn't have native DLQ support - the pattern is implemented at the applic
 
 ```yaml
 # infrastructure/messaging/topics/orders-main.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:

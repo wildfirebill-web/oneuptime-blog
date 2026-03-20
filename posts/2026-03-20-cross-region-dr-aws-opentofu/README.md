@@ -14,6 +14,7 @@ AWS cross-region DR uses read replicas for database replication, S3 cross-region
 
 ```hcl
 # main.tf - RDS with cross-region read replica
+
 provider "aws" {
   alias  = "primary"
   region = "us-east-1"

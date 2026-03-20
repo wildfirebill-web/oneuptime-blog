@@ -26,6 +26,7 @@ AutoML Entity Extraction expects data in JSONL format where each entry contains 
 
 ```python
 # prepare_ner_data.py - Format training data for AutoML Entity Extraction
+
 import json
 
 def create_training_entry(text, annotations):

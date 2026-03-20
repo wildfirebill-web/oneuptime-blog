@@ -33,6 +33,7 @@ The platform team handles mesh-level issues: istiod problems, gateway outages, m
 
 ```yaml
 # On-call rotation configuration concept:
+
 schedule:
   name: "Istio Platform On-Call"
   timezone: "America/New_York"

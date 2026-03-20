@@ -34,6 +34,7 @@ Before setting affinity rules, label your nodes appropriately:
 
 ```bash
 # Label nodes by zone
+
 kubectl label nodes node-1 topology.kubernetes.io/zone=us-east-1a
 kubectl label nodes node-2 topology.kubernetes.io/zone=us-east-1b
 kubectl label nodes node-3 topology.kubernetes.io/zone=us-east-1c

@@ -39,6 +39,7 @@ Create a values file:
 
 ```yaml
 # newrelic-prom-values.yaml
+
 licenseKey: <YOUR_NEW_RELIC_LICENSE_KEY>
 cluster: my-cluster
 

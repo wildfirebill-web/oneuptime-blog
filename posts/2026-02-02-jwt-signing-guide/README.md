@@ -265,6 +265,7 @@ The following Python code demonstrates creating JWTs with various signing option
 
 ```python
 # jwt_creator.py
+
 import jwt
 import datetime
 import uuid

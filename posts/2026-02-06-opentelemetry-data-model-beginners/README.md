@@ -22,7 +22,7 @@ The data model provides structured context through three layers:
 
 This structure applies to all three signal types (traces, metrics, logs).
 
-## Resources: The Identity Layer
+Resources: The Identity Layer
 
 A Resource describes the entity producing telemetry. Think of it as the ID card for your service.
 
@@ -260,7 +260,7 @@ span.setAttributes({
 });
 ```
 
-### Resource vs Span Attributes
+Resource vs Span Attributes
 
 **Resource attributes**: Describe the service itself. Same for all spans.
 - `service.name`

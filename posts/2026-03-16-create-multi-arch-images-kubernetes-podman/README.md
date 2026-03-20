@@ -20,6 +20,7 @@ Kubernetes schedules pods based on resource availability, not architecture. If y
 
 ```bash
 # A multi-arch image works on any node
+
 kubectl run myapp --image=registry.example.com/myapp:latest
 # Kubernetes pulls the correct architecture automatically
 ```

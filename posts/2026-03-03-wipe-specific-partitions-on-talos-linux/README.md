@@ -27,6 +27,7 @@ You can view the partition layout on a running node:
 
 ```bash
 # View disk partitions
+
 talosctl disks --nodes 10.0.0.50
 
 # Get detailed partition information

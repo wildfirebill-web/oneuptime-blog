@@ -318,6 +318,7 @@ main:
           processing_date: ${processing_date}
 
 # Reusable subworkflow for polling batch job status
+
 poll_batch_job:
   params: [job_name]
   steps:

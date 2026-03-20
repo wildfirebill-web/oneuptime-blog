@@ -238,6 +238,7 @@ Pa11y runs accessibility tests from the command line, making it perfect for CI/C
 
 ```bash
 # Install pa11y globally or as a dev dependency
+
 npm install -g pa11y
 
 # Run a simple test
@@ -904,7 +905,7 @@ Documentation:
 | Missing page titles | Users cannot identify the page | Add unique, descriptive title elements |
 | Non-descriptive links | Users do not know where links go | Use descriptive text, not "click here" |
 
-## Resources for Further Learning
+Resources for Further Learning
 
 Here are valuable resources for deepening your accessibility knowledge:
 

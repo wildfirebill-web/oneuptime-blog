@@ -20,6 +20,7 @@ Start every troubleshooting session with these checks.
 
 ```bash
 # Check the overall Podman health
+
 podman info > /dev/null 2>&1 && echo "Podman: OK" || echo "Podman: FAILED"
 
 # Check service and socket status

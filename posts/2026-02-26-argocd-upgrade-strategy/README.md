@@ -38,6 +38,7 @@ This sounds obvious, but many upgrade issues come from not reading the release n
 
 ```bash
 # View release notes on GitHub
+
 gh release view v2.12.0 --repo argoproj/argo-cd
 ```
 

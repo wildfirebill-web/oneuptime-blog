@@ -24,6 +24,7 @@ The simplest way to check if the Podman API is healthy is to ping it:
 
 ```bash
 # Simple health check
+
 curl -s --unix-socket /run/podman/podman.sock \
   http://localhost/v4.0.0/libpod/_ping
 

@@ -45,6 +45,7 @@ flowchart TD
 
 ```bash
 # Install the Amplify libraries
+
 npm install aws-amplify @aws-amplify/predictions
 ```
 

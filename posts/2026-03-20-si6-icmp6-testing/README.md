@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, icmp6, IPv6, ICMPv6, Security Testing, Network Testing
+Tags: SI6 Networks, ICMP6, IPv6, ICMPv6, Security Testing, Network Testing
 
 Description: A guide to using the SI6 Networks icmp6 tool to craft and send ICMPv6 messages for testing IPv6 network behavior and security controls in authorized environments.
 
@@ -19,6 +19,7 @@ sudo pacman -S ipv6toolkit          # Arch Linux
 
 ```bash
 # Send an ICMPv6 Echo Request (like ping6)
+
 sudo icmp6 -i eth0 -d 2001:db8::target -t 128 -c 0
 
 # -t = ICMPv6 type
@@ -126,4 +127,4 @@ sudo icmp6 -i eth0 -s 2001:db8::server -d 2001:db8::client -t 1 -c 4
 | 128/129 (Echo) | Recommended | Diagnostic |
 | 133-136 (NDP) | Yes | Address autoconfiguration |
 
-Never block ICMPv6 wholesale — it breaks IPv6 fundamental protocols. Use `icmp6` to verify your firewall permits the correct types.
+Never block ICMPv6 wholesale - it breaks IPv6 fundamental protocols. Use `icmp6` to verify your firewall permits the correct types.

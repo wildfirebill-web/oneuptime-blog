@@ -66,6 +66,7 @@ Service meshes solve this with L7-aware load balancing that distributes individu
 
 ```bash
 # Download and install Istio CLI
+
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-*
 export PATH=$PWD/bin:$PATH

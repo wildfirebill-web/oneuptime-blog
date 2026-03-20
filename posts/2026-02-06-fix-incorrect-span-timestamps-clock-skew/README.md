@@ -25,6 +25,7 @@ The trace visualizer shows this as a child starting before its parent, which mak
 
 ```bash
 # Check the time on different nodes
+
 for node in $(kubectl get nodes -o name); do
   echo "$node: $(kubectl debug $node -it --image=busybox -- date +%s%N 2>/dev/null | tail -1)"
 done

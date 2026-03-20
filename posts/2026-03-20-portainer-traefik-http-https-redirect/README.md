@@ -21,7 +21,8 @@ Forcing HTTPS by redirecting HTTP requests is a fundamental security practice. T
 Configure the redirect at the entrypoint level to apply to all services automatically:
 
 ```yaml
-# traefik.yml — Global redirect via entrypoint
+# traefik.yml - Global redirect via entrypoint
+
 entryPoints:
   web:
     address: ":80"
@@ -42,7 +43,7 @@ With this configuration, every service that uses the `web` entrypoint automatica
 For fine-grained control, create a redirect middleware and apply it per router:
 
 ```yaml
-# traefik-dynamic.yml — Reusable redirect middleware
+# traefik-dynamic.yml - Reusable redirect middleware
 http:
   middlewares:
     https-redirect:
@@ -71,7 +72,7 @@ services:
     labels:
       - "traefik.enable=true"
 
-      # HTTPS router — handles actual traffic
+      # HTTPS router - handles actual traffic
       - "traefik.http.routers.portainer-secure.rule=Host(`portainer.example.com`)"
       - "traefik.http.routers.portainer-secure.entrypoints=websecure"
       - "traefik.http.routers.portainer-secure.tls=true"
@@ -79,7 +80,7 @@ services:
       - "traefik.http.routers.portainer-secure.service=portainer"
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
 
-      # HTTP router — only redirects to HTTPS
+      # HTTP router - only redirects to HTTPS
       - "traefik.http.routers.portainer-http.rule=Host(`portainer.example.com`)"
       - "traefik.http.routers.portainer-http.entrypoints=web"
       - "traefik.http.routers.portainer-http.middlewares=https-redirect"
@@ -121,7 +122,7 @@ services:
       # Only expose on HTTP (no redirect for internal health endpoint)
       - "traefik.http.routers.health.rule=Host(`internal.example.com`) && Path(`/health`)"
       - "traefik.http.routers.health.entrypoints=web"    # HTTP only
-      # No TLS labels — stays HTTP
+      # No TLS labels - stays HTTP
 
       # Separate HTTPS router for the rest of the app
       - "traefik.http.routers.app.rule=Host(`internal.example.com`)"

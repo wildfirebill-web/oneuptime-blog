@@ -72,6 +72,7 @@ Deploy a debug pod with DNS tools:
 
 ```bash
 # Create a debug pod with DNS utilities
+
 kubectl run dns-test --rm -it --restart=Never \
   --image=busybox:1.36 -- sh
 ```

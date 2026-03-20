@@ -568,6 +568,7 @@ Create a test file and run it locally:
 
 ```bash
 # Install lua (macOS)
+
 brew install lua
 
 # Create test script

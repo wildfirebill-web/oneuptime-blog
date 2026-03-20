@@ -14,6 +14,7 @@ Hardening a RHEL server before putting it into production reduces your attack su
 
 ```bash
 # Update all packages to their latest versions
+
 sudo dnf update -y
 
 # Enable automatic security updates

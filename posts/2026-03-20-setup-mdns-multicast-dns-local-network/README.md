@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, mDNS, Multicast, DNS, Avahi, Linux
+Tags: Networking, MDNS, Multicast, DNS, Avahi, Linux
 
 Description: Configure mDNS on Linux using Avahi to enable zero-configuration hostname resolution across a local network segment without a traditional DNS server.
 
@@ -14,6 +14,7 @@ Multicast DNS (mDNS, RFC 6762) allows devices to resolve `.local` hostnames on a
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install -y avahi-daemon avahi-utils
 
 # RHEL/CentOS/Fedora
@@ -87,7 +88,7 @@ grep ^hosts /etc/nsswitch.conf
 
 It should include `mdns4_minimal` before `dns`:
 
-```
+```text
 hosts: files mdns4_minimal [NOTFOUND=return] dns
 ```
 

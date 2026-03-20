@@ -61,6 +61,7 @@ The following script validates that commit messages follow the Conventional Comm
 ```bash
 #!/bin/bash
 # .git/hooks/commit-msg
+
 # Validates commit messages against Conventional Commits format
 
 # Read the commit message from the file passed as argument

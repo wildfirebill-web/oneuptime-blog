@@ -16,6 +16,7 @@ Ensure the first IdM server is installed and running, and the replica host is en
 
 ```bash
 # On the replica host, set the hostname
+
 sudo hostnamectl set-hostname idm2.example.com
 
 # Install IdM client packages first

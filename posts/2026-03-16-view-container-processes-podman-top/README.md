@@ -20,6 +20,7 @@ View processes in a running container:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # View processes in the container

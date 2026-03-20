@@ -39,6 +39,7 @@ Environment="NO_PROXY=localhost,127.0.0.1,.example.com,10.0.0.0/8,172.16.0.0/12,
 EOF
 
 # Reload and restart Docker
+
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 

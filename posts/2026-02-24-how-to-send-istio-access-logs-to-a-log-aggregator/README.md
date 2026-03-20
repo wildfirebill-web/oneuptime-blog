@@ -300,6 +300,7 @@ You can also filter at the log collector level:
 
 ```yaml
 # Fluent Bit filter to drop 200 health check responses
+
 [FILTER]
     Name    grep
     Match   kube.*

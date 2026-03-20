@@ -43,6 +43,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # migrate-calico-to-operator.sh
+
 set -euo pipefail
 
 CALICO_VERSION="${CALICO_VERSION:-v3.27.0}"

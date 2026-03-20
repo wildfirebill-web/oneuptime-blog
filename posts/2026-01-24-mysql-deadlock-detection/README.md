@@ -52,6 +52,7 @@ Add this to your MySQL configuration file to make it permanent:
 
 ```ini
 # my.cnf or my.ini
+
 [mysqld]
 innodb_print_all_deadlocks = 1
 ```

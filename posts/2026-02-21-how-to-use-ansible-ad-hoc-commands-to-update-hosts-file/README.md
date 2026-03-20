@@ -16,6 +16,7 @@ Before making changes, see what is currently in the hosts file:
 
 ```bash
 # View the hosts file on all servers
+
 ansible all -a "cat /etc/hosts"
 
 # Check if a specific entry exists

@@ -32,6 +32,7 @@ The simplest approach is to specify the namespace during bootstrap using the `--
 
 ```bash
 # Bootstrap Flux CD into a custom namespace called "gitops"
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

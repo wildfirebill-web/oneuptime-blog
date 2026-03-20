@@ -14,9 +14,9 @@ IPv6-only servers present unique certificate challenges. Certificate Authorities
 
 There are three approaches to TLS on IPv6-only servers:
 
-1. **Domain name certificate** — Point a DNS AAAA record at your IPv6 address and issue a standard certificate for the domain name.
-2. **IP SAN certificate** — Include the IPv6 address directly in the certificate's Subject Alternative Names (SAN) field.
-3. **Internal CA certificate** — Issue certificates from your own CA for internal IPv6-only services.
+1. **Domain name certificate** - Point a DNS AAAA record at your IPv6 address and issue a standard certificate for the domain name.
+2. **IP SAN certificate** - Include the IPv6 address directly in the certificate's Subject Alternative Names (SAN) field.
+3. **Internal CA certificate** - Issue certificates from your own CA for internal IPv6-only services.
 
 ## Approach 1: Domain-Based Certificate (Recommended)
 
@@ -24,6 +24,7 @@ This is the standard approach. Map a domain to your IPv6 address:
 
 ```bash
 # Add AAAA record in DNS (example for bind zone file)
+
 ipv6server  IN  AAAA  2001:db8::10
 
 # Verify AAAA record resolves

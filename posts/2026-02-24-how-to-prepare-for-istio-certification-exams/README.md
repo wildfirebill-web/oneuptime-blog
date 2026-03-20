@@ -39,6 +39,7 @@ You need a working Kubernetes cluster with Istio installed. Here's the quickest 
 
 ```bash
 # Install Kind (Kubernetes in Docker)
+
 # https://kind.sigs.k8s.io/docs/user/quick-start/
 
 # Create a cluster with enough resources

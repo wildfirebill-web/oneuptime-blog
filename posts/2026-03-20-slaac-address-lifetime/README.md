@@ -12,7 +12,7 @@ SLAAC addresses have two lifetimes controlled by the Prefix Information option i
 
 ## Two-Timer Model
 
-```
+```text
 SLAAC Address Lifetime States:
 
 Timeline:
@@ -46,6 +46,7 @@ Typical defaults from RFC 4861:
 
 ```bash
 # Linux: show IPv6 addresses with lifetimes
+
 ip -6 addr show eth0
 
 # Example output:
@@ -74,7 +75,7 @@ ip -6 addr show eth0 | awk '
 
 The kernel updates address lifetimes every time an RA is received.
 
-```
+```text
 RA Lifetime Update Rules (RFC 4862 Section 5.5.3):
 
 Case 1: Received ValidLifetime > 2 hours OR
@@ -150,7 +151,7 @@ cat /etc/radvd.conf
 
 ## Using Lifetimes for Network Renumbering
 
-```
+```text
 Renumbering Procedure using SLAAC Lifetimes:
 
 Phase 1: Prepare (announce new prefix)

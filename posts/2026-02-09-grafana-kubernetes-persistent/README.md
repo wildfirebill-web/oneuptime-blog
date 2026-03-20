@@ -122,6 +122,7 @@ Create the admin password secret:
 
 ```bash
 # Create namespace
+
 kubectl create namespace monitoring
 
 # Create secret

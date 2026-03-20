@@ -29,6 +29,7 @@ No one should push directly to the deployment branch:
 
 ```bash
 # GitHub: protect the main branch
+
 gh api repos/org/config-repo/branches/main/protection \
   --method PUT \
   --field required_pull_request_reviews='{"required_approving_review_count":2}' \

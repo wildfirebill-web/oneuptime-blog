@@ -256,6 +256,7 @@ public class TieredCompactionStrategy {
 # server.properties - Broker configuration
 
 # Increase cleaner threads for parallel compaction
+
 log.cleaner.threads=4
 
 # Larger dedupe buffer for better efficiency

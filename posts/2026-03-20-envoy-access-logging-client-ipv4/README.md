@@ -28,6 +28,7 @@ Key operators for IPv4 client information:
 
 ```yaml
 # envoy-config.yaml (HCM section)
+
 http_connection_manager:
   stat_prefix: ingress_http
   access_log:

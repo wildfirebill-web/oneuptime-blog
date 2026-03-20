@@ -29,6 +29,7 @@ Check the current maxPods setting:
 
 ```bash
 # View kubelet configuration
+
 cat /var/lib/kubelet/config.yaml | grep maxPods
 
 # Or check kubelet process arguments

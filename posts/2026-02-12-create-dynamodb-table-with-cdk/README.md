@@ -26,6 +26,7 @@ For most new projects, start with on-demand and switch to provisioned once you u
 
 ```bash
 # Create a new CDK project
+
 mkdir dynamodb-cdk && cd dynamodb-cdk
 cdk init app --language typescript
 npm install aws-cdk-lib constructs

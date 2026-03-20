@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE, Kubernetes, Rancher, Configuration, cluster.yml
+Tags: RKE, Kubernetes, Rancher, Configuration, Cluster.yml
 
 Description: Learn how to write and customize the RKE cluster.yml configuration file to define your cluster topology, networking, and component settings.
 
@@ -14,6 +14,7 @@ The `cluster.yml` file is the heart of every RKE cluster. It defines which nodes
 
 ```bash
 # Generate an interactive configuration wizard
+
 rke config --name cluster.yml
 
 # Or generate a non-interactive skeleton
@@ -254,4 +255,4 @@ nodes:
 
 ## Conclusion
 
-The RKE `cluster.yml` file provides granular control over every aspect of your Kubernetes cluster. By understanding the key sections — nodes, services, network, and authentication — you can create configurations tailored to your environment, from minimal single-node dev clusters to production HA deployments with custom admission policies, etcd backups, and performance tuning. Always validate your configuration before deployment and store `cluster.yml` in version control (excluding secrets).
+The RKE `cluster.yml` file provides granular control over every aspect of your Kubernetes cluster. By understanding the key sections - nodes, services, network, and authentication - you can create configurations tailored to your environment, from minimal single-node dev clusters to production HA deployments with custom admission policies, etcd backups, and performance tuning. Always validate your configuration before deployment and store `cluster.yml` in version control (excluding secrets).

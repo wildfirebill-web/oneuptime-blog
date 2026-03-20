@@ -1,4 +1,4 @@
-# How to Configure K3s for Autonomous Vehicle Edge Computing
+# How to Configure K3s for Autonomous Vehicle Edge Computing - Edge
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Autonomous vehicles require edge computing stacks that are deterministic, fault-
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 disable:
   - traefik
   - servicelb
@@ -61,7 +62,7 @@ spec:
         - name: lidar-processor
           image: vehicle-registry/lidar-processor:v3.2
           resources:
-            # Guaranteed QoS — requests == limits enables CPU pinning
+            # Guaranteed QoS - requests == limits enables CPU pinning
             requests:
               cpu: "4"
               memory: 8Gi

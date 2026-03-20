@@ -37,6 +37,7 @@ When you do a DNS lookup for `my-database.default.svc.cluster.local`, instead of
 ```bash
 nslookup my-database.default.svc.cluster.local
 # Returns:
+
 # 10.244.1.5
 # 10.244.2.7
 # 10.244.3.9

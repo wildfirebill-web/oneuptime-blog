@@ -85,7 +85,7 @@ podman run -d --name pid-limited \
   sleep infinity
 ```
 
-## Resource Limits on Pods
+Resource Limits on Pods
 
 When using pods, you can set limits at the pod level:
 
@@ -237,6 +237,7 @@ Set process limits inside containers:
 
 ```bash
 # Set file descriptor limit
+
 podman run -d --name ulimit-app \
   --ulimit nofile=4096:8192 \
   --ulimit nproc=256:512 \

@@ -50,6 +50,7 @@ Ensure Zookeeper's four-letter word commands are enabled. By default, they're re
 
 ```properties
 # In zoo.cfg or zookeeper.properties
+
 # Allow specific four-letter word commands
 4lw.commands.whitelist=mntr,stat,srvr,ruok
 

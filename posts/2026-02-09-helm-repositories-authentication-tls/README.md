@@ -22,6 +22,7 @@ Basic authentication uses username and password credentials. Most repository ser
 
 ```bash
 # Add repository with basic auth
+
 helm repo add private-charts https://charts.company.com \
   --username myuser \
   --password mypassword

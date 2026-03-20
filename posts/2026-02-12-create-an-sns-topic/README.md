@@ -37,6 +37,7 @@ The simplest way to create a topic.
 
 ```bash
 # Create a standard SNS topic
+
 aws sns create-topic --name order-notifications
 ```
 

@@ -20,6 +20,7 @@ Podman supports four actions when a health check fails:
 
 ```bash
 # none (default): Just mark as unhealthy, take no action
+
 podman run -d --name app1 \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \
   --health-on-failure none \

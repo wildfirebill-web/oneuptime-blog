@@ -16,6 +16,7 @@ The `format` function produces a string by formatting a number of values accordi
 
 ```hcl
 # Basic syntax
+
 format(spec, values...)
 ```
 
@@ -95,7 +96,7 @@ Control decimal places with precision specifiers.
 "      3.14"
 ```
 
-## Resource Naming Conventions
+Resource Naming Conventions
 
 One of the most common uses of `format` is building standardized resource names.
 

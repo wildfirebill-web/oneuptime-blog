@@ -48,6 +48,7 @@ resource "aws_subnet" "main" {
 }
 
 # Create lookup maps from the resources
+
 output "subnet_name_to_id" {
   value = zipmap(
     var.subnet_names,

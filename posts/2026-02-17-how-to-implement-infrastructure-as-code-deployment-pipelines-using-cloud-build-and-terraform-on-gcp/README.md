@@ -30,6 +30,7 @@ Terraform state should be stored remotely in a GCS bucket with versioning and lo
 
 ```bash
 # Create a bucket for Terraform state
+
 gsutil mb -l us-central1 gs://my-project-terraform-state
 
 # Enable versioning for state recovery
@@ -245,7 +246,7 @@ steps:
           TFSEC_SUMMARY=$(cat /workspace/tfsec_results.json | jq '.results | length')
 
           # Post comment to the PR using the GitHub API
-          COMMENT="### Terraform Plan - $_ENVIRONMENT\n\n\`\`\`\n$PLAN_SUMMARY\n\`\`\`\n\nSecurity findings: $TFSEC_SUMMARY\n\nFull plan output available in [Cloud Build logs](https://console.cloud.google.com/cloud-build/builds/$BUILD_ID)"
+          COMMENT="### Terraform Plan - $_ENVIRONMENT\n\n```\n$PLAN_SUMMARY\n```\n\nSecurity findings: $TFSEC_SUMMARY\n\nFull plan output available in [Cloud Build logs](https://console.cloud.google.com/cloud-build/builds/$BUILD_ID)"
 
           echo "$COMMENT"
         fi

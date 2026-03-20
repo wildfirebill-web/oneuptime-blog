@@ -109,6 +109,7 @@ To verify that MFA was actually performed, check the `acr` (Authentication Conte
 
 ```yaml
 # In Keycloak, configure the client to include acr in tokens
+
 # Then in ArgoCD, you can log and monitor acr values
 ```
 

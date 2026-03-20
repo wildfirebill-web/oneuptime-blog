@@ -35,6 +35,7 @@ You need:
 
 ```bash
 # Verify Prometheus is running
+
 kubectl get pods -n monitoring -l app.kubernetes.io/name=prometheus
 ```
 

@@ -49,6 +49,7 @@ React Query eliminates this boilerplate while adding powerful features like auto
 ```bash
 npm install @tanstack/react-query
 # or
+
 yarn add @tanstack/react-query
 # or
 pnpm add @tanstack/react-query

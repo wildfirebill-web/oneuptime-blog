@@ -32,6 +32,7 @@ The key is adding the `service.beta.kubernetes.io/azure-load-balancer-internal` 
 
 ```yaml
 # internal-service.yaml
+
 # Kubernetes Service using an internal Azure Load Balancer
 apiVersion: v1
 kind: Service

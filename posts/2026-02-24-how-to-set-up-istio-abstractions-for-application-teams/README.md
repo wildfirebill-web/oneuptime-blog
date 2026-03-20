@@ -333,6 +333,7 @@ Generate documentation from your CRD schemas automatically. Use tools like `crd-
 
 ```bash
 # Generate docs from CRD
+
 crd-ref-docs --source-path=./api/v1/ --output-path=./docs/
 ```
 

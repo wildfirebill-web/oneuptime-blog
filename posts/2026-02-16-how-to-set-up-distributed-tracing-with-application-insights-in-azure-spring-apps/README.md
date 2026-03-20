@@ -22,6 +22,7 @@ If you do not already have an Application Insights instance, create one.
 
 ```bash
 # Create an Application Insights resource
+
 az monitor app-insights component create \
   --app my-spring-insights \
   --resource-group spring-rg \

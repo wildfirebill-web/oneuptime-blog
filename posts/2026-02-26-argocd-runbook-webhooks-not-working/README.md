@@ -29,6 +29,7 @@ Webhooks are ArgoCD's primary mechanism for detecting Git changes in real time. 
 
 ```bash
 # GitHub: Check webhook deliveries
+
 # Go to: Repository > Settings > Webhooks > Recent Deliveries
 # Look for failed deliveries (red X icon)
 

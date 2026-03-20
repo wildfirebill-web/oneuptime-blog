@@ -39,6 +39,7 @@ security/
 
 ```yaml
 # security/trivy-operator/Chart.yaml
+
 apiVersion: v2
 name: trivy-operator
 description: Wrapper chart for Trivy Operator

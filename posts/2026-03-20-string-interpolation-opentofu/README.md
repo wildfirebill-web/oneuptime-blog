@@ -182,6 +182,7 @@ resource "aws_iam_role_policy" "app" {
 }
 
 # Example with literal dollar sign:
+
 locals {
   shell_script = "echo $$HOME"  # $$ becomes $ in the output
 }

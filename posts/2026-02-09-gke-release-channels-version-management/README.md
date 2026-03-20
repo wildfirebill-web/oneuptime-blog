@@ -62,6 +62,7 @@ Change an existing cluster's channel:
 
 ```bash
 # Move from Regular to Stable
+
 gcloud container clusters update production-cluster \
   --zone=us-central1-a \
   --release-channel=stable

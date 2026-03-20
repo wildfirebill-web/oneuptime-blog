@@ -22,6 +22,7 @@ The Faro collector receives telemetry from instrumented web applications. Deploy
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

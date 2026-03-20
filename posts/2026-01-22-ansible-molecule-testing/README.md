@@ -18,6 +18,7 @@ Install Molecule with the Docker driver for container-based testing.
 
 ```bash
 # Install Molecule with Docker support
+
 pip install molecule molecule-plugins[docker]
 
 # Verify installation

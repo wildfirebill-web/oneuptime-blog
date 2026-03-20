@@ -24,6 +24,7 @@ Splunk is one of the most popular SIEM platforms. Here is how to send Terraform 
 
 ```hcl
 # splunk-integration.tf
+
 # Configure the Splunk provider for Terraform
 terraform {
   required_providers {

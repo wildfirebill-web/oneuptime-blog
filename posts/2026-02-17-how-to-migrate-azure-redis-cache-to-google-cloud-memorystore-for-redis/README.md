@@ -34,6 +34,7 @@ Create a Memorystore for Redis instance that matches your Azure Redis configurat
 
 ```bash
 # Create a Memorystore Redis instance
+
 # Standard tier gives you replication and automatic failover (like Azure Standard/Premium)
 gcloud redis instances create my-redis-cache \
     --size=5 \

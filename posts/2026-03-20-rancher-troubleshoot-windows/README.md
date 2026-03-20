@@ -21,6 +21,7 @@ Windows containers in Kubernetes present unique troubleshooting challenges compa
 
 ```bash
 # Check pod events for image pull errors
+
 kubectl describe pod win-pod-xyz -n production | tail -30
 
 # Common error: image OS/arch mismatch

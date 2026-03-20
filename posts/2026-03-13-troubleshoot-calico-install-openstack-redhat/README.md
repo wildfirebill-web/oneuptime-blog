@@ -58,6 +58,7 @@ sudo firewall-cmd --reload
 
 ```bash
 # Identify which backend is active
+
 sudo iptables --version
 # iptables v1.8.x (legacy) or iptables v1.8.x (nf_tables)
 ```

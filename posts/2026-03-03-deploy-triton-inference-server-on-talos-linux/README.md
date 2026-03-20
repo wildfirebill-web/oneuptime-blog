@@ -44,6 +44,7 @@ Create the storage and populate it with a sample model:
 
 ```yaml
 # triton-model-storage.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

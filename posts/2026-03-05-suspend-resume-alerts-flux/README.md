@@ -26,6 +26,7 @@ The quickest way to suspend an alert is by patching the resource directly.
 
 ```bash
 # Suspend an alert by patching the suspend field
+
 kubectl patch alert my-alert -n flux-system --type=merge -p '{"spec":{"suspend":true}}'
 
 # Verify the alert is suspended

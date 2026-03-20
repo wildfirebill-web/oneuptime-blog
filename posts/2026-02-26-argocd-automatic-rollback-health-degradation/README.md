@@ -33,6 +33,7 @@ Argo Rollouts is the recommended approach for automatic rollback. It extends Kub
 
 ```yaml
 # Install Argo Rollouts
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

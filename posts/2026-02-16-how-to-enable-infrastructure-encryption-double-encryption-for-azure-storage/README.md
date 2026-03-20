@@ -48,6 +48,7 @@ Infrastructure encryption can only be enabled when creating a new storage accoun
 
 ```bash
 # Create a storage account with infrastructure encryption enabled
+
 # The --require-infrastructure-encryption flag enables the second layer
 az storage account create \
   --name securestorage2026 \

@@ -20,6 +20,7 @@ Install Checkov using pip or run it as a Docker container:
 
 ```bash
 # Install with pip (Python 3.8+ required)
+
 pip install checkov
 
 # Or use pipx for isolated installation

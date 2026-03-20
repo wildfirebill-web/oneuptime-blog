@@ -27,6 +27,7 @@ graph TD
 # failover.tf
 
 # Health check on primary endpoint
+
 resource "aws_route53_health_check" "primary" {
   fqdn              = "primary.${var.domain_name}"
   port              = 443
@@ -60,7 +61,7 @@ resource "aws_route53_record" "primary" {
   }
 }
 
-# Secondary failover record — no health check needed
+# Secondary failover record - no health check needed
 resource "aws_route53_record" "secondary" {
   provider = aws.secondary_region
 
@@ -142,15 +143,15 @@ resource "aws_cloudwatch_metric_alarm" "failover_triggered" {
     HealthCheckId = aws_route53_health_check.primary.id
   }
 
-  alarm_description = "Primary endpoint is unhealthy — DNS failover active"
+  alarm_description = "Primary endpoint is unhealthy - DNS failover active"
   alarm_actions     = [aws_sns_topic.incidents.arn]
 }
 ```
 
 ## Best Practices
 
-- Set health check `failure_threshold = 3` and `request_interval = 30` — this gives a 90-second failover window, balancing speed and false positives.
-- Use `evaluate_target_health = true` on alias records — Route 53 won't return an unhealthy target group.
-- Set DNS TTL to 60 seconds for failover records — lower TTL means faster client-side failover.
-- Configure CloudWatch alarms on health check status — you want to know when failover activates.
-- Test failover regularly by temporarily blocking the health check endpoint — don't wait for a real outage to discover issues.
+- Set health check `failure_threshold = 3` and `request_interval = 30` - this gives a 90-second failover window, balancing speed and false positives.
+- Use `evaluate_target_health = true` on alias records - Route 53 won't return an unhealthy target group.
+- Set DNS TTL to 60 seconds for failover records - lower TTL means faster client-side failover.
+- Configure CloudWatch alarms on health check status - you want to know when failover activates.
+- Test failover regularly by temporarily blocking the health check endpoint - don't wait for a real outage to discover issues.

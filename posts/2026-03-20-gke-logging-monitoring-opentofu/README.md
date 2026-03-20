@@ -14,6 +14,7 @@ GKE integrates with Cloud Logging and Cloud Monitoring to provide comprehensive 
 
 ```hcl
 # main.tf - GKE cluster with logging and monitoring
+
 resource "google_container_cluster" "monitored_cluster" {
   name     = "monitored-gke-cluster"
   location = "us-central1"

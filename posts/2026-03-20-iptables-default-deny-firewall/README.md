@@ -12,9 +12,10 @@ A default deny firewall policy rejects all traffic unless explicitly permitted. 
 
 ```bash
 #!/bin/bash
-# firewall-setup.sh — Default deny firewall
+# firewall-setup.sh - Default deny firewall
 
 # Flush all existing rules
+
 iptables -F       # Flush all rules in all chains
 iptables -X       # Delete user-defined chains
 iptables -t nat -F
@@ -42,7 +43,7 @@ sudo iptables -A OUTPUT -o lo -j ACCEPT
 sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-# Allow SSH (port 22) inbound — CRITICAL: do this before locking down
+# Allow SSH (port 22) inbound - CRITICAL: do this before locking down
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 
 # Allow outbound SSH (if you need to SSH out)
@@ -67,7 +68,7 @@ sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 # Allow NTP outbound (time synchronization)
 sudo iptables -A OUTPUT -p udp --dport 123 -j ACCEPT
 
-# Allow ICMP (ping) inbound — remove if hardening strictly
+# Allow ICMP (ping) inbound - remove if hardening strictly
 sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 sudo iptables -A OUTPUT -p icmp -j ACCEPT
 ```
@@ -76,7 +77,7 @@ sudo iptables -A OUTPUT -p icmp -j ACCEPT
 
 ```bash
 #!/bin/bash
-# safe-firewall.sh — Default deny with pre-set SSH allow
+# safe-firewall.sh - Default deny with pre-set SSH allow
 
 # STEP 1: Allow SSH FIRST before denying anything
 iptables -I INPUT 1 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT

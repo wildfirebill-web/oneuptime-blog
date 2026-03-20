@@ -1,4 +1,4 @@
-# How to Manage Teams and Roles via the Portainer API
+# How to Manage Teams and Roles via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,7 +18,7 @@ Portainer's team-based RBAC system allows you to group users and grant them acce
 
 ## Understanding Portainer RBAC
 
-```
+```text
 Teams → Assigned to Environments with a Role
                 ↓
 Role values:
@@ -34,6 +34,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"
 
 # List all teams
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/teams" | jq '.[] | {id: .Id, name: .Name}'
 ```
@@ -157,7 +158,7 @@ curl -s -X PUT \
 
 ```bash
 #!/bin/bash
-# setup-rbac.sh — Configure teams and access policies
+# setup-rbac.sh - Configure teams and access policies
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN=$(curl -s -X POST "${PORTAINER_URL}/api/auth" \

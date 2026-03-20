@@ -66,6 +66,7 @@ The cluster directory contains only Flux Kustomization resources that point to a
 
 ```yaml
 # clusters/production/kustomizations.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -29,6 +29,7 @@ Install the Cilium CLI using the official installation method.
 
 ```bash
 # Install the latest stable Cilium CLI on Linux
+
 CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
 CLI_ARCH=amd64
 if [ "$(uname -m)" = "aarch64" ]; then CLI_ARCH=arm64; fi

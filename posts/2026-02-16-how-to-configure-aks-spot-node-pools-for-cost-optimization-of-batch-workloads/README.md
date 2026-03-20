@@ -47,6 +47,7 @@ Create a spot node pool with the `--priority Spot` flag.
 
 ```bash
 # Add a spot node pool to the cluster
+
 # --priority Spot makes this a spot instance pool
 # --eviction-policy Delete removes the VM on eviction (vs Deallocate which keeps the disk)
 # --spot-max-price -1 means pay up to the on-demand price (maximum discount)

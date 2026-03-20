@@ -23,6 +23,7 @@ The `pre-commit` framework makes managing Git hooks easy and shareable across te
 
 ```bash
 # Install pre-commit using pip
+
 pip install pre-commit
 
 # Or using Homebrew on macOS

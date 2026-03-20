@@ -50,6 +50,7 @@ Here is a minimal configuration that sends traces to Datadog:
 
 ```yaml
 # Basic Datadog exporter configuration
+
 exporters:
   datadog:
     # Datadog API key (required)

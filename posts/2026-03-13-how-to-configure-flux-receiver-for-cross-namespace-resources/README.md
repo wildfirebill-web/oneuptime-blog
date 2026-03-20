@@ -23,6 +23,7 @@ Verify your multi-namespace setup:
 
 ```bash
 # List Flux resources across all namespaces
+
 flux get all --all-namespaces
 ```
 
@@ -357,7 +358,7 @@ kubectl -n flux-system logs deploy/notification-controller --since=5m | grep -i 
 
 If you see forbidden errors, the ClusterRole or RoleBinding is missing or incorrect.
 
-### Resource not found errors
+Resource not found errors
 
 Verify that the resource exists in the specified namespace:
 

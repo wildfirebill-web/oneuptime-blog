@@ -29,6 +29,7 @@ Before touching the state file, know exactly what it manages:
 
 ```bash
 # List all resources tracked in state
+
 terraform state list
 
 # Save the full list to a file for reference

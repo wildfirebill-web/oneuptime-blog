@@ -29,6 +29,7 @@ Start by understanding what you are working with.
 
 ```bash
 # Connect to Aurora MySQL and gather database statistics
+
 mysql -h my-aurora-cluster.cluster-abc123.us-east-1.rds.amazonaws.com -u admin -p
 
 # Check database sizes

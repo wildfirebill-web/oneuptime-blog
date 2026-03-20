@@ -28,6 +28,7 @@ This guide covers installing MicroK8s with the right addons, bootstrapping Flux 
 
 ```bash
 # Install MicroK8s via snap
+
 sudo snap install microk8s --classic --channel=1.29/stable
 
 # Add current user to microk8s group

@@ -36,6 +36,7 @@ def ping(host: str, timeout: int = 2) -> dict | None:
     }
 
 # Ping a host
+
 result = ping("8.8.8.8")
 if result:
     print(f"Reply from {result['src']}: TTL={result['ttl']} time={result['rtt_ms']}ms")

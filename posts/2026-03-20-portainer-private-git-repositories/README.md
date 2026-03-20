@@ -20,24 +20,25 @@ Most production infrastructure repositories are private, requiring authenticatio
 
 This is the most common approach and works with all major Git hosts.
 
-### GitHub — Create a Personal Access Token
+### GitHub - Create a Personal Access Token
 
 1. Go to GitHub → **Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)**.
 2. Click **Generate new token (classic)**.
 3. Set a name: `Portainer Deploy Token`
 4. Set expiry: 90 days (or no expiry for simplicity)
 5. Select scopes:
-   - `repo` (full repository access — required for private repos)
+   - `repo` (full repository access - required for private repos)
 6. Click **Generate token**.
 7. Copy the token immediately.
 
 ```bash
 # Test your token
+
 curl -H "Authorization: token ghp_YourTokenHere" \
   https://api.github.com/repos/your-org/your-repo
 ```
 
-### GitLab — Create a Project Access Token
+### GitLab - Create a Project Access Token
 
 1. Go to your GitLab project → **Settings** → **Access tokens**.
 2. Click **Create project access token**.
@@ -57,14 +58,14 @@ curl -H "Authorization: token ghp_YourTokenHere" \
 
 For GitHub specifically:
 
-```
+```text
 Username: your-github-username
 Password: ghp_YourPersonalAccessToken
 ```
 
 For GitLab:
 
-```
+```text
 Username: your-gitlab-username  (or oauth2 if using token)
 Password: glpat-YourProjectAccessToken
 ```
@@ -191,10 +192,10 @@ openssl s_client -connect git.company.com:443 -showcerts </dev/null 2>/dev/null 
 
 ## Security Best Practices
 
-1. Use deploy keys (SSH or PAT) with **read-only** access — write access is not needed
+1. Use deploy keys (SSH or PAT) with **read-only** access - write access is not needed
 2. Create **dedicated** credentials for Portainer, not your personal account keys
 3. Rotate credentials on a schedule (every 6-12 months)
-4. Use tokens with **minimal scopes** — only `repo:read` or `read_repository`
+4. Use tokens with **minimal scopes** - only `repo:read` or `read_repository`
 5. Name tokens clearly: `portainer-production-deploy-2026-03`
 6. Revoke credentials immediately if Portainer is compromised
 

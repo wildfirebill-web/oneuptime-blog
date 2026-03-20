@@ -27,6 +27,7 @@ Your plugin must implement three commands:
 
 ```bash
 # Discover if the plugin should handle this repository
+
 plugin discover
 
 # Initialize/prepare the environment

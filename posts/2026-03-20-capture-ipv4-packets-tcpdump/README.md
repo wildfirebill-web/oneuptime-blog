@@ -10,6 +10,7 @@ Description: Learn how to use tcpdump to capture IPv4 packets on Linux, includin
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install tcpdump
 
 # RHEL/CentOS/Rocky

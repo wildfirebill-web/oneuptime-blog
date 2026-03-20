@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Self-Hosted, Home Lab, Dashboard, Homarr, Homer, Heimdall
+Tags: Portainer, Docker, Self-Hosted, Home Lab, Dashboards, Homarr, Homer, Heimdall
 
 Description: Deploy a beautiful self-hosted home lab dashboard using Homarr, Homer, or Heimdall with Portainer to organize all your services.
 
@@ -22,6 +22,7 @@ Homarr features Docker integration (shows container status), widgets, and a drag
 
 ```yaml
 # docker-compose.yml - Homarr Dashboard
+
 version: "3.8"
 
 networks:
@@ -71,7 +72,7 @@ services:
 
 ## Option 2: Deploy Homer
 
-Homer is a static, YAML-configured dashboard — simple and extremely fast.
+Homer is a static, YAML-configured dashboard - simple and extremely fast.
 
 ```yaml
 # docker-compose.yml - Homer Dashboard

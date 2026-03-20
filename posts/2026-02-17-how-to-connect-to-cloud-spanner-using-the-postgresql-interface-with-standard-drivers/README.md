@@ -18,6 +18,7 @@ First, you need to create a Spanner instance and database that uses the PostgreS
 
 ```bash
 # Create a Spanner instance (if you do not already have one)
+
 gcloud spanner instances create my-pg-instance \
   --config=regional-us-central1 \
   --description="PostgreSQL interface instance" \

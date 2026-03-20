@@ -29,6 +29,7 @@ import vertexai
 from vertexai.preview.prompts import Prompt
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create a prompt with a name and template

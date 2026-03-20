@@ -59,6 +59,7 @@ Not all metrics are useful for capacity planning. Focus on resource utilization 
 
 ```python
 # capacity_metrics.py - Define and collect capacity-relevant metrics
+
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional

@@ -115,6 +115,7 @@ An umbrella Application deploys multiple services from a single source path.
 
 ```yaml
 # services/platform/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

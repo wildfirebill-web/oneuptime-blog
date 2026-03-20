@@ -8,7 +8,7 @@ Description: Learn how to configure Route 53 geolocation routing with OpenTofu t
 
 ## Introduction
 
-Route 53 geolocation routing routes traffic based on the geographic location of DNS queries—continent, country, or US state. Unlike latency routing (which optimizes for speed), geolocation routing enforces where traffic goes regardless of performance. This is essential for GDPR data residency requirements, serving localized content, and restricting access to specific regions.
+Route 53 geolocation routing routes traffic based on the geographic location of DNS queries-continent, country, or US state. Unlike latency routing (which optimizes for speed), geolocation routing enforces where traffic goes regardless of performance. This is essential for GDPR data residency requirements, serving localized content, and restricting access to specific regions.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Route 53 geolocation routing routes traffic based on the geographic location of 
 
 ```hcl
 # Route German users to EU infrastructure (GDPR compliance)
+
 resource "aws_route53_record" "germany" {
   zone_id        = var.hosted_zone_id
   name           = var.domain_name
@@ -190,4 +191,4 @@ aws route53 test-dns-answer \
 
 ## Conclusion
 
-Always create a default geolocation record (`country = "*"`) to handle locations that don't match any other record—without it, Route 53 returns no answer for unmatched locations, causing DNS failures. Country records take precedence over continent records, and continent records take precedence over the default. Use geolocation routing for data residency and compliance requirements, but combine with latency routing at a higher level when you also want performance optimization within each geographic constraint.
+Always create a default geolocation record (`country = "*"`) to handle locations that don't match any other record-without it, Route 53 returns no answer for unmatched locations, causing DNS failures. Country records take precedence over continent records, and continent records take precedence over the default. Use geolocation routing for data residency and compliance requirements, but combine with latency routing at a higher level when you also want performance optimization within each geographic constraint.

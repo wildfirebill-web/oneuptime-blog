@@ -14,6 +14,7 @@ Apache Cassandra uses a gossip protocol for cluster communication. Configuring i
 
 ```yaml
 # Critical parameters in cassandra.yaml for IPv6:
+
 # listen_address - What address Cassandra binds to
 # broadcast_address - What address other nodes use to reach this node
 # rpc_address - What address clients connect to

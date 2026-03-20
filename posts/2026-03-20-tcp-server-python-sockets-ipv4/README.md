@@ -16,6 +16,7 @@ A TCP server binds to an address and port, listens for incoming connections, and
 import socket
 
 # Server configuration
+
 HOST = "0.0.0.0"   # Listen on all available IPv4 interfaces
 PORT = 9000        # Port to listen on
 
@@ -114,4 +115,4 @@ ss -tlnp | grep 9000
 
 ## Conclusion
 
-Building a TCP server in Python requires just a few socket calls: `socket()`, `bind()`, `listen()`, and `accept()`. The echo server above is the foundation—add threading, asyncio, or process pools to handle multiple clients concurrently, covered in subsequent posts.
+Building a TCP server in Python requires just a few socket calls: `socket()`, `bind()`, `listen()`, and `accept()`. The echo server above is the foundation-add threading, asyncio, or process pools to handle multiple clients concurrently, covered in subsequent posts.

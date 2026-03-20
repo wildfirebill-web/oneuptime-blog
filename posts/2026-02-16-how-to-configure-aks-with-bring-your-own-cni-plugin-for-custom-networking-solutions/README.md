@@ -35,6 +35,7 @@ When creating the cluster, specify `none` as the network plugin. This tells AKS 
 
 ```bash
 # Create resource group
+
 az group create --name myBYOCNIRG --location eastus
 
 # Create AKS cluster with no CNI plugin

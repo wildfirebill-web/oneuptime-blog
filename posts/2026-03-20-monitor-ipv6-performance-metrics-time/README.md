@@ -1,4 +1,4 @@
-# How to Monitor IPv6 Performance Metrics Over Time
+# How to Monitor IPv6 Performance Metrics Over Time - Time
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,23 +16,24 @@ The Prometheus node exporter automatically exposes IPv6 network interface statis
 
 ```bash
 # Install node exporter
+
 sudo apt-get install prometheus-node-exporter
 
 # Verify IPv6 metrics are exported
 curl http://localhost:9100/metrics | grep -E "node_network.*ipv6|node_netstat_Ip6"
 
 # Key IPv6 metrics available:
-# node_netstat_Ip6_InReceives — incoming IPv6 packets/sec
-# node_netstat_Ip6_OutRequests — outgoing IPv6 packets/sec
-# node_netstat_Ip6_InDiscards — dropped incoming packets
-# node_netstat_TcpExt_TCPSynRetrans — TCP SYN retransmissions
+# node_netstat_Ip6_InReceives - incoming IPv6 packets/sec
+# node_netstat_Ip6_OutRequests - outgoing IPv6 packets/sec
+# node_netstat_Ip6_InDiscards - dropped incoming packets
+# node_netstat_TcpExt_TCPSynRetrans - TCP SYN retransmissions
 ```
 
 ## Step 2: Custom IPv6 Latency Exporter
 
 ```python
 #!/usr/bin/env python3
-# ipv6_latency_exporter.py — Prometheus exporter for IPv6 ping latency
+# ipv6_latency_exporter.py - Prometheus exporter for IPv6 ping latency
 
 import subprocess
 import re
@@ -106,7 +107,7 @@ if __name__ == "__main__":
 ## Step 3: Prometheus Configuration
 
 ```yaml
-# prometheus.yml — scrape configuration
+# prometheus.yml - scrape configuration
 
 global:
   scrape_interval: 60s

@@ -19,6 +19,7 @@ IAM instance profiles are the mechanism by which EC2 instances assume an IAM rol
 
 ```hcl
 # IAM role for an application server
+
 resource "aws_iam_role" "app_server" {
   name        = "${var.app_name}-server-role"
   description = "Role for ${var.app_name} application servers"

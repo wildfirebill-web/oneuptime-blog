@@ -48,6 +48,7 @@ tags:
 
 ```yaml
 # In /etc/datadog-agent/datadog.yaml
+
 logs_enabled: true
 ```
 

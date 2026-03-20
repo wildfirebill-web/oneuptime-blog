@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, wget, HTTP, File Download, Network Diagnostics, Linux
+Tags: IPv6, Wget, HTTP, File Download, Network Diagnostics, Linux
 
 Description: Use wget to download files and test HTTP services over IPv6, force IPv6 connections, and handle IPv6 addresses in URLs for scripted downloads.
 
@@ -14,6 +14,7 @@ Description: Use wget to download files and test HTTP services over IPv6, force 
 
 ```bash
 # Download from an IPv6 address
+
 wget http://[2001:db8::1]/file.tar.gz
 
 # Download from IPv6 HTTPS
@@ -117,7 +118,7 @@ test_url "https://example.com/"
 ## wget Configuration for IPv6
 
 ```ini
-# ~/.wgetrc — set IPv6 preference globally
+# ~/.wgetrc - set IPv6 preference globally
 prefer-family = IPv6
 
 # Or force IPv6 always

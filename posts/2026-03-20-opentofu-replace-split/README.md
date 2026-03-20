@@ -1,11 +1,10 @@
----
-title: "How to Use replace() and split() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use the replace() and split() functions in OpenTofu to manipulate strings and create lists."
----
-
 # How to Use replace() and split() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use the replace() and split() functions in OpenTofu to manipulate strings and create lists.
 
 `replace()` substitutes occurrences of a substring in a string, while `split()` divides a string into a list of substrings at a given delimiter. Together they're powerful for string parsing and normalization.
 

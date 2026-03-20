@@ -27,6 +27,7 @@ This guide provisions a complete GCP environment: a VPC, a GKE cluster, and a Cl
 
 ```bash
 # Create a service account for Terraform
+
 gcloud iam service-accounts create terraform-runner \
   --display-name="Terraform Runner" \
   --project="my-gcp-project"

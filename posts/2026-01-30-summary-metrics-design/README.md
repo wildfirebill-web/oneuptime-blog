@@ -61,6 +61,7 @@ A summary metric in Prometheus exposes multiple time series for each quantile yo
 
 ```yaml
 # HELP http_request_duration_seconds Request latency distribution
+
 # TYPE http_request_duration_seconds summary
 http_request_duration_seconds{quantile="0.5"} 0.042
 http_request_duration_seconds{quantile="0.9"} 0.087

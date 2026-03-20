@@ -28,6 +28,7 @@ Make sure you have:
 
 ```bash
 # Verify cluster connectivity
+
 kubectl cluster-info
 
 # Check your permissions

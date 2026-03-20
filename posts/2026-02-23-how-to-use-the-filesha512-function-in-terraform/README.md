@@ -16,6 +16,7 @@ The `filesha512` function reads a file and returns its SHA-512 hash:
 
 ```hcl
 # filesha512(path)
+
 # Returns the hex-encoded SHA-512 hash of a file
 filesha512("${path.module}/configs/secrets.yaml")
 # Returns a 128-character hex string

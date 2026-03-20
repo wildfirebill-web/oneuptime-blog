@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Applications, DevOps
+Tags: Portainer, Kubernetes, Application, DevOps
 
 Description: Learn how to safely remove Kubernetes applications and their associated resources in Portainer without leaving orphaned objects.
 
@@ -22,6 +22,7 @@ Before removing, understand what the application has created:
 
 ```bash
 # List all resources for an application
+
 kubectl get all -n production -l app=my-app
 
 # Output:
@@ -68,7 +69,7 @@ Or open the application detail:
 2. Click **Remove this application**
 3. In the confirmation dialog, choose what to keep:
 
-```
+```text
 Remove options:
   [x] Delete deployment
   [x] Delete services
@@ -186,4 +187,4 @@ kubectl patch pvc stuck-pvc -n production \
 
 ## Conclusion
 
-Removing Kubernetes applications in Portainer is straightforward but requires careful consideration of associated resources. PVCs are intentionally preserved to protect data — always decide explicitly whether to delete them. For clean environments, check for orphaned resources after removal and consider using namespace-level cleanup when decommissioning entire environments. Use YAML or Helm for reproducible deployments that can be cleanly removed with the same manifest that created them.
+Removing Kubernetes applications in Portainer is straightforward but requires careful consideration of associated resources. PVCs are intentionally preserved to protect data - always decide explicitly whether to delete them. For clean environments, check for orphaned resources after removal and consider using namespace-level cleanup when decommissioning entire environments. Use YAML or Helm for reproducible deployments that can be cleanly removed with the same manifest that created them.

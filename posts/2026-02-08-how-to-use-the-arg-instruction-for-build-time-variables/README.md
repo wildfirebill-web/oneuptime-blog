@@ -16,6 +16,7 @@ ARG is essential for creating flexible Dockerfiles that can produce different im
 
 ```dockerfile
 # Define a build argument with a default value
+
 ARG VERSION=3.11
 
 # Define a build argument without a default (must be provided at build time)

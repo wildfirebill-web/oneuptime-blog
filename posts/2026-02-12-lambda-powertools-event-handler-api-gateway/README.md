@@ -92,6 +92,7 @@ def delete_order(order_id: str):
 
 
 # Lambda handler
+
 @logger.inject_lambda_context
 @tracer.capture_lambda_handler
 def handler(event: dict, context: LambdaContext) -> dict:

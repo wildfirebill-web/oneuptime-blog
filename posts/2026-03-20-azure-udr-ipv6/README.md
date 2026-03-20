@@ -17,6 +17,7 @@ RG="rg-udr-ipv6"
 LOCATION="eastus"
 
 # Create route table
+
 az network route-table create \
     --resource-group "$RG" \
     --name rt-spoke-ipv6 \
@@ -124,7 +125,7 @@ az network nic show-effective-route-table \
 
 ## Hub-Spoke UDR Design for IPv6
 
-```
+```text
 Hub VNet (fd00:hub::/48)
   ├── AzureFirewallSubnet: fd00:hub:0:1::/64
   └── GatewaySubnet: fd00:hub:0:2::/64
@@ -143,4 +144,4 @@ The firewall uses IPv4 address as next-hop but inspects IPv6 traffic
 
 ## Conclusion
 
-Azure UDRs for IPv6 use the same mechanism as IPv4 routes — create route entries with `::/0` or specific IPv6 prefixes and assign them to subnets. A key Azure limitation: the next-hop IP address for `VirtualAppliance` routes must be an IPv4 address even when routing IPv6 traffic. The NVA or Azure Firewall with that IPv4 address can inspect and forward IPv6 packets. Check effective routes on NICs with `az network nic show-effective-route-table` to verify IPv6 UDR overrides are applied correctly.
+Azure UDRs for IPv6 use the same mechanism as IPv4 routes - create route entries with `::/0` or specific IPv6 prefixes and assign them to subnets. A key Azure limitation: the next-hop IP address for `VirtualAppliance` routes must be an IPv4 address even when routing IPv6 traffic. The NVA or Azure Firewall with that IPv4 address can inspect and forward IPv6 packets. Check effective routes on NICs with `az network nic show-effective-route-table` to verify IPv6 UDR overrides are applied correctly.

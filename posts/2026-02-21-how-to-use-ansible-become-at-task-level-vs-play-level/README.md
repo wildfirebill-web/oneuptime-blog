@@ -33,6 +33,7 @@ Setting `become: true` at the play level means every task in that play runs with
 
 ```yaml
 # playbooks/play-level-become.yml
+
 # All tasks run as root because become is set at the play level
 ---
 - name: Full system setup

@@ -16,6 +16,7 @@ First, install cert-manager in your cluster:
 
 ```bash
 # Install cert-manager using kubectl
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.yaml
 
 # Wait for cert-manager pods to be ready

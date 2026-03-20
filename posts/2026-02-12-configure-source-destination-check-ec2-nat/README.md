@@ -50,6 +50,7 @@ Disable source/destination check on an instance:
 
 ```bash
 # Disable source/destination check on a specific instance
+
 aws ec2 modify-instance-attribute \
   --instance-id i-0abc123def456789 \
   --no-source-dest-check

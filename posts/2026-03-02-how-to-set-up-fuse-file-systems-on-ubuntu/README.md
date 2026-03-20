@@ -24,6 +24,7 @@ When a process reads a file on a FUSE mount, the kernel forwards the request thr
 
 ```bash
 # Install the FUSE kernel module and userspace library
+
 sudo apt update
 sudo apt install fuse3 libfuse3-dev -y
 

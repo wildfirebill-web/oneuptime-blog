@@ -39,6 +39,7 @@ runc can be used independently of Docker. This is useful for learning and debugg
 
 ```bash
 # Check if runc is installed (it comes with Docker)
+
 runc --version
 
 # If you need to install it separately

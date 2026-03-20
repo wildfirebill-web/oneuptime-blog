@@ -18,6 +18,7 @@ When a container build fails or produces unexpected results, traditional Contain
 
 ```bash
 # The types of issues you can debug with Buildah:
+
 # 1. Package installation failures
 # 2. Missing dependencies at runtime
 # 3. Permission errors

@@ -1,4 +1,4 @@
-# How to Set Up Vault Integration with Rancher
+# How to Set Up Vault Integration with Rancher - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ helm install vault hashicorp/vault \
 
 ```bash
 # Initialize Vault (only needed on first run)
+
 kubectl exec -it vault-0 -n vault -- vault operator init \
   -key-shares=5 \
   -key-threshold=3 \

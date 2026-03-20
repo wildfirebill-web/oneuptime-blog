@@ -35,6 +35,7 @@ First, deploy Kyverno itself through ArgoCD using its Helm chart.
 
 ```yaml
 # kyverno-app.yaml
+
 # ArgoCD Application to deploy Kyverno
 apiVersion: argoproj.io/v1alpha1
 kind: Application

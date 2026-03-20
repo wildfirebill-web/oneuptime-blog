@@ -59,6 +59,7 @@ First, create an S3 bucket where Application Cost Profiler will deliver reports:
 
 ```bash
 # Create an S3 bucket for cost reports
+
 aws s3 mb s3://my-app-cost-reports-123456789012
 
 # Apply a bucket policy to allow Application Cost Profiler access

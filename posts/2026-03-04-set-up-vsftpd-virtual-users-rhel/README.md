@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Vsftpd, FTP, Virtual Users, PAM, Security, Linux
+Tags: RHEL, vsftpd, FTP, Virtual Users, PAM, Security, Linux
 
 Description: Configure vsftpd on RHEL with virtual users stored in a Berkeley DB file, keeping FTP accounts separate from system users for better security.
 
@@ -14,6 +14,7 @@ Virtual users in vsftpd exist only for FTP purposes, separate from system user a
 
 ```bash
 # Install vsftpd and the Berkeley DB utilities
+
 sudo dnf install -y vsftpd libdb-utils
 ```
 

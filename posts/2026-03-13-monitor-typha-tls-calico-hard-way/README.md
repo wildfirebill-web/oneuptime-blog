@@ -64,6 +64,7 @@ If using Prometheus with the kube-state-metrics certificate monitor:
 
 ```yaml
 # prometheus alert for certificate expiry
+
 - alert: TyphaTLSCertExpiringSoon
   expr: |
     (kube_secret_info{namespace="calico-system", secret="calico-typha-tls"} * on (namespace, secret)

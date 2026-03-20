@@ -29,6 +29,7 @@ Never commit the runner token to Git. Create the secret imperatively, or use Sea
 
 ```bash
 # Create the secret imperatively
+
 kubectl create namespace gitlab-runner
 
 kubectl create secret generic gitlab-runner-secret \

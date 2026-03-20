@@ -29,6 +29,7 @@ Avro is a popular choice because it is well-supported across languages and works
 
 ```bash
 # Create an Avro schema for user events
+
 gcloud pubsub schemas create user-event-schema \
   --type=AVRO \
   --definition='{

@@ -49,6 +49,7 @@ First, check if the RabbitMQ service is actually running on the server.
 
 ```bash
 # Check RabbitMQ service status on systemd-based systems
+
 sudo systemctl status rabbitmq-server
 
 # Alternative: Check if the process is running

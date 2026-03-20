@@ -53,6 +53,7 @@ You can use an existing PKI infrastructure or create one for this purpose. Here 
 
 ```bash
 # Create the root CA private key
+
 openssl genrsa -aes256 -out rootCA.key 4096
 
 # Create the root CA certificate (valid for 10 years)

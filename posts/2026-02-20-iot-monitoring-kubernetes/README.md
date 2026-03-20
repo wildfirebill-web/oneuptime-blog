@@ -34,6 +34,7 @@ EMQX is a scalable MQTT broker that runs well on Kubernetes. Deploy it as a Stat
 
 ```yaml
 # emqx-statefulset.yaml
+
 # Deploys EMQX MQTT broker with persistent storage
 apiVersion: apps/v1
 kind: StatefulSet

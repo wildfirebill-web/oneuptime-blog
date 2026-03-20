@@ -31,6 +31,7 @@ Here is the classic pattern of updating a config and restarting a service:
 
 ```yaml
 # nginx-config.yml - Update nginx config and restart if changed
+
 ---
 - name: Configure nginx web server
   hosts: webservers

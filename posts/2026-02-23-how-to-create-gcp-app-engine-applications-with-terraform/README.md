@@ -18,6 +18,7 @@ The `google_app_engine_application` resource creates the application. Remember, 
 
 ```hcl
 # Create the App Engine application
+
 # WARNING: This cannot be deleted or moved once created
 resource "google_app_engine_application" "app" {
   project     = var.project_id

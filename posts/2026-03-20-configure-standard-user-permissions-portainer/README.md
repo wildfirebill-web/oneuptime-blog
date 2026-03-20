@@ -35,6 +35,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create a standard user (Role: 2 = Standard User)
+
 curl -X POST \
   https://localhost:9443/api/users \
   -H "Authorization: Bearer $TOKEN" \

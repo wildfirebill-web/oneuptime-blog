@@ -41,6 +41,7 @@ Even a few seconds of time drift can cause:
 
 ```bash
 # Show current date and time
+
 date
 
 # Show detailed time information

@@ -24,6 +24,7 @@ Configure Flux to verify Git commit signatures:
 
 ```yaml
 # verified-git-source.yaml
+
 # GitRepository with commit signature verification
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

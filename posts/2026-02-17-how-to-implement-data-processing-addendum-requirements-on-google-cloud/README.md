@@ -41,6 +41,7 @@ Most DPAs specify where personal data can be stored and processed. On GCP, enfor
 
 ```bash
 # Restrict resources to EU locations for GDPR compliance
+
 gcloud resource-manager org-policies set-policy - \
     --folder=EU_DATA_FOLDER_ID <<'EOF'
 constraint: constraints/gcp.resourceLocations

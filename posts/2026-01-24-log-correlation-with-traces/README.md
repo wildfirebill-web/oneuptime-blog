@@ -44,6 +44,7 @@ The key to log correlation is injecting trace context into your log records. Her
 
 ```python
 # logging_config.py
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

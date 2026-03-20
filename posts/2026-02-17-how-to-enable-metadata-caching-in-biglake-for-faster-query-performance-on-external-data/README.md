@@ -96,6 +96,7 @@ Or trigger a refresh from your data pipeline after loading new files:
 from google.cloud import bigquery
 
 # Initialize the BigQuery client
+
 client = bigquery.Client(project="my-project")
 
 def refresh_metadata_cache(table_id):

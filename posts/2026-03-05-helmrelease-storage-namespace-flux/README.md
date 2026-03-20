@@ -18,6 +18,7 @@ The `spec.storageNamespace` field overrides the namespace where Helm stores its 
 
 ```yaml
 # helmrelease.yaml - HelmRelease with storage namespace
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

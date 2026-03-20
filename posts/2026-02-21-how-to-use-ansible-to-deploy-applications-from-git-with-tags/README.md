@@ -14,6 +14,7 @@ Tag-based deployment from Git is one of the most reliable deployment strategies.
 
 ```yaml
 # playbook-tag-deploy.yml
+
 # Deploys an application by checking out a specific Git tag
 - name: Deploy application from Git tag
   hosts: webservers

@@ -288,6 +288,7 @@ Keep an eye on your write patterns using Cloud Monitoring.
 
 ```bash
 # Check for hot spots in your Firestore usage
+
 # Look at the Key Visualizer in the Firebase Console
 # Or query Cloud Monitoring for write rate metrics
 gcloud monitoring metrics list --filter="metric.type=firestore.googleapis.com/document/write_count"

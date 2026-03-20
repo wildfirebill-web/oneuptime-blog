@@ -25,6 +25,7 @@ Install the required Ansible collection:
 
 ```bash
 # Install the community.general collection (includes cloudflare_dns module)
+
 ansible-galaxy collection install community.general
 ```
 

@@ -32,6 +32,7 @@ Kubernetes ships with default APF configurations. You can view them:
 
 ```bash
 # List all priority level configurations
+
 kubectl get prioritylevelconfiguration
 
 # Output shows default levels:

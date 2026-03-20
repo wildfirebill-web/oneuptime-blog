@@ -1,4 +1,4 @@
-# How to Deploy Apache HTTP Server via Portainer
+# How to Deploy Apache HTTP Server via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -55,6 +55,7 @@ Create `httpd.conf`:
 
 ```apache
 # httpd.conf - main Apache configuration
+
 ServerRoot "/usr/local/apache2"
 Listen 80
 
@@ -195,4 +196,4 @@ docker exec apache httpd -k graceful
 
 ## Conclusion
 
-Apache deployed via Portainer supports complex virtual hosting, PHP-FPM integration, and SSL — making it suitable for running multiple PHP applications on a single Docker host. The bind-mounted configuration makes updates quick and auditable, while Portainer's stack management keeps the full setup reproducible.
+Apache deployed via Portainer supports complex virtual hosting, PHP-FPM integration, and SSL - making it suitable for running multiple PHP applications on a single Docker host. The bind-mounted configuration makes updates quick and auditable, while Portainer's stack management keeps the full setup reproducible.

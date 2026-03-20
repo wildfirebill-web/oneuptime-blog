@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ngrep, Network Traffic, Pattern Matching, Packet Analysis, Linux
+Tags: Ngrep, Network Traffic, Pattern Matching, Packet Analysis, Linux
 
-Description: Learn how to use ngrep, the network grep tool, to search for text patterns and regular expressions in live network traffic, making it easy to find specific requests, credentials, or data in unencrypted protocols.
+Description: Learn how to use ngrep, the network grep tool, to search for text patterns and regular expressions in live network traffic, making it easy to find specific requests, credentials, or data in...
 
 ## What Is ngrep?
 
@@ -18,6 +18,7 @@ ngrep (network grep) applies regular expression pattern matching to network pack
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install ngrep
 
 # RHEL/CentOS/Rocky
@@ -179,4 +180,4 @@ sudo ngrep -I /tmp/capture.pcap -O /tmp/http-gets.pcap 'GET' port 80
 
 ## Conclusion
 
-ngrep combines tcpdump's packet capture with grep's pattern matching to search network traffic payloads for text patterns or regular expressions. Use `sudo ngrep -q 'pattern' port N` for basic matching, add `-W byline` for cleaner HTTP output, and `-i` for case-insensitive matching. Combine with BPF filters (`host`, `port`, `src`, `dst`) for precision. Save matched packets to PCAP with `-O file.pcap` for Wireshark follow-up analysis. ngrep is most effective against cleartext protocols — it cannot inspect TLS-encrypted traffic without decryption.
+ngrep combines tcpdump's packet capture with grep's pattern matching to search network traffic payloads for text patterns or regular expressions. Use `sudo ngrep -q 'pattern' port N` for basic matching, add `-W byline` for cleaner HTTP output, and `-i` for case-insensitive matching. Combine with BPF filters (`host`, `port`, `src`, `dst`) for precision. Save matched packets to PCAP with `-O file.pcap` for Wireshark follow-up analysis. ngrep is most effective against cleartext protocols - it cannot inspect TLS-encrypted traffic without decryption.

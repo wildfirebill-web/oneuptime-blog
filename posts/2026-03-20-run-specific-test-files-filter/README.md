@@ -54,6 +54,7 @@ You can filter to run only specific `run` blocks by name within a test file:
 
 ```bash
 # Run only the "create_vpc" run block from all test files
+
 tofu test -run=create_vpc
 ```
 
@@ -125,7 +126,7 @@ done
 
 Organize tests to make filtering intuitive:
 
-```
+```text
 modules/vpc/
 ├── main.tf
 └── tests/
@@ -176,4 +177,4 @@ tofu test \
 
 ## Conclusion
 
-OpenTofu's test filtering capabilities — via `-filter`, `-run`, and `-chdir` — give you fine-grained control over test execution. By organizing tests into unit and integration suites and using these flags in your CI/CD pipeline, you can balance test thoroughness with execution speed.
+OpenTofu's test filtering capabilities - via `-filter`, `-run`, and `-chdir` - give you fine-grained control over test execution. By organizing tests into unit and integration suites and using these flags in your CI/CD pipeline, you can balance test thoroughness with execution speed.

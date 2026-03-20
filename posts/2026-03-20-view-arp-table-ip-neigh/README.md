@@ -14,6 +14,7 @@ The ARP table (neighbor table in iproute2 terminology) maps IP addresses to MAC 
 
 ```bash
 # Show all neighbor (ARP) entries
+
 ip neigh show
 
 # Sample output:
@@ -46,12 +47,12 @@ ip neigh show nud permanent
 | State | Description |
 |---|---|
 | `REACHABLE` | MAC confirmed recently |
-| `STALE` | MAC not confirmed recently — may still be valid |
+| `STALE` | MAC not confirmed recently - may still be valid |
 | `DELAY` | Waiting to confirm reachability |
 | `PROBE` | Actively probing for MAC |
-| `FAILED` | No response — host unreachable |
+| `FAILED` | No response - host unreachable |
 | `PERMANENT` | Static entry, never ages |
-| `NOARP` | No ARP — direct route, no MAC needed |
+| `NOARP` | No ARP - direct route, no MAC needed |
 
 ## Filter by IPv4 Only
 
@@ -73,7 +74,7 @@ ip neigh show | awk '{print $1, $3, $5}'
 # Check if 192.168.1.1 is in the cache
 ip neigh show 192.168.1.1
 
-# If empty — not in cache (force ARP with ping first)
+# If empty - not in cache (force ARP with ping first)
 ping -c 1 192.168.1.1
 ip neigh show 192.168.1.1
 ```

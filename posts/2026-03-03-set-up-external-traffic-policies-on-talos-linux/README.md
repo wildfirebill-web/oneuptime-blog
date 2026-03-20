@@ -28,6 +28,7 @@ Here is a basic service manifest that uses the Local external traffic policy:
 
 ```yaml
 # service-local-traffic.yaml
+
 # A LoadBalancer service that preserves client source IPs
 apiVersion: v1
 kind: Service

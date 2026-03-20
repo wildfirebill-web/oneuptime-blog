@@ -117,6 +117,7 @@ CMD ["python", "server.py"]
 
 ```yaml
 # docker-compose.yml
+
 services:
   ws-server:
     build: .
@@ -136,4 +137,4 @@ Binding to `0.0.0.0` exposes the server on all interfaces. In production:
 
 ## Conclusion
 
-Use `host="0.0.0.0"` (Python/Node.js) or `net.Listen("tcp4", "0.0.0.0:port")` (Go) for container and multi-host deployments where traffic arrives on the virtual NIC. Externalise the bind address via environment variables to allow restriction to `127.0.0.1` behind a reverse proxy without code changes. Never expose raw WebSocket servers directly to the internet — place an Nginx proxy in front for TLS termination and rate limiting.
+Use `host="0.0.0.0"` (Python/Node.js) or `net.Listen("tcp4", "0.0.0.0:port")` (Go) for container and multi-host deployments where traffic arrives on the virtual NIC. Externalise the bind address via environment variables to allow restriction to `127.0.0.1` behind a reverse proxy without code changes. Never expose raw WebSocket servers directly to the internet - place an Nginx proxy in front for TLS termination and rate limiting.

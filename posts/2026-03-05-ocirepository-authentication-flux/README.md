@@ -45,6 +45,7 @@ Create the secret using `kubectl`.
 
 ```bash
 # Create a Docker registry secret with your credentials
+
 kubectl create secret docker-registry oci-registry-creds \
   --namespace=flux-system \
   --docker-server=ghcr.io \

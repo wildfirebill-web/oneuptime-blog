@@ -42,6 +42,7 @@ The Spark UI shows task duration distribution. Look for tasks that take signific
 
 ```python
 # Check partition sizes programmatically
+
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import spark_partition_id, count
 

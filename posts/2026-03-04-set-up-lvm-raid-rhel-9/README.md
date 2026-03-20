@@ -141,6 +141,7 @@ When a disk fails in a RAID volume:
 
 ```bash
 # Check current state
+
 sudo lvs -a -o name,devices,lv_health_status vg_raid
 
 # Add a replacement disk

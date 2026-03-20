@@ -27,6 +27,7 @@ Docker configs require Swarm mode. If your Docker host is not part of a swarm, i
 
 ```bash
 # Initialize a single-node swarm (for development/testing)
+
 docker swarm init
 
 # Check swarm status

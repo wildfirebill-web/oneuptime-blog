@@ -43,6 +43,7 @@ For each layer, document:
 
 ```yaml
 # rpo-assessment.yaml - Document and track in Git
+
 state_layers:
   git_configuration:
     description: "Flux manifests, Kustomizations, HelmReleases, etc."

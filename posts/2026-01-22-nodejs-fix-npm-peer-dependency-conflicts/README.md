@@ -60,6 +60,7 @@ Unlike regular dependencies, peer dependencies:
 
 ```bash
 # Install ignoring peer dependency checks
+
 npm install --legacy-peer-deps
 
 # Make it default (not recommended long-term)

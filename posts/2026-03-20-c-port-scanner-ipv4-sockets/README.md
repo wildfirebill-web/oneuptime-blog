@@ -92,7 +92,7 @@ void *thread_scan(void *arg) {
     return NULL;
 }
 
-/* Launch one thread per port — limit to batches of 100 */
+/* Launch one thread per port - limit to batches of 100 */
 void threaded_scan(const char *ip, int start, int end) {
     pthread_t threads[100];
     int batch = 0;

@@ -234,6 +234,7 @@ Once your custom dimensions are in place, use them in PromQL:
 
 ```promql
 # Request rate by API version
+
 sum(rate(istio_requests_total{destination_service_name="my-api"}[5m])) by (api_version)
 
 # Error rate by customer tier

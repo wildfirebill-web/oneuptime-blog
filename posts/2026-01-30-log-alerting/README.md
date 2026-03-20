@@ -98,6 +98,7 @@ Here is an example configuration for a pattern-based alert rule.
 
 ```yaml
 # Alert rule: Detect database connection failures
+
 name: database-connection-failure
 description: Triggers when database connection errors occur
 enabled: true

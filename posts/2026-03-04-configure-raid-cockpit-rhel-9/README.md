@@ -26,6 +26,7 @@ Cockpit is installed by default on RHEL. Just enable and start it:
 
 ```bash
 # Enable and start the Cockpit socket
+
 sudo systemctl enable --now cockpit.socket
 
 # Open the firewall for Cockpit

@@ -26,6 +26,7 @@ Start with a fresh Go module or add to an existing one.
 
 ```bash
 # Initialize a new Go module
+
 mkdir myapp && cd myapp
 go mod init example.com/myapp
 ```

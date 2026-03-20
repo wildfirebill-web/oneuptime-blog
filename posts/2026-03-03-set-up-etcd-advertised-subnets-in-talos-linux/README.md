@@ -35,6 +35,7 @@ Before making changes, check which address etcd is currently advertising:
 
 ```bash
 # Check etcd member list to see current advertised addresses
+
 talosctl etcd members --nodes 10.0.1.10
 ```
 

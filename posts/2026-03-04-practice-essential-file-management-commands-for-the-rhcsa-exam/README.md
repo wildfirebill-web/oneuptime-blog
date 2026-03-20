@@ -14,6 +14,7 @@ File management is a fundamental skill tested on the RHCSA exam. This guide cove
 
 ```bash
 # Create a directory structure
+
 mkdir -p /home/student/project/{src,docs,bin}
 
 # Create empty files

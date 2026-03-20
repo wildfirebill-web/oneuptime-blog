@@ -14,6 +14,7 @@ The "image not found" error appears when Docker cannot locate an image either lo
 
 ```bash
 # Common error messages
+
 Unable to find image 'myapp:latest' locally
 docker: Error response from daemon: pull access denied for myapp, repository does not exist or may require 'docker login'
 

@@ -20,6 +20,7 @@ Download the official Apache Kafka image.
 
 ```bash
 # Pull the official Apache Kafka image
+
 podman pull docker.io/apache/kafka:3.7.0
 
 # Verify the image

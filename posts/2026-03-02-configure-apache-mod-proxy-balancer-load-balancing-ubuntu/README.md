@@ -16,6 +16,7 @@ You need Apache 2.4 installed and running, plus at least two backend application
 
 ```bash
 # Install Apache if not already installed
+
 sudo apt-get update
 sudo apt-get install -y apache2
 

@@ -86,6 +86,7 @@ Verify mTLS is enforced everywhere:
 
 ```bash
 # Check for any services still accepting plaintext
+
 istioctl analyze --all-namespaces 2>&1 | grep -i "mtls\|plaintext"
 ```
 

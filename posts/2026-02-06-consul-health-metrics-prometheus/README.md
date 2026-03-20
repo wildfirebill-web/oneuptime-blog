@@ -66,6 +66,7 @@ These indicate the health of the Consul server cluster:
 
 ```yaml
 # Key Raft metrics to watch:
+
 # consul_raft_leader_lastContact - Time since the leader last contacted followers
 # consul_raft_state_candidate - Number of Raft state transitions to candidate
 # consul_raft_state_leader - Number of Raft state transitions to leader

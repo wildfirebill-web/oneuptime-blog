@@ -18,6 +18,7 @@ However, Ansible's own `ssh_args` can interfere. If you set `ssh_args` in `ansib
 
 ```ini
 # ansible.cfg
+
 [ssh_connection]
 ssh_args = -F ~/.ssh/config
 ```

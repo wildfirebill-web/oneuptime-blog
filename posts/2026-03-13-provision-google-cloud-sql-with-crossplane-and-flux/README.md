@@ -27,6 +27,7 @@ Private IP for Cloud SQL requires a private service connection to the Google-man
 
 ```yaml
 # infrastructure/databases/gcp/private-service-access.yaml
+
 apiVersion: servicenetworking.gcp.upbound.io/v1beta1
 kind: Connection
 metadata:

@@ -6,12 +6,13 @@ Tags: Calico, Kubernetes, IPv4, IPAM, IP Pools, Networking
 
 Description: Create, modify, and manage Calico IPv4 IP pools to control pod address allocation, encapsulation, and node pool assignment in a Kubernetes cluster.
 
-Calico manages pod IPv4 addresses through IP Pools — custom resources that define CIDR blocks, encapsulation modes, and node selectors. You can have multiple pools to segment pods by namespace or node group.
+Calico manages pod IPv4 addresses through IP Pools - custom resources that define CIDR blocks, encapsulation modes, and node selectors. You can have multiple pools to segment pods by namespace or node group.
 
 ## Viewing Existing IP Pools
 
 ```bash
 # Using kubectl
+
 kubectl get ippools -o yaml
 
 # Using calicoctl (provides more detail)

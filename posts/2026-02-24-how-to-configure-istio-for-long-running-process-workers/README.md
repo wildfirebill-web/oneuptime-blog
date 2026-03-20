@@ -325,6 +325,7 @@ Track long-running worker behavior:
 
 ```bash
 # Check active connections from workers
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(istio_tcp_connections_opened_total{source_workload_namespace="long-workers"} - istio_tcp_connections_closed_total{source_workload_namespace="long-workers"}) by (source_workload)'
 

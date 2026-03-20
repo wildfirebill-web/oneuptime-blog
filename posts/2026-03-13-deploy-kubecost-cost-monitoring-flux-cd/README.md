@@ -30,6 +30,7 @@ First, define the Helm repository source that Flux CD will use to pull the Kubec
 
 ```yaml
 # infrastructure/kubecost/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

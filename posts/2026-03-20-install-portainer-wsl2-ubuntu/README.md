@@ -95,7 +95,7 @@ docker run -d \
 
 From your Windows browser, navigate to:
 
-```
+```text
 https://localhost:9443
 ```
 
@@ -117,6 +117,7 @@ netstat -ano | findstr :9443
 **WSL2 networking issues:**
 ```bash
 # Get WSL2 IP
+
 ip addr show eth0
 ```
 Access via the WSL2 IP if localhost forwarding is not working.

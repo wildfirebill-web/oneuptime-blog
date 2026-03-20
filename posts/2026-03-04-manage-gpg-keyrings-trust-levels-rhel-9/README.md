@@ -29,6 +29,7 @@ On RHEL, GPG stores keyring data in `~/.gnupg/`:
 
 ```bash
 # View the keyring directory
+
 ls -la ~/.gnupg/
 
 # Key files:

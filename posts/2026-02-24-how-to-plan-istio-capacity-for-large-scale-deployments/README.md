@@ -25,6 +25,7 @@ Here are rough sizing guidelines based on mesh size:
 
 ```yaml
 # Small mesh: <100 sidecars, <50 services
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

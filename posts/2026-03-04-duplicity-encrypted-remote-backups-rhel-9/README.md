@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # Install Duplicity and dependencies
+
 sudo dnf install duplicity python3-boto3 gnupg2
 
 # Verify installation

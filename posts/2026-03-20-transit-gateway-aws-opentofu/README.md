@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # tgw.tf
+
 resource "aws_ec2_transit_gateway" "main" {
   description = "${var.prefix} Transit Gateway"
 
@@ -168,7 +169,7 @@ resource "aws_ec2_transit_gateway_route" "development_to_shared" {
 ## VPC Route Table Updates
 
 ```hcl
-# vpc_routes.tf — add TGW routes to VPC route tables
+# vpc_routes.tf - add TGW routes to VPC route tables
 
 # Route all 10.x.x.x traffic (other VPCs) through TGW
 resource "aws_route" "production_to_tgw" {
@@ -182,8 +183,8 @@ resource "aws_route" "production_to_tgw" {
 
 ## Best Practices
 
-- Disable default route table association and propagation (`default_route_table_association = "disable"`) — explicit route table management gives you control over which VPCs can communicate with each other.
-- Create dedicated `/28` subnets in each VPC for TGW attachments — don't share them with workload subnets. The TGW requires 1 IP per attachment per AZ.
-- Use separate route tables for production and development environments — this prevents development workloads from accidentally routing to production resources.
-- Share Transit Gateways via Resource Access Manager within your AWS Organization rather than creating per-account TGWs — a single TGW can serve all accounts in an organization.
-- Plan your CIDR blocks carefully before creating TGW attachments — overlapping CIDR blocks between VPCs cannot be routed through Transit Gateway without network address translation.
+- Disable default route table association and propagation (`default_route_table_association = "disable"`) - explicit route table management gives you control over which VPCs can communicate with each other.
+- Create dedicated `/28` subnets in each VPC for TGW attachments - don't share them with workload subnets. The TGW requires 1 IP per attachment per AZ.
+- Use separate route tables for production and development environments - this prevents development workloads from accidentally routing to production resources.
+- Share Transit Gateways via Resource Access Manager within your AWS Organization rather than creating per-account TGWs - a single TGW can serve all accounts in an organization.
+- Plan your CIDR blocks carefully before creating TGW attachments - overlapping CIDR blocks between VPCs cannot be routed through Transit Gateway without network address translation.

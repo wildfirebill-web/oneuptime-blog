@@ -28,6 +28,7 @@ The Spanner Migration Tool is available as a standalone binary:
 
 ```bash
 # Download the latest release of the Spanner Migration Tool
+
 git clone https://github.com/GoogleCloudPlatform/spanner-migration-tool.git
 cd spanner-migration-tool
 

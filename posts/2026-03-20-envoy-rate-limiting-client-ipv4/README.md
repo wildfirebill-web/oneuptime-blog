@@ -112,6 +112,7 @@ routes:
 
 ```yaml
 # Add rate limit headers to responses
+
 response_headers_to_add:
   - header:
       key: "X-RateLimit-Limit"

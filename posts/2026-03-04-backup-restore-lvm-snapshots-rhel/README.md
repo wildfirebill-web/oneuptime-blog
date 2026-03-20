@@ -16,6 +16,7 @@ Verify your LVM setup has free space in the volume group:
 
 ```bash
 # Check available space in the volume group
+
 sudo vgs
 
 # List existing logical volumes

@@ -16,6 +16,7 @@ Calico is a high-performance CNI plugin that supports both VXLAN overlay and nat
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 token: my-cluster-token
 tls-san:
   - "rke2.example.com"

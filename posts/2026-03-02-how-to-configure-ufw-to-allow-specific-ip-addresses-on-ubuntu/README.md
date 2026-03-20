@@ -16,6 +16,7 @@ The syntax for allowing a specific IP follows this pattern:
 
 ```bash
 # Allow all traffic from a specific IP
+
 sudo ufw allow from 192.168.1.50
 
 # Allow traffic from an IP to a specific port

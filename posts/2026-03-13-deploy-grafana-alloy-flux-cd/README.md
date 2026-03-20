@@ -30,6 +30,7 @@ First, define the namespace and point Flux at the Grafana Helm chart registry.
 
 ```yaml
 # clusters/my-cluster/grafana-alloy/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

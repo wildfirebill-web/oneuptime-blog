@@ -30,6 +30,7 @@ Different ACME providers have different processes for obtaining EAB credentials:
 
 ```bash
 # Register for ZeroSSL account at zerossl.com
+
 # Navigate to Developer section
 # Generate EAB credentials
 # You'll receive:

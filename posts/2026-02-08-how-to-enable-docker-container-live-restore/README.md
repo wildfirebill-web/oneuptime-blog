@@ -40,6 +40,7 @@ Edit or create the daemon configuration:
 
 ```bash
 # Open the Docker daemon config file
+
 sudo nano /etc/docker/daemon.json
 ```
 

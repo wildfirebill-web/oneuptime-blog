@@ -16,6 +16,7 @@ When `tofu plan` or `tofu apply` runs, it acquires a lock on the state to preven
 tofu apply
 
 # Error message indicating a lock:
+
 # Error: Error acquiring the state lock
 #
 # Error message: ConditionalCheckFailedException
@@ -88,23 +89,23 @@ aws dynamodb get-item \
 ## Backend-Specific Lock Locations
 
 **DynamoDB (S3 backend):**
-```
+```text
 Table: terraform-lock
 Key: LockID = "bucket/prefix/terraform.tfstate"
 ```
 
 **Azure Blob Storage:**
-```
+```text
 Blob lease on the state file container
 ```
 
 **S3 native locking:**
-```
+```text
 Object: bucket/prefix/terraform.tfstate.tflock
 ```
 
 **PostgreSQL:**
-```
+```text
 Advisory lock on the database connection
 ```
 
@@ -127,4 +128,4 @@ tofu apply
 
 ## Conclusion
 
-`tofu force-unlock` is a recovery tool for stale locks left by interrupted operations. Always verify that no legitimate process holds the lock before using it — forcing an unlock while another process is running can cause state corruption. The lock ID is provided in the error message when a lock is detected. After unlocking, re-run the original operation normally.
+`tofu force-unlock` is a recovery tool for stale locks left by interrupted operations. Always verify that no legitimate process holds the lock before using it - forcing an unlock while another process is running can cause state corruption. The lock ID is provided in the error message when a lock is detected. After unlocking, re-run the original operation normally.

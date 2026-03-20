@@ -18,6 +18,7 @@ Podman allows you to specify a MAC address for a container's network interface. 
 
 ```bash
 # Assign a specific MAC address to a container
+
 podman run -d --name licensed-app \
   --mac-address 02:42:ac:11:00:02 \
   docker.io/library/alpine:latest tail -f /dev/null

@@ -25,6 +25,7 @@ Important note: when SES is in sandbox mode, you need to verify both the sender 
 
 ```bash
 # Verify an email address
+
 aws ses verify-email-identity \
   --email-address "sender@example.com" \
   --region us-east-1

@@ -210,6 +210,7 @@ Apply changes to all control plane nodes:
 
 ```bash
 # Apply to control plane nodes
+
 talosctl apply-config --nodes 10.0.0.2 --file controlplane.yaml
 
 # Verify the controller manager is running

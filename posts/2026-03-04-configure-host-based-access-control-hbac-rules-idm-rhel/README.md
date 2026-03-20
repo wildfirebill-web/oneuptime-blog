@@ -14,6 +14,7 @@ HBAC (Host-Based Access Control) rules in IdM let you define which users or grou
 
 ```bash
 # Authenticate as admin
+
 kinit admin
 
 # Disable the default rule that allows everyone everywhere

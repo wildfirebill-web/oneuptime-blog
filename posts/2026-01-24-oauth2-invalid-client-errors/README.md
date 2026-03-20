@@ -63,6 +63,7 @@ The most common cause is using wrong or mistyped credentials.
 
 ```python
 # Typical error response
+
 {
     "error": "invalid_client",
     "error_description": "Client authentication failed"

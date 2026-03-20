@@ -16,6 +16,7 @@ AIDE provides an `--update` option that simultaneously runs a check against the 
 
 ```bash
 # Run an update, which checks and builds a new database at the same time
+
 sudo aide --update
 ```
 

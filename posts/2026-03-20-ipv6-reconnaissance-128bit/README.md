@@ -8,20 +8,21 @@ Description: Learn why the 128-bit IPv6 address space makes traditional network 
 
 ## Overview
 
-IPv6's 128-bit address space makes brute-force network scanning essentially impossible. A typical /64 subnet contains 18.4 quintillion addresses — scanning each at 1 million packets per second would take 580,000 years. Yet IPv6 networks are not immune to reconnaissance; attackers use smarter techniques than brute-force scanning.
+IPv6's 128-bit address space makes brute-force network scanning essentially impossible. A typical /64 subnet contains 18.4 quintillion addresses - scanning each at 1 million packets per second would take 580,000 years. Yet IPv6 networks are not immune to reconnaissance; attackers use smarter techniques than brute-force scanning.
 
 ## Why Traditional Scanning Fails
 
-```
+```text
 IPv4 /24 subnet:   256 addresses     → scan in ~1 second
 IPv6 /64 subnet:   18,446,744,073,709,551,616 addresses → scan in ~580,000 years at 1M pps
 ```
 
 ```bash
-# nmap scan of an IPv4 /24 — fast and practical
+# nmap scan of an IPv4 /24 - fast and practical
+
 nmap -sn 192.168.1.0/24
 
-# nmap scan of an IPv6 /64 — essentially infeasible
+# nmap scan of an IPv6 /64 - essentially infeasible
 nmap -6 -sn 2001:db8:1::/64   # Would take geological time
 ```
 
@@ -45,7 +46,7 @@ dig axfr example.com @ns1.example.com | grep AAAA
 ICMPv6 multicast groups reveal hosts without scanning:
 
 ```bash
-# Ping all-nodes multicast — discovers all hosts on the link
+# Ping all-nodes multicast - discovers all hosts on the link
 ping6 ff02::1%eth0
 
 # Ping all-routers multicast
@@ -60,11 +61,11 @@ rdisc6 eth0
 The NDP cache (equivalent to ARP cache) reveals all recently-active hosts on the local link:
 
 ```bash
-# View NDP cache on Linux — shows link-local addresses of neighbors
+# View NDP cache on Linux - shows link-local addresses of neighbors
 ip -6 neigh show
 
 # Trigger NDP for a range of EUI-64 addresses
-# EUI-64 uses MAC-based addressing — only 2^24 OUI combinations per vendor
+# EUI-64 uses MAC-based addressing - only 2^24 OUI combinations per vendor
 ```
 
 ### 4. Predictable Address Patterns
@@ -102,7 +103,7 @@ tcpdump -i eth0 'icmp6 and ip6[40] == 135'
 
 In SLAAC (Stateless Address Autoconfiguration) deployments without privacy extensions:
 
-```
+```text
 Interface ID = Modified EUI-64 from MAC
 If you know the NIC vendor (OUI), the address space shrinks dramatically
 24-bit OUI + 24-bit device part = only ~16 million combinations per vendor
@@ -116,7 +117,7 @@ RFC 4941 (Privacy Extensions) randomizes the interface ID, but server addresses 
 # Server addresses are often manually configured and predictable
 # End-user devices use privacy addresses (harder to track)
 ip -6 addr show
-# Look for "temporary" keyword — this is the privacy extension address
+# Look for "temporary" keyword - this is the privacy extension address
 ```
 
 ## Defensive Measures
@@ -151,7 +152,7 @@ interface GigabitEthernet0/1
 
 ### Avoid Predictable Addressing
 
-```
+```text
 Use random or opaque addresses (RFC 7217) instead of EUI-64
 Use /128 loopbacks to prevent block inference
 Avoid sequential addressing (::1, ::2, ::3...)

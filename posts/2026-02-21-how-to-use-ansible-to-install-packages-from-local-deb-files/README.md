@@ -16,6 +16,7 @@ The `apt` module has a `deb` parameter that accepts a path to a local `.deb` fil
 
 ```yaml
 # Install a .deb file that is already on the remote host
+
 - name: Install custom application
   ansible.builtin.apt:
     deb: /tmp/myapp_2.5.0_amd64.deb

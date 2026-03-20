@@ -20,6 +20,7 @@ AWS API Gateway is a fully managed service that enables you to create, publish, 
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {

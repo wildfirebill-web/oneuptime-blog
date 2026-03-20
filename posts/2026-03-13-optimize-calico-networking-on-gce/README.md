@@ -24,6 +24,7 @@ Key GCE-specific optimizations include using Tier 1 networking for premium bandw
 
 ```yaml
 # Zero-overhead pod networking on GCE
+
 apiVersion: projectcalico.org/v3
 kind: IPPool
 metadata:

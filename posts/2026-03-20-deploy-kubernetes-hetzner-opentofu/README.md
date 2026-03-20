@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Kubernetes, k3s, Infrastructure as Code
+Tags: OpenTofu, Hetzner Cloud, Kubernetes, K3s, Infrastructure as Code
 
 Description: Learn how to deploy a Kubernetes cluster on Hetzner Cloud with OpenTofu using k3s for a lightweight, cost-effective managed-like experience.
 
-Hetzner Cloud does not offer a native managed Kubernetes service, but you can deploy a production-grade cluster using k3s — a lightweight Kubernetes distribution — with OpenTofu managing the underlying server infrastructure. This guide uses the `hcloud` provider plus Hetzner's Cloud Controller Manager (CCM) and CSI driver.
+Hetzner Cloud does not offer a native managed Kubernetes service, but you can deploy a production-grade cluster using k3s - a lightweight Kubernetes distribution - with OpenTofu managing the underlying server infrastructure. This guide uses the `hcloud` provider plus Hetzner's Cloud Controller Manager (CCM) and CSI driver.
 
 ## Architecture Overview
 

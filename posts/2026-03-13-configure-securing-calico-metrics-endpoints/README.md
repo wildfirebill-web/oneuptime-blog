@@ -24,6 +24,7 @@ This guide covers configure Calico Metrics in Calico with practical configuratio
 
 ```yaml
 # Restrict access to Calico Felix metrics (port 9091)
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

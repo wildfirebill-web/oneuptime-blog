@@ -529,6 +529,7 @@ find_package(gRPC REQUIRED)
 find_package(opentelemetry-cpp REQUIRED)
 
 # Generate gRPC code
+
 add_library(user_service_proto user_service.proto)
 target_link_libraries(user_service_proto
     PUBLIC

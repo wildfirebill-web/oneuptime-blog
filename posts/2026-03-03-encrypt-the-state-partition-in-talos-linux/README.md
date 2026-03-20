@@ -91,6 +91,7 @@ When creating a new cluster, include STATE encryption from the start:
 
 ```bash
 # Generate cluster configuration
+
 talosctl gen config my-cluster https://192.168.1.100:6443
 
 # Edit the generated configs to add encryption

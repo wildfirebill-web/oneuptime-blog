@@ -42,6 +42,7 @@ By default, binary operations match on all common labels:
 
 ```promql
 # Divides metrics that have identical label sets
+
 metric_a / metric_b
 
 # Example: CPU usage percentage

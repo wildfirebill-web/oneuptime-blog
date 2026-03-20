@@ -18,6 +18,7 @@ First, create a Cloud Data Fusion instance:
 
 ```bash
 # Enable the Cloud Data Fusion API
+
 gcloud services enable datafusion.googleapis.com --project=my-project
 
 # Create a basic instance (takes about 15-20 minutes)

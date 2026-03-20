@@ -52,6 +52,7 @@ Detection is the first step in any incident response. Here are the warning signs
 
 ```bash
 # Check DNSSEC validation status
+
 dig +dnssec +multi example.com SOA
 
 # Look for the AD (Authenticated Data) flag

@@ -102,6 +102,7 @@ Every configuration option can be set via environment variables using the format
 
 ```bash
 # Example: Set the admin password
+
 # Config: [security] admin_password = secret
 # Env var: GF_SECURITY_ADMIN_PASSWORD=secret
 

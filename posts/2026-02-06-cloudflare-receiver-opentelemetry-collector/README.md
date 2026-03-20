@@ -65,6 +65,7 @@ The Cloudflare receiver configuration requires defining an HTTP endpoint and aut
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # Cloudflare receiver listens for HTTP logs from Cloudflare Logpush
   cloudflare:

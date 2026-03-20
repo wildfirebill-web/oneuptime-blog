@@ -1,4 +1,4 @@
-# How to Use DuckDNS with Portainer for Dynamic DNS
+# How to Use DuckDNS with Portainer for Dynamic DNS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ DuckDNS provides free dynamic DNS subdomains (like `myserver.duckdns.org`). It's
 
 ```yaml
 # duckdns-stack.yml - Deploy as Portainer stack
+
 version: '3.8'
 
 services:
@@ -170,7 +171,7 @@ docker run -d \
 
 For external access, forward ports on your router:
 
-```
+```text
 Router > Port Forwarding:
 - Port 80 (HTTP) → Server-IP:80
 - Port 443 (HTTPS) → Server-IP:443

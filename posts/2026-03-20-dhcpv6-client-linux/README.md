@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, Linux, Networking, systemd-networkd, dhclient, wide-dhcpv6
+Tags: DHCPv6, IPv6, Linux, Networking, systemd-networkd, dhclient, Wide-dhcpv6
 
 Description: Learn how to configure a DHCPv6 client on Linux using dhclient, wide-dhcpv6, and systemd-networkd to obtain IPv6 addresses and configuration from a DHCPv6 server.
 
@@ -28,6 +28,7 @@ The `dhclient` tool is one of the most common DHCPv6 clients on Linux.
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install isc-dhcp-client
 
 # RHEL/CentOS/Fedora
@@ -203,4 +204,4 @@ Linux offers multiple DHCPv6 client options including dhclient, wide-dhcpv6, and
 
 ---
 
-*Monitor your IPv6 network connectivity with [OneUptime](https://oneuptime.com) — comprehensive uptime monitoring with full IPv6 support.*
+*Monitor your IPv6 network connectivity with [OneUptime](https://oneuptime.com) - comprehensive uptime monitoring with full IPv6 support.*

@@ -16,6 +16,7 @@ Debugging IPv6 in virtualized environments requires understanding both the guest
 # Start with these checks on both host and guest:
 
 # 1. Is IPv6 enabled on the interface?
+
 ip -6 addr show
 # Should have at least a link-local (fe80::) address
 

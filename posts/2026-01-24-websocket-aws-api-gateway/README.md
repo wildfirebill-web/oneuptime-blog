@@ -69,6 +69,7 @@ Start by creating the WebSocket API using AWS CLI or CloudFormation. Here is the
 
 ```yaml
 # websocket-api.yaml
+
 # CloudFormation template for WebSocket API
 
 AWSTemplateFormatVersion: '2010-09-09'

@@ -1,4 +1,4 @@
-# How to Manage Portainer Users and Teams with Terraform
+# How to Manage Portainer Users and Teams with Terraform - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Managing users and teams in Portainer through Terraform gives you version-contro
 # users.tf
 
 # Standard developer user
+
 resource "portainer_user" "alice" {
   username = "alice.smith"
   password = var.initial_passwords["alice"]
@@ -114,7 +115,7 @@ resource "portainer_team_membership" "charlie_devops" {
 ## Step 4: Using Variables for User Lists
 
 ```hcl
-# variables.tf — Define user configuration as data
+# variables.tf - Define user configuration as data
 
 variable "users" {
   description = "Map of user configurations"
@@ -141,7 +142,7 @@ variable "users" {
 ## Step 5: Dynamic Resource Creation with for_each
 
 ```hcl
-# dynamic_users.tf — Create users from a map
+# dynamic_users.tf - Create users from a map
 
 variable "team_members" {
   description = "Map of team member configurations"

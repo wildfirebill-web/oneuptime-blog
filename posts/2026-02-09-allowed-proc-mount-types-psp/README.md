@@ -251,6 +251,7 @@ PSP is deprecated. Migrate to Pod Security Admission:
 
 ```yaml
 # Old PSP approach
+
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:

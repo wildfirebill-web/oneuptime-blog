@@ -42,6 +42,7 @@ Enable the required APIs with a single command.
 
 ```bash
 # Enable all required APIs for Cloud Functions Gen 2 with Eventarc
+
 gcloud services enable \
   cloudfunctions.googleapis.com \
   eventarc.googleapis.com \

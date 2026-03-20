@@ -76,6 +76,7 @@ if (isTokenExpired(token)) {
 
 ```python
 # Python version
+
 import jwt
 import time
 from datetime import datetime

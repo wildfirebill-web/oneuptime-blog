@@ -18,6 +18,7 @@ Consider a security group with multiple ingress rules. The static approach repea
 
 ```hcl
 # Repetitive - each rule is a separate block
+
 resource "aws_security_group" "app" {
   name   = "app-sg"
   vpc_id = var.vpc_id

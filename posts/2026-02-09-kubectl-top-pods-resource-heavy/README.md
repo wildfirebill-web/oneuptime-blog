@@ -16,6 +16,7 @@ kubectl top requires the Metrics Server to be installed in your cluster:
 
 ```bash
 # Check if Metrics Server is running
+
 kubectl get deployment metrics-server -n kube-system
 
 # If not installed, deploy it

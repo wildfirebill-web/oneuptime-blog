@@ -19,6 +19,7 @@ A connection timeout happens when your client cannot establish or maintain a con
 
 ```python
 # Example error in Python
+
 redis.exceptions.ConnectionError: Error 110 connecting to redis:6379. Connection timed out.
 ```
 

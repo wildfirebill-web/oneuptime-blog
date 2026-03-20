@@ -40,7 +40,7 @@ Register at `https://lacnic.net/registro/` with:
 
 Log into the LACNIC member portal and navigate to the IPv6 request form:
 
-```
+```text
 Required information:
 - Organization type (ISP, end-user, NIR)
 - Requested prefix size (/32 for ISPs, /48 for end-users)
@@ -59,8 +59,9 @@ LACNIC's policy for initial ISP allocations:
 
 After receiving your /32, create customer delegation objects in the LACNIC Whois database:
 
-```
+```text
 # Customer /48 assignment object
+
 inet6num: 2001:db8:100::/48
 owner:    CUSTOMER-A LTDA
 country:  BR

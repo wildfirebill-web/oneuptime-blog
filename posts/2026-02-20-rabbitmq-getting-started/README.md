@@ -73,6 +73,7 @@ The fastest way to start is with Docker:
 
 ```bash
 # Run RabbitMQ with the management UI enabled
+
 docker run -d \
   --name rabbitmq \
   -p 5672:5672 \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Unifi, Network Management, Home Lab, Self-Hosting
+Tags: Talos Linux, Kubernetes, UniFi, Network Management, Home Lab, Self-Hosting
 
 Description: Deploy the Ubiquiti Unifi Network Controller on a Talos Linux Kubernetes cluster to manage your Unifi network devices from your home lab.
 
@@ -32,6 +32,7 @@ The Unifi Controller stores device configurations, statistics, and backup files 
 
 ```yaml
 # unifi-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -394,7 +395,7 @@ spec:
           restartPolicy: OnFailure
 ```
 
-## Resource Monitoring
+Resource Monitoring
 
 The Unifi Controller with MongoDB can be memory-hungry. Monitor resource usage:
 

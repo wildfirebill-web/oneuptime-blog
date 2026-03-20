@@ -35,6 +35,7 @@ Start by installing the core OpenTelemetry packages for the browser. You need th
 
 ```bash
 # Install core OpenTelemetry browser packages
+
 npm install @opentelemetry/api \
   @opentelemetry/sdk-trace-web \
   @opentelemetry/sdk-trace-base \

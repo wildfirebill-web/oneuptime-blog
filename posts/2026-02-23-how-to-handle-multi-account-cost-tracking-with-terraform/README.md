@@ -16,6 +16,7 @@ Set up consolidated billing and cost tracking across an AWS Organization:
 
 ```hcl
 # Organization-level budget
+
 resource "aws_budgets_budget" "organization" {
   name         = "organization-total-budget"
   budget_type  = "COST"

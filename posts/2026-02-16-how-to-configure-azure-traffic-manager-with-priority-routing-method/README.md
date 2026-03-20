@@ -50,6 +50,7 @@ Traffic Manager always returns the healthy endpoint with the lowest priority num
 
 ```bash
 # Create a resource group
+
 az group create --name rg-tm-demo --location eastus
 
 # Create a Traffic Manager profile with priority routing

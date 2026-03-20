@@ -8,7 +8,7 @@ Description: Diagnose and fix asymmetric routing problems where forward and retu
 
 ## Introduction
 
-Asymmetric routing occurs when the forward path (client to server) and the return path (server to client) traverse different network devices. While the network layer tolerates this, stateful firewalls and connection-tracking systems expect to see both directions of a flow — and will drop packets when they see only one side.
+Asymmetric routing occurs when the forward path (client to server) and the return path (server to client) traverse different network devices. While the network layer tolerates this, stateful firewalls and connection-tracking systems expect to see both directions of a flow - and will drop packets when they see only one side.
 
 ## Detecting Asymmetric Routing
 
@@ -16,6 +16,7 @@ Use traceroute in both directions to compare paths:
 
 ```bash
 # From host A (192.168.1.10), trace to host B (10.20.0.10)
+
 traceroute 10.20.0.10
 
 # From host B, trace back to host A
@@ -36,10 +37,10 @@ ip route get 192.168.1.10
 
 ## Common Causes
 
-1. **ECMP without flow tracking** — different paths selected for forward and return
-2. **Dual-ISP with asymmetric BGP** — inbound and outbound traffic use different ISP links
-3. **Policy routing** — source-based routing sends return traffic via a different interface
-4. **Misconfigured static routes** — return route points to a different next-hop
+1. **ECMP without flow tracking** - different paths selected for forward and return
+2. **Dual-ISP with asymmetric BGP** - inbound and outbound traffic use different ISP links
+3. **Policy routing** - source-based routing sends return traffic via a different interface
+4. **Misconfigured static routes** - return route points to a different next-hop
 
 ## Fixing Asymmetric Routing with Policy Routing
 

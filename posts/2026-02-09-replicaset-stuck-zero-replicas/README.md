@@ -24,6 +24,7 @@ Check Deployment status to confirm zero available replicas.
 
 ```bash
 # List deployments
+
 kubectl get deployments -A
 
 # Output showing problem:

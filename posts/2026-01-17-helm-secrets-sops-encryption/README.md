@@ -33,6 +33,7 @@ SOPS (Secrets OPerationS) is Mozilla's tool for encrypting files with various ke
 
 ```bash
 # macOS
+
 brew install sops
 
 # Linux

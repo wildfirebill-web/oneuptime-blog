@@ -22,6 +22,7 @@ Configure NGINX to handle CORS at the gateway level, eliminating the need for CO
 
 ```nginx
 # nginx-cors.conf
+
 server {
     listen 80;
     server_name api.example.com;

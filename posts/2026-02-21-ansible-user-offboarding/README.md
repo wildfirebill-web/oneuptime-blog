@@ -14,6 +14,7 @@ When someone leaves your organization, their access needs to be revoked immediat
 
 ```yaml
 # roles/offboarding/defaults/main.yml - User offboarding settings
+
 offboarding_archive_home: true
 offboarding_archive_dir: /opt/offboarded-users
 offboarding_kill_sessions: true

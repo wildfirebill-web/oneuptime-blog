@@ -44,6 +44,7 @@ graph TB
 
 ```promql
 # Total size per filesystem
+
 node_filesystem_size_bytes
 
 # Total size in GB

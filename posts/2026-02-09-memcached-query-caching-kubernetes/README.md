@@ -24,6 +24,7 @@ Create a StatefulSet for Memcached:
 
 ```yaml
 # memcached.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

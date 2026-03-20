@@ -26,6 +26,7 @@ Configure the provider and create a basic VPC:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

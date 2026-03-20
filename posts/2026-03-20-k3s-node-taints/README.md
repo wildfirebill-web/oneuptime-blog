@@ -8,7 +8,7 @@ Description: Learn how to configure node taints in K3s to repel workloads from s
 
 ## Introduction
 
-While node labels attract workloads via `nodeSelector` and `nodeAffinity`, **taints** work the opposite way — they repel pods from nodes. A node with a taint will reject all pods that don't explicitly **tolerate** that taint. This is useful for dedicating nodes to specific workloads, protecting control plane nodes, or isolating nodes with special hardware.
+While node labels attract workloads via `nodeSelector` and `nodeAffinity`, **taints** work the opposite way - they repel pods from nodes. A node with a taint will reject all pods that don't explicitly **tolerate** that taint. This is useful for dedicating nodes to specific workloads, protecting control plane nodes, or isolating nodes with special hardware.
 
 ## Understanding Taints and Tolerations
 
@@ -26,6 +26,7 @@ Add taints when registering an agent node:
 
 ```bash
 # Install K3s agent with a taint
+
 curl -sfL https://get.k3s.io | \
   K3S_URL=https://<server-ip>:6443 \
   K3S_TOKEN=<node-token> \

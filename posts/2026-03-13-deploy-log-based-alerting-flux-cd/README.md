@@ -27,6 +27,7 @@ This guide deploys Elastalert2 as a Flux HelmRelease and configures a set of com
 
 ```yaml
 # infrastructure/sources/elastalert2-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -291,6 +291,7 @@ When a Prometheus Operator health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization prometheus
 
 # Check Prometheus resource status

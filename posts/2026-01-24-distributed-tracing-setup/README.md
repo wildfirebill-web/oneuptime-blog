@@ -68,6 +68,7 @@ The collector receives, processes, and exports telemetry data.
 
 ```yaml
 # docker-compose.yaml
+
 version: '3.8'
 
 services:

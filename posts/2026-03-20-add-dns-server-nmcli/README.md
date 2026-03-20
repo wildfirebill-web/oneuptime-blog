@@ -14,6 +14,7 @@ DNS servers in NetworkManager are set per-connection using `ipv4.dns`. You can a
 
 ```bash
 # Set DNS servers (replaces any existing DNS)
+
 nmcli connection modify "Wired connection 1" \
     ipv4.dns "8.8.8.8 1.1.1.1"
 

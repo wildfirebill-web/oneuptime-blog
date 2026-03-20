@@ -38,6 +38,7 @@ The simplest PromQL query is just a metric name:
 
 ```promql
 # Return all time series for this metric
+
 container_cpu_usage_seconds_total
 ```
 

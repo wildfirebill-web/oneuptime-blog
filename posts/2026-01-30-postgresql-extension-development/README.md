@@ -45,6 +45,7 @@ Create `myext.control`:
 
 ```ini
 # Extension metadata
+
 comment = 'My custom PostgreSQL extension'
 default_version = '1.0'
 module_pathname = '$libdir/myext'
@@ -1368,6 +1369,7 @@ Package: postgresql-16-emailtype
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-16
 Description: Custom email type for PostgreSQL
+
  This extension provides a validated email address type
  with comparison operators and index support.
 ```

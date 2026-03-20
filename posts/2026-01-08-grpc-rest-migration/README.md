@@ -48,6 +48,7 @@ Start by documenting your existing REST API:
 
 ```yaml
 # existing-api-spec.yaml
+
 openapi: 3.0.0
 info:
   title: User Service API

@@ -22,6 +22,7 @@ This playbook creates a password file for a database user:
 
 ```yaml
 # playbook.yml - Generate and store a database password
+
 ---
 - name: Set up database credentials
   hosts: dbservers

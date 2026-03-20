@@ -14,6 +14,7 @@ Rocket.Chat is an open-source team messaging platform built on Node.js. Its serv
 
 ```bash
 # Rocket.Chat uses Node.js which binds to all interfaces by default
+
 # Check current binding
 ss -tlnp | grep 3000
 
@@ -105,7 +106,7 @@ ss -6 -tlnp | grep 27017
 
 ## Rocket.Chat Admin Configuration
 
-```
+```text
 After accessing Rocket.Chat over IPv6:
 
 1. Admin > General > Site URL: https://chat.example.com

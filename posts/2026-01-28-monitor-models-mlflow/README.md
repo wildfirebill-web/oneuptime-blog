@@ -144,6 +144,7 @@ class MonitoredModel:
 
 
 # Usage
+
 model = MonitoredModel(
     model_uri="models:/churn-predictor/Production",
     experiment_name="/monitoring/churn-model",

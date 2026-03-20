@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Profiling, Linux, perf, eBPF, Networking, Performance
+Tags: IPv6, Profiling, Linux, Perf, eBPF, Networking, Performance
 
 Description: Profile the Linux IPv6 network stack using perf, eBPF/bpftrace, and kernel tracepoints to identify bottlenecks in packet processing pipelines.
 
@@ -14,6 +14,7 @@ When IPv6 throughput or latency is unexpectedly poor, profiling the kernel netwo
 
 ```bash
 # Profile kernel CPU time for 10 seconds during a network load
+
 sudo perf top -a -g \
   --call-graph dwarf \
   -p $(pgrep softirq) \
@@ -82,7 +83,7 @@ ss -6 -t -n | awk 'NR>1 {print $2, $3, $5, $6}'
 
 ```python
 #!/usr/bin/env python3
-# ipv6_rx_latency.py — measure time from NIC interrupt to application recv
+# ipv6_rx_latency.py - measure time from NIC interrupt to application recv
 
 from bcc import BPF
 

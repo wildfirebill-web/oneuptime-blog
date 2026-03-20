@@ -32,6 +32,7 @@ Here is the complete `azure-pipelines.yml` for the application repository:
 
 ```yaml
 # azure-pipelines.yml
+
 trigger:
   branches:
     include:

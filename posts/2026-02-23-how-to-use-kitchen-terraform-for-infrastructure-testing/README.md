@@ -26,6 +26,7 @@ Kitchen-Terraform is a Ruby gem. Install it alongside Test Kitchen and InSpec:
 
 ```bash
 # Install using Bundler (recommended)
+
 # Create a Gemfile in your project root
 
 cat > Gemfile << 'EOF'

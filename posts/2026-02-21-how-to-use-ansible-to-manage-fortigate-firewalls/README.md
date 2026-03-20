@@ -18,6 +18,7 @@ The official Fortinet collection is available from Ansible Galaxy. Install it al
 
 ```bash
 # Install the Fortinet Ansible collection
+
 ansible-galaxy collection install fortinet.fortios
 
 # Install the Python library for FortiOS API communication

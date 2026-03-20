@@ -101,6 +101,7 @@ http {
 
 ```nginx
 # High-traffic server configuration
+
 http {
     # Client-side keep-alive
     keepalive_timeout 75s;         # Slightly longer than default

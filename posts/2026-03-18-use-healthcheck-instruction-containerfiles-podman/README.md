@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, HEALTHCHECK, Container Monitoring, DevOps
+Tags: Podman, Containerfile, HealthCheck, Container Monitoring, DevOps
 
 Description: Learn how to use the HEALTHCHECK instruction in Containerfiles for Podman to monitor container health, detect failures, and enable automatic recovery.
 
@@ -203,6 +203,7 @@ The health check script can verify multiple aspects of application health:
 set -e
 
 # Check if the HTTP endpoint responds
+
 curl -sf http://localhost:3000/health > /dev/null || exit 1
 
 # Check if the application can reach the database

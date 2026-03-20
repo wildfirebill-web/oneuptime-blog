@@ -42,6 +42,7 @@ Enable OIDC issuer and workload identity on your AKS cluster.
 
 ```bash
 # Enable OIDC issuer on an existing cluster
+
 az aks update \
   --resource-group myRG \
   --name myAKS \

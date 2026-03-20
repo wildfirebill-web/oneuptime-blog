@@ -60,6 +60,7 @@ The most common way to convert Prometheus metrics to OTLP is using the Collector
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   # Scrape Prometheus endpoints and convert to OTLP internally
   prometheus:

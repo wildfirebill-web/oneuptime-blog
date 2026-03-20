@@ -99,6 +99,7 @@ dns64 2001:db8:nat64b::/96 {
 
 ```bash
 # Check configuration syntax before reloading
+
 named-checkconf /etc/named.conf
 
 # Reload BIND without restarting

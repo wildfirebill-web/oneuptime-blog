@@ -24,6 +24,7 @@ First, install KubeArmor using Helm. The installation includes the KubeArmor dae
 
 ```bash
 # Add the KubeArmor Helm repository
+
 helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update
 

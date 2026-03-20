@@ -33,6 +33,7 @@ The default number of shuffle partitions is 200, which is often wrong. Too many 
 
 ```python
 # Check current setting
+
 print(spark.conf.get("spark.sql.shuffle.partitions"))
 # Default: 200
 

@@ -1484,7 +1484,7 @@ Testing React Native apps for accessibility is a multi-faceted process that requ
 5. **Document Everything**: Maintain checklists and compliance reports
 6. **Iterate Continuously**: Accessibility is an ongoing commitment, not a one-time task
 
-### Resources
+Resources
 
 - [React Native Accessibility Documentation](https://reactnative.dev/docs/accessibility)
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Django, Gunicorn, NGINX, Python
+Tags: Ubuntu, Django, Gunicorn, Nginx, Python
 
 Description: Deploy a production-ready Django application on Ubuntu using Gunicorn as the WSGI server and Nginx as the reverse proxy, with systemd service management.
 
@@ -21,6 +21,7 @@ Running Django's built-in development server in production is not suitable - it 
 
 ```bash
 # Install Python and pip
+
 sudo apt update
 sudo apt install -y python3 python3-pip python3-venv
 

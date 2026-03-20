@@ -126,6 +126,7 @@ To see exactly how a sidecar is configured for tracing:
 
 ```bash
 # View the bootstrap configuration
+
 istioctl proxy-config bootstrap deploy/productpage -o json | python3 -c "
 import json, sys
 config = json.load(sys.stdin)

@@ -54,6 +54,7 @@ flowchart LR
 
 ```yaml
 # azure-pipelines.yml
+
 trigger:
   branches:
     include:

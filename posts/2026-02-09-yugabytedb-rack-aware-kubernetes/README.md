@@ -22,6 +22,7 @@ Start by ensuring nodes have proper topology labels:
 
 ```bash
 # Label nodes by availability zone (cloud providers often do this automatically)
+
 kubectl label nodes node-1 node-2 node-3 \
   topology.kubernetes.io/zone=us-west-2a
 

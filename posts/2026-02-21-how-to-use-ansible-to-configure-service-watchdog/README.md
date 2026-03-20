@@ -44,6 +44,7 @@ Service unit template with watchdog configuration:
 
 ```jinja2
 # roles/watchdog_service/templates/service.j2
+
 [Unit]
 Description={{ svc_description }}
 After=network.target

@@ -29,6 +29,7 @@ When Cilium agent pods fail to start on K3s:
 
 ```bash
 # Check Cilium agent pod status
+
 kubectl get pods -n kube-system -l k8s-app=cilium -o wide
 
 # Get detailed error messages from failing pods

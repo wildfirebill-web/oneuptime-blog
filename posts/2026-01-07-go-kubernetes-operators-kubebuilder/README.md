@@ -47,6 +47,7 @@ Download and install Kubebuilder on your system:
 
 ```bash
 # Download the latest release
+
 curl -L -o kubebuilder "https://go.kubebuilder.io/dl/latest/$(go env GOOS)/$(go env GOARCH)"
 
 # Make it executable and move to PATH

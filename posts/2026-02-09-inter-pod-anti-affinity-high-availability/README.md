@@ -234,6 +234,7 @@ Prevent pods with specific characteristics from co-locating:
 
 ```yaml
 # Don't run memory-intensive pods together
+
 affinity:
   podAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:

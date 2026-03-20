@@ -38,6 +38,7 @@ Start by documenting everything on your network:
 
 ```bash
 # Scan the local subnet to find active hosts
+
 # This helps identify which IPs are already in use
 nmap -sn 192.168.1.0/24
 

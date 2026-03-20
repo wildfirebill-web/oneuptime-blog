@@ -38,6 +38,7 @@ You need the OpenTelemetry metrics SDK for the browser along with the `web-vital
 
 ```bash
 # Install OpenTelemetry metrics packages and the web-vitals library
+
 npm install @opentelemetry/api \
   @opentelemetry/sdk-metrics \
   @opentelemetry/resources \

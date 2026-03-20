@@ -40,6 +40,7 @@ The first step in setting up RBAC is inviting your team members to your Omni org
 
 ```bash
 # Invite a team member using the Omni CLI
+
 # Assign the operator role
 omnictl access invite \
   --email engineer@company.com \

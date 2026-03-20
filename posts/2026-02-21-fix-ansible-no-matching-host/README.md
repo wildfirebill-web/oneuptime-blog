@@ -31,6 +31,7 @@ The most common cause is a simple typo:
 
 ```yaml
 # Playbook references 'webservers' but inventory has 'web_servers'
+
 ---
 - hosts: webservers  # WRONG - does not match inventory
   tasks:

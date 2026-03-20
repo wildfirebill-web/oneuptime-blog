@@ -99,6 +99,7 @@ Here is a Terraform module that creates a PostgreSQL database with sensible defa
 
 ```hcl
 # modules/postgres/main.tf
+
 # PostgreSQL module with security and backup defaults
 
 variable "name" {

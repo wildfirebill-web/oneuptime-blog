@@ -24,6 +24,7 @@ Let's configure outlier detection for a backend service cluster:
 
 ```yaml
 # envoy-outlier-detection.yaml
+
 static_resources:
   listeners:
   - name: listener_0

@@ -18,6 +18,7 @@ Start by understanding what is wrong. Talos provides several ways to check etcd 
 
 ```bash
 # Check etcd status - this shows leader, member status, and DB size
+
 talosctl etcd status --nodes <cp-node-1>
 
 # Check all members

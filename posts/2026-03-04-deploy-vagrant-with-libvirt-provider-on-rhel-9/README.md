@@ -20,6 +20,7 @@ Check virtualization support:
 
 ```bash
 # Verify hardware virtualization is available
+
 grep -E '(vmx|svm)' /proc/cpuinfo | head -1
 ```
 

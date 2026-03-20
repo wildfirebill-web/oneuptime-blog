@@ -37,6 +37,7 @@ GitHub Actions is the most popular CI/CD platform for OIDC with AWS. Here is the
 
 ```hcl
 # Create the GitHub OIDC provider
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 

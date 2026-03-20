@@ -18,6 +18,7 @@ Start with the Data Factory instance and its supporting resources.
 
 ```hcl
 # main.tf
+
 # Creates an Azure Data Factory with managed identity and git integration
 
 terraform {

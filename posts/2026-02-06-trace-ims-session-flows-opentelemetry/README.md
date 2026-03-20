@@ -25,6 +25,7 @@ Since IMS uses SIP signaling, we need to propagate OpenTelemetry trace context t
 
 ```python
 # ims_tracing.py
+
 from opentelemetry import trace, context
 from opentelemetry.propagators.textmap import TextMapPropagator
 from opentelemetry import propagate

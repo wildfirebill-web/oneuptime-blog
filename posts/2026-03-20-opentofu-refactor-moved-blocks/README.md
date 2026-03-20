@@ -8,7 +8,7 @@ Description: Learn how to use moved blocks in OpenTofu to safely rename or reorg
 
 ## Introduction
 
-When you refactor infrastructure — renaming a resource, moving it into a module, or restructuring module calls — OpenTofu would normally destroy and recreate it because the state address changed. The `moved` block tells OpenTofu that an existing resource has moved to a new address, preventing unnecessary recreation.
+When you refactor infrastructure - renaming a resource, moving it into a module, or restructuring module calls - OpenTofu would normally destroy and recreate it because the state address changed. The `moved` block tells OpenTofu that an existing resource has moved to a new address, preventing unnecessary recreation.
 
 ## Basic Resource Rename
 
@@ -16,6 +16,7 @@ Rename a resource without destroying it:
 
 ```hcl
 # Before: resource "aws_instance" "web"
+
 # After:  resource "aws_instance" "app_server"
 
 moved {
@@ -121,7 +122,7 @@ If the plan shows no changes, the `moved` block correctly mapped the old address
 If you are publishing a module and a resource address changed between versions, keep the `moved` block in the module to automatically migrate existing users' state:
 
 ```hcl
-# In your module — helps existing users upgrade without recreation
+# In your module - helps existing users upgrade without recreation
 moved {
   from = aws_iam_role.this
   to   = aws_iam_role.cluster

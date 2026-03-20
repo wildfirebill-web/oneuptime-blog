@@ -48,6 +48,7 @@ We use the [prometheus-dnssec-exporter](https://github.com/chrj/prometheus-dnsse
 
 ```bash
 # Install the exporter (requires Go)
+
 go install github.com/chrj/prometheus-dnssec-exporter@latest
 
 # Create configuration file (TOML format)

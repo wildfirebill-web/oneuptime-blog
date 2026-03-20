@@ -9,15 +9,15 @@ Description: Learn how to calculate subnet addresses, broadcast addresses, host 
 ## CIDR Notation Basics
 
 CIDR (Classless Inter-Domain Routing) notation expresses a network as `IP/prefix_length`:
-- `192.168.1.0/24` — 256 addresses, 254 usable hosts
-- `10.0.0.0/8` — 16,777,216 addresses
-- `192.168.1.0/30` — 4 addresses, 2 usable (for point-to-point links)
+- `192.168.1.0/24` - 256 addresses, 254 usable hosts
+- `10.0.0.0/8` - 16,777,216 addresses
+- `192.168.1.0/30` - 4 addresses, 2 usable (for point-to-point links)
 
 ## Step 1: Key Subnet Calculations
 
 For a network `A.B.C.D/N`:
 
-```
+```text
 Subnet mask = N consecutive 1-bits followed by (32-N) 0-bits
 Hosts per subnet = 2^(32-N) - 2  (subtract network & broadcast)
 Number of /N subnets in a /M = 2^(N-M)
@@ -36,7 +36,7 @@ Examples:
 
 ## Step 2: Calculate Subnet Components
 
-```
+```text
 Network: 192.168.10.50/26
 
 Step 1: Subnet mask
@@ -64,6 +64,7 @@ Step 4: Host range
 from ipaddress import ip_network, ip_interface
 
 # Calculate subnet info from CIDR notation
+
 def subnet_info(cidr):
     net = ip_network(cidr, strict=False)
 

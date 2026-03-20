@@ -30,6 +30,7 @@ Start by creating an entry group for each external data source:
 
 ```bash
 # Create an entry group for an on-premise PostgreSQL database
+
 gcloud data-catalog entry-groups create postgres_production \
   --location=us-central1 \
   --display-name="PostgreSQL Production" \

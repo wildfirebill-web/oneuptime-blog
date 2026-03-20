@@ -8,7 +8,7 @@ Description: Learn how to attach and detach Longhorn volumes from nodes using th
 
 ## Introduction
 
-Longhorn volumes are normally attached and detached automatically as pods that consume them are scheduled and terminated. However, there are scenarios — such as data migration, debugging, or maintenance — where you need to manually attach or detach a volume from a node. This guide covers both the automatic lifecycle and the manual attach/detach process.
+Longhorn volumes are normally attached and detached automatically as pods that consume them are scheduled and terminated. However, there are scenarios - such as data migration, debugging, or maintenance - where you need to manually attach or detach a volume from a node. This guide covers both the automatic lifecycle and the manual attach/detach process.
 
 ## Understanding Volume Attachment
 
@@ -24,6 +24,7 @@ The most common way volumes are attached is automatically through Kubernetes. Wh
 
 ```yaml
 # pod-with-pvc.yaml - Kubernetes automatically attaches the volume when this pod runs
+
 apiVersion: v1
 kind: Pod
 metadata:

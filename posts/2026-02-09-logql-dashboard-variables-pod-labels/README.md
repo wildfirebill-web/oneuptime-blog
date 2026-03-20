@@ -53,6 +53,7 @@ Create a complete hierarchy of filters:
 
 ```logql
 # Cluster variable (if you have multi-cluster setup)
+
 label_values(cluster)
 
 # Namespace variable (filtered by cluster)

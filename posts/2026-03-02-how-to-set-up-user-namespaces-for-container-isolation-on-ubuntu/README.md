@@ -27,6 +27,7 @@ Any file or process owned by host UID 100000 appears to be owned by UID 0 inside
 
 ```bash
 # Verify user namespace support in the running kernel
+
 grep CONFIG_USER_NS /boot/config-$(uname -r)
 # Should return: CONFIG_USER_NS=y
 

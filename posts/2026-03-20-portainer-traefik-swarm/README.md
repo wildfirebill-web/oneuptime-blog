@@ -1,4 +1,4 @@
-# How to Deploy Portainer and Traefik Together on Docker Swarm
+# How to Deploy Portainer and Traefik Together on Docker Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Running Traefik as a reverse proxy on Docker Swarm gives you automatic certifica
 
 ## Swarm Stack Architecture
 
-```
+```text
 Internet → Traefik (port 80/443) → Portainer (port 9000)
                                  → Your other Swarm services
 ```
@@ -37,6 +37,7 @@ Create this stack file in Portainer under **Stacks > Add Stack**:
 
 ```yaml
 # traefik-portainer-swarm.yml
+
 version: "3.8"
 
 services:

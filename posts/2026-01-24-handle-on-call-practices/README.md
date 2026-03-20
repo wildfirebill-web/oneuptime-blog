@@ -37,6 +37,7 @@ A good rotation balances coverage with engineer wellbeing:
 
 ```yaml
 # oncall-schedule.yaml
+
 # Configuration for on-call rotation
 
 rotation:

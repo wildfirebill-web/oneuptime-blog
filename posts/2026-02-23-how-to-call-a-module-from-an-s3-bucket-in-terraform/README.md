@@ -18,6 +18,7 @@ Terraform can download modules from S3 buckets using the `s3::` prefix. When it 
 
 ```hcl
 # Basic S3 module source
+
 module "vpc" {
   source = "s3::https://my-terraform-modules.s3.amazonaws.com/vpc/v1.0.0.zip"
 

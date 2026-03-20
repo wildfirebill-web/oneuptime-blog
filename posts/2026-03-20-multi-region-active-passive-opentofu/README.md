@@ -80,6 +80,7 @@ resource "aws_route53_record" "secondary" {
 
 ```hcl
 # Primary database in us-east-1
+
 resource "aws_db_instance" "primary" {
   provider    = aws.primary
   identifier  = "myapp-primary-db"
@@ -176,4 +177,4 @@ aws rds promote-read-replica \
 
 ## Summary
 
-An active-passive multi-region setup uses Route53 failover routing with health checks for automatic DNS failover, cross-region RDS read replicas for database standby, S3 cross-region replication for asset availability, and warm ECS standby in the secondary region. The Route53 health check automatically shifts traffic when the primary fails — the secondary ECS service needs to scale up and the RDS replica needs to be promoted. Automate these steps with Lambda triggered by Route53 health check state changes.
+An active-passive multi-region setup uses Route53 failover routing with health checks for automatic DNS failover, cross-region RDS read replicas for database standby, S3 cross-region replication for asset availability, and warm ECS standby in the secondary region. The Route53 health check automatically shifts traffic when the primary fails - the secondary ECS service needs to scale up and the RDS replica needs to be promoted. Automate these steps with Lambda triggered by Route53 health check state changes.

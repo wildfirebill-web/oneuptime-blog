@@ -20,6 +20,7 @@ First, install the Satellite CA certificate on the RHEL cloud instance:
 
 ```bash
 # Download and install the Satellite CA certificate
+
 sudo curl -o /etc/pki/ca-trust/source/anchors/katello-server-ca.pem \
   https://satellite.example.com/pub/katello-server-ca.pem
 sudo update-ca-trust

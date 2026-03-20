@@ -204,4 +204,4 @@ resource "kubernetes_deployment" "app" {
 
 ## Conclusion
 
-Nested dynamic blocks let you handle arbitrarily complex resource structures without combinatorial HCL explosion. Keep nesting to two or three levels maximum for readability — if you need deeper nesting, consider restructuring your data model or splitting into multiple resources.
+Nested dynamic blocks let you handle arbitrarily complex resource structures without combinatorial HCL explosion. Keep nesting to two or three levels maximum for readability - if you need deeper nesting, consider restructuring your data model or splitting into multiple resources.

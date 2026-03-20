@@ -36,6 +36,7 @@ resource "aws_vpc" "main" {
 }
 
 # Public subnets - for load balancers and NAT gateways only
+
 resource "aws_subnet" "public" {
   count = length(var.availability_zones)
 

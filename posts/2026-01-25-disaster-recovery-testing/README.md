@@ -85,6 +85,7 @@ Detection occurred at 2 AM. The encryption began approximately 6 hours earlier.
 # tabletop-exercise-script.sh
 
 # Send calendar invite and pre-reading
+
 echo "Scheduling tabletop exercise for $(date -d '+1 week' +%Y-%m-%d)"
 
 cat > exercise_brief.md <<EOF

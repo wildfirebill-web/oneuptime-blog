@@ -20,6 +20,7 @@ First, create an ECS context:
 
 ```bash
 # Create a new Docker context for ECS
+
 docker context create ecs myecscontext
 
 # Switch to the ECS context

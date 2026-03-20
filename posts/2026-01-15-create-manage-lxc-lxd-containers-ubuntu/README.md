@@ -20,6 +20,7 @@ LXD provides system containers that run a full Linux operating system, similar t
 
 ```bash
 # Install LXD via snap (recommended)
+
 sudo snap install lxd
 
 # Or install from apt

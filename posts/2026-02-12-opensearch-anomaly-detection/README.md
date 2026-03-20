@@ -28,6 +28,7 @@ Here's how to create a detector that monitors error rates across your applicatio
 
 ```bash
 # Create an anomaly detector for error rate monitoring
+
 curl -XPOST "https://search-domain.us-east-1.es.amazonaws.com/_plugins/_anomaly_detection/detectors" \
     -H "Content-Type: application/json" \
     -d '{

@@ -33,6 +33,7 @@ Set up a CloudWatch alarm to detect root account usage:
 
 ```bash
 # Create a CloudWatch Logs metric filter for root account usage
+
 aws logs put-metric-filter \
   --log-group-name "CloudTrail/DefaultLogGroup" \
   --filter-name "RootAccountUsage" \

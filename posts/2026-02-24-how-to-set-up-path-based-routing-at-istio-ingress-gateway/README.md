@@ -205,6 +205,7 @@ More specific rewrite examples:
 
 ```yaml
 # /api/v1/users -> /users
+
 - match:
     - uri:
         prefix: /api/v1

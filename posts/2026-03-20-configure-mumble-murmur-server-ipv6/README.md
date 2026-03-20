@@ -14,6 +14,7 @@ Mumble is an open-source, low-latency voice over IP application. Murmur is its s
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install mumble-server -y
 
 # RHEL/CentOS

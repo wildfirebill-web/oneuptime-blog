@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, count, Naming, Resources, Infrastructure as Code
+Tags: OpenTofu, HCL, Count, Naming, Resources, Infrastructure as Code
 
 Description: Learn how to use count.index in OpenTofu to create sequentially named resources like subnets, instances, and security groups.
 
@@ -25,6 +25,7 @@ resource "aws_subnet" "public" {
   }
 }
 # Creates: public-subnet-1, public-subnet-2, public-subnet-3
+
 ```
 
 ---

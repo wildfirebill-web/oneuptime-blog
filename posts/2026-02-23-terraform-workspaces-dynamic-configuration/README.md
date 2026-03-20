@@ -18,6 +18,7 @@ Workspaces create isolated state files. Each workspace has its own `terraform.tf
 
 ```bash
 # Create and switch to a new workspace
+
 terraform workspace new dev
 terraform workspace new staging
 terraform workspace new production

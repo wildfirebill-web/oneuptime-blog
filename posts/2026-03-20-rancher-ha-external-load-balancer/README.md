@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, High Availability, Load Balancer, Kubernetes, TLS Termination, Network
+Tags: Rancher, High Availability, Load Balancer, Kubernetes, TLS Termination, Networks
 
 Description: Configure an external load balancer for Rancher HA to distribute traffic across multiple server nodes with health checks and TLS passthrough.
 
@@ -23,6 +23,7 @@ TLS Passthrough is recommended for production as it preserves end-to-end encrypt
 
 ```bash
 # Create an AWS Network Load Balancer with TCP listeners
+
 aws elbv2 create-load-balancer \
   --name rancher-nlb \
   --type network \

@@ -159,6 +159,7 @@ This means you can survive a 4-minute backend outage without dropping spans. Adj
 
 ```bash
 # Set timeout via environment variables
+
 export OTEL_BSP_EXPORT_TIMEOUT=15000
 export OTEL_BSP_MAX_QUEUE_SIZE=16384
 export OTEL_BSP_SCHEDULE_DELAY=2000

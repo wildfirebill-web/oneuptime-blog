@@ -8,7 +8,7 @@ Description: Learn how to create and use virtual machine templates in Harvester 
 
 ## Introduction
 
-VM templates in Harvester allow you to define a standard VM configuration — CPU, memory, network, storage, and cloud-init settings — that can be reused to create multiple VMs consistently. Templates reduce configuration errors, enforce standards, and speed up VM provisioning. Harvester templates also support versioning, so you can update a template while keeping historical versions for rollback.
+VM templates in Harvester allow you to define a standard VM configuration - CPU, memory, network, storage, and cloud-init settings - that can be reused to create multiple VMs consistently. Templates reduce configuration errors, enforce standards, and speed up VM provisioning. Harvester templates also support versioning, so you can update a template while keeping historical versions for rollback.
 
 ## Template Architecture
 
@@ -36,7 +36,7 @@ graph TD
    - Add cloud-init data
 5. Click **Create**
 
-The template is now available when creating new VMs — select it in the **Template** dropdown during VM creation.
+The template is now available when creating new VMs - select it in the **Template** dropdown during VM creation.
 
 ## Step 2: Create a Template via kubectl
 
@@ -44,6 +44,7 @@ The template is now available when creating new VMs — select it in the **Templ
 
 ```yaml
 # vm-template-ubuntu-web.yaml
+
 # Template container - holds metadata and references to versions
 
 apiVersion: harvesterhci.io/v1beta1

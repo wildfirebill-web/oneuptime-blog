@@ -40,6 +40,7 @@ sudo tee /etc/audit/rules.d/50-ssh-monitoring.rules << 'EOF'
 ## SSH Configuration Monitoring Rules
 
 # Monitor the main SSH server configuration file
+
 -w /etc/ssh/sshd_config -p wa -k sshd_config_change
 
 # Monitor the SSH server config drop-in directory

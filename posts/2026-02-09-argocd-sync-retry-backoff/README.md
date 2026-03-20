@@ -93,6 +93,7 @@ Example configurations for different scenarios:
 
 ```yaml
 # Aggressive retry for development environments
+
 syncPolicy:
   retry:
     limit: 10

@@ -26,6 +26,7 @@ Add the necessary gems:
 
 ```ruby
 # Gemfile
+
 gem 'opentelemetry-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-instrumentation-rails'

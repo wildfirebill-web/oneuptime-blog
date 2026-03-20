@@ -94,6 +94,7 @@ JQ path expressions are more powerful than JSON Pointers. They support wildcards
 ```yaml
 ignoreDifferences:
 # Ignore resource requests on all containers in all Deployments
+
 - group: apps
   kind: Deployment
   jqPathExpressions:

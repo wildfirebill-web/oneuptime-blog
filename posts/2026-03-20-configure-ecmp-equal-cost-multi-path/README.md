@@ -8,7 +8,7 @@ Description: Configure Equal-Cost Multi-Path routing on Linux and network device
 
 ## Introduction
 
-Equal-Cost Multi-Path (ECMP) routing allows a router to use multiple next-hop paths of equal metric to a single destination. Instead of choosing one path and leaving others idle, the router distributes flows across all equal-cost paths — improving throughput and providing automatic failover.
+Equal-Cost Multi-Path (ECMP) routing allows a router to use multiple next-hop paths of equal metric to a single destination. Instead of choosing one path and leaving others idle, the router distributes flows across all equal-cost paths - improving throughput and providing automatic failover.
 
 ## How ECMP Works
 
@@ -31,6 +31,7 @@ Add multiple equal-cost routes to the same destination:
 
 ```bash
 # Add ECMP route with two next-hops of equal weight
+
 ip route add 10.10.0.0/16 \
   nexthop via 192.168.1.1 dev eth0 weight 1 \
   nexthop via 192.168.2.1 dev eth1 weight 1
@@ -66,8 +67,8 @@ echo "net.ipv4.fib_multipath_hash_policy=1" >> /etc/sysctl.conf
 ```
 
 Hash policy values:
-- `0` — Layer 3 only (src IP, dst IP)
-- `1` — Layer 3 + Layer 4 (src/dst IP + src/dst port)
+- `0` - Layer 3 only (src IP, dst IP)
+- `1` - Layer 3 + Layer 4 (src/dst IP + src/dst port)
 
 ## Configuring ECMP with FRR (Free Range Routing)
 

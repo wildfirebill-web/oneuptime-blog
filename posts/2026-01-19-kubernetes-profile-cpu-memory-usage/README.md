@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Current resource usage
+
 kubectl top pods -n production
 kubectl top pods --containers -n production
 

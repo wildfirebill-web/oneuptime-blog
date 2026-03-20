@@ -22,6 +22,7 @@ java -version
 # openjdk version "21.x.x" ...
 
 # Set JAVA_HOME system-wide
+
 echo 'JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"' | sudo tee -a /etc/environment
 source /etc/environment
 ```

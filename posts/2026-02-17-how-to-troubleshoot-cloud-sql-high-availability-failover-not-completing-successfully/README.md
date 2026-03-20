@@ -20,6 +20,7 @@ The expected failover time is typically 60-120 seconds, though it can be longer 
 
 ```bash
 # Check instance state and HA configuration
+
 gcloud sql instances describe my-instance \
     --project=my-project \
     --format="json(state, settings.availabilityType, failoverReplica, gceZone, secondaryGceZone)"

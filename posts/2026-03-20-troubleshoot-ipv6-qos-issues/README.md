@@ -14,6 +14,7 @@ IPv6 QoS issues typically manifest as voice/video quality degradation, unexpecte
 
 ```bash
 # Check if DSCP marking rules are active
+
 sudo nft list table ip6 mangle  # nftables
 # OR
 sudo ip6tables -t mangle -L -v -n  # ip6tables

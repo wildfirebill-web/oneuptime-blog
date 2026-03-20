@@ -39,6 +39,7 @@ The first thing to check is the ApplicationSet resource status.
 
 ```bash
 # Get the ApplicationSet status
+
 kubectl get applicationset my-appset -n argocd -o yaml
 
 # Check the status conditions

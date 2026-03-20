@@ -26,6 +26,7 @@ Add these dependencies to your `Cargo.toml`:
 ```toml
 [dependencies]
 # RabbitMQ client
+
 lapin = "2.3"
 
 # NATS client

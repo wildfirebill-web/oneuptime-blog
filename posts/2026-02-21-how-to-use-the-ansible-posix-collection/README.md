@@ -14,6 +14,7 @@ The `ansible.posix` collection contains modules for managing POSIX-compliant sys
 
 ```bash
 # Install the ansible.posix collection
+
 ansible-galaxy collection install ansible.posix
 
 # Install a specific version

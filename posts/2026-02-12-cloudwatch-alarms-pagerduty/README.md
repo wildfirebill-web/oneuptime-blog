@@ -32,6 +32,7 @@ The integration URL looks like: `https://events.pagerduty.com/integration/abc123
 
 ```bash
 # Create an SNS topic for PagerDuty
+
 aws sns create-topic --name pagerduty-alerts
 ```
 

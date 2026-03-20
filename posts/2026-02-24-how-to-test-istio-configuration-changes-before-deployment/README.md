@@ -30,6 +30,7 @@ Create a `.yamllint` config for your project:
 
 ```yaml
 # .yamllint
+
 extends: relaxed
 rules:
   line-length:

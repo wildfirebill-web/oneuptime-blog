@@ -27,6 +27,7 @@ This guide provides a phased approach to rolling out namespace isolation in Cali
 
 ```bash
 # Use a rollout label to control which namespaces get the policy
+
 kubectl label namespace staging calico-policy=enabled
 # Only namespaces with calico-policy=enabled will be affected initially
 ```

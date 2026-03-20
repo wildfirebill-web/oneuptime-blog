@@ -18,6 +18,7 @@ The quickest way to update a VirtualService in CI is kubectl patch. This modifie
 
 ```bash
 # Update traffic weights
+
 kubectl patch virtualservice my-app -n app --type=merge -p '
   {"spec":{"http":[{"route":[
     {"destination":{"host":"my-app.app.svc.cluster.local","subset":"v1"},"weight":80},

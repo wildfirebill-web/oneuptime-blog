@@ -183,6 +183,7 @@ Python's `asyncio` has its own set of context propagation challenges. The OpenTe
 
 ```python
 # context_debug.py
+
 # Demonstrates where context works and where it breaks in Python async code
 import asyncio
 from opentelemetry import trace

@@ -1,4 +1,4 @@
-# How to Manage Secrets Safely with Ephemeral Resources in OpenTofu
+# How to Manage Secrets Safely with Ephemeral Resources in OpenTofu - Safely
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn best practices for managing secrets safely in OpenTofu using 
 
 ---
 
-State files are one of the biggest security risks in infrastructure as code. Any sensitive value that passes through a Terraform/OpenTofu resource gets written to state — even when marked `sensitive`. Ephemeral resources solve this problem by fetching secrets at runtime and discarding them without ever touching state.
+State files are one of the biggest security risks in infrastructure as code. Any sensitive value that passes through a Terraform/OpenTofu resource gets written to state - even when marked `sensitive`. Ephemeral resources solve this problem by fetching secrets at runtime and discarding them without ever touching state.
 
 ---
 
@@ -16,6 +16,7 @@ State files are one of the biggest security risks in infrastructure as code. Any
 
 ```hcl
 # BAD: The database password ends up in state
+
 resource "aws_db_instance" "main" {
   identifier = "production-db"
   username   = "dbadmin"
@@ -43,7 +44,7 @@ resource "aws_db_instance" "main" {
   identifier = "production-db"
   username   = "dbadmin"
 
-  # write_only attribute — uses ephemeral value, not stored in state
+  # write_only attribute - uses ephemeral value, not stored in state
   password = ephemeral.aws_secretsmanager_secret_version.db_password.secret_string
 }
 ```
@@ -129,7 +130,7 @@ resource "kubernetes_secret" "app" {
 ## Pattern 4: TLS Certificate Provisioning
 
 ```hcl
-# Generate a TLS key ephemerally — never stored in state
+# Generate a TLS key ephemerally - never stored in state
 ephemeral "tls_private_key" "server" {
   algorithm = "RSA"
   rsa_bits  = 4096
@@ -145,7 +146,7 @@ resource "aws_key_pair" "server" {
 resource "aws_secretsmanager_secret_version" "server_key" {
   secret_id     = aws_secretsmanager_secret.server_key.id
   secret_string = ephemeral.tls_private_key.server.private_key_pem
-  # Note: secret_string is a write-only attribute — not stored in state
+  # Note: secret_string is a write-only attribute - not stored in state
 }
 ```
 
@@ -193,4 +194,4 @@ When managing secrets in OpenTofu:
 
 ## Summary
 
-Ephemeral resources eliminate the biggest security risk in infrastructure as code: secrets persisting in state files. Fetch database passwords, API keys, SSH keys, and provider credentials through ephemeral resources and use them in write-only attributes, provider configurations, connection blocks, and provisioner environment variables. This keeps sensitive values in your dedicated secrets store — where they belong — and out of state files and CI/CD logs.
+Ephemeral resources eliminate the biggest security risk in infrastructure as code: secrets persisting in state files. Fetch database passwords, API keys, SSH keys, and provider credentials through ephemeral resources and use them in write-only attributes, provider configurations, connection blocks, and provisioner environment variables. This keeps sensitive values in your dedicated secrets store - where they belong - and out of state files and CI/CD logs.

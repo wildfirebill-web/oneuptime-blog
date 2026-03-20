@@ -239,6 +239,7 @@ The decision between Compute and EC2 Instance Savings Plans depends on your arch
 
 ```bash
 # Checklist for EC2 Instance Plans
+
 # Answer YES to all before committing:
 
 # 1. Is the instance family locked for 1-3 years?

@@ -44,6 +44,7 @@ CloudTrail needs an S3 bucket to store log files. The bucket policy must allow C
 
 ```hcl
 # S3 bucket for CloudTrail logs
+
 resource "aws_s3_bucket" "cloudtrail" {
   bucket = "cloudtrail-logs-${data.aws_caller_identity.current.account_id}"
 

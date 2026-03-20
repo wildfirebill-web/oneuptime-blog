@@ -38,6 +38,7 @@ First, here is a simple Python function that processes Pub/Sub messages:
 
 ```python
 # functions/process-events/main.py
+
 # Cloud Function that processes Pub/Sub messages
 # Gen 2 uses CloudEvents format instead of the old event format
 

@@ -14,6 +14,7 @@ Define a simple YAML format that developers fill out for each service:
 
 ```yaml
 # telemetry-manifest.yaml
+
 apiVersion: observability.platform/v1
 kind: TelemetryManifest
 metadata:

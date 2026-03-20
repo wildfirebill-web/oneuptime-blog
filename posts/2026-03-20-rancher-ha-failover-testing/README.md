@@ -1,4 +1,4 @@
-# How to Perform Rancher HA Failover Testing
+# How to Perform Rancher HA Failover Testing - Testing
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Document your tests and expected outcomes before running them:
 
 ```bash
 # Kill one Rancher pod and verify recovery
+
 POD=$(kubectl get pods -n cattle-system -l app=rancher -o name | head -1)
 kubectl delete $POD -n cattle-system
 

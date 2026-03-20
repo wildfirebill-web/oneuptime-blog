@@ -29,6 +29,7 @@ Different registries enforce different limits:
 
 ```bash
 # Check all ImageRepository objects for errors
+
 kubectl get imagerepositories -A
 
 # Get detailed status with conditions

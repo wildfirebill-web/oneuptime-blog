@@ -20,6 +20,7 @@ Mount the same named volume in multiple containers:
 
 ```bash
 # Create a shared volume
+
 podman volume create shared-data
 
 # Container 1: Writes data

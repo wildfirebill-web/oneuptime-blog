@@ -47,6 +47,7 @@ First, create a subnet group if you don't have one:
 
 ```bash
 # Create a subnet group for ElastiCache
+
 aws elasticache create-cache-subnet-group \
   --cache-subnet-group-name my-cache-subnet-group \
   --cache-subnet-group-description "Subnet group for ElastiCache" \

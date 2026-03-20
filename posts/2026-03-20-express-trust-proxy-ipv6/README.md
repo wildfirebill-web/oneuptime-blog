@@ -12,7 +12,7 @@ When Express.js runs behind a reverse proxy, the client IP in `req.ip` is the pr
 
 ## How X-Forwarded-For Works with IPv6
 
-```
+```text
 Client 2001:db8::cafe:1
     → IPv6 Load Balancer (2001:db8::lb)
     → NGINX Proxy (::1)
@@ -28,7 +28,7 @@ X-Real-IP: 2001:db8::cafe:1
 const express = require('express');
 const app = express();
 
-// Option 1: Trust 1 hop (most common — direct NGINX proxy)
+// Option 1: Trust 1 hop (most common - direct NGINX proxy)
 app.set('trust proxy', 1);
 // req.ip = first untrusted address in X-Forwarded-For
 
@@ -42,7 +42,7 @@ app.set('trust proxy', ['::1', '2001:db8::/32', 'loopback']);
 // Option 4: Trust a count of hops
 app.set('trust proxy', 2);  // Trust 2 proxy hops
 
-// Option 5: Trust all (dangerous — do not use with public internet)
+// Option 5: Trust all (dangerous - do not use with public internet)
 // app.set('trust proxy', true);
 ```
 
@@ -113,7 +113,8 @@ app.listen('[::]:3000', '::');
 ```
 
 ```bash
-# Test — simulate a request from IPv6 client via proxy
+# Test - simulate a request from IPv6 client via proxy
+
 curl -6 http://[::1]:3000/debug-ip \
     -H "X-Forwarded-For: 2001:db8::cafe"
 # Expected: req.ip = "2001:db8::cafe"
@@ -176,4 +177,4 @@ server {
 
 ## Conclusion
 
-Express.js trust proxy for IPv6 requires listing your IPv6 proxy addresses: `app.set('trust proxy', ['::1', '2001:db8::/32'])`. Once configured, `req.ip` returns the real IPv6 client address from `X-Forwarded-For`. Never use `trust proxy: true` on public servers — restrict to known proxy addresses to prevent IP spoofing. Monitor Express.js with OneUptime to verify correct IP extraction in logs.
+Express.js trust proxy for IPv6 requires listing your IPv6 proxy addresses: `app.set('trust proxy', ['::1', '2001:db8::/32'])`. Once configured, `req.ip` returns the real IPv6 client address from `X-Forwarded-For`. Never use `trust proxy: true` on public servers - restrict to known proxy addresses to prevent IP spoofing. Monitor Express.js with OneUptime to verify correct IP extraction in logs.

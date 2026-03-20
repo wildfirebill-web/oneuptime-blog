@@ -53,6 +53,7 @@ Kubernetes includes several built-in admission controllers. Ensure critical ones
 
 ```bash
 # Check enabled admission controllers
+
 kubectl api-versions
 
 # Verify specific controllers via API server flags

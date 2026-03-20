@@ -96,6 +96,7 @@ AWS provides a managed policy for this: `AWSLambdaVPCAccessExecutionRole`.
 
 ```bash
 # Create a security group for Lambda
+
 aws ec2 create-security-group \
   --group-name lambda-vpc-sg \
   --description "Security group for Lambda VPC access" \

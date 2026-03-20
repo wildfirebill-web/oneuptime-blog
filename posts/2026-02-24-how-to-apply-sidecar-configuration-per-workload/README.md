@@ -89,6 +89,7 @@ Here's an example of a namespace-wide default combined with a workload-specific 
 
 ```yaml
 # Default for the namespace - allow same namespace + istio-system
+
 apiVersion: networking.istio.io/v1beta1
 kind: Sidecar
 metadata:

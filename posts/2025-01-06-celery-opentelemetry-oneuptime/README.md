@@ -47,6 +47,7 @@ The following module sets up OpenTelemetry tracing and metrics for your Celery w
 
 ```python
 # telemetry.py
+
 import os
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider

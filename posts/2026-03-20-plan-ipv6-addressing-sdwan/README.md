@@ -12,7 +12,7 @@ IPv6 SD-WAN addressing requires a hierarchical plan that scales from a single IS
 
 ## IPv6 Prefix Allocation Strategy
 
-```
+```text
 IPv6 SD-WAN Addressing Hierarchy:
 
 ISP Allocation: 2001:db8:company::/48
@@ -42,7 +42,7 @@ Site breakdown (/56 = 256 /64s):
 
 ## Address Encoding Scheme
 
-```
+```text
 Structured IPv6 Address Encoding:
 
 2001 : 0db8 : aabb : ccdd : xxxx : xxxx : xxxx : xxxx
@@ -128,6 +128,7 @@ for site in SITES:
     address_plan[site["id"]] = site_data
 
 # Print summary
+
 for site_id, data in address_plan.items():
     print(f"\nSite {site_id}: {data['site_name']}")
     print(f"  Site prefix (/56): {data['site_prefix_56']}")
@@ -137,7 +138,7 @@ for site_id, data in address_plan.items():
 
 ## SD-WAN Overlay Addressing
 
-```
+```text
 SD-WAN Overlay Address Ranges:
 
 Management/Overlay infrastructure:
@@ -160,7 +161,7 @@ NTP, DNS, RADIUS for SD-WAN:
 
 ## Route Summarization by Region
 
-```
+```text
 BGP Route Summarization:
 
 Region 1 (Americas): Summarize as 2001:db8:company:0000::/50

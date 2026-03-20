@@ -40,6 +40,7 @@ Transformations execute in the order defined in your configuration. Each SMT rec
 
 ```properties
 # connector.properties
+
 # Transformations execute in order: filter -> route -> unwrap -> mask
 transforms=filter,route,unwrap,mask
 ```

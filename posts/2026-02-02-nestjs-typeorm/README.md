@@ -427,6 +427,7 @@ Generate a migration after changing entities:
 
 ```bash
 # Generate migration from entity changes
+
 npx typeorm migration:generate -d src/data-source.ts src/migrations/AddUserMetadata
 
 # Create an empty migration for custom SQL

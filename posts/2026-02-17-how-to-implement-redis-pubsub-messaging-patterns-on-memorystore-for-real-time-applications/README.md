@@ -22,6 +22,7 @@ Create a Memorystore instance for your Pub/Sub workload:
 
 ```bash
 # Create a Memorystore Redis instance
+
 # Use the STANDARD tier for high availability with automatic failover
 gcloud redis instances create realtime-messaging \
   --size=2 \

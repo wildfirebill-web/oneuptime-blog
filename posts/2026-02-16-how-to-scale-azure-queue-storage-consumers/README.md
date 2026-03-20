@@ -322,6 +322,7 @@ If you run consumers on Kubernetes, KEDA (Kubernetes Event-Driven Autoscaling) c
 
 ```yaml
 # keda-scaledobject.yaml
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

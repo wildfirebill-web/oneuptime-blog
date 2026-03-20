@@ -222,6 +222,7 @@ For more complex routing and enterprise features, RabbitMQ is excellent.
 
 ```python
 # publisher.py
+
 import pika
 import json
 from datetime import datetime

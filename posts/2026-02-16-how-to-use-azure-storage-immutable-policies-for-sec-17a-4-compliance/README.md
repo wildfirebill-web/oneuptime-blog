@@ -31,6 +31,7 @@ Start with a storage account configured for compliance:
 
 ```bash
 # Create a resource group for compliance data
+
 az group create \
   --name rg-sec-compliance \
   --location eastus2

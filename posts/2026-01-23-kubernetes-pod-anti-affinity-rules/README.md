@@ -309,6 +309,7 @@ Parameters:
 
 ```bash
 # See which nodes pods are on
+
 kubectl get pods -l app=web -o wide
 
 # Output:

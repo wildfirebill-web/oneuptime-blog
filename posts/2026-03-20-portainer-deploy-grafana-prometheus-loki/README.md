@@ -1,4 +1,4 @@
-# How to Deploy the Grafana-Prometheus-Loki Stack via Portainer
+# How to Deploy the Grafana-Prometheus-Loki Stack via Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

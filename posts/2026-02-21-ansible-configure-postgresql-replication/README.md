@@ -35,6 +35,7 @@ Define your primary and replica servers in the inventory.
 
 ```yaml
 # inventory/production/hosts.yml
+
 # Database cluster with primary and replicas
 all:
   children:

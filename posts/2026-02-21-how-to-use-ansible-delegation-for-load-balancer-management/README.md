@@ -16,6 +16,7 @@ The core pattern is simple: for each server, remove it from the load balancer po
 
 ```yaml
 # rolling-deploy.yml - Zero-downtime rolling deployment
+
 ---
 - name: Rolling deployment with load balancer management
   hosts: webservers

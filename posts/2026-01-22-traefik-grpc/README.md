@@ -34,6 +34,7 @@ Enable HTTP/2 in Traefik's entrypoint:
 
 ```yaml
 # traefik-grpc-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

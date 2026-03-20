@@ -34,6 +34,7 @@ First, make sure you have Elixir and Phoenix installed. Then create a new Phoeni
 
 ```bash
 # Install the Phoenix project generator
+
 mix archive.install hex phx_new
 
 # Create a new API-only Phoenix project

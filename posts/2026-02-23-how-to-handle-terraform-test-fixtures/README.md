@@ -51,6 +51,7 @@ The simplest fixture type is a `.tfvars` file with known-good inputs.
 
 ```hcl
 # tests/fixtures/default.tfvars
+
 # Default test configuration - used by most tests
 
 vpc_cidr           = "10.0.0.0/16"

@@ -192,6 +192,7 @@ graph TD
 
 ```yaml
 # Method 1: Using 'and'
+
 - name: Install on Debian with enough memory
   ansible.builtin.apt:
     name: elasticsearch

@@ -30,6 +30,7 @@ Flux CD's image automation controllers automatically detect new container image 
 
 ```yaml
 # clusters/production/flux-system/gotk-components.yaml
+
 # Ensure image automation components are included in your Flux installation
 # Bootstrap with: flux bootstrap github --components-extra=image-reflector-controller,image-automation-controller
 ```

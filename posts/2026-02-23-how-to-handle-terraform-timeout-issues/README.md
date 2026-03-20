@@ -24,7 +24,7 @@ There are several distinct timeout scenarios in Terraform:
 
 Each requires a different fix.
 
-## Resource Creation Timeouts
+Resource Creation Timeouts
 
 Many Terraform resources have default timeouts for create, update, and delete operations. When a resource takes longer than expected, Terraform gives up.
 
@@ -32,6 +32,7 @@ Many Terraform resources have default timeouts for create, update, and delete op
 
 ```hcl
 # RDS instances can take 30+ minutes to create
+
 resource "aws_db_instance" "production" {
   identifier     = "production-db"
   engine         = "postgres"

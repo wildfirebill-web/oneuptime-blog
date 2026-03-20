@@ -22,6 +22,7 @@ Build a spreadsheet or database that captures the following for every service:
 
 ```yaml
 # Example service inventory entry
+
 service_name: order-service
 team: commerce
 language: Java 17

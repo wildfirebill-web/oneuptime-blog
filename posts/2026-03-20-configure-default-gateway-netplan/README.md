@@ -14,6 +14,7 @@ In Netplan, the default gateway is set under `routes` using `to: default` (or `t
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

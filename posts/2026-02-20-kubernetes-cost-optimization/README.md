@@ -152,6 +152,7 @@ The Cluster Autoscaler adds and removes nodes based on pending pods and node uti
 
 ```yaml
 # cluster-autoscaler-config.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -244,7 +245,7 @@ spec:
               memory: 1Gi
 ```
 
-## Resource Quotas and Limit Ranges
+Resource Quotas and Limit Ranges
 
 Prevent teams from over-requesting resources by setting namespace-level quotas.
 

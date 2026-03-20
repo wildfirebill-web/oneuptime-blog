@@ -14,6 +14,7 @@ ProFTPD is an alternative to vsftpd that offers more flexibility through its Apa
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install ProFTPD in standalone mode

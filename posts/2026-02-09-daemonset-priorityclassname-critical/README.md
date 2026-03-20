@@ -265,6 +265,7 @@ Differentiate critical vs nice-to-have monitoring:
 
 ```yaml
 # Critical metrics collector
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

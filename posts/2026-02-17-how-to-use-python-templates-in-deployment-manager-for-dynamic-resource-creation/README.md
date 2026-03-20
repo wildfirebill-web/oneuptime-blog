@@ -18,6 +18,7 @@ A Deployment Manager Python template is a Python file that defines a `GenerateCo
 
 ```python
 # basic-template.py
+
 # A minimal Python template for Deployment Manager
 
 def GenerateConfig(context):

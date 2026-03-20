@@ -16,6 +16,7 @@ The primary tool for checking Livepatch status is the `canonical-livepatch` comm
 
 ```bash
 # Basic status - quick overview
+
 sudo canonical-livepatch status
 
 # Full verbose output with patch details

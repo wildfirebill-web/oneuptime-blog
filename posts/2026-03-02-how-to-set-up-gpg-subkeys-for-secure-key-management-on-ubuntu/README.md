@@ -26,6 +26,7 @@ Start by generating a strong primary key. This key will only be used for certifi
 
 ```bash
 # Generate a new key - choose RSA or ed25519
+
 # For interactive key generation with full control:
 gpg --full-generate-key
 

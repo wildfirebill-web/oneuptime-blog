@@ -68,6 +68,7 @@ The following command creates a pod with a published port and adds two container
 
 ```bash
 # Create a new pod with the name "webapp" and expose port 8080
+
 # The -p flag maps host port 8080 to pod port 8080
 podman pod create --name webapp -p 8080:8080
 
@@ -201,7 +202,7 @@ podman run -d --pod limited-pod --name metrics \
     prometheus-exporter:latest
 ```
 
-### Resource Limit Hierarchy
+Resource Limit Hierarchy
 
 The following diagram illustrates how resource limits cascade from pod to container level.
 
@@ -654,7 +655,7 @@ podman generate kube webapp --service > webapp-with-service.yaml
 
 ---
 
-## Resource Monitoring
+Resource Monitoring
 
 Monitor resource usage to validate limits and identify bottlenecks.
 
@@ -850,7 +851,7 @@ podman exec app ss -tlnp
 podman port webapp
 ```
 
-### Resource Limit Conflicts
+Resource Limit Conflicts
 
 ```bash
 # Check if container was OOM killed
@@ -882,7 +883,7 @@ podman inspect app --format '{{range .Mounts}}{{.Source}} -> {{.Destination}}{{"
 
 Before deploying Podman pods to production, verify these configurations.
 
-### Resource Management
+Resource Management
 
 - [ ] Pod-level resource limits defined
 - [ ] Container-level limits fit within pod constraints

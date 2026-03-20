@@ -31,6 +31,7 @@ Identify which PVCs are managed by ArgoCD and which need migration.
 
 ```bash
 # List all PVCs with their StorageClass and ArgoCD management labels
+
 kubectl get pvc --all-namespaces -o custom-columns=\
 NAMESPACE:.metadata.namespace,\
 NAME:.metadata.name,\

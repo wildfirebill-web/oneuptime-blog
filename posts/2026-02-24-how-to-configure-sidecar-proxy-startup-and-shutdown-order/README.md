@@ -237,6 +237,7 @@ During startup, you can check if the sidecar is ready:
 
 ```bash
 # From inside the pod or another pod on the same node
+
 curl http://localhost:15021/healthz/ready
 ```
 

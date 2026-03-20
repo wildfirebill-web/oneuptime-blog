@@ -35,6 +35,7 @@ The simplest Lambda role allows the function to write logs to CloudWatch.
 
 ```hcl
 # Trust policy allowing Lambda to assume the role
+
 data "aws_iam_policy_document" "lambda_trust" {
   statement {
     effect = "Allow"

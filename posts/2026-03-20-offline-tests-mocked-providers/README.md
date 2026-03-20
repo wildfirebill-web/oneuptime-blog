@@ -193,6 +193,7 @@ mock_provider "cloudflare" {
 
 ```bash
 # Run all tests (no real credentials needed with mock providers)
+
 tofu test
 
 # Run a specific test file
@@ -226,7 +227,7 @@ tofu test -filter=tests/unit.tftest.hcl
 
 ## Best Practices
 
-- Use mock providers for all pure logic tests — checking tags, naming conventions, and output calculations.
+- Use mock providers for all pure logic tests - checking tags, naming conventions, and output calculations.
 - Use real providers only for integration tests that verify actual cloud behavior.
 - Mock all external data sources to prevent network calls in unit tests.
 - Set realistic mock values to catch type and attribute errors.

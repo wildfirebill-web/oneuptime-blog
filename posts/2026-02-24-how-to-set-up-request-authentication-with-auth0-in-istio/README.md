@@ -121,6 +121,7 @@ From inside the cluster, test with and without the token:
 
 ```bash
 # Without token - should be denied (403) if AuthorizationPolicy is in place
+
 kubectl exec deploy/sleep -c sleep -- \
   curl -s -o /dev/null -w "%{http_code}" \
   http://api-server.backend:8080/api/data

@@ -18,6 +18,7 @@ Start by creating the EFS file system and mount targets in your VPC.
 
 ```hcl
 # Create the EFS file system
+
 resource "aws_efs_file_system" "app_data" {
   creation_token = "app-persistent-data"
   encrypted      = true

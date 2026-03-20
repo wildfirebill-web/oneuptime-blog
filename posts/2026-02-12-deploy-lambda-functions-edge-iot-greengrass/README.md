@@ -55,6 +55,7 @@ Write your Lambda function as you normally would, but with awareness that it wil
 
 ```python
 # lambda_function.py - Edge data processor
+
 import json
 import logging
 import os

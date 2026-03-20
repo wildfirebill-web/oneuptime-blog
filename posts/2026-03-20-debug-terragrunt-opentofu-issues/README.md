@@ -14,6 +14,7 @@ Terragrunt issues typically fall into three categories: configuration parsing er
 
 ```bash
 # Enable debug logging for verbose output
+
 terragrunt apply --terragrunt-log-level debug
 
 # Even more verbose trace logging

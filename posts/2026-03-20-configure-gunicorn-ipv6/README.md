@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Gunicorn, Python, IPv6, WSGI, Deployment, Dual-Stack, Workers
+Tags: Gunicorn, Python, IPv6, WSGI, Deployment, Dual-Stack, Worker
 
 Description: Configure Gunicorn to listen on IPv6 addresses, bind to multiple interfaces, and integrate with NGINX for dual-stack Python application deployment.
 
@@ -14,6 +14,7 @@ Gunicorn (Green Unicorn) is the most popular WSGI server for Python applications
 
 ```bash
 # Bind to all IPv6 interfaces (dual-stack on Linux)
+
 gunicorn --bind "[::]:8000" app:application
 
 # Bind to IPv6 loopback only
@@ -57,7 +58,7 @@ loglevel  = "info"
 
 # Log client IPv6 addresses
 access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"'
-# %(h)s = client IP — shows the IPv6 address
+# %(h)s = client IP - shows the IPv6 address
 
 # Process naming
 proc_name = "myapp"
@@ -78,7 +79,7 @@ forwarded_allow_ips = "::1,127.0.0.1"
 # Or trust a subnet
 forwarded_allow_ips = "::1,127.0.0.0/8,2001:db8::/32"
 
-# Trust all (dangerous — only in trusted networks)
+# Trust all (dangerous - only in trusted networks)
 # forwarded_allow_ips = "*"
 ```
 

@@ -52,6 +52,7 @@ The X-Ray SDK in your application doesn't send traces directly to the X-Ray serv
 
 ```bash
 # Download and install the X-Ray daemon
+
 curl https://s3.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip -o xray-daemon.zip
 unzip xray-daemon.zip
 sudo cp xray-daemon /usr/local/bin/

@@ -54,6 +54,7 @@ import time
 from datetime import datetime, timezone
 
 # Metrics for tracking extraction completeness and performance
+
 extraction_duration = meter.create_histogram(
     name="reporting.extraction_duration_seconds",
     description="Time to extract data from each source system",

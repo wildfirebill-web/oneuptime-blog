@@ -44,6 +44,7 @@ Set up the Application Gateway that AGIC will manage.
 
 ```bash
 # Create a virtual network for the Application Gateway
+
 az network vnet create \
   --resource-group rg-flux-demo \
   --name vnet-agw \

@@ -55,6 +55,7 @@ helm install istio-base istio/base \
 
 ```yaml
 # istiod-values.yaml
+
 pilot:
   resources:
     requests:

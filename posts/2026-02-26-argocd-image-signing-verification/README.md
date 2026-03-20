@@ -29,6 +29,7 @@ Cosign from the Sigstore project is the standard tool for container image signin
 
 ```bash
 # Generate a cosign key pair
+
 cosign generate-key-pair
 
 # This creates cosign.key (private) and cosign.pub (public)

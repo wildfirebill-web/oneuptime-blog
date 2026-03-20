@@ -132,6 +132,7 @@ Software-defined segmentation at the workload level. Each application or service
 
 ```bash
 # Create VLANs on Cisco switch
+
 # VLAN 10: Web tier servers
 # VLAN 20: Application tier servers
 # VLAN 30: Database tier servers

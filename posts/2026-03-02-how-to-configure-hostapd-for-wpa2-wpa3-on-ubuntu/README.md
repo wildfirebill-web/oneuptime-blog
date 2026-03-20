@@ -16,6 +16,7 @@ Before configuring WPA3, verify your wireless adapter and kernel support it:
 
 ```bash
 # Check if your adapter supports SAE (WPA3)
+
 sudo iw list | grep -i sae
 
 # Example output showing SAE support:

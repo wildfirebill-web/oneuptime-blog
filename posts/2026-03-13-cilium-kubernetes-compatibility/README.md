@@ -29,6 +29,7 @@ Verify Kubernetes version against Cilium support matrix:
 
 ```bash
 # Check current Kubernetes version
+
 kubectl version --short
 # Server Version: v1.29.x
 

@@ -14,6 +14,7 @@ Custom VHD images for Azure let you deploy pre-configured RHEL virtual machines 
 
 ```toml
 # azure-golden-image.toml
+
 name = "azure-golden-image"
 description = "Organization standard RHEL VHD for Azure"
 version = "1.0.0"

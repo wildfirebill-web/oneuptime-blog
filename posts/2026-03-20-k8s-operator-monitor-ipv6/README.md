@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Operators, IPv6, Monitoring, Prometheus
+Tags: Kubernetes, Operator, IPv6, Monitoring, Prometheus
 
 Description: Monitor Kubernetes operator health and the IPv6 resources it manages using Prometheus metrics and custom alerts.
 
@@ -100,6 +100,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 ```bash
 # Create a KIND cluster with dual-stack support
+
 cat > kind-dual-stack.yaml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

@@ -24,6 +24,7 @@ Create the Lambda function and connect it to your User Pool:
 
 ```hcl
 # Lambda function for Pre Sign-Up trigger
+
 resource "aws_lambda_function" "pre_signup" {
   filename         = data.archive_file.pre_signup.output_path
   source_code_hash = data.archive_file.pre_signup.output_base64sha256

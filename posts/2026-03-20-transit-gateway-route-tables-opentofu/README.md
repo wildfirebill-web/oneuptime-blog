@@ -20,6 +20,7 @@ AWS Transit Gateway acts as a network hub connecting multiple VPCs and on-premis
 
 ```hcl
 # Create Transit Gateway with default route table disabled
+
 # so we can manage route tables explicitly
 resource "aws_ec2_transit_gateway" "main" {
   description                     = "Main Transit Gateway"

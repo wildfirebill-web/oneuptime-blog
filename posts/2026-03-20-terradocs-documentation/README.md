@@ -20,6 +20,7 @@ Learn how to use terraform-docs to automatically generate documentation from Ope
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

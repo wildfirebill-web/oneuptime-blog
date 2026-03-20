@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AI, Agents, LLM, Architecture, Machine Learning
+Tags: AI, Agent, LLM, Architecture, Machine Learning
 
 Description: Design AI agent systems with planning, tool use, memory, and orchestration for autonomous task completion and multi-agent collaboration.
 
@@ -28,6 +28,7 @@ At the heart of every agent is the execution loop. Here is a basic implementatio
 
 ```python
 # agent_loop.py - Core agent execution loop
+
 from dataclasses import dataclass
 from typing import List, Dict, Any, Optional
 import json

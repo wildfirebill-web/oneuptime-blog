@@ -16,6 +16,7 @@ Start with the built-in Kubernetes health check endpoints.
 
 ```bash
 # Set up kubectl (if not already done)
+
 export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
 
 # Check all node statuses

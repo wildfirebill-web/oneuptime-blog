@@ -1,4 +1,4 @@
-# How to Use GCS Bucket Module Sources in OpenTofu
+# How to Use GCS Bucket Module Sources in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -68,6 +68,7 @@ resource "google_storage_bucket" "modules" {
 
 ```bash
 # Package the module
+
 cd modules/vpc
 zip -r /tmp/vpc-v1.0.0.zip .
 

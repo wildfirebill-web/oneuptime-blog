@@ -194,6 +194,7 @@ Check the current configuration.
 
 ```bash
 # Get current CORS configuration
+
 aws s3api get-bucket-cors --bucket my-assets-bucket
 ```
 

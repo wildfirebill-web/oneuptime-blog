@@ -27,6 +27,7 @@ The agent supports specific Kafka client versions. Check compatibility:
 
 ```bash
 # Check your Kafka client version
+
 mvn dependency:tree -Dincludes=org.apache.kafka
 
 # Agent support: kafka-clients 0.11.0 to 3.x

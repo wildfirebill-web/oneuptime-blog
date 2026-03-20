@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, workloads, kubernetes
+Tags: Rancher, Migration, Workloads, Kubernetes
 
 Description: Guide to safely migrating running workloads from one Rancher-managed cluster to another.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

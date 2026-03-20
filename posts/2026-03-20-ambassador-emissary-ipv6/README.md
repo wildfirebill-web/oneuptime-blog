@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Ambassador, Emissary-Ingress, Kubernetes, Envoy, API Gateway
+Tags: IPv6, Ambassador, Emissary-ingress, Kubernetes, Envoy, API Gateway
 
 Description: Configure Ambassador (now Emissary-Ingress) API gateway for IPv6 in Kubernetes, including service exposure with IPv6 load balancers, Mapping configuration for IPv6 backends, and client IP handling.
 
@@ -28,6 +28,7 @@ service:
     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
 
 # Emissary (Envoy) listens on all interfaces including IPv6 by default
+
 # when deployed in a dual-stack Kubernetes cluster
 ```
 
@@ -165,7 +166,7 @@ spec:
 ## IPv6 Client IP Extraction in Emissary
 
 ```yaml
-# xff-config.yaml — Configure trusted proxy CIDRs
+# xff-config.yaml - Configure trusted proxy CIDRs
 
 apiVersion: getambassador.io/v3alpha1
 kind: Module
@@ -206,4 +207,4 @@ kubectl describe mapping myapp-mapping -n production | grep -A5 "Status"
 
 ## Conclusion
 
-Emissary-Ingress (Ambassador) supports IPv6 through its underlying Envoy Proxy, which listens on `::` for all IPv6 interfaces when the pod has IPv6 connectivity in a dual-stack cluster. The Kubernetes service uses `ipFamilyPolicy: PreferDualStack` for IPv6 external load balancer addresses. Mapping CRDs route IPv6 client requests to backend Kubernetes services by name — service name resolution in dual-stack clusters returns both IPv4 and IPv6 endpoints. Configure `xff_num_trusted_hops` in the Ambassador Module to extract real client IPv6 addresses when behind cloud load balancers. The Host CRD manages TLS termination, and certificates for IPv6 ingress must include domain SANs (not IP SANs, since hostnames are used).
+Emissary-Ingress (Ambassador) supports IPv6 through its underlying Envoy Proxy, which listens on `::` for all IPv6 interfaces when the pod has IPv6 connectivity in a dual-stack cluster. The Kubernetes service uses `ipFamilyPolicy: PreferDualStack` for IPv6 external load balancer addresses. Mapping CRDs route IPv6 client requests to backend Kubernetes services by name - service name resolution in dual-stack clusters returns both IPv4 and IPv6 endpoints. Configure `xff_num_trusted_hops` in the Ambassador Module to extract real client IPv6 addresses when behind cloud load balancers. The Host CRD manages TLS termination, and certificates for IPv6 ingress must include domain SANs (not IP SANs, since hostnames are used).

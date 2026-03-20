@@ -35,6 +35,7 @@ Make sure you have:
 
 ```bash
 # Install Firebase CLI if you have not already
+
 npm install -g firebase-tools
 
 # Log in to Firebase

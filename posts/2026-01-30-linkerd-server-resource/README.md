@@ -54,6 +54,7 @@ Check your installation:
 
 ```bash
 # Verify Linkerd version
+
 linkerd version
 
 # Check policy controller is running

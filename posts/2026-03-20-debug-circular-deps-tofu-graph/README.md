@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Circular Dependencies, Debugging, tofu graph, Infrastructure as Code
+Tags: OpenTofu, Circular Dependencies, Debugging, Tofu graph, Infrastructure as Code
 
 Description: Learn how to use the tofu graph command to detect and resolve circular dependencies in OpenTofu configurations.
 
@@ -12,7 +12,7 @@ Circular dependencies occur when resource A depends on resource B, and resource 
 
 When a cycle exists, `tofu plan` or `tofu apply` produces an error like:
 
-```
+```text
 Error: Cycle: aws_security_group.app, aws_instance.web
 ```
 
@@ -22,10 +22,11 @@ This tells you the two resources form a cycle, but not *why*. Use `tofu graph` t
 
 ```bash
 # -draw-cycles highlights cyclic edges with a red dashed line
+
 tofu graph -draw-cycles | dot -Tsvg -o cycle-graph.svg
 ```
 
-Open the SVG in a browser — cycle edges appear as dashed red arrows. Trace them to find which attribute references are creating the loop.
+Open the SVG in a browser - cycle edges appear as dashed red arrows. Trace them to find which attribute references are creating the loop.
 
 ## Common Causes and Fixes
 
@@ -39,7 +40,7 @@ resource "aws_instance" "web" {
 
 resource "aws_security_group" "app" {
   ingress {
-    # Trying to reference the instance's private IP — creates a cycle
+    # Trying to reference the instance's private IP - creates a cycle
     cidr_blocks = ["${aws_instance.web.private_ip}/32"]
   }
 }
@@ -74,7 +75,7 @@ module "a" {
 
 module "b" {
   source = "./module-b"
-  input  = module.a.output_value  # depends on module A — CYCLE
+  input  = module.a.output_value  # depends on module A - CYCLE
 }
 ```
 

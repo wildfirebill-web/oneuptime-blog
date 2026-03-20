@@ -43,6 +43,7 @@ IAM is globally replicated across AWS regions, and new IAM resources can take se
 
 ```hcl
 # Create an IAM role
+
 resource "aws_iam_role" "lambda" {
   name = "lambda-execution-role"
   assume_role_policy = jsonencode({

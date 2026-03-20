@@ -14,6 +14,7 @@ MongoDB TLS/SSL encrypts all data in transit between clients and the server. For
 
 ```bash
 # CA certificate
+
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -days 3650 -key ca.key -out ca.crt \
   -subj "/CN=MongoDB CA"
@@ -99,7 +100,7 @@ mongoose.connect("mongodb://appuser:password@10.0.0.5:27017/appdb", {
 ## Replica Set with TLS
 
 ```yaml
-# /etc/mongod.conf — replica set with TLS
+# /etc/mongod.conf - replica set with TLS
 replication:
   replSetName: "rs0"
 

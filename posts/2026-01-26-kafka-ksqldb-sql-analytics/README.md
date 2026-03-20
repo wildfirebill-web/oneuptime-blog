@@ -16,6 +16,7 @@ Deploy ksqlDB alongside your Kafka cluster.
 
 ```yaml
 # docker-compose.yml
+
 version: '3'
 services:
   zookeeper:

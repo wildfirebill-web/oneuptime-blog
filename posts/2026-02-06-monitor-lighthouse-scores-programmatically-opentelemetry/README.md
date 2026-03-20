@@ -398,6 +398,7 @@ Add the audit to your deployment pipeline so every release gets a performance sc
 
 ```yaml
 # .github/workflows/lighthouse.yml
+
 name: Lighthouse Audit
 on:
   deployment_status:

@@ -24,6 +24,7 @@ The `--build-context` flag follows this pattern:
 
 ```bash
 # General syntax
+
 podman build --build-context <name>=<source> -t <image-name> .
 ```
 

@@ -35,6 +35,7 @@ The simplest multi-region setup is one write region with multiple read regions. 
 
 ```bash
 # Add a read region to an existing Cosmos DB account
+
 # This example adds Southeast Asia as a second region
 az cosmosdb update \
     --name myCosmosAccount \

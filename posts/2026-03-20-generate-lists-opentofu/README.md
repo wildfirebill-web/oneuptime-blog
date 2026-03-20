@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lists, Collections, HCL, range, Functions, Infrastructure as Code
+Tags: OpenTofu, Lists, Collections, HCL, Range, Functions, Infrastructure as Code
 
-Description: Learn how to generate lists and collections in OpenTofu using range(), for expressions, flatten(), and other functions — creating dynamic resource configurations from compact inputs.
+Description: Learn how to generate lists and collections in OpenTofu using range(), for expressions, flatten(), and other functions - creating dynamic resource configurations from compact inputs.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ OpenTofu provides several functions for generating and transforming lists: `rang
 
 ```hcl
 # Generate a sequence of numbers
+
 locals {
   port_sequence = range(8000, 8010)
   # [8000, 8001, 8002, 8003, 8004, 8005, 8006, 8007, 8008, 8009]
@@ -150,7 +151,7 @@ variable "environment_list" {
 locals {
   # toset removes duplicates and sorts
   unique_environments = toset(var.environment_list)
-  # {"dev", "prod", "staging"} — sorted, deduplicated
+  # {"dev", "prod", "staging"} - sorted, deduplicated
 
   # tolist ensures list type
   env_list = tolist(local.unique_environments)

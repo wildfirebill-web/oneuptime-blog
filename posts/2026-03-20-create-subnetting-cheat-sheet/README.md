@@ -44,7 +44,7 @@ generate_cheat_sheet(20, 32)
 
 ## Powers of 2 Reference
 
-```
+```text
 2^1  = 2        2^9  = 512
 2^2  = 4        2^10 = 1,024
 2^3  = 8        2^11 = 2,048

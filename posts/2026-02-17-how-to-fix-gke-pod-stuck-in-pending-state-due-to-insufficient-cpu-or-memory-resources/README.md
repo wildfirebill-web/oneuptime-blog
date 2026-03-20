@@ -18,6 +18,7 @@ The first thing to do is check what the scheduler is actually telling you. Run k
 
 ```bash
 # Check the events section for scheduling failures
+
 kubectl describe pod your-pod-name -n your-namespace
 ```
 

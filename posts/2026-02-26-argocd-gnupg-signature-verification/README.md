@@ -44,6 +44,7 @@ Before enabling verification, make sure your developers have GPG signing set up:
 
 ```bash
 # Generate a GPG key pair (if you don't have one)
+
 gpg --full-generate-key
 # Select RSA and RSA, 4096 bits, set expiration
 

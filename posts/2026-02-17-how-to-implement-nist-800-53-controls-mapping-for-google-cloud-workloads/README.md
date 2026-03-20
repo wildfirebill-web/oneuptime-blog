@@ -31,6 +31,7 @@ Here is a sample controls mapping file that ties NIST control IDs to specific GC
 
 ```yaml
 # nist-controls-mapping.yaml
+
 # Maps NIST 800-53 controls to GCP service configurations
 controls:
   AC-2:  # Account Management

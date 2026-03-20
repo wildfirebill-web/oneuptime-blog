@@ -51,6 +51,7 @@ Start by identifying the metrics that matter most to your users and business:
 
 ```python
 # steady_state.py
+
 # Define and validate steady state hypotheses
 
 from dataclasses import dataclass, field

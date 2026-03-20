@@ -16,6 +16,7 @@ Without `run_once`, a task executes once per host in the play. With `run_once: t
 
 ```yaml
 # run-once-basic.yml - Demonstrating run_once behavior
+
 ---
 - name: Show run_once behavior
   hosts: webservers    # Assume: web1, web2, web3, web4, web5

@@ -34,6 +34,7 @@ PDBs are your primary defense against cascading disruptions:
 
 ```yaml
 # pdb.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

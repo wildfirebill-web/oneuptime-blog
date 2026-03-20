@@ -18,6 +18,7 @@ This seems obvious, but always start here:
 
 ```bash
 # Check agent status on Linux
+
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -a status
 ```

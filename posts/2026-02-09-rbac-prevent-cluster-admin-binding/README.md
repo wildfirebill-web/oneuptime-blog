@@ -34,6 +34,7 @@ Test the protection:
 
 ```bash
 # As a user WITHOUT cluster-admin
+
 kubectl create clusterrolebinding test-escalation \
   --clusterrole=cluster-admin \
   --user=myself@company.com \

@@ -34,6 +34,7 @@ Cargo makes it simple to start a new Rust project with the proper structure.
 
 ```bash
 # Create a new binary project
+
 cargo new my_app
 
 # Navigate into the project

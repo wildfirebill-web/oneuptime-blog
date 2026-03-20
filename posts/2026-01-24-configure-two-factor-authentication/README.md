@@ -97,6 +97,7 @@ class TOTPManager:
 
 
 # Usage in Flask application
+
 from flask import Flask, request, jsonify, session
 from models import User
 

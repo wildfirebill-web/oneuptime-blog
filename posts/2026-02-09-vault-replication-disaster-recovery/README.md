@@ -24,6 +24,7 @@ Before implementing DR replication:
 
 ```bash
 # Verify Vault Enterprise is installed
+
 vault version
 # Should show: Vault v1.x.x+ent
 

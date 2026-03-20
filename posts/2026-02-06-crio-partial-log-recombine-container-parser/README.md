@@ -127,6 +127,7 @@ Some clusters run both Docker and CRI-O containers. The log formats are differen
 
 ```text
 # Docker JSON format
+
 {"log":"Hello from Docker\n","stream":"stdout","time":"2026-02-06T10:00:00Z"}
 
 # CRI format

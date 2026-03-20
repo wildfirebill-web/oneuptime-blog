@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider
 
 Description: Learn how to declare required providers in OpenTofu using the required_providers block to specify provider sources and version constraints.
 
@@ -68,9 +68,10 @@ terraform {
 The `source` follows the format `HOSTNAME/NAMESPACE/TYPE`:
 
 ```hcl
-# Default registry (registry.opentofu.org) — hostname can be omitted
+# Default registry (registry.opentofu.org) - hostname can be omitted
+
 aws = {
-  source = "hashicorp/aws"        # Short form — uses registry.opentofu.org
+  source = "hashicorp/aws"        # Short form - uses registry.opentofu.org
 }
 
 # Explicit full address
@@ -96,7 +97,7 @@ internal = {
 Without `required_providers`, OpenTofu makes assumptions:
 
 ```hcl
-# BAD: no declaration — OpenTofu guesses the source and uses latest version
+# BAD: no declaration - OpenTofu guesses the source and uses latest version
 resource "aws_s3_bucket" "example" {
   bucket = "my-bucket"
 }

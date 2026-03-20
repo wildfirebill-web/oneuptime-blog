@@ -20,6 +20,7 @@ A pull-through cache acts as a transparent proxy between Podman and a remote reg
 
 ```bash
 # Without caching:
+
 # podman pull -> internet -> docker.io -> download image
 
 # With caching:

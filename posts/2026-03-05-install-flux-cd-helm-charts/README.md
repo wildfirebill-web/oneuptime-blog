@@ -33,6 +33,7 @@ Add the official Flux CD Helm repository to your Helm configuration.
 
 ```bash
 # Add the Flux CD Helm repository
+
 helm repo add fluxcd https://fluxcd-community.github.io/helm-charts
 
 # Update the Helm repository index

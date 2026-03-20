@@ -18,6 +18,7 @@ If you have not used Pester before, here is the structure. Tests live in `.Tests
 
 ```powershell
 # Example.Tests.ps1 - Basic Pester test structure
+
 Describe "Math Operations" {
     It "should add two numbers correctly" {
         $result = 2 + 2

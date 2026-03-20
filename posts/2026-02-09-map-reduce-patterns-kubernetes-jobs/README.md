@@ -18,6 +18,7 @@ A Kubernetes-based map-reduce consists of three phases: split the input data int
 
 ```yaml
 # Phase 1: Split data (one-time job)
+
 apiVersion: batch/v1
 kind: Job
 metadata:

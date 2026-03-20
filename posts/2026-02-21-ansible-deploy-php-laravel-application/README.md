@@ -49,6 +49,7 @@ laravel-deploy/
 
 ```yaml
 # group_vars/all/vars.yml
+
 app_name: mylaravelapp
 app_user: www-data
 app_dir: /var/www/mylaravelapp

@@ -29,6 +29,7 @@ Verify the intended configuration is active:
 
 ```bash
 # Check current Cilium configuration
+
 cilium config view | head -40
 
 # Specifically check settings related to egress in cilium networking

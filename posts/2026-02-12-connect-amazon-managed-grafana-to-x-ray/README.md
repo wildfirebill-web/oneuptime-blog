@@ -54,6 +54,7 @@ Add X-Ray read permissions to your Grafana workspace role.
 
 ```bash
 # Attach the X-Ray policy to the Grafana workspace role
+
 aws iam put-role-policy \
   --role-name GrafanaWorkspaceRole \
   --policy-name XRayReadAccess \

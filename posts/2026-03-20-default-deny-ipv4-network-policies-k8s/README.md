@@ -12,6 +12,7 @@ A default-deny policy blocks all traffic to and from pods in a namespace unless 
 
 ```yaml
 # default-deny-ingress.yaml
+
 # Applies to ALL pods in the namespace (empty podSelector = all pods)
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

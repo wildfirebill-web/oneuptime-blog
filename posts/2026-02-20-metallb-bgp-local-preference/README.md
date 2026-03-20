@@ -56,6 +56,7 @@ First, define the BGP peers that MetalLB will establish sessions with. Each node
 
 ```yaml
 # bgp-peer-router-a.yaml
+
 # Peer configuration for Router A, connected to Node 1
 apiVersion: metallb.io/v1beta2
 kind: BGPPeer

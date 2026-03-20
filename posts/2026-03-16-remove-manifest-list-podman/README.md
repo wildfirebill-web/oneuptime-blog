@@ -20,6 +20,7 @@ A manifest list is a pointer that references images for different platforms. Whe
 
 ```bash
 # List all manifest lists currently stored
+
 podman manifest inspect myapp:latest 2>/dev/null && echo "Manifest exists" || echo "No manifest"
 
 # List all images including manifest lists

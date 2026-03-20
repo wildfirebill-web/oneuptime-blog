@@ -20,6 +20,7 @@ Get a quick overview of BGP configuration across all nodes:
 
 ```bash
 # Show all nodes with their BGP addresses and AS numbers
+
 calicoctl get nodes -o json | python3 -c "
 import json, sys
 data = json.load(sys.stdin)

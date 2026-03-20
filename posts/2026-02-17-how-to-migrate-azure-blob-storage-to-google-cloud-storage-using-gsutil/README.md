@@ -31,6 +31,7 @@ gsutil needs access to both Azure Blob Storage and Google Cloud Storage.
 
 ```bash
 # Authenticate with Google Cloud
+
 gcloud auth login
 gcloud config set project my-gcp-project
 

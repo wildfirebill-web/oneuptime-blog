@@ -20,6 +20,7 @@ This Dockerfile follows security best practices for a Node.js application.
 
 ```dockerfile
 # Use a specific version tag, never "latest"
+
 FROM node:20.11-alpine3.19 AS builder
 
 # Create a non-root user

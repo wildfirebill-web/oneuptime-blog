@@ -110,6 +110,7 @@ When a node is removed from the cluster, its BlockAffinity resources may become 
 
 ```bash
 # Check for affinities pointing to nodes that no longer exist
+
 calicoctl get blockaffinity -o yaml | grep "node:"
 kubectl get nodes -o name
 

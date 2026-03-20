@@ -16,6 +16,7 @@ The `timestamp()` function returns the current time every time it is evaluated. 
 
 ```hcl
 # Using timestamp() - this will show as changed on EVERY plan
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"
@@ -110,7 +111,7 @@ resource "aws_instance" "example_pts" {
 }
 ```
 
-## Resource Tagging with plantimestamp
+Resource Tagging with plantimestamp
 
 The most common use case is adding deployment metadata to resource tags:
 

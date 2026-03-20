@@ -110,6 +110,7 @@ Create a namespace to isolate your demo workloads:
 
 ```bash
 # Namespaces provide logical separation between workloads
+
 # They prevent resource name collisions and enable access control
 kubectl create namespace demo
 ```

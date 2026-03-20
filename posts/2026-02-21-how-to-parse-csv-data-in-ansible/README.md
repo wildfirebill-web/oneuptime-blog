@@ -16,6 +16,7 @@ The `community.general.read_csv` module reads a CSV file and returns a list of d
 
 ```yaml
 # playbook-read-csv.yml
+
 # Reads a CSV file containing server inventory into Ansible variables
 - name: Read CSV file
   hosts: localhost

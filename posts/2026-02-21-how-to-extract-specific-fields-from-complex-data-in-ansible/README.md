@@ -16,6 +16,7 @@ The simplest method is direct dot notation on Ansible variables:
 
 ```yaml
 # playbook-dot-notation.yml
+
 # Accesses nested fields using simple dot notation
 - name: Extract with dot notation
   hosts: localhost

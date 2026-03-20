@@ -20,6 +20,7 @@ The most basic issue is the watchdog kernel module not loading at all. This mean
 
 ```bash
 # No watchdog device present
+
 talosctl read /sys/class/watchdog/ --nodes 10.0.0.1
 # Empty or missing directory
 

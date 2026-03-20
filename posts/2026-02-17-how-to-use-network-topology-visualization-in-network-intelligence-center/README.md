@@ -32,6 +32,7 @@ Network Topology requires VPC Flow Logs to be enabled on the subnets you want to
 
 ```bash
 # Enable VPC Flow Logs on a specific subnet
+
 gcloud compute networks subnets update my-subnet \
   --region=us-central1 \
   --enable-flow-logs \

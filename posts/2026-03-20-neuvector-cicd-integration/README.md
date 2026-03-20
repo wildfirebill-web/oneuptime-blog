@@ -29,6 +29,7 @@ NeuVector can be integrated at multiple pipeline stages:
 
 ```bash
 # Create dedicated CI/CD user with minimal permissions
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/user" \
   -H "Content-Type: application/json" \
@@ -306,4 +307,4 @@ spec:
 
 ## Conclusion
 
-Integrating NeuVector into CI/CD pipelines creates an automated security checkpoint that scales with your development team. By scanning images at build time and failing pipelines on policy violations, you create a culture where security is a shared responsibility built into the delivery process. Combined with NeuVector's runtime admission control, you have defense in depth — catching vulnerabilities both before deployment and as a last resort at runtime.
+Integrating NeuVector into CI/CD pipelines creates an automated security checkpoint that scales with your development team. By scanning images at build time and failing pipelines on policy violations, you create a culture where security is a shared responsibility built into the delivery process. Combined with NeuVector's runtime admission control, you have defense in depth - catching vulnerabilities both before deployment and as a last resort at runtime.

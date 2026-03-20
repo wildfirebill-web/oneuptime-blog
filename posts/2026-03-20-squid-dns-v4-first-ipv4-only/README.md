@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, DNS, IPv4, dns_v4_first, Configuration, Proxy, Networking
+Tags: Squid, DNS, IPv4, Dns_v4_first, Configuration, Proxy, Networking
 
 Description: Learn how to configure Squid to prefer or exclusively use IPv4 DNS resolution, preventing connections to IPv6 addresses on dual-stack networks.
 
@@ -20,6 +20,7 @@ By default, Squid follows the system resolver's preference. On systems where IPv
 # /etc/squid/squid.conf
 
 # Prefer A (IPv4) records over AAAA (IPv6) records during DNS lookups
+
 # Squid still falls back to IPv6 if no A record exists
 dns_v4_first on
 ```

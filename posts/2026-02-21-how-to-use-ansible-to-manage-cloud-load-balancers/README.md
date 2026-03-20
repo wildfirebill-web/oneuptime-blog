@@ -33,6 +33,7 @@ graph TD
 
 ```yaml
 # playbooks/aws-alb.yml
+
 ---
 - name: Configure AWS Application Load Balancer
   hosts: localhost

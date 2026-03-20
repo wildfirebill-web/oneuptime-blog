@@ -29,6 +29,7 @@ Scrcpy (pronounced "screen copy") displays and controls an Android device from a
 
 ```bash
 # Scrcpy is available in Ubuntu 20.04+ repositories
+
 sudo apt update
 sudo apt install scrcpy -y
 

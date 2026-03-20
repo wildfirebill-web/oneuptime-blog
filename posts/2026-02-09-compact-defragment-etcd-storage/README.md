@@ -18,6 +18,7 @@ Check current database size and revision count:
 
 ```bash
 # Set up etcdctl environment
+
 export ETCDCTL_API=3
 export ETCDCTL_ENDPOINTS=https://127.0.0.1:2379
 export ETCDCTL_CACERT=/etc/kubernetes/pki/etcd/ca.crt

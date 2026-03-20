@@ -28,6 +28,7 @@ The fastest way to onboard a tenant is with the `flux create tenant` command. Th
 
 ```bash
 # Create a new tenant with namespace and RBAC in one command
+
 flux create tenant team-gamma \
   --with-namespace=team-gamma \
   --export > tenant-team-gamma.yaml

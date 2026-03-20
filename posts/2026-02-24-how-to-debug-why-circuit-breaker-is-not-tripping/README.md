@@ -109,6 +109,7 @@ Test with a load generator to verify the circuit breaker works at all:
 
 ```bash
 # Install fortio for load testing
+
 kubectl apply -n production -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/sample-client/fortio-deploy.yaml
 ```
 

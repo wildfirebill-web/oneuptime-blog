@@ -18,6 +18,7 @@ When a pod queries a short name like "api-service", the resolver tries multiple 
 
 ```bash
 # Default search path from pod's /etc/resolv.conf
+
 search default.svc.cluster.local svc.cluster.local cluster.local
 nameserver 10.96.0.10
 ```

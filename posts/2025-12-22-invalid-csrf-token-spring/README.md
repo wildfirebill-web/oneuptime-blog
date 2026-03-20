@@ -399,6 +399,7 @@ class CsrfTest {
 
 ```yaml
 # application.yml
+
 logging:
   level:
     org.springframework.security: DEBUG

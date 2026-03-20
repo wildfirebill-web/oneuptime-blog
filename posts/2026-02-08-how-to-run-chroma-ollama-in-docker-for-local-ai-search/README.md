@@ -28,6 +28,7 @@ Create a project directory and add a `docker-compose.yml` file that runs both Ch
 
 ```yaml
 # docker-compose.yml - Defines the Chroma + Ollama stack
+
 version: "3.8"
 
 services:

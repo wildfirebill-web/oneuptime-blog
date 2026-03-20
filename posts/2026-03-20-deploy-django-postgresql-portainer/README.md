@@ -65,6 +65,7 @@ Configure Django to read settings from environment variables:
 
 ```python
 # config/settings.py
+
 import os
 import dj_database_url
 

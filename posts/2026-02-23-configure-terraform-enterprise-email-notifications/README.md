@@ -20,6 +20,7 @@ Before TFE can send any emails, you need to configure an SMTP server. This is a 
 
 ```bash
 # SMTP configuration for TFE
+
 # Add these to your TFE environment variables or docker-compose.yml
 
 # SMTP server address

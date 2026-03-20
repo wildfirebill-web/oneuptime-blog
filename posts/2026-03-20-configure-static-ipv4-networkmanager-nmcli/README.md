@@ -14,6 +14,7 @@ NetworkManager is the default network management daemon on RHEL, Fedora, CentOS,
 
 ```bash
 # Show all connection profiles
+
 nmcli con show
 
 # Show only active connections
@@ -103,4 +104,4 @@ nmcli con up "static-eth0"
 
 ## Conclusion
 
-`nmcli con mod` combined with `nmcli con up` is the recommended way to configure static IPs with NetworkManager. Changes are persistent immediately — no additional persistence steps needed, as NetworkManager writes the connection profile to disk automatically.
+`nmcli con mod` combined with `nmcli con up` is the recommended way to configure static IPs with NetworkManager. Changes are persistent immediately - no additional persistence steps needed, as NetworkManager writes the connection profile to disk automatically.

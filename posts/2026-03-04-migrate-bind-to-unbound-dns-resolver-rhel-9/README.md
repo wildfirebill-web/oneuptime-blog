@@ -136,6 +136,7 @@ If your BIND config used forwarders, add a forward zone in Unbound:
 cat >> /etc/unbound/unbound.conf << 'EOF'
 
 # Forward all queries to upstream resolvers
+
 # Comment this out for full recursive resolution from root
 forward-zone:
     name: "."

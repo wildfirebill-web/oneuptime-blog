@@ -8,11 +8,11 @@ Description: Enable and verify TCP window scaling to overcome the 64KB receive w
 
 ## Introduction
 
-The original TCP specification limits the receive window field to 16 bits — a maximum of 65,535 bytes (64KB). For modern networks with gigabit bandwidth and milliseconds of latency, this small window severely limits throughput. TCP Window Scaling (RFC 7323) extends the window using a scale factor negotiated during the handshake, allowing windows up to 1 gigabyte.
+The original TCP specification limits the receive window field to 16 bits - a maximum of 65,535 bytes (64KB). For modern networks with gigabit bandwidth and milliseconds of latency, this small window severely limits throughput. TCP Window Scaling (RFC 7323) extends the window using a scale factor negotiated during the handshake, allowing windows up to 1 gigabyte.
 
 ## How Window Scaling Works
 
-```
+```text
 During handshake:
 Client SYN includes: TCP option "window scale = 7"
 Server SYN-ACK includes: TCP option "window scale = 10"
@@ -29,6 +29,7 @@ Effective window = 65535 × 2^10 = 67,107,840 bytes ≈ 64MB
 
 ```bash
 # Check kernel setting (should be 1 by default on modern Linux)
+
 sysctl net.ipv4.tcp_window_scaling
 # net.ipv4.tcp_window_scaling = 1
 

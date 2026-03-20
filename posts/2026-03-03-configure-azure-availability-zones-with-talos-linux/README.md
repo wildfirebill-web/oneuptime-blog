@@ -22,6 +22,7 @@ Create a virtual network with subnets that span all zones. Unlike AWS, Azure sub
 
 ```bash
 # Create the resource group
+
 az group create --name talos-rg --location eastus
 
 # Create the virtual network

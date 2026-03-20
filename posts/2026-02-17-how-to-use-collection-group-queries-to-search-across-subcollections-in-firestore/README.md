@@ -93,6 +93,7 @@ Deploy the index:
 
 ```bash
 # Deploy indexes - this can take a few minutes to build
+
 firebase deploy --only firestore:indexes
 ```
 

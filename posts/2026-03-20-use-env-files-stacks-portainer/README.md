@@ -1,4 +1,4 @@
-# How to Use .env Files with Stacks in Portainer
+# How to Use .env Files with Stacks in Portainer - Use Stacks
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Navigate to **Stacks > Add stack** to create a new stack. You can:
 
 ```yaml
 # Paste this in the Portainer web editor
+
 version: "3.8"
 
 services:

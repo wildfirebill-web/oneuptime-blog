@@ -53,6 +53,7 @@ After an apply, you can retrieve output values at any time without re-applying:
 
 ```bash
 # Show all outputs
+
 terraform output
 
 # Show a specific output

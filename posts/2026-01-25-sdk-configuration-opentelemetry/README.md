@@ -28,6 +28,7 @@ These variables work across all OpenTelemetry SDKs:
 
 ```bash
 # Required: Identifies your service
+
 export OTEL_SERVICE_NAME="order-service"
 
 # Optional: Additional resource attributes

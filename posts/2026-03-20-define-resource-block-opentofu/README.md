@@ -10,10 +10,11 @@ Description: A guide to defining and configuring resource blocks in OpenTofu to 
 
 Resource blocks are the fundamental building blocks of OpenTofu configurations. Each resource block describes one or more infrastructure objects, such as virtual machines, networks, databases, or DNS records. Understanding resource block syntax and structure is essential for writing effective OpenTofu configurations.
 
-## Resource Block Syntax
+Resource Block Syntax
 
 ```hcl
 # Syntax:
+
 # resource "<RESOURCE_TYPE>" "<LOCAL_NAME>" {
 #   argument = value
 # }
@@ -32,7 +33,7 @@ resource "google_compute_instance" "app" {
 }
 ```
 
-## Resource Block Components
+Resource Block Components
 
 ```hcl
 # 1. Resource Type: identifies the provider and resource type
@@ -168,4 +169,4 @@ output "vpc_id" {
 
 ## Conclusion
 
-Resource blocks are where OpenTofu configurations define the actual infrastructure to be created. Understanding the structure — resource type, local name, arguments, nested blocks, and meta-arguments — enables you to configure any resource supported by any provider. The reference syntax `<type>.<name>.<attribute>` creates the dependency graph that OpenTofu uses to determine creation order and parallelism.
+Resource blocks are where OpenTofu configurations define the actual infrastructure to be created. Understanding the structure - resource type, local name, arguments, nested blocks, and meta-arguments - enables you to configure any resource supported by any provider. The reference syntax `<type>.<name>.<attribute>` creates the dependency graph that OpenTofu uses to determine creation order and parallelism.

@@ -44,6 +44,7 @@ If you operate your own satellite, you register it with AWS Ground Station by pr
 
 ```bash
 # List satellites already available in your account
+
 aws groundstation list-satellites \
   --query "satellites[].{Name:satelliteId, NORAD:noradSatelliteID}" \
   --output table

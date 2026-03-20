@@ -30,6 +30,7 @@ session = sagemaker.Session()
 region = session.boto_region_name
 
 # List available model families
+
 model_ids = list_jumpstart_models()
 print(f"Total available models: {len(model_ids)}")
 

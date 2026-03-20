@@ -21,6 +21,7 @@ sudo dnf install -y squid
 ```bash
 sudo tee /etc/squid/squid.conf << 'CONF'
 # Listening port
+
 http_port 3128
 
 # Define local networks

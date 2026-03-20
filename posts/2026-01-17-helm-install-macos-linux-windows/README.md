@@ -45,6 +45,7 @@ Homebrew is the fastest way to install Helm on macOS. It handles versioning, upd
 
 ```bash
 # Install Helm using Homebrew
+
 brew install helm
 
 # Verify the installation succeeded

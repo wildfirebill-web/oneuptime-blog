@@ -42,6 +42,7 @@ Dataplane V2 can only be enabled at cluster creation time - you cannot enable it
 
 ```bash
 # Create a new GKE cluster with Dataplane V2
+
 gcloud container clusters create cilium-cluster \
   --region us-central1 \
   --enable-dataplane-v2 \

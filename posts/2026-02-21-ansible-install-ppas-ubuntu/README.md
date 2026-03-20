@@ -18,6 +18,7 @@ Ansible's `apt_repository` module handles PPA management. Adding a PPA is a one-
 
 ```yaml
 # Add a PPA for the latest Git version
+
 - name: Add Git PPA
   ansible.builtin.apt_repository:
     repo: ppa:git-core/ppa

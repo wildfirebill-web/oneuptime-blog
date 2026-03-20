@@ -24,6 +24,7 @@ Setting an appropriate cache max size prevents these redundant downloads and can
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

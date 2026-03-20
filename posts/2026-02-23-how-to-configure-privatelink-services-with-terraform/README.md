@@ -26,6 +26,7 @@ First, set up the service provider side with an NLB and an endpoint service:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

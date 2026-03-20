@@ -36,6 +36,7 @@ HAProxy requires the certificate and private key in a single PEM file:
 
 ```bash
 # Combine certificate and key into one file
+
 cat /etc/ssl/certs/portainer.crt /etc/ssl/private/portainer.key > /etc/haproxy/certs/portainer.pem
 chmod 600 /etc/haproxy/certs/portainer.pem
 ```

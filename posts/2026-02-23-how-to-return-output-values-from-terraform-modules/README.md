@@ -51,6 +51,7 @@ From the calling configuration, you access outputs with the `module.<MODULE_NAME
 
 ```hcl
 # main.tf - Root module calling the VPC module
+
 module "networking" {
   source = "./modules/vpc"
 
@@ -89,7 +90,7 @@ resource "aws_security_group" "web" {
 
 A good rule of thumb: expose any attribute that another resource or module might reasonably need to reference. Here are the common categories:
 
-### Resource Identifiers
+Resource Identifiers
 
 The most important outputs are IDs and ARNs - the values other resources need to establish relationships:
 

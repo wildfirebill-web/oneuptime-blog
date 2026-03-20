@@ -34,6 +34,7 @@ Here is a straightforward configuration using the Azure CLI. This sets up scale-
 
 ```bash
 # Create an autoscale profile with min/max instance counts
+
 az monitor autoscale create \
   --resource-group myResourceGroup \
   --resource myScaleSet \

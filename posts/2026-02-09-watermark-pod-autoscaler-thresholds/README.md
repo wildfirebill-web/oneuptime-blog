@@ -34,6 +34,7 @@ WPA is a DataDog project. Deploy it using the Helm chart:
 
 ```bash
 # Add DataDog Helm repository
+
 helm repo add datadog https://helm.datadoghq.com
 helm repo update
 

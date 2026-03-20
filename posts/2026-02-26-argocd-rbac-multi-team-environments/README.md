@@ -29,6 +29,7 @@ First, create ArgoCD projects that align with your team structure and environmen
 
 ```yaml
 # Frontend project
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

@@ -20,6 +20,7 @@ Customer-managed keys give you more control, including the ability to rotate key
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

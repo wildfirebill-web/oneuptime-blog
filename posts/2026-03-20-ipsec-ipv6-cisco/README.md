@@ -14,25 +14,25 @@ Cisco IOS supports IPv6 IPsec with IKEv2 using a similar configuration model to 
 
 ### Step 1: IKEv2 Proposal and Policy
 
-```
+```text
 ! IKEv2 Proposal (cipher suites)
 crypto ikev2 proposal IPV6-VPN-PROPOSAL
  encryption aes-cbc-256
  integrity sha256
  group 14        ! DH group 14 (2048-bit MODP)
 
-! IKEv2 Policy — which proposal to use
+! IKEv2 Policy - which proposal to use
 crypto ikev2 policy IPV6-VPN-POLICY
  proposal IPV6-VPN-PROPOSAL
 
-! IKEv2 Keyring — PSK
+! IKEv2 Keyring - PSK
 crypto ikev2 keyring IPV6-KEYRING
  peer GW2
   address 2001:db8:gw2::1
   pre-shared-key local  ChangeThisToAStrongKey
   pre-shared-key remote ChangeThisToAStrongKey
 
-! IKEv2 Profile — ties together auth and keyring
+! IKEv2 Profile - ties together auth and keyring
 crypto ikev2 profile IPV6-PROFILE
  match address local 2001:db8:gw1::1
  match identity remote address 2001:db8:gw2::1
@@ -43,7 +43,7 @@ crypto ikev2 profile IPV6-PROFILE
 
 ### Step 2: IPsec Transform Set and Profile
 
-```
+```text
 ! ESP Transform Set (encryption + authentication)
 crypto ipsec transform-set IPV6-TRANSFORM esp-aes 256 esp-sha256-hmac
  mode tunnel
@@ -58,7 +58,7 @@ crypto ipsec profile IPV6-IPSEC-PROFILE
 
 Modern Cisco IOS uses Virtual Tunnel Interface (VTI) for IPsec:
 
-```
+```text
 ! Create IPv6 Virtual Tunnel Interface
 interface Tunnel0
  ipv6 enable
@@ -75,8 +75,8 @@ ipv6 route 2001:db8:site2::/48 Tunnel0
 
 ### Step 4: Configure on GW2 (Mirror)
 
-```
-! GW2 is the mirror of GW1 — swap local/remote addresses
+```text
+! GW2 is the mirror of GW1 - swap local/remote addresses
 
 crypto ikev2 keyring IPV6-KEYRING
  peer GW1
@@ -103,7 +103,7 @@ ipv6 route 2001:db8:site1::/48 Tunnel0
 
 ## Verification Commands
 
-```
+```text
 ! Show IKEv2 sessions
 Router# show crypto ikev2 session
 
@@ -139,7 +139,7 @@ Router# show ipv6 route 2001:db8:site2::/48
 
 ## Troubleshoot IKEv2 on Cisco
 
-```
+```text
 ! Enable IKEv2 debugging
 Router# debug crypto ikev2
 
@@ -158,7 +158,7 @@ Router# clear crypto ikev2 session
 
 For older IOS versions that don't support VTI:
 
-```
+```text
 ! Create IPv6 ACL for interesting traffic
 ipv6 access-list SITE2-TRAFFIC
  permit ipv6 2001:db8:site1::/48 2001:db8:site2::/48

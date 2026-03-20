@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Socket, shutdown, POSIX, Networking
+Tags: C, IPv4, TCP, Sockets, Shutdown, POSIX, Networking
 
 Description: Learn how to gracefully shut down IPv4 TCP sockets in C using shutdown() and close(), control half-close, drain in-flight data, and handle SO_LINGER for controlled closure.
 
@@ -21,7 +21,7 @@ Description: Learn how to gracefully shut down IPv4 TCP sockets in C using shutd
 
 /* Graceful half-close: signal end of writes, wait for peer to finish */
 void half_close(int fd) {
-    /* Stop sending — peer's recv() will return 0 */
+    /* Stop sending - peer's recv() will return 0 */
     shutdown(fd, SHUT_WR);
 
     /* Drain any remaining data the peer may still send */
@@ -85,7 +85,7 @@ void handle_client(int client_fd) {
         send(client_fd, buf, (size_t)n, 0);
     }
 
-    /* Client sent SHUT_WR or called close() — now shut down our write side */
+    /* Client sent SHUT_WR or called close() - now shut down our write side */
     shutdown(client_fd, SHUT_WR);
 
     /* Let the OS flush any buffered data before close */
@@ -93,7 +93,7 @@ void handle_client(int client_fd) {
 }
 ```
 
-## SO_LINGER — Wait for Data to Flush on close()
+## SO_LINGER - Wait for Data to Flush on close()
 
 ```c
 #include <sys/socket.h>
@@ -167,4 +167,4 @@ sequenceDiagram
 
 ## Conclusion
 
-Use `shutdown(fd, SHUT_WR)` to send a TCP FIN and signal to the peer that you are done writing — the peer's `recv()` returns 0 (EOF). After `shutdown(SHUT_WR)`, continue reading until the peer closes its write side, then call `close()`. Call `close()` alone only when you want the OS to handle the FIN asynchronously. Set `SO_LINGER` with `l_linger > 0` when you need `close()` to block until the send buffer is drained. Set `SO_LINGER` with `l_linger = 0` to immediately send a TCP RST and skip TIME_WAIT — useful for servers that need to reclaim ports quickly, but causes data loss if the send buffer is not empty.
+Use `shutdown(fd, SHUT_WR)` to send a TCP FIN and signal to the peer that you are done writing - the peer's `recv()` returns 0 (EOF). After `shutdown(SHUT_WR)`, continue reading until the peer closes its write side, then call `close()`. Call `close()` alone only when you want the OS to handle the FIN asynchronously. Set `SO_LINGER` with `l_linger > 0` when you need `close()` to block until the send buffer is drained. Set `SO_LINGER` with `l_linger = 0` to immediately send a TCP RST and skip TIME_WAIT - useful for servers that need to reclaim ports quickly, but causes data loss if the send buffer is not empty.

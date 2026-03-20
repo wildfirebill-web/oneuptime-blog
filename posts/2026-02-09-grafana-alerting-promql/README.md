@@ -24,6 +24,7 @@ Navigate to Alerting in the Grafana sidebar, then Alert Rules, and click New Ale
 
 ```yaml
 # Alert rule configuration
+
 Rule name: High CPU Usage
 Folder: Infrastructure
 Evaluation group: compute-alerts
@@ -230,6 +231,7 @@ Alert annotations can include dynamic values from your queries to provide contex
 ```yaml
 Summary: High CPU usage on {{ $labels.instance }}
 Description: |
+
   CPU usage is {{ $values.A.Value | humanizePercentage }}
   on instance {{ $labels.instance }}.
 

@@ -133,6 +133,7 @@ if __name__ == '__main__':
 
 ```bash
 # Create a target group with gRPC protocol version
+
 aws elbv2 create-target-group \
     --name grpc-service-tg \
     --protocol HTTP \

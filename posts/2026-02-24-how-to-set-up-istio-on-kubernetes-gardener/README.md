@@ -89,6 +89,7 @@ Download the kubeconfig for your shoot:
 
 ```bash
 # Through Gardener dashboard: Download kubeconfig
+
 # Or using gardenctl
 gardenctl target --garden my-garden --project my-project --shoot istio-shoot
 export KUBECONFIG=$(gardenctl kubectl-env)

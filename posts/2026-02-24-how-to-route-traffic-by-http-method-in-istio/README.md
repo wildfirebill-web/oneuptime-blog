@@ -210,6 +210,7 @@ Send requests with different methods and verify routing:
 
 ```bash
 # Test GET routing
+
 kubectl exec deploy/sleep -c sleep -- curl -s -X GET http://my-api.default.svc.cluster.local/api/data
 
 # Test POST routing

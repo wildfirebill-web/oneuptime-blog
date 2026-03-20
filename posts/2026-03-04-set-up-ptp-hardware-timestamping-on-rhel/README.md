@@ -14,6 +14,7 @@ Hardware timestamping records the exact time a PTP packet is sent or received at
 
 ```bash
 # Install ethtool if not present
+
 sudo dnf install -y ethtool
 
 # Query timestamping capabilities

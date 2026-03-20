@@ -21,6 +21,7 @@ The first step in troubleshooting any auth issue is checking the logs:
 
 ```bash
 # Get recent auth-related logs
+
 kubectl logs -l app=rancher -n cattle-system --tail=500 | \
   grep -iE "auth|login|ldap|saml|oidc|oauth|azure|github|keycloak" | tail -50
 

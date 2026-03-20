@@ -29,6 +29,7 @@ Creating billing accounts via the CLI is limited, but you can manage existing on
 
 ```bash
 # List your existing billing accounts
+
 gcloud billing accounts list
 
 # View details of a specific billing account

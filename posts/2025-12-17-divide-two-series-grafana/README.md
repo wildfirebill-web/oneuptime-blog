@@ -28,6 +28,7 @@ The most straightforward approach is using PromQL's built-in arithmetic operator
 
 ```promql
 # Calculate error rate
+
 sum(rate(http_requests_total{status=~"5.."}[5m]))
 /
 sum(rate(http_requests_total[5m]))

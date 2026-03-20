@@ -23,6 +23,7 @@ cat > Containerfile << 'EOF'
 FROM docker.io/library/nginx:latest
 
 # Single label
+
 LABEL maintainer="dev@example.com"
 
 # Multiple labels on separate lines

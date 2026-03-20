@@ -365,6 +365,7 @@ Field encryption protects data content. Transport encryption protects data in tr
 
 ```yaml
 # fluent-bit configuration with TLS
+
 [OUTPUT]
     Name          forward
     Match         *

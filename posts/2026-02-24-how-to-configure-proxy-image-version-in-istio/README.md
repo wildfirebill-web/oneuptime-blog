@@ -146,6 +146,7 @@ kubectl rollout restart deployment canary-service
 
 ```bash
 # Check proxy version
+
 kubectl exec -l app=canary-service -c istio-proxy -- pilot-agent request GET /server_info | jq '.version'
 
 # Watch for errors in proxy logs

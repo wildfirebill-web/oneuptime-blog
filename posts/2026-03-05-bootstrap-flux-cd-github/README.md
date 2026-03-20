@@ -47,6 +47,7 @@ For classic tokens, ensure the `repo` scope is selected.
 
 ```bash
 # Export the token as an environment variable
+
 export GITHUB_TOKEN=<your-personal-access-token>
 ```
 

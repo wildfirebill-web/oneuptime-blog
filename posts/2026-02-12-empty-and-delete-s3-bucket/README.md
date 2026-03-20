@@ -18,6 +18,7 @@ If your bucket doesn't have versioning and contains a manageable number of objec
 
 ```bash
 # Empty the bucket
+
 aws s3 rm s3://my-old-bucket --recursive
 
 # Delete the bucket

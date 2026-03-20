@@ -41,6 +41,7 @@ First, define an HPA that targets your primary Deployment. This is the autoscale
 
 ```yaml
 # hpa.yaml
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

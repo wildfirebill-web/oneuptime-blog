@@ -90,6 +90,7 @@ Enable server-side apply for individual resources using annotations:
 
 ```yaml
 # deployment.yaml in your Git repository
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

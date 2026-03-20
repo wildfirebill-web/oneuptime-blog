@@ -20,6 +20,7 @@ Download the official Prometheus image.
 
 ```bash
 # Pull the latest Prometheus image
+
 podman pull docker.io/prom/prometheus:latest
 
 # Verify the image

@@ -41,6 +41,7 @@ RDS Custom for SQL Server needs an instance profile to manage the underlying Win
 
 ```bash
 # Create the IAM role for RDS Custom SQL Server
+
 aws iam create-role \
   --role-name AmazonRDSCustomSQLServerRole \
   --assume-role-policy-document '{

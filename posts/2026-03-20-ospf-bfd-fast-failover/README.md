@@ -8,7 +8,7 @@ Description: Learn how to configure BFD (Bidirectional Forwarding Detection) wit
 
 ## Why BFD with OSPF?
 
-OSPF's default Dead interval is 40 seconds—meaning if a link fails silently (no interface down event), it takes up to 40 seconds to detect the failure and reconverge. BFD provides sub-second failure detection (typically 300ms–1 second) by sending rapid probe packets independently of OSPF. When BFD detects a failure, it immediately notifies OSPF to remove the neighbor.
+OSPF's default Dead interval is 40 seconds-meaning if a link fails silently (no interface down event), it takes up to 40 seconds to detect the failure and reconverge. BFD provides sub-second failure detection (typically 300ms–1 second) by sending rapid probe packets independently of OSPF. When BFD detects a failure, it immediately notifies OSPF to remove the neighbor.
 
 ## How BFD Works with OSPF
 
@@ -31,7 +31,7 @@ BFD timer: 300ms interval × 3 multiplier = 900ms detection time.
 
 BFD is supported on most Cisco IOS/IOS XE platforms but requires the platform to have hardware or software BFD support:
 
-```
+```text
 ! Check BFD configuration
 Router# show bfd neighbors
 ! If the command doesn't exist, BFD is not supported on this platform
@@ -41,7 +41,7 @@ Router# show bfd neighbors
 
 Enable BFD for OSPF directly on the interface:
 
-```
+```text
 Router(config)# interface GigabitEthernet0/0
 ! Enable BFD for OSPF on this interface with default timers
 Router(config-if)# ip ospf bfd
@@ -58,7 +58,7 @@ Configure the same settings on both sides of the link.
 
 Instead of per-interface, enable BFD for all OSPF interfaces at once:
 
-```
+```text
 router ospf 1
  ! Enable BFD for all OSPF interfaces
  bfd all-interfaces
@@ -66,7 +66,7 @@ router ospf 1
 
 ## Step 4: Verify BFD Sessions Are Established
 
-```
+```text
 Router# show bfd neighbors
 
 IPv4 Sessions
@@ -79,7 +79,7 @@ NeighAddr                              LD/RD         RH/RS  State  Int
 
 ## Step 5: Check BFD and OSPF Integration
 
-```
+```text
 ! Verify OSPF sees the BFD association
 Router# show ip ospf neighbor detail | include BFD
 
@@ -93,12 +93,13 @@ Router# show ip ospf neighbor detail | include BFD
 
 ```bash
 # In FRR vtysh or frr.conf
+
 # First enable bfdd daemon:
 sudo sed -i 's/bfdd=no/bfdd=yes/' /etc/frr/daemons
 sudo systemctl restart frr
 ```
 
-```
+```text
 ! In vtysh
 router ospf
  bfd
@@ -118,7 +119,7 @@ bfd
 
 Simulate a link failure and measure convergence time:
 
-```
+```text
 ! On R2 - simulate failure
 R2(config)# interface GigabitEthernet0/0
 R2(config-if)# shutdown
@@ -141,7 +142,7 @@ R1# show ip route ospf
 | WAN (low-bandwidth) | 1000ms | 3 | 3 seconds |
 | Unstable links | 1000ms | 5 | 5 seconds |
 
-Don't set BFD intervals too aggressive on CPU-constrained hardware—it can overload the control plane.
+Don't set BFD intervals too aggressive on CPU-constrained hardware-it can overload the control plane.
 
 ## Conclusion
 

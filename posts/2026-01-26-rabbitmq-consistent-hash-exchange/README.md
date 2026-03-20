@@ -47,6 +47,7 @@ The consistent hash exchange is a plugin that ships with RabbitMQ:
 
 ```bash
 # Enable the plugin
+
 rabbitmq-plugins enable rabbitmq_consistent_hash_exchange
 
 # Verify it's enabled

@@ -32,6 +32,7 @@ When a chart releases a new version with bug fixes or features, upgrade your rel
 
 ```bash
 # First, update your repository cache to see the latest versions
+
 helm repo update
 
 # Check what versions are available

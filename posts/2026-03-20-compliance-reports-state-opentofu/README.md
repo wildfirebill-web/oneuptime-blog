@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # List all resources in state
+
 tofu state list
 
 # Show specific resource details
@@ -139,7 +140,7 @@ aws configservice get-compliance-details-by-config-rule \
 ## Change Tracking with CloudTrail
 
 ```hcl
-# cloudtrail.tf — track all infrastructure API calls
+# cloudtrail.tf - track all infrastructure API calls
 resource "aws_cloudtrail" "infrastructure" {
   name                          = "${var.environment}-infrastructure-trail"
   s3_bucket_name                = aws_s3_bucket.cloudtrail.id
@@ -168,6 +169,6 @@ resource "aws_cloudtrail" "infrastructure" {
 
 - Use `tofu show -json` to extract compliance-relevant attributes programmatically for audits.
 - Define `output` blocks that expose compliance attributes (encryption status, multi_az, deletion_protection) so auditors can query them without reading HCL.
-- Enable CloudTrail with log file validation — this proves to auditors that log files have not been tampered with.
+- Enable CloudTrail with log file validation - this proves to auditors that log files have not been tampered with.
 - Store compliance reports in S3 with versioning and object lock for tamper-proof retention.
 - Schedule monthly compliance reports and send summaries to security and engineering leadership.

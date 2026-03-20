@@ -25,6 +25,7 @@ The issue is that the identity running the scheduled query might not have access
 
 ```bash
 # List your scheduled queries (transfers)
+
 bq ls --transfer_config --transfer_location=us
 
 # Get details about a specific scheduled query

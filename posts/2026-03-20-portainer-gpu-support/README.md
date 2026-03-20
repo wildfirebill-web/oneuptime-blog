@@ -1,4 +1,4 @@
-# How to Enable GPU Support for Containers in Portainer
+# How to Enable GPU Support for Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Before configuring in Portainer, the host must have the NVIDIA Container Toolkit
 # Install NVIDIA Container Toolkit (Ubuntu/Debian)
 
 # Add NVIDIA package repositories
+
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
     sudo apt-key add -
@@ -244,4 +245,4 @@ nvidia-smi   # Should work on the host
 
 ## Conclusion
 
-Enabling GPU support for containers in Portainer requires proper host setup (NVIDIA drivers + Container Toolkit) followed by configuring GPU resources in the container or stack definition. Once set up, Portainer makes it straightforward to deploy and manage GPU-accelerated workloads — from machine learning inference to video transcoding — as part of your standard container management workflow.
+Enabling GPU support for containers in Portainer requires proper host setup (NVIDIA drivers + Container Toolkit) followed by configuring GPU resources in the container or stack definition. Once set up, Portainer makes it straightforward to deploy and manage GPU-accelerated workloads - from machine learning inference to video transcoding - as part of your standard container management workflow.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Streams, TCP, IPv4, Backpressure, net Module, Performance
+Tags: Node.js, Streams, TCP, IPv4, Backpressure, Net Module, Performance
 
 Description: Use Node.js streams and the net module to efficiently stream large data sets over IPv4 TCP connections with proper backpressure handling.
 
@@ -13,7 +13,7 @@ Node.js TCP sockets are duplex streams. This means you can pipe readable streams
 ## Streaming a File to a Client
 
 ```javascript
-// server.js — stream a file to connecting clients
+// server.js - stream a file to connecting clients
 const net = require('net');
 const fs = require('fs');
 const path = require('path');
@@ -149,7 +149,7 @@ server.listen(5000, '0.0.0.0', () => {
 ## Receiving a Stream (Client Side)
 
 ```javascript
-// client.js — receive and process a stream
+// client.js - receive and process a stream
 const net = require('net');
 
 const client = net.createConnection({

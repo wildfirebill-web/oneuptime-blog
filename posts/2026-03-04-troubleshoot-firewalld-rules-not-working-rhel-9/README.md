@@ -32,6 +32,7 @@ graph TD
 
 ```bash
 # Check firewalld status
+
 systemctl status firewalld
 
 # Check firewalld state

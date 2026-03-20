@@ -32,6 +32,7 @@ Basic file provider configuration structure:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

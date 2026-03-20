@@ -12,7 +12,7 @@ The first field in both IPv4 and IPv6 headers is the 4-bit Version field. For IP
 
 ## Field Specification
 
-```
+```text
 IPv6 Header (first 4 bits):
   Bits 0-3: Version = 0b0110 = 0x6 = decimal 6
 
@@ -56,6 +56,7 @@ def identify_ip_version(raw_packet: bytes) -> str:
         return f"Unknown (version {version})"
 
 # Test with raw packet bytes
+
 # IPv6 packet starting with 0x60 (version=6, TC high nibble=0)
 ipv6_bytes = bytes([0x60, 0x00, 0x00, 0x00] + [0x00] * 36)
 print(identify_ip_version(ipv6_bytes))   # IPv6
@@ -93,7 +94,7 @@ void handle_ip_packet(uint8_t *packet, size_t len) {
 
 Note that IPv4 and IPv6 are also distinguished at Layer 2 by the EtherType:
 
-```
+```text
 Ethernet frame:
   EtherType 0x0800 = IPv4
   EtherType 0x86DD = IPv6
@@ -115,7 +116,7 @@ sudo tcpdump -i eth0 -XX ip6 2>/dev/null | grep "0x0000" | head -10
 
 ## Can the Version Field Be Different From 6?
 
-In an IPv6 packet: no. The version field is always 6. It is the first sanity check when parsing — if you receive a packet with EtherType 0x86DD but the Version field is not 6, the packet is malformed or corrupt.
+In an IPv6 packet: no. The version field is always 6. It is the first sanity check when parsing - if you receive a packet with EtherType 0x86DD but the Version field is not 6, the packet is malformed or corrupt.
 
 ```python
 # Python: validate IPv6 packet version field
@@ -144,4 +145,4 @@ IPv5 (ST-II, RFC 1819) was an experimental stream protocol that briefly used ver
 
 ## Conclusion
 
-The IPv6 Version field is a 4-bit field always set to `6`, located in the most significant bits of the first byte of every IPv6 packet. It is the first piece of information any receiver uses to decide how to parse the packet. While trivial to understand, it is foundational — a corrupted or incorrect Version field makes the entire packet uninterpretable, and filtering on this field is the fastest way to separate IPv6 from IPv4 traffic at the packet level.
+The IPv6 Version field is a 4-bit field always set to `6`, located in the most significant bits of the first byte of every IPv6 packet. It is the first piece of information any receiver uses to decide how to parse the packet. While trivial to understand, it is foundational - a corrupted or incorrect Version field makes the entire packet uninterpretable, and filtering on this field is the fastest way to separate IPv6 from IPv4 traffic at the packet level.

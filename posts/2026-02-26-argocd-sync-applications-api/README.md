@@ -26,6 +26,7 @@ The simplest sync triggers a reconciliation with default options:
 
 ```bash
 # Trigger a basic sync
+
 curl -s -k -H "Authorization: Bearer $ARGOCD_TOKEN" \
   -X POST "https://argocd.example.com/api/v1/applications/my-app/sync" \
   -H "Content-Type: application/json" \

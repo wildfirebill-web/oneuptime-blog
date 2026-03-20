@@ -16,6 +16,7 @@ Before starting, confirm KVM is installed and functional:
 
 ```bash
 # Check if KVM is available
+
 kvm-ok
 
 # Verify your user is in the libvirt group

@@ -1,4 +1,4 @@
-# How to Troubleshoot Uneven IPv4 Traffic Distribution Across Load Balancer Backends
+# How to Troubleshoot Uneven IPv4 Load Balancer Distribution
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Uneven traffic distribution is a common load balancing problem. Some backends re
 
 ```bash
 # Show connection counts per server
+
 echo "show stat" | sudo socat stdio /run/haproxy/admin.sock | \
   awk -F',' 'NR>1 && $2!="FRONTEND" && $2!="BACKEND" {
     printf "%-20s %-15s conns=%s req=%s status=%s\n", $1, $2, $19, $48, $18
@@ -53,7 +54,7 @@ Round robin distributes new connections, not requests. If some clients hold conn
 
 **Fix**: Use `leastconn` (HAProxy) or `least_conn` (Nginx) instead:
 
-```
+```nginx
 # HAProxy
 backend app-servers
     balance leastconn
@@ -82,7 +83,7 @@ Reduce stick table entry lifetime or switch from `balance source` to cookie-base
 
 ### Cause 3: Server Weights Are Unequal
 
-```
+```bash
 # Check current weights in HAProxy
 echo "show stat" | sudo socat stdio /run/haproxy/admin.sock | \
   awk -F',' '{print $1, $2, $6}' | head -20
@@ -119,7 +120,7 @@ echo "show stat" | sudo socat stdio /run/haproxy/admin.sock | \
 
 **Fix**: Increase `rise` and `fall` thresholds to prevent flapping:
 
-```
+```text
 server web2 10.0.1.11:8080 check inter 5000 rise 3 fall 5
 ```
 

@@ -29,6 +29,7 @@ Check that the CNI config file on nodes is correctly structured as a chain.
 
 ```bash
 # Inspect the CNI config file - look for a "plugins" array
+
 # The primary CNI plugin should be first, Cilium should follow
 kubectl -n kube-system exec -it \
   $(kubectl -n kube-system get pods -l k8s-app=cilium -o name | head -1) -- \

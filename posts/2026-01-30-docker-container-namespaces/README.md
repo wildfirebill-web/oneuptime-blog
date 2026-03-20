@@ -78,6 +78,7 @@ flowchart LR
 
 ```bash
 # Run a container and check its PID namespace
+
 docker run -d --name test-container nginx
 
 # View processes inside the container

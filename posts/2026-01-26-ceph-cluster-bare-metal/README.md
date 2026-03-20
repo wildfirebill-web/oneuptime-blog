@@ -114,6 +114,7 @@ Run these commands on all nodes. I am using Ubuntu 22.04 LTS, but Ceph supports 
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required dependencies for cephadm

@@ -173,6 +173,7 @@ Do not guess. Look at your current traffic:
 
 ```bash
 # Check current active connections and requests
+
 kubectl exec deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep -E "cx_active|rq_active"
 

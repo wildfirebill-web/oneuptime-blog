@@ -20,6 +20,7 @@ The Logger is the most commonly used Powertools utility. Here's how to set it up
 from aws_lambda_powertools import Logger
 
 # Create a logger with service name
+
 logger = Logger(service="payment-service")
 
 # Environment variable alternative:

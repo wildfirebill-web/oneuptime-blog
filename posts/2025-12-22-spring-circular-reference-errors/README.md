@@ -289,6 +289,7 @@ public class CustomerService {
 
 ```properties
 # application.properties
+
 spring.main.allow-circular-references=false
 ```
 

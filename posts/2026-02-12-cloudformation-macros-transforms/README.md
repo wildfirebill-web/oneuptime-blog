@@ -45,6 +45,7 @@ The Lambda function receives the template fragment, processes it, and returns th
 
 ```yaml
 # macro-stack.yaml - Deploys the macro
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: CloudFormation macro for resource multiplication
 

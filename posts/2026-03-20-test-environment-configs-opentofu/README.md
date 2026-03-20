@@ -8,12 +8,13 @@ Description: Learn how to test environment-specific module configurations in Ope
 
 ## Introduction
 
-Infrastructure modules often need to behave differently across environments — production uses larger instances, enables Multi-AZ, and requires encryption, while dev uses smaller and cheaper resources. Testing environment-specific configurations ensures your module applies the right settings for each environment and that production-only requirements are properly enforced.
+Infrastructure modules often need to behave differently across environments - production uses larger instances, enables Multi-AZ, and requires encryption, while dev uses smaller and cheaper resources. Testing environment-specific configurations ensures your module applies the right settings for each environment and that production-only requirements are properly enforced.
 
 ## Module with Environment-Specific Logic
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   type = string
   validation {
@@ -141,7 +142,7 @@ run "rejects_empty_environment" {
 ## Testing Production-Specific Preconditions
 
 ```hcl
-# main.tf — precondition blocks
+# main.tf - precondition blocks
 resource "aws_instance" "web" {
   instance_type = local.instance_type
 

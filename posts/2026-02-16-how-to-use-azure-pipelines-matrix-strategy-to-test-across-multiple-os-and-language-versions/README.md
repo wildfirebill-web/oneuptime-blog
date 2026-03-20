@@ -39,6 +39,7 @@ Here is a simple matrix that tests a Node.js library across multiple OS and Node
 
 ```yaml
 # Test a Node.js library across platforms and versions
+
 trigger:
   - main
 

@@ -29,6 +29,7 @@ Cilium and Hubble expose several metrics that indicate TCP throughput health:
 
 ```bash
 # Forwarded bytes and packets (overall throughput indicator)
+
 kubectl -n kube-system exec ds/cilium -- \
   wget -qO- http://localhost:9962/metrics 2>/dev/null | \
   grep -E "cilium_forward_bytes_total|cilium_forward_count_total" | grep -v "^#"

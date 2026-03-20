@@ -8,12 +8,13 @@ Description: Learn how to authenticate the OpenTofu azurerm backend using an Azu
 
 ## Introduction
 
-Service Principal authentication is the standard approach for OpenTofu CI/CD pipelines on Azure. A Service Principal represents an application identity with specific permissions — it can authenticate using a client secret or certificate, making it suitable for automated, non-interactive workflows.
+Service Principal authentication is the standard approach for OpenTofu CI/CD pipelines on Azure. A Service Principal represents an application identity with specific permissions - it can authenticate using a client secret or certificate, making it suitable for automated, non-interactive workflows.
 
 ## Step 1: Create a Service Principal
 
 ```bash
 # Create SP and assign Storage Blob Data Contributor
+
 az ad sp create-for-rbac \
   --name "sp-opentofu-state" \
   --role "Storage Blob Data Contributor" \
@@ -175,4 +176,4 @@ az ad app federated-credential create \
 
 ## Conclusion
 
-Service Principal authentication for the azurerm backend provides a reliable, CI/CD-friendly authentication method. Use client certificates instead of secrets where possible for better security. For modern CI/CD platforms, consider workload identity federation as the preferred approach — it eliminates secret management entirely. Always rotate secrets before expiration and use RBAC with least-privilege permissions.
+Service Principal authentication for the azurerm backend provides a reliable, CI/CD-friendly authentication method. Use client certificates instead of secrets where possible for better security. For modern CI/CD platforms, consider workload identity federation as the preferred approach - it eliminates secret management entirely. Always rotate secrets before expiration and use RBAC with least-privilege permissions.

@@ -35,6 +35,7 @@ graph LR
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   cloudbuild.googleapis.com \
   binaryauthorization.googleapis.com \

@@ -32,6 +32,7 @@ sudo vi /etc/ssh/sshd_config.d/15-timeout.conf
 
 ```bash
 # Disconnect after 5 minutes of inactivity
+
 ClientAliveInterval 300
 ClientAliveCountMax 0
 ```

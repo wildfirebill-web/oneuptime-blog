@@ -16,6 +16,7 @@ The classic tool for listing ports is `netstat`. Here is how to use it via an An
 
 ```bash
 # List all listening TCP ports across all servers
+
 ansible all -m shell -a "netstat -tlnp"
 ```
 

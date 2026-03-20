@@ -23,6 +23,7 @@ SNMP versions:
 
 ```bash
 # Install SNMP agent and tools
+
 sudo apt update
 sudo apt install -y snmpd snmp snmp-mibs-downloader
 

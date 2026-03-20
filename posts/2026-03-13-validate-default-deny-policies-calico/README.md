@@ -27,6 +27,7 @@ This guide builds a validation pipeline for Calico default deny policies that yo
 
 ```bash
 # Validate without applying
+
 calicoctl apply -f default-deny.yaml --dry-run
 
 # Validate all policies in a directory

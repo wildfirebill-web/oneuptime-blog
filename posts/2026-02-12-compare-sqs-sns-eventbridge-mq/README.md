@@ -96,6 +96,7 @@ import json
 sqs = boto3.client("sqs")
 
 # Producer sends a message
+
 sqs.send_message(
     QueueUrl="https://sqs.us-east-1.amazonaws.com/123456789/orders",
     MessageBody=json.dumps({

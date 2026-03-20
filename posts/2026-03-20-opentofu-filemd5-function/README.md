@@ -1,11 +1,10 @@
----
-title: "How to Use filemd5() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, crypto
-description: "Learn how to use the filemd5() function in OpenTofu to compute MD5 hashes of files for change detection."
----
-
 # How to Use filemd5() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+
+Description: Learn how to use the filemd5() function in OpenTofu to compute MD5 hashes of files for change detection.
 
 Learn how to use the filemd5() function in OpenTofu to compute MD5 hashes of files for change detection.
 
@@ -13,6 +12,7 @@ Learn how to use the filemd5() function in OpenTofu to compute MD5 hashes of fil
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

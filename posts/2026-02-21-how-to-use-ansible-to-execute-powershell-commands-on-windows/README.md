@@ -18,6 +18,7 @@ Windows host preparation (run this PowerShell on each Windows host):
 
 ```powershell
 # Enable WinRM on the Windows host
+
 Enable-PSRemoting -Force
 winrm quickconfig -q
 winrm set winrm/config/service '@{AllowUnencrypted="true"}'

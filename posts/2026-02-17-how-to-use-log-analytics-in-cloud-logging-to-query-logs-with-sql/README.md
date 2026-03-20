@@ -32,6 +32,7 @@ Log Analytics needs to be enabled on each log bucket you want to query. The `_Re
 
 ```bash
 # Upgrade the _Default bucket to support Log Analytics
+
 gcloud logging buckets update _Default \
   --location=global \
   --enable-analytics \

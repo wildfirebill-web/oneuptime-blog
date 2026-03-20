@@ -20,6 +20,7 @@ Podman is a daemonless container engine developed by Red Hat that offers a Docke
 
 ```bash
 # Install Podman on RHEL/Fedora
+
 sudo dnf install -y podman
 
 # Install Podman on Ubuntu/Debian
@@ -145,4 +146,4 @@ podman ps -a
 
 ## Conclusion
 
-Portainer provides a convenient web interface for managing Podman containers. By exposing the Podman socket, you get the full Portainer experience—stacks, volumes, networks, and more—without requiring the Docker daemon. This setup is ideal for security-focused environments where rootless containers and SELinux integration are requirements.
+Portainer provides a convenient web interface for managing Podman containers. By exposing the Podman socket, you get the full Portainer experience-stacks, volumes, networks, and more-without requiring the Docker daemon. This setup is ideal for security-focused environments where rootless containers and SELinux integration are requirements.

@@ -32,6 +32,7 @@ The OpenTelemetry SDK configuration that enables all of this:
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 resource:

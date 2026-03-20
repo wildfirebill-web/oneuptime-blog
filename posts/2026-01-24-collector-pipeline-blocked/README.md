@@ -54,6 +54,7 @@ The most common cause is an exporter unable to send data fast enough.
 
 ```yaml
 # Problematic configuration - no retry or queue
+
 exporters:
   otlp:
     endpoint: "slow-backend:4317"

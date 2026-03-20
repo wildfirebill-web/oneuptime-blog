@@ -55,6 +55,7 @@ The most common issue is the regex pattern not matching the queue name:
 
 ```bash
 # Check if pattern matches your queue
+
 rabbitmqctl list_policies
 
 # Example output:

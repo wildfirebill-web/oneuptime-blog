@@ -60,6 +60,7 @@ Storage account keys may have been rotated:
 
 ```bash
 # List current access keys
+
 az storage account keys list \
     --resource-group myResourceGroup \
     --account-name mystorageaccount \

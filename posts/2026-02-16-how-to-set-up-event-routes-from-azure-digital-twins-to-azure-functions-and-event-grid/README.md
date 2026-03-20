@@ -39,6 +39,7 @@ Event routes in Azure Digital Twins need an Event Grid topic as the destination.
 
 ```bash
 # Create an Event Grid topic
+
 az eventgrid topic create \
   --name adt-events-topic \
   --resource-group digital-twins-rg \

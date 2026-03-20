@@ -36,6 +36,7 @@ See what versions you can upgrade to:
 
 ```bash
 # Check available upgrade targets for your current version
+
 aws rds describe-db-engine-versions \
   --engine postgres \
   --engine-version 15.4 \

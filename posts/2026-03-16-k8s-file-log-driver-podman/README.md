@@ -18,6 +18,7 @@ The k8s-file log driver writes container logs to files using a format that mirro
 
 ```bash
 # Check the current default log driver
+
 podman info --format '{{.Host.LogDriver}}'
 # Output: k8s-file
 

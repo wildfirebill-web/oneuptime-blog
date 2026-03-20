@@ -29,6 +29,7 @@ Core configuration through Helm:
 
 ```bash
 # View all current configmap values
+
 kubectl -n kube-system get configmap cilium-config -o yaml
 
 # Common general configuration options

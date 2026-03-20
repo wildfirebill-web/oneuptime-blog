@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, Confederations, iBGP, Cisco IOS, Routing, Scalability
+Tags: BGP, Confederations, IBGP, Cisco IOS, Routing, Scalability
 
 Description: Learn how to configure BGP confederations to partition a large AS into sub-ASes, reducing iBGP full-mesh complexity while maintaining consistent routing policy.
 
@@ -35,7 +35,7 @@ graph TD
 
 Each router in sub-AS 65001 specifies the confederation identifier (the public AS) and the list of peer sub-ASes:
 
-```
+```text
 ! R1 configuration - sub-AS 65001, public AS 65000
 R1(config)# router bgp 65001
 
@@ -50,7 +50,7 @@ R1(config-router)# neighbor 2.2.2.2 remote-as 65001
 R1(config-router)# neighbor 2.2.2.2 update-source Loopback0
 ```
 
-```
+```text
 ! R2 configuration - sub-AS 65001
 R2(config)# router bgp 65001
 R2(config-router)# bgp confederation identifier 65000
@@ -68,7 +68,7 @@ R2(config-router)# neighbor 3.3.3.3 ebgp-multihop 2
 
 ## Step 2: Configure Sub-AS 65002 (R3 and R4)
 
-```
+```text
 ! R3 configuration - sub-AS 65002
 R3(config)# router bgp 65002
 R3(config-router)# bgp confederation identifier 65000
@@ -86,7 +86,7 @@ R3(config-router)# neighbor 2.2.2.2 ebgp-multihop 2
 
 ## Step 3: Verify Confederation Sessions
 
-```
+```text
 R2# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -94,13 +94,13 @@ Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/Pfx
 3.3.3.3         4  65002        15      15        4    0    0 00:07:30        3
 ```
 
-Notice that R3 shows as AS 65002—this is the sub-AS, not the confederation ID.
+Notice that R3 shows as AS 65002-this is the sub-AS, not the confederation ID.
 
 ## Step 4: Verify External AS View
 
 From an external router peering with R1, the confederation looks like a single AS:
 
-```
+```text
 ! On external router
 External# show ip bgp 172.16.0.0/24
 

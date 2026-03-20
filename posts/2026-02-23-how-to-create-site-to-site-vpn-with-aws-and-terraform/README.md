@@ -36,6 +36,7 @@ The Virtual Private Gateway is the AWS side of the VPN tunnel.
 
 ```hcl
 # vpn-gateway.tf - AWS side of the VPN
+
 resource "aws_vpn_gateway" "main" {
   vpc_id          = aws_vpc.main.id
   amazon_side_asn = 64512 # Default AWS ASN, change if needed

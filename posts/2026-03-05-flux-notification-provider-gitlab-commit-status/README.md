@@ -30,6 +30,7 @@ Store the GitLab token in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the GitLab access token
+
 kubectl create secret generic gitlab-token \
   --namespace=flux-system \
   --from-literal=token=glpat-YOUR_GITLAB_ACCESS_TOKEN

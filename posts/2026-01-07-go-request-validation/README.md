@@ -43,6 +43,7 @@ First, let's install the validator package and set up a basic project structure.
 
 ```bash
 # Install the validator package (v10 is the latest major version)
+
 go get github.com/go-playground/validator/v10
 ```
 
@@ -1532,7 +1533,7 @@ Key takeaways:
 
 With these techniques, you can confidently validate incoming requests and protect your application from malformed or malicious data.
 
-## Resources
+Resources
 
 - [go-playground/validator GitHub Repository](https://github.com/go-playground/validator)
 - [Validator Documentation](https://pkg.go.dev/github.com/go-playground/validator/v10)

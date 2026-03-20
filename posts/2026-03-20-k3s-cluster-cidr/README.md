@@ -31,6 +31,7 @@ Before setting the cluster CIDR, verify it doesn't conflict with your network:
 
 ```bash
 # Check your current network routes
+
 ip route show
 
 # Check all network interfaces and their subnets

@@ -55,6 +55,7 @@ talosctl provides commands that cover the vast majority of what you would do wit
 
 ```bash
 # Instead of SSH + ps aux
+
 talosctl processes --nodes 192.168.1.10
 
 # Instead of SSH + cat /etc/resolv.conf

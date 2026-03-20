@@ -22,6 +22,7 @@ Grant access to secrets with specific names only.
 
 ```yaml
 # rbac-app-secrets.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

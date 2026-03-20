@@ -20,6 +20,7 @@ A fully qualified image reference follows this pattern:
 
 ```bash
 # Format: registry/namespace/image:tag
+
 # Examples:
 # docker.io/library/nginx:latest
 # quay.io/prometheus/prometheus:v2.50.0

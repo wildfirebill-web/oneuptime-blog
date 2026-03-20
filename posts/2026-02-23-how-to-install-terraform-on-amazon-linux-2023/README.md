@@ -25,6 +25,7 @@ Verify your OS first:
 
 ```bash
 # Check that you are running Amazon Linux 2023
+
 cat /etc/os-release | grep PRETTY_NAME
 ```
 

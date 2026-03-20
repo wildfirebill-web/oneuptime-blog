@@ -45,6 +45,7 @@ Manual sync gives you full control. Changes in Git do not apply until someone cl
 
 ```yaml
 # Manual sync - no automated policy
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

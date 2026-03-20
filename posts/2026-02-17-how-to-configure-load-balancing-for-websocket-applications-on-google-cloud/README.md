@@ -41,6 +41,7 @@ The most critical setting for WebSocket is the backend service timeout. By defau
 
 ```bash
 # Set the backend service timeout to 3600 seconds (1 hour)
+
 # WebSocket connections that are idle for longer than this will be terminated
 gcloud compute backend-services update ws-backend-service \
     --timeout=3600s \

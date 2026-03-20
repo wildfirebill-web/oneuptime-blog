@@ -161,4 +161,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Front Door provides global load balancing, CDN, and WAF in a single service. OpenTofu manages profiles, endpoints, origin groups with health probes, routes, and rule sets — creating a complete, reproducible global application delivery configuration.
+Azure Front Door provides global load balancing, CDN, and WAF in a single service. OpenTofu manages profiles, endpoints, origin groups with health probes, routes, and rule sets - creating a complete, reproducible global application delivery configuration.

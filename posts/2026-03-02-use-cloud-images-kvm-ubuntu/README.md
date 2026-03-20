@@ -27,6 +27,7 @@ Download locations:
 
 ```bash
 # Create directory for base images
+
 sudo mkdir -p /var/lib/libvirt/images/base
 cd /var/lib/libvirt/images/base
 

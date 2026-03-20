@@ -241,6 +241,7 @@ Set your buffer limits based on realistic request sizes:
 
 ```yaml
 # For APIs with JSON payloads (typically small)
+
 max_request_bytes: 1048576  # 1 MB
 
 # For file upload endpoints

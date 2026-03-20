@@ -18,6 +18,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Set a single field
+
 r.hset('user:1', 'name', 'Alice')
 
 # Set multiple fields at once

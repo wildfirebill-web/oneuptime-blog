@@ -24,6 +24,7 @@ Cockpit is a Linux server management tool that includes basic container manageme
 
 ```bash
 # List all containers managed via Cockpit
+
 docker ps -a --format "{{.Names}}\t{{.Image}}\t{{.Status}}"
 # or for Podman
 podman ps -a --format "{{.Names}}\t{{.Image}}\t{{.Status}}"

@@ -41,6 +41,7 @@ gcloud services enable iam.googleapis.com
 
 ```bash
 # For new clusters
+
 gcloud container clusters create my-cluster \
   --region us-central1 \
   --workload-pool=my-project.svc.id.goog

@@ -35,6 +35,7 @@ First, ensure your SSH agent is running and your key is loaded on the control no
 
 ```bash
 # Start the SSH agent if not already running
+
 eval $(ssh-agent -s)
 
 # Add your key to the agent

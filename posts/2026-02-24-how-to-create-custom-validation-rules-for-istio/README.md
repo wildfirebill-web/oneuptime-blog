@@ -248,6 +248,7 @@ Write test cases for your Rego policies. Conftest supports this natively:
 
 ```rego
 # policies/istio/virtualservice_test.rego
+
 package main
 
 test_deny_missing_timeout {

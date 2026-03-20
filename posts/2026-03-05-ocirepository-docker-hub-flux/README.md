@@ -41,6 +41,7 @@ First, authenticate with Docker Hub and push your Kubernetes manifests as OCI ar
 
 ```bash
 # Log in to Docker Hub with your access token
+
 echo $DOCKER_HUB_TOKEN | docker login -u $DOCKER_HUB_USERNAME --password-stdin
 
 # Push the artifact to Docker Hub

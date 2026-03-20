@@ -17,6 +17,7 @@ The `mandatory` filter checks if a variable is defined and has a value. If the v
 ```yaml
 ---
 # mandatory-basic.yml
+
 # Ensure required variables are provided before proceeding
 
 - hosts: webservers

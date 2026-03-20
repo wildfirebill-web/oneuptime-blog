@@ -18,6 +18,7 @@ The `spec.timeout` field sets a global timeout that applies to all Helm actions 
 
 ```yaml
 # helmrelease.yaml - HelmRelease with global timeout
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

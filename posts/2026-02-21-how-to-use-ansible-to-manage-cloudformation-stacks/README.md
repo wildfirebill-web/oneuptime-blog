@@ -22,6 +22,7 @@ You need:
 
 ```bash
 # Install the AWS collection and Python SDK
+
 ansible-galaxy collection install amazon.aws
 pip install boto3 botocore
 ```

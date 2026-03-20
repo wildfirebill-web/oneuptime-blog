@@ -10,7 +10,7 @@ Description: Learn how to manipulate OSPF interface cost values to control which
 
 OSPF selects the path with the lowest cumulative cost from source to destination. Each interface has a cost, and the total path cost is the sum of all outgoing interface costs along the path. By default, cost is calculated as:
 
-```
+```text
 Cost = Reference Bandwidth / Interface Bandwidth
 ```
 
@@ -29,7 +29,7 @@ The problem: everything faster than 100 Mbps has cost 1, making OSPF unable to d
 
 Fix the cost calculation for modern networks by increasing the reference bandwidth:
 
-```
+```text
 ! Set reference bandwidth to 10 Gbps (10,000 Mbps) on ALL routers
 router ospf 1
  auto-cost reference-bandwidth 10000
@@ -47,7 +47,7 @@ router ospf 1
 
 For precise control, set the cost directly on an interface:
 
-```
+```text
 ! Set a high cost on the slow backup link
 Router(config)# interface Serial0/0
 Router(config-if)# ip ospf cost 1000
@@ -63,7 +63,7 @@ Manual cost overrides the auto-cost calculation. Valid range: 1–65535.
 
 Suppose you have two paths: a primary GigE link and a backup Serial link:
 
-```
+```text
 ! Primary path - low cost (preferred)
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip ospf cost 10
@@ -79,7 +79,7 @@ OSPF installs only the GigE path in the routing table. When GigE goes down, OSPF
 
 If you want traffic load-balanced across two parallel links, make their costs equal:
 
-```
+```text
 ! Both links get the same cost for ECMP
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip ospf cost 10
@@ -90,14 +90,14 @@ Router(config-if)# ip ospf cost 10
 
 OSPF installs both routes at equal cost, and Cisco IOS performs per-flow ECMP load balancing. The maximum number of ECMP paths is controlled by:
 
-```
+```text
 router ospf 1
  maximum-paths 4   ! Allow up to 4 equal-cost paths
 ```
 
 ## Step 5: Verify Current OSPF Costs
 
-```
+```text
 ! Check cost on all OSPF interfaces
 Router# show ip ospf interface brief
 
@@ -113,7 +113,7 @@ Router# show ip route 172.16.0.0
 
 ## Step 6: Verify Path Selection After Cost Change
 
-```
+```text
 ! Trigger SPF recalculation after cost change
 ! OSPF automatically detects interface cost changes and runs SPF
 

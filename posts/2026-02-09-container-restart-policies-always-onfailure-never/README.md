@@ -292,6 +292,7 @@ Debug CrashLoopBackOff:
 
 ```bash
 # View current logs
+
 kubectl logs crashing-pod
 
 # View previous container logs

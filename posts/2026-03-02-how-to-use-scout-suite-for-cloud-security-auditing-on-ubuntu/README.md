@@ -16,6 +16,7 @@ Scout Suite requires Python 3.8 or later. Ubuntu 20.04 and later include Python 
 
 ```bash
 # Install Python and pip
+
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip python3-venv
 
@@ -155,6 +156,7 @@ The report organizes findings by service, with each finding showing:
 Finding: s3-bucket-world-readable-acl
 Severity: Critical
 Description: S3 bucket has a public ACL allowing anyone to read its contents
+
 Affected: s3://company-data-bucket
 
 Remediation:

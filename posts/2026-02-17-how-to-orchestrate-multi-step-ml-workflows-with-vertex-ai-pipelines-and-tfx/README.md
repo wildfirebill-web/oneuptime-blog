@@ -38,6 +38,7 @@ This sets up the required dependencies:
 
 ```bash
 # Install TFX and the Vertex AI pipeline runner
+
 pip install tfx[kfp] google-cloud-aiplatform kfp
 
 # Set your GCP project

@@ -22,6 +22,7 @@ This guide covers static provisioning via manifests in Portainer. Use this when 
 
 ```yaml
 # NFS-backed Persistent Volume
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:

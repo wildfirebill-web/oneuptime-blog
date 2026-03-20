@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Varnish, NGINX, Caching, Performance
+Tags: Ubuntu, Varnish, Nginx, Caching, Performance
 
 Description: Configure Varnish Cache as a reverse proxy in front of Nginx on Ubuntu to dramatically improve web application performance and reduce backend server load.
 
@@ -34,6 +34,7 @@ Ubuntu's default Varnish package is often outdated. Use the official Varnish rep
 
 ```bash
 # Install the apt repository tools
+
 sudo apt install -y curl gnupg apt-transport-https
 
 # Add Varnish's signing key and repository

@@ -16,6 +16,7 @@ Make sure you have SSH key access configured for at least one non-root user with
 
 ```bash
 # Verify you can log in with a key
+
 ssh -i ~/.ssh/id_rsa admin@your-server
 
 # Verify sudo works for this user

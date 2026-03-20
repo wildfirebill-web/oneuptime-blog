@@ -23,6 +23,7 @@ modprobe 8021q
 ip link set eth0 up
 
 # VLAN 10: Management (10.10.0.0/24)
+
 ip link add link eth0 name eth0.10 type vlan id 10
 ip addr add 10.10.0.1/24 dev eth0.10
 ip link set eth0.10 up
@@ -65,7 +66,7 @@ ip route show
 
 Each VLAN host must use the Linux router as its default gateway:
 
-```
+```text
 # Host on VLAN 10 (10.10.0.10)
 # Default gateway: 10.10.0.1 (eth0.10 IP)
 

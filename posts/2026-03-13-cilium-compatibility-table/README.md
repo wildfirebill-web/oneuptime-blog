@@ -29,6 +29,7 @@ Determine the correct Cilium version for your environment:
 
 ```bash
 # Step 1: Identify your Kubernetes version
+
 kubectl version -o json | jq -r '.serverVersion | "\(.major).\(.minor)"'
 
 # Step 2: Get all node kernel versions

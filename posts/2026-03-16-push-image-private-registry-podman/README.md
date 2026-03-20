@@ -20,6 +20,7 @@ Start a simple private registry for testing.
 
 ```bash
 # Run a local registry container
+
 podman run -d --name registry \
   -p 5000:5000 \
   -v registry-data:/var/lib/registry \

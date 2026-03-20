@@ -18,6 +18,7 @@ VPC Flow Logs capture a sample of network flows to and from VM instances. Enable
 
 ```bash
 # Enable VPC Flow Logs on a subnet with full sampling
+
 gcloud compute networks subnets update my-subnet \
   --region=us-central1 \
   --enable-flow-logs \

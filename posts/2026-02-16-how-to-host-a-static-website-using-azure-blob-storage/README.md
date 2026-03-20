@@ -40,6 +40,7 @@ Azure creates a `$web` container and provides you with a primary endpoint URL li
 
 ```bash
 # Enable static website hosting on the storage account
+
 az storage blob service-properties update \
   --account-name mystorageaccount \
   --static-website \

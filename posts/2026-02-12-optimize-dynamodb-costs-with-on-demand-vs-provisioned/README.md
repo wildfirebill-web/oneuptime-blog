@@ -140,6 +140,7 @@ You can switch a table's capacity mode, but there are limits - you can only swit
 
 ```bash
 # Switch to on-demand mode
+
 aws dynamodb update-table \
   --table-name my-table \
   --billing-mode PAY_PER_REQUEST

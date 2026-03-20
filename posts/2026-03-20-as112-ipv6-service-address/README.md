@@ -14,7 +14,7 @@ AS112 is a distributed anycast DNS sinkhole that handles reverse DNS queries for
 
 AS112 has two dedicated IPv6 addresses defined in RFC 7534:
 
-```
+```text
 Service Address 1: 2001:4:112::  (anycast)
 Service Address 2: 2620:4f:8000:: (anycast)
 ```
@@ -25,6 +25,7 @@ These are announced via BGP from AS112 nodes worldwide.
 
 ```bash
 # Without AS112: a query for fc00::1 PTR would go to root servers
+
 # With AS112: the query goes to a local AS112 node and returns NXDOMAIN
 
 # Test AS112 is responding for ULA PTR queries
@@ -37,14 +38,14 @@ dig PTR 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.f.ip6.arpa.
 
 ## Zones Handled by AS112
 
-```
+```text
 IPv6 reverse zones delegated to AS112:
-  8.e.f.ip6.arpa.  — fe80::/10 (link-local)
-  9.e.f.ip6.arpa.  — fe90::/12
-  a.e.f.ip6.arpa.  — fea0::/11
-  b.e.f.ip6.arpa.  — feb0::/11 (additional link-local)
-  c.f.ip6.arpa.    — fc00::/7 (ULA)
-  d.f.ip6.arpa.    — fd00::/8 (ULA)
+  8.e.f.ip6.arpa.  - fe80::/10 (link-local)
+  9.e.f.ip6.arpa.  - fe90::/12
+  a.e.f.ip6.arpa.  - fea0::/11
+  b.e.f.ip6.arpa.  - feb0::/11 (additional link-local)
+  c.f.ip6.arpa.    - fc00::/7 (ULA)
+  d.f.ip6.arpa.    - fd00::/8 (ULA)
 ```
 
 ## Running Your Own AS112 Node (DNAME delegation)

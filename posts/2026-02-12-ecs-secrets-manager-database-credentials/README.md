@@ -18,6 +18,7 @@ If you are currently passing database credentials as plain environment variables
 
 ```bash
 # This exposes your credentials to anyone with ecs:DescribeTaskDefinition
+
 aws ecs describe-task-definition --task-definition my-app:5 \
   --query 'taskDefinition.containerDefinitions[0].environment'
 ```

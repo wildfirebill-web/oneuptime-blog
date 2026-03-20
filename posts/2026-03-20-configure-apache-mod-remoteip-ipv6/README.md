@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Apache, mod_remoteip, X-Forwarded-For, Reverse Proxy
+Tags: IPv6, Apache, Mod_remoteip, X-Forwarded-For, Reverse Proxy
 
 Description: Learn how to configure Apache mod_remoteip to correctly identify IPv6 client addresses when Apache is behind a load balancer or reverse proxy that sends X-Forwarded-For headers.
 
@@ -13,7 +13,7 @@ When Apache is behind a load balancer:
 - The real client IP is in `X-Forwarded-For` header
 - `mod_remoteip` overrides REMOTE_ADDR with the real client IP
 
-```
+```text
 Client (2001:db8::client) → LB (2001:db8::lb) → Apache
 Apache sees REMOTE_ADDR = 2001:db8::lb (wrong!)
 X-Forwarded-For: 2001:db8::client (real IP)
@@ -24,6 +24,7 @@ mod_remoteip corrects this → %a = 2001:db8::client
 
 ```bash
 # Debian/Ubuntu
+
 a2enmod remoteip
 systemctl restart apache2
 

@@ -38,6 +38,7 @@ Configure auto-forwarding when creating or updating a queue or subscription.
 
 ```bash
 # Create the destination queues first
+
 az servicebus queue create \
   --name fulfillment-processing \
   --namespace-name my-servicebus \

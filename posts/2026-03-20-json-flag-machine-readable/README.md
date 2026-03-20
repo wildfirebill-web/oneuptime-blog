@@ -16,6 +16,7 @@ The `-json` flag is available on many OpenTofu commands and outputs results in J
 
 ```bash
 # Generate a JSON-formatted plan
+
 tofu plan -json
 
 # Or save a JSON plan

@@ -42,6 +42,7 @@ Create the Keepalived configuration for the primary server.
 
 ```bash
 # keepalived-master.conf - Primary server configuration
+
 # This server has higher priority and will be the default MASTER
 
 global_defs {

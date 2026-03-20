@@ -26,6 +26,7 @@ LLM weights are large (7B parameter models are typically 14-28GB). Set up persis
 
 ```yaml
 # model-storage.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

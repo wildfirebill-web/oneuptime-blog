@@ -38,6 +38,7 @@ Check the HelmRelease status for the specific error:
 
 ```bash
 # Check the HelmRelease status
+
 flux get helmrelease my-app -n default
 
 # Look for the specific error message

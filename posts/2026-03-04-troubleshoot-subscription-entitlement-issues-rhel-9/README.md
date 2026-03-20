@@ -16,6 +16,7 @@ When something seems wrong with subscriptions, start with these commands:
 
 ```bash
 # Check if the system is registered
+
 sudo subscription-manager identity
 
 # Check subscription compliance status

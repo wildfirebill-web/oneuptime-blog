@@ -24,6 +24,7 @@ The stack uses a MariaDB database backend and stores both database files and Nex
 
 ```yaml
 # docker-compose.yml for Nextcloud
+
 version: "3.8"
 
 services:

@@ -16,12 +16,13 @@ CNI configuration files are stored at `/etc/cni/net.d/` on each node:
 
 ```bash
 # List CNI configuration files on a node
+
 ls /etc/cni/net.d/
 
 # Common files:
-# 10-flannel.conflist  — Flannel CNI
-# 10-calico.conflist   — Calico CNI
-# 10-kindnet.conflist  — Kind networking
+# 10-flannel.conflist  - Flannel CNI
+# 10-calico.conflist   - Calico CNI
+# 10-kindnet.conflist  - Kind networking
 ```
 
 ## Validating a CNI Configuration File

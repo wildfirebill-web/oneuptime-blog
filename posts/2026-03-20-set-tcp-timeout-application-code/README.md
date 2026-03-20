@@ -18,6 +18,7 @@ import requests
 import httpx
 
 # Standard socket timeouts
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.settimeout(5.0)  # 5 second timeout for all operations
 
@@ -145,7 +146,7 @@ socket.on('error', (err) => {
 
 ## Timeout Best Practices
 
-```
+```text
 Connect timeout: 1-5 seconds
   - Should be slightly less than your load balancer's connection timeout
   - Fail fast so you can try another server
@@ -164,4 +165,4 @@ Total request timeout = connect + TLS + write + read
 
 ## Conclusion
 
-Application-level timeouts prevent resource exhaustion from unresponsive upstream services. Always set separate connect and read timeouts — connect timeouts catch servers that are down, while read timeouts catch servers that connect but never respond. Use the smallest timeout that allows legitimate operations to complete reliably.
+Application-level timeouts prevent resource exhaustion from unresponsive upstream services. Always set separate connect and read timeouts - connect timeouts catch servers that are down, while read timeouts catch servers that connect but never respond. Use the smallest timeout that allows legitimate operations to complete reliably.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Go, Golang, Development Environment, Docker, Air, Hot Reload
+Tags: Portainer, Go, Golang, Development Environments, Docker, Air, Hot Reload
 
 Description: Learn how to set up a Go development environment with live reload using Air in a Docker container managed by Portainer.
 
@@ -50,6 +50,7 @@ Create `.air.toml` in your project root:
 
 ```toml
 # .air.toml
+
 root = "."
 tmp_dir = "tmp"
 
@@ -91,7 +92,7 @@ func main() {
     })
 
     mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        // Edit and save — air reloads automatically
+        // Edit and save - air reloads automatically
         w.Write([]byte("Go development environment ready"))
     })
 

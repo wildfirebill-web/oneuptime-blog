@@ -16,6 +16,7 @@ The Sentinel CLI is a standalone binary that you can download from the HashiCorp
 
 ```bash
 # Download for Linux
+
 wget https://releases.hashicorp.com/sentinel/0.24.0/sentinel_0.24.0_linux_amd64.zip
 unzip sentinel_0.24.0_linux_amd64.zip
 sudo mv sentinel /usr/local/bin/

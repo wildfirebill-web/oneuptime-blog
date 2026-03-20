@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv4, Data Sources, Prometheus, InfluxDB, Configuration
+Tags: Grafana, IPv4, Data Source, Prometheus, InfluxDB, Configuration
 
 Description: Configure Grafana data sources to connect to Prometheus, InfluxDB, and other backends via IPv4 addresses, using both the UI and provisioning files.
 
@@ -14,7 +14,8 @@ Grafana data sources connect to time-series databases and metric backends. Each 
 
 ```yaml
 # /etc/grafana/provisioning/datasources/prometheus.yml
-# Provisioning file — automatically loaded at startup
+
+# Provisioning file - automatically loaded at startup
 
 apiVersion: 1
 

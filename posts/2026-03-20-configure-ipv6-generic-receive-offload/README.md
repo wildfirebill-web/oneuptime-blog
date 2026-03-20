@@ -26,6 +26,7 @@ With GRO: 1 sk_buff allocation, 1 protocol header parse.
 
 ```bash
 # Check current GRO status
+
 ethtool -k eth0 | grep -i "generic-receive-offload\|gro"
 
 # Enable GRO (usually on by default on modern NICs)
@@ -64,7 +65,7 @@ UDP_GRO = 104
 sock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-# Enable UDP GRO — allows the kernel to coalesce UDP segments
+# Enable UDP GRO - allows the kernel to coalesce UDP segments
 try:
     sock.setsockopt(socket.IPPROTO_UDP, UDP_GRO, 1)
     print("UDP GRO enabled")

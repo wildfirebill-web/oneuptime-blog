@@ -30,6 +30,7 @@ This creates a user pool and app client suitable for AppSync:
 
 ```bash
 # Create the user pool
+
 aws cognito-idp create-user-pool \
   --pool-name AppSyncUsers \
   --auto-verified-attributes email \

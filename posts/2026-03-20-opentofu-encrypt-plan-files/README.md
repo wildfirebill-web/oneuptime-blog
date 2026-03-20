@@ -1,4 +1,4 @@
-# How to Encrypt Plan Files in OpenTofu
+# How to Encrypt Plan Files in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,7 +17,7 @@ Plan files contain:
 - Modified attribute values before and after
 - The full state of all managed resources
 
-In a CI/CD workflow where plans are saved and applied separately, plan files may be stored in artifact repositories, S3 buckets, or passed between systems — all potential exposure points.
+In a CI/CD workflow where plans are saved and applied separately, plan files may be stored in artifact repositories, S3 buckets, or passed between systems - all potential exposure points.
 
 ## Configuration
 
@@ -52,9 +52,10 @@ terraform {
 
 ```bash
 # Save an encrypted plan file
+
 tofu plan -out=production.tfplan
 
-# The file is now encrypted — not human-readable
+# The file is now encrypted - not human-readable
 file production.tfplan
 # production.tfplan: data  (binary, not plain text)
 
@@ -84,7 +85,7 @@ jobs:
         with:
           name: terraform-plan
           path: plan.tfplan
-          # Plan file is encrypted — safe to store as artifact
+          # Plan file is encrypted - safe to store as artifact
 
   apply:
     needs: plan
@@ -153,4 +154,4 @@ plan {
 
 ## Conclusion
 
-Plan file encryption is a simple addition to your existing state encryption configuration — just add a `plan` block with the same method. This protects sensitive values in the plan from exposure in CI/CD artifact storage and ensures that only authorized systems with the decryption key can apply saved plans.
+Plan file encryption is a simple addition to your existing state encryption configuration - just add a `plan` block with the same method. This protects sensitive values in the plan from exposure in CI/CD artifact storage and ensures that only authorized systems with the decryption key can apply saved plans.

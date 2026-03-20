@@ -117,6 +117,7 @@ Use KEDA HTTP Add-on to scale web services from zero based on incoming requests.
 
 ```bash
 # Install KEDA HTTP Add-on
+
 helm install http-add-on kedacore/keda-add-on-http \
   --namespace keda \
   --set interceptor.replicas=2

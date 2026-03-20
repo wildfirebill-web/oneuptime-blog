@@ -183,6 +183,7 @@ cost_counter = meter.create_counter(
 )
 
 # In your agent run:
+
 token_counter.add(total_tokens, {"model": model_name, "agent": agent_name})
 cost_counter.add(estimated_cost, {"model": model_name, "agent": agent_name})
 ```

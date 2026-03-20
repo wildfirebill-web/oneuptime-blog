@@ -18,8 +18,8 @@ Validation happens at the recursive resolver, not the authoritative server. When
 
 ## Enable Validation in BIND (named.conf)
 
-```
-// /etc/named.conf — Enable DNSSEC validation
+```text
+// /etc/named.conf - Enable DNSSEC validation
 
 options {
     // Use built-in IANA root trust anchors
@@ -59,13 +59,14 @@ server:
     access-control: 2001:db8:internal::/48 allow
     access-control: 192.168.0.0/16 allow
 
-    # Aggressive NSEC — faster negative responses
+    # Aggressive NSEC - faster negative responses
     aggressive-nsec: yes
 
     # Minimal responses
     minimal-responses: yes
 
 # Initialize root trust anchor
+
 unbound-anchor -a /var/lib/unbound/root.key
 
 # Start Unbound
@@ -78,15 +79,15 @@ unbound-control status | grep "DNSSEC"
 ## Testing DNSSEC Validation
 
 ```bash
-# Test 1: Valid signed zone — should return AD flag
+# Test 1: Valid signed zone - should return AD flag
 dig +dnssec AAAA www.dnssec-deployment.org @localhost
 # Expect: flags: qr rd ra ad (ad = authenticated data)
 
-# Test 2: Well-known test zone — should work
+# Test 2: Well-known test zone - should work
 dig +dnssec A sigok.verteiltesysteme.net @localhost
 # Response should have AD flag
 
-# Test 3: Deliberately broken zone — should return SERVFAIL
+# Test 3: Deliberately broken zone - should return SERVFAIL
 dig AAAA sigfail.verteiltesysteme.net @localhost
 # Expect: status: SERVFAIL (validation failure)
 # This zone has intentionally broken signatures
@@ -125,7 +126,7 @@ dig +dnssec AAAA www.example.com
 
 # Example of SERVFAIL (validation failure):
 # ;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
-# ;; status: SERVFAIL (no 'ad' flag — validation failed)
+# ;; status: SERVFAIL (no 'ad' flag - validation failed)
 ```
 
 ## Debugging Validation Failures
@@ -133,7 +134,7 @@ dig +dnssec AAAA www.example.com
 ```bash
 # Use +cd flag to bypass validation and see raw response
 dig +dnssec +cd AAAA www.broken-example.com @localhost
-# +cd = checking disabled — gets answer even if invalid
+# +cd = checking disabled - gets answer even if invalid
 
 # Compare with validation enabled:
 dig +dnssec AAAA www.broken-example.com @localhost

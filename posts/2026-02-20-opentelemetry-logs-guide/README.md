@@ -68,6 +68,7 @@ When you emit a log while a span is active, the OpenTelemetry SDK automatically 
 
 ```python
 # Install required packages
+
 # pip install opentelemetry-api opentelemetry-sdk
 # pip install opentelemetry-exporter-otlp
 # pip install opentelemetry-sdk-extension-aws  (if on AWS)

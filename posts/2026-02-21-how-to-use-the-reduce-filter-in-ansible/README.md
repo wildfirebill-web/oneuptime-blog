@@ -29,6 +29,7 @@ For common reduce operations, Ansible has built-in shortcuts:
 
 ```yaml
 # playbook-builtins.yml
+
 # Uses built-in aggregation filters that work like specialized reduce operations
 - name: Built-in aggregation filters
   hosts: localhost

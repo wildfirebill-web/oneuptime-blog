@@ -22,6 +22,7 @@ Create the SendGrid API key and store it in Secret Manager:
 
 ```bash
 # Store the SendGrid API key in Secret Manager
+
 echo -n "SG.your-api-key-here" | \
   gcloud secrets create sendgrid-api-key \
   --data-file=- \

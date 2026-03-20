@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # sonarqube-values.yaml
+
 sonarqube:
   edition: "community"
 

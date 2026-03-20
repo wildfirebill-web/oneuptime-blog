@@ -14,6 +14,7 @@ Description: Configure DNS resolver settings in /etc/resolv.conf including multi
 
 ```bash
 # Minimal /etc/resolv.conf with two nameservers:
+
 cat > /etc/resolv.conf << 'EOF'
 nameserver 8.8.8.8
 nameserver 8.8.4.4
@@ -30,7 +31,7 @@ EOF
 
 ## All Configuration Options
 
-```
+```text
 # /etc/resolv.conf complete reference:
 
 nameserver <IP>

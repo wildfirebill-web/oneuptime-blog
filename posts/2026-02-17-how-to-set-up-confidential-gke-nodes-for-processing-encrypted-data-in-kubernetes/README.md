@@ -31,6 +31,7 @@ This command creates a new GKE cluster where all nodes in the default pool are C
 
 ```bash
 # Create a GKE cluster with Confidential nodes
+
 gcloud container clusters create confidential-cluster \
   --region=us-central1 \
   --machine-type=n2d-standard-4 \

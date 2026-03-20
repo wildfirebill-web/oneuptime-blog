@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFSv4, NFS, Pseudo-filesystem, IPv4, Exports, Linux
+Tags: NFSv4, NFS, Pseudo-filesystem, IPv4, Export, Linux
 
 Description: Set up an NFSv4 pseudo-filesystem root that unifies all exports under a single namespace, configure bind mounts, and mount NFSv4 shares from IPv4 clients.
 
@@ -12,7 +12,7 @@ NFSv4 introduces a pseudo-filesystem: all exports are presented under a single r
 
 ## Understanding NFSv4 Pseudo-Root
 
-```
+```text
 NFSv3: Each share is mounted individually
   client: mount server:/srv/data    /mnt/data
   client: mount server:/srv/backups /mnt/backups
@@ -31,12 +31,13 @@ NFSv4: One root, paths beneath it
 
 ```bash
 # Create the pseudo-root directory
+
 sudo mkdir -p /export
 sudo mkdir -p /export/data
 sudo mkdir -p /export/backups
 sudo mkdir -p /export/logs
 
-# The actual data lives elsewhere — use bind mounts
+# The actual data lives elsewhere - use bind mounts
 sudo mkdir -p /srv/data /srv/backups /var/logs
 
 # Bind mount actual directories into pseudo-root
@@ -48,7 +49,7 @@ sudo mount --bind /var/logs     /export/logs
 ## Making Bind Mounts Persistent
 
 ```bash
-# /etc/fstab — bind mount entries
+# /etc/fstab - bind mount entries
 /srv/data      /export/data     none  bind  0  0
 /srv/backups   /export/backups  none  bind  0  0
 /var/logs      /export/logs     none  bind  0  0
@@ -73,9 +74,9 @@ sudo mount -a
 
 ```bash
 # Key options for NFSv4:
-# fsid=0        — designates pseudo-root (required for the root export)
-# crossmnt      — allow clients to cross mount points within pseudo-root
-# no_subtree_check — improves reliability
+# fsid=0        - designates pseudo-root (required for the root export)
+# crossmnt      - allow clients to cross mount points within pseudo-root
+# no_subtree_check - improves reliability
 
 # Apply exports
 sudo exportfs -ra

@@ -37,6 +37,7 @@ helm repo add apache https://pulsar.apache.org/charts
 helm repo update
 
 # Create namespace
+
 kubectl create namespace pulsar
 
 # Install with BookKeeper

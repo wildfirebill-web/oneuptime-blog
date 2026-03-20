@@ -18,6 +18,7 @@ During ISO installation, access the console logs:
 
 ```bash
 # At the Harvester console, press CTRL+ALT+F2 to switch to a shell
+
 # View installation logs
 journalctl -f
 
@@ -125,7 +126,7 @@ kubectl get events -A --sort-by=.lastTimestamp | tail -30
 
 Common hardware requirements not met:
 
-```
+```text
 - VT-x / AMD-V virtualization must be enabled in BIOS
 - IOMMU must be enabled (for PCI passthrough)
 - Secure Boot must be disabled (Harvester doesn't support Secure Boot)
@@ -149,5 +150,5 @@ kubectl get supportbundle -A
 ## Best Practices
 
 - Verify all hardware meets the Harvester minimum requirements before installation.
-- Use the official Harvester ISO from the releases page — custom or modified ISOs may behave unpredictably.
+- Use the official Harvester ISO from the releases page - custom or modified ISOs may behave unpredictably.
 - Check the Harvester compatibility list for your NIC and storage controller models.

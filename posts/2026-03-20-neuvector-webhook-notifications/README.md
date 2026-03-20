@@ -34,6 +34,7 @@ NeuVector can send security event notifications to external systems via webhooks
 
 ```bash
 # Configure Slack webhook
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/system/webhook" \
   -H "Content-Type: application/json" \

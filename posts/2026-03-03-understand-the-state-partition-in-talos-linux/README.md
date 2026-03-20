@@ -30,6 +30,7 @@ The STATE partition contains several categories of data:
 
 ```bash
 # View the current machine configuration stored on a node
+
 talosctl get machineconfig --nodes 192.168.1.10 -o yaml
 
 # Check the node identity information

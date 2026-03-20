@@ -25,6 +25,7 @@ Deploying the MinIO Operator through Flux CD gives you GitOps control over the o
 
 ```yaml
 # infrastructure/sources/minio-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

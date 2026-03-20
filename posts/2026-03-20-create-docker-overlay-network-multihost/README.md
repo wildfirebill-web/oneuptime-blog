@@ -14,6 +14,7 @@ Docker overlay networks use VXLAN encapsulation to create a Layer 2 network span
 
 ```bash
 # On the first host (manager)
+
 docker swarm init --advertise-addr 192.168.1.10
 
 # Output includes a join token, e.g.:
@@ -21,7 +22,7 @@ docker swarm init --advertise-addr 192.168.1.10
 ```
 
 ```bash
-# On worker hosts — run the join command from the output above
+# On worker hosts - run the join command from the output above
 docker swarm join --token SWMTKN-... 192.168.1.10:2377
 ```
 

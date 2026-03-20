@@ -20,6 +20,7 @@ Import a tar file as a Docker image:
 
 ```bash
 # Create a simple tar file with some content
+
 mkdir -p myroot/app
 echo '#!/bin/sh' > myroot/app/run.sh
 echo 'echo "Hello from tarball image"' >> myroot/app/run.sh

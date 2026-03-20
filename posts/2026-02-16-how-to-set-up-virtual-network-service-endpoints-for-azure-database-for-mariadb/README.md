@@ -54,6 +54,7 @@ First, enable the `Microsoft.DBforMariaDB` service endpoint on the subnet where 
 
 ```bash
 # Enable the service endpoint on the subnet
+
 az network vnet subnet update \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

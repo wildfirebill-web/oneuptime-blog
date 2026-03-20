@@ -36,6 +36,7 @@ The fastest way to get Jaeger running is the all-in-one Docker image, which incl
 
 ```bash
 # Run Jaeger all-in-one with OTLP ports exposed
+
 docker run -d \
   --name jaeger \
   -p 16686:16686 \

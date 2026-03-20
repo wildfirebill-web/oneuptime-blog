@@ -84,6 +84,7 @@ The term query finds documents with an **exact value** in a field. It does NOT a
 
 ```bash
 # Match exact category
+
 curl -X GET "https://localhost:9200/articles/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

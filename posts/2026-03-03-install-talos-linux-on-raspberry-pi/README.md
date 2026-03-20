@@ -25,6 +25,7 @@ Install the tools on your workstation:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install kubectl
@@ -264,7 +265,7 @@ EOF
 
 For Pi 4, make sure USB boot is enabled in the EEPROM configuration. Pi 5 supports USB boot by default.
 
-## Resource Considerations
+Resource Considerations
 
 Raspberry Pis have limited resources compared to cloud instances. Keep these limitations in mind:
 

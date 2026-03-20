@@ -55,6 +55,7 @@ Since OT nodes have no internet access, deploy a local registry mirror in the DM
 
 ```bash
 # Registry mirror in the DMZ
+
 docker run -d \
   --name registry-mirror \
   -p 5000:5000 \
@@ -118,7 +119,7 @@ volumes:
 For regulated environments, integrate Portainer API with your change management system:
 
 ```bash
-# Portainer API — list pending edge deployments for change review
+# Portainer API - list pending edge deployments for change review
 curl -X GET https://portainer-dmz:9443/api/edge/stacks \
   -H "Authorization: Bearer $TOKEN"
 ```

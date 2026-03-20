@@ -27,6 +27,7 @@ The standard alignment target is 1 MiB (1,048,576 bytes). Starting your first pa
 
 ```bash
 # Check partition alignment with parted
+
 sudo parted /dev/sdb align-check optimal 1
 
 # Check the start sector of each partition

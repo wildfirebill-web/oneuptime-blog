@@ -41,6 +41,7 @@ graph TD
 
 ```bash
 # List all CiliumEndpointSlices
+
 kubectl get ciliumendpointslices --all-namespaces
 
 # Count endpoints in all slices

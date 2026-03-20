@@ -20,6 +20,7 @@ RHEL System Roles are a collection of Ansible roles provided and supported by Re
 
 ```bash
 # Install RHEL System Roles on the Ansible control node
+
 sudo dnf install -y rhel-system-roles
 
 # Or install via Ansible Galaxy

@@ -112,6 +112,7 @@ The JSON stream contains multiple event types:
 
 ```bash
 # Show only failures
+
 tofu test -json | jq 'select(.type == "test_run_result" and .result == "fail")'
 
 # Show summary

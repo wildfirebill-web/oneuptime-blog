@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, IPv6, Router Advertisements, Linux
+Tags: RHEL, IPv6, Router Advertisement, Linux
 
 Description: Learn how to configure your RHEL system as an IPv6 router that sends Router Advertisements using radvd, enabling clients on the network to auto-configure their IPv6 addresses via SLAAC.
 
@@ -38,6 +38,7 @@ The router advertisement daemon is available in the standard RHEL repositories.
 
 ```bash
 # Install radvd
+
 sudo dnf install -y radvd
 ```
 

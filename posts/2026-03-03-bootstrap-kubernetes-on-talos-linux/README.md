@@ -45,6 +45,7 @@ The command itself is simple:
 
 ```bash
 # Make sure your talosctl configuration is set
+
 export TALOSCONFIG="$(pwd)/talosconfig"
 
 # Bootstrap on the first control plane node

@@ -233,7 +233,7 @@ istioctl x describe pod <arm-pod-name>
 
 Both should show mutual TLS enabled.
 
-### Resource Differences
+Resource Differences
 
 ARM and x86 CPUs have different performance profiles. You might need different resource requests for the same workload depending on architecture:
 

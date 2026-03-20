@@ -16,6 +16,7 @@ At its simplest, an INI inventory file is a list of hostnames organized into gro
 
 ```ini
 # inventory/hosts.ini
+
 # Ungrouped hosts (appear before any group header)
 mail.example.com
 

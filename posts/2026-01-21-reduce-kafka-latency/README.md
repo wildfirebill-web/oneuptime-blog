@@ -519,6 +519,7 @@ if __name__ == '__main__':
 # server.properties - Low latency optimizations
 
 # More network threads for faster processing
+
 num.network.threads=8
 num.io.threads=16
 

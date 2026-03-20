@@ -17,7 +17,7 @@ Description: IPv4 broadcast addresses are the last address in each subnet (all h
 
 The broadcast address of a subnet has all host bits set to 1:
 
-```
+```text
 Network: 192.168.10.0/24
 Mask:    255.255.255.0   = 11111111.11111111.11111111.00000000
                                                         ^^^^^^^^ host bits
@@ -42,6 +42,7 @@ def subnet_info(cidr: str):
         print(f"Last Host  : {hosts[-1]}")
 
 # Examples
+
 for cidr in ["192.168.10.0/24", "10.0.0.0/8", "172.16.50.0/20"]:
     print(f"\n--- {cidr} ---")
     subnet_info(cidr)

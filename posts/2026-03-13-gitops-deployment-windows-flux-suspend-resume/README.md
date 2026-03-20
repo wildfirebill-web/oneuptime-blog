@@ -42,6 +42,7 @@ Translate this into four CronJob pairs (open/close) - one pair per window bounda
 
 ```yaml
 # clusters/production/deployment-windows/cronjobs.yaml
+
 ---
 # Open deployment window: Mon-Thu at 09:00 UTC
 apiVersion: batch/v1

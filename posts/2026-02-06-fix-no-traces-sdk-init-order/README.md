@@ -117,6 +117,7 @@ RUN npm ci --production
 COPY . .
 
 # This ensures tracing.js loads before the application
+
 ENV NODE_OPTIONS="--require ./tracing.js"
 CMD ["node", "src/index.js"]
 ```

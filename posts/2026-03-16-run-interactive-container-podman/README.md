@@ -20,6 +20,7 @@ The `-it` flags give you an interactive terminal inside a container:
 
 ```bash
 # Run an interactive Alpine container
+
 podman run -it alpine sh
 
 # Run an interactive Ubuntu container

@@ -20,6 +20,7 @@ IPvlan L2 mode operates at Layer 2, similar to macvlan but with a shared MAC add
 
 ```bash
 # Create an IPvlan L2 network
+
 sudo podman network create \
   --driver ipvlan \
   --opt parent=eth0 \

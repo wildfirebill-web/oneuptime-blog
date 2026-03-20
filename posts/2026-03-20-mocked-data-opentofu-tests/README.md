@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Mocked Data, Mock Provider, Test Framework
+Tags: OpenTofu, Testing, Mocked Data, Mock Providers, Test Framework
 
 Description: Learn how to use OpenTofu's mock_provider and mock data sources to create realistic test scenarios without cloud credentials, enabling fast and deterministic module testing.
 
 ## Introduction
 
-OpenTofu's test framework supports mocking both resource creation (`mock_resource`) and data source lookups (`mock_data`). Mocking data sources is essential for testing modules that use `data` blocks to look up existing infrastructure — without mocks, these data sources require real cloud access even in unit tests.
+OpenTofu's test framework supports mocking both resource creation (`mock_resource`) and data source lookups (`mock_data`). Mocking data sources is essential for testing modules that use `data` blocks to look up existing infrastructure - without mocks, these data sources require real cloud access even in unit tests.
 
 ## Mocking Data Sources
 
@@ -127,6 +127,7 @@ mock_provider "aws" {
 
 ```hcl
 # Test scenario: multi-region deployment
+
 mock_provider "aws" {
   alias = "us_east"
   mock_data "aws_caller_identity" {
@@ -193,4 +194,4 @@ mock_provider "aws" {
 
 ## Conclusion
 
-Mock data in OpenTofu tests enables testing the full module logic including data source lookups without cloud credentials. Use realistic mock values that match the format of real AWS responses — this catches bugs where your code assumes specific data formats. The key insight is that `mock_data` lets you test code paths that depend on external data sources (AMI lookups, SSM parameters, availability zones) while keeping tests fast and offline.
+Mock data in OpenTofu tests enables testing the full module logic including data source lookups without cloud credentials. Use realistic mock values that match the format of real AWS responses - this catches bugs where your code assumes specific data formats. The key insight is that `mock_data` lets you test code paths that depend on external data sources (AMI lookups, SSM parameters, availability zones) while keeping tests fast and offline.

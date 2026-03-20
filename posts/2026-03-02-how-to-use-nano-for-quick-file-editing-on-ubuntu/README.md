@@ -16,6 +16,7 @@ Nano is installed by default on Ubuntu. If it is missing:
 
 ```bash
 # Install nano
+
 sudo apt update
 sudo apt install nano
 

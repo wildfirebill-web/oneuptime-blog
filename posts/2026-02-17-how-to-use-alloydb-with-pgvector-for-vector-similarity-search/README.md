@@ -64,6 +64,7 @@ Here is a Python script that generates embeddings using Vertex AI and stores the
 
 ```python
 # Generate embeddings with Vertex AI and store them in AlloyDB
+
 import psycopg2
 from google.cloud import aiplatform
 

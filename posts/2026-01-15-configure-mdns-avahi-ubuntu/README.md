@@ -44,6 +44,7 @@ System requirements for this guide:
 
 ```bash
 # Check your Ubuntu version (18.04 or later recommended)
+
 lsb_release -a
 
 # Ensure you have sudo privileges

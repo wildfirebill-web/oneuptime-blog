@@ -48,6 +48,7 @@ Create the storage resources yourself with Azure CLI:
 
 ```bash
 # Create a dedicated resource group for Cloud Shell storage
+
 az group create \
   --name "rg-cloudshell" \
   --location "eastus2"

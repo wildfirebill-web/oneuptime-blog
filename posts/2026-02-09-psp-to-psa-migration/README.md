@@ -16,6 +16,7 @@ PSA provides three predefined security standards.
 
 ```yaml
 # Pod Security Standards comparison
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

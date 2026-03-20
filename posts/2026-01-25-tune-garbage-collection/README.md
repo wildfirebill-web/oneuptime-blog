@@ -44,6 +44,7 @@ You cannot optimize for all three. Choose based on your application:
 
 ```bash
 # G1GC (default in Java 9+) - Balanced latency/throughput
+
 java -XX:+UseG1GC -jar app.jar
 
 # ZGC (Java 15+) - Ultra-low latency, sub-millisecond pauses

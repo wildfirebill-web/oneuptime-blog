@@ -8,11 +8,11 @@ Description: Measure and understand the CPU, throughput, and reliability impact 
 
 ## Introduction
 
-IPv4 fragmentation has real performance costs that are often underestimated. Every fragment that must be reassembled consumes CPU cycles and memory. When a single fragment is lost, the entire original packet fails — increasing the effective loss rate exponentially. In high-throughput environments, fragmentation can reduce throughput by 20-40% compared to properly sized packets.
+IPv4 fragmentation has real performance costs that are often underestimated. Every fragment that must be reassembled consumes CPU cycles and memory. When a single fragment is lost, the entire original packet fails - increasing the effective loss rate exponentially. In high-throughput environments, fragmentation can reduce throughput by 20-40% compared to properly sized packets.
 
 ## Why Fragmentation Hurts Performance
 
-```
+```text
 Performance costs of fragmentation:
 
 1. Increased loss probability:
@@ -42,6 +42,7 @@ Performance costs of fragmentation:
 # Benchmark 1: Compare throughput with and without fragmentation
 
 # Setup: use tc netem to simulate a link with specific MTU
+
 tc qdisc add dev eth0 root netem mtu 1400 delay 1ms
 # This forces all packets > 1400 to be fragmented at this host
 
@@ -150,4 +151,4 @@ for size in [1000, 1500, 3000, 9000, 16000]:
 
 ## Conclusion
 
-Fragmentation multiplies your effective packet loss rate — a 1% link loss becomes ~7% effective loss for a 7-fragment packet. It also adds CPU overhead for reassembly and memory pressure from queued fragment sets. The performance fix is simple: size packets to fit within the path MTU. For TCP, this happens automatically via PMTUD and MSS negotiation. For UDP, limit application payload to the path MTU minus 28 bytes. Monitor `IpReasmFails` in production — any non-zero rate indicates fragmentation causing dropped packets.
+Fragmentation multiplies your effective packet loss rate - a 1% link loss becomes ~7% effective loss for a 7-fragment packet. It also adds CPU overhead for reassembly and memory pressure from queued fragment sets. The performance fix is simple: size packets to fit within the path MTU. For TCP, this happens automatically via PMTUD and MSS negotiation. For UDP, limit application payload to the path MTU minus 28 bytes. Monitor `IpReasmFails` in production - any non-zero rate indicates fragmentation causing dropped packets.

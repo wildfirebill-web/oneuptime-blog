@@ -405,6 +405,7 @@ class BidService:
 
 
 # Usage example
+
 r = redis.Redis(decode_responses=True)
 bid_service = BidService(r)
 

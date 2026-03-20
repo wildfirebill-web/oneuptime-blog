@@ -25,7 +25,7 @@ services:
     cpu_shares: 256     # Gets 1/4 of the CPU relative to high-priority
 ```
 
-CPU shares are relative — they only matter when the CPU is contended.
+CPU shares are relative - they only matter when the CPU is contended.
 
 ### CPU Quota (Hard Limit)
 
@@ -58,8 +58,8 @@ services:
 services:
   webapp:
     image: myapp:1.2.3
-    mem_limit: 512m         # Hard limit — container is OOMKilled if exceeded
-    mem_reservation: 128m   # Soft limit — guaranteed minimum
+    mem_limit: 512m         # Hard limit - container is OOMKilled if exceeded
+    mem_reservation: 128m   # Soft limit - guaranteed minimum
     memswap_limit: 512m     # Same as mem_limit = no swap (recommended)
     # oom_kill_disable: false  # Allow OOM killer (default and recommended)
 ```
@@ -128,6 +128,7 @@ View current cgroup limits for a running container:
 
 ```bash
 # Check memory limit
+
 docker inspect container_name --format "{{.HostConfig.Memory}}"
 
 # Check CPU quota

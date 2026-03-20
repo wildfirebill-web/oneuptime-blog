@@ -24,6 +24,7 @@ Create an LKE cluster first:
 
 ```bash
 # Install Linode CLI
+
 pip3 install linode-cli
 
 # Configure authentication

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Firewall, Troubleshooting, Networking, SysAdmin
+Tags: Ubuntu, Firewall, Troubleshooting, Networking, Sysadmin
 
 Description: Systematically diagnose and fix firewall-related connectivity issues on Ubuntu when services appear to be running but are unreachable, using tcpdump, iptables tracing, and connection testing tools.
 
@@ -16,6 +16,7 @@ Before blaming the firewall, verify the service is up and listening:
 
 ```bash
 # Check if the service is running
+
 sudo systemctl status nginx
 sudo systemctl status postgresql
 

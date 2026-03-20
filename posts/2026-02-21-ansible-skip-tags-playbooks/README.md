@@ -16,6 +16,7 @@ Before diving into skipping, let us set up a tagged playbook to work with.
 
 ```yaml
 # full-setup.yml - a fully tagged playbook for server configuration
+
 ---
 - name: Full server setup
   hosts: webservers

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Logical Operators, Expressions, Boolean, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Logical Operators, Expressions, Booleans, Infrastructure as Code, DevOps
 
 Description: A guide to using logical operators in OpenTofu HCL expressions to combine boolean conditions for complex configuration logic.
 
@@ -14,6 +14,7 @@ Logical operators in OpenTofu combine boolean expressions to create complex cond
 
 ```hcl
 # &&  Logical AND (both must be true)
+
 # ||  Logical OR (at least one must be true)
 # !   Logical NOT (inverts boolean)
 

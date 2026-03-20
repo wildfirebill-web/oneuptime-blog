@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, Configuration, Server Blocks, Virtual Hosts, Port Binding
+Tags: Nginx, Troubleshooting, Configuration, Server Blocks, Virtual Hosts, Port Binding
 
 Description: Learn how to diagnose and fix Nginx configuration errors related to duplicate port listeners, including proper virtual host setup and understanding the default_server directive.
 
@@ -31,6 +31,7 @@ flowchart TD
 
 ```nginx
 # File: /etc/nginx/sites-enabled/site1.conf
+
 server {
     listen 80 default_server;  # First default
     server_name site1.com;

@@ -19,6 +19,7 @@ Azure's approach requires:
 
 ```hcl
 # Virtual Network with IPv6
+
 resource "azurerm_virtual_network" "main" {
   name                = "main-vnet"
   location            = azurerm_resource_group.main.location

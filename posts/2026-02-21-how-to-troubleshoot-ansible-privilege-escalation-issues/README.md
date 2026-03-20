@@ -18,6 +18,7 @@ Before diving into solutions, let us catalog the error messages you are likely t
 
 ```text
 # Error 1: Missing sudo password
+
 fatal: [host]: FAILED! => {"msg": "Missing sudo password"}
 
 # Error 2: Incorrect sudo password

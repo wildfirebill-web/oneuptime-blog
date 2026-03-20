@@ -34,6 +34,7 @@ graph TD
 
 ```yaml
 # aws-nlb-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

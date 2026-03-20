@@ -16,6 +16,7 @@ The `filebase64sha256` function reads a file, computes its SHA256 hash, and retu
 
 ```hcl
 # filebase64sha256(path)
+
 # Returns the base64-encoded SHA256 hash of a file
 filebase64sha256("${path.module}/lambda/function.zip")
 # Returns something like: "n4bQgYhMfWWaL+qgxVrQFaO/TxsrC4Is0V1sFbDwCgg="

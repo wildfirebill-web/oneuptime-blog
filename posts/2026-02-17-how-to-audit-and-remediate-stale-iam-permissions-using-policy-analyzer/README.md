@@ -34,6 +34,7 @@ It works by combining IAM policy data with Cloud Audit Logs to show both the con
 
 ```bash
 # Enable the APIs needed for Policy Analyzer
+
 gcloud services enable cloudasset.googleapis.com \
     --project=my-project
 

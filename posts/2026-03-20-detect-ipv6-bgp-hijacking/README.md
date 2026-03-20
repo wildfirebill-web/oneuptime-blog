@@ -12,10 +12,11 @@ BGP hijacking occurs when an attacker announces your IPv6 prefixes from an unaut
 
 ## Detection Method 1: RPKI Validation
 
-The most reliable automated defense is RPKI — any announcement from an unauthorized AS appears as INVALID:
+The most reliable automated defense is RPKI - any announcement from an unauthorized AS appears as INVALID:
 
 ```bash
 # Check if your prefix is currently announced with correct origin
+
 curl "https://stat.ripe.net/data/rpki-validation/data.json?resource=AS64496&prefix=2001:db8::/32"
 
 # Use the RIPE BGPmon API to check for unexpected origins
@@ -104,7 +105,7 @@ traceroute6 -n 2001:db8::1
 
 ```bash
 #!/bin/bash
-# bgp-hijack-check.sh — Run every 5 minutes via cron
+# bgp-hijack-check.sh - Run every 5 minutes via cron
 
 PREFIX="2001:db8::/32"
 AUTHORIZED_ASN="64496"

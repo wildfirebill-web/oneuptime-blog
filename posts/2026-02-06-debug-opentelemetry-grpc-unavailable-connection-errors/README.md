@@ -27,6 +27,7 @@ The error can also appear in slightly different forms depending on the SDK langu
 
 ```python
 # Python SDK error output
+
 WARNING:opentelemetry.exporter.otlp.proto.grpc.exporter:Failed to export batch
 code: 14
 details: "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:4317: Connection refused"

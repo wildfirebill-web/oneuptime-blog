@@ -41,6 +41,7 @@ chrony should already be installed. If not:
 
 ```bash
 # Install chrony
+
 sudo dnf install chrony
 ```
 

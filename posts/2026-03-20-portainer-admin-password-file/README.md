@@ -23,6 +23,7 @@ The password is visible to anyone who can run `docker inspect portainer` or `ps 
 
 ```bash
 # Create a directory for Portainer secrets
+
 sudo mkdir -p /etc/portainer/secrets
 sudo chmod 700 /etc/portainer/secrets
 
@@ -77,7 +78,7 @@ volumes:
 
 ## Docker Swarm with Native Secrets
 
-Docker Swarm's secret management is the most secure option — secrets are encrypted at rest and in transit:
+Docker Swarm's secret management is the most secure option - secrets are encrypted at rest and in transit:
 
 ```bash
 # Create the secret from a file

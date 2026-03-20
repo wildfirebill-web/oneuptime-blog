@@ -16,6 +16,7 @@ Managing KMS with Terraform is particularly valuable because key configuration i
 
 ```hcl
 # Enable Cloud KMS API
+
 resource "google_project_service" "kms" {
   project = var.project_id
   service = "cloudkms.googleapis.com"

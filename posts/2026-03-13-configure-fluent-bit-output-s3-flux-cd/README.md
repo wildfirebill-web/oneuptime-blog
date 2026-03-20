@@ -50,6 +50,7 @@ Create an IAM role that allows the Fluent Bit service account to write to your S
 
 ```bash
 # Create IAM policy
+
 aws iam create-policy \
   --policy-name FluentBitS3Policy \
   --policy-document file://iam-policy.json

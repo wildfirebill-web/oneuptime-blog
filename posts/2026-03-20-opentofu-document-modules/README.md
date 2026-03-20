@@ -16,6 +16,7 @@ Every variable should have a clear `description` and appropriate `type`:
 
 ```hcl
 # variables.tf
+
 variable "name" {
   type        = string
   description = "Name prefix applied to all resources created by this module"
@@ -66,7 +67,7 @@ Brief description of what this module creates.
 
 ## Usage
 
-Minimal working example — paste and run:
+Minimal working example - paste and run:
 
 ```hcl
 module "vpc" {
@@ -90,7 +91,7 @@ module "vpc" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|----------|
-| name | Name prefix | string | — | yes |
+| name | Name prefix | string | - | yes |
 | cidr_block | VPC CIDR block | string | 10.0.0.0/16 | no |
 
 ## Outputs
@@ -99,7 +100,7 @@ module "vpc" {
 |------|-------------|
 | vpc_id | The ID of the VPC |
 | private_subnet_ids | List of private subnet IDs |
-```
+```text
 
 ## Auto-Generating Documentation with terraform-docs
 

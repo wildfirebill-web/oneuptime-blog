@@ -16,6 +16,7 @@ Not all printers support duplex printing, and those that do may support differen
 
 ```bash
 # Install CUPS if not present
+
 sudo apt update
 sudo apt install cups -y
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Vue.js, Containerization, Frontend, DevOps, NGINX, Vite
+Tags: Docker, Vue.js, Containerization, Frontend, DevOps, Nginx, Vite
 
 Description: Learn how to containerize a Vue.js application using Docker with multi-stage builds, Nginx, and Vite-powered development workflows
 
@@ -26,6 +26,7 @@ Create a new Vue.js project with Vite:
 
 ```bash
 # Scaffold a new Vue project using the official create-vue tool
+
 npm create vue@latest my-vue-app
 cd my-vue-app
 npm install

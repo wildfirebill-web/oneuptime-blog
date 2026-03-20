@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, Policy Routing, ip rule, Networking
+Tags: Linux, ip command, iproute2, Policy Routing, Ip rule, Networking
 
 Description: Configure policy-based routing on Linux using ip rule to direct traffic to specific routing tables based on source address, destination, mark, or ToS.
 
 ## Introduction
 
-`ip rule` manages the policy routing database — a list of rules evaluated in priority order. Each rule specifies a match condition (source IP, fwmark, etc.) and which routing table to consult. Rules run before the main routing table, enabling per-source routing, VPN split tunneling, and multi-homing.
+`ip rule` manages the policy routing database - a list of rules evaluated in priority order. Each rule specifies a match condition (source IP, fwmark, etc.) and which routing table to consult. Rules run before the main routing table, enabling per-source routing, VPN split tunneling, and multi-homing.
 
 ## Show All Rules
 
 ```bash
 # Display the policy routing database
+
 ip rule list
 
 # Default output (three built-in rules):

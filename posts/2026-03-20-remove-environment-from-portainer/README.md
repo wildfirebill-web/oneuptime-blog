@@ -1,4 +1,4 @@
-# How to Remove an Environment from Portainer
+# How to Remove an Environment from Portainer - From
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List all environments
+
 curl -s https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

@@ -26,6 +26,7 @@ When `kubectl exec` fails to connect to the cilium-agent container:
 
 ```bash
 # Check pod status first
+
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 

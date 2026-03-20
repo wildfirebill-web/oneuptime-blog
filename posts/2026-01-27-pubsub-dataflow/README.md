@@ -67,6 +67,7 @@ Before building the pipeline, set up your Pub/Sub topic and subscription.
 
 ```bash
 # Set your project ID for all subsequent commands
+
 export PROJECT_ID="your-project-id"
 
 # Create a topic for incoming events

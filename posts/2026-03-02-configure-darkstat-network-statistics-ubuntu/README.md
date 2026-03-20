@@ -35,6 +35,7 @@ Here is a typical configuration for a server with a primary interface called `et
 
 ```bash
 # Enable or disable darkstat
+
 START_DARKSTAT=yes
 
 # Network interface to monitor

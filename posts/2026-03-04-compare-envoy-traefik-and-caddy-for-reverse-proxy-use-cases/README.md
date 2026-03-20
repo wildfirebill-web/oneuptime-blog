@@ -34,6 +34,7 @@ Envoy is the best choice when you need:
 
 ```yaml
 # Envoy: Powerful but verbose
+
 clusters:
 - name: backend
   connect_timeout: 5s
@@ -84,7 +85,7 @@ myapp.example.com {
 
 All three proxies handle high throughput well. Envoy generally has the lowest latency in service mesh scenarios due to its C++ implementation. Traefik and Caddy (both written in Go) perform comparably for typical reverse proxy workloads.
 
-## Resource Usage
+Resource Usage
 
 - **Envoy**: Higher memory usage due to connection pooling and stats
 - **Traefik**: Moderate resource usage

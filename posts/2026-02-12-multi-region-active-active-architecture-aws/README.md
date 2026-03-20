@@ -53,6 +53,7 @@ Route 53 is the entry point. Use latency-based routing to direct users to the ne
 
 ```bash
 # Create a health check for each region's ALB
+
 aws route53 create-health-check \
   --caller-reference "us-east-1-health-$(date +%s)" \
   --health-check-config '{

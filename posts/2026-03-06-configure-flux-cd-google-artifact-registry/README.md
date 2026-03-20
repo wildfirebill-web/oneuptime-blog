@@ -27,6 +27,7 @@ Create different types of repositories in Google Artifact Registry.
 
 ```bash
 # Set environment variables
+
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION="us-central1"
 

@@ -15,7 +15,8 @@ Advertising IPv6 prefixes via BGP requires the prefix to either exist in the rou
 The `network` statement advertises a specific prefix if it exists in the routing table:
 
 ```bash
-# FRRouting — advertise a /48 prefix
+# FRRouting - advertise a /48 prefix
+
 vtysh
 configure terminal
 
@@ -76,7 +77,7 @@ The `summary-only` keyword suppresses the more-specific routes from being advert
 
 ## Cisco: network Statement
 
-```
+```text
 Router(config)# router bgp 65001
 Router(config-router)# address-family ipv6 unicast
 
@@ -116,10 +117,10 @@ router bgp 65001
 
 ## Best Practices for Prefix Advertisement
 
-1. **Advertise aggregates, not specifics** — Announce /32 or /48 aggregates, not /64 host routes
-2. **Use null routes** — Always pair network statements with a null route to ensure the prefix is in the RIB
-3. **Filter outbound** — Use prefix lists to prevent accidental advertisement of unintended routes
-4. **Register your prefix** — Ensure your IPv6 prefix is registered in an IRR database (ARIN, RIPE) and create RPKI ROAs
+1. **Advertise aggregates, not specifics** - Announce /32 or /48 aggregates, not /64 host routes
+2. **Use null routes** - Always pair network statements with a null route to ensure the prefix is in the RIB
+3. **Filter outbound** - Use prefix lists to prevent accidental advertisement of unintended routes
+4. **Register your prefix** - Ensure your IPv6 prefix is registered in an IRR database (ARIN, RIPE) and create RPKI ROAs
 
 ## Summary
 

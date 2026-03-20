@@ -61,6 +61,7 @@ Install Telescope via Composer in your Laravel project:
 
 ```bash
 # Install Telescope package
+
 # This adds the debugging dashboard to your application
 composer require laravel/telescope
 

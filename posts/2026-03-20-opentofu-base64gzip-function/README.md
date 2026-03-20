@@ -1,11 +1,10 @@
----
-title: "How to Use base64gzip() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, encoding
-description: "Learn how to use the base64gzip() function in OpenTofu to compress and Base64-encode data."
----
-
 # How to Use base64gzip() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+
+Description: Learn how to use the base64gzip() function in OpenTofu to compress and Base64-encode data.
 
 Learn how to use the base64gzip() function in OpenTofu to compress and Base64-encode data.
 
@@ -13,6 +12,7 @@ Learn how to use the base64gzip() function in OpenTofu to compress and Base64-en
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

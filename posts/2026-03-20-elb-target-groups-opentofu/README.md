@@ -132,6 +132,7 @@ resource "aws_lb_target_group" "lambda" {
 }
 
 # Allow ALB to invoke Lambda
+
 resource "aws_lambda_permission" "alb" {
   statement_id  = "AllowALBInvoke"
   action        = "lambda:InvokeFunction"

@@ -204,6 +204,7 @@ Pool too small for the workload.
 
 ```python
 # Python - Proper connection pool configuration
+
 import os
 from contextlib import contextmanager
 from dataclasses import dataclass

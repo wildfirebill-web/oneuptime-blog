@@ -24,6 +24,7 @@ fatal: [remote-server]: UNREACHABLE! => {
 
 ```ini
 # ansible.cfg - Increase timeout values
+
 [defaults]
 timeout = 60           # Connection timeout in seconds (default: 10)
 gather_timeout = 60    # Fact gathering timeout

@@ -28,6 +28,7 @@ Create a pod with a scheduling gate:
 
 ```yaml
 # gated-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

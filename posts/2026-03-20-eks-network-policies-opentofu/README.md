@@ -20,6 +20,7 @@ Kubernetes Network Policies define how pods can communicate with each other and 
 
 ```hcl
 # Update VPC CNI add-on with network policy controller enabled
+
 resource "aws_eks_addon" "vpc_cni" {
   cluster_name             = var.cluster_name
   addon_name               = "vpc-cni"

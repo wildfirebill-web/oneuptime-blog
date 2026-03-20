@@ -51,6 +51,7 @@ Make the change persistent with a udev rule:
 ```bash
 sudo tee /etc/udev/rules.d/60-ioscheduler.rules << 'UDEV'
 # NVMe devices - no scheduler needed
+
 ACTION=="add|change", KERNEL=="nvme[0-9]*", ATTR{queue/scheduler}="none"
 
 # SATA/SAS SSDs - mq-deadline

@@ -19,6 +19,7 @@ IAM groups let you manage permissions for multiple users with similar roles by a
 
 ```hcl
 # Group for developers with read access to development resources
+
 resource "aws_iam_group" "developers" {
   name = "developers"
   path = "/teams/"
@@ -164,4 +165,4 @@ tofu apply
 
 ## Conclusion
 
-IAM groups are the standard way to manage permissions for human users in AWS organizations. Attach policies to groups rather than individual users to reduce administrative overhead—adding or removing a user from a group instantly changes their permissions. Use multiple groups with specific permissions (e.g., `developers` + `devops`) to compose the exact permission set each person needs.
+IAM groups are the standard way to manage permissions for human users in AWS organizations. Attach policies to groups rather than individual users to reduce administrative overhead-adding or removing a user from a group instantly changes their permissions. Use multiple groups with specific permissions (e.g., `developers` + `devops`) to compose the exact permission set each person needs.

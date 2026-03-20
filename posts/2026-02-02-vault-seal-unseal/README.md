@@ -48,6 +48,7 @@ The following command initializes Vault with 5 key shares and a threshold of 3, 
 
 ```bash
 # Initialize Vault with Shamir's Secret Sharing
+
 # -key-shares: Total number of unseal keys to generate
 # -key-threshold: Minimum keys required to unseal
 vault operator init -key-shares=5 -key-threshold=3

@@ -41,7 +41,7 @@ output "null_to_string" {
 
 ## Practical Use Cases
 
-### Resource Tags (Must Be Strings)
+Resource Tags (Must Be Strings)
 
 ```hcl
 variable "instance_count" {
@@ -60,7 +60,7 @@ resource "aws_instance" "app" {
 
   tags = {
     Name              = "app-server"
-    # Tags must be strings — convert numbers and bools
+    # Tags must be strings - convert numbers and bools
     InstanceCount     = tostring(var.instance_count)
     MonitoringEnabled = tostring(var.enable_monitoring)
     PortNumber        = tostring(8080)
@@ -127,6 +127,7 @@ tofu console
 
 ```hcl
 # Both produce the same result:
+
 tostring(42)
 "${42}"
 

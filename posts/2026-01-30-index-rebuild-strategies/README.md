@@ -350,6 +350,7 @@ This script checks fragmentation levels and sends alerts when thresholds are exc
 
 ```python
 # index_monitor.py
+
 import psycopg2
 import logging
 from datetime import datetime

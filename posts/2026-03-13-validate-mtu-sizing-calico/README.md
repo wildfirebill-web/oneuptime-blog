@@ -23,6 +23,7 @@ The most reliable MTU validation method is sending packets at the configured MTU
 
 ```bash
 # Check MTU on all running pods
+
 kubectl get pods -o wide | awk '{print $1, $7}' | while read pod node; do
   mtu=$(kubectl exec ${pod} -- ip link show eth0 2>/dev/null | grep mtu | awk '{print $5}')
   echo "${pod} on ${node}: MTU=${mtu}"

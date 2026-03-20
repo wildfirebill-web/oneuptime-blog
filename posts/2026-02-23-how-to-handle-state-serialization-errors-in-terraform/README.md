@@ -54,6 +54,7 @@ Someone (or a CI/CD pipeline) wrote state between when you pulled it and when yo
 
 ```bash
 # Pull the latest state
+
 terraform state pull > latest-state.json
 
 # Check the current serial

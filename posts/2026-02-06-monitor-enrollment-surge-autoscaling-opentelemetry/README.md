@@ -24,6 +24,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("enrollment.infrastructure")
 
 # Track request rate per service
+
 request_rate = meter.create_counter(
     "enrollment.requests_total",
     description="Total HTTP requests to enrollment services",

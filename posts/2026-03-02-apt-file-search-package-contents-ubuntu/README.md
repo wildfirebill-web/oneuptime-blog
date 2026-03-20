@@ -14,6 +14,7 @@ Description: Learn how to use apt-file to search the contents of Ubuntu packages
 
 ```bash
 # Install apt-file
+
 sudo apt install apt-file
 
 # Update the package contents database

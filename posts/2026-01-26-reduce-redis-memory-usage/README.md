@@ -16,6 +16,7 @@ Before optimizing, you need to understand where memory is going. Redis provides 
 
 ```bash
 # Get memory overview
+
 redis-cli INFO memory
 
 # Get detailed memory breakdown

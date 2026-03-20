@@ -25,6 +25,7 @@ The simplest way to monitor scan results is through the Flux CLI:
 
 ```bash
 # List all image repositories and their status
+
 flux get image repository --all-namespaces
 
 # Get detailed information about a specific repository

@@ -391,6 +391,7 @@ Here is the same pattern implemented in FastAPI:
 
 ```python
 # main.py
+
 from fastapi import FastAPI, Query, HTTPException
 from typing import Optional, List
 from pydantic import BaseModel

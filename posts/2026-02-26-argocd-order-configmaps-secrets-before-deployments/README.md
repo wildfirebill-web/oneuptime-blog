@@ -38,6 +38,7 @@ Place ConfigMaps and Secrets at wave -1, and Deployments at wave 0.
 
 ```yaml
 # configmap.yaml - Wave -1: Configuration first
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -16,6 +16,7 @@ Cloud DNS is Google's managed authoritative DNS service. Beyond hosting public D
 
 ```bash
 # Create a private DNS zone for internal service discovery
+
 gcloud dns managed-zones create internal-services \
   --dns-name "internal.mycompany.com." \
   --description "Internal service discovery zone" \

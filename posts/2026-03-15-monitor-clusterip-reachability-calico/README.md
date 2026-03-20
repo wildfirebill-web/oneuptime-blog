@@ -30,6 +30,7 @@ Calico Felix exposes Prometheus metrics that are critical for monitoring policy 
 
 ```bash
 # Enable Prometheus metrics on Felix
+
 calicoctl patch felixconfiguration default --patch \
   '{"spec":{"prometheusMetricsEnabled": true}}'
 

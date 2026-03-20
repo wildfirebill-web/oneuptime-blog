@@ -25,6 +25,7 @@ The OpenTelemetry Collector can derive metrics from spans using the `spanmetrics
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

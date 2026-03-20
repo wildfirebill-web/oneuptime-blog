@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, GitOps, Testing, kind, Kubernetes, CI/CD
+Tags: IPv6, GitOps, Testing, Kind, Kubernetes, CI/CD
 
 Description: Set up IPv6-only Kubernetes test clusters with kind or k3s, validate GitOps pipelines in IPv6-only environments, and test that application deployments function correctly without IPv4 fallback.
 
@@ -39,6 +39,7 @@ nodes:
 
 ```bash
 # Create the IPv6-only cluster
+
 kind create cluster --config kind-ipv6-only.yaml --name ipv6-test
 
 # Verify cluster is IPv6-only
@@ -270,4 +271,4 @@ jobs:
 
 ## Conclusion
 
-Testing GitOps pipelines in IPv6-only environments requires a test cluster with IPv6-only pod and service subnets, created with `kind` using `ipFamily: ipv6` or k3s with `--cluster-cidr` set to IPv6 prefixes. Flux CD and ArgoCD install and operate identically in IPv6-only clusters — their pods receive IPv6 addresses from the cluster CNI. The key validation is that GitOps sources (GitRepository, HelmRepository) can reach their upstream servers over IPv6. An automated test suite checks node IPs, pod IPs, service IPs, and GitOps source readiness using `ipaddress.ip_address()` to validate IPv6 format. CI pipelines can integrate this testing by creating kind IPv6 clusters, deploying applications via GitOps, and asserting IPv6 connectivity before merging.
+Testing GitOps pipelines in IPv6-only environments requires a test cluster with IPv6-only pod and service subnets, created with `kind` using `ipFamily: ipv6` or k3s with `--cluster-cidr` set to IPv6 prefixes. Flux CD and ArgoCD install and operate identically in IPv6-only clusters - their pods receive IPv6 addresses from the cluster CNI. The key validation is that GitOps sources (GitRepository, HelmRepository) can reach their upstream servers over IPv6. An automated test suite checks node IPs, pod IPs, service IPs, and GitOps source readiness using `ipaddress.ip_address()` to validate IPv6 format. CI pipelines can integrate this testing by creating kind IPv6 clusters, deploying applications via GitOps, and asserting IPv6 connectivity before merging.

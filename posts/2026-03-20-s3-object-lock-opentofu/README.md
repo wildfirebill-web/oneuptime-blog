@@ -14,12 +14,13 @@ S3 Object Lock prevents objects from being deleted or overwritten for a fixed pe
 
 - OpenTofu v1.6+
 - AWS credentials with S3 permissions
-- Note: Object Lock must be enabled at bucket creation—it cannot be added to an existing bucket
+- Note: Object Lock must be enabled at bucket creation-it cannot be added to an existing bucket
 
 ## Step 1: Create a Bucket with Object Lock Enabled
 
 ```hcl
 # Object Lock must be enabled at bucket creation
+
 # It cannot be enabled on existing buckets
 resource "aws_s3_bucket" "worm" {
   bucket = var.compliance_bucket_name

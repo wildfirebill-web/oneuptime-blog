@@ -22,6 +22,7 @@ The most straightforward way to shut down a node is:
 
 ```bash
 # Shut down a single node
+
 talosctl shutdown --nodes 192.168.1.20
 ```
 

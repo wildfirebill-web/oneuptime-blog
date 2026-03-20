@@ -24,6 +24,7 @@ IoT gateways act as the bridge between IoT devices (sensors, actuators, cameras)
 # On Raspberry Pi 4 running Ubuntu 22.04 LTS (ARM64)
 
 # Update and install dependencies
+
 apt-get update && apt-get upgrade -y
 apt-get install -y \
   curl \

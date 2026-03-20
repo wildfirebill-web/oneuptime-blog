@@ -14,6 +14,7 @@ Fail2Ban monitors log files for failed authentication attempts and blocks source
 
 ```bash
 # Check current Fail2Ban version (>= 0.10 for IPv6 support)
+
 fail2ban-client version
 
 # Check available actions
@@ -118,7 +119,7 @@ ignoreregex =
 ## Step 5: Whitelist IPv6 Prefixes
 
 ```ini
-# /etc/fail2ban/jail.local — add IPv6 whitelist
+# /etc/fail2ban/jail.local - add IPv6 whitelist
 
 [DEFAULT]
 ignoreip = 127.0.0.1/8 ::1

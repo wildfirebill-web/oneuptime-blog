@@ -35,6 +35,7 @@ flowchart TD
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-frontdoor \
   --location eastus

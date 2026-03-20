@@ -27,6 +27,7 @@ First, create a ConfigMap that contains your Helm values. The values must be sto
 
 ```yaml
 # configmap-values.yaml - ConfigMap containing Helm values
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

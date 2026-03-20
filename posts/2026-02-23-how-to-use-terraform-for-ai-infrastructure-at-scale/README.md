@@ -16,6 +16,7 @@ In this guide, we will cover how to build AI infrastructure at scale with Terraf
 
 ```hcl
 # ai/training-cluster.tf
+
 # GPU cluster for model training
 
 resource "aws_sagemaker_domain" "ml" {

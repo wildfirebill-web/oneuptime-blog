@@ -38,6 +38,7 @@ First, create the topics that will connect your functions. Think of each topic a
 
 ```bash
 # Create topics for each pipeline stage
+
 gcloud pubsub topics create validate-image
 gcloud pubsub topics create process-image
 gcloud pubsub topics create notify-user

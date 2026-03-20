@@ -28,6 +28,7 @@ You need Docker Desktop 4.34 or later with the Model Runner feature enabled:
 
 ```bash
 # Check your Docker Desktop version
+
 docker version
 
 # Verify Model Runner is available

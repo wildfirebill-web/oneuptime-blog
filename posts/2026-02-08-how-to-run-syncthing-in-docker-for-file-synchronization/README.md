@@ -39,6 +39,7 @@ Each device has a unique ID derived from its TLS certificate. Devices find each 
 
 ```bash
 # Create the Syncthing project directory
+
 mkdir -p ~/syncthing/{config,data}
 cd ~/syncthing
 ```

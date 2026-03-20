@@ -53,6 +53,7 @@ flowchart TD
 
 ```ini
 # inventory/es-cluster.ini
+
 [es_master_nodes]
 es-master-1 ansible_host=10.0.5.10 es_node_roles='["master"]'
 es-master-2 ansible_host=10.0.5.11 es_node_roles='["master"]'

@@ -33,6 +33,7 @@ The logging bucket needs specific permissions to receive logs from S3. Here's th
 
 ```yaml
 # CloudFormation template for the logging destination bucket
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: S3 Server Access Logging Configuration
 

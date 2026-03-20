@@ -18,6 +18,7 @@ The most common reason rules do not match is that the security policy is not act
 
 ```bash
 # Check which security policy is attached to your backend service
+
 gcloud compute backend-services describe your-backend-service \
   --global \
   --format="yaml(securityPolicy, edgeSecurityPolicy)" \

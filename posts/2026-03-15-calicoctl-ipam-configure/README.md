@@ -187,6 +187,7 @@ After changing IPAM configuration, verify the settings and check that existing w
 
 ```bash
 # Check configuration
+
 calicoctl ipam configure show
 
 # Verify workloads still have IP addresses

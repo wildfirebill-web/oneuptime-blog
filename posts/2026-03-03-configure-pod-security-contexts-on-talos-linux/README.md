@@ -36,6 +36,7 @@ Start with a minimal security context that enforces non-root execution and drops
 
 ```yaml
 # secure-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

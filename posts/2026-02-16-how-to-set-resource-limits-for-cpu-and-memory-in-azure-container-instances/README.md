@@ -27,6 +27,7 @@ If you only specify requests (which is the most common case), the limits default
 
 ```bash
 # Create a container with specific CPU and memory requests
+
 az container create \
     --resource-group my-resource-group \
     --name my-container \
@@ -76,7 +77,7 @@ type: Microsoft.ContainerInstance/containerGroups
 
 In this example, the container is guaranteed 1 CPU core and 2 GB of memory, but can burst up to 2 CPU cores and 4 GB if the host has capacity available.
 
-## Resource Limits for Container Groups
+Resource Limits for Container Groups
 
 When you have multiple containers in a group, the total resources for the group are the sum of all container requests. ACI allocates resources at the group level.
 
@@ -271,7 +272,7 @@ az container delete \
 
 For fault-tolerant batch processing, consider using spot containers which offer significant discounts in exchange for the possibility of preemption.
 
-## Resource Quotas
+Resource Quotas
 
 Azure has subscription-level quotas for ACI resources:
 

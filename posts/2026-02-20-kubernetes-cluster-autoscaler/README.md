@@ -73,6 +73,7 @@ Cluster Autoscaler works with managed node groups or auto scaling groups on clou
 
 ```yaml
 # cluster-autoscaler-aws.yaml
+
 # Cluster Autoscaler deployment for AWS EKS
 apiVersion: apps/v1
 kind: Deployment

@@ -26,6 +26,7 @@ Start with a default deny policy that blocks all ingress and egress traffic in t
 
 ```yaml
 # tenants/team-alpha/network-policies/default-deny.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

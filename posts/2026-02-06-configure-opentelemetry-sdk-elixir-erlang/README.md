@@ -43,6 +43,7 @@ Start with the minimal configuration in your `config/runtime.exs`:
 import Config
 
 # Core OpenTelemetry configuration
+
 config :opentelemetry,
   # Define your service identity
   resource: [
@@ -265,7 +266,7 @@ config :opentelemetry, sampler: {MyApp.CustomSampler, %{}}
 
 This sampler always records critical endpoints while sampling others at a lower rate.
 
-## Resource Configuration
+Resource Configuration
 
 Resources describe your service and environment. Configure rich resource attributes:
 

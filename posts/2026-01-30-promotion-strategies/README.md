@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Promotion, Environment, CI/CD
+Tags: DevOps, Promotion, Environments, CI/CD
 
 Description: Learn to build promotion strategies for moving code between environments.
 
@@ -109,6 +109,7 @@ The version file for each environment specifies which artifact version to deploy
 
 ```yaml
 # environments/staging/version.yaml
+
 # This file gets updated during promotion to staging
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

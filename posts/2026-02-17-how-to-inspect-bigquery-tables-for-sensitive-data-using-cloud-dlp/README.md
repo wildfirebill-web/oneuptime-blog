@@ -40,6 +40,7 @@ The fastest way to start is with a simple `gcloud` command that inspects a speci
 
 ```bash
 # Inspect a BigQuery table for common sensitive data types
+
 gcloud dlp datasources bigquery inspect \
   --project=PROJECT_ID \
   --dataset=my_dataset \

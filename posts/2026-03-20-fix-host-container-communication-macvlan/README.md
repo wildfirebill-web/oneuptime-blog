@@ -2,21 +2,22 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, macvlan, IPv4, Host Communication, Troubleshooting
+Tags: Docker, Networking, Macvlan, IPv4, Host Communication, Troubleshooting
 
 Description: Resolve the host-to-container communication limitation of Docker macvlan networks by creating a macvlan shim interface on the host that allows direct IP connectivity to macvlan containers.
 
 ## Introduction
 
-A fundamental limitation of macvlan: the Docker host cannot communicate with containers on a macvlan network through the same physical interface. This is a kernel limitation — a macvlan parent interface cannot talk to its children. The fix is to create a `macvlan` interface on the host and connect it to the same macvlan network.
+A fundamental limitation of macvlan: the Docker host cannot communicate with containers on a macvlan network through the same physical interface. This is a kernel limitation - a macvlan parent interface cannot talk to its children. The fix is to create a `macvlan` interface on the host and connect it to the same macvlan network.
 
 ## Understanding the Problem
 
 ```bash
 # Container is running on macvlan with IP 192.168.1.220
+
 docker run -d --name test --network lan-macvlan --ip 192.168.1.220 nginx
 
-# From the host — this FAILS
+# From the host - this FAILS
 ping 192.168.1.220
 # ping: connect: Network unreachable (or just times out)
 ```
@@ -31,7 +32,7 @@ Create a `macvlan` type interface on the host (a "shim") and assign it an IP fro
 sudo ip link add macvlan-shim link eth0 type macvlan mode bridge
 
 # Assign a host IP on the LAN (different from Docker container range)
-# Using 192.168.1.219 — just below the container range 192.168.1.220/27
+# Using 192.168.1.219 - just below the container range 192.168.1.220/27
 sudo ip addr add 192.168.1.219/32 dev macvlan-shim
 
 # Bring it up

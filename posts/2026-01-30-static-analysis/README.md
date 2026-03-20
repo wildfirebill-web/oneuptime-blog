@@ -40,6 +40,7 @@ Different languages have different ecosystems. Here are battle-tested options:
 
 ```bash
 # ESLint - linting and style
+
 npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
 # TypeScript - type checking

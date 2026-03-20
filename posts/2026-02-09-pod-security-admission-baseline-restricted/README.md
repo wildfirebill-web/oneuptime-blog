@@ -28,6 +28,7 @@ PSA is enabled by default in Kubernetes 1.23+. Verify it's active:
 
 ```bash
 # Check API server configuration
+
 kubectl api-resources | grep podsecurity
 
 # Verify admission controller is enabled

@@ -74,6 +74,7 @@ The very first thing to create is your state backend:
 
 ```hcl
 # infrastructure/shared/backend-setup/main.tf
+
 # Bootstrap: Create the state backend infrastructure
 # This is the one thing you run manually before anything else
 

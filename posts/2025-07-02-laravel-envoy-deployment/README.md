@@ -68,6 +68,7 @@ Install Envoy globally via Composer:
 
 ```bash
 # Install Envoy globally
+
 composer global require laravel/envoy
 
 # Ensure global Composer bin is in PATH

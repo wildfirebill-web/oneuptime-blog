@@ -221,6 +221,7 @@ spec:
 
 ```bash
 # Check all source controller pods
+
 kubectl get pods -n flux-system -l app=source-controller-shard-1
 
 # Verify the shard is serving artifacts

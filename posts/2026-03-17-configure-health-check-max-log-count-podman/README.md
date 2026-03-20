@@ -18,6 +18,7 @@ Long-running containers can accumulate thousands of health check log entries ove
 
 ```bash
 # Keep only the last 10 health check results
+
 podman run -d \
   --name limited-logs \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

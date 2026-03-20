@@ -37,6 +37,7 @@ Use `git submodule add` to include an external repository.
 
 ```bash
 # Add a submodule at a specific path
+
 git submodule add https://github.com/example/shared-lib.git libs/shared-lib
 
 # Output:

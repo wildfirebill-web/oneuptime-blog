@@ -30,6 +30,7 @@ infrastructure/
 
 ```hcl
 # terraform/modules/webserver/main.tf
+
 variable "instance_count" { default = 2 }
 variable "instance_type" { default = "t3.medium" }
 

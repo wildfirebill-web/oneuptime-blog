@@ -8,12 +8,13 @@ Description: Learn how to set up Terrateam for OpenTofu to enable pull request-b
 
 ## Introduction
 
-Terrateam provides GitHub-native OpenTofu automation: plan output in PR comments, cost estimates from Infracost, security scanning from tfsec, and approval gates — all driven by a simple YAML configuration file.
+Terrateam provides GitHub-native OpenTofu automation: plan output in PR comments, cost estimates from Infracost, security scanning from tfsec, and approval gates - all driven by a simple YAML configuration file.
 
 ## GitHub App Installation and Repository Setup
 
 ```yaml
 # .terrateam/config.yml
+
 # Terrateam configuration for OpenTofu
 
 engine:
@@ -141,4 +142,4 @@ notifications:
 
 ## Conclusion
 
-Terrateam provides a fully managed GitHub integration for OpenTofu without requiring any server infrastructure. Configuration lives in `.terrateam/config.yml` alongside your HCL code, making it easy to version-control workflow changes. The GitHub-native experience — cost estimates and security scan results directly in PR comments — makes infrastructure reviews as familiar as code reviews.
+Terrateam provides a fully managed GitHub integration for OpenTofu without requiring any server infrastructure. Configuration lives in `.terrateam/config.yml` alongside your HCL code, making it easy to version-control workflow changes. The GitHub-native experience - cost estimates and security scan results directly in PR comments - makes infrastructure reviews as familiar as code reviews.

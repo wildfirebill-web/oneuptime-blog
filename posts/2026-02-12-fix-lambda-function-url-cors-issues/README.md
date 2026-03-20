@@ -37,6 +37,7 @@ First, set up CORS on the Function URL itself. This handles preflight OPTIONS re
 
 ```bash
 # Update Function URL CORS configuration
+
 aws lambda update-function-url-config \
   --function-name my-function \
   --cors '{

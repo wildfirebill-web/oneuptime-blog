@@ -48,6 +48,7 @@ Helm is the recommended method for Kubernetes deployments. Falco runs as a Daemo
 
 ```bash
 # Add the Falco Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 helm repo update
 

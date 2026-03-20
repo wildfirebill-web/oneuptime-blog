@@ -18,6 +18,7 @@ Here is a simple example:
 
 ```yaml
 # basic_delegate_become.yml - Install a package on a different host with sudo
+
 ---
 - name: Demonstrate delegate_to with become
   hosts: webservers

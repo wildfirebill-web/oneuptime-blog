@@ -35,6 +35,7 @@ First, create a Cloud Scheduler job that pushes tasks to a Cloud Tasks queue. Yo
 
 ```bash
 # Enable the necessary APIs for Cloud Scheduler and Cloud Tasks
+
 gcloud services enable cloudscheduler.googleapis.com
 gcloud services enable cloudtasks.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com

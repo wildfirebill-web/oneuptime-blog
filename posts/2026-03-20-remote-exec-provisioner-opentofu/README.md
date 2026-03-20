@@ -8,7 +8,7 @@ Description: Learn how to use the `remote-exec` provisioner in OpenTofu to run c
 
 ## Introduction
 
-The `remote-exec` provisioner connects to a remote resource—typically an EC2 instance, VM, or bare-metal server—and executes commands on it after creation. It is the counterpart to `local-exec`: instead of running commands on the OpenTofu host, it runs them on the target resource itself.
+The `remote-exec` provisioner connects to a remote resource-typically an EC2 instance, VM, or bare-metal server-and executes commands on it after creation. It is the counterpart to `local-exec`: instead of running commands on the OpenTofu host, it runs them on the target resource itself.
 
 > **Note:** Prefer cloud-init or configuration management tools (Ansible, Chef, Puppet) over `remote-exec` for complex provisioning. This provisioner is best for simple, one-time setup tasks.
 

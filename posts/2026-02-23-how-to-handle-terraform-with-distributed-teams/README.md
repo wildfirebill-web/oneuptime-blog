@@ -20,8 +20,9 @@ Distributed Terraform teams face several specific challenges. Time zone differen
 
 Design your Terraform workflow to work well asynchronously:
 
-```yaml
+````yaml
 # .github/workflows/terraform-async.yaml
+
 # Workflow designed for asynchronous distributed teams
 
 name: Terraform Async Workflow
@@ -64,9 +65,9 @@ jobs:
             <details>
             <summary>Full Plan Output (click to expand)</summary>
 
-            \`\`\`
+            ```
             ${plan.substring(0, 60000)}
-            \`\`\`
+            ```
             </details>
 
             ### Review Checklist
@@ -85,7 +86,7 @@ jobs:
               issue_number: context.issue.number,
               body: body
             });
-```
+````
 
 ## State Management for Distributed Teams
 

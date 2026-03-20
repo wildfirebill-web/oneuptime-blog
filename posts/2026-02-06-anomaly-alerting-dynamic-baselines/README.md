@@ -34,6 +34,7 @@ Standard OTel SDK configuration for request rate metrics:
 
 ```python
 # Python OpenTelemetry SDK setup
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

@@ -22,6 +22,7 @@ Let us start with the Batch account and its dependencies.
 
 ```hcl
 # main.tf
+
 # Creates an Azure Batch account with supporting resources
 
 terraform {

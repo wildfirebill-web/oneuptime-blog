@@ -33,6 +33,7 @@ On a connected workstation, pull all the images you need and save them to archiv
 ```bash
 #!/bin/bash
 # pull-and-save.sh - Run on connected workstation
+
 IMAGES=(
   "docker.io/library/nginx:1.25-alpine"
   "docker.io/library/postgres:16-alpine"

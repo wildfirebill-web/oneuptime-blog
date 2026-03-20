@@ -72,6 +72,7 @@ Install WireGuard on all site routers.
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt update && sudo apt install wireguard
 
 # RHEL/CentOS/Rocky

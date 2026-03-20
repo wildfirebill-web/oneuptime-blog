@@ -375,6 +375,7 @@ Monitor audit logs to identify violations:
 
 ```bash
 # View API server audit logs
+
 kubectl logs -n kube-system kube-apiserver-<node> | \
   grep ValidatingAdmissionPolicy | \
   grep baseline-pod-security

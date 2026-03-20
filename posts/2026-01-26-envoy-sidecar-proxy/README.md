@@ -87,6 +87,7 @@ Create `envoy.yaml` with separate listeners for inbound and outbound traffic:
 
 ```yaml
 # envoy.yaml - Sidecar proxy configuration
+
 # This configuration handles both inbound requests (from other services)
 # and outbound requests (from the application to other services)
 

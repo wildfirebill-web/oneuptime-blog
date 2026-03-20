@@ -87,6 +87,7 @@ The following YAML defines two distinct IP pools - one for production workloads 
 
 ```yaml
 # multiple-pools.yaml
+
 # This configuration creates separate IP pools for production and development environments
 # Each pool has its own IP range to ensure complete traffic isolation
 

@@ -88,6 +88,7 @@ This file lives at the project root and configures Ansible for the project:
 
 ```ini
 # ansible.cfg - Project-level configuration
+
 [defaults]
 inventory = inventories/production/hosts.ini
 roles_path = roles

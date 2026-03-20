@@ -253,6 +253,7 @@ Don't schedule jobs at times that don't exist during DST transitions:
 
 ```yaml
 # PROBLEMATIC: Might not run during DST spring forward
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

@@ -1,4 +1,4 @@
-# How to Use Cross-Run Variable References in OpenTofu Tests
+# How to Use Cross-Run Variable References in OpenTofu Tests - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -51,6 +51,7 @@ Build a full application stack test where each layer depends on the previous:
 # tests/full_stack_integration.tftest.hcl
 
 # Step 1: Create the networking layer
+
 run "networking" {
   module {
     source = "./modules/networking"
@@ -147,11 +148,11 @@ sequenceDiagram
     participant T as tofu test
     participant S as State
 
-    T->>S: run "networking" — apply
+    T->>S: run "networking" - apply
     Note over S: VPC, subnets created
-    T->>S: run "database" — apply (uses VPC from state)
+    T->>S: run "database" - apply (uses VPC from state)
     Note over S: RDS created
-    T->>S: run "application" — apply (uses VPC + RDS)
+    T->>S: run "application" - apply (uses VPC + RDS)
     Note over S: ECS created
     T->>S: Destroy all resources
     Note over S: State empty
@@ -164,4 +165,4 @@ sequenceDiagram
 
 ## Conclusion
 
-Cross-run variable references transform OpenTofu tests from isolated single-resource checks into realistic end-to-end integration tests. Use them to validate the interfaces between your modules—the most common source of real-world infrastructure bugs.
+Cross-run variable references transform OpenTofu tests from isolated single-resource checks into realistic end-to-end integration tests. Use them to validate the interfaces between your modules-the most common source of real-world infrastructure bugs.

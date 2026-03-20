@@ -26,6 +26,7 @@ The CA signs everything. The server and clients each get a certificate signed by
 
 ```bash
 # Install Easy-RSA from EPEL
+
 sudo dnf install -y epel-release
 sudo dnf install -y easy-rsa
 ```

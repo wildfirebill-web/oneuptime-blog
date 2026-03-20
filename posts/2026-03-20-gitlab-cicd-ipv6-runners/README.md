@@ -48,6 +48,7 @@ check_interval = 0
 
 ```bash
 # Create a Docker network with IPv6 support for GitLab CI builds
+
 docker network create \
     --driver bridge \
     --ipv6 \

@@ -16,6 +16,7 @@ A developer wants to deploy a new service. Instead of filing tickets with the pl
 
 ```yaml
 # team-config/services/payment-service.yaml
+
 name: payment-service
 team: payments
 tier: critical
@@ -142,7 +143,7 @@ subjects:
     apiGroup: rbac.authorization.k8s.io
 ```
 
-## Resource Quotas by Tier
+Resource Quotas by Tier
 
 Different tiers get different resource allocations:
 

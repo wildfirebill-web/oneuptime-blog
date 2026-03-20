@@ -39,6 +39,7 @@ This quota caps resources but also creates a tracking mechanism. Query quota usa
 
 ```bash
 # View quota usage
+
 kubectl describe resourcequota team-quota -n data-science
 
 # Output shows:

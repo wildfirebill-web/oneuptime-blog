@@ -59,6 +59,7 @@ Here is an example of defining a steady state hypothesis in code:
 
 ```python
 # steady_state.py
+
 # Define the steady state hypothesis for your chaos experiment
 
 from dataclasses import dataclass
@@ -412,7 +413,7 @@ def run_network_chaos_experiment():
     print("Experiment complete")
 ```
 
-### Resource Exhaustion
+Resource Exhaustion
 
 Testing how your system behaves when CPU, memory, or disk resources are constrained:
 

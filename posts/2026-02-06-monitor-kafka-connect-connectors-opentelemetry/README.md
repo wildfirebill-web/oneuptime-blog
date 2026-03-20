@@ -40,6 +40,7 @@ Before the OpenTelemetry Collector can scrape metrics, JMX must be enabled on th
 
 ```bash
 # kafka-connect-env.sh
+
 # Enable JMX for the Kafka Connect worker process
 export KAFKA_JMX_OPTS="-Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.port=9999 \

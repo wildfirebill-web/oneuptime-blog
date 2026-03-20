@@ -64,6 +64,7 @@ Flux uses a pull-based reconciliation loop. Each controller watches its source a
 
 ```yaml
 # Flux reconciliation -- each resource has its own interval and source
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

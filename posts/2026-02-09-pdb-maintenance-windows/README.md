@@ -115,6 +115,7 @@ Before maintenance, replace the normal PDB:
 
 ```bash
 # Save current PDB
+
 kubectl get pdb web-app-pdb -n production -o yaml > web-app-pdb-backup.yaml
 
 # Apply maintenance PDB

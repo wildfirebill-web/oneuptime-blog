@@ -35,6 +35,7 @@ The simplest approval mechanism is disabling auto-sync for production applicatio
 
 ```yaml
 # production-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

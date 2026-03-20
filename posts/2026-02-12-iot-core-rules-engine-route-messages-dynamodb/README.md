@@ -37,6 +37,7 @@ Stores only the most recent reading per device. Each new message overwrites the 
 
 ```bash
 # Create a simple table for latest device state
+
 aws dynamodb create-table \
   --table-name DeviceLatestState \
   --attribute-definitions \

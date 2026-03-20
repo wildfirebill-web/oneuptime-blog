@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, DevOps, Security, Environment
+Tags: Kubernetes, DevOps, Security, Environments
 
 Description: Practical steps for carving clusters into dev/stage/prod namespaces, applying least-privilege RBAC, and verifying isolation so accidents in testing never spill into production.
 
@@ -26,6 +26,7 @@ Create separate namespaces for each environment to isolate workloads. Each names
 
 ```bash
 # Create the three environment namespaces
+
 kubectl create namespace dev
 kubectl create namespace stage
 kubectl create namespace prod

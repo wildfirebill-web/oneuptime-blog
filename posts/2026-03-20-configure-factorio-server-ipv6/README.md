@@ -14,6 +14,7 @@ Factorio is a factory-building game with dedicated server support. The Factorio 
 
 ```bash
 # Create server directory
+
 mkdir -p /opt/factorio
 cd /opt/factorio
 

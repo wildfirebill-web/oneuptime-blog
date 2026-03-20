@@ -18,6 +18,7 @@ The Filestore CSI driver comes as a GKE addon. Enable it on your existing cluste
 
 ```bash
 # Enable the Filestore CSI driver addon on a GKE cluster
+
 gcloud container clusters update my-cluster \
   --zone us-central1-a \
   --update-addons=GcpFilestoreCsiDriver=ENABLED

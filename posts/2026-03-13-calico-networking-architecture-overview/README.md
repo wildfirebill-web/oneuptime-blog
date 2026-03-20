@@ -48,6 +48,7 @@ Felix watches the Calico datastore (via Typha) for changes to policies, endpoint
 
 ```bash
 # Check Felix health
+
 kubectl get pods -n calico-system -l k8s-app=calico-node
 kubectl logs -n calico-system -l k8s-app=calico-node -c calico-node | grep "Felix"
 ```

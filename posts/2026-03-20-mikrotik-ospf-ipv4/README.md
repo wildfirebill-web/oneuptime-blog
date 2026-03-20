@@ -14,6 +14,7 @@ OSPF (Open Shortest Path First) is a link-state routing protocol that automatica
 
 ```mikrotik
 # Create OSPF instance
+
 /routing ospf instance add \
   name=ospf-main \
   router-id=1.1.1.1 \

@@ -14,6 +14,7 @@ BCC (BPF Compiler Collection) provides a rich set of pre-built eBPF-based tracin
 
 ```bash
 # Install the bcc-tools package
+
 sudo dnf install -y bcc-tools python3-bcc
 
 # The tools are installed in /usr/share/bcc/tools/

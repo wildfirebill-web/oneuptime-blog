@@ -46,6 +46,7 @@ For Node.js functions:
 
 ```bash
 # Add the Error Reporting library to your Cloud Function
+
 npm install @google-cloud/error-reporting
 ```
 

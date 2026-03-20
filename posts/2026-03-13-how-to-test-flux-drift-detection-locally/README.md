@@ -123,6 +123,7 @@ ConfigMap drift:
 ```bash
 kubectl edit configmap my-app-config -n default
 # Change a value and save
+
 ```
 
 Service drift:

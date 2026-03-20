@@ -20,6 +20,7 @@ AWX (Ansible Tower) can be installed and configured on RHEL to provide robust fu
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

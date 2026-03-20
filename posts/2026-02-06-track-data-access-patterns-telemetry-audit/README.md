@@ -107,6 +107,7 @@ The Collector receives access audit logs and routes them to a dedicated index, s
 
 ```yaml
 # otel-collector-access-audit.yaml
+
 receivers:
   otlp:
     protocols:

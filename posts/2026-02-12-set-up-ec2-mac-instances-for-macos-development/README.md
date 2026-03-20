@@ -29,6 +29,7 @@ Let's allocate one:
 
 ```bash
 # Allocate a Dedicated Host for Mac instances (M2 Apple Silicon)
+
 aws ec2 allocate-hosts \
   --instance-type mac2.metal \
   --quantity 1 \

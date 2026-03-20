@@ -101,6 +101,7 @@ Verify the distribution after deployment:
 
 ```bash
 # Check pod distribution across zones
+
 kubectl get pods -n production -l app=api-service -o wide
 
 # Count pods per zone

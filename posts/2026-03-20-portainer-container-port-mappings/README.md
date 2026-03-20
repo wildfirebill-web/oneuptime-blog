@@ -19,10 +19,11 @@ Port mappings are how Docker containers expose services to the outside world. Wi
 
 A Docker port mapping connects a port on the Docker host to a port inside the container:
 
-```
+```text
 Host IP:Host Port → Container Port/Protocol
 
 # Examples:
+
 0.0.0.0:8080 → 80/tcp   (bind all interfaces, host 8080 to container 80)
 127.0.0.1:5432 → 5432/tcp  (bind only localhost, useful for DBs)
 0.0.0.0:53 → 53/udp    (UDP port for DNS services)
@@ -52,15 +53,15 @@ In the container creation form, find the **Network** section or **Ports** sectio
 
 ### Web Application (HTTP/HTTPS)
 
-```
+```text
 Host Port: 80    → Container Port: 80    Protocol: TCP
 Host Port: 443   → Container Port: 443   Protocol: TCP
 ```
 
 ### Database (Local Access Only)
 
-```
-# Bind to localhost only — prevents external access
+```text
+# Bind to localhost only - prevents external access
 Host IP:   127.0.0.1
 Host Port: 5432
 Container Port: 5432
@@ -71,7 +72,7 @@ Protocol: TCP
 
 Leave the host port field empty and Docker assigns an available random port:
 
-```
+```text
 Host Port: (empty)
 Container Port: 8080
 Protocol: TCP
@@ -94,7 +95,7 @@ ports:
 
 For DNS, RADIUS, or custom UDP services:
 
-```
+```text
 Host Port: 53
 Container Port: 53
 Protocol: UDP
@@ -105,7 +106,7 @@ Protocol: UDP
 After creating the container:
 
 1. Navigate to **Containers**.
-2. Find your container — port mappings are shown in the **Ports** column.
+2. Find your container - port mappings are shown in the **Ports** column.
 3. Click on the container name for full details.
 4. Under the **Ports** section, you'll see: `0.0.0.0:8080 → 80/tcp`.
 
@@ -130,16 +131,16 @@ Docker does not allow changing port mappings on a running container without re-c
 
 ## Security Considerations
 
-```
+```bash
 # Bad: Exposing a database to all interfaces
-Host Port: 3306 (binds to 0.0.0.0 — accessible from anywhere)
+Host Port: 3306 (binds to 0.0.0.0 - accessible from anywhere)
 
 # Better: Bind database to localhost only
 Host IP:   127.0.0.1
 Host Port: 3306
 
 # Best: Use Docker networks instead of host ports for inter-container communication
-# No port mapping needed — containers communicate via Docker network DNS
+# No port mapping needed - containers communicate via Docker network DNS
 ```
 
 For internal services that only need to talk to other containers (same host), avoid host port mappings entirely. Use Docker networks and container names for communication.
@@ -149,7 +150,7 @@ For internal services that only need to talk to other containers (same host), av
 | Network Mode | Port Mapping | Notes |
 |--------------|-------------|-------|
 | `bridge` | Supported | Default mode, port mapping works as described |
-| `host` | Not needed | Container shares host network — use container port directly |
+| `host` | Not needed | Container shares host network - use container port directly |
 | `none` | Not supported | No network connectivity |
 | `overlay` | Service ports | Used in Docker Swarm |
 
@@ -170,4 +171,4 @@ network_mode: host
 
 ## Conclusion
 
-Port mappings in Portainer are straightforward to configure through the web UI. Understanding the relationship between host ports and container ports — and when to use localhost binding versus all-interface binding — is essential for both security and accessibility. For most production deployments, combine selective port mappings with Docker networks to minimize attack surface while maintaining connectivity.
+Port mappings in Portainer are straightforward to configure through the web UI. Understanding the relationship between host ports and container ports - and when to use localhost binding versus all-interface binding - is essential for both security and accessibility. For most production deployments, combine selective port mappings with Docker networks to minimize attack surface while maintaining connectivity.

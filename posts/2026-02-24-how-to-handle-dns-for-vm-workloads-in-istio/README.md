@@ -61,6 +61,7 @@ To verify it is working on the VM:
 
 ```bash
 # Check if the DNS proxy is listening
+
 ss -tulnp | grep 15053
 
 # Test resolution through the proxy

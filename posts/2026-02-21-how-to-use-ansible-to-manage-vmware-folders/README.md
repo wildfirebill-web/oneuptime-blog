@@ -36,6 +36,7 @@ The `community.vmware.vmware_folder` module creates folders in the vSphere inven
 
 ```yaml
 # create-folders.yml
+
 ---
 - name: Create VMware folder structure
   hosts: localhost

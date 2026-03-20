@@ -476,6 +476,7 @@ def migrate_filtered_query(query):
     return query
 
 # Usage
+
 old_query = {
     "query": {
         "filtered": {

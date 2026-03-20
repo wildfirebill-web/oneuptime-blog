@@ -82,6 +82,7 @@ Define which domains and subdomains are in scope:
 
 ```bash
 # List all domains under management
+
 cat domains-in-scope.txt
 example.com
 api.example.com

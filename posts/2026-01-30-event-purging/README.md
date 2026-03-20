@@ -316,6 +316,7 @@ When using Kafka for event streaming, configure topic-level retention to handle 
 
 ```properties
 # kafka topic configuration
+
 # Retain messages for 7 days
 log.retention.hours=168
 

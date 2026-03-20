@@ -28,6 +28,7 @@ The sudoers configuration lives in `/etc/sudoers` and `/etc/sudoers.d/`. Always 
 
 ```bash
 # Create a sudoers drop-in file for the Ansible user
+
 sudo visudo -f /etc/sudoers.d/ansible
 
 # Add this line:

@@ -14,6 +14,7 @@ env0 integrates with OpenTofu to provide cost estimation at plan time. You can s
 
 ```yaml
 # .env0/configuration.yml
+
 version: 2
 
 cost_estimation:

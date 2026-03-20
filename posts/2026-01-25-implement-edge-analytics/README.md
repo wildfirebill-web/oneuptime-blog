@@ -62,6 +62,7 @@ graph TB
 
 ```python
 # stream_processor.py
+
 # Lightweight stream processing for edge analytics
 
 from dataclasses import dataclass, field

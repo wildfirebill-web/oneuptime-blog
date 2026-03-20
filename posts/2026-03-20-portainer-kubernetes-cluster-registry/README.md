@@ -1,4 +1,4 @@
-# How to Set Up Cluster Registry Access in Portainer for Kubernetes
+# How to Set Up Cluster Registry Access in Portainer for Kubernetes - Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,7 +23,7 @@ Setting up registry access for a Kubernetes cluster in Portainer ensures that de
 3. Find the **Registry access** section
 4. Select which registries this cluster can access:
 
-```
+```bash
 Available registries:
   [x] production-registry.company.com
   [x] Docker Hub (authenticated)
@@ -38,6 +38,7 @@ Kubernetes requires image pull secrets in each namespace where you pull private 
 
 ```bash
 # Create registry secret in a namespace
+
 kubectl create secret docker-registry registry-credentials \
   --docker-server=registry.company.com \
   --docker-username=portainer-user \

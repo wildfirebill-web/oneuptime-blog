@@ -96,6 +96,7 @@ from kubernetes import client, config, watch
 import time
 
 # Load kubeconfig
+
 config.load_kube_config()
 
 v1 = client.CoreV1Api()

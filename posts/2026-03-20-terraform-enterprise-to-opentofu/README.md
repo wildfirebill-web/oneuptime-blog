@@ -1,10 +1,10 @@
-# How to Migrate from Terraform Enterprise to OpenTofu
+# How to Migrate from Terraform Enterprise to OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform Enterprise, Migration, OpenTofu Cloud, Infrastructure as Code, DevOps
 
-Description: Learn how to migrate from Terraform Enterprise (TFE) or Terraform Cloud (TFC) to OpenTofu-compatible platforms — covering workspace migration, state transfer, and CI/CD updates.
+Description: Learn how to migrate from Terraform Enterprise (TFE) or Terraform Cloud (TFC) to OpenTofu-compatible platforms - covering workspace migration, state transfer, and CI/CD updates.
 
 ## Introduction
 
@@ -24,6 +24,7 @@ Terraform Enterprise (TFE) and Terraform Cloud (TFC) are the managed platforms f
 
 ```bash
 # Install Terraform Cloud API client or use curl
+
 TFC_TOKEN="your-terraform-cloud-token"
 ORGANIZATION="my-org"
 WORKSPACE="production-vpc"
@@ -99,7 +100,7 @@ tofu init
 # Verify state is intact
 tofu show | head -30
 
-# Run plan — must show no changes
+# Run plan - must show no changes
 tofu plan
 # Expected: No changes. Your infrastructure matches the configuration.
 ```

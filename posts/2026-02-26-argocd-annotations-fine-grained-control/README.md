@@ -42,6 +42,7 @@ Control the order resources are applied during sync:
 
 ```yaml
 # Database ConfigMap - deployed first
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

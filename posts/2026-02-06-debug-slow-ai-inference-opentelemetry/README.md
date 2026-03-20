@@ -59,6 +59,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Identify this service in your observability backend
+
 resource = Resource.create({
     "service.name": "ai-inference-service",
     "service.version": "2.1.0",

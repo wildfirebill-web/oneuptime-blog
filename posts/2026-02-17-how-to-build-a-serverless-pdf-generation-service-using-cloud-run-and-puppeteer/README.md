@@ -342,6 +342,7 @@ Puppeteer needs Chrome installed in the container. Use the official Puppeteer ba
 
 ```dockerfile
 # Dockerfile
+
 FROM ghcr.io/puppeteer/puppeteer:latest
 
 WORKDIR /app

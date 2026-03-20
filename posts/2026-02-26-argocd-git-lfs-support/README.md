@@ -28,6 +28,7 @@ To enable LFS support for all repositories, set the environment variable on the 
 
 ```yaml
 # argocd-repo-server-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

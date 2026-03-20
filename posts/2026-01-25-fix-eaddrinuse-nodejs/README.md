@@ -24,6 +24,7 @@ On macOS and Linux:
 
 ```bash
 # Find what is using port 3000
+
 lsof -i :3000
 
 # Output shows:

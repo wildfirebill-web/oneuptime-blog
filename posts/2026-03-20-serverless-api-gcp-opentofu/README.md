@@ -14,6 +14,7 @@ A serverless API on GCP combines Cloud Run for container-based functions, Firest
 
 ```hcl
 # main.tf - Cloud Run serverless API
+
 resource "google_cloud_run_v2_service" "api" {
   name     = "serverless-api"
   location = "us-central1"

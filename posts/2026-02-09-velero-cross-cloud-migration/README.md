@@ -24,6 +24,7 @@ BUCKET_NAME="k8s-migration-backup"
 REGION="us-east-1"
 
 # Install Velero CLI
+
 wget https://github.com/vmware-tanzu/velero/releases/download/${VELERO_VERSION}/velero-${VELERO_VERSION}-linux-amd64.tar.gz
 tar -xvf velero-${VELERO_VERSION}-linux-amd64.tar.gz
 sudo mv velero-${VELERO_VERSION}-linux-amd64/velero /usr/local/bin/

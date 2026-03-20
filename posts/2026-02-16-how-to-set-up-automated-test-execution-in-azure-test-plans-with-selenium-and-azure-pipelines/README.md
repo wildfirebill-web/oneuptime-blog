@@ -207,6 +207,7 @@ Here is a pipeline that runs the Selenium tests and publishes results to Azure T
 
 ```yaml
 # azure-pipelines-e2e.yml - Run Selenium tests and publish to Azure Test Plans
+
 trigger:
   - main
 

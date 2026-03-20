@@ -24,6 +24,7 @@ BAM_URL = "https://bluecat.example.com/api/v2"
 AUTH = ("admin", "password")
 
 # Login and get session token
+
 login_resp = requests.get(
     f"{BAM_URL}/login",
     auth=AUTH, verify=False

@@ -16,6 +16,7 @@ The `cron` module manages individual entries in a user's crontab. Each entry is 
 
 ```yaml
 # basic-cron.yml - Create a simple cron job
+
 - name: Create a basic cron job
   hosts: all
   become: yes

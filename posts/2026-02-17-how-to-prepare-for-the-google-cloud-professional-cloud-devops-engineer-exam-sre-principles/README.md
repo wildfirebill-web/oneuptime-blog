@@ -42,6 +42,7 @@ An SLA is a contract with consequences. If you violate the SLA, there are penalt
 
 ```bash
 # Create an SLO for a Cloud Run service
+
 # This monitors the availability of HTTP requests
 gcloud monitoring slos create \
   --service=my-cloud-run-service \

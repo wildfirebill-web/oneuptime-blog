@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "flow_logs" {
   name = "${var.prefix}-vpc-flow-logs"
 
@@ -85,14 +86,14 @@ resource "aws_cloudwatch_log_group" "vpc_flow_logs" {
 ```hcl
 # flow_logs.tf
 
-# VPC-level flow logs — captures all traffic in the VPC
+# VPC-level flow logs - captures all traffic in the VPC
 resource "aws_flow_log" "vpc" {
   iam_role_arn    = aws_iam_role.flow_logs.arn
   log_destination = aws_cloudwatch_log_group.vpc_flow_logs.arn
   traffic_type    = "ALL"  # ACCEPT, REJECT, or ALL
   vpc_id          = var.vpc_id
 
-  # Custom log format — more fields than the default format
+  # Custom log format - more fields than the default format
   log_format = "$${version} $${account-id} $${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport} $${protocol} $${packets} $${bytes} $${start} $${end} $${action} $${log-status} $${vpc-id} $${subnet-id} $${instance-id} $${tcp-flags} $${type} $${pkt-srcaddr} $${pkt-dstaddr}"
 
   tags = {
@@ -178,8 +179,8 @@ resource "aws_cloudwatch_metric_alarm" "high_rejection_rate" {
 
 ## Best Practices
 
-- Use `traffic_type = "ALL"` rather than `REJECT` only for VPC-level flow logs — ACCEPT traffic helps with troubleshooting and capacity planning, not just security.
-- Use a custom `log_format` to capture additional fields (`vpc-id`, `subnet-id`, `instance-id`) — the default format lacks these identifiers, making it harder to correlate logs with resources.
-- Set `retention_in_days = 90` for security compliance — many compliance frameworks require 90 days of network flow logs. Use 30 days for development to save costs.
-- Create CloudWatch Insights saved queries for common investigations — this makes it fast for the team to run security queries without writing them from scratch during incidents.
-- Alert on sustained high rejection rates — occasional rejected packets are normal, but sustained spikes indicate port scans, misconfigured applications, or active attacks.
+- Use `traffic_type = "ALL"` rather than `REJECT` only for VPC-level flow logs - ACCEPT traffic helps with troubleshooting and capacity planning, not just security.
+- Use a custom `log_format` to capture additional fields (`vpc-id`, `subnet-id`, `instance-id`) - the default format lacks these identifiers, making it harder to correlate logs with resources.
+- Set `retention_in_days = 90` for security compliance - many compliance frameworks require 90 days of network flow logs. Use 30 days for development to save costs.
+- Create CloudWatch Insights saved queries for common investigations - this makes it fast for the team to run security queries without writing them from scratch during incidents.
+- Alert on sustained high rejection rates - occasional rejected packets are normal, but sustained spikes indicate port scans, misconfigured applications, or active attacks.

@@ -204,6 +204,7 @@ The following implementation shows how to build a topic-based routing system wit
 
 ```python
 # topic_filter.py
+
 # Topic-based event filtering with wildcard support
 
 import re

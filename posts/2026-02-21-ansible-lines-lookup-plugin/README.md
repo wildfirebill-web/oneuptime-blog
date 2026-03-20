@@ -22,6 +22,7 @@ This playbook lists the contents of a local directory:
 
 ```yaml
 # playbook.yml - Run a command and get output as lines
+
 ---
 - name: Use local command output
   hosts: localhost

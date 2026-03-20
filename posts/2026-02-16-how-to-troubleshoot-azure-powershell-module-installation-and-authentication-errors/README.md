@@ -18,6 +18,7 @@ If you are running an older version of Windows or PowerShell, the package manage
 
 ```powershell
 # Install the NuGet package provider (required for module installation)
+
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 
 # Update PowerShellGet to the latest version

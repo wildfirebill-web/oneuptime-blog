@@ -210,6 +210,7 @@ Linked templates must be accessible via a URL. The common approaches are:
 
 ```bash
 # Create a storage account and container for templates
+
 az storage account create --name armtemplates --resource-group templates-rg --sku Standard_LRS
 az storage container create --name templates --account-name armtemplates
 

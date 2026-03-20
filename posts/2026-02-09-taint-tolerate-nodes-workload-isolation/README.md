@@ -36,6 +36,7 @@ Taint nodes for dedicated workloads:
 
 ```bash
 # Taint a node for GPU workloads only
+
 kubectl taint nodes gpu-node-1 dedicated=gpu:NoSchedule
 
 # Taint nodes for production workloads

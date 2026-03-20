@@ -401,6 +401,7 @@ TOPIC="your-topic"
 PARTITION="0"
 
 # Dump log segment to check for corruption
+
 $KAFKA_HOME/bin/kafka-dump-log.sh \
     --files $LOG_DIR/$TOPIC-$PARTITION/00000000000000000000.log \
     --print-data-log \

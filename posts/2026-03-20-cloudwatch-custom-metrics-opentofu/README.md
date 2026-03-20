@@ -16,6 +16,7 @@ CloudWatch custom metrics let you publish application-specific data points along
 
 ```bash
 # Publish a custom metric
+
 aws cloudwatch put-metric-data   --namespace "MyApp/Production"   --metric-name "ActiveUsers"   --value 142   --unit Count   --dimensions Environment=production,Service=api
 ```
 

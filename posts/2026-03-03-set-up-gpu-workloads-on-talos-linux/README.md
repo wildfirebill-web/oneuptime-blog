@@ -37,6 +37,7 @@ Talos provides official NVIDIA extensions. First, check which extensions are ava
 
 ```bash
 # List available NVIDIA extensions
+
 crane ls ghcr.io/siderolabs/nvidia-open-gpu-kernel-modules
 ```
 
@@ -218,7 +219,7 @@ spec:
           nvidia.com/gpu: 1
 ```
 
-## Resource Quotas for GPU
+Resource Quotas for GPU
 
 In multi-tenant clusters, you may want to limit GPU usage per namespace:
 

@@ -78,6 +78,7 @@ Apply this configuration:
 
 ```bash
 # Check current setting
+
 kubectl get configmap feature-flags -n tekton-pipelines -o yaml
 
 # Update if needed

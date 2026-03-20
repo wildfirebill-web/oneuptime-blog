@@ -326,6 +326,7 @@ Generate some requests:
 
 ```bash
 # Make several requests to different endpoints
+
 curl http://localhost:3000/
 curl http://localhost:3000/users/42
 curl http://localhost:3000/api/data

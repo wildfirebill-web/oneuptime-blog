@@ -22,6 +22,7 @@ Here's a simple comparison:
 {{- end -}}
 
 # Using template (cannot pipe)
+
 {{ template "myapp.name" . }}
 
 # Using include (can pipe to other functions)

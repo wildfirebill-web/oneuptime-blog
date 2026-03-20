@@ -65,6 +65,7 @@ Start by making routing decisions visible.
 
 ```yaml
 # otel-collector-config.yaml
+
 service:
   telemetry:
     logs:

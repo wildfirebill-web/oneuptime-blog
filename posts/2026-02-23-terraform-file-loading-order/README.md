@@ -37,6 +37,7 @@ For regular `.tf` files (anything not ending in `_override.tf` and not named `ov
 
 ```hcl
 # File: aaa.tf
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"

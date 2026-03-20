@@ -41,6 +41,7 @@ Before requesting increases, you need to know what quotas exist and their curren
 
 ```hcl
 # Look up the current EC2 On-Demand instance limit
+
 data "aws_servicequotas_service_quota" "ec2_on_demand" {
   service_code = "ec2"
   quota_code   = "L-1216C47A"  # Running On-Demand Standard instances

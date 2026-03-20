@@ -23,6 +23,7 @@ This guide covers test High-Connection Workloads in Calico with production-ready
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

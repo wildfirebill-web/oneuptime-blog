@@ -34,6 +34,7 @@ net:
 
 ```bash
 # Restart MongoDB
+
 sudo systemctl restart mongod
 
 # Initialize the replica set

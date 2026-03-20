@@ -22,6 +22,7 @@ Before installing, check if Java is already installed:
 
 ```bash
 # Check if Java is installed and which version
+
 java -version
 
 # Check if Java compiler is installed

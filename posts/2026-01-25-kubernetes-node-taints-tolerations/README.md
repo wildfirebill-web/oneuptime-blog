@@ -47,6 +47,7 @@ Manage taints on nodes with kubectl:
 
 ```bash
 # Add a taint to a node
+
 # Format: kubectl taint nodes <node-name> <key>=<value>:<effect>
 kubectl taint nodes worker-1 dedicated=gpu:NoSchedule
 

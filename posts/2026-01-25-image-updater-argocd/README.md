@@ -280,6 +280,7 @@ For automatic ECR token refresh, use the ECR credentials helper in the Image Upd
 
 ```yaml
 # argocd-image-updater-config ConfigMap
+
 data:
   registries.conf: |
     registries:

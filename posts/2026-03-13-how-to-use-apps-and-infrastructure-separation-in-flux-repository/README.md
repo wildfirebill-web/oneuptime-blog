@@ -81,6 +81,7 @@ The infrastructure Kustomization is defined in the cluster entry point:
 
 ```yaml
 # clusters/production/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

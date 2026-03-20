@@ -36,6 +36,7 @@ The most common approach is setting `remote_tmp` in your ansible.cfg file:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Change the remote temp directory to /tmp/ansible
 remote_tmp = /tmp/.ansible-${USER}/tmp

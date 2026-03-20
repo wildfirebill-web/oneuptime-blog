@@ -34,6 +34,7 @@ You configure the cache mode on the backend service or backend bucket that is be
 
 ```bash
 # Set the cache mode to CACHE_ALL_STATIC (the default)
+
 gcloud compute backend-services update my-backend \
     --cache-mode=CACHE_ALL_STATIC \
     --global \

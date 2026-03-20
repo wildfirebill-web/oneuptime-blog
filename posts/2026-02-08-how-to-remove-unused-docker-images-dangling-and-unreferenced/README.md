@@ -26,6 +26,7 @@ See all these categories on your system:
 
 ```bash
 # Show all images including dangling ones
+
 docker images -a
 
 # Show only dangling images

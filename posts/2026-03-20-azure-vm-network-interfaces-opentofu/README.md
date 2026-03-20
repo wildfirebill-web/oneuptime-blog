@@ -89,6 +89,7 @@ resource "azurerm_network_interface" "multi_ip" {
 
 ```hcl
 # NIC on management subnet
+
 resource "azurerm_network_interface" "management" {
   name                          = "${var.project_name}-mgmt-nic"
   location                      = var.location
@@ -199,4 +200,4 @@ az network nic show-effective-route-table \
 
 ## Conclusion
 
-Enable `enable_accelerated_networking = true` on NICs for all production VMs running on supported sizes (generally D/E/F/N series v3+)—this single setting can reduce network latency by 60-70% and dramatically improve throughput. The maximum number of NICs per VM depends on the VM size; check `az vm list-skus` for the `MaxNetworkInterfaces` capability. When using multiple NICs, configure routing rules inside the OS (using `ip route` on Linux) to route return traffic for each NIC through its corresponding gateway—Azure does not handle this automatically.
+Enable `enable_accelerated_networking = true` on NICs for all production VMs running on supported sizes (generally D/E/F/N series v3+)-this single setting can reduce network latency by 60-70% and dramatically improve throughput. The maximum number of NICs per VM depends on the VM size; check `az vm list-skus` for the `MaxNetworkInterfaces` capability. When using multiple NICs, configure routing rules inside the OS (using `ip route` on Linux) to route return traffic for each NIC through its corresponding gateway-Azure does not handle this automatically.

@@ -12,7 +12,7 @@ Module download failures during `tofu init` stop everything before any infrastru
 
 ## Error: Git SSH Authentication Failure
 
-```
+```text
 Error: Failed to download module "vpc"
 error downloading 'ssh://git@github.com/my-org/infra-modules.git': ...
 git exited with 128:
@@ -21,6 +21,7 @@ Permission denied (publickey).
 
 ```bash
 # Test SSH connectivity to GitHub
+
 ssh -T git@github.com
 
 # If that fails, check your SSH key is loaded
@@ -41,7 +42,7 @@ git ls-remote git@github.com:my-org/infra-modules.git
 
 ## Error: HTTPS Authentication Failure
 
-```
+```text
 Error: Failed to download module "vpc"
 error downloading 'https://github.com/my-org/infra-modules.git':
 Authentication failed
@@ -73,13 +74,13 @@ For CI/CD, set this in the workflow before running `tofu init`.
 
 ## Error: Module Version or Ref Not Found
 
-```
+```text
 Error: Failed to download module "vpc"
 Module version "2.5.0" is not available
 ```
 
 ```hcl
-# Check the exact ref format — use ?ref= for Git sources
+# Check the exact ref format - use ?ref= for Git sources
 module "vpc" {
   # Wrong: missing ?ref=
   source = "git::https://github.com/my-org/modules.git//vpc"
@@ -103,7 +104,7 @@ curl -s https://registry.opentofu.org/v1/modules/hashicorp/consul/aws/versions |
 
 ## Error: Registry Module Not Found
 
-```
+```text
 Error: Module not found
 Module "my-org/vpc/aws" not found in registry
 ```
@@ -127,7 +128,7 @@ curl -s https://my-registry.internal.com/v1/modules/my-org/vpc/aws
 
 ## Error: Subdir Path Not Found in Module
 
-```
+```text
 Error: Failed to download module "app"
 The requested module subdirectory "modules/app" does not exist
 ```

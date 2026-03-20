@@ -40,6 +40,7 @@ For more granular control, connect via SSH or the console:
 
 ```sh
 # Check current temporary address setting
+
 sysctl net.inet6.ip6.use_tempaddr
 # 0 = disabled, 1 = enabled
 
@@ -101,7 +102,7 @@ The returned address should be the temporary one, not the EUI-64 or stable perma
 ## Important Notes for pfSense
 
 - Privacy extensions on pfSense apply to the **firewall itself**, not to LAN clients (who manage their own privacy settings)
-- If you are using **static IPv6 addressing** on WAN, privacy extensions do not apply — they are only relevant for SLAAC/autoconfigured addresses
+- If you are using **static IPv6 addressing** on WAN, privacy extensions do not apply - they are only relevant for SLAAC/autoconfigured addresses
 - After enabling, existing SLAAC addresses may not immediately change; consider clearing and re-acquiring the IPv6 address via **Interfaces > WAN > Release/Renew**
 
 ## Conclusion

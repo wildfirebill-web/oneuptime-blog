@@ -16,6 +16,7 @@ The simplest way to remove a package is setting `state: absent`:
 
 ```yaml
 # Remove a single package
+
 - name: Remove Apache
   ansible.builtin.apt:
     name: apache2

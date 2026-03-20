@@ -145,6 +145,7 @@ Karpenter uses tags to discover which subnets and security groups to use for lau
 
 ```bash
 # Tag the subnets
+
 for SUBNET_ID in $(aws ec2 describe-subnets \
   --filters "Name=tag:kubernetes.io/cluster/${CLUSTER_NAME},Values=*" \
   --query "Subnets[].SubnetId" --output text); do

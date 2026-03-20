@@ -142,6 +142,7 @@ After applying port exclusions, verify that the iptables rules are correct insid
 
 ```bash
 # Get a shell in the istio-proxy container
+
 kubectl exec -it deploy/my-app -c istio-proxy -n default -- bash
 
 # Check iptables rules (needs NET_ADMIN capability or nsenter)

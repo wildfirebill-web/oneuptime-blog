@@ -23,6 +23,7 @@ Portainer does not install an Ingress Controller for you. Install one first:
 
 ```bash
 # Install NGINX Ingress Controller
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.0/deploy/static/provider/baremetal/deploy.yaml
 
 # Verify it's running
@@ -60,7 +61,7 @@ When deploying an application:
 ### Via KubeShell YAML
 
 ```yaml
-# ingress-basic.yaml — Simple HTTP ingress
+# ingress-basic.yaml - Simple HTTP ingress
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -102,7 +103,7 @@ kubectl create secret tls myapp-tls \
 Then create the Ingress with TLS:
 
 ```yaml
-# ingress-tls.yaml — HTTPS ingress
+# ingress-tls.yaml - HTTPS ingress
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

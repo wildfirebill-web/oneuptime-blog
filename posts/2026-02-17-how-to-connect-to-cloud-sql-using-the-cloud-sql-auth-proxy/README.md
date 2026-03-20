@@ -34,6 +34,7 @@ For Linux:
 
 ```bash
 # Download the latest Cloud SQL Auth Proxy for Linux
+
 curl -o cloud-sql-proxy \
     https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.8.0/cloud-sql-proxy.linux.amd64
 

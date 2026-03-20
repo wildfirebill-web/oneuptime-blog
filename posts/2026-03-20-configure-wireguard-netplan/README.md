@@ -14,6 +14,7 @@ Netplan supports WireGuard under the `tunnels` key with `mode: wireguard`. Keys 
 
 ```bash
 # Generate private and public keys
+
 wg genkey | tee /etc/netplan/wg0-private.key | wg pubkey > /etc/netplan/wg0-public.key
 
 # Restrict permissions

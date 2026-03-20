@@ -39,6 +39,7 @@ Lock down network access before worrying about user permissions.
 
 ```bash
 # Only allow specific IP ranges to access the workspace
+
 az synapse workspace firewall-rule create \
   --name OfficeNetwork \
   --workspace-name my-synapse-workspace \

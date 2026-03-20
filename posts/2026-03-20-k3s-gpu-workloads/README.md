@@ -21,6 +21,7 @@ Running GPU workloads on K3s requires configuring the NVIDIA Container Toolkit a
 
 ```bash
 # Check if NVIDIA drivers are installed
+
 nvidia-smi
 
 # If not installed, install them (Ubuntu)
@@ -37,7 +38,7 @@ nvidia-smi
 
 Expected output:
 
-```
+```yaml
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 535.104.05   Driver Version: 535.104.05   CUDA Version: 12.2   |
 |-------------------------------|----------------------|----------------------|
@@ -121,7 +122,7 @@ kubectl describe node | grep -A 10 "Capacity:"
 
 Expected output:
 
-```
+```text
 Capacity:
   cpu:                8
   memory:             32Gi

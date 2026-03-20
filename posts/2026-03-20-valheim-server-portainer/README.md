@@ -1,4 +1,4 @@
-# How to Deploy a Valheim Server via Portainer
+# How to Deploy a Valheim Server via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Running your own dedicated game server gives you full control over game settings
 
 ```bash
 # Open game server ports
+
 ufw allow 2456-2457/udp 2458/udp
 ufw reload
 ```

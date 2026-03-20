@@ -24,6 +24,7 @@ Let's create a priority hierarchy for different workload types:
 
 ```yaml
 # priority-classes.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:

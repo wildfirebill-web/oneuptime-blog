@@ -84,6 +84,7 @@ Let me walk through the most common production setup: connecting to two on-premi
 
 ```bash
 # Create HA VPN gateway in your VPC
+
 gcloud compute vpn-gateways create ha-vpn-gw \
     --network=production-vpc \
     --region=us-central1

@@ -14,6 +14,7 @@ Grafana Unified Alerting (introduced in Grafana 8) evaluates alert rules against
 
 ```bash
 # Ensure Blackbox Exporter is running and scraping targets
+
 # (See Prometheus Blackbox Exporter configuration)
 
 # Verify probe metrics are available

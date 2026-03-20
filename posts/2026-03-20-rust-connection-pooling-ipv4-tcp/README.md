@@ -80,7 +80,7 @@ impl ConnectionPool {
         match stream.peek(&mut buf) {
             Ok(_) | Err(_) => {
                 // If peek returns data, connection has data (still alive)
-                // We can't reliably check without sending — rely on write errors instead
+                // We can't reliably check without sending - rely on write errors instead
                 true
             }
         }
@@ -128,10 +128,10 @@ impl Pool {
                     pool: Arc::clone(&self.inner),
                 });
             }
-            // Connection is dead — discard and try next
+            // Connection is dead - discard and try next
         }
         
-        // Pool empty — create a new connection
+        // Pool empty - create a new connection
         let conn = pool.create_connection()?;
         Ok(PooledConnection {
             stream: Some(conn),

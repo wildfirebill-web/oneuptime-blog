@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, HAProxy, Frontend, Load Balancer, Bind
+Tags: IPv6, HAProxy, Frontend, Load Balancer, BIND
 
 Description: Learn how to configure HAProxy frontend sections to listen on IPv6 addresses, bind to specific IPv6 interfaces, and handle both IPv4 and IPv6 traffic.
 
@@ -22,6 +22,7 @@ defaults
     timeout server  30s
 
 # IPv6-only frontend
+
 frontend ipv6_http
     bind [::]:80
     default_backend app_servers

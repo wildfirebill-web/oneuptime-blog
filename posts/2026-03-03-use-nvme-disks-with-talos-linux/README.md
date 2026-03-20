@@ -30,6 +30,7 @@ When installing Talos Linux, you specify the installation disk in the machine co
 
 ```yaml
 # Machine configuration for installing Talos on an NVMe disk
+
 machine:
   install:
     disk: /dev/nvme0n1  # Install to the first NVMe drive

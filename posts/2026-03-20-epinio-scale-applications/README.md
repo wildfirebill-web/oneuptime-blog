@@ -21,6 +21,7 @@ How to Scale Applications in Epinio demonstrates how Epinio simplifies applicati
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

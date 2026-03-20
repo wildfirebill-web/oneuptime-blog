@@ -36,6 +36,7 @@ ip route show | grep bird | head -10
 ```bash
 calicoctl node status | grep -v "Established" | grep -E "Idle|Active|Connect"
 # Expected: empty - no non-Established peers
+
 ```
 
 **Validation Step 2: Routes are present for all nodes**

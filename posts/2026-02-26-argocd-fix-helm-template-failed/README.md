@@ -26,6 +26,7 @@ Always start by reproducing the error locally. This gives you the fastest feedba
 
 ```bash
 # Clone the repo
+
 git clone https://github.com/org/repo
 cd repo/chart-directory
 

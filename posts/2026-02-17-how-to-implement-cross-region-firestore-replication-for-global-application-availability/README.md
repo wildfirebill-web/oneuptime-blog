@@ -51,6 +51,7 @@ When setting up a new project, choose the multi-region location during database 
 
 ```bash
 # Create a Firestore database with multi-region replication (nam5)
+
 gcloud firestore databases create \
   --location=nam5 \
   --type=firestore-native \

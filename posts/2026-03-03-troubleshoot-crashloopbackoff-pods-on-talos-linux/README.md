@@ -23,6 +23,7 @@ The pod is not stuck - it is actively being restarted, just with increasing dela
 
 ```bash
 # Check for CrashLoopBackOff pods
+
 kubectl get pods -A | grep CrashLoopBackOff
 
 # Get details about the pod

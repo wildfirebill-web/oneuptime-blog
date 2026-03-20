@@ -55,6 +55,7 @@ k8s-manifests/
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

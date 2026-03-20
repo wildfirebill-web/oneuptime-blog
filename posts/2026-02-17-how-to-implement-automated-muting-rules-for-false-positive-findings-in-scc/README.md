@@ -31,6 +31,7 @@ This command creates a muting rule that suppresses public IP findings for resour
 
 ```bash
 # Create a muting rule for expected public IP findings on load balancers
+
 gcloud scc muteconfigs create public-lb-expected \
   --organization=123456789 \
   --description="Public IPs on load balancer backends are expected" \

@@ -37,6 +37,7 @@ This is one of the most common errors. It happens when your account lacks the ne
 
 ```bash
 # Check your current authenticated account
+
 gcloud auth list
 
 # Re-authenticate if needed
@@ -305,7 +306,7 @@ app.listen(PORT, () => {
 });
 ```
 
-## Resource and Quota Errors
+Resource and Quota Errors
 
 ### Error: "Quota exceeded for resource"
 

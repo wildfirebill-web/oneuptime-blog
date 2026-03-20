@@ -61,6 +61,7 @@ flowchart LR
 
 ```bash
 # Core parsing libraries
+
 pip install llama-index unstructured pypdf pymupdf python-docx
 
 # For OCR capabilities

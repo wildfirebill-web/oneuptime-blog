@@ -42,6 +42,7 @@ When you check the process identity, you'll see:
 ```bash
 kubectl exec supplemental-demo -- id
 # uid=1000 gid=1000 groups=1000,2000,3000,4000
+
 ```
 
 The process runs as user 1000 with primary group 1000, but also belongs to groups 2000, 3000, and 4000.

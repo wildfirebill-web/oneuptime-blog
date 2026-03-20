@@ -53,6 +53,7 @@ The event log is the source of truth in a Kappa architecture. Every event that e
 
 ```bash
 # Create the event log topic with a long retention period
+
 gcloud pubsub topics create event-log
 
 # Create the processing subscription

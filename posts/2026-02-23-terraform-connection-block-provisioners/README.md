@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provisioner, SSH, WinRM, Connection, Infrastructure as Code
+Tags: Terraform, Provisioners, SSH, WinRM, Connection, Infrastructure as Code
 
 Description: Learn how to configure the connection block in Terraform to establish SSH and WinRM connections for remote-exec and file provisioners with bastion hosts and authentication.
 
@@ -14,7 +14,7 @@ Every time you use a `remote-exec` or `file` provisioner, Terraform needs to kno
 
 You can place the `connection` block in two locations:
 
-### Resource-Level Connection
+Resource-Level Connection
 
 When defined at the resource level, all provisioners in that resource share the same connection settings.
 
@@ -329,6 +329,7 @@ For instances that take a long time to boot (like large Windows servers), increa
 
 ```bash
 # Set Terraform to output debug logs
+
 export TF_LOG=DEBUG
 terraform apply
 ```

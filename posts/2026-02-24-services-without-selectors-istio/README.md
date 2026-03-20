@@ -323,6 +323,7 @@ Services without selectors overlap in functionality with Istio's ServiceEntry. B
 
 ```yaml
 # ServiceEntry equivalent of the external database
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

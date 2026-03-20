@@ -51,6 +51,7 @@ Install the Mitogen library:
 
 ```bash
 # Install Mitogen via pip
+
 pip install mitogen
 
 # Verify the installation

@@ -20,6 +20,7 @@ Zsh is the default shell on macOS and popular on Linux. Setting up autocompletio
 
 ```bash
 # Install autocomplete (works for both bash and zsh)
+
 tofu -install-autocomplete
 
 # Reload Zsh configuration

@@ -27,6 +27,7 @@ Start by checking what quotas you have and how much you are using:
 
 ```bash
 # List all quotas for a specific service
+
 gcloud services quotas list \
   --service=compute.googleapis.com \
   --project=my-project \

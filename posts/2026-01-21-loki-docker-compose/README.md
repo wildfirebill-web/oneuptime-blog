@@ -572,6 +572,7 @@ Once your logs are flowing, use these LogQL queries in Grafana:
 
 ```logql
 # View all logs from a specific job
+
 {job="docker"}
 
 # Filter logs containing specific text
@@ -593,7 +594,7 @@ count_over_time({job="docker"} |= "error" [5m])
 sum(rate({job="docker"} |= "error" [5m]))
 ```
 
-## Resource Limits and Performance Tuning
+Resource Limits and Performance Tuning
 
 For production deployments, set resource limits in Docker Compose:
 

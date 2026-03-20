@@ -177,6 +177,7 @@ Directives often create unwanted blank lines. The `~` (tilde) character strips w
 
 ```hcl
 # Without tilde - produces blank lines between items
+
 locals {
   list_with_blanks = <<-EOT
     %{ for name in var.names }

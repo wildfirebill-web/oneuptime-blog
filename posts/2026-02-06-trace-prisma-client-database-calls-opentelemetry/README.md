@@ -36,6 +36,7 @@ You need Prisma version 4.2 or later and a Node.js application with the OpenTele
 
 ```bash
 # Install Prisma's OpenTelemetry integration and the OTel SDK
+
 npm install @prisma/instrumentation \
     @opentelemetry/sdk-node \
     @opentelemetry/sdk-trace-node \

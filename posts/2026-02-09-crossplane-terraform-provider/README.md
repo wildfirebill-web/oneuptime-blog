@@ -37,6 +37,7 @@ Wait for the provider to become healthy:
 ```bash
 kubectl get provider provider-terraform
 # NAME                  INSTALLED   HEALTHY   PACKAGE                                                   AGE
+
 # provider-terraform    True        True      xpkg.upbound.io/upbound/provider-terraform:v0.16.0       1m
 ```
 

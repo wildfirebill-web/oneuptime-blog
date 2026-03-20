@@ -274,6 +274,7 @@ NYC is commonly used with Mocha, Ava, and other test runners.
 
 ```bash
 # Use the experimental loader for ES modules
+
 node --experimental-vm-modules node_modules/.bin/nyc mocha
 ```
 

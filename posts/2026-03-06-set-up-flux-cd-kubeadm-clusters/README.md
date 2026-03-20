@@ -30,6 +30,7 @@ Run these steps on all nodes (control plane and workers):
 
 ```bash
 # Disable swap (required by Kubernetes)
+
 sudo swapoff -a
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 

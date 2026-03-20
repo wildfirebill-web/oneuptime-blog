@@ -109,6 +109,7 @@ When deploying to Vercel, add these environment variables through the Vercel das
 
 ```bash
 # Required for Vercel's observability integration
+
 VERCEL_OTEL_ENABLED=1
 
 # Optional: Custom OTLP endpoint for third-party backends

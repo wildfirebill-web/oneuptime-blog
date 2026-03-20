@@ -75,6 +75,7 @@ The default timeout may be too aggressive for your environment.
 
 ```python
 # Configure OTLP exporter with increased timeout
+
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 

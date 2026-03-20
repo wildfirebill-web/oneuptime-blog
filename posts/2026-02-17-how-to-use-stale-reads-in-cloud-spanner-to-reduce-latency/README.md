@@ -49,6 +49,7 @@ instance = client.instance("my-instance")
 database = instance.database("my-database")
 
 # Read data that is at most 15 seconds old
+
 staleness = datetime.timedelta(seconds=15)
 with database.snapshot(exact_staleness=staleness) as snapshot:
     results = snapshot.execute_sql(

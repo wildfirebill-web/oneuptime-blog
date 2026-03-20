@@ -29,6 +29,7 @@ Compare Cilium Endpoints against running pods to find unmanaged workloads.
 
 ```bash
 # List all Cilium Endpoints and their state
+
 cilium endpoint list
 
 # Get endpoint count

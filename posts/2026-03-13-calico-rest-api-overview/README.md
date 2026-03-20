@@ -43,6 +43,7 @@ https://<kubernetes-api-server>/apis/projectcalico.org/v3/<resource-type>/<name>
 
 ```bash
 # Discover all available Calico API resources
+
 kubectl get --raw /apis/projectcalico.org/v3 | jq '.resources[].name'
 ```
 

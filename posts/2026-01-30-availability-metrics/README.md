@@ -82,6 +82,7 @@ class UptimeCalculator:
 
 
 # Example usage
+
 calculator = UptimeCalculator()
 
 # Record a 30-minute outage

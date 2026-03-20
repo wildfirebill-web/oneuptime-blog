@@ -48,6 +48,7 @@ apps/
 
 ```yaml
 # apps/overlays/active/replica-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

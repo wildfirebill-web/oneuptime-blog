@@ -27,6 +27,7 @@ Targeting specific users for specific tasks keeps your server clean and your sec
 
 ```yaml
 # playbooks/non-root-basic.yml
+
 # Run tasks as a non-root service account
 ---
 - name: Manage application as service user

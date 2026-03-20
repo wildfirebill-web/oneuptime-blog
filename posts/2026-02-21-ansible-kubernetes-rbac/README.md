@@ -38,6 +38,7 @@ Start with a Role that allows developers to manage common resources in their nam
 
 ```yaml
 # playbook: create-developer-rbac.yml
+
 # Sets up RBAC for developers in the development namespace
 ---
 - name: Configure Developer RBAC

@@ -35,6 +35,7 @@ Here is a cloudbuild.yaml that implements cache-from:
 
 ```yaml
 # Cloud Build configuration with cache-from for layer reuse
+
 steps:
   # Step 1: Pull the previous image to use as cache
   - name: 'gcr.io/cloud-builders/docker'

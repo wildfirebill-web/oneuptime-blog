@@ -21,6 +21,7 @@ An automated release pipeline typically triggers on a git tag and performs a ser
 ```bash
 #!/bin/bash
 # Automated release pipeline steps:
+
 # 1. Triggered by a git tag (e.g., v1.2.3)
 # 2. Validate the version format
 # 3. Build the container image with Podman

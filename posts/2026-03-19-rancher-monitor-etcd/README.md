@@ -51,6 +51,7 @@ This dashboard shows:
 
 ```promql
 # Current leader
+
 etcd_server_is_leader
 
 # Leader changes in the last hour

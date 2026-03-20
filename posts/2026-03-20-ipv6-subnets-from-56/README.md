@@ -12,7 +12,7 @@ A /56 prefix is commonly assigned to residential internet customers, small busin
 
 ## The Math
 
-```
+```text
 /56 prefix: 128 - 56 = 72 bits remaining
 Subnet bits: 64 - 56 = 8 bits for subnet numbering
 Interface ID: 64 bits
@@ -22,7 +22,7 @@ Available /64 subnets: 2^8 = 256
 
 ## Visual Layout
 
-```
+```yaml
 |<----------- 56 bits ----------->|<-- 8 bits -->|<--- 64 bits --->|
 |       ISP-assigned prefix        |  Subnet ID   |  Interface ID   |
 |       2001:db8:1100::/56         |   00-ff      |    host bits    |
@@ -61,7 +61,7 @@ subnets_from_56("2001:db8:1100::/56")
 ```
 
 Output:
-```
+```text
 Prefix: 2001:db8:1100::/56
 Total /64 subnets: 256
 Subnet ID range: 0x00 to 0xFF
@@ -85,7 +85,7 @@ Last 5 subnets:
 
 With 256 subnets, a typical small office could use:
 
-```
+```text
 Subnet  0 (::00xx::):  WAN/uplink (sometimes /127 or /64)
 Subnet  1 (::0001::):  Primary LAN (user devices, SLAAC)
 Subnet  2 (::0002::):  IoT network (cameras, smart home)
@@ -103,6 +103,7 @@ For a CPE router receiving a /56 via DHCPv6-PD:
 
 ```bash
 # /etc/radvd.conf - advertise subnet 1 to LAN
+
 interface eth1 {
     AdvSendAdvert on;
     MinRtrAdvInterval 3;
@@ -135,10 +136,10 @@ interface eth1 {
 
 If you need more than 256 subnets from a /56:
 
-1. **Request a /48 from your ISP** — gives 65,536 /64 subnets
+1. **Request a /48 from your ISP** - gives 65,536 /64 subnets
 2. **Use a /60 delegation** for sub-branches (only 16 subnets each, but allows delegation)
 3. **Combine multiple /56 allocations** if the ISP provides them
 
 ## Conclusion
 
-A /56 allocation provides 256 /64 subnets — ample for most home networks and small offices. The 8-bit subnet ID (0x00-0xFF) gives straightforward hexadecimal numbering. When designing your subnet plan, reserve low-numbered subnets for infrastructure and WAN links, use sequential numbers for VLANs, and leave some headroom for future growth.
+A /56 allocation provides 256 /64 subnets - ample for most home networks and small offices. The 8-bit subnet ID (0x00-0xFF) gives straightforward hexadecimal numbering. When designing your subnet plan, reserve low-numbered subnets for infrastructure and WAN links, use sequential numbers for VLANs, and leave some headroom for future growth.

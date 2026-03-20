@@ -1,4 +1,4 @@
-# How to Trigger Webhooks via the Portainer API
+# How to Trigger Webhooks via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Portainer webhooks are unique URLs that trigger a redeploy of a stack or service
 
 ```bash
 # List all webhooks
+
 curl -s "${PORTAINER_URL}/api/webhooks" \
   -H "Authorization: Bearer ${API_TOKEN}" | \
   jq '[.[] | {id: .Id, token: .Token, resourceId: .ResourceID, type: .Type}]'
@@ -114,7 +115,7 @@ curl -X DELETE "${PORTAINER_URL}/api/webhooks/${WEBHOOK_ID}" \
 
 ## Security Best Practices for Webhooks
 
-- Treat webhook URLs like passwords — they provide deployment access.
+- Treat webhook URLs like passwords - they provide deployment access.
 - Use HTTPS to prevent token interception.
 - Rotate webhooks periodically by deleting and recreating them.
 - Restrict webhook trigger IPs at the firewall or reverse proxy level.

@@ -28,6 +28,7 @@ You need Docker installed and the Docker daemon running:
 
 ```bash
 # Verify Docker is running
+
 docker version
 
 # Check the Docker socket exists (Linux/macOS)

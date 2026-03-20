@@ -43,6 +43,7 @@ A complete example for Ubuntu 22.04:
 
 ```text
 # Primary repository
+
 deb http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse
 
 # Updates (bug fixes and improvements for stable packages)

@@ -33,6 +33,7 @@ Here's a minimal configuration that adds common Kubernetes attributes:
 
 ```yaml
 # Basic Kubernetes attributes processor configuration
+
 # Automatically adds pod, namespace, and node metadata
 receivers:
   otlp:
@@ -291,7 +292,7 @@ processors:
         - k8s.namespace.name
 ```
 
-### Resource Attribute Association
+Resource Attribute Association
 
 Associates using existing resource attributes:
 

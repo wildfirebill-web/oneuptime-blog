@@ -45,6 +45,7 @@ The EU region has additional compliance requirements indicated by the green-high
 
 ```yaml
 # argocd/clusters/us-cluster.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

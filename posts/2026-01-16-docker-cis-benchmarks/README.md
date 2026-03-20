@@ -35,6 +35,7 @@ flowchart TB
 
 ```bash
 # Run Docker Bench Security
+
 docker run --rm --net host --pid host --userns host --cap-add audit_control \
   -e DOCKER_CONTENT_TRUST=$DOCKER_CONTENT_TRUST \
   -v /etc:/etc:ro \

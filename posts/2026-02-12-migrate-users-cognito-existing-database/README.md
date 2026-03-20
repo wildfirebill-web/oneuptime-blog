@@ -155,6 +155,7 @@ Attach the trigger to your user pool:
 
 ```bash
 # Set the user migration Lambda trigger
+
 aws cognito-idp update-user-pool \
     --user-pool-id us-east-1_XXXXXXXXX \
     --lambda-config UserMigration=arn:aws:lambda:us-east-1:123456789:function:user-migration

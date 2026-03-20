@@ -35,6 +35,7 @@ Benefits of using journald as the Podman log driver:
 
 ```bash
 # Check Podman's default log driver
+
 podman info --format '{{.Host.LogDriver}}'
 
 # For rootless Podman

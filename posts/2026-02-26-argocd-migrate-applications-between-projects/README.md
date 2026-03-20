@@ -30,6 +30,7 @@ Before migrating, verify the destination project can accept the application:
 
 ```bash
 # Get the application's source repo
+
 argocd app get my-app -o json | jq -r '.spec.source.repoURL'
 # Output: https://github.com/my-org/my-service.git
 

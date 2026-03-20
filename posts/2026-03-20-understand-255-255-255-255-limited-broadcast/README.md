@@ -8,11 +8,11 @@ Description: Understand why 255.255.255.255 is called the limited broadcast addr
 
 ## Introduction
 
-`255.255.255.255` is the **limited broadcast address** in IPv4 — a special destination that means "send to every host on the directly-connected network segment." The word "limited" refers to the fact that routers never forward it. It is the safest kind of broadcast because its scope is always constrained to one link.
+`255.255.255.255` is the **limited broadcast address** in IPv4 - a special destination that means "send to every host on the directly-connected network segment." The word "limited" refers to the fact that routers never forward it. It is the safest kind of broadcast because its scope is always constrained to one link.
 
 ## Why It Exists
 
-IPv4 addresses include a subnet component. When a host has no IP configuration yet (e.g., during boot), it cannot compute the subnet's directed broadcast address because it does not know its subnet mask. The solution is `255.255.255.255` — a broadcast that works without any IP context.
+IPv4 addresses include a subnet component. When a host has no IP configuration yet (e.g., during boot), it cannot compute the subnet's directed broadcast address because it does not know its subnet mask. The solution is `255.255.255.255` - a broadcast that works without any IP context.
 
 ## Who Uses 255.255.255.255?
 
@@ -26,14 +26,15 @@ IPv4 addresses include a subnet component. When a host has no IP configuration y
 
 ## Router Behavior
 
-Every IP router discards packets with destination `255.255.255.255`. This behavior is defined by RFC 919 and cannot be overridden through normal configuration. No routing table lookup occurs — the packet is simply dropped on ingress.
+Every IP router discards packets with destination `255.255.255.255`. This behavior is defined by RFC 919 and cannot be overridden through normal configuration. No routing table lookup occurs - the packet is simply dropped on ingress.
 
 ```bash
 # Confirm: a packet to 255.255.255.255 does not appear on a different subnet
-# On Router eth0 (192.168.1.0/24 side) — send a broadcast
+
+# On Router eth0 (192.168.1.0/24 side) - send a broadcast
 echo "test" | socat - UDP-DATAGRAM:255.255.255.255:9999,broadcast
 
-# On Router eth1 (192.168.2.0/24 side) — should receive nothing
+# On Router eth1 (192.168.2.0/24 side) - should receive nothing
 sudo tcpdump -i eth0_on_other_side -n "dst 255.255.255.255"
 # 0 packets captured
 ```
@@ -56,7 +57,7 @@ A server receiving a packet to `255.255.255.255` cannot always determine which i
 
 For a DHCP server, the `interface` directive in `/etc/dhcp/dhcpd.conf` pins the daemon to specific interfaces:
 
-```
+```text
 # Only serve DHCP on eth1 (the LAN-facing interface)
 interface eth1;
 

@@ -16,6 +16,7 @@ You have data structured as a list containing other lists, and you need a single
 
 ```python
 # Nested list structure
+
 nested = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]
 
 # Goal: [1, 2, 3, 4, 5, 6, 7, 8, 9]

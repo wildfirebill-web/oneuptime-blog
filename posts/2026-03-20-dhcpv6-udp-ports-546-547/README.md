@@ -8,7 +8,7 @@ Description: Understand the roles of UDP ports 546 and 547 in DHCPv6 communicati
 
 ## Overview
 
-DHCPv6 uses two specific UDP ports for communication — port **547** for servers and relay agents, and port **546** for clients. This is different from DHCPv4 which uses ports 67 and 68.
+DHCPv6 uses two specific UDP ports for communication - port **547** for servers and relay agents, and port **546** for clients. This is different from DHCPv4 which uses ports 67 and 68.
 
 ## Port Assignments
 
@@ -37,6 +37,7 @@ In a direct (no relay) exchange, the client sends from port **546** to port **54
 
 ```bash
 # Check if a DHCPv6 server is listening on port 547
+
 ss -ulnp | grep 547
 
 # Example output:
@@ -94,7 +95,7 @@ table ip6 dhcpv6_rules {
 | Server port | 67 | 547 |
 | Client port | 68 | 546 |
 | Transport | UDP/IPv4 | UDP/IPv6 |
-| Broadcast | Yes (255.255.255.255) | No — uses multicast (ff02::1:2) |
+| Broadcast | Yes (255.255.255.255) | No - uses multicast (ff02::1:2) |
 
 ## Troubleshooting Port Issues
 

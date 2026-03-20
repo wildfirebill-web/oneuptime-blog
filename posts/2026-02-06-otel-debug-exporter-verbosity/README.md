@@ -143,6 +143,7 @@ Step 2: Restart the collector and trigger a request:
 
 ```bash
 # Restart the collector to pick up the config change
+
 docker compose restart otel-collector
 
 # Trigger a request to your application

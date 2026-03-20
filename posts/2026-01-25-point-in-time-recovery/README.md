@@ -60,6 +60,7 @@ Edit `postgresql.conf`:
 # postgresql.conf
 
 # Enable WAL archiving
+
 archive_mode = on
 archive_command = 'cp %p /var/lib/postgresql/wal_archive/%f'
 

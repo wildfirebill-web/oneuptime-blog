@@ -80,6 +80,7 @@ Start with projects that define the boundaries for each layer:
 
 ```yaml
 # projects/infrastructure.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

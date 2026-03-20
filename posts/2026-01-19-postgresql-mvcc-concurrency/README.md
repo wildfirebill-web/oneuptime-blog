@@ -321,6 +321,7 @@ JOIN pg_stat_activity a ON p.pid = a.pid;
 
 ```python
 # Bad: Long transaction
+
 with connection.cursor() as cursor:
     cursor.execute("BEGIN")
     # ... lots of processing ...

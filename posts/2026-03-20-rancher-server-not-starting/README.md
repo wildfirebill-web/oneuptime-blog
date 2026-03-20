@@ -8,12 +8,13 @@ Description: A systematic guide to diagnosing and resolving issues when Rancher 
 
 ## Introduction
 
-When Rancher server refuses to start, the failure can stem from many sources — certificate issues, database connectivity problems, insufficient resources, or misconfigured Helm values. This guide provides a systematic checklist to identify and resolve the root cause.
+When Rancher server refuses to start, the failure can stem from many sources - certificate issues, database connectivity problems, insufficient resources, or misconfigured Helm values. This guide provides a systematic checklist to identify and resolve the root cause.
 
 ## Step 1: Check Pod Status
 
 ```bash
 # Check Rancher pod status in the cattle-system namespace
+
 kubectl get pods -n cattle-system
 
 # Sample output showing a crashloop
@@ -153,4 +154,4 @@ helm install rancher rancher-stable/rancher \
 
 ## Conclusion
 
-Troubleshooting Rancher server startup failures requires methodically examining pod logs, certificate validity, resource constraints, database connectivity, and ingress configuration. Work through each step in order — the most common culprits are expired certificates and insufficient memory. Keeping cert-manager healthy and setting generous resource limits will prevent most startup failures.
+Troubleshooting Rancher server startup failures requires methodically examining pod logs, certificate validity, resource constraints, database connectivity, and ingress configuration. Work through each step in order - the most common culprits are expired certificates and insufficient memory. Keeping cert-manager healthy and setting generous resource limits will prevent most startup failures.

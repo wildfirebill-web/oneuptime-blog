@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DS-Lite, IPv6, IPv4, ISP, Tunneling, AFTR, B4
 
-Description: Configure DS-Lite (Dual-Stack Lite) for ISP deployments, setting up the AFTR (carrier NAT44 over IPv6 tunnel) and B4 (customer-premises softwire concentrator) for IPv4 connectivity over IPv6-only access networks.
+Description: Configure DS-Lite (Dual-Stack Lite) for ISP deployments, setting up the AFTR (carrier NAT44 over IPv6 tunnel) and B4 (customer-premises softwire concentrator) for IPv4 connectivity over IPv6-only...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ DS-Lite (RFC 6333) allows ISPs to provide IPv4 connectivity over IPv6-only acces
 
 ## Architecture
 
-```
+```text
 IPv4 Client → B4 (CPE) →[IPv4-in-IPv6 tunnel]→ AFTR (ISP) → IPv4 Internet
               [encap]        [IPv6-only access]    [NAT44]
 ```
@@ -24,6 +24,7 @@ IPv4 Client → B4 (CPE) →[IPv4-in-IPv6 tunnel]→ AFTR (ISP) → IPv4 Interne
 
 ```bash
 # Install softwire/MAP-E support
+
 # Option 1: Use LW4over6 or AFTR implementation
 # Option 2: Use kernel ip6tnl with iptables
 
@@ -84,7 +85,7 @@ sudo ip route add default dev b4-aftr
 
 The B4 discovers the AFTR address via DHCPv6:
 
-```
+```text
 # DHCPv6 option 64: AFTR-Name
 # /etc/dhcp/dhcpd6.conf (on ISP DHCPv6 server)
 

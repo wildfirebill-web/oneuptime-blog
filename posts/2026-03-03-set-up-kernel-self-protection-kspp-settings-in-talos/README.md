@@ -30,6 +30,7 @@ Talos Linux comes with a comprehensive set of kernel security options. Here are 
 
 ```bash
 # Verify kernel address space layout randomization (KASLR)
+
 talosctl read /proc/sys/kernel/randomize_va_space --nodes <node-ip>
 # Expected value: 2 (full randomization)
 

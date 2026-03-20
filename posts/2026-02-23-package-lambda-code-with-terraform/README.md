@@ -18,6 +18,7 @@ The simplest approach for small functions. Terraform creates the ZIP file for yo
 
 ```hcl
 # Package the Lambda code into a ZIP
+
 data "archive_file" "lambda" {
   type        = "zip"
   source_dir  = "${path.module}/src"

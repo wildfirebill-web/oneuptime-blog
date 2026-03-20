@@ -16,6 +16,7 @@ Azure DevOps has two URL formats you need to be aware of:
 
 ```text
 # New format (recommended)
+
 https://dev.azure.com/organization/project/_git/repository
 
 # Legacy format (still works)

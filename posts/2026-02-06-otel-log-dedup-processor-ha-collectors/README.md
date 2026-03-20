@@ -30,6 +30,7 @@ First, set up two identical collectors that both receive from the same source:
 
 ```yaml
 # collector-a-config.yaml and collector-b-config.yaml (identical)
+
 receivers:
   otlp:
     protocols:

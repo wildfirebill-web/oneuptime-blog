@@ -66,6 +66,7 @@ This deployment represents your current production version. We use labels to ide
 
 ```yaml
 # stable-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

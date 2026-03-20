@@ -10,7 +10,7 @@ Understanding what ping output actually means transforms it from a simple "up or
 
 ## Anatomy of a Ping Reply
 
-```
+```text
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=118 time=12.3 ms
 
    ^           ^              ^          ^          ^
@@ -28,9 +28,10 @@ ping -c 1 8.8.8.8
 # ttl=118 → started at 128 (Windows default), used 10 hops
 
 # Common starting TTL values:
-#   64  — Linux, Android, macOS (older)
-#   128 — Windows
-#   255 — Cisco IOS, some Linux
+
+#   64  - Linux, Android, macOS (older)
+#   128 - Windows
+#   255 - Cisco IOS, some Linux
 
 # Calculate hop count:
 #   128 - 118 = 10 hops to 8.8.8.8 from Windows source
@@ -45,7 +46,7 @@ ping -c 5 1.1.1.1
 
 RTT measures total time from sending the ICMP request to receiving the reply:
 
-```
+```text
 RTT Range       Assessment
 -----------     ----------------------------------------
 < 1 ms          Same machine or LAN switch (excellent)
@@ -62,7 +63,7 @@ RTT Range       Assessment
 #         ^       ^       ^      ^
 #       fastest  mean  slowest  jitter
 
-# mdev (mean deviation) = jitter — consistency of latency
+# mdev (mean deviation) = jitter - consistency of latency
 # mdev < 1ms: very stable connection
 # mdev > 10ms: high jitter (bad for VoIP/video)
 ```
@@ -74,12 +75,12 @@ ping -c 100 10.0.0.1
 # 100 packets transmitted, 97 received, 3% packet loss
 
 # Interpreting loss percentage:
-# 0%         — Perfect
-# 0.1-1%     — Minor congestion or CRC errors on link
-# 1-5%       — Significant congestion, check link utilization
-# 5-20%      — Serious problem — check hardware errors
-# > 20%      — Link failing or heavily congested
-# 100%       — Host down, routing broken, or firewall blocking
+# 0%         - Perfect
+# 0.1-1%     - Minor congestion or CRC errors on link
+# 1-5%       - Significant congestion, check link utilization
+# 5-20%      - Serious problem - check hardware errors
+# > 20%      - Link failing or heavily congested
+# 100%       - Host down, routing broken, or firewall blocking
 
 # Intermittent loss pattern (not consecutive):
 # seq=1 OK, seq=2 OK, seq=3 LOST, seq=4 OK, seq=5 OK
@@ -115,4 +116,4 @@ ping -c 20 8.8.8.8 | grep ttl
 # - Routing protocol reconvergence
 ```
 
-Reading ping output diagnostically — not just "are packets coming back" — lets you pinpoint whether problems are local (high RTT from the start), mid-path (increasing RTT), or at the destination (loss with low RTT).
+Reading ping output diagnostically - not just "are packets coming back" - lets you pinpoint whether problems are local (high RTT from the start), mid-path (increasing RTT), or at the destination (loss with low RTT).

@@ -51,6 +51,7 @@ The workspace Cargo.toml ties everything together:
 
 ```toml
 # Root Cargo.toml - defines the workspace and shared dependencies
+
 [workspace]
 members = [
     "services/user-service",

@@ -42,6 +42,7 @@ How it works:
 
 ```yaml
 # No special configuration needed - this is the default
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

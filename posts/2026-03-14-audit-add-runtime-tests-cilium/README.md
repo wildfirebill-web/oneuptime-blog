@@ -28,6 +28,7 @@ Verify the test suite covers all integration points:
 
 ```bash
 # List all runtime test functions
+
 grep -n "func test\|func Test" proxylib/myprotocol/*_runtime_test.go
 
 # Map to integration points

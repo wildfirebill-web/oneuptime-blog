@@ -36,6 +36,7 @@ Put your state storage in the same region as your CI/CD runners. If your GitHub 
 
 ```hcl
 # Slow: State in different region from CI/CD
+
 terraform {
   backend "s3" {
     bucket = "terraform-state"

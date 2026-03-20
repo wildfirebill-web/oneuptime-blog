@@ -1,8 +1,8 @@
-# How to Automate User Management in Rancher
+# How to Automate User Management in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, automation, user-management, rbac, api, ldap
+Tags: Rancher, Automation, User-management, RBAC, API, LDAP
 
 Description: A guide to automating user provisioning, role assignments, and access control in Rancher using the API, Terraform, and LDAP/SAML integration.
 
@@ -19,6 +19,7 @@ export RANCHER_URL="https://rancher.example.com"
 export RANCHER_TOKEN="token-xxxxx:your-secret-key"
 
 # List all local users
+
 curl -s -k \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   "${RANCHER_URL}/v3/users" \
@@ -180,7 +181,7 @@ resource "rancher2_project_role_template_binding" "jane_project" {
 
 Configure Rancher to automatically sync groups from Active Directory:
 
-```
+```text
 Rancher UI → Global Settings → Authentication → Active Directory
 
 Key settings:
@@ -267,4 +268,4 @@ curl -s -k \
 
 ## Conclusion
 
-Automating user management in Rancher through the REST API or Terraform ensures consistent, auditable access provisioning. For organizations using Active Directory or LDAP, group-based role bindings eliminate the need to manage individual users — roles are inherited automatically from group membership. Combine bulk provisioning scripts with your HR system's offboarding workflows to ensure access is revoked promptly when employees leave. Always store Rancher API tokens in a secrets manager (Vault, AWS Secrets Manager) and rotate them regularly.
+Automating user management in Rancher through the REST API or Terraform ensures consistent, auditable access provisioning. For organizations using Active Directory or LDAP, group-based role bindings eliminate the need to manage individual users - roles are inherited automatically from group membership. Combine bulk provisioning scripts with your HR system's offboarding workflows to ensure access is revoked promptly when employees leave. Always store Rancher API tokens in a secrets manager (Vault, AWS Secrets Manager) and rotate them regularly.

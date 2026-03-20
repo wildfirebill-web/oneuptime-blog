@@ -8,7 +8,7 @@ Description: Learn how to craft and send custom IPv4 packets using Scapy, includ
 
 ## What Is Scapy?
 
-Scapy is a Python library for creating, sending, sniffing, and dissecting network packets. It lets you construct packets layer by layer—Ethernet, IP, TCP, UDP, ICMP—and send them directly on the wire.
+Scapy is a Python library for creating, sending, sniffing, and dissecting network packets. It lets you construct packets layer by layer-Ethernet, IP, TCP, UDP, ICMP-and send them directly on the wire.
 
 ## Installation
 
@@ -16,6 +16,7 @@ Scapy is a Python library for creating, sending, sniffing, and dissecting networ
 pip install scapy
 
 # Root/sudo privileges are required for raw socket operations
+
 ```
 
 ## Building a Basic IPv4 Packet

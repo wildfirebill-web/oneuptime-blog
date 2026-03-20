@@ -20,6 +20,7 @@ Export a container's filesystem to a tar file:
 
 ```bash
 # Start a container and add some data
+
 podman run -d --name my-app nginx:latest
 podman exec my-app /bin/bash -c "echo 'custom config' > /tmp/my-config.txt"
 

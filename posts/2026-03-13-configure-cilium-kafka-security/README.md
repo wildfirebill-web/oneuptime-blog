@@ -43,6 +43,7 @@ flowchart TD
 
 ```bash
 # Produce to a topic
+
 kubectl exec -it kafka-client -- \
   kafka-console-producer.sh --topic empire-announce \
   --broker-list kafka:9092

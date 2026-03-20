@@ -1,8 +1,8 @@
-# How to Monitor Message Queues in Rancher
+# How to Monitor Message Queues in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queue, Monitoring, Prometheus, Grafana
+Tags: Rancher, Kubernetes, Message Queues, Monitoring, Prometheus, Grafana
 
 Description: Set up comprehensive monitoring for RabbitMQ, Kafka, and other message queues in Rancher using Prometheus and Grafana dashboards.
 
@@ -20,6 +20,7 @@ Monitoring message queues is critical for ensuring message delivery, detecting b
 
 ```yaml
 # rabbitmq-with-metrics.yaml - RabbitMQ with Prometheus plugin
+
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:

@@ -27,6 +27,7 @@ Recording rules pre-compute frequently used queries for better dashboard perform
 
 ```yaml
 # infrastructure/monitoring/flux-recording-rules.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

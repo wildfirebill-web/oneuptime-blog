@@ -22,6 +22,7 @@ Calico's three main components - calico-node (Felix), calico-typha, and calico-k
 
 ```bash
 # Set Felix log level via FelixConfiguration
+
 kubectl patch felixconfiguration default \
   --type=merge \
   -p '{"spec":{"logSeverityScreen":"Info"}}'

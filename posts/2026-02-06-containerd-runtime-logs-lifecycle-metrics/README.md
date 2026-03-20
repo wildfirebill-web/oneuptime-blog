@@ -14,6 +14,7 @@ containerd typically runs as a systemd service and writes logs to the journal. O
 
 ```bash
 # View containerd logs via journalctl
+
 journalctl -u containerd --no-pager -n 50
 
 # Or check if containerd writes to a file

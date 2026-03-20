@@ -23,6 +23,7 @@ SLES organizes software into modules. Docker lives in the Containers Module, whi
 
 ```bash
 # Activate the Containers Module
+
 sudo SUSEConnect -p sle-module-containers/15.4/x86_64
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, IPv6, NIC, Network Interface, VM, Dual-Stack
+Tags: Azure, IPv6, NIC, Network Interfaces, VM, Dual-Stack
 
 Description: Add IPv6 IP configurations to Azure VM network interfaces, assign private and public IPv6 addresses, and configure VMs for dual-stack network operation.
 
@@ -17,6 +17,7 @@ RG="rg-ipv6"
 VM_NAME="vm-web-01"
 
 # Get the NIC name attached to the VM
+
 NIC_NAME=$(az vm show \
     --resource-group "$RG" \
     --name "$VM_NAME" \

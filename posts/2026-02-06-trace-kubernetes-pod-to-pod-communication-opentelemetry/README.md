@@ -46,6 +46,7 @@ Here is the collector configuration that receives OTLP data and exports it to a 
 
 ```yaml
 # otel-collector-config.yaml
+
 # Configures the collector to receive traces via OTLP
 # and enrich them with Kubernetes resource attributes
 apiVersion: v1

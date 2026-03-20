@@ -35,6 +35,7 @@ This is the most GitOps-native approach. You store ExternalSecret resources in G
 
 ```bash
 # Enable Kubernetes auth method in Vault
+
 vault auth enable kubernetes
 
 # Configure Kubernetes auth

@@ -271,6 +271,7 @@ For Prometheus queries:
 
 ```promql
 # Active connections to a service
+
 sum(envoy_cluster_upstream_cx_active{cluster_name="outbound|8080||my-service.default.svc.cluster.local"})
 
 # Connection overflow rate

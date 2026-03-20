@@ -28,6 +28,7 @@ You can create a reservation through the Google Cloud Console, gcloud CLI, or th
 
 ```bash
 # Create a BI Engine reservation with 2 GB of memory in us-central1
+
 gcloud bq bi-engine-reservations create \
   --project=my-project \
   --location=us-central1 \

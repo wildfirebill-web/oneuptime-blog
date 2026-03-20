@@ -187,6 +187,7 @@ public class PaymentServiceClient {
 
 ```python
 # circuit_breaker.py
+
 from enum import Enum
 from dataclasses import dataclass, field
 from typing import Callable, Optional, Type, Tuple

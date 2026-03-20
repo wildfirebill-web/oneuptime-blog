@@ -20,7 +20,7 @@ ip neigh show
 
 Sample output:
 
-```
+```text
 192.168.1.1 dev eth0 lladdr aa:bb:cc:dd:ee:ff REACHABLE
 192.168.1.20 dev eth0 lladdr 00:11:22:33:44:55 STALE
 192.168.1.50 dev eth0  FAILED
@@ -42,6 +42,7 @@ Sample output:
 
 ```bash
 # Show entries for a specific interface
+
 ip neigh show dev eth0
 
 # Show only reachable entries
@@ -74,7 +75,7 @@ arp -i eth0 -n
 
 Sample output of `arp -n`:
 
-```
+```text
 Address          HWtype  HWaddress           Flags Mask            Iface
 192.168.1.1      ether   aa:bb:cc:dd:ee:ff   C                     eth0
 192.168.1.20     ether   00:11:22:33:44:55   C                     eth0

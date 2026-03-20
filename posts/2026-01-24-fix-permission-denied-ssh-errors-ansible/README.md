@@ -67,6 +67,7 @@ Incorrect file permissions are the most common cause of SSH key authentication f
 
 ```bash
 # Check current permissions on SSH directory and files
+
 ls -la ~/.ssh/
 
 # Expected output:

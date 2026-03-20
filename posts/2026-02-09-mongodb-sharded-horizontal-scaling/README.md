@@ -28,6 +28,7 @@ Config servers must be deployed as a replica set for high availability:
 
 ```yaml
 # config-servers.yaml
+
 apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:

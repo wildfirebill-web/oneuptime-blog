@@ -109,6 +109,7 @@ include=throughput-performance
 
 [disk]
 # I/O scheduler based on device type
+
 devices_udev_regex=ATTR{queue/rotational}=="0"
 elevator=none
 

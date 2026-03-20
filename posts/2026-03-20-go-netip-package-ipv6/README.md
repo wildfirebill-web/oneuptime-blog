@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, netip, IPv6, Networking, IP Addresses, Programming, net/netip
+Tags: Go, Netip, IPv6, Networking, IP Addresses, Programming, Net/netip
 
 Description: Learn how to use Go's modern netip package for efficient, immutable IPv6 address parsing, comparison, prefix matching, and address manipulation.
 
 ---
 
-Go 1.18 introduced the `net/netip` package — a modern, allocation-efficient alternative to `net.IP` for working with IP addresses. `netip.Addr` is an immutable value type that avoids heap allocations and supports both IPv4 and IPv6 including scoped (zone ID) addresses.
+Go 1.18 introduced the `net/netip` package - a modern, allocation-efficient alternative to `net.IP` for working with IP addresses. `netip.Addr` is an immutable value type that avoids heap allocations and supports both IPv4 and IPv6 including scoped (zone ID) addresses.
 
 ---
 
@@ -232,7 +232,7 @@ func main() {
 
 ## Best Practices
 
-1. **Prefer netip.Addr over net.IP** for new code — it's faster and more correct
+1. **Prefer netip.Addr over net.IP** for new code - it's faster and more correct
 2. **Use MustParse*** only for literals known to be valid at compile time
 3. **Use Unmap()** when converting from net.IP to remove IPv4-in-IPv6 mapping
 4. **Use Prefix.Masked()** to normalize prefixes (e.g., `2001:db8::1/32` → `2001:db8::/32`)

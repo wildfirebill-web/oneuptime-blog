@@ -25,6 +25,7 @@ Post-installation, establishing a baseline monitoring setup captures the initial
 ```bash
 #!/bin/bash
 # monitor-ebpf-install.sh
+
 echo "Monitoring Calico eBPF installation..."
 
 while true; do

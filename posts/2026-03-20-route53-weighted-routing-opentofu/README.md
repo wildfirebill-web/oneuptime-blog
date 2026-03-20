@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS, Route 53, Weighted Routing, DNS, Load Balancing, Infrastructure as Code
 
-Description: Learn how to configure Route 53 weighted routing policies with OpenTofu to distribute traffic across multiple endpoints in specified proportions for blue/green deployments and gradual traffic shifting.
+Description: Learn how to configure Route 53 weighted routing policies with OpenTofu to distribute traffic across multiple endpoints in specified proportions for blue/green deployments and gradual traffic...
 
 ## Introduction
 
@@ -21,6 +21,7 @@ Route 53 weighted routing lets you associate multiple resources with a single do
 
 ```hcl
 # Blue environment: receives 80% of traffic (weight 80 out of 100 total)
+
 resource "aws_route53_record" "blue" {
   zone_id        = var.hosted_zone_id
   name           = var.domain_name
@@ -203,4 +204,4 @@ aws route53 list-resource-record-sets \
 
 ## Conclusion
 
-Weighted routing is the standard approach for zero-downtime deployments in Route 53. Start canary traffic at 5-10% to validate the new version before increasing. Setting a record's weight to 0 stops Route 53 from routing to it without removing the record—useful for temporarily taking an endpoint out of rotation without losing configuration. Always combine weighted routing with health checks so unhealthy endpoints are automatically excluded even if their weight is non-zero.
+Weighted routing is the standard approach for zero-downtime deployments in Route 53. Start canary traffic at 5-10% to validate the new version before increasing. Setting a record's weight to 0 stops Route 53 from routing to it without removing the record-useful for temporarily taking an endpoint out of rotation without losing configuration. Always combine weighted routing with health checks so unhealthy endpoints are automatically excluded even if their weight is non-zero.

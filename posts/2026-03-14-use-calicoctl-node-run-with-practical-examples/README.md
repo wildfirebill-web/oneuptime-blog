@@ -30,6 +30,7 @@ Start the Calico node with default settings:
 
 ```bash
 # Start calico/node using Kubernetes datastore
+
 sudo calicoctl node run
 
 # Start with explicit etcd datastore

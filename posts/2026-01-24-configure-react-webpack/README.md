@@ -16,6 +16,7 @@ Start by creating a new project and installing the necessary dependencies.
 
 ```bash
 # Create project directory
+
 mkdir react-webpack-app
 cd react-webpack-app
 

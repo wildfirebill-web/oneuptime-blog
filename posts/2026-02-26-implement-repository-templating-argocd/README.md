@@ -73,6 +73,7 @@ The base deployment template uses placeholder values that teams fill in:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

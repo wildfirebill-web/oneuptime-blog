@@ -30,6 +30,7 @@ Deploy both stable and shadow versions:
 
 ```yaml
 # Stable version - serves users
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

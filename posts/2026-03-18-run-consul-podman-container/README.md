@@ -20,6 +20,7 @@ Download the official Consul image.
 
 ```bash
 # Pull the latest Consul image
+
 podman pull docker.io/hashicorp/consul:latest
 
 # Verify the image

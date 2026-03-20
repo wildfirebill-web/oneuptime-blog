@@ -216,6 +216,7 @@ With pprof enabled, you can collect heap profiles using the `go tool pprof` comm
 
 ```bash
 # Collect a heap profile from a running application
+
 go tool pprof http://localhost:8080/debug/pprof/heap
 
 # Collect a profile and save it to a file

@@ -16,6 +16,7 @@ Squid can operate as a reverse proxy or web accelerator, sitting in front of ori
 # /etc/squid/squid.conf
 
 # Listen on public IPv4 as reverse proxy
+
 http_port 203.0.113.10:80 accel defaultsite=www.example.com
 
 # For HTTPS termination (requires Squid built with SSL)

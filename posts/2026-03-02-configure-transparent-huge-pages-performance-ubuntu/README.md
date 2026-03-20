@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Performance, Kernel, Memory, SysAdmin
+Tags: Ubuntu, Performance, Kernel, Memory, Sysadmin
 
 Description: Learn how to configure Transparent Huge Pages (THP) on Ubuntu to improve application performance or disable them for databases that work better without THP.
 
@@ -22,6 +22,7 @@ There are two approaches:
 
 ```bash
 # Check the current THP setting
+
 cat /sys/kernel/mm/transparent_hugepage/enabled
 
 # Output shows the current mode in brackets: [always] madvise never

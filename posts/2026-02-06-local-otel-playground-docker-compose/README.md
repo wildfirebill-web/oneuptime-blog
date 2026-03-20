@@ -195,6 +195,7 @@ Send a test trace using `curl` to verify the pipeline works:
 
 ```bash
 # Send a trace span via OTLP HTTP
+
 curl -X POST http://localhost:4318/v1/traces \
   -H "Content-Type: application/json" \
   -d '{

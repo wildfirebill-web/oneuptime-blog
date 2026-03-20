@@ -31,6 +31,7 @@ You can check how many endpoints a particular sidecar knows about:
 
 ```bash
 # Get the proxy config for a specific pod
+
 istioctl proxy-config endpoints <pod-name> -n <namespace> | wc -l
 
 # Get detailed cluster configuration

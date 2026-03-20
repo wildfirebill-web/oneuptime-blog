@@ -153,6 +153,7 @@ Test the login:
 
 ```bash
 # CLI login via SSO
+
 argocd login argocd.example.com --sso
 
 # Check user info and group membership

@@ -33,6 +33,7 @@ mkdir -p ~/.config/containers/systemd/
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application container
 

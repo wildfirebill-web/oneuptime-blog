@@ -45,6 +45,7 @@ Install the operator:
 
 ```bash
 # Install cert-manager (required by the operator)
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.yaml
 
 # Install the OpenTelemetry Operator

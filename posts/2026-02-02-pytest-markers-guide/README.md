@@ -77,6 +77,7 @@ Use the skip marker when a test should never run, such as unfinished features or
 
 ```python
 # tests/unit/test_calculator.py
+
 # Demonstrates unconditional test skipping
 
 import pytest

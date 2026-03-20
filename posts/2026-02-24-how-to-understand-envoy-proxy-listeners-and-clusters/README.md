@@ -202,6 +202,7 @@ istioctl proxy-config endpoint <pod-name> -n <namespace> --cluster "outbound|80|
 
 ```bash
 # Dump all listeners
+
 kubectl exec -it <pod-name> -c istio-proxy -- curl -s localhost:15000/config_dump?resource=dynamic_listeners
 
 # Dump all clusters

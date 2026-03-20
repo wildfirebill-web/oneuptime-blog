@@ -18,6 +18,7 @@ Users interact with the provider schema through the provider block in their HCL 
 
 ```hcl
 # This is what users write - your schema defines what goes here
+
 provider "yourservice" {
   api_url     = "https://api.example.com"
   api_key     = "secret-key-here"
@@ -184,7 +185,7 @@ func Provider() *schema.Provider {
 }
 ```
 
-## Resource Schema Patterns
+Resource Schema Patterns
 
 Resource schemas follow the same patterns but include additional concepts like computed attributes, ForceNew, and nested blocks.
 

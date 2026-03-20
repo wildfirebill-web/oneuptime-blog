@@ -22,6 +22,7 @@ The official Go images come in a few variants:
 
 ```bash
 # Full image - Debian-based, includes gcc and common build tools
+
 podman pull docker.io/library/golang:1.22
 
 # Alpine image - smaller, musl-based

@@ -49,6 +49,7 @@ This is incredibly useful for resources that are managed by controllers or opera
 
 ```yaml
 # A ConfigMap that gets modified by an operator after creation
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

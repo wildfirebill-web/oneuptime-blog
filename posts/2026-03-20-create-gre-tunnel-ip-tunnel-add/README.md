@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, Tunneling, Linux, Networking, ip-command, IPv4
+Tags: GRE, Tunneling, Linux, Networking, Ip-command, IPv4
 
 Description: Create a Generic Routing Encapsulation (GRE) tunnel between two Linux hosts using ip tunnel add to carry IPv4 traffic over an IP network.
 
@@ -18,7 +18,7 @@ GRE (Generic Routing Encapsulation) is a simple tunneling protocol that encapsul
 
 ## Network Topology
 
-```
+```yaml
 Host A (10.0.0.1 public) ---[GRE tunnel]--- Host B (10.0.0.2 public)
       tunnel IP: 172.16.0.1/30              tunnel IP: 172.16.0.2/30
 ```
@@ -27,6 +27,7 @@ Host A (10.0.0.1 public) ---[GRE tunnel]--- Host B (10.0.0.2 public)
 
 ```bash
 # Create GRE tunnel interface named gre1 on Host A
+
 sudo ip tunnel add gre1 mode gre \
   local 10.0.0.1 \      # This host's public IP
   remote 10.0.0.2 \     # Remote host's public IP
@@ -96,7 +97,7 @@ sudo ip tunnel del gre1
 
 ## Limitations
 
-- GRE has no built-in encryption — combine with IPsec for secure tunnels
+- GRE has no built-in encryption - combine with IPsec for secure tunnels
 - GRE adds 24 bytes of overhead, so adjust MTU on the tunnel interface accordingly
 
 ```bash

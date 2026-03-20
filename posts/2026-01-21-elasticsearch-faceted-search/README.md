@@ -93,6 +93,7 @@ The `post_filter` applies filters AFTER aggregations are calculated, allowing fa
 
 ```bash
 # This query shows incorrect facet counts
+
 curl -X GET "https://localhost:9200/products/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

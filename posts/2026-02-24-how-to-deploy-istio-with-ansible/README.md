@@ -63,6 +63,7 @@ Define your clusters in the inventory:
 
 ```yaml
 # inventory/production.yml
+
 all:
   hosts:
     localhost:

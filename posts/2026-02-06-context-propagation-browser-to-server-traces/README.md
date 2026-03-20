@@ -43,6 +43,7 @@ Start by installing the OpenTelemetry web packages. You need the core SDK, the f
 
 ```bash
 # Install browser-specific OpenTelemetry packages
+
 npm install @opentelemetry/sdk-trace-web \
   @opentelemetry/instrumentation-fetch \
   @opentelemetry/instrumentation-xml-http-request \

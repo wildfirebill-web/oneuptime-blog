@@ -1,18 +1,18 @@
-# How to Configure IPv6 on eero Mesh Systems
+# How to Configure IPv6 on eero Mesh Systems - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, eero, Mesh Network, Amazon, DHCPv6
+Tags: IPv6, Eero, Mesh Network, Amazon, DHCPv6
 
 Description: Enable IPv6 on Amazon eero mesh systems, verify DHCPv6-PD prefix delegation, and troubleshoot IPv6 connectivity for home networks using eero as the router.
 
 ## eero IPv6 Overview
 
-eero (owned by Amazon) supports native IPv6 with automatic DHCPv6-PD configuration. All settings are managed through the eero mobile app — there is no traditional web GUI.
+eero (owned by Amazon) supports native IPv6 with automatic DHCPv6-PD configuration. All settings are managed through the eero mobile app - there is no traditional web GUI.
 
 ## Enable IPv6 in eero App
 
-```
+```text
 eero App → Settings → Advanced Settings → IPv6 → Enable
 
 eero IPv6 behavior:
@@ -37,6 +37,7 @@ Since eero has no CLI, test from a device on the network.
 # From any device on the eero network
 
 # Check for global IPv6 address assigned via SLAAC
+
 ip -6 addr show | grep "scope global"
 # Should show: inet6 2001:db8:XXXX:XXXX:YYYY:YYYY:YYYY:YYYY/64 scope global dynamic
 
@@ -58,7 +59,7 @@ dig AAAA google.com @2606:4700:4700::1111
 
 For eero to receive DHCPv6-PD, the ISP modem must be in bridge mode.
 
-```
+```text
 Step 1: Set ISP modem to bridge/passthrough mode
   - Log into modem admin page
   - Find "Bridge Mode" or "IP Passthrough" or "DMZ"
@@ -114,7 +115,7 @@ eero App → Devices → filter by "Wi-Fi" or "Wired"
 
 # Issue 4: IPv6 works but some sites unreachable
 # Common with MTU issues on PPPoE ISPs
-# eero sets MTU automatically — limited control
+# eero sets MTU automatically - limited control
 # Workaround: use IPv6 PMTUD-aware DNS (Cloudflare 2606:4700:4700::1111)
 
 # Verify fix from connected device
@@ -126,7 +127,7 @@ curl -6 https://ipv6.google.com
 
 If eero is behind another router, use eero in bridge mode.
 
-```
+```nginx
 eero App → Settings → Advanced Settings → eero Mode → Bridge Mode
 
 In bridge mode:

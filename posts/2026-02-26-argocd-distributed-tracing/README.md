@@ -64,6 +64,7 @@ For more control over tracing behavior, set environment variables on each ArgoCD
 
 ```yaml
 # Patch for argocd-server deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

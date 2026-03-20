@@ -45,6 +45,7 @@ Microsoft provides built-in initiatives for many regulatory frameworks. Let us s
 
 ```powershell
 # List all built-in compliance initiatives
+
 # These are ready to assign without any modification
 $initiatives = Get-AzPolicySetDefinition -BuiltIn |
     Where-Object {

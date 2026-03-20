@@ -20,6 +20,7 @@ If you do not specify a backup window, AWS assigns a default window based on you
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

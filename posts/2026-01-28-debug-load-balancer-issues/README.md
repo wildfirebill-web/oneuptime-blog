@@ -45,6 +45,7 @@ Symptoms: 502 Bad Gateway, 503 Service Unavailable, or all traffic going to one 
 
 ```bash
 # NGINX - Check upstream status
+
 curl -s http://localhost/nginx_status
 
 # HAProxy - Check stats page

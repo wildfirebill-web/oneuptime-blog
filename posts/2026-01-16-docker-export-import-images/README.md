@@ -31,6 +31,7 @@ The `save` command exports one or more images to a tar archive, preserving all l
 
 ```bash
 # Save single image
+
 docker save nginx:latest > nginx.tar
 
 # Or using -o flag

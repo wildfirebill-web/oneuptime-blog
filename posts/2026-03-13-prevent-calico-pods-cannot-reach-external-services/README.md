@@ -31,6 +31,7 @@ Setting `natOutgoing: true` as a required field in all IP pool manifests elimina
 
 ```yaml
 # Standard IP pool template with natOutgoing explicitly set
+
 apiVersion: projectcalico.org/v3
 kind: IPPool
 metadata:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, traceroute6, Debugging, Routing, Networking
+Tags: IPv6, Traceroute6, Debugging, Routing, Networking
 
 Description: Learn how to use traceroute6 to diagnose IPv6 routing problems by tracing the path packets take to their destination.
 
@@ -14,6 +14,7 @@ Description: Learn how to use traceroute6 to diagnose IPv6 routing problems by t
 
 ```bash
 # Trace the path to an IPv6 destination
+
 traceroute6 2001:4860:4860::8888
 
 # Same using traceroute with -6 flag
@@ -25,7 +26,7 @@ traceroute6 ipv6.google.com
 
 ## Sample Output and Interpretation
 
-```
+```text
 traceroute to ipv6.google.com (2607:f8b0:4004:c1b::64), 30 hops max
  1  fe80::1 (fe80::1)  0.612 ms  0.451 ms  0.498 ms   ← Default gateway
  2  2001:db8:isp:1::1  2.341 ms  2.212 ms  2.198 ms   ← ISP router
@@ -53,7 +54,7 @@ traceroute6 2001:db8:remote::1
 #  8  2001:db8:router2::1  12 ms
 ```
 
-Fix: check routes on both router1 and router2 — they are likely pointing to each other for the destination.
+Fix: check routes on both router1 and router2 - they are likely pointing to each other for the destination.
 
 ## Advanced Options
 
@@ -67,7 +68,7 @@ traceroute6 -s 2001:db8::2 2001:4860:4860::8888
 # Use UDP instead of ICMPv6 (default is UDP on Linux)
 traceroute6 -U 2001:4860:4860::8888
 
-# Use TCP SYN probes (port 80) — useful when ICMP is filtered
+# Use TCP SYN probes (port 80) - useful when ICMP is filtered
 traceroute6 -T -p 80 2001:4860:4860::8888
 
 # Disable DNS resolution for faster output
@@ -109,7 +110,7 @@ mtr -6 -n -r -c 100 2001:4860:4860::8888
 | All hops `* * *` | ICMPv6 filtered by firewall at your router |
 | Reaches ISP but not beyond | ISP not routing your IPv6 prefix |
 | Routing loop detected | Misconfigured static routes between routers |
-| Destination unreachable at hop N | Routing black hole — no route at that router |
+| Destination unreachable at hop N | Routing black hole - no route at that router |
 
 ## Summary
 

@@ -8,7 +8,7 @@ Description: Learn how to configure Portainer to automatically redeploy stacks w
 
 ---
 
-Portainer's GitOps integration lets you link a stack to a Git repository and automatically redeploy whenever you push changes. This means your deployed stack always reflects the latest version in your repo — no manual redeployments needed. This guide covers both Portainer's built-in Git integration and webhook-based CI/CD triggers.
+Portainer's GitOps integration lets you link a stack to a Git repository and automatically redeploy whenever you push changes. This means your deployed stack always reflects the latest version in your repo - no manual redeployments needed. This guide covers both Portainer's built-in Git integration and webhook-based CI/CD triggers.
 
 ---
 
@@ -43,7 +43,8 @@ In the stack settings, enable the webhook URL:
 Trigger Portainer stack redeployment from a GitHub Actions workflow.
 
 ```yaml
-# .github/workflows/deploy.yml — deploy to Portainer on push to main
+# .github/workflows/deploy.yml - deploy to Portainer on push to main
+
 name: Deploy to Portainer
 
 on:
@@ -62,7 +63,7 @@ jobs:
 
       - name: Trigger Portainer redeploy via webhook
         run: |
-          # Portainer webhook — triggers stack update with latest Git content
+          # Portainer webhook - triggers stack update with latest Git content
           curl -X POST \
             "${{ secrets.PORTAINER_WEBHOOK_URL }}" \
             --fail \
@@ -78,7 +79,7 @@ For more control, use the Portainer API to update a stack from CI with a specifi
 
 ```bash
 #!/bin/bash
-# deploy-to-portainer.sh — update a stack via Portainer API
+# deploy-to-portainer.sh - update a stack via Portainer API
 
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="${PORTAINER_API_KEY}"
@@ -114,7 +115,7 @@ echo "Stack deployment triggered."
 ## Docker Compose for GitOps Deployment
 
 ```yaml
-# docker-compose.yml — uses IMAGE_TAG env var for automated deployments
+# docker-compose.yml - uses IMAGE_TAG env var for automated deployments
 version: "3.8"
 
 services:
@@ -132,4 +133,4 @@ services:
 
 ## Summary
 
-Automated stack deployment on Git push requires a Portainer stack linked to a Git repository and a mechanism to trigger updates on push — either Portainer's built-in webhook support (BE), a GitHub Actions workflow, or a direct API call. The cleanest approach for teams is Portainer's native GitOps integration: merge to main, and Portainer automatically pulls and redeploys.
+Automated stack deployment on Git push requires a Portainer stack linked to a Git repository and a mechanism to trigger updates on push - either Portainer's built-in webhook support (BE), a GitHub Actions workflow, or a direct API call. The cleanest approach for teams is Portainer's native GitOps integration: merge to main, and Portainer automatically pulls and redeploys.

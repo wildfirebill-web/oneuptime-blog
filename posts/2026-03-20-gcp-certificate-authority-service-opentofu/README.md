@@ -14,6 +14,7 @@ GCP Certificate Authority Service provides a managed, scalable PKI for issuing X
 
 ```hcl
 # main.tf - CA Pool groups CAs for load balancing and policy
+
 resource "google_privateca_ca_pool" "internal_ca_pool" {
   name     = "internal-ca-pool"
   location = "us-central1"

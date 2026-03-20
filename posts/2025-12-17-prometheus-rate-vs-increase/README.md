@@ -56,6 +56,7 @@ rate = (last_value - first_value) / time_range_seconds
 
 ```promql
 # Requests per second (averaged over 5 minutes)
+
 rate(http_requests_total[5m])
 # If counter went from 1000 to 1300 over 5 minutes:
 # rate = (1300 - 1000) / 300 = 1 request/second

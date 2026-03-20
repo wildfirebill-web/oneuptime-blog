@@ -24,6 +24,7 @@ Install the PCF development tools.
 
 ```bash
 # Install the Power Apps CLI
+
 npm install -g pac
 
 # Create a new PCF project

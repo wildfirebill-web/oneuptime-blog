@@ -46,6 +46,7 @@ Install the required tools:
 
 ```bash
 # Install protoc compiler
+
 # macOS
 brew install protobuf
 

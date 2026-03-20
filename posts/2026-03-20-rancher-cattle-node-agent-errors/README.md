@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Agent, Nodes
+Tags: Rancher, Kubernetes, Troubleshooting, Agent, Node
 
 Description: Learn how to diagnose and fix cattle-node-agent errors in Rancher, including container runtime issues, volume mount failures, and network problems.
 
@@ -12,7 +12,7 @@ The `cattle-node-agent` runs as a DaemonSet on every node in a Rancher-managed c
 
 ## Architecture
 
-```
+```text
 cattle-cluster-agent (one per cluster, in cattle-system)
        ↓ manages
 cattle-node-agent (DaemonSet, one pod per node)
@@ -24,9 +24,10 @@ The node agent runs with `hostNetwork: true` and `privileged: true` to access ho
 
 ```bash
 # Check the DaemonSet status
+
 kubectl get daemonset -n cattle-system cattle-node-agent
 
-# Check pods — look for nodes where the agent is not Running
+# Check pods - look for nodes where the agent is not Running
 kubectl get pods -n cattle-system -l app=cattle-agent -o wide
 
 # Find nodes where the agent is failing
@@ -70,9 +71,9 @@ kubectl get daemonset -n cattle-system cattle-node-agent -o json \
   | jq '.spec.template.spec.volumes[]'
 
 # Common required paths:
-# /var/run/docker.sock   — Docker (older clusters)
-# /run/containerd/containerd.sock — Containerd
-# /run/k3s/containerd/containerd.sock — K3s/RKE2
+# /var/run/docker.sock   - Docker (older clusters)
+# /run/containerd/containerd.sock - Containerd
+# /run/k3s/containerd/containerd.sock - K3s/RKE2
 
 # On the node, verify the socket exists
 ls -la /run/containerd/containerd.sock
@@ -149,4 +150,4 @@ kubectl describe node <node-name> | grep -E "Conditions:|Ready:"
 
 ## Conclusion
 
-`cattle-node-agent` failures are usually caused by image pull issues in air-gapped environments, missing container runtime sockets, disk pressure on nodes, or network connectivity problems. Monitoring the DaemonSet rollout status and individual pod health across all nodes is essential for maintaining cluster stability. Proactive node maintenance — clearing disk space and keeping container images up to date — prevents most node agent failures.
+`cattle-node-agent` failures are usually caused by image pull issues in air-gapped environments, missing container runtime sockets, disk pressure on nodes, or network connectivity problems. Monitoring the DaemonSet rollout status and individual pod health across all nodes is essential for maintaining cluster stability. Proactive node maintenance - clearing disk space and keeping container images up to date - prevents most node agent failures.

@@ -67,6 +67,7 @@ The most common cause is that a new file exists in the directory but is not refe
 
 ```yaml
 # kustomization.yaml - missing the new resource
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

@@ -22,6 +22,7 @@ Download the latest OpenTelemetry Java agent JAR file from the official releases
 
 ```bash
 # Download the latest Java agent
+
 wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 
 # Verify the download

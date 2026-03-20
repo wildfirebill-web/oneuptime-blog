@@ -36,7 +36,7 @@ Resource tracking enables ArgoCD to:
 - Clean up resources when they are removed from Git
 - Prevent conflicts between multiple Applications
 
-## Resource Tracking Methods
+Resource Tracking Methods
 
 ArgoCD supports three tracking methods. Each has different tradeoffs.
 
@@ -170,6 +170,7 @@ Apply the configuration:
 kubectl apply -f argocd-cm.yaml
 
 # Restart ArgoCD to pick up changes
+
 kubectl rollout restart deployment argocd-repo-server -n argocd
 kubectl rollout restart deployment argocd-application-controller -n argocd
 ```
@@ -238,7 +239,7 @@ spec:
       - RespectIgnoreDifferences=true
 ```
 
-## Resource Tracking in Multi-Cluster Environments
+Resource Tracking in Multi-Cluster Environments
 
 When managing multiple clusters, resource tracking becomes more complex.
 

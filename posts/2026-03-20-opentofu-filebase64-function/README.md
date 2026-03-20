@@ -127,4 +127,4 @@ Use `filebase64` when the target attribute expects Base64 or when the file may b
 
 ## Conclusion
 
-The `filebase64` function is the correct choice in OpenTofu whenever you need to embed file contents in Base64 format — which includes EC2 launch template `user_data`, Kubernetes secrets, and any other resource attribute that expects Base64-encoded binary data.
+The `filebase64` function is the correct choice in OpenTofu whenever you need to embed file contents in Base64 format - which includes EC2 launch template `user_data`, Kubernetes secrets, and any other resource attribute that expects Base64-encoded binary data.

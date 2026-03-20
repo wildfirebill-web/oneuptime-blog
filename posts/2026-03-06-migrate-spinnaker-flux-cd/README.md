@@ -45,6 +45,7 @@ Document all Spinnaker pipelines and their configurations.
 
 ```bash
 # Use the Spinnaker API to export pipeline configurations
+
 # List all applications
 curl -s http://spinnaker-gate:8084/applications | jq '.[].name'
 

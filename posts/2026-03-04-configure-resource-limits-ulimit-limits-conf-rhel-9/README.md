@@ -38,6 +38,7 @@ The `ulimit` command shows and sets resource limits for the current shell sessio
 
 ```bash
 # Show all current limits (soft limits by default)
+
 ulimit -a
 
 # Show all hard limits

@@ -331,6 +331,7 @@ GraphQL directives provide declarative authorization in your schema:
 
 ```graphql
 # schema.graphql
+
 directive @auth on FIELD_DEFINITION
 directive @hasRole(role: String!) on FIELD_DEFINITION
 directive @hasPermission(permission: String!) on FIELD_DEFINITION

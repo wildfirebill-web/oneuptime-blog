@@ -16,6 +16,7 @@ The first step is confirming you actually have a hot spot. Look at per-pod reque
 
 ```bash
 # Check Envoy stats for a specific upstream service
+
 kubectl exec <client-pod> -c istio-proxy -- curl -s localhost:15000/clusters | grep "my-service" | grep "rq_total"
 ```
 

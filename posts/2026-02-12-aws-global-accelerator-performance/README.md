@@ -30,6 +30,7 @@ The static IP addresses are a bonus - they never change, so you can allowlist th
 
 ```bash
 # Create a Global Accelerator
+
 aws globalaccelerator create-accelerator \
   --name "my-app-accelerator" \
   --ip-address-type DUAL_STACK \

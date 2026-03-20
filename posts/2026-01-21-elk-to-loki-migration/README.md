@@ -38,6 +38,7 @@ Migrating from the ELK Stack to Grafana Loki can significantly reduce costs whil
 
 ```yaml
 # ELK Stack Architecture
+
 elk_components:
   beats:
     - Filebeat (log collection)

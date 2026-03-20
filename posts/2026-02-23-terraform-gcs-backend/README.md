@@ -16,6 +16,7 @@ Before configuring the backend, create a bucket to hold your state files. You ca
 
 ```bash
 # Set your project ID
+
 PROJECT_ID="my-gcp-project"
 
 # Create a bucket with versioning enabled

@@ -24,6 +24,7 @@ Start with a CloudFormation template for a basic cluster:
 
 ```yaml
 # eks-basic.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'EKS cluster with CloudFormation'
 

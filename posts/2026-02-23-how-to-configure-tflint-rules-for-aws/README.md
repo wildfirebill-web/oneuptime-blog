@@ -16,6 +16,7 @@ TFLint uses a plugin system. Install the AWS plugin by creating a `.tflint.hcl` 
 
 ```hcl
 # .tflint.hcl
+
 plugin "aws" {
   enabled = true
   version = "0.31.0"

@@ -62,6 +62,7 @@ Select your data source and write the query. For Prometheus:
 
 ```promql
 # Calculate error rate as a percentage
+
 sum(rate(http_requests_total{status_code=~"5.."}[5m]))
 /
 sum(rate(http_requests_total[5m]))

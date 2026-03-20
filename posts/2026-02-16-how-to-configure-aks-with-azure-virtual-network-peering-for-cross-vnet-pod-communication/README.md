@@ -58,6 +58,7 @@ If you do not already have the VNets, create them:
 
 ```bash
 # Create VNet for production AKS
+
 az network vnet create \
   --resource-group prodRG \
   --name VNet-AKS-Prod \

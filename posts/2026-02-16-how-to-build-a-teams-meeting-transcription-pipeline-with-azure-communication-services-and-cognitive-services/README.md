@@ -35,6 +35,7 @@ Create the Communication Services resource and configure it for Teams integratio
 
 ```bash
 # Create Azure Communication Services resource
+
 az communication create \
   --name acs-meeting-transcription \
   --resource-group rg-transcription \

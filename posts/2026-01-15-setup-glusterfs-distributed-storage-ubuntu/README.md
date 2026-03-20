@@ -139,6 +139,7 @@ Perform these steps on all nodes that will be part of your storage pool.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

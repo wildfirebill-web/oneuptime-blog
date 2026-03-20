@@ -16,6 +16,7 @@ You need the Azure CLI installed and authenticated:
 
 ```bash
 # Install Azure CLI (if not already installed)
+
 # macOS
 brew install azure-cli
 

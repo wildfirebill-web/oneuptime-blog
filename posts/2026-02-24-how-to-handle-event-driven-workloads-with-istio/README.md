@@ -27,6 +27,7 @@ Install the in-memory channel (for development) or a production-ready channel li
 
 ```bash
 # For development
+
 kubectl apply -f https://github.com/knative/eventing/releases/download/knative-v1.13.0/in-memory-channel.yaml
 
 # For production with Kafka

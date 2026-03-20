@@ -43,6 +43,7 @@ Named volumes are the simplest and most common volume type. Docker manages the s
 
 ```hcl
 # Create a named volume for database storage
+
 resource "docker_volume" "postgres_data" {
   name = "postgres-data"
 

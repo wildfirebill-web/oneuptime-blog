@@ -26,6 +26,7 @@ You can express max surge as an absolute number or a percentage of the node pool
 
 ```bash
 # Set max surge to 1 extra node (default, safest, slowest)
+
 az aks nodepool update \
   --resource-group myRG \
   --cluster-name myAKS \

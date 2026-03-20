@@ -256,6 +256,7 @@ After making changes, measure the impact:
 
 ```bash
 # Check Envoy stats for a specific pod
+
 kubectl exec -it deploy/my-app -c istio-proxy -- curl localhost:15000/stats | grep -E "downstream_cx|upstream_cx|http.inbound"
 
 # Check proxy memory usage

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, coalescelist, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Coalescelist, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the coalescelist function in OpenTofu to return the first non-empty list from a set of candidates.
 
@@ -26,11 +26,11 @@ Returns the first list argument that has one or more elements. Throws an error i
 
 ```hcl
 locals {
-  # Returns ["a", "b"] — the first non-empty list
+  # Returns ["a", "b"] - the first non-empty list
   result1 = coalescelist([], ["a", "b"], ["c"])
   # ["a", "b"]
 
-  # Returns ["first"] — first non-empty
+  # Returns ["first"] - first non-empty
   result2 = coalescelist(["first"], ["second"])
   # ["first"]
 
@@ -152,7 +152,7 @@ locals {
   # Ensure there's always at least one item for for_each
   # (or handle empty case separately with count = 0)
   resources = coalescelist(var.optional_resources, ["placeholder"])
-  # Don't use "placeholder" as a real resource — this is for illustration
+  # Don't use "placeholder" as a real resource - this is for illustration
 }
 ```
 
@@ -160,4 +160,4 @@ locals {
 
 ## Summary
 
-`coalescelist(list1, list2, ...)` returns the first non-empty list from its arguments. Use it to implement fallback logic for list-type variables — if a user doesn't provide subnets, fall back to defaults; if custom security groups aren't specified, use the default ones. It's the list counterpart to `coalesce()` for scalar values. All arguments must be lists of the same element type.
+`coalescelist(list1, list2, ...)` returns the first non-empty list from its arguments. Use it to implement fallback logic for list-type variables - if a user doesn't provide subnets, fall back to defaults; if custom security groups aren't specified, use the default ones. It's the list counterpart to `coalesce()` for scalar values. All arguments must be lists of the same element type.

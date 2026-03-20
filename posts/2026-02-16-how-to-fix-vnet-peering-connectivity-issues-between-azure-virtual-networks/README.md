@@ -18,6 +18,7 @@ The very first thing to verify is whether the peering connection is actually est
 
 ```bash
 # Check peering status from VNet A's perspective
+
 az network vnet peering show \
   --resource-group rgA \
   --vnet-name vnetA \

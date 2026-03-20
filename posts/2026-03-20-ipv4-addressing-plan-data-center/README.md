@@ -20,33 +20,33 @@ A well-designed data center IPv4 addressing plan enables route summarization, si
 
 ## Sample Data Center Addressing Plan (10.x.x.x)
 
-```
-10.0.0.0/8       — Entire DC allocation
-  10.10.0.0/16   — Data Center 1
-    10.10.1.0/24   — Management network (IPMI/iDRAC/iLO)
-    10.10.2.0/24   — Out-of-Band (OOB) switches
-    10.10.10.0/22  — Compute servers (10.10.10.0 – 10.10.13.255)
-    10.10.20.0/23  — Storage network (iSCSI / NFS)
-    10.10.30.0/24  — Kubernetes pod network (internal)
-    10.10.40.0/24  — DMZ / public-facing services
-    10.10.50.0/24  — Load balancers / VIPs
-    10.10.60.0/24  — Backup network
-    10.10.254.0/24 — Network infrastructure (routers, switches)
-  10.20.0.0/16   — Data Center 2 (same structure)
-  10.30.0.0/16   — Disaster Recovery site
+```text
+10.0.0.0/8       - Entire DC allocation
+  10.10.0.0/16   - Data Center 1
+    10.10.1.0/24   - Management network (IPMI/iDRAC/iLO)
+    10.10.2.0/24   - Out-of-Band (OOB) switches
+    10.10.10.0/22  - Compute servers (10.10.10.0 – 10.10.13.255)
+    10.10.20.0/23  - Storage network (iSCSI / NFS)
+    10.10.30.0/24  - Kubernetes pod network (internal)
+    10.10.40.0/24  - DMZ / public-facing services
+    10.10.50.0/24  - Load balancers / VIPs
+    10.10.60.0/24  - Backup network
+    10.10.254.0/24 - Network infrastructure (routers, switches)
+  10.20.0.0/16   - Data Center 2 (same structure)
+  10.30.0.0/16   - Disaster Recovery site
 ```
 
 ## Subnet Sizing Guidelines
 
-```
-/30  (4 hosts, 2 usable)   — Point-to-point links
-/29  (8 hosts, 6 usable)   — Small management segments
-/28  (16 hosts, 14 usable) — Server clusters
-/27  (32 hosts, 30 usable) — Rack groups
-/26  (64 hosts, 62 usable) — Pod or row
-/24  (256 hosts)            — Standard VLAN
-/23  (512 hosts)            — Large VLAN
-/22  (1024 hosts)           — Compute zone
+```text
+/30  (4 hosts, 2 usable)   - Point-to-point links
+/29  (8 hosts, 6 usable)   - Small management segments
+/28  (16 hosts, 14 usable) - Server clusters
+/27  (32 hosts, 30 usable) - Rack groups
+/26  (64 hosts, 62 usable) - Pod or row
+/24  (256 hosts)            - Standard VLAN
+/23  (512 hosts)            - Large VLAN
+/22  (1024 hosts)           - Compute zone
 ```
 
 ## Python Subnet Calculator
@@ -63,12 +63,13 @@ def plan_subnets(base: str, prefix: int, count: int):
               f"{sn.num_addresses - 2} usable)")
 
 # Divide 10.10.0.0/16 into /20 blocks
+
 plan_subnets("10.10.0.0", 16, 8)
 ```
 
 ## Route Summarization
 
-```
+```text
 Each /16 per DC summarizes to a single route advertisement.
 DC1:  10.10.0.0/16  → core router advertises one prefix
 DC2:  10.20.0.0/16  → summarized at DC2 border
@@ -78,7 +79,7 @@ All:  10.0.0.0/8    → single summary to WAN/MPLS
 
 ## VLAN-to-Subnet Mapping Table
 
-```
+```text
 VLAN  Name           Subnet          Gateway
 10    Management     10.10.1.0/24    10.10.1.1
 20    OOB            10.10.2.0/24    10.10.2.1

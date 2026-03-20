@@ -375,6 +375,7 @@ public class CircuitBreakerProducer {
 
 ```yaml
 # Prometheus alerting rules
+
 groups:
   - name: kafka-producer
     rules:

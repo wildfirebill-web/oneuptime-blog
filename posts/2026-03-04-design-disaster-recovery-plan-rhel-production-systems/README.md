@@ -25,6 +25,7 @@ Relax-and-Recover (ReaR) creates bootable recovery images for RHEL servers:
 
 ```bash
 # Install ReaR
+
 sudo dnf install rear
 
 # Configure ReaR for ISO output with NFS backup

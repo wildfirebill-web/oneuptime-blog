@@ -98,6 +98,7 @@ The procedure section would include each step:
 # Pre-flight checks
 
 # Document current state
+
 talosctl version -n 10.0.0.1
 kubectl get nodes -o wide
 talosctl etcd members -n 10.0.0.1

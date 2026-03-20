@@ -16,6 +16,7 @@ Use `lsof` to list open files on the filesystem:
 
 ```bash
 # List all processes with open files on the mount point
+
 sudo lsof +D /mnt/data
 
 # For a quicker check (does not descend into subdirectories)

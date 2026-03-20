@@ -20,6 +20,7 @@ Destination NAT (DNAT) modifies the **destination IP address** (and optionally p
 
 ```bash
 # Enable IP forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # Forward incoming port 80 to 192.168.1.10:80

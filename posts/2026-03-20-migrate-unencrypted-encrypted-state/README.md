@@ -16,6 +16,7 @@ Always back up before making changes:
 
 ```bash
 # Pull and save the current unencrypted state
+
 tofu state pull > unencrypted-state-backup.tfstate
 
 # Verify the backup is valid
@@ -28,7 +29,7 @@ aws s3 cp unencrypted-state-backup.tfstate \
 
 ## Step 2: Configure Encryption with enforced = false
 
-The critical setting is `enforced = false` — this allows OpenTofu to read existing unencrypted state:
+The critical setting is `enforced = false` - this allows OpenTofu to read existing unencrypted state:
 
 ```hcl
 # encryption.tf
@@ -69,10 +70,10 @@ tofu init -upgrade
 
 ## Step 4: Write Encrypted State
 
-Run an operation that writes state — even a no-op apply will re-encrypt the state:
+Run an operation that writes state - even a no-op apply will re-encrypt the state:
 
 ```bash
-# Option 1: Refresh-only apply (recommended — no infrastructure changes)
+# Option 1: Refresh-only apply (recommended - no infrastructure changes)
 tofu apply -refresh-only
 
 # OpenTofu will:
@@ -83,7 +84,7 @@ tofu apply -refresh-only
 tofu plan
 ```
 
-Confirm when prompted — the state will be written back encrypted.
+Confirm when prompted - the state will be written back encrypted.
 
 ## Step 5: Verify Encryption
 
@@ -142,7 +143,7 @@ tofu state push unencrypted-state-backup.tfstate
 
 ## Step 7: Migrate Remote Backend State
 
-For remote backends like S3, the same process applies — the backend reads and writes the state through OpenTofu, which handles encryption/decryption transparently:
+For remote backends like S3, the same process applies - the backend reads and writes the state through OpenTofu, which handles encryption/decryption transparently:
 
 ```bash
 # The state in S3 is re-encrypted on next apply
@@ -174,4 +175,4 @@ export TF_ENCRYPTION='...'
 
 ## Conclusion
 
-Migrating from unencrypted to encrypted state is a smooth process when you use `enforced = false` during the transition. The key insight is that OpenTofu handles the migration automatically — it reads the old unencrypted state and writes it back encrypted on the next apply. Always back up before migrating and verify encryption is working before enabling strict enforcement.
+Migrating from unencrypted to encrypted state is a smooth process when you use `enforced = false` during the transition. The key insight is that OpenTofu handles the migration automatically - it reads the old unencrypted state and writes it back encrypted on the next apply. Always back up before migrating and verify encryption is working before enabling strict enforcement.

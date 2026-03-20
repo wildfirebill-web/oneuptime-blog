@@ -1,4 +1,4 @@
-# How to Install Portainer Server on Kubernetes via Helm
+# How to Install Portainer Server on Kubernetes via Helm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to deploy Portainer Server on a Kubernetes cluster using 
 
 ## Introduction
 
-Installing Portainer on Kubernetes via Helm is the recommended approach for production deployments. The Helm chart handles all Kubernetes resources — Deployment, Service, PersistentVolumeClaim, and RBAC — with sensible defaults that you can customize. This guide covers the complete installation process.
+Installing Portainer on Kubernetes via Helm is the recommended approach for production deployments. The Helm chart handles all Kubernetes resources - Deployment, Service, PersistentVolumeClaim, and RBAC - with sensible defaults that you can customize. This guide covers the complete installation process.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Installing Portainer on Kubernetes via Helm is the recommended approach for prod
 
 ```bash
 # Add the Portainer Helm repository
+
 helm repo add portainer https://portainer.github.io/k8s/
 
 # Update repository to get latest charts
@@ -173,7 +174,7 @@ kubectl get svc portainer -n portainer
 
 For Ingress:
 
-```
+```text
 # Access at: https://portainer.example.com
 ```
 

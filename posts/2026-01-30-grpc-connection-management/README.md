@@ -139,6 +139,7 @@ import grpc
 from concurrent import futures
 
 # Create a channel with options
+
 # Channels are the primary way to manage gRPC connections in Python
 channel = grpc.secure_channel(
     'api.example.com:443',

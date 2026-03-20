@@ -58,6 +58,7 @@ Start with a simple data model that captures the essential information about eac
 
 ```python
 # models/service.py
+
 # Core service model for the service catalog
 
 from dataclasses import dataclass

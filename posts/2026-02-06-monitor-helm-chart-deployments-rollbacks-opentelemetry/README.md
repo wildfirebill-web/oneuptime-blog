@@ -44,6 +44,7 @@ Here is a basic collector deployment using the OpenTelemetry Operator. This conf
 
 ```yaml
 # otel-collector.yaml
+
 # Deploys an OpenTelemetry Collector that receives traces and metrics
 # from your Helm deployment pipeline
 apiVersion: opentelemetry.io/v1beta1

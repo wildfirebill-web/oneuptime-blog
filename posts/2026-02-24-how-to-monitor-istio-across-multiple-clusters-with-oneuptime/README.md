@@ -138,6 +138,7 @@ Create a dashboard that shows the health of all clusters side by side:
 
 ```text
 # Request rate per cluster
+
 sum(rate(istio_requests_total[5m])) by (cluster)
 
 # Error rate per cluster

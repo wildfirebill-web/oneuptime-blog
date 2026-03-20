@@ -1,4 +1,4 @@
-# How to Deploy AdGuard Home via Portainer
+# How to Deploy AdGuard Home via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -53,8 +53,9 @@ Access Admin UI at `http://<host>:80`.
 
 Navigate to **Settings > DNS settings > Upstream DNS servers**:
 
-```
+```text
 # Cloudflare DoH (encrypted DNS)
+
 https://dns.cloudflare.com/dns-query
 
 # Quad9 DoH (malware blocking)
@@ -66,7 +67,7 @@ https://dns.google/dns-query
 
 ### Enable Bootstrap DNS
 
-```
+```text
 1.1.1.1:53
 8.8.8.8:53
 ```

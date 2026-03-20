@@ -29,6 +29,7 @@ The `docker commit` command creates a new image from a running container's files
 
 ```bash
 # Create a snapshot image from a running container
+
 # This captures filesystem changes but not volume data or running processes
 docker commit my_container my_container_snapshot:20260208
 

@@ -16,6 +16,7 @@ Before configuring anything, figure out what types of long-running requests your
 
 ```bash
 # Check the distribution of request durations
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'histogram_quantile(0.99, sum(rate(istio_request_duration_milliseconds_bucket{destination_service="report-service.default.svc.cluster.local"}[1h])) by (le))'

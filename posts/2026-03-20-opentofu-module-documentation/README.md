@@ -1,11 +1,10 @@
----
-title: "Writing Good Documentation for OpenTofu Modules"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, documentation
-description: "Learn how to write clear, comprehensive documentation for your OpenTofu modules that helps users get started quickly."
----
-
 # Writing Good Documentation for OpenTofu Modules
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Documentation
+
+Description: Learn how to write clear, comprehensive documentation for your OpenTofu modules that helps users get started quickly.
 
 Good documentation is what separates a module that gets used from one that gets rewritten. Clear README files, well-described variables and outputs, and working examples significantly reduce the time it takes for someone to use your module correctly.
 
@@ -60,12 +59,13 @@ module "example" {
 
 - [Basic usage](./examples/basic)
 - [Advanced configuration](./examples/advanced)
-```
+```hcl
 
 ## Documenting Variables
 
 ```hcl
-# variables.tf — every variable needs a description
+# variables.tf - every variable needs a description
+
 variable "name" {
   description = "Name prefix for all resources. Used in resource naming to ensure uniqueness."
   type        = string
@@ -99,7 +99,7 @@ variable "enable_deletion_protection" {
 ## Documenting Outputs
 
 ```hcl
-# outputs.tf — describe what each output is and how to use it
+# outputs.tf - describe what each output is and how to use it
 output "instance_id" {
   description = "EC2 instance ID. Use this to reference the instance in other resources or modules."
   value       = aws_instance.main.id
@@ -116,7 +116,7 @@ output "iam_role_arn" {
 }
 
 output "connection_string" {
-  description = "Database connection string in the format 'hostname:port/database'. Keep this sensitive — do not log or output to the console."
+  description = "Database connection string in the format 'hostname:port/database'. Keep this sensitive - do not log or output to the console."
   value       = "${aws_db_instance.main.address}:${aws_db_instance.main.port}/${aws_db_instance.main.db_name}"
   sensitive   = true
 }
@@ -124,7 +124,7 @@ output "connection_string" {
 
 ## Writing Example Configurations
 
-```
+```text
 modules/rds/
 ├── main.tf
 ├── variables.tf
@@ -143,7 +143,7 @@ modules/rds/
 ```
 
 ```hcl
-# examples/basic/main.tf — minimal working example
+# examples/basic/main.tf - minimal working example
 provider "aws" {
   region = "us-east-1"
 }
@@ -184,7 +184,7 @@ terraform-docs markdown table --output-file README.md .
 # Configuration file: .terraform-docs.yml
 ```
 
-```yaml
+````yaml
 # .terraform-docs.yml
 formatter: "markdown table"
 
@@ -222,8 +222,8 @@ content: |-
 output:
   file: "README.md"
   mode: replace
-```
+````
 
 ## Conclusion
 
-Documentation is not optional for shared modules — it's what makes the difference between a module that gets adopted and one that gets ignored. Write clear descriptions for every variable and output, provide working examples for common use cases, and consider automating documentation generation with tools like terraform-docs to keep it in sync with your code.
+Documentation is not optional for shared modules - it's what makes the difference between a module that gets adopted and one that gets ignored. Write clear descriptions for every variable and output, provide working examples for common use cases, and consider automating documentation generation with tools like terraform-docs to keep it in sync with your code.

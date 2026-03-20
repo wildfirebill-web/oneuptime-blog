@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Providers, Environment Configuration, AWS, Multi-Account, Infrastructure as Code
+Tags: OpenTofu, Provider, Environment Configuration, AWS, Multi-Account, Infrastructure as Code
 
 Description: Learn how to configure environment-specific provider settings in OpenTofu to deploy to different AWS accounts, regions, or cloud credentials for each environment.
 
@@ -14,6 +14,7 @@ Environment-specific provider configurations enable deploying the same OpenTofu 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     aws = {
@@ -127,7 +128,7 @@ provider "aws" {
 
 ## Best Practices
 
-- Use role assumption rather than environment-specific access keys — it's more secure and easier to audit.
+- Use role assumption rather than environment-specific access keys - it's more secure and easier to audit.
 - Set `external_id` on assume_role configurations to prevent confused deputy attacks.
 - Use `default_tags` in the provider to ensure all resources in an environment have consistent tags.
 - Pass provider configuration through variables rather than hard-coding account IDs and role ARNs in provider blocks.

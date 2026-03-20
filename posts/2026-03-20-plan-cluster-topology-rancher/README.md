@@ -8,13 +8,13 @@ Description: Plan cluster topology in Rancher to balance workload isolation, res
 
 ## Introduction
 
-Cluster topology—how many clusters to run, what workloads to put in each, and how to organize namespaces—is one of the most consequential architectural decisions in a Rancher deployment. Too few clusters create blast radius risks; too many create operational complexity. The right topology balances isolation requirements with management overhead.
+Cluster topology-how many clusters to run, what workloads to put in each, and how to organize namespaces-is one of the most consequential architectural decisions in a Rancher deployment. Too few clusters create blast radius risks; too many create operational complexity. The right topology balances isolation requirements with management overhead.
 
 ## Topology Models
 
 ### Model 1: Environment-Based (Recommended Starting Point)
 
-```
+```text
 Rancher Management Cluster
 ├── Production Cluster
 │   ├── namespace: team-a
@@ -28,7 +28,7 @@ Rancher Management Cluster
 
 ### Model 2: Team-Based (Better Isolation)
 
-```
+```text
 Rancher Management Cluster
 ├── Team A Cluster (production + staging)
 ├── Team B Cluster (production + staging)
@@ -38,7 +38,7 @@ Rancher Management Cluster
 
 ### Model 3: Compliance-Driven
 
-```
+```text
 Rancher Management Cluster
 ├── PCI Cluster (payment processing - isolated)
 ├── HIPAA Cluster (healthcare data - isolated)
@@ -52,6 +52,7 @@ Rancher Management Cluster
 # Questions to guide topology decisions:
 
 # 1. Compliance: Do any workloads require dedicated infrastructure?
+
 #    - PCI-DSS: Requires network isolation for cardholder data
 #    - HIPAA: PHI must be isolated from non-PHI workloads
 #    - FedRAMP: Government workloads may require air-gapped clusters

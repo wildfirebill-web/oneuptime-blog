@@ -68,6 +68,7 @@ The following command creates a bridge network with a specific subnet and gatewa
 
 ```bash
 # Create a bridge network with custom subnet
+
 # --subnet: IP range for containers
 # --gateway: Router address for the network
 podman network create \

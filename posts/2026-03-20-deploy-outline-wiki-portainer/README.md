@@ -79,6 +79,7 @@ After first deploy, run database migrations:
 
 ```bash
 # In Portainer, go to Containers > outline > Exec
+
 # Or via docker exec:
 docker exec outline yarn db:migrate
 ```

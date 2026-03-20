@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Vsftpd, FTP, Chroot, Security, Linux
+Tags: RHEL, vsftpd, FTP, Chroot, Security, Linux
 
 Description: Configure vsftpd chroot jails on RHEL to restrict FTP users to specific directories, preventing them from browsing the entire filesystem.
 
@@ -23,6 +23,7 @@ The simplest approach is to chroot all local users to their home directories:
 ```bash
 sudo tee /etc/vsftpd/vsftpd.conf << 'CONF'
 # Basic settings
+
 anonymous_enable=NO
 local_enable=YES
 write_enable=YES

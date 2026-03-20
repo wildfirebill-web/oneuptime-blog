@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, VS Code, Dev Containers, Development Environment, Docker, Remote Development
+Tags: Portainer, VS Code, Dev Containers, Development Environments, Docker, Remote Development
 
 Description: Learn how to use VS Code Dev Containers alongside Portainer for a seamless development experience where VS Code runs inside Docker containers managed by Portainer.
 
@@ -69,6 +69,7 @@ Dev Containers support Compose for multi-container development:
 
 ```yaml
 # .devcontainer/docker-compose.yml
+
 version: "3.8"
 services:
   app:

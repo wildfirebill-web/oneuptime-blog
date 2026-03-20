@@ -24,6 +24,7 @@ Pull the official TimescaleDB image, which ships as a PostgreSQL extension alrea
 
 ```bash
 # Pull the latest TimescaleDB image (based on PostgreSQL 16)
+
 docker pull timescale/timescaledb:latest-pg16
 ```
 

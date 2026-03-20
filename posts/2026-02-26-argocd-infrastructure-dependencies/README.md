@@ -37,6 +37,7 @@ Sync waves control the order in which resources within a single ArgoCD Applicati
 
 ```yaml
 # Wave -1: Namespace must exist before anything else
+
 apiVersion: v1
 kind: Namespace
 metadata:

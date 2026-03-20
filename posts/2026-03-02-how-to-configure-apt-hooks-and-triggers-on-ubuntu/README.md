@@ -30,6 +30,7 @@ Post-invoke hooks run after every APT operation. They're suitable for tasks like
 
 ```bash
 # Create an APT configuration file for hooks
+
 sudo tee /etc/apt/apt.conf.d/99local-hooks << 'EOF'
 // Run after every apt-get operation completes
 DPkg::Post-Invoke {
@@ -88,7 +89,7 @@ SECURITY_UPDATES=$(grep "upgrade" /var/log/dpkg.log | \
     awk '{print $4, $5, "->",$6}')
 
 if [[ -n "$SECURITY_UPDATES" ]]; then
-    MESSAGE="Security package updates on *${HOSTNAME}*:\n\`\`\`${SECURITY_UPDATES}\`\`\`"
+    MESSAGE="Security package updates on *${HOSTNAME}*:\n```${SECURITY_UPDATES}```"
 
     curl -s -X POST "$SLACK_WEBHOOK" \
         -H "Content-Type: application/json" \

@@ -28,6 +28,7 @@ The goal is to produce benchmark results that are accurate, repeatable, and mean
 
 ```bash
 # Too short: results dominated by connection setup
+
 kubectl exec iperf-client -- iperf3 -c $SERVER_IP -t 5 -P 1  # Bad: too short
 
 # Optimal: steady-state results with warm-up

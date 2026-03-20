@@ -49,7 +49,7 @@ for start, offset_field, last in fragment_offsets(3800, 1500):
 ```
 
 Expected output:
-```
+```text
 Start byte:    0  Offset field:    0  Last: False
 Start byte: 1480  Offset field:  185  Last: False
 Start byte: 2960  Offset field:  370  Last: True
@@ -74,6 +74,7 @@ Fragment payloads (except the last) must be multiples of 8 bytes. If they are no
 
 ```python
 # Verify fragment sizes are multiples of 8
+
 for i, f in enumerate(frags[:-1]):  # All but the last fragment
     payload_len = len(f[IP].payload)
     assert payload_len % 8 == 0, f"Fragment {i+1} payload {payload_len} not aligned!"

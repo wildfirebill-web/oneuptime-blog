@@ -35,6 +35,7 @@ Read-only variables cannot be modified or unset after being declared. This is us
 #!/bin/bash
 
 # Method 1: Using readonly command
+
 MY_CONST="value"
 readonly MY_CONST
 

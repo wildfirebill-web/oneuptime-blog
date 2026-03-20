@@ -30,6 +30,7 @@ Before setting up automation, know how to check for drift manually:
 
 ```bash
 # Get what is in the cluster
+
 kubectl get virtualservices -A -o yaml > /tmp/cluster-state.yaml
 
 # Get what should be there (from Git)

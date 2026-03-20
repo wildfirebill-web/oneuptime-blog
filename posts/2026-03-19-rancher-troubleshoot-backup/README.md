@@ -249,6 +249,7 @@ kubectl -n kube-system exec -it etcd-NODE -- \
 
 ```bash
 # Backup Operator status
+
 kubectl get pods -n cattle-resources-system
 kubectl logs -n cattle-resources-system -l app.kubernetes.io/name=rancher-backup
 

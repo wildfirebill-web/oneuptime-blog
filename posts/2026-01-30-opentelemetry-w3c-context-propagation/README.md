@@ -439,6 +439,7 @@ Python service continuing the trace:
 
 ```python
 # Python - Validation Service
+
 from opentelemetry import trace, propagate
 from opentelemetry.propagate import extract
 from flask import Flask, request

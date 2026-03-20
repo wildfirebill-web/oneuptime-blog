@@ -70,6 +70,7 @@ In production Talos Linux clusters, follow these guidelines:
 
 ```yaml
 # Good - uses a specific version tag
+
 containers:
   - name: app
     image: myregistry.com/myapp:v1.2.3

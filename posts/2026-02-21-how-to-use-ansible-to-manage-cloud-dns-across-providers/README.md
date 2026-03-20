@@ -18,6 +18,7 @@ Install the collections for the DNS providers you use.
 
 ```bash
 # Install collections for different DNS providers
+
 ansible-galaxy collection install amazon.aws
 ansible-galaxy collection install azure.azcollection
 ansible-galaxy collection install google.cloud

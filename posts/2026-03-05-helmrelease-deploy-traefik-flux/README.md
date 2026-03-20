@@ -22,6 +22,7 @@ Traefik publishes official Helm charts through their dedicated chart repository.
 
 ```yaml
 # helmrepository-traefik.yaml - Traefik Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

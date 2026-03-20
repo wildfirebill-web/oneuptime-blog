@@ -18,6 +18,7 @@ Cloud CDN logging is configured at the backend service level. You can enable it 
 
 ```bash
 # Enable logging with full sample rate (every request is logged)
+
 gcloud compute backend-services update my-backend \
     --enable-logging \
     --logging-sample-rate=1.0 \

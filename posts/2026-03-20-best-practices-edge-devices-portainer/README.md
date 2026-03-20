@@ -1,4 +1,4 @@
-# Best Practices for Edge Device Management with Portainer
+# Best Practices for Edge Device Management with Portainer - Devices
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Establish and enforce naming conventions across your organization:
 
 ```bash
 # Example naming convention
+
 # Environment: {env}-{region}-{type}
 # Stack: {team}-{app}-{env}
 # Volume: {stack}-{service}-{purpose}

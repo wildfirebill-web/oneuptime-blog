@@ -14,6 +14,7 @@ Azure App Service VNet Integration enables outbound connectivity from your web a
 
 ```hcl
 # main.tf - VNet and delegation subnet for App Service VNet integration
+
 resource "azurerm_virtual_network" "vnet" {
   name                = "app-vnet"
   address_space       = ["10.0.0.0/16"]

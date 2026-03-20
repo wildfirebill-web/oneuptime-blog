@@ -18,6 +18,7 @@ Auto-update failures can be caused by registry issues, incorrect configuration, 
 
 ```bash
 # Check if the last auto-update run failed
+
 systemctl --user status podman-auto-update.service
 
 # View detailed logs

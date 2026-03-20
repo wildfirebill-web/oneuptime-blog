@@ -1,10 +1,10 @@
-# How to Fix stack.env Not Found Errors in Portainer
+# How to Fix stack.env Not Found Errors in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Stacks, Troubleshooting, DevOps
 
-Description: Learn how to diagnose and fix "stack.env not found" and related environment file errors when deploying or updating stacks in Portainer.
+Description: Learn how to diagnose and fix 'stack.env not found' and related environment file errors when deploying or updating stacks in Portainer.
 
 ## Introduction
 
@@ -17,8 +17,9 @@ The `stack.env not found` error appears when Portainer or Docker Compose cannot 
 
 ## Common Error Messages
 
-```
+```hcl
 # Error 1: env_file reference in Compose:
+
 Error response from daemon: open /data/compose/12/stack.env: no such file or directory
 
 # Error 2: Portainer's internal stack storage:
@@ -46,7 +47,7 @@ docker exec portainer ls /data/compose/
 # Inside each directory:
 docker exec portainer ls /data/compose/12/
 # docker-compose.yml  (the Compose file)
-# stack.env           (environment variables — if configured)
+# stack.env           (environment variables - if configured)
 ```
 
 ## Step 2: Identify the Missing File
@@ -133,7 +134,7 @@ git ls-files | grep env
 
 # Add a stack.env with default values (no secrets):
 cat > stack.env << 'EOF'
-# Stack environment defaults — override sensitive values in Portainer
+# Stack environment defaults - override sensitive values in Portainer
 LOG_LEVEL=info
 APP_PORT=8080
 WORKERS=2
@@ -145,7 +146,7 @@ git commit -m "Add stack.env defaults for Portainer deployment"
 git push
 ```
 
-Then in Portainer, set sensitive variables (passwords, tokens) via the UI — they override the file values.
+Then in Portainer, set sensitive variables (passwords, tokens) via the UI - they override the file values.
 
 ## Step 6: Recreate the Stack to Fix Persistent Errors
 

@@ -30,6 +30,7 @@ graph TD
 ```bash
 #!/bin/bash
 # /usr/local/bin/verify-tar-backup.sh
+
 # Verify tar backup integrity
 
 BACKUP_DIR="/backup"

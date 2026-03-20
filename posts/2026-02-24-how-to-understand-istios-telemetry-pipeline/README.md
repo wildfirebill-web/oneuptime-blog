@@ -264,6 +264,7 @@ Monitor the telemetry overhead:
 
 ```promql
 # CPU used by sidecar (includes telemetry processing)
+
 rate(container_cpu_usage_seconds_total{container="istio-proxy"}[5m])
 
 # Memory used by sidecar (includes stats storage)

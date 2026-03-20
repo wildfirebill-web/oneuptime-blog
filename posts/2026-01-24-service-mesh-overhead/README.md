@@ -53,6 +53,7 @@ First, quantify the actual overhead:
 
 ```yaml
 # benchmark-deployment.yaml
+
 # Deploy with and without sidecar to measure overhead
 
 apiVersion: apps/v1

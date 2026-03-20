@@ -25,6 +25,7 @@ Before installing, verify your system meets the minimum requirements:
 
 ```bash
 # Check your macOS version
+
 sw_vers
 
 # Check your processor architecture

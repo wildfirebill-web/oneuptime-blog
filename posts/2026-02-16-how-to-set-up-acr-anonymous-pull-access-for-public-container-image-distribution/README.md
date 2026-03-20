@@ -39,6 +39,7 @@ Enabling anonymous pull is a single configuration change on the registry.
 
 ```bash
 # Enable anonymous pull on the registry
+
 az acr update \
   --name myPublicRegistry \
   --anonymous-pull-enabled true

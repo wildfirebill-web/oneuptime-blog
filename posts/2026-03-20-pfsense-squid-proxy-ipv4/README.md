@@ -8,19 +8,19 @@ Description: Install and configure the Squid proxy package on pfSense for IPv4 w
 
 ## Introduction
 
-Squid on pfSense provides HTTP/HTTPS caching and filtering for LAN clients. In transparent mode, clients need no manual proxy configuration — pfSense intercepts port 80/443 traffic automatically.
+Squid on pfSense provides HTTP/HTTPS caching and filtering for LAN clients. In transparent mode, clients need no manual proxy configuration - pfSense intercepts port 80/443 traffic automatically.
 
 ## Install Squid Package
 
 Navigate to **System > Package Manager > Available Packages**:
 - Install: `squid`
-- Install: `squidGuard` (optional — for URL filtering)
+- Install: `squidGuard` (optional - for URL filtering)
 
 ## Basic Squid Configuration
 
 Navigate to **Services > Squid Proxy Server > General**:
 
-```
+```text
 Enable Squid Proxy:     checked
 Proxy Interface(s):     LAN, OPT1 (interfaces to listen on)
 Proxy Port:             3128
@@ -38,7 +38,7 @@ Logging:
 
 Navigate to **Services > Squid Proxy Server > Cache Mgmt**:
 
-```
+```text
 Hard Disk Cache Size:    2048 MB
 Hard Disk Cache System:  ufs
 Level 1 Subdirs:         16
@@ -49,7 +49,7 @@ Maximum Object Size:     512 MB
 
 ## SSL/HTTPS Interception (SSL Bump)
 
-```
+```text
 WARNING: SSL interception requires distributing pfSense CA cert to clients.
 
 Navigate to: Services > Squid Proxy Server > General
@@ -64,13 +64,14 @@ Deploy the CA cert to clients via GPO or MDM.
 ## Transparent Proxy Firewall Rules
 
 Navigate to **Firewall > NAT > Port Forward > Add**:
-```
+```text
 Interface:   LAN
 Protocol:    TCP
 Source:      LAN net
 Dest port:   80
 Redirect to: 127.0.0.1:3128
 Description: Transparent proxy redirect
+
 ```
 
 ## SquidGuard URL Filtering
@@ -93,6 +94,7 @@ Navigate to **Status > Squid Proxy Stats**:
 
 ```bash
 # pfSense CLI
+
 squid -k check
 tail -f /var/squid/logs/access.log
 ```

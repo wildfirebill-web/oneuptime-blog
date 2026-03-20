@@ -26,6 +26,7 @@ Many official Talos extensions provide kernel modules. Here are the most common 
 
 ```yaml
 # Network driver extensions
+
 customization:
   systemExtensions:
     officialExtensions:

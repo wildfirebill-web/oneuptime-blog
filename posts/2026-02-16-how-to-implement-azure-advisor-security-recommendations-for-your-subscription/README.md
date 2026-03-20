@@ -62,6 +62,7 @@ This is almost always the top recommendation. Multi-factor authentication preven
 
 ```bash
 # Create a Conditional Access policy requiring MFA for privileged roles
+
 # This requires Azure AD Premium P1 license
 # Navigate to Azure AD > Security > Conditional Access > New Policy
 # Or use Microsoft Graph API:

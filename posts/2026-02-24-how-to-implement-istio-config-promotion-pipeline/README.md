@@ -86,6 +86,7 @@ BRANCH="promote-to-${TARGET_ENV}-$(date +%Y%m%d-%H%M%S)"
 echo "Promoting from ${SOURCE_ENV} to ${TARGET_ENV}..."
 
 # Create a promotion branch
+
 git checkout -b "$BRANCH" main
 
 # Compare the rendered output of both environments

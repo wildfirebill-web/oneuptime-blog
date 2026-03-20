@@ -27,6 +27,7 @@ Here is a complete configuration with both checks:
 
 ```yaml
 # app.yaml - Health check configuration for App Engine Flex
+
 runtime: custom
 env: flex
 

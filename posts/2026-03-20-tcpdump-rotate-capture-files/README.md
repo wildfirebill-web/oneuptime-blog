@@ -14,6 +14,7 @@ Use `-C` to rotate when a capture file reaches a specific size:
 
 ```bash
 # Rotate when each file reaches 100 MB, keep last 5 files
+
 sudo tcpdump -i eth0 -C 100 -W 5 -w /tmp/capture.pcap
 
 # Creates files: capture.pcap0, capture.pcap1, capture.pcap2...
@@ -46,7 +47,7 @@ sudo tcpdump -i eth0 -G 3600 -W 24 -w /tmp/capture-%H%M.pcap
 
 ## Combine Size and Time Rotation
 
-Both `-C` and `-G` can be used together — files rotate when EITHER condition is met:
+Both `-C` and `-G` can be used together - files rotate when EITHER condition is met:
 
 ```bash
 # Rotate at 100 MB or 15 minutes, keep 20 files

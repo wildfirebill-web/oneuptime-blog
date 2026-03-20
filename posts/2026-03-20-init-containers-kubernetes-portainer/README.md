@@ -26,6 +26,7 @@ Deploy a pod with an init container that waits for PostgreSQL before starting th
 
 ```yaml
 # api-with-init.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -114,14 +115,14 @@ The init container writes to a shared `emptyDir` volume that the main container 
 
 ## Step 4: Deploy via Portainer
 
-Paste the complete YAML into Portainer's **Kubernetes > Advanced Deployment** interface and click **Deploy**. Portainer shows the pod's initialization phase — init containers appear in the pod detail with their own status and logs.
+Paste the complete YAML into Portainer's **Kubernetes > Advanced Deployment** interface and click **Deploy**. Portainer shows the pod's initialization phase - init containers appear in the pod detail with their own status and logs.
 
 ## Step 5: View Init Container Logs
 
 In Portainer, navigate to the pod and use the **Logs** view with the container selector to switch between init containers and the main container:
 
 ```bash
-# Via terminal — view init container logs
+# Via terminal - view init container logs
 kubectl logs <pod-name> -c wait-for-postgres -n production
 kubectl logs <pod-name> -c run-migrations -n production
 ```

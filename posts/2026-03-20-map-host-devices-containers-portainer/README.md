@@ -1,10 +1,10 @@
-# How to Map Host Devices (USB, Serial) to Containers in Portainer
+# How to Map Host Devices (USB, Serial) to Containers in Portainer - Map
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Devices, USB, Serial, IoT, Hardware
+Tags: Portainer, Docker, Devices, USB, SERIAL, IoT, Hardware
 
-Description: Configure Docker containers to access host hardware devices — USB peripherals, serial ports, and other device files — through Portainer's container creation interface and stack YAML.
+Description: Configure Docker containers to access host hardware devices - USB peripherals, serial ports, and other device files - through Portainer's container creation interface and stack YAML.
 
 ---
 
@@ -20,6 +20,7 @@ Before mapping, identify the device file:
 
 ```bash
 # List USB devices
+
 ls /dev/tty* | grep -E "USB|ACM"
 # Common: /dev/ttyUSB0 (USB serial adapter), /dev/ttyACM0 (Arduino)
 

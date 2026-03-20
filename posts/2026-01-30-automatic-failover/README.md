@@ -97,6 +97,7 @@ from enum import Enum
 import logging
 
 # Configure logging for health check operations
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'

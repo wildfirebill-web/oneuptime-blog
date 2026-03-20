@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, multus, networking, kubernetes, cni
+Tags: Rancher, Multus, Networking, Kubernetes, CNI
 
 Description: Guide to configuring Multus CNI in Rancher for pods with multiple network interfaces.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

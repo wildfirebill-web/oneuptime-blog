@@ -30,6 +30,7 @@ Set up the required resources:
 
 ```bash
 # Enable the Translation API
+
 gcloud services enable translate.googleapis.com
 
 # Create input and output buckets

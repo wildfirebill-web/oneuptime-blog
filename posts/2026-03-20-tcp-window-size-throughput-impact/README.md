@@ -12,7 +12,7 @@ The TCP receive window size is the amount of data the receiver can buffer before
 
 ## The Bandwidth-Delay Product (BDP)
 
-```
+```text
 Maximum Throughput = Window Size / RTT
 
 Examples:
@@ -25,6 +25,7 @@ Examples:
 
 ```bash
 # Show TCP window sizes for active connections
+
 ss -tin state established | grep "rcv_space\|snd_wnd"
 
 # Alternative: watch window size in tcpdump

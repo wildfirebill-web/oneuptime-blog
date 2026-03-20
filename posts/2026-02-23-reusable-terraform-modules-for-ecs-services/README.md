@@ -111,6 +111,7 @@ variable "secrets" {
 }
 
 # Load balancer integration
+
 variable "target_group_arn" {
   description = "ALB target group ARN. Set to null for no load balancer."
   type        = string

@@ -30,6 +30,7 @@ Prevent selector mismatches and configuration errors by enforcing standards.
 
 ```yaml
 # Example well-defined service with explicit configuration
+
 apiVersion: v1
 kind: Service
 metadata:

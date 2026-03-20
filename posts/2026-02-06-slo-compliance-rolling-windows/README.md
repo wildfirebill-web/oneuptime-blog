@@ -38,6 +38,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 # Define buckets that include all SLO threshold values
+
 # Each SLO threshold MUST be a bucket boundary for accurate compliance tracking
 slo_aligned_buckets = [
     5, 10, 25, 50, 75, 100, 150, 200, 300, 500, 750, 1000, 2500, 5000, 10000

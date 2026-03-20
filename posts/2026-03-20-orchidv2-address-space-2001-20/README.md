@@ -28,7 +28,7 @@ Host Identity Protocol (HIP) separates the host identity from its network locati
 - **ORCHID**: A 128-bit hash derived from the HI, used as an IPv6 address
 - **Locator**: The regular IPv6 address used for actual routing
 
-```
+```text
 Traditional IPv6:
   address = identity + location  (both in one address)
 
@@ -75,6 +75,7 @@ def generate_orchid(context_id: bytes, public_key: bytes) -> str:
     return str(ipaddress.IPv6Address(orchid_int))
 
 # HIP context ID for ESP (RFC 7343 §9.3)
+
 HIP_ESP_CONTEXT = bytes.fromhex("8b9dfb2e9b2a8d8e1d25d5b1a7ba56d6")
 
 # Simulate a host public key

@@ -361,6 +361,7 @@ When path routing does not work as expected:
 
 ```bash
 # Check what routes the proxy has
+
 istioctl proxy-config routes deploy/istio-ingressgateway -n istio-system
 
 # Look for specific route details

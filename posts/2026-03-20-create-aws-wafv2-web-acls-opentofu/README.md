@@ -20,13 +20,13 @@ resource "aws_wafv2_web_acl" "main" {
     allow {}  # Allow by default, rules will block specific traffic
   }
 
-  # AWS Managed Rules — Core Rule Set
+  # AWS Managed Rules - Core Rule Set
   rule {
     name     = "AWSManagedRulesCommonRuleSet"
     priority = 10
 
     override_action {
-      none {}  # Don't override — use the rule's own action
+      none {}  # Don't override - use the rule's own action
     }
 
     statement {
@@ -43,7 +43,7 @@ resource "aws_wafv2_web_acl" "main" {
     }
   }
 
-  # AWS Managed Rules — Known Bad Inputs
+  # AWS Managed Rules - Known Bad Inputs
   rule {
     name     = "AWSManagedRulesKnownBadInputsRuleSet"
     priority = 20

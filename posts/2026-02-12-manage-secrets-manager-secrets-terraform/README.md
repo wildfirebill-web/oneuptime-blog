@@ -196,6 +196,7 @@ resource "aws_iam_role_policy" "rotation_lambda" {
 }
 
 # Allow Secrets Manager to invoke the Lambda
+
 resource "aws_lambda_permission" "secrets_manager" {
   statement_id  = "AllowSecretsManagerInvocation"
   action        = "lambda:InvokeFunction"

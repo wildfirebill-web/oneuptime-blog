@@ -22,6 +22,7 @@ Deploy an event router using Knative Eventing:
 
 ```bash
 # Install Knative Eventing (includes CloudEvents support)
+
 kubectl apply -f https://github.com/knative/eventing/releases/download/knative-v1.12.0/eventing-crds.yaml
 kubectl apply -f https://github.com/knative/eventing/releases/download/knative-v1.12.0/eventing-core.yaml
 

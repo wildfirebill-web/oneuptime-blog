@@ -14,6 +14,7 @@ systemd provides built-in watchdog and restart mechanisms that ensure services s
 
 ```bash
 # Create or modify a service with restart policies
+
 sudo tee /etc/systemd/system/myapp.service << 'UNITEOF'
 [Unit]
 Description=My Application

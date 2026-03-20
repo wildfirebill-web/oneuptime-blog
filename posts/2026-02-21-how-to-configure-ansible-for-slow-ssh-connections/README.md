@@ -18,6 +18,7 @@ Before tuning anything, confirm that the slowness is actually in the SSH connect
 
 ```bash
 # Measure raw SSH connection time
+
 time ssh -o ConnectTimeout=30 deploy@slow-server.example.com "echo connected"
 
 # Measure SSH with verbose output to see where time is spent

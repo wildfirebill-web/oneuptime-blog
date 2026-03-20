@@ -47,6 +47,7 @@ from opentelemetry.sdk.trace.export import BatchSpanExporter
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 
 # Step 1: Create an exporter that sends spans to your backend.
+
 # This uses OTLP over gRPC to a Collector on localhost.
 exporter = OTLPSpanExporter(
     endpoint="localhost:4317",

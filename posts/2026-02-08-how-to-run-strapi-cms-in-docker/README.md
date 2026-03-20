@@ -29,6 +29,7 @@ Docker and Docker Compose are required. Strapi needs at least 1 GB of RAM for de
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

@@ -43,6 +43,7 @@ The cleanest way to add tracing to CircleCI is with a reusable script that each 
 ```bash
 #!/bin/bash
 # otel_trace.sh
+
 # Helper script that wraps CircleCI job steps with OpenTelemetry spans.
 # It uses curl to send spans directly to the collector in OTLP/HTTP format.
 # This avoids needing to install language-specific SDKs in every job.

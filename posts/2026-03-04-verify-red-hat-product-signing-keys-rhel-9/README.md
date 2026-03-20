@@ -31,6 +31,7 @@ Red Hat's GPG signing keys are stored on RHEL in these locations:
 
 ```bash
 # List Red Hat GPG keys in the standard location
+
 ls -la /etc/pki/rpm-gpg/
 
 # Typical keys on RHEL:

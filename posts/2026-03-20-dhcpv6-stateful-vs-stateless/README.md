@@ -8,11 +8,11 @@ Description: Understand the difference between stateful DHCPv6 (full address ass
 
 ## Introduction
 
-DHCPv6 operates in two modes: stateful (assigns addresses and tracks state per client) and stateless (provides configuration options without address assignment). The Router Advertisement M and O flags tell clients which mode to use. Stateful DHCPv6 works like DHCPv4 — a server assigns a specific address to each client. Stateless DHCPv6 lets SLAAC handle address generation while DHCPv6 provides DNS and other options.
+DHCPv6 operates in two modes: stateful (assigns addresses and tracks state per client) and stateless (provides configuration options without address assignment). The Router Advertisement M and O flags tell clients which mode to use. Stateful DHCPv6 works like DHCPv4 - a server assigns a specific address to each client. Stateless DHCPv6 lets SLAAC handle address generation while DHCPv6 provides DNS and other options.
 
 ## Stateful DHCPv6
 
-```
+```text
 Stateful DHCPv6 (M=1 in RA):
 
 Server maintains state:
@@ -42,7 +42,7 @@ Activation:
 
 ## Stateless DHCPv6
 
-```
+```text
 Stateless DHCPv6 (M=0, O=1 in RA):
 
 Server maintains NO per-client state:
@@ -71,7 +71,7 @@ Activation:
 
 ## Comparison Table
 
-```
+```yaml
 Stateful vs Stateless DHCPv6:
 
 Feature                  | Stateful (M=1)         | Stateless (M=0, O=1)
@@ -94,6 +94,7 @@ DHCPv6 messages          | SOLICIT/ADV/REQ/REPLY  | INFO-REQUEST/REPLY only
 # radvd: Set M and O flags
 
 # Pure SLAAC (M=0, O=0): no DHCPv6 at all
+
 # interface eth1 {
 #     AdvManagedFlag off;    # M=0
 #     AdvOtherConfigFlag off; # O=0
@@ -183,4 +184,4 @@ cat /var/lib/dhclient/dhclient6.leases 2>/dev/null
 
 ## Conclusion
 
-Stateful DHCPv6 (M=1) assigns addresses from a server-managed pool, tracks all bindings, and supports reservations — similar to DHCPv4. Stateless DHCPv6 (M=0, O=1) provides only configuration options (DNS, NTP) while SLAAC handles addresses — simpler and serverless for address tracking. The M and O flags in Router Advertisements control which mode clients use. For most enterprises, stateful DHCPv6 provides the address visibility required for security and compliance. For simpler environments, stateless DHCPv6 or pure SLAAC with RDNSS eliminates server complexity.
+Stateful DHCPv6 (M=1) assigns addresses from a server-managed pool, tracks all bindings, and supports reservations - similar to DHCPv4. Stateless DHCPv6 (M=0, O=1) provides only configuration options (DNS, NTP) while SLAAC handles addresses - simpler and serverless for address tracking. The M and O flags in Router Advertisements control which mode clients use. For most enterprises, stateful DHCPv6 provides the address visibility required for security and compliance. For simpler environments, stateless DHCPv6 or pure SLAAC with RDNSS eliminates server complexity.

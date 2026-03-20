@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Puppet, IPv6, Modules, Forge, Configuration Management, Network
+Tags: Puppet, IPv6, Modules, Forge, Configuration Management, Networks
 
 Description: A guide to using Puppet Forge modules for IPv6 network configuration, including the network, firewall, and sysctl modules for deploying IPv6 at scale.
 
@@ -21,6 +21,7 @@ The Puppet Forge provides community-maintained modules that simplify IPv6 config
 
 ```bash
 # Install required modules
+
 puppet module install puppetlabs-firewall
 puppet module install herculesteam-augeasproviders_sysctl
 puppet module install puppet-network

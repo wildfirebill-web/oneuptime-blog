@@ -16,6 +16,7 @@ The fastest way to get started is with Docker:
 
 ```bash
 # Basic Redis
+
 docker run -d --name redis -p 6379:6379 redis:7
 
 # Redis Stack (includes Search, JSON, TimeSeries, Graph, Bloom)

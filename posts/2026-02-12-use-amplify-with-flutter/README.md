@@ -49,6 +49,7 @@ flowchart TD
 
 ```bash
 # Create a new Flutter project
+
 flutter create my_amplify_app
 cd my_amplify_app
 ```

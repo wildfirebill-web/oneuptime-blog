@@ -208,6 +208,7 @@ Test the complete injection flow in a cluster:
 
 ```yaml
 # deny-delete-policy.yaml
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

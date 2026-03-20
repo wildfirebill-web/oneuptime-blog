@@ -49,6 +49,7 @@ First, enable the transit secrets engine in Vault:
 
 ```bash
 # Enable the transit secrets engine at the default path
+
 vault secrets enable transit
 
 # Verify it's enabled

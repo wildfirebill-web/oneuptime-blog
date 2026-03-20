@@ -196,6 +196,7 @@ Protect your application from brute force attacks and abuse:
 
 ```hcl
 # Add to the web ACL
+
 rule {
   name     = "rate-limit-overall"
   priority = 5

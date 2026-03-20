@@ -43,12 +43,12 @@ The key addition is that a host can specify **which sources** it wants to receiv
 MLDv2 allows hosts to specify source preferences:
 
 **INCLUDE mode**: Receive multicast only from listed sources
-```
+```text
 Join (S1, G): Receive multicast group G only from source S1
 ```
 
 **EXCLUDE mode**: Receive multicast from all sources except listed ones
-```
+```text
 Join (*,G) EXCLUDE(S1): Receive group G from any source except S1
 ```
 
@@ -58,7 +58,7 @@ This enables PIM-SSM (Source-Specific Multicast), where the complete multicast c
 
 MLDv2 Version 2 Report (type 143) includes multiple group records:
 
-```
+```text
 MLDv2 Report:
   Reserved
   Number of Multicast Address Records: N
@@ -97,6 +97,7 @@ Routers and switches must be able to handle both versions. When a network has mi
 
 ```bash
 # Check which MLD version the system is using
+
 # Linux uses MLDv2 by default in modern kernels
 
 # View MLD version setting per interface

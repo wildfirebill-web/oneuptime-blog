@@ -20,6 +20,7 @@ Named volumes are the simplest way to persist data in rootless Podman. Podman ma
 
 ```bash
 # Create a named volume
+
 podman volume create mydata
 
 # Inspect the volume to see where it lives on disk

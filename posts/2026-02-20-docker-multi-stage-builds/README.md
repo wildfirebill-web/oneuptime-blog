@@ -16,6 +16,7 @@ This guide shows you how to use multi-stage builds for real-world applications i
 
 ```dockerfile
 # Bad example: Single-stage build (do not use in production)
+
 FROM node:20
 
 WORKDIR /app

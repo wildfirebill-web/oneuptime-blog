@@ -1,10 +1,10 @@
-# How to Troubleshoot Longhorn Node Not Schedulable
+# How to Troubleshoot Longhorn Node Not Schedulable Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Longhorn, Troubleshooting, Node Scheduling, Storage, Kubernetes, Debugging, SUSE Rancher
 
-Description: Learn how to diagnose and fix Longhorn node scheduling failures including disabled nodes, disk conditions, tag mismatches, and eviction settings that prevent volume replicas from being placed on a node.
+Description: Learn how to diagnose and fix Longhorn node scheduling failures including disabled nodes, disk conditions, tag mismatches, and eviction settings that prevent volume replicas from being placed on a...
 
 ---
 
@@ -16,6 +16,7 @@ When Longhorn cannot schedule volume replicas on a node, new volumes fail to pro
 
 ```bash
 # List all Longhorn nodes and their schedulability
+
 kubectl get node.longhorn.io -n longhorn-system \
   -o custom-columns='NAME:.metadata.name,SCHEDULABLE:.status.conditions[?(@.type=="Schedulable")].status,STATE:.status.conditions[?(@.type=="Ready")].status'
 
@@ -33,10 +34,10 @@ kubectl get node.longhorn.io <node-name> -n longhorn-system -o yaml \
   | grep -A 30 diskStatus
 
 # Key conditions to look for:
-# diskPressure: true — disk is too full
-# schedulable: false — disk is disabled or full
-# storageAvailable: <bytes> — available space
-# storageScheduled: <bytes> — already allocated space
+# diskPressure: true - disk is too full
+# schedulable: false - disk is disabled or full
+# storageAvailable: <bytes> - available space
+# storageScheduled: <bytes> - already allocated space
 ```
 
 ---
@@ -185,6 +186,6 @@ kubectl get pod -n longhorn-system \
 
 ## Best Practices
 
-- Monitor Longhorn node disk usage with Prometheus and alert at 70% capacity — proactive alerting prevents scheduling failures before they affect workloads.
-- Avoid manually disabling nodes in Longhorn unless you're doing planned maintenance — disabled nodes cause immediate scheduling failures for new volumes.
+- Monitor Longhorn node disk usage with Prometheus and alert at 70% capacity - proactive alerting prevents scheduling failures before they affect workloads.
+- Avoid manually disabling nodes in Longhorn unless you're doing planned maintenance - disabled nodes cause immediate scheduling failures for new volumes.
 - Use node tags to target specific volumes to specific nodes (e.g., SSDs for databases) only when the node count is high enough that some nodes will always have space available.

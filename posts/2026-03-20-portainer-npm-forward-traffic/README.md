@@ -1,4 +1,4 @@
-# How to Configure Nginx Proxy Manager to Forward Traffic to Portainer
+# How to Configure Nginx Proxy Manager to Forward Traffic to Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Before configuring NPM, confirm Portainer is reachable from the NPM container:
 
 ```bash
 # Get the NPM container name or ID
+
 docker ps | grep nginx-proxy-manager
 
 # Test connectivity from NPM to Portainer
@@ -39,17 +40,17 @@ docker inspect portainer | jq '.[].NetworkSettings.Networks | keys'
 In the NPM web interface at `http://YOUR_SERVER:81`:
 
 **Details Tab:**
-```
+```bash
 Domain Names:        portainer.example.com
 Scheme:              http           (Portainer CE default port 9000 is HTTP)
 Forward Hostname/IP: portainer      (container name works on shared Docker network)
 Forward Port:        9000
 Block Common Exploits: ON
-Websockets Support:  ON             (CRITICAL — required for Portainer terminal/console)
+Websockets Support:  ON             (CRITICAL - required for Portainer terminal/console)
 ```
 
 **For Portainer with HTTPS (port 9443):**
-```
+```text
 Scheme:              https
 Forward Port:        9443
 ```
@@ -57,7 +58,7 @@ Forward Port:        9443
 ## Step 3: SSL Configuration in NPM
 
 **SSL Tab:**
-```
+```text
 SSL Certificate:     Request a new SSL Certificate
 Force SSL:           ON             (redirect HTTP to HTTPS)
 HTTP/2 Support:      ON
@@ -98,7 +99,7 @@ Restrict Portainer access to specific IPs via NPM Access Lists:
 1. Go to **Access Lists** → **Add Access List**
 2. Configure:
 
-```
+```text
 Name: Internal Only
 Satisfy Any: OFF        (must match all rules)
 Pass Auth to Host: OFF

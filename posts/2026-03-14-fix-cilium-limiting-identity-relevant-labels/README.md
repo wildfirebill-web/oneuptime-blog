@@ -28,6 +28,7 @@ This guide provides the specific steps for managing identity-relevant labels in 
 
 ```bash
 # Limit which labels are used for identity
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set labels="k8s:app k8s:io.kubernetes.pod.namespace k8s:io.cilium.k8s.policy"
 ```

@@ -14,6 +14,7 @@ CI/CD pipelines need to know when a deployment is actually done - not just when 
 
 ```bash
 # Wait for the application to be synced and healthy
+
 argocd app wait my-app
 ```
 

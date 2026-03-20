@@ -148,6 +148,7 @@ class SessionStore:
         return self.update_session(session_id, extend_ttl=True)
 
 # Usage
+
 store = SessionStore(default_ttl=3600)
 
 # Create session

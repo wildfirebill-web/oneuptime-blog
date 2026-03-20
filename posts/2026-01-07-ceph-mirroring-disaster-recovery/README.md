@@ -104,6 +104,7 @@ The following commands enable mirroring on the pool. The mode can be 'pool' for 
 
 ```bash
 # On the PRIMARY cluster
+
 # Enable pool-level mirroring - all images in this pool will be mirrored
 ceph osd pool create rbd-mirror-pool 128 128
 rbd pool init rbd-mirror-pool

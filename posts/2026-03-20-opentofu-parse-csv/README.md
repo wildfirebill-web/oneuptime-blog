@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CSV, csvdecode, Bulk Creation, Data Import
+Tags: OpenTofu, CSV, Csvdecode, Bulk Creation, Data Import
 
 Description: Learn how to parse CSV files in OpenTofu using csvdecode to bulk-create cloud resources from spreadsheet data for user management, DNS records, and multi-tenant deployments.
 
@@ -14,6 +14,7 @@ Description: Learn how to parse CSV files in OpenTofu using csvdecode to bulk-cr
 
 ```hcl
 # main.tf - Parse CSV for bulk user creation
+
 locals {
   # Parse CSV file - first row is headers
   users = csvdecode(file("${path.module}/data/users.csv"))

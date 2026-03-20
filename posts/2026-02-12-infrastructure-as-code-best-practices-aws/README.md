@@ -56,6 +56,7 @@ This configuration sets up secure remote state storage.
 
 ```hcl
 # backend.tf - in each environment directory
+
 terraform {
   backend "s3" {
     bucket         = "mycompany-terraform-state"

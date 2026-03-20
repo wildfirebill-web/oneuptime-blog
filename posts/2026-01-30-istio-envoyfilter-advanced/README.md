@@ -56,6 +56,7 @@ The following EnvoyFilter sets up request transformation for API version migrati
 
 ```yaml
 # Transform legacy v1 API requests to internal v2 format
+
 # Responses are transformed back to v1 format for backward compatibility
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter

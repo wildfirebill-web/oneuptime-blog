@@ -36,6 +36,7 @@ The simplest approach is to use `--grpc-web` flag with the CLI. This makes the C
 
 ```bash
 # Login using grpc-web (works with any ingress controller)
+
 argocd login argocd.example.com --grpc-web
 
 # All subsequent commands use grpc-web automatically

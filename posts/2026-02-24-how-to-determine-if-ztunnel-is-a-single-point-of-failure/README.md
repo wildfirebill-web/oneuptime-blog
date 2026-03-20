@@ -18,6 +18,7 @@ In ambient mesh mode, ztunnel runs as a DaemonSet, meaning there is exactly one 
 
 ```bash
 # Check ztunnel pods
+
 kubectl get pods -n istio-system -l app=ztunnel -o wide
 
 # You should see one pod per node

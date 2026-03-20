@@ -24,6 +24,7 @@ Check CPU compatibility:
 
 ```bash
 # On source host
+
 virsh cpu-compare /etc/libvirt/qemu/myvm.xml
 
 # Generate a compatible CPU model

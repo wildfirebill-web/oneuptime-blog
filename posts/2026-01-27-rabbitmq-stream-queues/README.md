@@ -96,6 +96,7 @@ Key architectural concepts:
 
 ```bash
 # Create a stream queue with default settings
+
 rabbitmqadmin declare queue name=events queue_type=stream
 
 # Create a stream with specific retention policies

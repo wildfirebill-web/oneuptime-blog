@@ -18,6 +18,7 @@ Install Katib as part of Kubeflow or standalone:
 
 ```bash
 # Install standalone Katib
+
 kubectl apply -k "github.com/kubeflow/katib/manifests/v1beta1/installs/katib-standalone?ref=v0.16.0"
 
 # Verify installation

@@ -1,4 +1,4 @@
-# How to Manage Windows Containers with Portainer
+# How to Manage Windows Containers with Portainer - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ Microsoft provides several base images:
 
 ```powershell
 # Switch Docker to Windows containers mode
+
 & "C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon
 
 # Verify mode

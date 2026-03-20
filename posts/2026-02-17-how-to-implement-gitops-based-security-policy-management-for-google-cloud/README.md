@@ -75,6 +75,7 @@ security-policies/
 
 ```hcl
 # terraform/backend.tf
+
 # Store Terraform state in a GCS bucket with versioning
 terraform {
   backend "gcs" {

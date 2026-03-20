@@ -16,6 +16,7 @@ On Windows, check that RDP is accepting IPv6 connections:
 
 ```powershell
 # Check which addresses RDP (port 3389) is listening on
+
 netstat -an | findstr :3389
 
 # Expected output includes:
@@ -45,7 +46,7 @@ Set-NetFirewallRule -DisplayName "Remote Desktop - User Mode (TCP-In)" `
 
 Use the Windows built-in Remote Desktop client (mstsc.exe) with the IPv6 address in brackets:
 
-```
+```text
 # In the Computer field of mstsc, wrap IPv6 addresses in square brackets
 [2001:db8::10]
 [2001:db8::10]:3389
@@ -115,7 +116,7 @@ sudo ip6tables-save | sudo tee /etc/ip6tables.rules
 
 **Certificate errors**: RDP over IPv6 uses the same certificate mechanism as IPv4. Ensure the certificate is valid for the hostname you're connecting to.
 
-**Firewall blocking**: Cloud providers (AWS, Azure) often have separate security group rules — add an inbound rule for port 3389/TCP with an IPv6 CIDR source.
+**Firewall blocking**: Cloud providers (AWS, Azure) often have separate security group rules - add an inbound rule for port 3389/TCP with an IPv6 CIDR source.
 
 ## Conclusion
 

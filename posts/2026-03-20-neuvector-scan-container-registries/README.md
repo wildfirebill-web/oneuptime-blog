@@ -22,6 +22,7 @@ Public and private Docker Hub repositories can be scanned directly:
 
 ```bash
 # Authenticate with NeuVector
+
 TOKEN=$(curl -sk -X POST \
   "https://neuvector-manager:8443/v1/auth" \
   -H "Content-Type: application/json" \

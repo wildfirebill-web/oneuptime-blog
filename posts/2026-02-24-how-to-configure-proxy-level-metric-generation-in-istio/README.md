@@ -232,6 +232,7 @@ Proxy-level metrics are especially useful for monitoring the health of the proxy
 
 ```bash
 # Memory usage
+
 kubectl exec deploy/my-service -c istio-proxy -- curl -s localhost:15000/stats | grep server.memory
 
 # Active connections

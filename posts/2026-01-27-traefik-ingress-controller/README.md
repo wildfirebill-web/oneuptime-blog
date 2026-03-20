@@ -28,6 +28,7 @@ The recommended way to install Traefik is using the official Helm chart.
 
 ```bash
 # Add the Traefik Helm repository
+
 helm repo add traefik https://traefik.github.io/charts
 
 # Update your local Helm chart repository cache

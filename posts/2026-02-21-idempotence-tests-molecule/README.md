@@ -31,6 +31,7 @@ You can run the idempotence test as part of the full sequence or individually.
 
 ```bash
 # Full test sequence (includes idempotence)
+
 molecule test
 
 # Run converge first, then idempotence separately

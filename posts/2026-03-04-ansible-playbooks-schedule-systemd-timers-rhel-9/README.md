@@ -26,6 +26,7 @@ Create two files: a service unit (what to run) and a timer unit (when to run it)
 
 ```bash
 # Create the service unit
+
 sudo tee /etc/systemd/system/ansible-compliance.service << 'SERVICE'
 [Unit]
 Description=Run Ansible Compliance Playbook

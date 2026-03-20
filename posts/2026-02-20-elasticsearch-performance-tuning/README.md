@@ -30,6 +30,7 @@ graph TD
 # jvm.options - located at /etc/elasticsearch/jvm.options
 
 # Set initial and maximum heap to the same value
+
 # This prevents the JVM from wasting time resizing the heap
 -Xms16g
 -Xmx16g

@@ -37,6 +37,7 @@ parameters:
   type: gp3
   encrypted: "true"
 # Enable volume expansion
+
 allowVolumeExpansion: true
 reclaimPolicy: Delete
 volumeBindingMode: WaitForFirstConsumer

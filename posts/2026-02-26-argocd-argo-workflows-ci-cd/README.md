@@ -46,6 +46,7 @@ You need both tools installed in your cluster. If you already have ArgoCD runnin
 
 ```bash
 # Create a namespace for Argo Workflows
+
 kubectl create namespace argo
 
 # Install Argo Workflows

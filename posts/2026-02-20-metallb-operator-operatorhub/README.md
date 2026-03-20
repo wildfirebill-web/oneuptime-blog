@@ -58,6 +58,7 @@ If your cluster does not already have OLM installed (OpenShift ships with it by 
 
 ```bash
 # Check if OLM is already installed by looking for its namespace
+
 kubectl get namespace olm 2>/dev/null && echo "OLM is installed" || echo "OLM is not installed"
 ```
 

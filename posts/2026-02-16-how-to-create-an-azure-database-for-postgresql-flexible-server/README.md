@@ -101,6 +101,7 @@ Here is the full CLI command:
 
 ```bash
 # Create a resource group if needed
+
 az group create --name myResourceGroup --location eastus
 
 # Create the PostgreSQL Flexible Server

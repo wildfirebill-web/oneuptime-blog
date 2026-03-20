@@ -60,6 +60,7 @@ flowchart TB
 
 ```yaml
 # velero-primary-values.yaml
+
 configuration:
   backupStorageLocation:
     - name: primary

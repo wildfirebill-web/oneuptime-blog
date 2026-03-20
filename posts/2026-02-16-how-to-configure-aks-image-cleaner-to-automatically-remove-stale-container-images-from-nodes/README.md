@@ -24,6 +24,7 @@ The Image Cleaner is an AKS feature that you enable at the cluster level.
 
 ```bash
 # Enable Image Cleaner on a new cluster with a 7-day interval
+
 az aks create \
   --resource-group myRG \
   --name myAKS \

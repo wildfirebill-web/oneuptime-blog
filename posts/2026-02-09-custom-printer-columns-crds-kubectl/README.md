@@ -105,6 +105,7 @@ The jsonPath field uses JSONPath syntax to extract values from your resource. He
 ```yaml
 additionalPrinterColumns:
 # Simple field access
+
 - name: Name
   jsonPath: .metadata.name
 

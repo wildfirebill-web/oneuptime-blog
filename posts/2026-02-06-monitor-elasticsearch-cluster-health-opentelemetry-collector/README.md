@@ -31,6 +31,7 @@ Here is a complete collector configuration for monitoring an Elasticsearch clust
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   elasticsearch:
     # Connect to the Elasticsearch HTTP endpoint

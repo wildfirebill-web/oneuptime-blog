@@ -27,6 +27,7 @@ Most macOS developers already have Homebrew installed, but if you do not, open T
 
 ```bash
 # Install Homebrew from the official install script
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 

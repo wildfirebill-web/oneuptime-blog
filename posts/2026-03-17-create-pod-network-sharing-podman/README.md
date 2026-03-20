@@ -18,6 +18,7 @@ When containers in a pod share the network namespace, they share the same IP add
 
 ```bash
 # Create a pod - network sharing is on by default
+
 podman pod create --name web-pod -p 8080:80
 
 # Run two containers in the pod

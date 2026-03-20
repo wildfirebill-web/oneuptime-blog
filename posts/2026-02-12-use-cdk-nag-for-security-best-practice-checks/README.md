@@ -31,6 +31,7 @@ Add CDK Nag to your existing CDK project.
 
 ```bash
 # Install cdk-nag
+
 npm install cdk-nag
 ```
 

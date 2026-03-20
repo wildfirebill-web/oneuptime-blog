@@ -20,6 +20,7 @@ The random_pet resource generates a name composed of random words from a built-i
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

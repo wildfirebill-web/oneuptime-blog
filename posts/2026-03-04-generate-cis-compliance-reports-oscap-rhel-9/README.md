@@ -14,6 +14,7 @@ When an auditor asks to see your CIS compliance status, handing them a well-form
 
 ```bash
 # Install OpenSCAP and the SCAP Security Guide
+
 dnf install -y openscap-scanner scap-security-guide
 
 # Verify the RHEL datastream is available

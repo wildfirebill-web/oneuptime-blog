@@ -75,6 +75,7 @@ resource "aws_cloudwatch_event_target" "health_check" {
 
 ```hcl
 # Trigger on EC2 state changes
+
 resource "aws_cloudwatch_event_rule" "ec2_state_change" {
   name        = "ec2-state-change"
   description = "Capture EC2 instance state changes"

@@ -90,6 +90,7 @@ The Java agent captures distributed traces automatically. When an HTTP request e
 Configuration happens through system properties or environment variables:
 ```bash
 # Via system properties
+
 java -javaagent:opentelemetry-javaagent.jar \
      -Dotel.service.name=payment-service \
      -Dotel.resource.attributes=deployment.environment=production,team=payments \

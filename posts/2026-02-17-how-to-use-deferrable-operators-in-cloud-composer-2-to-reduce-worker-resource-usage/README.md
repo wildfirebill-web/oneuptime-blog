@@ -40,6 +40,7 @@ Check that your Cloud Composer 2 environment has the triggerer enabled:
 
 ```bash
 # Verify your Composer 2 environment configuration
+
 gcloud composer environments describe my-composer-env \
   --location=us-central1 \
   --format="yaml(config.workloadsConfig)"

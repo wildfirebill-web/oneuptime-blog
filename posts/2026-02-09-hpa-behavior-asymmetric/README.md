@@ -196,6 +196,7 @@ Different behavior for expected high-traffic periods:
 
 ```yaml
 # Primary HPA for business hours
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

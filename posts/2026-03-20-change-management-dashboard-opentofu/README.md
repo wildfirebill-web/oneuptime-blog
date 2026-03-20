@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Change Management, Dashboard, Observability, GitOps, Infrastructure as Code
+Tags: OpenTofu, Change Management, Dashboards, Observability, GitOps, Infrastructure as Code
 
 Description: Learn how to build a change management dashboard for OpenTofu that tracks infrastructure changes, approvals, and deployment history using Git and CI/CD data.
 
@@ -15,6 +15,7 @@ Understanding what changed, when, who approved it, and what the impact was is cr
 ```bash
 #!/usr/bin/env bash
 # scripts/collect-changes.sh
+
 # Collect change event data from recent applies and save as JSON
 
 set -euo pipefail
@@ -153,4 +154,4 @@ if __name__ == "__main__":
 
 ## Summary
 
-A change management dashboard built from Git history, CI/CD events, and plan outputs provides full visibility into infrastructure changes. OpenTofu generates the change data; scripts collect and visualize it — giving teams a lightweight, audit-ready change management solution without dedicated tooling.
+A change management dashboard built from Git history, CI/CD events, and plan outputs provides full visibility into infrastructure changes. OpenTofu generates the change data; scripts collect and visualize it - giving teams a lightweight, audit-ready change management solution without dedicated tooling.

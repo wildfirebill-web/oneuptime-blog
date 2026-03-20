@@ -29,6 +29,7 @@ Before setting up monitoring, you can check current Redis memory usage with a qu
 
 ```bash
 # Connect to the ArgoCD Redis pod and check memory stats
+
 kubectl exec -n argocd deploy/argocd-redis -- redis-cli INFO memory
 ```
 

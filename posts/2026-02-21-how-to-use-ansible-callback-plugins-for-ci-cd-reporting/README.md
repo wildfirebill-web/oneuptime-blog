@@ -28,6 +28,7 @@ Ansible ships with several useful callback plugins. Enable them in `ansible.cfg`
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Set the stdout callback (only one can be active)
 stdout_callback = yaml

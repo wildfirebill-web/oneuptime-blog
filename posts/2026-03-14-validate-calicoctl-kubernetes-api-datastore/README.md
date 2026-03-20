@@ -30,6 +30,7 @@ Verify that calicoctl can establish and maintain a connection to the Kubernetes 
 ```bash
 #!/bin/bash
 # validate-connectivity.sh
+
 # Validate Kubernetes API connectivity for calicoctl
 
 echo "=== Connectivity Validation ==="
@@ -109,7 +110,7 @@ echo ""
 echo "Results: ${PASS} accessible, ${FAIL} inaccessible"
 ```
 
-## Resource CRUD Validation
+Resource CRUD Validation
 
 Test create, read, update, and delete operations on a safe test resource.
 

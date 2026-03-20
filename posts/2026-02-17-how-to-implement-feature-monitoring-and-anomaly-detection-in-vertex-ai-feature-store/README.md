@@ -30,6 +30,7 @@ from google.cloud.aiplatform_v1 import FeaturestoreServiceClient
 from google.cloud.aiplatform_v1.types import featurestore as featurestore_pb2
 
 # Initialize the client
+
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Create a Feature Store

@@ -14,6 +14,7 @@ GRE (Generic Routing Encapsulation) tunnels encapsulate network packets to creat
 
 ```bash
 # Create a GRE tunnel connection
+
 nmcli connection add type ip-tunnel \
   ifname gre1 \
   con-name gre-tunnel-1 \

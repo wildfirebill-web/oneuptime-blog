@@ -61,6 +61,7 @@ Create the configuration file first:
 
 ```yaml
 # Global settings apply to all notification integrations
+
 global:
   # How long to wait before sending a notification about new alerts
   resolve_timeout: 5m

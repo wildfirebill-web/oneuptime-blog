@@ -18,6 +18,7 @@ The collector makes this straightforward. You define two exporters with differen
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

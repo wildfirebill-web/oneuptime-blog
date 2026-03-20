@@ -28,6 +28,7 @@ First, you need a model deployed to a Vertex AI Endpoint. Here is how to deploy 
 
 ```python
 # deploy_with_monitoring.py
+
 from google.cloud import aiplatform
 
 # Initialize the Vertex AI client

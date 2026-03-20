@@ -29,6 +29,7 @@ The observer is the foundation. If it is not working, nothing else will function
 
 ```bash
 # Check if Hubble is enabled
+
 kubectl -n kube-system exec ds/cilium -- cilium status 2>&1 | grep -i hubble
 
 # If it shows "Disabled", check the config

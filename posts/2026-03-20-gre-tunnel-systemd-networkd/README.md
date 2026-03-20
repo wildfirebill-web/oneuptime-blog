@@ -14,6 +14,7 @@ systemd-networkd can create and manage GRE tunnels through `.netdev` files that 
 
 ```ini
 # /etc/systemd/network/10-gre0.netdev
+
 # On Host A (local=10.0.0.1, remote=10.0.0.2)
 
 [NetDev]

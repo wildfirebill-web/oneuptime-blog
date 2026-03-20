@@ -205,6 +205,7 @@ A minimal agent script:
 ```bash
 #!/bin/bash
 # /usr/local/bin/haproxy-agent.sh
+
 # Simple agent that checks application health
 
 # Check if application is healthy

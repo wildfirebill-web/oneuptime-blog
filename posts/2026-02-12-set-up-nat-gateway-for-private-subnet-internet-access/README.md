@@ -36,6 +36,7 @@ You need three things: a public subnet (where the NAT gateway lives), an Elastic
 
 ```bash
 # Step 1: Allocate an Elastic IP for the NAT gateway
+
 EIP_ALLOC=$(aws ec2 allocate-address \
   --domain vpc \
   --tag-specifications 'ResourceType=elastic-ip,Tags=[{Key=Name,Value=nat-gateway-eip}]' \

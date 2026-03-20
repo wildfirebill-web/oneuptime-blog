@@ -40,6 +40,7 @@ Let's build a GraphQL server with proper N+1 prevention from scratch. We'll use 
 
 ```bash
 # Initialize your project
+
 npm init -y
 npm install apollo-server graphql dataloader
 npm install --save-dev typescript @types/node ts-node

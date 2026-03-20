@@ -57,6 +57,7 @@ First, confirm it's actually an OOM kill:
 
 ```bash
 # Check the stopped task details
+
 aws ecs describe-tasks \
     --cluster my-cluster \
     --tasks <task-arn> \

@@ -48,6 +48,7 @@ Create an index with a percolator field:
 
 ```bash
 # Create an index for storing alerts/queries
+
 curl -X PUT "localhost:9200/alerts" -H 'Content-Type: application/json' -d'
 {
   "mappings": {

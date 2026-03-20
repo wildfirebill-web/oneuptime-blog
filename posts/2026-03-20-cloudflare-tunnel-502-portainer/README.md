@@ -8,9 +8,9 @@ Description: Learn how to diagnose and fix 502 Bad Gateway errors when accessing
 
 ## Understanding 502 with Cloudflare Tunnel
 
-A 502 from Cloudflare Tunnel means the cloudflared connector reached your server but couldn't forward the request to Portainer. This is different from a regular Nginx 502 — the request successfully traverses the tunnel but fails at the last hop.
+A 502 from Cloudflare Tunnel means the cloudflared connector reached your server but couldn't forward the request to Portainer. This is different from a regular Nginx 502 - the request successfully traverses the tunnel but fails at the last hop.
 
-```
+```text
 Browser → Cloudflare → cloudflared connector → Portainer
                                               ↑ This hop fails → 502
 ```
@@ -31,6 +31,7 @@ docker ps | grep portainer
 # Must show "Up" status
 
 # Test Portainer is responding locally
+
 curl -I http://localhost:9000
 # Expected: HTTP/1.1 200 OK
 ```
@@ -48,7 +49,7 @@ curl -s http://localhost:9000
 
 In Cloudflare Zero Trust → **Networks → Tunnels → Configure**:
 
-```
+```text
 Public Hostname:  portainer.yourdomain.com
 Service:          http://localhost:9000     ← if cloudflared runs on host
                   http://portainer:9000     ← if cloudflared runs in Docker
@@ -83,7 +84,7 @@ services:
 If Portainer runs with HTTPS (port 9443):
 
 In Cloudflare tunnel public hostname:
-```
+```text
 Service: https://localhost:9443
 ```
 
@@ -153,4 +154,4 @@ docker exec cloudflared curl -s -o /dev/null -w "From cloudflared to portainer: 
 
 ## Conclusion
 
-502 errors with Cloudflare Tunnel are almost always a misconfigured service URL, a Docker network isolation issue, or a Portainer HTTP/HTTPS mismatch. The key diagnostic is testing connectivity from within the cloudflared container to the Portainer container — if that succeeds, the problem is in the tunnel's service configuration; if it fails, it's a networking issue.
+502 errors with Cloudflare Tunnel are almost always a misconfigured service URL, a Docker network isolation issue, or a Portainer HTTP/HTTPS mismatch. The key diagnostic is testing connectivity from within the cloudflared container to the Portainer container - if that succeeds, the problem is in the tunnel's service configuration; if it fails, it's a networking issue.

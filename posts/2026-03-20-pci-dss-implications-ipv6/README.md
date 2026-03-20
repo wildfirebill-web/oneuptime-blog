@@ -12,7 +12,7 @@ PCI DSS does not have separate IPv6-specific requirements; rather, all PCI DSS c
 
 ## PCI DSS and IPv6 - Key Principle
 
-```
+```text
 PCI DSS Core Principle for IPv6:
 "All PCI DSS requirements that apply to IPv4 networks
 apply equally to IPv6 networks and dual-stack environments."
@@ -30,6 +30,7 @@ apply equally to IPv6 networks and dual-stack environments."
 # PCI DSS 4.0 Requirement 1.3 - Network Access Controls
 
 # All inbound and outbound IPv6 traffic must be controlled
+
 # No "allow all" rules for IPv6
 
 # CDE inbound - only necessary services
@@ -142,7 +143,7 @@ ip -6 route show table all
 
 ## PCI DSS QSA Considerations for IPv6
 
-```
+```text
 What QSAs look for with IPv6:
 
 1. Network diagrams include IPv6 addressing
@@ -159,4 +160,4 @@ firewall rules only cover IPv4" - this is a PCI finding
 that requires remediation.
 ```
 
-PCI DSS IPv6 compliance gaps most commonly appear when organizations add IPv4 security controls and forget to apply equivalent rules to IPv6 — particularly firewall policies, logging, and vulnerability scanning scope — so a systematic review comparing IPv4 and IPv6 control parity is the most effective compliance approach.
+PCI DSS IPv6 compliance gaps most commonly appear when organizations add IPv4 security controls and forget to apply equivalent rules to IPv6 - particularly firewall policies, logging, and vulnerability scanning scope - so a systematic review comparing IPv4 and IPv6 control parity is the most effective compliance approach.

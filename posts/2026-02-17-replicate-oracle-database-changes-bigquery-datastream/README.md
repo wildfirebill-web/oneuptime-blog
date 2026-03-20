@@ -117,6 +117,7 @@ For Amazon RDS Oracle instances, configure the retention through RDS:
 
 ```bash
 # Set archive log retention for RDS Oracle (in hours)
+
 aws rds modify-db-instance \
   --db-instance-identifier my-oracle-instance \
   --cloudwatch-logs-export-configuration '{"EnableLogTypes":["alert","trace","audit"]}' \

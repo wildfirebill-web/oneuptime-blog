@@ -52,6 +52,7 @@ ssh $POD_NODE "sudo iptables -L | grep cali | head -30"
 
 ```bash
 # Get actual pod labels
+
 kubectl get pod <pod-name> -n <namespace> --show-labels
 
 # Update policy selector

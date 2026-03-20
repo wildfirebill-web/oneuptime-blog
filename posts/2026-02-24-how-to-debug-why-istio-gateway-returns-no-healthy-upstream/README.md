@@ -44,6 +44,7 @@ Make sure the service your VirtualService points to actually exists:
 
 ```bash
 # Check the service exists
+
 kubectl get svc my-service -n production
 
 # Check it has endpoints

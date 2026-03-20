@@ -12,8 +12,9 @@ The X-Forwarded-For (XFF) header is used to forward the original client IP throu
 
 IPv6 addresses in XFF headers do NOT use brackets:
 
-```
+```text
 # IPv4 client:
+
 X-Forwarded-For: 203.0.113.10, 10.0.0.1
 
 # IPv6 client:
@@ -39,7 +40,7 @@ The first IP is the original client (leftmost), subsequent IPs are proxies.
 
 ### AWS ALB
 
-```
+```text
 # ALB appends client IPv6 to XFF:
 # X-Forwarded-For: 2001:db8::client
 

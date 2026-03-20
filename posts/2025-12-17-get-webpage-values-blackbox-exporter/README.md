@@ -185,6 +185,7 @@ This exposes metrics like:
 
 ```promql
 # Days until certificate expires
+
 probe_ssl_earliest_cert_expiry - time()
 
 # Certificate issuer and subject info

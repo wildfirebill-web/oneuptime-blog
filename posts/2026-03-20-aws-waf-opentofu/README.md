@@ -192,6 +192,7 @@ tofu plan
 tofu apply
 
 # Check blocked requests
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/WAFV2 \
   --metric-name BlockedRequests \
@@ -204,4 +205,4 @@ aws cloudwatch get-metric-statistics \
 
 ## Conclusion
 
-Start WAF deployment in `count` mode (override all rules to `count` instead of `block`) to understand your traffic patterns before enabling blocking—this prevents false positives from impacting legitimate users. Once you've reviewed sampled requests and tuned any necessary rule overrides, switch to block mode. AWS Managed Rules provide substantial protection without custom rule authoring and are regularly updated by AWS as new threats emerge.
+Start WAF deployment in `count` mode (override all rules to `count` instead of `block`) to understand your traffic patterns before enabling blocking-this prevents false positives from impacting legitimate users. Once you've reviewed sampled requests and tuned any necessary rule overrides, switch to block mode. AWS Managed Rules provide substantial protection without custom rule authoring and are regularly updated by AWS as new threats emerge.

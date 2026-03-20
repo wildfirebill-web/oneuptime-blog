@@ -117,6 +117,7 @@ If the namespace has a waypoint proxy, removing the namespace from ambient mode 
 
 ```bash
 # Check for waypoint proxies
+
 kubectl get gateways -n my-app -l istio.io/waypoint-for
 
 # Remove the waypoint

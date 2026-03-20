@@ -68,6 +68,7 @@ After applying the fix, verify the error is resolved:
 
 ```bash
 # Check for remaining errors
+
 kubectl get events -A --field-selector type=Warning --sort-by='.lastTimestamp' | tail -20
 
 # Verify all calico-node pods are running

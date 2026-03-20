@@ -38,6 +38,7 @@ If you expanded the underlying device separately:
 
 ```bash
 # Resize the filesystem to fill the device
+
 sudo resize2fs /dev/vg_data/lv_data
 ```
 

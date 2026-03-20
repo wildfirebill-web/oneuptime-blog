@@ -29,6 +29,7 @@ First, set up the billing export. This streams your billing data into BigQuery w
 
 ```bash
 # Create a BigQuery dataset for billing data
+
 bq mk --dataset \
   --description "GCP Billing Export" \
   --location US \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tflint, Rules, Configuration, Linting
+Tags: OpenTofu, TFLint, Rules, Configuration, Linting
 
 Description: Learn how to configure tflint rules for OpenTofu projects, enabling and disabling specific rules, setting severity levels, and customizing naming conventions for your organization.
 
@@ -14,6 +14,7 @@ tflint's behavior is controlled by the `.tflint.hcl` configuration file. You can
 
 ```hcl
 # .tflint.hcl
+
 config {
   # Only lint local modules (not remote sources)
   call_module_type = "local"
@@ -217,4 +218,4 @@ tflint --only=terraform_naming_convention,terraform_required_version
 
 ## Conclusion
 
-tflint's rule configuration enables a graduated adoption approach: start with `disabled_by_default = false` to see all findings, then explicitly disable rules that don't apply to your project. The naming convention rule is high-value early on — enforcing snake_case from the start prevents the inconsistencies that accumulate when multiple engineers contribute without style guidance. Enable `terraform_documented_variables` and `terraform_documented_outputs` for module directories to ensure module interfaces are self-documenting.
+tflint's rule configuration enables a graduated adoption approach: start with `disabled_by_default = false` to see all findings, then explicitly disable rules that don't apply to your project. The naming convention rule is high-value early on - enforcing snake_case from the start prevents the inconsistencies that accumulate when multiple engineers contribute without style guidance. Enable `terraform_documented_variables` and `terraform_documented_outputs` for module directories to ensure module interfaces are self-documenting.

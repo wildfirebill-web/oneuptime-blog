@@ -27,6 +27,7 @@ For local development, use the gcloud CLI to set up your personal credentials.
 
 ```bash
 # Log in with your Google account
+
 # This stores credentials that client libraries can find automatically
 gcloud auth application-default login
 

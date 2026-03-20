@@ -8,11 +8,11 @@ Description: Learn how to diagnose and recover from provider plugin crashes in O
 
 ## Introduction
 
-Provider plugin crashes produce a distinctive panic message from the Go runtime. Unlike configuration errors, these are bugs in the provider binary itself — not in your OpenTofu code. The resolution usually involves updating the provider, reporting the bug upstream, or working around the specific operation that triggers the crash.
+Provider plugin crashes produce a distinctive panic message from the Go runtime. Unlike configuration errors, these are bugs in the provider binary itself - not in your OpenTofu code. The resolution usually involves updating the provider, reporting the bug upstream, or working around the specific operation that triggers the crash.
 
 ## Recognizing a Crash
 
-```
+```text
 panic: runtime error: invalid memory address or nil pointer dereference
 goroutine 1 [running]:
 github.com/hashicorp/terraform-provider-aws/internal/service/ec2.(*Foo).Read(...)
@@ -30,6 +30,7 @@ can be fixed. The output above should help diagnose the problem.
 
 ```bash
 # Capture the full crash details including stack trace
+
 export TF_LOG=TRACE
 export TF_LOG_PATH=/tmp/crash-log.txt
 tofu apply 2>&1 | tee /tmp/apply-output.txt

@@ -27,6 +27,7 @@ Each approach has its own set of compatibility considerations.
 
 ```bash
 # Using pip
+
 pip3 install podman-compose
 
 # Fedora / RHEL

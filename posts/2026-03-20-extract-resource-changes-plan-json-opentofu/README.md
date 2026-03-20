@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan JSON, jq, Automation, Infrastructure as Code
+Tags: OpenTofu, Plan JSON, Jq, Automation, Infrastructure as Code
 
 Description: Learn how to extract and filter specific resource change information from OpenTofu plan JSON output using jq and Python.
 
-The `resource_changes` array in a `tofu show -json` plan contains every resource the plan will affect. Extracting precisely the information you need — changed attributes, resource addresses, before/after values — powers automated reports and approval workflows.
+The `resource_changes` array in a `tofu show -json` plan contains every resource the plan will affect. Extracting precisely the information you need - changed attributes, resource addresses, before/after values - powers automated reports and approval workflows.
 
 ## Generating Plan JSON
 
@@ -19,6 +19,7 @@ tofu show -json tfplan > plan.json
 
 ```bash
 # List every resource change with its action and address
+
 jq -r '.resource_changes[] | "\(.change.actions | join(","))\t\(.address)"' plan.json
 
 # Output example:
@@ -68,7 +69,7 @@ jq -r '.resource_changes[] |
 
 ```python
 #!/usr/bin/env python3
-# extract-changes.py — structured extraction of resource changes
+# extract-changes.py - structured extraction of resource changes
 
 import json
 import sys

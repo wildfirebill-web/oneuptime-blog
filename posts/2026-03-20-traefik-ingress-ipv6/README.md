@@ -13,7 +13,7 @@ Traefik is a cloud-native ingress controller for Kubernetes that automatically d
 ## Install Traefik with IPv6 Entry Points (Helm)
 
 ```yaml
-# traefik-values.yaml — Helm values for Traefik with IPv6
+# traefik-values.yaml - Helm values for Traefik with IPv6
 
 deployment:
   replicas: 2
@@ -34,6 +34,7 @@ ports:
       enabled: true
 
 # Traefik listens on all interfaces (IPv4 and IPv6) by default
+
 # with [::]:port when the container has IPv6
 additionalArguments:
   - "--entrypoints.web.address=:80"

@@ -8,7 +8,7 @@ Description: Learn how to migrate existing AWS infrastructure managed by CloudFo
 
 ## Introduction
 
-Migrating from CloudFormation to OpenTofu involves three phases: writing OpenTofu configuration that matches your existing resources, importing those resources into state, and decommissioning the CloudFormation stacks. The key principle is to import without destroying — your running infrastructure should never be interrupted.
+Migrating from CloudFormation to OpenTofu involves three phases: writing OpenTofu configuration that matches your existing resources, importing those resources into state, and decommissioning the CloudFormation stacks. The key principle is to import without destroying - your running infrastructure should never be interrupted.
 
 ## Phase 1: Audit Your CloudFormation Stacks
 
@@ -16,6 +16,7 @@ Start by inventorying what you have.
 
 ```bash
 # List all CloudFormation stacks
+
 aws cloudformation list-stacks \
   --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE \
   --query 'StackSummaries[*].[StackName,StackStatus]' \
@@ -96,7 +97,7 @@ tofu apply
 
 Some CloudFormation features need translation.
 
-```
+```hcl
 CloudFormation → OpenTofu equivalents:
 
 Fn::GetAtt      → resource attribute references (resource.name.attribute)

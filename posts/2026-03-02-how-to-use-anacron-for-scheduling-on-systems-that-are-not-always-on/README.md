@@ -28,6 +28,7 @@ Check the installation:
 
 ```bash
 # Verify anacron is installed
+
 which anacron
 dpkg -l anacron
 

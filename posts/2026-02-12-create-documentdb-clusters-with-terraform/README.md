@@ -18,6 +18,7 @@ DocumentDB clusters run inside a VPC and need a subnet group that covers at leas
 
 ```hcl
 # Subnet group for DocumentDB
+
 resource "aws_docdb_subnet_group" "main" {
   name       = "docdb-subnet-group"
   subnet_ids = var.private_subnet_ids

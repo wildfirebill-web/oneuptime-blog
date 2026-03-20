@@ -31,6 +31,7 @@ Here's how to enable trusted access for CloudTrail in Organizations.
 
 ```bash
 # Enable trusted access for CloudTrail in AWS Organizations
+
 aws organizations enable-aws-service-access \
   --service-principal cloudtrail.amazonaws.com
 ```

@@ -32,7 +32,7 @@ OpenTofu state is stored as JSON in a well-defined format. Understanding the sch
 | `outputs` | Root module output values |
 | `resources` | All tracked resources |
 
-## Resource Entry Structure
+Resource Entry Structure
 
 ```json
 {
@@ -57,10 +57,11 @@ OpenTofu state is stored as JSON in a well-defined format. Understanding the sch
 
 ## Using tofu show -json (Preferred)
 
-For programmatic consumption, use `tofu show -json` instead of reading state directly — it provides a stable schema:
+For programmatic consumption, use `tofu show -json` instead of reading state directly - it provides a stable schema:
 
 ```bash
 # Get structured state as JSON
+
 tofu show -json > state-structured.json
 
 # The output has a different, richer schema
@@ -124,4 +125,4 @@ While state is JSON, never edit it directly:
 
 ## Conclusion
 
-Understanding the OpenTofu state JSON format enables programmatic state inspection, audit tooling, and integration with external systems. Use `jq` for ad-hoc queries, `tofu show -json` for a stable programmatic schema, and `tofu state pull` to access the raw state. Never edit state directly — use the purpose-built `tofu state` subcommands instead.
+Understanding the OpenTofu state JSON format enables programmatic state inspection, audit tooling, and integration with external systems. Use `jq` for ad-hoc queries, `tofu show -json` for a stable programmatic schema, and `tofu state pull` to access the raw state. Never edit state directly - use the purpose-built `tofu state` subcommands instead.

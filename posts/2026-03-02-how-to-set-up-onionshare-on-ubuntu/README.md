@@ -24,6 +24,7 @@ OnionShare handles Tor internally - you do not need to install or configure Tor 
 
 ```bash
 # Install OnionShare via Snap
+
 sudo snap install onionshare
 
 # Verify installation

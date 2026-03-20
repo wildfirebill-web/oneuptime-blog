@@ -43,6 +43,7 @@ Download and install the Istio CLI:
 
 ```bash
 # Download the latest Istio release
+
 curl -L https://istio.io/downloadIstio | sh -
 
 # Move to the Istio directory

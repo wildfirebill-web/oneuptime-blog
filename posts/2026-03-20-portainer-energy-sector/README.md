@@ -25,6 +25,7 @@ Energy OT networks are typically air-gapped or have strict internet restrictions
 
 ```bash
 # On internet-connected build system
+
 # Pull all required images
 IMAGES=(
   "portainer/portainer-ee:2.19.0"

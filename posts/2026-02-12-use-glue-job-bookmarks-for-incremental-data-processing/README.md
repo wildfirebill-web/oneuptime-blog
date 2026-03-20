@@ -35,6 +35,7 @@ Enable bookmarks when creating or updating a job:
 
 ```python
 # Create a job with bookmarks enabled
+
 import boto3
 
 glue = boto3.client('glue', region_name='us-east-1')

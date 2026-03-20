@@ -38,6 +38,7 @@ The API server acts as a proxy, aggregating data from the controller, repo serve
 
 ```promql
 # HTTP request duration by method and path
+
 histogram_quantile(0.95,
   rate(http_request_duration_seconds_bucket{
     namespace="argocd",

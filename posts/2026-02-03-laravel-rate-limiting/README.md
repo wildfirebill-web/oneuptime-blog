@@ -327,6 +327,7 @@ Update your environment file.
 
 ```bash
 # .env
+
 CACHE_DRIVER=redis
 REDIS_HOST=127.0.0.1
 REDIS_PORT=6379

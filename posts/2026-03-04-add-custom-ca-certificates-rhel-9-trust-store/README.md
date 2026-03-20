@@ -46,6 +46,7 @@ If you received it in DER (binary) format, convert it:
 
 ```bash
 # Convert a DER-format certificate to PEM
+
 openssl x509 -inform der -in ca-cert.der -out ca-cert.pem
 ```
 

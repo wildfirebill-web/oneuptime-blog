@@ -34,6 +34,7 @@ Start by creating a subnet group.
 
 ```bash
 # Create a subnet group for DocumentDB
+
 aws docdb create-db-subnet-group \
   --db-subnet-group-name docdb-subnets \
   --db-subnet-group-description "DocumentDB subnet group" \

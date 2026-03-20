@@ -18,6 +18,7 @@ Podman lets you develop and test pods locally, then export them as standard Kube
 
 ```bash
 # Create a pod with multiple containers
+
 podman pod create --name webapp -p 8080:80
 
 # Add an nginx frontend

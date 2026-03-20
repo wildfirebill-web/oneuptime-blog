@@ -55,6 +55,7 @@ The following script creates a data collection rule that collects common securit
 
 ```bash
 # Set variables for the resource group, workspace, and DCR name
+
 RESOURCE_GROUP="rg-security"
 WORKSPACE_NAME="law-security-prod"
 DCR_NAME="dcr-defender-security"

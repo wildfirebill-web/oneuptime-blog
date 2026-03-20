@@ -16,6 +16,7 @@ Let us start with what not to do:
 
 ```hcl
 # NEVER do this
+
 resource "aws_db_instance" "main" {
   engine         = "postgres"
   instance_class = "db.t3.medium"

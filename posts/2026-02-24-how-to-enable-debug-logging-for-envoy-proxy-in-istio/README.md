@@ -34,6 +34,7 @@ The fastest way to enable debug logging for an Envoy proxy is with `istioctl`:
 
 ```bash
 # Enable debug for all loggers on a specific pod
+
 istioctl proxy-config log my-pod -n my-namespace --level debug
 
 # Enable debug for specific loggers only

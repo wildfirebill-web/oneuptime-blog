@@ -53,6 +53,7 @@ Before migrating, audit your HBase usage to identify potential incompatibilities
 
 ```bash
 # Check your HBase tables and schemas
+
 hbase shell << 'EOF'
 list
 describe 'your_table'

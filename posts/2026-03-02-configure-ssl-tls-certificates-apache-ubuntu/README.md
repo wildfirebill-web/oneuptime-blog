@@ -16,6 +16,7 @@ Apache installed and running with a domain name pointing to your server:
 
 ```bash
 # Verify Apache is running
+
 sudo systemctl status apache2
 
 # Ensure ports 80 and 443 are open

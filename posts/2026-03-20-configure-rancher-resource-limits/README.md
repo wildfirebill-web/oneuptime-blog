@@ -20,6 +20,7 @@ Rancher Projects provide a higher-level abstraction above namespaces:
 
 ```yaml
 # Via Rancher API
+
 apiVersion: management.cattle.io/v3
 kind: Project
 metadata:

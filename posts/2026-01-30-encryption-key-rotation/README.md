@@ -403,6 +403,7 @@ BACKUP_DIR="/etc/ssl/app/backup"
 DOMAIN="api.example.com"
 
 # Create backup of current certificates
+
 backup_current_certs() {
     timestamp=$(date +%Y%m%d_%H%M%S)
     mkdir -p "$BACKUP_DIR/$timestamp"

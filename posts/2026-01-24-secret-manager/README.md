@@ -58,6 +58,7 @@ Start by creating secrets using the gcloud CLI or client libraries.
 
 ```bash
 # Create a secret
+
 gcloud secrets create database-password \
     --replication-policy="automatic" \
     --labels="env=production,app=myapp"

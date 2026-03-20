@@ -593,6 +593,7 @@ Here is a Docker Compose configuration to test your setup locally.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

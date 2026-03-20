@@ -148,6 +148,7 @@ from opentelemetry.propagators.tracecontext import TraceContextTextMapPropagator
 from opentelemetry.propagators.baggage import W3CBaggagePropagator
 
 # Initialize with baggage propagation
+
 trace.set_tracer_provider(TracerProvider())
 tracer_provider = trace.get_tracer_provider()
 

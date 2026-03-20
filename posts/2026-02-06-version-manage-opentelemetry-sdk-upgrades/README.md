@@ -34,6 +34,7 @@ Define a version policy that sets expectations for all teams:
 
 ```yaml
 # otel-version-policy.yaml
+
 # Organization-wide OpenTelemetry version policy.
 # This defines the supported version ranges and upgrade cadence.
 policy:

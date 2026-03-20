@@ -208,6 +208,7 @@ Track retry behavior with Istio metrics:
 
 ```bash
 # Check for retry exhaustion (all retries failed)
+
 kubectl logs deploy/frontend -c istio-proxy -n production | grep "URX"
 ```
 

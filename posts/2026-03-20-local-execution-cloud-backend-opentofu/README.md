@@ -14,6 +14,7 @@ Local execution mode with the cloud backend runs `tofu plan` and `tofu apply` on
 
 ```hcl
 # main.tf
+
 terraform {
   cloud {
     organization = "my-company"

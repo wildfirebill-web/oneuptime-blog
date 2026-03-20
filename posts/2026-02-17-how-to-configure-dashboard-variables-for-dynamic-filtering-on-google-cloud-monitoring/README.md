@@ -26,6 +26,7 @@ Here is how to create a dashboard with variables using the Cloud Monitoring API:
 
 ```python
 # create_dashboard_with_variables.py
+
 from google.cloud import monitoring_dashboard_v1
 from google.protobuf import struct_pb2
 

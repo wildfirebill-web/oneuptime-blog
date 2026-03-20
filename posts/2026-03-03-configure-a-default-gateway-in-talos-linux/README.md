@@ -24,6 +24,7 @@ The default gateway is configured as a route with the `0.0.0.0/0` network:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

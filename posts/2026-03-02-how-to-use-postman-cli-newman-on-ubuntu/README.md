@@ -16,6 +16,7 @@ Newman is a Node.js package, so you need Node.js installed. The recommended way 
 
 ```bash
 # Install curl if not already present
+
 sudo apt-get update && sudo apt-get install -y curl
 
 # Add NodeSource repository for Node.js 20 LTS

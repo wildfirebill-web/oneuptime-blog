@@ -18,7 +18,7 @@ This is the most effective countermeasure. Without directed broadcast forwarding
 
 On Cisco IOS:
 
-```
+```text
 ! Apply to every interface (including loopbacks)
 interface GigabitEthernet0/0
  no ip directed-broadcast
@@ -29,7 +29,7 @@ interface GigabitEthernet0/1
 
 Verify no interfaces are still configured:
 
-```
+```text
 show running-config | include directed-broadcast
 ```
 
@@ -37,7 +37,7 @@ show running-config | include directed-broadcast
 
 Even if attackers route the packets differently, block ICMP echo requests aimed at broadcast addresses at your border router:
 
-```
+```text
 ! Deny ICMP echo requests to broadcast addresses
 ip access-list extended ANTI-SMURF-IN
  deny   icmp any 0.0.0.0 255.255.255.255 echo
@@ -54,10 +54,11 @@ Hosts should also refuse to respond to ICMP echo requests sent to broadcast addr
 
 ```bash
 # Drop ICMP echo requests to broadcast addresses
+
 sudo iptables -A INPUT -m addrtype --dst-type BROADCAST -p icmp --icmp-type echo-request -j DROP
 sudo iptables -A INPUT -d 255.255.255.255 -p icmp --icmp-type echo-request -j DROP
 
-# Linux kernel option — ignore broadcast pings
+# Linux kernel option - ignore broadcast pings
 echo 1 | sudo tee /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
 
 # Make persistent
@@ -71,7 +72,7 @@ uRPF drops packets with spoofed source addresses, removing the attacker's abilit
 
 On Cisco:
 
-```
+```nginx
 ! Strict uRPF on the upstream interface
 interface GigabitEthernet0/0
  ip verify unicast source reachable-via rx
@@ -92,8 +93,8 @@ sudo sysctl --system
 
 As a secondary defense, rate-limit ICMP echo replies leaving your network to prevent your hosts from amplifying an ongoing attack:
 
-```
-! Cisco — limit ICMP echo-reply to 512 pps
+```text
+! Cisco - limit ICMP echo-reply to 512 pps
 interface GigabitEthernet0/0
  rate-limit output access-group 101 512000 8000 8000 conform-action transmit exceed-action drop
 

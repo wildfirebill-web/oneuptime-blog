@@ -51,6 +51,7 @@ The following command checks if all etcd members are healthy and reachable:
 
 ```bash
 # Check etcd member health using K3s built-in command
+
 sudo k3s etcd-snapshot info
 
 # For more detailed health information, use kubectl

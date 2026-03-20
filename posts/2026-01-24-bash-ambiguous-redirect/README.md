@@ -41,6 +41,7 @@ flowchart TD
 #!/bin/bash
 
 # Problematic - variable contains spaces
+
 filename="my log file.txt"
 echo "Hello World" > $filename  # FAILS
 

@@ -41,6 +41,7 @@ Before we begin, ensure you have the following tools installed and configured:
 
 ```bash
 # Verify your installations
+
 node --version
 docker --version
 kubectl version --client
@@ -1108,7 +1109,7 @@ spec:
           port: 443
 ```
 
-### Resource Management
+Resource Management
 
 | Component | CPU Request | CPU Limit | Memory Request | Memory Limit |
 |-----------|-------------|-----------|----------------|--------------|
@@ -1169,7 +1170,7 @@ kubectl create secret docker-registry regcred \
   -n react-app
 ```
 
-### Resource Issues
+Resource Issues
 
 ```bash
 # Check resource usage

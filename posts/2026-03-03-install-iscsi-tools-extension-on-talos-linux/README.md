@@ -34,6 +34,7 @@ Add the extension to your Talos machine configuration.
 
 ```yaml
 # worker.yaml
+
 machine:
   install:
     extensions:

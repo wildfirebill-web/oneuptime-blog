@@ -25,8 +25,9 @@ The lifecycle of a Terraform change through PRs looks like this:
 
 ## GitHub Actions Implementation
 
-```yaml
+````yaml
 # .github/workflows/terraform-pr.yml
+
 name: Terraform PR Workflow
 on:
   pull_request:
@@ -119,9 +120,9 @@ jobs:
             <details>
             <summary>Show full plan output</summary>
 
-            \`\`\`hcl
+            ```hcl
             ${displayPlan}
-            \`\`\`
+            ```
 
             </details>
 
@@ -216,7 +217,7 @@ gh api repos/:owner/:repo/branches/main/protection -X PUT \
   "required_linear_history": true
 }
 EOF
-```
+````
 
 ## CODEOWNERS for Infrastructure Review
 

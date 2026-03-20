@@ -41,6 +41,7 @@ done
 
 ```bash
 # Check for overly permissive policies
+
 kubectl get ciliumnetworkpolicies --all-namespaces -o json | jq '.items[] | select(
   .spec.ingress == [{"fromEndpoints": [{}]}] or
   .spec.egress == [{"toEndpoints": [{}]}]

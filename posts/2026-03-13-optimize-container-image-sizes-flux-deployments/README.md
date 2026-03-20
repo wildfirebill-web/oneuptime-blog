@@ -30,6 +30,7 @@ Before optimizing, measure your current image sizes and pull times.
 
 ```bash
 # List images used in your cluster sorted by size
+
 kubectl get pods -A -o json | \
   jq -r '.items[].spec.containers[].image' | \
   sort -u | \

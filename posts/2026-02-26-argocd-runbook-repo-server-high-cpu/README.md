@@ -30,6 +30,7 @@ High CPU on the ArgoCD repo server causes slow manifest generation, delayed sync
 
 ```bash
 # Check current CPU usage
+
 kubectl top pods -n argocd -l app.kubernetes.io/name=argocd-repo-server
 
 # Check CPU limits

@@ -170,6 +170,7 @@ Pin hardware interrupts to specific CPUs:
 
 ```bash
 # View current IRQ affinity
+
 cat /proc/irq/24/smp_affinity_list
 
 # Pin IRQ 24 to CPU 0

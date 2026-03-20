@@ -48,6 +48,7 @@ Complete journald configuration template:
 
 ```ini
 # /etc/systemd/journald.conf
+
 # Managed by Ansible - do not edit manually
 [Journal]
 

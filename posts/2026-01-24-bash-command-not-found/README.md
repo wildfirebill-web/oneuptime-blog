@@ -55,6 +55,7 @@ The most basic cause is that the command simply is not installed.
 # Check if a command exists before using it
 
 # Method 1: Using command -v (POSIX compliant)
+
 if command -v docker &> /dev/null; then
     echo "Docker is installed"
     docker --version

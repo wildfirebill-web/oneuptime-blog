@@ -14,6 +14,7 @@ FastAPI uses Uvicorn (ASGI server) which has native IPv6 support. Binding to `::
 
 ```python
 # main.py
+
 import uvicorn
 from fastapi import FastAPI, Request
 

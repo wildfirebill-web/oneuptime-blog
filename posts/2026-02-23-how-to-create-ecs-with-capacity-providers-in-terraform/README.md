@@ -37,6 +37,7 @@ provider "aws" {
 }
 
 # ECS Cluster with Fargate capacity providers
+
 resource "aws_ecs_cluster" "main" {
   name = "production-cluster"
 

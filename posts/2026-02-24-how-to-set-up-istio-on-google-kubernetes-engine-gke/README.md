@@ -85,6 +85,7 @@ Install Istio with a GKE-optimized configuration:
 
 ```yaml
 # istio-gke.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

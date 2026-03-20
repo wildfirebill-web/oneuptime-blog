@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # playbook-patch.yml
+
 # Apply all available updates to RHEL servers
 ---
 - name: Patch RHEL servers

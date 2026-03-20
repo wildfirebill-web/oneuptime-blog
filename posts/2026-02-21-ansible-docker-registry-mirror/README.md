@@ -41,6 +41,7 @@ A Docker registry can run in mirror (pull-through cache) mode. Here is the Ansib
 
 ```yaml
 # deploy_mirror.yml - Deploy a Docker registry mirror
+
 ---
 - name: Deploy Docker Registry Mirror
   hosts: mirror_servers

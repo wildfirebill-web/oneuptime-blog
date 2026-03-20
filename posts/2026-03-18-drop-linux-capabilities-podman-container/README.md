@@ -22,6 +22,7 @@ Podman grants a baseline set of capabilities to every container. Understanding t
 
 ```bash
 # View the default capabilities granted to a Podman container
+
 # The CapEff line shows the effective capability bitmask
 podman run --rm docker.io/library/alpine:latest \
   sh -c "cat /proc/self/status | grep Cap"

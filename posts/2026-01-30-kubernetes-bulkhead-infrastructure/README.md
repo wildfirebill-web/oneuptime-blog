@@ -45,7 +45,7 @@ flowchart TB
 
 Each layer provides different protections. Infrastructure bulkheads prevent resource starvation. Service mesh bulkheads control traffic flow. Application bulkheads manage internal concurrency. You need all three for comprehensive fault isolation.
 
-## Resource Limits: The First Bulkhead
+Resource Limits: The First Bulkhead
 
 Kubernetes resource limits are your first line of defense. Without them, a single misbehaving pod can consume all node resources and starve other workloads.
 
@@ -55,6 +55,7 @@ Every production deployment should specify both requests and limits. Requests re
 
 ```yaml
 # deployment-with-bulkhead.yaml
+
 # This deployment demonstrates proper resource bulkheading.
 # Each container is isolated to prevent resource hogging.
 apiVersion: apps/v1

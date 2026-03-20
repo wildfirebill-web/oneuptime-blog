@@ -8,7 +8,7 @@ Description: Learn how to configure Fleet bundle targets to control which cluste
 
 ## Introduction
 
-Fleet bundle targets define the rules for which Kubernetes clusters should receive a particular bundle of resources. Configuring targets correctly is fundamental to managing multi-cluster deployments — it allows you to specify exactly where your applications should run, whether by individual cluster name, labels, or cluster groups.
+Fleet bundle targets define the rules for which Kubernetes clusters should receive a particular bundle of resources. Configuring targets correctly is fundamental to managing multi-cluster deployments - it allows you to specify exactly where your applications should run, whether by individual cluster name, labels, or cluster groups.
 
 Targets can be configured both in the `fleet.yaml` file within your Git repository and in the `GitRepo` resource itself.
 
@@ -33,6 +33,7 @@ Target matching methods:
 
 ```yaml
 # fleet.yaml - Bundle target configuration
+
 namespace: my-app
 
 targets:
@@ -232,4 +233,4 @@ targets:
 
 ## Conclusion
 
-Fleet bundle targets give you precise control over application deployment topology across your cluster fleet. By combining cluster name targeting, label selectors, and cluster groups, you can implement sophisticated deployment strategies — from simple all-cluster deployments to complex per-region, per-environment configurations. Careful target ordering and labeling strategy are key to maintaining a clean and predictable multi-cluster delivery pipeline.
+Fleet bundle targets give you precise control over application deployment topology across your cluster fleet. By combining cluster name targeting, label selectors, and cluster groups, you can implement sophisticated deployment strategies - from simple all-cluster deployments to complex per-region, per-environment configurations. Careful target ordering and labeling strategy are key to maintaining a clean and predictable multi-cluster delivery pipeline.

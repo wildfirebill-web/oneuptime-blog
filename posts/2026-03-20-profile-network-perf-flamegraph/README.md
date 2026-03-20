@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: perf, Flamegraph, Linux, Network Performance, Profiling, Kernel
+Tags: Perf, Flamegraph, Linux, Network Performance, Profiling, Kernel
 
 Description: Learn how to use Linux perf and Flamegraph to identify CPU bottlenecks in the network stack, NIC drivers, and application code during high-throughput network workloads.
 
@@ -14,12 +14,13 @@ When network throughput plateaus below the theoretical maximum, the bottleneck c
 - Application code that's slow to read/write sockets
 - Memory copies in the network path
 
-Linux `perf` captures CPU stack traces at high frequency, and Flamegraphs visualize where time is spent — pinpointing the exact function causing the bottleneck.
+Linux `perf` captures CPU stack traces at high frequency, and Flamegraphs visualize where time is spent - pinpointing the exact function causing the bottleneck.
 
 ## Step 1: Install Prerequisites
 
 ```bash
 # Install perf (Linux performance profiler)
+
 sudo apt-get install -y linux-tools-$(uname -r) linux-tools-generic
 
 # Verify perf is working
@@ -86,7 +87,7 @@ scp user@server:/tmp/network-flamegraph.svg .
 
 Key patterns to look for in a network flamegraph:
 
-```
+```text
 Common bottlenecks:
 
 1. Wide "tcp_sendmsg" or "tcp_recvmsg" bars

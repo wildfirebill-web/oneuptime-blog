@@ -260,6 +260,7 @@ If you already use Grafana, use the JSON API data source to pull from ArgoCD:
 
 ```bash
 # Create a simple API proxy that transforms ArgoCD data for Grafana
+
 # This runs as a small service alongside Grafana
 
 cat > argocd-grafana-proxy.py << 'SCRIPT'

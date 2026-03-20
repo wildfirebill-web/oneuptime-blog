@@ -16,6 +16,7 @@ Before digging into Istio-specific issues, verify that the Kubernetes fundamenta
 
 ```bash
 # Is the pod running?
+
 kubectl get pods -n my-namespace -l app=my-service
 
 # Is the service defined?

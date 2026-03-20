@@ -29,6 +29,7 @@ Create IP pools whose CIDRs align with planned firewall rule groupings.
 
 ```yaml
 # ippool-production-apps.yaml
+
 # IPPool for production application pods - single CIDR for firewall rules
 apiVersion: projectcalico.org/v3
 kind: IPPool

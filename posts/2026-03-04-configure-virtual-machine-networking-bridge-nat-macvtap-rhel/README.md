@@ -16,6 +16,7 @@ NAT mode gives VMs outbound internet access through the host. VMs are not direct
 
 ```bash
 # The default NAT network is already configured
+
 sudo virsh net-list
 
 # VMs on the default network get IPs from 192.168.122.0/24

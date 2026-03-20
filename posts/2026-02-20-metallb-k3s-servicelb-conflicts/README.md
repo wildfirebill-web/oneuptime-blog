@@ -44,6 +44,7 @@ Install K3s with ServiceLB disabled on the server (control plane) node:
 
 ```bash
 # Install K3s without the built-in ServiceLB
+
 # The --disable flag prevents the Klipper load balancer from starting
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--disable servicelb" sh -
 ```

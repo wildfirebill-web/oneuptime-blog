@@ -18,6 +18,7 @@ Some health check commands produce significant output, especially when they incl
 
 ```bash
 # Limit each health check log entry to 500 bytes
+
 podman run -d \
   --name size-limited \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

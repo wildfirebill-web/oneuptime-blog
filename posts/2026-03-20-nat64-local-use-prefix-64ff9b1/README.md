@@ -1,4 +1,4 @@
-# How to Understand the NAT64 Local-Use Prefix (64:ff9b:1::/48)
+# How to Understand the NAT64 Local-Use Prefix (64:ff9b:1::/48) - 64ff9b1
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,11 +24,11 @@ RFC 8215 defines `64:ff9b:1::/48` as a local-use NAT64 prefix. Unlike the well-k
 
 The `64:ff9b:1::/48` prefix provides a larger allocation from which operators can carve /96 subnets for their specific NAT64 deployments, avoiding dependency on the single well-known prefix.
 
-```
+```text
 64:ff9b:1::/48 can host:
-  64:ff9b:1:0000::/96   — NAT64 for VLAN A
-  64:ff9b:1:0001::/96   — NAT64 for VLAN B
-  64:ff9b:1:0002::/96   — NAT64 for VLAN C
+  64:ff9b:1:0000::/96   - NAT64 for VLAN A
+  64:ff9b:1:0001::/96   - NAT64 for VLAN B
+  64:ff9b:1:0002::/96   - NAT64 for VLAN C
   ... up to 65536 /96 deployments
 ```
 
@@ -48,6 +48,7 @@ def synthesize_nat64_local(ipv4: str, subnet: int = 0) -> str:
     return str(ipaddress.IPv6Address(base_int | v4_int))
 
 # Site A uses subnet 0
+
 print(synthesize_nat64_local("8.8.8.8", subnet=0))
 # 64:ff9b:1::808:808
 
@@ -59,7 +60,7 @@ print(synthesize_nat64_local("8.8.8.8", subnet=1))
 ## Configuring DNS64 with Local-Use Prefix
 
 ```bash
-# BIND named.conf.options — using local-use prefix
+# BIND named.conf.options - using local-use prefix
 options {
     # Use local-use prefix instead of well-known
     dns64 64:ff9b:1::/96 {

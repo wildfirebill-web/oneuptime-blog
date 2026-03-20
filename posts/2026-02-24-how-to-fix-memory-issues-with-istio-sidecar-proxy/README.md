@@ -25,6 +25,7 @@ Check current memory usage:
 
 ```bash
 # Check memory usage per container
+
 kubectl top pod <pod-name> -n production --containers
 
 # Check memory limits vs actual usage

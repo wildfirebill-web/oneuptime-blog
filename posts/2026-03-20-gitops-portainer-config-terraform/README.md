@@ -8,11 +8,11 @@ Description: Learn how to manage Portainer configuration as code in a Git reposi
 
 ## The GitOps Approach for Portainer
 
-GitOps applies to Portainer configuration itself — not just the workloads it manages. Store your Terraform code in Git, and use CI/CD to automatically apply Portainer configuration changes when merged to the main branch.
+GitOps applies to Portainer configuration itself - not just the workloads it manages. Store your Terraform code in Git, and use CI/CD to automatically apply Portainer configuration changes when merged to the main branch.
 
 ## Repository Structure
 
-```
+```text
 portainer-config/
 ├── environments/
 │   ├── production.tf
@@ -38,6 +38,7 @@ portainer-config/
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     portainer = {
@@ -120,7 +121,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Terraform Plan\n\`\`\`\n${plan}\n\`\`\``
+              body: `## Terraform Plan\n```\n${plan}\n````
             })
 
       # Only apply on main branch
@@ -156,7 +157,7 @@ variable "registry_passwords" {
 
 ## Branch Strategy
 
-```
+```text
 main          ← Production Portainer config (auto-applied)
 staging       ← Staging Portainer config (auto-applied to staging)
 feature/*     ← Developer changes (plan-only, no apply)

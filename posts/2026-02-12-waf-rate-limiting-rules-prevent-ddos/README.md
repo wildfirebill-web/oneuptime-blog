@@ -28,6 +28,7 @@ Here's a straightforward rate limit that blocks any IP sending more than 2,000 r
 
 ```bash
 # Create a rate-based rule in your Web ACL
+
 aws wafv2 update-web-acl \
   --name my-app-waf \
   --scope REGIONAL \

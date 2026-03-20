@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Timeout, Socket, POSIX, Networking
+Tags: C, IPv4, TCP, Timeout, Sockets, POSIX, Networking
 
 Description: Learn how to set connection, send, and receive timeouts on IPv4 TCP sockets in C using SO_RCVTIMEO, SO_SNDTIMEO, and non-blocking connect with select().
 
@@ -151,7 +151,7 @@ int main(void) {
 ```c
 /* After recv/send returns -1, check errno */
 if (errno == EAGAIN || errno == EWOULDBLOCK) {
-    /* Timed out — no data received within the deadline */
+    /* Timed out - no data received within the deadline */
 }
 
 /* After non-blocking connect select() check SO_ERROR */
@@ -163,4 +163,4 @@ getsockopt(fd, SOL_SOCKET, SO_ERROR, &so_err, &slen);
 
 ## Conclusion
 
-Set `SO_RCVTIMEO` and `SO_SNDTIMEO` with a `struct timeval` to bound `recv()` and `send()` calls — they return `-1` with `errno` set to `EAGAIN`/`EWOULDBLOCK` when the deadline passes. For `connect()`, put the socket into non-blocking mode with `fcntl(O_NONBLOCK)`, call `connect()` which returns `EINPROGRESS`, then wait in `select()` on the writable set with a `struct timeval` deadline. After `select()` returns, verify success by reading `SO_ERROR` with `getsockopt`. Always restore blocking mode after a successful non-blocking connect if the rest of the code expects blocking semantics.
+Set `SO_RCVTIMEO` and `SO_SNDTIMEO` with a `struct timeval` to bound `recv()` and `send()` calls - they return `-1` with `errno` set to `EAGAIN`/`EWOULDBLOCK` when the deadline passes. For `connect()`, put the socket into non-blocking mode with `fcntl(O_NONBLOCK)`, call `connect()` which returns `EINPROGRESS`, then wait in `select()` on the writable set with a `struct timeval` deadline. After `select()` returns, verify success by reading `SO_ERROR` with `getsockopt`. Always restore blocking mode after a successful non-blocking connect if the rest of the code expects blocking semantics.

@@ -198,6 +198,7 @@ To use it, temporarily move the application to the emergency project:
 
 ```bash
 # Move application to emergency project for the hotfix
+
 argocd app set api-server --project production-emergency
 
 # Deploy the fix

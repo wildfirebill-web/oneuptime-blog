@@ -20,6 +20,7 @@ CrashLoopBackOff means a container is crashing repeatedly. Kubernetes backs off 
 
 ```bash
 # Exit code tells you WHY the container crashed
+
 kubectl get pod crashing-pod -n production -o json \
   | python3 -c "
 import sys, json

@@ -12,7 +12,7 @@ Description: Learn how to capture and analyze ARP packets in Wireshark to troubl
 
 Set a capture filter to record only ARP packets:
 
-```
+```text
 arp
 ```
 
@@ -22,7 +22,7 @@ In Wireshark: **Capture → Options → Enter filter: `arp`**
 
 Filter ARP from a full capture:
 
-```
+```text
 arp
 ```
 
@@ -30,7 +30,7 @@ arp
 
 A typical ARP request in Wireshark shows:
 
-```
+```text
 Frame: 60 bytes on wire
 Ethernet II:
   Destination: Broadcast (ff:ff:ff:ff:ff:ff)
@@ -51,8 +51,9 @@ Address Resolution Protocol (request):
 
 ## Useful Wireshark Display Filters
 
-```
+```text
 # Show all ARP packets
+
 arp
 
 # Show only ARP requests
@@ -78,12 +79,12 @@ arp.duplicate-address-detected
 
 Wireshark automatically highlights potential ARP spoofing with a warning:
 
-- **"Duplicate IP address detected"** — appears when two different MACs claim the same IP
+- **"Duplicate IP address detected"** - appears when two different MACs claim the same IP
 - Color-coded in red/yellow in the packet list
 
 Filter for duplicate IP detection:
 
-```
+```text
 arp.duplicate-address-detected || arp.duplicate-address-frame
 ```
 

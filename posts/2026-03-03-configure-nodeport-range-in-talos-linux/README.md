@@ -30,6 +30,7 @@ The NodePort range is set through the `service-node-port-range` flag on the Kube
 
 ```yaml
 # Change the NodePort range
+
 cluster:
   apiServer:
     extraArgs:

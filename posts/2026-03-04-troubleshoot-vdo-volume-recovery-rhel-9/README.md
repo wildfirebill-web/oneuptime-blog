@@ -48,6 +48,7 @@ For physical space exhaustion, add more storage:
 
 ```bash
 # Add a new disk
+
 sudo pvcreate /dev/sdc
 sudo vgextend vg_vdo /dev/sdc
 

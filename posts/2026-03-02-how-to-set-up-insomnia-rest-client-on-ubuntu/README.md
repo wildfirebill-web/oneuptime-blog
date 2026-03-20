@@ -16,6 +16,7 @@ Insomnia is an open-source desktop application for testing APIs. It supports RES
 
 ```bash
 # Download the latest .deb package from the Insomnia releases page
+
 # Check https://github.com/Kong/insomnia/releases for the current version
 INSOMNIA_VERSION="9.3.2"
 

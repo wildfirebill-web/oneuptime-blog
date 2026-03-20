@@ -30,6 +30,7 @@ These are the workloads that will break when you switch to strict mode because t
 
 ```bash
 # List all pods without istio-proxy container
+
 kubectl get pods --all-namespaces -o json | \
   jq -r '.items[] | select(.spec.containers | map(.name) | contains(["istio-proxy"]) | not) | "\(.metadata.namespace)/\(.metadata.name)"'
 ```

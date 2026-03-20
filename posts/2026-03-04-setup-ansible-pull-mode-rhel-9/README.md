@@ -41,6 +41,7 @@ Create a repository with your playbooks:
 
 ```bash
 # Create the configuration repository
+
 mkdir rhel-config && cd rhel-config
 git init
 

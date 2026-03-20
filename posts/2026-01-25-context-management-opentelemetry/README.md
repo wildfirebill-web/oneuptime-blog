@@ -330,6 +330,7 @@ function setupEventEmitter(emitter) {
 
 ```python
 # context_basics.py
+
 from opentelemetry import trace, context
 from opentelemetry.trace import set_span_in_context
 

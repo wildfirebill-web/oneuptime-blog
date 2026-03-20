@@ -21,6 +21,7 @@ The init container runs a program called `istio-iptables` that creates NAT rules
 
 ```bash
 # View the iptables rules inside a pod
+
 kubectl exec my-pod -c istio-proxy -- iptables -t nat -L -n -v
 ```
 

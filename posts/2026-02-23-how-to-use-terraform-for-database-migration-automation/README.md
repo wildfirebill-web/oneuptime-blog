@@ -16,6 +16,7 @@ In this guide, we will cover how to use Terraform to automate database migration
 
 ```hcl
 # database-migration/dms.tf
+
 # AWS DMS infrastructure for database migration
 
 resource "aws_dms_replication_subnet_group" "migration" {

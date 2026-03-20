@@ -30,6 +30,7 @@ This command enables Audit Manager in your account with a specified S3 bucket fo
 
 ```bash
 # Enable Audit Manager with an evidence destination
+
 aws auditmanager register-account \
   --delegated-admin-account 123456789012
 ```

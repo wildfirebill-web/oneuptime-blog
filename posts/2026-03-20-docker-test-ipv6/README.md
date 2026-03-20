@@ -14,6 +14,7 @@ Testing Docker IPv6 connectivity involves verifying address assignment, routing,
 
 ```bash
 # Start a test container
+
 docker run -it --rm \
     --network mynet \
     --name ipv6-test \
@@ -49,7 +50,7 @@ curl -6 -s https://ipv6.icanhazip.com
 
 ```bash
 #!/bin/bash
-# test_docker_ipv6.sh — automated Docker IPv6 test
+# test_docker_ipv6.sh - automated Docker IPv6 test
 
 NETWORK="mynet"
 PASS=0

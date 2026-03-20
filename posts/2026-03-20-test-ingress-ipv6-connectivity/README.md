@@ -22,6 +22,7 @@ Before testing HTTP, verify DNS resolution returns an IPv6 address for your Ingr
 
 ```bash
 # Query for AAAA (IPv6) records
+
 dig AAAA myapp.example.com
 
 # Use Google's DNS to cross-check
@@ -71,7 +72,7 @@ curl -6 -o /dev/null -s -w \
 Deploy a test pod to verify IPv6 routing within the cluster.
 
 ```yaml
-# test-pod.yaml — a minimal debugging pod
+# test-pod.yaml - a minimal debugging pod
 apiVersion: v1
 kind: Pod
 metadata:
@@ -114,7 +115,7 @@ Run this script as part of a CI pipeline or cron job to continuously validate IP
 
 ```bash
 #!/bin/bash
-# ipv6-ingress-test.sh — automated IPv6 connectivity check
+# ipv6-ingress-test.sh - automated IPv6 connectivity check
 
 HOST="myapp.example.com"
 EXPECTED_CODE=200

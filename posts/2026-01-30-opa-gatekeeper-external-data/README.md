@@ -39,6 +39,7 @@ External Data requires Gatekeeper v3.7.0 or later. Check your version:
 
 ```bash
 # Check Gatekeeper version
+
 kubectl get deployment gatekeeper-controller-manager -n gatekeeper-system -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 

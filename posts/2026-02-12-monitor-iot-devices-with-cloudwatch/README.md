@@ -109,6 +109,7 @@ A well-designed dashboard gives you a single-pane view of your fleet health. Her
 
 ```bash
 # Create the CloudWatch dashboard from the definition
+
 aws cloudwatch put-dashboard \
   --dashboard-name "IoTFleetMonitoring" \
   --dashboard-body file://dashboard-body.json

@@ -54,6 +54,7 @@ pip install openai
 
 ```python
 # create_assistant.py - Set up an assistant with both tools enabled
+
 from openai import AzureOpenAI
 
 client = AzureOpenAI(

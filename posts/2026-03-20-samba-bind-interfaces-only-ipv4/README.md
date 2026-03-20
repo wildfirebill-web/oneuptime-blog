@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, IPv4, bind interfaces only, SMB, Security, Network Isolation
+Tags: Samba, IPv4, Bind interfaces only, SMB, Security, Network Isolation
 
 Description: Configure Samba's bind interfaces only directive to ensure it only listens on specified IPv4 interfaces, preventing unintended exposure on other network interfaces or IPv6.
 
@@ -14,6 +14,7 @@ The `bind interfaces only = yes` directive in Samba ensures that smbd and nmbd o
 
 ```bash
 # Without bind interfaces only:
+
 # interfaces = eth0 lo
 # Samba still listens on ALL interfaces for some operations
 # (only restricts certain lookups, not all binding)
@@ -45,9 +46,9 @@ The `bind interfaces only = yes` directive in Samba ensures that smbd and nmbd o
 
 ```bash
 # Server has:
-# eth0: 10.0.0.5    (internal LAN — Samba should be here)
-# eth1: 203.0.113.10 (public internet — Samba should NOT be here)
-# docker0: 172.17.0.1 (Docker bridge — Samba should NOT be here)
+# eth0: 10.0.0.5    (internal LAN - Samba should be here)
+# eth1: 203.0.113.10 (public internet - Samba should NOT be here)
+# docker0: 172.17.0.1 (Docker bridge - Samba should NOT be here)
 
 # /etc/samba/smb.conf
 [global]

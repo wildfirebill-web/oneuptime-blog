@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Veth, Network Namespaces, Linux
+Tags: RHEL, veth, Network Namespaces, Linux
 
 Description: Learn how to use virtual Ethernet (veth) pairs to connect network namespaces on RHEL, including direct connections, bridge-based topologies, and multi-namespace networks.
 
@@ -29,6 +29,7 @@ A veth pair is always created as two interfaces. When you send a packet into one
 
 ```bash
 # Create namespace
+
 sudo ip netns add ns1
 
 # Create the veth pair

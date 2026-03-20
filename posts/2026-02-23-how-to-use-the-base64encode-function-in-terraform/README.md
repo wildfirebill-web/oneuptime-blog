@@ -16,6 +16,7 @@ The function takes a string and returns its base64-encoded representation:
 
 ```hcl
 # base64encode(string)
+
 base64encode("Hello, World!")
 # Result: "SGVsbG8sIFdvcmxkIQ=="
 

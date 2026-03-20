@@ -37,6 +37,7 @@ Start with a simple permission boundary that limits a role to specific services.
 
 ```hcl
 # Define the permission boundary policy
+
 resource "aws_iam_policy" "developer_boundary" {
   name        = "developer-permission-boundary"
   description = "Permission boundary for developer-created roles"

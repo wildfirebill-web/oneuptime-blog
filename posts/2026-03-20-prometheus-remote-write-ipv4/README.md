@@ -28,6 +28,7 @@ global:
   evaluation_interval: 15s
 
 # --- Remote Write Configuration ---
+
 remote_write:
   - url: "http://10.0.0.30:8428/api/v1/write"
     # Name for this remote write endpoint (appears in metrics)
@@ -111,10 +112,10 @@ docker run -d \
 
 ```yaml
 # Key metrics to watch in Prometheus itself:
-# prometheus_remote_storage_samples_total — Total samples sent
-# prometheus_remote_storage_failed_samples_total — Failed samples
-# prometheus_remote_storage_pending_samples — Backlog of unsent samples
-# prometheus_remote_storage_queue_highest_sent_timestamp_seconds — Latest timestamp sent
+# prometheus_remote_storage_samples_total - Total samples sent
+# prometheus_remote_storage_failed_samples_total - Failed samples
+# prometheus_remote_storage_pending_samples - Backlog of unsent samples
+# prometheus_remote_storage_queue_highest_sent_timestamp_seconds - Latest timestamp sent
 ```
 
 ```promql
@@ -128,6 +129,6 @@ prometheus_remote_storage_pending_samples
 ## Key Takeaways
 
 - `remote_write.url` accepts an IPv4:port endpoint for your storage backend.
-- `queue_config.max_shards` controls parallelism — increase for high-throughput environments.
+- `queue_config.max_shards` controls parallelism - increase for high-throughput environments.
 - Use `write_relabel_configs` to filter which metrics are forwarded to each remote endpoint.
 - Monitor `prometheus_remote_storage_pending_samples` to detect backlog buildup.

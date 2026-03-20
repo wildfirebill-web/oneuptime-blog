@@ -41,6 +41,7 @@ Here's a Terraform configuration that sets up Control Tower with customizations.
 
 ```hcl
 # Enable Control Tower
+
 resource "aws_controltower_landing_zone" "main" {
   manifest_json = jsonencode({
     governedRegions = ["us-east-1", "us-west-2"]

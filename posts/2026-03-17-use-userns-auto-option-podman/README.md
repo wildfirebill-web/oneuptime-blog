@@ -18,6 +18,7 @@ By default, all rootless containers share the same UID mapping. If one container
 
 ```bash
 # Run a container with automatic UID allocation
+
 podman run --rm --userns=auto alpine:latest cat /proc/self/uid_map
 
 # Each new container gets a different range

@@ -27,6 +27,7 @@ graph LR
 
 ```ruby
 # Vagrantfile
+
 # Local development environment provisioned with Ansible
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"

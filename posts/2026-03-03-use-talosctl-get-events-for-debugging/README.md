@@ -18,6 +18,7 @@ The simplest form of the command retrieves recent events from a node:
 
 ```bash
 # Get events from a specific node
+
 talosctl get events --nodes 192.168.1.10
 ```
 

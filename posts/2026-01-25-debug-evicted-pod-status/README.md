@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # Find all evicted pods
+
 kubectl get pods -A --field-selector=status.phase=Failed | grep Evicted
 
 # Count evicted pods per namespace

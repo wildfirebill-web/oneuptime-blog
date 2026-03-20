@@ -44,6 +44,7 @@ The CLI is required to run Pulumi programs and manage stacks.
 
 ```bash
 # macOS using Homebrew
+
 brew install pulumi/tap/pulumi
 
 # Linux using curl

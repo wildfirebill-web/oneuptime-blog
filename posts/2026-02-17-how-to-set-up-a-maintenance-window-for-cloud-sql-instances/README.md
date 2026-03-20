@@ -37,6 +37,7 @@ Set a maintenance window to occur on Sundays at 3 AM:
 
 ```bash
 # Set the maintenance window to Sunday at 3 AM UTC
+
 # day: SUN, MON, TUE, WED, THU, FRI, SAT
 # hour: 0-23 (UTC)
 gcloud sql instances patch my-instance \

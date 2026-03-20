@@ -26,6 +26,7 @@ Create a parent pipeline that triggers child pipelines.
 
 ```yaml
 # .gitlab-ci.yml (parent)
+
 stages:
   - trigger
 
@@ -453,7 +454,7 @@ Common issues:
 - **Variables not available**: Ensure variables are explicitly passed
 - **Artifacts not accessible**: Child pipelines can't directly access parent artifacts
 
-## Resource Management
+Resource Management
 
 Control pipeline resources with child pipelines.
 

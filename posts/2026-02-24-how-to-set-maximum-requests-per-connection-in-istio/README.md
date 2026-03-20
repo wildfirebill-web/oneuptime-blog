@@ -184,6 +184,7 @@ Track connection creation to see how often recycling happens:
 
 ```bash
 # Check total connections created over time
+
 kubectl exec deploy/order-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "cx_total"
 

@@ -42,6 +42,7 @@ Start by creating the private endpoint in the same region as your SQL Database.
 
 ```bash
 # Create a private endpoint for Azure SQL Database
+
 az network private-endpoint create \
   --name sql-private-endpoint \
   --resource-group myResourceGroup \

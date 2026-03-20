@@ -44,6 +44,7 @@ If you already have an Application Gateway, skip to Step 3. Otherwise, we need t
 
 ```bash
 # Create a resource group
+
 az group create --name rg-waf-demo --location eastus
 
 # Create a VNet

@@ -45,6 +45,7 @@ If your VMs currently have public IPs and you want to tighten things up, remove 
 
 ```bash
 # Remove the external IP from an existing VM
+
 gcloud compute instances delete-access-config my-vm \
     --access-config-name="external-nat" \
     --zone=us-central1-a \

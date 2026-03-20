@@ -383,6 +383,7 @@ Use `cargo expand` to see what your macros generate.
 
 ```bash
 # Install cargo-expand
+
 cargo install cargo-expand
 
 # View expanded code

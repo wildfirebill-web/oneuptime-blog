@@ -44,6 +44,7 @@ The following script retrieves the SQL Server resource ID and creates a Private 
 
 ```bash
 # Get the resource ID of the Azure SQL Server
+
 SQL_SERVER_ID=$(az sql server show \
   --resource-group myResourceGroup \
   --name mysqlserver \

@@ -119,6 +119,7 @@ SHOW STATUS LIKE 'Aborted%';
 
 ```python
 # connection_diagnostics.py - Monitor connection pool health
+
 import logging
 from sqlalchemy import create_engine, event, text
 from sqlalchemy.pool import QueuePool

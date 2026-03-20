@@ -62,6 +62,7 @@ Configure the collector with the PostgreSQL receiver. This scrapes standard Post
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Built-in PostgreSQL receiver for core database metrics
   postgresql:

@@ -8,7 +8,7 @@ Description: Completely reset Portainer to factory defaults by removing and recr
 
 ## Introduction
 
-Sometimes the best solution is to start fresh — whether you've lost the admin password, the database is corrupt, you've inherited a misconfigured instance, or you simply want a clean slate. Resetting Portainer to factory defaults means removing its database and starting over. Your actual Docker containers and volumes are completely unaffected.
+Sometimes the best solution is to start fresh - whether you've lost the admin password, the database is corrupt, you've inherited a misconfigured instance, or you simply want a clean slate. Resetting Portainer to factory defaults means removing its database and starting over. Your actual Docker containers and volumes are completely unaffected.
 
 ## Important: What Reset Does and Doesn't Affect
 
@@ -28,7 +28,7 @@ Sometimes the best solution is to start fresh — whether you've lost the admin 
 - Docker volumes (data)
 - Docker networks
 - Compose files stored on disk (if you have them backed up)
-- The actual workloads — everything keeps running
+- The actual workloads - everything keeps running
 
 ## Step 1: Export Important Data First (Optional)
 
@@ -36,6 +36,7 @@ Before resetting, export what you want to preserve:
 
 ```bash
 # Export stack compose files via API
+
 TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"Username":"admin","Password":"yourpassword"}' | jq -r .jwt)
@@ -88,7 +89,7 @@ docker ps -a | grep portainer
 ## Step 4: Remove the Data Volume
 
 ```bash
-# This is the reset step — removes all Portainer configuration
+# This is the reset step - removes all Portainer configuration
 docker volume rm portainer_data
 
 # Verify it's removed
@@ -98,7 +99,7 @@ docker volume ls | grep portainer
 ## Step 5: Recreate Portainer
 
 ```bash
-# Fresh installation — Portainer will create a new empty database
+# Fresh installation - Portainer will create a new empty database
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
@@ -112,7 +113,7 @@ docker run -d \
 # Create your admin account
 ```
 
-## Step 6: Alternative — Reset Without Losing Volume
+## Step 6: Alternative - Reset Without Losing Volume
 
 If you want to reset Portainer settings but keep the volume for a potential restore:
 
@@ -130,7 +131,7 @@ docker run --rm \
   -v portainer_data:/data \
   alpine ls -la /data/
 
-# Start Portainer — it initializes a fresh database
+# Start Portainer - it initializes a fresh database
 docker start portainer
 ```
 
@@ -228,4 +229,4 @@ done
 
 ## Conclusion
 
-Resetting Portainer to factory defaults is safe for your actual workloads — containers, volumes, and images are completely unaffected. The reset only removes Portainer's management database. The process is: stop the container, remove the data volume, and restart. To avoid the 5-minute initialization window in automated environments, use the `--admin-password` flag at startup.
+Resetting Portainer to factory defaults is safe for your actual workloads - containers, volumes, and images are completely unaffected. The reset only removes Portainer's management database. The process is: stop the container, remove the data volume, and restart. To avoid the 5-minute initialization window in automated environments, use the `--admin-password` flag at startup.

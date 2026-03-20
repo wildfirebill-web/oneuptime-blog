@@ -32,6 +32,7 @@ Before creating exclusion rules, you need to identify which WAF rules are trigge
 
 ```bash
 # Set WAF to Detection mode to log without blocking
+
 az network application-gateway waf-config set \
   --resource-group rg-appgw \
   --gateway-name appgw-main \

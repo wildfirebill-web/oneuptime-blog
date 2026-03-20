@@ -79,6 +79,7 @@ Effective policies are specific, measurable, and enforceable. Vague guidelines l
 
 ```yaml
 # cost-governance-policy.yaml
+
 apiVersion: governance/v1
 kind: CostPolicy
 metadata:

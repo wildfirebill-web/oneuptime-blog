@@ -178,6 +178,7 @@ If the monolith makes HTTP calls internally, configure it to call the user-servi
 
 ```python
 # Before: internal function call
+
 user = get_user_from_database(user_id)
 
 # After: HTTP call through the mesh

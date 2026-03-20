@@ -114,6 +114,7 @@ Check for drift using the Argo CD CLI:
 
 ```bash
 # Check sync status
+
 argocd app get istio-config
 
 # See detailed diff

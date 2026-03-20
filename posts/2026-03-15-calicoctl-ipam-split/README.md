@@ -69,6 +69,7 @@ When running across multiple availability zones, split IP pools to assign ranges
 
 ```bash
 # Split the main pool into 4 parts (must be a power of 2), then use 3 for 3 availability zones
+
 calicoctl ipam split 4 --cidr=10.244.0.0/16
 ```
 

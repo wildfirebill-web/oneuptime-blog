@@ -22,6 +22,7 @@ Start by defining an XRD that abstracts a PostgreSQL database. This example crea
 
 ```yaml
 # xrd-postgres-database.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:

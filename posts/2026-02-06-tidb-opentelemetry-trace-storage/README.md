@@ -41,6 +41,7 @@ For a production trace storage setup, you will want at least a three-node TiKV c
 
 ```yaml
 # tidb-topology.yaml
+
 # TiDB cluster topology for trace storage workload
 global:
   user: "tidb"

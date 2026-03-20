@@ -26,6 +26,7 @@ kubectl get pods -n calico-system -l k8s-app=calico-apiserver
 
 kubectl logs -n calico-system -l k8s-app=calico-apiserver | tail -20
 # Expected: No error messages; server startup logs visible
+
 ```
 
 ## Validation 2: API Service Registration

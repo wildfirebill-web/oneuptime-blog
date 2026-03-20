@@ -37,6 +37,7 @@ Getting ClickHouse running is straightforward. The following Docker command star
 
 ```bash
 # Start ClickHouse with persistent storage
+
 docker run -d \
   --name clickhouse \
   -p 8123:8123 \

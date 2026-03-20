@@ -42,6 +42,7 @@ Using Azure CLI:
 
 ```bash
 # Enable Defender for Containers on a subscription
+
 # This covers all AKS clusters in the subscription
 az security pricing create \
   --name Containers \

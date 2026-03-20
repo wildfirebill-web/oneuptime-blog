@@ -36,6 +36,7 @@ flowchart LR
 
 ```yaml
 # local-registry.yaml
+
 # Deploy a local container registry accessible from Kind
 apiVersion: v1
 kind: Pod

@@ -1,8 +1,8 @@
-# How to Plan Cluster Topology in Rancher
+# How to Plan Cluster Topology in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, cluster-topology, architecture, kubernetes, planning
+Tags: Rancher, Cluster-topology, Architecture, Kubernetes, Planning
 
 Description: Guide to planning optimal cluster topology in Rancher for workload isolation, compliance, and cost efficiency.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

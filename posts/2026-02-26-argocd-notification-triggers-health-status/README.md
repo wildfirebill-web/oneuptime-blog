@@ -254,6 +254,7 @@ Test your health triggers by deliberately causing a health change:
 
 ```bash
 # Scale a deployment to zero to trigger Missing/Degraded
+
 kubectl scale deployment my-app --replicas=0 -n my-namespace
 
 # Watch notification controller logs

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, VPN, Networking, IPv4, On-Premises, Site-to-Site VPN
+Tags: AWS, VPN, Networking, IPv4, On-Premise, Site-to-Site VPN
 
 Description: Learn how to configure a Site-to-Site VPN connection between an AWS VPC and an on-premises network using IPv4, enabling secure private connectivity.
 

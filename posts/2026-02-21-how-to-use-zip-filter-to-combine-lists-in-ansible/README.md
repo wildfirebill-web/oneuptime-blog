@@ -16,6 +16,7 @@ Here is the simplest case, combining two lists element by element:
 
 ```yaml
 # playbook-basic-zip.yml
+
 # Pairs up two parallel lists: server names and their IP addresses
 - name: Basic zip example
   hosts: localhost

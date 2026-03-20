@@ -20,6 +20,7 @@ Compare basic image properties:
 
 ```bash
 # Compare sizes
+
 echo "Image 1:"
 docker image inspect myapp:v1 --format "Size: {{.Size}} bytes ({{len .RootFS.Layers}} layers)"
 echo "Image 2:"

@@ -187,6 +187,7 @@ Set the gRPC server port in your Spring Boot configuration file.
 
 ```yaml
 # src/main/resources/application.yml
+
 grpc:
   server:
     port: 9090  # gRPC listens on this port

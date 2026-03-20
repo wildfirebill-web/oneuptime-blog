@@ -1,8 +1,8 @@
-# How to Configure cert-manager in Rancher
+# How to Configure cert-manager in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, cert-manager, TLS, Certificates, Let's Encrypt
+Tags: Rancher, Kubernetes, Cert-Manager, TLS, Certificates, Let's Encrypt
 
 Description: Deploy and configure cert-manager in Rancher to automatically provision and renew TLS certificates from Let's Encrypt, Vault, and other certificate authorities.
 
@@ -21,6 +21,7 @@ cert-manager is a Kubernetes add-on that automates the management and issuance o
 
 ```bash
 # Add Jetstack Helm repository
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

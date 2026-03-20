@@ -1,4 +1,4 @@
-# How to Handle Complex Variable Types in OpenTofu
+# How to Handle Complex Variable Types in OpenTofu - Handle
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to handle complex variable types in OpenTofu, including o
 
 ---
 
-OpenTofu supports rich type constraints that let you define variables with structured, nested shapes. Complex types — objects, tuples, lists of objects, and maps of objects — make your configurations self-documenting and catch mismatches early during `tofu validate`.
+OpenTofu supports rich type constraints that let you define variables with structured, nested shapes. Complex types - objects, tuples, lists of objects, and maps of objects - make your configurations self-documenting and catch mismatches early during `tofu validate`.
 
 ---
 
@@ -179,6 +179,7 @@ Pass complex values using HCL syntax in a `.tfvars` file:
 
 ```hcl
 # terraform.tfvars
+
 database_config = {
   engine         = "postgres"
   engine_version = "15.4"

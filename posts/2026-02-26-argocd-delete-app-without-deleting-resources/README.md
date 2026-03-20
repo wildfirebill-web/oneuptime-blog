@@ -45,6 +45,7 @@ The most reliable way to delete an Application without affecting its resources i
 
 ```bash
 # Step 1: Remove the finalizer from the Application
+
 kubectl patch application my-app -n argocd \
   --type json \
   -p '[{"op": "remove", "path": "/metadata/finalizers"}]'

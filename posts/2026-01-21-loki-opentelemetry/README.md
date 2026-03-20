@@ -116,6 +116,7 @@ server:
   grpc_listen_port: 9096
 
 # Enable OTLP ingestion
+
 distributor:
   otlp_config:
     default_labels_enabled:

@@ -46,6 +46,7 @@ Verify that Prometheus has targets for Istio:
 ```bash
 kubectl port-forward -n monitoring svc/prometheus 9090:9090
 # Then visit http://localhost:9090/targets and look for istio-related targets
+
 ```
 
 ## Check Key Istio Metrics

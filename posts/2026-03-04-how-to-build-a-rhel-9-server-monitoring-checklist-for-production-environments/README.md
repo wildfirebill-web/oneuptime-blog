@@ -43,6 +43,7 @@ A monitoring checklist ensures you have visibility into RHEL 9 server health and
 
 ```bash
 # CPU and load
+
 uptime
 mpstat 1 5
 sar -u 1 5

@@ -38,6 +38,7 @@ Verify your ArgoCD installation includes the ApplicationSet controller.
 
 ```bash
 # Check if the ApplicationSet controller is running
+
 kubectl get pods -n argocd | grep applicationset
 
 # Expected output:

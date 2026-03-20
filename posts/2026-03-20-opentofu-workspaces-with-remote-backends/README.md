@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Workspaces, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Workspaces, Backend
 
 Description: Learn how OpenTofu workspaces interact with remote backends like S3, GCS, and Azure Blob Storage, and how state is organized per workspace.
 
@@ -23,7 +23,7 @@ terraform {
 ```
 
 State file locations per workspace:
-```
+```text
 s3://acme-tofu-state/
 ├── infrastructure/terraform.tfstate           ← default workspace
 └── infrastructure/env:/
@@ -45,7 +45,7 @@ terraform {
 ```
 
 Results in:
-```
+```text
 s3://acme-tofu-state/
 └── workspaces/
     ├── staging/infrastructure/terraform.tfstate
@@ -64,7 +64,7 @@ terraform {
 ```
 
 State files in GCS:
-```
+```text
 gs://acme-tofu-state/
 ├── infrastructure/default.tfstate            ← default workspace
 ├── infrastructure/staging.tfstate
@@ -87,7 +87,7 @@ terraform {
 ```
 
 Azure blob names per workspace:
-```
+```text
 container: tfstate
 ├── infrastructure.tfstate              ← default workspace
 ├── infrastructure.tfstateenv:staging
@@ -111,6 +111,7 @@ FROM terraform_state;
 
 ```bash
 # List all workspace state files
+
 aws s3 ls --recursive s3://acme-tofu-state/infrastructure/
 
 # Output:

@@ -275,6 +275,7 @@ You can also manage triggers from the command line:
 
 ```bash
 # List all job triggers in a project
+
 gcloud dlp job-triggers list --project=PROJECT_ID
 
 # Describe a specific trigger

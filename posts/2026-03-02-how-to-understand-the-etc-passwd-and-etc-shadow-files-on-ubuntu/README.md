@@ -16,6 +16,7 @@ Despite its name, `/etc/passwd` doesn't store passwords (those moved to `/etc/sh
 
 ```bash
 # View the passwd file
+
 cat /etc/passwd
 
 # Or view with line numbers for reference

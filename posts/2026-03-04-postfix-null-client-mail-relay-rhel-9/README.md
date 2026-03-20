@@ -41,6 +41,7 @@ graph LR
 
 ```bash
 # Install postfix if not already present
+
 sudo dnf install -y postfix
 ```
 

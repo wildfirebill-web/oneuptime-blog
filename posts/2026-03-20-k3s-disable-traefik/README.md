@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Traefik, Ingress, NGINX
+Tags: K3s, Kubernetes, Rancher, Traefik, Ingress, Nginx
 
 Description: Learn how to disable the default Traefik ingress controller in K3s and replace it with an alternative like NGINX Ingress Controller.
 
@@ -20,6 +20,7 @@ sudo mkdir -p /etc/rancher/k3s
 sudo tee /etc/rancher/k3s/config.yaml > /dev/null <<EOF
 token: "ClusterToken"
 # Disable Traefik during installation
+
 disable:
   - traefik
 EOF

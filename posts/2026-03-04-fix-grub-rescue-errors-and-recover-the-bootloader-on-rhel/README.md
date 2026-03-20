@@ -16,6 +16,7 @@ At the `grub rescue>` prompt:
 
 ```bash
 # List available partitions
+
 grub rescue> ls
 
 # Try each partition to find the one with /boot

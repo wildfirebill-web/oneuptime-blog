@@ -24,6 +24,7 @@ The companion tool `csysdig` provides an ncurses-based interactive UI, while `fa
 
 ```bash
 # Add the Sysdig repository
+
 curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
 ```
 

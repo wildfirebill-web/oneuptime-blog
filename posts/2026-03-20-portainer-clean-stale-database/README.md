@@ -1,4 +1,4 @@
-# How to Clean Up Stale Data in the Portainer Database
+# How to Clean Up Stale Data in the Portainer Database - Stale
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ The main sources of database growth:
 
 ```bash
 # Size of the Portainer database file
+
 docker exec portainer du -sh /data/portainer.db
 
 # Or from outside the container
@@ -61,7 +62,7 @@ Stale Docker resources (stopped containers, dangling images, unused volumes) inc
 # Remove stopped containers, unused networks, dangling images, build cache
 docker system prune -f
 
-# Also remove unused volumes (careful — ensure no data is needed)
+# Also remove unused volumes (careful - ensure no data is needed)
 docker volume prune -f
 
 # Remove unused images (not just dangling)

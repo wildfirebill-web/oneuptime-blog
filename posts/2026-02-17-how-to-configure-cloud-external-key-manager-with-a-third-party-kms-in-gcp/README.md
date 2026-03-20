@@ -59,6 +59,7 @@ Each provider has its own setup guide for the EKM integration. The provider gene
 
 ```bash
 # Enable the Cloud KMS API
+
 gcloud services enable cloudkms.googleapis.com --project=my-project-id
 ```
 

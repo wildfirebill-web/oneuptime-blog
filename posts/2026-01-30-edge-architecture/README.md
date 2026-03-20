@@ -188,6 +188,7 @@ The following script installs K3s with sensible defaults for edge deployment. It
 ```bash
 #!/bin/bash
 # Install K3s agent on edge node
+
 # This joins the node to a central K3s server
 
 # Set these variables for your environment

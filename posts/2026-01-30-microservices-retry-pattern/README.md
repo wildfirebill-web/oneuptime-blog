@@ -18,6 +18,7 @@ Consider a simple HTTP call to a payment service:
 
 ```python
 # Without retry logic - brittle and unreliable
+
 def process_payment(order_id, amount):
     response = requests.post(
         "https://payment-service/charge",

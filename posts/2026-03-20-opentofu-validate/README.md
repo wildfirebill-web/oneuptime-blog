@@ -16,6 +16,7 @@ Description: Learn how to use tofu validate to check OpenTofu configuration for 
 tofu validate
 
 # Success:
+
 # Success! The configuration is valid.
 
 # Error:
@@ -85,7 +86,7 @@ tofu init -backend=false  # Skip backend, just download providers
 tofu validate
 ```
 
-The `-backend=false` flag initializes providers without configuring a backend — useful for validation in CI before backend credentials are available.
+The `-backend=false` flag initializes providers without configuring a backend - useful for validation in CI before backend credentials are available.
 
 ## Pre-Commit Hook
 
@@ -129,4 +130,4 @@ done
 
 ## Conclusion
 
-`tofu validate` is a fast, safe check that catches configuration errors without touching infrastructure or state. Run it as the first step in your CI/CD pipeline after `tofu init -backend=false`. Use `-json` output for programmatic parsing in pipelines. It will not catch all errors — provider-specific validation happens at plan time — but it eliminates common syntax and structural mistakes before you pay for a full plan run.
+`tofu validate` is a fast, safe check that catches configuration errors without touching infrastructure or state. Run it as the first step in your CI/CD pipeline after `tofu init -backend=false`. Use `-json` output for programmatic parsing in pipelines. It will not catch all errors - provider-specific validation happens at plan time - but it eliminates common syntax and structural mistakes before you pay for a full plan run.

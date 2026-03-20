@@ -33,6 +33,7 @@ Flux uses Kustomization custom resources to track and apply configurations:
 
 ```yaml
 # flux-system/apps-kustomization.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

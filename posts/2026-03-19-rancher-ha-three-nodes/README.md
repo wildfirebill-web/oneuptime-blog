@@ -189,6 +189,7 @@ To verify high availability, you can simulate a node failure by shutting down on
 
 ```bash
 # On one of the nodes
+
 sudo systemctl stop k3s
 ```
 

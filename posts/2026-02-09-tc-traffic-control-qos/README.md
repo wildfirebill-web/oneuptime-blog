@@ -24,6 +24,7 @@ Most Linux distributions include tc in the iproute2 package:
 
 ```bash
 # Install on Ubuntu/Debian
+
 apt-get update && apt-get install -y iproute2
 
 # Install on RHEL/CentOS

@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # RDS instance with Performance Insights enabled
+
 resource "aws_db_instance" "with_pi" {
   identifier     = "pi-enabled-postgres"
   engine         = "postgres"

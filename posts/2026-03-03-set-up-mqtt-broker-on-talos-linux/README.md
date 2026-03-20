@@ -31,6 +31,7 @@ Mosquitto is the most popular lightweight MQTT broker, perfect for small to medi
 
 ```yaml
 # mosquitto-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

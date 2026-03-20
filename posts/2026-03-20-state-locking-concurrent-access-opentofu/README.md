@@ -30,7 +30,8 @@ sequenceDiagram
 ## DynamoDB Lock Table
 
 ```hcl
-# The LockID is the S3 state path — DynamoDB uses it as the partition key
+# The LockID is the S3 state path - DynamoDB uses it as the partition key
+
 resource "aws_dynamodb_table" "state_lock" {
   name         = "tofu-state-lock"
   billing_mode = "PAY_PER_REQUEST"
@@ -123,7 +124,7 @@ tofu plan -lock=false    # OK for read-only plan in CI that shows plans only
 tofu output -lock=false  # Safe for reading outputs
 
 # NEVER skip locking for apply
-# tofu apply -lock=false  # Dangerous — never do this
+# tofu apply -lock=false  # Dangerous - never do this
 ```
 
 ## Monitoring Stale Locks with CloudWatch
@@ -143,15 +144,15 @@ resource "aws_cloudwatch_metric_alarm" "stale_lock" {
     TableName = aws_dynamodb_table.state_lock.name
   }
 
-  alarm_description = "A lock has been held for over an hour — may be stale"
+  alarm_description = "A lock has been held for over an hour - may be stale"
   alarm_actions     = [aws_sns_topic.alerts.arn]
 }
 ```
 
 ## Best Practices
 
-- Never use `tofu force-unlock` without first confirming no other process is running — check CI/CD job status and running pipelines first.
+- Never use `tofu force-unlock` without first confirming no other process is running - check CI/CD job status and running pipelines first.
 - Set `-lock-timeout` in CI/CD to wait for locks rather than failing immediately, reducing flaky pipeline runs.
-- Use pay-per-request billing on the lock table — lock operations are infrequent and don't benefit from provisioned capacity.
-- Enable DynamoDB TTL as a safety net for locks from processes that crash — set TTL to 2-4 hours beyond the maximum expected apply duration.
-- Alert on locks older than 1 hour — legitimate applies rarely take that long, and a stale lock may indicate a crashed process.
+- Use pay-per-request billing on the lock table - lock operations are infrequent and don't benefit from provisioned capacity.
+- Enable DynamoDB TTL as a safety net for locks from processes that crash - set TTL to 2-4 hours beyond the maximum expected apply duration.
+- Alert on locks older than 1 hour - legitimate applies rarely take that long, and a stale lock may indicate a crashed process.

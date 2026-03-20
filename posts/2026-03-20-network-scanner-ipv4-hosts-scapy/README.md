@@ -9,8 +9,8 @@ Description: Learn how to build a network scanner that discovers live IPv4 hosts
 ## Network Discovery Methods
 
 Two primary approaches for discovering live hosts:
-1. **ARP Scan** — works only on the local subnet; fast and reliable
-2. **ICMP Ping Sweep** — works across routed networks; may be blocked by firewalls
+1. **ARP Scan** - works only on the local subnet; fast and reliable
+2. **ICMP Ping Sweep** - works across routed networks; may be blocked by firewalls
 
 ## Method 1: ARP Host Discovery (Local Subnet)
 

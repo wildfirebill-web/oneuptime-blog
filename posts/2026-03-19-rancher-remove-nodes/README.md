@@ -20,6 +20,7 @@ First, identify the node and understand what is running on it:
 
 ```bash
 # List all nodes with roles
+
 kubectl get nodes -o wide
 
 # Check what pods are running on the target node

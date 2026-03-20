@@ -14,6 +14,7 @@ Nginx as a reverse proxy accepts client requests and forwards them to backend se
 
 ```nginx
 # /etc/nginx/sites-available/app
+
 server {
     listen 80;
     server_name app.example.com;

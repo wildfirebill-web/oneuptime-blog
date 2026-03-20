@@ -39,6 +39,7 @@ The simplest usage replaces variables with environment variable values:
 
 ```bash
 # Set environment variables
+
 export APP_NAME="my-web-app"
 export APP_IMAGE="nginx"
 export APP_TAG="1.25"

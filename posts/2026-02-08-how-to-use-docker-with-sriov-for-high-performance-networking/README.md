@@ -41,6 +41,7 @@ Check if your NIC supports SR-IOV:
 
 ```bash
 # Check if the NIC supports SR-IOV
+
 lspci -vvv | grep -i "single root"
 
 # Find your network interface name

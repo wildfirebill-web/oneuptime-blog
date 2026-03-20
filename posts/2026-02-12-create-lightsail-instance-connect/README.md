@@ -37,6 +37,7 @@ List what's available.
 
 ```bash
 # List all active OS-only blueprints
+
 aws lightsail get-blueprints \
   --query 'blueprints[?isActive==`true` && type==`os`].{Id: blueprintId, Name: name, Description: description}' \
   --output table

@@ -36,6 +36,7 @@ Analyze the entire bucket.
 
 ```bash
 # Enable storage class analysis for the whole bucket
+
 aws s3api put-bucket-analytics-configuration \
   --bucket my-data-bucket \
   --id entire-bucket-analysis \

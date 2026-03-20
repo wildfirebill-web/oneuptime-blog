@@ -16,6 +16,7 @@ Environment variables are the primary way to configure Docker containers. They c
 
 ```bash
 # Single variable
+
 docker run -e DATABASE_URL=postgres://localhost/db myapp
 
 # Multiple variables

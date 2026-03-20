@@ -46,6 +46,7 @@ Let's start with a Node.js Cloud Function that handles HTTP requests. First, set
 
 ```bash
 # Create a new function directory
+
 mkdir my-cloud-function && cd my-cloud-function
 npm init -y
 

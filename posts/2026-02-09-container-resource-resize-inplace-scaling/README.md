@@ -79,6 +79,7 @@ Apply this pod, then scale CPU in-place:
 
 ```bash
 # Apply the pod
+
 kubectl apply -f web-server.yaml
 
 # Wait for it to be running

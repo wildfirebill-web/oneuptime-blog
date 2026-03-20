@@ -174,6 +174,7 @@ sudo podman run -d --name vol-test \
   /bin/sh -c 'while true; do date >> /data/log.txt; sleep 1; done'
 
 # Let it run for a few seconds
+
 sleep 5
 
 sudo podman container checkpoint vol-test

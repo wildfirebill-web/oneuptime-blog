@@ -57,6 +57,7 @@ The local path provisioner watches for PersistentVolumeClaim (PVC) resources and
 
 ```yaml
 # Check the default storage class
+
 # This command shows the built-in local-path storage class
 apiVersion: storage.k8s.io/v1
 kind: StorageClass

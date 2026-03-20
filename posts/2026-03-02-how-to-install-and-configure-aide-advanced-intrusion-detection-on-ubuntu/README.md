@@ -26,6 +26,7 @@ sudo apt-get update
 sudo apt-get install -y aide aide-common
 
 # Verify installation
+
 aide --version
 ```
 

@@ -23,6 +23,7 @@ In multi-cluster environments, IPAM configuration must be consistent to prevent 
 ```bash
 #!/bin/bash
 # configure-ipam-fleet.sh
+
 # Applies consistent IPAM configuration across clusters
 
 STRICT_AFFINITY="${1:-true}"

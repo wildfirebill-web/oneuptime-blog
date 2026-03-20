@@ -20,6 +20,7 @@ Ansible expects roles to live inside a `roles/` directory relative to your playb
 
 ```bash
 # Create the minimal directory structure for a role
+
 mkdir -p roles/webserver/tasks
 mkdir -p roles/webserver/handlers
 mkdir -p roles/webserver/templates

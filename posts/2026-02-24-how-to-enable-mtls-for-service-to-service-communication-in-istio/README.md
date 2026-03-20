@@ -26,6 +26,7 @@ Verify this:
 
 ```bash
 # Check if auto mTLS is on
+
 kubectl get configmap istio -n istio-system -o jsonpath='{.data.mesh}' | grep enableAutoMtls
 
 # Check current PeerAuthentication policies

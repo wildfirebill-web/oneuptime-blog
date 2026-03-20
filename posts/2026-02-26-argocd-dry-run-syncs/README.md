@@ -32,6 +32,7 @@ The ArgoCD CLI supports a `--dry-run` flag on the sync command:
 
 ```bash
 # Dry-run sync - shows what would change without applying
+
 argocd app sync my-app --dry-run
 
 # Dry-run with specific resources

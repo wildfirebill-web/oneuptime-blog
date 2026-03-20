@@ -14,6 +14,7 @@ The RabbitMQ management plugin provides a web UI and REST API on port 15672. By 
 
 ```bash
 # Enable the management plugin
+
 sudo rabbitmq-plugins enable rabbitmq_management
 
 # Restart to apply

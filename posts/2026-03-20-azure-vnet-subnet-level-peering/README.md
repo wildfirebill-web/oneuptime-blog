@@ -20,7 +20,7 @@ Azure VNet peering connects two virtual networks so resources in each can commun
 
 Peered VNets must not have overlapping CIDR blocks:
 
-```
+```text
 VNet A: 10.1.0.0/16
   - Subnet A1: 10.1.1.0/24
   - Subnet A2: 10.1.2.0/24
@@ -31,10 +31,11 @@ VNet B: 10.2.0.0/16
 
 ## Creating VNet Peering with Azure CLI
 
-Peering is bidirectional — you must create a peering link from A to B AND from B to A:
+Peering is bidirectional - you must create a peering link from A to B AND from B to A:
 
 ```bash
 # Peer VNet A to VNet B
+
 az network vnet peering create \
   --name "vnetA-to-vnetB" \
   --resource-group rg-network \

@@ -30,6 +30,7 @@ First, verify that your server has IPv6 enabled and configured:
 
 ```bash
 # Check if IPv6 is enabled on the system
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 ```
 

@@ -48,6 +48,7 @@ The cleanest approach is to not manage the autoscaler-controlled fields in Git a
 
 ```yaml
 # deployment.yaml - No replicas field, no resource requests
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

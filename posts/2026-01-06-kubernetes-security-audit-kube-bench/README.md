@@ -29,6 +29,7 @@ Running kube-bench as a Kubernetes Job is the simplest method for most clusters.
 
 ```bash
 # Apply the kube-bench job manifest from the official repository
+
 # This creates a job that runs security checks on the node where it's scheduled
 kubectl apply -f https://raw.githubusercontent.com/aquasecurity/kube-bench/main/job.yaml
 

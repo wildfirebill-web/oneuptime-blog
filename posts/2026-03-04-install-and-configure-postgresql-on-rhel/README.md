@@ -14,6 +14,7 @@ PostgreSQL is a powerful open-source relational database available in the defaul
 
 ```bash
 # Install PostgreSQL server and client
+
 sudo dnf install -y postgresql-server postgresql-contrib
 
 # Check the installed version

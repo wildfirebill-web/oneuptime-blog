@@ -1,8 +1,8 @@
-# How to Configure Progressive Delivery with Flagger on Rancher
+# How to Configure Progressive Delivery with Flagger on Rancher (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, flagger, progressive-delivery, canary, deployment, kubernetes
+Tags: Rancher, Flagger, Progressive-delivery, Canary, Deployment, Kubernetes
 
 Description: A guide to setting up progressive delivery with Flagger on Rancher-managed clusters for automated canary deployments, A/B testing, and blue-green deployments.
 
@@ -18,6 +18,7 @@ Flagger uses Kubernetes custom resources to automate the promotion or rollback o
 
 ```bash
 # Install Flagger with Helm
+
 helm repo add flagger https://flagger.app
 helm repo update
 
@@ -182,7 +183,7 @@ kubectl -n production describe canary webapp
 
 Output shows progressive traffic shifting:
 
-```
+```text
 webapp   Progressing   10      0/5     webapp.production   waiting for approval
 webapp   Progressing   20      0/5     webapp.production   advancement confirmed, advancing weight 20
 webapp   Progressing   30      0/5     webapp.production   advancement confirmed, advancing weight 30

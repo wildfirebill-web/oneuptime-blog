@@ -1,4 +1,4 @@
-# How to Implement Namespace-Based Multi-Tenancy in Portainer for Kubernetes
+# How to Implement Namespace-Based Multi-Tenancy in Portainer for Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # Create namespaces for each tenant
+
 kubectl create namespace team-a
 kubectl create namespace team-b
 kubectl create namespace shared-infra
@@ -85,7 +86,7 @@ In Portainer, configure which teams can see which namespaces:
 2. Click the namespace name.
 3. Under **Access management**, enable **Restrict access to namespace** and add Team A.
 
-This ensures Team A users only see the `team-a` namespace in the Portainer UI — all other namespaces are hidden.
+This ensures Team A users only see the `team-a` namespace in the Portainer UI - all other namespaces are hidden.
 
 ## Step 4: Apply ResourceQuotas per Namespace
 
@@ -152,7 +153,7 @@ kubectl get pods -n team-b
 # Should return: Error from server (Forbidden)
 
 kubectl get pods -n team-a
-# Should work — shows Team A's pods
+# Should work - shows Team A's pods
 ```
 
 In Portainer's Kubernetes view, Team A users see only the `team-a` namespace in the namespace dropdown.

@@ -40,6 +40,7 @@ Sealed Secrets encrypts Kubernetes Secrets using a cluster-specific key. The enc
 
 ```yaml
 # applications/sealed-secrets.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

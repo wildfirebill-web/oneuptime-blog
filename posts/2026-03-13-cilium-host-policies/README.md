@@ -87,6 +87,7 @@ spec:
 
 ```bash
 # Verify policy is applied to nodes
+
 kubectl describe ciliumclusterwidenetworkpolicy host-policy-nodes
 
 # Check host endpoint state in Cilium

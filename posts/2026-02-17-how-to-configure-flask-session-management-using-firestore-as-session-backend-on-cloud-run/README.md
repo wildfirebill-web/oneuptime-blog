@@ -20,6 +20,7 @@ Install the required packages.
 
 ```bash
 # Install Flask and the Firestore client
+
 pip install flask google-cloud-firestore flask-session
 ```
 

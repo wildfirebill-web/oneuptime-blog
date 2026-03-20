@@ -35,6 +35,7 @@ Azure Service Bus tracks how many times each message has been delivered. When a 
 
 ```bash
 # Set the max delivery count when creating or updating a queue
+
 az servicebus queue create \
   --name orders \
   --namespace-name my-servicebus \

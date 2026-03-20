@@ -1207,6 +1207,7 @@ Test your application in a container environment:
 # test-shutdown.sh
 
 # Build the container
+
 docker build -t go-graceful-test .
 
 # Run the container

@@ -182,6 +182,7 @@ def estimate_potential_savings(instance_type, on_demand_hours, ri_discount=0.40)
 
 
 # Example usage
+
 if __name__ == '__main__':
     # Fetch coverage data for the last 30 days
     coverage = get_ri_coverage(days_back=30)

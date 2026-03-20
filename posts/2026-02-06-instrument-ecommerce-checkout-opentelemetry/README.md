@@ -390,6 +390,7 @@ All these services send telemetry to an OpenTelemetry Collector that processes a
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

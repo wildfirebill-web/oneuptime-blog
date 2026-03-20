@@ -71,6 +71,7 @@ sequenceDiagram
 
 ```bash
 # List all EndpointSlices for a service
+
 kubectl get endpointslices -n production -l kubernetes.io/service-name=web-app
 
 # Example output for a service with 250 pods:

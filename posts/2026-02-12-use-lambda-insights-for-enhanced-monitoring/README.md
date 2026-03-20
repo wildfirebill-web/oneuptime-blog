@@ -41,6 +41,7 @@ Using the AWS CLI:
 
 ```bash
 # Step 1: Add the Lambda Insights layer to your function
+
 # The layer ARN varies by region - this is for us-east-1
 aws lambda update-function-configuration \
   --function-name my-function \

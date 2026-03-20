@@ -37,6 +37,7 @@ For PostgreSQL:
 
 ```bash
 # Enable logical replication on Cloud SQL PostgreSQL
+
 gcloud sql instances patch my-postgres-instance \
   --database-flags=cloudsql.logical_decoding=on
 

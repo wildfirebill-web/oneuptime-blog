@@ -20,6 +20,7 @@ The first place to look is always the container logs:
 
 ```bash
 # Check the logs of the crashed container
+
 podman logs my-crashing-app
 
 # Get the last 50 lines

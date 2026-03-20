@@ -38,6 +38,7 @@ Head sampling makes decisions at trace creation time, before any spans are gener
 
 ```python
 # Python SDK head sampling configuration
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import (

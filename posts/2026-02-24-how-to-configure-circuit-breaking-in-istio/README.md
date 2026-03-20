@@ -157,6 +157,7 @@ Apply it:
 kubectl apply -f catalog-destination-rule.yaml
 
 # Verify it was applied
+
 kubectl get destinationrule catalog-service -n production -o yaml
 ```
 

@@ -16,6 +16,7 @@ Before changing anything, understand what defaults Multipass uses:
 
 ```bash
 # Check current defaults
+
 multipass get local.cpus    # default: 1
 multipass get local.memory  # default: 1G
 multipass get local.disk    # default: 5G
@@ -215,7 +216,7 @@ multipass exec myvm -- bash -c "
 "
 ```
 
-## Resource Planning Guidelines
+Resource Planning Guidelines
 
 Based on common workload types:
 

@@ -68,6 +68,7 @@ Here is a minimal action plugin skeleton:
 
 ```python
 # action_plugins/my_action.py
+
 from ansible.plugins.action import ActionBase
 from ansible.errors import AnsibleError
 

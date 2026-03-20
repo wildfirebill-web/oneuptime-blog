@@ -29,6 +29,7 @@ Jenkins is the leading open-source automation server for continuous integration 
 
 ```bash
 # Update system
+
 sudo apt update
 
 # Install Java 17

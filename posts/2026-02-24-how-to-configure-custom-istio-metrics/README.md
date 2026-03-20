@@ -117,6 +117,7 @@ Now you can track error rates and latency per tenant:
 
 ```promql
 # Error rate by tenant
+
 sum(rate(istio_requests_total{
   response_code=~"5..",
   destination_workload="order-service"

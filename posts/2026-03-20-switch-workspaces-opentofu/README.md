@@ -1,4 +1,4 @@
-# How to Switch Between Workspaces in OpenTofu
+# How to Switch Between Workspaces in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ After creating multiple workspaces, you need to switch between them to plan and 
 
 ```bash
 # Switch to the production workspace
+
 tofu workspace select production
 
 # Output:
@@ -166,4 +167,4 @@ tofu workspace show
 
 ## Conclusion
 
-`tofu workspace select` is the mechanism for navigating between infrastructure environments. Build safe workflows around it — verify the target workspace before running destructive operations, use workspace-aware configurations to prevent mismatches, and implement confirmation prompts for production workspace operations in your scripts. Always be explicit about which workspace you're operating on to avoid accidental changes to the wrong environment.
+`tofu workspace select` is the mechanism for navigating between infrastructure environments. Build safe workflows around it - verify the target workspace before running destructive operations, use workspace-aware configurations to prevent mismatches, and implement confirmation prompts for production workspace operations in your scripts. Always be explicit about which workspace you're operating on to avoid accidental changes to the wrong environment.

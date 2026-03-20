@@ -44,6 +44,7 @@ Fargate task state changes are published to Amazon EventBridge. You can create r
 
 ```bash
 # Create the notification topic
+
 aws sns create-topic \
   --name fargate-task-retirements
 

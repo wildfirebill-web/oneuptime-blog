@@ -14,6 +14,7 @@ AWS Lambda lets you run code without provisioning servers. OpenTofu makes it str
 
 ```hcl
 # Archive the function source code into a ZIP file
+
 data "archive_file" "lambda" {
   type        = "zip"
   source_dir  = "${path.module}/src"

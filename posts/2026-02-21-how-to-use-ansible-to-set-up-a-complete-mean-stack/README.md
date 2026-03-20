@@ -14,6 +14,7 @@ The MEAN stack (MongoDB, Express.js, Angular, Node.js) is a JavaScript-only stac
 
 ```yaml
 # inventories/production/group_vars/all.yml
+
 nodejs_version: "20"
 mongodb_version: "7.0"
 

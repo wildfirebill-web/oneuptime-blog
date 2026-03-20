@@ -20,6 +20,7 @@ A PriorityClass assigns a numeric priority value to pods. The Kubernetes schedul
 
 ```yaml
 # clusters/my-cluster/flux-system/flux-priority-class.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:

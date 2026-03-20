@@ -39,6 +39,7 @@ Create a new key with rotation configured from the start:
 
 ```bash
 # Create a symmetric key with 90-day rotation
+
 gcloud kms keys create app-encryption-key \
   --keyring=my-app-keyring \
   --location=us-central1 \

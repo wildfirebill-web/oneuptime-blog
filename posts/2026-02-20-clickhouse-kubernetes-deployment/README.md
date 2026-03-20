@@ -49,6 +49,7 @@ Before deploying ClickHouse on Kubernetes, make sure you have:
 
 ```bash
 # Verify your cluster is ready
+
 # Check that nodes are in Ready state
 kubectl get nodes
 

@@ -187,6 +187,7 @@ import time
 from functools import wraps
 
 # Define custom bucket boundaries through views
+
 latency_view = View(
     instrument_name="http_request_duration_ms",
     aggregation=ExplicitBucketHistogramAggregation(

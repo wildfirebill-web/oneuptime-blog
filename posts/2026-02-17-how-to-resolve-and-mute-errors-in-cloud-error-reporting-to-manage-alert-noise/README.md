@@ -54,6 +54,7 @@ For automation or bulk operations, use the Error Reporting API:
 
 ```python
 # Resolve an error group using the Error Reporting API
+
 from google.cloud import errorreporting_v1beta1
 from google.cloud.errorreporting_v1beta1 import types
 

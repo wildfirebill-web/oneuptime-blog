@@ -20,6 +20,7 @@ A set variable is declared with `type = set(element_type)`:
 # variables.tf
 
 # Set of strings
+
 variable "allowed_ips" {
   description = "IP addresses allowed to access the application"
   type        = set(string)

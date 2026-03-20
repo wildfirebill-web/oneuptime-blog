@@ -89,6 +89,7 @@ Or in a values file:
 
 ```yaml
 # istiod-values.yaml
+
 meshConfig:
   accessLogFile: /dev/stdout
   accessLogEncoding: TEXT

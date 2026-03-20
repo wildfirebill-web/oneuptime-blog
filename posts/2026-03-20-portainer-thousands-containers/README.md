@@ -12,7 +12,7 @@ Managing thousands of containers through a single Portainer instance requires ar
 
 ## Step 1: Multi-Tier Portainer Architecture
 
-```
+```text
 Architecture for 1000+ containers:
 
 [Portainer Server]
@@ -33,6 +33,7 @@ Architecture for 1000+ containers:
 
 ```yaml
 # docker-compose.yml - Portainer for thousands of containers
+
 version: "3.8"
 
 services:

@@ -18,6 +18,7 @@ Run Varnish with a basic configuration that proxies to a backend server:
 
 ```bash
 # Start Varnish pointing to a backend on the Docker network
+
 docker run -d \
   --name varnish \
   -p 8080:80 \

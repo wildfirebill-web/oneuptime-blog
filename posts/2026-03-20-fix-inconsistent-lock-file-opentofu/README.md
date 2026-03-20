@@ -1,4 +1,4 @@
-# How to Fix "Error: Inconsistent Dependency Lock File" in OpenTofu
+# How to Fix 'Error: Inconsistent Dependency Lock File' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ The "inconsistent dependency lock file" error means that the provider versions c
 
 ## Error Message
 
-```
+```hcl
 Error: Inconsistent dependency lock file
 
 The following dependency selections recorded in the lock file are inconsistent with the current configuration:
@@ -22,12 +22,13 @@ To update the locked dependency selections to match a changed configuration, run
   tofu init -upgrade
 ```
 
-## Cause 1: Lock File Out of Sync — Run tofu init
+## Cause 1: Lock File Out of Sync - Run tofu init
 
 The most common cause is that the lock file was updated but `tofu init` was not re-run:
 
 ```bash
 # Re-download providers to match the lock file
+
 tofu init
 
 # Or if you intentionally updated version constraints

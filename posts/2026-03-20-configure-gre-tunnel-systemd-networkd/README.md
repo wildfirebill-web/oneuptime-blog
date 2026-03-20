@@ -14,6 +14,7 @@ systemd-networkd creates GRE tunnels via `.netdev` files with `Kind=gre`. The tu
 
 ```ini
 # /etc/systemd/network/40-gre1.netdev
+
 [NetDev]
 Name=gre1
 Kind=gre

@@ -28,6 +28,7 @@ The simplest encryption method uses S3-managed keys. Enable it on your Velero ba
 
 ```bash
 # Enable default encryption on S3 bucket
+
 aws s3api put-bucket-encryption \
   --bucket velero-backups \
   --server-side-encryption-configuration '{

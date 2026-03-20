@@ -36,6 +36,7 @@ For applications running on Google Kubernetes Engine, Workload Identity is the s
 
 ```bash
 # Enable Workload Identity on your GKE cluster
+
 gcloud container clusters update my-cluster \
     --workload-pool=my-project.svc.id.goog \
     --zone=us-central1-a

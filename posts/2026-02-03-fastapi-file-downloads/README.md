@@ -40,6 +40,7 @@ For files that already exist on disk, `FileResponse` is the simplest option. It 
 
 ```python
 # file_download.py
+
 # Basic file download endpoint using FileResponse
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse

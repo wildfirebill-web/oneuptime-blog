@@ -31,6 +31,7 @@ Most providers read credentials from environment variables:
 
 ```bash
 # Set provider credentials via environment variables
+
 export PROVIDER_API_KEY="your-api-key"
 export PROVIDER_API_SECRET="your-api-secret"
 ```
@@ -71,7 +72,7 @@ output "resource_id" { value = provider_example_resource.main.id }
 
 ## Best Practices
 
-- Store API keys in environment variables or a secrets manager—never in .tf files
+- Store API keys in environment variables or a secrets manager-never in .tf files
 - Pin provider versions in `required_providers` to prevent unexpected updates
 - Commit the `.terraform.lock.hcl` file to lock exact provider versions
 - Use separate provider configurations per environment using aliases or workspaces

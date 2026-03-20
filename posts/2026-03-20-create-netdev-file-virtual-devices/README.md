@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Linux, systemd-networkd, netdev, VLAN, Bonding
+Tags: Networking, Linux, systemd-networkd, Netdev, VLAN, Bonding
 
 Description: Learn how to create systemd-networkd .netdev files to define virtual network devices like VLANs, bridges, bonds, and VXLAN tunnels.
 
 ---
 
-.netdev files in systemd-networkd define virtual network devices — VLANs, bridges, bonds, VXLAN tunnels, and more — before they are configured with `.network` files.
+.netdev files in systemd-networkd define virtual network devices - VLANs, bridges, bonds, VXLAN tunnels, and more - before they are configured with `.network` files.
 
 ---
 
@@ -16,6 +16,7 @@ Description: Learn how to create systemd-networkd .netdev files to define virtua
 
 ```bash
 # Files are in:
+
 /etc/systemd/network/
 
 # Naming convention (lower number = processed first):

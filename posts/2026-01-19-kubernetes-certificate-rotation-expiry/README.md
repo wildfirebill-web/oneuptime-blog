@@ -58,6 +58,7 @@ flowchart TD
 
 ```bash
 # Check all certificate expiration dates
+
 sudo kubeadm certs check-expiration
 
 # Output example:

@@ -31,6 +31,7 @@ Each "Refreshing state" line is an API call to AWS (or whatever provider you are
 
 ```bash
 # Skip the refresh phase entirely
+
 terraform plan -refresh=false
 
 # Works with apply too

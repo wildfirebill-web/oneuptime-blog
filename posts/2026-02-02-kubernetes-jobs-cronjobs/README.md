@@ -36,6 +36,7 @@ The following manifest creates a simple Job that runs a computation and exits. N
 
 ```yaml
 # simple-job.yaml
+
 # A basic Job that performs a one-time computation
 apiVersion: batch/v1
 kind: Job
@@ -807,7 +808,7 @@ Key metrics to display on your Jobs dashboard:
 
 ## Best Practices
 
-### Resource Management
+Resource Management
 
 Always specify resource requests and limits for Jobs to prevent resource contention.
 

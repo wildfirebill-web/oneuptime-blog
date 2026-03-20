@@ -59,6 +59,7 @@ Ceph auto-detects device classes when OSDs are created. Check your current assig
 
 ```bash
 # List all OSDs with their device classes
+
 ceph osd tree
 
 # Example output:

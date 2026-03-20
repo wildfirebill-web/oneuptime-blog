@@ -34,6 +34,7 @@ Ubuntu supports several CPU governors, each with different scaling strategies. T
 
 ```bash
 # The performance governor locks the CPU at maximum frequency
+
 # Best for: Desktop systems, gaming, computational workloads
 # Trade-off: Maximum power consumption and heat generation
 

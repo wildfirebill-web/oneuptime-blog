@@ -26,6 +26,7 @@ graph TD
 
 ```yaml
 # roles/image_tags/tasks/tag.yml
+
 # Apply multiple tags to a container image
 - name: Get git commit SHA
   ansible.builtin.command: git rev-parse --short HEAD

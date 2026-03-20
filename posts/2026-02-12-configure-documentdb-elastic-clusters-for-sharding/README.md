@@ -38,6 +38,7 @@ Elastic Clusters use vCPUs as the unit of compute. You can start with as few as 
 
 ```bash
 # Create a DocumentDB Elastic Cluster
+
 aws docdb-elastic create-cluster \
   --cluster-name my-elastic-cluster \
   --auth-type PLAIN_TEXT \

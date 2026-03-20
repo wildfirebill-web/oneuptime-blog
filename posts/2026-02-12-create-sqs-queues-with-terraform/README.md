@@ -20,6 +20,7 @@ This creates a standard SQS queue with reasonable defaults:
 
 ```hcl
 # Standard SQS queue
+
 resource "aws_sqs_queue" "orders" {
   name = "order-processing"
 

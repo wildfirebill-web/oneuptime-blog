@@ -49,6 +49,7 @@ Create an Azure AD application and service principal that your pipeline will aut
 
 ```bash
 # Create an Azure AD application
+
 APP_NAME="azure-pipelines-oidc"
 APP_ID=$(az ad app create --display-name "$APP_NAME" --query appId --output tsv)
 echo "Application ID: $APP_ID"

@@ -33,6 +33,7 @@ Before building the pipeline, configure your Terraform state backend:
 
 ```hcl
 # backend.tf - Remote state configuration for CodePipeline
+
 terraform {
   backend "s3" {
     bucket         = "mycompany-terraform-state"

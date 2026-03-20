@@ -119,6 +119,7 @@ Extend any backup sidecar to push files to S3 after creation:
 
 ```bash
 # Add after the dump command:
+
 aws s3 cp /backups/backup-$(date +%Y%m%d-%H%M%S).sql.gz \
   s3://my-db-backups/mysql/ --storage-class STANDARD_IA
 

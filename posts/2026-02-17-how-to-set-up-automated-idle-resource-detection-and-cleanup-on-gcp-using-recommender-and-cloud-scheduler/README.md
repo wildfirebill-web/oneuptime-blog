@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # Enable the Recommender API
+
 gcloud services enable recommender.googleapis.com
 
 # Also enable the services we will manage

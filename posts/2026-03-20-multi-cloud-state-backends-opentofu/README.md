@@ -8,7 +8,7 @@ Description: Learn how to configure and manage OpenTofu state backends across mu
 
 ## Introduction
 
-In multi-cloud environments, different teams or infrastructure components may reside on different cloud providers. OpenTofu supports multiple backend types — AWS S3, Azure Blob Storage, GCS, and more — allowing you to store state close to the infrastructure it manages.
+In multi-cloud environments, different teams or infrastructure components may reside on different cloud providers. OpenTofu supports multiple backend types - AWS S3, Azure Blob Storage, GCS, and more - allowing you to store state close to the infrastructure it manages.
 
 ## AWS S3 Backend
 
@@ -101,7 +101,7 @@ gsutil uniformbucketlevelaccess set on gs://mycompany-tofu-state
 
 Use a consistent naming convention for state keys:
 
-```
+```text
 {cloud}/{region}/{environment}/{component}/terraform.tfstate
 ```
 
@@ -116,6 +116,7 @@ Reference state from another cloud's backend:
 
 ```hcl
 # In GCP config, reference networking outputs from AWS config
+
 data "terraform_remote_state" "aws_networking" {
   backend = "s3"
   config = {
@@ -178,7 +179,7 @@ tofu init -backend-config=configs/production.s3.tfbackend
 - Enable versioning on all state buckets for rollback capability.
 - Encrypt state at rest using cloud-native encryption.
 - Use OIDC/workload identity federation instead of long-lived credentials for CI/CD.
-- Restrict state bucket access with IAM policies — state files contain sensitive data.
+- Restrict state bucket access with IAM policies - state files contain sensitive data.
 - Document the state key structure so teams can easily locate their state.
 
 ## Conclusion

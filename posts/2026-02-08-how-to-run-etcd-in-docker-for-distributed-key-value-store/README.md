@@ -22,6 +22,7 @@ Run a single etcd node for development.
 
 ```bash
 # Start a single etcd node
+
 docker run -d \
   --name etcd \
   -p 2379:2379 \

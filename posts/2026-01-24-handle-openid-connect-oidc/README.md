@@ -227,6 +227,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
 # Configure OAuth
+
 oauth = OAuth(app)
 
 # Register Google OIDC

@@ -32,6 +32,7 @@ CALICO_VERSION=v3.27.0
 cd /tmp
 
 # Download calico-node binary
+
 curl -L https://github.com/projectcalico/calico/releases/download/${CALICO_VERSION}/calico-node-amd64 \
   -o calico-node
 chmod +x calico-node

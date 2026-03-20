@@ -1,4 +1,4 @@
-# How to Set Up Multi-Container Pods with Shared Namespaces in Portainer
+# How to Set Up Multi-Container Pods with Shared Namespaces in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,7 +23,7 @@ services:
     networks:
       - app-net
 
-  # Metrics sidecar — shares app's network namespace
+  # Metrics sidecar - shares app's network namespace
   # Can access localhost:8080 inside app
   metrics-exporter:
     image: prometheus/cloudwatch-exporter:latest
@@ -31,7 +31,7 @@ services:
     # This container can now reach localhost:8080 (the app's port)
     # Prometheus scrapes this container on port 9106
 
-  # Log sidecar — share network namespace
+  # Log sidecar - share network namespace
   log-forwarder:
     image: fluent/fluent-bit:2.2
     network_mode: "service:app"
@@ -60,7 +60,8 @@ services:
 In Kubernetes, containers in the same Pod always share network and IPC namespaces:
 
 ```yaml
-# multi-container-pod.yaml — deploy via Portainer Kubernetes manifests
+# multi-container-pod.yaml - deploy via Portainer Kubernetes manifests
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -76,7 +77,7 @@ spec:
           ports:
             - containerPort: 8080
 
-        # Metrics sidecar — reaches app via localhost
+        # Metrics sidecar - reaches app via localhost
         - name: metrics-exporter
           image: prom/statsd-exporter:latest
           ports:
@@ -119,7 +120,7 @@ containers:
   - name: log-collector
     image: fluent/fluent-bit:2.2
     volumeMounts:
-      - name: logs    # Shared volume — same logs directory
+      - name: logs    # Shared volume - same logs directory
         mountPath: /var/log/app:ro
 ```
 

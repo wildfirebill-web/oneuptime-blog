@@ -18,6 +18,7 @@ The simplest possible SMS send.
 
 ```bash
 # Send an SMS directly to a phone number
+
 aws sns publish \
   --phone-number "+12025551234" \
   --message "Your verification code is 847291. It expires in 10 minutes."

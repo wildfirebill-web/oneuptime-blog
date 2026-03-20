@@ -31,6 +31,7 @@ Generate completions for your shell:
 
 ```bash
 # For Bash
+
 cilium-bugtool completion bash > /tmp/cilium-bugtool-completion.bash
 source /tmp/cilium-bugtool-completion.bash
 

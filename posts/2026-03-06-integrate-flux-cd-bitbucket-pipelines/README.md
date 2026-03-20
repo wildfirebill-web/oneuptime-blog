@@ -52,6 +52,7 @@ Create a `bitbucket-pipelines.yml` file in the root of your application reposito
 
 ```yaml
 # bitbucket-pipelines.yml
+
 # Pipeline for building and pushing container images for Flux CD
 
 image: atlassian/default-image:4

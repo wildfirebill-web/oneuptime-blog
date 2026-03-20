@@ -91,6 +91,7 @@ Mount it in the Dex server. If using Helm to install ArgoCD:
 
 ```yaml
 # values.yaml for ArgoCD Helm chart
+
 dex:
   volumes:
     - name: google-groups

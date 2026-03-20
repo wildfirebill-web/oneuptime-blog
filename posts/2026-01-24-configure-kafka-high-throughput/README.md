@@ -337,6 +337,7 @@ public class ParallelConsumerGroup {
 # server.properties - Broker configuration for high throughput
 
 # PARTITION AND REPLICATION
+
 # More partitions enable more parallelism
 num.partitions=12
 default.replication.factor=2

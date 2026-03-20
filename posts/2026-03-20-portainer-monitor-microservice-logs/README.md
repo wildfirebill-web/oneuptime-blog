@@ -1,4 +1,4 @@
-# How to Monitor Microservice Logs Across Containers in Portainer
+# How to Monitor Microservice Logs Across Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -68,6 +68,7 @@ volumes:
 
 ```yaml
 # promtail-config.yml
+
 server:
   http_listen_port: 9080
 

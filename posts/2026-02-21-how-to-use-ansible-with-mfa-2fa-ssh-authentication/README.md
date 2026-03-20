@@ -44,6 +44,7 @@ On each managed host, modify the PAM configuration to skip MFA for the Ansible u
 
 ```bash
 # /etc/pam.d/sshd
+
 # Add this BEFORE the MFA line
 auth [success=1 default=ignore] pam_succeed_if.so user = ansible
 

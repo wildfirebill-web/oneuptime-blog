@@ -420,6 +420,7 @@ Rust apps handle concurrency extremely well, so you can set higher connection li
 
 ```dockerfile
 # Build stage
+
 FROM rust:1.75 as builder
 WORKDIR /app
 COPY . .

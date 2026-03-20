@@ -38,6 +38,7 @@ Check AD event logs on the domain controller for the specific sub-error code.
 On the Domain Controller:
 ```powershell
 # Check for failed authentication events (Event ID 4625)
+
 Get-WinEvent -FilterHashtable @{
   LogName = 'Security'
   Id = 4625
@@ -177,4 +178,4 @@ curl -X POST https://portainer.example.com/api/auth \
 
 ## Conclusion
 
-Active Directory login failures require checking both the Portainer configuration and the AD server state. The most common issues are expired or locked service account credentials, incorrect DN format, and user accounts in different OUs than the configured base DN. Always test with `ldapsearch` using the exact credentials Portainer uses before escalating to AD administrators — it usually pinpoints the issue within seconds.
+Active Directory login failures require checking both the Portainer configuration and the AD server state. The most common issues are expired or locked service account credentials, incorrect DN format, and user accounts in different OUs than the configured base DN. Always test with `ldapsearch` using the exact credentials Portainer uses before escalating to AD administrators - it usually pinpoints the issue within seconds.

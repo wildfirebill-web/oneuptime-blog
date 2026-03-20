@@ -51,6 +51,7 @@ By default, Trivy checks for database updates before each scan.
 
 ```bash
 # Default behavior: check for updates, download if stale
+
 trivy image nginx:latest
 
 # Output shows database status

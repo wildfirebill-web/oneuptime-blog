@@ -30,6 +30,7 @@ Install Istio configured to use cert-manager for certificate issuance:
 
 ```bash
 # Install Istio with external CA configuration
+
 istioctl install --set profile=demo \
   --set values.global.caAddress="cert-manager-istio-csr.cert-manager.svc:443" \
   --set values.pilot.env.EXTERNAL_CA=ISTIOD_RA_KUBERNETES_API \

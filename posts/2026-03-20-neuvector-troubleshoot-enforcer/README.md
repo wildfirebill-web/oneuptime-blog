@@ -1,4 +1,4 @@
-# How to Troubleshoot NeuVector Enforcer Issues
+# How to Troubleshoot NeuVector Enforcer Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ The NeuVector Enforcer is the most critical component for runtime security enfor
 
 ```bash
 # Check all enforcer pods across nodes
+
 kubectl get pods -n neuvector -l app=neuvector-enforcer-pod -o wide
 
 # Check for pods not running

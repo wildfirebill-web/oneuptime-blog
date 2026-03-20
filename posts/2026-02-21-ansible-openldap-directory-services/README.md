@@ -14,6 +14,7 @@ OpenLDAP provides lightweight directory services for user authentication and aut
 
 ```yaml
 # roles/openldap/tasks/main.yml
+
 ---
 - name: Set LDAP preseed answers
   ansible.builtin.debconf:

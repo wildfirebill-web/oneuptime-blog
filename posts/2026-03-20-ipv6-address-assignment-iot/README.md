@@ -30,6 +30,7 @@ flowchart TD
 
 ```bash
 # Default behavior on most devices
+
 # Pros: Zero-config, no server needed, collision-free
 # Cons: Exposes hardware MAC, persistent cross-network identifier
 
@@ -53,7 +54,7 @@ nmcli connection modify eth0 ipv6.addr-gen-mode stable-privacy
 
 Suitable for: General IoT devices that need consistent addressing per network but privacy from external observers.
 
-## Method 3: Temporary Addresses (RFC 4941) — Not Recommended for IoT
+## Method 3: Temporary Addresses (RFC 4941) - Not Recommended for IoT
 
 Temporary addresses rotate, making it hard to track devices for monitoring:
 - Not suitable for most IoT: device cannot be reliably addressed for management

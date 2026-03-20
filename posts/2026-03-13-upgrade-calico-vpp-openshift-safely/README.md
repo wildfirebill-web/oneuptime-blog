@@ -26,6 +26,7 @@ Check whether the new Calico VPP version requires any OS-level changes.
 
 ```bash
 # Review the VPP dataplane changelog
+
 cat vpp-dataplane/CHANGELOG.md | head -50
 ```
 

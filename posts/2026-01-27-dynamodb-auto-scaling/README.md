@@ -85,6 +85,7 @@ Register scalable targets for both read and write capacity:
 
 ```bash
 # Register read capacity as a scalable target
+
 # This tells Application Auto Scaling to manage the table's read capacity
 aws application-autoscaling register-scalable-target \
   --service-namespace dynamodb \

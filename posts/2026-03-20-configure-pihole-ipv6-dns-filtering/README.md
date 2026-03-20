@@ -14,6 +14,7 @@ Pi-hole is a DNS-based ad blocker that can run on any Linux host. It uses a fork
 
 ```bash
 # Install Pi-hole
+
 curl -sSL https://install.pi-hole.net | bash
 
 # During installation, select the IPv6 address of your interface
@@ -52,7 +53,7 @@ grep "^server=" /etc/dnsmasq.d/01-pihole.conf
 
 ```bash
 # Point clients to Pi-hole's IPv6 address for DNS
-# On a typical home router (example — varies by router):
+# On a typical home router (example - varies by router):
 # LAN → DHCPv6 DNS Server: 2001:db8::1 (Pi-hole's IPv6 address)
 # Or RA: set DNS server in Router Advertisement to Pi-hole IPv6
 
@@ -131,4 +132,4 @@ cat /etc/cron.d/pihole
 
 ## Conclusion
 
-Pi-hole works for IPv6 clients with the same ease as IPv4 — ensure it listens on your IPv6 address and that clients receive it as their DNS server via DHCPv6 or RA. Block rates apply equally to A and AAAA queries. Use OneUptime to monitor Pi-hole's availability and alert when the admin interface is unreachable.
+Pi-hole works for IPv6 clients with the same ease as IPv4 - ensure it listens on your IPv6 address and that clients receive it as their DNS server via DHCPv6 or RA. Block rates apply equally to A and AAAA queries. Use OneUptime to monitor Pi-hole's availability and alert when the admin interface is unreachable.

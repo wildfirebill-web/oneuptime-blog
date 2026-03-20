@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, PATH, Environment, Automation
+Tags: Ansible, Windows, PATH, Environments, Automation
 
 Description: Manage the Windows system PATH environment variable with the Ansible win_path module to add and remove directory entries cleanly.
 
@@ -24,6 +24,7 @@ The most common operation is adding a new directory to the system PATH.
 
 ```yaml
 # add-to-path.yml - Add directories to the system PATH
+
 ---
 - name: Manage Windows PATH
   hosts: windows_servers

@@ -207,6 +207,7 @@ Check the indexer status to make sure it completes successfully.
 
 ```bash
 # Check indexer status
+
 curl -X GET "https://<search-service>.search.windows.net/indexers/my-knowledge-indexer/status?api-version=2024-07-01" \
   -H "api-key: <your-admin-key>"
 ```

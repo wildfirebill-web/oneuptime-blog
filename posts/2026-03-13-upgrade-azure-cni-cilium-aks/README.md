@@ -30,6 +30,7 @@ Before migration, document the current cluster configuration thoroughly.
 
 ```bash
 # Document current network configuration
+
 az aks show \
   --resource-group <resource-group> \
   --name <cluster-name> \

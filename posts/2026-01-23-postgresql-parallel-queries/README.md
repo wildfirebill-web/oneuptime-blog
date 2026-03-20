@@ -350,6 +350,7 @@ For an analytics workload on a server with 8 CPU cores:
 
 ```ini
 # postgresql.conf
+
 max_parallel_workers = 8                   # Total workers
 max_parallel_workers_per_gather = 4        # Per query
 max_parallel_maintenance_workers = 4       # For index builds

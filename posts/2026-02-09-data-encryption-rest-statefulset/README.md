@@ -24,6 +24,7 @@ For AWS EBS volumes with KMS encryption:
 
 ```yaml
 # aws-encrypted-storage.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

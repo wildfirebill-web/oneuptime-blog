@@ -29,6 +29,7 @@ Choosing how to deploy Redis involves trade-offs between control, operational ov
 
 ```bash
 # Single instance
+
 redis-server /etc/redis/redis.conf
 
 # With Sentinel for HA

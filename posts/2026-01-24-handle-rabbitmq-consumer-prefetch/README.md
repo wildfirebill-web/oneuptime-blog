@@ -46,6 +46,7 @@ channel = connection.channel()
 channel.queue_declare(queue='tasks', durable=True)
 
 # Set prefetch count to 1
+
 # Consumer receives only 1 message at a time until it acknowledges
 channel.basic_qos(prefetch_count=1)
 

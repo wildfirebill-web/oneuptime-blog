@@ -142,6 +142,7 @@ exec > >(tee /var/log/user-data.log) 2>&1
 echo "Starting user data script at $(date)"
 
 # Update packages
+
 apt-get update -qq
 apt-get install -y -qq nginx postgresql python3-pip
 

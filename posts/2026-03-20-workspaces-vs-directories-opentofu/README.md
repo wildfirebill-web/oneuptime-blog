@@ -16,6 +16,7 @@ Workspaces create separate state files within the same backend configuration:
 
 ```bash
 # Create and switch workspaces
+
 tofu workspace new dev
 tofu workspace new staging
 tofu workspace new prod
@@ -48,8 +49,8 @@ resource "aws_instance" "web" {
 
 ### Workspace Drawbacks
 
-```
-- Single configuration for all environments — risky
+```text
+- Single configuration for all environments - risky
 - Easy to accidentally apply to wrong workspace
 - No per-environment variable files
 - All environments share the same code version
@@ -60,7 +61,7 @@ resource "aws_instance" "web" {
 
 Each environment is an independent configuration:
 
-```
+```text
 environments/
 ├── dev/
 │   ├── main.tf
@@ -78,12 +79,12 @@ environments/
 
 ### Directory Advantages
 
-```
+```text
 + Completely isolated state files
 + Different variable values per environment
 + Different module versions per environment (prod can lag)
-+ Independent blast radius — prod apply can't affect dev
-+ Clear ownership — CODEOWNERS per environment directory
++ Independent blast radius - prod apply can't affect dev
++ Clear ownership - CODEOWNERS per environment directory
 + Environment-specific CI rules (prod requires extra approvals)
 ```
 
@@ -114,11 +115,11 @@ resource "aws_instance" "dev_box" {
 
 ## Recommendation
 
-```
+```text
 Use workspaces for:    Ephemeral environments, feature branches, per-developer sandboxes
 Use directories for:   Dev, staging, prod and any other persistent environment
 ```
 
 ## Conclusion
 
-The OpenTofu best practice is to use separate directories for production and other long-lived environments. Workspaces are a useful tool for ephemeral environments like feature branch deployments. The extra ceremony of separate directories — maintaining multiple files — is justified by the isolation and safety it provides for production infrastructure.
+The OpenTofu best practice is to use separate directories for production and other long-lived environments. Workspaces are a useful tool for ephemeral environments like feature branch deployments. The extra ceremony of separate directories - maintaining multiple files - is justified by the isolation and safety it provides for production infrastructure.

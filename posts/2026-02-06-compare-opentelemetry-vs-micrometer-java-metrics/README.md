@@ -202,6 +202,7 @@ public class Application {
 
 ```yaml
 # application.yml for Micrometer with Prometheus export
+
 management:
   endpoints:
     web:

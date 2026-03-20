@@ -39,6 +39,7 @@ helm install redis bitnami/redis \
 pip install feast[kubernetes,redis]
 
 # Create a Feast project
+
 feast init feature-repo
 cd feature-repo
 ```
@@ -128,4 +129,4 @@ feature_vector = store.get_online_features(
 
 ## Conclusion
 
-Feast on Rancher centralizes feature management across the ML platform. The separation of offline and online stores enables batch feature computation (overnight jobs) with millisecond-latency serving from Redis. This prevents training-serving skew—a major source of model performance degradation in production ML systems.
+Feast on Rancher centralizes feature management across the ML platform. The separation of offline and online stores enables batch feature computation (overnight jobs) with millisecond-latency serving from Redis. This prevents training-serving skew-a major source of model performance degradation in production ML systems.

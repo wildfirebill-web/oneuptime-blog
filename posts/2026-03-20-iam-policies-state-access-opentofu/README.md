@@ -8,7 +8,7 @@ Description: Learn how to design least-privilege IAM policies that grant OpenTof
 
 ## Introduction
 
-State files in an S3 bucket are sensitive — they contain resource IDs, attribute values, and sometimes secrets. Overly broad IAM permissions like `s3:*` expose the entire bucket. This guide shows how to write tight IAM policies that grant only the permissions OpenTofu actually needs.
+State files in an S3 bucket are sensitive - they contain resource IDs, attribute values, and sometimes secrets. Overly broad IAM permissions like `s3:*` expose the entire bucket. This guide shows how to write tight IAM policies that grant only the permissions OpenTofu actually needs.
 
 ## Minimum S3 Permissions for State Operations
 
@@ -32,7 +32,7 @@ data "aws_iam_policy_document" "opentofu_state" {
   statement {
     effect  = "Allow"
     actions = ["s3:GetObject", "s3:PutObject", "s3:DeleteObject"]
-    # Scope to a specific path — each team gets their own prefix
+    # Scope to a specific path - each team gets their own prefix
     resources = ["arn:aws:s3:::my-opentofu-state/${local.state_prefix}/*"]
   }
 }
@@ -109,6 +109,7 @@ For stronger security, use separate roles for plan (read-only state) and apply (
 
 ```hcl
 # Plan role: read-only state access
+
 resource "aws_iam_role_policy" "plan_state" {
   name = "plan-state-read"
   role = aws_iam_role.opentofu_plan.id

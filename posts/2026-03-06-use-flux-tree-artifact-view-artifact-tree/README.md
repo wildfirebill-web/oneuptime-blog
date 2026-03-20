@@ -27,6 +27,7 @@ Verify your setup:
 
 ```bash
 # Check Flux installation
+
 flux check
 
 # List available sources

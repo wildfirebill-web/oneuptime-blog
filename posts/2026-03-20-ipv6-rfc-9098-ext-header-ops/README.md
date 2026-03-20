@@ -14,7 +14,7 @@ RFC 9098 (August 2021) "Operational Implications of IPv6 Packets with Extension 
 
 RFC 9098 documents the following operational realities:
 
-```
+```text
 1. Fragment Header (NH=44) Drop Rates:
    - ~30-50% of network paths drop packets with Fragment Headers
    - Cause: Security policies preventing fragment-based attacks
@@ -43,7 +43,7 @@ RFC 9098 documents the following operational realities:
 
 RFC 9098 provides detailed analysis of the Hop-by-Hop CPU problem:
 
-```
+```text
 Why HbH causes CPU exhaustion:
 
 1. Specification says: All routers MUST examine Hop-by-Hop options
@@ -65,6 +65,7 @@ Affected protocols that use Hop-by-Hop:
 
 ```python
 # Summarize RFC 9098 recommendations for operators
+
 RFC9098_RECOMMENDATIONS = {
     "Hop-by-Hop (NH=0)": {
         "action": "Rate-limit incoming, allow for MLD",
@@ -110,7 +111,7 @@ for header, rec in RFC9098_RECOMMENDATIONS.items():
 
 RFC 9098 explains the interconnection between Fragment Header drops and Path MTU Discovery:
 
-```
+```text
 Normal Path MTU Discovery (RFC 8201):
 1. Source sends packet > Path MTU
 2. Router drops packet, sends ICMPv6 "Packet Too Big"

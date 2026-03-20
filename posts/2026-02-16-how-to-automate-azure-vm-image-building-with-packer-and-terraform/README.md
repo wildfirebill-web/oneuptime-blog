@@ -34,6 +34,7 @@ Install both tools:
 
 ```bash
 # Install Packer
+
 brew install packer   # macOS
 # or download from https://www.packer.io/downloads
 

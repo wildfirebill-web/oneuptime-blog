@@ -25,6 +25,7 @@ Create a namespace manifest with labels that identify it as belonging to a speci
 
 ```yaml
 # tenants/team-alpha/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

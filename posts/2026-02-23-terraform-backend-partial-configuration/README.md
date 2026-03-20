@@ -16,6 +16,7 @@ Consider this backend configuration:
 
 ```hcl
 # This does NOT work - variables are not allowed in backend blocks
+
 terraform {
   backend "s3" {
     bucket = var.state_bucket      # ERROR

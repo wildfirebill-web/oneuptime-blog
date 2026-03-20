@@ -28,6 +28,7 @@ This playbook ensures bonding prerequisites are met:
 
 ```yaml
 # configure-network-bonding.yml - Set up network bonding
+
 ---
 - name: Configure Network Bonding
   hosts: all

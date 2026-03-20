@@ -21,6 +21,7 @@ Before any migration operation, create comprehensive backups:
 ```bash
 #!/bin/bash
 # pre-migration-backup.sh
+
 # Create a complete backup before migration
 
 BACKUP_DIR="backups/$(date +%Y%m%d-%H%M%S)"

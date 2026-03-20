@@ -28,6 +28,7 @@ Create separate hosts for each tenant.
 
 ```yaml
 # tenant-hosts.yaml
+
 # Tenant 1 Host
 apiVersion: getambassador.io/v3alpha1
 kind: Host

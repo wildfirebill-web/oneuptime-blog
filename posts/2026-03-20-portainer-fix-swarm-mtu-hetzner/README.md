@@ -1,4 +1,4 @@
-# How to Fix Swarm MTU Issues with Portainer on Hetzner
+# How to Fix Swarm MTU Issues with Portainer on Hetzner - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Hetzner Cloud's network interface has an MTU of 1450 bytes. Docker's default ove
 
 ```bash
 # Check current MTU on the network interface
+
 ip link show eth0
 # Look for: mtu 1450
 

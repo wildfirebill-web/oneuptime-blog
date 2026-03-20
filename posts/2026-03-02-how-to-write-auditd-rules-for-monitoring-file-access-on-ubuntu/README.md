@@ -28,6 +28,7 @@ sudo systemctl enable auditd
 sudo systemctl start auditd
 
 # Verify auditd is running
+
 sudo auditctl -s
 ```
 

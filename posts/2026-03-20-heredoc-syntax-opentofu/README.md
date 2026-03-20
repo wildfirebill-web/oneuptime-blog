@@ -1,4 +1,4 @@
-# How to Use Heredoc Syntax for Multi-Line Strings in OpenTofu
+# How to Use Heredoc Syntax for Multi-Line Strings in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Heredoc syntax in OpenTofu allows you to write multi-line strings without needin
 
 ```hcl
 # Standard heredoc: <<IDENTIFIER ... IDENTIFIER
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"

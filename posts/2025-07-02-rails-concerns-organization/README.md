@@ -97,6 +97,7 @@ Here's the anatomy of a Rails Concern:
 # app/models/concerns/searchable.rb
 
 # Concern for adding search functionality to models
+
 # Include this module in any model that needs full-text search
 module Searchable
   # Extend ActiveSupport::Concern for Rails integration

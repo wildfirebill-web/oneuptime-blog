@@ -26,6 +26,7 @@ Ollama supports macOS, Linux, and Windows.
 
 ```bash
 # macOS using Homebrew
+
 brew install ollama
 
 # Linux one-liner install

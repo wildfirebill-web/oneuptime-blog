@@ -34,6 +34,7 @@ Redis stores the cart state because it provides sub-millisecond read/write perfo
 
 ```bash
 # Create a resource group
+
 az group create --name rg-cart-service --location eastus
 
 # Create Azure Cache for Redis

@@ -16,6 +16,7 @@ Create a deployment manifest for an edge web application:
 
 ```yaml
 # edge-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

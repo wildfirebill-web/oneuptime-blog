@@ -16,6 +16,7 @@ This guide covers creating CronJobs with Terraform, including schedule syntax, c
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

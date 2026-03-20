@@ -12,7 +12,7 @@ ICMPv6 (Internet Control Message Protocol for IPv6) is defined in RFC 4443 and s
 
 ## ICMPv6 Common Header Structure
 
-```
+```text
 ICMPv6 message structure:
 
  0                   1                   2                   3
@@ -34,7 +34,7 @@ Fields:
 
 ## ICMPv6 Type Registry
 
-```
+```text
 Error Messages (Types 1-127):
   Type 1:   Destination Unreachable
   Type 2:   Packet Too Big
@@ -111,6 +111,7 @@ def parse_icmpv6_header(data: bytes) -> dict:
     }
 
 # Parse each error type
+
 test_messages = [
     (b'\x01\x04\x00\x00' + b'\x00' * 4, "Destination Unreachable, Port Unreachable"),
     (b'\x02\x00\x00\x00' + struct.pack("!I", 1280), "Packet Too Big, MTU=1280"),
@@ -129,7 +130,7 @@ for msg, description in test_messages:
 
 Unlike ICMPv4, ICMPv6 checksums are mandatory and cover a pseudo-header including IPv6 addresses:
 
-```
+```text
 ICMPv6 checksum covers:
   1. IPv6 pseudo-header:
      - Source address (128 bits)

@@ -18,6 +18,7 @@ You need Prometheus scraping Istio metrics and Grafana connected to that Prometh
 
 ```bash
 # Install the Grafana addon if you have not already
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/grafana.yaml
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/prometheus.yaml
 ```

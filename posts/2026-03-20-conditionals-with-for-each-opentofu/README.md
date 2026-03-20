@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, Conditionals, HCL, Filtering
+Tags: OpenTofu, Terraform, for_each, Conditional, HCL, Filtering
 
 Description: Learn how to combine conditional expressions with for_each in OpenTofu to create only the resources that meet specific criteria from a larger collection.
 
 ## Introduction
 
-`for_each` iterates over all items in a map or set. When combined with conditional filtering, you can selectively create resources from a larger dataset — creating S3 buckets only for enabled features, security group rules only for certain environments, or DNS records only for active services.
+`for_each` iterates over all items in a map or set. When combined with conditional filtering, you can selectively create resources from a larger dataset - creating S3 buckets only for enabled features, security group rules only for certain environments, or DNS records only for active services.
 
 ## Filtering with for Expression
 
@@ -31,6 +31,7 @@ variable "services" {
 }
 
 # Create target groups only for enabled services that have a port
+
 resource "aws_lb_target_group" "services" {
   for_each = {
     for name, svc in var.services : name => svc

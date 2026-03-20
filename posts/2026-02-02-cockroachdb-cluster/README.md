@@ -71,6 +71,7 @@ Download and install CockroachDB on each server in your cluster.
 
 ```bash
 # Download the latest CockroachDB release
+
 curl https://binaries.cockroachdb.com/cockroach-v23.2.0.linux-amd64.tgz | tar -xz
 
 # Move the binary to a location in your PATH

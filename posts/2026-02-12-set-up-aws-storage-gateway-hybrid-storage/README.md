@@ -50,6 +50,7 @@ Start by setting up the gateway resource in your AWS account. You can do this th
 
 ```bash
 # List available gateway types to confirm options
+
 aws storagegateway list-gateways --region us-east-1
 
 # We'll create the gateway after deploying and activating the VM

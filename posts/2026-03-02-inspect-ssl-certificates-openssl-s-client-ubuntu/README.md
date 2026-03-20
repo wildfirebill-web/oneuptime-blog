@@ -14,6 +14,7 @@ Description: Learn how to use openssl s_client to inspect SSL/TLS certificates o
 
 ```bash
 # Connect to a server and show the TLS handshake details
+
 openssl s_client -connect example.com:443
 
 # Add -servername for SNI (required for virtual hosting)

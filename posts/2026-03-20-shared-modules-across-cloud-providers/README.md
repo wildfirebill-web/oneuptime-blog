@@ -21,7 +21,7 @@ Effective shared modules follow these principles:
 
 ## Project Structure
 
-```
+```text
 modules/
 ├── networking/
 │   ├── aws/
@@ -44,6 +44,7 @@ Define the same variable names across provider-specific modules:
 
 ```hcl
 # modules/networking/aws/variables.tf
+
 variable "name"       { type = string }
 variable "cidr_block" { type = string }
 variable "region"     { type = string }
@@ -101,4 +102,4 @@ module "network_aws" {
 
 ## Conclusion
 
-Sharing modules across cloud providers in OpenTofu requires thoughtful interface design — consistent variable names, output shapes, and encapsulated provider logic. This approach lets teams reuse patterns and reduces the cost of maintaining multi-cloud infrastructure.
+Sharing modules across cloud providers in OpenTofu requires thoughtful interface design - consistent variable names, output shapes, and encapsulated provider logic. This approach lets teams reuse patterns and reduces the cost of maintaining multi-cloud infrastructure.

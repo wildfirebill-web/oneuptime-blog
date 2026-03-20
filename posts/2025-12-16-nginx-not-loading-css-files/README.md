@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Web Server, CSS, MIME Types, Troubleshooting
+Tags: Nginx, Web Server, CSS, MIME Types, Troubleshooting
 
 Description: Learn how to diagnose and fix Nginx not serving CSS files correctly, including MIME type issues, path problems, permissions errors, and Content Security Policy conflicts.
 
@@ -35,6 +35,7 @@ The most common issue is Nginx serving CSS with the wrong Content-Type header.
 ```bash
 curl -I https://example.com/css/styles.css | grep -i content-type
 # Wrong: Content-Type: text/plain
+
 # Correct: Content-Type: text/css
 ```
 

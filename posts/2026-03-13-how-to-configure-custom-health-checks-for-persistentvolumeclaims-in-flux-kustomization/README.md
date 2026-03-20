@@ -285,6 +285,7 @@ When a PVC health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization database-storage
 
 # Check PVC status

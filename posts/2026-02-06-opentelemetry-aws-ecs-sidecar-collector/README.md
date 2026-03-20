@@ -35,6 +35,7 @@ First, create a collector configuration file. You will store this in AWS Systems
 
 ```yaml
 # collector-config.yaml
+
 # Sidecar collector config for ECS - receives OTLP and exports to AWS services
 receivers:
   otlp:
@@ -441,7 +442,7 @@ graph TB
     CD --> Backend
 ```
 
-## Resource Sizing Guidelines
+Resource Sizing Guidelines
 
 For the collector sidecar, start with these allocations and adjust based on your telemetry volume:
 

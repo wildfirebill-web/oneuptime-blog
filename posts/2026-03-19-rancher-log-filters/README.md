@@ -293,6 +293,7 @@ Check that filters are applied correctly:
 
 ```bash
 # Check ClusterFlow status
+
 kubectl get clusterflows -n cattle-logging-system -o yaml
 
 # Check Fluentd configuration

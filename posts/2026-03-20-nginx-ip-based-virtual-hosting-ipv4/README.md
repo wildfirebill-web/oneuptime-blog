@@ -16,6 +16,7 @@ Your server must have multiple IPv4 addresses configured. Verify them with:
 
 ```bash
 # List all IPv4 addresses on the server
+
 ip -4 addr show
 ```
 

@@ -23,6 +23,7 @@ This guide covers setting up the Swift Wasm toolchain and writing a functional K
 
 ```bash
 # Install the Swift WebAssembly toolchain
+
 # Download from: https://github.com/swiftwasm/swift/releases
 
 # macOS - install via swiftenv

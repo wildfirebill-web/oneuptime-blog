@@ -177,6 +177,7 @@ Instead, use partial configuration and pass backend values at init time:
 
 ```hcl
 # In your .tf file
+
 terraform {
   backend "s3" {
     key = "terraform.tfstate"

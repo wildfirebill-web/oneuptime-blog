@@ -29,6 +29,7 @@ Terragrunt wraps every `tofu` invocation and provides a configuration layer on t
 
 ```hcl
 # terragrunt.hcl
+
 terraform_binary = "tofu"
 
 remote_state {
@@ -72,7 +73,7 @@ stack {
 ```
 
 ```hcl
-# terramate.tm.hcl (root) — code generation
+# terramate.tm.hcl (root) - code generation
 generate_hcl "backend.tf" {
   content {
     terraform {
@@ -98,7 +99,7 @@ terramate run --changed -- tofu plan
 
 ## When to Choose Terragrunt
 
-```
+```text
 - Teams migrating from Terragrunt + Terraform
 - Projects with complex module dependency graphs
 - Teams that prefer runtime configuration injection
@@ -107,7 +108,7 @@ terramate run --changed -- tofu plan
 
 ## When to Choose Terramate
 
-```
+```text
 - Large monorepos with 50+ stacks where CI time matters
 - Teams who want generated files committed to Git (auditable)
 - Projects that need change-based CI without writing custom scripts

@@ -16,6 +16,7 @@ On Ubuntu 22.04 and newer, Deja Dup is often pre-installed. If not:
 
 ```bash
 # Install via apt
+
 sudo apt update
 sudo apt install deja-dup
 

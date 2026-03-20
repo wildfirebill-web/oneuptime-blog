@@ -27,6 +27,7 @@ This guide deploys Loki in simple scalable mode, Promtail as a DaemonSet, and co
 
 ```yaml
 # infrastructure/sources/grafana-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

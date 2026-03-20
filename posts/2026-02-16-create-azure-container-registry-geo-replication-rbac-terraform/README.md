@@ -18,6 +18,7 @@ ACR geo-replication requires the Premium SKU. Let us set up the registry with se
 
 ```hcl
 # main.tf
+
 # Azure Container Registry with Premium features
 
 terraform {

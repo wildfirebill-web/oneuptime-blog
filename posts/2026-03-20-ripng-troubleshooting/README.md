@@ -14,6 +14,7 @@ RIPng troubleshooting focuses on four main areas: the RIPng process is not runni
 
 ```bash
 # FRRouting
+
 sudo systemctl status frr
 ps aux | grep ripngd
 vtysh -c "show ipv6 ripng"
@@ -100,9 +101,9 @@ debug ripng events
 debug ripng packet
 
 # Watch for:
-# - "Sending response to ff02::9" — updates are being sent
-# - "Received response" — updates are being received
-# - "Update route" — routes are being updated
+# - "Sending response to ff02::9" - updates are being sent
+# - "Received response" - updates are being received
+# - "Update route" - routes are being updated
 
 journalctl -u frr -f | grep ripng
 

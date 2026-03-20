@@ -81,6 +81,7 @@ The `-e` flag displays the Ethernet header including VLAN information.
 
 ```bash
 # Only ICMP on VLAN 200
+
 sudo tcpdump -i eth0 'vlan 200 and icmp'
 
 # DNS traffic on VLAN 10

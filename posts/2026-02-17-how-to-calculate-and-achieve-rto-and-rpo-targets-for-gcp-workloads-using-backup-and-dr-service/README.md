@@ -40,6 +40,7 @@ The targets should be based on business impact, not technical preference. Work w
 
 ```yaml
 # rto-rpo-analysis.yaml - Document your targets per workload
+
 workloads:
   # Tier 1: Mission-critical - business stops without these
   payment-processing:

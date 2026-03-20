@@ -14,6 +14,7 @@ The `nullable` attribute in OpenTofu variable declarations controls whether a va
 
 ```hcl
 # nullable = true (default behavior)
+
 # The variable can be set to null, which overrides the default
 variable "custom_ami" {
   type     = string

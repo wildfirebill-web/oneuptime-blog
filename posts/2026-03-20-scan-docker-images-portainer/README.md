@@ -1,4 +1,4 @@
-# How to Scan Docker Images for Vulnerabilities via Portainer
+# How to Scan Docker Images for Vulnerabilities via Portainer - Docker Images
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Integrate vulnerability scanning into your Portainer workflow using
 
 ## Introduction
 
-Container images bundle an OS, runtime, and application libraries — any of which may contain known CVEs. Scanning images before deployment prevents shipping vulnerable software to production. This guide covers using Trivy, Grype, and Docker Scout to scan images in your Portainer environment, with automation patterns for CI/CD pipelines.
+Container images bundle an OS, runtime, and application libraries - any of which may contain known CVEs. Scanning images before deployment prevents shipping vulnerable software to production. This guide covers using Trivy, Grype, and Docker Scout to scan images in your Portainer environment, with automation patterns for CI/CD pipelines.
 
 ## Step 1: Scan Images with Trivy
 
@@ -16,6 +16,7 @@ Trivy is the most popular open-source container vulnerability scanner:
 
 ```bash
 # Install Trivy
+
 curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
 
 # Scan a Docker image

@@ -24,6 +24,7 @@ The security model for eBPF troubleshooting tools should be: authorized on-call 
 
 ```yaml
 # calico-ebpf-troubleshoot-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

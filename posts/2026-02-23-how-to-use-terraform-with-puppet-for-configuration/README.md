@@ -28,6 +28,7 @@ The most common approach uses cloud-init or user data to install and configure t
 
 ```hcl
 # variables.tf
+
 variable "puppet_server" {
   description = "FQDN of the Puppet Server"
   type        = string

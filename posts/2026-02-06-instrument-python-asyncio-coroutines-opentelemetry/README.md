@@ -62,6 +62,7 @@ from typing import Any, List, Coroutine
 import time
 
 # Configure tracer provider
+
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter(
     endpoint="http://localhost:4317",

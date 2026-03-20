@@ -51,6 +51,7 @@ On the AWS side:
 
 ```bash
 # Create a Cloud Router with a private ASN
+
 gcloud compute routers create gcp-aws-router \
   --network=your-gcp-vpc \
   --region=us-central1 \

@@ -16,6 +16,7 @@ The foundation is making sure every metric, trace, and log carries region inform
 
 ```python
 # resource_config.py - Set region as a resource attribute
+
 import os
 from opentelemetry.sdk.resources import Resource
 

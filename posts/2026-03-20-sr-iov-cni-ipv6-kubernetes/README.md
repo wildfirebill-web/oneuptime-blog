@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SR-IOV, CNI, IPv6, Kubernetes, DPDK, High Performance, VF
+Tags: SR-IOV, CNI, IPv6, Kubernetes, DPDK, High Performance, VFS
 
 Description: Configure SR-IOV (Single Root I/O Virtualization) CNI for high-performance IPv6 networking in Kubernetes, enabling virtual functions (VFs) with IPv6 addresses for latency-sensitive workloads.
 
@@ -14,6 +14,7 @@ SR-IOV allows a single physical NIC to appear as multiple virtual functions (VFs
 
 ```bash
 # Check SR-IOV support on the NIC
+
 lspci | grep -i ethernet
 ethtool -i ens4f0 | grep driver
 

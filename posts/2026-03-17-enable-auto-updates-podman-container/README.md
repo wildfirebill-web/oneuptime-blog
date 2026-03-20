@@ -27,6 +27,7 @@ The simplest way is to use the `AutoUpdate` directive in a Quadlet file:
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application with auto-update
 

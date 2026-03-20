@@ -22,6 +22,7 @@ Initialize the project:
 
 ```bash
 # Create a new Gleam project
+
 gleam new gleam_docker_demo
 cd gleam_docker_demo
 ```

@@ -33,6 +33,7 @@ This configuration sets up explicit histogram buckets tuned for a typical web se
 
 ```python
 # Python OpenTelemetry SDK - configure histogram buckets
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

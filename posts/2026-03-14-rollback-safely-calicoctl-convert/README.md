@@ -27,6 +27,7 @@ This guide covers rollback strategies for the complete conversion and migration 
 
 ```bash
 # calicoctl convert only outputs to stdout or a file
+
 # It makes NO changes to the cluster
 calicoctl convert -f k8s-policy.yaml -o yaml > calico-policy.yaml
 

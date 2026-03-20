@@ -20,6 +20,7 @@ Before switching, identify what is currently running:
 
 ```bash
 # Check if PulseAudio is running
+
 systemctl --user status pulseaudio
 
 # Check if PipeWire is already running

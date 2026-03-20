@@ -86,6 +86,7 @@ When istiod receives the CSR and JWT token, it needs to verify that the request 
 
 ```bash
 # This is what istiod does internally
+
 kubectl create tokenreview --token=<the-jwt-token>
 ```
 

@@ -22,6 +22,7 @@ Best for: Quick experiments, learning the Talos API, testing configurations
 
 ```bash
 # Create a lab cluster in seconds
+
 talosctl cluster create --provisioner docker --name lab --controlplanes 1 --workers 2
 ```
 
@@ -364,7 +365,7 @@ talosctl cluster destroy --name lab
 # The immutable nature means a config re-apply resets everything
 ```
 
-## Resource Planning
+Resource Planning
 
 Here are the recommended minimum resources for different lab configurations:
 

@@ -24,6 +24,7 @@ This guide covers the diagnostic steps for each category of installation failure
 
 ```bash
 # If GitHub is restricted, check network access
+
 curl -I https://github.com/cilium/cilium-cli/releases/ --max-time 10
 
 # Use explicit proxy if required

@@ -30,6 +30,7 @@ Route aggregation reduces the number of individual routes by summarizing contigu
 
 ```yaml
 # ippool-aggregation.yaml
+
 # Configure IP pools with block sizes that enable aggregation
 apiVersion: projectcalico.org/v3
 kind: IPPool

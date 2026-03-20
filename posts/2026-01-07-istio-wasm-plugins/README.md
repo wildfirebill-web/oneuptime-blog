@@ -112,6 +112,7 @@ The following commands install the Rust toolchain with the WebAssembly target:
 
 ```bash
 # Install Rust using rustup
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Add the WebAssembly target for compilation

@@ -25,6 +25,7 @@ Here is a simple example that changes a port number in a config file.
 
 ```yaml
 # Change the listen port from 8080 to 9090 in an nginx config
+
 - name: Update nginx listen port
   ansible.builtin.replace:
     path: /etc/nginx/sites-available/default

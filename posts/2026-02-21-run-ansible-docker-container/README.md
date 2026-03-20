@@ -24,6 +24,7 @@ The Ansible community maintains container images that are ready to use:
 
 ```bash
 # Pull the latest Ansible image
+
 docker pull quay.io/ansible/creator-ee:latest
 
 # Run an ad-hoc command

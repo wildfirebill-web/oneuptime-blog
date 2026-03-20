@@ -62,6 +62,7 @@ spec:
 
 ```bash
 # Set the sync option on an existing application
+
 argocd app set my-app --sync-option CreateNamespace=true
 
 # Or when creating the application

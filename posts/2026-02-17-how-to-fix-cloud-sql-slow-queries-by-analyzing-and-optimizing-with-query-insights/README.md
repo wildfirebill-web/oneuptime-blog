@@ -16,6 +16,7 @@ Query Insights is not enabled by default. Turn it on for your instance:
 
 ```bash
 # Enable Query Insights with full configuration
+
 gcloud sql instances patch my-instance \
     --insights-config-query-insights-enabled \
     --insights-config-query-string-length=4096 \

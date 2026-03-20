@@ -40,6 +40,7 @@ This setup configures the OpenTelemetry SDK with periodic metric export to a col
 
 ```python
 # otel_metrics_setup.py
+
 # Configure OpenTelemetry metrics for rate limiting monitoring
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider

@@ -14,6 +14,7 @@ String variables are the most common type in OpenTofu. They hold text values and
 
 ```hcl
 # Basic string variable
+
 variable "environment" {
   type = string
 }

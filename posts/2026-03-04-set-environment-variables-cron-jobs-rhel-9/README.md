@@ -22,6 +22,7 @@ The easiest way to see cron's environment is to capture it.
 
 ```bash
 # Add this to your crontab temporarily to dump the cron environment
+
 # Remove it after checking
 * * * * * env > /tmp/cron-env.txt 2>&1
 ```

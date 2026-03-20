@@ -55,6 +55,7 @@ Use the Rancher API or UI to create projects. Here is an example using kubectl w
 
 ```yaml
 # project.yaml
+
 # Creates a new project in Rancher for Team Alpha
 # Projects group namespaces and provide a boundary for RBAC and quotas
 apiVersion: management.cattle.io/v3
@@ -146,7 +147,7 @@ done
 echo "Namespaces created successfully for tenant: $TENANT_NAME"
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Resource quotas ensure fair resource distribution among tenants and prevent any single tenant from consuming all cluster resources.
 
@@ -264,7 +265,7 @@ spec:
         storage: "1Gi"          # Minimum PVC size
 ```
 
-### Resource Quota Monitoring Dashboard
+Resource Quota Monitoring Dashboard
 
 ```mermaid
 flowchart LR

@@ -18,6 +18,7 @@ Dual-stack networks support both IPv4 and IPv6 on the same network interface. Th
 
 ```bash
 # Create a network with both IPv4 and IPv6 subnets
+
 podman network create \
   --subnet 10.90.0.0/24 \
   --gateway 10.90.0.1 \

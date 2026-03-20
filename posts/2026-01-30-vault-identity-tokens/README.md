@@ -41,6 +41,7 @@ The identity secrets engine is enabled by default at the `/identity` path. Verif
 
 ```bash
 # List enabled secrets engines
+
 vault secrets list
 
 # Output should include:

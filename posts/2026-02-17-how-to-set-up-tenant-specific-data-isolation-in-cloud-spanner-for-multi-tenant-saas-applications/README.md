@@ -72,6 +72,7 @@ Your application layer must enforce that every query is scoped to the correct te
 
 ```python
 # data_access/spanner_client.py
+
 from google.cloud import spanner
 
 class TenantScopedSpannerClient:

@@ -105,6 +105,7 @@ The top row of the dashboard should show all services at a glance using Stat pan
 
 ```promql
 # Health score per service (100 = perfect, 0 = fully degraded)
+
 # Combines error rate and latency SLI into a single number
 (
   clamp_min(

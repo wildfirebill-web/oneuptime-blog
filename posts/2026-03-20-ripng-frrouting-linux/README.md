@@ -14,6 +14,7 @@ FRRouting's `ripngd` daemon provides RIPng support on Linux. Configuration is do
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install frr
 
 # Enable the ripngd daemon
@@ -78,7 +79,7 @@ write memory
 
 Alternatively, edit the config directly:
 
-```
+```text
 # /etc/frr/ripngd.conf
 router ripng
  network eth0
@@ -95,7 +96,7 @@ vtysh
 configure terminal
 
 router ripng
- ! Default is 120 — change if needed
+ ! Default is 120 - change if needed
  distance 115
 
 end
@@ -132,7 +133,7 @@ ip -6 route show proto ripng
 
 ## Sample Output
 
-```
+```text
 Router# show ipv6 ripng
 
 Codes: R - RIPng, C - connected, S - Static, O - OSPF, B - BGP

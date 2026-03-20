@@ -44,6 +44,7 @@ The collector deployment architecture depends on your infrastructure. For Kubern
 
 ```yaml
 # Kubernetes DaemonSet for node-level collectors
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

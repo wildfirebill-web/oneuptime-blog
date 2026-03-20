@@ -110,6 +110,7 @@ You can also hash on other request properties:
 
 ```yaml
 # Hash on a cookie
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

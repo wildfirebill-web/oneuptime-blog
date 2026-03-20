@@ -35,6 +35,7 @@ Pick a low-risk, non-critical service to start with. A staging namespace or an i
 
 ```bash
 # Label the namespace for auto-injection
+
 kubectl label namespace staging istio-injection=enabled
 
 # Restart deployments to inject sidecars

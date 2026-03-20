@@ -28,6 +28,7 @@ First, create an HCP Terraform account and organization:
 
 ```bash
 # Install the Terraform CLI if you do not have it
+
 brew install terraform
 
 # Login to HCP Terraform

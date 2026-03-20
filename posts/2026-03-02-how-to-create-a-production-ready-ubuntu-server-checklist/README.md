@@ -14,6 +14,7 @@ Every production Ubuntu server should go through a baseline configuration proces
 
 ```bash
 # Update everything first
+
 sudo apt update && sudo apt full-upgrade -y
 
 # Set the hostname properly

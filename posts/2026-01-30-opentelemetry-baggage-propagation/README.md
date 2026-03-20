@@ -1538,6 +1538,7 @@ app.listen(3002, () => {
 
 ```bash
 # Start all services in separate terminals
+
 node gateway/index.js
 node order-service/index.js
 node payment-service/index.js

@@ -30,6 +30,7 @@ Cilium assigns a security identity to each unique set of labels. By default, man
 
 ```bash
 # Check current identity count
+
 cilium identity list | wc -l
 
 # See which labels are identity-relevant

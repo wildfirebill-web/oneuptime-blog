@@ -51,6 +51,7 @@ The `amplify.yml` file needs to account for the monorepo structure. Place it at 
 
 ```yaml
 # amplify.yml at repo root
+
 version: 1
 applications:
   - appRoot: apps/web

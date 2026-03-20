@@ -36,6 +36,7 @@ expense-tracker/
 
 ```bash
 # Create the project structure
+
 mkdir expense-tracker && cd expense-tracker
 npm init -y
 

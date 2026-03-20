@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bridge, brctl, ip link, Linux, Networking, Bridge Management, Comparison
+Tags: Bridge, Brctl, Ip link, Linux, Networking, Bridge Management, Comparison
 
 Description: Learn the differences between brctl and ip link/bridge for Linux bridge management, including equivalent commands for creating bridges, adding ports, and inspecting bridge state.
 
@@ -30,6 +30,7 @@ Description: Learn the differences between brctl and ip link/bridge for Linux br
 
 ```bash
 # brctl (legacy)
+
 brctl addbr br0
 brctl addif br0 eth0
 ip link set br0 up
@@ -83,7 +84,7 @@ bridge vlan del dev eth0 vid 10
 
 ## Which to Use?
 
-```
+```text
 Use ip link / bridge (iproute2) for:
   - New configurations (modern, actively maintained)
   - VLAN filtering features
@@ -99,5 +100,5 @@ Use brctl for:
 
 - `brctl` and `ip link/bridge` manage the same kernel bridge subsystem; either can be used.
 - `brctl` is deprecated upstream; `ip link` and `bridge` are the current standard.
-- VLAN filtering features are only available via the `bridge` command — `brctl` has no VLAN support.
+- VLAN filtering features are only available via the `bridge` command - `brctl` has no VLAN support.
 - Use `bridge fdb show br br0` for JSON output (`-j`) compatible with monitoring pipelines.

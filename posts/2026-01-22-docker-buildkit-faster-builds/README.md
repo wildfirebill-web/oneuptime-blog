@@ -16,6 +16,7 @@ BuildKit is Docker's modern build subsystem that dramatically improves build per
 
 ```bash
 # Enable for a single build
+
 DOCKER_BUILDKIT=1 docker build -t myapp .
 
 # Or export for the session

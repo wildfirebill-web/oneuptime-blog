@@ -14,6 +14,7 @@ After enabling IPv6 on your VPC, you assign `/64` IPv6 CIDR blocks to individual
 
 ```bash
 # Get VPC IPv6 CIDR block
+
 VPC_ID="vpc-12345678"
 
 IPV6_CIDR=$(aws ec2 describe-vpcs \
@@ -45,7 +46,7 @@ aws ec2 modify-subnet-attribute \
 ## Terraform Configuration for IPv6 Subnets
 
 ```hcl
-# subnets.tf — IPv6-enabled subnets
+# subnets.tf - IPv6-enabled subnets
 
 locals {
   # Extract the /56 prefix to carve /64 subnets
@@ -148,4 +149,4 @@ aws ec2 describe-subnets \
 
 ## Conclusion
 
-AWS IPv6 subnets use `/64` blocks carved from the VPC's `/56` block. Use `cidrsubnet(vpc.ipv6_cidr_block, 8, N)` in Terraform to generate each subnet's IPv6 CIDR. Enable `assign_ipv6_address_on_creation = true` to automatically assign IPv6 addresses to instances. Remember that all IPv6 addresses in AWS are globally routable — "private" vs "public" is controlled by routing and security groups, not by the IP address itself. Configure route tables to route `::/0` through an Internet Gateway for public subnets or an Egress-Only IGW for private subnets.
+AWS IPv6 subnets use `/64` blocks carved from the VPC's `/56` block. Use `cidrsubnet(vpc.ipv6_cidr_block, 8, N)` in Terraform to generate each subnet's IPv6 CIDR. Enable `assign_ipv6_address_on_creation = true` to automatically assign IPv6 addresses to instances. Remember that all IPv6 addresses in AWS are globally routable - "private" vs "public" is controlled by routing and security groups, not by the IP address itself. Configure route tables to route `::/0` through an Internet Gateway for public subnets or an Egress-Only IGW for private subnets.

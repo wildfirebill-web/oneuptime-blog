@@ -16,6 +16,7 @@ Before adding it to Portainer, ensure your registry is running:
 
 ```bash
 # Run a basic private registry on port 5000
+
 docker run -d \
   -p 5000:5000 \
   --restart=always \

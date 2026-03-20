@@ -19,10 +19,11 @@ sudo apt-get install -y squid
 
 ## Basic Squid Configuration
 
-```
+```text
 # /etc/squid/squid.conf
 
 # Port Squid listens on
+
 http_port 3128
 
 # Define trusted client networks

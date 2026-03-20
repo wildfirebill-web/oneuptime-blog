@@ -103,6 +103,7 @@ Using Agones (the Kubernetes game server framework) with ArgoCD:
 
 ```yaml
 # Install Agones via ArgoCD
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -73,6 +73,7 @@ DAY_OF_MONTH=$(date +%d)
 MONTH=$(date +%m)
 
 # Determine backup tier
+
 if [ "$MONTH" = "01" ] && [ "$DAY_OF_MONTH" = "01" ]; then
     TIER="yearly"
     RETENTION_DAYS=2555  # ~7 years

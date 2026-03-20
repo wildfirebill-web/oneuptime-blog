@@ -39,6 +39,7 @@ Content trust must be enabled at the registry level.
 
 ```bash
 # Enable content trust on the ACR instance
+
 az acr config content-trust update \
   --registry myregistry \
   --status enabled

@@ -23,6 +23,7 @@ BuildKit (Docker's modern build engine) maintains a more sophisticated cache tha
 
 ```bash
 # Check how much space the build cache is using
+
 docker system df
 
 # Detailed view showing build cache size

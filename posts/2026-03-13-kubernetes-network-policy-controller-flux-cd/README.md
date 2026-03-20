@@ -25,6 +25,7 @@ Cilium provides eBPF-based networking with advanced NetworkPolicy support:
 
 ```yaml
 # clusters/production/infrastructure/cilium.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -39,6 +39,7 @@ Docker Desktop supports Wasm containers through the containerd integration.
 
 ```bash
 # Enable Wasm support in Docker Desktop
+
 # Go to Settings > Features in development > Enable Wasm
 # Or use the CLI to enable containerd image store
 

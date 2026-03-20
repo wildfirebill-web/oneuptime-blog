@@ -43,6 +43,7 @@ This assigns the built-in prerequisite policies at the subscription level:
 
 ```bash
 # Assign the prerequisite policy that deploys the Guest Configuration extension
+
 # This handles both Windows and Linux VMs
 az policy assignment create \
   --name "deploy-gc-extension-windows" \

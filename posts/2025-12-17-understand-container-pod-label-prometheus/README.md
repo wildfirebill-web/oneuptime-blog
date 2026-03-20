@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Kubernetes, CAdvisor, Containers, Metrics, Monitoring, Pods, Labels, Observability
+Tags: Prometheus, Kubernetes, cAdvisor, Containers, Metrics, Monitoring, Pods, Labels, Observability
 
 Description: Learn what the container='POD' label means in Prometheus metrics from Kubernetes.
 
@@ -64,6 +64,7 @@ cAdvisor (Container Advisor), which provides container metrics to Prometheus, re
 
 ```promql
 # Raw container metrics for a pod
+
 container_memory_usage_bytes{
   pod="my-app-7b5f9c6d4f-abc12",
   container="POD",
@@ -256,7 +257,7 @@ sum(rate(container_cpu_cfs_throttled_seconds_total{
 }[5m])) by (namespace, pod, container)
 ```
 
-### Resource Requests vs Usage
+Resource Requests vs Usage
 
 ```promql
 # Memory usage vs requests

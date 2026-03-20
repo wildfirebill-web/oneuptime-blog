@@ -28,6 +28,7 @@ This guide provides a systematic diagnostic methodology for 32-process workloads
 
 ```bash
 # Deploy iperf3 server
+
 kubectl run iperf-server --image=networkstatic/iperf3 \
   --overrides='{"spec":{"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- -s

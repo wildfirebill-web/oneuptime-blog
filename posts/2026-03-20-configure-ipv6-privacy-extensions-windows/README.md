@@ -12,6 +12,7 @@ Windows generates both stable (based on hardware) and temporary (random) IPv6 ad
 
 ```powershell
 # Check current privacy state
+
 netsh interface ipv6 show privacy
 
 # Output:

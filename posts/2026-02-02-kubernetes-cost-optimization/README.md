@@ -46,7 +46,7 @@ flowchart LR
     D --> E
 ```
 
-## Resource Right-Sizing
+Resource Right-Sizing
 
 Right-sizing means matching resource requests and limits to actual workload needs. Many teams set high requests "just in case" and never revisit them.
 
@@ -56,6 +56,7 @@ The following command retrieves CPU and memory usage metrics for all pods in a n
 
 ```bash
 # Get resource usage for all pods in a namespace
+
 # Shows actual CPU and memory consumption versus requested amounts
 kubectl top pods -n production --containers
 

@@ -30,6 +30,7 @@ AKS clusters created with the Azure CLI use system-assigned managed identity by 
 
 ```bash
 # Set variables for reuse throughout the guide
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export CLUSTER_NAME="aks-fluxcd-demo"
 export LOCATION="eastus"

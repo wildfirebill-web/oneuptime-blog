@@ -28,6 +28,7 @@ When clients report failures that the parser logs show as successful, or vice ve
 
 ```bash
 # Capture traffic for analysis
+
 kubectl exec -n kube-system ds/cilium -- \
     tcpdump -i any -w /tmp/corner-case.pcap port 9000 -c 50
 

@@ -347,6 +347,7 @@ Second, the number of generated applications grows multiplicatively. Three gener
 
 ```bash
 # Check how many applications a matrix produces
+
 kubectl get applications -n argocd -l app.kubernetes.io/managed-by=applicationset-controller | wc -l
 
 # Monitor ApplicationSet controller resources

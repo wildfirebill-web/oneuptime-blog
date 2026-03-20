@@ -36,6 +36,7 @@ IOS-XR uses a commit model. Configuration changes are staged and do not take eff
 
 ```bash
 # Install the Cisco IOS-XR collection
+
 ansible-galaxy collection install cisco.iosxr
 ansible-galaxy collection install ansible.netcommon
 

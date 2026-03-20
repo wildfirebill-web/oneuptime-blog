@@ -25,6 +25,7 @@ The Azure Terraform provider (`hashicorp/azurerm`) is one of the most comprehens
 
 ```bash
 # Create Azure credentials secret for the Tofu Controller runner pods
+
 kubectl create secret generic terraform-azure-credentials \
   --namespace flux-system \
   --from-literal=ARM_CLIENT_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \

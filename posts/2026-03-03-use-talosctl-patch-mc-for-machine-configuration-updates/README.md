@@ -26,6 +26,7 @@ A patch file contains the same YAML structure as the machine configuration, but 
 
 ```yaml
 # hostname-patch.yaml
+
 machine:
     network:
         hostname: my-new-hostname

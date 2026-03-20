@@ -46,6 +46,7 @@ SOX requires that no single person can both make and approve changes to financia
 
 ```bash
 # Create a custom role for financial data viewers (read-only)
+
 gcloud iam roles create financialDataViewer \
     --project=financial-app-project \
     --title="Financial Data Viewer" \

@@ -13,7 +13,8 @@ Ping is the most fundamental network diagnostic tool. It sends ICMP Echo Request
 ## Basic Ping Usage
 
 ```bash
-# Ping a host (Linux — sends indefinitely until Ctrl+C)
+# Ping a host (Linux - sends indefinitely until Ctrl+C)
+
 ping 8.8.8.8
 
 # Send exactly 4 packets
@@ -51,11 +52,11 @@ ping -c 5 8.8.8.8
 # Set packet size (useful for MTU testing)
 ping -s 1400 -c 4 8.8.8.8
 
-# Set TTL (limit hops — useful to detect path segments)
+# Set TTL (limit hops - useful to detect path segments)
 ping -t 5 -c 4 8.8.8.8   # macOS
 ping -m 5 -c 4 8.8.8.8   # Linux (use --ttl on some)
 
-# Set interval between packets (flood testing — needs root)
+# Set interval between packets (flood testing - needs root)
 sudo ping -i 0.1 -c 100 192.168.1.1
 
 # Flood ping (very fast, for stress testing)
@@ -99,7 +100,7 @@ ping -c 2 google.com &>/dev/null && echo "OK: DNS resolution" || echo "FAIL: DNS
 # Run a longer ping to detect intermittent loss
 ping -c 100 -i 0.5 10.20.0.1 | tail -5
 
-# Intermittent loss pattern — check for:
+# Intermittent loss pattern - check for:
 # - Duplex mismatch on the link
 # - Queue overflow (high traffic bursts)
 # - Wireless signal issues

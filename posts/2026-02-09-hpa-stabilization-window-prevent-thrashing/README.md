@@ -307,6 +307,7 @@ Track how stabilization windows affect scaling behavior.
 
 ```bash
 # Watch HPA decisions over time
+
 kubectl get hpa stable-web-app-hpa -w
 
 # Check recent scaling events

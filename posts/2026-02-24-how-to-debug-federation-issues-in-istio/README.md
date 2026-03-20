@@ -79,6 +79,7 @@ Check the certificate chain on both sides:
 
 ```bash
 # Client side
+
 istioctl proxy-config secret \
   $(kubectl get pod -n sample -l app=sleep -o jsonpath='{.items[0].metadata.name}' \
   --context=cluster-west) --context=cluster-west

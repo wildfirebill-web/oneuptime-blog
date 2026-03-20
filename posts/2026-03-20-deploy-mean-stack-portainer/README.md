@@ -88,6 +88,7 @@ Build the Angular app before deploying:
 
 ```bash
 # In your Angular project
+
 ng build --configuration production
 
 # The output goes to dist/your-app/ - mount this in the nginx container

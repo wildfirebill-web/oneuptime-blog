@@ -20,9 +20,9 @@ graph LR
 
 ## Architecture Options
 
-**Option 1: Combined node** — DNS64 and NAT64 run on the same Linux host. Simplest for small deployments.
+**Option 1: Combined node** - DNS64 and NAT64 run on the same Linux host. Simplest for small deployments.
 
-**Option 2: Separate nodes** — DNS64 runs on dedicated resolver infrastructure; NAT64 runs on a router/gateway. Better for production scale.
+**Option 2: Separate nodes** - DNS64 runs on dedicated resolver infrastructure; NAT64 runs on a router/gateway. Better for production scale.
 
 ## Step 1: Deploy the NAT64 Gateway with Jool
 
@@ -30,6 +30,7 @@ On the NAT64 gateway host:
 
 ```bash
 # Install Jool
+
 apt install jool-dkms jool-tools
 
 # Load the kernel module

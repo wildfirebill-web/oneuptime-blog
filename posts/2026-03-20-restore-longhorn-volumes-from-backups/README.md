@@ -8,7 +8,7 @@ Description: Learn how to restore Longhorn volumes from backups stored in S3, NF
 
 ## Introduction
 
-Restoring from backups is the most critical operation in any data protection system. Longhorn provides multiple methods to restore volumes from external backups — whether you're recovering from a disaster, migrating to a new cluster, or testing your recovery procedures. This guide covers all restore methods with step-by-step instructions.
+Restoring from backups is the most critical operation in any data protection system. Longhorn provides multiple methods to restore volumes from external backups - whether you're recovering from a disaster, migrating to a new cluster, or testing your recovery procedures. This guide covers all restore methods with step-by-step instructions.
 
 ## Prerequisites
 
@@ -53,6 +53,7 @@ After restoration, the volume appears as **Detached**. Create a PV/PVC to use it
 
 ```yaml
 # pv-restored.yaml - PersistentVolume pointing to the restored Longhorn volume
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -206,7 +207,7 @@ kubectl patch settings.longhorn.io backup-target-poll-interval \
   -p '{"value": "300"}'
 ```
 
-Or from the Longhorn UI, navigate to **Backup** — it will automatically discover backups.
+Or from the Longhorn UI, navigate to **Backup** - it will automatically discover backups.
 
 ### Step 3: Restore the Backup
 

@@ -37,6 +37,7 @@ Every commit to your config repo is a deployment event:
 
 ```bash
 # View deployment history for a specific service
+
 git log --oneline --format='%h %ai %an: %s' -- services/payment-service/
 
 # Output:

@@ -16,6 +16,7 @@ By default, a child module inherits the default provider from its parent. If you
 
 ```hcl
 # Root module - providers.tf
+
 provider "aws" {
   region = "us-east-1"
 }

@@ -22,6 +22,7 @@ OpenVPN is one of the most widely deployed VPN solutions for self-hosted infrast
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install OpenVPN and Easy-RSA (PKI management tool)

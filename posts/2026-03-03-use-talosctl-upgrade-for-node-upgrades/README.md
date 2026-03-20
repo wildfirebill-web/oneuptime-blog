@@ -22,6 +22,7 @@ To upgrade a single node:
 
 ```bash
 # Upgrade a node to a specific version
+
 talosctl upgrade --nodes 192.168.1.10 \
   --image ghcr.io/siderolabs/installer:v1.7.0
 ```

@@ -18,6 +18,7 @@ Before installing CDK, make sure you have these in place.
 
 ```bash
 # Check that Node.js is installed (CDK requires Node.js 14.x or later)
+
 node --version
 
 # Check that npm is available

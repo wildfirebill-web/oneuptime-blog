@@ -18,6 +18,7 @@ Start with your cluster topology. AKS supports multiple node pools, which let yo
 
 ```bash
 # Create an AKS cluster with a system node pool
+
 # System pool runs Kubernetes system components
 az aks create \
   --resource-group myResourceGroup \

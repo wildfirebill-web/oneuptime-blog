@@ -22,6 +22,7 @@ Before deploying, generate the initial configuration:
 
 ```bash
 # Generate a homeserver.yaml and signing key
+
 docker run --rm -v synapse_data:/data \
   -e SYNAPSE_SERVER_NAME=matrix.example.com \
   -e SYNAPSE_REPORT_STATS=no \

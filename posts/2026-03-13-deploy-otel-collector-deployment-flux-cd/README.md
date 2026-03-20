@@ -29,6 +29,7 @@ Define an `OpenTelemetryCollector` with `mode: deployment` for centralized aggre
 
 ```yaml
 # clusters/my-cluster/otel/otel-deployment-collector.yaml
+
 apiVersion: opentelemetry.io/v1alpha1
 kind: OpenTelemetryCollector
 metadata:

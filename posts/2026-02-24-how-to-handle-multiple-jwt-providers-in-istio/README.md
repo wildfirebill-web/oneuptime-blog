@@ -111,6 +111,7 @@ Once tokens are validated, you can write AuthorizationPolicies that differentiat
 
 ```yaml
 # Allow Auth0 users to access the user-facing API
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -55,6 +55,7 @@ security/
 
 ```yaml
 # security/crowdsec/Chart.yaml
+
 apiVersion: v2
 name: crowdsec
 description: Wrapper chart for CrowdSec

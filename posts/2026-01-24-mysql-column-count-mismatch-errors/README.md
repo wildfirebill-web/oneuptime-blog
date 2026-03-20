@@ -107,6 +107,7 @@ INSERT INTO users (username, email) VALUES
 """
 
 # Extract and validate each row
+
 values_pattern = r"\(([^)]+)\)"
 matches = re.findall(values_pattern, insert_sql)
 

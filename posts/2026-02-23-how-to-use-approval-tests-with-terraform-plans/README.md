@@ -44,6 +44,7 @@ Create a directory for approved plans and a script to manage them.
 ```bash
 #!/bin/bash
 # scripts/approval-test.sh
+
 # Compare current Terraform plan against approved plan
 
 set -e

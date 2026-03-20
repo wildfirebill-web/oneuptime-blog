@@ -41,6 +41,7 @@ Start with a simple SSML document that selects a voice and synthesizes text:
 
 ```python
 # basic_ssml.py - Simple SSML text-to-speech synthesis
+
 import azure.cognitiveservices.speech as speechsdk
 
 # Configure the speech service

@@ -569,6 +569,7 @@ Create a Deployment and Service for the webhook:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

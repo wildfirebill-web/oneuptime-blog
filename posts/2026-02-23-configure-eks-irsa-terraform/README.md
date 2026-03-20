@@ -45,6 +45,7 @@ The first step is to create an IAM OIDC identity provider for your EKS cluster. 
 
 ```hcl
 # Reference your existing EKS cluster
+
 data "aws_eks_cluster" "main" {
   name = "my-cluster"
 }

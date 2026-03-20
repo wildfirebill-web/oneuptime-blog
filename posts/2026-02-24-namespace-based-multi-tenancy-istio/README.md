@@ -246,6 +246,7 @@ kubectl create namespace $TENANT
 kubectl label namespace $TENANT istio-injection=enabled tenant=$TENANT
 
 # Apply authorization policy
+
 kubectl apply -f - <<EOF
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy

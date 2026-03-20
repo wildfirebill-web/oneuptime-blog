@@ -12,7 +12,7 @@ Cloud providers enforce API rate limits. When OpenTofu applies large configurati
 
 ## Common Rate Limit Errors
 
-```
+```text
 Error: creating EC2 Instance: RequestLimitExceeded: Request limit exceeded.
   status code: 503
 
@@ -28,6 +28,7 @@ OpenTofu applies up to 10 resources concurrently by default. Reducing parallelis
 
 ```bash
 # Reduce to 5 concurrent operations (default is 10)
+
 tofu apply -parallelism=5
 
 # For very large configurations with aggressive rate limits

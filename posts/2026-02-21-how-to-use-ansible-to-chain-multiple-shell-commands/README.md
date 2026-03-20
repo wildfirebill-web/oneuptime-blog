@@ -18,6 +18,7 @@ The `&&` operator runs the next command only if the previous one succeeded (exit
 
 ```yaml
 # chain commands with && so later commands only run if earlier ones succeed
+
 ---
 - name: Build and deploy application
   hosts: app_servers

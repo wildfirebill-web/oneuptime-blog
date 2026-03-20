@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Reverse Proxy, Linux
+Tags: RHEL, Nginx, Reverse Proxy, Linux
 
 Description: How to configure Nginx as a reverse proxy on RHEL to forward client requests to backend application servers.
 
@@ -24,6 +24,7 @@ This is the step people always forget. SELinux blocks Nginx from making outgoing
 
 ```bash
 # Allow Nginx to connect to backend servers
+
 sudo setsebool -P httpd_can_network_connect 1
 ```
 

@@ -59,6 +59,7 @@ Terraform writes outputs directly to Kubernetes Secrets:
 
 ```hcl
 # Terraform creates the RDS instance
+
 resource "aws_db_instance" "app_db" {
   identifier     = "app-database"
   engine         = "postgres"

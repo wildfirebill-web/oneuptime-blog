@@ -1,4 +1,4 @@
-# How to Deploy Redis on AWS ElastiCache with OpenTofu
+# How to Deploy Redis on AWS ElastiCache with OpenTofu - Elasticache
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

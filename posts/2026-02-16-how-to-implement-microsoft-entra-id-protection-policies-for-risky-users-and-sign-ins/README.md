@@ -61,6 +61,7 @@ You can also query risk detections programmatically using Microsoft Graph.
 
 ```bash
 # Query recent risk detections using Microsoft Graph API
+
 az rest --method GET \
   --url "https://graph.microsoft.com/v1.0/identityProtection/riskDetections" \
   --query "value[0:10].{user:userDisplayName, riskLevel:riskLevel, riskType:riskEventType, timestamp:activityDateTime, location:location.city}" \

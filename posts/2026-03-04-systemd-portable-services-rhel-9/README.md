@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Install tools for creating images
+
 sudo dnf install -y systemd-container
 
 # Create a directory tree for the portable service

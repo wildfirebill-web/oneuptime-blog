@@ -30,6 +30,7 @@ For VPCs in us-east-1, the default domain name is `ec2.internal`. For all other 
 
 ```bash
 # Describe the DHCP option sets associated with your VPC
+
 aws ec2 describe-vpcs \
   --vpc-ids vpc-0abc123def456789 \
   --query 'Vpcs[0].DhcpOptionsId'

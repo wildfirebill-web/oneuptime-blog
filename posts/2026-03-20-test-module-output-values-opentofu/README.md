@@ -8,12 +8,13 @@ Description: Learn how to write OpenTofu tests that verify module output values,
 
 ## Introduction
 
-Module outputs define the public API of your infrastructure modules — what data callers can use. Testing output values ensures your module returns correct, well-formed data. OpenTofu tests can assert against output values directly using `output.<name>` in assert conditions, for both plan-mode and apply-mode tests.
+Module outputs define the public API of your infrastructure modules - what data callers can use. Testing output values ensures your module returns correct, well-formed data. OpenTofu tests can assert against output values directly using `output.<name>` in assert conditions, for both plan-mode and apply-mode tests.
 
 ## Module with Outputs to Test
 
 ```hcl
 # modules/network/outputs.tf
+
 output "vpc_id" {
   description = "The ID of the VPC"
   value       = aws_vpc.main.id
@@ -195,7 +196,7 @@ run "connection_string_is_not_empty" {
   command = plan
 
   assert {
-    # Can check emptiness — sensitive value is redacted in error messages
+    # Can check emptiness - sensitive value is redacted in error messages
     condition     = output.connection_string != ""
     error_message = "connection_string output should not be empty"
   }

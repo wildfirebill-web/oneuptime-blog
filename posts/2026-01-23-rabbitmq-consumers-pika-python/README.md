@@ -22,6 +22,7 @@ Start RabbitMQ locally with the management plugin for monitoring:
 
 ```bash
 # Run RabbitMQ with management UI
+
 docker run -d --name rabbitmq \
   -p 5672:5672 \
   -p 15672:15672 \

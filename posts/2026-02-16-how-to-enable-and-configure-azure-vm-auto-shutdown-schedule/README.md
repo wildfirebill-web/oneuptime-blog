@@ -38,6 +38,7 @@ For scripting and automation, use the CLI:
 
 ```bash
 # Enable auto-shutdown at 7:00 PM Eastern Time
+
 az vm auto-shutdown \
   --resource-group myResourceGroup \
   --name myDevVM \

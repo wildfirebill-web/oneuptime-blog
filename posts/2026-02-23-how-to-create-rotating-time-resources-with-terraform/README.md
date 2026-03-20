@@ -20,6 +20,7 @@ The time_rotating resource stores a rotation timestamp in Terraform state. When 
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

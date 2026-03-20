@@ -43,6 +43,7 @@ The following commands install the Pulumi CLI on different operating systems.
 
 ```bash
 # macOS
+
 brew install pulumi
 
 # Linux

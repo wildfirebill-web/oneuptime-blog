@@ -33,6 +33,7 @@ The simplest approach if you already have Go installed:
 
 ```bash
 # Install the latest version of the builder tool
+
 go install go.opentelemetry.io/collector/cmd/builder@latest
 
 # Verify the installation

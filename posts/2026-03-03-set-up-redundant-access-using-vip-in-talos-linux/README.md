@@ -47,6 +47,7 @@ Start with the standard VIP setup on all control plane nodes:
 
 ```yaml
 # Control plane node configuration with VIP
+
 machine:
   network:
     interfaces:

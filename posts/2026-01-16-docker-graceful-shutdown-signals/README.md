@@ -22,6 +22,7 @@ When Docker stops a container, it sends SIGTERM, waits for a grace period, then 
 The stop timeout can be configured:
 ```bash
 # Wait 30 seconds before SIGKILL
+
 docker stop -t 30 my-container
 
 # In docker-compose.yml

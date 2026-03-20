@@ -25,6 +25,7 @@ Before writing any code, you need to register your application in Azure AD. This
 
 ```bash
 # Register a new application in Azure AD
+
 az ad app create \
   --display-name "React MSAL Demo" \
   --web-redirect-uris "http://localhost:3000" "https://your-production-domain.com" \

@@ -10,7 +10,7 @@ MetalLB Layer 2 mode is the simplest deployment model. One node responds to ARP 
 
 ## How Layer 2 Mode Works
 
-```
+```text
 External Client → ARP request for 192.168.1.200?
 MetalLB Speaker → I have 192.168.1.200 (replies with node MAC)
 External Client → Sends traffic to that node
@@ -23,6 +23,7 @@ One node per IP is the "leader" for ARP. If that node fails, MetalLB elects a ne
 
 ```bash
 # Verify MetalLB is installed
+
 kubectl get pods -n metallb-system
 
 # The IP range must be in the same L2 network as your nodes

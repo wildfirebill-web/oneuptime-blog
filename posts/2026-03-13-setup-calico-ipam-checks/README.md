@@ -22,6 +22,7 @@ Calico IPAM (IP Address Management) allocates IP addresses to pods using a block
 
 ```bash
 # Run a comprehensive IPAM consistency check
+
 calicoctl ipam check
 
 # Expected output: "IPAM is consistent"

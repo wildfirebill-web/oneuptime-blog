@@ -59,6 +59,7 @@ AWX is designed to run on Kubernetes. The AWX Operator is the recommended instal
 
 ```bash
 # Create namespace for AWX
+
 kubectl create namespace awx
 
 # Install AWX Operator using kubectl

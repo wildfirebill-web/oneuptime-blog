@@ -16,6 +16,7 @@ Calico IPAM commands span a wide privilege spectrum: `calicoctl ipam show` and `
 
 ```yaml
 # IPAM read-only access for diagnostic users
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

@@ -20,6 +20,7 @@ Under authentication, always choose SSH keys rather than a password. If you have
 
 ```bash
 # Generate a new SSH key pair locally (if you do not have one)
+
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
 # Display your public key to copy into DigitalOcean

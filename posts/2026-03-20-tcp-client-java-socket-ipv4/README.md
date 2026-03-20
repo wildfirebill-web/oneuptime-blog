@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, TCP, Client, IPv4, Socket, Networking
+Tags: Java, TCP, Client, IPv4, Sockets, Networking
 
 Description: Learn how to build a TCP client in Java that connects to an IPv4 server using java.net.Socket, sends data, and handles responses.
 

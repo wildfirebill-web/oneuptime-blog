@@ -18,6 +18,7 @@ Consider a base deployment and a production overlay:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

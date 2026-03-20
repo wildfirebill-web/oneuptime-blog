@@ -25,6 +25,7 @@ Envoy creates spans for each proxied request. Backend services create their own 
 
 ```yaml
 # envoy.yaml
+
 admin:
   address:
     socket_address:

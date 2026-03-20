@@ -31,6 +31,7 @@ Start by updating your system packages to ensure you have the latest security pa
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

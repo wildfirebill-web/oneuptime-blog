@@ -16,6 +16,7 @@ In this post, I will build a complete GraphQL API using Apollo Server 4 with Fir
 
 ```bash
 # Initialize project and install dependencies
+
 mkdir graphql-firestore && cd graphql-firestore
 npm init -y
 npm install @apollo/server graphql @google-cloud/firestore express cors

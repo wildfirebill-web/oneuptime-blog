@@ -55,6 +55,7 @@ If you have not already enabled Defender for Servers:
 
 ```bash
 # Enable Defender for Servers Plan 2 on a subscription
+
 az security pricing create \
   --name VirtualMachines \
   --tier Standard

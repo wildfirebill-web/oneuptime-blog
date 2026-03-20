@@ -8,12 +8,13 @@ Description: Learn how to diagnose and fix provider authentication failures in O
 
 ## Introduction
 
-Provider authentication failures are among the most common OpenTofu issues. Each cloud provider has multiple authentication methods — environment variables, credential files, instance profiles, service principals — and when the wrong method is active or credentials are expired, OpenTofu fails with cryptic errors. This guide covers diagnosis and fixes for each major provider.
+Provider authentication failures are among the most common OpenTofu issues. Each cloud provider has multiple authentication methods - environment variables, credential files, instance profiles, service principals - and when the wrong method is active or credentials are expired, OpenTofu fails with cryptic errors. This guide covers diagnosis and fixes for each major provider.
 
 ## AWS Authentication Troubleshooting
 
 ```bash
 # Check current AWS identity (this is what OpenTofu will use)
+
 aws sts get-caller-identity
 
 # If this fails, check credential chain:
@@ -31,7 +32,7 @@ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/
 aws sso login --profile my-profile
 ```
 
-```
+```text
 Common AWS errors:
 - "Error: NoCredentialProviders" → no credentials configured
 - "Error: ExpiredTokenException" → temporary credentials expired
@@ -77,7 +78,7 @@ az login --service-principal \
 env | grep ARM_
 ```
 
-```
+```text
 Common Azure errors:
 - "Error: building account: could not find registered subscription"
   → Wrong subscription or not logged in
@@ -118,7 +119,7 @@ gcloud auth application-default login
 echo "GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS"
 ```
 
-```
+```text
 Common GCP errors:
 - "Error: googleapi: Error 403: ... PERMISSION_DENIED"
   → Service account missing required IAM roles
@@ -160,4 +161,4 @@ jobs:
 
 ## Summary
 
-Authentication issues require checking the credential chain for each provider: for AWS, run `aws sts get-caller-identity`; for Azure, run `az account show`; for GCP, run `gcloud auth list`. In CI/CD environments, use OIDC-based authentication (no static credentials) with IAM role assumption. When debugging, temporarily add explicit provider configuration to isolate which credential source is being used. Ensure the IAM role/service principal has the necessary permissions — "AccessDenied" errors are often permission issues, not authentication issues.
+Authentication issues require checking the credential chain for each provider: for AWS, run `aws sts get-caller-identity`; for Azure, run `az account show`; for GCP, run `gcloud auth list`. In CI/CD environments, use OIDC-based authentication (no static credentials) with IAM role assumption. When debugging, temporarily add explicit provider configuration to isolate which credential source is being used. Ensure the IAM role/service principal has the necessary permissions - "AccessDenied" errors are often permission issues, not authentication issues.

@@ -16,6 +16,7 @@ The easiest way to reduce your attack surface is to start small. During RHEL ins
 
 ```bash
 # Check how many packages are installed
+
 rpm -qa | wc -l
 
 # On a minimal install, you should see roughly 300-450

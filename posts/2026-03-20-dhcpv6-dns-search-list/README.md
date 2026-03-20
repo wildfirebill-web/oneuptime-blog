@@ -8,7 +8,7 @@ Description: Learn how to configure the DHCPv6 DNS search list option (option 24
 
 ---
 
-The DHCPv6 DNS search list option (option 24, `domain-search`) distributes a list of domain suffixes to clients. When a client resolves a short hostname like `webserver`, the OS appends each search domain in order until a match is found — for example, `webserver.corp.example.com`.
+The DHCPv6 DNS search list option (option 24, `domain-search`) distributes a list of domain suffixes to clients. When a client resolves a short hostname like `webserver`, the OS appends each search domain in order until a match is found - for example, `webserver.corp.example.com`.
 
 ---
 
@@ -28,6 +28,7 @@ Without a search list, users must type fully qualified domain names (FQDNs). Wit
 
 ```text
 # /etc/dhcp/dhcpd6.conf
+
 option dhcp6.domain-search "corp.example.com", "internal.example.com";
 
 subnet6 2001:db8::/32 {
@@ -169,8 +170,8 @@ sudo tcpdump -i eth0 -v udp port 546 or udp port 547
 
 ## Best Practices
 
-1. **Keep the list short** — 3–5 domains maximum; long lists slow down DNS resolution
-2. **Order by frequency of use** — most commonly resolved domains first
+1. **Keep the list short** - 3–5 domains maximum; long lists slow down DNS resolution
+2. **Order by frequency of use** - most commonly resolved domains first
 3. **Include the FQDN domain** of your organization as the primary entry
 4. **Test after deployment** with `nslookup` or `host` on a sample short hostname
 5. **Document the option** in your IPAM system for change management
@@ -179,7 +180,7 @@ sudo tcpdump -i eth0 -v udp port 546 or udp port 547
 
 ## Conclusion
 
-The DHCPv6 DNS search list option (option 24) simplifies hostname resolution across your IPv6 network. Configure it on your DHCPv6 server — whether ISC DHCP, Kea, or Windows Server — and verify it arrives correctly on Linux and Windows clients.
+The DHCPv6 DNS search list option (option 24) simplifies hostname resolution across your IPv6 network. Configure it on your DHCPv6 server - whether ISC DHCP, Kea, or Windows Server - and verify it arrives correctly on Linux and Windows clients.
 
 ---
 

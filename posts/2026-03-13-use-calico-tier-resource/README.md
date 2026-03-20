@@ -16,6 +16,7 @@ Calico Tier resources enable policy governance at scale - separating who can def
 
 ```yaml
 # Security tier - owned by security team
+
 apiVersion: projectcalico.org/v3
 kind: Tier
 metadata:

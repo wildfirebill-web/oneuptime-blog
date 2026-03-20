@@ -18,6 +18,7 @@ Before making changes, check what you're working with:
 
 ```bash
 # Check if root has a password set
+
 sudo passwd -S root
 ```
 

@@ -22,6 +22,7 @@ Start by identifying what your application actually does with the Kubernetes API
 
 ```bash
 # Enable audit logging to see what API calls your app makes
+
 kubectl get pod myapp-pod -o yaml | grep serviceAccountName
 
 # Check the service account

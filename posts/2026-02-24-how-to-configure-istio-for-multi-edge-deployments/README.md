@@ -28,6 +28,7 @@ All edge clusters need certificates derived from the same root CA. Generate the 
 
 ```bash
 # Create the root CA (do this once, store securely)
+
 mkdir -p certs
 openssl req -new -x509 -nodes -days 3650 \
   -keyout certs/root-key.pem \

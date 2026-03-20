@@ -35,6 +35,7 @@ Add a strategic merge patch to your `flux-system` Kustomization that sets struct
 
 ```yaml
 # clusters/production/flux-system/log-format-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

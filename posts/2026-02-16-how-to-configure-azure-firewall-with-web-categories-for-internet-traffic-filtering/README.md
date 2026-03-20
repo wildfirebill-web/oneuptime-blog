@@ -55,6 +55,7 @@ Create application rules that use web categories as the target:
 
 ```bash
 # Create a rule collection group for web filtering
+
 az network firewall policy rule-collection-group create \
   --name WebFilteringRules \
   --policy-name myFirewallPolicy \

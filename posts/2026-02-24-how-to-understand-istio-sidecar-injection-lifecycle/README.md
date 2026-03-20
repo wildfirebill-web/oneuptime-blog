@@ -210,6 +210,7 @@ Monitor the sidecar's health:
 
 ```bash
 # Check if the sidecar is synchronized with istiod
+
 istioctl proxy-status
 
 # Check the sidecar's current configuration

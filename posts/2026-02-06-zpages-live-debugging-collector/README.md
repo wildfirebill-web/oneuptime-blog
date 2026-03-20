@@ -26,6 +26,7 @@ Adding zPages to your collector configuration requires minimal setup:
 
 ```yaml
 # Basic zPages configuration
+
 extensions:
   # zPages extension provides web-based debugging interface
   zpages:

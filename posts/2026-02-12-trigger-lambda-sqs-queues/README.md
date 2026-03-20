@@ -230,6 +230,7 @@ If this scaling is too aggressive for your downstream services, use `maxConcurre
 
 ```bash
 # Limit to 10 concurrent Lambda invocations
+
 aws lambda update-event-source-mapping \
   --uuid abc-123-def-456 \
   --scaling-config MaxConcurrency=10

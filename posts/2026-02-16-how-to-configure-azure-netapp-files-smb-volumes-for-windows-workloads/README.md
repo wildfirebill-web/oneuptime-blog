@@ -45,6 +45,7 @@ First, register the NetApp resource provider if you have not already, then creat
 
 ```bash
 # Register the Microsoft.NetApp resource provider
+
 az provider register --namespace Microsoft.NetApp
 
 # Wait for registration to complete

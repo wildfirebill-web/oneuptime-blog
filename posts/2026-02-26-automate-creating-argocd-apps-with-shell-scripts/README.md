@@ -30,6 +30,7 @@ Here is a minimal script that creates an ArgoCD application using the CLI:
 ```bash
 #!/bin/bash
 # create-app.sh - Create a single ArgoCD application
+
 set -euo pipefail
 
 APP_NAME="$1"

@@ -33,6 +33,7 @@ Make sure you have:
 
 ```bash
 # Verify cluster version and health
+
 kubectl version
 kubectl get nodes
 ```

@@ -26,6 +26,7 @@ Even if the dump is written to a protected directory, it represents a snapshot o
 
 ```bash
 # Check the current core dump size limit for the current shell
+
 ulimit -c
 
 # If output is 'unlimited', core dumps are enabled for this session

@@ -14,6 +14,7 @@ An Azure Virtual Network (VNet) is the fundamental building block of private net
 
 ```bash
 # Install Azure CLI and login
+
 az login
 az account set --subscription "your-subscription-id"
 

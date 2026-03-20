@@ -14,6 +14,7 @@ VRF (Virtual Routing and Forwarding) creates separate, isolated routing table in
 
 ```bash
 # Create a VRF named "customer-a" with routing table ID 10
+
 ip link add customer-a type vrf table 10
 ip link set customer-a up
 
@@ -84,7 +85,7 @@ ip link set customer-b up
 ip link set eth2 master customer-b
 ip addr add 192.168.20.1/24 dev eth2
 
-# The two VRFs are fully isolated — no cross-VRF routing by default
+# The two VRFs are fully isolated - no cross-VRF routing by default
 ip vrf show
 # Name              Table
 # customer-a        10
@@ -115,4 +116,4 @@ Address=192.168.10.1/24
 
 ## Conclusion
 
-Linux VRFs provide kernel-level routing isolation between tenants or network segments on a single host. Combined with network namespaces (for process-level isolation), VRFs are powerful building blocks for multi-tenant networking. Remember that VRF isolation is at the routing level only — use iptables or network namespaces for stronger security boundaries.
+Linux VRFs provide kernel-level routing isolation between tenants or network segments on a single host. Combined with network namespaces (for process-level isolation), VRFs are powerful building blocks for multi-tenant networking. Remember that VRF isolation is at the routing level only - use iptables or network namespaces for stronger security boundaries.

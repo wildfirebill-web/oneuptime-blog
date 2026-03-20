@@ -19,6 +19,7 @@ AWS Systems Manager Parameter Store provides secure, hierarchical storage for co
 
 ```hcl
 # Application configuration parameters (non-sensitive)
+
 resource "aws_ssm_parameter" "app_environment" {
   name  = "/${var.project_name}/${var.environment}/config/APP_ENV"
   type  = "String"

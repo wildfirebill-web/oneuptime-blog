@@ -51,6 +51,7 @@ Create a `.env.local` file in your project root:
 # .env.local
 
 # Server-only variables (not exposed to browser)
+
 DATABASE_URL=postgresql://localhost:5432/myapp
 API_SECRET_KEY=your-secret-key-here
 STRIPE_SECRET_KEY=sk_test_xxx

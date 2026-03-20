@@ -92,6 +92,7 @@ class SimplePruner:
                     pass  # Module was not pruned
 
 # Example usage
+
 model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
 pruner = SimplePruner(model, pruning_rate=0.5)
 pruner.apply_magnitude_pruning()

@@ -79,6 +79,7 @@ The following installation command creates a minimal K3s server without the defa
 
 ```bash
 # Install K3s with minimal components
+
 # --disable traefik: Removes the default Traefik ingress controller (saves ~50MB RAM)
 # --disable servicelb: Removes the built-in load balancer (saves ~20MB RAM)
 # --disable local-storage: Removes local path provisioner if using external storage
@@ -360,7 +361,7 @@ Apply the LimitRange to enforce default resource constraints:
 kubectl apply -f limit-range.yaml
 ```
 
-### ResourceQuota for Namespace Budgets
+ResourceQuota for Namespace Budgets
 
 ResourceQuotas prevent any single namespace from consuming excessive cluster resources.
 
@@ -445,7 +446,7 @@ spec:
       priorityClassName: system-cluster-critical
 ```
 
-### Resource Monitoring Script
+Resource Monitoring Script
 
 Create a script that monitors cluster resource usage and alerts on inefficiencies.
 

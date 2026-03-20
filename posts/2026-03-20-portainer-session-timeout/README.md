@@ -20,6 +20,7 @@ Set the session timeout at startup. This applies globally to all users:
 
 ```bash
 # Set session timeout to 1 hour
+
 docker run -d \
   --name portainer \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -33,7 +34,7 @@ docker run -d \
 
 Common duration format strings:
 
-```
+```text
 1h      = 1 hour
 30m     = 30 minutes
 2h30m   = 2.5 hours
@@ -47,11 +48,11 @@ Common duration format strings:
 2. Go to **Settings** → **Authentication**
 3. Find **User Session Timeout**
 4. Choose from preset options or enter a custom duration:
-   - `1h` — 1 hour
-   - `4h` — 4 hours (good default for most teams)
-   - `8h` — 8 hours (Portainer default)
-   - `24h` — 24 hours
-   - `168h` — 1 week
+   - `1h` - 1 hour
+   - `4h` - 4 hours (good default for most teams)
+   - `8h` - 8 hours (Portainer default)
+   - `24h` - 24 hours
+   - `168h` - 1 week
 
 ## Method 3: API Configuration
 
@@ -114,7 +115,7 @@ It's important to understand the difference:
 | **JWT Token Expiry** | How long the API token remains valid (tied to session timeout) |
 | **API Access Tokens** | Personal access tokens do not expire based on session timeout |
 
-API access tokens (generated in **Account** → **Access tokens**) are not affected by session timeout — they have their own expiry if set.
+API access tokens (generated in **Account** → **Access tokens**) are not affected by session timeout - they have their own expiry if set.
 
 ## Compliance Recommendations
 

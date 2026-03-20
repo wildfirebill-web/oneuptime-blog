@@ -27,6 +27,7 @@ A block is a CIDR range (e.g., `/26` = 64 IPs) with an "affinity" to a specific 
 
 ```bash
 # View all current block allocations and their affinity
+
 calicoctl ipam show --show-blocks
 
 # Example output interpretation:

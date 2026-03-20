@@ -31,6 +31,7 @@ Whether you are migrating from the Linode web console to Terraform or building n
 
 ```hcl
 # versions.tf - Declare the Linode provider
+
 terraform {
   required_version = ">= 1.0"
 

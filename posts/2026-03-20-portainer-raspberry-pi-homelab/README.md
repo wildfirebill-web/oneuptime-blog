@@ -1,4 +1,4 @@
-# How to Set Up a Home Lab with Portainer on Raspberry Pi
+# How to Set Up a Home Lab with Portainer on Raspberry Pi - Homelab
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to build a complete self-hosted home lab using Portainer 
 
 ## Home Lab Architecture
 
-```
+```text
 Raspberry Pi 4 (4GB+)
 ├── Portainer (management)
 ├── Pi-hole (DNS + ad blocking)
@@ -29,7 +29,8 @@ Raspberry Pi 4 (4GB+)
 
 ```bash
 # Use Raspberry Pi Imager
-# Select: Raspberry Pi OS Lite (64-bit) — no desktop needed
+
+# Select: Raspberry Pi OS Lite (64-bit) - no desktop needed
 
 # Enable SSH in imager settings
 # Set hostname, username, Wi-Fi (if needed)

@@ -109,6 +109,7 @@ The SealedSecret was encrypted with a key that the controller does not have:
 
 ```bash
 # Check controller logs for decryption errors
+
 kubectl logs -n kube-system deployment/sealed-secrets-controller | grep "error\|unseal"
 
 # List available sealing keys

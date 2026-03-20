@@ -75,6 +75,7 @@ Document all Jenkins jobs that deploy to Kubernetes.
 
 ```bash
 # Check Jenkins for deployment jobs
+
 # Look for jobs that:
 # - Use kubectl, helm, or kustomize
 # - Have kubeconfig credentials

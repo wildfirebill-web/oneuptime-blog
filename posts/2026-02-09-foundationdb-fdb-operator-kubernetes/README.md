@@ -22,6 +22,7 @@ Start by installing the operator and its custom resource definitions:
 
 ```bash
 # Create namespace for FDB operator
+
 kubectl create namespace fdb-system
 
 # Install CRDs

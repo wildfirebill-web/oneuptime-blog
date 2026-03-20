@@ -14,6 +14,7 @@ GNOME Shell extensions add functionality to the RHEL desktop environment. They c
 
 ```bash
 # Install the GNOME Extensions app and browser connector
+
 sudo dnf install -y gnome-extensions-app gnome-shell-extension-common
 
 # Install the browser integration for installing extensions from the web

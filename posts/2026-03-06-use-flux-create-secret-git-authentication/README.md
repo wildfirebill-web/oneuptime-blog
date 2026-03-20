@@ -23,6 +23,7 @@ This guide covers all authentication scenarios, from basic HTTPS tokens to SSH d
 
 ```bash
 # Verify Flux is running in your cluster
+
 flux check
 
 # Verify kubectl access

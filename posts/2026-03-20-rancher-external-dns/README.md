@@ -1,4 +1,4 @@
-# How to Set Up External DNS with Rancher
+# How to Set Up External DNS with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ External DNS automatically manages DNS records in external DNS providers (Route5
 
 ```bash
 # Create IAM policy for External DNS
+
 cat > externaldns-policy.json << 'EOF'
 {
   "Version": "2012-10-17",
@@ -317,4 +318,4 @@ kubectl annotate service my-service \
 
 ## Conclusion
 
-External DNS eliminates the manual step of creating DNS records when deploying applications to Rancher. It integrates with all major DNS providers and automatically manages record lifecycle—creating records on deployment and removing them when services are deleted. The annotation-based configuration makes it easy to control which services get DNS records and what those records should contain. For production deployments, use IRSA on EKS or similar cloud-native credential mechanisms to avoid long-lived IAM keys.
+External DNS eliminates the manual step of creating DNS records when deploying applications to Rancher. It integrates with all major DNS providers and automatically manages record lifecycle-creating records on deployment and removing them when services are deleted. The annotation-based configuration makes it easy to control which services get DNS records and what those records should contain. For production deployments, use IRSA on EKS or similar cloud-native credential mechanisms to avoid long-lived IAM keys.

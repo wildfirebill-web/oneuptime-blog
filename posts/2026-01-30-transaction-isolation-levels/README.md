@@ -79,6 +79,7 @@ from psycopg2 import sql
 from psycopg2.extensions import ISOLATION_LEVEL_READ_UNCOMMITTED
 
 # Connect and set isolation level
+
 conn = psycopg2.connect(database="mydb")
 conn.set_isolation_level(ISOLATION_LEVEL_READ_UNCOMMITTED)
 

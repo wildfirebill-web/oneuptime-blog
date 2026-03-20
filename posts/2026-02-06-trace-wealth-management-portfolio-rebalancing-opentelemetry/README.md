@@ -54,6 +54,7 @@ Drift detection scans all managed accounts and flags those that need rebalancing
 import time
 
 # Metrics for the rebalancing pipeline
+
 drift_scan_duration = meter.create_histogram(
     name="rebalancing.drift_scan_duration_seconds",
     description="Time to scan all portfolios for drift",

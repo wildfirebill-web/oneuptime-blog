@@ -41,6 +41,7 @@ The raw zone stores data exactly as it came from the source. The cleaned zone ha
 
 ```bash
 # Create a storage account with Data Lake Gen2 enabled
+
 az storage account create \
   --name analyticsdatalake \
   --resource-group rg-data-pipeline \

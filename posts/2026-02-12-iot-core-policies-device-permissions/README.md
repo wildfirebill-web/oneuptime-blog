@@ -59,6 +59,7 @@ Create and attach this policy:
 
 ```bash
 # Create the policy
+
 aws iot create-policy \
   --policy-name "Sensor001Policy" \
   --policy-document file://sensor-policy.json

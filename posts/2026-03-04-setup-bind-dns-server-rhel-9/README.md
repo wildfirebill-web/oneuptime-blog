@@ -179,6 +179,7 @@ chown named:named /var/named/example.com.zone
 chown named:named /var/named/192.168.1.rev
 
 # Create log directory
+
 mkdir -p /var/log/named
 chown named:named /var/log/named
 ```

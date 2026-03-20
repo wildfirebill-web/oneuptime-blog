@@ -194,6 +194,7 @@ sonic requires Go 1.16 or higher and works best on amd64 architecture with AVX/A
 
 ```bash
 # Install sonic library
+
 go get github.com/bytedance/sonic
 
 # Verify installation

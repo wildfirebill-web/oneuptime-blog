@@ -1,4 +1,4 @@
-# How to Configure Anonymous vs Authenticated Docker Hub Access in Portainer
+# How to Configure Anonymous vs Authenticated Docker Hub Access in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn the differences between anonymous and authenticated Docker Hu
 
 ## Introduction
 
-Portainer can pull Docker Hub images either anonymously or with authentication. The choice significantly impacts your pull rate limits and access to private repositories. Understanding when to use each mode — and how to configure them — is essential for reliable container deployments. This guide covers both approaches.
+Portainer can pull Docker Hub images either anonymously or with authentication. The choice significantly impacts your pull rate limits and access to private repositories. Understanding when to use each mode - and how to configure them - is essential for reliable container deployments. This guide covers both approaches.
 
 ## Docker Hub Access Modes
 
@@ -30,7 +30,7 @@ By default, Portainer pulls Docker Hub public images without authentication. Thi
 - All images are public
 
 **Problems with anonymous access:**
-- Rate limits are per IP — all containers on one host share the limit
+- Rate limits are per IP - all containers on one host share the limit
 - 100 pulls/6h sounds like a lot but can be exhausted quickly with:
   - Multiple services restarting
   - CI/CD pipelines rebuilding frequently
@@ -40,6 +40,7 @@ By default, Portainer pulls Docker Hub public images without authentication. Thi
 
 ```bash
 # Check current rate limit (anonymous)
+
 TOKEN=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:ratelimitpreview/test:pull" | jq -r .token)
 curl -s --head -H "Authorization: Bearer $TOKEN" \
   https://registry-1.docker.io/v2/ratelimitpreview/test/manifests/latest | \
@@ -77,7 +78,7 @@ curl -s --head -H "Authorization: Bearer $TOKEN" \
 3. Select **Docker Hub**
 4. Enter:
 
-```
+```text
 Username:      your-dockerhub-username
 Access token:  dckr_pat_xxxxxxxxxxxxxxxxxx
 ```
@@ -114,7 +115,7 @@ To explicitly use anonymous access only (e.g., to avoid accidentally exposing cr
 
 For organizations with both free and paid accounts:
 
-```
+```bash
 Production Portainer: Authenticated with Pro account (unlimited pulls)
 Dev Portainer:        Authenticated with free account (200/6h)
 CI servers:           Use Docker Hub organization account
@@ -194,4 +195,4 @@ echo "Docker Hub Rate Limit: $REMAINING / $LIMIT remaining"
 
 ## Conclusion
 
-Choosing between anonymous and authenticated Docker Hub access in Portainer depends on your pull frequency and privacy needs. For most production environments, adding authenticated credentials is worth the minimal setup effort — you get double the rate limit and access to private repositories. For organizations with high pull volumes, a local registry mirror eliminates rate limit concerns entirely by caching images locally.
+Choosing between anonymous and authenticated Docker Hub access in Portainer depends on your pull frequency and privacy needs. For most production environments, adding authenticated credentials is worth the minimal setup effort - you get double the rate limit and access to private repositories. For organizations with high pull volumes, a local registry mirror eliminates rate limit concerns entirely by caching images locally.

@@ -36,6 +36,7 @@ Use the `podman_pod` module to create pods:
 
 ```yaml
 # create_pod.yml - Create a basic Podman pod
+
 ---
 - name: Create Podman Pod
   hosts: container_hosts

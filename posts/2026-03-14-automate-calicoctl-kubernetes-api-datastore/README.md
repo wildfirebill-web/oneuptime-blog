@@ -29,6 +29,7 @@ Create a service account specifically for calicoctl with appropriate RBAC permis
 
 ```yaml
 # calicoctl-sa.yaml
+
 # Service account and RBAC for calicoctl
 apiVersion: v1
 kind: ServiceAccount

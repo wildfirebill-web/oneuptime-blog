@@ -47,6 +47,7 @@ volumes:
 
 ```ini
 # mariadb-conf/server.cnf
+
 [mysqld]
 # Performance
 innodb_buffer_pool_size = 256M
@@ -150,7 +151,7 @@ To upgrade from MariaDB 10.x to 11:
 
 1. Back up all data
 2. Update the image tag in Portainer: `mariadb:10` → `mariadb:11`
-3. Update the stack — MariaDB handles in-place upgrade automatically
+3. Update the stack - MariaDB handles in-place upgrade automatically
 4. Verify: `docker exec mariadb mariadb --version`
 
 ## Conclusion

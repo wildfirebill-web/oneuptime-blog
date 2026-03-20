@@ -77,6 +77,7 @@ flowchart LR
 
 ```python
 # Region scoring script for multi-region planning
+
 # Evaluates regions based on multiple criteria
 
 def score_region(region_data):

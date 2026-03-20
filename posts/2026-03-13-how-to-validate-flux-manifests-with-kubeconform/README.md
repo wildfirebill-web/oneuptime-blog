@@ -22,6 +22,7 @@ kubeconform is a fast Kubernetes manifest validator that checks YAML files again
 
 ```bash
 # macOS (Homebrew)
+
 brew install kubeconform
 
 # Linux (binary download)

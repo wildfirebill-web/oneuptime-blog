@@ -49,6 +49,7 @@ The baseline Kubernetes `NetworkPolicy` resource supports label selectors and po
 
 ```yaml
 # Standard Kubernetes NetworkPolicy (no L7 support)
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

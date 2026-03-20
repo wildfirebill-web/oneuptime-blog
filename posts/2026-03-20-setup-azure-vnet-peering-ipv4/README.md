@@ -8,7 +8,7 @@ Description: Configure Azure VNet peering between two virtual networks to enable
 
 ## Introduction
 
-Azure VNet peering connects two VNets so VMs in each can communicate using private IPv4 addresses. Traffic routes through Microsoft's backbone network, not over the public internet. Peering is non-transitive — if VNet A peers with VNet B and VNet B peers with VNet C, VNet A cannot reach VNet C without direct peering.
+Azure VNet peering connects two VNets so VMs in each can communicate using private IPv4 addresses. Traffic routes through Microsoft's backbone network, not over the public internet. Peering is non-transitive - if VNet A peers with VNet B and VNet B peers with VNet C, VNet A cannot reach VNet C without direct peering.
 
 ## Prerequisites
 
@@ -18,6 +18,7 @@ The two VNets must have non-overlapping IPv4 address spaces.
 RESOURCE_GROUP="my-network-rg"
 
 # VNet 1: 10.1.0.0/16 in eastus
+
 az network vnet create \
   --resource-group $RESOURCE_GROUP \
   --name vnet-hub \
@@ -32,7 +33,7 @@ az network vnet create \
   --location eastus
 ```
 
-## Creating Peering — Both Directions Required
+## Creating Peering - Both Directions Required
 
 VNet peering requires a peering link from each side:
 

@@ -22,6 +22,7 @@ Profiles let you define services that are only started in specific scenarios:
 
 ```yaml
 # stack with profiles
+
 version: "3.8"
 services:
   # Always started
@@ -44,7 +45,7 @@ services:
 ```
 
 In Portainer, set the COMPOSE_PROFILES environment variable:
-```
+```text
 COMPOSE_PROFILES=monitoring,debug
 ```
 
@@ -147,7 +148,7 @@ services:
 
 ## Deploying in Portainer
 
-Paste the compose YAML directly into Portainer's stack editor at **Stacks > Add Stack > Web Editor**. Portainer handles YAML anchors, profiles, and extension fields transparently — they're all valid Docker Compose syntax that Portainer passes to Docker's Compose engine.
+Paste the compose YAML directly into Portainer's stack editor at **Stacks > Add Stack > Web Editor**. Portainer handles YAML anchors, profiles, and extension fields transparently - they're all valid Docker Compose syntax that Portainer passes to Docker's Compose engine.
 
 ## Summary
 

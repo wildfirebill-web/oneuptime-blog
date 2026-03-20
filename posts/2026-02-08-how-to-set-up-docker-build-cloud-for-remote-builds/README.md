@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Log in to your Docker account
+
 docker login
 ```
 

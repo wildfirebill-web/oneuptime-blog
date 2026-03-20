@@ -86,6 +86,7 @@ You need a storage account and file share for snapshot files. Here is how to cre
 
 ```bash
 # Create a storage account for replication snapshots
+
 az storage account create \
     --name replstorage \
     --resource-group myResourceGroup \

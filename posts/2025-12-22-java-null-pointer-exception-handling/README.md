@@ -362,6 +362,7 @@ public class GlobalExceptionHandler {
 
 ```bash
 # Already enabled by default in Java 15+
+
 java -XX:+ShowCodeDetailsInExceptionMessages -jar app.jar
 ```
 

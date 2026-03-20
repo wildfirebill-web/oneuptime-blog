@@ -38,6 +38,7 @@ Before starting your migration, complete these steps:
 
 ```bash
 # Connect to your existing Redis
+
 redis-cli -h your-redis-host -p 6379
 
 # Get server info

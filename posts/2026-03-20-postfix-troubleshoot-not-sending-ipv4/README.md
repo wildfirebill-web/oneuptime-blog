@@ -8,12 +8,13 @@ Description: Diagnose and fix Postfix mail delivery failures caused by failed IP
 
 ## Introduction
 
-On dual-stack servers, Postfix may attempt IPv6 delivery first, fail (if IPv6 routing is broken or the remote server doesn't support it), and not fall back to IPv4—causing mail to queue indefinitely. This guide diagnoses and resolves these failures.
+On dual-stack servers, Postfix may attempt IPv6 delivery first, fail (if IPv6 routing is broken or the remote server doesn't support it), and not fall back to IPv4-causing mail to queue indefinitely. This guide diagnoses and resolves these failures.
 
 ## Identifying IPv6 Delivery Failures
 
 ```bash
 # Check the mail queue for deferred messages
+
 sudo postqueue -p
 
 # View detailed error for a specific message

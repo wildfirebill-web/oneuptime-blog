@@ -254,6 +254,7 @@ While CSS cannot natively check the time, you can use a scheduled job to update 
 
 ```yaml
 # CronJob to add maintenance banner
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

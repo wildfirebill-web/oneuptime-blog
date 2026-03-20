@@ -1,4 +1,4 @@
-# How to Create Bind Mount Volumes in Portainer
+# How to Create Bind Mount Volumes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ The host path must exist before creating the bind mount:
 
 ```bash
 # Create the host directory:
+
 mkdir -p /data/nginx/config
 mkdir -p /data/nginx/html
 mkdir -p /data/myapp/logs
@@ -50,7 +51,7 @@ chown -R www-data:www-data /data/nginx/
 5. Under **Volume**, select **Bind** (not a named volume).
 6. Fill in:
 
-```
+```text
 Container path: /etc/nginx/conf.d
 Type:           Bind
 Host path:      /data/nginx/config
@@ -59,7 +60,7 @@ Read/Write:     Read only  ← Config files should be read-only
 
 Or:
 
-```
+```text
 Container path: /app/logs
 Type:           Bind
 Host path:      /data/myapp/logs

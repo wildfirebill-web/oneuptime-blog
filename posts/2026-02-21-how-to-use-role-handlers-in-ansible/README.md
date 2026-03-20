@@ -31,6 +31,7 @@ Handlers look exactly like tasks, but they only run when notified:
 
 ```yaml
 # roles/nginx/handlers/main.yml
+
 # These run only when a task with "notify" makes an actual change
 ---
 - name: Restart Nginx

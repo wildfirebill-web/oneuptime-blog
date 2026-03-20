@@ -220,6 +220,7 @@ If you've configured connection pool limits in DestinationRules, track how close
 
 ```promql
 # Active connections vs limit
+
 envoy_cluster_upstream_cx_active{cluster_name="outbound|8080||my-service.production.svc.cluster.local"}
 ```
 

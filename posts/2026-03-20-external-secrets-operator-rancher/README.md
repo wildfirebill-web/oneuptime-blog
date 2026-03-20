@@ -33,6 +33,7 @@ Create an IAM role or user with read access to specific secrets, then configure 
 
 ```yaml
 # aws-secretstore.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ClusterSecretStore
 metadata:

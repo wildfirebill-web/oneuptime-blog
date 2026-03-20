@@ -46,6 +46,7 @@ done
 
 ```bash
 # Compare IPAM view with actual usage
+
 kubectl get ciliumnodes -o json | jq '.items[] | {
   node: .metadata.name,
   allocated: (.status.ipam.used // {} | length),

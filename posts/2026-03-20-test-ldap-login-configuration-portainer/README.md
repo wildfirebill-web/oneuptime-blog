@@ -1,4 +1,4 @@
-# How to Test LDAP Login Configuration in Portainer
+# How to Test LDAP Login Configuration in Portainer - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Test LDAP configuration without saving it
+
 curl -X POST \
   https://localhost:9443/api/ldap/check \
   -H "Authorization: Bearer $TOKEN" \

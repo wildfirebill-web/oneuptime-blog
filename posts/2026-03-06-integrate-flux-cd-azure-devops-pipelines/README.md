@@ -42,6 +42,7 @@ If you do not already have an ACR instance, create one:
 
 ```bash
 # Create a resource group
+
 az group create --name myResourceGroup --location eastus
 
 # Create an Azure Container Registry

@@ -16,6 +16,7 @@ Varnish Cache is a high-performance HTTP accelerator. Configuring it for IPv6 in
 # /etc/varnish/varnish.params (or systemd override)
 
 # Listen on all interfaces including IPv6
+
 VARNISH_LISTEN_ADDRESS=::
 VARNISH_LISTEN_PORT=80
 

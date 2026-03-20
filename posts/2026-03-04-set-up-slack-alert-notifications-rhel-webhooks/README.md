@@ -24,6 +24,7 @@ First, create an incoming webhook in Slack:
 ```bash
 #!/bin/bash
 # /usr/local/bin/slack-alert.sh
+
 # Send a formatted message to Slack
 
 WEBHOOK_URL="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"

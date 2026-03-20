@@ -26,6 +26,7 @@ First, create the configuration file:
 
 ```yaml
 # pipeline_config.yaml - Configuration for multiple ETL pipelines
+
 pipelines:
   - name: sales_etl
     schedule: "0 6 * * *"

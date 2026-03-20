@@ -197,6 +197,7 @@ If your Mac is struggling with the full demo profile, you can slim things down:
 
 ```yaml
 # istio-lightweight.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

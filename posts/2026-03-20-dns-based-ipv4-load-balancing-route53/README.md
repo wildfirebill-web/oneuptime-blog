@@ -8,7 +8,7 @@ Description: Configure AWS Route 53 for DNS-based IPv4 load balancing using weig
 
 ## Introduction
 
-Route 53 DNS-based load balancing distributes traffic by returning different IPv4 addresses in DNS responses. It operates at the DNS level — no single load balancer proxy handles all traffic. It supports weighted, latency-based, geolocation, failover, and multivalue routing policies.
+Route 53 DNS-based load balancing distributes traffic by returning different IPv4 addresses in DNS responses. It operates at the DNS level - no single load balancer proxy handles all traffic. It supports weighted, latency-based, geolocation, failover, and multivalue routing policies.
 
 ## Weighted Routing (Round Robin with Control)
 
@@ -18,6 +18,7 @@ Distribute traffic proportionally based on weights:
 HOSTED_ZONE_ID="Z1234567890ABC"
 
 # Create server 1 record with weight 70 (70% of traffic)
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id $HOSTED_ZONE_ID \
   --change-batch '{

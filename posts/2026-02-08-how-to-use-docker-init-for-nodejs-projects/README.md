@@ -18,6 +18,7 @@ Let's start with a typical Express application to demonstrate the workflow:
 
 ```bash
 # Create and initialize a new project
+
 mkdir node-docker-demo && cd node-docker-demo
 npm init -y
 

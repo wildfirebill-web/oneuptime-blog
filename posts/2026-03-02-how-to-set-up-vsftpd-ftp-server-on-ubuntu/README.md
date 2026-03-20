@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, FTP, Vsftpd, Networking, File Transfer
+Tags: Ubuntu, FTP, vsftpd, Networking, File Transfer
 
 Description: Install and configure vsftpd as a secure FTP server on Ubuntu with user authentication, chroot jails, passive mode settings, and firewall configuration.
 
@@ -14,6 +14,7 @@ vsftpd (Very Secure FTP Daemon) is the standard FTP server on Ubuntu. It is ligh
 
 ```bash
 # Update package lists and install vsftpd
+
 sudo apt update
 sudo apt install vsftpd -y
 

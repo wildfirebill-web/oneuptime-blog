@@ -8,7 +8,7 @@ Description: Enable Portainer's Edge Computing features using the --edge-compute
 
 ## Introduction
 
-Portainer's Edge Computing capabilities allow you to manage Docker environments that are not directly reachable from the Portainer server — remote locations, air-gapped networks, and IoT devices. The `--edge-compute` flag enables these features when starting the Portainer server.
+Portainer's Edge Computing capabilities allow you to manage Docker environments that are not directly reachable from the Portainer server - remote locations, air-gapped networks, and IoT devices. The `--edge-compute` flag enables these features when starting the Portainer server.
 
 ## What --edge-compute Enables
 
@@ -23,10 +23,11 @@ When `--edge-compute` is set:
 
 ```bash
 # Start Portainer with Edge Compute enabled
+
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
-  -p 8000:8000 \         # Edge Agent tunnel port — REQUIRED
+  -p 8000:8000 \         # Edge Agent tunnel port - REQUIRED
   --name portainer \
   --restart=unless-stopped \
   -v /var/run/docker.sock:/var/run/docker.sock \

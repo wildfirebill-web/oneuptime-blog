@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OPNsense, IPv6, Router Advertisements, SLAAC, radvd
+Tags: OPNsense, IPv6, Router Advertisement, SLAAC, Radvd
 
 Description: Configure Router Advertisements on OPNsense for IPv6 SLAAC autoaddressing on LAN segments.
 
@@ -29,7 +29,7 @@ OPNsense is built on FreeBSD and uses a web interface for all IPv6 configuration
 
 ### WAN - DHCPv6
 
-```
+```text
 Interfaces → WAN → IPv6 Configuration
   IPv6 Configuration Type: DHCPv6
   Request Prefix Size: /48
@@ -39,7 +39,7 @@ Interfaces → WAN → IPv6 Configuration
 
 ### WAN - Static IPv6
 
-```
+```nginx
 Interfaces → WAN → IPv6 Configuration
   IPv6 Configuration Type: Static IPv6
   IPv6 address: 2001:db8:wan::2 / 64
@@ -48,7 +48,7 @@ Interfaces → WAN → IPv6 Configuration
 
 ### LAN - Track Interface
 
-```
+```text
 Interfaces → LAN → IPv6 Configuration
   IPv6 Configuration Type: Track Interface
   IPv6 Interface: WAN
@@ -58,7 +58,7 @@ Interfaces → LAN → IPv6 Configuration
 
 ## DHCPv6 Server
 
-```
+```text
 Services → DHCPv6 → [LAN]
   ✓ Enable DHCPv6 server
   Range from: 2001:db8:lan::100
@@ -68,7 +68,7 @@ Services → DHCPv6 → [LAN]
 
 ## Router Advertisements
 
-```
+```text
 Services → Router Advertisements → [LAN]
   Router Advertisements: Assisted (RA + DHCPv6)
   # OR
@@ -80,8 +80,9 @@ Services → Router Advertisements → [LAN]
 
 ## IPv6 Firewall Rules
 
-```
+```text
 # CRITICAL: Allow ICMPv6 first
+
 Firewall → Rules → LAN
   Action: Pass
   TCP/IP Version: IPv6
@@ -99,7 +100,7 @@ Firewall → Rules → LAN
 
 ## Unbound DNS for IPv6
 
-```
+```text
 Services → Unbound DNS → General
   ✓ Enable
   Network Interfaces: All (includes IPv6)
@@ -114,7 +115,7 @@ Services → Unbound DNS → Host Overrides
 
 ## Diagnostics
 
-```
+```text
 # Diagnostic tools
 Interfaces → Diagnostics → ARP Table  (shows IPv6 NDP)
 Interfaces → Diagnostics → Ping       (test IPv6)

@@ -29,6 +29,7 @@ Start by exporting your API definitions from AWS.
 
 ```bash
 # List all REST APIs
+
 aws apigateway get-rest-apis \
   --query 'items[*].{ID:id,Name:name,Endpoint:endpointConfiguration.types[0]}' \
   --output table

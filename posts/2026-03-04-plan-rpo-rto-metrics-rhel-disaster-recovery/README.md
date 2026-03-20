@@ -22,6 +22,7 @@ Choose backup frequency based on your RPO requirements:
 
 ```bash
 # RPO: 24 hours - Daily backups are sufficient
+
 # Schedule nightly backup at 2 AM
 echo '0 2 * * * root /usr/local/bin/daily-backup.sh' > /etc/cron.d/backup
 

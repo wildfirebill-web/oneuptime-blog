@@ -47,6 +47,7 @@ The source-controller handles fetching from Git, Helm, and OCI repositories. Inc
 
 ```yaml
 # source-controller-concurrency-patch.yaml
+
 # Tune source-controller for a cluster with 50+ GitRepositories
 apiVersion: apps/v1
 kind: Deployment

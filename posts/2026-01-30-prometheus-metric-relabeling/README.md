@@ -70,6 +70,7 @@ Every relabel config follows this structure.
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'my-service'
     static_configs:

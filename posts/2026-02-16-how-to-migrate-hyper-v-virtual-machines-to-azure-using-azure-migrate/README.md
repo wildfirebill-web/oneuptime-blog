@@ -60,6 +60,7 @@ First, enable the required Windows features and firewall rules:
 
 ```powershell
 # Enable WinRM for remote management (used during provider installation)
+
 Enable-PSRemoting -Force
 
 # Verify Hyper-V role is installed (should already be there)

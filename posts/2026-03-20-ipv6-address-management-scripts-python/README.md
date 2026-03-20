@@ -114,6 +114,7 @@ class IPv6IPAM:
                 print(f"    {a_prefix}/{a_len}  → {assignee}  (since {ts[:10]})")
 
 # Usage
+
 ipam = IPv6IPAM("/tmp/ipv6_ipam.db")
 ipam.add_pool("isp-home", "2001:db8:home::/40", "Home subscriber prefixes")
 ipam.allocate("isp-home", 56, "customer-001", notes="Account ID 1001")

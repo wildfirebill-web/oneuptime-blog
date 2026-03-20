@@ -224,6 +224,7 @@ Configure branch protection for safe auto-merge:
 
 ```yaml
 # .github/branch-protection.yml (for reference)
+
 branches:
   main:
     protection:

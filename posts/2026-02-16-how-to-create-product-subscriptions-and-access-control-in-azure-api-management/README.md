@@ -104,6 +104,7 @@ For programmatic subscription management, use the REST API or Azure CLI:
 
 ```bash
 # Create a subscription for a specific user to a product
+
 az apim subscription create \
     --resource-group my-rg \
     --service-name my-apim \

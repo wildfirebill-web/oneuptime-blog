@@ -213,6 +213,7 @@ Chain grep filters for AND logic. Each filter processes records that passed the 
 
 ```ini
 # First filter: only production traffic
+
 [FILTER]
     name         grep
     match        api.*

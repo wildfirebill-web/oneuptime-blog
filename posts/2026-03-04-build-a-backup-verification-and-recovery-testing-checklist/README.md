@@ -35,6 +35,7 @@ Production environments require systematic verification before, during, and afte
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

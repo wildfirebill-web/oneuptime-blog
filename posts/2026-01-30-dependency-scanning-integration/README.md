@@ -49,6 +49,7 @@ Snyk offers deep integration with package managers and provides fix recommendati
 
 ```yaml
 # .github/workflows/snyk.yml
+
 # GitHub Actions workflow for Snyk dependency scanning
 name: Snyk Security Scan
 

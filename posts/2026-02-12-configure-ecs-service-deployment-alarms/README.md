@@ -47,6 +47,7 @@ This alarm fires if your application starts returning too many server errors.
 
 ```bash
 # Alarm for high HTTP 5xx error rate on ALB
+
 aws cloudwatch put-metric-alarm \
   --alarm-name my-service-5xx-rate \
   --alarm-description "HTTP 5xx error rate exceeds 5% during deployment" \

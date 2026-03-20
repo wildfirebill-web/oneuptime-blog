@@ -18,12 +18,13 @@ API access tokens in Portainer provide a secure way to authenticate API calls wi
 4. Click **Add access token**.
 5. Enter a descriptive name (e.g., "GitHub Actions Deployment").
 6. Click **Add access token**.
-7. **Copy the token immediately** — it is shown only once.
+7. **Copy the token immediately** - it is shown only once.
 
 ## Using the Token in API Calls
 
 ```bash
 # Authenticate with a token instead of username/password
+
 TOKEN="ptr_xxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # List all environments

@@ -29,6 +29,7 @@ First, install the required packages in your Vercel project:
 
 ```bash
 # Install OpenTelemetry packages compatible with the Edge Runtime
+
 npm install @opentelemetry/api \
   @opentelemetry/sdk-trace-base \
   @opentelemetry/exporter-trace-otlp-http \

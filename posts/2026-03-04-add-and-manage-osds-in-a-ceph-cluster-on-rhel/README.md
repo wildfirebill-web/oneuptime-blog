@@ -16,6 +16,7 @@ Before adding OSDs, check which disks are available:
 
 ```bash
 # List all devices and their availability for Ceph
+
 sudo ceph orch device ls
 
 # Show devices on a specific host

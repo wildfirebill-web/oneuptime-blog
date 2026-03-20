@@ -35,6 +35,7 @@ flowchart TD
 
 ```bash
 # View current crypto policy
+
 update-crypto-policies --show
 
 # List all allowed TLS ciphers

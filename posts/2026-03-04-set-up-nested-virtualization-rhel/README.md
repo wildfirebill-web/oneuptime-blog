@@ -14,6 +14,7 @@ Nested virtualization lets you run a hypervisor inside a virtual machine, creati
 
 ```bash
 # For Intel CPUs
+
 cat /sys/module/kvm_intel/parameters/nested
 # Y = enabled, N = disabled
 

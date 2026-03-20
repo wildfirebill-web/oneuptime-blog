@@ -71,7 +71,7 @@ def serve() -> None:
     log.info("gRPC server listening on %s", addr)
 
     def graceful_stop(signum, frame):
-        log.info("Signal %d — shutting down", signum)
+        log.info("Signal %d - shutting down", signum)
         health_servicer.set("", health_pb2.HealthCheckResponse.NOT_SERVING)
         server.stop(grace=10).wait()
         log.info("Server stopped")

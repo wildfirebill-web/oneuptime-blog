@@ -18,6 +18,7 @@ The directory does not exist by default on most systems. You need to create it b
 
 ```yaml
 # create-facts-dir.yml
+
 # Creates the facts.d directory on all managed hosts
 ---
 - name: Prepare hosts for custom facts

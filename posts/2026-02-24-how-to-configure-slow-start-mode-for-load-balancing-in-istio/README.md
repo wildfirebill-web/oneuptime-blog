@@ -158,6 +158,7 @@ The startup probe gives the application up to 60 seconds (30 failures * 2 second
 
 ```python
 # Example startup endpoint
+
 @app.route('/startup')
 def startup():
     if not app.state.warmup_complete:

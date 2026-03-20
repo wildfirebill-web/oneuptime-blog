@@ -38,6 +38,7 @@ Mesh A:
 
 ```yaml
 # mesh-a.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

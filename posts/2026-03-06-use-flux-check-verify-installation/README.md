@@ -51,6 +51,7 @@ The simplest way to verify your installation:
 
 ```bash
 # Run the full verification suite
+
 flux check
 ```
 

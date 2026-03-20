@@ -18,6 +18,7 @@ Container names serve as human-readable identifiers that make management easier 
 
 ```bash
 # Create a container with a generic name
+
 podman run -d --name old-name docker.io/library/nginx:latest
 
 # Rename it

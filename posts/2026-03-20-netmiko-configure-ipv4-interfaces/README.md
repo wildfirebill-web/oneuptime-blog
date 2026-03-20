@@ -24,6 +24,7 @@ device = {
 }
 
 # Configuration commands as a list
+
 config_commands = [
     'interface GigabitEthernet0/1',
     'ip address 10.0.1.1 255.255.255.0',
@@ -222,4 +223,4 @@ configure_from_csv('routers.csv')
 
 ## Conclusion
 
-Netmiko's `send_config_set()` is the key method for interface configuration — it accepts a list of IOS commands, wraps them in `configure terminal`/`end`, and returns the output. Build your configuration as a list of strings, verify with `send_command('show ip interface brief')`, and persist with `conn.save_config()` or `send_command('write memory')`. This pattern scales to hundreds of devices when combined with a CSV or YAML inventory.
+Netmiko's `send_config_set()` is the key method for interface configuration - it accepts a list of IOS commands, wraps them in `configure terminal`/`end`, and returns the output. Build your configuration as a list of strings, verify with `send_command('show ip interface brief')`, and persist with `conn.save_config()` or `send_command('write memory')`. This pattern scales to hundreds of devices when combined with a CSV or YAML inventory.

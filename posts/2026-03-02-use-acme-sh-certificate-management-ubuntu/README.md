@@ -26,6 +26,7 @@ Install as the root user or a dedicated service account:
 
 ```bash
 # Install acme.sh for the current user
+
 curl https://get.acme.sh | sh -s email=admin@example.com
 
 # The installer:

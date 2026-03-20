@@ -23,6 +23,7 @@ The CDR pipeline has several stages:
 
 ```python
 # cdr_collection.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import time

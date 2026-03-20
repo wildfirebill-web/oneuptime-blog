@@ -239,6 +239,7 @@ Policies are classes that organize authorization logic around a particular model
 
 ```bash
 # Generate a policy for the Post model
+
 php artisan make:policy PostPolicy --model=Post
 
 # Generate a policy without model binding

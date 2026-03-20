@@ -21,6 +21,7 @@ The `update-grub` command generates `grub.cfg` from your settings and the script
 
 ```bash
 # After any change to /etc/default/grub, always run:
+
 sudo update-grub
 ```
 

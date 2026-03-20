@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, concat, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Concat, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the concat function in OpenTofu to combine multiple lists into a single list.
 

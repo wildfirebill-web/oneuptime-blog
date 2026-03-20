@@ -56,6 +56,7 @@ def create_batch_input(prompts, output_path):
     return len(lines)
 
 # Create input data
+
 prompts = [
     f"Classify this support ticket: '{ticket}'"
     for ticket in load_tickets()  # Your data loading function

@@ -1,4 +1,4 @@
-# How to Fix Missing Stacks After Portainer Database Corruption
+# How to Fix Missing Stacks After Portainer Database Corruption - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Recover missing stacks and configuration after Portainer's BoltDB d
 
 ## Introduction
 
-Portainer uses BoltDB (an embedded key-value database) to store all configuration, including stack definitions, user accounts, environment settings, and access control rules. If this database becomes corrupted — typically due to an unclean shutdown, full disk, or storage failure — stacks and other configuration disappear. This guide explains recovery options.
+Portainer uses BoltDB (an embedded key-value database) to store all configuration, including stack definitions, user accounts, environment settings, and access control rules. If this database becomes corrupted - typically due to an unclean shutdown, full disk, or storage failure - stacks and other configuration disappear. This guide explains recovery options.
 
 ## Step 1: Identify Database Corruption
 
 ```bash
 # Check Portainer logs for BoltDB errors
+
 docker logs portainer 2>&1 | grep -iE "corrupt|bolt|database|invalid|panic" | head -20
 
 # Common corruption indicators:
@@ -142,10 +143,10 @@ docker run --rm \
   -v portainer_data:/data \
   alpine rm /data/portainer.db
 
-# Start Portainer — it will initialize fresh
+# Start Portainer - it will initialize fresh
 docker start portainer
 
-# Portainer is now fresh — re-add:
+# Portainer is now fresh - re-add:
 # 1. Environments (Docker hosts, Kubernetes clusters)
 # 2. Users and teams
 # 3. Registries
@@ -206,4 +207,4 @@ sudo systemctl edit docker
 
 ## Conclusion
 
-Portainer database corruption is serious but recoverable if you have backups. Without backups, the containers continue running independently of Portainer's database, so your workloads are safe — only the Portainer management metadata is lost. Prevent future corruption by setting up automated backups of the `portainer_data` volume and using `live-restore` in Docker to enable graceful handling of Docker daemon restarts.
+Portainer database corruption is serious but recoverable if you have backups. Without backups, the containers continue running independently of Portainer's database, so your workloads are safe - only the Portainer management metadata is lost. Prevent future corruption by setting up automated backups of the `portainer_data` volume and using `live-restore` in Docker to enable graceful handling of Docker daemon restarts.

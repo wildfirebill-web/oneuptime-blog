@@ -14,6 +14,7 @@ GCP OS Login replaces the traditional SSH key management in project metadata wit
 
 ```hcl
 # main.tf - Enable OS Login for all VMs in the project
+
 resource "google_compute_project_metadata" "os_login" {
   metadata = {
     enable-oslogin      = "TRUE"

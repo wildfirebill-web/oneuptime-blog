@@ -16,6 +16,7 @@ Containers share the host's Docker storage. When that fills up, all containers s
 
 ```bash
 # Error message in container
+
 Error: ENOSPC: no space left on device, write
 
 # Check Docker's disk usage

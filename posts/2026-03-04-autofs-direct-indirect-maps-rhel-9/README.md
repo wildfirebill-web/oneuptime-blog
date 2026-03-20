@@ -39,6 +39,7 @@ The parent directory `/nfs/` is managed by autofs. You cannot have permanent con
 
 ```bash
 # Master map
+
 sudo tee /etc/auto.master.d/indirect.autofs << 'EOF'
 /shares /etc/auto.shares --timeout=600
 EOF

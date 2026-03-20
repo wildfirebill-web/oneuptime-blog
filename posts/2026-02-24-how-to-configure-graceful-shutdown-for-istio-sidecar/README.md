@@ -167,6 +167,7 @@ Test your shutdown configuration by sending a continuous stream of requests whil
 
 ```bash
 # In one terminal, send continuous requests
+
 while true; do
   curl -s -o /dev/null -w "%{http_code}\n" http://my-app.default.svc.cluster.local/health
   sleep 0.1

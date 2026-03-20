@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, aqua-security, container-security, kubernetes, vulnerability-scanning
+Tags: Rancher, Aqua-security, Container-security, Kubernetes, Vulnerability-Scanning
 
 Description: A step-by-step guide to deploying and configuring Aqua Security on Rancher-managed Kubernetes clusters for container image scanning, runtime protection, and compliance.
 
@@ -21,6 +21,7 @@ Aqua Security is a comprehensive Cloud-Native Application Protection Platform (C
 
 ```bash
 # Add Aqua Helm repository
+
 helm repo add aqua https://helm.aquasec.com
 helm repo update
 

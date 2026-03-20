@@ -1,4 +1,4 @@
-# How to Understand the Default Workspace in OpenTofu
+# How to Understand the Default Workspace in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Every OpenTofu configuration starts in the `default` workspace. It is the initia
 
 ```bash
 # A fresh configuration starts in default
+
 tofu workspace list
 # * default
 ```
@@ -29,7 +30,7 @@ tofu workspace show
 The default workspace uses a different state file path than named workspaces:
 
 **Local backend:**
-```
+```text
 terraform.tfstate          ← default workspace
 terraform.tfstate.d/
 ├── staging/terraform.tfstate
@@ -37,7 +38,7 @@ terraform.tfstate.d/
 ```
 
 **S3 backend:**
-```
+```text
 s3://bucket/prefix/terraform.tfstate           ← default workspace
 s3://bucket/prefix/env:/staging/terraform.tfstate
 s3://bucket/prefix/env:/production/terraform.tfstate

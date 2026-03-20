@@ -18,6 +18,7 @@ On RHEL, Postfix logs go to the systemd journal and `/var/log/maillog`:
 
 ```bash
 # View recent Postfix log entries via journalctl
+
 sudo journalctl -u postfix --since "30 minutes ago"
 
 # Or use the traditional log file

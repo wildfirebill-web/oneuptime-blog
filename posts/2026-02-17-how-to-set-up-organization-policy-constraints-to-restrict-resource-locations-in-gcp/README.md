@@ -53,6 +53,7 @@ Restrict all resources in your organization to US locations:
 
 ```bash
 # Set organization-wide location restriction
+
 gcloud resource-manager org-policies set-policy \
     --organization=123456789 \
     policy.yaml

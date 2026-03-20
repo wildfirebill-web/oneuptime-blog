@@ -71,6 +71,7 @@ resource "aws_dynamodb_table" "streamed" {
 }
 
 # Connect DynamoDB table to Kinesis stream
+
 resource "aws_dynamodb_kinesis_streaming_destination" "main" {
   stream_arn = aws_kinesis_stream.dynamodb_changes.arn
   table_name = aws_dynamodb_table.streamed.name
@@ -148,4 +149,4 @@ aws dynamodb describe-kinesis-streaming-destination \
 
 ## Conclusion
 
-DynamoDB Kinesis streaming is preferable to native DynamoDB Streams when you need longer data retention, multiple consumers reading the same stream independently, or integration with Kinesis Data Analytics for real-time SQL queries. The trade-off is additional cost for the Kinesis stream—evaluate whether the 24-hour retention of native DynamoDB Streams is sufficient for your use case before choosing Kinesis streaming.
+DynamoDB Kinesis streaming is preferable to native DynamoDB Streams when you need longer data retention, multiple consumers reading the same stream independently, or integration with Kinesis Data Analytics for real-time SQL queries. The trade-off is additional cost for the Kinesis stream-evaluate whether the 24-hour retention of native DynamoDB Streams is sufficient for your use case before choosing Kinesis streaming.

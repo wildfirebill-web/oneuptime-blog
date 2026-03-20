@@ -41,6 +41,7 @@ Once saved as a shared report, you control access through Azure RBAC:
 
 ```bash
 # Grant a team read access to a shared Workbook
+
 az role assignment create \
     --assignee "team-group-id" \
     --role "Workbook Reader" \
@@ -182,7 +183,7 @@ This approach lets you keep the Workbook content in a separate JSON file and ref
 
 The Workbook gallery is the default view users see when they click on "Workbooks" in Azure Monitor. You can contribute templates to this gallery.
 
-### Resource-Scoped Gallery Contributions
+Resource-Scoped Gallery Contributions
 
 When you save a Workbook template associated with a specific resource type, it appears in the gallery for that resource type. For example, a Workbook template associated with virtual machines will appear when users navigate to a VM's Monitoring section and click Workbooks.
 

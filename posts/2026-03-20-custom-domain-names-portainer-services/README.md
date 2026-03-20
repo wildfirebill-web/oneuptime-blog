@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DNS, Nginx, Traefik, Docker, Reverse Proxy, Domains
+Tags: Portainer, DNS, Nginx, Traefik, Docker, Reverse Proxy, Domain
 
 Description: Learn how to configure custom domain names for services managed by Portainer using Nginx or Traefik as a reverse proxy with automatic SSL.
 
@@ -20,6 +20,7 @@ Nginx Proxy Manager provides a GUI for managing reverse proxy rules and automati
 
 ```yaml
 # nginx-proxy-manager-stack.yml
+
 version: "3.8"
 
 services:
@@ -106,7 +107,7 @@ docker network create proxy
 ### Add Traefik Labels to Your App Container
 
 ```yaml
-# myapp-stack.yml — with Traefik routing labels
+# myapp-stack.yml - with Traefik routing labels
 version: "3.8"
 
 services:
@@ -134,7 +135,7 @@ networks:
 
 Point your domain to your server's public IP. In Cloudflare or your DNS provider:
 
-```
+```text
 app.example.com    A    203.0.113.10
 ```
 

@@ -24,6 +24,7 @@ All of these ultimately update the same `istio` ConfigMap that istiod reads.
 
 ```bash
 # View the full mesh config
+
 kubectl get configmap istio -n istio-system -o jsonpath='{.data.mesh}' | yq .
 
 # Or with just the tracing-related fields

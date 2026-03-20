@@ -16,15 +16,16 @@ IPv6 provides multiple header fields that can carry hidden data beyond their int
 
 The 20-bit Flow Label field in the IPv6 header is rarely used for its intended purpose (QoS) in most networks. An attacker can encode data in this field:
 
-```
+```text
 IPv6 header: version(4) + traffic class(8) + flow label(20) + ...
 
 Flow label = 0x00000  (normal traffic)
-Flow label = 0xABCDE  (encodes data — up to 20 bits per packet)
+Flow label = 0xABCDE  (encodes data - up to 20 bits per packet)
 ```
 
 ```bash
-# Detect non-zero flow labels — suspicious in most networks
+# Detect non-zero flow labels - suspicious in most networks
+
 tcpdump -i eth0 -n 'ip6' -e | grep -v 'flowlabel 0x0'
 
 # tshark: Extract flow labels from IPv6 traffic
@@ -46,12 +47,12 @@ tshark -i eth0 -Y 'ipv6' -T fields -e ipv6.tclass -e ip.src | sort | uniq -c | s
 
 IPv6 extension headers use Pad1 and PadN options to align to 8-byte boundaries. These padding bytes can carry hidden data:
 
-```
+```text
 Normal PadN: Next Type=1, Length=N, Data=0x00...00 (all zeros)
 Covert:      Next Type=1, Length=N, Data=<secret payload>
 ```
 
-Most security devices strip or ignore padding — it passes through uninspected.
+Most security devices strip or ignore padding - it passes through uninspected.
 
 ### 4. IPv6-in-IPv6 Tunneling as Covert Channel
 
@@ -122,7 +123,7 @@ sniff(filter="ip6", prn=check_padding, iface="eth0")
 ## Mitigation
 
 ```bash
-# Normalize IPv6 headers at perimeter — strip non-standard field values
+# Normalize IPv6 headers at perimeter - strip non-standard field values
 # nftables: Set flow label to 0 (normalize)
 # Note: This requires kernel support for header modification
 

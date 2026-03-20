@@ -8,7 +8,7 @@ Description: OSPF uses wildcard masks in the network statement to specify which 
 
 ## OSPF Network Statement Syntax
 
-```
+```text
 router ospf <process-id>
   network <address> <wildcard-mask> area <area-id>
 ```
@@ -17,7 +17,7 @@ The wildcard mask defines which bits of the address must match for an interface 
 
 ## Common OSPF Network Statements
 
-```
+```text
 router ospf 1
   ! Include a single interface (192.168.1.1)
   network 192.168.1.1 0.0.0.0 area 0
@@ -34,7 +34,7 @@ router ospf 1
 
 ## Matching Multiple Subnets with One Statement
 
-```
+```text
 ! Include 172.16.0.0/16 through 172.31.0.0/16 (the /12 block)
 ! Wildcard for /12: 0.15.255.255
 network 172.16.0.0 0.15.255.255 area 1
@@ -44,6 +44,7 @@ network 172.16.0.0 0.15.255.255 area 1
 
 ```bash
 # Install FRRouting
+
 sudo apt install frr
 
 # Edit /etc/frr/frr.conf
@@ -98,7 +99,7 @@ vtysh -c "show ip ospf interface"
 
 OSPF uses wildcard masks; BGP uses explicit subnet masks:
 
-```
+```text
 ! OSPF (wildcard)
 network 10.0.0.0 0.255.255.255 area 0
 

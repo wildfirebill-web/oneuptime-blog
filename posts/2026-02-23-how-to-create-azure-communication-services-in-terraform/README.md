@@ -30,6 +30,7 @@ Start with the base resource:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

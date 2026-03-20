@@ -293,6 +293,7 @@ Flagger exposes Prometheus metrics:
 
 ```promql
 # Canary status (0=initializing, 1=progressing, 2=succeeded, 3=failed)
+
 flagger_canary_status{name="my-app", namespace="production"}
 
 # Canary weight (current traffic percentage to canary)

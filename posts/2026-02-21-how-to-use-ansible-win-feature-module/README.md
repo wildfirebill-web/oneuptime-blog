@@ -18,6 +18,7 @@ You can discover available feature names by running this PowerShell command on a
 
 ```powershell
 # List all available features and their install state
+
 Get-WindowsFeature | Format-Table Name, DisplayName, InstallState
 ```
 

@@ -171,6 +171,7 @@ resource "azurerm_monitor_diagnostic_setting" "key_vault" {
 
 ```hcl
 # Apply diagnostics to multiple resources using for_each
+
 locals {
   resources_to_monitor = {
     app_service = {

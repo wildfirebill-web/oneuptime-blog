@@ -22,6 +22,7 @@ Create a PostgreSQL StatefulSet with PgBouncer sidecar:
 
 ```yaml
 # postgres-with-pgbouncer.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

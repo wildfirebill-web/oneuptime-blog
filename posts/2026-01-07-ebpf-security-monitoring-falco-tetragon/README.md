@@ -85,6 +85,7 @@ The following script installs Falco on a Linux system using the official package
 
 ```bash
 # Add the Falco GPG key for package verification
+
 # This ensures packages are authentic and haven't been tampered with
 curl -fsSL https://falco.org/repo/falcosecurity-packages.asc | \
   sudo gpg --dearmor -o /usr/share/keyrings/falco-archive-keyring.gpg

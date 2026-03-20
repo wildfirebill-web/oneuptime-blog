@@ -16,6 +16,7 @@ Redis stores everything in RAM. When the dataset grows larger than available mem
 
 ```bash
 # Check current memory status
+
 redis-cli INFO memory
 
 # Key metrics:

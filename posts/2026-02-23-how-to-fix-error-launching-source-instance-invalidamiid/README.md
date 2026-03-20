@@ -45,6 +45,7 @@ resource "aws_instance" "web" {
 
 ```bash
 # Find the latest Amazon Linux 2023 AMI in your target region
+
 aws ec2 describe-images \
   --region us-west-2 \
   --owners amazon \

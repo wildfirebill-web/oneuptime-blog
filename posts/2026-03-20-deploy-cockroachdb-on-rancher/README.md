@@ -20,6 +20,7 @@ CockroachDB is a distributed SQL database built for cloud-native environments. I
 
 ```bash
 # Add the CockroachDB Helm chart repository
+
 helm repo add cockroachdb https://charts.cockroachdb.com/
 helm repo update
 ```

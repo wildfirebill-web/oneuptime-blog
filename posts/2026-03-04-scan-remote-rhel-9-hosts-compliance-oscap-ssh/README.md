@@ -29,6 +29,7 @@ oscap-ssh connects to the target system via SSH, transfers the necessary SCAP co
 
 ```bash
 # Install OpenSCAP with SSH support
+
 dnf install -y openscap-scanner openscap-utils scap-security-guide
 
 # Verify oscap-ssh is available

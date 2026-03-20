@@ -1,4 +1,4 @@
-# How to Automate Portainer Infrastructure with Terraform
+# How to Automate Portainer Infrastructure with Terraform - Infra
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to fully automate Portainer infrastructure provisioning u
 
 ## Introduction
 
-The ultimate goal of using Terraform with Portainer is full automation: provision a server, install Portainer, configure it, and deploy applications — all in a single `terraform apply`. This guide shows how to integrate Portainer Terraform with cloud infrastructure providers for end-to-end automated deployments.
+The ultimate goal of using Terraform with Portainer is full automation: provision a server, install Portainer, configure it, and deploy applications - all in a single `terraform apply`. This guide shows how to integrate Portainer Terraform with cloud infrastructure providers for end-to-end automated deployments.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The ultimate goal of using Terraform with Portainer is full automation: provisio
 
 ## Step 1: Full Stack Architecture
 
-```
+```bash
 Terraform Apply:
   1. Cloud provider: Provision EC2/VM
   2. cloud-init: Install Docker + Portainer
@@ -30,13 +30,14 @@ Terraform Apply:
 ## Step 2: Provision a Server with Docker and Portainer
 
 ```hcl
-# server.tf — Provision EC2 with Docker and Portainer
+# server.tf - Provision EC2 with Docker and Portainer
 
 provider "aws" {
   region = "us-east-1"
 }
 
 # Security group
+
 resource "aws_security_group" "portainer" {
   name        = "portainer-sg"
   description = "Allow Portainer and Docker traffic"
@@ -108,7 +109,7 @@ data "aws_ami" "ubuntu" {
 
 ```bash
 #!/bin/bash
-# cloud-init.sh — Bootstrap script run on first boot
+# cloud-init.sh - Bootstrap script run on first boot
 
 set -euo pipefail
 
@@ -149,7 +150,7 @@ echo "Portainer initialized!"
 ## Step 4: Configure Portainer After Server Provisioning
 
 ```hcl
-# portainer_config.tf — Configure Portainer on newly provisioned server
+# portainer_config.tf - Configure Portainer on newly provisioned server
 
 # Wait for server to be ready
 resource "time_sleep" "wait_for_portainer" {
@@ -236,10 +237,10 @@ export TF_VAR_portainer_admin_pass="SecureAdminPass123!"
 export TF_VAR_app_image_tag="v1.2.3"
 export TF_VAR_database_url="postgresql://..."
 
-# Plan — see everything that will be created
+# Plan - see everything that will be created
 terraform plan
 
-# Apply — provision server + configure Portainer + deploy apps
+# Apply - provision server + configure Portainer + deploy apps
 terraform apply
 
 # Get Portainer URL

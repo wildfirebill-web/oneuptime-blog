@@ -16,6 +16,7 @@ Set up your tools and OCI configuration:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install the OCI CLI

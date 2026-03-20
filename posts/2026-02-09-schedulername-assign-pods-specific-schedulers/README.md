@@ -22,6 +22,7 @@ Deploy a custom scheduler alongside the default:
 
 ```yaml
 # custom-scheduler.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -39,6 +39,7 @@ The ExternalArtifact spec contains an optional `sourceRef` that references the c
 
 ```yaml
 # clusters/my-cluster/sources/external-artifact.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: ExternalArtifact
 metadata:

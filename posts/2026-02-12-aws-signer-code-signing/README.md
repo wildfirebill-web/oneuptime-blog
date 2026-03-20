@@ -32,6 +32,7 @@ This creates a signing profile for Lambda function code:
 
 ```bash
 # Create a signing profile for Lambda
+
 aws signer put-signing-profile \
   --profile-name LambdaProductionProfile \
   --platform-id AWSLambda-SHA384-ECDSA \

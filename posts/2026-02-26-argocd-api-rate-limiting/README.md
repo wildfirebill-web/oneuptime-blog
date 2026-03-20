@@ -290,6 +290,7 @@ Track when rate limits are hit to understand traffic patterns:
 
 ```bash
 # Check Nginx ingress controller logs for rate limiting events
+
 kubectl logs -n ingress-nginx deployment/ingress-nginx-controller | \
   grep "limiting requests"
 

@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ICMPv6, Error Messages, Informational Messages, IPv6, RFC 4443
 
-Description: Understand the distinction between ICMPv6 error messages (Types 1-127) and informational messages (Types 128-255), their different rules and behaviors, and why this classification matters for firewall policy.
+Description: Understand the distinction between ICMPv6 error messages (Types 1-127) and informational messages (Types 128-255), their different rules and behaviors, and why this classification matters for...
 
 ## Introduction
 
-RFC 4443 divides ICMPv6 messages into two classes: error messages (Type values 0-127) and informational messages (Type values 128-255). This classification is not just organizational — it carries specific behavioral rules. Error messages must include a copy of the offending packet, are subject to rate limiting, must not be generated in response to other ICMPv6 error messages, and require different firewall treatment than informational messages.
+RFC 4443 divides ICMPv6 messages into two classes: error messages (Type values 0-127) and informational messages (Type values 128-255). This classification is not just organizational - it carries specific behavioral rules. Error messages must include a copy of the offending packet, are subject to rate limiting, must not be generated in response to other ICMPv6 error messages, and require different firewall treatment than informational messages.
 
 ## Error Messages (Types 0-127)
 
-```
+```text
 ICMPv6 Error Message rules (RFC 4443):
 
 1. Generated in response to a problem processing an IPv6 packet
@@ -36,7 +36,7 @@ Current error messages:
 
 ## Informational Messages (Types 128-255)
 
-```
+```text
 ICMPv6 Informational Message characteristics:
 
 1. Not generated in response to errors
@@ -60,14 +60,14 @@ Current informational messages:
 
 ## Why the Distinction Matters for Firewalls
 
-```
+```text
 Firewall implications of error vs informational classification:
 
 Error messages:
-  MUST allow: Packet Too Big (Type 2) — essential for PMTUD
-  MUST allow: Destination Unreachable (Type 1) — needed for error reporting
-  SHOULD allow: Time Exceeded (Type 3) — needed for traceroute6
-  SHOULD allow: Parameter Problem (Type 4) — needed for error reporting
+  MUST allow: Packet Too Big (Type 2) - essential for PMTUD
+  MUST allow: Destination Unreachable (Type 1) - needed for error reporting
+  SHOULD allow: Time Exceeded (Type 3) - needed for traceroute6
+  SHOULD allow: Parameter Problem (Type 4) - needed for error reporting
   Blocking Type 2 BREAKS PMTUD for all TCP connections
 
 Informational messages:
@@ -86,8 +86,8 @@ def classify_icmpv6(icmp_type: int) -> dict:
     """
     error_messages = {
         1:  ("Destination Unreachable", "allow"),
-        2:  ("Packet Too Big",          "MUST allow — breaks PMTUD if blocked"),
-        3:  ("Time Exceeded",           "allow — needed for traceroute6"),
+        2:  ("Packet Too Big",          "MUST allow - breaks PMTUD if blocked"),
+        3:  ("Time Exceeded",           "allow - needed for traceroute6"),
         4:  ("Parameter Problem",       "allow"),
     }
 
@@ -117,6 +117,7 @@ def classify_icmpv6(icmp_type: int) -> dict:
         return {"class": "informational", "name": f"Unknown informational type {icmp_type}", "guidance": "evaluate"}
 
 # Test all known types
+
 for t in [1, 2, 3, 4, 128, 129, 133, 134, 135, 136]:
     r = classify_icmpv6(t)
     print(f"Type {t:3d} ({r['class']:15s}): {r['name']:<30} → {r['guidance']}")

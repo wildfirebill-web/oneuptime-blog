@@ -40,6 +40,7 @@ Start by identifying which resources belong to which namespace.
 
 ```bash
 # List all resources grouped by namespace
+
 argocd app resources my-platform --output json | \
   jq -r 'group_by(.namespace) | .[] | .[0].namespace as $ns | "\($ns):", (.[] | "  \(.group):\(.kind):\(.name)")'
 

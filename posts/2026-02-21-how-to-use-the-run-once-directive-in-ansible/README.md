@@ -16,6 +16,7 @@ Add `run_once: true` to any task:
 
 ```yaml
 # basic-run-once.yml - Database migration runs on one host only
+
 ---
 - name: Deploy application to web cluster
   hosts: webservers  # 10 servers

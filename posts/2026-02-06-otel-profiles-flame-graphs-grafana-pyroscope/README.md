@@ -25,6 +25,7 @@ Configure the OpenTelemetry Collector to export profiles to Pyroscope:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

@@ -43,6 +43,7 @@ The built-in validate command checks syntax and configuration validity.
 
 ```bash
 # Initialize the working directory first
+
 terraform init -backend=false
 
 # Validate the configuration files

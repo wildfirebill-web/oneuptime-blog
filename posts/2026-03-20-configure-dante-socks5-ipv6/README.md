@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dante, SOCKS5, IPv6, Proxy, sockd, Authentication, Dual-Stack
+Tags: Dante, SOCKS5, IPv6, Proxy, Sockd, Authentication, Dual-Stack
 
 Description: Configure Dante SOCKS5 proxy server to listen on IPv6 addresses, authenticate clients, and forward connections to IPv6 destinations.
 
@@ -22,9 +22,10 @@ apt-get install -y dante-server
 # /etc/danted.conf
 
 # Log errors and connections
+
 logoutput: syslog
 
-# Internal interface (where clients connect — IPv6)
+# Internal interface (where clients connect - IPv6)
 internal: :: port = 1080
 
 # External interface (where outbound connections go)
@@ -115,7 +116,7 @@ curl --socks5 "[::1]:1080" http://[2001:db8::server]/
 ## Step 4: IPv6 Outbound Only
 
 ```nginx
-# /etc/danted.conf — force outbound via IPv6 interface
+# /etc/danted.conf - force outbound via IPv6 interface
 
 external: 2001:db8::proxy  # Specific IPv6 source address
 

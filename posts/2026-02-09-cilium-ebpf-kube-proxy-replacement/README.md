@@ -26,6 +26,7 @@ You need a Kubernetes cluster running version 1.24 or later with a kernel versio
 
 ```bash
 # Check kernel version on all nodes
+
 kubectl get nodes -o wide
 
 # Or SSH to a node and check directly

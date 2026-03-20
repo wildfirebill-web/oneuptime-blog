@@ -53,6 +53,7 @@ infrastructure/
 
 ```yaml
 # infrastructure/velero/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

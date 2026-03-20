@@ -29,6 +29,7 @@ For the CLI approach, you can use the Resource Groups Tagging API:
 
 ```bash
 # Find all resources in us-east-1 (no tag filter - gets everything)
+
 aws resourcegroupstaggingapi get-resources \
   --region us-east-1 \
   --query "ResourceTagMappingList[].{ARN:ResourceARN,Tags:Tags}" \

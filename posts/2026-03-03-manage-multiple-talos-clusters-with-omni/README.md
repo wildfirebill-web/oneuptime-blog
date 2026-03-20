@@ -30,6 +30,7 @@ Start by organizing your machines and clusters in Omni:
 
 ```bash
 # Register all machines with appropriate labels
+
 omnictl machine label $MACHINE_ID \
   --label environment=production \
   --label region=us-east-1 \

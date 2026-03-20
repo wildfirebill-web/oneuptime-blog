@@ -12,7 +12,7 @@ SAP systems built on NetWeaver support IPv6 through profile parameters. Enabling
 
 ## SAP IPv6 Support Overview
 
-```
+```text
 SAP IPv6 support requirements:
 - SAP Basis release 7.0 or higher for basic IPv6 support
 - SAP NetWeaver 7.4+ for full dual-stack IPv6
@@ -29,10 +29,11 @@ Architecture considerations:
 
 ## SAP ABAP Instance Profile for IPv6
 
-```
+```text
 # /usr/sap/<SID>/SYS/profile/<SID>_DVEBMGS<NN>_<hostname>
 
 # Enable IPv6 support
+
 icm/server_port_0 = PROT=HTTP,PORT=8000,TIMEOUT=120
 
 # For explicit IPv6 binding (dual-stack):
@@ -54,7 +55,7 @@ enque/server_port = 3201
 
 ## SAP Web Dispatcher IPv6 Configuration
 
-```
+```text
 # /usr/sap/<SID>/WebDisp/profile/<SID>_WebDisp_<host>
 
 # Web Dispatcher listener on IPv6
@@ -93,7 +94,7 @@ sudo HDB restart
 
 ## SAP Router for IPv6
 
-```
+```text
 # saprouttab (SAP Router table) with IPv6
 
 # Allow connection from IPv6 network
@@ -111,7 +112,7 @@ saprouter -l
 
 ## SAP RFC Destinations over IPv6
 
-```
+```text
 Configure RFC Destination (SM59) for IPv6:
 
 1. Go to SM59 in SAP GUI

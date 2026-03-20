@@ -53,6 +53,7 @@ graph LR
 
 ```yaml
 # envoy.yaml - Basic Envoy sidecar configuration
+
 static_resources:
   listeners:
     # Inbound listener - receives traffic destined for the application

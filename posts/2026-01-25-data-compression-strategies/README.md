@@ -47,6 +47,7 @@ flowchart TD
 
 ```python
 # flask_compression.py
+
 from flask import Flask, request, Response
 from flask_compress import Compress
 import gzip

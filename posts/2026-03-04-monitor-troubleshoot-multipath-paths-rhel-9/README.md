@@ -81,6 +81,7 @@ For Fibre Channel:
 
 ```bash
 # Check HBA port status
+
 sudo cat /sys/class/fc_host/host*/port_state
 
 # Check link speed

@@ -29,6 +29,7 @@ If Prometheus is not already configured as a Grafana data source, add it through
 
 ```yaml
 # grafana-datasource.yaml
+
 # Grafana data source configuration for Prometheus
 apiVersion: v1
 kind: ConfigMap

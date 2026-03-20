@@ -43,6 +43,7 @@ async def main():
     print(results)
 
 # Output order shows concurrent execution:
+
 # A: Starting
 # B: Starting
 # C: Starting

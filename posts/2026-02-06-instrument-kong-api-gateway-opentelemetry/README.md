@@ -35,6 +35,7 @@ Here's how to enable the plugin globally using Kong's Admin API. This will instr
 
 ```bash
 # Enable the OpenTelemetry plugin globally on Kong
+
 # This sends traces for all routes and services to the specified OTLP endpoint
 curl -X POST http://localhost:8001/plugins \
   --data "name=opentelemetry" \

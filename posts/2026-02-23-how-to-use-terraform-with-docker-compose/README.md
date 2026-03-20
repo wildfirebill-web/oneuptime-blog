@@ -24,6 +24,7 @@ Start by using Terraform to create the EC2 instance and supporting infrastructur
 
 ```hcl
 # Security group for the Docker host
+
 resource "aws_security_group" "docker_host" {
   name_prefix = "docker-host-"
   vpc_id      = var.vpc_id

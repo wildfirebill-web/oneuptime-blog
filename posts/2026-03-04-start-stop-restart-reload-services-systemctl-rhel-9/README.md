@@ -20,6 +20,7 @@ Starting a service brings it up right now, in the current session. It does not a
 
 ```bash
 # Start the httpd service
+
 sudo systemctl start httpd
 ```
 

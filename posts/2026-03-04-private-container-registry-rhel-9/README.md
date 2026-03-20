@@ -68,6 +68,7 @@ sudo dnf install -y httpd-tools
 sudo mkdir -p /opt/registry/auth
 
 # Add a user (will prompt for password)
+
 sudo htpasswd -Bc /opt/registry/auth/htpasswd admin
 
 # Add additional users

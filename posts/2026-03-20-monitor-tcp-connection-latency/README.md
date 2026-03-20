@@ -14,6 +14,7 @@ TCP connection establishment latency (the time from SYN to ESTABLISHED) is a cri
 
 ```bash
 # curl's timing breakdown includes TCP connection time
+
 curl -w "\nConnect time: %{time_connect}s\nTTFB: %{time_starttransfer}s\n" \
   -o /dev/null -s http://10.20.0.5:8080
 

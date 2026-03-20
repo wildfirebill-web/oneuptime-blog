@@ -86,6 +86,7 @@ Track the minimum and maximum values within a sliding time window.
 
 ```python
 # Python implementation using a deque for efficient sliding window
+
 from collections import deque
 from dataclasses import dataclass
 from typing import Optional

@@ -57,6 +57,7 @@ When switching from `none` to `static`, remove the CPU Manager state file:
 
 ```bash
 # Stop kubelet first
+
 systemctl stop kubelet
 
 # Remove state file

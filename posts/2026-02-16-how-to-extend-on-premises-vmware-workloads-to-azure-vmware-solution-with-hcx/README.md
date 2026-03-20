@@ -54,6 +54,7 @@ HCX Advanced is included with AVS at no extra charge. Enable it through the Azur
 
 ```bash
 # Enable HCX on your Azure VMware Solution private cloud
+
 az vmware addon hcx create \
   --resource-group myResourceGroup \
   --private-cloud myAVSPrivateCloud \

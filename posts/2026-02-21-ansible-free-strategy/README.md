@@ -16,6 +16,7 @@ Set it per play:
 
 ```yaml
 # free-strategy.yml - Use the free strategy
+
 ---
 - name: Configure servers
   hosts: all

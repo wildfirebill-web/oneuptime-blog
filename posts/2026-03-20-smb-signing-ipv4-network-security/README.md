@@ -32,12 +32,13 @@ SMB signing adds a cryptographic signature to each SMB packet, allowing the rece
 ```
 
 Acceptable values:
-- `disabled` or `no` — Don't sign
-- `auto` or `if_required` — Sign if peer requests it
-- `mandatory` or `required` — Always sign, reject if peer doesn't
+- `disabled` or `no` - Don't sign
+- `auto` or `if_required` - Sign if peer requests it
+- `mandatory` or `required` - Always sign, reject if peer doesn't
 
 ```bash
 # Test the configuration
+
 testparm
 
 # Reload Samba
@@ -58,7 +59,7 @@ smbclient //192.168.1.10/data -U user%password
 
 Group Policy settings for SMB signing:
 
-```
+```text
 Computer Configuration → Windows Settings → Security Settings
 → Local Policies → Security Options:
 
@@ -97,5 +98,5 @@ SMB signing adds cryptographic overhead (approximately 5-15% CPU increase for hi
 
 - Set `server signing = mandatory` in `smb.conf` to require signed connections from all SMB clients.
 - Signing prevents NTLM relay attacks where an attacker intercepts and replays authentication credentials on the IPv4 network.
-- SMB 3.x provides encryption in addition to signing — enable it for highly sensitive shares.
+- SMB 3.x provides encryption in addition to signing - enable it for highly sensitive shares.
 - Enabling `mandatory` signing will break connections from very old clients that don't support signing.

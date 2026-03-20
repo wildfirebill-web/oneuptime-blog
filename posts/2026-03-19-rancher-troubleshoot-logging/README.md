@@ -31,6 +31,7 @@ Start by verifying all logging components are running:
 
 ```bash
 # Check all pods in the logging namespace
+
 kubectl get pods -n cattle-logging-system
 
 # Check DaemonSet (Fluent Bit should run on every node)

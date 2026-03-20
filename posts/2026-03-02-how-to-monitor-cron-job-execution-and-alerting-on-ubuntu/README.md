@@ -16,6 +16,7 @@ By default, many Ubuntu systems don't log individual cron job executions verbose
 
 ```bash
 # Check current cron logging
+
 grep CRON /var/log/syslog | tail -5
 
 # Enable verbose cron logging

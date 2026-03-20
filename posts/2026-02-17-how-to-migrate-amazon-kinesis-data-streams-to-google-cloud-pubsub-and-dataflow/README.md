@@ -45,6 +45,7 @@ Document every stream, its shard count, producers, and consumers.
 
 ```bash
 # List all Kinesis streams
+
 aws kinesis list-streams --output table
 
 # Get details for each stream

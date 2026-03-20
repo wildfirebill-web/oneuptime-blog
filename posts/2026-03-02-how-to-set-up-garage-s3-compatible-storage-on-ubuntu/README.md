@@ -37,6 +37,7 @@ Download the latest binary from the Garage releases page. As of early 2026, the 
 
 ```bash
 # Download the Garage binary (check releases page for latest version)
+
 wget https://garagehq.deuxfleurs.fr/_releases/v1.0.1/x86_64-unknown-linux-musl/garage -O /tmp/garage
 
 # Move to /usr/local/bin and make executable

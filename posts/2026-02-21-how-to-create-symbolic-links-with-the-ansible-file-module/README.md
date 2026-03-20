@@ -18,6 +18,7 @@ Creating a symbolic link with Ansible requires two parameters: `src` (what the l
 
 ```yaml
 # Create a basic symbolic link
+
 - name: Create symlink to current application release
   ansible.builtin.file:
     src: /opt/myapp/releases/v2.1.0

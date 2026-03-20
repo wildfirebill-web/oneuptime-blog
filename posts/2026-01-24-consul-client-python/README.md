@@ -33,6 +33,7 @@ This client wraps the Consul HTTP API and provides Python-friendly methods for c
 
 ```python
 # consul_client.py
+
 # Python client for HashiCorp Consul
 import httpx
 from typing import Optional, List, Dict, Any

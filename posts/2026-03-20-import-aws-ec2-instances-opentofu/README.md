@@ -8,12 +8,13 @@ Description: Learn how to import existing AWS EC2 instances into OpenTofu state,
 
 ## Introduction
 
-EC2 instances created outside of OpenTofu — through the console, CLI, or other tools — can be brought under management using `tofu import`. After import, OpenTofu tracks the instance and can apply configuration changes, but you must first write HCL that matches the existing resource's configuration.
+EC2 instances created outside of OpenTofu - through the console, CLI, or other tools - can be brought under management using `tofu import`. After import, OpenTofu tracks the instance and can apply configuration changes, but you must first write HCL that matches the existing resource's configuration.
 
 ## Step 1: Find the Instance ID
 
 ```bash
 # Find EC2 instance ID by tag or name
+
 aws ec2 describe-instances \
   --filters "Name=tag:Name,Values=my-app-server" \
   --query 'Reservations[].Instances[].[InstanceId,State.Name,Tags[?Key==`Name`].Value|[0]]' \

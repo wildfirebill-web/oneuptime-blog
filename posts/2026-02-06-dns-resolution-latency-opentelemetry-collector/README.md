@@ -24,6 +24,7 @@ Here is a basic configuration:
 
 ```yaml
 # collector-dns-check.yaml
+
 # Monitor DNS resolution for critical service hostnames.
 # The receiver performs A record lookups and reports latency and errors
 # for each configured hostname.

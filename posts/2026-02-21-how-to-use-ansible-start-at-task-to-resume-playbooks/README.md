@@ -18,6 +18,7 @@ Suppose you have this playbook:
 
 ```yaml
 # deploy-app.yml - A multi-step deployment playbook
+
 ---
 - name: Deploy application
   hosts: webservers

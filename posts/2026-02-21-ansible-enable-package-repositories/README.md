@@ -27,6 +27,7 @@ The `yum_repository` module creates or modifies `.repo` files. Here is how to ad
 
 ```yaml
 # Add the official NGINX repository for CentOS/RHEL
+
 - name: Add NGINX stable repository
   ansible.builtin.yum_repository:
     name: nginx-stable

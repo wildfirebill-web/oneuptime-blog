@@ -31,6 +31,7 @@ For this guide, we run both the controller and worker on the same Ubuntu server.
 
 ```bash
 # Install PostgreSQL
+
 sudo apt update
 sudo apt install -y postgresql postgresql-contrib
 

@@ -54,6 +54,7 @@ Create `Dockerfile.php` to add MySQL extension support:
 FROM php:8.2-apache
 
 # Install PDO MySQL and other common extensions
+
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # Enable Apache mod_rewrite for clean URLs

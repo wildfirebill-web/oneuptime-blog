@@ -48,6 +48,7 @@ flowchart LR
 
 ```bash
 # Create a topic first
+
 gcloud pubsub topics create order-events
 
 # Create a push subscription pointing to your endpoint

@@ -1,10 +1,10 @@
-# How to Fix "Error: Unsupported Attribute" in OpenTofu
+# How to Fix 'Error: Unsupported Attribute' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, Unsupported Attribute, Error, Infrastructure as Code, Debugging
 
-Description: Learn how to diagnose and fix "unsupported attribute" errors in OpenTofu caused by typos, provider version differences, and referencing attributes on resources that don't expose them.
+Description: Learn how to diagnose and fix 'unsupported attribute' errors in OpenTofu caused by typos, provider version differences, and referencing attributes on resources that don't expose them.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Description: Learn how to diagnose and fix "unsupported attribute" errors in Ope
 
 ## Common Error Forms
 
-```
+```hcl
 Error: Unsupported attribute
   on main.tf line 15, in resource "aws_instance" "web":
   15:   subnet_id = aws_vpc.main.subnet_id
@@ -30,6 +30,7 @@ Look up the actual attribute name in the provider documentation or the schema:
 
 ```bash
 # Show all attributes of a resource type
+
 tofu providers schema -json | \
   jq '.provider_schemas["registry.opentofu.org/hashicorp/aws"].resource_schemas["aws_vpc"].block.attributes | keys'
 ```
@@ -73,12 +74,12 @@ tofu init -upgrade
 Accessing a resource output where a data source is expected, or vice versa:
 
 ```hcl
-# WRONG — aws_subnet is a resource, not a data source call
+# WRONG - aws_subnet is a resource, not a data source call
 resource "aws_instance" "web" {
   subnet_id = data.aws_subnet.main.id  # Error if aws_subnet.main is a resource not data
 }
 
-# CORRECT — match the type prefix to how you declared it
+# CORRECT - match the type prefix to how you declared it
 resource "aws_instance" "web" {
   subnet_id = aws_subnet.main.id  # resource
   # OR
@@ -91,12 +92,12 @@ resource "aws_instance" "web" {
 When `count` or `for_each` creates multiple instances, you must index into the result:
 
 ```hcl
-# WRONG — aws_subnet.public is a list, not a single object
+# WRONG - aws_subnet.public is a list, not a single object
 resource "aws_instance" "web" {
   subnet_id = aws_subnet.public.id  # Error when count > 1
 }
 
-# CORRECT — index into the list
+# CORRECT - index into the list
 resource "aws_instance" "web" {
   subnet_id = aws_subnet.public[0].id
 
@@ -108,7 +109,7 @@ resource "aws_instance" "web" {
 ## Fix 5: Module Output Not Defined
 
 ```hcl
-# WRONG — module.vpc.subnet_ids not in the module's outputs.tf
+# WRONG - module.vpc.subnet_ids not in the module's outputs.tf
 resource "aws_ecs_cluster" "main" {
   # ...
 }
@@ -121,7 +122,7 @@ resource "aws_ecs_service" "app" {
 ```
 
 ```hcl
-# modules/vpc/outputs.tf — add the missing output
+# modules/vpc/outputs.tf - add the missing output
 output "subnet_ids" {
   value = aws_subnet.private[*].id
 }

@@ -1,8 +1,8 @@
-# How to Deploy MariaDB on Rancher
+# How to Deploy MariaDB on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, MariaDB, Databases, Galera
+Tags: Rancher, Kubernetes, MariaDB, Database, Galera
 
 Description: Deploy MariaDB on Rancher-managed Kubernetes clusters with Galera Cluster for multi-master replication and high availability.
 
@@ -21,6 +21,7 @@ MariaDB is a community-developed fork of MySQL with enhanced features including 
 
 ```yaml
 # mariadb-values.yaml - Primary-Replica configuration
+
 auth:
   rootPassword: "MariaDBS3cureP@ss"
   username: "appuser"

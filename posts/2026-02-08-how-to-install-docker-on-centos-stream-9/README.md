@@ -25,6 +25,7 @@ CentOS Stream 9 ships with Podman and related container tools. These can conflic
 
 ```bash
 # Remove podman, buildah, and any old Docker remnants
+
 sudo dnf remove -y podman buildah docker docker-client docker-client-latest \
   docker-common docker-latest docker-latest-logrotate \
   docker-logrotate docker-engine

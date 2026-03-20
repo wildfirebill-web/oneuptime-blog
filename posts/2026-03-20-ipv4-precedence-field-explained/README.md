@@ -10,7 +10,7 @@ Description: The 3-bit Precedence field in the original IPv4 ToS byte allowed tr
 
 In the original RFC 791 definition of IPv4, the Type of Service byte was structured as follows:
 
-```
+```text
 Bits 0-2: Precedence
 Bit  3:   D (Minimize Delay)
 Bit  4:   T (Maximize Throughput)
@@ -55,6 +55,7 @@ RFC 2474 (1998) superseded RFC 791's ToS field with Differentiated Services (Dif
 import socket
 
 # Set DSCP CS5 (Critical, formerly Precedence 5)
+
 DSCP_CS5 = 40          # 0b101000
 tos_byte = DSCP_CS5 << 2  # Shift into top 6 bits = 0xA0
 

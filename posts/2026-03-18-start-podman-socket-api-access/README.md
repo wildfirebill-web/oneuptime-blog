@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, API, Socket, Docker Compatibility
+Tags: Podman, Containers, DevOps, API, Sockets, Docker Compatibility
 
 Description: Learn how to start and configure the Podman socket to enable REST API access for automation tools, CI/CD pipelines, and Docker-compatible clients.
 
@@ -20,6 +20,7 @@ The fastest way to enable API access is through the systemd socket unit.
 
 ```bash
 # Start the Podman socket for the current user (rootless)
+
 systemctl --user start podman.socket
 
 # Verify the socket is active

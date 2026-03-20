@@ -20,6 +20,7 @@ If you do not have a live USB handy, download the Ubuntu ISO from ubuntu.com and
 
 ```bash
 # Write ISO to USB drive (replace /dev/sdX with your USB device)
+
 # WARNING: This will erase the USB drive
 sudo dd if=ubuntu-24.04-desktop-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```

@@ -90,6 +90,7 @@ Configure an alert for unexpected host endpoint drops:
 
 ```yaml
 # Grafana alert rule
+
 - alert: CalicoHostEndpointHighDropRate
   expr: rate(felix_policy_dropped_packets_total[5m]) > 100
   for: 2m

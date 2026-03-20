@@ -24,6 +24,7 @@ Before diving in, make sure you have the CDK CLI installed and your AWS account 
 
 ```bash
 # Install CDK globally
+
 npm install -g aws-cdk
 
 # Bootstrap your account (one-time setup per account/region)

@@ -16,6 +16,7 @@ The `fileset` function takes a base directory path and a glob pattern, then retu
 
 ```hcl
 # fileset(base_path, pattern)
+
 # Returns a set of relative file paths matching the pattern
 fileset("${path.module}/configs", "*.conf")
 # Might return: ["app.conf", "nginx.conf", "redis.conf"]

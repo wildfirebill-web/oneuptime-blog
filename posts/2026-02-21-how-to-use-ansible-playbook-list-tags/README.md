@@ -16,6 +16,7 @@ Run `--list-tags` to see all tags defined in a playbook:
 
 ```bash
 # List all tags in a playbook
+
 ansible-playbook --list-tags deploy.yml
 ```
 

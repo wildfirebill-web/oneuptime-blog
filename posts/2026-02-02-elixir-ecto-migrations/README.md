@@ -45,6 +45,7 @@ Generate a new migration using the Mix task. This creates a timestamped file in 
 
 ```bash
 # Generate a migration to create a users table
+
 mix ecto.gen.migration create_users
 ```
 

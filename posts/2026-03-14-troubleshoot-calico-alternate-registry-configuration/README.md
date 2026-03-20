@@ -30,6 +30,7 @@ Start by identifying which Calico component is failing and what error it reports
 
 ```bash
 # Check pod status across Calico namespaces
+
 kubectl get pods -n calico-system -o wide
 kubectl get pods -n tigera-operator -o wide
 

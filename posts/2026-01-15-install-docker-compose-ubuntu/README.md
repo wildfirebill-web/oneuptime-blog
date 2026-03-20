@@ -22,6 +22,7 @@ If Docker isn't installed:
 
 ```bash
 # Install Docker
+
 sudo apt update
 sudo apt install docker.io -y
 
@@ -332,7 +333,7 @@ services:
       retries: 5
 ```
 
-### Resource Limits
+Resource Limits
 
 ```yaml
 services:

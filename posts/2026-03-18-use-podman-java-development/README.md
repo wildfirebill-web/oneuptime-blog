@@ -22,6 +22,7 @@ Several organizations publish Java container images. The most common choices:
 
 ```bash
 # Eclipse Temurin (formerly AdoptOpenJDK) - community-driven, widely used
+
 podman pull docker.io/library/eclipse-temurin:21-jdk
 
 # Amazon Corretto - Amazon's OpenJDK distribution

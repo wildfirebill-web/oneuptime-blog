@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Kubernetes, Debugging, Pods, Troubleshooting, DevOps
 
-Description: Use Portainer's Kubernetes interface to diagnose and resolve pod failures — from Pending states and scheduling issues to container crashes and startup errors.
+Description: Use Portainer's Kubernetes interface to diagnose and resolve pod failures - from Pending states and scheduling issues to container crashes and startup errors.
 
 ---
 
@@ -23,7 +23,7 @@ Pod failures in Kubernetes fall into a predictable set of categories. Portainer'
 
 ## Step 1: Identify the Failing Pod
 
-In Portainer, go to **Kubernetes > Namespaces > [namespace] > Pods**. Filter by status — unhealthy pods show red or yellow status indicators.
+In Portainer, go to **Kubernetes > Namespaces > [namespace] > Pods**. Filter by status - unhealthy pods show red or yellow status indicators.
 
 ## Step 2: View Pod Events
 
@@ -36,6 +36,7 @@ The most informative first step is checking pod events. In Portainer, open the p
 
 ```bash
 # Equivalent kubectl command
+
 kubectl describe pod <pod-name> -n <namespace>
 ```
 

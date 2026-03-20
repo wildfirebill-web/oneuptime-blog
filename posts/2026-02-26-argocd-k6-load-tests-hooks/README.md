@@ -295,6 +295,7 @@ For larger load tests, use the k6-operator to distribute the load across multipl
 
 ```bash
 # Install k6-operator
+
 helm install k6-operator \
   grafana/k6-operator \
   --namespace k6-operator \

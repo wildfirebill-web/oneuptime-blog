@@ -20,6 +20,7 @@ Use the `-t` flag to assign a name and tag during build.
 
 ```bash
 # Tag with name and version
+
 podman build -t myapp:v1.0.0 .
 
 # Tag with just a name (defaults to :latest)

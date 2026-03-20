@@ -12,6 +12,7 @@ Smokeping is a network latency measurement tool that graphs RTT and packet loss 
 
 ```bash
 # Install Smokeping and fping6 on Ubuntu/Debian
+
 sudo apt update
 sudo apt install smokeping fping
 

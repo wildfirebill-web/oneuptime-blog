@@ -12,7 +12,7 @@ Arista EOS (Extensible Operating System) is widely used in hyperscale datacenter
 
 ## Step 1: Enable IPv6 Routing and Configure Interfaces
 
-```
+```text
 ! Enable IPv6 unicast routing
 Switch(config)# ipv6 unicast-routing
 
@@ -35,7 +35,7 @@ Switch(config-if)# ipv6 address 2001:db8::1/128
 
 ## Step 2: Configure BGP with IPv6
 
-```
+```text
 ! Basic BGP with IPv6 address family
 Switch(config)# router bgp 65001
 Switch(config-router-bgp)# router-id 10.0.0.1
@@ -54,7 +54,7 @@ Switch(config-router-bgp-af-ipv6)# neighbor 2001:db8:0:1::2 activate
 
 Arista EOS excels at BGP unnumbered, which uses IPv6 link-local addresses for BGP peering:
 
-```
+```text
 ! Enable IPv6 on the interface (link-local is auto-generated)
 Switch(config)# interface Ethernet1
 Switch(config-if)# no switchport
@@ -78,7 +78,7 @@ Switch(config-router-bgp-af-ipv6)# neighbor SPINE activate
 
 ## Step 4: Configure IPv6 ACL
 
-```
+```text
 ! Create IPv6 access control list
 Switch(config)# ipv6 access-list IPV6-PROTECT
 Switch(config-ipv6-acl)# permit icmp any any
@@ -97,6 +97,7 @@ Arista's eAPI provides a JSON-RPC interface for automation:
 ```python
 #!/usr/bin/env python3
 # configure_ipv6_arista.py
+
 # Use Arista's eAPI to configure IPv6 addressing
 
 import requests
@@ -139,7 +140,7 @@ print(json.dumps(response.json(), indent=2))
 
 ## Verification Commands
 
-```
+```text
 ! Show IPv6 interface status
 Switch# show ipv6 interface brief
 

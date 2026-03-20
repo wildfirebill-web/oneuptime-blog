@@ -85,6 +85,7 @@ istiod exposes metrics about certificate signing:
 
 ```text
 # Number of certificate signing requests received
+
 citadel_server_csr_count
 
 # Number of successful certificate signings

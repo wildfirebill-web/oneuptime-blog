@@ -21,6 +21,7 @@ resource "random_password" "cf_secret" {
 }
 
 # Add a listener rule on the ALB to block requests without the header
+
 resource "aws_lb_listener_rule" "cf_only" {
   listener_arn = aws_lb_listener.https.arn
   priority     = 1
@@ -146,4 +147,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront with an ALB origin provides edge caching, DDoS protection, and SSL termination for dynamic applications. OpenTofu manages the distribution, origin validation headers, cache behaviors for static and dynamic content, and WAF associations — creating a secure, globally distributed application delivery layer.
+CloudFront with an ALB origin provides edge caching, DDoS protection, and SSL termination for dynamic applications. OpenTofu manages the distribution, origin validation headers, cache behaviors for static and dynamic content, and WAF associations - creating a secure, globally distributed application delivery layer.

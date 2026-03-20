@@ -16,6 +16,7 @@ The `default` network created when you install libvirt uses NAT (Network Address
 
 ```bash
 # View the default NAT network configuration
+
 virsh net-dumpxml default
 ```
 

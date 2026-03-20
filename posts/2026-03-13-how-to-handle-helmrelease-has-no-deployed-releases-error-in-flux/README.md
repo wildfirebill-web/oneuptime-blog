@@ -102,6 +102,7 @@ If you want to preserve history, you can manually fix the release state using th
 
 ```bash
 # First, check the current release history
+
 helm history my-app -n production
 
 # If you see failed releases, try rolling back to a specific version

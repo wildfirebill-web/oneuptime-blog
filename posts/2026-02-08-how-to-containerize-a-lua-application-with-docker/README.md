@@ -73,6 +73,7 @@ server:loop()
 
 ```dockerfile
 # Dockerfile for standalone Lua application
+
 FROM ubuntu:22.04
 
 # Install Lua, LuaRocks, and build dependencies

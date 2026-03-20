@@ -56,6 +56,7 @@ Create an SQS queue using the AWS Console or CLI:
 
 ```bash
 # Create a standard queue
+
 aws sqs create-queue --queue-name my-application-queue
 
 # Create a FIFO queue (requires .fifo suffix)

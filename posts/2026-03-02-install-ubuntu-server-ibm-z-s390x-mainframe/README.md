@@ -34,6 +34,7 @@ Ubuntu does not provide a traditional bootable ISO for s390x. Instead, the IBM Z
 
 ```bash
 # Download s390x Ubuntu installation kernel and initrd
+
 wget https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-live-server-s390x.iso
 
 # For network boot specifically:

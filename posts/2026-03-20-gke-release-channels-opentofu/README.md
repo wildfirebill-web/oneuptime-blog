@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Release Channels, Kubernetes, OpenTofu, Upgrades, Infrastructure
+Tags: GKE, Release Channels, Kubernetes, OpenTofu, Upgrade, Infrastructure
 
 Description: Learn how to configure GKE release channels with OpenTofu to automate Kubernetes version management and receive timely security patches and feature updates.
 
@@ -14,6 +14,7 @@ GKE Release Channels automate Kubernetes version upgrades by enrolling clusters 
 
 ```hcl
 # main.tf - GKE cluster with REGULAR release channel
+
 resource "google_container_cluster" "cluster" {
   name     = "release-channel-cluster"
   location = "us-central1"

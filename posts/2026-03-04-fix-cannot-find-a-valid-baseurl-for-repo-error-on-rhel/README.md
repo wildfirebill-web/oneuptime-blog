@@ -14,6 +14,7 @@ The "Cannot find a valid baseurl for repo" error is one of the most common RHEL 
 
 ```bash
 # Check if the network interface is up
+
 ip addr show
 
 # Ping a known IP address

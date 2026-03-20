@@ -30,6 +30,7 @@ Start by identifying a resource in your cloud account.
 
 ```bash
 # List existing RDS instances
+
 aws rds describe-db-instances --query 'DBInstances[*].[DBInstanceIdentifier,Engine,InstanceClass]'
 ```
 

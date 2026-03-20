@@ -20,6 +20,7 @@ A ConfigMap used for variable substitution should have flat key-value pairs in i
 
 ```yaml
 # cluster-config.yaml - ConfigMap with cluster-wide variables
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

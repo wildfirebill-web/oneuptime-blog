@@ -25,6 +25,7 @@ resource "aws_instance" "web" {
 }
 
 # Reference: aws_instance.web[0], aws_instance.web[1]
+
 # Output:    aws_instance.web[*].id  (all IDs)
 ```
 
@@ -143,7 +144,7 @@ module "monitoring" {
 
 ## Meta-Argument Comparison
 
-```
+```text
 Meta-argument     When to use
 --------------    -----------
 count             Simple numerical repetition, boolean flags

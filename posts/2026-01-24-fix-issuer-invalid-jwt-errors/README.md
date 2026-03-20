@@ -138,6 +138,7 @@ debugJWTIssuer(token, 'https://auth.example.com');
 
 ```python
 # Python debug function
+
 import jwt
 import base64
 import json

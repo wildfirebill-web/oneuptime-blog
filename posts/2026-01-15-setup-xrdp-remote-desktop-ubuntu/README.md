@@ -39,6 +39,7 @@ XRDP is available in Ubuntu's default repositories. Here's how to install it alo
 
 ```bash
 # Update package lists to ensure we get the latest version
+
 sudo apt update
 
 # Install XRDP and the session manager
@@ -786,7 +787,7 @@ sudo -u rdpuser1 bash -c 'echo "xfce4-session" > ~/.xsession'
 sudo -u rdpuser2 bash -c 'echo "startplasma-x11" > ~/.xsession'
 ```
 
-### Resource Limits for Multi-User
+Resource Limits for Multi-User
 
 Configure system limits to prevent resource exhaustion:
 

@@ -56,6 +56,7 @@ argocd proj get team-a
 
 ```bash
 # Add a specific repo
+
 argocd proj add-source team-a https://github.com/org/my-repo
 
 # Or add a wildcard to allow all repos under an org

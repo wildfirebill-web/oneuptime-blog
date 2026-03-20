@@ -88,6 +88,7 @@ The idempotent producer ensures each message is written exactly once to Kafka, e
 from kafka import KafkaProducer
 
 # Configure idempotent producer
+
 producer = KafkaProducer(
     bootstrap_servers=['localhost:9092'],
 

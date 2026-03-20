@@ -10,7 +10,7 @@ TCP connection states reveal the lifecycle stage of each connection. Monitoring 
 
 ## TCP State Reference
 
-```
+```text
 State          Description
 -------------  -------------------------------------------------
 LISTEN         Waiting for incoming connection
@@ -30,6 +30,7 @@ CLOSED         Connection terminated
 
 ```bash
 # Show established connections
+
 ss -tn state established
 
 # Show listening sockets
@@ -53,7 +54,7 @@ ss -ta | awk 'NR>1 {print $1}' | sort | uniq -c | sort -rn
 
 # Expected healthy output:
 #   45 ESTAB      (established connections)
-#   12 TIME-WAIT  (recently closed — normal)
+#   12 TIME-WAIT  (recently closed - normal)
 #    3 LISTEN     (services)
 
 # Concerning patterns:
@@ -103,7 +104,7 @@ watch -n 5 'ss -tn state close-wait | wc -l'
 
 ```bash
 #!/bin/bash
-# tcp-states.sh — Show TCP state summary
+# tcp-states.sh - Show TCP state summary
 
 while true; do
     echo "=== TCP States $(date '+%H:%M:%S') ==="
@@ -117,8 +118,8 @@ done
 
 ```bash
 # Find any connection that's NOT in ESTABLISHED or LISTEN state
-# These are connections in transition — useful for debugging handshake issues
+# These are connections in transition - useful for debugging handshake issues
 ss -tan | grep -v -E "^(ESTAB|LISTEN|State)" | head -20
 ```
 
-Understanding TCP states directly from `ss` gives you real-time visibility into your application's network behavior — high counts of unusual states reliably signal bugs or attacks.
+Understanding TCP states directly from `ss` gives you real-time visibility into your application's network behavior - high counts of unusual states reliably signal bugs or attacks.

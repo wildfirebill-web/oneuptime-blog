@@ -1,4 +1,4 @@
-# How to Set Up Node Exporter for Host Metrics with Portainer
+# How to Set Up Node Exporter for Host Metrics with Portainer - Host Metrics
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to deploy Prometheus Node Exporter as a Portainer stack t
 
 ## Introduction
 
-While cAdvisor captures container-level metrics, Node Exporter collects host-level system metrics — CPU load, memory usage, disk I/O, network throughput, and system statistics for the entire host machine. Deploying Node Exporter through Portainer gives you full-stack visibility: container metrics from cAdvisor and host metrics from Node Exporter, all scraped by Prometheus.
+While cAdvisor captures container-level metrics, Node Exporter collects host-level system metrics - CPU load, memory usage, disk I/O, network throughput, and system statistics for the entire host machine. Deploying Node Exporter through Portainer gives you full-stack visibility: container metrics from cAdvisor and host metrics from Node Exporter, all scraped by Prometheus.
 
 ## Prerequisites
 
@@ -55,6 +55,7 @@ networks:
 
 ```bash
 # Check metrics endpoint
+
 curl -s http://localhost:9100/metrics | head -30
 
 # Check specific metric categories
@@ -67,7 +68,7 @@ curl -s http://localhost:9100/metrics | grep "^node_filesystem_avail_bytes"
 ## Step 3: Add Node Exporter to Prometheus Scrape Config
 
 ```yaml
-# /opt/monitoring/prometheus.yml — Add Node Exporter job
+# /opt/monitoring/prometheus.yml - Add Node Exporter job
 scrape_configs:
   - job_name: "node-exporter"
     scrape_interval: 15s
@@ -91,34 +92,34 @@ curl -s http://localhost:9090/api/v1/targets | \
 
 ## Step 4: Key Node Exporter Metrics
 
-```
+```text
 CPU Metrics:
   node_cpu_seconds_total{mode="user|system|idle|iowait|irq|softirq"}
-  node_load1, node_load5, node_load15                — System load averages
+  node_load1, node_load5, node_load15                - System load averages
 
 Memory Metrics:
-  node_memory_MemTotal_bytes        — Total physical memory
-  node_memory_MemAvailable_bytes    — Available memory (free + reclaimable)
-  node_memory_MemFree_bytes         — Actually free memory
-  node_memory_Buffers_bytes         — Kernel buffers
-  node_memory_Cached_bytes          — Page cache
+  node_memory_MemTotal_bytes        - Total physical memory
+  node_memory_MemAvailable_bytes    - Available memory (free + reclaimable)
+  node_memory_MemFree_bytes         - Actually free memory
+  node_memory_Buffers_bytes         - Kernel buffers
+  node_memory_Cached_bytes          - Page cache
 
 Disk Metrics:
-  node_filesystem_size_bytes{mountpoint="/"}     — Total disk size
-  node_filesystem_avail_bytes{mountpoint="/"}    — Available disk space
-  node_disk_read_bytes_total                     — Bytes read from disk
-  node_disk_written_bytes_total                  — Bytes written to disk
-  node_disk_io_time_seconds_total                — Time in disk I/O operations
+  node_filesystem_size_bytes{mountpoint="/"}     - Total disk size
+  node_filesystem_avail_bytes{mountpoint="/"}    - Available disk space
+  node_disk_read_bytes_total                     - Bytes read from disk
+  node_disk_written_bytes_total                  - Bytes written to disk
+  node_disk_io_time_seconds_total                - Time in disk I/O operations
 
 Network Metrics:
-  node_network_receive_bytes_total{device="eth0"}     — Bytes received
-  node_network_transmit_bytes_total{device="eth0"}    — Bytes transmitted
-  node_network_receive_errors_total                   — Receive errors
+  node_network_receive_bytes_total{device="eth0"}     - Bytes received
+  node_network_transmit_bytes_total{device="eth0"}    - Bytes transmitted
+  node_network_receive_errors_total                   - Receive errors
 
 System Metrics:
-  node_uname_info                    — OS/kernel version info
-  node_boot_time_seconds             — System boot time (→ uptime)
-  node_time_seconds                  — Current system time
+  node_uname_info                    - OS/kernel version info
+  node_boot_time_seconds             - System boot time (→ uptime)
+  node_time_seconds                  - Current system time
 ```
 
 ## Step 5: Useful Prometheus Queries for Host Metrics
@@ -185,7 +186,7 @@ groups:
 For Portainer managing multiple Docker environments, deploy Node Exporter on each host and add all targets to Prometheus:
 
 ```yaml
-# prometheus.yml — Multi-host Node Exporter scraping
+# prometheus.yml - Multi-host Node Exporter scraping
 scrape_configs:
   - job_name: "node-exporter"
     static_configs:

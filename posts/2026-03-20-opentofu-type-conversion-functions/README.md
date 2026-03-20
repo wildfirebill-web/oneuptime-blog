@@ -1,11 +1,10 @@
----
-title: "How to Use Type Conversion Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, types
-description: "Learn how to use tobool, tonumber, tostring, tolist, tomap, toset, and type functions in OpenTofu for type conversion."
----
-
 # How to Use Type Conversion Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Types
+
+Description: Learn how to use tobool, tonumber, tostring, tolist, tomap, toset, and type functions in OpenTofu for type conversion.
 
 OpenTofu is strongly typed, but its type conversion functions let you explicitly convert between types when needed. The `type()` function helps you inspect what type a value has.
 
@@ -194,6 +193,7 @@ Returns the type of a value as a string (useful for debugging):
 
 ```hcl
 # Useful in debugging with output
+
 output "debug_type" {
   value = type(var.some_variable)
 }

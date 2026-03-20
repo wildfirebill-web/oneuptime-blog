@@ -18,6 +18,7 @@ A Caddyfile consists of site blocks and an optional global options block. Each s
 
 ```caddyfile
 # This is a comment
+
 # Global options block - must appear first
 {
     admin off           # Disable the admin API

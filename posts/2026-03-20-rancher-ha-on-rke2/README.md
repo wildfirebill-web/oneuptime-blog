@@ -35,6 +35,7 @@ graph TD
 
 ```bash
 # On server-1
+
 curl -sfL https://get.rke2.io | sh -
 
 # Configure the first server

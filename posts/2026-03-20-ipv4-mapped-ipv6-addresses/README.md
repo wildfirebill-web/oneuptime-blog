@@ -14,7 +14,7 @@ IPv4-mapped IPv6 addresses (prefix `::ffff:0:0/96`) allow IPv6-only APIs to repr
 
 The structure of an IPv4-mapped IPv6 address:
 
-```
+```yaml
 |<-------- 80 bits (all zeros) -------->|<-- 16 bits -->|<-- 32 bits -->|
 |        0000....0000                    |   0xFFFF      |  IPv4 address |
 
@@ -27,7 +27,7 @@ Mapped: ::ffff:192.168.1.100
 
 ## Common Examples
 
-```
+```text
 IPv4          → IPv4-Mapped IPv6
 127.0.0.1     → ::ffff:127.0.0.1    (loopback)
 192.168.1.1   → ::ffff:192.168.1.1
@@ -41,6 +41,7 @@ IPv4          → IPv4-Mapped IPv6
 import ipaddress
 
 # Convert IPv4 to IPv4-mapped IPv6
+
 def ipv4_to_mapped(ipv4_str):
     ipv4 = ipaddress.IPv4Address(ipv4_str)
     # IPv4-mapped IPv6 = ::ffff: + IPv4

@@ -16,6 +16,7 @@ Before connecting ArgoCD to ChartMuseum, you need a running ChartMuseum instance
 
 ```yaml
 # chartmuseum-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

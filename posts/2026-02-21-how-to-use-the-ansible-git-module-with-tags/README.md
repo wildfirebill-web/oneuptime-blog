@@ -14,6 +14,7 @@ Git tags are the standard way to mark release versions. When deploying with Ansi
 
 ```yaml
 # playbook-tag-deploy.yml
+
 # Clones a repository at a specific release tag
 - name: Deploy specific version
   hosts: webservers

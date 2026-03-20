@@ -36,6 +36,7 @@ Kubernetes Pod Security Standards (PSS) replace the deprecated PodSecurityPolici
 
 ```yaml
 # namespaces/production.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

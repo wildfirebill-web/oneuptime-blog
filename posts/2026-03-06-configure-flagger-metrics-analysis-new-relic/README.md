@@ -28,6 +28,7 @@ Create a Kubernetes secret with your New Relic API credentials:
 
 ```bash
 # Create the secret for Flagger to use when querying New Relic
+
 kubectl create secret generic newrelic-credentials \
   --namespace=demo \
   --from-literal=newrelic_account_id=YOUR_ACCOUNT_ID \

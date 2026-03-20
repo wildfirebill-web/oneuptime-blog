@@ -121,6 +121,7 @@ The binding configuration looks like this.
 
 ```yaml
 # Element: Server Icon
+
 properties:
   color:
     field: Value

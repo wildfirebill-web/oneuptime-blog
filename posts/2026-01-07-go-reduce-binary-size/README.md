@@ -59,6 +59,7 @@ The `nm` tool lists symbols in a Go binary, helping identify large components.
 
 ```bash
 # Build a simple binary for analysis
+
 go build -o myapp main.go
 
 # List all symbols sorted by size (largest first)

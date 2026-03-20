@@ -71,6 +71,7 @@ The quickest way to get Keycloak running locally is using Docker.
 
 ```bash
 # Start Keycloak in development mode with an admin user
+
 docker run -d \
   --name keycloak \
   -p 8080:8080 \

@@ -49,6 +49,7 @@ Here is what setting up Dynatrace looks like for a Java application:
 
 ```bash
 # Install OneAgent on the host - that's it
+
 # Dynatrace automatically discovers and instruments Java processes
 wget -O Dynatrace-OneAgent.sh \
     "https://your-environment.live.dynatrace.com/api/v1/deployment/installer/agent/unix/default/latest?Api-Token=YOUR_TOKEN"

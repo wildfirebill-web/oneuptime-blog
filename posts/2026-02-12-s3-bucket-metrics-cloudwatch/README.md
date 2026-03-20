@@ -23,6 +23,7 @@ You can view them in the console or query them via CLI.
 
 ```bash
 # Get the bucket size over the last 7 days
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/S3 \
   --metric-name BucketSizeBytes \

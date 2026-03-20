@@ -56,6 +56,7 @@ The `clusters/` directory is the entry point for each cluster. It contains the F
 
 ```yaml
 # clusters/production/flux-system/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

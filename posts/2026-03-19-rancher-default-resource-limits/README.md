@@ -203,6 +203,7 @@ spec:
 kubectl apply -f test-pod.yaml
 
 # Check what resources were assigned
+
 kubectl get pod test-defaults -n api-production -o json | \
   jq '.spec.containers[0].resources'
 ```

@@ -231,6 +231,7 @@ IMAGE="registry.example.com/my-app"
 TAG="${BUILD_NUMBER:-latest}"
 
 # Build the image
+
 podman build -t ${IMAGE}:${TAG} .
 
 # Push and sign in one step

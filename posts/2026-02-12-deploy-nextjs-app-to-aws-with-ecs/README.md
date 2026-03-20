@@ -20,6 +20,7 @@ This Dockerfile uses three stages - dependencies, build, and runtime - to create
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app

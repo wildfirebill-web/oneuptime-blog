@@ -50,6 +50,7 @@ Here is a reference of the most useful patterns and what they match.
 
 ```yaml
 # Single directory level - matches apps/frontend.json, apps/backend.json
+
 - path: 'apps/*.json'
 
 # Recursive - matches apps/frontend/config.json, apps/team-a/frontend/config.json

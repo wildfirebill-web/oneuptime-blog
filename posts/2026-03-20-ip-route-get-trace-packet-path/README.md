@@ -14,6 +14,7 @@ Description: Use ip route get to trace which route and interface the kernel woul
 
 ```bash
 # Which route handles traffic to 8.8.8.8?
+
 ip route get 8.8.8.8
 
 # Sample output:
@@ -27,7 +28,7 @@ ip route get 8.8.8.8
 # Which route when source IP is 10.0.0.5?
 ip route get 8.8.8.8 from 10.0.0.5
 
-# Useful for policy routing — rules match source address
+# Useful for policy routing - rules match source address
 ```
 
 ## Trace Path for a Local Destination
@@ -39,7 +40,7 @@ ip route get 192.168.1.50
 # Output:
 # 192.168.1.50 dev eth0 src 192.168.1.100 uid 0
 #     cache
-# (no via — direct, same subnet)
+# (no via - direct, same subnet)
 ```
 
 ## Trace Path via Specific Interface
@@ -68,16 +69,16 @@ ip -4 route get 8.8.8.8
 
 ## Understanding the Output
 
-```
+```text
 8.8.8.8 via 192.168.1.1 dev eth0 src 192.168.1.100 uid 0
  ↑        ↑              ↑       ↑
  dest     gateway        iface   source IP chosen
 ```
 
-- `via` — next hop gateway
-- `dev` — outgoing interface
-- `src` — source IP the kernel would use
-- `uid` — user ID making the lookup
+- `via` - next hop gateway
+- `dev` - outgoing interface
+- `src` - source IP the kernel would use
+- `uid` - user ID making the lookup
 
 ## Use Cases
 
@@ -106,4 +107,4 @@ traceroute 8.8.8.8
 
 ## Conclusion
 
-`ip route get <destination>` shows exactly which route, gateway, and interface the kernel would use for a specific packet. Add `from <source>` to simulate policy routing lookups. This command is purely informational — no packets are sent. It is indispensable for diagnosing routing issues without generating actual traffic.
+`ip route get <destination>` shows exactly which route, gateway, and interface the kernel would use for a specific packet. Add `from <source>` to simulate policy routing lookups. This command is purely informational - no packets are sent. It is indispensable for diagnosing routing issues without generating actual traffic.

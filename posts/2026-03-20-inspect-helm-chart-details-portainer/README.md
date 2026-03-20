@@ -8,7 +8,7 @@ Description: Learn how to inspect deployed Helm chart releases, view values, che
 
 ## Overview
 
-After deploying a Helm chart, you often need to inspect the deployed release — to see what values were used, what manifests were generated, or to check the release history. Portainer exposes these details through the UI.
+After deploying a Helm chart, you often need to inspect the deployed release - to see what values were used, what manifests were generated, or to check the release history. Portainer exposes these details through the UI.
 
 ## Accessing Helm Release Details
 
@@ -27,10 +27,11 @@ After deploying a Helm chart, you often need to inspect the deployed release —
 
 ### User-Supplied Values
 
-The values section shows the values used for this deployment — the combination of chart defaults and your overrides:
+The values section shows the values used for this deployment - the combination of chart defaults and your overrides:
 
 ```yaml
 # Example of values visible in the release detail
+
 replicaCount: 3
 service:
   type: LoadBalancer

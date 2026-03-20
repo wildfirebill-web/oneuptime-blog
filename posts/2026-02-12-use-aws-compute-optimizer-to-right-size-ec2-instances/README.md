@@ -26,6 +26,7 @@ Compute Optimizer needs to be opted in at the account level:
 
 ```bash
 # Opt in to Compute Optimizer
+
 aws compute-optimizer update-enrollment-status --status Active
 
 # Verify enrollment

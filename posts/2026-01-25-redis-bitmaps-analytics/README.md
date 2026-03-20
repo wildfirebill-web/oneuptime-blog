@@ -40,6 +40,7 @@ Key insight: User ID 5 being active sets bit position 5 to 1. Checking if user 5
 
 ```bash
 # Set bit at position (user_id) to 1 (active)
+
 SETBIT users:active:2026-01-25 12345 1
 
 # Get bit at position

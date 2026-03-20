@@ -12,8 +12,9 @@ Description: Use /etc/hosts to create local DNS overrides, override specific hos
 
 ## Basic /etc/hosts Format
 
-```
+```text
 # Format:
+
 # IP_ADDRESS  HOSTNAME  [ALIAS...]
 
 # Standard entries:
@@ -145,4 +146,4 @@ awk '/^[^#]/{ip=$1; for(i=2;i<=NF;i++) print $i, ip}' /etc/hosts | \
 
 ## Conclusion
 
-`/etc/hosts` provides immediate, no-DNS-server-required hostname resolution. It is resolved before DNS by default (`files` before `dns` in `/etc/nsswitch.conf`). Use it for local development overrides, host-specific testing, and temporary routing changes. For blocking domains, point them to `0.0.0.0` (faster failure than `127.0.0.1` which sends the connection to your localhost). Remember that `/etc/hosts` changes take effect immediately — no caching or TTL — but only affect the single host where the file exists.
+`/etc/hosts` provides immediate, no-DNS-server-required hostname resolution. It is resolved before DNS by default (`files` before `dns` in `/etc/nsswitch.conf`). Use it for local development overrides, host-specific testing, and temporary routing changes. For blocking domains, point them to `0.0.0.0` (faster failure than `127.0.0.1` which sends the connection to your localhost). Remember that `/etc/hosts` changes take effect immediately - no caching or TTL - but only affect the single host where the file exists.

@@ -34,6 +34,7 @@ For scripting or quick checks from the command line, use the `gcloud` CLI:
 
 ```bash
 # Check if a service account has a specific permission on a project
+
 gcloud policy-intelligence troubleshoot-policy iam \
     //cloudresourcemanager.googleapis.com/projects/your-project-id \
     --principal-email=your-sa@your-project.iam.gserviceaccount.com \

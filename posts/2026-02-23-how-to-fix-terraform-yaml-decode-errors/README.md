@@ -38,6 +38,7 @@ YAML uses indentation to define structure. Inconsistent or incorrect indentation
 
 ```yaml
 # Wrong - mixed indentation
+
 servers:
   web:
     port: 8080

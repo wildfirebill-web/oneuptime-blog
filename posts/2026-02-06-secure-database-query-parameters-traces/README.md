@@ -44,6 +44,7 @@ For the Python `opentelemetry-instrumentation-psycopg2` library:
 
 ```python
 # tracing_setup.py
+
 from opentelemetry.instrumentation.psycopg2 import Psycopg2Instrumentor
 
 # Instrument psycopg2 but do not capture any SQL statements

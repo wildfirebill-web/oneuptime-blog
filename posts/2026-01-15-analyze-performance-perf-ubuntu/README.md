@@ -43,6 +43,7 @@ Before using `perf`, you need to install the appropriate packages. The `perf` to
 
 ```bash
 # Display the current kernel version
+
 uname -r
 
 # Example output: 6.5.0-35-generic

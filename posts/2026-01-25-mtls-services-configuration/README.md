@@ -39,6 +39,7 @@ sequenceDiagram
 # setup-ca.sh - Create a private Certificate Authority
 
 # Create directory structure
+
 mkdir -p ca/{certs,crl,newcerts,private,csr}
 chmod 700 ca/private
 touch ca/index.txt

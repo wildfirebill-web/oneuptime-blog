@@ -22,6 +22,7 @@ Compile and run with AddressSanitizer:
 
 ```bash
 # Install GCC
+
 sudo dnf install -y gcc gcc-c++
 
 # Compile with AddressSanitizer enabled

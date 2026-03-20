@@ -34,6 +34,7 @@ Generate a certificate signed by a different CA (not the Typha CA) and attempt t
 
 ```bash
 # Generate an untrusted CA and certificate
+
 openssl req -x509 -newkey rsa:2048 -keyout /tmp/untrusted-ca.key \
   -out /tmp/untrusted-ca.crt -days 1 -nodes -subj "/CN=untrusted-ca"
 openssl req -newkey rsa:2048 -keyout /tmp/untrusted.key \

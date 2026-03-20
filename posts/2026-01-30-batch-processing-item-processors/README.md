@@ -1014,6 +1014,7 @@ from decimal import Decimal
 import logging
 
 # Generic type variables for input and output
+
 In = TypeVar('In')
 O = TypeVar('O')
 

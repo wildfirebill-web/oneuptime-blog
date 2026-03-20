@@ -209,6 +209,7 @@ spec:
 
 ```bash
 # Generate random password
+
 kubectl create secret generic app-user-credentials \
   --from-literal=username=app_user \
   --from-literal=password=$(openssl rand -base64 32)

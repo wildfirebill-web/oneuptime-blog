@@ -41,6 +41,7 @@ Create a Cloud Tasks queue with appropriate rate limits and retry settings.
 
 ```bash
 # Create a queue for report generation tasks
+
 gcloud tasks queues create report-generation \
   --location=us-central1 \
   --max-dispatches-per-second=10 \

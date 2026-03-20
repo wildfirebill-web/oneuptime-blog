@@ -25,6 +25,7 @@ Two VPC attributes control whether DNS works at all.
 
 ```bash
 # Check current DNS settings for your VPC
+
 aws ec2 describe-vpc-attribute \
   --vpc-id vpc-0abc123def456789 \
   --attribute enableDnsSupport

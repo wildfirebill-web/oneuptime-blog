@@ -14,6 +14,7 @@ An ICMP flood (or ping flood) is a denial-of-service attack where an attacker se
 
 ```bash
 # Check incoming packet rate on an interface
+
 watch -n 1 "ip -s link show eth0 | grep 'RX packets'"
 
 # More detailed: monitor ICMP packet rate with tcpdump

@@ -14,6 +14,7 @@ When Terraform and Ansible manage different aspects of the same infrastructure, 
 
 ```hcl
 # terraform/outputs.tf
+
 output "db_endpoint" {
   value = aws_db_instance.main.endpoint
 }

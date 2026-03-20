@@ -183,6 +183,7 @@ Set limits based on your server's resources and application needs.
 
 [mysqld]
 # Maximum simultaneous connections
+
 # Rule of thumb: start with (available RAM in MB) / 10
 # But consider your application's actual needs
 max_connections = 300

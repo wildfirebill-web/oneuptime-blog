@@ -22,6 +22,7 @@ Check release status to see if any are stuck in failed state.
 
 ```bash
 # List all releases
+
 helm list -A
 
 # Show all releases including failed ones

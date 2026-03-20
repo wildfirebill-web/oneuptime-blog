@@ -46,6 +46,7 @@ EKS automatically deploys Virtual Kubelet when you create Fargate profiles. Veri
 ```bash
 kubectl get nodes
 # You should see nodes like fargate-192.168.1.1
+
 ```
 
 Create a namespace for serverless workloads:

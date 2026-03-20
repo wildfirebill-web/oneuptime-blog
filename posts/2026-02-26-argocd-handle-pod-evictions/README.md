@@ -43,6 +43,7 @@ With **self-healing disabled**, ArgoCD shows the application as Degraded but doe
 
 ```yaml
 # Recommended configuration for eviction resilience
+
 spec:
   syncPolicy:
     automated:

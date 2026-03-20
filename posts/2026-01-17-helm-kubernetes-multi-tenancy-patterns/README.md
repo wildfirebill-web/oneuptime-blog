@@ -92,6 +92,7 @@ appVersion: "1.0.0"
 
 ```yaml
 # Tenant configuration
+
 tenant:
   name: ""
   displayName: ""
@@ -198,7 +199,7 @@ metadata:
     {{- end }}
 ```
 
-### ResourceQuota Template
+ResourceQuota Template
 
 ```yaml
 # templates/resourcequota.yaml

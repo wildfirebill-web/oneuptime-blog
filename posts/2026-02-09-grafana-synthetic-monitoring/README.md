@@ -22,6 +22,7 @@ For Grafana Cloud users, Synthetic Monitoring is available as a built-in feature
 
 ```bash
 # Download and install the synthetic monitoring agent
+
 wget https://github.com/grafana/synthetic-monitoring-agent/releases/latest/download/synthetic-monitoring-agent-linux-amd64
 
 chmod +x synthetic-monitoring-agent-linux-amd64

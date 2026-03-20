@@ -27,6 +27,7 @@ This is a continuous loop, not a one-shot operation. Controllers never stop watc
 
 ```bash
 # See the resources that controllers manage
+
 talosctl -n 10.0.0.11 get rd
 
 # This lists all resource definitions - each one is managed by a controller
@@ -221,7 +222,7 @@ talosctl -n 10.0.0.11 get addressspecs -o yaml | grep -A5 "layer"
 # Resources from different layers (config, operator, DHCP) can conflict
 ```
 
-## Resource Layers
+Resource Layers
 
 Resources can come from different layers, and layers have priority. Configuration layer resources (from the machine config) take precedence over operator layer resources (from DHCP). This ensures that your explicit configuration always wins over dynamic values.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SELinux, NGINX, Reverse Proxy, Troubleshooting
+Tags: RHEL, SELinux, Nginx, Reverse Proxy, Troubleshooting
 
 Description: Fix SELinux denials that prevent Nginx from making outbound network connections when configured as a reverse proxy on RHEL.
 
@@ -14,6 +14,7 @@ When Nginx is configured as a reverse proxy on RHEL, SELinux blocks its outbound
 
 ```bash
 # Nginx returns 502 Bad Gateway
+
 # Check the Nginx error log
 sudo tail -20 /var/log/nginx/error.log
 # "connect() to 127.0.0.1:8080 failed (13: Permission denied)"

@@ -60,6 +60,7 @@ For small datasets, sort and pick the value at the percentile index.
 
 ```python
 # exact_percentile.py
+
 # Calculate exact percentile from a list of latencies
 
 def calculate_percentile(latencies: list[float], percentile: float) -> float:

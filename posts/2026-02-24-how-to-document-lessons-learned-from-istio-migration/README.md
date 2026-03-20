@@ -120,6 +120,7 @@ Save the final working configuration as a reference for future clusters:
 
 ```yaml
 # Working IstioOperator configuration
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

@@ -51,6 +51,7 @@ Before creating schemas, set up your provider project structure.
 
 ```bash
 # Create project directory
+
 mkdir terraform-provider-example && cd terraform-provider-example
 
 # Initialize Go module

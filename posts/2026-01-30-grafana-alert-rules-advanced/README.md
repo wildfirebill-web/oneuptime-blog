@@ -477,6 +477,7 @@ Configure notification policies to use these labels for alert routing and suppre
 
 ```yaml
 # Instead of multiple queries
+
 - expr: avg(rate(cpu_usage[5m])) by (instance)
 - expr: avg(rate(memory_usage[5m])) by (instance)
 

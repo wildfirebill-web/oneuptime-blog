@@ -31,6 +31,7 @@ from azure.storage.queue import QueueClient
 import os
 
 # Connect to the queue using a connection string
+
 connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
 queue_client = QueueClient.from_connection_string(connection_string, "my-task-queue")
 

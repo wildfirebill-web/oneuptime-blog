@@ -397,6 +397,7 @@ Use built-in Next.js analysis:
 
 ```bash
 # Analyze bundle without plugin
+
 ANALYZE=true next build
 
 # Or use the built-in analysis

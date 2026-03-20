@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, Agent Pools, Agents, Private Infrastructure, Networking
+Tags: Terraform, HCP Terraform, Terraform Cloud, Agent Pools, Agent, Private Infrastructure, Networking
 
 Description: Learn how to configure and manage agent pools in HCP Terraform to run Terraform operations inside your private network securely.
 
@@ -44,6 +44,7 @@ The important thing to understand is that agents initiate all connections outbou
 
 ```bash
 # Create an agent pool
+
 curl \
   --header "Authorization: Bearer $TFC_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

@@ -1,4 +1,4 @@
-# How to Deploy Rocket.Chat via Portainer
+# How to Deploy Rocket.Chat via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

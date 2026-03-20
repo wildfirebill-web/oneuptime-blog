@@ -21,6 +21,7 @@ The simplest pattern is to build your image and run tests inside it.
 ```bash
 #!/bin/bash
 # Run unit tests inside a Podman container
+
 # The test command is defined in the Containerfile or passed as an argument
 
 # Build the test image

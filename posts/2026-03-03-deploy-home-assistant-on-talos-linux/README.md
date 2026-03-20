@@ -30,6 +30,7 @@ First, identify your USB device on the Talos node:
 
 ```bash
 # List USB devices on a Talos node
+
 talosctl -n <node-ip> ls /dev/serial/by-id/
 ```
 

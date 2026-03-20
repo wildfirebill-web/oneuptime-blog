@@ -27,6 +27,7 @@ First, let us package an existing role into a tarball. If you have a role at `./
 
 ```bash
 # Package a role directory into a tarball
+
 cd ./roles/
 tar czf my_webserver-1.0.0.tar.gz my_webserver/
 ```

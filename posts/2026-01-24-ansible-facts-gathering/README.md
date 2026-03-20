@@ -37,6 +37,7 @@ flowchart LR
 
 ```bash
 # Gather and display all facts from a host
+
 ansible webserver1 -m setup
 
 # Filter facts by specific patterns

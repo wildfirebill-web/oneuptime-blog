@@ -30,6 +30,7 @@ Retrieve all configured networks.
 
 ```bash
 # List all networks
+
 curl -s --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   http://localhost/v4.0.0/libpod/networks/json | python3 -m json.tool
 

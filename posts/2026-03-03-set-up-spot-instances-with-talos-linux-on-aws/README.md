@@ -31,6 +31,7 @@ The launch template for spot instances is almost identical to an on-demand templ
 
 ```bash
 # Create a launch template with spot instance configuration
+
 aws ec2 create-launch-template \
   --launch-template-name talos-spot-workers \
   --launch-template-data '{

@@ -20,6 +20,7 @@ The key distinction matters. Sysctl parameters can be changed without rebooting 
 
 ```yaml
 # talos-machine-config.yaml - Two ways to set kernel parameters
+
 machine:
   # Runtime sysctl parameters (no reboot needed)
   sysctls:

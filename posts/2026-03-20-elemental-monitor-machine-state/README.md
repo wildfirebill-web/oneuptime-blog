@@ -27,6 +27,7 @@ Elemental machines can be in these states:
 
 ```bash
 # Get all machines with their current state
+
 kubectl get machineinventory -n fleet-default \
   -o custom-columns=\
 'NAME:.metadata.name,\

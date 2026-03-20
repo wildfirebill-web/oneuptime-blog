@@ -40,6 +40,7 @@ Before diving into debugging, ensure you have the following tools available:
 
 ```bash
 # Check if required tools are installed
+
 which ping6 traceroute6 tcpdump ip ss ndisc6
 
 # Install missing tools on Debian/Ubuntu

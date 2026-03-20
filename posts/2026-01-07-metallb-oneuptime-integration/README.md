@@ -97,6 +97,7 @@ First, verify that MetalLB is exposing metrics. The following command checks if 
 
 ```bash
 # Port-forward to the MetalLB controller to verify metrics are available
+
 kubectl port-forward -n metallb-system deploy/controller 7472:7472 &
 
 # Fetch metrics from the controller (run in another terminal or wait a moment)

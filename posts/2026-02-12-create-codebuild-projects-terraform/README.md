@@ -210,6 +210,7 @@ And here's the matching buildspec file that goes in your repository:
 
 ```yaml
 # buildspec-docker.yml - builds and pushes a Docker image to ECR
+
 version: 0.2
 
 phases:

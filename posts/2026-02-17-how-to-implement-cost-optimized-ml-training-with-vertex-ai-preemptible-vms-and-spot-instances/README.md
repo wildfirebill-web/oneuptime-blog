@@ -27,6 +27,7 @@ Here is how to submit a Vertex AI Custom Training job that uses spot instances.
 
 ```python
 # training/submit_spot_training.py
+
 from google.cloud import aiplatform
 
 def submit_spot_training_job(

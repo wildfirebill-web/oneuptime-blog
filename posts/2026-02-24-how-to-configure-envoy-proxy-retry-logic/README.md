@@ -232,6 +232,7 @@ Track retry metrics to understand if your retry configuration is helping or caus
 
 ```bash
 # Check retry stats from Envoy
+
 kubectl exec -it <pod-name> -c istio-proxy -- curl -s localhost:15000/stats | grep retry
 ```
 

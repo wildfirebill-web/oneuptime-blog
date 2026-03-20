@@ -42,6 +42,7 @@ ArgoCD installs a single Redis instance by default (or Redis HA with the HA mani
 
 ```bash
 # Check the current Redis deployment
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-redis
 
 # Check Redis memory usage

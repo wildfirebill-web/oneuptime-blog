@@ -8,12 +8,13 @@ Description: Configure a static IPv4 address on a Linux interface using systemd-
 
 ## Introduction
 
-systemd-networkd configures network interfaces through `.network` files in `/etc/systemd/network/`. A static IPv4 configuration specifies the address, prefix length, gateway, and optionally DNS in the file — no DHCP required.
+systemd-networkd configures network interfaces through `.network` files in `/etc/systemd/network/`. A static IPv4 configuration specifies the address, prefix length, gateway, and optionally DNS in the file - no DHCP required.
 
 ## Create the .network File
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 
@@ -103,7 +104,7 @@ networkctl status eth0
 
 Files in `/etc/systemd/network/` are processed in lexicographic order. Prefix with numbers to control priority:
 
-```
+```text
 /etc/systemd/network/
   10-eth0.network   ← applied first (lower number)
   20-eth1.network

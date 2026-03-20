@@ -43,6 +43,7 @@ systemd-networkd generates the IAID from the interface index by default:
 
 ```bash
 # View interface index
+
 ip link show eth0 | head -1
 # 2: eth0: ...
 
@@ -116,7 +117,7 @@ id-assoc pd 2 {
 
 ---
 
-## IA_NA Example — Non-Temporary Address
+## IA_NA Example - Non-Temporary Address
 
 ```text
 # DHCPv6 message containing IA_NA
@@ -132,7 +133,7 @@ IA_NA:
 
 ---
 
-## IA_PD Example — Prefix Delegation
+## IA_PD Example - Prefix Delegation
 
 An IA_PD allows a client (e.g., a CPE router) to receive an entire prefix:
 
@@ -208,7 +209,7 @@ sudo systemctl restart systemd-networkd
 
 ## Conclusion
 
-IAIDs are the per-interface half of DHCPv6 client identity — paired with the DUID to form the full client identifier for lease tracking. Understanding IAIDs is essential when configuring prefix delegation, multi-interface hosts, or stable address reservations.
+IAIDs are the per-interface half of DHCPv6 client identity - paired with the DUID to form the full client identifier for lease tracking. Understanding IAIDs is essential when configuring prefix delegation, multi-interface hosts, or stable address reservations.
 
 ---
 

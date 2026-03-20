@@ -16,6 +16,7 @@ The command is straightforward.
 
 ```bash
 # Full system information
+
 docker system info
 
 # Shorter alias (same output)
@@ -72,7 +73,7 @@ Storage Driver: overlay2
 
 **Supports d_type** must be `true`. Without d_type support, overlay2 can silently corrupt data.
 
-### Resource Availability
+Resource Availability
 
 ```bash
 # Check available CPUs and memory

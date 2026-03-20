@@ -28,6 +28,7 @@ First, identify where your certificates are stored:
 
 ```bash
 # Check for custom CA certificates
+
 kubectl get secret cacerts -n istio-system
 kubectl get secret istio-ca-secret -n istio-system
 

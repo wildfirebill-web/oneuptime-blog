@@ -28,6 +28,7 @@ Before debugging Ansible, verify that you can SSH to the host directly:
 
 ```bash
 # Basic SSH test
+
 ssh user@web-01
 
 # SSH with verbose output

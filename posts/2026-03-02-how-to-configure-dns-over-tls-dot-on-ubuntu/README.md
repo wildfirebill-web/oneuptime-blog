@@ -29,6 +29,7 @@ Ubuntu 20.04+ ships with a version of `systemd-resolved` that supports DNS-over-
 
 ```bash
 # Edit the resolved configuration
+
 sudo nano /etc/systemd/resolved.conf
 ```
 

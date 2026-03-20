@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Values priority from lowest to highest:
+
 # 1. values.yaml in the chart
 # 2. Parent chart's values.yaml
 # 3. Values file passed with -f

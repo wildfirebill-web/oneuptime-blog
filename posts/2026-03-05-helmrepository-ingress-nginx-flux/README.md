@@ -16,6 +16,7 @@ The Ingress-NGINX Helm charts are published by the Kubernetes community. Create 
 
 ```yaml
 # HelmRepository for the Ingress-NGINX controller
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -16,6 +16,7 @@ Calico visualization mistakes can lead to false confidence (dashboard looks heal
 
 ```promql
 # WRONG - shows a single number, hides per-node variation
+
 sum(felix_active_local_policies)
 
 # CORRECT - shows per-node breakdown (critical for identifying outliers)

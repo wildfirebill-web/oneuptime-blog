@@ -31,6 +31,7 @@ First, install PBM agents alongside your MongoDB deployment:
 
 ```yaml
 # pbm-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

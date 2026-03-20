@@ -123,6 +123,7 @@ spec:
 
 ```bash
 # Apply your resources
+
 kubectl apply -f git-repository.yaml
 kubectl apply -f helm-repository.yaml
 

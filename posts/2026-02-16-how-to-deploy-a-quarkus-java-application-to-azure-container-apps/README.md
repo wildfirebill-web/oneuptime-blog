@@ -28,6 +28,7 @@ Use the Quarkus CLI or Maven plugin to scaffold a new project.
 
 ```bash
 # Using the Quarkus CLI
+
 quarkus create app com.example:azure-quarkus-demo \
   --extension='resteasy-reactive-jackson,smallrye-health,micrometer'
 

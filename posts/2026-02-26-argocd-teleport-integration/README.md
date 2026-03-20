@@ -48,6 +48,7 @@ Teleport supports acting as an OIDC provider. Create a Teleport application:
 
 ```yaml
 # teleport-argocd-app.yaml
+
 kind: app
 version: v3
 metadata:

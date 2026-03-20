@@ -111,6 +111,7 @@ Use `ipa hbactest` to simulate access:
 
 ```bash
 # Test: Can jsmith access web1 via SSH?
+
 ipa hbactest --user=jsmith --host=web1.example.com --service=sshd
 
 # Test: Can bgreen access db1 via SSH?

@@ -8,7 +8,7 @@ Description: Learn how to provision GPU instances for machine learning training 
 
 ---
 
-GPU instances accelerate deep learning training but are expensive — an unattended p3.2xlarge costs over $3/hour. OpenTofu provisions GPU compute with auto-shutdown policies, spot instance configuration, and proper NVIDIA driver setup to balance training performance with cost control.
+GPU instances accelerate deep learning training but are expensive - an unattended p3.2xlarge costs over $3/hour. OpenTofu provisions GPU compute with auto-shutdown policies, spot instance configuration, and proper NVIDIA driver setup to balance training performance with cost control.
 
 ## GPU Instance Cost Comparison
 
@@ -23,6 +23,7 @@ GPU instances accelerate deep learning training but are expensive — an unatten
 
 ```hcl
 # aws_gpu.tf
+
 data "aws_ami" "deep_learning" {
   most_recent = true
   owners      = ["amazon"]
@@ -218,8 +219,8 @@ resource "google_compute_instance" "gpu" {
 
 ## Best Practices
 
-- Always configure auto-shutdown for training instances — a forgotten GPU instance is one of the most common sources of unexpected cloud bills in ML teams.
-- Use spot/preemptible instances for training jobs that can checkpoint their progress — they cost 60-80% less than on-demand and are acceptable for non-time-critical training.
-- Use Deep Learning AMIs/images that include CUDA, cuDNN, and popular frameworks pre-installed — building NVIDIA drivers from scratch adds 30+ minutes to instance startup.
-- Place GPU instances in private subnets with IAM-based access (SSM or IAP) rather than SSH over the internet — ML compute rarely needs inbound public access.
-- For large training jobs, use SageMaker/Vertex AI managed training rather than raw instances — they handle checkpointing, spot interruption recovery, and distributed training orchestration automatically.
+- Always configure auto-shutdown for training instances - a forgotten GPU instance is one of the most common sources of unexpected cloud bills in ML teams.
+- Use spot/preemptible instances for training jobs that can checkpoint their progress - they cost 60-80% less than on-demand and are acceptable for non-time-critical training.
+- Use Deep Learning AMIs/images that include CUDA, cuDNN, and popular frameworks pre-installed - building NVIDIA drivers from scratch adds 30+ minutes to instance startup.
+- Place GPU instances in private subnets with IAM-based access (SSM or IAP) rather than SSH over the internet - ML compute rarely needs inbound public access.
+- For large training jobs, use SageMaker/Vertex AI managed training rather than raw instances - they handle checkpointing, spot interruption recovery, and distributed training orchestration automatically.

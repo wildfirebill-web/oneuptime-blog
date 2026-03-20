@@ -13,9 +13,10 @@ A reverse proxy sits in front of backend servers, caching responses and serving 
 ## Squid Reverse Proxy Configuration
 
 ```squid
-# /etc/squid/squid.conf — IPv6 Reverse Proxy (Accelerator)
+# /etc/squid/squid.conf - IPv6 Reverse Proxy (Accelerator)
 
 # Listen on IPv6 for incoming client requests
+
 http_port [::]:80 accel vhost
 
 # HTTPS with IPv6
@@ -23,7 +24,7 @@ https_port [::]:443 accel vhost \
   cert=/etc/squid/server.crt \
   key=/etc/squid/server.key
 
-# Backend (origin) server — IPv6 or IPv4
+# Backend (origin) server - IPv6 or IPv4
 cache_peer 2001:db8::backend parent 8080 0 no-query originserver \
   name=backend1 login=PASS
 
@@ -61,7 +62,7 @@ cache_mem 512 MB
 cache_replacement_policy heap LFUDA
 memory_replacement_policy heap GDSF
 
-# Refresh patterns — cache static content aggressively
+# Refresh patterns - cache static content aggressively
 refresh_pattern ^ftp:          1440  20% 10080
 refresh_pattern ^gopher:       1440   0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0  0%  0

@@ -16,6 +16,7 @@ When you do not configure anything specific, Istio uses round-robin load balanci
 
 ```bash
 # See the current load balancing config for a cluster
+
 istioctl proxy-config clusters deploy/my-app --fqdn service-b.default.svc.cluster.local -o json | python3 -c "
 import json, sys
 data = json.load(sys.stdin)

@@ -149,6 +149,7 @@ Add to `/etc/fstab`:
 ```bash
 sudo mkdir -p /srv/object-storage/minio-data
 # Configure MinIO to use /srv/object-storage/minio-data
+
 ```
 
 ### For Ceph OSD

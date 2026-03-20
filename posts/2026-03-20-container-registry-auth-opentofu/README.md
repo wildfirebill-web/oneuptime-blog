@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Container Registry, ECR, ACR, GCR, Artifact Registry, Docker, Kubernetes, Infrastructure as Code
 
-Description: Learn how to configure container registry authentication for AWS ECR, Azure Container Registry, and GCP Artifact Registry using OpenTofu, including Kubernetes imagePullSecrets and cross-account access.
+Description: Learn how to configure container registry authentication for AWS ECR, Azure Container Registry, and GCP Artifact Registry using OpenTofu, including Kubernetes imagePullSecrets and cross-account...
 
 ---
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # ecr.tf
+
 resource "aws_ecr_repository" "app" {
   name                 = "${var.prefix}/${var.app_name}"
   image_tag_mutability = "IMMUTABLE"  # Prevent tag overwriting
@@ -42,7 +43,7 @@ resource "aws_ecr_repository" "app" {
   }
 }
 
-# Lifecycle policy — keep last 10 production images, clean up PRs after 7 days
+# Lifecycle policy - keep last 10 production images, clean up PRs after 7 days
 resource "aws_ecr_lifecycle_policy" "app" {
   repository = aws_ecr_repository.app.name
 
@@ -78,7 +79,7 @@ resource "aws_ecr_lifecycle_policy" "app" {
 ## ECR Cross-Account Access
 
 ```hcl
-# ecr_policy.tf — allow EKS nodes from another account to pull images
+# ecr_policy.tf - allow EKS nodes from another account to pull images
 
 resource "aws_ecr_repository_policy" "cross_account" {
   repository = aws_ecr_repository.app.name
@@ -196,7 +197,7 @@ resource "google_artifact_registry_repository_iam_member" "cicd_push" {
 ## Kubernetes imagePullSecret
 
 ```hcl
-# imagepullsecret.tf — for registries requiring explicit credentials
+# imagepullsecret.tf - for registries requiring explicit credentials
 resource "kubernetes_secret" "registry_credentials" {
   metadata {
     name      = "registry-credentials"
@@ -219,8 +220,8 @@ resource "kubernetes_secret" "registry_credentials" {
 
 ## Best Practices
 
-- Use IRSA (EKS), Workload Identity (GKE), or managed identity (AKS) for node-level registry authentication — this eliminates the need for imagePullSecrets in most Kubernetes deployments and reduces credential management overhead.
-- Set `image_tag_mutability = "IMMUTABLE"` on ECR repositories — immutable tags prevent overwriting production images and ensure deployments always use exactly the image that was tested.
-- Enable `scan_on_push = true` on ECR repositories and configure CloudWatch alarms on CRITICAL and HIGH findings — automated scanning catches vulnerabilities before images are deployed.
-- Use lifecycle policies to clean up old images — unmanaged registries accumulate thousands of images over time, incurring unnecessary storage costs.
-- Never use registry admin credentials in Kubernetes imagePullSecrets — use read-only service accounts or managed identities instead. Admin credentials grant push access, which isn't needed for pod scheduling.
+- Use IRSA (EKS), Workload Identity (GKE), or managed identity (AKS) for node-level registry authentication - this eliminates the need for imagePullSecrets in most Kubernetes deployments and reduces credential management overhead.
+- Set `image_tag_mutability = "IMMUTABLE"` on ECR repositories - immutable tags prevent overwriting production images and ensure deployments always use exactly the image that was tested.
+- Enable `scan_on_push = true` on ECR repositories and configure CloudWatch alarms on CRITICAL and HIGH findings - automated scanning catches vulnerabilities before images are deployed.
+- Use lifecycle policies to clean up old images - unmanaged registries accumulate thousands of images over time, incurring unnecessary storage costs.
+- Never use registry admin credentials in Kubernetes imagePullSecrets - use read-only service accounts or managed identities instead. Admin credentials grant push access, which isn't needed for pod scheduling.

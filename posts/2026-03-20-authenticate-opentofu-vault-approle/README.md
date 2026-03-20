@@ -14,6 +14,7 @@ AppRole is Vault's machine-to-machine auth method designed for automated systems
 
 ```hcl
 # Configure the AppRole auth method in Vault using OpenTofu
+
 resource "vault_auth_backend" "approle" {
   type = "approle"
   path = "approle"

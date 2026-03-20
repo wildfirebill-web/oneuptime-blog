@@ -25,6 +25,7 @@ An external client connects to `203.0.113.10:8080`. SSH tunnels that connection 
 
 ```bash
 # Expose local port 3000 on the remote server's port 8080
+
 # -R [remote_bind]:[remote_port]:[local_host]:[local_port]
 ssh -R 8080:localhost:3000 user@203.0.113.10
 

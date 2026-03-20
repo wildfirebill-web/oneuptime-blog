@@ -1,4 +1,4 @@
-# How to Migrate Portainer from Docker to Kubernetes
+# How to Migrate Portainer from Docker to Kubernetes - Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Before any migration, stop Portainer and export its data volume.
 
 ```bash
 # Stop Portainer on the Docker host
+
 docker stop portainer
 
 # Create a compressed backup of the data volume
@@ -66,7 +67,7 @@ kubectl apply -f portainer-pvc.yaml
 Use a temporary pod to restore your backup data into the PVC.
 
 ```yaml
-# restore-job.yaml — temporary pod to load backup data into PVC
+# restore-job.yaml - temporary pod to load backup data into PVC
 apiVersion: v1
 kind: Pod
 metadata:
@@ -188,4 +189,4 @@ kubectl get svc portainer -n portainer
 
 ## Summary
 
-Moving Portainer from Docker to Kubernetes requires backing up the data volume, restoring it into a PVC, and deploying via Kubernetes manifests. The entire configuration — users, environments, stacks, and registries — travels with the `portainer.db` file inside that volume.
+Moving Portainer from Docker to Kubernetes requires backing up the data volume, restoring it into a PVC, and deploying via Kubernetes manifests. The entire configuration - users, environments, stacks, and registries - travels with the `portainer.db` file inside that volume.

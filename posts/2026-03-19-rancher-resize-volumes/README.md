@@ -107,6 +107,7 @@ Some CSI drivers require a pod restart to complete the filesystem resize:
 
 ```bash
 # Check if filesystem resize is pending
+
 kubectl get pvc my-pvc -n default -o jsonpath='{.status.conditions[*].type}'
 ```
 

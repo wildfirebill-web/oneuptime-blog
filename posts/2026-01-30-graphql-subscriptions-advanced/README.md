@@ -835,6 +835,7 @@ Configure NGINX for WebSocket support with sticky sessions:
 
 ```nginx
 # nginx.conf
+
 upstream graphql_servers {
     ip_hash;  # Sticky sessions based on client IP
     server graphql1:4000;

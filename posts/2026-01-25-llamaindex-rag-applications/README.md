@@ -26,6 +26,7 @@ Install LlamaIndex with the components you need:
 
 ```bash
 # Core package
+
 pip install llama-index
 
 # OpenAI integration (default LLM)

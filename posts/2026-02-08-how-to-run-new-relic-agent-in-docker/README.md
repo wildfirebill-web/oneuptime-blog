@@ -18,6 +18,7 @@ You need a New Relic account and a license key. New Relic offers a generous free
 
 ```bash
 # Store your New Relic license key
+
 export NEW_RELIC_LICENSE_KEY="your-license-key-here"
 
 # Verify Docker is available

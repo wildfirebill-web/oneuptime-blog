@@ -35,6 +35,7 @@ Start by creating an Azure Key Vault with a key for state encryption:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     azurerm = {

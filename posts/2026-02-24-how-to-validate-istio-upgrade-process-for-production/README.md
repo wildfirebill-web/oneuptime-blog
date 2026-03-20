@@ -29,6 +29,7 @@ Before starting any upgrade, run these validation steps:
 
 ```bash
 # Check for configuration issues
+
 istioctl analyze --all-namespaces
 
 # Verify all proxies are in sync with control plane

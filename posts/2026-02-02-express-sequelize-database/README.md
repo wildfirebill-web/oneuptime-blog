@@ -44,6 +44,7 @@ First, initialize your project and install the required dependencies.
 
 ```bash
 # Initialize a new Node.js project
+
 npm init -y
 
 # Install Express and Sequelize core packages

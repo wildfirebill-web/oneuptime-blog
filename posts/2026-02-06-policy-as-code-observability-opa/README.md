@@ -24,6 +24,7 @@ Create Rego policies that validate Kubernetes manifests and Collector configurat
 
 ```rego
 # policies/require_otel_sidecar.rego
+
 package observability.kubernetes
 
 # Deny deployments without an OTel collector sidecar or env var pointing to one

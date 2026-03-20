@@ -48,6 +48,7 @@ platform-gitops/
 
 ```yaml
 # namespaces/base/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

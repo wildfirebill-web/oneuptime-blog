@@ -49,6 +49,7 @@ If you are not sure what identity kubectl is using:
 
 ```bash
 # Check which identity kubectl is using
+
 kubectl auth whoami
 
 # Or check the kubeconfig

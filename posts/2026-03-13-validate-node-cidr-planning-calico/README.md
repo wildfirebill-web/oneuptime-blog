@@ -29,6 +29,7 @@ Review the current Calico IP pool configuration to understand the available addr
 
 ```bash
 # List all Calico IP pools and their CIDR ranges
+
 calicoctl get ippools -o wide
 
 # Get detailed IP pool configuration including block size and node selectors

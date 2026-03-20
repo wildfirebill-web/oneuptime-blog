@@ -18,6 +18,7 @@ Helm hooks use annotations on Kubernetes resources to trigger actions at specifi
 
 ```yaml
 # Standard Helm hook
+
 apiVersion: batch/v1
 kind: Job
 metadata:

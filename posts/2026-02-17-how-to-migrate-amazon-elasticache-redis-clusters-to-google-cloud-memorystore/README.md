@@ -31,6 +31,7 @@ This script lists your ElastiCache clusters and their key configuration details:
 
 ```bash
 # List all ElastiCache Redis replication groups with their configuration
+
 aws elasticache describe-replication-groups \
   --query 'ReplicationGroups[*].{
     ID:ReplicationGroupId,

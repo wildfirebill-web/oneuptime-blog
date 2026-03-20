@@ -24,6 +24,7 @@ This guide covers validation procedures for both IKS and self-managed Kubernetes
 
 ```bash
 # Check all Calico pods are running
+
 kubectl get pods -n calico-system
 kubectl get pods -n ibm-system | grep calico
 

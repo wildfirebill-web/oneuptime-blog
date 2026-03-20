@@ -29,6 +29,7 @@ For most application analysis, `k8s_container` is what you want. These are the s
 
 ```bash
 # Create a BigQuery dataset for GKE container logs
+
 bq mk --dataset \
   --location=US \
   --description="GKE container logs exported from Cloud Logging" \

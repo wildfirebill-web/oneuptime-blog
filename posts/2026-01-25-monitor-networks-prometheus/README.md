@@ -25,6 +25,7 @@ SNMP Exporter translates SNMP data into Prometheus metrics. It requires a config
 
 ```bash
 # Download SNMP Exporter
+
 wget https://github.com/prometheus/snmp_exporter/releases/download/v0.25.0/snmp_exporter-0.25.0.linux-amd64.tar.gz
 tar xvfz snmp_exporter-0.25.0.linux-amd64.tar.gz
 sudo mv snmp_exporter-0.25.0.linux-amd64/snmp_exporter /usr/local/bin/

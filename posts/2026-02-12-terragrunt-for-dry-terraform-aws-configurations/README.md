@@ -60,6 +60,7 @@ modules/
 
 ```bash
 # macOS
+
 brew install terragrunt
 
 # Linux

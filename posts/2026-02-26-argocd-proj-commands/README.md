@@ -14,6 +14,7 @@ ArgoCD projects are the primary mechanism for multi-tenancy and access control. 
 
 ```bash
 # List all projects
+
 argocd proj list
 
 # Output:
@@ -123,7 +124,7 @@ argocd proj add-destination my-project production-cluster my-namespace
 argocd proj remove-destination my-project https://kubernetes.default.svc my-namespace
 ```
 
-## Resource Whitelists and Blacklists
+Resource Whitelists and Blacklists
 
 ### Cluster Resource Whitelist
 

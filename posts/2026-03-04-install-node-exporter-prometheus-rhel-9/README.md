@@ -28,6 +28,7 @@ graph TD
 
 ```bash
 # Create a dedicated user for Node Exporter
+
 sudo useradd --no-create-home --shell /bin/false node_exporter
 ```
 

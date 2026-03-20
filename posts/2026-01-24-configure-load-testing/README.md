@@ -37,6 +37,7 @@ k6 is a modern load testing tool that uses JavaScript for test scripts.
 
 ```bash
 # macOS
+
 brew install k6
 
 # Linux

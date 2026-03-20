@@ -29,6 +29,7 @@ Start with a high-level health check using the Cilium CLI.
 
 ```bash
 # Get a summary of Cilium component status including agents and operator
+
 cilium status
 
 # Wait for all components to be ready before proceeding

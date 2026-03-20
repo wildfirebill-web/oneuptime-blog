@@ -27,6 +27,7 @@ The pricing difference is significant. Archive storage costs roughly 90% less th
 
 ```bash
 # Install the Azure Storage and Management SDKs
+
 pip install azure-storage-blob azure-mgmt-storage azure-identity
 ```
 

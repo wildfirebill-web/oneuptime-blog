@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VXLAN, FDB, Forwarding Database, Linux, bridge fdb, Overlay Networking, Static MAC
+Tags: VXLAN, FDB, Forwarding Database, Linux, Bridge fdb, Overlay Networking, Static MAC
 
 Description: Learn how to add static forwarding database (FDB) entries for VXLAN interfaces to control MAC-to-VTEP mappings without relying on MAC learning or EVPN.
 
@@ -12,18 +12,19 @@ Static FDB entries in VXLAN tell the kernel which VTEP (remote IP) to send traff
 
 ## Types of FDB Entries in VXLAN
 
-```
+```text
 1. Unicast: aa:bb:cc:dd:ee:ff → VTEP 10.0.0.2
    Direct delivery to specific host
 
 2. Broadcast/BUM (all-zeros): 00:00:00:00:00:00 → VTEP 10.0.0.2
-   Broadcast, Unknown unicast, Multicast — sent to all VTEPs
+   Broadcast, Unknown unicast, Multicast - sent to all VTEPs
 ```
 
 ## Adding Static FDB Entries
 
 ```bash
 # Add unicast entry: MAC aa:bb:cc:dd:ee:01 is on VTEP 10.0.0.2
+
 bridge fdb add aa:bb:cc:dd:ee:01 dev vxlan10 dst 10.0.0.2 self permanent
 
 # Add BUM entry: send broadcast/unknown traffic to VTEP 10.0.0.2

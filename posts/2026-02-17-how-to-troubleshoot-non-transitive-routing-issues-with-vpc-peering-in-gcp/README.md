@@ -31,6 +31,7 @@ When VMs in Network A cannot reach VMs in Network C, verify that the issue is ac
 
 ```bash
 # Check routes in Network A - you should NOT see routes to Network C's subnets
+
 gcloud compute routes list \
   --project=project-a \
   --filter="network=network-a" \

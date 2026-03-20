@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Random, Passwords, Security, random_password
+Tags: OpenTofu, Random, Passwords, Security, Random_password
 
 Description: Learn how to generate secure random passwords using the OpenTofu random provider for database credentials, API keys, and secrets stored in cloud secret managers.
 
@@ -14,6 +14,7 @@ OpenTofu's `random_password` resource generates cryptographically secure passwor
 
 ```hcl
 # main.tf - Generate secure passwords
+
 terraform {
   required_providers {
     random = {

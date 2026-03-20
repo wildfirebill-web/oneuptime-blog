@@ -23,7 +23,7 @@ The default K3s metrics-server:
 1. You want custom HPA metrics (e.g., scale on request rate, queue depth)
 2. You're deploying a full Prometheus stack and want a unified metrics source
 3. You need historical metrics storage (Prometheus + Thanos/Cortex)
-4. Resource constraint — the metrics server consumes ~15MB RAM
+4. Resource constraint - the metrics server consumes ~15MB RAM
 
 ## Disabling the Metrics Server
 
@@ -45,6 +45,7 @@ curl -sfL https://get.k3s.io | sudo sh -
 
 ```bash
 # Add metrics-server to the disable list
+
 echo "  - metrics-server" >> /etc/rancher/k3s/config.yaml
 
 sudo systemctl restart k3s

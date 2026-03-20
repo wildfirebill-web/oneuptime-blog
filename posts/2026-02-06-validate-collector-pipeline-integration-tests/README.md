@@ -23,6 +23,7 @@ Create a simple HTTP server that captures OTLP data:
 
 ```python
 # mock_backend.py
+
 import json
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler

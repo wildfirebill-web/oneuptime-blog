@@ -59,6 +59,7 @@ Alternatively, use `calicoctl` which provides better validation for Calico resou
 
 ```bash
 # Apply with calicoctl for enhanced validation
+
 calicoctl apply -f ipreservation.yaml
 ```
 
@@ -137,7 +138,7 @@ Store your Calico resource manifests alongside your application configurations i
 
 When using GitOps tools like Flux or Argo CD, ensure your Calico CRDs are applied before the custom resources. Set appropriate sync waves or dependencies to prevent ordering issues.
 
-### Resource Naming Conventions
+Resource Naming Conventions
 
 Adopt a consistent naming convention for your Calico resources:
 

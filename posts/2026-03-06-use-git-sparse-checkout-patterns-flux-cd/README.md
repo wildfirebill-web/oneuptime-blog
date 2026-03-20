@@ -67,6 +67,7 @@ For true sparse-like behavior, you can create separate GitRepository resources t
 
 ```yaml
 # flux-system/source.yaml
+
 # Main GitRepository source pointing to the monorepo
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

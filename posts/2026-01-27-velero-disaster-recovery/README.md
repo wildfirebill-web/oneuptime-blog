@@ -41,6 +41,7 @@ flowchart TB
 
 ```bash
 # Download the Velero CLI
+
 # Replace with the latest version
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.13.0/velero-v1.13.0-linux-amd64.tar.gz
 tar -xvf velero-v1.13.0-linux-amd64.tar.gz
@@ -285,7 +286,7 @@ spec:
           image: myapp:latest
 ```
 
-### Resource Restore Priority
+Resource Restore Priority
 
 ```yaml
 # configmap-restore-priority.yaml

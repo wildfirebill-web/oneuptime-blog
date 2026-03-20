@@ -41,6 +41,7 @@ The most common approach is grouping resources by tag values. Any resource with 
 
 ```hcl
 # Resource group for all production resources
+
 resource "aws_resourcegroups_group" "production" {
   name        = "production-resources"
   description = "All resources tagged with Environment=production"

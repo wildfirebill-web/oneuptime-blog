@@ -1,4 +1,4 @@
-# How to Fix GPU Enabling Errors in Portainer
+# How to Fix GPU Enabling Errors in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Enabling GPU access for Docker containers via Portainer requires NVIDIA drivers,
 
 ```bash
 # Check if NVIDIA drivers are installed
+
 nvidia-smi
 
 # Expected output shows GPU info and driver version

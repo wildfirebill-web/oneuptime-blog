@@ -10,6 +10,7 @@ Description: Learn how to capture and filter ARP packets using tcpdump to diagno
 
 ```bash
 # Capture all ARP packets on default interface
+
 sudo tcpdump -n -e arp
 
 # Specify an interface
@@ -21,7 +22,7 @@ sudo tcpdump -n -e -v -i eth0 arp
 
 Sample output:
 
-```
+```text
 14:32:01.123 aa:bb:cc:dd:ee:01 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42:
   Request who-has 192.168.1.20 tell 192.168.1.10, length 28
 

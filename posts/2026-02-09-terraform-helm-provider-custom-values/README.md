@@ -123,6 +123,7 @@ The values list is merged in order, meaning later entries override earlier ones.
 
 ```yaml
 # values/prometheus-base.yaml
+
 prometheus:
   prometheusSpec:
     retention: 15d

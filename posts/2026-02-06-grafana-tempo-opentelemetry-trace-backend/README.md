@@ -30,6 +30,7 @@ Let's start with the Tempo configuration. Tempo needs a config file that defines
 
 ```yaml
 # tempo-config.yaml
+
 # Configures Tempo to receive OTLP traces and store them locally
 
 server:

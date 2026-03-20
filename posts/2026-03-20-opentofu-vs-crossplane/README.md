@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Crossplane, Kubernetes, Comparison, Infrastructure as Code, DevOps
 
-Description: Compare OpenTofu and Crossplane — their operational models, team fit, and use cases — to decide which infrastructure provisioning approach fits your organization.
+Description: Compare OpenTofu and Crossplane - their operational models, team fit, and use cases - to decide which infrastructure provisioning approach fits your organization.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ OpenTofu (CLI-driven):
 
 ```hcl
 # Define resources in HCL
+
 resource "aws_s3_bucket" "data" {
   bucket = "my-data-bucket"
 }
@@ -66,28 +67,28 @@ kubectl apply -f bucket.yaml
 
 ## When OpenTofu Wins
 
-**Operations/platform teams** — The plan-apply workflow, state management, and rich provider ecosystem suit teams that manage infrastructure as a dedicated function.
+**Operations/platform teams** - The plan-apply workflow, state management, and rich provider ecosystem suit teams that manage infrastructure as a dedicated function.
 
-**Non-Kubernetes environments** — OpenTofu doesn't require a Kubernetes cluster to provision infrastructure.
+**Non-Kubernetes environments** - OpenTofu doesn't require a Kubernetes cluster to provision infrastructure.
 
-**Broad provider coverage** — OpenTofu has 3,000+ providers. Crossplane has fewer, though the ecosystem is growing.
+**Broad provider coverage** - OpenTofu has 3,000+ providers. Crossplane has fewer, though the ecosystem is growing.
 
-**Existing Terraform investment** — Drop-in compatibility with existing Terraform configs, modules, and tooling.
+**Existing Terraform investment** - Drop-in compatibility with existing Terraform configs, modules, and tooling.
 
 ## When Crossplane Wins
 
-**Kubernetes-native organizations** — If your platform is built on Kubernetes, managing infrastructure with `kubectl` and GitOps fits naturally into existing workflows (Flux, ArgoCD).
+**Kubernetes-native organizations** - If your platform is built on Kubernetes, managing infrastructure with `kubectl` and GitOps fits naturally into existing workflows (Flux, ArgoCD).
 
-**Self-service infrastructure** — Platform teams expose `CompositeResourceDefinitions` (XRDs) that developers consume like Kubernetes objects — without needing to know OpenTofu or IAM.
+**Self-service infrastructure** - Platform teams expose `CompositeResourceDefinitions` (XRDs) that developers consume like Kubernetes objects - without needing to know OpenTofu or IAM.
 
-**Continuous drift remediation** — Crossplane's reconciliation loop automatically corrects drift; OpenTofu requires scheduled drift detection jobs.
+**Continuous drift remediation** - Crossplane's reconciliation loop automatically corrects drift; OpenTofu requires scheduled drift detection jobs.
 
-**GitOps workflows** — Store infrastructure manifests in Git and let ArgoCD/Flux sync them to the cluster, which provisions cloud resources.
+**GitOps workflows** - Store infrastructure manifests in Git and let ArgoCD/Flux sync them to the cluster, which provisions cloud resources.
 
 ## Crossplane Composite Resource (Equivalent to OpenTofu Module)
 
 ```yaml
-# Crossplane: CompositeResourceDefinition (XRD) — like a module interface
+# Crossplane: CompositeResourceDefinition (XRD) - like a module interface
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:
@@ -114,7 +115,7 @@ spec:
 
 Some organizations use OpenTofu for foundational infrastructure and Crossplane for developer self-service:
 
-```
+```hcl
 Platform team: OpenTofu manages
   - VPCs, subnets, route tables
   - EKS clusters

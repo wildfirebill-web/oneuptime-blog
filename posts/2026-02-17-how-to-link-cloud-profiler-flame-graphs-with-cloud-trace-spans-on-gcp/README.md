@@ -37,6 +37,7 @@ First, enable the Trace API and instrument your application. Here is a Python ex
 
 ```bash
 # Enable the Cloud Trace API
+
 gcloud services enable cloudtrace.googleapis.com --project=my-project
 
 # Install the required packages

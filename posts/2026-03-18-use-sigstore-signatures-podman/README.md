@@ -22,6 +22,7 @@ Sigstore consists of several components: cosign for signing and verifying artifa
 
 ```bash
 # Install cosign on Linux
+
 curl -sSfL https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64 \
   -o /usr/local/bin/cosign
 chmod +x /usr/local/bin/cosign

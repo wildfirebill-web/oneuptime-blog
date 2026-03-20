@@ -57,6 +57,7 @@ Offset commit cannot be completed since the consumer is undergoing a rebalance f
 
 ```bash
 # View consumer group details
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --group my-consumer-group \
   --describe

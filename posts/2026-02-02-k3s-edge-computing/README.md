@@ -73,6 +73,7 @@ The following script prepares an edge device and installs K3s with configuration
 ```bash
 #!/bin/bash
 # k3s-edge-install.sh
+
 # Prepares and installs K3s on an edge device with optimized settings
 
 # Disable swap - Kubernetes performs better without swap enabled
@@ -401,7 +402,7 @@ sudo kubectl get pods -n edge-apps -o wide
 sudo kubectl top pods -n edge-apps
 ```
 
-### ResourceQuota for Edge Namespaces
+ResourceQuota for Edge Namespaces
 
 Prevent resource exhaustion by limiting total namespace consumption.
 

@@ -18,6 +18,7 @@ Modern Linux systems provide `iptables-nft`, a tool that translates iptables com
 
 ```bash
 # Check if your system uses iptables-nft or legacy iptables
+
 iptables --version
 # iptables v1.8.7 (nf_tables)  <- nftables backend
 # iptables v1.8.7 (legacy)     <- legacy iptables backend

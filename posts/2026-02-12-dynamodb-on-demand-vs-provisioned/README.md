@@ -152,6 +152,7 @@ Here's how to check your table's current mode and switch:
 
 ```bash
 # Check current capacity mode
+
 aws dynamodb describe-table --table-name Orders \
   --query "Table.BillingModeSummary.BillingMode"
 

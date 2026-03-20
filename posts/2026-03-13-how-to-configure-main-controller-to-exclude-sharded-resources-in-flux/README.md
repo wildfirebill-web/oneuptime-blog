@@ -72,6 +72,7 @@ Assign the main controller its own shard identity. All resources must then have 
 
 ```yaml
 # Main controller watches resources labeled as "default"
+
 args:
   - --watch-label-selector=sharding.fluxcd.io/key=default
 

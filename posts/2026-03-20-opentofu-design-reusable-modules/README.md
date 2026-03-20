@@ -14,21 +14,22 @@ A reusable module solves one problem well, accepts sensible defaults, and expose
 
 Each module should do one thing:
 
-```
+```text
 Good module boundaries:
-├── modules/vpc           — Networking only
-├── modules/eks           — Kubernetes cluster only
-├── modules/rds           — Database only
-└── modules/app-tier      — Compute + load balancer (composes the above)
+├── modules/vpc           - Networking only
+├── modules/eks           - Kubernetes cluster only
+├── modules/rds           - Database only
+└── modules/app-tier      - Compute + load balancer (composes the above)
 
 Avoid:
-└── modules/entire-stack  — Creates everything — hard to reuse
+└── modules/entire-stack  - Creates everything - hard to reuse
 ```
 
 ## Use Variables for Everything That Changes
 
 ```hcl
-# variables.tf — expose knobs for every environment-specific value
+# variables.tf - expose knobs for every environment-specific value
+
 variable "environment" {
   type        = string
   description = "Deployment environment (dev, staging, prod)"
@@ -61,7 +62,7 @@ Defaults reduce the caller's configuration burden for common cases:
 variable "enable_deletion_protection" {
   type        = bool
   description = "Enable deletion protection on the database"
-  default     = true  # Safe default — callers opt out explicitly
+  default     = true  # Safe default - callers opt out explicitly
 }
 
 variable "backup_retention_days" {
@@ -76,7 +77,7 @@ variable "backup_retention_days" {
 Callers need to reference your module's resources:
 
 ```hcl
-# outputs.tf — expose everything a consumer might need
+# outputs.tf - expose everything a consumer might need
 output "vpc_id" {
   description = "The ID of the created VPC"
   value       = aws_vpc.this.id
@@ -119,16 +120,16 @@ resource "aws_vpc" "this" {
 
 ## Include an Examples Directory
 
-```
+```text
 terraform-aws-vpc/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
 └── examples/
     ├── basic/
-    │   └── main.tf   — Minimal usage example
+    │   └── main.tf   - Minimal usage example
     └── complete/
-        └── main.tf   — Full-featured example
+        └── main.tf   - Full-featured example
 ```
 
 ```hcl
@@ -144,7 +145,7 @@ module "vpc" {
 ## Avoid Hard-Coded Values
 
 ```hcl
-# Bad — hard-coded region and account
+# Bad - hard-coded region and account
 resource "aws_iam_role" "this" {
   assume_role_policy = jsonencode({
     Statement = [{
@@ -153,7 +154,7 @@ resource "aws_iam_role" "this" {
   })
 }
 
-# Good — use data sources and variables
+# Good - use data sources and variables
 data "aws_partition" "current" {}
 
 resource "aws_iam_role" "this" {

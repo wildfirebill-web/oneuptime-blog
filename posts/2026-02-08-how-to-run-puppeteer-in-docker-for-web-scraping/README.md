@@ -20,6 +20,7 @@ Here is a Dockerfile that installs all required dependencies for Chromium:
 
 ```dockerfile
 # Dockerfile - Node.js environment with all Chromium dependencies for Puppeteer
+
 FROM node:20-slim
 
 # Install libraries that Chromium requires to run headlessly

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Network ACLs, NACL, AWS, Security, Networking, Infrastructure as Code
+Tags: OpenTofu, Network ACLs, NACLs, AWS, Security, Networking, Infrastructure as Code
 
-Description: Learn how to configure AWS Network ACLs (NACLs) using OpenTofu — understanding stateless rules, ephemeral ports, and how to layer NACLs with security groups for defense in depth.
+Description: Learn how to configure AWS Network ACLs (NACLs) using OpenTofu - understanding stateless rules, ephemeral ports, and how to layer NACLs with security groups for defense in depth.
 
 ## Introduction
 
@@ -13,7 +13,8 @@ Network ACLs are stateless subnet-level firewalls that process rules in order by
 ## Default NACL vs Custom NACL
 
 ```hcl
-# The default NACL allows all traffic — not recommended for production
+# The default NACL allows all traffic - not recommended for production
+
 # Create custom NACLs for each subnet tier
 
 # Public subnet NACL

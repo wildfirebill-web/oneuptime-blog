@@ -14,6 +14,7 @@ eBPF (extended Berkeley Packet Filter) lets you run sandboxed programs inside th
 
 ```bash
 # Install bpftool and development headers
+
 sudo dnf install -y bpftool libbpf-devel clang llvm \
     kernel-devel kernel-headers
 

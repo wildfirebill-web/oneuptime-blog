@@ -31,6 +31,7 @@ NICE DCV works with or without a GPU, but for visualization workloads you want o
 
 ```bash
 # Launch a GPU instance with the NICE DCV AMI
+
 # The Amazon Linux 2 with NICE DCV AMI has everything pre-installed
 aws ec2 run-instances \
   --image-id ami-0abc123dcv \

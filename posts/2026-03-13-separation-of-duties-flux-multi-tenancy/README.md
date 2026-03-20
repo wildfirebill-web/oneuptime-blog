@@ -29,6 +29,7 @@ When bootstrapping, configure Flux to scope reconcilers to specific service acco
 
 ```yaml
 # clusters/production/flux-system/kustomization.yaml
+
 # Enable Flux multi-tenancy lockdown
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

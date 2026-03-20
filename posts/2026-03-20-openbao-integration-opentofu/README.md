@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, OpenBao, Secrets Management, Security, Open Source, Infrastructure as Code
 
-Description: Learn how to use OpenBao — the open-source fork of HashiCorp Vault — with OpenTofu to manage secrets without relying on BSL-licensed software.
+Description: Learn how to use OpenBao - the open-source fork of HashiCorp Vault - with OpenTofu to manage secrets without relying on BSL-licensed software.
 
 ## Introduction
 
@@ -13,7 +13,8 @@ OpenBao is a community-maintained fork of HashiCorp Vault under the Mozilla Publ
 ## Running OpenBao
 
 ```bash
-# Docker (development mode — not for production)
+# Docker (development mode - not for production)
+
 docker run --rm -p 8200:8200 \
   -e VAULT_DEV_ROOT_TOKEN_ID=root \
   quay.io/openbao/openbao:latest server -dev
@@ -132,4 +133,4 @@ data "vault_pki_secret_backend_cert" "app_cert" {
 
 ## Conclusion
 
-OpenBao provides a fully compatible, MPL-licensed alternative to HashiCorp Vault. By pointing the existing `hashicorp/vault` OpenTofu provider at an OpenBao server, teams can manage secrets, dynamic credentials, and PKI without being bound by Vault's BSL license — keeping both OpenTofu and OpenBao as fully open-source components in the infrastructure stack.
+OpenBao provides a fully compatible, MPL-licensed alternative to HashiCorp Vault. By pointing the existing `hashicorp/vault` OpenTofu provider at an OpenBao server, teams can manage secrets, dynamic credentials, and PKI without being bound by Vault's BSL license - keeping both OpenTofu and OpenBao as fully open-source components in the infrastructure stack.

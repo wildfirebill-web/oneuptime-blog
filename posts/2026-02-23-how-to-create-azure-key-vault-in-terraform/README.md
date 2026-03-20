@@ -16,6 +16,7 @@ This guide covers creating a Key Vault, configuring access policies and RBAC, ad
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -37,7 +38,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group and Data Sources
+Resource Group and Data Sources
 
 ```hcl
 # main.tf

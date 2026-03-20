@@ -10,7 +10,7 @@ Description: Learn how to disable IPv6 on Windows by modifying the DisabledCompo
 
 Windows controls IPv6 behavior through the `DisabledComponents` DWORD value in the registry. Each bit controls a different aspect of IPv6:
 
-```
+```text
 Registry path:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters
 
@@ -32,7 +32,7 @@ Value: DisabledComponents (DWORD)
 
 ## Disabling IPv6 via Registry (Manual)
 
-```
+```text
 1. Open Registry Editor: Win + R → regedit
 2. Navigate to:
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters
@@ -46,6 +46,7 @@ Value: DisabledComponents (DWORD)
 
 ```powershell
 # Disable all IPv6 components
+
 $registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters"
 
 # Check if key exists

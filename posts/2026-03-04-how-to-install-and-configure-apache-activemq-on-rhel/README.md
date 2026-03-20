@@ -14,6 +14,7 @@ Apache ActiveMQ is a popular open-source message broker that supports JMS, AMQP,
 
 ```bash
 # Install Java
+
 sudo dnf install -y java-17-openjdk
 java -version
 ```

@@ -49,6 +49,7 @@ Start by running these commands to understand your situation:
 
 ```bash
 # Check your remote URL
+
 git remote -v
 
 # Test SSH connection to GitHub

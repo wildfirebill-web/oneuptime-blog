@@ -207,6 +207,7 @@ Even with disciplined instrumentation, you need a second layer of defense in the
 
 ```yaml
 # collector-config.yaml - Defense-in-depth PII sanitization pipeline
+
 receivers:
   otlp:
     protocols:

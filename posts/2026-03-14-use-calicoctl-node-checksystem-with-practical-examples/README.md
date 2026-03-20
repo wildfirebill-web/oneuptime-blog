@@ -54,6 +54,7 @@ System check complete: 2 warnings, 0 errors
 ```bash
 #!/bin/bash
 # pre-deploy-checksystem.sh
+
 # Comprehensive pre-deployment validation
 
 echo "=== Pre-Deployment System Check ==="

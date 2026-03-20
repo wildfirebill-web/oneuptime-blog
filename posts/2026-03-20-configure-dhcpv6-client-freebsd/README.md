@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, DHCPv6, dhcp6c, Network Configuration
+Tags: IPv6, FreeBSD, DHCPv6, Dhcp6c, Network Configuration
 
 Description: Learn how to configure a DHCPv6 client on FreeBSD to obtain IPv6 addresses and network configuration from a DHCPv6 server, using dhcp6c.
 
@@ -20,6 +20,7 @@ The router's RA flags determine which mode to use:
 
 ```bash
 # dhcp6c is part of the dhcp6 package
+
 pkg install dhcp6
 
 # Or check if it's already available

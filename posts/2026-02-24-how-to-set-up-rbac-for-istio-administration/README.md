@@ -318,6 +318,7 @@ Test that your RBAC policies work as expected:
 
 ```bash
 # Check if a user can create VirtualServices in a namespace
+
 kubectl auth can-i create virtualservices.networking.istio.io \
   -n team-alpha --as=alice@example.com
 

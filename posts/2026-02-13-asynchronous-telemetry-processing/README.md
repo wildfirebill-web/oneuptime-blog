@@ -149,6 +149,7 @@ A typical Collector configuration:
 
 ```yaml
 # OpenTelemetry Collector configuration
+
 # Receivers accept data from applications
 # Processors transform the data in transit
 # Exporters send data to backends

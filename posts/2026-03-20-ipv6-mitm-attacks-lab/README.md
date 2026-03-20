@@ -12,7 +12,7 @@ IPv6 man-in-the-middle (MITM) attacks exploit the Neighbor Discovery Protocol (N
 
 ## Lab Setup
 
-```
+```text
 [Attacker VM]     [Victim VM]      [Router/Gateway]
 192.168.1.100     192.168.1.10     192.168.1.1
 2001:db8::attacker  2001:db8::victim  2001:db8::router
@@ -24,6 +24,7 @@ All three VMs should be on the same network segment (e.g., a private virtual swi
 
 ```bash
 # On attacker: enable IPv6 forwarding first
+
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Poison victim's NDP cache (tells victim: gateway = attacker's MAC)

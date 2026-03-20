@@ -1,4 +1,4 @@
-# How to Set Up Cloudflare Tunnel for Portainer Access
+# How to Set Up Cloudflare Tunnel for Portainer Access - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,10 +22,10 @@ Cloudflare Tunnel (formerly Argo Tunnel) creates an encrypted outbound connectio
 2. Go to **Networks** → **Tunnels** → **Create a tunnel**
 3. Choose **Cloudflared**
 4. Name your tunnel: `portainer-tunnel`
-5. Copy the tunnel token — you'll need it for the container configuration
+5. Copy the tunnel token - you'll need it for the container configuration
 
 The tunnel token looks like:
-```
+```text
 eyJhIjoiYWNjb3VudC1pZCIsInQiOiJ0dW5uZWwtaWQiLCJzIjoic2VjcmV0LWtleSJ9...
 ```
 
@@ -34,7 +34,7 @@ eyJhIjoiYWNjb3VudC1pZCIsInQiOiJ0dW5uZWwtaWQiLCJzIjoic2VjcmV0LWtleSJ9...
 Still in the tunnel setup wizard:
 
 1. Under **Public Hostname**, add a route:
-   ```
+   ```text
    Subdomain:  portainer
    Domain:     example.com
    Path:       (leave blank)
@@ -50,6 +50,7 @@ Still in the tunnel setup wizard:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -72,7 +73,7 @@ services:
       - portainer_data:/data
     networks:
       - proxy
-    # No port mappings needed — accessed via Cloudflare Tunnel
+    # No port mappings needed - accessed via Cloudflare Tunnel
 
 networks:
   proxy:
@@ -117,13 +118,13 @@ Add authentication so only your team can access Portainer:
 1. In Cloudflare Zero Trust → **Access** → **Applications** → **Add an application**
 2. Choose **Self-hosted**
 3. Configure:
-   ```
+   ```text
    Application name: Portainer
    Session duration: 24 hours
    Application domain: portainer.example.com
    ```
 4. Add a policy:
-   ```
+   ```text
    Policy name: Allow Team
    Action: Allow
    Include rule: Emails ending in @yourcompany.com
@@ -166,4 +167,4 @@ docker exec cloudflared cloudflared tunnel info
 
 ## Conclusion
 
-Cloudflare Tunnel provides a secure way to access Portainer without exposing any firewall ports. Cloudflared makes outbound connections to Cloudflare's network, with routing configured entirely within the Cloudflare dashboard. For production use, combine the tunnel with Cloudflare Access policies to add identity-based authentication in front of Portainer — blocking unauthorized users at the Cloudflare edge before requests ever reach your server.
+Cloudflare Tunnel provides a secure way to access Portainer without exposing any firewall ports. Cloudflared makes outbound connections to Cloudflare's network, with routing configured entirely within the Cloudflare dashboard. For production use, combine the tunnel with Cloudflare Access policies to add identity-based authentication in front of Portainer - blocking unauthorized users at the Cloudflare edge before requests ever reach your server.

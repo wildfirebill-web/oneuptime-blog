@@ -31,6 +31,7 @@ The data stream is your buffer. Events go in, consumers read them out. Choose yo
 
 ```bash
 # Create a Kinesis data stream with on-demand capacity
+
 aws kinesis create-stream \
   --stream-name analytics-events \
   --stream-mode-details StreamMode=ON_DEMAND

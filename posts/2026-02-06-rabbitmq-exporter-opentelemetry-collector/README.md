@@ -553,6 +553,7 @@ import pika
 import json
 
 # Connect to RabbitMQ
+
 connection = pika.BlockingConnection(
     pika.ConnectionParameters(
         host='rabbitmq.example.com',

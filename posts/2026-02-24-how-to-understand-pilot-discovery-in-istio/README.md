@@ -16,6 +16,7 @@ The name "Pilot-Discovery" comes from the original standalone binary that ran Pi
 
 ```bash
 # Check the process inside istiod
+
 kubectl exec -n istio-system deploy/istiod -- ps aux
 # PID   USER   COMMAND
 # 1     istio  /usr/local/bin/pilot-discovery discovery --monitoringAddr=...

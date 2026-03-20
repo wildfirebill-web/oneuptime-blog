@@ -34,6 +34,7 @@ Open PowerShell as Administrator on the Windows host.
 
 ```powershell
 # Set your Edge ID and Edge Key
+
 $EDGE_ID = "your-edge-id-here"
 $EDGE_KEY = "your-edge-key-here"
 
@@ -92,7 +93,7 @@ services:
 
 Create `C:\portainer\.env`:
 
-```
+```text
 EDGE_ID=your-edge-id-here
 EDGE_KEY=your-edge-key-here
 ```
@@ -165,7 +166,7 @@ docker logs portainer_edge_agent --tail 50 -f
 ```
 
 Expected output:
-```
+```text
 Starting Portainer agent version X.X.X
 Edge mode enabled
 Polling https://portainer.example.com/api/endpoints/XX/edge/status every 5 seconds

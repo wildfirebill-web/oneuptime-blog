@@ -24,6 +24,7 @@ Common deprecations:
 
 ```yaml
 # Deprecated in 1.16, removed in 1.22
+
 apiVersion: extensions/v1beta1
 kind: Deployment
 

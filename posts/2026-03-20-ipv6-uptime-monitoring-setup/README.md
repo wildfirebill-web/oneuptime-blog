@@ -6,7 +6,7 @@ Tags: IPv6, Uptime Monitoring, OneUptime, Prometheus, Blackbox Exporter, Availab
 
 Description: A guide to setting up comprehensive IPv6 uptime monitoring for websites and services using OneUptime, Prometheus Blackbox Exporter, and simple shell scripts.
 
-IPv6 uptime monitoring must be done explicitly — an IPv4 uptime check does not verify IPv6 reachability. This guide covers multiple approaches to monitor IPv6 endpoints for availability, response time, and certificate validity.
+IPv6 uptime monitoring must be done explicitly - an IPv4 uptime check does not verify IPv6 reachability. This guide covers multiple approaches to monitor IPv6 endpoints for availability, response time, and certificate validity.
 
 ## Why IPv6 Uptime Monitoring Matters
 
@@ -29,6 +29,7 @@ For DNS-based endpoints, OneUptime will use the first A or AAAA record returned.
 
 ```yaml
 # prometheus.yml - Monitor IPv6 endpoints with Blackbox Exporter
+
 scrape_configs:
   - job_name: "ipv6-uptime"
     metrics_path: /probe

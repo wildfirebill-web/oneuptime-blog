@@ -30,6 +30,7 @@ The CLI provides more detailed diff output:
 
 ```bash
 # Show diff for all resources in an application
+
 argocd app diff my-app
 
 # Show diff in a specific format
@@ -113,7 +114,7 @@ jobs:
             app_diff=$(argocd app diff "$app" \
               --local "apps/$app/production/" 2>&1) || true
             if [ -n "$app_diff" ]; then
-              diff_output="${diff_output}\n### ${app}\n\`\`\`diff\n${app_diff}\n\`\`\`\n"
+              diff_output="${diff_output}\n### ${app}\n```diff\n${app_diff}\n```\n"
             else
               diff_output="${diff_output}\n### ${app}\nNo changes detected.\n"
             fi

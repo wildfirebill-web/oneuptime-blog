@@ -20,6 +20,7 @@ View resource usage for all running containers:
 
 ```bash
 # Start some test containers
+
 podman run -d --name web nginx:latest
 podman run -d --name db -e POSTGRES_PASSWORD=secret postgres:latest
 

@@ -181,6 +181,7 @@ You cannot fix what you cannot see. Monitor your retry metrics to catch retry st
 
 ```bash
 # Check retry rates across all services
+
 kubectl exec -it deploy/istio-proxy -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "upstream_rq_retry"
 

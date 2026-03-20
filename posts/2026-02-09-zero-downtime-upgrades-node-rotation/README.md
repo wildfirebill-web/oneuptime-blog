@@ -26,6 +26,7 @@ Before starting the upgrade process, you need to ensure your cluster and applica
 
 ```yaml
 # Example PDB for critical services
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

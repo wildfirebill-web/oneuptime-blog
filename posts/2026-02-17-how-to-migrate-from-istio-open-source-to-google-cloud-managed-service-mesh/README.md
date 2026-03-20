@@ -36,6 +36,7 @@ Before starting, verify these requirements:
 
 ```bash
 # Check current Istio version
+
 istioctl version
 
 # Check cluster configuration

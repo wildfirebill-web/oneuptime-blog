@@ -50,6 +50,7 @@ The following deployment configuration sets up a basic rolling update strategy w
 
 ```yaml
 # Basic deployment with maxUnavailable configuration
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

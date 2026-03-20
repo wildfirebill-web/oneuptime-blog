@@ -76,6 +76,7 @@ The first step is deploying the OpenTelemetry Collector to receive data from bot
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collector configured to receive Jaeger, Zipkin, and OTLP formats
 
 receivers:

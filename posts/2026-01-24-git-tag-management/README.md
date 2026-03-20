@@ -36,6 +36,7 @@ flowchart LR
 
 ```bash
 # Tag the current commit
+
 git tag -a v1.0.0 -m "Release version 1.0.0"
 
 # Tag with a longer message

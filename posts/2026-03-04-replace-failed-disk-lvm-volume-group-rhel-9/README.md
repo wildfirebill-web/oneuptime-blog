@@ -170,6 +170,7 @@ In situations where the disk has failed catastrophically and `pvmove` is not pos
 
 ```bash
 # Add the replacement disk
+
 sudo pvcreate /dev/sdd1
 sudo vgextend vg_data /dev/sdd1
 

@@ -1,4 +1,4 @@
-# How to Access the Portainer API Documentation
+# How to Access the Portainer API Documentation - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,13 +22,13 @@ Portainer includes an interactive Swagger UI accessible from your Portainer inst
 
 ### URL Format
 
-```
+```text
 https://portainer.example.com/api/documentation
 ```
 
 or on a local installation:
 
-```
+```text
 http://localhost:9000/api/documentation
 ```
 
@@ -70,7 +70,7 @@ The Swagger UI organizes endpoints by **tags** (resource categories):
 
 Portainer publishes API documentation online:
 
-```
+```text
 https://app.swaggerhub.com/apis/portainer/portainer-ce/2.21.0
 ```
 
@@ -78,6 +78,7 @@ The version number in the URL corresponds to your Portainer version. Check your 
 
 ```bash
 # Check your Portainer version
+
 curl -s https://portainer.example.com/api/system/status | jq .Version
 ```
 
@@ -94,7 +95,7 @@ Portainer's API does not use separate version prefixes (like `/v1/`, `/v2/`). Al
 
 Key API URL patterns:
 
-```
+```bash
 # Global operations
 POST   /api/auth                         # Get JWT token
 GET    /api/users                         # List users

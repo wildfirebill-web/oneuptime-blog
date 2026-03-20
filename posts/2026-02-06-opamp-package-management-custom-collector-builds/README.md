@@ -14,6 +14,7 @@ First, define your custom collector using the OpenTelemetry Collector Builder:
 
 ```yaml
 # builder-config.yaml
+
 dist:
   name: otelcol-custom
   description: Custom collector for YourOrg

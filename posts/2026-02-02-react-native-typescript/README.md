@@ -44,6 +44,7 @@ The React Native CLI includes built-in TypeScript support. Running the following
 
 ```bash
 # Create a new React Native project with TypeScript template
+
 npx react-native init MyApp --template react-native-template-typescript
 
 # Navigate into the project directory

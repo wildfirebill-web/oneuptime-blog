@@ -21,6 +21,7 @@ Text Generation WebUI benefits heavily from GPU acceleration. Here is what you n
 
 ```bash
 # Verify Docker is running
+
 docker --version
 
 # Check GPU availability

@@ -22,6 +22,7 @@ sequenceDiagram
 
 ```bash
 # Authenticate and get a JWT token
+
 curl -X POST "https://portainer.mycompany.com/api/auth" \
   -H "Content-Type: application/json" \
   -d '{

@@ -28,6 +28,7 @@ Here is the Dockerfile that makes this work.
 
 ```dockerfile
 # Stage 1: Build dependencies in a full Python image
+
 FROM python:3.12-slim AS builder
 
 WORKDIR /app

@@ -33,6 +33,7 @@ This is the most portable method. Write a small script that reads the vault pass
 ```bash
 #!/bin/bash
 # vault_pass.sh - reads vault password from CI/CD injected environment variable
+
 if [ -z "${ANSIBLE_VAULT_PASSWORD}" ]; then
   echo "ERROR: ANSIBLE_VAULT_PASSWORD is not set" >&2
   exit 1

@@ -52,6 +52,7 @@ Attach the AWS-managed policy `AmazonRDSCustomInstanceProfileRolePolicy` to this
 
 ```bash
 # Create the role and attach the managed policy
+
 aws iam create-role \
   --role-name AmazonRDSCustomInstanceRole \
   --assume-role-policy-document file://trust-policy.json

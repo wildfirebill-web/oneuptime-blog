@@ -14,6 +14,7 @@ SIP over IPv6 issues commonly involve incorrect IPv6 address formatting in SIP h
 
 ```bash
 # Test if SIP server is reachable over IPv6
+
 nc -6 -u -w 3 2001:db8::sip-server 5060
 
 # Send SIP OPTIONS to check server

@@ -44,6 +44,7 @@ Create the BigQuery connection in GCP:
 
 ```bash
 # Create a BigQuery connection for AWS
+
 bq mk --connection \
   --connection_type=AWS \
   --location=aws-us-east-1 \

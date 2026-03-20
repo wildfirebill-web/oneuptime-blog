@@ -30,6 +30,7 @@ List current IP reservations:
 
 ```bash
 # List all IPReservation resources (Calico 3.21+)
+
 calicoctl get ipreservation -o yaml
 
 # Check for IP pool annotations that mark reserved ranges

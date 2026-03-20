@@ -14,6 +14,7 @@ Consistent code style makes OpenTofu configurations easier to read, review, and 
 
 ```hcl
 # Use 2-space indentation (tofu fmt handles this)
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t2.micro"
@@ -25,7 +26,7 @@ resource "aws_instance" "web" {
 
 ## Naming Conventions
 
-### Resource Names
+Resource Names
 
 ```hcl
 # Use snake_case (underscores)

@@ -70,6 +70,7 @@ The `Mock` class creates objects that record how they are used and can be config
 
 ```python
 # Understanding Mock objects and their behavior
+
 from unittest.mock import Mock
 
 # Create a mock object that can pretend to be anything

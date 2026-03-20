@@ -36,6 +36,7 @@ Before migrating, verify cluster readiness:
 
 ```bash
 # 1. Check Kubernetes version (must be 1.24+)
+
 kubectl version --short
 
 # 2. Check current container runtime

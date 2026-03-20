@@ -18,7 +18,7 @@ resource "aws_spot_instance_request" "batch" {
   subnet_id              = var.private_subnet_id
   vpc_security_group_ids = [aws_security_group.batch.id]
 
-  # Bid price — if empty, defaults to On-Demand price (no bid limit)
+  # Bid price - if empty, defaults to On-Demand price (no bid limit)
   # spot_price = "0.50"
 
   spot_type            = "one-time"  # one-time or persistent

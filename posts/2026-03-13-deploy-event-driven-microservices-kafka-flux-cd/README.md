@@ -27,6 +27,7 @@ Store event schemas in Git as documentation and for schema registry use:
 
 ```yaml
 # events/schemas/order-created.json
+
 {
   "type": "record",
   "name": "OrderCreated",

@@ -8,7 +8,7 @@ Description: Understand how IS-IS (Intermediate System to Intermediate System) p
 
 ## Overview
 
-IS-IS is a link-state routing protocol originally designed for ISO/OSI networking but extended to support IP routing. Unlike OSPFv3, IS-IS is not a separate protocol for IPv6 — instead, IPv6 support was added to existing IS-IS via new TLV (Type-Length-Value) extensions.
+IS-IS is a link-state routing protocol originally designed for ISO/OSI networking but extended to support IP routing. Unlike OSPFv3, IS-IS is not a separate protocol for IPv6 - instead, IPv6 support was added to existing IS-IS via new TLV (Type-Length-Value) extensions.
 
 ## IS-IS Architecture for IPv6
 
@@ -64,7 +64,7 @@ graph LR
 
 ## IS-IS Adjacency for IPv6
 
-IS-IS adjacencies run directly over Layer 2 (Ethernet, HDLC) — not over IPv6. This is a key distinction from OSPFv3. An IS-IS adjacency can form even if IPv6 is not configured, and then carry IPv6 routes via TLVs.
+IS-IS adjacencies run directly over Layer 2 (Ethernet, HDLC) - not over IPv6. This is a key distinction from OSPFv3. An IS-IS adjacency can form even if IPv6 is not configured, and then carry IPv6 routes via TLVs.
 
 ## When to Choose IS-IS for IPv6
 
@@ -75,4 +75,4 @@ IS-IS is preferred when:
 
 ## Summary
 
-IS-IS supports IPv6 through TLV 232 (IPv6 interface addresses) and TLV 236 (IPv6 reachability). Unlike OSPFv3, IS-IS runs directly over Layer 2 — not over IP. Multi-Topology IS-IS (RFC 5120) enables independent IPv4 and IPv6 forwarding topologies. IS-IS is the dominant routing protocol in large ISP backbones and is commonly deployed in large-scale data center fabrics.
+IS-IS supports IPv6 through TLV 232 (IPv6 interface addresses) and TLV 236 (IPv6 reachability). Unlike OSPFv3, IS-IS runs directly over Layer 2 - not over IP. Multi-Topology IS-IS (RFC 5120) enables independent IPv4 and IPv6 forwarding topologies. IS-IS is the dominant routing protocol in large ISP backbones and is commonly deployed in large-scale data center fabrics.

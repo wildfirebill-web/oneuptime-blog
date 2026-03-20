@@ -29,6 +29,7 @@ Install OpenCost using a Flux-managed HelmRelease for GitOps-driven cost monitor
 
 ```yaml
 # infrastructure/opencost/helmrepository.yaml
+
 # Flux HelmRepository for the OpenCost Helm chart
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

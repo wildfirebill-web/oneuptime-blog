@@ -36,6 +36,7 @@ Install all the required packages.
 
 ```bash
 # Install OpenTelemetry SDK, amqplib instrumentation, and the RabbitMQ client
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/sdk-trace-node \
   @opentelemetry/exporter-trace-otlp-grpc \

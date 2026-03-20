@@ -27,6 +27,7 @@ Here is a simple script that stops all VMs in a resource group:
 
 ```powershell
 # Stop all VMs in a specific resource group
+
 # This deallocates the VMs, stopping compute charges
 
 param(

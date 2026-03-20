@@ -37,6 +37,7 @@ SSH authentication uses a key pair. Your private key stays on your computer, and
 
 ```bash
 # For GitHub
+
 ssh -T git@github.com
 
 # For GitLab

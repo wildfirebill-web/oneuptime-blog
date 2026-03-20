@@ -68,6 +68,7 @@ module "gcp_module" {
 
 ```bash
 # Install ORAS
+
 brew install oras  # macOS
 
 # Package your module

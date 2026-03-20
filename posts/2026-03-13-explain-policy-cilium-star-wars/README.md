@@ -26,6 +26,7 @@ This explanation is targeted at engineers who need to understand Cilium deeply e
 
 ```bash
 # Cilium agent logs when policy is applied
+
 kubectl logs -n kube-system ds/cilium | grep -i "policy"
 
 # List endpoints and their policy state

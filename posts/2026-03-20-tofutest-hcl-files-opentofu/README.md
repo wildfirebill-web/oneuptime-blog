@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, tofutest.hcl, Infrastructure as Code, Test Files
+Tags: OpenTofu, Testing, Tofutest.hcl, Infrastructure as Code, Test Files
 
 Description: Understand the `.tofutest.hcl` file extension introduced in OpenTofu as an alternative to `.tftest.hcl` and when to use each format.
 
@@ -10,7 +10,7 @@ Description: Understand the `.tofutest.hcl` file extension introduced in OpenTof
 
 OpenTofu supports two test file extensions: `.tftest.hcl` and `.tofutest.hcl`. The `.tofutest.hcl` extension was introduced as an OpenTofu-specific alternative, useful when you want to clearly distinguish OpenTofu test files from Terraform test files in a shared or migrating codebase.
 
-Both extensions are functionally identical—every feature available in `.tftest.hcl` works the same way in `.tofutest.hcl`.
+Both extensions are functionally identical-every feature available in `.tftest.hcl` works the same way in `.tofutest.hcl`.
 
 ## When to Use `.tofutest.hcl`
 
@@ -70,6 +70,7 @@ run "correct_number_of_subnets_created" {
 
 ```bash
 # Discovers and runs both .tftest.hcl and .tofutest.hcl files
+
 tofu test
 
 # Run only files in a specific directory (picks up both extensions)
@@ -87,7 +88,7 @@ tofu test -filter=tests/vpc.tofutest.hcl
 
 You can safely mix both extensions in the same project. OpenTofu treats them identically at runtime:
 
-```
+```text
 modules/
   networking/
     main.tf
@@ -101,4 +102,4 @@ This pattern is useful during gradual migration: keep the Terraform-compatible t
 
 ## Conclusion
 
-The `.tofutest.hcl` extension offers a clear signal of OpenTofu alignment without sacrificing any functionality. Whether you choose `.tftest.hcl` or `.tofutest.hcl` is mostly a team convention decision—pick one and apply it consistently across your codebase.
+The `.tofutest.hcl` extension offers a clear signal of OpenTofu alignment without sacrificing any functionality. Whether you choose `.tftest.hcl` or `.tofutest.hcl` is mostly a team convention decision-pick one and apply it consistently across your codebase.

@@ -46,6 +46,7 @@ The following YAML creates a basic CRD with essential fields:
 
 ```yaml
 # database-crd.yaml
+
 # This CRD defines a Database resource for managing database instances
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition

@@ -43,6 +43,7 @@ OCI Artifact (my-registry/fleet/edge-apps:v1.2.3)
 
 ```bash
 # Inspect an existing Flux OCI artifact
+
 flux pull artifact oci://my-registry.example.com/fleet/edge-apps:latest \
   --output=/tmp/inspect
 

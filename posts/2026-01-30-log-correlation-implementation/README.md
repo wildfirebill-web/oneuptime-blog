@@ -376,6 +376,7 @@ Filter by trace ID to see the complete request journey.
 
 ```bash
 # Example log query in your aggregator
+
 trace_id:abc123 | sort timestamp asc
 ```
 

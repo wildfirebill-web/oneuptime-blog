@@ -66,6 +66,7 @@ Before setting up Private Link:
 
 ```bash
 # Get the resource ID of your MySQL server
+
 MYSQL_ID=$(az mysql flexible-server show \
   --resource-group myResourceGroup \
   --name my-mysql-server \

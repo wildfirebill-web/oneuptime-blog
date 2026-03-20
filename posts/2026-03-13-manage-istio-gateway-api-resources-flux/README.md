@@ -26,6 +26,7 @@ This guide covers installing the Gateway API CRDs and managing Istio Gateway API
 
 ```yaml
 # clusters/my-cluster/gateway-api/gitrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

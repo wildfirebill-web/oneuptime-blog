@@ -21,7 +21,8 @@ The CIS AWS Foundations Benchmark provides prescriptive guidance for securing AW
 ## Section 1: IAM Controls
 
 ```hcl
-# CIS 1.8 — Ensure IAM password policy requires minimum 14-character passwords
+# CIS 1.8 - Ensure IAM password policy requires minimum 14-character passwords
+
 resource "aws_iam_account_password_policy" "cis" {
   minimum_password_length        = 14
   require_lowercase_characters   = true
@@ -38,7 +39,7 @@ resource "aws_iam_account_password_policy" "cis" {
 ## Section 2: Storage Controls
 
 ```hcl
-# CIS 2.1.1 — Ensure S3 bucket public access is blocked at account level
+# CIS 2.1.1 - Ensure S3 bucket public access is blocked at account level
 resource "aws_s3_account_public_access_block" "cis" {
   block_public_acls       = true
   block_public_policy     = true
@@ -50,7 +51,7 @@ resource "aws_s3_account_public_access_block" "cis" {
 ## Section 3: Logging Controls
 
 ```hcl
-# CIS 3.1 — Ensure CloudTrail is enabled in all regions
+# CIS 3.1 - Ensure CloudTrail is enabled in all regions
 resource "aws_cloudtrail" "cis" {
   name                          = "cis-cloudtrail"
   s3_bucket_name                = aws_s3_bucket.cloudtrail.id
@@ -69,8 +70,8 @@ resource "aws_cloudtrail" "cis" {
   }
 }
 
-# CIS 3.2 — Ensure CloudTrail log file validation is enabled (set above)
-# CIS 3.7 — Ensure CloudTrail logs are encrypted at rest
+# CIS 3.2 - Ensure CloudTrail log file validation is enabled (set above)
+# CIS 3.7 - Ensure CloudTrail logs are encrypted at rest
 resource "aws_cloudtrail" "encrypted" {
   kms_key_id = aws_kms_key.cloudtrail.arn
   # ... other config
@@ -80,7 +81,7 @@ resource "aws_cloudtrail" "encrypted" {
 ## Section 4: Monitoring Controls
 
 ```hcl
-# CIS 4.1 — Unauthorized API calls alarm
+# CIS 4.1 - Unauthorized API calls alarm
 resource "aws_cloudwatch_metric_alarm" "unauthorized_api" {
   alarm_name          = "cis-unauthorized-api-calls"
   comparison_operator = "GreaterThanOrEqualToThreshold"
@@ -93,7 +94,7 @@ resource "aws_cloudwatch_metric_alarm" "unauthorized_api" {
   alarm_actions       = [aws_sns_topic.security_alerts.arn]
 }
 
-# CIS 4.3 — Root account usage alarm
+# CIS 4.3 - Root account usage alarm
 resource "aws_cloudwatch_metric_alarm" "root_usage" {
   alarm_name          = "cis-root-account-usage"
   comparison_operator = "GreaterThanOrEqualToThreshold"
@@ -110,13 +111,13 @@ resource "aws_cloudwatch_metric_alarm" "root_usage" {
 ## Section 5: Networking Controls
 
 ```hcl
-# CIS 5.4 — Ensure the default security group restricts all traffic
+# CIS 5.4 - Ensure the default security group restricts all traffic
 resource "aws_default_security_group" "cis" {
   vpc_id = aws_vpc.main.id
   # No ingress or egress rules = deny all
 }
 
-# CIS 5.1 — Ensure no security groups allow unrestricted SSH access
+# CIS 5.1 - Ensure no security groups allow unrestricted SSH access
 # (Validated via AWS Config rule or custom policy check)
 ```
 

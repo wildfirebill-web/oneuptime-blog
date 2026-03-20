@@ -24,6 +24,7 @@ For testing, namespaces are invaluable. You can simulate multi-host topologies, 
 
 ```bash
 # Create a new network namespace named "test1"
+
 sudo ip netns add test1
 
 # List all namespaces

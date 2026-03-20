@@ -22,6 +22,7 @@ PHP-FPM offers three process management strategies:
 
 ```bash
 # Check average PHP-FPM worker memory usage
+
 ps -ylC php-fpm --sort:rss | awk '{sum += $8; n++} END {print "Avg RSS:", sum/n/1024, "MB"}'
 
 # Check total available memory

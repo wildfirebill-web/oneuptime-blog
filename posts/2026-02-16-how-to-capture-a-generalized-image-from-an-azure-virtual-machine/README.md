@@ -30,6 +30,7 @@ Clean up unnecessary files to keep the image small:
 
 ```bash
 # Clean up apt cache to reduce image size
+
 sudo apt clean
 
 # Remove temporary files

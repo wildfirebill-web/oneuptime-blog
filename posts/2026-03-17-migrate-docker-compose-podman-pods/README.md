@@ -20,6 +20,7 @@ Consider this typical Docker Compose setup:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   web:

@@ -36,6 +36,7 @@ Open the firewall:
 
 ```bash
 # Allow access to the stats port
+
 sudo firewall-cmd --permanent --add-port=8404/tcp
 sudo firewall-cmd --reload
 ```

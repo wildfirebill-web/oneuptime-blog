@@ -94,6 +94,7 @@ Sink connectors push data from Kafka to external systems. They handle:
 
 ```bash
 # Create Maven project structure
+
 mkdir -p kafka-custom-connector/src/main/java/com/example/connect
 mkdir -p kafka-custom-connector/src/main/resources
 mkdir -p kafka-custom-connector/src/test/java/com/example/connect

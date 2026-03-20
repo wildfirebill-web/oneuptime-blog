@@ -29,6 +29,7 @@ This post connects version compatibility failures to their traffic impact and pr
 **Diagnostic**:
 ```bash
 # Check if new pod has a WorkloadEndpoint
+
 kubectl run test-pod --image=nginx
 calicoctl get workloadendpoint --all-namespaces | grep test-pod
 # If the WorkloadEndpoint is missing, Felix cannot see the new pod

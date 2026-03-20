@@ -20,6 +20,7 @@ Normal image removal fails when containers reference the image.
 
 ```bash
 # Start a container from nginx
+
 podman run -d --name web nginx:1.25
 
 # Try to remove the image (this will fail)

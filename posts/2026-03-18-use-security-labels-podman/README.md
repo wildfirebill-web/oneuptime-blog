@@ -20,6 +20,7 @@ SELinux assigns a security context (label) to every process and file. Podman aut
 
 ```bash
 # Check if SELinux is enabled on your system
+
 getenforce
 # Expected output: Enforcing (or Permissive)
 ```

@@ -294,6 +294,7 @@ Use Debezium to sync data between databases:
 
 ```yaml
 # docker-compose.yml
+
 services:
   debezium:
     image: debezium/connect:2.4

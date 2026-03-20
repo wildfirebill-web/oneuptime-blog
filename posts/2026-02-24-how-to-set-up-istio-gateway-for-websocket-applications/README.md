@@ -275,6 +275,7 @@ export GATEWAY_IP=$(kubectl -n istio-system get service istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Using wscat
+
 wscat -c "ws://$GATEWAY_IP/ws" -H "Host: ws.example.com"
 
 # Using websocat

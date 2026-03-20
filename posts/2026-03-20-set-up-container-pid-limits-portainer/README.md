@@ -1,4 +1,4 @@
-# How to Set Up Container PID Limits in Portainer
+# How to Set Up Container PID Limits in Portainer - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure container PID (process ID) limits in Portainer to prevent
 
 ---
 
-A container without PID limits can fork-bomb the host — creating so many processes that the host becomes unable to start new processes, affecting all containers and even the host OS. PID limits are an important security control.
+A container without PID limits can fork-bomb the host - creating so many processes that the host becomes unable to start new processes, affecting all containers and even the host OS. PID limits are an important security control.
 
 ## Why PID Limits Matter
 
@@ -53,6 +53,7 @@ To determine the right limit for your application:
 
 ```bash
 # Check current process count inside a running container
+
 docker exec webapp sh -c "ls /proc | grep -E '^[0-9]+$' | wc -l"
 
 # Or use ps inside the container
@@ -70,7 +71,7 @@ When a container tries to fork beyond its PID limit:
 # bash: fork: retry: Resource temporarily unavailable
 # bash: fork: Resource temporarily unavailable
 
-# The container continues running — only new process creation is blocked
+# The container continues running - only new process creation is blocked
 # Existing processes are not killed
 ```
 

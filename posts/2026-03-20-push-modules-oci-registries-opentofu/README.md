@@ -14,6 +14,7 @@ OpenTofu supports sourcing modules from OCI registries using the `oci::` source 
 
 ```bash
 # Module structure to be packaged
+
 my-vpc-module/
 ├── main.tf
 ├── variables.tf
@@ -211,4 +212,4 @@ done
 
 ## Conclusion
 
-Pushing modules to OCI registries uses `oras push` with the `application/vnd.opentofu.module.v1.tar+gzip` content type to package module directories as `.tgz` archives. Use semantic version tags (major, minor, patch, and latest) to give consumers flexibility in version constraints. The GitHub Actions pipeline shows the full automated workflow: validate → package → push — triggered on version tags. Once pushed, modules are referenced in configurations using the `oci::` source prefix.
+Pushing modules to OCI registries uses `oras push` with the `application/vnd.opentofu.module.v1.tar+gzip` content type to package module directories as `.tgz` archives. Use semantic version tags (major, minor, patch, and latest) to give consumers flexibility in version constraints. The GitHub Actions pipeline shows the full automated workflow: validate → package → push - triggered on version tags. Once pushed, modules are referenced in configurations using the `oci::` source prefix.

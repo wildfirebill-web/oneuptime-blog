@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Compliance, Security Scanning, CIS Benchmark, HIPAA, SOC2, Infrastructure as Code
 
-Description: Learn how to scan OpenTofu configurations against compliance frameworks like CIS Benchmarks, HIPAA, and SOC 2 using Checkov and custom OPA policies — ensuring infrastructure meets regulatory requirements before deployment.
+Description: Learn how to scan OpenTofu configurations against compliance frameworks like CIS Benchmarks, HIPAA, and SOC 2 using Checkov and custom OPA policies - ensuring infrastructure meets regulatory...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Checkov includes built-in checks mapped to compliance frameworks:
 
 ```bash
 # Install Checkov
+
 pip install checkov
 
 # Scan against CIS AWS Benchmark Level 1
@@ -159,7 +160,7 @@ jobs:
 ## Compliance as Code: .checkov.yaml
 
 ```yaml
-# .checkov.yaml — project-level Checkov configuration
+# .checkov.yaml - project-level Checkov configuration
 framework:
   - terraform
 
@@ -168,7 +169,7 @@ check:
   - PCI_DSS_3.2   # PCI DSS
 
 skip-check:
-  # Public website bucket — intentionally public
+  # Public website bucket - intentionally public
   - CKV_AWS_20
   - CKV2_AWS_6
 
@@ -193,4 +194,4 @@ jq '.summary | {passed: .passed, failed: .failed}' compliance-report.json
 
 ## Conclusion
 
-Compliance scanning in OpenTofu shifts regulatory verification left — from post-deployment audits to pre-merge checks. Checkov's 1,000+ built-in controls cover CIS Benchmarks, PCI DSS, HIPAA, and SOC 2. Supplement with custom OPA policies for organization-specific controls. Generate SARIF output for GitHub Security tab integration and JSON reports for auditors. With compliance gates in CI, every merged change is compliance-verified.
+Compliance scanning in OpenTofu shifts regulatory verification left - from post-deployment audits to pre-merge checks. Checkov's 1,000+ built-in controls cover CIS Benchmarks, PCI DSS, HIPAA, and SOC 2. Supplement with custom OPA policies for organization-specific controls. Generate SARIF output for GitHub Security tab integration and JSON reports for auditors. With compliance gates in CI, every merged change is compliance-verified.

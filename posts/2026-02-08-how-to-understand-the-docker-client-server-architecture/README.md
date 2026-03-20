@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Architecture, Client-server, Docker Daemon, Docker CLI, Containers, Docker api
+Tags: Docker, Architecture, Client-Server, Docker Daemon, Docker CLI, Containers, Docker API
 
 Description: A practical guide to understanding Docker's client-server architecture, how the CLI communicates with the daemon, and how to use the Docker API directly.
 
@@ -33,6 +33,7 @@ By default on Linux, the Docker client communicates with the daemon through a Un
 
 ```bash
 # Check that the Docker socket exists
+
 ls -la /var/run/docker.sock
 ```
 

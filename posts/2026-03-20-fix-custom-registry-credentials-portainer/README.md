@@ -1,4 +1,4 @@
-# How to Fix "Custom Registry Credentials Ignored" in Portainer
+# How to Fix 'Custom Registry Credentials Ignored' in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to diagnose and fix issues where Portainer ignores stored
 
 ## The Problem
 
-You've added a custom private registry to Portainer with credentials, but when deploying containers or stacks, Portainer still fails with `unauthorized` errors — as if the credentials aren't being used.
+You've added a custom private registry to Portainer with credentials, but when deploying containers or stacks, Portainer still fails with `unauthorized` errors - as if the credentials aren't being used.
 
 ## Common Causes
 
@@ -33,6 +33,7 @@ The registry URL in Portainer must exactly match the hostname in your image refe
 
 ```yaml
 # If your registry is registered as: registry.mycompany.com
+
 # Your image MUST reference the same hostname exactly:
 image: registry.mycompany.com/myteam/myapp:latest
 

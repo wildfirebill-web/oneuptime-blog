@@ -78,6 +78,7 @@ The following commands install Gatekeeper using the official Helm chart with rec
 
 ```bash
 # Add the Gatekeeper Helm repository
+
 helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
 
 # Update local chart cache
@@ -494,7 +495,7 @@ spec:
 
 ---
 
-## Resource Limits Template
+Resource Limits Template
 
 Preventing resource exhaustion requires enforcing CPU and memory limits on all containers:
 

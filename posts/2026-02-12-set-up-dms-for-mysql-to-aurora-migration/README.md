@@ -53,6 +53,7 @@ If binary logging is not configured correctly, update your MySQL configuration.
 
 ```ini
 # my.cnf changes for DMS compatibility
+
 [mysqld]
 server-id = 1
 log_bin = mysql-bin

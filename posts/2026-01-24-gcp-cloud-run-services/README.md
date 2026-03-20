@@ -47,6 +47,7 @@ flowchart TB
 
 ```bash
 # Deploy directly from source (uses Cloud Build)
+
 gcloud run deploy my-service \
     --source . \
     --region us-central1 \
@@ -87,7 +88,7 @@ gcloud run deploy my-service \
 
 ## Service Configuration
 
-### Resource Limits and Scaling
+Resource Limits and Scaling
 
 ```bash
 # Configure CPU and memory

@@ -24,6 +24,7 @@ Here is how to create an uptime check using the gcloud CLI:
 
 ```bash
 # Create an HTTPS uptime check for your production website
+
 gcloud monitoring uptime create \
   --display-name="Production Website - HTTPS" \
   --monitored-resource-type="uptime-url" \

@@ -8,7 +8,7 @@ Description: Learn how IPv6 zone IDs (scope identifiers) disambiguate link-local
 
 ## Introduction
 
-IPv6 link-local addresses (fe80::/10) are not globally unique — the same address can exist on multiple interfaces simultaneously. When you have more than one network interface, the OS needs to know which interface to use when you target a link-local address. This is solved by **zone IDs** (also called scope identifiers).
+IPv6 link-local addresses (fe80::/10) are not globally unique - the same address can exist on multiple interfaces simultaneously. When you have more than one network interface, the OS needs to know which interface to use when you target a link-local address. This is solved by **zone IDs** (also called scope identifiers).
 
 ## The Problem Zone IDs Solve
 
@@ -16,16 +16,17 @@ Consider a host with two interfaces:
 - `eth0`: fe80::1%eth0
 - `eth1`: fe80::1%eth1
 
-Without a zone ID, `ping6 fe80::1` is ambiguous — the OS cannot know which interface to use. The zone ID appended with `%` disambiguates this.
+Without a zone ID, `ping6 fe80::1` is ambiguous - the OS cannot know which interface to use. The zone ID appended with `%` disambiguates this.
 
 ## Zone ID Syntax
 
 The zone ID is appended to an IPv6 address using the `%` character:
 
-```
+```text
 <address>%<zone_id>
 
 # Examples
+
 fe80::1%eth0          # Linux/macOS: interface name
 fe80::1%2             # Windows: interface index number
 2001:db8::1%eth0      # Zone IDs can technically be on any address (rare)
@@ -59,7 +60,7 @@ scp -6 file.txt user@"[fe80::1%eth0]":/remote/path/
 
 When embedding a link-local address in a URL, the `%` must be percent-encoded as `%25`:
 
-```
+```text
 # Correct URL format with zone ID
 http://[fe80::1%25eth0]/
 http://[fe80::1%25eth0]:8080/api/v1/

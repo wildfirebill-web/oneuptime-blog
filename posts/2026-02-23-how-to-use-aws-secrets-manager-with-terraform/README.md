@@ -16,6 +16,7 @@ The simplest case is creating a secret and storing a value:
 
 ```hcl
 # Create a secret
+
 resource "aws_secretsmanager_secret" "database" {
   name        = "production/database/credentials"
   description = "Database credentials for the production environment"

@@ -25,6 +25,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, Part
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 model = GenerativeModel("gemini-2.0-flash")

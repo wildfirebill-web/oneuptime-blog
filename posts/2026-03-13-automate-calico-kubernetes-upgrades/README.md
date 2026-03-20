@@ -61,6 +61,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # check-calico-k8s-compatibility.sh
+
 CALICO_VERSION="${1:?Provide Calico version}"
 K8S_VERSION=$(kubectl version -o json | jq -r '.serverVersion.gitVersion')
 

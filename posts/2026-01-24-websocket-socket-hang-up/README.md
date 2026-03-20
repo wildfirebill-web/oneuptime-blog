@@ -260,6 +260,7 @@ sequenceDiagram
 
 ```nginx
 # Nginx - Increase timeouts significantly
+
 location /ws {
     proxy_pass http://backend;
     proxy_http_version 1.1;

@@ -315,6 +315,7 @@ spec:
 
 ```promql
 # Data throughput between streaming components
+
 rate(istio_tcp_sent_bytes_total{source_workload="stream-processor"}[5m])
 
 # Connection stability (frequent reconnects indicate issues)

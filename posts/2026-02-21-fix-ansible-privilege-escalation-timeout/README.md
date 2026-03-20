@@ -26,6 +26,7 @@ The most common cause is sudo requiring a password:
 
 ```bash
 # Provide the become password
+
 ansible-playbook playbook.yml --ask-become-pass
 ```
 

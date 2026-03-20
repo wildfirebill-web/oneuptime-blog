@@ -24,6 +24,7 @@ A successfully advertised service IP route on an external router does not guaran
 
 ```bash
 # Check what service CIDRs are being advertised
+
 NODE_POD=$(kubectl get pod -n calico-system -l k8s-app=calico-node -o name | head -1)
 kubectl exec -n calico-system ${NODE_POD} -- birdcl show route | grep "10.96"
 

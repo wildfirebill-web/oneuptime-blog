@@ -8,7 +8,7 @@ Description: Configure Postfix smtp_bind_address6 to control which IPv6 source a
 
 ## Introduction
 
-When a server has multiple IPv6 addresses, Postfix may choose any of them as the source address for outbound SMTP connections. The `smtp_bind_address6` parameter pins outbound SMTP to a specific IPv6 address — important for reputation management and ensuring correct PTR/rDNS alignment.
+When a server has multiple IPv6 addresses, Postfix may choose any of them as the source address for outbound SMTP connections. The `smtp_bind_address6` parameter pins outbound SMTP to a specific IPv6 address - important for reputation management and ensuring correct PTR/rDNS alignment.
 
 ## Why smtp_bind_address6 Matters
 
@@ -25,6 +25,7 @@ Before configuring, list available IPv6 addresses on the server:
 
 ```bash
 # List all IPv6 addresses
+
 ip -6 addr show
 
 # Focus on global scope addresses only (exclude link-local fe80::)

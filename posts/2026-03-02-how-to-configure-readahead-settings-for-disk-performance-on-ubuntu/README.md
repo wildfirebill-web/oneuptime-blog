@@ -18,6 +18,7 @@ The `blockdev --getra` command reports readahead in 512-byte sectors, but the `-
 
 ```bash
 # View current readahead for all block devices (value is in 512-byte sectors)
+
 sudo blockdev --getra /dev/sda
 # Example: 256 = 256 * 512 = 131072 bytes = 128KB
 

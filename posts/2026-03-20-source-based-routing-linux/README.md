@@ -2,19 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Policy Routing, Source Routing, ip rule, IPv4
+Tags: Linux, Networking, Policy Routing, Source Routing, Ip rule, IPv4
 
 Description: Configure source-based routing on Linux using policy routing rules and multiple routing tables to forward traffic based on source IP address.
 
 ## Introduction
 
-Linux's policy routing system allows you to route packets based on more than just the destination address. Source-based routing (a subset of policy-based routing) selects the routing table based on the packet's source IP. This is essential for multi-homed servers — ensuring replies from each interface exit through the correct gateway.
+Linux's policy routing system allows you to route packets based on more than just the destination address. Source-based routing (a subset of policy-based routing) selects the routing table based on the packet's source IP. This is essential for multi-homed servers - ensuring replies from each interface exit through the correct gateway.
 
 ## The Problem: Multi-Homed Server Asymmetry
 
 Without source-based routing, a server with two interfaces may respond to requests through the wrong interface:
 
-```
+```text
 eth0: 203.0.113.5/24  gateway: 203.0.113.1  (ISP1)
 eth1: 198.51.100.5/24 gateway: 198.51.100.1 (ISP2)
 
@@ -26,6 +26,7 @@ Problem: Packets arriving on eth1 (ISP2) get replies sent via eth0 (ISP1)
 
 ```bash
 # Add table names to the routing table database
+
 echo "100 isp1" >> /etc/iproute2/rt_tables
 echo "200 isp2" >> /etc/iproute2/rt_tables
 
@@ -100,4 +101,4 @@ fi
 
 ## Conclusion
 
-Source-based routing solves the multi-homed server problem elegantly using Linux's policy routing framework. With separate routing tables per upstream and rules that match source IPs to those tables, each interface's traffic flows through its own gateway — ensuring bidirectional reachability and avoiding asymmetric routing problems.
+Source-based routing solves the multi-homed server problem elegantly using Linux's policy routing framework. With separate routing tables per upstream and rules that match source IPs to those tables, each interface's traffic flows through its own gateway - ensuring bidirectional reachability and avoiding asymmetric routing problems.

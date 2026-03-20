@@ -20,6 +20,7 @@ The discovery service lives under `cluster.discovery` in the machine configurati
 
 ```yaml
 # Basic discovery configuration
+
 cluster:
   discovery:
     enabled: true

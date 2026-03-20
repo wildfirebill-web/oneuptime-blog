@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Multi-Cloud, Networking, VPN, AWS, Azure, GCP, Infrastructure as Code
 
-Description: Learn how to connect AWS, Azure, and GCP networks using OpenTofu — configuring VPN gateways and IPsec tunnels for secure cross-cloud connectivity.
+Description: Learn how to connect AWS, Azure, and GCP networks using OpenTofu - configuring VPN gateways and IPsec tunnels for secure cross-cloud connectivity.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Cross-cloud networking connects VPCs, VNets, and VPCs across different cloud pro
 
 ```hcl
 # AWS side: Virtual Private Gateway
+
 resource "aws_vpn_gateway" "main" {
   vpc_id = aws_vpc.main.id
   tags   = { Name = "aws-to-azure-vgw" }

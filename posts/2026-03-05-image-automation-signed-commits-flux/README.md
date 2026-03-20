@@ -25,6 +25,7 @@ If you do not already have a GPG key for Flux, generate one. This key will be us
 
 ```bash
 # Generate a GPG key for the Flux bot
+
 # Use a passphrase-less key for automation purposes
 gpg --batch --gen-key <<EOF
 %no-protection

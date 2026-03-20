@@ -68,6 +68,7 @@ If you send logs to Loki via OTLP (Loki 3.0+), trace_id should be preserved auto
 
 ```yaml
 # Loki configuration
+
 limits_config:
   allow_structured_metadata: true
 

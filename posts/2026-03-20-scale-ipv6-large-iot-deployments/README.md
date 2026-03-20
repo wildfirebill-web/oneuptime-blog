@@ -8,7 +8,7 @@ Description: Scale IPv6 infrastructure for large IoT deployments with thousands 
 
 ## Introduction
 
-Scaling IPv6 for large IoT deployments — think 10,000+ sensors, multiple sites, and 24/7 uptime requirements — requires careful planning of prefix hierarchies, high-availability DHCPv6, automated IPAM, and monitoring at scale. This guide covers the architectural patterns for large-scale IPv6 IoT.
+Scaling IPv6 for large IoT deployments - think 10,000+ sensors, multiple sites, and 24/7 uptime requirements - requires careful planning of prefix hierarchies, high-availability DHCPv6, automated IPAM, and monitoring at scale. This guide covers the architectural patterns for large-scale IPv6 IoT.
 
 ## Scaling Challenges
 
@@ -20,7 +20,7 @@ Scaling IPv6 for large IoT deployments — think 10,000+ sensors, multiple sites
 
 ## Prefix Hierarchy for 10,000+ Devices
 
-```
+```text
 ISP delegated: /32
 └── Organization /40
     └── Region-1 /48
@@ -91,6 +91,7 @@ ISP delegated: /32
 ```python
 #!/usr/bin/env python3
 # provision_iot_subnet.py
+
 # Automated IPv6 subnet provisioning via NetBox API
 
 import requests
@@ -191,4 +192,4 @@ print(json.dumps(targets))
 
 ## Conclusion
 
-Scaling IPv6 for large IoT deployments requires a hierarchical prefix allocation strategy, high-availability DHCPv6 with clustered backends, automated IPAM provisioning via API, NDP proxy for large segments, and dynamic monitoring target generation. The key architectural principle is treating IPv6 address management as infrastructure code — provision, track, and audit all addresses programmatically to avoid manual errors and maintain consistent documentation as the fleet grows.
+Scaling IPv6 for large IoT deployments requires a hierarchical prefix allocation strategy, high-availability DHCPv6 with clustered backends, automated IPAM provisioning via API, NDP proxy for large segments, and dynamic monitoring target generation. The key architectural principle is treating IPv6 address management as infrastructure code - provision, track, and audit all addresses programmatically to avoid manual errors and maintain consistent documentation as the fleet grows.

@@ -34,6 +34,7 @@ Using CloudWatch:
 
 ```bash
 # Check replica lag for all reader instances
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/RDS \
   --metric-name AuroraReplicaLag \

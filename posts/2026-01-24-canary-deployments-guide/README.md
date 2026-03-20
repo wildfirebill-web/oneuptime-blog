@@ -77,6 +77,7 @@ Implement canary deployments using native Kubernetes resources.
 
 ```yaml
 # canary-deployment.yaml - Kubernetes native canary deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

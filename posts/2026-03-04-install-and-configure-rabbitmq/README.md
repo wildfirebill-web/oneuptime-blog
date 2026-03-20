@@ -70,6 +70,7 @@ wget http://localhost:15672/cli/rabbitmqadmin
 chmod +x rabbitmqadmin
 
 # Declare a queue
+
 ./rabbitmqadmin declare queue name=test-queue durable=true
 
 # Publish a message

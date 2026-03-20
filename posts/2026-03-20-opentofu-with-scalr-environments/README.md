@@ -8,7 +8,7 @@ Description: Learn how to use Scalr environments to organize OpenTofu workspaces
 
 ## Introduction
 
-Scalr Environments group related workspaces and provide a boundary for policy enforcement, variable sharing, and access control. They map naturally to your organizational structure — one environment per team or application domain.
+Scalr Environments group related workspaces and provide a boundary for policy enforcement, variable sharing, and access control. They map naturally to your organizational structure - one environment per team or application domain.
 
 ## Creating Environments
 
@@ -19,6 +19,7 @@ provider "scalr" {
 }
 
 # Environment per team/application
+
 resource "scalr_environment" "platform" {
   name       = "platform-team"
   account_id = var.scalr_account_id

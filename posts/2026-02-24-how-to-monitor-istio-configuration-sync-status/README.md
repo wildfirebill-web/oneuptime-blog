@@ -55,6 +55,7 @@ Istiod exposes several Prometheus metrics that track configuration distribution:
 
 ```promql
 # Total number of xDS pushes
+
 pilot_xds_pushes
 
 # Number of push errors

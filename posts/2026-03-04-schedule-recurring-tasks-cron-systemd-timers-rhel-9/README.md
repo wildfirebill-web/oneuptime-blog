@@ -20,6 +20,7 @@ Each cron entry has five time fields followed by the command:
 
 ```bash
 # minute  hour  day-of-month  month  day-of-week  command
+
   0       2     *             *      *            /opt/scripts/backup.sh
 ```
 

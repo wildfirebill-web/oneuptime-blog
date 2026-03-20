@@ -22,6 +22,7 @@ Podman runs containers without root by default. This means container processes m
 
 ```bash
 # Run a container as your regular user
+
 podman run -d --name web nginx
 
 # Check the host-level process
@@ -211,7 +212,7 @@ podman run -d -p 127.0.0.1:8080:80 --name web nginx
 # Only accessible from localhost, not from other machines
 ```
 
-## Resource Limits
+Resource Limits
 
 Prevent containers from consuming excessive resources:
 

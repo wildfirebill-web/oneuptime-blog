@@ -18,6 +18,7 @@ When migrating from Docker Compose to podman-compose, subtle differences in nami
 
 ```bash
 # Default podman-compose naming
+
 podman-compose up -d
 podman ps --format "{{.Names}}"
 # Output: projectname_web_1

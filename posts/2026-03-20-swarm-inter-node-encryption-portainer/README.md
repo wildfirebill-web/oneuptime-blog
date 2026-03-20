@@ -1,8 +1,8 @@
-# How to Set Up Swarm Inter-Node Encryption in Portainer
+# How to Set Up Swarm Inter-Node Encryption in Portainer - Inter Node
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Encryption, Security, Overlay Networks
+Tags: Portainer, Docker Swarm, Encryption, Security, Overlay Network
 
 Description: Enable Docker Swarm inter-node traffic encryption for overlay networks managed through Portainer to protect container-to-container communication across nodes.
 
@@ -20,6 +20,7 @@ In Portainer's terminal or via stack YAML:
 
 ```bash
 # Create an encrypted overlay network via CLI
+
 docker network create \
   --driver overlay \
   --opt encrypted=true \
@@ -63,7 +64,7 @@ docker network inspect secure-backend | grep -i encrypted
 
 ## Step 4: Performance Considerations
 
-Encryption adds CPU overhead for IPsec processing — typically 5-15% on modern hardware. For workloads where performance is critical and traffic is already protected by application-layer TLS (HTTPS), the additional overlay encryption may be redundant.
+Encryption adds CPU overhead for IPsec processing - typically 5-15% on modern hardware. For workloads where performance is critical and traffic is already protected by application-layer TLS (HTTPS), the additional overlay encryption may be redundant.
 
 Recommendation:
 - **Enable** for networks carrying unencrypted database traffic or internal API calls

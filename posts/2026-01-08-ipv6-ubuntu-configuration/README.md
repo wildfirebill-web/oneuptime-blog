@@ -52,6 +52,7 @@ Every IPv6-enabled interface automatically generates a link-local address (fe80:
 
 ```bash
 # Link-local addresses are always present
+
 ip -6 addr show | grep fe80
 ```
 

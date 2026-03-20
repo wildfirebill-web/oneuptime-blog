@@ -27,6 +27,7 @@ In Talos Linux, you can add labels to nodes through the machine configuration. T
 
 ```yaml
 # talos-machine-config-patch.yaml
+
 # Add custom labels to the node through machine config
 machine:
   nodeLabels:

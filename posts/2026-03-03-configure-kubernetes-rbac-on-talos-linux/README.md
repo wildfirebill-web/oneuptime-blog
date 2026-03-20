@@ -29,6 +29,7 @@ On Talos Linux, Kubernetes RBAC is enabled by default. Verify it is active:
 
 ```bash
 # Check the API server flags
+
 talosctl -n 10.0.1.10 read /etc/kubernetes/manifests/kube-apiserver.yaml | \
   grep authorization-mode
 # Should show: --authorization-mode=Node,RBAC

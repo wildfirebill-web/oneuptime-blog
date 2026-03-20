@@ -76,6 +76,7 @@ Start by installing ArgoCD in your cluster. The following commands set up a prod
 
 ```bash
 # Add the ArgoCD Helm repository
+
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 

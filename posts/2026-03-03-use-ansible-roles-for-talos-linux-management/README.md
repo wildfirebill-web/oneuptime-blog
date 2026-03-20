@@ -81,6 +81,7 @@ This role handles generating and managing Talos cluster secrets:
 
 ```yaml
 # roles/talos-secrets/defaults/main.yml
+
 secrets_output_path: "{{ playbook_dir }}/files/secrets"
 talos_version: "v1.7.0"
 force_regenerate_secrets: false

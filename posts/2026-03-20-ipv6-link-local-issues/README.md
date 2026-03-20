@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Link-Local, Troubleshooting, fe80, Scope IDs, NDP
+Tags: IPv6, Link-Local, Troubleshooting, Fe80, Scope ID, NDP
 
 Description: Diagnose and fix IPv6 link-local address issues including missing fe80 addresses, scope ID requirements, and routing problems with fe80::/10 prefixes.
 
@@ -14,6 +14,7 @@ IPv6 link-local addresses (`fe80::/10`) are automatically assigned to every IPv6
 
 ```bash
 # Show all link-local addresses
+
 ip -6 addr show scope link
 
 # Show link-local for specific interface
@@ -52,7 +53,7 @@ ip -6 addr show dev eth0 | grep "scope link"
 Link-local addresses require a scope ID when used in commands or URLs:
 
 ```bash
-# Ping a link-local address — must specify interface
+# Ping a link-local address - must specify interface
 ping6 fe80::1%eth0
 # The %eth0 is the scope ID
 
@@ -169,4 +170,4 @@ done < <(ip -6 route show default)
 
 ## Conclusion
 
-IPv6 link-local addresses are fundamental to IPv6 operation — without them, NDP and router discovery cannot function. Verify their existence with `ip -6 addr show scope link`. When using link-local addresses in commands or applications, always include the scope ID (`%eth0`) since link-local addresses are not globally unique. The most common link-local issue is forgetting the scope ID, which causes "network is unreachable" errors even when the address exists and the device is reachable.
+IPv6 link-local addresses are fundamental to IPv6 operation - without them, NDP and router discovery cannot function. Verify their existence with `ip -6 addr show scope link`. When using link-local addresses in commands or applications, always include the scope ID (`%eth0`) since link-local addresses are not globally unique. The most common link-local issue is forgetting the scope ID, which causes "network is unreachable" errors even when the address exists and the device is reachable.

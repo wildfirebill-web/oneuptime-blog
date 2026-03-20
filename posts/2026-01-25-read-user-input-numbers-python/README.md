@@ -16,6 +16,7 @@ When you read input with `input()`, you get a string regardless of what the user
 
 ```python
 # This does not work as expected
+
 age = input("Enter your age: ")
 print(type(age))  # <class 'str'>
 

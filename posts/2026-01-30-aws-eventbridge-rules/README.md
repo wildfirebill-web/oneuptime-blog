@@ -68,6 +68,7 @@ Event patterns define which events trigger a rule. Here is a basic pattern that 
 
 ```bash
 # Create an EventBridge rule that matches EC2 state changes
+
 aws events put-rule \
   --name "ec2-state-change-rule" \
   --event-pattern '{

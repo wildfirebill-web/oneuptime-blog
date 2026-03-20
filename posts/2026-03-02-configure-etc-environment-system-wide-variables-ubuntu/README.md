@@ -29,6 +29,7 @@ Variables set here are NOT available to:
 
 ```bash
 # View the current /etc/environment
+
 cat /etc/environment
 ```
 

@@ -18,6 +18,7 @@ The single largest Terraform anti-pattern is managing all resources in one state
 
 ```hcl
 # ANTI-PATTERN: Everything in one state
+
 # infrastructure/
 #   main.tf        # 3000 lines, all resources
 #   terraform.tfstate  # Massive state file

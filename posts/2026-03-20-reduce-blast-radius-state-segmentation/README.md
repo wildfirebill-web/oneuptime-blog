@@ -48,7 +48,7 @@ graph TD
 
 ## Implementation: Directory Structure
 
-```
+```text
 infrastructure/
 ├── foundation/         → VPC, subnets, routing (run rarely)
 │   ├── main.tf
@@ -59,7 +59,7 @@ infrastructure/
 ├── data/               → RDS, ElastiCache (data team)
 │   ├── main.tf
 │   └── backend.tf      → key: "data/tofu.tfstate"
-└── applications/       → ECS, Lambda (app teams — daily changes)
+└── applications/       → ECS, Lambda (app teams - daily changes)
     ├── main.tf
     └── backend.tf      → key: "applications/tofu.tfstate"
 ```
@@ -67,7 +67,8 @@ infrastructure/
 ## Protecting High-Risk Segments
 
 ```hcl
-# data/main.tf — protect stateful resources from accidental destruction
+# data/main.tf - protect stateful resources from accidental destruction
+
 resource "aws_db_instance" "main" {
   identifier        = "prod-postgres"
   instance_class    = "db.r5.large"
@@ -86,7 +87,7 @@ resource "aws_db_instance" "main" {
 # .github/workflows/opentofu.yml
 jobs:
   plan-applications:
-    # Runs on every PR — daily change rate
+    # Runs on every PR - daily change rate
     paths:
       - "infrastructure/applications/**"
 
@@ -107,4 +108,4 @@ jobs:
 
 ## Conclusion
 
-State segmentation is the most effective way to reduce blast radius in OpenTofu. Segment by lifecycle rate, ownership, and risk profile. Protect stateful segments with `prevent_destroy` and require additional approvals for high-impact segments. The goal is that a junior engineer's daily deploy can never accidentally destroy a production database — not because of human vigilance but because the database is in a completely separate state file.
+State segmentation is the most effective way to reduce blast radius in OpenTofu. Segment by lifecycle rate, ownership, and risk profile. Protect stateful segments with `prevent_destroy` and require additional approvals for high-impact segments. The goal is that a junior engineer's daily deploy can never accidentally destroy a production database - not because of human vigilance but because the database is in a completely separate state file.

@@ -20,6 +20,7 @@ The Podman system service has an idle timeout that controls how long it runs wit
 
 ```bash
 # Start the service with a 60-second idle timeout (default)
+
 podman system service --time 60
 
 # Run the service indefinitely (no timeout)

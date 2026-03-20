@@ -18,6 +18,7 @@ CircleCI orbs are reusable packages of configuration. The official Terraform orb
 
 ```yaml
 # .circleci/config.yml
+
 version: 2.1
 
 # Import the Terraform orb
@@ -390,7 +391,7 @@ workflows:
             - plan-dev
 ```
 
-## Resource Classes for Performance
+Resource Classes for Performance
 
 Use larger resource classes for plans that process many resources:
 

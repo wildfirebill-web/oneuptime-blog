@@ -68,6 +68,7 @@ Different workloads need different cooldown periods.
 
 ```yaml
 # Short cooldown for highly variable traffic
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

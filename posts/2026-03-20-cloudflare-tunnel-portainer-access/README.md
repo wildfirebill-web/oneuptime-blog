@@ -24,6 +24,7 @@ Cloudflare Tunnel (formerly Argo Tunnel) creates an outbound-only encrypted conn
 
 ```bash
 # Install cloudflared
+
 curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64   -o /usr/local/bin/cloudflared
 chmod +x /usr/local/bin/cloudflared
 
@@ -93,4 +94,4 @@ This adds an authentication layer in front of Portainer itself.
 
 ## Summary
 
-Create a Cloudflare Tunnel and configure it to forward traffic from `portainer.example.com` to `https://localhost:9443`. Deploy `cloudflared` as a Docker container in a Portainer stack with `TUNNEL_TOKEN`. No inbound firewall ports are required — all traffic flows outbound through Cloudflare's network. Add Cloudflare Access policies for additional authentication before reaching Portainer.
+Create a Cloudflare Tunnel and configure it to forward traffic from `portainer.example.com` to `https://localhost:9443`. Deploy `cloudflared` as a Docker container in a Portainer stack with `TUNNEL_TOKEN`. No inbound firewall ports are required - all traffic flows outbound through Cloudflare's network. Add Cloudflare Access policies for additional authentication before reaching Portainer.

@@ -14,6 +14,7 @@ Connecting an Ubuntu machine to an OpenVPN server is straightforward once you ha
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install OpenVPN client

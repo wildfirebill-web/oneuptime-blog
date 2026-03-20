@@ -20,6 +20,7 @@ When Terraform calls an external data source, it passes a JSON object on stdin. 
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

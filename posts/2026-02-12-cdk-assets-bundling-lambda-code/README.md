@@ -118,6 +118,7 @@ For Python Lambda functions, the `PythonFunction` construct from `@aws-cdk/aws-l
 
 ```bash
 # Install the Python Lambda construct library
+
 npm install @aws-cdk/aws-lambda-python-alpha
 ```
 

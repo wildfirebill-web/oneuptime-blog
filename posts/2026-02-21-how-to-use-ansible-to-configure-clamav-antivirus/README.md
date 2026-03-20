@@ -24,6 +24,7 @@ This playbook installs ClamAV and its update daemon on both Debian and RHEL syst
 
 ```yaml
 # install_clamav.yml - Install ClamAV antivirus
+
 ---
 - name: Install ClamAV
   hosts: all

@@ -36,6 +36,7 @@ ip link set bond0 up
 
 ```bash
 # Create a bridge
+
 ip link add br0 type bridge
 
 # Add the bond as the bridge's uplink
@@ -124,4 +125,4 @@ bridge fdb show br br0
 
 ## Conclusion
 
-Combining a bridge with a bond gives virtual machines both L2 connectivity to the physical network and link redundancy. The bridge aggregates VM tap interfaces with the bond uplink. If the active bond slave fails, the bond switches to the backup slave transparently — the bridge and all VM connections remain unaffected.
+Combining a bridge with a bond gives virtual machines both L2 connectivity to the physical network and link redundancy. The bridge aggregates VM tap interfaces with the bond uplink. If the active bond slave fails, the bond switches to the backup slave transparently - the bridge and all VM connections remain unaffected.

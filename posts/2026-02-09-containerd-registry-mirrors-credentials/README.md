@@ -45,6 +45,7 @@ Restart containerd to apply changes.
 sudo systemctl restart containerd
 
 # Verify configuration
+
 sudo crictl info | jq '.config.registry'
 ```
 

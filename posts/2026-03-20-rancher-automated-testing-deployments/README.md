@@ -1,8 +1,8 @@
-# How to Set Up Automated Testing for Rancher Deployments
+# How to Set Up Automated Testing for Rancher Deployments - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, testing, automation, ci-cd, helm, kubernetes
+Tags: Rancher, Testing, Automation, Ci-cd, Helm, Kubernetes
 
 Description: A guide to setting up automated testing pipelines for Rancher cluster deployments, covering smoke tests, integration tests, and deployment validation.
 
@@ -25,6 +25,7 @@ Helm provides a built-in testing mechanism using test hooks:
 
 ```yaml
 # templates/tests/connection-test.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -287,4 +288,4 @@ targets:
 
 ## Conclusion
 
-Automated testing for Rancher deployments should cover multiple layers: Helm chart tests validate chart correctness, smoke tests verify cluster health after provisioning, integration tests validate application behavior in real clusters, and deployment validation confirms rollouts succeed. Kind provides fast, ephemeral test environments for CI/CD pipelines, while Rancher Fleet canary deployments provide staged rollouts with validation gates. Invest in building this testing infrastructure early — the time saved debugging production issues will far outweigh the implementation cost.
+Automated testing for Rancher deployments should cover multiple layers: Helm chart tests validate chart correctness, smoke tests verify cluster health after provisioning, integration tests validate application behavior in real clusters, and deployment validation confirms rollouts succeed. Kind provides fast, ephemeral test environments for CI/CD pipelines, while Rancher Fleet canary deployments provide staged rollouts with validation gates. Invest in building this testing infrastructure early - the time saved debugging production issues will far outweigh the implementation cost.

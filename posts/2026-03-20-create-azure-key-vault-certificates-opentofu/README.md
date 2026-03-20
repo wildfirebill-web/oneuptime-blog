@@ -60,6 +60,7 @@ resource "azurerm_key_vault_certificate" "self_signed" {
 
 ```hcl
 # First, add DigiCert as a certificate issuer
+
 resource "azurerm_key_vault_certificate_issuer" "digicert" {
   name          = "DigiCert"
   key_vault_id  = azurerm_key_vault.main.id
@@ -157,7 +158,7 @@ resource "azurerm_role_assignment" "agw_cert_reader" {
 
 ```hcl
 output "certificate_secret_id" {
-  description = "Secret ID for the certificate — used by App Gateway and App Service"
+  description = "Secret ID for the certificate - used by App Gateway and App Service"
   value       = azurerm_key_vault_certificate.self_signed.secret_id
 }
 

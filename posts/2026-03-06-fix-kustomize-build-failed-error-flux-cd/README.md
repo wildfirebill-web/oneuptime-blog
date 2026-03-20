@@ -18,6 +18,7 @@ The error appears in the Kustomization resource status:
 
 ```bash
 # Check the Kustomization status
+
 flux get kustomizations -A
 
 # Get the detailed error message

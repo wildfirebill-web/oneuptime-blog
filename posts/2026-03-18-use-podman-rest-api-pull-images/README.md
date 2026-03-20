@@ -20,6 +20,7 @@ Pull an image by sending a POST request to the images pull endpoint.
 
 ```bash
 # Pull the latest nginx image from Docker Hub
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   "http://localhost/v4.0.0/libpod/images/pull?reference=docker.io/library/nginx:latest"

@@ -20,6 +20,7 @@ Before dataclasses, creating simple data-holding classes required writing repeti
 
 ```python
 # basic_dataclass.py
+
 # Creating a simple dataclass
 from dataclasses import dataclass
 

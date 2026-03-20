@@ -28,6 +28,7 @@ Auto-update is powerful, but deploying a broken image can take down your service
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web app with auto-update rollback
 

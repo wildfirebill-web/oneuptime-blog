@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, Broadcast, DHCP, Network Security
 
-Description: Limited broadcast (255.255.255.255) stays on the local segment while directed broadcast targets all hosts in a specific subnet, and understanding the distinction is critical for DHCP design and preventing amplification attacks.
+Description: Limited broadcast (255.255.255.255) stays on the local segment while directed broadcast targets all hosts in a specific subnet, and understanding the distinction is critical for DHCP design and...
 
 ## Side-by-Side Comparison
 
@@ -18,11 +18,11 @@ Description: Limited broadcast (255.255.255.255) stays on the local segment whil
 
 ## Limited Broadcast (255.255.255.255)
 
-The limited broadcast is used when a host doesn't know its network address. It is always local — every router discards it rather than forwarding it.
+The limited broadcast is used when a host doesn't know its network address. It is always local - every router discards it rather than forwarding it.
 
 **Main protocol that relies on limited broadcast: DHCP Discover**
 
-```
+```text
 Client (0.0.0.0) --DHCP Discover--> 255.255.255.255
 (Router does NOT forward this)
 ```
@@ -33,6 +33,7 @@ A directed broadcast is the last address of a specific subnet. Routers *could* f
 
 ```bash
 # Check if directed broadcast forwarding is enabled (Linux router)
+
 cat /proc/sys/net/ipv4/conf/eth1/bc_forwarding
 # 0 = disabled (secure default)
 

@@ -78,6 +78,7 @@ The real power of project subscriptions shows when you have multiple projects fo
 
 ```yaml
 # Production project - high urgency alerts
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

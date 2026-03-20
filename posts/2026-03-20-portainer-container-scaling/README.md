@@ -1,4 +1,4 @@
-# How to Build an Automated Container Scaling System with Portainer
+# How to Build an Automated Container Scaling System with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -51,6 +51,7 @@ class ScalingPolicy:
 
 
 # Define scaling policies for your services
+
 SCALING_POLICIES = {
     "myapp_web": ScalingPolicy("myapp_web", min_replicas=2, max_replicas=10),
     "myapp_api": ScalingPolicy("myapp_api", min_replicas=2, max_replicas=8),

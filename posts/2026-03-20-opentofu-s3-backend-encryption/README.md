@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS, Security
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS, Security
 
 Description: Learn how to configure server-side encryption for OpenTofu state files stored in S3, including AES-256 and KMS-based encryption options.
 
 ## Introduction
 
-S3 server-side encryption protects state files at rest in the S3 bucket. OpenTofu's S3 backend supports both AES-256 (SSE-S3) and KMS-based encryption (SSE-KMS). This is separate from OpenTofu's native state encryption — server-side encryption protects data in S3, while native state encryption encrypts before sending to S3.
+S3 server-side encryption protects state files at rest in the S3 bucket. OpenTofu's S3 backend supports both AES-256 (SSE-S3) and KMS-based encryption (SSE-KMS). This is separate from OpenTofu's native state encryption - server-side encryption protects data in S3, while native state encryption encrypts before sending to S3.
 
 ## AES-256 Encryption (SSE-S3)
 
-The simplest option — AWS manages the keys automatically:
+The simplest option - AWS manages the keys automatically:
 
 ```hcl
 terraform {

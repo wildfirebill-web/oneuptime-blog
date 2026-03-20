@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Prometheus, Container Monitoring, CAdvisor, Metrics
+Tags: RHEL, Podman, Prometheus, Container Monitoring, cAdvisor, Metrics
 
 Description: Monitor Podman container resource usage on RHEL by exposing container metrics to Prometheus using cAdvisor or the Podman API and Prometheus exporters.
 
@@ -16,6 +16,7 @@ cAdvisor (Container Advisor) collects container metrics and exposes them for Pro
 
 ```bash
 # Run cAdvisor as a Podman container
+
 # It reads cgroup data from the host to monitor all containers
 sudo podman run -d \
     --name cadvisor \

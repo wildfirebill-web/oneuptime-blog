@@ -20,6 +20,7 @@ Here is the simplest example:
 
 ```yaml
 # install a package using sudo (become escalates to root by default)
+
 ---
 - name: Install packages with sudo
   hosts: webservers

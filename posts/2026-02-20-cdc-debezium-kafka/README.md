@@ -30,6 +30,7 @@ Debezium reads the database's write-ahead log (WAL) or binary log, converts each
 
 ```bash
 # Install the Strimzi Kafka operator
+
 kubectl create namespace kafka
 kubectl apply -f https://strimzi.io/install/latest?namespace=kafka
 

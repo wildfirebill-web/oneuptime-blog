@@ -126,6 +126,7 @@ Test your implementation by sending requests with different Accept headers.
 
 ```bash
 # Request JSON format (most common)
+
 curl -H "Accept: application/json" http://localhost:3000/api/users
 
 # Request XML format for legacy system integration

@@ -16,6 +16,7 @@ The `content` block is required inside every dynamic block. Putting attributes d
 
 ```hcl
 # WRONG - attributes directly in the dynamic block
+
 dynamic "ingress" {
   for_each = var.rules
   from_port   = ingress.value.port  # This will not work

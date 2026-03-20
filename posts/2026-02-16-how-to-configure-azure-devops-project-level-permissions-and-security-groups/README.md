@@ -60,6 +60,7 @@ Go to Project Settings, then Permissions. Click "New Group" and fill in:
 
 ```bash
 # Create a custom security group using the Azure DevOps CLI
+
 az devops security group create \
   --name "Senior Engineers" \
   --description "Senior engineers with elevated permissions for code review and deployment" \

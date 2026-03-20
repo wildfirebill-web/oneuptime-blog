@@ -14,6 +14,7 @@ Burp Suite is the standard tool for web application penetration testing. It acts
 
 ```bash
 # Download Burp Suite Community Edition from PortSwigger
+
 # Visit: https://portswigger.net/burp/communitydownload
 
 # Or download via command line

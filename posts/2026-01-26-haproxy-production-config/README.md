@@ -66,6 +66,7 @@ On Debian/Ubuntu systems, install the latest stable version from the official PP
 
 ```bash
 # Add the HAProxy PPA for the latest stable release
+
 sudo add-apt-repository ppa:vbernat/haproxy-2.8
 
 # Update package lists and install

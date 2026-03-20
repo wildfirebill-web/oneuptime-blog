@@ -18,6 +18,7 @@ Without conventions, teams independently choose attribute names:
 
 ```text
 # Team A
+
 service: "payment-api"
 request_path: "/api/charge"
 response_code: 200

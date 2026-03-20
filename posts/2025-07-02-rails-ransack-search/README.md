@@ -89,6 +89,7 @@ Add Ransack to your Gemfile:
 # Gemfile
 
 # Ransack - Object-based searching
+
 gem 'ransack', '~> 4.1'
 
 # Optional but recommended for pagination

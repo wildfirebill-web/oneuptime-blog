@@ -27,6 +27,7 @@ First, assign the custom domain to the application.
 
 ```bash
 # Add a custom domain to the application
+
 az spring app custom-domain bind \
   --app order-service \
   --service my-spring-service \

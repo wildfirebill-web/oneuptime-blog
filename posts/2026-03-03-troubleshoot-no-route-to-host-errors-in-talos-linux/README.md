@@ -29,6 +29,7 @@ Start by examining the node's routing table:
 
 ```bash
 # View all routes on the node
+
 talosctl -n <node-ip> get routes
 ```
 

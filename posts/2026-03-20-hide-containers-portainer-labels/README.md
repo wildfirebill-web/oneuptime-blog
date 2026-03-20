@@ -14,12 +14,12 @@ Portainer supports a label-based mechanism to exclude specific containers from a
 
 Add the following label to any container you want hidden from Portainer:
 
-```
+```text
 io.portainer.agent.hide=true
 ```
 
 Alternatively, for the blacklisted label setting:
-```
+```text
 com.docker.compose.oneoff=true
 ```
 
@@ -27,6 +27,7 @@ com.docker.compose.oneoff=true
 
 ```bash
 # Start a container with the hide label
+
 # This container will not appear in Portainer's container list
 docker run -d \
   --name my-agent \

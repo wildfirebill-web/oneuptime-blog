@@ -25,6 +25,7 @@ Heartbeat is a synthetic monitor - it actively reaches out to check endpoints, r
 
 ```bash
 # Add the Elastic APT repository
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 

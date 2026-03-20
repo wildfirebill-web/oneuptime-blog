@@ -27,6 +27,7 @@ First, prepare and add the new disk to the volume group:
 
 ```bash
 # Initialize the new disk as a PV
+
 sudo pvcreate /dev/sdd
 
 # Add it to the existing volume group

@@ -29,6 +29,7 @@ Amazon Managed Prometheus provides a Prometheus-compatible metrics backend witho
 
 ```hcl
 # metrics.tf - Prometheus workspace
+
 resource "aws_prometheus_workspace" "main" {
   alias = "${var.project_name}-metrics"
 

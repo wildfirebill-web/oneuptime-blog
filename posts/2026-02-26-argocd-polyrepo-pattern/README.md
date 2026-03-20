@@ -91,6 +91,7 @@ Register all service repos with ArgoCD. You can do this through the UI, CLI, or 
 
 ```bash
 # Register repos via CLI
+
 argocd repo add https://github.com/org/service-a-config.git \
   --ssh-private-key-path ~/.ssh/id_rsa \
   --name service-a

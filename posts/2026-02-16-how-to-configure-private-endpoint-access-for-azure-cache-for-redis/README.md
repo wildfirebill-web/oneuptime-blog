@@ -52,6 +52,7 @@ If you already have a VNet, skip to Step 2. Otherwise, create one.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-redis-private --location eastus
 
 # Create a virtual network with a default subnet

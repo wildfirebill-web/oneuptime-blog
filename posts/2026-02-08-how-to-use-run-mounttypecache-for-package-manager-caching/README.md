@@ -24,6 +24,7 @@ The basic syntax looks like this:
 FROM debian:bookworm-slim
 
 # The cache mount persists /var/cache/apt between builds
+
 RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && apt-get install -y curl
 ```

@@ -24,6 +24,7 @@ This command shows the NUMA node configuration and available memory per node:
 
 ```bash
 # Display NUMA hardware topology
+
 numactl --hardware
 ```
 

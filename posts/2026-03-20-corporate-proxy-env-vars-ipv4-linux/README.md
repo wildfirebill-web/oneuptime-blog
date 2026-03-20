@@ -14,6 +14,7 @@ A corporate proxy intercepts and controls internet traffic. Most Linux command-l
 
 ```bash
 # Lowercase (most tools)
+
 export http_proxy="http://proxy.corp.example.com:3128"
 export https_proxy="http://proxy.corp.example.com:3128"
 export ftp_proxy="http://proxy.corp.example.com:3128"
@@ -48,7 +49,7 @@ source ~/.bashrc
 ## System-Wide Configuration (All Users)
 
 ```bash
-# /etc/environment — read at login for all users
+# /etc/environment - read at login for all users
 sudo tee -a /etc/environment << 'EOF'
 http_proxy="http://proxy.corp.example.com:3128"
 https_proxy="http://proxy.corp.example.com:3128"

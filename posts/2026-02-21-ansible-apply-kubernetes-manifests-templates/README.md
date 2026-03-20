@@ -31,6 +31,7 @@ Create the template file:
 
 ```yaml
 # templates/deployment.yml.j2
+
 # Jinja2 template for a Kubernetes Deployment
 apiVersion: apps/v1
 kind: Deployment

@@ -27,6 +27,7 @@ Bitbucket Cloud identifies webhooks by UUID rather than a shared secret:
 
 ```bash
 # Generate a UUID for Bitbucket Cloud webhook identification
+
 BITBUCKET_UUID=$(python3 -c "import uuid; print(str(uuid.uuid4()))")
 echo "Your Bitbucket UUID: $BITBUCKET_UUID"
 ```

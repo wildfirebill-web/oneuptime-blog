@@ -65,6 +65,7 @@ Swarm provides built-in secrets management. Secrets are encrypted at rest and on
 
 ```bash
 # Create a secret from stdin (pipe to avoid shell history)
+
 echo "supersecret" | docker secret create pg_password -
 
 # Create a config from a file (non-sensitive configuration)

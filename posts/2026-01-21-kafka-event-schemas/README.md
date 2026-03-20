@@ -187,6 +187,7 @@ class OrderCreatedEvent(DomainEvent):
         self.metadata.source = "order-service"
 
 # Usage
+
 event = OrderCreatedEvent(
     order_id="order-123",
     customer_id="customer-456",

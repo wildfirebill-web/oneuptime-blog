@@ -29,6 +29,7 @@ Before running chaos, document what "healthy" looks like for each service. Store
 
 ```yaml
 # clusters/my-cluster/resilience/hypotheses/api-server-slo.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

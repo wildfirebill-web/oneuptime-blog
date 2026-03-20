@@ -30,6 +30,7 @@ During Duplicate Address Detection, the MN uses `::` as the source before the ad
 
 ```bash
 # Capture DAD Neighbor Solicitations (source = ::)
+
 sudo tcpdump -i eth0 -n "icmp6 and ip6[8]=0"
 # ip6[8]=0 means IPv6 hop limit = 255, used for NDP
 # More specifically: src :: in DAD
@@ -53,7 +54,7 @@ sudo tcpdump -i eth0 -n "udp port 546 or udp port 547" -v | \
 ```python
 import socket
 
-# Wildcard bind — listens on ALL IPv6 interfaces
+# Wildcard bind - listens on ALL IPv6 interfaces
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
 
@@ -79,10 +80,10 @@ def create_server(port: int, ipv6_only: bool = True):
     server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     if ipv6_only:
-        # IPv6 only — :: only matches IPv6 connections
+        # IPv6 only - :: only matches IPv6 connections
         server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 1)
     else:
-        # Dual-stack — :: also accepts IPv4 via IPv4-mapped
+        # Dual-stack - :: also accepts IPv4 via IPv4-mapped
         server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
 
     server.bind(("::", port, 0, 0))
@@ -143,4 +144,4 @@ def is_valid_peer_address(addr: str) -> bool:
 
 ## Conclusion
 
-The IPv6 unspecified address `::` plays a specific protocol role during address initialization. When used as a socket bind address (wildcard), it means "all interfaces" — a semantically different use. Applications must not use `::` as a destination or peer address. Use OneUptime's validation checks to detect services inadvertently binding to `::` in production when `::1` was intended.
+The IPv6 unspecified address `::` plays a specific protocol role during address initialization. When used as a socket bind address (wildcard), it means "all interfaces" - a semantically different use. Applications must not use `::` as a destination or peer address. Use OneUptime's validation checks to detect services inadvertently binding to `::` in production when `::1` was intended.

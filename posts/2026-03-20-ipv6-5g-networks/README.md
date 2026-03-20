@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, 5G, Mobile Networks, 3GPP, PDU Session, NR, SA, NSA
+Tags: IPv6, 5G, Mobile Networks, 3GPP, PDU Session, NR, SAS, NSA
 
 Description: Understand IPv6 addressing in 5G standalone and non-standalone networks, PDU session types, 5G network slicing with IPv6, and how UE devices receive IPv6 addresses over 5G.
 
@@ -12,7 +12,7 @@ Description: Understand IPv6 addressing in 5G standalone and non-standalone netw
 
 ## 5G IPv6 Architecture
 
-```
+```text
 5G IPv6 Network Architecture:
 
 UE (User Equipment)
@@ -34,7 +34,7 @@ PDU Session Types:
 
 ## 5G IPv6 Address Assignment
 
-```
+```text
 How UE Gets IPv6 in 5G:
 
 1. UE initiates PDU Session Establishment
@@ -56,7 +56,7 @@ Typical 5G IPv6 addresses:
 
 ## 3GPP 5G IPv6 PDU Session
 
-```
+```text
 PDU Session Establishment (simplified):
 UE → gNB → AMF → SMF
 PDU Session Establishment Request:
@@ -83,6 +83,7 @@ UE uses SLAAC to form: 2001:db8:5g:ue1::device-eui/64
 
 ```bash
 # Android device (via adb)
+
 adb shell
 
 # Check 5G interfaces
@@ -110,7 +111,7 @@ mmcli -b /org/freedesktop/ModemManager1/Bearer/0
 
 ## 5G Network Slicing with IPv6
 
-```
+```text
 Network Slices and IPv6:
 Each network slice can have different IPv6 addressing:
 

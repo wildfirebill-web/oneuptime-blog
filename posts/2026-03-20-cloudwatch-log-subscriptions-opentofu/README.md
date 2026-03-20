@@ -20,6 +20,7 @@ CloudWatch Log Subscription Filters stream log events matching a filter pattern 
 
 ```hcl
 # Lambda function to process log events
+
 resource "aws_lambda_function" "log_processor" {
   filename         = "log_processor.zip"
   function_name    = "${var.project_name}-log-processor"
@@ -132,4 +133,4 @@ aws logs describe-subscription-filters \
 
 ## Conclusion
 
-Log subscription filters enable real-time log routing without modifying application code. Use Lambda destinations for custom enrichment or routing logic, Kinesis Streams for buffering with multiple consumers, and Kinesis Firehose for direct S3 delivery with built-in compression and partitioning. Each log group supports up to two subscription filters, so plan your routing strategy—consider filtering at the pattern level to avoid sending noise to expensive destinations.
+Log subscription filters enable real-time log routing without modifying application code. Use Lambda destinations for custom enrichment or routing logic, Kinesis Streams for buffering with multiple consumers, and Kinesis Firehose for direct S3 delivery with built-in compression and partitioning. Each log group supports up to two subscription filters, so plan your routing strategy-consider filtering at the pattern level to avoid sending noise to expensive destinations.

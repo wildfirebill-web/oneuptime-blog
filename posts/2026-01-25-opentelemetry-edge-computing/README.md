@@ -55,6 +55,7 @@ The recommended architecture uses a two-tier collector setup:
 
 ```yaml
 # edge-collector-config.yaml
+
 receivers:
   otlp:
     protocols:
@@ -379,7 +380,7 @@ service:
       exporters: [otlphttp]
 ```
 
-## Resource Limits for Edge Devices
+Resource Limits for Edge Devices
 
 Set appropriate resource limits based on device capabilities:
 

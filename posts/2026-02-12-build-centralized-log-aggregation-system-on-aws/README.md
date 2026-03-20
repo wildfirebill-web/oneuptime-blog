@@ -360,6 +360,7 @@ For simpler setups, CloudWatch's built-in cross-account observability might be e
 
 ```bash
 # Enable cross-account observability in the monitoring account
+
 aws cloudwatch put-metric-data-account-policy \
   --policy-name "CrossAccountSharing" \
   --policy-document '{"Statement":[{"Effect":"Allow","Principal":{"AWS":["111111111111","222222222222"]},"Action":["cloudwatch:PutMetricData"],"Resource":"*"}]}'

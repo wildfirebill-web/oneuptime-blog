@@ -38,6 +38,7 @@ The file format is: `regex_pattern  action  [message]`
 # /etc/postfix/header_checks - Postfix header check rules
 
 # Block messages with no Subject header
+
 /^Subject:.*$/ WARN
 
 # Reject messages with suspicious executable attachments

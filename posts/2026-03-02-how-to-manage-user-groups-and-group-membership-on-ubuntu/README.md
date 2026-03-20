@@ -16,6 +16,7 @@ Every user has a primary group (set at account creation) and can belong to addit
 
 ```bash
 # See your current user's groups
+
 id
 # uid=1000(alice) gid=1000(alice) groups=1000(alice),4(adm),24(cdrom),27(sudo),1001(developers)
 

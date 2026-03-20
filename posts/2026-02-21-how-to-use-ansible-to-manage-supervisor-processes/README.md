@@ -321,6 +321,7 @@ Deploy a program group:
   notify: Update Supervisor
 
 # Manage the entire group
+
 - name: Restart the entire application group
   community.general.supervisorctl:
     name: "myapp:"

@@ -30,6 +30,7 @@ Inspect block allocation and utilization:
 
 ```bash
 # Show all IP blocks allocated per node
+
 calicoctl ipam show --show-blocks
 
 # Get a summary of utilization across all IP pools

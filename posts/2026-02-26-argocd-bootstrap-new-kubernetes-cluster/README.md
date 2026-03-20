@@ -44,6 +44,7 @@ The first step is always manual - you need ArgoCD before ArgoCD can manage thing
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD (use a specific version for reproducibility)

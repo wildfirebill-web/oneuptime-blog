@@ -23,6 +23,7 @@ sudo podman run -d --name default-test docker.io/library/alpine sleep 3600
 sudo podman container checkpoint default-test
 
 # Container is now stopped
+
 sudo podman ps  # default-test will not appear
 ```
 

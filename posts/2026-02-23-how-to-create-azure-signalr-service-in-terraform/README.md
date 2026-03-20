@@ -56,6 +56,7 @@ resource "azurerm_resource_group" "realtime" {
 }
 
 # Create the SignalR Service instance
+
 resource "azurerm_signalr_service" "main" {
   name                = "sigr-prod-eastus-001"
   location            = azurerm_resource_group.realtime.location

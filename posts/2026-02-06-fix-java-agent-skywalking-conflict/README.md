@@ -28,6 +28,7 @@ Check your JVM startup flags for multiple `-javaagent` entries:
 
 ```bash
 # Look for multiple agents
+
 ps aux | grep javaagent
 
 # You might see:

@@ -8,7 +8,7 @@ Description: Configure Squid delay pools to limit bandwidth consumption per IPv4
 
 ## Introduction
 
-Squid delay pools throttle download speeds for specific clients or content types. Rather than dropping connections, delay pools add artificial latency to enforce bandwidth limits—useful for corporate proxies where fair-use policies need enforcement.
+Squid delay pools throttle download speeds for specific clients or content types. Rather than dropping connections, delay pools add artificial latency to enforce bandwidth limits-useful for corporate proxies where fair-use policies need enforcement.
 
 ## Delay Pool Types
 
@@ -26,6 +26,7 @@ Squid delay pools throttle download speeds for specific clients or content types
 http_port 10.0.0.1:3128
 
 # Access control
+
 acl internal src 10.0.0.0/8
 http_access allow internal
 http_access deny all

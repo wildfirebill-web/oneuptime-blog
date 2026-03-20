@@ -24,6 +24,7 @@ Here is a simple example using the built-in `File` DSC resource.
 
 ```yaml
 # basic-dsc.yml - Use a DSC resource through Ansible
+
 ---
 - name: Use DSC resources through Ansible
   hosts: windows_servers

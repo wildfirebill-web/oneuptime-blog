@@ -34,6 +34,7 @@ Verify whether your cluster has PSA enabled:
 
 ```bash
 # Check the Kubernetes version (PSA is stable in 1.25+)
+
 kubectl version --short
 
 # Check namespace labels for existing PSA configuration

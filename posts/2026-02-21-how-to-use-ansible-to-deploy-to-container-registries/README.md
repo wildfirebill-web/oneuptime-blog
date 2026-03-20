@@ -18,6 +18,7 @@ The simplest registry to work with is Docker Hub. Ansible's community.docker col
 
 ```bash
 # Install the Docker collection
+
 ansible-galaxy collection install community.docker
 ```
 

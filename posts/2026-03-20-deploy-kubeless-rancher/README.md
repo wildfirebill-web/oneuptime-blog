@@ -1,8 +1,8 @@
-# How to Deploy Kubeless on Rancher
+# How to Deploy Kubeless on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, kubeless, serverless, kubernetes, functions
+Tags: Rancher, Kubeless, Serverless, Kubernetes, Functions
 
 Description: Guide to deploying Kubeless serverless framework on Rancher for Kubernetes-native function execution.
 
@@ -14,6 +14,7 @@ Kubeless is a Kubernetes-native serverless framework that leverages Kubernetes C
 
 ```bash
 # Create kubeless namespace
+
 kubectl create namespace kubeless
 
 # Install Kubeless

@@ -61,6 +61,7 @@ The sync dialog shows all resources with checkboxes. You can:
 
 ```bash
 # Sync the application to the latest Git revision
+
 argocd app sync my-app
 ```
 

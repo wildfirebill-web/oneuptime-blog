@@ -74,6 +74,7 @@ Before setting up Cluster Autoscaler:
 
 ```yaml
 # cluster-autoscaler.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

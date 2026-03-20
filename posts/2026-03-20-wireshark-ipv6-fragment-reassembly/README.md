@@ -12,6 +12,7 @@ IPv6 fragmentation is performed only by the source host (not intermediate router
 
 ```wireshark
 # Show all packets with IPv6 Fragment extension header
+
 ipv6.fraghdr
 
 # Show only FIRST fragment (offset=0, more fragments=1)

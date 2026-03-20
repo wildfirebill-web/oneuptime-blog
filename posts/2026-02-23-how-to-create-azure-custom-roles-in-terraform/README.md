@@ -16,6 +16,7 @@ This guide walks through creating custom Azure RBAC roles in Terraform with real
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

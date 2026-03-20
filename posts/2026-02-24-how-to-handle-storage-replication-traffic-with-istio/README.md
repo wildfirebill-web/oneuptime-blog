@@ -168,6 +168,7 @@ Even if you bypass the sidecar for replication traffic, you can still monitor it
 
 ```bash
 # Check replication connection counts
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'istio_tcp_connections_opened_total{destination_service="cassandra.storage.svc.cluster.local",destination_port="7000"}'

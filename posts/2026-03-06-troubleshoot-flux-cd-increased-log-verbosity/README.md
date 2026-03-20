@@ -25,6 +25,7 @@ The simplest way to enable verbose logging is during the initial Flux bootstrap:
 
 ```bash
 # Bootstrap with debug logging enabled globally
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

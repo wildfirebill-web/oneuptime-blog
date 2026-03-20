@@ -68,6 +68,7 @@ OpenRASP provides open-source RASP for Java, PHP, and Node.js. Here is how to in
 
 ```dockerfile
 # Dockerfile with OpenRASP agent
+
 FROM openjdk:17-slim
 
 # Download and extract OpenRASP agent

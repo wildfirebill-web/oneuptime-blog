@@ -16,7 +16,7 @@ The `file` function in OpenTofu reads the contents of a file and returns it as a
 file(path)
 ```
 
-- **path** — absolute or module-relative path to the file
+- **path** - absolute or module-relative path to the file
 - Returns the file contents as a UTF-8 string
 - Raises an error if the file does not exist
 
@@ -100,6 +100,7 @@ tofu console
 
 > file("./README.md")
 # Returns file contents
+
 ```
 
 ## file vs templatefile

@@ -14,6 +14,7 @@ GCP Security Command Center (SCC) is a risk dashboard and threat intelligence pl
 
 ```hcl
 # main.tf - Enable SCC at organization level
+
 resource "google_security_center_organization_security_health_analytics_custom_module" "scc" {
   organization = var.org_id
 }

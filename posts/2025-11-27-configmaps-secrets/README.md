@@ -21,6 +21,7 @@ ConfigMaps can be created from files (for structured config like YAML/JSON) or l
 
 ```bash
 # Generate a ConfigMap manifest from a config file and a literal value
+
 # --from-file loads the entire file as a single key
 # --from-literal creates a simple key=value entry
 kubectl create configmap api-config \

@@ -134,6 +134,7 @@ Co-locate multiple related services together:
 
 ```yaml
 # Deploy cache first
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

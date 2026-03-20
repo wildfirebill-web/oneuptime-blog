@@ -562,6 +562,7 @@ Track transform processor performance and errors:
 
 ```bash
 # Query collector metrics
+
 curl http://localhost:8888/metrics | grep transform
 
 # Key metrics:

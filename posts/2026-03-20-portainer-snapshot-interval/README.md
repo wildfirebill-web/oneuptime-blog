@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, configuration, snapshots, performance, monitoring
+Tags: Portainer, Configuration, Snapshot, Performance, Monitoring
 
 Description: A guide to configuring Portainer's environment snapshot interval to balance freshness with performance overhead.
 
 ## Overview
 
-Portainer polls connected environments (Docker hosts, Kubernetes clusters) at a regular interval to capture their state (running containers, images, volumes, etc.) — called a "snapshot". The default interval is 60 seconds. Adjusting this interval lets you balance data freshness against the overhead of polling many environments.
+Portainer polls connected environments (Docker hosts, Kubernetes clusters) at a regular interval to capture their state (running containers, images, volumes, etc.) - called a "snapshot". The default interval is 60 seconds. Adjusting this interval lets you balance data freshness against the overhead of polling many environments.
 
 ## Prerequisites
 
@@ -34,10 +34,10 @@ These snapshots are what Portainer displays in its dashboards.
 4. Click **Save settings**
 
 Common values:
-- `30` — High-frequency polling (heavier load)
-- `60` — Default, good for most environments
-- `300` — Low-frequency for many environments or limited resources
-- `3600` — Hourly, for static or less dynamic environments
+- `30` - High-frequency polling (heavier load)
+- `60` - Default, good for most environments
+- `300` - Low-frequency for many environments or limited resources
+- `3600` - Hourly, for static or less dynamic environments
 
 ## Method 2: Configure via API
 
@@ -46,6 +46,7 @@ PORTAINER_URL="https://portainer.example.com:9443"
 TOKEN="your-admin-token"
 
 # Set snapshot interval to 120 seconds
+
 curl -X PUT \
   "${PORTAINER_URL}/api/settings" \
   -H "Authorization: Bearer ${TOKEN}" \

@@ -29,6 +29,7 @@ Never run Flask's built-in development server in production. Use Gunicorn or uWS
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim AS base
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1

@@ -34,6 +34,7 @@ Your CodeBuild project needs to build the container image, push it to ECR, and t
 
 ```yaml
 # buildspec.yml
+
 version: 0.2
 
 env:

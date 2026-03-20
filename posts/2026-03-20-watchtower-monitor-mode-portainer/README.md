@@ -1,4 +1,4 @@
-# How to Use Watchtower Monitor-Only Mode with Portainer
+# How to Use Watchtower Monitor-Only Mode with Portainer - Mode
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to run Watchtower in monitor-only mode alongside Portaine
 
 ## What Is Monitor-Only Mode?
 
-Monitor-only mode tells Watchtower to check for new images and notify you when updates are available — but not to apply them. You decide when to update, and Portainer's image update feature applies them.
+Monitor-only mode tells Watchtower to check for new images and notify you when updates are available - but not to apply them. You decide when to update, and Portainer's image update feature applies them.
 
 This is ideal for:
 - Production environments where changes need approval
@@ -19,6 +19,7 @@ This is ideal for:
 
 ```yaml
 # In Portainer: Stacks > Add Stack > watchtower-monitor
+
 version: "3.8"
 
 services:
@@ -28,7 +29,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      # Monitor only — never update
+      # Monitor only - never update
       - WATCHTOWER_MONITOR_ONLY=true
       # Check every 6 hours
       - WATCHTOWER_POLL_INTERVAL=21600
@@ -96,7 +97,7 @@ docker run --rm \
 
 Output example:
 
-```
+```text
 level=debug msg="Found new registry image for myapp/frontend:latest"
 level=info msg="Skipping container update (monitor only): frontend"
 ```
@@ -106,7 +107,7 @@ level=info msg="Skipping container update (monitor only): frontend"
 | Mode | Notification Content |
 |------|---------------------|
 | Update mode | "Updated containers: webapp (v1 → v2)" |
-| Monitor mode | "Updates available: webapp (v1 → v2) — not applied" |
+| Monitor mode | "Updates available: webapp (v1 → v2) - not applied" |
 
 ## Combining with Portainer Webhooks
 
@@ -120,4 +121,4 @@ This gives you awareness from Watchtower and control through Portainer.
 
 ## Conclusion
 
-Watchtower in monitor-only mode bridges the gap between fully manual and fully automated updates. Your team gets proactive alerts when images need updating, but updates only happen when deliberately triggered through Portainer — preserving the change control process while eliminating the need to manually check for new images.
+Watchtower in monitor-only mode bridges the gap between fully manual and fully automated updates. Your team gets proactive alerts when images need updating, but updates only happen when deliberately triggered through Portainer - preserving the change control process while eliminating the need to manually check for new images.

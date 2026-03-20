@@ -1,4 +1,4 @@
-# How to Schedule Automatic Backups in Portainer Business Edition
+# How to Schedule Automatic Backups in Portainer Business Edition - Business
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ For GitOps or infrastructure-as-code workflows, configure backups via the API:
 
 ```bash
 # First, log in to get a JWT token
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \

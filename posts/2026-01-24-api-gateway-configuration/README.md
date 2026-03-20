@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, Microservices, Kong, NGINX, AWS API Gateway, Rate Limiting, Authentication, Routing
+Tags: API Gateway, Microservices, Kong, Nginx, AWS API Gateway, Rate Limiting, Authentication, Routing
 
 Description: Learn how to configure API gateways effectively, including routing, rate limiting, authentication, and common troubleshooting patterns.
 
@@ -52,6 +52,7 @@ Kong is a popular open-source API gateway. Here is how to configure it properly.
 
 ```yaml
 # kong.yaml - Declarative configuration
+
 _format_version: "3.0"
 _transform: true
 

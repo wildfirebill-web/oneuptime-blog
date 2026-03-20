@@ -108,6 +108,7 @@ class NotificationSubscriber:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 publisher = NotificationPublisher(r)
 

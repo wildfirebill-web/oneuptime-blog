@@ -78,6 +78,7 @@ For each resource, you need to measure both **utilization** (how much is being u
 
 ```promql
 # CPU utilization percentage per instance
+
 # This calculates how much CPU time is spent on actual work
 # by subtracting idle time from 100%
 100 - (

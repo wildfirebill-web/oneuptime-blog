@@ -29,6 +29,7 @@ Deliver monitoring components to each edge cluster through Flux.
 
 ```yaml
 # infrastructure/base/monitoring/helmrelease.yaml
+
 # Deploy kube-prometheus-stack to edge clusters
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

@@ -25,6 +25,7 @@ This all happens automatically. You do not need to manually register nodes or ma
 
 ```bash
 # View the node's own identity as seen by the discovery service
+
 talosctl get kubespanidentity --nodes <node-ip>
 
 # View all members the node has discovered

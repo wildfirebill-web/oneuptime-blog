@@ -59,6 +59,7 @@ SELECT pg_cancel_backend(pid);
 
 ```bash
 # Check logs for deadlock details
+
 grep -A 20 "deadlock detected" /var/log/postgresql/*.log
 ```
 

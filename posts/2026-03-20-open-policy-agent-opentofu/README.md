@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, OPA, Policy as Code, Security, Infrastructure as Code, Compliance
 
-Description: Learn how to use Open Policy Agent (OPA) with OpenTofu to enforce infrastructure policies — preventing insecure configurations from reaching production before a single resource is created.
+Description: Learn how to use Open Policy Agent (OPA) with OpenTofu to enforce infrastructure policies - preventing insecure configurations from reaching production before a single resource is created.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Open Policy Agent (OPA) is a general-purpose policy engine that evaluates JSON i
 
 ```bash
 # Install conftest
+
 brew install conftest   # macOS
 # or
 curl -LO https://github.com/open-policy-agent/conftest/releases/latest/download/conftest_linux_amd64.tar.gz
@@ -138,4 +139,4 @@ conftest test tfplan.json --policy policies/
 
 ## Conclusion
 
-OPA with conftest provides pre-apply policy enforcement for OpenTofu — a security gate that catches misconfigurations before they reach production. Write policies for your most critical rules (no public S3, required tags, no unrestricted SSH), run them in CI on every PR, and block merges when policies are violated. Policies-as-code scale better than security reviews done manually.
+OPA with conftest provides pre-apply policy enforcement for OpenTofu - a security gate that catches misconfigurations before they reach production. Write policies for your most critical rules (no public S3, required tags, no unrestricted SSH), run them in CI on every PR, and block merges when policies are violated. Policies-as-code scale better than security reviews done manually.

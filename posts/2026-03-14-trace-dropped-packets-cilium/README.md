@@ -29,6 +29,7 @@ Hubble is the fastest way to see dropped packets with context:
 
 ```bash
 # View all drops across the cluster
+
 hubble observe --verdict DROPPED
 
 # Filter drops for a specific destination pod

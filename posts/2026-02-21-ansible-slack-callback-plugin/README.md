@@ -27,6 +27,7 @@ Install the community.general collection if you do not have it:
 
 ```bash
 # Install the collection containing the slack callback
+
 ansible-galaxy collection install community.general
 ```
 

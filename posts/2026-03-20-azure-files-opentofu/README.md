@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure Files, SMB, NFS, Storage, Infrastructure as Code
 
-Description: Learn how to configure Azure Files with OpenTofu — creating file shares, configuring SMB and NFS protocols, private endpoints, Azure File Sync, and mounting shares on Azure VMs.
+Description: Learn how to configure Azure Files with OpenTofu - creating file shares, configuring SMB and NFS protocols, private endpoints, Azure File Sync, and mounting shares on Azure VMs.
 
 ## Introduction
 
@@ -48,10 +48,11 @@ resource "azurerm_storage_account" "files" {
 
 ```hcl
 # SMB file share (Windows compatible)
+
 resource "azurerm_storage_share" "app_data" {
   name                 = "app-data"
   storage_account_name = azurerm_storage_account.files.name
-  quota                = 100  # GB — soft quota (Premium)
+  quota                = 100  # GB - soft quota (Premium)
   enabled_protocol     = "SMB"
 
   acl {
@@ -205,4 +206,4 @@ output "nfs_mount_path" {
 
 ## Conclusion
 
-Azure Files with OpenTofu provides managed SMB and NFS file shares without server administration. Use Premium tier (`account_kind = "FileStorage"`) for sub-millisecond latency required by workloads migrating from local NAS. Deploy private endpoints so all file access stays within the VNet — never traversing the internet. Use Azure AD Kerberos authentication (`authentication_types = ["Kerberos"]`) for user-level access control instead of storage account keys, enabling per-user audit trails in Azure Monitor.
+Azure Files with OpenTofu provides managed SMB and NFS file shares without server administration. Use Premium tier (`account_kind = "FileStorage"`) for sub-millisecond latency required by workloads migrating from local NAS. Deploy private endpoints so all file access stays within the VNet - never traversing the internet. Use Azure AD Kerberos authentication (`authentication_types = ["Kerberos"]`) for user-level access control instead of storage account keys, enabling per-user audit trails in Azure Monitor.

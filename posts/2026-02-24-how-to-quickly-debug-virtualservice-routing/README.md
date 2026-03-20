@@ -63,6 +63,7 @@ Istio evaluates VirtualService routes in order from top to bottom, and the first
 
 ```yaml
 # BAD - the first route catches everything
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

@@ -1,4 +1,4 @@
-# OpenTofu vs Pulumi: Choosing the Right IaC Tool
+# OpenTofu vs Pulumi: Choosing the Right IaC Tool - Choice
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -103,6 +103,7 @@ Both work, but complex logic is often more natural in a full programming languag
 
 ```hcl
 # Native test framework
+
 run "s3_bucket_created" {
   assert {
     condition     = aws_s3_bucket.assets["dev-us-east-1"].bucket == "mycompany-dev-us-east-1-assets"

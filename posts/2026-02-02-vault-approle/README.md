@@ -40,6 +40,7 @@ Before implementing AppRole, ensure you have Vault installed and running. Here w
 
 ```bash
 # Start Vault in development mode (for testing only)
+
 vault server -dev
 
 # In another terminal, export the Vault address

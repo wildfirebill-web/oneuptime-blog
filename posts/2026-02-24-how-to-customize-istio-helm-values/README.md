@@ -18,6 +18,7 @@ Every Istio Helm chart has a large set of configurable values. Start by dumping 
 
 ```bash
 # Istiod chart values
+
 helm show values istio/istiod > istiod-defaults.yaml
 
 # Gateway chart values

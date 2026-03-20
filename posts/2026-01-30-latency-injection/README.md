@@ -242,6 +242,7 @@ class LatencyInjector:
 
 
 # Create a global injector for the application
+
 latency_injector = LatencyInjector(
     delay_ms=2000,
     jitter_ms=500,

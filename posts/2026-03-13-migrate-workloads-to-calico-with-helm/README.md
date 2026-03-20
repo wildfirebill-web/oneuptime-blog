@@ -32,6 +32,7 @@ Add and update the Tigera operator Helm repository:
 
 ```bash
 # Add the Calico Helm repository
+
 helm repo add projectcalico https://docs.tigera.io/calico/charts
 
 # Update the local Helm chart cache

@@ -50,6 +50,7 @@ module "vpc" {
 
 ```hcl
 # IAM role for the EKS control plane
+
 resource "aws_iam_role" "eks_cluster" {
   name = "${var.cluster_name}-cluster-role"
 

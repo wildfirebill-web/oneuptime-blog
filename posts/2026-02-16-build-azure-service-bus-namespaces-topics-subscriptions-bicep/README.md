@@ -281,6 +281,7 @@ Deploy the whole stack with a single Azure CLI command.
 
 ```bash
 # Deploy the complete Service Bus infrastructure
+
 az deployment group create \
   --resource-group rg-messaging-prod \
   --template-file main.bicep \

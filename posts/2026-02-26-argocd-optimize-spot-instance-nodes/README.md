@@ -34,6 +34,7 @@ Every ArgoCD-managed application on spot instances needs a PodDisruptionBudget (
 
 ```yaml
 # pdb.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

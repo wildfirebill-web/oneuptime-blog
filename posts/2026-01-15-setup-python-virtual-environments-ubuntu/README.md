@@ -20,6 +20,7 @@ Different projects often require different versions of the same package. For exa
 
 ```bash
 # Without virtual environments, this becomes a nightmare:
+
 # Project A needs: Django==4.2, requests==2.28
 # Project B needs: Django==5.0, requests==2.31
 # Installing one breaks the other!

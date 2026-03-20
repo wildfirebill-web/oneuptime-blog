@@ -51,6 +51,7 @@ First, install the core OpenTelemetry packages for Python. These are required re
 
 ```python
 # Install core OpenTelemetry packages
+
 # pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 from opentelemetry import trace, metrics

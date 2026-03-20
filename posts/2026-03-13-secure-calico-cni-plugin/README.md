@@ -26,6 +26,7 @@ CNI configuration files are critical - an attacker who can modify them could dis
 
 ```bash
 # Verify file permissions on nodes
+
 kubectl debug node/worker-1 -it --image=ubuntu -- \
   ls -la /host/etc/cni/net.d/10-calico.conflist
 # Should be: -rw-r--r-- root root (644)

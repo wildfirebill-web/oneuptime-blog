@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Static IP, IPv4, Virtual Machines, NIC, Networking
+Tags: Azure, Static IP, IPv4, Virtual Machine, NIC, Networking
 
 Description: Assign static private and public IPv4 addresses to Azure virtual machines using the Azure CLI by configuring the VM's network interface IP configuration.
 
@@ -18,6 +18,7 @@ By default, Azure assigns dynamic private IP addresses to VM NICs. The IP can ch
 RESOURCE_GROUP="my-network-rg"
 
 # Create a NIC with a static private IP
+
 az network nic create \
   --resource-group $RESOURCE_GROUP \
   --name vm-nic \

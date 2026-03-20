@@ -8,11 +8,11 @@ Description: Learn how to configure Wireshark coloring rules to visually highlig
 
 ## Why Coloring Rules Matter
 
-In large packet captures with thousands of frames, finding problems manually is time-consuming. Wireshark's coloring rules automatically highlight packets based on filter expressions, so errors visually stand out — red for TCP problems, yellow for warnings, etc.
+In large packet captures with thousands of frames, finding problems manually is time-consuming. Wireshark's coloring rules automatically highlight packets based on filter expressions, so errors visually stand out - red for TCP problems, yellow for warnings, etc.
 
 ## Step 1: Access Coloring Rules
 
-```
+```text
 In Wireshark:
 View → Coloring Rules...
 (or Ctrl+Alt+C)
@@ -26,7 +26,7 @@ The Coloring Rules dialog shows:
 
 ## Step 2: Built-in Default Coloring Rules
 
-```
+```text
 Wireshark ships with these default rules:
 
 Bad TCP        → tcp.analysis.flags          (black on red)
@@ -41,7 +41,7 @@ TCP RST        → tcp.flags.reset == 1         (red)
 
 ## Step 3: Create Custom Coloring Rules for IPv4 Errors
 
-```
+```text
 To add a new rule:
 1. Open Coloring Rules (View → Coloring Rules)
 2. Click "+" or "New"
@@ -53,7 +53,7 @@ To add a new rule:
 Recommended rules for IPv4 troubleshooting:
 ```
 
-```
+```text
 Rule: TCP Retransmission
 Filter: tcp.analysis.retransmission
 Background: #FF4444 (bright red)
@@ -93,7 +93,7 @@ Meaning: DHCP assignment denied
 
 ## Step 4: Export and Import Coloring Rules
 
-```
+```python
 Export rules for sharing with team:
 View → Coloring Rules → Export...
 Save as: network-troubleshooting.colorfilters
@@ -103,8 +103,9 @@ View → Coloring Rules → Import...
 Select: network-troubleshooting.colorfilters
 ```
 
-```
+```text
 # Wireshark stores coloring rules in:
+
 # Linux: ~/.config/wireshark/colorfilters
 # macOS: ~/Library/Application Support/Wireshark/colorfilters
 # Windows: %APPDATA%\Wireshark\colorfilters
@@ -117,7 +118,7 @@ Select: network-troubleshooting.colorfilters
 
 ## Step 5: Apply Temporary Color Rules with View → Colorize Conversation
 
-```
+```text
 Quick temporary coloring (no rule needed):
 1. Click on a packet from a specific host
 2. View → Colorize Conversation → IP
@@ -133,7 +134,7 @@ Clear with: View → Colorize Conversation → Reset Coloring
 
 ## Step 6: Combine Coloring with Other Analysis
 
-```
+```text
 Scenario: Finding slow HTTP responses with color:
 
 Rule: Slow HTTP Response
@@ -157,7 +158,7 @@ Meaning: Successful HTTP response
 
 ## Step 7: Useful IPv4 Coloring Rule Set
 
-```
+```text
 Complete set for IPv4 network troubleshooting:
 
 Priority 1 (Red - Critical):

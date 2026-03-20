@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, tofu output, CLI, Infrastructure as Code, DevOps, Scripting
+Tags: OpenTofu, Outputs, Tofu output, CLI, Infrastructure as Code, DevOps, Scripting
 
 Description: Learn how to use the tofu output command to read and extract output values from your infrastructure state for use in scripts and downstream automation.
 
 ---
 
-`tofu output` reads output values from your current state and displays them in the terminal. It's the primary way to extract infrastructure values — like IP addresses, endpoint URLs, and resource IDs — for use in scripts, configuration files, or passing to other tools.
+`tofu output` reads output values from your current state and displays them in the terminal. It's the primary way to extract infrastructure values - like IP addresses, endpoint URLs, and resource IDs - for use in scripts, configuration files, or passing to other tools.
 
 ---
 
@@ -16,6 +16,7 @@ Description: Learn how to use the tofu output command to read and extract output
 
 ```bash
 # Show all output values
+
 tofu output
 
 # Example output:
@@ -43,7 +44,7 @@ tofu output instance_public_ip
 ## Raw Output (No Quotes)
 
 ```bash
-# Get raw value without surrounding quotes — useful in scripts
+# Get raw value without surrounding quotes - useful in scripts
 tofu output -raw instance_public_ip
 # 54.23.45.67
 
@@ -115,7 +116,7 @@ tofu output -json database_connection_string
 
 ```bash
 #!/bin/bash
-# deploy-app.sh — use tofu outputs to configure application deployment
+# deploy-app.sh - use tofu outputs to configure application deployment
 
 # Get infrastructure values
 DB_ENDPOINT=$(tofu output -raw database_endpoint)

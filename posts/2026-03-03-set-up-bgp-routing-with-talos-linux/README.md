@@ -38,6 +38,7 @@ MetalLB is the most common way to add BGP capabilities to a Kubernetes cluster.
 
 ```bash
 # Install MetalLB using Helm
+
 helm repo add metallb https://metallb.github.io/metallb
 helm repo update
 

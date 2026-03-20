@@ -52,6 +52,7 @@ flowchart TB
 
 ```bash
 # Register a device as an IoT Edge device in IoT Hub
+
 az iot hub device-identity create \
     --hub-name iothub-production-001 \
     --device-id edge-gateway-001 \

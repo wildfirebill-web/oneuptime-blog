@@ -23,6 +23,7 @@ graph TD
 
 ```hcl
 # dns.tf
+
 resource "azurerm_resource_group" "dns" {
   name     = "rg-dns-${var.environment}"
   location = var.location
@@ -156,7 +157,7 @@ resource "azurerm_private_endpoint" "storage" {
 
 ```hcl
 output "dns_name_servers" {
-  description = "Azure DNS name servers — configure these at your registrar"
+  description = "Azure DNS name servers - configure these at your registrar"
   value       = azurerm_dns_zone.main.name_servers
 }
 ```
@@ -164,7 +165,7 @@ output "dns_name_servers" {
 ## Best Practices
 
 - After creating an Azure DNS zone, update your domain registrar's NS records with the Azure name servers shown in `name_servers` output.
-- Create Private DNS zones for all Azure PaaS services accessed via Private Endpoints — without them, DNS resolution bypasses Private Endpoints and routes through the public internet.
+- Create Private DNS zones for all Azure PaaS services accessed via Private Endpoints - without them, DNS resolution bypasses Private Endpoints and routes through the public internet.
 - Enable `registration_enabled = true` on private zone VNet links to auto-register VMs with their hostnames.
 - Use TTL of 60s for records that may change (ALB endpoints, database failovers) and 300-3600s for stable records.
 - Manage DNS records for all environments from the same zone via naming conventions (`app-dev`, `app-staging`, `app`) rather than separate zones per environment.

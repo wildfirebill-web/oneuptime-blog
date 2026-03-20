@@ -82,6 +82,7 @@ spec:
 
 ```bash
 # Drop rate (policy violations or dataplane issues)
+
 cilium_drop_count_total
 
 # Endpoint policy calculation time

@@ -38,6 +38,7 @@ Export your Pulumi state to understand what resources exist:
 
 ```bash
 # Export the Pulumi stack state
+
 pulumi stack export --stack my-stack > pulumi-state.json
 
 # List all resources in the stack

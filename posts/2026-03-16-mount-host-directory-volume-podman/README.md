@@ -18,6 +18,7 @@ Sometimes you need containers to access files directly from the host filesystem.
 
 ```bash
 # Mount a host directory into a container
+
 podman run --rm -v /path/on/host:/path/in/container alpine:latest ls /path/in/container
 ```
 

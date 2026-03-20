@@ -32,6 +32,7 @@ Update an existing GKE cluster to enable network policy enforcement:
 
 ```bash
 # Enable network policy on an existing cluster (requires node pool recreation)
+
 gcloud container clusters update my-gke-cluster \
   --update-addons=NetworkPolicy=ENABLED \
   --zone=us-central1-a

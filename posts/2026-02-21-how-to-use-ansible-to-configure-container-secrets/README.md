@@ -30,6 +30,7 @@ Docker Swarm has a native secrets management feature:
 
 ```yaml
 # roles/container_secrets/tasks/swarm_secrets.yml
+
 # Manage Docker Swarm secrets
 - name: Create Docker secrets
   community.docker.docker_secret:

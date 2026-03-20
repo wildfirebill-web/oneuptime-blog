@@ -27,6 +27,7 @@ Talos Linux allows you to configure firewall rules at the node level through the
 
 ```yaml
 # machine-config-firewall.yaml
+
 # Configure node-level firewall rules for network segmentation
 machine:
   network:

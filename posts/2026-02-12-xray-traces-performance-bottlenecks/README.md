@@ -32,6 +32,7 @@ X-Ray lets you filter traces with a query language called filter expressions. Th
 
 ```bash
 # Find traces where total response time exceeded 5 seconds
+
 aws xray get-trace-summaries \
   --start-time $(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \

@@ -46,6 +46,7 @@ Choose which nodes will originate BGP announcements and label them.
 
 ```bash
 # Label nodes designated for ingress traffic.
+
 # These are the only nodes that will announce service IPs via BGP.
 kubectl label node node-1 node-role=ingress
 kubectl label node node-2 node-role=ingress

@@ -41,6 +41,7 @@ The kernel boots directly into machined as PID 1. There is no systemd, no init s
 
 ```bash
 # Check the kernel version running on a Talos node
+
 talosctl -n 10.0.0.11 version
 
 # View kernel parameters

@@ -1,4 +1,4 @@
-# How to Configure RKE2 FIPS Compliance Mode
+# How to Configure RKE2 FIPS Compliance Mode - Mode
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ FIPS mode must be enabled at the OS level before installing RKE2:
 
 ```bash
 # Enable FIPS on RHEL/CentOS/Rocky Linux
+
 sudo fips-mode-setup --enable
 sudo reboot
 
@@ -118,5 +119,5 @@ profile: cis-1.23
 ## Best Practices
 
 - Purchase SUSE's FIPS-validated Rancher Prime subscription for formal compliance documentation.
-- Test FIPS mode in a non-production environment first — some third-party software may break due to algorithm restrictions.
+- Test FIPS mode in a non-production environment first - some third-party software may break due to algorithm restrictions.
 - Document your crypto module versions and certification numbers for auditors.

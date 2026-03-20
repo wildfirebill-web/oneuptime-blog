@@ -32,6 +32,7 @@ The recommended approach for most applications:
 
 ```ini
 # ~/.config/containers/systemd/database.container
+
 [Unit]
 Description=PostgreSQL with readiness notification
 

@@ -72,6 +72,7 @@ First, add the official Cilium Helm chart repository to your Helm installation:
 
 ```bash
 # Add the Cilium Helm repository
+
 helm repo add cilium https://helm.cilium.io/
 
 # Update your local Helm chart repository cache

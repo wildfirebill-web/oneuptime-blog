@@ -22,6 +22,7 @@ Flux CD operates entirely through Kubernetes custom resources and the `flux` CLI
 
 ```bash
 # Flux CD bootstrap - everything starts from the CLI
+
 # This command sets up Flux and connects it to your Git repository
 flux bootstrap github \
   --owner=your-org \

@@ -16,6 +16,7 @@ Set it per play:
 
 ```yaml
 # debug-example.yml - Use the debug strategy
+
 ---
 - name: Deploy with debugging
   hosts: webservers

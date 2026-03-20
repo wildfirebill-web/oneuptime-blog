@@ -43,6 +43,7 @@ resource "aws_vpc" "shared" {
 }
 
 # Public subnets for NAT gateways and internet-facing resources
+
 resource "aws_subnet" "public" {
   count                   = length(var.availability_zones)
   vpc_id                  = aws_vpc.shared.id

@@ -30,6 +30,7 @@ First, create the backend services (assuming you already have instance groups an
 
 ```bash
 # Create backend services for each of the three services
+
 gcloud compute backend-services create web-frontend \
     --protocol=HTTP --health-checks=http-check --global
 

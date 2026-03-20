@@ -12,7 +12,7 @@ Cisco IOS uses Modular QoS CLI (MQC) for traffic shaping, policing, and prioriti
 
 Class maps identify traffic based on matching criteria:
 
-```
+```text
 ! Match VoIP traffic (RTP on common port range and DSCP EF)
 class-map match-any VOIP
  match ip dscp ef
@@ -33,7 +33,7 @@ class-map match-any MANAGEMENT
 
 Policy maps define what to do with traffic that matches each class:
 
-```
+```text
 ! Define the QoS policy
 policy-map WAN-QOS
 
@@ -59,7 +59,7 @@ policy-map WAN-QOS
 
 ## Step 3: Apply the Policy to an Interface
 
-```
+```text
 interface GigabitEthernet0/0
  description WAN Link
  ip address 203.0.113.1 255.255.255.252
@@ -69,7 +69,7 @@ interface GigabitEthernet0/0
 
 For inbound policing:
 
-```
+```text
 policy-map INBOUND-POLICE
  class class-default
   police rate 50000000 bps
@@ -84,7 +84,7 @@ interface GigabitEthernet0/0
 
 Mark traffic at the edge router so downstream devices honor the markings:
 
-```
+```text
 policy-map DSCP-MARKING
  class VOIP
   set ip dscp ef
@@ -102,7 +102,7 @@ interface GigabitEthernet0/1
 
 ## Verification Commands
 
-```
+```text
 ! View all QoS policy configurations
 show policy-map
 
@@ -121,7 +121,7 @@ clear counters GigabitEthernet0/0
 
 ## Sample Output of show policy-map interface
 
-```
+```text
 GigabitEthernet0/0
   Service-policy output: WAN-QOS
 

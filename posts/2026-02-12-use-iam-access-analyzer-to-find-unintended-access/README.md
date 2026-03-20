@@ -47,6 +47,7 @@ Create an analyzer for your account:
 
 ```bash
 # Create an account-level analyzer
+
 aws accessanalyzer create-analyzer \
   --analyzer-name my-account-analyzer \
   --type ACCOUNT \

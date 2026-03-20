@@ -25,6 +25,7 @@ The most critical mistake is starting the migration without capturing the curren
 
 ```bash
 # WRONG - starting migration immediately
+
 kubectl create -f tigera-operator.yaml
 kubectl apply -f installation.yaml
 # If something goes wrong, you have no reference for what the config was

@@ -24,6 +24,7 @@ Make sure you have a BigLake table already set up with a Cloud Resource connecti
 
 ```bash
 # Enable required APIs
+
 gcloud services enable bigqueryconnection.googleapis.com
 gcloud services enable datacatalog.googleapis.com
 gcloud services enable bigquerydatapolicy.googleapis.com

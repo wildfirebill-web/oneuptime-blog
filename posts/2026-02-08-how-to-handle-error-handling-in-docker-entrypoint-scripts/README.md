@@ -19,6 +19,7 @@ Every entrypoint script should start with strict mode:
 ```bash
 #!/bin/bash
 # Enable strict error handling
+
 set -euo pipefail
 
 # -e: Exit immediately if any command fails

@@ -19,6 +19,7 @@ Kubernetes uses two settings for each resource type:
 
 ```yaml
 # Basic resource configuration
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -201,7 +202,7 @@ kubectl run test --image=nginx -n production
 kubectl describe pod test -n production | grep -A 10 "Limits:"
 ```
 
-## ResourceQuota for Namespace Limits
+ResourceQuota for Namespace Limits
 
 Prevent a single namespace from consuming all cluster resources:
 

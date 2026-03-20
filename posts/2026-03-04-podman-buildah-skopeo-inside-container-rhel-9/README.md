@@ -118,6 +118,7 @@ Inside:
 dnf install -y buildah
 
 # Build an image using Buildah
+
 container=$(buildah from registry.access.redhat.com/ubi9/ubi-minimal)
 buildah run $container -- microdnf install -y httpd
 buildah config --entrypoint '["/usr/sbin/httpd", "-D", "FOREGROUND"]' $container

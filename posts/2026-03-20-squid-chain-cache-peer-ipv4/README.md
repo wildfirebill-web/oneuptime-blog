@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, Proxy Chain, IPv4, cache_peer, Caching, Networking, Configuration
+Tags: Squid, Proxy Chain, IPv4, Cache_peer, Caching, Networking, Configuration
 
 Description: Learn how to chain multiple Squid proxy servers together using cache_peer directives over IPv4 to build multi-tier caching hierarchies.
 
@@ -28,6 +28,7 @@ graph LR
 http_port 3128
 
 # Forward misses to the regional proxy
+
 cache_peer 10.0.1.10 parent 3128 0 no-query default
 
 # Never connect directly to the internet; always go through the chain

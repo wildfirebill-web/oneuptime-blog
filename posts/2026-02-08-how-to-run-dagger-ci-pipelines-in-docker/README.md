@@ -31,6 +31,7 @@ Install the Dagger CLI and ensure Docker is running.
 
 ```bash
 # Install the Dagger CLI
+
 curl -fsSL https://dl.dagger.io/dagger/install.sh | sh
 sudo mv ./bin/dagger /usr/local/bin/
 

@@ -1,4 +1,4 @@
-# How to Set Up Rancher for Energy and Utilities
+# How to Set Up Rancher for Energy and Utilities - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Energy and utilities organizations face unique operational requirements: NERC-CI
 
 ## Energy Platform Architecture
 
-```
+```text
 Control Center
 ┌─────────────────────────────────────────────────────┐
 │  Rancher Management                                  │
@@ -35,6 +35,7 @@ Grid protection      SCADA            SCADA
 
 ```yaml
 # NERC-CIP requires strict access control for BES Cyber Systems
+
 # Kubernetes deployed in CIP-compliant environments needs:
 
 # 1. Electronic Security Perimeter (ESP) via network policies

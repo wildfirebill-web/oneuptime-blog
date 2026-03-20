@@ -64,6 +64,7 @@ Define blue and green server groups in your inventory.
 
 ```ini
 # inventory/production.ini
+
 [blue]
 blue-web-01 ansible_host=10.0.1.10
 blue-web-02 ansible_host=10.0.1.11

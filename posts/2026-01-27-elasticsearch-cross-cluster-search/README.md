@@ -124,6 +124,7 @@ This is the preferred method as it allows dynamic configuration without cluster 
 
 ```bash
 # Configure a remote cluster named "cluster_us_east"
+
 # This connects your local cluster to a remote Elasticsearch cluster
 # using seed nodes for initial connection discovery
 curl -X PUT "localhost:9200/_cluster/settings?pretty" \

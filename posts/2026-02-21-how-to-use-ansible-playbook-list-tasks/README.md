@@ -16,6 +16,7 @@ Run `--list-tasks` against any playbook:
 
 ```bash
 # List all tasks in a playbook
+
 ansible-playbook --list-tasks deploy.yml
 ```
 
@@ -304,21 +305,21 @@ rm -f /tmp/old-deploy.yml /tmp/new-deploy.yml /tmp/old-tasks.txt /tmp/new-tasks.
 
 Add task listing to your PR template or review process:
 
-```bash
+````bash
 # Generate task list as a PR comment
 TASK_LIST=$(ansible-playbook --list-tasks deploy.yml 2>/dev/null)
 
 gh pr comment --body "$(cat <<EOF
 ## Tasks in this deployment
 
-\`\`\`
+```
 $TASK_LIST
-\`\`\`
+```
 
 Please review the task list above before approving.
 EOF
 )"
-```
+````
 
 ## Creating a Playbook Summary Report
 

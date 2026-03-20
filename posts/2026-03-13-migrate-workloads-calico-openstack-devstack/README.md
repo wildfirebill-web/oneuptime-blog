@@ -26,6 +26,7 @@ The simplest approach: update local.conf and re-run stack.
 
 ```bash
 # Snapshot important data
+
 source /opt/stack/devstack/openrc admin admin
 openstack server list -f yaml > pre-migration-vms.yaml
 openstack network list -f yaml > pre-migration-networks.yaml

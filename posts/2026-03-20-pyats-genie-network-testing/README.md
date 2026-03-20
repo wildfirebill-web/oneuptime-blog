@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pyATS, Genie, Python, Network Testing, Cisco, Validation
+Tags: PyATS, Genie, Python, Network Testing, Cisco, Validation
 
 Description: Learn how to use Cisco's pyATS and Genie frameworks to write automated network tests that validate device configuration and operational state.
 
@@ -24,6 +24,7 @@ Description: Learn how to use Cisco's pyATS and Genie frameworks to write automa
 pip install pyats[full] genie
 
 # Verify installation
+
 python3 -c "import pyats; print(pyats.__version__)"
 genie --version
 ```

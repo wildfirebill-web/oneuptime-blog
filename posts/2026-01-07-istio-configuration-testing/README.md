@@ -54,6 +54,7 @@ The following command analyzes all Istio resources in the current namespace and 
 
 ```bash
 # Analyze configurations in the current namespace
+
 istioctl analyze
 
 # Analyze configurations in a specific namespace

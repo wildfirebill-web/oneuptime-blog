@@ -126,6 +126,7 @@ HSET product:3 name "Running Shoes" \
 
 ```bash
 # Search for "wireless"
+
 FT.SEARCH product_idx "wireless"
 
 # Search for "keyboard gaming"

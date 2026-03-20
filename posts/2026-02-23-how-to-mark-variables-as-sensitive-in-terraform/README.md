@@ -22,6 +22,7 @@ Here is a basic example:
 # variables.tf
 
 # This variable holds a database password.
+
 # The sensitive flag tells Terraform to hide
 # this value in all CLI output.
 variable "db_password" {

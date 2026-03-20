@@ -12,6 +12,7 @@ CAKE is a modern Linux qdisc that combines bandwidth limiting, fair queuing, and
 
 ```bash
 # CAKE requires Linux kernel 4.19+ and iproute2 5.4+
+
 # Check if available
 tc qdisc add dev lo root cake help 2>&1 | head -3
 

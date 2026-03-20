@@ -24,6 +24,7 @@ Validation is not just a one-time checklist. Each time you make a configuration 
 
 ```bash
 # Run full connectivity test suite
+
 cilium connectivity test
 
 # Validate specific scenarios

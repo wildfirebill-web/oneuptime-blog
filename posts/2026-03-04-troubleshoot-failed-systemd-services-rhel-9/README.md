@@ -20,6 +20,7 @@ The first thing to do is get a list of every unit that systemd considers failed.
 
 ```bash
 # List all units in a failed state
+
 systemctl --failed
 ```
 

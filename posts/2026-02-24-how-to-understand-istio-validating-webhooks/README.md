@@ -88,6 +88,7 @@ For each of these, istiod checks the resource against a set of validation rules.
 
 ```bash
 # This will be rejected - empty route destination
+
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

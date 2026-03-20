@@ -20,6 +20,7 @@ CoreDNS is the default DNS server for Kubernetes clusters, handling service disc
 
 ```hcl
 # Deploy CoreDNS via the EKS managed add-on
+
 resource "aws_eks_addon" "coredns" {
   cluster_name             = var.cluster_name
   addon_name               = "coredns"

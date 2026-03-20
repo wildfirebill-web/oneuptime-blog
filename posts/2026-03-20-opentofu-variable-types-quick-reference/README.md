@@ -33,6 +33,7 @@ variable "enable_monitoring" {
 
 ```hcl
 # List: ordered, allows duplicates
+
 variable "availability_zones" {
   type    = list(string)
   default = ["us-east-1a", "us-east-1b", "us-east-1c"]

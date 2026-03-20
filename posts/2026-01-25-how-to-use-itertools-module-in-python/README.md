@@ -31,6 +31,7 @@ The itertools module offers several advantages:
 
 ```python
 # infinite_iterators.py
+
 # Working with infinite iterators from itertools
 from itertools import count, cycle, repeat
 

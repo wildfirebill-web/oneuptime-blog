@@ -51,6 +51,7 @@ Start with configuring the master Redis instance:
 # /etc/redis/redis-master.conf
 
 # Network settings
+
 bind 0.0.0.0
 port 6379
 protected-mode yes

@@ -130,4 +130,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure VPN Gateways enable encrypted connectivity between Azure VNets and on-premises networks. OpenTofu manages the gateway, public IP, local network gateway, and connection configuration — making hybrid connectivity reproducible and version controlled.
+Azure VPN Gateways enable encrypted connectivity between Azure VNets and on-premises networks. OpenTofu manages the gateway, public IP, local network gateway, and connection configuration - making hybrid connectivity reproducible and version controlled.

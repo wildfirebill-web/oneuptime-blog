@@ -37,6 +37,7 @@ The following pipeline creates environments for feature branches and destroys th
 
 ```yaml
 # .gitlab-ci.yml - Core dynamic environment pipeline
+
 # Defines stages for the complete environment lifecycle including provisioning and cleanup
 
 image:

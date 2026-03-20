@@ -39,6 +39,7 @@ Traefik handles WebSocket connections automatically. A standard IngressRoute wor
 
 ```yaml
 # websocket-route.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:

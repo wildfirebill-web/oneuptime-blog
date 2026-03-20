@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Environment, DevOps, Infrastructure as Code
+Tags: Terraform, HCL, Variables, Environments, DevOps, Infrastructure as Code
 
 Description: Learn how to organize Terraform variable files for multiple environments like dev, staging, and production, with patterns for managing shared and environment-specific configuration.
 
@@ -33,6 +33,7 @@ Each file contains only the values that are specific to that environment:
 
 ```hcl
 # envs/dev.tfvars
+
 environment    = "dev"
 instance_type  = "t3.micro"
 instance_count = 1

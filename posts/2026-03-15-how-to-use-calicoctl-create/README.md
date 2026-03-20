@@ -29,6 +29,7 @@ Before using `calicoctl`, ensure it can connect to the datastore:
 
 ```bash
 # For Kubernetes API datastore
+
 export DATASTORE_TYPE=kubernetes
 export KUBECONFIG=~/.kube/config
 

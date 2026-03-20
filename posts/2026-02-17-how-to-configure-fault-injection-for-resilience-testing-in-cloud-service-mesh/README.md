@@ -40,6 +40,7 @@ This VirtualService adds a 5-second delay to 10% of requests to the payment serv
 
 ```yaml
 # delay-injection.yaml
+
 # Injects a 5-second delay into 10% of requests to the payment service
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

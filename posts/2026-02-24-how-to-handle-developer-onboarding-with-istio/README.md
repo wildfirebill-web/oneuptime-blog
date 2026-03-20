@@ -33,6 +33,7 @@ DEVELOPER=$1
 NAMESPACE="sandbox-${DEVELOPER}"
 
 # Create namespace with Istio injection
+
 kubectl create namespace $NAMESPACE
 kubectl label namespace $NAMESPACE istio-injection=enabled
 

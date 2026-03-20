@@ -45,6 +45,7 @@ Always start with your versions. This helps people understand your context immed
 
 ```bash
 # Get your Istio version
+
 istioctl version
 
 # Get your Kubernetes version

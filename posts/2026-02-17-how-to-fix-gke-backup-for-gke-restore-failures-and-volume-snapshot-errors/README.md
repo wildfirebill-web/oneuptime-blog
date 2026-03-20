@@ -41,6 +41,7 @@ Start by checking the detailed restore status:
 
 ```bash
 # List recent restores
+
 gcloud beta container backup-restore restores list \
   --restore-plan=your-restore-plan \
   --location=us-central1 \

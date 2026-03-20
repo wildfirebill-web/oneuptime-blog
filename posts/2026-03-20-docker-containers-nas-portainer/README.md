@@ -109,6 +109,7 @@ Navigate to **Containers**, click on a container name, then click **Logs**:
 
 ```bash
 # Equivalent Docker CLI command
+
 docker logs <container-name> --tail 100 --follow
 ```
 
@@ -182,7 +183,7 @@ volumes:
   - /volume1/downloads:/downloads    # Download directory
 ```
 
-### Resource Limits for NAS Containers
+Resource Limits for NAS Containers
 
 NAS devices often have limited resources. Set limits in Portainer:
 

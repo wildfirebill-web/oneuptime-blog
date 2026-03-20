@@ -36,6 +36,7 @@ Check which admission controllers are enabled:
 
 ```bash
 # View API server configuration
+
 kubectl get pods -n kube-system kube-apiserver-<node-name> -o yaml | grep enable-admission-plugins
 
 # Example output:
@@ -138,7 +139,7 @@ spec:
     type: Container
 ```
 
-### ResourceQuota
+ResourceQuota
 
 Enforces namespace resource quotas:
 

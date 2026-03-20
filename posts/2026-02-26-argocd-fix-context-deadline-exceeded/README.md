@@ -61,6 +61,7 @@ Increase the Git request timeout:
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -37,7 +37,7 @@ Capacity alerts cover several resource dimensions:
 - **Network**: Bandwidth saturation, connection limits, socket exhaustion
 - **Application**: Queue depths, connection pools, rate limits
 
-## Resource Utilization Alerts
+Resource Utilization Alerts
 
 The most fundamental capacity alerts monitor current resource utilization against static thresholds. These catch immediate capacity problems.
 
@@ -47,6 +47,7 @@ Good thresholds depend on your system characteristics. A database server needs m
 
 ```yaml
 # capacity-alerts.yaml
+
 alerts:
   - name: high-cpu-utilization
     description: CPU usage sustained above safe operating threshold

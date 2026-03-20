@@ -38,6 +38,7 @@ Before setting up Endpoint Verification:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
   endpoint-verification.googleapis.com \
   beyondcorp.googleapis.com \

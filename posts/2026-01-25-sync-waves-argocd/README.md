@@ -98,6 +98,7 @@ Custom Resource Definitions must exist before you create instances:
 
 ```yaml
 # Wave -1: Install the CRD first
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

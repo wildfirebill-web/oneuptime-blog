@@ -16,6 +16,7 @@ Install the Azure Storage Blob library and the Azure Identity library for authen
 
 ```bash
 # Install the required packages
+
 pip install azure-storage-blob azure-identity
 ```
 

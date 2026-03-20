@@ -69,6 +69,7 @@ Clients --> Thread 2 --> Shard 2 --> Local Memory
 
 ```bash
 # Dragonfly automatically uses all cores
+
 dragonfly --proactor_threads=0  # Auto-detect
 dragonfly --proactor_threads=8  # Explicit
 ```

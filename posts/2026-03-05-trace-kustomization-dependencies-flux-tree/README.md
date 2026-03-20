@@ -22,6 +22,7 @@ The simplest invocation lists the resource tree for a specific Kustomization.
 
 ```bash
 # Show the dependency tree for a Kustomization named "infrastructure"
+
 flux tree ks infrastructure
 ```
 

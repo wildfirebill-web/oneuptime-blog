@@ -38,6 +38,7 @@ Istio provides a built-in pre-check command that catches common issues:
 
 ```bash
 # Use the NEW version of istioctl (the one you plan to upgrade to)
+
 export PATH=$PWD/istio-1.21.0/bin:$PATH
 
 istioctl x precheck

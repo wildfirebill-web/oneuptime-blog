@@ -32,6 +32,7 @@ flowchart TD
 
 ```bash
 # Install Ansible and SCAP tools
+
 dnf install -y ansible-core openscap-scanner scap-security-guide
 
 # Verify the STIG profile is available

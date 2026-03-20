@@ -112,6 +112,7 @@ Make sure the Container max limits are high enough to accommodate the sidecar's 
 
 ```yaml
 # The sidecar's default CPU limit is 2000m
+
 # Your LimitRange max must be >= 2000m
 limits:
 - type: Container

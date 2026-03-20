@@ -334,6 +334,7 @@ One workflow triggers another with inputs:
 
 ```yaml
 # build.yml
+
 name: Build
 
 on:

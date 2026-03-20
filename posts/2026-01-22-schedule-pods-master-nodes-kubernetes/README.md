@@ -16,6 +16,7 @@ Master nodes have taints that repel pods without matching tolerations:
 
 ```bash
 # Check taints on master nodes
+
 kubectl describe node master-node-1 | grep Taints
 
 # Common taints on master nodes:
@@ -279,7 +280,7 @@ globalDefault: true
 description: "Default low priority for workloads"
 ```
 
-### Resource Reservations
+Resource Reservations
 
 Configure kubelet to reserve resources for system components:
 

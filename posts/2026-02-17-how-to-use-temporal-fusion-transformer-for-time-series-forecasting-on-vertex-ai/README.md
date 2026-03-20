@@ -236,6 +236,7 @@ The actual training script:
 
 ```python
 # train_tft.py - Runs inside the Vertex AI training container
+
 import argparse
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint

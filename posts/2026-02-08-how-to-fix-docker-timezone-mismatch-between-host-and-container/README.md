@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Timezone, Configuration, Troubleshooting, Containers, Linux, Environment
+Tags: Docker, Timezone, Configuration, Troubleshooting, Containers, Linux, Environments
 
 Description: Fix timezone mismatches between Docker containers and the host system by mounting timezone files, setting environment variables, and configuring images.
 
@@ -20,6 +20,7 @@ Check the current timezone inside a container:
 
 ```bash
 # Check timezone in a running container
+
 docker exec my-container date
 docker exec my-container cat /etc/timezone 2>/dev/null || echo "No /etc/timezone file"
 docker exec my-container ls -la /etc/localtime

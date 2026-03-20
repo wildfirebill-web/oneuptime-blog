@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Microservices, API Gateway, Routing, Service Mesh
+Tags: Nginx, Microservices, API Gateway, Routing, Service Mesh
 
 Description: Learn how to configure Nginx as an API gateway for microservices, including service routing, authentication, rate limiting, and request transformation.
 
@@ -39,6 +39,7 @@ Route requests to different services based on path:
 # /etc/nginx/conf.d/api-gateway.conf
 
 # Define service upstreams
+
 upstream auth_service {
     server auth-service:3000;
     keepalive 16;

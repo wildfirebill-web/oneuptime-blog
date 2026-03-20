@@ -50,6 +50,7 @@ When a collector pod crashes and restarts, anything in its in-memory queues is g
 
 ```yaml
 # collector-config.yaml
+
 # Persistent queue configuration for crash recovery
 extensions:
   # The file storage extension provides persistent storage

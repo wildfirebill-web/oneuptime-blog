@@ -307,6 +307,7 @@ Beyond access logs, Istio metrics provide aggregate audit data through Prometheu
 
 ```bash
 # Total requests between services
+
 istio_requests_total{source_workload="frontend", destination_workload="api-gateway"}
 
 # Failed requests (potential security events)

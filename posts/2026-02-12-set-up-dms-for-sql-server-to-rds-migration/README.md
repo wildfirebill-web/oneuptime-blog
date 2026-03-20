@@ -141,6 +141,7 @@ EXEC master.dbo.xp_servicecontrol 'QueryState', 'SQLServerAGENT';
 
 ```bash
 # Create an RDS SQL Server instance as the migration target
+
 aws rds create-db-instance \
   --db-instance-identifier sqlserver-rds-target \
   --engine sqlserver-ee \

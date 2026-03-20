@@ -14,6 +14,7 @@ SOPS (Secrets OPerationS) is a tool that encrypts files before you commit them t
 
 ```bash
 # Download the latest SOPS release
+
 SOPS_VERSION=$(curl -s https://api.github.com/repos/mozilla/sops/releases/latest | \
     grep '"tag_name"' | sed 's/.*"v//;s/".*//')
 

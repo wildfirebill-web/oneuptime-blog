@@ -33,6 +33,7 @@ If you serve content from somewhere other than `/var/www/html`:
 
 ```bash
 # Define the file context for your custom document root
+
 sudo semanage fcontext -a -t httpd_sys_content_t "/data/website(/.*)?"
 
 # Apply the context

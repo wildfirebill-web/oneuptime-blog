@@ -39,6 +39,7 @@ The warning message typically looks something like this in your logs:
 
 ```text
 # SDK-level warning when the BatchSpanProcessor queue is full
+
 WARN  otel: dropping span, queue is full (maxQueueSize: 2048)
 
 # Collector-level warning from the sending queue

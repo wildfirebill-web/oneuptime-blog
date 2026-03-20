@@ -16,6 +16,7 @@ Description: Use calicoctl apply to create or update Calico resources declarativ
 
 ```bash
 # Apply a single resource file
+
 calicoctl apply -f globalnetworkpolicy.yaml
 
 # Apply multiple files in a directory

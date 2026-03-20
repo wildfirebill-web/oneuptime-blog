@@ -33,6 +33,7 @@ On Host A (public IP: 203.0.113.1):
 
 ```bash
 # Load the ipip kernel module
+
 sudo modprobe ipip
 
 # Create the IPIP tunnel interface

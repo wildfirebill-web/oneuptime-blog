@@ -20,6 +20,7 @@ Passing secrets through ARG leaks them into image history:
 
 ```dockerfile
 # BAD: Secret is stored in the image layer metadata
+
 ARG NPM_TOKEN
 RUN echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc && \
     npm install && \

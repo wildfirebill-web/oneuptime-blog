@@ -14,6 +14,7 @@ Stateful applications (databases, message queues, caches) require special HA han
 
 ```hcl
 # main.tf - HA StatefulSet for PostgreSQL
+
 resource "kubernetes_stateful_set" "postgresql_ha" {
   metadata {
     name      = "postgresql-ha"

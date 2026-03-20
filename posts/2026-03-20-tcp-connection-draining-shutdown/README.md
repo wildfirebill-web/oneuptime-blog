@@ -23,6 +23,7 @@ graph LR
 
 ```bash
 # Send QUIT signal to nginx for graceful shutdown with connection draining
+
 nginx -s quit
 
 # nginx closes the listening socket, waits for active connections to finish

@@ -30,6 +30,7 @@ Good key names are:
 
 ```bash
 # Colon-separated (most common)
+
 user:1000:profile
 order:2024:01:15:ABC123
 cache:api:users:list

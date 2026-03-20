@@ -42,6 +42,7 @@ telemetry/
 
 ```yaml
 # telemetry/opentelemetry-operator/Chart.yaml
+
 apiVersion: v2
 name: opentelemetry-operator
 description: Wrapper chart for OpenTelemetry Operator

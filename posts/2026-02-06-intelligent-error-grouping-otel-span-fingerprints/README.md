@@ -27,6 +27,7 @@ Bad fingerprint ingredients:
 
 ```python
 # fingerprint.py - Generate stable error fingerprints from span data
+
 import hashlib
 import re
 

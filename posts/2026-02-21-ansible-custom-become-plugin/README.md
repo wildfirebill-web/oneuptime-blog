@@ -30,6 +30,7 @@ Create `become_plugins/privrun.py`:
 
 ```python
 # privrun.py - Custom become plugin for the privrun privilege escalation tool
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

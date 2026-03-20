@@ -18,6 +18,7 @@ Without async, a loop runs each iteration sequentially.
 
 ```yaml
 # slow-sequential.yml
+
 # This takes 50 seconds total (10 seconds per item, 5 items)
 - name: Download files sequentially (slow)
   hosts: webservers

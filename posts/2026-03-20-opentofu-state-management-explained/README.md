@@ -8,7 +8,7 @@ Description: Understand how OpenTofu state works, why it exists, and how to mana
 
 ## Introduction
 
-The OpenTofu state file is a JSON document that maps your HCL resource declarations to real cloud infrastructure. It is OpenTofu's memory — without it, OpenTofu cannot know what it created, what needs updating, or what to delete. Understanding state is essential for working with OpenTofu safely.
+The OpenTofu state file is a JSON document that maps your HCL resource declarations to real cloud infrastructure. It is OpenTofu's memory - without it, OpenTofu cannot know what it created, what needs updating, or what to delete. Understanding state is essential for working with OpenTofu safely.
 
 ## What State Contains
 
@@ -43,7 +43,7 @@ The state file stores the mapping between your configuration and real resources.
 
 State enables OpenTofu to calculate the difference between desired and actual infrastructure.
 
-```
+```yaml
 Without state (every apply):            With state (incremental):
 -----------------------                 -----------------------
 Read ALL cloud resources  →             Read state file (fast)
@@ -74,6 +74,7 @@ State locking prevents two people from applying at the same time.
 
 ```bash
 # First engineer runs apply
+
 tofu apply
 # State is locked: s3://bucket/key.tflock created
 
@@ -142,7 +143,7 @@ resource "aws_s3_bucket" "app" {
 
 ## State Best Practices
 
-```
+```text
 DO:
 ✓ Use remote state for all team projects
 ✓ Enable state encryption (encrypt = true)

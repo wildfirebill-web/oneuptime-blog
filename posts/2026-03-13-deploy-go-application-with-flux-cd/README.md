@@ -29,6 +29,7 @@ Go's static compilation makes distroless containers practical. The image contain
 
 ```dockerfile
 # Dockerfile - multi-stage: compile on full Go image, run on distroless
+
 FROM golang:1.22-alpine AS builder
 WORKDIR /app
 

@@ -50,6 +50,7 @@ Monitor either high CPU or high memory:
 
 ```promql
 # Returns nodes with CPU > 80% OR memory > 90%
+
 (node_cpu_utilization > 0.8) or (node_memory_utilization > 0.9)
 ```
 

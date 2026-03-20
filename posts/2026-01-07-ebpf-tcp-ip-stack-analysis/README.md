@@ -73,6 +73,7 @@ The following commands will install the necessary tools for eBPF development inc
 
 ```bash
 # Install BCC tools (Ubuntu/Debian)
+
 sudo apt-get update
 sudo apt-get install -y bpfcc-tools linux-headers-$(uname -r)
 

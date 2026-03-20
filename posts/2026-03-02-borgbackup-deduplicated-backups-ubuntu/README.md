@@ -16,6 +16,7 @@ Borg is available in the Ubuntu repositories, though the version there may be ol
 
 ```bash
 # Install from Ubuntu repositories (simpler, slightly older)
+
 sudo apt update
 sudo apt install borgbackup
 

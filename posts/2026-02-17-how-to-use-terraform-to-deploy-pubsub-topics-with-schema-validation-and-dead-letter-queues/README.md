@@ -31,6 +31,7 @@ Pub/Sub supports Avro and Protocol Buffer schemas. Avro is more common for Pub/S
 
 ```hcl
 # schema.tf - Pub/Sub schema for message validation
+
 # Using Avro format which supports schema evolution
 
 resource "google_pubsub_schema" "order_events" {

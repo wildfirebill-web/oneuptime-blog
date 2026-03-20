@@ -59,6 +59,7 @@ A good resolution summary answers these questions in 2-3 sentences:
 
 ```yaml
 # Resolution Summary Template
+
 title: "Database Connection Pool Exhaustion"
 symptom: "Application returning 503 errors with 'Connection pool exhausted' in logs"
 root_cause: "Memory leak in connection handling causing connections to not be released"

@@ -40,6 +40,7 @@ First, verify your BIND9 version:
 ```bash
 named -v
 # Should be 9.16.x or newer for full dnssec-policy support
+
 ```
 
 Configure a DNSSEC policy in `/etc/bind/named.conf.options`:

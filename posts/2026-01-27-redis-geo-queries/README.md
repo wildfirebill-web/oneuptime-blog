@@ -59,6 +59,7 @@ GEOADD key [NX | XX] [CH] longitude latitude member [longitude latitude member .
 
 ```redis
 # Add a single location
+
 GEOADD restaurants -122.4194 37.7749 "pizza-palace"
 
 # Add multiple locations at once

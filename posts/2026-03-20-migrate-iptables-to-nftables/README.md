@@ -20,6 +20,7 @@ nftables is the modern Linux firewall framework that replaces iptables. It has a
 
 ```bash
 # Save current iptables rules
+
 sudo iptables-save > /tmp/iptables-backup.txt
 cat /tmp/iptables-backup.txt
 ```
@@ -66,7 +67,7 @@ COMMIT
 
 Translated nftables rules:
 
-```
+```text
 table ip filter {
     chain INPUT {
         type filter hook input priority 0; policy drop;

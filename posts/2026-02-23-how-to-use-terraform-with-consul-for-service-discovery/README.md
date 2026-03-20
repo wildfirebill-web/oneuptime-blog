@@ -22,6 +22,7 @@ Start by provisioning the Consul server cluster on AWS.
 
 ```hcl
 # Security group for Consul servers
+
 resource "aws_security_group" "consul_server" {
   name_prefix = "consul-server-"
   vpc_id      = var.vpc_id

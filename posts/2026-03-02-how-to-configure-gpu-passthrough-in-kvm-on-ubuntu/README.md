@@ -33,6 +33,7 @@ After enabling IOMMU in UEFI, enable it in the Linux kernel via the bootloader:
 
 ```bash
 # Edit GRUB configuration
+
 sudo nano /etc/default/grub
 ```
 

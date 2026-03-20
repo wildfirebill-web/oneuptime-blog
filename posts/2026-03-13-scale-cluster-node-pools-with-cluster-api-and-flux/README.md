@@ -29,6 +29,7 @@ The simplest scaling operation: increase replicas in a pull request.
 
 ```yaml
 # clusters/workloads/production-cluster/workers.yaml
+
 # Before: 3 nodes
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineDeployment

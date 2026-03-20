@@ -25,6 +25,7 @@ This Dockerfile demonstrates the fundamental difference between ARG and ENV. ARG
 
 ```dockerfile
 # ARG: only exists during build - used here to select base image version
+
 ARG NODE_VERSION=22
 FROM node:${NODE_VERSION}
 

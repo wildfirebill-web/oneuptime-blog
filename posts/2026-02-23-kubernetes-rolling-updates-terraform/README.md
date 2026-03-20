@@ -99,6 +99,7 @@ These two parameters control the pace of the rollout:
 
 ```hcl
 # Conservative: One at a time, always maintain full capacity
+
 strategy {
   type = "RollingUpdate"
 

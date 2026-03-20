@@ -580,6 +580,7 @@ Production systems benefit from externalized sampling rules that can be changed 
 
 ```yaml
 # application.yml - Externalized sampling rules
+
 tracing:
   sampling:
     default-rate: 0.1

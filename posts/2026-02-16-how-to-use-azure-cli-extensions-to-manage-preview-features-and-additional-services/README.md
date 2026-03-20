@@ -29,6 +29,7 @@ To see all available extensions:
 
 ```bash
 # List all available extensions with their versions and status
+
 az extension list-available --output table
 ```
 

@@ -38,6 +38,7 @@ Before starting, ensure you have:
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

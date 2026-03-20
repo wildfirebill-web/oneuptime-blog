@@ -35,6 +35,7 @@ Azure API Management now has a built-in circuit breaker feature through backend 
 
 ```bash
 # Configure a backend with circuit breaker rules
+
 # The circuit opens after 3 failures in a 30-second window
 az apim backend create \
   --resource-group myResourceGroup \

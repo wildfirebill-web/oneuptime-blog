@@ -29,6 +29,7 @@ The standard DinD setup uses the Docker image with a DinD service.
 
 ```yaml
 # .gitlab-ci.yml
+
 build:
   image: docker:24
   services:

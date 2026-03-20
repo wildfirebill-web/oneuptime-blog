@@ -24,6 +24,7 @@ Every official Talos release is signed and can be verified before deployment. He
 
 ```bash
 # Download the Talos image and its signature
+
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.7.0/talos-amd64.iso
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.7.0/talos-amd64.iso.sig
 

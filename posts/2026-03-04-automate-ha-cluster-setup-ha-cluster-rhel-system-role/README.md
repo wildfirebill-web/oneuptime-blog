@@ -69,6 +69,7 @@ On the managed hosts, verify that the configuration was applied:
 
 ```bash
 # Check relevant service or configuration
+
 systemctl status <service>
 cat <config-file>
 ```

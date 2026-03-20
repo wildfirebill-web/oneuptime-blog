@@ -78,6 +78,7 @@ http {
 
 ```bash
 # Pull RTMP from IPv6 source and output HLS
+
 ffmpeg -i "rtmp://[2001:db8::source]/live/stream" \
   -c:v libx264 -b:v 2000k \
   -c:a aac -b:a 128k \
@@ -138,7 +139,7 @@ ss -6 -tlnp | grep -E "80|443|1935"
 
 ## CDN Configuration for IPv6 HLS
 
-```
+```text
 Configure CDN origin over IPv6:
 - Origin server: 2001:db8::hls-origin
 - CDN fetches segments from IPv6 origin

@@ -28,6 +28,7 @@ Terraform Enterprise supports PostgreSQL versions 12 through 16. PostgreSQL 15 o
 
 ```bash
 # Check your PostgreSQL version
+
 psql --version
 
 # Or if connecting to an existing server

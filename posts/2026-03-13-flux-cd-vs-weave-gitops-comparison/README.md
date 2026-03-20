@@ -26,6 +26,7 @@ Open-source Flux CD provides:
 
 ```yaml
 # Core Flux CD capabilities
+
 - GitRepository, OCIRepository, HelmRepository, Bucket sources
 - Kustomization for manifest deployment
 - HelmRelease for Helm chart management

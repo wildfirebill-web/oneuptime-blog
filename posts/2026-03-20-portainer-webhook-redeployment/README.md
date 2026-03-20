@@ -17,7 +17,7 @@ Once you've created a webhook for a Portainer container, triggering redeployment
 
 ## How the Redeploy Webhook Works
 
-```
+```bash
 Trigger: HTTP POST → webhook URL
 Response: 204 No Content (success) or 4xx/5xx (error)
 
@@ -32,6 +32,7 @@ Behind the scenes:
 
 ```bash
 # Simplest form:
+
 curl -X POST https://portainer.example.com/api/webhooks/YOUR-TOKEN
 
 # Check the HTTP status code:
@@ -180,15 +181,15 @@ case "$RESPONSE" in
         echo "✓ Deployment triggered"
         ;;
     403)
-        echo "✗ Unauthorized — check webhook URL/token"
+        echo "✗ Unauthorized - check webhook URL/token"
         exit 1
         ;;
     404)
-        echo "✗ Webhook not found — verify the URL"
+        echo "✗ Webhook not found - verify the URL"
         exit 1
         ;;
     5*)
-        echo "✗ Server error (${RESPONSE}) — check Portainer status"
+        echo "✗ Server error (${RESPONSE}) - check Portainer status"
         exit 1
         ;;
     *)

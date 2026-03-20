@@ -40,6 +40,7 @@ JupyterHub requires both Python and Node.js.
 
 ```bash
 # Install Python 3.9+ and development libraries
+
 sudo dnf install -y python3 python3-pip python3-devel
 
 # Install Node.js (required for the configurable HTTP proxy)

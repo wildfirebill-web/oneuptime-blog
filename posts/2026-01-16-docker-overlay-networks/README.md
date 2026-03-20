@@ -29,6 +29,7 @@ flowchart TB
 
 ```bash
 # Initialize swarm on manager node
+
 docker swarm init --advertise-addr 192.168.1.10
 
 # Get join token for workers

@@ -43,6 +43,7 @@ The most common cause is failing to properly extract and propagate the span cont
 
 ```python
 # Incorrect: Missing context extraction
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer(__name__)

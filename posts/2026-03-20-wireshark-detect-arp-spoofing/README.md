@@ -10,7 +10,7 @@ ARP spoofing is a man-in-the-middle attack where an attacker sends forged ARP re
 
 ## How ARP Spoofing Works
 
-```
+```text
 Normal ARP:
   Host A asks: "Who has 192.168.1.1?"
   Gateway replies: "192.168.1.1 is at aa:bb:cc:dd:ee:ff"
@@ -26,6 +26,7 @@ ARP Spoofing attack:
 
 ```wireshark
 # Show all ARP packets
+
 arp
 
 # ARP replies only (the spoofed packets)
@@ -72,7 +73,7 @@ arp.duplicate-address-frame
 
 ## Statistics → ARP Address Table
 
-```
+```text
 Some Wireshark versions show ARP analysis:
   Statistics → Endpoints
     → Filter by "Ethernet" tab
@@ -122,4 +123,4 @@ ip neighbor show
 sudo arp -s 192.168.1.1 aa:bb:cc:dd:ee:ff
 ```
 
-ARP spoofing detection should be part of any security monitoring setup — it's a classic attack that enables credential theft, session hijacking, and traffic interception on local networks.
+ARP spoofing detection should be part of any security monitoring setup - it's a classic attack that enables credential theft, session hijacking, and traffic interception on local networks.

@@ -35,6 +35,7 @@ Download the NVIDIA vGPU Software Manager from NVIDIA's licensing portal (requir
 
 ```bash
 # Install dependencies
+
 sudo apt-get update
 sudo apt-get install -y build-essential dkms linux-headers-$(uname -r)
 

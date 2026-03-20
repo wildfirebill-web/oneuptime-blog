@@ -32,6 +32,7 @@ The Storage Write API fixes all of these:
 
 ```bash
 # Install the BigQuery Storage client
+
 npm install @google-cloud/bigquery-storage @google-cloud/bigquery protobufjs
 ```
 

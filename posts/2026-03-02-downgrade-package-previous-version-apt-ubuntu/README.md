@@ -26,6 +26,7 @@ APT can only downgrade to versions available in your configured repositories or 
 
 ```bash
 # Show all available versions of a package
+
 apt-cache policy nginx
 
 # Output:

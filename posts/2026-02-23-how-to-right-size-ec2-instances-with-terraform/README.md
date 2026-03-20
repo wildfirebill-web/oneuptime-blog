@@ -16,6 +16,7 @@ Use AWS Compute Optimizer to find right-sizing opportunities:
 
 ```hcl
 # Enable Compute Optimizer
+
 resource "aws_computeoptimizer_enrollment_status" "main" {
   status = "Active"
 }

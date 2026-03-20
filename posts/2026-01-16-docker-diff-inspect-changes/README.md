@@ -14,6 +14,7 @@ The `docker diff` command shows what files have been added, changed, or deleted 
 
 ```bash
 # Show filesystem changes in a container
+
 docker diff <container_name_or_id>
 
 # Example output

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioner, Windows
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioners, Windows
 
 Description: Fix Terraform WinRM connection errors in provisioners for Windows instances including authentication, HTTPS setup, and firewall configuration.
 
@@ -164,6 +164,7 @@ WinRM supports several authentication methods. Basic auth is the simplest but le
 
 ```hcl
 # Basic auth (HTTP or HTTPS)
+
 connection {
   type     = "winrm"
   user     = "Administrator"

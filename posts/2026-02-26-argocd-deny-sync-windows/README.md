@@ -274,6 +274,7 @@ Verify that deny windows are working correctly.
 
 ```bash
 # Check project sync windows
+
 argocd proj windows list production
 
 # Try to sync during a deny window (should fail for auto-sync)

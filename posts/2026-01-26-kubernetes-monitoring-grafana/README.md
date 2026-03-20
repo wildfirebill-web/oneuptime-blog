@@ -45,6 +45,7 @@ The quickest path is the kube-prometheus-stack Helm chart:
 
 ```bash
 # Add the Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 
@@ -108,7 +109,7 @@ sum(kube_pod_status_phase{phase="Failed"}) by (namespace)
 sum(increase(kube_pod_container_status_restarts_total[1h])) by (namespace, pod)
 ```
 
-### Resource Utilization
+Resource Utilization
 
 ```promql
 # CPU usage by pod

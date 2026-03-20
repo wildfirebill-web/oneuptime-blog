@@ -16,6 +16,7 @@ Missing module errors typically appear in a few different ways.
 
 ```bash
 # "FATAL: Module not found" when using modprobe
+
 sudo modprobe somefs
 # FATAL: Module somefs not found in directory /lib/modules/6.8.0-52-generic
 

@@ -23,6 +23,7 @@ VTI (Virtual Tunnel Interface) is a Linux network interface type designed for us
 
 ```bash
 # Create a VTI tunnel interface
+
 # i_key and o_key must match the IPsec mark
 ip link add vti0 type vti \
     local 10.0.0.1 \
@@ -41,7 +42,7 @@ ip link set vti0 mtu 1400  # Lower MTU for IPsec overhead
 
 Using StrongSwan's `vti` interface type:
 
-```
+```text
 # /etc/ipsec.conf
 conn site-to-site
     left=10.0.0.1

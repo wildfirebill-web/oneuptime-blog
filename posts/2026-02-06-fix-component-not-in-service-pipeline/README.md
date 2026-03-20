@@ -14,6 +14,7 @@ The Collector config has a clear two-part structure:
 
 ```yaml
 # Part 1: Define components
+
 receivers:
   otlp:
     protocols:

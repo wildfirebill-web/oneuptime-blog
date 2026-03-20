@@ -29,6 +29,7 @@ Squid is a powerful caching proxy server that can accelerate web browsing, contr
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Squid proxy server

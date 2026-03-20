@@ -51,6 +51,7 @@ Here's the basic command to copy a snapshot to another region:
 
 ```bash
 # Copy an RDS snapshot from us-east-1 to us-west-2
+
 aws rds copy-db-snapshot \
   --source-db-snapshot-identifier arn:aws:rds:us-east-1:123456789012:snapshot:my-db-snapshot \
   --target-db-snapshot-identifier my-db-snapshot-copy \

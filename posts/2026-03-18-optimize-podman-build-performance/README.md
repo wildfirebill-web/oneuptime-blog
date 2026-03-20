@@ -20,6 +20,7 @@ Start with a baseline measurement:
 
 ```bash
 # Time your full build
+
 time podman build -t your-app:latest .
 
 # Build with detailed timing (using buildah)

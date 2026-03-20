@@ -16,6 +16,7 @@ Label and taint nodes for different teams:
 
 ```bash
 # Create node pool for team-a
+
 kubectl label nodes node-1 node-2 node-3 team=team-a
 kubectl taint nodes node-1 node-2 node-3 team=team-a:NoSchedule
 

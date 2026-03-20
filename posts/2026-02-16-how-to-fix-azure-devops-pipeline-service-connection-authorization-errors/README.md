@@ -42,6 +42,7 @@ For YAML pipelines, you can also authorize at the resource level in your pipelin
 
 ```yaml
 # Pipeline YAML with explicit resource authorization
+
 resources:
   pipelines: []
 

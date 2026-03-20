@@ -43,6 +43,7 @@ Before configuring the SSH OTP secrets engine, ensure you have:
 
 ```bash
 # Verify Vault is running and accessible
+
 vault status
 
 # Authenticate to Vault (using root token for setup)

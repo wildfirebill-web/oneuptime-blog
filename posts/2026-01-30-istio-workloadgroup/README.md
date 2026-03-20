@@ -54,6 +54,7 @@ Enable mesh expansion in your Istio installation:
 
 ```yaml
 # istio-operator.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

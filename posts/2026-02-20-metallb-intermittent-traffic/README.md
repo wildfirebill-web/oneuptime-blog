@@ -36,6 +36,7 @@ In Layer 2 mode, only one speaker node handles each LoadBalancer IP. When that n
 
 ```bash
 # Check for speaker failover events in the logs
+
 # Look for "handling" and "lost" messages that indicate leadership changes
 kubectl logs -n metallb-system \
   -l component=speaker \

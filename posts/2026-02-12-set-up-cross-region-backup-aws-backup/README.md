@@ -35,6 +35,7 @@ Each vault uses its own KMS key for encryption. You need keys in both regions:
 
 ```bash
 # Create KMS key in primary region
+
 PRIMARY_KEY=$(aws kms create-key \
   --region us-east-1 \
   --description "AWS Backup - Primary Region" \

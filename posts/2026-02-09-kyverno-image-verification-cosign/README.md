@@ -16,6 +16,7 @@ Install Cosign and sign a test image:
 
 ```bash
 # Install Cosign
+
 brew install cosign  # macOS
 # or download from https://github.com/sigstore/cosign/releases
 

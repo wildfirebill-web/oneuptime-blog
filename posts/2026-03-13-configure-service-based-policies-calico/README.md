@@ -76,6 +76,7 @@ spec:
 
 ```bash
 # Test that frontend can reach backend via service
+
 BACKEND_SVC=$(kubectl get service backend-api -n production -o jsonpath='{.spec.clusterIP}')
 kubectl exec -n production frontend-pod -- curl -s --max-time 5 http://$BACKEND_SVC:8080
 echo "Test (should pass): $?"

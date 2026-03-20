@@ -35,6 +35,7 @@ Logrotate is the standard tool for log rotation on Linux systems. It runs daily 
 
 ```bash
 # /etc/logrotate.d/myapp
+
 # Log rotation configuration for application logs
 
 /var/log/myapp/*.log {

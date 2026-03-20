@@ -31,6 +31,7 @@ Suppress pod alerts when their node is down:
 ```yaml
 inhibit_rules:
 # Inhibit pod alerts when node is down
+
 - source_match:
     alertname: NodeDown
   target_match_re:

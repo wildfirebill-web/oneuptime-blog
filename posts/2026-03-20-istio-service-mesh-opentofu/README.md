@@ -12,7 +12,7 @@ Istio is an open-source service mesh that provides traffic management, mutual TL
 
 ## Why Use OpenTofu for Istio?
 
-OpenTofu allows you to manage Istio installations and configurations as code — versioned, reproducible, and auditable. You can use the Helm provider for installation and the Kubernetes provider for Istio resources.
+OpenTofu allows you to manage Istio installations and configurations as code - versioned, reproducible, and auditable. You can use the Helm provider for installation and the Kubernetes provider for Istio resources.
 
 ## Step 1: Install Istio with Helm
 
@@ -157,7 +157,7 @@ istioctl analyze
 1. **Enable strict mTLS** across the mesh for zero-trust networking
 2. **Use namespaced PeerAuthentication** rather than mesh-wide for gradual rollout
 3. **Set resource limits** on Istiod and sidecars to prevent resource starvation
-4. **Monitor proxy overhead** — sidecar injection adds latency and CPU usage
+4. **Monitor proxy overhead** - sidecar injection adds latency and CPU usage
 5. **Use Kiali** for visual traffic flow debugging
 
 ## Conclusion

@@ -34,6 +34,7 @@ sudo apt install python3 python3-pip python3-dev
 sudo apt install git curl
 
 # Nagios plugins (Shinken uses these)
+
 sudo apt install monitoring-plugins nagios-plugins
 ```
 

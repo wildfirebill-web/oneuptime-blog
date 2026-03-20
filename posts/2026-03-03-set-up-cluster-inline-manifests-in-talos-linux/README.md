@@ -18,6 +18,7 @@ Inline manifests are Kubernetes resource definitions embedded in the Talos clust
 
 ```yaml
 # Basic inline manifest example
+
 cluster:
   inlineManifests:
     - name: my-namespace

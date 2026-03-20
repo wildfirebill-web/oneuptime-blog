@@ -188,6 +188,7 @@ Write a simple test that sends a span through the Collector and verifies metrics
 
 ```bash
 # Send a test span using otel-cli
+
 otel-cli span \
   --service "test-service" \
   --name "test-span" \

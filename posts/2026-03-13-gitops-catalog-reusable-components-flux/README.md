@@ -53,6 +53,7 @@ Create a well-documented, production-ready Redis component.
 
 ```yaml
 # components/redis/v1.1.0/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

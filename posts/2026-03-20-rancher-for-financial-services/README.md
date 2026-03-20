@@ -1,10 +1,10 @@
-# How to Set Up Rancher for Financial Services
+# How to Set Up Rancher for Financial Services - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Financial Services, PCI-DSS, Compliance, Security, Kubernetes
 
-Description: Configure Rancher for financial services workloads with PCI-DSS compliance controls, network isolation, audit logging, encryption, and the security posture required for payment processing and banking applications.
+Description: Configure Rancher for financial services workloads with PCI-DSS compliance controls, network isolation, audit logging, encryption, and the security posture required for payment processing and...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Financial services organizations running Kubernetes face unique challenges: PCI-
 
 ## PCI-DSS Compliance Architecture
 
-```
+```text
                     ┌──────────────────────────────────┐
                     │     Rancher Management Cluster   │
                     │     (air-gapped, dedicated)      │
@@ -34,6 +34,7 @@ Financial services organizations running Kubernetes face unique challenges: PCI-
 
 ```yaml
 # CDE cluster must have:
+
 # 1. Dedicated nodes (no shared workloads)
 # 2. etcd encryption at rest
 # 3. Network isolation from other clusters

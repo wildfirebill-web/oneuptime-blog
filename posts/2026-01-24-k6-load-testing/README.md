@@ -38,6 +38,7 @@ Install k6 based on your operating system:
 
 ```bash
 # macOS with Homebrew
+
 brew install k6
 
 # Ubuntu/Debian

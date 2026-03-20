@@ -1,4 +1,4 @@
-# How to Set Up Application Webhooks in Portainer for Kubernetes
+# How to Set Up Application Webhooks in Portainer for Kubernetes - App
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Portainer application webhooks for Kubernete
 
 ## Introduction
 
-Portainer application webhooks for Kubernetes work the same way as for Docker â€” an HTTP POST to the webhook URL triggers Portainer to update the application. This enables push-based CI/CD where your build pipeline triggers Portainer to redeploy after pushing a new image. This guide covers setting up and using Kubernetes application webhooks in Portainer.
+Portainer application webhooks for Kubernetes work the same way as for Docker - an HTTP POST to the webhook URL triggers Portainer to update the application. This enables push-based CI/CD where your build pipeline triggers Portainer to redeploy after pushing a new image. This guide covers setting up and using Kubernetes application webhooks in Portainer.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Portainer application webhooks for Kubernetes work the same way as for Docker â€
 5. Toggle **Enable webhook** to ON
 6. Copy the generated webhook URL:
 
-```
+```text
 https://portainer.example.com:9443/api/webhooks/abc123def456...
 ```
 
@@ -33,6 +33,7 @@ https://portainer.example.com:9443/api/webhooks/abc123def456...
 
 ```bash
 # Test webhook call
+
 curl -X POST \
   "https://portainer.example.com:9443/api/webhooks/abc123def456" \
   --insecure \

@@ -24,7 +24,7 @@ graph TD
 Each regional Prometheus scrapes its local targets normally.
 
 ```yaml
-# /etc/prometheus/prometheus.yml (on 10.0.0.5 — Datacenter A)
+# /etc/prometheus/prometheus.yml (on 10.0.0.5 - Datacenter A)
 
 global:
   scrape_interval: 15s
@@ -44,7 +44,7 @@ scrape_configs:
 The global Prometheus scrapes the `/federate` endpoint of each regional Prometheus.
 
 ```yaml
-# /etc/prometheus/prometheus.yml (on 10.2.0.5 — Global)
+# /etc/prometheus/prometheus.yml (on 10.2.0.5 - Global)
 
 global:
   scrape_interval: 30s    # Scrape global federation less frequently
@@ -103,6 +103,7 @@ params:
 
 ```bash
 # Check the /federate endpoint on a regional Prometheus
+
 curl "http://10.0.0.5:9090/federate?match[]={job='node_exporter'}" | head -20
 
 # On the global Prometheus: verify all regional targets are UP
@@ -112,6 +113,6 @@ curl -s "http://10.2.0.5:9090/api/v1/targets" | python3 -m json.tool | grep '"he
 ## Key Takeaways
 
 - `honor_labels: true` preserves the original `instance` and `job` labels from regional Prometheus instances.
-- Use `match[]` selectors carefully — pulling all metrics via federation negates the benefit and creates load.
+- Use `match[]` selectors carefully - pulling all metrics via federation negates the benefit and creates load.
 - Set `external_labels` on each regional Prometheus to identify the datacenter/region in all metrics.
 - Federation is pull-based; for push-based global aggregation, use remote write to a central storage like Thanos or VictoriaMetrics.

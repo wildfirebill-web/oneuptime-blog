@@ -51,6 +51,7 @@ Catch formatting and basic issues before code enters the repository:
 
 ```yaml
 # .pre-commit-config.yaml
+
 # Pre-commit hooks for Terraform standards
 
 repos:

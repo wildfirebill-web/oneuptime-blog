@@ -41,6 +41,7 @@ flowchart TD
 
 ```yaml
 # node-spread.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

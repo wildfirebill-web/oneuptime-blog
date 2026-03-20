@@ -44,6 +44,7 @@ def is_public(ip: str) -> bool:
     return addr.is_global
 
 # Test
+
 test_ips = ["10.0.0.1", "172.17.0.5", "192.168.1.1",
             "8.8.8.8", "203.0.113.5", "100.64.0.1"]
 

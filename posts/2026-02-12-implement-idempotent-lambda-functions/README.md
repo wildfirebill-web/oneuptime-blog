@@ -51,6 +51,7 @@ DynamoDB is the most common choice for storing idempotency records because it su
 
 ```python
 # Idempotency decorator using DynamoDB for Lambda functions
+
 import boto3
 import json
 import hashlib

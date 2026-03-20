@@ -16,6 +16,7 @@ Machine learning frameworks need GPU drivers to offload compute operations. NVID
 
 ```bash
 # Disable the nouveau driver
+
 echo "blacklist nouveau" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
 echo "options nouveau modeset=0" | sudo tee -a /etc/modprobe.d/blacklist-nouveau.conf
 sudo dracut -f

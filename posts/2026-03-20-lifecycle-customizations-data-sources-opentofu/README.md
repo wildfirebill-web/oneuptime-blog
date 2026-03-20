@@ -1,14 +1,14 @@
-# How to Use Lifecycle Customizations with Data Sources in OpenTofu
+# How to Use Lifecycle Customizations with Data Sources in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, Lifecycle, Custom Conditions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, Lifecycle, Custom Conditions, Infrastructure as Code, DevOps
 
 Description: A guide to using lifecycle customizations with data sources in OpenTofu to add preconditions, postconditions, and control refresh behavior.
 
 ## Introduction
 
-Data sources in OpenTofu support lifecycle customizations including preconditions and postconditions. These allow you to validate assumptions about fetched data. Note that `ignore_changes` and `prevent_destroy` are not supported on data sources — only `precondition` and `postcondition` lifecycle blocks are available.
+Data sources in OpenTofu support lifecycle customizations including preconditions and postconditions. These allow you to validate assumptions about fetched data. Note that `ignore_changes` and `prevent_destroy` are not supported on data sources - only `precondition` and `postcondition` lifecycle blocks are available.
 
 ## Preconditions on Data Sources
 
@@ -144,6 +144,7 @@ data "aws_ami" "app" {
 
 ```hcl
 # By default, data sources are re-read every plan
+
 # Use depends_on to control when they're refreshed
 
 data "aws_s3_bucket_objects" "configs" {
@@ -201,4 +202,4 @@ data "aws_subnets" "private" {
 
 ## Conclusion
 
-Lifecycle customizations on data sources provide validation at the data layer — before those values are used to configure resources. Preconditions validate inputs to data source queries (such as variable formats), while postconditions validate the data returned (such as ensuring a cluster is active or a secret contains required keys). This catches configuration mismatches early in the plan phase rather than at resource creation time. Use lifecycle customizations on data sources when working with data that must meet specific requirements for your infrastructure to function correctly.
+Lifecycle customizations on data sources provide validation at the data layer - before those values are used to configure resources. Preconditions validate inputs to data source queries (such as variable formats), while postconditions validate the data returned (such as ensuring a cluster is active or a secret contains required keys). This catches configuration mismatches early in the plan phase rather than at resource creation time. Use lifecycle customizations on data sources when working with data that must meet specific requirements for your infrastructure to function correctly.

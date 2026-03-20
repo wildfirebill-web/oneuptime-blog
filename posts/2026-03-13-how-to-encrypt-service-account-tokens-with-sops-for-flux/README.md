@@ -44,6 +44,7 @@ Configure SOPS and encrypt:
 
 ```yaml
 # .sops.yaml
+
 creation_rules:
   - path_regex: .*token.*\.yaml$
     age: age1yourkey...

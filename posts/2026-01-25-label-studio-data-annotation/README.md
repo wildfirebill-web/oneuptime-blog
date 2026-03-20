@@ -28,6 +28,7 @@ Install Label Studio and start the server:
 
 ```bash
 # Install via pip
+
 pip install label-studio
 
 # Start the server

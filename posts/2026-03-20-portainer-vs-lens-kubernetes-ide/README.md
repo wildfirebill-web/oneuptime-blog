@@ -1,4 +1,4 @@
-# Portainer vs Lens: Kubernetes IDE Comparison
+# Portainer vs Lens: Kubernetes IDE Comparison - Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,25 +26,25 @@ Lens (now OpenLens) and Portainer both provide GUI interfaces for Kubernetes, bu
 
 Lens is a purpose-built Kubernetes IDE with exceptional depth:
 
-- **Real-time cluster state** — live updates of pod status, resource graphs
-- **Built-in terminal** — kubectl shell embedded in the app
-- **Prometheus integration** — built-in charts for CPU, memory per pod/node
-- **Extensions ecosystem** — installable extensions for custom tooling
-- **kubectl autocomplete** — IDE-like experience for Kubernetes objects
-- **Port forwarding** — one-click port forwarding to any pod/service
+- **Real-time cluster state** - live updates of pod status, resource graphs
+- **Built-in terminal** - kubectl shell embedded in the app
+- **Prometheus integration** - built-in charts for CPU, memory per pod/node
+- **Extensions ecosystem** - installable extensions for custom tooling
+- **kubectl autocomplete** - IDE-like experience for Kubernetes objects
+- **Port forwarding** - one-click port forwarding to any pod/service
 
-Lens is the preferred tool for Kubernetes engineers doing daily operations — it's closer to an IDE than a management UI.
+Lens is the preferred tool for Kubernetes engineers doing daily operations - it's closer to an IDE than a management UI.
 
 ## Portainer Strengths
 
 Portainer excels in team and production scenarios:
 
-- **Web-based** — no install needed; accessible from any device
-- **Multi-user RBAC** — different teams get scoped access to namespaces
-- **Helm chart UI** — browse and install Helm charts without CLI
-- **Stack deployment** — deploy Compose-style stacks to Kubernetes
-- **Edge Kubernetes** — manage K3s/K8s on edge devices
-- **Docker management** — unified management for Docker + Kubernetes
+- **Web-based** - no install needed; accessible from any device
+- **Multi-user RBAC** - different teams get scoped access to namespaces
+- **Helm chart UI** - browse and install Helm charts without CLI
+- **Stack deployment** - deploy Compose-style stacks to Kubernetes
+- **Edge Kubernetes** - manage K3s/K8s on edge devices
+- **Docker management** - unified management for Docker + Kubernetes
 
 ## The Key Distinction
 
@@ -52,6 +52,7 @@ Lens is built for individual operators who need deep Kubernetes access:
 
 ```bash
 # Lens gives you a full kubectl shell experience
+
 # You can run any kubectl command from within the UI
 kubectl get events --sort-by='.lastTimestamp' -n production
 kubectl debug -it pod/failing-pod --image=busybox --copy-to=debug-pod
@@ -81,7 +82,7 @@ Absolutely. Many platform teams use both:
 - **Portainer** for application team self-service and governance
 - **Lens** for platform engineers doing deep cluster debugging
 
-The tools don't conflict — they both read from the Kubernetes API.
+The tools don't conflict - they both read from the Kubernetes API.
 
 ## Summary
 

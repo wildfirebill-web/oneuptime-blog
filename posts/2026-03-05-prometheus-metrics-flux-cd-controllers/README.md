@@ -32,6 +32,7 @@ All Flux controllers expose these common metrics:
 
 ```text
 # Reconciliation condition (gauge)
+
 gotk_reconcile_condition{kind, name, namespace, type, status}
 
 # Reconciliation duration (histogram)

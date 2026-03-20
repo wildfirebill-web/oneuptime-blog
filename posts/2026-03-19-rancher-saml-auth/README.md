@@ -98,6 +98,7 @@ Get the identity provider metadata XML:
 
 ```bash
 # Download IdP metadata (example for ADFS)
+
 curl -sk "https://adfs.example.com/FederationMetadata/2007-06/FederationMetadata.xml" \
   > idp-metadata.xml
 

@@ -27,6 +27,7 @@ The VMware modules require specific Python libraries to talk to the vSphere API.
 
 ```bash
 # Create a dedicated virtual environment for Ansible VMware work
+
 python3 -m venv ~/ansible-vmware-env
 source ~/ansible-vmware-env/bin/activate
 

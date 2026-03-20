@@ -20,6 +20,7 @@ The default machine is the one that receives all Podman commands when no specifi
 
 ```bash
 # See which machine is the default (marked with *)
+
 podman machine ls
 ```
 

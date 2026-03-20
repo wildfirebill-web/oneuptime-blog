@@ -59,6 +59,7 @@ resource "google_cloud_run_v2_service" "app" {
 }
 
 # Allow unauthenticated access since auth is handled at the LB/WAF level
+
 resource "google_cloud_run_v2_service_iam_member" "public" {
   project  = var.project_id
   location = var.region

@@ -20,6 +20,7 @@ The `podman load` command reads images from a tar archive or standard input and 
 
 ```bash
 # Basic syntax
+
 podman load [options]
 ```
 

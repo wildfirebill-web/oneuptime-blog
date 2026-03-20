@@ -16,6 +16,7 @@ Default terms aggregation limitations:
 
 ```bash
 # Default behavior - only returns top 10
+
 curl -X GET "https://localhost:9200/orders/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

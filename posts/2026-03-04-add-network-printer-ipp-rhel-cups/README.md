@@ -14,6 +14,7 @@ The Internet Printing Protocol (IPP) is the modern standard for network printing
 
 ```bash
 # Ensure CUPS is installed and running
+
 sudo dnf install -y cups
 sudo systemctl enable --now cups
 

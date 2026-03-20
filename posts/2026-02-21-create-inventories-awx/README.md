@@ -18,6 +18,7 @@ Static inventories are the simplest type. You define hosts and groups manually.
 
 ```bash
 # Create an inventory
+
 curl -X POST "https://awx.example.com/api/v2/inventories/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWX_TOKEN" \

@@ -16,6 +16,7 @@ Ubuntu does not install NFS client tools by default in all configurations. Insta
 
 ```bash
 # Install NFS common utilities (includes mount.nfs, nfsstat, etc.)
+
 sudo apt update
 sudo apt install nfs-common -y
 

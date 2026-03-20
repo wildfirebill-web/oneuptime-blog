@@ -16,6 +16,7 @@ At its simplest, `include_vars` reads a YAML or JSON file and makes its contents
 
 ```yaml
 # basic-include-vars.yml
+
 # Loads variables from an external YAML file
 ---
 - name: Load variables from file

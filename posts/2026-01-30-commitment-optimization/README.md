@@ -161,6 +161,7 @@ def identify_commitment_candidates(baseline_df, min_baseline_hours=720):
 
 
 # Example output visualization
+
 def plot_usage_patterns(df, instance_family, region):
     """
     Visualize usage patterns to validate commitment decisions.

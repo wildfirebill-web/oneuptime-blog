@@ -51,6 +51,7 @@ Volume Gateway requires local disks for different purposes depending on the mode
 
 ```bash
 # List available local disks on the gateway
+
 aws storagegateway list-local-disks \
   --gateway-arn arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678
 

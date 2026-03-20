@@ -29,6 +29,7 @@ Install the async Cosmos DB SDK.
 
 ```bash
 # Install the Cosmos DB SDK (includes both sync and async clients)
+
 pip install azure-cosmos aiohttp
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Cisco SD-WAN, Viptela, vManage, WAN, BGP, OSPF, Overlay
+Tags: IPv6, Cisco SD-WAN, Viptela, VManage, WAN, BGP, OSPF, Overlay
 
 Description: Configure IPv6 support in Cisco SD-WAN (formerly Viptela) including service-side IPv6 addressing, transport-side IPv6, IPv6 BGP peering, and IPv6 application-aware routing policies.
 
@@ -12,7 +12,7 @@ Cisco SD-WAN supports IPv6 on both the service side (LAN-facing) and transport s
 
 ## Cisco SD-WAN IPv6 Architecture
 
-```
+```text
 Cisco SD-WAN IPv6 Components:
 ┌────────────────────────────────────────────────────────┐
 │ vManage (Controller)                                   │
@@ -29,7 +29,7 @@ Cisco SD-WAN IPv6 Components:
 
 ## vEdge IPv6 Service-Side Configuration
 
-```
+```text
 # vManage CLI equivalent - configure IPv6 on LAN interface
 
 system
@@ -89,8 +89,9 @@ vpn 1
 
 ## OMP IPv6 Route Distribution
 
-```
+```text
 # Verify OMP distributes IPv6 prefixes
+
 show omp routes vpn 1 family ipv6
 
 # Output shows:
@@ -106,7 +107,7 @@ show ipv6 route vrf 1
 
 ## Cisco IOS XE SD-WAN IPv6 (cEdge)
 
-```
+```text
 ! IOS XE SD-WAN device (ISR/ASR) - service VPN IPv6
 
 ! Configure service VPN interface
@@ -135,7 +136,7 @@ show ipv6 dhcp binding
 
 ## SD-WAN IPv6 Application-Aware Routing
 
-```
+```text
 # vManage Policy for IPv6 traffic steering
 
 # Application-Aware Routing Policy:

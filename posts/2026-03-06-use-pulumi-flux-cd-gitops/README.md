@@ -28,6 +28,7 @@ Initialize a new Pulumi project for your infrastructure.
 
 ```bash
 # Create a new Pulumi project using TypeScript
+
 mkdir flux-pulumi-infra && cd flux-pulumi-infra
 pulumi new typescript --name flux-infrastructure --yes
 

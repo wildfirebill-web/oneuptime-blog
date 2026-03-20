@@ -18,6 +18,7 @@ Install the library:
 
 ```bash
 # Install the Google Cloud Storage Python library
+
 pip install google-cloud-storage
 ```
 

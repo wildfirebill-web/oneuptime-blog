@@ -16,6 +16,7 @@ SSSD supports debug levels from 0 (minimal) to 9 (most verbose). Level 6 is typi
 
 ```bash
 # Edit the SSSD configuration
+
 sudo vi /etc/sssd/sssd.conf
 ```
 

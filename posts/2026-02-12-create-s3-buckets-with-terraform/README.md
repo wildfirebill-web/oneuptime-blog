@@ -20,6 +20,7 @@ This block tells Terraform to use the AWS provider and sets your target region:
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_providers {
     aws = {

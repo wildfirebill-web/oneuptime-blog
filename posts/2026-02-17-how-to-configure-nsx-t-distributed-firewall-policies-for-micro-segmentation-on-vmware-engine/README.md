@@ -43,6 +43,7 @@ Your GCVE private cloud includes an NSX-T Manager instance. Get the access crede
 
 ```bash
 # Retrieve NSX-T Manager credentials
+
 gcloud vmware private-clouds nsx credentials describe \
   --private-cloud=my-gcve-cloud \
   --location=us-central1

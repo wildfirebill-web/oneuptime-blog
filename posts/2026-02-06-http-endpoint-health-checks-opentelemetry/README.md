@@ -18,6 +18,7 @@ Verify the receiver is available in your collector build:
 
 ```bash
 # Check if the httpcheck receiver is included in your collector binary.
+
 # This lists all supported components.
 otelcol-contrib components | grep httpcheck
 ```

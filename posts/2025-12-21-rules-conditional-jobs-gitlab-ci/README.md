@@ -204,6 +204,7 @@ lint:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 
 # Skip duplicate pipelines
+
 build:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"

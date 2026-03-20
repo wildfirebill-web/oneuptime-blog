@@ -26,6 +26,7 @@ Create a bucket using the Alibaba Cloud console or CLI.
 
 ```bash
 # Create an OSS bucket using ossutil
+
 ossutil mb oss://flux-manifests --region cn-hangzhou
 
 # Or using the aliyun CLI

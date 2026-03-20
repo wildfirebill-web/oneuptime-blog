@@ -144,6 +144,7 @@ State locking prevents two deployments from modifying state simultaneously. Diff
 
 ```bash
 # If a lock gets stuck (use with extreme caution)
+
 cd cdktf.out/stacks/my-stack
 terraform force-unlock LOCK_ID
 ```

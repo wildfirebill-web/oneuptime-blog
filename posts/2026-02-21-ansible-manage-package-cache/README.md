@@ -27,6 +27,7 @@ The most common cache operation is updating it to get the latest package informa
 
 ```yaml
 # Update the APT cache (equivalent to apt-get update)
+
 - name: Update APT cache
   ansible.builtin.apt:
     update_cache: true

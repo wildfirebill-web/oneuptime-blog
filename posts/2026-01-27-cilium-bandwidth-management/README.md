@@ -53,6 +53,7 @@ Before configuring bandwidth management, ensure your cluster meets these require
 
 ```bash
 # Check Cilium is installed and running
+
 cilium status
 
 # Verify kernel version (5.1+ required for full EDT support)

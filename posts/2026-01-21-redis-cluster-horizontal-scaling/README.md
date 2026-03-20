@@ -52,6 +52,7 @@ Example:
 
 ```bash
 # Keys with same hash tag go to same slot
+
 {user:1000}.profile    # All these keys
 {user:1000}.orders     # go to the same
 {user:1000}.cart       # hash slot

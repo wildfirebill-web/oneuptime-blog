@@ -39,6 +39,7 @@ Create the requirements file:
 
 ```text
 # backend/requirements.txt - Python dependencies
+
 fastapi==0.108.0
 uvicorn[standard]==0.25.0
 sqlalchemy==2.0.25

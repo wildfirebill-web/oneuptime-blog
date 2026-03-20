@@ -8,7 +8,7 @@ Description: Configure IPv6 Router Advertisements with DNS information using RFC
 
 ## Introduction
 
-RFC 8106 (updated from RFC 6106) defines two ICMPv6 Router Advertisement options — RDNSS and DNSSL — that allow routers to deliver DNS configuration to clients without requiring a DHCPv6 server. This is essential for purely SLAAC-based IPv6 deployments.
+RFC 8106 (updated from RFC 6106) defines two ICMPv6 Router Advertisement options - RDNSS and DNSSL - that allow routers to deliver DNS configuration to clients without requiring a DHCPv6 server. This is essential for purely SLAAC-based IPv6 deployments.
 
 ## RFC 8106 Overview
 
@@ -54,6 +54,7 @@ The RDNSS/DNSSL lifetime should be at least `2 * MaxRtrAdvInterval` to ensure cl
 
 ```bash
 # If MaxRtrAdvInterval = 100s:
+
 # MinRDNSSLifetime = 2 * 100 = 200s (minimum safe)
 # Recommended = 3 * 100 = 300s (safer)
 # Used in examples = 600s (very safe, 6x MaxRtrAdvInterval)
@@ -101,7 +102,7 @@ scutil --dns | head -20
 
 ## Configuring on Cisco IOS-XE
 
-```
+```text
 ! IOS-XE 16.6+ supports RFC 8106 RDNSS
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 nd ra dns server 2001:db8:1:1::53 infinite

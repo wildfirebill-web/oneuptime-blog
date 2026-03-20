@@ -115,6 +115,7 @@ Monitor connection creation patterns to predict capacity needs:
 
 ```bash
 # Track new connection rate from Hubble
+
 hubble observe --protocol TCP --last 5000 -o json | \
   jq 'select(.l4.TCP.flags.SYN == true and .l4.TCP.flags.ACK == false) | .time' | \
   sort | uniq -c

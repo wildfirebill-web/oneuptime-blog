@@ -22,6 +22,7 @@ Deploy cert-manager for certificate management:
 
 ```bash
 # Install cert-manager CRDs and components
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.3/cert-manager.yaml
 
 # Verify installation

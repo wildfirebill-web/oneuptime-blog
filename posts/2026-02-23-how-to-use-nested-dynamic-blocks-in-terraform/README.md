@@ -249,6 +249,7 @@ When something goes wrong, add `terraform console` to your workflow. You can ins
 
 ```bash
 # Launch terraform console to test expressions
+
 terraform console
 
 # Check what the for_each will receive

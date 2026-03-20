@@ -28,6 +28,7 @@ Enable the API and install the client library:
 
 ```bash
 # Enable the Cloud Translation API
+
 gcloud services enable translate.googleapis.com
 
 # Install the Python client library

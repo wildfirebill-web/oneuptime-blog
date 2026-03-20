@@ -934,6 +934,7 @@ The Dockerfile uses multi-stage builds to create a minimal production image.
 
 ```dockerfile
 # Build stage
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app

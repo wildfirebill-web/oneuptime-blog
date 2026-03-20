@@ -62,6 +62,7 @@ Install Portainer via Docker CLI:
 
 ```bash
 # Create persistent data volume
+
 docker volume create portainer_data
 
 # Run Portainer

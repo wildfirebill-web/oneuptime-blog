@@ -22,6 +22,7 @@ Here's an example that'll fail if the table has a composite key:
 
 ```python
 # This fails because we're only providing the partition key
+
 # when the table also has a sort key defined
 import boto3
 

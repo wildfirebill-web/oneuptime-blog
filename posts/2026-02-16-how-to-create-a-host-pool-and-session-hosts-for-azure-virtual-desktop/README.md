@@ -66,6 +66,7 @@ Using the Azure CLI:
 
 ```bash
 # Create a pooled host pool with breadth-first load balancing
+
 az desktopvirtualization hostpool create \
   --resource-group myResourceGroup \
   --name avd-pooled-hp \

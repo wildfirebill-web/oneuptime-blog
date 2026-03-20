@@ -44,6 +44,7 @@ Inspector v2 is enabled at the account level. You choose which resource types to
 
 ```hcl
 # Enable Inspector with all scan types
+
 resource "aws_inspector2_enabler" "main" {
   account_ids    = [data.aws_caller_identity.current.account_id]
   resource_types = ["EC2", "ECR", "LAMBDA", "LAMBDA_CODE"]

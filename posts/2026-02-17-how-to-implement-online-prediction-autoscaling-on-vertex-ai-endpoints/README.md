@@ -44,6 +44,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Upload your model
+
 model = aiplatform.Model.upload(
     display_name="fraud-detector-v3",
     artifact_uri="gs://your-bucket/models/fraud-v3/",

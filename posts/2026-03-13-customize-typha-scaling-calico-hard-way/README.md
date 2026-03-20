@@ -31,6 +31,7 @@ In clusters with dedicated infrastructure node pools (labeled `node-role=infra`)
 
 ```yaml
 # typha-deployment-infra.yaml
+
 # Typha pinned to nodes labeled node-role=infra via node affinity
 apiVersion: apps/v1
 kind: Deployment

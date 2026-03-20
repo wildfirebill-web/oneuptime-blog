@@ -102,6 +102,7 @@ Update your Ubuntu system and install required packages:
 
 ```bash
 # Update the package index and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required dependencies

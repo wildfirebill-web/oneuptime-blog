@@ -16,6 +16,7 @@ Flux CD HelmRelease resources define how Helm charts are installed and configure
 
 ```bash
 # Install required tools
+
 # Flux CLI
 curl -s https://fluxcd.io/install.sh | sudo bash
 

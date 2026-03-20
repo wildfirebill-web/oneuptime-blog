@@ -95,6 +95,7 @@ Before making changes, check what your system is currently using:
 
 ```bash
 # Check the current congestion control algorithm
+
 sysctl net.ipv4.tcp_congestion_control
 # Output: net.ipv4.tcp_congestion_control = cubic
 

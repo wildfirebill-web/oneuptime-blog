@@ -31,6 +31,7 @@ Start with the organization and OU structure.
 
 ```hcl
 # Create the AWS Organization
+
 resource "aws_organizations_organization" "main" {
   aws_service_access_principals = [
     "cloudtrail.amazonaws.com",

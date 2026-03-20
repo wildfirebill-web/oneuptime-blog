@@ -20,6 +20,7 @@ You need a storage account before creating containers. If you do not have one ye
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

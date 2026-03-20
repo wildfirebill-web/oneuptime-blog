@@ -55,6 +55,7 @@ ActiveMQ requires Java 11 or higher. Let us install OpenJDK 17, which is the cur
 
 ```bash
 # Update the package index
+
 sudo apt update
 
 # Install OpenJDK 17 JDK

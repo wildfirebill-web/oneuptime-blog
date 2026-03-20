@@ -141,6 +141,7 @@ To test it, make httpbin return errors using the /status endpoint:
 
 ```bash
 # Send requests that return 500
+
 for i in $(seq 1 5); do
   kubectl exec -n circuit-test deploy/fortio -c fortio -- \
     fortio load -c 1 -qps 0 -n 1 http://httpbin:8000/status/500

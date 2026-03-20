@@ -22,6 +22,7 @@ Each cluster gets its own ingress gateway:
 
 ```bash
 # Cluster 1
+
 istioctl install --context="${CTX_CLUSTER1}" -f - <<EOF
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator

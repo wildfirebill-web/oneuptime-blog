@@ -28,6 +28,7 @@ Replace default admin credentials with enterprise authentication:
 
 ```yaml
 # grafana-auth-values.yaml
+
 grafana:
   grafana.ini:
     server:

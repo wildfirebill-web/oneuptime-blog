@@ -26,6 +26,7 @@ Deploy LitmusChaos using the official manifests:
 
 ```bash
 # Install LitmusChaos CRDs and operator
+
 kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v3.0.0.yaml
 
 # Verify installation

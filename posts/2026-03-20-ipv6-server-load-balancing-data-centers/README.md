@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Load Balancing, HAProxy, NGINX, Data Center, High Availability
+Tags: IPv6, Load Balancing, HAProxy, Nginx, Data Center, High Availability
 
 Description: Configure IPv6 server load balancing in data centers using HAProxy and NGINX, including VIP setup and health check configuration.
 
@@ -14,7 +14,7 @@ Server load balancers (SLBs) in IPv6 data centers operate on Virtual IP (VIP) ad
 
 HAProxy natively supports IPv6 frontends and backends. Here is a complete HTTP load balancing configuration:
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -28,6 +28,7 @@ defaults
     timeout server  30s
 
 # Frontend: listen on IPv6 VIP
+
 frontend web_frontend
     bind [2001:db8:vip::1]:80
     bind [2001:db8:vip::1]:443 ssl crt /etc/ssl/certs/server.pem
@@ -74,7 +75,7 @@ server {
 
 ## Direct Server Return (DSR) with IPv6
 
-DSR is efficient for high-traffic load balancing — backends respond directly to clients without traffic returning through the load balancer:
+DSR is efficient for high-traffic load balancing - backends respond directly to clients without traffic returning through the load balancer:
 
 ```bash
 # On the load balancer: send traffic to backend with original VIP destination

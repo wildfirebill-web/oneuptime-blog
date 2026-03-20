@@ -159,6 +159,7 @@ After all workloads are on the new revision:
 
 ```bash
 # Remove the old canary tag if not needed
+
 istioctl tag remove canary
 
 # Remove the old revision

@@ -24,6 +24,7 @@ First, find out which backends are failing health probes:
 
 ```bash
 # Check Load Balancer health probe status
+
 az network lb show \
   --resource-group myResourceGroup \
   --name myLoadBalancer \

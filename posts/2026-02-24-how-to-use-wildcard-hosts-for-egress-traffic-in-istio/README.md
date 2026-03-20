@@ -54,6 +54,7 @@ After applying the ServiceEntry, test access from a pod:
 
 ```bash
 # This should work
+
 kubectl exec deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" https://api.example.com
 
 # This should also work

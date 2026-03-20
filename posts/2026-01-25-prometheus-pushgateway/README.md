@@ -35,6 +35,7 @@ Pushgateway is NOT recommended for:
 
 ```bash
 # Run Pushgateway container
+
 docker run -d \
   --name pushgateway \
   -p 9091:9091 \

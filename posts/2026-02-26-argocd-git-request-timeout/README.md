@@ -41,6 +41,7 @@ After updating this ConfigMap, restart the repo server to apply the change:
 
 ```bash
 # Apply the ConfigMap
+
 kubectl apply -f argocd-cmd-params-cm.yaml
 
 # Restart the repo server

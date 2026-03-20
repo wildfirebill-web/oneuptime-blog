@@ -24,6 +24,7 @@ The key principle for troubleshooting a new installation is to start from the bo
 
 ```bash
 # Check if Cilium pods are running
+
 kubectl get pods -n kube-system -l k8s-app=cilium
 
 # Check operator

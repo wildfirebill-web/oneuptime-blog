@@ -16,6 +16,7 @@ The function computes the SHA-512 hash of a given string and returns the result 
 
 ```hcl
 # Compare the formats
+
 output "hex_format" {
   value = sha512("hello world")
   # 128-character hex string

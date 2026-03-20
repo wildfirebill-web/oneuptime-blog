@@ -8,7 +8,7 @@ Description: Step-by-step guide to upgrading from Portainer Community Edition to
 
 ## Introduction
 
-Portainer Business Edition (BE) extends the Community Edition with features like enhanced RBAC, SSO/LDAP integration, Edge Computing management, and priority support. The migration preserves all existing data—users, environments, stacks, and configurations—making the upgrade seamless.
+Portainer Business Edition (BE) extends the Community Edition with features like enhanced RBAC, SSO/LDAP integration, Edge Computing management, and priority support. The migration preserves all existing data-users, environments, stacks, and configurations-making the upgrade seamless.
 
 ## Key Differences: CE vs BE
 
@@ -35,6 +35,7 @@ Portainer Business Edition (BE) extends the Community Edition with features like
 
 ```bash
 # Always backup before upgrading
+
 docker stop portainer
 
 docker run --rm \

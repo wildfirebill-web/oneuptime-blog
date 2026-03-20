@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Testing, Contract Tests, Module Interface, API Testing
 
-Description: Learn how to write contract tests for OpenTofu modules that verify module interfaces — inputs, outputs, and behavior — remain stable as modules evolve, preventing breaking changes for consumers.
+Description: Learn how to write contract tests for OpenTofu modules that verify module interfaces - inputs, outputs, and behavior - remain stable as modules evolve, preventing breaking changes for consumers.
 
 ## Introduction
 
@@ -22,6 +22,7 @@ Contract tests verify the interface of an OpenTofu module: the inputs it accepts
 
 ```hcl
 # tests/contract.tftest.hcl
+
 # This file is the "contract" - what consumers can rely on
 
 mock_provider "aws" {

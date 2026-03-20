@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Transmission, Torrent, Bittorrent, Self-Hosted, Download-manager
+Tags: Docker, Transmission, Torrent, BitTorrent, Self-Hosted, Download-manager
 
 Description: Deploy the Transmission BitTorrent client in Docker with a web interface for managing torrent downloads on a headless server.
 
@@ -25,6 +25,7 @@ There are many torrent clients available, but Transmission stands out for headle
 
 ```bash
 # Create the Transmission project directory
+
 mkdir -p ~/transmission/{config,downloads,watch}
 cd ~/transmission
 ```

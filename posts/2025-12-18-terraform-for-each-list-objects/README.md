@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, For_each, Loops, Lists, Objects, HCL
+Tags: Terraform, for_each, Loops, Lists, Objects, HCL
 
 Description: Learn how to effectively use for_each with list of objects in Terraform, including conversion techniques, indexing strategies, and best practices for managing multiple similar resources.
 
@@ -51,6 +51,7 @@ variable "users" {
 }
 
 # Convert list to map using 'name' as the key
+
 resource "aws_iam_user" "users" {
   for_each = { for user in var.users : user.name => user }
 

@@ -19,7 +19,7 @@ provider "kubernetes" {
 }
 ```
 
-## Resource Configuration
+Resource Configuration
 
 ```hcl
 resource "kubernetes_namespace" "app" {
@@ -35,6 +35,7 @@ resource "kubernetes_namespace" "app" {
 }
 
 # Example Kubernetes resource for this topic
+
 resource "kubernetes_deployment" "app" {
   metadata {
     name      = var.app_name

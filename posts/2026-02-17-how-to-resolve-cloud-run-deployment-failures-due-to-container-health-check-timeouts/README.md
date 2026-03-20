@@ -48,6 +48,7 @@ The first thing to do is check what actually happened during container startup:
 
 ```bash
 # View logs for the failed revision
+
 gcloud logging read \
     'resource.type="cloud_run_revision" AND resource.labels.revision_name="my-service-00002-abc"' \
     --project=my-project \

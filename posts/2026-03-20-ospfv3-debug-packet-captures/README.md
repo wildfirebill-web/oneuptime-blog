@@ -14,6 +14,7 @@ When OSPFv3 adjacencies fail or routes are not being exchanged, packet captures 
 
 ```bash
 # Capture all OSPFv3 packets (IP protocol 89)
+
 sudo tcpdump -i eth0 -n "ip6 proto 89"
 
 # With verbose decode
@@ -25,7 +26,7 @@ sudo tcpdump -i eth0 -n -w /tmp/ospfv3.pcap "ip6 proto 89"
 
 ## Understanding tcpdump OSPFv3 Output
 
-```
+```text
 12:00:01.000 IP6 fe80::1 > ff02::5: OSPFv3, Hello, length 44
   Router-ID 1.1.1.1, Backup-Designated-Router 0.0.0.0
   Hello-Interval 10, Dead-Interval 40
@@ -42,20 +43,20 @@ sudo tcpdump -i eth0 -n -w /tmp/ospfv3.pcap "ip6 proto 89"
 
 Open the pcap file in Wireshark and apply these filters:
 
-```
+```text
 # All OSPFv3 traffic
 ospf
 
 # Only Hello packets
 ospf.msg == 1
 
-# Only DBD (Database Description) — adjacency initialization
+# Only DBD (Database Description) - adjacency initialization
 ospf.msg == 2
 
 # Only LSR (Link State Request)
 ospf.msg == 3
 
-# Only LSU (Link State Update — contains actual LSAs)
+# Only LSU (Link State Update - contains actual LSAs)
 ospf.msg == 4
 
 # Only LSAck
@@ -99,7 +100,7 @@ tshark -i eth0 -Y "ospf.msg == 1" \
 
 # If two routers show different hello intervals:
 # fe80::1   10   40
-# fe80::2   30   120   ← MISMATCH — adjacency will not form
+# fe80::2   30   120   ← MISMATCH - adjacency will not form
 ```
 
 ## Checking for MTU Issues in DBD

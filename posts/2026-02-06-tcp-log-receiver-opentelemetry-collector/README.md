@@ -301,7 +301,7 @@ receivers:
         parse_from: body
 ```
 
-### Resource Attributes
+Resource Attributes
 
 Map parsed fields to resource attributes:
 
@@ -553,6 +553,7 @@ class TCPLogClient:
             self.socket.close()
 
 # Usage
+
 client = TCPLogClient('otel-collector.example.com', 54525)
 
 try:

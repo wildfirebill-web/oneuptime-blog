@@ -80,6 +80,7 @@ The collector exposes metrics that help diagnose queue issues.
 
 ```bash
 # Query collector metrics endpoint
+
 curl http://localhost:8888/metrics | grep -E "(queue|dropped|refused)"
 
 # Key metrics to look for:

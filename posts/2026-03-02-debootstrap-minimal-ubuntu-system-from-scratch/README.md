@@ -23,6 +23,7 @@ The result is a directory containing a functional (though minimal) Debian/Ubuntu
 
 ```bash
 # Install debootstrap (available on any Debian/Ubuntu system)
+
 sudo apt install debootstrap -y
 
 # Also available on Fedora/RHEL for cross-distro bootstrap operations

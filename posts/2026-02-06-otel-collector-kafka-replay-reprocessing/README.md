@@ -18,6 +18,7 @@ The key settings that make replay possible are retention, encoding format, and p
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

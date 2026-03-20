@@ -16,6 +16,7 @@ Download Burp Suite Community Edition (free) or Professional from PortSwigger:
 
 ```bash
 # After downloading, make executable and run
+
 chmod +x burpsuite_community_linux_*.sh
 ./burpsuite_community_linux_*.sh
 

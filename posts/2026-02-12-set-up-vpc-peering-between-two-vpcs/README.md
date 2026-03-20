@@ -41,6 +41,7 @@ Before creating a peering connection, verify that your VPCs have non-overlapping
 
 ```bash
 # Check CIDR blocks for both VPCs
+
 aws ec2 describe-vpcs \
   --vpc-ids vpc-aaa111 vpc-bbb222 \
   --query 'Vpcs[].{VpcId:VpcId, CidrBlock:CidrBlock}' \

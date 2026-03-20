@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Adguard, DNS, Ad-blocking, Networking, Self-Hosted, Privacy
+Tags: Docker, AdGuard, DNS, Ad-blocking, Networking, Self-Hosted, Privacy
 
 Description: A complete guide to deploying AdGuard Home in Docker for network-wide ad blocking and DNS filtering on your home network.
 
@@ -29,6 +29,7 @@ This command disables the stub listener so port 53 becomes available:
 
 ```bash
 # Stop systemd-resolved from binding to port 53
+
 sudo sed -i 's/#DNSStubListener=yes/DNSStubListener=no/' /etc/systemd/resolved.conf
 sudo systemctl restart systemd-resolved
 ```

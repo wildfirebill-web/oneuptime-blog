@@ -22,6 +22,7 @@ Copy a value from one resource to another:
 
 ```yaml
 # base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -351,7 +352,7 @@ replacements:
     - spec.template.spec.nodeSelector.[node-pool]
 ```
 
-## Resource request propagation
+Resource request propagation
 
 Copy resource limits across containers:
 

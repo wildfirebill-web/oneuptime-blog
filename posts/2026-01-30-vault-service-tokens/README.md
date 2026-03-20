@@ -26,6 +26,7 @@ Service tokens differ from batch tokens in several important ways:
 
 ```bash
 # Create a basic service token with a policy attached
+
 vault token create \
   -policy="app-secrets-read" \
   -ttl="24h" \

@@ -42,6 +42,7 @@ Start by creating a new Functions project locally.
 
 ```bash
 # Create the function project
+
 func init iot-to-adt --python
 
 cd iot-to-adt

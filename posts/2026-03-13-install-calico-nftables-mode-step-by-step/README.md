@@ -24,6 +24,7 @@ Installing Calico in nftables mode requires a kernel with nftables support (4.2+
 
 ```bash
 # On each node
+
 uname -r
 nft --version
 

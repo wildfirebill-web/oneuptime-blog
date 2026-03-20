@@ -78,6 +78,7 @@ Verify:
 ```bash
 sudo ethtool eth0 | grep -i wake
 # Should now show: Wake-on: g
+
 ```
 
 This setting does not survive a reboot - the NIC resets to its default. You need to make it persistent.

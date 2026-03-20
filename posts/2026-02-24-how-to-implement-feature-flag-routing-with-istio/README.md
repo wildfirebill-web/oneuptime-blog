@@ -302,6 +302,7 @@ Track usage and performance per feature version:
 
 ```promql
 # Request count per version (shows feature adoption)
+
 sum(rate(istio_requests_total{
   destination_service="checkout.production.svc.cluster.local",
   reporter="destination"

@@ -22,6 +22,7 @@ ActiveMQ Classic is the traditional broker widely used in Java EE environments.
 
 ```yaml
 # docker-compose.yml - ActiveMQ Classic
+
 version: "3.8"
 
 services:

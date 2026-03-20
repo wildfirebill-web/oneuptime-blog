@@ -292,6 +292,7 @@ Check that all Thanos components can see each other:
 
 ```bash
 # Check Querier stores
+
 kubectl port-forward -n istio-system svc/thanos-query 9090:9090 &
 curl -s localhost:9090/api/v1/stores | jq .
 ```

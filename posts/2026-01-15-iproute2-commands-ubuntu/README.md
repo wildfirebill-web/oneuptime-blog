@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Iproute2, Ip Command, Linux, Tutorial
+Tags: Ubuntu, Networking, iproute2, ip command, Linux, Tutorial
 
 Description: Complete guide to iproute2 commands (ip, ss, tc) for modern Linux network configuration and management on Ubuntu.
 
@@ -27,6 +27,7 @@ iproute2 is the modern Linux networking toolkit that replaces legacy net-tools (
 
 ```bash
 # Show all addresses
+
 ip addr
 
 # Short form

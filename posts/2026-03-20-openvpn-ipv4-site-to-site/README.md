@@ -14,6 +14,7 @@ Static key mode is simpler but only supports exactly two endpoints.
 
 ```bash
 # Generate a shared static key on the server
+
 openvpn --genkey secret /etc/openvpn/static.key
 
 # Copy static.key to the remote site securely
@@ -126,4 +127,4 @@ ping 192.168.2.10
 ip route show dev tun0
 ```
 
-The `iroute` directive in the CCD file is critical — it tells the OpenVPN server to direct traffic for that subnet through the specified client connection.
+The `iroute` directive in the CCD file is critical - it tells the OpenVPN server to direct traffic for that subnet through the specified client connection.

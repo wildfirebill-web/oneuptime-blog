@@ -20,6 +20,7 @@ Without explicit RBAC rules, pods using the default ServiceAccount have no speci
 
 ```bash
 # Create a test Secret
+
 kubectl create secret generic sensitive-data \
   --from-literal=password=SuperSecret123 \
   --namespace production

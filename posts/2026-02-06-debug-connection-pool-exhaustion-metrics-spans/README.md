@@ -20,6 +20,7 @@ import threading
 meter = metrics.get_meter("connection-pool-monitor")
 
 # Create gauges for pool state
+
 pool_active = meter.create_up_down_counter(
     name="db.pool.connections.active",
     description="Number of connections currently checked out",

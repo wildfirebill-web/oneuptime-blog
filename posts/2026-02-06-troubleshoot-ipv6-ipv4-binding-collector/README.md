@@ -20,6 +20,7 @@ Check what address family the Collector is actually using:
 
 ```bash
 # Check the Collector's listening sockets
+
 kubectl exec -it otel-collector-pod -- ss -tlnp
 
 # Look for the address family:

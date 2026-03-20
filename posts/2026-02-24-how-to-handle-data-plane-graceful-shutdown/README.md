@@ -198,6 +198,7 @@ Track connection termination errors in your metrics:
 
 ```promql
 # Requests that failed due to upstream connection termination
+
 rate(istio_requests_total{response_flags="UC"}[5m])
 
 # Requests that failed due to no healthy upstream

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, AAAA Records, getaddrinfo, Networking, Happy Eyeballs, Programming
+Tags: IPv6, DNS, AAAA Records, Getaddrinfo, Networking, Happy Eyeballs, Programming
 
 Description: Implement IPv6-aware DNS resolution in applications using getaddrinfo, handling AAAA and A record lookups, Happy Eyeballs, and fallback behavior.
 
@@ -139,6 +139,7 @@ async def resolve_prefer_ipv6(hostname: str) -> Optional[Tuple[str, int]]:
     return addr, family
 
 # Check for AAAA record existence
+
 import dns.resolver
 
 def check_aaaa_record(hostname: str) -> bool:

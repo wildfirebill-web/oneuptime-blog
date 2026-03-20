@@ -41,6 +41,7 @@ First, create the file system with the Multi-AZ deployment type:
 
 ```bash
 # Create a Multi-AZ FSx for Windows file system
+
 aws fsx create-file-system \
   --file-system-type WINDOWS \
   --storage-capacity 300 \

@@ -182,6 +182,7 @@ Track the status of installation attempts:
 
 ```bash
 # Check HelmRelease status
+
 flux get helmrelease my-app
 
 # Check detailed status including retry count

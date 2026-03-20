@@ -27,6 +27,7 @@ This guide walks through configuring the Cilium agent for endpoint management, c
 
 ```bash
 # List all CiliumEndpoints in a namespace
+
 kubectl get ciliumendpoints -n default
 
 # Get detailed view of a specific endpoint

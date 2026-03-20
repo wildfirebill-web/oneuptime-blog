@@ -25,6 +25,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Verify Flux is running
+
 flux check
 
 # Verify your Backstage instance

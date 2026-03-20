@@ -14,6 +14,7 @@ The New Relic Infrastructure Agent monitors RHEL 9 system health and integrates 
 
 ```bash
 # Add New Relic repository
+
 sudo curl -o /etc/yum.repos.d/newrelic-infra.repo \
   https://download.newrelic.com/infrastructure_agent/linux/yum/el/9/x86_64/newrelic-infra.repo
 

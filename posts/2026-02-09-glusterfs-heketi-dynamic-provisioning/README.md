@@ -24,6 +24,7 @@ GlusterFS requires dedicated raw block devices on each storage node. These shoul
 
 ```bash
 # On each storage node, identify available disks
+
 lsblk
 sudo fdisk -l
 

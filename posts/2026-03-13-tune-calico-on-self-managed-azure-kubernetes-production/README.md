@@ -30,6 +30,7 @@ Azure Accelerated Networking enables SR-IOV and increases effective throughput. 
 
 ```bash
 # Check if accelerated networking is enabled on Azure VMs
+
 az network nic show --resource-group <rg-name> --name <nic-name> \
   --query "enableAcceleratedNetworking"
 

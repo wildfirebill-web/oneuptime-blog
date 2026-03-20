@@ -47,6 +47,7 @@ It's a single CLI command:
 
 ```bash
 # Reserve 100 concurrent executions for a function
+
 aws lambda put-function-concurrency \
   --function-name order-processor \
   --reserved-concurrent-executions 100

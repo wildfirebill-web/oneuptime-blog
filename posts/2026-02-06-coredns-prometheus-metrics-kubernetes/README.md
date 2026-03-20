@@ -14,6 +14,7 @@ Verify that CoreDNS is exposing metrics:
 
 ```bash
 # Find CoreDNS pod IPs
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns -o wide
 
 # Test the metrics endpoint

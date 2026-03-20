@@ -25,6 +25,7 @@ This guide covers everything from basic Prometheus setup to writing custom PromQ
 
 ```yaml
 # prometheus-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

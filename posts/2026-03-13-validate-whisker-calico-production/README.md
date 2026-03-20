@@ -16,6 +16,7 @@ Validating Whisker in production requires confirming that it accurately represen
 
 ```bash
 # Check Whisker pods are running and healthy
+
 kubectl get pods -n calico-system -l app=whisker
 kubectl logs -n calico-system -l app=whisker | grep -i "error\|warn" | tail -10
 

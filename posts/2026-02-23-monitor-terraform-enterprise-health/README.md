@@ -18,6 +18,7 @@ TFE exposes a health check endpoint that reports the status of its internal comp
 
 ```bash
 # Basic health check
+
 curl -s https://tfe.example.com/_health_check
 
 # Parse the response for component status

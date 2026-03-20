@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Oracle Cloud Free Tier
+# How to Deploy Portainer on Oracle Cloud Free Tier - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -61,6 +61,7 @@ OCI uses Security Lists and Network Security Groups. Add ingress rules:
 
 ```bash
 # OCI instances often have additional iptables rules
+
 # Open these ports at the OS level too
 sudo iptables -I INPUT 1 -p tcp --dport 9000 -j ACCEPT
 sudo iptables -I INPUT 1 -p tcp --dport 9443 -j ACCEPT

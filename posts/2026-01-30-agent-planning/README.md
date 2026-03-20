@@ -570,6 +570,7 @@ First, define the available actions for the agent to use.
 
 ```python
 # Define available actions for a DevOps agent
+
 devops_actions = [
     {
         "name": "run_tests",

@@ -32,6 +32,7 @@ First, you need to enable the Data Lineage API in your project. This is separate
 
 ```bash
 # Enable the Data Lineage API for your project
+
 gcloud services enable datalineage.googleapis.com --project=my-project-id
 
 # Also ensure Data Catalog is enabled

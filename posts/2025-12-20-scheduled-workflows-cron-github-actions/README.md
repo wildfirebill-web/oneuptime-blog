@@ -40,6 +40,7 @@ Here is a simple workflow that runs daily:
 
 ```yaml
 # .github/workflows/daily-tasks.yml
+
 name: Daily Tasks
 
 on:

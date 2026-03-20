@@ -18,6 +18,7 @@ Before diving into solutions, let's understand what happens when Terraform proje
 
 ```hcl
 # The monolith anti-pattern: everything in one directory
+
 # This becomes unmanageable quickly
 
 # main.tf - 3000+ lines
@@ -825,7 +826,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `### Terraform Plan - ${{ matrix.environment }}\n\n\`\`\`hcl\n${truncatedPlan}\n\`\`\``
+              body: `### Terraform Plan - ${{ matrix.environment }}\n\n```hcl\n${truncatedPlan}\n````
             });
 
   # Apply to dev automatically on merge

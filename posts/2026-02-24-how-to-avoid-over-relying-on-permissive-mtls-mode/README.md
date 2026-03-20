@@ -142,6 +142,7 @@ Then test every service in that namespace:
 
 ```bash
 # Test service-to-service within the namespace
+
 kubectl exec deploy/sleep -n test-namespace -- curl -s -o /dev/null -w "%{http_code}" http://httpbin.test-namespace:8000/get
 
 # Test cross-namespace communication

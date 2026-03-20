@@ -26,6 +26,7 @@ This guide covers installing Calico on a single-node kubeadm cluster, including 
 
 ```bash
 # Install container runtime (containerd)
+
 sudo apt-get update
 sudo apt-get install -y containerd
 sudo mkdir -p /etc/containerd

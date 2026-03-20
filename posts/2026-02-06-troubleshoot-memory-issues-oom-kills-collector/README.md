@@ -52,6 +52,7 @@ Check collector logs for memory-related messages:
 
 ```bash
 # Search for OOM-related log entries
+
 kubectl logs -n observability otel-collector-<pod-id> | grep -i "memory\|oom\|killed"
 
 # For Docker deployments

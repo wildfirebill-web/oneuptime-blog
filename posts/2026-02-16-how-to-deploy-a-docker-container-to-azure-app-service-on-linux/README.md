@@ -27,6 +27,7 @@ Let us start with a simple Node.js application as an example. Here is a Dockerfi
 
 ```dockerfile
 # Dockerfile - Multi-stage build for a Node.js application
+
 # Stage 1: Build the application
 FROM node:20-alpine AS builder
 

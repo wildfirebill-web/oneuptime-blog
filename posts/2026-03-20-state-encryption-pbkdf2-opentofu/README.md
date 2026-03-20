@@ -1,4 +1,4 @@
-# How to Configure State Encryption with PBKDF2 in OpenTofu
+# How to Configure State Encryption with PBKDF2 in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure OpenTofu state file encryption using the PBK
 
 ## Introduction
 
-OpenTofu 1.7+ introduced native state encryption, allowing you to encrypt state files and plan files at rest. The PBKDF2 (Password-Based Key Derivation Function 2) key provider derives an encryption key from a passphrase — making it a practical starting point that requires no external KMS service.
+OpenTofu 1.7+ introduced native state encryption, allowing you to encrypt state files and plan files at rest. The PBKDF2 (Password-Based Key Derivation Function 2) key provider derives an encryption key from a passphrase - making it a practical starting point that requires no external KMS service.
 
 ## How PBKDF2 Key Derivation Works
 
@@ -25,6 +25,7 @@ Add an `encryption` block to your `terraform` configuration:
 
 ```hcl
 # encryption.tf
+
 terraform {
   required_version = ">= 1.7.0"
 
@@ -82,7 +83,7 @@ Never hardcode passphrases. Use environment variables or a secrets manager:
 # Set via environment variable
 export TF_VAR_state_encryption_passphrase="your-secure-passphrase-here"
 
-# Or pass via CLI (less secure — shows in process list)
+# Or pass via CLI (less secure - shows in process list)
 tofu apply -var="state_encryption_passphrase=your-passphrase"
 
 # Or use a tfvars file (excluded from git)
@@ -100,7 +101,7 @@ tofu init
 # Run a plan
 tofu plan
 
-# Apply — the state will be encrypted on write
+# Apply - the state will be encrypted on write
 tofu apply
 ```
 

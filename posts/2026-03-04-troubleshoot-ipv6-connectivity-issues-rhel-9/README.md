@@ -33,6 +33,7 @@ The first thing to check is whether IPv6 is actually enabled on the interface an
 
 ```bash
 # Check if IPv6 is disabled at the kernel level
+
 sysctl net.ipv6.conf.all.disable_ipv6
 sysctl net.ipv6.conf.ens192.disable_ipv6
 

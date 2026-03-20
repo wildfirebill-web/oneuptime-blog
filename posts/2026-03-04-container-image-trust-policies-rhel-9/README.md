@@ -190,6 +190,7 @@ podman pull registry.access.redhat.com/ubi9/ubi-minimal
 ```bash
 podman pull untrusted-registry.com/some-image:latest
 # Error: Source image rejected: Running image ...rejected by policy
+
 ```
 
 ## This should be rejected (unsigned image from signed-required registry)

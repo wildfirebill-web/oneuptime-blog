@@ -60,6 +60,7 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
 # Configure OpenTelemetry with service identification
+
 resource = Resource.create({
     "service.name": "api-client",
     "service.version": "1.0.0",

@@ -62,6 +62,7 @@ Install the NATS client libraries for your preferred language.
 
 ```bash
 # Go
+
 go get github.com/nats-io/nats.go
 
 # Node.js

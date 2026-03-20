@@ -117,6 +117,7 @@ Here is how to pull the data you need:
 
 ```python
 # Calculate your average hourly compute spend over the past 90 days
+
 # to determine a safe Savings Plan commitment level
 import boto3
 from datetime import datetime, timedelta

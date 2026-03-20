@@ -57,6 +57,7 @@ helm upgrade cilium cilium/cilium --namespace kube-system \
 
 ```bash
 # Always document the exact config used for benchmarks
+
 helm get values cilium -n kube-system -o yaml > benchmark-config-$(date +%Y%m%d).yaml
 
 # Include in benchmark reports

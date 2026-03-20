@@ -65,6 +65,7 @@ MLflow needs a database for storing experiment metadata. Deploy PostgreSQL as pa
 
 ```yaml
 # base/postgres/secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

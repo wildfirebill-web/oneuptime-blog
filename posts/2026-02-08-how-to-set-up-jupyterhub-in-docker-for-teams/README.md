@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, JupyterHub, Jupyter, Data Science, Team, Docker-compose, Python, Collaboration
+Tags: Docker, JupyterHub, Jupyter, Data Science, Teams, Docker-compose, Python, Collaboration
 
 Description: Deploy JupyterHub in Docker for team collaboration with user authentication, persistent storage, custom environments, and resource management.
 
@@ -40,6 +40,7 @@ Make sure Docker and Docker Compose are installed:
 
 ```bash
 # Check Docker version (need 20.10+)
+
 docker version
 
 # Check Docker Compose version (need v2+)

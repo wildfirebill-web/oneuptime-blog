@@ -27,6 +27,7 @@ Every incident communication should follow a consistent structure. Here is a bas
 
 ```yaml
 # incident-communication-template.yaml
+
 # Base structure for all incident communications
 
 template:

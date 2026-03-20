@@ -20,6 +20,7 @@ Before you start contributing, you need a working development environment. OpenT
 
 ```bash
 # Install Go (version 1.21 or later recommended)
+
 # On macOS with Homebrew
 brew install go
 

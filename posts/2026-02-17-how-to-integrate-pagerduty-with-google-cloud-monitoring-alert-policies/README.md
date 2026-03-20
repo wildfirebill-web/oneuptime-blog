@@ -59,6 +59,7 @@ Using gcloud.
 
 ```bash
 # Create a PagerDuty notification channel
+
 # The service_key is the integration key from PagerDuty
 gcloud monitoring channels create \
     --type=pagerduty \

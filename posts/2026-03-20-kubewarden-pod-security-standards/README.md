@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubewarden, Kubernetes, PodSecurity, Standards, Compliance
+Tags: Kubewarden, Kubernetes, PodSecurity, Standard, Compliance
 
 Description: Learn how to implement Kubernetes Pod Security Standards (Privileged, Baseline, and Restricted) using Kubewarden policies for fine-grained admission control.
 
@@ -13,7 +13,7 @@ Kubernetes Pod Security Standards (PSS) define three security profiles for pod w
 - **Baseline**: Prevents known privilege escalations
 - **Restricted**: Follows best practices for hardened security
 
-While Kubernetes has built-in Pod Security Admission (PSA), Kubewarden provides more granular control — you can implement each check of the security standards individually, add exceptions per workload, combine them with custom policies, and get detailed violation messages.
+While Kubernetes has built-in Pod Security Admission (PSA), Kubewarden provides more granular control - you can implement each check of the security standards individually, add exceptions per workload, combine them with custom policies, and get detailed violation messages.
 
 ## Prerequisites
 
@@ -43,6 +43,7 @@ The Restricted profile includes all Baseline checks plus additional requirements
 
 ```yaml
 # kubewarden-baseline.yaml - Complete Baseline PSS implementation
+
 ---
 # Block privileged containers
 apiVersion: policies.kubewarden.io/v1

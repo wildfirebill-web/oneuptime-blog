@@ -24,6 +24,7 @@ Here's how to start with auto-instrumentation:
 
 ```python
 # Python: Install auto-instrumentation packages
+
 pip install opentelemetry-distro
 pip install opentelemetry-exporter-otlp
 

@@ -364,6 +364,7 @@ Hybrid               | 30-60 GB    | $$           | Balanced approach
 
 ```yaml
 # OpenTelemetry Collector configuration for tiered storage
+
 receivers:
   otlp:
     protocols:
@@ -682,7 +683,7 @@ export class CircuitBreakerSampler implements Sampler {
 }
 ```
 
-### Resource Limits Configuration
+Resource Limits Configuration
 
 ```typescript
 // telemetry-production.ts

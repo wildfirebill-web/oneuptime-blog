@@ -50,6 +50,7 @@ To diagnose this, inspect the headers being sent between services:
 
 ```python
 # Python: log outgoing headers to see what propagation format is used
+
 import requests
 from opentelemetry import trace
 from opentelemetry.propagate import inject

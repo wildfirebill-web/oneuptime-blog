@@ -39,6 +39,7 @@ Before instrumenting Redis Streams specifically, you need the base OpenTelemetry
 
 ```python
 # Initialize OpenTelemetry with OTLP export for stream tracing
+
 from opentelemetry import trace, context
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

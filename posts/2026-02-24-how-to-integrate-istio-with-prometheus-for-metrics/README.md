@@ -51,6 +51,7 @@ If you're running your own Prometheus instance, add these scrape configs:
 ```yaml
 scrape_configs:
 # Scrape Istio sidecar proxies
+
 - job_name: 'envoy-stats'
   metrics_path: /stats/prometheus
   kubernetes_sd_configs:

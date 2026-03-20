@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: GCP, IPv6, Cloud Armor, WAF, Security, Google Cloud, DDoS
 
-Description: Configure Google Cloud Armor security policies with IPv6 rules to allow, deny, or rate-limit IPv6 traffic, create IP allowlists and blocklists for IPv6 addresses, and protect load-balanced services from IPv6 DDoS attacks.
+Description: Configure Google Cloud Armor security policies with IPv6 rules to allow, deny, or rate-limit IPv6 traffic, create IP allowlists and blocklists for IPv6 addresses, and protect load-balanced...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Google Cloud Armor security policies work with Global HTTP(S) Load Balancers and
 PROJECT="my-project"
 
 # Create Cloud Armor security policy
+
 gcloud compute security-policies create web-security-policy \
     --project="$PROJECT" \
     --description="WAF policy with IPv6 rules"

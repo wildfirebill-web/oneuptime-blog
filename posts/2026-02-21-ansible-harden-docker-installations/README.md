@@ -22,6 +22,7 @@ This playbook installs Docker CE from the official repository and configures sec
 
 ```yaml
 # install-docker-secure.yml - Secure Docker CE installation
+
 ---
 - name: Install and Harden Docker
   hosts: docker_hosts

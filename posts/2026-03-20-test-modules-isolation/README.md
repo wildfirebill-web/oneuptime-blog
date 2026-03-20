@@ -8,7 +8,7 @@ Description: Learn how to test OpenTofu modules in isolation using mock provider
 
 ## Introduction
 
-Testing modules in isolation means validating a module's logic — variable handling, resource configurations, and outputs — without creating actual cloud resources. This makes tests fast, free, and safe to run on every pull request.
+Testing modules in isolation means validating a module's logic - variable handling, resource configurations, and outputs - without creating actual cloud resources. This makes tests fast, free, and safe to run on every pull request.
 
 ## Plan-Only Tests
 
@@ -16,6 +16,7 @@ Use `command = plan` to test without deploying infrastructure:
 
 ```hcl
 # tests/unit/main.tftest.hcl
+
 variables {
   name        = "test-module"
   environment = "dev"

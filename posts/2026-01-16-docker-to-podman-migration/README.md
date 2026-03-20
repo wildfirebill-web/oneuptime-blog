@@ -36,6 +36,7 @@ flowchart LR
 
 ```bash
 # Install Podman
+
 brew install podman
 
 # Initialize machine

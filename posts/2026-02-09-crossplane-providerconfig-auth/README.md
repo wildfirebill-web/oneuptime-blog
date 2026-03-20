@@ -44,6 +44,7 @@ Create the credentials secret:
 
 ```bash
 # Create credentials file
+
 cat > aws-credentials.txt <<EOF
 [default]
 aws_access_key_id = AKIAIOSFODNN7EXAMPLE

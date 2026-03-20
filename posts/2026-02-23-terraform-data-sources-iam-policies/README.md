@@ -20,6 +20,7 @@ The general syntax looks like this:
 
 ```hcl
 # Data source block - reads existing infrastructure
+
 data "resource_type" "local_name" {
   # Filter criteria go here
 }

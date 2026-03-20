@@ -37,6 +37,7 @@ Before you start, you need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable compute.googleapis.com
 gcloud services enable servicenetworking.googleapis.com
 gcloud services enable dns.googleapis.com

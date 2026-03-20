@@ -18,6 +18,7 @@ The `docker wait` command blocks until a container stops, then prints its exit c
 
 ```bash
 # Start a container in the background
+
 docker run -d --name my-task ubuntu:22.04 bash -c "sleep 5 && echo 'Done' && exit 0"
 
 # Wait for it to finish and get the exit code

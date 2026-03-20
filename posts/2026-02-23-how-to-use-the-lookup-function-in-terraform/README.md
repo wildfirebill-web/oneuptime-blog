@@ -18,6 +18,7 @@ The `lookup` function retrieves a value from a map by its key. If the key is not
 
 ```hcl
 # lookup(map, key, default_value)
+
 lookup(map, key, default)
 ```
 

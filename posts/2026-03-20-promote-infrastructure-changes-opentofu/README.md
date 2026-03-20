@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # .github/workflows/promote.yml
+
 name: Promote Infrastructure
 on:
   push:
@@ -98,7 +99,7 @@ tofu apply -target=module.application
 ## Tracking What's in Each Environment
 
 ```hcl
-# outputs.tf — track versions per environment for auditing
+# outputs.tf - track versions per environment for auditing
 output "deployed_versions" {
   description = "Versions currently deployed in this environment"
   value = {
@@ -112,7 +113,7 @@ output "deployed_versions" {
 
 ## Best Practices
 
-- Never skip environments — changes go dev → staging → production without exception.
+- Never skip environments - changes go dev → staging → production without exception.
 - Use different Git branches per environment and require PRs to promote changes.
 - Add automated smoke tests that run after each environment deployment and gate promotion.
 - Require manual approval in GitHub Environments before applying to production.

@@ -1,8 +1,8 @@
-# How to Configure the Kubernetes Backend in OpenTofu
+# How to Configure the Kubernetes Backend in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, Kubernetes
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, Kubernetes
 
 Description: Learn how to configure the Kubernetes backend in OpenTofu to store state as Kubernetes Secrets with built-in locking using leases.
 
@@ -56,6 +56,7 @@ terraform {
 
 ```yaml
 # Create a dedicated namespace and service account
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -136,7 +137,7 @@ kubectl get secret tfstate-default-production -n terraform -o jsonpath='{.data.t
 ## Workspace Isolation
 
 ```bash
-# Create workspaces — stored as separate secrets
+# Create workspaces - stored as separate secrets
 tofu workspace new staging
 tofu workspace new production
 

@@ -49,6 +49,7 @@ Provide this cheat sheet during training:
 
 ```bash
 # Check your IPv6 address
+
 ip -6 addr show scope global
 
 # Ping IPv6 (loopback test)
@@ -135,9 +136,9 @@ docker compose exec client1 bash
 | "IPv6 is just IPv4 with longer addresses" | Different header format, no NAT, new concepts (NDP, RA, SLAAC) |
 | ":: means unknown" | `::` is the unspecified address; `::1` is loopback |
 | "IPv6 is optional" | IANA IPv4 exhaustion means new devices need IPv6 |
-| "IPv6 is slower" | Same or better — eliminates NAT overhead |
+| "IPv6 is slower" | Same or better - eliminates NAT overhead |
 | "We can skip training" | Misconfiguration is the #1 IPv6 issue source |
 
 ## Conclusion
 
-IPv6 training investment pays off in fewer configuration errors and faster troubleshooting. Tailor training depth to each role — network engineers need full protocol knowledge, developers need socket API and URI format awareness, and operations staff need reading and troubleshooting skills. Always include hands-on lab time: theory alone does not build the pattern recognition needed to confidently read `2001:db8:cafe:1::ff00` or debug an NDP neighbor discovery failure.
+IPv6 training investment pays off in fewer configuration errors and faster troubleshooting. Tailor training depth to each role - network engineers need full protocol knowledge, developers need socket API and URI format awareness, and operations staff need reading and troubleshooting skills. Always include hands-on lab time: theory alone does not build the pattern recognition needed to confidently read `2001:db8:cafe:1::ff00` or debug an NDP neighbor discovery failure.

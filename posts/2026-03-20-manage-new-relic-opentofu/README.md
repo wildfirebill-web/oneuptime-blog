@@ -38,6 +38,7 @@ resource "newrelic_alert_policy" "app_policy" {
 }
 
 # NRQL alert condition for error rate
+
 resource "newrelic_nrql_alert_condition" "error_rate" {
   account_id = var.newrelic_account_id
   policy_id  = newrelic_alert_policy.app_policy.id

@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Create a Cosmos DB account with Gremlin (Graph) API
+
 az cosmosdb create \
     --name myGraphAccount \
     --resource-group myResourceGroup \

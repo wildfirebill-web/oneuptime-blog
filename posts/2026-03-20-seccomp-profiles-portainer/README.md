@@ -1,4 +1,4 @@
-# How to Configure Seccomp Profiles for Containers in Portainer
+# How to Configure Seccomp Profiles for Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Apply seccomp profiles to restrict system calls available to contai
 
 ## Introduction
 
-Seccomp (Secure Computing Mode) is a Linux kernel feature that restricts which system calls a process can make. Docker applies a default seccomp profile that blocks ~44 dangerous syscalls. Custom profiles let you restrict containers even further — a web server doesn't need `ptrace`, `mount`, or `keyctl`. Fewer allowed syscalls mean a smaller attack surface. This guide covers creating and applying custom seccomp profiles via Portainer.
+Seccomp (Secure Computing Mode) is a Linux kernel feature that restricts which system calls a process can make. Docker applies a default seccomp profile that blocks ~44 dangerous syscalls. Custom profiles let you restrict containers even further - a web server doesn't need `ptrace`, `mount`, or `keyctl`. Fewer allowed syscalls mean a smaller attack surface. This guide covers creating and applying custom seccomp profiles via Portainer.
 
 ## Step 1: Understanding the Default Profile
 
 ```bash
 # Docker's default seccomp profile blocks syscalls like:
+
 # - ptrace (debugging/tracing other processes)
 # - mount/umount (filesystem manipulation)
 # - kexec_load (loading new kernel)
@@ -189,4 +190,4 @@ curl http://localhost:80
 
 ## Conclusion
 
-Custom seccomp profiles are the most granular syscall-level security control for containers. Start with Docker's default profile (already applied unless you opted out), then tighten further for specific workloads you understand well. A web server needs far fewer syscalls than a general-purpose system utility. The profile generation approach — audit then allowlist — is safer than hand-crafting allow lists. Portainer's `security_opt` field in stack configurations makes it straightforward to deploy containers with custom profiles at scale.
+Custom seccomp profiles are the most granular syscall-level security control for containers. Start with Docker's default profile (already applied unless you opted out), then tighten further for specific workloads you understand well. A web server needs far fewer syscalls than a general-purpose system utility. The profile generation approach - audit then allowlist - is safer than hand-crafting allow lists. Portainer's `security_opt` field in stack configurations makes it straightforward to deploy containers with custom profiles at scale.

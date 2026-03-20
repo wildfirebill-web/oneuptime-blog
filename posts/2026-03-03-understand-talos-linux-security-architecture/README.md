@@ -36,6 +36,7 @@ All interaction with Talos Linux happens through two APIs:
 
 ```bash
 # All OS-level operations go through the Talos API
+
 talosctl -n 10.0.1.10 version
 talosctl -n 10.0.1.10 get machineconfig
 talosctl -n 10.0.1.10 logs kubelet

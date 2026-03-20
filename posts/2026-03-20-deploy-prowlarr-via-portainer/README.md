@@ -56,8 +56,9 @@ Open `http://<host>:9696`.
 
 In Prowlarr go to **Settings > Apps**:
 
-```
+```text
 # For each *arr application:
+
 App:            Sonarr (or Radarr)
 Prowlarr Server: http://prowlarr:9696
 App Server:     http://sonarr:8989

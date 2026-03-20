@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Team Training, Migration, Infrastructure as Code, DevOps, Onboarding
 
-Description: Learn how to train your engineering team to adopt OpenTofu — covering learning paths for Terraform users, hands-on labs, documentation updates, and building internal expertise.
+Description: Learn how to train your engineering team to adopt OpenTofu - covering learning paths for Terraform users, hands-on labs, documentation updates, and building internal expertise.
 
 ## Introduction
 
@@ -14,7 +14,7 @@ For teams already using Terraform, adopting OpenTofu is mostly about familiarity
 
 For engineers with Terraform experience, the transition is minimal:
 
-```
+```hcl
 Week 1: Conceptual differences
   - Why OpenTofu exists (MPL 2.0 fork vs BSL)
   - What's the same: HCL syntax, state format, providers, modules
@@ -36,7 +36,7 @@ Week 3: CI/CD updates
 
 ## Training Path for IaC Beginners
 
-```
+```text
 Week 1-2: IaC fundamentals
   - What is infrastructure as code and why it matters
   - HCL syntax: blocks, arguments, expressions
@@ -66,6 +66,7 @@ Week 7-8: CI/CD integration
 
 ```hcl
 # lab/01-first-deployment/main.tf
+
 # Lab goal: Deploy an S3 bucket with versioning and tags
 
 terraform {
@@ -110,7 +111,7 @@ Lab instructions:
 # 1. Initialize
 tofu init
 
-# 2. Plan — review what will be created
+# 2. Plan - review what will be created
 tofu plan -var="student_name=yourname"
 
 # 3. Apply
@@ -153,7 +154,7 @@ Current OpenTofu version: 1.9.x (pinned in `.tool-versions`)
 
 ## `.tool-versions` for Version Management
 
-```
+```hcl
 # .tool-versions (asdf version manager)
 opentofu 1.9.0
 ```
@@ -171,4 +172,4 @@ tofu --version
 
 ## Conclusion
 
-Training a Terraform team to use OpenTofu is low-effort — the concepts and syntax are identical. Focus on: the binary name change, the new registry, lock file regeneration, and CI/CD pipeline updates. For IaC beginners, use the same OpenTofu learning resources as you would for Terraform, focusing on the `tofu` command. Pin the OpenTofu version with `.tool-versions` and update team runbooks with the command reference table.
+Training a Terraform team to use OpenTofu is low-effort - the concepts and syntax are identical. Focus on: the binary name change, the new registry, lock file regeneration, and CI/CD pipeline updates. For IaC beginners, use the same OpenTofu learning resources as you would for Terraform, focusing on the `tofu` command. Pin the OpenTofu version with `.tool-versions` and update team runbooks with the command reference table.

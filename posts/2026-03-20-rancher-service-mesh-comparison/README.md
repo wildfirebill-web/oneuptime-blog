@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Kubernetes, Service Mesh, Istio, Linkerd, Consul, Architecture
 
-Description: Compare the leading service mesh options for Rancher-managed clusters—Istio, Linkerd, Consul Connect, and OSM—to choose the right one for your needs.
+Description: Compare the leading service mesh options for Rancher-managed clusters-Istio, Linkerd, Consul Connect, and OSM-to choose the right one for your needs.
 
 ## Introduction
 
-Choosing the right service mesh for your Rancher environment is a significant architectural decision. The leading options—Istio, Linkerd, Consul Connect, and Open Service Mesh (OSM)—each have distinct strengths, tradeoffs, and use cases. This guide provides a comprehensive comparison to help you make an informed decision.
+Choosing the right service mesh for your Rancher environment is a significant architectural decision. The leading options-Istio, Linkerd, Consul Connect, and Open Service Mesh (OSM)-each have distinct strengths, tradeoffs, and use cases. This guide provides a comprehensive comparison to help you make an informed decision.
 
 ## Service Mesh Overview
 
@@ -45,6 +45,7 @@ A service mesh provides:
 
 ```bash
 # Install Istio using Rancher's built-in support
+
 # Navigate to: Apps > Charts > Rancher Monitoring
 # Then install Istio from Apps > Charts
 
@@ -162,7 +163,7 @@ helm install osm osm/osm \
   --create-namespace
 ```
 
-## Resource Comparison
+Resource Comparison
 
 ```yaml
 # resource-comparison.yaml - Estimated proxy overhead per service
@@ -225,4 +226,4 @@ kubectl label namespace new-app istio-injection=enabled
 
 Each service mesh has its place in the ecosystem. **Linkerd** is ideal for teams prioritizing simplicity and performance. **Istio** is the choice for maximum features and Rancher native integration. **Consul Connect** excels in multi-environment deployments with VM workloads. **OSM** offers an approachable, standards-compliant option for teams new to service meshes.
 
-Start with your primary requirements—security, observability, or traffic management—and evaluate resource overhead and team expertise before committing. Most teams start with Linkerd for its simplicity and graduate to Istio as their requirements become more complex.
+Start with your primary requirements-security, observability, or traffic management-and evaluate resource overhead and team expertise before committing. Most teams start with Linkerd for its simplicity and graduate to Istio as their requirements become more complex.

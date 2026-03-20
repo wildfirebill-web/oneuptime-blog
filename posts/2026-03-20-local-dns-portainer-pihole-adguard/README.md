@@ -15,11 +15,11 @@ Instead of accessing your Portainer services via IP addresses and port numbers, 
 ## Why Use Local DNS?
 
 Without local DNS:
-- `https://192.168.1.100:9443` — hard to remember, changes if IP changes
-- Multiple services on different ports — confusing
+- `https://192.168.1.100:9443` - hard to remember, changes if IP changes
+- Multiple services on different ports - confusing
 
 With local DNS:
-- `https://portainer.home.lab` — clean, memorable
+- `https://portainer.home.lab` - clean, memorable
 - `https://grafana.home.lab`
 - `https://whoami.home.lab`
 
@@ -30,7 +30,8 @@ With local DNS:
 Deploy Pi-hole as a Portainer stack on your network.
 
 ```yaml
-# pi-hole-stack.yml — deploy Pi-hole as a Portainer stack
+# pi-hole-stack.yml - deploy Pi-hole as a Portainer stack
+
 version: "3.8"
 
 services:
@@ -66,7 +67,7 @@ In Portainer: **Stacks > Add Stack > Paste YAML > Deploy the stack**
 AdGuard Home has a more modern UI and built-in DNS rewrite support.
 
 ```yaml
-# adguard-stack.yml — deploy AdGuard Home as a Portainer stack
+# adguard-stack.yml - deploy AdGuard Home as a Portainer stack
 version: "3.8"
 
 services:

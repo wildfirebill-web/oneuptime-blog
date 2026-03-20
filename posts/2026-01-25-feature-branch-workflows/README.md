@@ -22,6 +22,7 @@ The basic workflow is simple:
 
 ```bash
 # Create a feature branch
+
 git checkout main
 git pull origin main
 git checkout -b feature/user-authentication

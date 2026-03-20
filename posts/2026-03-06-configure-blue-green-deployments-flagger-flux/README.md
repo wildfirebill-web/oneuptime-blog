@@ -47,6 +47,7 @@ Create the base deployment that Flagger will manage in blue-green mode.
 
 ```yaml
 # apps/webapp/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

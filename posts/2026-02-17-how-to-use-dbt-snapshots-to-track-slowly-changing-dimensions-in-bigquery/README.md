@@ -151,6 +151,7 @@ Snapshots have their own dbt command:
 
 ```bash
 # Run all snapshots
+
 dbt snapshot
 
 # Run a specific snapshot

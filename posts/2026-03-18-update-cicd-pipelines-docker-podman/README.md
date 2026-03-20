@@ -20,6 +20,7 @@ Understanding the differences helps you plan the migration.
 
 ```bash
 # Docker CI/CD requirements:
+
 # - Docker daemon running on the CI runner
 # - Docker-in-Docker (DinD) for containerized runners
 # - Docker socket mounting for access to host Docker

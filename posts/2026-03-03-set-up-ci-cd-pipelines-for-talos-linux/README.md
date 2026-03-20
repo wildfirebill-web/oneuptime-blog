@@ -36,6 +36,7 @@ We will cover both, starting with the infrastructure pipeline.
 
 ```yaml
 # .github/workflows/validate-talos-config.yaml
+
 name: Validate Talos Configuration
 
 on:

@@ -46,6 +46,7 @@ Summary:
 
 ```bash
 # Run a detailed check
+
 calicoctl ipam check --show-all-ips
 
 # Cross-reference allocated IPs with running pods

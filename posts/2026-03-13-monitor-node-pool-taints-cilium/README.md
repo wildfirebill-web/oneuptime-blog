@@ -32,6 +32,7 @@ Check existing Cilium DaemonSet tolerations:
 
 ```bash
 # View current Cilium DaemonSet tolerations
+
 kubectl get daemonset cilium -n kube-system -o yaml | \
   grep -A20 "tolerations:"
 

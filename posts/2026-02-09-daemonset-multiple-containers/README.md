@@ -543,7 +543,7 @@ spec:
 
 This stack provides runtime security, vulnerability scanning, and compliance checking together.
 
-## Resource sharing patterns
+Resource sharing patterns
 
 Use shared volumes and localhost networking effectively:
 

@@ -12,7 +12,7 @@ DNS64 is a DNS server feature that synthesizes AAAA records when a domain has on
 
 ## How DNS64 Works
 
-```
+```nginx
 IPv6-only client requests: AAAA google.com
 DNS64 server:
   1. Queries upstream for AAAA google.com → no result
@@ -35,7 +35,7 @@ options {
         # Which clients get DNS64 synthesis
         clients { any; };
 
-        # Excluded prefixes (no synthesis for these — they have real AAAA)
+        # Excluded prefixes (no synthesis for these - they have real AAAA)
         # exclude { ::ffff:0:0/96; 64:ff9b::/96; };
 
         # Mapped: apply synthesis only to these IPv4 ranges
@@ -65,6 +65,7 @@ options {
 # /etc/bind/named.conf.options
 
 # Define RFC1918 ACL
+
 acl "rfc1918" {
     10.0.0.0/8;
     172.16.0.0/12;

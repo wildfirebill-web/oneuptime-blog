@@ -110,6 +110,7 @@ The third character of each group can show special bits:
 
 ```bash
 # Examples:
+
 ls -la /usr/bin/passwd      # -rwsr-xr-x (SUID)
 ls -la /tmp                 # drwxrwxrwt (sticky bit)
 ls -la /var/mail            # drwxrwsr-x (SGID)

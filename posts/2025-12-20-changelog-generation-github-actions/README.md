@@ -64,6 +64,7 @@ Google's release-please automates releases based on conventional commits:
 
 ```yaml
 # .github/workflows/release-please.yml
+
 name: Release Please
 
 on:

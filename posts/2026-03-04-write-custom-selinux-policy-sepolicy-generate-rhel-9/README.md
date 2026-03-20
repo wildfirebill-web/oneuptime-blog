@@ -18,6 +18,7 @@ This is the right approach when you want to properly confine an application rath
 
 ```bash
 # Install required tools
+
 sudo dnf install -y policycoreutils-devel rpm-build
 ```
 

@@ -26,6 +26,7 @@ Install cryptsetup on all worker nodes.
 
 ```bash
 # On Ubuntu 22.04 or 24.04
+
 sudo apt-get update
 sudo apt-get install -y cryptsetup cryptsetup-bin
 

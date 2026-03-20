@@ -29,6 +29,7 @@ Via API:
 
 ```bash
 # List available WAF sensors
+
 curl -sk \
   "https://neuvector-manager:8443/v1/dpi/waf/sensor" \
   -H "X-Auth-Token: ${TOKEN}" | jq '.waf_sensors[].name'

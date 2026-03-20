@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NAT, conntrack, Exhaustion, Linux, Firewall
+Tags: NAT, Conntrack, Exhaustion, Linux, Firewall
 
 Description: Learn how to diagnose and fix NAT translation table exhaustion where the conntrack table fills up, causing new connections to be dropped while the router appears healthy.
 
@@ -18,6 +18,7 @@ NAT devices maintain a connection tracking (conntrack) table mapping internal IP
 
 ```bash
 # Check current conntrack table usage
+
 cat /proc/sys/net/netfilter/nf_conntrack_count   # Current entries
 cat /proc/sys/net/netfilter/nf_conntrack_max     # Maximum entries
 
@@ -53,7 +54,7 @@ conntrack -L | awk '{print $5}' | grep -o 'src=[0-9.]*' | \
 conntrack -L --orig-src 192.168.1.100
 ```
 
-## Step 3: Immediate Fix — Increase Table Size
+## Step 3: Immediate Fix - Increase Table Size
 
 ```bash
 # Temporarily increase conntrack table size
@@ -83,9 +84,9 @@ cat /proc/sys/net/netfilter/nf_conntrack_max
 sysctl -a | grep conntrack_tcp_timeout
 
 # Key timeouts to reduce:
-# tcp_timeout_established: default 432000s (5 days!) — reduce to 86400 (1 day)
-# tcp_timeout_time_wait: default 120s — reduce to 60s
-# tcp_timeout_close_wait: default 60s — keep
+# tcp_timeout_established: default 432000s (5 days!) - reduce to 86400 (1 day)
+# tcp_timeout_time_wait: default 120s - reduce to 60s
+# tcp_timeout_close_wait: default 60s - keep
 
 sudo tee -a /etc/sysctl.conf << 'EOF'
 

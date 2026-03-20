@@ -35,6 +35,7 @@ flowchart TB
 
 ```bash
 # Get deployment status
+
 az deployment group show \
   --name my-deployment \
   --resource-group rg-myapp \
@@ -207,7 +208,7 @@ ResourceNotFound - The Resource 'Microsoft.Storage/storageAccounts/mystorageacco
 
 This occurs when creating resources that already exist or have conflicting settings.
 
-### Resource Already Exists
+Resource Already Exists
 
 **Error Message:**
 ```text

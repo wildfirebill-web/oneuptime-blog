@@ -74,6 +74,7 @@ Use Git's pull request workflow as your approval mechanism. The deployment branc
 
 ```yaml
 # Dev - auto-sync, no approval needed
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

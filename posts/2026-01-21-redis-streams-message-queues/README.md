@@ -43,6 +43,7 @@ import json
 r = redis.Redis(decode_responses=True)
 
 # Add messages
+
 msg_id1 = r.xadd('mystream', {'event': 'order_created', 'order_id': '123'})
 msg_id2 = r.xadd('mystream', {'event': 'order_paid', 'order_id': '123'})
 print(f"Added: {msg_id1}, {msg_id2}")

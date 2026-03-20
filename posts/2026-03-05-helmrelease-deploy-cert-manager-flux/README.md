@@ -22,6 +22,7 @@ cert-manager is distributed through the Jetstack Helm chart repository. Define t
 
 ```yaml
 # helmrepository-jetstack.yaml - Jetstack Helm repository for cert-manager charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

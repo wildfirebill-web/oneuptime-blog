@@ -62,6 +62,7 @@ Edit the RKE2 server configuration file on **each server node**:
 
 ```bash
 # Open the RKE2 config file for editing
+
 # This file controls RKE2 server behavior at startup
 sudo nano /etc/rancher/rke2/config.yaml
 ```

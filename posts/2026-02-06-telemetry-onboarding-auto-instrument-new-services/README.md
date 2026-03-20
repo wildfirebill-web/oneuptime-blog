@@ -29,6 +29,7 @@ When a new service is created, capture the metadata that OpenTelemetry needs. Th
 
 ```python
 # platform_api/service_registry.py
+
 from dataclasses import dataclass
 from typing import Optional
 import json

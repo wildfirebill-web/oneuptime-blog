@@ -16,6 +16,7 @@ The `assert` module evaluates one or more conditions and fails the play if any o
 
 ```yaml
 # basic-assert.yml - Validate variables before proceeding
+
 ---
 - name: Validate deployment variables
   hosts: all

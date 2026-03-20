@@ -44,6 +44,7 @@ You need to allocate a /29 CIDR block for the peering connection. This gives you
 
 ```bash
 # List existing subnets to find available IP ranges
+
 gcloud compute networks subnets list \
   --network=my-vpc \
   --project=my-project \

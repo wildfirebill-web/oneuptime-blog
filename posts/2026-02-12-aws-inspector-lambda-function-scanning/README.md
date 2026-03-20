@@ -30,6 +30,7 @@ This enables Inspector to automatically scan all Lambda functions for vulnerable
 
 ```bash
 # Enable Inspector with Lambda scanning
+
 aws inspector2 enable \
   --resource-types LAMBDA
 

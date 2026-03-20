@@ -1,4 +1,4 @@
-# How to Deploy Grafana via Portainer
+# How to Deploy Grafana via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -41,6 +41,7 @@ Labels and annotations on Kubernetes namespaces serve different purposes but are
 
 ```bash
 # View labels for a namespace
+
 kubectl get namespace <name> --show-labels
 
 # View all labels and annotations

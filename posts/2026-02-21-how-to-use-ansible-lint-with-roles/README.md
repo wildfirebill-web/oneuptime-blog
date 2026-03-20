@@ -16,6 +16,7 @@ You can lint a role by pointing ansible-lint at the role directory:
 
 ```bash
 # Lint a single role
+
 ansible-lint roles/webserver/
 
 # Lint all roles in a directory

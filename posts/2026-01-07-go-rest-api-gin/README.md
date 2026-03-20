@@ -1343,6 +1343,7 @@ Test the endpoints using curl:
 
 ```bash
 # Health check
+
 curl http://localhost:8080/health
 
 # Create a user (requires authentication in production)

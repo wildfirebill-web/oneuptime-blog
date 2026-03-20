@@ -12,7 +12,7 @@ DNS TTL (Time to Live) is the number of seconds a DNS record can be cached befor
 
 ## Understanding TTL Impact
 
-```
+```text
 TTL = 86400 (24 hours):
   + Excellent cache coverage: resolvers worldwide cache for 24 hours
   + Very low query volume to authoritative servers
@@ -39,6 +39,7 @@ TTL = 60 (1 minute):
 # Recommended TTLs by record type:
 
 # A/AAAA records (server IPs):
+
 # Stable production servers:     3600-86400 (1-24 hours)
 # Load balanced / health-checked: 30-300    (30 sec to 5 min)
 # Frequently changed:             60-300    (1-5 minutes)
@@ -153,4 +154,4 @@ dig @$AUTH example.com | grep -A1 "ANSWER" | tail -1 | awk '{print $2}'
 
 ## Conclusion
 
-TTL selection is a tradeoff between cache efficiency and change agility. Use 3600 for production A records as a reasonable default. Reduce to 30-60 for health-checked load balancer endpoints that need rapid failover. Always reduce TTL to 300 before planned changes and wait for the original TTL to expire before making the change. The "migration TTL pattern" — reduce TTL 48+ hours before changing — eliminates the surprise of slow propagation during incidents and planned changes.
+TTL selection is a tradeoff between cache efficiency and change agility. Use 3600 for production A records as a reasonable default. Reduce to 30-60 for health-checked load balancer endpoints that need rapid failover. Always reduce TTL to 300 before planned changes and wait for the original TTL to expire before making the change. The "migration TTL pattern" - reduce TTL 48+ hours before changing - eliminates the surprise of slow propagation during incidents and planned changes.

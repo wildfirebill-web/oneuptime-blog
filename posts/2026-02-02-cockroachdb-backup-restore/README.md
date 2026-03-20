@@ -410,6 +410,7 @@ The following shell script provides a complete backup solution with error handli
 ```bash
 #!/bin/bash
 # cockroachdb-backup.sh
+
 # Automated CockroachDB backup script with monitoring
 
 set -euo pipefail

@@ -1,4 +1,4 @@
-# How to Monitor Kubewarden Policy Decisions
+# How to Monitor Kubewarden Policy Decisions - Policy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ Kubewarden exposes:
 
 ```yaml
 # policyserver-with-metrics.yaml
+
 apiVersion: policies.kubewarden.io/v1
 kind: PolicyServer
 metadata:

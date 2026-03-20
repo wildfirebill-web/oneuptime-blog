@@ -18,6 +18,7 @@ Consider a database role. The database password has no safe default. If you leav
 # roles/database/defaults/main.yml - The old way (problematic)
 
 # Option 1: Leave it out entirely
+
 # db_password is not defined here at all
 # Error shows up as: "db_password is undefined" somewhere in the middle of execution
 

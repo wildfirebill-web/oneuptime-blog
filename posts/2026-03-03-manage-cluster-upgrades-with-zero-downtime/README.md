@@ -87,6 +87,7 @@ You need at least 3 control plane nodes for zero-downtime upgrades. With 3 nodes
 
 ```bash
 # Verify you have 3+ control plane nodes
+
 kubectl get nodes -l node-role.kubernetes.io/control-plane
 
 # Verify etcd has 3+ members

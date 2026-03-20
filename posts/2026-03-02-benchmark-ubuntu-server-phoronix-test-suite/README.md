@@ -16,6 +16,7 @@ Phoronix Test Suite (PTS) is the most comprehensive open-source benchmarking pla
 
 ```bash
 # Install PTS from the Ubuntu repositories
+
 sudo apt update
 sudo apt install phoronix-test-suite -y
 

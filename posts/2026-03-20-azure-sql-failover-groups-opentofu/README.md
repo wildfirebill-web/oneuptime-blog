@@ -14,6 +14,7 @@ Azure SQL Failover Groups provide automatic failover with a consistent connectio
 
 ```hcl
 # main.tf - Primary SQL Server in primary region
+
 resource "azurerm_mssql_server" "primary" {
   name                         = "sql-primary-server"
   resource_group_name          = azurerm_resource_group.primary_rg.name

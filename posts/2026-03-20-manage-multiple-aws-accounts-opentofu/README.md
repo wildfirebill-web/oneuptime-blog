@@ -11,7 +11,8 @@ Managing resources across multiple AWS accounts from one OpenTofu configuration 
 ## Configuring Multiple Account Providers
 
 ```hcl
-# Default provider — management account
+# Default provider - management account
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -148,7 +149,7 @@ locals {
 }
 ```
 
-Note: Dynamic provider creation from `for_each` is not natively supported — for many accounts, consider Terragrunt or separate workspace-per-account patterns.
+Note: Dynamic provider creation from `for_each` is not natively supported - for many accounts, consider Terragrunt or separate workspace-per-account patterns.
 
 ## Conclusion
 

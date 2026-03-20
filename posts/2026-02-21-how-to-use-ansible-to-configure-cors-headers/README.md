@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, CORS, NGINX, Security, DevOps
+Tags: Ansible, CORS, Nginx, Security, DevOps
 
 Description: Automate CORS header configuration in Nginx using Ansible to manage cross-origin resource sharing policies consistently across your web servers.
 
@@ -60,6 +60,7 @@ nginx-cors/
 
 ```yaml
 # roles/nginx_cors/defaults/main.yml
+
 # Allowed origins - use a list for multiple domains
 # Set to ["*"] to allow all origins (not recommended for production)
 nginx_cors_allowed_origins:

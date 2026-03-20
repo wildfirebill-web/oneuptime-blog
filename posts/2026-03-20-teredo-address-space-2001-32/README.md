@@ -1,4 +1,4 @@
-# How to Understand the TEREDO Address Space (2001::/32)
+# How to Understand the TEREDO Address Space (2001::/32) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Teredo (RFC 4380) is an automatic IPv6 tunneling technology that provides IPv6 c
 
 ## Teredo Address Format
 
-```
+```text
 2001:0000:SSSS:SSSS:FFFF:UUUU:CCCC:CCCC
 
 Where:
@@ -64,6 +64,7 @@ def decode_teredo_address(teredo_addr: str) -> dict:
     }
 
 # Example Teredo address
+
 example = "2001:0:4136:e378:8000:63bf:3fff:fdd2"
 try:
     info = decode_teredo_address(example)

@@ -34,6 +34,7 @@ First, initialize a new Go module and install Echo:
 
 ```bash
 # Create project directory and initialize Go module
+
 mkdir echo-rest-api && cd echo-rest-api
 go mod init github.com/yourusername/echo-rest-api
 

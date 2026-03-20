@@ -20,6 +20,7 @@ These correspond to `variable` blocks in your configuration:
 
 ```hcl
 # variables.tf
+
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string

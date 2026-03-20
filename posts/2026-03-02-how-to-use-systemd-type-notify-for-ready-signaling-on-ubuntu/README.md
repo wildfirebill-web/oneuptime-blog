@@ -109,6 +109,7 @@ Requires=postgresql.service
 
 [Service]
 # Tell systemd to wait for READY=1 before marking active
+
 Type=notify
 
 # Run as a dedicated user for security

@@ -14,6 +14,7 @@ Description: Install and configure 389 Directory Server on RHEL for centralized 
 
 ```bash
 # Install the 389 Directory Server packages
+
 sudo dnf install -y 389-ds-base
 
 # Verify the installation

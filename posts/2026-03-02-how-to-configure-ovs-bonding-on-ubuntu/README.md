@@ -26,6 +26,7 @@ OVS supports three bonding modes:
 
 ```bash
 # Ensure OVS is installed
+
 sudo apt install openvswitch-switch
 
 # Create a bridge and add a bond with two interfaces in one command

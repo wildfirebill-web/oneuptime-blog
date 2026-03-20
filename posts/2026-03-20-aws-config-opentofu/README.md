@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Config, Compliance, Security
+Tags: OpenTofu, AWS, Configs, Compliance, Security
 
 Description: Learn how to enable AWS Config with OpenTofu to continuously assess resource configurations for compliance, security, and governance requirements.
 

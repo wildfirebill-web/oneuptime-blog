@@ -46,6 +46,7 @@ Before writing code, map the relationships between your bounded contexts. There 
 
 ```yaml
 # context-map.yaml - Documents how bounded contexts relate
+
 contexts:
   sales:
     type: core  # This is a core domain - competitive advantage

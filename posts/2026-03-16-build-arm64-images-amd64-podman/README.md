@@ -20,6 +20,7 @@ QEMU translates ARM64 instructions to AMD64 at runtime. Install the required pac
 
 ```bash
 # Fedora/RHEL/CentOS
+
 sudo dnf install qemu-user-static
 
 # Ubuntu/Debian

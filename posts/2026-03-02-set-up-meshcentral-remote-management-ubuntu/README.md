@@ -23,6 +23,7 @@ MeshCentral supports Windows (RDP and native agent), Linux, and macOS endpoints 
 
 ```bash
 # Install Node.js 20 LTS via NodeSource
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 

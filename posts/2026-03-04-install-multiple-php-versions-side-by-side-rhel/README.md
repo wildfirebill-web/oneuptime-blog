@@ -14,6 +14,7 @@ Some environments need to run multiple PHP versions. For example, a legacy appli
 
 ```bash
 # Install EPEL and Remi
+
 sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
 ```

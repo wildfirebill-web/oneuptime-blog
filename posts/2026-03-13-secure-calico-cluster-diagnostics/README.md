@@ -16,6 +16,7 @@ Calico cluster diagnostic bundles contain sensitive information: IP allocation t
 
 ```yaml
 # calico-cluster-diagnostics-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

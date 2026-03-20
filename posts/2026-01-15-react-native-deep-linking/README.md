@@ -63,6 +63,7 @@ Before diving into platform-specific configurations, let's set up the necessary 
 
 ```bash
 # Install React Navigation and dependencies
+
 npm install @react-navigation/native @react-navigation/native-stack
 
 # Install required peer dependencies

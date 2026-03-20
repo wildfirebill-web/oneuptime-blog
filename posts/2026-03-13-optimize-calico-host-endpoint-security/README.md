@@ -78,6 +78,7 @@ Place allow rules for the most frequent traffic first to minimize evaluation ste
 
 ```yaml
 # High-frequency internal traffic: order 10
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

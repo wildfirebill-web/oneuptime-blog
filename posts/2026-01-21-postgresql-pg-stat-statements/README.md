@@ -32,6 +32,7 @@ SELECT * FROM pg_extension WHERE extname = 'pg_stat_statements';
 
 ```conf
 # Add to shared_preload_libraries (requires restart)
+
 shared_preload_libraries = 'pg_stat_statements'
 
 # Configuration options

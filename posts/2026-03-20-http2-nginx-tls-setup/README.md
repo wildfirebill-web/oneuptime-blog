@@ -8,7 +8,7 @@ Description: Learn how to enable HTTP/2 on Nginx with TLS to take advantage of m
 
 ## Why HTTP/2?
 
-HTTP/2 introduces multiplexing (multiple requests over a single connection), header compression (HPACK), and server push—dramatically reducing page load times compared to HTTP/1.1. Nginx supports HTTP/2 but requires TLS in practice because all major browsers only implement HTTP/2 over HTTPS.
+HTTP/2 introduces multiplexing (multiple requests over a single connection), header compression (HPACK), and server push-dramatically reducing page load times compared to HTTP/1.1. Nginx supports HTTP/2 but requires TLS in practice because all major browsers only implement HTTP/2 over HTTPS.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ Add `http2` to the `listen` directive on port 443:
 
 ```nginx
 # /etc/nginx/sites-available/example.com
+
 server {
     # Enable HTTP/2 by adding the http2 parameter
     listen 443 ssl;
@@ -99,7 +100,7 @@ After reloading Nginx (`nginx -s reload`), verify with `curl`:
 curl -I --http2 https://example.com
 ```
 
-Look for `HTTP/2 200` in the output. Alternatively, use the browser DevTools Network tab—the Protocol column should show `h2`.
+Look for `HTTP/2 200` in the output. Alternatively, use the browser DevTools Network tab-the Protocol column should show `h2`.
 
 ## Tuning HTTP/2 Parameters
 

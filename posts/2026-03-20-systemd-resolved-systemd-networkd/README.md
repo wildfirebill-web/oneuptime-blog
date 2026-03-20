@@ -1,8 +1,8 @@
-# How to Configure systemd-resolved with systemd-networkd
+# How to Configure systemd-resolved with systemd-networkd - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, DNS, systemd-resolved, systemd-networkd, Name Resolution
+Tags: Linux, Networking, DNS, Systemd-resolved, systemd-networkd, Name Resolution
 
 Description: Learn how to configure systemd-resolved alongside systemd-networkd for DNS name resolution, including stub resolver setup, per-interface DNS, and DNSSEC.
 

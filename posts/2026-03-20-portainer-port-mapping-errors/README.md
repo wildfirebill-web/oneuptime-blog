@@ -1,4 +1,4 @@
-# How to Fix Port Mapping Errors When Editing Containers in Portainer
+# How to Fix Port Mapping Errors When Editing Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Port mapping errors in Portainer occur when the port binding configuration is in
 
 ```bash
 # Check if the port you want to bind is already in use
+
 sudo ss -tlnp | grep :8080
 
 # Check what Docker containers are using specific ports
@@ -138,7 +139,7 @@ sudo sysctl -p
 ## Step 7: Fix UDP Port Mapping Issues
 
 ```bash
-# UDP ports must be explicitly specified — they're not included with TCP bindings
+# UDP ports must be explicitly specified - they're not included with TCP bindings
 
 # Wrong: binding TCP but expecting UDP to work
 -p 5000:5000  # Only binds TCP

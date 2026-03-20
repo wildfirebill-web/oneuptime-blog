@@ -14,6 +14,7 @@ Monitoring FTP connections by client IPv4 address helps identify unauthorized ac
 
 ```bash
 # Show all active FTP connections (port 21 and passive ports)
+
 ss -tnp | grep :21
 
 # Show connections to passive data ports

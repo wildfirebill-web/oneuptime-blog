@@ -53,6 +53,7 @@ Create or update your `ansible.cfg` at the project root:
 
 ```ini
 # ansible.cfg - Tell Ansible where to find shared roles
+
 [defaults]
 roles_path = ./roles
 ```

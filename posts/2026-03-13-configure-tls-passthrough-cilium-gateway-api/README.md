@@ -74,6 +74,7 @@ spec:
 
 ```bash
 # Test connection - certificate comes from the backend
+
 GATEWAY_IP=$(kubectl get gateway tls-passthrough-gateway \
   -o jsonpath='{.status.addresses[0].value}')
 

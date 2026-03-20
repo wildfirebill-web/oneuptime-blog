@@ -42,6 +42,7 @@ If you already have a Synapse workspace, skip to Step 2.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-synapse --location eastus
 
 # Create a storage account for the Synapse workspace

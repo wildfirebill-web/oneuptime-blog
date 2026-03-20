@@ -45,6 +45,7 @@ Vite provides the fastest development experience:
 
 ```bash
 # Create new project with Vite
+
 npm create vite@latest my-react-app -- --template react-ts
 
 # Navigate to project

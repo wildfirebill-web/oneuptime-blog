@@ -45,6 +45,7 @@ First, create a transit gateway in each region:
 
 ```bash
 # Create Transit Gateway in us-east-1
+
 aws ec2 create-transit-gateway \
   --region us-east-1 \
   --description "US East Transit Gateway" \

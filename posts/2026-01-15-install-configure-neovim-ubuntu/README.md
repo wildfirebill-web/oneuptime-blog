@@ -38,6 +38,7 @@ The Ubuntu PPA provides stable Neovim releases that are easy to update:
 
 ```bash
 # Add the Neovim stable PPA repository
+
 sudo add-apt-repository ppa:neovim-ppa/stable
 
 # Update package lists

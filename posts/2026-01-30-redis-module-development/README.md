@@ -57,6 +57,7 @@ Before you start, you need the Redis source code for the module API headers.
 
 ```bash
 # Clone Redis source
+
 git clone https://github.com/redis/redis.git
 cd redis
 

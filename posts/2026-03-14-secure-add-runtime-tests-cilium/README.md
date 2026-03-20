@@ -142,6 +142,7 @@ Create the Kubernetes manifests for runtime tests:
 
 ```yaml
 # myprotocol-test-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

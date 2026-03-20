@@ -124,6 +124,7 @@ dnssec-policy "hardened" {
 
 ```bash
 # Generate ECDSA keys
+
 pdnsutil add-zone-key example.com ksk active ecdsap256sha256
 pdnsutil add-zone-key example.com zsk active ecdsap256sha256
 

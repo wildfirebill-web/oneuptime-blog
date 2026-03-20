@@ -10,7 +10,7 @@ Description: Learn how to implement the Reactor pattern for high-performance IPv
 
 The Reactor pattern demultiplexes I/O events and dispatches them to registered handlers without blocking threads:
 
-```
+```text
 ┌──────────────┐
 │  Event Loop  │
 │  (select/    │  ←─── I/O ready event
@@ -43,7 +43,7 @@ def service(conn: socket.socket, mask: int) -> None:
         if recv:
             data.inbuf += recv
             data.outbuf += recv              # echo
-            # Now we have data to write — subscribe to WRITE events too
+            # Now we have data to write - subscribe to WRITE events too
             sel.modify(conn,
                        selectors.EVENT_READ | selectors.EVENT_WRITE,
                        data=data)
@@ -58,7 +58,7 @@ def service(conn: socket.socket, mask: int) -> None:
             sent = conn.send(data.outbuf)
             data.outbuf = data.outbuf[sent:]
         if not data.outbuf:
-            # Nothing more to write — only listen for reads
+            # Nothing more to write - only listen for reads
             sel.modify(conn, selectors.EVENT_READ, data=data)
 
 def main():
@@ -130,6 +130,7 @@ class ReactorServer:
             self._sel.close()
 
 # Usage
+
 def echo_handler(conn: socket.socket, data: bytes) -> bytes:
     return data
 
@@ -138,4 +139,4 @@ ReactorServer("0.0.0.0", 9000, echo_handler).run()
 
 ## Conclusion
 
-The Reactor pattern uses `selectors.DefaultSelector` (backed by `epoll` on Linux, `kqueue` on macOS) to multiplex I/O across many sockets in a single thread. Only subscribe to `EVENT_WRITE` when you have data to send — subscribing always causes the event loop to spin. Use `sel.modify` to change interest flags dynamically. This pattern is the foundation of event-driven frameworks like `asyncio`. For Python applications, `asyncio.start_server` provides a higher-level API on top of the same underlying mechanism.
+The Reactor pattern uses `selectors.DefaultSelector` (backed by `epoll` on Linux, `kqueue` on macOS) to multiplex I/O across many sockets in a single thread. Only subscribe to `EVENT_WRITE` when you have data to send - subscribing always causes the event loop to spin. Use `sel.modify` to change interest flags dynamically. This pattern is the foundation of event-driven frameworks like `asyncio`. For Python applications, `asyncio.start_server` provides a higher-level API on top of the same underlying mechanism.

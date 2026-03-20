@@ -24,6 +24,7 @@ OpenAFS is in Ubuntu's package repositories:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the OpenAFS client and utilities

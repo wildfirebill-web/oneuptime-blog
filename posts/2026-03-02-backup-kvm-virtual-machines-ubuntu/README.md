@@ -27,6 +27,7 @@ XML backups are small and fast - always do this:
 
 ```bash
 # Export XML for a single VM
+
 virsh dumpxml myvm > /backup/vm-configs/myvm.xml
 
 # Export XML for all VMs

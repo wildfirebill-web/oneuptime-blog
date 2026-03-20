@@ -84,6 +84,7 @@ Set up cloud credentials and encrypt:
 
 ```bash
 # Ensure cloud credentials are configured
+
 export AWS_PROFILE=my-profile
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/gcp-sa.json
 # Azure credentials via az login

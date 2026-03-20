@@ -29,6 +29,7 @@ Start by auditing which namespaces have labels and which do not:
 
 ```bash
 # List all namespaces with their labels
+
 # This reveals namespaces missing expected labels
 kubectl get namespaces --show-labels
 

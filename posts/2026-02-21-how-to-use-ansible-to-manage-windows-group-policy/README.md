@@ -33,6 +33,7 @@ Many Group Policy settings are just registry values under the hood. Ansible's `w
 
 ```yaml
 # playbook-registry-policy.yml
+
 # Sets common security policy settings via the registry
 - name: Configure local security policy via registry
   hosts: windows

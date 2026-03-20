@@ -168,6 +168,7 @@ If `feature.email.enabled=true` is not in your `application.properties`, this be
 
 ```properties
 # application.properties
+
 feature.email.enabled=true
 ```
 

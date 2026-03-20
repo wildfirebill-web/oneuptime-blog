@@ -125,6 +125,7 @@ The gateway collectors are configured to be lightweight with minimal processing.
 
 ```yaml
 # Gateway Collector Configuration (otel-gateway-config.yaml)
+
 # This configuration is optimized for high-throughput ingestion with minimal processing.
 # Gateway collectors accept incoming telemetry and forward it to processing collectors.
 

@@ -20,6 +20,7 @@ IRSA enables Kubernetes pods to assume IAM roles using service account tokens pr
 
 ```hcl
 # Get the OIDC thumbprint for the cluster's issuer URL
+
 data "tls_certificate" "cluster" {
   url = aws_eks_cluster.main.identity[0].oidc[0].issuer
 }

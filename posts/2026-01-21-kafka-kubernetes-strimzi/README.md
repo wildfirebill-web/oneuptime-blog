@@ -26,6 +26,7 @@ Before starting, ensure you have:
 
 ```bash
 # Add the Strimzi Helm repository
+
 helm repo add strimzi https://strimzi.io/charts/
 helm repo update
 

@@ -69,6 +69,7 @@ Store your Istio manifests as part of your Octopus deployment package. Create th
 
 ```yaml
 # virtualservice.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

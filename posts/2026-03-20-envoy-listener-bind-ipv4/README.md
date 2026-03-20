@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, IPv4, Listener, Proxy, Service Mesh, xDS
+Tags: Envoy, IPv4, Listeners, Proxy, Service Mesh, XDS
 
 Description: Configure an Envoy proxy listener to accept connections on a specific IPv4 address and port using static bootstrap configuration.
 
 ## Introduction
 
-Envoy's listener configuration defines the entry points for incoming traffic. Binding a listener to a specific IPv4 address rather than the wildcard ensures only connections on the intended interface are accepted—useful in multi-homed environments and Kubernetes sidecars.
+Envoy's listener configuration defines the entry points for incoming traffic. Binding a listener to a specific IPv4 address rather than the wildcard ensures only connections on the intended interface are accepted-useful in multi-homed environments and Kubernetes sidecars.
 
 ## Static Bootstrap Configuration
 
@@ -135,6 +135,7 @@ static_resources:
 
 ```bash
 # Validate configuration
+
 envoy --mode validate -c /etc/envoy/envoy.yaml
 
 # Start Envoy

@@ -28,6 +28,7 @@ Check your current mode:
 
 ```bash
 # Check kube-proxy configuration
+
 kubectl get configmap kube-proxy -n kube-system -o yaml | grep mode
 
 # An empty mode field means iptables (the default)

@@ -20,6 +20,7 @@ Search for images by keyword:
 
 ```bash
 # Search for nginx images
+
 docker search nginx
 
 # Sample output:

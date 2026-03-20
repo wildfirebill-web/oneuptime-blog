@@ -30,6 +30,7 @@ Each environment holds key-value pairs. When you run your application with Doppl
 
 ```bash
 # Add Doppler GPG key
+
 curl -sLf --retry 3 --tlsv1.2 --proto "=https" \
   'https://packages.doppler.com/public/cli/gpg.DE2A7741A397C129.key' \
   | sudo gpg --dearmor -o /usr/share/keyrings/doppler-archive-keyring.gpg

@@ -49,6 +49,7 @@ Cilium assigns each pod an identity based on its labels. Policies reference thes
 
 ```bash
 # View Cilium endpoints and their identities
+
 cilium endpoint list
 
 # Output shows endpoint ID, identity, and labels

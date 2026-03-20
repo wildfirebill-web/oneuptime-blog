@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, threat-detection, security, falco, kubernetes
+Tags: Rancher, Threat-detection, Security, Falco, Kubernetes
 
 Description: Guide to implementing real-time container threat detection in Rancher using Falco and custom rules.
 
@@ -31,6 +31,7 @@ How to Implement Runtime Threat Detection in Rancher addresses these challenges 
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

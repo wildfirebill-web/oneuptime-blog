@@ -36,6 +36,7 @@ sudo tee /etc/audit/rules.d/50-ssh-auth.rules << 'EOF'
 ## SSH authentication and login monitoring
 
 # Monitor SSH configuration for changes
+
 -w /etc/ssh/sshd_config -p wa -k sshd_config
 -w /etc/ssh/sshd_config.d/ -p wa -k sshd_config
 

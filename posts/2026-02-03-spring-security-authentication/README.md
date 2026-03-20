@@ -395,6 +395,7 @@ Testing with curl:
 
 ```bash
 # Send credentials with the request
+
 curl -u username:password https://api.example.com/api/users
 
 # Or encode credentials manually (base64 of "username:password")

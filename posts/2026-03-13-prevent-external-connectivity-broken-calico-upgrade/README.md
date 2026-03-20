@@ -31,6 +31,7 @@ Understanding which Calico versions have changed default behaviors is essential.
 
 ```bash
 # Before every Calico upgrade, export current configuration
+
 mkdir -p /backup/calico-pre-upgrade
 calicoctl get ippool -o yaml > /backup/calico-pre-upgrade/ippools.yaml
 calicoctl get globalnetworkpolicy -o yaml > /backup/calico-pre-upgrade/gnps.yaml

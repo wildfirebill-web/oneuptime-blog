@@ -22,6 +22,7 @@ Ubuntu ships with GnuPG, but it is worth confirming you have a current version:
 
 ```bash
 # Check if GPG is installed
+
 gpg --version
 
 # Install if missing, or update

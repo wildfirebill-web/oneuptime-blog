@@ -29,6 +29,7 @@ Before touching any commands, list out the resources in each state:
 
 ```bash
 # List resources in the networking state
+
 cd terraform/networking
 terraform state list > /tmp/networking-resources.txt
 

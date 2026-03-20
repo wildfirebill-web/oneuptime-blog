@@ -14,6 +14,7 @@ Google Kubernetes Engine (GKE) is GCP's managed Kubernetes service. OpenTofu dep
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
@@ -56,7 +57,7 @@ resource "google_container_cluster" "main" {
     workload_pool = "${var.project_id}.svc.id.goog"
   }
 
-  # Private cluster — nodes have no public IPs
+  # Private cluster - nodes have no public IPs
   private_cluster_config {
     enable_private_nodes    = true
     enable_private_endpoint = false  # Keep public endpoint for kubectl

@@ -16,6 +16,7 @@ Ubuntu users should install Fluentd via the official package repository (td-agen
 
 ```bash
 # Install the official Fluentd package (fluent-package, formerly td-agent)
+
 # Download and run the installation script
 curl -fsSL https://toolbelt.treasuredata.com/sh/install-ubuntu-jammy-fluent-package5-lts.sh | sh
 

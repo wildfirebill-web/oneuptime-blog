@@ -14,6 +14,7 @@ Amazon MWAA is the fully managed Apache Airflow service that eliminates the oper
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -53,7 +54,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "airflow" {
   }
 }
 
-# Block public access — DAG bucket must not be public
+# Block public access - DAG bucket must not be public
 resource "aws_s3_bucket_public_access_block" "airflow" {
   bucket                  = aws_s3_bucket.airflow.id
   block_public_acls       = true
@@ -215,7 +216,7 @@ resource "aws_security_group" "mwaa" {
 ## Best Practices
 
 - Use `mw1.small` for development and `mw1.medium` or larger for production workloads.
-- Store DAGs in S3 and use CI/CD to sync them — avoid manual uploads.
-- Enable versioning on the S3 bucket (required by MWAA) — this also lets you roll back bad DAG deployments.
-- Use private subnets for MWAA — the environment should not be publicly accessible.
+- Store DAGs in S3 and use CI/CD to sync them - avoid manual uploads.
+- Enable versioning on the S3 bucket (required by MWAA) - this also lets you roll back bad DAG deployments.
+- Use private subnets for MWAA - the environment should not be publicly accessible.
 - Monitor the `NumQueuedTasks` CloudWatch metric to detect when workers are overwhelmed and scale accordingly.

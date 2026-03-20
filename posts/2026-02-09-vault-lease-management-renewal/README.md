@@ -22,6 +22,7 @@ Set system-wide default TTLs in Vault's configuration:
 
 ```hcl
 # vault-config.hcl
+
 storage "file" {
   path = "/vault/data"
 }

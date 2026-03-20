@@ -31,6 +31,7 @@ Use `setfacl -d` to set default ACLs:
 
 ```bash
 # Create a shared directory
+
 sudo mkdir -p /opt/shared-project
 
 # Set the default ACL for a user

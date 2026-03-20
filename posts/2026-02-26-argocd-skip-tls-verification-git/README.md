@@ -36,6 +36,7 @@ The quickest way to get past TLS errors is to disable verification for a specifi
 
 ```bash
 # Add a repository with TLS verification disabled
+
 argocd repo add https://git.internal.example.com/my-org/my-repo.git \
   --username my-user \
   --password my-password \

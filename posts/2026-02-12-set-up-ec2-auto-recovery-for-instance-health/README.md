@@ -35,6 +35,7 @@ The classic way to set up auto recovery is through a CloudWatch alarm that watch
 
 ```bash
 # Create a CloudWatch alarm that triggers auto recovery
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "auto-recover-i-0abc123" \
   --alarm-description "Recover instance when system status check fails" \

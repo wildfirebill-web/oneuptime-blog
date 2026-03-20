@@ -51,6 +51,7 @@ Terraform generates a `.terraform.lock.hcl` file that records the exact versions
 
 ```hcl
 # .terraform.lock.hcl (auto-generated, commit this file)
+
 provider "registry.terraform.io/hashicorp/aws" {
   version     = "5.31.0"
   constraints = "5.31.0"

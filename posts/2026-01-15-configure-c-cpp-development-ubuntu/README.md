@@ -35,6 +35,7 @@ The GNU Compiler Collection (GCC) is the standard compiler for C and C++ on Linu
 
 ```bash
 # Update package lists to ensure you get the latest versions
+
 sudo apt update
 
 # Install the build-essential meta-package

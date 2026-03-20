@@ -32,6 +32,7 @@ You need Docker with Buildx installed on your workstation and SSH access (or Doc
 
 ```bash
 # Verify Buildx is available
+
 docker buildx version
 
 # Check available platforms on your local machine

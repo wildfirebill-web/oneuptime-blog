@@ -33,6 +33,7 @@ graph TD
 
 ```yaml
 # inventories/production/hosts.yml
+
 # Consul cluster inventory
 all:
   children:

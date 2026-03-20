@@ -38,6 +38,7 @@ Creating an immutable ConfigMap is straightforward. Just add the `immutable: tru
 
 ```yaml
 # immutable-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

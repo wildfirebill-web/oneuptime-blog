@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, Infrastructure as Code, HCL, DevOps
+Tags: OpenTofu, Data Source, Infrastructure as Code, HCL, DevOps
 
 Description: Learn how to query existing infrastructure using data sources in OpenTofu to read resource attributes and use them in your configurations.
 
@@ -29,6 +29,7 @@ The most common pattern is looking up a resource by one of its tags.
 
 ```hcl
 # Find an existing VPC using its Name tag
+
 data "aws_vpc" "shared" {
   tags = {
     Name        = "shared-services-vpc"
@@ -77,7 +78,7 @@ resource "aws_instance" "web" {
 
 ## Query Multiple Resources
 
-Some data sources return multiple results — use the plural form (e.g., `aws_subnets` vs `aws_subnet`).
+Some data sources return multiple results - use the plural form (e.g., `aws_subnets` vs `aws_subnet`).
 
 ```hcl
 # Find all private subnets in a VPC

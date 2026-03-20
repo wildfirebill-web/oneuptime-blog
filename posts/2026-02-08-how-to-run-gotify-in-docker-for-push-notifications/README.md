@@ -24,6 +24,7 @@ You need Docker and Docker Compose on your server. Gotify is extremely lightweig
 
 ```bash
 # Verify Docker is ready
+
 docker --version
 docker compose version
 ```

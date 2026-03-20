@@ -27,6 +27,7 @@ Here are the errors you will encounter and what they mean:
 
 ```text
 # Client certificate not sent
+
 tls: certificate required
 
 # Client certificate sent but not trusted by the server

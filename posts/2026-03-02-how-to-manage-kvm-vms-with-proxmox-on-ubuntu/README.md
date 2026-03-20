@@ -38,6 +38,7 @@ The `qm` command is the primary tool for VM management:
 
 ```bash
 # Create a new VM with VMID 201
+
 # This creates the VM configuration but doesn't start it yet
 qm create 201 \
     --name ubuntu-web-server \
@@ -202,7 +203,7 @@ qm clone 101 202 --name web-from-template
 qm clone 101 203 --name dev-server --storage local-lvm --full
 ```
 
-## Resource Management and Monitoring
+Resource Management and Monitoring
 
 ```bash
 # View real-time resource usage for a VM

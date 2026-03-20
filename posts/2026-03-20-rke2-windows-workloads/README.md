@@ -31,6 +31,7 @@ On your Linux server node, configure RKE2 to use Calico CNI (required for Window
 
 ```yaml
 # /etc/rancher/rke2/config.yaml on Linux server
+
 token: "SharedClusterToken"
 tls-san:
   - 192.168.1.100

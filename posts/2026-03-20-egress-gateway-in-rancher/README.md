@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Egress Gateway, Network, Calico, Kubernetes, Security
+Tags: Rancher, Egress Gateway, Networks, Calico, Kubernetes, Security
 
 Description: Configure an egress gateway in Rancher to route outbound traffic from specific namespaces or pods through a dedicated IP for firewall whitelisting and compliance.
 
@@ -21,6 +21,7 @@ Egress gateways provide a fixed, predictable source IP for outbound connections 
 
 ```yaml
 # Install Calico Egress Gateway (requires Calico Enterprise or Calico Cloud)
+
 # Or use open-source Calico with EgressIPSet
 
 # Create an IP pool for egress

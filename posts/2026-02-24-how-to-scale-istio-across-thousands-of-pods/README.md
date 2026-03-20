@@ -48,6 +48,7 @@ For large organizations, create a Sidecar resource in every namespace:
 
 ```bash
 # Generate Sidecar resources for all application namespaces
+
 for ns in $(kubectl get namespaces -l type=application -o jsonpath='{.items[*].metadata.name}'); do
   cat <<EOF | kubectl apply -f -
 apiVersion: networking.istio.io/v1beta1

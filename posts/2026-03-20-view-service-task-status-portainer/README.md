@@ -1,8 +1,8 @@
-# How to View Service Task Status in Portainer
+# How to View Service Task Status in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Tasks, Services, Monitoring
+Tags: Portainer, Docker Swarm, Task, Services, Monitoring
 
 Description: Monitor the status of Docker Swarm service tasks in Portainer to track running, failed, and pending replicas.
 
@@ -14,6 +14,7 @@ Docker Swarm mode enables container orchestration across multiple hosts. Portain
 
 ```bash
 # Initialize Docker Swarm (if not already done)
+
 docker swarm init --advertise-addr <manager-ip>
 
 # Join workers to the Swarm

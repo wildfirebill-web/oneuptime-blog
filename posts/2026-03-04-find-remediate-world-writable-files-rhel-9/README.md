@@ -16,6 +16,7 @@ A file is world-writable when the "other" write bit is set in its permissions. I
 
 ```bash
 # A world-writable file looks like this in ls -l
+
 -rwxrwxrwx  1 root root  1024 Mar  4 10:00 dangerous-file.sh
 #       ^ the w here means world-writable
 ```

@@ -217,4 +217,4 @@ run "rejects_invalid_vpc" {
 
 ## Conclusion
 
-`override_resource` gives you precise control over resource attribute values in OpenTofu tests. Combined with mock providers, it enables a fully offline test suite that validates how your configuration uses resource attributes — without any cloud API calls or infrastructure costs.
+`override_resource` gives you precise control over resource attribute values in OpenTofu tests. Combined with mock providers, it enables a fully offline test suite that validates how your configuration uses resource attributes - without any cloud API calls or infrastructure costs.

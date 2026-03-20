@@ -28,6 +28,7 @@ flowchart LR
 
 ```bash
 # Pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-repo-server -o wide
 
 # Resource usage

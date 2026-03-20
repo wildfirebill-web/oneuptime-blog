@@ -32,6 +32,7 @@ Validation ensures that your configuration and deployment are working as intende
 
 ```bash
 # Step 1: Validate Cilium configuration is applied correctly
+
 cilium config view | head -30
 
 # Step 2: Validate all agents are running and healthy

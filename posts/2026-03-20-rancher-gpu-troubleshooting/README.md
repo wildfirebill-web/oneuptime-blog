@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gpu, troubleshooting, nvidia, kubernetes, debugging
+Tags: Rancher, GPU, Troubleshooting, NVIDIA, Kubernetes, Debugging
 
 Description: Comprehensive troubleshooting guide for resolving common GPU-related issues in Rancher Kubernetes clusters.
+
 ## Introduction
 
 GPU issues in Rancher can stem from hardware, drivers, container runtime, or Kubernetes configuration. This guide provides systematic troubleshooting steps for the most common GPU problems.
@@ -23,6 +24,7 @@ GPU issues in Rancher can stem from hardware, drivers, container runtime, or Kub
 
 ```bash
 # On the GPU node
+
 # Check PCI device
 lspci | grep -i nvidia
 

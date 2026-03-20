@@ -407,6 +407,7 @@ Set up alerts for security-relevant events:
 
 ```promql
 # Unusual increase in 401/403 responses
+
 sum(rate(istio_requests_total{reporter="source", destination_workload="istio-ingressgateway", response_code=~"401|403"}[5m])) > 100
 
 # TLS handshake failures

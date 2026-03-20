@@ -56,6 +56,7 @@ First, identify where time is being spent:
 ```bash
 #!/bin/bash
 # diagnose_startup.sh
+
 # Script to analyze pod startup time
 
 POD_NAME=$1

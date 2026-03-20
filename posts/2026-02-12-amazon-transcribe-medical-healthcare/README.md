@@ -78,6 +78,7 @@ def wait_for_medical_transcription(job_name):
         time.sleep(15)
 
 # Transcribe a physician's dictation
+
 transcribe_medical_audio(
     'patient-note-2026-02-12',
     's3://medical-audio/dictations/dr-smith-note-001.mp3',

@@ -16,6 +16,7 @@ The `log` function returns the logarithm of a given number in a specified base. 
 
 ```hcl
 # log(number, base)
+
 # Returns the logarithm of number in the given base
 log(16, 2)   # Returns: 4 (because 2^4 = 16)
 log(1000, 10) # Returns: 3 (because 10^3 = 1000)

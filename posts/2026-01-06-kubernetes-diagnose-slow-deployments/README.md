@@ -42,6 +42,7 @@ When deployments are slow, one of these phases is taking too long.
 
 ```bash
 # Watch deployment progress
+
 kubectl rollout status deployment/<name> -n <namespace>
 
 # Watch pod creation

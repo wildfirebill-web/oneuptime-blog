@@ -24,6 +24,7 @@ The cleanest approach is to use OpenTelemetry Baggage. Baggage propagates key-va
 
 ```python
 # chaos_baggage_middleware.py
+
 from opentelemetry import baggage, context
 from opentelemetry.context import attach, detach
 

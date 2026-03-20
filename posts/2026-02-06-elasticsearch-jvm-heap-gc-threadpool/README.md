@@ -127,6 +127,7 @@ Elasticsearch uses dedicated thread pools for different operation types:
 
 ```text
 # Thread pool types
+
 search     - Search queries
 write      - Indexing, bulk, delete, update
 get        - Get by ID

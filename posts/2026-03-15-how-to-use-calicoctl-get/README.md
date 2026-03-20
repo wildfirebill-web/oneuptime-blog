@@ -29,6 +29,7 @@ This guide demonstrates practical uses of `calicoctl get` for day-to-day Calico 
 
 ```bash
 # List all Calico nodes
+
 calicoctl get nodes
 
 # List all IP pools

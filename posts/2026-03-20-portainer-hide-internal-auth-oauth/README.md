@@ -1,4 +1,4 @@
-# How to Hide Internal Authentication When Using OAuth in Portainer
+# How to Hide Internal Authentication When Using OAuth in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -65,7 +65,7 @@ curl -X PUT \
 
 Even with `HideInternalAuth` enabled, you can access the internal login form by appending a query parameter:
 
-```
+```text
 https://portainer.example.com/?skipSSO=true
 ```
 
@@ -78,12 +78,13 @@ This displays the internal username/password form regardless of the `HideInterna
 Since `HideInternalAuth` makes the internal admin less visible, ensure you:
 
 1. **Have a strong admin password** documented in a password manager or secrets vault
-2. **Test emergency access regularly** — log in via `?skipSSO=true` quarterly
+2. **Test emergency access regularly** - log in via `?skipSSO=true` quarterly
 3. **Have at least two admin accounts** in case one account is compromised or password is forgotten
-4. **Don't rely on the IdP admin** — your IdP being unavailable is exactly the scenario where you need internal admin access
+4. **Don't rely on the IdP admin** - your IdP being unavailable is exactly the scenario where you need internal admin access
 
 ```bash
 # Create a backup admin account before enabling HideInternalAuth
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

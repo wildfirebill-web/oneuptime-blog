@@ -20,6 +20,7 @@ Cross-region replicas serve two main purposes: reducing read latency for users i
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

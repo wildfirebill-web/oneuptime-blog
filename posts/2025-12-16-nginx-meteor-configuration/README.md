@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Meteor, WebSocket, Node.js, Deployment
+Tags: Nginx, Meteor, WebSocket, Node.js, Deployment
 
 Description: Learn how to configure Nginx as a reverse proxy for Meteor applications, including WebSocket support, sticky sessions, SSL termination, and production-ready optimizations.
 
@@ -90,6 +90,7 @@ WebSocket support is critical for Meteor's DDP protocol:
 
 ```nginx
 # Map for WebSocket upgrade
+
 map $http_upgrade $connection_upgrade {
     default upgrade;
     ''      close;

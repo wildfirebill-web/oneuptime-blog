@@ -26,6 +26,7 @@ Here's a simple example:
 
 ```bash
 # Create two security groups
+
 FRONTEND_SG=$(aws ec2 create-security-group \
   --group-name "frontend-sg" \
   --description "Frontend web servers" \

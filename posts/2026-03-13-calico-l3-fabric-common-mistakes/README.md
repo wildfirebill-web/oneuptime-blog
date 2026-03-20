@@ -39,6 +39,7 @@ Deploying only one route reflector means it is a single point of failure for all
 
 ```yaml
 # Route reflector pod anti-affinity (if deployed as pods)
+
 affinity:
   podAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:

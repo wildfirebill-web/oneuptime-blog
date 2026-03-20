@@ -231,6 +231,7 @@ Test with curl by setting the Accept-Language header:
 
 ```bash
 # Test French routing
+
 kubectl exec deploy/sleep -c sleep -- curl -s -H "Accept-Language: fr-FR,fr;q=0.9" http://content-service.default.svc.cluster.local/
 
 # Test Spanish routing

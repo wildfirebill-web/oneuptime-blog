@@ -103,6 +103,7 @@ sudo tee /usr/share/pacemaker/alerts/alert_webhook.sh << 'SCRIPT'
 #!/bin/bash
 
 # Pacemaker passes event data as environment variables:
+
 # CRM_alert_kind - node, fencing, or resource
 # CRM_alert_node - affected node
 # CRM_alert_desc - event description

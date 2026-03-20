@@ -20,7 +20,7 @@ Description: Monitor IPv6 Neighbor Discovery Protocol activity including neighbo
 
 ```bash
 #!/usr/bin/env bash
-# /usr/local/bin/ndp-stats.sh — NDP metrics collector
+# /usr/local/bin/ndp-stats.sh - NDP metrics collector
 
 get_ndp_stats() {
     local IFACE=${1:-"all"}
@@ -51,6 +51,7 @@ get_ndp_stats() {
 }
 
 # Output Prometheus text format
+
 echo "# HELP ndp_cache_total Total NDP cache entries"
 echo "# TYPE ndp_cache_total gauge"
 for IFACE in eth0 eth1 vxlan100; do
@@ -90,7 +91,7 @@ OUTPUT="/var/lib/node_exporter/textfile_collector/ndp.prom"
 
 ```bash
 #!/bin/bash
-# monitor-ndp-rate.sh — Real-time NDP message rate
+# monitor-ndp-rate.sh - Real-time NDP message rate
 
 IFACE=${1:-eth0}
 INTERVAL=10  # seconds
@@ -128,7 +129,7 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: "NDP cache overflow — {{ $value }} incomplete entries on {{ $labels.interface }}"
+          summary: "NDP cache overflow - {{ $value }} incomplete entries on {{ $labels.interface }}"
 
       - alert: NDPHighFailedCount
         expr: |
@@ -150,7 +151,7 @@ groups:
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Panel: NDP Cache by State (stacked bar)
 ndp_neighbor_cache_entries
 

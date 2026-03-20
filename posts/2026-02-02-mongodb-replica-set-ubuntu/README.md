@@ -93,6 +93,7 @@ The following commands update the package list and upgrade all installed package
 
 ```bash
 # Update package list and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential utilities for server management

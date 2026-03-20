@@ -29,6 +29,7 @@ Network latency experiments simulate slow network links between services. This i
 
 ```yaml
 # clusters/my-cluster/chaos-experiments/network-latency.yaml
+
 apiVersion: chaos-mesh.org/v1alpha1
 kind: NetworkChaos
 metadata:

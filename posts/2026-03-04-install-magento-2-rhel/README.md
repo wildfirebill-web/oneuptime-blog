@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Magento, PHP, NGINX, MySQL, E-Commerce, Linux
+Tags: RHEL, Magento, PHP, Nginx, MySQL, E-Commerce, Linux
 
 Description: Install Magento 2 Open Source on RHEL with Nginx, PHP-FPM, MySQL, and Elasticsearch for a production-ready e-commerce platform.
 
@@ -14,6 +14,7 @@ Magento 2 is a feature-rich e-commerce platform. Its installation requires multi
 
 ```bash
 # Install Nginx and MySQL
+
 sudo dnf install -y nginx mysql-server
 
 # Install PHP 8.2 via Remi with Magento-required extensions

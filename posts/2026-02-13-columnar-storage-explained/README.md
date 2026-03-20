@@ -155,6 +155,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 # Define schema with explicit types for better compression and compatibility
+
 schema = pa.schema([
     pa.field("date", pa.date32()),
     pa.field("product", pa.dictionary(pa.int16(), pa.string())),

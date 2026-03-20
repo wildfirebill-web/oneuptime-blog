@@ -47,6 +47,7 @@ Define a namespace for the Snyk Controller.
 
 ```yaml
 # snyk-namespace.yaml
+
 # Dedicated namespace for Snyk Controller
 apiVersion: v1
 kind: Namespace

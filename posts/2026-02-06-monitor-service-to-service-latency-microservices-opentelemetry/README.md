@@ -51,6 +51,7 @@ Here's a Python service setup using FastAPI that traces both incoming requests a
 
 ```python
 # tracing_setup.py - Initialize OpenTelemetry for a Python microservice
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

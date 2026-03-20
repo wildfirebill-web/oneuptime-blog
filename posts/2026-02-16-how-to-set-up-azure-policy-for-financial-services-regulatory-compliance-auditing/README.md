@@ -36,6 +36,7 @@ To assign an initiative using the Azure CLI, run the following command. This ass
 
 ```bash
 # Assign the PCI DSS 3.2.1 built-in initiative to the target subscription
+
 az policy assignment create \
   --name "pci-dss-audit" \
   --display-name "PCI DSS 3.2.1 Compliance Audit" \

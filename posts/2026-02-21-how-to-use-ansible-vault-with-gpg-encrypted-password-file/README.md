@@ -27,6 +27,7 @@ You need GPG installed and configured with at least one key pair:
 
 ```bash
 # Check if GPG is installed
+
 gpg --version
 
 # List your existing GPG keys

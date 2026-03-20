@@ -1,4 +1,4 @@
-# How to Set Up Multi-Tenant Container Management with Portainer
+# How to Set Up Multi-Tenant Container Management with Portainer - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,6 +37,7 @@ Via the API:
 TOKEN="your-admin-jwt-token"
 
 # Create Team Alpha
+
 curl -s -X POST https://portainer.example.com/api/teams \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

@@ -30,6 +30,7 @@ Compare pricing directly:
 
 ```bash
 # Compare x86 vs Graviton pricing
+
 echo "=== x86 (m5.large) ==="
 aws pricing get-products \
   --service-code AmazonEC2 \

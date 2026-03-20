@@ -32,6 +32,7 @@ In this post, I will focus on label detection and object tracking since those ar
 
 ```bash
 # Enable the API
+
 gcloud services enable videointelligence.googleapis.com
 
 # Install the client library

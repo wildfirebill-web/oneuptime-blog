@@ -20,6 +20,7 @@ MAC address collisions in Docker occur when two containers or network interfaces
 
 ```bash
 # Check if a stack failed with MAC-related errors
+
 docker logs portainer 2>&1 | grep -i "mac\|duplicate\|collision"
 
 # Or check Docker events

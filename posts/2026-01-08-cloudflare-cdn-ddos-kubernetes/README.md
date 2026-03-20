@@ -92,6 +92,7 @@ Update these at your domain registrar. Propagation typically takes 24-48 hours.
 
 ```bash
 # Check nameserver propagation
+
 dig NS yourdomain.com +short
 
 # Verify Cloudflare is active

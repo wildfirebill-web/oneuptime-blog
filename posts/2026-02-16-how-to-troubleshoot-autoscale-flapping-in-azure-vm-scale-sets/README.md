@@ -26,6 +26,7 @@ Check the autoscale activity log to confirm flapping:
 
 ```bash
 # View recent autoscale events
+
 az monitor activity-log list \
   --resource-group myResourceGroup \
   --offset 24h \

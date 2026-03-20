@@ -99,6 +99,7 @@ For severe corruption, use myisamchk when MySQL is stopped.
 
 ```bash
 # Stop MySQL service
+
 sudo systemctl stop mysql
 
 # Navigate to data directory

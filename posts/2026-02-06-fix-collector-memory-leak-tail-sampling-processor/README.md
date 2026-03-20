@@ -41,6 +41,7 @@ Watch the Collector's memory over time:
 
 ```bash
 # Check Collector memory usage
+
 kubectl top pods -l app=otel-collector
 
 # Watch it over time

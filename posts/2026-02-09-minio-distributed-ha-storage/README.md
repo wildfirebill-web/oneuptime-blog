@@ -22,6 +22,7 @@ The MinIO Operator simplifies deployment and management with Kubernetes custom r
 
 ```bash
 # Install MinIO Operator
+
 kubectl apply -f https://github.com/minio/operator/releases/latest/download/operator.yaml
 
 # Verify operator installation

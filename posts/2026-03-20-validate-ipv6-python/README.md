@@ -1,8 +1,8 @@
-# How to Validate IPv6 Addresses in Python
+# How to Validate IPv6 Addresses in Python - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Python, Validation, ipaddress, Input Sanitization
+Tags: IPv6, Python, Validation, Ipaddress, Input Sanitization
 
 Description: Validate IPv6 addresses in Python applications using the ipaddress module, regex, and custom validators that check address type, prefix length, and scope constraints.
 
@@ -22,6 +22,7 @@ def is_valid_ipv6(address: str) -> bool:
         return False
 
 # Test cases
+
 test_addresses = [
     ("2001:db8::1", True),
     ("::1", True),
@@ -71,7 +72,7 @@ def validate_ipv6_prefix(prefix_str: str, strict: bool = False) -> dict:
 # Test
 prefixes = [
     "2001:db8::/32",
-    "2001:db8::1/64",      # host bits set — strict=False allows this
+    "2001:db8::1/64",      # host bits set - strict=False allows this
     "2001:db8::/129",      # invalid prefix length
     "fd00::/8",
     "::/0",
@@ -224,4 +225,4 @@ print(json.dumps(report["stats"], indent=2))
 
 ## Conclusion
 
-Use Python's `ipaddress.ip_address()` as the primary validation method — it handles all valid IPv6 formats and raises `ValueError` for invalid input. For web APIs and forms, normalize the validated address with `str(addr)` to return a consistent compressed form. Add type constraints (`is_global`, `is_link_local`, `is_private`) to enforce address scope requirements for your application. For CIDR prefix validation, use `ip_network(strict=False)` to allow host addresses with prefix length, or `strict=True` to require clean network addresses. Strip zone identifiers (`%eth0`) before parsing, as `ip_address()` does not accept them.
+Use Python's `ipaddress.ip_address()` as the primary validation method - it handles all valid IPv6 formats and raises `ValueError` for invalid input. For web APIs and forms, normalize the validated address with `str(addr)` to return a consistent compressed form. Add type constraints (`is_global`, `is_link_local`, `is_private`) to enforce address scope requirements for your application. For CIDR prefix validation, use `ip_network(strict=False)` to allow host addresses with prefix length, or `strict=True` to require clean network addresses. Strip zone identifiers (`%eth0`) before parsing, as `ip_address()` does not accept them.

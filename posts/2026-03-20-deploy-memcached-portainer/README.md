@@ -22,6 +22,7 @@ Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
 # docker-compose.yml - Memcached
+
 version: "3.8"
 
 services:
@@ -64,9 +65,9 @@ networks:
 ```
 
 Command flags explained:
-- `-m 512` — allocate 512 MB of memory for caching
-- `-c 1024` — allow up to 1024 simultaneous connections
-- `-t 4` — use 4 threads
+- `-m 512` - allocate 512 MB of memory for caching
+- `-c 1024` - allow up to 1024 simultaneous connections
+- `-t 4` - use 4 threads
 
 ## Step 2: Test Connectivity
 
@@ -117,7 +118,7 @@ $key = 'product_' . $product_id;
 $product = $memcached->get($key);
 
 if ($product === false) {
-    // Cache miss — fetch from database
+    // Cache miss - fetch from database
     $product = $db->fetchProduct($product_id);
     $memcached->set($key, $product, 600);  // Cache for 600 seconds
 }
@@ -136,10 +137,10 @@ scrape_configs:
 ```
 
 Key metrics to watch:
-- `memcached_current_bytes` — bytes currently used
-- `memcached_limit_maxbytes` — total cache size
-- `memcached_items_evicted_total` — evictions (increase memory if high)
-- `memcached_get_hit_ratio` — cache hit rate (target > 90%)
+- `memcached_current_bytes` - bytes currently used
+- `memcached_limit_maxbytes` - total cache size
+- `memcached_items_evicted_total` - evictions (increase memory if high)
+- `memcached_get_hit_ratio` - cache hit rate (target > 90%)
 
 ## Step 6: Production Configuration
 
@@ -170,4 +171,4 @@ services:
 
 ## Conclusion
 
-Memcached is ideal for simple key-value caching with very high throughput requirements. It does not support persistence, replication, or authentication — keep it on an internal Docker network. For cache invalidation, use key prefixes with version numbers (e.g., `v2:user:1000`) to invalidate entire groups of keys by changing the prefix. Monitor evictions — if evictions are high, either increase the memory allocation or review your caching strategy.
+Memcached is ideal for simple key-value caching with very high throughput requirements. It does not support persistence, replication, or authentication - keep it on an internal Docker network. For cache invalidation, use key prefixes with version numbers (e.g., `v2:user:1000`) to invalidate entire groups of keys by changing the prefix. Monitor evictions - if evictions are high, either increase the memory allocation or review your caching strategy.

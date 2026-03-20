@@ -58,6 +58,7 @@ The following commands install the gcloud CLI and configure your project.
 
 ```bash
 # Install Google Cloud SDK (macOS with Homebrew)
+
 brew install google-cloud-sdk
 
 # Authenticate with your Google account

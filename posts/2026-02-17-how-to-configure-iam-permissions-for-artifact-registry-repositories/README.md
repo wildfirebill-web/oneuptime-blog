@@ -41,6 +41,7 @@ The most common permission grant - letting a service or user pull images:
 
 ```bash
 # Grant read access to a service account
+
 gcloud artifacts repositories add-iam-policy-binding my-docker-repo \
   --location=us-central1 \
   --member="serviceAccount:my-service@my-project.iam.gserviceaccount.com" \

@@ -1,4 +1,4 @@
-# How to Deploy Elasticsearch via Portainer
+# How to Deploy Elasticsearch via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Before deploying, configure the Docker host for Elasticsearch:
 
 ```bash
 # Increase virtual memory limits (required for Elasticsearch)
+
 sudo sysctl -w vm.max_map_count=262144
 
 # Make persistent

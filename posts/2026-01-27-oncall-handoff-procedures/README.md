@@ -46,6 +46,7 @@ Choose handoff times that work for your team and stick to them. Common patterns 
 
 ```yaml
 # Example: Handoff schedule configuration
+
 # This configuration defines when handoffs occur and how much overlap is required
 
 handoff_schedule:

@@ -34,6 +34,7 @@ SSH into the rescue system:
 ```bash
 ssh root@<server-ip>
 # Use the temporary password set in the rescue tab
+
 ```
 
 Run installimage:

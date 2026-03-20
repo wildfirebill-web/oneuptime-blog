@@ -34,6 +34,7 @@ Review the values file to understand configurable options.
 
 ```yaml
 # custom-calico-values.yaml
+
 installation:
   calicoNetwork:
     ipPools:

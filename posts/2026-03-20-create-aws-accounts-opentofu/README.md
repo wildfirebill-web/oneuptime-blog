@@ -91,6 +91,7 @@ provider "aws" {
 }
 
 # Create a baseline VPC in the new account
+
 resource "aws_vpc" "production_baseline" {
   provider   = aws.production
   cidr_block = "10.1.0.0/16"

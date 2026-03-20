@@ -25,6 +25,7 @@ Create a load balancer and specify the port your application listens on.
 
 ```bash
 # Create a load balancer that forwards traffic to port 80 on instances
+
 aws lightsail create-load-balancer \
   --load-balancer-name my-app-lb \
   --instance-port 80 \

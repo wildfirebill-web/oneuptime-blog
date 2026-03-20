@@ -41,6 +41,7 @@ When running with service meshes like Istio, your application might start before
 
 ```yaml
 # service-mesh-readiness.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

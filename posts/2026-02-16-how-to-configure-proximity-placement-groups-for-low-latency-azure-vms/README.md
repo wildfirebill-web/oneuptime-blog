@@ -60,6 +60,7 @@ Creating a PPG is simple:
 
 ```bash
 # Create a Proximity Placement Group
+
 az ppg create \
   --resource-group myResourceGroup \
   --name myPPG \

@@ -45,6 +45,7 @@ Here is a Lambda function that processes IoT telemetry, checks for anomalies, an
 
 ```python
 # lambda_function.py - IoT telemetry processor
+
 import json
 import boto3
 import os

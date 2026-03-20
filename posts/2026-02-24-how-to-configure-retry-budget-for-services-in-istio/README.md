@@ -198,6 +198,7 @@ Track retry rates to understand how your budget is performing:
 
 ```bash
 # Check retry stats on a specific pod's proxy
+
 kubectl exec deploy/frontend -c istio-proxy -- \
   pilot-agent request GET stats | grep retry
 ```

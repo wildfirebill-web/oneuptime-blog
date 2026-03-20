@@ -188,6 +188,7 @@ async function handleRequest(request) {
 # Create cache rules using Cloudflare API
 
 # Cache everything rule for static assets
+
 curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/pagerules" \
     -H "Authorization: Bearer {api_token}" \
     -H "Content-Type: application/json" \

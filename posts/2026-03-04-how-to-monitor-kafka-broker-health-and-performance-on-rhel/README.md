@@ -14,6 +14,7 @@ Monitoring Kafka brokers is essential for maintaining a healthy messaging infras
 
 ```bash
 # Verify the broker is running
+
 sudo systemctl status kafka
 
 # Check broker logs for errors

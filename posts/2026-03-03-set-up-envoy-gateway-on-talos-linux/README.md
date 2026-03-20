@@ -32,6 +32,7 @@ You need:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify cluster health

@@ -31,6 +31,7 @@ PublicKey = <server-public-key>
 Endpoint = vpn.example.com:51820
 
 # Include ::/0 to route ALL IPv6
+
 AllowedIPs = 0.0.0.0/0, ::/0
 
 PersistentKeepalive = 25

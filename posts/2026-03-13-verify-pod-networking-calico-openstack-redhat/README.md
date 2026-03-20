@@ -24,6 +24,7 @@ RHEL's SELinux is the most common source of silent failures in Calico deployment
 
 ```bash
 # On each compute node
+
 sudo systemctl status calico-felix
 sudo calicoctl node status
 ```

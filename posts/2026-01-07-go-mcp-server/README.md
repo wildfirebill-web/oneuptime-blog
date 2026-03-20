@@ -1184,6 +1184,7 @@ Build your MCP server:
 
 ```bash
 # Build the server binary
+
 go build -o mcp-server ./cmd/server
 
 # Run the server (for testing)

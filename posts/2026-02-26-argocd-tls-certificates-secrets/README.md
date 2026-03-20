@@ -78,6 +78,7 @@ Declare your certificate issuers in Git:
 
 ```yaml
 # issuers/letsencrypt-production.yaml
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

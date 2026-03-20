@@ -18,6 +18,7 @@ First, configure Azure AD diagnostic settings to send sign-in logs to your works
 
 ```bash
 # Create a diagnostic setting to send Azure AD sign-in logs to Log Analytics
+
 az monitor diagnostic-settings create \
   --name aad-signin-logs \
   --resource "/providers/Microsoft.AAD/domainServices" \

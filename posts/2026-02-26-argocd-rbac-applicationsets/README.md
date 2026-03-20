@@ -49,6 +49,7 @@ The object format follows the same `<project>/<name>` pattern as applications:
 
 ```yaml
 # Allow managing ApplicationSets in the frontend project
+
 p, role:manager, applicationsets, get, frontend/*, allow
 p, role:manager, applicationsets, create, frontend/*, allow
 p, role:manager, applicationsets, update, frontend/*, allow

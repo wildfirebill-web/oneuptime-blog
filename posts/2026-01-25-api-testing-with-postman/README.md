@@ -290,6 +290,7 @@ Newman is the command-line companion for Postman:
 
 ```bash
 # Install Newman globally
+
 npm install -g newman
 
 # Run a collection

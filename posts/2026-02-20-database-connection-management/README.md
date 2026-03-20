@@ -30,6 +30,7 @@ A connection pool maintains a set of reusable database connections. Instead of o
 
 ```python
 # connection_pool.py
+
 # A basic connection pool implementation showing core concepts
 
 import queue

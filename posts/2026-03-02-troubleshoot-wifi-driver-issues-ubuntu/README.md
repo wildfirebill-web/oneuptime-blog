@@ -16,6 +16,7 @@ Start by determining exactly what WiFi hardware you have:
 
 ```bash
 # List all PCI devices - covers most laptop and desktop WiFi cards
+
 lspci | grep -i wireless
 lspci | grep -i network
 

@@ -63,6 +63,7 @@ For a laptop-friendly setup, use custom values to reduce resource consumption:
 
 ```yaml
 # dev-values.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

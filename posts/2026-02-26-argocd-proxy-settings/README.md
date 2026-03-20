@@ -48,6 +48,7 @@ The repo server is the component that most commonly needs proxy access since it 
 
 ```yaml
 # Patch the repo server deployment with proxy settings
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

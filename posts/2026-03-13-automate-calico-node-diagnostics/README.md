@@ -17,6 +17,7 @@ When a networking issue affects multiple nodes, manually running diagnostics on 
 ```bash
 #!/bin/bash
 # collect-calico-node-diags.sh
+
 set -euo pipefail
 
 BUNDLE_DIR="calico-node-diags-$(date +%Y%m%d-%H%M%S)"

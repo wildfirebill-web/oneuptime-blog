@@ -447,6 +447,7 @@ Install and run madge to visualize dependencies:
 npm install -D madge
 
 # Check for circular dependencies
+
 npx madge --circular --extensions ts src/
 
 # Generate a visual graph

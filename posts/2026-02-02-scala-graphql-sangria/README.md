@@ -365,6 +365,7 @@ With the server running, you can execute queries like this:
 
 ```graphql
 # Fetch a user with their posts
+
 query GetUserWithPosts {
   user(id: "user-1") {
     id

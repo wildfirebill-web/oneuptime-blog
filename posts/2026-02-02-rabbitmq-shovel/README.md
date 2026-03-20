@@ -101,6 +101,7 @@ Enable the Shovel and management plugins on each node:
 
 ```bash
 # Enable the shovel plugin for core functionality
+
 rabbitmq-plugins enable rabbitmq_shovel
 
 # Enable the management plugin for UI-based configuration and monitoring

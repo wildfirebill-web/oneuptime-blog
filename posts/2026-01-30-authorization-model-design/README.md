@@ -76,6 +76,7 @@ Map these to permission strings. Keep the format consistent.
 
 ```python
 # Permission string format: resource:action
+
 # Examples: "project:create", "task:assign", "user:invite"
 
 PERMISSIONS = {

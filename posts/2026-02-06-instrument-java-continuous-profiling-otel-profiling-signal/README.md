@@ -24,6 +24,7 @@ Download the OpenTelemetry Java agent and start your application with profiling 
 
 ```bash
 # Download the latest OpenTelemetry Java agent
+
 curl -L -o opentelemetry-javaagent.jar \
   "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar"
 

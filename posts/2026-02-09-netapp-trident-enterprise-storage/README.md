@@ -26,6 +26,7 @@ Deploy Trident using the operator method for simplified lifecycle management.
 
 ```bash
 # Download Trident installer
+
 wget https://github.com/NetApp/trident/releases/download/v23.10.0/trident-installer-23.10.0.tar.gz
 tar -xvf trident-installer-23.10.0.tar.gz
 cd trident-installer

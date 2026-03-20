@@ -51,6 +51,7 @@ from google.protobuf import descriptor_pb2
 import json
 
 # Initialize the write client
+
 write_client = bigquery_storage_v1.BigQueryWriteClient()
 
 # Define the target table

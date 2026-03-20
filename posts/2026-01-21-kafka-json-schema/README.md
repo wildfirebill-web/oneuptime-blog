@@ -189,6 +189,7 @@ if __name__ == '__main__':
 
 ```bash
 # Register JSON Schema
+
 curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \
   --data '{"schemaType": "JSON", "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"required\":[\"id\",\"name\"]}"}' \
   http://localhost:8081/subjects/users-json-value/versions

@@ -136,6 +136,7 @@ kubectl create namespace nats
 kubectl apply -f nats-jetstream.yaml
 
 # Verify deployment
+
 kubectl get pods -n nats
 kubectl wait --for=condition=ready pod -l app=nats -n nats --timeout=180s
 ```

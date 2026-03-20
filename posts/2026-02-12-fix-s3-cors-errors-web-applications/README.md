@@ -30,6 +30,7 @@ Here's a CORS configuration that works for most use cases:
 
 ```bash
 # Apply CORS configuration to your S3 bucket
+
 aws s3api put-bucket-cors --bucket my-bucket --cors-configuration '{
   "CORSRules": [
     {

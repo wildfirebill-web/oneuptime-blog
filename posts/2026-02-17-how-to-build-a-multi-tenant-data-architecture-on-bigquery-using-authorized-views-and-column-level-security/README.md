@@ -135,6 +135,7 @@ The critical step is authorizing these views to access the base dataset:
 
 ```bash
 # Authorize Tenant A's views to access the base dataset
+
 bq update --dataset \
   --authorized_view='{"projectId":"my-project","datasetId":"tenant_a","tableId":"orders"}' \
   my-project:base_data

@@ -14,6 +14,7 @@ OpenTofu creates the infrastructure; Ansible configures what runs on it. The key
 
 ```hcl
 # outputs.tf
+
 output "ansible_vars" {
   description = "Variables to pass to Ansible"
   value = {
@@ -203,4 +204,4 @@ jobs:
 
 ## Conclusion
 
-The clean separation between OpenTofu and Ansible requires a well-defined interface: OpenTofu outputs a structured set of values, and a bridge script or artifact transforms them into Ansible variables. Ansible playbooks are written to be idempotent — running them multiple times produces the same result — which means they can be safely re-run after any infrastructure change without risk.
+The clean separation between OpenTofu and Ansible requires a well-defined interface: OpenTofu outputs a structured set of values, and a bridge script or artifact transforms them into Ansible variables. Ansible playbooks are written to be idempotent - running them multiple times produces the same result - which means they can be safely re-run after any infrastructure change without risk.

@@ -37,6 +37,7 @@ Here is a complete Docker Compose configuration with PostgreSQL as the backend d
 
 ```yaml
 # docker-compose.yml - Apache Guacamole remote access gateway
+
 # Includes the web app, connection proxy, and PostgreSQL database
 version: "3.8"
 

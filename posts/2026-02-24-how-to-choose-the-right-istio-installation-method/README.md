@@ -18,6 +18,7 @@ This is the recommended installation method for most teams, and it is the one th
 
 ```bash
 # Basic installation with default profile
+
 istioctl install --set profile=default -y
 
 # Installation with custom configuration

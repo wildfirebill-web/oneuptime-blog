@@ -29,6 +29,7 @@ Enable the EPEL repository first:
 
 ```bash
 # Install the EPEL release package for RHEL
+
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ```
 

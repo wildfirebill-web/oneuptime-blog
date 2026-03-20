@@ -245,6 +245,7 @@ After updating the ConfigMap, the changes take effect without restarting ArgoCD:
 
 ```bash
 # Apply the ConfigMap
+
 kubectl apply -f argocd-cm.yaml -n argocd
 
 # Verify the configuration

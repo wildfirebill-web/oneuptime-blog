@@ -37,6 +37,7 @@ The simplest self-service approach lets teams create Application CRDs in their o
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

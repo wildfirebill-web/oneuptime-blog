@@ -28,6 +28,7 @@ A typical Kustomize directory structure with overlays looks like this.
 
 ```bash
 # Directory structure for a Kustomize project with overlays
+
 tree manifests/
 # manifests/
 # ├── base/

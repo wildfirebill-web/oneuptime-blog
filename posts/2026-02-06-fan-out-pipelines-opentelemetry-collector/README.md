@@ -28,6 +28,7 @@ The simplest fan-out pattern involves defining multiple pipelines that use the s
 
 ```yaml
 # Basic fan-out configuration for traces
+
 receivers:
   otlp:
     protocols:

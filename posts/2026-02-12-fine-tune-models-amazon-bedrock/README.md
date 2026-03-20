@@ -97,6 +97,7 @@ import boto3
 s3 = boto3.client('s3', region_name='us-east-1')
 
 # Upload training and validation data
+
 s3.upload_file(
     'training_data.jsonl',
     'my-bedrock-training-bucket',

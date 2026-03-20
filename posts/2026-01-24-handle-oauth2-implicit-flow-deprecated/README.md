@@ -313,6 +313,7 @@ Follow these steps to migrate from Implicit Flow to Authorization Code with PKCE
 
 ```yaml
 # Auth0 example configuration
+
 clients:
   - name: "My SPA"
     client_id: "your-spa-client-id"

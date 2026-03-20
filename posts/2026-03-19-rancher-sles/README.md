@@ -138,6 +138,7 @@ Docker containers running in privileged mode (as Rancher requires) should work w
 
 ```bash
 # Check for AppArmor denials
+
 sudo dmesg | grep -i apparmor
 
 # Set Docker profiles to complain mode if needed

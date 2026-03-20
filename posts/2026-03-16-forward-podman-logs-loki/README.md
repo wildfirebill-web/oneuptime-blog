@@ -20,6 +20,7 @@ Start a local Loki instance to test with.
 
 ```bash
 # Run Loki locally
+
 podman run -d \
   --name loki \
   -p 3100:3100 \

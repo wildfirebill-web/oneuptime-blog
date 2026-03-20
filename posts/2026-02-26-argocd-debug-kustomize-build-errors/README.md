@@ -27,6 +27,7 @@ Start with the application status:
 
 ```bash
 # Get the full application status including error messages
+
 argocd app get my-app
 
 # Get the status in JSON for parsing

@@ -28,6 +28,7 @@ To check the time on a node:
 
 ```bash
 # Check the time on a node
+
 talosctl time --nodes 192.168.1.10
 ```
 

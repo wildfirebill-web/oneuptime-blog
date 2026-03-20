@@ -122,6 +122,7 @@ When broadening or narrowing a policy's scope, update the selector carefully:
 
 ```bash
 # Check which pods currently match
+
 kubectl get pods -n production -l app=api-server -o name
 
 # Check which pods would match the new selector

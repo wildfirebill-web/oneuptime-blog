@@ -20,6 +20,7 @@ mkdir -p /opt/borgmatic
 
 ```yaml
 # /opt/borgmatic/config.yaml
+
 location:
   source_directories:
     - /mnt/source        # Bind-mounted source data
@@ -90,7 +91,7 @@ After deploying, use Portainer's **Console** to run the one-time init command:
 borgmatic init --encryption repokey-blake2
 ```
 
-Borg will prompt for a passphrase. Store this passphrase securely — without it, you cannot restore.
+Borg will prompt for a passphrase. Store this passphrase securely - without it, you cannot restore.
 
 ## Step 4: Trigger a Manual Backup
 
@@ -129,4 +130,4 @@ hooks:
 
 ## Summary
 
-BorgBackup with Borgmatic on Portainer gives you production-grade encrypted backups with deduplication, retention policies, and monitoring hooks — all managed through a single YAML configuration and a Docker container. The cron-based scheduling keeps backups running automatically without external schedulers.
+BorgBackup with Borgmatic on Portainer gives you production-grade encrypted backups with deduplication, retention policies, and monitoring hooks - all managed through a single YAML configuration and a Docker container. The cron-based scheduling keeps backups running automatically without external schedulers.

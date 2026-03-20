@@ -65,6 +65,7 @@ Create a distributed Connect cluster for production. Here is the worker configur
 # connect-distributed.properties
 
 # Kafka cluster connection
+
 bootstrap.servers=kafka1:9092,kafka2:9092,kafka3:9092
 
 # Unique cluster identifier

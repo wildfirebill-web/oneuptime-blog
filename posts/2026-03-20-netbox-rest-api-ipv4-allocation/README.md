@@ -12,6 +12,7 @@ NetBox's REST API makes it possible to integrate IPAM into provisioning automati
 
 ```bash
 # Generate an API token via the web UI:
+
 # Admin → API Tokens → + Add Token
 
 # Test authentication

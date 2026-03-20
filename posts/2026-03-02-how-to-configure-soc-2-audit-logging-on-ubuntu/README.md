@@ -41,6 +41,7 @@ sudo nano /etc/audit/rules.d/99-soc2.rules
 
 ```text
 # /etc/audit/rules.d/99-soc2.rules
+
 # SOC 2 Audit Rules for Ubuntu
 
 # ---- Performance settings ----

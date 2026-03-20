@@ -37,6 +37,7 @@ Many government environments are air-gapped (no internet access). You need to pr
 
 ```bash
 # On a connected machine, pull and push images
+
 REGISTRY=registry.internal.gov
 VERSION=1.20.0-fips
 

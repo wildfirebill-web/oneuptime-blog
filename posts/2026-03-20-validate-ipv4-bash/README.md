@@ -12,6 +12,7 @@ Description: Learn how to validate IPv4 addresses in Bash shell scripts using re
 #!/usr/bin/env bash
 
 # Each octet must be 0-255 with no leading zeros (except "0" itself)
+
 validate_ipv4() {
     local ip="$1"
     local octet='(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])'
@@ -110,7 +111,7 @@ if ! validate_ipv4 "$IP"; then
     exit 1
 fi
 
-echo "IP $IP is valid — proceeding..."
+echo "IP $IP is valid - proceeding..."
 # ... rest of script
 ```
 

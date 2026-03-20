@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, OPNsense, Firewall, FreeBSD, pf
+Tags: IPv6, OPNsense, Firewall, FreeBSD, Pf
 
 Description: Learn how to configure IPv6 firewall policies on OPNsense, covering interface rules, floating rules, ICMPv6 settings, and monitoring IPv6 traffic flows.
 
@@ -26,7 +26,7 @@ Navigate to **Firewall → Rules → LAN**:
 
 ### Allow IPv6 Outbound from LAN
 
-```
+```text
 Action:           Pass
 Interface:        LAN
 Direction:        in
@@ -34,16 +34,18 @@ TCP/IP Version:   IPv6
 Protocol:         Any
 Source:           LAN net (IPv6)
 Destination:      Any
-Allow options:    ✓ (enabled by default — stateful)
+Allow options:    ✓ (enabled by default - stateful)
 Description:      Allow all IPv6 from LAN
+
 ```
 
 ### WAN Inbound Rules
 
 Navigate to **Firewall → Rules → WAN**:
 
-```
+```text
 # Allow HTTPS
+
 Action:           Pass
 Interface:        WAN
 TCP/IP Version:   IPv6
@@ -68,7 +70,7 @@ Description:      Management SSH IPv6
 
 OPNsense automatically handles essential ICMPv6. Verify under **Firewall → Rules → Floating**:
 
-```
+```text
 # Automatic rules include:
 # Allow Neighbor Discovery (Solicitation/Advertisement)
 # Allow Router Advertisement/Solicitation
@@ -77,7 +79,7 @@ OPNsense automatically handles essential ICMPv6. Verify under **Firewall → Rul
 
 ### Custom ICMPv6 Rules
 
-```
+```text
 # Allow ping from monitoring network
 Action:           Pass
 Interface:        WAN
@@ -93,10 +95,10 @@ Description:      Allow IPv6 ping from monitoring
 
 Navigate to **Firewall → Rules → Floating**:
 
-```
+```text
 # Block traffic from bogon IPv6 sources on all interfaces
 Action:           Block
-Interface:        (all — checked boxes for all interfaces)
+Interface:        (all - checked boxes for all interfaces)
 Direction:        in
 TCP/IP Version:   IPv6
 Source:           2001:db8::/32 (Documentation prefix)
@@ -107,7 +109,7 @@ Description:      Block IPv6 documentation prefix
 
 Navigate to **Firewall → Aliases → Add**:
 
-```
+```text
 Name:             IPv6_Management
 Type:             Network
 Network(s):
@@ -122,7 +124,7 @@ Use in rules as source/destination.
 
 Navigate to **Firewall → Diagnostics → States**:
 
-```
+```text
 # Filter options:
 Protocol:   IPv6
 Interface:  WAN
@@ -145,7 +147,7 @@ pfctl -s states | grep inet6 | wc -l
 
 ## Logging IPv6 Firewall Events
 
-```
+```text
 # Enable logging on a rule:
 # In rule editor: Logging → Enable ✓
 

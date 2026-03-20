@@ -427,6 +427,7 @@ Here is the same pattern implemented in Python using FastAPI and Pydantic.
 
 ```python
 # hal.py
+
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
 from fastapi import Request

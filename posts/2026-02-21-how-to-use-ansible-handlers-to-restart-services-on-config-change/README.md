@@ -240,6 +240,7 @@ Role handler file:
 
 ```yaml
 # roles/nginx/handlers/main.yml
+
 ---
 - name: Restart Nginx
   ansible.builtin.systemd:

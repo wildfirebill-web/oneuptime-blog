@@ -20,7 +20,7 @@ Amazon Linux is AWS's own Linux distribution optimized for running on EC2 instan
 
 Before configuring the OS, ensure your EC2 security groups allow the required traffic:
 
-```
+```text
 Control Plane Security Group:
 - TCP 6443 (Kubernetes API) - from worker nodes and your IP
 - TCP 9345 (RKE2 registration) - from worker nodes
@@ -38,6 +38,7 @@ Worker Node Security Group:
 
 ```bash
 # Update all packages
+
 sudo yum update -y
 
 # Install required packages

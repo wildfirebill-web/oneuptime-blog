@@ -18,6 +18,7 @@ Most tutorials show you the basics of configuring an Azure Storage backend.
 
 ```hcl
 # backend.tf
+
 # Basic Azure Storage backend - works but needs security hardening
 terraform {
   backend "azurerm" {

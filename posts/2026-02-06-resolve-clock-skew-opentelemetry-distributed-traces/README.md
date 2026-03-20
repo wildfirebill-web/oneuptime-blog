@@ -66,6 +66,7 @@ Before fixing anything, quantify the problem. You can measure clock skew between
 
 ```bash
 # Check the current NTP offset on a Linux machine
+
 # This shows how far the local clock is from the NTP reference
 timedatectl timesync-status
 

@@ -36,6 +36,7 @@ The most common huge page size is 2MB. You can reserve these at boot time throug
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

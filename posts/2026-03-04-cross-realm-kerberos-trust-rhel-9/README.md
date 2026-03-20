@@ -49,6 +49,7 @@ On the EAST KDC:
 sudo kadmin.local
 
 # Create the trust principal for EAST to WEST
+
 addprinc -requires_preauth krbtgt/WEST.EXAMPLE.COM@EAST.EXAMPLE.COM
 
 # Enter a strong shared password when prompted

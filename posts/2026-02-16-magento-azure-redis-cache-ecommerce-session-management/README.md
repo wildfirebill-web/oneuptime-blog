@@ -24,6 +24,7 @@ Create a Redis instance sized appropriately for your Magento store.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-magento --location eastus
 
 # Create a Redis cache instance

@@ -28,6 +28,7 @@ Verify that every policy decision generates a log entry:
 
 ```bash
 # Map all OnData return paths to logging calls
+
 grep -n "return proxylib\." proxylib/myprotocol/*.go | grep -v test
 
 # For each return path, check if logAccess is called above it

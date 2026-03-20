@@ -69,6 +69,7 @@ Create the following nodes:
 
 ```bash
 # /etc/redis/redis.conf on master
+
 bind 0.0.0.0
 port 6379
 daemonize yes

@@ -14,6 +14,7 @@ RHEL provides tlog for recording terminal sessions, and it integrates with SSSD 
 
 ```bash
 # Install tlog and the SSSD session recording module
+
 sudo dnf install tlog -y
 
 # Verify installation

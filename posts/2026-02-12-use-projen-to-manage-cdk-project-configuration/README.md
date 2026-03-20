@@ -32,6 +32,7 @@ Create a new CDK project with Projen.
 
 ```bash
 # Install Projen globally
+
 npm install -g projen
 
 # Create a new CDK TypeScript project

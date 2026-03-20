@@ -51,6 +51,7 @@ Look up a server's IP address by hostname:
 
 ```yaml
 # basic_csvfile.yml - Basic CSV file lookup
+
 ---
 - name: Look up server information from CSV
   hosts: localhost

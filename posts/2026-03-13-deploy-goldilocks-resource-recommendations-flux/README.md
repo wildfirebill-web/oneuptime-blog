@@ -30,6 +30,7 @@ Goldilocks depends on VPA. Deploy VPA first using Flux CD.
 
 ```yaml
 # infrastructure/vpa/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

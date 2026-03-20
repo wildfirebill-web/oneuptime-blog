@@ -48,6 +48,7 @@ The OpenLIT SDK is a Python package that provides automatic instrumentation for 
 
 ```shell
 # Install the OpenLIT SDK for automatic LLM instrumentation
+
 # This package captures telemetry data from popular AI/ML libraries
 pip install openlit
 ```

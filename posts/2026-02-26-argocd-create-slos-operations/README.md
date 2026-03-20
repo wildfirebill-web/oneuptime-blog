@@ -67,6 +67,7 @@ The Service Level Indicator (SLI) for sync success rate uses ArgoCD's built-in m
 
 ```promql
 # Sync success rate over the last 30 days
+
 sum(rate(argocd_app_sync_total{phase="Succeeded"}[30d])) /
 sum(rate(argocd_app_sync_total[30d]))
 ```

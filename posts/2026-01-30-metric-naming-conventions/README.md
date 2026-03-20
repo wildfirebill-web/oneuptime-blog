@@ -74,6 +74,7 @@ Here is a breakdown of each component.
 
 ```python
 # Metric naming structure breakdown
+
 # Format: namespace_subsystem_name_unit_suffix
 
 # namespace: Top-level identifier for your organization or application

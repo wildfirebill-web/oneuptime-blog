@@ -20,6 +20,7 @@ Consider the difference between these two log lines:
 
 ```text
 # Plain text - requires regex to parse
+
 2026-03-03T10:15:32Z INFO kubelet: Successfully pulled image "nginx:1.25"
 
 # JSON - automatically parseable

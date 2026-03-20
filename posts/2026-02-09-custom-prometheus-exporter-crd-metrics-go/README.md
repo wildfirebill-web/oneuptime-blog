@@ -387,6 +387,7 @@ status:
 EOF
 
 # Query the metrics endpoint
+
 kubectl port-forward -n monitoring svc/backup-exporter 8080:8080
 curl http://localhost:8080/metrics | grep backup_
 ```

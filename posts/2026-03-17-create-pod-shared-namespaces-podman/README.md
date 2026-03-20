@@ -18,6 +18,7 @@ By default, Podman pods share the network, UTS, and IPC namespaces. You can cont
 
 ```bash
 # Create a pod with default namespace sharing
+
 podman pod create --name default-pod
 
 # By default, the following namespaces are shared:

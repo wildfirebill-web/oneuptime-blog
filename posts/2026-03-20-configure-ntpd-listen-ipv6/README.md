@@ -16,6 +16,7 @@ Before making changes, check if ntpd is already listening on IPv6:
 
 ```bash
 # Check all UDP sockets on port 123
+
 ss -ulnp | grep :123
 
 # Look for [::]:123 which indicates IPv6 listening

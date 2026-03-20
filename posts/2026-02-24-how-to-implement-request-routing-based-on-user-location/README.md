@@ -190,6 +190,7 @@ If you run a multi-region Kubernetes cluster (or multiple clusters), Istio can a
 
 ```bash
 # Nodes should have topology labels
+
 kubectl get nodes --show-labels | grep topology
 ```
 

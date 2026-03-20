@@ -45,6 +45,7 @@ Start with a simple Dockerfile for development and testing.
 
 ```dockerfile
 # Dockerfile
+
 # Base image with Node.js
 FROM node:20-alpine AS base
 

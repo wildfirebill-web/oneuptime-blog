@@ -209,6 +209,7 @@ Use a script to distribute existing HelmReleases across shards.
 ```bash
 #!/bin/bash
 # Distribute HelmReleases evenly across shards
+
 SHARDS=2
 counter=0
 
@@ -240,7 +241,7 @@ kubectl logs deployment/helm-controller-shard-2 -n flux-system --tail=10
 flux get helmreleases -A
 ```
 
-## Resource Considerations for Helm Shards
+Resource Considerations for Helm Shards
 
 Helm operations are more memory-intensive than kustomize builds. Size your shard resources accordingly.
 

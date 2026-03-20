@@ -14,6 +14,7 @@ IPv6 link-local addresses (fe80::/10) are automatically assigned to every IPv6-c
 
 ```bash
 # List all link-local addresses on your system
+
 ip -6 addr show | grep "scope link"
 
 # Output example:

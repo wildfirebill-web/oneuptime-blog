@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, merge, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Merge, Map Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the merge function in OpenTofu to combine multiple maps into one, with later maps overriding keys from earlier ones.
 
@@ -155,4 +155,4 @@ locals {
 
 ## Summary
 
-`merge()` combines multiple maps into one, with later maps taking precedence for duplicate keys. It's most commonly used for tag merging — combining default organization tags with resource-specific tags. The last map wins on key conflicts, making it ideal for the pattern of `merge(defaults, overrides)`. Use `concat()` for combining lists, and `merge()` for combining maps.
+`merge()` combines multiple maps into one, with later maps taking precedence for duplicate keys. It's most commonly used for tag merging - combining default organization tags with resource-specific tags. The last map wins on key conflicts, making it ideal for the pattern of `merge(defaults, overrides)`. Use `concat()` for combining lists, and `merge()` for combining maps.

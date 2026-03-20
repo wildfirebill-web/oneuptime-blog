@@ -419,6 +419,7 @@ Use grpcurl to test with explicit metadata:
 
 ```bash
 # Test without token - should get UNAUTHENTICATED
+
 grpcurl -plaintext localhost:50051 myapp.UserService/GetUser
 
 # Test with token

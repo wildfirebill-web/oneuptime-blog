@@ -26,6 +26,7 @@ Give the new developer read access to your observability platform on day one. No
 
 ```bash
 # Have them verify they can query traces for a service they will work on
+
 # Example: using curl to query a Jaeger instance
 curl "http://jaeger.internal:16686/api/traces?service=order-service&limit=5" \
   | jq '.data[0].traceID'

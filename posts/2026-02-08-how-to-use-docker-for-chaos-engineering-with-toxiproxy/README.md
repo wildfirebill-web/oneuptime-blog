@@ -32,6 +32,7 @@ Here is a complete setup with Toxiproxy sitting between an API and its database 
 
 ```yaml
 # docker-compose.yml - Application stack with Toxiproxy
+
 version: "3.8"
 
 services:

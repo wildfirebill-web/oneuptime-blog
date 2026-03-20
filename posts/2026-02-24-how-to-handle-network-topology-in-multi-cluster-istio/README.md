@@ -102,6 +102,7 @@ You can handle this with appropriate network labels:
 
 ```bash
 # AWS clusters share a network
+
 kubectl label namespace istio-system topology.istio.io/network=aws-vpc --context=aws-cluster1
 kubectl label namespace istio-system topology.istio.io/network=aws-vpc --context=aws-cluster2
 

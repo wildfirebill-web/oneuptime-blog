@@ -18,6 +18,7 @@ The `terraform graph` command outputs a graph description in DOT format. DOT is 
 
 ```bash
 # Generate the dependency graph
+
 terraform graph
 ```
 

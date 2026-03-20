@@ -174,6 +174,7 @@ int main(void) {
 
 ```bash
 # Send a test multicast packet
+
 echo "Hello" | socat - UDP6:[ff02::1%eth0]:5007
 
 # Receive on all interfaces

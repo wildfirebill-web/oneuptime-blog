@@ -60,6 +60,7 @@ Using Homebrew is the recommended installation method for macOS. It handles upda
 
 ```bash
 # Install Deno using Homebrew package manager
+
 brew install deno
 
 # Verify the installation was successful

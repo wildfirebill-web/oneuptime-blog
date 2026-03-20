@@ -29,6 +29,7 @@ This guide provides the specific steps for each aspect of tunnel performance man
 ```bash
 #!/bin/bash
 # Run both configurations and compare
+
 for MODE in "tunnel=vxlan" "tunnel=disabled --set routingMode=native --set autoDirectNodeRoutes=true"; do
   echo "=== Testing: $MODE ==="
   helm upgrade cilium cilium/cilium --namespace kube-system --set $MODE

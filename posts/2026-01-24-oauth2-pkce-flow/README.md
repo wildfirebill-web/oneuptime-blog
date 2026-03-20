@@ -118,6 +118,7 @@ def generate_pkce_parameters() -> PKCEParameters:
 
 
 # Verify the implementation
+
 def verify_pkce_challenge(code_verifier: str, code_challenge: str) -> bool:
     """
     Verify that a code_challenge matches the code_verifier.

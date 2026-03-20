@@ -81,6 +81,7 @@ The `argocd app list` command supports label selectors just like `kubectl`:
 
 ```bash
 # List all production applications
+
 argocd app list -l environment=production
 
 # List all critical-tier applications

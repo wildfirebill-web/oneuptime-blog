@@ -176,6 +176,7 @@ Here is a realistic setup for a microservices application with multiple namespac
 
 ```yaml
 # Mesh-wide default (applied in istio-system namespace)
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

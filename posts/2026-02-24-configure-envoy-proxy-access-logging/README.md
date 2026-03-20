@@ -268,6 +268,7 @@ Measure the impact:
 
 ```bash
 # Check Envoy's internal stats for access log writes
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:15000/stats | grep access_log
 ```
 

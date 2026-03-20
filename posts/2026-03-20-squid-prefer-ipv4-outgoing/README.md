@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, IPv4, IPv6, dns_v4_first, Outgoing, Networking
+Tags: Squid, IPv4, IPv6, Dns_v4_first, Outgoing, Networking
 
 Description: Configure Squid to prefer IPv4 connections to origin servers using the dns_v4_first and related directives, avoiding IPv6 connectivity issues on dual-stack hosts.
 
@@ -16,6 +16,7 @@ On dual-stack systems, Squid may default to IPv6 for outgoing connections when b
 # /etc/squid/squid.conf
 
 # Prefer IPv4 (A records) over IPv6 (AAAA records) when resolving hostnames
+
 dns_v4_first on
 
 # Standard proxy configuration

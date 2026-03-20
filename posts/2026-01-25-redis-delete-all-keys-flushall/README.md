@@ -25,6 +25,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Check current database
+
 print(f"Current DB keys: {r.dbsize()}")
 
 # FLUSHDB clears only the current database (db=0)

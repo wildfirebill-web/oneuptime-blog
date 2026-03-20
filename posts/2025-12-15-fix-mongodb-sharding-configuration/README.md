@@ -303,6 +303,7 @@ db.locks.remove({ _id: "mydb.orders" })
 
 ```bash
 # Backup config database
+
 mongodump --host config-server:27019 --db config --out /backup/config_backup
 ```
 

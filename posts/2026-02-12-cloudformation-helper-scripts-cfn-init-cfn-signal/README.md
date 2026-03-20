@@ -32,6 +32,7 @@ Here's a template that sets up a web server using cfn-init.
 
 ```yaml
 # Template that uses cfn-init to configure an Apache web server
+
 AWSTemplateFormatVersion: "2010-09-09"
 Description: EC2 instance configured with cfn-init
 

@@ -16,6 +16,7 @@ The `combine` filter takes one or more dictionaries and merges them together. Wh
 
 ```yaml
 # playbook-basic-merge.yml
+
 # Merges default and custom configuration dictionaries
 - name: Basic dictionary merge
   hosts: localhost

@@ -70,6 +70,7 @@ Each line in `limits.conf` follows this format:
 
 ```bash
 # Check limits for current session
+
 ulimit -a
 
 # Check specific limits

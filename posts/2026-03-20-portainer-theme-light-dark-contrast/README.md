@@ -17,13 +17,13 @@ Portainer supports three visual themes: Light (default), Dark, and High-Contrast
 3. Select **My Account**.
 4. Scroll to the **Appearance** section.
 5. Choose **Light**, **Dark**, or **High Contrast**.
-6. The theme applies immediately — no save button required.
+6. The theme applies immediately - no save button required.
 
 ## Theme Options
 
 | Theme | Best For |
 |---|---|
-| **Light** | Default — well-lit environments, printing |
+| **Light** | Default - well-lit environments, printing |
 | **Dark** | Low-light environments, reduces eye strain |
 | **High Contrast** | Accessibility requirements, visibility impairment |
 
@@ -41,6 +41,7 @@ Admins can set a default theme for all new user accounts via the API:
 
 ```bash
 # Get an API token
+
 TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"Username":"admin","Password":"yourpassword"}' | jq -r .jwt)

@@ -25,6 +25,7 @@ Before starting, make sure your domain resolves to your cluster's ingress IP:
 
 ```bash
 # Get your ingress controller's external IP
+
 kubectl get svc -n ingress-nginx
 
 # Verify DNS resolution

@@ -14,6 +14,7 @@ systemd-networkd manages VLANs through a `.netdev` file (to create the VLAN devi
 
 ```ini
 # /etc/systemd/network/20-vlan10.netdev
+
 [NetDev]
 Name=eth0.10
 Kind=vlan

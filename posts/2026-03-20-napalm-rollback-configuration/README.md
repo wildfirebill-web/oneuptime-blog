@@ -10,8 +10,8 @@ Description: Learn how to use NAPALM to implement safe configuration changes wit
 
 NAPALM provides two rollback mechanisms:
 
-1. **`rollback()`** — Reverts to the configuration before the last commit (device must support checkpoints, e.g., Arista EOS, Juniper JunOS)
-2. **Manual rollback** — Save the current config before changes and reapply it if needed (works on all devices including Cisco IOS)
+1. **`rollback()`** - Reverts to the configuration before the last commit (device must support checkpoints, e.g., Arista EOS, Juniper JunOS)
+2. **Manual rollback** - Save the current config before changes and reapply it if needed (works on all devices including Cisco IOS)
 
 ## Step 1: Check Rollback Support
 
@@ -19,6 +19,7 @@ NAPALM provides two rollback mechanisms:
 import napalm
 
 # Arista EOS and Juniper JunOS support native rollback
+
 # Cisco IOS does not natively support rollback through NAPALM
 
 driver = napalm.get_network_driver('eos')    # Arista EOS supports rollback

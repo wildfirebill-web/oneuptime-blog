@@ -29,6 +29,7 @@ graph LR
 
 ```yaml
 # roles/container_health/tasks/http_check.yml
+
 # Deploy container with HTTP health check
 - name: Deploy web application with health check
   community.docker.docker_container:

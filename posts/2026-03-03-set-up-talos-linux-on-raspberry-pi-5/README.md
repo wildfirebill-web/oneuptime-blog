@@ -40,6 +40,7 @@ The Pi 5 uses a different bootloader than the Pi 4. Update it to the latest vers
 
 ```bash
 # If you have Raspberry Pi OS on the Pi 5
+
 sudo apt update
 sudo apt install rpi-eeprom
 sudo rpi-eeprom-update -a

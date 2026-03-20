@@ -18,6 +18,7 @@ Profiles allow you to tag services in your compose file and selectively activate
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

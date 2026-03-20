@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Retail, Edge Computing, K3s, POS, Kubernetes, High Availability
 
-Description: Configure Rancher for retail environments managing Kubernetes clusters at store edge locations, central data centers, and cloud for POS systems, inventory management, and customer-facing e-commerce workloads.
+Description: Configure Rancher for retail environments managing Kubernetes clusters at store edge locations, central data centers, and cloud for POS systems, inventory management, and customer-facing...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Retail Kubernetes deployments span multiple environments: cloud clusters for e-c
 
 ## Retail Architecture
 
-```
+```text
 Central Data Center
 ┌─────────────────────────────────────┐
 │  Rancher Management                  │
@@ -33,6 +33,7 @@ POS, Kiosk, Inventory, WiFi
 
 ```bash
 # Automated K3s provisioning for store nodes
+
 # Use Rancher provisioning API or Fleet for GitOps-managed K3s
 
 # K3s installation at store edge
@@ -191,4 +192,4 @@ spec:
 
 ## Conclusion
 
-Rancher with K3s is the leading platform for retail edge Kubernetes. Rancher manages thousands of K3s store clusters centrally, while Fleet handles GitOps-based application deployment across all locations simultaneously. Store clusters run offline-capable POS and inventory applications, while central clusters handle analytics, order management, and supply chain systems. The key advantage over traditional retail IT is treating store infrastructure as code—every store is identical, updates are automated, and failures are detected centrally.
+Rancher with K3s is the leading platform for retail edge Kubernetes. Rancher manages thousands of K3s store clusters centrally, while Fleet handles GitOps-based application deployment across all locations simultaneously. Store clusters run offline-capable POS and inventory applications, while central clusters handle analytics, order management, and supply chain systems. The key advantage over traditional retail IT is treating store infrastructure as code-every store is identical, updates are automated, and failures are detected centrally.

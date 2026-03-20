@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Sysctls, Networking, Linux
+Tags: Portainer, Docker, Sysctl, Networking, Linux
 
 Description: Configure kernel sysctl parameters for individual containers in Portainer for advanced networking and system tuning.
 
@@ -21,6 +21,7 @@ When creating or editing a container in Portainer:
 
 ```bash
 # Equivalent docker run command for device mapping
+
 docker run -d \
   --device /dev/video0:/dev/video0 \
   --device /dev/snd \

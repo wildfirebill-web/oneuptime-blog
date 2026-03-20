@@ -20,6 +20,7 @@ The `subprocess` module lets you spawn new processes, connect to their input/out
 import subprocess
 
 # Simple command
+
 result = subprocess.run(["ls", "-la"], capture_output=True, text=True)
 print(result.stdout)
 print(f"Return code: {result.returncode}")

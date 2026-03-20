@@ -35,6 +35,7 @@ Here's a minimal tail sampling configuration that keeps error traces and samples
 
 ```yaml
 # Basic tail sampling configuration
+
 # This waits for complete traces before making sampling decisions
 receivers:
   otlp:

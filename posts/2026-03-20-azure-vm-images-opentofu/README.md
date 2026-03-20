@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, VM Images, Managed Images, Image Builder, Golden Images, Infrastructure as Code
+Tags: OpenTofu, Azure, VM Image, Managed Images, Image Builder, Golden Image, Infrastructure as Code
 
 Description: Learn how to create and manage Azure VM images with OpenTofu, including managed images from generalized VMs and Azure Image Builder for automated image pipelines.
 
 ## Introduction
 
-Azure VM images are snapshots of generalized VM configurations used to create multiple identical VMs. Managed images are the simplest form—captured from a generalized VM and usable within a single region. For multi-region distribution and versioning, images should be stored in Azure Compute Gallery. Azure Image Builder provides a fully managed pipeline for creating customized VM images using Packer-like templates with built-in Azure integration.
+Azure VM images are snapshots of generalized VM configurations used to create multiple identical VMs. Managed images are the simplest form-captured from a generalized VM and usable within a single region. For multi-region distribution and versioning, images should be stored in Azure Compute Gallery. Azure Image Builder provides a fully managed pipeline for creating customized VM images using Packer-like templates with built-in Azure integration.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Azure VM images are snapshots of generalized VM configurations used to create mu
 
 ```hcl
 # First, generalize the VM (run on Linux VM):
+
 # sudo waagent -deprovision+user -force
 # Then from Azure CLI: az vm generalize --resource-group <rg> --name <vm-name>
 
@@ -182,4 +183,4 @@ az image list \
 
 ## Conclusion
 
-Managed images are region-specific—to use an image in multiple regions, copy it to Azure Compute Gallery with multi-region replication. Keep managed images from old VM versions for rollback purposes by tagging them with version numbers and creation dates. Azure Image Builder is the recommended approach for automated image pipelines as it handles generalization, testing, and distribution; use it in CI/CD pipelines triggered by OS or application updates. Delete old images when they are no longer needed—managed images incur storage costs based on the captured disk size.
+Managed images are region-specific-to use an image in multiple regions, copy it to Azure Compute Gallery with multi-region replication. Keep managed images from old VM versions for rollback purposes by tagging them with version numbers and creation dates. Azure Image Builder is the recommended approach for automated image pipelines as it handles generalization, testing, and distribution; use it in CI/CD pipelines triggered by OS or application updates. Delete old images when they are no longer needed-managed images incur storage costs based on the captured disk size.

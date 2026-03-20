@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, Networking, IPv4, Proxy, Corporate, Configuration
 
-Description: Configure Docker daemon and containers to use a corporate HTTP/HTTPS proxy for IPv4 traffic, set no-proxy exceptions for internal networks, and ensure containers can pull images and reach the internet.
+Description: Configure Docker daemon and containers to use a corporate HTTP/HTTPS proxy for IPv4 traffic, set no-proxy exceptions for internal networks, and ensure containers can pull images and reach the...
 
 ## Introduction
 
@@ -32,6 +32,7 @@ sudo systemctl restart docker
 
 ```bash
 # Check that Docker daemon uses the proxy for image pulls
+
 docker info | grep -i proxy
 
 # Test image pull
@@ -98,9 +99,9 @@ services:
 
 ## Bypassing Proxy for Internal Container Communication
 
-The `NO_PROXY` variable is critical — container-to-container communication (by name or IP) must bypass the proxy:
+The `NO_PROXY` variable is critical - container-to-container communication (by name or IP) must bypass the proxy:
 
-```
+```text
 NO_PROXY=localhost,127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.svc,.cluster.local
 ```
 

@@ -24,6 +24,7 @@ The fastest way to get started is running the container directly with Docker.
 
 ```bash
 # Pull the AlloyDB Omni container image
+
 docker pull google/alloydbomni:latest
 
 # Create a directory for persistent data

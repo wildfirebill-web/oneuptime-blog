@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Workflows, Serverless, Orchestration, Infrastructure as Code
+Tags: OpenTofu, GCP, Workflow, Serverless, Orchestration, Infrastructure as Code
 
 Description: Learn how to create GCP Workflows for serverless orchestration of HTTP-based services and GCP APIs using OpenTofu.
 
@@ -20,6 +20,7 @@ resource "google_service_account" "workflows" {
 }
 
 # Grant permission to invoke Cloud Functions and HTTP endpoints
+
 resource "google_project_iam_member" "workflows_invoker" {
   project = var.project_id
   role    = "roles/workflows.invoker"
@@ -153,4 +154,4 @@ tofu apply tfplan
 
 ## Summary
 
-GCP Workflows provides a serverless orchestration layer for chaining HTTP services, GCP APIs, and microservices. OpenTofu manages workflow definitions, service accounts, and Cloud Scheduler triggers — making your orchestration infrastructure version controlled and reproducible.
+GCP Workflows provides a serverless orchestration layer for chaining HTTP services, GCP APIs, and microservices. OpenTofu manages workflow definitions, service accounts, and Cloud Scheduler triggers - making your orchestration infrastructure version controlled and reproducible.

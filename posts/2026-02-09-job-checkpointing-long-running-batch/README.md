@@ -248,6 +248,7 @@ OUTPUT_DIR="/data/output"
 mkdir -p "$CHECKPOINT_DIR"
 
 # Get list of all input files
+
 find "$INPUT_DIR" -name "*.csv" | sort > /tmp/all_files.txt
 
 while IFS= read -r input_file; do

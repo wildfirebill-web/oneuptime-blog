@@ -82,6 +82,7 @@ You can configure probes when creating or updating a container app using a YAML 
 
 ```yaml
 # probe-config.yaml
+
 properties:
   template:
     containers:

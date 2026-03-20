@@ -41,6 +41,7 @@ In the account that owns the ECR repository, set a repository policy that grants
 
 ```hcl
 # In the build/shared services account
+
 resource "aws_ecr_repository" "web_app" {
   name = "web-app"
 

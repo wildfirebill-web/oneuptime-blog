@@ -130,6 +130,7 @@ Example of each:
 
 ```yaml
 # This is L4 - ztunnel handles it
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

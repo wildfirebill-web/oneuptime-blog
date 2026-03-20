@@ -28,6 +28,7 @@ In this guide you will deploy Prefect workers using the official Helm chart via 
 
 ```yaml
 # clusters/production/sources/prefect.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

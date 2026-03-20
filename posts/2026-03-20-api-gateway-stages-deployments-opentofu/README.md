@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, Stages, Deployments, Environments, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, Stages, Deployment, Environments, Infrastructure as Code
 
 Description: Learn how to manage API Gateway stages and deployments with OpenTofu to maintain separate environments (dev, staging, prod) and control API rollouts.
 
@@ -40,6 +40,7 @@ resource "aws_api_gateway_deployment" "main" {
 }
 
 # Production stage
+
 resource "aws_api_gateway_stage" "prod" {
   deployment_id = aws_api_gateway_deployment.main.id
   rest_api_id   = aws_api_gateway_rest_api.main.id
@@ -116,4 +117,4 @@ aws apigateway get-deployments \
 
 ## Conclusion
 
-Use `triggers` with `sha1(jsonencode(...))` in the deployment resource to automatically create new deployments when API resources, methods, or integrations change—without this, OpenTofu won't detect API configuration changes that require redeployment. The `create_before_destroy = true` lifecycle ensures the new deployment exists before the old one is removed, preventing downtime. Stage variables allow the same deployment to behave differently across environments by passing environment-specific configuration to Lambda or other backends.
+Use `triggers` with `sha1(jsonencode(...))` in the deployment resource to automatically create new deployments when API resources, methods, or integrations change-without this, OpenTofu won't detect API configuration changes that require redeployment. The `create_before_destroy = true` lifecycle ensures the new deployment exists before the old one is removed, preventing downtime. Stage variables allow the same deployment to behave differently across environments by passing environment-specific configuration to Lambda or other backends.

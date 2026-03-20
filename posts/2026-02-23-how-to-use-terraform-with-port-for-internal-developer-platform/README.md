@@ -26,6 +26,7 @@ Use Terraform to define your Port catalog structure.
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

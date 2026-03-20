@@ -43,6 +43,7 @@ from vertexai.generative_models import GenerativeModel, GenerationConfig
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Configure the model to return JSON
+
 model = GenerativeModel(
     "gemini-1.5-pro-002",
     generation_config=GenerationConfig(

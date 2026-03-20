@@ -21,6 +21,7 @@ Description: Learn how to create, update, and manage Portainer users programmati
 
 ```bash
 # List all users
+
 curl -s "https://portainer.mycompany.com/api/users" \
   -H "Authorization: Bearer ${API_TOKEN}" | \
   jq '[.[] | {id: .Id, username: .Username, role: .Role}]'

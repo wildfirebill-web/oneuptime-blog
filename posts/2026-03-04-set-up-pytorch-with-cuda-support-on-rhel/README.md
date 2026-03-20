@@ -16,6 +16,7 @@ Ensure NVIDIA drivers and CUDA are installed:
 
 ```bash
 # Check that the NVIDIA driver is loaded
+
 nvidia-smi
 
 # Check the CUDA version

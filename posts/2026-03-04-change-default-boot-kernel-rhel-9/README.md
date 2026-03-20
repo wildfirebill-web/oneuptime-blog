@@ -16,6 +16,7 @@ RHEL installs new kernels alongside existing ones and automatically sets the new
 
 ```bash
 # List all installed kernel packages
+
 rpm -qa kernel-core | sort
 
 # List all kernels known to the boot loader

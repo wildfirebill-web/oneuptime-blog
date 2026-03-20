@@ -14,6 +14,7 @@ The "No such container" error occurs when you reference a container that Docker 
 
 ```bash
 # Common error messages
+
 Error: No such container: mycontainer
 Error response from daemon: No such container: abc123def456
 

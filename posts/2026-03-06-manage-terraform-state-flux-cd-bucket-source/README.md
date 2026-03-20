@@ -38,6 +38,7 @@ First, create an S3 bucket to store your Terraform configurations and state. Her
 
 ```bash
 # Create an S3 bucket for Terraform state
+
 aws s3 mb s3://my-terraform-state-bucket --region us-east-1
 
 # Enable versioning for state safety

@@ -73,6 +73,7 @@ Define routes in your application configuration:
 
 ```yaml
 # application.yml
+
 spring:
   cloud:
     gateway:

@@ -40,6 +40,7 @@ The fix is to deallocate the VM first. When you deallocate (not just stop), Azur
 
 ```bash
 # Deallocate the VM (releases it from the hardware cluster)
+
 # Note: This is different from just stopping the VM
 az vm deallocate --resource-group myResourceGroup --name myVM
 

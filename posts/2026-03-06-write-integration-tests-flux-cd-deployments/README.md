@@ -42,6 +42,7 @@ flowchart LR
 ```bash
 #!/bin/bash
 # test-framework.sh
+
 # Simple test framework for Flux CD integration tests
 
 TESTS_PASSED=0

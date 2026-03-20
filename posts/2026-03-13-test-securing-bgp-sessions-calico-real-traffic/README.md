@@ -50,6 +50,7 @@ data:
 
 ```bash
 # Create BGP password secret
+
 kubectl create secret generic bgp-peer-secrets \
   --from-literal=router01-password="$(openssl rand -base64 32)" \
   -n kube-system

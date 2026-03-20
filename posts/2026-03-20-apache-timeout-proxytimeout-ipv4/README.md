@@ -25,6 +25,7 @@ Apache's timeout settings control how long it waits for client requests, backend
 # /etc/apache2/apache2.conf
 
 # Time to receive the complete HTTP request from the client
+
 # Covers: time to receive request headers + body
 Timeout 30
 
@@ -138,8 +139,8 @@ sudo grep -i timeout /var/log/apache2/error.log
 sudo tail -f /var/log/apache2/error.log | grep -i "timeout\|proxy"
 
 # Common log messages:
-# "proxy: error reading status line from remote server"  — ProxyTimeout hit
-# "server has not sent any data"                         — backend slow
+# "proxy: error reading status line from remote server"  - ProxyTimeout hit
+# "server has not sent any data"                         - backend slow
 ```
 
 ## Recommended Settings by Workload

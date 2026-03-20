@@ -148,6 +148,7 @@ def batch_ids_query(index, ids, batch_size=1000):
     return all_results
 
 # Usage
+
 ids = ["id1", "id2", ..., "id50000"]  # Large ID list
 results = batch_ids_query("products", ids, batch_size=5000)
 ```

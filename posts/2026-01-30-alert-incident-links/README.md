@@ -213,6 +213,7 @@ class IncidentManager {
 
 ```yaml
 # incident-rules.yaml
+
 auto_create:
   enabled: true
   conditions:

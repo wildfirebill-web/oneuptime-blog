@@ -32,6 +32,7 @@ RHEL and SUSE Linux Enterprise Server (SLES) are the two dominant commercial Lin
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

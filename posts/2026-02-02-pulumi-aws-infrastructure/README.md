@@ -52,6 +52,7 @@ Install the Pulumi CLI on your system.
 
 ```bash
 # macOS
+
 brew install pulumi
 
 # Linux

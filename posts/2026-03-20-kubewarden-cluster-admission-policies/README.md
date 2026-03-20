@@ -32,6 +32,7 @@ ClusterAdmissionPolicies can:
 
 ```yaml
 # cluster-policy-host-namespace.yaml
+
 apiVersion: policies.kubewarden.io/v1
 kind: ClusterAdmissionPolicy
 metadata:

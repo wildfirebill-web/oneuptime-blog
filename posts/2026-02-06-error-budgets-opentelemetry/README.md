@@ -34,6 +34,7 @@ If you followed the approach in the SLI definition post at https://oneuptime.com
 
 ```promql
 # Step 1: Calculate the current error rate over the SLO window (30 days)
+
 # This gives you the fraction of requests that failed
 sum(increase(http_server_request_errors_total{service="payment-service"}[30d]))
 /

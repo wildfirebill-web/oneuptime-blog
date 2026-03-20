@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, DHCP, Troubleshooting, Networking, SysAdmin
+Tags: Ubuntu, DHCP, Troubleshooting, Networking, Sysadmin
 
 Description: Diagnose and fix common DHCP server problems on Ubuntu including clients not getting addresses, exhausted pools, relay issues, and service startup failures.
 
@@ -28,6 +28,7 @@ The first check is always whether the DHCP service is actually running:
 
 ```bash
 # For ISC DHCP
+
 sudo systemctl status isc-dhcp-server
 
 # For ISC Kea

@@ -144,6 +144,7 @@ func runLeader(ctx context.Context) {
 
 ```yaml
 # leader-election-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

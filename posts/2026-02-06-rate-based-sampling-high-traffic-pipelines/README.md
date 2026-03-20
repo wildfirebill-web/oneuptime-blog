@@ -54,6 +54,7 @@ spans_per_hour = requests_per_second * spans_per_request * seconds_per_hour
 # Result: 432,000,000 spans per hour
 
 # At $2 per million spans
+
 cost_per_hour = (spans_per_hour / 1_000_000) * 2
 # Result: $864 per hour = $20,736 per day = $622,080 per month
 

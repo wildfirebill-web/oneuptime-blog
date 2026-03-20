@@ -70,6 +70,7 @@ from opentelemetry.sdk.trace import TracerProvider, SpanLimits
 from opentelemetry.sdk.resources import Resource
 
 # Define span limits
+
 span_limits = SpanLimits(
     # Maximum attributes per span
     max_attributes=128,

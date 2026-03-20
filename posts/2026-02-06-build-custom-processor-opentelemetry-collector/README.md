@@ -40,6 +40,7 @@ Create a new Go module for your custom processor.
 
 ```bash
 # Create project directory
+
 mkdir custom-processor
 cd custom-processor
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, HTTP, IPv4, http.Agent, Networking, Dual-Stack
+Tags: Node.js, HTTP, IPv4, Http.Agent, Networking, Dual-Stack
 
 Description: Learn how to force Node.js HTTP and HTTPS requests to use IPv4 only, avoiding IPv6 resolution in dual-stack environments.
 
@@ -124,6 +124,7 @@ fetchWithIPv4DNS('api.example.com', '/health')
 
 ```bash
 # Set DNS_ORDER to prefer IPv4 at the OS level (Node.js 18+)
+
 NODE_OPTIONS="--dns-result-order=ipv4first" node app.js
 ```
 

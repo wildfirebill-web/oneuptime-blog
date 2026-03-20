@@ -49,6 +49,7 @@ Similar to the `podSelector: {}` mistake, an empty `namespaceSelector: {}` in Ku
 
 ```yaml
 # Wrong: This allows traffic from ALL namespaces
+
 ingress:
 - from:
   - namespaceSelector: {}  # Matches every namespace

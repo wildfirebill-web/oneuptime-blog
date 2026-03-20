@@ -21,6 +21,7 @@ tracer = trace.get_tracer("ecommerce.storefront", "1.0.0")
 meter = metrics.get_meter("ecommerce.storefront", "1.0.0")
 
 # Request rate counter - this drives autoscaling
+
 request_rate = meter.create_counter(
     name="http.requests_total",
     description="Total HTTP requests",

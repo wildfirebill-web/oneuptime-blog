@@ -161,6 +161,7 @@ When proxy logs are noisy, use grep to filter for what you need:
 
 ```bash
 # Show only error responses (5xx)
+
 kubectl logs deploy/my-app -n default -c istio-proxy | grep '" 5[0-9][0-9] '
 
 # Show only a specific path

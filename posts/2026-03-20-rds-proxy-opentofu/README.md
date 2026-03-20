@@ -85,6 +85,7 @@ resource "aws_db_proxy" "main" {
 
 ```hcl
 # Associate the proxy with the RDS instance
+
 resource "aws_db_proxy_default_target_group" "main" {
   db_proxy_name = aws_db_proxy.main.name
 
@@ -156,4 +157,4 @@ psql -h $(tofu output -raw proxy_endpoint) \
 
 ## Conclusion
 
-RDS Proxy is especially valuable for Lambda functions where each invocation would otherwise open a new database connection. The proxy pools connections, reducing RDS max_connections consumption from hundreds of Lambda invocations to a manageable pool. Combine with IAM authentication for the most secure configuration—applications authenticate to the proxy via IAM tokens without ever knowing the database password.
+RDS Proxy is especially valuable for Lambda functions where each invocation would otherwise open a new database connection. The proxy pools connections, reducing RDS max_connections consumption from hundreds of Lambda invocations to a manageable pool. Combine with IAM authentication for the most secure configuration-applications authenticate to the proxy via IAM tokens without ever knowing the database password.

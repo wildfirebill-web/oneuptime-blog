@@ -1,4 +1,4 @@
-# How to Generate Configuration from Imported Resources in OpenTofu
+# How to Generate Configuration from Imported Resources in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu's -generate-config-out flag to automatica
 
 ## Introduction
 
-Writing resource configuration manually before importing is tedious for complex resources. OpenTofu's `-generate-config-out` flag automates this — it reads the actual resource from the cloud provider and generates a complete HCL configuration file. This is particularly useful when importing resources with many attributes, such as EKS clusters, RDS instances, or complex IAM policies.
+Writing resource configuration manually before importing is tedious for complex resources. OpenTofu's `-generate-config-out` flag automates this - it reads the actual resource from the cloud provider and generates a complete HCL configuration file. This is particularly useful when importing resources with many attributes, such as EKS clusters, RDS instances, or complex IAM policies.
 
 ## Basic Usage
 
 ```hcl
-# import.tf — just the import block, no resource block yet
+# import.tf - just the import block, no resource block yet
+
 import {
   to = aws_s3_bucket.existing
   id = "my-existing-bucket"
@@ -30,7 +31,7 @@ This creates `generated.tf` with the full resource configuration read from the c
 ## Generated Output Example
 
 ```bash
-# generated.tf (auto-generated — do not edit directly)
+# generated.tf (auto-generated - do not edit directly)
 resource "aws_s3_bucket" "existing" {
   bucket        = "my-existing-bucket"
   force_destroy = false
@@ -71,12 +72,12 @@ tofu apply
 Generated configuration often includes computed/read-only attributes that should be removed:
 
 ```hcl
-# Before cleanup (generated output — includes computed values)
+# Before cleanup (generated output - includes computed values)
 resource "aws_s3_bucket" "existing" {
   bucket                      = "my-existing-bucket"
-  bucket_domain_name          = "my-existing-bucket.s3.amazonaws.com"  # Remove — computed
-  bucket_regional_domain_name = "my-existing-bucket.s3.us-east-1.amazonaws.com"  # Remove — computed
-  id                          = "my-existing-bucket"  # Remove — computed
+  bucket_domain_name          = "my-existing-bucket.s3.amazonaws.com"  # Remove - computed
+  bucket_regional_domain_name = "my-existing-bucket.s3.us-east-1.amazonaws.com"  # Remove - computed
+  id                          = "my-existing-bucket"  # Remove - computed
   region                      = "us-east-1"  # May remove or keep
   force_destroy               = false
 }
@@ -93,7 +94,7 @@ resource "aws_s3_bucket" "existing" {
 ## Generating Config for Multiple Resources
 
 ```hcl
-# import.tf — multiple import blocks
+# import.tf - multiple import blocks
 import {
   to = aws_s3_bucket.data
   id = "acme-data-bucket"
@@ -112,7 +113,7 @@ tofu plan -generate-config-out=generated.tf
 
 ## Limitations
 
-- Generated files cannot be applied with `-generate-config-out` — only for generation
+- Generated files cannot be applied with `-generate-config-out` - only for generation
 - You must apply separately after reviewing the generated output
 - Some attributes may need manual adjustment (e.g., replacing hardcoded values with variables)
 - The generated file may include deprecated attributes that should be removed

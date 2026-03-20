@@ -30,6 +30,7 @@ Create a directory for Home Assistant:
 
 ```bash
 # Create the Home Assistant project directory
+
 mkdir -p ~/home-assistant/config
 cd ~/home-assistant
 ```

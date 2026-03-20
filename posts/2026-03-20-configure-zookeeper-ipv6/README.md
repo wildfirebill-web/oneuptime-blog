@@ -12,6 +12,7 @@ Description: Learn how to configure Apache ZooKeeper to listen on IPv6 addresses
 # /etc/zookeeper/conf/zoo.cfg (or /opt/zookeeper/conf/zoo.cfg)
 
 # Data directory
+
 dataDir=/var/lib/zookeeper
 
 # Client port - ZooKeeper 3.5+ supports binding to specific address

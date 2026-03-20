@@ -18,6 +18,7 @@ CloudWatch RUM works by embedding a lightweight JavaScript snippet in your web p
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

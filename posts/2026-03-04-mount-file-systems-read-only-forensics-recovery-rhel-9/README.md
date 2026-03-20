@@ -118,6 +118,7 @@ For images with partition tables, use the offset:
 
 ```bash
 # Find partition offsets
+
 sudo fdisk -l /forensics/disk_image.raw
 
 # Mount with offset (example: partition starts at sector 2048, sector size 512)

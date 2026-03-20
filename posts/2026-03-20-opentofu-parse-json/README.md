@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, JSON, jsondecode, Configuration, Data Files
+Tags: OpenTofu, JSON, Jsondecode, Configuration, Data Files
 
 Description: Learn how to parse JSON configuration files in OpenTofu using jsondecode and file() to drive infrastructure from external data sources.
 
@@ -14,6 +14,7 @@ OpenTofu can read JSON configuration files using `file()` and `jsondecode()`, en
 
 ```hcl
 # main.tf - Load configuration from JSON
+
 locals {
   # Read and parse a JSON configuration file
   app_config = jsondecode(file("${path.module}/config/app-config.json"))

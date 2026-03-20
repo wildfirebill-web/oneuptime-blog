@@ -61,6 +61,7 @@ The first thing to test is that valid inputs are accepted. Use Terraform's nativ
 # validation.tftest.hcl
 
 # Test that all valid environments are accepted
+
 run "valid_environment_dev" {
   command = plan
 

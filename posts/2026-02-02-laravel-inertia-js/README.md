@@ -40,6 +40,7 @@ Install the Inertia Laravel adapter via Composer. This provides the middleware a
 
 ```bash
 # Install the Inertia.js server-side adapter for Laravel
+
 composer require inertiajs/inertia-laravel
 ```
 

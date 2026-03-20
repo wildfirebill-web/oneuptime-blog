@@ -14,6 +14,7 @@ Enrolling a RHEL system as an IdM client enables centralized user authentication
 
 ```bash
 # Ensure the client can resolve the IdM server
+
 dig idm1.example.com
 
 # Verify DNS SRV records are available

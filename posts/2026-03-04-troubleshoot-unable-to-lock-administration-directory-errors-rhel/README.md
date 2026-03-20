@@ -16,6 +16,7 @@ First, check if another DNF or YUM process is actually running:
 
 ```bash
 # Check for running dnf or yum processes
+
 ps aux | grep -E '[d]nf|[y]um'
 ```
 

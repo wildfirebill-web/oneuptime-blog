@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SaltStack, IPv6, States, Pillars, Jinja2, Configuration Management
+Tags: SaltStack, IPv6, State, Pillars, Jinja2, Configuration Management
 
 Description: A guide to deploying IPv6 configuration using SaltStack state files with Jinja2 templating, pillars for site-specific data, and execution modules for verification.
 
@@ -28,6 +28,7 @@ base:
 
 ```yaml
 # /srv/pillar/top.sls
+
 base:
   '*':
     - ipv6_common

@@ -18,6 +18,7 @@ The most common approach is to create a marker when your CI/CD pipeline deploys 
 
 ```bash
 # Create a deployment marker via the Honeycomb API
+
 curl -X POST "https://api.honeycomb.io/1/markers/${HONEYCOMB_DATASET}" \
   -H "X-Honeycomb-Team: ${HONEYCOMB_API_KEY}" \
   -H "Content-Type: application/json" \

@@ -50,6 +50,7 @@ Both endpoint types need a security group that allows DNS traffic:
 
 ```bash
 # Create a security group for Route 53 Resolver endpoints
+
 aws ec2 create-security-group \
   --group-name route53-resolver-sg \
   --description "Security group for Route 53 Resolver endpoints" \

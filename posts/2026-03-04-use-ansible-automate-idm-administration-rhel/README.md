@@ -14,6 +14,7 @@ Red Hat provides official Ansible roles and modules for IdM (FreeIPA) automation
 
 ```bash
 # Install the ansible-freeipa collection
+
 sudo dnf install -y ansible-freeipa
 
 # Or install via ansible-galaxy

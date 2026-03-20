@@ -14,6 +14,7 @@ Description: Diagnose and fix SSH 'Connection refused' errors on RHEL by checkin
 
 ```bash
 # On the server (via console access or Cockpit)
+
 sudo systemctl status sshd
 
 # If sshd is not running, start it

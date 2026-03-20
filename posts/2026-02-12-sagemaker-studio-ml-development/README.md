@@ -26,6 +26,7 @@ Here's how to create a domain and user profile using the AWS CLI.
 
 ```bash
 # Create a SageMaker domain with a VPC configuration
+
 aws sagemaker create-domain \
   --domain-name ml-team-domain \
   --auth-mode IAM \

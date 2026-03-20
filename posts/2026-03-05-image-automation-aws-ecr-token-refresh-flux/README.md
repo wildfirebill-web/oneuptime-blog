@@ -33,6 +33,7 @@ Create an IAM policy that grants ECR read access.
 
 ```bash
 # Create an IAM policy for ECR read access
+
 aws iam create-policy \
   --policy-name FluxECRReadOnly \
   --policy-document '{

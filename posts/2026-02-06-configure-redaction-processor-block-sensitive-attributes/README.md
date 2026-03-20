@@ -22,6 +22,7 @@ Check if your Collector includes it by running the following.
 
 ```bash
 # List all available components in your Collector build
+
 otelcol-contrib components
 # Look for "redaction" in the processors section
 ```

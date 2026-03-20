@@ -16,6 +16,7 @@ A simple `requirements.yml` lists the roles your project needs:
 
 ```yaml
 # requirements.yml
+
 # External roles required by this project
 ---
 roles:

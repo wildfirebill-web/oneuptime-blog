@@ -29,6 +29,7 @@ Start by adding Diesel and its dependencies to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Diesel with PostgreSQL support - change to "mysql" or "sqlite" for other databases
+
 diesel = { version = "2.1", features = ["postgres", "r2d2", "chrono", "uuid"] }
 
 # Connection pooling for production use

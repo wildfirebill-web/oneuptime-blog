@@ -18,6 +18,7 @@ The json-file log driver writes container logs to a file in JSON format, with ea
 
 ```bash
 # Run a container with the json-file log driver
+
 podman run -d \
   --log-driver json-file \
   --name web \

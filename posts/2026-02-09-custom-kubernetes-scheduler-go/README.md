@@ -24,6 +24,7 @@ Create a new Go module for your scheduler:
 
 ```bash
 # Initialize Go module
+
 mkdir custom-scheduler
 cd custom-scheduler
 go mod init github.com/yourorg/custom-scheduler

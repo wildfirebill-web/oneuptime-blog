@@ -8,7 +8,7 @@ Description: The network address of a subnet is calculated by performing a bitwi
 
 ## The Bitwise AND Operation
 
-```
+```text
 IP Address:   192.168.10.45   = 11000000.10101000.00001010.00101101
 Subnet Mask:  255.255.255.0   = 11111111.11111111.11111111.00000000
 AND result:   192.168.10.0    = 11000000.10101000.00001010.00000000
@@ -33,6 +33,7 @@ def network_address(ip: str, mask: str) -> str:
     return socket.inet_ntoa(struct.pack("!I", network_int))
 
 # Examples
+
 test_cases = [
     ("192.168.10.45",  "255.255.255.0"),    # /24
     ("172.16.50.200",  "255.255.240.0"),    # /20
@@ -45,7 +46,7 @@ for ip, mask in test_cases:
 ```
 
 Output:
-```
+```text
 192.168.10.45/255.255.255.0 -> Network: 192.168.10.0
 172.16.50.200/255.255.240.0 -> Network: 172.16.48.0
 10.5.3.100/255.255.255.128 -> Network: 10.5.3.0
@@ -70,7 +71,7 @@ print(network_from_cidr("10.5.3.100/25"))      # 10.5.3.0
 
 For `172.16.50.200 / 255.255.240.0`:
 
-```
+```yaml
 172  = 10101100
 16   = 00010000
 50   = 00110010  ← interesting octet

@@ -24,6 +24,7 @@ Consider a customer support scenario. You need one agent that understands billin
 
 ```bash
 # Install required packages
+
 pip install langchain langchain-google-vertexai langchain-core google-cloud-aiplatform
 ```
 

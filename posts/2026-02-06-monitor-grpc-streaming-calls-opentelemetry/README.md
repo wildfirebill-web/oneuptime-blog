@@ -45,6 +45,7 @@ First, install the necessary packages.
 
 ```bash
 # Install OpenTelemetry core and gRPC instrumentation packages
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/exporter-trace-otlp-http \
   @opentelemetry/instrumentation-grpc \

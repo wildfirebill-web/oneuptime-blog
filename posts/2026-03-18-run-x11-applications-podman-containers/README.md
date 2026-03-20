@@ -33,6 +33,7 @@ The minimum required to run an X11 application in a container:
 
 ```bash
 # Allow local connections to X server
+
 xhost +local:
 
 # Run an X11 application

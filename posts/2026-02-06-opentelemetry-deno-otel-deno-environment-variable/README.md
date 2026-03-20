@@ -30,6 +30,7 @@ Enable OpenTelemetry in Deno by setting the `OTEL_DENO` environment variable to 
 
 ```bash
 # Run your Deno application with tracing enabled
+
 OTEL_DENO=1 deno run --allow-net --allow-env server.ts
 ```
 

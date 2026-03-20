@@ -299,6 +299,7 @@ def store_results(audio_uri, file_name, results):
 
 ```bash
 # Deploy the batch processing function
+
 gcloud functions deploy process-audio \
     --runtime python311 \
     --trigger-bucket your-audio-uploads-bucket \

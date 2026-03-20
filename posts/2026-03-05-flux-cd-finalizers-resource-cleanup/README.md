@@ -57,6 +57,7 @@ When you delete a Flux Kustomization, the following sequence occurs:
 
 ```bash
 # Watch the deletion process
+
 kubectl delete kustomization my-app -n flux-system &
 kubectl get kustomization my-app -n flux-system -w
 ```

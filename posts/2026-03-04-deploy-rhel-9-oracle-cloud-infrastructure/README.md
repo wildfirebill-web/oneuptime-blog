@@ -14,6 +14,7 @@ Oracle Cloud Infrastructure (OCI) supports RHEL as a platform image for compute 
 
 ```bash
 # Using OCI CLI to create a RHEL instance
+
 # First, find the RHEL image OCID
 oci compute image list \
   --compartment-id $COMPARTMENT_ID \

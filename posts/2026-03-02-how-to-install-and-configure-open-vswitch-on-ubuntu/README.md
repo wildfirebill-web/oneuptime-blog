@@ -14,6 +14,7 @@ Open vSwitch (OVS) is a production-grade, multilayer virtual switch that runs in
 
 ```bash
 # Update and install OVS packages
+
 sudo apt update
 sudo apt install openvswitch-switch openvswitch-common
 

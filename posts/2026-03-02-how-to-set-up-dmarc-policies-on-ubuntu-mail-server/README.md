@@ -20,6 +20,7 @@ Before configuring DMARC, you need SPF and DKIM working correctly. DMARC checks 
 
 ```bash
 # Verify SPF is published
+
 dig TXT example.com +short | grep spf
 
 # Verify DKIM is published and valid

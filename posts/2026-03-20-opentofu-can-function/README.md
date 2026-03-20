@@ -18,7 +18,7 @@ can(expression)
 
 - Returns `true` if the expression evaluates without error
 - Returns `false` if the expression would raise an error
-- Does NOT return the value — just a boolean
+- Does NOT return the value - just a boolean
 
 ## Basic Examples
 
@@ -126,4 +126,4 @@ Prefer `try` when you need the value; use `can` when you only need to test.
 
 ## Conclusion
 
-The `can` function is a boolean probe in OpenTofu — it tests whether an expression succeeds without actually using its value. Use it in validation blocks to verify inputs are parseable, in conditionals to check for optional nested values, and in guards before accessing potentially missing keys.
+The `can` function is a boolean probe in OpenTofu - it tests whether an expression succeeds without actually using its value. Use it in validation blocks to verify inputs are parseable, in conditionals to check for optional nested values, and in guards before accessing potentially missing keys.

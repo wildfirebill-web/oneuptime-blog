@@ -208,6 +208,7 @@ If a schema change causes a Datastream failure, here is the recovery process:
 
 ```bash
 # Check stream status and errors
+
 gcloud datastream streams describe my-stream \
   --location=us-central1 \
   --format="yaml(state, errors)"

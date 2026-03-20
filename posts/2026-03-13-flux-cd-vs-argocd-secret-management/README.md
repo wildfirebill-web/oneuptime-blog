@@ -26,6 +26,7 @@ Flux CD has native SOPS decryption built into the Kustomize Controller. No exter
 
 ```yaml
 # clusters/production/flux-system/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

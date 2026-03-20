@@ -41,7 +41,7 @@ locals {
     version     = var.app_version
   })
 
-  # Hash of user data — changes when content changes
+  # Hash of user data - changes when content changes
   user_data_hash = md5(local.user_data_script)
 }
 

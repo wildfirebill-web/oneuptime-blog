@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, PTR Records, Reverse DNS, ip6.arpa
+Tags: IPv6, DNS, PTR Records, Reverse DNS, Ip6.arpa
 
 Description: A step-by-step guide to setting up IPv6 reverse DNS PTR records in the ip6.arpa zone, enabling hostname lookups from IPv6 addresses.
 
@@ -71,6 +71,7 @@ Computing nibble-reversed names manually is error-prone. Use this script:
 ```bash
 #!/bin/bash
 # Generate PTR record name from IPv6 address
+
 # Usage: ipv6-ptr.sh 2001:db8::1
 
 ipv6_to_ptr() {

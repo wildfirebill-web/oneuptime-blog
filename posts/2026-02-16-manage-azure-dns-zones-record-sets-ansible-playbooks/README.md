@@ -20,6 +20,7 @@ Install the Azure Ansible collection if you have not already.
 
 ```bash
 # Install the Azure collection from Ansible Galaxy
+
 ansible-galaxy collection install azure.azcollection
 
 # Install the required Python dependencies for Azure modules

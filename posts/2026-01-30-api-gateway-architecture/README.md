@@ -182,6 +182,7 @@ Route based on URL path prefix:
 
 ```yaml
 # Kong declarative configuration
+
 # Routes requests to different backend services based on URL path
 services:
   # User service handles all /users/* requests

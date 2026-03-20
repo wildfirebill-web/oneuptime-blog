@@ -37,6 +37,7 @@ Instead of running Jaeger in each cluster, deploy a single Jaeger instance (or u
 
 ```yaml
 # Deploy Jaeger with persistent storage
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

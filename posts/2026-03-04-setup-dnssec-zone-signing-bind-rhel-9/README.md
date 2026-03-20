@@ -115,6 +115,7 @@ Point BIND to the signed zone file instead of the original:
 
 ```bash
 # In named.conf, change the zone file reference
+
 zone "example.com" IN {
     type primary;
     file "example.com.zone.signed";

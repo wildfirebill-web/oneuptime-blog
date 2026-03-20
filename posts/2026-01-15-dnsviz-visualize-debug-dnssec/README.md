@@ -141,6 +141,7 @@ The `probe` command queries DNS servers and collects all DNSSEC-related informat
 
 ```bash
 # Basic probe
+
 dnsviz probe example.com > example.json
 
 # Probe with specific resolver

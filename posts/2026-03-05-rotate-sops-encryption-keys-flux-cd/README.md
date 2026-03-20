@@ -28,6 +28,7 @@ Create a new Age key pair while keeping the old one.
 
 ```bash
 # Generate a new Age key
+
 age-keygen -o age-new.agekey
 
 # Note the new public key

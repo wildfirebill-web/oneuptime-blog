@@ -36,6 +36,7 @@ Instead of using wildcard actions like `s3:*`, list the specific API calls your 
 
 ```hcl
 # Bad: Overly permissive
+
 resource "aws_iam_policy" "too_broad" {
   name = "too-broad-policy"
 

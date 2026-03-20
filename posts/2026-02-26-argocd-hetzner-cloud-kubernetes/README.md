@@ -30,6 +30,7 @@ The most popular approach is using k3s with the Hetzner Cloud Controller Manager
 
 ```bash
 # On the first node, install k3s
+
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server \
   --disable-cloud-controller \
   --disable servicelb \

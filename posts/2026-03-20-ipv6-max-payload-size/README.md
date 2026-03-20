@@ -12,7 +12,7 @@ The maximum amount of data a single IPv6 packet can carry depends on the path MT
 
 ## Basic Calculation
 
-```
+```text
 Available payload = MTU - IPv6 header (40 bytes) - extension headers - upper-layer header
 
 For a standard 1500-byte Ethernet MTU with TCP (no extension headers):
@@ -63,6 +63,7 @@ def calculate_max_payload(
     }
 
 # Common scenarios
+
 scenarios = [
     (1500, 0, 20, "Ethernet 1500 MTU, TCP, no extensions"),
     (1500, 0, 8,  "Ethernet 1500 MTU, UDP, no extensions"),
@@ -105,7 +106,7 @@ sudo ip6tables -t mangle -A FORWARD \
 
 When Path MTU is smaller than 1500 (e.g., in tunnels):
 
-```
+```text
 GRE Tunnel overhead: IPv6 (40) + GRE (4) = 44 bytes overhead
   Effective MTU for inner IPv6: 1500 - 44 = 1456 bytes
   TCP MSS should be: 1456 - 40 (inner IPv6) - 20 (TCP) = 1396 bytes

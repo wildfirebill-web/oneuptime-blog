@@ -49,6 +49,7 @@ Check if one already exists:
 
 ```bash
 # Check if OIDC provider exists for your cluster
+
 aws eks describe-cluster --name my-cluster --query "cluster.identity.oidc.issuer" --output text
 ```
 

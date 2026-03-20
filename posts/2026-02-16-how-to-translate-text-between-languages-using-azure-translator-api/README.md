@@ -31,6 +31,7 @@ import requests
 import json
 
 # Configuration
+
 translator_key = "your-translator-key"
 translator_region = "eastus"  # Your resource's region
 translator_endpoint = "https://api.cognitive.microsofttranslator.com"

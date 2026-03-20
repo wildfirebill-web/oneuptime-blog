@@ -20,6 +20,7 @@ Stop a running container by name or ID.
 
 ```bash
 # Start a container
+
 podman run -d --name my-nginx docker.io/library/nginx:latest
 
 # Stop the container gracefully

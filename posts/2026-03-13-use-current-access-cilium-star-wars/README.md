@@ -27,6 +27,7 @@ This guide shows you how to use Cilium's tools to observe, record, and analyze t
 
 ```bash
 # Enable Hubble on existing Cilium installation
+
 cilium hubble enable
 
 # Verify Hubble is running

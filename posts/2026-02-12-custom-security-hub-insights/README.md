@@ -43,6 +43,7 @@ View the results.
 
 ```bash
 # Get results for an insight
+
 INSIGHT_ARN=$(aws securityhub get-insights \
   --query 'Insights[?Name==`Accounts with Most High-Severity Findings`].InsightArn' \
   --output text)

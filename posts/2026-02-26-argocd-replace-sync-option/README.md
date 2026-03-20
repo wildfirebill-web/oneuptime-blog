@@ -56,6 +56,7 @@ Sometimes resources get into a bad state where apply cannot reconcile them:
 
 ```text
 # Resource has conflicting field managers
+
 # Strategic merge patch cannot resolve the conflict
 ```
 

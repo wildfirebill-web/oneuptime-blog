@@ -29,6 +29,7 @@ graph LR
 
 ```bash
 # macOS
+
 brew install velero
 
 # Linux

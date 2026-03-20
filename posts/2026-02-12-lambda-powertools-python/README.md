@@ -18,6 +18,7 @@ Getting started is straightforward. Install the library with the features you ne
 
 ```bash
 # Install with all features
+
 pip install "aws-lambda-powertools[all]"
 
 # Or install specific features

@@ -196,6 +196,7 @@ ECS integrates with AWS Cloud Map for service discovery. Each service registers 
 
 ```bash
 # Create a Cloud Map namespace
+
 aws servicediscovery create-private-dns-namespace \
   --name app.local \
   --vpc vpc-abc123

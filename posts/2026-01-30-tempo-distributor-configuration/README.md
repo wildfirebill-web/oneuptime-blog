@@ -105,6 +105,7 @@ OTLP (OpenTelemetry Protocol) is the standard for modern instrumentation. It sup
 
 ```yaml
 # tempo.yaml
+
 distributor:
   receivers:
     otlp:
@@ -580,7 +581,7 @@ spec:
       targetPort: 9411
 ```
 
-### Resource Sizing
+Resource Sizing
 
 | Cluster Size | Distributor Replicas | CPU Request | Memory Request |
 |--------------|---------------------|-------------|----------------|

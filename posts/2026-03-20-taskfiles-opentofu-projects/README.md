@@ -14,6 +14,7 @@ Taskfile is a modern task runner written in Go that provides YAML-based task def
 
 ```bash
 # macOS
+
 brew install go-task
 
 # Linux

@@ -26,6 +26,7 @@ Install KEDA using Helm. KEDA runs as a set of controllers in its own namespace.
 
 ```bash
 # Add the KEDA Helm repository
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

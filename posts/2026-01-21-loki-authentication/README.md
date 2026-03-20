@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Security, Authentication, Basic Auth, OAuth, Reverse Proxy, NGINX
+Tags: Grafana Loki, Security, Authentication, Basic Auth, OAuth, Reverse Proxy, Nginx
 
 Description: A comprehensive guide to securing Grafana Loki with authentication mechanisms including basic auth, OAuth2, and reverse proxy configurations for production deployments.
 
@@ -135,6 +135,7 @@ server {
 
 ```bash
 # Install htpasswd utility
+
 apt-get install apache2-utils
 
 # Create password file for read access

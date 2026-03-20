@@ -30,6 +30,7 @@ Apply the following Helm values to configure cilium masquerading:
 
 ```yaml
 # cilium-masquerade-values.yaml
+
 # Masquerading configuration for Cilium
 # Enable eBPF-based masquerading (preferred over iptables)
 bpf:

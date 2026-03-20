@@ -37,6 +37,7 @@ Before deploying, verify your Talos Linux cluster setup:
 
 ```bash
 # Check the current cluster DNS service IP
+
 kubectl get svc kube-dns -n kube-system
 # Note the ClusterIP (usually 10.96.0.10)
 

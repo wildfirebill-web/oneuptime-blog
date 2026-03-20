@@ -24,6 +24,7 @@ For development and testing, a single-node setup is fastest to deploy:
 
 ```yaml
 # apps/elasticsearch/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -562,7 +563,7 @@ Key metrics to monitor:
 - Indexing rate and search latency
 - Shard distribution balance
 
-## Resource Sizing Guidelines
+Resource Sizing Guidelines
 
 Elasticsearch is memory-hungry. General guidelines:
 

@@ -46,6 +46,7 @@ TiDB Operator CRDs are large and should be deployed separately with server-side 
 
 ```yaml
 # argocd/tidb-crds.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

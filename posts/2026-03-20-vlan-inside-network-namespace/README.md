@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VLAN, Network Namespace, Linux, netns, 802.1Q, IPv4, Isolation
+Tags: VLAN, Network Namespaces, Linux, Netns, 802.1Q, IPv4, Isolation
 
 Description: Learn how to create 802.1Q VLAN interfaces inside Linux network namespaces for isolated VLAN-based networking in testing, containers, and multi-tenant scenarios.
 
 ---
 
-VLAN interfaces inside network namespaces allow per-namespace VLAN segmentation — useful for testing VLAN configurations, simulating multi-tenant environments, and container networking.
+VLAN interfaces inside network namespaces allow per-namespace VLAN segmentation - useful for testing VLAN configurations, simulating multi-tenant environments, and container networking.
 
 ## Setup: Move a Physical Interface into a Namespace
 
 ```bash
 # Create namespace
+
 ip netns add vlan-test
 
 # Create veth pair (we cannot move physical NICs without losing host connectivity)

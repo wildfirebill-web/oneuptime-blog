@@ -1,4 +1,4 @@
-# How to Configure Active Directory Authentication in Portainer
+# How to Configure Active Directory Authentication in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer to authenticate users against Microsoft Active 
 
 ## Introduction
 
-Active Directory (AD) is Microsoft's directory service used in most enterprise Windows environments. Portainer connects to AD using the LDAP protocol, but AD has specific conventions that differ from OpenLDAP — different attribute names, DN formats, and filter syntax. This guide covers AD-specific configuration.
+Active Directory (AD) is Microsoft's directory service used in most enterprise Windows environments. Portainer connects to AD using the LDAP protocol, but AD has specific conventions that differ from OpenLDAP - different attribute names, DN formats, and filter syntax. This guide covers AD-specific configuration.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Create a dedicated low-privilege service account for Portainer:
 
 ```powershell
 # Run on a Domain Controller or admin workstation
+
 New-ADUser `
   -Name "portainer-svc" `
   -SamAccountName "portainer-svc" `
@@ -56,7 +57,7 @@ Get-ADOrganizationalUnit -Filter * | Select Name,DistinguishedName
 
 In Settings → Authentication → LDAP:
 
-```
+```text
 Server:             dc01.corp.example.com:389
                     (or use LDAPS: dc01.corp.example.com:636)
 
@@ -134,7 +135,7 @@ curl -X PUT \
 
 ## Filtering Out Disabled Accounts
 
-```
+```text
 User Filter: (&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
 ```
 

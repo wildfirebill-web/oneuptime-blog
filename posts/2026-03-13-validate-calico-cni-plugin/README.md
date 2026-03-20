@@ -22,6 +22,7 @@ Validating the Calico CNI plugin involves confirming that the configuration file
 
 ```bash
 # Check CNI config on each node
+
 kubectl get nodes -o name | while read node; do
   node_name=$(echo $node | cut -d/ -f2)
   echo "=== $node_name ==="

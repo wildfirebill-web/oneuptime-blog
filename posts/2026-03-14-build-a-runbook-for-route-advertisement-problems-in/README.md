@@ -25,6 +25,7 @@ This runbook provides a top-down diagnostic flow starting from the symptom (pods
 
 ```bash
 # Step 1: Confirm the symptom is cross-node connectivity failure
+
 # Test pod-to-pod connectivity across different nodes
 kubectl run rr-test-server --image=nginx --restart=Never
 kubectl run rr-test-client --image=busybox --restart=Never -- sleep 300

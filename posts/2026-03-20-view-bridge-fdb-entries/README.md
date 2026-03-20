@@ -14,6 +14,7 @@ The bridge forwarding database (FDB) is the MAC address table that a Linux bridg
 
 ```bash
 # Show all FDB entries
+
 bridge fdb show
 
 # Show entries for a specific bridge
@@ -25,7 +26,7 @@ bridge fdb show dev eth0
 
 ## Interpret FDB Output
 
-```
+```text
 aa:bb:cc:dd:ee:11 dev eth0 master br0
 aa:bb:cc:dd:ee:22 dev tap0 master br0 self
 33:33:00:00:00:01 dev br0 self permanent
@@ -33,11 +34,11 @@ ff:ff:ff:ff:ff:ff dev eth0 master br0 permanent
 ```
 
 Key fields:
-- `dev` — which interface this MAC was learned on
-- `master br0` — this entry belongs to bridge br0
-- `permanent` — static entry (not aged out)
-- No `permanent` — dynamic entry (learned, will age out)
-- `self` — entry on the bridge itself
+- `dev` - which interface this MAC was learned on
+- `master br0` - this entry belongs to bridge br0
+- `permanent` - static entry (not aged out)
+- No `permanent` - dynamic entry (learned, will age out)
+- `self` - entry on the bridge itself
 
 ## Filter FDB by MAC Address
 

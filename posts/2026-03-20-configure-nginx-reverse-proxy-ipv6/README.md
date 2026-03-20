@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Nginx, Reverse Proxy, proxy_pass, Backend
+Tags: IPv6, Nginx, Reverse Proxy, Proxy_pass, Backend
 
 Description: Learn how to configure Nginx as a reverse proxy to forward requests to IPv6 backend servers, including proper address formatting and health checks.
 
@@ -118,6 +118,7 @@ server {
 
 ```bash
 # Test that Nginx can reach the IPv6 backend
+
 curl -6 http://[2001:db8::10]:8080/health
 
 # Test through Nginx

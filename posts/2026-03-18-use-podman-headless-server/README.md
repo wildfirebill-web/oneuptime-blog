@@ -88,6 +88,7 @@ When managing containers on a headless server, you connect via SSH and use Podma
 ssh podman-svc@your-server.example.com
 
 # Pull and run an application
+
 podman pull docker.io/library/nginx:alpine
 podman run -d --name webserver -p 8080:80 docker.io/library/nginx:alpine
 
@@ -231,7 +232,7 @@ systemctl --user start postgres webapp
 
 ## Monitoring Containers on a Headless Server
 
-### Resource Usage
+Resource Usage
 
 Check real-time resource usage:
 

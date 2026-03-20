@@ -16,6 +16,7 @@ Let us measure exactly how much time fact gathering takes. Enable the `profile_t
 
 ```bash
 # Measure fact gathering time
+
 ANSIBLE_CALLBACKS_ENABLED=profile_tasks ansible-playbook -i inventory ping.yml
 ```
 

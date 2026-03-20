@@ -30,6 +30,7 @@ The most dangerous IAM pattern is `"Action": "*"` on `"Resource": "*"`. This gra
 
 ```python
 # deny-wildcard-iam.sentinel
+
 # Block IAM policies that grant wildcard actions on wildcard resources
 
 import "tfplan/v2" as tfplan

@@ -28,6 +28,7 @@ Here's how to update an existing function using the AWS CLI:
 
 ```bash
 # Update an existing function to use ARM64
+
 aws lambda update-function-configuration \
   --function-name my-function \
   --architectures arm64

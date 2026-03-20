@@ -42,6 +42,7 @@ For programmatic search, use the Data Catalog API:
 
 ```python
 # Search for data assets using the Data Catalog API
+
 from google.cloud import datacatalog_v1
 
 client = datacatalog_v1.DataCatalogClient()

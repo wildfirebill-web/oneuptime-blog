@@ -56,6 +56,7 @@ Before implementing Tekton Results, ensure you have a working Tekton Pipelines i
 
 ```bash
 # Check that Tekton Pipelines is running
+
 # Look for tekton-pipelines-controller and tekton-pipelines-webhook pods
 kubectl get pods -n tekton-pipelines
 

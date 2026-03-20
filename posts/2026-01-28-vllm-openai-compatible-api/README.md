@@ -40,6 +40,7 @@ vLLM requires a CUDA-capable GPU. Here are the installation options:
 
 ```bash
 # Option 1: pip install (requires CUDA 11.8 or 12.1)
+
 pip install vllm
 
 # Option 2: From source for latest features

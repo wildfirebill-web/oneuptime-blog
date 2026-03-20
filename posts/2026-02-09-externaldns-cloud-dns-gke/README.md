@@ -18,6 +18,7 @@ First, create a Cloud DNS managed zone:
 
 ```bash
 # Create Cloud DNS zone
+
 gcloud dns managed-zones create example-zone \
   --dns-name=example.com \
   --description="Kubernetes services zone"

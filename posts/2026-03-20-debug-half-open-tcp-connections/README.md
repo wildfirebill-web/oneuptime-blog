@@ -12,7 +12,7 @@ A half-open TCP connection exists when one endpoint believes a connection is EST
 
 ## How Half-Open Connections Occur
 
-```
+```yaml
 Normal scenario:
 Client --- ESTABLISHED --- Server
 
@@ -31,6 +31,7 @@ Client holds the connection forever (unless keepalives are enabled)
 
 ```bash
 # Connections stuck in ESTABLISHED for very long time with no traffic
+
 # may be half-open
 ss -tn state established | awk '{print $4, $5}'
 
@@ -111,4 +112,4 @@ def send_with_half_open_detection(sock, data):
 
 ## Conclusion
 
-Half-open connections consume resources silently and cause mysterious application hangs when code tries to reuse them. TCP keepalives are the primary defense — they actively probe idle connections and detect dead ones within minutes. In environments with NAT or stateful firewalls, tune keepalive intervals to be shorter than the firewall's connection tracking timeout to prevent NAT entries from expiring silently.
+Half-open connections consume resources silently and cause mysterious application hangs when code tries to reuse them. TCP keepalives are the primary defense - they actively probe idle connections and detect dead ones within minutes. In environments with NAT or stateful firewalls, tune keepalive intervals to be shorter than the firewall's connection tracking timeout to prevent NAT entries from expiring silently.

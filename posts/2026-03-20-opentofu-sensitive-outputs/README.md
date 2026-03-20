@@ -20,6 +20,7 @@ Learn how to handle sensitive values in OpenTofu outputs, state files, and logs 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

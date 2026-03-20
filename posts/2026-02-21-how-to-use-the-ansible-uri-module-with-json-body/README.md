@@ -18,6 +18,7 @@ The simplest way to send a JSON body is with `body_format: json` and a YAML dict
 
 ```yaml
 # send a basic JSON body with the uri module
+
 ---
 - name: JSON body basics
   hosts: localhost

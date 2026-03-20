@@ -448,6 +448,7 @@ Track Thanos health:
 
 ```promql
 # Sidecar upload success rate
+
 rate(thanos_objstore_bucket_operations_total{operation="upload",component="sidecar"}[5m])
 
 # Querier query latency

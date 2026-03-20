@@ -27,6 +27,7 @@ Because DOCKER-USER comes first, your rules take priority over everything else i
 
 ```bash
 # View the current DOCKER-USER chain
+
 sudo iptables -L DOCKER-USER -n -v --line-numbers
 ```
 

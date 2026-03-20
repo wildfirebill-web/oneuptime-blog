@@ -32,6 +32,7 @@ When a resume is uploaded to S3, a Lambda function kicks off the parsing pipelin
 
 ```yaml
 # CloudFormation for the resume parsing pipeline
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ResumeBucket:

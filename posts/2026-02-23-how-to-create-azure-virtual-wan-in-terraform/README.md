@@ -63,6 +63,7 @@ resource "azurerm_resource_group" "networking" {
 }
 
 # Create the Virtual WAN resource
+
 resource "azurerm_virtual_wan" "main" {
   name                = "vwan-prod-001"
   resource_group_name = azurerm_resource_group.networking.name

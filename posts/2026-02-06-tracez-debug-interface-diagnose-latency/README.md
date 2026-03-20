@@ -38,6 +38,7 @@ TraceZ comes as part of the zPages extension. You can enable it in the Collector
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Enable zPages which includes TraceZ, ServiceZ, and PipelineZ
   zpages:

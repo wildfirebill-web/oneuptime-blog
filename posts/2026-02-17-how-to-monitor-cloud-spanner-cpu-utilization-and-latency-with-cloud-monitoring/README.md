@@ -34,6 +34,7 @@ Create a comprehensive Spanner monitoring dashboard using gcloud:
 
 ```bash
 # Create a monitoring dashboard for Spanner metrics
+
 gcloud monitoring dashboards create --config-from-file=spanner-dashboard.json
 ```
 

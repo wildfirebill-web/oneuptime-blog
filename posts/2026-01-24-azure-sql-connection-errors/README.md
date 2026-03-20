@@ -52,6 +52,7 @@ Azure SQL Database requires explicit firewall rules for client IP addresses:
 
 ```bash
 # List current firewall rules using Azure CLI
+
 az sql server firewall-rule list \
     --resource-group myResourceGroup \
     --server myserver

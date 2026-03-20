@@ -16,6 +16,7 @@ Operationalizing IPAM release workflows means scheduling them as a routine maint
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

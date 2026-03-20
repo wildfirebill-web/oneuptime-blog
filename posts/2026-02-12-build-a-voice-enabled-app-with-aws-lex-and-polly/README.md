@@ -35,6 +35,7 @@ Let us build a restaurant reservation bot as an example. It needs to understand 
 
 ```yaml
 # CloudFormation for Lex V2 bot
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   RestaurantBot:

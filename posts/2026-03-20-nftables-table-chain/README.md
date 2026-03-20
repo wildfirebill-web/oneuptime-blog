@@ -14,6 +14,7 @@ Tables hold chains and are bound to a specific address family:
 
 ```bash
 # Create an IPv4-only table
+
 sudo nft add table ip myfilter
 
 # Create an IPv6-only table
@@ -55,7 +56,7 @@ sudo nft add chain inet myfilter output \
 
 ## Understanding Chain Parameters
 
-```
+```text
 type filter:     Packet filtering (accept/drop)
 type nat:        Network address translation
 type route:      Policy routing
@@ -105,7 +106,7 @@ sudo nft add chain inet nat postrouting \
 
 ## Create a Regular (Non-Hook) Chain
 
-Regular chains are like custom chains in iptables — called with `jump` or `goto`:
+Regular chains are like custom chains in iptables - called with `jump` or `goto`:
 
 ```bash
 # Create regular chain (no hook or policy)
@@ -132,4 +133,4 @@ sudo nft list table inet firewall
 sudo nft list ruleset
 ```
 
-Tables and chains are nftables' building blocks — once you understand them, writing, organizing, and managing firewall rules becomes straightforward.
+Tables and chains are nftables' building blocks - once you understand them, writing, organizing, and managing firewall rules becomes straightforward.

@@ -323,6 +323,7 @@ Test your policies using the ArgoCD CLI:
 
 ```bash
 # Check if a user can perform an action
+
 argocd admin settings rbac can alice get applications 'default/my-app' \
   --policy-file policy.csv
 

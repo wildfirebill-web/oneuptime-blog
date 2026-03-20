@@ -71,6 +71,7 @@ The `grow` flag determines whether a volume should expand to fill available spac
 
 ```yaml
 # Without grow - volume is exactly minSize
+
 machine:
   volumes:
     - name: EPHEMERAL

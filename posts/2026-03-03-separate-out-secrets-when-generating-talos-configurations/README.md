@@ -29,6 +29,7 @@ The first step is to generate secrets independently from the machine configurati
 
 ```bash
 # Generate a secrets bundle
+
 talosctl gen secrets -o secrets.yaml
 ```
 

@@ -39,6 +39,7 @@ Fill in the basic information:
 ```plaintext
 Template Name: production-standard
 Description: Standard production cluster template with Calico networking and CIS hardening
+
 ```
 
 ## Step 3: Configure the Kubernetes Version
@@ -50,6 +51,7 @@ Select the Kubernetes version for your template:
 
 ```yaml
 # Example: Specifying Kubernetes version in RKE config
+
 kubernetes_version: v1.28.x-rancher1-1
 ```
 

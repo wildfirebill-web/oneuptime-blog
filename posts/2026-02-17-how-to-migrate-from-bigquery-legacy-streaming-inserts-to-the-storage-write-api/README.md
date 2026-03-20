@@ -32,6 +32,7 @@ Legacy streaming inserts use REST/JSON. You send a batch of rows as a JSON POST 
 
 ```python
 # Legacy streaming insert - what you are migrating FROM
+
 from google.cloud import bigquery
 
 client = bigquery.Client()

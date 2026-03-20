@@ -18,6 +18,7 @@ Cloud Batch automatically sets several environment variables in every task. Thes
 
 ```bash
 # Built-in variables available in every Batch task
+
 # BATCH_TASK_INDEX   - Zero-based index of this task (0, 1, 2, ...)
 # BATCH_TASK_COUNT   - Total number of tasks in the task group
 # CLOUD_RUN_TASK_INDEX - Same as BATCH_TASK_INDEX (for compatibility)

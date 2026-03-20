@@ -54,6 +54,7 @@ On resource-constrained devices, you need an agent that consumes minimal CPU and
 
 ```yaml
 # edge-agent-builder.yaml
+
 # Build configuration for a minimal edge collector
 
 dist:

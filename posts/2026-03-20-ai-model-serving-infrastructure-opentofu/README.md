@@ -192,4 +192,4 @@ tofu apply tfplan
 
 ## Summary
 
-Production AI model serving requires GPU node pools, health-checked deployments, HPA for scaling, and monitoring. OpenTofu manages the complete Kubernetes-based serving stack — from GPU node groups to HPA configurations — giving you reproducible, production-ready model serving infrastructure.
+Production AI model serving requires GPU node pools, health-checked deployments, HPA for scaling, and monitoring. OpenTofu manages the complete Kubernetes-based serving stack - from GPU node groups to HPA configurations - giving you reproducible, production-ready model serving infrastructure.

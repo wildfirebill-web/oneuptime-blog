@@ -14,6 +14,7 @@ Private Google Access lets VMs without external IP addresses connect to Google A
 
 ```hcl
 # main.tf - Subnet with Private Google Access enabled
+
 resource "google_compute_subnetwork" "private_subnet" {
   name          = "private-subnet"
   network       = google_compute_network.vpc.self_link

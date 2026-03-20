@@ -30,6 +30,7 @@ import ipaddress
 parent = ipaddress.IPv4Network("10.0.0.0/8")
 
 # Tier 1: /16 blocks per region (256 regions)
+
 regions = list(parent.subnets(new_prefix=16))
 print(f"Total /16 regions: {len(regions)}")
 
@@ -80,7 +81,7 @@ network 10.0.0.0 mask 255.0.0.0
 
 ## Key Takeaways
 
-- A /8 has 24 bits of subnetting flexibility — enough for massive hierarchical designs.
+- A /8 has 24 bits of subnetting flexibility - enough for massive hierarchical designs.
 - Use the three-tier model: /8 (global) → /16 (region/site) → /24 (VLAN).
 - The entire /8 summarizes to a single BGP advertisement, keeping the routing table manageable.
 - Document all allocations in an IPAM tool to avoid overlap as the network grows.

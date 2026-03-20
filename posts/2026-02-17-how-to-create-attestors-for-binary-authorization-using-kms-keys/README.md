@@ -39,6 +39,7 @@ Each attestor uses its own KMS key, and the Binary Authorization policy can requ
 
 ```bash
 # Enable all required APIs
+
 gcloud services enable \
   binaryauthorization.googleapis.com \
   containeranalysis.googleapis.com \

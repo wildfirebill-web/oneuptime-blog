@@ -59,6 +59,7 @@ Note: `privileged: true` is required for cAdvisor to access host kernel metrics.
 
 ```bash
 # Check cAdvisor web UI
+
 curl http://localhost:8080/containers/
 
 # Check metrics endpoint
@@ -126,4 +127,4 @@ command:
 
 ## Conclusion
 
-cAdvisor provides the deepest visibility into container resource usage of any tool in the Docker ecosystem. Deployed as a Portainer stack and scraped by Prometheus, it feeds your Grafana dashboards with per-container metrics across CPU, memory, network, and disk — giving you the observability needed to right-size containers and detect performance issues.
+cAdvisor provides the deepest visibility into container resource usage of any tool in the Docker ecosystem. Deployed as a Portainer stack and scraped by Prometheus, it feeds your Grafana dashboards with per-container metrics across CPU, memory, network, and disk - giving you the observability needed to right-size containers and detect performance issues.

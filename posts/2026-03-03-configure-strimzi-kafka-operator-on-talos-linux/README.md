@@ -27,6 +27,7 @@ Managing Kafka manually on Kubernetes is tedious. You need to handle broker conf
 
 ```bash
 # Create a namespace for Kafka
+
 kubectl create namespace kafka
 
 # Install Strimzi Operator (watches all namespaces)

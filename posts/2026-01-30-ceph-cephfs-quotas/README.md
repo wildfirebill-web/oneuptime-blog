@@ -39,6 +39,7 @@ Verify your CephFS mount:
 
 ```bash
 # Check if CephFS is mounted
+
 df -h | grep ceph
 
 # Example output:

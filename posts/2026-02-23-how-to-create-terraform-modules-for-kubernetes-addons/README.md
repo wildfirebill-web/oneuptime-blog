@@ -18,6 +18,7 @@ Before creating addon modules, you need to configure the Kubernetes and Helm pro
 # Root module - providers.tf
 
 # Get EKS cluster details for provider configuration
+
 data "aws_eks_cluster" "this" {
   name = module.eks.cluster_name
 }

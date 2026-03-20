@@ -40,6 +40,7 @@ Install Wrangler globally or as a project dependency:
 
 ```bash
 # Global installation
+
 npm install -g wrangler
 
 # Or as a dev dependency (recommended for CI/CD)
@@ -474,7 +475,7 @@ deploy_production:
 
 ---
 
-## Resource Management
+Resource Management
 
 ### KV Namespace Operations
 

@@ -94,6 +94,7 @@ sequenceDiagram
 
 ```python
 # events.py
+
 # Define the domain events used in the choreography saga.
 # Each service publishes and subscribes to specific events.
 

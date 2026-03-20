@@ -8,12 +8,13 @@ Description: Deploy MinIO as an S3-compatible object store via Portainer to serv
 
 ---
 
-MinIO is a high-performance, S3-compatible object store that you can self-host. For ML workloads, it stores training datasets, model checkpoints, experiment artifacts, and serialized models — all accessible via the standard AWS S3 API that every ML framework understands.
+MinIO is a high-performance, S3-compatible object store that you can self-host. For ML workloads, it stores training datasets, model checkpoints, experiment artifacts, and serialized models - all accessible via the standard AWS S3 API that every ML framework understands.
 
 ## Step 1: Deploy MinIO via Portainer Stack
 
 ```yaml
 # minio-ml-storage-stack.yml
+
 version: "3.8"
 
 services:
@@ -69,7 +70,7 @@ networks:
 Configure your ML scripts to use MinIO as an S3 backend:
 
 ```python
-# ml_storage.py — unified storage client for ML workflows
+# ml_storage.py - unified storage client for ML workflows
 import boto3
 from botocore.client import Config
 
@@ -121,7 +122,7 @@ import mlflow
 mlflow.set_tracking_uri("http://mlflow:5000")
 
 with mlflow.start_run():
-    # Log model — artifacts go to MinIO automatically
+    # Log model - artifacts go to MinIO automatically
     mlflow.sklearn.log_model(model, "model", registered_model_name="my-model")
 ```
 

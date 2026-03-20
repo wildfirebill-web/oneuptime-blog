@@ -8,12 +8,13 @@ Description: Learn how to manage AWS Route53 hosted zones and DNS records with O
 
 ## Introduction
 
-Amazon Route53 is AWS's DNS service. OpenTofu manages hosted zones, DNS record sets, health checks, and traffic policies as code—ensuring your DNS configuration is reproducible and version-controlled.
+Amazon Route53 is AWS's DNS service. OpenTofu manages hosted zones, DNS record sets, health checks, and traffic policies as code-ensuring your DNS configuration is reproducible and version-controlled.
 
 ## Creating a Hosted Zone
 
 ```hcl
 # Public hosted zone for external DNS
+
 resource "aws_route53_zone" "main" {
   name    = var.domain_name
   comment = "Managed by OpenTofu"
@@ -27,7 +28,7 @@ resource "aws_route53_zone" "main" {
 # Private hosted zone for internal DNS resolution
 resource "aws_route53_zone" "internal" {
   name    = "internal.${var.domain_name}"
-  comment = "Internal DNS — managed by OpenTofu"
+  comment = "Internal DNS - managed by OpenTofu"
 
   vpc {
     vpc_id = aws_vpc.main.id

@@ -58,6 +58,7 @@ Add the remote write configuration to your Prometheus setup:
 
 ```yaml
 # prometheus.yml
+
 remote_write:
   - url: "https://oneuptime.com/api/telemetry/metrics/v1/remote-write"
     headers:

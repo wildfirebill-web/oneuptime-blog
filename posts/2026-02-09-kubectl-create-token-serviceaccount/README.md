@@ -110,6 +110,7 @@ Binding a token to a specific pod:
 
 ```bash
 # Get pod UID
+
 POD_UID=$(kubectl get pod my-pod -o jsonpath='{.metadata.uid}')
 
 # Create token bound to that pod

@@ -31,6 +31,7 @@ Install `apparmor-utils`:
 
 ```bash
 # Install the tools package
+
 sudo apt update
 sudo apt install apparmor-utils
 

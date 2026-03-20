@@ -51,6 +51,7 @@ In your OpenUnison configuration, add ArgoCD as a trusted client. This is typica
 
 ```yaml
 # openunison-values.yaml
+
 openunison:
   non_secret_data:
     ARGOCD_URL: https://argocd.example.com

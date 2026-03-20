@@ -75,6 +75,7 @@ Loki stores logs. We configure it with the v13 schema, TSDB index, and local fil
 
 ```yaml
 # loki-config.yaml
+
 # Configures Loki for log storage with OTLP support
 
 auth_enabled: false

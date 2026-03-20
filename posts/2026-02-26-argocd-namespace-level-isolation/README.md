@@ -167,6 +167,7 @@ For maximum isolation, you can run ArgoCD in namespace-scoped mode where it only
 
 ```yaml
 # In the ArgoCD deployment
+
 env:
   - name: ARGOCD_APPLICATION_NAMESPACES
     value: "team-alpha-dev,team-alpha-staging,team-alpha-prod"

@@ -18,6 +18,7 @@ The simplest case: create a `requirements.txt` file in your function's source di
 
 ```text
 # requirements.txt - Basic dependencies
+
 functions-framework==3.*
 google-cloud-storage==2.14.0
 google-cloud-bigquery==3.14.0

@@ -18,6 +18,7 @@ This guide assumes you have a running Kubernetes cluster. OpenTofu will use the 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     helm = {
@@ -75,7 +76,7 @@ resource "helm_release" "kube_prometheus_stack" {
   wait    = true
   timeout = 600
 
-  # Custom values — override defaults for production
+  # Custom values - override defaults for production
   values = [
     yamlencode({
       prometheus = {
@@ -128,7 +129,7 @@ resource "helm_release" "kube_prometheus_stack" {
         }
       }
 
-      # Grafana is included in the stack — configure admin password
+      # Grafana is included in the stack - configure admin password
       grafana = {
         adminPassword = var.grafana_admin_password
         persistence = {
@@ -194,8 +195,8 @@ resource "kubernetes_secret" "alertmanager_config" {
 
 ## Best Practices
 
-- Use the `kube-prometheus-stack` chart rather than standalone Prometheus — it includes Alertmanager, node exporter, kube-state-metrics, and pre-built dashboards.
+- Use the `kube-prometheus-stack` chart rather than standalone Prometheus - it includes Alertmanager, node exporter, kube-state-metrics, and pre-built dashboards.
 - Pin the chart version explicitly to avoid unexpected upgrades.
-- Enable persistent storage for Prometheus and Alertmanager — without it, all data is lost on pod restart.
-- Configure `retention` based on your storage capacity and query needs — 30 days is a common starting point.
+- Enable persistent storage for Prometheus and Alertmanager - without it, all data is lost on pod restart.
+- Configure `retention` based on your storage capacity and query needs - 30 days is a common starting point.
 - Use `resources` limits to prevent Prometheus from consuming all node memory during high cardinality scenarios.

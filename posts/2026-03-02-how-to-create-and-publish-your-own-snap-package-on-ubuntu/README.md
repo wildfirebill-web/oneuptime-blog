@@ -16,6 +16,7 @@ You need snapd and snapcraft installed. On Ubuntu, snapd is installed by default
 
 ```bash
 # Install snapcraft
+
 sudo snap install snapcraft --classic
 
 # Verify installation

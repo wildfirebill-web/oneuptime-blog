@@ -20,6 +20,7 @@ By default, Portainer exposes both HTTP (port 9000) and HTTPS (port 9443). For p
 
 ```bash
 # Option A: Self-signed certificate (development/internal)
+
 mkdir -p /opt/portainer/certs
 openssl req -x509 -nodes -days 365 -newkey rsa:4096 \
   -keyout /opt/portainer/certs/portainer.key \
@@ -27,7 +28,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:4096 \
   -subj "/CN=portainer.yourdomain.com"
 
 # Option B: Let's Encrypt certificate
-# (obtained via certbot or ACME — run certbot first)
+# (obtained via certbot or ACME - run certbot first)
 # Certs are at:
 # /etc/letsencrypt/live/portainer.yourdomain.com/fullchain.pem
 # /etc/letsencrypt/live/portainer.yourdomain.com/privkey.pem
@@ -110,7 +111,7 @@ services:
     ports:
       # Only expose HTTPS port
       - "443:9443"
-      # Do NOT expose 9000 — HTTP is disabled
+      # Do NOT expose 9000 - HTTP is disabled
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
@@ -212,4 +213,4 @@ docker run -d \
 
 ## Conclusion
 
-Using `--http-disabled` with `--ssl`, `--sslcert`, and `--sslkey` ensures all Portainer UI access uses encrypted HTTPS connections. For production deployments, this is a mandatory security configuration. If managing certificates is complex, use a reverse proxy to handle TLS termination and run Portainer on HTTP internally — this is equally secure while simplifying certificate management and renewal.
+Using `--http-disabled` with `--ssl`, `--sslcert`, and `--sslkey` ensures all Portainer UI access uses encrypted HTTPS connections. For production deployments, this is a mandatory security configuration. If managing certificates is complex, use a reverse proxy to handle TLS termination and run Portainer on HTTP internally - this is equally secure while simplifying certificate management and renewal.

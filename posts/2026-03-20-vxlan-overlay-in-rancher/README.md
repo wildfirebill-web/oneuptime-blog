@@ -23,6 +23,7 @@ Flannel's VXLAN backend is the default for most RKE2 clusters:
 
 ```yaml
 # RKE2 cluster config
+
 cni: flannel
 flannel-backend: vxlan
 

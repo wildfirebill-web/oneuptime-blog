@@ -8,12 +8,13 @@ Description: Learn how to configure OpenTofu state encryption using AWS KMS to p
 
 ## Introduction
 
-Using AWS KMS as the key provider for OpenTofu state encryption provides envelope encryption, automatic key rotation, and IAM-based access control. The KMS key encrypts a data key, which in turn encrypts the state — providing defense in depth beyond S3 server-side encryption alone.
+Using AWS KMS as the key provider for OpenTofu state encryption provides envelope encryption, automatic key rotation, and IAM-based access control. The KMS key encrypts a data key, which in turn encrypts the state - providing defense in depth beyond S3 server-side encryption alone.
 
 ## Configuration
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.7"
 
@@ -113,7 +114,7 @@ key_provider "aws_kms" "main" {
 The AWS KMS key provider uses the standard AWS credential chain:
 
 ```bash
-# Instance profile (when running on EC2/EKS — recommended)
+# Instance profile (when running on EC2/EKS - recommended)
 # No configuration needed
 
 # Explicit credentials
@@ -127,7 +128,7 @@ export AWS_PROFILE="terraform-deployer"
 ## Verifying Encryption
 
 ```bash
-# Download the state file — should be binary, not readable JSON
+# Download the state file - should be binary, not readable JSON
 aws s3 cp s3://my-tofu-state/production/terraform.tfstate /tmp/state
 file /tmp/state
 # /tmp/state: data  (encrypted binary)

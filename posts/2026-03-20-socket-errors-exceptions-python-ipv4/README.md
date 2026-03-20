@@ -73,12 +73,12 @@ def handle_client(conn: socket.socket, addr: tuple) -> None:
 
             except BrokenPipeError:
                 # We tried to write after the client closed the connection
-                print(f"[{addr}] Broken pipe — client gone")
+                print(f"[{addr}] Broken pipe - client gone")
                 break
 
             except socket.timeout:
                 # Client was inactive too long
-                print(f"[{addr}] Read timeout — closing")
+                print(f"[{addr}] Read timeout - closing")
                 break
 
             except OSError as e:
@@ -116,9 +116,9 @@ try:
     sock.bind(("0.0.0.0", 9000))   # Will fail if port is busy
 except OSError as e:
     if e.errno == errno.EADDRINUSE:
-        print("Address already in use — try a different port or set SO_REUSEADDR")
+        print("Address already in use - try a different port or set SO_REUSEADDR")
     elif e.errno == errno.EACCES:
-        print("Permission denied — ports below 1024 require root")
+        print("Permission denied - ports below 1024 require root")
     else:
         raise
 ```

@@ -34,6 +34,7 @@ Install Molecule with Docker support:
 
 ```bash
 # Install molecule with the Docker driver
+
 pip install molecule molecule-docker ansible-lint
 ```
 

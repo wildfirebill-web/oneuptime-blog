@@ -16,6 +16,7 @@ Set it in your configuration:
 
 ```ini
 # ansible.cfg - Enable JSON stdout callback
+
 [defaults]
 stdout_callback = json
 ```

@@ -18,6 +18,7 @@ The `get_url` module is the standard way to download files in Ansible:
 
 ```yaml
 # download a file using get_url module
+
 ---
 - name: Basic download examples
   hosts: all

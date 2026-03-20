@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Environment Management, Infrastructure as Code, IaC, Overlays, Multi-Environment
+Tags: OpenTofu, Environment Management, Infrastructure as Code, IaC, Overlay, Multi-Environment
 
 Description: Learn how to use directory-based overlays for environment-specific configurations in OpenTofu projects.
 
@@ -20,6 +20,7 @@ Learn how to use directory-based overlays for environment-specific configuration
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

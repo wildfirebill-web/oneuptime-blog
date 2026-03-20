@@ -29,6 +29,7 @@ Home Assistant stores all its configuration, automations, and database files in 
 
 ```bash
 # Create a directory for Home Assistant configuration
+
 mkdir -p ~/homeassistant/config
 
 # Set appropriate ownership (use your UID and GID)

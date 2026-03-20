@@ -58,6 +58,7 @@ flowchart TB
 
 ```bash
 # Add Gatekeeper Helm repository
+
 helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
 helm repo update
 

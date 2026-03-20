@@ -27,6 +27,7 @@ Create a values file:
 
 ```yaml
 # splunk-otel-values.yaml
+
 clusterName: my-k8s-cluster
 
 splunkObservability:

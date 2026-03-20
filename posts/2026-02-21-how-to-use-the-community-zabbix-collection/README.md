@@ -16,6 +16,7 @@ The collection needs the `zabbix-api` Python library to communicate with the Zab
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.zabbix
 
 # Install the Python library for Zabbix API access

@@ -38,6 +38,7 @@ helm repo add istio https://istio-release.storage.googleapis.com/charts
 helm repo update
 
 # Install Istio base (CRDs)
+
 helm install istio-base istio/base \
   --namespace istio-system \
   --create-namespace

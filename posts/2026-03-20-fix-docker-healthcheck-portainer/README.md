@@ -14,6 +14,7 @@ Portainer displays container health status (Healthy/Unhealthy/Starting) based on
 
 ```bash
 # Check if the container image has a healthcheck defined
+
 docker inspect <container-name> --format '{{json .Config.Healthcheck}}'
 
 # If output is "null", the image has no HEALTHCHECK defined

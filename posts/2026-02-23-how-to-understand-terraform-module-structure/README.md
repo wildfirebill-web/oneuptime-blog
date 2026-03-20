@@ -60,6 +60,7 @@ This file contains the primary resources that the module creates. For a simple m
 # main.tf - ECS Service module example
 
 # The primary resource this module manages
+
 resource "aws_ecs_service" "this" {
   name            = var.service_name
   cluster         = var.cluster_id

@@ -27,6 +27,7 @@ The first step in zero-trust networking is to deny all traffic by default, then 
 
 ```yaml
 # authz-policies-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

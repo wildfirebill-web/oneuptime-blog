@@ -14,6 +14,7 @@ PgBouncer can encrypt connections on both sides: between IPv4 clients and PgBoun
 
 ```bash
 # Generate a self-signed certificate for PgBouncer (for testing)
+
 openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout /etc/pgbouncer/pgbouncer.key \
@@ -95,7 +96,7 @@ ssl_cert_file = 'server.crt'
 ssl_key_file  = 'server.key'
 ```
 
-```
+```text
 # /etc/postgresql/15/main/pg_hba.conf
 # Require SSL from PgBouncer's IP
 hostssl   production   pgbouncer   192.168.1.5/32   scram-sha-256

@@ -232,6 +232,7 @@ Using SDL (Schema Definition Language) avoids JavaScript circular import issues 
 
 ```graphql
 # schema.graphql
+
 # Types can freely reference each other in SDL
 
 type User {

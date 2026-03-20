@@ -101,6 +101,7 @@ To retrieve your deployment keys, use the App Center CLI:
 
 ```bash
 # Install the App Center CLI
+
 npm install -g appcenter-cli
 
 # Login to App Center

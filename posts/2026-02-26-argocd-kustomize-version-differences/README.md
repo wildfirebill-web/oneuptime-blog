@@ -28,6 +28,7 @@ Your local Kustomize might be a completely different version. Check both:
 
 ```bash
 # Check your local Kustomize version
+
 kustomize version
 
 # Check what ArgoCD is using

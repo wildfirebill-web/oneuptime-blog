@@ -43,6 +43,7 @@ infrastructure/
 
 ```yaml
 # infrastructure/monitoring/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

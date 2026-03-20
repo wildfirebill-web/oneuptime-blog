@@ -52,6 +52,7 @@ flowchart TD
 
 ```python
 # This pipeline processes records sequentially - each record depends on the previous
+
 # Horizontal scaling won't help here; a faster single core will
 
 class SequentialProcessor:

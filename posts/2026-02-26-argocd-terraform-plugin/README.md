@@ -35,6 +35,7 @@ The simplest approach uses Terraform's `local_file` resource to generate Kuberne
 
 ```yaml
 # plugin.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ConfigManagementPlugin
 metadata:

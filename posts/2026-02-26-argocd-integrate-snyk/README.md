@@ -202,6 +202,7 @@ Create the required secret:
 
 ```bash
 # Create Snyk monitor secret
+
 kubectl create secret generic snyk-monitor -n snyk-monitor \
   --from-literal=dockercfg.json='{}' \
   --from-literal=integrationId=$SNYK_INTEGRATION_ID

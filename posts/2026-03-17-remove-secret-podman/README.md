@@ -18,6 +18,7 @@ Secrets should be removed when they are no longer needed, when credentials have 
 
 ```bash
 # Remove a secret by name
+
 podman secret rm db_password
 
 # Remove a secret by ID

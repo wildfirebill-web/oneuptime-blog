@@ -452,6 +452,7 @@ async function cleanupFlagConfiguration(
 
 ```yaml
 # Before: config/production/flags.yaml
+
 feature_flags:
   new-checkout-flow:
     enabled: true

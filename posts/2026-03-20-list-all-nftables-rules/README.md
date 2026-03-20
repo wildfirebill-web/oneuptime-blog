@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: nftables, Linux, Firewall, Security, Diagnostics
 
-Description: List nftables rules at different scopes — entire ruleset, specific tables, specific chains, and individual rules with handles for identification and management.
+Description: List nftables rules at different scopes - entire ruleset, specific tables, specific chains, and individual rules with handles for identification and management.
 
 Viewing nftables rules is the starting point for auditing, troubleshooting, and managing your firewall. nftables provides several listing granularities from a complete dump to a single table or chain.
 
@@ -12,6 +12,7 @@ Viewing nftables rules is the starting point for auditing, troubleshooting, and 
 
 ```bash
 # Show all tables, chains, and rules
+
 sudo nft list ruleset
 
 # Example output:
@@ -57,7 +58,7 @@ sudo nft list chain inet nat prerouting
 
 ## List with Handles (Required for Deletion)
 
-Handles are the line numbers of nftables — you need them to delete specific rules:
+Handles are the line numbers of nftables - you need them to delete specific rules:
 
 ```bash
 # List rules with handles
@@ -140,4 +141,4 @@ sudo nft list ruleset | grep "accept"
 sudo nft list ruleset | grep -c "accept\|drop\|reject"
 ```
 
-Reading nftables output is significantly cleaner than iptables — the hierarchical table→chain→rule structure makes it easy to understand the overall policy at a glance.
+Reading nftables output is significantly cleaner than iptables - the hierarchical table→chain→rule structure makes it easy to understand the overall policy at a glance.

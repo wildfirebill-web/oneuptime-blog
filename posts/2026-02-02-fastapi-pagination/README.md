@@ -60,6 +60,7 @@ First, let's set up a FastAPI project with SQLAlchemy. This creates the foundati
 
 ```python
 # models.py
+
 from sqlalchemy import Column, Integer, String, DateTime, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker

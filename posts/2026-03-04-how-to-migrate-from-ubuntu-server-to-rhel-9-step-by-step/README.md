@@ -16,6 +16,7 @@ Document your current Ubuntu environment:
 
 ```bash
 # On Ubuntu
+
 dpkg --get-selections > /tmp/ubuntu-packages.txt
 systemctl list-unit-files --state=enabled > /tmp/ubuntu-services.txt
 cat /etc/netplan/*.yaml > /tmp/ubuntu-network.txt

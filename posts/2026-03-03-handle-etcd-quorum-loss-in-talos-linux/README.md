@@ -22,6 +22,7 @@ Most Talos Linux clusters run 3 control plane nodes, which means losing 2 out of
 
 ```bash
 # Check current etcd member status
+
 talosctl etcd members --nodes <any-reachable-cp-node>
 
 # Check etcd health - this will fail or show errors during quorum loss

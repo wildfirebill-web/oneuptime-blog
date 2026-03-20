@@ -16,6 +16,7 @@ This is the inverse of the `human_readable` filter. Together, they let you work 
 
 ```yaml
 # Convert human-readable sizes to byte values
+
 - name: Convert to bytes
   ansible.builtin.debug:
     msg: |
@@ -150,7 +151,7 @@ Docker accepts memory limits in bytes when configured through Ansible modules:
       swap_limit: "4GB"
 ```
 
-## Resource Validation
+Resource Validation
 
 Use human_to_bytes to validate that resources meet minimum requirements:
 

@@ -18,6 +18,7 @@ DynamoDB Point-in-Time Recovery (PITR) provides continuous backups of your Dynam
 
 ```hcl
 # main.tf
+
 resource "aws_dynamodb_table" "users" {
   name           = "users"
   billing_mode   = "PAY_PER_REQUEST"
@@ -80,7 +81,7 @@ aws dynamodb describe-continuous-backups --table-name users \
 
 ## Restoring from PITR
 
-PITR restores create a new table — they do not overwrite the source.
+PITR restores create a new table - they do not overwrite the source.
 
 ### Restore via AWS CLI
 
@@ -212,10 +213,10 @@ PITR pricing is based on table size:
 
 ## Best Practices
 
-1. **Enable PITR on all production tables** — the cost is minimal compared to data loss risk
-2. **Test restores regularly** — run quarterly restore drills to validate your recovery process
-3. **Monitor earliest restorable time** — if it's older than 35 days, your window has expired
-4. **Use separate restored table name** — never restore over an existing production table
+1. **Enable PITR on all production tables** - the cost is minimal compared to data loss risk
+2. **Test restores regularly** - run quarterly restore drills to validate your recovery process
+3. **Monitor earliest restorable time** - if it's older than 35 days, your window has expired
+4. **Use separate restored table name** - never restore over an existing production table
 5. **Combine with on-demand backups** for long-term archival beyond 35 days
 
 ---

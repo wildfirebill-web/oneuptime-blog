@@ -41,6 +41,7 @@ When a deprecated variable is used, OpenTofu shows a warning:
 tofu plan -var="old_instance_type=t3.small"
 
 # Warning: Use of deprecated input variable
+
 #
 #   on variables.tf line 1, in variable "old_instance_type":
 #    1: variable "old_instance_type" {

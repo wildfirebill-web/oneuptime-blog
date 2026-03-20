@@ -153,6 +153,7 @@ Alternatively, for more control over the process, you can use Azure DevOps or Gi
 
 ```yaml
 # GitHub Actions workflow for deploying ASP.NET app to Azure App Service
+
 # This workflow builds the project and deploys it on every push to main
 name: Deploy to Azure App Service
 

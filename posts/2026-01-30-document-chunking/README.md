@@ -66,6 +66,7 @@ Fixed-size chunking is the simplest approach. You split text into chunks of a pr
 from langchain.text_splitter import CharacterTextSplitter
 
 # Create a fixed-size text splitter
+
 # chunk_size: Maximum number of characters per chunk
 # chunk_overlap: Number of characters to overlap between chunks
 # separator: Character to split on (empty string splits anywhere)

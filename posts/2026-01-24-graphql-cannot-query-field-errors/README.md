@@ -42,6 +42,7 @@ The most common cause is simply a typo in the field name.
 
 ```graphql
 # Schema definition
+
 type User {
   id: ID!
   firstName: String!  # Note: camelCase

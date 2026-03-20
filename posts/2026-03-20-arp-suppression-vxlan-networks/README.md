@@ -16,6 +16,7 @@ Linux supports ARP proxy on VXLAN interfaces, which intercepts ARP requests and 
 
 ```bash
 # Create VXLAN with ARP proxy enabled
+
 ip link add vxlan0 type vxlan \
     id 100 \
     dstport 4789 \
@@ -67,7 +68,7 @@ tcpdump -i br-vxlan arp -n
 
 Production VXLAN deployments use BGP EVPN to distribute MAC-IP bindings automatically:
 
-```
+```text
 With BGP EVPN:
 1. VM comes up with IP 10.200.0.10 and MAC aa:bb:cc:dd:ee:11
 2. Local VTEP advertises MAC-IP binding via BGP EVPN (type-2 route)
@@ -88,7 +89,7 @@ ovs-vsctl set bridge br-vxlan other_config:mac-table-size=50000
 
 ## Impact on Network Traffic
 
-```
+```text
 Without ARP suppression:
 - 100 VMs × ARP every 30s = high BUM flood rate
 - Each ARP floods to all N VTEPs → O(N) packets per ARP

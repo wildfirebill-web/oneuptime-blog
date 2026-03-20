@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Annotations, NGINX
+Tags: Kubernetes, Ingresses, Annotations, Nginx
 
 Description: Learn to implement Ingress annotations for SSL, rate limiting, rewrites, and authentication with nginx and other ingress controllers.
 
@@ -273,6 +273,7 @@ Create a basic auth secret and reference it:
 
 ```bash
 # Create htpasswd file
+
 htpasswd -c auth admin
 
 # Create Kubernetes secret

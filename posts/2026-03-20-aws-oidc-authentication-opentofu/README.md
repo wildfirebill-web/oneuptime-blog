@@ -8,12 +8,13 @@ Description: Learn how to configure AWS OIDC authentication for OpenTofu in GitH
 
 ## Introduction
 
-OpenID Connect (OIDC) allows CI/CD platforms like GitHub Actions and GitLab CI to authenticate to AWS without storing long-lived access keys as secrets. AWS issues short-lived credentials for each pipeline run, tied to the specific repository and workflow—dramatically reducing the blast radius of any credential compromise.
+OpenID Connect (OIDC) allows CI/CD platforms like GitHub Actions and GitLab CI to authenticate to AWS without storing long-lived access keys as secrets. AWS issues short-lived credentials for each pipeline run, tied to the specific repository and workflow-dramatically reducing the blast radius of any credential compromise.
 
 ## Step 1: Create the OIDC Identity Provider in AWS
 
 ```hcl
 # Create the GitHub Actions OIDC provider in AWS
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 

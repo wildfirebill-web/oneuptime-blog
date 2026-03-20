@@ -1,4 +1,4 @@
-# How to Use Portainer Environment Variables for Secrets
+# How to Use Portainer Environment Variables for Secrets - Environment
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,9 +14,9 @@ While Docker Swarm secrets and external secret managers are ideal for production
 
 Portainer provides three ways to inject environment variables into stacks:
 
-1. **Stack-level env vars** — Defined per stack in the UI
-2. **Stack environment file** — Uploaded `.env` file per stack
-3. **Portainer environment variables** — Host-level variables available to all stacks
+1. **Stack-level env vars** - Defined per stack in the UI
+2. **Stack environment file** - Uploaded `.env` file per stack
+3. **Portainer environment variables** - Host-level variables available to all stacks
 
 ## Method 1: Stack-Level Environment Variables
 
@@ -24,6 +24,7 @@ In Portainer UI: **Stacks > Your Stack > Environment Variables**
 
 ```yaml
 # compose.yml - reference env vars without defining values
+
 version: '3.8'
 services:
   app:

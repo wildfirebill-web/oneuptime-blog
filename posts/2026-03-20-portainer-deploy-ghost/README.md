@@ -1,4 +1,4 @@
-# How to Deploy Ghost Blog via Portainer
+# How to Deploy Ghost Blog via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -110,6 +110,7 @@ services:
 
 ```bash
 # Copy a custom theme to Ghost
+
 docker cp ./my-theme ghost:/var/lib/ghost/content/themes/my-theme
 
 # Restart to load theme

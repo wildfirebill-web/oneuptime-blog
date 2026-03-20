@@ -39,6 +39,7 @@ PDBs are your primary defense against node maintenance disrupting ArgoCD. They t
 
 ```yaml
 # PDBs for all ArgoCD components
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

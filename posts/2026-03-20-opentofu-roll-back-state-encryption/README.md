@@ -8,7 +8,7 @@ Description: Learn how to safely remove state encryption in OpenTofu and roll ba
 
 ## Introduction
 
-While enabling state encryption is generally a one-way improvement, there may be scenarios where you need to roll back — during emergency recovery, when switching encryption strategies, or when migrating to a new configuration. OpenTofu supports decryption rollback using the fallback mechanism.
+While enabling state encryption is generally a one-way improvement, there may be scenarios where you need to roll back - during emergency recovery, when switching encryption strategies, or when migrating to a new configuration. OpenTofu supports decryption rollback using the fallback mechanism.
 
 ## When to Roll Back Encryption
 
@@ -56,6 +56,7 @@ Add the configuration above, setting `method = null` and `enforced = false`.
 
 ```bash
 # Rewrite state without encryption
+
 tofu apply -refresh-only
 # Confirm: yes
 ```
@@ -77,7 +78,7 @@ jq . /tmp/state-check  # Should succeed for unencrypted state
 ### Step 4: Remove Encryption Configuration
 
 ```hcl
-# versions.tf — remove the encryption block entirely
+# versions.tf - remove the encryption block entirely
 terraform {
   required_version = ">= 1.7"
 

@@ -34,6 +34,7 @@ Flagger can be installed as a Flux HelmRelease. This keeps Flagger itself manage
 
 ```yaml
 # HelmRepository source for Flagger's Helm chart
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -31,6 +31,7 @@ Configure blue-green deployments with services and deployments:
 
 ```yaml
 # blue-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -18,6 +18,7 @@ For example, running `deploy.yml` against 10 hosts where 2 fail produces:
 
 ```bash
 # After running: ansible-playbook deploy.yml
+
 # Ansible outputs something like:
 # PLAY RECAP *********************************************************************
 # web1.example.com : ok=5    changed=3    unreachable=0    failed=0

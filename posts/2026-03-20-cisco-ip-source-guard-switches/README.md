@@ -41,7 +41,7 @@ interface GigabitEthernet0/2
 ## Static Binding for Servers with Static IPs
 
 ```cisco
-! Servers don't use DHCP — add manual binding
+! Servers don't use DHCP - add manual binding
 ip source binding 00:1a:2b:3c:4d:5e vlan 10 10.1.10.50 interface GigabitEthernet0/10
 
 ! Add multiple static entries
@@ -79,7 +79,7 @@ interface GigabitEthernet0/3
 ## Troubleshooting
 
 ```cisco
-! Client cannot get IP — check binding table
+! Client cannot get IP - check binding table
 show ip dhcp snooping binding
 
 ! Is DHCP snooping trust set on uplink?
@@ -95,12 +95,12 @@ interface GigabitEthernet0/1
 
 ## Defense in Depth Stack
 
-```
+```text
 Layer 2 Security Stack:
-  1. Port Security      — limits MAC addresses per port
-  2. DHCP Snooping      — validates DHCP, builds binding table
-  3. Dynamic ARP Inspection — validates ARP against binding table
-  4. IP Source Guard    — validates IP packets against binding table
+  1. Port Security      - limits MAC addresses per port
+  2. DHCP Snooping      - validates DHCP, builds binding table
+  3. Dynamic ARP Inspection - validates ARP against binding table
+  4. IP Source Guard    - validates IP packets against binding table
 ```
 
 ## Conclusion

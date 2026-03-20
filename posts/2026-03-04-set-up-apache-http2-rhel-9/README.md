@@ -41,6 +41,7 @@ HTTP/1.1 processes requests sequentially on each connection. HTTP/2 multiplexes 
 
 ```bash
 # Install mod_http2 (usually included with httpd)
+
 sudo dnf install -y mod_http2
 
 # Verify the module is available

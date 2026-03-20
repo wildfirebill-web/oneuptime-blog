@@ -23,6 +23,7 @@ This guide covers setting up GitHub App authentication end-to-end, from creating
 
 ```bash
 # Verify Flux installation
+
 flux check
 ```
 

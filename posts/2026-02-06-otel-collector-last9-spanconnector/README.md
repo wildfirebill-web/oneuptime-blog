@@ -101,6 +101,7 @@ The key insight is that `spanmetrics` appears in two places:
 
 ```yaml
 # In the traces pipeline, spanmetrics is an exporter
+
 traces:
   exporters: [otlp/last9_traces, spanmetrics]
 

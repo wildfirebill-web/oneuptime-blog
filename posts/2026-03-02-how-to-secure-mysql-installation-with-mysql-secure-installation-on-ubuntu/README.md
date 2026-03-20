@@ -111,6 +111,7 @@ Open `/etc/mysql/mysql.conf.d/mysqld.cnf` and add or modify these security setti
 ```ini
 [mysqld]
 # Bind to localhost only - prevents network access entirely
+
 # Remove or change to your server IP if remote access is needed
 bind-address = 127.0.0.1
 

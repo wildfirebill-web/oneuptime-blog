@@ -28,6 +28,7 @@ This guide covers setting up Flagger with Chaos Mesh, configuring a canary resou
 
 ```yaml
 # clusters/my-cluster/flagger/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

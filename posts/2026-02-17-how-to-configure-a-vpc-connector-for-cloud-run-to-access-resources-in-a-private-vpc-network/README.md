@@ -30,6 +30,7 @@ The VPC connector needs a dedicated `/28` subnet (16 IP addresses). Do not use a
 
 ```bash
 # Create a dedicated subnet for the VPC connector
+
 gcloud compute networks subnets create vpc-connector-subnet \
   --network=my-vpc \
   --region=us-central1 \

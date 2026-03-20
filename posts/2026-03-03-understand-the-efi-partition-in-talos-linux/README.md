@@ -50,6 +50,7 @@ You can inspect the disk layout on a running Talos node to verify the EFI partit
 
 ```bash
 # List all disks and their partitions
+
 talosctl get disks --nodes 192.168.1.10
 
 # Check mount points to see if the ESP is mounted

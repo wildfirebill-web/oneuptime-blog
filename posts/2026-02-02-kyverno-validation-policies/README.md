@@ -37,6 +37,7 @@ Helm provides the recommended installation method for production environments.
 
 ```bash
 # Add the Kyverno Helm repository to your local Helm configuration
+
 helm repo add kyverno https://kyverno.github.io/kyverno/
 
 # Update repository index to fetch latest chart versions
@@ -325,7 +326,7 @@ spec:
 
 ---
 
-## Resource Validation Policies
+Resource Validation Policies
 
 ### Require Resource Limits
 

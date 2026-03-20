@@ -71,6 +71,7 @@ After creating accounts, set their passwords using the ArgoCD CLI:
 
 ```bash
 # Login as admin first
+
 argocd login argocd.example.com --username admin --password <admin-password>
 
 # Set password for a new user

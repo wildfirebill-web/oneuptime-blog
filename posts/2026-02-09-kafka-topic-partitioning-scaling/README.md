@@ -357,6 +357,7 @@ Query partition assignment balance:
 
 ```promql
 # Partitions per consumer
+
 kafka_consumer_assigned_partitions
 
 # Consumer lag by partition

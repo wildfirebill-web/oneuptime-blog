@@ -29,6 +29,7 @@ First, make sure the API is enabled:
 
 ```bash
 # Enable the Network Management API (required for Performance Dashboard data)
+
 gcloud services enable networkmanagement.googleapis.com --project=my-project
 ```
 

@@ -16,6 +16,7 @@ Broken packages occur when dependencies are missing, conflicts exist between pac
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Check for broken packages

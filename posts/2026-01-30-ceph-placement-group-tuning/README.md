@@ -86,6 +86,7 @@ Then round up to the nearest power of 2.
 # PG calculation script for Ceph pools
 
 # Define cluster parameters
+
 TOTAL_OSDS=24
 REPLICATION_FACTOR=3
 TARGET_PGS_PER_OSD=128

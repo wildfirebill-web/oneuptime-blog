@@ -24,6 +24,7 @@ A compromised tier hierarchy - where security policies are moved to lower-priori
 
 ```bash
 # Verify tier orders match the documented security hierarchy
+
 calicoctl get tiers -o json | python3 -c "
 import json, sys
 data = json.load(sys.stdin)

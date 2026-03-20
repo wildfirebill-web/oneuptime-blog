@@ -37,6 +37,7 @@ You can also pipe to stdout for compression or streaming:
 
 ```bash
 # Compress with gzip
+
 podman export my-container | gzip > /tmp/my-container.tar.gz
 
 # Compress with zstd for better compression ratios

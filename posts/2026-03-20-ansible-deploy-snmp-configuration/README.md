@@ -29,6 +29,7 @@ jr1 ansible_host=10.1.20.1
 
 ```yaml
 # deploy_snmp.yml
+
 ---
 - name: Configure SNMP on Cisco IOS
   hosts: cisco_routers

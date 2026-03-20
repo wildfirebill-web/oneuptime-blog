@@ -6,7 +6,7 @@ Tags: OpenTofu, Workspaces, Cost Optimization, Automation, Infrastructure as Cod
 
 Description: Learn how to identify and safely remove stale OpenTofu workspaces to prevent orphaned cloud resources and unnecessary costs.
 
-Stale workspaces accumulate over time — developer branches are merged, experiments are abandoned, and the infrastructure they created is forgotten. A regular cleanup process prevents orphaned resources from quietly draining your cloud budget.
+Stale workspaces accumulate over time - developer branches are merged, experiments are abandoned, and the infrastructure they created is forgotten. A regular cleanup process prevents orphaned resources from quietly draining your cloud budget.
 
 ## Identifying Stale Workspaces
 
@@ -14,6 +14,7 @@ List all workspaces in a directory and compare them against active branches or u
 
 ```bash
 # List all workspaces
+
 tofu workspace list
 
 # Output example:

@@ -48,6 +48,7 @@ Here is a multi-stage Dockerfile for Rails:
 
 ```dockerfile
 # Dockerfile - Rails application with all dependencies
+
 FROM ruby:3.3-slim AS base
 
 # Install system packages required for Rails and PostgreSQL

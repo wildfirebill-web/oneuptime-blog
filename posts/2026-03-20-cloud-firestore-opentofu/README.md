@@ -14,6 +14,7 @@ Cloud Firestore is a flexible, scalable NoSQL document database for mobile, web,
 
 ```hcl
 # main.tf - Create Firestore database (Native mode)
+
 resource "google_firestore_database" "app_database" {
   project     = var.project_id
   name        = "(default)"  # Primary database uses "(default)" name

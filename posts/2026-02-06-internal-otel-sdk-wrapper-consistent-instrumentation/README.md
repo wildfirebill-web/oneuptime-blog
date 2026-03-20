@@ -39,6 +39,7 @@ Here is the core initialization module:
 
 ```python
 # internal_telemetry/setup.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

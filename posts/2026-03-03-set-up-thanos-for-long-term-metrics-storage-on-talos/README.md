@@ -41,6 +41,7 @@ First, create a secret containing your object storage configuration:
 
 ```yaml
 # thanos-objstore-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

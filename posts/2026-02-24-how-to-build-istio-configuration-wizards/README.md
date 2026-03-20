@@ -425,6 +425,7 @@ Package the CLI wizard as a single binary or pip package:
 
 ```bash
 # Install as a pip package
+
 pip install istio-wizard
 
 # Or use as a standalone script

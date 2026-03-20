@@ -12,14 +12,14 @@ GCP's global VPC requires careful CIDR planning because all subnets in all regio
 
 ## GCP CIDR Planning Principles
 
-1. **Reserve blocks per region** — allocate a supernet per region so regional subnets stay contiguous
-2. **Reserve secondary ranges** — GKE pods and services need dedicated secondary ranges
-3. **Avoid RFC 1918 overlap** — don't use ranges already used by on-premises or peered networks
-4. **Plan for peering** — peered VPCs cannot have overlapping ranges
+1. **Reserve blocks per region** - allocate a supernet per region so regional subnets stay contiguous
+2. **Reserve secondary ranges** - GKE pods and services need dedicated secondary ranges
+3. **Avoid RFC 1918 overlap** - don't use ranges already used by on-premises or peered networks
+4. **Plan for peering** - peered VPCs cannot have overlapping ranges
 
 ## Multi-Region CIDR Allocation Example
 
-```
+```text
 prod-vpc: 10.0.0.0/8 (total address space)
 
 ├── us-central1:     10.1.0.0/16
@@ -47,6 +47,7 @@ prod-vpc: 10.0.0.0/8 (total address space)
 PROJECT_ID="my-gcp-project"
 
 # us-central1 subnets
+
 gcloud compute networks subnets create web-uscentral \
   --project=$PROJECT_ID \
   --network=prod-vpc \
@@ -79,7 +80,7 @@ gcloud compute networks subnets create web-euwest \
 
 If you peer with a dev or staging VPC, use separate supernets:
 
-```
+```text
 prod-vpc:    10.0.0.0/8
 staging-vpc: 172.16.0.0/12
 dev-vpc:     192.168.0.0/16

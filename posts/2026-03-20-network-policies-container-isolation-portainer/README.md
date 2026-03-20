@@ -30,7 +30,7 @@ Implement network policies in Portainer to isolate containers and control traffi
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

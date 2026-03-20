@@ -37,6 +37,7 @@ from azure.storage.blob import BlobServiceClient, BlobType
 from datetime import datetime
 
 # Initialize the blob service client
+
 connection_string = "DefaultEndpointsProtocol=https;AccountName=stlogs2026;..."
 blob_service = BlobServiceClient.from_connection_string(connection_string)
 

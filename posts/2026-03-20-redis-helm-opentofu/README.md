@@ -14,6 +14,7 @@ Redis is an in-memory data store used for caching, session management, and pub/s
 
 ```hcl
 # main.tf - Deploy Redis via Bitnami Helm chart
+
 resource "random_password" "redis" {
   length  = 32
   special = false

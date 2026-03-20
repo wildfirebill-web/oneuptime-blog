@@ -76,6 +76,7 @@ For managed Kubernetes services, enable audit logging through the cloud provider
 
 ```bash
 # GKE
+
 gcloud container clusters update my-cluster \
   --enable-master-authorized-networks \
   --logging=SYSTEM,WORKLOAD,API_SERVER

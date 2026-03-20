@@ -26,6 +26,7 @@ Deploy Chaos Mesh using Helm for the easiest installation:
 
 ```bash
 # Add Chaos Mesh repository
+
 helm repo add chaos-mesh https://charts.chaos-mesh.org
 helm repo update
 

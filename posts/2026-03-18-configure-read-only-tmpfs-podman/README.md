@@ -20,6 +20,7 @@ A tmpfs mount creates a filesystem backed by RAM. Data written to a tmpfs mount 
 
 ```bash
 # Run a container with a basic tmpfs mount at /tmp
+
 podman run --rm -it \
   --tmpfs /tmp \
   docker.io/library/alpine:latest \

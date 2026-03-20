@@ -81,6 +81,7 @@ You can observe Calico's eBPF maps directly on a node:
 
 ```bash
 # List all Calico eBPF maps
+
 sudo bpftool map list | grep calico
 
 # Inspect the service map

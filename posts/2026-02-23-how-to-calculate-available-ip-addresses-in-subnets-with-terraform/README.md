@@ -239,6 +239,7 @@ Track available IPs at runtime using data sources.
 
 ```hcl
 # Get current subnet utilization
+
 data "aws_subnet" "monitored" {
   count = length(aws_subnet.private)
   id    = aws_subnet.private[count.index].id

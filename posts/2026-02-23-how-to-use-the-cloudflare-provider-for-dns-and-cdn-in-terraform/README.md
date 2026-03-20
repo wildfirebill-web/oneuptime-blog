@@ -16,6 +16,7 @@ In this guide, we will explore the Cloudflare provider for managing DNS records,
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

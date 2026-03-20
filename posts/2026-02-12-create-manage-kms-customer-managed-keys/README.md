@@ -18,6 +18,7 @@ The simplest way to create a symmetric encryption key (the most common type) is 
 
 ```bash
 # Create a symmetric encryption CMK
+
 aws kms create-key \
   --description "Production database encryption key" \
   --key-usage ENCRYPT_DECRYPT \

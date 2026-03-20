@@ -26,6 +26,7 @@ Start by determining if NetworkPolicies are selecting your pods:
 
 ```bash
 # List all NetworkPolicies in a namespace
+
 kubectl get networkpolicies -n my-namespace
 
 # Get detailed information about a specific policy

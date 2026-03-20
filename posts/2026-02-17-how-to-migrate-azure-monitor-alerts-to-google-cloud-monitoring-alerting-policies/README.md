@@ -34,6 +34,7 @@ Export your Azure Monitor alert configuration:
 
 ```bash
 # List all alert rules in a subscription
+
 az monitor metrics alert list --output table
 
 # List all log alert rules

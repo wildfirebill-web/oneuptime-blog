@@ -47,6 +47,7 @@ Alpine uses musl libc and BusyBox, resulting in much smaller images.
 
 ```dockerfile
 # Standard Ubuntu image
+
 FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y curl
 # Result: ~100MB

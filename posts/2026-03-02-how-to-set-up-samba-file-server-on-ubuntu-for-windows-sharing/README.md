@@ -129,6 +129,7 @@ sudo nano /etc/samba/smb.conf
 
 ```bash
 # Create the directory structure
+
 sudo mkdir -p /srv/samba/public
 sudo mkdir -p /srv/samba/teamshare
 

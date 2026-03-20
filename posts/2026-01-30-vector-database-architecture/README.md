@@ -51,6 +51,7 @@ Before vectors reach your database, they need to be generated. Here is a simple 
 
 ```python
 # embedding_service.py
+
 # Handles conversion of raw data into vector embeddings
 
 import numpy as np

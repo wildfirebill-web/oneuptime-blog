@@ -81,6 +81,7 @@ The most common service discovery method in Kubernetes. Creates a stable interna
 
 ```yaml
 # order-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

@@ -16,6 +16,7 @@ Environments in Portainer represent your Docker and Kubernetes targets. Managing
 # docker-environments.tf
 
 # Local Docker socket environment
+
 resource "portainer_environment" "local" {
   name = "local-docker"
   type = 1  # Docker standalone

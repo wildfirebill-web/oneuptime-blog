@@ -191,6 +191,7 @@ A powerful pattern is having a service with endpoints in both Kubernetes and VMs
 
 ```yaml
 # Kubernetes Deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

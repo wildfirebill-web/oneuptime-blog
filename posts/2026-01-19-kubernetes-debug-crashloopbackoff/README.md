@@ -79,6 +79,7 @@ Start by getting an overview of the pod's state:
 
 ```bash
 # Get basic pod status
+
 # Look for RESTARTS count and STATUS
 kubectl get pods -n <namespace>
 

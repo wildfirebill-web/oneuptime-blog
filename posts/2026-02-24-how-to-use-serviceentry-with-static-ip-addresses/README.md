@@ -280,6 +280,7 @@ Check that your static endpoints are registered in Envoy:
 
 ```bash
 # List endpoints
+
 istioctl proxy-config endpoints deploy/my-app | grep legacy-system
 
 # Check cluster configuration

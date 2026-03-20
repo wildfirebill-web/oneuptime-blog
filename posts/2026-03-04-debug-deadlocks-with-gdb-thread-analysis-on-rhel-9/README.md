@@ -22,6 +22,7 @@ Analyze deadlocks with gdb:
 
 ```bash
 # Attach to a stuck process
+
 sudo gdb -p <PID>
 
 # List all threads

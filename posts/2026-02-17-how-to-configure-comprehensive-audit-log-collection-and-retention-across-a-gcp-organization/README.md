@@ -29,6 +29,7 @@ Enable Data Access logs at the organization level so every project inherits the 
 
 ```hcl
 # org-audit-config.tf
+
 # Enable Data Access audit logs across the entire organization
 
 # Enable for all services (broad coverage)

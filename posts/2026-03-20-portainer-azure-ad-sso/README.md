@@ -1,4 +1,4 @@
-# How to Configure Microsoft Azure AD (Entra ID) SSO with Portainer
+# How to Configure Microsoft Azure AD (Entra ID) SSO with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,7 +23,7 @@ Microsoft Azure Active Directory (now called Microsoft Entra ID) is the most com
 3. Go to **App registrations** → **New registration**
 
 Fill in:
-```
+```text
 Name:                   Portainer SSO
 Supported account types: Accounts in this organizational directory only
 Redirect URI:           Web | https://portainer.example.com/
@@ -37,7 +37,7 @@ Redirect URI:           Web | https://portainer.example.com/
 1. In your app registration, go to **Certificates & secrets**
 2. Click **New client secret**
 3. Add a description and expiry
-4. **Copy the secret value immediately** — it's only shown once
+4. **Copy the secret value immediately** - it's only shown once
 
 ## Step 3: Configure API Permissions
 
@@ -53,7 +53,7 @@ Redirect URI:           Web | https://portainer.example.com/
 
 Collect the endpoint URLs from the Azure AD overview:
 
-```
+```text
 Tenant ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Authorization URL: https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize
@@ -63,7 +63,7 @@ Resource URL:      https://graph.microsoft.com/oidc/userinfo
 
 In Portainer Settings → Authentication → OAuth → Microsoft:
 
-```
+```text
 Client ID:              xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Client Secret:          (your secret value)
 Authorization URL:      https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize

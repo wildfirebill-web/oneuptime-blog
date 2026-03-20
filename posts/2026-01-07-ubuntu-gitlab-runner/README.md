@@ -47,6 +47,7 @@ First, add the official GitLab repository to your system:
 
 ```bash
 # Download and add the GitLab official repository GPG key
+
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 ```
 

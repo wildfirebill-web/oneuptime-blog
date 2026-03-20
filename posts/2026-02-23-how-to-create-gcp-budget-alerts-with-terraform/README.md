@@ -27,6 +27,7 @@ Create a monthly budget for a GCP project:
 
 ```hcl
 # Get billing account information
+
 data "google_billing_account" "main" {
   display_name = "My Billing Account"
   open         = true

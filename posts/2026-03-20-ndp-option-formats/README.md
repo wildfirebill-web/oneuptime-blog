@@ -12,7 +12,7 @@ NDP options use a Type-Length-Value (TLV) format where Length is in units of 8 b
 
 ## NDP Option General Format
 
-```
+```text
 NDP Option format:
 
  0                   1                   2                   3
@@ -95,6 +95,7 @@ def parse_ndp_options(options_data: bytes) -> list:
     return options
 
 # Example: build Source Link-Layer Address option
+
 mac_bytes = bytes([0x00, 0x11, 0x22, 0x33, 0x44, 0x55])
 slla_option = build_ndp_option(1, mac_bytes)
 print(f"SLLA option: {slla_option.hex()} ({len(slla_option)} bytes)")
@@ -107,7 +108,7 @@ print(f"Parsed: type={parsed[0]['type']}, length={parsed[0]['length_units']} uni
 
 ## Options by Message Type
 
-```
+```text
 Options valid in each NDP message:
 
 Router Solicitation (Type 133):

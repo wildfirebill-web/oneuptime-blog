@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Campus Network, Wireless LAN, eduroam, DHCPv6, Prefix Delegation, Enterprise Wi-Fi
+Tags: IPv6, Campus Network, Wireless LAN, Eduroam, DHCPv6, Prefix Delegation, Enterprise Wi-Fi
 
 Description: Deploy IPv6 across campus wireless networks with hierarchical prefix delegation, per-building or per-SSID /64 allocations, eduroam IPv6 support, and centralized monitoring.
 
@@ -12,7 +12,7 @@ Campus wireless networks serve thousands of clients across multiple buildings an
 
 ## Campus IPv6 Addressing Plan
 
-```
+```text
 Campus IPv6 Addressing Hierarchy:
 
 ISP allocates: 2001:db8:university::/48
@@ -36,7 +36,7 @@ Core Infrastructure: 2001:db8:university:ff00::/56
 
 ## Campus Router Prefix Delegation (Cisco IOS)
 
-```
+```text
 ! Campus distribution router - prefix delegation to building switches
 
 ipv6 unicast-routing
@@ -62,7 +62,7 @@ interface GigabitEthernet0/0.10
 
 ## eduroam IPv6 Support
 
-```
+```text
 eduroam IPv6 Architecture:
 [Wi-Fi Client with eduroam credentials]
     → [Local AP/Controller]
@@ -107,6 +107,7 @@ server eduroam {
 
 ```bash
 # /etc/hostapd/corp-ssid.conf
+
 interface=wlan0
 driver=nl80211
 ssid=UniversityCorp

@@ -45,6 +45,7 @@ Define services per host group using group variables:
 
 ```yaml
 # group_vars/web_servers.yml
+
 managed_services:
   - nginx
   - php-fpm

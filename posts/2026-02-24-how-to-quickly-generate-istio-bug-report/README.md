@@ -195,6 +195,7 @@ Bug reports may contain sensitive data like service names, IPs, or configuration
 
 ```bash
 # Check for potential secrets
+
 grep -r "password\|secret\|token\|key" bug-report/ --include="*.yaml" --include="*.json"
 ```
 

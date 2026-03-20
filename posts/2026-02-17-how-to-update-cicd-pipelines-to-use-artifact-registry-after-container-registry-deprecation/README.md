@@ -35,6 +35,7 @@ Before updating pipelines, make sure you have:
 
 ```bash
 # Create the repository
+
 gcloud artifacts repositories create docker-images \
   --repository-format=docker \
   --location=us-central1 \

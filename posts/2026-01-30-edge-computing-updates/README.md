@@ -127,6 +127,7 @@ from typing import Optional
 import requests
 
 # Configure logging with timestamps for debugging update issues
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"

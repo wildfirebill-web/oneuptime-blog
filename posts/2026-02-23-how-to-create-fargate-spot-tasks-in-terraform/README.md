@@ -51,6 +51,7 @@ data "aws_subnets" "private" {
 }
 
 # ECS Cluster with Fargate capacity providers
+
 resource "aws_ecs_cluster" "main" {
   name = "spot-cluster"
 

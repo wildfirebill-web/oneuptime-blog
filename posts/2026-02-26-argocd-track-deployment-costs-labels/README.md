@@ -34,6 +34,7 @@ Start by establishing which labels are required for cost tracking.
 
 ```yaml
 # Required cost labels for all workloads
+
 metadata:
   labels:
     # Who pays for this?
@@ -287,7 +288,7 @@ spec:
                   curl -X POST "$SLACK_WEBHOOK" \
                     -H "Content-Type: application/json" \
                     -d "{
-                      \"text\": \"Weekly Kubernetes Cost Report\\n\`\`\`\\n${SUMMARY}\\n\`\`\`\"
+                      \"text\": \"Weekly Kubernetes Cost Report\\n```\\n${SUMMARY}\\n```\"
                     }"
               env:
                 - name: SLACK_WEBHOOK

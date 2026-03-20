@@ -253,6 +253,7 @@ Instead of adding config blocks to every model, you can set defaults at the dire
 
 ```yaml
 # dbt_project.yml
+
 # Set default partitioning and clustering for all models in specific directories
 models:
   my_analytics:

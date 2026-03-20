@@ -53,6 +53,7 @@ flowchart LR
 # ERROR: ambiguous redirect
 
 # This happens when a variable is empty or contains spaces
+
 filename=""
 echo "test" > $filename
 # Error: -bash: $filename: ambiguous redirect

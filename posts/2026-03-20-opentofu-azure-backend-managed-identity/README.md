@@ -1,14 +1,14 @@
-# How to Configure Azure Backend with Managed Identity in OpenTofu
+# How to Configure Azure Backend with Managed Identity in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, Azure
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, Azure
 
 Description: Learn how to configure the OpenTofu Azure backend with Managed Identity for keyless authentication when running on Azure-hosted compute.
 
 ## Introduction
 
-Managed Identity is the preferred authentication method for the Azure backend when OpenTofu runs on Azure-hosted compute (Azure VMs, AKS, Azure DevOps agents, Container Instances). No credentials need to be stored or rotated — Azure provides the identity token automatically.
+Managed Identity is the preferred authentication method for the Azure backend when OpenTofu runs on Azure-hosted compute (Azure VMs, AKS, Azure DevOps agents, Container Instances). No credentials need to be stored or rotated - Azure provides the identity token automatically.
 
 ## System-Assigned Managed Identity
 
@@ -16,6 +16,7 @@ Enable a system-assigned identity on your compute resource:
 
 ```bash
 # Enable system-assigned identity on a VM
+
 az vm identity assign \
   --name my-terraform-vm \
   --resource-group my-rg
@@ -114,7 +115,7 @@ tofu apply
 ## Azure DevOps Pipeline
 
 ```yaml
-# azure-pipelines.yml — Managed Identity on self-hosted agent
+# azure-pipelines.yml - Managed Identity on self-hosted agent
 pool:
   name: SelfHostedAgentsWithManagedIdentity
 

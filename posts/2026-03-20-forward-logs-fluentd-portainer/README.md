@@ -14,6 +14,7 @@ Docker's built-in Fluentd log driver forwards container logs directly to a Fluen
 
 ```yaml
 # docker-compose.yml - Fluentd with multiple output plugins
+
 version: "3.8"
 
 services:
@@ -314,4 +315,4 @@ docker logs fluentd 2>&1 | grep -i error | tail -20
 
 ## Conclusion
 
-Fluentd's log driver integration enables rich log processing between Docker containers and downstream systems. The forward protocol is more efficient than file-based collection and provides backpressure handling via the buffer system — if Elasticsearch goes down, logs buffer to disk and replay when it recovers. `fluentd-async: true` is critical for production: it prevents slow Fluentd processing from causing application blocking. Portainer's compose YAML makes it easy to apply consistent logging configuration across all services in a stack while keeping application code completely decoupled from the log destination.
+Fluentd's log driver integration enables rich log processing between Docker containers and downstream systems. The forward protocol is more efficient than file-based collection and provides backpressure handling via the buffer system - if Elasticsearch goes down, logs buffer to disk and replay when it recovers. `fluentd-async: true` is critical for production: it prevents slow Fluentd processing from causing application blocking. Portainer's compose YAML makes it easy to apply consistent logging configuration across all services in a stack while keeping application code completely decoupled from the log destination.

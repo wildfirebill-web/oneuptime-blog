@@ -397,6 +397,7 @@ Capture the state of a table at specific intervals for historical reporting.
 
 ```yaml
 # dbt snapshot: snapshots/orders_snapshot.yml
+
 # Captures daily snapshots of order status for SLA tracking
 
 snapshots:

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Conditionals, HCL, Logic, Advanced
+Tags: OpenTofu, Terraform, Conditional, HCL, Logic, Advanced
 
 Description: Learn how to chain multiple conditional expressions in OpenTofu using nested ternaries, locals composition, and helper variables for complex multi-way logic.
 
 ## Introduction
 
-Real-world infrastructure configurations often need multi-way conditional logic — not just true/false, but choices among three, four, or more options. OpenTofu's ternary expressions can be chained, and decomposing complex logic into named `locals` keeps it readable.
+Real-world infrastructure configurations often need multi-way conditional logic - not just true/false, but choices among three, four, or more options. OpenTofu's ternary expressions can be chained, and decomposing complex logic into named `locals` keeps it readable.
 
 ## Chained Ternary Expressions
 
@@ -132,6 +132,7 @@ locals {
 }
 
 # Use feature flags to drive resource creation
+
 resource "aws_db_instance" "read_replica" {
   count               = local.features.enable_read_replicas ? 1 : 0
   replicate_source_db = aws_db_instance.main.id

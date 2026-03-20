@@ -51,6 +51,7 @@ Kafka provides built-in command-line tools for checking consumer lag.
 
 ```bash
 # Describe a consumer group and show lag
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
     --group my-consumer-group \
     --describe

@@ -29,6 +29,7 @@ This guide provides systematic validation procedures to confirm that your `calic
 
 ```bash
 # View all labels on a node
+
 calicoctl get node worker-1 -o yaml
 ```
 

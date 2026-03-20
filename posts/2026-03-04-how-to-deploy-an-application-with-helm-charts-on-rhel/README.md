@@ -14,6 +14,7 @@ Creating your own Helm chart allows you to package your Kubernetes manifests int
 
 ```bash
 # Scaffold a new chart
+
 helm create myapp
 
 # View the chart structure

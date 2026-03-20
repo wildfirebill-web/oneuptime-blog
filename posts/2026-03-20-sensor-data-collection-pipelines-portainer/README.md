@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IoT, Sensors, Portainer, Docker, Data Pipeline, MQTT, Time Series
+Tags: IoT, Sensors, Portainer, Docker, Data Pipelines, MQTT, Time Series
 
 Description: Build a complete sensor data collection pipeline using Portainer stacks, connecting field sensors through MQTT and Telegraf to InfluxDB for real-time storage and analysis.
 
 ---
 
-Sensor data collection requires a reliable pipeline from the physical world to a time-series database. This guide shows how to deploy the full stack — MQTT broker, Telegraf agent, and InfluxDB — using Portainer stacks on your edge nodes or on-premise servers.
+Sensor data collection requires a reliable pipeline from the physical world to a time-series database. This guide shows how to deploy the full stack - MQTT broker, Telegraf agent, and InfluxDB - using Portainer stacks on your edge nodes or on-premise servers.
 
 ## Pipeline Architecture
 
@@ -26,6 +26,7 @@ Navigate to **Stacks > Add Stack** and paste the following:
 
 ```yaml
 # sensor-pipeline.yml
+
 version: "3.8"
 
 services:
@@ -134,7 +135,7 @@ Create `/opt/sensor-pipeline/telegraf.conf` on the host before deploying:
 Sensors publish JSON payloads to MQTT topics:
 
 ```python
-# sensor_publisher.py — runs on the sensor device
+# sensor_publisher.py - runs on the sensor device
 import paho.mqtt.client as mqtt
 import json
 import time
@@ -166,4 +167,4 @@ After deploying the stack:
 
 ## Summary
 
-With Portainer stacks, you can deploy and manage the full sensor data collection pipeline as a single unit. Update individual components, scale Telegraf for higher throughput, or swap InfluxDB for TimescaleDB — all from the Portainer UI.
+With Portainer stacks, you can deploy and manage the full sensor data collection pipeline as a single unit. Update individual components, scale Telegraf for higher throughput, or swap InfluxDB for TimescaleDB - all from the Portainer UI.

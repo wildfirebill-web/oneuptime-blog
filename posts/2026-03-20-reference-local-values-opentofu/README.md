@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Resources, References, Infrastructure as Code, DevOps
+Tags: OpenTofu, Locals, Resources, Reference, Infrastructure as Code, DevOps
 
 Description: A guide to referencing local values in OpenTofu resource configurations to reduce duplication and improve readability.
 
 ## Introduction
 
-Once you define local values in a `locals` block, you reference them using the `local.<NAME>` syntax. Local values can be used anywhere an expression is valid — in resource arguments, other locals, outputs, and more.
+Once you define local values in a `locals` block, you reference them using the `local.<NAME>` syntax. Local values can be used anywhere an expression is valid - in resource arguments, other locals, outputs, and more.
 
 ## Basic Reference Syntax
 
@@ -22,6 +22,7 @@ locals {
 }
 
 # Reference with local.<name>
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 
@@ -168,4 +169,4 @@ module "vpc" {
 
 ## Conclusion
 
-Referencing local values with `local.<name>` is straightforward, but the power lies in how locals enable you to define a value once and reference it consistently throughout your configuration. This means a single change to a local — like updating the naming convention or tag standards — propagates automatically to all resources that reference it. Use locals aggressively for any value used more than once or any computed value that benefits from a descriptive name.
+Referencing local values with `local.<name>` is straightforward, but the power lies in how locals enable you to define a value once and reference it consistently throughout your configuration. This means a single change to a local - like updating the naming convention or tag standards - propagates automatically to all resources that reference it. Use locals aggressively for any value used more than once or any computed value that benefits from a descriptive name.

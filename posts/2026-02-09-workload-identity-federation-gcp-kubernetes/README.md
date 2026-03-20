@@ -24,6 +24,7 @@ First, enable Workload Identity when creating a new cluster or update an existin
 
 ```bash
 # Create new GKE cluster with Workload Identity
+
 gcloud container clusters create my-cluster \
   --region us-central1 \
   --workload-pool=my-project.svc.id.goog \

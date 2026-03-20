@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, VLANs, Networking, Switching, Address Planning
+Tags: IPv6, VLAN, Networking, Switching, Address Planning
 
 Description: Plan IPv6 addressing for VLAN-based network segments, mapping VLAN IDs to /64 subnets for consistent, readable addressing across your network infrastructure.
 
@@ -14,7 +14,7 @@ VLANs are the primary tool for segmenting Layer 2 networks, and each VLAN needs 
 
 With a /48 prefix, you have 16 bits of subnet ID. If your VLAN IDs are in the range 1-4094 (12 bits), you can embed the VLAN ID directly:
 
-```
+```text
 Prefix: 2001:db8:site1::/48
 Subnet field (bits 49-64): embed VLAN ID
 
@@ -52,6 +52,7 @@ def subnet_to_gateway(subnet: ipaddress.IPv6Network) -> ipaddress.IPv6Address:
     return subnet.network_address + 1
 
 # Map VLANs to subnets
+
 site_prefix = "2001:db8:site1::/48"
 vlan_plan = {
     1:   "Management",
@@ -72,7 +73,7 @@ for vlan_id, description in vlan_plan.items():
 ```
 
 Output:
-```
+```yaml
   VLAN                          Subnet                         Gateway  Description
 -------------------------------------------------------------------------------------
      1   2001:db8:site1:1::/64   2001:db8:site1:1::1/64  Management
@@ -124,7 +125,7 @@ EOF
 
 ## Special VLAN Addressing Conventions
 
-```
+```text
 Convention for non-host VLANs:
 
 VLAN IDs 1-100:    Infrastructure VLANs (management, transit)

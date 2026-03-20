@@ -16,6 +16,7 @@ If you are not familiar with the pattern, the idea is simple. You create one Arg
 
 ```yaml
 # root-app.yaml - The parent application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

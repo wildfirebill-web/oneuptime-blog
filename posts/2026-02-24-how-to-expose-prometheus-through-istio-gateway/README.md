@@ -25,6 +25,7 @@ Check that everything is in place:
 
 ```bash
 # Verify Prometheus is running
+
 kubectl get svc prometheus -n istio-system
 
 # Verify the IngressGateway

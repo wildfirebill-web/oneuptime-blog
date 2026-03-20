@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Kubernetes, Dynamic Blocks, Containers, Deployments
+Tags: OpenTofu, Terraform, Kubernetes, Dynamic Blocks, Containers, Deployment
 
 Description: Learn how to use dynamic blocks in OpenTofu to generate Kubernetes Deployment container specs including environment variables, volume mounts, and resource limits.
 
 ## Introduction
 
-Kubernetes Deployments often include multiple containers with complex specs — environment variables from ConfigMaps and Secrets, volume mounts, resource limits, and liveness probes. Dynamic blocks in the Kubernetes provider let you build these specs from structured variable data.
+Kubernetes Deployments often include multiple containers with complex specs - environment variables from ConfigMaps and Secrets, volume mounts, resource limits, and liveness probes. Dynamic blocks in the Kubernetes provider let you build these specs from structured variable data.
 
 ## Dynamic Container Environment Variables
 

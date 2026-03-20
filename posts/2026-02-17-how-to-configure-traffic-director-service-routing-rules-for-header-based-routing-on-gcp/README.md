@@ -22,6 +22,7 @@ You need at least two versions of a service to route between. Let us set up a pr
 
 ```yaml
 # primary-deployment.yaml
+
 # The default version of the service
 apiVersion: apps/v1
 kind: Deployment

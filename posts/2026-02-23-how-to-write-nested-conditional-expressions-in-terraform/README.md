@@ -41,6 +41,7 @@ Terraform's ternary is right-associative, meaning the rightmost ternary is evalu
 
 ```hcl
 # This nested expression:
+
 result = a ? x : b ? y : z
 
 # Is equivalent to:

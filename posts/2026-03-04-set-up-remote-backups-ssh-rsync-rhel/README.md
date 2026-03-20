@@ -16,6 +16,7 @@ Create a dedicated SSH key for automated backups:
 
 ```bash
 # Generate an SSH key pair for backups (no passphrase for automation)
+
 ssh-keygen -t ed25519 -f ~/.ssh/backup_key -N "" -C "backup@$(hostname)"
 
 # Copy the public key to the remote backup server

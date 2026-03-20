@@ -22,6 +22,7 @@ Start by checking the service exists and has correct configuration:
 
 ```bash
 # Get service details
+
 kubectl get service myapp-service -o yaml
 
 # Check critical fields:

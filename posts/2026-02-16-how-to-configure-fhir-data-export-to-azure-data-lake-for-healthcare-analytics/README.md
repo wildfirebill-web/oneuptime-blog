@@ -34,6 +34,7 @@ If you do not already have a Data Lake Storage Gen2 account:
 
 ```bash
 # Create a storage account with hierarchical namespace (Data Lake Gen2)
+
 RESOURCE_GROUP="rg-health-data"
 STORAGE_ACCOUNT="healthdatalake01"
 CONTAINER_NAME="fhir-export"

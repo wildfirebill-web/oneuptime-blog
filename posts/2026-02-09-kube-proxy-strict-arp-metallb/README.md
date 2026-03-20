@@ -24,6 +24,7 @@ Before making changes, check your current settings:
 
 ```bash
 # SSH to a node
+
 # Check ARP announce setting
 sysctl net.ipv4.conf.all.arp_announce
 

@@ -26,6 +26,7 @@ To prevent tenants from referencing sources in other namespaces (including `flux
 
 ```yaml
 # clusters/my-cluster/flux-system/kustomize-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

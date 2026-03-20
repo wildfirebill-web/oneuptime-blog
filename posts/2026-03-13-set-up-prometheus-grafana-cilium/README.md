@@ -91,6 +91,7 @@ Import via Grafana UI: Dashboards → Import → Enter Dashboard ID.
 
 ```promql
 # Policy enforcement decisions per second
+
 rate(cilium_policy_l7_total[5m])
 
 # Active connections in CT table

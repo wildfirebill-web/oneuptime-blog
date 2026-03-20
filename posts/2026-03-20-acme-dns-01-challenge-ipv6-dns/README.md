@@ -8,11 +8,11 @@ Description: Configure ACME DNS-01 domain validation challenges using IPv6-capab
 
 ---
 
-The DNS-01 challenge is the most flexible ACME validation method — it requires no inbound HTTP access, making it ideal for IPv6-only servers, internal services, and wildcard certificate issuance. Validation happens entirely through DNS TXT records.
+The DNS-01 challenge is the most flexible ACME validation method - it requires no inbound HTTP access, making it ideal for IPv6-only servers, internal services, and wildcard certificate issuance. Validation happens entirely through DNS TXT records.
 
 ## Why DNS-01 is Best for IPv6-Only Environments
 
-```
+```text
 DNS-01 Validation Flow:
 Client creates TXT record → Let's Encrypt queries DNS → Certificate issued
 No inbound connections needed → Perfect for IPv6-only servers
@@ -26,6 +26,7 @@ DNS-01 requires programmatic DNS record creation. Gather your DNS provider API c
 
 ```bash
 # Example: Check available certbot DNS plugins
+
 pip3 list | grep certbot-dns
 
 # Install the plugin for your provider

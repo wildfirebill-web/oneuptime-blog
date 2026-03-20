@@ -72,6 +72,7 @@ Your backup strategy must account for retrieval delays:
 
 ```python
 # Calculate realistic recovery timeline
+
 def estimate_recovery_time(
     archive_size_gb: float,
     retrieval_class: str,

@@ -24,6 +24,7 @@ You need a GKE cluster version 1.24 or later with the Gateway API enabled.
 
 ```bash
 # Create a GKE cluster with Gateway API support
+
 gcloud container clusters create gateway-cluster \
   --zone=us-central1-a \
   --num-nodes=3 \

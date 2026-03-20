@@ -40,6 +40,7 @@ Find Authentik's OIDC endpoints from the discovery document:
 
 ```bash
 # Authentik discovery URL format
+
 curl https://authentik.example.com/application/o/portainer/.well-known/openid-configuration | \
   python3 -m json.tool | grep -E "authorization|token|userinfo"
 ```

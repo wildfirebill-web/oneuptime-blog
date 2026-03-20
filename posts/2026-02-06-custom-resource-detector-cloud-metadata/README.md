@@ -36,6 +36,7 @@ Here is a detector that fetches AWS EC2 metadata and merges it with application 
 
 ```python
 # custom_detector.py
+
 import json
 import os
 import urllib.request

@@ -39,6 +39,7 @@ sudo apt install -y podman slirp4netns fuse-overlayfs uidmap
 
 ```bash
 # Ubuntu
+
 sudo apt update && sudo apt install -y podman
 
 # Fedora IoT

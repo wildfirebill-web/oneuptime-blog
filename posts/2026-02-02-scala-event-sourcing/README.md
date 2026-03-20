@@ -102,6 +102,7 @@ Configure Akka Persistence to use PostgreSQL as the event store. The journal sto
 
 ```hocon
 # application.conf
+
 # Akka configuration for event sourcing
 
 akka {

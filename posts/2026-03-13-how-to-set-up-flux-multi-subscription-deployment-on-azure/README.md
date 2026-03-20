@@ -70,6 +70,7 @@ Create clusters in each subscription:
 
 ```bash
 # Subscription A - Development
+
 az account set --subscription "Subscription-A-ID"
 
 az aks create \

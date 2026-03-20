@@ -41,6 +41,7 @@ Pruning is not enabled by default. You must explicitly set `spec.prune: true` on
 
 ```yaml
 # Kustomization with pruning enabled
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

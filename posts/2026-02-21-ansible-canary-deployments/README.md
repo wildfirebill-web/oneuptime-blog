@@ -22,6 +22,7 @@ The first step is splitting your servers into canary and production groups. Here
 
 ```yaml
 # inventory/production.yml
+
 # Split servers into canary (small group) and main (bulk of fleet)
 all:
   children:

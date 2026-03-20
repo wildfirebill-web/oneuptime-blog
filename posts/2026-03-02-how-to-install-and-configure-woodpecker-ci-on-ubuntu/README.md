@@ -16,6 +16,7 @@ This guide covers installing Woodpecker on Ubuntu using Docker Compose, connecti
 
 ```bash
 # Install Docker and Docker Compose
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 

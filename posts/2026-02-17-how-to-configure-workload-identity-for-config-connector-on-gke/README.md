@@ -33,6 +33,7 @@ Make sure the required APIs are enabled.
 
 ```bash
 # Enable the APIs needed for Workload Identity and Config Connector
+
 gcloud services enable \
   container.googleapis.com \
   iam.googleapis.com \

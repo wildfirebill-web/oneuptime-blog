@@ -31,6 +31,7 @@ First, deploy a simple application with known resource characteristics:
 
 ```yaml
 # test-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

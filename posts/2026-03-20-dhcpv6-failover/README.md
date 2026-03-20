@@ -8,13 +8,13 @@ Description: Learn how to configure DHCPv6 failover using Kea's High Availabilit
 
 ---
 
-DHCPv6 failover ensures that if your primary DHCP server goes offline, a secondary server continues to serve address assignments. Unlike DHCPv4 which has a long-standardized failover protocol, DHCPv6 failover is implemented differently — most commonly through Kea's built-in High Availability hook library.
+DHCPv6 failover ensures that if your primary DHCP server goes offline, a secondary server continues to serve address assignments. Unlike DHCPv4 which has a long-standardized failover protocol, DHCPv6 failover is implemented differently - most commonly through Kea's built-in High Availability hook library.
 
 ---
 
 ## Failover Architecture
 
-```
+```text
 Clients
    |
    ├─── Primary DHCPv6 Server (active)
@@ -177,6 +177,7 @@ sudo systemctl start kea-ctrl-agent
 
 ```bash
 # Start on both servers
+
 sudo systemctl enable kea-dhcp6-server
 sudo systemctl start kea-dhcp6-server
 
@@ -221,8 +222,8 @@ journalctl -u kea-dhcp6-server -f  # on server2
 ## Best Practices
 
 1. **Use a shared lease database** (PostgreSQL/MySQL) for lease consistency across both nodes
-2. **Monitor heartbeat delays** — set `max-response-delay` based on your network latency
-3. **Test failover regularly** — simulate primary failure in maintenance windows
+2. **Monitor heartbeat delays** - set `max-response-delay` based on your network latency
+3. **Test failover regularly** - simulate primary failure in maintenance windows
 4. **Use the Kea Stork** management UI for visual HA status monitoring
 5. **Place servers in separate racks/zones** to protect against hardware failures
 
@@ -234,4 +235,4 @@ Kea's High Availability hook provides robust DHCPv6 failover with minimal config
 
 ---
 
-*Monitor your DHCPv6 and network infrastructure with [OneUptime](https://oneuptime.com) — real-time uptime tracking with alerting.*
+*Monitor your DHCPv6 and network infrastructure with [OneUptime](https://oneuptime.com) - real-time uptime tracking with alerting.*

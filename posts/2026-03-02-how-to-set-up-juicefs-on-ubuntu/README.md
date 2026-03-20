@@ -41,6 +41,7 @@ sudo apt update
 sudo apt install redis-server -y
 
 # Secure Redis: disable remote access, set a password
+
 sudo nano /etc/redis/redis.conf
 ```
 

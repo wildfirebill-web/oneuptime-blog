@@ -34,6 +34,7 @@ The simplest way to get Prosody running is with a single docker run command.
 
 ```bash
 # Pull the official Prosody image and start a container
+
 # Port 5222 handles client connections, 5269 handles server federation
 docker run -d \
   --name prosody \

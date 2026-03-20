@@ -26,6 +26,7 @@ Accelerated Networking uses SR-IOV to bypass the Azure hypervisor, reducing late
 
 ```bash
 # Enable accelerated networking on all worker VMs
+
 # Note: VM must be stopped/deallocated first
 for vm in worker-1 worker-2 worker-3; do
   az vm deallocate -g k8s-rg -n $vm

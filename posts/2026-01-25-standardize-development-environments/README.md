@@ -32,6 +32,7 @@ Pin runtime versions to ensure consistency:
 
 ```toml
 # .mise.toml - Runtime version management
+
 [tools]
 node = "20.11.0"
 python = "3.11.7"

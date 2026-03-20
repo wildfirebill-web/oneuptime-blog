@@ -20,6 +20,7 @@ Here is a basic example that creates a timestamp file on the control node:
 
 ```yaml
 # playbook that creates a local timestamp file before deploying
+
 ---
 - name: Deploy application with local prep
   hosts: webservers

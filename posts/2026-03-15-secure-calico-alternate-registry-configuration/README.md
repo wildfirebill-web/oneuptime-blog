@@ -85,6 +85,7 @@ Avoid storing plain-text credentials in version control. Use Sealed Secrets or a
 
 ```bash
 # Install kubeseal CLI, then seal the secret
+
 kubeseal --format yaml < calico-registry-secret.yaml > calico-registry-sealed.yaml
 ```
 

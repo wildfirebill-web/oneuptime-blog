@@ -18,6 +18,7 @@ If the LUN is backed by an LVM logical volume:
 
 ```bash
 # Extend the logical volume
+
 sudo lvextend -L +50G /dev/vg_iscsi/lun_web
 
 # Or extend to a specific size

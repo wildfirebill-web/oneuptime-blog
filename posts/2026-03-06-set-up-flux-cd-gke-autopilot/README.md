@@ -37,6 +37,7 @@ GKE Autopilot enforces several restrictions that affect Flux CD.
 
 ```bash
 # Create a GKE Autopilot cluster
+
 gcloud container clusters create-auto flux-autopilot \
   --region us-central1 \
   --project my-project-id \

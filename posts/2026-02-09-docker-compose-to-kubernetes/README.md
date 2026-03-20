@@ -16,6 +16,7 @@ Docker Compose and Kubernetes use different terminology for similar concepts.
 
 ```yaml
 # Docker Compose example - docker-compose.yml
+
 version: '3.8'
 
 services:

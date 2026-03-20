@@ -16,6 +16,7 @@ RHEL bundles essential build tools into a convenient group package.
 
 ```bash
 # Install the complete development toolchain
+
 sudo dnf groupinstall -y "Development Tools"
 
 # This installs:

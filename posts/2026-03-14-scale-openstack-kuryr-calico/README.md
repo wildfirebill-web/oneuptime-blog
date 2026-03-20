@@ -30,6 +30,7 @@ Kuryr creates Neutron ports for every pod, which can overwhelm the Neutron API a
 
 ```bash
 # Check current Neutron port count
+
 openstack port list --project kubernetes -f value -c ID | wc -l
 
 # Monitor Neutron API response times

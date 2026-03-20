@@ -120,6 +120,7 @@ resource "aws_lb_target_group" "groups" {
 }
 
 # HTTP listener - redirect to HTTPS if cert provided, forward otherwise
+
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.main.arn
   port              = 80

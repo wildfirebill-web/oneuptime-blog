@@ -18,6 +18,7 @@ Pasta (Package-specific Approach to Sockets Translation Architecture) is a user-
 
 ```bash
 # Check if pasta is installed
+
 which pasta
 
 # Check which network backend Podman is using

@@ -33,6 +33,7 @@ The most effective debugging technique in Sentinel is strategic use of `print()`
 
 ```python
 # Before: Policy with no debugging output
+
 import "tfplan/v2" as tfplan
 
 instances = filter tfplan.resource_changes as _, rc {

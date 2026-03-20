@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, template_file, templatefile, Data Sources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Template_file, templatefile, Data Source, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the template_file data source and templatefile function in OpenTofu to render dynamic configuration files and user data scripts.
 
@@ -18,6 +18,7 @@ For all new configurations, use the built-in `templatefile()` function:
 
 ```hcl
 # templates/user_data.sh.tpl
+
 # #!/bin/bash
 # export APP_ENV="${environment}"
 # export DB_HOST="${db_host}"
@@ -43,7 +44,7 @@ resource "aws_instance" "app" {
 If you're working with older configurations, the `template_file` data source looks like this:
 
 ```hcl
-# versions.tf — add the template provider
+# versions.tf - add the template provider
 terraform {
   required_providers {
     template = {
@@ -148,13 +149,13 @@ resource "aws_s3_bucket_policy" "app" {
 
 Templates use `${variable}` interpolation and support directives:
 
-```
+```text
 %{ for item in items ~}
 - ${item}
 %{ endfor ~}
 ```
 
-```
+```text
 %{ if condition }true text%{ else }false text%{ endif }
 ```
 
@@ -164,4 +165,4 @@ The `~` trims whitespace/newlines around a directive.
 
 ## Summary
 
-Use the built-in `templatefile()` function for rendering templates in modern OpenTofu — it takes a file path and a map of variables and returns the rendered string. The older `template_file` data source from `hashicorp/template` works the same way but requires an extra provider. Both support `${variable}` interpolation, `%{ for }` loops, and `%{ if }` conditionals.
+Use the built-in `templatefile()` function for rendering templates in modern OpenTofu - it takes a file path and a map of variables and returns the rendered string. The older `template_file` data source from `hashicorp/template` works the same way but requires an extra provider. Both support `${variable}` interpolation, `%{ for }` loops, and `%{ if }` conditionals.

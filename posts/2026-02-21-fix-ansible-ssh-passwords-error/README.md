@@ -24,6 +24,7 @@ The quickest fix is to install sshpass on your Ansible control machine:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install sshpass
 
 # CentOS/RHEL

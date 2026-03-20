@@ -1,4 +1,4 @@
-# How to Attach Volumes to Running Containers in Portainer
+# How to Attach Volumes to Running Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to add volumes to running containers in Portainer and how
 
 ## Introduction
 
-Docker doesn't support adding volumes to a running container — volumes must be configured at creation time. However, Portainer's duplicate/edit and recreate features make it easy to add new volumes to existing containers with minimal downtime. This guide covers how to add volumes and alternative approaches for accessing container data.
+Docker doesn't support adding volumes to a running container - volumes must be configured at creation time. However, Portainer's duplicate/edit and recreate features make it easy to add new volumes to existing containers with minimal downtime. This guide covers how to add volumes and alternative approaches for accessing container data.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Portainer simplifies this process.
 1. Scroll to the **Volumes** tab.
 2. Click **+ map additional volume**.
 3. Configure:
-   ```
+   ```text
    Volume:          my-new-volume
    Container path:  /app/data
    Mode:            Read/Write
@@ -61,6 +61,7 @@ For stack-managed containers, update the compose file:
 
 ```yaml
 # Original stack:
+
 services:
   app:
     image: myorg/myapp:latest
@@ -79,7 +80,7 @@ services:
       - app_logs:/app/logs        # Another new volume
 
 volumes:
-  app_data:        # Existing — data preserved
+  app_data:        # Existing - data preserved
   app_uploads:     # New
   app_logs:        # New
 ```
@@ -173,7 +174,7 @@ echo "Total downtime: $(docker inspect ${CONTAINER_NAME} --format '{{.State.Star
 Anticipate volume needs before deployment to avoid recreations:
 
 ```yaml
-# Plan volumes upfront — add all that might be needed
+# Plan volumes upfront - add all that might be needed
 services:
   app:
     image: myapp:latest

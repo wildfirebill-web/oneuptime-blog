@@ -26,6 +26,7 @@ Check the build configuration to see which service account runs the build:
 
 ```bash
 # Check recent build details
+
 gcloud builds describe BUILD_ID \
     --format="json(serviceAccount, options)"
 ```

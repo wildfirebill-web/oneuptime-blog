@@ -37,6 +37,7 @@ Start with proper deployment configuration that supports rollback:
 
 ```yaml
 # k8s/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

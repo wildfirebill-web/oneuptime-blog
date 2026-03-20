@@ -42,6 +42,7 @@ resource "aws_instance" "database" {
 
 ```hcl
 # High-performance io2 volume for database data files
+
 resource "aws_ebs_volume" "database_data" {
   availability_zone = aws_instance.database.availability_zone
   type              = "io2"

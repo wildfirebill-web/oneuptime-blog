@@ -52,6 +52,7 @@ Microsoft Teams supports incoming webhooks through the Workflows app (the old In
 
 ```bash
 # Create an action group that sends to Teams via webhook
+
 # The URI is the webhook URL you copied from Teams
 az monitor action-group create \
   --resource-group rg-monitoring \

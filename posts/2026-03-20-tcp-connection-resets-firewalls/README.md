@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP RST, Firewall, Connection Reset, tcpdump, Troubleshooting, conntrack, IPv4
+Tags: TCP RST, Firewall, Connection Reset, tcpdump, Troubleshooting, Conntrack, IPv4
 
 Description: Learn how to diagnose TCP connection resets (RST) that are injected by firewalls, load balancers, or idle connection timeouts, and how to fix them in production environments.
 
@@ -14,6 +14,7 @@ TCP RST packets abruptly terminate connections. When RSTs appear between a clien
 
 ```bash
 # Capture all TCP RSTs
+
 tcpdump -i eth0 -nn "tcp[tcpflags] & tcp-rst != 0"
 
 # Capture RSTs on a specific port
@@ -55,7 +56,7 @@ sysctl -w net.ipv4.tcp_keepalive_probes=5
 
 ### 2. AWS Security Group / ACL Mismatch
 
-```
+```text
 Symptom: RST after 350 seconds of idle
 Cause: AWS NAT gateway idle timeout is 350 seconds
 Fix: Enable TCP keepalive with interval < 350 seconds

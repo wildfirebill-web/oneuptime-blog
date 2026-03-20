@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Review what will be created
+
 terraform plan -out=plan.tfplan
 ```
 

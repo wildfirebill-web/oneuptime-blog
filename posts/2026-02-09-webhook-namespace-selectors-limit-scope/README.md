@@ -85,6 +85,7 @@ Use namespace labels to control which environments get webhook processing:
 
 ```yaml
 # Label namespaces by environment
+
 apiVersion: v1
 kind: Namespace
 metadata:

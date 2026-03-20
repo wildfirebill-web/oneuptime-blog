@@ -47,7 +47,7 @@ public class DualStackServer {
 }
 ```
 
-## Happy Eyeballs — Connecting to IPv6 First
+## Happy Eyeballs - Connecting to IPv6 First
 
 Happy Eyeballs (RFC 8305) attempts IPv6 first, with IPv4 as fallback after a 250ms delay:
 

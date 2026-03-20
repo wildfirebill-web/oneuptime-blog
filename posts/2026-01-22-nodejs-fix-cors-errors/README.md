@@ -380,6 +380,7 @@ curl does not enforce CORS (only browsers do), so use it to verify your API work
 
 ```bash
 # Test with Origin header
+
 curl -i -H "Origin: https://myapp.com" http://localhost:3000/api/data
 
 # Test preflight

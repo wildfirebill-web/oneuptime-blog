@@ -24,6 +24,7 @@ Subscribe to and configure Shield Advanced:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

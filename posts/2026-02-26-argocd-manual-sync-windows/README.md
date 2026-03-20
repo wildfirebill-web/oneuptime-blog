@@ -148,6 +148,7 @@ When `manualSync: true` is set, these are the ways to trigger a manual sync duri
 
 ```bash
 # Standard manual sync
+
 argocd app sync my-app
 
 # Selective manual sync

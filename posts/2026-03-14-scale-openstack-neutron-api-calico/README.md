@@ -30,6 +30,7 @@ Increase API workers to handle more concurrent requests.
 
 ```bash
 # /etc/neutron/neutron.conf
+
 # Scale API workers based on CPU cores
 cat << 'EOF' | sudo tee /etc/neutron/neutron.conf.d/scale.conf
 [DEFAULT]

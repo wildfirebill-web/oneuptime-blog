@@ -20,6 +20,7 @@ You need Redis running:
 
 ```bash
 # Using Docker
+
 docker run -d -p 6379:6379 redis
 
 # Or install locally

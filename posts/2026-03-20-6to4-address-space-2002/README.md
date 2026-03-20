@@ -12,7 +12,7 @@ Description: Understand the 6to4 address space 2002::/16 (RFC 3056), how IPv4 ad
 
 ## Address Format
 
-```
+```yaml
  |  16 bits  |    32 bits     |  16 bits  |   64 bits  |
  +-----------+----------------+-----------+------------+
  | 2002::/16 |  IPv4 Address  | Subnet ID | Interface ID|
@@ -65,6 +65,7 @@ def parse_6to4_address(ipv6_str: str) -> dict:
     }
 
 # Examples
+
 print(ipv4_to_6to4("203.0.113.42"))      # 2002:cb00:712a::/48
 print(ipv4_to_6to4("8.8.8.8"))           # 2002:808:808::/48
 print(parse_6to4_address("2002:cb00:712a::1"))
@@ -72,10 +73,10 @@ print(parse_6to4_address("2002:cb00:712a::1"))
 
 ## Why 6to4 Should Be Disabled
 
-```
+```text
 Problems with 6to4:
   1. Anycast relay discovery: 6to4 uses anycast 192.88.99.1 for relay selection
-     — Anycast relays are unreliable and often operated by unknown parties
+     - Anycast relays are unreliable and often operated by unknown parties
   2. Asymmetric routing: outbound and inbound paths differ
   3. No NAT traversal: requires a public IPv4 address
   4. RFC 7526 deprecated 192.88.99.0/24 anycast in 2015

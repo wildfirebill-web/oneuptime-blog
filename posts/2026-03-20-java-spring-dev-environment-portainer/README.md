@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Java, Spring Boot, Development Environment, Docker, Maven, Gradle
+Tags: Portainer, Java, Spring Boot, Development Environments, Docker, Maven, Gradle
 
 Description: Learn how to set up a Java Spring Boot development environment with hot-reload using Spring DevTools in a Docker container managed by Portainer.
 
@@ -46,6 +46,7 @@ volumes:
 # src/main/resources/application-dev.properties
 
 # Show SQL queries in development
+
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 

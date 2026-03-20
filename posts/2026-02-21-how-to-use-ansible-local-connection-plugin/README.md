@@ -35,6 +35,7 @@ Set the connection for an entire play:
 
 ```yaml
 # local_setup.yml
+
 ---
 - name: Configure the control node
   hosts: localhost

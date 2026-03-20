@@ -44,6 +44,7 @@ Copy the endpoint and API key.
 
 ```bash
 # Install the Azure Content Safety SDK
+
 pip install azure-ai-contentsafety
 ```
 

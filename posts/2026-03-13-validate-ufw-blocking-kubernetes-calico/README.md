@@ -30,6 +30,7 @@ A thorough validation also checks that the fix is persistent across node reboots
 
 ```bash
 # Check all nodes
+
 for NODE in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   echo -n "$NODE FORWARD: "
   ssh $NODE "sudo iptables -L FORWARD -n | head -1" 2>/dev/null

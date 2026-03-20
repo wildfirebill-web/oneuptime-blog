@@ -191,6 +191,7 @@ Here is a foundational implementation of full extraction using Python:
 
 ```python
 # full_extraction.py
+
 # Basic full extraction implementation with connection management and batching
 
 import logging

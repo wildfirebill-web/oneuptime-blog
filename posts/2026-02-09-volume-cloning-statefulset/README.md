@@ -95,6 +95,7 @@ PVC_NAME="postgres-replica-${REPLICA_NUM}-pvc"
 echo "=== Creating PostgreSQL Replica $REPLICA_NUM ==="
 
 # Clone master volume
+
 echo "Cloning master volume..."
 
 kubectl apply -f - <<EOF

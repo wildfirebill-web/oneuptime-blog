@@ -8,7 +8,7 @@ Description: Configure Portainer to use StartTLS encryption when connecting to y
 
 ## Introduction
 
-StartTLS upgrades a plain LDAP connection (port 389) to an encrypted TLS connection after the initial handshake. It's a middle ground between unencrypted LDAP and full LDAPS (port 636) — you use the standard LDAP port but get encryption. This guide configures Portainer to use StartTLS with your LDAP server.
+StartTLS upgrades a plain LDAP connection (port 389) to an encrypted TLS connection after the initial handshake. It's a middle ground between unencrypted LDAP and full LDAPS (port 636) - you use the standard LDAP port but get encryption. This guide configures Portainer to use StartTLS with your LDAP server.
 
 ## StartTLS vs LDAPS
 
@@ -31,6 +31,7 @@ StartTLS is preferred when your environment uses port 389 exclusively (firewall 
 
 ```bash
 # Test StartTLS connectivity
+
 ldapsearch -x \
   -H ldap://ldap.example.com:389 \
   -Z \
@@ -70,7 +71,7 @@ openssl x509 -in ldap-ca.pem -text -noout | grep -E "Subject:|Issuer:|Not After:
 
 In Settings → Authentication → LDAP:
 
-```
+```text
 Server:              ldap.example.com:389
 StartTLS:            Enabled (toggle ON)
 Skip TLS Verify:     Off (for production - verify the certificate)
@@ -78,7 +79,7 @@ TLS CA Certificate:  [paste the PEM certificate content]
 ```
 
 **PEM Format Example:**
-```
+```text
 -----BEGIN CERTIFICATE-----
 MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
 ... (certificate content) ...

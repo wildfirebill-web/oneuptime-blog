@@ -22,6 +22,7 @@ Start with the basic S3 configuration in your Loki config file.
 
 ```yaml
 # loki-config.yaml
+
 auth_enabled: false
 
 server:

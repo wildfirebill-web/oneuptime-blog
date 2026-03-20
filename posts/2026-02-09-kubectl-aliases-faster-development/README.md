@@ -20,6 +20,7 @@ Start with simple one-to-one mappings:
 # Add to ~/.bashrc or ~/.zshrc
 
 # Core kubectl shortcut
+
 alias k='kubectl'
 
 # Get commands
@@ -214,7 +215,7 @@ kevents() {
 }
 ```
 
-## Resource Management Functions
+Resource Management Functions
 
 Automate common resource operations:
 

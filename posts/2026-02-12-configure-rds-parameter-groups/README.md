@@ -38,6 +38,7 @@ For other engines:
 
 ```bash
 # MySQL 8.0
+
 aws rds create-db-parameter-group \
   --db-parameter-group-name my-mysql-params \
   --db-parameter-group-family mysql8.0 \

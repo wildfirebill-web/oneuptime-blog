@@ -24,6 +24,7 @@ The default split mode divides a file every 1000 lines:
 
 ```bash
 # Split into 1000-line chunks (default)
+
 split large_file.txt
 
 # Creates: xaa, xab, xac, ...

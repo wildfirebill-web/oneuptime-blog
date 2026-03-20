@@ -32,6 +32,7 @@ For Python:
 
 ```bash
 # Install the Error Reporting client library for Python
+
 pip install google-cloud-error_reporting
 ```
 

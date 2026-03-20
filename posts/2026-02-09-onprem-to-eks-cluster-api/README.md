@@ -19,6 +19,7 @@ Set up a management cluster to provision the target EKS cluster.
 # Install Cluster API on management cluster
 
 # Install clusterctl
+
 curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.6.1/clusterctl-linux-amd64 -o clusterctl
 sudo install -o root -g root -m 0755 clusterctl /usr/local/bin/clusterctl
 

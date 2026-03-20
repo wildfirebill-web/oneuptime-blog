@@ -18,6 +18,7 @@ Document exactly what you are running before making any changes:
 
 ```bash
 # Record current Ansible version details
+
 ansible --version
 
 # Record installed collections and their versions

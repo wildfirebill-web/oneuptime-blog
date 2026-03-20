@@ -146,6 +146,7 @@ Tune how Prometheus scrapes Istio metrics:
 
 ```yaml
 # In your Prometheus configuration
+
 scrape_configs:
 - job_name: 'envoy-stats'
   metrics_path: /stats/prometheus

@@ -35,6 +35,7 @@ The cleanest approach is to build a custom repo server image:
 
 ```dockerfile
 # Dockerfile
+
 FROM quay.io/argoproj/argocd:v2.13.0
 
 # Switch to root to install

@@ -59,6 +59,7 @@ Initialize your Go module and install the required dependencies. Fiber v2 is the
 
 ```bash
 # Initialize the Go module
+
 go mod init myapi
 
 # Install Fiber - the web framework

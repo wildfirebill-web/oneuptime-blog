@@ -34,6 +34,7 @@ This Terraform configuration sets up an IAM baseline with enforced MFA, password
 
 ```hcl
 # Enforce a strong password policy
+
 resource "aws_iam_account_password_policy" "strict" {
   minimum_password_length        = 14
   require_lowercase_characters   = true

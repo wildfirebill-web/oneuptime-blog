@@ -44,6 +44,7 @@ Each .ps1 file should contain a complete, publishable runbook:
 
 ```powershell
 # Restart-VM.ps1
+
 # Runbook to restart a specified Azure VM with logging and validation
 # Triggered by webhook or schedule
 

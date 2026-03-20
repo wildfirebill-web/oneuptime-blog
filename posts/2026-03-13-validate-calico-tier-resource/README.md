@@ -22,6 +22,7 @@ Validating Calico Tier configuration requires confirming that tiers exist with t
 
 ```bash
 # List all tiers and their orders
+
 calicoctl get tiers -o yaml
 
 # Verify order values match expected hierarchy

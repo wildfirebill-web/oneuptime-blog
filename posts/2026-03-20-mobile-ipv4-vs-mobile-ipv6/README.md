@@ -24,7 +24,7 @@ Mobile IPv4 (MIPv4, RFC 5944) and Mobile IPv6 (MIPv6, RFC 6275) both allow nodes
 
 ## Triangle Routing Problem
 
-```
+```javascript
 Mobile IPv4 (always triangular):
   MN (at foreign network) ------> HA ------> CN
   MN <------ HA <------ CN
@@ -37,7 +37,7 @@ Mobile IPv6 with Route Optimization:
 
 ## Mobile IPv4 Collocated CoA vs Foreign Agent CoA
 
-```
+```text
 MIPv4 Foreign Agent mode:
   MN uses FA's address as CoA
   Packets: src=CN → dst=HA → tunnel → dst=FA → decap → MN
@@ -51,6 +51,7 @@ MIPv4 Collocated CoA mode:
 
 ```bash
 # MIPv6: MN obtains CoA via SLAAC on foreign link
+
 # No Foreign Agent needed
 
 # When MN attaches to foreign link fd00:foreign::/64:
@@ -85,7 +86,7 @@ for i, step in enumerate(steps, 1):
 
 ## Security Differences
 
-```
+```text
 Mobile IPv4:
   - BU authenticated via IPsec AH/ESP (optional in practice)
   - Foreign Agent authenticated via mobility extension

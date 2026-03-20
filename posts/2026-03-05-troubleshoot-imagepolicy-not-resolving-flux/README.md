@@ -25,6 +25,7 @@ Begin by examining the ImagePolicy resource status.
 
 ```bash
 # Get the status of all ImagePolicy resources
+
 flux get image policy --all-namespaces
 
 # Get detailed information about a specific ImagePolicy

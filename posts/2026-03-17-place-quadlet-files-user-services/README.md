@@ -18,6 +18,7 @@ User services run as your regular user account without root privileges. They are
 
 ```bash
 # Primary location for user Quadlet files
+
 ~/.config/containers/systemd/
 
 # Create it if it doesn't exist

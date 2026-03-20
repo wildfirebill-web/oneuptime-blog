@@ -1,13 +1,12 @@
----
-title: "Using Provider-Defined Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, functions
-description: "Learn how to use provider-defined functions in OpenTofu 1.7+ to call provider-specific logic directly in your configuration."
----
-
 # Using Provider-Defined Functions in OpenTofu
 
-OpenTofu 1.7 introduced provider-defined functions — custom functions that providers can expose for use in your configurations. These allow providers to offer complex logic (like ARN parsing, CIDR manipulation, or encoding) directly callable from HCL.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Functions
+
+Description: Learn how to use provider-defined functions in OpenTofu 1.7+ to call provider-specific logic directly in your configuration.
+
+OpenTofu 1.7 introduced provider-defined functions - custom functions that providers can expose for use in your configurations. These allow providers to offer complex logic (like ARN parsing, CIDR manipulation, or encoding) directly callable from HCL.
 
 ## What Are Provider-Defined Functions?
 
@@ -15,6 +14,7 @@ Provider-defined functions are like built-in functions, but implemented by the p
 
 ```hcl
 # Call a provider-defined function
+
 result = provider::<provider_name>::<function_name>(<arguments>)
 ```
 
@@ -193,4 +193,4 @@ tofu providers schema -json | jq '.provider_schemas."registry.opentofu.org/hashi
 
 ## Conclusion
 
-Provider-defined functions extend OpenTofu's expression language with domain-specific operations. Use the `provider::` prefix to call them in your configurations. As providers increasingly adopt this feature, you'll find powerful utilities for ARN manipulation, CIDR operations, encoding, and more available directly in your HCL — no workarounds needed.
+Provider-defined functions extend OpenTofu's expression language with domain-specific operations. Use the `provider::` prefix to call them in your configurations. As providers increasingly adopt this feature, you'll find powerful utilities for ARN manipulation, CIDR operations, encoding, and more available directly in your HCL - no workarounds needed.

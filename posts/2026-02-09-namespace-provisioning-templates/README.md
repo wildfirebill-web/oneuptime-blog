@@ -30,6 +30,7 @@ Build a foundational template:
 
 ```yaml
 # templates/base-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

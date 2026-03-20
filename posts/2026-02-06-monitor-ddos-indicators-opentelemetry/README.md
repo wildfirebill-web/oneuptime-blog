@@ -12,6 +12,7 @@ DDoS attacks are not always volumetric blasts that overwhelm your bandwidth. App
 
 ```python
 # ddos_metrics.py
+
 from opentelemetry import metrics, trace
 
 meter = metrics.get_meter("security.ddos")

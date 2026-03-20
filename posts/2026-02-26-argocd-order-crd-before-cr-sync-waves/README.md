@@ -36,6 +36,7 @@ The fix is to place CRDs in a lower sync wave than their corresponding CRs.
 
 ```yaml
 # crd.yaml - Wave -3: Install CRD first
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

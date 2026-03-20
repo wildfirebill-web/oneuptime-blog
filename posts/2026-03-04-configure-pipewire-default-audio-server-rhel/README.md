@@ -14,6 +14,7 @@ PipeWire is a modern multimedia server that handles both audio and video streams
 
 ```bash
 # Check if PipeWire is running
+
 systemctl --user status pipewire pipewire-pulse
 
 # Check which audio server is handling PulseAudio clients

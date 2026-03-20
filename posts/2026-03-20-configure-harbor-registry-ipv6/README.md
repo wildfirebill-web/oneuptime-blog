@@ -14,6 +14,7 @@ Harbor is a popular open-source container registry with security scanning, RBAC,
 
 ```bash
 # Verify Docker and Docker Compose are installed
+
 docker --version
 docker compose version
 

@@ -125,6 +125,7 @@ variable "oncall_phone" { type = string }
 
 ```hcl
 # Create an alert policy that uses multiple notification channels
+
 resource "google_monitoring_alert_policy" "high_cpu" {
   display_name = "High CPU Alert"
   combiner     = "OR"

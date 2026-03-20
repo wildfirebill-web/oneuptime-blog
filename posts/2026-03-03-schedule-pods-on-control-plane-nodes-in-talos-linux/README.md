@@ -26,6 +26,7 @@ You can verify the taints on your control plane nodes:
 
 ```bash
 # Check taints on all nodes
+
 kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
 
 # Detailed view of a specific control plane node
@@ -286,7 +287,7 @@ kubectl get pods --all-namespaces --field-selector spec.nodeName=cp-1
 kubectl get daemonset -n monitoring node-exporter -o wide
 ```
 
-## Resource Considerations
+Resource Considerations
 
 When scheduling pods on control plane nodes, account for the resources already consumed by control plane components:
 

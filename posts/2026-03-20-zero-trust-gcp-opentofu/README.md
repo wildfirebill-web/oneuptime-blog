@@ -14,6 +14,7 @@ GCP's BeyondCorp model implements zero trust by routing all application access t
 
 ```hcl
 # main.tf - IAP for zero trust application access
+
 resource "google_project_service" "iap" {
   service = "iap.googleapis.com"
 }

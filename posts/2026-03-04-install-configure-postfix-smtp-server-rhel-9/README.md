@@ -24,6 +24,7 @@ Postfix is usually installed by default on RHEL. If not, install it:
 
 ```bash
 # Install postfix
+
 sudo dnf install -y postfix
 ```
 

@@ -46,6 +46,7 @@ Install Uvicorn with the standard extras for better performance.
 
 ```bash
 # Install uvicorn with uvloop and httptools for best performance
+
 pip install uvicorn[standard]
 
 # Or install components separately

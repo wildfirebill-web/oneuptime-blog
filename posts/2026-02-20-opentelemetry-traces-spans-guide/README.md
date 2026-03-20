@@ -78,6 +78,7 @@ from opentelemetry.sdk.trace.export import (
 )
 
 # Set up the tracer provider
+
 # The provider manages tracer instances and span processors
 provider = TracerProvider()
 processor = BatchSpanProcessor(ConsoleSpanExporter())

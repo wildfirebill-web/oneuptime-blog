@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Development, Local, Age
+Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Development, Locals, Age
 
 Description: Learn how to set up local SOPS decryption for developers working with Flux-managed encrypted secrets during development and debugging.
 
@@ -20,6 +20,7 @@ Install the required tools:
 
 ```bash
 # Install SOPS
+
 brew install sops
 
 # Install age

@@ -35,6 +35,7 @@ Here is the complete Docker Compose configuration for the entire stack:
 
 ```yaml
 # docker-compose.yaml
+
 # Complete LGTM stack for local OpenTelemetry development
 
 version: '3.8'

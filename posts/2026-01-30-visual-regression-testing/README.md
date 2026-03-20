@@ -305,6 +305,7 @@ Percy requires a token for uploads. Set this in your CI environment.
 
 ```yaml
 # .github/workflows/visual-tests.yml
+
 name: Visual Regression Tests
 
 on:

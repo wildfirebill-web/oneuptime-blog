@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Upgrades, Automation, DevOps
+Tags: K3s, Kubernetes, Upgrade, Automation, DevOps
 
 Description: Learn how to use the System Upgrade Controller to automate K3s upgrades across your cluster with minimal downtime.
 
@@ -22,6 +22,7 @@ Deploy the System Upgrade Controller into your cluster using the official manife
 
 ```bash
 # Apply the System Upgrade Controller manifest
+
 kubectl apply -f https://github.com/rancher/system-upgrade-controller/releases/latest/download/system-upgrade-controller.yaml
 
 # Verify the controller pod is running

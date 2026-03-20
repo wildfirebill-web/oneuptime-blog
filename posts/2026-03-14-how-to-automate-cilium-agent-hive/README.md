@@ -31,6 +31,7 @@ To audit the entire cluster, iterate over all Cilium pods:
 ```bash
 #!/bin/bash
 # collect-hive-graphs.sh
+
 # Collect hive dependency graphs from all Cilium agent pods
 
 set -euo pipefail

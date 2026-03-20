@@ -16,6 +16,7 @@ Like the other `-all` commands, `apply-all` is deprecated in favor of the `run-a
 
 ```bash
 # Legacy (deprecated, still works)
+
 terragrunt apply-all
 
 # Modern (recommended)

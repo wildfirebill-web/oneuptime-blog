@@ -30,6 +30,7 @@ Start by checking whether Prometheus can see and reach the Cilium targets.
 
 ```bash
 # Check Prometheus targets via the API
+
 kubectl port-forward -n monitoring svc/prometheus-operated 9090:9090 &
 curl -s http://localhost:9090/api/v1/targets | python3 -c "
 import json, sys

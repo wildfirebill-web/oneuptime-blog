@@ -30,6 +30,7 @@ The simplest delegated setup tests against localhost or an existing host.
 
 ```yaml
 # molecule/delegated/molecule.yml
+
 dependency:
   name: galaxy
 

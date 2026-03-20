@@ -12,7 +12,7 @@ Cisco NX-OS is the operating system for Nexus series datacenter switches. While 
 
 ## Step 1: Enable IPv6 Features
 
-```
+```text
 ! Enable IPv6 unicast routing (enabled by default on most NX-OS versions)
 N9K(config)# feature ipv6
 
@@ -25,7 +25,7 @@ N9K(config)# feature bgp
 
 ## Step 2: Configure IPv6 Addresses on Interfaces
 
-```
+```text
 ! Configure a routed interface with IPv6
 N9K(config)# interface Ethernet1/1
 N9K(config-if)# no switchport
@@ -47,7 +47,7 @@ N9K(config-if)# ipv6 address 2001:db8::1/128
 
 VRFs are commonly used for tenant isolation in datacenter environments:
 
-```
+```text
 ! Create a VRF and enable IPv6
 N9K(config)# vrf context TENANT-A
 N9K(config-vrf)# address-family ipv6 unicast
@@ -65,7 +65,7 @@ N9K(config)# ipv6 route 2001:db8:3::/48 2001:db8:2:1::2 vrf TENANT-A
 
 ## Step 4: Configure OSPFv3
 
-```
+```text
 ! Configure OSPFv3 instance
 N9K(config)# router ospfv3 CORE
 N9K(config-router)# router-id 1.1.1.1
@@ -84,7 +84,7 @@ N9K(config-router-vrf)# router-id 2.2.2.2
 
 For spine-leaf fabrics using eBGP:
 
-```
+```text
 ! Configure BGP with IPv6 address family
 N9K(config)# router bgp 65001
 N9K(config-router)# router-id 10.0.0.1
@@ -99,7 +99,7 @@ N9K(config-router-neighbor-af)# activate
 
 ## Step 6: Configure IPv6 ACL
 
-```
+```text
 ! Create an IPv6 ACL
 N9K(config)# ipv6 access-list IPV6-INBOUND
 N9K(config-ipv6-acl)# permit icmp any any
@@ -113,7 +113,7 @@ N9K(config-if)# ipv6 traffic-filter IPV6-INBOUND in
 
 ## Verification Commands
 
-```
+```text
 ! Show IPv6 interface status
 N9K# show ipv6 interface brief
 

@@ -16,6 +16,7 @@ The `command` module executes commands directly without a shell interpreter. Sin
 
 ```yaml
 # pipe_basics.yml - Basic pipe usage in Ansible
+
 ---
 - name: Basic pipe examples
   hosts: all

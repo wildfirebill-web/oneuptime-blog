@@ -277,6 +277,7 @@ func (p *piiProcessor) redactLogBody(log plog.LogRecord) {
 
 ```yaml
 # otel-collector-config.yaml
+
 processors:
   pii_redactor:
     pii_attributes:

@@ -85,6 +85,7 @@ The following command creates a new topic with message retention enabled. Retent
 
 ```bash
 # Create a topic with 7-day message retention
+
 # Duration format: XdYhZm (days, hours, minutes)
 gcloud pubsub topics create orders-topic \
     --message-retention-duration=7d \

@@ -8,12 +8,13 @@ Description: Learn how to design a tagging module for OpenTofu that generates co
 
 ## Introduction
 
-Inconsistent tagging is one of the top causes of cloud cost visibility problems. A tagging module enforces mandatory tags, validates tag values, and generates the complete tag map that all other modules consume — ensuring every resource carries the same required metadata.
+Inconsistent tagging is one of the top causes of cloud cost visibility problems. A tagging module enforces mandatory tags, validates tag values, and generates the complete tag map that all other modules consume - ensuring every resource carries the same required metadata.
 
 ## Module Design
 
 ```hcl
 # modules/tags/variables.tf
+
 variable "environment" {
   type = string
   validation {

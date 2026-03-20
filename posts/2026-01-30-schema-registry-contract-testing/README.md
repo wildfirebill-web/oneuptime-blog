@@ -910,6 +910,7 @@ Integrate schema validation into your deployment pipeline to catch breaking chan
 
 ```yaml
 # .github/workflows/schema-validation.yml
+
 name: Schema Contract Validation
 
 on:

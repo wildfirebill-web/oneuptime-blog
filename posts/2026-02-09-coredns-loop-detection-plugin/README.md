@@ -80,6 +80,7 @@ Test loop detection:
 
 ```bash
 # Check CoreDNS logs for loop detection
+
 kubectl logs -n kube-system -l k8s-app=kube-dns | grep -i loop
 
 # If loop detected, you'll see:

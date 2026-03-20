@@ -52,6 +52,7 @@ Create a custom bridge network with default settings:
 
 ```bash
 # Create a custom bridge network named "app-network"
+
 docker network create app-network
 
 # Verify the network was created

@@ -14,6 +14,7 @@ Build automated IPv6 network inventory tools that discover and catalog all IPv6 
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

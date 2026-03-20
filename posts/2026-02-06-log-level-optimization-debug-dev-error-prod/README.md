@@ -74,6 +74,7 @@ For Python applications, use the standard logging integration with level configu
 
 ```python
 # Python log level configuration that reads the environment
+
 # and sets the appropriate minimum level for the OTel handler.
 import os
 import logging

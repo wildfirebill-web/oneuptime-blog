@@ -16,6 +16,7 @@ The `version` test takes two arguments: the version to compare against and the c
 
 ```yaml
 # Basic version comparison examples
+
 ---
 - name: Version comparison basics
   hosts: all

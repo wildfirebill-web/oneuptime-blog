@@ -35,6 +35,7 @@ IRSA requires an OIDC identity provider. Most EKS clusters created with eksctl h
 
 ```bash
 # Check if OIDC is already associated
+
 aws eks describe-cluster \
   --name argocd-management-cluster \
   --region us-east-1 \

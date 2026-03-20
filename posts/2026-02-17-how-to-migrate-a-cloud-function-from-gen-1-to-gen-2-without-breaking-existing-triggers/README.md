@@ -52,6 +52,7 @@ Start by documenting everything about your Gen 1 function. Run the following gcl
 
 ```bash
 # Get complete function details including trigger configuration
+
 gcloud functions describe my-function \
   --region=us-central1 \
   --format=yaml

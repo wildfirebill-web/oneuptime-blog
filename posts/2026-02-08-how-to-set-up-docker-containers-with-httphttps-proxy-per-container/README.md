@@ -28,6 +28,7 @@ Pass proxy settings through environment variables:
 
 ```bash
 # Run a container with HTTP/HTTPS proxy configuration
+
 docker run -d \
   -e HTTP_PROXY=http://proxy.company.com:8080 \
   -e HTTPS_PROXY=http://proxy.company.com:8080 \

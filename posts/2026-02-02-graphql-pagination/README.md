@@ -51,6 +51,7 @@ The following GraphQL schema defines types and queries for offset-based paginati
 
 ```graphql
 # Define the input type for pagination parameters
+
 input PaginationInput {
   # Number of items to skip (defaults to 0)
   offset: Int = 0

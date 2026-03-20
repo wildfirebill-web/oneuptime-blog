@@ -141,6 +141,7 @@ onboard_user() {
 }
 
 # Usage
+
 onboard_user "jdoe" "Jane Doe" "jane@example.com" "TempPass123!" "c-m-abc12345" "cluster-member"
 ```
 

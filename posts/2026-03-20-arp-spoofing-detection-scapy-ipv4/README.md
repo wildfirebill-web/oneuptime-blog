@@ -22,6 +22,7 @@ from collections import defaultdict
 import time
 
 # Known-good ARP table: maps IP -> MAC
+
 # Initialize with your network's gateway and critical hosts
 KNOWN_HOSTS: dict[str, str] = {
     # "192.168.1.1": "aa:bb:cc:dd:ee:ff",  # Your router's real MAC
@@ -79,7 +80,7 @@ def process_arp(pkt):
             print(f"    New MAC:      {src_mac}")
         return
 
-    # First time seeing this IP — add to dynamic table
+    # First time seeing this IP - add to dynamic table
     arp_table[src_ip] = src_mac
     print(f"[+] Learned: {src_ip} is at {src_mac}")
 

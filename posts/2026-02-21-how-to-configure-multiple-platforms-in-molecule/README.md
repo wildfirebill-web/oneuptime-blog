@@ -20,6 +20,7 @@ Add multiple entries to the `platforms` list in your `molecule.yml`.
 
 ```yaml
 # molecule/default/molecule.yml - test on Ubuntu and Rocky Linux
+
 driver:
   name: docker
 

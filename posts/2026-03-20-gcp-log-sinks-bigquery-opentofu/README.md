@@ -6,7 +6,7 @@ Tags: OpenTofu, GCP, Cloud Logging, BigQuery, Log Analytics, Infrastructure as C
 
 Description: Learn how to create GCP Cloud Logging sinks that export logs to BigQuery using OpenTofu, enabling SQL-based log analysis, dashboards, and long-term log retention.
 
-GCP Log Sinks route log entries to external destinations for long-term storage and analysis. BigQuery is the most powerful destination for log analysis — it lets you run SQL queries over terabytes of logs with zero operational overhead. Managing log sinks in OpenTofu ensures consistent routing configuration across all your projects.
+GCP Log Sinks route log entries to external destinations for long-term storage and analysis. BigQuery is the most powerful destination for log analysis - it lets you run SQL queries over terabytes of logs with zero operational overhead. Managing log sinks in OpenTofu ensures consistent routing configuration across all your projects.
 
 ## Provider Configuration
 
@@ -59,6 +59,7 @@ resource "google_bigquery_dataset" "logs" {
 
 ```hcl
 # Sink all application logs to BigQuery
+
 resource "google_logging_project_sink" "app_to_bigquery" {
   name    = "app-logs-to-bigquery"
   project = var.project_id

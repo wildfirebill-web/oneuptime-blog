@@ -396,6 +396,7 @@ Verify your routing with different content types:
 
 ```bash
 # JSON request
+
 curl -X POST -H "Content-Type: application/json" \
   -d '{"key": "value"}' \
   http://api.example.com/api/data

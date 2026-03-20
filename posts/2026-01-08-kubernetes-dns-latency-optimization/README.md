@@ -52,6 +52,7 @@ sequenceDiagram
 
 ```bash
 # Create a debug pod
+
 kubectl run dns-perf --image=nicolaka/netshoot --rm -it -- bash
 
 # Measure DNS resolution time

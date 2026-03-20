@@ -24,6 +24,7 @@ Create an in-memory broker for development:
 
 ```yaml
 # development-broker.yaml
+
 apiVersion: eventing.knative.dev/v1
 kind: Broker
 metadata:

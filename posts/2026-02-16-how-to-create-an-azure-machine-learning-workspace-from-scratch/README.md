@@ -84,6 +84,7 @@ For repeatable setups, use the Azure CLI. This is especially useful for CI/CD pi
 
 ```bash
 # Install the Azure ML CLI extension if you have not already
+
 az extension add --name ml --version 2.22.0
 
 # Create a resource group

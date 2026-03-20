@@ -14,6 +14,7 @@ The `ansible.builtin.wait_for_connection` module waits until Ansible can establi
 
 ```yaml
 # Reboot and wait for the host to come back
+
 - name: Reboot the server
   ansible.builtin.reboot:
     msg: "Rebooting for kernel update"

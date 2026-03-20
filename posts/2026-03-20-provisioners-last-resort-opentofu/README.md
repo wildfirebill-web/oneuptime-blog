@@ -21,7 +21,8 @@ Provisioners break OpenTofu's declarative model in several ways:
 5. **Tight coupling**: Embeds imperative logic into declarative config
 
 ```hcl
-# Example of what NOT to do — using provisioner for software installation
+# Example of what NOT to do - using provisioner for software installation
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"

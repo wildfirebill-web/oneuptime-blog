@@ -18,6 +18,7 @@ Timestream organizes data into databases and tables. Each table has its own rete
 
 ```bash
 # Create a Timestream database
+
 aws timestream-write create-database \
   --database-name monitoring
 

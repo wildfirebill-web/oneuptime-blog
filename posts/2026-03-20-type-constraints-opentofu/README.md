@@ -14,6 +14,7 @@ Type constraints in OpenTofu specify the expected type of a variable or output. 
 
 ```hcl
 # string: text values
+
 variable "environment" {
   type    = string
   default = "dev"

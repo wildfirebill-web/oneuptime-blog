@@ -33,6 +33,7 @@ First, create an SNS topic and subscribe your team.
 
 ```bash
 # Create the SNS topic
+
 aws sns create-topic --name guardduty-findings
 
 # Subscribe email addresses

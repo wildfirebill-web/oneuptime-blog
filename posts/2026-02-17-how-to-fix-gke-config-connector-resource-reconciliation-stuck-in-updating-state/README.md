@@ -40,6 +40,7 @@ Get the detailed status of the stuck resource:
 
 ```bash
 # Check the resource status
+
 kubectl get [RESOURCE_KIND] [RESOURCE_NAME] -n your-namespace
 
 # Get detailed conditions

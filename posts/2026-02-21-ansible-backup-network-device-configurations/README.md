@@ -18,6 +18,7 @@ The fastest way to backup a device config is with the `ios_config` module and it
 
 ```yaml
 # simple_backup.yml - One-liner backup for Cisco IOS devices
+
 ---
 - name: Backup network device configurations
   hosts: all_network

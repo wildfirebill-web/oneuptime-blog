@@ -14,6 +14,7 @@ Consul provides service discovery, health checking, key-value storage, and servi
 
 ```hcl
 # Generate a gossip encryption key
+
 resource "random_bytes" "gossip_key" {
   length = 32
 }

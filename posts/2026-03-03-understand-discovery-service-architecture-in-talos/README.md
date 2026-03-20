@@ -70,6 +70,7 @@ You can observe this from the Talos side:
 
 ```bash
 # View the result of the query (decrypted members)
+
 talosctl get discoveredmembers --nodes <node-ip>
 
 # View detailed member data

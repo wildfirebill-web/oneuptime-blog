@@ -29,6 +29,7 @@ Create a systemd unit file that manages a Docker container:
 
 ```ini
 # /etc/systemd/system/docker-redis.service
+
 # Systemd unit file to manage a Redis Docker container
 
 [Unit]
@@ -221,7 +222,7 @@ WantedBy=multi-user.target
 
 With a shared Docker network, containers can reach each other by name (e.g., `redis:6379` instead of `host.docker.internal:6379`).
 
-## Resource Limits Through Systemd
+Resource Limits Through Systemd
 
 Systemd can enforce resource limits on Docker containers at the system level:
 

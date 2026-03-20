@@ -54,8 +54,9 @@ volumes:
 
 After setup, go to **Settings > DNS settings** and set upstream resolvers. Use encrypted DNS for privacy:
 
-```
+```text
 # Cloudflare DNS-over-HTTPS
+
 https://dns.cloudflare.com/dns-query
 
 # Google DNS-over-HTTPS
@@ -69,7 +70,7 @@ tls://dns.quad9.net
 
 AdGuard Home provides a DoH endpoint your devices can use natively:
 
-```
+```text
 https://<your-adguard-ip>/dns-query
 ```
 

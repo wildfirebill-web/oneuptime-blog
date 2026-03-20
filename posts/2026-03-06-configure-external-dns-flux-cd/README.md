@@ -41,6 +41,7 @@ graph LR
 
 ```yaml
 # clusters/my-cluster/sources/external-dns-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -34,6 +34,7 @@ Here's a minimal configuration to get started with the Splunk HEC exporter. This
 
 ```yaml
 # Receivers for collecting telemetry data
+
 receivers:
   otlp:
     protocols:

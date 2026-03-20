@@ -26,6 +26,7 @@ This guide walks you through creating a DOKS cluster, setting up DOCR, bootstrap
 
 ```bash
 # Create a Kubernetes cluster on DigitalOcean
+
 doctl kubernetes cluster create flux-cluster \
   --region nyc1 \
   --version 1.29.1-do.0 \

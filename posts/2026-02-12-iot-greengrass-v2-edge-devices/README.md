@@ -62,6 +62,7 @@ Create a thing, certificate, and policy for the Greengrass core device.
 
 ```bash
 # Create the IoT thing for the Greengrass core
+
 aws iot create-thing \
   --thing-name "my-greengrass-core"
 

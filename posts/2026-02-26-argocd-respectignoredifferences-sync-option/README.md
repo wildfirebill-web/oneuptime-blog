@@ -18,6 +18,7 @@ Let me walk through a concrete example. Say you have a Deployment where an HPA (
 
 ```yaml
 # Your Git manifest
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

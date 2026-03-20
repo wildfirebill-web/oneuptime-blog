@@ -26,6 +26,7 @@ The validate command performs these checks without modifying the cluster:
 
 ```bash
 # calicoctl validate only reads the file -- it never contacts the datastore
+
 calicoctl validate -f policy.yaml
 
 # This is equivalent to a dry-run syntax check

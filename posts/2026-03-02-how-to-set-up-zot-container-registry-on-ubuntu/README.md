@@ -23,6 +23,7 @@ Zot is an OCI-native container registry built around the OCI Distribution Specif
 
 ```bash
 # Download the latest Zot binary
+
 VERSION="2.0.2"
 curl -Lo /usr/local/bin/zot \
     https://github.com/project-zot/zot/releases/download/v${VERSION}/zot-linux-amd64

@@ -18,6 +18,7 @@ First, identify your audio server and available devices:
 
 ```bash
 # Check which audio server is running
+
 pactl info | grep "Server Name"
 
 # List all audio output devices (sinks)

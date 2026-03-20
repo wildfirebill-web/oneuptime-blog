@@ -28,6 +28,7 @@ Open Policy Agent (OPA) with Gatekeeper is the standard for Kubernetes policy en
 
 ```yaml
 # constraint-template.yaml
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

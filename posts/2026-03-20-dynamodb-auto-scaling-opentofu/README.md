@@ -16,6 +16,7 @@ DynamoDB auto scaling automatically adjusts read and write capacity in response 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     aws = {
@@ -232,11 +233,11 @@ aws application-autoscaling describe-scaling-policies \
 
 ## Best Practices
 
-1. **Set target utilization at 70%** — leaves headroom before throttling
+1. **Set target utilization at 70%** - leaves headroom before throttling
 2. **Use PAY_PER_REQUEST** for unpredictable workloads instead of auto scaling
 3. **Monitor throttled requests** with CloudWatch to tune min/max capacity
 4. **Set scale-out cooldown lower** than scale-in to respond faster to spikes
-5. **Auto scale GSIs independently** — they can have different traffic patterns
+5. **Auto scale GSIs independently** - they can have different traffic patterns
 
 ---
 

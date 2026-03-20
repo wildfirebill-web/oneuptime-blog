@@ -16,6 +16,7 @@ The `sum` function takes a list of numbers and returns their total. That is it -
 
 ```hcl
 # Add up a list of numbers
+
 > sum([1, 2, 3, 4, 5])
 15
 

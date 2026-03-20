@@ -42,6 +42,7 @@ Create a workflow that builds, tests, and pushes your container image on every p
 
 ```yaml
 # .github/workflows/ci.yaml
+
 name: CI Pipeline
 
 on:

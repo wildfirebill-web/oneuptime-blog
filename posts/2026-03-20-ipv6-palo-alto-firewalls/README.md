@@ -24,6 +24,7 @@ Via the GUI:
 Via the CLI:
 ```bash
 # Configure interface for IPv6 in the admin CLI (operational mode: > ; config mode: # )
+
 set network interface ethernet ethernet1/1 ipv6 neighbor-discovery enable yes
 set network interface ethernet ethernet1/1 ipv6 address 2001:db8:1:1::1/64 enable yes
 set network interface ethernet ethernet1/1 ipv6 address 2001:db8:1:1::1/64 advertise enable yes

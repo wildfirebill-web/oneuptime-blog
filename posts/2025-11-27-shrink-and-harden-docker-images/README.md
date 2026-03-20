@@ -16,6 +16,7 @@ Compile artifacts in one stage, run them in another. No compilers or package cac
 
 ```dockerfile
 # Stage 1: Build environment with full toolchain
+
 # Uses BUILDPLATFORM for native compilation speed during cross-platform builds
 FROM --platform=$BUILDPLATFORM golang:1.22-bullseye AS build
 WORKDIR /src

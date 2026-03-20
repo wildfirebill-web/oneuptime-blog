@@ -19,6 +19,7 @@ By default, RKE2 uses an embedded etcd cluster that runs on server nodes. For or
 
 ```bash
 # Install etcd on each etcd node (e.g., 3 dedicated etcd nodes)
+
 # On each etcd node:
 
 ETCD_VERSION="v3.5.9"

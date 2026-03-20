@@ -18,6 +18,7 @@ Check the Kustomization status for the error:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomizations -A
 
 # Get detailed error

@@ -23,6 +23,7 @@ Create an Artillery test script that enables the OpenTelemetry plugin:
 
 ```yaml
 # load-test.yaml
+
 config:
   target: "http://api.example.com"
   phases:

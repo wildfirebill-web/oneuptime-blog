@@ -161,6 +161,7 @@ Add the bind password to the ArgoCD secret:
 
 ```bash
 # Using kubectl patch
+
 kubectl patch secret argocd-secret -n argocd \
   --type merge \
   -p '{"stringData": {"dex.ldap.bindPW": "your-service-account-password"}}'

@@ -28,6 +28,7 @@ ArgoCD includes some security headers by default. You can check what headers are
 
 ```bash
 # Check current security headers
+
 curl -sI https://argocd.example.com | grep -iE "content-security|x-frame|x-content|strict-transport|referrer"
 ```
 

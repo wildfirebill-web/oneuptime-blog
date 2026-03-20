@@ -14,9 +14,10 @@ Description: Use dhclient to request a DHCP lease on a Linux interface, release 
 
 ```bash
 # Request a DHCP lease on eth0
+
 sudo dhclient eth0
 
-# Verbose mode — shows the full DHCP negotiation
+# Verbose mode - shows the full DHCP negotiation
 sudo dhclient -v eth0
 ```
 
@@ -52,7 +53,7 @@ cat /var/lib/dhcp/dhclient.eth0.leases
 ## Running dhclient in the Background
 
 ```bash
-# Run as daemon — returns immediately, keeps the lease renewed
+# Run as daemon - returns immediately, keeps the lease renewed
 sudo dhclient -nw eth0
 
 # Check that dhclient is running

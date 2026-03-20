@@ -8,7 +8,7 @@ Description: Safely remove an environment from Portainer including cleanup of as
 
 ## Introduction
 
-When an environment is decommissioned or no longer needed in Portainer, you should remove it cleanly to avoid stale entries and confusion. Removing an environment from Portainer does NOT affect the containers or services running on that environment — it only removes Portainer's connection to it.
+When an environment is decommissioned or no longer needed in Portainer, you should remove it cleanly to avoid stale entries and confusion. Removing an environment from Portainer does NOT affect the containers or services running on that environment - it only removes Portainer's connection to it.
 
 ## Before Removing
 
@@ -24,6 +24,7 @@ TOKEN=$(curl -s -X POST \
 ENDPOINT_ID=1
 
 # List stacks in this environment
+
 curl -s \
   -H "Authorization: Bearer $TOKEN" \
   "https://portainer.example.com/api/stacks?filters={\"EndpointID\":${ENDPOINT_ID}}" \
@@ -78,4 +79,4 @@ kubectl delete namespace portainer
 
 ## Conclusion
 
-Removing environments from Portainer is safe and reversible — the actual workloads keep running. Clean up the agent components from the target host to remove all traces of Portainer from the decommissioned environment.
+Removing environments from Portainer is safe and reversible - the actual workloads keep running. Clean up the agent components from the target host to remove all traces of Portainer from the decommissioned environment.

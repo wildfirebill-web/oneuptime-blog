@@ -29,6 +29,7 @@ The simplest case is running Ansible against containers on the same machine:
 
 ```yaml
 # connect_local.yml - Connect to a local Docker container
+
 ---
 - name: Configure Local Docker Container
   hosts: my_containers

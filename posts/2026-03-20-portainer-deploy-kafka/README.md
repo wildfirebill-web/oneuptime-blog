@@ -1,4 +1,4 @@
-# How to Deploy Kafka via Portainer
+# How to Deploy Kafka via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -71,6 +71,7 @@ volumes:
 
 ```bash
 # Access Kafka container via Portainer Console or:
+
 docker exec -it kafka bash
 
 # List topics

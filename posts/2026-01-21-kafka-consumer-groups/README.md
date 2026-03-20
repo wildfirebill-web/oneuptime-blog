@@ -531,6 +531,7 @@ spec:
 
 ```bash
 # List consumer groups
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 
 # Describe consumer group

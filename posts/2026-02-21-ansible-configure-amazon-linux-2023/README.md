@@ -26,6 +26,7 @@ AL2023 brings significant changes:
 
 ```ini
 # inventory/hosts
+
 [al2023]
 web-ec2-01 ansible_host=10.0.1.10
 web-ec2-02 ansible_host=10.0.1.11

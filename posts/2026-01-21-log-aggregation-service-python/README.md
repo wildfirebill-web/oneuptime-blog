@@ -45,6 +45,7 @@ The ingestion layer accepts logs from various sources and normalizes them into a
 
 ```python
 # ingestion.py
+
 # Log ingestion API with HTTP and UDP support
 from fastapi import FastAPI, Request, BackgroundTasks
 from pydantic import BaseModel, Field

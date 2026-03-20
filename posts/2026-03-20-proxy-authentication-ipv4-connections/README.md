@@ -25,6 +25,7 @@ Proxy authentication requires clients to provide credentials before the proxy fo
 
 ```bash
 # Install the htpasswd utility
+
 sudo apt-get install apache2-utils
 
 # Create a new password file with the first user

@@ -100,6 +100,7 @@ NEW_SA="order-service"
 NAMESPACE="production"
 
 # Find all policies that reference the old service account
+
 for POLICY in $(kubectl get authorizationpolicy --all-namespaces -o json | \
   jq -r ".items[] | select(.spec.rules[]?.from[]?.source?.principals[]? | contains(\"sa/$OLD_SA\")) | \"\(.metadata.namespace)/\(.metadata.name)\""); do
 

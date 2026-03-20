@@ -73,6 +73,7 @@ Apply it:
 
 ```bash
 # Create the CPU utilization alert policy
+
 gcloud alpha monitoring policies create --policy-from-file=cloudsql-cpu-alert.json
 ```
 

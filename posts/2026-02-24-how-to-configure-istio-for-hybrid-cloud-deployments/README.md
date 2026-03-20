@@ -29,6 +29,7 @@ For AWS, set up a Site-to-Site VPN or Direct Connect:
 
 ```bash
 # Create a Virtual Private Gateway
+
 aws ec2 create-vpn-gateway --type ipsec.1
 
 # Attach it to your VPC

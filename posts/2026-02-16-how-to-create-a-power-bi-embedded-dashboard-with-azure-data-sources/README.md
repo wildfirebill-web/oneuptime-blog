@@ -68,6 +68,7 @@ Here is how to configure credentials programmatically using the Power BI REST AP
 
 ```python
 # Script to update data source credentials using the Power BI REST API
+
 import requests
 
 # Get an access token using client credentials flow

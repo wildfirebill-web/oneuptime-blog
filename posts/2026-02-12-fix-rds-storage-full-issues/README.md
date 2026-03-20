@@ -26,6 +26,7 @@ This is a serious issue because a full disk can crash your database or put it in
 
 ```bash
 # Check allocated and used storage
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].{AllocatedStorage:AllocatedStorage,StorageType:StorageType,Engine:Engine,Status:DBInstanceStatus}'

@@ -42,6 +42,7 @@ backend app_servers
 
 ```bash
 # HAProxy uses a combined PEM file (cert + key + optionally chain)
+
 cat /etc/ssl/certs/example.com.crt \
     /etc/ssl/private/example.com.key \
     /etc/ssl/certs/ca-chain.crt > /etc/ssl/haproxy/example.com.pem

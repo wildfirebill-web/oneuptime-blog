@@ -45,6 +45,7 @@ First, create a `.circleci` directory in your project root and add a `config.yml
 
 ```bash
 # Create the CircleCI configuration directory
+
 mkdir -p .circleci
 
 # Create the main configuration file
@@ -629,7 +630,7 @@ commands:
             - .next/cache
 ```
 
-## Resource Optimization
+Resource Optimization
 
 Choosing the right resource class impacts both cost and performance.
 

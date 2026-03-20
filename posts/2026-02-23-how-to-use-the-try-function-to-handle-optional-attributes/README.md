@@ -16,6 +16,7 @@ The `try` function evaluates one or more expressions and returns the result of t
 
 ```hcl
 # try(expression1, expression2, ..., fallback_value)
+
 # Returns the first expression that succeeds
 try(expression, fallback)
 ```

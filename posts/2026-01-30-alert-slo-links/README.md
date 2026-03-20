@@ -50,6 +50,7 @@ Define your alert template to include SLO references.
 
 ```yaml
 # alertmanager-config.yaml
+
 global:
   resolve_timeout: 5m
 

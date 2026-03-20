@@ -22,12 +22,13 @@ Before removing the agent, gracefully migrate workloads off the node:
 
 ```bash
 # From the K3s server, identify the node name
+
 kubectl get nodes
 
 # Cordon the node to prevent new pods from being scheduled
 kubectl cordon <agent-node-name>
 
-# Drain the node — evict all running pods
+# Drain the node - evict all running pods
 kubectl drain <agent-node-name> \
   --ignore-daemonsets \
   --delete-emptydir-data \

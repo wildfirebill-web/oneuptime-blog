@@ -530,6 +530,7 @@ Package your problem matcher as a reusable action for your organization:
 
 ```yaml
 # .github/actions/lint-with-matcher/action.yml
+
 name: 'Lint with Problem Matcher'
 description: 'Runs linter with problem matcher enabled'
 

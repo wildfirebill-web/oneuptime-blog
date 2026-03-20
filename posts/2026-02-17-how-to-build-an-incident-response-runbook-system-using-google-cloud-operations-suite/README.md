@@ -83,6 +83,7 @@ Here is how to create an alerting policy with embedded runbook documentation:
 
 ```bash
 # Create an alerting policy with inline runbook documentation
+
 gcloud alpha monitoring policies create \
   --display-name="High Error Rate - API Gateway" \
   --condition-display-name="5xx error rate above 5%" \

@@ -158,6 +158,7 @@ Create the role using Azure CLI:
 
 ```bash
 # Save the role definition to a JSON file first, then create it
+
 az role definition create --role-definition @web-app-developer-role.json
 
 # Verify the role was created

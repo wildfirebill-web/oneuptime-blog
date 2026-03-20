@@ -243,6 +243,7 @@ Find all logs for a specific trace:
 
 ```logql
 # Find all logs for a trace
+
 {trace_id="4bf92f3577b34da6a3ce929d0e0e4736"}
 
 # Find logs with trace IDs (any trace)

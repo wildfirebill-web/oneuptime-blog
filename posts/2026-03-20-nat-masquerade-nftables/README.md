@@ -22,6 +22,7 @@ Before NAT can work, the kernel must forward packets between interfaces.
 
 ```bash
 # Enable IPv4 forwarding immediately
+
 sysctl -w net.ipv4.ip_forward=1
 
 # Make it persistent across reboots
@@ -37,7 +38,7 @@ NAT rules in nftables live in a dedicated `nat` table with a `postrouting` chain
 # Create the nat table (ip family for IPv4 only)
 nft add table ip nat
 
-# Create the postrouting chain — must use priority 100 for NAT
+# Create the postrouting chain - must use priority 100 for NAT
 nft add chain ip nat postrouting { type nat hook postrouting priority 100 \; }
 
 # Add masquerade rule for traffic leaving the WAN interface (eth0)

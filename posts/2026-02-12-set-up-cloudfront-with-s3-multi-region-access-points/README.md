@@ -30,6 +30,7 @@ graph TD
 
 ```bash
 # Create buckets in each region
+
 aws s3api create-bucket \
     --bucket my-content-us-east-1 \
     --region us-east-1

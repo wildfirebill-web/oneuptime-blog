@@ -38,6 +38,7 @@ Create a Kong consumer to represent API clients:
 
 ```yaml
 # jwt-consumer.yaml
+
 apiVersion: configuration.konghq.com/v1
 kind: KongConsumer
 metadata:

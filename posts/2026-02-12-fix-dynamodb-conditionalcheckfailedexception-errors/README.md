@@ -25,6 +25,7 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('Products')
 
 # This will throw ConditionalCheckFailedException
+
 # if an item with this key already exists
 try:
     table.put_item(

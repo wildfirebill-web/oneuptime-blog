@@ -42,6 +42,7 @@ For Aurora MySQL:
 
 ```bash
 # Create a parameter group with Zero-ETL settings enabled
+
 aws rds create-db-cluster-parameter-group \
   --db-cluster-parameter-group-name aurora-zero-etl-params \
   --db-parameter-group-family aurora-mysql8.0 \

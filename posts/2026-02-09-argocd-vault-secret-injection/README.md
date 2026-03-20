@@ -30,6 +30,7 @@ The argocd-vault-plugin (AVP) is the most common integration method. Install it 
 
 ```yaml
 # argocd-repo-server-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

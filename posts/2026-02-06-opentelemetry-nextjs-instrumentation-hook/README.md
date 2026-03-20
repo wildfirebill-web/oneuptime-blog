@@ -106,6 +106,7 @@ Create a `.env.local` file to configure your OpenTelemetry collector endpoint an
 
 ```bash
 # OpenTelemetry configuration
+
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318/v1/traces
 OTEL_SERVICE_NAME=nextjs-app
 OTEL_LOG_LEVEL=info

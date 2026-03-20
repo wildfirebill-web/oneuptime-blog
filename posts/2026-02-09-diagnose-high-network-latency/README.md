@@ -18,6 +18,7 @@ Before diagnosing high latency, establish a baseline:
 
 ```bash
 # Test basic ICMP latency between pods
+
 kubectl exec -it source-pod -- ping -c 100 destination-pod-ip
 
 # Look at the statistics:

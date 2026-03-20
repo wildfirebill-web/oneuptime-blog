@@ -20,6 +20,7 @@ The `lru_cache` decorator caches function results based on arguments, dramatical
 
 ```python
 # lru_cache_examples.py
+
 # Caching expensive function calls with lru_cache
 from functools import lru_cache
 import time

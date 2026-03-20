@@ -26,6 +26,7 @@ flowchart LR
 
 ```bash
 # Install Azure CLI
+
 brew install azure-cli  # macOS
 # or: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash  # Linux
 

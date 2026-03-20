@@ -6,11 +6,11 @@ Tags: Wireshark, Expert Information, Networking, Diagnostics, TCP, Performance
 
 Description: Use Wireshark's Expert Information panel to automatically identify network problems including TCP retransmissions, connection resets, malformed packets, and application errors.
 
-The Expert Information panel is Wireshark's automated analysis engine. It scans every packet and flags anomalies by severity level — giving you an instant summary of what's wrong in a capture without manually reading thousands of packets.
+The Expert Information panel is Wireshark's automated analysis engine. It scans every packet and flags anomalies by severity level - giving you an instant summary of what's wrong in a capture without manually reading thousands of packets.
 
 ## Open Expert Information
 
-```
+```text
 Method 1: Analyze → Expert Information
 
 Method 2: Click the colored circle in the bottom-left of Wireshark
@@ -18,12 +18,12 @@ Method 2: Click the colored circle in the bottom-left of Wireshark
   Green = normal, Yellow = warning, Red = error
 
 Method 3: When a capture has errors, the bottom status bar shows
-  a colored indicator — click it to open Expert Information
+  a colored indicator - click it to open Expert Information
 ```
 
 ## Severity Levels
 
-```
+```text
 Color      Level     Meaning
 ---------  --------  ------------------------------------------
 Red        Error     Serious problems (retransmissions, RSTs)
@@ -34,7 +34,7 @@ Gray       Chat      Informational (connection events)
 
 ## Common Expert Information Messages
 
-```
+```yaml
 Message                    Severity  Meaning
 -----------------------    --------  --------------------------------------
 TCP Retransmission         Error     Packet resent = packet loss
@@ -54,7 +54,7 @@ HTTP server error (5xx)    Warning   Application error
 
 ## Use Expert Information as Starting Point
 
-```
+```text
 Workflow:
 1. Open capture
 2. Open Expert Information
@@ -76,6 +76,7 @@ Click "Prepare Filter" in the Expert Information dialog to create a display filt
 # These filters correspond to Expert Information categories
 
 # All TCP errors
+
 tcp.analysis.flags
 
 # Retransmissions
@@ -116,10 +117,10 @@ tshark -r capture.pcap -q -z expert | grep -c "Errors"
 
 ## Export Expert Information
 
-```
+```bash
 In Expert Information dialog:
   Right-click → Export to File
   → Saves as CSV or plain text for documentation or ticketing
 ```
 
-Expert Information should be your first action after opening a capture — it immediately flags the most serious problems, saving you hours of manual packet-by-packet inspection.
+Expert Information should be your first action after opening a capture - it immediately flags the most serious problems, saving you hours of manual packet-by-packet inspection.

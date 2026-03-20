@@ -101,6 +101,7 @@ In high-volume scenarios, batch tokens can provide:
 
 ```bash
 # Create a batch token with a specific policy and TTL
+
 vault token create \
   -type=batch \
   -policy=my-policy \

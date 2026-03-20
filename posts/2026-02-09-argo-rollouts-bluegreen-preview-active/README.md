@@ -34,6 +34,7 @@ Install the Argo Rollouts controller:
 
 ```bash
 # Install with kubectl
+
 kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 

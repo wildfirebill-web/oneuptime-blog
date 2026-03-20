@@ -76,6 +76,7 @@ Feast uses Redis as its online feature store for low-latency lookups:
 
 ```yaml
 # infrastructure/base/redis/statefulset.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

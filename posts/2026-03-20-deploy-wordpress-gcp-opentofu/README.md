@@ -167,6 +167,7 @@ resource "google_cloud_run_v2_service" "wordpress" {
 }
 
 # Allow public access to Cloud Run service
+
 resource "google_cloud_run_service_iam_member" "public" {
   service  = google_cloud_run_v2_service.wordpress.name
   location = google_cloud_run_v2_service.wordpress.location

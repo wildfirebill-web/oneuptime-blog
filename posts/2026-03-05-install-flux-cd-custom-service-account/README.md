@@ -43,6 +43,7 @@ Create service accounts before installing Flux. This example adds annotations fo
 
 ```yaml
 # custom-service-accounts.yaml
+
 # Service accounts with AWS IAM Role annotations for IRSA
 apiVersion: v1
 kind: ServiceAccount

@@ -86,7 +86,7 @@ provisioner "local-exec" {
 
 - `self` is only available inside `provisioner` blocks, not in `connection` blocks at the resource level
 - It cannot reference attributes from other resources
-- Avoid provisioners when possible — prefer purpose-built resources or data sources
+- Avoid provisioners when possible - prefer purpose-built resources or data sources
 
 ## Conclusion
 

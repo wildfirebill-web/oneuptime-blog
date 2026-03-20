@@ -22,7 +22,7 @@ VMware vSwitch has security policies that affect ARP:
 | MAC Address Changes | Accept | VMs can change their MAC |
 | Forged Transmits | Accept | VMs can send ARP with different MAC |
 
-```
+```text
 When "Forged Transmits = Reject":
 - vSwitch drops ARP packets where source MAC ≠ VM's registered MAC
 - Prevents ARP spoofing from inside VMs
@@ -34,6 +34,7 @@ In vSphere Client or via PowerCLI:
 
 ```powershell
 # PowerCLI: Set security policy on a vSwitch
+
 Get-VirtualSwitch -Name "vSwitch0" | 
     Get-SecurityPolicy | 
     Set-SecurityPolicy -ForgedTransmits $false -MacChanges $false
@@ -63,7 +64,7 @@ brctl show
 # Show ARP table for the bridge
 ip neigh show dev virbr0
 
-# The bridge acts as a switch — VMs ARP directly to each other
+# The bridge acts as a switch - VMs ARP directly to each other
 ```
 
 ### Check VM ARP Traffic

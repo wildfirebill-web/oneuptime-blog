@@ -26,6 +26,7 @@ The best way to understand filter chains is to look at what Istio actually confi
 
 ```bash
 # List all listeners
+
 istioctl proxy-config listener my-pod
 
 # See detailed filter chain config for a specific port

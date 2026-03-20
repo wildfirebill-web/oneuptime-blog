@@ -12,10 +12,11 @@ Squid ACLs (Access Control Lists) define who can access the proxy, what destinat
 
 ## Source IP Whitelisting
 
-```
+```text
 # /etc/squid/squid.conf
 
 # Define allowed client IPs/subnets
+
 acl allowed_clients src 10.0.1.0/24
 acl allowed_clients src 10.0.2.100/32
 acl allowed_clients src 172.16.5.0/28
@@ -29,7 +30,7 @@ http_access deny all
 
 Allow clients to reach only specific external sites:
 
-```
+```text
 # Allow list for domains
 acl allowed_sites dstdomain .github.com .npmjs.com .pypi.org
 
@@ -40,7 +41,7 @@ http_access deny all
 
 ## Destination IP Whitelisting
 
-```
+```text
 # Whitelist destination IP ranges
 acl allowed_dest dst 93.184.216.0/24   # example.com IP range
 acl allowed_dest dst 140.82.112.0/20   # GitHub IP range
@@ -53,7 +54,7 @@ http_access deny all
 
 For large lists, use external files:
 
-```
+```text
 # /etc/squid/allowed_domains.txt
 .github.com
 .npmjs.com
@@ -71,7 +72,7 @@ acl allowed_sites dstdomain "/etc/squid/allowed_domains.txt"
 
 Allow internet access only during business hours:
 
-```
+```text
 acl business_hours time MTWHF 08:00-18:00
 acl allowed_clients src 10.0.0.0/8
 
@@ -83,7 +84,7 @@ Days: M=Mon, T=Tue, W=Wed, H=Thu, F=Fri, A=Sat, S=Sun
 
 ## Blocking Specific Sites
 
-```
+```text
 # Blacklist
 acl blocked_sites dstdomain .facebook.com .twitter.com .youtube.com
 
@@ -95,7 +96,7 @@ http_access deny all
 
 ## User Authentication with Basic Auth
 
-```
+```text
 auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/passwd
 auth_param basic realm "Squid Proxy"
 
@@ -114,7 +115,7 @@ sudo htpasswd /etc/squid/passwd user2
 
 ## Combined Policy Example
 
-```
+```text
 # Source
 acl corp_network src 10.0.0.0/8
 acl dev_team     src 10.0.5.0/24

@@ -31,6 +31,7 @@ Register a runner with the Docker executor that supports DinD:
 
 ```toml
 # /etc/gitlab-runner/config.toml
+
 [[runners]]
   name = "docker-runner"
   url = "https://gitlab.com/"
@@ -319,7 +320,7 @@ before_script:
     done
 ```
 
-### Resource Limits
+Resource Limits
 
 GitLab shared runners have limited resources. If cluster creation fails or is very slow:
 

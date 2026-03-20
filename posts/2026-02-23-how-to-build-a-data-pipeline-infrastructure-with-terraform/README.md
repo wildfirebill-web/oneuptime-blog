@@ -29,6 +29,7 @@ The foundation is a set of S3 buckets organized by data stage.
 
 ```hcl
 # storage.tf - Data lake S3 buckets
+
 # Raw data landing zone
 resource "aws_s3_bucket" "raw" {
   bucket = "${var.project_name}-data-raw-${var.environment}"

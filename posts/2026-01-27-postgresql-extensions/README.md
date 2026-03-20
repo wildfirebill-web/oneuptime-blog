@@ -108,6 +108,7 @@ Some extensions require system packages to be installed first:
 
 ```bash
 # Ubuntu/Debian - Install PostGIS
+
 sudo apt-get update
 sudo apt-get install postgresql-16-postgis-3
 

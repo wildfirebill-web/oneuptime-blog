@@ -8,9 +8,9 @@ Description: Learn how to bind REST API servers to specific IPv4 addresses in Py
 
 ## Why Bind to a Specific Address?
 
-Binding to `0.0.0.0` accepts connections on all interfaces. Binding to a specific IP restricts the server to one interface — useful to keep an admin API private (`127.0.0.1`) while exposing a public API on the machine's public IP.
+Binding to `0.0.0.0` accepts connections on all interfaces. Binding to a specific IP restricts the server to one interface - useful to keep an admin API private (`127.0.0.1`) while exposing a public API on the machine's public IP.
 
-```
+```text
 Bind 0.0.0.0:8080  → accepts on all interfaces (eth0, lo, vpn0, ...)
 Bind 127.0.0.1:8080 → localhost only
 Bind 192.168.1.10:8080 → one specific interface
@@ -100,6 +100,7 @@ func main() {
 
 ```properties
 # application.properties
+
 server.address=192.168.1.10
 server.port=8080
 ```

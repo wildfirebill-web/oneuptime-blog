@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, route, Static Route, IPv4, Persistent, Network Configuration
+Tags: Windows, Networking, Routes, Static Routes, IPv4, Persistent, Network Configuration
 
 Description: Add a persistent static IPv4 route on Windows that survives reboots using route add -p, New-NetRoute in PowerShell, and verify the route persists after a restart.
 
@@ -41,6 +41,7 @@ Routes added with `New-NetRoute` in PowerShell are automatically persistent:
 
 ```powershell
 # Add persistent static route
+
 New-NetRoute `
     -InterfaceAlias "Ethernet" `
     -DestinationPrefix "10.0.0.0/8" `
@@ -64,11 +65,11 @@ route print -4 | findstr "10.0.0"
 
 Persistent routes are stored here (for reference/audit):
 
-```
+```text
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\PersistentRoutes
 ```
 
-Do not modify the registry directly — use `route add -p` or PowerShell.
+Do not modify the registry directly - use `route add -p` or PowerShell.
 
 ## Bulk Persistent Route Script
 

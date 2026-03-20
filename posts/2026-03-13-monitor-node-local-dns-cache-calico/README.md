@@ -32,6 +32,7 @@ Apply the NodeLocal DNSCache manifest with appropriate configuration:
 
 ```bash
 # Download the NodeLocal DNSCache manifest
+
 curl -O https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml
 
 # Configure the manifest for your cluster DNS settings

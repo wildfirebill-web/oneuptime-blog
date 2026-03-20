@@ -36,6 +36,7 @@ The quickest way to start is with Docker.
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

@@ -32,6 +32,7 @@ Before deploying agents, you need a central Portainer server. If you do not have
 
 ```bash
 # Create a volume for Portainer's persistent data
+
 docker volume create portainer_data
 
 # Start the Portainer server with the web UI on port 9443

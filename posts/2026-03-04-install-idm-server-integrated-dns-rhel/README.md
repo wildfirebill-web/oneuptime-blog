@@ -14,6 +14,7 @@ Installing IdM with integrated DNS simplifies deployment by having IdM manage DN
 
 ```bash
 # Set the hostname to a fully qualified domain name
+
 sudo hostnamectl set-hostname idm1.example.com
 
 # Verify the hostname resolves correctly

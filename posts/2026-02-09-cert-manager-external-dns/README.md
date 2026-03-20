@@ -31,6 +31,7 @@ Install External DNS configured for your DNS provider. This example uses AWS Rou
 
 ```bash
 # Create service account for External DNS
+
 kubectl create serviceaccount external-dns -n kube-system
 
 # Create IAM policy for Route53 access (same as cert-manager Route53 policy)

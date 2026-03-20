@@ -89,6 +89,7 @@ Verify your Kubernetes cluster meets the minimum requirements for running Istio 
 
 ```bash
 # Check Kubernetes version (Istio 1.20+ requires Kubernetes 1.26+)
+
 # This command verifies both client and server versions
 kubectl version --short
 
@@ -126,7 +127,7 @@ metadata:
 
 ---
 
-## Resource Sizing and Limits
+Resource Sizing and Limits
 
 Proper resource allocation is critical for production stability. Under-provisioned components can cause cascading failures.
 

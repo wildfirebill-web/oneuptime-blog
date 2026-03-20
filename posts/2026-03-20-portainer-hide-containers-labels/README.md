@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, containers, labels, filtering, visibility, management
+Tags: Portainer, Containers, Labels, Filtering, Visibility, Management
 
 Description: A guide to hiding containers from the Portainer UI using Docker labels, useful for system containers, infrastructure services, or decluttering the interface.
 
@@ -19,7 +19,7 @@ Portainer supports hiding containers from its UI by applying specific Docker lab
 
 Portainer respects the label `portainer.agent.secret` for authentication, but for hiding containers, it uses:
 
-```
+```text
 com.docker.compose.project=portainer  # Hides Portainer's own stack
 ```
 
@@ -29,6 +29,7 @@ More specifically, Portainer has a configurable "hide label" feature.
 
 ```bash
 # Label to hide a container from Portainer UI
+
 docker run -d \
   --name my-monitoring-agent \
   --label "hide=true" \
@@ -50,7 +51,7 @@ Any container with this label will be hidden from the Portainer UI.
 ## Method 3: Hide Portainer Infrastructure Containers
 
 ```yaml
-# docker-compose.yml — hide infrastructure services from Portainer
+# docker-compose.yml - hide infrastructure services from Portainer
 version: "3.8"
 services:
   traefik:
@@ -128,7 +129,7 @@ Portainer Business Edition offers more granular visibility controls:
 # Settings → Teams → Assign endpoint access
 
 # Users only see containers in their allowed environments
-# No label needed — access control at environment level
+# No label needed - access control at environment level
 ```
 
 ## Use Cases

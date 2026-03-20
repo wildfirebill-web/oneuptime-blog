@@ -137,6 +137,7 @@ In permissive mTLS mode (the default during migration), Envoy accepts both plain
 
 ```bash
 # See the filter chains and their match criteria
+
 istioctl proxy-config listener my-pod --port 15006 -o json | \
   python3 -c "
 import json, sys

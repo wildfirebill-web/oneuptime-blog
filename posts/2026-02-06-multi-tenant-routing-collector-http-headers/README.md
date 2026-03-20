@@ -24,6 +24,7 @@ First, configure the OTLP receiver to include HTTP headers in the context. This 
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

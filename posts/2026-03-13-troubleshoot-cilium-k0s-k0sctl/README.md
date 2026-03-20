@@ -27,6 +27,7 @@ Ensure the k0sctl configuration is correct for Cilium deployment.
 
 ```yaml
 # k0sctl.yaml - k0sctl configuration with Cilium networking
+
 apiVersion: k0sctl.k0sproject.io/v1beta1
 kind: Cluster
 metadata:

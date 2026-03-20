@@ -24,6 +24,7 @@ This guide sets up a self-hosted Drone CI server on Ubuntu using Docker, connect
 
 ```bash
 # Install Docker if not already present
+
 sudo apt update
 sudo apt install docker.io docker-compose -y
 sudo systemctl enable --now docker

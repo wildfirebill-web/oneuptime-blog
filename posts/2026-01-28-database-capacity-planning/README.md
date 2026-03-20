@@ -55,6 +55,7 @@ Storage is the most predictable capacity dimension. Track it and project forward
 
 ```python
 # storage_capacity.py - Monitor and forecast database storage
+
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from typing import List, Tuple, Optional

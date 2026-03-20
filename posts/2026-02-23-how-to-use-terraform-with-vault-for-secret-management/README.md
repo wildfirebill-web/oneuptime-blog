@@ -22,6 +22,7 @@ Configure Terraform to authenticate with Vault and retrieve secrets.
 
 ```hcl
 # Configure the Vault provider
+
 terraform {
   required_providers {
     vault = {

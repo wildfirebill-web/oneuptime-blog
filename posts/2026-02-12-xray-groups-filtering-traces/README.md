@@ -46,6 +46,7 @@ A single trace can match multiple groups simultaneously. Groups don't partition 
 
 ```bash
 # Create a group for production services
+
 aws xray create-group \
   --group-name "production" \
   --filter-expression 'annotation.environment = "production"'

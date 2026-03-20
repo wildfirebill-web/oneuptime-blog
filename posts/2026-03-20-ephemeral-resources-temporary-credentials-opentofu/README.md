@@ -1,4 +1,4 @@
-# How to Use Ephemeral Resources for Temporary Credentials in OpenTofu
+# How to Use Ephemeral Resources for Temporary Credentials in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Ephemeral resources in OpenTofu are a special type of resource that exist only d
 
 ```hcl
 # Regular data source: values stored in state
+
 data "aws_secretsmanager_secret_version" "db_pass" {
   secret_id = "myapp/db-password"
   # Value is stored in terraform.tfstate - SECURITY RISK

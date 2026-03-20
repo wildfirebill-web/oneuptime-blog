@@ -28,6 +28,7 @@ Check ConfigMap size:
 
 ```bash
 # Get ConfigMap size in bytes
+
 kubectl get configmap my-config -o yaml | wc -c
 
 # Get human-readable size

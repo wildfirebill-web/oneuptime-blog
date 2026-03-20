@@ -26,6 +26,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Verify your environment
+
 kubectl cluster-info
 flux check
 go version

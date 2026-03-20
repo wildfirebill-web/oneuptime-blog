@@ -14,7 +14,7 @@ Long-lived AWS access keys are a security liability. HashiCorp Vault's AWS secre
 
 ## Architecture
 
-```
+```hcl
 OpenTofu → Vault (AWS Secrets Engine) → AWS IAM → Temporary Credentials
                                                          ↓
                                               OpenTofu uses creds
@@ -35,6 +35,7 @@ OpenTofu → Vault (AWS Secrets Engine) → AWS IAM → Temporary Credentials
 
 ```bash
 # Enable the AWS secrets engine
+
 vault secrets enable aws
 
 # Configure root credentials (one-time setup)
@@ -254,11 +255,11 @@ vault list sys/leases/lookup/aws/creds/opentofu-deploy
 
 ## Best Practices
 
-1. **Use assumed_role** over iam_user — STS tokens are temporary by nature and leave no IAM user artifacts
-2. **Set short TTLs** — 1 hour is sufficient for most deployments
-3. **Scope permissions tightly** — use role-specific policies, not AdministratorAccess
+1. **Use assumed_role** over iam_user - STS tokens are temporary by nature and leave no IAM user artifacts
+2. **Set short TTLs** - 1 hour is sufficient for most deployments
+3. **Scope permissions tightly** - use role-specific policies, not AdministratorAccess
 4. **Use Vault Agent** in CI/CD to handle token renewal automatically
-5. **Audit Vault logs** — every credential generation is logged with identity and timestamp
+5. **Audit Vault logs** - every credential generation is logged with identity and timestamp
 
 ---
 

@@ -22,6 +22,7 @@ First, you need an existing job template. Assuming template ID 10 exists, here i
 
 ```bash
 # Define and attach a survey to job template ID 10
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

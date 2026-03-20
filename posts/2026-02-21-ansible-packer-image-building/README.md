@@ -30,6 +30,7 @@ graph LR
 
 ```hcl
 # packer/base-image.pkr.hcl
+
 # Build a base Ubuntu image with Ansible provisioning
 
 packer {

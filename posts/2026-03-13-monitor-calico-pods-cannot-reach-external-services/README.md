@@ -24,6 +24,7 @@ Create a monitoring pod that continuously tests external connectivity.
 
 ```yaml
 # external-connectivity-probe.yaml
+
 # A monitoring pod that probes external connectivity every 60 seconds
 apiVersion: apps/v1
 kind: Deployment

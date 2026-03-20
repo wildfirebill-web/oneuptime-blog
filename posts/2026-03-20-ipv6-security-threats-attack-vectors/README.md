@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # An attacker can send crafted NA messages to redirect traffic
+
 # Monitor for suspicious NA messages:
 sudo tcpdump -i eth0 -n "icmp6 and ip6[40] == 136"
 # Type 136 = Neighbor Advertisement
@@ -57,15 +58,15 @@ IPv6 extension headers can be used to evade security devices:
 |--------|-------------|
 | Header chain manipulation | Craft headers that confuse firewalls into skipping payload inspection |
 | Fragment + extension header | Split payload across fragments to bypass signature detection |
-| Hop-by-hop header DoS | Force all routers to process HbH headers — CPU exhaustion |
+| Hop-by-hop header DoS | Force all routers to process HbH headers - CPU exhaustion |
 
 ## 4. Fragmentation Attacks
 
 IPv6 allows hosts (not routers) to fragment. Attackers exploit this:
 
-```
+```text
 # Atomic fragment attack (RFC 6946)
-# Send a tiny fragment that matches no real fragment — forces reassembly buffer consumption
+# Send a tiny fragment that matches no real fragment - forces reassembly buffer consumption
 
 # Overlapping fragment attack
 # Send fragments that overlap to confuse reassembly and evade IDS

@@ -63,6 +63,7 @@ There are several compelling reasons to enable uniform bucket-level access:
 
 ```bash
 # Create a new bucket with uniform bucket-level access from the start
+
 gcloud storage buckets create gs://my-secure-bucket \
   --location=us-central1 \
   --uniform-bucket-level-access

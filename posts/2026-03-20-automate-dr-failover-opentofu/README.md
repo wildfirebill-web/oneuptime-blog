@@ -14,6 +14,7 @@ Automated DR failover eliminates the need for manual intervention during a disas
 
 ```hcl
 # main.tf - Event-driven DR automation
+
 resource "aws_cloudwatch_metric_alarm" "primary_unhealthy" {
   alarm_name          = "primary-region-unhealthy"
   comparison_operator = "GreaterThanThreshold"

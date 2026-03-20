@@ -94,6 +94,7 @@ For each migration scenario, consider:
 
 ```bash
 # Example: Migrating data from on-premises to Cloud Storage
+
 # For moderate data volumes, use the gsutil parallel upload
 gsutil -m cp -r /path/to/local/data gs://migration-bucket/
 

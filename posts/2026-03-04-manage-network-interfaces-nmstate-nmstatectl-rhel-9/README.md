@@ -37,6 +37,7 @@ Nmstate is available in the default RHEL repositories:
 
 ```bash
 # Install nmstate
+
 dnf install nmstate -y
 
 # Verify the installation

@@ -79,6 +79,7 @@ Instead of rolling back the migration, push a new migration that reverses the ch
 
 ```yaml
 # When you need to "rollback" migration v42:
+
 # 1. Create migration v43 that undoes v42
 # 2. Commit to Git
 # 3. ArgoCD syncs: runs v43 as PreSync, deploys old app version

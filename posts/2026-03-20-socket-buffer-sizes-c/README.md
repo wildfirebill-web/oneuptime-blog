@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Socket, Performance, SO_SNDBUF, SO_RCVBUF, Networking
+Tags: C, IPv4, Sockets, Performance, SO_SNDBUF, SO_RCVBUF, Networking
 
 Description: Learn how to tune IPv4 socket send and receive buffer sizes in C using SO_SNDBUF and SO_RCVBUF to maximize throughput for high-performance network applications.
 
@@ -57,7 +57,7 @@ int main(void) {
     int opt = 1;
     setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
 
-    /* Disable Nagle — send immediately for bulk transfer */
+    /* Disable Nagle - send immediately for bulk transfer */
     setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof(opt));
 
     /* Large buffers for high-bandwidth transfers */
@@ -99,6 +99,7 @@ int main(void) {
 
 ```bash
 # View current kernel limits for socket buffers
+
 sysctl net.core.rmem_max    # max receive buffer per socket
 sysctl net.core.wmem_max    # max send buffer per socket
 sysctl net.core.rmem_default
@@ -117,7 +118,7 @@ sysctl -w net.ipv4.tcp_wmem
 
 The optimal buffer size equals the bandwidth-delay product (BDP):
 
-```
+```text
 BDP = Bandwidth (bytes/sec) × RTT (sec)
 
 Example: 1 Gbps link with 10ms RTT
@@ -137,4 +138,4 @@ Set both `SO_SNDBUF` and `SO_RCVBUF` to at least the BDP to keep the pipe full.
 
 ## Conclusion
 
-Set `SO_SNDBUF` and `SO_RCVBUF` before calling `connect()` or `listen()` — applying them to the server socket propagates default sizes to accepted connections, but tuning each accepted socket individually is more reliable. The kernel doubles your requested value (one copy for overhead), so always read back the actual value with `getsockopt`. Size buffers to the bandwidth-delay product of your network path to keep the TCP window large enough to saturate the link. For very high-throughput workloads, also raise `net.core.rmem_max` and `net.core.wmem_max` system-wide — `setsockopt` cannot exceed these kernel ceilings.
+Set `SO_SNDBUF` and `SO_RCVBUF` before calling `connect()` or `listen()` - applying them to the server socket propagates default sizes to accepted connections, but tuning each accepted socket individually is more reliable. The kernel doubles your requested value (one copy for overhead), so always read back the actual value with `getsockopt`. Size buffers to the bandwidth-delay product of your network path to keep the TCP window large enough to saturate the link. For very high-throughput workloads, also raise `net.core.rmem_max` and `net.core.wmem_max` system-wide - `setsockopt` cannot exceed these kernel ceilings.

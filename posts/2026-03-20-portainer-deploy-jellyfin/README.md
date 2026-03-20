@@ -1,4 +1,4 @@
-# How to Deploy Jellyfin via Portainer
+# How to Deploy Jellyfin via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -103,10 +103,10 @@ Navigate to **Dashboard > Playback**:
 
 Install plugins via **Dashboard > Plugins > Catalog**:
 
-- **Intro Skipper** — Automatically skip TV intros
-- **Open Subtitles** — Auto-download subtitles
-- **Last.fm** — Music scrobbling
-- **Merge Versions** — Combine multiple versions of the same film
+- **Intro Skipper** - Automatically skip TV intros
+- **Open Subtitles** - Auto-download subtitles
+- **Last.fm** - Music scrobbling
+- **Merge Versions** - Combine multiple versions of the same film
 
 ## Conclusion
 

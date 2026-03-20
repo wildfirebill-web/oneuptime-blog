@@ -14,6 +14,7 @@ On RHEL, kpatch modules are delivered as standard RPM packages through the live 
 
 ```bash
 # Register the system if not already done
+
 sudo subscription-manager register --username=your_user --password=your_pass
 sudo subscription-manager attach --auto
 

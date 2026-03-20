@@ -51,6 +51,7 @@ To use message priority, you must declare the queue with the `x-max-priority` ar
 import pika
 
 # Establish connection to RabbitMQ
+
 connection = pika.BlockingConnection(
     pika.ConnectionParameters(host='localhost')
 )

@@ -10,7 +10,7 @@ Modern operating systems assign multiple IPv6 addresses to each interface simult
 
 ## The Two Address Types
 
-```
+```text
 IPv6 Global Address Types on a Client Interface:
 │
 ├── Stable Address (mngtmpaddr)
@@ -32,6 +32,7 @@ IPv6 Global Address Types on a Client Interface:
 
 ```bash
 # Check address lifetimes on Linux
+
 ip -6 addr show eth0
 
 # Typical output showing both address types:
@@ -81,14 +82,14 @@ curl -6 https://ipv6.icanhazip.com
 # the connection fails. Servers should bind to your stable address.
 
 # 2. Server roles (when use_tempaddr = 0 or interface is a server)
-# Web servers, SSH servers, databases — need stable address for DNS
+# Web servers, SSH servers, databases - need stable address for DNS
 
 # 3. Local network communication
 # Link-local (fe80::) is always stable (but not globally routable)
 # For intranet services: stable address is appropriate
 
 # 4. Some protocols that embed IP addresses
-# SIP, FTP active mode — may need stable address for reverse connectivity
+# SIP, FTP active mode - may need stable address for reverse connectivity
 ```
 
 ## Stable Privacy Addresses (RFC 7217)
@@ -134,16 +135,16 @@ ipv6.addr-gen-mode=stable-privacy
 import socket
 
 # For a SERVER (needs stable inbound connectivity):
-# Bind to "::" — OS will use stable address for inbound
+# Bind to "::" - OS will use stable address for inbound
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 1)
 server.bind(('::', 8080))
 server.listen(5)
 
 # For a CLIENT (wants privacy for outbound):
-# Connect to destination — OS chooses temporary address automatically
+# Connect to destination - OS chooses temporary address automatically
 client = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
-# Don't bind — let OS choose source address (will use temporary)
+# Don't bind - let OS choose source address (will use temporary)
 client.connect(('2001:4860:4860::8888', 80))
 
 # To force using a specific address (e.g., stable for API keys):

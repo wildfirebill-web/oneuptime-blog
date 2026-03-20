@@ -101,6 +101,7 @@ class TracedSession(http_requests.Session):
 
 
 # Create a module-level session
+
 traced_session = TracedSession()
 
 # Usage in routes

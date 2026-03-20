@@ -16,6 +16,7 @@ The `stat` module captures file metadata including checksums, modification times
 
 ```yaml
 # Check if a critical file has changed since last audit
+
 - name: Get current file metadata
   ansible.builtin.stat:
     path: /etc/ssh/sshd_config

@@ -32,6 +32,7 @@ Kafka consumers read messages from topics and process them. Let us start by sett
 
 ```yaml
 # docker-compose.yml
+
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0

@@ -40,6 +40,7 @@ The `subelements` filter takes the list and the name of the nested list attribut
 
 ```yaml
 # Use subelements to iterate over users and their groups
+
 - name: Add users to their groups
   ansible.builtin.user:
     name: "{{ item.0.name }}"

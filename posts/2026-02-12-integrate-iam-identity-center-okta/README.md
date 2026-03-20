@@ -143,6 +143,7 @@ After a few minutes, check that users and groups have synced:
 
 ```bash
 # Get the Identity Store ID
+
 IDENTITY_STORE_ID=$(aws sso-admin list-instances \
   --query 'Instances[0].IdentityStoreId' --output text)
 

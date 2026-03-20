@@ -42,6 +42,7 @@ The `@microlabs/otel-cf-workers` package provides an OpenTelemetry SDK that work
 
 ```bash
 # Install the Cloudflare Workers OpenTelemetry SDK
+
 npm install @microlabs/otel-cf-workers
 ```
 

@@ -41,6 +41,7 @@ Before configuring the GCP secrets engine, you need:
 
 ```bash
 # Enable the IAM API for service account management
+
 gcloud services enable iam.googleapis.com
 
 # Enable the IAM Credentials API for access token generation

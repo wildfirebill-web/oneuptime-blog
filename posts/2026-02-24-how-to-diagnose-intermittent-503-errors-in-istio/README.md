@@ -53,6 +53,7 @@ This means Envoy cannot find any healthy endpoints for the destination. Common c
 
 ```bash
 # Check if endpoints exist
+
 kubectl get endpoints my-service -n my-namespace
 
 # Check endpoint health from the proxy's perspective

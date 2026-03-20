@@ -16,6 +16,7 @@ The command takes the name of an existing workspace:
 
 ```bash
 # Switch to the "staging" workspace
+
 terraform workspace select staging
 ```
 

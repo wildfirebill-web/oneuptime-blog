@@ -14,6 +14,7 @@ Zero Trust on Azure enforces "never trust, always verify" through Azure AD Condi
 
 ```hcl
 # main.tf - Azure AD Conditional Access for Zero Trust
+
 resource "azuread_conditional_access_policy" "require_mfa" {
   display_name = "Require MFA for All Users"
   state        = "enabled"

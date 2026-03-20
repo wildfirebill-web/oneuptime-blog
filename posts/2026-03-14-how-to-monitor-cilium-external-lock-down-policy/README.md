@@ -22,6 +22,7 @@ Monitoring external lock-down policies reveals which pods attempt external acces
 
 ```promql
 # Drops by policy denial reason
+
 rate(hubble_drop_total{reason="POLICY_DENIED"}[5m])
 
 # Dropped flows by verdict

@@ -172,6 +172,7 @@ func boolPtr(b bool) *bool {
 from kubernetes import client, config
 
 # Load kubeconfig
+
 config.load_kube_config()
 
 # Create API clients

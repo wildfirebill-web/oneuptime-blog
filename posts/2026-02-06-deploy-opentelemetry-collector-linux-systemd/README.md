@@ -30,6 +30,7 @@ Start by downloading and installing the collector binary:
 
 ```bash
 # Set version and architecture
+
 OTEL_VERSION="0.93.0"
 ARCH="amd64"  # or arm64, arm, etc.
 
@@ -539,7 +540,7 @@ Configure log rotation for collector logs:
 }
 ```
 
-## Resource Management with Systemd
+Resource Management with Systemd
 
 Fine-tune resource limits for the collector:
 

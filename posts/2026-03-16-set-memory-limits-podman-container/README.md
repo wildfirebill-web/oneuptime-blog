@@ -30,6 +30,7 @@ The `--memory` (or `-m`) flag sets the maximum amount of RAM a container can use
 
 ```bash
 # Limit container to 256 megabytes
+
 podman run -d --name app --memory 256m nginx:latest
 
 # Limit container to 1 gigabyte

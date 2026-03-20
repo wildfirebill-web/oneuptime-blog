@@ -29,6 +29,7 @@ Sync windows are defined in the ArgoCD AppProject. Create a project with restric
 
 ```yaml
 # appproject-production.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

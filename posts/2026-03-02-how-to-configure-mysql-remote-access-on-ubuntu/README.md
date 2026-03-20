@@ -32,6 +32,7 @@ Find the `bind-address` line:
 
 ```ini
 # Option 1: Listen on all interfaces (simplest but least restrictive)
+
 bind-address = 0.0.0.0
 
 # Option 2: Listen on a specific IP only (recommended if you have multiple NICs)

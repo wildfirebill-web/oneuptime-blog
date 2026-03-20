@@ -35,6 +35,7 @@ If you already have a VNet and storage account, skip to Step 2. Otherwise, let u
 
 ```bash
 # Create a resource group
+
 az group create --name rg-service-endpoints-demo --location eastus
 
 # Create a virtual network with a subnet

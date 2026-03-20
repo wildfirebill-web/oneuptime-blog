@@ -45,6 +45,7 @@ Extract the service account issuer information:
 
 ```bash
 # Get the service account issuer from the cluster
+
 kubectl get --raw /.well-known/openid-configuration | jq .
 ```
 

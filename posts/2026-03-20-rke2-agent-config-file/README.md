@@ -18,6 +18,7 @@ The RKE2 agent configuration file is the same path as the server configuration, 
 # /etc/rancher/rke2/config.yaml - Complete agent configuration reference
 
 # =====================
+
 # REQUIRED: CLUSTER CONNECTION
 # =====================
 

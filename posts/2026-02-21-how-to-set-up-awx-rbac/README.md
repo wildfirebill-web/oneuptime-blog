@@ -53,6 +53,7 @@ Let us walk through a realistic setup. Say you have a company with development a
 
 ```bash
 # Create the organization
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

@@ -14,6 +14,7 @@ Apache Bench (ab) is a simple command-line tool for benchmarking HTTP servers. I
 
 ```bash
 # Install httpd-tools which includes ab
+
 sudo dnf install -y httpd-tools
 ```
 

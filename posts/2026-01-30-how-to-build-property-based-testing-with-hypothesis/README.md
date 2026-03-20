@@ -53,6 +53,7 @@ from hypothesis import given
 from hypothesis import strategies as st
 
 # Basic strategies
+
 @given(st.text())
 def test_string_reverse_twice(s):
     assert s[::-1][::-1] == s

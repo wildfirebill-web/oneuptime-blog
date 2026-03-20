@@ -59,6 +59,7 @@ This example shows a simple Node.js application with a build stage for installin
 # Dockerfile
 
 # Stage 1: Builder - full environment for building
+
 FROM node:20-alpine AS builder
 
 WORKDIR /app

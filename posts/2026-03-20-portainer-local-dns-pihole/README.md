@@ -1,4 +1,4 @@
-# How to Use Local DNS with Portainer (Pi-hole/AdGuard)
+# How to Use Local DNS with Portainer (Pi-hole/AdGuard) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Running Pi-hole or AdGuard Home alongside Portainer lets you access all your ser
 
 ```yaml
 # Deploy Pi-hole as a Portainer stack
+
 version: '3.8'
 services:
   pihole:

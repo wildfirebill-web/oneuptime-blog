@@ -24,6 +24,7 @@ Deploy KEDA to your cluster using Helm.
 
 ```bash
 # Add KEDA Helm repository
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

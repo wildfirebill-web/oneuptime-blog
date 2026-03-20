@@ -24,6 +24,7 @@ sudo cp wrk /usr/local/bin/
 
 ```bash
 # 2 threads, 100 connections, 30 seconds
+
 wrk -t2 -c100 -d30s http://localhost/
 ```
 

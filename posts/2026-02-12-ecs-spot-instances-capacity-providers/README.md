@@ -37,6 +37,7 @@ First, create a launch template that works for ECS. The instances need the ECS a
 
 ```bash
 # Create a launch template for ECS instances
+
 aws ec2 create-launch-template \
   --launch-template-name ecs-lt \
   --launch-template-data '{

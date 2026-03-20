@@ -28,6 +28,7 @@ For Cilium VXLAN mode, ensure VMware virtual switches allow the necessary traffi
 
 ```bash
 # On ESXi host: configure vSwitch to allow VXLAN traffic
+
 # This is typically done via vSphere Web Client or esxcli
 # Ensure these settings on the vSwitch portgroup:
 # - Allow Promiscuous Mode: Accept (for some Cilium configurations)

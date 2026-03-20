@@ -34,6 +34,7 @@ Application Gateway needs its own subnet in the VNet. It cannot share the subnet
 
 ```bash
 # Get the VNet name used by AKS
+
 AKS_VNET=$(az aks show \
   --resource-group myResourceGroup \
   --name myAKSCluster \

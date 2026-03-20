@@ -30,6 +30,7 @@ The easiest way to deploy Falco Sidekick is using Helm alongside your Falco inst
 
 ```bash
 # Add the Falcosecurity Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 helm repo update
 

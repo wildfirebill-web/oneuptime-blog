@@ -228,6 +228,7 @@ API Containerfile:
 
 ```dockerfile
 # Containerfile.api
+
 FROM node:20-bookworm-slim
 
 WORKDIR /app

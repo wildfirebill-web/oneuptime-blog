@@ -14,6 +14,7 @@ Azure App Service built-in authentication (Easy Auth) provides a plug-in authent
 
 ```hcl
 # main.tf - Web App with Easy Auth enabled
+
 resource "azurerm_linux_web_app" "app" {
   name                = "my-authenticated-app"
   location            = azurerm_resource_group.rg.location

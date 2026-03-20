@@ -24,6 +24,7 @@ The main Ansible-relevant differences:
 
 ```ini
 # inventory/hosts
+
 [almalinux9]
 alma-web01 ansible_host=10.0.4.10
 alma-db01  ansible_host=10.0.4.20

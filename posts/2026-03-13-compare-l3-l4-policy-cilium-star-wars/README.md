@@ -29,6 +29,7 @@ Deploy the Star Wars application if not already running.
 
 ```bash
 # Deploy all Star Wars demo components: deathstar, tiefighter, xwing
+
 kubectl apply -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/http-sw-app.yaml
 
 # Confirm all pods are running

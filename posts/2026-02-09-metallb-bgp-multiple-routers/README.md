@@ -50,6 +50,7 @@ Define IP address pools for LoadBalancer services:
 
 ```yaml
 # ipaddresspool.yaml
+
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:

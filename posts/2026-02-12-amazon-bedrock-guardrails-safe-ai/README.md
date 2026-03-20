@@ -37,6 +37,7 @@ import json
 bedrock = boto3.client('bedrock', region_name='us-east-1')
 
 # Create a guardrail with multiple protection layers
+
 response = bedrock.create_guardrail(
     name='customer-service-guardrail',
     description='Safety guardrail for customer service chatbot',

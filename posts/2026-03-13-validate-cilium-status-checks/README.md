@@ -26,6 +26,7 @@ This guide defines what a validated healthy Cilium installation looks like and p
 
 ```bash
 # Quick status overview
+
 cilium status
 
 # Full verbose status

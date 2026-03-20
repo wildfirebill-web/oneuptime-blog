@@ -22,6 +22,7 @@ Start by creating a default deny policy, then explicitly allow traffic from spec
 
 ```yaml
 # default-deny-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

@@ -64,6 +64,7 @@ Update your notification hub to use FCM v1 credentials instead of the legacy ser
 
 ```bash
 # Update the notification hub with FCM v1 credentials
+
 az notification-hub credential gcm update \
   --notification-hub-name my-notification-hub \
   --namespace-name my-notification-ns \

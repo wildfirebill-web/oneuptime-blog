@@ -22,6 +22,7 @@ The `win_chocolatey` module will automatically install Chocolatey if it is not a
 
 ```yaml
 # Install Chocolatey on Windows hosts
+
 - name: Install Chocolatey
   ansible.windows.win_shell: |
     Set-ExecutionPolicy Bypass -Scope Process -Force

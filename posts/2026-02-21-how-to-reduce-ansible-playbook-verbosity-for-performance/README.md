@@ -23,6 +23,7 @@ With 500 hosts and 50 tasks, that is 25,000 result processing operations. If eac
 
 ```bash
 # Measure the difference between quiet and verbose modes
+
 time ansible-playbook site.yml > /dev/null 2>&1
 time ansible-playbook site.yml -vvv > /tmp/verbose-output.txt 2>&1
 

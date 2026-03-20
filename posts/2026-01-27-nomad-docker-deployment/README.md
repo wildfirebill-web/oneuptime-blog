@@ -16,6 +16,7 @@ Nomad uses HCL (HashiCorp Configuration Language) for job specifications. A job 
 
 ```hcl
 # job.nomad - Basic structure of a Nomad job file
+
 job "web-api" {
   # Datacenter where this job should run
   datacenters = ["dc1"]
@@ -106,7 +107,7 @@ EOF
 
 Key configuration options include image pull policies, auth credentials for private registries, and volume mounts for persistent data or configuration.
 
-## Resource Allocation
+Resource Allocation
 
 Proper resource allocation ensures fair scheduling and prevents noisy neighbors. Nomad reserves resources and enforces limits.
 

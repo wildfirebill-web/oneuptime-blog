@@ -20,6 +20,7 @@ AWS handles these differently. Minor version upgrades can be applied automatical
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

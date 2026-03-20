@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, Routing, IPv4, Static Routes, Dynamic Routing, Linux
 
-Description: Understand the three fundamental route types in IPv4 networking — connected, static, and dynamic — and when to use each one.
+Description: Understand the three fundamental route types in IPv4 networking - connected, static, and dynamic - and when to use each one.
 
 ## Introduction
 
@@ -12,10 +12,11 @@ Every router builds a Routing Information Base (RIB) from three sources: routes 
 
 ## Connected Routes
 
-A connected route is automatically installed when an IP address is assigned to an interface and the interface is up. No configuration is needed — the router simply knows it can reach that subnet directly.
+A connected route is automatically installed when an IP address is assigned to an interface and the interface is up. No configuration is needed - the router simply knows it can reach that subnet directly.
 
 ```bash
-# Assign an IP to an interface — a connected route is created automatically
+# Assign an IP to an interface - a connected route is created automatically
+
 ip addr add 192.168.10.1/24 dev eth0
 ip link set eth0 up
 
@@ -24,7 +25,7 @@ ip route show
 # Output: 192.168.10.0/24 dev eth0 proto kernel scope link src 192.168.10.1
 ```
 
-Connected routes have an administrative distance of 0 — they are always preferred over any other route type for their prefix.
+Connected routes have an administrative distance of 0 - they are always preferred over any other route type for their prefix.
 
 ## Static Routes
 
@@ -91,9 +92,9 @@ ip route show proto ospf
 
 ## When to Use Each
 
-- **Connected** — automatic, no action needed
-- **Static** — small networks, default routes, specific overrides
-- **Dynamic** — medium-to-large networks, multi-router environments, automatic convergence
+- **Connected** - automatic, no action needed
+- **Static** - small networks, default routes, specific overrides
+- **Dynamic** - medium-to-large networks, multi-router environments, automatic convergence
 
 ## Conclusion
 

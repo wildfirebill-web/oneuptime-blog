@@ -118,6 +118,7 @@ Use the Span Metrics Connector to create time-series metrics from dependency spa
 
 ```yaml
 # otel-collector-config.yaml
+
 connectors:
   spanmetrics:
     histogram:

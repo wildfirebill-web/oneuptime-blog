@@ -46,6 +46,7 @@ Allow required traffic between Kubernetes nodes:
 
 ```bash
 # Allow VXLAN (if using overlay mode)
+
 gcloud compute firewall-rules create allow-calico-vxlan \
   --network k8s-network \
   --allow udp:4789 \

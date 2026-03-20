@@ -42,6 +42,7 @@ First, install the Notation CLI and generate signing keys:
 
 ```bash
 # Install notation CLI (macOS)
+
 brew install notation
 
 # Verify installation

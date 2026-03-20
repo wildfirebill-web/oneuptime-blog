@@ -102,6 +102,7 @@ fn main() {
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 regex = "1"
 ```
@@ -155,4 +156,4 @@ fn main() {
 
 ## Conclusion
 
-The idiomatic Rust approach is to validate IPv4 addresses by attempting to parse them with `s.parse::<Ipv4Addr>()`. This handles all edge cases: octet range checking, correct separator count, and leading zero rejection. Avoid custom string parsing or regex when `Ipv4Addr`'s built-in parser is available—it's both faster and more correct.
+The idiomatic Rust approach is to validate IPv4 addresses by attempting to parse them with `s.parse::<Ipv4Addr>()`. This handles all edge cases: octet range checking, correct separator count, and leading zero rejection. Avoid custom string parsing or regex when `Ipv4Addr`'s built-in parser is available-it's both faster and more correct.

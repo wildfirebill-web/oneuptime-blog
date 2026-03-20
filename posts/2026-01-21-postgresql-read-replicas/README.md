@@ -40,6 +40,7 @@ flowchart TB
 # /etc/postgresql/16/main/postgresql.conf
 
 # Enable replication
+
 wal_level = replica
 max_wal_senders = 10
 max_replication_slots = 10

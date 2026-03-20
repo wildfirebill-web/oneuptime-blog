@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMP, Networking, Ping, IPv4, Troubleshooting, Protocols
+Tags: ICMP, Networking, Ping, IPv4, Troubleshooting, Protocol
 
 Description: Understand the ICMP Echo Request and Echo Reply mechanism that powers ping, including the packet format, identifier fields, and how to analyze them in packet captures.
 
@@ -12,7 +12,7 @@ ICMP Echo Request (Type 8) and Echo Reply (Type 0) are the foundation of the pin
 
 ## ICMP Echo Packet Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -24,13 +24,14 @@ ICMP Echo Request (Type 8) and Echo Reply (Type 0) are the foundation of the pin
 ```
 
 - **Identifier**: Identifies the ping session (PID of the ping process)
-- **Sequence Number**: Increments per packet — gaps indicate loss
+- **Sequence Number**: Increments per packet - gaps indicate loss
 - **Data**: Filled with timestamp or pattern bytes (used to calculate RTT)
 
 ## Capturing Echo Request/Reply
 
 ```bash
 # Capture all ICMP echo traffic
+
 tcpdump -i eth0 -n 'icmp[0] = 8 or icmp[0] = 0'
 
 # Verbose output showing identifier and sequence numbers
@@ -95,7 +96,7 @@ def calculate_checksum(packet):
 
 # Check if target embeds timestamps (some implementations do)
 ping -c 1 -v 8.8.8.8 | grep "bytes from"
-# The time= field is always RTT — divide by 2 for approximate one-way latency
+# The time= field is always RTT - divide by 2 for approximate one-way latency
 ```
 
 ## Conclusion

@@ -72,6 +72,7 @@ The following commands set up a Go project with the required OpenTelemetry and p
 
 ```bash
 # Create a new Go project for continuous profiling
+
 mkdir otel-profiling-demo
 cd otel-profiling-demo
 go mod init github.com/example/otel-profiling-demo

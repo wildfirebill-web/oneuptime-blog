@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Tailscale, Zero-Trust, VPN, Networking, Security
+Tags: Tailscale, Zero-trust, VPN, Networking, Security
 
 Description: Learn how to use Tailscale for zero-trust networking, including mesh VPN setup, ACLs, subnet routing, and integration with existing infrastructure.
 
@@ -39,6 +39,7 @@ Tailscale supports all major platforms. Install using your package manager:
 
 ```bash
 # Ubuntu/Debian - add repository and install
+
 curl -fsSL https://tailscale.com/install.sh | sh
 
 # macOS - use Homebrew

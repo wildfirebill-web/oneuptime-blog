@@ -23,6 +23,7 @@ If you do not have a cluster yet, here is how to quickly create one:
 
 ```bash
 # Create a basic Dataproc cluster for running Spark jobs
+
 gcloud dataproc clusters create my-spark-cluster \
   --region=us-central1 \
   --zone=us-central1-a \

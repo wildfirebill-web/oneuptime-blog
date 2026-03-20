@@ -37,6 +37,7 @@ Run a filesystem scan to detect licenses in your project. Trivy examines all sup
 
 ```bash
 # Scan current directory for licenses
+
 # --scanners license: Enable only license scanning (skip vulnerabilities)
 # --format table: Human-readable output for terminal review
 trivy fs --scanners license --format table .

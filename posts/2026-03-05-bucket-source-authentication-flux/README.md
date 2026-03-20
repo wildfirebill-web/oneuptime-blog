@@ -36,6 +36,7 @@ The `generic` provider uses S3-compatible authentication with access key and sec
 
 ```bash
 # Create a secret with S3-compatible credentials
+
 kubectl create secret generic bucket-creds \
   --namespace flux-system \
   --from-literal=accesskey=YOUR_ACCESS_KEY \

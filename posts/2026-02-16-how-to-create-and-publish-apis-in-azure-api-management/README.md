@@ -133,6 +133,7 @@ Here is an example curl call using the header approach:
 
 ```bash
 # Call the Get All Orders endpoint through the APIM gateway
+
 # The Ocp-Apim-Subscription-Key header authenticates the consumer
 curl -H "Ocp-Apim-Subscription-Key: abc123def456" \
      https://mycompany.azure-api.net/orders/

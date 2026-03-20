@@ -28,6 +28,7 @@ If you are starting a new project today, k3OS is not a viable option for product
 
 ```yaml
 # k3OS configuration
+
 ssh_authorized_keys:
   - ssh-rsa AAAA...
 hostname: edge-node-01

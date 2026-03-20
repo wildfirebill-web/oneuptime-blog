@@ -14,6 +14,7 @@ Description: Fix 'No space left on device' errors on RHEL by identifying what is
 
 ```bash
 # View disk usage for all mounted filesystems
+
 df -h
 
 # Identify the full filesystem

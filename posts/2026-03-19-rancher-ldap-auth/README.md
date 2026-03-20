@@ -22,6 +22,7 @@ Test connectivity from the Rancher server to your LDAP directory:
 
 ```bash
 # Test basic TCP connectivity
+
 nc -zv ldap.example.com 389
 nc -zv ldap.example.com 636
 

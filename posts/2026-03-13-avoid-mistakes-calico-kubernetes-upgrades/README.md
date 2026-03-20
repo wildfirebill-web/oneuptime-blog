@@ -16,6 +16,7 @@ Calico upgrade mistakes range from minor (causing longer-than-expected maintenan
 
 ```bash
 # WRONG - assuming any Calico version works with any Kubernetes version
+
 kubectl patch installation default --type=merge \
   -p '{"spec":{"version":"v3.28.0"}}'
 # v3.28.0 may require Kubernetes >= 1.27

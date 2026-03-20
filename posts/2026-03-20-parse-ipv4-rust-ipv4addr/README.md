@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv4, Ipv4Addr, Networking, Parsing, std::net
+Tags: Rust, IPv4, Ipv4Addr, Networking, Parsing, Std::net
 
 Description: Learn how to parse, construct, and manipulate IPv4 addresses in Rust using the std::net::Ipv4Addr type.
 

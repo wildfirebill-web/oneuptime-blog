@@ -24,6 +24,7 @@ AppArmor associates security profiles with programs by their path. A profile for
 
 ```bash
 # Check AppArmor status
+
 sudo apparmor_status
 
 # List loaded profiles

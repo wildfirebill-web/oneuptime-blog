@@ -16,6 +16,7 @@ Ansible modules have many optional parameters. Sometimes you want to set a param
 
 ```yaml
 # basic-omit.yml
+
 # Demonstrates the omit placeholder
 ---
 - name: Show how omit works

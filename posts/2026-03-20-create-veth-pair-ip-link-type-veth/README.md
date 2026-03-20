@@ -8,12 +8,13 @@ Description: Create virtual Ethernet (veth) pairs using ip link add type veth to
 
 ## Introduction
 
-A veth (virtual Ethernet) pair is two interconnected virtual network interfaces. Packets sent into one end come out the other end — they act as a pipe. veth pairs are the building block for container networking, network namespace connectivity, and virtual machine network bridging.
+A veth (virtual Ethernet) pair is two interconnected virtual network interfaces. Packets sent into one end come out the other end - they act as a pipe. veth pairs are the building block for container networking, network namespace connectivity, and virtual machine network bridging.
 
 ## Create a veth Pair
 
 ```bash
 # Create a veth pair: veth0 and veth1 are connected
+
 ip link add veth0 type veth peer name veth1
 
 # Both interfaces exist in the same namespace initially

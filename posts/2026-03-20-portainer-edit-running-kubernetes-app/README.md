@@ -1,14 +1,14 @@
-# How to Edit a Running Kubernetes Application in Portainer
+# How to Edit a Running Kubernetes Application in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Applications, Deployment, DevOps
+Tags: Portainer, Kubernetes, Application, Deployment, DevOps
 
 Description: Learn how to edit and update a running Kubernetes application in Portainer without downtime using rolling updates.
 
 ## Introduction
 
-Updating a running Kubernetes application in Portainer is straightforward — you can edit the application via form or YAML, and Portainer applies the changes using a rolling update strategy. This guide covers editing running applications, understanding the update process, and best practices for zero-downtime updates.
+Updating a running Kubernetes application in Portainer is straightforward - you can edit the application via form or YAML, and Portainer applies the changes using a rolling update strategy. This guide covers editing running applications, understanding the update process, and best practices for zero-downtime updates.
 
 ## Prerequisites
 
@@ -45,6 +45,7 @@ For more complex changes:
 
 ```yaml
 # Change image version
+
 containers:
   - name: app
     image: registry.company.com/myapp:v2.1.0    # Changed from v2.0.0
@@ -77,7 +78,7 @@ spec:
 
 During an update with 3 replicas:
 
-```
+```text
 Initial:   pod-1 (old), pod-2 (old), pod-3 (old)
 Step 1:    pod-1 (old), pod-2 (old), pod-3 (old), pod-4 (new)  ← Extra pod created
            pod-1 (old), pod-2 (old), pod-3 (terminating), pod-4 (new)
@@ -169,9 +170,9 @@ kubectl patch deployment my-app -n production \
 
 ## Step 9: Best Practices for Zero-Downtime Updates
 
-1. **Always set `maxUnavailable: 0`** — Prevents availability loss during updates
-2. **Configure readiness probes** — New pods don't receive traffic until healthy
-3. **Set `minReadySeconds`** — Add a buffer before Kubernetes considers a pod ready
+1. **Always set `maxUnavailable: 0`** - Prevents availability loss during updates
+2. **Configure readiness probes** - New pods don't receive traffic until healthy
+3. **Set `minReadySeconds`** - Add a buffer before Kubernetes considers a pod ready
 
 ```yaml
 spec:

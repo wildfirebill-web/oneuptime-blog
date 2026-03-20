@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, GitOps, GitHub Actions, Drift Detection, Infrastructure as Code, CI/CD
 
-Description: Learn how to implement GitOps for infrastructure management with OpenTofu, where Git is the single source of truth and all changes flow through pull requests with automated plan, apply, and drift detection.
+Description: Learn how to implement GitOps for infrastructure management with OpenTofu, where Git is the single source of truth and all changes flow through pull requests with automated plan, apply, and drift...
 
 ---
 
-GitOps for infrastructure means Git is the source of truth — the infrastructure state is always the result of merging pull requests, never ad-hoc CLI commands. OpenTofu combined with GitHub Actions implements this: plans run on PRs, applies run on merge, and drift is detected on schedule.
+GitOps for infrastructure means Git is the source of truth - the infrastructure state is always the result of merging pull requests, never ad-hoc CLI commands. OpenTofu combined with GitHub Actions implements this: plans run on PRs, applies run on merge, and drift is detected on schedule.
 
 ## GitOps Principles Applied to OpenTofu
 
@@ -29,6 +29,7 @@ graph LR
 
 ```yaml
 # .github/workflows/plan.yml
+
 name: Plan
 on:
   pull_request:
@@ -68,7 +69,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Plan: ${{ matrix.environment }}\n\`\`\`\n${plan.substring(0, 60000)}\n\`\`\``
+              body: `## Plan: ${{ matrix.environment }}\n```\n${plan.substring(0, 60000)}\n````
             });
 ```
 
@@ -151,8 +152,8 @@ jobs:
 
 ## Best Practices
 
-- Never apply infrastructure outside of the GitOps pipeline — revoke human apply permissions and only allow CI/CD roles.
+- Never apply infrastructure outside of the GitOps pipeline - revoke human apply permissions and only allow CI/CD roles.
 - Use `-detailed-exitcode` in drift detection plans: exit code 0 = no changes, 1 = error, 2 = changes detected.
 - Run drift detection on a schedule (every 6 hours) and create GitHub issues automatically when drift is found.
 - Require `environment: production` in GitHub Actions apply jobs to enforce manual approval via GitHub Environments.
-- Keep plan and apply in separate workflows with separate IAM roles — plan roles are read-only, apply roles have write access.
+- Keep plan and apply in separate workflows with separate IAM roles - plan roles are read-only, apply roles have write access.

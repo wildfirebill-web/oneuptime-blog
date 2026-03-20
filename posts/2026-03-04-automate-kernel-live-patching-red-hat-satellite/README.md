@@ -20,6 +20,7 @@ Red Hat Satellite can manage kernel live patching at scale, automatically distri
 
 ```bash
 # On the Satellite server, verify the RHEL BaseOS repository is synced
+
 hammer repository list --organization "Your Org" | grep BaseOS
 
 # Trigger a sync to get the latest live patch packages

@@ -22,6 +22,7 @@ Install SAM CLI on your system:
 
 ```bash
 # macOS
+
 brew install aws-sam-cli
 
 # Linux

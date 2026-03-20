@@ -107,6 +107,7 @@ This generates the files needed on the VM, including the bootstrap token, mesh c
 
 ```bash
 # From the VM
+
 curl -v https://eastwest-gateway-ip:15012
 ```
 

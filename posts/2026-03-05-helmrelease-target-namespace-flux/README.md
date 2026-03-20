@@ -18,6 +18,7 @@ The `spec.targetNamespace` field sets the namespace used for Helm template rende
 
 ```yaml
 # helmrelease.yaml - HelmRelease with target namespace
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

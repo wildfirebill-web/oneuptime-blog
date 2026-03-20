@@ -34,6 +34,7 @@ Here's a simple example that scales up every weekday morning and scales back dow
 
 ```bash
 # Scale up to 10 instances every weekday at 8 AM UTC
+
 aws autoscaling put-scheduled-update-group-action \
   --auto-scaling-group-name my-asg \
   --scheduled-action-name scale-up-morning \

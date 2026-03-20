@@ -44,6 +44,7 @@ Create a storage account using Azure CLI:
 
 ```bash
 # Login to Azure
+
 az login
 
 # Create resource group

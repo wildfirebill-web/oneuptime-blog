@@ -52,6 +52,7 @@ Every Modelfile starts with a FROM instruction that specifies the base model. Al
 
 ```dockerfile
 # Modelfile
+
 # Specify the base model - required first instruction
 FROM llama3.2
 

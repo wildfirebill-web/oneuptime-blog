@@ -25,6 +25,7 @@ The most common mistake: you set up namespace isolation perfectly, then a new na
 
 ```bash
 # BAD - creating a namespace without labels
+
 kubectl create namespace new-service
 
 # GOOD - always add required labels when creating namespaces

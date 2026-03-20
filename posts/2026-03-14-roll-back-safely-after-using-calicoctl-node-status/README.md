@@ -27,6 +27,7 @@ If a BGP configuration change caused peers to drop:
 
 ```bash
 # Check the current BGP configuration
+
 calicoctl get bgpconfigurations default -o yaml
 
 # Restore the default full-mesh configuration

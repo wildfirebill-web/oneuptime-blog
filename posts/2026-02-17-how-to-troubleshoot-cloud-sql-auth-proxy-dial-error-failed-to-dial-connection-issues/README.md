@@ -42,6 +42,7 @@ The proxy uses the Cloud SQL Admin API to create ephemeral certificates and look
 
 ```bash
 # Check if the API is enabled
+
 gcloud services list --enabled --filter="name:sqladmin.googleapis.com" --project=my-project
 
 # Enable it if it is not listed

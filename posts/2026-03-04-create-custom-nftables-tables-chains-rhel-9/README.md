@@ -220,6 +220,7 @@ When you have multiple base chains on the same hook, priority determines which r
 
 ```bash
 # This runs first (priority -10)
+
 nft add chain inet my_filter early_input { type filter hook input priority -10 \; policy accept \; }
 
 # This runs second (priority 0)

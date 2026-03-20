@@ -274,6 +274,7 @@ Create `/etc/haproxy/scripts/health-check.sh`:
 ```bash
 #!/bin/bash
 # HAProxy external health check script for IPv6 servers
+
 # Arguments: $1=server_addr $2=server_port $3=server_name
 
 SERVER_ADDR=$1

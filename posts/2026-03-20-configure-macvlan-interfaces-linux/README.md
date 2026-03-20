@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, macvlan, Networking, Containers, Docker, Virtual Networking, iproute2
+Tags: Linux, Macvlan, Networking, Containers, Docker, Virtual Networking, iproute2
 
 Description: Create macvlan interfaces on Linux to assign multiple MAC addresses and IP addresses to a single physical interface without bridging.
 
 ## Introduction
 
-macvlan creates virtual network interfaces that each have their own unique MAC address, derived from the parent interface. Unlike bridges, macvlan does not require a separate bridge device — each macvlan interface appears as an independent NIC. macvlan is widely used for Docker and container networking when containers need direct Layer 2 access to the physical network.
+macvlan creates virtual network interfaces that each have their own unique MAC address, derived from the parent interface. Unlike bridges, macvlan does not require a separate bridge device - each macvlan interface appears as an independent NIC. macvlan is widely used for Docker and container networking when containers need direct Layer 2 access to the physical network.
 
 ## macvlan Modes
 
@@ -23,6 +23,7 @@ macvlan creates virtual network interfaces that each have their own unique MAC a
 
 ```bash
 # Create a macvlan interface named macvlan0 on top of eth0
+
 ip link add macvlan0 link eth0 type macvlan mode bridge
 
 # Assign an IP

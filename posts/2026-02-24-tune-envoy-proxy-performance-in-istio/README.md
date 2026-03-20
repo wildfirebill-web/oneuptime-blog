@@ -16,6 +16,7 @@ Before tuning anything, measure your current overhead. Deploy a simple test appl
 
 ```bash
 # Check latency through the sidecar
+
 kubectl exec <client-pod> -- curl -w "@/dev/stdin" -o /dev/null -s http://server:8080/api <<'EOF'
     time_connect:  %{time_connect}s\n
    time_starttlt:  %{time_starttransfer}s\n
@@ -69,7 +70,7 @@ spec:
 
 More worker threads means more CPU usage, so balance between performance and resource consumption.
 
-## Resource Allocation
+Resource Allocation
 
 Undersized Envoy containers lead to CPU throttling and increased latency. Set appropriate resource requests and limits:
 

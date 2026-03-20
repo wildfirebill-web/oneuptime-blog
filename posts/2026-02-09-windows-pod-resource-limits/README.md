@@ -24,6 +24,7 @@ Start with a basic pod configuration:
 
 ```yaml
 # windows-resource-limits.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -451,7 +452,7 @@ kubectl get pod burstable-qos -o jsonpath='{.status.qosClass}'
 kubectl get pod besteffort-qos -o jsonpath='{.status.qosClass}'
 ```
 
-## Resource Quotas for Windows Namespaces
+Resource Quotas for Windows Namespaces
 
 Limit total resources in a namespace:
 

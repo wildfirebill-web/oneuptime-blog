@@ -40,6 +40,7 @@ This script registers the provider and creates a new Confidential Ledger instanc
 
 ```bash
 # Register the Confidential Ledger resource provider
+
 az provider register --namespace Microsoft.ConfidentialLedger
 
 # Wait for registration to complete

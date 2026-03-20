@@ -50,6 +50,7 @@ OpenTelemetry provides unified instrumentation for all three pillars:
 
 ```python
 # otel_setup.py
+
 import os
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider

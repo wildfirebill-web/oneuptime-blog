@@ -27,6 +27,7 @@ The most straightforward way to handle synced events is through ArgoCD Notificat
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

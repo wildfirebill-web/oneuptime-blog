@@ -54,6 +54,7 @@ First, configure your Prometheus instance to send metrics via remote write. Add 
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

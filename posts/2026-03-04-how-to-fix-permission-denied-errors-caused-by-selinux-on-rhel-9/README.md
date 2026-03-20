@@ -14,6 +14,7 @@ SELinux "Permission denied" errors are common when services try to access files 
 
 ```bash
 # Check SELinux mode
+
 getenforce
 
 # Temporarily set to permissive to test

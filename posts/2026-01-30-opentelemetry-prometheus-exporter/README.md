@@ -190,6 +190,7 @@ Configure Prometheus to scrape metrics from your application. Add this job to yo
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s      # How often to scrape targets
   evaluation_interval: 15s  # How often to evaluate rules

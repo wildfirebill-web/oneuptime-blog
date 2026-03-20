@@ -47,6 +47,7 @@ The following gcloud command creates a bucket with a lifecycle rule that moves o
 
 ```bash
 # Create a Cloud Storage bucket with lifecycle management
+
 # Objects automatically move to Coldline storage after 30 days
 gsutil mb -l us-central1 gs://my-migrated-bucket
 

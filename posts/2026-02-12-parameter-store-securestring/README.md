@@ -41,6 +41,7 @@ The simplest approach uses the default AWS-managed `aws/ssm` KMS key:
 
 ```bash
 # Store a database password
+
 aws ssm put-parameter \
   --name "/myapp/production/db-password" \
   --type SecureString \

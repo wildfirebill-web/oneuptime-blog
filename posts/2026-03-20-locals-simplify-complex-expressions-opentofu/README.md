@@ -8,7 +8,7 @@ Description: Learn how to use local values to break down complex expressions, re
 
 ---
 
-Local values are named expressions defined in a `locals` block. They let you compute a value once and reference it multiple times — and more importantly, they let you break a complex expression into named, readable steps. This guide shows practical patterns for using locals to clarify configuration intent.
+Local values are named expressions defined in a `locals` block. They let you compute a value once and reference it multiple times - and more importantly, they let you break a complex expression into named, readable steps. This guide shows practical patterns for using locals to clarify configuration intent.
 
 ---
 
@@ -16,6 +16,7 @@ Local values are named expressions defined in a `locals` block. They let you com
 
 ```hcl
 # BEFORE: Repeated complex expressions scattered through the config
+
 resource "aws_instance" "web" {
   tags = {
     Name        = "${var.project}-${var.environment}-web"
@@ -63,14 +64,14 @@ resource "aws_db_instance" "main" {
 ## Breaking Down Complex Expressions
 
 ```hcl
-# A complex AMI selection logic — without locals it's hard to read
+# A complex AMI selection logic - without locals it's hard to read
 resource "aws_instance" "web" {
   ami = var.custom_ami != null ? var.custom_ami : (
     var.os == "ubuntu" ? data.aws_ami.ubuntu.id : data.aws_ami.amazon_linux.id
   )
 }
 
-# WITH locals — each step is named and readable
+# WITH locals - each step is named and readable
 locals {
   default_ami = var.os == "ubuntu" ? data.aws_ami.ubuntu.id : data.aws_ami.amazon_linux.id
   selected_ami = var.custom_ami != null ? var.custom_ami : local.default_ami
@@ -160,4 +161,4 @@ locals {
 
 ## Summary
 
-Use locals whenever an expression is repeated more than once, is too complex to read inline, or benefits from a descriptive name. They're not variables — callers can't override them — they're named computed values that exist only within the current module. A config with well-named locals reads almost like documentation.
+Use locals whenever an expression is repeated more than once, is too complex to read inline, or benefits from a descriptive name. They're not variables - callers can't override them - they're named computed values that exist only within the current module. A config with well-named locals reads almost like documentation.

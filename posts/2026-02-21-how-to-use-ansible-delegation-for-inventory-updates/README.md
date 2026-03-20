@@ -24,6 +24,7 @@ The simplest form of inventory update during a play uses the `add_host` module. 
 
 ```yaml
 # add_new_host.yml - Dynamically add a provisioned host to inventory
+
 ---
 - name: Provision and register new hosts
   hosts: localhost

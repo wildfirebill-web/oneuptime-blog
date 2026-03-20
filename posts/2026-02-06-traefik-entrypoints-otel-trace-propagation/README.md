@@ -14,6 +14,7 @@ Configure OpenTelemetry in the Traefik static configuration:
 
 ```yaml
 # traefik.yaml (static configuration)
+
 entryPoints:
   web:
     address: ":80"

@@ -16,6 +16,7 @@ When you run an Ansible playbook, you can add `-v` flags to increase the verbosi
 
 ```bash
 # Standard output (verbosity 0)
+
 ansible-playbook deploy.yml
 
 # Verbose output (verbosity 1)

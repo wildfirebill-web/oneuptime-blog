@@ -22,6 +22,7 @@ kube-linter is an open-source static analysis tool from StackRox (now part of Re
 
 ```bash
 # macOS (Homebrew)
+
 brew install kube-linter
 
 # Linux (binary download)

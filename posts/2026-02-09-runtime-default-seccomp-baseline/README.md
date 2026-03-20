@@ -346,6 +346,7 @@ Gradually enable runtime/default:
 
 ```yaml
 # Stage 1: Test in development
+
 apiVersion: v1
 kind: Namespace
 metadata:

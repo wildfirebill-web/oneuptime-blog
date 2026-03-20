@@ -31,6 +31,7 @@ Install HAProxy Ingress Controller:
 
 ```bash
 # Add the HAProxy Helm repo
+
 helm repo add haproxytech https://haproxytech.github.io/helm-charts
 helm repo update
 

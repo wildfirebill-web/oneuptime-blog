@@ -29,6 +29,7 @@ Using the Azure CLI:
 
 ```bash
 # Reset the SSH public key for an existing user
+
 az vm user update \
   --resource-group myResourceGroup \
   --name myLinuxVM \

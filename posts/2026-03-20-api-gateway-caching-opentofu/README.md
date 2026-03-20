@@ -44,6 +44,7 @@ resource "aws_api_gateway_stage" "prod" {
 
 ```hcl
 # Method settings control caching behavior per endpoint
+
 resource "aws_api_gateway_method_settings" "cached_get" {
   rest_api_id = var.api_gateway_id
   stage_name  = aws_api_gateway_stage.prod.stage_name
@@ -152,4 +153,4 @@ aws apigateway flush-stage-cache \
 
 ## Conclusion
 
-API Gateway caching provides the biggest performance and cost improvement for read-heavy endpoints with stable data. Size the cache cluster based on your unique cache keys and response sizes—start with 0.5 GB and scale up if cache eviction metrics are high. Always encrypt cache data in production and include relevant path/query parameters in cache keys to avoid serving stale data to different users.
+API Gateway caching provides the biggest performance and cost improvement for read-heavy endpoints with stable data. Size the cache cluster based on your unique cache keys and response sizes-start with 0.5 GB and scale up if cache eviction metrics are high. Always encrypt cache data in production and include relevant path/query parameters in cache keys to avoid serving stale data to different users.

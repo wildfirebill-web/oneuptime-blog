@@ -1,8 +1,8 @@
-# How to Forward Container Logs to Syslog via Portainer
+# How to Forward Container Logs to Syslog via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Syslog, Log Forwarding, Docker, rsyslog, Centralized Logging
+Tags: Portainer, Syslog, Log Forwarding, Docker, Rsyslog, Centralized Logging
 
 Description: Learn how to configure Docker containers managed by Portainer to forward their logs to a syslog server using the Docker syslog log driver.
 
@@ -99,6 +99,7 @@ A minimal `rsyslog.conf`:
 
 ```conf
 # Receive logs over TCP and UDP
+
 module(load="imtcp")
 module(load="imudp")
 
@@ -150,6 +151,6 @@ logging:
   options:
     syslog-address: "tcp://syslog-server.example.com:514"
     tag: "my-app/{{.Name}}"
-    # Note: blocking is default behavior — use a reliable TCP syslog server
+    # Note: blocking is default behavior - use a reliable TCP syslog server
     # or switch to fluentd with fluentd-async: "true" for non-blocking behavior
 ```

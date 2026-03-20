@@ -18,6 +18,7 @@ You need a running Rook-Ceph cluster on your Talos Linux nodes. The Rook operato
 
 ```bash
 # Verify Ceph cluster health
+
 kubectl -n rook-ceph exec deploy/rook-ceph-tools -- ceph status
 
 # Check that OSDs are up

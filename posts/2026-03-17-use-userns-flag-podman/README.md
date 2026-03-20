@@ -18,6 +18,7 @@ Podman's `--userns` flag controls how user namespaces are configured for a conta
 
 ```bash
 # host: Use the host's user namespace (no remapping)
+
 podman run --rm --userns=host alpine:latest id
 # Container UID 0 = Host UID 0 (if running as root)
 # Container UID matches your host UID (if rootless)

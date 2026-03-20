@@ -12,7 +12,7 @@ IPv6 fragmentation follows fundamentally different rules than IPv4. In IPv4, any
 
 ## Core IPv6 Fragmentation Rules (RFC 8200)
 
-```
+```text
 Rule 1: Only the source can fragment
   → No intermediate router may fragment an IPv6 packet
   → A router that receives a packet too large for the next link:
@@ -45,7 +45,7 @@ Rule 6: Atomic fragments
 
 ## IPv6 vs IPv4 Fragmentation Comparison
 
-```
+```text
 IPv4:
   Any router can fragment       → simpler for sources, more load on routers
   DF bit controls fragmentability → sources can prevent router fragmentation
@@ -125,6 +125,7 @@ class IPv6Fragmenter:
         return fragments
 
 # Example: fragment a 3000-byte TCP segment
+
 fragmenter = IPv6Fragmenter(path_mtu=1500)
 tcp_plus_data = bytes(3000)  # Simulate TCP header + data
 
@@ -139,7 +140,7 @@ if fragmenter.needs_fragmentation(len(tcp_plus_data)):
 
 The 32-bit Identification field links all fragments of the same original packet:
 
-```
+```text
 Identification rules:
   - Must be unique for the same (source, destination, next-header) triple
     for the duration the fragments could be in-flight
@@ -150,7 +151,7 @@ Identification rules:
 
 ## Atomic Fragments
 
-RFC 6946 addressed a security issue with "atomic fragments" — single packets that have a Fragment Header but are not actually fragmented (offset=0, M=0):
+RFC 6946 addressed a security issue with "atomic fragments" - single packets that have a Fragment Header but are not actually fragmented (offset=0, M=0):
 
 ```bash
 # Atomic fragments can be forced by:
@@ -166,4 +167,4 @@ cat /proc/sys/net/ipv6/conf/all/use_tempaddr
 
 ## Conclusion
 
-IPv6 fragmentation places the entire responsibility on the source. Routers that receive oversized packets send ICMPv6 Packet Too Big and drop the packet — they never fragment. This requires sources to implement Path MTU Discovery correctly and to create proper Fragment Headers when fragmentation is needed. Fragment offset must be in multiples of 8 bytes, the identification must be unique within a reasonable timeframe, and all fragments except the last must be a multiple of 8 bytes. Understanding these rules is prerequisite to implementing any IPv6 application that sends large data.
+IPv6 fragmentation places the entire responsibility on the source. Routers that receive oversized packets send ICMPv6 Packet Too Big and drop the packet - they never fragment. This requires sources to implement Path MTU Discovery correctly and to create proper Fragment Headers when fragmentation is needed. Fragment offset must be in multiples of 8 bytes, the identification must be unique within a reasonable timeframe, and all fragments except the last must be a multiple of 8 bytes. Understanding these rules is prerequisite to implementing any IPv6 application that sends large data.

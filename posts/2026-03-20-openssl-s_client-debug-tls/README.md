@@ -14,6 +14,7 @@ Description: Learn how to use the openssl s_client command to inspect TLS certif
 
 ```bash
 # Basic connection to a server
+
 openssl s_client -connect example.com:443
 
 # If successful, you'll see the certificate chain, session details,
@@ -21,7 +22,7 @@ openssl s_client -connect example.com:443
 ```
 
 After connecting, press Enter twice to see a response, or type:
-```
+```text
 GET / HTTP/1.0
 Host: example.com
 

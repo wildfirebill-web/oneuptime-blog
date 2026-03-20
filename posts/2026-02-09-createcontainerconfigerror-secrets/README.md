@@ -24,6 +24,7 @@ Check pod status to confirm the error.
 
 ```bash
 # List pods showing errors
+
 kubectl get pods
 
 # Output:

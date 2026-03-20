@@ -47,6 +47,7 @@ Before horizontal scaling, try vertical scaling. Many controller performance iss
 
 ```yaml
 # Patch the controller deployment with more resources
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

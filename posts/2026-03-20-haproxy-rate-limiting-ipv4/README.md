@@ -112,6 +112,7 @@ frontend http_in
 
 ```bash
 # View stick table to see per-IP counters
+
 echo "show table http_in" | sudo socat stdio /run/haproxy/admin.sock
 
 # Sample output:

@@ -46,6 +46,7 @@ Let us start by setting up our Go project with the necessary dependencies.
 
 ```bash
 # Create a new Go module
+
 mkdir rate-limiter && cd rate-limiter
 go mod init github.com/yourorg/rate-limiter
 

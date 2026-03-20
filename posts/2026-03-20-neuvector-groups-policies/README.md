@@ -19,13 +19,13 @@ NeuVector creates groups automatically through two mechanisms:
 
 ### Auto-Generated Group Naming
 
-```
+```text
 Pattern: nv.<deployment-name>.<namespace>
 
 Examples:
-nv.nginx.default          — nginx deployment in default namespace
-nv.backend-api.production — backend-api deployment in production namespace
-nv.ext.ip                 — External IP addresses
+nv.nginx.default          - nginx deployment in default namespace
+nv.backend-api.production - backend-api deployment in production namespace
+nv.ext.ip                 - External IP addresses
 ```
 
 ## Prerequisites
@@ -38,6 +38,7 @@ nv.ext.ip                 — External IP addresses
 
 ```bash
 # List all groups
+
 curl -sk \
   "https://neuvector-manager:8443/v1/group?start=0&limit=100" \
   -H "X-Auth-Token: ${TOKEN}" | jq '.groups[] | {

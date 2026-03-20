@@ -27,6 +27,7 @@ The simplest way to add a profile is with `aws configure`.
 
 ```bash
 # Set up the default profile
+
 aws configure
 # AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
 # AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY

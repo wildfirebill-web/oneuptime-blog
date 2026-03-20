@@ -24,6 +24,7 @@ Start with multiple compositions for the same composite resource type.
 
 ```yaml
 # xrd-database.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:

@@ -44,6 +44,7 @@ Run these commands on both nodes:
 
 ```bash
 # Enable the HA repository
+
 sudo subscription-manager repos --enable=rhel-9-for-x86_64-highavailability-rpms
 
 # Install Pacemaker, Corosync, and SAP HANA resource agents

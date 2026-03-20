@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, State Management
 
-Description: Learn how to safely migrate your OpenTofu state from one backend to another — for example from local to S3, or from S3 to GCS — without losing any state data.
+Description: Learn how to safely migrate your OpenTofu state from one backend to another - for example from local to S3, or from S3 to GCS - without losing any state data.
 
 ## Introduction
 
@@ -23,6 +23,7 @@ Always back up before migrating:
 
 ```bash
 # Pull and save current state
+
 tofu state pull > state-before-migration.tfstate
 
 # Verify the backup
@@ -55,7 +56,7 @@ terraform {
 
 ## Step 3: Run tofu init to Migrate
 
-Run `tofu init` — OpenTofu detects the backend change and offers to migrate:
+Run `tofu init` - OpenTofu detects the backend change and offers to migrate:
 
 ```bash
 tofu init
@@ -81,7 +82,7 @@ Confirm the state was migrated correctly:
 # Verify state is accessible in the new backend
 tofu state list
 
-# Run a plan — should show no changes
+# Run a plan - should show no changes
 tofu plan
 
 # Confirm the state count matches

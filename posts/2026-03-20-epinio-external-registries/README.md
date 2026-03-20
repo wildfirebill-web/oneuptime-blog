@@ -21,6 +21,7 @@ How to Configure Epinio with External Container Registries demonstrates how Epin
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

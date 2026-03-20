@@ -1,4 +1,4 @@
-# How to Remove a Kubernetes Application in Portainer
+# How to Remove a Kubernetes Application in Portainer - Application
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ When you remove an application in Portainer:
 
 ```bash
 # Delete a deployment and its pods
+
 kubectl delete deployment my-app --namespace=production
 
 # Delete the associated service

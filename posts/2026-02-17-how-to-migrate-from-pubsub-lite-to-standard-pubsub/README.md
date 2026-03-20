@@ -59,6 +59,7 @@ Create the equivalent standard Pub/Sub topic and subscriptions:
 
 ```hcl
 # Standard Pub/Sub topic to replace Pub/Sub Lite
+
 resource "google_pubsub_topic" "events" {
   name = "events-standard"
 

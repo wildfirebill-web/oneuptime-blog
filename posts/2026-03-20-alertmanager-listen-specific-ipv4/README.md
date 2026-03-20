@@ -14,6 +14,7 @@ Alertmanager handles alerts sent by Prometheus, routing them to email, Slack, Pa
 
 ```bash
 # Run Alertmanager on specific IPv4
+
 alertmanager \
   --config.file=/etc/alertmanager/alertmanager.yml \
   --web.listen-address="10.0.0.5:9093" \
@@ -124,4 +125,4 @@ curl -s http://10.0.0.5:9093/api/v2/alerts | python3 -m json.tool
 
 ## Conclusion
 
-Set Alertmanager's bind address with `--web.listen-address=ip:9093`. Configure notification routing in `alertmanager.yml` with `route` and `receivers`. Restrict port 9093 with firewall rules—only Prometheus and admin workstations need access. Use `amtool check-config` to validate configuration and `amtool alert add` to test alert routing before a real incident.
+Set Alertmanager's bind address with `--web.listen-address=ip:9093`. Configure notification routing in `alertmanager.yml` with `route` and `receivers`. Restrict port 9093 with firewall rules-only Prometheus and admin workstations need access. Use `amtool check-config` to validate configuration and `amtool alert add` to test alert routing before a real incident.

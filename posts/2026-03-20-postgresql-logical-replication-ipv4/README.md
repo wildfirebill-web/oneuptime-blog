@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Logical Replication, IPv4, Database, Publication, Subscription, Migration
+Tags: PostgreSQL, Logical Replication, IPv4, Database, Publication, Subscriptions, Migration
 
 Description: Learn how to configure PostgreSQL logical replication to replicate specific tables from an IPv4 publisher to a subscriber for migrations and selective replication.
 
@@ -20,6 +20,7 @@ Logical replication replicates individual tables (not the entire instance) at th
 listen_addresses = '10.0.0.10,127.0.0.1'
 
 # Logical replication requires logical WAL level
+
 wal_level = logical
 
 max_replication_slots = 10
@@ -28,7 +29,7 @@ max_wal_senders = 10
 
 ### pg_hba.conf
 
-```
+```text
 # /etc/postgresql/15/main/pg_hba.conf
 # Allow the subscriber to connect for replication
 host  mydb  replicator  10.0.0.11/32  scram-sha-256

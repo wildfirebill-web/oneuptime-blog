@@ -14,6 +14,7 @@ Podman does not run a persistent daemon like Docker. Instead, it provides an on-
 
 ```bash
 # Enable the Podman socket for the current user (rootless mode)
+
 systemctl --user enable --now podman.socket
 
 # Verify the socket is active

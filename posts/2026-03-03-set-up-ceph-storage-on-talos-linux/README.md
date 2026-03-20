@@ -50,6 +50,7 @@ Ceph needs raw, unpartitioned disks. Do not configure these disks in the `machin
 
 ```yaml
 # Machine config for a Ceph node
+
 machine:
   type: worker
   kernel:

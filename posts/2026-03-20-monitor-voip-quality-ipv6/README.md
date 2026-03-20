@@ -12,7 +12,7 @@ VoIP quality monitoring over IPv6 uses RTCP (RTP Control Protocol) reports embed
 
 ## VoIP Quality Metrics Reference
 
-```
+```text
 Quality Thresholds for Good VoIP:
 ┌─────────────────┬─────────────┬─────────────┬──────────────┐
 │ Metric          │ Good        │ Acceptable  │ Poor         │
@@ -28,6 +28,7 @@ Quality Thresholds for Good VoIP:
 
 ```bash
 # Capture RTCP packets (RTP port + 1, typically odd ports)
+
 sudo tcpdump -i eth0 -nn ip6 and udp and portrange 10000-20000 \
   -w /tmp/voip_ipv6.pcap
 

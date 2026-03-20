@@ -16,6 +16,7 @@ journalctl has built-in JSON output support:
 
 ```bash
 # Export logs as JSON (one JSON object per line)
+
 journalctl -o json --no-pager > /tmp/journal-export.json
 
 # Pretty-printed JSON (easier to read but larger)

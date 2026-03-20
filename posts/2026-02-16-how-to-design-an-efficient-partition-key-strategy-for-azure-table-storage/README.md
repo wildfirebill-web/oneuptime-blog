@@ -30,6 +30,7 @@ The simplest approach is to use a natural grouping from your domain. If you are 
 from azure.data.tables import TableClient
 
 # Using department as partition key groups employees naturally
+
 # Queries like "all employees in Engineering" are fast partition scans
 employee = {
     "PartitionKey": "Engineering",

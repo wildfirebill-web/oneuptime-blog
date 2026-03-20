@@ -124,6 +124,7 @@ Create alert rules that send meaningful data to OneUptime. This example demonstr
 
 ```yaml
 # Example Grafana alert rule for monitoring CPU usage
+
 # This rule triggers when CPU exceeds 85% for 5 consecutive minutes
 alert: High CPU Usage
 expr: cpu_usage_percent > 85        # PromQL expression defining the threshold

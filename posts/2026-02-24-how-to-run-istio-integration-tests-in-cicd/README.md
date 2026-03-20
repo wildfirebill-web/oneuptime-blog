@@ -18,6 +18,7 @@ The fastest way to run Istio integration tests in CI is with kind (Kubernetes in
 
 ```yaml
 # kind-config.yaml
+
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:

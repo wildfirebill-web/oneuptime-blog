@@ -16,6 +16,7 @@ Create a basic ASP.NET Core Web API:
 
 ```bash
 # Create a new Web API project
+
 dotnet new webapi -n DotnetDockerDemo
 cd DotnetDockerDemo
 ```

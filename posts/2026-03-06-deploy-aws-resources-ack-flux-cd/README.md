@@ -38,6 +38,7 @@ Define a Git repository source for your AWS infrastructure definitions:
 
 ```yaml
 # git-source.yaml
+
 # Flux CD GitRepository source for AWS infrastructure configs
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Linux, VLAN, ip link, Network Configuration, 802.1Q
+Tags: Networking, Linux, VLAN, Ip link, Network Configuration, 802.1Q
 
 Description: Learn how to create and configure 802.1Q VLAN interfaces on Linux using the ip link command with type vlan.
 
@@ -16,6 +16,7 @@ VLAN (802.1Q) interfaces let a single physical interface carry traffic for multi
 
 ```bash
 # Create VLAN 10 on eth0
+
 sudo ip link add link eth0 name eth0.10 type vlan id 10
 
 # Bring the interface up
@@ -103,4 +104,4 @@ sudo ip link delete eth0.10
 
 ## Summary
 
-Create VLAN sub-interfaces with `ip link add link <parent> name <parent>.<vid> type vlan id <vid>`. Bring them up with `ip link set up` and assign IPs with `ip addr add`. Changes made with `ip` commands are temporary — persist them with systemd-networkd `.netdev` and `.network` files.
+Create VLAN sub-interfaces with `ip link add link <parent> name <parent>.<vid> type vlan id <vid>`. Bring them up with `ip link set up` and assign IPs with `ip addr add`. Changes made with `ip` commands are temporary - persist them with systemd-networkd `.netdev` and `.network` files.

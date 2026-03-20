@@ -34,6 +34,7 @@ Use external DNS and load balancers to route regional traffic:
 
 ```yaml
 # GeoDNS configuration (example with Route53)
+
 apiVersion: externaldns.k8s.io/v1alpha1
 kind: DNSEndpoint
 metadata:

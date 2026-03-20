@@ -61,6 +61,7 @@ Set up a shared secret so ArgoCD can verify webhook payloads are legitimate:
 
 ```yaml
 # argocd-secret Secret
+
 apiVersion: v1
 kind: Secret
 metadata:

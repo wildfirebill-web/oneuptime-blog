@@ -27,6 +27,7 @@ This guide provides a structured methodology for diagnosing each class of policy
 
 ```bash
 # Watch for policy drops in real-time
+
 hubble observe --verdict DROPPED --follow
 
 # Look for drops between specific pods

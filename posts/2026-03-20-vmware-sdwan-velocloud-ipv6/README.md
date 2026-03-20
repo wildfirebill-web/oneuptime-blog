@@ -12,7 +12,7 @@ VMware SD-WAN supports IPv6 on Edge LAN interfaces and transport side, distribut
 
 ## VMware SD-WAN IPv6 Architecture
 
-```
+```text
 VMware SD-WAN IPv6 Flow:
 Orchestrator (Cloud)
        |
@@ -26,7 +26,7 @@ Clients get dual-stack addresses from Edge DHCPv6/SLAAC
 
 ## VeloCloud Edge IPv6 Configuration (Orchestrator)
 
-```
+```text
 VMware SD-WAN Orchestrator:
 Navigate to: Configure > Edges > [Edge Name] > Device > LAN Networks
 
@@ -52,6 +52,7 @@ Add/Edit Network:
 # Or configure via REST API
 
 # VMware SD-WAN Orchestrator API - configure IPv6 on edge interface
+
 curl -s -X POST \
   "https://orchestrator.example.com/portal/rest/edge/updateEdgeNetworkModuleConfig" \
   -H "Content-Type: application/json" \
@@ -81,7 +82,7 @@ curl -s -X POST \
 
 ## SD-WAN Business Policy for IPv6
 
-```
+```text
 VMware SD-WAN Orchestrator:
 Configure > Profiles > [Profile] > Business Policy
 
@@ -153,7 +154,7 @@ ip -6 route show table 200  # VeloCloud uses custom tables
 
 ## Monitor IPv6 in VMware SD-WAN Orchestrator
 
-```
+```text
 Orchestrator > Monitor > Edges > [Edge] > Overview
 
 Network Interface Stats:

@@ -1,4 +1,4 @@
-# How to Understand Docker Bridge Networking in Portainer
+# How to Understand Docker Bridge Networking in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,7 +23,7 @@ graph TD
     C3 -- "postgres:5432" --> C4
 ```
 
-The default `docker0` bridge does not support DNS-based container name resolution. Custom bridges created by Docker Compose or manually do support it — containers resolve each other by service name.
+The default `docker0` bridge does not support DNS-based container name resolution. Custom bridges created by Docker Compose or manually do support it - containers resolve each other by service name.
 
 ## Creating a Network in Portainer
 
@@ -31,7 +31,7 @@ In Portainer, go to **Networks > Add network**:
 
 - **Name**: `my-app-net`
 - **Driver**: `bridge`
-- **Subnet**: `172.20.0.0/16` (optional — Docker assigns one if left blank)
+- **Subnet**: `172.20.0.0/16` (optional - Docker assigns one if left blank)
 - **Gateway**: `172.20.0.1` (optional)
 - **IP range**: `172.20.0.0/24` (optional, restricts automatic IP assignment)
 
@@ -54,7 +54,7 @@ services:
   postgres:
     image: postgres:15
     networks:
-      - backend      # Isolated — only reachable from backend network
+      - backend      # Isolated - only reachable from backend network
     environment:
       POSTGRES_PASSWORD: secret
 
@@ -79,6 +79,7 @@ View network details including connected containers and IPAM config:
 
 ```bash
 # List all networks
+
 docker network ls
 
 # Inspect a specific network

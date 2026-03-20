@@ -8,7 +8,7 @@ Description: Learn strategies for sharing and synchronizing custom templates acr
 
 ## Introduction
 
-As organizations scale their Docker infrastructure, they often run multiple Portainer instances — for different environments, data centers, or teams. Maintaining consistent templates across all instances manually is error-prone and time-consuming. This guide covers proven strategies for sharing templates across multiple Portainer instances.
+As organizations scale their Docker infrastructure, they often run multiple Portainer instances - for different environments, data centers, or teams. Maintaining consistent templates across all instances manually is error-prone and time-consuming. This guide covers proven strategies for sharing templates across multiple Portainer instances.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ As organizations scale their Docker infrastructure, they often run multiple Port
 
 The simplest approach: configure all Portainer instances to point to the same template JSON URL.
 
-```
+```text
 [Portainer Instance 1] ─────┐
 [Portainer Instance 2] ──── ├──→ https://templates.company.com/templates.json
 [Portainer Instance 3] ─────┘
@@ -40,6 +40,7 @@ The simplest approach: configure all Portainer instances to point to the same te
 
 ```bash
 # Set the template URL when starting Portainer
+
 docker run -d \
   --name portainer \
   -p 9443:9443 \
@@ -178,7 +179,7 @@ In Portainer BE, custom templates can be scoped to teams or environments, provid
 - Templates created at the **team level** are shared within the team
 - Templates created at the **user level** are private
 
-For multi-instance sharing, Portainer BE does not natively sync custom templates across instances — use the shared URL approach for centralized management.
+For multi-instance sharing, Portainer BE does not natively sync custom templates across instances - use the shared URL approach for centralized management.
 
 ## Keeping Templates in Sync
 

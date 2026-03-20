@@ -22,6 +22,7 @@ Before uploading, ensure your Compose file is ready for templating. Replace hard
 
 ```yaml
 # Before: hardcoded values
+
 services:
   app:
     image: myapp:1.2.3
@@ -53,9 +54,10 @@ Save this as a `.yml` file locally (e.g., `myapp-template.yml`).
 
 ## Step 3: Fill in Template Metadata
 
-```
+```text
 Title:       My Application
 Description: Deploys My Application with configurable settings
+
 Categories:  application, internal
 Platform:    linux
 Type:        Stack
@@ -100,7 +102,7 @@ Click **Add variable** for each Mustache variable in your Compose file:
 
 ### version variable
 
-```
+```bash
 Name:        version
 Label:       Application version
 Description: Docker image tag to deploy
@@ -109,7 +111,7 @@ Default:     latest
 
 ### port variable
 
-```
+```text
 Name:        port
 Label:       Application port
 Description: Host port to expose the application
@@ -118,7 +120,7 @@ Default:     8080
 
 ### db_password variable
 
-```
+```text
 Name:        db_password
 Label:       Database password
 Description: Password for the application database (required)
@@ -127,7 +129,7 @@ Default:     (leave empty to make required)
 
 ### domain variable
 
-```
+```text
 Name:        domain
 Label:       Application domain
 Description: Domain name for the application

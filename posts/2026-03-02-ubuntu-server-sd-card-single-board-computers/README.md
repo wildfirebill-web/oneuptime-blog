@@ -25,6 +25,7 @@ Download the appropriate image from Ubuntu's release server:
 
 ```bash
 # Raspberry Pi 4/5 - arm64 Ubuntu Server 24.04 LTS
+
 wget https://cdimage.ubuntu.com/ubuntu-server/noble/daily-preinstalled/current/noble-preinstalled-server-arm64+raspi.img.xz
 
 # Verify the download (download the SHA256SUMS file from the same directory)

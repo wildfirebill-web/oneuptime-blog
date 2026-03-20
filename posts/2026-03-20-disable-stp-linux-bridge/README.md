@@ -14,6 +14,7 @@ STP is enabled by default on some Linux bridge configurations but adds up to 30 
 
 ```bash
 # Check STP state (0 = disabled, 1 = enabled)
+
 cat /sys/class/net/br0/bridge/stp_state
 
 # Or using ip
@@ -110,4 +111,4 @@ iface br0 inet static
 
 ## Conclusion
 
-Disable STP with `ip link set br0 type bridge stp_state 0` when your bridge topology has no loops. This eliminates the 30-second startup delay and removes BPDU overhead. Always set `forward_delay` to 0 alongside disabling STP. Never disable STP in topologies with redundant physical paths — doing so will cause broadcast storms.
+Disable STP with `ip link set br0 type bridge stp_state 0` when your bridge topology has no loops. This eliminates the 30-second startup delay and removes BPDU overhead. Always set `forward_delay` to 0 alongside disabling STP. Never disable STP in topologies with redundant physical paths - doing so will cause broadcast storms.

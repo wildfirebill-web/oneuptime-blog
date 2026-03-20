@@ -52,6 +52,7 @@ Important: `istio-injection` and `istio.io/rev` are mutually exclusive. If both 
 
 ```bash
 # Switch from basic label to revision label
+
 kubectl label namespace my-app istio-injection-
 kubectl label namespace my-app istio.io/rev=1-24
 ```

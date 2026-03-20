@@ -32,6 +32,7 @@ The templates are hosted on GitHub. Start by cloning the repository:
 
 ```bash
 # Clone the Dataproc Templates repository
+
 git clone https://github.com/GoogleCloudPlatform/dataproc-templates.git
 cd dataproc-templates/python
 ```

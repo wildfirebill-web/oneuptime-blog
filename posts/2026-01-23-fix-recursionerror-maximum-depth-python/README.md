@@ -23,6 +23,7 @@ def countdown(n):
 
 countdown(10)
 # RecursionError: maximum recursion depth exceeded while calling a Python object
+
 ```
 
 Every function call adds a frame to the call stack. Without a stopping condition, the stack grows until Python stops it.

@@ -22,6 +22,7 @@ The TiDB Operator manages TiDB cluster lifecycle on Kubernetes using custom reso
 
 ```bash
 # Install TiDB Operator CRDs
+
 kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/v1.5.0/manifests/crd.yaml
 
 # Create namespace for the operator

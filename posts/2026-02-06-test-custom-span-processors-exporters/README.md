@@ -14,6 +14,7 @@ Suppose you have written a processor that redacts sensitive data from span attri
 
 ```python
 # redacting_processor.py
+
 from opentelemetry.sdk.trace import SpanProcessor
 
 SENSITIVE_KEYS = {"user.email", "user.phone", "credit_card.number", "db.statement"}

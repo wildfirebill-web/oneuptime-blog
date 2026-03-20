@@ -16,6 +16,7 @@ Laravel provides first-class Redis support out of the box. This guide covers eve
 
 ```bash
 # Install phpredis extension (recommended)
+
 pecl install redis
 
 # Or use predis package

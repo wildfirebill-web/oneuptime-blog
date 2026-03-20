@@ -18,6 +18,7 @@ There are several ways to install Istio. The recommended approach is using `isti
 
 ```bash
 # Download and install istioctl
+
 curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.21.0 sh -
 export PATH=$PWD/istio-1.21.0/bin:$PATH
 
@@ -367,7 +368,7 @@ istioctl dashboard jaeger
 
 Kiali provides a real-time visualization of your service mesh topology, showing traffic flow, error rates, and latency between services. This is incredibly valuable for debugging production issues.
 
-## Resource Overhead Considerations
+Resource Overhead Considerations
 
 Each Envoy sidecar consumes approximately 50-100MB of memory and a small amount of CPU. For a cluster with hundreds of pods, this adds up. Set resource limits on the sidecar proxy to prevent excessive consumption.
 

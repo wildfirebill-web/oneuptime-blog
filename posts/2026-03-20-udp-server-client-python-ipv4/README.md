@@ -8,7 +8,7 @@ Description: Learn how to create a UDP server and client in Python using IPv4 wi
 
 ## UDP vs TCP
 
-UDP (User Datagram Protocol) is connectionless—there's no handshake, no guaranteed delivery, and no ordering. This makes it faster and lower-overhead than TCP, ideal for DNS, video streaming, VoIP, and real-time telemetry where occasional packet loss is acceptable.
+UDP (User Datagram Protocol) is connectionless-there's no handshake, no guaranteed delivery, and no ordering. This makes it faster and lower-overhead than TCP, ideal for DNS, video streaming, VoIP, and real-time telemetry where occasional packet loss is acceptable.
 
 ## UDP Server
 
@@ -19,6 +19,7 @@ HOST = "0.0.0.0"   # Listen on all IPv4 interfaces
 PORT = 9001        # UDP port to bind
 
 # AF_INET = IPv4, SOCK_DGRAM = UDP
+
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
     server.bind((HOST, PORT))
     print(f"UDP server listening on {HOST}:{PORT}")
@@ -102,9 +103,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
 
 ## Key UDP Limitations
 
-- No guaranteed delivery — packets may be lost
-- No ordering guarantee — packets may arrive out of order
-- No flow control — receiver can be overwhelmed
+- No guaranteed delivery - packets may be lost
+- No ordering guarantee - packets may arrive out of order
+- No flow control - receiver can be overwhelmed
 - Max datagram size: 65507 bytes for IPv4 UDP
 
 ## Conclusion

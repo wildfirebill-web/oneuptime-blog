@@ -94,6 +94,7 @@ from datetime import datetime
 app = func.FunctionApp()
 
 # In production, use a real database. This is simplified for clarity.
+
 # Azure SQL, Cosmos DB, or PostgreSQL would be appropriate choices.
 
 @app.route(route="scim/Users", methods=["GET"])

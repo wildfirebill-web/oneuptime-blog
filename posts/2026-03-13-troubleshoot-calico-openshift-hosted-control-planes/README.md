@@ -28,6 +28,7 @@ The most critical check in HCP environments.
 
 ```bash
 # SSH into a worker node
+
 curl -k https://<hosted-cluster-api-server>:6443/healthz
 ```
 

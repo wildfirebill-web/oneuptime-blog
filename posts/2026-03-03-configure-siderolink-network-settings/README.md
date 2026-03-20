@@ -40,6 +40,7 @@ When you boot a Talos node with an Omni-generated image, the SideroLink configur
 
 ```text
 # Default kernel arguments for SideroLink
+
 siderolink.api=grpc://omni.example.com:8099?jointoken=TOKEN
 talos.events.sink=[fdae:41e4:649b:9303::1]:8090
 talos.logging.kernel=tcp://[fdae:41e4:649b:9303::1]:8092

@@ -229,6 +229,7 @@ sudo firewall-cmd --reload
 
 ```bash
 # Check Docker status
+
 sudo systemctl status docker
 
 # View Rancher logs

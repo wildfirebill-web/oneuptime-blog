@@ -1,4 +1,4 @@
-# How to Deploy Loki Stack on Rancher
+# How to Deploy Loki Stack on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Grafana Loki is a horizontally scalable log aggregation system inspired by Prome
 
 ```yaml
 # loki-values.yaml - Production Loki configuration
+
 loki:
   auth_enabled: false  # Set to true for multi-tenancy
 

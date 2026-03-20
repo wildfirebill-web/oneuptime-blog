@@ -29,6 +29,7 @@ Start with the Terraform provider configuration and some shared variables.
 
 ```hcl
 # Configure the Azure provider with required features
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -86,7 +87,7 @@ locals {
 }
 ```
 
-## Resource Group and Storage Account
+Resource Group and Storage Account
 
 The Data Lake Storage Gen2 account is the backbone of Synapse. It stores everything from Spark pool metadata to your actual data files. The hierarchical namespace feature must be enabled because Synapse relies on it for folder-level access control and performance.
 

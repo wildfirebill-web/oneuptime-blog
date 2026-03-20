@@ -44,6 +44,7 @@ The adapter translates Alertmanager's JSON format into platform-specific message
 ```python
 #!/usr/bin/env python3
 # webhook_adapter.py
+
 # Transforms Alertmanager webhooks into Teams and Discord formats
 
 from flask import Flask, request, jsonify

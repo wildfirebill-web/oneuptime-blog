@@ -73,6 +73,7 @@ First, install the required packages:
 
 ```bash
 # Install Laravel Echo and Pusher client
+
 npm install --save-dev laravel-echo pusher-js
 
 # If using Laravel Reverb (Laravel's first-party WebSocket server)

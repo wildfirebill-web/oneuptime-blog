@@ -49,6 +49,7 @@ The signal catalog is the foundation. It defines every signal you might want to 
 
 ```bash
 # Create a signal catalog for your fleet
+
 aws iotfleetwise create-signal-catalog \
   --name "ConnectedVehicleCatalog" \
   --description "Master signal catalog for fleet telemetry" \

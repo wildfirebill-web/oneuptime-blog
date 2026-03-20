@@ -41,6 +41,7 @@ The fastest way to get Keycloak running is with Docker.
 
 ```bash
 # Pull and run Keycloak in development mode
+
 docker run -d \
   --name keycloak \
   -p 8080:8080 \

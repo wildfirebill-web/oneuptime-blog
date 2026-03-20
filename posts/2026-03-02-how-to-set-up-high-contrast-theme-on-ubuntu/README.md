@@ -26,6 +26,7 @@ The interface immediately switches to a high contrast black-and-white appearance
 
 ```bash
 # Enable high contrast theme
+
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
 
 # Enable high contrast icons

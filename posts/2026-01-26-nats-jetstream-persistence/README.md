@@ -48,6 +48,7 @@ Start a NATS server with JetStream enabled:
 
 ```bash
 # Using Docker
+
 docker run -p 4222:4222 nats:latest -js
 
 # Or download and run directly

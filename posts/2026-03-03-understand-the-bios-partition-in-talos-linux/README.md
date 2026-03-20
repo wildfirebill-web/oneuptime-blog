@@ -50,6 +50,7 @@ Talos automatically detects the boot mode during installation. If the system fir
 
 ```bash
 # Talos detects the boot mode automatically during installation
+
 # No special configuration is needed
 talosctl gen config my-cluster https://192.168.1.100:6443 \
   --install-disk /dev/sda

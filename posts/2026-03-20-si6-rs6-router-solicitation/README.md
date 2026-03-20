@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, rs6, IPv6, Router Solicitation, NDP, Security Testing
+Tags: SI6 Networks, Rs6, IPv6, Router Solicitation, NDP, Security Testing
 
 Description: A guide to using the SI6 Networks rs6 tool to send ICMPv6 Router Solicitation messages for IPv6 network testing and security assessment.
 
@@ -19,7 +19,7 @@ sudo pacman -S ipv6toolkit          # Arch Linux
 
 When an IPv6 host connects to a network, it sends a Router Solicitation to `ff02::2` (all-routers multicast) to request Router Advertisements immediately. Routers respond with RAs containing prefix information, default gateway, and other network configuration.
 
-```
+```yaml
 Host                    Router
  |                        |
  |--- RS to ff02::2 ----->|
@@ -32,6 +32,7 @@ Host                    Router
 
 ```bash
 # Send a Router Solicitation from eth0
+
 sudo rs6 -i eth0
 
 # Send RS to the all-routers multicast (standard behavior)
@@ -53,7 +54,7 @@ sudo rs6 -i eth0 --slla
 # Spoof the source link-layer address
 sudo rs6 -i eth0 --slla 00:11:22:33:44:55
 
-# Send from unspecified source (::) — allowed in RS per RFC 4861
+# Send from unspecified source (::) - allowed in RS per RFC 4861
 sudo rs6 -i eth0 -s ::
 ```
 

@@ -57,7 +57,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 GITEA_OAUTH_CLIENT_ID = (from Gitea OAuth app)
 GITEA_OAUTH_CLIENT_SECRET = (from Gitea OAuth app)
 DRONE_RPC_SECRET = (generate: openssl rand -hex 16)
@@ -76,6 +76,7 @@ Copy the Client ID and Client Secret.
 
 ```yaml
 # .drone.yml in your repository root
+
 kind: pipeline
 type: docker
 name: default

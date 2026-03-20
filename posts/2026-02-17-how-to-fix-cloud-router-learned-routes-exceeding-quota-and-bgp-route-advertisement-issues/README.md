@@ -26,6 +26,7 @@ First, see how many routes your Cloud Router is learning:
 
 ```bash
 # Get the status of the Cloud Router including learned routes
+
 gcloud compute routers get-status your-router \
     --region=us-central1 \
     --format="json(result.bgpPeerStatus)"

@@ -25,6 +25,7 @@ Create a lightweight test script that checks the essential health indicators.
 ```bash
 #!/bin/bash
 # smoke-test.sh - Quick verification that the application works
+
 set -e
 
 BASE_URL="${BASE_URL:-http://localhost:3000}"

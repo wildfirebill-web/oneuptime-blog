@@ -17,6 +17,7 @@ There are several ways to define dictionaries in YAML:
 ```yaml
 ---
 # dict-definitions.yml
+
 # Different ways to define dictionary variables
 
 - hosts: localhost

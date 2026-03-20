@@ -18,6 +18,7 @@ Here is a minimal Collector configuration that sets up a webhook endpoint:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   webhookevent:
     # Listen on port 8088 for incoming webhooks

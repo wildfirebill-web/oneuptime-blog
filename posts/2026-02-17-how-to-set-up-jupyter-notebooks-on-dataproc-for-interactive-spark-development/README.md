@@ -18,6 +18,7 @@ The fastest way to get Jupyter on Dataproc is to include it as an optional compo
 
 ```bash
 # Create a Dataproc cluster with Jupyter and the component gateway
+
 gcloud dataproc clusters create jupyter-cluster \
   --region=us-central1 \
   --zone=us-central1-a \

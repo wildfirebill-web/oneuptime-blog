@@ -31,6 +31,7 @@ Start with pod events:
 
 ```bash
 # View events for a specific pod
+
 kubectl describe pod <pod-name> -n <namespace>
 
 # Look specifically at the Events section

@@ -35,6 +35,7 @@ Or enable via Helm:
 
 ```yaml
 # gloo-values.yaml
+
 global:
   extensions:
     extAuth:

@@ -18,6 +18,7 @@ Quadlet `.image` files manage the lifecycle of container images within systemd. 
 
 ```ini
 # ~/.config/containers/systemd/nginx.image
+
 [Image]
 Image=docker.io/library/nginx:alpine
 ```

@@ -50,6 +50,7 @@ Configure the cluster network plugin:
 
 ```yaml
 # For RKE2, the default CNI is Canal
+
 # You can also choose Calico or Cilium
 ```
 

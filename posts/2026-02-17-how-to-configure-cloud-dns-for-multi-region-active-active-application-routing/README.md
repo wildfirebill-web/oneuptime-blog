@@ -37,6 +37,7 @@ Geolocation routing returns different IPs based on where the DNS query originate
 
 ```bash
 # Create a geolocation routing policy record set
+
 gcloud dns record-sets create app.example.com. \
     --zone=my-zone \
     --type=A \

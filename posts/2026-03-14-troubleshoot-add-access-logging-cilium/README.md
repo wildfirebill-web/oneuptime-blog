@@ -30,6 +30,7 @@ When expected log entries do not appear:
 
 ```bash
 # Step 1: Verify the proxy is active and processing traffic
+
 kubectl exec -n kube-system ds/cilium -- cilium bpf proxy list
 
 # Step 2: Check if L7 policy is applied

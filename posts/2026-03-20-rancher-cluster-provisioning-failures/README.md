@@ -14,9 +14,9 @@ Cluster provisioning failures in Rancher can occur at multiple stages: node boot
 
 Navigate to **Cluster Management** in Rancher and look for clusters stuck in:
 
-- **Provisioning** — infrastructure is being created but Kubernetes hasn't started yet.
-- **Waiting** — Rancher is waiting for nodes to register.
-- **Updating** — components are being applied but the process stalled.
+- **Provisioning** - infrastructure is being created but Kubernetes hasn't started yet.
+- **Waiting** - Rancher is waiting for nodes to register.
+- **Updating** - components are being applied but the process stalled.
 
 Click on the cluster name and look at the **Conditions** tab for specific error messages.
 
@@ -24,6 +24,7 @@ Click on the cluster name and look at the **Conditions** tab for specific error 
 
 ```bash
 # Check the Rancher server logs for provisioning errors
+
 kubectl logs -n cattle-system -l app=rancher --tail=300 | grep -i "provision\|error\|fail"
 
 # For RKE2/K3s provisioning, check the provisioning controller

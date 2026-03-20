@@ -14,6 +14,7 @@ Envoy supports multiple load balancing algorithms configurable per cluster. Choo
 
 ```yaml
 # Round Robin (default): equal distribution
+
 lb_policy: ROUND_ROBIN
 
 # Least Request: route to endpoint with fewest active requests

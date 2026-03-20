@@ -25,6 +25,7 @@ graph LR
 # linkerd.tf
 
 # Step 1: CRDs
+
 resource "helm_release" "linkerd_crds" {
   name             = "linkerd-crds"
   repository       = "https://helm.linkerd.io/stable"
@@ -162,8 +163,8 @@ resource "kubernetes_manifest" "traffic_split" {
 
 ## Best Practices
 
-- Generate Linkerd certificates with `step` CLI and store them as Kubernetes Secrets — never commit certificate keys to git.
-- Rotate issuer certificates before they expire — set up a reminder 30 days before the `not-after` date in your certificates.
+- Generate Linkerd certificates with `step` CLI and store them as Kubernetes Secrets - never commit certificate keys to git.
+- Rotate issuer certificates before they expire - set up a reminder 30 days before the `not-after` date in your certificates.
 - Use Linkerd's built-in Prometheus metrics with the viz extension rather than adding a separate Prometheus deployment.
 - Annotate namespaces for injection at the namespace level (`linkerd.io/inject: enabled`) rather than individual pods.
-- Linkerd's proxy resource footprint is much lower than Istio — this makes it suitable for cost-sensitive environments or clusters with many small services.
+- Linkerd's proxy resource footprint is much lower than Istio - this makes it suitable for cost-sensitive environments or clusters with many small services.

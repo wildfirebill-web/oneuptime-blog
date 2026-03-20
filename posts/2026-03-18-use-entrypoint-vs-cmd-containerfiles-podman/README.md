@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, ENTRYPOINT, CMD, DevOps
+Tags: Podman, Containerfile, Entrypoint, CMD, DevOps
 
 Description: Understand the differences between ENTRYPOINT and CMD in Containerfiles for Podman, when to use each, and how to combine them for flexible container behavior.
 
@@ -36,6 +36,7 @@ Build and test:
 podman build -t cmd-demo .
 
 # Uses the default CMD
+
 podman run cmd-demo
 # Output: Hello from the container
 

@@ -14,10 +14,11 @@ OpenTofu state files contain all resource attributes in plain text, including da
 
 ```bash
 # State contains plaintext sensitive values
+
 tofu state pull | jq '.resources[] | select(.type == "aws_db_instance") | .instances[].attributes.password'
 # Output: "my-super-secret-password"
 
-# RDS master password, API keys, TLS keys — all readable in state
+# RDS master password, API keys, TLS keys - all readable in state
 ```
 
 ## Protection 1: Encrypt State at Rest
@@ -43,7 +44,7 @@ terraform {
 OpenTofu supports end-to-end state encryption using the `encryption` block:
 
 ```hcl
-# End-to-end encryption — state is encrypted before being sent to the backend
+# End-to-end encryption - state is encrypted before being sent to the backend
 terraform {
   encryption {
     key_provider "pbkdf2" "main" {
@@ -72,7 +73,7 @@ terraform {
 Apply strict IAM policies to the state backend:
 
 ```hcl
-# IAM policy — only CI/CD role can read/write state
+# IAM policy - only CI/CD role can read/write state
 resource "aws_iam_policy" "state_access" {
   policy = jsonencode({
     Version = "2012-10-17"
@@ -105,7 +106,7 @@ Note: `sensitive = true` prevents display in terminal output but does not protec
 
 ## Protection 5: Use Secrets Managers
 
-Avoid storing secrets in configuration — fetch them from secrets managers at deploy time:
+Avoid storing secrets in configuration - fetch them from secrets managers at deploy time:
 
 ```hcl
 # Fetch password from AWS Secrets Manager instead of hardcoding

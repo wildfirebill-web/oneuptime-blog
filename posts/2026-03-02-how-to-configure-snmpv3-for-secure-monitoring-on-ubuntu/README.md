@@ -27,6 +27,7 @@ sudo apt update
 sudo apt install snmpd snmp snmp-mibs-downloader
 
 # Download MIBs for human-readable output
+
 sudo download-mibs
 ```
 

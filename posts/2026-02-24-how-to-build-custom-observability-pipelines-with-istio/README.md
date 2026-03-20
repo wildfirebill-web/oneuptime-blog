@@ -348,6 +348,7 @@ Your observability pipeline needs its own monitoring:
 
 ```bash
 # Check OTel Collector metrics
+
 kubectl port-forward svc/otel-collector -n observability 8888:8888
 curl localhost:8888/metrics | grep otelcol
 ```

@@ -21,6 +21,7 @@ Certificate errors are among the most disruptive issues in a Rancher deployment.
 
 ```bash
 # Check certificate details from the command line
+
 echo | openssl s_client -connect <rancher-hostname>:443 2>/dev/null \
   | openssl x509 -noout -text | grep -E "Subject:|Issuer:|Not Before:|Not After:"
 
@@ -145,4 +146,4 @@ kubectl rollout restart deployment/cattle-cluster-agent -n cattle-system
 
 ## Conclusion
 
-Certificate errors in Rancher cascade quickly, impacting UI access, agent connectivity, and cluster availability. The key is to quickly determine whether the issue is expiry, trust, or issuance — then target the right solution. Keep cert-manager healthy, monitor certificate expiry proactively (Rancher's monitoring stack can alert on this), and ensure all agents trust your CA to maintain a smooth-running environment.
+Certificate errors in Rancher cascade quickly, impacting UI access, agent connectivity, and cluster availability. The key is to quickly determine whether the issue is expiry, trust, or issuance - then target the right solution. Keep cert-manager healthy, monitor certificate expiry proactively (Rancher's monitoring stack can alert on this), and ensure all agents trust your CA to maintain a smooth-running environment.

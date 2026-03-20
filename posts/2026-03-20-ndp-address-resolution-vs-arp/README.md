@@ -12,7 +12,7 @@ IPv4 uses ARP (Address Resolution Protocol) to map IP addresses to MAC addresses
 
 ## ARP vs NDP Address Resolution
 
-```
+```text
 IPv4 ARP:
   Protocol:    ARP EtherType 0x0806 (separate from IP)
   Request to:  Ethernet BROADCAST (ff:ff:ff:ff:ff:ff)
@@ -85,6 +85,7 @@ for size in [100, 1000, 10000]:
 
 ```bash
 # Linux: show neighbor cache (equivalent to 'arp -n' for IPv4)
+
 ip -6 neigh show
 
 # Example output:

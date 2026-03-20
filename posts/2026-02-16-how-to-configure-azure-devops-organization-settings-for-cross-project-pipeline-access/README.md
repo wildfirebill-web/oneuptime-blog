@@ -60,6 +60,7 @@ Each project can override the organization-level setting. Go to Project Settings
 
 ```bash
 # You can also manage these settings via the Azure DevOps CLI
+
 # Check current organization-level pipeline settings
 az devops invoke \
   --area build \

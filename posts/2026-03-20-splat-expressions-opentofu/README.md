@@ -20,6 +20,7 @@ resource "aws_instance" "web" {
 }
 
 # Splat: get all public IPs as a list
+
 output "all_public_ips" {
   value = aws_instance.web[*].public_ip
   # Equivalent to: [for instance in aws_instance.web : instance.public_ip]

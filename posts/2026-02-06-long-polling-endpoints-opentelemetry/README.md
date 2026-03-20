@@ -206,6 +206,7 @@ Standard latency alerts do not apply. Instead, alert on these conditions:
 
 ```yaml
 # Alert when the data check phase is slow (it should be instant)
+
 - alert: LongPollCheckSlow
   expr: |
     histogram_quantile(0.99,

@@ -65,6 +65,7 @@ VNet encryption is enabled at the VNet level:
 
 ```bash
 # Enable VNet encryption
+
 az network vnet update \
   --name myVNet \
   --resource-group myResourceGroup \

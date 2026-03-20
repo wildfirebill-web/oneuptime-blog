@@ -6,7 +6,7 @@ Tags: OpenTofu, Account Vending Machine, AWS Organizations, Automation, Infrastr
 
 Description: Learn how to build an Account Vending Machine with OpenTofu to automate the provisioning of new AWS accounts with standardized baselines.
 
-An Account Vending Machine (AVM) automates the creation and bootstrapping of new AWS accounts. It creates the account, places it in the right OU, applies baseline security controls, and provisions shared infrastructure — all triggered by a single configuration change.
+An Account Vending Machine (AVM) automates the creation and bootstrapping of new AWS accounts. It creates the account, places it in the right OU, applies baseline security controls, and provisions shared infrastructure - all triggered by a single configuration change.
 
 ## Architecture
 
@@ -24,6 +24,7 @@ flowchart TD
 
 ```hcl
 # accounts/new-team-sandbox.hcl
+
 locals {
   account_name  = "mycompany-new-team-sandbox"
   email         = "aws+new-team@mycompany.com"
@@ -98,7 +99,7 @@ resource "aws_securityhub_account" "baseline" {
 ## Root Configuration
 
 ```hcl
-# main.tf — Vend a new account by adding a module call
+# main.tf - Vend a new account by adding a module call
 module "new_team_sandbox" {
   source = "./modules/account-vending"
 

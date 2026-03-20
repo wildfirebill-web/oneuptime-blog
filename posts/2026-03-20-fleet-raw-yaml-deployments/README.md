@@ -25,7 +25,7 @@ When Fleet encounters a directory without a `kustomization.yaml` or Helm chart m
 
 A well-organized repository structure makes managing raw YAML deployments easier:
 
-```
+```text
 k8s-configs/
 ├── namespaces/
 │   ├── fleet.yaml
@@ -60,6 +60,7 @@ k8s-configs/
 
 ```yaml
 # namespaces/namespaces.yaml
+
 ---
 apiVersion: v1
 kind: Namespace
@@ -268,4 +269,4 @@ kubectl get all -n frontend
 
 ## Conclusion
 
-Deploying raw Kubernetes YAML with Fleet is the most straightforward GitOps approach available. By simply storing your manifests in Git and creating a GitRepo resource, Fleet takes care of synchronizing your desired state across all target clusters. While raw YAML lacks the templating capabilities of Helm, it offers maximum clarity and simplicity — you see exactly what will be applied to your clusters. For teams just getting started with GitOps or managing relatively stable configurations, raw YAML deployments with Fleet are an excellent choice.
+Deploying raw Kubernetes YAML with Fleet is the most straightforward GitOps approach available. By simply storing your manifests in Git and creating a GitRepo resource, Fleet takes care of synchronizing your desired state across all target clusters. While raw YAML lacks the templating capabilities of Helm, it offers maximum clarity and simplicity - you see exactly what will be applied to your clusters. For teams just getting started with GitOps or managing relatively stable configurations, raw YAML deployments with Fleet are an excellent choice.

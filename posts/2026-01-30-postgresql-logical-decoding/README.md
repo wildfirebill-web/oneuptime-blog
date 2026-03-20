@@ -40,6 +40,7 @@ First, modify your `postgresql.conf` to enable logical replication:
 # postgresql.conf
 
 # Set the WAL level to logical
+
 # This is required for logical decoding to work
 wal_level = logical
 

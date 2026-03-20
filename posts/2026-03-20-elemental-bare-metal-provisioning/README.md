@@ -33,6 +33,7 @@ flowchart TD
 
 ```bash
 # Verify Elemental Operator is running
+
 kubectl get pods -n elemental-system
 
 # Create a dedicated namespace for bare metal nodes

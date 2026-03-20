@@ -104,6 +104,7 @@ When using Helm, add the annotation in your chart templates:
 
 ```yaml
 # templates/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

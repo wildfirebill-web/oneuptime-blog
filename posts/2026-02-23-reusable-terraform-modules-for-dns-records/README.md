@@ -71,6 +71,7 @@ variable "records" {
 }
 
 # Alias configuration (for ALB, CloudFront, S3, etc.)
+
 variable "alias" {
   description = "Alias target configuration"
   type = object({

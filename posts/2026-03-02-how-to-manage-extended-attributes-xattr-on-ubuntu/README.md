@@ -16,6 +16,7 @@ Extended attributes require filesystem support. On Ubuntu, ext4, XFS, and Btrfs 
 
 ```bash
 # Check mount options
+
 mount | grep " / "
 # ext4 filesystems on Ubuntu mount with user_xattr support by default
 

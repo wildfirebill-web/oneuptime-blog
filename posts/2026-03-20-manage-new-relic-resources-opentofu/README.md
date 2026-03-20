@@ -1,4 +1,4 @@
-# How to Manage New Relic Resources with OpenTofu
+# How to Manage New Relic Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -197,4 +197,4 @@ resource "newrelic_synthetics_monitor" "uptime" {
 
 ## Conclusion
 
-The New Relic OpenTofu provider enables you to manage your entire observability stack as code. Dashboards, alerts, and synthetic monitors can be version-controlled, reviewed, and deployed consistently — ensuring your team always has reliable visibility into application health.
+The New Relic OpenTofu provider enables you to manage your entire observability stack as code. Dashboards, alerts, and synthetic monitors can be version-controlled, reviewed, and deployed consistently - ensuring your team always has reliable visibility into application health.

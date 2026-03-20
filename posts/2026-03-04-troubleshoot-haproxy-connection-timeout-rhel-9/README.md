@@ -51,6 +51,7 @@ sequenceDiagram
 
 ```bash
 # View recent HAProxy logs
+
 sudo journalctl -u haproxy --since "10 minutes ago" | grep -i timeout
 
 # Or if you have a dedicated log file

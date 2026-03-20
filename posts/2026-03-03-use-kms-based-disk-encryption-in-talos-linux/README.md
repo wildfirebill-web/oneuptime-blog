@@ -64,6 +64,7 @@ Siderolabs provides a reference KMS server implementation that you can deploy:
 
 ```bash
 # Deploy the Talos KMS server
+
 docker run -d \
   --name talos-kms \
   -p 4050:4050 \

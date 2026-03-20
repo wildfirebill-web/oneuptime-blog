@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, Static Address, networksetup, Network Configuration
+Tags: IPv6, macOS, Static Address, Networksetup, Network Configuration
 
 Description: Learn how to assign a static IPv6 address on macOS using System Settings and the networksetup command, including configuring a default gateway and verifying the configuration.
 
 ## Configure Static IPv6 via System Settings
 
-```
+```sql
 Steps:
 1. System Settings → Network
 
@@ -32,6 +32,7 @@ Note: DNS is configured separately in the "DNS" tab
 
 ```bash
 # Set a static IPv6 address on Wi-Fi
+
 networksetup -setv6manual Wi-Fi 2001:db8::10 64 2001:db8::1
 # Format: -setv6manual <service> <address> <prefixlength> <router>
 

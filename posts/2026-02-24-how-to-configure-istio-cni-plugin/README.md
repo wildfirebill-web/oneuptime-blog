@@ -151,7 +151,7 @@ spec:
           image: my-app:latest
 ```
 
-### Resource Limits for the CNI DaemonSet
+Resource Limits for the CNI DaemonSet
 
 The CNI DaemonSet runs on every node, so set appropriate resource limits:
 
@@ -219,6 +219,7 @@ After installation, run through these checks:
 
 ```bash
 # 1. DaemonSet is running on all nodes
+
 kubectl get daemonset -n istio-system istio-cni-node
 
 # 2. All pods are ready

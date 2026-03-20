@@ -44,7 +44,7 @@ FRRouting uses similar but slightly different defaults:
 
 **Scenario**: A router learns 10.0.0.0/24 from both OSPF (AD 110) and RIP (AD 120):
 
-```
+```text
 OSPF route: 10.0.0.0/24 via 192.168.1.2 [AD 110]
 RIP route:  10.0.0.0/24 via 192.168.1.3 [AD 120]
 
@@ -77,7 +77,7 @@ ip route 10.0.0.0 255.255.255.0 192.168.1.254 115
 
 In FRRouting:
 
-```
+```text
 ip route 10.0.0.0/24 192.168.1.254 115
 ```
 
@@ -95,6 +95,7 @@ show ip route
 
 ```bash
 # FRRouting shows AD in brackets
+
 vtysh -c "show ip route"
 
 # Sample output:
@@ -117,7 +118,7 @@ vtysh -c "show ip route 10.0.0.0"
 
 ## Changing Administrative Distance in FRRouting
 
-```
+```text
 ! Change OSPF AD from 110 to 150
 router ospf
  distance 150

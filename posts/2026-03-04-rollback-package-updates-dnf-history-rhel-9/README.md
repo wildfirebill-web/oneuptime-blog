@@ -35,6 +35,7 @@ flowchart LR
 
 ```bash
 # Show the transaction history
+
 dnf history list
 ```
 

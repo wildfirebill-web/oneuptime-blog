@@ -22,6 +22,7 @@ pip install netmiko
 from netmiko import ConnectHandler
 
 # Connect to a router using its IPv6 management address
+
 device = {
     "device_type": "cisco_ios_xe",
     "host": "2001:db8::router1",  # IPv6 address

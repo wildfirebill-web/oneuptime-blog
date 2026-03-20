@@ -36,6 +36,7 @@ Start with a shared tracer configuration that all notification channels use. Thi
 
 ```python
 # notification_tracing.py - Shared tracing setup for notification service
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

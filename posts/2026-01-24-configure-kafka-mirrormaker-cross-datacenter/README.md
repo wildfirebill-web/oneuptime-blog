@@ -67,6 +67,7 @@ MirrorMaker 2 consists of three connectors:
 
 ```bash
 # Create MM2 configuration directory
+
 sudo mkdir -p /opt/kafka/config/mm2
 sudo mkdir -p /var/log/mm2
 sudo chown -R kafka:kafka /opt/kafka/config/mm2

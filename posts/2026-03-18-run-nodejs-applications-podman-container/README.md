@@ -28,6 +28,7 @@ Start with a simple Express.js application to demonstrate the containerization p
 
 ```bash
 # Create a project directory
+
 mkdir ~/nodeapp && cd ~/nodeapp
 
 # Initialize a new Node.js project

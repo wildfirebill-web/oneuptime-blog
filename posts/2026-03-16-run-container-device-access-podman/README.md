@@ -20,6 +20,7 @@ Use the `--device` flag to expose a host device to the container:
 
 ```bash
 # Grant access to a specific device
+
 podman run --rm --device /dev/fuse alpine ls -la /dev/fuse
 
 # The device appears inside the container

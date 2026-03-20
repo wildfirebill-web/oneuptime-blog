@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environment, Agent, DevOps
+Tags: Portainer, Kubernetes, Environments, Agent, DevOps
 
 Description: Learn how to add an existing Kubernetes cluster as an environment in Portainer using the Portainer Agent.
 
@@ -18,6 +18,7 @@ Use this when Portainer Server can reach the Kubernetes cluster's API.
 
 ```bash
 # Apply the Portainer Agent manifest to your Kubernetes cluster
+
 kubectl apply -f https://downloads.portainer.io/ce2-19/portainer-agent-k8s-lb.yaml
 
 # Wait for the agent to be ready
@@ -100,4 +101,4 @@ kubectl get svc -n portainer portainer-agent
 
 ## Conclusion
 
-Connecting Portainer to an existing Kubernetes cluster takes under 5 minutes using the agent manifest. Once connected, all cluster resources — deployments, services, pods, ConfigMaps — are manageable through Portainer's UI.
+Connecting Portainer to an existing Kubernetes cluster takes under 5 minutes using the agent manifest. Once connected, all cluster resources - deployments, services, pods, ConfigMaps - are manageable through Portainer's UI.

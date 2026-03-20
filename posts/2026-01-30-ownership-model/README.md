@@ -83,6 +83,7 @@ Define ownership in your service configuration files. Here is an example using Y
 
 ```yaml
 # service-metadata.yaml
+
 apiVersion: platform.company.com/v1
 kind: ServiceMetadata
 metadata:

@@ -20,6 +20,7 @@ Before pruning, understand the different types of images in your local store.
 
 ```bash
 # List all images including intermediate layers
+
 podman images -a
 
 # List only dangling images (no tag, not referenced)

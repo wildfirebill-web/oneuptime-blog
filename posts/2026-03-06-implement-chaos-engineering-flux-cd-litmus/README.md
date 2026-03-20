@@ -33,6 +33,7 @@ Create a HelmRepository source for LitmusChaos:
 
 ```yaml
 # clusters/my-cluster/litmus/helm-repository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

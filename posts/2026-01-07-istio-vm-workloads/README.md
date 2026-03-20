@@ -67,6 +67,7 @@ The following IstioOperator configuration enables VM integration by setting up m
 
 ```yaml
 # istio-operator-vm.yaml
+
 # This configuration enables Istio to manage VM workloads
 # by exposing the control plane through an east-west gateway
 apiVersion: install.istio.io/v1alpha1

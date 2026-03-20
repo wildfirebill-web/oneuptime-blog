@@ -38,6 +38,7 @@ For production, we will use Elasticsearch. If you already have Elasticsearch run
 
 ```bash
 # Create namespace for tracing
+
 kubectl create namespace tracing
 ```
 

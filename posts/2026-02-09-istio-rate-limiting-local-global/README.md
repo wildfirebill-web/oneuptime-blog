@@ -485,6 +485,7 @@ Query rate limit metrics:
 
 ```promql
 # Local rate limit rejections
+
 rate(envoy_http_local_rate_limit_rate_limited[5m])
 
 # Global rate limit calls

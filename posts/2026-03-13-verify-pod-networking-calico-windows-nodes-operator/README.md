@@ -47,6 +47,7 @@ kubectl describe node <windows-node> | grep -A5 "Conditions:"
 
 ```powershell
 # On the Windows node
+
 Get-HnsNetwork | Where-Object { $_.Type -eq "Overlay" } | Select-Object Name, Type, AddressPrefix
 Get-HnsEndpoint | Measure-Object | Select-Object Count
 ```

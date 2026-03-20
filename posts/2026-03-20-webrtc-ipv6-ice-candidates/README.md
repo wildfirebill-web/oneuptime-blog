@@ -12,7 +12,7 @@ WebRTC uses Interactive Connectivity Establishment (ICE) to discover network pat
 
 ## Understanding IPv6 ICE Candidates
 
-```
+```text
 ICE Candidate Types for IPv6:
 - host: Direct IPv6 addresses (link-local and global)
   e.g., "candidate:1 1 UDP 2122252543 2001:db8::client 50000 typ host"
@@ -29,6 +29,7 @@ peer-to-peer connections across different networks.
 
 ```bash
 # Install coturn STUN/TURN server
+
 sudo apt install coturn -y
 
 # /etc/turnserver.conf

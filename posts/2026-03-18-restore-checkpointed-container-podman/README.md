@@ -51,6 +51,7 @@ The most important aspect of a restore is that the application state is preserve
 
 ```bash
 # Start a container that writes state to a file
+
 sudo podman run -d --name state-test docker.io/library/alpine \
   /bin/sh -c '
     echo "Process started at $(date)" > /tmp/state.txt

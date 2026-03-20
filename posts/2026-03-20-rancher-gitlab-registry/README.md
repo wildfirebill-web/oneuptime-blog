@@ -23,6 +23,7 @@ For self-hosted GitLab, ensure the registry is enabled in `gitlab.rb`:
 
 ```ruby
 # /etc/gitlab/gitlab.rb - Enable Container Registry
+
 registry_external_url 'https://registry.gitlab.example.com'
 gitlab_rails['registry_enabled'] = true
 registry['enable'] = true

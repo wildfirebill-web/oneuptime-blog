@@ -51,6 +51,7 @@ Navigate to the CloudWatch console in your monitoring account.
 
 ```bash
 # Using AWS CLI to create an OAM (Observability Access Manager) sink
+
 aws oam create-sink \
   --name "central-monitoring-sink" \
   --region us-east-1

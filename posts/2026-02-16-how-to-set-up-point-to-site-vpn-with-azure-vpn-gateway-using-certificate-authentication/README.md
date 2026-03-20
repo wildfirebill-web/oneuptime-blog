@@ -33,6 +33,7 @@ graph LR
 
 ```bash
 # Create a resource group
+
 az group create --name rg-p2s-demo --location eastus
 
 # Create a VNet with a workload subnet

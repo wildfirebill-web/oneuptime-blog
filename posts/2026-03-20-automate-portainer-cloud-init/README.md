@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloud-Init, Automation, Cloud, Infrastructure as Code
+Tags: Portainer, Cloud-init, Automation, Cloud, Infrastructure as Code
 
 Description: Use cloud-init to automatically install Docker and deploy Portainer on new cloud instances or VMs with zero manual intervention.
 
 ## Introduction
 
-Cloud-init is the industry-standard multi-distribution method for cross-platform cloud instance initialization. When a new virtual machine or cloud instance boots for the first time, cloud-init runs your configuration scripts to set up the system. By combining cloud-init with Portainer, you can have a fully configured container management platform ready within minutes of launching a new instance — completely automated.
+Cloud-init is the industry-standard multi-distribution method for cross-platform cloud instance initialization. When a new virtual machine or cloud instance boots for the first time, cloud-init runs your configuration scripts to set up the system. By combining cloud-init with Portainer, you can have a fully configured container management platform ready within minutes of launching a new instance - completely automated.
 
 ## Prerequisites
 
@@ -26,6 +26,7 @@ Cloud-init uses a YAML file called user-data that's passed to instances at launc
 # This comment is required - it identifies this as a cloud-init file
 
 # System configuration
+
 package_update: true
 package_upgrade: true
 packages:

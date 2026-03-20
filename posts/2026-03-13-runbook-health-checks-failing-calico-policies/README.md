@@ -39,6 +39,7 @@ kubectl get events -n <namespace> | grep -i "probe\|unhealthy" | tail -10
 ```bash
 kubectl describe pod <pod-name> -n <namespace> | grep -A 5 "Liveness:\|Readiness:"
 # Note the port number used by the probe
+
 ```
 
 **Step 3: Get node CIDR**

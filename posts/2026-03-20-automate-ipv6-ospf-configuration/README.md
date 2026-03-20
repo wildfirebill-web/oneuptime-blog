@@ -14,6 +14,7 @@ OSPFv3 is the IPv6 routing protocol for link-state interior gateway routing. Aut
 
 ```yaml
 # policies/ospfv3_policy.yml
+
 ospf:
   process_id: 1
   router_id: 10.0.0.1   # IPv4 router-id required for OSPFv3
@@ -31,7 +32,7 @@ ospf:
       stub: true
       interfaces:
         - name: GigabitEthernet0/0/0/2
-          passive: true  # LAN interface — no OSPF neighbors
+          passive: true  # LAN interface - no OSPF neighbors
 
   # Redistribute connected IPv6 networks
   redistribute:

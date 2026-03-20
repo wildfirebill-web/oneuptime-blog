@@ -30,6 +30,7 @@ Install the NuGet packages:
 
 ```bash
 # Core AutoMapper package
+
 dotnet add package AutoMapper
 
 # Dependency injection extensions for ASP.NET Core

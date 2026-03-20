@@ -69,6 +69,7 @@ def call_with_backoff(func, max_retries=5, base_delay=1):
     raise Exception(f"Max retries ({max_retries}) exceeded")
 
 # Usage
+
 import boto3
 ec2 = boto3.client('ec2')
 

@@ -28,6 +28,7 @@ Start with PERMISSIVE mode (allow both plain text and mTLS) and migrate to STRIC
 
 ```yaml
 # clusters/my-cluster/istio-mtls/mesh-peer-auth.yaml
+
 # Mesh-wide policy: applied to the istio-system namespace
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication

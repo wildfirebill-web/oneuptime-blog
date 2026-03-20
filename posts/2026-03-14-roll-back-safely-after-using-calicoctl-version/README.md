@@ -39,6 +39,7 @@ The simplest rollback is reverting the calicoctl client binary:
 
 ```bash
 # Check current version
+
 calicoctl version | grep "Client Version"
 
 # Download the previous version

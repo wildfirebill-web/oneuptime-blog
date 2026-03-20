@@ -361,6 +361,7 @@ You can configure this with the `--unhandled-rejections` flag:
 
 ```bash
 # Options: strict, warn, none
+
 node --unhandled-rejections=strict app.js  # Crash on rejection
 node --unhandled-rejections=warn app.js    # Warn only (old behavior)
 ```

@@ -61,6 +61,7 @@ Here is a simple service catalog entry stored as YAML in a git repository.
 
 ```yaml
 # catalog/services/payment-service.yaml
+
 apiVersion: oneuptime.com/v1
 kind: Service
 metadata:

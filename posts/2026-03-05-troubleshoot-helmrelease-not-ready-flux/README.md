@@ -28,6 +28,7 @@ Start with a complete picture of the HelmRelease state:
 
 ```bash
 # Quick status overview
+
 flux get helmrelease --all-namespaces
 
 # Detailed status for a specific HelmRelease

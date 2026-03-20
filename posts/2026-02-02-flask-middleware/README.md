@@ -43,6 +43,7 @@ This example demonstrates all available request hooks and when they execute.
 
 ```python
 # app.py
+
 from flask import Flask, request, g
 import time
 

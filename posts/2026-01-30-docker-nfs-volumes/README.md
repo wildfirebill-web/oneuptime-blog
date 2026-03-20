@@ -47,6 +47,7 @@ First, you need an NFS server exporting a directory. This can be a dedicated sto
 
 ```bash
 # Install NFS kernel server
+
 sudo apt update
 sudo apt install -y nfs-kernel-server
 

@@ -50,6 +50,7 @@ Start by creating the input and output buckets:
 
 ```bash
 # Create the input bucket where files will be uploaded
+
 gsutil mb -l us-central1 gs://my-project-file-input
 
 # Create the output bucket for processed files

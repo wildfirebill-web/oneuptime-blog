@@ -88,6 +88,7 @@ In Rancher UI:
 
 ```bash
 # Verify via CLI
+
 calicoctl get ippool -o wide
 kubectl get installation default -o yaml
 kubectl get tigerastatus

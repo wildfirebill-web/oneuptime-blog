@@ -281,6 +281,7 @@ sequenceDiagram
 
 ```yaml
 # openapi.yaml
+
 openapi: 3.0.0
 info:
   title: User API

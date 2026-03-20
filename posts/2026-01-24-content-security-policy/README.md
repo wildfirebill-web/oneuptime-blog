@@ -431,6 +431,7 @@ app.use((req, res, next) => {
 # /etc/nginx/conf.d/csp.conf
 
 # Define CSP policy
+
 map $uri $csp_policy {
     default "default-src 'self'; script-src 'self' https://cdn.example.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.example.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';";
 }

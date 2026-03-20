@@ -41,7 +41,7 @@ provider "registry.opentofu.org/hashicorp/kubernetes" {
 
 Without committing the lock file, provider versions drift silently.
 
-```
+```hcl
 Scenario: Lock file is in .gitignore
 
 Developer A runs tofu init on Monday:
@@ -64,7 +64,8 @@ CI/CD pipeline on Saturday:
 The lock file should always be committed.
 
 ```bash
-# .gitignore — what to NEVER ignore for OpenTofu
+# .gitignore - what to NEVER ignore for OpenTofu
+
 # Bad: ignoring the lock file
 # .terraform.lock.hcl
 
@@ -73,7 +74,7 @@ The lock file should always be committed.
 *.tfstate               # state files (DO ignore)
 *.tfstate.backup        # state backups (DO ignore)
 terraform.tfvars        # if it contains secrets (maybe ignore)
-# .terraform.lock.hcl  # DO NOT ignore — commit this file
+# .terraform.lock.hcl  # DO NOT ignore - commit this file
 
 # Add the lock file to version control
 git add .terraform.lock.hcl

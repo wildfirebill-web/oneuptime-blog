@@ -26,6 +26,7 @@ On Ubuntu/Debian:
 
 ```bash
 # Install the Microsoft ODBC Driver 18 for SQL Server on Ubuntu
+
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
 sudo add-apt-repository "$(curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list)"
 sudo apt-get update

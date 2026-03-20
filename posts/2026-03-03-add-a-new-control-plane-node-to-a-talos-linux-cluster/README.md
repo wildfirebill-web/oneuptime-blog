@@ -29,6 +29,7 @@ Before starting, verify your cluster is healthy and you have the necessary confi
 
 ```bash
 # Check cluster health
+
 talosctl -n <existing-cp-ip> health
 
 # Check current control plane nodes

@@ -43,6 +43,7 @@ This Collector configuration enforces TLS on both the receiver (incoming) and ex
 
 ```yaml
 # collector-tls.yaml
+
 receivers:
   otlp:
     protocols:

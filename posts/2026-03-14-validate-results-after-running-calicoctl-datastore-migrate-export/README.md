@@ -27,6 +27,7 @@ After running `calicoctl datastore migrate export`, thorough validation ensures 
 echo "=== Migration Step Validation ==="
 
 # 1. Verify calicoctl connectivity
+
 echo "--- Connectivity ---"
 calicoctl version && echo "OK" || echo "FAIL"
 

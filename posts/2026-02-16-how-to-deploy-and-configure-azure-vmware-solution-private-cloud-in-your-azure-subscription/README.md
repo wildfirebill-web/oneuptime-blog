@@ -53,6 +53,7 @@ Before you can deploy AVS, register the resource provider in your subscription.
 
 ```bash
 # Register the Azure VMware Solution resource provider
+
 az provider register --namespace Microsoft.AVS
 
 # Check registration status (wait until it shows 'Registered')

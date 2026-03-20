@@ -86,6 +86,7 @@ Each subscription directory has a `subscription.hcl` file:
 
 ```hcl
 # live/dev/subscription.hcl
+
 locals {
   subscription_id   = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
   subscription_name = "dev"
@@ -250,7 +251,7 @@ inputs = {
 }
 ```
 
-## Resource Group Management
+Resource Group Management
 
 In Azure, everything lives in a resource group. You can manage resource groups through Terragrunt in two ways.
 

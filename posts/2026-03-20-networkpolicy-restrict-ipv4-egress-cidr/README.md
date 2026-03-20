@@ -1,4 +1,4 @@
-# How to Create a Kubernetes NetworkPolicy to Restrict IPv4 Egress to Specific CIDRs
+# How to Create a Kubernetes NetworkPolicy for IPv4 Egress CIDRs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -6,12 +6,13 @@ Tags: Kubernetes, NetworkPolicy, IPv4, Egress, Security, CIDR
 
 Description: Write Kubernetes NetworkPolicy manifests to restrict outbound IPv4 connections from pods to only approved CIDRs, preventing data exfiltration and unauthorized access.
 
-Egress NetworkPolicies control where pods can send traffic. This is critical for security — preventing compromised pods from connecting to external attackers, limiting database pods to only connect to expected backends, or restricting workloads to internal-only access.
+Egress NetworkPolicies control where pods can send traffic. This is critical for security - preventing compromised pods from connecting to external attackers, limiting database pods to only connect to expected backends, or restricting workloads to internal-only access.
 
 ## Basic Egress Policy: Allow Only Specific Destinations
 
 ```yaml
 # restrict-egress-to-cidr.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

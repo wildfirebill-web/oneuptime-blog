@@ -36,6 +36,7 @@ Create a dedicated project for log aggregation. This project should have strict 
 
 ```bash
 # Create the central audit project
+
 gcloud projects create org-audit-central \
   --name="Organization Audit Central" \
   --folder=SECURITY_FOLDER_ID

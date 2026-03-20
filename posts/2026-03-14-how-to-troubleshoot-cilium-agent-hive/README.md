@@ -29,6 +29,7 @@ When the agent fails to start due to a hive issue, the pod logs contain specific
 
 ```bash
 # Check for hive-related errors in agent logs
+
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 

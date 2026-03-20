@@ -16,6 +16,7 @@ The `version` parameter accepts branch names, tags, and commit hashes:
 
 ```yaml
 # playbook-clone-branch.yml
+
 # Clones a repository and checks out the develop branch
 - name: Clone specific branch
   hosts: webservers

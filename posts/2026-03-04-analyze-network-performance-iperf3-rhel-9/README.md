@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Iperf3, Network Performance, Linux
+Tags: RHEL, iperf3, Network Performance, Linux
 
 Description: Learn how to use iperf3 on RHEL to measure network throughput, latency, and performance between two hosts, including TCP and UDP testing, bidirectional tests, and interpreting results.
 
@@ -14,6 +14,7 @@ When you need to know how fast your network actually is (not what the spec sheet
 
 ```bash
 # Install iperf3
+
 sudo dnf install -y iperf3
 ```
 

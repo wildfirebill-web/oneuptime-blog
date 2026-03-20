@@ -1,4 +1,4 @@
-# How to Use tofu output to Read Output Values
+# How to Use tofu output to Read Output Values - Tofu Read Values
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use tofu output to read and display output values from
 
 ## Introduction
 
-`tofu output` reads output values from your current state file and displays them. Outputs are the mechanism for exposing infrastructure details — VPC IDs, endpoints, ARNs — to other tools, configurations, and team members.
+`tofu output` reads output values from your current state file and displays them. Outputs are the mechanism for exposing infrastructure details - VPC IDs, endpoints, ARNs - to other tools, configurations, and team members.
 
 ## Defining Outputs
 
 ```hcl
 # outputs.tf
+
 output "vpc_id" {
   description = "The ID of the VPC"
   value       = aws_vpc.main.id
@@ -192,4 +193,4 @@ tofu output -json database_password
 
 ## Conclusion
 
-`tofu output` is the standard way to extract infrastructure values for use in application configuration, other OpenTofu configurations, or operational tooling. Use `-raw` for simple string values in scripts, `-json` for structured data and lists, and pipe through `jq` for complex extraction. Remember that sensitive outputs are hidden in normal output but accessible — implement appropriate access controls on your state files.
+`tofu output` is the standard way to extract infrastructure values for use in application configuration, other OpenTofu configurations, or operational tooling. Use `-raw` for simple string values in scripts, `-json` for structured data and lists, and pipe through `jq` for complex extraction. Remember that sensitive outputs are hidden in normal output but accessible - implement appropriate access controls on your state files.

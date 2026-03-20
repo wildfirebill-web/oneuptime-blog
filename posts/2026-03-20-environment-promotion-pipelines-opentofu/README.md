@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # .github/workflows/promote.yml
+
 name: Infrastructure Promotion
 
 on:
@@ -116,7 +117,7 @@ rds_instance_class = "db.r5.large"
 After each environment deployment, validate:
 
 ```bash
-# Smoke tests — basic connectivity
+# Smoke tests - basic connectivity
 curl -f "https://${ENVIRONMENT}.myapp.example.com/health"
 
 # Infrastructure tests using terratest or native tooling
@@ -129,4 +130,4 @@ aws rds describe-db-instances \
 
 ## Conclusion
 
-Environment promotion pipelines bring the discipline of application release management to infrastructure. By requiring changes to pass through dev and staging before reaching production — with automated tests and human approval gates — you dramatically reduce the risk of infrastructure changes breaking production. The GitHub Environments feature provides a simple mechanism to require human approval before the production deployment step.
+Environment promotion pipelines bring the discipline of application release management to infrastructure. By requiring changes to pass through dev and staging before reaching production - with automated tests and human approval gates - you dramatically reduce the risk of infrastructure changes breaking production. The GitHub Environments feature provides a simple mechanism to require human approval before the production deployment step.

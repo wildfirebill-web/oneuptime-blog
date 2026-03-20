@@ -30,6 +30,7 @@ Before diving into logs and events, make sure you can actually reach the node:
 
 ```bash
 # Verify talosctl can connect to the node
+
 talosctl health --nodes 192.168.1.10
 
 # Check the node's current machine status

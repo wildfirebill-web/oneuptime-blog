@@ -284,6 +284,7 @@ You can always run a pipeline manually, which is useful for testing and one-off 
 
 ```bash
 # Trigger a pipeline run manually using Azure CLI
+
 az datafactory pipeline create-run \
   --factory-name "my-data-factory" \
   --resource-group "my-resource-group" \

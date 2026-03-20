@@ -22,6 +22,7 @@ This playbook copies all `.conf` files from a local directory to remote servers:
 
 ```yaml
 # playbook.yml - Copy all config files to remote hosts
+
 ---
 - name: Deploy configuration files
   hosts: webservers

@@ -211,6 +211,7 @@ flowchart LR
 
 ```ini
 # sphinx.conf
+
 source articles
 {
     type = mysql

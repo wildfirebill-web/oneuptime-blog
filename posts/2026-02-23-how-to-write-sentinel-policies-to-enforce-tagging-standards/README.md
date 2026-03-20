@@ -28,6 +28,7 @@ Let us start with a straightforward policy that requires a set of tags on all AW
 
 ```python
 # enforce-tags.sentinel
+
 # Requires specific tags on all taggable resources
 
 import "tfplan/v2" as tfplan

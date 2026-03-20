@@ -49,6 +49,7 @@ The following tools and versions are required to perform a safe Istio upgrade:
 
 ```bash
 # Verify kubectl is installed and configured
+
 # This command should return your cluster information
 kubectl cluster-info
 

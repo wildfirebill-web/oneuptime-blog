@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ansible, CI/CD, Pipeline, GitHub Actions, Automation
+Tags: OpenTofu, Ansible, CI/CD, Pipelines, GitHub Actions, Automation
 
 Description: Learn how to design CI/CD pipelines that coordinate OpenTofu infrastructure changes with Ansible configuration management, handling dependencies, rollbacks, and parallel execution.
 
@@ -14,6 +14,7 @@ Coordinating OpenTofu and Ansible in CI/CD requires thinking carefully about ord
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy
 
 on:

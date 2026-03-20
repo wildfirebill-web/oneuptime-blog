@@ -30,6 +30,7 @@ Apply the following Helm values to configure masquerade traffic to remote nodes 
 
 ```yaml
 # cilium-remote-masquerade-values.yaml
+
 # Controls masquerading for traffic between nodes
 # In overlay mode, inter-node traffic is encapsulated, no masquerade needed
 tunnel: vxlan

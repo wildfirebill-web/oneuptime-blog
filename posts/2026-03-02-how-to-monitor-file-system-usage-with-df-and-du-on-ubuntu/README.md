@@ -18,6 +18,7 @@ Running out of disk space causes some of the most abrupt and unpleasant failures
 
 ```bash
 # Show all filesystems in human-readable format
+
 df -h
 ```
 

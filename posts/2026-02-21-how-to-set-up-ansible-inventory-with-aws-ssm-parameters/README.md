@@ -25,6 +25,7 @@ First, organize your inventory data in SSM Parameter Store with a hierarchical p
 
 ```bash
 # Store group definitions
+
 aws ssm put-parameter \
     --name "/ansible/inventory/groups/webservers/hosts" \
     --value '["web01","web02","web03"]' \

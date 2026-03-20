@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, customization, security, banner, login, compliance
+Tags: Portainer, Customization, Security, Banner, Login, Compliance
 
 Description: A guide to adding a login screen banner in Portainer for compliance requirements, security notices, or informational messages.
 
@@ -33,6 +33,7 @@ PORTAINER_URL="https://portainer.example.com:9443"
 TOKEN="your-admin-token"
 
 # Set login screen message
+
 curl -X PUT \
   "${PORTAINER_URL}/api/settings" \
   -H "Authorization: Bearer ${TOKEN}" \
@@ -47,7 +48,7 @@ curl -X PUT \
 
 ### Security Notice (Government/Compliance)
 
-```
+```text
 NOTICE: This system is for authorized users only.
 
 Individuals using this computer system without authority, or in excess of their authority, are subject to monitoring and recording. Anyone using this system expressly consents to such monitoring.
@@ -57,7 +58,7 @@ Evidence of unauthorized use may be provided to law enforcement.
 
 ### Maintenance Notice
 
-```
+```text
 SCHEDULED MAINTENANCE: This system will be unavailable on Saturday, March 22, 2026 from 02:00-04:00 UTC for maintenance.
 
 For urgent support, contact: ops@example.com
@@ -65,7 +66,7 @@ For urgent support, contact: ops@example.com
 
 ### HIPAA Compliance Notice
 
-```
+```text
 HIPAA NOTICE: This system contains Protected Health Information (PHI).
 
 Access is restricted to authorized personnel only. All access is logged and audited. Unauthorized access or disclosure of PHI is a violation of HIPAA regulations and may result in civil and criminal penalties.
@@ -75,7 +76,7 @@ By logging in, you acknowledge that you have received HIPAA training and agree t
 
 ### PCI DSS Notice
 
-```
+```text
 RESTRICTED SYSTEM: This system processes payment card data.
 
 Access is granted to authorized personnel only. All activities are monitored and logged. This system must be used in compliance with PCI DSS requirements.

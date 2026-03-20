@@ -14,6 +14,7 @@ DNS latency directly impacts every connection your applications make. A 100ms DN
 
 ```bash
 # Single query timing with dig:
+
 dig google.com | grep "Query time"
 # Query time: 45 msec = DNS resolved in 45ms
 

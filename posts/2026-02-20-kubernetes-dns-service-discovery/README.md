@@ -35,6 +35,7 @@ Kubernetes DNS follows a strict naming convention:
 
 ```text
 # Service A record format:
+
 <service-name>.<namespace>.svc.<cluster-domain>
 
 # Examples:

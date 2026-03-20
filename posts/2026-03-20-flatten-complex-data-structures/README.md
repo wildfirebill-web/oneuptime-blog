@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, flatten, Data Structures, Collections, Infrastructure as Code
+Tags: OpenTofu, Terraform, HCL, Flatten, Data Structures, Collections, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's flatten() function and for expressions to collapse nested lists and complex data structures into flat collections for use with for_each and dynamic blocks.
 
 ---
 
-Complex variable structures — like a map of lists, or nested objects — often need to be flattened into a simple list or map before they can be used with `for_each` or `dynamic` blocks. OpenTofu provides the `flatten()` function and for expressions to handle this.
+Complex variable structures - like a map of lists, or nested objects - often need to be flattened into a simple list or map before they can be used with `for_each` or `dynamic` blocks. OpenTofu provides the `flatten()` function and for expressions to handle this.
 
 ---
 
@@ -18,6 +18,7 @@ Complex variable structures — like a map of lists, or nested objects — often
 
 ```hcl
 # This won't work with for_each directly
+
 variable "regions" {
   default = {
     "us-east-1" = ["10.0.0.0/24", "10.0.1.0/24"]
@@ -214,7 +215,7 @@ output "debug_subnets" {
 2. **Always create a unique key** for the resulting map (e.g., `"${region}/${cidr}"`)
 3. **Test with tofu console** before deploying to verify the structure is correct
 4. **Add type annotations** to variables to help OpenTofu validate inputs
-5. **Comment complex flatten expressions** — they can be hard to read at a glance
+5. **Comment complex flatten expressions** - they can be hard to read at a glance
 
 ---
 
@@ -224,4 +225,4 @@ The `flatten()` function and nested for expressions are essential tools for work
 
 ---
 
-*Manage your infrastructure with [OneUptime](https://oneuptime.com) — monitoring and alerting for everything you build.*
+*Manage your infrastructure with [OneUptime](https://oneuptime.com) - monitoring and alerting for everything you build.*

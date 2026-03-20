@@ -12,6 +12,7 @@ Running the OpenTelemetry Collector as a gateway between your services and Honey
 
 ```yaml
 # otel-collector-honeycomb.yaml
+
 receivers:
   otlp:
     protocols:

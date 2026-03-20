@@ -1,8 +1,8 @@
-# How to Set Up Network Address Translation in Rancher
+# How to Set Up Network Address Translation in Rancher (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, NAT, Network, Kubernetes, Egress, SNAT
+Tags: Rancher, NAT, Networks, Kubernetes, Egress, SNAT
 
 Description: Configure source and destination NAT in Rancher for pod internet egress, external service access, and managing IP address translation in Kubernetes clusters.
 
@@ -22,6 +22,7 @@ By default, pods use SNAT via the node's primary IP for internet access. Verify 
 
 ```bash
 # From a pod, check external connectivity
+
 kubectl exec -it test-pod -- curl -s ifconfig.me
 # Should return the node's IP address (SNAT)
 ```

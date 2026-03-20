@@ -38,6 +38,7 @@ First, create an Azure SignalR Service instance. The Serverless mode works best 
 
 ```bash
 # Create a SignalR Service instance in serverless mode
+
 az signalr create \
   --name my-app-signalr \
   --resource-group rg-notifications \

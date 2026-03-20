@@ -47,6 +47,7 @@ The cleanest solution is to remove the `replicas` field from the Deployment mani
 
 ```yaml
 # deployment-no-replicas.yaml - Deployment without replicas field (HPA manages it)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -14,6 +14,7 @@ Description: Use netstat to monitor IPv6 TCP and UDP connections, view listening
 
 ```bash
 # Show all IPv6 TCP connections (Linux)
+
 netstat -t6
 
 # Show all IPv6 connections with numeric addresses
@@ -37,7 +38,7 @@ netstat -f inet6
 
 ## Reading netstat IPv6 Output
 
-```
+```text
 Active Internet connections (only servers)
 Proto  Recv-Q  Send-Q  Local Address          Foreign Address  State
 tcp6        0       0  :::22                  :::*             LISTEN
@@ -49,9 +50,9 @@ udp6        0       0  :::53                  :::*
 ```
 
 Address notation:
-- `:::22` — listening on all IPv6 addresses, port 22
-- `::1:25` — listening on IPv6 loopback, port 25
-- `2001:db8::1:443` — established connection on specific IPv6 address
+- `:::22` - listening on all IPv6 addresses, port 22
+- `::1:25` - listening on IPv6 loopback, port 25
+- `2001:db8::1:443` - established connection on specific IPv6 address
 
 ## IPv6 Routing Table
 
@@ -70,7 +71,7 @@ netstat -rn6 | grep -v "^lo\|^Kernel\|^Destination"
 ```
 
 Example output:
-```
+```text
 Destination    Gateway    Flags  Netif  Expire
 ::/0           fe80::1    UG     eth0
 ::1            ::1        UH     lo0

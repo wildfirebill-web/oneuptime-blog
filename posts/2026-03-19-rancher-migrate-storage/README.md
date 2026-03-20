@@ -21,6 +21,7 @@ Before migrating, inventory your storage:
 
 ```bash
 # On the source cluster
+
 kubectl get pv -o custom-columns='NAME:.metadata.name,CAPACITY:.spec.capacity.storage,CLASS:.spec.storageClassName,STATUS:.status.phase,CLAIM:.spec.claimRef.name'
 
 kubectl get pvc --all-namespaces -o custom-columns='NAMESPACE:.metadata.namespace,NAME:.metadata.name,SIZE:.spec.resources.requests.storage,CLASS:.spec.storageClassName'

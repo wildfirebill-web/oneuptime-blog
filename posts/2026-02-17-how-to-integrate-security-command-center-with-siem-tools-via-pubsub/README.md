@@ -35,6 +35,7 @@ Create a dedicated topic and subscription for your SIEM integration.
 
 ```bash
 # Create the Pub/Sub topic for SIEM integration
+
 gcloud pubsub topics create scc-siem-feed \
   --project=my-security-project
 

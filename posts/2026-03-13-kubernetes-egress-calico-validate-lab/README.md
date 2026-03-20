@@ -29,6 +29,7 @@ Verify that pods use the node IP when reaching external destinations:
 kubectl run egress-test --image=nicolaka/netshoot -- sleep 3600
 
 # Check the source IP seen by an external service
+
 kubectl exec egress-test -- curl -s https://ifconfig.me
 # Expected: The node's external IP, not the pod's RFC 1918 IP
 ```

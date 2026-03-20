@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Rate Limiting, IPv6 Security, ip6tables, DoS Protection
+Tags: ICMPv6, Rate Limiting, IPv6 Security, Ip6tables, DoS Protection
 
 Description: Configure ICMPv6 rate limiting to protect against DoS attacks while ensuring essential ICMPv6 messages continue to flow, using kernel sysctl settings and ip6tables.
 
@@ -16,6 +16,7 @@ Linux automatically rate-limits ICMPv6 error message generation:
 
 ```bash
 # Check current ICMPv6 rate limit settings
+
 cat /proc/sys/net/ipv6/icmp/ratelimit
 # Default: 1000 (milliseconds between ICMPv6 error sends)
 # = at most 1 error per second per destination

@@ -32,6 +32,7 @@ variable "ports" {
 }
 
 # Accessing list elements
+
 locals {
   first_az = var.availability_zones[0]  # "us-east-1a"
   last_az  = var.availability_zones[2]  # "us-east-1c"

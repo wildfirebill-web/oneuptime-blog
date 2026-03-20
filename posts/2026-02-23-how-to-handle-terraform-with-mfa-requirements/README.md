@@ -20,6 +20,7 @@ A typical MFA enforcement policy looks like this:
 
 ```hcl
 # This is what your security team has probably applied
+
 resource "aws_iam_policy" "require_mfa" {
   name = "require-mfa"
 

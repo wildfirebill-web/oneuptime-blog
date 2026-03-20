@@ -23,6 +23,7 @@ Docker provides four restart policy options:
 
 ```bash
 # Apply restart policy when running a container
+
 docker run -d --restart=always nginx:alpine
 
 # Apply restart policy with retry limit
@@ -237,7 +238,7 @@ services:
       - DB_RETRY_DELAY=3000
 ```
 
-### Resource Cleanup on Restart
+Resource Cleanup on Restart
 
 Containers may leave stale resources (lock files, PID files) that prevent clean restarts.
 

@@ -24,6 +24,7 @@ Apply rate limiting to an Ingress resource:
 
 ```yaml
 # app-ingress-with-rate-limit.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

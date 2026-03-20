@@ -24,6 +24,7 @@ List the firewall rules related to your GKE cluster:
 
 ```bash
 # List firewall rules for your GKE cluster
+
 gcloud compute firewall-rules list \
     --filter="name~gke-your-cluster" \
     --format="table(name, direction, sourceRanges, allowed, priority)"

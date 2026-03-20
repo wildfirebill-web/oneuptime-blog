@@ -33,6 +33,7 @@ Start by creating a CustomTargetType resource. This defines the render and deplo
 
 ```yaml
 # custom-target-type.yaml - Custom target type for VM deployments
+
 apiVersion: deploy.cloud.google.com/v1
 kind: CustomTargetType
 metadata:

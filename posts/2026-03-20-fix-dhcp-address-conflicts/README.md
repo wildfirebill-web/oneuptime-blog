@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, Address Conflicts, Troubleshooting, sysadmin
+Tags: DHCP, Networking, Address Conflicts, Troubleshooting, Sysadmin
 
-Description: DHCP address conflicts occur when two devices use the same IP simultaneously, causing network failures that can be resolved by identifying the conflicting hosts, using DHCP conflict detection, and converting one device to a reservation or exclusion.
+Description: DHCP address conflicts occur when two devices use the same IP simultaneously, causing network failures that can be resolved by identifying the conflicting hosts, using DHCP conflict detection, and...
 
 ## What Causes DHCP Address Conflicts
 
@@ -17,8 +17,9 @@ Description: DHCP address conflicts occur when two devices use the same IP simul
 
 dhcpd can ping an address before offering it:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
+
 # Ping an address before offering it to detect conflicts
 ping-check true;
 ping-timeout 1;
@@ -73,7 +74,7 @@ sudo systemctl start isc-dhcp-server
 
 ### Step 3: Exclude the Static IP from the DHCP Pool
 
-```
+```text
 # Add to /etc/dhcp/dhcpd.conf
 # Exclude addresses used by static devices from the dynamic range
 subnet 192.168.1.0 netmask 255.255.255.0 {

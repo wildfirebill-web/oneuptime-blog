@@ -47,6 +47,7 @@ Since replication is asynchronous, reads from replicas may return slightly stale
 
 ```bash
 # Create a same-region read replica
+
 az postgres flexible-server replica create \
   --resource-group myResourceGroup \
   --replica-name my-pg-replica-1 \

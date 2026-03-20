@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, TLS, IPv6, LDAPS, StartTLS, OpenLDAP, Security, Certificates
+Tags: LDAP, TLS, IPv6, StartTLS, OpenLDAP, Security, Certificates
 
 Description: Configure TLS encryption for LDAP connections over IPv6 using LDAPS (port 636) and StartTLS, including certificate setup, client configuration, and verification.
 
@@ -12,8 +12,8 @@ Securing LDAP with TLS is essential in production environments. When combined wi
 
 ## Two TLS Methods for LDAP
 
-1. **LDAPS** — Implicit TLS on port 636. The TLS handshake happens immediately on connection.
-2. **StartTLS** — Plain LDAP on port 389 that upgrades to TLS using the STARTTLS extended operation.
+1. **LDAPS** - Implicit TLS on port 636. The TLS handshake happens immediately on connection.
+2. **StartTLS** - Plain LDAP on port 389 that upgrades to TLS using the STARTTLS extended operation.
 
 Both work over IPv6 with the proper configuration.
 
@@ -23,6 +23,7 @@ Certificates must include SANs for the IPv6 address and hostname:
 
 ```bash
 # Create OpenSSL config with IPv6 SAN
+
 cat > /tmp/ldap-cert.cnf << 'EOF'
 [req]
 default_bits = 2048

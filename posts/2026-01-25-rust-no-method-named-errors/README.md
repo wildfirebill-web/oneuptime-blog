@@ -113,6 +113,7 @@ Some methods are only available when crate features are enabled.
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }  # Some methods need specific features
 ```

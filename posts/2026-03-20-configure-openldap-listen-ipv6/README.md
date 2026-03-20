@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenLDAP, IPv6, LDAP, Directory Service, slapd, Linux
+Tags: OpenLDAP, IPv6, LDAP, Directory Services, Slapd, Linux
 
 Description: Configure OpenLDAP's slapd daemon to accept LDAP connections over IPv6, including URL configuration, access control, TLS, and verification steps.
 
@@ -14,6 +14,7 @@ OpenLDAP's slapd daemon can be configured to listen on IPv6 by specifying IPv6 L
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install slapd ldap-utils -y
 
 # RHEL/CentOS

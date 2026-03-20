@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, netaddr, Networking, Address Management, IPAM
+Tags: Python, IPv6, Netaddr, Networking, Address Management, IPAM
 
 Description: Use the Python netaddr library for IPv6 address manipulation, prefix operations, and IP set operations beyond the stdlib ipaddress module.
 
@@ -24,6 +24,7 @@ pip install netaddr
 from netaddr import IPAddress, IPNetwork, IPSet, IPRange
 
 # Create an IPv6 address
+
 addr = IPAddress("2001:db8::1", version=6)
 print(addr)              # 2001:db8::1
 print(addr.version)      # 6
@@ -82,7 +83,7 @@ print(f"After exclusion: {len(remaining)} networks")
 
 ## IPSet for Complex Set Operations
 
-`IPSet` is one of netaddr's most powerful features — it handles arbitrary sets of IP addresses:
+`IPSet` is one of netaddr's most powerful features - it handles arbitrary sets of IP addresses:
 
 ```python
 from netaddr import IPSet, IPNetwork, IPAddress

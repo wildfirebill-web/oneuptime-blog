@@ -51,6 +51,7 @@ echo "Parent PID: $$"
 echo "Parent BASHPID: $BASHPID"
 
 # Create explicit subshell with parentheses
+
 (
     echo "Subshell PID: $$"        # Same as parent (historical reasons)
     echo "Subshell BASHPID: $BASHPID"  # Different - actual subshell PID
@@ -408,7 +409,7 @@ run_parallel() {
 run_parallel
 ```
 
-### Resource Cleanup
+Resource Cleanup
 
 ```bash
 #!/bin/bash

@@ -324,6 +324,7 @@ Track liveness probe restarts to identify configuration problems:
 
 ```promql
 # Rate of liveness-triggered restarts
+
 rate(kube_pod_container_status_restarts_total[5m])
 
 # Pods restarting frequently due to liveness probes

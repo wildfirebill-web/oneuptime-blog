@@ -14,6 +14,7 @@ After Terraform creates infrastructure, you need to verify it actually works. Te
 
 ```yaml
 # validate.yml - Post-Terraform deployment validation
+
 ---
 - hosts: all
   gather_facts: yes

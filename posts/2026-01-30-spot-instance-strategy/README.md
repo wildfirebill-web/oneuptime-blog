@@ -134,6 +134,7 @@ This script polls the EC2 instance metadata endpoint for termination notices. Wh
 ```bash
 #!/bin/bash
 # spot-interruption-handler.sh
+
 # Polls EC2 metadata for spot termination notices
 
 METADATA_URL="http://169.254.169.254/latest/meta-data/spot/termination-time"

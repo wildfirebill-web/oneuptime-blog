@@ -16,6 +16,7 @@ The `-v` flag makes tcpdump display the full IPv4 header.
 
 ```bash
 # Capture with verbose output showing all header fields
+
 tcpdump -n -v -i eth0 'host 192.168.1.10'
 
 # Example output:
@@ -25,19 +26,19 @@ tcpdump -n -v -i eth0 'host 192.168.1.10'
 ```
 
 Interpreting each field from the output above:
-- `tos 0x10` — DSCP value; 0x10 = Assured Forwarding class
-- `ttl 64` — standard Linux default; decremented at each hop
-- `id 22847` — fragment group identifier
-- `offset 0` — this is the first (or only) fragment
-- `flags [DF]` — Don't Fragment bit is set
-- `proto TCP (6)` — payload is TCP
-- `length 1500` — total packet size equals the MTU (fragmentation risk)
+- `tos 0x10` - DSCP value; 0x10 = Assured Forwarding class
+- `ttl 64` - standard Linux default; decremented at each hop
+- `id 22847` - fragment group identifier
+- `offset 0` - this is the first (or only) fragment
+- `flags [DF]` - Don't Fragment bit is set
+- `proto TCP (6)` - payload is TCP
+- `length 1500` - total packet size equals the MTU (fragmentation risk)
 
 ## Reading Headers with Wireshark
 
 Wireshark displays each field with its decoded meaning.
 
-```
+```text
 Internet Protocol Version 4, Src: 192.168.1.10, Dst: 93.184.216.34
   0100 .... = Version: 4
   .... 0101 = Header Length: 20 bytes (5)
@@ -55,7 +56,7 @@ Internet Protocol Version 4, Src: 192.168.1.10, Dst: 93.184.216.34
 
 Use Wireshark display filters to isolate specific field values.
 
-```
+```text
 # Filter by TTL to find packets near expiry
 ip.ttl < 5
 

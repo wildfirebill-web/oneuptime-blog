@@ -68,6 +68,7 @@ The fastest way to determine if the crypto policy is causing the failure is to t
 
 ```bash
 # Check current policy
+
 update-crypto-policies --show
 
 # Temporarily switch to LEGACY

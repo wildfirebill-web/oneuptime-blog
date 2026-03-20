@@ -32,6 +32,7 @@ Start with a well-defined OpenAPI specification:
 
 ```yaml
 # openapi.yaml
+
 openapi: 3.0.3
 info:
   title: Product API

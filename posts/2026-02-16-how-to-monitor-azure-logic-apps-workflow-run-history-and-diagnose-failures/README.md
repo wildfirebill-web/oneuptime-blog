@@ -46,6 +46,7 @@ For programmatic monitoring and alerting, enable diagnostic logging to send Logi
 
 ```bash
 # Enable diagnostic settings for a Logic App
+
 az monitor diagnostic-settings create \
   --name logicapp-diagnostics \
   --resource "/subscriptions/<sub-id>/resourceGroups/myRG/providers/Microsoft.Logic/workflows/myLogicApp" \

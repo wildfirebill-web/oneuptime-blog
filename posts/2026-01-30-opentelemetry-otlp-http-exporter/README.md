@@ -868,6 +868,7 @@ You can run a local OpenTelemetry Collector for testing with Docker:
 
 ```bash
 # Start a local collector for testing
+
 docker run -p 4318:4318 \
   -v $(pwd)/collector-config.yaml:/etc/otelcol/config.yaml \
   otel/opentelemetry-collector:latest

@@ -33,6 +33,7 @@ resource "aws_eip_association" "bastion" {
 }
 
 # EC2 instance for bastion
+
 resource "aws_instance" "bastion" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.micro"
@@ -121,4 +122,4 @@ resource "aws_eip" "dev_server" {
 
 ## Conclusion
 
-AWS Elastic IPs in Terraform are allocated with `aws_eip { domain = "vpc" }` and associated with EC2 instances or NAT gateways via `aws_eip_association`. Use `prevent_destroy = true` for production EIPs to prevent accidental release. EIPs have no charge when associated with running instances but are billed when unassociated — destroy them when not in use.
+AWS Elastic IPs in Terraform are allocated with `aws_eip { domain = "vpc" }` and associated with EC2 instances or NAT gateways via `aws_eip_association`. Use `prevent_destroy = true` for production EIPs to prevent accidental release. EIPs have no charge when associated with running instances but are billed when unassociated - destroy them when not in use.

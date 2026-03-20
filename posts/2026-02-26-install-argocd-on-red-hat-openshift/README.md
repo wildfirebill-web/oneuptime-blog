@@ -22,6 +22,7 @@ Using the CLI, create a Subscription resource to install the operator.
 
 ```yaml
 # openshift-gitops-subscription.yaml
+
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:

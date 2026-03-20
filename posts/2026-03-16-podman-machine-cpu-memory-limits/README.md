@@ -23,6 +23,7 @@ Podman machines on macOS and Windows run inside a virtual machine, and the resou
 
 ```bash
 # View current machine configuration
+
 podman machine list
 
 # Get detailed machine information
@@ -147,7 +148,7 @@ podman stats --no-stream
 podman stats my-container
 ```
 
-## Resource Allocation Strategies
+Resource Allocation Strategies
 
 ### Development Machine
 

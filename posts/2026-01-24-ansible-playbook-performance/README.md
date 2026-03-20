@@ -16,6 +16,7 @@ Before optimizing, measure your baseline.
 
 ```bash
 # Enable task timing
+
 ANSIBLE_CALLBACKS_ENABLED=profile_tasks ansible-playbook site.yml
 
 # Or in ansible.cfg

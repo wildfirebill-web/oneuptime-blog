@@ -53,6 +53,7 @@ The trace-id is a 32-character lowercase hexadecimal string representing 16 byte
 
 ```python
 # A valid trace-id is 32 hex characters (16 bytes)
+
 # It must not be all zeros, which is considered invalid
 trace_id = "4bf92f3577b34da6a3ce929d0e0e4736"
 

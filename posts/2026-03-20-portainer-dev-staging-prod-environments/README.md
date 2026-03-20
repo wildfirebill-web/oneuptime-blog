@@ -39,6 +39,7 @@ Use a base compose file with per-environment overrides:
 
 ```yaml
 # docker-compose.yml (base)
+
 version: "3.8"
 
 services:

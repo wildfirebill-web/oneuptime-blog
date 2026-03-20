@@ -24,6 +24,7 @@ Start by identifying the current leader and checking for recent elections:
 
 ```bash
 # Check etcd status on all control plane nodes
+
 talosctl -n 192.168.1.10,192.168.1.11,192.168.1.12 etcd status
 
 # The output shows which member is the leader

@@ -1,11 +1,10 @@
----
-title: "How to Use base64encode() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, encoding
-description: "Learn how to use the base64encode() function in OpenTofu to encode strings as Base64."
----
-
 # How to Use base64encode() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+
+Description: Learn how to use the base64encode() function in OpenTofu to encode strings as Base64.
 
 Learn how to use the base64encode() function in OpenTofu to encode strings as Base64.
 
@@ -13,6 +12,7 @@ Learn how to use the base64encode() function in OpenTofu to encode strings as Ba
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

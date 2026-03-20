@@ -213,6 +213,7 @@ VMs on a different network need the east-west gateway to communicate with the cl
 
 ```bash
 # Install the east-west gateway
+
 kubectl apply -f samples/multicluster/expose-istiod.yaml
 kubectl apply -f samples/multicluster/expose-services.yaml
 ```

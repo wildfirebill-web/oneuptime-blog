@@ -14,6 +14,7 @@ Create two Collector instances, one receiving via gRPC and one via HTTP, both ex
 
 ```yaml
 # collector-grpc.yaml
+
 receivers:
   otlp:
     protocols:

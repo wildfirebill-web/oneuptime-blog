@@ -94,6 +94,7 @@ def calculate_minimum_team_size(
     }
 
 # Example: 24/7 coverage with max 40 on-call hours per month per engineer
+
 result = calculate_minimum_team_size(
     coverage_hours_per_week=168,
     max_oncall_hours_per_engineer_per_month=40,

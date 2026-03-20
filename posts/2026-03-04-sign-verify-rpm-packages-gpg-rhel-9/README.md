@@ -28,6 +28,7 @@ If you do not already have a GPG key for signing:
 
 ```bash
 # Generate a new key pair
+
 gpg --full-generate-key
 
 # Choose:

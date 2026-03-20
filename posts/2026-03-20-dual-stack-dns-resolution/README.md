@@ -8,12 +8,13 @@ Description: Learn how to manage DNS for dual-stack networks, including publishi
 
 ## Overview
 
-DNS is the control plane for dual-stack connectivity. A hostname resolves to both A (IPv4) and AAAA (IPv6) records — the OS chooses which address to connect to based on RFC 6724. Missing AAAA records mean IPv6 is never used regardless of network readiness. Incorrect AAAA records cause connection failures.
+DNS is the control plane for dual-stack connectivity. A hostname resolves to both A (IPv4) and AAAA (IPv6) records - the OS chooses which address to connect to based on RFC 6724. Missing AAAA records mean IPv6 is never used regardless of network readiness. Incorrect AAAA records cause connection failures.
 
 ## Publishing AAAA Records
 
 ```bash
-# BIND zone file — add AAAA alongside existing A records
+# BIND zone file - add AAAA alongside existing A records
+
 ; Forward zone: example.com
 @       IN  SOA  ns1.example.com. admin.example.com. (
                  2026031901 3600 900 604800 300 )
@@ -24,7 +25,7 @@ www     IN  A     203.0.113.10
 mail    IN  A     203.0.113.20
 ns1     IN  A     203.0.113.1
 
-; IPv6 — add AAAA records for each service
+; IPv6 - add AAAA records for each service
 @       IN  AAAA  2001:db8::10
 www     IN  AAAA  2001:db8::10
 mail    IN  AAAA  2001:db8::20
@@ -43,11 +44,11 @@ $ORIGIN 0.8.b.d.1.0.0.2.ip6.arpa.
 
 ## How Address Selection Works
 
-When an application calls `getaddrinfo("www.example.com")`, the OS gets both A and AAAA records. RFC 6724 defines selection — simplified:
+When an application calls `getaddrinfo("www.example.com")`, the OS gets both A and AAAA records. RFC 6724 defines selection - simplified:
 
-```
+```text
 Returned addresses sorted by preference:
-  1. 2001:db8::10   (global unicast IPv6 — highest preference)
+  1. 2001:db8::10   (global unicast IPv6 - highest preference)
   2. 203.0.113.10   (global unicast IPv4)
 
 Application uses first address: 2001:db8::10 (IPv6)
@@ -78,7 +79,7 @@ internal-app.corp.example.com.  IN  AAAA  2001:db8:int::10
 
 ## BIND9 Configuration for Dual-Stack
 
-```
+```text
 // /etc/bind/named.conf.options
 options {
     listen-on     { 0.0.0.0; };
@@ -99,7 +100,7 @@ options {
 
 ## Unbound Configuration for Dual-Stack
 
-```
+```nginx
 # /etc/unbound/unbound.conf
 server:
     interface: 0.0.0.0
@@ -124,13 +125,13 @@ You can influence which address family clients use:
 
 ```bash
 # Temporarily remove AAAA record to force IPv4 (during IPv6 troubleshooting)
-# WARNING: This affects all users — use with caution
+# WARNING: This affects all users - use with caution
 
 # Or lower TTL first, then remove:
 www  IN  AAAA  2001:db8::10    ; TTL 300 (lower before planned removal)
 
 # Synthesize 64: DNS64 for IPv6-only clients accessing IPv4-only servers
-# (NAT64/DNS64 environment — different from pure dual-stack)
+# (NAT64/DNS64 environment - different from pure dual-stack)
 ```
 
 ## Testing DNS for Dual-Stack
@@ -178,9 +179,9 @@ dig SOA example.com | grep "AUTHORITY SECTION" -A 1
 # The last number in the SOA record is the negative TTL (e.g., 300 seconds)
 
 # After adding a AAAA record, clients may cache the "no AAAA" response
-# for up to the negative TTL — plan accordingly
+# for up to the negative TTL - plan accordingly
 ```
 
 ## Summary
 
-Dual-stack DNS requires AAAA records alongside A records for all services. Internal DNS must cover internal IPv6 addresses, not just external ones. Configure BIND or Unbound to listen on both `0.0.0.0` and `::` and include IPv6 forwarders. RFC 6724 address selection prefers global IPv6; Happy Eyeballs ensures fast fallback if IPv6 is broken. Test with `dig AAAA` and `python3 socket.getaddrinfo()` to verify applications see both address families. Missing AAAA records silently keep traffic on IPv4 — run periodic audits to ensure parity.
+Dual-stack DNS requires AAAA records alongside A records for all services. Internal DNS must cover internal IPv6 addresses, not just external ones. Configure BIND or Unbound to listen on both `0.0.0.0` and `::` and include IPv6 forwarders. RFC 6724 address selection prefers global IPv6; Happy Eyeballs ensures fast fallback if IPv6 is broken. Test with `dig AAAA` and `python3 socket.getaddrinfo()` to verify applications see both address families. Missing AAAA records silently keep traffic on IPv4 - run periodic audits to ensure parity.

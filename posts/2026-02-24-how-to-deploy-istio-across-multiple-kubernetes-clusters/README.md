@@ -33,6 +33,7 @@ Set up your contexts:
 
 ```bash
 # Verify contexts
+
 kubectl config get-contexts
 
 # Set variables for convenience

@@ -165,6 +165,7 @@ systemd provides several tools to inspect how services relate to each other.
 
 ```bash
 # Show what httpd depends on (what it needs)
+
 systemctl list-dependencies httpd
 ```
 

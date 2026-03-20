@@ -38,6 +38,7 @@ Calico uses BGP (Border Gateway Protocol) to distribute routes across nodes. It 
 
 ```bash
 # Install Calico using the operator
+
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml
 
 # Install Calico custom resources

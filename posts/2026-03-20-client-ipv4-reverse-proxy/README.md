@@ -8,7 +8,7 @@ Description: Learn how to extract the real client IPv4 address when your applica
 
 ## The Problem
 
-```
+```text
 Client (1.2.3.4) → Nginx (10.0.0.1) → App Server
 ```
 
@@ -18,6 +18,7 @@ Without configuration the app sees `10.0.0.1` (the proxy) as `REMOTE_ADDR`. The 
 
 ```nginx
 # /etc/nginx/sites-available/myapp
+
 upstream app {
     server 127.0.0.1:8080;
 }
@@ -80,7 +81,7 @@ app.listen(8080, "127.0.0.1");
 
 ## Multi-Hop Proxy Chains
 
-```
+```text
 Client (1.2.3.4) → CDN (2.2.2.2) → LB (10.0.0.1) → App
 
 X-Forwarded-For: 1.2.3.4, 2.2.2.2
@@ -125,4 +126,4 @@ print(fwd["for"])  # 1.2.3.4
 
 ## Conclusion
 
-Always configure Nginx to forward `X-Forwarded-For` and `X-Real-IP`, and configure your application to trust exactly the right number of proxy hops — no more, no less. Trusting too many hops lets attackers spoof their IP by injecting fake XFF values. Libraries like `ProxyFix` (Python/werkzeug) and `trust proxy` (Express) implement the correct stripping logic. For new deployments, consider the RFC 7239 `Forwarded` header as a standardized alternative.
+Always configure Nginx to forward `X-Forwarded-For` and `X-Real-IP`, and configure your application to trust exactly the right number of proxy hops - no more, no less. Trusting too many hops lets attackers spoof their IP by injecting fake XFF values. Libraries like `ProxyFix` (Python/werkzeug) and `trust proxy` (Express) implement the correct stripping logic. For new deployments, consider the RFC 7239 `Forwarded` header as a standardized alternative.

@@ -21,13 +21,14 @@ Symptoms:
 ## Step 1: Identify the Affected Interface
 
 ```bash
-# On a Linux host — check which interface is receiving floods
+# On a Linux host - check which interface is receiving floods
+
 watch -n 1 "ip -s link show"
 ```
 
 Look for a counter incrementing thousands of times per second. On a Cisco switch:
 
-```
+```text
 show interfaces counters | include Broadcast
 show interfaces status
 ```
@@ -45,7 +46,7 @@ A genuine storm shows a single source MAC sending thousands of broadcasts, or a 
 
 On a managed switch, look for STP topology changes:
 
-```
+```text
 ! Cisco: check for rapid STP topology changes
 show spanning-tree detail | include topology
 show spanning-tree | include BLK\|LIS\|LRN
@@ -60,19 +61,19 @@ A port that should be **BLK** but shows **FWD** indicates a loop.
 
 Physically disconnect suspect uplinks one at a time until the storm stops. On a managed switch:
 
-```
+```text
 ! Shut the suspect port
 interface GigabitEthernet0/24
  shutdown
 ```
 
-Do NOT shut all ports — work one at a time to identify which cable is creating the loop.
+Do NOT shut all ports - work one at a time to identify which cable is creating the loop.
 
 ## Step 5: Enable Storm Control
 
 Configure storm control to automatically throttle broadcast traffic:
 
-```
+```text
 ! Cisco: limit broadcast to 20% of interface bandwidth
 interface GigabitEthernet0/1
  storm-control broadcast level 20.00
@@ -93,7 +94,7 @@ sudo tc filter add dev eth0 parent 1:0 protocol ip u32 \
 
 Prevent end hosts from accidentally creating loops:
 
-```
+```text
 ! Apply to all access ports
 interface range GigabitEthernet0/1-23
  spanning-tree portfast

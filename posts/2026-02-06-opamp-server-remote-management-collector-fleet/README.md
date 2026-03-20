@@ -29,6 +29,7 @@ First, clone the repository and navigate to the server example:
 
 ```bash
 # Clone the opamp-go repository
+
 git clone https://github.com/open-telemetry/opamp-go.git
 cd opamp-go
 

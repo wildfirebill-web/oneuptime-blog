@@ -29,6 +29,7 @@ Deploy an agent Collector per namespace using a Helm values template:
 
 ```yaml
 # team-agent-values.yaml.tpl
+
 # Template for per-team agent Collectors
 image:
   repository: otel/opentelemetry-collector-contrib

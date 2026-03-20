@@ -51,6 +51,7 @@ GKE manages the control plane for you, while you manage node pools and workloads
 
 ```bash
 # Create a standard GKE cluster
+
 gcloud container clusters create my-cluster \
     --zone us-central1-a \
     --num-nodes 3 \

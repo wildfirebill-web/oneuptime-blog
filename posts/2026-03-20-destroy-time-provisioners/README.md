@@ -68,7 +68,7 @@ provisioner "remote-exec" {
 }
 ```
 
-Using `on_failure = continue` is especially important for destroy-time provisioners — if the instance is already unreachable, you still want the resource to be removed from state.
+Using `on_failure = continue` is especially important for destroy-time provisioners - if the instance is already unreachable, you still want the resource to be removed from state.
 
 ---
 
@@ -103,4 +103,4 @@ Using `null_resource` with `triggers` preserves the values needed for cleanup ev
 
 ## Summary
 
-Set `when = destroy` on a provisioner to run it during resource destruction. Always set `on_failure = continue` for destroy-time provisioners unless the provisioner failure should block destruction. Use `null_resource` with `triggers` to capture resource attributes at creation time for use in destroy-time cleanup — this handles cases where the resource's attributes are no longer available at destroy time.
+Set `when = destroy` on a provisioner to run it during resource destruction. Always set `on_failure = continue` for destroy-time provisioners unless the provisioner failure should block destruction. Use `null_resource` with `triggers` to capture resource attributes at creation time for use in destroy-time cleanup - this handles cases where the resource's attributes are no longer available at destroy time.

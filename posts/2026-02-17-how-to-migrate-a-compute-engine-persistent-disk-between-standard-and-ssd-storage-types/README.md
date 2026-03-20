@@ -35,6 +35,7 @@ For data consistency, stop any applications writing to the disk, or better yet, 
 
 ```bash
 # Stop the VM for a consistent snapshot (recommended for databases)
+
 gcloud compute instances stop my-vm --zone=us-central1-a
 ```
 

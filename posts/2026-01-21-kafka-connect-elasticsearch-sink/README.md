@@ -472,6 +472,7 @@ Match tasks to Kafka partitions for optimal parallelism.
 
 ```bash
 # Check connector status
+
 curl http://localhost:8083/connectors/elasticsearch-sink/status | jq
 
 # Check task status

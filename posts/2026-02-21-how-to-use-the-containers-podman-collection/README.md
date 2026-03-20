@@ -16,6 +16,7 @@ The collection works with Podman installed on your target hosts. No extra Python
 
 ```bash
 # Install the collection from Galaxy
+
 ansible-galaxy collection install containers.podman
 ```
 

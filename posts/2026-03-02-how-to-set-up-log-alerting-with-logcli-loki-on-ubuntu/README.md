@@ -40,6 +40,7 @@ If you do not already have Loki running:
 mkdir -p ~/loki-stack && cd ~/loki-stack
 
 # Download the Docker Compose and config files from Grafana
+
 curl -O https://raw.githubusercontent.com/grafana/loki/main/production/docker-compose.yaml
 
 docker compose up -d

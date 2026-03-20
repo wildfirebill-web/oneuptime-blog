@@ -62,6 +62,7 @@ Install NATS server using Docker for local development.
 
 ```bash
 # Start NATS server with JetStream enabled for persistence
+
 docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats:latest -js -m 8222
 
 # Verify server is running

@@ -72,6 +72,7 @@ The following Terraform configuration creates a DynamoDB table with on-demand ca
 
 ```hcl
 # terraform/dynamodb.tf
+
 resource "aws_dynamodb_table" "orders" {
   name         = "orders-production"
   billing_mode = "PAY_PER_REQUEST"

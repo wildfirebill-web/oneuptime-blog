@@ -18,6 +18,7 @@ The first place to look is always the events on the service object itself. Kuber
 
 ```bash
 # Check events on the service - this is always step one
+
 kubectl describe service my-service
 
 # Look at the Events section at the bottom of the output

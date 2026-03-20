@@ -25,6 +25,7 @@ Datastore migration errors can be particularly stressful because they occur duri
 
 ```bash
 # For etcd source
+
 echo $ETCD_ENDPOINTS
 curl --cacert /etc/calico/certs/ca.pem \
      --cert /etc/calico/certs/cert.pem \

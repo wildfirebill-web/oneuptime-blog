@@ -50,6 +50,7 @@ This launch template and auto-scaling configuration creates a burst-ready infras
 
 ```hcl
 # Launch template with burstable instances
+
 resource "aws_launch_template" "burst_capable" {
   name_prefix   = "burst-web-"
   image_id      = var.ami_id

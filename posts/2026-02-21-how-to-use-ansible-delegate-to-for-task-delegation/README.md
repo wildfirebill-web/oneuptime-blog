@@ -18,6 +18,7 @@ This playbook demonstrates removing a web server from a load balancer, updating 
 
 ```yaml
 # basic-delegation.yml - Rolling update with load balancer management
+
 ---
 - name: Rolling update of web servers
   hosts: webservers

@@ -31,6 +31,7 @@ The following Kubernetes manifests create two identical deployments distinguishe
 
 ```yaml
 # Blue-Green Kubernetes Deployment Configuration
+
 # ===============================================
 # This creates two parallel deployments: blue (current) and green (new)
 

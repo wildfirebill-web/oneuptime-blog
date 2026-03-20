@@ -26,6 +26,7 @@ Pod A -> iptables (Istio NAT rules) -> Envoy sidecar ->
 
 ```bash
 # Verify Flannel is running
+
 kubectl get pods -n kube-system -l app=flannel
 
 # Check Flannel configuration

@@ -16,6 +16,7 @@ Consider a typical static subnet setup:
 
 ```hcl
 # Fragile - every CIDR is hardcoded
+
 resource "aws_subnet" "public_a" {
   cidr_block = "10.0.0.0/24"
 }

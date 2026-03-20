@@ -49,6 +49,7 @@ A well-organized repository ensures that resources are deployed in the correct o
 
 ```yaml
 # fleet-repo/
+
 #   infrastructure/
 #     controllers/            # Cluster-wide controllers
 #       cert-manager/

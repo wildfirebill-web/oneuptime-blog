@@ -31,6 +31,7 @@ Create a Service Bus namespace and the necessary queues and topics.
 
 ```bash
 # Create a resource group
+
 az group create --name servicebus-demo-rg --location eastus
 
 # Create a Service Bus namespace (Standard tier for topics)

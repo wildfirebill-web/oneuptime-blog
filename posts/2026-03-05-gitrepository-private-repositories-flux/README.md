@@ -46,6 +46,7 @@ Generate a fine-grained personal access token with `Contents: read` permission f
 
 ```bash
 # Create the secret for GitHub HTTPS authentication
+
 kubectl create secret generic github-credentials \
   --namespace=flux-system \
   --from-literal=username=git \

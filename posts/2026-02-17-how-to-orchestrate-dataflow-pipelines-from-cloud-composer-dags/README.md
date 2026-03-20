@@ -27,6 +27,7 @@ Google provides several pre-built Dataflow templates for common tasks. You can a
 
 ```python
 # dataflow_template_dag.py - Launch a Dataflow template from Composer
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.providers.google.cloud.operators.dataflow import (

@@ -40,6 +40,7 @@ The `spread` strategy distributes tasks evenly across a specified field. The mos
 
 ```bash
 # Create a service that spreads tasks across AZs
+
 aws ecs create-service \
   --cluster my-cluster \
   --service-name web-api \

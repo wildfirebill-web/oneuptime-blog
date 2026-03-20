@@ -1,4 +1,4 @@
-# How to Monitor Fleet Deployment Progress
+# How to Monitor Fleet Deployment Progress - Monitor
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Rancher Fleet manages GitOps deployments across multiple clusters simultaneously
 
 ## Fleet Resource Hierarchy
 
-```
+```text
 GitRepo
   └── Bundle (one per directory with fleet.yaml)
         └── BundleDeployment (one per matching cluster)
@@ -23,6 +23,7 @@ GitRepo
 
 ```bash
 # Overview of all GitRepos and their sync status
+
 kubectl get gitrepos -A
 
 # Example output:
@@ -101,7 +102,7 @@ spec:
 
 Key Fleet metrics:
 
-```
+```text
 # GitRepo sync status (1=synced, 0=error)
 fleet_gitrepo_state{namespace="fleet-default", name="myapp"} 1
 

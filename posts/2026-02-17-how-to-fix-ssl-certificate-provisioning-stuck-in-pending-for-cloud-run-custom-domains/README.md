@@ -27,6 +27,7 @@ For a subdomain (e.g., `api.example.com`):
 
 ```bash
 # Check the CNAME record for your subdomain
+
 dig api.example.com CNAME +short
 
 # It should return: ghs.googlehosted.com.

@@ -31,6 +31,7 @@ Start with a Docker-based Collector that exports to both a debug output and a fi
 
 ```yaml
 # test-sampling-config.yaml
+
 # Collector configuration for testing sampling rules
 
 receivers:

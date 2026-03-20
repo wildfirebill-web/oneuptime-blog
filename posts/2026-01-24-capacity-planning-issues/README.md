@@ -27,6 +27,7 @@ This Prometheus query shows CPU usage over the last 24 hours, which helps you un
 
 ```promql
 # Average CPU usage per service over the last 24 hours
+
 avg by (service) (
   rate(container_cpu_usage_seconds_total[24h])
 )

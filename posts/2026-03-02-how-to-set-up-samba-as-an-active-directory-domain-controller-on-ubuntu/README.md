@@ -33,6 +33,7 @@ This is a significant undertaking and differs considerably from the classic Samb
 
 ```bash
 # Set a static IP (example using netplan)
+
 sudo nano /etc/netplan/01-network.yaml
 ```
 

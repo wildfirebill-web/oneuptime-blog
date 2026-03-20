@@ -16,6 +16,7 @@ The `pow` function takes two arguments - a base and an exponent - and returns th
 
 ```hcl
 # pow(base, exponent)
+
 # Returns base^exponent
 pow(2, 8)    # Returns: 256
 pow(10, 3)   # Returns: 1000

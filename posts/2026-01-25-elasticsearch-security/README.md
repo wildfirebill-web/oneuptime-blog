@@ -76,6 +76,7 @@ Elasticsearch 8.x has security enabled by default. If you're upgrading from an o
 # /etc/elasticsearch/elasticsearch.yml
 
 # Enable security features
+
 xpack.security.enabled: true
 
 # Enable TLS for transport layer (node-to-node communication)

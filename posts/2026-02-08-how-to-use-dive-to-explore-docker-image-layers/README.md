@@ -18,6 +18,7 @@ Dive is available for all major platforms.
 
 ```bash
 # Install on macOS using Homebrew
+
 brew install dive
 
 # Install on Ubuntu/Debian

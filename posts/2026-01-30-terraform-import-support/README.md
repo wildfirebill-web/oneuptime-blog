@@ -226,6 +226,7 @@ Output:
 
 ```text
 # aws_instance.web_server:
+
 resource "aws_instance" "web_server" {
     ami                          = "ami-0c55b159cbfafe1f0"
     arn                          = "arn:aws:ec2:us-east-1:123456789:instance/i-1234567890abcdef0"
@@ -375,7 +376,7 @@ After successful import, remove the import blocks from your code. They've served
 
 If you're building a Terraform provider, here's how to add import support:
 
-### Resource Import Function
+Resource Import Function
 
 ```go
 func resourceMyResource() *schema.Resource {
@@ -529,7 +530,7 @@ resource "aws_db_instance" "main" {
 
 ## Troubleshooting Import Issues
 
-### Resource Not Found
+Resource Not Found
 
 ```text
 Error: Cannot import non-existent remote object
@@ -537,7 +538,7 @@ Error: Cannot import non-existent remote object
 
 Verify the resource ID and that you have the correct credentials/region.
 
-### Resource Already Managed
+Resource Already Managed
 
 ```text
 Error: Resource already managed by Terraform

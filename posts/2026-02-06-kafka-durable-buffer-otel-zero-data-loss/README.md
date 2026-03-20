@@ -27,6 +27,7 @@ The edge Collector receives OTLP data from applications and produces it to Kafka
 
 ```yaml
 # otel-collector-edge.yaml
+
 # Edge collector that produces telemetry to Kafka
 
 receivers:

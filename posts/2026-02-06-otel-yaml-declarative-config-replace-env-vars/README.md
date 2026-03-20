@@ -16,6 +16,7 @@ Consider a typical production setup. Your deployment manifest might contain some
 
 ```bash
 # Exporter settings
+
 export OTEL_EXPORTER_OTLP_ENDPOINT="https://collector.example.com:4317"
 export OTEL_EXPORTER_OTLP_PROTOCOL="grpc"
 export OTEL_EXPORTER_OTLP_HEADERS="Authorization=Bearer token123"

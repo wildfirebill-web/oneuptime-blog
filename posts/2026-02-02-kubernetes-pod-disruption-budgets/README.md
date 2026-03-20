@@ -18,6 +18,7 @@ The first command to run during any maintenance window gives you an overview of 
 
 ```bash
 # List all PDBs across namespaces with detailed status
+
 kubectl get pdb -A -o wide
 ```
 

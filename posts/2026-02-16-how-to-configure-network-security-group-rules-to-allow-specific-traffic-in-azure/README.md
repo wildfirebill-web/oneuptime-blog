@@ -36,6 +36,7 @@ Let us start by creating an NSG in your resource group.
 
 ```bash
 # Create a resource group if you do not have one
+
 az group create --name rg-nsg-demo --location eastus
 
 # Create a network security group

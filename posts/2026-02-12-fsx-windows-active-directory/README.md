@@ -32,6 +32,7 @@ AWS Managed Microsoft AD is the simpler option. AWS runs the domain controllers,
 
 ```bash
 # Create an AWS Managed Microsoft AD
+
 DIR_ID=$(aws ds create-microsoft-ad \
   --name "corp.example.com" \
   --short-name "CORP" \

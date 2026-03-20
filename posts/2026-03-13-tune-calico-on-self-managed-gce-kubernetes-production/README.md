@@ -31,6 +31,7 @@ GCE allows adding custom routes to a VPC that point pod CIDRs to specific VM ins
 
 ```bash
 # Add a custom route for each node's pod CIDR
+
 # Replace NODE_POD_CIDR and INSTANCE_NAME with actual values
 gcloud compute routes create calico-pod-route-node1 \
   --network=default \

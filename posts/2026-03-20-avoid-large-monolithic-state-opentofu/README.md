@@ -14,6 +14,7 @@ A monolithic state file that manages hundreds or thousands of resources creates 
 
 ```bash
 # Signs your state is too large:
+
 # 1. tofu plan takes 10+ minutes
 # 2. state file is hundreds of MB
 # 3. tofu state list returns thousands of resources
@@ -21,14 +22,14 @@ A monolithic state file that manages hundreds or thousands of resources creates 
 # 5. One team's apply breaks another team's workflow
 
 tofu state list | wc -l
-# 2,500 resources — this is too many for one state file
+# 2,500 resources - this is too many for one state file
 ```
 
 ## Decomposition Strategy: By Layer
 
-Split state by infrastructure layer — foundational resources change rarely, application resources change often.
+Split state by infrastructure layer - foundational resources change rarely, application resources change often.
 
-```
+```text
 Before (monolithic):
 prod/
 └── main.tf (VPC + K8s + apps + databases + IAM + monitoring)
@@ -50,7 +51,7 @@ prod/
 
 Give each team ownership of their own state files.
 
-```
+```text
 By team:
 infrastructure/
 ├── platform-team/
@@ -112,7 +113,7 @@ resource "aws_instance" "app" {
 
 ## Target Resource Counts
 
-```
+```text
 Recommended state file sizes:
 - Under 100 resources: ideal
 - 100-500 resources: acceptable
@@ -128,4 +129,4 @@ Splitting boundaries:
 
 ## Summary
 
-Large monolithic state files cause slow plans, apply bottlenecks, large blast radii, and team conflicts. Split state by infrastructure layer (networking → cluster → databases → applications) or by team ownership. Use SSM parameters or direct variable injection rather than `terraform_remote_state` to share values between state files — this reduces coupling and allows teams to work independently. Keep state files under 500 resources for optimal performance and minimal blast radius.
+Large monolithic state files cause slow plans, apply bottlenecks, large blast radii, and team conflicts. Split state by infrastructure layer (networking → cluster → databases → applications) or by team ownership. Use SSM parameters or direct variable injection rather than `terraform_remote_state` to share values between state files - this reduces coupling and allows teams to work independently. Keep state files under 500 resources for optimal performance and minimal blast radius.

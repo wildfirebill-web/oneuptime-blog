@@ -130,6 +130,7 @@ For fine-grained control over `IPV6_V6ONLY`:
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 socket2 = "0.5"
 ```

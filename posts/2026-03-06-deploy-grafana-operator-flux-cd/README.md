@@ -30,6 +30,7 @@ Add the Grafana Operator Helm repository as a Flux source.
 
 ```yaml
 # clusters/my-cluster/grafana/helm-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

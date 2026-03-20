@@ -27,6 +27,7 @@ Flux CD manages the entire lifecycle, from the initial deployment to automated i
 
 ```dockerfile
 # Dockerfile - build with .NET SDK, serve with Nginx
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
 WORKDIR /app
 

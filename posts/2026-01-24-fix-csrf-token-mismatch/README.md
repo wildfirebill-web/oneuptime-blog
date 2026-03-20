@@ -44,6 +44,7 @@ The most common cause is an expired session. When the session expires, the store
 
 ```python
 # Flask example - Session timeout causes CSRF mismatch
+
 from flask import Flask, session
 from flask_wtf.csrf import CSRFProtect
 

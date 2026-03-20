@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: L2TP, IPsec, IPv6, VPN, xl2tpd, Tunneling
+Tags: L2TP, IPsec, IPv6, VPN, Xl2tpd, Tunneling
 
 Description: A guide to configuring L2TP/IPsec VPN with IPv6 support using xl2tpd and strongSwan/Libreswan on Linux.
 
@@ -10,7 +10,7 @@ L2TP (Layer 2 Tunneling Protocol) over IPsec is a common VPN protocol supported 
 
 ## Architecture
 
-```
+```text
 Client → IPsec (transport mode, IPv4) → L2TP tunnel → IPv4/IPv6 assigned addresses
 ```
 
@@ -20,6 +20,7 @@ L2TP/IPsec typically runs over IPv4 for the control channel but can assign IPv6 
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install xl2tpd strongswan
 
 # RHEL/CentOS

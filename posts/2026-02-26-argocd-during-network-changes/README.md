@@ -35,6 +35,7 @@ Migrating from one CNI to another (for example, Flannel to Calico, or Calico to 
 
 ```bash
 # Step 1: Disable auto-sync on all applications
+
 for app in $(argocd app list -o name); do
   argocd app set "$app" --sync-policy none
 done

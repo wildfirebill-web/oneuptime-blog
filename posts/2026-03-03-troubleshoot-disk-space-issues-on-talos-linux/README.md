@@ -26,6 +26,7 @@ Start by checking overall disk usage:
 
 ```bash
 # Get a high-level disk usage summary
+
 talosctl -n <node-ip> usage /var
 
 # Check the ephemeral partition specifically

@@ -27,6 +27,7 @@ The simplest way to get GitLab running:
 
 ```bash
 # Start GitLab CE with minimal configuration
+
 docker run -d \
   --name gitlab \
   --hostname gitlab.example.com \

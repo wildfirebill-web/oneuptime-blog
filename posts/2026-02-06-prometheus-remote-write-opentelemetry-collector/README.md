@@ -41,6 +41,7 @@ First, configure Prometheus to send remote write data to the collector.
 
 ```yaml
 # prometheus.yml - Configure Prometheus to remote write to the OTel Collector
+
 global:
   scrape_interval: 15s
 

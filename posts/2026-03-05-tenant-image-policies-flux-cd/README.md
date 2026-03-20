@@ -26,6 +26,7 @@ Define which container registry and repository the tenant uses.
 
 ```yaml
 # tenants/team-alpha/image-repo.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

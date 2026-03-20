@@ -26,6 +26,7 @@ Proxmox VE is a popular open-source virtualization platform for home labs and sm
 
 ```bash
 # On Proxmox host via SSH
+
 wget -P /var/lib/vz/template/iso/ \
   https://releases.ubuntu.com/24.04/ubuntu-24.04.1-live-server-amd64.iso
 ```

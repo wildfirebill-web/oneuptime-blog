@@ -37,6 +37,7 @@ VPA is built into GKE, but you need to enable it on your cluster.
 
 ```bash
 # Enable VPA on an existing GKE cluster
+
 gcloud container clusters update my-cluster \
   --region us-central1 \
   --enable-vertical-pod-autoscaling

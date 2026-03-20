@@ -8,12 +8,13 @@ Description: Optimize UDP traffic for gaming applications by reducing latency, c
 
 ## Introduction
 
-Online gaming is one of the primary use cases for UDP. Game state updates — player positions, inputs, projectiles — are time-sensitive: a stale position update is worse than no update at all. The goal is minimum and consistent latency (jitter), not maximum throughput. This guide covers OS-level and network-level optimizations to reduce UDP gaming latency.
+Online gaming is one of the primary use cases for UDP. Game state updates - player positions, inputs, projectiles - are time-sensitive: a stale position update is worse than no update at all. The goal is minimum and consistent latency (jitter), not maximum throughput. This guide covers OS-level and network-level optimizations to reduce UDP gaming latency.
 
 ## Baseline Measurement
 
 ```bash
 # Measure current latency and jitter to game server
+
 ping -c 100 -i 0.1 game-server-ip | tail -3
 # Focus on: avg RTT and mdev (jitter)
 # Target: avg < 20ms, mdev < 2ms for competitive gaming
@@ -126,4 +127,4 @@ ping -c 1000 -i 0.05 game-server-ip | tail -3
 
 ## Conclusion
 
-Gaming UDP optimization is about minimizing latency and jitter, not maximizing throughput. Keep socket buffers small, use `fq_codel` or CAKE qdisc for fair queuing, reduce NIC interrupt coalescing, and mark gaming traffic with DSCP EF for network priority. Monitor jitter with `mdev` from ping — values above 5ms consistently indicate a path or buffer problem that will manifest as lag spikes in-game.
+Gaming UDP optimization is about minimizing latency and jitter, not maximizing throughput. Keep socket buffers small, use `fq_codel` or CAKE qdisc for fair queuing, reduce NIC interrupt coalescing, and mark gaming traffic with DSCP EF for network priority. Monitor jitter with `mdev` from ping - values above 5ms consistently indicate a path or buffer problem that will manifest as lag spikes in-game.

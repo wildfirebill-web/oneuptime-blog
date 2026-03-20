@@ -28,6 +28,7 @@ This guide walks through deploying KEDA with Flux, configuring KEDA ScaledObject
 Use Flux to install and manage KEDA in the cluster.
 ```yaml
 # infrastructure/keda/helmrelease.yaml
+
 # HelmRelease deploying KEDA for event-driven autoscaling
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

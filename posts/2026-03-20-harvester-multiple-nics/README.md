@@ -12,7 +12,7 @@ Production Harvester deployments benefit greatly from multiple NICs per node. Ea
 
 ## Recommended Multi-NIC Layout
 
-```
+```text
 NIC 1 (eth0/bond0): Management Network
   - Kubernetes API
   - etcd replication
@@ -32,7 +32,7 @@ NIC 3 (eth2/bond1): VM Network
 
 Before installation, document your NIC and IP layout:
 
-```
+```text
 Node 1:
   Management:  192.168.1.11/24  (eth0)
   Storage:     10.200.0.11/24   (eth1)
@@ -55,6 +55,7 @@ Use a Harvester config file for automated multi-NIC setup:
 
 ```yaml
 # multi-nic-config.yaml
+
 # Harvester node configuration with 3 NICs
 
 scheme_version: 1
@@ -285,7 +286,7 @@ kubectl get setting storage-network -n longhorn-system \
 
 ## Performance Impact of Traffic Separation
 
-```
+```text
 Without traffic separation (all traffic on eth0):
   Management latency:  100-300ms during heavy storage operations
   Storage throughput:  Limited by management traffic sharing NIC

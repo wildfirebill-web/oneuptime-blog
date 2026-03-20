@@ -29,6 +29,7 @@ On EKS, use IRSA (IAM Roles for Service Accounts) instead of static credentials:
 
 ```bash
 # Create IAM policy for SQS access
+
 aws iam create-policy \
   --policy-name KedaSQSPolicy \
   --policy-document '{

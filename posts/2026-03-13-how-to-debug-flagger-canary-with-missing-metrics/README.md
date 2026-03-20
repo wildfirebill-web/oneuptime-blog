@@ -28,6 +28,7 @@ Start by checking Flagger logs for metric-related errors.
 
 ```bash
 # Check Flagger logs for metric errors
+
 kubectl logs -l app.kubernetes.io/name=flagger \
   -n <flagger-namespace> --tail=100 | grep -i "metric\|no values"
 ```

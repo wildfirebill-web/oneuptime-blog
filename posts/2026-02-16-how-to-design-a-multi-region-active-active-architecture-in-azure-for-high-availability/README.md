@@ -44,6 +44,7 @@ Azure Front Door is the entry point for all traffic. It routes users to the near
 
 ```bash
 # Create an Azure Front Door profile
+
 az afd profile create \
   --resource-group global-rg \
   --profile-name my-global-app \

@@ -20,6 +20,7 @@ You can also work programmatically, which is what we will focus on here:
 
 ```python
 # setup.py
+
 # Initialize Vertex AI for prompt testing
 
 import vertexai
@@ -114,6 +115,7 @@ prompt = """Convert the following infrastructure descriptions into Terraform res
 
 Example 1:
 Description: A GCS bucket named "data-lake" in US multi-region with standard storage class
+
 Terraform:
 ```hcl
 resource "google_storage_bucket" "data_lake" {

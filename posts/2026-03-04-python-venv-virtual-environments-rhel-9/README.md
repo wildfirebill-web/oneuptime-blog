@@ -29,6 +29,7 @@ On RHEL, the venv module may not be installed by default. Install it first.
 
 ```bash
 # Install venv for the default Python 3.9
+
 sudo dnf install -y python3-pip
 
 # If using Python 3.11, install its venv support

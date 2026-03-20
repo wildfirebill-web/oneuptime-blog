@@ -53,6 +53,7 @@ flowchart TB
 
 ```bash
 # Create a new user
+
 rabbitmqctl add_user myuser secretpassword
 
 # Create user with hashed password (more secure)

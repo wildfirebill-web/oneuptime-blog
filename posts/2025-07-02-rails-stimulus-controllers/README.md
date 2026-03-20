@@ -72,6 +72,7 @@ Stimulus comes pre-installed with Rails 7+ via importmaps. For older Rails versi
 
 ```bash
 # Rails 7+ with importmaps (default)
+
 # Already included, just verify in config/importmap.rb
 
 # Rails 7+ with esbuild/webpack

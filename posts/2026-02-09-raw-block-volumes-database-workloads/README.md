@@ -75,6 +75,7 @@ Apply and verify:
 kubectl apply -f raw-block-pvc.yaml
 
 # Check the volume mode
+
 kubectl get pvc database-block-pvc -o yaml | grep volumeMode
 # Output: volumeMode: Block
 ```

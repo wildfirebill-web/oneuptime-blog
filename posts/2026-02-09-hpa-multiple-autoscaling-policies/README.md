@@ -334,6 +334,7 @@ Track which policies are effective in different scenarios.
 
 ```bash
 # View current HPA configuration
+
 kubectl get hpa multi-policy-hpa -o yaml | grep -A 20 behavior
 
 # Monitor scaling events over time

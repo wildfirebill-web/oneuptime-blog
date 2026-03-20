@@ -20,6 +20,7 @@ Download the official Minio image.
 
 ```bash
 # Pull the latest Minio image
+
 podman pull docker.io/minio/minio:latest
 
 # Verify the image

@@ -31,6 +31,7 @@ Distinguish firewall drops from Calico policy drops:
 
 ```bash
 # Check if the connection fails from inside and outside the cluster
+
 # Inside cluster: should work if policy allows it
 kubectl exec <pod-name> -- curl -v http://<external-service>
 

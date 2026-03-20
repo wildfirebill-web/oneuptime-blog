@@ -48,6 +48,7 @@ Create the top-level Kustomization for tenants:
 
 ```yaml
 # clusters/production/tenants.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

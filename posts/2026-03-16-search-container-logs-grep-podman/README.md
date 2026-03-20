@@ -18,6 +18,7 @@ When containers produce thousands of log lines, scrolling through them manually 
 
 ```bash
 # Search for a specific string in container logs
+
 podman logs my-container 2>&1 | grep "error"
 
 # Case-insensitive search

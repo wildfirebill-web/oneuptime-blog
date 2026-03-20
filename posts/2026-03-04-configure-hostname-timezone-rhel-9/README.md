@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # Show all hostname information
+
 hostnamectl
 
 # Or just the static hostname

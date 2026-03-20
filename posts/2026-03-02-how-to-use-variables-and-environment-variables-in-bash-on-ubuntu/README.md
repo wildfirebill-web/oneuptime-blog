@@ -18,6 +18,7 @@ A regular shell variable is local to the current shell:
 
 ```bash
 # Create a shell variable
+
 my_var="hello"
 echo $my_var  # prints: hello
 

@@ -30,6 +30,7 @@ While you could use the default Compute Engine service account, it is better pra
 
 ```bash
 # Create a service account for the frontend service
+
 gcloud iam service-accounts create frontend-sa \
   --display-name="Frontend Cloud Run Service"
 

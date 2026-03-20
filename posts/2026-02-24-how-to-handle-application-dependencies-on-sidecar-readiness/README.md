@@ -98,6 +98,7 @@ def startup_health_check():
     return response
 
 # Call this during app initialization
+
 try:
     startup_health_check()
 except Exception as e:

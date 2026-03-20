@@ -23,6 +23,7 @@ Azure Blob Storage provides a scalable, cost-effective, and highly durable objec
 
 ```bash
 # Create a dedicated resource group for Longhorn backups
+
 az group create \
   --name longhorn-backup-rg \
   --location eastus

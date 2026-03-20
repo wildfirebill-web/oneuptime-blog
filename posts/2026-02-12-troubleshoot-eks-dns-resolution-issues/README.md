@@ -36,6 +36,7 @@ Before diving in, figure out what exactly is failing:
 
 ```bash
 # Test DNS from inside a pod
+
 kubectl run dns-test --image=busybox:1.36 --rm -it --restart=Never -- sh
 
 # Inside the pod, try different types of queries:

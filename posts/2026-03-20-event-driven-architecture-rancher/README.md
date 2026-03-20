@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, event-driven, kafka, nats, kubernetes, microservices
+Tags: Rancher, Event-Driven, Kafka, NATS, Kubernetes, Microservices
 
 Description: Guide to building event-driven architectures on Rancher using Kafka, NATS, and Knative Eventing for decoupled microservices.
 
@@ -21,6 +21,7 @@ Event-driven architecture (EDA) enables loosely coupled, highly scalable systems
 
 ```bash
 # Install Strimzi Kafka Operator
+
 kubectl create namespace kafka
 kubectl apply -f https://strimzi.io/install/latest?namespace=kafka -n kafka
 

@@ -267,6 +267,7 @@ Elasticsearch provides rich APIs for cluster management without external tools.
 
 ```bash
 # Collection management
+
 bin/solr create -c products -s 2 -rf 2
 
 # Cluster status

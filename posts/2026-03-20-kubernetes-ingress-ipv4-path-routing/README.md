@@ -12,6 +12,7 @@ Path-based routing allows a single hostname to serve multiple microservices at d
 
 ```yaml
 # path-based-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

@@ -30,6 +30,7 @@ Verify that service IPs are allocated correctly from the dedicated pool.
 ```bash
 #!/bin/bash
 # test-service-ip-allocation.sh
+
 # Test service IP allocation from dedicated pools
 
 echo "=== Service IP Allocation Tests ==="

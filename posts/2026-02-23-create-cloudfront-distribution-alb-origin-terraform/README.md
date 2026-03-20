@@ -27,6 +27,7 @@ terraform {
 }
 
 # Main provider for the ALB and other resources
+
 provider "aws" {
   region = "us-east-1"
 }

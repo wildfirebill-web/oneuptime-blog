@@ -35,6 +35,7 @@ The simplest trigger starts a pipeline in another project when a job runs.
 
 ```yaml
 # .gitlab-ci.yml in parent project
+
 stages:
   - build
   - trigger

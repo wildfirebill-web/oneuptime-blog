@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: eBPF, IPv6, Debugging, bpf_printk, BPF Tools
+Tags: eBPF, IPv6, Debugging, Bpf_printk, BPF Tools
 
 Description: Debug eBPF programs that process IPv6 traffic using bpf_printk, BTF type information, and kernel tracing tools.
 
@@ -62,6 +62,7 @@ char LICENSE[] SEC("license") = "GPL";
 
 ```bash
 # Compile eBPF program
+
 clang -O2 -target bpf -c program.c -o program.o
 
 # Load XDP program on interface

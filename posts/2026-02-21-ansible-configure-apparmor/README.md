@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # AppArmor overall state
 apparmor_enabled: true
 

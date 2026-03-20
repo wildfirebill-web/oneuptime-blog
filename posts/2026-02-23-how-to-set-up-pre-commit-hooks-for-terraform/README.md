@@ -29,6 +29,7 @@ The `pre-commit` framework is a Python tool that manages Git hooks:
 
 ```bash
 # Install with pip
+
 pip install pre-commit
 
 # Or with Homebrew on macOS

@@ -36,6 +36,7 @@ Before touching any tools, plan the migration thoroughly.
 
 ```bash
 # Connect to your TFS instance and list all project collections
+
 # Use the TFS Power Tools or REST API
 curl -u "domain\username:password" \
   "http://tfs-server:8080/tfs/_apis/projectcollections?api-version=4.1" | \

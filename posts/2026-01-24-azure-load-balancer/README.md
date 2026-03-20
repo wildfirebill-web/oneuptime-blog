@@ -56,6 +56,7 @@ A public load balancer distributes internet traffic across your backend VMs.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name myLBResourceGroup \
   --location eastus

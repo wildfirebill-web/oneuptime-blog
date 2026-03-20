@@ -210,6 +210,7 @@ Test from the frontend pod:
 FRONTEND_POD=$(kubectl get pod -l app=frontend -o jsonpath='{.items[0].metadata.name}')
 
 # This should work - GET to /health
+
 kubectl exec $FRONTEND_POD -- curl -s http://backend-api/health
 
 # This should work - GET to an API path

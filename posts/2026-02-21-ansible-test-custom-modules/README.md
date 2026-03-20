@@ -14,6 +14,7 @@ Testing ensures modules work correctly before production use.
 
 ```python
 # tests/unit/test_my_module.py
+
 import pytest
 from unittest.mock import patch, MagicMock
 

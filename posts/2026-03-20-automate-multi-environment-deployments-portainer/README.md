@@ -31,7 +31,8 @@ graph LR
 In Portainer, each environment has separate stack instances with different variables.
 
 ```yaml
-# docker-compose.yml — single file, environment-specific vars injected by Portainer
+# docker-compose.yml - single file, environment-specific vars injected by Portainer
+
 version: "3.8"
 
 services:
@@ -62,7 +63,7 @@ In each Portainer environment, configure these stack variables:
 
 ```bash
 #!/bin/bash
-# deploy-all-envs.sh — promote a build through environments
+# deploy-all-envs.sh - promote a build through environments
 
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="${PORTAINER_API_KEY}"
@@ -95,7 +96,7 @@ for s in stacks:
 ")
 
   if [ -z "$stack_id" ]; then
-    echo "Stack not found for $env_name — deploying new stack"
+    echo "Stack not found for $env_name - deploying new stack"
     # Create stack if it doesn't exist
     curl -s -X POST \
       -H "X-API-Key: $API_KEY" \

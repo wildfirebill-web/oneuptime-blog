@@ -19,6 +19,7 @@ from azure.storage.filedatalake import DataLakeServiceClient
 import os
 
 # Initialize the Data Lake service client
+
 connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
 service_client = DataLakeServiceClient.from_connection_string(connection_string)
 

@@ -12,7 +12,7 @@ Rogue Router Advertisements (RAs) are one of the most common IPv6 attack vectors
 
 ## What Makes an RA Rogue
 
-```
+```text
 Indicators of a Rogue Router Advertisement:
 
 1. Unknown source address:
@@ -46,6 +46,7 @@ Use tcpdump to capture and inspect all RAs on a segment.
 
 ```bash
 # Capture all Router Advertisements on eth0
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 134"
 # ICMPv6 Type 134 = Router Advertisement
 

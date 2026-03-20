@@ -28,6 +28,7 @@ Create a Kubernetes cluster that mirrors your production management cluster. Mat
 
 ```bash
 # On each staging server node
+
 curl -sfL https://get.rke2.io | INSTALL_RKE2_VERSION=<SAME_AS_PROD> sh -
 
 mkdir -p /etc/rancher/rke2

@@ -21,6 +21,7 @@ PORT = 9000
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Set 5-second timeout for all socket operations (connect, send, recv)
+
 sock.settimeout(5.0)
 
 try:

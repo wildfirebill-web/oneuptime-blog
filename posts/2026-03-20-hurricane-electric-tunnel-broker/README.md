@@ -13,15 +13,15 @@ Hurricane Electric (HE) at `tunnelbroker.net` is the world's largest IPv6 tunnel
 ## Sign Up
 
 1. Visit https://tunnelbroker.net
-2. Click "Register" — create a free account
+2. Click "Register" - create a free account
 3. After logging in, click "Create Regular Tunnel"
 4. Enter your current IPv4 address (auto-detected or manual)
-5. Select a tunnel server (PoP) — choose the closest by latency
+5. Select a tunnel server (PoP) - choose the closest by latency
 6. Click "Create Tunnel"
 
 You'll receive:
-```
-Server IPv4 Address:   216.218.218.218     (HE's endpoint — example)
+```text
+Server IPv4 Address:   216.218.218.218     (HE's endpoint - example)
 Server IPv6 Address:   2001:470:xxxx::1/64 (HE's tunnel interface IP)
 Client IPv4 Address:   203.0.113.10        (your WAN IP)
 Client IPv6 Address:   2001:470:xxxx::2/64 (your tunnel interface IP)
@@ -35,6 +35,7 @@ HE provides example config on the tunnel detail page. Click the "Example Configu
 
 ```bash
 # Remove existing sit tunnel if present
+
 sudo ip tunnel del he-ipv6 2>/dev/null
 
 # Create tunnel
@@ -119,7 +120,7 @@ sudo systemctl start radvd
 
 From HE's "Example Configurations" tab → Cisco IOS:
 
-```
+```text
 ipv6 unicast-routing
 
 interface Tunnel0

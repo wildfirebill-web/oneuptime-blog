@@ -275,6 +275,7 @@ Check DNS policy is set:
 ```bash
 kubectl get pod <pod-name> -o jsonpath='{.spec.dnsPolicy}'
 # Should output: ClusterFirstWithHostNet
+
 ```
 
 Fix if wrong:

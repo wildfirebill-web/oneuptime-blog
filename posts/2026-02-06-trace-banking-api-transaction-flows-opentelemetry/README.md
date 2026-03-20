@@ -25,6 +25,7 @@ We will use Python with the OpenTelemetry SDK. Start by configuring the tracer p
 
 ```python
 # tracing_config.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

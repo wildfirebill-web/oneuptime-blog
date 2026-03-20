@@ -43,6 +43,7 @@ Configure OpenTelemetry in your application:
 
 ```elixir
 # config/config.exs
+
 import Config
 
 config :opentelemetry, :resource,

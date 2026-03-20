@@ -19,6 +19,7 @@ S3 Cross-Region Replication automatically copies objects from a source bucket to
 
 ```hcl
 # Source bucket in primary region
+
 resource "aws_s3_bucket" "source" {
   provider = aws
   bucket   = "${var.project_name}-primary"
@@ -177,4 +178,4 @@ aws s3api head-object \
 
 ## Conclusion
 
-S3 Cross-Region Replication provides automatic data redundancy across AWS regions for disaster recovery. Enable Replication Time Control (RTC) if you need an SLA guarantee that objects replicate within 15 minutes. Note that only new and updated objects are replicated—existing objects must be copied manually using S3 Batch Operations or a one-time aws s3 sync.
+S3 Cross-Region Replication provides automatic data redundancy across AWS regions for disaster recovery. Enable Replication Time Control (RTC) if you need an SLA guarantee that objects replicate within 15 minutes. Note that only new and updated objects are replicated-existing objects must be copied manually using S3 Batch Operations or a one-time aws s3 sync.

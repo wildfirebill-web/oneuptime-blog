@@ -198,6 +198,7 @@ For organizations managing many SAML applications, automation is essential:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Application.ReadWrite.All"
 
 # Create a new service principal for a custom SAML application

@@ -16,6 +16,7 @@ Cloud Build provides several variables automatically for every build. You do not
 
 ```yaml
 # Built-in variables available in every Cloud Build run
+
 $PROJECT_ID         # Your GCP project ID (e.g., "my-project-123")
 $PROJECT_NUMBER     # Your GCP project number (e.g., "123456789")
 $BUILD_ID           # Unique build ID (e.g., "abc-123-def-456")

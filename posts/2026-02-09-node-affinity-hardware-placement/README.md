@@ -267,6 +267,7 @@ In heterogeneous clusters with both ARM and x86 nodes:
 
 ```yaml
 # ARM-optimized workload
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

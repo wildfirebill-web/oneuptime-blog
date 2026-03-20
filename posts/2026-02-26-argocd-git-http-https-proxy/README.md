@@ -66,6 +66,7 @@ If you manage ArgoCD with Helm, set the proxy in your values file:
 
 ```yaml
 # values.yaml
+
 repoServer:
   env:
     - name: HTTP_PROXY

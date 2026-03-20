@@ -46,6 +46,7 @@ Here is a Python example for a data cleanup Job that traces its key operations.
 
 ```python
 # cleanup_job.py
+
 # A Kubernetes Job that cleans up expired records, instrumented with OpenTelemetry
 
 from opentelemetry import trace

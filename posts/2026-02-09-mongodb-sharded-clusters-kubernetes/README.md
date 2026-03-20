@@ -22,6 +22,7 @@ Deploy the operator and custom resource definitions:
 
 ```bash
 # Clone operator repository
+
 git clone https://github.com/mongodb/mongodb-kubernetes-operator.git
 cd mongodb-kubernetes-operator
 

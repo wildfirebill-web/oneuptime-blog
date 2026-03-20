@@ -18,6 +18,7 @@ Update your Gemfile with production dependencies:
 
 ```ruby
 # Gemfile
+
 group :production do
   gem 'pg'           # PostgreSQL adapter
   gem 'puma', '~> 6' # Production web server

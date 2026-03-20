@@ -29,6 +29,7 @@ Verify that all Cilium components are running and healthy before proceeding with
 
 ```bash
 # Check Cilium daemonset and deployment status across all nodes
+
 cilium status --wait
 
 # Verify all Cilium pods are Running

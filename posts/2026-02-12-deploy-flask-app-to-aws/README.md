@@ -25,6 +25,7 @@ This creates a basic Flask app with a health check endpoint and a hello route:
 
 ```python
 # application.py
+
 from flask import Flask, jsonify
 
 application = Flask(__name__)

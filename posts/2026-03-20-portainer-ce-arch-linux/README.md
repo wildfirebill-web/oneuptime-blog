@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, arch-linux, docker, installation, pacman
+Tags: Portainer, Arch-linux, Docker, Installation, Pacman
 
 Description: A guide to installing Portainer Community Edition on Arch Linux with Docker using pacman and the Arch User Repository.
 
@@ -20,6 +20,7 @@ Arch Linux's rolling release model provides access to the latest Docker and cont
 
 ```bash
 # Full system update (always do this before installing packages on Arch)
+
 sudo pacman -Syu --noconfirm
 ```
 

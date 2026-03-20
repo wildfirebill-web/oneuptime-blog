@@ -155,6 +155,7 @@ With the metrics in place, run queries to answer common questions:
 
 ```promql
 # Top 10 consumers by request volume (last 24 hours)
+
 topk(10,
   sum(increase(api_usage_requests_total[24h])) by (api_consumer_id)
 )

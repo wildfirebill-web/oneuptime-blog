@@ -47,6 +47,7 @@ Create a Video Indexer account connected to your Azure subscription.
 
 ```bash
 # Create a Media Services account (required for Video Indexer)
+
 az ams account create \
   --name vi-media-account \
   --resource-group rg-video-indexer \

@@ -18,6 +18,7 @@ Use Helm to install ArgoCD into its own namespace:
 
 ```bash
 # Add the ArgoCD Helm repository
+
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 

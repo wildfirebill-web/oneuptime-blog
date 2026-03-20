@@ -14,6 +14,7 @@ Getting Samba to work well with macOS requires a bit more than a basic SMB share
 
 ```bash
 # Install Samba and related tools
+
 sudo apt update
 sudo apt install samba samba-common-bin -y
 

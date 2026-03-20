@@ -36,6 +36,7 @@ First, create a Pub/Sub topic and a log sink that captures BigQuery table creati
 
 ```bash
 # Create a Pub/Sub topic for BigQuery events
+
 gcloud pubsub topics create bigquery-table-events
 
 # Create a log sink that routes BigQuery table events to the topic

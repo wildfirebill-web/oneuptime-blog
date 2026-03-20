@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Web App, App Service, OpenTofu, Deployment, PaaS
+Tags: Azure, Web Apps, App Service, OpenTofu, Deployment, PaaS
 
 Description: Learn how to deploy Azure Web Apps with OpenTofu, including application settings, container deployments, managed identity configuration, and startup commands.
 
@@ -14,6 +14,7 @@ Azure Web Apps (App Service) is a fully managed platform for hosting web applica
 
 ```hcl
 # main.tf - Linux web app running Node.js
+
 resource "azurerm_linux_web_app" "node_app" {
   name                = "my-nodejs-webapp"
   location            = azurerm_resource_group.rg.location

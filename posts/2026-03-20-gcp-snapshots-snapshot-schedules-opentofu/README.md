@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Snapshots, Backup, OpenTofu, Compute Engine, Data Protection
+Tags: GCP, Snapshot, Backup, OpenTofu, Compute Engine, Data Protection
 
 Description: Learn how to create GCP persistent disk snapshots and automated snapshot schedules with OpenTofu for reliable backup and disaster recovery.
 
@@ -14,6 +14,7 @@ GCP Persistent Disk snapshots are incremental backups stored in Cloud Storage. S
 
 ```hcl
 # main.tf - Create a snapshot of a persistent disk
+
 resource "google_compute_snapshot" "manual_snapshot" {
   name        = "app-disk-snapshot-initial"
   source_disk = google_compute_disk.app_disk.name

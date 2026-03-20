@@ -24,6 +24,7 @@ This schema defines a simple product catalog API:
 
 ```graphql
 # schema.graphql - Product catalog API
+
 type Product {
   id: ID!
   name: String!

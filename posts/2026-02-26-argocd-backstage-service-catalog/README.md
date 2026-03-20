@@ -39,6 +39,7 @@ Backstage has an official ArgoCD plugin maintained by the community. Install bot
 
 ```bash
 # Navigate to your Backstage app directory
+
 cd backstage-app
 
 # Install the ArgoCD frontend plugin

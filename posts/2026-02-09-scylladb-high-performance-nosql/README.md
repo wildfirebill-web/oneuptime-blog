@@ -24,6 +24,7 @@ The Scylla Operator manages ScyllaDB clusters on Kubernetes, handling deployment
 
 ```bash
 # Add the Scylla Helm repository
+
 helm repo add scylla https://scylla-operator-charts.storage.googleapis.com/stable
 helm repo update
 

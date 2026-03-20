@@ -8,11 +8,11 @@ Description: Learn how the 16-bit Total Length field in IPv4 headers defines pac
 
 ## Introduction
 
-The Total Length field is a 16-bit unsigned integer at bytes 2-3 of the IPv4 header. It specifies the total size of the packet — header plus payload — in bytes. The minimum is 20 bytes (header only, no data) and the maximum is 65,535 bytes. This field is critical for correct packet parsing, MTU management, and fragmentation handling.
+The Total Length field is a 16-bit unsigned integer at bytes 2-3 of the IPv4 header. It specifies the total size of the packet - header plus payload - in bytes. The minimum is 20 bytes (header only, no data) and the maximum is 65,535 bytes. This field is critical for correct packet parsing, MTU management, and fragmentation handling.
 
 ## Total Length in Context
 
-```
+```text
 IPv4 Header (bytes 0-3):
   Byte 0:  Version + IHL
   Byte 1:  Type of Service
@@ -57,6 +57,7 @@ The Maximum Transmission Unit (MTU) constrains Total Length at the link layer. E
 
 ```bash
 # Check interface MTU
+
 ip link show eth0 | grep mtu
 # 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, sysctl, Kernel Parameters, Network Configuration
+Tags: IPv6, Linux, Sysctl, Kernel Parameters, Network Configuration
 
 Description: A comprehensive reference to the most important /proc/sys/net/ipv6/conf kernel parameters and their effects on IPv6 networking behavior.
 
@@ -21,10 +21,11 @@ Settings in `all/` apply globally but are overridden by interface-specific setti
 
 ## Key Parameters Reference
 
-### accept_ra — Accept Router Advertisements
+### accept_ra - Accept Router Advertisements
 
 ```bash
 # Check current value
+
 cat /proc/sys/net/ipv6/conf/eth0/accept_ra
 
 # Values:
@@ -36,7 +37,7 @@ cat /proc/sys/net/ipv6/conf/eth0/accept_ra
 sysctl -w net.ipv6.conf.eth0.accept_ra=2
 ```
 
-### autoconf — SLAAC Address Generation
+### autoconf - SLAAC Address Generation
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/autoconf
@@ -46,7 +47,7 @@ cat /proc/sys/net/ipv6/conf/eth0/autoconf
 sysctl -w net.ipv6.conf.eth0.autoconf=0
 ```
 
-### forwarding — IPv6 Packet Forwarding
+### forwarding - IPv6 Packet Forwarding
 
 ```bash
 cat /proc/sys/net/ipv6/conf/all/forwarding
@@ -57,7 +58,7 @@ cat /proc/sys/net/ipv6/conf/all/forwarding
 sysctl -w net.ipv6.conf.all.forwarding=1
 ```
 
-### disable_ipv6 — Disable IPv6 on Interface
+### disable_ipv6 - Disable IPv6 on Interface
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/disable_ipv6
@@ -67,7 +68,7 @@ cat /proc/sys/net/ipv6/conf/eth0/disable_ipv6
 sysctl -w net.ipv6.conf.eth0.disable_ipv6=1
 ```
 
-### use_tempaddr — Privacy Extensions
+### use_tempaddr - Privacy Extensions
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/use_tempaddr
@@ -79,7 +80,7 @@ cat /proc/sys/net/ipv6/conf/eth0/use_tempaddr
 sysctl -w net.ipv6.conf.eth0.use_tempaddr=2
 ```
 
-### dad_transmits — Duplicate Address Detection
+### dad_transmits - Duplicate Address Detection
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/dad_transmits
@@ -91,7 +92,7 @@ cat /proc/sys/net/ipv6/conf/eth0/dad_transmits
 sysctl -w net.ipv6.conf.eth0.dad_transmits=1
 ```
 
-### accept_redirects — ICMPv6 Redirect Handling
+### accept_redirects - ICMPv6 Redirect Handling
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/accept_redirects
@@ -101,7 +102,7 @@ cat /proc/sys/net/ipv6/conf/eth0/accept_redirects
 sysctl -w net.ipv6.conf.all.accept_redirects=0
 ```
 
-### router_solicitations — RS Count
+### router_solicitations - RS Count
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/router_solicitations
@@ -111,7 +112,7 @@ cat /proc/sys/net/ipv6/conf/eth0/router_solicitations
 sysctl -w net.ipv6.conf.eth0.router_solicitations=3
 ```
 
-### max_addresses — Maximum IPv6 Addresses per Interface
+### max_addresses - Maximum IPv6 Addresses per Interface
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/max_addresses
@@ -122,7 +123,7 @@ cat /proc/sys/net/ipv6/conf/eth0/max_addresses
 sysctl -w net.ipv6.conf.eth0.max_addresses=64
 ```
 
-### addr_gen_mode — Address Generation Mode
+### addr_gen_mode - Address Generation Mode
 
 ```bash
 cat /proc/sys/net/ipv6/conf/eth0/addr_gen_mode

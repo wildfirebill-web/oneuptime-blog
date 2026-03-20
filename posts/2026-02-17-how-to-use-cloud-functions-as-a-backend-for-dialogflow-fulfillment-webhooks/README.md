@@ -286,6 +286,7 @@ function buildContext(sessionId, contextName, parameters, lifespanCount = 5) {
 
 ```bash
 # Deploy the fulfillment function
+
 gcloud functions deploy dialogflow-fulfillment \
   --gen2 \
   --runtime=nodejs20 \

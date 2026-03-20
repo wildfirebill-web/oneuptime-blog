@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gitops, fleet, best-practices, kubernetes
+Tags: Rancher, GitOps, Fleet, Best-practices, Kubernetes
 
 Description: Comprehensive guide to GitOps best practices with Rancher Fleet for reliable, auditable deployments.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

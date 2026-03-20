@@ -754,6 +754,7 @@ main().catch(console.error);
 
 ```hcl
 # main.tf
+
 # Terraform configuration for FIFO queue with DLQ
 
 resource "aws_sqs_queue" "orders_dlq" {

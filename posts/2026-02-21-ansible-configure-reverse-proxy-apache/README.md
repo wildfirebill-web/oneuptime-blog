@@ -41,6 +41,7 @@ apache-proxy/
 
 ```yaml
 # group_vars/all.yml
+
 proxy_sites:
   - name: webapp
     server_name: webapp.example.com

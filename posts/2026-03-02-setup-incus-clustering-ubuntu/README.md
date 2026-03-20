@@ -31,6 +31,7 @@ Three Ubuntu servers with:
 
 ```bash
 # On all three nodes: install Incus
+
 sudo apt-get install -y incus incus-tools
 
 # On all three nodes: synchronize time

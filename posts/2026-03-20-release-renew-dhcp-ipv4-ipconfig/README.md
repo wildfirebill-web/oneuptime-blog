@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, ipconfig, DHCP, IPv4, Network Troubleshooting
+Tags: Windows, Networking, Ipconfig, DHCP, IPv4, Network Troubleshooting
 
 Description: Use ipconfig /release and ipconfig /renew to release and renew DHCP leases on Windows, and target specific adapters when only one needs to be refreshed.
 
@@ -99,6 +99,7 @@ If you have a DHCP reservation, the server will always give you the same IP. Rel
 
 ```powershell
 # Release and renew using PowerShell
+
 $adapter = Get-NetAdapter -Name "Ethernet"
 Invoke-CimMethod -ClassName Win32_NetworkAdapterConfiguration `
     -MethodName ReleaseDHCPLease `

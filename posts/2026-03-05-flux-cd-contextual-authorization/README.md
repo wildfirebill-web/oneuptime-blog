@@ -26,6 +26,7 @@ Create separate GitRepository sources for each team, each mapped to a dedicated 
 
 ```yaml
 # team-sources.yaml
+
 # Separate Git sources for each team
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

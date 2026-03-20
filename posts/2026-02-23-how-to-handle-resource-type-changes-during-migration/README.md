@@ -20,6 +20,7 @@ Terraform 1.1 introduced moved blocks as the primary tool for handling resource 
 
 ```hcl
 # Resource type changed from aws_s3_bucket_object to aws_s3_object
+
 moved {
   from = aws_s3_bucket_object.file
   to   = aws_s3_object.file

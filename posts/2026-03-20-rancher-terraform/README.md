@@ -21,6 +21,7 @@ Terraform enables infrastructure-as-code management of Rancher resources, making
 
 ```hcl
 # main.tf - Rancher2 provider configuration
+
 terraform {
   required_providers {
     rancher2 = {

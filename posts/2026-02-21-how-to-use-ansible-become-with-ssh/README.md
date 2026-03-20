@@ -24,6 +24,7 @@ Here is a minimal inventory file that sets up SSH connection details alongside b
 
 ```ini
 # inventory/hosts.ini
+
 # Define the target hosts with SSH and become settings
 [webservers]
 web1 ansible_host=192.168.1.10 ansible_user=deploy ansible_ssh_private_key_file=~/.ssh/deploy_key

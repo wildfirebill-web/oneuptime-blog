@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, FTP, Passive Mode, nf_conntrack_ftp, Connection Tracking, IPv4
+Tags: iptables, FTP, Passive Mode, Nf_conntrack_ftp, Connection Tracking, IPv4
 
 Description: Configure the nf_conntrack_ftp kernel module to automatically track FTP passive data connections through iptables, eliminating the need to open a wide port range.
 
@@ -12,7 +12,7 @@ Without `nf_conntrack_ftp`, iptables has no way to know which ephemeral ports an
 
 ## How Connection Tracking Works for FTP
 
-```
+```text
 1. Client connects to Server:21  →  iptables sees NEW connection
 2. Server sends: 227 Entering Passive Mode (...,117,49)
    → nf_conntrack_ftp parses this response
@@ -25,6 +25,7 @@ Without `nf_conntrack_ftp`, iptables has no way to know which ephemeral ports an
 
 ```bash
 # Load nf_conntrack_ftp helper
+
 sudo modprobe nf_conntrack_ftp
 
 # For older kernels (the module was renamed)
@@ -78,7 +79,7 @@ iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Allow FTP control port
 iptables -A INPUT -p tcp --dport 21 -m state --state NEW -j ACCEPT
 
-# No explicit rule needed for passive ports — nf_conntrack_ftp handles them!
+# No explicit rule needed for passive ports - nf_conntrack_ftp handles them!
 ```
 
 ## Verifying Connection Tracking

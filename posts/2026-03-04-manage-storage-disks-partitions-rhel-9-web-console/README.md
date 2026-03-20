@@ -40,6 +40,7 @@ Click on any drive to see its details: model, serial number, size, firmware vers
 
 ```bash
 # List all block devices with details
+
 lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
 
 # Get disk model and serial

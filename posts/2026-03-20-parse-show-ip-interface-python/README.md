@@ -4,13 +4,13 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Python, Regular Expressions, Cisco IOS, Netmiko, Network Automation
 
-Description: Learn how to parse Cisco IOS "show ip interface brief" output using Python regular expressions, extracting structured data from unstructured CLI output.
+Description: Learn how to parse Cisco IOS 'show ip interface brief' output using Python regular expressions, extracting structured data from unstructured CLI output.
 
 ## The Challenge of CLI Output Parsing
 
 Cisco's `show ip interface brief` output is human-readable text:
 
-```
+```text
 Interface                  IP-Address      OK? Method Status                Protocol
 GigabitEthernet0/0         192.168.1.1     YES NVRAM  up                    up
 GigabitEthernet0/1         10.0.0.1        YES NVRAM  up                    up
@@ -54,6 +54,7 @@ def parse_ip_interface_brief(output):
     return results
 
 # Test with sample output
+
 sample_output = """
 Interface                  IP-Address      OK? Method Status                Protocol
 GigabitEthernet0/0         192.168.1.1     YES NVRAM  up                    up

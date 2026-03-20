@@ -14,6 +14,7 @@ RHEL supports multiple sleep states through systemd: suspend (suspend-to-RAM), h
 
 ```bash
 # List the sleep states supported by your hardware
+
 cat /sys/power/state
 # Common output: freeze mem disk
 

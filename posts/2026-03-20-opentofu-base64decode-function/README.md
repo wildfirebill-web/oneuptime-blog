@@ -1,11 +1,10 @@
----
-title: "How to Use base64decode() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, encoding
-description: "Learn how to use the base64decode() function in OpenTofu to decode Base64-encoded strings."
----
-
 # How to Use base64decode() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+
+Description: Learn how to use the base64decode() function in OpenTofu to decode Base64-encoded strings.
 
 Learn how to use the base64decode() function in OpenTofu to decode Base64-encoded strings.
 
@@ -13,6 +12,7 @@ Learn how to use the base64decode() function in OpenTofu to decode Base64-encode
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

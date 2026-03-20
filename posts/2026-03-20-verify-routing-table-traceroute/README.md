@@ -14,6 +14,7 @@ Traceroute is one of the most powerful tools for verifying routing. It reveals t
 
 ```bash
 # Linux: trace to a destination (UDP probes by default)
+
 traceroute 10.20.0.1
 
 # Use ICMP instead of UDP (often less filtered by firewalls)
@@ -67,7 +68,7 @@ traceroute 10.20.0.1
 # From host B back to host A:
 traceroute 192.168.0.10
 
-# Compare the hop sequences — they should be reverse of each other
+# Compare the hop sequences - they should be reverse of each other
 # for symmetric routing
 ```
 
@@ -100,4 +101,4 @@ ping -c 10 10.20.0.1
 
 ## Conclusion
 
-Traceroute is the ground truth for verifying that routing table entries produce the expected forwarding behavior. Use `ip route get` to predict the path, then compare with traceroute output. Discrepancies — especially at the first hop — point to policy routing rules, default route overrides, or ECMP hash decisions. Regular traceroute verification is a valuable part of network change management.
+Traceroute is the ground truth for verifying that routing table entries produce the expected forwarding behavior. Use `ip route get` to predict the path, then compare with traceroute output. Discrepancies - especially at the first hop - point to policy routing rules, default route overrides, or ECMP hash decisions. Regular traceroute verification is a valuable part of network change management.

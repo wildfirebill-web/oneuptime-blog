@@ -28,6 +28,7 @@ Users control the log level with the `TF_LOG` environment variable:
 
 ```bash
 # Show all log output
+
 TF_LOG=TRACE terraform plan
 
 # Show only warnings and errors

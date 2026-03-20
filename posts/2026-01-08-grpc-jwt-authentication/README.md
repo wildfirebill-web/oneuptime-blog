@@ -887,6 +887,7 @@ class JWTCallCredentials(grpc.AuthMetadataPlugin):
 
 
 # Server setup
+
 def serve():
     jwt_manager = JWTManager('your-secret-key-min-32-chars')
 

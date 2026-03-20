@@ -30,6 +30,7 @@ modules/
 
 ```hcl
 # modules/redis-private/versions.tf
+
 # Pin provider versions for consistency
 
 terraform {

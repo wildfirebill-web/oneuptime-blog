@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, VPN, VPN Leaks, Privacy Testing, Security Testing, Network
+Tags: IPv6, VPN, VPN Leaks, Privacy Testing, Security Testing, Networks
 
 Description: A guide to testing whether your VPN is leaking IPv6 traffic using command-line tools and online services, and interpreting the results.
 
@@ -10,7 +10,7 @@ Testing for IPv6 VPN leaks requires checking whether your actual IPv6 address is
 
 ## Understanding What a Leak Looks Like
 
-```
+```text
 Before VPN: Your real IPv6 = 2001:db8::your-real-address
 After VPN (no leak): IPv6 address = VPN server's IPv6 or no IPv6 response
 After VPN (leak!): IPv6 address = 2001:db8::your-real-address (unchanged!)
@@ -20,6 +20,7 @@ After VPN (leak!): IPv6 address = 2001:db8::your-real-address (unchanged!)
 
 ```bash
 # Check your current IPv6 address (before connecting to VPN)
+
 curl -s -6 https://ifconfig.co
 # or
 curl -s https://api6.ipify.org

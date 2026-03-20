@@ -94,6 +94,7 @@ Not all services deserve the same logging treatment. Your payment processing ser
 
 ```yaml
 # Critical service - log everything
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

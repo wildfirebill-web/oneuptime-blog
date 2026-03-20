@@ -16,6 +16,7 @@ Go modules are the official dependency management system in Go since version 1.1
 
 ```bash
 # Create a new module
+
 mkdir myproject && cd myproject
 go mod init github.com/username/myproject
 

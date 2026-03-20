@@ -639,7 +639,7 @@ spec:
         # ... rest of container spec
 ```
 
-## Resource Sizing for Gateways
+Resource Sizing for Gateways
 
 Gateway collectors need more resources than agent collectors. Here are sizing guidelines:
 
@@ -655,6 +655,7 @@ resources:
     cpu: "1000m"
 
 # Medium gateway (10000 spans/sec)
+
 # requests:
 #   memory: "2Gi"
 #   cpu: "2000m"

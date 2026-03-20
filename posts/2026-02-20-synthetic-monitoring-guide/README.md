@@ -39,6 +39,7 @@ The simplest form of synthetic monitoring is HTTP endpoint checks. These verify 
 
 ```python
 # http_monitor.py
+
 # Simple HTTP endpoint monitor with validation
 
 import httpx

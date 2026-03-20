@@ -34,6 +34,7 @@ flowchart TB
 
 ```haproxy
 # haproxy.cfg
+
 global
     log stdout format raw local0
     maxconn 4096

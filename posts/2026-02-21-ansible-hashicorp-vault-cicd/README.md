@@ -18,6 +18,7 @@ You need a running Vault instance and the `hashi_vault` lookup plugin for Ansibl
 
 ```bash
 # Install the HashiCorp Vault collection for Ansible
+
 ansible-galaxy collection install community.hashi_vault
 pip install hvac
 ```

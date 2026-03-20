@@ -27,6 +27,7 @@ COPY does exactly what its name suggests. It copies files and directories from t
 
 ```dockerfile
 # Copy a single file
+
 COPY package.json /app/package.json
 
 # Copy multiple files

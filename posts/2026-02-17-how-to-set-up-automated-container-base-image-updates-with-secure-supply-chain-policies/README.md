@@ -39,6 +39,7 @@ Instead of pulling base images directly from Docker Hub, maintain your own curat
 
 ```bash
 # Create a dedicated registry for base images
+
 gcloud artifacts repositories create base-images \
     --repository-format=docker \
     --location=us-central1 \

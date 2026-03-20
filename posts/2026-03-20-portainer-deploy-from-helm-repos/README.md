@@ -51,6 +51,7 @@ You will see a searchable catalog of all charts from your configured repositorie
 
 ```yaml
 # Example: Customized NGINX values
+
 replicaCount: 3
 
 service:
@@ -79,7 +80,7 @@ ingress:
 ### PostgreSQL
 
 ```yaml
-# postgresql-values.yaml — Production-ready PostgreSQL
+# postgresql-values.yaml - Production-ready PostgreSQL
 auth:
   postgresPassword: "changeme-secure-password"
   database: "myapp_db"

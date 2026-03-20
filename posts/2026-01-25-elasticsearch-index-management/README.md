@@ -29,6 +29,7 @@ The most basic operation is creating an index with explicit settings and mapping
 
 ```bash
 # Create an index with custom settings
+
 curl -X PUT "localhost:9200/products" -H 'Content-Type: application/json' -d'
 {
   "settings": {

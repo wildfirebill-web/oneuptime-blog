@@ -18,6 +18,7 @@ Install Flannel using the host-gw backend:
 
 ```bash
 # Download Flannel manifest
+
 curl -LO https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
 
 # Edit the ConfigMap to use host-gw

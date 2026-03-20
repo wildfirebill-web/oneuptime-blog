@@ -1,4 +1,4 @@
-# How to Use the -parallelism Flag in OpenTofu
+# How to Use the -parallelism Flag in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ OpenTofu processes resources in parallel to speed up operations. The `-paralleli
 
 ```bash
 # Default parallelism (10 concurrent operations)
+
 tofu apply
 
 # Increase parallelism for faster applies

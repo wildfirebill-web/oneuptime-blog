@@ -14,6 +14,7 @@ Google Cloud Platform provides Deployment Manager for infrastructure provisionin
 
 ```yaml
 # playbooks/gcp-provision.yml
+
 ---
 - name: Provision GCP infrastructure
   hosts: localhost

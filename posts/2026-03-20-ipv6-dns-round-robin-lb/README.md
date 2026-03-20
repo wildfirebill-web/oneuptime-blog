@@ -6,7 +6,7 @@ Tags: IPv6, DNS, Round-Robin, Load Balancing, AAAA, High Availability
 
 Description: A guide to implementing IPv6 load balancing using DNS round-robin with AAAA records, including TTL tuning, health checking, and limitations.
 
-DNS round-robin load balancing distributes traffic across multiple IPv6 servers by returning different AAAA records in rotation. It's the simplest form of load balancing, requiring no dedicated load balancer hardware or software — just DNS configuration.
+DNS round-robin load balancing distributes traffic across multiple IPv6 servers by returning different AAAA records in rotation. It's the simplest form of load balancing, requiring no dedicated load balancer hardware or software - just DNS configuration.
 
 ## Basic DNS Round-Robin for IPv6
 
@@ -14,6 +14,7 @@ Configure multiple AAAA records for the same hostname:
 
 ```bash
 # BIND zone file configuration
+
 $TTL 60    # Short TTL for fast failover (60 seconds)
 
 api.example.com.    IN    AAAA    2001:db8::server1
@@ -27,7 +28,7 @@ DNS servers return all three records, rotating the order on each query response.
 
 ### BIND (named.conf + zone file)
 
-```
+```bash
 ; zone/example.com
 $TTL 60
 
@@ -129,7 +130,7 @@ resource "aws_route53_record" "api_v6_1" {
 
 ## TTL Strategy
 
-```
+```text
 Short TTL (30-60s):
   Pros: Fast failover if a server goes down
   Cons: Higher DNS query load, more cache misses

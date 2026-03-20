@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Icinga2, IPv6, Monitoring, Network, ICMP, Service Checks
+Tags: Icinga2, IPv6, Monitoring, Networks, ICMP, Service Checks
 
 Description: A guide to configuring Icinga2 to monitor IPv6 hosts and services, including host object definitions, check commands, and apply rules.
 
@@ -12,11 +12,12 @@ Icinga2 provides full IPv6 support through its plugin check commands and host/se
 
 ```bash
 # Icinga2 listens on all interfaces by default
+
 # Verify in /etc/icinga2/features-enabled/api.conf
 cat /etc/icinga2/features-enabled/api.conf
 ```
 
-```
+```text
 # /etc/icinga2/features-enabled/api.conf
 object ApiListener "api" {
   # Listen on all interfaces (IPv4 and IPv6)

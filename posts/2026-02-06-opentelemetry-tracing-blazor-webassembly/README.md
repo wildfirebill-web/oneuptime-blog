@@ -39,6 +39,7 @@ Start by adding the necessary OpenTelemetry packages to your Blazor WASM project
 
 ```bash
 # Add OpenTelemetry packages to your .csproj
+
 dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
 dotnet add package OpenTelemetry.Instrumentation.Http

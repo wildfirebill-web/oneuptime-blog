@@ -70,6 +70,7 @@ Add the Rancher Helm chart repository. Choose the appropriate channel:
 
 ```bash
 # For the latest stable release
+
 helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
 
 # For the stable release (recommended for production)

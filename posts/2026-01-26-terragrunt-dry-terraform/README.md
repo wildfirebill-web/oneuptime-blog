@@ -57,6 +57,7 @@ The backend configuration in each environment is almost identical:
 
 ```hcl
 # dev/backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "mycompany-terraform-state-dev"

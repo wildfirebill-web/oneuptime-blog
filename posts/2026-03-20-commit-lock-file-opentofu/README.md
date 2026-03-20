@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lock File, Version Control, Git, Best Practices, terraform.lock.hcl, Infrastructure as Code
+Tags: OpenTofu, Lock File, Version Control, Git, Best Practices, Terraform.lock.hcl, Infrastructure as Code
 
-Description: Learn why committing the .terraform.lock.hcl dependency lock file to version control is a critical best practice for reproducible OpenTofu deployments and how to set up your team to manage it correctly.
+Description: Learn why committing the .terraform.lock.hcl dependency lock file to version control is a critical best practice for reproducible OpenTofu deployments and how to set up your team to manage it...
 
 ---
 
-The `.terraform.lock.hcl` file is not a build artifact — it's a dependency specification. Committing it to version control ensures reproducible deployments, prevents silent provider upgrades, and provides a change history for infrastructure dependencies just like `package-lock.json` in Node.js or `Pipfile.lock` in Python.
+The `.terraform.lock.hcl` file is not a build artifact - it's a dependency specification. Committing it to version control ensures reproducible deployments, prevents silent provider upgrades, and provides a change history for infrastructure dependencies just like `package-lock.json` in Node.js or `Pipfile.lock` in Python.
 
 ## Why Commit the Lock File
 
@@ -27,8 +27,9 @@ graph TD
 
 ```bash
 # Scenario: Version constraint "~> 5.0" allows any 5.x version
-# Developer runs tofu init on Monday — gets 5.40.0
-# CI/CD runs tofu apply on Friday — gets 5.41.0 (released Tuesday)
+
+# Developer runs tofu init on Monday - gets 5.40.0
+# CI/CD runs tofu apply on Friday - gets 5.41.0 (released Tuesday)
 # The Friday deployment uses different provider code than tested on Monday
 
 # This can cause:
@@ -41,7 +42,7 @@ graph TD
 ## Correct .gitignore Configuration
 
 ```gitignore
-# .gitignore — DO NOT add .terraform.lock.hcl to this file
+# .gitignore - DO NOT add .terraform.lock.hcl to this file
 
 # These should be ignored (local cache):
 .terraform/
@@ -55,7 +56,7 @@ override.tf.json
 .terraformrc
 
 # DO NOT IGNORE:
-# .terraform.lock.hcl — commit this file!
+# .terraform.lock.hcl - commit this file!
 ```
 
 ## Lock File as Dependency Audit Trail
@@ -172,13 +173,13 @@ infrastructure/
         ├── providers.tf
         └── .terraform.lock.hcl  ← Commit this
 
-# Each lock file is independent — different modules can use different provider versions
+# Each lock file is independent - different modules can use different provider versions
 ```
 
 ## Best Practices
 
-- Never add `.terraform.lock.hcl` to `.gitignore` — this is the most common lock file mistake. The lock file is a critical part of your configuration, not a build artifact.
-- Commit the lock file at the same time as `providers.tf` changes — having one without the other in a commit makes it harder to understand why the lock file changed.
-- In CI/CD, run `tofu init` (not `tofu init -upgrade`) and fail if the lock file changes — this prevents CI from silently using upgraded provider versions that weren't reviewed.
-- Include a meaningful commit message when the lock file changes — "Upgrade AWS provider 5.40 → 5.45, tested in dev" is far more useful than "Update lock file".
-- Review lock file changes in PRs the same way you review application dependency upgrades — a provider upgrade is an infrastructure dependency change that can affect production behavior.
+- Never add `.terraform.lock.hcl` to `.gitignore` - this is the most common lock file mistake. The lock file is a critical part of your configuration, not a build artifact.
+- Commit the lock file at the same time as `providers.tf` changes - having one without the other in a commit makes it harder to understand why the lock file changed.
+- In CI/CD, run `tofu init` (not `tofu init -upgrade`) and fail if the lock file changes - this prevents CI from silently using upgraded provider versions that weren't reviewed.
+- Include a meaningful commit message when the lock file changes - "Upgrade AWS provider 5.40 → 5.45, tested in dev" is far more useful than "Update lock file".
+- Review lock file changes in PRs the same way you review application dependency upgrades - a provider upgrade is an infrastructure dependency change that can affect production behavior.

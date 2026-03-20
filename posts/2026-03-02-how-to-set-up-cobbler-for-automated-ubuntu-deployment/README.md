@@ -25,6 +25,7 @@ Cobbler is available in Ubuntu's universe repository and also from pip.
 
 ```bash
 # Enable universe repository if not already enabled
+
 sudo add-apt-repository universe
 sudo apt update
 

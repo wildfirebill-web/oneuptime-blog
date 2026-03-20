@@ -45,6 +45,7 @@ Git tags are the primary mechanism for versioning Ansible roles. When `ansible-g
 
 ```bash
 # Tag a new version
+
 git tag -a v1.0.0 -m "Initial stable release"
 git push origin v1.0.0
 

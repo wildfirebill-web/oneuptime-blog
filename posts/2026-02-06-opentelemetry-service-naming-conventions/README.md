@@ -58,6 +58,7 @@ Changing service names breaks historical analysis. If you rename "payment-servic
 
 ```python
 # Plan for evolution in your initial naming
+
 # Bad: Names that will need changing
 service_names = [
     "temp-api",           # Temporary becomes permanent

@@ -16,6 +16,7 @@ The `distinct` function takes a list and returns a new list with all duplicate e
 
 ```hcl
 # distinct(list)
+
 # Returns a deduplicated version of the list
 distinct(["a", "b", "a", "c", "b"])
 # Returns: ["a", "b", "c"]

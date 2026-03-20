@@ -31,6 +31,7 @@ Vertex AI Search (formerly Enterprise Search) gives you:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable discoveryengine.googleapis.com --project=your-project-id
 gcloud services enable aiplatform.googleapis.com --project=your-project-id
 ```

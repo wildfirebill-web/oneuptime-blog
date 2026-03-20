@@ -16,6 +16,7 @@ RHEL ships several Cockpit add-on packages in its repositories. Here's what's av
 
 ```bash
 # Search for all Cockpit packages
+
 sudo dnf search cockpit
 ```
 

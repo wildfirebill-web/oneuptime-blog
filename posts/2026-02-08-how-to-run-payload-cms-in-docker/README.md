@@ -30,6 +30,7 @@ Docker and Docker Compose installed. Node.js 18+ is needed for the initial proje
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

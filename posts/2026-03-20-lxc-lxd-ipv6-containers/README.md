@@ -12,6 +12,7 @@ LXD (the daemon managing LXC containers) provides full IPv6 support through its 
 
 ```bash
 # Check existing networks
+
 lxc network list
 
 # Create a new bridge with IPv6 enabled
@@ -122,7 +123,7 @@ lxc network set lxdbr1 ipv6.dhcp true
 lxc network set lxdbr1 ipv6.dhcp.stateful true
 
 # Reserve a specific DHCPv6 address for a container
-# (Uses the container's DUID — check with lxc info <container>)
+# (Uses the container's DUID - check with lxc info <container>)
 lxc network set lxdbr1 ipv6.dhcp.ranges fd00:lxd::100-fd00:lxd::200
 ```
 

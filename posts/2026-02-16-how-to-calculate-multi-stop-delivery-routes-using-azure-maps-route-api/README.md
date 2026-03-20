@@ -24,6 +24,7 @@ Let us start with the basics - routing from point A to point B.
 
 ```python
 # simple_route.py - Get a route between two points
+
 import requests
 
 AZURE_MAPS_KEY = "your-subscription-key"

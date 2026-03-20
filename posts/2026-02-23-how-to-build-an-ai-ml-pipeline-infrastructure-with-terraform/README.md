@@ -29,6 +29,7 @@ ML projects need large volumes of training data stored efficiently.
 
 ```hcl
 # data.tf - ML data storage
+
 resource "aws_s3_bucket" "ml_data" {
   bucket = "${var.project_name}-ml-data-${var.environment}"
 

@@ -16,6 +16,7 @@ Ensure your RHEL 8 system is fully updated and subscribed:
 
 ```bash
 # Update the system to the latest RHEL 8 packages
+
 sudo dnf update -y
 
 # Verify the current version

@@ -16,6 +16,7 @@ The `signum` function takes a single number and returns its sign indicator:
 
 ```hcl
 # signum(number)
+
 # Returns -1, 0, or 1 based on the sign of the number
 signum(-15)  # Returns: -1
 signum(0)    # Returns: 0

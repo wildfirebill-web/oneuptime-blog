@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, Persistence, systemd, Networking
+Tags: nftables, Linux, Firewall, Persistence, Systemd, Networking
 
 Description: Persist nftables firewall rules across reboots by saving the ruleset to a configuration file and enabling the nftables systemd service.
 
@@ -22,6 +22,7 @@ The `nft list ruleset` command dumps the complete current ruleset in a format th
 
 ```bash
 # Save the entire current ruleset to the default nftables config file
+
 nft list ruleset > /etc/nftables.conf
 ```
 

@@ -32,6 +32,7 @@ Before you can promote a secondary, you need to have one running. Here is how to
 
 ```bash
 # Create a secondary cluster in us-east1 that replicates from the primary in us-central1
+
 gcloud alloydb clusters create my-secondary-cluster \
   --region=us-east1 \
   --cluster-type=SECONDARY \

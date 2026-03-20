@@ -25,6 +25,7 @@ First, figure out which user and filesystem are involved:
 
 ```bash
 # Check quota for a specific user across all filesystems
+
 quota -us jsmith
 ```
 

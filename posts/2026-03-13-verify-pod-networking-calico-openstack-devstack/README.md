@@ -23,6 +23,7 @@ The main limitation of DevStack verification is that it cannot test multi-node B
 
 ```bash
 # DevStack runs services with screen; check their status
+
 sudo systemctl status devstack@calico-felix
 sudo systemctl status devstack@calico-etcd
 sudo systemctl status devstack@calico-bird

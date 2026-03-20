@@ -18,6 +18,7 @@ The `package_facts` module populates the `ansible_facts.packages` dictionary wit
 
 ```yaml
 # Gather facts about all installed packages
+
 - name: Gather package facts
   ansible.builtin.package_facts:
     manager: auto

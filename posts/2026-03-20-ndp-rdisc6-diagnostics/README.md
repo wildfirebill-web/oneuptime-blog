@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NDP, rdisc6, Router Discovery, Router Advertisement, IPv6
+Tags: NDP, Rdisc6, Router Discovery, Router Advertisement, IPv6
 
 Description: Use rdisc6 to send Router Solicitations and display Router Advertisements, decode RA contents, and diagnose router discovery problems.
 
@@ -14,6 +14,7 @@ Description: Use rdisc6 to send Router Solicitations and display Router Advertis
 
 ```bash
 # Send Router Solicitation and show any RA received
+
 # Format: rdisc6 <interface>
 sudo rdisc6 eth0
 

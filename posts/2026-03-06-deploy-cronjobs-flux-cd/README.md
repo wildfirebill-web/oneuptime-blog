@@ -39,6 +39,7 @@ apps/
 
 ```yaml
 # clusters/my-cluster/cronjobs.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

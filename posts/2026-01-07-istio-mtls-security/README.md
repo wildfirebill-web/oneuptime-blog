@@ -107,6 +107,7 @@ This command installs Istio with the default profile, which includes necessary c
 
 ```bash
 # Install Istio with default profile (includes mTLS support)
+
 istioctl install --set profile=default -y
 ```
 

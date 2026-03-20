@@ -26,6 +26,7 @@ This guide covers deploying Knative Eventing with the MT-Channel-Based Broker us
 
 ```yaml
 # clusters/my-cluster/knative-eventing/gitrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

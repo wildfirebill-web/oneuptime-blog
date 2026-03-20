@@ -18,6 +18,7 @@ Small teams do not need multi-cluster ArgoCD with sharded controllers and extern
 
 ```yaml
 # Single ArgoCD instance managing one cluster
+
 # This is all most small teams need
 apiVersion: argoproj.io/v1alpha1
 kind: Application

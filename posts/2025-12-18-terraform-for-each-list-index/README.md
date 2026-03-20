@@ -16,6 +16,7 @@ With `count`, you get `count.index` automatically:
 
 ```hcl
 # Using count - index is available
+
 resource "aws_instance" "server" {
   count         = 3
   ami           = "ami-0c55b159cbfafe1f0"

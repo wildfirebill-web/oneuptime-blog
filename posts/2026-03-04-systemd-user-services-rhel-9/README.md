@@ -25,6 +25,7 @@ graph TD
 
 ```bash
 # Create the user systemd directory
+
 mkdir -p ~/.config/systemd/user
 
 # Create a simple user service

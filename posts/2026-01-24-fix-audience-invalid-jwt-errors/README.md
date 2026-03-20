@@ -150,6 +150,7 @@ debugJWTAudience(token, 'https://api.example.com');
 
 ```python
 # Python debug function
+
 import jwt
 import json
 from typing import Union, List

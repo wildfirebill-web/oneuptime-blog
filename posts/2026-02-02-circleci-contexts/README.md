@@ -54,6 +54,7 @@ The following commands demonstrate context creation and variable management usin
 
 ```bash
 # Install the CircleCI CLI if not already installed
+
 # macOS installation using Homebrew
 brew install circleci
 

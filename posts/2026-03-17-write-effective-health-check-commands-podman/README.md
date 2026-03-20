@@ -26,6 +26,7 @@ A good health check should:
 
 ```bash
 # Basic HTTP check with curl
+
 podman run -d --name web-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \
   --health-interval 15s \

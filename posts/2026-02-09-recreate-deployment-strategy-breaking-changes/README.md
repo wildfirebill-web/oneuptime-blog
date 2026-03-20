@@ -159,6 +159,7 @@ Recreate causes downtime, but you can minimize it:
 
 ```dockerfile
 # Use smaller images
+
 FROM node:18-alpine
 
 # Pre-compile or pre-bundle

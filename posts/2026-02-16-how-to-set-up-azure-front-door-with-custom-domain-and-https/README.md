@@ -38,6 +38,7 @@ Azure Front Door has two tiers: Standard and Premium. Standard is suitable for m
 
 ```bash
 # Create a resource group
+
 az group create --name rg-frontdoor-demo --location eastus
 
 # Create a Front Door profile (Standard tier)

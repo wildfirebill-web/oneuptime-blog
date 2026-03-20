@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Create VPC with custom mode
+
 gcloud compute networks create vpc-ipv6only \
     --project="$PROJECT" \
     --subnet-mode=custom
@@ -78,7 +79,7 @@ gcloud compute routers nats describe nat-nat64 \
 
 ```bash
 # DNS64 in GCP is provided automatically by the VPC DNS resolver
-# for IPv6-only subnets — no additional configuration needed
+# for IPv6-only subnets - no additional configuration needed
 
 # How DNS64 works:
 # 1. IPv6-only VM queries: dig AAAA ipv4only.example.com
@@ -192,4 +193,4 @@ ping6 -c 3 2001:4860:4860::8888
 
 ## Conclusion
 
-GCP IPv6-only subnets use `stack-type=IPV6_ONLY` and provide DNS64 and NAT64 automatically via the VPC DNS resolver and Cloud NAT. DNS64 synthesizes `64:ff9b::/96` AAAA records for IPv4-only domains, while Cloud NAT64 handles the protocol translation. No additional DNS configuration is needed — GCP's DNS resolver automatically provides DNS64 for IPv6-only subnets. This enables fully IPv6-only workloads while maintaining backward compatibility with IPv4 internet services.
+GCP IPv6-only subnets use `stack-type=IPV6_ONLY` and provide DNS64 and NAT64 automatically via the VPC DNS resolver and Cloud NAT. DNS64 synthesizes `64:ff9b::/96` AAAA records for IPv4-only domains, while Cloud NAT64 handles the protocol translation. No additional DNS configuration is needed - GCP's DNS resolver automatically provides DNS64 for IPv6-only subnets. This enables fully IPv6-only workloads while maintaining backward compatibility with IPv4 internet services.

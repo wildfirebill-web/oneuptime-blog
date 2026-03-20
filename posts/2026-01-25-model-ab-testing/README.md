@@ -39,6 +39,7 @@ Consistent assignment ensures users always see the same model version.
 
 ```python
 # routing/experiment_router.py
+
 import hashlib
 from dataclasses import dataclass
 from typing import Optional, Dict, Any

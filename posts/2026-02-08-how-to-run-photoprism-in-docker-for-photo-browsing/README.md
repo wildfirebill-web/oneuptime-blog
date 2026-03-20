@@ -39,6 +39,7 @@ PhotoPrism stores metadata in MariaDB, keeps original photos untouched in the st
 
 ```bash
 # Create the PhotoPrism project directory
+
 mkdir -p ~/photoprism/{storage,db}
 cd ~/photoprism
 ```

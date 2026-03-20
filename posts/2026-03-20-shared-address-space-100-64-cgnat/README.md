@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, CGNAT, Networking, RFC 6598, Shared Address Space, ISP
 
-Description: The 100.64.0.0/10 block (RFC 6598) is the Shared Address Space reserved for use between ISP customer routers and ISP carrier-grade NAT (CGNAT) infrastructure, distinct from both public and RFC 1918 private addresses.
+Description: The 100.64.0.0/10 block (RFC 6598) is the Shared Address Space reserved for use between ISP customer routers and ISP carrier-grade NAT (CGNAT) infrastructure, distinct from both public and RFC...
 
 ## What Is 100.64.0.0/10?
 
@@ -34,6 +34,7 @@ Customers see a double NAT:
 
 ```bash
 # Compare your local gateway IP with your public IP
+
 # If gateway is in 100.64.0.0/10, you are behind CGNAT
 ip route show default
 # If the gateway IP is e.g. 100.64.1.1, you are behind CGNAT
@@ -67,6 +68,6 @@ print(is_cgnat("100.128.0.1"))  # False (outside 100.64/10)
 ## Key Takeaways
 
 - `100.64.0.0/10` is reserved exclusively for ISP CGNAT use (RFC 6598).
-- It is not RFC 1918 — should not be used in enterprise or home networks.
+- It is not RFC 1918 - should not be used in enterprise or home networks.
 - Seeing `100.64.x.x` as your gateway means you are behind double NAT (CGNAT).
 - CGNAT breaks port forwarding and complicates P2P; IPv6 is the long-term solution.

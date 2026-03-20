@@ -48,6 +48,7 @@ The B-series (burstable) VMs generally do not support accelerated networking, wh
 
 ```bash
 # Check if a VM size supports accelerated networking
+
 az vm list-sizes --location eastus \
   --query "[?name=='Standard_D4s_v5'].{Name:name, AccelNet:acceleratedNetworkingEnabled}" \
   --output table

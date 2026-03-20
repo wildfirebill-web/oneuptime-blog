@@ -44,6 +44,7 @@ First, make sure you are using the correct fully-qualified name:
 
 ```bash
 # Start a debug pod to test DNS resolution
+
 kubectl run dns-test --image=busybox:1.36 --rm -it --restart=Never -n frontend -- sh
 ```
 

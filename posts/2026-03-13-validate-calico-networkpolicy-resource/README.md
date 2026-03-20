@@ -22,6 +22,7 @@ Validating Calico NetworkPolicy resources requires confirming that the policy ex
 
 ```bash
 # List all policies in a namespace
+
 calicoctl get networkpolicy -n production
 
 # Inspect specific policy

@@ -194,7 +194,7 @@ output "api_id" {
 2. **Enable CloudWatch logging** for all stages for debugging
 3. **Use `create_before_destroy`** on deployment resources to avoid downtime
 4. **Enable throttling** on stages to protect backend services
-5. **Consider HTTP API (v2)** for new projects — it is simpler and cheaper than REST API (v1)
+5. **Consider HTTP API (v2)** for new projects - it is simpler and cheaper than REST API (v1)
 
 ## Conclusion
 

@@ -8,7 +8,7 @@ Description: Learn how to run K3s in rootless mode to improve security by runnin
 
 ## Introduction
 
-Running container workloads as root is a security risk — if a container escape occurs, an attacker could gain root access to the host. K3s supports **rootless mode**, which runs the entire K3s server (including containerd and networking) as a non-root user using user namespaces. This significantly reduces the attack surface. This guide covers setting up and using K3s in rootless mode.
+Running container workloads as root is a security risk - if a container escape occurs, an attacker could gain root access to the host. K3s supports **rootless mode**, which runs the entire K3s server (including containerd and networking) as a non-root user using user namespaces. This significantly reduces the attack surface. This guide covers setting up and using K3s in rootless mode.
 
 ## Understanding Rootless Mode
 
@@ -30,6 +30,7 @@ In rootless mode:
 
 ```bash
 # Check if user namespaces are enabled
+
 cat /proc/sys/kernel/unprivileged_userns_clone
 # Should be 1
 

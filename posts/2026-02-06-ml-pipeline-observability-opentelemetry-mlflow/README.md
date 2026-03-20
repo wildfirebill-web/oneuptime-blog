@@ -55,6 +55,7 @@ First, install all the packages you'll need.
 
 ```bash
 # OpenTelemetry core packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 # MLflow for experiment tracking

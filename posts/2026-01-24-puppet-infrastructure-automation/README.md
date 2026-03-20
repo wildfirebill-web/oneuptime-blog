@@ -41,6 +41,7 @@ Set up the Puppet Server on your control node.
 
 ```bash
 # Add Puppet repository (Ubuntu/Debian)
+
 wget https://apt.puppet.com/puppet8-release-jammy.deb
 sudo dpkg -i puppet8-release-jammy.deb
 sudo apt update
@@ -364,7 +365,7 @@ webserver::worker_processes: 8
 webserver::worker_connections: 8192
 ```
 
-## Resource Types
+Resource Types
 
 Puppet provides many built-in resource types.
 
@@ -414,7 +415,7 @@ exec { 'apt-update':
 }
 ```
 
-## Resource Relationships
+Resource Relationships
 
 Define dependencies between resources.
 

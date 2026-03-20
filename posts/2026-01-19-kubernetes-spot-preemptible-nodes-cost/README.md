@@ -68,6 +68,7 @@ flowchart TD
 
 ```yaml
 # spot-node-group.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

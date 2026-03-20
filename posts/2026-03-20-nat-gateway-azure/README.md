@@ -10,13 +10,13 @@ Description: Learn how to configure Azure NAT Gateway to give private subnet res
 
 Azure NAT Gateway provides:
 - **Outbound connectivity** for resources without public IPs
-- **Static outbound IPs** — all outbound traffic appears from one or more known IPs
-- **High scalability** — up to 64 public IPs × 64K ports each = millions of SNAT ports
+- **Static outbound IPs** - all outbound traffic appears from one or more known IPs
+- **High scalability** - up to 64 public IPs × 64K ports each = millions of SNAT ports
 - **Zone-redundant** options for HA
 
 ## Architecture
 
-```
+```text
 Private Subnet (no public IPs)
   VM1, VM2, VM3 → NAT Gateway (Public IP: 203.0.113.1) → Internet
 ```
@@ -39,6 +39,7 @@ Private Subnet (no public IPs)
 
 ```bash
 # Create a Public IP
+
 az network public-ip create \
     --resource-group myRG \
     --name myNatGatewayIP \

@@ -30,6 +30,7 @@ You just wrote a policy and you think it works, but you have not seen it run aga
 
 ```hcl
 # New policy - start as advisory to validate behavior
+
 policy "enforce-naming-convention" {
     source            = "./standards/enforce-naming-convention.sentinel"
     enforcement_level = "advisory"

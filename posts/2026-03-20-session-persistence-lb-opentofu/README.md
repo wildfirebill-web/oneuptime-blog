@@ -14,6 +14,7 @@ Session persistence ensures that a client's requests are consistently routed to 
 
 ```hcl
 # main.tf - ALB with sticky sessions
+
 resource "aws_lb_target_group" "sticky" {
   name     = "app-tg-sticky"
   port     = 8080

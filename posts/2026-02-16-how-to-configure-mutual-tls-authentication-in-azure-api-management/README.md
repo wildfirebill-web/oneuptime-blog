@@ -164,6 +164,7 @@ Using curl:
 
 ```bash
 # Send a request with a client certificate
+
 # The --cert flag specifies the certificate and private key
 curl --cert ./client-cert.pem --key ./client-key.pem \
      -H "Ocp-Apim-Subscription-Key: YOUR_KEY" \

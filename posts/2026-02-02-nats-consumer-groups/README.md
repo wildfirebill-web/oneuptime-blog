@@ -130,6 +130,7 @@ Start multiple instances to see load balancing in action. Each worker receives d
 
 ```bash
 # Terminal 1 - Start first worker
+
 WORKER_ID=worker-1 go run main.go
 
 # Terminal 2 - Start second worker

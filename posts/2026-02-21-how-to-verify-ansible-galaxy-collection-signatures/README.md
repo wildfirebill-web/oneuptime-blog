@@ -30,6 +30,7 @@ You need GPG installed on your system:
 
 ```bash
 # Install GPG on Ubuntu/Debian
+
 sudo apt-get install gnupg
 
 # Install GPG on RHEL/CentOS

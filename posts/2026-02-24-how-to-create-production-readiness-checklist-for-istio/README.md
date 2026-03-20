@@ -200,7 +200,7 @@ kubectl get secret -n istio-system istio-ca-secret -o jsonpath='{.data.ca-cert\.
 
 Make sure the certificate is not expiring soon and has an appropriate validity period.
 
-## Resource Limits for Sidecars
+Resource Limits for Sidecars
 
 Every sidecar proxy consumes CPU and memory. Set global defaults that make sense:
 

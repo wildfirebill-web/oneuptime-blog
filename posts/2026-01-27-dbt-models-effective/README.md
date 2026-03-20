@@ -151,6 +151,7 @@ Sources define your raw data inputs. Configure them in YAML:
 
 ```yaml
 # models/staging/_sources.yml
+
 version: 2
 
 sources:

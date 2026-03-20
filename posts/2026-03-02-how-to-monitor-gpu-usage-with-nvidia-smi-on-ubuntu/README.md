@@ -14,6 +14,7 @@ Description: A comprehensive guide to using nvidia-smi on Ubuntu to monitor GPU 
 
 ```bash
 # Default output - shows all GPUs with key stats
+
 nvidia-smi
 
 # Example output:

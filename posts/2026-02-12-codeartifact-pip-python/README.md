@@ -26,6 +26,7 @@ The fastest way to get started:
 
 ```bash
 # Configure pip to use CodeArtifact
+
 aws codeartifact login \
   --tool pip \
   --repository my-packages \

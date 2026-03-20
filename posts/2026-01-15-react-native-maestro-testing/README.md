@@ -189,6 +189,7 @@ Create a file at `maestro/flows/login.yaml`:
 
 ```yaml
 # App configuration
+
 appId: com.yourcompany.yourapp
 ---
 # Test steps

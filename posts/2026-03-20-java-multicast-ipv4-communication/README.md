@@ -8,7 +8,7 @@ Description: Build IPv4 multicast sender and receiver applications in Java using
 
 ## Introduction
 
-IPv4 multicast allows a single sender to deliver packets to multiple receivers simultaneously without flooding the network. Multicast addresses (224.0.0.0 – 239.255.255.255) define groups — receivers join the group to receive traffic. This is used in streaming protocols (IPTV), service discovery (mDNS), and routing protocols (OSPF, PIM).
+IPv4 multicast allows a single sender to deliver packets to multiple receivers simultaneously without flooding the network. Multicast addresses (224.0.0.0 – 239.255.255.255) define groups - receivers join the group to receive traffic. This is used in streaming protocols (IPTV), service discovery (mDNS), and routing protocols (OSPF, PIM).
 
 ## Multicast Address Ranges
 

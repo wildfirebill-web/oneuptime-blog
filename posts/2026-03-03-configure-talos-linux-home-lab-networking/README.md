@@ -22,6 +22,7 @@ Always use static IPs for your Talos nodes. DHCP reservations work too, but stat
 
 ```yaml
 # Static IP configuration for a control plane node
+
 machine:
   network:
     hostname: talos-cp-01

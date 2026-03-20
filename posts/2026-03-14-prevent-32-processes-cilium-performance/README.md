@@ -22,7 +22,7 @@ The key principle is over-provisioning shared resources. At 32-process paralleli
 - Prometheus and Grafana monitoring stack
 - Understanding of your workload's parallelism requirements
 
-## Resource Pre-Provisioning
+Resource Pre-Provisioning
 
 Configure generous resource limits from the start:
 
@@ -147,6 +147,7 @@ spec:
 
 ```bash
 # Verify CronJob is collecting metrics
+
 kubectl get cronjobs -n monitoring
 curl -s http://prometheus:9090/api/v1/query?query=cilium_scaling_throughput_bps
 

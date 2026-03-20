@@ -143,6 +143,7 @@ First, install the required dependencies:
 ```bash
 npm install react-native-keychain
 # or for Expo
+
 npx expo install expo-secure-store
 ```
 

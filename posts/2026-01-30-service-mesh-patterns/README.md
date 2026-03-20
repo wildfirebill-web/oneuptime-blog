@@ -172,6 +172,7 @@ Automatic injection is cleaner and easier to maintain. Label the namespace and I
 
 ```bash
 # Enable automatic sidecar injection for the namespace
+
 kubectl label namespace production istio-injection=enabled
 
 # Verify the label is applied
@@ -1376,7 +1377,7 @@ data:
 
 Before deploying service mesh patterns to production, verify these requirements.
 
-### Resource Planning
+Resource Planning
 
 Calculate sidecar overhead for your cluster.
 

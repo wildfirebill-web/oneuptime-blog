@@ -23,6 +23,7 @@ Winbind is the component of Samba that handles communication with Active Directo
 
 ```bash
 # Install Samba and Winbind packages
+
 sudo dnf install -y samba samba-winbind samba-winbind-clients \
     samba-client krb5-workstation oddjob oddjob-mkhomedir
 ```

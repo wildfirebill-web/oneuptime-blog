@@ -66,6 +66,7 @@ Run comprehensive automated checks before any human review:
 
 ```yaml
 # .github/workflows/pr-checks.yaml
+
 name: PR Deployment Checks
 on:
   pull_request:

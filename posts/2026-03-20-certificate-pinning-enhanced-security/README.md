@@ -8,7 +8,7 @@ Description: Learn how certificate pinning works, when to use it, and how to imp
 
 ---
 
-Certificate pinning associates a server with its specific TLS certificate or public key, causing the client to reject any certificate that doesn't match — even if it's signed by a trusted CA. This protects against compromised CAs or MITM attacks.
+Certificate pinning associates a server with its specific TLS certificate or public key, causing the client to reject any certificate that doesn't match - even if it's signed by a trusted CA. This protects against compromised CAs or MITM attacks.
 
 ---
 
@@ -17,12 +17,12 @@ Certificate pinning associates a server with its specific TLS certificate or pub
 Standard TLS validation:
 1. Server presents certificate
 2. Client verifies it's signed by a trusted CA
-3. Client proceeds — any valid CA-signed cert is accepted
+3. Client proceeds - any valid CA-signed cert is accepted
 
 With certificate pinning:
 1. Server presents certificate
 2. Client checks if the certificate/public key matches a stored pin
-3. Client rejects the connection if it doesn't match — even if CA-valid
+3. Client rejects the connection if it doesn't match - even if CA-valid
 
 ---
 
@@ -34,7 +34,7 @@ With certificate pinning:
 | Public key pin     | Subject Public Key Info (SPKI) | Medium     |
 | CA pin             | Intermediate or root CA        | High        |
 
-Public key pinning is the most practical — the pin survives certificate renewals as long as the key pair is preserved.
+Public key pinning is the most practical - the pin survives certificate renewals as long as the key pair is preserved.
 
 ---
 
@@ -42,6 +42,7 @@ Public key pinning is the most practical — the pin survives certificate renewa
 
 ```bash
 # Get the SPKI hash for certificate pinning
+
 openssl s_client -connect api.example.com:443 2>/dev/null   | openssl x509 -pubkey -noout   | openssl pkey -pubin -outform DER   | openssl dgst -sha256 -binary   | openssl enc -base64
 # Output: abc123xyz...= (your pin)
 ```
@@ -88,9 +89,9 @@ val client = OkHttpClient.Builder()
 
 ---
 
-## HTTP Public Key Pinning (HPKP) Header — Deprecated
+## HTTP Public Key Pinning (HPKP) Header - Deprecated
 
-```
+```text
 # HPKP is deprecated, do not use in production
 Public-Key-Pins: pin-sha256="abc123..."; max-age=5184000; includeSubDomains
 ```

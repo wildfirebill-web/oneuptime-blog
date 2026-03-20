@@ -18,6 +18,7 @@ The workspace name shows up in more places than you might expect:
 # The workspace name appears in...
 
 # Resource names
+
 resource "aws_s3_bucket" "data" {
   bucket = "myapp-${terraform.workspace}-data"
 }

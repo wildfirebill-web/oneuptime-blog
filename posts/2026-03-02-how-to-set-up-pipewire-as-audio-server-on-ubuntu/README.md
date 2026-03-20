@@ -22,6 +22,7 @@ PipeWire is the modern replacement for both PulseAudio and JACK on Linux. It pro
 
 ```bash
 # See what audio server is running
+
 pactl info | grep "Server Name"
 
 # Check if PipeWire is installed

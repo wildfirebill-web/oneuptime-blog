@@ -46,6 +46,7 @@ locals {
 }
 
 # ECR repositories for container images
+
 resource "aws_ecr_repository" "repos" {
   for_each = toset(var.ecr_repositories)
 

@@ -18,6 +18,7 @@ Before disabling anything, it helps to understand how snapd handles refreshes. S
 
 ```bash
 # Check the current refresh schedule and last refresh time
+
 snap refresh --time
 
 # See when each snap was last refreshed

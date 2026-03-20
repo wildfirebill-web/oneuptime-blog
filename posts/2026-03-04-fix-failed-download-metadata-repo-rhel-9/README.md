@@ -36,6 +36,7 @@ Before diving into repository configuration, verify that your system can reach t
 
 ```bash
 # Test basic connectivity
+
 ping -c 3 8.8.8.8
 
 # Test DNS resolution

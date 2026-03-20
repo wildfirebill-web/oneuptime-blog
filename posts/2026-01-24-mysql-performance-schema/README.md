@@ -60,6 +60,7 @@ Enable Performance Schema in your MySQL configuration file for persistent settin
 
 ```ini
 # my.cnf configuration
+
 [mysqld]
 performance_schema = ON
 

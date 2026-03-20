@@ -27,28 +27,29 @@ Red Hat OpenShift is an enterprise Kubernetes platform with a comprehensive web 
 
 OpenShift is a complete Kubernetes-based container platform:
 
-- **Security-first** — Security Context Constraints (SCC), restricted SCCs by default, no root containers
-- **Integrated CI/CD** — OpenShift Pipelines (Tekton), OpenShift GitOps (ArgoCD)
-- **Developer portal** — Source-to-Image (S2I) builds, Developer Perspective UI
-- **Operator Hub** — Kubernetes Operator catalog for enterprise software
-- **Compliance** — FIPS, Common Criteria, FedRAMP certifications
-- **Supported** — Red Hat enterprise support contract
+- **Security-first** - Security Context Constraints (SCC), restricted SCCs by default, no root containers
+- **Integrated CI/CD** - OpenShift Pipelines (Tekton), OpenShift GitOps (ArgoCD)
+- **Developer portal** - Source-to-Image (S2I) builds, Developer Perspective UI
+- **Operator Hub** - Kubernetes Operator catalog for enterprise software
+- **Compliance** - FIPS, Common Criteria, FedRAMP certifications
+- **Supported** - Red Hat enterprise support contract
 
 ## Portainer's Advantages
 
 Portainer provides practical advantages in many enterprise scenarios:
 
-- **Multi-runtime** — manage Docker + Kubernetes + Swarm from one UI
-- **Lightweight** — deploy in minutes, not days
-- **Cost** — no per-node subscription for CE; BE is significantly cheaper than OpenShift
-- **Learning curve** — team adoption is faster
-- **Edge computing** — superior edge device management
-- **Mixed environments** — works with existing Docker infrastructure
+- **Multi-runtime** - manage Docker + Kubernetes + Swarm from one UI
+- **Lightweight** - deploy in minutes, not days
+- **Cost** - no per-node subscription for CE; BE is significantly cheaper than OpenShift
+- **Learning curve** - team adoption is faster
+- **Edge computing** - superior edge device management
+- **Mixed environments** - works with existing Docker infrastructure
 
 ## Security Model Comparison
 
 ```yaml
-# OpenShift — containers run as non-root by default
+# OpenShift - containers run as non-root by default
+
 # This SecurityContext is typical in OpenShift
 spec:
   securityContext:

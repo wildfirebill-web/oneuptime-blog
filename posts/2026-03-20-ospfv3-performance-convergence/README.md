@@ -24,6 +24,7 @@ OSPFv3 convergence time is the duration from a topology change to when all route
 
 ```bash
 # Show OSPFv3 SPF calculation statistics
+
 vtysh -c "show ipv6 ospf"
 
 # Output includes SPF timing:
@@ -35,7 +36,7 @@ vtysh -c "show ipv6 ospf"
 ## Tuning SPF Timers for Faster Convergence
 
 ```bash
-# FRRouting — reduce SPF delay for faster convergence
+# FRRouting - reduce SPF delay for faster convergence
 vtysh
 configure terminal
 
@@ -53,8 +54,8 @@ end
 write memory
 ```
 
-```
-! Cisco — Tune OSPFv3 SPF timers
+```text
+! Cisco - Tune OSPFv3 SPF timers
 router ospfv3 1
  address-family ipv6 unicast
   timers throttle spf 50 200 5000
@@ -68,7 +69,7 @@ interface GigabitEthernet0/0
 ## Monitoring LSA Flooding
 
 ```bash
-# FRRouting — check LSA statistics
+# FRRouting - check LSA statistics
 vtysh -c "show ipv6 ospf database count"
 
 # Count of each LSA type:
@@ -119,7 +120,7 @@ curl -s http://localhost:9342/metrics | grep ospf6
 
 ## Cisco: Enabling OSPFv3 Event Logging
 
-```
+```text
 ! Enable notification of adjacency changes
 router ospfv3 1
  log-adjacency-changes detail

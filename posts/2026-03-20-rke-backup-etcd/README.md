@@ -8,7 +8,7 @@ Description: Learn how to configure automated and manual etcd backups in RKE to 
 
 ## Introduction
 
-etcd is the key-value store that holds all of your Kubernetes cluster state — workload definitions, secrets, RBAC policies, and configuration. Losing etcd data means losing your entire cluster state. RKE provides built-in tooling to create and manage etcd snapshots both on-demand and on a schedule. This guide covers how to configure and execute etcd backups effectively.
+etcd is the key-value store that holds all of your Kubernetes cluster state - workload definitions, secrets, RBAC policies, and configuration. Losing etcd data means losing your entire cluster state. RKE provides built-in tooling to create and manage etcd snapshots both on-demand and on a schedule. This guide covers how to configure and execute etcd backups effectively.
 
 ## Understanding RKE etcd Backup Modes
 
@@ -22,6 +22,7 @@ RKE supports two backup storage modes:
 
 ```yaml
 # cluster.yml
+
 services:
   etcd:
     backup_config:

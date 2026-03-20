@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Machine Readable, JSON, UI, Automation, CI/CD, Infrastructure as Code
 
-Description: Learn how to use OpenTofu's `-json` flag for machine-readable structured log output — enabling CI/CD systems to parse progress, resource changes, and errors programmatically.
+Description: Learn how to use OpenTofu's `-json` flag for machine-readable structured log output - enabling CI/CD systems to parse progress, resource changes, and errors programmatically.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ OpenTofu supports a machine-readable JSON output mode with `-json` on `plan` and
 
 ```bash
 # Plan with JSON output
+
 tofu plan -json 2>&1 | tee plan-output.jsonl
 
 # Apply with JSON output
@@ -70,7 +71,7 @@ cat apply-output.jsonl | jq 'select(.type == "apply_start" or .type == "apply_co
 
 ```python
 #!/usr/bin/env python3
-# scripts/tofu-progress.py — pretty progress reporter for OpenTofu JSON output
+# scripts/tofu-progress.py - pretty progress reporter for OpenTofu JSON output
 
 import json
 import sys
@@ -137,9 +138,9 @@ tofu apply -auto-approve -json 2>&1 | python3 scripts/tofu-progress.py
     echo "result=$RESULT" >> $GITHUB_OUTPUT
 
 - name: Report status
-  run: echo "Apply complete — ${{ steps.apply.outputs.result }}"
+  run: echo "Apply complete - ${{ steps.apply.outputs.result }}"
 ```
 
 ## Conclusion
 
-OpenTofu's machine-readable JSON UI mode (`-json` flag) enables CI/CD systems and custom tooling to parse plan and apply operations programmatically. Each operation emits structured JSON Lines with typed messages — `planned_change` for resources in the plan, `apply_complete`/`apply_errored` for apply progress, and `diagnostic` for errors. Use this output to build custom progress reporters, parse apply results in CI, trigger notifications on failures, or build dashboards showing infrastructure change history.
+OpenTofu's machine-readable JSON UI mode (`-json` flag) enables CI/CD systems and custom tooling to parse plan and apply operations programmatically. Each operation emits structured JSON Lines with typed messages - `planned_change` for resources in the plan, `apply_complete`/`apply_errored` for apply progress, and `diagnostic` for errors. Use this output to build custom progress reporters, parse apply results in CI, trigger notifications on failures, or build dashboards showing infrastructure change history.

@@ -33,6 +33,7 @@ These logs appear in Cloud Audit Logs under the IAP service.
 
 ```bash
 # Verify logging is working by checking recent IAP logs
+
 gcloud logging read \
   'resource.type="audited_resource" AND protoPayload.serviceName="iap.googleapis.com"' \
   --project=my-project-id \

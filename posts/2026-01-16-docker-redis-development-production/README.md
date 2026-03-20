@@ -46,6 +46,7 @@ Redis offers two persistence options:
 
 ```bash
 # Default RDB settings
+
 docker run -d \
   -v redis-data:/data \
   redis:7-alpine redis-server \

@@ -24,6 +24,7 @@ The foundation of any compliance dashboard is automated scanning. Use tools like
 
 ```python
 # scripts/compliance-scanner.py
+
 # Scans all Terraform configurations and generates compliance data
 
 import json

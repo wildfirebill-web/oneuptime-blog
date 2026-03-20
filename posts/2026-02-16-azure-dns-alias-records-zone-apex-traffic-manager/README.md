@@ -47,6 +47,7 @@ First, let us make sure we have a Traffic Manager profile with endpoints configu
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-dns-tm \
   --location eastus

@@ -40,6 +40,7 @@ The TF_LOG environment variable controls verbosity, ranging from TRACE (most det
 
 ```bash
 # Enable trace-level logging for maximum detail
+
 export TF_LOG=TRACE
 
 # Log to a file instead of stderr
@@ -281,7 +282,7 @@ az account show
 
 ## Debugging Apply Errors
 
-### Resource Creation Failures
+Resource Creation Failures
 
 When resources fail to create, examine the specific error message and API response.
 

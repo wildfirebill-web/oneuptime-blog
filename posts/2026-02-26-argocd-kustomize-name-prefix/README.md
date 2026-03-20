@@ -29,6 +29,7 @@ The standard Kustomize approach puts the prefix in the overlay:
 
 ```yaml
 # overlays/staging/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

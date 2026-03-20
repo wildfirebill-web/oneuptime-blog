@@ -154,6 +154,7 @@ For a more automated approach, you can use the Kubernetes Image Puller operator:
 
 ```yaml
 # Deploy the operator
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

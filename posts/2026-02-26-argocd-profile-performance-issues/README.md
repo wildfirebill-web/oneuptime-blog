@@ -39,6 +39,7 @@ Before diagnosing, establish what "normal" looks like:
 
 ```bash
 # Current resource usage for all components
+
 kubectl top pods -n argocd
 
 # Application count

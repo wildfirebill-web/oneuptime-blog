@@ -18,6 +18,7 @@ The basic syntax looks like this.
 
 ```yaml
 # Basic device mapping syntax
+
 services:
   myservice:
     image: myimage:latest

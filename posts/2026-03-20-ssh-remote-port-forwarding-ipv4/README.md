@@ -12,7 +12,7 @@ SSH remote port forwarding (`-R`) opens a port on the remote SSH server that tun
 
 ## Basic Remote Port Forwarding
 
-```
+```text
 Local Machine         SSH Server            External Client
      │                     │                      │
      │ SSH connection ──────│                      │
@@ -24,6 +24,7 @@ Local Machine         SSH Server            External Client
 # Syntax: ssh -R [bind_address:]remote_port:local_host:local_port user@ssh_server
 
 # Expose local web server (port 3000) on remote server's port 8080
+
 ssh -R 8080:localhost:3000 user@203.0.113.10
 
 # Expose local database on remote port 5432

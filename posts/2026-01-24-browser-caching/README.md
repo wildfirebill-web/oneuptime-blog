@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Caching, Performance, Web Development, HTTP Headers, CDN, NGINX, Apache
+Tags: Caching, Performance, Web Development, HTTP Headers, CDN, Nginx, Apache
 
 Description: A comprehensive guide to configuring browser caching for web applications, covering HTTP cache headers, cache strategies, and implementation examples for popular web servers.
 
@@ -47,6 +47,7 @@ The `Cache-Control` header is the primary mechanism for controlling caching beha
 
 ```bash
 # Allow browser and CDN caching for 1 year (immutable assets)
+
 Cache-Control: public, max-age=31536000, immutable
 
 # Allow only browser caching for 1 hour

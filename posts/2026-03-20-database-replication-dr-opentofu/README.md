@@ -14,6 +14,7 @@ Database replication for DR creates continuously synchronized copies of data in 
 
 ```hcl
 # main.tf - RDS cross-region replica for DR
+
 resource "aws_db_instance" "primary" {
   identifier              = "app-primary"
   engine                  = "postgres"

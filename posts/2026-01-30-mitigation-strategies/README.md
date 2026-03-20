@@ -50,6 +50,7 @@ Here is a practical checklist implemented as a runbook:
 
 ```yaml
 # incident-response-runbook.yaml
+
 name: Immediate Response Checklist
 triggers:
   - alert_severity: critical

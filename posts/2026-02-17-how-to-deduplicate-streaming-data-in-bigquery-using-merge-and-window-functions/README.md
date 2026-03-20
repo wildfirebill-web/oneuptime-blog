@@ -237,6 +237,7 @@ Set up the schedule:
 
 ```bash
 # Create a scheduled query that runs every 15 minutes
+
 bq query \
   --use_legacy_sql=false \
   --schedule='every 15 minutes' \

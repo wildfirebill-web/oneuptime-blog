@@ -32,6 +32,7 @@ Start by deploying your service with the default concurrency of 80:
 
 ```bash
 # Deploy with default concurrency (80)
+
 gcloud run deploy my-service \
   --image gcr.io/my-project/my-service:latest \
   --region us-central1 \

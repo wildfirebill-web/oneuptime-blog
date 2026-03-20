@@ -8,12 +8,13 @@ Description: Diagnose and fix UDP fragmentation problems caused by payloads exce
 
 ## Introduction
 
-UDP has no built-in fragmentation handling at the application layer. When a UDP payload plus IP and UDP headers exceeds the path MTU, one of two things happens: the kernel fragments the IP packet, or if the DF (Don't Fragment) bit is set, an ICMP Fragmentation Needed message is returned and the packet is dropped. Both outcomes cause problems — fragmentation increases loss probability and reassembly overhead; ICMP-blocked PMTUD creates silent delivery failures.
+UDP has no built-in fragmentation handling at the application layer. When a UDP payload plus IP and UDP headers exceeds the path MTU, one of two things happens: the kernel fragments the IP packet, or if the DF (Don't Fragment) bit is set, an ICMP Fragmentation Needed message is returned and the packet is dropped. Both outcomes cause problems - fragmentation increases loss probability and reassembly overhead; ICMP-blocked PMTUD creates silent delivery failures.
 
 ## Identifying Fragmentation Issues
 
 ```bash
 # Check if fragmentation is occurring (kernel stats):
+
 cat /proc/net/snmp | grep -i frag
 # IpFragCreates: packets that were fragmented by this host
 # IpFragFails: fragmentation failed (DF bit set and packet too large)

@@ -1,4 +1,4 @@
-# How to Segment Environments with Namespace Access in Portainer
+# How to Segment Environments with Namespace Access in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ Assign teams to specific namespaces:
 
 ```bash
 # Create namespaces for three teams
+
 kubectl create namespace team-frontend
 kubectl create namespace team-backend
 kubectl create namespace team-data
@@ -81,7 +82,7 @@ spec:
         - port: 8080
 ```
 
-## Resource Quota Per Team Namespace
+Resource Quota Per Team Namespace
 
 Combine namespace segmentation with resource quotas:
 

@@ -1,4 +1,4 @@
-# How to Design IPv6 for Hyperscale Data Centers
+# How to Design IPv6 for Hyperscale Data Centers - Centers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,7 +18,7 @@ Hyperscale data centers (Google, Facebook/Meta, Amazon) use Clos fabric topologi
 
 ## Address Plan for Hyperscale
 
-```
+```text
 Hyperscale DC address plan:
 Total DC allocation: 2001:db8::/32
 
@@ -40,7 +40,8 @@ BGP loopbacks (for iBGP):
 ## BGP Unnumbered for Fabric Links
 
 ```bash
-# FRR (Free Range Routing) — BGP unnumbered
+# FRR (Free Range Routing) - BGP unnumbered
+
 # Uses link-local addresses for BGP peering (no IPv6 per link needed)
 
 # /etc/frr/frr.conf on leaf switch
@@ -48,7 +49,7 @@ BGP loopbacks (for iBGP):
 interface eth1
   ipv6 nd ra-interval 10
   no ipv6 nd suppress-ra
-  # Link-local only — no global IPv6 address
+  # Link-local only - no global IPv6 address
 
 router bgp 65001
   bgp router-id 1.1.1.1
@@ -137,7 +138,7 @@ ip -6 route add default via ${ANYCAST_GW}
 
 ```bash
 #!/bin/bash
-# validate-hyperscale.sh — Check routing table scale
+# validate-hyperscale.sh - Check routing table scale
 
 echo "=== IPv6 Routing Table ==="
 ip -6 route show | wc -l
@@ -164,4 +165,4 @@ echo "NDP utilization: ${CURRENT}/${THRESH3} ($(( CURRENT * 100 / THRESH3 ))%)"
 
 ## Conclusion
 
-Hyperscale IPv6 data center design centers on BGP-only Clos fabrics with BGP unnumbered peering (link-local addresses, no per-link IPv6 assignments). Allocate /48 per pod with /64 server subnets. Enable 64-way ECMP in FRR with `maximum-paths 64` and kernel multipath hash. Use anycast gateway — all leaf switches share one IPv6 gateway address and MAC — enabling servers to move between racks without reconfiguration. The NDP cache size is the critical constraint at scale — set `gc_thresh3` to 2× the number of servers per spine to prevent NDP table overflow.
+Hyperscale IPv6 data center design centers on BGP-only Clos fabrics with BGP unnumbered peering (link-local addresses, no per-link IPv6 assignments). Allocate /48 per pod with /64 server subnets. Enable 64-way ECMP in FRR with `maximum-paths 64` and kernel multipath hash. Use anycast gateway - all leaf switches share one IPv6 gateway address and MAC - enabling servers to move between racks without reconfiguration. The NDP cache size is the critical constraint at scale - set `gc_thresh3` to 2× the number of servers per spine to prevent NDP table overflow.

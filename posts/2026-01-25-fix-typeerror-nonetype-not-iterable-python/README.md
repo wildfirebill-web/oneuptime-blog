@@ -20,6 +20,7 @@ The error occurs when Python tries to iterate over something that is None. Pytho
 
 ```python
 # This causes the error
+
 data = None
 for item in data:  # TypeError: 'NoneType' object is not iterable
     print(item)

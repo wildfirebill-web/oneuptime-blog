@@ -14,10 +14,10 @@ In multi-tenant Portainer deployments, different teams often have their own priv
 
 Go to **Registries > Add registry** and select the registry type:
 
-- **DockerHub** — requires username and access token
-- **AWS ECR** — uses IAM credentials
-- **GitLab Container Registry** — uses deploy token
-- **Custom** — any Docker-compatible registry
+- **DockerHub** - requires username and access token
+- **AWS ECR** - uses IAM credentials
+- **GitLab Container Registry** - uses deploy token
+- **Custom** - any Docker-compatible registry
 
 ## Configuring Registry Access per Team
 
@@ -37,6 +37,7 @@ TOKEN="your-admin-jwt-token"
 PORTAINER="https://portainer.example.com"
 
 # Add Tenant A's registry
+
 REG_A_ID=$(curl -s -X POST "$PORTAINER/api/registries" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -81,7 +82,7 @@ curl -s -X POST "$PORTAINER/api/registries" \
   }'
 ```
 
-ECR tokens expire every 12 hours — Portainer Business Edition auto-refreshes them.
+ECR tokens expire every 12 hours - Portainer Business Edition auto-refreshes them.
 
 ## Self-Hosted Registry per Tenant
 

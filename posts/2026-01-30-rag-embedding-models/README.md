@@ -118,6 +118,7 @@ OpenAI provides production-ready embedding models through their API.
 ```bash
 npm install openai
 # or
+
 pip install openai
 ```
 

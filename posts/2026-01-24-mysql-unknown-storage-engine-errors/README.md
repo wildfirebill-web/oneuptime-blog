@@ -78,6 +78,7 @@ WHERE PLUGIN_TYPE = 'STORAGE ENGINE';
 
 ```bash
 # Find error log location
+
 mysql -e "SHOW VARIABLES LIKE 'log_error'"
 
 # Common locations

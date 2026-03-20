@@ -1,10 +1,11 @@
-# How to Deploy Seldon Core on Rancher
+# How to Deploy Seldon Core on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, seldon, mlops, model-serving, kubernetes
+Tags: Rancher, Seldon, MLOps, Model-serving, Kubernetes
 
 Description: Guide to deploying Seldon Core on Rancher for scalable, production-grade ML model serving.
+
 ## Introduction
 
 Seldon Core is an open-source platform for deploying, scaling, and monitoring machine learning models on Kubernetes. It supports A/B testing, canary deployments, and multi-model pipelines, making it ideal for production ML serving on Rancher.
@@ -13,6 +14,7 @@ Seldon Core is an open-source platform for deploying, scaling, and monitoring ma
 
 ```bash
 # Add Seldon charts repository
+
 helm repo add seldonio https://storage.googleapis.com/seldon-charts
 helm repo update
 

@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Hetzner Cloud
+# How to Deploy Portainer on Hetzner Cloud - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to deploy Portainer on Hetzner Cloud servers, one of the 
 
 ## Why Hetzner for Portainer?
 
-Hetzner Cloud offers some of the best price-to-performance ratios in cloud hosting. A CX22 server (2 vCPU, 4GB RAM) costs ~€4/month — comparable performance to a $24/month Droplet elsewhere.
+Hetzner Cloud offers some of the best price-to-performance ratios in cloud hosting. A CX22 server (2 vCPU, 4GB RAM) costs ~€4/month - comparable performance to a $24/month Droplet elsewhere.
 
 ## Step 1: Create a Server via hcloud CLI
 
 ```bash
 # Install hcloud CLI
+
 brew install hcloud    # macOS
 # or download from https://github.com/hetznercloud/cli
 

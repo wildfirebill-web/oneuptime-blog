@@ -225,6 +225,7 @@ While running chaos experiments, watch the Istio telemetry to understand the imp
 
 ```bash
 # Check request success rate
+
 kubectl exec -n chaos-test deploy/productpage-v1 -c istio-proxy -- \
   pilot-agent request GET stats | grep "upstream_rq_"
 

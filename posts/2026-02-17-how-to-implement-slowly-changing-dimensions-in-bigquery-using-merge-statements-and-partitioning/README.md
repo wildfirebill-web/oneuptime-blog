@@ -329,6 +329,7 @@ Run SCD updates as part of your daily pipeline:
 
 ```bash
 # Schedule the Type 2 SCD update as a BigQuery scheduled query
+
 bq query --use_legacy_sql=false \
   --schedule="0 4 * * *" \
   --display_name="SCD Type 2 Customer Update" \

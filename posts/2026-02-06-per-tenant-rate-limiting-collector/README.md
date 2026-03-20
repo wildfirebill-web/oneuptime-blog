@@ -24,6 +24,7 @@ The OpenTelemetry Collector does not have a built-in per-tenant rate limiter, bu
 
 ```yaml
 # gateway-config.yaml
+
 receivers:
   otlp:
     protocols:

@@ -22,6 +22,7 @@ git clone https://github.com/netbox-community/netbox-docker.git
 cd netbox-docker
 
 # Configure
+
 cp env/netbox.env.example env/netbox.env
 # Edit env/netbox.env: set ALLOWED_HOSTS, SECRET_KEY
 
@@ -186,4 +187,4 @@ docker run -d \
 
 ## Conclusion
 
-IPAM tools like NetBox and phpIPAM bring structure to IPv4 address management. NetBox's prefix hierarchy, utilization tracking, and REST API make it ideal for large enterprises. Import your existing plan via CSV or API, create sites and VLANs to associate prefixes with network topology, and use the API for automation — creating prefixes when new VLANs are provisioned and marking IPs as used when devices are deployed. The investment in IPAM documentation pays dividends during troubleshooting and capacity planning.
+IPAM tools like NetBox and phpIPAM bring structure to IPv4 address management. NetBox's prefix hierarchy, utilization tracking, and REST API make it ideal for large enterprises. Import your existing plan via CSV or API, create sites and VLANs to associate prefixes with network topology, and use the API for automation - creating prefixes when new VLANs are provisioned and marking IPs as used when devices are deployed. The investment in IPAM documentation pays dividends during troubleshooting and capacity planning.

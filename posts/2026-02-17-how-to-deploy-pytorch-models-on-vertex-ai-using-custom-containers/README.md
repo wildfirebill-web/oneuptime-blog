@@ -32,6 +32,7 @@ from google.cloud import storage
 app = Flask(__name__)
 
 # Global model reference
+
 model = None
 device = None
 

@@ -25,6 +25,7 @@ Chrony comes installed by default on RHEL. If it's not there for some reason:
 
 ```bash
 # Install chrony
+
 sudo dnf install chrony -y
 
 # Enable and start the chronyd service

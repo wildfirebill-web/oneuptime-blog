@@ -1,4 +1,4 @@
-# How to Select Azure Regions for ACI Deployments in Portainer
+# How to Select Azure Regions for ACI Deployments in Portainer - Select
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,17 +19,18 @@ Choosing the right Azure region for ACI deployments affects:
 
 ```bash
 # List all regions where ACI is available
+
 az provider show -n Microsoft.ContainerInstance \
   --query "resourceTypes[?resourceType=='containerGroups'].locations" \
   -o table
 ```
 
 Common ACI-supported regions:
-- `eastus`, `eastus2` — US East Coast
-- `westus`, `westus2`, `westus3` — US West Coast
-- `northeurope`, `westeurope` — Europe
-- `eastasia`, `southeastasia` — Asia Pacific
-- `australiaeast` — Australia
+- `eastus`, `eastus2` - US East Coast
+- `westus`, `westus2`, `westus3` - US West Coast
+- `northeurope`, `westeurope` - Europe
+- `eastasia`, `southeastasia` - Asia Pacific
+- `australiaeast` - Australia
 
 ## Selecting a Region When Adding the ACI Environment in Portainer
 
@@ -108,4 +109,4 @@ Before selecting a region:
 
 ## Conclusion
 
-Region selection for ACI in Portainer is straightforward — configure it once when adding the environment. For production workloads with compliance requirements, always verify data residency rules before deploying to a region.
+Region selection for ACI in Portainer is straightforward - configure it once when adding the environment. For production workloads with compliance requirements, always verify data residency rules before deploying to a region.

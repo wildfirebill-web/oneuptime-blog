@@ -18,6 +18,7 @@ Azure Functions v4 for Node.js uses a new programming model that is cleaner and 
 
 ```bash
 # Install Azure Functions Core Tools
+
 npm install -g azure-functions-core-tools@4
 
 # Create a new Functions project

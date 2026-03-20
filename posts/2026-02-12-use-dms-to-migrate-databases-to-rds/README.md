@@ -36,6 +36,7 @@ Create a replication instance in the same VPC as your target RDS instance for be
 
 ```bash
 # Create a DMS replication instance
+
 aws dms create-replication-instance \
   --replication-instance-identifier my-migration-instance \
   --replication-instance-class dms.r6i.large \

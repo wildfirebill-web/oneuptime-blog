@@ -19,6 +19,7 @@ There are two main ways to use templates in Terraform:
 
 ```hcl
 # Modern approach
+
 resource "aws_instance" "web" {
   user_data = templatefile("${path.module}/scripts/init.sh", {
     hostname = var.hostname

@@ -1,11 +1,10 @@
----
-title: "Passing Providers Between Modules in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, modules
-description: "Learn how to pass provider configurations between parent and child modules in OpenTofu for flexible multi-region architectures."
----
-
 # Passing Providers Between Modules in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Modules
+
+Description: Learn how to pass provider configurations between parent and child modules in OpenTofu for flexible multi-region architectures.
 
 By default, child modules inherit the default provider configurations from their parent. But when you use provider aliases or need explicit control over which provider a module uses, you must pass providers explicitly via the `providers` argument.
 
@@ -15,6 +14,7 @@ When no `providers` argument is specified, modules inherit all default providers
 
 ```hcl
 # Root module
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -185,7 +185,7 @@ terraform {
     aws = {
       source                = "hashicorp/aws"
       version               = ">= 5.0"
-      # Optional alias — module can work without it
+      # Optional alias - module can work without it
       configuration_aliases = [aws.replica]
     }
   }

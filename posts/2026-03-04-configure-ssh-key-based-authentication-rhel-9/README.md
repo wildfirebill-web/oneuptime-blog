@@ -16,6 +16,7 @@ On your local workstation (not the server), generate a key pair:
 
 ```bash
 # Generate an Ed25519 key (recommended for RHEL)
+
 ssh-keygen -t ed25519 -C "jsmith@workstation"
 ```
 

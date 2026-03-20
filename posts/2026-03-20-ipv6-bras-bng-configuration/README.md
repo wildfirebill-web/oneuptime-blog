@@ -23,7 +23,7 @@ A BNG must support:
 
 Configure IPv6 subscriber sessions on a Cisco ASR 1000:
 
-```
+```text
 ! IPv6 address pool for subscribers
 ipv6 local pool SUBSCRIBER-POOL 2001:db8:subs::/40 56
 
@@ -49,8 +49,9 @@ radius server AUTH1
 
 On Juniper MX with Enhanced Subscriber Management:
 
-```
+```text
 # groups {
+
 #   subscriber-management {
 set access address-assignment pool RESIDENTIAL-POOL family inet6 prefix 2001:db8:subs::/40
 set access address-assignment pool RESIDENTIAL-POOL family inet6 prefix-length 56
@@ -65,7 +66,7 @@ set dynamic-profiles SUBSCRIBER-PROFILE interfaces pp0 unit "$junos-interface-un
 
 The BNG communicates with RADIUS to get per-subscriber IPv6 prefix assignments:
 
-```
+```text
 # FreeRADIUS - return IPv6 prefix for subscriber
 user@isp.com Cleartext-Password := "test123"
     Delegated-IPv6-Prefix = "2001:db8:subs:1a2b::/56",
@@ -82,7 +83,7 @@ Key RADIUS attributes for IPv6:
 
 When a subscriber comes online, the BNG injects a host route into the routing table:
 
-```
+```text
 ! Cisco IOS - verify subscriber routes
 show ipv6 route subscriber
 

@@ -1,8 +1,8 @@
-# How to Configure the HTTP Backend in OpenTofu
+# How to Configure the HTTP Backend in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the HTTP backend in OpenTofu to store state on any server that implements the OpenTofu HTTP state protocol.
 
@@ -124,14 +124,15 @@ terraform {
 ## Partial Configuration for CI/CD
 
 ```hcl
-# backend.tf — no credentials stored in code
+# backend.tf - no credentials stored in code
+
 terraform {
   backend "http" {}
 }
 ```
 
 ```bash
-# CI/CD pipeline — pass configuration at runtime
+# CI/CD pipeline - pass configuration at runtime
 tofu init \
   -backend-config="address=https://state.acme-corp.com/terraform/$ENV" \
   -backend-config="username=$STATE_USER" \
@@ -142,7 +143,7 @@ tofu init \
 
 A minimal HTTP state server must implement:
 
-```
+```text
 GET    /state        -> Return current state JSON
 POST   /state        -> Accept new state JSON body
 DELETE /state        -> Delete state

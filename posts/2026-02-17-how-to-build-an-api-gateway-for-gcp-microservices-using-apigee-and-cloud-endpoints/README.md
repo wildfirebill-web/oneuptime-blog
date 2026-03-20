@@ -22,6 +22,7 @@ First, create an OpenAPI specification for your API.
 
 ```yaml
 # openapi-spec.yaml - OpenAPI 2.0 specification for Cloud Endpoints
+
 swagger: "2.0"
 info:
   title: "My Microservices API"

@@ -78,6 +78,7 @@ The following command verifies your Kafka installation is accessible.
 
 ```bash
 # Verify Kafka is running by listing existing topics
+
 kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
 

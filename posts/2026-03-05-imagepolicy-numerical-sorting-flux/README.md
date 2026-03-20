@@ -32,6 +32,7 @@ The `order: asc` setting selects the highest numeric value.
 
 ```yaml
 # imagepolicy-numerical.yaml
+
 # Select the highest numerical tag (latest build number)
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

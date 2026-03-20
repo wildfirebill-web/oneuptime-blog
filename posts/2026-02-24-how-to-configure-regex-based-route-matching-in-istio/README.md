@@ -233,6 +233,7 @@ When your regex is not matching as expected, use these debugging approaches:
 
 ```bash
 # Check the VirtualService is applied correctly
+
 kubectl get vs my-app -o yaml
 
 # Look at the Envoy route configuration

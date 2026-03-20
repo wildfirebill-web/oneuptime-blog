@@ -120,6 +120,7 @@ The following ConfigMap ensures MetalLB is configured correctly with metrics ena
 
 ```yaml
 # metallb-config.yaml
+
 # This ConfigMap configures MetalLB with an address pool for LoadBalancer services
 # Metrics are enabled by default on port 7472 for both controller and speaker
 apiVersion: metallb.io/v1beta1

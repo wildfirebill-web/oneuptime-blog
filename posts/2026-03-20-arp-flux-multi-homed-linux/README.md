@@ -22,7 +22,7 @@ By default, Linux will respond to ARP requests for any IP configured on any inte
 
 **Example:**
 
-```
+```text
 eth0: 192.168.1.10/24
 eth1: 10.0.0.10/24
 
@@ -37,6 +37,7 @@ This confuses routers and switches that expect consistent IP-interface mappings.
 
 ```bash
 # Check arp_ignore and arp_filter settings for each interface
+
 for iface in /proc/sys/net/ipv4/conf/*/; do
     name=$(basename "$iface")
     ignore=$(cat "${iface}arp_ignore")

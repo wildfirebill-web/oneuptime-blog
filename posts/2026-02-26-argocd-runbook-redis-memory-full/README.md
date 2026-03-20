@@ -30,6 +30,7 @@ When ArgoCD's Redis instance runs out of memory, the effects cascade across the 
 
 ```bash
 # Check Redis pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-redis
 
 # Check current memory usage

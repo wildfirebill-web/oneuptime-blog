@@ -124,6 +124,7 @@ For enterprise environments, use a Tang server with Clevis for automatic unlocki
 
 ```bash
 # Install Clevis
+
 sudo dnf install clevis clevis-luks -y
 
 # Bind the pool to a Tang server

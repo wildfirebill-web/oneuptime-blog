@@ -41,6 +41,7 @@ The SDK has default limits on the number of attributes per span. The default is 
 from opentelemetry.sdk.trace import TracerProvider
 
 # Check the default limits
+
 provider = TracerProvider(
     span_limits=trace.SpanLimits(
         max_attributes=128,               # Default

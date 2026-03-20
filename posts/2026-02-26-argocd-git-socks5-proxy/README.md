@@ -288,6 +288,7 @@ After setting up the SOCKS5 proxy, verify connectivity:
 
 ```bash
 # Verify environment variables are set
+
 kubectl exec -n argocd deployment/argocd-repo-server -- env | grep -i proxy
 
 # Test HTTPS Git connectivity through the proxy

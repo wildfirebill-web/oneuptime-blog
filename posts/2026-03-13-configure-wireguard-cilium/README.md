@@ -24,6 +24,7 @@ When WireGuard is enabled, Cilium creates a `cilium_wg0` interface on each node 
 
 ```bash
 # On each node
+
 modprobe wireguard
 lsmod | grep wireguard
 ```

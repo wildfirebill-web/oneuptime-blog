@@ -35,6 +35,7 @@ Deploy the IBM Cloud Monitoring agent:
 
 ```bash
 # Get your monitoring ingestion key
+
 ibmcloud resource service-key my-monitoring-key --output json | \
   jq -r '.credentials.Sysdig_Access_Key'
 

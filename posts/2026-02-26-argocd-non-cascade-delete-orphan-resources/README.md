@@ -28,6 +28,7 @@ The simplest way to perform a non-cascade delete is through the ArgoCD CLI:
 
 ```bash
 # Delete the Application resource only, keep all managed resources
+
 argocd app delete my-app --cascade=false
 
 # Skip the confirmation prompt

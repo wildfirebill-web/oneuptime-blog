@@ -31,6 +31,7 @@ Install the TFX CLI if you have not already.
 
 ```bash
 # Install the TFX CLI globally using npm
+
 npm install -g tfx-cli
 ```
 

@@ -50,6 +50,7 @@ Define your base deployment using `${variable}` placeholders. These will be repl
 
 ```yaml
 # base/app/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -57,6 +57,7 @@ Check both client and server values since they can differ:
 
 ```bash
 # Check server value via command line
+
 mysql -e "SHOW VARIABLES LIKE 'max_allowed_packet';"
 
 # Check what the client sees

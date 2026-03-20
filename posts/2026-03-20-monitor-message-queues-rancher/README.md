@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Monitoring, Message Queue, Prometheus, Grafana, Alerting
+Tags: Rancher, Monitoring, Message Queues, Prometheus, Grafana, Alerting
 
 Description: Set up comprehensive monitoring for message queue workloads in Rancher using Prometheus, Grafana dashboards, and alerting rules.
 
@@ -31,6 +31,7 @@ The Bitnami RabbitMQ chart supports Prometheus metrics. Enable them in your valu
 
 ```yaml
 # Add to rabbitmq-values.yaml
+
 metrics:
   enabled: true
   serviceMonitor:

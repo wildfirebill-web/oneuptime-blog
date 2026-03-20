@@ -22,6 +22,7 @@ Harbor is an enterprise-grade container registry that includes security scanning
 
 ```bash
 # Download Harbor offline installer (do this on a connected machine)
+
 wget https://github.com/goharbor/harbor/releases/download/v2.10.0/harbor-offline-installer-v2.10.0.tgz
 
 # Transfer the file to your air-gapped environment

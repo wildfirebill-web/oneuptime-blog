@@ -19,6 +19,7 @@ Pod affinity and anti-affinity rules control which nodes pods can be scheduled o
 
 ```yaml
 # anti-affinity-ha.yml - deploy via Portainer
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

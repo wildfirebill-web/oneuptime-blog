@@ -36,6 +36,7 @@ Track the target firmware version and image file in variables.
 
 ```yaml
 # group_vars/ios_routers/firmware.yml - Firmware management variables
+
 ---
 firmware:
   # Target firmware details

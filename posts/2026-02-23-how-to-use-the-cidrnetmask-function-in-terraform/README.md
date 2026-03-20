@@ -16,6 +16,7 @@ The `cidrnetmask` function takes an IPv4 address prefix in CIDR notation and ret
 
 ```hcl
 # Convert a /24 prefix to its subnet mask
+
 output "mask" {
   value = cidrnetmask("10.0.0.0/24")
   # Result: "255.255.255.0"

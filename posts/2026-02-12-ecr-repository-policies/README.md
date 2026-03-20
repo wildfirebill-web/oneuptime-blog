@@ -27,6 +27,7 @@ The most common scenario is allowing another account or role to pull images from
 
 ```bash
 # Set a repository policy that allows cross-account pull
+
 aws ecr set-repository-policy \
   --repository-name my-web-app \
   --policy-text '{

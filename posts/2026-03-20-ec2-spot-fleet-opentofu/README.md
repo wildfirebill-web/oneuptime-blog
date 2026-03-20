@@ -20,6 +20,7 @@ EC2 Spot Fleet lets you launch a fleet of Spot instances from multiple instance 
 
 ```hcl
 # IAM role that allows the Spot Fleet service to manage instances
+
 resource "aws_iam_role" "spot_fleet" {
   name = "spot-fleet-role"
 

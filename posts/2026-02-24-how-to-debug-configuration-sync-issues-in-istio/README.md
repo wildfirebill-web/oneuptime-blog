@@ -133,6 +133,7 @@ Use `istioctl proxy-config` to see what configuration the proxy actually has:
 
 ```bash
 # Check routes
+
 istioctl proxy-config routes my-app-xxxxx.default
 
 # Check clusters (upstream endpoints)

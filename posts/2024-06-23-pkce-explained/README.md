@@ -86,6 +86,7 @@ import hashlib
 import base64
 
 # Generate a random 32-byte verifier and encode as base64url
+
 code_verifier = secrets.token_urlsafe(32)
 
 # Hash the verifier with SHA-256 and base64url encode the digest

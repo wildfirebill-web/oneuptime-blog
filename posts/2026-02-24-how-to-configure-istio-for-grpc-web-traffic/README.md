@@ -334,6 +334,7 @@ Open browser DevTools and check the Network tab. Look for a failed OPTIONS reque
 
 ```bash
 # Test preflight manually
+
 curl -v -X OPTIONS https://api.example.com/order.OrderService/GetOrder \
   -H "Origin: https://app.example.com" \
   -H "Access-Control-Request-Method: POST" \

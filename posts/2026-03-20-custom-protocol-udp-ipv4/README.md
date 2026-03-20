@@ -8,15 +8,15 @@ Description: Learn how to design and implement a custom application protocol ove
 
 ## UDP Protocol Characteristics
 
-UDP is connectionless and unreliable — packets may arrive out of order, be duplicated, or be lost. A custom UDP protocol must handle:
+UDP is connectionless and unreliable - packets may arrive out of order, be duplicated, or be lost. A custom UDP protocol must handle:
 
-- **Message typing** — distinguish different message kinds
-- **Sequence numbers** — detect reordering and duplicates
-- **Max size** — UDP payload should stay under 1400 bytes to avoid fragmentation
+- **Message typing** - distinguish different message kinds
+- **Sequence numbers** - detect reordering and duplicates
+- **Max size** - UDP payload should stay under 1400 bytes to avoid fragmentation
 
 ## Wire Format (16-byte header)
 
-```
+```text
 +------+------+--------+--------+--------+----------+
 | VER  | TYPE | FLAGS  |  SEQ   |   ACK  |  PAYLOAD |
 | 1B   | 1B   | 2B     |  4B    |  4B    |   N B    |
@@ -122,6 +122,7 @@ def udp_send_with_retry(sock: socket.socket, msg: UDPMessage,
     return None
 
 # Usage
+
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     ping = UDPMessage(MsgType.PING, seq=1)
     reply = udp_send_with_retry(s, ping, ("192.168.1.10", 9001))
@@ -133,4 +134,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
 
 ## Conclusion
 
-UDP protocol design requires explicit message typing and sequence numbers since there are no connection semantics. Keep payloads under 1400 bytes to avoid IP fragmentation. Implement retry-with-timeout on the client side for critical messages. Track sequence numbers to detect duplicate or out-of-order delivery. For truly reliable delivery over UDP, consider QUIC or KCP (a reliable UDP library) rather than implementing your own retransmission logic — these are production-tested reliable UDP implementations.
+UDP protocol design requires explicit message typing and sequence numbers since there are no connection semantics. Keep payloads under 1400 bytes to avoid IP fragmentation. Implement retry-with-timeout on the client side for critical messages. Track sequence numbers to detect duplicate or out-of-order delivery. For truly reliable delivery over UDP, consider QUIC or KCP (a reliable UDP library) rather than implementing your own retransmission logic - these are production-tested reliable UDP implementations.

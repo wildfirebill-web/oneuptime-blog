@@ -80,6 +80,7 @@ Pin a process to specific CPUs:
 
 ```bash
 # Pin to CPU 0 and 1
+
 sudo taskset -cp 0,1 $(pgrep my-app | head -1)
 ```
 

@@ -167,6 +167,7 @@ promote() {
 }
 
 # Progressive rollout: 10% -> 25% -> 50% -> 100%
+
 for WEIGHT in 10 25 50 100; do
   promote $WEIGHT
   echo "Waiting 60 seconds for metrics to stabilize..."

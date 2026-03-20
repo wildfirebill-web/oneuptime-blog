@@ -48,6 +48,7 @@ Create a properties file defining source and target clusters.
 
 ```properties
 # mm2.properties
+
 # Define the two clusters
 clusters = source, target
 

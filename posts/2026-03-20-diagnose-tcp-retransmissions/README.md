@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Retransmissions, Window Zero, Wireshark, tcpdump, Performance
+Tags: TCP, Retransmission, Window Zero, Wireshark, tcpdump, Performance
 
 Description: Learn how to identify and diagnose TCP retransmissions and window zero conditions using command-line tools and Wireshark, and determine whether the root cause is packet loss or application slowness.
 
@@ -22,6 +22,7 @@ Description: Learn how to identify and diagnose TCP retransmissions and window z
 
 ```bash
 # Quick retransmission count
+
 netstat -s | grep -i "retransmit\|window"
 
 # Output:
@@ -37,10 +38,10 @@ ss -s
 nstat -az | grep -E "TcpRetrans|TcpInErrs|TcpExtTCPLostRetransmit"
 
 # Key counters:
-# TcpRetransSegs — total retransmissions
-# TcpExtTCPTimeouts — retransmit due to timeout (bad: indicates loss or RTT issue)
-# TcpExtTCPFastRetrans — fast retransmit (normal: triggered by duplicate ACKs)
-# TcpExtTCPSackFailures — SACK-based retransmit failures
+# TcpRetransSegs - total retransmissions
+# TcpExtTCPTimeouts - retransmit due to timeout (bad: indicates loss or RTT issue)
+# TcpExtTCPFastRetrans - fast retransmit (normal: triggered by duplicate ACKs)
+# TcpExtTCPSackFailures - SACK-based retransmit failures
 ```
 
 ## Step 2: Monitor Live Retransmissions with ss
@@ -53,9 +54,9 @@ watch -n 1 "ss -tin | grep -E 'Retrans|rto|rtt'"
 ss -tin | awk '/retrans=[^0]/ {print}'
 
 # Key fields in ss -tin output:
-# rto:200      — current retransmission timeout in ms
-# rtt:1.5/0.5  — mean RTT / smoothed standard deviation
-# Retrans:0/3  — fast retransmits / timeout retransmits
+# rto:200      - current retransmission timeout in ms
+# rtt:1.5/0.5  - mean RTT / smoothed standard deviation
+# Retrans:0/3  - fast retransmits / timeout retransmits
 ```
 
 ## Step 3: Capture and Analyze with tcpdump
@@ -80,18 +81,18 @@ In Wireshark:
 1. Open the PCAP file
 2. Go to **Statistics → TCP Stream Graphs → Time-Sequence Graph (tcptrace)**
 3. Look for:
-   - **Vertical drops in the sequence graph** — retransmissions
-   - **Flat periods (no sequence advance)** — window zero stalls
+   - **Vertical drops in the sequence graph** - retransmissions
+   - **Flat periods (no sequence advance)** - window zero stalls
 4. Use display filter: `tcp.analysis.flags` to highlight all TCP anomalies
 
-```
+```text
 # Useful Wireshark display filters:
-tcp.analysis.retransmission          — retransmitted segments
-tcp.analysis.fast_retransmission     — 3 dup ACK triggered retransmit
-tcp.analysis.duplicate_ack           — duplicate ACKs (indicate loss)
-tcp.window_size == 0                 — window zero (receiver full)
-tcp.analysis.zero_window             — window zero events
-tcp.analysis.zero_window_probe       — probes sent after window zero
+tcp.analysis.retransmission          - retransmitted segments
+tcp.analysis.fast_retransmission     - 3 dup ACK triggered retransmit
+tcp.analysis.duplicate_ack           - duplicate ACKs (indicate loss)
+tcp.window_size == 0                 - window zero (receiver full)
+tcp.analysis.zero_window             - window zero events
+tcp.analysis.zero_window_probe       - probes sent after window zero
 ```
 
 ## Step 5: Distinguish Loss vs Application Slow
@@ -112,8 +113,8 @@ cat /var/log/nginx/access.log | awk '{print $NF}' | sort -n | tail -20
 ## Step 6: Reduce Retransmissions
 
 ```bash
-# If caused by packet loss — upgrade/fix the network
-# If caused by high latency — adjust RTO parameters
+# If caused by packet loss - upgrade/fix the network
+# If caused by high latency - adjust RTO parameters
 
 # Reduce minimum RTO (cautiously)
 sudo sysctl -w net.ipv4.tcp_rto_min_us=10000   # 10ms minimum (default ~200ms)
@@ -121,7 +122,7 @@ sudo sysctl -w net.ipv4.tcp_rto_min_us=10000   # 10ms minimum (default ~200ms)
 # Enable ECN to signal congestion without dropping
 sudo sysctl -w net.ipv4.tcp_ecn=1
 
-# If caused by window zero — increase receive buffers
+# If caused by window zero - increase receive buffers
 sudo sysctl -w net.ipv4.tcp_rmem="4096 1048576 134217728"
 ```
 

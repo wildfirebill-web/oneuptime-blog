@@ -22,6 +22,7 @@ Deploy Vault with the injector enabled:
 
 ```bash
 # Install Vault with injector
+
 helm install vault hashicorp/vault \
   --namespace vault \
   --set "injector.enabled=true" \

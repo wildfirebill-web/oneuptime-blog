@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Linux, Networking, Network Interfaces, sysadmin
+Tags: IPv4, Linux, Networking, Network Interfaces, Sysadmin
 
 Description: Mapping IPv4 addresses to network interfaces involves using ip, ifconfig, and Python's psutil to discover which addresses are bound to which interfaces, essential for multi-homed host configuration.
 
@@ -10,6 +10,7 @@ Description: Mapping IPv4 addresses to network interfaces involves using ip, ifc
 
 ```bash
 # Linux: modern approach with ip
+
 ip addr show
 
 # Show only addresses for a specific interface

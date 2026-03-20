@@ -185,6 +185,7 @@ class OrderProcessor:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 processor = OrderProcessor(r)
 

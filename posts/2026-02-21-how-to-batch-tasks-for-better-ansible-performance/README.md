@@ -16,6 +16,7 @@ Consider this common pattern:
 
 ```yaml
 # Bad: 6 separate tasks for creating directories
+
 - name: Create log directory
   file:
     path: /opt/app/logs

@@ -38,6 +38,7 @@ Policies select which pods they apply to using label selectors in the `selector`
 
 ```yaml
 # Calico NetworkPolicy selector (applies to pods with these labels)
+
 spec:
   selector: app == 'frontend' && tier == 'web'
 ```

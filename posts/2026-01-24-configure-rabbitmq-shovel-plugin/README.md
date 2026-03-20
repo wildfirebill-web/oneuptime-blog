@@ -47,6 +47,7 @@ First, enable the Shovel plugin on your RabbitMQ server.
 
 ```bash
 # Enable the shovel plugin
+
 rabbitmq-plugins enable rabbitmq_shovel
 
 # Enable the management interface for shovel (optional but recommended)

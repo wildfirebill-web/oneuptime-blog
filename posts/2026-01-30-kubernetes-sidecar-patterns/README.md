@@ -50,6 +50,7 @@ The main container writes logs to a shared volume, and the sidecar reads and for
 
 ```yaml
 # log-aggregation-sidecar.yaml
+
 # Pod with Fluent Bit sidecar for log shipping
 apiVersion: v1
 kind: Pod

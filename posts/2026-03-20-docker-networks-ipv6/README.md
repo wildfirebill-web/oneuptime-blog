@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Networks, Subnets, Bridge, Custom Network
+Tags: Docker, IPv6, Networks, Subnets, Bridge, Custom Networks
 
 Description: Create Docker bridge networks with custom IPv6 CIDR ranges, assign specific IPv6 subnets to networks, and connect containers to IPv6-enabled Docker networks.
 
@@ -14,6 +14,7 @@ Docker custom networks can be created with IPv6 support by specifying `--ipv6` a
 
 ```bash
 # Create a dual-stack network with IPv4 and IPv6 subnets
+
 docker network create \
     --driver bridge \
     --ipv6 \
@@ -122,4 +123,4 @@ docker network prune
 
 ## Conclusion
 
-Create IPv6-enabled Docker networks with `docker network create --ipv6 --subnet <ipv6-cidr>`. Custom networks require explicit IPv6 subnet specification — unlike the default bridge which uses `fixed-cidr-v6`. Use `--internal` to create isolated networks without external routing (useful for backend services). Assign specific IPv6 addresses to containers with `--ip6` flag. Inspect networks with `docker network inspect` to verify `EnableIPv6: true` and view the assigned IPv6 subnet.
+Create IPv6-enabled Docker networks with `docker network create --ipv6 --subnet <ipv6-cidr>`. Custom networks require explicit IPv6 subnet specification - unlike the default bridge which uses `fixed-cidr-v6`. Use `--internal` to create isolated networks without external routing (useful for backend services). Assign specific IPv6 addresses to containers with `--ip6` flag. Inspect networks with `docker network inspect` to verify `EnableIPv6: true` and view the assigned IPv6 subnet.

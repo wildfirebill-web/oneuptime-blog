@@ -21,6 +21,7 @@ You should never edit `/boot/grub/grub.cfg` directly. Instead, edit `/etc/defaul
 
 ```bash
 # After any change to /etc/default/grub, always run this
+
 sudo update-grub
 ```
 

@@ -14,6 +14,7 @@ Open WebUI (formerly Ollama WebUI) is a feature-rich, self-hosted web interface 
 
 ```yaml
 # open-webui-stack.yml
+
 version: "3.8"
 
 services:

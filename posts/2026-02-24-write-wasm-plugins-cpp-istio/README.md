@@ -31,6 +31,7 @@ You need Emscripten to compile C++ to Wasm:
 
 ```bash
 # Install Emscripten
+
 git clone https://github.com/emscripten-core/emsdk.git
 cd emsdk
 ./emsdk install latest

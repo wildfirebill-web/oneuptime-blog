@@ -65,6 +65,7 @@ For automated packaging, use the MSIX Packaging Tool command line.
 
 ```powershell
 # Convert an MSI installer to MSIX format using the command line tool
+
 MsixPackagingTool.exe create-package `
   --template "C:\Packaging\conversion-template.xml"
 ```

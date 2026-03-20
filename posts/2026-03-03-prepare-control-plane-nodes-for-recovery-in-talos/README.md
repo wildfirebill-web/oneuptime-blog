@@ -22,6 +22,7 @@ Before resetting anything, understand what state the nodes are in:
 
 ```bash
 # Check if the node is reachable
+
 talosctl version --nodes <cp-node-ip>
 
 # Check what services are running

@@ -66,6 +66,7 @@ This is the most natural fit. ISO 8601 dates sort correctly alphabetically.
 
 ```bash
 # CI pipeline tag format
+
 TAG="$(date +%Y-%m-%d)-${GIT_SHA::7}"
 # Produces: 2026-02-26-abc1234
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, radvd, Multi-Prefix, SLAAC, Networking
+Tags: IPv6, Router Advertisement, Radvd, Multi-Prefix, SLAAC, Networking
 
 Description: Configure IPv6 Router Advertisements to advertise multiple prefixes from different providers or network segments, enabling multi-homed IPv6 client configurations.
 
@@ -21,6 +21,7 @@ A single router can advertise multiple IPv6 prefixes in its Router Advertisement
 
 ```text
 # /etc/radvd.conf
+
 # Advertise two prefixes on the same interface
 
 interface eth1 {
@@ -50,7 +51,7 @@ interface eth1 {
 };
 ```
 
-After this configuration, each client will autoconfigure **two global IPv6 addresses** — one from each prefix.
+After this configuration, each client will autoconfigure **two global IPv6 addresses** - one from each prefix.
 
 ## Adding Route Information for Multi-Homing
 
@@ -118,7 +119,7 @@ interface eth1 {
 
 ## Cisco IOS Multi-Prefix RA
 
-```
+```text
 ! Advertise multiple prefixes on Cisco IOS
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 address 2001:db8:isp1:1::1/64

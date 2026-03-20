@@ -22,6 +22,7 @@ Configure memory limiter with essential parameters for memory protection.
 
 ```yaml
 # basic-memory-limiter.yaml
+
 receivers:
   otlp:
     protocols:

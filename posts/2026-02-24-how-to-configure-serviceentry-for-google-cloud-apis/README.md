@@ -313,6 +313,7 @@ Test connectivity from a pod:
 
 ```bash
 # Check if GCP APIs are reachable
+
 kubectl exec deploy/my-app -c my-app -- \
   curl -s -o /dev/null -w "%{http_code}" https://storage.googleapis.com
 

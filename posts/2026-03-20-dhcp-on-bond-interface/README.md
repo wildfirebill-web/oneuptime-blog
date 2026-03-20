@@ -16,6 +16,7 @@ A bond interface aggregates multiple physical interfaces into one logical interf
 
 ```bash
 # Install bonding tools
+
 apt install ifenslave -y
 modprobe bonding
 

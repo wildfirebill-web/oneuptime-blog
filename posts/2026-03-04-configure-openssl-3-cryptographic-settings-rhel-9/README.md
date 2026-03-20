@@ -41,6 +41,7 @@ flowchart TD
 
 ```bash
 # Check the installed OpenSSL version
+
 openssl version -a
 ```
 

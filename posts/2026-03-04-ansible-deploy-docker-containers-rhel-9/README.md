@@ -28,6 +28,7 @@ The `community.docker` Ansible collection is needed for Docker modules:
 
 ```bash
 # Install the Docker collection on the control node
+
 ansible-galaxy collection install community.docker
 ```
 

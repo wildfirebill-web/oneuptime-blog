@@ -18,6 +18,7 @@ Molecule needs a driver to create test instances. The Docker driver is the most 
 
 ```bash
 # Install Molecule with the Docker driver and Testinfra verifier
+
 pip install "molecule[docker]" molecule-plugins pytest-testinfra ansible
 ```
 

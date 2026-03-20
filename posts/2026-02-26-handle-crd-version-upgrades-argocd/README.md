@@ -128,6 +128,7 @@ Once both versions are being served, update your custom resource manifests in Gi
 
 ```yaml
 # Before - using v1
+
 apiVersion: example.com/v1
 kind: MyResource
 metadata:

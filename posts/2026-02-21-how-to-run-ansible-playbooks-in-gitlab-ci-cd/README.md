@@ -18,6 +18,7 @@ GitLab CI/CD uses a `.gitlab-ci.yml` file in the root of your repository. Here i
 
 ```yaml
 # .gitlab-ci.yml
+
 image: python:3.11-slim
 
 stages:

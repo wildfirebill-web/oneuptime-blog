@@ -33,6 +33,7 @@ Every Falco rule follows this YAML structure:
 
 ```yaml
 # A basic Falco rule detecting shell execution in containers
+
 - rule: Shell Spawned in Container
   desc: Detect shell execution inside a container
   condition: container.id != host and proc.name in (bash, sh, zsh, csh, tcsh)

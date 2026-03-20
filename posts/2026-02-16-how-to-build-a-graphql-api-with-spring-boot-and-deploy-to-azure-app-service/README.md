@@ -72,6 +72,7 @@ Spring for GraphQL uses a schema-first approach. Define your types, queries, and
 # src/main/resources/graphql/schema.graphqls
 
 # Product type with all available fields
+
 type Product {
     id: ID!
     name: String!

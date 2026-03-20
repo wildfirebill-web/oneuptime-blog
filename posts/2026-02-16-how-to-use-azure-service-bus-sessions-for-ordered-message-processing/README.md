@@ -40,6 +40,7 @@ Sessions must be enabled when the queue is created. You cannot enable them on an
 
 ```bash
 # Create a queue with sessions enabled
+
 az servicebus queue create \
   --name orders \
   --namespace-name my-servicebus \

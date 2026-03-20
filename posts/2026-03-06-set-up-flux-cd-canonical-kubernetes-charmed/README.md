@@ -30,6 +30,7 @@ Install Juju and configure a cloud provider:
 
 ```bash
 # Install Juju via snap
+
 sudo snap install juju --channel=3/stable
 
 # For local development, set up LXD as the cloud

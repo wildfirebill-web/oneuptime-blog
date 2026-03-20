@@ -886,6 +886,7 @@ Use curl or any HTTP client to request different formats:
 
 ```bash
 # Get JSON (default)
+
 curl https://localhost:5001/api/orders
 
 # Get CSV using Accept header

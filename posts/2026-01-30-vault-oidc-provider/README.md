@@ -54,6 +54,7 @@ Vault's identity secrets engine must be enabled and the OIDC provider feature tu
 
 ```bash
 # Enable the identity secrets engine (usually enabled by default)
+
 vault secrets enable identity
 
 # Create a named key that will sign ID tokens

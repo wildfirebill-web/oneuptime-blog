@@ -10,7 +10,7 @@ IPv6 split tunneling routes only specific IPv6 prefixes through the VPN tunnel w
 
 ## Split Tunneling Concept
 
-```
+```text
 Internal IPv6 traffic → VPN tunnel → Internal network
 Public IPv6 traffic   → Direct to Internet (not through VPN)
 ```
@@ -27,18 +27,19 @@ Address = 10.0.0.2/32
 Address = fd00:wg::2/128
 PrivateKey = <private-key>
 
-# No DNS override — use system DNS for public names
+# No DNS override - use system DNS for public names
 
 [Peer]
 PublicKey = <server-public-key>
 Endpoint = vpn.example.com:51820
 
 # Only route internal IPv6 prefixes through VPN
+
 AllowedIPs = 10.0.0.0/8,              # Internal IPv4
              fd00:internal::/48,        # Internal IPv6 unique-local
              2001:db8:office::/48,      # Office IPv6 public prefix
 
-# Public IPv6 (::/0) is NOT included — goes direct
+# Public IPv6 (::/0) is NOT included - goes direct
 ```
 
 ## Calculating Split Tunnel AllowedIPs
@@ -51,8 +52,8 @@ To route "everything except certain subnets":
 
 # Route everything EXCEPT your local network
 # Instead of ::/0, use:
-# 2000::/3  — covers all global unicast (public IPv6)
-# (excludes fc00::/7 — unique local, link-local, etc.)
+# 2000::/3  - covers all global unicast (public IPv6)
+# (excludes fc00::/7 - unique local, link-local, etc.)
 
 AllowedIPs = 2000::/3    # Only global IPv6 through VPN
 ```
@@ -147,4 +148,4 @@ ip -6 route add fd00:internal::/48 dev wg0
 | IPv6 direct routing bypasses monitoring | Log direct IPv6 separately |
 | Misconfiguration allows full bypass | Test all routes after configuration |
 
-Split tunneling reduces VPN load and improves performance for public content while keeping internal IPv6 resources accessible through the secure tunnel — the key is accurately defining which prefixes should be routed through the VPN.
+Split tunneling reduces VPN load and improves performance for public content while keeping internal IPv6 resources accessible through the secure tunnel - the key is accurately defining which prefixes should be routed through the VPN.

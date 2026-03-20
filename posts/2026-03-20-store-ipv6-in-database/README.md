@@ -130,6 +130,7 @@ def normalize_ipv6_for_storage(addr_str: str) -> str:
         raise ValueError(f"Invalid IP address: {addr_str}")
 
 # Examples
+
 print(normalize_ipv6_for_storage('2001:0DB8:0000::0001'))  # 2001:db8::1
 print(normalize_ipv6_for_storage('[::1]'))                  # ::1
 print(normalize_ipv6_for_storage('::ffff:192.168.1.1'))    # 192.168.1.1

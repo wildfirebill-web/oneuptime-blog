@@ -27,6 +27,7 @@ etcd has a configurable storage quota (default 8GB). Monitor usage:
 
 ```bash
 # Check etcd database size
+
 etcdctl endpoint status --write-out=table
 
 # Via Prometheus

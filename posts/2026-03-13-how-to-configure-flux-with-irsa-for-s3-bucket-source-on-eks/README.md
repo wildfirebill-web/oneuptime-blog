@@ -27,6 +27,7 @@ Create an S3 bucket to store your deployment artifacts:
 aws s3 mb s3://my-flux-artifacts --region us-east-1
 
 # Enable versioning for audit trail
+
 aws s3api put-bucket-versioning \
   --bucket my-flux-artifacts \
   --versioning-configuration Status=Enabled

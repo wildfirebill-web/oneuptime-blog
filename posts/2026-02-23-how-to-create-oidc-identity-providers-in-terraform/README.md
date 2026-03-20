@@ -37,6 +37,7 @@ GitHub Actions is the most popular use case for OIDC in AWS.
 
 ```hcl
 # Create the GitHub Actions OIDC provider
+
 resource "aws_iam_openid_connect_provider" "github_actions" {
   url = "https://token.actions.githubusercontent.com"
 

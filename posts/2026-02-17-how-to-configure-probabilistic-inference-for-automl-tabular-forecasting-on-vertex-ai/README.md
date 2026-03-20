@@ -40,6 +40,7 @@ from google.cloud import bigquery
 bq_client = bigquery.Client(project="your-project-id")
 
 # Query data with enough history to capture variability patterns
+
 query = """
 SELECT
     sku_id,

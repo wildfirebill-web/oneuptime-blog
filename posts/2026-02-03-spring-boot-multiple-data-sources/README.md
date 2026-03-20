@@ -61,6 +61,7 @@ Start by defining the connection properties for both databases in your `applicat
 
 ```yaml
 # application.yml
+
 # Configuration for multiple data sources in Spring Boot
 
 # Primary database - main application data

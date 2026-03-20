@@ -26,6 +26,7 @@ Let us get the obvious mistakes out of the way:
 
 ```hcl
 # NEVER: Hardcoded API key in configuration
+
 provider "datadog" {
   api_key = "abc123def456"  # This will end up in version control
   app_key = "xyz789uvw012"

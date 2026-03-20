@@ -16,6 +16,7 @@ In this guide, we will cover how to build a production-ready global CDN with Ter
 
 ```hcl
 # cdn/cloudfront.tf
+
 # Production CloudFront distribution
 
 resource "aws_cloudfront_distribution" "main" {

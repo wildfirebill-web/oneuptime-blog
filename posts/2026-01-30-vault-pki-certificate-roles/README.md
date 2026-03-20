@@ -51,6 +51,7 @@ Before creating roles, you need a functioning PKI backend.
 
 ```bash
 # Enable the PKI secrets engine at the default path
+
 vault secrets enable pki
 
 # Configure maximum lease TTL to 10 years for root CA

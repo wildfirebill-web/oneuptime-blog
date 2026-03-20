@@ -34,6 +34,7 @@ To use the Terraform provider, you need a Machine-to-Machine (M2M) application w
 
 ```hcl
 # versions.tf - Declare the Auth0 provider
+
 terraform {
   required_version = ">= 1.0"
 

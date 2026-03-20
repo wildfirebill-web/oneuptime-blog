@@ -34,6 +34,7 @@ Before diving into code, enable the required APIs and set up the environment.
 
 ```bash
 # Enable the APIs we need
+
 gcloud services enable run.googleapis.com
 gcloud services enable eventarc.googleapis.com
 gcloud services enable cloudbuild.googleapis.com

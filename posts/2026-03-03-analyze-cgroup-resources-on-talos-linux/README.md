@@ -41,6 +41,7 @@ Since Talos Linux does not provide SSH access, you use `talosctl` to interact wi
 
 ```bash
 # List the top-level cgroup hierarchy
+
 talosctl read /proc/cgroups --nodes <node-ip>
 
 # View the cgroup v2 mount

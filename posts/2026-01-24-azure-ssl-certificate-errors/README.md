@@ -55,6 +55,7 @@ Start by identifying exactly what is wrong with your certificate.
 
 ```bash
 # Check certificate from command line
+
 openssl s_client -connect myapp.azurewebsites.net:443 -servername myapp.azurewebsites.net 2>/dev/null | openssl x509 -noout -dates -subject -issuer
 
 # Expected output:

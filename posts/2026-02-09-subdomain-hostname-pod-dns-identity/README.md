@@ -49,6 +49,7 @@ The `subdomain` field must match the name of a headless service (a service with 
 
 ```yaml
 # Headless service for DNS
+
 apiVersion: v1
 kind: Service
 metadata:

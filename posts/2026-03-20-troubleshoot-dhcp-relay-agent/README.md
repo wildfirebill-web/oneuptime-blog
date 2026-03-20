@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP Relay, ip helper-address, Troubleshooting, Network, Cisco
+Tags: DHCP Relay, Ip helper-address, Troubleshooting, Networks, Cisco
 
 Description: Learn how to diagnose and fix DHCP relay agent issues where clients in remote subnets cannot get IP addresses because relay agents are not properly forwarding DHCP Discover packets to the DHCP server.
 
@@ -28,10 +28,11 @@ sequenceDiagram
 ## Step 1: Confirm the Problem
 
 ```bash
-# On client side — check if DHCP is failing
+# On client side - check if DHCP is failing
+
 # Linux
 sudo dhclient -v eth0 2>&1 | head -20
-# Look for: "No DHCPOFFERS received" — relay not forwarding
+# Look for: "No DHCPOFFERS received" - relay not forwarding
 
 # Windows
 ipconfig /release
@@ -44,13 +45,13 @@ ipconfig /renew
 
 ## Step 2: Check Relay Agent Configuration (Cisco IOS)
 
-```
+```text
 ! Check if ip helper-address is configured on the client VLAN interface
 Router# show run interface Vlan10
 !
 interface Vlan10
  ip address 10.10.0.1 255.255.255.0
- ip helper-address 192.168.1.100    ! DHCP server address — must be here
+ ip helper-address 192.168.1.100    ! DHCP server address - must be here
 !
 ! If helper-address is missing, add it:
 Router# configure terminal
@@ -74,7 +75,7 @@ Router# ping 192.168.1.100 source Vlan10
 # Check routing table
 Router# show ip route 192.168.1.100
 
-# Linux relay agent (dhcrelay) — check routing
+# Linux relay agent (dhcrelay) - check routing
 ip route get 192.168.1.100
 # Must show a valid route, not "unreachable"
 ```
@@ -82,7 +83,7 @@ ip route get 192.168.1.100
 ## Step 4: Check DHCP Server for Scope Issues
 
 ```bash
-# ISC DHCPD — verify subnet scope exists for the relay VLAN
+# ISC DHCPD - verify subnet scope exists for the relay VLAN
 # /etc/dhcp/dhcpd.conf must have a subnet matching the relay's giaddr
 
 # The giaddr is the relay agent's IP on the client VLAN (10.10.0.1)
@@ -106,7 +107,7 @@ journalctl -u isc-dhcp-server | grep "10.10.0" | tail -20
 # DHCP uses UDP 67 (server) and 68 (client)
 # Firewall must allow relay traffic
 
-# On Linux relay host — check iptables
+# On Linux relay host - check iptables
 sudo iptables -L -n | grep -E "67|68"
 
 # Allow DHCP relay traffic
@@ -115,7 +116,7 @@ sudo iptables -I INPUT -p udp --dport 68 -j ACCEPT
 sudo iptables -I FORWARD -p udp --dport 67 -j ACCEPT
 sudo iptables -I FORWARD -p udp --dport 68 -j ACCEPT
 
-# On DHCP server — must accept relay traffic from relay agent IP
+# On DHCP server - must accept relay traffic from relay agent IP
 sudo iptables -I INPUT -s 10.10.0.1 -p udp --dport 67 -j ACCEPT
 ```
 
@@ -148,7 +149,7 @@ ss -ulnp | grep :67
 ## Step 7: Capture DHCP Traffic to Confirm Relay
 
 ```bash
-# On relay agent — capture DHCP traffic on both interfaces
+# On relay agent - capture DHCP traffic on both interfaces
 # Client-facing interface (should see broadcasts)
 sudo tcpdump -i eth1 -n port 67 or port 68 -v
 

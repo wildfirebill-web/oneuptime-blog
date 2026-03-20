@@ -30,6 +30,7 @@ Create a comprehensive test environment with multiple networks and VM types.
 
 ```bash
 # Create test project
+
 openstack project create connectivity-test
 
 # Create three separate networks to test different connectivity paths

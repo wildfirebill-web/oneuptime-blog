@@ -58,7 +58,7 @@ check "database_is_available" {
   }
 
   assert {
-    # Check blocks do NOT have self — use data source or direct resource reference
+    # Check blocks do NOT have self - use data source or direct resource reference
     condition     = data.aws_db_instance.check_db.db_instance_status == "available"
     error_message = "Database is not in available state: ${data.aws_db_instance.check_db.db_instance_status}"
   }
@@ -115,6 +115,7 @@ In practice, use postconditions for correctness guarantees and check blocks for 
 
 ```hcl
 # Postcondition: Block if encryption isn't actually enabled
+
 resource "aws_ebs_volume" "data" {
   size      = 100
   encrypted = true
@@ -139,7 +140,7 @@ check "volume_encryption_compliance" {
 ## Failure Output Comparison
 
 Postcondition failure (blocks apply, taints resource):
-```
+```hcl
 Error: Resource postcondition failed
   on main.tf line 12, in resource "aws_ebs_volume" "data":
 Volume was created without encryption
@@ -147,7 +148,7 @@ Because of this error, OpenTofu has tainted the resource.
 ```
 
 Check block failure (warning only, apply succeeds):
-```
+```text
 Warning: Check block assertion failed
   on main.tf line 22, in check "volume_encryption_compliance":
 EBS volume encryption compliance check failed

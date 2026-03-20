@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, TCP, Client, IPv4, Networking, net package
+Tags: Go, TCP, Client, IPv4, Networking, Net package
 
 Description: Learn how to build a TCP client in Go that connects to an IPv4 server, sends data, and receives responses using the net package.
 

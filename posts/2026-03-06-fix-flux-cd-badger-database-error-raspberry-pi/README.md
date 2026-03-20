@@ -32,6 +32,7 @@ source-controller: badger.Open: resource temporarily unavailable
 
 ```bash
 # Check source-controller pod status
+
 kubectl get pods -n flux-system -l app=source-controller
 
 # Look for CrashLoopBackOff or Error status

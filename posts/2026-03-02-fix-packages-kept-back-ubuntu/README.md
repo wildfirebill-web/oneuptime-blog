@@ -79,6 +79,7 @@ If you only want to upgrade specific kept-back packages without a full-upgrade:
 
 ```bash
 # Install the specific kept-back packages by name
+
 sudo apt install linux-generic linux-headers-generic linux-image-generic
 ```
 

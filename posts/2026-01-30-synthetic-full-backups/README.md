@@ -427,6 +427,7 @@ create_synthetic_full() {
     # Start temporary PostgreSQL instance to apply WAL
     cat > "$temp_path/recovery.signal" << EOF
 # Recovery configuration
+
 EOF
 
     cat >> "$temp_path/postgresql.conf" << EOF

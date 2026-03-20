@@ -61,6 +61,7 @@ Here is the CI pipeline definition that validates templates and creates the depl
 
 ```yaml
 # azure-pipelines.yml - CI pipeline for Marketplace offer
+
 trigger:
   branches:
     include:

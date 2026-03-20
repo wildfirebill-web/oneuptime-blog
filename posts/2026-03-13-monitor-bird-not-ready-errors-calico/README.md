@@ -32,6 +32,7 @@ This guide covers three monitoring layers: Prometheus metrics and alerts, Kubern
 
 ```bash
 # Verify calico-node metrics endpoint is accessible
+
 NODE_POD=$(kubectl get pods -n kube-system -l k8s-app=calico-node -o name | head -1)
 kubectl exec $NODE_POD -n kube-system -- wget -qO- http://localhost:9091/metrics | grep -i "bird\|bgp" | head -20
 

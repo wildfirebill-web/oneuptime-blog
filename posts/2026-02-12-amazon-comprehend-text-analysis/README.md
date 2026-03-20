@@ -42,6 +42,7 @@ def detect_language(text):
     return languages[0]['LanguageCode']
 
 # Test with different languages
+
 detect_language("The quick brown fox jumps over the lazy dog.")
 detect_language("Le renard brun rapide saute par-dessus le chien paresseux.")
 detect_language("El zorro marron rapido salta sobre el perro perezoso.")

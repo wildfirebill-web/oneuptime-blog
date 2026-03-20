@@ -27,6 +27,7 @@ In this guide you will deploy the Spark Operator using Flux CD, create a SparkAp
 
 ```yaml
 # clusters/production/sources/spark-operator.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

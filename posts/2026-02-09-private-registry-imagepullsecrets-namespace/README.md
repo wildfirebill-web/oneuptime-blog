@@ -35,6 +35,7 @@ Create a secret for Docker registry authentication:
 
 ```bash
 # Using docker-registry secret type
+
 kubectl create secret docker-registry regcred \
   --docker-server=myregistry.azurecr.io \
   --docker-username=myusername \

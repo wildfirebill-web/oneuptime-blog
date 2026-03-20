@@ -35,6 +35,7 @@ Consider a monorepo with this structure:
 
 ```bash
 # Repository structure
+
 my-monorepo/
   apps/
     frontend/

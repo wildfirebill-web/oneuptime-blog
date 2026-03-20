@@ -61,6 +61,7 @@ When Prometheus scrapes port 15020 on the sidecar, it gets everything:
 
 ```bash
 # Check that merged metrics include your app's metrics
+
 kubectl exec <pod-name> -c istio-proxy -- \
   curl -s localhost:15020/stats/prometheus | grep "my_app_"
 ```

@@ -30,11 +30,12 @@ graph TD
 Movement detection determines when the MN has moved to a new network.
 
 ```bash
-# Method 1: Link-layer indication (fastest — immediate)
+# Method 1: Link-layer indication (fastest - immediate)
+
 # The wireless driver signals when association with a new AP completes
 # This triggers immediate movement detection in the kernel
 
-# Method 2: NDP-based detection (slower — default)
+# Method 2: NDP-based detection (slower - default)
 # MN notices it no longer receives RAs from the previous router
 # Or receives an RA from a new router with a different prefix
 
@@ -62,7 +63,7 @@ ip -6 addr show dev wlan0 scope global
 
 FMIPv6 pre-acquires the CoA on the target network before the handover, reducing latency.
 
-```
+```text
 FMIPv6 Procedure:
 1. MN sends RtSolPr to current router (request target AP info)
 2. Current router replies with PrRtAdv (target network prefix)
@@ -122,7 +123,7 @@ class MobileNode:
 # Disable DAD to eliminate 1-second delay (not recommended on untrusted networks)
 sysctl net.ipv6.conf.wlan0.dad_transmits=0
 
-# Use Optimistic DAD (RFC 4429) — treat address as usable immediately
+# Use Optimistic DAD (RFC 4429) - treat address as usable immediately
 # while DAD runs in background
 sysctl net.ipv6.conf.wlan0.optimistic_dad=1
 

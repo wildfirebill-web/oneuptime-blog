@@ -124,6 +124,7 @@ Write some duplicate data to test:
 
 ```bash
 # Write a 1GB file
+
 dd if=/dev/urandom of=/vdo-data/file1.dat bs=1M count=1024
 
 # Copy it (creates duplicate data)

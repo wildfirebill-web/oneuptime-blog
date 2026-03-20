@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward BlockAffinity configura
 
 ```bash
 # Verify current BlockAffinity resources
+
 calicoctl get blockaffinity -o yaml
 
 # Check the effective configuration on a specific node

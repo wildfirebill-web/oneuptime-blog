@@ -31,6 +31,7 @@ Create the necessary directories and configuration files.
 
 ```bash
 # Create the project structure
+
 mkdir -p mysql-replication/master mysql-replication/replica
 ```
 

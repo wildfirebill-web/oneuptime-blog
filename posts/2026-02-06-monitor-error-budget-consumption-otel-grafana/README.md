@@ -22,6 +22,7 @@ The OpenTelemetry Collector converts span data into metrics. Prometheus stores a
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

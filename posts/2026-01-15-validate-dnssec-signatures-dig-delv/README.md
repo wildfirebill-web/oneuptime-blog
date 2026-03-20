@@ -35,6 +35,7 @@ Both tools come from BIND utilities:
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install dnsutils
 
 # RHEL/CentOS/Fedora

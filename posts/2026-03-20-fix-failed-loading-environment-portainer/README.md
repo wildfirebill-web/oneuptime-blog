@@ -1,10 +1,10 @@
-# How to Fix "Failed Loading Environment" Errors in Portainer
+# How to Fix 'Failed Loading Environment' Errors in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Troubleshooting, Environments, Docker, Agent, Connectivity
 
-Description: Learn how to diagnose and fix "Failed Loading Environment" errors in Portainer caused by stale endpoints, network changes, or agent failures.
+Description: Learn how to diagnose and fix 'Failed Loading Environment' errors in Portainer caused by stale endpoints, network changes, or agent failures.
 
 ---
 
@@ -27,6 +27,7 @@ In Portainer go to **Environments > Select Environment > Edit**. Check that the 
 
 ```bash
 # On the agent host, confirm the agent is listening
+
 docker ps | grep portainer_agent
 # Note the mapped port
 

@@ -18,6 +18,7 @@ Before configuration generation, importing a resource looked like this:
 
 ```bash
 # Step 1: Write an empty resource block
+
 # resource "aws_instance" "web" {}
 
 # Step 2: Import the resource

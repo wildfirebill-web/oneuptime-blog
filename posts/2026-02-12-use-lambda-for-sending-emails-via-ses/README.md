@@ -20,6 +20,7 @@ For development, verify a single email address:
 
 ```bash
 # Verify an email address for sending
+
 aws ses verify-email-identity --email-address noreply@yourdomain.com
 ```
 

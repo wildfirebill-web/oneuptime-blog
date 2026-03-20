@@ -94,6 +94,7 @@ The first layer of an active-active setup is intelligent traffic distribution. H
 
 ```hcl
 # Terraform configuration for multi-region active-active with AWS Route 53
+
 # This creates health checks and weighted routing across multiple regions
 
 # Health check for US East region

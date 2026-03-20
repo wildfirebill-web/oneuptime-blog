@@ -1,11 +1,10 @@
----
-title: "Using Local Module Sources in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules
-description: "Learn how to reference and use local directory modules in OpenTofu for code organization and reuse within a project."
----
-
 # Using Local Module Sources in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules
+
+Description: Learn how to reference and use local directory modules in OpenTofu for code organization and reuse within a project.
 
 Local module sources reference modules stored on your local filesystem. They're ideal during development, for project-internal modules, and when you want to keep all code in a single repository.
 
@@ -22,13 +21,13 @@ module "vpc" {
 ```
 
 The path can be:
-- `./modules/vpc` — relative to the current configuration
-- `../shared/network` — parent directory
-- `/absolute/path/to/module` — absolute path (not portable!)
+- `./modules/vpc` - relative to the current configuration
+- `../shared/network` - parent directory
+- `/absolute/path/to/module` - absolute path (not portable!)
 
 ## Directory Structure
 
-```
+```text
 my-infrastructure/
 ├── main.tf                # Root module
 ├── variables.tf
@@ -50,6 +49,7 @@ my-infrastructure/
 
 ```hcl
 # main.tf
+
 module "vpc" {
   source = "./modules/vpc"
   name   = "production"
@@ -82,7 +82,7 @@ module "my_module" {
 
 ## No Version Constraints for Local Modules
 
-Unlike registry modules, local modules don't support version constraints — they always use whatever is on disk:
+Unlike registry modules, local modules don't support version constraints - they always use whatever is on disk:
 
 ```hcl
 # This is valid for registry modules:
@@ -104,7 +104,7 @@ During development, use local module paths to test changes before pushing:
 
 ```hcl
 # Temporarily override a registry module with local version
-# In development only — don't commit this!
+# In development only - don't commit this!
 module "networking" {
   # source = "myorg/networking/aws"  # Production
   source = "/Users/me/terraform-aws-networking"  # Local dev
@@ -113,4 +113,4 @@ module "networking" {
 
 ## Conclusion
 
-Local module sources are the simplest way to organize code within a project. Use them for project-specific modules that won't be shared, during development of modules you'll later publish, and for testing changes to shared modules locally before committing. Remember that local modules don't support version constraints — for versioned, shared modules, use a registry or Git source.
+Local module sources are the simplest way to organize code within a project. Use them for project-specific modules that won't be shared, during development of modules you'll later publish, and for testing changes to shared modules locally before committing. Remember that local modules don't support version constraints - for versioned, shared modules, use a registry or Git source.

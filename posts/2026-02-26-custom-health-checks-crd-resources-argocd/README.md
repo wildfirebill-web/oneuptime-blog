@@ -256,6 +256,7 @@ You can test your Lua health checks without deploying them to ArgoCD. Use the `a
 
 ```bash
 # Save your Lua script to a file
+
 cat > health.lua << 'EOF'
 hs = {}
 if obj.status ~= nil then

@@ -18,6 +18,7 @@ Internet Exchange Points provide a shared switching fabric where multiple ISPs p
 
 ```bash
 # Connect to IXP switch and configure interface
+
 # IXP assigns you: 2001:db8:ixp::42/64
 
 ip -6 addr add 2001:db8:ixp::42/64 dev eth-ixp
@@ -29,8 +30,8 @@ ip -6 addr add 2001:db8:ixp::42/64 dev eth-ixp
 
 ## FRR BGP Configuration for IXP
 
-```
-# /etc/frr/frr.conf — IPv6 BGP peering at IXP
+```bash
+# /etc/frr/frr.conf - IPv6 BGP peering at IXP
 
 router bgp 65001
   bgp router-id 1.1.1.1
@@ -61,7 +62,7 @@ router bgp 65001
 
 ## Route Filtering for IXP Peering
 
-```
+```bash
 # Best practice: filter what you accept and advertise at IXP
 
 # Accept only legitimate prefixes (not default route, not bogons)
@@ -85,7 +86,7 @@ route-map IXP_EXPORT permit 10
 
 ## IXP Route Server Peering
 
-```
+```bash
 # Most IXPs provide a route server
 # Peering with route server = automatic peering with all RS members
 

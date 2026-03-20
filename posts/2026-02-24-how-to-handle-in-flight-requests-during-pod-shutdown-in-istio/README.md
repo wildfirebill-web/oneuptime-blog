@@ -249,6 +249,7 @@ Test your setup under realistic load:
 
 ```bash
 # Start a load test that checks for errors
+
 kubectl run loadtest --image=fortio/fortio --rm -it -- \
   load -c 20 -qps 200 -t 300s -abort-on 1 \
   http://order-service.default.svc.cluster.local:8080/api/orders

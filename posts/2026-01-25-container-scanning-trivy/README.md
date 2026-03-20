@@ -28,6 +28,7 @@ Trivy runs on Linux, macOS, and Windows. Here are the common installation method
 
 ```bash
 # macOS with Homebrew
+
 brew install trivy
 
 # Debian/Ubuntu

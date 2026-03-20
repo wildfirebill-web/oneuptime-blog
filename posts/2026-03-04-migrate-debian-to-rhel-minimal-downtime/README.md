@@ -14,6 +14,7 @@ Like Ubuntu, Debian cannot be converted to RHEL in place. The migration requires
 
 ```bash
 # On Debian: Export the installed package list
+
 dpkg -l | awk '/^ii/{print $2}' > /tmp/debian-packages.txt
 
 # Document running services and open ports

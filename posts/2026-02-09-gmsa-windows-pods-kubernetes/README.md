@@ -34,6 +34,7 @@ On your domain controller, create the gMSA account:
 
 ```powershell
 # Import Active Directory module
+
 Import-Module ActiveDirectory
 
 # Create the gMSA account

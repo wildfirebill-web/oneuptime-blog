@@ -24,6 +24,7 @@ KEDA (Kubernetes Event Driven Autoscaling) acts as a comprehensive metrics adapt
 
 ```yaml
 # KEDA installation
+
 apiVersion: v1
 kind: Namespace
 metadata:

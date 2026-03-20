@@ -1,4 +1,4 @@
-# How to Configure K3s with an External Database (MySQL)
+# How to Configure K3s with an External Database (MySQL) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ By default, K3s uses embedded SQLite for single-server deployments or embedded e
 
 ## Architecture
 
-```
+```text
          ┌─────────────────┐
          │  Load Balancer  │
          │  (HAProxy/NGINX) │
@@ -37,6 +37,7 @@ Install and configure MySQL on a dedicated server:
 
 ```bash
 # Install MySQL 8.0 on Ubuntu
+
 sudo apt-get update
 sudo apt-get install -y mysql-server
 

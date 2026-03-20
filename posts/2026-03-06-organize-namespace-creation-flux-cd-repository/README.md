@@ -60,6 +60,7 @@ The cleanest approach is to create all namespaces in a dedicated Flux Kustomizat
 
 ```yaml
 # namespaces/kustomization.yaml
+
 # All namespaces managed by this cluster
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

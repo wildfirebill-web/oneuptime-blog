@@ -31,6 +31,7 @@ The simplest way to install Ansible is from the official Ubuntu repositories.
 
 ```bash
 # Update package index to ensure we have the latest package information
+
 sudo apt update
 
 # Install Ansible and its dependencies

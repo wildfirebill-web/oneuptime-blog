@@ -28,6 +28,7 @@ In this guide you will install KServe and its dependencies using Flux CD, create
 
 ```yaml
 # clusters/production/sources/kserve.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -47,6 +47,7 @@ Ubuntu Server uses Netplan for network configuration. The configuration lives in
 ```bash
 ls /etc/netplan/
 # Usually: 00-installer-config.yaml
+
 ```
 
 ### Static IPv6 Configuration

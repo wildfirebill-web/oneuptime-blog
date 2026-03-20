@@ -40,6 +40,7 @@ flowchart LR
 
 ```yaml
 # prometheus-rules-imageset.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

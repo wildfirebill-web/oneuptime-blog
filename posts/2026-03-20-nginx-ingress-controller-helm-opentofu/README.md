@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, NGINX, Ingress, Helm, OpenTofu, Infrastructure
+Tags: Kubernetes, Nginx, Ingress, Helm, OpenTofu, Infrastructure
 
 Description: Learn how to deploy the NGINX Ingress Controller with Helm and OpenTofu for Kubernetes HTTP/HTTPS routing with TLS termination and rate limiting.
 
@@ -14,6 +14,7 @@ NGINX Ingress Controller is one of the most widely used Kubernetes ingress imple
 
 ```hcl
 # main.tf - Helm provider configuration
+
 terraform {
   required_providers {
     helm = {

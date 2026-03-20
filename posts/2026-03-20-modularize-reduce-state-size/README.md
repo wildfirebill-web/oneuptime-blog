@@ -8,7 +8,7 @@ Description: Learn how to break a large monolithic OpenTofu state file into smal
 
 ## Introduction
 
-A state file with hundreds of resources causes slow plans, large lock contention windows, and high blast radius when something goes wrong. Modularizing into separate state files — each managing a focused set of resources — is the most impactful long-term performance and safety improvement.
+A state file with hundreds of resources causes slow plans, large lock contention windows, and high blast radius when something goes wrong. Modularizing into separate state files - each managing a focused set of resources - is the most impactful long-term performance and safety improvement.
 
 ## Current vs Target Architecture
 
@@ -30,7 +30,7 @@ graph TD
 
 Group resources by lifecycle and ownership:
 
-```
+```text
 networking/      → VPC, subnets, route tables, NAT gateways (rarely changes)
 security/        → Security groups, IAM roles (moderate change rate)
 databases/       → RDS, ElastiCache (changes rarely, high sensitivity)
@@ -42,6 +42,7 @@ applications/    → ECS services, Lambda functions (changes most frequently)
 
 ```bash
 # 1. Add the resource to the new configuration file
+
 # 2. Remove it from the old configuration
 # 3. Move the state entry to the new state file
 
@@ -64,7 +65,7 @@ tofu state mv \
 After splitting, cross-state references use `terraform_remote_state`:
 
 ```hcl
-# compute/main.tf — read VPC outputs from networking state
+# compute/main.tf - read VPC outputs from networking state
 data "terraform_remote_state" "networking" {
   backend = "s3"
   config = {
@@ -99,7 +100,7 @@ output "public_subnet_ids" {
 
 ## Recommended Directory Structure
 
-```
+```text
 infrastructure/
 ├── networking/
 │   ├── main.tf

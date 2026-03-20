@@ -31,6 +31,7 @@ Gateway endpoints are free and work by adding routes to your route tables.
 
 ```hcl
 # aws-gateway-endpoints.tf - S3 and DynamoDB gateway endpoints
+
 resource "aws_vpc_endpoint" "s3" {
   vpc_id       = aws_vpc.main.id
   service_name = "com.amazonaws.${var.aws_region}.s3"

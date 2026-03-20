@@ -29,6 +29,7 @@ Before making any changes, capture the current state of all BlockAffinity resour
 
 ```bash
 # List all BlockAffinity resources showing node-to-block assignments
+
 calicoctl get blockaffinity -o yaml
 
 # List all IP allocations to cross-reference with block affinities

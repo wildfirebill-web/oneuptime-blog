@@ -31,7 +31,7 @@ Higher scope is preferred for global communication.
 
 RFC 6724 defines a default policy table with label and precedence values:
 
-```
+```text
 Prefix             Precedence  Label
 ::1/128            50          0      # Loopback
 ::/0               40          1      # Default (IPv6)
@@ -44,12 +44,13 @@ fec0::/10          1           11     # Site-local (obsolete)
 3ffe::/16          1           12     # 6bone (obsolete)
 ```
 
-Higher precedence = preferred destination. Labels are used to match source and destination — same label is preferred.
+Higher precedence = preferred destination. Labels are used to match source and destination - same label is preferred.
 
 ## Viewing the Policy Table on Linux
 
 ```bash
 # Show the current address selection policy table
+
 ip addrlabel list
 
 # Default output shows prefix/len label pairs
@@ -71,7 +72,7 @@ Precedence is stored in `/proc/sys/net/ipv6/conf/all/use_tempaddr` for privacy e
 
 RFC 6724 source address selection evaluates candidates using 8 rules in order. The first rule that produces a winner stops evaluation:
 
-```
+```text
 Rule 1: Prefer same address (if source == destination, done)
 Rule 2: Prefer appropriate scope (source scope >= destination scope)
 Rule 3: Avoid deprecated addresses
@@ -86,7 +87,7 @@ Rule 8: Use longest matching prefix
 
 When DNS returns multiple addresses, the destination list is sorted:
 
-```
+```text
 Rule 1: Avoid unusable destinations
 Rule 2: Prefer matching scope
 Rule 3: Avoid deprecated source
@@ -164,4 +165,4 @@ curl -6 https://ifconfig.co
 
 ## Conclusion
 
-RFC 6724 address selection is automatic but configurable. The policy table assigns labels and precedence to prefixes — same-label source/destination pairs are preferred, and higher precedence destinations are tried first. The 8-rule source selection and 10-rule destination sorting algorithms work together to choose the best path. Key practical outcomes: IPv6 is preferred over IPv4 on dual-stack hosts (labels differ), temporary addresses are preferred for privacy (Rule 7), and ULA addresses stay local (scope matching). Modify the policy table with `ip addrlabel` to override defaults.
+RFC 6724 address selection is automatic but configurable. The policy table assigns labels and precedence to prefixes - same-label source/destination pairs are preferred, and higher precedence destinations are tried first. The 8-rule source selection and 10-rule destination sorting algorithms work together to choose the best path. Key practical outcomes: IPv6 is preferred over IPv4 on dual-stack hosts (labels differ), temporary addresses are preferred for privacy (Rule 7), and ULA addresses stay local (scope matching). Modify the policy table with `ip addrlabel` to override defaults.

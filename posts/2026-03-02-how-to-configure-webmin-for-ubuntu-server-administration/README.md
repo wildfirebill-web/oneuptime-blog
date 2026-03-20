@@ -16,6 +16,7 @@ The Webmin team maintains their own APT repository. Installing from there ensure
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y apt-transport-https software-properties-common curl
 

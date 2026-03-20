@@ -40,6 +40,7 @@ Install Molecule with your preferred driver support.
 
 ```bash
 # Install Molecule with Docker driver (most common)
+
 pip install molecule[docker]
 
 # Install with Podman driver (rootless containers)

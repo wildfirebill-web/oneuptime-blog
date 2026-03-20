@@ -14,6 +14,7 @@ The "Too many open files" error occurs when a process reaches its file descripto
 
 ```bash
 # Check the current soft and hard limits for your user
+
 ulimit -Sn   # soft limit (current effective limit)
 ulimit -Hn   # hard limit (maximum the soft limit can be raised to)
 

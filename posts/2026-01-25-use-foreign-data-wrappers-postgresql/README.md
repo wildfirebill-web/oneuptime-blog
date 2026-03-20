@@ -263,6 +263,7 @@ ORDER BY 1;
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install postgresql-14-mysql-fdw
 
 # From source

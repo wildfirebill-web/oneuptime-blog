@@ -26,6 +26,7 @@ First, create a basic Go project structure for your CSI driver:
 
 ```bash
 # Create the project directory
+
 mkdir minimal-csi-driver
 cd minimal-csi-driver
 

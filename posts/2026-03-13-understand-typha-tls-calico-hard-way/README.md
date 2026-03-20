@@ -43,6 +43,7 @@ In a Kubernetes deployment, certificates are stored as Secrets and mounted into 
 
 ```bash
 # Typha's certificates
+
 kubectl get secret calico-typha-tls -n calico-system
 
 # Felix's certificates

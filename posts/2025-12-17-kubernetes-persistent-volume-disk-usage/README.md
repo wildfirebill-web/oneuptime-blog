@@ -57,6 +57,7 @@ flowchart TB
 
 ```promql
 # Total capacity of all PVCs
+
 kubelet_volume_stats_capacity_bytes
 
 # In GB

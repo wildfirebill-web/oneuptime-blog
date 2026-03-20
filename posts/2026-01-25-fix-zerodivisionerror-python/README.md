@@ -14,6 +14,7 @@ The `ZeroDivisionError` occurs when you try to divide a number by zero. This is 
 
 ```python
 # Division by zero raises ZeroDivisionError
+
 10 / 0    # ZeroDivisionError: division by zero
 10 // 0   # ZeroDivisionError: integer division or modulo by zero
 10 % 0    # ZeroDivisionError: integer division or modulo by zero

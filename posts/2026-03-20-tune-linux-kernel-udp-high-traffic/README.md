@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Linux, Kernel, Performance, sysctl, Tuning
+Tags: UDP, Linux, Kernel, Performance, Sysctl, Tuning
 
 Description: Tune Linux kernel parameters for high-volume UDP traffic including socket buffers, NIC queues, interrupt handling, and memory settings to achieve maximum UDP throughput.
 
@@ -13,7 +13,8 @@ Default Linux kernel settings are conservative and optimized for general-purpose
 ## Socket Buffer Limits
 
 ```bash
-# Default limits are 212 KB — too small for high-throughput UDP:
+# Default limits are 212 KB - too small for high-throughput UDP:
+
 sysctl net.core.rmem_max          # Max receive buffer (application can request up to this)
 sysctl net.core.wmem_max          # Max send buffer
 sysctl net.core.rmem_default      # Default receive buffer (before application sets SO_RCVBUF)

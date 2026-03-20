@@ -53,6 +53,7 @@ The following commands set up a complete K3s environment in a virtual machine wi
 
 ```bash
 # Install Multipass using Homebrew
+
 # Multipass manages lightweight Ubuntu VMs optimized for development
 brew install multipass
 
@@ -623,7 +624,7 @@ kubectl delete pod debug
 
 ---
 
-## Resource Management for Development
+Resource Management for Development
 
 ### Limiting K3s Resource Usage
 

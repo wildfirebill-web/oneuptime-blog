@@ -102,6 +102,7 @@ If your port is named something like `web` or `api` without a protocol prefix, I
 
 ```bash
 # Check which ports Istio detected correctly
+
 istioctl analyze -n my-namespace
 ```
 

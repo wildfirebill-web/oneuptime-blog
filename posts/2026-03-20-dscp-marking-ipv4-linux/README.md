@@ -23,6 +23,7 @@ DSCP (Differentiated Services Code Point) is a 6-bit field in the IPv4 ToS (Type
 
 ```bash
 # Mark SSH traffic (outbound) with DSCP CS6 (high priority)
+
 sudo iptables -t mangle -A OUTPUT -p tcp --dport 22 \
   -j DSCP --set-dscp-class CS6
 

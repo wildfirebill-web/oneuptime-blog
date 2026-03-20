@@ -60,6 +60,7 @@ resource "azurerm_resource_group" "automation" {
 }
 
 # Consumption-tier Logic App with an HTTP trigger
+
 resource "azurerm_logic_app_workflow" "process_orders" {
   name                = "la-process-orders-prod"
   location            = azurerm_resource_group.automation.location

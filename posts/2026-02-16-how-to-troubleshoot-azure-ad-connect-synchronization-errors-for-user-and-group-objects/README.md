@@ -38,6 +38,7 @@ Open PowerShell on the Azure AD Connect server and run the following.
 
 ```powershell
 # Check the current sync cycle status and last run time
+
 Get-ADSyncScheduler
 ```
 

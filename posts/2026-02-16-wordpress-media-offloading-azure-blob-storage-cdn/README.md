@@ -35,6 +35,7 @@ Create a storage account optimized for serving media files.
 
 ```bash
 # Create a storage account
+
 az storage account create \
   --name wpmediastore \
   --resource-group rg-wordpress \

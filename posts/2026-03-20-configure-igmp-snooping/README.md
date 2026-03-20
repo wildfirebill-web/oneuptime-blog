@@ -12,7 +12,7 @@ Without IGMP snooping, a switch treats multicast frames like broadcasts and floo
 
 ## How IGMP Snooping Works
 
-```
+```text
 Without IGMP Snooping:
   Host A sends UDP multicast to 239.1.1.1
   Switch floods to ALL ports in the VLAN
@@ -38,7 +38,7 @@ Mrouter port:
 
 ## Enable IGMP Snooping on Cisco IOS
 
-```
+```text
 ! Cisco IOS switch IGMP snooping configuration:
 
 ! Enable globally (usually enabled by default):
@@ -67,7 +67,7 @@ ip igmp snooping vlan 10 mrouter interface GigabitEthernet0/1
 
 ## Configure IGMP Querier
 
-```
+```text
 ! IGMP querier sends periodic membership queries
 ! Required if no multicast router is present
 
@@ -93,6 +93,7 @@ show ip igmp snooping querier vlan 10
 # Linux kernel bridge supports IGMP snooping:
 
 # Check if IGMP snooping is enabled on bridge:
+
 cat /sys/class/net/br0/bridge/multicast_snooping
 # 1 = enabled, 0 = disabled
 
@@ -176,4 +177,4 @@ watch -n 2 "bridge mdb show"
 
 ## Conclusion
 
-IGMP snooping eliminates multicast flooding by tracking IGMP membership messages at the switch. Enable it on all VLANs carrying multicast traffic. Configure an IGMP querier if no multicast router is present — without periodic queries, switches will time out membership entries and flood again. On Linux bridges, use `echo 1 > /sys/class/net/br0/bridge/multicast_snooping` and enable the multicast querier. Verify operation by confirming that multicast traffic does NOT appear on ports with no group members. Use `bridge mdb show` on Linux or `show ip igmp snooping groups` on Cisco to inspect the membership database.
+IGMP snooping eliminates multicast flooding by tracking IGMP membership messages at the switch. Enable it on all VLANs carrying multicast traffic. Configure an IGMP querier if no multicast router is present - without periodic queries, switches will time out membership entries and flood again. On Linux bridges, use `echo 1 > /sys/class/net/br0/bridge/multicast_snooping` and enable the multicast querier. Verify operation by confirming that multicast traffic does NOT appear on ports with no group members. Use `bridge mdb show` on Linux or `show ip igmp snooping groups` on Cisco to inspect the membership database.

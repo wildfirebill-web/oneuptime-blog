@@ -47,6 +47,7 @@ For a production-grade setup, you will want to run Cortex in microservices mode.
 
 ```yaml
 # cortex-config.yaml
+
 # Single-binary Cortex configuration for OpenTelemetry metrics storage
 # Switch to microservices mode for production by running each target separately
 

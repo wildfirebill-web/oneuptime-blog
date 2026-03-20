@@ -22,6 +22,7 @@ Build roles that allow managing specific roles without escalation.
 
 ```yaml
 # rbac-safe-role-manager.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

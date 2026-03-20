@@ -1226,6 +1226,7 @@ spec:
 
 ```yaml
 # traefik.yml
+
 http:
   routers:
     api-router:

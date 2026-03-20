@@ -39,6 +39,7 @@ Before importing, make sure your data is organized in a way that maps well to a 
 
 ```bash
 # Check the size of your training data to ensure your Parallelstore
+
 # instance has enough capacity
 gsutil du -s gs://my-training-data/imagenet/
 

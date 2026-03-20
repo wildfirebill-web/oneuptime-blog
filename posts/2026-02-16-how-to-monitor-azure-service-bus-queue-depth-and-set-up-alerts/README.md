@@ -126,6 +126,7 @@ If you prefer the command line, the Azure CLI works too. Here is how to create t
 
 ```bash
 # Create an alert rule for active messages exceeding 1000
+
 az monitor metrics alert create \
   --name "alert-sb-active-messages-orders" \
   --resource-group "rg-messaging" \

@@ -54,6 +54,7 @@ For development, start Keycloak with verbose logging:
 
 ```bash
 # Start with debug logging enabled
+
 ./kc.sh start-dev --log-level=DEBUG
 ```
 

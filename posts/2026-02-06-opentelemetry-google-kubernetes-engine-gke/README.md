@@ -58,6 +58,7 @@ If you do not already have a cluster, create one with Workload Identity enabled.
 
 ```bash
 # Create a GKE cluster with Workload Identity and the monitoring scope
+
 gcloud container clusters create otel-demo \
   --zone us-central1-a \
   --num-nodes 3 \

@@ -1,8 +1,8 @@
-# How to Use the enabled Meta-Argument with Data Sources in OpenTofu
+# How to Use the enabled Meta-Argument with Data Sources in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, enabled, Meta-Argument, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, Enabled, Meta-Arguments, Infrastructure as Code, DevOps
 
 Description: A guide to using the enabled meta-argument with data sources in OpenTofu to conditionally fetch data based on configuration variables.
 
@@ -19,6 +19,7 @@ variable "use_existing_vpc" {
 }
 
 # Only query existing VPC if we're using one
+
 data "aws_vpc" "existing" {
   enabled = var.use_existing_vpc
   id      = var.existing_vpc_id

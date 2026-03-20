@@ -26,6 +26,7 @@ Or install via the CLI:
 
 ```bash
 # Install using Jenkins CLI
+
 java -jar jenkins-cli.jar -s http://localhost:8080/ install-plugin terraform
 
 # Or using the plugin manager tool

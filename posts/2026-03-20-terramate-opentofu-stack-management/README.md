@@ -8,12 +8,13 @@ Description: Learn how to use Terramate to organize OpenTofu configurations into
 
 ## Introduction
 
-Terramate is an orchestration tool for OpenTofu and Terraform that introduces the concept of "stacks" — self-contained units of infrastructure. Its killer feature is change detection: when you open a pull request, Terramate only runs `tofu plan` on the stacks that were actually modified, making large monorepos practical.
+Terramate is an orchestration tool for OpenTofu and Terraform that introduces the concept of "stacks" - self-contained units of infrastructure. Its killer feature is change detection: when you open a pull request, Terramate only runs `tofu plan` on the stacks that were actually modified, making large monorepos practical.
 
 ## Installing Terramate
 
 ```bash
 # macOS
+
 brew install terramate
 
 # Linux
@@ -70,7 +71,7 @@ terramate create stacks/rds
 This generates a `stack.tm.hcl` in each directory:
 
 ```hcl
-# stacks/networking/stack.tm.hcl — auto-generated
+# stacks/networking/stack.tm.hcl - auto-generated
 stack {
   name        = "networking"
   description = "VPC, subnets, and routing"
@@ -83,7 +84,7 @@ stack {
 Terramate's code generation injects common config (like backend or provider) into every stack:
 
 ```hcl
-# terramate.tm.hcl (root) — generate backend.tf in all stacks
+# terramate.tm.hcl (root) - generate backend.tf in all stacks
 generate_hcl "backend.tf" {
   content {
     terraform {

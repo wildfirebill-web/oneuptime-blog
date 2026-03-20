@@ -142,6 +142,7 @@ Or for more detailed metrics, query Prometheus:
 
 ```bash
 # CPU usage of sidecar containers
+
 container_cpu_usage_seconds_total{container="istio-proxy"}
 
 # Memory usage of sidecar containers

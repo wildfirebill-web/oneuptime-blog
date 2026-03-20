@@ -38,6 +38,7 @@ We will use Python with some popular libraries. Start by installing the dependen
 
 ```bash
 # Install required packages
+
 pip install openai chromadb langchain tiktoken pypdf
 ```
 

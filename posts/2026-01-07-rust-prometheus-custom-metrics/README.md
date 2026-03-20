@@ -30,6 +30,7 @@ Add the prometheus crate and dependencies to your `Cargo.toml`.
 ```toml
 [dependencies]
 # Prometheus metrics library
+
 prometheus = { version = "0.13", features = ["process"] }
 
 # Lazy initialization for global metrics

@@ -33,6 +33,7 @@ Before setting limits, observe actual resource consumption:
 
 ```bash
 # Install metrics-server if not present
+
 kubectl top pods -n flux-system
 
 # Example output:

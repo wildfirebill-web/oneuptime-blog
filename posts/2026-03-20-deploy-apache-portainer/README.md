@@ -41,6 +41,7 @@ Create `httpd-conf/httpd-vhosts.conf`:
 
 ```apache
 # Enable virtual hosting
+
 LoadModule vhost_alias_module modules/mod_vhost_alias.so
 
 <VirtualHost *:80>
@@ -64,7 +65,7 @@ LoadModule vhost_alias_module modules/mod_vhost_alias.so
 Apache's main config needs SSL module enabled. Use a custom httpd.conf or extend via Portainer:
 
 ```bash
-# Via Portainer console — enable SSL module
+# Via Portainer console - enable SSL module
 docker exec apache sh -c 'echo "LoadModule ssl_module modules/mod_ssl.so" >> /usr/local/apache2/conf/httpd.conf'
 docker exec apache sh -c 'echo "Include conf/extra/httpd-ssl.conf" >> /usr/local/apache2/conf/httpd.conf'
 ```

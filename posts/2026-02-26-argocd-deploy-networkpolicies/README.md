@@ -37,6 +37,7 @@ Start with a default deny policy for each namespace. This is the foundation of z
 
 ```yaml
 # apps/security/default-deny.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

@@ -22,6 +22,7 @@ Install the following:
 
 ```bash
 # Install Vagrant
+
 # On macOS
 brew install vagrant
 
@@ -332,7 +333,7 @@ logs/
 
 Any team member can clone the repository and run `vagrant up` followed by the setup script to get an identical cluster.
 
-## Resource Management
+Resource Management
 
 If your host machine is constrained, reduce the cluster size:
 

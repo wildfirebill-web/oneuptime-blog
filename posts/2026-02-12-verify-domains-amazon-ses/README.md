@@ -18,6 +18,7 @@ Start the verification process:
 
 ```bash
 # Verify a domain with SES
+
 aws ses verify-domain-identity \
   --domain "example.com" \
   --region us-east-1

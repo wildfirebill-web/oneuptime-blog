@@ -21,6 +21,7 @@ Ubuntu uses the `unattended-upgrades` package to handle automatic updates. It is
 ```yaml
 ---
 # playbook: setup-auto-updates-ubuntu.yml
+
 # Configure automatic security updates on Ubuntu/Debian systems
 - hosts: ubuntu_servers
   become: true

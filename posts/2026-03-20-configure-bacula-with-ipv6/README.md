@@ -12,7 +12,7 @@ Bacula is an enterprise-grade backup solution consisting of three daemons: the D
 
 ## Bacula IPv6 Architecture
 
-```
+```text
 Director (bcdir)       Storage Daemon (bsd)     File Daemon (bfd)
 [2001:db8::1]:9101 ←→ [2001:db8::2]:9103   ←→ [2001:db8::3]:9102
   Orchestrates           Stores data            Client to backup
@@ -36,6 +36,7 @@ Director {
 }
 
 # Storage daemon connection
+
 Storage {
   Name = backup-sd
   # Storage daemon IPv6 address

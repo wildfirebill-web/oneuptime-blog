@@ -33,6 +33,7 @@ This guide provides systematic troubleshooting for cilium-bugtool PowerShell com
 
 ```powershell
 # Check current execution policy
+
 Get-ExecutionPolicy
 
 # If Restricted, completions cannot load

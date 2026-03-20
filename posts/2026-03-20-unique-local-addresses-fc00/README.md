@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Unique-Local, fc00, fd00, RFC 4193, Private, Networking
+Tags: IPv6, Unique-Local, Fc00, Fd00, RFC 4193, Private, Networking
 
 Description: Understand IPv6 Unique-Local Addresses (ULA) in the fc00::/7 range (RFC 4193), their structure, when to use them, and how they differ from IPv4 private addresses.
 
@@ -12,15 +12,15 @@ Unique-Local Addresses (ULA) are the IPv6 equivalent of IPv4 private addresses (
 
 ## ULA Address Structure
 
-```
+```yaml
  | 7 bits  | 1 bit |  40 bits   |  16 bits  |  64 bits    |
  +---------+-------+------------+-----------+-------------+
  | 1111110 |   L   |  Global ID | Subnet ID | Interface ID|
  +---------+-------+------------+-----------+-------------+
  | fc00::/7                     |
 
- L=0: fc00::/8 — Reserved (not currently assigned)
- L=1: fd00::/8 — Locally assigned (the one you use)
+ L=0: fc00::/8 - Reserved (not currently assigned)
+ L=1: fd00::/8 - Locally assigned (the one you use)
 
  Most ULA addresses start with fd:
    fd00::/8 = Locally assigned ULA
@@ -64,6 +64,7 @@ def generate_ula_prefix() -> str:
 prefix = generate_ula_prefix()
 print(f"Generated ULA prefix: {prefix}")
 # Example: fd3a:b2c1:d4e5::/48
+
 ```
 
 ## Subnet Planning with ULA

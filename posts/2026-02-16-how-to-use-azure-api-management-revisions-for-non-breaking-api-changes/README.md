@@ -72,6 +72,7 @@ Using the query parameter approach:
 
 ```bash
 # Test revision 2 of an API
+
 # The rev query parameter specifies which revision to use
 curl -H "Ocp-Apim-Subscription-Key: YOUR_KEY" \
      "https://yourapi.azure-api.net/orders?rev=2"

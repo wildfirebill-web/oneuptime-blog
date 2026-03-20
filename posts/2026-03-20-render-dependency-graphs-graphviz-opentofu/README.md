@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Graphviz, Dependency Graphs, Visualization, Infrastructure as Code
+Tags: OpenTofu, Graphviz, Dependency Graph, Visualization, Infrastructure as Code
 
 Description: Learn how to render OpenTofu dependency graphs into clear visual diagrams using Graphviz layout engines and rendering options.
 
@@ -12,6 +12,7 @@ Graphviz is the standard tool for rendering OpenTofu's DOT-format dependency gra
 
 ```bash
 # Ubuntu / Debian
+
 sudo apt-get install -y graphviz
 
 # macOS
@@ -77,7 +78,7 @@ Graphviz allows inline attribute overrides. Create a wrapper script that appends
 
 ```bash
 #!/usr/bin/env bash
-# styled-graph.sh — renders a styled OpenTofu dependency graph
+# styled-graph.sh - renders a styled OpenTofu dependency graph
 
 tofu graph | sed 's/digraph {/digraph {\n    graph [bgcolor="white" fontname="Helvetica"]\n    node [fontname="Helvetica" fontsize=10]\n    edge [color="gray50"]/' | \
   dot -Tsvg -o styled-graph.svg

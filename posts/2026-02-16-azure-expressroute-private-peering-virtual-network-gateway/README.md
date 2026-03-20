@@ -38,6 +38,7 @@ First, create the ExpressRoute circuit. You will need to choose a connectivity p
 
 ```bash
 # Create a resource group for ExpressRoute resources
+
 az group create \
   --name rg-expressroute \
   --location eastus

@@ -75,6 +75,7 @@ During a plan or apply, sensitive variables are injected into the execution envi
 
 ```text
 # Plan output
+
 Terraform will perform the following actions:
 
   # aws_db_instance.main will be created

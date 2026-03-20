@@ -129,6 +129,7 @@ class DateNormalizer:
 
 
 # Usage example
+
 normalizer = DateNormalizer()
 
 test_dates = [

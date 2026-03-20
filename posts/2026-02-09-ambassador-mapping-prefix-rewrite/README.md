@@ -27,6 +27,7 @@ Let's start with a simple Mapping:
 
 ```yaml
 # basic-mapping.yaml
+
 apiVersion: getambassador.io/v3alpha1
 kind: Mapping
 metadata:

@@ -144,4 +144,4 @@ tofu apply tfplan
 
 ## Summary
 
-SageMaker endpoints provide managed, scalable ML model serving. OpenTofu manages the model definition, endpoint configuration with data capture, the endpoint itself, and auto-scaling — creating a complete, reproducible MLOps deployment pipeline.
+SageMaker endpoints provide managed, scalable ML model serving. OpenTofu manages the model definition, endpoint configuration with data capture, the endpoint itself, and auto-scaling - creating a complete, reproducible MLOps deployment pipeline.

@@ -1,4 +1,4 @@
-# How to Set Up Wildcard DNS for Portainer Services
+# How to Set Up Wildcard DNS for Portainer Services - Services
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure wildcard DNS and wildcard SSL certificates s
 
 ---
 
-With wildcard DNS, a single record like `*.home.lab` routes all subdomains to your server. Combined with Traefik's label-based routing, every new container you deploy in Portainer automatically gets a subdomain — no DNS changes required per service. This guide covers both local wildcard DNS and wildcard Let's Encrypt certificates.
+With wildcard DNS, a single record like `*.home.lab` routes all subdomains to your server. Combined with Traefik's label-based routing, every new container you deploy in Portainer automatically gets a subdomain - no DNS changes required per service. This guide covers both local wildcard DNS and wildcard Let's Encrypt certificates.
 
 ---
 
@@ -31,13 +31,14 @@ For **local/homelab DNS** (Pi-hole or AdGuard):
 
 ```bash
 # Pi-hole: add to custom dnsmasq config inside the container
+
 docker exec pihole bash -c \
   "echo 'address=/.home.lab/192.168.1.100' > /etc/dnsmasq.d/03-wildcard.conf && pihole restartdns"
 ```
 
 For **public DNS** (Cloudflare or similar):
 
-```
+```text
 *.example.com    A    203.0.113.10
 ```
 
@@ -113,7 +114,7 @@ labels:
 Any new container deployed via Portainer just needs these labels to get a subdomain automatically.
 
 ```yaml
-# grafana-stack.yml — automatically routed to grafana.example.com
+# grafana-stack.yml - automatically routed to grafana.example.com
 version: "3.8"
 
 services:

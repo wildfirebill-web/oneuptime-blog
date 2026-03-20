@@ -23,20 +23,21 @@ OSPFv3 address families are identified by an **Instance ID** field in the Hello 
 Standard OSPFv3 without RFC 5838 uses Instance ID 0 for IPv6 unicast:
 
 ```bash
-# FRRouting — standard OSPFv3 (IPv6 unicast, Instance ID 0)
+# FRRouting - standard OSPFv3 (IPv6 unicast, Instance ID 0)
+
 router ospf6
  ospf6 router-id 1.1.1.1
 
 interface eth0
  ipv6 ospf6 area 0.0.0.0
- ipv6 ospf6 instance-id 0    # Default — IPv6 unicast
+ ipv6 ospf6 instance-id 0    # Default - IPv6 unicast
 ```
 
 ## Cisco Address-Family Configuration (RFC 5838)
 
 The modern Cisco syntax uses explicit address-family blocks:
 
-```
+```text
 ! Configure OSPFv3 with both IPv4 and IPv6 address families
 Router(config)# router ospfv3 1
 Router(config-router)# router-id 1.1.1.1
@@ -57,7 +58,7 @@ Router(config-if)# ospfv3 1 ipv4 area 0
 
 ## Verification
 
-```
+```text
 ! Show OSPFv3 process with address family info
 Router# show ospfv3
 

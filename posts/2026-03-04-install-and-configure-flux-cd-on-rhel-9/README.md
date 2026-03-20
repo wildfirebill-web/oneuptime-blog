@@ -20,6 +20,7 @@ Flux CD can be installed and configured on RHEL to provide robust functionality 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

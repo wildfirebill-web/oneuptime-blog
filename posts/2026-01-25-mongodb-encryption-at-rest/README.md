@@ -42,6 +42,7 @@ For development or simpler deployments, local keyfile encryption provides basic 
 
 ```bash
 # Generate a 32-byte encryption key
+
 # This key must be stored securely and backed up
 openssl rand -base64 32 > /etc/mongodb/encryption-keyfile
 

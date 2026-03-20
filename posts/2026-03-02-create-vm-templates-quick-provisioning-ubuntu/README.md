@@ -27,6 +27,7 @@ Start by creating a VM with your standard configuration:
 
 ```bash
 # Create the base VM
+
 sudo virt-install \
   --name ubuntu-base \
   --memory 2048 \

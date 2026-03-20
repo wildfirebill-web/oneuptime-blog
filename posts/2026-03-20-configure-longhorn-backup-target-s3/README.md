@@ -49,6 +49,7 @@ Create an IAM policy with the following permissions for your Longhorn backup use
 
 ```bash
 # Using AWS CLI - create the S3 bucket
+
 aws s3 mb s3://your-longhorn-backup-bucket --region us-east-1
 
 # Enable versioning (optional but recommended)
@@ -178,7 +179,7 @@ kubectl get settings.longhorn.io backup-target -n longhorn-system -o yaml
 kubectl get backupvolumes.longhorn.io -n longhorn-system
 ```
 
-In the Longhorn UI, navigate to **Backup** — if you see the backup list load without errors, the connection is working.
+In the Longhorn UI, navigate to **Backup** - if you see the backup list load without errors, the connection is working.
 
 ## Test the Backup
 

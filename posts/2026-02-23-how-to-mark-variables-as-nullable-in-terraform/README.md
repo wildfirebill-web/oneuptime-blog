@@ -20,6 +20,7 @@ By default, every Terraform variable has `nullable = true`. This means the calle
 # variables.tf
 
 # By default, nullable is true.
+
 # If someone passes null, Terraform uses the default.
 variable "instance_type" {
   description = "EC2 instance type"

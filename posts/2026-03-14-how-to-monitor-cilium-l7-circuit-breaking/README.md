@@ -22,6 +22,7 @@ Monitoring L7 circuit breaking in production helps you understand when services 
 
 ```promql
 # Circuit breaker overflow (connections rejected)
+
 rate(envoy_cluster_upstream_cx_overflow[5m])
 
 # Pending request overflow

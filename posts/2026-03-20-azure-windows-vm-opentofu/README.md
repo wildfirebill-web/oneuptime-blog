@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Windows, Virtual Machines, Compute, RDP, Infrastructure as Code
+Tags: OpenTofu, Azure, Windows, Virtual Machine, Compute, RDP, Infrastructure as Code
 
 Description: Learn how to create Windows Server virtual machines on Azure with OpenTofu, including WinRM configuration, managed disks, and PowerShell DSC extensions.
 
@@ -154,6 +154,7 @@ tofu plan
 tofu apply
 
 # Connect via Azure Bastion or VPN (avoid public RDP in production)
+
 # Get private IP
 tofu output -raw private_ip_address
 
@@ -166,4 +167,4 @@ az network bastion rdp \
 
 ## Conclusion
 
-Never expose RDP (port 3389) directly to the public internet—use Azure Bastion for RDP access to avoid brute-force attacks. Store the `admin_password` in Azure Key Vault and retrieve it with a data source rather than hardcoding it. Set `patch_mode = "AutomaticByPlatform"` to enable Azure-managed patching that respects maintenance windows. For domain-joined VMs, use the `JsonADDomainExtension` to automate joining Windows VMs to Active Directory.
+Never expose RDP (port 3389) directly to the public internet-use Azure Bastion for RDP access to avoid brute-force attacks. Store the `admin_password` in Azure Key Vault and retrieve it with a data source rather than hardcoding it. Set `patch_mode = "AutomaticByPlatform"` to enable Azure-managed patching that respects maintenance windows. For domain-joined VMs, use the `JsonADDomainExtension` to automate joining Windows VMs to Active Directory.

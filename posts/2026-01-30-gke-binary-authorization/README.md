@@ -64,6 +64,7 @@ First, enable the necessary Google Cloud APIs for Binary Authorization.
 
 ```bash
 # Enable Binary Authorization API
+
 gcloud services enable binaryauthorization.googleapis.com
 
 # Enable Container Analysis API for storing attestations

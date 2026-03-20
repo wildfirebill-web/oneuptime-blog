@@ -35,6 +35,7 @@ Create a dedicated SSH key pair for Flux CD to use when connecting to Bitbucket 
 
 ```bash
 # Generate an SSH key pair for Flux
+
 ssh-keygen -t ed25519 -C "flux-cd" -f ~/.ssh/flux-bitbucket -N ""
 
 # Display the public key to add to Bitbucket Server

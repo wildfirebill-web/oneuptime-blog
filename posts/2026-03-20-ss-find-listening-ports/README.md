@@ -12,6 +12,7 @@ Listing all listening ports reveals what services are exposed on your server. Th
 
 ```bash
 # All listening TCP sockets
+
 ss -tl
 
 # All listening UDP sockets
@@ -82,7 +83,7 @@ ss -tlnp | grep -v -E ':(22|80|443|25|53|3306|5432)\b'
 
 ```bash
 #!/bin/bash
-# wait-for-port.sh — Wait until a service starts listening
+# wait-for-port.sh - Wait until a service starts listening
 
 HOST="localhost"
 PORT="8080"
@@ -117,4 +118,4 @@ sudo ss -tlnp | grep ':80 '
 # listen [::]:80;     → IPv6
 ```
 
-Regularly auditing listening ports with `ss -tulnp` is a fundamental security practice — every unexpected open port is a potential attack vector that should be investigated and closed.
+Regularly auditing listening ports with `ss -tulnp` is a fundamental security practice - every unexpected open port is a potential attack vector that should be investigated and closed.

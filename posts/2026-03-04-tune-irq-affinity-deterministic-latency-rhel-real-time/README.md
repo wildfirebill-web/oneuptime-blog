@@ -14,6 +14,7 @@ Hardware interrupts (IRQs) can introduce unpredictable latency spikes on CPUs ru
 
 ```bash
 # List all IRQs and their current CPU affinity
+
 cat /proc/interrupts
 
 # View the affinity mask for a specific IRQ (e.g., IRQ 42)

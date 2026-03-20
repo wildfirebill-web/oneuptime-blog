@@ -41,6 +41,7 @@ Back up before doing anything else. There are no exceptions to this rule.
 
 ```bash
 # Create a full disk image backup
+
 sudo dd if=/dev/sdb1 of=/backup/sdb1.img bs=4M status=progress
 
 # Or use rsync to back up file contents

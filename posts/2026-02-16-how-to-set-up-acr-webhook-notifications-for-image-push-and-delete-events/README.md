@@ -32,6 +32,7 @@ The simplest way to create a webhook is through the Azure CLI.
 
 ```bash
 # Create a webhook that fires on image push events
+
 az acr webhook create \
   --name imagePushNotification \
   --registry myregistry \

@@ -50,6 +50,7 @@ You can create a dashboard using the Cloud Console or the gcloud CLI. Here is a 
 
 ```bash
 # Create a monitoring dashboard for Memorystore Redis
+
 gcloud monitoring dashboards create --config='
 {
   "displayName": "Memorystore Redis Performance",

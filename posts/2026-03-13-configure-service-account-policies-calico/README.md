@@ -26,6 +26,7 @@ This guide shows how to configure service account-based network policies in Cali
 
 ```bash
 # Create service accounts for each workload
+
 kubectl create serviceaccount frontend-sa -n production
 kubectl create serviceaccount backend-sa -n production
 kubectl create serviceaccount db-sa -n production

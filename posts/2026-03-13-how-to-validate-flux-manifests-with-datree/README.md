@@ -22,6 +22,7 @@ Datree goes beyond schema validation by checking Kubernetes manifests against co
 
 ```bash
 # macOS / Linux (install script)
+
 curl https://get.datree.io | /bin/bash
 
 # macOS (Homebrew)

@@ -31,6 +31,7 @@ Start with the dependencies. The `notify` crate is the standard choice for cross
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 notify = "6.1"
 notify-debouncer-mini = "0.4"

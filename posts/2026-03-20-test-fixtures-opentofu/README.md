@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Testing, Fixtures, Test Infrastructure, Test Setup
 
-Description: Learn how to create and manage OpenTofu test fixtures — reusable infrastructure configurations that set up prerequisites for module testing and integration tests.
+Description: Learn how to create and manage OpenTofu test fixtures - reusable infrastructure configurations that set up prerequisites for module testing and integration tests.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Test fixtures are minimal OpenTofu configurations that create the prerequisite i
 
 ## Fixture Structure
 
-```
+```text
 modules/
 └── database/
     ├── main.tf
@@ -34,6 +34,7 @@ modules/
 
 ```hcl
 # tests/fixtures/networking/main.tf
+
 # Minimal VPC for use as a test fixture
 
 provider "aws" {

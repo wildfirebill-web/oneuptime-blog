@@ -28,6 +28,7 @@ Start by confirming that PyTorch can see the GPUs in your cluster:
 
 ```bash
 # Run a quick PyTorch GPU check
+
 kubectl run pytorch-gpu-test --rm -it --restart=Never \
   --image=pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime \
   --limits=nvidia.com/gpu=1 \

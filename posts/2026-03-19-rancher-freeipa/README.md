@@ -26,6 +26,7 @@ Create a dedicated bind account in FreeIPA for Rancher:
 
 ```bash
 # Create a system account for Rancher
+
 ipa user-add svc-rancher \
   --first="Rancher" \
   --last="Service" \

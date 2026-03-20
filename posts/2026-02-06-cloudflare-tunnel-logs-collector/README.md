@@ -14,6 +14,7 @@ The `cloudflared` daemon writes logs to stdout/stderr or to a file. You can conf
 
 ```bash
 # Run cloudflared with file-based logging
+
 cloudflared tunnel --loglevel info \
   --logfile /var/log/cloudflared/tunnel.log \
   run my-tunnel

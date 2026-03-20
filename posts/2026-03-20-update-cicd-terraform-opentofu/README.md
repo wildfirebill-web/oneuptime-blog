@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, CI/CD, GitHub Actions, GitLab, Migration, DevOps
 
-Description: Learn how to update GitHub Actions, GitLab CI, and other CI/CD pipelines to use OpenTofu instead of Terraform — replacing setup actions, binary calls, and environment variables.
+Description: Learn how to update GitHub Actions, GitLab CI, and other CI/CD pipelines to use OpenTofu instead of Terraform - replacing setup actions, binary calls, and environment variables.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Migrating CI/CD from Terraform to OpenTofu is mostly a find-and-replace of the b
 
 ```yaml
 # .github/workflows/terraform.yml
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -113,7 +114,7 @@ OPENTOFU_VERSION=1.9.0
 ## Atlantis: Update workflow.yaml
 
 ```yaml
-# atlantis.yaml — before
+# atlantis.yaml - before
 workflows:
   default:
     plan:
@@ -126,7 +127,7 @@ workflows:
 ```
 
 ```yaml
-# atlantis.yaml — after
+# atlantis.yaml - after
 workflows:
   opentofu:
     plan:
@@ -152,7 +153,7 @@ ATLANTIS_TERRAFORM_VERSION=opentofu
 ## Terragrunt: One Variable Change
 
 ```hcl
-# terragrunt.hcl — change terraform_binary
+# terragrunt.hcl - change terraform_binary
 terraform_binary = "tofu"   # Was: "terraform"
 ```
 
@@ -195,7 +196,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan\n\`\`\`\n${plan.slice(0, 65000)}\n\`\`\``
+              body: `## OpenTofu Plan\n```\n${plan.slice(0, 65000)}\n````
             })
 
   apply:
@@ -213,4 +214,4 @@ jobs:
 
 ## Conclusion
 
-Updating CI/CD from Terraform to OpenTofu is straightforward: swap `hashicorp/setup-terraform` for `opentofu/setup-opentofu`, replace `terraform` with `tofu` in commands, and update container images to `ghcr.io/opentofu/opentofu`. All flags, exit codes, and environment variables remain identical. The migration can be done incrementally — one pipeline at a time — with no risk to existing state.
+Updating CI/CD from Terraform to OpenTofu is straightforward: swap `hashicorp/setup-terraform` for `opentofu/setup-opentofu`, replace `terraform` with `tofu` in commands, and update container images to `ghcr.io/opentofu/opentofu`. All flags, exit codes, and environment variables remain identical. The migration can be done incrementally - one pipeline at a time - with no risk to existing state.

@@ -68,6 +68,7 @@ spec:
 EOF
 
 # Verify
+
 kubectl run dns-test --image=busybox -n $NS --restart=Never --rm -i \
   --timeout=15s -- nslookup kubernetes.default
 ```

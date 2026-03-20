@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, SSL, HTTPS, IPv4, mod_ssl, TLS, Security
+Tags: Apache, SSL, HTTPS, IPv4, Mod_ssl, TLS, Security
 
 Description: Learn how to configure Apache mod_ssl to enable HTTPS on a specific IPv4 address with proper TLS settings and cipher suites.
 
@@ -14,6 +14,7 @@ Description: Learn how to configure Apache mod_ssl to enable HTTPS on a specific
 
 ```bash
 # Enable mod_ssl and the SSL site
+
 a2enmod ssl
 a2ensite default-ssl
 

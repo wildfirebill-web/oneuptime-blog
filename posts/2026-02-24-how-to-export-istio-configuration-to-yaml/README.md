@@ -77,6 +77,7 @@ To strip the cluster-specific fields, you can use `yq` (the YAML processor):
 
 ```bash
 # Using yq v4
+
 kubectl get vs my-route -n default -o yaml | yq eval '
   del(.metadata.resourceVersion) |
   del(.metadata.uid) |

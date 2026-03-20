@@ -18,6 +18,7 @@ Before automating, understand the manual commands:
 
 ```bash
 # Scale a service to 5 replicas
+
 docker service scale webapp=5
 
 # Scale multiple services at once

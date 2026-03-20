@@ -14,7 +14,7 @@ Route redistribution into EIGRPv6 requires specifying a metric (or seed metric) 
 
 The safest approach is to set a default metric that applies to all redistributed routes:
 
-```
+```text
 ! Classic EIGRPv6
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# default-metric 10000 100 255 1 1500
@@ -28,7 +28,7 @@ Router(config-router-af)# default-metric 10000 100 255 1 1500
 
 ## Redistributing Static Routes
 
-```
+```text
 ! Classic EIGRPv6
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# redistribute static metric 10000 100 255 1 1500
@@ -41,7 +41,7 @@ Router(config-router-af)# redistribute static metric 10000 100 255 1 1500
 
 ## Redistributing Connected Routes
 
-```
+```text
 ! Classic EIGRPv6
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# redistribute connected metric 1000000 10 255 1 1500
@@ -49,8 +49,8 @@ Router(config-rtr)# redistribute connected metric 1000000 10 255 1 1500
 
 ## Redistributing from OSPFv3
 
-```
-! Classic EIGRPv6 — redistribute OSPF process 1
+```text
+! Classic EIGRPv6 - redistribute OSPF process 1
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# redistribute ospf 1 metric 10000 100 255 1 1500
 Router(config-rtr)# redistribute ospf 1 include-connected  ! Also include connected subnets
@@ -58,8 +58,8 @@ Router(config-rtr)# redistribute ospf 1 include-connected  ! Also include connec
 
 ## Redistributing from BGP
 
-```
-! Named EIGRPv6 — redistribute BGP
+```text
+! Named EIGRPv6 - redistribute BGP
 Router(config)# router eigrp MY_NETWORK
 Router(config-router)# address-family ipv6 unicast autonomous-system 1
 Router(config-router-af)# redistribute bgp 65001 metric 10000 1000 255 1 1500
@@ -67,7 +67,7 @@ Router(config-router-af)# redistribute bgp 65001 metric 10000 1000 255 1 1500
 
 ## Using Route Maps for Selective Redistribution
 
-```
+```text
 ! Create a prefix list for filtering
 Router(config)# ipv6 prefix-list EIGRP_IMPORT seq 10 permit 2001:db8:branch::/48
 
@@ -94,7 +94,7 @@ The 5-part metric specification: `<bandwidth> <delay> <reliability> <load> <MTU>
 
 ## Verifying Redistributed Routes
 
-```
+```text
 ! Check that redistributed routes appear as "D EX" in the routing table
 Router-Neighbor# show ipv6 route eigrp
 

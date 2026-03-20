@@ -379,6 +379,7 @@ Start with an empty ignore list and add rules based on what you find:
 
 ```bash
 # Step 1: Enable monitoring with no ignores
+
 # Apply the project with orphanedResources.warn: true
 
 # Step 2: Check what shows up as orphaned

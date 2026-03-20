@@ -12,6 +12,7 @@ tcpdump uses Berkeley Packet Filter (BPF) expressions for filtering. The key pri
 
 ```bash
 # Match packets to or from a specific host
+
 sudo tcpdump -i eth0 host 192.168.1.50
 
 # Match packets FROM a specific source IP only
@@ -114,7 +115,7 @@ sudo tcpdump -i eth0 -n -w /tmp/host-capture.pcap 'src 192.168.1.100'
 sudo tcpdump -i eth0 -n -w /tmp/all-capture.pcap    # Capture everything
 tcpdump -r /tmp/all-capture.pcap 'src 192.168.1.100' # Filter offline
 
-# Offline filtering is more flexible — you can apply different filters
+# Offline filtering is more flexible - you can apply different filters
 # to the same capture file without recapturing
 tcpdump -r /tmp/all-capture.pcap 'dst 192.168.1.100 and port 443'
 ```
@@ -132,7 +133,7 @@ sudo tcpdump -i eth0 'ip[12:3] = 0xc0a801'
 # More commonly, just use the 'src net' syntax which is cleaner:
 sudo tcpdump -i eth0 'src net 192.168.1.0/24'
 
-# Filter by TTL (e.g., only TTL=64 packets — likely Linux origin)
+# Filter by TTL (e.g., only TTL=64 packets - likely Linux origin)
 sudo tcpdump -i eth0 'ip[8] = 64 and src 192.168.1.100'
 ```
 

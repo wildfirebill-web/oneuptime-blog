@@ -27,6 +27,7 @@ These flags apply to the image pull operation that occurs when you run a contain
 
 ```bash
 # Retry up to 5 times if the image pull fails
+
 podman run --rm \
   --retry 5 \
   docker.io/library/alpine:latest \

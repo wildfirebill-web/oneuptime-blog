@@ -24,6 +24,7 @@ Bridgecrew publishes an official Docker image for Checkov. Run your first scan w
 
 ```bash
 # Scan the current directory for IaC security issues
+
 docker run --rm \
   -v "$(pwd):/tf" \
   bridgecrew/checkov \

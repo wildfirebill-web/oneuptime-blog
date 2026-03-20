@@ -26,6 +26,7 @@ If another operation holds the lock, Terraform waits or fails depending on your 
 
 ```bash
 # Default behavior - acquire lock, fail immediately if locked
+
 terraform plan
 
 # With timeout - wait up to 5 minutes for the lock

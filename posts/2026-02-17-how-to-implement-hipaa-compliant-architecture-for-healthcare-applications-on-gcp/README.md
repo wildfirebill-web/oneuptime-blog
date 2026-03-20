@@ -32,6 +32,7 @@ Check the current list at Google's HIPAA compliance page, as it is updated regul
 
 ```bash
 # Verify your organization has accepted the BAA
+
 # This is done through the Google Cloud Console under
 # Organization > Settings > HIPAA BAA
 # There is no gcloud command for this - it requires manual acceptance

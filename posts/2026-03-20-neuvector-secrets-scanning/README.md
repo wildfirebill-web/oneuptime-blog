@@ -1,4 +1,4 @@
-# How to Scan Kubernetes Secrets with NeuVector
+# How to Scan Kubernetes Secrets with NeuVector - Scanning
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,17 +8,17 @@ Description: Learn how to use NeuVector to detect exposed secrets in Kubernetes 
 
 ---
 
-Exposed secrets in Kubernetes environments — API keys, passwords, certificates in environment variables, ConfigMaps, or container image layers — are a common cause of security breaches. NeuVector helps detect these exposures.
+Exposed secrets in Kubernetes environments - API keys, passwords, certificates in environment variables, ConfigMaps, or container image layers - are a common cause of security breaches. NeuVector helps detect these exposures.
 
 ---
 
 ## How NeuVector Detects Exposed Secrets
 
 NeuVector scans for secrets through:
-1. **Container image scanning** — detects secrets embedded in image layers
-2. **Runtime process monitoring** — detects sensitive data in process environment
-3. **Compliance checks** — custom rules for secret detection
-4. **Admission control** — blocks deployments that expose secrets in environment variables
+1. **Container image scanning** - detects secrets embedded in image layers
+2. **Runtime process monitoring** - detects sensitive data in process environment
+3. **Compliance checks** - custom rules for secret detection
+4. **Admission control** - blocks deployments that expose secrets in environment variables
 
 ---
 
@@ -34,6 +34,7 @@ Or trigger via API:
 
 ```bash
 # Trigger a scan with secrets detection enabled
+
 curl -sk -X POST \
   -H "X-Auth-Token: $TOKEN" \
   -H "Content-Type: application/json" \
@@ -118,7 +119,7 @@ NeuVector's process monitor can alert when a process accesses sensitive files:
 1. Go to **Policy > Groups > [Group] > Process Rules**
 2. Add a rule that **monitors/denies** access to known secret paths:
 
-```
+```text
 /run/secrets/
 /etc/*.key
 /etc/*.pem
@@ -141,7 +142,7 @@ curl -sk \
 
 ## Best Practices
 
-- Use Kubernetes Secrets for credentials — never hardcode secrets in environment variables or ConfigMaps.
+- Use Kubernetes Secrets for credentials - never hardcode secrets in environment variables or ConfigMaps.
 - Integrate NeuVector's registry scanner into your CI pipeline to catch secrets before images are pushed.
 - Use External Secrets Operator with Vault or AWS Secrets Manager to inject secrets dynamically.
 - Alert on any NeuVector secret detection event and treat it as a security incident.

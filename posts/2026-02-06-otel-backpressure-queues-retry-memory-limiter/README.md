@@ -197,6 +197,7 @@ Set up alerts on these metrics to know when your pipeline is under stress:
 
 ```bash
 # Queue utilization - should stay below 80%
+
 curl -s http://localhost:8888/metrics | grep queue_size
 # otelcol_exporter_queue_size{exporter="otlp"} 150
 # otelcol_exporter_queue_capacity{exporter="otlp"} 5000

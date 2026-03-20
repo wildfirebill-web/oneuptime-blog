@@ -45,6 +45,7 @@ First, confirm that MetalLB is running in FRR mode and your BGP sessions are hea
 
 ```bash
 # Check that the MetalLB speaker pods are running
+
 kubectl get pods -n metallb-system -l app=metallb,component=speaker
 
 # Verify your existing BGPPeer resources

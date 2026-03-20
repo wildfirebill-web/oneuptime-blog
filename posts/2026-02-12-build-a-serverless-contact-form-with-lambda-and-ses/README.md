@@ -30,6 +30,7 @@ Before SES can send emails, you need to verify either a domain or email address:
 
 ```bash
 # Verify your domain in SES
+
 aws ses verify-domain-identity --domain example.com
 
 # Or verify a specific email address

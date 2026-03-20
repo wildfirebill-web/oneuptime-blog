@@ -24,6 +24,7 @@ The process works in three layers:
 
 ```bash
 # The chain:
+
 # podman build --platform linux/arm64 .
 #   -> Podman pulls ARM64 base image
 #   -> RUN commands create ARM64 binaries

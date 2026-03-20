@@ -21,6 +21,7 @@ Hot reload in Docker requires three components:
 
 ```yaml
 # docker-compose.yml - Bind mount pattern
+
 services:
   app:
     volumes:

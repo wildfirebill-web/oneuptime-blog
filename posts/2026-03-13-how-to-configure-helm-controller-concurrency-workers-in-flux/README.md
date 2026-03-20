@@ -24,6 +24,7 @@ Use the `--concurrent` flag to control the number of parallel workers.
 
 ```yaml
 # clusters/my-cluster/flux-system/helm-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -77,7 +78,7 @@ Recommended starting points:
 - 20 to 50 HelmReleases: `--concurrent=10`
 - Over 50 HelmReleases: `--concurrent=15` and monitor API server load
 
-## Resource Allocation
+Resource Allocation
 
 Helm template rendering can be memory-intensive, especially for large charts. Adjust resource limits when increasing concurrency:
 

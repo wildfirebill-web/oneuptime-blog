@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, Load Balancer, IPv4, Networking, net module
+Tags: Node.js, TCP, Load Balancer, IPv4, Networking, Net Module
 
 Description: Learn how to build a Layer-4 TCP load balancer in Node.js that distributes IPv4 connections across multiple backend servers using round-robin selection.
 

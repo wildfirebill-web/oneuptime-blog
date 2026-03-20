@@ -45,6 +45,7 @@ Here is the YAML file:
 
 ```yaml
 # /etc/otel/agent-config.yaml
+
 file_format: "0.3"
 
 resource:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, kubeadm, IPv4, Pod CIDR, CNI, Networking
+Tags: Kubernetes, Kubeadm, IPv4, Pod CIDR, CNI, Networking
 
 Description: Configure a custom IPv4 Pod CIDR when initializing a Kubernetes cluster with kubeadm to avoid conflicts with existing network ranges.
 
@@ -19,6 +19,7 @@ The default pod CIDR varies by CNI plugin (Flannel uses 10.244.0.0/16, Calico us
 
 ```yaml
 # kubeadm-init-config.yaml
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: "v1.29.0"

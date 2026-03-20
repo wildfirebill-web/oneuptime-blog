@@ -238,6 +238,7 @@ Track upgrade attempts and rollbacks:
 
 ```bash
 # Check HelmRelease status
+
 flux get helmrelease my-app
 
 # Check upgrade failure count

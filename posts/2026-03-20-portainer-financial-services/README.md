@@ -24,6 +24,7 @@ Financial services organizations face some of the strictest regulatory requireme
 
 ```bash
 # Financial services deployment with maximum security
+
 docker run -d \
   --name portainer \
   --restart=always \

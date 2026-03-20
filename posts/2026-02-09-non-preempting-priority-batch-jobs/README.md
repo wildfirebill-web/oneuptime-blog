@@ -29,6 +29,7 @@ Let's define a hierarchy of non-preempting priorities for different types of bat
 
 ```yaml
 # non-preempting-priorities.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:
@@ -357,7 +358,7 @@ kubectl apply -f test-non-preempting.yaml
 kubectl get events --watch | grep -E 'Preempt|Schedule'
 ```
 
-## Resource Quota for Non-Preempting Jobs
+Resource Quota for Non-Preempting Jobs
 
 Control resource usage for batch jobs:
 

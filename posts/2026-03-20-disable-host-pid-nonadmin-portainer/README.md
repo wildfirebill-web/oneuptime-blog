@@ -31,6 +31,7 @@ Consider this scenario: a developer deploys the `nsenter` tool in a container wi
 
 ```bash
 # What an attacker could do with hostPID=true
+
 docker run -it --pid=host ubuntu nsenter -t 1 -m -u -i -n -p -- bash
 # This gives root shell on the host!
 ```
@@ -72,7 +73,7 @@ docker inspect $(docker ps -q) | \
 
 For maximum security, disable all these for non-admin users:
 
-```
+```text
 Settings > Environments > [Env] > Security:
 ☒ Allow privileged mode
 ☒ Allow bind mounts

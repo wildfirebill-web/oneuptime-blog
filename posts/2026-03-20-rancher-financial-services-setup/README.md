@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, financial-services, pci-dss, kubernetes, compliance, security
+Tags: Rancher, Financial-services, PCI-DSS, Kubernetes, Compliance, Security
 
 Description: A step-by-step guide to configuring Rancher for PCI DSS-compliant financial services environments, covering network segmentation, access controls, and audit requirements.
 
@@ -24,6 +24,7 @@ PCI DSS requires strict isolation of the Cardholder Data Environment (CDE):
 
 ```yaml
 # Namespace-level isolation using Rancher Projects
+
 # Create a dedicated Project for CDE workloads with no shared namespaces
 
 # NetworkPolicy: CDE namespace default deny
@@ -137,7 +138,7 @@ rules:
 
 PCI DSS Requirement 8.4 mandates MFA for all access to the CDE:
 
-```
+```text
 Rancher UI → Global Settings → Auth Configuration → SAML
 - Configure with your corporate SSO (Okta, Azure AD) with MFA enforcement
 - Require MFA for all users accessing CDE project clusters

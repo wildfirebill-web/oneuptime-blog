@@ -38,6 +38,7 @@ Global autoscaler settings managed through ArgoCD:
 
 ```yaml
 # scaling/knative/config-autoscaler.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -47,6 +47,7 @@ kubectl get pods -n kube-system -l app.kubernetes.io/name=cilium-envoy
 
 ```bash
 # Check if proxy visibility is configured for an endpoint
+
 cilium endpoint list | grep -i proxy
 
 # Get detailed proxy state for specific endpoint

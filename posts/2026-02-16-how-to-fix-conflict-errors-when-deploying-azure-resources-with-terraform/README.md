@@ -39,6 +39,7 @@ This is the most common cause. Someone created the resource manually in the port
 
 ```bash
 # Find the resource ID in Azure
+
 az resource show \
   --resource-group my-rg \
   --resource-type "Microsoft.Web/sites" \

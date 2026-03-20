@@ -20,6 +20,7 @@ OpenVPN supports IPv6 in several ways: as a transport protocol (connecting to th
 
 ```ini
 # Basic server settings
+
 port 1194
 proto udp6        # Listen on both IPv4 and IPv6 (udp6 listens on :: by default)
 dev tun

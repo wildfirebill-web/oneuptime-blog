@@ -239,6 +239,7 @@ Then check the logs on both the source and destination proxies:
 
 ```bash
 # Source proxy
+
 kubectl logs my-app-xxxxx -c istio-proxy --tail=50
 
 # Destination proxy

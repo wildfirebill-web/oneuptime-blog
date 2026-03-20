@@ -93,6 +93,7 @@ const traceExporter = new OTLPTraceExporter({
 
 ```python
 # tracing_config.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

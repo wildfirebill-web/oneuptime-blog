@@ -123,6 +123,7 @@ The following command checks if Istio is installed and shows the version:
 
 ```bash
 # Verify Istio installation
+
 istioctl version
 
 # Expected output should show both client and control plane versions

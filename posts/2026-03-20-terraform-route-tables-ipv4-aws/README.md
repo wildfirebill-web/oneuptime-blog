@@ -25,6 +25,7 @@ resource "aws_route_table" "public" {
 }
 
 # Default route to Internet Gateway
+
 resource "aws_route" "public_internet" {
   route_table_id         = aws_route_table.public.id
   destination_cidr_block = "0.0.0.0/0"
@@ -84,7 +85,7 @@ resource "aws_route" "to_peer_vpc" {
 resource "aws_route_table" "database" {
   vpc_id = aws_vpc.main.id
 
-  # No internet route — database subnets are completely isolated
+  # No internet route - database subnets are completely isolated
   tags = {
     Name = "database-rt"
     Tier = "database"

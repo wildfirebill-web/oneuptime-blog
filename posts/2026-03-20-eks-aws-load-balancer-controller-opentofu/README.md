@@ -21,6 +21,7 @@ The AWS Load Balancer Controller manages ALBs for Kubernetes Ingress resources a
 
 ```hcl
 # Download and create the policy from the official AWS repository
+
 data "http" "lbc_policy" {
   url = "https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json"
 }

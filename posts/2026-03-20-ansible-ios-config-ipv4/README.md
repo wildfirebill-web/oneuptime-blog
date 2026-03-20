@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Cisco, IOS, IPv4, Network Automation, ios_config
+Tags: Ansible, Cisco, IOS, IPv4, Network Automation, Ios_config
 
 Description: Use the Ansible cisco.ios.ios_config module to push IPv4 interface and routing configurations to Cisco IOS devices, with idempotent configuration management and backup.
 
 ## Introduction
 
-The `cisco.ios.ios_config` module pushes arbitrary IOS configuration blocks to Cisco devices. It is idempotent — it only applies changes if the current configuration differs from the desired state.
+The `cisco.ios.ios_config` module pushes arbitrary IOS configuration blocks to Cisco devices. It is idempotent - it only applies changes if the current configuration differs from the desired state.
 
 ## Inventory File
 
 ```ini
 # inventory.ini
+
 [cisco_routers]
 router1 ansible_host=192.168.1.1
 router2 ansible_host=192.168.1.2
@@ -96,7 +97,7 @@ ansible_become_password=EnablePass
         backup_options:
           dir_path: ./backups
           filename: "{{ inventory_hostname }}-{{ ansible_date_time.date }}"
-        lines: []  # No config changes — backup only
+        lines: []  # No config changes - backup only
 ```
 
 ## Save Running Config
@@ -112,7 +113,7 @@ ansible_become_password=EnablePass
 ```bash
 ansible-playbook -i inventory.ini configure_interface.yml
 
-# Check mode (dry run — no changes applied)
+# Check mode (dry run - no changes applied)
 ansible-playbook -i inventory.ini configure_interface.yml --check --diff
 ```
 

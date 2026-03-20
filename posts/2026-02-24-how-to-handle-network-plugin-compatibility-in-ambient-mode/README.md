@@ -26,6 +26,7 @@ First, identify what CNI plugin your cluster is running:
 
 ```bash
 # Check the CNI configuration directory
+
 ls /etc/cni/net.d/
 
 # Or check the CNI binaries

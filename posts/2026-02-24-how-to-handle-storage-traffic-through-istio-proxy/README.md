@@ -135,6 +135,7 @@ For storage services running outside the cluster, create ServiceEntry resources:
 
 ```yaml
 # Redis on ElastiCache
+
 apiVersion: networking.istio.io/v1beta1
 kind: ServiceEntry
 metadata:

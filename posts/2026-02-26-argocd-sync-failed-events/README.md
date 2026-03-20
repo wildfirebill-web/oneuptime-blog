@@ -31,6 +31,7 @@ Configure ArgoCD Notifications to detect sync failures:
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

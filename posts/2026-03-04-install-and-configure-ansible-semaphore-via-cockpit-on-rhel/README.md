@@ -20,6 +20,7 @@ Ansible Semaphore via Cockpit can be installed and configured on RHEL to provide
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

@@ -20,6 +20,7 @@ All discovery data is encrypted before it leaves the node. The encryption uses k
 
 ```bash
 # View the cluster secrets (these should be kept secure)
+
 # The secrets file is generated during talosctl gen config
 # and should be stored in a secure location
 ls -la secrets.yaml

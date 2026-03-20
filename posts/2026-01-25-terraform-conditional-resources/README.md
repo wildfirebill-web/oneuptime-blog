@@ -22,6 +22,7 @@ variable "create_bastion" {
 }
 
 # Only create bastion if variable is true
+
 resource "aws_instance" "bastion" {
   count = var.create_bastion ? 1 : 0
 

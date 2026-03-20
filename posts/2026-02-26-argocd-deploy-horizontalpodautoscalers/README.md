@@ -58,6 +58,7 @@ Here is a complete setup with a Deployment and HPA:
 
 ```yaml
 # apps/myapp/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -129,7 +130,7 @@ spec:
       selectPolicy: Max
 ```
 
-## Resource Requests Are Required
+Resource Requests Are Required
 
 HPAs based on CPU and memory utilization require resource requests on all containers. Without requests, the HPA cannot calculate utilization percentages:
 

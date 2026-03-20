@@ -31,6 +31,7 @@ This guide focuses on the cloud provider component for LoadBalancer services.
 
 ```yaml
 # clusters/production/infrastructure/kube-vip.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

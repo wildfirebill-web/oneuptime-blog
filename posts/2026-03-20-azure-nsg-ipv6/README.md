@@ -8,7 +8,7 @@ Description: Create Azure Network Security Group rules for IPv6 traffic, underst
 
 ## Introduction
 
-Azure Network Security Groups (NSGs) filter traffic by IP address ranges, ports, and protocols. For IPv6, you must add specific rules allowing or denying IPv6 address ranges — there is no automatic inheritance from IPv4 rules. NSGs apply to subnets or individual NICs and are the primary Layer 4 firewall mechanism in Azure virtual networks.
+Azure Network Security Groups (NSGs) filter traffic by IP address ranges, ports, and protocols. For IPv6, you must add specific rules allowing or denying IPv6 address ranges - there is no automatic inheritance from IPv4 rules. NSGs apply to subnets or individual NICs and are the primary Layer 4 firewall mechanism in Azure virtual networks.
 
 ## Create NSG with IPv6 Rules
 
@@ -16,6 +16,7 @@ Azure Network Security Groups (NSGs) filter traffic by IP address ranges, ports,
 RG="rg-ipv6"
 
 # Create NSG
+
 az network nsg create \
     --resource-group "$RG" \
     --name nsg-web-ipv6
@@ -80,7 +81,7 @@ resource "azurerm_network_security_group" "web" {
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 
-  # Allow HTTP — IPv4
+  # Allow HTTP - IPv4
   security_rule {
     name                       = "AllowHTTPv4"
     priority                   = 100
@@ -93,7 +94,7 @@ resource "azurerm_network_security_group" "web" {
     destination_address_prefix = "*"
   }
 
-  # Allow HTTP — IPv6
+  # Allow HTTP - IPv6
   security_rule {
     name                       = "AllowHTTPv6"
     priority                   = 101
@@ -106,7 +107,7 @@ resource "azurerm_network_security_group" "web" {
     destination_address_prefix = "*"
   }
 
-  # Allow HTTPS — IPv4
+  # Allow HTTPS - IPv4
   security_rule {
     name                       = "AllowHTTPSv4"
     priority                   = 110
@@ -119,7 +120,7 @@ resource "azurerm_network_security_group" "web" {
     destination_address_prefix = "*"
   }
 
-  # Allow HTTPS — IPv6
+  # Allow HTTPS - IPv6
   security_rule {
     name                       = "AllowHTTPSv6"
     priority                   = 111
@@ -183,4 +184,4 @@ resource "azurerm_subnet_network_security_group_association" "web" {
 
 ## Conclusion
 
-Azure NSG rules for IPv6 require explicit entries with IPv6 source or destination prefixes (`::/0` for any IPv6). There is no automatic coverage from IPv4 rules — `*` in a rule means "any address" but IPv6 addresses from the internet need explicit `::/0` rules. Always add ICMPv6 allow rules to enable NDP and connectivity testing. Associate NSGs to subnets (not individual NICs when possible) for centralized security management. Use consecutive priority numbers for paired IPv4/IPv6 rules (100 for IPv4, 101 for IPv6) to keep rules organized.
+Azure NSG rules for IPv6 require explicit entries with IPv6 source or destination prefixes (`::/0` for any IPv6). There is no automatic coverage from IPv4 rules - `*` in a rule means "any address" but IPv6 addresses from the internet need explicit `::/0` rules. Always add ICMPv6 allow rules to enable NDP and connectivity testing. Associate NSGs to subnets (not individual NICs when possible) for centralized security management. Use consecutive priority numbers for paired IPv4/IPv6 rules (100 for IPv4, 101 for IPv6) to keep rules organized.

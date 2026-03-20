@@ -37,6 +37,7 @@ Matrix performs significantly better with PostgreSQL than SQLite:
 
 ```bash
 # Switch to postgres user
+
 sudo -u postgres psql << 'EOF'
 -- Create the database and user for Synapse
 CREATE USER synapse WITH PASSWORD 'StrongDatabasePassword123!';

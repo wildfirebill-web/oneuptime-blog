@@ -16,6 +16,7 @@ The fundamental command for viewing logs is `talosctl logs`:
 
 ```bash
 # View logs for a specific service
+
 talosctl logs kubelet -n <node-ip>
 
 # View logs for etcd

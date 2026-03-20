@@ -49,6 +49,7 @@ First, ensure your deployment has resource requests defined. The HPA uses these 
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

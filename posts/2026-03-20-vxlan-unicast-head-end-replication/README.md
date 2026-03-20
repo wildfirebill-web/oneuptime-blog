@@ -20,7 +20,8 @@ Unicast head-end replication (HER) is an alternative to multicast VXLAN that wor
 
 ```bash
 # Create VXLAN without a multicast group (unicast mode)
-# No 'group' or 'remote' parameter — start with empty FDB
+
+# No 'group' or 'remote' parameter - start with empty FDB
 ip link add vxlan0 type vxlan \
     id 100 \
     dstport 4789 \
@@ -33,7 +34,7 @@ ip link set vxlan0 up
 
 ## Add Remote VTEP Entries to FDB
 
-The zero MAC (`00:00:00:00:00:00`) entry with a destination IP acts as the flood entry — unknown unicast, broadcast, and multicast frames go to that VTEP:
+The zero MAC (`00:00:00:00:00:00`) entry with a destination IP acts as the flood entry - unknown unicast, broadcast, and multicast frames go to that VTEP:
 
 ```bash
 # Add each remote VTEP as a flood entry

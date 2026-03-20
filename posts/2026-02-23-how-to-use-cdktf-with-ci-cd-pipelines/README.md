@@ -26,6 +26,7 @@ Here is a complete GitHub Actions workflow for CDKTF:
 
 ```yaml
 # .github/workflows/infrastructure.yml
+
 name: Infrastructure Deployment
 
 on:
@@ -96,7 +97,7 @@ jobs:
           script: |
             const fs = require('fs');
             const plan = fs.readFileSync('plan-output.txt', 'utf8');
-            const body = `## Terraform Plan\n\`\`\`\n${plan.substring(0, 60000)}\n\`\`\``;
+            const body = `## Terraform Plan\n```\n${plan.substring(0, 60000)}\n````;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,

@@ -47,6 +47,7 @@ flowchart LR
 
 ```python
 # Weekly pilot metrics report
+
 pilot_metrics = {
     "customers_with_ipv6": 0,
     "ipv6_traffic_pct": 0.0,
@@ -65,7 +66,7 @@ print(f"IPv6 adoption in pilot: {ipv6_pct:.1f}%")
 
 **Tasks:**
 - Roll out by region/city, prioritizing high-density areas first
-- Enable IPv6 opt-out (not opt-in) — default-on for all new customers
+- Enable IPv6 opt-out (not opt-in) - default-on for all new customers
 - Migrate existing customers in batches by DSLAM/OLT
 - Monitor for IPv6-related support ticket increases
 - Address CPE compatibility issues per model

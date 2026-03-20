@@ -20,6 +20,7 @@ Before optimizing, establish a baseline. Use the `time` command to measure end-t
 
 ```bash
 # Measure total startup time for a container
+
 time podman run --rm your-image echo "started"
 
 # For more granular timing, use podman events

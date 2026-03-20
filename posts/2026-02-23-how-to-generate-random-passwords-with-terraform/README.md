@@ -20,6 +20,7 @@ There are several reasons to generate passwords within Terraform rather than man
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

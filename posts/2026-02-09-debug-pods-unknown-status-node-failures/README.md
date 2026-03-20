@@ -25,6 +25,7 @@ Check for Unknown pods:
 
 ```bash
 # Find pods in Unknown state
+
 kubectl get pods --all-namespaces --field-selector status.phase=Unknown
 
 # More detailed view

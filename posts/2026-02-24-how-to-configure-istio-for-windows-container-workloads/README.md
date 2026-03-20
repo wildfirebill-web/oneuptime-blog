@@ -27,6 +27,7 @@ Make sure your cluster has both Linux and Windows node pools. Label them appropr
 
 ```bash
 # Verify node labels
+
 kubectl get nodes -o wide --show-labels | grep -E "os=windows|os=linux"
 
 # If labels are missing

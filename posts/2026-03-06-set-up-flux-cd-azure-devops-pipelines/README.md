@@ -42,6 +42,7 @@ Set up ACR for storing OCI artifacts that Flux will consume.
 
 ```bash
 # Create an Azure Container Registry
+
 az acr create \
   --resource-group rg-flux-demo \
   --name fluxacrregistry \

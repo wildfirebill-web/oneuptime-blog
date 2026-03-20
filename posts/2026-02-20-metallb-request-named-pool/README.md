@@ -48,6 +48,7 @@ Start by creating multiple pools with descriptive names:
 
 ```yaml
 # ip-pools.yaml
+
 # Define separate pools for different service categories.
 # Each pool has a distinct IP range and name.
 apiVersion: metallb.io/v1beta1

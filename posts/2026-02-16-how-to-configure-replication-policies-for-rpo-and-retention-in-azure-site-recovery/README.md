@@ -70,6 +70,7 @@ Instead of modifying the default policy (which affects all VMs using it), create
 
 ```powershell
 # Create a custom replication policy for Tier 1 critical workloads
+
 # This policy keeps 72 hours of recovery points with hourly app-consistent snapshots
 
 $vault = Get-AzRecoveryServicesVault -Name "rsv-dr-centralus-001" -ResourceGroupName "rg-dr-centralus"

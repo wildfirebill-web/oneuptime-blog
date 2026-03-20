@@ -105,6 +105,7 @@ The following EnvoyFilter applies a basic rate limit of 100 requests per minute 
 
 ```yaml
 # EnvoyFilter for basic local rate limiting
+
 # This configuration limits requests to 100 per minute per Envoy instance
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter

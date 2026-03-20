@@ -8,7 +8,7 @@ Description: Use Portainer Business Edition's edge update schedules with automat
 
 ## Introduction
 
-Updating edge agents across dozens or hundreds of remote devices requires a safe, automated process. Portainer Business Edition provides edge update schedules with automatic rollback — if an update fails, the agent automatically reverts to the previous working version.
+Updating edge agents across dozens or hundreds of remote devices requires a safe, automated process. Portainer Business Edition provides edge update schedules with automatic rollback - if an update fails, the agent automatically reverts to the previous working version.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Updating edge agents across dozens or hundreds of remote devices requires a safe
 2. Click **Add schedule**
 3. Configure:
 
-```
+```text
 Name:          Quarterly Agent Update
 Update type:   Portainer agent
 Version:       2.21.0 (or latest)
@@ -50,6 +50,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create update schedule
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

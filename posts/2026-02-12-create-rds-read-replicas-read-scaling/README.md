@@ -64,6 +64,7 @@ This creates three replicas in different AZs for better distribution.
 
 ```bash
 # Replica for real-time reads
+
 aws rds create-db-instance-read-replica \
   --db-instance-identifier my-db-replica-1 \
   --source-db-instance-identifier my-primary-db \

@@ -25,6 +25,7 @@ Automotive edge hardware often runs on embedded x86 or ARM systems:
 
 ```bash
 # Typical hardware: Intel NUC, NVIDIA Jetson, or automotive-grade PCs
+
 # Install Docker on Ubuntu 20.04 (common in automotive embedded)
 curl -fsSL https://get.docker.com | sh
 

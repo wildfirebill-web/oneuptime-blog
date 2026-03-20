@@ -83,6 +83,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("oncall.metrics")
 
 # Histogram captures the distribution of resolution times
+
 mttr_histogram = meter.create_histogram(
     name="incident.mttr.seconds",
     description="Mean Time to Resolution in seconds",

@@ -172,6 +172,7 @@ After creating a BGPPeer, verify the session is established:
 
 ```bash
 # List all peers
+
 calicoctl get bgppeer -o wide
 
 # Check BGP session status on each node

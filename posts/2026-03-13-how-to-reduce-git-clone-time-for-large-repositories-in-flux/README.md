@@ -125,6 +125,7 @@ If your cluster is in a different region than your Git server, set up a Git mirr
 
 ```bash
 # On a server near your cluster
+
 git clone --mirror https://github.com/my-org/my-repo.git
 ```
 

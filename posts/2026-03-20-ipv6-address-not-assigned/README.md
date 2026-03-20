@@ -14,6 +14,7 @@ When an interface has no IPv6 global address, it can't reach the internet or oth
 
 ```bash
 # Show all IPv6 addresses
+
 ip -6 addr show
 
 # Show only global IPv6 addresses
@@ -23,9 +24,9 @@ ip -6 addr show scope global
 ip -6 addr show dev eth0
 
 # Expected output includes:
-# - Link-local (fe80::) — always present if IPv6 is enabled
-# - Global (2001: or 2600: etc.) — assigned via SLAAC or DHCPv6
-# - ULA (fc00:: or fd00::) — private IPv6 addresses
+# - Link-local (fe80::) - always present if IPv6 is enabled
+# - Global (2001: or 2600: etc.) - assigned via SLAAC or DHCPv6
+# - ULA (fc00:: or fd00::) - private IPv6 addresses
 ```
 
 ## Step 2: Verify IPv6 is Enabled

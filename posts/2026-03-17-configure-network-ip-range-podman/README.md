@@ -18,6 +18,7 @@ By default, Podman assigns subnets from an internal pool. This can conflict with
 
 ```bash
 # Create a network with a specific subnet and gateway
+
 podman network create \
   --subnet 10.50.0.0/24 \
   --gateway 10.50.0.1 \

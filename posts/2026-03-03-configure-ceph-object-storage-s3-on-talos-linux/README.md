@@ -24,6 +24,7 @@ Verify your cluster is ready:
 
 ```bash
 # Check Ceph health
+
 kubectl -n rook-ceph exec deploy/rook-ceph-tools -- ceph status
 
 # Make sure you have enough capacity

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, WiFi, Networking, Nmcli, Security
+Tags: Ubuntu, WiFi, Networking, nmcli, Security
 
 Description: Learn how to connect to hidden WiFi networks (SSIDs not broadcast) on Ubuntu using nmcli, wpa_supplicant, and Netplan from both the command line and GUI.
 
@@ -19,6 +19,7 @@ When a WiFi access point is configured to not broadcast its SSID, network scanni
 
 ```bash
 # Scanning shows hidden networks with empty SSID
+
 sudo iw dev wlan0 scan | grep -E "SSID:|signal:"
 # Hidden networks appear as: SSID: (empty line)
 

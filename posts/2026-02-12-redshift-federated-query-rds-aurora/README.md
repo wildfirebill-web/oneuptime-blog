@@ -41,6 +41,7 @@ Ensure security group rules allow the connection:
 
 ```bash
 # Get the Redshift cluster's VPC security group
+
 aws redshift describe-clusters \
   --cluster-identifier analytics-cluster \
   --query 'Clusters[0].VpcSecurityGroups[*].VpcSecurityGroupId'

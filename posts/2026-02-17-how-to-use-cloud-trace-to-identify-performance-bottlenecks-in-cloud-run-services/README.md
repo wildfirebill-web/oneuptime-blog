@@ -24,6 +24,7 @@ Here is a complete setup for a Python Flask service running on Cloud Run. The co
 
 ```python
 # tracing.py - Cloud Run optimized tracing setup
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

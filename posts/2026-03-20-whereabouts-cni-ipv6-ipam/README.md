@@ -14,6 +14,7 @@ Whereabouts is a CNI IPAM plugin that assigns unique IP addresses (IPv4 or IPv6)
 
 ```bash
 # Install Whereabouts
+
 kubectl apply -f https://raw.githubusercontent.com/k8snetworkplumbingwg/whereabouts/master/doc/crds/daemonset-install.yaml
 
 # Verify

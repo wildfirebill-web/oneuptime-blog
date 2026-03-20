@@ -39,6 +39,7 @@ The service account running in Project A needs the `roles/pubsub.publisher` role
 
 ```bash
 # Grant Project A's service account permission to publish to Project B's topic
+
 gcloud pubsub topics add-iam-policy-binding my-topic \
   --project=project-b \
   --member="serviceAccount:my-service@project-a.iam.gserviceaccount.com" \

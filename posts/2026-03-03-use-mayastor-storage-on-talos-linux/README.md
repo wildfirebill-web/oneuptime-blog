@@ -26,6 +26,7 @@ Check your hardware compatibility:
 
 ```bash
 # Verify NVMe devices on your Talos nodes
+
 talosctl disks --nodes <worker-ip>
 
 # Check CPU feature support

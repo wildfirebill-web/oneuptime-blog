@@ -16,6 +16,7 @@ The most important `loop_control` option is `loop_var`, which renames the `item`
 
 ```yaml
 # Use a descriptive loop variable instead of the generic 'item'
+
 - name: Create application users
   ansible.builtin.user:
     name: "{{ user.name }}"

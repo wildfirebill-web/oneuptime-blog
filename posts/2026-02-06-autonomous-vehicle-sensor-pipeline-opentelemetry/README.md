@@ -35,6 +35,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 import time
 
 # Initialize tracing with a large batch size for high-throughput pipeline
+
 provider = TracerProvider()
 provider.add_span_processor(
     BatchSpanProcessor(

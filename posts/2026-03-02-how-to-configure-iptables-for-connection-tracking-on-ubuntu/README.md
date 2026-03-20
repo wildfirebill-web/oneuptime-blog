@@ -23,6 +23,7 @@ The conntrack module must be loaded for stateful filtering to work:
 
 ```bash
 # Check if conntrack modules are loaded
+
 lsmod | grep conntrack
 
 # Load the module if needed

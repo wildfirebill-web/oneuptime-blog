@@ -35,6 +35,7 @@ The key differences between the geo options:
 
 ```bash
 # Create a storage account with GRS redundancy
+
 az storage account create \
   --name mystorageaccount \
   --resource-group myResourceGroup \

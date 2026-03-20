@@ -29,6 +29,7 @@ Set up cluster-pool IPAM with appropriate sizing:
 
 ```bash
 # Calculate pool size:
+
 # - Nodes: 50 maximum
 # - Per node: /24 = 254 IPs (supports ~254 pods per node)
 # - Total IPs needed: 50 * 254 = 12,700

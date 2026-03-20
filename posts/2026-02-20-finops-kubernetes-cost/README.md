@@ -34,6 +34,7 @@ Kubecost gives you a per-namespace, per-deployment, and per-pod breakdown of you
 
 ```bash
 # Install Kubecost using Helm
+
 helm repo add kubecost https://kubecost.github.io/cost-analyzer/
 helm install kubecost kubecost/cost-analyzer \
   --namespace kubecost \

@@ -50,6 +50,7 @@ ArgoCD provides a built-in admin tool for exporting and importing:
 
 ```bash
 # Export all ArgoCD resources to a YAML file
+
 argocd admin export -n argocd > argocd-backup-$(date +%Y%m%d).yaml
 
 # The export includes:

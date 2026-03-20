@@ -332,6 +332,7 @@ Envoy exposes rate limiting metrics that you can scrape with Prometheus:
 
 ```bash
 # Check rate limit stats
+
 istioctl proxy-config stats deploy/my-api -n default | grep ratelimit
 ```
 

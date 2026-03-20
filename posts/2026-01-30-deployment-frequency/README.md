@@ -259,6 +259,7 @@ class KubernetesDeploymentWatcher:
         return 'unknown'
 
 # Usage example
+
 def on_deployment(deployment_data):
     """Callback when deployment is detected."""
     if DeploymentCriteria.is_valid_deployment(deployment_data):

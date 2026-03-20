@@ -28,6 +28,7 @@ Here's a basic LowNodeUtilization configuration:
 
 ```yaml
 # descheduler-lownodeutilization.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

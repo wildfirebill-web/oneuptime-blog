@@ -44,6 +44,7 @@ Create a dedicated directory for the Nextcloud stack:
 
 ```bash
 # Create project directory with subdirectories for persistent data
+
 mkdir -p ~/nextcloud/{db,data,config}
 cd ~/nextcloud
 ```

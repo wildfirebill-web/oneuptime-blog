@@ -30,8 +30,9 @@ Inside a container, `hostname` returns the container's hostname. This value:
 4. Find the **Hostname** field.
 5. Enter your desired hostname.
 
-```
+```text
 # Examples:
+
 Hostname: web-server-01
 Hostname: api-gateway
 Hostname: db-primary
@@ -42,7 +43,7 @@ Hostname: app-prod-berlin-01
 
 The domain name is appended to the hostname to form the FQDN (Fully Qualified Domain Name):
 
-```
+```text
 Hostname: app-server
 Domain:   internal.example.com
 
@@ -56,7 +57,7 @@ In Portainer, find the **Domain name** field in the Network tab.
 
 Portainer also lets you add entries to the container's `/etc/hosts` file:
 
-```
+```text
 # Custom host entries (extra_hosts in compose):
 IP:           10.0.0.50
 Hostname:     database.internal

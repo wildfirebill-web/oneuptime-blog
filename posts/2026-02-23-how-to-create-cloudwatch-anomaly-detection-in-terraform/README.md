@@ -18,6 +18,7 @@ CloudWatch anomaly detection creates a model that learns the expected behavior o
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

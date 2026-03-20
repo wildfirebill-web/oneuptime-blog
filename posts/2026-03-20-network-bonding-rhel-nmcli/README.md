@@ -21,6 +21,7 @@ On RHEL, CentOS, and Fedora, nmcli (NetworkManager CLI) is the standard tool for
 
 ```bash
 # Create a bond master connection (active-backup mode)
+
 nmcli connection add \
     type bond \
     con-name bond0 \

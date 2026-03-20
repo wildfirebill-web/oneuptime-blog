@@ -288,6 +288,7 @@ class SlidingWindow(Generic[T]):
 
 
 # Usage
+
 window = SlidingWindow[float](window_size_seconds=300)  # 5-minute window
 
 # Add response times

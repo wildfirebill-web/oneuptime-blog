@@ -45,6 +45,7 @@ Variables set here are available during the build step. You can reference them i
 
 ```yaml
 # amplify.yml
+
 version: 1
 frontend:
   phases:

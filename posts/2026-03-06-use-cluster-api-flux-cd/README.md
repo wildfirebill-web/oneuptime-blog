@@ -43,6 +43,7 @@ Initialize CAPI on the management cluster with the AWS infrastructure provider.
 
 ```bash
 # Set AWS environment variables for CAPI
+
 export AWS_REGION=us-east-1
 export AWS_ACCESS_KEY_ID=<your-access-key>
 export AWS_SECRET_ACCESS_KEY=<your-secret-key>

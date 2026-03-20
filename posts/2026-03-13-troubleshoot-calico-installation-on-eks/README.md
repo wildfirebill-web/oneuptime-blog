@@ -27,6 +27,7 @@ Determine whether you need full Calico CNI or policy-only mode.
 
 ```bash
 # Check the current CNI plugin on your EKS cluster
+
 kubectl get pods -n kube-system | grep aws-node
 
 # For EKS with AWS VPC CNI, install Calico in policy-only mode

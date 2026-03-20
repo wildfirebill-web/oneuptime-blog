@@ -97,6 +97,7 @@ Test basic IPv6 connectivity:
 
 ```bash
 # Linux/macOS
+
 ping6 ipv6.google.com
 
 # Or using ping with -6 flag

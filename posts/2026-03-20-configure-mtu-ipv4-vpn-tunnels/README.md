@@ -25,6 +25,7 @@ With a typical Ethernet MTU of 1500 bytes, subtract the overhead to get the tunn
 
 ```bash
 # Test with progressively larger packet sizes, using the Don't Fragment flag
+
 # Start at 1400 and increase until packets start failing
 ping -M do -s 1400 <VPN_ENDPOINT_IP>
 ping -M do -s 1420 <VPN_ENDPOINT_IP>

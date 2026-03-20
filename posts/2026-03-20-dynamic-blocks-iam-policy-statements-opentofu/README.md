@@ -167,4 +167,4 @@ resource "aws_iam_role" "cross_account" {
 
 ## Conclusion
 
-Dynamic blocks for IAM policy statements let you build arbitrarily complex policies from structured variable data. This pattern works particularly well when your organization has standardized policy templates — define the structure once in HCL, and let teams provide their specific statements as variable values without needing to write HCL themselves.
+Dynamic blocks for IAM policy statements let you build arbitrarily complex policies from structured variable data. This pattern works particularly well when your organization has standardized policy templates - define the structure once in HCL, and let teams provide their specific statements as variable values without needing to write HCL themselves.

@@ -12,6 +12,7 @@ IPv6 address planning involves allocating /48s to sites, /64s to subnets, and tr
 
 ```yaml
 # group_vars/all.yml - IPv6 address hierarchy definition
+
 ---
 # Organization's allocated /32 prefix
 ipv6_org_prefix: "2001:db8::/32"

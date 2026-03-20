@@ -22,6 +22,7 @@ Install the required packages on your system:
 
 ```bash
 # On Ubuntu/Debian
+
 sudo apt install qemu-system-x86 qemu-utils ovmf
 
 # On Fedora

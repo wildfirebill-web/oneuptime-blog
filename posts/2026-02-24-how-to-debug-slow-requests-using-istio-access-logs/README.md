@@ -20,6 +20,7 @@ If access logs are in JSON format, use jq to find slow requests:
 
 ```bash
 # Find requests slower than 2 seconds
+
 kubectl logs deploy/my-service -c istio-proxy | jq 'select((.duration_ms | tonumber) > 2000)'
 
 # Find slow requests to a specific path

@@ -20,6 +20,7 @@ Link-local addresses are valid only on the directly connected network segment. T
 
 ```bash
 # Check the link-local address assigned to a running container
+
 podman run --rm --name linktest docker.io/library/alpine ip addr show eth0
 ```
 

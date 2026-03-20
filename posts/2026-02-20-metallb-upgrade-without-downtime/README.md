@@ -48,6 +48,7 @@ First, figure out what you are running right now.
 
 ```bash
 # Check the current MetalLB controller version
+
 kubectl get deployment -n metallb-system controller -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 

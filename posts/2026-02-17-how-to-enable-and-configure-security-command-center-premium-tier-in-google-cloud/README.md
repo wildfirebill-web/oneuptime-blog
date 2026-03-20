@@ -49,6 +49,7 @@ You need:
 
 ```bash
 # Enable the Security Command Center API
+
 gcloud services enable securitycenter.googleapis.com
 
 # Enable SCC Premium at the organization level

@@ -16,6 +16,7 @@ If you don't have CDK installed yet, set it up and create a new project.
 
 ```bash
 # Install CDK globally
+
 npm install -g aws-cdk
 
 # Create a new CDK project with TypeScript

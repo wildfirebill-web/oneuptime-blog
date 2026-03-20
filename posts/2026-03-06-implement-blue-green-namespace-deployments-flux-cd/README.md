@@ -31,6 +31,7 @@ Create the blue and green namespaces with labels to track which is active.
 
 ```yaml
 # apps/my-app/namespaces/blue.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

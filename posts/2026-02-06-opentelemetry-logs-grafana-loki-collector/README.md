@@ -31,6 +31,7 @@ If you are running Loki 3.0 or newer, the cleanest approach is to send OTLP dire
 
 ```yaml
 # otel-collector-config-otlp.yaml
+
 # Sends OTel logs to Loki via its native OTLP endpoint
 
 receivers:

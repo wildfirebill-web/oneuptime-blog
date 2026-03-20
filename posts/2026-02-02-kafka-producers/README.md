@@ -259,6 +259,7 @@ import json
 import socket
 
 # Configuration dictionary for the producer
+
 # Keys match the librdkafka configuration options
 config = {
     # Bootstrap servers for initial cluster connection

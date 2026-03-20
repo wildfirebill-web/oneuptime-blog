@@ -34,6 +34,7 @@ Let me walk through creating a backup policy that meets common compliance requir
 
 ```bash
 # Create a Recovery Services vault with geo-redundant storage
+
 # GRS is recommended for compliance workloads to protect against regional outages
 az backup vault create \
   --resource-group rg-backup \

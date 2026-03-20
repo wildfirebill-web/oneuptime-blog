@@ -1,4 +1,4 @@
-# How to Deploy Transmission via Portainer
+# How to Deploy Transmission via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -107,7 +107,7 @@ Configure in Sonarr/Radarr:
 4. Username/password from your config
 5. Category: `sonarr` or `radarr`
 
-## Resource Usage Comparison
+Resource Usage Comparison
 
 | Feature | Transmission | qBittorrent |
 |---------|-------------|-------------|

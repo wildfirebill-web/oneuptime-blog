@@ -220,6 +220,7 @@ Verify anti-affinity rules work correctly:
 
 ```bash
 # Deploy test application
+
 kubectl apply -f deployment-with-anti-affinity.yaml
 
 # Wait for deployment

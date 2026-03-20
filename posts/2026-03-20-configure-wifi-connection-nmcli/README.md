@@ -14,6 +14,7 @@ nmcli provides full Wi-Fi management via NetworkManager on Linux, supporting WPA
 
 ```bash
 # Turn on Wi-Fi
+
 nmcli radio wifi on
 
 # List available networks

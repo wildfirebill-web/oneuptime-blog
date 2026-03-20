@@ -20,6 +20,7 @@ Every Azure CLI command that returns JSON data supports the `--query` parameter.
 
 ```bash
 # List all VMs but only show name and location
+
 az vm list --query "[].{Name:name, Location:location}" --output table
 
 # Output:

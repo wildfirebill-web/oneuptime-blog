@@ -869,6 +869,7 @@ Name mutations after the action, not the implementation:
 
 ```graphql
 # Good - describes the business action
+
 type Mutation {
   publishArticle(id: ID!): ArticlePayload!
   archiveArticle(id: ID!): ArticlePayload!

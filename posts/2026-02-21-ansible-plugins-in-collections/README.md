@@ -67,6 +67,7 @@ Every collection needs a `galaxy.yml` at the root:
 
 ```yaml
 # galaxy.yml - Collection metadata
+
 namespace: myorg
 name: myutils
 version: 1.0.0

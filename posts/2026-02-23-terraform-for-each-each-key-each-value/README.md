@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, For_each, Loops, Infrastructure as Code
+Tags: Terraform, HCL, for_each, Loops, Infrastructure as Code
 
 Description: Learn how to use each.key and each.value in Terraform for_each loops to create multiple resources from maps and sets with clean, readable configurations.
 
@@ -21,6 +21,7 @@ When you use `for_each`, Terraform iterates over a map or set and creates one re
 
 ```hcl
 # Using for_each with a set of strings
+
 resource "aws_iam_user" "team" {
   for_each = toset(["alice", "bob", "carol"])
 

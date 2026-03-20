@@ -16,6 +16,7 @@ The `failed` Jinja2 test checks whether a registered variable represents a faile
 
 ```yaml
 # basic-failed-test.yml - Basic usage of the failed test
+
 ---
 - name: Demonstrate the failed test
   hosts: all

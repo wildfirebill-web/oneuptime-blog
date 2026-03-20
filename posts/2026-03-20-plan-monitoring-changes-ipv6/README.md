@@ -13,7 +13,7 @@ Monitoring changes for IPv6 migration are often overlooked, leading to gaps in o
 ## Step 1: Prometheus IPv6 Target Scraping
 
 ```yaml
-# prometheus.yml — add IPv6 scrape targets
+# prometheus.yml - add IPv6 scrape targets
 
 global:
   scrape_interval: 15s
@@ -24,7 +24,7 @@ scrape_configs:
     static_configs:
       - targets: ['10.0.0.1:9100', '10.0.0.2:9100']
 
-  # New IPv6 targets — bracket notation
+  # New IPv6 targets - bracket notation
   - job_name: 'node-exporter-ipv6'
     static_configs:
       - targets:
@@ -50,6 +50,7 @@ scrape_configs:
 
 ```bash
 # Check Prometheus targets page
+
 curl -6 http://[::1]:9090/api/v1/targets | python3 -m json.tool | grep -A5 ipv6
 
 # Query metric from IPv6 target
@@ -92,7 +93,7 @@ groups:
           severity: warning
         annotations:
           summary: "No IPv6 traffic on {{ $labels.instance }}"
-          description: "IPv6 traffic dropped to zero while IPv4 traffic is flowing — possible dual-stack routing issue"
+          description: "IPv6 traffic dropped to zero while IPv4 traffic is flowing - possible dual-stack routing issue"
 
       # Alert on high IPv6 error rate
       - alert: HighIPv6ErrorRate
@@ -201,4 +202,4 @@ modules:
 
 ## Conclusion
 
-Monitoring IPv6 requires changes at every observability layer. Prometheus supports IPv6 scrape targets with bracket notation in the target address. Bind all monitoring services to `[::]:port` to accept connections from both IPv4 and IPv6 management stations. Add `ip_version` labels to metrics during collection, then use them in alert rules and dashboards to distinguish IPv6 and IPv4 traffic. A key alert to create immediately is "IPv6 traffic dropped to zero while IPv4 is flowing" — this catches dual-stack routing failures that affect IPv6 users but appear normal from IPv4-only monitoring.
+Monitoring IPv6 requires changes at every observability layer. Prometheus supports IPv6 scrape targets with bracket notation in the target address. Bind all monitoring services to `[::]:port` to accept connections from both IPv4 and IPv6 management stations. Add `ip_version` labels to metrics during collection, then use them in alert rules and dashboards to distinguish IPv6 and IPv4 traffic. A key alert to create immediately is "IPv6 traffic dropped to zero while IPv4 is flowing" - this catches dual-stack routing failures that affect IPv6 users but appear normal from IPv4-only monitoring.

@@ -70,6 +70,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Add Traefik Helm repository
+
 helm repo add traefik https://traefik.github.io/charts
 helm repo update
 ```

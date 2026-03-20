@@ -37,6 +37,7 @@ Before you can add a VNet rule to Key Vault, the subnet must have the Microsoft.
 
 ```bash
 # Enable the Key Vault service endpoint on a subnet
+
 az network vnet subnet update \
   --name myAppSubnet \
   --vnet-name myVNet \

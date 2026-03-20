@@ -28,6 +28,7 @@ Start by creating a Feature Store instance with the Bigtable online serving conf
 
 ```python
 # create_feature_store.py
+
 # Create a Vertex AI Feature Store instance
 
 from google.cloud import aiplatform

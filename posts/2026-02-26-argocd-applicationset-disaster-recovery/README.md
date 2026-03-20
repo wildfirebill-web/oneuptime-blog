@@ -90,6 +90,7 @@ For the DR cluster, sync is manual (no `automated` block). During normal operati
 
 ```bash
 # Step 1: Label the DR cluster as primary
+
 argocd cluster set dr-cluster \
   --label role=primary
 

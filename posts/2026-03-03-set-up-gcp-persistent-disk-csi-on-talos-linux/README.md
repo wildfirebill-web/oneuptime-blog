@@ -31,6 +31,7 @@ The CSI driver needs a service account with permissions to manage persistent dis
 
 ```bash
 # Grant the necessary role to the service account
+
 gcloud projects add-iam-policy-binding my-project \
   --member="serviceAccount:talos-cloud-provider@my-project.iam.gserviceaccount.com" \
   --role="roles/compute.storageAdmin"

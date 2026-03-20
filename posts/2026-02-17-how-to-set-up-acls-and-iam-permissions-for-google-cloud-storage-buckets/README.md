@@ -52,6 +52,7 @@ Grant a user read access to a bucket:
 
 ```bash
 # Grant a user permission to view objects in a bucket
+
 gcloud storage buckets add-iam-policy-binding gs://my-data-bucket \
   --member="user:alice@example.com" \
   --role="roles/storage.objectViewer"

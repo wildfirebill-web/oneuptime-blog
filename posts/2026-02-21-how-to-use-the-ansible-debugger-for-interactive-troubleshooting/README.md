@@ -19,6 +19,7 @@ There are several ways to activate the debugger. The most common is the `debugge
 ```yaml
 ---
 # debug-example.yml
+
 # The debugger activates only if this specific task fails
 
 - hosts: webservers

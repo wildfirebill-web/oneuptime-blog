@@ -16,6 +16,7 @@ SSH is the most common protocol for Git authentication in GitOps pipelines. Conn
 # Standard SSH Git URL formats for IPv6:
 
 # Format 1: SCP-like (does NOT support IPv6 literal addresses)
+
 # git@[2001:db8::git]:org/repo.git  ← NOT valid
 # Use hostname with AAAA record instead:
 git clone git@gitserver.example.com:org/repo.git
@@ -52,7 +53,7 @@ Host gitserver-ipv6
 Host gitea.example.com
     User git
     IdentityFile ~/.ssh/id_ed25519
-    # Hostname resolves to AAAA record — no AddressFamily needed
+    # Hostname resolves to AAAA record - no AddressFamily needed
     # but forces IPv6:
     AddressFamily inet6
 
@@ -153,7 +154,7 @@ spec:
 
 ```bash
 #!/bin/bash
-# get-ipv6-hostkeys.sh — Collect SSH host keys from IPv6 Git server
+# get-ipv6-hostkeys.sh - Collect SSH host keys from IPv6 Git server
 
 GIT_SERVER_IPV6="2001:db8::git"
 OUTPUT="known_hosts_ipv6"

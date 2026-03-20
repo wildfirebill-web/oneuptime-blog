@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VLAN, ip link, Linux, 802.1Q, Networking, Inspection, bridge
+Tags: VLAN, Ip link, Linux, 802.1Q, Networking, Inspection, Bridge
 
 Description: Learn how to use the ip -d link show command to inspect VLAN interface details including VLAN ID, parent interface, protocol, and egress/ingress QoS mappings on Linux.
 
@@ -14,6 +14,7 @@ The `ip -d link show` command displays detailed interface information including 
 
 ```bash
 # Show all interfaces with detail
+
 ip -d link show
 
 # Show a specific VLAN interface
@@ -29,7 +30,7 @@ ip -d link show eth0.100
 
 ## Understanding the Output
 
-```
+```text
 eth0.100@eth0          → VLAN interface name @ parent interface
 mtu 1500               → MTU of the VLAN interface
 vlan protocol 802.1Q   → VLAN encapsulation protocol

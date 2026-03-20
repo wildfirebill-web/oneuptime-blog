@@ -17,6 +17,7 @@ Automating VPP diagnostic collection reduces the time needed to gather context d
 ```bash
 #!/bin/bash
 # collect-calico-vpp-diagnostics.sh
+
 set -euo pipefail
 
 BUNDLE_DIR="calico-vpp-diag-$(date +%Y%m%d-%H%M%S)"

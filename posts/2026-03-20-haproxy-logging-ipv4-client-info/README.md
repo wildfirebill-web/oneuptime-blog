@@ -27,6 +27,7 @@ global
 
 ```bash
 # /etc/rsyslog.d/49-haproxy.conf
+
 # Write HAProxy local0 messages to a dedicated log file
 if $programname == 'haproxy' then /var/log/haproxy.log
 & stop
@@ -46,7 +47,7 @@ defaults
 
 A typical HTTP log line:
 
-```
+```yaml
 haproxy[1234]: 203.0.113.10:54321 [19/Mar/2026:12:00:00.123] http_in~ web_servers/app1 0/0/1/22/23 200 1024 - - ---- 10/8/0/1/0 0/0 "GET /index.html HTTP/1.1"
 ```
 
@@ -67,13 +68,13 @@ defaults
 ```
 
 Key format specifiers:
-- `%ci` — Client IPv4 address
-- `%cp` — Client port
-- `%ft` — Frontend name
-- `%b/%s` — Backend and server name
-- `%ST` — HTTP status code
-- `%B` — Bytes transferred
-- `%Tr` — Response time from server
+- `%ci` - Client IPv4 address
+- `%cp` - Client port
+- `%ft` - Frontend name
+- `%b/%s` - Backend and server name
+- `%ST` - HTTP status code
+- `%B` - Bytes transferred
+- `%Tr` - Response time from server
 
 ## TCP Mode Logging
 

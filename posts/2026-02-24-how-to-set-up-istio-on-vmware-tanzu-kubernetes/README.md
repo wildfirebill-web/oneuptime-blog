@@ -16,6 +16,7 @@ Make sure your TKG cluster is ready:
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 
 # Check Kubernetes version (TKG typically runs 1.25+)

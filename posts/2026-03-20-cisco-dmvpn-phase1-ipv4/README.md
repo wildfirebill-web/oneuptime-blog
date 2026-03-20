@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cisco, DMVPN, IPv4, IOS, VPN, mGRE, NHRP, Hub-and-Spoke
+Tags: Cisco, DMVPN, IPv4, IOS, VPN, MGRE, NHRP, Hub-and-Spoke
 
 Description: Configure DMVPN Phase 1 (hub-and-spoke) on Cisco IOS routers using mGRE, NHRP, and IPsec to create a scalable hub-and-spoke VPN topology for IPv4.
 
@@ -40,11 +40,11 @@ interface Tunnel0
  no ip split-horizon eigrp 100      ! Allow EIGRP updates to spokes
  no ip next-hop-self eigrp 100
  tunnel source GigabitEthernet0/0   ! Hub WAN interface
- tunnel mode gre multipoint         ! mGRE — accept any source
+ tunnel mode gre multipoint         ! mGRE - accept any source
  tunnel key 100
  tunnel protection ipsec profile DMVPN-PROFILE
 
- ! NHRP — register hub as NHS
+ ! NHRP - register hub as NHS
  ip nhrp network-id 100
  ip nhrp map multicast dynamic     ! Allow dynamic multicast mapping
  ip nhrp authentication NHRP-KEY
@@ -111,15 +111,15 @@ show crypto ipsec sa
 
 ## Phase 1 Characteristics
 
-```
+```text
 In DMVPN Phase 1:
   - All spoke-to-spoke traffic routes through the hub
   - Hub sees ALL traffic (bottleneck in large deployments)
-  - Simple configuration — no spoke-to-spoke shortcuts
+  - Simple configuration - no spoke-to-spoke shortcuts
   - Ideal for: small deployments, centralized internet breakout
   - Traffic path: Spoke1 → Hub → Spoke2
 ```
 
 ## Conclusion
 
-DMVPN Phase 1 is the simplest DMVPN deployment mode — a hub-and-spoke topology where all traffic flows through the hub. It combines mGRE for multi-point tunneling, NHRP for dynamic spoke registration, and IPsec for encryption. Phase 2 builds on this by allowing direct spoke-to-spoke tunnels after an initial hub transit.
+DMVPN Phase 1 is the simplest DMVPN deployment mode - a hub-and-spoke topology where all traffic flows through the hub. It combines mGRE for multi-point tunneling, NHRP for dynamic spoke registration, and IPsec for encryption. Phase 2 builds on this by allowing direct spoke-to-spoke tunnels after an initial hub transit.

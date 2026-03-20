@@ -40,6 +40,7 @@ flowchart TB
 
 ```bash
 # Enable the Memorystore API
+
 gcloud services enable redis.googleapis.com
 
 # Create a basic Redis instance

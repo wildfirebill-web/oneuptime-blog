@@ -29,6 +29,7 @@ OpenTelemetry provides both a PHP extension (for auto-instrumentation) and a Com
 
 ```bash
 # Install the OpenTelemetry PHP extension via PECL
+
 pecl install opentelemetry
 
 # Add the extension to your php.ini

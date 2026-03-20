@@ -30,6 +30,7 @@ Never run `calicoctl delete` directly. Use a wrapper that captures the resource 
 ```bash
 #!/bin/bash
 # safe-delete.sh
+
 # Backs up a Calico resource before deleting it
 
 set -euo pipefail

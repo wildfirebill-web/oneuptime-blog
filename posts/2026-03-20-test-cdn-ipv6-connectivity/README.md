@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, CDN, Testing, Connectivity, curl, DNS
 
-Description: A guide to testing CDN IPv6 connectivity from multiple angles — DNS verification, direct IPv6 connection tests, cache behavior, and global reachability.
+Description: A guide to testing CDN IPv6 connectivity from multiple angles - DNS verification, direct IPv6 connection tests, cache behavior, and global reachability.
 
 Testing CDN IPv6 connectivity ensures that IPv6 clients worldwide can reach your content. This guide covers systematic testing from DNS through connection establishment to content delivery.
 
@@ -12,6 +12,7 @@ Testing CDN IPv6 connectivity ensures that IPv6 clients worldwide can reach your
 
 ```bash
 # Test 1: DNS returns AAAA records
+
 dig AAAA cdn.example.com
 
 # Test 2: Connect to CDN via IPv6

@@ -46,6 +46,7 @@ Google's SRE book recommends this approach with specific burn rates tied to aler
 
 ```yaml
 # prometheus/rules/slo_alerts.yaml
+
 groups:
   - name: slo_multiwindow_alerts
     rules:

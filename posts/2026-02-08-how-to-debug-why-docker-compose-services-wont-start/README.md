@@ -18,6 +18,7 @@ Start by seeing what state your containers are in:
 
 ```bash
 # Show all containers including stopped ones with exit codes
+
 docker compose ps -a
 ```
 

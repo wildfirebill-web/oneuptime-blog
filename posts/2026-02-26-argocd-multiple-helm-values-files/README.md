@@ -58,6 +58,7 @@ Here is a practical values file structure for a multi-environment, multi-region 
 
 ```yaml
 # values.yaml - sensible defaults for all environments
+
 replicaCount: 1
 image:
   repository: myorg/my-app

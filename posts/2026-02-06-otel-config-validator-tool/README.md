@@ -14,6 +14,7 @@ The validator tool is distributed as part of the `opentelemetry-configuration` r
 
 ```bash
 # Clone the configuration repository
+
 git clone https://github.com/open-telemetry/opentelemetry-configuration.git
 cd opentelemetry-configuration
 

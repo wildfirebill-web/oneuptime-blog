@@ -86,6 +86,7 @@ Enable managed identity on your VM or AKS cluster:
 
 ```bash
 # For Azure VM
+
 az vm identity assign --name myVM --resource-group myResourceGroup
 
 # For AKS cluster

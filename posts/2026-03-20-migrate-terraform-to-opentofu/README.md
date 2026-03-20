@@ -1,4 +1,4 @@
-# How to Migrate from Terraform to OpenTofu
+# How to Migrate from Terraform to OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Learn how to migrate existing Terraform configurations, state files, and workflo
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

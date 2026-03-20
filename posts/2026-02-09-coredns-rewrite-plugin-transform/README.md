@@ -70,6 +70,7 @@ Apply the configuration:
 
 ```bash
 # Apply ConfigMap
+
 kubectl apply -f coredns-config.yaml
 
 # Restart CoreDNS

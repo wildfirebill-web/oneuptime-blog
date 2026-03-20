@@ -36,6 +36,7 @@ To create a brand new cluster with Azure Linux as the default OS:
 
 ```bash
 # Create an AKS cluster with Azure Linux (Mariner) as the node OS
+
 az aks create \
   --resource-group myResourceGroup \
   --name myAzureLinuxCluster \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SUSE Observability, Troubleshooting, Applications, Kubernetes, Root Cause Analysis
+Tags: SUSE Observability, Troubleshooting, Application, Kubernetes, Root Cause Analysis
 
 Description: Use SUSE Observability's topology and dependency mapping to investigate and resolve application performance issues.
 
@@ -31,6 +31,7 @@ SUSE Observability consists of:
 
 ```bash
 # Add the SUSE Observability Helm repository
+
 helm repo add suse-observability https://charts.rancher.com/server-charts/prime/suse-observability
 helm repo update
 

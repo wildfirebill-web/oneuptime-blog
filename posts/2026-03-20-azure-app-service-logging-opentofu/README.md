@@ -14,6 +14,7 @@ Azure App Service supports multiple logging types: application logs, HTTP access
 
 ```hcl
 # main.tf - Observability resources
+
 resource "azurerm_log_analytics_workspace" "law" {
   name                = "app-logging-workspace"
   location            = azurerm_resource_group.rg.location

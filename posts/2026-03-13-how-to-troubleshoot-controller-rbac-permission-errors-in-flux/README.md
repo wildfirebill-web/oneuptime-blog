@@ -78,6 +78,7 @@ Use `kubectl auth can-i` to test whether a service account has specific permissi
 
 ```bash
 # Test if kustomize-controller can create deployments in the default namespace
+
 kubectl auth can-i create deployments --as=system:serviceaccount:flux-system:kustomize-controller -n default
 
 # Test if kustomize-controller can create custom resources

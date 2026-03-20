@@ -97,6 +97,7 @@ But there are edge cases. If the client is in a different namespace:
 
 ```yaml
 # Client is in namespace "frontend", service is in "production"
+
 # The client calls: http://my-service.production:8080
 
 # VirtualService host must match:

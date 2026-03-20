@@ -16,6 +16,7 @@ AppArmor is a Linux kernel security module that restricts program capabilities u
 
 ```bash
 # Verify AppArmor is enabled on Kubernetes nodes
+
 ssh node01 "cat /sys/module/apparmor/parameters/enabled"
 # Y
 

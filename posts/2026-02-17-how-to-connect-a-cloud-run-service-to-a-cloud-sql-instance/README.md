@@ -33,6 +33,7 @@ Your Cloud Run service account needs the `roles/cloudsql.client` role:
 
 ```bash
 # Get the default Compute Engine service account (used by Cloud Run by default)
+
 PROJECT_NUMBER=$(gcloud projects describe $(gcloud config get-value project) --format='value(projectNumber)')
 SA_EMAIL="${PROJECT_NUMBER}-compute@developer.gserviceaccount.com"
 

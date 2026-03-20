@@ -16,6 +16,7 @@ The simplest approach uses the `key_file` parameter to specify the SSH private k
 
 ```yaml
 # playbook-basic-ssh.yml
+
 # Clones a private repository using an SSH deploy key
 - name: Clone with SSH key
   hosts: webservers

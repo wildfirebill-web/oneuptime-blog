@@ -24,6 +24,7 @@ Unmanaged pods are a significant security concern because they are not subject t
 
 ```bash
 # List all endpoints managed by Cilium
+
 kubectl exec -n kube-system ds/cilium -- cilium endpoint list
 
 # Compare with running pods

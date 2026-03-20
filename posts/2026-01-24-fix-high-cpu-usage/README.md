@@ -34,6 +34,7 @@ flowchart TD
 
 ```bash
 # Check overall CPU usage
+
 top -b -n 1 | head -20
 
 # See CPU usage per core

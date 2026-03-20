@@ -40,6 +40,7 @@ Timestream has two storage tiers:
 
 ```bash
 # Create a Timestream database
+
 aws timestream-write create-database \
   --database-name iot_sensor_data \
   --tags Key=Environment,Value=production

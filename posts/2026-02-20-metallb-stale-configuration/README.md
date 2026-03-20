@@ -45,6 +45,7 @@ graph TD
 
 ```bash
 # List all pools and their address ranges
+
 echo "=== IP Address Pools ==="
 kubectl get ipaddresspool -n metallb-system \
   -o custom-columns=NAME:.metadata.name,ADDRESSES:.spec.addresses

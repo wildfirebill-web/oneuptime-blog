@@ -16,6 +16,7 @@ Before configuring Istio for IPv6, verify what your cluster supports:
 
 ```bash
 # Check the cluster CIDR
+
 kubectl cluster-info dump | grep -i cidr
 
 # Check service IP ranges

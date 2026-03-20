@@ -33,6 +33,7 @@ The first stage compiles the application, runs unit tests, and publishes all art
 
 ```yaml
 # azure-pipelines.yml - unified infrastructure and application pipeline
+
 trigger:
   branches:
     include:

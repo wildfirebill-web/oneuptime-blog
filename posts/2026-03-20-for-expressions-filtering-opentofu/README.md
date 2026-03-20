@@ -14,6 +14,7 @@ For expressions in OpenTofu support an optional `if` clause that filters element
 
 ```hcl
 # List with filter: [for <item> in <collection> : <expression> if <condition>]
+
 # Map with filter:  {for <item> in <collection> : <key> => <value> if <condition>}
 
 variable "instances" {

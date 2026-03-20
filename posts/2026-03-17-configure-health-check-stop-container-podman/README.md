@@ -18,6 +18,7 @@ When a container becomes unhealthy, sometimes the best course of action is to st
 
 ```bash
 # Gracefully stop the container when health check fails
+
 podman run -d \
   --name graceful-stop-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

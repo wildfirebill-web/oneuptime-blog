@@ -26,6 +26,7 @@ For this guide:
 
 ```bash
 # On the Puppet server
+
 # Download and install the Puppet repository
 wget https://apt.puppetlabs.com/puppet8-release-jammy.deb
 sudo dpkg -i puppet8-release-jammy.deb

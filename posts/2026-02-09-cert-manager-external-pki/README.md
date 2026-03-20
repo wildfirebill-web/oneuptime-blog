@@ -29,6 +29,7 @@ HashiCorp Vault provides a PKI secrets engine that can act as an intermediate or
 
 ```bash
 # Enable PKI secrets engine
+
 vault secrets enable pki
 
 # Configure max lease TTL

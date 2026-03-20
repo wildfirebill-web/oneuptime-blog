@@ -22,6 +22,7 @@ The `trust` command is part of `p11-kit-trust`, which provides a PKCS#11 trust m
 
 ```bash
 # Verify the trust command is available
+
 which trust
 rpm -qf $(which trust)
 ```

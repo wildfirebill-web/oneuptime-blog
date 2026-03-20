@@ -39,6 +39,7 @@ The cache helper stores credentials in memory for a limited time. Credentials ar
 
 ```bash
 # Enable credential caching with default 15-minute timeout
+
 git config --global credential.helper cache
 
 # Set a custom timeout (in seconds)

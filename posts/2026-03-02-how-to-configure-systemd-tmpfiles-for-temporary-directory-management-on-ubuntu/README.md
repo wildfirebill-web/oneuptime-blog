@@ -69,6 +69,7 @@ A common use case is ensuring an application's directories exist with the right 
 
 ```bash
 # Create a tmpfiles.d configuration for myapp
+
 sudo tee /etc/tmpfiles.d/myapp.conf << 'EOF'
 # Type  Path                    Mode  User    Group   Age  Argument
 

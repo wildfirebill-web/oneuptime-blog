@@ -53,6 +53,7 @@ You need:
 
 ```bash
 # Create a Traffic Manager profile with geographic routing
+
 az network traffic-manager profile create \
   --resource-group myResourceGroup \
   --name myGeoProfile \

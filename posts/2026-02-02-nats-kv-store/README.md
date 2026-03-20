@@ -76,6 +76,7 @@ For production environments, use a configuration file that defines memory limits
 
 ```conf
 # nats-server.conf
+
 server_name: nats-1
 
 jetstream {

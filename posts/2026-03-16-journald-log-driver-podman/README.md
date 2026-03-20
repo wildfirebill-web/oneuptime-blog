@@ -18,6 +18,7 @@ The journald log driver sends container stdout and stderr to the systemd journal
 
 ```bash
 # Run a container with the journald log driver
+
 podman run -d \
   --log-driver journald \
   --name web \

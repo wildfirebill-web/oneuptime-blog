@@ -35,6 +35,7 @@ PCI Requirement 1.3: Prohibit direct public access to the CDE.
 
 ```bash
 # Create a group for CDE workloads
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/group" \
   -H "Content-Type: application/json" \
@@ -314,4 +315,4 @@ echo "PCI report generated: pci-report-${DATE}.txt"
 
 ## Conclusion
 
-NeuVector provides the technical controls needed to address multiple PCI DSS requirements for containerized applications. By configuring network segmentation, vulnerability scanning, DLP for cardholder data, and comprehensive audit logging, you build a defensible PCI DSS compliance posture. Remember that PCI DSS compliance requires not just technical controls but also documented policies, regular testing, and ongoing monitoring — NeuVector supports all of these operational requirements.
+NeuVector provides the technical controls needed to address multiple PCI DSS requirements for containerized applications. By configuring network segmentation, vulnerability scanning, DLP for cardholder data, and comprehensive audit logging, you build a defensible PCI DSS compliance posture. Remember that PCI DSS compliance requires not just technical controls but also documented policies, regular testing, and ongoing monitoring - NeuVector supports all of these operational requirements.

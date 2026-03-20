@@ -36,6 +36,7 @@ First, create the VPN gateway and forwarding rules:
 
 ```bash
 # Reserve a static external IP for the VPN gateway
+
 gcloud compute addresses create vpn-static-ip \
     --region=us-central1
 

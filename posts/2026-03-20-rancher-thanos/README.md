@@ -1,4 +1,4 @@
-# How to Deploy Thanos on Rancher for Long-Term Metrics
+# How to Deploy Thanos on Rancher for Long-Term Metrics - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Modify the Rancher Monitoring Prometheus to enable the Thanos sidecar:
 
 ```yaml
 # prometheus-with-thanos.yaml - Prometheus operator config
+
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:

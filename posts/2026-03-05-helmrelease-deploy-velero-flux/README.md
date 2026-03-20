@@ -23,6 +23,7 @@ Velero publishes its Helm chart through the VMware Tanzu repository.
 
 ```yaml
 # helmrepository-velero.yaml - Velero Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

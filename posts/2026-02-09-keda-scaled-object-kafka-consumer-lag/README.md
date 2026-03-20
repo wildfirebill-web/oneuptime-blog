@@ -31,6 +31,7 @@ helm install keda kedacore/keda \
   --create-namespace
 
 # Verify installation
+
 kubectl get pods -n keda
 ```
 

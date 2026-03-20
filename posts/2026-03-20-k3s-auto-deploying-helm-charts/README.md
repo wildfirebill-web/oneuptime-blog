@@ -16,6 +16,7 @@ K3s installs the `HelmChart` and `HelmChartConfig` custom resource definitions a
 
 ```bash
 # Verify the HelmChart CRD is available
+
 kubectl get crd | grep helm
 
 # View existing HelmChart resources (K3s uses these internally)

@@ -29,6 +29,7 @@ The most important optimization is to copy `Cargo.toml` and `Cargo.lock` and bui
 
 ```dockerfile
 # Dockerfile - dependency caching pattern for fast rebuilds
+
 FROM rust:1.78-alpine AS chef
 RUN cargo install cargo-chef
 WORKDIR /app

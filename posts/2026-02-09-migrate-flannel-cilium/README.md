@@ -16,6 +16,7 @@ CNI migration requires careful planning because you cannot run two CNI plugins s
 
 ```yaml
 # Migration approach overview
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

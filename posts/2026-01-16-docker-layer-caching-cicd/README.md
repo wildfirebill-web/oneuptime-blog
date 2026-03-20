@@ -39,6 +39,7 @@ When any layer changes, all subsequent layers must be rebuilt. Optimizing layer 
 
 ```dockerfile
 # Bad: Source code copied early invalidates dependency cache
+
 FROM node:20
 WORKDIR /app
 COPY . .

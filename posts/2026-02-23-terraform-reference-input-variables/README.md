@@ -18,6 +18,7 @@ Every input variable in Terraform is referenced using the `var` prefix:
 
 ```hcl
 # Define a variable
+
 variable "instance_type" {
   description = "The EC2 instance type to use"
   type        = string

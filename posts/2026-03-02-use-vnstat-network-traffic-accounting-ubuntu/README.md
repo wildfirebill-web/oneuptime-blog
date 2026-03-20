@@ -45,6 +45,7 @@ If an interface is missing, add it explicitly:
 
 ```bash
 # Add eth0 to vnstat monitoring
+
 sudo vnstat --add -i eth0
 
 # Or with the modern interface name

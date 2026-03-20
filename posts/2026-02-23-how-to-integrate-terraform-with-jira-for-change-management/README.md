@@ -22,6 +22,7 @@ Use Terraform to automatically create Jira tickets when infrastructure changes a
 
 ```hcl
 # Variables for Jira integration
+
 variable "jira_base_url" {
   description = "Jira instance URL"
   type        = string

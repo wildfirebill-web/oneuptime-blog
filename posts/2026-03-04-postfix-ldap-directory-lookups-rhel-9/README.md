@@ -23,6 +23,7 @@ If your organization uses LDAP (or Active Directory) for user management, duplic
 
 ```bash
 # Install Postfix LDAP integration
+
 sudo dnf install -y postfix-ldap
 ```
 

@@ -42,6 +42,7 @@ Here is a basic configuration:
 
 ```yaml
 # Basic Transform processor with OTTL statements
+
 processors:
   transform:
     # Statements that operate on entire traces
@@ -327,7 +328,7 @@ processors:
 
 JSON functions enable working with structured data embedded in attributes.
 
-## Resource Transformations
+Resource Transformations
 
 Modify resource attributes that apply to all telemetry from a source:
 

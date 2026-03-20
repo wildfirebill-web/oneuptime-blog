@@ -28,6 +28,7 @@ Most modern applications output JSON logs:
 
 ```yaml
 # JSON parser configuration
+
 <source>
   @type tail
   path /var/log/containers/*-app-*.log

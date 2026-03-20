@@ -58,6 +58,7 @@ Or using the `bq` command line:
 
 ```bash
 # Create a view using bq
+
 bq mk --view \
     "SELECT order_id, customer_id, order_date, total_amount, status FROM \`my-project-id.raw_data.orders\` WHERE order_date >= '2025-01-01'" \
     my-project-id:analytics.order_summary

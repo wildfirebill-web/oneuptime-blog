@@ -29,6 +29,7 @@ The memory limiter processor is your first line of defense. It monitors the coll
 
 ```yaml
 # Memory limiter configuration
+
 # Place this FIRST in every pipeline's processor list
 processors:
   memory_limiter:

@@ -30,6 +30,7 @@ Ubuntu cloud images ship with cloud-init pre-installed. On a regular Ubuntu inst
 
 ```bash
 # Install cloud-init
+
 sudo apt update
 sudo apt install -y cloud-init
 

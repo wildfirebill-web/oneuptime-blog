@@ -14,6 +14,7 @@ By default, SSH local port forwards (`-L`) bind to `127.0.0.1`, making the tunne
 
 ```bash
 # Default: bind to 127.0.0.1 only (accessible only locally)
+
 ssh -L 5432:db.internal:5432 user@203.0.113.10
 
 # Bind to specific IPv4 (accessible from 10.0.0.5 on the network)
@@ -67,7 +68,7 @@ Host shared-db-tunnel
     User admin
     AddressFamily inet
 
-    # Bind on network interface, not loopback — shares with team
+    # Bind on network interface, not loopback - shares with team
     LocalForward 10.0.0.5:5432 db.internal:5432
     LocalForward 10.0.0.5:6379 redis.internal:6379
 

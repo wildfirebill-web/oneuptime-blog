@@ -33,6 +33,7 @@ The `community.vmware.vmware_resource_pool` module handles resource pool creatio
 
 ```yaml
 # create-resource-pools.yml
+
 ---
 - name: Create VMware resource pools
   hosts: localhost

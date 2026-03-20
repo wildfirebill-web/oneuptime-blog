@@ -42,6 +42,7 @@ If your nodes have both public and private IPs but should only be reached via th
 
 ```yaml
 # Exclude all private IP ranges
+
 machine:
   network:
     kubespan:

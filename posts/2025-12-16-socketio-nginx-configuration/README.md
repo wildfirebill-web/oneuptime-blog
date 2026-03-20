@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Socket.IO, NGINX, WebSocket, Real-Time, Proxy, DevOps
+Tags: Socket.IO, Nginx, WebSocket, Real-Time, Proxy, DevOps
 
 Description: Learn how to properly configure Nginx as a reverse proxy for Socket.io applications, including WebSocket support, sticky sessions, and troubleshooting common connection issues.
 
@@ -101,6 +101,7 @@ The critical headers are:
 
 ```nginx
 # Required for WebSocket upgrade
+
 proxy_http_version 1.1;                    # HTTP/1.1 required for upgrade
 proxy_set_header Upgrade $http_upgrade;     # Pass the Upgrade header
 proxy_set_header Connection "upgrade";      # Set Connection to "upgrade"

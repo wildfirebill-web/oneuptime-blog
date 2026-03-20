@@ -252,6 +252,7 @@ JWKS_URL = f'https://cognito-idp.{REGION}.amazonaws.com/{USER_POOL_ID}/.well-kno
 ISSUER = f'https://cognito-idp.{REGION}.amazonaws.com/{USER_POOL_ID}'
 
 # Cache JWKS keys
+
 _jwks_cache = None
 _jwks_cache_time = 0
 

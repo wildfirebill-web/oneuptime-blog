@@ -20,6 +20,7 @@ When you create a user on RHEL:
 
 ```bash
 # Create a new user
+
 sudo useradd alice
 ```
 

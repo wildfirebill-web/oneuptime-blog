@@ -21,6 +21,7 @@ In a canary deployment, you run the new version alongside the current version an
 ```bash
 #!/bin/bash
 # Canary deployment workflow:
+
 # 1. Build the new version image with Podman
 # 2. Deploy the canary alongside the stable version
 # 3. Route a small percentage of traffic to the canary

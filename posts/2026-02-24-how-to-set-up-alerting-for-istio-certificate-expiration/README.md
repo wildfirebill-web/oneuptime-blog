@@ -46,6 +46,7 @@ Istio and Envoy expose several metrics related to certificates. Here are the one
 
 ```promql
 # Number of certificate signing requests
+
 citadel_server_csr_count
 
 # Number of successful certificate signings

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, SSL, TLS, HTTPS, Security, Let's Encrypt
+Tags: Nginx, SSL, TLS, HTTPS, Security, Let's Encrypt
 
 Description: Learn how to configure SSL/TLS termination in Nginx, including certificate setup, cipher configuration, OCSP stapling, and automated renewal with Let's Encrypt.
 
@@ -44,6 +44,7 @@ server {
 }
 
 # Redirect HTTP to HTTPS
+
 server {
     listen 80;
     server_name example.com www.example.com;

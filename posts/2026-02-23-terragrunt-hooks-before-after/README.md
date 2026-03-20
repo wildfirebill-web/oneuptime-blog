@@ -16,6 +16,7 @@ Hooks are defined inside the `terraform` block:
 
 ```hcl
 # terragrunt.hcl
+
 terraform {
   source = "../../modules/vpc"
 

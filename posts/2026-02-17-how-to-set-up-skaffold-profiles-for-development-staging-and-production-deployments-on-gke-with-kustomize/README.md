@@ -50,6 +50,7 @@ The base directory contains the default manifests that all environments share.
 
 ```yaml
 # k8s/base/deployment.yaml - Base deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

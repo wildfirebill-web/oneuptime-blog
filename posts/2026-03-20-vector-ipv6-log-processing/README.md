@@ -8,7 +8,7 @@ Description: Configure Vector to collect logs over IPv6 interfaces, transform IP
 
 ## Introduction
 
-Vector is a high-performance observability data pipeline. It supports IPv6 natively — sources can bind to IPv6 addresses and sinks can connect to IPv6 endpoints. Vector's Vector Remap Language (VRL) provides powerful IPv6 address manipulation including parsing, validation, and subnet classification.
+Vector is a high-performance observability data pipeline. It supports IPv6 natively - sources can bind to IPv6 addresses and sinks can connect to IPv6 endpoints. Vector's Vector Remap Language (VRL) provides powerful IPv6 address manipulation including parsing, validation, and subnet classification.
 
 ## Step 1: Sources on IPv6 Interfaces
 
@@ -16,6 +16,7 @@ Vector is a high-performance observability data pipeline. It supports IPv6 nativ
 # /etc/vector/vector.toml
 
 # Syslog source bound to all IPv6 interfaces
+
 [sources.syslog_ipv6]
 type = "syslog"
 mode = "tcp"

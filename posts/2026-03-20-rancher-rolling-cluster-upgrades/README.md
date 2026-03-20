@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Upgrades, Operations, RKE2
+Tags: Rancher, Kubernetes, Upgrade, Operations, RKE2
 
 Description: Perform safe rolling Kubernetes version upgrades on Rancher-managed clusters with zero downtime using RKE2 and Rancher's built-in upgrade management.
 
@@ -16,6 +16,7 @@ Before upgrading, verify:
 
 ```bash
 # 1. Check current cluster and node versions
+
 kubectl get nodes -o wide
 kubectl version
 

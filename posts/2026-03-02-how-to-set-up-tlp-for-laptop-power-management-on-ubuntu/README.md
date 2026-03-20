@@ -23,6 +23,7 @@ Ubuntu has basic power management through upower and systemd, but TLP adds:
 
 ```bash
 # TLP is in the Ubuntu repositories
+
 sudo apt update
 sudo apt install tlp tlp-rdw
 

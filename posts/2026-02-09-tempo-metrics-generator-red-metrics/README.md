@@ -24,6 +24,7 @@ Configure Tempo with the metrics generator enabled:
 
 ```yaml
 # tempo-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

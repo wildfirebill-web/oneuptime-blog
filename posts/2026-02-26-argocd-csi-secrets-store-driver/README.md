@@ -428,6 +428,7 @@ Enable automatic rotation in the CSI driver:
 
 ```yaml
 # In the CSI driver Helm values
+
 enableSecretRotation: true
 rotationPollInterval: 2m  # Check every 2 minutes
 ```

@@ -99,6 +99,7 @@ Configure the gRPC server in `application.yml`:
 
 ```yaml
 # application.yml
+
 grpc:
   server:
     port: 9090  # gRPC server port (separate from HTTP)

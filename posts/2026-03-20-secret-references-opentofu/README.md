@@ -11,7 +11,8 @@ Referencing secrets properly in OpenTofu means the secret value flows from a sec
 ## Referencing Secrets by ARN in ECS
 
 ```hcl
-# The secret exists — we reference it by ARN
+# The secret exists - we reference it by ARN
+
 data "aws_secretsmanager_secret" "db" {
   name = "production/myapp/database"
 }
@@ -27,7 +28,7 @@ resource "aws_ecs_task_definition" "app" {
     image = "${aws_ecr_repository.api.repository_url}:latest"
 
     # Inject secrets as environment variables at task start
-    # The value never appears in the task definition — only the ARN
+    # The value never appears in the task definition - only the ARN
     secrets = [
       {
         name      = "DB_PASSWORD"
@@ -81,7 +82,7 @@ resource "aws_lambda_function" "app" {
 
   environment {
     variables = {
-      # Pass the secret ARN — Lambda code reads the value at runtime
+      # Pass the secret ARN - Lambda code reads the value at runtime
       SECRET_ARN    = aws_secretsmanager_secret.db_credentials.arn
       DB_SECRET_NAME = aws_secretsmanager_secret.db_credentials.name
     }
@@ -142,4 +143,4 @@ locals {
 
 ## Conclusion
 
-Secret references in OpenTofu keep sensitive values out of configuration files. Pass secret ARNs to ECS, Lambda, and Kubernetes rather than injecting values directly — services retrieve them at runtime. Use sensitive = true on outputs that might contain derived secret values to prevent accidental exposure in logs and CI/CD output.
+Secret references in OpenTofu keep sensitive values out of configuration files. Pass secret ARNs to ECS, Lambda, and Kubernetes rather than injecting values directly - services retrieve them at runtime. Use sensitive = true on outputs that might contain derived secret values to prevent accidental exposure in logs and CI/CD output.

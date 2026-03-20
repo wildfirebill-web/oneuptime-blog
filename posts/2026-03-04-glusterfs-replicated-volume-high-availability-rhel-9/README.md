@@ -96,6 +96,7 @@ The `backupvolfile-server` option ensures the client can mount even if node1 is 
 
 ```bash
 # On the client
+
 echo "Replicated data" | sudo tee /mnt/repvol/test.txt
 
 # Check on each node

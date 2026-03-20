@@ -74,6 +74,7 @@ Start with an abstract base class that defines the contract all repositories mus
 
 ```python
 # repositories/base.py
+
 # Abstract base class defining the repository contract
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, Optional, List

@@ -23,6 +23,7 @@ Kube-state-metrics provides service account assignment data, while Calico flow l
 
 ```promql
 # Pods using default service account (security risk)
+
 count(kube_pod_spec_service_account_name{service_account="default"})
 
 # Percentage of pods with dedicated service accounts

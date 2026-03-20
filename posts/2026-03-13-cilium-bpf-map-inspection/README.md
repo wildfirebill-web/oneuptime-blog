@@ -26,6 +26,7 @@ This guide covers the key BPF maps in Cilium, how to inspect each one, and what 
 
 ```bash
 # List all active BPF maps
+
 kubectl exec -n kube-system cilium-xxxxx -- cilium bpf list
 
 # Common maps you'll see:

@@ -25,6 +25,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 
 # Check you have admin permissions

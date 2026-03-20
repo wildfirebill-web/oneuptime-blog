@@ -20,6 +20,7 @@ After creating a GRE tunnel, you need to add static routes so the Linux routing 
 
 ```bash
 # On Host A: route traffic to Host B's 192.168.2.0/24 through the tunnel
+
 ip route add 192.168.2.0/24 via 172.16.0.2
 
 # On Host B: route traffic to Host A's 192.168.1.0/24 through the tunnel

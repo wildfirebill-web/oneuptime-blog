@@ -33,6 +33,7 @@ ACL SETUSER username [rule1] [rule2] ...
 
 ```bash
 # Create a simple user
+
 ACL SETUSER alice on >password123 ~* +@all
 
 # Create a read-only user

@@ -54,6 +54,7 @@ Create a storage account and file share dedicated to FSLogix profiles.
 
 ```bash
 # Create a storage account with premium file shares for better performance
+
 az storage account create \
   --resource-group myResourceGroup \
   --name avdprofilestorage \

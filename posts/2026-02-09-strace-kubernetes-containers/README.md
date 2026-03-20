@@ -57,6 +57,7 @@ Add strace to containers that don't have it:
 
 ```bash
 # For Debian/Ubuntu based containers
+
 kubectl exec -it my-pod -- bash -c "apt-get update && apt-get install -y strace"
 
 # For Alpine Linux

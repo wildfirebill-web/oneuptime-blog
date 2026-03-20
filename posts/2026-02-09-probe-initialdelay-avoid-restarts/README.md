@@ -38,6 +38,7 @@ Before configuring `initialDelaySeconds`, measure actual startup time:
 
 ```bash
 # Time container startup locally
+
 time docker run --rm my-app:latest
 
 # Monitor pod startup in Kubernetes

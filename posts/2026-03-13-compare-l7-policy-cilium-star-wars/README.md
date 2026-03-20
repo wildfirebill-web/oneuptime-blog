@@ -29,6 +29,7 @@ Show that the L3/L4 policy alone doesn't prevent access to dangerous endpoints.
 
 ```bash
 # TIE fighter can still hit the exhaust port - this is the gap L7 policy fixes
+
 kubectl exec tiefighter -- curl -s -XPUT deathstar.default.svc.cluster.local/v1/exhaust-port
 
 # This returns: "Panic: deathstar exploded!"

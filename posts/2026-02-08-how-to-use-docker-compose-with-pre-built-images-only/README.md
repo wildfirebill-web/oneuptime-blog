@@ -18,6 +18,7 @@ A production compose file uses only `image:` directives with no `build:` section
 
 ```yaml
 # docker-compose.prod.yml - production, pre-built images only
+
 version: "3.8"
 
 services:

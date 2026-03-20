@@ -150,6 +150,7 @@ With Istio and `holdApplicationUntilProxyStarts`, you do not need to add extra t
 
 ```yaml
 # Without holdApplicationUntilProxyStarts
+
 startupProbe:
   httpGet:
     path: /healthz

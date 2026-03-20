@@ -16,6 +16,7 @@ wrk is not in the default RHEL repositories, so you need to build it from source
 
 ```bash
 # Install build dependencies
+
 sudo dnf install -y gcc make git openssl-devel
 
 # Clone and build wrk

@@ -41,6 +41,7 @@ flowchart LR
 
 ```bash
 # Install Kubeflow Pipelines SDK
+
 pip install kfp==2.4.0
 
 # Install feature engineering libraries

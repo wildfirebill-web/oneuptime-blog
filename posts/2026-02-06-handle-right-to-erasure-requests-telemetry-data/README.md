@@ -54,6 +54,7 @@ Here is a sample collector config that exports to multiple destinations. Each de
 
 ```yaml
 # OpenTelemetry Collector config showing multiple export destinations
+
 # Each destination must be included in your data erasure inventory
 exporters:
   otlp/jaeger:

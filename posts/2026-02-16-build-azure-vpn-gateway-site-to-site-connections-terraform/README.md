@@ -31,6 +31,7 @@ Start with the VNet and the required GatewaySubnet. Azure requires this subnet t
 
 ```hcl
 # main.tf
+
 # VPN Gateway site-to-site connection infrastructure
 
 terraform {

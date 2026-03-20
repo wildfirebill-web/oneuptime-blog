@@ -246,6 +246,7 @@ For real-time debugging, Envoy's admin interface gives you instant access to sta
 
 ```bash
 # Port-forward to a gateway pod
+
 kubectl port-forward -n istio-system deploy/istio-ingressgateway 15000:15000
 
 # View all clusters and their health

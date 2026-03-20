@@ -14,6 +14,7 @@ The `argocd app set` command lets you modify an existing ArgoCD application's co
 
 ```bash
 # Change the target revision
+
 argocd app set my-app --revision main
 
 # Change the source path

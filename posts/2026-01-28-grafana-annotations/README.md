@@ -81,6 +81,7 @@ Manual annotations are the simplest way to mark events on your dashboards.
 
 ```bash
 # Create an annotation
+
 curl -X POST \
   -H "Authorization: Bearer ${GRAFANA_API_KEY}" \
   -H "Content-Type: application/json" \

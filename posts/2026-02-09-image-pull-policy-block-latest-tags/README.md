@@ -96,6 +96,7 @@ Test the policy:
 
 ```bash
 # This should be rejected
+
 kubectl run test --image=nginx:latest
 # Error: admission webhook denied
 

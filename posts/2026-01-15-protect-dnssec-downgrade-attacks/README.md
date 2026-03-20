@@ -136,6 +136,7 @@ Many resolvers are misconfigured in ways that enable downgrade attacks:
 
 ```bash
 # Vulnerable configuration
+
 server:
     ignore-cd-flag: no  # Accepts queries with CD (Checking Disabled) flag
     val-permissive-mode: yes  # Falls back to insecure on validation failure

@@ -325,6 +325,7 @@ def get_user_license_tier(token: str, user_id: str, customer_id: str) -> str:
     return "none"  # User has no license
 
 # Middleware for your web application
+
 def require_license(min_tier: str):
     """Middleware that checks if the user has the required license tier."""
     tier_levels = {"none": 0, "free": 1, "professional": 2, "enterprise": 3}

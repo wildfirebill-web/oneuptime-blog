@@ -46,6 +46,7 @@ When your data includes latitude and longitude columns:
 
 ```promql
 # Query returning location metrics with coordinates
+
 sum by (location, latitude, longitude) (
   http_requests_total{job="api-gateway"}
 )

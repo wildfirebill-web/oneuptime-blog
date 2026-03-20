@@ -16,6 +16,7 @@ ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. OpenTof
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     helm = {

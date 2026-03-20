@@ -14,6 +14,7 @@ ARA (ARA Records Ansible) is a tool that records Ansible playbook runs and provi
 
 ```yaml
 # roles/ara/tasks/main.yml
+
 ---
 - name: Install ARA
   ansible.builtin.pip:

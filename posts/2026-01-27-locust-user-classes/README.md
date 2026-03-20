@@ -20,6 +20,7 @@ A basic user class looks like this:
 
 ```python
 # locustfile.py - The simplest possible Locust user class
+
 from locust import User, task, between
 
 class MyUser(User):

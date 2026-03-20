@@ -24,6 +24,7 @@ Create a workflow that synthesizes and deploys:
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy Kubernetes Resources
 
 on:

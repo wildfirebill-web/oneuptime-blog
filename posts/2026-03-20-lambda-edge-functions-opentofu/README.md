@@ -51,6 +51,7 @@ resource "aws_iam_role_policy_attachment" "lambda_edge_basic" {
 
 ```python
 # functions/auth-check/index.py
+
 import json
 import base64
 
@@ -166,4 +167,4 @@ tofu apply tfplan
 
 ## Summary
 
-Lambda@Edge enables complex edge processing including authentication, A/B testing, and dynamic origin selection. OpenTofu manages function code, IAM roles, Lambda function publishing, and CloudFront associations — providing version-controlled edge compute deployments.
+Lambda@Edge enables complex edge processing including authentication, A/B testing, and dynamic origin selection. OpenTofu manages function code, IAM roles, Lambda function publishing, and CloudFront associations - providing version-controlled edge compute deployments.

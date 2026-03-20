@@ -204,6 +204,7 @@ Send test spans with different status codes and verify the output:
 
 ```bash
 # Check the Collector's stdout for transformed spans
+
 # Look for status.code and status.message in the output
 ```
 

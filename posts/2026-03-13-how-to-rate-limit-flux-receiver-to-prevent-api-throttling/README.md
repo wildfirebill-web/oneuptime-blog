@@ -36,6 +36,7 @@ The NGINX Ingress controller supports native rate limiting through annotations. 
 
 ```yaml
 # ingress-rate-limited.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

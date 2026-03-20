@@ -66,6 +66,7 @@ The simplest approach reads your access logs, identifies frequently requested ke
 
 ```python
 # cache_warmer.py
+
 # Basic cache warmer that loads frequently accessed keys from access logs
 import redis
 import json

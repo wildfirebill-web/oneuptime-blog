@@ -18,6 +18,7 @@ Here is a basic example that writes a simple string to a file:
 
 ```yaml
 # Write a plain string to /etc/motd on all hosts
+
 - name: Set message of the day
   ansible.builtin.copy:
     content: "Welcome to {{ inventory_hostname }}. Managed by Ansible.\n"

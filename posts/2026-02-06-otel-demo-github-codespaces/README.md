@@ -24,6 +24,7 @@ Once the Codespace is ready, open the integrated terminal and run:
 
 ```bash
 # Build all the demo services using Docker Compose
+
 # This takes a few minutes on the first run
 docker compose build
 
@@ -119,7 +120,7 @@ docker compose up -d currencyservice
 
 Then generate some traffic and look for your new span in Jaeger.
 
-## Resource Considerations
+Resource Considerations
 
 GitHub Codespaces has usage limits depending on your plan. The demo application is resource-intensive because it runs many containers. To conserve your quota:
 

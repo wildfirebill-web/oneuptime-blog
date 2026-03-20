@@ -42,6 +42,7 @@ Create a new .NET 8 Minimal API project and add the necessary OpenTelemetry pack
 
 ```bash
 # Create new minimal API project
+
 dotnet new webapi -n MinimalApiOtel -minimal
 
 cd MinimalApiOtel

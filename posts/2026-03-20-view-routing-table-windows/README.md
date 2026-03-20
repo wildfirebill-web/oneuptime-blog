@@ -14,7 +14,7 @@ route print
 
 Sample output:
 
-```
+```text
 ===========================================================================
 Interface List
   4...00 50 56 c0 00 08 ......vmxnet3 Ethernet Adapter
@@ -58,6 +58,7 @@ Network Destination        Netmask          Gateway       Interface  Metric
 
 ```cmd
 # Show only IPv4 routes
+
 route print -4
 
 # Show only IPv6 routes
@@ -85,7 +86,7 @@ Get-NetRoute -AddressFamily IPv4 | Select-Object DestinationPrefix, NextHop, Rou
 
 Sample PowerShell output:
 
-```
+```text
 DestinationPrefix  NextHop       RouteMetric InterfaceAlias
 -----------------  -------       ----------- --------------
 0.0.0.0/0          192.168.1.1   25          Ethernet

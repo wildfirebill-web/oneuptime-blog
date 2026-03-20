@@ -24,6 +24,7 @@ By default, Podman removes intermediate containers after a successful build. Thi
 
 ```bash
 # These two commands are equivalent
+
 podman build -t myapp:latest .
 podman build --rm -t myapp:latest .
 ```

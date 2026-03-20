@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, Networking, net Module, Concurrency, Sockets
+Tags: Node.js, TCP, IPv4, Networking, Net Module, Concurrency, Sockets
 
 Description: Use the Node.js net module to build a TCP server that handles multiple simultaneous IPv4 client connections with proper event handling and connection lifecycle management.
 
@@ -100,7 +100,7 @@ server.on('connection', (socket) => {
   socket.setTimeout(30000);
   
   socket.on('timeout', () => {
-    console.log(`Client ${socket.remoteAddress} timed out — closing`);
+    console.log(`Client ${socket.remoteAddress} timed out - closing`);
     socket.end('Timeout: connection closed due to inactivity\n');
   });
   

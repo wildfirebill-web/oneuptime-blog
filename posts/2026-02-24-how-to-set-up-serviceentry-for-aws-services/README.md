@@ -276,6 +276,7 @@ After registering AWS services, check your metrics:
 
 ```bash
 # See which AWS services your pods call
+
 istio_requests_total{destination_service=~".*amazonaws.com"}
 
 # Check latency to DynamoDB

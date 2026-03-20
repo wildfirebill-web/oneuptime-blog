@@ -49,6 +49,7 @@ A simple Cloud SQL MySQL instance for development:
 
 ```hcl
 # Basic Cloud SQL MySQL instance
+
 resource "google_sql_database_instance" "mysql_basic" {
   name             = "mysql-basic-instance"
   database_version = "MYSQL_8_0"

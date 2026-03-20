@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, Validation, std::net, Web, Error Handling
+Tags: Rust, IPv6, Validation, Std::net, Web, Error Handling
 
 Description: Validate IPv6 addresses in Rust using std::net, custom validators, web framework integration, and type-safe address wrappers.
 
 ## Basic Validation with std::net
 
-The simplest validation in Rust is attempting to parse — if it succeeds, the address is valid:
+The simplest validation in Rust is attempting to parse - if it succeeds, the address is valid:
 
 ```rust
 use std::net::Ipv6Addr;
@@ -147,6 +147,7 @@ fn main() {
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 axum = "0.7"
 serde = { version = "1", features = ["derive"] }

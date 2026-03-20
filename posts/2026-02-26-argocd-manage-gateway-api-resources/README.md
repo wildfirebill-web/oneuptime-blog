@@ -105,6 +105,7 @@ These are infrastructure-level resources managed by the platform team:
 
 ```yaml
 # gateway-class.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: GatewayClass
 metadata:

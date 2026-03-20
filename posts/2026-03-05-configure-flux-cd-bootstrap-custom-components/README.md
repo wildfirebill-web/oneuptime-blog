@@ -38,6 +38,7 @@ Use the `--components-extra` flag to include additional controllers during boots
 
 ```bash
 # Bootstrap Flux CD with image automation controllers
+
 export GITHUB_TOKEN=<your-token>
 export GITHUB_USER=<your-username>
 

@@ -46,6 +46,7 @@ kubectl logs -n istio-system deploy/istiod --previous
 Out of memory:
 ```bash
 # Check resource usage
+
 kubectl top pods -n istio-system
 
 # Increase memory limits

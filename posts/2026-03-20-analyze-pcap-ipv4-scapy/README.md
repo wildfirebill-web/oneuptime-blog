@@ -12,6 +12,7 @@ Description: Learn how to read and analyze PCAP files for IPv4 traffic patterns,
 from scapy.all import rdpcap, IP, TCP, UDP, ICMP
 
 # Load all packets from a PCAP file into memory
+
 packets = rdpcap("/path/to/capture.pcap")
 print(f"Loaded {len(packets)} packets")
 ```

@@ -313,6 +313,7 @@ Test that cross-tenant traffic is blocked:
 
 ```bash
 # From tenant-a, try to reach tenant-b (should fail)
+
 kubectl exec -n tenant-a deploy/api -- curl -s -w "%{http_code}" http://api.tenant-b:8080/
 
 # From tenant-a, try to reach same-tenant service (should succeed)

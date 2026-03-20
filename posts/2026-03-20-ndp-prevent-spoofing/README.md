@@ -12,7 +12,7 @@ NDP spoofing is the IPv6 equivalent of ARP poisoning. An attacker sends forged N
 
 ## NDP Spoofing Attack Mechanics
 
-```
+```text
 NDP Cache Poisoning Attack:
 
 Legitimate State:
@@ -39,7 +39,7 @@ Result: Host A sends traffic for Host B to attacker
 
 ND Inspection on the switch validates NA messages against the binding table.
 
-```
+```text
 ! Cisco: Enable ND Inspection (IPv6 Snooping) with guard mode
 ipv6 snooping policy ND_PROTECT
  security-level guard     ← Drops invalid NDP, not just inspects
@@ -70,6 +70,7 @@ For critical hosts, add permanent static neighbor cache entries.
 
 ```bash
 # Add static (permanent) neighbor entry for the router
+
 # Static entries cannot be overridden by spoofed NAs
 sudo ip -6 neigh add 2001:db8::1 lladdr 00:11:22:33:44:55 \
     dev eth0 nud permanent
@@ -167,7 +168,7 @@ sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 136"
 
 ## NDP Spoofing in Virtualized Environments
 
-```
+```nginx
 Virtualization Considerations:
 
 Hypervisor-level protection:

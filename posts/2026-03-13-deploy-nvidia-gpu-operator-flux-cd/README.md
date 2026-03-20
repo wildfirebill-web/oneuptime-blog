@@ -30,6 +30,7 @@ Create the namespace and point Flux at the NVIDIA Helm registry.
 
 ```yaml
 # clusters/my-cluster/gpu-operator/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

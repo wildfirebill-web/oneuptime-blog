@@ -18,6 +18,7 @@ The `machine.files` field accepts a list of file definitions. Each definition sp
 
 ```yaml
 # Write a simple file to the filesystem
+
 machine:
   files:
     - content: |

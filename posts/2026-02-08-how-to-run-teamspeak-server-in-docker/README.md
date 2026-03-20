@@ -44,6 +44,7 @@ Start a TeamSpeak server with a single command. You must accept the license agre
 
 ```bash
 # Launch TeamSpeak with license acceptance
+
 # The TS3SERVER_LICENSE=accept flag is required on first run
 docker run -d \
   --name teamspeak \

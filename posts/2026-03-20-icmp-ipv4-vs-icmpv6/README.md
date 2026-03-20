@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMP, ICMPv6, IPv4, IPv6, Networking, Protocols
+Tags: ICMP, ICMPv6, IPv4, IPv6, Networking, Protocol
 
 Description: Compare ICMPv4 and ICMPv6, understand why ICMPv6 is far more critical to IPv6 operation than ICMPv4 is to IPv4, and learn the key new message types ICMPv6 introduces.
 
 ## Introduction
 
-ICMPv4 and ICMPv6 share a common purpose — network error reporting and diagnostics — but their roles differ significantly. ICMPv4 is helpful but optional for most IP operations. ICMPv6 is mandatory: blocking it breaks IPv6 addressing, routing, and neighbor discovery. Understanding these differences is essential for building correct dual-stack firewall policies.
+ICMPv4 and ICMPv6 share a common purpose - network error reporting and diagnostics - but their roles differ significantly. ICMPv4 is helpful but optional for most IP operations. ICMPv6 is mandatory: blocking it breaks IPv6 addressing, routing, and neighbor discovery. Understanding these differences is essential for building correct dual-stack firewall policies.
 
 ## Structural Differences
 
@@ -29,18 +29,19 @@ ICMPv4 and ICMPv6 share a common purpose — network error reporting and diagnos
 | Echo Reply | 0 | 129 |
 | Destination Unreachable | 3 | 1 |
 | Time Exceeded | 11 | 3 |
-| Router Solicitation | — | 133 |
-| Router Advertisement | — | 134 |
-| Neighbor Solicitation | — | 135 |
-| Neighbor Advertisement | — | 136 |
+| Router Solicitation | - | 133 |
+| Router Advertisement | - | 134 |
+| Neighbor Solicitation | - | 135 |
+| Neighbor Advertisement | - | 136 |
 | Redirect | 5 | 137 |
-| MLDv2 Report | — | 143 |
+| MLDv2 Report | - | 143 |
 
 ## Why You Cannot Block ICMPv6
 
 ```bash
 # ICMPv6 Types 133-136 are Neighbor Discovery Protocol (NDP)
-# NDP replaces ARP in IPv6 — blocking it breaks everything
+
+# NDP replaces ARP in IPv6 - blocking it breaks everything
 
 # ICMPv6 Type 135: Neighbor Solicitation (equivalent to ARP request)
 # ICMPv6 Type 136: Neighbor Advertisement (equivalent to ARP reply)
@@ -84,7 +85,7 @@ ip6tables -A INPUT -p icmpv6 --icmpv6-type time-exceeded -j ACCEPT
 
 ```bash
 # ICMPv6 Type 2 = Packet Too Big (ICMPv4 equivalent: Type 3 Code 4)
-# IPv6 does NOT fragment in transit — routers drop oversized packets
+# IPv6 does NOT fragment in transit - routers drop oversized packets
 # and send ICMPv6 Packet Too Big back to the sender
 # This must be allowed through all firewalls
 

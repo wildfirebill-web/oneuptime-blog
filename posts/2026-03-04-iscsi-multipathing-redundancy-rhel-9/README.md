@@ -64,6 +64,7 @@ Create separate iSCSI interfaces for each network path:
 
 ```bash
 # Create iface for eth0
+
 sudo iscsiadm -m iface -I iface0 --op=new
 sudo iscsiadm -m iface -I iface0 --op=update -n iface.net_ifacename -v eth0
 

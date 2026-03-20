@@ -28,6 +28,7 @@ To add Chrony, you need to include it in your machine configuration or installer
 
 ```yaml
 # Machine configuration with Chrony extension
+
 machine:
   install:
     image: ghcr.io/siderolabs/installer:v1.7.0

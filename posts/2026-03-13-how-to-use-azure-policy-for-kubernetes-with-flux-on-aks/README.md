@@ -45,6 +45,7 @@ Azure provides many built-in Kubernetes policies. Assign them at the resource gr
 
 ```bash
 # Do not allow privileged containers
+
 az policy assignment create \
   --name "no-privileged-containers" \
   --display-name "Do not allow privileged containers in AKS" \

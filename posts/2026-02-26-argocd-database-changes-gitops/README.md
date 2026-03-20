@@ -130,6 +130,7 @@ Create a dedicated ArgoCD Application for database migrations that syncs before 
 
 ```yaml
 # Migration Application - runs first (wave -1)
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

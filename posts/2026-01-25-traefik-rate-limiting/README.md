@@ -42,6 +42,7 @@ Create a middleware that limits requests to 100 per second with a burst capacity
 
 ```yaml
 # rate-limit-middleware.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:

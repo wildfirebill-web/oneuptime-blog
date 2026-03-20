@@ -47,6 +47,7 @@ Edit the resolved configuration:
 
 ```bash
 # /etc/systemd/resolved.conf
+
 [Resolve]
 DNS=1.1.1.1#cloudflare-dns.com
 DNSOverTLS=yes

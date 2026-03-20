@@ -75,6 +75,7 @@ The following configuration file sets up a Vault node with Raft storage. Each no
 # /etc/vault.d/vault.hcl - Node 1 configuration
 
 # Cluster name for identification
+
 cluster_name = "vault-prod"
 
 # Storage configuration using integrated Raft

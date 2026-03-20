@@ -109,6 +109,7 @@ The metrics-generator is disabled by default. You enable it in your Tempo config
 
 ```yaml
 # tempo.yaml
+
 metrics_generator:
   # Enable the metrics-generator
   registry:

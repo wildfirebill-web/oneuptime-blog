@@ -47,6 +47,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("my-service")
 
 # Create a counter instrument
+
 request_counter = meter.create_counter(
     name="http.server.request.count",
     description="Total number of HTTP requests received",

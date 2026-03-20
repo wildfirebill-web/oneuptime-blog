@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Load Balancing, Linux
+Tags: RHEL, Nginx, Load Balancing, Linux
 
 Description: How to set up Nginx as a load balancer on RHEL, covering round-robin, least connections, and IP hash methods.
 
@@ -23,6 +23,7 @@ When a single backend server cannot handle the traffic, you add more servers and
 
 ```bash
 # Allow Nginx to connect to backend servers
+
 sudo setsebool -P httpd_can_network_connect on
 ```
 

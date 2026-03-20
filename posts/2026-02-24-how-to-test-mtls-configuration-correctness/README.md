@@ -174,6 +174,7 @@ Verify mTLS works across namespace boundaries:
 
 ```bash
 # From namespace-a to namespace-b
+
 kubectl exec -n namespace-a deploy/sleep -- curl -s http://my-service.namespace-b:8080
 ```
 

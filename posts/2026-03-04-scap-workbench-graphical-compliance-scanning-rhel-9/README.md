@@ -14,6 +14,7 @@ Not everyone wants to work from the command line. SCAP Workbench is a graphical 
 
 ```bash
 # Install SCAP Workbench and dependencies
+
 dnf install -y scap-workbench scap-security-guide
 
 # If running on a headless server, you will need

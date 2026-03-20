@@ -205,6 +205,7 @@ Open traces in the Playwright Trace Viewer.
 
 ```bash
 # Open a specific trace file
+
 npx playwright show-trace traces/checkout-flow.zip
 
 # Open trace from test results

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, WAF, Security, Web Application Firewall
+Tags: Ubuntu, Nginx, WAF, Security, Web Application Firewall
 
 Description: Install and configure NAXSI, the Nginx Anti XSS and SQL Injection WAF module, on Ubuntu to protect web applications from common injection attacks.
 
@@ -22,6 +22,7 @@ The module operates in two modes:
 
 ```bash
 # Install nginx with the NAXSI module
+
 # The naxsi package provides both nginx and the WAF module
 sudo apt-get update
 sudo apt-get install -y nginx-naxsi

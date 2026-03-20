@@ -34,6 +34,7 @@ Record all command outputs in the incident ticket. For connectivity failures, th
 
 ```bash
 # Test in multiple namespaces and across nodes
+
 kubectl run diag-a --image=busybox -n default --restart=Never -- sleep 300
 kubectl run diag-b --image=busybox -n default --restart=Never -- sleep 300
 

@@ -44,6 +44,7 @@ Create a dedicated subnet for SCOM MI:
 
 ```bash
 # Create a subnet for SCOM Managed Instance
+
 az network vnet subnet create \
   --resource-group myRG \
   --vnet-name myHubVNet \

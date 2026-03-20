@@ -101,8 +101,9 @@ module.exports = { graphqlRequestDuration, graphqlErrorTotal, activeConnections 
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Average GraphQL response time for IPv6 clients
+
 rate(graphql_request_duration_seconds_sum{ipVersion="ipv6"}[5m])
 / rate(graphql_request_duration_seconds_count{ipVersion="ipv6"}[5m])
 

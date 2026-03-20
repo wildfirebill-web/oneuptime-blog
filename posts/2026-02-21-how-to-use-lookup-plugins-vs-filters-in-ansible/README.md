@@ -20,6 +20,7 @@ The key characteristic of a lookup plugin is that it generates or retrieves data
 
 ```yaml
 # Examples of lookup plugins fetching external data
+
 - hosts: localhost
   gather_facts: false
   tasks:

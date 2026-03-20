@@ -42,6 +42,7 @@ Add standard labels to your ArgoCD Application resources:
 
 ```yaml
 # ArgoCD Application with correlation labels
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

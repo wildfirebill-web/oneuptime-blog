@@ -32,6 +32,7 @@ You will need:
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 
 # Check if you have openssl available

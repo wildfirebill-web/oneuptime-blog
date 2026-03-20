@@ -43,6 +43,7 @@ calicoctl get ippool -o yaml
 ```bash
 kubectl get configmap kubeadm-config -n kube-system -o yaml | grep -E "podSubnet|serviceSubnet"
 # Or check kube-controller-manager flags
+
 kubectl describe pod -n kube-system $(kubectl get pods -n kube-system -l component=kube-controller-manager -o name | head -1) | grep "cluster-cidr"
 ```
 

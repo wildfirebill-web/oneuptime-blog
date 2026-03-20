@@ -27,6 +27,7 @@ NVIDIA's Vulkan support is included in the proprietary driver. Install the drive
 
 ```bash
 # Install NVIDIA driver (if not already installed)
+
 sudo apt-get update
 sudo apt-get install -y nvidia-driver-545  # or latest recommended version
 

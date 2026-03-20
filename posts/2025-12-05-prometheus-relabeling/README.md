@@ -299,6 +299,7 @@ Distribute scraping across multiple Prometheus instances:
 
 ```yaml
 # Prometheus instance 0
+
 relabel_configs:
   - source_labels: [__address__]
     modulus: 3

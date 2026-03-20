@@ -131,6 +131,7 @@ First, create a debug bus with its own rules:
 
 ```bash
 # Create a debug bus
+
 aws events create-event-bus --name debug-bus
 
 # Create a rule that logs everything

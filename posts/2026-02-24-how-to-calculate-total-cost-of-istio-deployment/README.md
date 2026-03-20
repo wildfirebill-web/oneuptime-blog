@@ -20,6 +20,7 @@ Gather the data:
 
 ```promql
 # Number of pods with sidecars
+
 count(kube_pod_container_info{container="istio-proxy"})
 
 # Total CPU requested by sidecars (in cores)

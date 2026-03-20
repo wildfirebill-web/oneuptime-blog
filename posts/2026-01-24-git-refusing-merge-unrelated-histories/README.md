@@ -44,6 +44,7 @@ You create a local repository with an initial commit, then try to connect it to 
 
 ```bash
 # Create local repo with initial commit
+
 mkdir my-project
 cd my-project
 git init

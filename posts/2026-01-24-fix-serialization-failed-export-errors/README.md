@@ -43,6 +43,7 @@ The most common cause is non-UTF-8 characters in span attributes or log messages
 
 ```python
 # WRONG: Binary data or invalid encoding causes serialization errors
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer(__name__)

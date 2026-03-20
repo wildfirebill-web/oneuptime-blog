@@ -70,6 +70,7 @@ spec:
 
 ```bash
 # Check ingress controller pods
+
 kubectl get pods -n ingress-nginx
 
 # Test ingress routing

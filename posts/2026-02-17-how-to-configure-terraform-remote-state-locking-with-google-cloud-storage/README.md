@@ -38,6 +38,7 @@ State locking with GCS works automatically - you do not need any extra configura
 
 ```bash
 # Create the bucket with versioning and uniform access
+
 gsutil mb -p my-gcp-project -l us-central1 -b on gs://my-terraform-state
 
 # Enable versioning for state recovery

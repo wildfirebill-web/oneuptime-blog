@@ -140,6 +140,7 @@ Check how much space etcd snapshots are consuming on control plane nodes:
 
 ```bash
 # RKE2
+
 du -sh /var/lib/rancher/rke2/server/db/snapshots/
 
 # RKE

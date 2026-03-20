@@ -166,6 +166,7 @@ class DistributedSessionStore:
         logger.info(f"Invalidated all sessions for user {user_id}")
 
 # Flask middleware example
+
 from flask import Flask, request, g
 from functools import wraps
 

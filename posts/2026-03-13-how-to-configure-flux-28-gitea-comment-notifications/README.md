@@ -43,6 +43,7 @@ Create a provider for Gitea commit status and comment notifications:
 
 ```yaml
 # gitea-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

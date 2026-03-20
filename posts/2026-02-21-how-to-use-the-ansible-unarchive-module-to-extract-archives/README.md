@@ -16,6 +16,7 @@ The simplest use case is extracting an archive from the controller machine to a 
 
 ```yaml
 # Extract a local tarball to a remote directory
+
 - name: Extract application archive to remote server
   ansible.builtin.unarchive:
     src: files/myapp-2.5.0.tar.gz

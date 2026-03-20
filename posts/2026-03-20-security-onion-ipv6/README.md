@@ -14,6 +14,7 @@ Security Onion is a free and open platform for threat hunting, enterprise securi
 
 ```bash
 # Security Onion is typically installed from ISO
+
 # Download from: https://securityonionsolutions.com/software
 
 # After installation, setup wizard

@@ -29,6 +29,7 @@ First, create a Cloud Run service definition that includes both containers.
 
 ```yaml
 # cloud-run-service.yaml
+
 # Deploys app container with Datadog Agent sidecar for APM tracing
 apiVersion: serving.knative.dev/v1
 kind: Service

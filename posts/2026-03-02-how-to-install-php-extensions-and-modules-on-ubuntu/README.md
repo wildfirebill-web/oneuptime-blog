@@ -16,6 +16,7 @@ Before installing, find what is available:
 
 ```bash
 # Search for PHP 8.3 extensions in the package manager
+
 apt-cache search php8.3 | grep "^php8.3-" | sort
 
 # Search for any PHP package

@@ -711,6 +711,7 @@ Start the server and run multiple clients to see collaboration in action.
 
 ```bash
 # Terminal 1: Start the server
+
 npx ts-node src/server/websocket-server.ts
 
 # Terminal 2: Start first client

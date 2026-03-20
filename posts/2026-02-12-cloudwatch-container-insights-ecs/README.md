@@ -30,6 +30,7 @@ The easiest approach is enabling it when you create the cluster:
 
 ```bash
 # Create an ECS cluster with Container Insights enabled
+
 aws ecs create-cluster \
   --cluster-name production-cluster \
   --settings name=containerInsights,value=enabled

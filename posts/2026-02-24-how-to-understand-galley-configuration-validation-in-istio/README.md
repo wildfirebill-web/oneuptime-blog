@@ -18,6 +18,7 @@ Galley operates as a Kubernetes admission webhook. When you apply an Istio custo
 
 ```bash
 # See the webhook configuration
+
 kubectl get validatingwebhookconfiguration -l app=istiod
 ```
 

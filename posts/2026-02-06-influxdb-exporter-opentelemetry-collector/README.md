@@ -45,6 +45,7 @@ Install and configure InfluxDB 2.x:
 
 ```bash
 # Download and install InfluxDB (example for Linux)
+
 wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.4-linux-amd64.tar.gz
 tar xvfz influxdb2-2.7.4-linux-amd64.tar.gz
 cd influxdb2-2.7.4-linux-amd64
@@ -248,7 +249,7 @@ exporters:
     metrics_schema: "telegraf-prometheus-v2"
 ```
 
-## Resource Attributes and Tags
+Resource Attributes and Tags
 
 Map OpenTelemetry resource attributes to InfluxDB tags:
 

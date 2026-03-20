@@ -302,6 +302,7 @@ try {
 
 ```python
 # Python
+
 try:
     risky_operation()
 except Exception as e:

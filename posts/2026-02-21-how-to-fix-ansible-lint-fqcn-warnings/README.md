@@ -18,6 +18,7 @@ FQCN stands for Fully Qualified Collection Name. It is the complete namespace pa
 
 ```yaml
 # Short name (old style)
+
 - name: Install a package
   apt:
     name: nginx

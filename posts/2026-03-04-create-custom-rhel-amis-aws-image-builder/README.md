@@ -16,6 +16,7 @@ Define a blueprint with AWS-optimized settings and your custom packages:
 
 ```toml
 # aws-golden-image.toml
+
 name = "aws-golden-image"
 description = "Organization standard RHEL AMI for AWS"
 version = "1.0.0"

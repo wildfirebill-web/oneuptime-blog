@@ -20,6 +20,7 @@ The Autoinstall config is a YAML file. The minimal required sections are `versio
 
 ```yaml
 # autoinstall.yaml
+
 version: 1
 
 # Locale and keyboard

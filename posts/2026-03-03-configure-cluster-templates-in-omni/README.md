@@ -24,6 +24,7 @@ Let us start with a simple template that defines a three-node cluster with one c
 
 ```yaml
 # cluster-template-basic.yaml
+
 # A basic Talos cluster template for development environments
 kind: Cluster
 name: dev-cluster

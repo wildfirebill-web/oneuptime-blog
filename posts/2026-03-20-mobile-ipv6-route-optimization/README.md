@@ -30,10 +30,10 @@ With RO, the CN sends traffic directly to the MN's CoA, using the Home Address D
 
 ### CN to MN (Downlink with RO)
 
-```
+```text
 IPv6 Header:
   Source:      2001:db8:cn::200 (CN)
-  Destination: 2001:db8:foreign::50 (CoA — direct routing!)
+  Destination: 2001:db8:foreign::50 (CoA - direct routing!)
   Next Header: 60 (Destination Options)
 
 Destination Options Header:
@@ -50,10 +50,10 @@ The MN's kernel replaces the CoA destination with HoA before delivering to the a
 
 ### MN to CN (Uplink with RO)
 
-```
+```text
 IPv6 Header:
   Source:      2001:db8:foreign::50 (CoA)
-  Destination: 2001:db8:cn::200 (CN — direct!)
+  Destination: 2001:db8:cn::200 (CN - direct!)
   Next Header: 43 (Routing Header Type 2)
 
 Routing Header Type 2:
@@ -96,7 +96,8 @@ sequenceDiagram
 In the UMIP/MIPL2 daemon:
 
 ```bash
-# /etc/mip6d.conf — MN with Route Optimization enabled
+# /etc/mip6d.conf - MN with Route Optimization enabled
+
 NodeConfig MN;
 
 Interface "eth0" {
@@ -114,7 +115,7 @@ KeyMgmtMobCapability enabled;
 ```
 
 ```bash
-# On the Correspondent Node — enable MIPv6 CN support
+# On the Correspondent Node - enable MIPv6 CN support
 echo "net.ipv6.conf.all.accept_ra = 2" | sudo tee -a /etc/sysctl.conf
 # The CN kernel must support Routing Header Type 2 processing
 sudo sysctl -w net.ipv6.conf.all.rht2_support = 1
@@ -123,7 +124,7 @@ sudo sysctl -w net.ipv6.conf.all.rht2_support = 1
 ## Verifying Route Optimization
 
 ```bash
-# On the MN — check CN binding cache entries
+# On the MN - check CN binding cache entries
 # (Direct entries, not via HA)
 mip6d -n | grep "CN Binding"
 

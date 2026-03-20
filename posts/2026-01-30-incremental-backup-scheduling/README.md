@@ -145,6 +145,7 @@ First, configure PostgreSQL to enable WAL archiving. Edit your `postgresql.conf`
 # postgresql.conf - WAL Archiving Configuration
 
 # Enable WAL archiving
+
 # This tells PostgreSQL to keep WAL files for archiving
 wal_level = replica
 

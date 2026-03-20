@@ -1,8 +1,8 @@
-# How to Set Up Overlay Networks for Swarm Services in Portainer
+# How to Set Up Overlay Networks for Swarm Services in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Networking, Overlay Networks, DevOps
+Tags: Portainer, Docker Swarm, Networking, Overlay Network, DevOps
 
 Description: Learn how to create and configure overlay networks for Docker Swarm services using Portainer for secure inter-service communication.
 
@@ -32,7 +32,7 @@ Overlay networks use VXLAN tunneling to create a virtual layer-2 network that sp
 3. Click **+ Add network**
 4. Configure the network:
 
-```
+```text
 Name:           my-overlay-net
 Driver:         overlay
 Attachable:     true (or false for Swarm-only)
@@ -40,7 +40,7 @@ Attachable:     true (or false for Swarm-only)
 
 ### Advanced Options
 
-```
+```text
 Subnet:         10.10.1.0/24
 Gateway:        10.10.1.1
 ```
@@ -51,6 +51,7 @@ Gateway:        10.10.1.1
 
 ```bash
 # Basic overlay network
+
 docker network create \
   --driver overlay \
   --attachable \
@@ -112,7 +113,7 @@ Database servers should only be reachable from application services, not from ou
 
 In the Portainer service editor, under **Networks**:
 
-```
+```text
 Selected networks:
   [x] my-overlay-net
   [x] another-overlay-net
@@ -244,4 +245,4 @@ docker network rm my-overlay-net
 
 ## Conclusion
 
-Overlay networks are essential for secure, scalable communication between Swarm services. By creating separate networks for different traffic tiers — public, application, and database — you implement network segmentation that limits the blast radius of security incidents. Portainer makes it easy to create and manage these networks, while the Swarm DNS resolver handles service discovery automatically.
+Overlay networks are essential for secure, scalable communication between Swarm services. By creating separate networks for different traffic tiers - public, application, and database - you implement network segmentation that limits the blast radius of security incidents. Portainer makes it easy to create and manage these networks, while the Swarm DNS resolver handles service discovery automatically.

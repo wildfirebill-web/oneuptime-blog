@@ -53,6 +53,7 @@ The `rabbitmq_delayed_message_exchange` plugin is a **community plugin** that do
 
 ```bash
 # Step 1: Download the plugin .ez file from the RabbitMQ community plugins page
+
 # https://www.rabbitmq.com/community-plugins
 # Choose the version matching your RabbitMQ installation, e.g.:
 wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.13.0/rabbitmq_delayed_message_exchange-3.13.0.ez

@@ -33,6 +33,7 @@ If you do not already have one, create a storage account for your file shares:
 
 ```bash
 # Create a storage account for Azure Files
+
 az storage account create \
   --name talosfilestorage \
   --resource-group <resource-group> \

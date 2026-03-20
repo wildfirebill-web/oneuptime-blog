@@ -16,6 +16,7 @@ On the machine that will connect to the SFTP server, generate a key pair:
 
 ```bash
 # Generate an Ed25519 key pair (recommended for modern systems)
+
 ssh-keygen -t ed25519 -f ~/.ssh/sftp_key -C "sftp-client"
 ```
 

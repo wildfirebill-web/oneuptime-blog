@@ -14,6 +14,7 @@ SNMP traps are asynchronous notifications sent from devices to a management stat
 
 ```bash
 # Install Net-SNMP with trap daemon support
+
 sudo dnf install -y net-snmp net-snmp-utils net-snmp-perl
 ```
 

@@ -22,6 +22,7 @@ A start job is running for /dev/disk/by-uuid/xxxx-xxxx (30s / 1min 30s)
 
 ```bash
 # Boot into emergency mode:
+
 # At GRUB, press 'e' and add to the linux line:
 # systemd.unit=emergency.target
 

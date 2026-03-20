@@ -30,6 +30,7 @@ Let us start by creating the CDN infrastructure.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-cdn \
   --location eastus

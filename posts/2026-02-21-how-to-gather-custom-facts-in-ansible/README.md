@@ -22,6 +22,7 @@ Here is an example of deploying a static custom fact file.
 
 ```yaml
 # deploy-custom-fact.yml
+
 # Deploys a custom fact file to each managed host
 ---
 - name: Deploy custom application facts

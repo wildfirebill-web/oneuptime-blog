@@ -23,6 +23,7 @@ This guide shows how to integrate Application Insights into a React application 
 
 ```bash
 # Create a resource group
+
 az group create --name monitoring-demo-rg --location eastus
 
 # Create an Application Insights resource

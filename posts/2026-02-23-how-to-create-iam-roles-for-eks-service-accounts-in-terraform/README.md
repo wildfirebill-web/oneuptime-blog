@@ -38,6 +38,7 @@ First, you need to register the EKS cluster's OIDC provider with IAM. Most EKS s
 
 ```hcl
 # Get the EKS cluster data
+
 data "aws_eks_cluster" "cluster" {
   name = "my-eks-cluster"
 }

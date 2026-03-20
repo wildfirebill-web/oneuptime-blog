@@ -1,4 +1,4 @@
-# How to Add a Docker Standalone Environment to Portainer via API
+# How to Add a Docker Standalone Environment to Portainer via API - Add
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,12 +17,13 @@ When Portainer and your Docker host are on different machines, you connect them 
 
 ## Step 1: Enable Docker TCP API on the Remote Host
 
-### Option A: Unsecured TCP (Development Only — Not for Production)
+### Option A: Unsecured TCP (Development Only - Not for Production)
 
 Edit the Docker systemd service:
 
 ```bash
 # Create override for docker service
+
 sudo mkdir -p /etc/systemd/system/docker.service.d/
 sudo cat > /etc/systemd/system/docker.service.d/override.conf << 'EOF'
 [Service]
@@ -159,4 +160,4 @@ docker --tlsverify \
 
 ## Conclusion
 
-Docker API-based environment connection enables Portainer to manage remote Docker hosts. Always use TLS (port 2376) in any environment beyond development — the unencrypted TCP API (port 2375) exposes Docker (and thus root access) over the network without any authentication. Store client certificates securely and rotate them regularly.
+Docker API-based environment connection enables Portainer to manage remote Docker hosts. Always use TLS (port 2376) in any environment beyond development - the unencrypted TCP API (port 2375) exposes Docker (and thus root access) over the network without any authentication. Store client certificates securely and rotate them regularly.

@@ -32,6 +32,7 @@ set -euo pipefail
 echo "=== Label Inclusion Validation ==="
 
 # Step 1: Verify configuration exists
+
 LABELS=$(cilium config view | grep "^labels")
 if [ -z "$LABELS" ]; then
   echo "FAIL: No label inclusion configuration"

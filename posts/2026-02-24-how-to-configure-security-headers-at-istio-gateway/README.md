@@ -286,6 +286,7 @@ Run a security header scan to verify your configuration:
 
 ```bash
 # Using curl to check all security headers
+
 curl -sI https://app.example.com | grep -iE "strict-transport|x-content-type|x-frame|x-xss|content-security|referrer-policy|permissions-policy"
 ```
 

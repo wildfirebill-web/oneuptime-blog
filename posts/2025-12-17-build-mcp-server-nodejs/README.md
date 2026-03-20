@@ -44,6 +44,7 @@ Start by creating a new directory and installing the required packages. The MCP 
 
 ```bash
 # Create project directory
+
 mkdir my-mcp-server
 cd my-mcp-server
 
@@ -930,9 +931,9 @@ export function generatePrompt(
 6. **Testing**: Is the code testable? What tests would you recommend?
 
 Code to review:
-\`\`\`${args.language}
+```${args.language}
 ${args.code}
-\`\`\`
+```
 
 Please provide specific, actionable feedback with code examples where appropriate.`,
           },
@@ -1011,21 +1012,21 @@ Please fill in the bracketed sections with appropriate information.`,
 | [param] | [type] | [yes/no] | [description] |
 
 #### Request Body
-\`\`\`json
+```json
 {
   "example": "value"
 }
-\`\`\`
+```
 
 ### Response
 
 #### Success Response (200)
-\`\`\`json
+```json
 {
   "success": true,
   "data": {}
 }
-\`\`\`
+```
 
 #### Error Responses
 | Status | Description |
@@ -1038,10 +1039,10 @@ Please fill in the bracketed sections with appropriate information.`,
 ### Examples
 
 #### cURL
-\`\`\`bash
+````bash
 curl -X ${args.method} "${args.endpoint}" \\
   -H "Authorization: Bearer <token>"
-\`\`\`
+```
 
 Please fill in the template with specific details for this endpoint.`,
           },
@@ -1245,7 +1246,7 @@ main().catch((error) => {
   console.error("Fatal error:", error);
   process.exit(1);
 });
-```
+````
 
 ## Best Practices
 

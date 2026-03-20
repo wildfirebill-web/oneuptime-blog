@@ -41,6 +41,7 @@ Install Strawberry with your preferred framework:
 
 ```bash
 # Core library
+
 pip install strawberry-graphql
 
 # With FastAPI integration

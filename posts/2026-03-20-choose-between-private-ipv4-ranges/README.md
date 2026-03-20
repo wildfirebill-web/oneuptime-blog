@@ -22,7 +22,7 @@ Use `10.0.0.0/8` for organizations with multiple sites, data centers, or cloud d
 ### 2. VPN and Peering Conflicts
 `192.168.0.0/16` is used by virtually every home router (192.168.1.0/24, 192.168.0.0/24). If employees use VPNs from home, address overlap between the corporate network and the employee's home router causes routing conflicts.
 
-```
+```text
 Problem: Employee home router uses 192.168.1.0/24
          Corporate VPN also uses 192.168.1.0/24
 Result:  VPN client cannot distinguish traffic destined for 
@@ -40,6 +40,7 @@ Cloud providers (AWS, Azure, GCP) use large blocks from `10.0.0.0/8` internally.
 import ipaddress
 
 # Allocate /16 per site, /24 per VLAN within each site
+
 sites = {
     "HQ":       "10.0.0.0/16",
     "Branch-1": "10.1.0.0/16",
@@ -78,9 +79,9 @@ print("Overlaps:", conflicts or "None")
 
 ## Recommended Allocation Strategy
 
-1. **Home/SOHO**: `192.168.x.x` — commonplace, sufficient for small needs.
-2. **Branch offices**: `172.16.x.0/24` through `172.31.x.0/24` — distinct from home routers.
-3. **Enterprise / Cloud**: `10.x.x.x/8` — maximum flexibility, hierarchical subnetting.
+1. **Home/SOHO**: `192.168.x.x` - commonplace, sufficient for small needs.
+2. **Branch offices**: `172.16.x.0/24` through `172.31.x.0/24` - distinct from home routers.
+3. **Enterprise / Cloud**: `10.x.x.x/8` - maximum flexibility, hierarchical subnetting.
 4. **VPN clients**: Assign a sub-block of `10.0.0.0/8` outside all site ranges to avoid overlap.
 
 ## Key Takeaways

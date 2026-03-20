@@ -20,6 +20,7 @@ There are limited scenarios where skipping TLS is acceptable.
 
 ```bash
 # Acceptable scenarios:
+
 # - Local development registries on localhost
 # - Temporary testing against staging registries
 # - Initial setup before proper certificates are in place

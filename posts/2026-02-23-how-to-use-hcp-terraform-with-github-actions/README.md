@@ -34,8 +34,9 @@ First, store your HCP Terraform API token as a GitHub Actions secret:
 
 ### Workflow for Pull Requests (Plan Only)
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
+
 name: Terraform Plan
 
 on:
@@ -100,9 +101,9 @@ jobs:
 
             <details><summary>Show Plan Output</summary>
 
-            \`\`\`
+            ```
             ${process.env.PLAN}
-            \`\`\`
+            ```
 
             </details>
 
@@ -118,7 +119,7 @@ jobs:
       - name: Plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 ### Workflow for Merges (Apply)
 

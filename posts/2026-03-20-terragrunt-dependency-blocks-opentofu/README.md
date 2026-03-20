@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, Dependencies, dependency blocks, Module Orchestration
+Tags: OpenTofu, Terragrunt, Dependencies, Dependency blocks, Module Orchestration
 
 Description: Learn how to use Terragrunt dependency blocks to pass outputs between OpenTofu modules and enforce correct deployment order in multi-module environments.
 
@@ -14,6 +14,7 @@ Terragrunt `dependency` blocks let one module consume the outputs of another wit
 
 ```hcl
 # environments/prod/app/terragrunt.hcl
+
 include "root" {
   path = find_in_parent_folders()
 }
@@ -147,4 +148,4 @@ inputs = {
 
 ## Conclusion
 
-Terragrunt dependency blocks are cleaner than remote state data sources because they don't require knowing the backend configuration of the dependency — Terragrunt handles that automatically from the dependency's `terragrunt.hcl`. Mock outputs enable planning dependent modules even when dependencies haven't been applied yet, which is critical for CI/CD pre-merge validation.
+Terragrunt dependency blocks are cleaner than remote state data sources because they don't require knowing the backend configuration of the dependency - Terragrunt handles that automatically from the dependency's `terragrunt.hcl`. Mock outputs enable planning dependent modules even when dependencies haven't been applied yet, which is critical for CI/CD pre-merge validation.

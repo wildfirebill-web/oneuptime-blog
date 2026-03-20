@@ -14,6 +14,7 @@ UFW (Uncomplicated Firewall) is a user-friendly front-end for iptables/ip6tables
 
 ```bash
 # Check if UFW is installed
+
 ufw version
 
 # Install if needed
@@ -77,7 +78,7 @@ ufw allow 53/udp
 
 ### Allow ICMPv6 (Critical)
 
-UFW has limited ICMPv6 control — you need to edit its after-rules:
+UFW has limited ICMPv6 control - you need to edit its after-rules:
 
 ```bash
 # Edit /etc/ufw/before6.rules to add/modify ICMPv6 rules
@@ -174,7 +175,7 @@ tail -f /var/log/ufw.log
 For rules UFW doesn't support natively, add them to `/etc/ufw/after6.rules`:
 
 ```bash
-# /etc/ufw/after6.rules — Add before COMMIT line:
+# /etc/ufw/after6.rules - Add before COMMIT line:
 
 # Block Routing Header Type 0
 -A ufw6-after-forward -m rt --rt-type 0 -j DROP
@@ -194,4 +195,4 @@ ufw reload
 
 ## Summary
 
-UFW handles IPv6 automatically when `IPV6=yes` in `/etc/default/ufw`. Use `ufw allow` with IPv6 addresses and prefixes for service rules. For ICMPv6 customization, edit `/etc/ufw/before6.rules`. Essential ICMPv6 types are already allowed in the default UFW rules — verify with `cat /etc/ufw/before6.rules`. For advanced rules (RH0 blocking, per-IP rate limiting), add to `/etc/ufw/after6.rules`. Use `ufw status numbered` to see all active rules, including automatically generated IPv6 counterparts.
+UFW handles IPv6 automatically when `IPV6=yes` in `/etc/default/ufw`. Use `ufw allow` with IPv6 addresses and prefixes for service rules. For ICMPv6 customization, edit `/etc/ufw/before6.rules`. Essential ICMPv6 types are already allowed in the default UFW rules - verify with `cat /etc/ufw/before6.rules`. For advanced rules (RH0 blocking, per-IP rate limiting), add to `/etc/ufw/after6.rules`. Use `ufw status numbered` to see all active rules, including automatically generated IPv6 counterparts.

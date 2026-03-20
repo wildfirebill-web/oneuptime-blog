@@ -71,6 +71,7 @@ The following packages and tools are required for eBPF development on Linux:
 
 ```bash
 # Install required packages on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y \
     clang \
@@ -1689,7 +1690,7 @@ run: build
 	sudo ./bin/tracer
 ```
 
-### Resource Limits and Best Practices
+Resource Limits and Best Practices
 
 Consider these production recommendations for deploying eBPF programs:
 

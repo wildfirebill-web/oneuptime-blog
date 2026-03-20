@@ -60,6 +60,7 @@ resource "aws_cognito_user_pool" "main" {
 }
 
 # IAM role for SMS sending
+
 resource "aws_iam_role" "cognito_sms" {
   name = "cognito-sms-role"
 

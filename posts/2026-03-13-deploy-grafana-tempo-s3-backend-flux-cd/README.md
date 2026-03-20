@@ -30,6 +30,7 @@ Encrypt this file with SOPS before pushing to Git.
 
 ```yaml
 # clusters/my-cluster/tempo/s3-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

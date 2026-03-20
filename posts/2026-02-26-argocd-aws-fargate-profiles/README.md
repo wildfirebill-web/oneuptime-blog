@@ -34,6 +34,7 @@ graph TB
 
 ```bash
 # Create Fargate profile for ArgoCD
+
 aws eks create-fargate-profile \
   --cluster-name my-cluster \
   --fargate-profile-name argocd \

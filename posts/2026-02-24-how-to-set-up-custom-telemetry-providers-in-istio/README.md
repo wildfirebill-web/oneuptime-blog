@@ -281,6 +281,7 @@ After setting up providers, verify everything is working:
 
 ```bash
 # Check mesh config has the providers
+
 kubectl get configmap istio -n istio-system -o jsonpath='{.data.mesh}' | grep extensionProviders -A 20
 
 # Check that proxies are sending data

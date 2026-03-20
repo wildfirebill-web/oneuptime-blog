@@ -14,6 +14,7 @@ Static routes direct traffic for specific subnets through a designated gateway. 
 
 ```bash
 # Route traffic to 10.10.0.0/16 via gateway 192.168.1.254
+
 sudo ip route add 10.10.0.0/16 via 192.168.1.254
 
 # Verify the route was added
@@ -88,7 +89,7 @@ network:
 
 **Debian /etc/network/interfaces:**
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100

@@ -1,4 +1,4 @@
-# How to Troubleshoot Traefik Routing Issues with Portainer
+# How to Troubleshoot Traefik Routing Issues with Portainer - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,8 @@ Description: Learn how to diagnose and fix common Traefik routing problems when 
 ## Step 1: Enable Debug Logging
 
 ```yaml
-# traefik.yml — temporarily enable debug logging
+# traefik.yml - temporarily enable debug logging
+
 log:
   level: DEBUG
 
@@ -100,10 +101,10 @@ For the Portainer HTTPS interface, you need to set the scheme:
 Labels in Docker Compose must escape `$` signs:
 
 ```yaml
-# Wrong — shell will interpret $apr1
+# Wrong - shell will interpret $apr1
 - "traefik.http.middlewares.auth.basicauth.users=admin:$apr1$hash"
 
-# Correct — double $ escapes in YAML/Docker Compose
+# Correct - double $ escapes in YAML/Docker Compose
 - "traefik.http.middlewares.auth.basicauth.users=admin:$$apr1$$hash"
 ```
 

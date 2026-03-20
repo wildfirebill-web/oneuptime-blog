@@ -36,6 +36,7 @@ First, define the audit policy.
 
 ```yaml
 # audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

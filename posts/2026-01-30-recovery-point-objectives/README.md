@@ -64,6 +64,7 @@ Your backup frequency directly determines your achievable RPO. Here is a Python 
 
 ```python
 # rpo_calculator.py
+
 # Calculate backup frequency based on RPO requirements
 
 from dataclasses import dataclass

@@ -20,6 +20,7 @@ When you create a LoadBalancer service without a cloud provider:
 
 ```yaml
 # service-loadbalancer.yaml
+
 # This service will remain pending without a load balancer implementation
 apiVersion: v1
 kind: Service

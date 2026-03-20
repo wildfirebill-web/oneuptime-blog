@@ -43,6 +43,7 @@ A single Gateway can handle multiple hosts with different protocols. This is ess
 
 ```yaml
 # gateway-multihost.yaml
+
 # Handles traffic for multiple domains on different ports
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway

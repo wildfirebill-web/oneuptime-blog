@@ -22,6 +22,7 @@ AlmaLinux is a free, open-source, community-driven RHEL fork created as a CentOS
 
 ```bash
 # Add the OpenTofu repository configuration
+
 cat <<EOF | sudo tee /etc/yum.repos.d/opentofu.repo
 [opentofu]
 name=opentofu

@@ -41,6 +41,7 @@ First, install Elasticsearch. On macOS with Homebrew:
 
 ```bash
 # Install Elasticsearch
+
 brew install elasticsearch
 
 # Start Elasticsearch service

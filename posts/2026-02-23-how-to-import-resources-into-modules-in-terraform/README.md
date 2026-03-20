@@ -16,6 +16,7 @@ In Terraform, every resource has a unique address in the state. When a resource 
 
 ```text
 # Root-level resource address
+
 aws_instance.web_server
 
 # Resource inside a module

@@ -34,6 +34,7 @@ If your media lives on a NAS, set up an NFS PersistentVolume:
 
 ```yaml
 # plex-media-pv.yaml
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:

@@ -162,6 +162,7 @@ Make sure your remaining capacity can handle the load:
 
 ```yaml
 # 6 pods, max 33% ejection = at most 2 ejected, 4 remaining
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

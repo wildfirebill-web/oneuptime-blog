@@ -20,6 +20,7 @@ A user namespace creates a mapping between UIDs/GIDs inside the container and UI
 
 ```bash
 # Show the current user's subordinate UID/GID ranges
+
 cat /etc/subuid
 cat /etc/subgid
 ```

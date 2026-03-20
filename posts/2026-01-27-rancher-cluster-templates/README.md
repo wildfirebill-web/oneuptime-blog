@@ -57,6 +57,7 @@ RKE (Rancher Kubernetes Engine) templates define the core Kubernetes configurati
 
 ```yaml
 # base-cluster-template.yaml
+
 # This template defines the foundation for all RKE clusters
 # It sets up core components with production-ready defaults
 
@@ -440,7 +441,7 @@ spec:
               # Credentials stored in Rancher secrets
 ```
 
-### Resource Quotas and Limits
+Resource Quotas and Limits
 
 ```yaml
 # resource-standards-template.yaml

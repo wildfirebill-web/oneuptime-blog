@@ -193,6 +193,7 @@ Some resources should only exist in certain environments. Use `count` with works
 
 ```hcl
 # Only deploy monitoring stack in staging and production
+
 resource "helm_release" "prometheus" {
   count = terraform.workspace != "dev" ? 1 : 0
 

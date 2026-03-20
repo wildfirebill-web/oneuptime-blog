@@ -20,7 +20,7 @@ Note: Delegated-IPv6-Prefix (attribute 123) is used for DHCPv6-PD. Framed-IPv6-P
 
 ## Attribute Wire Format
 
-```
+```text
 Framed-IPv6-Prefix (Attribute 97):
   Type:    97
   Length:  Variable (4 + prefix bytes)
@@ -36,10 +36,11 @@ Example: 2001:db8:1::10/128
 
 ## FreeRADIUS: Assigning Framed-IPv6-Prefix
 
-```
+```text
 # /etc/freeradius/3.0/users
 
 # Assign specific /128 to user (like PPP IPv4 Framed-IP-Address)
+
 alice  Cleartext-Password := "secret"
        Framed-IPv6-Prefix = "2001:db8:1::a/128",
        Framed-IPv6-Route = "2001:db8:1::/64 ::",
@@ -74,9 +75,9 @@ ORDER BY username;
 
 ## Cisco IOS BNG: Applying Framed-IPv6-Prefix
 
-```
+```text
 ! Cisco BNG (Broadband Network Gateway)
-! RADIUS returns Framed-IPv6-Prefix — applied to subscriber interface
+! RADIUS returns Framed-IPv6-Prefix - applied to subscriber interface
 
 interface Virtual-Template1 type aaa
  ipv6 enable
@@ -96,7 +97,7 @@ show subscriber session all detail | include IPv6
 
 ## Juniper BNG: Applying Framed-IPv6-Prefix
 
-```
+```text
 # Juniper MX BNG configuration for Framed-IPv6-Prefix
 
 set access profile RADIUS_PROF authentication-order radius
@@ -115,7 +116,7 @@ show network-access aaa radius statistics
 ## Linux PPPoE Server with Framed-IPv6-Prefix
 
 ```bash
-# pppd with RADIUS — applies Framed-IPv6-Prefix to PPP interface
+# pppd with RADIUS - applies Framed-IPv6-Prefix to PPP interface
 
 # /etc/ppp/options
 plugin radius.so

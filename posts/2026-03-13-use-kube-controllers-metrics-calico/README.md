@@ -16,6 +16,7 @@ Calico kube-controllers exposes Prometheus metrics on port 9094 that provide vis
 
 ```bash
 # Test kube-controllers metrics endpoint
+
 POD=$(kubectl get pods -n calico-system -l k8s-app=calico-kube-controllers   -o jsonpath='{.items[0].metadata.name}')
 
 kubectl exec -n calico-system "${POD}" --   wget -qO- http://localhost:9094/metrics | head -30

@@ -52,6 +52,7 @@ Always create separate rules for listeners and senders. Never use the root manag
 
 ```bash
 # Create a listener-only rule
+
 az relay hyco authorization-rule create \
   --name on-prem-listener \
   --hybrid-connection-name my-connection \

@@ -20,6 +20,7 @@ Before diving into DNS debugging, confirm that the issue is actually DNS-related
 
 ```bash
 # Test DNS resolution inside the container
+
 podman exec my-container nslookup google.com
 
 # If nslookup is not available, try getent

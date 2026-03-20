@@ -47,6 +47,7 @@ One of the most common security guardrails is preventing Cloud Storage buckets f
 
 ```bash
 # Create a deny policy that prevents making GCS buckets public
+
 # This blocks setting allUsers or allAuthenticatedUsers on any bucket
 gcloud iam policies create prevent-public-buckets \
     --attachment-point="cloudresourcemanager.googleapis.com/organizations/ORG_ID" \

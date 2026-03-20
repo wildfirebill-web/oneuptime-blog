@@ -44,6 +44,7 @@ variable "github_token" {
 
 ```hcl
 # repo-secrets.tf - Secrets for a specific repository
+
 resource "github_repository" "app" {
   name       = "my-application"
   visibility = "private"

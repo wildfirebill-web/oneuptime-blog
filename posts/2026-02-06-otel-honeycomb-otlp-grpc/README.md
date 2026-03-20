@@ -145,6 +145,7 @@ resource = Resource.create({
 })
 
 # Set up traces
+
 trace_exporter = OTLPSpanExporter(
     endpoint=HONEYCOMB_ENDPOINT,
     headers=(

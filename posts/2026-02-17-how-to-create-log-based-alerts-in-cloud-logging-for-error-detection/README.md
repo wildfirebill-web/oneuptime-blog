@@ -37,6 +37,7 @@ The gcloud approach uses the `logging` command for log-based alerts (called "log
 
 ```bash
 # Create a log-based alert for critical application errors
+
 gcloud alpha monitoring policies create \
   --policy-from-file=log-alert-policy.json \
   --project=my-project

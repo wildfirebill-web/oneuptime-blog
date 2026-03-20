@@ -975,6 +975,7 @@ Once telemetry is flowing, configure OneUptime to visualize and alert on your Re
 
 ```bash
 # .env.production
+
 REACT_APP_OTLP_ENDPOINT=https://otlp.oneuptime.com/v1/traces
 REACT_APP_ONEUPTIME_TOKEN=your-service-token-here
 REACT_APP_VERSION=1.0.0
@@ -1144,7 +1145,7 @@ export function startLongTaskMonitoring(): () => void {
 }
 ```
 
-### Resource Loading Performance
+Resource Loading Performance
 
 ```typescript
 // src/telemetry/resourceMonitor.ts

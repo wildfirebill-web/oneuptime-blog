@@ -18,6 +18,7 @@ The simplest way to install a collection from Git is to pass the repository URL 
 
 ```bash
 # Install a collection from a public GitHub repository
+
 ansible-galaxy collection install git+https://github.com/ansible-collections/community.docker.git
 ```
 

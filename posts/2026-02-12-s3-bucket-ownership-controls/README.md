@@ -33,6 +33,7 @@ ACLs are disabled. The bucket owner automatically owns all objects. All access i
 
 ```bash
 # Set bucket owner enforced - disables ACLs
+
 aws s3api put-bucket-ownership-controls \
   --bucket my-bucket \
   --ownership-controls '{

@@ -28,6 +28,7 @@ On macOS, you can install it through Homebrew:
 
 ```bash
 # Install eksctl using Homebrew on macOS
+
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 ```

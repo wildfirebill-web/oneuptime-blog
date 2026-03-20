@@ -40,6 +40,7 @@ If you serve static content, APIs, or media to end users, Cloud CDN can cache re
 
 ```bash
 # Create a Cloud Storage bucket for static content
+
 gcloud storage buckets create gs://my-project-cdn-content \
   --location=us-central1 \
   --uniform-bucket-level-access

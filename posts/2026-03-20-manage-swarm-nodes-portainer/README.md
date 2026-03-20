@@ -28,6 +28,7 @@ The following CLI command shows the equivalent information via the Docker CLI:
 
 ```bash
 # List all swarm nodes with their status and availability
+
 docker node ls
 
 # Inspect a specific node by its ID or hostname

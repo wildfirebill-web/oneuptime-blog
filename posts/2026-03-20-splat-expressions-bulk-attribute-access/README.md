@@ -16,6 +16,7 @@ The legacy splat operator works with lists:
 
 ```hcl
 # Access the id of every instance in a list
+
 output "instance_ids" {
   value = aws_instance.web.*.id
 }

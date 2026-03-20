@@ -1,4 +1,4 @@
-# How to Deploy an Auto Scaling Group with OpenTofu on AWS
+# How to Deploy an Auto Scaling Group with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

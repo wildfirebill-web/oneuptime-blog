@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, ipconfig, Network Diagnostics, Command Line
+Tags: IPv6, Windows, Ipconfig, Network Diagnostics, Command Line
 
 Description: Learn how to use ipconfig to view IPv6 address configuration on Windows, interpret the output, and compare it with PowerShell alternatives.
 
@@ -25,7 +25,7 @@ ipconfig /flushdns
 
 ## Understanding ipconfig /all Output for IPv6
 
-```
+```text
 Ethernet adapter Ethernet:
 
    Connection-specific DNS Suffix  . : example.com
@@ -70,6 +70,7 @@ Get-NetAdapter | Select-Object Name, InterfaceIndex
 
 ```powershell
 # Basic equivalent of ipconfig
+
 Get-NetIPConfiguration
 
 # Detailed equivalent of ipconfig /all

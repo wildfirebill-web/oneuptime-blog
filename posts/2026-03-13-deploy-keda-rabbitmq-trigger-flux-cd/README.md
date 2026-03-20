@@ -27,6 +27,7 @@ This guide covers configuring KEDA with the RabbitMQ trigger using Flux CD, supp
 
 ```yaml
 # clusters/my-cluster/keda-rabbitmq/trigger-auth.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

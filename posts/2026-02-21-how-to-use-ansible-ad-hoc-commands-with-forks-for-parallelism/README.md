@@ -16,6 +16,7 @@ Forks control how many host connections Ansible opens at the same time. Each for
 
 ```bash
 # Default: 5 forks (5 hosts at a time)
+
 ansible all -m ping
 # With 100 hosts, this takes ~20 rounds
 
@@ -102,7 +103,7 @@ For a fleet of 60 servers running a simple ping:
 
 The speedup is roughly linear until you hit the controller's limits or network bottlenecks.
 
-## Resource Limits on the Controller
+Resource Limits on the Controller
 
 Higher fork counts consume more resources on the controller machine. Check your limits before going high:
 

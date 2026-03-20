@@ -26,6 +26,7 @@ Here's a basic example with an EC2 instance.
 
 ```yaml
 # EC2 instance with a CreationPolicy that waits for a success signal
+
 AWSTemplateFormatVersion: "2010-09-09"
 
 Resources:

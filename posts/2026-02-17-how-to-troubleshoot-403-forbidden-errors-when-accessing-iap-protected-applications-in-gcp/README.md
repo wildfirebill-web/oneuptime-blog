@@ -39,6 +39,7 @@ You can also check the response headers:
 
 ```bash
 # Check if the 403 response includes IAP headers
+
 curl -v -H "Authorization: Bearer $(gcloud auth print-identity-token)" \
     https://my-app.company.com/ 2>&1 | grep -i "x-goog"
 ```

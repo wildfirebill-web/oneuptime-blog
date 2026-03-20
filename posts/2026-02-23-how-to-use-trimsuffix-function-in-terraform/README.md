@@ -16,6 +16,7 @@ The `trimsuffix` function takes a string and a suffix to remove. If the string e
 
 ```hcl
 # Basic syntax
+
 trimsuffix(string, suffix)
 ```
 

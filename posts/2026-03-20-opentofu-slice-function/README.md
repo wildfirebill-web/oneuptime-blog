@@ -16,8 +16,8 @@ The `slice` function in OpenTofu extracts a contiguous portion of a list by spec
 slice(list, startindex, endindex)
 ```
 
-- **startindex** — inclusive starting index (0-based)
-- **endindex** — exclusive ending index
+- **startindex** - inclusive starting index (0-based)
+- **endindex** - exclusive ending index
 - Returns `list[startindex..endindex-1]`
 
 ## Basic Examples

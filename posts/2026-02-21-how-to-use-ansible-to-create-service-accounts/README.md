@@ -30,6 +30,7 @@ Here is the minimal configuration for a secure service account:
 
 ```yaml
 # create-service-account.yml - Basic service account
+
 - name: Create a service account
   hosts: all
   become: yes

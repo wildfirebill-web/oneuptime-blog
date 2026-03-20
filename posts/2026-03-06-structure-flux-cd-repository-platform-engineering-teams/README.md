@@ -98,6 +98,7 @@ The cluster configuration ties everything together with proper dependency orderi
 
 ```yaml
 # clusters/production/infrastructure.yaml
+
 # Platform infrastructure - managed by the platform team
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

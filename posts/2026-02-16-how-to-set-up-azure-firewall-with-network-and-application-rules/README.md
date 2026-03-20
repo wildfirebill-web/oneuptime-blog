@@ -41,6 +41,7 @@ Azure Firewall requires its own dedicated subnet named `AzureFirewallSubnet` wit
 
 ```bash
 # Create a resource group
+
 az group create --name rg-firewall-demo --location eastus
 
 # Create the hub VNet with AzureFirewallSubnet

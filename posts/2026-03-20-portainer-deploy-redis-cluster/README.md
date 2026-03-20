@@ -1,4 +1,4 @@
-# How to Deploy Redis Cluster via Portainer
+# How to Deploy Redis Cluster via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -192,6 +192,7 @@ After deploying the stack, the `cluster-init` container automatically runs the c
 
 ```bash
 # Verify cluster status
+
 docker exec redis-1 redis-cli -a cluster_password CLUSTER INFO
 
 # View cluster nodes
@@ -199,7 +200,7 @@ docker exec redis-1 redis-cli -a cluster_password CLUSTER NODES
 ```
 
 Expected output:
-```
+```text
 cluster_enabled:1
 cluster_state:ok
 cluster_slots_assigned:16384

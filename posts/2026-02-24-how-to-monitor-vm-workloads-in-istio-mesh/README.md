@@ -27,6 +27,7 @@ These metrics are available on the sidecar's Prometheus endpoint:
 
 ```bash
 # On the VM
+
 curl localhost:15090/stats/prometheus
 ```
 

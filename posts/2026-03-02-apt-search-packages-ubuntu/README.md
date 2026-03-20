@@ -16,6 +16,7 @@ The simplest search:
 
 ```bash
 # Search for packages by name or description
+
 apt search nginx
 
 # Output includes package name, version, and short description

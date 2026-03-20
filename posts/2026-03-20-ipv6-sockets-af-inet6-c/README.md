@@ -197,6 +197,7 @@ int main(void) {
 
 ```bash
 # Compile the server
+
 gcc -o ipv6_server ipv6_server.c -Wall -Wextra
 
 # Run the server

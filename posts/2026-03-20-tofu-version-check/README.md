@@ -1,4 +1,4 @@
-# How to Use tofu version to Check Your Version
+# How to Use tofu version to Check Your Version - Tofu Check
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use tofu version to check your OpenTofu version, under
 
 ```bash
 # Check OpenTofu version
+
 tofu version
 
 # Output:

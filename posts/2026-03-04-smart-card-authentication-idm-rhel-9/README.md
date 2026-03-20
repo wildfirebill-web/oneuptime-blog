@@ -37,6 +37,7 @@ Install the required packages on both the IdM server and client machines.
 
 ```bash
 # On IdM clients, install smart card support packages
+
 sudo dnf install opensc pcsc-lite pcsc-lite-ccid sssd-tools -y
 
 # Start and enable the PC/SC daemon

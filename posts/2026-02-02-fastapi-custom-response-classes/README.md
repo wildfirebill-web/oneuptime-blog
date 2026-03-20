@@ -66,6 +66,7 @@ Here is how to use built-in response classes in your FastAPI application.
 
 ```python
 # basic_responses.py
+
 from fastapi import FastAPI
 from fastapi.responses import (
     JSONResponse,

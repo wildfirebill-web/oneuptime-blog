@@ -14,6 +14,7 @@ ARK: Survival Evolved (and ARK: Survival Ascended) uses Unreal Engine networking
 
 ```bash
 # Create server user
+
 sudo useradd -m -s /bin/bash ark
 sudo su - ark
 

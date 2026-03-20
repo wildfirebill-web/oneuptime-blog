@@ -18,6 +18,7 @@ As your containerized applications grow, you may have dozens of secrets for data
 
 ```bash
 # List all secrets
+
 podman secret ls
 
 # Example output:

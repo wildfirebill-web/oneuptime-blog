@@ -26,6 +26,7 @@ Create an object storage configuration for Thanos:
 
 ```yaml
 # thanos-storage-config.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

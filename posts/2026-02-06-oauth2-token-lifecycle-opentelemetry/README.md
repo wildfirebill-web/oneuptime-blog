@@ -12,6 +12,7 @@ OAuth2 tokens are the keys to your kingdom. Every time a token is issued, refres
 
 ```python
 # token_metrics.py
+
 from opentelemetry import metrics, trace
 
 meter = metrics.get_meter("oauth2.tokens")

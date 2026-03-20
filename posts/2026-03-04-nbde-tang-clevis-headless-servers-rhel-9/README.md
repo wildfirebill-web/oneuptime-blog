@@ -54,6 +54,7 @@ On your Tang server, verify it is operational:
 
 ```bash
 # Confirm Tang is running
+
 sudo systemctl status tangd.socket
 
 # Get the advertised keys

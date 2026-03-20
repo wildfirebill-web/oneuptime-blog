@@ -12,6 +12,7 @@ DigitalOcean provides free IPv6 addresses for all Droplets. Enabling IPv6 on a D
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     digitalocean = {
@@ -162,4 +163,4 @@ ssh -6 root@"$WEB_IPV6"
 curl -6 "http://[$WEB_IPV6]/"
 ```
 
-DigitalOcean makes IPv6 adoption effortless by providing free IPv6 addresses for every Droplet — enabling it through Terraform is a single `ipv6 = true` attribute.
+DigitalOcean makes IPv6 adoption effortless by providing free IPv6 addresses for every Droplet - enabling it through Terraform is a single `ipv6 = true` attribute.

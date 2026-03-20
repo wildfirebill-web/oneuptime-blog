@@ -30,6 +30,7 @@ Create a base LimitRange that applies sensible defaults to every container in a 
 
 ```yaml
 # infrastructure/policies/base/limitrange.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

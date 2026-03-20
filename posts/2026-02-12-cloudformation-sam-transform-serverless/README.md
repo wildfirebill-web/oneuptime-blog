@@ -29,9 +29,11 @@ Add the transform declaration at the top of your template:
 
 ```yaml
 # Enable SAM transform in your template
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Serverless application using SAM
+
 ```
 
 That's it. Now you can use SAM resource types alongside standard CloudFormation resources.

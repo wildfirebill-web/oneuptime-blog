@@ -1,4 +1,4 @@
-# How to Set Up a Staging Environment with Portainer
+# How to Set Up a Staging Environment with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,14 @@ Description: Configure a dedicated staging environment in Portainer that mirrors
 
 ## Introduction
 
-A staging environment is an exact copy of production where you test changes before they go live. Portainer's multi-environment support makes this straightforward — you can manage separate Docker endpoints (staging vs production) from a single Portainer instance. This guide covers setting up a proper staging environment.
+A staging environment is an exact copy of production where you test changes before they go live. Portainer's multi-environment support makes this straightforward - you can manage separate Docker endpoints (staging vs production) from a single Portainer instance. This guide covers setting up a proper staging environment.
 
 ## Step 1: Add Staging Environment to Portainer
 
 On your staging server:
 ```bash
 # Install Portainer Agent on the staging server
+
 docker run -d \
   -p 9001:9001 \
   --name portainer_agent \

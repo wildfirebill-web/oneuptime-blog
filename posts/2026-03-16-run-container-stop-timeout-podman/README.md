@@ -20,6 +20,7 @@ The default stop timeout is 10 seconds:
 
 ```bash
 # This container will receive SIGTERM, then SIGKILL after 10 seconds
+
 podman run -d --name default-timeout alpine sh -c "
   trap 'echo SIGTERM received; sleep 20; echo Done' TERM
   while true; do sleep 1; done

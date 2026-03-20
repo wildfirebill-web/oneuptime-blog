@@ -12,7 +12,7 @@ Video streaming over IPv6 benefits from QoS policies that guarantee minimum band
 
 ## Video Streaming QoS Requirements
 
-```
+```text
 Video Streaming QoS Parameters:
 
 Live Streaming (RTMP/HLS):
@@ -70,6 +70,7 @@ TOTAL_BW="1000mbit"  # 1 Gbps interface
 sudo tc qdisc del dev $IFACE root 2>/dev/null || true
 
 # Root HTB
+
 sudo tc qdisc add dev $IFACE root handle 1: htb default 40
 
 # Root class

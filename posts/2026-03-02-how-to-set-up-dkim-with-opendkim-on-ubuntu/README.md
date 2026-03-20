@@ -21,6 +21,7 @@ This guide integrates OpenDKIM with Postfix, the most common mail server setup o
 
 ```bash
 # Verify Postfix is installed and running
+
 postfix status
 systemctl status postfix
 ```

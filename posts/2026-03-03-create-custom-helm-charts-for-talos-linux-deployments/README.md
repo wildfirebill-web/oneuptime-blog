@@ -18,6 +18,7 @@ Helm provides a scaffolding command to get started:
 
 ```bash
 # Create a new chart called my-app
+
 helm create my-app
 
 # This generates the following structure:

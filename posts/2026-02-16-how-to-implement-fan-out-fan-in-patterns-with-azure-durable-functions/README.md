@@ -40,6 +40,7 @@ First, create a new Azure Functions project using the isolated worker model (the
 
 ```bash
 # Create a new Azure Functions project with the isolated worker model
+
 func init FanOutDemo --dotnet-isolated
 cd FanOutDemo
 

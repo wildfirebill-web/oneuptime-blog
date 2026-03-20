@@ -18,6 +18,7 @@ Azure AD resources require the AzureAD provider, which is separate from the Azur
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

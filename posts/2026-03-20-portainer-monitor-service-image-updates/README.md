@@ -1,4 +1,4 @@
-# How to Monitor Service Image Updates in Portainer on Swarm
+# How to Monitor Service Image Updates in Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ Keeping service images up to date is an ongoing operational concern in Docker Sw
 
 From the Services list, the **Image** column shows the current image and tag for each service:
 
-```
+```text
 Service         Image                  Replicas
 web-frontend    nginx:alpine           3/3
 api-backend     myapp:v2.1             4/4
@@ -35,6 +35,7 @@ To see the specific image digest (not just the tag):
 
 ```bash
 # CLI: Check exact image digest in use
+
 docker service inspect web-frontend --format '{{.Spec.TaskTemplate.ContainerSpec.Image}}'
 # Output: nginx:alpine@sha256:abc123...
 ```
@@ -140,7 +141,7 @@ services:
     image: nginx:alpine    # Updates when nginx:alpine changes
 ```
 
-Tags like `latest` or `alpine` float — they can point to new image digests.
+Tags like `latest` or `alpine` float - they can point to new image digests.
 
 ### Using Digests (Immutable)
 

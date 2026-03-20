@@ -33,6 +33,7 @@ If flow logs are not already enabled on your subnet, turn them on:
 
 ```bash
 # Enable flow logs on a subnet
+
 gcloud compute networks subnets update my-subnet \
     --region=us-central1 \
     --enable-flow-logs \

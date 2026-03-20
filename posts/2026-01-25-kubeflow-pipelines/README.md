@@ -26,6 +26,7 @@ You can install Kubeflow Pipelines as a standalone component or as part of the f
 
 ```bash
 # Install the standalone Kubeflow Pipelines on an existing cluster
+
 export PIPELINE_VERSION=2.0.5
 
 kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
@@ -286,7 +287,7 @@ def control_flow_pipeline():
         train_variant(variant=variant)
 ```
 
-## Resource Management
+Resource Management
 
 Specify resource requirements for each component:
 

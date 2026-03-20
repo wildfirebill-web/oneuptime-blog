@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Azure, Storage Accounts, Blob Storage, Import
+Tags: OpenTofu, Terraform, Azure, Storage Account, Blob Storage, Import
 
 Description: Learn how to import existing Azure Storage Accounts, blob containers, and queues into OpenTofu state management.
 
@@ -29,6 +29,7 @@ az storage account show \
   }'
 
 # List blob containers
+
 az storage container list --account-name $STORAGE --output table
 
 # Get blob service properties
@@ -149,4 +150,4 @@ resource "azurerm_storage_management_policy" "app" {
 
 ## Conclusion
 
-Azure Storage Account import uses the full ARM resource ID for the account, and blob endpoints for containers and queues. The `network_rules` block is particularly important to get right — a misconfigured network rule can block access to the storage account after the first apply. Always test with a refresh-only plan before applying changes after import.
+Azure Storage Account import uses the full ARM resource ID for the account, and blob endpoints for containers and queues. The `network_rules` block is particularly important to get right - a misconfigured network rule can block access to the storage account after the first apply. Always test with a refresh-only plan before applying changes after import.

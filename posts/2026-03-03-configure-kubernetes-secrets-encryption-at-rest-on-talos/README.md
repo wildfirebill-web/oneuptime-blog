@@ -18,6 +18,7 @@ To understand why encryption at rest matters, consider what happens without it:
 
 ```bash
 # Without encryption, etcd stores secrets as base64-encoded plaintext
+
 # If an attacker accesses the etcd data directory or a backup,
 # they can decode every secret:
 

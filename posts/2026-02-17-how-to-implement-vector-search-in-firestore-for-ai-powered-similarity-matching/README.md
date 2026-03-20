@@ -59,6 +59,7 @@ from google.cloud.firestore_v1.vector import Vector
 db = firestore.Client()
 
 # Store a document with a vector embedding
+
 # The Vector class wraps the float array for Firestore's vector type
 def store_article_with_embedding(article_id, title, content, embedding):
     db.collection('articles').document(article_id).set({

@@ -16,6 +16,7 @@ Run `--syntax-check` against any playbook:
 
 ```bash
 # Check a single playbook for syntax errors
+
 ansible-playbook --syntax-check deploy.yml
 ```
 

@@ -29,6 +29,7 @@ Let us start by training a model and tracking the experiment with MLflow.
 
 ```python
 # train_model.py - Train and track a classification model with MLflow
+
 import mlflow
 import mlflow.sklearn
 from sklearn.model_selection import train_test_split

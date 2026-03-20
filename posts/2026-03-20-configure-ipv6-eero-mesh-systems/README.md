@@ -19,7 +19,7 @@ All current Eero models support IPv6:
 
 ## Setting Up IPv6 on Eero
 
-Eero automatically enables IPv6 when your ISP provides it. There is no manual toggle — the system detects ISP IPv6 availability and enables it automatically.
+Eero automatically enables IPv6 when your ISP provides it. There is no manual toggle - the system detects ISP IPv6 availability and enables it automatically.
 
 **The automatic process:**
 1. Eero gateway device requests IPv6 from ISP (tries SLAAC first, then DHCPv6)
@@ -46,6 +46,7 @@ Since Eero manages IPv6 automatically, verify from connected devices:
 
 ```bash
 # macOS/Linux
+
 ip -6 addr show scope global
 # or
 ifconfig | grep "inet6" | grep -v fe80
@@ -71,12 +72,12 @@ Eero supports custom DNS settings in the app. You can set IPv6-capable DNS serve
 3. Select **Custom**
 4. Enter IPv6 DNS addresses:
 
-```
+```text
 Primary:   2001:4860:4860::8888   (Google)
 Secondary: 2606:4700:4700::1111   (Cloudflare)
 ```
 
-Note: Some versions of the Eero app may only accept IPv4 DNS entries. If this is the case, use IPv4 DNS addresses — these can still resolve AAAA records for IPv6 routing.
+Note: Some versions of the Eero app may only accept IPv4 DNS entries. If this is the case, use IPv4 DNS addresses - these can still resolve AAAA records for IPv6 routing.
 
 ## Eero IPv6 Firewall Behavior
 
@@ -91,12 +92,12 @@ Eero Secure (subscription service) includes DNS filtering. All DNS queries route
 ## Troubleshooting Eero IPv6
 
 **No IPv6 addresses on devices:**
-1. Check ISP provides IPv6 — test at `test-ipv6.com` from a device connected directly to the modem
+1. Check ISP provides IPv6 - test at `test-ipv6.com` from a device connected directly to the modem
 2. Power cycle the Eero gateway (unplug 30 seconds)
 3. In Eero app: **Advanced** → **Restart Network**
 
 **IPv6 works on some devices but not others:**
-- Some older IoT devices don't support IPv6 — this is normal
+- Some older IoT devices don't support IPv6 - this is normal
 - Devices running IPv4 only will still work; IPv6 is additive
 
 ## Conclusion

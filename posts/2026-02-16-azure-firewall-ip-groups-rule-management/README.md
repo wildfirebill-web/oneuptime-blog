@@ -36,6 +36,7 @@ Let us create IP Groups for common use cases: web servers, database servers, and
 
 ```bash
 # Create a resource group for IP Groups
+
 az group create \
   --name rg-firewall \
   --location eastus

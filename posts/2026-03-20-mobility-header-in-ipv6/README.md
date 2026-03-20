@@ -1,4 +1,4 @@
-# How to Understand the Mobility Header in IPv6
+# How to Understand the Mobility Header in IPv6 - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,11 +8,11 @@ Description: Understand the IPv6 Mobility Header extension header structure, mes
 
 ## Introduction
 
-The IPv6 Mobility Header is an extension header (Next Header value = 135) defined in RFC 6275. It carries all Mobile IPv6 signaling messages — Binding Updates, Binding Acknowledgements, and Return Routability messages — as the payload of IPv6 packets.
+The IPv6 Mobility Header is an extension header (Next Header value = 135) defined in RFC 6275. It carries all Mobile IPv6 signaling messages - Binding Updates, Binding Acknowledgements, and Return Routability messages - as the payload of IPv6 packets.
 
 ## Mobility Header Structure
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -48,7 +48,7 @@ The IPv6 Mobility Header is an extension header (Next Header value = 135) define
 
 ## Binding Update Message (Type 5)
 
-```
+```text
 BU Message Data:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |         Sequence Number       |
@@ -62,9 +62,9 @@ BU Message Data:
 ```
 
 Flag meanings:
-- **A**: Acknowledge — request a Binding Acknowledgement
-- **H**: Home Registration — BU is a home registration (sent to HA)
-- **L**: Link-Local Address Compatibility — CoA has link-local address
+- **A**: Acknowledge - request a Binding Acknowledgement
+- **H**: Home Registration - BU is a home registration (sent to HA)
+- **L**: Link-Local Address Compatibility - CoA has link-local address
 - **K**: Key Management Mobility Capability
 
 ## Parsing the Mobility Header with Scapy
@@ -74,6 +74,7 @@ from scapy.all import *
 from scapy.contrib.mobileipv6 import *
 
 # Craft a Binding Update packet
+
 bu_packet = (
     IPv6(src="2001:db8:foreign::50", dst="2001:db8:home::1") /
     MIP6MH_BU(

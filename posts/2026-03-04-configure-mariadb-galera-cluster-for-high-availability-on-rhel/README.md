@@ -14,6 +14,7 @@ Galera Cluster for MariaDB provides synchronous multi-master replication. Every 
 
 ```bash
 # Install MariaDB and Galera on all nodes
+
 sudo dnf install -y mariadb-server mariadb-server-galera galera
 ```
 

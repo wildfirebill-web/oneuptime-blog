@@ -36,6 +36,7 @@ RDS PostgreSQL needs logical replication enabled at the parameter group level:
 
 ```bash
 # In AWS CLI, create a parameter group with logical replication
+
 aws rds create-db-parameter-group \
   --db-parameter-group-name logical-replication \
   --db-parameter-group-family postgres15 \

@@ -16,6 +16,7 @@ To understand `zip`, contrast it with `product`:
 
 ```yaml
 # product creates all combinations: (a,1), (a,2), (b,1), (b,2)
+
 - name: Product example (4 iterations)
   ansible.builtin.debug:
     msg: "{{ item.0 }}-{{ item.1 }}"

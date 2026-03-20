@@ -16,6 +16,7 @@ Rancher supports automating cluster provisioning through its API and the officia
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     rancher2 = {

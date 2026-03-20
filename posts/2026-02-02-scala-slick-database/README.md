@@ -75,6 +75,7 @@ Configure your database connection in `application.conf`. This file uses HOCON f
 
 ```hocon
 # application.conf
+
 # Database configuration using HikariCP connection pool
 
 mydb {

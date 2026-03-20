@@ -20,6 +20,7 @@ This guide covers memory analysis, data structure optimization, configuration tu
 
 ```bash
 # Get memory statistics
+
 redis-cli INFO memory
 
 # Key metrics:

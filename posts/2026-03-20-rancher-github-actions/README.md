@@ -1,4 +1,4 @@
-# How to Integrate GitHub Actions with Rancher
+# How to Integrate GitHub Actions with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ GitHub Actions is the native CI/CD platform for GitHub repositories. Integrating
 
 ```bash
 # Generate a kubeconfig for the target cluster
+
 curl -sk -X POST \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   "https://rancher.example.com/v3/clusters/<cluster-id>?action=generateKubeconfig" \
@@ -30,9 +31,9 @@ curl -sk -X POST \
 In GitHub repository:
 1. **Settings → Secrets and Variables → Actions → New Repository Secret**.
 2. Add:
-   - `KUBECONFIG_STAGING` — base64 kubeconfig for staging cluster
-   - `KUBECONFIG_PRODUCTION` — base64 kubeconfig for production cluster
-   - `RANCHER_TOKEN` — Rancher API token for API calls
+   - `KUBECONFIG_STAGING` - base64 kubeconfig for staging cluster
+   - `KUBECONFIG_PRODUCTION` - base64 kubeconfig for production cluster
+   - `RANCHER_TOKEN` - Rancher API token for API calls
 
 ## Step 2: Basic Build and Deploy Workflow
 
@@ -169,7 +170,7 @@ jobs:
 For cloud-hosted Rancher clusters, use OIDC federation to avoid storing static credentials:
 
 ```yaml
-# For AWS EKS clusters — uses OIDC to assume an IAM role
+# For AWS EKS clusters - uses OIDC to assume an IAM role
 - name: Configure AWS credentials
   uses: aws-actions/configure-aws-credentials@v4
   with:

@@ -42,6 +42,7 @@ Bootstrap Flux into your AKS cluster connected to your Git repository:
 
 ```bash
 # Install the Flux CLI
+
 curl -s https://fluxcd.io/install.sh | bash
 
 # Bootstrap Flux with your GitHub repository

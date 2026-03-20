@@ -28,6 +28,7 @@ Before running HA tests, establish a baseline and monitoring:
 
 ```bash
 # Record baseline cluster state
+
 kubectl get nodes -o wide > baseline-nodes.txt
 kubectl get pods -A -o wide > baseline-pods.txt
 

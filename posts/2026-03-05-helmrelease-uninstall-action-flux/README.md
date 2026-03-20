@@ -27,6 +27,7 @@ Here is a HelmRelease with uninstall options configured.
 
 ```yaml
 # helmrelease.yaml - HelmRelease with uninstall configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

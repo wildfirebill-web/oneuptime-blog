@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Socket, bind, POSIX, Networking
+Tags: C, IPv4, Sockets, BIND, POSIX, Networking
 
 Description: Learn how to bind a TCP or UDP socket to a specific IPv4 address and port in C, covering INADDR_ANY, specific interfaces, SO_REUSEADDR, SO_REUSEPORT, and port 0 for ephemeral binding.
 
@@ -59,7 +59,7 @@ int main(void) {
 }
 ```
 
-## SO_REUSEADDR — Allow Port Reuse After Restart
+## SO_REUSEADDR - Allow Port Reuse After Restart
 
 ```c
 int opt = 1;
@@ -71,7 +71,7 @@ if (setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
 bind(fd, (struct sockaddr *)&addr, sizeof(addr));
 ```
 
-## SO_REUSEPORT — Multiple Sockets on Same Port
+## SO_REUSEPORT - Multiple Sockets on Same Port
 
 ```c
 /* Linux 3.9+: allows multiple processes/threads to bind the same port
@@ -84,7 +84,7 @@ bind(fd, (struct sockaddr *)&addr, sizeof(addr));
 ## Ephemeral Port (port 0)
 
 ```c
-/* Bind to port 0 — kernel assigns an available port */
+/* Bind to port 0 - kernel assigns an available port */
 struct sockaddr_in addr;
 memset(&addr, 0, sizeof(addr));
 addr.sin_family      = AF_INET;
@@ -102,7 +102,7 @@ printf("Assigned port: %d\n", ntohs(addr.sin_port));
 ## UDP Bind
 
 ```c
-/* UDP bind is identical — just change SOCK_STREAM to SOCK_DGRAM */
+/* UDP bind is identical - just change SOCK_STREAM to SOCK_DGRAM */
 int udp_fd = socket(AF_INET, SOCK_DGRAM, 0);
 int opt    = 1;
 setsockopt(udp_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));

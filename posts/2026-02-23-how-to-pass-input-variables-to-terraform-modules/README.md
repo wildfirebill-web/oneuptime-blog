@@ -18,6 +18,7 @@ Defining a variable in a module and passing a value to it is straightforward:
 
 ```hcl
 # modules/web-server/variables.tf - Inside the module
+
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string

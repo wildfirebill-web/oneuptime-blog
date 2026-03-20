@@ -31,6 +31,7 @@ pgAudit addresses these by providing:
 
 ```bash
 # Install the extension package
+
 sudo apt-get install postgresql-16-pgaudit
 
 # Or for other versions

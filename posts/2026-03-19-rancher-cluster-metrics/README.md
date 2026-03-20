@@ -312,6 +312,7 @@ For quick metric checks without the UI:
 
 ```bash
 # Node resource usage
+
 kubectl top nodes
 
 # Pod resource usage

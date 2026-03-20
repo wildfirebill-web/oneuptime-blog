@@ -48,6 +48,7 @@ Jinja2 template with full dependency support:
 
 ```jinja2
 # roles/service_deps/templates/service.j2
+
 [Unit]
 Description={{ svc_description }}
 {% if svc_documentation is defined %}

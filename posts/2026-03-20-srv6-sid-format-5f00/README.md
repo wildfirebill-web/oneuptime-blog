@@ -12,7 +12,7 @@ RFC 9602 allocates `5f00::/16` as the globally routable address space for SRv6 S
 
 ## SID Structure
 
-```
+```javascript
  | <--- Locator (N bits) ---> | <-- Function (F bits) --> | <- Args (A bits) -> |
  |                            |                           |                     |
  |  Block  |   Node ID        |  Function Code            |    Arguments        |
@@ -36,6 +36,7 @@ RFC 9602 allocates `5f00::/16` as the globally routable address space for SRv6 S
 
 ```bash
 # Example locator plan for a 3-node network
+
 # Each node gets a /48 locator within 5f00::/16
 
 NODE_R1_LOCATOR="5f00:1::/48"
@@ -54,7 +55,7 @@ sysctl -w net.ipv6.conf.all.seg6_enabled=1
 
 ## Well-Known Function Codes
 
-```
+```javascript
 Function 0x0001 = End
 Function 0x0002 = End.X
 Function 0x0003 = End.T

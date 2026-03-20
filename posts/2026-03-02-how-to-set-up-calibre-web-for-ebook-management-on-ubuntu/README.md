@@ -22,6 +22,7 @@ For a server setup where Calibre runs elsewhere (a desktop or NAS), you mount th
 
 ```bash
 # Create directory for Calibre-Web
+
 sudo mkdir -p /opt/calibre-web
 
 # Create your books directory (or point to existing Calibre library)

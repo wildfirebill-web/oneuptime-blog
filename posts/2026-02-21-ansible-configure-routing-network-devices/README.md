@@ -18,6 +18,7 @@ Static routes are the simplest form of routing. They are perfect for stub networ
 
 ```yaml
 # static_routes.yml - Configure static routes on branch routers
+
 ---
 - name: Configure static routes
   hosts: branch_routers

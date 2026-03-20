@@ -17,6 +17,7 @@ Netplan files live in `/etc/netplan/`. Any `.yaml` file there is processed:
 ```bash
 ls /etc/netplan/
 # Common names: 00-installer-config.yaml, 01-netcfg.yaml
+
 ```
 
 ## DHCP Configuration
@@ -129,7 +130,7 @@ resolvectl status
 
 ## Common Mistakes
 
-- YAML is indentation-sensitive — use spaces, not tabs
+- YAML is indentation-sensitive - use spaces, not tabs
 - Interface names may be `ens3`, `enp0s3`, or `eth0` depending on your hardware
 - The `renderer` key determines whether `networkd` or `NetworkManager` is used
 

@@ -16,6 +16,7 @@ Before jumping into JSON, here is what the default output looks like:
 
 ```bash
 # View live stats for all running containers
+
 docker stats
 ```
 

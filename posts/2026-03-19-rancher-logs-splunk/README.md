@@ -105,6 +105,7 @@ Send different log types to different Splunk indexes:
 
 ```yaml
 # Infrastructure logs
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterOutput
 metadata:

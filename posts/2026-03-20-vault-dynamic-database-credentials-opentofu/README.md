@@ -14,6 +14,7 @@ Vault's database secrets engine creates temporary database credentials on demand
 
 ```hcl
 # Enable the database secrets engine
+
 resource "vault_mount" "database" {
   path = "database"
   type = "database"

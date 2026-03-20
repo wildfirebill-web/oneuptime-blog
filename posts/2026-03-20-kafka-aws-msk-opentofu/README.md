@@ -8,7 +8,7 @@ Description: Learn how to deploy a production-ready Apache Kafka cluster on AWS 
 
 ---
 
-AWS MSK removes the operational burden of running Kafka — no broker management, patching, or ZooKeeper administration. With OpenTofu, you define your MSK cluster configuration as code, enabling consistent deployments across environments and simplifying disaster recovery.
+AWS MSK removes the operational burden of running Kafka - no broker management, patching, or ZooKeeper administration. With OpenTofu, you define your MSK cluster configuration as code, enabling consistent deployments across environments and simplifying disaster recovery.
 
 ## Networking Setup
 
@@ -16,6 +16,7 @@ MSK runs inside a VPC. Create dedicated subnets in multiple AZs for broker place
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -195,7 +196,7 @@ output "zookeeper_connect_string" {
 ## Best Practices
 
 - Use `min.insync.replicas=2` and `replication.factor=3` to ensure data durability even during broker failures.
-- Enable IAM authentication — it eliminates the need to manage Kafka user credentials and integrates with AWS IAM policies.
-- Disable `auto.create.topics.enable` in production — create topics explicitly to maintain control over partition counts and replication factors.
+- Enable IAM authentication - it eliminates the need to manage Kafka user credentials and integrates with AWS IAM policies.
+- Disable `auto.create.topics.enable` in production - create topics explicitly to maintain control over partition counts and replication factors.
 - Enable automatic storage scaling to prevent broker disk full incidents during traffic spikes.
 - Deploy brokers across 3 AZs by providing 3 private subnets for high availability.

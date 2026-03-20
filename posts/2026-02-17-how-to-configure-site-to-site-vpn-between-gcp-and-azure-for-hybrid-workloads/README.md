@@ -45,6 +45,7 @@ Start by creating the VPC, Cloud Router, and HA VPN Gateway on GCP:
 
 ```bash
 # Create a VPC network
+
 gcloud compute networks create gcp-azure-vpc \
   --subnet-mode=custom
 

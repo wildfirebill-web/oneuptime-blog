@@ -242,6 +242,7 @@ Test with a large header:
 
 ```bash
 # Generate a large header value (100 KB)
+
 LARGE_HEADER=$(python3 -c "print('x' * 102400)")
 
 kubectl exec deploy/sleep -n my-namespace -- \

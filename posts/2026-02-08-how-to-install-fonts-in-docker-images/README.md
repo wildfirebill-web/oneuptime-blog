@@ -32,6 +32,7 @@ Install the most commonly needed font families:
 
 ```dockerfile
 # Install standard fonts on Debian/Ubuntu
+
 FROM ubuntu:22.04
 
 # Install core font packages

@@ -164,6 +164,7 @@ Enable hidden method filter for form support:
 
 ```yaml
 # application.yml
+
 spring:
   mvc:
     hiddenmethod:

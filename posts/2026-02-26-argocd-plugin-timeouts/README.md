@@ -70,6 +70,7 @@ If you are using Helm to deploy ArgoCD:
 
 ```yaml
 # values.yaml for ArgoCD Helm chart
+
 repoServer:
   extraArgs:
     - --cmp-timeout

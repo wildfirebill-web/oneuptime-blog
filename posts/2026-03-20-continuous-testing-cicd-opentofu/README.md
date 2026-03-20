@@ -12,7 +12,7 @@ A comprehensive CI/CD testing strategy for OpenTofu runs different test types at
 
 ## Testing Pyramid for OpenTofu
 
-```
+```text
                     ┌────────────────┐
                     │ Integration    │  (nightly, main branch)
                     │ Tests          │  Minutes, real infra
@@ -30,6 +30,7 @@ A comprehensive CI/CD testing strategy for OpenTofu runs different test types at
 
 ```yaml
 # .github/workflows/opentofu-ci.yml
+
 name: OpenTofu CI
 
 on:

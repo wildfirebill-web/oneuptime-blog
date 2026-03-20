@@ -26,6 +26,7 @@ Managing certificates across multiple services is error-prone. Certificates get 
 
 ```bash
 # Install the Azure Key Vault certificates SDK
+
 npm install @azure/keyvault-certificates @azure/identity
 
 # Install the secrets SDK too - we will need it to get the private key

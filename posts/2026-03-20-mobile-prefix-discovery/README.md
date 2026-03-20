@@ -36,7 +36,7 @@ MPD reuses ICMPv6 Router Solicitation and Advertisement messages. The MN sends a
 
 The MN sends an ICMPv6 Router Solicitation to the HA's address (not multicast), with a Mobility Header option indicating it is a Mobile Prefix Solicitation.
 
-```
+```text
 IPv6 Header:
   Source: CoA (or link-local)
   Destination: HA address (unicast)
@@ -51,7 +51,7 @@ ICMPv6 Type 133 (Router Solicitation)
 
 The HA responds with a Router Advertisement containing the home prefix.
 
-```
+```text
 IPv6 Header:
   Source: HA address
   Destination: CoA
@@ -107,6 +107,7 @@ def derive_home_address(home_prefix: str, use_eui64: bool = False,
     return str(ipaddress.IPv6Address(home_addr_int))
 
 # Example
+
 home_prefix = "2001:db8:home::/64"
 hoa = derive_home_address(home_prefix)
 print(f"Home Address: {hoa}")
@@ -131,7 +132,7 @@ Interface "eth0" {
     MnIfPreference 1;
 }
 HomeAgent 2001:db8:home::1;
-# No Home line — UMIP will perform MPD to discover prefix
+# No Home line - UMIP will perform MPD to discover prefix
 # and auto-configure the HoA
 ```
 

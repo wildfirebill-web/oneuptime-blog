@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, SIT, Linux, Tunneling, 6in4
 
-Description: Learn how to configure SIT (Simple Internet Transition) tunnels on Linux for IPv6-in-IPv4 encapsulation, including creating tunnels with ip commands, wildcard tunnels, and systemd-networkd persistence.
+Description: Learn how to configure SIT (Simple Internet Transition) tunnels on Linux for IPv6-in-IPv4 encapsulation, including creating tunnels with ip commands, wildcard tunnels, and systemd-networkd...
 
 ## Overview
 
@@ -23,6 +23,7 @@ SIT (Simple Internet Transition) is the Linux kernel driver for IPv6-in-IPv4 tun
 
 ```bash
 # The sit module creates sit0 (wildcard) interface automatically
+
 sudo modprobe sit
 
 # Verify
@@ -53,10 +54,10 @@ sudo ip -6 route add ::/0 via 2001:db8::1 dev sit1
 
 ## Wildcard SIT Tunnel (Any Remote)
 
-A wildcard tunnel accepts protocol 41 from any remote IPv4 address — useful when you want to accept multiple tunnels without creating separate interfaces:
+A wildcard tunnel accepts protocol 41 from any remote IPv4 address - useful when you want to accept multiple tunnels without creating separate interfaces:
 
 ```bash
-# Wildcard tunnel — accepts from any remote
+# Wildcard tunnel - accepts from any remote
 sudo ip tunnel add anytun mode sit \
     remote  any \
     local   203.0.113.10 \
@@ -67,18 +68,18 @@ sudo ip link set anytun up
 # Routes are matched based on inner IPv6 destination
 ```
 
-Note: Wildcard tunnels are less specific than named tunnels — they have security implications (accept proto 41 from any source). Use only when you control which sources can reach your host.
+Note: Wildcard tunnels are less specific than named tunnels - they have security implications (accept proto 41 from any source). Use only when you control which sources can reach your host.
 
 ## SIT Tunnel Modes
 
 ```bash
-# Standard 6in4 (IPv6 over IPv4) — default mode
+# Standard 6in4 (IPv6 over IPv4) - default mode
 ip tunnel add sit1 mode sit remote 198.51.100.1 local 203.0.113.10
 
-# isatap mode — ISATAP addressing (deprecated)
+# isatap mode - ISATAP addressing (deprecated)
 ip tunnel add isatap0 mode isatap local 192.168.1.10
 
-# ip6ip6 mode — IPv6 over IPv6 (using ip6tnl driver instead)
+# ip6ip6 mode - IPv6 over IPv6 (using ip6tnl driver instead)
 ip tunnel add tun6 mode ip6ip6 remote 2001:db8::1 local 2001:db8::2
 ```
 

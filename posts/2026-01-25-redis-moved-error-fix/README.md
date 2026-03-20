@@ -14,6 +14,7 @@ The "MOVED" error in Redis Cluster is not really an error - it is a redirection 
 
 ```bash
 # When you send a command to the wrong node:
+
 redis-cli -p 7000 SET user:1 "Alice"
 # -> (error) MOVED 5474 127.0.0.1:7001
 

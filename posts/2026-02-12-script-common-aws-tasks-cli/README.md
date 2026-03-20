@@ -21,6 +21,7 @@ A good practice is to set a default profile and region at the top of your script
 ```bash
 #!/bin/bash
 # Common header for AWS scripts
+
 set -euo pipefail
 
 # Configuration

@@ -25,6 +25,7 @@ The etcd cluster (when shared between Calico and OpenStack) requires particular 
 
 ```bash
 # Audit Keystone permissions for Calico service user
+
 openstack role assignment list --user calico --project service
 
 # Verify Neutron API TLS is configured

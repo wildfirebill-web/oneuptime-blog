@@ -44,7 +44,7 @@ class TCPConnectionPool:
             data = s.recv(1, socket.MSG_PEEK | socket.MSG_DONTWAIT)
             return len(data) > 0
         except BlockingIOError:
-            return True   # no data waiting — connection is fine
+            return True   # no data waiting - connection is fine
         except OSError:
             return False
 
@@ -66,9 +66,10 @@ class TCPConnectionPool:
             try:
                 self._pool.put_nowait(conn)
             except queue.Full:
-                conn.close()   # pool is full — discard
+                conn.close()   # pool is full - discard
 
 # Usage
+
 pool = TCPConnectionPool("127.0.0.1", 9000, max_size=5)
 
 def send_request(data: bytes) -> bytes:

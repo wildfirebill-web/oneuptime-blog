@@ -93,6 +93,7 @@ Check that both services are using mTLS:
 
 ```bash
 # Check if mTLS is active between order-service and payment-service
+
 istioctl authn tls-check deploy/order-service -n default payment-service.default.svc.cluster.local
 ```
 

@@ -32,6 +32,7 @@ import time
 import json
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 def store_metric(metric_name, value, timestamp=None):

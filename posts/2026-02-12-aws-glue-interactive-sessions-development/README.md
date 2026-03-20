@@ -30,6 +30,7 @@ Install the Glue interactive sessions kernel:
 
 ```bash
 # Install the Glue interactive sessions kernel for Jupyter
+
 pip install aws-glue-sessions
 
 # Install the kernel spec so Jupyter can find it

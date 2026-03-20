@@ -30,6 +30,7 @@ graph TD
 
 ```bash
 # List resources with their health status
+
 argocd app resources my-app
 
 # Filter for Unknown health

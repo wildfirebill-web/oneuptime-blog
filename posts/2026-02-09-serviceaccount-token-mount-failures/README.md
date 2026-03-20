@@ -22,6 +22,7 @@ When service account tokens fail to mount, pods start but containers can't authe
 
 ```bash
 # Common error messages in application logs
+
 Error from server (Forbidden): pods is forbidden:
 User "system:serviceaccount:default:my-sa" cannot list resource "pods"
 

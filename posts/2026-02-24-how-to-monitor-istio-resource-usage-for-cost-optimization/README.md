@@ -74,6 +74,7 @@ sum(
 
 ```promql
 # istiod CPU usage
+
 sum(rate(container_cpu_usage_seconds_total{namespace="istio-system", container="discovery"}[5m]))
 
 # istiod memory usage

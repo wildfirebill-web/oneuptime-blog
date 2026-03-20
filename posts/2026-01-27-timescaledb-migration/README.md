@@ -83,6 +83,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # pre-migration-check.sh
+
 # Run this script to validate your PostgreSQL setup before migration
 
 set -e

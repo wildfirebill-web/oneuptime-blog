@@ -46,6 +46,7 @@ The LMS web app runs on App Service and stores course data in Azure SQL and cont
 
 ```bash
 # Create the resource group
+
 az group create --name lms-rg --location eastus
 
 # Create the App Service plan

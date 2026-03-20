@@ -49,6 +49,7 @@ After=default.target
 
 [Service]
 # No User= or Group= directives needed - runs as the current user
+
 ExecStart=/usr/bin/python3 -m http.server 8080 --directory /home/user/www
 Restart=on-failure
 RestartSec=5s

@@ -608,6 +608,7 @@ Example queries for understanding retry behavior:
 
 ```promql
 # Average retry attempts per request
+
 avg(polly_retry_attempts_total) by (pipeline)
 
 # Circuit breaker open percentage

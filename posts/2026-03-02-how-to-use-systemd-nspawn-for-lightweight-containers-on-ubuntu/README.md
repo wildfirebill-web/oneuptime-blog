@@ -16,6 +16,7 @@ systemd-nspawn is part of the `systemd-container` package. On most Ubuntu system
 
 ```bash
 # Check if nspawn is available
+
 which systemd-nspawn
 
 # Install if missing
@@ -221,7 +222,7 @@ sudo systemd-nspawn -D /var/lib/machines/mycontainer \
     /usr/local/bin/myapp
 ```
 
-## Resource Control
+Resource Control
 
 nspawn containers integrate with systemd's cgroup-based resource control:
 

@@ -52,6 +52,7 @@ Compare what Istio thinks the endpoints are with what Kubernetes reports:
 
 ```bash
 # What Kubernetes says
+
 kubectl get endpoints my-service -n backend -o jsonpath='{.subsets[*].addresses[*].ip}'
 
 # What Istio's proxy sees

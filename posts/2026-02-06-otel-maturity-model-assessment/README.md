@@ -28,6 +28,7 @@ For each level, define specific, measurable criteria. Here is a scoring rubric:
 
 ```yaml
 # maturity-assessment.yaml
+
 levels:
   level_0:
     name: "No Instrumentation"

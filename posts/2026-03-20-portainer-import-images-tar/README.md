@@ -1,4 +1,4 @@
-# How to Import Docker Images from a Tar File in Portainer
+# How to Import Docker Images from a Tar File in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ On a machine with Docker access:
 
 ```bash
 # Export a single image:
+
 docker save nginx:alpine > nginx-alpine.tar
 
 # Export with gzip compression (smaller file):

@@ -1,4 +1,4 @@
-# How to Configure Rancher for Large-Scale Deployments
+# How to Configure Rancher for Large-Scale Deployments - Deployments
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Rancher for large-scale deployments with hundreds of clus
 
 ## Introduction
 
-Running Rancher at large scale—100+ downstream clusters, thousands of nodes—requires architectural decisions beyond the default installation. This guide covers the critical configurations needed to maintain Rancher Server stability and performance at enterprise scale.
+Running Rancher at large scale-100+ downstream clusters, thousands of nodes-requires architectural decisions beyond the default installation. This guide covers the critical configurations needed to maintain Rancher Server stability and performance at enterprise scale.
 
 ## Rancher Scalability Guidelines
 
@@ -25,6 +25,7 @@ At 200+ clusters, migrate from the embedded SQLite to PostgreSQL:
 
 ```yaml
 # rancher-values.yaml
+
 extraEnv:
   - name: CATTLE_DB_CATTLE_MYSQL_HOST
     value: "postgres.databases.svc.cluster.local"

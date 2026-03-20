@@ -20,6 +20,7 @@ When running playbooks from the command line, `set_stats` requires the `ansible.
 
 ```yaml
 # basic-set-stats.yml
+
 # Sets custom statistics that AWX captures
 ---
 - name: Deploy and report statistics

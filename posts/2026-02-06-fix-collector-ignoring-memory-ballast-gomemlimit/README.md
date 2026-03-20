@@ -25,6 +25,7 @@ A typical ballast configuration looked like this:
 
 ```yaml
 # OLD: deprecated ballast configuration
+
 extensions:
   memory_ballast:
     size_mib: 512   # pre-allocate 512 MiB

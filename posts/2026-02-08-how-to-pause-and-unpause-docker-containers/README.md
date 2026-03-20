@@ -24,6 +24,7 @@ The commands are straightforward.
 
 ```bash
 # Start a container to work with
+
 docker run -d --name myapp -p 8080:80 nginx:latest
 
 # Pause the container (freezes all processes)

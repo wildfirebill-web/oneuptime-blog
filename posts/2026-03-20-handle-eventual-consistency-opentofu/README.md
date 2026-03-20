@@ -6,7 +6,7 @@ Tags: OpenTofu, Eventual Consistency, IAM, AWS, Infrastructure as Code
 
 Description: Learn techniques for handling eventual consistency issues in OpenTofu where cloud resources take time to propagate before dependent operations can succeed.
 
-Eventual consistency is a property of distributed cloud systems where changes take time to propagate globally. In OpenTofu, this manifests as failures where a resource is created successfully but a dependent resource cannot use it yet — the classic example is creating an IAM role and immediately attaching a Lambda function that cannot find the permissions.
+Eventual consistency is a property of distributed cloud systems where changes take time to propagate globally. In OpenTofu, this manifests as failures where a resource is created successfully but a dependent resource cannot use it yet - the classic example is creating an IAM role and immediately attaching a Lambda function that cannot find the permissions.
 
 ## Common Eventual Consistency Scenarios
 
@@ -51,6 +51,7 @@ resource "aws_iam_role_policy_attachment" "lambda_exec" {
 }
 
 # Wait for IAM to propagate before creating the Lambda
+
 resource "time_sleep" "wait_for_iam" {
   depends_on      = [aws_iam_role_policy_attachment.lambda_exec]
   create_duration = "15s"
@@ -142,7 +143,7 @@ data "aws_s3_bucket" "main" {
 
 Look for these error patterns in your apply output:
 
-```
+```javascript
 Error: error creating Lambda function: InvalidParameterValueException:
 The role defined for the function cannot be assumed by Lambda.
 ```

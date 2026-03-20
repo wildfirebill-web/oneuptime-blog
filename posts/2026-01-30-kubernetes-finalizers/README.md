@@ -64,6 +64,7 @@ Finalizers are string identifiers stored in the resource's metadata. Use a uniqu
 
 ```yaml
 # Example resource with a finalizer
+
 apiVersion: myorg.com/v1
 kind: Database
 metadata:

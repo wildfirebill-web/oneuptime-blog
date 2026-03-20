@@ -33,6 +33,7 @@ First, check the current status of your RabbitMQ node to see if a disk alarm is 
 
 ```bash
 # Check the status of alarms on your RabbitMQ node
+
 # The rabbitmqctl command provides administrative access to the broker
 # Look for "disk" in the alarms section of the output
 rabbitmqctl status | grep -A 5 "Alarms"

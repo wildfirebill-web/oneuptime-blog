@@ -20,6 +20,7 @@ This security group rule restricts access to only your IP address.
 
 ```bash
 # Get your public IP
+
 curl -s https://checkip.amazonaws.com
 
 # Add a security group rule for your IP

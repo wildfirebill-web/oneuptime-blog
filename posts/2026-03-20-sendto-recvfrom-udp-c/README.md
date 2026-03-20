@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, UDP, sendto, recvfrom, POSIX, Networking
+Tags: C, IPv4, UDP, Sendto, Recvfrom, POSIX, Networking
 
 Description: Learn how to send and receive UDP datagrams in C using sendto() and recvfrom(), covering server binding, client addressing, message size limits, and connected UDP sockets.
 
@@ -10,8 +10,8 @@ Description: Learn how to send and receive UDP datagrams in C using sendto() and
 
 | Operation | TCP | UDP |
 |-----------|-----|-----|
-| Send data | `send()` | `sendto()` — includes destination address |
-| Receive data | `recv()` | `recvfrom()` — fills in sender address |
+| Send data | `send()` | `sendto()` - includes destination address |
+| Receive data | `recv()` | `recvfrom()` - fills in sender address |
 | Connection | Required (`connect`) | Optional |
 | Message boundaries | None (stream) | Preserved (datagram) |
 
@@ -123,7 +123,7 @@ peer.sin_family = AF_INET;
 peer.sin_port   = htons(9000);
 inet_pton(AF_INET, "192.168.1.10", &peer.sin_addr);
 
-/* "Connect" — no handshake, just records the peer address */
+/* "Connect" - no handshake, just records the peer address */
 connect(fd, (struct sockaddr *)&peer, sizeof(peer));
 
 /* Now use send/recv without providing the address each time */
@@ -141,12 +141,12 @@ connect(fd, (struct sockaddr *)&unspec, sizeof(unspec));
 ## sendto() and recvfrom() Signatures
 
 ```c
-/* sendto — send a datagram to a specific address */
+/* sendto - send a datagram to a specific address */
 ssize_t sendto(int sockfd,
                const void *buf, size_t len, int flags,
                const struct sockaddr *dest_addr, socklen_t addrlen);
 
-/* recvfrom — receive a datagram and capture sender's address */
+/* recvfrom - receive a datagram and capture sender's address */
 ssize_t recvfrom(int sockfd,
                  void *buf, size_t len, int flags,
                  struct sockaddr *src_addr, socklen_t *addrlen);
@@ -159,6 +159,7 @@ recvfrom(fd, buf, sizeof(buf), 0, NULL, NULL);
 
 ```bash
 # Compile server and client
+
 gcc -Wall -o udp_server udp_server.c
 gcc -Wall -o udp_client udp_client.c
 
@@ -169,4 +170,4 @@ gcc -Wall -o udp_client udp_client.c
 
 ## Conclusion
 
-`sendto()` transmits a datagram to an explicit destination each call — no prior connection required. `recvfrom()` delivers the next queued datagram and fills in the sender's `sockaddr_in`, enabling stateless request/reply protocols. UDP preserves message boundaries, so one `sendto()` of N bytes always arrives as one `recvfrom()` of N bytes (or is dropped entirely). The maximum safe UDP payload is 1472 bytes over Ethernet to avoid fragmentation; the absolute limit is 65507 bytes. Use a connected UDP socket (`connect()` + `send()`/`recv()`) when always communicating with the same peer to simplify call sites and filter spurious datagrams.
+`sendto()` transmits a datagram to an explicit destination each call - no prior connection required. `recvfrom()` delivers the next queued datagram and fills in the sender's `sockaddr_in`, enabling stateless request/reply protocols. UDP preserves message boundaries, so one `sendto()` of N bytes always arrives as one `recvfrom()` of N bytes (or is dropped entirely). The maximum safe UDP payload is 1472 bytes over Ethernet to avoid fragmentation; the absolute limit is 65507 bytes. Use a connected UDP socket (`connect()` + `send()`/`recv()`) when always communicating with the same peer to simplify call sites and filter spurious datagrams.

@@ -102,6 +102,7 @@ Run the server and test it:
 ```bash
 go run main.go
 # In another terminal:
+
 curl http://localhost:3000
 ```
 
@@ -1276,7 +1277,7 @@ Key takeaways:
 
 Whether you're building a small microservice or a large API, Chi's flexibility and performance make it an excellent choice. Its design philosophy aligns perfectly with Go's simplicity-first approach, making your code easy to understand and maintain.
 
-## Resources
+Resources
 
 - [Chi GitHub Repository](https://github.com/go-chi/chi)
 - [Chi Documentation](https://go-chi.io/)

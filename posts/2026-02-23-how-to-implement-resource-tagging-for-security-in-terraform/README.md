@@ -28,6 +28,7 @@ Start by defining which tags are mandatory for every resource:
 
 ```hcl
 # locals.tf
+
 locals {
   required_tags = {
     Environment    = var.environment          # production, staging, development

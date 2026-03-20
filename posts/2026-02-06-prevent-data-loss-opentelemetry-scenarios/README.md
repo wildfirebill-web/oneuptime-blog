@@ -83,6 +83,7 @@ For Python applications, the configuration looks like this:
 
 ```python
 # Configure the batch span processor with tuned buffer sizes
+
 # These settings prevent queue overflow during traffic spikes
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 

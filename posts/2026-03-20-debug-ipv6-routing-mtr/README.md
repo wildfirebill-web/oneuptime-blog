@@ -14,6 +14,7 @@ Description: Learn how to use mtr (My TraceRoute) to continuously monitor IPv6 p
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install mtr-tiny
 
 # RHEL/Fedora
@@ -38,7 +39,7 @@ mtr -6 -n 2001:4860:4860::8888
 
 ## Understanding the mtr Output
 
-```
+```text
                              My traceroute [v0.95]
 hostname (2001:db8::2)            2026-03-20T10:00:00+0000
 Keys:  Help   Display mode   Restart statistics   Order of fields   quit
@@ -62,9 +63,9 @@ Column meanings:
 
 ## Interpreting Results
 
-```
+```text
 # Hop 3 shows 100% loss but hop 4 responds → Hop 3 filters ICMP TTL-exceeded
-# This is NOT a problem — it's normal ICMP rate limiting or filtering
+# This is NOT a problem - it's normal ICMP rate limiting or filtering
 # Only worry if Loss% first appears at a hop AND all subsequent hops also show loss
 
 # High StDev (jitter) indicates an unstable or congested link

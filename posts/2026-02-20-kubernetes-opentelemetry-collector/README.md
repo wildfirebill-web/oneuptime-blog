@@ -60,6 +60,7 @@ The OpenTelemetry Operator manages Collector instances using Custom Resources.
 
 ```bash
 # Install cert-manager (required by the operator)
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.yaml
 
 # Wait for cert-manager to be ready

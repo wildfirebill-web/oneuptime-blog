@@ -41,6 +41,7 @@ recommended:
 ```bash
 #!/bin/bash
 # team-cluster-diags.sh
+
 # Usage: ./team-cluster-diags.sh <reason>
 
 REASON="${1:?Usage: $0 <reason>}"

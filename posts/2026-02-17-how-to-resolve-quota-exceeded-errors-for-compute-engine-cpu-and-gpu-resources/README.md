@@ -38,6 +38,7 @@ This command shows your CPU quota in a specific region:
 
 ```bash
 # Check CPU quota for a specific region
+
 gcloud compute regions describe us-central1 \
     --format="table(quotas.metric,quotas.limit,quotas.usage)" \
     --project=my-project | grep -i cpu

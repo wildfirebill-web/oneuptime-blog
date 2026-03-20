@@ -37,6 +37,7 @@ graph TD
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export CLUSTER_NAME="aks-fluxcd-demo"
 export LOCATION="eastus"

@@ -26,6 +26,7 @@ Before doing anything in ArgoCD, try building the kustomize output locally:
 
 ```bash
 # Navigate to your kustomize directory
+
 cd overlays/production
 
 # Build and check for errors

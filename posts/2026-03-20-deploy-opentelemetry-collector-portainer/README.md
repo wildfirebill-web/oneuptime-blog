@@ -8,15 +8,15 @@ Description: Learn how to deploy and configure the OpenTelemetry Collector as a 
 
 ---
 
-The OpenTelemetry Collector is the hub of any modern observability stack — it receives traces, metrics, and logs from your applications and routes them to your backend of choice. Deploying it via Portainer gives you a visual interface for managing the collector's lifecycle, scaling it, and inspecting its configuration.
+The OpenTelemetry Collector is the hub of any modern observability stack - it receives traces, metrics, and logs from your applications and routes them to your backend of choice. Deploying it via Portainer gives you a visual interface for managing the collector's lifecycle, scaling it, and inspecting its configuration.
 
 ## What Is the OpenTelemetry Collector?
 
 The OTel Collector is a vendor-agnostic proxy that sits between your instrumented applications and observability backends (Jaeger, Zipkin, Prometheus, Datadog, etc.). It supports three pipeline types:
 
-- **Receivers** — accept telemetry (OTLP, Jaeger, Zipkin, Prometheus)
-- **Processors** — transform, batch, filter, or enrich data
-- **Exporters** — forward to backends
+- **Receivers** - accept telemetry (OTLP, Jaeger, Zipkin, Prometheus)
+- **Processors** - transform, batch, filter, or enrich data
+- **Exporters** - forward to backends
 
 ## Prerequisites
 
@@ -31,6 +31,7 @@ The following config accepts OTLP over gRPC and HTTP, applies batching, and expo
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:
@@ -112,7 +113,7 @@ OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
 
 After deploying, use Portainer's **Container Logs** view to confirm the collector started successfully. You should see:
 
-```
+```text
 Everything is ready. Begin running and processing data.
 ```
 

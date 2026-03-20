@@ -14,6 +14,7 @@ If you redact a user ID entirely (replacing it with "REDACTED"), you lose the ab
 
 ```text
 # Original
+
 user.id: "john.doe@company.com"
 
 # After hashing

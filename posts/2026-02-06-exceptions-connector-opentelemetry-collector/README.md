@@ -43,6 +43,7 @@ Here's a minimal configuration to get started with the Exceptions Connector:
 
 ```yaml
 # Define the exceptions connector
+
 connectors:
   exceptions:
     # No additional configuration required for basic usage

@@ -28,6 +28,7 @@ OpenShift with Calico typically uses VXLAN encapsulation. Set the MTU correctly 
 
 ```bash
 # OpenShift node MTU is typically 1500
+
 # VXLAN overhead is 50 bytes
 kubectl patch installation default --type merge \
   --patch '{"spec":{"calicoNetwork":{"mtu":1450}}}'

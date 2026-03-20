@@ -26,6 +26,7 @@ Create a Git pre-commit hook that checks all staged `.enc.yaml` files for SOPS m
 ```bash
 #!/bin/bash
 # .git/hooks/pre-commit
+
 # Verify all .enc.yaml files are properly SOPS-encrypted
 
 set -euo pipefail

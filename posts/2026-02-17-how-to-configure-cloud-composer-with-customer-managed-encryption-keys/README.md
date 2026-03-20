@@ -29,6 +29,7 @@ First, create a keyring and an encryption key in Cloud KMS:
 
 ```bash
 # Create a KMS keyring in the same region as your Composer environment
+
 gcloud kms keyrings create composer-keyring \
   --location=us-central1
 

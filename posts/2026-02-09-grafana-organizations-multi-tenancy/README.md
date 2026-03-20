@@ -22,6 +22,7 @@ You can create organizations through the Grafana UI or API. Using the API provid
 
 ```bash
 # Create a new organization via API
+
 curl -X POST http://admin:admin@localhost:3000/api/orgs \
   -H "Content-Type: application/json" \
   -d '{

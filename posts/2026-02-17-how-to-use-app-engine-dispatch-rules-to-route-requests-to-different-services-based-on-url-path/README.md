@@ -24,6 +24,7 @@ Here is a typical dispatch.yaml for an application with three services:
 
 ```yaml
 # dispatch.yaml - Route requests to the appropriate service
+
 dispatch:
   # API requests go to the api service
   - url: "*/api/*"

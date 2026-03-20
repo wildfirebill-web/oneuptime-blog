@@ -32,6 +32,7 @@ Create the shared root certificate:
 
 ```bash
 # Generate root CA
+
 mkdir -p certs
 openssl req -new -newkey rsa:4096 -x509 -sha256 \
   -days 3650 -nodes -out certs/root-cert.pem \

@@ -61,6 +61,7 @@ The Dockerfile keeps things lean with a multi-stage build:
 
 ```dockerfile
 # Dockerfile - Multi-stage build for a Node.js app
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

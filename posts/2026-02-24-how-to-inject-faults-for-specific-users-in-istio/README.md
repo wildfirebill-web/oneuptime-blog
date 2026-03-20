@@ -55,6 +55,7 @@ If you use an API gateway (Kong, Ambassador, or your own), configure it to extra
 
 ```yaml
 # Example: Envoy filter in the gateway to extract from JWT
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

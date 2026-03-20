@@ -74,6 +74,7 @@ The ArgoCD log viewer includes a filter/search box at the top. Type a keyword to
 Filter: "ERROR"
 
 # Only shows lines containing "ERROR"
+
 2026-02-26T10:23:45Z ERROR: Failed to connect to database
 2026-02-26T10:23:50Z ERROR: Retry failed after 3 attempts
 ```

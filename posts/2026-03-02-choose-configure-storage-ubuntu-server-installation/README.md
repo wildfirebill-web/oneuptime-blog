@@ -70,6 +70,7 @@ Separate `/var/log` and `/var/www` to prevent logs from filling the OS disk:
 /home       5 GB    ext4  (LV: lv-home)
 swap        4 GB    swap
 # Reserve 10-20 GB unallocated in VG
+
 ```
 
 ### Database Server

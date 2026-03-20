@@ -82,6 +82,7 @@ When running on GCP (Compute Engine, GKE, Cloud Run), ADC automatically uses the
 
 ```bash
 # No additional setup needed - ADC is automatic on GCP
+
 # The receiver will use the default service account
 ```
 

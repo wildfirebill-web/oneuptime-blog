@@ -270,6 +270,7 @@ Check job status and get details with the CLI.
 
 ```bash
 # Get job run status
+
 aws emr-serverless get-job-run \
   --application-id 00f5abcdef123456 \
   --job-run-id 00f5abcdef789012

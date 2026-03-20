@@ -24,6 +24,7 @@ First, create the S3 bucket and DynamoDB table. You can do this with a separate 
 
 ```hcl
 # bootstrap/main.tf
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "myorg-terraform-state"
 

@@ -37,6 +37,7 @@ You need a running Kubernetes cluster that you can connect to. This can be a loc
 
 ```bash
 # Verify kubectl is installed and configured
+
 kubectl version --client
 
 # Check cluster connectivity

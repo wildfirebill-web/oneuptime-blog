@@ -14,6 +14,7 @@ IPv6 wireless troubleshooting follows a layered approach: verify the access poin
 
 ```bash
 # Linux wireless client
+
 ip -6 addr show wlan0
 # Look for scope global address:
 # inet6 2001:db8::xxxx/64 scope global dynamic

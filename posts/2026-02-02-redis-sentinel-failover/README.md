@@ -201,6 +201,7 @@ The following configuration file sets up a Redis master with password authentica
 
 ```conf
 # redis-master.conf
+
 # Redis Master Configuration for Sentinel-Managed Cluster
 
 # Network Configuration

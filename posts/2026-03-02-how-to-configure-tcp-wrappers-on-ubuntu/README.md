@@ -26,6 +26,7 @@ Not all services use libwrap. Check with:
 
 ```bash
 # Check if a binary is compiled with libwrap support
+
 ldd $(which sshd) | grep libwrap
 ldd $(which vsftpd) | grep libwrap
 ldd $(which in.telnetd) | grep libwrap

@@ -53,6 +53,7 @@ When creating a new forwarding rule for an internal load balancer, add the `--al
 
 ```bash
 # Create an internal forwarding rule with global access enabled
+
 gcloud compute forwarding-rules create my-internal-rule \
     --load-balancing-scheme=INTERNAL \
     --network=my-vpc \

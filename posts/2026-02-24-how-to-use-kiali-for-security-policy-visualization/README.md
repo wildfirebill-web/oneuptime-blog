@@ -114,6 +114,7 @@ When a namespace-level PeerAuthentication says STRICT but a DestinationRule disa
 
 ```yaml
 # PeerAuthentication says STRICT
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

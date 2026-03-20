@@ -18,6 +18,7 @@ The most direct way to check disk usage on a Talos node is through the `talosctl
 
 ```bash
 # View all mounted filesystems and their usage
+
 talosctl get mounts --nodes 192.168.1.10
 
 # For detailed output including usage percentages

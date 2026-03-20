@@ -26,6 +26,7 @@ On first launch:
 
 ```bash
 # Create initial admin with custom username
+
 curl -X POST "https://portainer.mycompany.com/api/users/admin/init" \
   -H "Content-Type: application/json" \
   -d '{

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Windows Server, Auto-Tuning, Performance, netsh, PowerShell
+Tags: TCP, Windows Server, Auto-Tuning, Performance, Netsh, PowerShell
 
 Description: Learn how to configure and verify TCP receive window auto-tuning on Windows Server to maximize throughput for high-latency and high-bandwidth network connections.
 
@@ -36,6 +36,7 @@ Get-NetTCPSetting | Select-Object SettingName, AutoTuningLevelLocal, CongestionP
 # PowerShell (run as Administrator)
 
 # Check current level
+
 Get-NetTCPSetting -SettingName InternetCustom
 
 # Set to Normal (recommended for most scenarios)
@@ -86,7 +87,7 @@ netsh interface tcp set global netdma=enabled
 
 For domain-joined Windows servers, use Group Policy:
 
-```
+```text
 Computer Configuration
   → Administrative Templates
     → Network

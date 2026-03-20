@@ -60,6 +60,7 @@ For a production Ceph cluster, consider the following minimum requirements:
 
 ```bash
 # Example network layout for Ceph cluster
+
 # Public Network (client access): <PUBLIC_NETWORK>  (e.g., 192.168.1.0/24)
 # Cluster Network (OSD replication): <CLUSTER_NETWORK>  (e.g., 192.168.2.0/24)
 

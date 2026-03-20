@@ -112,6 +112,7 @@ The Lambda function that sends the approval request receives the task token and 
 
 ```python
 # Sends an approval email with approve/reject links containing the task token
+
 import boto3
 import json
 import urllib.parse

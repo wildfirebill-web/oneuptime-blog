@@ -21,6 +21,7 @@ An Egress-Only Internet Gateway (EIGW) is the IPv6 equivalent of a NAT Gateway. 
 
 ```hcl
 # vpc.tf - VPC with IPv6 CIDR
+
 resource "aws_vpc" "main" {
   cidr_block                       = "10.0.0.0/16"
   assign_generated_ipv6_cidr_block = true
@@ -123,4 +124,4 @@ aws ec2 describe-egress-only-internet-gateways \
   --filters "Name=attachment.vpc-id,Values=$(terraform output -raw vpc_id)"
 ```
 
-The Egress-Only Internet Gateway is a critical component for maintaining security in IPv6 AWS architectures — it gives private instances full IPv6 egress while ensuring they cannot be reached directly from the internet.
+The Egress-Only Internet Gateway is a critical component for maintaining security in IPv6 AWS architectures - it gives private instances full IPv6 egress while ensuring they cannot be reached directly from the internet.

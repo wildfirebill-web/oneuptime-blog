@@ -297,6 +297,7 @@ Verify that query parameter routing is working:
 
 ```bash
 # Apply the configuration
+
 kubectl apply -f virtualservice.yaml
 
 # Test with the query parameter

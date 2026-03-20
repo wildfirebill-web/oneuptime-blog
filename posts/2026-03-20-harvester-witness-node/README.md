@@ -45,7 +45,7 @@ A Harvester witness node:
 
 Witness nodes have minimal hardware requirements:
 
-```
+```text
 Minimum Witness Node Specs:
 - CPU:     4 cores (no virtualization extensions needed)
 - RAM:     8 GB
@@ -59,6 +59,7 @@ Boot the server with the Harvester ISO and select **Join an existing Harvester c
 
 ```yaml
 # witness-node-config.yaml
+
 # Configuration for installing the witness node
 
 scheme_version: 1
@@ -228,4 +229,4 @@ sudo kubectl --kubeconfig /etc/rancher/rke2/rke2.yaml \
 
 ## Conclusion
 
-The witness node is an elegant solution to the etcd quorum problem in two-datacenter deployments. By contributing only to voting without running expensive hypervisor workloads, the witness enables a geographically distributed cluster to survive a complete datacenter failure without needing three full-featured HCI nodes. The minimal hardware requirements mean the witness can even run as a VM on an existing server in a third location, colocation facility, or cloud instance — providing high availability at a fraction of the cost of a full third HCI node.
+The witness node is an elegant solution to the etcd quorum problem in two-datacenter deployments. By contributing only to voting without running expensive hypervisor workloads, the witness enables a geographically distributed cluster to survive a complete datacenter failure without needing three full-featured HCI nodes. The minimal hardware requirements mean the witness can even run as a VM on an existing server in a third location, colocation facility, or cloud instance - providing high availability at a fraction of the cost of a full third HCI node.

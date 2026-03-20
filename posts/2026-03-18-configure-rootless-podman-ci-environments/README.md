@@ -21,6 +21,7 @@ Rootless Podman uses user namespaces to map the container's root user to an unpr
 ```bash
 #!/bin/bash
 # Check if the system supports rootless Podman
+
 # These checks help diagnose issues in CI environments
 
 # Check kernel version (4.18+ recommended for rootless)

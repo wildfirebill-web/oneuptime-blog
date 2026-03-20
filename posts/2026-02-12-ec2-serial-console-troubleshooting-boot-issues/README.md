@@ -33,6 +33,7 @@ This command enables Serial Console access for your entire AWS account in the cu
 
 ```bash
 # Enable Serial Console access for the account
+
 aws ec2 enable-serial-console-access
 
 # Verify it's enabled

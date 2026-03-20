@@ -79,6 +79,7 @@ First, create a ConfigMap for PgBouncer configuration.
 
 ```yaml
 # pgbouncer-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -980,7 +981,7 @@ spec:
               - "sleep 5 && kill -SIGTERM 1"
 ```
 
-## Resource Management Best Practices
+Resource Management Best Practices
 
 Ambassador containers should be lightweight. Here are recommended resource allocations.
 

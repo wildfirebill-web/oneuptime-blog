@@ -40,6 +40,7 @@ graph LR
 
 ```bash
 # Enable the Discovery Engine API
+
 gcloud services enable discoveryengine.googleapis.com --project=your-project-id
 ```
 

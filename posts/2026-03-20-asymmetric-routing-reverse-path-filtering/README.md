@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Routing, Asymmetric Routing, Reverse Path Filtering, rp_filter, Networking, Security
+Tags: Linux, Routing, Asymmetric Routing, Reverse Path Filtering, Rp_filter, Networking, Security
 
 Description: Configure asymmetric routing on Linux by adjusting reverse path filtering (rp_filter) settings to allow traffic that arrives and departs via different interfaces.
 
@@ -14,6 +14,7 @@ Asymmetric routing occurs when packets from A to B take a different path than pa
 
 ```bash
 # Check rp_filter for all interfaces
+
 sysctl -a | grep rp_filter
 
 # Check specific interface
@@ -33,7 +34,7 @@ sysctl net.ipv4.conf.all.rp_filter
 sysctl -w net.ipv4.conf.eth0.rp_filter=2
 sysctl -w net.ipv4.conf.eth1.rp_filter=2
 
-# Or disable entirely (value 0) — less safe
+# Or disable entirely (value 0) - less safe
 sysctl -w net.ipv4.conf.eth0.rp_filter=0
 
 # The 'all' key takes effect for newly created interfaces

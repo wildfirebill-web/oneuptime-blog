@@ -64,6 +64,7 @@ from opentelemetry.instrumentation.aiohttp_server import AioHttpServerInstrument
 import asyncio
 
 # Configure OpenTelemetry with service name and metadata
+
 resource = Resource.create({
     "service.name": "aiohttp-server",
     "service.version": "1.0.0",

@@ -16,11 +16,11 @@ This RFC is essential reading for network architects planning large-scale IPv6 t
 
 RFC 9313 analyzes five main technologies:
 
-1. **DS-Lite** (RFC 6333) — IPv4-in-IPv6 tunneling with centralized AFTR
-2. **lw4o6** (RFC 7596) — DS-Lite variant with CPE-side NAT
-3. **MAP-E** (RFC 7597) — Stateless encapsulation with algorithmic mapping
-4. **MAP-T** (RFC 7599) — Stateless translation with algorithmic mapping
-5. **464XLAT** (RFC 6877) — CLAT+PLAT for IPv6-only mobile networks
+1. **DS-Lite** (RFC 6333) - IPv4-in-IPv6 tunneling with centralized AFTR
+2. **lw4o6** (RFC 7596) - DS-Lite variant with CPE-side NAT
+3. **MAP-E** (RFC 7597) - Stateless encapsulation with algorithmic mapping
+4. **MAP-T** (RFC 7599) - Stateless translation with algorithmic mapping
+5. **464XLAT** (RFC 6877) - CLAT+PLAT for IPv6-only mobile networks
 
 ## Key Evaluation Dimensions
 
@@ -51,10 +51,10 @@ RFC 9313 notes that stateless approaches (MAP-E, MAP-T) have significant operati
 
 ### 3. IPv4 Application Compatibility
 
-- **DS-Lite**: Highest compatibility — full port range, standard NAT behavior
-- **lw4o6**: Good — restricted ports but standard NAT on CPE
-- **MAP-E/MAP-T**: Restricted — port-range limitations may break some apps
-- **464XLAT**: Very high — CLAT provides transparent IPv4 to apps including IPv4 literals
+- **DS-Lite**: Highest compatibility - full port range, standard NAT behavior
+- **lw4o6**: Good - restricted ports but standard NAT on CPE
+- **MAP-E/MAP-T**: Restricted - port-range limitations may break some apps
+- **464XLAT**: Very high - CLAT provides transparent IPv4 to apps including IPv4 literals
 
 RFC 9313 specifically calls out port-range limitations as a potential issue for peer-to-peer applications and some gaming protocols.
 
@@ -70,11 +70,11 @@ RFC 9313 specifically calls out port-range limitations as a potential issue for 
 
 | Technology | CPE Complexity |
 |---|---|
-| DS-Lite | Low — just tunnel to AFTR, AFTR does NAT |
-| 464XLAT | Medium — CLAT + tunnel |
-| lw4o6 | High — CPE does NAT + tunnel + port restriction |
-| MAP-E | High — CPE does NAT + encap + port restriction + rule computation |
-| MAP-T | High — CPE does NAT + SIIT + port restriction + rule computation |
+| DS-Lite | Low - just tunnel to AFTR, AFTR does NAT |
+| 464XLAT | Medium - CLAT + tunnel |
+| lw4o6 | High - CPE does NAT + tunnel + port restriction |
+| MAP-E | High - CPE does NAT + encap + port restriction + rule computation |
+| MAP-T | High - CPE does NAT + SIIT + port restriction + rule computation |
 
 ## RFC 9313 Recommendations Summary
 

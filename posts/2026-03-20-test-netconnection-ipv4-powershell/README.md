@@ -14,6 +14,7 @@ Description: Test IPv4 connectivity, port reachability, and route tracing using 
 
 ```powershell
 # Simple connectivity test (ICMP ping)
+
 Test-NetConnection -ComputerName 8.8.8.8
 
 # Test by hostname
@@ -22,7 +23,7 @@ Test-NetConnection -ComputerName google.com
 
 Output:
 
-```
+```text
 ComputerName     : google.com
 RemoteAddress    : 142.250.80.46
 PingSucceeded    : True
@@ -41,7 +42,7 @@ Test-NetConnection -ComputerName 192.168.1.50 -Port 22
 
 Output for a successful TCP test:
 
-```
+```text
 ComputerName     : 192.168.1.50
 RemoteAddress    : 192.168.1.50
 RemotePort       : 22
@@ -79,7 +80,7 @@ foreach ($t in $targets) {
 ## Quiet Mode for Scripting
 
 ```powershell
-# Returns True/False — suppress all output except the boolean
+# Returns True/False - suppress all output except the boolean
 $reachable = (Test-NetConnection -ComputerName 8.8.8.8 -WarningAction SilentlyContinue).PingSucceeded
 if ($reachable) {
     Write-Host "Host is UP"

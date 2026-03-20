@@ -16,6 +16,7 @@ Because apply makes real changes to real infrastructure, understanding how it wo
 
 ```bash
 # Apply changes with interactive confirmation
+
 terraform apply
 ```
 
@@ -193,7 +194,7 @@ terraform force-unlock LOCK_ID
 
 Use `force-unlock` only when you are certain no other Terraform process is running. The lock ID is shown in the error message.
 
-### Resource Already Exists
+Resource Already Exists
 
 Sometimes Terraform tries to create a resource that already exists (maybe from a previous partial apply or manual creation):
 

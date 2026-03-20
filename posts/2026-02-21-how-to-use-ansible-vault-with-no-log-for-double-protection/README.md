@@ -20,6 +20,7 @@ Here is a quick example. Say you have a vaulted variable for a database password
 
 ```yaml
 # group_vars/all/vault.yml (encrypted with ansible-vault)
+
 vault_db_password: "SuperSecret123!"
 ```
 

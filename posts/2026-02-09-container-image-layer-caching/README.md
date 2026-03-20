@@ -22,6 +22,7 @@ Structure Dockerfiles to maximize cache hits across builds and deployments.
 
 ```dockerfile
 # Optimized Dockerfile with layer caching in mind
+
 FROM node:18-alpine AS base
 
 # Create app directory first (rarely changes)

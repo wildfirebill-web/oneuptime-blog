@@ -1710,6 +1710,7 @@ main().catch(console.error);
 
 ```bash
 # Install dependencies
+
 npm install typescript ts-node
 
 # Run the example

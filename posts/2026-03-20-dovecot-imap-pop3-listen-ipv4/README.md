@@ -16,6 +16,7 @@ Dovecot listens on all interfaces by default. Binding to specific IPv4 addresses
 # /etc/dovecot/dovecot.conf
 
 # Listen on specific IPv4 address only
+
 listen = 203.0.113.10
 
 # Listen on multiple IPv4 addresses

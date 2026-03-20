@@ -28,6 +28,7 @@ To check if a user exists and get their details:
 
 ```yaml
 # query-user.yml - Get information about a specific user
+
 - name: Query user information
   hosts: all
   become: yes

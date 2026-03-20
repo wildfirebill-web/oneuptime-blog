@@ -71,6 +71,7 @@ Your gRPC client code handles the TLS connection directly:
 import grpc
 
 # Client handles TLS
+
 channel = grpc.secure_channel(
     'grpc-api.example.com:443',
     grpc.ssl_channel_credentials()

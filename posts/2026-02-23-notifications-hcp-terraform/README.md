@@ -47,6 +47,7 @@ You pick which events matter for each notification channel. For production works
 
 ```hcl
 # Slack notification for production workspace
+
 resource "tfe_notification_configuration" "prod_slack" {
   name             = "production-slack-alerts"
   enabled          = true

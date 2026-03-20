@@ -28,6 +28,7 @@ This task will run every single time, even if the directory already exists:
 
 ```yaml
 # BAD: This runs every time, always reports "changed"
+
 - name: Create application directory
   command: mkdir -p /opt/myapp
 ```

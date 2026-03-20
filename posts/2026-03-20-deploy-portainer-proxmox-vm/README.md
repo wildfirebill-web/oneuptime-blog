@@ -16,6 +16,7 @@ Running Portainer in a Proxmox VM provides full OS isolation and is simpler to c
 
 ```bash
 # Download Ubuntu 22.04 cloud image
+
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 
 # Import and create VM

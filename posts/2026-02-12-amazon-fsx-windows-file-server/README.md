@@ -43,6 +43,7 @@ If you're using AWS Managed AD:
 
 ```bash
 # Create AWS Managed Microsoft AD (if you don't have one)
+
 aws ds create-microsoft-ad \
   --name "corp.example.com" \
   --short-name "CORP" \

@@ -206,6 +206,7 @@ Typical results show filters being 2-10x faster, especially for repeated queries
 
 ```bash
 # Full-text search
+
 { "match": { "content": "search terms" }}
 
 # Phrase matching

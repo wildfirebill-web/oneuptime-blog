@@ -26,6 +26,7 @@ The `spec.ignore` field accepts a multi-line string using `.gitignore` pattern s
 
 ```yaml
 # gitrepository-ignore.yaml - Exclude non-deployment files
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

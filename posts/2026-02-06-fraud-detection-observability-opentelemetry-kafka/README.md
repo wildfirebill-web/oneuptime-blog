@@ -69,6 +69,7 @@ scoring_tracer = trace.get_tracer("fraud.scoring", "1.0.0")
 meter = metrics.get_meter("fraud.scoring", "1.0.0")
 
 # Track scoring performance
+
 scoring_latency = meter.create_histogram(
     name="fraud.scoring.latency_ms",
     description="ML model scoring latency",

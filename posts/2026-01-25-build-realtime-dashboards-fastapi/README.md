@@ -36,6 +36,7 @@ SSE uses standard HTTP connections that stay open. The server pushes events as t
 
 ```python
 # sse_dashboard.py
+
 # Real-time dashboard using Server-Sent Events
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse

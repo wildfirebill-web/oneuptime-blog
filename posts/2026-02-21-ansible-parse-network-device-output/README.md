@@ -18,6 +18,7 @@ When you run a command on a network device through Ansible, you get back raw tex
 
 ```yaml
 # show_version.yml - Run show version and capture raw output
+
 ---
 - name: Get device version info
   hosts: routers

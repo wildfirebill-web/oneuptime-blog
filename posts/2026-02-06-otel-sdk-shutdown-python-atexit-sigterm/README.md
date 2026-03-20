@@ -28,6 +28,7 @@ When Kubernetes sends SIGTERM to your pod, the default Python behavior is to rai
 
 ```python
 # This is what happens by default with SIGTERM
+
 # Python converts SIGTERM to SystemExit
 # atexit hooks DO run for SystemExit, but only if the main thread completes
 

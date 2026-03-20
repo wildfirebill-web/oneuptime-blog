@@ -50,6 +50,7 @@ The journalctl equivalent:
 
 ```bash
 # Show only error-level messages and above
+
 journalctl -p err --no-pager -n 50
 
 # Show only critical and above

@@ -26,6 +26,7 @@ The spanmetrics connector sits in the Collector pipeline and generates metrics f
 
 ```yaml
 # otel-collector-config.yaml
+
 # Generate RED metrics from trace spans using the spanmetrics connector
 receivers:
   otlp:

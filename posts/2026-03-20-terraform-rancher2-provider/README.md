@@ -1,4 +1,4 @@
-# How to Use Terraform Rancher2 Provider
+# How to Use Terraform Rancher2 Provider - Rancher2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ The Rancher2 provider includes resources for:
 # rke2-cluster.tf
 
 # Node template for cloud provider (example: AWS)
+
 resource "rancher2_machine_config_v2" "worker" {
   generate_name = "worker-"
   amazonec2_config {

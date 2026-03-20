@@ -14,7 +14,7 @@ In Kubernetes, a default StorageClass is used to automatically provision Persist
 
 When a PVC is created without a `storageClassName`, Kubernetes uses the storage class annotated with:
 
-```
+```text
 storageclass.kubernetes.io/is-default-class: "true"
 ```
 
@@ -24,6 +24,7 @@ Only one StorageClass should have this annotation set to `"true"`. If multiple c
 
 ```bash
 # List all storage classes and their default status
+
 kubectl get storageclass
 
 # Look for "(default)" in the output, e.g.:
@@ -115,7 +116,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  # No storageClassName specified — will use the default (Longhorn)
+  # No storageClassName specified - will use the default (Longhorn)
 ```
 
 ```bash

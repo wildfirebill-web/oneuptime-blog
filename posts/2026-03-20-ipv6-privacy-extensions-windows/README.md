@@ -1,10 +1,10 @@
-# How to Configure IPv6 Privacy Extensions on Windows
+# How to Configure IPv6 Privacy Extensions on Windows - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Privacy Extensions, Windows, PowerShell, netsh, Security
+Tags: IPv6, Privacy Extensions, Windows, PowerShell, Netsh, Security
 
-Description: A guide to enabling and configuring IPv6 privacy extensions on Windows 10 and Windows 11 using netsh, PowerShell, and Group Policy, to ensure temporary IPv6 addresses are used for outbound connections.
+Description: A guide to enabling and configuring IPv6 privacy extensions on Windows 10 and Windows 11 using netsh, PowerShell, and Group Policy, to ensure temporary IPv6 addresses are used for outbound...
 
 Windows enables IPv6 privacy extensions by default, but the configuration can be customized or may have been changed by administrators. This guide explains how to verify, enable, and manage IPv6 privacy extensions on Windows systems.
 
@@ -12,6 +12,7 @@ Windows enables IPv6 privacy extensions by default, but the configuration can be
 
 ```powershell
 # Check IPv6 privacy address settings via PowerShell
+
 Get-NetIPv6Protocol | Select-Object UseTemporaryAddresses, MaxTemporaryDadAttempts, RegenerateTime, MaxRandomTime, PrefixDelegationEnabled
 
 # Check per-interface

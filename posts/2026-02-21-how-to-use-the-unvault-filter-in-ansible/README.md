@@ -22,6 +22,7 @@ Here is the simplest example of the `unvault` filter:
 
 ```yaml
 # playbook.yml
+
 # Demonstrates basic unvault filter usage
 ---
 - name: Demonstrate unvault filter

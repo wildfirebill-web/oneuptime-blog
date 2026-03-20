@@ -34,6 +34,7 @@ DNF (used by RHEL) and APT (used by Ubuntu/Debian) are both mature package manag
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

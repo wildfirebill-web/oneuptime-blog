@@ -24,6 +24,7 @@ Check these metrics first:
 
 ```promql
 # Queue depth per controller - should stay near 0
+
 workqueue_depth{namespace="flux-system"}
 
 # Reconciliation duration - 95th percentile

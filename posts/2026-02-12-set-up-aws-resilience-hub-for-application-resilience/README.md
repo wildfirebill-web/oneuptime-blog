@@ -39,6 +39,7 @@ Start by telling Resilience Hub about your application and its resources.
 
 ```bash
 # Create an application in Resilience Hub
+
 aws resiliencehub create-app \
     --name "payment-service" \
     --description "Payment processing service" \

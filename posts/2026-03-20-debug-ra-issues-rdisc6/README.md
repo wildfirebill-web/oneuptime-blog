@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, rdisc6, Debugging, Networking, Troubleshooting
+Tags: IPv6, Router Advertisement, Rdisc6, Debugging, Networking, Troubleshooting
 
 Description: Use rdisc6 and related tools to debug IPv6 Router Advertisement issues, diagnose missing RA responses, and verify prefix, DNS, and routing information delivery.
 
@@ -14,6 +14,7 @@ Description: Use rdisc6 and related tools to debug IPv6 Router Advertisement iss
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install ndisc6
 
 # RHEL/CentOS/Fedora

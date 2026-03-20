@@ -33,6 +33,7 @@ The most common dashboard panel shows the health and sync status of all applicat
 
 ```bash
 # Fetch all applications with their status
+
 # Returns name, sync status, health status, and last sync time
 curl -s -k "$ARGOCD_URL/api/v1/applications" \
   -H "$AUTH_HEADER" | jq '[.items[] | {

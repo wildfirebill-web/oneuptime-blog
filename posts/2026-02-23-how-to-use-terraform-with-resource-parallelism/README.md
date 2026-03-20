@@ -31,6 +31,7 @@ Parallelism is a CLI flag, not a configuration option:
 
 ```bash
 # Default: 10 concurrent operations
+
 terraform apply
 
 # Higher parallelism for faster execution
@@ -70,7 +71,7 @@ terraform apply -parallelism=15
 terraform apply -parallelism=30
 ```
 
-### Resource Types
+Resource Types
 
 Some resource types are slow to create and benefit from higher parallelism (since each one takes a long time, more can be in flight):
 

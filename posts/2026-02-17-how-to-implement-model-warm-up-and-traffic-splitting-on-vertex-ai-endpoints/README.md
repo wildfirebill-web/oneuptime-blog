@@ -87,6 +87,7 @@ def create_warmup_file(saved_model_dir, num_warmup_requests=100):
     print(f"Created {num_warmup_requests} warm-up requests at {warmup_file}")
 
 # Generate warm-up file for your saved model
+
 create_warmup_file("gs://your-bucket/models/my-model/1/")
 ```
 

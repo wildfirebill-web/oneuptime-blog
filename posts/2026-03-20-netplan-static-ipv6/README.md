@@ -14,6 +14,7 @@ Netplan is a YAML-based network configuration tool used in Ubuntu 17.10+ as the 
 
 ```bash
 # List network interfaces
+
 ip link show
 
 # Or check Netplan files
@@ -38,7 +39,7 @@ network:
         - 192.168.1.100/24
 
       # IPv6 static configuration
-      # Using YAML list — multiple IPv6 addresses are supported
+      # Using YAML list - multiple IPv6 addresses are supported
       addresses:
         - 192.168.1.100/24        # IPv4
         - 2001:db8::100/64        # IPv6 global unicast
@@ -149,4 +150,4 @@ After configuring static IPv6 with Netplan, use [OneUptime](https://oneuptime.co
 
 ## Conclusion
 
-Configuring static IPv6 with Netplan is straightforward — add the IPv6 address to the `addresses` list and add a default IPv6 route to the `routes` section. Always include IPv6 DNS servers and test with `ping6` and `dig AAAA` after applying the configuration.
+Configuring static IPv6 with Netplan is straightforward - add the IPv6 address to the `addresses` list and add a default IPv6 route to the `routes` section. Always include IPv6 DNS servers and test with `ping6` and `dig AAAA` after applying the configuration.

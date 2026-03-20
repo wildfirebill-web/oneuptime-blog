@@ -31,6 +31,7 @@ On Amazon Linux / Amazon Linux 2:
 
 ```bash
 # Usually already installed, but just in case
+
 sudo yum install -y amazon-efs-utils
 ```
 

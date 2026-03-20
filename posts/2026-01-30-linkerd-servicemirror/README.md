@@ -49,6 +49,7 @@ Before setting up multi-cluster, ensure both clusters have:
 
 ```bash
 # Check Linkerd is healthy on both clusters
+
 linkerd check --context west
 linkerd check --context east
 ```

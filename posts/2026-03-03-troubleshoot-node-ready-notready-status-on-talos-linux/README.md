@@ -27,6 +27,7 @@ If the API server does not receive a heartbeat within the node monitor grace per
 
 ```bash
 # Check the status of all nodes
+
 kubectl get nodes
 
 # Get detailed information about a specific node

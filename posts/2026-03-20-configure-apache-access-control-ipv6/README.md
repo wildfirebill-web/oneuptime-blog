@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Apache, Access Control, mod_authz_host, Security
+Tags: IPv6, Apache, Access Control, Mod_authz_host, Security
 
 Description: Learn how to configure Apache access control rules for IPv6 addresses and subnets using Require ip directives, including allowing trusted IPv6 ranges and blocking specific addresses.
 
@@ -102,6 +102,7 @@ Description: Learn how to configure Apache access control rules for IPv6 address
 
 ```apache
 # Apache 2.2 used Allow/Deny (still works in 2.4 with mod_access_compat)
+
 <Directory /var/www/admin>
     Order deny,allow
     Deny from all

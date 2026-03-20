@@ -38,6 +38,7 @@ First, create the Lambda function with the right permissions.
 
 ```yaml
 # CloudFormation template for the Lambda function and IAM role
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   EmailProcessorRole:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, NAT, Linux, conntrack, Troubleshooting
+Tags: Networking, NAT, Linux, Conntrack, Troubleshooting
 
 Description: Learn how to use Linux connection tracking (conntrack) to diagnose NAT issues, inspect session state, and resolve common problems.
 
@@ -12,6 +12,7 @@ Linux connection tracking (conntrack) maintains a state table of all active netw
 
 ```bash
 # Install conntrack-tools
+
 apt install conntrack     # Debian/Ubuntu
 yum install conntrack-tools  # RHEL/CentOS
 ```
@@ -35,7 +36,7 @@ conntrack -L | wc -l
 
 Sample output:
 
-```
+```text
 tcp  6  86400  ESTABLISHED  src=192.168.1.10 dst=8.8.8.8 sport=54321 dport=80 
      src=8.8.8.8 dst=203.0.113.1 sport=80 dport=54321 [ASSURED] mark=0 use=1
 ```
@@ -139,7 +140,7 @@ sysctl -w net.netfilter.nf_conntrack_tcp_timeout_close_wait=30      # 30 sec
 
 - `conntrack -L` shows all active NAT sessions with source, destination, and translated addresses.
 - `conntrack -E` monitors new/destroyed connections in real time.
-- Table full errors (`nf_conntrack_max`) cause silent connection drops — increase the limit.
+- Table full errors (`nf_conntrack_max`) cause silent connection drops - increase the limit.
 - Tuning TCP timeouts (`nf_conntrack_tcp_timeout_established`) frees up table entries faster.
 
 **Related Reading:**

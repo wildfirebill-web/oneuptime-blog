@@ -51,6 +51,7 @@ Lambda expects Python packages in a specific directory structure. The path must 
 
 ```bash
 # Create the layer directory structure
+
 mkdir -p my-python-layer/python
 
 # Navigate to the layer directory

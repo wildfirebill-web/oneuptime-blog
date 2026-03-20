@@ -1,4 +1,4 @@
-# How to Optimize IPv6 for Real-Time Applications (VoIP, Video)
+# How to Optimize IPv6 for Real-Time Applications (VoIP, Video) - Realtime
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Real-time applications require low latency, low jitter, and bounded packet loss.
 
 ```bash
 # Mark VoIP RTP traffic (UDP 10000-20000) with Expedited Forwarding (DSCP EF = 46)
+
 ip6tables -t mangle -A OUTPUT \
   -p udp --sport 10000:20000 \
   -j DSCP --set-dscp 46
@@ -85,7 +86,7 @@ echo 32 > /sys/class/net/eth0/gro_flush_timeout
 ## Asterisk VoIP over IPv6
 
 ```ini
-# /etc/asterisk/sip.conf — SIP over IPv6
+# /etc/asterisk/sip.conf - SIP over IPv6
 [general]
 bindaddr=::
 bindport=5060

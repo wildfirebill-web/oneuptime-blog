@@ -25,6 +25,7 @@ Before addressing HIPAA-specific controls, harden the base system:
 
 ```bash
 # Keep the system updated - critical for HIPAA
+
 sudo apt update && sudo apt upgrade -y
 
 # Install security tools

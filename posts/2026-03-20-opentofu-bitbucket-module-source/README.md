@@ -1,11 +1,10 @@
----
-title: "Using Bitbucket as a Module Source in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, bitbucket
-description: "Learn how to use Bitbucket repositories as OpenTofu module sources for teams using Atlassian's platform."
----
-
 # Using Bitbucket as a Module Source in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Bitbucket
+
+Description: Learn how to use Bitbucket repositories as OpenTofu module sources for teams using Atlassian's platform.
 
 OpenTofu supports a `bitbucket.org` shorthand for referencing modules stored in Bitbucket repositories, similar to the GitHub shorthand.
 
@@ -17,6 +16,7 @@ module "vpc" {
 }
 
 # With version reference
+
 module "vpc" {
   source = "bitbucket.org/myworkspace/terraform-modules//modules/vpc?ref=v1.0.0"
 }
@@ -43,7 +43,7 @@ module "vpc" {
 git config --global credential.helper store
 echo "https://username:app-password@bitbucket.org" > ~/.git-credentials
 
-# SSH key — add to Bitbucket account Settings > SSH Keys
+# SSH key - add to Bitbucket account Settings > SSH Keys
 ssh-keygen -t ed25519 -C "terraform@example.com"
 cat ~/.ssh/id_ed25519.pub  # Add this to Bitbucket
 ```

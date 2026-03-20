@@ -29,6 +29,7 @@ Install the AWS Load Balancer Controller in your EKS cluster:
 
 ```bash
 # Add the EKS Helm repo
+
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update
 

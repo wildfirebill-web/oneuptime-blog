@@ -14,6 +14,7 @@ The Don't Fragment (DF) bit in the IPv4 header instructs routers not to fragment
 
 ```bash
 # Set DF bit with ping (-M do flag):
+
 ping -M do -s 1472 10.20.0.5
 # -M do: set DF bit (Don't Fragment)
 # -s 1472: payload size (1472 + 28 bytes overhead = 1500 total)
@@ -123,4 +124,4 @@ tcpdump -i eth0 -n 'icmp and icmp[0] = 3 and icmp[1] = 4'
 
 ## Conclusion
 
-The DF bit prevents fragmentation and triggers PMTUD when set. For ping-based MTU testing, use `-M do` flag. For applications, set `IP_PMTUDISC_DO` via socket options to enable PMTUD. TCP automatically handles this — it sets DF and adjusts MSS when ICMP Fragmentation Needed messages arrive. The most common problem is when ICMP Fragmentation Needed messages are blocked by firewalls, creating MTU black holes where TCP connections hang or UDP data is silently dropped.
+The DF bit prevents fragmentation and triggers PMTUD when set. For ping-based MTU testing, use `-M do` flag. For applications, set `IP_PMTUDISC_DO` via socket options to enable PMTUD. TCP automatically handles this - it sets DF and adjusts MSS when ICMP Fragmentation Needed messages arrive. The most common problem is when ICMP Fragmentation Needed messages are blocked by firewalls, creating MTU black holes where TCP connections hang or UDP data is silently dropped.

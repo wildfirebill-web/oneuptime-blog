@@ -16,6 +16,7 @@ On the Ceph admin node, create the required pools and filesystem:
 
 ```bash
 # Deploy MDS (Metadata Server) daemons - CephFS requires at least one
+
 sudo ceph orch apply mds myfs --placement="2 node1 node2"
 
 # Create the data and metadata pools

@@ -63,6 +63,7 @@ Now create the roles with their permission policies:
 
 ```bash
 # Create the admin role
+
 aws iam create-role \
     --role-name CognitoAdminRole \
     --assume-role-policy-document file://trust-policy.json

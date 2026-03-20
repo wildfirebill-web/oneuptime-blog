@@ -123,6 +123,7 @@ Mount the ConfigMap in the load tester by updating its Helm values or patching t
 
 ```yaml
 # Helm values for flagger-loadtester
+
 extraVolumes:
   - name: test-scripts
     configMap:

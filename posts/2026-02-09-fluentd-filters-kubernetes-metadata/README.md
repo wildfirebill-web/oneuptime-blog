@@ -68,6 +68,7 @@ Extract pod labels for filtering:
 </filter>
 
 # Extract specific labels as top-level fields
+
 <filter kubernetes.**>
   @type record_transformer
   enable_ruby true

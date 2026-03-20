@@ -18,6 +18,7 @@ List all instances with key details in a nice table format.
 
 ```bash
 # List all EC2 instances with name, ID, state, type, and private IP
+
 aws ec2 describe-instances \
   --query 'Reservations[].Instances[].{
     Name: Tags[?Key==`Name`].Value | [0],

@@ -16,6 +16,7 @@ Always start with the service logs:
 
 ```bash
 # On the agent node, check service status
+
 systemctl status k3s-agent
 
 # View recent logs

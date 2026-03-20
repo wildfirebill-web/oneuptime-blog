@@ -52,6 +52,7 @@ Configure the Actuator to expose the Prometheus endpoint.
 
 ```yaml
 # application.yml - Metrics configuration
+
 management:
   endpoints:
     web:

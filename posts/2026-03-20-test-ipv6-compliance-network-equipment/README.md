@@ -12,7 +12,7 @@ Testing network equipment for IPv6 compliance involves verifying correct impleme
 
 ## IPv6 Compliance Testing Categories
 
-```
+```text
 Testing Categories:
 1. Conformance Testing - Does the device follow RFC specifications exactly?
 2. Interoperability Testing - Does it work with other vendors' devices?
@@ -25,6 +25,7 @@ Testing Categories:
 
 ```bash
 # Test 1: IPv6 address configuration
+
 # Verify router accepts and processes IPv6 addresses
 
 # On Cisco IOS

@@ -45,6 +45,7 @@ This shows how to check and enable the required settings for MySQL on RDS:
 
 ```bash
 # Check current binlog settings on your RDS instance
+
 # Connect to your RDS MySQL instance and verify
 mysql -h your-rds-endpoint.amazonaws.com -u admin -p -e "
   SHOW VARIABLES LIKE 'log_bin';

@@ -872,6 +872,7 @@ Always run Jenkins behind a reverse proxy with TLS termination. Configure header
 
 ```nginx
 # /etc/nginx/conf.d/jenkins.conf
+
 # Nginx reverse proxy configuration for Jenkins
 
 # Upstream Jenkins server

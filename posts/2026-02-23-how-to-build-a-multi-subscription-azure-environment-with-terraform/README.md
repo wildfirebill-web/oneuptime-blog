@@ -31,6 +31,7 @@ Management groups let you organize subscriptions and apply policies at scale.
 
 ```hcl
 # Root management group (tenant root group)
+
 # Azure creates this automatically, we reference it
 data "azurerm_management_group" "tenant_root" {
   display_name = "Tenant Root Group"

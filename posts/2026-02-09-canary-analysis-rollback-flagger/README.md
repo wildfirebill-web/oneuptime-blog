@@ -18,6 +18,7 @@ In this guide, we'll configure Flagger for automated canary deployments with met
 kubectl apply -k github.com/fluxcd/flagger//kustomize/linkerd
 
 # Verify installation
+
 kubectl get pods -n linkerd
 ```
 

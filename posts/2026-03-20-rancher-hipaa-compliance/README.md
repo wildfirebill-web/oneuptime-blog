@@ -30,6 +30,7 @@ HIPAA's Security Rule defines four categories of technical safeguards:
 
 ```bash
 # Configure Rancher to use enterprise identity provider (SAML/OIDC)
+
 # Navigate to Rancher UI: Global -> Security -> Authentication
 
 # Ensure each user has a unique account (no shared accounts)
@@ -266,4 +267,4 @@ spec:
 
 ## Conclusion
 
-Implementing HIPAA compliance on Rancher-managed Kubernetes requires a defense-in-depth approach covering access control, audit logging, encryption at rest and in transit, and integrity verification. HIPAA compliance is not a one-time effort — it requires continuous monitoring and regular audits. By leveraging Rancher's built-in security features alongside tools like Istio for mTLS, Kyverno for policy enforcement, and comprehensive audit logging, you can build a HIPAA-compliant Kubernetes environment for healthcare workloads.
+Implementing HIPAA compliance on Rancher-managed Kubernetes requires a defense-in-depth approach covering access control, audit logging, encryption at rest and in transit, and integrity verification. HIPAA compliance is not a one-time effort - it requires continuous monitoring and regular audits. By leveraging Rancher's built-in security features alongside tools like Istio for mTLS, Kyverno for policy enforcement, and comprehensive audit logging, you can build a HIPAA-compliant Kubernetes environment for healthcare workloads.

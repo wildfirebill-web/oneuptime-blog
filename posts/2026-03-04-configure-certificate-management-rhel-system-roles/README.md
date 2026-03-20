@@ -32,6 +32,7 @@ Install the RHEL system roles package on your control node:
 
 ```bash
 # Install RHEL system roles
+
 sudo dnf install rhel-system-roles
 ```
 

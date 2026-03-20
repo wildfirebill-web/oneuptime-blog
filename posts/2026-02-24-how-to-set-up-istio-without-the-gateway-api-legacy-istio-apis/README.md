@@ -18,6 +18,7 @@ Install Istio with the ingress gateway enabled:
 
 ```yaml
 # istio-classic.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

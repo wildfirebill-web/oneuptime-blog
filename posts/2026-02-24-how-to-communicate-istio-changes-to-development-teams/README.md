@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Mesh, DevOps, Communication, Team
+Tags: Istio, Service Mesh, DevOps, Communication, Teams
 
 Description: Practical advice on how to communicate Istio service mesh changes to development teams so they understand what is changing and why.
 
@@ -106,6 +106,7 @@ Create a simple workshop exercise:
 # Workshop: Deploy a service with Istio
 
 # Step 1: Create a test namespace
+
 kubectl create namespace istio-workshop
 kubectl label namespace istio-workshop istio-injection=enabled
 

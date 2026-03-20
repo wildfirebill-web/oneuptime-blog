@@ -33,6 +33,7 @@ First, install the Redis PHP extension and the Predis package:
 
 ```bash
 # Install PHP Redis extension (recommended for performance)
+
 pecl install redis
 
 # Or use Predis as a pure PHP alternative

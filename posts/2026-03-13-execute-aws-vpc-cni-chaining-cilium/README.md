@@ -27,6 +27,7 @@ Check that VPC CNI is running and pods have VPC-routable IP addresses.
 
 ```bash
 # Confirm VPC CNI DaemonSet is running on all nodes
+
 kubectl get daemonset aws-node -n kube-system
 
 # Verify pods have VPC CIDR IP addresses (not pod overlay IPs)

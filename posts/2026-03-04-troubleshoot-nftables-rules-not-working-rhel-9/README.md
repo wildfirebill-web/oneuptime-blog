@@ -77,6 +77,7 @@ Make sure your chains have the correct type, hook, and priority:
 
 ```bash
 # Correct input chain definition
+
 nft add chain inet firewall input { type filter hook input priority 0 \; policy drop \; }
 ```
 

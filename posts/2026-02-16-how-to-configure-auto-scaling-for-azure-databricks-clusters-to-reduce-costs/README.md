@@ -76,6 +76,7 @@ You can create clusters via the Databricks CLI:
 
 ```bash
 # Create an auto-scaling interactive cluster using the Databricks CLI
+
 databricks clusters create --json '{
     "cluster_name": "analytics-team",
     "spark_version": "13.3.x-scala2.12",

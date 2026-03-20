@@ -24,6 +24,7 @@ The IPAM system tracks allocations in the Calico datastore (Kubernetes CRDs or e
 
 ```bash
 # View current IPAM allocations
+
 calicoctl ipam show --show-blocks
 
 # Check IP pool utilization

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Dual Stack, IPv6, IPFamilyPolicy
+Tags: Kubernetes, MetalLB, Dual Stack, IPv6, IpFamilyPolicy
 
 Description: Learn how to use the PreferDualStack IP family policy with MetalLB to request both IPv4 and IPv6 addresses for LoadBalancer services.
 
@@ -50,6 +50,7 @@ Verify your cluster supports dual-stack:
 
 ```bash
 # Check if the cluster has dual-stack enabled
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}: {.status.addresses[*].address}{"\n"}{end}'
 
 # Check the kube-apiserver feature gates

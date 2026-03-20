@@ -8,7 +8,7 @@ Description: Configure GitHub Actions workflows to build Docker images and deplo
 
 ## Introduction
 
-GitHub Actions is the most widely used CI/CD platform for public and private repositories. This guide covers creating workflows that build Docker images, push to a registry, and deploy to Portainer — supporting both webhook-based and API-based deployment methods.
+GitHub Actions is the most widely used CI/CD platform for public and private repositories. This guide covers creating workflows that build Docker images, push to a registry, and deploy to Portainer - supporting both webhook-based and API-based deployment methods.
 
 ## Step 1: Configure GitHub Secrets
 
@@ -25,6 +25,7 @@ Add these repository secrets:
 
 ```yaml
 # .github/workflows/deploy.yml - Simple webhook-based deployment
+
 name: Deploy to Portainer
 
 on:

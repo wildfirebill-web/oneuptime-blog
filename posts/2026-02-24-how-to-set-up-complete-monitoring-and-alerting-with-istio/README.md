@@ -28,6 +28,7 @@ The most important data plane metrics come from the `istio_requests_total` and `
 
 ```yaml
 # Prometheus recording rules to pre-compute common queries
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

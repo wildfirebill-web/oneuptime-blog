@@ -20,6 +20,7 @@ Ensure Skopeo is installed on your system before proceeding.
 
 ```bash
 # Install on Fedora/RHEL
+
 sudo dnf install -y skopeo
 
 # Install on Ubuntu/Debian

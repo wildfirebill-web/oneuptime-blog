@@ -92,6 +92,7 @@ output "service_name" {
 
 ```hcl
 # Auto-accept connections from specific principals
+
 resource "aws_vpc_endpoint_service" "auto_accept" {
   acceptance_required        = false  # Auto-accept all requests from allowed principals
   network_load_balancer_arns = [aws_lb.service.arn]

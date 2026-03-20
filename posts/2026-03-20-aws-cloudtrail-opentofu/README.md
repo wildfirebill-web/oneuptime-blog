@@ -113,7 +113,7 @@ resource "aws_cloudwatch_log_group" "cloudtrail" {
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "root_usage" {
   alarm_name          = "root-account-usage"
-  alarm_description   = "Root account has been used — investigate immediately"
+  alarm_description   = "Root account has been used - investigate immediately"
   namespace           = "CloudTrailMetrics"
   metric_name         = "RootAccountUsageEventCount"
   comparison_operator = "GreaterThanOrEqualToThreshold"

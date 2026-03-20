@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: 3proxy, Proxy, IPv6, SOCKS5, HTTP, Dual-Stack, Lightweight
 
-Description: Configure 3proxy — a lightweight proxy server — to listen on IPv6 addresses, support SOCKS5 and HTTP proxy protocols for IPv6 clients, and chain through upstream IPv6 proxies.
+Description: Configure 3proxy - a lightweight proxy server - to listen on IPv6 addresses, support SOCKS5 and HTTP proxy protocols for IPv6 clients, and chain through upstream IPv6 proxies.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Description: Configure 3proxy — a lightweight proxy server — to listen on IP
 
 ```bash
 # Build from source
+
 git clone https://github.com/3proxy/3proxy.git
 cd 3proxy
 make -f Makefile.Linux
@@ -38,7 +39,7 @@ nserver 2606:4700:4700::1001
 # Set maximum connections
 maxconn 512
 
-# Authentication (optional — allow all for local use)
+# Authentication (optional - allow all for local use)
 auth none
 
 # Allow all users

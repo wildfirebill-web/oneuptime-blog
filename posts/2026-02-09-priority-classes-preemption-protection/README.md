@@ -347,6 +347,7 @@ NAMESPACE="production"
 PRIORITY_CLASS="production-medium"
 
 # Get all deployments
+
 DEPLOYMENTS=$(kubectl get deployments -n $NAMESPACE -o name)
 
 for DEPLOYMENT in $DEPLOYMENTS; do

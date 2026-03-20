@@ -14,6 +14,7 @@ An Azure Service Principal is a non-human identity used by applications, service
 
 ```bash
 # Create a service principal with Contributor role on a specific subscription
+
 az ad sp create-for-rbac \
   --name "opentofu-deploy-sp" \
   --role "Contributor" \

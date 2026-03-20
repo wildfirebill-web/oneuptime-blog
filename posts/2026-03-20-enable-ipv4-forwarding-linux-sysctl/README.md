@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, IPv4, sysctl, Routing, IP Forwarding
+Tags: Linux, Networking, IPv4, Sysctl, Routing, IP Forwarding
 
 Description: Enable IPv4 packet forwarding on Linux using sysctl to allow the system to act as a router, NAT gateway, or VPN server, and make the change persistent across reboots.
 
 ## Introduction
 
-By default, Linux drops packets that arrive on one interface and need to be forwarded to another — it acts as a host, not a router. Enabling `ip_forward` allows the kernel to route packets between interfaces, which is required for NAT gateways, VPN servers, Docker hosts, and any router role.
+By default, Linux drops packets that arrive on one interface and need to be forwarded to another - it acts as a host, not a router. Enabling `ip_forward` allows the kernel to route packets between interfaces, which is required for NAT gateways, VPN servers, Docker hosts, and any router role.
 
 ## Checking the Current State
 
 ```bash
 # Check if IP forwarding is currently enabled
+
 cat /proc/sys/net/ipv4/ip_forward
 # 0 = disabled (default for non-router hosts)
 # 1 = enabled
@@ -22,7 +23,7 @@ cat /proc/sys/net/ipv4/ip_forward
 ## Enabling IP Forwarding Temporarily (Runtime)
 
 ```bash
-# Enable immediately — takes effect instantly, but lost on reboot
+# Enable immediately - takes effect instantly, but lost on reboot
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 
 # Or using sysctl
@@ -71,7 +72,7 @@ sudo sysctl -w net.ipv4.conf.all.forwarding=1
 
 ## Setting Up NAT After Enabling Forwarding
 
-IP forwarding alone is not enough for internet access from behind a Linux router — you also need NAT (masquerade):
+IP forwarding alone is not enough for internet access from behind a Linux router - you also need NAT (masquerade):
 
 ```bash
 # After enabling ip_forward, add NAT masquerade rule

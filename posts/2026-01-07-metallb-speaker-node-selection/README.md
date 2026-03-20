@@ -82,6 +82,7 @@ First, label the nodes where you want MetalLB speakers to run. This example labe
 
 ```bash
 # Label nodes that should participate in MetalLB announcements
+
 # These are typically edge nodes with direct network connectivity
 kubectl label nodes worker-node-1 node-role.kubernetes.io/metallb-speaker=true
 kubectl label nodes worker-node-2 node-role.kubernetes.io/metallb-speaker=true

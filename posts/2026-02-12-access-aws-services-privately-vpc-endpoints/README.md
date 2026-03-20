@@ -59,6 +59,7 @@ Don't create endpoints for every AWS service. Start by figuring out which servic
 
 ```bash
 # Check VPC Flow Logs for traffic going to AWS service IPs
+
 # First, enable flow logs if you haven't
 aws ec2 create-flow-logs \
   --resource-type VPC \

@@ -33,6 +33,7 @@ PriorityClasses are cluster-scoped resources. Create them in order from lowest t
 
 ```yaml
 # priority-classes.yaml
+
 # Define priority levels for different workload tiers
 
 # Lowest priority - batch jobs and background tasks

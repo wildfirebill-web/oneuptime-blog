@@ -38,6 +38,7 @@ First, you need Standard Load Balancers in each region. If you already have thes
 
 ```bash
 # Create resource group for East US
+
 az group create \
   --name rg-lb-eastus \
   --location eastus

@@ -12,6 +12,7 @@ Registry access policies define who can push images (CI/CD), who can pull images
 
 ```hcl
 # Registry-level policy applies to all repositories
+
 resource "aws_ecr_registry_policy" "main" {
   policy = jsonencode({
     Version = "2012-10-17"
@@ -33,7 +34,7 @@ resource "aws_ecr_registry_policy" "main" {
   })
 }
 
-# Repository-level policy — per repo
+# Repository-level policy - per repo
 resource "aws_ecr_repository_policy" "api" {
   repository = aws_ecr_repository.api.name
 
@@ -168,4 +169,4 @@ resource "google_artifact_registry_repository_iam_binding" "bindings" {
 
 ## Conclusion
 
-Container registry access policies in OpenTofu enforce least-privilege for image operations. Grant pull-only to compute roles (ECS tasks, EKS nodes, GKE nodes), push to CI/CD service accounts, and admin only to platform teams. Audit registry policies regularly and remove roles when services are decommissioned — OpenTofu makes this visible in the diff.
+Container registry access policies in OpenTofu enforce least-privilege for image operations. Grant pull-only to compute roles (ECS tasks, EKS nodes, GKE nodes), push to CI/CD service accounts, and admin only to platform teams. Audit registry policies regularly and remove roles when services are decommissioned - OpenTofu makes this visible in the diff.

@@ -61,6 +61,7 @@ The base layer contains shared manifests with default values.
 
 ```yaml
 # base/kustomization.yaml
+
 # Common resources shared by all environments
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

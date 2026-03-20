@@ -37,6 +37,7 @@ Use rescue mode when you can, and emergency mode when rescue mode itself fails.
 
 ```bash
 # The kernel line will look something like:
+
 linuxefi /vmlinuz-5.14.0-362.el9.x86_64 root=/dev/mapper/rhel-root ro crashkernel=256M ... systemd.unit=rescue.target
 ```
 

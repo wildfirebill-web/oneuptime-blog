@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Networking, Best Practices, Troubleshooting
 
-Description: Common subnetting mistakes include subnet overlap, incorrect host counts, misaligned subnet boundaries, and wrong gateway assignments — all of which cause network outages that are difficult to diagnose.
+Description: Common subnetting mistakes include subnet overlap, incorrect host counts, misaligned subnet boundaries, and wrong gateway assignments - all of which cause network outages that are difficult to...
 
 ## Mistake 1: Overlapping Subnets
 
@@ -24,6 +24,7 @@ def check_overlap(networks: list) -> list:
     return overlaps
 
 # WRONG: these overlap!
+
 bad_plan = ["10.0.0.0/22", "10.0.2.0/24"]
 print("Overlaps:", check_overlap(bad_plan))
 # 10.0.0.0/22 covers 10.0.0.0 to 10.0.3.255
@@ -81,7 +82,7 @@ print(f"Prefix: /{prefix}, Usable: {net.num_addresses - 2}")
 Subnets must start on their own block boundary:
 
 ```python
-# WRONG: 10.0.0.5/24 — the .5 host bit is set, creating a misalignment
+# WRONG: 10.0.0.5/24 - the .5 host bit is set, creating a misalignment
 try:
     bad = ipaddress.IPv4Network("10.0.0.5/24", strict=True)
 except ValueError as e:

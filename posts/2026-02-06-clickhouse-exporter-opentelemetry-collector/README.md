@@ -53,6 +53,7 @@ Start with a minimal configuration to establish connectivity:
 
 ```yaml
 # Basic ClickHouse exporter configuration
+
 exporters:
   clickhouse:
     # Database connection string

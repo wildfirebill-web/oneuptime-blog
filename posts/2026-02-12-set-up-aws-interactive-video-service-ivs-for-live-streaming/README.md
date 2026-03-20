@@ -37,6 +37,7 @@ A channel represents a single live stream. Each channel gets a unique stream key
 
 ```bash
 # Create a standard latency channel
+
 aws ivs create-channel \
   --name "my-live-channel" \
   --latency-mode LOW \

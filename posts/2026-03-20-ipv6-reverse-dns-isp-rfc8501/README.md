@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Reverse DNS, ISP, RFC 8501, ip6.arpa
+Tags: IPv6, Reverse DNS, ISP, RFC 8501, Ip6.arpa
 
 Description: A guide to implementing IPv6 reverse DNS at ISP scale per RFC 8501 guidelines, covering delegation management, customer zone provisioning, and scalability considerations.
 
@@ -40,6 +40,7 @@ RFC 8501 recommends automating customer delegations. When a customer is assigned
 ```bash
 #!/bin/bash
 # Script to add delegation for a new customer prefix
+
 # Usage: ./add-rDNS-delegation.sh 2001:db8:cafe::/48 ns1.customer.com ns2.customer.com
 
 PREFIX=$1

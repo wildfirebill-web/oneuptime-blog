@@ -22,6 +22,7 @@ The official Pandoc Docker images come in several variants:
 
 ```bash
 # Convert a Markdown file to HTML
+
 docker run --rm -v $(pwd):/data pandoc/core README.md -o README.html
 
 # Convert Markdown to PDF (requires the latex variant)

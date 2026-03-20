@@ -32,6 +32,7 @@ ClickHouse is an open-source column-oriented database management system designed
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl gnupg
 

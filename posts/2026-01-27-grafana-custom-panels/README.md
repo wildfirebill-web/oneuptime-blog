@@ -49,6 +49,7 @@ First, install the Grafana plugin development tools and scaffold a new panel plu
 
 ```bash
 # Install the Grafana create-plugin tool
+
 npm install -g @grafana/create-plugin
 
 # Create a new panel plugin

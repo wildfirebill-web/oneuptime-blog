@@ -32,6 +32,7 @@ The response focuses on quickly identifying whether the issue stems from a recen
 
 ```bash
 # Test from multiple pods across different nodes
+
 for NODE in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   POD=$(kubectl get pods -n kube-system -l k8s-app=calico-node \
     --field-selector spec.nodeName=$NODE -o jsonpath='{.items[0].metadata.name}')

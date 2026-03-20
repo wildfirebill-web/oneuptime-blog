@@ -32,6 +32,7 @@ resource "azurerm_resource_group" "main" {
 }
 
 # Reference an existing action group
+
 data "azurerm_monitor_action_group" "critical" {
   name                = "critical-alerts"
   resource_group_name = "rg-monitoring"

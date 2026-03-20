@@ -16,8 +16,9 @@ IPv6 dashboards need to account for:
 
 ## Panel 1: IPv6 vs IPv4 Traffic Split
 
-```
+```text
 # Splunk: traffic version split (timechart)
+
 index=firewall
 | eval ip_version=if(match(src_ip, ":"), "IPv6", "IPv4")
 | timechart span=1h count by ip_version
@@ -28,7 +29,7 @@ index=firewall
 
 ## Panel 2: IPv6 Address Type Distribution
 
-```
+```text
 # Splunk: classify source address types
 index=firewall src_ip="*:*"
 | eval addr_type=case(
@@ -50,7 +51,7 @@ index=firewall src_ip="*:*"
 
 ## Panel 3: Top IPv6 /64 Source Prefixes
 
-```
+```text
 # Splunk: aggregate by /64 (more meaningful than /128)
 index=firewall src_ip="*:*"
 | rex field=src_ip "^(?P<prefix64>(?:[0-9a-fA-F:]{0,4}:){4})"
@@ -77,7 +78,7 @@ index=firewall src_ip="*:*"
 
 ## Panel 4: NDP Protocol Health
 
-```
+```text
 # Splunk: NDP message type breakdown
 index=firewall protocol=icmpv6
 | eval ndp_type=case(
@@ -97,7 +98,7 @@ index=firewall protocol=icmpv6
 
 ## Panel 5: IPv6 Security Events
 
-```
+```text
 # Splunk: security events over time, categorized
 index=security OR index=ids
 | eval event_category=case(
@@ -119,7 +120,7 @@ index=security OR index=ids
 
 ## Panel 6: Denied IPv6 Connections by Country
 
-```
+```text
 # Splunk: geo-lookup for IPv6 sources
 index=firewall action=drop src_ip="*:*"
 | iplocation src_ip
@@ -204,4 +205,4 @@ panels:
 
 ## Conclusion
 
-Effective IPv6 security dashboards require IPv6-aware panel design. Use /64 prefix aggregation for top-source panels — individual /128 addresses are ephemeral due to privacy extensions. Always show the IPv4/IPv6 traffic split to track dual-stack adoption. Include NDP health panels (NS/NA/RA rates) alongside traditional connection metrics — NDP anomalies are IPv6-specific attack signals that have no IPv4 equivalent. In Grafana, define thresholds on NDP cache size (> 80% of gc_thresh3 = yellow, > 90% = red). In Kibana, use the `ip_prefix` aggregation at /64 for geographic and volume analysis.
+Effective IPv6 security dashboards require IPv6-aware panel design. Use /64 prefix aggregation for top-source panels - individual /128 addresses are ephemeral due to privacy extensions. Always show the IPv4/IPv6 traffic split to track dual-stack adoption. Include NDP health panels (NS/NA/RA rates) alongside traditional connection metrics - NDP anomalies are IPv6-specific attack signals that have no IPv4 equivalent. In Grafana, define thresholds on NDP cache size (> 80% of gc_thresh3 = yellow, > 90% = red). In Kibana, use the `ip_prefix` aggregation at /64 for geographic and volume analysis.

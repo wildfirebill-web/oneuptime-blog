@@ -24,6 +24,7 @@ Install Garden CLI:
 
 ```bash
 # macOS
+
 brew install garden-io/garden/garden-cli
 
 # Linux

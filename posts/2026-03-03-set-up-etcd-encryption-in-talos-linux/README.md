@@ -26,6 +26,7 @@ When you generate a Talos configuration, encryption is actually enabled by defau
 
 ```bash
 # Generate configuration - encryption is included automatically
+
 talosctl gen config my-cluster https://10.0.0.1:6443
 
 # The generated controlplane.yaml includes encryption settings

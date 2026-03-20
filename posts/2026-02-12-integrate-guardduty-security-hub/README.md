@@ -35,6 +35,7 @@ The integration is enabled by default when both services are active in the same 
 
 ```bash
 # Check which product integrations are enabled in Security Hub
+
 aws securityhub list-enabled-products-for-import \
   --query 'ProductSubscriptions[?contains(@, `guardduty`)]'
 ```

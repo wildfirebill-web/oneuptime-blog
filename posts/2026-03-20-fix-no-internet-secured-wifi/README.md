@@ -1,14 +1,14 @@
-# How to Fix "No Internet, Secured" WiFi Error on Windows
+# How to Fix 'No Internet, Secured' WiFi Error on Windows
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: WiFi, Windows, No Internet, Secured, Troubleshooting
 
-Description: Learn how to fix the "No Internet, Secured" WiFi status in Windows, which means you're connected to WiFi but cannot access the internet.
+Description: Learn how to fix the 'No Internet, Secured' WiFi status in Windows, which means you're connected to WiFi but cannot access the internet.
 
 ## What "No Internet, Secured" Means
 
-"Secured" means WPA2/WPA3 authentication succeeded — your password is correct.
+"Secured" means WPA2/WPA3 authentication succeeded - your password is correct.
 "No Internet" means one of:
 - DHCP failed (got 169.254.x.x APIPA address)
 - Got a valid IP but DNS is broken
@@ -48,6 +48,7 @@ shutdown /r /t 0
 
 ```powershell
 # Change DNS to Google
+
 Set-DnsClientServerAddress -InterfaceAlias "Wi-Fi" -ServerAddresses 8.8.8.8, 8.8.4.4
 ipconfig /flushdns
 

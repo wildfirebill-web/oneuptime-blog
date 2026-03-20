@@ -14,6 +14,7 @@ After attaching an Ubuntu Pro subscription, you need ways to verify the attachme
 
 ```bash
 # Show the current Pro status
+
 pro status
 
 # Equivalent command (both are the same tool)

@@ -23,6 +23,7 @@ The `ip` command shows per-interface byte and error counters, including tunnel i
 
 ```bash
 # Show statistics for a specific tunnel interface
+
 # -s flag adds statistics, -s -s adds even more detail
 ip -s -s link show sit1
 

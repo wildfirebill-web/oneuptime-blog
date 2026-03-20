@@ -20,6 +20,7 @@ This guide covers everything from basic usage to advanced scenarios, helping you
 
 ```bash
 # Using Homebrew
+
 brew install ghz
 
 # Verify installation

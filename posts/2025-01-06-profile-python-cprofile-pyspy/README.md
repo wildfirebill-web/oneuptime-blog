@@ -37,6 +37,7 @@ This example demonstrates how to use cProfile programmatically to profile specif
 
 ```python
 # profile_example.py
+
 import cProfile
 import pstats
 from io import StringIO

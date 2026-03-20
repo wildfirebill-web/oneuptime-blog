@@ -112,6 +112,7 @@ kubectl port-forward svc/rancher-monitoring-grafana 3000:80 -n cattle-monitoring
 
 ```yaml
 # Example: Send logs to Elasticsearch
+
 outputs:
   - name: elasticsearch
     type: elasticsearch

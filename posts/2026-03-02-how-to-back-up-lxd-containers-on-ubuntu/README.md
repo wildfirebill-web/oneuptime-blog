@@ -26,6 +26,7 @@ Snapshots are the fastest way to capture container state:
 
 ```bash
 # Create a snapshot of a running container
+
 lxc snapshot mycontainer snap-$(date +%Y%m%d-%H%M%S)
 
 # Create a snapshot with a descriptive name

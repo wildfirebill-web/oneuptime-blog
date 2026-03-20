@@ -39,6 +39,7 @@ Create directories for Plex configuration and organize your media:
 
 ```bash
 # Create the Plex config directory for database and metadata
+
 mkdir -p ~/plex/config
 
 # Create directories for your media (adjust to match your library)

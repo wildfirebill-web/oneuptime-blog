@@ -41,6 +41,7 @@ The `subelements` filter takes a list of dictionaries and the name of a list att
 
 ```yaml
 # Loop over users and their SSH keys using subelements
+
 - name: Add SSH keys for each user
   ansible.posix.authorized_key:
     user: "{{ item.0.name }}"

@@ -24,6 +24,7 @@ Setting up a VPP troubleshooting environment means: installing the VPP CLI tools
 
 ```bash
 # Access VPP CLI from a calico-vpp-node pod
+
 VPP_POD=$(kubectl get pod -n calico-vpp-dataplane -l app=calico-vpp-node \
   -o jsonpath='{.items[0].metadata.name}')
 

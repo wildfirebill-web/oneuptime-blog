@@ -32,6 +32,7 @@ Cilium CLI commands support multiple output formats that are suitable for differ
 
 ```bash
 # Default human-readable output
+
 cilium status
 
 # JSON output for programmatic parsing

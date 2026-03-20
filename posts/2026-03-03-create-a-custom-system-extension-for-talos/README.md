@@ -25,6 +25,7 @@ Every extension needs a manifest that describes it:
 
 ```yaml
 # manifest.yaml
+
 version: v1alpha1
 metadata:
   name: my-custom-tool

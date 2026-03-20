@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, Lifecycle, precondition, postcondition, HCL, Infrastructure as Code
+Tags: OpenTofu, Data Source, Lifecycle, Preconditions, Postconditions, HCL, Infrastructure as Code
 
 Description: Learn how to use lifecycle customizations with data sources in OpenTofu, including preconditions and postconditions to validate queried infrastructure.
 
@@ -144,17 +144,17 @@ data "aws_db_instance" "main" {
 
 Data sources do NOT support:
 
-- `create_before_destroy` — data sources are read-only, they have no creation lifecycle
-- `prevent_destroy` — same reason
-- `ignore_changes` — not applicable to data sources
+- `create_before_destroy` - data sources are read-only, they have no creation lifecycle
+- `prevent_destroy` - same reason
+- `ignore_changes` - not applicable to data sources
 
 Data sources DO support:
 
-- `precondition` — validate before the query
-- `postcondition` — validate the query result
+- `precondition` - validate before the query
+- `postcondition` - validate the query result
 
 ---
 
 ## Summary
 
-Use `precondition` blocks on data sources to validate input variables before querying, and `postcondition` blocks to validate that the discovered infrastructure meets your requirements. This surfaces misconfigurations early — at plan time — before any changes are applied. Use `self` inside `postcondition` to reference the data source's attributes.
+Use `precondition` blocks on data sources to validate input variables before querying, and `postcondition` blocks to validate that the discovered infrastructure meets your requirements. This surfaces misconfigurations early - at plan time - before any changes are applied. Use `self` inside `postcondition` to reference the data source's attributes.

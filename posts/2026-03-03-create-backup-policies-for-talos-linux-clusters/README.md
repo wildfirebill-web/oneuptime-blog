@@ -29,6 +29,7 @@ Organize your workloads into tiers based on their criticality:
 
 ```yaml
 # backup-policy.yaml
+
 # This is a reference document, not a Kubernetes resource
 apiVersion: v1
 kind: ConfigMap

@@ -30,6 +30,7 @@ Conditions go in their own section and use condition functions to evaluate to tr
 
 ```yaml
 # Define conditions based on parameter values
+
 Parameters:
   Environment:
     Type: String

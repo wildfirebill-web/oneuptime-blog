@@ -34,6 +34,7 @@ Here is the step-by-step process of a VIP election:
 
 ```bash
 # Observe the election result by checking which node has the VIP
+
 for node in <cp1> <cp2> <cp3>; do
   echo -n "$node: "
   talosctl -n $node get addresses 2>/dev/null | grep "<vip>" || echo "standby"

@@ -29,6 +29,7 @@ Let's start with the basic SES domain identity and verification:
 
 ```hcl
 # Create the SES domain identity
+
 resource "aws_ses_domain_identity" "main" {
   domain = var.domain_name
 }

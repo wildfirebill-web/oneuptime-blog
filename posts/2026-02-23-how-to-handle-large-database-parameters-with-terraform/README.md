@@ -20,6 +20,7 @@ Parameters fall into two categories: dynamic parameters that can be changed with
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

@@ -14,7 +14,7 @@ Writing test configurations from scratch for every module is repetitive. OpenTof
 
 A setup module creates prerequisites that your main module needs:
 
-```
+```text
 tests/
 ├── setup/              # Helper module that creates test prerequisites
 │   ├── main.tf         # Creates VPC, subnets, etc.
@@ -26,6 +26,7 @@ tests/
 
 ```hcl
 # tests/setup/main.tf
+
 resource "aws_vpc" "test" {
   cidr_block = var.vpc_cidr
   tags = { Name = "test-vpc-${var.test_suffix}" }
@@ -89,7 +90,7 @@ A shell script to scaffold a new test file for a module:
 
 ```bash
 #!/bin/bash
-# generate-tests.sh — generate test scaffolding for a module
+# generate-tests.sh - generate test scaffolding for a module
 
 MODULE_NAME=$1
 TESTS_DIR="tests"
@@ -206,7 +207,7 @@ tofu plan -generate-config-out=generated.tf
 
 ## Complete Test Scaffolding Example
 
-```
+```text
 modules/ec2-instance/
 ├── main.tf
 ├── variables.tf

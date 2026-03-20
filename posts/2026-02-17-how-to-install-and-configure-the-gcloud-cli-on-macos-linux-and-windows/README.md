@@ -20,6 +20,7 @@ This is the recommended approach for most macOS users:
 
 ```bash
 # Download and run the installer
+
 curl https://sdk.cloud.google.com | bash
 ```
 

@@ -27,6 +27,7 @@ Install CAPI providers using Flux HelmReleases for GitOps-managed lifecycle:
 
 ```yaml
 # capi-namespace.yaml - Create namespaces for CAPI providers
+
 apiVersion: v1
 kind: Namespace
 metadata:

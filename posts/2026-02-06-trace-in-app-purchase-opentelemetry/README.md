@@ -123,6 +123,7 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 tracer = trace.get_tracer("purchase-service")
 
 # Flask instrumentation automatically extracts trace context from headers
+
 FlaskInstrumentor().instrument_app(app)
 
 @app.route("/api/purchases/validate", methods=["POST"])

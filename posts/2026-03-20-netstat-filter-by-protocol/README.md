@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netstat, Linux, TCP, UDP, Networking, Diagnostics
+Tags: netstat, Linux, TCP, UDP, Networking, Diagnostics
 
 Description: Filter netstat output to show only TCP or UDP connections, combine flags to create targeted views of network socket activity on Linux.
 
@@ -12,6 +12,7 @@ Netstat without filtering produces noisy output mixing TCP, UDP, and Unix socket
 
 ```bash
 # Show only TCP connections
+
 netstat -t
 
 # TCP + numeric (no DNS lookups)
@@ -101,16 +102,16 @@ netstat -tn | grep ':22 '
 netstat -tan
 
 # States you'll see:
-# LISTEN       — Waiting for incoming connections
-# ESTABLISHED  — Active connection
-# TIME_WAIT    — Connection closed, waiting for timeout
-# CLOSE_WAIT   — Remote closed, waiting for local close
-# SYN_SENT     — Sent SYN, waiting for SYN-ACK
-# SYN_RECV     — Received SYN, sent SYN-ACK
-# FIN_WAIT1    — Sent FIN, waiting for ACK
-# FIN_WAIT2    — Received ACK of FIN
-# CLOSING      — Both sides closing simultaneously
-# CLOSED       — No connection
+# LISTEN       - Waiting for incoming connections
+# ESTABLISHED  - Active connection
+# TIME_WAIT    - Connection closed, waiting for timeout
+# CLOSE_WAIT   - Remote closed, waiting for local close
+# SYN_SENT     - Sent SYN, waiting for SYN-ACK
+# SYN_RECV     - Received SYN, sent SYN-ACK
+# FIN_WAIT1    - Sent FIN, waiting for ACK
+# FIN_WAIT2    - Received ACK of FIN
+# CLOSING      - Both sides closing simultaneously
+# CLOSED       - No connection
 ```
 
 ## Practical Monitoring Commands
@@ -127,4 +128,4 @@ netstat -tn | grep TIME_WAIT | wc -l
 # If > 5000: consider tcp_tw_reuse or increasing ephemeral port range
 ```
 
-Filtering netstat by protocol focuses your attention on relevant connections — combine `-t` or `-u` with `-n`, `-l`, and `-p` for the most useful views.
+Filtering netstat by protocol focuses your attention on relevant connections - combine `-t` or `-u` with `-n`, `-l`, and `-p` for the most useful views.

@@ -48,6 +48,7 @@ Before building an operator, you define a Custom Resource Definition (CRD) that 
 
 ```yaml
 # crd.yaml
+
 # Defines a new "Database" resource type in Kubernetes
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition

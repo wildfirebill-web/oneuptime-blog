@@ -20,6 +20,7 @@ iptables uses the `nat` table for NAT rules:
 
 ```bash
 # Enable IP forwarding
+
 echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
 sysctl -p
 

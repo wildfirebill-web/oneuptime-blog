@@ -175,7 +175,7 @@ spec:
 
 This provides good balance between speed and safety.
 
-## Resource-Constrained Cluster
+Resource-Constrained Cluster
 
 When cluster capacity is limited:
 
@@ -281,6 +281,7 @@ Track update progress:
 
 ```bash
 # Watch rollout status
+
 kubectl rollout status deployment/my-app
 
 # Detailed rollout history

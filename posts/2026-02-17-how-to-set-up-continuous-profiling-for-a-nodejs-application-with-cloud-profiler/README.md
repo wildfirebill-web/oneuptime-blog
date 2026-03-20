@@ -25,6 +25,7 @@ The profiler collects a 10-second profile approximately once per minute. During 
 
 ```bash
 # Install the Cloud Profiler package
+
 npm install @google-cloud/profiler
 ```
 

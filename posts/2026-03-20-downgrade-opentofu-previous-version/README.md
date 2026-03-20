@@ -18,6 +18,7 @@ Check the OpenTofu changelog to understand what changed between versions:
 
 ```bash
 # Check your current version
+
 tofu version
 
 # View available versions (if using tofuenv)
@@ -72,7 +73,7 @@ tofu version
 If you installed OpenTofu via a package manager, you may be able to install an older version.
 
 ```bash
-# Ubuntu/Debian — install a specific version via apt
+# Ubuntu/Debian - install a specific version via apt
 sudo apt list --installed opentofu
 sudo apt install opentofu=1.7.3
 
@@ -107,7 +108,7 @@ If you've already run `tofu apply` with the newer version, the state file may ha
 cat terraform.tfstate | python3 -c "import sys,json; d=json.load(sys.stdin); print('State version:', d.get('version'))"
 
 # OpenTofu state format versions:
-# version 4 — compatible with v1.6+
+# version 4 - compatible with v1.6+
 # If state was modified by a newer version, you may see errors
 
 # Back up state before downgrading
@@ -136,4 +137,4 @@ tofu providers
 
 ## Summary
 
-Downgrading OpenTofu is straightforward with tofuenv — `tofuenv install <version>` followed by `tofuenv use <version>`. For teams without tofuenv, manual binary download and replacement works reliably. Always back up your state file before downgrading and run `tofu plan` after the downgrade to verify state compatibility.
+Downgrading OpenTofu is straightforward with tofuenv - `tofuenv install <version>` followed by `tofuenv use <version>`. For teams without tofuenv, manual binary download and replacement works reliably. Always back up your state file before downgrading and run `tofu plan` after the downgrade to verify state compatibility.

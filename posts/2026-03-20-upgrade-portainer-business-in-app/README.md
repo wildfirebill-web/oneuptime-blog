@@ -1,4 +1,4 @@
-# How to Upgrade Portainer Business Edition with In-App Updates
+# How to Upgrade Portainer Business Edition with In-App Updates - Upgrade App
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,6 +47,7 @@ If the in-app upgrade is unavailable or you prefer CLI:
 
 ```bash
 # Step 1: Back up data
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

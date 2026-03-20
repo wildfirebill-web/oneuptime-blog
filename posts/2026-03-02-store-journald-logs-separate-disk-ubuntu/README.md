@@ -22,6 +22,7 @@ Assume a second disk appears as `/dev/sdb`. First, create a partition and filesy
 
 ```bash
 # Check that the disk is visible
+
 lsblk
 
 # Create a partition table and partition

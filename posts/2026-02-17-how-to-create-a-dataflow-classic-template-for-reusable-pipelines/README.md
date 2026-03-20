@@ -24,6 +24,7 @@ The key to a useful template is making the pipeline configurable through runtime
 
 ```python
 # src/pipeline.py
+
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions

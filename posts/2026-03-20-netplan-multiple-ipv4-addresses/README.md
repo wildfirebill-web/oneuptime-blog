@@ -8,7 +8,7 @@ Description: Configure multiple IPv4 addresses on a single network interface usi
 
 ## Introduction
 
-Netplan is the default network configuration utility for Ubuntu 18.04 and later. It uses YAML descriptors to configure network interfaces, supporting multiple IP addresses on a single interface — useful for hosting multiple services or migrating addresses.
+Netplan is the default network configuration utility for Ubuntu 18.04 and later. It uses YAML descriptors to configure network interfaces, supporting multiple IP addresses on a single interface - useful for hosting multiple services or migrating addresses.
 
 ## Prerequisites
 
@@ -24,6 +24,7 @@ The following example assigns two IPv4 addresses to `eth0` along with a default 
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -53,7 +54,7 @@ sudo netplan try
 sudo netplan apply
 ```
 
-`netplan try` applies the configuration temporarily and reverts if you don't confirm within 120 seconds — a safety net to avoid locking yourself out.
+`netplan try` applies the configuration temporarily and reverts if you don't confirm within 120 seconds - a safety net to avoid locking yourself out.
 
 ## Verifying the Addresses
 

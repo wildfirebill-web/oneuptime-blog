@@ -44,6 +44,7 @@ Kyverno has built-in support for Cosign image verification, making it the simple
 
 ```yaml
 # security/cosign-policies/kyverno/verify-images.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

@@ -8,11 +8,11 @@ Description: Configure virtual switches in VMware, Hyper-V, and Open vSwitch to 
 
 ## Introduction
 
-Virtual switches must handle IPv6-specific traffic types — NDP (Neighbor Discovery Protocol), Router Advertisements (ICMPv6 type 134), MLD (Multicast Listener Discovery), and PMTUD (Path MTU Discovery) — to enable functional IPv6 connectivity for virtual machines. Many virtual switch defaults block or mishandle these essential IPv6 mechanisms.
+Virtual switches must handle IPv6-specific traffic types - NDP (Neighbor Discovery Protocol), Router Advertisements (ICMPv6 type 134), MLD (Multicast Listener Discovery), and PMTUD (Path MTU Discovery) - to enable functional IPv6 connectivity for virtual machines. Many virtual switch defaults block or mishandle these essential IPv6 mechanisms.
 
 ## IPv6 Traffic Types Virtual Switches Must Handle
 
-```
+```text
 IPv6 traffic through virtual switches:
 ┌─────────────────────────────────────────────────────┐
 │ Essential IPv6 multicast traffic:                    │
@@ -34,6 +34,7 @@ IPv6 traffic through virtual switches:
 
 ```bash
 # Check if bridge netfilter is blocking IPv6 NDP
+
 sysctl net.bridge.bridge-nf-call-ip6tables
 # If this is 1, ip6tables rules apply to bridged frames
 
@@ -78,20 +79,20 @@ ovs-ofctl add-flow ovs-br0 "priority=100,ipv6,actions=normal"
 
 ## VMware vSwitch: IPv6 Configuration
 
-```
-# VMware Standard vSwitch — IPv6 passes through transparently
+```text
+# VMware Standard vSwitch - IPv6 passes through transparently
 # No special configuration needed for basic IPv6 bridging
 
 # However, some features can interfere with IPv6:
 
-# 1. Promiscuous Mode — not needed for IPv6, but may be needed for
+# 1. Promiscuous Mode - not needed for IPv6, but may be needed for
 #    some configurations (e.g., network monitoring VMs)
 # vSphere Client → vSwitch → Edit → Security → Promiscuous Mode
 
-# 2. Forged Transmits — needed if VMs use MACs different from vNIC MAC
+# 2. Forged Transmits - needed if VMs use MACs different from vNIC MAC
 #    e.g., when running network namespaces or nested virtualization
 
-# 3. MAC Address Changes — may affect NDP in some setups
+# 3. MAC Address Changes - may affect NDP in some setups
 
 # Check port group settings:
 # vSphere Client → vSwitch → Port Group → Edit Settings → Security
@@ -117,11 +118,11 @@ Get-VMNetworkAdapter -VMName "MyVM" | Select-Object MacAddressSpoofing
 # Enable MAC spoofing if VMs run nested workloads with IPv6
 Set-VMNetworkAdapter -VMName "MyVM" -MacAddressSpoofing On
 
-# DHCP Guard — blocks DHCPv6 if enabled on non-DHCP servers
+# DHCP Guard - blocks DHCPv6 if enabled on non-DHCP servers
 # Disable if a VM is running a DHCPv6 server
 Set-VMNetworkAdapter -VMName "DHCPv6Server" -DhcpGuard Off
 
-# Router Guard — blocks Router Advertisements from VMs
+# Router Guard - blocks Router Advertisements from VMs
 # Enable to prevent rogue RA attacks, disable for legitimate VM routers
 Set-VMNetworkAdapter -VMName "MyRouter" -RouterGuard Off
 ```
@@ -148,4 +149,4 @@ ovs-appctl ofproto/trace ovs-br0 \
 
 ## Conclusion
 
-Virtual switches must forward ICMPv6 NDP messages (types 133-136), Packet Too Big (type 2), and MLD messages for IPv6 to function correctly. Linux bridges block these if `bridge-nf-call-ip6tables=1` and ip6tables has DROP defaults. Open vSwitch requires explicit OpenFlow rules for ICMPv6 types in custom table configurations. Hyper-V's Router Guard blocks Router Advertisements from VMs — disable it when a VM is legitimately running an IPv6 router. VMware vSwitches are transparent to IPv6 by default, but MAC Address Changes and Forged Transmit policies may need adjustment for nested virtualization scenarios. Always test NDP and PMTUD functionality after configuring virtual switches for IPv6.
+Virtual switches must forward ICMPv6 NDP messages (types 133-136), Packet Too Big (type 2), and MLD messages for IPv6 to function correctly. Linux bridges block these if `bridge-nf-call-ip6tables=1` and ip6tables has DROP defaults. Open vSwitch requires explicit OpenFlow rules for ICMPv6 types in custom table configurations. Hyper-V's Router Guard blocks Router Advertisements from VMs - disable it when a VM is legitimately running an IPv6 router. VMware vSwitches are transparent to IPv6 by default, but MAC Address Changes and Forged Transmit policies may need adjustment for nested virtualization scenarios. Always test NDP and PMTUD functionality after configuring virtual switches for IPv6.

@@ -28,6 +28,7 @@ Consider this Dockerfile:
 FROM alpine:3.19
 
 # This uses /bin/sh (ash), not bash
+
 # If curl fails but wc succeeds, the RUN instruction reports success
 RUN curl -fsSL https://example.com/data.txt | wc -l
 ```

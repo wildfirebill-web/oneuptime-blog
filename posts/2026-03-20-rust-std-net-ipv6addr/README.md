@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, std::net, Networking, Systems Programming
+Tags: Rust, IPv6, Std::net, Networking, Systems Programming
 
 Description: Use Rust's std::net::Ipv6Addr type for IPv6 address operations including parsing, classification, manipulation, and network programming.
 
@@ -103,7 +103,7 @@ fn main() {
 
 ## Checking Address Ranges
 
-`std::net::Ipv6Addr` doesn't include CIDR membership checks natively — use the `ipnetwork` or `ipnet` crate for that. However, you can check address properties directly:
+`std::net::Ipv6Addr` doesn't include CIDR membership checks natively - use the `ipnetwork` or `ipnet` crate for that. However, you can check address properties directly:
 
 ```rust
 use std::net::Ipv6Addr;
@@ -176,7 +176,7 @@ fn main() {
 }
 ```
 
-`u128` conversion is the idiomatic way to do arithmetic on IPv6 addresses in Rust — `Ipv6Addr` implements `From<u128>` and `From<[u8;16]>`.
+`u128` conversion is the idiomatic way to do arithmetic on IPv6 addresses in Rust - `Ipv6Addr` implements `From<u128>` and `From<[u8;16]>`.
 
 ## Conclusion
 

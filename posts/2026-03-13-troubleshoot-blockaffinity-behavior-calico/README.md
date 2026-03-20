@@ -29,6 +29,7 @@ Get a comprehensive view of block affinity assignments across the cluster.
 
 ```bash
 # List all BlockAffinity resources
+
 calicoctl get blockaffinity -o wide
 
 # Show detailed block information including allocations

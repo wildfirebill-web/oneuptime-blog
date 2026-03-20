@@ -14,6 +14,7 @@ When you need to check the contents of an Ansible Vault encrypted file, your fir
 
 ```bash
 # View the contents of an encrypted file
+
 ansible-vault view group_vars/production/vault.yml
 ```
 

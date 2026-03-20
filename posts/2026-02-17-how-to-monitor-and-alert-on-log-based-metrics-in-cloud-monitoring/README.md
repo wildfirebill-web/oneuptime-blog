@@ -30,6 +30,7 @@ This gcloud command creates a counter metric that increments each time a log ent
 
 ```bash
 # Create a counter metric for HTTP 500 errors
+
 gcloud logging metrics create http-500-errors \
   --description="Count of HTTP 500 responses across all services" \
   --log-filter='httpRequest.status=500'

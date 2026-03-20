@@ -16,6 +16,7 @@ Install the required collection and Python library:
 
 ```bash
 # Install the community.general collection
+
 ansible-galaxy collection install community.general
 
 # Install the dnspython library

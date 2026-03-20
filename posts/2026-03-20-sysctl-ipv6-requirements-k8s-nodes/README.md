@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, sysctl, Linux, Node Configuration, Networking
+Tags: Kubernetes, IPv6, Sysctl, Linux, Node Configuration, Networking
 
 Description: A comprehensive reference for all sysctl kernel parameters required to run IPv6 workloads on Kubernetes nodes.
 
@@ -25,6 +25,7 @@ The table below lists all relevant parameters along with their recommended value
 
 ```bash
 # Create the Kubernetes IPv6 sysctl configuration file
+
 cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-ipv6.conf
 # IPv6 packet forwarding (required for pod routing)
 net.ipv6.conf.all.forwarding = 1
@@ -107,6 +108,6 @@ sysctl --system
 
 ## Notes on accept_ra
 
-When `net.ipv6.conf.all.forwarding` is set to `1`, the kernel treats the node as a router. In router mode, the kernel ignores Router Advertisement messages by default (`accept_ra` implicitly becomes `0`). It is safest to explicitly set `accept_ra = 0` to avoid any ambiguity, especially on cloud instances where RAs are used for default gateway configuration — ensure your default IPv6 route is set via static config or DHCP6 instead.
+When `net.ipv6.conf.all.forwarding` is set to `1`, the kernel treats the node as a router. In router mode, the kernel ignores Router Advertisement messages by default (`accept_ra` implicitly becomes `0`). It is safest to explicitly set `accept_ra = 0` to avoid any ambiguity, especially on cloud instances where RAs are used for default gateway configuration - ensure your default IPv6 route is set via static config or DHCP6 instead.
 
 Applying these sysctl settings consistently across all cluster nodes is a prerequisite for stable IPv6 Kubernetes networking.

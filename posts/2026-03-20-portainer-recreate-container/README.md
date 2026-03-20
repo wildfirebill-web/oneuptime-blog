@@ -8,7 +8,7 @@ Description: Learn how to recreate a Docker container in Portainer to apply conf
 
 ## Introduction
 
-When you need to change a container's configuration — environment variables, port mappings, volume mounts, or image version — Docker requires creating a new container. Portainer's **Duplicate/Edit** and **Recreate** workflows make this straightforward. This guide explains how to safely recreate containers with updated settings.
+When you need to change a container's configuration - environment variables, port mappings, volume mounts, or image version - Docker requires creating a new container. Portainer's **Duplicate/Edit** and **Recreate** workflows make this straightforward. This guide explains how to safely recreate containers with updated settings.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ The only things you can change without recreation:
 
 The form opens pre-filled with current settings. Change whatever needs updating:
 
-```
+```text
 Original image:  myorg/myapp:v2.0.0
 Updated image:   myorg/myapp:v2.1.0
 
@@ -90,6 +90,7 @@ For production containers, avoid downtime with a blue-green approach:
 ```bash
 #!/bin/bash
 # blue-green-deploy.sh
+
 # Deploys new version with zero downtime using Portainer API
 
 PORTAINER_URL="${PORTAINER_URL}"
@@ -128,7 +129,7 @@ For containers managed as Portainer stacks, updating is simpler:
 5. Click **Update the stack**.
 
 ```yaml
-# Updated stack — change the image version
+# Updated stack - change the image version
 services:
   web:
     image: myorg/webapp:v2.1.0  # Changed from v2.0.0
@@ -150,16 +151,16 @@ services:
   app:
     image: myorg/app:v2.1.0
     volumes:
-      # Named volume — data persists through recreation
+      # Named volume - data persists through recreation
       - app_data:/app/data
-      # Bind mount — always points to host path
+      # Bind mount - always points to host path
       - /etc/app/config:/app/config:ro
 
 volumes:
   app_data:  # Data here survives container removal/recreation
 ```
 
-This means you can safely recreate the container — your data in named volumes is untouched.
+This means you can safely recreate the container - your data in named volumes is untouched.
 
 ## Step 6: Verify After Recreation
 
@@ -181,10 +182,10 @@ curl http://localhost:8080/health
 
 ## Best Practices
 
-- **Test recreations in staging first** — validate the new settings work before production.
-- **Keep volume names the same** when recreating — data persists automatically.
-- **Use Portainer stacks** for multi-container applications — stack updates handle recreation automatically.
-- **Document configuration changes** — add comments in compose files.
+- **Test recreations in staging first** - validate the new settings work before production.
+- **Keep volume names the same** when recreating - data persists automatically.
+- **Use Portainer stacks** for multi-container applications - stack updates handle recreation automatically.
+- **Document configuration changes** - add comments in compose files.
 - **Automate recreations** via Portainer webhooks for CI/CD pipelines.
 
 ## Conclusion

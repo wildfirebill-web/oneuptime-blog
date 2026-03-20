@@ -14,6 +14,7 @@ Managing users manually in the Rancher UI does not scale for organizations with 
 
 ```bash
 # Generate an API key in Rancher UI:
+
 # User Avatar > Account & API Keys > Create API Key
 
 # Store credentials securely

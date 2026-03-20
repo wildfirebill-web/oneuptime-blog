@@ -49,6 +49,7 @@ Each category has three permission types:
 
 ```bash
 # Check file permissions and ownership
+
 ls -la /path/to/file
 
 # Check your current user and groups

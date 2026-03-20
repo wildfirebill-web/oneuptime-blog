@@ -39,6 +39,7 @@ The key parameter is `--max-shares`, which specifies how many VMs can attach the
 
 ```bash
 # Create a Premium SSD shared disk that can be attached to 2 VMs
+
 # The max-shares parameter determines how many VMs can mount it at once
 az disk create \
   --name cluster-shared-disk \

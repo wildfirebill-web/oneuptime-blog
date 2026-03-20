@@ -113,6 +113,7 @@ volumes:
 
 ```nginx
 # gateway/nginx.conf
+
 server {
     listen 80;
 
@@ -128,4 +129,4 @@ server {
 
 ## Monitoring
 
-Use OneUptime to monitor `http://<host>:8080/api/users/health` and `http://<host>:8080/api/products/health` through the gateway. This verifies the entire request path — gateway, service, and database.
+Use OneUptime to monitor `http://<host>:8080/api/users/health` and `http://<host>:8080/api/products/health` through the gateway. This verifies the entire request path - gateway, service, and database.

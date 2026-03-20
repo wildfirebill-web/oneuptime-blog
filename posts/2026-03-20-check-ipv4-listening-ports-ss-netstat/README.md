@@ -14,6 +14,7 @@ Knowing which services are listening on which ports is essential for security au
 
 ```bash
 # Show all IPv4 TCP listening ports
+
 ss -4 -t -l -n
 
 # Show all IPv4 UDP listening ports
@@ -102,4 +103,4 @@ ss -4 -t -l -n | grep -q ":443" && echo "Port 443 is OPEN" || echo "Port 443 is 
 
 ## Conclusion
 
-`ss -4tlnp` is the single most useful command for auditing listening ports — it shows protocol, address, port, and the owning process in one view. Use `grep` to filter for specific ports, and run with `sudo` to see process names for all services.
+`ss -4tlnp` is the single most useful command for auditing listening ports - it shows protocol, address, port, and the owning process in one view. Use `grep` to filter for specific ports, and run with `sudo` to see process names for all services.

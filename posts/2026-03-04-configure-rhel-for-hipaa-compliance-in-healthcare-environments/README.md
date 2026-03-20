@@ -14,6 +14,7 @@ HIPAA (Health Insurance Portability and Accountability Act) requires technical s
 
 ```bash
 # Install OpenSCAP tools and the security guide
+
 sudo dnf install -y openscap-scanner scap-security-guide
 
 # List available profiles

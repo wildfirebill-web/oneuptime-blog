@@ -26,6 +26,7 @@ Check the current setting before making changes:
 
 ```bash
 # Show current inet_protocols value
+
 postconf inet_protocols
 
 # Show all Postfix configuration related to protocols

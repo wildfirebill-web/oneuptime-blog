@@ -24,6 +24,7 @@ flowchart LR
 
 ```ini
 # inventory.ini - Hosts organized by rollout phase
+
 [canary]
 web-01 ansible_host=10.0.1.1
 web-02 ansible_host=10.0.1.2

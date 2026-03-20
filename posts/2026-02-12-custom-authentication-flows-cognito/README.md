@@ -269,6 +269,7 @@ Run these commands to configure all three Lambda triggers:
 
 ```bash
 # Update the user pool with all three custom auth triggers
+
 aws cognito-idp update-user-pool \
     --user-pool-id us-east-1_XXXXXXXXX \
     --lambda-config \

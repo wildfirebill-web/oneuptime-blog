@@ -30,6 +30,7 @@ AWX runs best on Kubernetes using the AWX Operator.
 
 ```bash
 # Create a kustomization.yaml file with a specific release tag
+
 # Find the latest release at: https://github.com/ansible/awx-operator/releases
 cat << 'EOF' > kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1

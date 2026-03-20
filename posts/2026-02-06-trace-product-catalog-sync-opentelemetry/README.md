@@ -212,6 +212,7 @@ One of the most important metrics is how stale your storefront data is relative 
 
 ```python
 # Observable gauge that reports sync lag
+
 def get_sync_lag(options):
     """Measure the lag between ERP and storefront for a sample of products."""
     sample = product_store.get_random_sample(100)

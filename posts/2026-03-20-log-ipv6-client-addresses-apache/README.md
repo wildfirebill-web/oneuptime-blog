@@ -12,6 +12,7 @@ Apache automatically logs IPv6 client addresses with the default combined log fo
 
 ```apache
 # Default combined log format
+
 LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
 
 # %h = client IP address (IPv4 or IPv6)
@@ -20,7 +21,7 @@ LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combine
 
 ## Sample IPv6 Access Log Entries
 
-```
+```text
 # IPv6 access log entries look like:
 2001:db8::10 - - [20/Mar/2026:10:00:00 +0000] "GET / HTTP/1.1" 200 1234 "-" "Mozilla/5.0"
 ::1 - - [20/Mar/2026:10:00:01 +0000] "GET /health HTTP/1.1" 200 12 "-" "curl/7.88.1"

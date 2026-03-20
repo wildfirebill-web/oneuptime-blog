@@ -59,6 +59,7 @@ Static NAT works in both directions:
 
 ```bash
 # Enable IP forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # eth0 = inside (private), eth1 = outside (public)
@@ -105,7 +106,7 @@ curl http://203.0.113.10
 ## Key Takeaways
 
 - Static NAT creates a permanent one-to-one IP mapping.
-- Traffic flows in both directions — inbound and outbound.
+- Traffic flows in both directions - inbound and outbound.
 - On Cisco: `ip nat inside source static private_ip public_ip`
 - On Linux: Combine DNAT (PREROUTING) and SNAT (POSTROUTING) for bidirectional static NAT.
 

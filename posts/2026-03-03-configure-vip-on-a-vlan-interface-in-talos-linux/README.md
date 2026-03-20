@@ -38,6 +38,7 @@ Here is the machine configuration for a control plane node with VIP on a VLAN:
 
 ```yaml
 # Control plane node 1 - VIP on VLAN 100
+
 machine:
   network:
     interfaces:

@@ -44,6 +44,7 @@ The simplest way to use Next Hop is through the Azure CLI. You need the source V
 
 ```bash
 # Run a Next Hop diagnostic to find where traffic from VM-A to 10.2.0.5 goes
+
 az network watcher show-next-hop \
   --resource-group rg-networking \
   --vm vm-web-01 \

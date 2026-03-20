@@ -48,6 +48,7 @@ On the first manager node, initialize the swarm. The `--advertise-addr` flag tel
 
 ```bash
 # On manager1: Initialize the swarm cluster
+
 docker swarm init --advertise-addr 10.0.1.10
 ```
 

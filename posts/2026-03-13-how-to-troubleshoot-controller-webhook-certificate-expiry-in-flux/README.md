@@ -127,6 +127,7 @@ Generate a new self-signed certificate:
 
 ```bash
 # Generate a new CA and server certificate
+
 openssl req -x509 -newkey rsa:4096 -keyout tls.key -out tls.crt -days 365 -nodes -subj "/CN=webhook-server" -addext "subjectAltName=DNS:source-controller.flux-system.svc,DNS:source-controller.flux-system.svc.cluster.local"
 ```
 

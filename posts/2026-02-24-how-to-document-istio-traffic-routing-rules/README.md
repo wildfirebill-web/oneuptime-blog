@@ -89,6 +89,7 @@ Route matching in Istio follows a specific order: the first matching rule wins. 
 
 ```yaml
 # Route evaluation order for checkout service:
+
 #
 # 1. Header match: x-canary: true -> canary subset (for testing)
 # 2. Path match: /api/v2/* -> v2 deployment (new API version)

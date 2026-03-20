@@ -18,6 +18,7 @@ Let's start with a basic SNS topic:
 
 ```hcl
 # Standard SNS topic
+
 resource "aws_sns_topic" "order_events" {
   name = "order-events"
 

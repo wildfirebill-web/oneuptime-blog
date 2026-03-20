@@ -51,6 +51,7 @@ The only difference in creation is the `type` parameter:
 
 ```bash
 # Create an Express Workflow state machine
+
 aws stepfunctions create-state-machine \
   --name process-iot-events \
   --definition file://workflow-definition.json \

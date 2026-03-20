@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elemental, iPXE, Network Boot, Edge, Kubernetes
+Tags: Elemental, IPXE, Network Boot, Edge, Kubernetes
 
 Description: Configure iPXE network boot for Elemental nodes to enable zero-touch provisioning without physical media.
 
@@ -21,6 +21,7 @@ iPXE network boot enables you to provision Elemental nodes without creating phys
 
 ```bash
 # Install required services on your boot server
+
 zypper install dhcp-server tftpd
 
 # Or on Ubuntu/Debian

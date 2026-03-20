@@ -23,6 +23,7 @@ Prometheus has a built-in snapshot API that creates a consistent point-in-time c
 ```bash
 #!/bin/bash
 # backup_prometheus.sh
+
 # Creates a TSDB snapshot and uploads it to S3
 
 NAMESPACE="monitoring"

@@ -29,6 +29,7 @@ The event buffer determines how many flows Hubble keeps in memory per agent:
 
 ```yaml
 # hubble-performance.yaml
+
 hubble:
   enabled: true
 
@@ -138,7 +139,7 @@ kubectl -n kube-system exec ds/cilium -- \
   grep "^hubble_" | cut -d'{' -f1 | sort | uniq -c | sort -rn | head -10
 ```
 
-## Resource Allocation for Hubble Components
+Resource Allocation for Hubble Components
 
 Set appropriate resource limits to prevent Hubble from competing with workloads:
 

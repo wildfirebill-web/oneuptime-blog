@@ -28,6 +28,7 @@ Validating that health check failures are resolved after a Calico NetworkPolicy 
 
 ```bash
 # Check all pod conditions
+
 kubectl get pods -n <namespace> -o wide
 ```
 

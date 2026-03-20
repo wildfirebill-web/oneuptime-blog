@@ -53,6 +53,7 @@ spec:
 ```bash
 calicoctl apply -f migrated-policies/
 # Test traffic thoroughly
+
 ./run-traffic-tests.sh
 ```
 

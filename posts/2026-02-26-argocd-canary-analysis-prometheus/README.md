@@ -87,6 +87,7 @@ Analysis templates define the metrics to check and their success criteria:
 
 ```yaml
 # analysis/error-rate-analysis.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AnalysisTemplate
 metadata:

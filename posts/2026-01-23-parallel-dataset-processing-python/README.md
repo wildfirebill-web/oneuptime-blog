@@ -42,6 +42,7 @@ The `concurrent.futures` module provides a clean interface for parallel executio
 
 ```python
 # basic_parallel.py
+
 # Simple parallel processing with ProcessPoolExecutor
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import List, Any

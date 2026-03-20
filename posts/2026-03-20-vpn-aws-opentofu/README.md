@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, VPN, AWS, Site-to-Site VPN, Networking, Infrastructure as Code
 
-Description: Learn how to configure AWS Site-to-Site VPN using OpenTofu — setting up virtual private gateways, customer gateways, and VPN connections to connect on-premises networks to AWS.
+Description: Learn how to configure AWS Site-to-Site VPN using OpenTofu - setting up virtual private gateways, customer gateways, and VPN connections to connect on-premises networks to AWS.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ AWS Site-to-Site VPN connects on-premises networks to AWS VPCs over IPsec tunnel
 
 ```hcl
 # Customer Gateway represents the on-premises VPN device
+
 resource "aws_customer_gateway" "on_prem" {
   bgp_asn    = var.on_prem_bgp_asn  # Your on-premises ASN (e.g., 65000)
   ip_address = var.on_prem_public_ip  # Public IP of your VPN device
@@ -166,4 +167,4 @@ output "vpn_connection_configuration" {
 
 ## Conclusion
 
-AWS Site-to-Site VPN with OpenTofu requires three resources: `aws_customer_gateway` for the on-premises device, `aws_vpn_gateway` for the AWS endpoint, and `aws_vpn_connection` to link them. Use BGP routing (`static_routes_only = false`) for automatic route exchange. Each VPN connection creates two tunnels for redundancy — monitor both with CloudWatch alarms and send alerts when either goes down. The `customer_gateway_configuration` output contains the XML configuration for popular VPN devices.
+AWS Site-to-Site VPN with OpenTofu requires three resources: `aws_customer_gateway` for the on-premises device, `aws_vpn_gateway` for the AWS endpoint, and `aws_vpn_connection` to link them. Use BGP routing (`static_routes_only = false`) for automatic route exchange. Each VPN connection creates two tunnels for redundancy - monitor both with CloudWatch alarms and send alerts when either goes down. The `customer_gateway_configuration` output contains the XML configuration for popular VPN devices.

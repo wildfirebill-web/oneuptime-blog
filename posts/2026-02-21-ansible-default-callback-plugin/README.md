@@ -32,6 +32,7 @@ The default callback has options you can set in `ansible.cfg` or as environment 
 
 ```ini
 # ansible.cfg - Configure the default callback plugin
+
 [defaults]
 # Set the stdout callback (default is already 'default')
 stdout_callback = default

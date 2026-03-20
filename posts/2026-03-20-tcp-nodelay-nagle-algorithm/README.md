@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, TCP, TCP_NODELAY, Nagle, Latency, Socket, Networking
+Tags: IPv4, TCP, TCP_NODELAY, Nagle, Latency, Sockets, Networking
 
 Description: Learn how to disable Nagle's algorithm by setting TCP_NODELAY on IPv4 sockets in C, Python, Go, and Node.js to reduce latency for interactive and real-time network applications.
 
@@ -13,7 +13,7 @@ Nagle's algorithm (RFC 896) coalesces small TCP segments to reduce network overh
 1. The accumulated data reaches the MSS (Maximum Segment Size, typically 1460 bytes).
 2. An ACK arrives for previously sent unacknowledged data.
 
-This can add up to 40ms of artificial delay to small sends — unacceptable for interactive protocols (SSH, gaming, telemetry, RPC).
+This can add up to 40ms of artificial delay to small sends - unacceptable for interactive protocols (SSH, gaming, telemetry, RPC).
 
 ## Disabling Nagle's Algorithm in C
 
@@ -21,7 +21,7 @@ This can add up to 40ms of artificial delay to small sends — unacceptable for 
 #include <netinet/tcp.h>
 #include <sys/socket.h>
 
-/* Disable Nagle on an existing socket — do this before first send() */
+/* Disable Nagle on an existing socket - do this before first send() */
 int disable_nagle(int fd) {
     int opt = 1;
     return setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof(opt));
@@ -31,7 +31,7 @@ int disable_nagle(int fd) {
 int create_low_latency_socket(const char *ip, uint16_t port) {
     int fd = socket(AF_INET, SOCK_STREAM, 0);
 
-    /* Set TCP_NODELAY immediately — before connect() */
+    /* Set TCP_NODELAY immediately - before connect() */
     int opt = 1;
     setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof(opt));
 
@@ -59,6 +59,7 @@ void check_nodelay(int fd) {
 import socket
 
 # Create a TCP socket and disable Nagle's algorithm
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # TCP_NODELAY = 1 disables Nagle; set before connect() for best results
 sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
@@ -138,7 +139,7 @@ server.listen(9000);
 
 ```c
 /* TCP_CORK (Linux): accumulate data until uncorked or MSS reached.
-   Useful for sendfile() + headers — opposite of TCP_NODELAY. */
+   Useful for sendfile() + headers - opposite of TCP_NODELAY. */
 int cork = 1;
 setsockopt(fd, IPPROTO_TCP, TCP_CORK, &cork, sizeof(cork));
 /* ... send headers ... */
@@ -149,4 +150,4 @@ setsockopt(fd, IPPROTO_TCP, TCP_CORK, &cork, sizeof(cork)); /* flushes */
 
 ## Conclusion
 
-`TCP_NODELAY` disables Nagle's algorithm by flushing each `send()` call immediately rather than waiting to batch small writes into a full segment. Set it before the first `send()` — or even before `connect()` — to avoid any initial 40ms coalescing delay. Use it for interactive protocols (SSH, gaming, RPC, telemetry) where small messages must traverse the network immediately. For bulk transfer, leave Nagle enabled to reduce packet count and improve throughput. In Go, use `(*net.TCPConn).SetNoDelay(true)`; in Python, `setsockopt(IPPROTO_TCP, TCP_NODELAY, 1)`; in Node.js, `socket.setNoDelay(true)`.
+`TCP_NODELAY` disables Nagle's algorithm by flushing each `send()` call immediately rather than waiting to batch small writes into a full segment. Set it before the first `send()` - or even before `connect()` - to avoid any initial 40ms coalescing delay. Use it for interactive protocols (SSH, gaming, RPC, telemetry) where small messages must traverse the network immediately. For bulk transfer, leave Nagle enabled to reduce packet count and improve throughput. In Go, use `(*net.TCPConn).SetNoDelay(true)`; in Python, `setsockopt(IPPROTO_TCP, TCP_NODELAY, 1)`; in Node.js, `socket.setNoDelay(true)`.

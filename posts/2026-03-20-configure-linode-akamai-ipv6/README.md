@@ -14,6 +14,7 @@ Linode (now part of Akamai Cloud) provides IPv6 via SLAAC on all instances by de
 
 ```bash
 # IPv6 is enabled by default on all Linodes
+
 # Check assigned IPv6 address
 ip -6 addr show eth0
 # inet6 2400:8901::f03c:92ff:fe1a:1234/128 scope global dynamic
@@ -52,7 +53,7 @@ linode-cli linodes ipv6-ranges-list 12345678
 ## Terraform Configuration
 
 ```hcl
-# main.tf — Linode instance with IPv6
+# main.tf - Linode instance with IPv6
 resource "linode_instance" "web" {
   label       = "web-server"
   type        = "g6-standard-2"

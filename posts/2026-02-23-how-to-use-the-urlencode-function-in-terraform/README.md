@@ -14,6 +14,7 @@ The `urlencode` function in Terraform applies URL encoding (also called percent 
 
 ```hcl
 # urlencode(string)
+
 urlencode("hello world")
 # Result: "hello+world"
 

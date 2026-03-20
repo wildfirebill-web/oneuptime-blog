@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, enabled Meta-Argument, OpenTofu 1.11, Conditionals, Infrastructure as Code
+Tags: OpenTofu, Enabled Meta-Argument, OpenTofu 1.11, Conditional, Infrastructure as Code
 
 Description: Learn how to use the enabled meta-argument introduced in OpenTofu 1.11 as a cleaner alternative to count = 0 for conditionally disabling resources.
 
@@ -44,6 +44,7 @@ The `enabled` meta-argument avoids index-based resource addresses.
 
 ```hcl
 # Old pattern with count
+
 resource "aws_cloudwatch_log_group" "app_old" {
   count = var.enable_logging ? 1 : 0
   name  = "/myapp/application"
@@ -60,7 +61,7 @@ resource "aws_cloudwatch_log_group" "app" {
   name    = "/myapp/application"
 }
 
-# Reference is clean — no index needed
+# Reference is clean - no index needed
 output "log_group_arn" {
   value = aws_cloudwatch_log_group.app.arn
 }

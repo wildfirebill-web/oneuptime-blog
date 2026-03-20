@@ -39,6 +39,7 @@ Start with the most common type: CPU and memory limits for a namespace.
 
 ```yaml
 # playbook: create-compute-quota.yml
+
 # Sets CPU and memory limits for a namespace
 ---
 - name: Create Compute Resource Quota

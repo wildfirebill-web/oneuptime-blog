@@ -33,6 +33,7 @@ Check current VPC route usage before proceeding:
 
 ```bash
 # List existing routes in your GCE VPC
+
 gcloud compute routes list --filter="network=YOUR_VPC_NAME" --format="table(name,destRange,nextHopInstance)"
 
 # Count total routes to assess headroom

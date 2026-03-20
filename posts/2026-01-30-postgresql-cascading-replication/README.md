@@ -95,6 +95,7 @@ Edit `postgresql.conf` on the primary:
 
 ```ini
 # Enable WAL archiving and replication
+
 wal_level = replica
 max_wal_senders = 10
 max_replication_slots = 10

@@ -43,6 +43,7 @@ Fields that are safe to change at runtime with minimal risk:
 
 ```yaml
 # Safe to update
+
 spec:
   logSeverityScreen: Debug          # Changes logging only
   reportingInterval: 60s            # Adjusts reporting frequency

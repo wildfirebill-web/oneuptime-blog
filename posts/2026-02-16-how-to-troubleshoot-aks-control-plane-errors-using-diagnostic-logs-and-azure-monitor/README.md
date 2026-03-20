@@ -30,6 +30,7 @@ Configure AKS to send control plane logs to a Log Analytics workspace.
 
 ```bash
 # Create a Log Analytics workspace (if you do not have one)
+
 az monitor log-analytics workspace create \
   --resource-group myResourceGroup \
   --workspace-name myAKSLogs \

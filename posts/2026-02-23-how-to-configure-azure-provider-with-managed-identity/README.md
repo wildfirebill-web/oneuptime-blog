@@ -38,6 +38,7 @@ You cannot use managed identity from your laptop or from a CI runner outside of 
 
 ```bash
 # Enable system-assigned managed identity on an existing VM
+
 az vm identity assign \
   --resource-group my-terraform-rg \
   --name my-terraform-vm

@@ -30,6 +30,7 @@ A template is a dashboard definition with placeholder variables. The most common
 
 ```python
 # dashboard_templates/models.py
+
 # Data models for dashboard templates and instances.
 from dataclasses import dataclass, field
 from typing import List, Dict

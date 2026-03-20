@@ -257,6 +257,7 @@ When merged results do not match expectations, check the merge keys and paramete
 
 ```bash
 # Check ApplicationSet status
+
 kubectl get applicationset services-with-overrides -n argocd -o yaml
 
 # Look for merge-related messages in logs

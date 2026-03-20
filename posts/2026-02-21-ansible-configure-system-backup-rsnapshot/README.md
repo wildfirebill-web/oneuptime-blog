@@ -39,6 +39,7 @@ Each rotation level shifts snapshots to the next slot. Hard links between snapsh
 
 ```yaml
 # install-rsnapshot.yml - Install rsnapshot on all servers
+
 ---
 - name: Install rsnapshot
   hosts: backup_clients

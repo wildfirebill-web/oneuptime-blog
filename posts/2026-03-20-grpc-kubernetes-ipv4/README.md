@@ -8,9 +8,9 @@ Description: Learn how to configure gRPC services in Kubernetes with IPv4 Cluste
 
 ## The gRPC + ClusterIP Challenge
 
-Standard Kubernetes `ClusterIP` services provide TCP load balancing at Layer 4. gRPC uses long-lived HTTP/2 connections — a single connection pins all traffic to one pod.
+Standard Kubernetes `ClusterIP` services provide TCP load balancing at Layer 4. gRPC uses long-lived HTTP/2 connections - a single connection pins all traffic to one pod.
 
-```
+```text
 Client → ClusterIP (iptables DNAT) → Pod A (all traffic)
                                     → Pod B (no traffic)
                                     → Pod C (no traffic)
@@ -24,13 +24,14 @@ Client → ClusterIP (iptables DNAT) → Pod A (all traffic)
 
 ```yaml
 # headless-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:
   name: greeter
   namespace: default
 spec:
-  clusterIP: None         # headless — DNS returns all pod IPs
+  clusterIP: None         # headless - DNS returns all pod IPs
   selector:
     app: greeter
   ports:

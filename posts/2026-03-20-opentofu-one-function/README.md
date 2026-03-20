@@ -123,6 +123,7 @@ null
 
 ```hcl
 # Both handle the 0-or-1 pattern:
+
 output "using_one" {
   value = one(aws_instance.optional[*].id)
 }

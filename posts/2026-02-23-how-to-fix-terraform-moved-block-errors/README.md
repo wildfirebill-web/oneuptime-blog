@@ -44,6 +44,7 @@ The `from` address must match exactly what is in your state file. Common mistake
 
 ```hcl
 # Wrong - using the resource type without the name
+
 moved {
   from = aws_instance
   to   = aws_instance.web

@@ -26,6 +26,7 @@ For Cloud SQL PostgreSQL, enable logical replication through the database flags:
 
 ```bash
 # Enable logical decoding on Cloud SQL PostgreSQL
+
 gcloud sql instances patch my-pg-instance \
   --database-flags=cloudsql.logical_decoding=on \
   --project=my-project

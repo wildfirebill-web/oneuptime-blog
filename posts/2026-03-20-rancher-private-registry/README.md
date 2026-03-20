@@ -44,6 +44,7 @@ You can also create registry secrets directly with kubectl:
 
 ```bash
 # Create a registry secret for a private registry
+
 kubectl create secret docker-registry my-private-registry \
   --docker-server=registry.example.com \
   --docker-username=myuser \

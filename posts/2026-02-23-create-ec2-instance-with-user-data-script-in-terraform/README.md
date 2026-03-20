@@ -18,6 +18,7 @@ The simplest approach is an inline bash script passed directly to the `user_data
 
 ```hcl
 # Create an EC2 instance with a basic user data script
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2
   instance_type = "t3.micro"

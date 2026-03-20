@@ -14,6 +14,7 @@ S3-compatible object storage is the standard for cloud-native data storage. Port
 
 ```yaml
 # minio-stack.yml - Deploy as Portainer stack
+
 version: '3.8'
 
 services:

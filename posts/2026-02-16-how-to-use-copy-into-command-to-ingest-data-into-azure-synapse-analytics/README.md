@@ -318,6 +318,7 @@ Higher DWU means more compute for reading and writing:
 
 ```bash
 # Scale up before a large load
+
 az synapse sql pool update \
   --name myDataWarehouse \
   --workspace-name my-synapse-workspace \

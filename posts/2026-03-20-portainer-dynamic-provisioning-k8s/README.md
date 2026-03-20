@@ -20,7 +20,7 @@ Dynamic provisioning in Kubernetes allows PersistentVolumes (PVs) to be created 
 
 A StorageClass defines:
 - **Provisioner**: Which plugin creates the volume (e.g., `rancher.io/local-path`)
-- **Reclaim Policy**: `Delete` or `Retain` — what happens to the PV when the PVC is deleted
+- **Reclaim Policy**: `Delete` or `Retain` - what happens to the PV when the PVC is deleted
 - **Volume Binding Mode**: `Immediate` or `WaitForFirstConsumer`
 
 ## Step 1: Verify a Provisioner Is Installed
@@ -29,6 +29,7 @@ Before configuring dynamic provisioning, ensure a provisioner runs in your clust
 
 ```bash
 # Check for storage provisioner pods
+
 kubectl get pods -A | grep -E "(provisioner|local-path|nfs|longhorn)"
 
 # Check available StorageClasses

@@ -26,6 +26,7 @@ Never run Cowrie as root. It runs as a dedicated low-privilege user.
 
 ```bash
 # Create the cowrie user
+
 sudo adduser --disabled-password cowrie
 
 # Switch to the cowrie user for installation

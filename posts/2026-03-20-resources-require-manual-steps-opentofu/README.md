@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Manual Steps, null_resource, Provisioners, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Manual Steps, Null_resource, Provisioners, Infrastructure as Code, Best Practices
 
 Description: Learn how to handle resources that require out-of-band manual steps using null_resource, local-exec provisioners, and preconditions in OpenTofu.
 
 ## Introduction
 
-Some resources require human action to complete provisioning — DNS propagation confirmation, SSL certificate validation, third-party vendor activation, or regulatory approvals. OpenTofu can flag these requirements, pause workflows, and verify completion before proceeding.
+Some resources require human action to complete provisioning - DNS propagation confirmation, SSL certificate validation, third-party vendor activation, or regulatory approvals. OpenTofu can flag these requirements, pause workflows, and verify completion before proceeding.
 
 ## Documenting Manual Steps with Preconditions
 
@@ -124,6 +124,7 @@ For complex deployments with mandatory review between phases, use `-target` to a
 
 ```bash
 # Phase 1: Create the certificate
+
 tofu apply -target=aws_acm_certificate.main
 
 # Output the DNS record to add

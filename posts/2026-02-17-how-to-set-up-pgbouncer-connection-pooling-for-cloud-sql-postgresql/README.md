@@ -35,6 +35,7 @@ For this guide, I will cover the Compute Engine and GKE approaches since they ar
 
 ```bash
 # Create a small VM for PgBouncer
+
 # e2-small is usually sufficient for moderate workloads
 gcloud compute instances create pgbouncer-proxy \
   --zone us-central1-a \

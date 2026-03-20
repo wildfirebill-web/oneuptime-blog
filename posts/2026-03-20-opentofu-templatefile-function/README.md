@@ -16,14 +16,14 @@ The `templatefile` function in OpenTofu reads a template file and renders it wit
 templatefile(path, vars)
 ```
 
-- **path** — path to the template file
-- **vars** — a map of variables to pass into the template
+- **path** - path to the template file
+- **vars** - a map of variables to pass into the template
 - Returns the rendered string
 
 ## Basic Examples
 
 Template file (`hello.tpl`):
-```
+```text
 Hello, ${name}! You are in ${environment}.
 ```
 
@@ -47,6 +47,7 @@ Template (`userdata.sh.tpl`):
 set -e
 
 # Install and configure for ${environment}
+
 apt-get update -y
 apt-get install -y nginx
 
@@ -165,7 +166,7 @@ locals {
 
 ### Conditionals
 
-```
+```text
 %{ if condition ~}
 content when true
 %{ else ~}
@@ -175,7 +176,7 @@ content when false
 
 ### Loops
 
-```
+```text
 %{ for item in items ~}
 - ${item}
 %{ endfor ~}

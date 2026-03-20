@@ -26,6 +26,7 @@ fatal: [server1]: UNREACHABLE! => {
 
 ```bash
 # Can you ping the host?
+
 ping -c 3 10.0.1.10
 
 # Is the SSH port open?

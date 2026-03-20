@@ -14,6 +14,7 @@ An active-active multi-region architecture runs workloads in multiple AWS region
 
 ```hcl
 # main.tf - Multi-region provider setup
+
 provider "aws" {
   alias  = "primary"
   region = "us-east-1"

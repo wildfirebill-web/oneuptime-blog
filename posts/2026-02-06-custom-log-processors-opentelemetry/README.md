@@ -60,6 +60,7 @@ from opentelemetry._logs import set_logger_provider
 import logging
 
 # Create the OTLP log exporter
+
 exporter = OTLPLogExporter(endpoint="http://localhost:4317")
 
 # Create the logger provider with a batch processor

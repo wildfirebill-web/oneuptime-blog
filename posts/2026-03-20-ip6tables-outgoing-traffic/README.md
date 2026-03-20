@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Firewall, Linux, Egress
+Tags: IPv6, Ip6tables, Firewall, Linux, Egress
 
 Description: Learn how to control outgoing IPv6 traffic with ip6tables OUTPUT chain rules, including restricting egress to specific services, preventing data exfiltration, and blocking unauthorized tunneling.
 
@@ -14,6 +14,7 @@ While most servers use a permissive OUTPUT policy (`ACCEPT` all), restricting ou
 
 ```bash
 # Permissive (most servers): Allow all outbound, control inbound
+
 ip6tables -P OUTPUT ACCEPT
 
 # Restrictive (high-security): Explicitly control outbound
@@ -28,7 +29,7 @@ Most servers use ACCEPT, but consider DROP for:
 ## Basic Outgoing Rules
 
 ```bash
-# Loopback — always allow
+# Loopback - always allow
 ip6tables -A OUTPUT -o lo -j ACCEPT
 
 # Established connections (replies to incoming requests)
@@ -52,15 +53,15 @@ ip6tables -A OUTPUT -p icmpv6 --icmpv6-type router-solicitation -j ACCEPT
 ### Allow Only Necessary Outbound Connections
 
 ```bash
-# DNS — only to authorized resolvers
+# DNS - only to authorized resolvers
 ip6tables -A OUTPUT -p udp --dport 53 -d 2001:4860:4860::8888 -j ACCEPT  # Google DNS
 ip6tables -A OUTPUT -p udp --dport 53 -d 2001:4860:4860::8844 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 53 -d 2001:4860:4860::8888 -j ACCEPT
 
-# NTP — only to authorized time servers
+# NTP - only to authorized time servers
 ip6tables -A OUTPUT -p udp --dport 123 -d 2610:20:6f15:15::27 -j ACCEPT  # NIST NTP
 
-# Outbound HTTP/HTTPS — for package updates, API calls
+# Outbound HTTP/HTTPS - for package updates, API calls
 ip6tables -A OUTPUT -p tcp --dport 80 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 
@@ -87,7 +88,7 @@ ip6tables -A OUTPUT -j DROP
 
 ```bash
 # Block IPv6-in-IPv4 tunnels (protocol 41)
-# Note: This is iptables (IPv4) not ip6tables — tunneling is at IPv4 level
+# Note: This is iptables (IPv4) not ip6tables - tunneling is at IPv4 level
 iptables -A OUTPUT -p 41 -j DROP   # Use iptables for this, not ip6tables
 
 # Block Teredo outbound

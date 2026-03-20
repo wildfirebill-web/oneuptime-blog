@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Install Terraform
+
 sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 sudo dnf install -y terraform
 

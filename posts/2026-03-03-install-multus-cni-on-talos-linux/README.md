@@ -37,6 +37,7 @@ If you need additional CNI plugins like macvlan, bridge, or host-device, they sh
 
 ```yaml
 # talos-multus-patch.yaml
+
 machine:
   install:
     extensions:

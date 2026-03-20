@@ -20,6 +20,7 @@ The etcd section in a Talos machine configuration looks like this at a high leve
 
 ```yaml
 # Talos machine configuration - etcd section
+
 cluster:
   etcd:
     ca:

@@ -58,6 +58,7 @@ You can also sample the key distribution before the GroupByKey:
 
 ```python
 # Sample keys to understand the distribution
+
 key_counts = (
     input_data
     | 'ExtractKeys' >> beam.Map(lambda x: x[0])

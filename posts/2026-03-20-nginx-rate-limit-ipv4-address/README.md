@@ -123,6 +123,7 @@ Capture rate limit events for monitoring:
 
 ```nginx
 # Log format with rate limit info
+
 log_format rate_limit '$remote_addr - $request [$time_local] '
                       '$status $body_bytes_sent '
                       '"$http_user_agent" limit=$limit_req_status';
@@ -147,7 +148,7 @@ Verify rate limiting is working with `ab` or `wrk`:
 # Apache Bench: send 100 requests, 20 concurrent
 ab -n 100 -c 20 http://api.example.com/api/test
 
-# Check non-200 responses—429s indicate rate limiting is active
+# Check non-200 responses-429s indicate rate limiting is active
 # Look for: "Non-2xx responses: 75"
 ```
 

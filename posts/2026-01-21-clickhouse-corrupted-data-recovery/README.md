@@ -120,6 +120,7 @@ SETTINGS allow_drop_detached = 1;
 
 ```bash
 # Using clickhouse-backup
+
 clickhouse-backup list
 
 # Restore specific table

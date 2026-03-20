@@ -28,6 +28,7 @@ Make sure you have:
 
 ```bash
 # Quick health check
+
 kubectl get nodes
 kubectl cluster-info
 ```

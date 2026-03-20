@@ -16,6 +16,7 @@ The `md5` function computes the MD5 hash of a given string and returns the hash 
 
 ```hcl
 # Compute the MD5 hash of a simple string
+
 output "hash" {
   value = md5("hello world")
   # Result: "5eb63bbbe01eeed093cb22bb8f5acdc3"

@@ -129,6 +129,7 @@ class PriorityPublisher:
         self.connection.close()
 
 # Example usage
+
 publisher = PriorityPublisher()
 
 # Publish various tasks with different priorities

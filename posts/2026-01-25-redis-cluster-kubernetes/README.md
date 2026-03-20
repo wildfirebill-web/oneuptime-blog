@@ -45,6 +45,7 @@ Before starting, ensure you have:
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 
 # Check available storage classes

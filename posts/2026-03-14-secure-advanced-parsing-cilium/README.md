@@ -257,6 +257,7 @@ Test advanced parsing features thoroughly:
 
 ```bash
 # Run all parser tests including advanced parsing
+
 go test ./proxylib/myprotocol/... -v -race
 
 # Fuzz the advanced parsing functions

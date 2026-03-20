@@ -18,6 +18,7 @@ Not every container should be able to talk to every other container. A database 
 
 ```bash
 # Create two separate networks
+
 podman network create frontend-net
 podman network create database-net
 

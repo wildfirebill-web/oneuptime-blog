@@ -402,6 +402,7 @@ You can get the complete configuration reference from the Talos documentation or
 
 ```bash
 # Generate a default config to see all available fields
+
 talosctl gen config example-cluster https://10.0.1.100:6443
 
 # The generated controlplane.yaml shows the full structure with defaults

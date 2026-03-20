@@ -24,6 +24,7 @@ Druid natively consumes from Kafka, so the pipeline is straightforward.
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

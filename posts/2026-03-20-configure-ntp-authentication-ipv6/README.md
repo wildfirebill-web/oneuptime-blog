@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NTP, Authentication, IPv6, Security, chrony, NTS, Time Synchronization
+Tags: NTP, Authentication, IPv6, Security, Chrony, NTS, Time Synchronization
 
 Description: Secure your NTP communications over IPv6 by configuring symmetric key authentication and the modern Network Time Security (NTS) protocol to prevent time spoofing attacks.
 
@@ -13,8 +13,8 @@ Unauthenticated NTP is vulnerable to spoofing and man-in-the-middle attacks. Con
 ## Authentication Methods
 
 Two main methods exist:
-1. **Symmetric Key Authentication** — Pre-shared keys using MD5 or SHA (legacy, but widely supported).
-2. **Network Time Security (NTS)** — Modern TLS-based authentication (RFC 8915, recommended).
+1. **Symmetric Key Authentication** - Pre-shared keys using MD5 or SHA (legacy, but widely supported).
+2. **Network Time Security (NTS)** - Modern TLS-based authentication (RFC 8915, recommended).
 
 ## Method 1: Symmetric Key Authentication with chrony
 
@@ -22,6 +22,7 @@ Generate a shared key for NTP authentication:
 
 ```bash
 # Generate a random NTP key
+
 openssl rand -hex 20
 # Example output: a4f2e8c1d9b3f7a2e5c8d1f4
 
@@ -172,4 +173,4 @@ ntpq -p
 sudo journalctl -u chronyd | grep -i "nts\|auth\|key"
 ```
 
-Configuring NTP authentication — using either symmetric keys for legacy compatibility or NTS for modern security — ensures your IPv6 time synchronization infrastructure is protected against clock manipulation attacks.
+Configuring NTP authentication - using either symmetric keys for legacy compatibility or NTS for modern security - ensures your IPv6 time synchronization infrastructure is protected against clock manipulation attacks.

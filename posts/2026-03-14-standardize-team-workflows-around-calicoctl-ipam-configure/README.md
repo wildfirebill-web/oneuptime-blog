@@ -22,6 +22,7 @@ IPAM configuration affects every pod in your cluster. When team members change I
 
 ```yaml
 # ipam-standards.yaml
+
 environments:
   production:
     strictAffinity: true

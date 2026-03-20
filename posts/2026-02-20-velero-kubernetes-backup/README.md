@@ -38,6 +38,7 @@ Velero consists of:
 
 ```bash
 # Install the Velero CLI
+
 # macOS
 brew install velero
 

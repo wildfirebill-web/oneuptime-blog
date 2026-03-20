@@ -14,6 +14,7 @@ The simplest approach is using the Rancher CLI to proxy kubectl commands:
 
 ```bash
 # Log in to Rancher
+
 rancher login https://rancher.example.com --token ${RANCHER_TOKEN}
 
 # Switch to the target cluster

@@ -218,6 +218,7 @@ Check for automatic field mutations:
 
 ```bash
 # View the diff to see what is different
+
 argocd app diff my-app
 
 # Common culprits:

@@ -273,6 +273,7 @@ volumeBindingMode: WaitForFirstConsumer
 
 ```bash
 # Check PVCs and their status
+
 kubectl get pvc --all-namespaces
 
 # View EBS volume details

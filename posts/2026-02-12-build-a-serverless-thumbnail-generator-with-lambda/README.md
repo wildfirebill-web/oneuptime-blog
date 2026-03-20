@@ -31,6 +31,7 @@ Lambda does not include image processing libraries by default. You need Pillow (
 
 ```bash
 # Build the Pillow Lambda layer for Amazon Linux 2
+
 mkdir -p python/lib/python3.12/site-packages
 pip install Pillow -t python/lib/python3.12/site-packages/ --platform manylinux2014_x86_64 --only-binary=:all:
 zip -r pillow-layer.zip python/

@@ -25,6 +25,7 @@ The Vitess Operator (`vitess-operator`) manages Vitess clusters on Kubernetes us
 
 ```yaml
 # infrastructure/sources/planetscale-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

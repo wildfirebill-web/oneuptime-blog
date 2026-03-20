@@ -30,6 +30,7 @@ Determine whether you're running RKE1 or RKE2 and what CNI is currently in use.
 
 ```bash
 # Check RKE2 version and status
+
 rke2 --version
 
 # Check current CNI from the cluster config

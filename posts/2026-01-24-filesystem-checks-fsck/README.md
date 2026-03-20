@@ -65,6 +65,7 @@ flowchart LR
 
 ```bash
 # WRONG - Never do this!
+
 # Running fsck on a mounted filesystem can cause severe corruption
 sudo fsck /dev/sda1  # If sda1 is mounted, this is dangerous!
 

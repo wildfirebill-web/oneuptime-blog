@@ -116,6 +116,7 @@ Before implementing canary deployments with Seldon Core, ensure you have:
 
 ```bash
 # Install Seldon Core using Helm
+
 # The seldon-system namespace will contain all Seldon Core components
 helm install seldon-core seldon-core-operator \
     --repo https://storage.googleapis.com/seldon-charts \

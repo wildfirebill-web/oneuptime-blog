@@ -39,6 +39,7 @@ Before you can use Bedrock, you need to request access to the models you want. T
 import boto3
 
 # Check which models are available in your region
+
 bedrock = boto3.client('bedrock', region_name='us-east-1')
 
 # List all available foundation models

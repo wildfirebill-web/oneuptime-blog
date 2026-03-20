@@ -44,6 +44,7 @@ result = calculate()
 print(result)  # 30
 
 # x is not accessible outside the function
+
 # print(x)  # NameError: name 'x' is not defined
 ```
 

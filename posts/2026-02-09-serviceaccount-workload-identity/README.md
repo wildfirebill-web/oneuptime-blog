@@ -26,6 +26,7 @@ AWS IRSA uses the eks.amazonaws.com/role-arn annotation:
 
 ```yaml
 # aws-irsa-serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

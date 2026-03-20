@@ -22,6 +22,7 @@ TF_LOG=DEBUG tofu apply 2>&1 | grep -iE "auth|credential|token|403|401|access de
 
 ```bash
 # Check current credentials
+
 aws sts get-caller-identity
 
 # If expired, refresh them
@@ -117,7 +118,7 @@ OIDC tokens used for GitHub Actions are short-lived. If your apply takes longer 
   with:
     role-to-assume: arn:aws:iam::123456789012:role/github-actions-role
     aws-region: us-east-1
-    # Role session duration — increase if apply takes a long time
+    # Role session duration - increase if apply takes a long time
     role-duration-seconds: 3600
 ```
 

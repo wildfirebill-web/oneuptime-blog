@@ -34,6 +34,7 @@ Enable IP forwarding. Without this, the kernel drops forwarded packets:
 
 ```bash
 # Enable immediately
+
 sysctl -w net.ipv4.ip_forward=1
 
 # Make persistent

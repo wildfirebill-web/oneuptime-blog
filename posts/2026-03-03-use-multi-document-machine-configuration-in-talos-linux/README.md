@@ -26,6 +26,7 @@ Here is a simple example with two documents:
 
 ```yaml
 # Base machine configuration
+
 version: v1alpha1
 machine:
   type: controlplane

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Oracle Cloud, Network Security Groups, OCI, Infrastructure as Code
+Tags: OpenTofu, Oracle Cloud, Network Security Group, OCI, Infrastructure as Code
 
 Description: Learn how to create OCI Network Security Groups (NSGs) with OpenTofu to control traffic at the VNIC level with stateful rules.
 
@@ -27,6 +27,7 @@ resource "oci_core_network_security_group" "web" {
 
 ```hcl
 # Allow HTTP from anywhere
+
 resource "oci_core_network_security_group_security_rule" "http" {
   network_security_group_id = oci_core_network_security_group.web.id
   direction                 = "INGRESS"

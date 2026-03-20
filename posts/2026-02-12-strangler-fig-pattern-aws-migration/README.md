@@ -45,6 +45,7 @@ The routing layer is the key component. It sits in front of both the old and new
 
 ```bash
 # Create an API Gateway REST API
+
 aws apigateway create-rest-api \
   --name "migration-proxy" \
   --description "Strangler fig routing layer" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Testing, Connectivity, Network, unittest
+Tags: Python, IPv6, Testing, Connectivity, Networks, Unittest
 
 Description: Test IPv6 network connectivity in Python applications using unit tests, integration tests, and network reachability checks.
 
@@ -40,6 +40,7 @@ def check_ipv6_dns_resolution(hostname: str) -> Tuple[bool, list[str]]:
         return (False, [])
 
 # Run connectivity checks
+
 if check_ipv6_connectivity():
     print("IPv6 internet connectivity: OK")
 else:
@@ -47,7 +48,7 @@ else:
 
 success, addrs = check_ipv6_dns_resolution("ipv6.google.com")
 if success:
-    print(f"IPv6 DNS resolution: OK — {addrs}")
+    print(f"IPv6 DNS resolution: OK - {addrs}")
 ```
 
 ## Unit Testing IPv6 Address Handling

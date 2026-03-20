@@ -16,6 +16,7 @@ Run Ansible without SSH by using the SSM connection:
 
 ```yaml
 # inventories/aws/hosts.yml
+
 all:
   children:
     app_servers:

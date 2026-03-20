@@ -24,6 +24,7 @@ Testing Calico's enforcement of OpenStack Security Group policies is similar to 
 
 ```bash
 # Create a security group that allows only SSH
+
 openstack security group create calico-test-sg
 openstack security group rule create --protocol tcp --dst-port 22 calico-test-sg
 openstack security group rule create --protocol icmp calico-test-sg

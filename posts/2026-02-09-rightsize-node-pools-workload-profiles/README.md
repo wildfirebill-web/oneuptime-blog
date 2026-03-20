@@ -22,6 +22,7 @@ Query Prometheus for actual resource consumption patterns.
 
 ```yaml
 # CPU-to-memory ratio for each workload
+
 workload_cpu_memory_ratio = |
   avg by (namespace, deployment) (
     rate(container_cpu_usage_seconds_total[1h])

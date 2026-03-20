@@ -29,6 +29,7 @@ This guide covers the most common certificate-related failures in Calico etcd de
 
 ```bash
 # Check expiry of all Calico etcd certificates
+
 for cert in calico-felix calico-cni calico-admin etcd-server; do
   echo "=== ${cert}.crt ==="
   openssl x509 -in "${cert}.crt" -noout -enddate

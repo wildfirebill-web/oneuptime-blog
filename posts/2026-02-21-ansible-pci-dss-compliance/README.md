@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # roles/pci_dss/tasks/main.yml - PCI DSS compliance automation
+
 ---
 - name: "Req 1: Install and maintain a firewall"
   include_tasks: req1_firewall.yml

@@ -16,6 +16,7 @@ ArgoCD needs a reasonable amount of resources. Configure Minikube with enough CP
 
 ```bash
 # Start Minikube with sufficient resources
+
 minikube start \
   --cpus=4 \
   --memory=8192 \
@@ -263,7 +264,7 @@ spec:
       - CreateNamespace=true
 ```
 
-## Resource Management Tips
+Resource Management Tips
 
 ### Reduce ArgoCD Polling Frequency
 

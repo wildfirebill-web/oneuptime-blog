@@ -36,6 +36,7 @@ graph TD
 # Install Knative Serving with Kourier as the networking layer
 
 # Install the Knative Serving CRDs
+
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.13.0/serving-crds.yaml
 
 # Install the Knative Serving core components

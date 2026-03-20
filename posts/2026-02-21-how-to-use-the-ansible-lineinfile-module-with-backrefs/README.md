@@ -18,6 +18,7 @@ When `backrefs: true` is set, the `line` parameter can reference regex capture g
 
 ```yaml
 # Change only the value of MAX_CONNECTIONS while keeping the key name
+
 - name: Update max connections value
   ansible.builtin.lineinfile:
     path: /etc/myapp/app.conf

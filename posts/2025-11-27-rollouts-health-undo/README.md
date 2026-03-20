@@ -36,6 +36,7 @@ Bump the image tag or config and apply. Either command triggers a rolling update
 
 ```bash
 # Option 1: Update image tag directly via CLI
+
 kubectl set image deploy/api api=ghcr.io/example/api:2.1.0 -n prod
 # Option 2: Edit YAML and apply the manifest
 kubectl apply -f deployments/api.yaml

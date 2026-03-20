@@ -14,7 +14,7 @@ OSPF requires that two routers on the same link agree on the subnet mask before 
 
 OSPF Hello packets include the interface's network mask. When two routers have different masks on the same link, they consider themselves on different networks and refuse to form an adjacency.
 
-```
+```text
 Router A: 192.168.1.1/24  → Hello contains mask 255.255.255.0
 Router B: 192.168.1.2/30  → Hello contains mask 255.255.255.252
                           ↑ Mismatch! Adjacency fails.
@@ -32,11 +32,12 @@ Router B: 192.168.1.2/30  → Hello contains mask 255.255.255.252
 
 ```bash
 # Show current OSPF neighbors and their state
+
 vtysh -c "show ip ospf neighbor"
 
 # If no neighbor appears for a known link, check interface OSPF settings
 vtysh -c "show ip ospf interface eth0"
-# Look for: "Network Address 192.168.1.0/24" — compare with the remote router
+# Look for: "Network Address 192.168.1.0/24" - compare with the remote router
 
 # Enable OSPF debugging to see Hello packet details
 vtysh << 'EOF'
@@ -50,7 +51,7 @@ tail -f /var/log/frr/frr.log | grep -i "network address mismatch"
 
 ### Cisco IOS
 
-```
+```text
 debug ip ospf hello
 show ip ospf interface GigabitEthernet0/0
 ! Look for: Subnet Mask: 255.255.255.0
@@ -87,7 +88,7 @@ vtysh -c "show ip ospf neighbor"
 
 Point-to-point links can use `ip ospf network point-to-point` to skip the mask check:
 
-```
+```text
 interface eth1
   ip ospf network point-to-point
 ! OSPF will not check subnet masks on this interface

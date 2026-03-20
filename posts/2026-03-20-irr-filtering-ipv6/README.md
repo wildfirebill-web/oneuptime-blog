@@ -20,8 +20,9 @@ Internet Routing Registries (IRRs) like RIPE, ARIN, and RADB store routing polic
 
 Register route6 objects in your RIR's IRR database:
 
-```
+```text
 # RIPE NCC route6 object template
+
 route6:     2001:db8::/32
 descr:      My IPv6 prefix
 origin:     AS64496
@@ -64,7 +65,7 @@ bgpq4 -6 -F "ipv6 prefix-list AS65001-IN seq %n permit %p\n" AS65001
 
 ```bash
 #!/bin/bash
-# irr-update.sh — Regenerate and apply IRR filters
+# irr-update.sh - Regenerate and apply IRR filters
 
 PEERS=(
     "AS65001:AS-PEERONE"
@@ -94,7 +95,7 @@ sudo vtysh -c "clear bgp ipv6 unicast * soft in"
 
 ## Step 5: FRR Configuration with IRR Filters
 
-```
+```text
 # /etc/frr/frr.conf
 router bgp 64496
   bgp router-id 192.0.2.1
@@ -116,7 +117,7 @@ router bgp 64496
 IRR data changes when peers update their route6 objects. Refresh filters regularly:
 
 ```bash
-# Crontab entry — refresh IRR filters every 4 hours
+# Crontab entry - refresh IRR filters every 4 hours
 0 */4 * * * /usr/local/bin/irr-update.sh >> /var/log/irr-update.log 2>&1
 ```
 

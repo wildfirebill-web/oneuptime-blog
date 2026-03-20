@@ -14,6 +14,7 @@ Deploy the Collector as a DaemonSet so every node has a collector instance:
 
 ```yaml
 # otel-collector-observe-k8s.yaml
+
 receivers:
   otlp:
     protocols:

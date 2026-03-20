@@ -21,6 +21,7 @@ Common use cases:
 
 ```python
 # multi_processor_setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider, ReadableSpan
 from opentelemetry.sdk.trace.export import (

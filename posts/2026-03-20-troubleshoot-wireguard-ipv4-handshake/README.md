@@ -6,12 +6,13 @@ Tags: WireGuard, VPN, IPv4, Troubleshooting, Networking, Linux
 
 Description: Diagnose and fix common WireGuard IPv4 connectivity problems including failed handshakes, dropped tunnels, and routing issues.
 
-WireGuard is silent by design — it doesn't send error messages when connections fail. This makes debugging require a systematic approach, checking keys, firewall rules, routing, and logs.
+WireGuard is silent by design - it doesn't send error messages when connections fail. This makes debugging require a systematic approach, checking keys, firewall rules, routing, and logs.
 
 ## Step 1: Check Interface Status
 
 ```bash
 # Show WireGuard interface details including peer handshake status
+
 sudo wg show
 
 # Key fields to check:

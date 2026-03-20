@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with Server-Side Encryption in OpenTofu
+# How to Configure S3 Backend with Server-Side Encryption in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Server-side encryption (SSE) ensures that your OpenTofu state files are encrypte
 
 ## Option 1: SSE-S3 (S3-Managed Keys)
 
-The simplest option — AWS manages the encryption keys automatically:
+The simplest option - AWS manages the encryption keys automatically:
 
 ```hcl
 terraform {
@@ -58,6 +58,7 @@ When using SSE-KMS, the `encrypt = true` flag is required.
 
 ```hcl
 # Create the KMS key
+
 resource "aws_kms_key" "s3_state" {
   description             = "KMS key for S3 state bucket SSE"
   deletion_window_in_days = 30
@@ -122,7 +123,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "state" {
   }
 }
 
-# Enforce encryption — deny unencrypted PUTs
+# Enforce encryption - deny unencrypted PUTs
 resource "aws_s3_bucket_policy" "enforce_encryption" {
   bucket = aws_s3_bucket.terraform_state.id
 

@@ -27,6 +27,7 @@ Launchpad requires all uploads to be signed with a GPG key. Your public key must
 
 ```bash
 # Install GPG tools
+
 sudo apt install gnupg -y
 
 # Generate a new GPG key

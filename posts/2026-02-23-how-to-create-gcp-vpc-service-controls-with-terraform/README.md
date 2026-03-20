@@ -27,6 +27,7 @@ An access policy is usually created once per organization. Most organizations wi
 
 ```hcl
 # Create an access policy for the organization
+
 # Usually you only need one of these
 resource "google_access_context_manager_access_policy" "policy" {
   parent = "organizations/${var.org_id}"

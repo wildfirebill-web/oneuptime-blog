@@ -390,6 +390,7 @@ Prometheus query example that includes threshold lines:
 
 ```promql
 # Main metric
+
 avg(rate(http_requests_total{status="500"}[5m])) * 100
 
 # Warning threshold (as separate series)

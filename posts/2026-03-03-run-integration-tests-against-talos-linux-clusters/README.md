@@ -19,6 +19,7 @@ Before writing tests, establish a reliable way to create and manage test cluster
 ```bash
 #!/bin/bash
 # test-infrastructure.sh
+
 set -euo pipefail
 
 export CLUSTER_NAME="test-$(date +%s)"
@@ -294,7 +295,7 @@ fi
 echo "Rolling update completed with zero downtime"
 ```
 
-### Resource Limit Tests
+Resource Limit Tests
 
 Verify that pods respect their resource limits:
 

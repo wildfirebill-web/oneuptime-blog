@@ -12,12 +12,12 @@ MikroTik RouterOS manages NAT under **IP → Firewall → NAT**. The two main ch
 
 | Chain | Use |
 |-------|-----|
-| srcnat | Source NAT (outbound — masquerade, SNAT) |
-| dstnat | Destination NAT (inbound — port forwarding) |
+| srcnat | Source NAT (outbound - masquerade, SNAT) |
+| dstnat | Destination NAT (inbound - port forwarding) |
 
 ## Outbound NAT (Masquerade)
 
-This is the most common configuration — all LAN traffic masquerades through the WAN interface:
+This is the most common configuration - all LAN traffic masquerades through the WAN interface:
 
 ### Winbox GUI
 
@@ -68,6 +68,7 @@ Forward external port to internal server:
 
 ```routeros
 # DNAT: inbound to public IP → forward to private IP
+
 /ip firewall nat add \
     chain=dstnat \
     dst-address=203.0.113.10 \

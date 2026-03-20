@@ -59,6 +59,7 @@ resource "google_compute_resource_policy" "daily_snapshot" {
 }
 
 # Attach to a disk
+
 resource "google_compute_disk_resource_policy_attachment" "app_disk" {
   name = google_compute_resource_policy.daily_snapshot.name
   disk = google_compute_disk.app.name

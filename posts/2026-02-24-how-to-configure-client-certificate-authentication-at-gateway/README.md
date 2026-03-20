@@ -28,6 +28,7 @@ You need a CA to sign both the server and client certificates. For production, u
 
 ```bash
 # Generate CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Generate CA certificate

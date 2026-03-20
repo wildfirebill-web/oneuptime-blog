@@ -10,7 +10,7 @@ Description: Learn how to deploy a Redis Cluster with multiple nodes via Portain
 
 Redis Cluster distributes data across multiple nodes using hash slots. A minimum cluster requires 6 nodes: 3 primaries and 3 replicas.
 
-```
+```text
 Primary 1 (slots 0-5460)      ← Replica 1
 Primary 2 (slots 5461-10922)  ← Replica 2
 Primary 3 (slots 10923-16383) ← Replica 3
@@ -101,8 +101,9 @@ volumes:
 
 ## Redis Cluster Configuration File
 
-```
+```text
 # redis-cluster.conf
+
 port 7001
 cluster-enabled yes
 cluster-config-file nodes.conf

@@ -50,6 +50,7 @@ If you need to generate client certificates for testing or for your own CA, here
 
 ```bash
 # Generate a private key for the client
+
 openssl genrsa -out client.key 4096
 
 # Create a certificate signing request (CSR)

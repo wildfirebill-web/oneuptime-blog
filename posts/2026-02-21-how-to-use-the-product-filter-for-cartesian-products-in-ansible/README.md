@@ -14,6 +14,7 @@ The `product` filter generates the Cartesian product of two or more lists. That 
 
 ```yaml
 # playbook-basic-product.yml
+
 # Generates all possible OS + Python version combinations
 - name: Basic Cartesian product
   hosts: localhost

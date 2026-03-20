@@ -31,6 +31,7 @@ The `community.vmware.vmware_guest` module handles hardware changes. Some change
 
 ```yaml
 # modify-cpu.yml
+
 ---
 - name: Modify VM CPU configuration
   hosts: localhost

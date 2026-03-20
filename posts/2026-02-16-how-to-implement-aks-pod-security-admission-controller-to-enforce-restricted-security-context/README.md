@@ -32,6 +32,7 @@ The PSA controller is available in Kubernetes 1.25 and later, which means any re
 
 ```bash
 # Check the current Kubernetes version of your AKS cluster
+
 az aks show --resource-group myResourceGroup --name myAKSCluster --query kubernetesVersion -o tsv
 ```
 

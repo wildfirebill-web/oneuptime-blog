@@ -55,6 +55,7 @@ Creating an ISE is a long-running operation that takes several hours. Plan accor
 
 ```bash
 # Create a VNET with an ISE subnet
+
 az network vnet create \
   --name vnet-integration \
   --resource-group rg-integration \

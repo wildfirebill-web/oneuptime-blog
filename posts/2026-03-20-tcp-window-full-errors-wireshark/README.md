@@ -8,11 +8,11 @@ Description: Identify and diagnose TCP Window Full events in Wireshark that indi
 
 ## Introduction
 
-"TCP Window Full" appears in Wireshark when the sender has filled the receiver's advertised window and must stop sending until it receives an ACK with an updated (larger) window. This is a flow control mechanism — not an error — but frequent window-full events indicate a throughput bottleneck caused by either a slow receiver or undersized buffers.
+"TCP Window Full" appears in Wireshark when the sender has filled the receiver's advertised window and must stop sending until it receives an ACK with an updated (larger) window. This is a flow control mechanism - not an error - but frequent window-full events indicate a throughput bottleneck caused by either a slow receiver or undersized buffers.
 
 ## What TCP Window Full Means
 
-```
+```text
 Sender is limited:
 Sender can have at most [receiver's window size] unacknowledged bytes in flight.
 
@@ -29,8 +29,9 @@ If receiver buffer is small: window fills quickly → many pauses
 
 ## Finding Window Full Events in Wireshark
 
-```
+```text
 # Wireshark display filter for Window Full events
+
 tcp.analysis.window_full
 
 # Also look for Zero Window events (receiver window = 0)
@@ -92,7 +93,7 @@ cat /proc/net/sockstat | grep TCP
 
 ## Wireshark Timeline Analysis
 
-```
+```text
 In Wireshark's TCP stream graph (Statistics → TCP Stream Graphs):
 1. Open "Time-Sequence (Stevens)" graph
 2. Flat sections (no new sequence numbers advancing) = Window Full pauses
@@ -106,4 +107,4 @@ Timeline patterns:
 
 ## Conclusion
 
-TCP Window Full events are flow control — not errors — but they directly reduce throughput. A sender pausing because the window is full means data is arriving at the receiver faster than it can be consumed or buffered. The fix is either increasing receive buffer sizes (for buffer bottlenecks) or optimizing the receiving application (for processing bottlenecks). Wireshark's `tcp.analysis.window_full` filter makes it easy to quantify how often this is happening.
+TCP Window Full events are flow control - not errors - but they directly reduce throughput. A sender pausing because the window is full means data is arriving at the receiver faster than it can be consumed or buffered. The fix is either increasing receive buffer sizes (for buffer bottlenecks) or optimizing the receiving application (for processing bottlenecks). Wireshark's `tcp.analysis.window_full` filter makes it easy to quantify how often this is happening.

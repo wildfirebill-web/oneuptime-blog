@@ -68,6 +68,7 @@ Before starting any migration, verify your cluster is healthy:
 
 ```bash
 # Check cluster status and ensure all nodes are connected
+
 redis-cli -c -h 127.0.0.1 -p 7000 cluster info
 
 # Verify all slots are assigned and cluster state is ok

@@ -26,6 +26,7 @@ graph LR
 ```bash
 #!/bin/bash
 # /usr/local/bin/backup.sh
+
 # Daily backup script using rsync
 
 # Configuration

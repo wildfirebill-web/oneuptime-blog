@@ -150,6 +150,7 @@ Using `grpc-spring-boot-starter`:
 
 ```yaml
 # application.yml
+
 grpc:
   server:
     # Bind to all IPv6 interfaces

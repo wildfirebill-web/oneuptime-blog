@@ -39,6 +39,7 @@ The math usually works out in favor of higher tiers for large deployments. One S
 
 ```bash
 # Create an IoT Hub with the right tier for a large deployment
+
 RESOURCE_GROUP="rg-iot-production"
 IOT_HUB_NAME="iot-production-hub"
 

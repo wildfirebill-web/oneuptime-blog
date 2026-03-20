@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Firewall, IPv4, Security, Block, netsh, PowerShell
+Tags: Windows, Firewall, IPv4, Security, Block, Netsh, PowerShell
 
 Description: Block all inbound and outbound traffic to and from a specific IPv4 address in Windows Defender Firewall using netsh and PowerShell, and verify the block is effective.
 
@@ -63,6 +63,7 @@ netsh advfirewall firewall add rule ^
 
 ```powershell
 # Block inbound
+
 New-NetFirewallRule `
     -Name "Block 203.0.113.100 IN" `
     -DisplayName "Block Suspicious Host (Inbound)" `
@@ -87,7 +88,7 @@ New-NetFirewallRule `
 :: Confirm the rule exists
 netsh advfirewall firewall show rule name="Block Inbound 203.0.113.100"
 
-:: Test connectivity — should fail (timeout or unreachable)
+:: Test connectivity - should fail (timeout or unreachable)
 ping 203.0.113.100
 tracert 203.0.113.100
 ```

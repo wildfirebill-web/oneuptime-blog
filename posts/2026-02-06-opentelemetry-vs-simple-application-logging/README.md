@@ -101,6 +101,7 @@ You should stick with simple application logging when your situation matches the
 
 ```python
 # For a standalone web application, logs are often sufficient
+
 @app.route('/api/users/<user_id>')
 def get_user(user_id):
     logger.info(f"Fetching user {user_id}")

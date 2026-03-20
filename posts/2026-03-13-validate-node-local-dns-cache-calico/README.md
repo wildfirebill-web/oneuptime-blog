@@ -24,6 +24,7 @@ A misconfigured NodeLocal DNS cache can silently fall back to CoreDNS for all qu
 
 ```bash
 # All nodes should have a node-local-dns pod
+
 kubectl get pods -n kube-system -l k8s-app=node-local-dns -o wide
 
 # Check there is one pod per node

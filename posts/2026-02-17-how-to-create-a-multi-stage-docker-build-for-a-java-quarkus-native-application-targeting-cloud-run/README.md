@@ -20,6 +20,7 @@ If you do not already have a Quarkus project, create one with the CLI.
 
 ```bash
 # Create a new Quarkus project with REST support
+
 quarkus create app com.example:my-quarkus-app \
   --extension='resteasy-reactive,resteasy-reactive-jackson'
 

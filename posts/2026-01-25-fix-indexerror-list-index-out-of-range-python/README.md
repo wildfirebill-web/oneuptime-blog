@@ -14,6 +14,7 @@ The `IndexError: list index out of range` occurs when you try to access a list e
 
 ```python
 # Lists are zero-indexed
+
 fruits = ["apple", "banana", "cherry"]
 print(fruits[0])  # apple (first element)
 print(fruits[1])  # banana (second element)

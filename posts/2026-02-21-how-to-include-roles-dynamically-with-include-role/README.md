@@ -16,6 +16,7 @@ The `include_role` module is used as a regular task within a playbook or another
 
 ```yaml
 # site.yml
+
 # Include a role dynamically as a task
 ---
 - hosts: all

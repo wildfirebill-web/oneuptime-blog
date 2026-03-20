@@ -32,6 +32,7 @@ provider "google" {
 }
 
 # Beta provider for preview features
+
 provider "google-beta" {
   project = var.project_id
   region  = var.region

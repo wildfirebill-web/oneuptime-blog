@@ -72,6 +72,7 @@ You can also create commitments from the command line:
 
 ```bash
 # Purchase a 1-year commitment for 16 vCPUs and 64 GB RAM in us-central1
+
 gcloud compute commitments create my-prod-commitment \
   --region=us-central1 \
   --resources=vcpu=16,memory=64GB \

@@ -8,12 +8,13 @@ Description: Configure IPv6 Pod CIDR ranges in Kubernetes, understand how pod CI
 
 ## Introduction
 
-The pod CIDR in Kubernetes defines the IP address range from which pods receive their addresses. In dual-stack clusters, the pod CIDR includes both IPv4 and IPv6 ranges, typically specified as comma-separated values. Each node receives a slice of the cluster-wide pod CIDR — in dual-stack, each node gets one IPv4 and one IPv6 block. The CNI plugin uses these per-node CIDRs to assign addresses to pods.
+The pod CIDR in Kubernetes defines the IP address range from which pods receive their addresses. In dual-stack clusters, the pod CIDR includes both IPv4 and IPv6 ranges, typically specified as comma-separated values. Each node receives a slice of the cluster-wide pod CIDR - in dual-stack, each node gets one IPv4 and one IPv6 block. The CNI plugin uses these per-node CIDRs to assign addresses to pods.
 
 ## Configure Pod CIDR in kubeadm
 
 ```yaml
-# kubeadm-config.yaml — dual-stack pod CIDR
+# kubeadm-config.yaml - dual-stack pod CIDR
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: v1.29.0
@@ -134,4 +135,4 @@ kubectl cluster-info dump | grep podCIDR
 
 ## Conclusion
 
-Configure dual-stack pod CIDRs in Kubernetes by providing comma-separated IPv4 and IPv6 CIDRs in `podSubnet` or `--pod-network-cidr`. Each node receives a slice of the cluster pod CIDR — visible in `node.spec.podCIDRs`. The CNI plugin (Calico, Cilium, Flannel) must be configured with matching IPv4 and IPv6 IP pools. Pods in dual-stack clusters automatically receive both IPv4 and IPv6 addresses within their node's CIDR slices. Size your pod CIDRs at cluster creation — they cannot be changed without recreating the cluster.
+Configure dual-stack pod CIDRs in Kubernetes by providing comma-separated IPv4 and IPv6 CIDRs in `podSubnet` or `--pod-network-cidr`. Each node receives a slice of the cluster pod CIDR - visible in `node.spec.podCIDRs`. The CNI plugin (Calico, Cilium, Flannel) must be configured with matching IPv4 and IPv6 IP pools. Pods in dual-stack clusters automatically receive both IPv4 and IPv6 addresses within their node's CIDR slices. Size your pod CIDRs at cluster creation - they cannot be changed without recreating the cluster.

@@ -48,6 +48,7 @@ Verify your cluster access and version.
 
 ```bash
 # Check your Kubernetes version
+
 # This command shows the server version which must be 1.16 or higher
 kubectl version --short
 

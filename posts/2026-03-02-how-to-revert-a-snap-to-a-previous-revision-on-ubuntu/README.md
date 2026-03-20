@@ -16,6 +16,7 @@ Every time a snap is updated, snapd downloads the new version but keeps the prev
 
 ```bash
 # See all installed revisions of a snap
+
 snap list --all firefox
 
 # Example output:

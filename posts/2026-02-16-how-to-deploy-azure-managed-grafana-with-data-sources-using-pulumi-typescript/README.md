@@ -30,6 +30,7 @@ Start by creating a new Pulumi project or adding to an existing one.
 
 ```bash
 # Create a new Pulumi project with TypeScript
+
 pulumi new azure-typescript --name grafana-infra
 
 # Install additional packages for Grafana configuration

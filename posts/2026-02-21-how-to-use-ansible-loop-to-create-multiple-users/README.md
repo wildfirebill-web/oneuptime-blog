@@ -16,6 +16,7 @@ The simplest approach is looping over a list of usernames:
 
 ```yaml
 # Create basic user accounts from a simple list
+
 - name: Create user accounts
   ansible.builtin.user:
     name: "{{ item }}"

@@ -40,6 +40,7 @@ The most common cause is a mismatch between kubeadm's pod CIDR and Calico's IPPo
 
 ```bash
 # Get kubeadm pod CIDR
+
 kubectl get cm -n kube-system kubeadm-config -o yaml | grep podSubnet
 
 # Get Calico IPPool CIDR

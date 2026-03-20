@@ -30,6 +30,7 @@ If the directory does not exist, WORKDIR creates it automatically. You do not ne
 FROM alpine:3.19
 
 # This creates /app if it doesn't exist and sets it as the working directory
+
 WORKDIR /app
 
 # All subsequent instructions run relative to /app

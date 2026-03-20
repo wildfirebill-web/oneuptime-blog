@@ -38,6 +38,7 @@ For automated registration at scale, create cluster secrets in the ArgoCD namesp
 
 ```yaml
 # cluster-secret-site-a.yaml
+
 # Each edge cluster is registered as a secret in ArgoCD's namespace
 apiVersion: v1
 kind: Secret

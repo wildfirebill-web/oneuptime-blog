@@ -24,6 +24,7 @@ Or access it directly:
 
 ```bash
 # Port-forward Grafana locally
+
 kubectl port-forward svc/rancher-monitoring-grafana \
   -n cattle-monitoring-system 3000:80
 
@@ -146,7 +147,7 @@ When Harvester is imported into Rancher, the Rancher dashboard shows:
 
 ## Best Practices
 
-- Set up alerts for disk usage above 80% — Longhorn needs headroom for replica rebuilds.
+- Set up alerts for disk usage above 80% - Longhorn needs headroom for replica rebuilds.
 - Monitor VM density (VMs per node) to identify over-committed nodes.
 - Enable Harvester's built-in **support bundle** feature to collect diagnostics when issues arise.
 - Use Rancher's global alerting to route critical Harvester alerts to on-call via PagerDuty.

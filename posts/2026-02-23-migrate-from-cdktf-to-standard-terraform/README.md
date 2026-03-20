@@ -24,6 +24,7 @@ The first step is generating the Terraform JSON output from your CDKTF project. 
 
 ```bash
 # Navigate to your CDKTF project
+
 cd my-cdktf-project
 
 # Run synthesis to generate Terraform JSON

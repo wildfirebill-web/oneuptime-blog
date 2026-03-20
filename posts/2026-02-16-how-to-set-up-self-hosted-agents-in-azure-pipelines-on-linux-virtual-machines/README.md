@@ -37,6 +37,7 @@ The following commands download the agent, extract it, and run the configuration
 
 ```bash
 # Create a directory for the agent
+
 mkdir -p ~/azagent && cd ~/azagent
 
 # Download the latest agent package (check for current version)

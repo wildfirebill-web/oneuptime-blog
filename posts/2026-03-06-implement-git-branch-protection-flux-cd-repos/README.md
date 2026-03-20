@@ -42,6 +42,7 @@ Use the GitHub API or CLI to set up branch protection rules programmatically.
 
 ```yaml
 # .github/branch-protection.yaml
+
 # Document describing the branch protection configuration
 # Apply these settings via GitHub API or UI
 

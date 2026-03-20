@@ -22,6 +22,7 @@ The `latest` tag is the default when no tag is specified, but it causes several 
 
 ```bash
 # What version is this actually running?
+
 podman run -d --name api my-api:latest
 # Nobody knows without inspecting the image
 

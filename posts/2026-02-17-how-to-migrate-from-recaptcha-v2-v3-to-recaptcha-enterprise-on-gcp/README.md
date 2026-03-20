@@ -34,6 +34,7 @@ First, create new site keys in reCAPTCHA Enterprise. You can migrate your existi
 
 ```bash
 # Create a score-based key (replaces v3 or invisible v2)
+
 gcloud recaptcha keys create \
   --display-name="Production Score Key (migrated from v3)" \
   --web \

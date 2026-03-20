@@ -105,6 +105,7 @@ Here is the complete implementation with detailed explanations:
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2026, Your Name <your.email@example.com>
+
 # GNU General Public License v3.0+
 
 from __future__ import absolute_import, division, print_function

@@ -20,6 +20,7 @@ The `-w` or `--workdir` flag sets the working directory for the exec command:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Check the default working directory

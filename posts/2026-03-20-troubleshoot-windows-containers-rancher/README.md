@@ -1,4 +1,4 @@
-# How to Troubleshoot Windows Container Issues in Rancher
+# How to Troubleshoot Windows Container Issues in Rancher - Containers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Windows container troubleshooting requires Windows-specific diagnostic tools and
 
 The most common Windows container error:
 
-```
+```text
 Error: container failed to start with exit code 0x0000007b
 ```
 
@@ -22,6 +22,7 @@ This typically means the container image's Windows version doesn't match the nod
 
 ```powershell
 # Check the Windows node OS version
+
 kubectl get node win-worker-1 -o jsonpath='{.status.nodeInfo.osImage}'
 
 # Check the image's required OS version

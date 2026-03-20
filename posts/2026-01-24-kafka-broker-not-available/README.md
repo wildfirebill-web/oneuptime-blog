@@ -48,6 +48,7 @@ Different clients report this error differently:
 
 ```text
 # Java client
+
 org.apache.kafka.common.errors.TimeoutException:
   Topic metadata-topic not present in metadata after 60000 ms.
 

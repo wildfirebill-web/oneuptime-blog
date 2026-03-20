@@ -14,6 +14,7 @@ bindfs is a FUSE filesystem that mounts a directory at a new location while rema
 
 ```bash
 # Install bindfs from Ubuntu repositories
+
 sudo apt update
 sudo apt install bindfs -y
 

@@ -18,6 +18,7 @@ The simplest way to pass configuration to your App Engine app is through the `en
 
 ```yaml
 # app.yaml - Environment variables for application configuration
+
 runtime: python312
 
 env_variables:

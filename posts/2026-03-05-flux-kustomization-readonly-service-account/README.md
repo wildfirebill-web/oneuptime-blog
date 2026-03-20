@@ -23,6 +23,7 @@ Create a service account with only read permissions in the target namespace:
 
 ```yaml
 # readonly-service-account.yaml
+
 # Service account with read-only access for drift detection
 apiVersion: v1
 kind: ServiceAccount

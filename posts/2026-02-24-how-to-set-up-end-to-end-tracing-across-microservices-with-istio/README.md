@@ -33,6 +33,7 @@ We'll use Jaeger with the OpenTelemetry Collector as an intermediary:
 
 ```yaml
 # otel-collector.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

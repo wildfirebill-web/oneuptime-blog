@@ -27,6 +27,7 @@ After connecting to your minimal server via SSH:
 
 ```bash
 # Update the system
+
 sudo dnf update -y          # Fedora/CentOS
 # or
 sudo apt update && sudo apt upgrade -y  # Debian/Ubuntu

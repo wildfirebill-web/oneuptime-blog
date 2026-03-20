@@ -65,6 +65,7 @@ The base contains the common configuration shared across all environments.
 
 ```yaml
 # base/kustomization.yaml
+
 # This file tells Kustomize which resources to include
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

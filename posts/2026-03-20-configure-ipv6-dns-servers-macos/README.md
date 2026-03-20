@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, DNS, networksetup, Network Configuration
+Tags: IPv6, macOS, DNS, Networksetup, Network Configuration
 
 Description: Learn how to configure IPv6 DNS server addresses on macOS using networksetup, System Settings, and verify that DNS resolution works over IPv6.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure IPv6 DNS server addresses on macOS using net
 
 ```bash
 # Set DNS servers including IPv6 addresses
+
 # networksetup handles both IPv4 and IPv6 DNS in the same command
 networksetup -setdnsservers Wi-Fi \
     2001:4860:4860::8888 \
@@ -31,7 +32,7 @@ networksetup -setdnsservers Wi-Fi "empty"
 
 ## Configure DNS via System Settings
 
-```
+```sql
 Steps:
 1. System Settings → Network
 
@@ -52,7 +53,7 @@ Order matters: first server is primary
 
 ## Well-Known IPv6 DNS Servers
 
-```
+```text
 Google Public DNS:
   Primary:   2001:4860:4860::8888
   Secondary: 2001:4860:4860::8844

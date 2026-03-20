@@ -32,6 +32,7 @@ jsondecode("true")
 
 jsondecode("null")
 # Result: null (Terraform's null)
+
 ```
 
 ## Reading JSON Configuration Files

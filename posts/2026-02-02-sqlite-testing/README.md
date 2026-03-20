@@ -88,6 +88,7 @@ Python's built-in sqlite3 module provides the same in-memory capability. The con
 import sqlite3
 
 # Create an in-memory database connection
+
 # Every connection to :memory: is a fresh, isolated database
 conn = sqlite3.connect(':memory:')
 cursor = conn.cursor()

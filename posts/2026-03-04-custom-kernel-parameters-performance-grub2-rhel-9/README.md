@@ -18,6 +18,7 @@ On RHEL, you add these parameters through GRUB2 using the `grubby` command.
 
 ```bash
 # Add a parameter to all kernels
+
 sudo grubby --update-kernel=ALL --args="parameter=value"
 
 # Remove a parameter

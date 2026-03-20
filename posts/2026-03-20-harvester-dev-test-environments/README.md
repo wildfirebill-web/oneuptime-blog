@@ -1,4 +1,4 @@
-# How to Set Up Harvester for Dev/Test Environments
+# How to Set Up Harvester for Dev/Test Environments - Environments
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Harvester as an efficient development and te
 
 ## Introduction
 
-Harvester is an excellent platform for development and testing environments because it enables self-service VM and Kubernetes cluster provisioning, infrastructure-as-code workflows, and on-demand environment creation. Development teams can provision their own isolated environments, test against production-like infrastructure, and tear down resources when done — all without involving operations teams for every request.
+Harvester is an excellent platform for development and testing environments because it enables self-service VM and Kubernetes cluster provisioning, infrastructure-as-code workflows, and on-demand environment creation. Development teams can provision their own isolated environments, test against production-like infrastructure, and tear down resources when done - all without involving operations teams for every request.
 
 ## Dev/Test Architecture
 
@@ -30,6 +30,7 @@ Use Kubernetes namespaces to isolate teams and environments:
 
 ```bash
 # Create namespaces for different teams/environments
+
 kubectl create namespace dev-team-alpha
 kubectl create namespace dev-team-beta
 kubectl create namespace ci-test

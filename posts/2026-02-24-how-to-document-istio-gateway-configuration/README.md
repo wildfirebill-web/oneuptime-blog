@@ -224,6 +224,7 @@ echo "# Gateway Health Check"
 echo ""
 
 # Check the gateway deployment
+
 echo "## Gateway Pod Status"
 kubectl get pods -n istio-system -l istio=ingressgateway
 

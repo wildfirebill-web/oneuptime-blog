@@ -82,6 +82,7 @@ First, tell Flux where to find Istio charts:
 
 ```yaml
 # clusters/production/istio-system/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -40,6 +40,7 @@ Inside the content block, you access the current item through the iterator. By d
 
 ```hcl
 # For a dynamic block labeled "ingress", the iterator is "ingress"
+
 dynamic "ingress" {
   for_each = var.rules
   content {

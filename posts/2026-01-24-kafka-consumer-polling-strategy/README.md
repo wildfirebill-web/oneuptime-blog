@@ -558,6 +558,7 @@ class LowLatencyConsumer:
 
 
 # Example usage
+
 def main():
     bootstrap_servers = "localhost:9092"
 

@@ -37,6 +37,7 @@ Lists are named collections of items that you reference in macros and rules.
 
 ```yaml
 # A list of known shell binaries
+
 - list: shell_binaries
   items: [bash, csh, ksh, sh, tcsh, zsh, dash]
 ```

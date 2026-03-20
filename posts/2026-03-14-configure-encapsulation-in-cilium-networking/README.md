@@ -30,6 +30,7 @@ Apply the following Helm values to configure encapsulation in cilium networking:
 
 ```yaml
 # cilium-encapsulation-values.yaml
+
 # Encapsulation configuration for Cilium
 
 # VXLAN encapsulation (default)

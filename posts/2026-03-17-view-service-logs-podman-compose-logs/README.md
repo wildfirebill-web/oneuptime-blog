@@ -18,6 +18,7 @@ When running multiple services with podman-compose, viewing logs from all contai
 
 ```bash
 # Show logs from all services
+
 podman-compose logs
 
 # Output includes the service name as a prefix

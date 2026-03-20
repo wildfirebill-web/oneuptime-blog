@@ -18,6 +18,7 @@ This playbook installs the necessary SMB/CIFS client packages:
 
 ```yaml
 # install-smb-client.yml - Install CIFS/SMB client tools
+
 ---
 - name: Install SMB Client Tools
   hosts: all

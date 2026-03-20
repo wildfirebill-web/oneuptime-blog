@@ -22,6 +22,7 @@ Protect any Portainer-deployed service with HTTP basic authentication:
 
 ```bash
 # Generate password hash
+
 docker run --rm httpd:alpine htpasswd -nbB user1 secure-password
 # Output: user1:$2y$05$HASH...
 
@@ -123,7 +124,7 @@ labels:
 
 ## Step 7: Chaining Multiple Middlewares
 
-Apply multiple middleware to a single router — order matters:
+Apply multiple middleware to a single router - order matters:
 
 ```yaml
 services:
@@ -175,7 +176,7 @@ http:
 ```
 
 ```yaml
-# Container labels — reference the file-defined middleware
+# Container labels - reference the file-defined middleware
 labels:
   - "traefik.http.routers.myapp.middlewares=global-security@file,standard-ratelimit@file"
   # @file suffix tells Traefik to look in the file provider

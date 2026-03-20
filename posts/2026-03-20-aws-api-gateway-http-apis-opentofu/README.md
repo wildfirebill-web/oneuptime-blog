@@ -6,12 +6,13 @@ Tags: OpenTofu, AWS, API Gateway, HTTP API, Lambda, Infrastructure as Code
 
 Description: Learn how to create AWS API Gateway HTTP APIs with OpenTofu for low-latency, cost-effective API hosting with JWT authorization, CORS, and Lambda integrations.
 
-HTTP APIs are the next-generation API Gateway offering — up to 60% cheaper and 60% faster than REST APIs, with simpler configuration. They support JWT authorizers, CORS configuration, automatic deployments, and Lambda proxy integrations. Use HTTP APIs for new projects unless you specifically need REST API features like request validation models or API caching.
+HTTP APIs are the next-generation API Gateway offering - up to 60% cheaper and 60% faster than REST APIs, with simpler configuration. They support JWT authorizers, CORS configuration, automatic deployments, and Lambda proxy integrations. Use HTTP APIs for new projects unless you specifically need REST API features like request validation models or API caching.
 
 ## HTTP API with Lambda Integration
 
 ```hcl
 # Create the HTTP API
+
 resource "aws_apigatewayv2_api" "main" {
   name          = "${var.service_name}-http-api"
   protocol_type = "HTTP"

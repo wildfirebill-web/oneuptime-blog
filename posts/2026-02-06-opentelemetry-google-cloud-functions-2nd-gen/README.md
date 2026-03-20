@@ -40,6 +40,7 @@ Python Cloud Functions use the Functions Framework, which is a lightweight wrapp
 
 ```python
 # main.py
+
 # OpenTelemetry configuration for a Python 2nd gen Cloud Function
 import functions_framework
 from opentelemetry import trace

@@ -44,6 +44,7 @@ Start with a Docker Compose configuration that runs all three components. This s
 
 ```yaml
 # docker-compose.yml
+
 # ELK Stack configuration for centralized logging
 version: '3.8'
 

@@ -20,6 +20,7 @@ Apache HTTP Server (httpd) is the world's most popular web server, powering mill
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Apache2

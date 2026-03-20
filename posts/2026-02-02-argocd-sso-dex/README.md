@@ -84,6 +84,7 @@ Verify your ArgoCD installation with this command.
 
 ```bash
 # Check ArgoCD version and running pods
+
 kubectl get pods -n argocd
 kubectl get svc -n argocd
 

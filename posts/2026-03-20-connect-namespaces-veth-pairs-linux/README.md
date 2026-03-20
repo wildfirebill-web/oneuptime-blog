@@ -8,12 +8,13 @@ Description: Connect two Linux network namespaces using a virtual Ethernet (veth
 
 ## Introduction
 
-A veth (virtual Ethernet) pair is a linked pair of virtual interfaces — packets entering one end immediately emerge from the other. By placing each end in a different network namespace, you create a direct Layer 2 connection between the two isolated stacks.
+A veth (virtual Ethernet) pair is a linked pair of virtual interfaces - packets entering one end immediately emerge from the other. By placing each end in a different network namespace, you create a direct Layer 2 connection between the two isolated stacks.
 
 ## Create Two Namespaces
 
 ```bash
 # Create two isolated namespaces
+
 sudo ip netns add ns1
 sudo ip netns add ns2
 
@@ -45,7 +46,7 @@ sudo ip link set veth-ns1 netns ns1
 sudo ip link set veth-ns2 netns ns2
 ```
 
-Now neither interface is visible in the host namespace — they live inside their respective namespaces.
+Now neither interface is visible in the host namespace - they live inside their respective namespaces.
 
 ## Assign IPv4 Addresses
 

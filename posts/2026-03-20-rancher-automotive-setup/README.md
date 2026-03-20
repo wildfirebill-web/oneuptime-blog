@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, automotive, connected-vehicles, edge, kubernetes, ota-updates
+Tags: Rancher, Automotive, Connected-vehicles, Edge, Kubernetes, Ota-updates
 
 Description: A guide to configuring Rancher for automotive environments, covering connected vehicle data pipelines, OTA update management, manufacturing edge clusters, and fleet tracking.
 
@@ -12,7 +12,7 @@ Automotive organizations are deploying Kubernetes across multiple domains: conne
 
 ## Architecture
 
-```
+```text
 OEM Cloud Platform (Rancher-managed)
 ├── Connected Vehicle Platform (RKE2 HA)
 │   ├── Vehicle data ingestion (Kafka)
@@ -30,6 +30,7 @@ OEM Cloud Platform (Rancher-managed)
 
 ```yaml
 # Kafka cluster for vehicle telemetry data
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:

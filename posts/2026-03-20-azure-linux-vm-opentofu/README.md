@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Linux, Virtual Machines, Compute, SSH, Infrastructure as Code
+Tags: OpenTofu, Azure, Linux, Virtual Machine, Compute, SSH, Infrastructure as Code
 
 Description: Learn how to create and configure Linux virtual machines on Azure with OpenTofu, including SSH key authentication, managed disks, and cloud-init customization.
 
@@ -136,6 +136,7 @@ tofu plan
 tofu apply
 
 # Connect to the VM
+
 ssh azureuser@$(tofu output -raw public_ip_address)
 
 # Check cloud-init status
@@ -144,4 +145,4 @@ ssh azureuser@<ip> "sudo cloud-init status"
 
 ## Conclusion
 
-Use `disable_password_authentication = true` with SSH keys for all Linux VMs in production—Azure supports SSH agent forwarding so you never need to copy private keys to the VM. Set `storage_account_type = "Premium_LRS"` for OS disks on production workloads to get better IOPS. Use the `identity { type = "SystemAssigned" }` block to enable managed identity, which allows the VM to authenticate to Azure services like Key Vault without storing credentials.
+Use `disable_password_authentication = true` with SSH keys for all Linux VMs in production-Azure supports SSH agent forwarding so you never need to copy private keys to the VM. Set `storage_account_type = "Premium_LRS"` for OS disks on production workloads to get better IOPS. Use the `identity { type = "SystemAssigned" }` block to enable managed identity, which allows the VM to authenticate to Azure services like Key Vault without storing credentials.

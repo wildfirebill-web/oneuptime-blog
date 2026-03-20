@@ -37,6 +37,7 @@ import json
 session = requests_unixsocket.Session()
 
 # Unix socket paths must be URL-encoded
+
 # /run/podman/podman.sock becomes %2Frun%2Fpodman%2Fpodman.sock
 SOCKET_PATH = "%2Frun%2Fpodman%2Fpodman.sock"
 BASE_URL = f"http+unix://{SOCKET_PATH}/v4.0.0/libpod"

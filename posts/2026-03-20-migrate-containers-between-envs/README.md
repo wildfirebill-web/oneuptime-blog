@@ -14,14 +14,15 @@ Whether promoting from staging to production, moving to new hardware, or reorgan
 
 Choose your approach based on the workload:
 
-1. **Stack re-deployment** (stateless apps) — Redeploy from the same compose file on the new environment
-2. **Image + volume migration** (stateful apps) — Export data, migrate volumes, redeploy
-3. **API-driven migration** — Script the entire process via the Portainer API
+1. **Stack re-deployment** (stateless apps) - Redeploy from the same compose file on the new environment
+2. **Image + volume migration** (stateful apps) - Export data, migrate volumes, redeploy
+3. **API-driven migration** - Script the entire process via the Portainer API
 
 ## Step 1: Export Images from Source Environment
 
 ```bash
 # Identify images used in the source environment
+
 curl -s \
   -H "X-API-Key: your-api-key" \
   "https://portainer.example.com/api/endpoints/1/docker/images/json" \

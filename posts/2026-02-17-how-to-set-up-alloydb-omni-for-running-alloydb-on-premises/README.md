@@ -46,6 +46,7 @@ If Docker is not already installed:
 
 ```bash
 # Install Docker on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y docker.io
 sudo systemctl enable docker

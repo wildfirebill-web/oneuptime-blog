@@ -27,6 +27,7 @@ If using Calico in BGP mode (no overlay), AWS's source/destination check must be
 
 ```bash
 # Find the EC2 instance IDs for your Kubernetes nodes
+
 aws ec2 describe-instances \
   --filters "Name=tag:kubernetes.io/cluster/<cluster-name>,Values=owned" \
   --query 'Reservations[*].Instances[*].[InstanceId,PrivateIpAddress]' \

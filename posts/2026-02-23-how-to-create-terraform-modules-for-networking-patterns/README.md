@@ -16,6 +16,7 @@ Every networking setup starts with a VPC. Here is a module that creates a produc
 
 ```hcl
 # modules/vpc/variables.tf
+
 variable "name" {
   description = "Name prefix for all networking resources"
   type        = string

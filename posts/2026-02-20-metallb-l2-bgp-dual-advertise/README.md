@@ -66,6 +66,7 @@ Create a pool that will be referenced by both advertisement types:
 
 ```yaml
 # ip-pool.yaml
+
 # This pool is used by both L2 and BGP advertisements.
 # The IPs must be valid and routable for both protocols.
 apiVersion: metallb.io/v1beta1

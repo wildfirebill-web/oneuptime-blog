@@ -29,6 +29,7 @@ This guide deploys Authentik using the official Helm chart with PostgreSQL and R
 kubectl create namespace authentik
 
 # Authentik requires a secret key and bootstrap credentials
+
 kubectl create secret generic authentik-secrets \
   --namespace authentik \
   --from-literal=secret-key=$(openssl rand -hex 50) \

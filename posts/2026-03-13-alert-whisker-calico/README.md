@@ -16,6 +16,7 @@ Whisker flow data can drive Prometheus alerts for network security monitoring. H
 
 ```bash
 # Verify Whisker is running
+
 kubectl get pods -n calico-system | grep whisker
 
 # Access Whisker UI

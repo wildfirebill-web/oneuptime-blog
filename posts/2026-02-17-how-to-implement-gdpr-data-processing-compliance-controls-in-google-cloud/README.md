@@ -31,6 +31,7 @@ GDPR does not strictly require data to stay in the EU, but many organizations ch
 
 ```bash
 # Create resources in EU regions only
+
 # Cloud Storage bucket in EU
 gcloud storage buckets create gs://eu-personal-data \
   --location=EU \

@@ -38,6 +38,7 @@ First, create an anomaly detection model for a metric:
 
 ```bash
 # Create an anomaly detection model for request count
+
 aws cloudwatch put-anomaly-detector \
   --namespace "AWS/ApplicationELB" \
   --metric-name RequestCount \

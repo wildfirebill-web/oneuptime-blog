@@ -59,6 +59,7 @@ Create a Logstash pipeline that accepts Talos JSON logs:
 # /etc/logstash/conf.d/talos.conf
 
 # Input: Receive Talos logs via TCP
+
 input {
   tcp {
     port => 5514

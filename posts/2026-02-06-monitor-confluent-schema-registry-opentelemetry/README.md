@@ -41,6 +41,7 @@ First, configure Schema Registry to expose JMX metrics over HTTP by adding the P
 
 ```bash
 # Add to schema-registry-run-class or SCHEMA_REGISTRY_JMX_OPTS
+
 export SCHEMA_REGISTRY_JMX_OPTS="-javaagent:/opt/jmx_exporter/jmx_prometheus_javaagent.jar=7071:/opt/jmx_exporter/schema-registry.yml"
 ```
 

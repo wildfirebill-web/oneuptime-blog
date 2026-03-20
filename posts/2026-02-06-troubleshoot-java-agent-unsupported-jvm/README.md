@@ -28,6 +28,7 @@ Some agent features require newer JVM versions:
 ```bash
 java -version
 # Example output:
+
 # openjdk version "1.8.0_292"
 # OpenJDK Runtime Environment (build 1.8.0_292-b10)
 ```

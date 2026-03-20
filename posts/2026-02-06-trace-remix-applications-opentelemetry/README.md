@@ -461,6 +461,7 @@ Set up environment variables to configure OpenTelemetry behavior across differen
 
 ```bash
 # .env.production
+
 # OpenTelemetry configuration for production environment
 
 # OTLP endpoint for trace export

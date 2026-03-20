@@ -92,6 +92,7 @@ stress-ng is the standard tool for CPU stress testing. It provides fine-grained 
 ```bash
 #!/bin/bash
 # cpu-stress-test.sh
+
 # Generate CPU load to test system behavior under saturation
 
 # Number of CPU workers (match your core count for 100% load)

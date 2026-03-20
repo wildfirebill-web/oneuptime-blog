@@ -42,6 +42,7 @@ First, update your package list and install the OpenSCAP scanner:
 
 ```bash
 # Update package repositories
+
 sudo apt update
 
 # Install OpenSCAP scanner and utilities

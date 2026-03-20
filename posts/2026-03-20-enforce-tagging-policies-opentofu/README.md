@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Tagging Policies, Governance, Compliance, Infrastructure as Code, FinOps
 
-Description: Learn how to enforce mandatory resource tagging in OpenTofu through variable validation, OPA policies, and provider default_tags — ensuring every resource is properly labeled for cost allocation and compliance.
+Description: Learn how to enforce mandatory resource tagging in OpenTofu through variable validation, OPA policies, and provider default_tags - ensuring every resource is properly labeled for cost allocation...
 
 ## Introduction
 
-Mandatory resource tagging is one of the most impactful governance controls in cloud environments. It enables accurate cost allocation, security auditing, and compliance reporting. OpenTofu provides multiple layers to enforce tagging — from provider defaults to policy-as-code gates.
+Mandatory resource tagging is one of the most impactful governance controls in cloud environments. It enables accurate cost allocation, security auditing, and compliance reporting. OpenTofu provides multiple layers to enforce tagging - from provider defaults to policy-as-code gates.
 
 ## Layer 1: Provider default_tags (AWS)
 
-The most reliable enforcement — tags applied automatically at the provider level:
+The most reliable enforcement - tags applied automatically at the provider level:
 
 ```hcl
 variable "environment" { type = string }
@@ -59,6 +59,7 @@ variable "cost_center" {
 
 ```rego
 # policies/require_tags.rego
+
 package main
 
 required_tags := {"Environment", "Team", "CostCenter", "ManagedBy"}
@@ -118,7 +119,7 @@ For resources that slip through without tags, automate detection and notificatio
 
 ```bash
 #!/bin/bash
-# find-untagged.sh — find resources missing required tags
+# find-untagged.sh - find resources missing required tags
 aws resourcegroupstaggingapi get-resources \
   --tag-filters "Key=ManagedBy" \
   --resource-type-filters ec2:instance \

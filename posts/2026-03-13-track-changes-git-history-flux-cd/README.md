@@ -50,6 +50,7 @@ Example commits:
 
 ```bash
 # Good commit messages for Flux repos
+
 git commit -m "deploy: promote my-app v2.5.0 to production (from staging)"
 git commit -m "fix: rollback nginx-ingress to v4.9.0 - memory leak in v4.10.0"
 git commit -m "security: restrict PHI namespace egress to EU databases only"

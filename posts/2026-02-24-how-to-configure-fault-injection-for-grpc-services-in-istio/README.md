@@ -63,6 +63,7 @@ Test it with grpcurl:
 
 ```bash
 # Install grpcurl if you don't have it
+
 # Time the request to see the delay
 time kubectl exec deploy/test-client -n production -- grpcurl -plaintext user-service:50051 user.UserService/GetUser
 ```

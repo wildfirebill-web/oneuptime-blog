@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward BGPPeer configuration w
 
 ```bash
 # Verify current BGPPeer resources
+
 calicoctl get bgppeer -o yaml
 
 # Check the effective configuration on a specific node

@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # FRRouting
+
 vtysh -c "show ipv6 ospf neighbor"
 
 # Cisco
@@ -44,18 +45,18 @@ show ospfv3 neighbor
 Both routers see each other's Hellos but not in each other's neighbor list:
 
 ```bash
-# Check Hello parameters — all must match:
+# Check Hello parameters - all must match:
 vtysh -c "show ipv6 ospf interface eth0"
 # Verify: Hello interval, Dead interval, Area ID
 
 # Common mismatch: Hello interval differs
 # Router A: hello 10s
-# Router B: hello 30s  ← MISMATCH — will not form adjacency
+# Router B: hello 30s  ← MISMATCH - will not form adjacency
 ```
 
 ### Stuck in 2-Way (Non-DR/BDR)
 
-On a broadcast network with more than two routers, only DR and BDR form Full adjacency with each other. Others stay at 2-Way — this is **normal and expected**.
+On a broadcast network with more than two routers, only DR and BDR form Full adjacency with each other. Others stay at 2-Way - this is **normal and expected**.
 
 ### Stuck in ExStart/Exchange
 
@@ -143,7 +144,7 @@ vtysh -c "show ipv6 ospf interface eth0" | grep "Area\|Network Type"
 | No Hello received | Firewall, no link-local address | Allow proto 89, add fe80:: |
 | Stuck in ExStart | MTU mismatch | Match MTU or use `mtu-ignore` |
 | State flapping | Unstable link or CPU overload | Check link quality and CPU |
-| DROTHER in 2-Way | Normal behavior (not DR/BDR) | Expected — not an issue |
+| DROTHER in 2-Way | Normal behavior (not DR/BDR) | Expected - not an issue |
 
 ## Summary
 

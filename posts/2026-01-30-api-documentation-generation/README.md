@@ -350,6 +350,7 @@ Python's FastAPI generates OpenAPI specs automatically from type hints and Pydan
 
 ```python
 # models.py
+
 from pydantic import BaseModel, Field, EmailStr
 from typing import Optional, List
 from datetime import datetime

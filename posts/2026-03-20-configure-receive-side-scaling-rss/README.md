@@ -8,7 +8,7 @@ Description: Learn how to configure Receive Side Scaling (RSS) to distribute net
 
 ## What Is Receive Side Scaling?
 
-Without RSS, all incoming packets on a network interface are processed by a single CPU core — the one handling that NIC's IRQ. On a 10G or 25G NIC, a single core can become a bottleneck at ~2-3 Gbps of traffic.
+Without RSS, all incoming packets on a network interface are processed by a single CPU core - the one handling that NIC's IRQ. On a 10G or 25G NIC, a single core can become a bottleneck at ~2-3 Gbps of traffic.
 
 RSS allows the NIC hardware to distribute incoming packets across multiple receive queues, each serviced by a different CPU core, using a hash of the 5-tuple (source IP, dest IP, source port, dest port, protocol).
 
@@ -16,6 +16,7 @@ RSS allows the NIC hardware to distribute incoming packets across multiple recei
 
 ```bash
 # Check number of receive queues (channels) on the NIC
+
 ethtool -l eth0
 
 # Output:

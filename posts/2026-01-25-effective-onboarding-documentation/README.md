@@ -373,6 +373,7 @@ Automate what you can:
 ```bash
 #!/bin/bash
 # scripts/verify-setup.sh
+
 # Verifies a new developer's environment is correctly configured
 
 set -e

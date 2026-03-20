@@ -255,6 +255,7 @@ Generate a test JWT token and send requests:
 
 ```bash
 # Using a valid JWT with sub="user-123"
+
 TOKEN="eyJ..."  # Your test JWT
 
 for i in $(seq 1 70); do

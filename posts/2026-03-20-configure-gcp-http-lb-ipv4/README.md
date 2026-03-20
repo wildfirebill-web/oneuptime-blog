@@ -17,6 +17,7 @@ PROJECT_ID="my-gcp-project"
 ZONE="us-central1-a"
 
 # Create a VM template
+
 gcloud compute instance-templates create web-template \
   --project=$PROJECT_ID \
   --machine-type=e2-medium \

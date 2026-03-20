@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, portainer-business, in-app-updates, upgrade
+Tags: Portainer, Portainer-business, In-app-updates, Upgrade
 
 Description: A guide to using Portainer Business Edition's in-app update feature for streamlined upgrades directly from the Portainer web interface.
 
@@ -14,7 +14,7 @@ Portainer Business Edition includes an in-app update mechanism that simplifies u
 
 The in-app update feature is available in Portainer Business Edition:
 
-```
+```text
 Portainer UI → Settings → Upgrade Portainer
 ```
 
@@ -22,7 +22,7 @@ If a new version is available, Portainer displays an update notification and a b
 
 ## Step 1: Check for Updates
 
-```
+```text
 Portainer UI → Help → About → Check for Updates
 ```
 
@@ -32,7 +32,7 @@ Or look for the notification badge on the navigation menu.
 
 Before upgrading, always review the release notes:
 
-```
+```text
 1. Click on the version number in the update notification
 2. Review breaking changes, new features, and bug fixes
 3. Check if any configuration changes are required
@@ -44,6 +44,7 @@ Even with in-app updates, backup first:
 
 ```bash
 # Create backup via Portainer UI
+
 Settings → Backup → Download backup
 
 # Or via CLI
@@ -55,20 +56,20 @@ docker run --rm \
 
 ## Step 4: Trigger the In-App Update
 
-```
+```text
 Settings → Update & Restore → Update Portainer
 → Click "Update" button
 → Confirm the update in the dialog
 → Portainer will pull the new image, stop itself, and restart with the new version
 ```
 
-The update process takes approximately 1-3 minutes. You will lose the browser connection while Portainer restarts — this is normal.
+The update process takes approximately 1-3 minutes. You will lose the browser connection while Portainer restarts - this is normal.
 
 ## Step 5: Verify the Update
 
 After Portainer restarts, navigate back to `https://portainer:9443`:
 
-```
+```text
 Help → About → Version should show the new version number
 ```
 
@@ -112,7 +113,7 @@ docker run -d \
 
 Configure Portainer BE to notify your team when updates are available:
 
-```
+```text
 Settings → Notifications
 → Enable email notifications for "New Portainer version available"
 → Enter recipient email addresses

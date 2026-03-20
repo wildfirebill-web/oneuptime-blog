@@ -18,6 +18,7 @@ Before you can restore, you need to find the right recovery point:
 
 ```bash
 # List all recovery points in a vault
+
 aws backup list-recovery-points-by-backup-vault \
   --backup-vault-name "production-backups" \
   --query 'RecoveryPoints[*].{

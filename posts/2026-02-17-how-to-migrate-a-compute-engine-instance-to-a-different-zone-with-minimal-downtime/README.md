@@ -18,6 +18,7 @@ The simplest approach is the built-in move command. It handles stopping the VM, 
 
 ```bash
 # Move an instance from one zone to another
+
 # This will cause downtime while the VM is stopped, moved, and restarted
 gcloud compute instances move my-vm \
     --zone=us-central1-a \

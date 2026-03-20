@@ -48,6 +48,7 @@ Not all VM sizes support ephemeral OS disks. The VM's cache size or temp disk si
 
 ```bash
 # List VM sizes with their cache and temp disk sizes
+
 az vm list-sizes --location eastus \
   --query "[?contains(name,'Standard_D')].{Name:name, CacheSizeGB:resourceDiskSizeInMb, MaxDataDisks:maxDataDiskCount}" \
   -o table

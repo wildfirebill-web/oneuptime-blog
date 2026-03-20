@@ -19,6 +19,7 @@ Monitoring helps you detect and prevent table overflow before it impacts users.
 
 ```bash
 # Current active connections in conntrack table
+
 cat /proc/sys/net/netfilter/nf_conntrack_count
 
 # Maximum allowed connections
@@ -103,7 +104,7 @@ echo "*/5 * * * * root /usr/local/bin/check-nat-sessions.sh >> /var/log/nat-moni
 
 If using Prometheus, node_exporter exposes conntrack metrics:
 
-```
+```text
 node_nf_conntrack_entries          # Current count
 node_nf_conntrack_entries_limit    # Max limit
 ```

@@ -26,6 +26,7 @@ Talos Linux provides ISO images for USB booting:
 
 ```bash
 # Download the ISO for x86_64 systems
+
 wget https://github.com/siderolabs/talos/releases/download/v1.9.0/metal-amd64.iso
 
 # For ARM64 systems (like Raspberry Pi or ARM servers)

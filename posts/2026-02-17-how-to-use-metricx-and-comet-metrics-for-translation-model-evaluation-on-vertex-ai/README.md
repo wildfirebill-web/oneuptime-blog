@@ -36,6 +36,7 @@ from vertexai.evaluation import EvalTask
 import pandas as pd
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Prepare your evaluation dataset

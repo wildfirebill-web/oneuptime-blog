@@ -30,6 +30,7 @@ Validate GCE networking and Calico health before upgrading.
 
 ```bash
 # Check all Kubernetes nodes are Ready
+
 kubectl get nodes -o wide
 
 # Check current Calico version

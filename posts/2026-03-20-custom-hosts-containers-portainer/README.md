@@ -8,12 +8,13 @@ Description: Add custom /etc/hosts entries to Docker containers using extra_host
 
 ## Introduction
 
-The `extra_hosts` directive in Docker Compose adds entries directly to a container's `/etc/hosts` file. This is useful when you need to map hostnames to specific IPs without deploying a DNS server — useful for legacy application integration, testing against mock services, or overriding DNS for specific hostnames. This guide covers all patterns for custom host entries in Portainer-managed containers.
+The `extra_hosts` directive in Docker Compose adds entries directly to a container's `/etc/hosts` file. This is useful when you need to map hostnames to specific IPs without deploying a DNS server - useful for legacy application integration, testing against mock services, or overriding DNS for specific hostnames. This guide covers all patterns for custom host entries in Portainer-managed containers.
 
 ## Step 1: Basic extra_hosts Configuration
 
 ```yaml
 # docker-compose.yml - Custom /etc/hosts entries
+
 version: "3.8"
 
 services:
@@ -180,4 +181,4 @@ services:
 
 ## Conclusion
 
-The `extra_hosts` directive is a lightweight alternative to running a DNS server when you need a small number of custom hostname mappings. It works reliably across restarts — entries are injected when the container starts. For development environments, override production API endpoints with local mocks. For production, map legacy hostnames to current infrastructure. Portainer displays container details including effective network configuration, helping you verify host entries without container exec access.
+The `extra_hosts` directive is a lightweight alternative to running a DNS server when you need a small number of custom hostname mappings. It works reliably across restarts - entries are injected when the container starts. For development environments, override production API endpoints with local mocks. For production, map legacy hostnames to current infrastructure. Portainer displays container details including effective network configuration, helping you verify host entries without container exec access.

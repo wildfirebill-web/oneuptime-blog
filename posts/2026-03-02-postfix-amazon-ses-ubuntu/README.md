@@ -51,6 +51,7 @@ The credentials look like:
 
 ```bash
 # Install Postfix and SASL support
+
 sudo apt update
 sudo apt install -y postfix libsasl2-modules mailutils
 

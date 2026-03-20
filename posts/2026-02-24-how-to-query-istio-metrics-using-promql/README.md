@@ -28,6 +28,7 @@ The most basic query - how many requests per second is a service handling:
 
 ```promql
 # Total request rate for a service
+
 sum(rate(istio_requests_total{
   reporter="destination",
   destination_workload="api-service"

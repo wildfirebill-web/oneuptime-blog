@@ -8,7 +8,7 @@ Description: Understand IPv6 anycast addresses, how they differ from unicast and
 
 ## Introduction
 
-Anycast is one of three addressing modes in IPv6 (alongside unicast and multicast). An anycast address is assigned to multiple interfaces on different nodes; packets sent to an anycast address are delivered to the topologically nearest node that has that address. Unlike multicast, only one node receives the packet — the closest one according to the routing protocol.
+Anycast is one of three addressing modes in IPv6 (alongside unicast and multicast). An anycast address is assigned to multiple interfaces on different nodes; packets sent to an anycast address are delivered to the topologically nearest node that has that address. Unlike multicast, only one node receives the packet - the closest one according to the routing protocol.
 
 ## How Anycast Works
 
@@ -35,9 +35,9 @@ All servers advertise the same prefix. The routing protocol (BGP, OSPF) selects 
 
 ## Subnet-Router Anycast Address
 
-IPv6 defines a mandatory anycast address for every subnet — the **Subnet-Router Anycast Address**. It is the lowest address in the subnet (all interface ID bits set to zero):
+IPv6 defines a mandatory anycast address for every subnet - the **Subnet-Router Anycast Address**. It is the lowest address in the subnet (all interface ID bits set to zero):
 
-```
+```text
 Subnet prefix: 2001:db8:1:2::/64
 Subnet-Router anycast: 2001:db8:1:2::
 ```
@@ -50,6 +50,7 @@ To configure an anycast address on Linux, use the `anycast` flag:
 
 ```bash
 # Add an anycast address to an interface
+
 # The 'anycast' keyword tells the kernel this is an anycast address
 sudo ip -6 addr add 2001:db8::1/128 anycast dev eth0
 
@@ -81,16 +82,16 @@ ping6 -c 5 2606:4700:4700::1111
 
 ## Practical Anycast Use Cases
 
-1. **DNS resolution** — Multiple DNS servers share one address; clients always hit the nearest one
-2. **CDN edge nodes** — Content served from the nearest geographic location
-3. **NTP services** — pool.ntp.org uses anycast for time synchronization
-4. **DDoS mitigation** — Distribute attack traffic across many nodes
+1. **DNS resolution** - Multiple DNS servers share one address; clients always hit the nearest one
+2. **CDN edge nodes** - Content served from the nearest geographic location
+3. **NTP services** - pool.ntp.org uses anycast for time synchronization
+4. **DDoS mitigation** - Distribute attack traffic across many nodes
 
 ## Anycast with OSPFv3 (Internal Anycast)
 
 For internal anycast deployments using OSPFv3:
 
-```
+```text
 # On each anycast server, add the address as a loopback:
 # /etc/network/interfaces (Debian/Ubuntu)
 auto lo:anycast

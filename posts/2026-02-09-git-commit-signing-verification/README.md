@@ -20,6 +20,7 @@ Generate and configure GPG keys:
 
 ```bash
 # Generate GPG key
+
 gpg --full-generate-key
 
 # Use RSA, 4096 bits

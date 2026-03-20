@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Security, IP Spoofing, Reverse Path Filtering, sysctl, Networking
+Tags: Linux, Security, IP Spoofing, Reverse Path Filtering, Sysctl, Networking
 
 Description: Enable reverse path filtering (rp_filter) on Linux to automatically drop packets with spoofed source IP addresses at the kernel level.
 
-IP spoofing — sending packets with a forged source IP — is used in amplification DDoS attacks and to bypass IP-based access controls. Reverse path filtering (RPF) defeats spoofed packets by verifying that the route back to the packet's claimed source actually goes through the interface it arrived on.
+IP spoofing - sending packets with a forged source IP - is used in amplification DDoS attacks and to bypass IP-based access controls. Reverse path filtering (RPF) defeats spoofed packets by verifying that the route back to the packet's claimed source actually goes through the interface it arrived on.
 
 ## How Reverse Path Filtering Works
 
-```
+```text
 Incoming packet: SRC=8.8.8.8, arrived on eth1
 
 RPF check:
@@ -25,6 +25,7 @@ RPF check:
 
 ```bash
 # Check per-interface setting (0=off, 1=strict, 2=loose)
+
 cat /proc/sys/net/ipv4/conf/eth0/rp_filter
 cat /proc/sys/net/ipv4/conf/all/rp_filter
 
@@ -50,10 +51,10 @@ done
 
 ## Enable Loose Reverse Path Filtering
 
-Mode 2 (loose): drops packet only if no route exists to the source at all — useful for multi-homed servers:
+Mode 2 (loose): drops packet only if no route exists to the source at all - useful for multi-homed servers:
 
 ```bash
-# Loose mode — less strict, still catches spoofed private/bogon IPs
+# Loose mode - less strict, still catches spoofed private/bogon IPs
 sudo sysctl -w net.ipv4.conf.all.rp_filter=2
 ```
 

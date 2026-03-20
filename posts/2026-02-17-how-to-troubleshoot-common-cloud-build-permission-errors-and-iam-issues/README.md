@@ -52,6 +52,7 @@ denied: Permission "artifactregistry.repositories.uploadArtifacts" denied
 
 ```bash
 # Get your project number
+
 PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 
 # Grant Artifact Registry Writer role

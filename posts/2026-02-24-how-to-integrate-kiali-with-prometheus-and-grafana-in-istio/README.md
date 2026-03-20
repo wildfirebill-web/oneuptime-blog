@@ -33,6 +33,7 @@ Make sure you have these components running:
 
 ```bash
 # Check Prometheus
+
 kubectl get pods -n istio-system -l app=prometheus
 
 # Check Grafana

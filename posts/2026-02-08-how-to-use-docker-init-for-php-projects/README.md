@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Init, PHP, Laravel, Symfony, Composer, Apache, NGINX, Containerization, DevOps
+Tags: Docker, Docker Init, PHP, Laravel, Symfony, Composer, Apache, Nginx, Containerization, DevOps
 
 Description: A hands-on guide to using docker init with PHP projects, covering Laravel, Symfony, and custom PHP applications with Apache or Nginx.
 
@@ -16,6 +16,7 @@ Let's use a Laravel application as our primary example since it is the most comm
 
 ```bash
 # Create a new Laravel project (requires Composer installed locally)
+
 composer create-project laravel/laravel php-docker-demo
 cd php-docker-demo
 ```

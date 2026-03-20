@@ -14,6 +14,7 @@ High-latency links (50ms+ RTT) expose every weakness in TCP's default configurat
 
 ```bash
 # Step 1: Measure RTT and available bandwidth
+
 ping -c 20 remote-host     # RTT
 iperf3 -c remote-host -t 10  # Bandwidth
 
@@ -21,7 +22,7 @@ iperf3 -c remote-host -t 10  # Bandwidth
 # Example: 500 Mbps available, 120ms RTT
 # BDP = (500,000,000 / 8) × 0.120 = 7,500,000 bytes = 7.5 MB
 
-# Step 3: Note current throughput — we'll compare after optimization
+# Step 3: Note current throughput - we'll compare after optimization
 ```
 
 ## Complete Optimization Script

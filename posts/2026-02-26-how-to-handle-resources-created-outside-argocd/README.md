@@ -58,6 +58,7 @@ Here is a script that identifies resources in a namespace that ArgoCD does not m
 ```bash
 #!/bin/bash
 # find-orphaned-resources.sh - Find resources not managed by ArgoCD
+
 set -euo pipefail
 
 NAMESPACE="${1:?Usage: $0 <namespace>}"

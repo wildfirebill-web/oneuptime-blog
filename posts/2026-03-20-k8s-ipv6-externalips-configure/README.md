@@ -16,7 +16,7 @@ Kubernetes Services can be assigned `externalIPs` that route external traffic to
 
 ## Understanding ExternalIPs
 
-The `externalIPs` field in a Service spec tells kube-proxy to intercept traffic destined for those addresses and route it to the service's endpoints. Unlike LoadBalancer services, no cloud controller is needed — the IP must be manually assigned to a node.
+The `externalIPs` field in a Service spec tells kube-proxy to intercept traffic destined for those addresses and route it to the service's endpoints. Unlike LoadBalancer services, no cloud controller is needed - the IP must be manually assigned to a node.
 
 ## Step 1: Verify Node IPv6 Addresses
 
@@ -24,6 +24,7 @@ Before configuring externalIPs, confirm which IPv6 addresses are assigned to you
 
 ```bash
 # List IPv6 addresses on all nodes
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[*].address}{"\n"}{end}'
 ```
 

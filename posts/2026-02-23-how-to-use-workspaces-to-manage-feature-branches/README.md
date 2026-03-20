@@ -30,6 +30,7 @@ Use the branch name as part of the workspace name. Sanitize it to remove charact
 ```bash
 #!/bin/bash
 # sanitize-branch-name.sh
+
 # Convert a git branch name to a valid workspace name
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)

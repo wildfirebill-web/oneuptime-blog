@@ -105,6 +105,7 @@ This implementation uses sentence embeddings to detect semantic boundaries. When
 
 ```python
 # semantic_chunker.py
+
 # Embedding-based semantic chunking implementation
 # Requires: pip install sentence-transformers numpy
 

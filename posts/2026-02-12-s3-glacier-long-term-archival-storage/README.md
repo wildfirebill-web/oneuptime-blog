@@ -28,6 +28,7 @@ You can upload objects directly to Glacier storage classes without putting them 
 
 ```bash
 # Upload directly to Glacier Flexible Retrieval
+
 aws s3 cp backup-2025-q4.tar.gz \
   s3://my-archive-bucket/backups/2025-q4/backup.tar.gz \
   --storage-class GLACIER

@@ -24,6 +24,7 @@ import time
 kinesis = boto3.client('kinesis', region_name='us-east-1')
 
 # Send a single record
+
 event = {
     "userId": "user-456",
     "eventType": "page_view",

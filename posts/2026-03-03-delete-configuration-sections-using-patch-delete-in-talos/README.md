@@ -30,6 +30,7 @@ Apply it with talosctl:
 
 ```bash
 # Remove a single label from a node
+
 talosctl apply-config --nodes 10.0.1.10 \
     --patch '[{"op": "remove", "path": "/machine/kubelet/nodeLabels/deprecated-label"}]' \
     --mode no-reboot

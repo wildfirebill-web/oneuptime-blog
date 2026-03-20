@@ -16,6 +16,7 @@ The HTTP-01 challenge validates domain ownership by serving a file on port 80.
 
 ```bash
 # Ensure port 80 is available and accessible
+
 # Stop any service on port 80 temporarily
 sudo systemctl stop nginx 2>/dev/null || true
 
@@ -31,7 +32,7 @@ sudo certbot certonly \
 
 ## DNS-01 Challenge (No Port 80 Required)
 
-The DNS-01 challenge validates via a TXT DNS record — useful when port 80 is blocked:
+The DNS-01 challenge validates via a TXT DNS record - useful when port 80 is blocked:
 
 ```bash
 # Use DNS challenge (requires manual DNS TXT record creation)

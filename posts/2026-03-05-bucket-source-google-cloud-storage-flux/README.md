@@ -26,6 +26,7 @@ Create a bucket and upload your manifests.
 
 ```bash
 # Create a GCS bucket
+
 gcloud storage buckets create gs://my-app-flux-manifests \
   --location=us-central1
 

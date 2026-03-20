@@ -39,6 +39,7 @@ Create a GitHub Actions workflow that generates manifests from templates.
 
 ```yaml
 # .github/workflows/generate-manifests.yaml
+
 name: Generate and Push Kubernetes Manifests
 
 on:
@@ -473,7 +474,7 @@ jobs:
             const diff = fs.readFileSync('manifest-diff.txt', 'utf8');
 
             const body = diff
-              ? `### Manifest Changes\n\`\`\`diff\n${diff.substring(0, 60000)}\n\`\`\``
+              ? `### Manifest Changes\n```diff\n${diff.substring(0, 60000)}\n````
               : '### Manifest Changes\nNo changes detected in generated manifests.';
 
             // Find existing comment

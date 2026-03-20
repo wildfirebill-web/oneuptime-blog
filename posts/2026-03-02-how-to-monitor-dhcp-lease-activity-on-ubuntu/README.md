@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, DHCP, Monitoring, Networking, SysAdmin
+Tags: Ubuntu, DHCP, Monitoring, Networking, Sysadmin
 
 Description: Monitor DHCP lease activity on Ubuntu servers using log analysis, lease file parsing, and the Kea REST API to track address assignments and detect anomalies.
 
@@ -18,6 +18,7 @@ ISC DHCP stores all lease information in `/var/lib/dhcp/dhcpd.leases`. This file
 
 ```bash
 # View the lease file
+
 sudo cat /var/lib/dhcp/dhcpd.leases
 ```
 

@@ -70,6 +70,7 @@ Navigate to your cluster, select **Apps** from the sidebar, and install the **Mo
 
 ```yaml
 # Example values to customize the installation
+
 # These can be set during chart installation in the UI
 
 # Prometheus configuration

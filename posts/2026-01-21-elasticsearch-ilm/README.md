@@ -375,6 +375,7 @@ curl -X GET "https://localhost:9200/_ilm/status" \
 
 ```bash
 # All indices
+
 curl -X GET "https://localhost:9200/*/_ilm/explain" \
   -u elastic:password
 

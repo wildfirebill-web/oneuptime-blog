@@ -32,6 +32,7 @@ Add more nodes:
 
 ```yaml
 # elasticsearch.yml for new node
+
 cluster.name: production
 node.name: data-node-4
 node.roles: [data, data_content, data_hot]

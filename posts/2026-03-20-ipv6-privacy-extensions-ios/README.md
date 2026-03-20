@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Privacy Extensions, iOS, iPhone, iPad, Apple, Security
+Tags: IPv6, Privacy Extensions, IOS, IPhone, IPad, Apple, Security
 
-Description: A guide to understanding IPv6 privacy extensions on iOS and iPadOS, including Apple's Private Wi-Fi Address feature, how it relates to IPv6 privacy, and how developers should handle IPv6 addresses in iOS apps.
+Description: A guide to understanding IPv6 privacy extensions on iOS and iPadOS, including Apple's Private Wi-Fi Address feature, how it relates to IPv6 privacy, and how developers should handle IPv6 addresses...
 
 iOS implements IPv6 privacy through two complementary features: IPv6 privacy extensions (RFC 8981) for temporary IPv6 addresses, and Private Wi-Fi Address (randomized MAC address) which prevents EUI-64 address derivation entirely. Together, these make iOS one of the most privacy-preserving mobile platforms for IPv6.
 
 ## Apple's IPv6 Privacy Approach
 
-```
+```text
 iOS 14+ IPv6 Privacy Stack:
 ├── Private Wi-Fi Address (MAC randomization)
 │   - Random MAC per Wi-Fi network
@@ -34,13 +34,13 @@ Without direct terminal access, checking your IPv6 address on iOS requires:
 3. You should see multiple IPv6 addresses (temporary + stable)
 
 **Via third-party apps:**
-```
+```text
 Apps like "Network Analyzer" or "iStat" show all IPv6 addresses
 including temporary (privacy extension) addresses
 ```
 
 **Via a website:**
-```
+```text
 Visit https://test-ipv6.com or https://ipv6.icanhazip.com in Safari
 The displayed address will be your current temporary IPv6 address
 ```
@@ -49,6 +49,7 @@ The displayed address will be your current temporary IPv6 address
 
 ```bash
 # Private Wi-Fi Address (MAC randomization) is key for IPv6 privacy
+
 # When MAC is randomized, EUI-64 derivation produces a random-looking address
 # rather than a hardware-traceable one
 
@@ -67,7 +68,7 @@ The displayed address will be your current temporary IPv6 address
 
 **Settings > Wi-Fi > [Network Name] > Private Wi-Fi Address**
 
-```
+```text
 Rotating: Changes MAC periodically (iOS 18+)
 Fixed: Uses consistent random MAC for this network
 Off: Uses device's real MAC address (not recommended)

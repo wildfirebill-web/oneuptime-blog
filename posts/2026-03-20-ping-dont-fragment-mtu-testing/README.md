@@ -6,11 +6,11 @@ Tags: Ping, MTU, PMTUD, IPv4, Networking, Diagnostics
 
 Description: Use ping with the Don't Fragment (DF) bit to manually discover the maximum MTU along a network path and diagnose MTU black hole problems.
 
-MTU mismatches cause mysterious connectivity problems — connections that partially work or hang after the initial handshake. Using ping with the DF bit lets you manually discover the path MTU and pinpoint where oversized packets are being silently dropped.
+MTU mismatches cause mysterious connectivity problems - connections that partially work or hang after the initial handshake. Using ping with the DF bit lets you manually discover the path MTU and pinpoint where oversized packets are being silently dropped.
 
 ## Understanding the DF Bit and Path MTU
 
-```
+```text
 Standard Ethernet: 1500 byte MTU
 VPN (WireGuard):   ~1420 byte MTU
 PPPoE:             1492 byte MTU
@@ -30,6 +30,7 @@ An "MTU black hole" occurs when:
 
 ```bash
 # -M do = set DF bit and don't allow fragmentation
+
 # -s = payload size (add 28 for total IP packet size)
 
 # Test if 1500-byte packets reach the target
@@ -50,7 +51,7 @@ Find the exact maximum packet size that passes through:
 
 ```bash
 #!/bin/bash
-# find-pmtu.sh — Binary search for path MTU
+# find-pmtu.sh - Binary search for path MTU
 
 HOST="${1:-8.8.8.8}"
 LOW=576
@@ -75,19 +76,19 @@ echo "Path MTU to $HOST: $((LOW + 28)) bytes (payload: $LOW bytes)"
 Different tunnel types have different MTU overheads:
 
 ```bash
-# Test Ethernet (1500 MTU — payload 1472)
+# Test Ethernet (1500 MTU - payload 1472)
 ping -M do -s 1472 -c 3 10.0.0.1
 echo "Ethernet 1500 MTU test"
 
-# Test PPPoE (1492 MTU — payload 1464)
+# Test PPPoE (1492 MTU - payload 1464)
 ping -M do -s 1464 -c 3 10.0.0.1
 echo "PPPoE 1492 MTU test"
 
-# Test WireGuard (1420 MTU — payload 1392)
+# Test WireGuard (1420 MTU - payload 1392)
 ping -M do -s 1392 -c 3 10.0.0.1
 echo "WireGuard 1420 MTU test"
 
-# Test VXLAN (1450 MTU — payload 1422)
+# Test VXLAN (1450 MTU - payload 1422)
 ping -M do -s 1422 -c 3 10.0.0.1
 echo "VXLAN 1450 MTU test"
 ```
@@ -115,7 +116,7 @@ sudo ip link set eth0 mtu 1400
 
 ## Quick Reference: Payload Sizes
 
-```
+```text
 Total Packet  Payload (-s)  Use case
 ------------  ------------  ----------------------------
    84 bytes     56 bytes    Default ping
@@ -127,4 +128,4 @@ Total Packet  Payload (-s)  Use case
  1420 bytes   1392 bytes    WireGuard
 ```
 
-MTU testing with the DF bit is the fastest way to identify and prove MTU black holes — a common but difficult-to-diagnose cause of VPN and WAN connectivity issues.
+MTU testing with the DF bit is the fastest way to identify and prove MTU black holes - a common but difficult-to-diagnose cause of VPN and WAN connectivity issues.

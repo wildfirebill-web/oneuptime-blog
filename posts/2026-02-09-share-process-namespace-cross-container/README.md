@@ -43,6 +43,7 @@ Verify process sharing:
 
 ```bash
 # Exec into the app container
+
 kubectl exec -it shared-process-pod -c app -- ps aux
 
 # You'll see processes from both containers

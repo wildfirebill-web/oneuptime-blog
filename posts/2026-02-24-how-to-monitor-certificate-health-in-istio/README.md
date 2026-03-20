@@ -25,6 +25,7 @@ Istiod exposes several Prometheus metrics related to certificate health:
 
 ```text
 # Root certificate expiry timestamp (Unix epoch)
+
 citadel_server_root_cert_expiry_timestamp
 
 # Total CSR requests received

@@ -6,7 +6,7 @@ Tags: OpenTofu, Dependencies, depends_on, Infrastructure as Code, HCL
 
 Description: Understand the difference between implicit and explicit dependencies in OpenTofu and when to use each to control resource creation order.
 
-OpenTofu automatically infers most resource dependencies by analyzing attribute references in your configuration. However, some ordering requirements cannot be expressed through references alone — for those, you use `depends_on`. Understanding both types keeps your configuration clean and avoids hidden ordering bugs.
+OpenTofu automatically infers most resource dependencies by analyzing attribute references in your configuration. However, some ordering requirements cannot be expressed through references alone - for those, you use `depends_on`. Understanding both types keeps your configuration clean and avoids hidden ordering bugs.
 
 ## Implicit Dependencies
 
@@ -26,7 +26,7 @@ resource "aws_subnet" "public" {
 ```
 
 In the graph:
-```
+```text
 aws_subnet.public -> aws_vpc.main
 ```
 
@@ -34,7 +34,7 @@ No extra configuration is needed. This is the preferred and most common form of 
 
 ## Explicit Dependencies with depends_on
 
-An explicit dependency is declared with the `depends_on` meta-argument. Use it when a resource relies on the *side effects* of another resource rather than its attributes — for example, waiting for an IAM policy to propagate before a Lambda function uses it.
+An explicit dependency is declared with the `depends_on` meta-argument. Use it when a resource relies on the *side effects* of another resource rather than its attributes - for example, waiting for an IAM policy to propagate before a Lambda function uses it.
 
 ```hcl
 resource "aws_iam_role_policy_attachment" "lambda_exec" {
@@ -85,11 +85,12 @@ Overusing `depends_on` reduces parallelism and can cause cascading rebuilds. For
 
 ```hcl
 # BAD: unnecessary depends_on that prevents parallel creation
+
 resource "aws_s3_bucket" "logs" { bucket = "my-logs" }
 
 resource "aws_s3_bucket" "data" {
   bucket = "my-data"
-  # These two buckets have no relationship — remove the depends_on
+  # These two buckets have no relationship - remove the depends_on
   depends_on = [aws_s3_bucket.logs]
 }
 ```
@@ -107,4 +108,4 @@ Both implicit and explicit dependencies appear as edges in the graph output.
 
 ## Conclusion
 
-Prefer implicit dependencies expressed through attribute references — they are self-documenting and automatically maintained. Reserve `depends_on` for cases where resource creation order cannot be inferred from attribute references alone, such as IAM propagation delays or cross-module side effects.
+Prefer implicit dependencies expressed through attribute references - they are self-documenting and automatically maintained. Reserve `depends_on` for cases where resource creation order cannot be inferred from attribute references alone, such as IAM propagation delays or cross-module side effects.

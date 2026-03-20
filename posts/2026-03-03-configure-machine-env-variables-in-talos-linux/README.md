@@ -18,6 +18,7 @@ Machine environment variables are defined under `machine.env` in the Talos machi
 
 ```yaml
 # Set machine-level environment variables
+
 machine:
   env:
     HTTPS_PROXY: http://proxy.company.com:8080

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, React, JavaScript, Frontend, NGINX, Linux
+Tags: RHEL, React, JavaScript, Frontend, Nginx, Linux
 
 Description: Learn how to deploy a React Application with Nginx on RHEL with step-by-step instructions, configuration examples, and best practices.
 

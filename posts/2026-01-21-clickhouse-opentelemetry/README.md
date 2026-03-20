@@ -498,6 +498,7 @@ LIMIT 20
 
 ```yaml
 # Increase batch size for throughput
+
 processors:
   batch:
     send_batch_size: 500000

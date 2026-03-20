@@ -31,6 +31,7 @@ Choosing an IPAM tool for IPv6 requires evaluating IPv6-specific features: hiera
 
 ```bash
 # Install NetBox with Docker Compose
+
 git clone https://github.com/netbox-community/netbox-docker.git
 cd netbox-docker
 docker compose pull
@@ -140,4 +141,4 @@ flowchart TD
 
 ## Conclusion
 
-For most organizations, NetBox is the best starting point for IPv6 IPAM — its excellent REST API enables automation, its prefix hierarchy supports the IPv6 address plan structure, and its open source license eliminates licensing costs. Choose a commercial DDI solution (Infoblox, BlueCat, EfficientIP) only when you need integrated DNS and DHCPv6 management at enterprise scale, automated SLAAC address discovery, or vendor-backed SLA support. Evaluate phpIPAM for small organizations that need a simple UI without developer resources for NetBox customization.
+For most organizations, NetBox is the best starting point for IPv6 IPAM - its excellent REST API enables automation, its prefix hierarchy supports the IPv6 address plan structure, and its open source license eliminates licensing costs. Choose a commercial DDI solution (Infoblox, BlueCat, EfficientIP) only when you need integrated DNS and DHCPv6 management at enterprise scale, automated SLAAC address discovery, or vendor-backed SLA support. Evaluate phpIPAM for small organizations that need a simple UI without developer resources for NetBox customization.

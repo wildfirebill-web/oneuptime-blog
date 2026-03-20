@@ -16,6 +16,7 @@ Compliance as code means expressing regulatory and security requirements as exec
 
 ```yaml
 # roles/cis_benchmark/tasks/ssh.yml
+
 # CIS Benchmark 5.2.8 - Ensure SSH root login is disabled
 
 - name: "CIS 5.2.8 - Ensure SSH root login is disabled"

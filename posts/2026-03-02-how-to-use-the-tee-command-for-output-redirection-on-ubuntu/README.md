@@ -14,6 +14,7 @@ Description: Learn how to use the tee command on Ubuntu to split output to multi
 
 ```bash
 # Write output to a file AND show it on screen
+
 echo "Hello, World!" | tee output.txt
 
 # The output appears on terminal AND gets written to output.txt

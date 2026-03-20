@@ -30,6 +30,7 @@ flowchart TD
 
 ```yaml
 # service-account.yaml
+
 # A dedicated service account for a web application.
 # Always create specific service accounts instead of using "default".
 apiVersion: v1

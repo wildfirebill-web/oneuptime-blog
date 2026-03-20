@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, 6VPE, Juniper, JunOS, MPLS, BGP, VRF, L3VPN, Routing Instance
+Tags: IPv6, 6VPE, Juniper, Junos, MPLS, BGP, VRF, L3VPN, Routing Instance
 
 Description: Configure 6VPE (IPv6 VPN Provider Edge) on Juniper JunOS routers using routing instances, VPNv6 address family in MP-BGP, and route distinguisher/target policies for enterprise IPv6 VPN services.
 
@@ -12,8 +12,9 @@ Juniper JunOS implements 6VPE using routing instances (similar to Cisco VRFs) wi
 
 ## JunOS Routing Instance (VRF) for 6VPE
 
-```
+```text
 # Create routing instance for Customer A IPv6 VPN
+
 set routing-instances CUSTOMER-A instance-type vrf
 set routing-instances CUSTOMER-A route-distinguisher 65000:100
 set routing-instances CUSTOMER-A vrf-target target:65000:100
@@ -34,7 +35,7 @@ set routing-instances CUSTOMER-B interface ge-0/0/2.0
 
 ## JunOS MP-BGP VPNv6 Address Family
 
-```
+```bash
 # PE1 - Enable VPNv6 (inet6-vpn) in iBGP group
 set protocols bgp group PE-IBGP type internal
 set protocols bgp group PE-IBGP local-address 10.0.0.1
@@ -55,7 +56,7 @@ set routing-instances CUSTOMER-A protocols bgp group CE-A-BGP export EXPORT-CE-R
 
 ## Complete PE1 6VPE Configuration
 
-```
+```text
 # PE1 Full Configuration
 
 # MPLS backbone
@@ -135,7 +136,7 @@ ping routing-instance CUSTOMER-A inet6 2001:db8:cust-b-site1::10
 
 ## Hub-and-Spoke 6VPE (Shared Services)
 
-```
+```python
 # Hub site (data center) with shared services reachable by all VPNs
 # Use extra RT for spoke import
 

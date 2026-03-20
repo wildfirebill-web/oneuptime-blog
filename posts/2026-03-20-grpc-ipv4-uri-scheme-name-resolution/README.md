@@ -83,7 +83,7 @@ response = stub.SayHello(helloworld_pb2.HelloRequest(name="World"))
 print(response.message)
 ```
 
-## Python — Multiple Addresses
+## Python - Multiple Addresses
 
 ```python
 channel = grpc.insecure_channel(

@@ -53,6 +53,7 @@ First, add it to shared preload libraries:
 
 ```bash
 # Add pg_stat_statements to shared_preload_libraries
+
 az postgres flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-pg-server \

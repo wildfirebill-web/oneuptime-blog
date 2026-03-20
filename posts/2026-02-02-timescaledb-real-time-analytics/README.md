@@ -57,6 +57,7 @@ Running TimescaleDB in Docker provides the quickest way to get started. The foll
 
 ```bash
 # Pull and run TimescaleDB with PostgreSQL 15
+
 docker run -d --name timescaledb \
   -p 5432:5432 \
   -e POSTGRES_PASSWORD=password \

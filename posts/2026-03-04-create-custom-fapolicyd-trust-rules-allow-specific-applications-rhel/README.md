@@ -16,6 +16,7 @@ fapolicyd uses multiple trust sources. RPM-installed packages are trusted by def
 
 ```bash
 # Check current trust sources
+
 cat /etc/fapolicyd/fapolicyd.trust
 
 # View the compiled rules

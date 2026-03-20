@@ -32,6 +32,7 @@ Status processors control how many applications the controller reconciles concur
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

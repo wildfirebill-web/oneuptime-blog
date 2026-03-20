@@ -47,6 +47,7 @@ The Application Gateway requires its own dedicated subnet. No other resources ca
 
 ```bash
 # Create a resource group
+
 az group create \
     --name my-resource-group \
     --location eastus

@@ -47,6 +47,7 @@ With `externalTrafficPolicy: Cluster`, traffic flows like this:
 
 ```yaml
 # service-cluster-policy.yaml
+
 # Default behavior - traffic distributed across all nodes.
 # Client source IP will be masked by SNAT.
 apiVersion: v1

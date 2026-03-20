@@ -24,6 +24,7 @@ Start by defining the minimum permissions each team needs:
 
 ```hcl
 # iam/team-roles.tf
+
 # Create least-privilege IAM roles for each team's Terraform operations
 
 resource "aws_iam_role" "terraform_team" {

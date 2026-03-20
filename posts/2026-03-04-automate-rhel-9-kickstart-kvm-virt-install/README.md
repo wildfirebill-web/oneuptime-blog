@@ -18,6 +18,7 @@ First, verify that your hardware supports virtualization:
 
 ```bash
 # Check for virtualization extensions in the CPU
+
 grep -E '(vmx|svm)' /proc/cpuinfo | head -1
 ```
 

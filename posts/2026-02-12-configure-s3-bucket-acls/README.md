@@ -36,6 +36,7 @@ Check your bucket's ownership setting:
 
 ```bash
 # Check if ACLs are enabled or disabled
+
 aws s3api get-bucket-ownership-controls \
     --bucket my-bucket
 

@@ -53,6 +53,7 @@ The first step is understanding where your data flows. You cannot optimize what 
 
 ```bash
 # Get data transfer costs from AWS Cost Explorer
+
 aws ce get-cost-and-usage \
   --time-period Start=2026-01-01,End=2026-01-31 \
   --granularity MONTHLY \

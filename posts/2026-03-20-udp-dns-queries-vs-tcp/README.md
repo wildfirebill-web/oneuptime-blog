@@ -8,11 +8,11 @@ Description: Understand when DNS uses UDP versus TCP, how the fallback mechanism
 
 ## Introduction
 
-DNS primarily uses UDP for its query/response model — a single 512-byte UDP packet is sufficient for most queries. TCP is used as a fallback when responses exceed 512 bytes (or 4096 bytes with EDNS0), when zone transfers are requested, or when UDP connectivity is unreliable. Understanding this distinction helps debug DNS failures and test DNS behavior in both transport modes.
+DNS primarily uses UDP for its query/response model - a single 512-byte UDP packet is sufficient for most queries. TCP is used as a fallback when responses exceed 512 bytes (or 4096 bytes with EDNS0), when zone transfers are requested, or when UDP connectivity is unreliable. Understanding this distinction helps debug DNS failures and test DNS behavior in both transport modes.
 
 ## When DNS Uses UDP vs TCP
 
-```
+```text
 DNS uses UDP when:
   - Response fits in 512 bytes (traditional limit)
   - Response fits in EDNS0 advertised buffer size (typically 4096 bytes)
@@ -32,6 +32,7 @@ DNS uses TCP when:
 
 ```bash
 # DNS query using UDP (default):
+
 dig google.com
 # Shows: ;; Query time: X msec
 # Typically uses UDP port 53
@@ -130,4 +131,4 @@ nmap -sU -sS -p 53 8.8.8.8
 
 ## Conclusion
 
-DNS uses UDP by default for efficiency — the 8-byte UDP header versus 20-byte TCP header matters when handling millions of queries. TCP is the fallback for large responses (TC bit mechanism) and mandatory for zone transfers. Always ensure your DNS servers and firewalls allow both UDP/53 and TCP/53. Use `dig +tcp` to test DNS over TCP directly, and monitor for TC bit responses in your DNS traffic — many TC responses indicate your clients need EDNS0 buffer size increases.
+DNS uses UDP by default for efficiency - the 8-byte UDP header versus 20-byte TCP header matters when handling millions of queries. TCP is the fallback for large responses (TC bit mechanism) and mandatory for zone transfers. Always ensure your DNS servers and firewalls allow both UDP/53 and TCP/53. Use `dig +tcp` to test DNS over TCP directly, and monitor for TC bit responses in your DNS traffic - many TC responses indicate your clients need EDNS0 buffer size increases.

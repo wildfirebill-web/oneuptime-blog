@@ -28,6 +28,7 @@ For a CloudFront setup, you don't need S3 static website hosting enabled. CloudF
 
 ```bash
 # Create the bucket (no need for website hosting)
+
 aws s3api create-bucket \
   --bucket my-cdn-site \
   --region us-east-1

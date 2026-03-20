@@ -1,4 +1,4 @@
-# How to Set Up Tekton Pipelines with Rancher
+# How to Set Up Tekton Pipelines with Rancher - Pipelines Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Tekton is a cloud-native CI/CD framework that runs entirely on Kubernetes. Insta
 
 ```bash
 # Install the core Tekton Pipelines components
+
 kubectl apply -f \
   https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 

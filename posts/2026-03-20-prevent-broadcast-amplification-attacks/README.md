@@ -27,8 +27,8 @@ The amplification factor = number of hosts on target subnet.
 
 ## Layer 1: Disable Directed Broadcasts at the Router
 
-```
-! Cisco IOS — already default since IOS 12.0; verify explicitly
+```text
+! Cisco IOS - already default since IOS 12.0; verify explicitly
 interface GigabitEthernet0/0
  no ip directed-broadcast
 
@@ -42,7 +42,8 @@ show running-config | include directed-broadcast
 ## Layer 2: Configure Hosts to Ignore Broadcast Pings
 
 ```bash
-# Linux — ignore ICMP echo requests to broadcast/multicast
+# Linux - ignore ICMP echo requests to broadcast/multicast
+
 echo 1 | sudo tee /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
 
 # Make permanent
@@ -69,7 +70,7 @@ The Fraggle attack uses UDP echo (port 7) and discard (port 9):
 sudo iptables -A INPUT -p udp --dport 7 -d 255.255.255.255 -j DROP
 sudo iptables -A INPUT -p udp --dport 7 -m addrtype --dst-type BROADCAST -j DROP
 
-# Block UDP port 9 (discard) — note this conflicts with WoL; adjust if needed
+# Block UDP port 9 (discard) - note this conflicts with WoL; adjust if needed
 sudo iptables -A INPUT -p udp --dport 9 -d 255.255.255.255 -j DROP
 ```
 

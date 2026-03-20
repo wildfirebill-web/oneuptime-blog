@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, WebSocket, Containers, Networking, NGINX, Reverse Proxy, Real-Time
+Tags: Docker, WebSocket, Containers, Networking, Nginx, Reverse Proxy, Real-Time
 
 Description: A practical guide to configuring Docker containers for reliable WebSocket connections in production environments.
 
@@ -61,6 +61,7 @@ The Dockerfile for this service:
 
 ```dockerfile
 # Dockerfile - Lightweight Node.js image for the WebSocket server
+
 FROM node:20-alpine
 
 WORKDIR /app

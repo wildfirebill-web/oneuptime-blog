@@ -48,6 +48,7 @@ network:
 # Create a base image with cloud-init ready for IPv6
 
 # Download a cloud image
+
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 
 # Customize the image (remove machine-id so each VM gets unique ID)
@@ -85,7 +86,7 @@ qemu-system-x86_64 \
 
 ## VMware Template with IPv6 (vSphere customization)
 
-```
+```text
 # VMware vSphere guest customization spec for IPv6
 
 1. vSphere Client → Policies and Profiles → VM Customization Specifications

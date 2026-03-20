@@ -24,6 +24,7 @@ Check Service endpoints to confirm they're empty or incomplete.
 
 ```bash
 # Check Service configuration
+
 kubectl get service myapp -n default
 
 # Output:

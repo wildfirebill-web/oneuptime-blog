@@ -22,6 +22,7 @@ Configure ZooKeeper and Kafka:
 
 ```bash
 # Configure ZooKeeper
+
 cat <<EOF > /opt/kafka/config/zookeeper.properties
 dataDir=/var/lib/zookeeper
 clientPort=2181

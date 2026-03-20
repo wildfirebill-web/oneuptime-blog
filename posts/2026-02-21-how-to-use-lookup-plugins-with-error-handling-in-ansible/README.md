@@ -16,6 +16,7 @@ When a lookup plugin fails, Ansible raises an `AnsibleError` and halts execution
 
 ```yaml
 # Default behavior: lookup failure stops the playbook
+
 - hosts: localhost
   gather_facts: false
   tasks:

@@ -35,6 +35,7 @@ The delimiter (`EOT` in this case) can be any identifier. Common choices are `EO
 
 ```hcl
 # All of these work
+
 user_data = <<EOT
 ...content...
 EOT

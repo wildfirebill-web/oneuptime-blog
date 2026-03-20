@@ -16,6 +16,7 @@ Output values in OpenTofu expose resource attributes and computed values after a
 # outputs.tf
 
 # Simple output
+
 output "vpc_id" {
   value = aws_vpc.main.id
 }

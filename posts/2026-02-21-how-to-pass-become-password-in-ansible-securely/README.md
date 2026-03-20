@@ -27,6 +27,7 @@ The simplest and most secure method for interactive use.
 
 ```bash
 # Prompt for the become password at runtime
+
 ansible-playbook playbooks/deploy.yml --ask-become-pass
 
 # Shorthand

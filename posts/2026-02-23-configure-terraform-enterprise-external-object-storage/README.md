@@ -38,6 +38,7 @@ Before starting, make sure you have:
 
 ```bash
 # Create the S3 bucket for TFE object storage
+
 aws s3api create-bucket \
   --bucket tfe-object-storage-prod \
   --region us-east-1

@@ -26,6 +26,7 @@ This guide also introduces the `cilium policy trace` command, which is your most
 
 ```yaml
 # basic-deathstar-policy.yaml
+
 apiVersion: "cilium.io/v2"
 kind: CiliumNetworkPolicy
 metadata:

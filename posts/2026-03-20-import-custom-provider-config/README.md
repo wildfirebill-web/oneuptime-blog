@@ -8,12 +8,13 @@ Description: Learn how to specify custom provider configurations when importing 
 
 ## Introduction
 
-By default, import blocks use the default provider configuration. However, when importing resources that require a specific provider configuration — such as resources in a different AWS account, a specific region, or requiring an IAM role assumption — you can specify the provider with the `provider` argument.
+By default, import blocks use the default provider configuration. However, when importing resources that require a specific provider configuration - such as resources in a different AWS account, a specific region, or requiring an IAM role assumption - you can specify the provider with the `provider` argument.
 
 ## Basic Provider Specification
 
 ```hcl
 # Provider configurations
+
 provider "aws" {
   region = "us-east-1"
   alias  = "us_east"

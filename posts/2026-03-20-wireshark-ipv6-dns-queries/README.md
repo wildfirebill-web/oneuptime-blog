@@ -12,6 +12,7 @@ IPv6 DNS analysis in Wireshark covers two distinct scenarios: (1) DNS AAAA recor
 
 ```wireshark
 # Show all DNS queries for AAAA records (regardless of transport)
+
 dns.qry.type == 28
 
 # Show AAAA queries and their responses
@@ -129,4 +130,4 @@ dns.qry.name == "www.example.com" && dns.qry.type == 28
 # Then: Analyze → Follow → UDP Stream
 ```
 
-Analyzing DNS AAAA queries in Wireshark is essential for diagnosing IPv6 service reachability issues — most IPv6 connectivity problems start with DNS, and Wireshark makes it easy to verify that AAAA records are being requested and correctly returned.
+Analyzing DNS AAAA queries in Wireshark is essential for diagnosing IPv6 service reachability issues - most IPv6 connectivity problems start with DNS, and Wireshark makes it easy to verify that AAAA records are being requested and correctly returned.

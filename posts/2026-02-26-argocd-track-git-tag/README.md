@@ -27,6 +27,7 @@ To configure an ArgoCD application to track a specific tag, set the `targetRevis
 
 ```yaml
 # production-app.yaml - tracks a specific tag
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

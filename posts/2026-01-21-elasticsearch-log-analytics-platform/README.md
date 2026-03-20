@@ -59,6 +59,7 @@ flowchart LR
 
 ```yaml
 # elasticsearch.yml for master node
+
 cluster.name: log-analytics
 node.name: master-1
 node.roles: [master]

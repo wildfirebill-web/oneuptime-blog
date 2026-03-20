@@ -30,6 +30,7 @@ The single most effective optimization is breaking your monolithic state into sm
 
 ```hcl
 # networking/main.tf
+
 # Manages VPCs, subnets, route tables, etc.
 terraform {
   backend "s3" {

@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward GlobalNetworkSet config
 
 ```bash
 # Verify current GlobalNetworkSet resources
+
 calicoctl get globalnetworkset -o yaml
 
 # Check the effective configuration on a specific node

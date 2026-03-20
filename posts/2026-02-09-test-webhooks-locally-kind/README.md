@@ -18,6 +18,7 @@ Install kind and create a cluster:
 
 ```bash
 # Install kind
+
 brew install kind  # macOS
 # or
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64

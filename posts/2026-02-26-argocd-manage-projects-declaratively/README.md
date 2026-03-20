@@ -32,6 +32,7 @@ Here is a basic AppProject manifest:
 
 ```yaml
 # projects/team-backend.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

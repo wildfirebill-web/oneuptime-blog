@@ -24,6 +24,7 @@ For remote teams, WSP is almost always the better choice.
 
 ```bash
 # Create a WorkSpace with WSP protocol
+
 aws workspaces create-workspaces \
     --workspaces '[{
         "DirectoryId": "d-abc123",

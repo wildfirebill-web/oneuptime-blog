@@ -32,6 +32,7 @@ The `loop` keyword was introduced in Ansible 2.5 as a cleaner replacement for `w
 
 ```yaml
 # Simple list iteration
+
 - name: Install packages
   apt:
     name: "{{ item }}"

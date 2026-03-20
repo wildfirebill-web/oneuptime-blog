@@ -123,6 +123,7 @@ spec:
 
 ```yaml
 # Internal service communication
+
 apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:

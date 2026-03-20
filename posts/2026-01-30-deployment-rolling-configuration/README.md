@@ -215,6 +215,7 @@ Check deployment progress with the following command.
 
 ```bash
 # View deployment status and progress
+
 kubectl rollout status deployment/web-application -n production
 
 # Sample output during rolling update:

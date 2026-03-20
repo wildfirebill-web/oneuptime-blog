@@ -16,6 +16,7 @@ Description: Configure HAProxy 2.6+ to terminate QUIC/HTTP3 connections on IPv6 
 
 ```bash
 # Check HAProxy version and QUIC support
+
 haproxy -vv 2>&1 | grep -E "QUIC|quic|version"
 
 # Look for: "Features: ... QUIC" in the output
@@ -63,7 +64,7 @@ defaults
 
 # QUIC/HTTP3 frontend on IPv6
 frontend https_ipv6
-    # Bind on all IPv6 addresses — both TCP (HTTP/2) and UDP (QUIC/HTTP3)
+    # Bind on all IPv6 addresses - both TCP (HTTP/2) and UDP (QUIC/HTTP3)
     bind [::]:443 ssl crt /etc/ssl/certs/example.com.pem alpn h2,http/1.1
     bind [::]:443 quic crt /etc/ssl/certs/example.com.pem alpn h3
 

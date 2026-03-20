@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # Can you reach the remote gateway?
+
 ping6 -c 3 2001:db8:gw2::1
 
 # Is UDP 500 (IKE) reachable? Use netcat or nmap
@@ -39,7 +40,7 @@ nmap -6 -p U:500,U:4500 2001:db8:gw2::1
 # Check for blocking firewalls
 tcpdump -i eth0 'udp port 500 and host 2001:db8:gw2::1' &
 swanctl --initiate conn:my-vpn
-# Should see outbound packet — if no response, remote firewall is blocking
+# Should see outbound packet - if no response, remote firewall is blocking
 ```
 
 ## Step 2: Analyze IKEv2 Negotiation
@@ -74,7 +75,7 @@ swanctl --initiate conn:my-vpn
 
 ## Common Failure: NO_PROPOSAL_CHOSEN
 
-```
+```text
 Error in log:
 "received NO_PROPOSAL_CHOSEN notify error"
 → Cipher suite mismatch between initiator and responder
@@ -95,7 +96,7 @@ proposals = aes256-sha256-ecp256,aes256-sha256-modp2048
 
 ## Common Failure: AUTHENTICATION_FAILED
 
-```
+```text
 Error in log:
 "received AUTHENTICATION_FAILED notify error"
 
@@ -129,7 +130,7 @@ charon {
 
 ## Common Failure: CHILD_SA Installation Fails
 
-```
+```text
 IKE SA established but CHILD_SA fails:
 "TS_UNACCEPTABLE: traffic selectors didn't match"
 → local_ts/remote_ts don't match between peers
@@ -152,7 +153,7 @@ remote_ts = 2001:db8:site1::/48
 sysctl net.ipv6.conf.all.forwarding
 # Must be 1
 
-# 2. Check routing — does a route exist to remote site?
+# 2. Check routing - does a route exist to remote site?
 ip -6 route | grep site2
 
 # 3. Check if traffic matches IPsec policy
@@ -210,4 +211,4 @@ journalctl -u strongswan --since "5 minutes ago" | tail -50
 
 ## Summary
 
-IPv6 IPsec troubleshooting proceeds in order: network reachability → IKE negotiation → authentication → CHILD SA installation → traffic flow. The most common failures are: NO_PROPOSAL_CHOSEN (mismatched cipher suites — verify both sides have identical `proposals`/`esp_proposals`), AUTHENTICATION_FAILED (wrong PSK or untrusted certificate), TS_UNACCEPTABLE (traffic selector mismatch — `local_ts`/`remote_ts` must mirror on each side), and MTU issues (large transfers fail due to ESP overhead). Enable `ike = 3` in charon.conf for detailed negotiation logs.
+IPv6 IPsec troubleshooting proceeds in order: network reachability → IKE negotiation → authentication → CHILD SA installation → traffic flow. The most common failures are: NO_PROPOSAL_CHOSEN (mismatched cipher suites - verify both sides have identical `proposals`/`esp_proposals`), AUTHENTICATION_FAILED (wrong PSK or untrusted certificate), TS_UNACCEPTABLE (traffic selector mismatch - `local_ts`/`remote_ts` must mirror on each side), and MTU issues (large transfers fail due to ESP overhead). Enable `ike = 3` in charon.conf for detailed negotiation logs.

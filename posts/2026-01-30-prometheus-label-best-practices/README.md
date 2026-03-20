@@ -35,6 +35,7 @@ Prometheus label names should follow snake_case convention. This keeps them cons
 
 ```python
 # Good - snake_case labels
+
 http_requests_total{http_method="GET", status_code="200", service_name="api-gateway"}
 
 # Bad - inconsistent casing

@@ -107,6 +107,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 meter = metrics.get_meter("my-service")
 
 # Create a histogram for request duration
+
 request_duration = meter.create_histogram(
     name="http.server.request.duration",
     description="HTTP request duration",

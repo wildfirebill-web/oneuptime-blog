@@ -45,6 +45,7 @@ btrfs --version
 
 ```bash
 # Format a disk with Btrfs
+
 sudo mkfs.btrfs /dev/sdb
 
 # With a label

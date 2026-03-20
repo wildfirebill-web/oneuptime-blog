@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, RFC 1918, Private Addresses, NAT, IP Addressing
 
-Description: RFC 1918 defines three blocks of IPv4 address space reserved for private networks that are not routed on the public internet, enabling organizations to use these addresses internally with NAT for internet access.
+Description: RFC 1918 defines three blocks of IPv4 address space reserved for private networks that are not routed on the public internet, enabling organizations to use these addresses internally with NAT for...
 
 ## The Three RFC 1918 Blocks
 
@@ -28,6 +28,7 @@ def is_private(ip: str) -> bool:
     return ipaddress.IPv4Address(ip).is_private
 
 # Test cases
+
 addresses = [
     "10.0.0.1",
     "172.16.5.10",
@@ -53,7 +54,7 @@ for addr in ["172.15.255.255", "172.16.0.0", "172.31.255.255", "172.32.0.0"]:
 ```
 
 Output:
-```
+```text
 172.15.255.255 in 172.16/12: False
 172.16.0.0 in 172.16/12: True
 172.31.255.255 in 172.16/12: True

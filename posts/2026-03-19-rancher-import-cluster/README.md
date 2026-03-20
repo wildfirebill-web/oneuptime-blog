@@ -21,6 +21,7 @@ Before importing, verify your target cluster is healthy:
 
 ```bash
 # Switch to the target cluster's kubeconfig
+
 export KUBECONFIG=/path/to/target-cluster-kubeconfig
 
 # Verify cluster is accessible

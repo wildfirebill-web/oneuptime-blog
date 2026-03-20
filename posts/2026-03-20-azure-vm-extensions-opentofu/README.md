@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, VM Extensions, Custom Script, Diagnostics, Monitoring, Infrastructure as Code
+Tags: OpenTofu, Azure, VM Extension, Custom Scripts, Diagnostics, Monitoring, Infrastructure as Code
 
 Description: Learn how to configure Azure VM extensions with OpenTofu to automate post-deployment configuration, monitoring, and management tasks on Linux and Windows VMs.
 
@@ -71,6 +71,7 @@ resource "azurerm_virtual_machine_extension" "ama" {
 
 ```hcl
 # Allow Azure AD users to SSH into Linux VMs
+
 resource "azurerm_virtual_machine_extension" "aad_login" {
   name                 = "AADSSHLoginForLinux"
   virtual_machine_id   = azurerm_linux_virtual_machine.main.id

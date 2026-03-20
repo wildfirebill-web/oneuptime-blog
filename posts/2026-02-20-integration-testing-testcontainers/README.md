@@ -51,6 +51,7 @@ sequenceDiagram
 
 ```python
 # test_user_repository.py
+
 # Integration tests for a user repository using a real PostgreSQL database
 
 import pytest

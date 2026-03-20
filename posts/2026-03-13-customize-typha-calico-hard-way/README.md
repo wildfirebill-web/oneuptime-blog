@@ -20,6 +20,7 @@ The default port is 5473. To change it:
 kubectl set env deployment/calico-typha -n calico-system TYPHA_PORT=5474
 
 # Update the Service
+
 kubectl patch service calico-typha -n calico-system --patch '{
   "spec": {"ports": [{"name": "calico-typha", "port": 5474, "targetPort": 5474}]}
 }'

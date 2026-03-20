@@ -14,6 +14,7 @@ LogQL is Grafana Loki's query language. It supports filtering log streams by lab
 
 ```logql
 # Exact IPv6 address match in log content
+
 {job="nginx"} |= "2001:db8::1"
 
 # Any IPv6 address (contains at least two colons)
@@ -28,7 +29,7 @@ LogQL is Grafana Loki's query language. It supports filtering log streams by lab
 # Link-local fe80::
 {job="nginx"} |~ "fe80::[0-9a-fA-F:%]+"
 
-# ULA (fc00::/7) — starts with fc or fd
+# ULA (fc00::/7) - starts with fc or fd
 {job="app"} |~ `f[cd][0-9a-fA-F]{2}:`
 ```
 
@@ -145,4 +146,4 @@ count by (remote_addr) (
 
 ## Conclusion
 
-LogQL provides flexible IPv6 filtering through both stream label selectors and line filter expressions. Assign `ip_version` as a Loki label during log collection to enable efficient stream selection — label-based filtering is faster than full-text search. For subnet-based analysis, extract the IPv6 field with `json`, `pattern`, or `regexp` parsers, then apply regex comparison operators. Use LogQL metric queries with `rate()` and `sum by()` to build IPv6 traffic dashboards in Grafana.
+LogQL provides flexible IPv6 filtering through both stream label selectors and line filter expressions. Assign `ip_version` as a Loki label during log collection to enable efficient stream selection - label-based filtering is faster than full-text search. For subnet-based analysis, extract the IPv6 field with `json`, `pattern`, or `regexp` parsers, then apply regex comparison operators. Use LogQL metric queries with `rate()` and `sum by()` to build IPv6 traffic dashboards in Grafana.

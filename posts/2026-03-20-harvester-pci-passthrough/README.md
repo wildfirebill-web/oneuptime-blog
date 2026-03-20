@@ -8,7 +8,7 @@ Description: Learn how to configure PCI passthrough in Harvester to give virtual
 
 ## Introduction
 
-PCI passthrough allows a virtual machine to directly own and use a physical PCIe device — bypassing the hypervisor and achieving near-native device performance. Common use cases include assigning NVIDIA/AMD GPUs for AI/ML workloads, NVMe storage controllers for ultra-low latency, and specialized networking cards. In Harvester, PCI passthrough is implemented through VFIO (Virtual Function I/O) and KubeVirt's `hostDevices` feature.
+PCI passthrough allows a virtual machine to directly own and use a physical PCIe device - bypassing the hypervisor and achieving near-native device performance. Common use cases include assigning NVIDIA/AMD GPUs for AI/ML workloads, NVMe storage controllers for ultra-low latency, and specialized networking cards. In Harvester, PCI passthrough is implemented through VFIO (Virtual Function I/O) and KubeVirt's `hostDevices` feature.
 
 ## How PCI Passthrough Works
 
@@ -36,6 +36,7 @@ graph TD
 
 ```bash
 # SSH into a Harvester node
+
 ssh rancher@192.168.1.11
 
 # Check if IOMMU is already enabled

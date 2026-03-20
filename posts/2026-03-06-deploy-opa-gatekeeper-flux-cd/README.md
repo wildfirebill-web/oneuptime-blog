@@ -29,6 +29,7 @@ Register the Gatekeeper Helm chart repository with Flux.
 
 ```yaml
 # infrastructure/sources/gatekeeper-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

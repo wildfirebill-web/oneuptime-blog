@@ -43,6 +43,7 @@ First, install the required packages. LangChain has a callback system that we'll
 
 ```bash
 # Install LangChain and OpenTelemetry packages
+
 pip install langchain langchain-openai langchain-community
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 ```

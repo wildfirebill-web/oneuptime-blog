@@ -355,6 +355,7 @@ Verify policies are applied to the correct workloads.
 
 ```bash
 # List all authorization policies
+
 kubectl get authorizationpolicies -A
 
 # Check which policies apply to a pod

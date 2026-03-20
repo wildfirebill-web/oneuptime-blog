@@ -43,6 +43,7 @@ Use the AWS CLI to check your current quota values.
 
 ```bash
 # List all ECS service quotas
+
 aws service-quotas list-service-quotas \
   --service-code ecs \
   --query 'Quotas[].{Name:QuotaName,Value:Value,Adjustable:Adjustable}' \

@@ -78,6 +78,7 @@ Configure the health endpoint in your application properties. By default, Actuat
 # application.yml
 
 # Management server configuration
+
 management:
   endpoints:
     web:

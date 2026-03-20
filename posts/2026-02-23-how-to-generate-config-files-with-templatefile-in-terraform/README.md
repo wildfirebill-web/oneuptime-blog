@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Templatefile, Configuration Management, Infrastructure as Code, DevOps
+Tags: Terraform, templatefile, Configuration Management, Infrastructure as Code, DevOps
 
 Description: Learn how to use Terraform's templatefile function to generate application configuration files dynamically with variable substitution, loops, and conditionals.
 
@@ -22,6 +22,7 @@ The function signature is simple:
 
 ```hcl
 # templatefile(path, variables)
+
 # path: relative path to the template file
 # variables: a map of values to substitute
 ```

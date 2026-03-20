@@ -44,6 +44,7 @@ Before starting, ensure you have:
 
 ```bash
 # Create a Basic tier instance
+
 gcloud redis instances create my-redis-basic \
     --size=1 \
     --region=us-central1 \

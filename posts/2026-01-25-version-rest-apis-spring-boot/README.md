@@ -423,6 +423,7 @@ public class UserController {
 
 ```bash
 # Request V1 format
+
 curl -H "Accept: application/vnd.example.api.v1+json" \
      https://api.example.com/api/users
 

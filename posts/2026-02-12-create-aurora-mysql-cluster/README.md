@@ -37,6 +37,7 @@ Aurora needs to know which subnets to use:
 
 ```bash
 # Create a subnet group for Aurora
+
 aws rds create-db-subnet-group \
   --db-subnet-group-name myapp-aurora-subnets \
   --db-subnet-group-description "Subnets for Aurora MySQL cluster" \

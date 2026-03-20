@@ -45,6 +45,7 @@ sequenceDiagram
 ```toml
 [dependencies]
 # HTTP client
+
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 

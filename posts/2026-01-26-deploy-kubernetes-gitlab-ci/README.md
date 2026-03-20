@@ -22,6 +22,7 @@ First, install the agent in your cluster:
 
 ```yaml
 # agent-config.yaml in your project
+
 gitops:
   manifest_projects:
     - id: your-group/your-project

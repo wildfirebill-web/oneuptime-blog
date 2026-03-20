@@ -1,4 +1,4 @@
-# How to Drain and Manage Swarm Nodes from Portainer
+# How to Drain and Manage Swarm Nodes from Portainer - Node
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Watch tasks migrate in **Swarm > Services**.
 
 ```bash
 # Check current node status
+
 docker node ls
 
 # Drain a specific node

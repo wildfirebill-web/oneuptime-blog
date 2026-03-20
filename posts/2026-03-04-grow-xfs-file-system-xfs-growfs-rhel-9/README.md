@@ -38,6 +38,7 @@ Before you can grow the filesystem, the underlying block device must have additi
 
 ```bash
 # Check available space in the volume group
+
 sudo vgs
 
 # Extend the logical volume

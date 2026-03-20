@@ -14,7 +14,7 @@ ISATAP (Intra-Site Automatic Tunnel Addressing Protocol, RFC 5214) was designed 
 
 ISATAP creates a virtual link where each node's IPv6 address encodes its IPv4 address:
 
-```
+```text
 IPv4 address: 192.0.2.10 = c000:020a (hex)
 
 ISATAP link-local: fe80::0:5efe:c000:020a
@@ -28,11 +28,11 @@ ISATAP global address (with prefix 2001:db8::/64):
   2001:db8::0:5efe:c000:020a
 ```
 
-The `0:5efe:` is the ISATAP identifier — any ISATAP address contains this marker.
+The `0:5efe:` is the ISATAP identifier - any ISATAP address contains this marker.
 
 ## Architecture
 
-```
+```text
 [ISATAP Host A]         [ISATAP Router]        [ISATAP Host B]
 IPv4: 192.0.2.10        IPv4: 192.0.2.1         IPv4: 192.0.2.20
 IPv6: ::5efe:c000:020a  IPv6: 2001:db8::1       IPv6: ::5efe:c000:0214
@@ -55,6 +55,7 @@ On Windows Server acting as ISATAP router:
 
 ```powershell
 # Enable ISATAP routing
+
 Set-NetIsatapConfiguration -State Enabled -Router "192.0.2.1"
 
 # Install routing role
@@ -108,14 +109,14 @@ isatap.example.com.  IN  A  192.0.2.1
 
 ISATAP embeds IPv4 addresses in IPv6 addresses. An attacker who knows the IPv4 addressing scheme can predict all ISATAP IPv6 addresses:
 
-```
+```text
 IPv4 range: 10.0.0.0/24 → ISATAP range: ::5efe:0a00:0000/120
 All 256 ISATAP addresses are predictable → trivial to scan
 ```
 
 ### 2. Modern Networks Don't Need It
 
-Modern Layer 2 switches handle IPv6 natively. There is no longer a reason to overlay IPv6 on IPv4 within a LAN — just configure native dual-stack.
+Modern Layer 2 switches handle IPv6 natively. There is no longer a reason to overlay IPv6 on IPv4 within a LAN - just configure native dual-stack.
 
 ### 3. Removal from OS
 
@@ -142,7 +143,7 @@ netsh interface isatap set state disabled
 ## Detect ISATAP Addresses on the Network
 
 ```bash
-# Linux — look for 5efe in addresses
+# Linux - look for 5efe in addresses
 ip addr show | grep "5efe"
 
 # Network scan for ISATAP (identify hosts embedding IPv4 in IPv6)

@@ -1140,7 +1140,7 @@ func InitProductionTracer(ctx context.Context, serviceName, endpoint string) (fu
 }
 ```
 
-### Resource Configuration
+Resource Configuration
 
 Properly configure resources for better trace organization:
 

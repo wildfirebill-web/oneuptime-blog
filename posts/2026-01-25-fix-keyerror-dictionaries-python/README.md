@@ -14,6 +14,7 @@ The `KeyError` exception occurs when you try to access a dictionary key that doe
 
 ```python
 # KeyError occurs when accessing a non-existent key
+
 user = {"name": "Alice", "email": "alice@example.com"}
 
 print(user["name"])      # Works: Alice

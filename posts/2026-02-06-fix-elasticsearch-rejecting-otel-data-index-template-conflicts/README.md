@@ -37,6 +37,7 @@ Create an index template before any data is sent:
 
 ```bash
 # Create an index template for traces
+
 curl -X PUT "http://elasticsearch:9200/_index_template/otel-traces" \
   -H 'Content-Type: application/json' \
   -d '{

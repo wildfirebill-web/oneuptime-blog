@@ -28,6 +28,7 @@ Download the latest release:
 
 ```bash
 # Download the latest Skipper binary
+
 curl -LO https://github.com/zalando/skipper/releases/latest/download/skipper-linux-amd64
 chmod +x skipper-linux-amd64
 sudo mv skipper-linux-amd64 /usr/local/bin/skipper

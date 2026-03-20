@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DoH, DNS over HTTPS, IPv6, Unbound, nginx, Privacy, RFC 8484
+Tags: DoH, DNS over HTTPS, IPv6, Unbound, Nginx, Privacy, RFC 8484
 
 Description: Configure DNS over HTTPS (DoH) servers that listen on IPv6, including NGINX reverse proxy setup and Unbound backend, with TLS certificate configuration.
 
@@ -12,7 +12,7 @@ DNS over HTTPS (RFC 8484) encrypts DNS queries inside HTTPS traffic, preventing 
 
 ## Architecture
 
-```
+```text
 IPv6 Client
     → HTTPS GET/POST https://[2001:db8::1]/dns-query
     → NGINX (TLS termination, IPv6)
@@ -24,6 +24,7 @@ IPv6 Client
 
 ```bash
 # Let's Encrypt for a DNS server (must have public IPv6 + domain)
+
 certbot certonly --standalone \
     -d dns.example.com \
     --preferred-challenges http \
@@ -52,7 +53,7 @@ server {
     ssl_protocols       TLSv1.2 TLSv1.3;
     ssl_ciphers         ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384;
 
-    # DoH endpoint — RFC 8484
+    # DoH endpoint - RFC 8484
     location /dns-query {
         proxy_pass http://127.0.0.1:5380;  # Unbound or CoreDNS DoH port
         proxy_http_version 1.1;
@@ -129,7 +130,7 @@ dog AAAA google.com --nameserver https://[2001:db8::1]/dns-query
 
 ## Step 6: Configure Firefox to Use Custom DoH
 
-```
+```text
 about:config
 network.trr.mode = 2  (prefer DoH)
 network.trr.uri = https://dns.example.com/dns-query

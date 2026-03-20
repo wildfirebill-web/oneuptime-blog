@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Cross-Region Replication, Disaster Recovery, AWS, Azure, GCP, Infrastructure as Code
 
-Description: Learn how to configure cross-region data replication with OpenTofu across AWS, Azure, and GCP — covering RDS read replicas, DynamoDB global tables, Azure SQL geo-replication, and GCS multi-region buckets.
+Description: Learn how to configure cross-region data replication with OpenTofu across AWS, Azure, and GCP - covering RDS read replicas, DynamoDB global tables, Azure SQL geo-replication, and GCS multi-region...
 
 ## Introduction
 
-Cross-region replication distributes data across geographic regions for disaster recovery, reduced read latency, and compliance with data sovereignty requirements. OpenTofu manages replication configuration for databases, object storage, and managed services — all with consistent IaC patterns.
+Cross-region replication distributes data across geographic regions for disaster recovery, reduced read latency, and compliance with data sovereignty requirements. OpenTofu manages replication configuration for databases, object storage, and managed services - all with consistent IaC patterns.
 
 ## AWS RDS Cross-Region Read Replica
 
 ```hcl
 # Primary RDS instance
+
 resource "aws_db_instance" "primary" {
   identifier        = "${var.environment}-primary"
   engine            = "postgres"
@@ -42,7 +43,7 @@ resource "aws_db_instance" "replica" {
   storage_encrypted   = true
   kms_key_id          = aws_kms_key.rds_replica.arn  # Key in replica region
 
-  # Skip backups on replica — primary handles backups
+  # Skip backups on replica - primary handles backups
   backup_retention_period = 0
   skip_final_snapshot     = true
 
@@ -210,4 +211,4 @@ resource "aws_elasticache_replication_group" "secondary" {
 
 ## Conclusion
 
-Cross-region replication with OpenTofu requires careful key management — each region needs its own KMS key for data encrypted at rest. For databases, start with read replicas (low cost) and promote to a primary only during actual DR events. DynamoDB Global Tables provide active-active multi-region replication for low-latency global reads. ElastiCache Global Datastore extends Redis replication across regions. Always test failover procedures in a non-production environment before relying on them in a real DR scenario.
+Cross-region replication with OpenTofu requires careful key management - each region needs its own KMS key for data encrypted at rest. For databases, start with read replicas (low cost) and promote to a primary only during actual DR events. DynamoDB Global Tables provide active-active multi-region replication for low-latency global reads. ElastiCache Global Datastore extends Redis replication across regions. Always test failover procedures in a non-production environment before relying on them in a real DR scenario.

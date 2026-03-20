@@ -45,6 +45,7 @@ Let's start with a simple but functional webhook handler. This example receives 
 
 ```python
 # webhook_handler.py
+
 # Basic webhook handler with signature verification
 from fastapi import FastAPI, Request, HTTPException, Header
 from datetime import datetime

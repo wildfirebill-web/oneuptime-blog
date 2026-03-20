@@ -34,6 +34,7 @@ Here's how to create a hosted zone using the AWS CLI:
 
 ```bash
 # Create a hosted zone for your domain
+
 aws route53 create-hosted-zone \
   --name example.com \
   --caller-reference "transfer-$(date +%s)"

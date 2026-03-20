@@ -18,6 +18,7 @@ The first thing to do when a stack fails is look at the stack events. The top-le
 
 ```bash
 # Get stack events showing the failure reasons
+
 aws cloudformation describe-stack-events \
     --stack-name my-failed-stack \
     --query 'StackEvents[?ResourceStatus==`CREATE_FAILED`].[LogicalResourceId,ResourceStatusReason]' \
@@ -74,7 +75,7 @@ aws cloudformation create-stack \
 
 Speaking of capabilities - forgetting `--capabilities CAPABILITY_IAM` when your template creates IAM resources is another common mistake. CloudFormation requires you to explicitly acknowledge that.
 
-## Resource Limit Exceeded
+Resource Limit Exceeded
 
 Every AWS account has service limits (now called service quotas). If your stack tries to create a VPC but you've already hit the VPC limit in that region, creation fails.
 
@@ -169,7 +170,7 @@ Resources:
 
 Note that `!Ref` and `!GetAtt` create implicit dependencies, so you usually don't need `DependsOn` when you're already referencing the other resource. But if the dependency isn't expressed through a reference, you need to be explicit.
 
-## Resource Already Exists
+Resource Already Exists
 
 If you specify a physical name for a resource (like a specific S3 bucket name or Lambda function name), and that resource already exists in the account, creation fails.
 

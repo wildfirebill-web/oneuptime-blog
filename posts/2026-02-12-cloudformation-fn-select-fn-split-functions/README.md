@@ -16,6 +16,7 @@ CloudFormation gives you a handful of list manipulation functions, and `Fn::Sele
 
 ```yaml
 # Select the first item from a list (index 0)
+
 Resources:
   MySubnet:
     Type: AWS::EC2::Subnet

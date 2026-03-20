@@ -58,6 +58,7 @@ First, update your system packages and install BIND9 along with useful DNS utili
 
 ```bash
 # Update the package index to ensure we get the latest versions
+
 sudo apt update
 
 # Install BIND9, DNS utilities for testing, and documentation

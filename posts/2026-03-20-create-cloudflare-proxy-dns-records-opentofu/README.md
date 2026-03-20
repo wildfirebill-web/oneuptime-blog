@@ -41,17 +41,18 @@ resource "cloudflare_record" "www" {
   name    = "www"
   value   = var.origin_ip
   type    = "A"
-  proxied = true   # Route through Cloudflare — enables DDoS protection, WAF, caching
+  proxied = true   # Route through Cloudflare - enables DDoS protection, WAF, caching
   ttl     = 1      # TTL is managed by Cloudflare when proxied (set to 1 = Auto)
 }
 
-# DNS-only (grey cloud) — bypasses Cloudflare
+# DNS-only (grey cloud) - bypasses Cloudflare
+
 resource "cloudflare_record" "mail" {
   zone_id = data.cloudflare_zone.main.id
   name    = "mail"
   value   = var.mail_server_ip
   type    = "A"
-  proxied = false  # DNS only — mail servers cannot be proxied
+  proxied = false  # DNS only - mail servers cannot be proxied
   ttl     = 300
 }
 ```

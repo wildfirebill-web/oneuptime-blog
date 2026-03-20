@@ -33,6 +33,7 @@ Because UFW changes affect the entire node's networking (not just Calico pods), 
 ```bash
 kubectl get pods --all-namespaces | grep -v Running | grep -v Completed
 # Identify which nodes have pods failing
+
 ```
 
 **Step 2: Check UFW state on affected node**

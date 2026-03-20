@@ -43,6 +43,7 @@ The simplest way to start using Podman is to create an alias that maps Docker co
 
 ```bash
 # Add this to your ~/.bashrc or ~/.zshrc
+
 # This allows you to use 'docker' command which runs podman
 alias docker=podman
 

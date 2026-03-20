@@ -30,6 +30,7 @@ Create a dedicated test environment for policy validation:
 
 ```bash
 # Create a validation namespace
+
 kubectl create namespace cilium-validate
 
 # Deploy test workloads

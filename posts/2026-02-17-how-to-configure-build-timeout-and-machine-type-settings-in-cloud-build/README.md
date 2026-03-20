@@ -29,6 +29,7 @@ You can set the timeout at the top level of your cloudbuild.yaml file. The value
 
 ```yaml
 # cloudbuild.yaml - Set a 30-minute timeout for the entire build
+
 timeout: 1800s
 
 steps:

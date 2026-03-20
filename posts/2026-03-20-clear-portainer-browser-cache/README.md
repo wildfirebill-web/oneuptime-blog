@@ -20,8 +20,9 @@ When you upgrade Portainer, the JavaScript bundle filenames change. If your brow
 
 ## Step 1: Hard Reload (Quick Fix)
 
-```
+```text
 # Windows/Linux: Ctrl + Shift + R
+
 # Mac:           Cmd + Shift + R
 # Firefox:       Ctrl + F5
 ```
@@ -56,7 +57,7 @@ Reload the page.
 
 Test in a fresh incognito window which has no cached data:
 
-```
+```text
 Chrome:  Ctrl+Shift+N
 Firefox: Ctrl+Shift+P
 Edge:    Ctrl+Shift+N

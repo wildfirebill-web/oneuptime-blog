@@ -24,7 +24,7 @@ IPv6 handles fragmentation differently from IPv4: only the originating host may 
 
 When fragmentation is needed, the source adds a Fragment Extension Header:
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -44,18 +44,18 @@ When fragmentation is needed, the source adds a Fragment Extension Header:
 
 An attacker sends the first fragment so small that the TCP header is split across two fragments. The firewall sees fragment 1 but cannot determine the TCP flags or destination port:
 
-```
+```text
 Fragment 1: IPv6 + Fragment Header + first 8 bytes of TCP (src/dst port only)
 Fragment 2: Remaining TCP header fields (flags, seq numbers) + payload
 ```
 
-RFC 7112 requires that the first fragment contain the complete upper-layer header — many older devices don't enforce this.
+RFC 7112 requires that the first fragment contain the complete upper-layer header - many older devices don't enforce this.
 
 ### 2. Overlapping Fragment Attack
 
 Two fragments have overlapping offsets. Different OSes resolve overlaps differently, allowing payload to reach the destination that bypasses IDS inspection:
 
-```
+```text
 Fragment 1: offset=0, length=64  (contains benign data)
 Fragment 2: offset=24 (overlaps with fragment 1) (contains malicious payload)
 ```
@@ -68,6 +68,7 @@ An attacker sends a Router Advertisement with MTU < 1280, causing the host to ge
 
 ```bash
 # Detect atomic fragments with tcpdump
+
 tcpdump -i eth0 'ip6[6]==44 and (ip6[42:2] & 0xfff9) == 0'
 # ip6[6]==44 = Fragment Header
 # offset=0 and M=0 = atomic fragment
@@ -79,7 +80,7 @@ RFC 8021 documents the atomic fragment vulnerability and recommends never genera
 
 An attacker sends first fragments without ever sending the last fragment. The victim must hold partial reassembly buffers:
 
-```
+```text
 Attacker → sends fragment 1 (M=1) with random ID
 Attacker → never sends fragment 2
 Victim → holds reassembly buffer for timeout period (~60 seconds)
@@ -103,7 +104,7 @@ tcpdump -i eth0 'ip6[6]==44 and (ip6[42:2] >> 3) > 0'
 
 ### Suricata/Snort Rules
 
-```
+```text
 # Alert on IPv6 fragments
 alert ipv6 any any -> any any (
     msg:"IPv6 Fragment Header Detected";
@@ -135,7 +136,7 @@ ip6tables -A INPUT -m frag --fragfirst --fragmore -m length --length 0:1279 -j D
 # nftables: Block all fragmented IPv6 traffic
 nft add rule ip6 filter input frag exists drop
 
-# Or be selective — block forwarded fragments only
+# Or be selective - block forwarded fragments only
 nft add rule ip6 filter forward frag exists drop
 ```
 
@@ -143,7 +144,7 @@ nft add rule ip6 filter forward frag exists drop
 
 RFC 7112 (2014) requires that the first fragment of an IPv6 packet contain the complete extension header chain up to (and including) the first upper-layer protocol header:
 
-```
+```text
 First Fragment MUST contain:
   IPv6 Header
   → All Extension Headers (Hop-by-Hop, Routing, etc.)

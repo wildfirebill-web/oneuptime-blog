@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: 464XLAT, IPv6, IPv4, Mobile Networks, CLAT, PLAT, Transition
 
-Description: Configure 464XLAT on mobile networks by setting up PLAT (NAT64 on the carrier side) and CLAT (stateless translation on the device side) to allow IPv4 applications to function over IPv6-only mobile networks.
+Description: Configure 464XLAT on mobile networks by setting up PLAT (NAT64 on the carrier side) and CLAT (stateless translation on the device side) to allow IPv4 applications to function over IPv6-only mobile...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Description: Configure 464XLAT on mobile networks by setting up PLAT (NAT64 on t
 
 ## Architecture
 
-```
+```text
 IPv4 App → CLAT (device) → IPv6 network → PLAT (carrier NAT64) → IPv4 Internet
            [stateless]       [IPv6 only]    [stateful NAT64]
 ```
@@ -26,6 +26,7 @@ The PLAT is typically a NAT64 gateway running on the carrier infrastructure. On 
 
 ```bash
 # Install TAYGA
+
 sudo apt-get install tayga
 
 # /etc/tayga.conf
@@ -112,7 +113,7 @@ ip addr show clat
 # Ping an IPv4-only host (should work via CLAT/PLAT)
 ping 8.8.8.8
 
-# Trace the path — first hop should be CLAT interface
+# Trace the path - first hop should be CLAT interface
 traceroute 8.8.8.8
 
 # Check that IPv6 connectivity is native

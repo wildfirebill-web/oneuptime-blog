@@ -8,7 +8,7 @@ Description: A complete guide to deploying K3s in environments without internet 
 
 ## Introduction
 
-Air-gapped environments — networks isolated from the internet for security or compliance reasons — require a different approach to software deployment. K3s supports fully offline installation by providing pre-bundled container image archives and allowing all components to be downloaded in advance. This guide covers the complete process for air-gapped K3s deployments.
+Air-gapped environments - networks isolated from the internet for security or compliance reasons - require a different approach to software deployment. K3s supports fully offline installation by providing pre-bundled container image archives and allowing all components to be downloaded in advance. This guide covers the complete process for air-gapped K3s deployments.
 
 ## Step 1: Download K3s Artifacts on a Connected Machine
 
@@ -16,6 +16,7 @@ From a machine with internet access, download all required files:
 
 ```bash
 # Set your target K3s version
+
 K3S_VERSION="v1.28.7+k3s1"
 ARCH="amd64"  # or arm64, arm
 

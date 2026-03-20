@@ -24,6 +24,7 @@ In Portainer: **Swarm > Nodes > Select Node > Labels**
 Or via CLI:
 ```bash
 # Add labels to identify node capabilities
+
 docker node update --label-add storage=ssd manager1
 docker node update --label-add storage=hdd worker1
 docker node update --label-add gpu=true worker2

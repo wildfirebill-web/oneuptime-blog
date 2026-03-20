@@ -45,7 +45,7 @@ scrape_samples_scraped                 - Per-target samples scraped
 up                                     - Target up/down status
 ```
 
-### Resource Usage
+Resource Usage
 
 ```text
 process_cpu_seconds_total              - CPU time consumed
@@ -59,6 +59,7 @@ go_memstats_heap_alloc_bytes           - Heap allocation
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   prometheus/prometheus-self:
     config:

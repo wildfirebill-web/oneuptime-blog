@@ -72,6 +72,7 @@ If blocks are not allocated, the CNI plugin may not be writing to the datastore.
 
 ```bash
 # On a worker node
+
 journalctl -u kubelet | grep calico
 ls /var/log/calico/cni/
 ```

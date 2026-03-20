@@ -52,6 +52,7 @@ Response indicating red status:
 
 ```bash
 # Show indices with red health
+
 curl -u elastic:password -X GET "localhost:9200/_cat/indices?v&health=red"
 
 # Show all indices with health status

@@ -12,7 +12,7 @@ Separate state files per environment ensure that a mistake in dev can never corr
 
 ## Directory Structure
 
-```
+```text
 infrastructure/
 ├── modules/           # Shared reusable modules
 │   ├── network/
@@ -37,6 +37,7 @@ infrastructure/
 
 ```hcl
 # environments/dev/backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-tofu-state"
@@ -118,8 +119,8 @@ resource "aws_ecs_service" "app" {
 
 ## Best Practices
 
-- Use separate S3 buckets for production state — isolate it from dev/staging with strict IAM policies.
+- Use separate S3 buckets for production state - isolate it from dev/staging with strict IAM policies.
 - Enable S3 bucket versioning on all state buckets for point-in-time recovery.
-- Never share a DynamoDB state lock table between environments — use separate tables.
+- Never share a DynamoDB state lock table between environments - use separate tables.
 - Use different AWS accounts for production vs non-production for strong isolation.
 - Automate deployment with a script that `cd`s into the appropriate environment directory and runs `tofu apply`.

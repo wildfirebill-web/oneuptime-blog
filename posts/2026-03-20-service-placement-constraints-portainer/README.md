@@ -1,4 +1,4 @@
-# How to Configure Service Placement Constraints in Portainer on Swarm
+# How to Configure Service Placement Constraints in Portainer on Swarm (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Constraints use the format `node.<attribute> == <value>` or `node.labels.<key> =
 
 ```bash
 # Constrain to manager nodes only
+
 node.role == manager
 
 # Constrain to a specific hostname
@@ -68,7 +69,7 @@ services:
 
 ## Combining Multiple Constraints
 
-Multiple constraints are evaluated as AND conditions — all must be satisfied for a task to be placed on a node:
+Multiple constraints are evaluated as AND conditions - all must be satisfied for a task to be placed on a node:
 
 ```yaml
 deploy:

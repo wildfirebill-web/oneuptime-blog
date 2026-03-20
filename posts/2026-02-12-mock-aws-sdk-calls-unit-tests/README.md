@@ -21,6 +21,7 @@ from unittest.mock import patch, MagicMock
 import json
 
 # Your production code
+
 def get_user_config(s3_client, bucket, key):
     """Download and parse a JSON config from S3."""
     response = s3_client.get_object(Bucket=bucket, Key=key)

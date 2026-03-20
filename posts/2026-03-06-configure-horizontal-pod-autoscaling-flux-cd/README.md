@@ -27,6 +27,7 @@ Organize your HPA manifests alongside the workloads they scale:
 
 ```yaml
 # Repository layout
+
 # infrastructure/
 #   autoscaling/
 #     base/

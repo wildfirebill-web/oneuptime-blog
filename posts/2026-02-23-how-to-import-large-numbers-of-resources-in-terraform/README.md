@@ -20,6 +20,7 @@ Terraformer can generate both configurations and state for large numbers of reso
 
 ```bash
 # Import all supported AWS resources in a region
+
 terraformer import aws --resources=* --regions=us-east-1
 
 # Import specific resource types in bulk

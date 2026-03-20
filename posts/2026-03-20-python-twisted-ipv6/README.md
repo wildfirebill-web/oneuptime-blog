@@ -37,6 +37,7 @@ class IPv6EchoFactory(protocol.ServerFactory):
     protocol = IPv6EchoProtocol
 
 # Listen on IPv6 (:: binds to all IPv6 interfaces)
+
 endpoint = serverFromString(reactor, "tcp6:port=8080:interface=\\:\\:")
 d = endpoint.listen(IPv6EchoFactory())
 
@@ -80,7 +81,7 @@ class IPv6ClientFactory(protocol.ClientFactory):
         print(f"Connection failed: {reason.getErrorMessage()}")
         reactor.stop()
 
-# Connect to IPv6 server — bracket notation in endpoint string
+# Connect to IPv6 server - bracket notation in endpoint string
 endpoint = clientFromString(reactor, "tcp6:host=2001\\:db8\\:\\:1:port=8080")
 endpoint.connect(IPv6ClientFactory(b"Hello IPv6!"))
 reactor.run()

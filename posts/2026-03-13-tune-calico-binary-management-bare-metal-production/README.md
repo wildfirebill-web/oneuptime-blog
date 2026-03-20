@@ -26,6 +26,7 @@ This guide covers production tuning for binary-managed Calico on bare metal usin
 
 ```yaml
 # group_vars/all.yml
+
 calico_encapsulation: "None"
 calico_mtu: 1500
 calico_bpf_enabled: true

@@ -47,6 +47,7 @@ laravel-docker/
 
 ```dockerfile
 # PHP 8.3 FPM base image
+
 FROM php:8.3-fpm-alpine AS base
 
 # Install system dependencies and PHP extensions

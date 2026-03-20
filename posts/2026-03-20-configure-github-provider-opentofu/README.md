@@ -8,7 +8,7 @@ Description: Learn how to configure the GitHub provider in OpenTofu to manage re
 
 ## Introduction
 
-The GitHub provider allows OpenTofu to manage GitHub resources—repositories, teams, branch protection rules, webhooks, and Actions secrets—as infrastructure code. This enables GitOps workflows where your GitHub organisation configuration is versioned and auditable.
+The GitHub provider allows OpenTofu to manage GitHub resources-repositories, teams, branch protection rules, webhooks, and Actions secrets-as infrastructure code. This enables GitOps workflows where your GitHub organisation configuration is versioned and auditable.
 
 ## Provider Setup
 
@@ -38,6 +38,7 @@ provider "github" {
 
 ```bash
 # Set the token via environment variable
+
 export GITHUB_TOKEN="ghp_your_token_here"
 export GITHUB_OWNER="my-organisation"
 ```
@@ -94,4 +95,4 @@ resource "github_repository" "app" {
 
 ## Conclusion
 
-The GitHub provider turns your organisation's repository configuration into auditable, version-controlled code. Use GitHub Apps rather than PATs for production—Apps have finer-grained permissions and don't depend on an individual user's account.
+The GitHub provider turns your organisation's repository configuration into auditable, version-controlled code. Use GitHub Apps rather than PATs for production-Apps have finer-grained permissions and don't depend on an individual user's account.

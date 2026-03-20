@@ -14,6 +14,7 @@ OpenTofu 1.8+ supports the `oci::` source prefix for modules, allowing modules t
 
 ```hcl
 # Reference a module stored in an OCI registry
+
 module "vpc" {
   source  = "oci://registry.internal.company.com/mycompany/module-vpc:1.2.0"
 
@@ -216,4 +217,4 @@ module "custom_app" {
 
 ## Conclusion
 
-Pulling modules from OCI registries uses the `oci://` source prefix with a registry URL, repository path, and tag or digest. Authentication reuses Docker's credential helpers, so any registry you can `docker login` to works with OpenTofu. Cache the `.terraform/modules/` directory in CI pipelines to avoid repeated OCI pulls. Use image digests instead of tags for production deployments where immutability matters — a digest always refers to the exact same artifact, even if the tag is later updated.
+Pulling modules from OCI registries uses the `oci://` source prefix with a registry URL, repository path, and tag or digest. Authentication reuses Docker's credential helpers, so any registry you can `docker login` to works with OpenTofu. Cache the `.terraform/modules/` directory in CI pipelines to avoid repeated OCI pulls. Use image digests instead of tags for production deployments where immutability matters - a digest always refers to the exact same artifact, even if the tag is later updated.

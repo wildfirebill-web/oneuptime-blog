@@ -102,6 +102,7 @@ If these differ, there is a push delivery issue.
 
 ```bash
 # Listeners (LDS)
+
 istioctl proxy-config listeners productpage-v1-abc123.default
 
 # Routes (RDS)

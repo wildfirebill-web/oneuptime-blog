@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Nginx, Access Control, allow/deny, Security
+Tags: IPv6, Nginx, Access Control, Allow/deny, Security
 
 Description: Learn how to configure Nginx allow/deny rules for IPv6 addresses and subnets to restrict access to web resources based on client IPv6 addresses.
 
@@ -37,6 +37,7 @@ server {
 
 ```nginx
 # Only allow specific IPv6 ranges
+
 server {
     listen [::]:443 ssl ipv6only=on;
     listen 443 ssl;
@@ -168,4 +169,4 @@ tail -f /var/log/nginx/access.log | grep -v '200'
 
 ## Summary
 
-Configure IPv6 access control in Nginx with `allow 2001:db8:trusted::/48;` and `deny all;` directives. Rules are evaluated in order — first match wins. Allow specific addresses/subnets before a final `deny all`. For more complex rules, use the `geo` module to classify clients and check with `if` conditionals. IPv6 prefixes work directly in allow/deny without brackets. Test with `curl -6 --interface <ipv6-addr>`.
+Configure IPv6 access control in Nginx with `allow 2001:db8:trusted::/48;` and `deny all;` directives. Rules are evaluated in order - first match wins. Allow specific addresses/subnets before a final `deny all`. For more complex rules, use the `geo` module to classify clients and check with `if` conditionals. IPv6 prefixes work directly in allow/deny without brackets. Test with `curl -6 --interface <ipv6-addr>`.

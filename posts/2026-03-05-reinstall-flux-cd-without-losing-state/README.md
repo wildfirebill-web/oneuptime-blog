@@ -36,6 +36,7 @@ Before making any changes, export your existing Flux configuration as a backup.
 
 ```bash
 # Export all Flux custom resources across all namespaces
+
 flux export source git --all -A > git-sources.yaml
 flux export source helm --all -A > helm-sources.yaml
 flux export source oci --all -A > oci-sources.yaml

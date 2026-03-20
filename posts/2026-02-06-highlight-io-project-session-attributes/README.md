@@ -22,6 +22,7 @@ This attribute goes on the resource, which means it is set once when the tracer 
 from opentelemetry.sdk.resources import Resource
 
 # Set highlight.project_id in the resource
+
 resource = Resource.create({
     "service.name": "api-backend",
     "highlight.project_id": "abc123def456",  # From your Highlight.io settings

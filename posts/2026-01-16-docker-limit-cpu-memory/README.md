@@ -27,6 +27,7 @@ The `--memory` or `-m` flag sets the maximum amount of memory a container can us
 
 ```bash
 # Limit container to 512MB of memory
+
 docker run -m 512m nginx
 
 # Limit to 2GB

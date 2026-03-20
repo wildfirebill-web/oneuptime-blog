@@ -237,6 +237,7 @@ import time
 import random
 
 # Create summary with quantile objectives
+
 REQUEST_DURATION = Summary(
     'http_request_duration_seconds',
     'Request latency distribution',

@@ -12,6 +12,7 @@ Network discovery scanning finds IPv4 addresses that are in use, identifies undo
 
 ```bash
 # Install nmap
+
 sudo apt install nmap -y
 
 # Discover live hosts in a subnet (ping scan)

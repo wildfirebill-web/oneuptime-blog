@@ -1,4 +1,4 @@
-# How to Optimize Portainer for Low-Bandwidth Edge Environments
+# How to Optimize Portainer for Low-Bandwidth Edge Environments (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -54,6 +54,7 @@ Large snapshot payloads consume significant bandwidth. Limit what's included:
 
 ```bash
 # Exclude image layer data from snapshots (reduces payload ~80%)
+
 portainer/portainer-ce:latest --snapshot-interval 600
 ```
 
@@ -117,4 +118,4 @@ After loading, Portainer deployments skip the pull and use the cached image.
 
 ## Monitoring Edge Connectivity
 
-Use OneUptime to monitor whether Edge Agents are checking in on time. Set an alert if an edge device hasn't reported for more than 2× its check-in interval — this indicates connectivity loss rather than a missed check-in.
+Use OneUptime to monitor whether Edge Agents are checking in on time. Set an alert if an edge device hasn't reported for more than 2× its check-in interval - this indicates connectivity loss rather than a missed check-in.

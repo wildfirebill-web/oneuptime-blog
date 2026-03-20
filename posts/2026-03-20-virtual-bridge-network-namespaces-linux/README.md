@@ -24,6 +24,7 @@ graph TD
 
 ```bash
 # Create a bridge in the host namespace
+
 sudo ip link add br0 type bridge
 sudo ip link set br0 up
 
@@ -123,4 +124,4 @@ sudo ip link del br0   # Also removes attached veth-*-br interfaces
 
 ## Conclusion
 
-A bridge in the host namespace acts as a virtual switch for multiple namespaces. Each namespace connects via a veth pair, with one end on the bridge. Add NAT on the host to give namespaces internet access — this is exactly the model Docker uses for its default bridge network.
+A bridge in the host namespace acts as a virtual switch for multiple namespaces. Each namespace connects via a veth pair, with one end on the bridge. Add NAT on the host to give namespaces internet access - this is exactly the model Docker uses for its default bridge network.

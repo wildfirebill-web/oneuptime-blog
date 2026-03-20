@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chef, IPv6, Configuration Management, Automation, Cookbook, Recipe
+Tags: Chef, IPv6, Configuration Management, Automation, Cookbook, Recipes
 
 Description: A guide to configuring IPv6 network settings on Linux systems using Chef recipes and cookbooks, including sysctl, interface configuration, and firewall rules.
 
@@ -10,7 +10,7 @@ Chef's Ruby-based DSL enables flexible IPv6 configuration management across serv
 
 ## Cookbook Structure
 
-```
+```text
 cookbooks/ipv6_config/
 ├── recipes/
 │   ├── default.rb       # Main recipe
@@ -58,6 +58,7 @@ end
 # recipes/sysctl.rb
 
 # Configure IPv6 kernel parameters
+
 sysctl_param 'net.ipv6.conf.all.disable_ipv6' do
   value node['ipv6_config']['disable_ipv6'] ? 1 : 0
 end
@@ -97,7 +98,7 @@ end
 
 ```erb
 <%# templates/sysctl.conf.erb %>
-# IPv6 Configuration managed by Chef — do not edit manually
+# IPv6 Configuration managed by Chef - do not edit manually
 # Managed by: <%= node['chef_environment'] %>
 
 net.ipv6.conf.all.disable_ipv6 = <%= @disable_ipv6 ? 1 : 0 %>

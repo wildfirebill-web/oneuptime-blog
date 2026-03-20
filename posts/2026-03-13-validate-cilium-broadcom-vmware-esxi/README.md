@@ -31,6 +31,7 @@ Check that the kernel version on each node supports the Cilium features you inte
 
 ```bash
 # Check kernel versions on all nodes
+
 kubectl get nodes -o jsonpath=\
 '{range .items[*]}{.metadata.name}: {.status.nodeInfo.kernelVersion}{"\n"}{end}'
 

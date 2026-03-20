@@ -284,6 +284,7 @@ variable "services" {
 }
 
 # Create an ECS service for each entry
+
 resource "aws_ecs_service" "services" {
   for_each = var.services
 

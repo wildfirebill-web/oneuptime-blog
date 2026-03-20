@@ -32,6 +32,7 @@ Here is a StorageClass for AWS EBS using the CSI driver:
 
 ```yaml
 # storageclass-aws-gp3.yaml
+
 # This StorageClass provisions gp3 EBS volumes in AWS.
 # gp3 provides a baseline of 3000 IOPS and 125 MiB/s throughput.
 apiVersion: storage.k8s.io/v1

@@ -1037,6 +1037,7 @@ healthRouter.get('/metrics', (req, res) => {
 
   const output = `
 # HELP log_aggregator_received_total Total logs received
+
 # TYPE log_aggregator_received_total counter
 log_aggregator_received_total ${metrics.received}
 

@@ -35,6 +35,7 @@ Verify your CSI driver supports cloning:
 
 ```bash
 # Check CSI driver capabilities
+
 kubectl get csidriver
 
 # For AWS EBS

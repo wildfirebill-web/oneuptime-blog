@@ -156,6 +156,7 @@ def index_json_file(filepath, index_name, batch_size=1000):
     return success, failed
 
 # Usage
+
 success, failed = index_json_file("products.jsonl", "products")
 print(f"Indexed {success} documents, {len(failed)} failures")
 ```

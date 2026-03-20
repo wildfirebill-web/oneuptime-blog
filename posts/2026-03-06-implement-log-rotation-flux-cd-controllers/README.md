@@ -38,6 +38,7 @@ Adjust log verbosity to reduce log volume while maintaining useful information.
 
 ```yaml
 # clusters/production/flux-system/kustomization.yaml
+
 # Kustomize patches to configure Flux controller log levels
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

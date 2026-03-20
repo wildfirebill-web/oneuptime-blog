@@ -104,6 +104,7 @@ Identify and update all deprecated APIs in your Git repository:
 
 ```bash
 # Find deprecated Ingress API usage
+
 grep -r "extensions/v1beta1" ./
 grep -r "networking.k8s.io/v1beta1" ./
 

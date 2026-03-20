@@ -253,6 +253,7 @@ TCP metrics are connection-level rather than request-level:
 
 ```bash
 # Active TCP connections
+
 istio_tcp_connections_opened_total{
   destination_service="postgres.external.company.com"
 }

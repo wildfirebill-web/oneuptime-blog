@@ -16,6 +16,7 @@ The default workspace is created automatically when you initialize a Terraform p
 
 ```bash
 # Check which workspace you are currently in
+
 terraform workspace show
 # Output: default
 

@@ -24,6 +24,7 @@ TOFU_VERSION="1.9.0"
 ARCH="linux_amd64"
 
 # Download the binary
+
 curl -LO "https://github.com/opentofu/opentofu/releases/download/v${TOFU_VERSION}/tofu_${TOFU_VERSION}_${ARCH}.zip"
 
 # Download the checksums file

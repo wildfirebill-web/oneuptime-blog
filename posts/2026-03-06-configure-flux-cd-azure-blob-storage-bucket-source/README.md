@@ -35,6 +35,7 @@ graph LR
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export LOCATION="eastus"
 export STORAGE_ACCOUNT="stfluxcdbucket"

@@ -29,6 +29,7 @@ The AWS provider reads credentials from the standard AWS environment variables.
 
 ```bash
 # Set AWS credentials as environment variables
+
 export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
 export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 export AWS_DEFAULT_REGION="us-east-1"

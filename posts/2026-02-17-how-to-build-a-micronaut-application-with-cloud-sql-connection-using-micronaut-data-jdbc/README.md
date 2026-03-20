@@ -58,6 +58,7 @@ Configure the datasource in `application.yml`:
 
 ```yaml
 # application.yml
+
 datasources:
   default:
     # Cloud SQL connection via socket factory

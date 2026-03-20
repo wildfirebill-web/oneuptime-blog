@@ -20,6 +20,7 @@ provider "aws" {
 }
 
 # Look up the current region's ELB service account
+
 # This is needed for the bucket policy
 data "aws_elb_service_account" "current" {}
 

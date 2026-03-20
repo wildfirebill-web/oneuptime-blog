@@ -31,6 +31,7 @@ Before migrating, document everything about your Composer 2 environment:
 
 ```bash
 # Export your current environment configuration
+
 gcloud composer environments describe my-composer2-env \
   --location=us-central1 \
   --format=yaml > composer2-config.yaml

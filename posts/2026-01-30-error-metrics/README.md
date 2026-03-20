@@ -138,6 +138,7 @@ Once metrics are flowing to Prometheus, calculate error rate with this query.
 
 ```promql
 # Error rate over 5 minutes as a percentage
+
 (
   sum(rate(http_errors_total[5m]))
   /

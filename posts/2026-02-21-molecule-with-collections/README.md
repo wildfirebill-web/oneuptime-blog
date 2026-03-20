@@ -48,6 +48,7 @@ The main challenge is that Molecule needs to know the collection namespace and n
 
 ```yaml
 # roles/web_server/molecule/default/molecule.yml
+
 dependency:
   name: galaxy
 

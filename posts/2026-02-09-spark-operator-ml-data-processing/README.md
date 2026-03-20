@@ -21,6 +21,7 @@ helm repo add spark-operator https://googlecloudplatform.github.io/spark-on-k8s-
 helm repo update
 
 # Install Spark Operator
+
 helm install spark-operator spark-operator/spark-operator \
   --namespace spark-operator \
   --create-namespace \

@@ -15,6 +15,7 @@ Post-migration validation confirms that IPv6 migration goals were achieved and t
 ```bash
 #!/bin/bash
 # post_migration_validation.sh
+
 # Run after IPv6 migration to validate all aspects
 
 PASS=0
@@ -46,7 +47,7 @@ for subdomain in www api mail vpn; do
     if [ -n "$AAAA" ] && [ -n "$A" ]; then
         ok "$hostname: A=$A AAAA=$AAAA (dual-stack)"
     elif [ -n "$AAAA" ]; then
-        warn "$hostname: AAAA only (no A record) — IPv6-only"
+        warn "$hostname: AAAA only (no A record) - IPv6-only"
     elif [ -n "$A" ]; then
         fail "$hostname: A record only, missing AAAA"
     else
@@ -130,7 +131,7 @@ if [ $FAIL -eq 0 ]; then
     echo "STATUS: VALIDATION PASSED"
     exit 0
 else
-    echo "STATUS: VALIDATION FAILED — $FAIL critical issues"
+    echo "STATUS: VALIDATION FAILED - $FAIL critical issues"
     exit 1
 fi
 ```
@@ -220,7 +221,7 @@ class TestApplicationBehavior:
 
 ## Outstanding Items
 1. Mail server PTR records not yet configured for /48 (tracking issue #456)
-2. VPN gateway IPv6 — vendor firmware update pending
+2. VPN gateway IPv6 - vendor firmware update pending
 
 ## Sign-off
 - Network Lead: Approved

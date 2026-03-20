@@ -205,6 +205,7 @@ For professional-looking emails, use HTML:
 
 ```bash
 # Send to a single recipient
+
 kubectl annotate app my-app -n argocd \
   notifications.argoproj.io/subscribe.on-deployed.email="devops@example.com"
 

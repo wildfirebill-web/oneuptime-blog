@@ -79,6 +79,7 @@ Create and apply the policy.
 
 ```bash
 # Create the traffic policy
+
 aws route53 create-traffic-policy \
   --name "geoproximity-global" \
   --document file://traffic-policy.json \

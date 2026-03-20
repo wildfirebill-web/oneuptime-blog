@@ -315,6 +315,7 @@ Track rate limiting activity:
 
 ```promql
 # Local rate limit hits
+
 rate(envoy_http_local_rate_limiter_http_local_rate_limit_rate_limited[5m])
 
 # Global rate limit hits

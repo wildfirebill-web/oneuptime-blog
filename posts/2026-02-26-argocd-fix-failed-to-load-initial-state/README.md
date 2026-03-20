@@ -56,6 +56,7 @@ The most fundamental cause - the controller cannot talk to the Kubernetes API.
 
 ```bash
 # Check the API server from within the cluster
+
 kubectl get --raw /healthz
 
 # Check from the controller pod specifically

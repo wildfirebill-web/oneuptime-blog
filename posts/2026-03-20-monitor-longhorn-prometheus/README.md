@@ -1,4 +1,4 @@
-# How to Monitor Longhorn with Prometheus
+# How to Monitor Longhorn with Prometheus - Monitor
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ If you have the Prometheus Operator installed:
 
 ```yaml
 # longhorn-servicemonitor.yaml - Prometheus ServiceMonitor for Longhorn
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

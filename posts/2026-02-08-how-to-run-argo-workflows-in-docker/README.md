@@ -34,6 +34,7 @@ Since Argo Workflows is a Kubernetes-native tool, we need a lightweight Kubernet
 
 ```bash
 # Install k3d (runs k3s in Docker)
+
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 # Install kubectl

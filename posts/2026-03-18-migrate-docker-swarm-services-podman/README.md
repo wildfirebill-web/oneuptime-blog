@@ -20,6 +20,7 @@ Start by inventorying your current Docker Swarm services.
 
 ```bash
 # List all Swarm services
+
 docker service ls
 
 # Get detailed info about each service

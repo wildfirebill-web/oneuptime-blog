@@ -25,6 +25,7 @@ To upgrade Kubernetes on your cluster:
 
 ```bash
 # Upgrade Kubernetes to a specific version
+
 talosctl upgrade-k8s --nodes 192.168.1.10 --to 1.30.0
 ```
 

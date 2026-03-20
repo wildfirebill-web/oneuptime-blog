@@ -16,6 +16,7 @@ Container logs are your first line of defense when debugging Kubernetes applicat
 
 ```bash
 # Get logs from a pod
+
 kubectl logs my-pod
 
 # Get logs from specific namespace

@@ -63,6 +63,7 @@ pip install apache-airflow-providers-clickhouse
 
 ```python
 # In Airflow UI: Admin > Connections > Add
+
 # Or via environment variable
 AIRFLOW_CONN_CLICKHOUSE_DEFAULT = 'clickhouse://user:password@clickhouse.example.com:8123/analytics'
 ```

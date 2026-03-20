@@ -190,6 +190,7 @@ Check whether outlier detection is actually doing its job:
 
 ```bash
 # Check ejected endpoints
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:15000/clusters | grep outlier
 
 # Check specific service endpoints and their health

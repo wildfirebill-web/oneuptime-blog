@@ -28,6 +28,7 @@ This is the most common setup for AWS users:
 
 ```hcl
 # backend.tf - S3 backend with DynamoDB locking
+
 terraform {
   backend "s3" {
     bucket         = "mycompany-terraform-state"

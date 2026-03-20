@@ -39,6 +39,7 @@ Before installing Istio, verify that the cluster meets the requirements:
 
 ```yaml
 # templates/pre-install-check.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

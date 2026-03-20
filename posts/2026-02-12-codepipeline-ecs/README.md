@@ -41,6 +41,7 @@ Start with a simple application and Dockerfile:
 
 ```dockerfile
 # Dockerfile
+
 FROM node:18-alpine
 
 WORKDIR /app

@@ -44,6 +44,7 @@ GCP has several types of quotas:
 
 ```bash
 # Check compute quotas for a specific region
+
 gcloud compute regions describe us-central1 \
   --project=my-project \
   --format="table(quotas.metric,quotas.limit,quotas.usage)"

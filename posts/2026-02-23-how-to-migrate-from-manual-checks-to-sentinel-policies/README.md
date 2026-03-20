@@ -49,6 +49,7 @@ Let us start with a common manual check - ensuring all AWS resources have requir
 
 ```python
 # require-tags.sentinel
+
 # Enforce that all taggable resources have required tags
 
 import "tfplan/v2" as tfplan

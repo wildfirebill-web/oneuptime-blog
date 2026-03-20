@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rke2, kubeadm, kubernetes, installation, comparison
+Tags: RKE2, Kubeadm, Kubernetes, Installation, Comparison
 
 Description: A detailed comparison of RKE2 and kubeadm for bootstrapping Kubernetes clusters, covering ease of use, security, upgrades, and production readiness.
 
@@ -44,6 +44,7 @@ RKE2 is a fully opinionated Kubernetes distribution that handles cluster bootstr
 
 ```bash
 # Step 1: Install prerequisites on all nodes
+
 apt-get update && apt-get install -y apt-transport-https curl
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' > /etc/apt/sources.list.d/kubernetes.list

@@ -18,6 +18,7 @@ Let's instrument a credit scoring pipeline that pulls bureau data, applies scori
 
 ```python
 # credit_scoring.py
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("risk.credit.scoring")

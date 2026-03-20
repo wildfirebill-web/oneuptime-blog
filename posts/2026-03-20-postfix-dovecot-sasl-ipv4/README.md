@@ -28,6 +28,7 @@ service auth {
 # /etc/dovecot/conf.d/10-auth.conf
 
 # Enable PLAIN and LOGIN mechanisms for SMTP clients
+
 auth_mechanisms = plain login
 ```
 

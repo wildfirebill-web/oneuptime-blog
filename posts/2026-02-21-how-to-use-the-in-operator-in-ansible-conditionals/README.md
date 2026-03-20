@@ -16,6 +16,7 @@ The `in` operator follows Python/Jinja2 syntax. You place the value you are look
 
 ```yaml
 # Basic in operator usage with a list
+
 ---
 - name: Demonstrate in operator
   hosts: localhost

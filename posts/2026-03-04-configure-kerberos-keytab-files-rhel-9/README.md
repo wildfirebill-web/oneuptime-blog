@@ -30,6 +30,7 @@ Install the Kerberos client packages:
 
 ```bash
 # Install Kerberos workstation tools
+
 sudo dnf install krb5-workstation krb5-libs -y
 ```
 

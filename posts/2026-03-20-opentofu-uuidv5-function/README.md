@@ -8,7 +8,7 @@ Description: Learn how to use the uuidv5 function in OpenTofu to generate determ
 
 ## Introduction
 
-The `uuidv5` function in OpenTofu generates a UUID version 5, which is deterministic — the same namespace and name always produce the same UUID. This makes it ideal for creating stable, reproducible unique identifiers for resources that need consistent names across deployments.
+The `uuidv5` function in OpenTofu generates a UUID version 5, which is deterministic - the same namespace and name always produce the same UUID. This makes it ideal for creating stable, reproducible unique identifiers for resources that need consistent names across deployments.
 
 ## Syntax
 
@@ -16,17 +16,17 @@ The `uuidv5` function in OpenTofu generates a UUID version 5, which is determini
 uuidv5(namespace, name)
 ```
 
-- **namespace** — a UUID string defining the namespace, or a well-known namespace name
-- **name** — a string to hash within the namespace
+- **namespace** - a UUID string defining the namespace, or a well-known namespace name
+- **name** - a string to hash within the namespace
 - Returns a deterministic UUID v5 string
 
 ## Predefined Namespaces
 
 OpenTofu provides these well-known namespace constants:
-- `"dns"` — for DNS names
-- `"url"` — for URLs
-- `"oid"` — for OIDs
-- `"x500"` — for X.500 names
+- `"dns"` - for DNS names
+- `"url"` - for URLs
+- `"oid"` - for OIDs
+- `"x500"` - for X.500 names
 
 ## Basic Examples
 
@@ -112,7 +112,7 @@ variable "region" {
 }
 
 locals {
-  # Stable cluster ID — same cluster always gets same UUID
+  # Stable cluster ID - same cluster always gets same UUID
   cluster_uuid = uuidv5("url", "https://${var.cluster_name}.${var.region}.clusters.example.com")
 }
 
@@ -144,4 +144,4 @@ tofu console
 
 ## Conclusion
 
-The `uuidv5` function generates deterministic UUIDs in OpenTofu — the same namespace and name always produce the same UUID. This makes it valuable for creating stable identifiers that don't require Terraform state, enabling idempotent resource naming and cross-system correlation without randomness.
+The `uuidv5` function generates deterministic UUIDs in OpenTofu - the same namespace and name always produce the same UUID. This makes it valuable for creating stable identifiers that don't require Terraform state, enabling idempotent resource naming and cross-system correlation without randomness.

@@ -42,6 +42,7 @@ For physical systems, serial console captures output even when the display crash
 
 ```bash
 # Edit GRUB configuration
+
 sudo nano /etc/default/grub
 
 # Add serial console parameters

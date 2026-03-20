@@ -22,6 +22,7 @@ When you configure a mirror for a registry, Podman tries the mirror first. If th
 # /etc/containers/registries.conf
 
 # The mirror is tried first, then the primary location
+
 [[registry]]
 prefix = "docker.io"
 location = "docker.io"

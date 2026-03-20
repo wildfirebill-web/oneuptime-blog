@@ -36,6 +36,7 @@ The simplest generator. You explicitly define the parameter sets. Good for small
 
 ```yaml
 # list-generator.yaml
+
 # Deploys the same app to three environments with different configs
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet

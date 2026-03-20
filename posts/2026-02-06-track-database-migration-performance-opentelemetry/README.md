@@ -45,6 +45,7 @@ First, install the necessary packages.
 
 ```bash
 # Install OpenTelemetry SDK and the OTLP exporter
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-http alembic
 ```
 

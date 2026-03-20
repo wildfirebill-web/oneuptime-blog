@@ -25,6 +25,7 @@ Go to **Stacks > Add Stack**. The backup container mounts the target volume and 
 
 ```yaml
 # volume-backup-stack.yml
+
 version: "3.8"
 
 services:
@@ -46,7 +47,7 @@ services:
       - AWS_ACCESS_KEY_ID=<your-access-key>
       - AWS_SECRET_ACCESS_KEY=<your-secret-key>
       - AWS_ENDPOINT=https://s3.amazonaws.com
-      # Backup schedule — every night at 03:00
+      # Backup schedule - every night at 03:00
       - BACKUP_CRON_EXPRESSION=0 3 * * *
       # Retention policy
       - BACKUP_RETENTION_DAYS=30
@@ -116,4 +117,4 @@ environment:
 
 ## Summary
 
-Automated volume backups via Portainer require no external schedulers or scripts — just a sidecar container running alongside your applications. By combining volume mounts, Docker socket access, and configurable schedules, you get consistent, encrypted backups shipped to any S3-compatible storage with minimal setup effort.
+Automated volume backups via Portainer require no external schedulers or scripts - just a sidecar container running alongside your applications. By combining volume mounts, Docker socket access, and configurable schedules, you get consistent, encrypted backups shipped to any S3-compatible storage with minimal setup effort.

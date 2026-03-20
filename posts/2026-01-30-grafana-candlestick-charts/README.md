@@ -77,6 +77,7 @@ For Prometheus, you can use recording rules or subqueries to achieve similar res
 
 ```promql
 # Using subqueries to get OHLC-like data
+
 # Open - first value in interval
 cpu_usage[5m:1m] @ start()
 
@@ -320,7 +321,7 @@ GROUP BY time_bucket('15 minutes', timestamp)
 ORDER BY time
 ```
 
-### Resource Pricing
+Resource Pricing
 
 Track cloud resource pricing fluctuations.
 

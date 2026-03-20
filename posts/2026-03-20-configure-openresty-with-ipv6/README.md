@@ -14,6 +14,7 @@ OpenResty is Nginx extended with LuaJIT for dynamic web applications. Configurin
 
 ```bash
 # Ubuntu/Debian
+
 wget -qO - https://openresty.org/package/pubkey.gpg | sudo apt-key add -
 sudo add-apt-repository "deb http://openresty.org/package/ubuntu $(lsb_release -sc) main"
 sudo apt update && sudo apt install openresty -y

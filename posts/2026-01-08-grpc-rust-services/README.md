@@ -29,6 +29,7 @@ Before starting, ensure you have:
 
 ```bash
 # Create new project
+
 cargo new grpc-rust-service
 cd grpc-rust-service
 

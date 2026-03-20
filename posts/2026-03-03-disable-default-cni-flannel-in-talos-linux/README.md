@@ -29,6 +29,7 @@ The simplest approach is to disable Flannel before creating your cluster. In you
 
 ```yaml
 # Control plane machine config - disable default CNI
+
 cluster:
   network:
     cni:

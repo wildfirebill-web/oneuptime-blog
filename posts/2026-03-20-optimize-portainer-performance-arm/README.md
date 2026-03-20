@@ -24,6 +24,7 @@ Portainer provides multi-architecture images. Verify you're using the right one:
 ```bash
 docker inspect portainer/portainer-ce:latest | grep Architecture
 # Should show "arm64" on ARM hardware
+
 ```
 
 Pull and run the ARM-optimized version:
@@ -179,7 +180,7 @@ docker stats portainer --no-stream
 ```
 
 Expected output on optimized Pi 4:
-```
+```text
 CONTAINER  CPU %  MEM USAGE / LIMIT   MEM %
 portainer  2.1%   180MiB / 256MiB     70%
 ```

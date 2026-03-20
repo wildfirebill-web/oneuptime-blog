@@ -12,7 +12,7 @@ DNSSEC (DNS Security Extensions) adds cryptographic signatures to DNS records. W
 
 ## How DNSSEC Works
 
-```
+```text
 DNSSEC chain of trust:
   Root Zone (.) → signs .com TLD → signs example.com zone
 
@@ -33,6 +33,7 @@ Verification:
 
 ```bash
 # In /etc/bind/named.conf.options (for recursive resolver):
+
 options {
     dnssec-validation auto;  # Uses managed-keys for root trust anchor
     # or: dnssec-validation yes;  # Requires explicit trust anchor
@@ -154,4 +155,4 @@ drill -TD example.com
 
 ## Conclusion
 
-DNSSEC requires two components: signing the zone (creating RRSIG and DNSKEY records) and publishing the DS record to the parent zone (creating the chain of trust). Use BIND's inline signing (`auto-dnssec maintain`) for automatic key management. After signing, submit the DS record to your domain registrar. Verify with `dig +dnssec` and look for the `AD` flag in recursive resolver responses. DNSSEC doesn't encrypt DNS — it only authenticates records. For privacy, combine with DNS over TLS or DNS over HTTPS.
+DNSSEC requires two components: signing the zone (creating RRSIG and DNSKEY records) and publishing the DS record to the parent zone (creating the chain of trust). Use BIND's inline signing (`auto-dnssec maintain`) for automatic key management. After signing, submit the DS record to your domain registrar. Verify with `dig +dnssec` and look for the `AD` flag in recursive resolver responses. DNSSEC doesn't encrypt DNS - it only authenticates records. For privacy, combine with DNS over TLS or DNS over HTTPS.

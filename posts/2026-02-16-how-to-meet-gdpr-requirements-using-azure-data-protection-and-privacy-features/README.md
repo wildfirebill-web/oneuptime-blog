@@ -22,6 +22,7 @@ Deploy all resources that process EU personal data in EU regions:
 
 ```bash
 # Use Azure Policy to restrict resource deployment to EU regions only
+
 az policy assignment create \
   --name "eu-data-residency" \
   --scope "/providers/Microsoft.Management/managementGroups/contoso-eu-workloads" \

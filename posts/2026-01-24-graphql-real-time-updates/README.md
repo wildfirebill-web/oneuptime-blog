@@ -40,6 +40,7 @@ sequenceDiagram
 
 ```graphql
 # schema.graphql
+
 type Subscription {
   # Subscribe to new messages in a chat room
   messageAdded(roomId: ID!): Message!

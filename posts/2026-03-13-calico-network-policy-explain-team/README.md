@@ -37,6 +37,7 @@ Walk your team through three steps:
 **Step 1: Show the open default**
 ```bash
 # No policy applied - all pods can reach all pods
+
 kubectl exec frontend-pod -- curl -s http://backend-svc
 # Success - the "open door" default
 ```

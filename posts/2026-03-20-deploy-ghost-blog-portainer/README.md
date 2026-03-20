@@ -90,6 +90,7 @@ services:
 
 ```bash
 # Backup the content volume
+
 docker run --rm   -v ghost-content:/data   -v $(pwd):/backup   alpine tar czf /backup/ghost-backup-$(date +%Y%m%d).tar.gz -C /data .
 
 # Backup MySQL

@@ -149,6 +149,7 @@ You can also call transactions on any model class:
 
 ```ruby
 # Using the model class
+
 User.transaction do
   user.update!(balance: user.balance - amount)
   recipient.update!(balance: recipient.balance + amount)

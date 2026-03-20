@@ -22,6 +22,7 @@ Configure NGINX to proxy WebSocket connections with appropriate headers and time
 
 ```nginx
 # nginx-websocket.conf
+
 upstream websocket_backend {
     server ws-service-1:8080;
     server ws-service-2:8080;

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nagios, IPv6, Monitoring, ICMP, Service Checks, Network
+Tags: Nagios, IPv6, Monitoring, ICMP, Service Checks, Networks
 
 Description: A guide to configuring Nagios Core and Nagios XI to monitor IPv6 hosts and services, including ICMP checks, TCP port checks, and HTTP monitoring.
 
@@ -12,6 +12,7 @@ Nagios supports IPv6 monitoring through plugins that handle IPv6 addresses nativ
 
 ```bash
 # Check that check_ping supports IPv6
+
 /usr/lib/nagios/plugins/check_ping --help | grep -i ipv6
 
 # Test a direct IPv6 ping check
@@ -152,4 +153,4 @@ curl http://localhost/nagios/cgi-bin/status.cgi?host=web-01-ipv6
 /usr/lib/nagios/plugins/check_tcp -H 2001:db8::10 -p 443
 ```
 
-Nagios monitors IPv6 hosts using the same plugin framework as IPv4, with the host's `address` field containing the IPv6 address — no separate configuration is needed beyond defining the hosts and ensuring the plugins support IPv6 target addresses.
+Nagios monitors IPv6 hosts using the same plugin framework as IPv4, with the host's `address` field containing the IPv6 address - no separate configuration is needed beyond defining the hosts and ensuring the plugins support IPv6 target addresses.

@@ -43,6 +43,7 @@ Rancher needs a GCP service account to manage the GKE cluster. Create one with t
 
 ```bash
 # Create the service account
+
 gcloud iam service-accounts create rancher-gke-import \
   --display-name="Rancher GKE Import"
 

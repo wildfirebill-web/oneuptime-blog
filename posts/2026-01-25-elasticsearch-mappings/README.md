@@ -67,6 +67,7 @@ Here's a comprehensive example covering common field types:
 
 ```bash
 # Create an index with explicit mappings
+
 curl -X PUT "localhost:9200/products" -H 'Content-Type: application/json' -d'
 {
   "settings": {

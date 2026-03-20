@@ -26,6 +26,7 @@ Scaffold a new NestJS application:
 
 ```bash
 # Create a new NestJS project
+
 nest new my-nest-app
 cd my-nest-app
 ```

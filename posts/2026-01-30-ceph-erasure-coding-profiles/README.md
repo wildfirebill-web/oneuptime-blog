@@ -64,6 +64,7 @@ Ceph stores EC parameters in named profiles. Create one with the `ceph osd erasu
 
 ```bash
 # Create a profile named "ec-4-2" with 4 data shards and 2 parity shards
+
 ceph osd erasure-code-profile set ec-4-2 \
     k=4 \
     m=2 \

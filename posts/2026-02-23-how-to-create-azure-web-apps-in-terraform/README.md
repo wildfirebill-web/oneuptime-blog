@@ -64,6 +64,7 @@ resource "azurerm_service_plan" "web" {
 
 ```hcl
 # Linux web app running Node.js
+
 resource "azurerm_linux_web_app" "main" {
   name                = "webapp-myapp-prod"
   location            = azurerm_resource_group.web.location

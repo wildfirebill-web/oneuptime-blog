@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Check pod status
+
 kubectl get pods -n your-namespace
 
 # Look for these status values:

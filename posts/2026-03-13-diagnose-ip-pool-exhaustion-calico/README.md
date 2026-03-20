@@ -36,6 +36,7 @@ Understanding Calico's IPAM model is key to diagnosing exhaustion. Calico alloca
 ```bash
 calicoctl ipam show
 # Shows: free blocks, allocated IPs, total capacity
+
 ```
 
 **Step 2: Show detailed block allocation**

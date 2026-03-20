@@ -29,6 +29,7 @@ Design your field mask starting from zero fields and adding only what is necessa
 
 ```yaml
 # Minimal security-first field mask
+
 hubble:
   export:
     static:

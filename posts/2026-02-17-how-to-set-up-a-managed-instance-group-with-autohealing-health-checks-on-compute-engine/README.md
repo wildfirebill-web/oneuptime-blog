@@ -29,6 +29,7 @@ First, you need an instance template that defines what your VMs look like. This 
 
 ```bash
 # Create an instance template with a startup script that installs and starts a web server
+
 gcloud compute instance-templates create my-app-template \
     --machine-type=e2-medium \
     --image-family=debian-12 \

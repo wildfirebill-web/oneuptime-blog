@@ -26,6 +26,7 @@ Install and start Podman on your system:
 
 ```bash
 # macOS
+
 brew install podman
 podman machine init
 podman machine start

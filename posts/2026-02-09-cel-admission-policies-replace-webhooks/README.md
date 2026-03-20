@@ -88,6 +88,7 @@ Now try creating a Deployment without resource limits:
 kubectl create deployment nginx --image=nginx
 
 # Error from server (Forbidden): deployments.apps "nginx" is denied by ValidatingAdmissionPolicy 'require-resource-limits':
+
 # All containers must define resource limits
 ```
 

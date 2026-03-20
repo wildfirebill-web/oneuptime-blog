@@ -21,6 +21,7 @@ You can see the default ulimits on any Linux system.
 
 ```bash
 # View current ulimits in a shell
+
 ulimit -a
 
 # View ulimits inside a Docker container

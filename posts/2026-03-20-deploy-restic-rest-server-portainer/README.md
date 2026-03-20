@@ -1,4 +1,4 @@
-# How to Deploy Restic with REST Server via Portainer
+# How to Deploy Restic with REST Server via Portainer - Rest Server
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,13 +25,14 @@ Go to **Stacks > Add Stack** in Portainer:
 
 ```yaml
 # restic-rest-server-stack.yml
+
 version: "3.8"
 
 services:
   restic-rest:
     image: restic/rest-server:latest
     environment:
-      # Enable authentication — create htpasswd users separately
+      # Enable authentication - create htpasswd users separately
       - OPTIONS=--htpasswd-file /data/.htpasswd --tls
     ports:
       - "8000:8000"   # Restic REST API endpoint
@@ -49,7 +50,7 @@ volumes:
 Access the container via Portainer's **Console** tab and generate an htpasswd entry:
 
 ```bash
-# Inside the container — create a backup user
+# Inside the container - create a backup user
 htpasswd -B -c /data/.htpasswd backupuser
 ```
 

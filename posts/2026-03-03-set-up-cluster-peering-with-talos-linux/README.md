@@ -20,6 +20,7 @@ Before setting up cluster peering, you need to ensure a few things:
 
 ```yaml
 # Cluster A - Talos machine config
+
 cluster:
   network:
     podSubnets:

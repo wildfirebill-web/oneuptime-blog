@@ -622,6 +622,7 @@ class IncidentCollector:
         return incident
 
 # Flask routes for webhook endpoints
+
 collector = IncidentCollector(incident_store=None)  # Initialize with your store
 
 @app.route("/webhook/<source>", methods=["POST"])

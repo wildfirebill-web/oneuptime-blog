@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, Snapshots, Backup
+Tags: Harvester, Kubernetes, Virtualization, HCI, Snapshot, Backup
 
 Description: Learn how to take, manage, and restore virtual machine snapshots in Harvester for point-in-time recovery and safe change management.
 
 ## Introduction
 
-VM snapshots in Harvester capture the state of a VM's disks at a specific point in time. Snapshots are useful before applying OS updates, configuration changes, or software upgrades — if something goes wrong, you can quickly revert to the pre-change state. Harvester uses Longhorn's snapshot technology to create space-efficient, copy-on-write snapshots stored on the same cluster storage.
+VM snapshots in Harvester capture the state of a VM's disks at a specific point in time. Snapshots are useful before applying OS updates, configuration changes, or software upgrades - if something goes wrong, you can quickly revert to the pre-change state. Harvester uses Longhorn's snapshot technology to create space-efficient, copy-on-write snapshots stored on the same cluster storage.
 
 ## Snapshot vs. Backup
 
@@ -34,6 +34,7 @@ The snapshot appears in the **VM Snapshots** section of the VM details.
 
 ```yaml
 # vm-snapshot.yaml
+
 # Take a snapshot of a VM
 
 apiVersion: snapshot.kubevirt.io/v1alpha1
@@ -243,4 +244,4 @@ kubectl get virtualmachinesnapshot -n default \
 
 ## Conclusion
 
-VM snapshots in Harvester provide a fast and reliable safety net for change management. The ability to take a snapshot before any risky operation — OS upgrades, configuration changes, or application deployments — means you can make changes with confidence, knowing that rollback is just minutes away. For production environments, combine on-cluster snapshots with off-cluster backups to achieve comprehensive data protection: snapshots for short-term recovery and backups for long-term disaster recovery.
+VM snapshots in Harvester provide a fast and reliable safety net for change management. The ability to take a snapshot before any risky operation - OS upgrades, configuration changes, or application deployments - means you can make changes with confidence, knowing that rollback is just minutes away. For production environments, combine on-cluster snapshots with off-cluster backups to achieve comprehensive data protection: snapshots for short-term recovery and backups for long-term disaster recovery.

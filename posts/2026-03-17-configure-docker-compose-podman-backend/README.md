@@ -20,6 +20,7 @@ The simplest approach points Docker Compose at the Podman socket.
 
 ```bash
 # Enable the Podman socket
+
 systemctl --user enable --now podman.socket
 
 # Set DOCKER_HOST globally

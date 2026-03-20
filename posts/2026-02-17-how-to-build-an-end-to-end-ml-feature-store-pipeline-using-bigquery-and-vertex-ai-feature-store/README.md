@@ -38,6 +38,7 @@ Before you start, make sure you have the necessary APIs enabled and the SDK inst
 
 ```bash
 # Enable the required APIs on your GCP project
+
 gcloud services enable aiplatform.googleapis.com
 gcloud services enable bigquery.googleapis.com
 

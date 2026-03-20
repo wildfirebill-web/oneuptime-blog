@@ -14,6 +14,7 @@ Before you can fix STIG findings, you need to know what is failing. OpenSCAP is 
 
 ```bash
 # Install the scanner and STIG content
+
 dnf install -y openscap-scanner scap-security-guide
 
 # Verify the STIG profile is included

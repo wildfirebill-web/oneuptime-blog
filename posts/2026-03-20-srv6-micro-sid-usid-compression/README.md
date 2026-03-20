@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SRv6, uSID, Micro-SID, Compression, RFC 9631, Networking
+Tags: SRv6, USID, Micro-SID, Compression, RFC 9631, Networking
 
 Description: Understand SRv6 micro-SID (uSID) compression that packs multiple node identifiers into a single 128-bit SID, drastically reducing SRv6 header overhead.
 
@@ -12,7 +12,7 @@ Standard SRv6 uses one full 128-bit SID per network function. For paths with man
 
 ## The Overhead Problem
 
-```
+```text
 Standard SRv6 path: 4 waypoints
   Outer IPv6 header: 40 bytes
   SRH:               8 + (4 × 16) = 72 bytes
@@ -28,7 +28,7 @@ SRv6 with uSID: 4 waypoints in one container
 
 A uSID container is a single 128-bit IPv6 address that encodes multiple micro-SIDs.
 
-```
+```text
 uSID format (16-bit micro-SIDs):
 128 bits = 8 × 16-bit micro-SID slots
 
@@ -63,6 +63,7 @@ sequenceDiagram
 
 ```bash
 # Enable uSID End behavior on Linux (kernel 5.4+)
+
 # uSID End = End with Penultimate Segment Popping Unsolicited (PSP-USD)
 
 # Configure a uSID locator address
@@ -79,7 +80,7 @@ ip -6 route add 5f00:0101::/32 \
 
 ## Configuring uSID on Cisco IOS-XR
 
-```
+```text
 ! Enable micro-SID on locator
 segment-routing srv6
  locators
@@ -102,7 +103,7 @@ segment-routing srv6
 
 Packs 3 micro-SIDs per 128-bit container with more bits per SID.
 
-```
+```text
 Format: 5f00:NNNN:NNNN:NNNN:FFFF::
   Where NNNN:NNNN = 32-bit node ID
   And FFFF = function

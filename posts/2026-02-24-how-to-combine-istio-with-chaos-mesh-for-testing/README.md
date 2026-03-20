@@ -342,6 +342,7 @@ kubectl port-forward -n istio-system svc/kiali 20001:20001
 ```bash
 kubectl delete namespace chaos-combined
 # Optionally remove Chaos Mesh
+
 helm uninstall chaos-mesh -n chaos-mesh
 kubectl delete namespace chaos-mesh
 ```

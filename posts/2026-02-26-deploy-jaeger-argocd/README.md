@@ -41,6 +41,7 @@ tracing/
 
 ```yaml
 # tracing/jaeger-operator/Chart.yaml
+
 apiVersion: v2
 name: jaeger-operator
 description: Wrapper chart for Jaeger Operator

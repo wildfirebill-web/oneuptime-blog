@@ -27,6 +27,7 @@ Here is a ResourceQuota that limits compute, storage, and object counts:
 
 ```yaml
 # platform/quotas/production-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:
@@ -356,7 +357,7 @@ spec:
     pods: "200"
 ```
 
-## ResourceQuota and LimitRange Together
+ResourceQuota and LimitRange Together
 
 ResourceQuotas require that all pods in the namespace have resource requests and limits defined. If a pod does not specify them, it cannot be created. Pair your quota with a LimitRange to set default requests and limits:
 

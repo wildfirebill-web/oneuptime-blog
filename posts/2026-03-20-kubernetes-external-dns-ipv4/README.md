@@ -1,4 +1,4 @@
-# How to Configure External DNS with Kubernetes for IPv4 Services
+# How to Configure External DNS with Kubernetes for IPv4 Services (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,6 +47,7 @@ ExternalDNS is a Kubernetes controller that watches Services and Ingresses and a
 
 ```yaml
 # external-dns.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -164,7 +165,7 @@ nslookup web.example.com
 
 ## Cleanup
 
-ExternalDNS manages record lifecycle — when you delete the Service or Ingress, ExternalDNS removes the DNS record automatically.
+ExternalDNS manages record lifecycle - when you delete the Service or Ingress, ExternalDNS removes the DNS record automatically.
 
 ## Conclusion
 

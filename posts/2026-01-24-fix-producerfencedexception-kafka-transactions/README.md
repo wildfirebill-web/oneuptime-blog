@@ -492,6 +492,7 @@ When troubleshooting `ProducerFencedException`, check:
 
 ```bash
 # Check transaction state on broker
+
 kafka-transactions.sh --bootstrap-server localhost:9092 \
   --describe --transactional-id "your-transactional-id"
 

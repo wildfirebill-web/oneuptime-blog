@@ -27,6 +27,7 @@ The Retail API powers Vertex AI Search for Commerce. Enable it and set up the in
 
 ```bash
 # Enable the Retail API
+
 gcloud services enable retail.googleapis.com
 
 # Also enable Vertex AI for the full search capabilities

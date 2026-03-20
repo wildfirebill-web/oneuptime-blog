@@ -35,6 +35,7 @@ flowchart TD
 
 ```bash
 # Create the DB cluster
+
 aws rds create-db-cluster \
   --db-cluster-identifier my-serverless-cluster \
   --engine aurora-postgresql \

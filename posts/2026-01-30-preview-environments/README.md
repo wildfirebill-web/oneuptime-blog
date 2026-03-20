@@ -94,6 +94,7 @@ This template creates an isolated namespace for each preview environment with re
 
 ```yaml
 # preview-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -48,6 +48,7 @@ sudo vgs
 
 ```bash
 # Create a 200GB thin pool named 'thin_pool' in data_vg
+
 # --thinpool flag creates the thin pool metadata LV automatically
 sudo lvcreate -L 200G --thinpool thin_pool data_vg
 ```

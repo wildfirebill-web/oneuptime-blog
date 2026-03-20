@@ -16,6 +16,7 @@ The Prometheus community Helm charts are hosted at `https://prometheus-community
 
 ```yaml
 # HelmRepository for the Prometheus community Helm charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

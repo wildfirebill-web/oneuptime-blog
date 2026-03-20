@@ -539,6 +539,7 @@ Code signing is crucial for distributing mobile apps. Here is how to set up sign
 
 ```bash
 # Export certificate to .p12 file from Keychain Access
+
 # Then encode it for GitHub secrets
 
 base64 -i Certificates.p12 | pbcopy

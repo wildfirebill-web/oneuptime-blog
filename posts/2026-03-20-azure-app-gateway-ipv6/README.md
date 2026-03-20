@@ -17,6 +17,7 @@ RG="rg-appgw"
 LOCATION="eastus"
 
 # Create VNet with Application Gateway subnet (must be /24 or larger)
+
 az network vnet create \
     --resource-group "$RG" \
     --name vnet-appgw \
@@ -174,4 +175,4 @@ curl -6 "http://[${IPV6_ADDR}]/admin.php?id=1 OR 1=1"
 
 ## Conclusion
 
-Azure Application Gateway v2 supports dual-stack by adding both IPv4 and IPv6 frontend IP configurations with separate HTTP listeners. Create both IPv4 and IPv6 public IPs (Standard SKU, Static allocation) and configure a listener for each frontend IP. The WAF policy applies to all traffic regardless of protocol version. The Application Gateway subnet must support IPv6 by having an IPv6 CIDR block assigned — ensure the VNet and subnet have IPv6 address spaces configured before deploying the gateway.
+Azure Application Gateway v2 supports dual-stack by adding both IPv4 and IPv6 frontend IP configurations with separate HTTP listeners. Create both IPv4 and IPv6 public IPs (Standard SKU, Static allocation) and configure a listener for each frontend IP. The WAF policy applies to all traffic regardless of protocol version. The Application Gateway subnet must support IPv6 by having an IPv6 CIDR block assigned - ensure the VNet and subnet have IPv6 address spaces configured before deploying the gateway.

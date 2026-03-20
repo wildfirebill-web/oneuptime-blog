@@ -30,6 +30,7 @@ Docker Scout includes default policies that represent common security best pract
 
 ```bash
 # View all policies for your Docker organization
+
 docker scout policy
 
 # View policy details for a specific image

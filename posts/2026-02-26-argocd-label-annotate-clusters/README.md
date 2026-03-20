@@ -51,6 +51,7 @@ stringData:
 
 ```bash
 # Add labels to an existing cluster
+
 argocd cluster set https://prod-east.k8s.example.com \
   --label environment=production \
   --label region=us-east-1 \

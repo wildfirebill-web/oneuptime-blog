@@ -18,6 +18,7 @@ On CentOS and CentOS Stream, EPEL can be installed directly from the base reposi
 
 ```yaml
 # Install EPEL repository from the base CentOS repos
+
 - name: Install EPEL repository (CentOS)
   ansible.builtin.dnf:
     name: epel-release

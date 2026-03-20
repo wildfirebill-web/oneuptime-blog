@@ -76,6 +76,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ```yaml
 # application.yml
+
 cors:
   allowed-origins:
     - http://localhost:3000

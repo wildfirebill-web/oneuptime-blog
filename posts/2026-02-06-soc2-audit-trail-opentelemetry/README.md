@@ -30,6 +30,7 @@ Here is an example of instrumenting an API endpoint that modifies user permissio
 
 ```python
 # Python example: Adding audit-relevant attributes to spans
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("audit-service")

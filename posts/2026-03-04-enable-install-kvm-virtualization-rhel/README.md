@@ -14,6 +14,7 @@ KVM (Kernel-based Virtual Machine) is the built-in hypervisor on RHEL. It turns 
 
 ```bash
 # Check if the CPU supports hardware virtualization
+
 grep -E '(vmx|svm)' /proc/cpuinfo
 
 # vmx = Intel VT-x, svm = AMD-V

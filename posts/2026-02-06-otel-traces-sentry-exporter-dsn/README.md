@@ -76,6 +76,7 @@ Here is what an instrumented application looks like:
 
 ```python
 # app.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

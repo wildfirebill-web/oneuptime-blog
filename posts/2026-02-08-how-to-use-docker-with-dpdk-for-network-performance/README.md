@@ -31,6 +31,7 @@ Before running DPDK in Docker, configure the host:
 
 ```bash
 # Enable IOMMU in the kernel boot parameters
+
 # Add to /etc/default/grub: GRUB_CMDLINE_LINUX="intel_iommu=on iommu=pt"
 sudo update-grub
 sudo reboot

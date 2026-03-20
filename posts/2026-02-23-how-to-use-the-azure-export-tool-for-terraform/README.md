@@ -22,6 +22,7 @@ You can install the tool through several package managers:
 
 ```bash
 # Install on macOS using Homebrew
+
 brew install azure/aztfexport/aztfexport
 
 # Install on Linux using the apt repository

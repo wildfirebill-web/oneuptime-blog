@@ -18,6 +18,7 @@ The `-target` flag accepts a resource address and limits the plan to that resour
 
 ```bash
 # Target a specific resource
+
 terraform plan -target=aws_instance.web_server
 
 # Target a resource with an index

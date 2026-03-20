@@ -18,6 +18,7 @@ Start by creating the IAM role that Step Functions needs to invoke other AWS ser
 
 ```hcl
 # IAM role for Step Functions state machine
+
 resource "aws_iam_role" "step_functions_role" {
   name = "step-functions-execution-role"
 

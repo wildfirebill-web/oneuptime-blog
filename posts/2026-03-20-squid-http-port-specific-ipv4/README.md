@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, IPv4, http_port, Proxy, Configuration, Networking
+Tags: Squid, IPv4, Http_port, Proxy, Configuration, Networking
 
 Description: Configure Squid's http_port directive to listen on a specific IPv4 address instead of all interfaces, controlling which network interface serves proxy traffic.
 
@@ -16,6 +16,7 @@ Squid's `http_port` directive defines where it accepts client connections. By de
 # /etc/squid/squid.conf
 
 # Default (all interfaces, port 3128)
+
 # http_port 3128
 
 # Bind to specific IPv4 address

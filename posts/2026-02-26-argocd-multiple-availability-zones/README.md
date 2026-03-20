@@ -55,6 +55,7 @@ Kubernetes topology spread constraints distribute pods across topology domains (
 
 ```yaml
 # Global topology spread for all ArgoCD components
+
 global:
   topologySpreadConstraints:
     - maxSkew: 1

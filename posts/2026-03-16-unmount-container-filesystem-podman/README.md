@@ -20,6 +20,7 @@ Unmount a previously mounted container filesystem:
 
 ```bash
 # Set up: create and mount a container
+
 sudo podman run -d --name my-app nginx:latest
 sudo podman mount my-app
 

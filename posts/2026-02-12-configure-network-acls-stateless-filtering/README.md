@@ -32,6 +32,7 @@ Let's build a NACL that allows web traffic (HTTP/HTTPS) and SSH, which is a comm
 
 ```bash
 # Create a new Network ACL in your VPC
+
 aws ec2 create-network-acl \
   --vpc-id vpc-0abc123def456789 \
   --tag-specifications 'ResourceType=network-acl,Tags=[{Key=Name,Value=WebSubnet-NACL}]'

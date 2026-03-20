@@ -29,6 +29,7 @@ View current certificate expiration:
 
 ```bash
 # On control plane node
+
 sudo openssl x509 -in /etc/kubernetes/pki/apiserver.crt -noout -dates
 
 # Output:

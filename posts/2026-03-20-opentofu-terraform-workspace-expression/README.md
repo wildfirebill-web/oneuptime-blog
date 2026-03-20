@@ -8,18 +8,19 @@ Description: Learn how to use the terraform.workspace expression in OpenTofu to 
 
 ## Introduction
 
-The `terraform.workspace` expression returns the name of the currently active workspace as a string. You can use it anywhere a string is valid in OpenTofu configuration — in resource arguments, locals, conditions, and tags. It is the primary way to make a single configuration behave differently per environment.
+The `terraform.workspace` expression returns the name of the currently active workspace as a string. You can use it anywhere a string is valid in OpenTofu configuration - in resource arguments, locals, conditions, and tags. It is the primary way to make a single configuration behave differently per environment.
 
 ## Basic Usage
 
 ```hcl
 # Returns "default", "staging", "production", etc.
+
 output "current_workspace" {
   value = terraform.workspace
 }
 ```
 
-## Resource Naming
+Resource Naming
 
 ```hcl
 # Include workspace in all resource names

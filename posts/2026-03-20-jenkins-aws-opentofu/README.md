@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -206,6 +207,6 @@ resource "aws_volume_attachment" "jenkins_home" {
 
 - Separate the EBS volume from the instance so you can replace the EC2 instance without losing Jenkins data.
 - Use an Application Load Balancer with ACM certificate for HTTPS termination rather than configuring SSL in Jenkins directly.
-- Assign an IAM role to the instance rather than storing AWS credentials in Jenkins — use the role to assume per-environment deployment roles.
+- Assign an IAM role to the instance rather than storing AWS credentials in Jenkins - use the role to assume per-environment deployment roles.
 - Enable automated EBS snapshots using AWS Backup or Data Lifecycle Manager to protect Jenkins configuration.
 - Consider migrating to Jenkins on Kubernetes for better scalability and resource utilization.

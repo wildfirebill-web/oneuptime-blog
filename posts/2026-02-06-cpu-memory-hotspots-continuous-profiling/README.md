@@ -78,6 +78,7 @@ For Java, the async-profiler (which the OTel eBPF profiler uses under the hood f
 
 ```yaml
 # profiler agent configuration
+
 profiling:
   cpu:
     enabled: true

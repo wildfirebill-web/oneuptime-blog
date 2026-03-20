@@ -48,6 +48,7 @@ Error: parse error at (mychart/templates/deployment.yaml:15): unexpected "{" in 
 
 ```yaml
 # Wrong - missing closing brace
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -348,7 +349,7 @@ helm repo update
 helm install my-release myrepo/mychart --version 0.9.0
 ```
 
-## Resource Conflicts
+Resource Conflicts
 
 ### Error: Resource Already Exists
 

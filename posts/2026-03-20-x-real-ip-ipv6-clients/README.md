@@ -8,7 +8,7 @@ Description: Configure the X-Real-IP header to carry IPv6 client addresses throu
 
 ## Introduction
 
-X-Real-IP is a single-IP HTTP header used by reverse proxies to forward the original client IP to backend applications. Unlike X-Forwarded-For, which accumulates IPs across a chain of proxies, X-Real-IP contains only one address — the real client. IPv6 addresses require no special encoding in X-Real-IP (no brackets), but applications must handle the colon-containing format correctly.
+X-Real-IP is a single-IP HTTP header used by reverse proxies to forward the original client IP to backend applications. Unlike X-Forwarded-For, which accumulates IPs across a chain of proxies, X-Real-IP contains only one address - the real client. IPv6 addresses require no special encoding in X-Real-IP (no brackets), but applications must handle the colon-containing format correctly.
 
 ## Nginx: Set X-Real-IP for IPv6
 
@@ -41,6 +41,7 @@ When Nginx is behind another load balancer that sets X-Real-IP:
 # /etc/nginx/conf.d/trust-real-ip.conf
 
 # Trust these upstream proxies
+
 set_real_ip_from 10.0.0.0/8;
 set_real_ip_from fd00::/8;
 set_real_ip_from 2001:db8:lb::/48;
@@ -48,7 +49,7 @@ set_real_ip_from 2001:db8:lb::/48;
 # Use X-Real-IP as the real client IP source
 real_ip_header X-Real-IP;
 
-# Do NOT set real_ip_recursive here — X-Real-IP is a single value
+# Do NOT set real_ip_recursive here - X-Real-IP is a single value
 
 server {
     listen [::]:80;
@@ -150,7 +151,7 @@ def get_client_ip() -> str:
                 # Validate: X-Real-IP must be a valid IP address
                 return str(ipaddress.ip_address(x_real_ip))
             except ValueError:
-                pass  # Invalid IP in header — fall through
+                pass  # Invalid IP in header - fall through
 
         # Try X-Forwarded-For as fallback
         xff = request.headers.get('X-Forwarded-For', '')

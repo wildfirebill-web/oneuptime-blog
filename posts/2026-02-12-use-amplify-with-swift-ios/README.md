@@ -50,6 +50,7 @@ Initialize Amplify and create the backend resources:
 
 ```bash
 # Navigate to your Xcode project directory
+
 cd MyiOSApp
 
 # Initialize Amplify

@@ -65,6 +65,7 @@ When Kubernetes resources are provisioned or managed by Terraform, link them to 
 
 ```yaml
 # Resources managed by Terraform
+
 apiVersion: v1
 kind: Namespace
 metadata:

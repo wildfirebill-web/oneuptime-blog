@@ -16,6 +16,7 @@ The `textencodebase64` function encodes a given string using a specified charact
 
 ```hcl
 # Encode text as UTF-16LE and then base64 encode it
+
 output "encoded" {
   value = textencodebase64("Hello, World!", "UTF-16LE")
 }

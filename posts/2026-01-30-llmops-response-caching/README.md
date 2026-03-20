@@ -121,6 +121,7 @@ class ExactMatchCacheKey:
 
 
 # Usage example
+
 cache_key = ExactMatchCacheKey.generate(
     prompt="What is the capital of France?",
     model="gpt-4",

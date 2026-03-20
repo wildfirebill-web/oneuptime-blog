@@ -57,6 +57,7 @@ If your inventory is in ServiceNow or a similar CMDB, you can export it and tran
 
 ```python
 # convert_cmdb_to_azure_migrate.py
+
 # Transforms a CMDB server inventory export into Azure Migrate CSV format
 import csv
 import sys

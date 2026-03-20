@@ -42,6 +42,7 @@ Start by adding the OpenTelemetry packages and instrumentation libraries for ASP
 
 ```bash
 # Core OpenTelemetry packages
+
 dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Extensions.Hosting
 

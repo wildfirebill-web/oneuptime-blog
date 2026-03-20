@@ -53,6 +53,7 @@ If you do not already have source APIs, create a couple for testing. Each source
 
 ```graphql
 # schema for the Users source API
+
 type User {
   id: ID!
   name: String!

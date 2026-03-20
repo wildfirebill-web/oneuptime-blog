@@ -224,6 +224,7 @@ Istio adds labels and annotations to resources it manages. You can use these to 
 
 ```bash
 # Find all pods with Istio sidecars
+
 kubectl get pods -n default -l security.istio.io/tlsMode=istio
 
 # Find pods with specific sidecar version

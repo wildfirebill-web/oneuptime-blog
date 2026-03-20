@@ -80,6 +80,7 @@ sudo vi /etc/pam.d/my-web-app
 
 ```bash
 # Only authenticate against the LDAP domain for this service
+
 auth    required    pam_sss.so domains=ldap.internal
 account required    pam_sss.so domains=ldap.internal
 password required   pam_sss.so domains=ldap.internal

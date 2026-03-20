@@ -133,6 +133,7 @@ spec:
 
 ```yaml
 # Exact path
+
 paths: ["/api/v1/users"]
 
 # Prefix (use wildcard)

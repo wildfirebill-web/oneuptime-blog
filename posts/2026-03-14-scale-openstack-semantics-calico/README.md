@@ -80,6 +80,7 @@ Tune the Calico Neutron plugin for efficient translation.
 
 ```bash
 # Neutron plugin optimization for semantic mapping
+
 cat << 'EOF' | sudo tee /etc/neutron/neutron.conf.d/semantic-scale.conf
 [calico]
 # Batch endpoint updates to reduce datastore writes

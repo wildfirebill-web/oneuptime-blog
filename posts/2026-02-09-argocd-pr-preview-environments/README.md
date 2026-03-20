@@ -153,6 +153,7 @@ Preview overlay:
 
 ```yaml
 # kubernetes/overlays/preview/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:

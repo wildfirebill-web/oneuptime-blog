@@ -16,6 +16,7 @@ The `build-essential` package pulls in the most important pieces:
 
 ```bash
 # Update package lists first
+
 sudo apt update
 
 # Install the essential build toolchain

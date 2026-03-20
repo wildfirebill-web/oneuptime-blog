@@ -30,6 +30,7 @@ First, install the required packages for your Node.js GraphQL server.
 
 ```bash
 # Install Apollo Server and graphql-upload packages
+
 # graphql-upload handles multipart form data parsing
 npm install @apollo/server graphql graphql-upload
 npm install --save-dev @types/graphql-upload

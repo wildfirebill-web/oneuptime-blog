@@ -45,6 +45,7 @@ Create a reusable service class that wraps the Vertex AI Search API.
 
 ```python
 # search_service.py
+
 from google.cloud import discoveryengine_v1 as discoveryengine
 from typing import Optional
 

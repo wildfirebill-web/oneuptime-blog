@@ -21,6 +21,7 @@ PostgreSQL full-text search revolves around two data types: `tsvector` and `tsqu
 
 ```ruby
 # You can experiment with these in the Rails console
+
 # Convert text to tsvector
 ActiveRecord::Base.connection.execute("SELECT to_tsvector('english', 'The quick brown fox jumps over the lazy dog')").first
 # Returns: "'brown':3 'dog':9 'fox':4 'jump':5 'lazi':8 'quick':2"

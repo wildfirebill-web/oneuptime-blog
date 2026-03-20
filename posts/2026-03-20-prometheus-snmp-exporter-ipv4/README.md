@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, SNMP, IPv4, Network Monitoring, Metrics, Exporters
+Tags: Prometheus, SNMP, IPv4, Network Monitoring, Metrics, Exporter
 
 Description: Configure the Prometheus SNMP exporter to collect metrics from IPv4 network devices using SNMPv2c and SNMPv3, generate snmp.yml with generator, and build Grafana dashboards.
 
@@ -12,7 +12,7 @@ The Prometheus SNMP exporter collects metrics from network devices (routers, swi
 
 ## Architecture
 
-```
+```text
 Prometheus ──scrape──▶ snmp_exporter :9116 ──SNMP──▶ 10.0.0.1 (router)
                                               ──SNMP──▶ 10.0.0.2 (switch)
                                               ──SNMP──▶ 10.0.0.3 (UPS)
@@ -24,6 +24,7 @@ Prometheus passes the target device IP as a parameter to the SNMP exporter, whic
 
 ```bash
 # Download snmp_exporter
+
 SNMP_VERSION="0.24.1"
 wget https://github.com/prometheus/snmp_exporter/releases/download/v${SNMP_VERSION}/snmp_exporter-${SNMP_VERSION}.linux-amd64.tar.gz
 tar xzf snmp_exporter-*.tar.gz
@@ -155,7 +156,7 @@ scrape_configs:
 ## Testing the SNMP Exporter
 
 ```bash
-# Manual test — scrape metrics for a specific device
+# Manual test - scrape metrics for a specific device
 curl "http://10.0.0.5:9116/snmp?target=10.0.0.1&module=if_mib"
 
 # Should return Prometheus-format metrics like:

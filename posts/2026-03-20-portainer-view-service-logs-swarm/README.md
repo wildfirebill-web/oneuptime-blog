@@ -33,7 +33,7 @@ Viewing logs from Swarm services is different from standalone containers because
 
 The Portainer service log viewer aggregates logs from all running tasks:
 
-```
+```text
 [2024-01-15T10:00:01Z] [web.1] 192.168.1.1 - - [15/Jan/2024] "GET / HTTP/1.1" 200
 [2024-01-15T10:00:01Z] [web.2] 192.168.1.2 - - [15/Jan/2024] "GET /api HTTP/1.1" 200
 [2024-01-15T10:00:02Z] [web.3] 192.168.1.3 - - [15/Jan/2024] "GET /health HTTP/1.1" 200
@@ -47,11 +47,11 @@ Each log line is prefixed with:
 
 Configure the log display:
 
-```
-[x] Auto-scroll     — Jump to newest logs automatically
-[x] Wrap lines      — Wrap long lines in viewport
-[ ] Timestamps      — Show ISO timestamps per line
-Lines: [100 ▼]      — Number of lines to fetch (50, 100, 500, 1000, All)
+```text
+[x] Auto-scroll     - Jump to newest logs automatically
+[x] Wrap lines      - Wrap long lines in viewport
+[ ] Timestamps      - Show ISO timestamps per line
+Lines: [100 ▼]      - Number of lines to fetch (50, 100, 500, 1000, All)
 ```
 
 ## Step 4: Filter Logs by Task (Replica)
@@ -66,6 +66,7 @@ Or from the CLI:
 
 ```bash
 # Aggregate logs from all replicas
+
 docker service logs web-frontend
 
 # Follow logs in real time

@@ -41,6 +41,7 @@ First, define a custom integration in Cortex for ArgoCD data:
 
 ```bash
 # Create a custom integration for ArgoCD in Cortex
+
 curl -X POST "https://api.getcortexapp.com/catalog/custom-integrations" \
   -H "Authorization: Bearer ${CORTEX_API_KEY}" \
   -H "Content-Type: application/json" \

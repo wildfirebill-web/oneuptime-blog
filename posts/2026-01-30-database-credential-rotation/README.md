@@ -63,6 +63,7 @@ First, enable the database secrets engine and configure your PostgreSQL connecti
 
 ```bash
 # Enable the database secrets engine at the default path
+
 vault secrets enable database
 
 # Configure PostgreSQL connection

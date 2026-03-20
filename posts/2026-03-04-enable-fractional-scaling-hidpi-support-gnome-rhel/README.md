@@ -14,6 +14,7 @@ Modern HiDPI displays (4K, 5K) require proper scaling to keep text and UI elemen
 
 ```bash
 # Check the current display resolution
+
 xrandr | grep " connected"
 
 # Check the current scale factor

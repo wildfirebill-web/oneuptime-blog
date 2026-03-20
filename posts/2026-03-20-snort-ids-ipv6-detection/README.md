@@ -14,6 +14,7 @@ Snort is one of the most widely deployed network intrusion detection systems. Sn
 
 ```bash
 # Ubuntu/Debian - install from source or PPA
+
 sudo apt install snort3 -y
 
 # Or build from source

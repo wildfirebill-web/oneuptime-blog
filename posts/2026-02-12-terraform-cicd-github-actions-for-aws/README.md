@@ -58,6 +58,7 @@ First, set up the OIDC provider in AWS (one-time setup).
 
 ```hcl
 # This goes in a bootstrap Terraform config or is done manually
+
 resource "aws_iam_openid_connect_provider" "github" {
   url             = "https://token.actions.githubusercontent.com"
   client_id_list  = ["sts.amazonaws.com"]
@@ -97,7 +98,7 @@ resource "aws_iam_role_policy_attachment" "github_terraform" {
 
 This workflow runs `terraform plan` on every pull request and posts the output as a comment.
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
 name: Terraform Plan
 
@@ -162,9 +163,9 @@ jobs:
               : plan;
 
             const body = `### Terraform Plan - ${{ matrix.environment }}
-            \`\`\`
+            ```
             ${truncated}
-            \`\`\`
+            ```
             *Plan exit code: ${{ steps.plan.outcome }}*`;
 
             github.rest.issues.createComment({
@@ -177,7 +178,7 @@ jobs:
       - name: Fail if plan failed
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 ## Step 3: Apply Workflow (Runs on Merge)
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Performance, Memory, Kernel, SysAdmin
+Tags: Ubuntu, Performance, Memory, Kernel, Sysadmin
 
 Description: Learn how to tune Linux kernel memory parameters like vm.swappiness and overcommit settings on Ubuntu to improve system performance and stability.
 
@@ -23,6 +23,7 @@ Check the current value:
 
 ```bash
 # Read the current swappiness value
+
 cat /proc/sys/vm/swappiness
 
 # Or via sysctl

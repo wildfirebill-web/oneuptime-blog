@@ -20,6 +20,7 @@ The key flag is `-s` (or `--script`), which suppresses confirmation prompts:
 
 ```bash
 # Script mode prevents parted from asking questions
+
 sudo parted -s /dev/sdb mklabel gpt
 ```
 

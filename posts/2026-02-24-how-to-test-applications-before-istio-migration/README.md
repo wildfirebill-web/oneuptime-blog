@@ -18,6 +18,7 @@ Your test environment should mirror production as closely as possible. Install I
 
 ```bash
 # Install Istio with your production profile
+
 istioctl install --set profile=default -y
 
 # Verify the installation

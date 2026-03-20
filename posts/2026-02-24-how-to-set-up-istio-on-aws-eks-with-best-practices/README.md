@@ -16,6 +16,7 @@ Before installing Istio, make sure your EKS cluster is set up properly:
 
 ```bash
 # Create an EKS cluster with enough resources for Istio
+
 eksctl create cluster \
   --name my-mesh-cluster \
   --region us-east-1 \
@@ -202,7 +203,7 @@ spec:
           number: 3000
 ```
 
-## Resource Requests and Limits
+Resource Requests and Limits
 
 On EKS, getting sidecar resource requests right is important for the cluster autoscaler. Each sidecar adds to the pod's total resource request, which affects scheduling:
 

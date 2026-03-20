@@ -1,4 +1,4 @@
-# How to Manage Docker Resources via Portainer Terraform Provider
+# How to Manage Docker Resources via Portainer Terraform Provider (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ The Portainer Terraform provider allows you to manage not just Portainer configu
 # containers.tf
 
 # Simple container deployment
+
 resource "portainer_container" "nginx" {
   endpoint_id = portainer_environment.production.id
   name        = "nginx-reverse-proxy"
@@ -180,7 +181,7 @@ resource "portainer_volume" "shared_uploads" {
 ## Step 4: Complete Application Stack with All Resources
 
 ```hcl
-# complete_app.tf — Full application with all Docker resources
+# complete_app.tf - Full application with all Docker resources
 
 # Network
 resource "portainer_network" "myapp_net" {
@@ -269,10 +270,10 @@ output "app_url" {
 # Validate configuration
 terraform validate
 
-# Plan — see all resources to be created
+# Plan - see all resources to be created
 terraform plan
 
-# Apply — create all Docker resources
+# Apply - create all Docker resources
 terraform apply
 
 # View created resources in Portainer

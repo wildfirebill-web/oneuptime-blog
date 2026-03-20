@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, AWS, Elastic Beanstalk, File Upload, Troubleshooting
+Tags: Nginx, AWS, Elastic Beanstalk, File Upload, Troubleshooting
 
 Description: Learn how to resolve the 413 Request Entity Too Large error in Nginx when deploying applications on AWS Elastic Beanstalk.
 
@@ -27,6 +27,7 @@ By default, Nginx limits request body size to 1MB. Any larger request triggers a
 
 ```nginx
 # Increase limit to 100MB
+
 client_max_body_size 100M;
 
 # Or disable limit entirely (not recommended for production)

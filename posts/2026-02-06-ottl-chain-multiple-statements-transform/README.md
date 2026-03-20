@@ -212,6 +212,7 @@ When a multi-step transformation produces unexpected results, add temporary debu
 ```yaml
 - set(attributes["_debug.after_step1"], attributes["http.url"])
 # ... more steps ...
+
 - set(attributes["_debug.after_step5"], name)
 ```
 

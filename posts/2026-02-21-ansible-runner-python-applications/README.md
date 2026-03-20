@@ -22,6 +22,7 @@ The simplest way to run a playbook:
 
 ```python
 # run_playbook.py - Basic ansible-runner usage
+
 import ansible_runner
 
 # Run a playbook

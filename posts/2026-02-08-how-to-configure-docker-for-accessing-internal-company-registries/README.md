@@ -33,6 +33,7 @@ Log in to an internal registry:
 
 ```bash
 # Log in to your company's registry
+
 docker login registry.company.com
 
 # You will be prompted for username and password

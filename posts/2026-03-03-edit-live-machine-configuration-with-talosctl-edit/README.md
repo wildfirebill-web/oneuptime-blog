@@ -23,6 +23,7 @@ When you run `talosctl edit machineconfig`, the following happens:
 
 ```bash
 # Edit the machine config on a specific node
+
 talosctl edit machineconfig --nodes 10.0.1.10
 ```
 

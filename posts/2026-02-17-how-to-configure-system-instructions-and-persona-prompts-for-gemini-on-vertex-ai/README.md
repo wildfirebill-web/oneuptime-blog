@@ -29,6 +29,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create a model with system instructions

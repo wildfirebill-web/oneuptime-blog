@@ -107,6 +107,7 @@ First, ensure you have a secondary server:
 
 ```bash
 # Create a secondary SQL server in a different region
+
 az sql server create \
     --resource-group myResourceGroup \
     --name myserver-secondary \

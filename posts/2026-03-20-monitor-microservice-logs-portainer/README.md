@@ -24,6 +24,7 @@ Portainer provides per-container log viewing with real-time streaming:
 
 ```bash
 # Equivalent Docker CLI commands
+
 # View last 100 lines
 docker logs --tail=100 mycontainer
 
@@ -277,4 +278,4 @@ datasources:
 
 ## Conclusion
 
-Portainer's built-in log viewer is perfect for quickly checking individual container logs during development. For production microservices, the PLG stack gives you centralized, searchable log aggregation across all services. LogQL lets you correlate events across services by request ID or timestamp, making it possible to trace a user request from the API gateway through all downstream microservices. Both tools work together — use Portainer for operational management and Grafana/Loki for log analysis.
+Portainer's built-in log viewer is perfect for quickly checking individual container logs during development. For production microservices, the PLG stack gives you centralized, searchable log aggregation across all services. LogQL lets you correlate events across services by request ID or timestamp, making it possible to trace a user request from the API gateway through all downstream microservices. Both tools work together - use Portainer for operational management and Grafana/Loki for log analysis.

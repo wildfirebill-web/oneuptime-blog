@@ -53,6 +53,7 @@ graph TB
 
 ```python
 # fleet_groups.py
+
 # Device grouping and hierarchy management
 
 from dataclasses import dataclass, field

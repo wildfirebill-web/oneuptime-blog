@@ -16,6 +16,7 @@ This guide covers creating Kubernetes Jobs with Terraform, from simple one-off t
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

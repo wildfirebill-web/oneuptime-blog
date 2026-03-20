@@ -34,6 +34,7 @@ ConfigMaps store non-sensitive key-value pairs. For sensitive data like password
 
 ```yaml
 # app-config.yaml
+
 # A ConfigMap with literal key-value pairs
 # for application settings.
 apiVersion: v1

@@ -51,6 +51,7 @@ Create a `.env` file in your project root:
 
 ```bash
 # .env - Main environment configuration file
+
 # Database configuration
 DATABASE_URL=postgresql://localhost:5432/myapp
 DATABASE_POOL_SIZE=10

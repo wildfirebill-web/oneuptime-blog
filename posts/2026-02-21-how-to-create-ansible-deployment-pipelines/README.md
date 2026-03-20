@@ -76,6 +76,7 @@ The main deployment playbook should be structured in phases.
 
 ```yaml
 # playbooks/deploy.yml
+
 ---
 - name: Pre-Deployment Checks
   hosts: "{{ target_hosts | default('webservers') }}"

@@ -29,6 +29,7 @@ IdM ships with several pre-defined roles. Check what is available before creatin
 
 ```bash
 # List all existing roles
+
 ipa role-find
 
 # Show details of a specific role

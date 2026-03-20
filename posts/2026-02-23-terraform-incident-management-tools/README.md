@@ -24,6 +24,7 @@ Let us build a complete PagerDuty configuration from scratch, starting with team
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     pagerduty = {

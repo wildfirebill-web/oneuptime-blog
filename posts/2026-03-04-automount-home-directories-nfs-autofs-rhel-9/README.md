@@ -92,6 +92,7 @@ If there are local home directories that should not be overridden, you have opti
 
 ```bash
 # Move local homes to the NFS server
+
 sudo rsync -av /home/alice/ nfsserver:/export/home/alice/
 sudo rsync -av /home/bob/ nfsserver:/export/home/bob/
 

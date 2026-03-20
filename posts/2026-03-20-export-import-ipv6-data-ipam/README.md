@@ -8,7 +8,7 @@ Description: Export IPv6 address and prefix data from IPAM tools to CSV/JSON, tr
 
 ## Introduction
 
-IPAM data export and import is needed for tool migrations, bulk provisioning of new address plans, and backup/restore operations. IPv6 data requires careful handling of address normalization — the same address can appear in different formats across IPAM tools, and inconsistent formatting causes import errors.
+IPAM data export and import is needed for tool migrations, bulk provisioning of new address plans, and backup/restore operations. IPv6 data requires careful handling of address normalization - the same address can appear in different formats across IPAM tools, and inconsistent formatting causes import errors.
 
 ## Export from NetBox
 
@@ -24,6 +24,7 @@ from datetime import datetime
 nb = pynetbox.api("http://netbox.internal", token="your-token")
 
 # Export all IPv6 prefixes
+
 def export_prefixes_csv(output_file: str):
     with open(output_file, "w", newline="") as f:
         writer = csv.writer(f)
@@ -235,4 +236,4 @@ EOF
 
 ## Conclusion
 
-IPAM data export and import requires address normalization — always convert IPv6 addresses and prefixes to their canonical form using `ipaddress.ip_network()` before importing to avoid duplicates caused by different representations of the same prefix. For tool migrations, export from the source as CSV/JSON, transform with Python normalization, and import to the target. Validate the import by counting records, checking for invalid formats, and spot-checking a sample of imported entries. Tag imported records with a migration tag for easy identification and cleanup if issues are discovered.
+IPAM data export and import requires address normalization - always convert IPv6 addresses and prefixes to their canonical form using `ipaddress.ip_network()` before importing to avoid duplicates caused by different representations of the same prefix. For tool migrations, export from the source as CSV/JSON, transform with Python normalization, and import to the target. Validate the import by counting records, checking for invalid formats, and spot-checking a sample of imported entries. Tag imported records with a migration tag for easy identification and cleanup if issues are discovered.

@@ -16,6 +16,7 @@ Start with a written standard that extends the OpenTelemetry semantic convention
 
 ```yaml
 # telemetry-standards/conventions.yaml
+
 # Organization telemetry naming conventions
 # Based on OpenTelemetry Semantic Conventions v1.25
 

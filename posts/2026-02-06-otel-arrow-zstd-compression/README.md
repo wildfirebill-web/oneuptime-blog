@@ -66,6 +66,7 @@ However, if your batch sizes are very small (under 100 records), a pre-trained d
 
 ```bash
 # Train a Zstd dictionary on sample Arrow IPC files
+
 # Capture some sample batches first
 zstd --train /tmp/sample-batches/*.arrow -o /etc/otel/zstd-dict
 

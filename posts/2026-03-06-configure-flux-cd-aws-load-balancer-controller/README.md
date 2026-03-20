@@ -30,6 +30,7 @@ The AWS Load Balancer Controller requires subnets to be tagged for auto-discover
 
 ```bash
 # Tag public subnets for internet-facing load balancers
+
 aws ec2 create-tags \
   --resources subnet-0123456789abcdef0 subnet-0123456789abcdef1 \
   --tags Key=kubernetes.io/role/elb,Value=1

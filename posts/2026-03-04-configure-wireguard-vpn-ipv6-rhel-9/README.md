@@ -41,6 +41,7 @@ This configuration gives the server both IPv4 and IPv6 addresses on the tunnel i
 
 ```bash
 # Install WireGuard tools
+
 sudo dnf install -y epel-release wireguard-tools
 
 # Generate keys

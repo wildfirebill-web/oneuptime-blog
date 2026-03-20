@@ -171,6 +171,7 @@ class RedisSnapshotStore:
         }
 
 # Usage
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 snapshot_store = RedisSnapshotStore(r, retention_count=5)
 

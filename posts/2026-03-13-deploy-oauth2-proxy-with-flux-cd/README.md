@@ -49,6 +49,7 @@ kubectl create secret generic oauth2-proxy-secret \
 
 ```yaml
 # clusters/my-cluster/oauth2-proxy/helm-repository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -27,6 +27,7 @@ Before anything else, verify that port 445 is not blocked:
 
 ```powershell
 # Test if port 445 is reachable from your machine
+
 Test-NetConnection -ComputerName myfilesaccount.file.core.windows.net -Port 445
 ```
 

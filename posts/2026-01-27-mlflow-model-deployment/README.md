@@ -24,6 +24,7 @@ The following example demonstrates how to train a simple scikit-learn model and 
 
 ```python
 # train_and_register.py
+
 # Train a model and register it with MLflow Model Registry
 import mlflow
 import mlflow.sklearn

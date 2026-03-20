@@ -48,6 +48,7 @@ The NVIDIA device plugin exposes GPUs to Kubernetes.
 
 ```yaml
 # kubernetes/nvidia-device-plugin.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -309,7 +310,7 @@ class MixedPrecisionTrainer:
 
 ## Multi-Tenancy and Quotas
 
-### Resource Quotas per Namespace
+Resource Quotas per Namespace
 
 ```yaml
 # kubernetes/gpu-quota.yaml

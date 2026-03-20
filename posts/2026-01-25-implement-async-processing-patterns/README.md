@@ -155,6 +155,7 @@ from celery.result import AsyncResult
 import time
 
 # Configure Celery
+
 app = Celery(
     'tasks',
     broker='amqp://guest:guest@localhost:5672//',

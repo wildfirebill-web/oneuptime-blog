@@ -33,6 +33,7 @@ terraform {
 }
 
 # This provider uses credentials from the management account
+
 provider "aws" {
   region = "us-east-1"
 }

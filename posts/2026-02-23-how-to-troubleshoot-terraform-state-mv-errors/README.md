@@ -18,6 +18,7 @@ The command takes a source and destination address:
 
 ```bash
 # Basic syntax
+
 terraform state mv [options] SOURCE DESTINATION
 
 # Rename a resource

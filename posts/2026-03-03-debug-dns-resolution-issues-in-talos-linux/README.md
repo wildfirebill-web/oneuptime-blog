@@ -37,6 +37,7 @@ Start by figuring out whether the DNS issue is cluster-wide, node-specific, or p
 
 ```bash
 # Test DNS from the host level on multiple nodes
+
 talosctl -n 192.168.1.10 read /etc/resolv.conf
 talosctl -n 192.168.1.11 read /etc/resolv.conf
 talosctl -n 192.168.1.12 read /etc/resolv.conf

@@ -16,6 +16,7 @@ Before you start digging into Istio-specific issues, make sure the fundamentals 
 
 ```bash
 # On the VM, check if the Istio sidecar proxy is running
+
 sudo systemctl status istio
 
 # Check if the Envoy process is alive

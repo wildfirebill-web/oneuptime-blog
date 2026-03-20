@@ -32,6 +32,7 @@ Generate a new seeder using Artisan:
 
 ```bash
 # Create a seeder for the User model
+
 php artisan make:seeder UserSeeder
 ```
 

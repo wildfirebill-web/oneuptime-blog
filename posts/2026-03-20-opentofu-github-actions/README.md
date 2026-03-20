@@ -20,6 +20,7 @@ Learn how to create GitHub Actions workflows for OpenTofu plan, apply, and destr
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

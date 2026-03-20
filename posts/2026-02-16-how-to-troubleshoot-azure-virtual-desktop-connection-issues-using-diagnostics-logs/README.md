@@ -20,6 +20,7 @@ If you do not already have a workspace, create one:
 
 ```bash
 # Create a Log Analytics workspace using Azure CLI
+
 az monitor log-analytics workspace create \
     --resource-group rg-avd-production \
     --workspace-name law-avd-diagnostics \

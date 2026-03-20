@@ -14,6 +14,7 @@ This kernel panic occurs when the kernel cannot find or mount the root filesyste
 
 ```bash
 # Boot from RHEL installation media
+
 # Select: Troubleshooting > Rescue a Red Hat Enterprise Linux system
 
 # The rescue environment will try to find your installation

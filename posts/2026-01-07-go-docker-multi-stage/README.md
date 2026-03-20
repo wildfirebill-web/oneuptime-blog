@@ -127,6 +127,7 @@ Create a Go module for dependency management:
 
 ```bash
 # Initialize the Go module
+
 go mod init github.com/example/go-docker-demo
 ```
 

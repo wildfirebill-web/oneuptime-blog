@@ -31,6 +31,7 @@ The ArgoCD repo server is the component responsible for all Git operations. You 
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

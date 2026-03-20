@@ -41,6 +41,7 @@ Before you can drill, you need backups. Here is everything ArgoCD needs.
 ```bash
 #!/bin/bash
 # backup-argocd.sh
+
 BACKUP_DIR="argocd-backup-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 

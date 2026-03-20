@@ -20,6 +20,7 @@ Before troubleshooting, confirm dual-stack is properly configured:
 
 ```bash
 # Check cluster configuration
+
 kubectl cluster-info dump | grep -i "service-cluster-ip-range\|cluster-cidr"
 
 # Look for two CIDR ranges:

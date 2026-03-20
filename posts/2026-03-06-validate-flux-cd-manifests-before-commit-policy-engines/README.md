@@ -42,6 +42,7 @@ Kyverno provides a CLI tool that can validate manifests locally without a runnin
 
 ```bash
 # Install kyverno CLI using Homebrew
+
 brew install kyverno
 
 # Or download the binary directly
@@ -209,7 +210,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Policy Validation Failed\n\`\`\`json\n${results}\n\`\`\``
+              body: `## Policy Validation Failed\n```json\n${results}\n````
             });
 ```
 

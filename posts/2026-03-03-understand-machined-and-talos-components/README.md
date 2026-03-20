@@ -27,6 +27,7 @@ When a Talos node boots, machined follows a well-defined sequence:
 
 ```bash
 # Check machined status
+
 talosctl -n 10.0.0.11 service machined
 
 # View machined logs

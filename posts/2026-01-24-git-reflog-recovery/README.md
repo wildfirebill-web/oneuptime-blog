@@ -38,6 +38,7 @@ Even if you reset, rebase, or delete branches, the original commits still exist 
 
 ```bash
 # View reflog for HEAD
+
 git reflog
 
 # View reflog for a specific branch

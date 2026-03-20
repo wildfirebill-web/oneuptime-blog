@@ -1,4 +1,4 @@
-# How to Upgrade Portainer CE on Docker Standalone
+# How to Upgrade Portainer CE on Docker Standalone - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Always back up your data before upgrading:
 
 ```bash
 # Back up the Portainer data volume to a local tar archive
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

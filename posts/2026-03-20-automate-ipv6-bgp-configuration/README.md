@@ -14,6 +14,7 @@ Deploying IPv6 BGP at scale requires consistent configuration of MP-BGP (Multipr
 
 ```yaml
 # inventory/bgp_peers.yml
+
 all:
   hosts:
     router1:

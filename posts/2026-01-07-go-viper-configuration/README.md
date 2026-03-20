@@ -139,6 +139,7 @@ YAML is the most popular format due to its readability:
 
 ```yaml
 # config.yaml
+
 server:
   host: 0.0.0.0
   port: 8080

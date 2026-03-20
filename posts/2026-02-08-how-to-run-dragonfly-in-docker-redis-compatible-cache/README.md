@@ -22,6 +22,7 @@ Memory efficiency is the other headline feature. Dragonfly uses a novel data str
 
 ```bash
 # Start Dragonfly (exposes Redis-compatible port 6379)
+
 docker run -d \
   --name dragonfly \
   -p 6379:6379 \

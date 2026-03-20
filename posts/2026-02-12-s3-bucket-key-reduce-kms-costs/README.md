@@ -53,6 +53,7 @@ Set the default encryption with Bucket Key enabled when creating a new bucket.
 
 ```bash
 # Create bucket with KMS encryption and Bucket Key
+
 aws s3api create-bucket \
   --bucket my-encrypted-bucket \
   --region us-east-1

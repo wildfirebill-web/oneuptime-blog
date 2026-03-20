@@ -28,6 +28,7 @@ The most common approach is to configure DNS servers on each connection profile:
 
 ```bash
 # Set DNS servers for a connection
+
 nmcli connection modify ens192 ipv4.dns "10.0.1.2,10.0.1.3"
 
 # Set DNS search domains

@@ -153,6 +153,7 @@ When total ordering is required, use a single partition.
 
 ```bash
 # Create single-partition topic
+
 kafka-topics.sh --create \
   --topic global-sequence \
   --bootstrap-server localhost:9092 \

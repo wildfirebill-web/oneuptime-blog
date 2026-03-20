@@ -139,6 +139,7 @@ Allow replication connections from Debezium:
 
 ```text
 # Allow replication connections from Debezium host
+
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 host    replication     debezium_user   10.0.0.0/8              scram-sha-256
 host    your_database   debezium_user   10.0.0.0/8              scram-sha-256

@@ -20,6 +20,7 @@ Here's a simple configuration to add the debug exporter to your collector pipeli
 
 ```yaml
 # Basic debug exporter configuration
+
 # This configuration outputs telemetry data to stdout
 exporters:
   debug:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, NGINX, Ingress Controller, Kubernetes, GitOps, Networking, Load Balancing
+Tags: Flux CD, Nginx, Ingress Controller, Kubernetes, GitOps, Networking, Load Balancing
 
 Description: Learn how to deploy and manage the NGINX Ingress Controller using Flux CD for GitOps-based ingress management in Kubernetes.
 
@@ -46,6 +46,7 @@ clusters/
 
 ```yaml
 # clusters/production/infrastructure/sources/ingress-nginx.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -41,6 +41,7 @@ In `ansible.cfg`:
 
 ```ini
 # Set default forks to 50 for all playbook runs
+
 [defaults]
 forks = 50
 ```

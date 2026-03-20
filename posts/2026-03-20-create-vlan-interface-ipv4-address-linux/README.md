@@ -14,6 +14,7 @@ Linux supports 802.1Q VLAN tagging natively through the kernel's `vlan` module. 
 
 ```bash
 # Create VLAN 10 subinterface on eth0
+
 sudo ip link add link eth0 name eth0.10 type vlan id 10
 
 # Bring it up
@@ -106,7 +107,7 @@ iface eth0.20 inet static
 
 The connected switch port must be configured as a **trunk** (802.1Q) to pass VLAN-tagged frames:
 
-```
+```text
 ! Cisco switch port facing the Linux host
 interface GigabitEthernet0/1
  switchport trunk encapsulation dot1q

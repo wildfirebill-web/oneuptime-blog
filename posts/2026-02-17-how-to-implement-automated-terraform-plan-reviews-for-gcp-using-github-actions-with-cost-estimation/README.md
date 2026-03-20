@@ -70,6 +70,7 @@ resource "google_iam_workload_identity_pool_provider" "github" {
 }
 
 # Service account for Terraform plan operations (read-only)
+
 resource "google_service_account" "terraform_plan" {
   project      = var.project_id
   account_id   = "terraform-plan"
@@ -114,7 +115,7 @@ resource "google_project_iam_member" "apply_editor" {
 
 Here is the complete workflow file:
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
 name: Terraform Plan Review
 
@@ -222,9 +223,9 @@ jobs:
             <details>
             <summary>Plan Output (click to expand)</summary>
 
-            \`\`\`
+            ```
             ${truncated}
-            \`\`\`
+            ```
 
             </details>
 
@@ -316,7 +317,7 @@ jobs:
             --pull-request=${{ github.event.pull_request.number }} \
             --github-token=${{ secrets.GITHUB_TOKEN }} \
             --behavior=update
-```
+````
 
 ## The Apply Workflow
 

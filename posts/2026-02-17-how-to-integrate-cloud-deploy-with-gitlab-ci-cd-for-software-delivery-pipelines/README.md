@@ -41,6 +41,7 @@ Using a service account key, create the service account and grant the necessary 
 
 ```bash
 # Create a service account for GitLab CI/CD
+
 gcloud iam service-accounts create gitlab-ci \
   --display-name="GitLab CI/CD Service Account"
 

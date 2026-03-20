@@ -54,6 +54,7 @@ For projects that have not been split yet, use `-target` to limit the scope:
 
 ```bash
 # Only apply changes to a specific module
+
 terraform apply -target=module.api_gateway
 
 # Apply changes to specific resources

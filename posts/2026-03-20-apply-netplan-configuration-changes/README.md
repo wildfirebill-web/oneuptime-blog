@@ -14,6 +14,7 @@ After modifying `.yaml` files in `/etc/netplan/`, you must apply the changes to 
 
 ```bash
 # Apply all Netplan configurations immediately
+
 netplan apply
 
 # Verify changes took effect
@@ -33,7 +34,7 @@ netplan try
 # Press ENTER before the timeout to accept the new configuration"
 ```
 
-This is safer for remote SSH sessions — if the new config breaks connectivity, the old config is automatically restored after 120 seconds.
+This is safer for remote SSH sessions - if the new config breaks connectivity, the old config is automatically restored after 120 seconds.
 
 ## Generate Backend Config Without Applying
 
@@ -69,7 +70,7 @@ netplan apply -d
 
 ```bash
 # Netplan processes all files in /etc/netplan/ alphabetically
-# You cannot apply a single file — all files are applied together
+# You cannot apply a single file - all files are applied together
 
 # To isolate testing, temporarily remove other files or use netplan try
 ```

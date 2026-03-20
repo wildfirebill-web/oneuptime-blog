@@ -18,6 +18,7 @@ The top-level `variables` block applies to all run blocks in the file:
 # tests/unit.tftest.hcl
 
 # These apply to all run blocks unless overridden
+
 variables {
   region         = "us-east-1"
   environment    = "test"
@@ -163,7 +164,7 @@ tofu test -var-file="tests/staging.tfvars"
 ### Secrets via environment variables
 
 ```bash
-# Don't put secrets in test files — use environment variables
+# Don't put secrets in test files - use environment variables
 export TF_VAR_db_password="test-password-not-real"
 export TF_VAR_api_key="test-api-key"
 

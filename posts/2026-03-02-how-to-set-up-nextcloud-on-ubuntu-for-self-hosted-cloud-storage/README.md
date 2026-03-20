@@ -16,6 +16,7 @@ This guide covers installation using the recommended stack: Nginx, PHP-FPM, Post
 
 ```bash
 # Update system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required PHP packages

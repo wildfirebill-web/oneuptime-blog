@@ -14,6 +14,7 @@ Setting optimal TCP buffer sizes requires knowing your network's bandwidth-delay
 
 ```bash
 # Step 1: Measure available bandwidth (bits per second)
+
 iperf3 -c 10.20.0.5 -t 10   # Check sender bitrate
 
 # Step 2: Measure RTT to key destinations
@@ -113,4 +114,4 @@ iperf3 -c 10.20.0.5 -t 30
 
 ## Conclusion
 
-Optimal TCP buffer sizing is a calculation based on your network's bandwidth-delay product. Set both send and receive buffers to at least 2× BDP. Linux's auto-tuning handles the rest — it allocates memory dynamically up to the maximum you configure. The minimum field stays small to avoid excessive allocation for short-lived or low-traffic connections, while the maximum allows full-speed bulk transfers.
+Optimal TCP buffer sizing is a calculation based on your network's bandwidth-delay product. Set both send and receive buffers to at least 2× BDP. Linux's auto-tuning handles the rest - it allocates memory dynamically up to the maximum you configure. The minimum field stays small to avoid excessive allocation for short-lived or low-traffic connections, while the maximum allows full-speed bulk transfers.

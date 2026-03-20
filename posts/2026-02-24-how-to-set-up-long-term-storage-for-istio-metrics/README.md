@@ -232,6 +232,7 @@ Once your data is in long-term storage, use the same PromQL queries you normally
 
 ```bash
 # Query through Thanos
+
 curl -G 'http://thanos-query:9090/api/v1/query_range' \
   --data-urlencode 'query=sum(rate(istio_requests_total[1h])) by (destination_service)' \
   --data-urlencode 'start=2026-01-01T00:00:00Z' \

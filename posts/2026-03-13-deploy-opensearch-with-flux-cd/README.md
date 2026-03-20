@@ -27,6 +27,7 @@ This guide deploys a production-grade OpenSearch cluster using the official Helm
 
 ```yaml
 # infrastructure/sources/opensearch-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

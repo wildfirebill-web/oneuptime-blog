@@ -14,6 +14,7 @@ The `ansible.builtin.group_by` module creates host groups dynamically during pla
 
 ```yaml
 # Create groups based on OS family
+
 - name: Group hosts by OS
   hosts: all
   tasks:

@@ -306,6 +306,7 @@ After a successful promotion, verify the state:
 
 ```bash
 # Check canary status
+
 kubectl get canary my-app -n production
 
 # Verify the primary is running the new version

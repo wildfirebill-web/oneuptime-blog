@@ -1,8 +1,8 @@
-# How to Measure IPv6 Latency and Jitter
+# How to Measure IPv6 Latency and Jitter - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Latency, Jitter, Performance, ping6, hping3
+Tags: IPv6, Latency, Jitter, Performance, Ping6, Hping3
 
 Description: Measure IPv6 latency and jitter using ping6, hping3, and custom Python scripts to baseline network performance and detect degradation.
 
@@ -14,6 +14,7 @@ Latency and jitter are fundamental metrics for any network. For IPv6, measuring 
 
 ```bash
 # Basic RTT measurement
+
 ping6 -c 100 2001:4860:4860::8888
 
 # Statistics output:

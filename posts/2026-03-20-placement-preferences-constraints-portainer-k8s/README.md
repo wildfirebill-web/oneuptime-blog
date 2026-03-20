@@ -12,7 +12,7 @@ Kubernetes offers fine-grained control over pod placement through node selectors
 
 ## Node Selector (Simple Placement)
 
-The simplest placement constraint — requires the pod to run on a node with a specific label:
+The simplest placement constraint - requires the pod to run on a node with a specific label:
 
 ```yaml
 spec:
@@ -99,6 +99,7 @@ For full affinity control, use the **Advanced deployment (YAML)** mode.
 
 ```bash
 # Label nodes before applying placement rules
+
 kubectl label node worker-01 disktype=ssd environment=production
 kubectl label node worker-02 disktype=ssd environment=production
 

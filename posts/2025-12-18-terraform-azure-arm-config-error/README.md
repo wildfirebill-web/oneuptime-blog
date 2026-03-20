@@ -43,6 +43,7 @@ First, ensure Azure CLI is installed:
 
 ```bash
 # Check if Azure CLI is installed
+
 az version
 
 # Install on macOS

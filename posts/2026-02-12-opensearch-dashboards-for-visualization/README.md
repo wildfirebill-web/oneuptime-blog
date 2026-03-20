@@ -31,6 +31,7 @@ Here's a quick SSH tunnel setup.
 
 ```bash
 # Create an SSH tunnel through a bastion host
+
 ssh -i bastion-key.pem -L 9200:vpc-my-domain.us-east-1.es.amazonaws.com:443 ec2-user@bastion-ip
 
 # Then access Dashboards at https://localhost:9200/_dashboards

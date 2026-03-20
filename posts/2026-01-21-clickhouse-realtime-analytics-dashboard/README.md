@@ -208,6 +208,7 @@ ALTER USER analytics_writer SETTINGS
 
 ```python
 # Python ingestion example
+
 import clickhouse_connect
 from datetime import datetime
 import json
@@ -558,7 +559,7 @@ ORDER BY query_duration_ms DESC
 LIMIT 20;
 ```
 
-### Resource Usage
+Resource Usage
 
 ```sql
 -- Monitor concurrent queries

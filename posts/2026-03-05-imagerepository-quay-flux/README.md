@@ -29,6 +29,7 @@ Many images on quay.io are public and do not require authentication.
 
 ```yaml
 # imagerepository-quay-public.yaml
+
 # Scan a public image on quay.io
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

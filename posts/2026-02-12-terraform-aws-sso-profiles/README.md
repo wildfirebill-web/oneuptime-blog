@@ -26,6 +26,7 @@ Run the SSO configuration wizard:
 
 ```bash
 # Start the SSO configuration process
+
 aws configure sso
 ```
 

@@ -41,6 +41,7 @@ With 4 concurrent requests, Gen 1 needs 4 instances, while Gen 2 needs just 1. F
 
 ```bash
 # Deploy with concurrency set to 80 requests per instance
+
 gcloud functions deploy my-api \
   --gen2 \
   --runtime=nodejs20 \

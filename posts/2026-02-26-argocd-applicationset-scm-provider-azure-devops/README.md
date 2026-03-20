@@ -38,6 +38,7 @@ Create a Personal Access Token (PAT) in Azure DevOps with the Code (Read) scope.
 
 ```bash
 # Navigate to: Azure DevOps > User Settings > Personal Access Tokens
+
 # Required scope: Code - Read
 
 # Create the secret in Kubernetes

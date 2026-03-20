@@ -156,6 +156,7 @@ You can test if draining works by running a load test during a rolling update:
 
 ```bash
 # Start a load test
+
 kubectl run loadtest --image=fortio/fortio --restart=Never -- \
   load -c 10 -qps 100 -t 120s http://my-service:8080/api
 

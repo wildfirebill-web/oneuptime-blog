@@ -333,6 +333,7 @@ Reverse proxies must be configured to forward WebSocket upgrade headers.
 
 ```nginx
 # nginx.conf
+
 # Incorrect - missing upgrade headers
 
 location /ws {

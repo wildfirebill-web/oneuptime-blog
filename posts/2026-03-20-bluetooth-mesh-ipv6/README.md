@@ -33,6 +33,7 @@ Bluetooth Mesh Proxy Nodes act as gateways between the BT Mesh network and IPv6:
 
 ```bash
 # Install BlueZ (Linux Bluetooth stack)
+
 sudo apt-get install bluez-tools bluez
 
 # Check BlueZ version (Mesh support requires 5.50+)

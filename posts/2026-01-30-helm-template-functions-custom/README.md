@@ -43,6 +43,7 @@ Helm templates use double curly braces for expressions:
 
 ```yaml
 # Basic value substitution from values.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -22,6 +22,7 @@ Here is a policy that looks reasonable but will break your application:
 
 ```yaml
 # broken-policy.yaml
+
 # This policy blocks DNS and will break service discovery
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

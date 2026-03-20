@@ -25,6 +25,7 @@ Postfix communicates with milters over a socket (Unix domain or TCP). For each i
 
 ```bash
 # View current milter configuration
+
 sudo postconf | grep milter
 
 # Key parameters:

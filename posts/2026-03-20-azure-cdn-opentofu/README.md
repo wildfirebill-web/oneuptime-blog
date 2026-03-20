@@ -14,6 +14,7 @@ Azure CDN accelerates static content delivery through a global network of points
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -32,7 +33,7 @@ resource "azurerm_resource_group" "cdn" {
   location = var.location
 }
 
-# CDN Profile — defines the pricing tier (Standard Microsoft, Verizon, Akamai)
+# CDN Profile - defines the pricing tier (Standard Microsoft, Verizon, Akamai)
 resource "azurerm_cdn_profile" "main" {
   name                = "${var.project_name}-cdn-profile"
   location            = "Global"  # CDN profiles are global resources
@@ -166,8 +167,8 @@ resource "azurerm_cdn_frontdoor_origin" "app" {
 
 ## Best Practices
 
-- Use Azure Front Door Standard/Premium for new projects — it has more features than Classic CDN and includes WAF capabilities.
+- Use Azure Front Door Standard/Premium for new projects - it has more features than Classic CDN and includes WAF capabilities.
 - Enable compression for text-based content types to reduce bandwidth and improve load times.
 - Set long cache durations (7+ days) for immutable static assets with content-hashed filenames.
-- Use HTTPS-only endpoints — HTTP serves no purpose for CDN-delivered content and leaks data in transit.
-- Monitor CDN cache hit ratio — a ratio below 80% suggests caching rules need adjustment.
+- Use HTTPS-only endpoints - HTTP serves no purpose for CDN-delivered content and leaks data in transit.
+- Monitor CDN cache hit ratio - a ratio below 80% suggests caching rules need adjustment.

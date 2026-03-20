@@ -41,6 +41,7 @@ Start by getting the actual diff output:
 
 ```bash
 # Basic diff
+
 argocd app diff my-app
 
 # Diff with more detail
@@ -175,7 +176,7 @@ argocd app manifests my-app --source git
 
 ArgoCD normalizes manifests before comparing them. Sometimes this normalization causes unexpected results.
 
-### Resource Status
+Resource Status
 
 ArgoCD should ignore the `status` field, but custom resources may not have proper status subresource configuration:
 

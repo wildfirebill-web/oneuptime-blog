@@ -20,6 +20,7 @@ Always create a separate GPG key specifically for container image signing. Do no
 
 ```bash
 # Generate a signing key with specific parameters
+
 gpg --batch --gen-key << 'EOF'
 %no-protection
 Key-Type: RSA

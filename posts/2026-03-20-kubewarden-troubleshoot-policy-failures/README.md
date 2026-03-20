@@ -22,6 +22,7 @@ This guide provides a systematic approach to troubleshooting Kubewarden issues.
 
 ```bash
 # 1. Check all Kubewarden pods are running
+
 kubectl get pods -n kubewarden
 
 # 2. Check PolicyServer status

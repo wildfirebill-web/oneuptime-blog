@@ -186,6 +186,7 @@ If your SLO is 99.9% success rate over a 30-day window, track the error budget:
 
 ```promql
 # Error budget remaining (as a percentage)
+
 1 - (
   (1 - (
     sum(rate(istio_requests_total{reporter="destination", destination_service_name="payment-service", response_code!~"5.."}[30d]))

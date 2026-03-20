@@ -47,6 +47,7 @@ The `GEOADD` command stores geographic coordinates. The format is `GEOADD key lo
 
 ```bash
 # Add a single location
+
 GEOADD stores -122.4194 37.7749 "store:sf_downtown"
 
 # Add multiple locations in one command (batch for performance)

@@ -58,6 +58,7 @@ First, install Horizon via Composer:
 
 ```bash
 # Install the Horizon package
+
 composer require laravel/horizon
 ```
 

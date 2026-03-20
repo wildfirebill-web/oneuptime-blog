@@ -84,6 +84,7 @@ First, make sure you have a target server in the secondary region:
 
 ```bash
 # Create a logical SQL server in the secondary region
+
 az sql server create \
     --resource-group myResourceGroup \
     --name myserver-secondary \

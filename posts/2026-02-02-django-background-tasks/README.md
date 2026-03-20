@@ -78,6 +78,7 @@ import os
 from celery import Celery
 
 # Set the default Django settings module for Celery
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
 
 # Create the Celery application instance

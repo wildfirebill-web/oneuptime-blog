@@ -8,12 +8,13 @@ Description: Learn how to provision a Samba Active Directory Domain Controller o
 
 ---
 
-Samba 4 can act as a full Active Directory Domain Controller (AD DC), providing Kerberos authentication, LDAP, DNS, and SMB services — all over IPv4. This enables Windows workstations and Linux clients to join a domain without Windows Server.
+Samba 4 can act as a full Active Directory Domain Controller (AD DC), providing Kerberos authentication, LDAP, DNS, and SMB services - all over IPv4. This enables Windows workstations and Linux clients to join a domain without Windows Server.
 
 ## Prerequisites
 
 ```bash
 # Install Samba AD tools
+
 apt install samba krb5-user winbind smbclient -y  # Debian/Ubuntu
 # or
 dnf install samba samba-dc krb5-workstation -y    # RHEL/Rocky

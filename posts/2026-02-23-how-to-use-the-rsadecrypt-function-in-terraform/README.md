@@ -16,6 +16,7 @@ The `rsadecrypt` function decrypts a base64-encoded ciphertext using an RSA priv
 
 ```hcl
 # Decrypt ciphertext using an RSA private key
+
 output "decrypted" {
   value     = rsadecrypt(base64_encoded_ciphertext, private_key_pem)
   sensitive = true

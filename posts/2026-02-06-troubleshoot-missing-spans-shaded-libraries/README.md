@@ -46,6 +46,7 @@ Check if your dependencies are shaded:
 
 ```bash
 # List classes in the jar
+
 jar tf mylib.jar | grep grpc
 
 # If you see paths like:

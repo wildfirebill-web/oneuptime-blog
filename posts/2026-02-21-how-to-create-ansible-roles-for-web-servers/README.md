@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Web Server, Roles, DevOps
+Tags: Ansible, Nginx, Web Server, Roles, DevOps
 
 Description: Build a complete Ansible role for Nginx web server provisioning with virtual hosts, SSL configuration, and security hardening.
 
@@ -36,6 +36,7 @@ roles/nginx/
 
 ```yaml
 # roles/nginx/defaults/main.yml
+
 # Nginx package settings
 nginx_package: nginx
 nginx_service: nginx

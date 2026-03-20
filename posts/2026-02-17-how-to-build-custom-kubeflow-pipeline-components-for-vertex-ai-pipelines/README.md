@@ -28,6 +28,7 @@ The simplest way to create a component is with the `@dsl.component` decorator. T
 
 ```python
 # components/data_validation.py
+
 from kfp.v2 import dsl
 from kfp.v2.dsl import Dataset, Input, Output, Metrics
 

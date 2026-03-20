@@ -43,6 +43,7 @@ Check which API and which quota metric is being exceeded:
 
 ```bash
 # View your project's quota usage for a specific API
+
 gcloud services quotas list \
     --service=compute.googleapis.com \
     --consumer=projects/my-project \

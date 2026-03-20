@@ -21,6 +21,7 @@ Not all CNI plugins support NetworkPolicy. Check your cluster's CNI:
 
 ```bash
 # Check which CNI is installed
+
 kubectl get pods -n kube-system -l k8s-app=canal -o name 2>/dev/null && echo "Canal CNI detected"
 kubectl get pods -n kube-system -l k8s-app=calico-node -o name 2>/dev/null && echo "Calico CNI detected"
 kubectl get pods -n kube-system -l k8s-app=cilium -o name 2>/dev/null && echo "Cilium CNI detected"

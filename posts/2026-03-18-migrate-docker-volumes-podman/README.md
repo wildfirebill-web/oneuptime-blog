@@ -20,6 +20,7 @@ First, understand where each tool stores its volumes.
 
 ```bash
 # Docker volume storage location
+
 docker info | grep "Docker Root Dir"
 # Typically: /var/lib/docker
 # Volumes at: /var/lib/docker/volumes/

@@ -43,6 +43,7 @@ First, create a CI service account in ArgoCD:
 
 ```bash
 # Add a CI account to ArgoCD
+
 kubectl patch configmap argocd-cm -n argocd --type merge -p '{
   "data": {
     "accounts.ci-pipeline": "apiKey"

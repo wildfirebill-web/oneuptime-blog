@@ -38,6 +38,7 @@ The user authenticates once to the KDC and receives a TGT. When they access a se
 
 ```bash
 # Install Kerberos client tools
+
 sudo dnf install krb5-workstation -y
 ```
 

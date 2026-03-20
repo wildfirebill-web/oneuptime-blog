@@ -40,6 +40,7 @@ Never rebase commits that others have based work on. This rewrites history and c
 
 ```bash
 # Rebase the last N commits
+
 git rebase -i HEAD~5
 
 # Rebase onto a specific branch

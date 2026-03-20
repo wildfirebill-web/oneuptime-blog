@@ -41,6 +41,7 @@ Here's how to configure the message size limit for an OTLP gRPC receiver. This c
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

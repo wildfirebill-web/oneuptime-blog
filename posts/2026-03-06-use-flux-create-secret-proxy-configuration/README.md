@@ -23,6 +23,7 @@ This guide covers proxy configuration for Flux in enterprise environments, inclu
 
 ```bash
 # Verify Flux installation
+
 flux check
 
 # Test proxy connectivity from your machine

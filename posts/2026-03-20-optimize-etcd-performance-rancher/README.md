@@ -16,6 +16,7 @@ etcd is sensitive to storage write latency. The recommended commit latency is un
 
 ```bash
 # Measure disk write latency on potential etcd nodes
+
 # fio is a standard IO benchmarking tool
 fio --rw=write --ioengine=sync --fdatasync=1 \
   --directory=/var/lib/etcd \

@@ -42,6 +42,7 @@ echo "Generated: $(date)" >> inventory.txt
 echo "" >> inventory.txt
 
 # Namespaces
+
 echo "=== Namespaces ===" >> inventory.txt
 kubectl get namespaces -o name >> inventory.txt
 echo "" >> inventory.txt

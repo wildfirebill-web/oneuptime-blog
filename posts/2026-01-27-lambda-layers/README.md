@@ -66,6 +66,7 @@ Let us create a practical layer step by step. We will build a Python layer conta
 
 ```bash
 # Create the layer directory with proper structure
+
 mkdir -p my-layer/python
 
 # Navigate to the python directory

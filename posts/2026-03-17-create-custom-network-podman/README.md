@@ -18,6 +18,7 @@ By default, Podman containers use the default network which provides basic conne
 
 ```bash
 # Create a custom network
+
 podman network create mynetwork
 
 # Verify the network was created

@@ -167,7 +167,7 @@ data:
         key: password
 ```
 
-## Resource Tracking and Behavior
+Resource Tracking and Behavior
 
 ### application.instanceLabelKey
 

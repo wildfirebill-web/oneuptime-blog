@@ -14,6 +14,7 @@ A Virtual Private Cloud (VPC) is the networking foundation for all AWS resources
 
 ```hcl
 # Fetch available AZs in the region
+
 data "aws_availability_zones" "available" {
   state = "available"
 }

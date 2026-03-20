@@ -16,6 +16,7 @@ Flow Logs API troubleshooting focuses on authentication (API key or service acco
 
 ```bash
 # Enable Felix metrics (if not already enabled)
+
 kubectl patch felixconfiguration default   --type=merge   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'
 
 # Test Felix metrics endpoint

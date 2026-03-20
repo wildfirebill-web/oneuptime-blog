@@ -25,6 +25,7 @@ Here is how to set environment variables at different scopes.
 
 ```yaml
 # set-env-vars.yml - Set environment variables
+
 ---
 - name: Configure environment variables
   hosts: windows_servers

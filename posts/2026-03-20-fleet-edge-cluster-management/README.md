@@ -8,7 +8,7 @@ Description: Learn how to use Fleet to manage hundreds of edge Kubernetes cluste
 
 ## Introduction
 
-Edge computing deployments present unique challenges: clusters may be geographically distributed, have limited bandwidth, experience intermittent connectivity, and run with minimal resources. Fleet is designed for exactly this use case — it was built to manage thousands of clusters at scale, making it ideal for edge deployments in retail stores, manufacturing plants, remote locations, and IoT gateways.
+Edge computing deployments present unique challenges: clusters may be geographically distributed, have limited bandwidth, experience intermittent connectivity, and run with minimal resources. Fleet is designed for exactly this use case - it was built to manage thousands of clusters at scale, making it ideal for edge deployments in retail stores, manufacturing plants, remote locations, and IoT gateways.
 
 This guide covers the specific configurations and patterns needed for reliable edge cluster management with Fleet.
 
@@ -21,7 +21,7 @@ This guide covers the specific configurations and patterns needed for reliable e
 
 ## Edge Architecture with Fleet
 
-```
+```text
 Central Data Center
 └── Rancher + Fleet Manager
     ├── Git Repository (configurations)
@@ -45,6 +45,7 @@ Edge clusters may not register immediately. Use a non-expiring token:
 
 ```yaml
 # edge-registration-token.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterRegistrationToken
 metadata:

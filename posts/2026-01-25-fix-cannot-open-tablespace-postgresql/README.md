@@ -52,6 +52,7 @@ SELECT oid, spcname FROM pg_tablespace;
 
 ```bash
 # PostgreSQL stores tablespace symlinks here
+
 ls -la $PGDATA/pg_tblspc/
 
 # Example output:

@@ -35,6 +35,7 @@ If you don't already have a VPC with public and private subnets, here's a quick 
 
 ```bash
 # Create VPC
+
 VPC_ID=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 \
   --query 'Vpc.VpcId' --output text)
 

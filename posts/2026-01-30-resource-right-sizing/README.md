@@ -88,6 +88,7 @@ Use these PromQL queries to understand CPU usage patterns:
 
 ```promql
 # Average CPU usage over 7 days
+
 avg_over_time(
   rate(container_cpu_usage_seconds_total{
     namespace="production",

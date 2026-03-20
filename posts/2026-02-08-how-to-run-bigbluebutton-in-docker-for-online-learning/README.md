@@ -51,6 +51,7 @@ The BigBlueButton community maintains Docker images that bundle the necessary co
 
 ```yaml
 # docker-compose.yml for BigBlueButton
+
 # This runs all BBB components as separate services with proper networking
 version: "3.8"
 

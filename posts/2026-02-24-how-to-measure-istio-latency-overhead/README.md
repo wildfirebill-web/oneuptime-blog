@@ -28,6 +28,7 @@ The simplest approach is running the same test with and without the mesh:
 
 ```bash
 # Deploy a test service in a non-meshed namespace
+
 kubectl create ns latency-test-no-mesh
 kubectl label ns latency-test-no-mesh istio-injection=disabled
 

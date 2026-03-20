@@ -6,13 +6,13 @@ Tags: IPv6, Address Scanning, Network Reconnaissance, Address Space, Security
 
 Description: A guide to understanding why traditional sequential scanning fails for IPv6 and the practical alternative techniques for discovering IPv6 hosts in large address spaces.
 
-IPv6's 128-bit address space is fundamentally incompatible with sequential scanning approaches that work for IPv4. Understanding why this is true — and what alternative discovery techniques actually work — is essential for both offensive security and network inventory purposes.
+IPv6's 128-bit address space is fundamentally incompatible with sequential scanning approaches that work for IPv4. Understanding why this is true - and what alternative discovery techniques actually work - is essential for both offensive security and network inventory purposes.
 
 ## Why IPv6 Sequential Scanning Fails
 
 A typical IPv6 deployment uses a /64 subnet for each network segment. A /64 contains 2^64 = 18,446,744,073,709,551,616 addresses.
 
-```
+```text
 IPv4 /24 = 256 addresses   → scan in <1 second
 IPv4 /16 = 65,536 addresses → scan in minutes
 IPv6 /64 = 18.4 quintillion → impossible to scan sequentially
@@ -22,7 +22,7 @@ Even at 10 billion probes per second, scanning a /64 would take 58 years.
 
 ## Why This Is Actually Good Security
 
-IPv6's large address space provides **obscurity-based security** that doesn't exist in IPv4 — a host at a random address in a /64 is effectively hidden from network scanners. However, this should never be relied upon as the sole security control.
+IPv6's large address space provides **obscurity-based security** that doesn't exist in IPv4 - a host at a random address in a /64 is effectively hidden from network scanners. However, this should never be relied upon as the sole security control.
 
 ## Practical IPv6 Host Discovery Techniques
 
@@ -30,6 +30,7 @@ IPv6's large address space provides **obscurity-based security** that doesn't ex
 
 ```bash
 # Discover all-nodes on local link
+
 sudo nmap -6 -sn ff02::1%eth0
 
 # Use scan6 for comprehensive local discovery

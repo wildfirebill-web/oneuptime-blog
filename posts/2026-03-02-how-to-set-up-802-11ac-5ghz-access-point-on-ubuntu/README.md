@@ -18,6 +18,7 @@ Your wireless adapter must explicitly support 5GHz and 802.11ac in AP mode:
 
 ```bash
 # Check supported bands and modes
+
 sudo iw list | grep -E "Band|Frequencies|VHT"
 
 # Check for 5GHz band support

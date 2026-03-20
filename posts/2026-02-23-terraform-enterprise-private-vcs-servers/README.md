@@ -30,6 +30,7 @@ VCS needs to reach:
 
 ```bash
 # Test connectivity from TFE to VCS
+
 curl -s -o /dev/null -w "%{http_code}" https://gitlab.internal.example.com/api/v4/version
 # Should return 200
 

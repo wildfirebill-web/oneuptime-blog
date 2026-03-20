@@ -51,6 +51,7 @@ This configuration sets up Automation Hub as the primary server with Galaxy as a
 
 ```ini
 # ansible.cfg - Configure Automation Hub as primary collection source
+
 [galaxy]
 server_list = automation_hub, galaxy
 

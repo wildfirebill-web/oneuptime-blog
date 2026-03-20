@@ -20,6 +20,7 @@ Suppose your function uses the `requests` and `boto3` libraries:
 
 ```text
 # requirements.txt
+
 requests==2.31.0
 boto3>=1.28.0
 ```

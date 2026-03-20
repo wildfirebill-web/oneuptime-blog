@@ -54,6 +54,7 @@ Agree on naming conventions early. Here is a practical convention that works wel
 
 ```yaml
 # VirtualService: <service-name>-<purpose>
+
 name: checkout-canary
 name: payments-external
 

@@ -22,6 +22,7 @@ Design your values file to accommodate both approaches:
 
 ```yaml
 # values.yaml
+
 ingress:
   enabled: true
   className: nginx

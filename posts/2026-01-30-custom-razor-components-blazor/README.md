@@ -1119,6 +1119,7 @@ Create the library project.
 
 ```bash
 # Create a Razor class library
+
 dotnet new razorclasslib -o MyComponents
 
 # Navigate to the library

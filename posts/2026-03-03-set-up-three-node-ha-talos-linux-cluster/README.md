@@ -68,6 +68,7 @@ You have several options for the API endpoint. The simplest for bare metal is Ta
 
 ```yaml
 # vip-patch.yaml
+
 # This patch configures a shared VIP on the control plane nodes
 machine:
   network:

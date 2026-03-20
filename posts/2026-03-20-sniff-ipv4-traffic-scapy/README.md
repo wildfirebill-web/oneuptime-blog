@@ -25,6 +25,7 @@ def process_packet(pkt):
         print(f"{src} -> {dst} proto={proto} len={pkt[IP].len}")
 
 # Capture 50 packets on the default interface
+
 # filter uses BPF syntax (same as tcpdump)
 sniff(
     filter="ip",           # Only IPv4 packets

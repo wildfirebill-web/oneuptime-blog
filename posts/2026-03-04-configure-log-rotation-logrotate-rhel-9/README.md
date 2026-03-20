@@ -28,6 +28,7 @@ The main configuration file is `/etc/logrotate.conf`:
 
 ```bash
 # View the default configuration
+
 cat /etc/logrotate.conf
 ```
 

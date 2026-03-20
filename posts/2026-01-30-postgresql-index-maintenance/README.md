@@ -178,6 +178,7 @@ pg_repack is a powerful extension that reorganizes tables and indexes with minim
 
 ```bash
 # On Debian/Ubuntu
+
 sudo apt-get install postgresql-16-repack
 
 # On RHEL/CentOS

@@ -571,6 +571,7 @@ Deploy an OpenTelemetry Collector to receive, process, and export traces:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

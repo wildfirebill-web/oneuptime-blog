@@ -33,6 +33,7 @@ Install act on your system. It requires Docker to be running.
 
 ```bash
 # macOS with Homebrew
+
 brew install act
 
 # Linux - download the binary

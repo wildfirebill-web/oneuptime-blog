@@ -137,6 +137,7 @@ For consistent content across nodes, use one of:
 
 ```bash
 # On node1, sync to node2 every minute
+
 * * * * * rsync -avz /var/www/html/ node2:/var/www/html/
 ```
 

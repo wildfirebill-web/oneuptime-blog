@@ -61,6 +61,7 @@ A warm standby runs the same Flux configuration but at reduced replica counts. I
 
 ```yaml
 # clusters/aws-us-west-2/apps.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

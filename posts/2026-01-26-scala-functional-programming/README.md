@@ -35,6 +35,7 @@ Create a new Scala project with sbt (Scala Build Tool):
 
 ```bash
 # Create project directory
+
 mkdir scala-fp-demo && cd scala-fp-demo
 
 # Create build.sbt

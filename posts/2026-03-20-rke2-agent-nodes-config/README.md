@@ -1,4 +1,4 @@
-# How to Configure RKE2 Agent Nodes
+# How to Configure RKE2 Agent Nodes - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ RKE2 agent nodes are the worker nodes that run your application workloads. They 
 # /etc/rancher/rke2/config.yaml - Basic agent configuration
 
 # =====================
+
 # CONNECTION SETTINGS
 # =====================
 

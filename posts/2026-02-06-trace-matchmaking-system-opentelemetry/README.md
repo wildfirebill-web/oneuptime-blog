@@ -34,6 +34,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Identify this service in traces
+
 resource = Resource.create({
     "service.name": "matchmaking-service",
     "service.version": "2.4.1",

@@ -16,6 +16,7 @@ Use the `kube-apiserver-arg` key in `/etc/rancher/rke2/config.yaml` on your serv
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 kube-apiserver-arg:
   - "argument-name=value"
 ```

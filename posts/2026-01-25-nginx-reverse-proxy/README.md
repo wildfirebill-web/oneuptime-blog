@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Reverse Proxy, DevOps, Web Server, Load Balancing
+Tags: Nginx, Reverse Proxy, DevOps, Web Server, Load Balancing
 
 Description: Learn how to configure Nginx as a reverse proxy to route traffic to backend servers, handle SSL termination, and improve your application architecture.
 
@@ -28,6 +28,7 @@ Here is the simplest Nginx reverse proxy configuration. This example forwards al
 # /etc/nginx/conf.d/app.conf
 
 # Define the backend server
+
 upstream backend_app {
     server 127.0.0.1:3000;  # Your application server
 }

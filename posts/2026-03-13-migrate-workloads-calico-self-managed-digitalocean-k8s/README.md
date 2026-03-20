@@ -44,6 +44,7 @@ Remove the current CNI DaemonSet. This will disrupt networking on all nodes once
 
 ```bash
 # Example for Flannel
+
 kubectl delete -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 
 # Remove CNI config files on each node

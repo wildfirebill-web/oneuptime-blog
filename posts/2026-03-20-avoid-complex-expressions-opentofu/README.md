@@ -8,7 +8,7 @@ Description: Learn how to simplify overly complex OpenTofu expressions by breaki
 
 ## Introduction
 
-OpenTofu's HCL supports sophisticated expressions — nested conditionals, complex for expressions, and chained function calls. While powerful, complex expressions in resource arguments are difficult to read, test, and debug. Breaking them down into named locals is the key to maintainable configurations.
+OpenTofu's HCL supports sophisticated expressions - nested conditionals, complex for expressions, and chained function calls. While powerful, complex expressions in resource arguments are difficult to read, test, and debug. Breaking them down into named locals is the key to maintainable configurations.
 
 ## The Problem: Complex Inline Expressions
 
@@ -16,6 +16,7 @@ Complex expressions embedded directly in resource arguments.
 
 ```hcl
 # BAD: Nearly impossible to understand at a glance
+
 resource "aws_instance" "web" {
   ami           = data.aws_ami.web.id
   instance_type = var.environment == "prod" ? (var.high_traffic ? "m5.xlarge" : "m5.large") : (var.environment == "staging" ? "t3.large" : "t3.micro")
@@ -121,7 +122,7 @@ resource "aws_shield_protection" "main" {
 
 ## The Rule of Thumb
 
-```
+```text
 If an expression is longer than one line, extract it to a local.
 If you need to explain an expression in a comment, name it as a local.
 If you use the same expression twice, always make it a local.
@@ -134,4 +135,4 @@ Good names for locals:
 
 ## Summary
 
-Overly complex inline expressions make configurations hard to review, debug, and maintain. Extract complex logic into descriptively named locals. Each local should express a single clear concept — "which instance type," "which subnet," "should this resource be enabled." Named locals also make testing easier because you can check intermediate values with `tofu console`, and the resource block itself reads like a clear declaration of intent rather than a puzzle to decode.
+Overly complex inline expressions make configurations hard to review, debug, and maintain. Extract complex logic into descriptively named locals. Each local should express a single clear concept - "which instance type," "which subnet," "should this resource be enabled." Named locals also make testing easier because you can check intermediate values with `tofu console`, and the resource block itself reads like a clear declaration of intent rather than a puzzle to decode.

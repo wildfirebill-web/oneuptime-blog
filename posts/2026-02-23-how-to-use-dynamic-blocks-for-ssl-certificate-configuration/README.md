@@ -47,6 +47,7 @@ Each domain on the certificate needs a DNS validation record. The number of reco
 
 ```hcl
 # Create validation records for each domain
+
 resource "aws_route53_record" "validation" {
   for_each = {
     for dvo in aws_acm_certificate.main.domain_validation_options : dvo.domain_name => {

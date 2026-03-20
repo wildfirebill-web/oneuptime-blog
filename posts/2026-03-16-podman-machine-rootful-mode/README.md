@@ -27,6 +27,7 @@ The simplest approach is to initialize a new machine with the `--rootful` flag.
 
 ```bash
 # Create a new machine in rootful mode
+
 podman machine init rootful-machine --rootful
 
 # Start the machine

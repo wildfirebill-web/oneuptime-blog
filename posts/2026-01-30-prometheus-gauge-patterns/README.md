@@ -47,6 +47,7 @@ import time
 import random
 
 # Create a gauge metric
+
 active_connections = Gauge(
     'app_active_connections',
     'Number of currently active connections',

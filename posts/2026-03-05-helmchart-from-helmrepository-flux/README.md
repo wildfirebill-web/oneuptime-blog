@@ -39,6 +39,7 @@ First, ensure you have a HelmRepository defined.
 
 ```yaml
 # helmrepository-bitnami.yaml
+
 # Define the source repository for charts
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

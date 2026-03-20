@@ -53,6 +53,7 @@ import pickle
 import base64
 
 # VULNERABLE: Never unpickle untrusted data!
+
 # An attacker can craft a payload that executes arbitrary code
 
 def vulnerable_load_session(session_cookie):

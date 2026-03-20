@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, opensuse, docker, installation, suse, zypper
+Tags: Portainer, openSUSE, Docker, Installation, SUSE, Zypper
 
 Description: A guide to installing Portainer Community Edition on openSUSE Leap and openSUSE Tumbleweed with Docker, covering zypper configuration and AppArmor considerations.
 
@@ -20,6 +20,7 @@ openSUSE is a community distribution maintained by SUSE that underpins SUSE Linu
 
 ```bash
 # Update packages
+
 sudo zypper refresh
 sudo zypper update -y
 ```

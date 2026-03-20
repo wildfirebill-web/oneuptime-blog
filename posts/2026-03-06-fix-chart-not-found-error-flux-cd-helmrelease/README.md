@@ -20,6 +20,7 @@ When you see a "chart not found" error, your HelmRelease status will typically l
 
 ```bash
 # Check the status of your HelmRelease
+
 kubectl get helmrelease -n my-namespace my-release -o yaml
 ```
 

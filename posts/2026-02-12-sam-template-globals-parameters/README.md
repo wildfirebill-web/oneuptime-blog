@@ -16,6 +16,7 @@ Here's what a template looks like without Globals. Every function repeats the sa
 
 ```yaml
 # Without Globals - lots of repetition
+
 Resources:
   CreateFunction:
     Type: AWS::Serverless::Function

@@ -86,6 +86,7 @@ The safest starting point is to exclude informational-level logs from kube-syste
 
 ```bash
 # Exclude kube-system logs below WARNING severity
+
 gcloud logging sinks update _Default \
   --add-exclusion="name=gke-system-info-logs,filter=resource.type=\"k8s_container\" AND resource.labels.namespace_name=\"kube-system\" AND severity<WARNING" \
   --project=my-project

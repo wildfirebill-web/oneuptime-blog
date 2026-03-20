@@ -46,6 +46,7 @@ Every Flux resource has a `spec.interval` field that determines how often the re
 
 ```yaml
 # The interval field controls how often reconciliation occurs
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

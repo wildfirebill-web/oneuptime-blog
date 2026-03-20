@@ -28,6 +28,7 @@ The quickest way is using the AWS CLI to add CORS headers:
 
 ```bash
 # Add an OPTIONS method for preflight handling
+
 aws apigateway put-method \
   --rest-api-id abc123api \
   --resource-id res456 \

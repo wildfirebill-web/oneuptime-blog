@@ -34,6 +34,7 @@ A scope map defines a set of permissions on specific repositories. Think of it a
 
 ```bash
 # Create a scope map for CI/CD pipeline - push and pull to specific repos
+
 az acr scope-map create \
   --name cicd-scope \
   --registry myRegistry \

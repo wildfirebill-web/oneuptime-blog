@@ -209,6 +209,7 @@ SELECT new_data FROM changes WHERE rn = 1;
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install postgresql-16-pgaudit
 
 # RHEL/CentOS

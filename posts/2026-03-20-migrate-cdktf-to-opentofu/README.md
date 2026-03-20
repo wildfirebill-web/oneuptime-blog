@@ -16,6 +16,7 @@ CDKTF compiles your code to JSON Terraform configurations before running.
 
 ```bash
 # CDKTF synthesizes JSON configurations
+
 cdktf synth
 
 # This creates synthesized JSON in cdktf.out/
@@ -47,7 +48,7 @@ cat cdktf.out/stacks/my-stack/cdk.tf.json | jq '.resource'
 
 ## Phase 2: Export Current State
 
-CDKTF uses standard Terraform state — you can read it directly.
+CDKTF uses standard Terraform state - you can read it directly.
 
 ```bash
 # List current state (from within the CDKTF stack directory)

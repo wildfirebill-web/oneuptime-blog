@@ -330,6 +330,7 @@ class TracedSerializer(serializers.ModelSerializer):
 
 
 # Example usage
+
 class UserSerializer(TracedSerializer):
     class Meta:
         model = User

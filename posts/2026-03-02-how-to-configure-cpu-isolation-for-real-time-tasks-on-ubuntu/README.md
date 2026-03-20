@@ -34,6 +34,7 @@ The simplest approach is adding `isolcpus` to the kernel command line.
 
 ```bash
 # Check how many cores you have and their topology
+
 nproc
 lscpu | grep -E "CPU|Core|Socket|NUMA"
 

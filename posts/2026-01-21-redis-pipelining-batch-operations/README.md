@@ -82,6 +82,7 @@ import time
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 # Without pipelining - slow
+
 def set_without_pipeline(keys_values):
     for key, value in keys_values.items():
         r.set(key, value)

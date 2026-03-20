@@ -46,6 +46,7 @@ Start by deploying your application in regions close to your users.
 
 ```bash
 # Create instance templates in each region
+
 for REGION in us-central1 europe-west1 asia-east1; do
     gcloud compute instance-templates create app-template-${REGION} \
         --machine-type=e2-standard-2 \

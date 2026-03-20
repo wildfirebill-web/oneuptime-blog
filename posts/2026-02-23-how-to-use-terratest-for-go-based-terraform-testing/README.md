@@ -29,6 +29,7 @@ Initialize a Go module for your tests:
 
 ```bash
 # Navigate to your Terraform project
+
 cd my-terraform-project
 
 # Create a test directory

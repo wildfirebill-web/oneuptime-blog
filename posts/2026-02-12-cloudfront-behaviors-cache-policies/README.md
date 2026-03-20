@@ -39,6 +39,7 @@ Here's how to configure them through the CLI:
 
 ```bash
 # Get the current distribution config
+
 aws cloudfront get-distribution-config \
   --id E1234567890 > dist-config.json
 ```

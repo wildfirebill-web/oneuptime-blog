@@ -38,6 +38,7 @@ Here is a typical Cloud SQL setup:
 
 ```bash
 # Create a Cloud SQL PostgreSQL instance with high availability
+
 gcloud sql instances create my-db \
     --database-version=POSTGRES_15 \
     --tier=db-custom-4-16384 \

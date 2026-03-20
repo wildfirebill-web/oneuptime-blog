@@ -34,6 +34,7 @@ Before going into the air gap, you need a connected machine to prepare all the a
 
 ```bash
 # Install talosctl on the connected machine
+
 curl -sL https://talos.dev/install | sh
 
 # Install crane for copying container images

@@ -23,6 +23,7 @@ When you load data into BigQuery, the system compares the structure of the incom
 
 ```bash
 # Check the error details for a failed load job
+
 bq show -j <job-id> --format=prettyjson | python3 -c "
 import json, sys
 job = json.load(sys.stdin)

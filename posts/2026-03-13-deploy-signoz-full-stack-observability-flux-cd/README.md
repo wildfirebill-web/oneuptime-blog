@@ -28,6 +28,7 @@ This guide deploys SigNoz using the official Helm chart with persistent ClickHou
 
 ```yaml
 # clusters/my-cluster/signoz/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

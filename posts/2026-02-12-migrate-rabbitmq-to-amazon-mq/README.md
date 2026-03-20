@@ -20,6 +20,7 @@ Run this against your existing RabbitMQ to export the full configuration.
 
 ```bash
 # Export your current RabbitMQ definitions
+
 rabbitmqctl export_definitions /tmp/rabbit-definitions.json
 
 # Check your RabbitMQ version

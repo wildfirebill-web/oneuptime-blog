@@ -27,6 +27,7 @@ This guide deploys Fluentd as a Deployment (aggregator role), configures it to r
 
 ```yaml
 # infrastructure/sources/bitnami-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

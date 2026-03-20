@@ -16,6 +16,7 @@ The simplest CI/CD integration triggers a selective sync after pushing changes t
 
 ```yaml
 # GitHub Actions workflow
+
 name: Deploy Specific Service
 on:
   push:

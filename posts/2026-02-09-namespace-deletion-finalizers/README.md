@@ -300,6 +300,7 @@ Create a test namespace and observe the finalizer behavior:
 
 ```bash
 # Create a test namespace
+
 kubectl create namespace test-finalizer
 
 # Check that the finalizer was added

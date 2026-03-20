@@ -16,6 +16,7 @@ Events are time-limited records of cluster activities:
 
 ```bash
 # View all events in current namespace
+
 kubectl events
 
 # Events expire after 1 hour by default

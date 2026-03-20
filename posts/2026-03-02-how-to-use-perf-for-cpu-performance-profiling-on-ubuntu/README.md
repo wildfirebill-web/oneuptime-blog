@@ -16,6 +16,7 @@ Description: Learn how to use the Linux perf tool on Ubuntu to profile CPU perfo
 
 ```bash
 # Install for the current kernel
+
 sudo apt install linux-tools-$(uname -r) linux-tools-common -y
 
 # Verify installation

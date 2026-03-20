@@ -35,6 +35,7 @@ Create a Redis instance optimized for session storage:
 
 ```bash
 # Create a Standard Tier Redis instance for session storage
+
 gcloud redis instances create session-store \
   --size=2 \
   --region=us-central1 \

@@ -21,6 +21,7 @@ TFC_WORKSPACE="production"
 TFC_TOKEN="$TF_CLOUD_TOKEN"
 
 # Get the workspace ID
+
 WORKSPACE_ID=$(curl -s   --header "Authorization: Bearer $TFC_TOKEN"   "https://app.terraform.io/api/v2/organizations/$TFC_ORG/workspaces/$TFC_WORKSPACE"   | jq -r '.data.id')
 
 # Get the current state version

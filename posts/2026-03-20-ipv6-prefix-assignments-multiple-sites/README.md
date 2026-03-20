@@ -15,6 +15,7 @@ Multi-site IPv6 management requires a hierarchical prefix plan that enables rout
 ```python
 #!/usr/bin/env python3
 # multi_site_addressing.py
+
 import ipaddress
 
 # Organization: 2001:db8::/32
@@ -172,4 +173,4 @@ router bgp 65001
 
 ## Conclusion
 
-Multi-site IPv6 management requires three levels of structure: regional blocks (/36) for BGP summarization, site prefixes (/48) for per-location allocation, and consistent VLAN-to-/64 mapping templates replicated across all sites. The VLAN template approach ensures that the "servers" prefix at any site always uses the same 4-bit VLAN code — administrators can predict any site's server subnet from the site prefix alone. NetBox multi-site setup enforces the plan by associating prefixes with site objects, providing clear ownership and filtering capabilities in the IPAM UI.
+Multi-site IPv6 management requires three levels of structure: regional blocks (/36) for BGP summarization, site prefixes (/48) for per-location allocation, and consistent VLAN-to-/64 mapping templates replicated across all sites. The VLAN template approach ensures that the "servers" prefix at any site always uses the same 4-bit VLAN code - administrators can predict any site's server subnet from the site prefix alone. NetBox multi-site setup enforces the plan by associating prefixes with site objects, providing clear ownership and filtering capabilities in the IPAM UI.

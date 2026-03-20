@@ -20,6 +20,7 @@ Lambda resource-based policies (function policies) control which principals can 
 
 ```hcl
 # Grant API Gateway permission to invoke the Lambda function
+
 resource "aws_lambda_permission" "api_gateway" {
   statement_id  = "AllowAPIGatewayInvoke"
   action        = "lambda:InvokeFunction"
@@ -136,4 +137,4 @@ tofu apply
 
 ## Conclusion
 
-Lambda resource-based policies enable fine-grained control over who can invoke your functions. Always use `source_arn` when granting S3 or EventBridge permissions to prevent confused deputy attacks where one service impersonates another. For cross-account access, resource policies must be combined with identity policies in the calling account—both must allow the invocation.
+Lambda resource-based policies enable fine-grained control over who can invoke your functions. Always use `source_arn` when granting S3 or EventBridge permissions to prevent confused deputy attacks where one service impersonates another. For cross-account access, resource policies must be combined with identity policies in the calling account-both must allow the invocation.

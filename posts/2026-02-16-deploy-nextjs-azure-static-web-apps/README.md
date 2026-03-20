@@ -26,6 +26,7 @@ Start with a fresh Next.js project:
 
 ```bash
 # Create a new Next.js app with TypeScript
+
 npx create-next-app@latest my-nextjs-swa --typescript --tailwind --app --src-dir
 
 cd my-nextjs-swa

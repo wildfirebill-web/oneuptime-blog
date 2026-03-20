@@ -40,6 +40,7 @@ Permissions are represented as a three-digit octal number (like 750) or as an rw
 
 ```bash
 # Set permissions on a directory
+
 # 750 means: owner=rwx, group=r-x, other=---
 az storage fs access set \
   --permissions rwxr-x--- \

@@ -29,6 +29,7 @@ Create a shell script that manages multiple port forwards:
 set -e
 
 # Configuration file
+
 CONFIG_FILE="${1:-.port-forward.conf}"
 PID_DIR="/tmp/kubectl-pf-pids"
 LOG_DIR="/tmp/kubectl-pf-logs"

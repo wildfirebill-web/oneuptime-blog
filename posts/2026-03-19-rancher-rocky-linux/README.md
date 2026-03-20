@@ -233,6 +233,7 @@ docker start rancher
 
 ```bash
 # Check Docker service
+
 sudo systemctl status docker
 
 # View Rancher container logs

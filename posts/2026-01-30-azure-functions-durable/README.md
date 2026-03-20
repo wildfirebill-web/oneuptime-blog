@@ -60,6 +60,7 @@ Create a new Azure Functions project with Durable Functions support.
 
 ```bash
 # Create a new directory and initialize the project
+
 mkdir durable-functions-demo
 cd durable-functions-demo
 

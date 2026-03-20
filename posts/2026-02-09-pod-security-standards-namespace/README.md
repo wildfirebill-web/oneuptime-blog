@@ -194,6 +194,7 @@ Different namespaces can have different security postures:
 
 ```yaml
 # Development - Permissive for flexibility
+
 apiVersion: v1
 kind: Namespace
 metadata:

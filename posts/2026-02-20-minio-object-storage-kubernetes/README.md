@@ -43,6 +43,7 @@ MinIO uses erasure coding to distribute data across multiple drives and nodes. W
 
 ```bash
 # Install the MinIO Operator using kubectl
+
 # The operator manages MinIO tenants on Kubernetes
 kubectl apply -k "github.com/minio/operator?ref=v6.0.0"
 

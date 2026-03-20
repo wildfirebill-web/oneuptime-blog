@@ -43,6 +43,7 @@ The following commands add the KEDA Helm repository, update your local chart cac
 
 ```bash
 # Add the official KEDA Helm chart repository
+
 helm repo add kedacore https://kedacore.github.io/charts
 
 # Update your local Helm repository cache

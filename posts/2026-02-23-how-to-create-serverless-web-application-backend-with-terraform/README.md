@@ -27,6 +27,7 @@ The serverless web application backend includes:
 
 ```hcl
 # S3 bucket for static website content
+
 resource "aws_s3_bucket" "website" {
   bucket = "my-web-app-${var.environment}"
 }

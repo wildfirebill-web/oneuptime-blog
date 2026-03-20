@@ -28,6 +28,7 @@ Udev rules go under `machine.udev` in the Talos machine configuration:
 
 ```yaml
 # Basic udev rule configuration
+
 machine:
   udev:
     rules:

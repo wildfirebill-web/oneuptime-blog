@@ -39,6 +39,7 @@ ETD should be enabled by default with SCC Premium, but verify it.
 
 ```bash
 # Check ETD service status
+
 gcloud scc settings services describe etd \
   --organization=ORGANIZATION_ID
 ```

@@ -22,6 +22,7 @@ First, create an IAM policy for the controller:
 
 ```bash
 # Download IAM policy
+
 curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.7.0/docs/install/iam_policy.json
 
 # Create IAM policy

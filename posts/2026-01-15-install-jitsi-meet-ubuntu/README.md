@@ -61,6 +61,7 @@ You need a fully qualified domain name (FQDN) pointing to your server:
 
 ```bash
 # Example DNS A record
+
 meet.yourdomain.com.    IN    A    203.0.113.50
 ```
 

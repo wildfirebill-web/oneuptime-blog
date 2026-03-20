@@ -29,6 +29,7 @@ ML workloads need several storage buckets with different access patterns:
 
 ```hcl
 # Training data bucket
+
 resource "aws_s3_bucket" "training_data" {
   bucket = "${var.project_name}-training-data-${var.account_id}"
 

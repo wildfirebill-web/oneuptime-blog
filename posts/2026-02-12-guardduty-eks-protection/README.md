@@ -26,6 +26,7 @@ This enables EKS Audit Log Monitoring on your existing GuardDuty detector:
 
 ```bash
 # Enable EKS Audit Log Monitoring
+
 aws guardduty update-detector \
   --detector-id abc123def456 \
   --features '[

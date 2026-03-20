@@ -16,6 +16,7 @@ Before setting up the EC2 inventory plugin, you need the AWS collection and the 
 
 ```bash
 # Install the AWS Ansible collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install the required Python library

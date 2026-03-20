@@ -37,6 +37,7 @@ Start with a new React project and add Amplify Gen 2:
 
 ```bash
 # Create a new React project with TypeScript
+
 npm create vite@latest task-manager -- --template react-ts
 cd task-manager
 

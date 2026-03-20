@@ -18,6 +18,7 @@ From the command line, you can also see the plan:
 
 ```bash
 # Get the query execution plan for a query
+
 gcloud spanner databases execute-sql my-database \
     --instance=my-spanner-instance \
     --sql='SELECT * FROM Users WHERE Email = "alice@example.com"' \

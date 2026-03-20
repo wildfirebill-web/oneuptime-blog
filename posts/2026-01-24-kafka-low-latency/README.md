@@ -364,6 +364,7 @@ public class LowLatencyConsumer {
 
 ```properties
 # Minimal replica acknowledgment for lower latency
+
 # Set to 1 for lowest latency (risk of data loss if leader fails)
 min.insync.replicas=1
 

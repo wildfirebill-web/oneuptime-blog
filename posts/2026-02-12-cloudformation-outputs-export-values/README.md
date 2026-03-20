@@ -18,6 +18,7 @@ Basic syntax:
 
 ```yaml
 # Simple output that exposes the VPC ID
+
 Outputs:
   VpcId:
     Description: The ID of the created VPC

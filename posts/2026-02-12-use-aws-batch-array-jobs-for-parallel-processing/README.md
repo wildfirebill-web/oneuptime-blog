@@ -48,6 +48,7 @@ The job definition for an array job looks the same as any other Batch job defini
 
 ```bash
 # Register a job definition for parallel file processing
+
 aws batch register-job-definition \
   --job-definition-name file-processor \
   --type container \

@@ -12,7 +12,7 @@ The underlay is the physical routed network in a data center fabric. IPv6 underl
 
 ## BGP Unnumbered for IPv6 Underlay
 
-```
+```text
 BGP Unnumbered uses IPv6 link-local addresses for peering,
 eliminating the need to allocate IPv4 or IPv6 P2P addresses.
 
@@ -64,6 +64,7 @@ router bgp 65101
 
 ```bash
 # IS-IS with IPv6 - alternative to BGP for smaller fabrics
+
 # /etc/frr/frr.conf - IS-IS IPv6
 
 interface lo

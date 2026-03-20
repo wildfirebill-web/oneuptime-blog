@@ -34,6 +34,7 @@ Each remote machine needs Podman installed and SSH access configured.
 
 ```bash
 # On each remote machine, install Podman
+
 # Fedora/RHEL
 sudo dnf install -y podman
 

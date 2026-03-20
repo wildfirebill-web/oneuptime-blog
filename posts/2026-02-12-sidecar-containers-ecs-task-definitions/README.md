@@ -214,7 +214,7 @@ If you're using AWS App Mesh, you'll run Envoy as a sidecar. Here's what that lo
 
 The health check ensures that Envoy is actually ready to handle traffic before your app container starts receiving requests. Combined with `dependsOn` using the `HEALTHY` condition, you get a reliable startup sequence.
 
-## Resource Allocation Tips
+Resource Allocation Tips
 
 When you're running sidecars, remember that CPU and memory are shared across all containers in the task. On Fargate, you set CPU and memory at the task level, and each container gets a share.
 

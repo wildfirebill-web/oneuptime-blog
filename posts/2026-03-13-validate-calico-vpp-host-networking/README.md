@@ -29,6 +29,7 @@ kubectl get pods -n calico-vpp-dataplane -o wide
 
 kubectl logs -n calico-vpp-dataplane ds/calico-vpp-node -c vpp-manager --tail=50
 # Look for "VPP started successfully"
+
 ```
 
 ## Step 2: Inspect VPP Interfaces

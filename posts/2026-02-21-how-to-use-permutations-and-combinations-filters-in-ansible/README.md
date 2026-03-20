@@ -33,6 +33,7 @@ The `combinations` filter generates all possible unordered selections of a given
 
 ```yaml
 # playbook-combinations.yml
+
 # Generates all possible pairs from a list of servers for connectivity testing
 - name: Generate combinations
   hosts: localhost

@@ -12,7 +12,7 @@ Manually writing IPv6 router configurations leads to inconsistencies and errors.
 
 ## Project Structure
 
-```
+```text
 ipv6-configs/
   templates/
     ios_xr_interface.j2
@@ -31,6 +31,7 @@ ipv6-configs/
 
 ```yaml
 # data/routers.yml
+
 routers:
   - name: R1
     loopback: "5f00:fe81:1::/128"

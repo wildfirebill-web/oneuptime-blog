@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Huginn
+
 version: "3.8"
 
 services:
@@ -86,7 +87,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-db-password
 MYSQL_ROOT_PASSWORD=your-mysql-root-password
 SECRET_TOKEN=your-100-char-random-secret

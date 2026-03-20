@@ -32,6 +32,7 @@ The key behavior: override files do not add to the configuration - they replace 
 
 ```hcl
 # main.tf - Base configuration
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.large"

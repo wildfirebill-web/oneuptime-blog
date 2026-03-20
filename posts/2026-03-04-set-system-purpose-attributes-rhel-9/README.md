@@ -41,6 +41,7 @@ RHEL includes the `syspurpose` tool as part of `subscription-manager`. Set attri
 
 ```bash
 # Set the system role
+
 sudo subscription-manager syspurpose role --set="Red Hat Enterprise Linux Server"
 
 # Set the service level agreement

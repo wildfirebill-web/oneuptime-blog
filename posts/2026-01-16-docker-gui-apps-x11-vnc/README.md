@@ -18,6 +18,7 @@ X11 forwarding shares the host's display server with the container, providing th
 
 ```bash
 # Allow container to connect to X server
+
 xhost +local:docker
 
 # Run GUI application

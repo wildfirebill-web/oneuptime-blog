@@ -155,4 +155,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure CDN provides global content delivery with configurable caching rules and custom domain support. OpenTofu manages CDN profiles, endpoints, delivery rules, and custom domain HTTPS — creating a reproducible, code-driven CDN configuration for static and dynamic content.
+Azure CDN provides global content delivery with configurable caching rules and custom domain support. OpenTofu manages CDN profiles, endpoints, delivery rules, and custom domain HTTPS - creating a reproducible, code-driven CDN configuration for static and dynamic content.

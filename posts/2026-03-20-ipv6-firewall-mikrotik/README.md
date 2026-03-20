@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MikroTik, RouterOS, Firewall, ip6tables
+Tags: IPv6, MikroTik, RouterOS, Firewall, Ip6tables
 
 Description: Learn how to configure IPv6 firewall rules on MikroTik RouterOS using the /ipv6 firewall filter commands, including input, forward, and output chain rules.
 
@@ -14,6 +14,7 @@ MikroTik RouterOS has a dedicated IPv6 firewall filter (`/ipv6 firewall filter`)
 
 ```bash
 # View current IPv6 firewall rules
+
 /ipv6 firewall filter print
 
 # View connection tracking
@@ -41,7 +42,7 @@ MikroTik RouterOS has a dedicated IPv6 firewall filter (`/ipv6 firewall filter`)
 # Destination Unreachable
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=1:0-255 action=accept comment="ICMPv6 Unreachable"
 
-# Packet Too Big — NEVER block
+# Packet Too Big - NEVER block
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=2:0-255 action=accept comment="ICMPv6 Packet Too Big"
 
 # Time Exceeded
@@ -50,7 +51,7 @@ MikroTik RouterOS has a dedicated IPv6 firewall filter (`/ipv6 firewall filter`)
 # Parameter Problem
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=4:0-255 action=accept comment="ICMPv6 Parameter Problem"
 
-# NDP — Router and Neighbor messages (link-local only)
+# NDP - Router and Neighbor messages (link-local only)
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=133:0-255 src-address=fe80::/10 action=accept comment="Router Solicitation"
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=134:0-255 src-address=fe80::/10 action=accept comment="Router Advertisement"
 /ipv6 firewall filter add chain=input protocol=icmpv6 icmp-options=135:0-255 src-address=fe80::/10 action=accept comment="Neighbor Solicitation"

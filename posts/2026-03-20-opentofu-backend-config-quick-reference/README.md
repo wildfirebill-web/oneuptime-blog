@@ -85,6 +85,7 @@ terraform {
   }
 }
 # Note: Local backend has no locking and is not suitable for team use
+
 ```
 
 ## Partial Backend Configuration
@@ -131,7 +132,7 @@ tofu plan  # should show no changes
 
 ## Backend State Key Conventions
 
-```
+```text
 # Recommended key structure:
 {organization}/{team}/{environment}/{service}/terraform.tfstate
 

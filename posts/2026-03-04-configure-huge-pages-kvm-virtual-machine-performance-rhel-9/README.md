@@ -115,6 +115,7 @@ For NUMA-aware huge page allocation:
 
 ```bash
 # Allocate huge pages on NUMA node 0
+
 echo 2048 | sudo tee /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages
 
 # Allocate huge pages on NUMA node 1

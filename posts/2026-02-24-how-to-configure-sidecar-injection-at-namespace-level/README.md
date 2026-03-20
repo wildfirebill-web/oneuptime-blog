@@ -58,6 +58,7 @@ When you run multiple versions of Istio (for canary upgrades), you use revision 
 
 ```bash
 # Install Istio with a revision
+
 istioctl install --set revision=1-20 -y
 
 # Label namespace with the revision

@@ -16,6 +16,7 @@ Environment variables seem convenient but have serious drawbacks:
 
 ```bash
 # BAD: Secrets visible in docker inspect output
+
 docker run -e DATABASE_PASSWORD=supersecret myapp
 
 # Anyone can see them

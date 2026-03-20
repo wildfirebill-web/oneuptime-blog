@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PostgreSQL, Database, pg_hba.conf, listen_addresses
+Tags: IPv6, PostgreSQL, Database, pg_hba.conf, Listen_addresses
 
 Description: Learn how to configure PostgreSQL to accept connections from IPv6 clients by updating listen_addresses and pg_hba.conf, including both specific IPv6 addresses and subnets.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure PostgreSQL to accept connections from IPv6 c
 
 ```bash
 # Find postgresql.conf location
+
 psql -U postgres -c "SHOW config_file;"
 # or
 find /etc -name postgresql.conf 2>/dev/null

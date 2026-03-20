@@ -16,6 +16,7 @@ The fastest way to enable account locking:
 
 ```bash
 # Enable the faillock feature
+
 sudo authselect enable-feature with-faillock
 
 # Verify it is enabled

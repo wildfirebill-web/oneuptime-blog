@@ -71,6 +71,7 @@ One of the most impactful optimizations is placing the RocksDB database (DB) and
 
 ```bash
 # WAL sizing: 1-2 GB per OSD is typically sufficient
+
 # DB sizing: 1-4% of the data device capacity
 
 # Example for a 4TB HDD data device:

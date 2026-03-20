@@ -89,6 +89,7 @@ OpenTelemetry Collector configuration for the same task:
 
 ```yaml
 # OTel Collector configuration for tailing application logs
+
 # Uses the filelog receiver to watch and parse log files
 receivers:
   filelog:

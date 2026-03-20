@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netstat, Linux, Networking, TCP, UDP, Diagnostics
+Tags: netstat, Linux, Networking, TCP, UDP, Diagnostics
 
 Description: Use the netstat command to list all active IPv4 TCP and UDP connections, view listening ports, and understand socket states on Linux.
 
@@ -12,6 +12,7 @@ Netstat displays current network connections, routing tables, and interface stat
 
 ```bash
 # Show all active connections (TCP + UDP)
+
 netstat -a
 
 # Show only IPv4 connections
@@ -124,9 +125,9 @@ netstat -s
 netstat -s | grep -A 10 "Tcp:"
 
 # Useful counters:
-# "segments retransmitted" — high value = packet loss/congestion
-# "connection resets" — unexpected RSTs (application or network issues)
-# "failed connection attempts" — firewall blocks or refused connections
+# "segments retransmitted" - high value = packet loss/congestion
+# "connection resets" - unexpected RSTs (application or network issues)
+# "failed connection attempts" - firewall blocks or refused connections
 ```
 
 Note: On modern systems, `ss` is preferred over `netstat` for performance and richer output, but netstat remains useful for its familiar output format and broad availability.

@@ -16,6 +16,7 @@ This guide covers creating ResourceQuotas with Terraform for compute resources, 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

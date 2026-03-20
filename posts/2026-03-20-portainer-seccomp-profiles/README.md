@@ -16,6 +16,7 @@ Docker's default seccomp profile allows about 300 of the ~400 available system c
 
 ```bash
 # Check if the default seccomp profile is applied
+
 docker inspect $(docker ps -qf name=my-container) | \
   jq '.[0].HostConfig.SecurityOpt'
 # Returns: ["seccomp=<json-profile>"] or null (null uses default)
@@ -49,7 +50,7 @@ The profile file must be present on the Docker host at the specified path.
 
 ## Creating a Minimal Seccomp Profile
 
-Start with an allow-list approach — permit only the syscalls your application needs:
+Start with an allow-list approach - permit only the syscalls your application needs:
 
 ```json
 {
@@ -92,7 +93,7 @@ docker run --rm \
   strace -f -c -e trace=all node server.js 2>&1 | tail -40
 ```
 
-The `-c` flag summarizes syscall counts — focus on the most-called ones as your allow-list baseline.
+The `-c` flag summarizes syscall counts - focus on the most-called ones as your allow-list baseline.
 
 ## Applying via Portainer UI
 

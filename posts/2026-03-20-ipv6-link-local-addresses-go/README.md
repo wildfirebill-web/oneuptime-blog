@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Link-Local, Zone ID, Networking, net/netip
+Tags: Go, IPv6, Link-Local, Zone ID, Networking, Net/netip
 
 Description: Handle IPv6 link-local addresses in Go, including zone ID management, interface binding, and NDP neighbor discovery.
 
 ## Understanding Link-Local Addresses
 
-IPv6 link-local addresses (fe80::/10) are automatically assigned to every IPv6-capable interface. They are scoped to the local link — not routable beyond the directly connected network.
+IPv6 link-local addresses (fe80::/10) are automatically assigned to every IPv6-capable interface. They are scoped to the local link - not routable beyond the directly connected network.
 
 Key characteristic: Link-local addresses require a **zone ID** (interface name or index) when used as socket addresses, because the same address (fe80::1) might exist on multiple interfaces.
 
@@ -58,7 +58,7 @@ func listLinkLocalAddresses() {
             }
 
             if netipAddr.IsLinkLocalUnicast() {
-                // Link-local found — format with zone ID
+                // Link-local found - format with zone ID
                 fmt.Printf("%s: [%s%%%s]\n",
                     iface.Name, netipAddr, iface.Name)
             }
@@ -227,7 +227,7 @@ func pingLinkLocalMulticast(ifaceName string) {
 
     conn.SetDeadline(time.Now().Add(2 * time.Second))
     conn.Write([]byte("NDP-probe"))
-    fmt.Println("Probe sent — check NDP cache with: ip -6 neigh show")
+    fmt.Println("Probe sent - check NDP cache with: ip -6 neigh show")
 }
 ```
 

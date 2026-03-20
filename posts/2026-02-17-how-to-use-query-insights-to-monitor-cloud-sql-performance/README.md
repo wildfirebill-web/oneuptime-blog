@@ -28,6 +28,7 @@ Think of it as a lightweight APM tool specifically for your database.
 
 ```bash
 # Enable Query Insights for a PostgreSQL instance
+
 gcloud sql instances patch my-pg-instance \
     --insights-config-query-insights-enabled \
     --insights-config-query-string-length=4096 \

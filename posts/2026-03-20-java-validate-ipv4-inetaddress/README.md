@@ -8,7 +8,7 @@ Description: Validate IPv4 address strings in Java using InetAddress, regex, and
 
 ## Introduction
 
-Validating IPv4 addresses is a common task in Java networking code — for input validation, configuration parsing, and security checks. Java provides several approaches ranging from the standard `InetAddress` class to regex validation and third-party libraries.
+Validating IPv4 addresses is a common task in Java networking code - for input validation, configuration parsing, and security checks. Java provides several approaches ranging from the standard `InetAddress` class to regex validation and third-party libraries.
 
 ## Method 1: Using InetAddress
 
@@ -47,12 +47,12 @@ public class IPv4Validator {
             "10.0.0.0",         // Valid (network address)
             "255.255.255.255",  // Valid (broadcast)
             "0.0.0.0",          // Valid
-            "256.1.1.1",        // Invalid — octet > 255
-            "192.168.1",        // Invalid — only 3 octets
-            "192.168.1.1.1",    // Invalid — 5 octets
-            "abc.def.ghi.jkl",  // Invalid — non-numeric
-            "",                  // Invalid — empty
-            null                 // Invalid — null
+            "256.1.1.1",        // Invalid - octet > 255
+            "192.168.1",        // Invalid - only 3 octets
+            "192.168.1.1.1",    // Invalid - 5 octets
+            "abc.def.ghi.jkl",  // Invalid - non-numeric
+            "",                  // Invalid - empty
+            null                 // Invalid - null
         };
         
         for (String ip : testCases) {

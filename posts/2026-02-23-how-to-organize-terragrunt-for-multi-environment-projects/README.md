@@ -105,6 +105,7 @@ Each `env.hcl` defines environment-specific values:
 
 ```hcl
 # live/dev/env.hcl
+
 locals {
   environment = "dev"
   account_id  = "111111111111"

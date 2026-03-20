@@ -33,6 +33,7 @@ This creates a multi-region primary key in us-east-1:
 
 ```bash
 # Create multi-region primary key
+
 aws kms create-key \
   --region us-east-1 \
   --multi-region \

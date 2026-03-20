@@ -16,6 +16,7 @@ Drift occurs when real infrastructure differs from what OpenTofu expects based o
 
 ```bash
 # Run a refresh to update state from real infrastructure
+
 tofu refresh
 
 # Show the current state of a specific resource
@@ -123,4 +124,4 @@ tofu state pull | jq '.resources[] | select(.type == "aws_s3_bucket")'
 
 ## Conclusion
 
-Most state issues fall into a few categories: drift (refresh fixes it), missing resources (import fixes it), taints (untaint fixes it), and corruption (restore from backup). The `refresh-only` plan is a safe diagnostic tool — it shows what would be updated in state without changing infrastructure. Always backup state before performing state modifications.
+Most state issues fall into a few categories: drift (refresh fixes it), missing resources (import fixes it), taints (untaint fixes it), and corruption (restore from backup). The `refresh-only` plan is a safe diagnostic tool - it shows what would be updated in state without changing infrastructure. Always backup state before performing state modifications.

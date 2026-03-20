@@ -29,6 +29,7 @@ When you use the `template` module inside a role, Ansible looks in `templates/` 
 
 ```yaml
 # roles/webserver/tasks/main.yml
+
 # Ansible automatically looks in roles/webserver/templates/ for the source file
 ---
 - name: Deploy Nginx configuration

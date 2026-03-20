@@ -22,6 +22,7 @@ Download the certificate bundle for your application to use:
 
 ```bash
 # Download the global certificate bundle (works for all regions)
+
 wget https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem
 
 # Or download a region-specific bundle

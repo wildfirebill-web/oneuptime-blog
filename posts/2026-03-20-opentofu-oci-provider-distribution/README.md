@@ -1,11 +1,10 @@
----
-title: "Distributing OpenTofu Providers via OCI Registries"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, oci, registry
-description: "Learn how OpenTofu supports OCI (Open Container Initiative) registries for distributing providers and modules."
----
-
 # Distributing OpenTofu Providers via OCI Registries
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, OCI, Registry
+
+Description: Learn how OpenTofu supports OCI (Open Container Initiative) registries for distributing providers and modules.
 
 OpenTofu introduces support for OCI (Open Container Initiative) registries as an alternative distribution channel for providers and modules. This allows organizations to use existing container registry infrastructure (Docker Hub, ECR, GCR, Harbor) to distribute OpenTofu content.
 
@@ -35,6 +34,7 @@ terraform {
 
 ```hcl
 # ~/.tofurc
+
 provider_installation {
   oci {
     # Use credentials from Docker config
@@ -119,7 +119,7 @@ externalURL: https://registry.example.com
 ```
 
 ```hcl
-# ~/.tofurc — configure OCI for corporate registry
+# ~/.tofurc - configure OCI for corporate registry
 provider_installation {
   oci {
     # Harbor uses Docker credentials
@@ -172,7 +172,7 @@ echo "Published ${PROVIDER} v${VERSION} to OCI registry"
 
 ## Advantages Over Traditional Distribution
 
-```
+```bash
 Traditional (registry.opentofu.org):
 - Public only (or requires Terraform Cloud for private)
 - Must match specific naming conventions

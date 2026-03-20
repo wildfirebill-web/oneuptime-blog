@@ -48,6 +48,7 @@ BIRD is a popular routing daemon for Linux systems.
 # /etc/bird/bird.conf
 
 # Router identification
+
 router id 203.0.113.1;
 
 # Logging

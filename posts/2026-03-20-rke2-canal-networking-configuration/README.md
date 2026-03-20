@@ -18,6 +18,7 @@ Canal is the default, but you can explicitly configure it:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 token: my-cluster-token
 tls-san:
   - "rke2.example.com"
@@ -128,5 +129,5 @@ spec:
 ## Best Practices
 
 - Set the MTU explicitly to avoid packet fragmentation in cloud environments.
-- Do not mix Canal with other CNI installations — only one CNI should be active per cluster.
+- Do not mix Canal with other CNI installations - only one CNI should be active per cluster.
 - Use `host-gw` backend when all nodes are in the same L2 network for better performance than VXLAN.

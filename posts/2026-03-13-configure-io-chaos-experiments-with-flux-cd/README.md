@@ -29,6 +29,7 @@ IO latency simulates a slow disk, causing file operations to take longer than no
 
 ```yaml
 # clusters/my-cluster/chaos-experiments/io-latency.yaml
+
 apiVersion: chaos-mesh.org/v1alpha1
 kind: IOChaos
 metadata:

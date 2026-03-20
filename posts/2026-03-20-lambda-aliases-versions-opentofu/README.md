@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, Versions, Aliases, Blue-Green Deployment, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, Version, Aliases, Blue-Green Deployment, Infrastructure as Code
 
 Description: Learn how to manage Lambda function versions and aliases with OpenTofu to enable blue-green deployments, canary releases, and stable API endpoints for Lambda functions.
 
@@ -42,6 +42,7 @@ resource "aws_lambda_function" "app" {
 
 ```hcl
 # Production alias pointing to a specific stable version
+
 resource "aws_lambda_alias" "production" {
   name             = "production"
   function_name    = aws_lambda_function.app.function_name
@@ -140,4 +141,4 @@ tofu apply -var="production_version=6"
 
 ## Conclusion
 
-Lambda versions and aliases enable safe, controlled deployments. Use aliases for stable endpoint identifiers in API Gateway and event source mappings, then update the alias target to shift traffic. The traffic weighting in routing_config enables gradual canary deployments—increase the new version's weight incrementally while monitoring error rates before completing the cutover.
+Lambda versions and aliases enable safe, controlled deployments. Use aliases for stable endpoint identifiers in API Gateway and event source mappings, then update the alias target to shift traffic. The traffic weighting in routing_config enables gradual canary deployments-increase the new version's weight incrementally while monitoring error rates before completing the cutover.

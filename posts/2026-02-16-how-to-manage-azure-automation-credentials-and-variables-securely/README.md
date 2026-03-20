@@ -22,6 +22,7 @@ Every Automation account can have a system-assigned managed identity. Enable it 
 
 ```bash
 # Enable system-assigned managed identity on an existing Automation account
+
 az automation account update \
   --resource-group rg-automation \
   --name aa-operations \

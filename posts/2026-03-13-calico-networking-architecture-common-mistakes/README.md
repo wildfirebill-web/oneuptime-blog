@@ -27,6 +27,7 @@ Without Typha, every Felix instance maintains its own watch on the Kubernetes AP
 **Diagnosis**:
 ```bash
 # Check if Typha is deployed
+
 kubectl get pods -n calico-system -l k8s-app=calico-typha
 
 # Check API server CPU under load

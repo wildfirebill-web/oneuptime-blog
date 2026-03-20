@@ -18,6 +18,7 @@ One of the biggest mistakes teams make is defining security group rules inline w
 
 ```hcl
 # Avoid this pattern - inline rules cause issues
+
 resource "aws_security_group" "bad_example" {
   name = "bad-example"
 

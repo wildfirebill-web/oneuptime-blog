@@ -1,4 +1,4 @@
-# How to Deploy Apache Airflow via Portainer
+# How to Deploy Apache Airflow via Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Apache Airflow (LocalExecutor)
+
 version: "3.8"
 
 x-airflow-common: &airflow-common
@@ -107,7 +108,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 POSTGRES_PASSWORD=your-secure-postgres-password
 FERNET_KEY=<base64-32-byte-key>
 WEBSERVER_SECRET_KEY=your-webserver-secret

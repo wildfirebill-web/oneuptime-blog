@@ -42,6 +42,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.metrics import MeterProvider
 
 # Define resource with runbook URL as an attribute
+
 resource = Resource.create({
     "service.name": "payment-service",
     "service.version": "2.3.1",

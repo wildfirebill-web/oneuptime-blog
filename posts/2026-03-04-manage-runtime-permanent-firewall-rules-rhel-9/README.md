@@ -32,6 +32,7 @@ The safe workflow:
 
 ```bash
 # Step 1: Make changes to runtime only (no --permanent)
+
 firewall-cmd --zone=public --add-service=http
 
 # Step 2: Test that everything works

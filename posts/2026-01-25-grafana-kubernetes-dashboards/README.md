@@ -34,6 +34,7 @@ The kube-prometheus-stack Helm chart bundles Prometheus, Grafana, and essential 
 
 ```bash
 # Add the prometheus-community Helm repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

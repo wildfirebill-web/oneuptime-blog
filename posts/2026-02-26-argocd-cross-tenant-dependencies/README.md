@@ -51,6 +51,7 @@ For deployment dependencies within the same ArgoCD instance, use sync waves on t
 
 ```yaml
 # Infrastructure deploys first (wave -3)
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

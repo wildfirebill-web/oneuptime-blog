@@ -135,6 +135,7 @@ For organizations with many tools, maintain a central registry that maps service
 
 ```yaml
 # ConfigMap acting as a link registry
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

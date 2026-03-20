@@ -37,6 +37,7 @@ Starting with Airflow 2.7, there's built-in support for OpenTelemetry traces. Yo
 
 ```ini
 # airflow.cfg - Enable OpenTelemetry tracing
+
 [traces]
 otel_on = True
 otel_host = localhost

@@ -22,6 +22,7 @@ Before configuring profiles, verify that AppArmor is active on your system.
 
 ```bash
 # Check if AppArmor is enabled
+
 # The output should show "Y" if the module is loaded
 cat /sys/module/apparmor/parameters/enabled
 

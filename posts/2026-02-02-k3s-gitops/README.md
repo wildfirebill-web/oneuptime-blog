@@ -89,6 +89,7 @@ The following script installs K3s as a single-node cluster with the default conf
 
 ```bash
 # Install K3s with default settings
+
 # The script downloads the binary, sets up systemd, and starts the server
 curl -sfL https://get.k3s.io | sh -
 
@@ -1069,7 +1070,7 @@ etcd-snapshot-dir: /var/lib/rancher/k3s/server/db/snapshots
 3. **Audit trail** - Enable Git signing and protected branches
 4. **Network policies** - Restrict GitOps controller network access
 
-### Resource Management for K3s
+Resource Management for K3s
 
 1. **Set resource limits** - K3s environments often have constrained resources
 2. **Optimize images** - Use alpine or distroless base images

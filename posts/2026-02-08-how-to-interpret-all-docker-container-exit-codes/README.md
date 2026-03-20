@@ -16,6 +16,7 @@ Before diving into the codes themselves, here is how to find the exit code of a 
 
 ```bash
 # Check the exit code of the last run
+
 docker inspect my-container --format '{{.State.ExitCode}}'
 
 # View exit codes for all stopped containers

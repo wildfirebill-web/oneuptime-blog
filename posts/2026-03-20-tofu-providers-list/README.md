@@ -1,4 +1,4 @@
-# How to Use tofu providers to List Required Providers
+# How to Use tofu providers to List Required Providers - Tofu List
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `tofu providers` command provides information about the providers required b
 
 ```bash
 # List all providers required by the configuration
+
 tofu providers
 
 # Output:

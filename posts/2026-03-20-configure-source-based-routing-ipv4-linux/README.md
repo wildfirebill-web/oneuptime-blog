@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Policy Routing, IPv4, Source Routing, ip rule
+Tags: Linux, Networking, Policy Routing, IPv4, Source Routing, Ip rule
 
 Description: Configure source-based IPv4 routing on Linux using ip rule and ip route to direct traffic from specific source addresses through different gateways or interfaces.
 
 ## Introduction
 
-Standard Linux routing uses only the destination address. Policy-based routing (PBR) adds rules that consider the source address, enabling different traffic flows to use different gateways — essential for multi-homed servers and traffic shaping.
+Standard Linux routing uses only the destination address. Policy-based routing (PBR) adds rules that consider the source address, enabling different traffic flows to use different gateways - essential for multi-homed servers and traffic shaping.
 
 ## Use Case: Dual-ISP Linux Router
 
@@ -24,6 +24,7 @@ Linux routing tables are numbered 1–252 (plus special tables 253=default, 254=
 
 ```bash
 # Add table names to /etc/iproute2/rt_tables
+
 sudo tee -a /etc/iproute2/rt_tables << 'EOF'
 100 isp-a
 200 isp-b
@@ -63,7 +64,7 @@ ip rule show
 
 Output:
 
-```
+```text
 0:      from all lookup local
 100:    from 203.0.113.10 lookup isp-a
 200:    from 198.51.100.10 lookup isp-b

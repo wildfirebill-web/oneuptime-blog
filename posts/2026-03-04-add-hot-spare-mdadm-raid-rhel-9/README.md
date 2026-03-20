@@ -23,6 +23,7 @@ For any production RAID array, having at least one hot spare is a cheap insuranc
 
 ```bash
 # List block devices to find the unused disk
+
 lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
 
 # Wipe any existing signatures

@@ -24,6 +24,7 @@ The recommended way to deploy Harbor is using its official Helm chart. You can r
 
 ```bash
 # Add the Harbor Helm repository
+
 helm repo add harbor https://helm.goharbor.io
 helm repo update
 

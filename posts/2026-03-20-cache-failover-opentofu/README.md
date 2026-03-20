@@ -67,6 +67,7 @@ resource "aws_elasticache_replication_group" "multi_az" {
 
 ```hcl
 # Alert when a failover occurs
+
 resource "aws_cloudwatch_metric_alarm" "failover_events" {
   alarm_name          = "redis-failover-occurred"
   comparison_operator = "GreaterThanThreshold"
@@ -76,7 +77,7 @@ resource "aws_cloudwatch_metric_alarm" "failover_events" {
   period              = 60
   statistic           = "Sum"
   threshold           = 0
-  alarm_description   = "Redis failover occurred — verify application recovery"
+  alarm_description   = "Redis failover occurred - verify application recovery"
   alarm_actions       = [aws_sns_topic.alerts.arn]
 
   dimensions = {
@@ -108,7 +109,7 @@ resource "aws_cloudwatch_metric_alarm" "unhealthy_nodes" {
 When failover occurs, the primary endpoint DNS updates to point to the new primary. Applications should:
 
 ```hcl
-# Output the primary endpoint — DNS updates automatically on failover
+# Output the primary endpoint - DNS updates automatically on failover
 output "redis_primary_endpoint" {
   description = "Connect to this endpoint. DNS updates automatically during failover."
   value       = aws_elasticache_replication_group.ha.primary_endpoint_address

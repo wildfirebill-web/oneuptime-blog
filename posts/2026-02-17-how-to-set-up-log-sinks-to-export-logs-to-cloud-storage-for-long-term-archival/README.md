@@ -27,6 +27,7 @@ Create a bucket specifically for log archival:
 
 ```bash
 # Create a storage bucket for log archival
+
 gcloud storage buckets create gs://my-project-log-archive \
   --location=US \
   --default-storage-class=STANDARD \

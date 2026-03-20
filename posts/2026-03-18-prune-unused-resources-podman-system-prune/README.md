@@ -20,6 +20,7 @@ The default prune command removes stopped containers, unused networks, dangling 
 
 ```bash
 # Prune unused resources (will prompt for confirmation)
+
 podman system prune
 
 # Skip the confirmation prompt with the force flag

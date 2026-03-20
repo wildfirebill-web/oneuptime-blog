@@ -108,6 +108,7 @@ API="http://localhost/v4.0.0/libpod"
 CONTAINER="test-container"
 
 # Step 1: Create exec instance
+
 EXEC_RESPONSE=$(curl -s --unix-socket "$SOCKET" \
   -X POST \
   -H "Content-Type: application/json" \

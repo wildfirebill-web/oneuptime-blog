@@ -53,6 +53,7 @@ You need Node.js 18+, Go 1.21+ (for backend plugins), and Docker for testing. In
 
 ```bash
 # Install the create-plugin tool globally
+
 npm install -g @grafana/create-plugin
 
 # Verify the installation

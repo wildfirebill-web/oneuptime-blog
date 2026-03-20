@@ -14,6 +14,7 @@ Linux exposes hundreds of kernel parameters through the `/proc/sys` virtual file
 
 ```bash
 # Show all current kernel parameters
+
 sysctl -a
 
 # Show a specific parameter

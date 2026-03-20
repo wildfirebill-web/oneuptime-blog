@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, systemd-resolved, systemd-networkd, DNS, Networking, Configuration
+Tags: Linux, Systemd-resolved, systemd-networkd, DNS, Networking, Configuration
 
 Description: Configure systemd-resolved for DNS resolution alongside systemd-networkd, including global DNS settings, DNS-over-TLS, caching, and per-interface DNS configuration.
 
@@ -14,6 +14,7 @@ Description: Configure systemd-resolved for DNS resolution alongside systemd-net
 
 ```bash
 # Enable and start systemd-resolved
+
 systemctl enable --now systemd-resolved
 
 # Point /etc/resolv.conf to the stub resolver

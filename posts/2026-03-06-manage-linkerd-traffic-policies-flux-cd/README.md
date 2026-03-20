@@ -41,6 +41,7 @@ Create a Flux CD source for traffic policy configurations:
 
 ```yaml
 # git-source.yaml
+
 # GitRepository source for Linkerd traffic policies
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

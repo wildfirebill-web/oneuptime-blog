@@ -20,6 +20,7 @@ Never blindly detach or delete a volume. Run through these checks first.
 
 ```bash
 # From inside the instance: see what's mounted and where
+
 df -h
 lsblk
 

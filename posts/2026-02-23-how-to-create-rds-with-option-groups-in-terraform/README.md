@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # Custom option group for MySQL 8.0
+
 resource "aws_db_option_group" "mysql" {
   name                 = "custom-mysql80-options"
   engine_name          = "mysql"

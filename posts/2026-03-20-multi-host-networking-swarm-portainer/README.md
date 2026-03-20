@@ -1,4 +1,4 @@
-# How to Set Up Multi-Host Networking with Portainer and Docker Swarm
+# How to Set Up Multi-Host Networking with Portainer and Docker Swarm (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,7 +30,7 @@ Configure overlay networks for multi-host container communication in Docker Swar
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

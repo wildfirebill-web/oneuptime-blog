@@ -18,6 +18,7 @@ By default, Podman assigns IP addresses dynamically from the network's subnet po
 
 ```bash
 # Create a network with a defined subnet
+
 podman network create --subnet 10.50.0.0/24 --gateway 10.50.0.1 app-network
 
 # Assign a static IP to the container

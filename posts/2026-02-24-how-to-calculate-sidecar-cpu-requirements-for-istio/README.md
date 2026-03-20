@@ -47,6 +47,7 @@ Before calculating, measure what your sidecars are actually consuming:
 
 ```bash
 # CPU usage across all sidecar containers
+
 kubectl top pods --containers --all-namespaces | grep istio-proxy | sort -k4 -rn | head -20
 
 # Get Envoy's own CPU stats

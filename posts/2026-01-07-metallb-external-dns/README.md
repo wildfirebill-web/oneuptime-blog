@@ -79,6 +79,7 @@ This command checks if MetalLB pods are running in the metallb-system namespace:
 
 ```bash
 # Check MetalLB pods are running
+
 kubectl get pods -n metallb-system
 ```
 

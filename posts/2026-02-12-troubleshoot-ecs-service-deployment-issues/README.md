@@ -30,6 +30,7 @@ First, check the deployment status:
 
 ```bash
 # Get detailed deployment info for the service
+
 aws ecs describe-services \
   --cluster production \
   --services api-service \

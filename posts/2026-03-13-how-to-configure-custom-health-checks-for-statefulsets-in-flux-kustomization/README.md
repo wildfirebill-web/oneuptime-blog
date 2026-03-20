@@ -277,6 +277,7 @@ When a StatefulSet health check fails, investigate with these commands:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization database
 
 # Check StatefulSet rollout status

@@ -18,6 +18,7 @@ The key point is that state isolation is not the same as infrastructure isolatio
 
 ```hcl
 # When you switch workspaces, Terraform uses a different state file
+
 # The configuration stays the same - only the state changes
 terraform workspace new dev
 terraform workspace new staging

@@ -28,6 +28,7 @@ This guide provides practical examples and step-by-step procedures for using `ca
 
 ```bash
 # Lock the datastore to prevent changes during migration
+
 calicoctl datastore migrate lock
 ```
 

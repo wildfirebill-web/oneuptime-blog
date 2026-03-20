@@ -37,6 +37,7 @@ Istio's traffic mirroring sends a copy of every request to your shadow deploymen
 
 ```yaml
 # dark-launch/mirror-vs.yaml
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

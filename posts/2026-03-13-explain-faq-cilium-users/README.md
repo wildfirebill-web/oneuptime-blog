@@ -27,6 +27,7 @@ Cilium requires a minimum kernel version that varies by feature. The base requir
 
 ```bash
 # Check your kernel version
+
 uname -r
 
 # Check Cilium kernel requirements for your version

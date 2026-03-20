@@ -49,6 +49,7 @@ The `Chart.yaml` declares dependencies:
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: my-platform
 description: Umbrella chart for the full application stack

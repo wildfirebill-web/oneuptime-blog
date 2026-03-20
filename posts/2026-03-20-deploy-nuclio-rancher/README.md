@@ -1,8 +1,8 @@
-# How to Deploy Nuclio on Rancher
+# How to Deploy Nuclio on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, nuclio, serverless, kubernetes, real-time
+Tags: Rancher, Nuclio, Serverless, Kubernetes, Real-Time
 
 Description: Guide to deploying Nuclio high-performance serverless framework on Rancher for real-time data processing.
 
@@ -14,6 +14,7 @@ Nuclio is a high-performance serverless framework designed for real-time data pr
 
 ```bash
 # Add Nuclio Helm repository
+
 helm repo add nuclio https://nuclio.github.io/nuclio/charts
 helm repo update
 

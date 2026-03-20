@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, rsyslog, Syslog, Linux, Log Management
+Tags: IPv6, Rsyslog, Syslog, Linux, Log Management
 
 Description: Configure rsyslog to accept log messages from IPv6 sources, forward logs to IPv6 servers, and use RainerScript to filter and route IPv6 log traffic.
 
@@ -16,21 +16,22 @@ rsyslog is the default syslog daemon on many Linux distributions including RHEL,
 # /etc/rsyslog.conf or /etc/rsyslog.d/10-ipv6.conf
 
 # Load input modules
+
 module(load="imudp")
 module(load="imtcp")
 
-# UDP input — listen on all IPv6 interfaces
+# UDP input - listen on all IPv6 interfaces
 input(type="imudp"
       address="::1"
       port="514"
       name="udp-loopback")
 
-# UDP input — all interfaces (IPv4 and IPv6)
+# UDP input - all interfaces (IPv4 and IPv6)
 input(type="imudp"
       port="5140"
       name="udp-all")
 
-# TCP input — all IPv6 interfaces
+# TCP input - all IPv6 interfaces
 input(type="imtcp"
       address="::"
       port="5140"

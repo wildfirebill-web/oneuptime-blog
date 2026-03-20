@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DigitalOcean, IPv6, Droplet, Dual-Stack, Cloud, Networking
+Tags: DigitalOcean, IPv6, Droplets, Dual-Stack, Cloud, Networking
 
 Description: Configure IPv6 on DigitalOcean Droplets and Kubernetes clusters, including static IPv6 assignment and firewall rules.
 
@@ -14,6 +14,7 @@ DigitalOcean IPv6 Networking covers the provider-specific steps needed to enable
 
 ```bash
 # Example commands for DigitalOcean IPv6 Networking
+
 # Enable IPv6 networking at creation time or after
 # (Refer to provider-specific CLI or web console)
 echo "Enabling IPv6 for DigitalOcean IPv6 Networking"

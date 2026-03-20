@@ -42,6 +42,7 @@ Every storage account has a default access tier that applies to blobs uploaded w
 
 ```bash
 # Set the default access tier for the storage account to Cool
+
 az storage account update \
   --name mystorageaccount \
   --resource-group myresourcegroup \

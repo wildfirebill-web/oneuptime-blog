@@ -19,6 +19,7 @@ When IPv4 works but IPv6 doesn't, the issue is almost always in IPv6-specific co
 echo "=== IPv4 vs IPv6 Quick Comparison ==="
 
 # IPv4 check
+
 echo ""
 echo "IPv4:"
 IPV4=$(curl -4 -s --max-time 5 https://api4.my-ip.io/ip 2>/dev/null)

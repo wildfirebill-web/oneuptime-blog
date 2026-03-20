@@ -27,6 +27,7 @@ Set the expander in Cluster Autoscaler deployment:
 
 ```yaml
 # cluster-autoscaler-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

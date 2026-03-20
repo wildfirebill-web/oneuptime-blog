@@ -25,6 +25,7 @@ Key differences:
 
 ```bash
 # nftables is typically pre-installed on Ubuntu 20.04+
+
 sudo apt install -y nftables
 
 # Enable and start the service

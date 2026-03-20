@@ -107,6 +107,7 @@ For example, if your code does this:
 
 ```python
 # These two independent queries run sequentially - slow
+
 user = await fetch_user(user_id)
 orders = await fetch_orders(user_id)
 preferences = await fetch_preferences(user_id)

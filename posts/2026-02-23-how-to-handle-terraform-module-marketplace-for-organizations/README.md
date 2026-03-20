@@ -24,6 +24,7 @@ You have several options for hosting your module marketplace:
 
 ```hcl
 # Option 1: Terraform Cloud/Enterprise Private Registry
+
 # Modules are sourced directly from your private registry
 module "vpc" {
   source  = "app.terraform.io/myorg/vpc/aws"

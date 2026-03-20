@@ -53,6 +53,7 @@ Wait for feedback from maintainers before proceeding.
 
 ```bash
 # Fork the contrib repo on GitHub, then clone
+
 git clone https://github.com/YOUR_USERNAME/opentelemetry-python-contrib.git
 cd opentelemetry-python-contrib
 

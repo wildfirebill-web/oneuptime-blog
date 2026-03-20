@@ -30,6 +30,7 @@ Ensure image automation controllers are installed. They may not be included in m
 
 ```bash
 # Check if image automation is installed
+
 kubectl get deployment -n flux-system | grep -E "image-reflector|image-automation"
 
 # If not present, upgrade the Flux installation to include them

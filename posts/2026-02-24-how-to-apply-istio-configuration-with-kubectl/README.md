@@ -103,6 +103,7 @@ There's an important distinction between `kubectl apply` and `kubectl create`:
 
 ```bash
 # apply - creates the resource if it doesn't exist, updates it if it does
+
 kubectl apply -f virtual-service.yaml
 
 # create - only creates, fails if the resource already exists

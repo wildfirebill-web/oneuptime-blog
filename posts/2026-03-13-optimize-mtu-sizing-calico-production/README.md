@@ -26,6 +26,7 @@ When your network supports jumbo frames (MTU 9000):
 
 ```bash
 # Set host interface MTU to 9000
+
 ip link set eth0 mtu 9000
 
 # Make it persistent (example for NetworkManager)

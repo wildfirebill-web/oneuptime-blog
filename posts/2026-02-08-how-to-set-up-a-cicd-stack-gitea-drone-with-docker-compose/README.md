@@ -33,6 +33,7 @@ Generate a shared secret for Drone and Gitea:
 
 ```bash
 # Generate a random secret for RPC communication between Drone server and runners
+
 openssl rand -hex 16
 ```
 

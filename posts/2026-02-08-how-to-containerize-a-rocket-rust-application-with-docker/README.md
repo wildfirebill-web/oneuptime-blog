@@ -124,6 +124,7 @@ This multi-stage Dockerfile uses the dependency caching pattern:
 
 ```dockerfile
 # Stage 1: Build
+
 FROM rust:1.77-alpine AS build
 
 RUN apk add --no-cache musl-dev

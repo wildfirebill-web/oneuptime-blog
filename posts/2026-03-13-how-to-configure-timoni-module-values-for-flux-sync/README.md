@@ -53,6 +53,7 @@ Timoni accepts values in YAML format. Create a values file:
 
 ```yaml
 # values.yaml
+
 values:
   git:
     url: "https://github.com/your-org/fleet-infra.git"

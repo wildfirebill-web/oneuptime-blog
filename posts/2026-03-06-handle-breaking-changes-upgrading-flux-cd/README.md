@@ -29,6 +29,7 @@ Start by thoroughly reviewing release notes and upgrade guides.
 
 ```bash
 # List all releases between your version and the target
+
 gh release list --repo fluxcd/flux2 --limit 30
 
 # Download the upgrade guide for a specific version

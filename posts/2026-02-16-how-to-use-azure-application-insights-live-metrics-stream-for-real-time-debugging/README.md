@@ -75,6 +75,7 @@ For the Java agent, Live Metrics is enabled by default. No additional configurat
 
 ```python
 # Enable Live Metrics with the Azure Monitor OpenTelemetry exporter
+
 from azure.monitor.opentelemetry import configure_azure_monitor
 
 configure_azure_monitor(

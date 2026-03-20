@@ -55,6 +55,7 @@ from typing import Optional, Any
 import hashlib
 
 # Initialize Redis client
+
 redis_client = redis.Redis(
     host='localhost',
     port=6379,

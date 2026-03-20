@@ -121,6 +121,7 @@ Check the current cluster status to ensure there are no existing issues:
 
 ```bash
 # Display overall cluster health status
+
 # HEALTH_OK indicates the cluster is ready for expansion
 ceph health detail
 

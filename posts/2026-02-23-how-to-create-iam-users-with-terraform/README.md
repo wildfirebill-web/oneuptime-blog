@@ -18,6 +18,7 @@ This guide covers how to create IAM users with Terraform, including group member
 
 ```hcl
 # Basic IAM user
+
 resource "aws_iam_user" "developer" {
   name = "john.doe"
   path = "/developers/"

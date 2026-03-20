@@ -112,6 +112,7 @@ Check the release notes for the current list.
 
 ```bash
 # Check RHEL virtualization capabilities
+
 sudo virt-host-validate
 
 # Check libvirt version

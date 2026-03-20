@@ -39,6 +39,7 @@ This command uses the `crane` tool to fetch and display the manifest metadata fo
 
 ```bash
 # Show the manifest for nginx:1.27 without downloading gigabytes
+
 # Uses crane (go-containerregistry tool) to query registry directly
 # The jq filter extracts layer information showing media type and size
 $ crane manifest nginx:1.27 | jq '.layers[] | {mediaType, size}'

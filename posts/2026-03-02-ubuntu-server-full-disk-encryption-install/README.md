@@ -63,6 +63,7 @@ If you need to encrypt after the fact, you cannot encrypt the running root parti
 
 ```bash
 # Install cryptsetup if not present
+
 sudo apt install cryptsetup
 
 # Format the partition with LUKS (will destroy all data)

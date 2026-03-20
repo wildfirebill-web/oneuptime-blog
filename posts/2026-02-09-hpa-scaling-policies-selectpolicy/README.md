@@ -227,6 +227,7 @@ Different selectPolicy values for different time periods using multiple HPA reso
 
 ```yaml
 # Daytime HPA - aggressive scaling
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

@@ -183,13 +183,13 @@ resource "null_resource" "configure" {
 ## Troubleshooting
 
 **Connection timeout:**
-```
+```text
 Error: timeout - last error: dial tcp 1.2.3.4:22: i/o timeout
 ```
 Check security group rules and ensure port 22 is accessible.
 
 **Permission denied (publickey):**
-Verify the key pair and username are correct. The instance may not be fully booted yet — add `depends_on` or increase `timeout`.
+Verify the key pair and username are correct. The instance may not be fully booted yet - add `depends_on` or increase `timeout`.
 
 **Script failing silently:** Add `set -e` at the top of inline scripts to exit on first error.
 
@@ -197,7 +197,7 @@ Verify the key pair and username are correct. The instance may not be fully boot
 
 1. **Always add `set -e`** to inline scripts to catch failures
 2. **Use `on_failure = continue`** for destroy provisioners
-3. **Set a reasonable `timeout`** — default is 5 minutes which may be too short for slow connections
+3. **Set a reasonable `timeout`** - default is 5 minutes which may be too short for slow connections
 4. **Prefer user data** for bootstrapping that runs once at instance launch
 5. **Log output to a file** on the remote host for debugging: `command 2>&1 | tee /var/log/provision.log`
 

@@ -52,6 +52,7 @@ Start with manual checks to understand your current DNSSEC state:
 ```bash
 #!/bin/bash
 # dnssec-check-basic.sh
+
 # Basic DNSSEC validation check
 
 DOMAIN="${1:-example.com}"

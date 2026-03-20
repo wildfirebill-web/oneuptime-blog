@@ -33,6 +33,7 @@ The recommended way to install ESO is through the official Helm chart. Start by 
 
 ```bash
 # Add the External Secrets Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 
 # Update your local Helm chart cache

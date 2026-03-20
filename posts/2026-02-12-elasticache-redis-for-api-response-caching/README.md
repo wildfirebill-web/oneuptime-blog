@@ -47,6 +47,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Redis connection
+
 cache = redis.Redis(
     host='my-redis.abc123.ng.0001.use1.cache.amazonaws.com',
     port=6379,

@@ -114,6 +114,7 @@ Build the WASM module:
 
 ```bash
 # Install the WASM target for Rust
+
 rustup target add wasm32-unknown-unknown
 
 # Build the filter
@@ -297,7 +298,7 @@ clusters:
       "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
 ```
 
-## Resource Limits and Performance
+Resource Limits and Performance
 
 WASM filters run in a sandbox with resource limits. Configure these limits to prevent runaway filters from impacting Envoy:
 

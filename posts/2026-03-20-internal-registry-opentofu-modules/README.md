@@ -12,8 +12,9 @@ An internal module registry lets teams publish reusable OpenTofu modules, enforc
 
 ## Module Registry Protocol
 
-```
+```text
 # Service discovery
+
 GET /.well-known/terraform.json
 
 # List available versions for a module
@@ -261,4 +262,4 @@ jobs:
 
 ## Conclusion
 
-For most organizations, GitLab's built-in Terraform module registry provides the simplest path to an internal module registry — upload a `.tgz` archive via the Packages API and it becomes available via the familiar registry source syntax. For organizations without GitLab, implementing the Module Registry Protocol requires a service discovery endpoint, a versions endpoint returning JSON, and a download endpoint returning HTTP 204 with an `X-Terraform-Get` header pointing to the actual module archive URL.
+For most organizations, GitLab's built-in Terraform module registry provides the simplest path to an internal module registry - upload a `.tgz` archive via the Packages API and it becomes available via the familiar registry source syntax. For organizations without GitLab, implementing the Module Registry Protocol requires a service discovery endpoint, a versions endpoint returning JSON, and a download endpoint returning HTTP 204 with an `X-Terraform-Get` header pointing to the actual module archive URL.

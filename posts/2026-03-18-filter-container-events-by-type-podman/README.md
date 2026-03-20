@@ -20,6 +20,7 @@ Podman supports five event types, each corresponding to a different entity:
 
 ```bash
 # Container events - lifecycle of containers
+
 podman events --filter type=container
 
 # Image events - pull, push, remove, tag operations

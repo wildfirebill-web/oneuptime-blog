@@ -54,6 +54,7 @@ First, create a service principal that Prometheus will use to authenticate with 
 
 ```bash
 # Login to Azure CLI
+
 az login
 
 # Create service principal with Reader role

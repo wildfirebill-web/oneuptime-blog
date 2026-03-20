@@ -44,6 +44,7 @@ modules:
 
 ```yaml
 # prometheus.yml scrape config
+
 scrape_configs:
   - job_name: cdn_ipv6
     metrics_path: /probe
@@ -102,7 +103,7 @@ print(json.dumps(data['result']['totals'], indent=2))
 
 ```bash
 #!/bin/bash
-# monitor-cdn-ipv6.sh — Collect IPv6 CDN performance metrics
+# monitor-cdn-ipv6.sh - Collect IPv6 CDN performance metrics
 
 CDN_ENDPOINTS=(
   "https://cdn.example.com/"

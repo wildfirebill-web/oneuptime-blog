@@ -8,7 +8,7 @@ Description: Deploy MinIO distributed object storage on Rancher with multi-node 
 
 ## Introduction
 
-MinIO is a high-performance, S3-compatible object storage system. Deploying it on Rancher provides on-premises S3-compatible storage for ML artifacts, application backups, log archives, and media files—without the cost and data sovereignty concerns of cloud storage.
+MinIO is a high-performance, S3-compatible object storage system. Deploying it on Rancher provides on-premises S3-compatible storage for ML artifacts, application backups, log archives, and media files-without the cost and data sovereignty concerns of cloud storage.
 
 ## Step 1: Deploy MinIO with Helm
 
@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # minio-values.yaml
+
 mode: distributed    # Enable distributed mode for HA
 
 replicas: 4          # Minimum 4 for distributed mode

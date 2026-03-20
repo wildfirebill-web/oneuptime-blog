@@ -25,11 +25,12 @@ graph LR
 
 ```hcl
 # github_environments.tf
+
 resource "github_repository_environment" "dev" {
   repository  = var.infra_repo
   environment = "dev"
 
-  # No protection rules for dev — auto-deploy
+  # No protection rules for dev - auto-deploy
   deployment_branch_policy {
     protected_branches     = false
     custom_branch_policies = true
@@ -65,7 +66,7 @@ resource "github_repository_environment" "production" {
   }
 
   # Prevent auto-dismissal of approvals
-  # wait_timer = 0 means no wait — approval is required immediately
+  # wait_timer = 0 means no wait - approval is required immediately
 
   deployment_branch_policy {
     protected_branches     = true
@@ -117,7 +118,7 @@ jobs:
 ## Change Freeze Windows
 
 ```hcl
-# freeze_check.tf — custom approval policy based on calendar
+# freeze_check.tf - custom approval policy based on calendar
 resource "null_resource" "change_freeze_check" {
   count = var.environment == "production" ? 1 : 0
 
@@ -167,8 +168,8 @@ resource "null_resource" "change_freeze_check" {
 
 ## Best Practices
 
-- Require at least 2 approvers for production — a single approver can be pressured or unavailable.
-- Restrict production deployments to protected branches only — `protected_branches = true` in GitHub Environment.
-- Send Slack notifications when approvals are pending — reviewers shouldn't have to check GitHub manually.
+- Require at least 2 approvers for production - a single approver can be pressured or unavailable.
+- Restrict production deployments to protected branches only - `protected_branches = true` in GitHub Environment.
+- Send Slack notifications when approvals are pending - reviewers shouldn't have to check GitHub manually.
 - Implement change freeze windows (weekends, holidays) by adding a pre-apply check that validates business hours.
-- Log all approvals with GitHub's built-in deployment history — this creates an audit trail for change management processes.
+- Log all approvals with GitHub's built-in deployment history - this creates an audit trail for change management processes.

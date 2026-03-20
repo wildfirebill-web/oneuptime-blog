@@ -8,7 +8,7 @@ Description: Learn how to implement pull request-based infrastructure workflows 
 
 ---
 
-A PR-based infrastructure workflow makes every change visible, reviewed, and auditable. No direct `tofu apply` runs in production — all changes flow through pull requests with automated checks, plan output, and required approvals before merging triggers the apply.
+A PR-based infrastructure workflow makes every change visible, reviewed, and auditable. No direct `tofu apply` runs in production - all changes flow through pull requests with automated checks, plan output, and required approvals before merging triggers the apply.
 
 ## PR Workflow Overview
 
@@ -29,6 +29,7 @@ graph TD
 
 ```yaml
 # .github/workflows/infra-pr.yml
+
 name: Infrastructure PR
 on:
   pull_request:
@@ -105,7 +106,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## ${icon} Plan: ${{ matrix.environment }}\n\`\`\`\n${plan.substring(0, 60000)}\n\`\`\``
+              body: `## ${icon} Plan: ${{ matrix.environment }}\n```\n${plan.substring(0, 60000)}\n````
             });
 
       - name: Fail if plan errors
@@ -156,6 +157,6 @@ resource "github_repository_file" "pr_template" {
 
 - Use `concurrency` groups in GitHub Actions to cancel in-progress plan runs when new commits are pushed to the same PR.
 - Run plan with `-detailed-exitcode` to distinguish errors (exit 1) from changes (exit 2) from no-changes (exit 0).
-- Run security scanning (tfsec, Checkov) as a separate job before plan — these are fast and catch issues before spending time on planning.
-- Show cost estimates on every PR — teams make better decisions when the dollar impact is visible.
+- Run security scanning (tfsec, Checkov) as a separate job before plan - these are fast and catch issues before spending time on planning.
+- Show cost estimates on every PR - teams make better decisions when the dollar impact is visible.
 - Use matrix strategy to plan all environments in parallel and show the impact across all environments in one PR.

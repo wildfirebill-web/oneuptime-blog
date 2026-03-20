@@ -117,6 +117,7 @@ Before configuring shovels, enable the required plugins on all nodes.
 
 ```bash
 # Enable the shovel plugin (required)
+
 rabbitmq-plugins enable rabbitmq_shovel
 
 # Enable the management UI extension (recommended for visibility)

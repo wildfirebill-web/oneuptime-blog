@@ -75,6 +75,7 @@ This is the safer and more commonly used method.
 
 ```bash
 # Using BIND's dnssec-keygen
+
 dnssec-keygen -a ECDSAP256SHA256 -f KSK -n ZONE example.com
 
 # For RSA (if required)

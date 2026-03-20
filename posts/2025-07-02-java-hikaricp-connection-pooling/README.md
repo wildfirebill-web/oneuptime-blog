@@ -167,6 +167,7 @@ Configure HikariCP in `application.yml`:
 
 ```yaml
 # application.yml
+
 spring:
   datasource:
     # Connection URL

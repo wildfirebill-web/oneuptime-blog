@@ -36,6 +36,7 @@ Override CMD at runtime:
 ```bash
 docker run myimage script.py
 # Runs: python script.py
+
 ```
 
 Override ENTRYPOINT at runtime:

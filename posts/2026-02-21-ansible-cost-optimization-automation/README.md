@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # playbooks/find-idle-resources.yml
+
 # Identify and optionally remove unused cloud resources
 ---
 - name: Find idle resources

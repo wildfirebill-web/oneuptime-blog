@@ -1,4 +1,4 @@
-# How to Understand Mobile IPv6 Security with IPsec
+# How to Understand Mobile IPv6 Security with IPsec - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,11 +23,11 @@ RFC 6275 mandates IPsec for protecting Mobility Header messages (Binding Updates
 
 Four IPsec policies are needed for each MN-HA pair:
 
-```
-1. MN → HA: Outbound BUs (Mobility Header, proto 135) — ESP/AH
-2. HA → MN: Inbound BAs (Mobility Header, proto 135) — ESP/AH
-3. MN → HA: Outbound tunneled data — optional ESP
-4. HA → MN: Inbound tunneled data — optional ESP
+```text
+1. MN → HA: Outbound BUs (Mobility Header, proto 135) - ESP/AH
+2. HA → MN: Inbound BAs (Mobility Header, proto 135) - ESP/AH
+3. MN → HA: Outbound tunneled data - optional ESP
+4. HA → MN: Inbound tunneled data - optional ESP
 ```
 
 ## Manual IPsec Configuration (Testing Only)
@@ -36,6 +36,7 @@ Four IPsec policies are needed for each MN-HA pair:
 # ---- On the Mobile Node ----
 
 # SA for MN→HA BUs (outbound)
+
 ip xfrm state add \
   src 2001:db8:foreign::50 \
   dst 2001:db8:home::1 \
@@ -68,8 +69,8 @@ ip xfrm state add \
 
 strongSwan is the recommended IKEv2 implementation for MIPv6.
 
-```
-# /etc/strongswan.conf — MIPv6 Home Agent configuration
+```text
+# /etc/strongswan.conf - MIPv6 Home Agent configuration
 
 connections {
     mipv6-ha {
@@ -101,8 +102,8 @@ connections {
 }
 ```
 
-```
-# /etc/strongswan.conf — Mobile Node configuration
+```text
+# /etc/strongswan.conf - Mobile Node configuration
 
 connections {
     mipv6-mn {

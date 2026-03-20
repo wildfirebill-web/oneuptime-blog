@@ -45,6 +45,7 @@ Create a simple application deployment:
 
 ```yaml
 # app-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

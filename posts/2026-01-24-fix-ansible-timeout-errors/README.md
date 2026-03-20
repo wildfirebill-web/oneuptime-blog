@@ -48,6 +48,7 @@ fatal: [server01]: UNREACHABLE! => {
 
 ```bash
 # Test basic connectivity
+
 ping -c 3 10.0.0.5
 
 # Test SSH port

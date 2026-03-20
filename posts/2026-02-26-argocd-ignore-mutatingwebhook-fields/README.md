@@ -48,6 +48,7 @@ Before configuring ignore rules, you need to know exactly what the webhook is ad
 
 ```bash
 # View the diff for a specific application
+
 argocd app diff my-app
 
 # Get detailed diff output

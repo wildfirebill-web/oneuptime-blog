@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, Active-Backup, Primary Slave, Linux, Network Redundancy, IPv4, primary_reselect
+Tags: Bonding, Active-Backup, Primary Slave, Linux, Network Redundancy, IPv4, Primary_reselect
 
 Description: Learn how to configure the primary slave in Linux active-backup bonding to control which interface carries traffic normally, and how primary reselection behaves after link recovery.
 
@@ -14,6 +14,7 @@ In active-backup bonding, the primary slave is the preferred interface. It carri
 
 ```bash
 # Using /etc/network/interfaces (Debian)
+
 auto bond0
 iface bond0 inet static
   address 10.0.0.10
@@ -27,7 +28,7 @@ iface bond0 inet static
 
 ## Primary Reselect Modes
 
-```
+```sql
 always  - Reselect primary whenever it comes back up (default)
 better  - Reselect primary only if it has better speed/duplex than current
 failure - Only switch back to primary after current active slave fails

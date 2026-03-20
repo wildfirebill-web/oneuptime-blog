@@ -49,6 +49,7 @@ Apply the deny-all template to every namespace at creation time:
 
 ```yaml
 # Apply with each new namespace
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

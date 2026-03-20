@@ -51,6 +51,7 @@ flowchart TD
 
 ```bash
 # macOS
+
 brew install telepresence
 
 # Linux

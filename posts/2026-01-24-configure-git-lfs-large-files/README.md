@@ -38,6 +38,7 @@ Instead of storing the actual file content, Git LFS stores a small pointer file 
 
 ```bash
 # Using Homebrew
+
 brew install git-lfs
 
 # Initialize Git LFS for your user
@@ -432,15 +433,15 @@ Only track files that actually need LFS. Small images under 100KB can stay in re
 
 Add a note to your README:
 
-```markdown
+````markdown
 ## Git LFS
 
 This repository uses Git LFS. Install it before cloning:
 
-\`\`\`bash
+```bash
 brew install git-lfs  # macOS
 git lfs install
-\`\`\`
+```
 ```
 
 ### 4. Monitor Storage Usage
@@ -450,7 +451,7 @@ Most Git hosts have LFS bandwidth and storage limits:
 ```bash
 # Check what is using space
 git lfs ls-files -s | sort -k1 -h
-```
+````
 
 ### 5. Use .lfsconfig for Team Settings
 

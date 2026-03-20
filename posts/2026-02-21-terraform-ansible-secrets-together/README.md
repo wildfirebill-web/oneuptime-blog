@@ -14,6 +14,7 @@ Both Terraform and Ansible need secrets: API keys, database passwords, SSH keys,
 
 ```hcl
 # Terraform reads from Vault
+
 data "vault_generic_secret" "db" {
   path = "secret/data/production/database"
 }

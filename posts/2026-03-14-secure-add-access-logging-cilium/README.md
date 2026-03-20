@@ -40,6 +40,7 @@ flowchart LR
 
 ```bash
 # View existing access log configuration
+
 kubectl exec -n kube-system ds/cilium -- cilium config | grep -i "access-log\|proxy-access"
 
 # Check Hubble L7 flow visibility

@@ -24,6 +24,7 @@ GKE clusters version 1.24 and later include the Gateway Controller by default. E
 
 ```bash
 # Enable Gateway API on existing cluster
+
 gcloud container clusters update production-cluster \
   --gateway-api=standard \
   --region=us-central1

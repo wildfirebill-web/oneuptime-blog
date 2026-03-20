@@ -1,8 +1,8 @@
-# How to Configure Environment Snapshots in Portainer
+# How to Configure Environment Snapshots in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Snapshots, Environments, Monitoring, Edge
+Tags: Portainer, Snapshot, Environments, Monitoring, Edge
 
 Description: Configure Portainer environment snapshots to periodically capture the state of your environments for offline viewing and change tracking.
 
@@ -41,6 +41,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Set snapshot interval to 10 minutes
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -80,4 +81,4 @@ docker run portainer/agent:latest \
 
 ## Conclusion
 
-Environment snapshots are a core feature for observability, particularly for edge deployments with intermittent connectivity. Configure the interval based on your needs — more frequent for dynamic production environments, less frequent for stable edge devices.
+Environment snapshots are a core feature for observability, particularly for edge deployments with intermittent connectivity. Configure the interval based on your needs - more frequent for dynamic production environments, less frequent for stable edge devices.

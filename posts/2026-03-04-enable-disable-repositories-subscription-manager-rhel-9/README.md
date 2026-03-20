@@ -25,6 +25,7 @@ To see every repository your subscription provides access to:
 
 ```bash
 # List all repositories (enabled and disabled)
+
 sudo subscription-manager repos --list
 ```
 

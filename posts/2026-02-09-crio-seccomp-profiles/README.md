@@ -22,6 +22,7 @@ Enable seccomp profile support in CRI-O.
 
 ```toml
 # /etc/crio/crio.conf
+
 [crio.runtime]
 # Enable seccomp
 seccomp_profile = "/usr/share/containers/seccomp.json"

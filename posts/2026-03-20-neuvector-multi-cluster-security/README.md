@@ -8,7 +8,7 @@ Description: Set up NeuVector's multi-cluster federation to manage security poli
 
 ## Introduction
 
-As Kubernetes adoption grows, organizations typically manage multiple clusters — for development, staging, and production, or across regions. NeuVector's multi-cluster federation feature allows you to manage security policies from a single master cluster and push them to member clusters, ensuring consistent security posture across your entire fleet.
+As Kubernetes adoption grows, organizations typically manage multiple clusters - for development, staging, and production, or across regions. NeuVector's multi-cluster federation feature allows you to manage security policies from a single master cluster and push them to member clusters, ensuring consistent security posture across your entire fleet.
 
 ## Multi-Cluster Architecture
 
@@ -32,6 +32,7 @@ Enable federation on the master cluster:
 
 ```bash
 # In the master cluster - expose the federation API
+
 kubectl patch svc neuvector-service-federation-master \
   -n neuvector \
   --type merge \
@@ -82,7 +83,7 @@ curl -sk \
   -H "X-Auth-Token: ${MASTER_TOKEN}" | jq '.join_token'
 ```
 
-Save this token — you'll need it to join each member cluster.
+Save this token - you'll need it to join each member cluster.
 
 ## Step 3: Join Member Clusters
 

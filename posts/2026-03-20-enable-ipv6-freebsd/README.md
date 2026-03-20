@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, rc.conf, ifconfig, Network Configuration
+Tags: IPv6, FreeBSD, Rc.conf, ifconfig, Network Configuration
 
 Description: Learn how to enable IPv6 on FreeBSD, check the current IPv6 status, and configure interfaces for IPv6 using rc.conf and ifconfig.
 
@@ -10,6 +10,7 @@ Description: Learn how to enable IPv6 on FreeBSD, check the current IPv6 status,
 
 ```bash
 # Show all interfaces and their IPv6 addresses
+
 ifconfig -a | grep inet6
 
 # Show IPv6 on a specific interface

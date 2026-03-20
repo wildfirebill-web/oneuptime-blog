@@ -27,6 +27,7 @@ Your application needs to expose Prometheus metrics. Here is an example of commo
 
 ```yaml
 # Example application deployment with Prometheus annotations
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

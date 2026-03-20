@@ -40,6 +40,7 @@ The subnet must be at least /26 (64 addresses) for the Basic SKU and /26 for the
 
 ```bash
 # Check if AzureBastionSubnet exists in your VNet
+
 az network vnet subnet show \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

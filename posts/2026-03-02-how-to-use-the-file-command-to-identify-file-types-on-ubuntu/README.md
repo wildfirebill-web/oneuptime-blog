@@ -16,6 +16,7 @@ File extensions are unreliable. A file named `document.pdf` might actually be a 
 
 ```bash
 # Basic usage
+
 file document.pdf
 
 # Example output:

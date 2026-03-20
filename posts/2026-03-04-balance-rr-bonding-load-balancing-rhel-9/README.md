@@ -49,6 +49,7 @@ sequenceDiagram
 
 ```bash
 # Create a balance-rr bond with 100ms link monitoring
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
   bond.options "mode=balance-rr,miimon=100"
 ```

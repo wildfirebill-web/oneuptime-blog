@@ -43,6 +43,7 @@ The OpenTelemetry Collector's Prometheus receiver can scrape ArgoCD's metrics en
 
 ```yaml
 # OpenTelemetry Collector config for ArgoCD monitoring
+
 apiVersion: opentelemetry.io/v1beta1
 kind: OpenTelemetryCollector
 metadata:

@@ -22,6 +22,7 @@ Python's built-in `logging` module is the foundation for all logging in FastAPI.
 
 ```python
 # main.py
+
 import logging
 from fastapi import FastAPI
 

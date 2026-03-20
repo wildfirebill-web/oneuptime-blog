@@ -98,6 +98,7 @@ For Python applications using redis-py:
 import redis
 
 # CORRECT: Create a connection pool once and reuse it
+
 pool = redis.ConnectionPool(
     host='myredis.redis.cache.windows.net',
     port=6380,

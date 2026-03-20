@@ -14,6 +14,7 @@ BBR (Bottleneck Bandwidth and Round-trip propagation time) is a TCP congestion c
 
 ```bash
 # View the active congestion control algorithm
+
 sysctl net.ipv4.tcp_congestion_control
 # net.ipv4.tcp_congestion_control = cubic
 

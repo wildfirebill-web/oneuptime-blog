@@ -39,6 +39,7 @@ Deploy the External Secrets Operator in each managed cluster with its own Secret
 
 ```yaml
 # ApplicationSet to deploy ESO in each managed cluster
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

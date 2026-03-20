@@ -20,6 +20,7 @@ AKS Virtual Nodes use the Virtual Kubelet to schedule pods to Azure Container In
 
 ```hcl
 # Dedicated subnet for ACI (Virtual Nodes) - must be delegated to ACI
+
 resource "azurerm_subnet" "aci" {
   name                 = "aci-subnet"
   resource_group_name  = var.resource_group_name
@@ -205,4 +206,4 @@ kubectl get pods -o wide | grep virtual-node
 
 ## Conclusion
 
-Virtual Nodes are best suited for stateless, batch, or burst workloads—ACI doesn't support persistent volumes, DaemonSets, or many Kubernetes primitives. Pods on Virtual Nodes start in 10-15 seconds versus 3-5 minutes for new VM nodes, making them ideal for queue-based workloads with KEDA. ACI pricing is per-second based on vCPU and memory, which is cost-effective for short-lived workloads but more expensive than VMs for continuously running workloads. Use pod priority and affinity to schedule critical production pods on VM nodes first, only spilling to Virtual Nodes during bursts.
+Virtual Nodes are best suited for stateless, batch, or burst workloads-ACI doesn't support persistent volumes, DaemonSets, or many Kubernetes primitives. Pods on Virtual Nodes start in 10-15 seconds versus 3-5 minutes for new VM nodes, making them ideal for queue-based workloads with KEDA. ACI pricing is per-second based on vCPU and memory, which is cost-effective for short-lived workloads but more expensive than VMs for continuously running workloads. Use pod priority and affinity to schedule critical production pods on VM nodes first, only spilling to Virtual Nodes during bursts.

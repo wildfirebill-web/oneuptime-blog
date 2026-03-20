@@ -59,6 +59,7 @@ The most straightforward case. Someone committed a change to the Git repository 
 
 ```bash
 # Check what changed in Git
+
 argocd app diff my-app
 
 # Example output shows what would change during sync

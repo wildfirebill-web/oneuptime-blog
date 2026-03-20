@@ -24,6 +24,7 @@ This is the recommended method for Ubuntu systems.
 
 ```bash
 # Update package list and install required packages
+
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
 ```

@@ -37,6 +37,7 @@ When your disk is full, follow these steps in order:
 
 ```bash
 # Check disk usage
+
 df -h
 
 # Find largest files in PostgreSQL data directory

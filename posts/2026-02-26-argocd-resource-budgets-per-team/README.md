@@ -36,6 +36,7 @@ Start with an agreement on how much of the cluster each team gets. This is typic
 
 ```yaml
 # team-budgets.yaml (documentation file in Git)
+
 # Team Alpha: 3 applications, moderate traffic
 #   CPU: 20 cores request, 40 cores limit
 #   Memory: 40Gi request, 80Gi limit

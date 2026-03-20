@@ -1,4 +1,4 @@
-# How to Coordinate OpenTofu and Ansible in CI/CD Pipelines
+# How to Coordinate OpenTofu and Ansible in CI/CD Pipelines - Pipelines
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Combining OpenTofu (infrastructure provisioning) and Ansible (configuration mana
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy Infrastructure
 
 on:

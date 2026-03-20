@@ -8,7 +8,7 @@ Description: Learn how to use the distinct function in OpenTofu to remove duplic
 
 ## Introduction
 
-When working with infrastructure configurations, you often encounter lists with duplicate values — from merged variable inputs, combined data source results, or constructed lists that may repeat entries. OpenTofu's `distinct` function removes duplicates, keeping only the first occurrence of each value.
+When working with infrastructure configurations, you often encounter lists with duplicate values - from merged variable inputs, combined data source results, or constructed lists that may repeat entries. OpenTofu's `distinct` function removes duplicates, keeping only the first occurrence of each value.
 
 ## Basic Usage
 
@@ -16,6 +16,7 @@ The `distinct` function takes a list and returns a new list with all duplicate e
 
 ```hcl
 # Remove duplicate availability zones from a combined list
+
 locals {
   all_azs     = ["us-east-1a", "us-east-1b", "us-east-1a", "us-east-1c", "us-east-1b"]
   unique_azs  = distinct(local.all_azs)
@@ -54,7 +55,7 @@ resource "aws_instance" "app" {
 
 ## Deduplicating Tags from Multiple Sources
 
-Tags often come from multiple sources — account-level defaults, team defaults, and resource-specific tags. Using `distinct` on the keys prevents duplicate tag keys.
+Tags often come from multiple sources - account-level defaults, team defaults, and resource-specific tags. Using `distinct` on the keys prevents duplicate tag keys.
 
 ```hcl
 variable "global_tags" {
@@ -141,4 +142,4 @@ locals {
 
 ## Conclusion
 
-The `distinct` function is a lightweight but valuable tool in OpenTofu. Pair it with `concat`, `flatten`, and `toset` to build robust data pipelines that handle real-world messiness — duplicate entries from merged configurations, multi-source data, and user-provided variables.
+The `distinct` function is a lightweight but valuable tool in OpenTofu. Pair it with `concat`, `flatten`, and `toset` to build robust data pipelines that handle real-world messiness - duplicate entries from merged configurations, multi-source data, and user-provided variables.

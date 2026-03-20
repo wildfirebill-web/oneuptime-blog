@@ -46,6 +46,7 @@ spec:
 oc apply -f hugepages-mco.yaml
 oc get machineconfigpool worker -w
 # Wait for all workers to complete - this triggers rolling reboots
+
 ```
 
 ## Step 3: Apply VPP SCC

@@ -69,6 +69,7 @@ The `organization` field is required and tells Terraform which HCP Terraform org
 
 ```bash
 # Set organization via environment variable
+
 export TF_CLOUD_ORGANIZATION="acme-corp"
 ```
 

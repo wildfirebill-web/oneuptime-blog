@@ -32,6 +32,7 @@ Each subdirectory with its own `fleet.yaml` becomes a separate bundle.
 
 ```yaml
 # gitrepo-root.yaml - Deploy all directories from root
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -72,7 +73,7 @@ spec:
 
 ### Monorepo with Multiple Applications
 
-```
+```text
 platform-configs/
 ├── apps/
 │   ├── frontend/
@@ -107,7 +108,7 @@ spec:
 
 ### Environment-Specific Paths
 
-```
+```text
 k8s-configs/
 ├── base/                     # Common resources
 │   ├── fleet.yaml
@@ -209,7 +210,7 @@ EOF
 
 Fleet processes nested directories independently when they have their own `fleet.yaml`:
 
-```
+```text
 my-app/
 ├── fleet.yaml          # Top-level bundle config
 ├── deployment.yaml
@@ -257,4 +258,4 @@ kubectl describe bundle my-app-apps-frontend -n fleet-default
 
 ## Conclusion
 
-Fleet bundle paths give you fine-grained control over how your Git repository is organized and deployed. A well-designed path structure separates concerns clearly — different applications, environments, and infrastructure components each get their own bundle with independent targeting and lifecycle management. By combining GitRepo path configurations with nested `fleet.yaml` files and `.fleetignore` exclusions, you can build a scalable repository structure that cleanly maps to your deployment requirements.
+Fleet bundle paths give you fine-grained control over how your Git repository is organized and deployed. A well-designed path structure separates concerns clearly - different applications, environments, and infrastructure components each get their own bundle with independent targeting and lifecycle management. By combining GitRepo path configurations with nested `fleet.yaml` files and `.fleetignore` exclusions, you can build a scalable repository structure that cleanly maps to your deployment requirements.

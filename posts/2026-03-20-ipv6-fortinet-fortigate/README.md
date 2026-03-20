@@ -14,6 +14,7 @@ Fortinet FortiGate firewalls support full IPv6 including static and dynamic addr
 
 ```bash
 # Via FortiGate CLI
+
 config system interface
     edit "wan1"
         set ip6 2001:db8:isp::2/64

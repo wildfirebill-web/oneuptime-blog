@@ -70,6 +70,7 @@ Pull and run the DynamoDB Local container with this command, which maps port 800
 
 ```bash
 # Pull the official Amazon DynamoDB Local image
+
 docker pull amazon/dynamodb-local
 
 # Run DynamoDB Local with in-memory storage (data lost on restart)

@@ -32,7 +32,7 @@ The standard IPv6 header contains:
 
 In most IoT traffic, Traffic Class = 0 and Flow Label = 0. IPHC can elide (completely omit) both fields:
 
-```
+```text
 Original: Version(4b) + TC(8b) + Flow Label(20b) = 32 bits = 4 bytes
 IPHC:     If TC=0 and FL=0, both are elided → 0 bytes
 Savings:  4 bytes
@@ -42,7 +42,7 @@ Savings:  4 bytes
 
 Common next headers (UDP=17, TCP=6, ICMPv6=58) can be compressed using a single bit indicating "use NHC" (Next Header Compression):
 
-```
+```text
 Original: Next Header field = 1 byte (e.g., 0x11 for UDP)
 IPHC:     "TF" bit + NHC header = 1 byte total for common protocols
 ```
@@ -51,7 +51,7 @@ IPHC:     "TF" bit + NHC header = 1 byte total for common protocols
 
 Hop limit can be compressed to one of three common values using a 2-bit field:
 
-```
+```text
 00: Hop limit is inline (not compressed)
 01: Hop limit = 1 (elided)
 10: Hop limit = 64 (elided, most common)
@@ -63,7 +63,7 @@ Savings: 1 byte for common values
 
 Address compression is the biggest win. IPHC uses context information (the shared prefix) to elide address bytes:
 
-```
+```text
 Stateless compression modes:
 - "Fully elided" (SAC=0, SAM=11): Source = link-local from IID (0 bytes inline)
 - "16-bit inline" (SAC=0, SAM=10): Source = prefix + 16-bit short address (2 bytes)
@@ -78,7 +78,7 @@ Stateful compression (with context):
 
 A typical sensor-to-gateway UDP packet:
 
-```
+```text
 Uncompressed IPv6+UDP headers: 40 + 8 = 48 bytes
 
 With IPHC compression:
@@ -101,6 +101,7 @@ Savings: 41-44 bytes (87-92% compression)
 
 ```bash
 # Capture 6LoWPAN frames on a Linux 802.15.4 interface
+
 sudo tcpdump -i lowpan0 -v
 
 # Alternatively, use Wireshark with 6LoWPAN dissector
@@ -114,9 +115,9 @@ sudo tcpdump -i lowpan0 -v
 
 ## Compression Context
 
-Stateful IPHC uses "contexts" — shared prefix knowledge — for maximum compression:
+Stateful IPHC uses "contexts" - shared prefix knowledge - for maximum compression:
 
-```
+```text
 Context 0: fe80::/64 (always available for link-local)
 Context 1: prefix assigned by border router (e.g., 2001:db8:mesh:1::/64)
 

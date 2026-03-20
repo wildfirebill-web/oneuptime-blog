@@ -41,6 +41,7 @@ Add `directory.recurse: true` to your Application spec:
 
 ```yaml
 # argocd-app-recursive.yaml - Enable recursive directory scanning
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

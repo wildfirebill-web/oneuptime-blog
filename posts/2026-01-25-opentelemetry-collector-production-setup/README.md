@@ -52,6 +52,7 @@ Here is a production-ready collector configuration that covers common requiremen
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

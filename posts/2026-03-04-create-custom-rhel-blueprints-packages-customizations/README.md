@@ -16,6 +16,7 @@ A complete blueprint with all customization types:
 
 ```toml
 # full-server.toml
+
 name = "full-server"
 description = "Fully customized RHEL server image"
 version = "2.0.0"

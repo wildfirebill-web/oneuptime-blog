@@ -20,6 +20,7 @@ Install libvirt and related tools:
 
 ```bash
 # On Ubuntu/Debian
+
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients \
   virtinst bridge-utils virt-manager
 

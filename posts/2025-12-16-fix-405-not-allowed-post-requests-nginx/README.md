@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, HTTP Methods, POST Requests, Static Files, Configuration
+Tags: Nginx, Troubleshooting, HTTP Methods, POST Requests, Static Files, Configuration
 
 Description: A comprehensive guide to diagnosing and fixing HTTP 405 Not Allowed errors for POST requests in Nginx, covering static file handling, proxy configurations, and WebDAV scenarios.
 
@@ -45,6 +45,7 @@ When Nginx should forward POST requests to a backend but is instead trying to se
 
 ```nginx
 # This will fail for POST requests
+
 location /api {
     root /var/www/html;  # Wrong - trying to serve static files
 }

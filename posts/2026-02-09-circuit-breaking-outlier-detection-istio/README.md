@@ -173,6 +173,7 @@ Query Prometheus for ejection events:
 
 ```promql
 # Active ejections by service
+
 sum by (cluster_name) (envoy_cluster_outlier_detection_ejections_active)
 
 # Ejection rate over time

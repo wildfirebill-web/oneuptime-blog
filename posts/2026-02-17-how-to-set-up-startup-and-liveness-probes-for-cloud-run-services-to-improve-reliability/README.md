@@ -43,6 +43,7 @@ The most flexible way to set up probes is through a service YAML file. Here is a
 
 ```yaml
 # service.yaml - Cloud Run service with startup and liveness probes
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

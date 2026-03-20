@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Workspaces, Environment, DevOps
+Tags: Terraform, State Management, Workspaces, Environments, DevOps
 
 Description: Understand the differences between Terraform workspaces and environment-based state separation, and when to use each approach for managing multiple environments.
 
@@ -20,6 +20,7 @@ Terraform workspaces let you maintain multiple state files within a single confi
 
 ```bash
 # List existing workspaces (default always exists)
+
 terraform workspace list
 # * default
 

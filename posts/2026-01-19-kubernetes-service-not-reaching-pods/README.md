@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # List pods with labels
+
 kubectl get pods -l app=myapp -o wide
 
 # Check pod status

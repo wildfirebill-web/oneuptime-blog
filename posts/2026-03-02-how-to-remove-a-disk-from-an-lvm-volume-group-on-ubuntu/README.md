@@ -18,6 +18,7 @@ Check current state:
 
 ```bash
 # See all PVs and their usage
+
 sudo pvs
 
 # See VG free space

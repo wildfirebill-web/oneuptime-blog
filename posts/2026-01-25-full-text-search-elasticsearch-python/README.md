@@ -26,6 +26,7 @@ pip install elasticsearch==8.11.0
 
 ```python
 # elasticsearch_client.py
+
 # Elasticsearch connection setup
 from elasticsearch import Elasticsearch
 from typing import Optional

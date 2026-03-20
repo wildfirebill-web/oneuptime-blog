@@ -22,6 +22,7 @@ Deploy PostgreSQL in two clusters with streaming replication:
 
 ```yaml
 # cluster-a/postgres-primary.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

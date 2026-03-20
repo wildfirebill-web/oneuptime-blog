@@ -1,4 +1,4 @@
-# How to Configure AppArmor Profiles for Containers in Portainer
+# How to Configure AppArmor Profiles for Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ AppArmor (Application Armor) is a Linux Security Module that restricts program c
 
 ```bash
 # Check if AppArmor is enabled and docker-default profile is loaded
+
 sudo apparmor_status | grep docker
 
 # Expected output:
@@ -32,7 +33,7 @@ Docker automatically applies the `docker-default` profile, which:
 
 Create a stricter profile for a web application that only needs to serve files:
 
-```
+```text
 # /etc/apparmor.d/docker-my-api
 #include <tunables/global>
 
@@ -100,9 +101,9 @@ The profile must be loaded on the Docker host before starting the container.
 
 ## AppArmor Complain Mode for Testing
 
-Use complain mode to log violations without blocking — useful for discovering what a profile would block:
+Use complain mode to log violations without blocking - useful for discovering what a profile would block:
 
-```
+```text
 # Set complain mode during development:
 profile docker-my-api flags=(attach_disconnected,mediate_deleted,complain) {
   # ... profile rules

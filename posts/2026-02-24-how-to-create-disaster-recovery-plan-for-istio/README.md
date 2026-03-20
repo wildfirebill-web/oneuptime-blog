@@ -41,6 +41,7 @@ A complete Istio DR plan has these sections:
 echo "=== Istio Backup Checklist ==="
 
 # IstioOperator or Helm values
+
 echo "1. Installation configuration:"
 kubectl get istiooperators -n istio-system -o yaml > backup/istiooperator.yaml
 echo "   Saved istiooperator.yaml"

@@ -63,6 +63,7 @@ First, identify which filesystems are mounted as read-only.
 
 ```bash
 # Display all mounted filesystems and their options
+
 # Look for 'ro' (read-only) vs 'rw' (read-write) in the output
 mount | grep -E '(^/dev|type (ext4|xfs|btrfs))'
 ```

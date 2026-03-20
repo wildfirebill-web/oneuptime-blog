@@ -18,6 +18,7 @@ Run VictoriaMetrics single-node with Docker:
 
 ```bash
 # Start VictoriaMetrics with 30-day retention
+
 docker run -d \
   --name victoriametrics \
   -p 8428:8428 \

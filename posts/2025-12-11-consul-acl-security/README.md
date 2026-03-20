@@ -91,6 +91,7 @@ Initialize ACL and get the bootstrap token.
 
 ```bash
 # Bootstrap ACL - do this only once
+
 consul acl bootstrap
 
 # Output:

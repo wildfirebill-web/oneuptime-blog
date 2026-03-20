@@ -22,6 +22,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Taiga
+
 version: "3.8"
 
 x-environment: &default-back-environment
@@ -135,7 +136,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 POSTGRES_PASSWORD=your-postgres-password
 TAIGA_SECRET_KEY=your-secret-key-min-32-chars
 TAIGA_DOMAIN=taiga.yourdomain.com

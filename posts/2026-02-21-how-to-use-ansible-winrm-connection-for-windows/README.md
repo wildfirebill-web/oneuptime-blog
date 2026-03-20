@@ -16,6 +16,7 @@ Before you start, you need a few things on the Ansible control node:
 
 ```bash
 # Install the pywinrm library (required for WinRM connections)
+
 pip install pywinrm
 
 # Install pywinrm with Kerberos support (for domain environments)

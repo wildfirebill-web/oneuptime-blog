@@ -42,6 +42,7 @@ If your RDS instance is in a private subnet (which it should be), you need a VPC
 
 ```bash
 # Create a security group for QuickSight VPC connection
+
 aws ec2 create-security-group \
   --group-name quicksight-vpc-sg \
   --description "Security group for QuickSight VPC connection" \

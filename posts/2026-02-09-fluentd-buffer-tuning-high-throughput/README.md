@@ -327,6 +327,7 @@ Query Prometheus for buffer metrics:
 
 ```promql
 # Buffer queue length
+
 fluentd_output_status_queue_size
 
 # Buffer retry count

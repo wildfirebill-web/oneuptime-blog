@@ -33,6 +33,7 @@ Get HAProxy running in TCP mode with a minimal configuration.
 
 ```bash
 # Create a directory for HAProxy configuration
+
 mkdir -p /opt/haproxy
 
 # Start HAProxy with a bind-mounted configuration file

@@ -90,6 +90,7 @@ Configure sharding rules in your application properties:
 
 ```yaml
 # application.yml
+
 spring:
   shardingsphere:
     # Define data sources

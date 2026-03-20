@@ -24,7 +24,7 @@ ARP requests are sent to the **broadcast MAC address** (`ff:ff:ff:ff:ff:ff`). Ev
 
 ## Example: ARP Confined to One Subnet
 
-```
+```text
 Network Diagram:
 
 [192.168.1.0/24]   Router   [192.168.2.0/24]
@@ -33,14 +33,14 @@ Network Diagram:
 ```
 
 - Host A can ARP for Host B (same broadcast domain)
-- Host A **cannot** ARP for Host C (different subnet — router in the way)
+- Host A **cannot** ARP for Host C (different subnet - router in the way)
 - To reach Host C, Host A sends traffic to the router's MAC (default gateway)
 
 ## ARP and VLAN Boundaries
 
 VLANs create separate broadcast domains on the same physical switch. ARP from VLAN 10 never reaches VLAN 20:
 
-```
+```text
 VLAN 10 (192.168.10.0/24)  |  VLAN 20 (192.168.20.0/24)
   PC-A: 192.168.10.10       |    PC-C: 192.168.20.10
   PC-B: 192.168.10.20       |    PC-D: 192.168.20.20
@@ -78,6 +78,7 @@ broadcast_domain_info('10.0.0.0/22')
 
 ```bash
 # Verify you cannot ARP across subnets (different broadcast domain)
+
 # On Host A (192.168.1.10), try to ARP for 192.168.2.20
 arping -I eth0 192.168.2.20
 # Should fail (no reply) because router blocks ARP broadcasts

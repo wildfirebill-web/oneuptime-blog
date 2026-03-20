@@ -144,6 +144,7 @@ Confirm monitoring is operational:
 
 ```bash
 # Check Felix metrics endpoint
+
 kubectl get pods -n calico-system -l k8s-app=calico-node -o wide
 curl -s http://<calico-node-ip>:9091/metrics | head -20
 

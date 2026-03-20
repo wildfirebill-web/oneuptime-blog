@@ -80,6 +80,7 @@ Here is an example production inventory file:
 
 ```yaml
 # inventories/production/hosts.yml
+
 # Define all production hosts grouped by function
 all:
   children:

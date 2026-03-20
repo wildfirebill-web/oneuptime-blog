@@ -57,6 +57,7 @@ Here is how to model these zones in your Ansible inventory:
 
 ```ini
 # inventory/hosts.ini - Network zone-based inventory
+
 [dmz]
 web01 ansible_host=10.1.1.10
 web02 ansible_host=10.1.1.11

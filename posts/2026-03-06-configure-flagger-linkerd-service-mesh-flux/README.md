@@ -29,6 +29,7 @@ Start by bootstrapping Flux into your cluster. This installs the Flux controller
 
 ```bash
 # Bootstrap Flux with your GitHub repository
+
 flux bootstrap github \
   --owner=your-org \
   --repository=fleet-infra \

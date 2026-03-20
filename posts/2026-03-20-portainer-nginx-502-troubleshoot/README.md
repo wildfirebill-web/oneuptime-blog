@@ -1,4 +1,4 @@
-# How to Troubleshoot 502 Bad Gateway Errors with Nginx and Portainer
+# How to Troubleshoot 502 Bad Gateway Errors with Nginx and Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ The most common cause of 502 is the backend simply not running:
 
 ```bash
 # Check Portainer container status
+
 docker ps | grep portainer
 
 # If stopped, check why it stopped
@@ -105,7 +106,7 @@ location / {
 }
 ```
 
-```
+```text
 # In Nginx Proxy Manager GUI:
 # If Portainer uses HTTP port 9000:
 #   Scheme: http, Forward Port: 9000
@@ -159,7 +160,7 @@ location / {
 }
 ```
 
-```
+```text
 # In Nginx Proxy Manager:
 # Details tab: "Websockets Support" checkbox must be ON
 ```

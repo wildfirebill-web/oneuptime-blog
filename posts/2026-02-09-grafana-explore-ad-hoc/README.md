@@ -24,6 +24,7 @@ For Prometheus, start with a simple query to see current values:
 
 ```promql
 # Check current CPU usage across all nodes
+
 node_cpu_seconds_total
 
 # View HTTP request rate for the last 5 minutes

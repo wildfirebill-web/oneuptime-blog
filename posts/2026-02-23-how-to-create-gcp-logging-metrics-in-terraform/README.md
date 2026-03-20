@@ -33,6 +33,7 @@ variable "project_id" { type = string }
 
 ```hcl
 # Count error log entries
+
 resource "google_logging_metric" "error_count" {
   name        = "error-log-count"
   description = "Count of error-level log entries"

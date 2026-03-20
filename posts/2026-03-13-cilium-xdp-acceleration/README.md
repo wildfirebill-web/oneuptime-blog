@@ -27,6 +27,7 @@ This guide covers enabling Cilium XDP acceleration, verifying it is active on th
 
 ```bash
 # Check if NIC supports native XDP
+
 kubectl debug node/worker-0 -it --image=nicolaka/netshoot
 
 # Inside node debug pod:

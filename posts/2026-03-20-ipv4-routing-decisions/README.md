@@ -30,6 +30,7 @@ The kernel first checks if the destination IP is assigned to a local interface:
 ```bash
 ip route show table local
 # Shows all local IPs (loopback + all interface addresses)
+
 ```
 
 If the destination matches, the packet is delivered locally (no routing needed).
@@ -38,7 +39,7 @@ If the destination matches, the packet is delivered locally (no routing needed).
 
 The routing table is searched for the entry with the **most specific match** (longest prefix). The longer the prefix length, the more specific the match:
 
-```
+```text
 Routing table:
   0.0.0.0/0        via 192.168.1.1   (default, matches everything)
   10.0.0.0/8       via 10.0.0.254    (/8, matches 10.x.x.x)
@@ -80,7 +81,7 @@ print(f"Best route: {result[0]} via {result[1]}")
 
 When two routes have the **same prefix length**, the route with the **lower metric** wins:
 
-```
+```text
 10.0.0.0/24 via 192.168.1.254 metric 100  ← preferred
 10.0.0.0/24 via 192.168.2.254 metric 200
 ```
@@ -124,7 +125,7 @@ ip route get 10.1.1.50
 
 ## Key Takeaways
 
-- Routing uses **longest prefix match** — the most specific route wins.
+- Routing uses **longest prefix match** - the most specific route wins.
 - When prefix lengths tie, the **lowest metric** wins.
 - Equal metrics with same prefix enable ECMP load balancing.
 - `ip route get DEST` shows the exact next-hop and source IP Linux will use.

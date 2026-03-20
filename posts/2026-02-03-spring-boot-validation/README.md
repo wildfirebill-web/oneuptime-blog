@@ -1102,6 +1102,7 @@ Configure validation settings in your application properties:
 
 ```yaml
 # application.yml
+
 spring:
   mvc:
     # Throw exception when path variable validation fails

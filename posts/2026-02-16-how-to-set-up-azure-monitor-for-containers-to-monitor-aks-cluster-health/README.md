@@ -39,6 +39,7 @@ The simplest approach is to enable monitoring when you create the cluster:
 
 ```bash
 # Create an AKS cluster with Container Insights enabled
+
 az aks create \
     --resource-group "aks-rg" \
     --name "my-aks-cluster" \

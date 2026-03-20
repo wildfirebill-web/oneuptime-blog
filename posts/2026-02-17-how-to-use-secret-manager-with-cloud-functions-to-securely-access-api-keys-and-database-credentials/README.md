@@ -30,6 +30,7 @@ First, enable the API and create some secrets:
 
 ```bash
 # Enable Secret Manager API
+
 gcloud services enable secretmanager.googleapis.com
 
 # Create a secret for your database password

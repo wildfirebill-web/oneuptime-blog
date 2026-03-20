@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Proxy Protocol, Load Balancing, HAProxy, NGINX, TCP, Client IP
+Tags: Networking, Proxy Protocol, Load Balancing, HAProxy, Nginx, TCP, Client IP
 
 Description: Learn how to configure Proxy Protocol to preserve client IP addresses through load balancers and proxies. This guide covers HAProxy, NGINX, and AWS ELB configurations with practical examples.
 
@@ -107,6 +107,7 @@ backend http_back
     server app2 10.0.2.11:8080 check
 
 # Frontend that accepts both proxy protocol and direct connections
+
 frontend mixed_front
     # Port 443 expects Proxy Protocol
     bind *:443 accept-proxy

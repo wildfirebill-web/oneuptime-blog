@@ -41,6 +41,7 @@ Enable soft delete on your registry and set the retention period.
 
 ```bash
 # Enable soft delete with a 14-day retention period
+
 az acr config soft-delete update \
   --registry myRegistry \
   --status Enabled \

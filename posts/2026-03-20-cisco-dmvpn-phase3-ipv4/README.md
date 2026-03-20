@@ -12,7 +12,7 @@ DMVPN Phase 3 improves on Phase 2 by allowing the hub to advertise summarized ro
 
 ## Differences Between Phases
 
-```
+```text
 Phase 1: All traffic through hub (no spoke-to-spoke)
 Phase 2: Spoke-to-spoke tunnels, but hub cannot summarize routes
 Phase 3: Spoke-to-spoke tunnels + hub CAN summarize routes
@@ -74,7 +74,7 @@ router eigrp 100
 
 ## Phase 3 Traffic Flow
 
-```
+```text
 1. Spoke A has a summary route (10.100.0.0/24) via Hub
 2. Spoke A sends to Spoke B (10.100.0.3) via Hub
 3. Hub receives packet, sends NHRP Redirect to Spoke A
@@ -102,10 +102,10 @@ show dmvpn detail | include Type|NBMA
 
 ## Hierarchical DMVPN
 
-```
+```text
 Phase 3 enables hierarchical DMVPN:
   Tier 1 Hub  (regional hub)
-    Tier 2 Hub  (area hub — also a spoke to Tier 1)
+    Tier 2 Hub  (area hub - also a spoke to Tier 1)
       Spokes  (branch offices)
 
 Each level peers NHRP with its NHS (Next Hop Server),

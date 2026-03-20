@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, HAProxy, PROXY Protocol, Client IP, Load Balancer
+Tags: IPv6, HAProxy, Proxy Protocol, Client IP, Load Balancer
 
 Description: Learn how to configure the PROXY protocol in HAProxy for IPv6 connections to preserve client IP addresses through multiple proxy layers, including sending and receiving PROXY protocol headers.
 
@@ -10,7 +10,7 @@ Description: Learn how to configure the PROXY protocol in HAProxy for IPv6 conne
 
 The PROXY protocol prepends a header to TCP connections containing the original client's IP and port. This allows backend services to see the real client IPv6 address even after multiple proxy hops.
 
-```
+```text
 Client (2001:db8::client:1234) → HAProxy → Backend
 Without PROXY: Backend sees HAProxy's IPv6 address
 With PROXY: Backend sees "PROXY TCP6 2001:db8::client 2001:db8::haproxy 1234 8080"
@@ -40,8 +40,9 @@ frontend https_front
 
 ## PROXY Protocol v1 Format for IPv6
 
-```
+```text
 # PROXY protocol v1 line format:
+
 # PROXY TCP6 <client-ipv6> <proxy-ipv6> <client-port> <proxy-port>\r\n
 
 # Example:

@@ -19,6 +19,7 @@ Using the FQDN of the domain controller (`dc01.corp.example.com`) rather than an
 
 ```bash
 # CORRECT: Using FQDN with LDAPS
+
 # The AD SSL cert is issued to dc01.corp.example.com
 # TLS validation succeeds because hostname matches the cert
 curl -X PUT https://localhost:9443/api/settings \
@@ -40,9 +41,9 @@ curl -X PUT https://localhost:9443/api/settings \
 ## When IP Addresses Work
 
 IP addresses are acceptable only when:
-- Using plain LDAP (port 389, unencrypted) — not recommended for production
+- Using plain LDAP (port 389, unencrypted) - not recommended for production
 - The SSL certificate includes the IP address as a Subject Alternative Name
-- You've set `TLSSkipVerify: true` — only appropriate for testing
+- You've set `TLSSkipVerify: true` - only appropriate for testing
 
 ```bash
 # Using IP with TLSSkipVerify (development/testing only)

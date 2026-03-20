@@ -25,6 +25,7 @@ This guide covers installing Gateway API CRDs, deploying gateway controllers, an
 
 ```yaml
 # infrastructure/gateway-api/crds.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

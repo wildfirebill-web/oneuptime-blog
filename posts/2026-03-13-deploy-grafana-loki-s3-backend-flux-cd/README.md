@@ -29,6 +29,7 @@ Store AWS credentials as a Kubernetes Secret, encrypted with SOPS before committ
 
 ```yaml
 # clusters/my-cluster/loki/s3-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

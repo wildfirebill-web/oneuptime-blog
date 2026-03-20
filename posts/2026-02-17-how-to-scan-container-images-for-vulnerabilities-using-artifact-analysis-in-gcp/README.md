@@ -18,6 +18,7 @@ Start by enabling the required APIs:
 
 ```bash
 # Enable Container Analysis and on-demand scanning APIs
+
 gcloud services enable \
   containeranalysis.googleapis.com \
   containerscanning.googleapis.com \

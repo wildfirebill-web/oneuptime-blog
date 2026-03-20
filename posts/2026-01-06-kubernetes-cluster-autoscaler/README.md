@@ -40,6 +40,7 @@ This command creates an EKS managed node group with auto scaling enabled. The as
 
 ```bash
 # Create managed node group with auto scaling configuration
+
 eksctl create nodegroup \
   --cluster my-cluster \
   --name general-workers \

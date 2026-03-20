@@ -52,6 +52,7 @@ Here is how to create a connection monitor test using the CLI:
 
 ```bash
 # Create a connection monitor to test TCP connectivity between two VMs
+
 az network watcher connection-monitor create \
   --name "vm-a-to-vm-b-test" \
   --location eastus \

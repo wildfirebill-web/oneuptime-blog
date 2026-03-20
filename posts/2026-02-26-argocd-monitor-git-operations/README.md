@@ -38,6 +38,7 @@ Each of these operations has associated metrics that tell you their frequency, d
 
 ```promql
 # Total Git requests by type
+
 argocd_git_request_total
 
 # Request rate by type

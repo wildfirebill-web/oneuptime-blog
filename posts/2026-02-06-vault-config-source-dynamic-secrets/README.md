@@ -18,6 +18,7 @@ The Vault config source is available in the OpenTelemetry Collector Contrib dist
 
 ```yaml
 # config-sources section defines available sources
+
 config_sources:
   vault:
     endpoint: "https://vault.internal:8200"

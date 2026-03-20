@@ -98,6 +98,7 @@ resource "aws_appautoscaling_policy" "ecs_alb_requests" {
 
 ```hcl
 # Scale up before business hours
+
 resource "aws_appautoscaling_scheduled_action" "scale_up_morning" {
   name               = "${var.project_name}-morning-scale-up"
   service_namespace  = aws_appautoscaling_target.ecs_service.service_namespace
@@ -141,4 +142,4 @@ aws application-autoscaling describe-scaling-activities \
 
 ## Conclusion
 
-Configure both CPU and ALB request count scaling policies—CPU handles compute-intensive workloads while request count scaling responds faster to traffic spikes before CPU utilization climbs. Use longer `scale_in_cooldown` (5 minutes) than `scale_out_cooldown` (30-60 seconds) to prevent flapping during variable traffic and protect against scaling in too aggressively during brief traffic dips.
+Configure both CPU and ALB request count scaling policies-CPU handles compute-intensive workloads while request count scaling responds faster to traffic spikes before CPU utilization climbs. Use longer `scale_in_cooldown` (5 minutes) than `scale_out_cooldown` (30-60 seconds) to prevent flapping during variable traffic and protect against scaling in too aggressively during brief traffic dips.

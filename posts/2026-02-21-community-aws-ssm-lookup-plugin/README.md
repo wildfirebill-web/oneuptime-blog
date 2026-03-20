@@ -16,6 +16,7 @@ You need the AWS collection and the boto3 Python library installed.
 
 ```bash
 # Install the community.aws collection
+
 ansible-galaxy collection install community.aws
 
 # Install boto3 and botocore

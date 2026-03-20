@@ -37,6 +37,7 @@ You will need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable bigquery.googleapis.com \
   pubsub.googleapis.com \
   securitycenter.googleapis.com \

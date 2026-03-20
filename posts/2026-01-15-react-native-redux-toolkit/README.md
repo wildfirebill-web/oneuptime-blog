@@ -40,6 +40,7 @@ Let's start by setting up a new React Native project with all necessary dependen
 
 ```bash
 # Create a new React Native project
+
 npx react-native init MyApp --template react-native-template-typescript
 
 # Navigate to project directory
@@ -1750,7 +1751,7 @@ Redux Toolkit with TypeScript provides a powerful, type-safe foundation for stat
 
 The combination of Redux Toolkit's developer experience improvements and TypeScript's static typing creates a robust foundation for building complex React Native applications that are maintainable and scalable.
 
-## Resources
+Resources
 
 - [Redux Toolkit Official Documentation](https://redux-toolkit.js.org/)
 - [React-Redux Hooks Documentation](https://react-redux.js.org/api/hooks)

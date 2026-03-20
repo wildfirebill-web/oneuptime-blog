@@ -16,6 +16,7 @@ Ubuntu ships with GNU grep, which has extensions beyond the POSIX standard. This
 
 ```bash
 # Search for a pattern in a file
+
 grep "pattern" filename
 
 # Search multiple files

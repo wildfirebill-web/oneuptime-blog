@@ -40,6 +40,7 @@ Here is a Prometheus configuration that enables the OTLP receiver.
 
 ```yaml
 # prometheus.yml - Enable OTLP receiver for direct metric ingestion
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

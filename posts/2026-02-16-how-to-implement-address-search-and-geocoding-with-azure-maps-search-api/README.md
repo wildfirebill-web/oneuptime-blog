@@ -23,6 +23,7 @@ az maps account create \
   --sku S1
 
 # Retrieve the subscription key
+
 az maps account keys list \
   --name my-maps-account \
   --resource-group maps-rg \

@@ -29,6 +29,7 @@ The `cilium-agent hive` command is available within the cilium-agent binary. Acc
 
 ```bash
 # Direct access if binary is available locally
+
 cilium-agent hive --help
 
 # Access via a running Cilium pod

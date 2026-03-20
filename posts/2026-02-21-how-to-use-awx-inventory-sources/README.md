@@ -47,6 +47,7 @@ This is the most common dynamic inventory source. You need AWS credentials and a
 
 ```bash
 # Step 1: Create an AWS credential (if not already done)
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

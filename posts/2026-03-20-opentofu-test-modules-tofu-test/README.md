@@ -8,13 +8,13 @@ Description: Learn how to use the tofu test command in OpenTofu to write automat
 
 ## Introduction
 
-OpenTofu includes a built-in testing framework via the `tofu test` command. Tests are written in `.tftest.hcl` files and can create real infrastructure, run assertions against it, and clean up automatically — or use mock providers to test logic without creating any resources.
+OpenTofu includes a built-in testing framework via the `tofu test` command. Tests are written in `.tftest.hcl` files and can create real infrastructure, run assertions against it, and clean up automatically - or use mock providers to test logic without creating any resources.
 
 ## Test File Structure
 
 Create a `tests/` directory inside your module:
 
-```
+```text
 terraform-aws-vpc/
 ├── main.tf
 ├── variables.tf
@@ -30,6 +30,7 @@ terraform-aws-vpc/
 # tests/basic.tftest.hcl
 
 # Optional: override variables for the test
+
 variables {
   name       = "test-vpc"
   cidr_block = "10.0.0.0/16"

@@ -14,6 +14,7 @@ On dual-stack systems, SSH may attempt IPv6 connections first, causing delays or
 
 ```bash
 # Force IPv4 for a single SSH connection
+
 ssh -4 user@203.0.113.10
 
 # Force IPv4 with explicit port

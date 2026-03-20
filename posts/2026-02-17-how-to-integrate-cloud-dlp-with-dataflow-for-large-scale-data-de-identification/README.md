@@ -44,6 +44,7 @@ Install the required packages:
 
 ```bash
 # Install Apache Beam with GCP support and the DLP client
+
 pip install apache-beam[gcp] google-cloud-dlp
 ```
 

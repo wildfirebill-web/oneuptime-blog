@@ -31,6 +31,7 @@ Define your target server in the inventory:
 
 ```ini
 # inventory/hosts.ini
+
 [rancher_servers]
 rancher-server ansible_host=192.168.1.100 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
 

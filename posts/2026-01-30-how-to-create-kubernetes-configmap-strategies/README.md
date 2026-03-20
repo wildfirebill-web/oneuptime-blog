@@ -16,6 +16,7 @@ ConfigMaps can be created from literal values, files, or directories. Here's how
 
 ```yaml
 # configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -28,6 +28,7 @@ Talos provides a straightforward command for taking etcd snapshots:
 
 ```bash
 # Take an etcd snapshot from a control plane node
+
 talosctl etcd snapshot ./etcd-snapshot.db --nodes <control-plane-ip>
 
 # The snapshot file is saved to your local machine

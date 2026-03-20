@@ -211,6 +211,7 @@ Implement health checking in a Python gRPC server.
 
 ```python
 # server.py
+
 import grpc
 from concurrent import futures
 import threading

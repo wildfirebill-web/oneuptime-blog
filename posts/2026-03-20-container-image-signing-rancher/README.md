@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, cosign, image-signing, security, kubernetes
+Tags: Rancher, Cosign, Image-signing, Security, Kubernetes
 
 Description: Guide to implementing container image signing and verification in Rancher using Sigstore Cosign.
 
@@ -31,6 +31,7 @@ How to Set Up Container Image Signing in Rancher addresses these challenges by a
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

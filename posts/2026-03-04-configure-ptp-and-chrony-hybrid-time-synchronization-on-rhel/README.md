@@ -43,6 +43,7 @@ Instead of syncing directly to the system clock, phc2sys writes to a shared memo
 
 ```bash
 # Edit the phc2sys service to output to SHM
+
 sudo systemctl edit phc2sys
 ```
 

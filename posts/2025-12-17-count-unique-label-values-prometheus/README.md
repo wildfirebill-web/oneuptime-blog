@@ -40,6 +40,7 @@ The most reliable way to count unique label values combines `group` and `count`:
 
 ```promql
 # Count unique values for a specific label
+
 count(group by (instance) (up))
 ```
 

@@ -64,6 +64,7 @@ You need:
 
 ```powershell
 # Enable system-assigned managed identity on an App Service
+
 $app = Set-AzWebApp `
     -ResourceGroupName "myapp-rg" `
     -Name "myapp-webapp" `

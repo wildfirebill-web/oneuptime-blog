@@ -18,6 +18,7 @@ Before invoking any model, you need to request access. This is done at the accou
 
 ```hcl
 # Configure the AWS provider for Bedrock
+
 # Bedrock is available in specific regions
 provider "aws" {
   region = "us-east-1"

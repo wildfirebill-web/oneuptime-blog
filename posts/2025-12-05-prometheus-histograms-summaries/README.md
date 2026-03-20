@@ -118,6 +118,7 @@ import time
 import random
 
 # Define histogram with custom buckets
+
 request_duration = Histogram(
     'http_request_duration_seconds',
     'HTTP request duration in seconds',

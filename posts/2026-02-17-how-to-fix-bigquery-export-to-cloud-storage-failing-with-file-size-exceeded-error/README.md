@@ -35,6 +35,7 @@ The simplest fix is to use a wildcard in your destination URI. BigQuery will aut
 
 ```bash
 # Export with wildcard - BigQuery will create multiple sharded files
+
 bq extract \
     --destination_format=CSV \
     --compression=GZIP \

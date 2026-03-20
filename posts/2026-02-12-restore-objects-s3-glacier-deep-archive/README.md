@@ -37,6 +37,7 @@ Before restoring, verify the object is actually in a Glacier storage class.
 
 ```bash
 # Check the storage class
+
 aws s3api head-object \
   --bucket my-archive-bucket \
   --key backups/2024-q1/database-dump.tar.gz \

@@ -78,6 +78,7 @@ Let's create a multi-tenant Laravel application from scratch:
 
 ```bash
 # Create new Laravel project
+
 composer create-project laravel/laravel multi-tenant-app
 
 # Navigate to project directory

@@ -36,6 +36,7 @@ Here are the most important built-in policies to enable:
 
 ```bash
 # 1. Require tags on resource groups
+
 az policy assignment create \
   --name "require-costcenter-rg" \
   --scope "/providers/Microsoft.Management/managementGroups/contoso-landing-zones" \

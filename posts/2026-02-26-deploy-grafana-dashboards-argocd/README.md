@@ -53,6 +53,7 @@ Export your dashboard JSON from Grafana, then wrap it in a ConfigMap.
 
 ```yaml
 # dashboards/kubernetes-cluster-overview.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

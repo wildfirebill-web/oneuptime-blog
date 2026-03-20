@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, mod_proxy_balancer, Load Balancing, IPv4, High Availability, HTTP
+Tags: Apache, Mod_proxy_balancer, Load Balancing, IPv4, High Availability, HTTP
 
 Description: Configure Apache mod_proxy_balancer to distribute HTTP traffic across multiple IPv4 backend servers with round-robin, traffic-weighted, and session-sticky algorithms.
 
@@ -142,6 +142,7 @@ Add a backup server used only when all primary members fail:
 
 ```bash
 # Send 20 requests and check distribution
+
 for i in $(seq 1 20); do
     curl -s http://app.example.com/server-id
 done | sort | uniq -c

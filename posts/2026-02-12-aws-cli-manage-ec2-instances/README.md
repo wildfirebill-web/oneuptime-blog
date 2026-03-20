@@ -20,6 +20,7 @@ Install and configure the AWS CLI:
 
 ```bash
 # Install AWS CLI v2 (macOS)
+
 brew install awscli
 
 # Or on Linux

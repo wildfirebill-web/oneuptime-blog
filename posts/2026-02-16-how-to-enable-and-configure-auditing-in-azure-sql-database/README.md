@@ -90,6 +90,7 @@ Here is how to enable server-level auditing to a storage account:
 
 ```bash
 # Enable server-level auditing to a storage account
+
 az sql server audit-policy update \
     --resource-group myResourceGroup \
     --server myserver \

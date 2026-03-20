@@ -79,6 +79,7 @@ Commands represent intentions to change state. They should be immutable and cont
 
 ```python
 # domain/commands.py
+
 # Command definitions for the application
 from dataclasses import dataclass, field
 from datetime import datetime

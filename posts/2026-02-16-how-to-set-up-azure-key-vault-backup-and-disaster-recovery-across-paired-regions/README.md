@@ -59,6 +59,7 @@ Before setting up backups, make sure your vault has soft delete and purge protec
 
 ```bash
 # Check current soft delete and purge protection settings
+
 az keyvault show \
   --name myKeyVault \
   --query '{softDelete: properties.enableSoftDelete, purgeProtection: properties.enablePurgeProtection, retentionDays: properties.softDeleteRetentionInDays}'

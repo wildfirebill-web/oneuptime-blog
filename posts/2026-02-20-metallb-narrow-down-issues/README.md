@@ -35,6 +35,7 @@ Before changing anything, capture the full state of your MetalLB deployment. You
 
 ```bash
 # Capture the complete MetalLB configuration
+
 # This includes all IP pools, L2 advertisements, and BGP configurations
 kubectl get ipaddresspool -n metallb-system -o yaml > /tmp/metallb-pools.yaml
 kubectl get l2advertisement -n metallb-system -o yaml > /tmp/metallb-l2.yaml

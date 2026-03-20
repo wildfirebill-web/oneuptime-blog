@@ -16,6 +16,7 @@ A typical Node.js application image built the traditional way might look like th
 
 ```dockerfile
 # Traditional single-stage build - results in large image
+
 FROM node:20
 
 WORKDIR /app

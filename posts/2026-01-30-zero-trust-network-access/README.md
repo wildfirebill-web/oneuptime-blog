@@ -201,6 +201,7 @@ Popular choices: Okta, Azure AD, Google Workspace, Keycloak (self-hosted).
 
 ```yaml
 # Example: Conditional access policy structure
+
 policy:
   name: require-mfa-all-apps
   conditions:

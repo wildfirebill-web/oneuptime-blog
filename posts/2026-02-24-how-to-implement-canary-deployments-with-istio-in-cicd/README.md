@@ -18,6 +18,7 @@ You need two versions of your application running simultaneously - the current s
 
 ```yaml
 # Stable deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

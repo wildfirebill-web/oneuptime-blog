@@ -59,6 +59,7 @@ Always use JSON format for machine-parseable logs. Apply the change:
 ```bash
 kubectl apply -f argocd-cmd-params-cm.yaml
 # Restart components to pick up new config
+
 kubectl rollout restart deployment -n argocd \
   argocd-server argocd-repo-server argocd-notifications-controller
 kubectl rollout restart statefulset -n argocd \

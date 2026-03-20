@@ -30,6 +30,7 @@ Install Cilium in per-node migration mode:
 
 ```bash
 # Install Cilium in migration mode alongside existing CNI
+
 helm install cilium cilium/cilium \
   --namespace kube-system \
   --set cni.exclusive=false \

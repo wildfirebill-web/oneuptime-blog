@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, OpenWrt, Router, DHCPv6, odhcp6c, Networking
+Tags: IPv6, OpenWrt, Router, DHCPv6, Odhcp6c, Networking
 
 Description: Configure complete IPv6 support on OpenWrt routers including DHCPv6 prefix delegation from ISP, SLAAC for LAN clients, and IPv6 firewall rules.
 
@@ -14,6 +14,7 @@ OpenWrt provides a complete IPv6 stack via `odhcp6c` (DHCPv6 client), `odhcpd` (
 
 ```bash
 # Edit the WAN6 interface via UCI
+
 uci set network.wan6=interface
 uci set network.wan6.ifname='eth0.2'      # WAN physical interface
 uci set network.wan6.proto='dhcpv6'

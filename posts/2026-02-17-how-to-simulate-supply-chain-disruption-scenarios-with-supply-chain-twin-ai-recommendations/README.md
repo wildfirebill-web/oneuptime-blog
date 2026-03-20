@@ -37,6 +37,7 @@ Scenarios are defined as modifications to the supply chain model. Each scenario 
 
 ```python
 # scenarios.py - Define supply chain disruption scenarios
+
 from dataclasses import dataclass
 from typing import List, Optional
 from datetime import datetime, timedelta

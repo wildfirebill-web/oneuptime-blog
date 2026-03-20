@@ -97,6 +97,7 @@ ForwardToSyslog=yes
 
 ```bash
 # Check for corrupted journal files
+
 journalctl --verify
 
 # View journal file details

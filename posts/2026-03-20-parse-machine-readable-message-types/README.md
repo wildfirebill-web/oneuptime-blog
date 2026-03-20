@@ -14,6 +14,7 @@ OpenTofu can output structured JSON logs for all operations using the `-json` fl
 
 ```bash
 # Plan with JSON output
+
 tofu plan -json
 
 # Apply with JSON output
@@ -175,7 +176,7 @@ done
 2. **Filter by `type`** rather than parsing `@message` strings
 3. **Check `@level`** for `error` or `warn` to detect problems early
 4. **Store JSON logs** for post-run analysis and audit trails
-5. **Handle unknown message types gracefully** — new types may be added in future OpenTofu versions
+5. **Handle unknown message types gracefully** - new types may be added in future OpenTofu versions
 
 ## Conclusion
 

@@ -26,6 +26,7 @@ Windows Server includes a built-in DHCP server role that supports both DHCPv4 an
 
 ```powershell
 # Install DHCP Server role
+
 Install-WindowsFeature -Name DHCP -IncludeManagementTools
 
 # Authorize the DHCP server in Active Directory
@@ -181,7 +182,7 @@ Get-DhcpServerInDC
 
 1. **Authorize the server in AD** before it serves leases
 2. **Configure exclusions** for static IP ranges before activating scopes
-3. **Set DNS options** — clients need name servers to function
+3. **Set DNS options** - clients need name servers to function
 4. **Monitor scope utilization** with `Get-DhcpServerv6ScopeStatistics`
 5. **Back up DHCP database** regularly with `Backup-DhcpServer`
 
@@ -189,8 +190,8 @@ Get-DhcpServerInDC
 
 ## Conclusion
 
-Windows Server's DHCP role provides a fully functional DHCPv6 server with GUI and PowerShell management. Create scopes, configure options, set reservations, and monitor leases — all from the DHCP console or a PowerShell session.
+Windows Server's DHCP role provides a fully functional DHCPv6 server with GUI and PowerShell management. Create scopes, configure options, set reservations, and monitor leases - all from the DHCP console or a PowerShell session.
 
 ---
 
-*Monitor your Windows Server infrastructure with [OneUptime](https://oneuptime.com) — full-stack monitoring with IPv6 support.*
+*Monitor your Windows Server infrastructure with [OneUptime](https://oneuptime.com) - full-stack monitoring with IPv6 support.*

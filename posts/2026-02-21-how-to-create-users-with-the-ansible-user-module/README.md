@@ -20,6 +20,7 @@ Here is the simplest possible example that creates a user:
 
 ```yaml
 # create-user.yml - Basic user creation playbook
+
 - name: Create a basic user account
   hosts: all
   become: yes

@@ -38,6 +38,7 @@ StatefulSets require a headless Service (ClusterIP: None) for DNS-based pod disc
 
 ```yaml
 # playbook: create-statefulset-postgres.yml
+
 # Deploys a PostgreSQL StatefulSet with persistent storage
 ---
 - name: Deploy PostgreSQL StatefulSet

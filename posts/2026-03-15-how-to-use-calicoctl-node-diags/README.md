@@ -58,6 +58,7 @@ sudo calicoctl node diags --log-dir=/var/log/calico
 
 ```bash
 # Find the calico-node pod on the problematic node
+
 NODE_NAME="worker-1"
 POD=$(kubectl get pods -n calico-system -l k8s-app=calico-node \
   --field-selector spec.nodeName="$NODE_NAME" \

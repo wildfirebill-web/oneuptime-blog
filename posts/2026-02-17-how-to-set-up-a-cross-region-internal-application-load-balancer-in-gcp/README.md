@@ -33,6 +33,7 @@ You need a proxy-only subnet with `GLOBAL_MANAGED_PROXY` purpose in every region
 
 ```bash
 # Create proxy-only subnet in us-central1
+
 gcloud compute networks subnets create proxy-subnet-us \
     --purpose=GLOBAL_MANAGED_PROXY \
     --role=ACTIVE \

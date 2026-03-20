@@ -94,6 +94,7 @@ set -e
 echo "Validating configuration..."
 
 # Check required environment variables
+
 if [ -z "$DATABASE_URL" ]; then
     echo "ERROR: DATABASE_URL is not set"
     exit 1

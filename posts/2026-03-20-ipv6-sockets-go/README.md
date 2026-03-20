@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Sockets, Networking, net Package, Socket Programming
+Tags: Go, IPv6, Sockets, Networking, Net package, Socket Programming
 
 Description: Create IPv6 TCP and UDP servers and clients in Go using the net package, with proper handling of dual-stack, IPv6-only, and link-local connections.
 
 ## Introduction
 
-Go's `net` package abstracts socket creation through high-level types like `net.Listener`, `net.Conn`, and `net.PacketConn`. IPv6 support is built in — the key is using the right network string: `"tcp6"` for IPv6-only, `"tcp"` for dual-stack, and `"[::]:port"` for the wildcard bind address.
+Go's `net` package abstracts socket creation through high-level types like `net.Listener`, `net.Conn`, and `net.PacketConn`. IPv6 support is built in - the key is using the right network string: `"tcp6"` for IPv6-only, `"tcp"` for dual-stack, and `"[::]:port"` for the wildcard bind address.
 
 ## IPv6 TCP Server
 

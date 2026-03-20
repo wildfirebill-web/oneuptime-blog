@@ -1,4 +1,4 @@
-# How to Manage K3s Edge Clusters Remotely
+# How to Manage K3s Edge Clusters Remotely - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ Fleet is a GitOps fleet management tool from Rancher designed specifically for m
 
 ```bash
 # Add Fleet Helm repository
+
 helm repo add fleet https://rancher.github.io/fleet-helm-charts/
 helm repo update
 

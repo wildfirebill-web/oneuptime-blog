@@ -52,6 +52,7 @@ The first step is figuring out which certificates are close to expiration or alr
 
 ```bash
 # Check the cluster's certificate profile and expiration info
+
 az aks show \
   --resource-group myResourceGroup \
   --name myAKSCluster \

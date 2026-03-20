@@ -31,6 +31,7 @@ If a pod on a zone-a node gets an IP from the zone-b CIDR, the node selector is 
 
 ```bash
 # Check the node labels for the node hosting the misallocated pod
+
 NODE=$(kubectl get pod <pod-name> -n <namespace> -o jsonpath='{.spec.nodeName}')
 kubectl get node "$NODE" --show-labels | grep zone
 

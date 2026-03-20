@@ -24,6 +24,7 @@ Calico works with IPVS mode kube-proxy without conflict. Calico handles pod rout
 
 ```bash
 # Check if IPVS modules are loaded
+
 lsmod | grep -E "ip_vs|nf_conntrack"
 
 # Load IPVS modules

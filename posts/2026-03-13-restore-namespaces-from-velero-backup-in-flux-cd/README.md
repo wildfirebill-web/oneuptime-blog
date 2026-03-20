@@ -25,6 +25,7 @@ The key principle is: Flux manages the desired state from Git, and Velero restor
 
 ```bash
 # List all available backups
+
 velero backup get
 
 # Filter backups for a specific namespace

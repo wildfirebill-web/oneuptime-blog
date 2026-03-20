@@ -30,6 +30,7 @@ Add credentials in your `.tofurc` (or `.terraformrc`) file:
 
 ```hcl
 # ~/.tofurc
+
 credentials "registry.acme-corp.com" {
   token = "YOUR_REGISTRY_TOKEN"
 }
@@ -72,9 +73,9 @@ The OpenTofu Registry Protocol is documented and implementable. A minimal regist
 3. Authentication via bearer tokens
 
 Popular self-hosted options:
-- **Terrareg** — open-source Terraform/OpenTofu module registry
-- **Tapir** — lightweight self-hosted registry
-- **Spacelift** — SaaS with private registry included
+- **Terrareg** - open-source Terraform/OpenTofu module registry
+- **Tapir** - lightweight self-hosted registry
+- **Spacelift** - SaaS with private registry included
 
 ## CI/CD Configuration
 

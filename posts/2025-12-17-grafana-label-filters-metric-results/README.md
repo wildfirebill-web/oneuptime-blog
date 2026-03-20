@@ -14,6 +14,7 @@ Static label filters show all values:
 
 ```promql
 # Shows ALL pods, even those without issues
+
 label_values(kube_pod_info, pod)
 ```
 

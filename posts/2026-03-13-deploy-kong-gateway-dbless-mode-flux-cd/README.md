@@ -30,6 +30,7 @@ Define your API gateway configuration in Kong's declarative format (deck format)
 
 ```yaml
 # infrastructure/kong/kong-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

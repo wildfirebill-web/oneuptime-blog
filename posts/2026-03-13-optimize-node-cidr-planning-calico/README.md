@@ -28,6 +28,7 @@ Use a capacity planning formula to determine the required pool size.
 ```bash
 #!/bin/bash
 # cidr-planning.sh
+
 # Calculate required IP pool size for Calico cluster
 
 MAX_NODES=200             # Expected maximum number of nodes

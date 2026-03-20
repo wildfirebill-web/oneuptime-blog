@@ -15,7 +15,8 @@ BGP peering over IPv6 global unicast addresses (2000::/3) is the standard approa
 In eBGP, peers typically use the IPv6 address of the directly connected interface:
 
 ```bash
-# FRRouting — eBGP over global IPv6 address
+# FRRouting - eBGP over global IPv6 address
+
 vtysh
 configure terminal
 
@@ -36,7 +37,7 @@ write memory
 
 ## iBGP Peering Over Loopback Addresses
 
-For iBGP, use IPv6 loopback addresses for stability — sessions survive individual link failures if the loopback is reachable via OSPFv3 or another IGP:
+For iBGP, use IPv6 loopback addresses for stability - sessions survive individual link failures if the loopback is reachable via OSPFv3 or another IGP:
 
 ```bash
 vtysh
@@ -65,7 +66,7 @@ write memory
 
 ## Cisco IOS eBGP Over Global Address
 
-```
+```text
 ! Configure eBGP session using IPv6 global address
 Router(config)# router bgp 65001
 Router(config-router)# bgp router-id 1.1.1.1
@@ -82,7 +83,7 @@ Router(config-router-af)# exit-address-family
 When the BGP peer is not directly connected, use `ebgp-multihop`:
 
 ```bash
-# FRRouting — multi-hop eBGP over global address
+# FRRouting - multi-hop eBGP over global address
 router bgp 65001
  neighbor 2001:db8:remote::peer remote-as 65003
  neighbor 2001:db8:remote::peer ebgp-multihop 5   ! Up to 5 hops away

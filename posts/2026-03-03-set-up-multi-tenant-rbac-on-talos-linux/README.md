@@ -26,6 +26,7 @@ The foundation of multi-tenant RBAC is giving each tenant their own namespace:
 
 ```bash
 # Create namespaces for each tenant
+
 kubectl create namespace team-frontend
 kubectl create namespace team-backend
 kubectl create namespace team-data

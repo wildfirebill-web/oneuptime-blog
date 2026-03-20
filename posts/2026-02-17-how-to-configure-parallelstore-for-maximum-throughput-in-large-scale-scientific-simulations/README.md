@@ -46,6 +46,7 @@ Create a Parallelstore instance sized for your workload. The capacity determines
 
 ```bash
 # Create a Parallelstore instance
+
 # Throughput scales with capacity: ~1 GB/s per 12 TiB for large sequential I/O
 gcloud parallelstore instances create hpc-scratch \
   --location=us-central1-a \

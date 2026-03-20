@@ -16,6 +16,7 @@ First, create a ConfigMap with your configuration:
 
 ```yaml
 # configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

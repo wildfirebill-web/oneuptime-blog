@@ -22,6 +22,7 @@ Let's start with a simple pipeline that tests a Node.js application.
 
 ```yaml
 # .gitlab-ci.yml
+
 # Define the stages in order of execution
 stages:
   - test

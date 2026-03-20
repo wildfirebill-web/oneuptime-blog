@@ -45,6 +45,7 @@ Here is the inventory that maps to the directory structure above:
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     webservers:

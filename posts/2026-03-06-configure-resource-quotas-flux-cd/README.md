@@ -59,6 +59,7 @@ Define a quota that limits CPU and memory usage within a namespace.
 
 ```yaml
 # infrastructure/resource-quotas/base/compute-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

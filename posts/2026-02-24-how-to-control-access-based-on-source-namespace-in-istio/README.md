@@ -185,6 +185,7 @@ A common cluster setup has multiple environments (dev, staging, production) in t
 
 ```yaml
 # Production namespace - strict isolation
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

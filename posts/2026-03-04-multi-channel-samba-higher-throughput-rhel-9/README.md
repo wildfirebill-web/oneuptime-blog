@@ -25,6 +25,7 @@ SMB 3.0 introduced multi-channel, and Samba on RHEL supports it.
 
 ```bash
 # List all network interfaces
+
 ip addr show
 
 # Verify both interfaces are up and have IPs

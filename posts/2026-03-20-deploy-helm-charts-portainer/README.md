@@ -26,7 +26,7 @@ Before deploying charts, add a repository:
 4. Click **Save**.
 
 Popular repositories:
-```
+```text
 https://charts.bitnami.com/bitnami
 https://helm.nginx.com/stable
 https://prometheus-community.github.io/helm-charts
@@ -51,6 +51,7 @@ Portainer shows the default `values.yaml` and lets you override specific setting
 
 ```yaml
 # Example: Customizing nginx chart values
+
 replicaCount: 2
 
 service:

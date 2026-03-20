@@ -46,6 +46,7 @@ kubectl api-resources --verbs=list | grep calico | awk '{print $1}' | \
 
 ```bash
 # List IPAMBlocks with finalizers
+
 kubectl get ipamblocks.crd.projectcalico.org \
   -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.metadata.finalizers}{"\n"}{end}'
 ```

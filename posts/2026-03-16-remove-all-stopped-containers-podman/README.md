@@ -20,6 +20,7 @@ The most straightforward way to remove all stopped containers.
 
 ```bash
 # Remove all stopped containers
+
 podman container prune
 
 # Skip the confirmation prompt

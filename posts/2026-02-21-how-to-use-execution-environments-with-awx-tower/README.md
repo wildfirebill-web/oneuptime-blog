@@ -24,6 +24,7 @@ Through the API:
 
 ```bash
 # Register a new Execution Environment in AWX
+
 curl -X POST "https://awx.example.com/api/v2/execution_environments/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AWX_TOKEN}" \

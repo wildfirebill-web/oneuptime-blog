@@ -40,6 +40,7 @@ Availability is typically measured as the percentage of time your service was op
 
 ```python
 # sla_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

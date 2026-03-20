@@ -91,7 +91,7 @@ New-NetFirewallRule -DisplayName "Portainer Edge" -Direction Inbound -Protocol T
 
 Open a browser and navigate to:
 
-```
+```text
 https://<server-ip>:9443
 ```
 
@@ -120,6 +120,7 @@ docker stop portainer
 docker rm portainer
 docker pull portainer/portainer-ce:latest
 # Re-run the deploy command
+
 ```
 
 ## Conclusion

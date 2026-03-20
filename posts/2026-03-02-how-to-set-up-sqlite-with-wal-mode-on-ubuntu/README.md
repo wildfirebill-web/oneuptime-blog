@@ -34,6 +34,7 @@ WAL mode is set per-database and persists across connections.
 
 ```bash
 # Open the database and enable WAL mode
+
 sqlite3 /data/myapp.db "PRAGMA journal_mode=WAL;"
 # Returns: wal
 

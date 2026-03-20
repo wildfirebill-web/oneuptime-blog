@@ -30,6 +30,7 @@ Check that VMs support the hardware features Cilium requires.
 
 ```bash
 # Check kernel version on VMs (should be 4.9+ for basic Cilium, 5.3+ for eBPF)
+
 kubectl get nodes \
   -o custom-columns="NODE:.metadata.name,KERNEL:.status.nodeInfo.kernelVersion,OS:.status.nodeInfo.osImage"
 

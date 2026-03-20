@@ -87,6 +87,7 @@ You need the UUID of the partition where snapshots will be stored:
 
 ```bash
 # List all block devices with UUIDs
+
 lsblk -f
 
 # Or use blkid

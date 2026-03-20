@@ -1,10 +1,10 @@
-# How to Implement Security Best Practices in Rancher
+# How to Implement Security Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Security, RBAC, Network Policies, Pod Security, Kubernetes
 
-Description: Implement comprehensive security best practices in Rancher including RBAC, Pod Security Standards, network policies, image scanning, secrets management, and cluster hardening for production environments.
+Description: Implement comprehensive security best practices in Rancher including RBAC, Pod Security Standards, network policies, image scanning, secrets management, and cluster hardening for production...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Use least-privilege roles at the Rancher Project level:
 
 ```yaml
 # Custom role with minimal permissions for developers
+
 apiVersion: management.cattle.io/v3
 kind: RoleTemplate
 metadata:
@@ -203,4 +204,4 @@ EOF
 
 ## Conclusion
 
-Security in Rancher is layered—no single control is sufficient. Combining RBAC, Pod Security Standards, network policies, image scanning, and secrets encryption provides defense-in-depth. Run CIS benchmarks regularly to identify regressions, and integrate Falco for runtime threat detection. The CIS Rancher Benchmark profile provides a comprehensive checklist tailored specifically to Rancher-managed clusters.
+Security in Rancher is layered-no single control is sufficient. Combining RBAC, Pod Security Standards, network policies, image scanning, and secrets encryption provides defense-in-depth. Run CIS benchmarks regularly to identify regressions, and integrate Falco for runtime threat detection. The CIS Rancher Benchmark profile provides a comprehensive checklist tailored specifically to Rancher-managed clusters.

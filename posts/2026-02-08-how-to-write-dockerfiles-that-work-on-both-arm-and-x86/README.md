@@ -26,6 +26,7 @@ Check if Buildx is available and create a multi-platform builder:
 
 ```bash
 # Verify buildx is available
+
 docker buildx version
 
 # Create a new builder instance with multi-platform support

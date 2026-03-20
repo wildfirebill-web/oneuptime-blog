@@ -27,6 +27,7 @@ Before configuring Flux, agree on a consistent label schema for cost tracking.
 
 ```bash
 # Standard cost allocation labels used across all workloads
+
 # Required labels (must be on all workloads):
 # app.kubernetes.io/part-of: <service-name>    # Business service this belongs to
 # cost-center: <cost-center-id>                # Finance cost center code

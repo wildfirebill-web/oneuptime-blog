@@ -139,6 +139,7 @@ frontend http_front
 
 ```bash
 # Show stick table entries
+
 echo "show table http_front" | sudo socat stdio /var/lib/haproxy/stats
 
 # Show stick table info

@@ -54,6 +54,7 @@ subscriber = pubsub_v1.SubscriberClient()
 subscription_path = subscriber.subscription_path(project_id, subscription_id)
 
 # Keep track of ack IDs currently in flight so we can extend them.
+
 in_flight = {}
 
 # Extend ack deadlines for messages still being processed.

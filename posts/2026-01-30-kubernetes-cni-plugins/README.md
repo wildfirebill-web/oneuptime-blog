@@ -821,6 +821,7 @@ Use the `cnitool` for manual testing:
 
 ```bash
 # Build your plugin
+
 go build -o /opt/cni/bin/my-cni-plugin .
 
 # Create a test configuration

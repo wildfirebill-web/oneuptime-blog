@@ -244,6 +244,7 @@ Control sort order in your query:
 
 ```promql
 # Sort results ascending by value
+
 sort(sum(rate(http_requests_total[5m])) by (service))
 
 # Sort results descending by value

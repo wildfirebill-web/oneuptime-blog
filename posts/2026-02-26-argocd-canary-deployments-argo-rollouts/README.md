@@ -38,6 +38,7 @@ You need ArgoCD and Argo Rollouts installed:
 
 ```bash
 # Install Argo Rollouts
+
 kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 

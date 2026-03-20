@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher-desktop, kind, kubernetes, local-development, comparison
+Tags: Rancher-desktop, Kind, Kubernetes, Local-development, Comparison
 
 Description: A comparison of Rancher Desktop and Kind (Kubernetes in Docker) for local Kubernetes development, focusing on ease of use, performance, and CI/CD suitability.
 
@@ -40,12 +40,13 @@ Rancher Desktop is a desktop application providing local Kubernetes via K3s and 
 
 ### Rancher Desktop
 
-Download and install from https://rancherdesktop.io — graphical installer available.
+Download and install from https://rancherdesktop.io - graphical installer available.
 
 ### Kind
 
 ```bash
 # Install kind
+
 brew install kind    # macOS
 # or
 go install sigs.k8s.io/kind@latest

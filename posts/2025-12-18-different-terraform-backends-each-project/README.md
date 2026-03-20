@@ -41,6 +41,7 @@ Partial configuration lets you define the backend type in code while specifying 
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     # These values will be provided at init time

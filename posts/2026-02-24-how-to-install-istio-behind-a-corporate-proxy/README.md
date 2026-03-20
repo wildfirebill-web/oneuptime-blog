@@ -60,6 +60,7 @@ Or download manually and copy:
 
 ```bash
 # On a machine with internet access
+
 wget https://github.com/istio/istio/releases/download/1.24.0/istioctl-1.24.0-linux-amd64.tar.gz
 
 # Copy to your corporate network

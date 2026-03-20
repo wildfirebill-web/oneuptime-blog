@@ -26,6 +26,7 @@ You need Docker and Kind installed:
 
 ```bash
 # Install Kind (macOS)
+
 brew install kind
 
 # Install Kind (Linux)

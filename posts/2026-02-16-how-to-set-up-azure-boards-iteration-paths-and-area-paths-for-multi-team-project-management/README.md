@@ -77,6 +77,7 @@ Click the ellipsis next to the root node and select "New child." Create your top
 
 ```bash
 # Create top-level area paths
+
 az boards area project create \
   --name "Frontend" \
   --project "MyProject" \

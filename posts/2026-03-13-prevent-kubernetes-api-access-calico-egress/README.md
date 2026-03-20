@@ -32,6 +32,7 @@ This guide covers creating a reusable baseline allow policy, template patterns f
 
 ```bash
 # Check policy order (lower order = higher priority in Calico)
+
 calicoctl get globalnetworkpolicy -o yaml \
   | grep -E "name:|order:" | paste - -
 ```

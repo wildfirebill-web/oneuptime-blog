@@ -44,6 +44,7 @@ flowchart LR
 
 ```bash
 # Create namespace
+
 kubectl create namespace external-dns
 
 # Verify you have a DNS zone configured in your provider

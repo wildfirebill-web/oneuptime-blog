@@ -164,6 +164,7 @@ Storage Gateway bridges on-premises applications to AWS cloud storage. It suppor
 
 ```bash
 # Deploy Storage Gateway as a VM on-premises
+
 # Then activate it and create an NFS file share
 
 aws storagegateway create-nfs-file-share \

@@ -61,6 +61,7 @@ The following configuration creates two BGP peers with different local preferenc
 
 ```yaml
 # bgp-peers.yaml
+
 # This configuration establishes BGP peering with two routers
 # Local preference determines which path is preferred for outbound traffic
 apiVersion: metallb.io/v1beta2

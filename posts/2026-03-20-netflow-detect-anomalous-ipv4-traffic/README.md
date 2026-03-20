@@ -27,6 +27,7 @@ A port scan creates many flows with small packet counts to different destination
 
 ```bash
 # Detect horizontal scan: one source to many destinations on same port
+
 nfdump -R /var/log/netflow/ \
   -filter "proto tcp and flags S and not flags A" \
   -A srcip,dstport \
@@ -44,7 +45,7 @@ nfdump -R /var/log/netflow/ \
 
 Flag combinations to watch:
 - SYN only (flags S, not A): connection initiation
-- SYN-ACK (flags SA): response—useful to find victims, not scanners
+- SYN-ACK (flags SA): response-useful to find victims, not scanners
 
 ## Step 2: Detect DDoS Attacks
 

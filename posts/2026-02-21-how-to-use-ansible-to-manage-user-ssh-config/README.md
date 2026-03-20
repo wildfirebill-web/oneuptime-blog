@@ -32,6 +32,7 @@ The simplest approach is to deploy the entire config file:
 
 ```yaml
 # deploy-ssh-config.yml - Deploy complete SSH config
+
 - name: Deploy SSH config for users
   hosts: all
   become: yes

@@ -56,6 +56,7 @@ The following commands install LangChain core components along with the OpenAI i
 
 ```bash
 # Install the core LangChain library and OpenAI integration
+
 pip install langchain langchain-openai
 
 # For additional utilities like text splitting and vector stores

@@ -24,6 +24,7 @@ Start with a full system update.
 
 ```bash
 # Update package lists and upgrade all packages
+
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 

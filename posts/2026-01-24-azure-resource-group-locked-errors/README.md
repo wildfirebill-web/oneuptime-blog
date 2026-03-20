@@ -68,6 +68,7 @@ is locked. Lock ID: '/subscriptions/.../providers/Microsoft.Authorization/locks/
 
 ```bash
 # List locks on a resource group
+
 az lock list \
     --resource-group prod-rg \
     --output table

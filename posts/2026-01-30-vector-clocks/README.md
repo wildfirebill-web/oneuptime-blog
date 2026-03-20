@@ -156,6 +156,7 @@ class VectorClock:
 
 ```python
 # Create vector clocks for three nodes
+
 clock_a = VectorClock("A")
 clock_b = VectorClock("B")
 clock_c = VectorClock("C")

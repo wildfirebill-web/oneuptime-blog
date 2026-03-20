@@ -26,6 +26,7 @@ Deploy it from the AWS Solutions Library:
 
 ```bash
 # Download and deploy the Instance Scheduler CloudFormation template
+
 aws cloudformation create-stack \
   --stack-name instance-scheduler \
   --template-url https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template \

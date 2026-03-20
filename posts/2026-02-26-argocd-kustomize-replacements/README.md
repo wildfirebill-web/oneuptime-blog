@@ -32,6 +32,7 @@ Copy a Service's cluster IP into a Deployment's environment variable:
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

@@ -30,6 +30,7 @@ The relay adds the **giaddr** (gateway IP address) field so the DHCP server know
 
 ```bash
 # Install the relay agent
+
 sudo apt install isc-dhcp-relay
 
 # Configure during installation or edit /etc/default/isc-dhcp-relay
@@ -74,7 +75,7 @@ sudo dhcrelay -i eth1 -i eth2 10.0.0.1 10.0.0.2
 
 On a Cisco router, configure IP helper on the interface closest to the clients:
 
-```
+```text
 ! Configure DHCP relay (ip helper-address) on the client-facing SVI
 interface vlan 20
  ip address 192.168.2.1 255.255.255.0
@@ -83,7 +84,7 @@ interface vlan 20
 
 By default, `ip helper-address` forwards DHCP (port 67/68) and several other UDP services. To forward only DHCP:
 
-```
+```text
 ! Disable generic UDP forwarding first
 no ip forward-protocol udp 69
 no ip forward-protocol udp 137
@@ -97,7 +98,7 @@ ip forward-protocol udp 67
 
 Ensure the DHCP server has a scope for each relay subnet. In isc-dhcp-server (`/etc/dhcp/dhcpd.conf`):
 
-```
+```text
 # Scope for local server subnet
 subnet 10.0.0.0 netmask 255.255.255.0 {
 }
@@ -114,10 +115,10 @@ subnet 192.168.2.0 netmask 255.255.255.0 {
 ## Verifying Relay Operation
 
 ```bash
-# On the relay host — watch forwarded DHCP packets
+# On the relay host - watch forwarded DHCP packets
 sudo tcpdump -i eth1 -n "udp port 67 or udp port 68"
 
-# On the DHCP server — confirm it receives relayed requests with giaddr set
+# On the DHCP server - confirm it receives relayed requests with giaddr set
 sudo tcpdump -i eth0 -n -v "udp port 67" | grep "giaddr"
 ```
 

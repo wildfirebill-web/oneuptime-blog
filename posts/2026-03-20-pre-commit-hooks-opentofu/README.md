@@ -20,6 +20,7 @@ Learn how to configure pre-commit hooks for automatic OpenTofu formatting, valid
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

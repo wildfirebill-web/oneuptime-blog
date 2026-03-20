@@ -29,9 +29,9 @@ Portainer supports two custom template types:
 
 Portainer provides three ways to create custom templates:
 
-1. **Web editor** — Write or paste the template directly in the browser
-2. **Git repository** — Point to a Compose file in a Git repo
-3. **File upload** — Upload a local Compose file
+1. **Web editor** - Write or paste the template directly in the browser
+2. **Git repository** - Point to a Compose file in a Git repo
+3. **File upload** - Upload a local Compose file
 
 ## Step 1: Navigate to Custom Templates
 
@@ -44,16 +44,17 @@ Portainer provides three ways to create custom templates:
 
 Regardless of creation method, all templates require:
 
-```
+```text
 Title:       My Application Stack     # Display name in catalog
 Description: Deploys my app with...   # Short description
+
 Platform:    Linux                    # linux or windows
 Type:        Stack                    # Container or Stack
 Logo URL:    https://...              # Optional logo image URL
 ```
 
 **Categories** (optional) help organize your template catalog:
-```
+```text
 Categories: webserver, monitoring, database
 ```
 
@@ -90,6 +91,7 @@ Variables let template users customize deployments. Use Mustache syntax:
 
 ```yaml
 # In the Compose file, use variables like:
+
 services:
   app:
     image: {{ .image_name }}:{{ .image_tag }}
@@ -172,4 +174,4 @@ In Portainer Business Edition, templates can be shared with specific teams or ma
 
 ## Conclusion
 
-Custom templates in Portainer are a powerful way to standardize and speed up application deployments. By creating reusable templates for your most common workloads, you reduce configuration errors and make it easy for team members to deploy services correctly every time. Choose the creation method that fits your workflow — web editor for quick iteration, Git for versioned templates, or file upload for one-time imports.
+Custom templates in Portainer are a powerful way to standardize and speed up application deployments. By creating reusable templates for your most common workloads, you reduce configuration errors and make it easy for team members to deploy services correctly every time. Choose the creation method that fits your workflow - web editor for quick iteration, Git for versioned templates, or file upload for one-time imports.

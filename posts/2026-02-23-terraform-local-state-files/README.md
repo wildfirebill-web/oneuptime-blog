@@ -16,6 +16,7 @@ When you create a new Terraform project without specifying any backend configura
 
 ```hcl
 # main.tf
+
 # No backend block needed - local is the default
 
 provider "aws" {

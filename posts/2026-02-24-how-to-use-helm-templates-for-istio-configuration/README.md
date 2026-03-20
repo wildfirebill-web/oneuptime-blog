@@ -32,6 +32,7 @@ istio-config/
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: istio-config
 description: Istio configuration for microservices

@@ -26,6 +26,7 @@ The following configuration listens on port 3306 and forwards connections to a M
 
 ```nginx
 # /etc/nginx/nginx.conf (top-level, outside the http {} block)
+
 stream {
     # Define a backend pool of IPv4 MySQL servers
     upstream mysql_backends {

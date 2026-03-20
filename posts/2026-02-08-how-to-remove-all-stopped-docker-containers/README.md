@@ -18,6 +18,7 @@ When a container's main process exits, the container enters the "Exited" state. 
 
 ```bash
 # See all stopped containers
+
 docker ps -a --filter "status=exited"
 
 # Count how many stopped containers exist

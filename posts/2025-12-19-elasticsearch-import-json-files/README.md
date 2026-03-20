@@ -58,6 +58,7 @@ Convert JSON array to NDJSON format:
 
 ```bash
 # Input: products.json
+
 # [{"name":"Laptop","price":999},{"name":"Phone","price":599}]
 
 # Convert and import

@@ -20,6 +20,7 @@ Before deploying to Kubernetes, ensure you have a cluster available:
 
 ```bash
 # Check if kubectl is installed
+
 kubectl version --client
 
 # Verify you have a cluster connection

@@ -37,6 +37,7 @@ Before you start, make sure you have a running Kubernetes cluster (version 1.25 
 
 ```bash
 # Create a dedicated namespace for Keycloak
+
 kubectl create namespace keycloak
 
 # Create a secret for the Keycloak admin credentials

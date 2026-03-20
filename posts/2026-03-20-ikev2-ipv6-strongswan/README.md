@@ -14,6 +14,7 @@ strongSwan is the most widely-used open-source IKEv2 implementation on Linux. It
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install strongswan strongswan-swanctl
 
 # RHEL/CentOS/Fedora
@@ -29,7 +30,7 @@ strongSwan uses the modern `swanctl.conf` format (replaces legacy ipsec.conf).
 
 ### Directory Structure
 
-```
+```text
 /etc/swanctl/
 ├── conf.d/         ← Place .conf files here
 ├── x509/           ← Certificate files (PEM)
@@ -41,7 +42,7 @@ strongSwan uses the modern `swanctl.conf` format (replaces legacy ipsec.conf).
 
 ### GW1 (/etc/swanctl/conf.d/vpn.conf)
 
-```
+```text
 connections {
     gw1-to-gw2 {
         version = 2
@@ -106,7 +107,7 @@ cp gw1.key /etc/swanctl/private/
 chmod 600 /etc/swanctl/private/gw1.key
 ```
 
-```
+```text
 # Certificate-based configuration
 connections {
     gw1-to-gw2-cert {
@@ -141,7 +142,7 @@ connections {
 
 ## Remote Access VPN (Road Warrior)
 
-```
+```text
 connections {
     remote-access {
         version = 2

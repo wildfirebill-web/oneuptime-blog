@@ -16,6 +16,7 @@ Verify SPF and DKIM are configured:
 
 ```bash
 # Check SPF record
+
 dig TXT example.com | grep spf
 # Expected: "v=spf1 ip4:203.0.113.10 ~all"
 

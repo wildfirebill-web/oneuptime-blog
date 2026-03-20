@@ -37,6 +37,7 @@ Set a hard memory limit for a service:
 
 ```bash
 # Create a drop-in override (preferred over editing the unit file directly)
+
 sudo mkdir -p /etc/systemd/system/myservice.service.d/
 sudo nano /etc/systemd/system/myservice.service.d/resources.conf
 ```

@@ -20,6 +20,7 @@ Keyspaces stores data across multiple availability zones automatically, providin
 
 ```hcl
 # Configure Terraform with the AWS provider
+
 terraform {
   required_providers {
     aws = {

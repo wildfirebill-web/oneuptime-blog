@@ -18,6 +18,7 @@ Configure the OpenTelemetry Collector to receive syslog messages from your WAF:
 
 ```yaml
 # otel-collector-waf.yaml
+
 receivers:
   # Receive WAF logs via syslog
   syslog:

@@ -18,6 +18,7 @@ The first step is knowing which EIPs you actually have and whether they're in us
 
 ```bash
 # List all EIPs and their association status
+
 aws ec2 describe-addresses \
   --query 'Addresses[*].{IP:PublicIp,AllocationId:AllocationId,AssociationId:AssociationId,InstanceId:InstanceId,NetworkInterfaceId:NetworkInterfaceId}' \
   --output table

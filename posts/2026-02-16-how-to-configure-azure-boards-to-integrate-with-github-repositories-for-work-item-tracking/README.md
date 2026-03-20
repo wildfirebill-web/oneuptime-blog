@@ -65,6 +65,7 @@ Here is an example commit message that links to work item 1234:
 
 ```bash
 # This commit message will automatically link to Azure Boards work item 1234
+
 git commit -m "Fix null reference in user service AB#1234"
 ```
 

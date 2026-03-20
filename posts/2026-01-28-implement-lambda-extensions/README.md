@@ -321,6 +321,7 @@ func flushTelemetry() {
 
 ```makefile
 # Makefile
+
 GOOS=linux
 GOARCH=amd64
 EXTENSION_NAME=my-extension

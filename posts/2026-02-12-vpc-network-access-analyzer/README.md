@@ -29,6 +29,7 @@ Create a scope to find internet access to databases:
 
 ```bash
 # Create a scope that finds paths from the internet to any RDS instance
+
 aws ec2 create-network-insights-access-scope \
   --match-paths '[
     {

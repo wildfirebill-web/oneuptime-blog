@@ -42,6 +42,7 @@ Find all applications that belong to the project:
 
 ```bash
 # List all applications in the project
+
 argocd app list --project old-project
 
 # Get a count

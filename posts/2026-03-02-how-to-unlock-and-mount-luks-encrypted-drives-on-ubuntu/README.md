@@ -62,6 +62,7 @@ The `cryptsetup open` command unlocks the device and maps it to a name under `/d
 
 ```bash
 # Syntax: cryptsetup open <device> <mapper-name>
+
 sudo cryptsetup open /dev/sdb encrypted_data
 ```
 

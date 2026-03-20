@@ -32,6 +32,7 @@ The `for` loop is the most commonly used loop in Bash. It iterates over a list o
 
 ```bash
 # Basic for loop syntax
+
 for variable in list
 do
     # Commands to execute for each item

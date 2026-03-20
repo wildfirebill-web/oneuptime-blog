@@ -8,11 +8,11 @@ Description: Understand the rules for selecting the source address of ICMPv6 err
 
 ## Introduction
 
-When a router or host generates an ICMPv6 error message, the choice of source address is not arbitrary — RFC 4443 specifies that the source address must be one of the local addresses assigned to the interface through which the erroneous packet arrived. This rule ensures that the ICMPv6 error message can be routed back to the original source, and that the source address is meaningful for the network that will receive the error.
+When a router or host generates an ICMPv6 error message, the choice of source address is not arbitrary - RFC 4443 specifies that the source address must be one of the local addresses assigned to the interface through which the erroneous packet arrived. This rule ensures that the ICMPv6 error message can be routed back to the original source, and that the source address is meaningful for the network that will receive the error.
 
 ## RFC 4443 Source Address Rules
 
-```
+```sql
 RFC 4443 Section 2.2: ICMPv6 error message source address selection
 
 Rule 1: If the erroneous packet arrived on an interface with a
@@ -36,7 +36,7 @@ Goal: The ICMPv6 error source must be reachable from the
 
 ## Why Source Address Matters
 
-```
+```text
 Impact of ICMPv6 source address on operations:
 
 1. Reachability:
@@ -63,6 +63,7 @@ Impact of ICMPv6 source address on operations:
 
 ```bash
 # Send a packet that will trigger an ICMPv6 error
+
 # Watch what source address the error uses
 
 # Test 1: Trigger Destination Unreachable by sending to an unreachable host
@@ -141,7 +142,7 @@ print(f"ICMPv6 error source address: {src}")
 
 ## Common Source Address Mistakes
 
-```
+```text
 Mistake 1: Using an internal-only source for external errors
   Problem: Error sent from internal address; external firewalls may block it
   Fix:     Use the external interface address for errors to external destinations

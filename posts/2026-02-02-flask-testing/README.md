@@ -22,6 +22,7 @@ Create a simple Flask application that we will test throughout this guide:
 
 ```python
 # app.py
+
 from flask import Flask, jsonify, request
 
 def create_app(config=None):

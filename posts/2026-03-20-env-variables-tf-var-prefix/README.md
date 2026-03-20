@@ -14,6 +14,7 @@ OpenTofu can read variable values from environment variables prefixed with `TF_V
 
 ```bash
 # Set variable via environment variable
+
 export TF_VAR_environment="production"
 export TF_VAR_instance_count=5
 export TF_VAR_enable_monitoring=true

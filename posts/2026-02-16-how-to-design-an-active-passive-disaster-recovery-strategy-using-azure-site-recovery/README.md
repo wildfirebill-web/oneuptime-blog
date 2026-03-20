@@ -49,6 +49,7 @@ The vault is the management container for your DR configuration:
 
 ```bash
 # Create a Recovery Services vault in the secondary region
+
 az backup vault create \
   --resource-group dr-rg \
   --name my-recovery-vault \

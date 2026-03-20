@@ -46,6 +46,7 @@ On a workstation with internet access, pull the OCI artifacts you need.
 
 ```bash
 # Pull the artifact from the public registry to a local directory
+
 flux pull artifact oci://ghcr.io/my-org/my-app-manifests:v1.2.0 \
   --output ./artifacts/my-app-manifests
 

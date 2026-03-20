@@ -16,6 +16,7 @@ ACM is the easiest way to manage certificates in AWS. It provides free public ce
 
 ```hcl
 # Request a public certificate
+
 resource "aws_acm_certificate" "main" {
   domain_name       = "example.com"
   validation_method = "DNS"

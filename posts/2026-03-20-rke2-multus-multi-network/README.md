@@ -29,6 +29,7 @@ RKE2 has built-in support for deploying Multus as a secondary CNI. Configure it 
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 # Primary CNI plugin (Multus wraps this)
 cni:
   - multus

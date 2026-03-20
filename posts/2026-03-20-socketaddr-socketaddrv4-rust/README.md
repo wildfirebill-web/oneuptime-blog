@@ -2,14 +2,14 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, SocketAddr, SocketAddrV4, IPv4, Networking, std::net
+Tags: Rust, SocketAddr, SocketAddrV4, IPv4, Networking, Std::net
 
 Description: Learn how to work with SocketAddr and SocketAddrV4 in Rust for representing and manipulating IPv4 address-port pairs in network applications.
 
 ## SocketAddrV4 vs SocketAddr
 
-- `SocketAddrV4` — IPv4 address + port (always IPv4)
-- `SocketAddr` — enum that can hold either `V4(SocketAddrV4)` or `V6(SocketAddrV6)`
+- `SocketAddrV4` - IPv4 address + port (always IPv4)
+- `SocketAddr` - enum that can hold either `V4(SocketAddrV4)` or `V6(SocketAddrV6)`
 
 Use `SocketAddrV4` when you know you're working with IPv4; use `SocketAddr` for code that accepts both.
 

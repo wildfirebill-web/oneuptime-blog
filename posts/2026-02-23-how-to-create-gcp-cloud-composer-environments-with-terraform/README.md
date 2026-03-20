@@ -18,6 +18,7 @@ Cloud Composer depends on several APIs.
 
 ```hcl
 # Enable Cloud Composer and its dependencies
+
 resource "google_project_service" "composer" {
   project = var.project_id
   service = "composer.googleapis.com"

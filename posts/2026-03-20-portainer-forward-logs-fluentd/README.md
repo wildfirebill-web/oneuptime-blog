@@ -1,4 +1,4 @@
-# How to Forward Container Logs to Fluentd via Portainer
+# How to Forward Container Logs to Fluentd via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -50,6 +50,7 @@ Create `fluent.conf` to receive Docker logs and write to files:
 </source>
 
 # Parse JSON logs from application containers
+
 <filter docker.**>
   @type parser
   key_name log
@@ -159,9 +160,9 @@ Individual services can override this by specifying a different `logging` block.
 
 Use hierarchical tags for flexible routing in Fluentd:
 
-```
-docker.{stack}.{service}    — e.g., docker.my-app.api
-docker.{environment}.{service}  — e.g., docker.production.api
+```text
+docker.{stack}.{service}    - e.g., docker.my-app.api
+docker.{environment}.{service}  - e.g., docker.production.api
 ```
 
 Fluentd `<match>` directives support wildcards:

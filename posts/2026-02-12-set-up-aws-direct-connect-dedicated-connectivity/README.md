@@ -59,6 +59,7 @@ For a dedicated connection:
 
 ```bash
 # Request a 1 Gbps dedicated connection
+
 DX_CONN_ID=$(aws directconnect create-connection \
   --location EqDC2 \
   --bandwidth 1Gbps \

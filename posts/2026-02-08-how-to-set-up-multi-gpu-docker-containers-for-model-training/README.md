@@ -20,6 +20,7 @@ Check your GPU hardware and driver status.
 
 ```bash
 # Verify NVIDIA drivers are installed and GPUs are detected
+
 nvidia-smi
 ```
 

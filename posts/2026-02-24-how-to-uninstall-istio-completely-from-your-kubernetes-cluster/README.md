@@ -27,6 +27,7 @@ Stop new pods from getting sidecars:
 
 ```bash
 # List all namespaces with injection enabled
+
 kubectl get namespaces -l istio-injection=enabled
 
 # Remove the label from each namespace

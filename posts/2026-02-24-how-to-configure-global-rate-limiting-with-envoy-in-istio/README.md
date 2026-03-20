@@ -256,6 +256,7 @@ Send requests through the gateway and watch for 429 responses:
 
 ```bash
 # Quick burst of 200 requests
+
 for i in $(seq 1 200); do
   curl -s -o /dev/null -w "%{http_code}\n" http://your-gateway-ip/api/endpoint
 done | sort | uniq -c

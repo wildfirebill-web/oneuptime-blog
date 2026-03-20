@@ -95,6 +95,7 @@ Create the basic app directory structure.
 
 ```bash
 # Create the app directory
+
 mkdir app
 
 # Create essential files

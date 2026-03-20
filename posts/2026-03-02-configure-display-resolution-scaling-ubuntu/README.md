@@ -14,6 +14,7 @@ Getting display resolution and scaling right is one of the first things to addre
 
 ```bash
 # Check current resolution on X11
+
 xrandr | grep '*'  # asterisk marks the current mode
 
 # Full display information

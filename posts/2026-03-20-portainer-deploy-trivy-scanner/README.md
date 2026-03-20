@@ -46,6 +46,7 @@ On first run, Trivy downloads its vulnerability database (~30 MB). Pre-warm it:
 
 ```bash
 # Trigger database download
+
 docker exec -it $(docker ps -qf name=trivy) \
   trivy image --download-db-only
 
@@ -93,7 +94,7 @@ HIGH_COUNT=$(echo "$RESULT" | jq '[.Results[]?.Vulnerabilities[]? | select(.Seve
 echo "CRITICAL: $CRITICAL_COUNT, HIGH: $HIGH_COUNT"
 
 if [ "$CRITICAL_COUNT" -gt 0 ]; then
-  echo "Blocking deployment — CRITICAL vulnerabilities found:"
+  echo "Blocking deployment - CRITICAL vulnerabilities found:"
   echo "$RESULT" | jq '.Results[]?.Vulnerabilities[]? | select(.Severity=="CRITICAL") | {ID: .VulnerabilityID, Title: .Title, Package: .PkgName}'
   exit 1
 fi
@@ -108,7 +109,7 @@ Run daily scans on all deployed images:
 
 ```bash
 #!/bin/bash
-# daily-scan.sh — scan all running container images
+# daily-scan.sh - scan all running container images
 
 TRIVY_URL="http://localhost:4954"
 REPORT_DIR="/var/reports/trivy"

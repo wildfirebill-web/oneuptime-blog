@@ -14,6 +14,7 @@ Google Cloud Run is a serverless platform that runs containers without requiring
 
 ```bash
 # Install Google Cloud collection
+
 ansible-galaxy collection install google.cloud
 pip install google-auth google-api-python-client
 ```

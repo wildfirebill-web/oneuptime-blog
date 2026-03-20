@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Backup entire database
+
 mongodump --out /backup/$(date +%Y%m%d_%H%M%S)
 
 # Backup specific database

@@ -26,6 +26,7 @@ With this definition:
 
 ```hcl
 # Passing a string - Terraform infers type as string
+
 config = "hello"
 
 # Passing a number - Terraform infers type as number

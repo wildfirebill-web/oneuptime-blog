@@ -16,6 +16,7 @@ In this guide, we will cover creating Lambda deployment packages with Terraform 
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

@@ -20,6 +20,7 @@ For example, suppose you want to use the DEFAULT policy but disable CBC-mode cip
 
 ```bash
 # Create the module directory if it does not exist
+
 sudo mkdir -p /etc/crypto-policies/policies/modules
 
 # Create a module file that disables CBC ciphers for SSH

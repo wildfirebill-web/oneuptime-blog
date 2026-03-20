@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # Certificate storage on Ansible controller
 cert_local_dir: "{{ playbook_dir }}/files/certificates"
 

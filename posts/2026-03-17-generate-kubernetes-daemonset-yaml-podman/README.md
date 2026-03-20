@@ -18,6 +18,7 @@ A DaemonSet is a Kubernetes resource that runs a copy of a pod on every node (or
 
 ```bash
 # Run a monitoring agent container locally
+
 podman run -d --name node-exporter \
   -p 9100:9100 \
   -v /proc:/host/proc:ro \

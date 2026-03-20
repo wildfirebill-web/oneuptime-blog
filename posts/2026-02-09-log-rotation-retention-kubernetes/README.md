@@ -27,6 +27,7 @@ Configure kubelet to rotate container logs:
 
 ```yaml
 # /var/lib/kubelet/config.yaml
+
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 containerLogMaxSize: 50Mi     # Maximum size before rotation

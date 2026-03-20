@@ -57,6 +57,7 @@ resource "aws_cloudwatch_event_target" "cleanup_lambda" {
 }
 
 # Lambda needs permission to be invoked by EventBridge
+
 resource "aws_lambda_permission" "allow_eventbridge" {
   statement_id  = "AllowEventBridgeInvoke"
   action        = "lambda:InvokeFunction"

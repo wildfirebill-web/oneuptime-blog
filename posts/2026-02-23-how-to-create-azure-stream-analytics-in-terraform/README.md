@@ -61,6 +61,7 @@ resource "azurerm_resource_group" "streaming" {
 }
 
 # Create a Stream Analytics job
+
 resource "azurerm_stream_analytics_job" "main" {
   name                                     = "asa-telemetry-prod-001"
   location                                 = azurerm_resource_group.streaming.location

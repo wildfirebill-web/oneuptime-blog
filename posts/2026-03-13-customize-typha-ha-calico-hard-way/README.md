@@ -31,6 +31,7 @@ Pod anti-affinity by hostname guarantees no two Typha pods land on the same node
 
 ```yaml
 # typha-deployment-ha.yaml
+
 # Typha Deployment with zone-level redundancy enforced by topology spread constraints
 apiVersion: apps/v1
 kind: Deployment

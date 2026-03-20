@@ -20,6 +20,7 @@ Ensure you have Podman 5.x or later installed.
 
 ```bash
 # Check Podman version
+
 podman --version
 
 # Verify artifact pull command is available

@@ -24,6 +24,7 @@ Create a StatefulSet with primary and replica configuration:
 
 ```yaml
 # postgres-with-replicas.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

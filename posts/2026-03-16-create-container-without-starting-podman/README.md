@@ -20,6 +20,7 @@ The `podman create` command accepts the same arguments as `podman run` but stops
 
 ```bash
 # Create a container without starting it
+
 podman create --name my-alpine docker.io/library/alpine:latest echo "Hello World"
 ```
 

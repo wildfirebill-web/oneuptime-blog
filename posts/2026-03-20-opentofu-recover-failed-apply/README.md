@@ -20,6 +20,7 @@ Learn how to recover from failed OpenTofu apply operations using partial state c
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

@@ -26,6 +26,7 @@ This guide provides a systematic approach to validating all system requirements 
 
 ```bash
 # Check the kernel version
+
 uname -r
 
 # Minimum requirements by feature:

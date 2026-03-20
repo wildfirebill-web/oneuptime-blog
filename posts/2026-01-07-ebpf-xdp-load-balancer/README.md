@@ -75,6 +75,7 @@ The following commands install all necessary dependencies for eBPF development o
 
 ```bash
 # Install required packages on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y \
     clang \

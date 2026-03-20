@@ -77,6 +77,7 @@ kubectl apply -f allow-client.yaml
 
 ```bash
 # Should succeed
+
 kubectl exec -n bm-binary-test client-ok -- wget -qO- --timeout=5 http://server
 echo "Allowed client result: $?"
 

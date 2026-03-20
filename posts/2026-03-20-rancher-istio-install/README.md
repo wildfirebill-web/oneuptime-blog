@@ -47,6 +47,7 @@ Recommended resource allocations for a production setup:
 
 ```yaml
 # Example values.yaml for Istio installation via Rancher
+
 global:
   # Set the Istio control plane profile
   # Options: default, demo, minimal, remote

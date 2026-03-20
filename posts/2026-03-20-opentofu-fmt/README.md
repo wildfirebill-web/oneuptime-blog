@@ -14,6 +14,7 @@ Description: Learn how to use tofu fmt to automatically format OpenTofu configur
 
 ```bash
 # Format all .tf and .tfvars files in the current directory
+
 tofu fmt
 
 # Output: names of files that were changed
@@ -139,4 +140,4 @@ Most editors support automatic formatting via the `terraform-ls` language server
 
 ## Conclusion
 
-`tofu fmt` enforces a single canonical style across all OpenTofu files. Run it with `-recursive` before every commit, or enforce it in CI/CD with `-check -recursive`. The consistent formatting eliminates style debates and makes diffs easier to read — only meaningful changes appear in code reviews. Use pre-commit hooks to auto-format files so developers never have to think about formatting.
+`tofu fmt` enforces a single canonical style across all OpenTofu files. Run it with `-recursive` before every commit, or enforce it in CI/CD with `-check -recursive`. The consistent formatting eliminates style debates and makes diffs easier to read - only meaningful changes appear in code reviews. Use pre-commit hooks to auto-format files so developers never have to think about formatting.

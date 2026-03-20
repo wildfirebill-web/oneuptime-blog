@@ -37,6 +37,7 @@ A DDoS Protection plan is a resource that you create once and then associate wit
 
 ```bash
 # Create a DDoS Protection plan
+
 az network ddos-protection create \
   --name myDdosProtectionPlan \
   --resource-group myResourceGroup \

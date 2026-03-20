@@ -22,6 +22,7 @@ Apache's built-in authentication is a simple way to protect specific directories
 
 ```bash
 # mod_auth_basic is usually enabled by default on Ubuntu
+
 # Verify it's active
 sudo apache2ctl -M | grep auth_basic
 

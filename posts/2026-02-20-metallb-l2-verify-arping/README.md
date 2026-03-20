@@ -39,6 +39,7 @@ The `arping` tool sends ARP requests at Layer 2 and displays the replies. Instal
 
 ```bash
 # Debian / Ubuntu
+
 sudo apt-get update && sudo apt-get install -y iputils-arping
 
 # RHEL / CentOS / Fedora

@@ -244,6 +244,7 @@ http_filters:
       "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
 
 # Make sure these headers are not stripped
+
 route_config:
   request_headers_to_add:
     - header:

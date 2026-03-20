@@ -632,6 +632,7 @@ Alert on excessive replication delay:
 
 ```yaml
 # Prometheus alert rule
+
 - alert: MongoDBHighReplicationLag
   expr: mongodb.replication.lag > 10
   for: 5m

@@ -14,6 +14,7 @@ PM2 is a production-grade process manager for Node.js applications. It keeps you
 
 ```bash
 # Install globally
+
 npm install -g pm2
 
 # Verify installation

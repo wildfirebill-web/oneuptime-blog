@@ -34,6 +34,7 @@ In the GRUB menu, select "Advanced options" and choose an older kernel version.
 
 ```bash
 # Rebuild initramfs for the current kernel
+
 sudo dracut --force /boot/initramfs-$(uname -r).img $(uname -r)
 
 # Rebuild for all kernels

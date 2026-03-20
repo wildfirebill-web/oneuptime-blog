@@ -36,6 +36,7 @@ With consul-template:
 
 ```bash
 # Download the latest release
+
 CTMPL_VERSION="0.39.0"
 wget "https://releases.hashicorp.com/consul-template/${CTMPL_VERSION}/consul-template_${CTMPL_VERSION}_linux_amd64.zip"
 

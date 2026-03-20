@@ -29,6 +29,7 @@ Before starting, ensure you have:
 
 ```bash
 # Install on macOS
+
 brew install skaffold
 
 # Install on Linux

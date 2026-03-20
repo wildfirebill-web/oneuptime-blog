@@ -108,6 +108,7 @@ resource "aws_security_group" "efs" {
 }
 
 # Allow NFS from specific security groups
+
 resource "aws_security_group_rule" "efs_ingress_sg" {
   count = length(var.allowed_security_group_ids)
 

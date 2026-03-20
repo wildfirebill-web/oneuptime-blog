@@ -16,6 +16,7 @@ Getting started is straightforward.
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.grafana
 
 # Install the Python dependency

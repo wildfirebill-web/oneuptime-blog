@@ -24,6 +24,7 @@ Before setting up KAJ, you need an external key manager that supports the Cloud 
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable cloudkms.googleapis.com
 gcloud services enable ekms.googleapis.com
 

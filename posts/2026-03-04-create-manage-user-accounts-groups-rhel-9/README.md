@@ -41,6 +41,7 @@ Create a basic user with default settings:
 
 ```bash
 # Create a new user with defaults from /etc/login.defs
+
 sudo useradd jsmith
 
 # Set a password for the new user

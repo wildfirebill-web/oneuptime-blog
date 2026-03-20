@@ -29,6 +29,7 @@ Manage Gatekeeper itself as a Flux HelmRelease for GitOps consistency:
 
 ```yaml
 # infrastructure/controllers/gatekeeper.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -16,6 +16,7 @@ The `formatdate` function converts an RFC 3339 timestamp into a formatted string
 
 ```hcl
 # formatdate(format_spec, timestamp)
+
 formatdate("YYYY-MM-DD", "2026-02-23T14:30:00Z")
 # Result: "2026-02-23"
 ```

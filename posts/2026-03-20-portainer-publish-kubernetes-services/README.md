@@ -32,7 +32,7 @@ ClusterIP assigns a virtual IP accessible only within the cluster.
 
 When deploying an application, under **Publishing**:
 
-```
+```text
 Service type:       ClusterIP
 Container port:     8080
 Protocol:           TCP
@@ -65,7 +65,7 @@ NodePort exposes the service on a port on every node.
 
 ### Via Portainer
 
-```
+```text
 Service type:       NodePort
 Container port:     8080
 NodePort:           30080   (30000-32767 range)
@@ -99,7 +99,7 @@ LoadBalancer provisions an external load balancer from the cloud provider.
 
 ### Via Portainer Form
 
-```
+```text
 Service type:       LoadBalancer
 Container port:     8080
 Port:               80        (external port)
@@ -139,6 +139,7 @@ spec:
 
 ```bash
 # Get the LoadBalancer external IP
+
 kubectl get svc my-api-lb -n production
 # EXTERNAL-IP: 203.0.113.100
 ```
@@ -192,7 +193,7 @@ spec:
       targetPort: 5432
 ```
 
-DNS query for headless service returns all pod IPs — useful for Redis Cluster, PostgreSQL with streaming replication, etc.
+DNS query for headless service returns all pod IPs - useful for Redis Cluster, PostgreSQL with streaming replication, etc.
 
 ## Step 6: Expose Services via Ingress
 

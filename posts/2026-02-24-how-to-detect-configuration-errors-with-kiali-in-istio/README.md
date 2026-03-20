@@ -94,6 +94,7 @@ If two VirtualServices target the same host in the same namespace with conflicti
 
 ```yaml
 # Team A's VirtualService
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

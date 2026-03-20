@@ -24,6 +24,7 @@ Fast burns indicate severe ongoing issues. Slow burns show gradual degradation t
 
 ```yaml
 # Prometheus recording rule for burn rate
+
 groups:
 - name: error-budget-burn-rate
   interval: 30s

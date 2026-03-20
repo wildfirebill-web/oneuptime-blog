@@ -33,6 +33,7 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 app = Flask(__name__)
 
 # Exclude specific endpoints from tracing
+
 FlaskInstrumentor().instrument_app(
     app,
     excluded_urls="/health,/metrics,/ready"

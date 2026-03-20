@@ -33,6 +33,7 @@ Some versions may still be published to both registries, but relying on DockerHu
 
 ```yaml
 # OLD (DockerHub)
+
 containers:
 - name: collector
   image: otel/opentelemetry-collector-contrib:0.121.0

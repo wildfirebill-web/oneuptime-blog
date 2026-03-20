@@ -8,7 +8,7 @@ Description: Learn how to use scoped data sources inside check blocks in OpenTof
 
 ## Introduction
 
-Check blocks support scoped data sources — `data` blocks declared inside a `check` block rather than at the top level. Scoped data sources are evaluated only for the purpose of the check block's assertions and do not affect the main configuration or other resources. This allows you to query HTTP endpoints, DNS records, or cloud APIs during validation without creating dependencies in your resource graph.
+Check blocks support scoped data sources - `data` blocks declared inside a `check` block rather than at the top level. Scoped data sources are evaluated only for the purpose of the check block's assertions and do not affect the main configuration or other resources. This allows you to query HTTP endpoints, DNS records, or cloud APIs during validation without creating dependencies in your resource graph.
 
 ## Scoped Data Source Syntax
 
@@ -26,7 +26,7 @@ check "api_health" {
 }
 ```
 
-The `data "http" "health_check"` is only available inside this `check` block — it cannot be referenced elsewhere in the configuration.
+The `data "http" "health_check"` is only available inside this `check` block - it cannot be referenced elsewhere in the configuration.
 
 ## HTTP Endpoint Validation
 
@@ -108,13 +108,14 @@ check "rds_instance_available" {
 ## Difference Between Scoped and Root Data Sources
 
 ```hcl
-# Root-level data source — affects the resource graph, evaluated during plan
+# Root-level data source - affects the resource graph, evaluated during plan
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   # ...
 }
 
-# Scoped data source — only evaluated for this check, no graph effects
+# Scoped data source - only evaluated for this check, no graph effects
 check "ami_is_recent" {
   data "aws_ami" "current" {
     most_recent = true
@@ -130,7 +131,7 @@ check "ami_is_recent" {
 
 ## Handling Data Source Failures in Checks
 
-If a scoped data source fails (e.g., DNS doesn't resolve, HTTP times out), the check block itself fails with a warning — it does not block the apply:
+If a scoped data source fails (e.g., DNS doesn't resolve, HTTP times out), the check block itself fails with a warning - it does not block the apply:
 
 ```bash
 tofu apply

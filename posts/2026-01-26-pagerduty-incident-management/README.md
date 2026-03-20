@@ -82,6 +82,7 @@ Services represent the systems or components that can trigger incidents. Create 
 ```text
 Name: Payment Processing API
 Description: Handles all payment transactions for the e-commerce platform
+
 ```
 
 4. Select an escalation policy (we will create one shortly)
@@ -93,6 +94,7 @@ Each service has settings that affect how incidents are handled:
 
 ```yaml
 # Service Configuration Options
+
 Alert Creation: Create alerts and incidents
 Incident Urgency:
   - High: Critical production issues

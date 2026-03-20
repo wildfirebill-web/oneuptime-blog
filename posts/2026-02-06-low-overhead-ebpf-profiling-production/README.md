@@ -24,6 +24,7 @@ The sampling frequency has the most direct impact on overhead. The default of 19
 
 ```bash
 # Run with the default 19 Hz (recommended for production)
+
 docker run --rm -d \
   --name otel-ebpf-profiler \
   --privileged \

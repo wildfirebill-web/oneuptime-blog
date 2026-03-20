@@ -32,6 +32,7 @@ First, here is the baseline Collector config with probabilistic sampling:
 
 ```yaml
 # otel-collector-config.yaml
+
 # Baseline config with probabilistic sampling
 # The sampling_percentage will be updated dynamically by the controller
 

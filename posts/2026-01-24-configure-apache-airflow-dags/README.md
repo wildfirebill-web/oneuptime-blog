@@ -34,6 +34,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 # Define default arguments for all tasks
+
 default_args = {
     'owner': 'data-team',
     'depends_on_past': False,

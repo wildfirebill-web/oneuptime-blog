@@ -27,6 +27,7 @@ Install BullMQ for job queue management and ioredis for Redis connectivity. Bull
 
 ```bash
 # Install BullMQ for queue management and ioredis for Redis connection
+
 npm install bullmq ioredis
 ```
 

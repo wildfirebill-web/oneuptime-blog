@@ -26,6 +26,7 @@ This guide provisions a complete AWS VPC with public and private subnets across 
 
 ```yaml
 # infrastructure/networking/vpc/vpc.yaml
+
 apiVersion: ec2.aws.upbound.io/v1beta1
 kind: VPC
 metadata:

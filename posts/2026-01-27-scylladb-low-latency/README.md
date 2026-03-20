@@ -56,6 +56,7 @@ ScyllaDB automatically partitions data across CPU cores. Each core owns a specif
 
 ```python
 # ScyllaDB uses a consistent hashing algorithm to determine
+
 # which shard (and therefore which CPU core) owns a partition key
 
 # Example: Calculating which shard owns a key

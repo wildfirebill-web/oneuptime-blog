@@ -24,6 +24,7 @@ Run Netdata with full host visibility using a single Docker command.
 
 ```bash
 # Run Netdata with access to host metrics and Docker container metrics
+
 docker run -d \
   --name netdata \
   --pid=host \

@@ -47,6 +47,7 @@ This schema defines a user registration form with common validation requirements
 
 ```elixir
 # lib/my_app/accounts/user.ex
+
 defmodule MyApp.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset

@@ -75,6 +75,7 @@ Before installing Suricata, ensure your system meets these requirements:
 
 ```bash
 # Check Ubuntu version (20.04 LTS or later recommended)
+
 lsb_release -a
 
 # Ensure system is updated

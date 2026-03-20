@@ -121,4 +121,4 @@ tofu console
 
 ## Conclusion
 
-The `tonumber` function is essential when OpenTofu receives numeric data as strings — from CSV files, SSM parameters, external data sources, and environment variables. It enables you to perform arithmetic on string-typed numeric data from dynamic sources.
+The `tonumber` function is essential when OpenTofu receives numeric data as strings - from CSV files, SSM parameters, external data sources, and environment variables. It enables you to perform arithmetic on string-typed numeric data from dynamic sources.

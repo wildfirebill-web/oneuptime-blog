@@ -35,6 +35,7 @@ You might see errors like:
 
 ```hcl
 # variables.tf
+
 variable "region" {
   type    = string
   default = "us-east-1"

@@ -114,6 +114,7 @@ class SlidingTTLCache:
         return self.redis.ttl(key)
 
 # Usage
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 cache = SlidingTTLCache(r, default_ttl=300)  # 5 minute sliding window
 

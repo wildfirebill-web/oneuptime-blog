@@ -95,6 +95,7 @@ Sources must be available before anything else can be deployed:
 
 ```yaml
 # clusters/production/sources.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

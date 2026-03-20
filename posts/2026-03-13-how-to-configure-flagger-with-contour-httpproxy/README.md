@@ -29,6 +29,7 @@ Deploy Contour using the official Helm chart.
 
 ```bash
 # Add the Bitnami Helm repository for Contour
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

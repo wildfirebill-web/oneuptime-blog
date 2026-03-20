@@ -16,6 +16,7 @@ At its most basic, the AWS provider just needs a region.
 
 ```hcl
 # Minimal provider configuration
+
 provider "aws" {
   region = "us-east-1"
 }

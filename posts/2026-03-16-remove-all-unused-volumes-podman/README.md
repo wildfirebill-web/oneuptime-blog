@@ -18,6 +18,7 @@ As you create and remove containers over time, volumes can become orphaned. They
 
 ```bash
 # Remove all unused volumes
+
 podman volume prune
 ```
 

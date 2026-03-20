@@ -970,6 +970,7 @@ def build_and_search_example():
 
 
 # Run example
+
 if __name__ == "__main__":
     index = build_and_search_example()
 ```

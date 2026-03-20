@@ -27,6 +27,7 @@ This guide provides the specific steps for managing label exclusion in Cilium.
 
 ```bash
 # Exclude common high-cardinality labels
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set labels="k8s:!pod-template-hash k8s:!controller-revision-hash k8s:!pod-template-generation"
 ```

@@ -43,6 +43,7 @@ Consider this seemingly innocent metric:
 
 ```python
 # DANGEROUS: High-cardinality metric
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter(__name__)

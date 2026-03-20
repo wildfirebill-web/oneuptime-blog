@@ -36,6 +36,7 @@ Spring Boot Actuator provides dedicated endpoints for Kubernetes-style probes. E
 
 ```properties
 # Enable the health endpoint
+
 management.endpoints.web.exposure.include=health
 
 # Enable Kubernetes probe endpoints

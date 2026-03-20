@@ -173,6 +173,7 @@ tofu plan
 tofu apply
 
 # Get the dashboard URL
+
 echo "https://console.aws.amazon.com/cloudwatch/home?region=${AWS_REGION}#dashboards:name=${var.project_name}-service-health"
 ```
 

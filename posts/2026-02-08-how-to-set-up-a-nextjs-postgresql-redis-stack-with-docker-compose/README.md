@@ -42,6 +42,7 @@ Next.js applications benefit greatly from multi-stage builds. The final image on
 
 ```dockerfile
 # Stage 1: Install dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 # Copy only package files for dependency caching

@@ -131,6 +131,7 @@ Use cases:
 
 ```yaml
 # Resource-level replace for a specific ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -172,7 +173,7 @@ spec:
     path: ingress
 ```
 
-## Resource Pruning
+Resource Pruning
 
 Pruning removes resources from the cluster when they are deleted from Git. Without pruning, ArgoCD only adds and updates resources.
 
@@ -271,7 +272,7 @@ syncPolicy:
 
 This speeds up large applications by skipping unchanged resources.
 
-### Resource-Level Annotations
+Resource-Level Annotations
 
 Control sync behavior per resource:
 

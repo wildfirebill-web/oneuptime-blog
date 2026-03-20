@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers, Go, Testing
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, Go, Testing
 
 Description: Learn how to test a custom OpenTofu provider using acceptance tests, unit tests, and the terraform-plugin-testing framework.
 
@@ -52,7 +52,7 @@ import (
 func TestAccPetResource(t *testing.T) {
     // Skip if acceptance test credentials are not configured
     if os.Getenv("PETSTORE_API_KEY") == "" {
-        t.Skip("PETSTORE_API_KEY not set — skipping acceptance test")
+        t.Skip("PETSTORE_API_KEY not set - skipping acceptance test")
     }
 
     resource.Test(t, resource.TestCase{
@@ -118,6 +118,7 @@ var testAccProtoV6ProviderFactories = map[string]func() (tfprotov6.ProviderServe
 
 ```bash
 # Run unit tests
+
 go test ./internal/provider/ -v -run TestUnit
 
 # Run acceptance tests (requires real API credentials)

@@ -54,7 +54,7 @@ clear ip nat translation *
 
 Sample output:
 
-```
+```text
 Pro Inside global      Inside local       Outside local      Outside global
 tcp 203.0.113.10:1024  192.168.1.10:1024  8.8.8.8:80         8.8.8.8:80
 tcp 203.0.113.11:1025  192.168.1.20:1025  1.1.1.1:443        1.1.1.1:443
@@ -66,6 +66,7 @@ Unlike Cisco's named pools, Linux NAT can use IP ranges:
 
 ```bash
 # Translate 192.168.1.0/24 → pool of 203.0.113.10-203.0.113.20
+
 iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth1 \
     -j SNAT --to-source 203.0.113.10-203.0.113.20
 ```
@@ -85,7 +86,7 @@ Linux will distribute source IPs across the pool.
 
 - Dynamic NAT assigns pool addresses on demand; no fixed mappings.
 - The pool must have enough IPs to support concurrent connections.
-- Exhausted pools silently drop new connections — use PAT for better scalability.
+- Exhausted pools silently drop new connections - use PAT for better scalability.
 - On Linux, `--to-source IP1-IP2` specifies an IP range for dynamic SNAT.
 
 **Related Reading:**

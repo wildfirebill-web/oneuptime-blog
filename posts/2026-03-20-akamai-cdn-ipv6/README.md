@@ -10,7 +10,7 @@ Akamai has supported IPv6 since 2011 and has one of the largest dual-stack edge 
 
 ## Akamai IPv6 Architecture
 
-```
+```text
 IPv6 Client → Akamai Edge (dual-stack) → Origin (IPv4 or IPv6)
               ↑ Akamai has both A and AAAA in its edge CNAMEs
               ↑ Client uses IPv6 when available (Happy Eyeballs)
@@ -68,6 +68,7 @@ Configure how Akamai connects to your origin:
 
 ```bash
 # Install Akamai CLI
+
 brew install akamai/tap/akamai   # macOS
 # or: pip install akamai-edgegrid
 

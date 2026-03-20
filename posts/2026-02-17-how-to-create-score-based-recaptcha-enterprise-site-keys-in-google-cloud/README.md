@@ -33,6 +33,7 @@ Score-based keys are what most teams want. They do not interrupt the user experi
 
 ```bash
 # Enable the reCAPTCHA Enterprise API
+
 gcloud services enable recaptchaenterprise.googleapis.com --project=PROJECT_ID
 ```
 

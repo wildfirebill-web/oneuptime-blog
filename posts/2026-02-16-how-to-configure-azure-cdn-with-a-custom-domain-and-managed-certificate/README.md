@@ -45,6 +45,7 @@ Azure CDN comes in several SKUs. We will use the Microsoft Standard tier which s
 
 ```bash
 # Create a resource group
+
 az group create --name rg-cdn-demo --location eastus
 
 # Create a CDN profile with Microsoft Standard tier

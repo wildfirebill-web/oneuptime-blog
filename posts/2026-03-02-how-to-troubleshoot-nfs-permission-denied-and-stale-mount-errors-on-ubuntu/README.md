@@ -20,6 +20,7 @@ NFS uses Unix UID/GID for access control. When a client accesses an NFS mount, t
 
 ```bash
 # On the NFS client, check your current UID and GID
+
 id
 
 # On the NFS server, check who owns the files you're trying to access

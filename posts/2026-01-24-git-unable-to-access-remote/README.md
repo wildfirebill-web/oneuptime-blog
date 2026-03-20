@@ -54,6 +54,7 @@ fatal: unable to access 'https://github.com/user/repo.git/': Could not resolve h
 
 ```bash
 # Test DNS resolution
+
 nslookup github.com
 dig github.com
 

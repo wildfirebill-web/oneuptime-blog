@@ -230,6 +230,7 @@ V2_PCT=$((V2 * 100 / TOTAL))
 echo "v1: $V1 ($V1_PCT%), v2: $V2 ($V2_PCT%)"
 
 # Allow 10% tolerance
+
 if [ $V1_PCT -ge 70 ] && [ $V1_PCT -le 90 ]; then
   echo "PASS: Weight distribution within tolerance"
 else

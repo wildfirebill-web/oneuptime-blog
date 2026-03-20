@@ -146,6 +146,7 @@ Install a package using Bun's package manager:
 
 ```bash
 # Install a single package
+
 bun add express
 
 # Install a dev dependency

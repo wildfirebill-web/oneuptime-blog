@@ -60,6 +60,7 @@ Create a Flux `HelmRepository` pointing to the EKS charts repository.
 
 ```yaml
 # clusters/my-cluster/vpc-cni/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

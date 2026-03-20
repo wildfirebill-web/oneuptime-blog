@@ -19,6 +19,7 @@ Verify stream support:
 ```bash
 nginx -V 2>&1 | grep -o with-stream
 # Should output: with-stream
+
 ```
 
 ## Basic TCP Proxy Configuration

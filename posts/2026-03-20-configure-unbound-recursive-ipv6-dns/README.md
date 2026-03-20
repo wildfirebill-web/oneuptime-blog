@@ -14,6 +14,7 @@ Unbound is a lightweight, security-focused recursive DNS resolver developed by N
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y unbound
 
 # RHEL/CentOS

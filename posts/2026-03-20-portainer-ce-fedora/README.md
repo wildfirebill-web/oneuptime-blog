@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, fedora, docker, installation, container-management
+Tags: Portainer, Fedora, Docker, Installation, Container-management
 
 Description: A guide to installing Portainer Community Edition on Fedora Linux with Docker, including podman conflicts resolution and SELinux configuration.
 
@@ -28,6 +28,7 @@ Fedora ships with Podman which can conflict with Docker's socket:
 
 ```bash
 # Option 1: Remove podman (if you don't need it)
+
 sudo dnf remove -y podman podman-docker
 
 # Option 2: Keep podman and install Docker alongside

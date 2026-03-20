@@ -163,4 +163,4 @@ public class LocalIPv6Addresses {
 
 ## Conclusion
 
-Java's `Inet6Address` provides the foundation for IPv6 operations. Use `InetAddress.getByName()` for parsing — it accepts both compressed and full notation. Classification uses `isLoopbackAddress()`, `isMulticastAddress()`, `isLinkLocalAddress()`, and `isSiteLocalAddress()`. For DNS, `InetAddress.getAllByName()` returns all A and AAAA records; filter for `instanceof Inet6Address` to get only IPv6 results. The 16-byte array from `getAddress()` enables bit-level manipulation and custom prefix matching.
+Java's `Inet6Address` provides the foundation for IPv6 operations. Use `InetAddress.getByName()` for parsing - it accepts both compressed and full notation. Classification uses `isLoopbackAddress()`, `isMulticastAddress()`, `isLinkLocalAddress()`, and `isSiteLocalAddress()`. For DNS, `InetAddress.getAllByName()` returns all A and AAAA records; filter for `instanceof Inet6Address` to get only IPv6 results. The 16-byte array from `getAddress()` enables bit-level manipulation and custom prefix matching.

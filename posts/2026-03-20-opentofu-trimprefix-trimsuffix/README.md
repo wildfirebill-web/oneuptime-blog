@@ -8,7 +8,7 @@ Description: Learn how to use the trimprefix and trimsuffix functions in OpenTof
 
 ## Introduction
 
-The `trimprefix` and `trimsuffix` functions in OpenTofu remove a specified substring from the beginning or end of a string respectively. Unlike `trim` (which removes characters), these functions remove exact string matches — making them ideal for stripping known prefixes and suffixes from resource names, ARNs, and paths.
+The `trimprefix` and `trimsuffix` functions in OpenTofu remove a specified substring from the beginning or end of a string respectively. Unlike `trim` (which removes characters), these functions remove exact string matches - making them ideal for stripping known prefixes and suffixes from resource names, ARNs, and paths.
 
 ## Syntax
 

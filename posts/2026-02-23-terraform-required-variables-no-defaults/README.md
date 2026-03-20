@@ -16,6 +16,7 @@ To make a variable required, simply omit the `default` argument:
 
 ```hcl
 # Required - no default value
+
 variable "environment" {
   description = "Deployment environment (dev, staging, production)"
   type        = string

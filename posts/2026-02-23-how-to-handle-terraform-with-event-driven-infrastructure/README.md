@@ -16,6 +16,7 @@ In this guide, we will cover how to build event-driven infrastructure with Terra
 
 ```hcl
 # event-driven/eventbridge.tf
+
 # Central event bus with routing rules
 
 resource "aws_cloudwatch_event_bus" "main" {

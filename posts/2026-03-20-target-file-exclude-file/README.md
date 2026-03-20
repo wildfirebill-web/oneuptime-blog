@@ -1,4 +1,4 @@
-# How to Use -target-file and -exclude-file in OpenTofu
+# How to Use -target-file and -exclude-file in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ When you need to target or exclude many resources, listing them as individual `-
 
 ```bash
 # Create a file with resource addresses (one per line)
+
 cat > targets.txt << 'EOF'
 aws_instance.web
 aws_security_group.app
@@ -45,7 +46,7 @@ tofu apply -exclude-file=exclusions.txt
 
 The file format is simple: one resource address per line, with support for comments:
 
-```
+```text
 # networking resources
 module.networking.aws_vpc.main
 module.networking.aws_subnet.public[0]

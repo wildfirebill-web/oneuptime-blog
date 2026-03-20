@@ -57,6 +57,7 @@ Here is how to configure the FIDO2 policy using Microsoft Graph PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph with the required permissions
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.AuthenticationMethod"
 
 # Get the current FIDO2 authentication method configuration

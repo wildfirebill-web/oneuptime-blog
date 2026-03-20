@@ -69,6 +69,7 @@ graph TD
 
 ```bash
 # Download and install istioctl
+
 curl -L https://istio.io/downloadIstio | sh -
 
 # Move to the Istio directory
@@ -256,7 +257,7 @@ istioctl proxy-config routes productpage-v1-xxxxx
 istioctl analyze
 ```
 
-## Resource Configuration for Production
+Resource Configuration for Production
 
 ```yaml
 # Production Istio operator configuration

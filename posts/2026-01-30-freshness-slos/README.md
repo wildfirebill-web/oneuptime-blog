@@ -42,6 +42,7 @@ Age-based freshness measures the difference between now and the timestamp of the
 
 ```python
 # Age-based freshness calculation
+
 # Measures how old the newest data point is
 
 from datetime import datetime, timezone

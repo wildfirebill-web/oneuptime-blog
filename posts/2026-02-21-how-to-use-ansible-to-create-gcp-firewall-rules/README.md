@@ -41,6 +41,7 @@ Here is a rule that allows SSH access from a specific IP range:
 
 ```yaml
 # create-ssh-rule.yml - Allow SSH from a trusted IP range
+
 ---
 - name: Create SSH Firewall Rule
   hosts: localhost

@@ -52,6 +52,7 @@ def classify_text(text):
     return response.categories
 
 # Classify different types of content
+
 classify_text(
     "The new MacBook Pro features the M3 chip with improved GPU performance. "
     "Apple claims up to 40 percent faster rendering compared to the previous "

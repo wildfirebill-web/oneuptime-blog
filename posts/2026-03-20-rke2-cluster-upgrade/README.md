@@ -19,6 +19,7 @@ Keeping your RKE2 cluster up to date is essential for security patches, bug fixe
 
 ```bash
 # 1. Check current RKE2 version
+
 rke2 --version
 kubectl version --short
 

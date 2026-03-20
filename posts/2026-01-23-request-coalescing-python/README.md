@@ -65,6 +65,7 @@ Let us build a coalescer from scratch. The core idea is simple: track in-flight 
 
 ```python
 # coalescer.py
+
 # Request coalescing to prevent duplicate concurrent database calls
 import asyncio
 from typing import TypeVar, Generic, Callable, Awaitable, Dict, Optional

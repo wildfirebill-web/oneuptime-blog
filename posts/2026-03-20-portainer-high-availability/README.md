@@ -19,7 +19,7 @@ Portainer Business Edition supports high availability (HA) deployment where mult
 
 ## Understanding Portainer HA Architecture
 
-```
+```text
 [Load Balancer]
       |
  _____|_____
@@ -39,6 +39,7 @@ All instances share the same BoltDB database on shared storage. The load balance
 
 ```bash
 # Option A: NFS server (on a dedicated storage node)
+
 # Install NFS server
 sudo apt-get install -y nfs-kernel-server
 
@@ -165,7 +166,7 @@ docker service ps portainer_portainer
 
 ### HAProxy Configuration
 
-```
+```text
 frontend portainer_frontend
     bind *:443 ssl crt /etc/ssl/portainer.pem
     mode http

@@ -113,6 +113,7 @@ First, deploy an OpenTelemetry Collector configured to scrape MetalLB and export
 
 ```yaml
 # otel-collector-config.yaml
+
 # OpenTelemetry Collector configuration for scraping MetalLB metrics
 # and forwarding them to OneUptime.
 apiVersion: v1

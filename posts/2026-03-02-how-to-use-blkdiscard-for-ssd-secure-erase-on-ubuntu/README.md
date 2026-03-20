@@ -39,6 +39,7 @@ On a spinning disk, writing zeros to every sector effectively erases the data. O
 
 ```bash
 # Check if the drive supports TRIM (discard)
+
 lsblk --discard /dev/sda
 
 # Look for non-zero values in DISC-GRAN and DISC-MAX

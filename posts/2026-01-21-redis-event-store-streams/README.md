@@ -282,6 +282,7 @@ class Aggregate(ABC):
         self._uncommitted_events.clear()
 
 # Example: Order Aggregate
+
 class OrderAggregate(Aggregate):
     @property
     def aggregate_type(self) -> str:

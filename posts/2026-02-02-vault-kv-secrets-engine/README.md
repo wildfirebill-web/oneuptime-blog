@@ -106,6 +106,7 @@ KV v2 is the recommended version for most use cases due to its versioning and sa
 
 ```bash
 # Enable KV v2 at the default 'secret' path
+
 # The -version=2 flag specifies the KV version
 vault secrets enable -version=2 -path=secret kv
 

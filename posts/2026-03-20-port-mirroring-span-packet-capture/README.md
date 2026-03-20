@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Packet Capture, SPAN, Port Mirroring, Network Diagnostics
+Tags: Networking, Packet Capture, Span, Port Mirroring, Network Diagnostics
 
 Description: A practical guide to port mirroring and SPAN (Switched Port Analyzer) configurations for network packet capture and traffic analysis.
 
 ## What is Port Mirroring?
 
-Port mirroring (also called SPAN — Switched Port Analyzer) is a network switch feature that copies traffic from one or more source ports to a destination port where a monitoring device or packet analyzer is connected. It is used for:
+Port mirroring (also called SPAN - Switched Port Analyzer) is a network switch feature that copies traffic from one or more source ports to a destination port where a monitoring device or packet analyzer is connected. It is used for:
 
 - Network troubleshooting and diagnostics
 - Intrusion detection system (IDS) monitoring
@@ -20,25 +20,25 @@ Port mirroring (also called SPAN — Switched Port Analyzer) is a network switch
 | Type | Description |
 |---|---|
 | **SPAN** | Local mirroring on the same switch |
-| **RSPAN** | Remote SPAN — mirrors traffic to a VLAN across switches |
-| **ERSPAN** | Encapsulated Remote SPAN — tunnels mirrored traffic over IP using GRE |
+| **RSPAN** | Remote SPAN - mirrors traffic to a VLAN across switches |
+| **ERSPAN** | Encapsulated Remote SPAN - tunnels mirrored traffic over IP using GRE |
 
 ## Configuring SPAN on Cisco IOS
 
 ### Local SPAN
 
-```
+```text
 Switch(config)# monitor session 1 source interface GigabitEthernet0/1 both
 Switch(config)# monitor session 1 destination interface GigabitEthernet0/24
 ```
 
-- `source interface` — the port to mirror
-- `destination interface` — where the analyzer is connected
-- `both` — mirror ingress and egress; use `rx` or `tx` for one direction
+- `source interface` - the port to mirror
+- `destination interface` - where the analyzer is connected
+- `both` - mirror ingress and egress; use `rx` or `tx` for one direction
 
 ### Verify SPAN Session
 
-```
+```yaml
 Switch# show monitor session 1
 Session 1
 ---------
@@ -50,7 +50,7 @@ Destination Ports      : Gi0/24
 
 ## Configuring RSPAN
 
-```
+```text
 Switch-A(config)# vlan 999
 Switch-A(config-vlan)# remote-span
 Switch-A(config)# monitor session 1 source interface GigabitEthernet0/1
@@ -66,6 +66,7 @@ On Linux, you can mirror traffic using the Traffic Control (tc) tool:
 
 ```bash
 # Mirror all traffic on eth0 to eth1
+
 sudo tc qdisc add dev eth0 ingress
 sudo tc filter add dev eth0 parent ffff: protocol all u32 match u32 0 0 action mirred egress mirror dev eth1
 ```
@@ -102,7 +103,7 @@ wireshark capture.pcap &
 
 Useful Wireshark filters for analysis:
 
-```
+```text
 # Filter by IP
 ip.addr == 192.168.1.10
 
@@ -121,7 +122,7 @@ tcp.analysis.retransmission
 
 ## ERSPAN Configuration (Cisco)
 
-```
+```text
 Switch(config)# monitor session 1 type erspan-source
 Switch(config-mon-erspan-src)# source interface GigabitEthernet0/1 both
 Switch(config-mon-erspan-src)# destination
@@ -132,10 +133,10 @@ Switch(config-mon-erspan-src-dst)# no shutdown
 
 ## Best Practices
 
-1. **Mirror only necessary traffic** — full mirroring at high speeds can overwhelm the monitoring host
+1. **Mirror only necessary traffic** - full mirroring at high speeds can overwhelm the monitoring host
 2. **Use ERSPAN** for monitoring across data centers over IP networks
 3. **Separate monitoring VLANs** to keep analyzer traffic isolated
-4. **Set capture filters early** — writing to disk is the bottleneck at high traffic volumes
+4. **Set capture filters early** - writing to disk is the bottleneck at high traffic volumes
 5. **Rotate capture files** using tcpdump's `-C` and `-W` flags to limit disk usage
 
 ## Conclusion

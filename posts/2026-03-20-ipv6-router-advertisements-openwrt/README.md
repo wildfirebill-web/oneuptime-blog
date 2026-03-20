@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, OpenWrt, Router Advertisement, odhcpd, SLAAC, Networking
+Tags: IPv6, OpenWrt, Router Advertisement, Odhcpd, SLAAC, Networking
 
 Description: Configure IPv6 Router Advertisements on OpenWrt using odhcpd to enable SLAAC address autoconfiguration and DNS delivery for LAN clients.
 
@@ -14,6 +14,7 @@ OpenWrt uses `odhcpd` (OpenWrt DHCP Daemon) as its default IPv6 Router Advertise
 
 ```bash
 # Verify odhcpd is running
+
 /etc/init.d/odhcpd status
 
 # Check odhcpd version
@@ -37,10 +38,10 @@ uci commit dhcp
 ```
 
 The `ra` option values:
-- `server` — send RAs from this router
-- `relay` — relay RAs from another router upstream
-- `hybrid` — server mode when no upstream RA is available, relay otherwise
-- `disabled` — no RA
+- `server` - send RAs from this router
+- `relay` - relay RAs from another router upstream
+- `hybrid` - server mode when no upstream RA is available, relay otherwise
+- `disabled` - no RA
 
 ## Configuring DNS via RA (RDNSS)
 

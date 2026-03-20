@@ -39,6 +39,7 @@ The Collector is the central hub. It receives data from your applications and ex
 
 ```yaml
 # otel-collector-config.yaml
+
 # This config receives OTLP data and routes traces, metrics, and logs
 # to their respective Grafana backends.
 

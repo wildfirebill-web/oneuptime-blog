@@ -18,6 +18,7 @@ Buildah is a companion tool to Podman that specializes in building OCI container
 
 ```bash
 # Install Buildah
+
 # On Fedora/RHEL
 sudo dnf install buildah -y
 

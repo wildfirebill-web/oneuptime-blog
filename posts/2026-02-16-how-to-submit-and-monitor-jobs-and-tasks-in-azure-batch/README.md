@@ -27,6 +27,7 @@ A job is tied to a specific pool. When you create a job, it becomes active and s
 
 ```bash
 # Make sure you are logged in to the Batch account
+
 az batch account login \
   --name mybatchaccount \
   --resource-group batch-rg \

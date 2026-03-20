@@ -45,6 +45,7 @@ Create a well-organized repository structure that separates concerns:
 
 ```bash
 # Create the repository structure
+
 mkdir -p fleet-infra/{clusters,infrastructure,platform,apps,tenants}
 
 # Cluster-specific configurations

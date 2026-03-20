@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, dns, split-horizon, kubernetes, networking
+Tags: Rancher, DNS, Split-Horizon, Kubernetes, Networking
 
 Description: Guide to implementing split-horizon DNS in Rancher for different internal and external name resolution.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

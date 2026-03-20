@@ -55,6 +55,7 @@ First, get the current policy:
 
 ```bash
 # Get the current IAM policy including audit config
+
 gcloud projects get-iam-policy my-project --format=json > policy.json
 ```
 

@@ -22,6 +22,7 @@ Before diving into code, let us set up the dependencies. LlamaIndex supports mul
 
 ```bash
 # Core LlamaIndex packages
+
 pip install llama-index llama-index-core
 
 # LLM integrations (choose based on your provider)

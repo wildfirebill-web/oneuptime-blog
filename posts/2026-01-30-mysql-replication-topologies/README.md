@@ -44,6 +44,7 @@ Start by modifying the source server's configuration file to enable binary loggi
 
 [mysqld]
 # Unique identifier for this server in the replication topology
+
 server-id = 1
 
 # Enable binary logging with a descriptive prefix

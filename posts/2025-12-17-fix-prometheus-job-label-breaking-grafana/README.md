@@ -42,6 +42,7 @@ The `job` label comes from two sources:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'api-server'  # This becomes the job label
     static_configs:

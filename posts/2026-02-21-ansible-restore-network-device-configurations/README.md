@@ -18,6 +18,7 @@ The most straightforward restore replaces the entire running configuration with 
 
 ```yaml
 # full_restore.yml - Replace running config with a backup file
+
 ---
 - name: Full configuration restore
   hosts: target_device

@@ -35,6 +35,7 @@ The primary way to set persistent resource limits is through `/etc/security/limi
 
 ```yaml
 # set-ulimits.yml - Configure resource limits
+
 - name: Configure user resource limits
   hosts: all
   become: yes

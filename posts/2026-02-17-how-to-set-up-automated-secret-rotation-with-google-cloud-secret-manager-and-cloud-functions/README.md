@@ -37,6 +37,7 @@ The rotation process follows these steps:
 
 ```bash
 # Enable the Secret Manager API
+
 gcloud services enable secretmanager.googleapis.com
 
 # Create a secret for a database password

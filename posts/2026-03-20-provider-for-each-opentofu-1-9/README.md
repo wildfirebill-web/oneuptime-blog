@@ -16,6 +16,7 @@ Create multiple AWS provider instances from a set of regions.
 
 ```hcl
 # variables.tf
+
 variable "regions" {
   type    = set(string)
   default = ["us-east-1", "us-west-2", "eu-west-1"]

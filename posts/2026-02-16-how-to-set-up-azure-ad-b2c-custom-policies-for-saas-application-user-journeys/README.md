@@ -44,6 +44,7 @@ Download the starter pack and customize it for your tenant.
 
 ```bash
 # Clone the custom policy starter pack
+
 git clone https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack.git
 
 # Use the SocialAndLocalAccounts folder for the most common scenario

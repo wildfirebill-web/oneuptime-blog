@@ -70,6 +70,7 @@ resource "aws_secretsmanager_secret_rotation" "db" {
 
 ```hcl
 # Read the secret value in a data source (avoid storing in state)
+
 data "aws_secretsmanager_secret_version" "db" {
   secret_id = aws_secretsmanager_secret.db.id
 }

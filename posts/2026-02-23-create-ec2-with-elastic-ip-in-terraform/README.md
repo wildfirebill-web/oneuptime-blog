@@ -16,6 +16,7 @@ The most straightforward setup is creating an EC2 instance and an Elastic IP, th
 
 ```hcl
 # AWS provider configuration
+
 provider "aws" {
   region = "us-east-1"
 }

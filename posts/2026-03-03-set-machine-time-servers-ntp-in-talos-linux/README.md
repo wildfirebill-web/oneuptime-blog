@@ -29,6 +29,7 @@ The NTP configuration lives in the `machine.time` section of the Talos machine c
 
 ```yaml
 # machine-config.yaml
+
 machine:
   time:
     disabled: false

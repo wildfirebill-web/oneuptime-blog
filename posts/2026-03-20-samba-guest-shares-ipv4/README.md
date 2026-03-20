@@ -22,9 +22,9 @@ Guest shares allow any user on the network to connect without credentials. They'
     # Map unknown users (guests) to the 'nobody' unix user
     map to guest = bad user
     # Options:
-    # Never        — never map to guest
-    # Bad User     — map if authentication fails (user not found)
-    # Bad Password — map if password is wrong (less secure)
+    # Never        - never map to guest
+    # Bad User     - map if authentication fails (user not found)
+    # Bad Password - map if password is wrong (less secure)
 
     # Restrict to internal IPv4 only
     interfaces = 192.168.1.10/24 lo
@@ -32,6 +32,7 @@ Guest shares allow any user on the network to connect without credentials. They'
 
 #-----------------------------------------------
 # Read-only guest share
+
 #-----------------------------------------------
 [public]
     comment = Public Read-Only Share

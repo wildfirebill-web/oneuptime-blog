@@ -12,7 +12,7 @@ IPv6 Flow Labels enable stateless load balancing by providing a per-flow identif
 
 ## Why Flow Labels Help Load Balancing
 
-```
+```text
 Traditional load balancing: hash(src_ip, dst_ip, src_port, dst_port, protocol)
   → Must parse to Layer 4
   → Fails for IPsec ESP (no visible ports)
@@ -29,6 +29,7 @@ Flow Label load balancing: hash(src_ip, dst_ip, flow_label)
 
 ```bash
 # Check if Linux ECMP uses Flow Label for hashing
+
 cat /proc/sys/net/ipv6/flowlabel_state_ranges
 
 # Enable Flow Label-aware ECMP hashing in the kernel
@@ -48,7 +49,7 @@ ip -6 route show 2001:db8:2::/48
 
 ## HAProxy Load Balancer with IPv6 Flow Label Awareness
 
-```
+```text
 # haproxy.cfg - IPv6 frontend with flow-based persistence
 frontend ipv6_frontend
     bind [::]:443 ssl crt /etc/ssl/server.pem
@@ -119,7 +120,7 @@ class IPv6FlowLabelLoadBalancer:
         Returns:
             (backend_address, backend_port) tuple
         """
-        # Hash on (src, dst, flow_label) — same inputs → same output
+        # Hash on (src, dst, flow_label) - same inputs → same output
         src_bytes = socket.inet_pton(socket.AF_INET6, src_addr)
         dst_bytes = socket.inet_pton(socket.AF_INET6, dst_addr)
         fl_bytes  = struct.pack("!I", flow_label & 0xFFFFF)

@@ -14,7 +14,7 @@ pfSense uses strongSwan under the hood for IPsec. Site-to-site configuration req
 
 Navigate to **VPN > IPsec > Tunnels > Add P1**:
 
-```
+```text
 Key Exchange version:   IKEv2
 Internet Protocol:      IPv4
 Interface:              WAN
@@ -33,7 +33,7 @@ Phase 1 Proposal:
 
 Click **Show Phase 2 Entries > Add P2**:
 
-```
+```text
 Mode:            Tunnel IPv4
 Local Network:   192.168.1.0/24   (Site A LAN)
 Remote Network:  192.168.2.0/24   (Site B LAN)
@@ -48,12 +48,13 @@ Phase 2 Proposal:
 ## Firewall Rules
 
 Navigate to **Firewall > Rules > WAN > Add**:
-```
+```text
 Protocol: ESP
 Source:   203.0.113.2
 Description: Allow IPsec ESP from peer
+
 ```
-```
+```text
 Protocol: UDP
 Source:   203.0.113.2
 Port:     500, 4500
@@ -61,7 +62,7 @@ Description: Allow IKE from peer
 ```
 
 Navigate to **Firewall > Rules > IPsec > Add**:
-```
+```text
 Action: Pass
 Source: 192.168.2.0/24
 Destination: 192.168.1.0/24
@@ -81,7 +82,7 @@ Repeat the same Phase 1 and Phase 2 configuration on Site B with:
 Navigate to **Firewall > NAT > Outbound**:
 - Switch to **Hybrid** mode
 - Add rule:
-  ```
+  ```text
   Interface: WAN
   Source: 192.168.1.0/24
   Destination: 192.168.2.0/24
@@ -96,6 +97,7 @@ Navigate to **Status > IPsec**:
 
 ```bash
 # pfSense CLI
+
 ipsec statusall
 ping -S 192.168.1.1 192.168.2.1
 ```

@@ -29,6 +29,7 @@ For applications that natively support sd_notify:
 
 ```ini
 # ~/.config/containers/systemd/sd-app.container
+
 [Unit]
 Description=Application with sd_notify support
 

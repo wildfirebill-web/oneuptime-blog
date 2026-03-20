@@ -32,6 +32,7 @@ You can create a monitoring dashboard using the `gcloud` CLI with a JSON definit
 
 ```bash
 # Create a monitoring dashboard for Bigtable
+
 # This command creates a dashboard with multiple charts
 gcloud monitoring dashboards create --config-from-file=bigtable-dashboard.json \
   --project=your-project-id

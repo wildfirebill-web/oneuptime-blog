@@ -32,6 +32,7 @@ You can enable autoscale when creating a pool or on an existing pool.
 
 ```bash
 # Create a pool with autoscale enabled
+
 az batch pool create \
   --id autoscale-pool \
   --vm-size Standard_D2s_v3 \

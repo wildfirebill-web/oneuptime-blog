@@ -60,6 +60,7 @@ Unity Catalog needs a storage location for managed tables and the metastore meta
 
 ```bash
 # Grant the access connector permission to the storage account
+
 az role assignment create \
   --role "Storage Blob Data Contributor" \
   --assignee-object-id "<access-connector-managed-identity-id>" \

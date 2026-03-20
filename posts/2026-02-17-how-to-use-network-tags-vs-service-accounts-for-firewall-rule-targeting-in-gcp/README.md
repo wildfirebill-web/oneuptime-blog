@@ -18,6 +18,7 @@ Network tags are simple string labels you attach to VM instances. Firewall rules
 
 ```bash
 # Create a VM with network tags
+
 gcloud compute instances create web-server \
   --zone=us-central1-a \
   --machine-type=e2-medium \

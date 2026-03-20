@@ -34,6 +34,7 @@ Cleaner, easier to audit, and harder to forget a port.
 
 ```bash
 # Create a new service definition
+
 firewall-cmd --permanent --new-service=myapp
 
 # Set a description

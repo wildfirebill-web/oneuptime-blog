@@ -12,7 +12,7 @@ The Redirected Header option (Type 4) appears only in ICMPv6 Redirect messages (
 
 ## Redirected Header Option Format
 
-```
+```text
 NDP Redirected Header Option (Type 4):
 
  0                   1                   2                   3
@@ -33,7 +33,7 @@ The original packet starts at byte 8 of the option (after headers)
 
 ## Redirect Message with Options
 
-```
+```text
 Complete Redirect message structure:
 
 Redirect fixed body (20 bytes):
@@ -105,6 +105,7 @@ def parse_redirect_message(icmpv6_data: bytes) -> dict:
 
 ```bash
 # Check if host accepts redirects
+
 cat /proc/sys/net/ipv6/conf/eth0/accept_redirects
 # 1 = accept (default); 0 = ignore all redirects
 

@@ -13,12 +13,12 @@ Balance-XOR (mode 2) uses a hash-based algorithm to select which slave interface
 ## How Balance-XOR Works
 
 The transmit slave is selected using:
-```
+```text
 slave = hash(src_MAC XOR dst_MAC) % num_slaves
 ```
 
 With `layer3+4` policy:
-```
+```text
 slave = hash(src_IP, dst_IP, src_port, dst_port) % num_slaves
 ```
 
@@ -26,6 +26,7 @@ slave = hash(src_IP, dst_IP, src_port, dst_port) % num_slaves
 
 ```bash
 # Load the bonding module
+
 modprobe bonding
 
 # Create bond in balance-xor mode
@@ -66,7 +67,7 @@ ip link set bond0 type bond xmit_hash_policy layer2
 # Layer2+3: based on MAC + IP
 ip link set bond0 type bond xmit_hash_policy layer2+3
 
-# Layer3+4: based on IP + port — best for most TCP/UDP workloads
+# Layer3+4: based on IP + port - best for most TCP/UDP workloads
 ip link set bond0 type bond xmit_hash_policy layer3+4
 ```
 

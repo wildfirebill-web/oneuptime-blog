@@ -36,6 +36,7 @@ Terraform's primary mechanism for preventing race conditions is state locking. W
 
 ```hcl
 # backend.tf - S3 backend with DynamoDB locking
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

@@ -37,7 +37,7 @@ terraform {
 
 ## Version Constraint Operators
 
-```
+```text
 Operator    Meaning                  Example
 ---------   -------                  -------
 =           Exact version            = 5.50.0
@@ -89,6 +89,7 @@ An unconstrained provider downloads the latest version on every `tofu init`.
 
 ```hcl
 # BAD: No version constraint - downloads latest on every init
+
 terraform {
   required_providers {
     aws = {

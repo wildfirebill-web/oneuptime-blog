@@ -71,6 +71,7 @@ The following commands check your kernel version and eBPF support. eBPF profilin
 
 ```bash
 # Check kernel version - should be 4.9+ for basic eBPF, 5.x+ recommended
+
 uname -r
 
 # Verify eBPF support in your kernel

@@ -1,8 +1,8 @@
-# How to Use the tofu console for Interactive Expression Testing
+# How to Use the tofu console for Interactive Expression Testing (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu console, Debugging, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu console, Debugging, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using the OpenTofu interactive console to test expressions, functions, and inspect state values.
 
@@ -14,6 +14,7 @@ Description: A guide to using the OpenTofu interactive console to test expressio
 
 ```bash
 # Navigate to your project directory
+
 cd /path/to/your/project
 
 # Open the console (reads current state)

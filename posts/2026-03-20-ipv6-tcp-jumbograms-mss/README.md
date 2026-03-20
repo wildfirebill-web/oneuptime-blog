@@ -12,7 +12,7 @@ TCP's Maximum Segment Size (MSS) is negotiated during the SYN handshake and defi
 
 ## TCP MSS Standard Limits
 
-```
+```text
 Standard TCP MSS calculation:
 
 IPv6 payload length limit: 65535 bytes (16-bit field)
@@ -31,7 +31,7 @@ In practice, standard Ethernet limits MSS to:
 
 ## TCP MSS with Jumbograms
 
-```
+```text
 Jumbogram TCP MSS:
 
 On a jumbogram path (link MTU > 65535):
@@ -89,6 +89,7 @@ def estimate_tcp_performance(mtu: int, rtt_ms: float,
     }
 
 # Compare standard MTU vs jumbo frames vs theoretical jumbogram
+
 scenarios = [
     (1500,  0.1, 10),   # Standard Ethernet, 0.1ms RTT, 10 Gbps
     (9000,  0.1, 10),   # Jumbo frames, 0.1ms RTT, 10 Gbps

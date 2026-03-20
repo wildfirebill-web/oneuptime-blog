@@ -28,6 +28,7 @@ Step 3 is where the time goes. Each resource requires at least one API call, som
 
 ```bash
 # Run plan without refreshing state from the cloud provider
+
 terraform plan -refresh=false
 
 # Run apply without refreshing state

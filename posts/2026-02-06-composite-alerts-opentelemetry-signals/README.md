@@ -33,6 +33,7 @@ Here is a Collector config that routes all three signal types:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

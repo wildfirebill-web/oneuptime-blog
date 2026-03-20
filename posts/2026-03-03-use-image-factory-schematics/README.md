@@ -20,6 +20,7 @@ Here is the simplest possible schematic:
 
 ```yaml
 # minimal-schematic.yaml
+
 customization:
   systemExtensions:
     officialExtensions:

@@ -85,6 +85,7 @@ After changing max_connections, you must restart PostgreSQL:
 
 ```bash
 # Check if the change will be applied
+
 sudo -u postgres psql -c "SELECT name, setting, pending_restart FROM pg_settings WHERE name = 'max_connections';"
 
 # Restart PostgreSQL

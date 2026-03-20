@@ -14,6 +14,7 @@ The `ip addr` command displays address information for network interfaces. The `
 
 ```bash
 # Show IPv4 addresses on all interfaces
+
 ip -4 addr show
 
 # Sample output:

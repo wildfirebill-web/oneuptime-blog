@@ -34,6 +34,7 @@ Before configuring ip6tables, ensure you have:
 
 ```bash
 # Check if IPv6 is enabled on your system
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 # Output: 0 means IPv6 is enabled, 1 means disabled
 

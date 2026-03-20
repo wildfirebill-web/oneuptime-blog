@@ -58,6 +58,7 @@ prometheus-install/
 
 ```yaml
 # roles/prometheus/defaults/main.yml
+
 prometheus_version: "2.48.1"
 prometheus_platform: "linux-amd64"
 

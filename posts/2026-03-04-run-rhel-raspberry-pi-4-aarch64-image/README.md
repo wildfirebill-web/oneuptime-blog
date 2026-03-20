@@ -21,6 +21,7 @@ Red Hat provides an aarch64 image that can run on the Raspberry Pi 4 Model B (4G
 
 ```bash
 # From the Red Hat Customer Portal, download the RHEL image for ARM
+
 # Navigate to: https://access.redhat.com/downloads/content/rhel
 # Select architecture: aarch64
 # Download the "KVM Guest Image" or "Raw image" for Raspberry Pi

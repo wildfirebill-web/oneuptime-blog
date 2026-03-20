@@ -267,6 +267,7 @@ echo "Create DNS A record: jaeger.example.com -> $GATEWAY_IP"
 
 ```bash
 # Test the connection
+
 curl -k https://jaeger.example.com/api/services
 
 # If using OAuth2 Proxy, you should be redirected to login

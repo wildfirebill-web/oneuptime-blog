@@ -8,7 +8,7 @@ Description: Learn why adding AAAA records for servers without real IPv6 connect
 
 ## The Problem: Premature AAAA Records
 
-A common mistake during IPv6 deployment is adding AAAA records to DNS before the server actually has working IPv6 connectivity. When a client receives a AAAA record and tries to connect, it experiences a connection timeout or failure before falling back to IPv4 — leading to noticeable delays for users.
+A common mistake during IPv6 deployment is adding AAAA records to DNS before the server actually has working IPv6 connectivity. When a client receives a AAAA record and tries to connect, it experiences a connection timeout or failure before falling back to IPv4 - leading to noticeable delays for users.
 
 This is particularly painful because:
 - **Modern clients prefer IPv6**: When AAAA records exist, clients try IPv6 first
@@ -18,10 +18,10 @@ This is particularly painful because:
 ## Why a Server Might Have a AAAA Record But No Working IPv6
 
 1. **AAAA record added before IPv6 was configured on the server**
-2. **IPv6 configured but no default route** — the server has an IPv6 address but can't route traffic
-3. **Firewall blocks IPv6** — packets are silently dropped
-4. **IPv6 on wrong interface** — IPv6 bound to loopback or wrong NIC
-5. **Service not listening on IPv6** — nginx/Apache only listening on `0.0.0.0` not `::`
+2. **IPv6 configured but no default route** - the server has an IPv6 address but can't route traffic
+3. **Firewall blocks IPv6** - packets are silently dropped
+4. **IPv6 on wrong interface** - IPv6 bound to loopback or wrong NIC
+5. **Service not listening on IPv6** - nginx/Apache only listening on `0.0.0.0` not `::`
 
 ## Checking Before Adding AAAA Records
 
@@ -29,6 +29,7 @@ Run these checks on the server BEFORE adding a AAAA record:
 
 ```bash
 # 1. Verify the server has a routable IPv6 address (not just link-local)
+
 ip -6 addr show | grep -v 'fe80'
 # Should show your 2001:db8:... or similar global address
 

@@ -23,6 +23,7 @@ Before starting, make sure you have the following in place.
 
 ```bash
 # Install or update the aks-preview extension
+
 az extension add --name aks-preview --upgrade
 
 # Register the required resource providers

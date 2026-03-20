@@ -48,6 +48,7 @@ For repeatable setups, define your dashboard as JSON and create it via the CLI. 
 
 ```bash
 # Create a dashboard with a JSON body definition
+
 aws cloudwatch put-dashboard \
   --dashboard-name "my-app-production" \
   --dashboard-body file://dashboard.json

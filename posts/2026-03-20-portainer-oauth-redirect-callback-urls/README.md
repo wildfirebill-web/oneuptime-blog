@@ -1,4 +1,4 @@
-# How to Configure OAuth Redirect and Callback URLs in Portainer
+# How to Configure OAuth Redirect and Callback URLs in Portainer - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,13 +12,13 @@ The redirect URI (callback URL) is one of the most common sources of OAuth confi
 
 ## What Is a Redirect URI?
 
-After a user authenticates with the identity provider, the IdP redirects them back to your application using the redirect URI. This URI is a security measure — the IdP only redirects to pre-approved URIs. If the URI Portainer requests doesn't match what's registered with the IdP, authentication fails with a "redirect_uri_mismatch" error.
+After a user authenticates with the identity provider, the IdP redirects them back to your application using the redirect URI. This URI is a security measure - the IdP only redirects to pre-approved URIs. If the URI Portainer requests doesn't match what's registered with the IdP, authentication fails with a "redirect_uri_mismatch" error.
 
 ## Portainer's Redirect URI
 
 Portainer's redirect URI is always:
 
-```
+```text
 https://your-portainer-domain.com/
 ```
 
@@ -43,7 +43,7 @@ Even a missing trailing slash causes failure with most IdPs.
 
 In Settings → Authentication → OAuth:
 
-```
+```text
 Redirect URL: https://portainer.example.com/
 ```
 
@@ -102,21 +102,21 @@ curl -X PUT \
 
 ### Missing Trailing Slash
 
-```
+```text
 Wrong:   https://portainer.example.com
 Correct: https://portainer.example.com/
 ```
 
 ### Wrong Scheme
 
-```
+```text
 Wrong:   http://portainer.example.com/   (if running on HTTPS)
 Correct: https://portainer.example.com/
 ```
 
 ### Non-Standard Port
 
-```
+```text
 Wrong:   https://portainer.example.com/   (if running on port 8443)
 Correct: https://portainer.example.com:8443/
 ```
@@ -124,7 +124,7 @@ Correct: https://portainer.example.com:8443/
 ### URL Behind Reverse Proxy
 
 If Portainer is behind a proxy on a different port:
-```
+```text
 Wrong (internal port): https://portainer.example.com:9443/
 Correct (public URL):  https://portainer.example.com/
 ```
@@ -135,12 +135,13 @@ Always use the URL that users see in their browser, not internal ports.
 
 When you get a "redirect_uri_mismatch" error:
 
-1. Note the exact error message — most IdPs show the "requested" and "expected" URIs
+1. Note the exact error message - most IdPs show the "requested" and "expected" URIs
 2. Compare them character by character
 3. Update whichever side is different
 
 ```bash
 # Check what Portainer is configured to send
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   https://portainer.example.com/api/settings \
   | python3 -c "import sys,json; s=json.load(sys.stdin); print(s.get('oauthsettings',{}).get('RedirectURI','not set'))"
@@ -150,7 +151,7 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 If Portainer runs at a subpath (`https://example.com/portainer/`), the redirect URI must be the full subpath:
 
-```
+```text
 Redirect URL: https://example.com/portainer/
 ```
 
@@ -158,4 +159,4 @@ Also ensure `--base-url=/portainer` is set in Portainer's startup command.
 
 ## Conclusion
 
-Redirect URI configuration is a precision exercise — every character matters. The rule is simple: the URI configured in Portainer's OAuth settings must be character-for-character identical to what's registered with your identity provider. Use the HTTPS URL that users see in their browser, always include the trailing slash, and for non-standard ports, include the port number.
+Redirect URI configuration is a precision exercise - every character matters. The rule is simple: the URI configured in Portainer's OAuth settings must be character-for-character identical to what's registered with your identity provider. Use the HTTPS URL that users see in their browser, always include the trailing slash, and for non-standard ports, include the port number.

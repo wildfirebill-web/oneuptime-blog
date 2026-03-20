@@ -29,6 +29,7 @@ Before splitting, decide on the boundaries. Common patterns include:
 
 ```bash
 # List all resources in the monolithic state
+
 tofu state list
 
 # Example output:

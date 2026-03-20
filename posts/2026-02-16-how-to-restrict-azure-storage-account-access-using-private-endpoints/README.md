@@ -45,6 +45,7 @@ If your application uses both blob and file storage, you need two Private Endpoi
 
 ```bash
 # Get the storage account resource ID
+
 STORAGE_ID=$(az storage account show \
   --resource-group myResourceGroup \
   --name mystorageaccount \

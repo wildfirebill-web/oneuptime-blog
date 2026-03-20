@@ -71,6 +71,7 @@ Update your system packages first:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

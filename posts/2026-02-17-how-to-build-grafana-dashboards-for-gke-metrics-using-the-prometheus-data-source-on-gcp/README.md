@@ -36,6 +36,7 @@ The easiest way to deploy Prometheus is using the kube-prometheus-stack Helm cha
 
 ```bash
 # Add the Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

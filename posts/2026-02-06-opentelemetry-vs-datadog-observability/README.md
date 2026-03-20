@@ -51,6 +51,7 @@ The Datadog approach uses their proprietary tracing library. The decorator and t
 
 ```python
 # order_service.py - Datadog instrumentation
+
 from ddtrace import tracer, patch_all
 
 # Automatically patch common libraries (requests, flask, etc.)

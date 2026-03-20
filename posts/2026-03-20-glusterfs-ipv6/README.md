@@ -14,6 +14,7 @@ GlusterFS is a distributed file system that supports IPv6 for both peer-to-peer 
 
 ```bash
 # Install GlusterFS server on all nodes
+
 apt-get install -y glusterfs-server    # Debian/Ubuntu
 dnf install -y glusterfs-server        # RHEL/CentOS
 
@@ -28,7 +29,7 @@ ss -tlnp | grep glusterd
 ## Configure /etc/hosts for IPv6 GlusterFS Nodes
 
 ```bash
-# /etc/hosts — on all GlusterFS nodes
+# /etc/hosts - on all GlusterFS nodes
 # Use hostnames consistently across all nodes
 
 2001:db8::10    gluster1 gluster1.example.com
@@ -150,14 +151,14 @@ ss -tlnp | grep glusterfs
 ## Troubleshooting GlusterFS IPv6 Issues
 
 ```bash
-# Peer probe fails — check if glusterd is reachable
+# Peer probe fails - check if glusterd is reachable
 ping6 gluster2
 telnet -6 gluster2 24007
 
-# Volume mount fails — check gluster volume status
+# Volume mount fails - check gluster volume status
 gluster volume status myvol
 
-# Brick offline — check GlusterFS logs
+# Brick offline - check GlusterFS logs
 tail -f /var/log/glusterfs/glusterd.log | grep -i error
 
 # Check if transport is actually using IPv6

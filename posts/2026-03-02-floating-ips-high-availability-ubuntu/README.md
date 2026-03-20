@@ -26,6 +26,7 @@ This approach suits clusters already using Pacemaker for other resources.
 
 ```bash
 # Install on both nodes
+
 sudo apt update
 sudo apt install -y pacemaker corosync pcs
 

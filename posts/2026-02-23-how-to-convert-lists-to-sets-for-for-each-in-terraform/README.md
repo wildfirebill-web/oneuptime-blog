@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, For_each, Sets, Lists, Infrastructure as Code
+Tags: Terraform, HCL, for_each, Sets, Lists, Infrastructure as Code
 
 Description: Learn how to convert Terraform lists to sets and maps for use with for_each, including toset, for expressions, and techniques for transforming list data into for_each-compatible collections.
 
@@ -20,6 +20,7 @@ Sets are unordered and guarantee uniqueness. Maps have unique keys by definition
 
 ```hcl
 # This FAILS
+
 resource "aws_iam_user" "this" {
   for_each = ["alice", "bob", "charlie"]  # Error: list is not allowed
   name     = each.key

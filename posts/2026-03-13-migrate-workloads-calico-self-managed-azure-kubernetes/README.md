@@ -33,6 +33,7 @@ Capture current pod CIDRs and node assignments to reference during migration:
 
 ```bash
 # List all nodes with their internal IPs
+
 kubectl get nodes -o custom-columns=NAME:.metadata.name,IP:.status.addresses[0].address
 
 # Check the current pod CIDR allocation

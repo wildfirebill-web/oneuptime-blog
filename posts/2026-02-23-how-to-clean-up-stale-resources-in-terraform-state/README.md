@@ -36,6 +36,7 @@ Look for these patterns in the output:
 
 ```text
 # Resource in state but not in config - will be destroyed
+
 - aws_instance.old_server will be destroyed
   (because aws_instance.old_server is not in configuration)
 
@@ -298,7 +299,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: 'Stale Terraform resources detected',
-              body: `Stale resources were found during the weekly cleanup scan.\n\n\`\`\`\n${report}\n\`\`\``,
+              body: `Stale resources were found during the weekly cleanup scan.\n\n```\n${report}\n````,
               labels: ['terraform', 'cleanup']
             });
 ```

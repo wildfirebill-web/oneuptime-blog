@@ -30,6 +30,7 @@ When pods cannot resolve DNS names, start by identifying where in the resolution
 
 ```bash
 # Step 1: Check if the pod can reach kube-dns
+
 kubectl -n production exec deploy/api-service -- \
   nslookup kubernetes.default.svc.cluster.local
 

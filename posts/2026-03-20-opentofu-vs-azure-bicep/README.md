@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure Bicep, Azure, Comparison, Infrastructure as Code, DevOps
 
-Description: Compare OpenTofu and Azure Bicep for managing Azure infrastructure — their syntax, multi-cloud support, and Azure-native integration — to choose the right tool for your Azure deployments.
+Description: Compare OpenTofu and Azure Bicep for managing Azure infrastructure - their syntax, multi-cloud support, and Azure-native integration - to choose the right tool for your Azure deployments.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ OpenTofu (HCL):
 
 ```hcl
 # OpenTofu: Deploy Azure resources
+
 resource "azurerm_resource_group" "main" {
   name     = "prod-rg"
   location = "East US"
@@ -87,9 +88,9 @@ resource vnet 'Microsoft.Network/virtualNetworks@2023-09-01' = {
 
 ## Azure Bicep Advantages
 
-**Native ARM resource coverage** — Every Azure resource available the day it launches, because Bicep compiles directly to ARM.
+**Native ARM resource coverage** - Every Azure resource available the day it launches, because Bicep compiles directly to ARM.
 
-**What-if analysis** — Similar to `tofu plan`, but integrated with Azure deployment history:
+**What-if analysis** - Similar to `tofu plan`, but integrated with Azure deployment history:
 
 ```bash
 # Bicep: Preview changes before deploying
@@ -99,13 +100,13 @@ az deployment group what-if \
   --parameters environment=production
 ```
 
-**No state file management** — Azure manages deployment state. No S3 bucket or storage account needed for state.
+**No state file management** - Azure manages deployment state. No S3 bucket or storage account needed for state.
 
-**Azure Policy integration** — Policy-as-code is native to the Azure platform, separate from deployment tooling.
+**Azure Policy integration** - Policy-as-code is native to the Azure platform, separate from deployment tooling.
 
 ## OpenTofu Advantages
 
-**Multi-cloud** — Manage Azure, AWS, GCP, and other resources together.
+**Multi-cloud** - Manage Azure, AWS, GCP, and other resources together.
 
 ```hcl
 # OpenTofu: Azure + AWS in one config
@@ -116,7 +117,7 @@ resource "azurerm_resource_group" "main" { /* ... */ }
 resource "aws_s3_bucket" "backup" { /* ... */ }
 ```
 
-**Rich module ecosystem** — The `terraform-azurerm-modules` organization provides battle-tested modules:
+**Rich module ecosystem** - The `terraform-azurerm-modules` organization provides battle-tested modules:
 
 ```hcl
 module "aks" {
@@ -129,7 +130,7 @@ module "aks" {
 }
 ```
 
-**Unified tooling** — Same CI/CD workflows, security scanning (Checkov), and linting (tflint) work across all clouds.
+**Unified tooling** - Same CI/CD workflows, security scanning (Checkov), and linting (tflint) work across all clouds.
 
 ## Using Both: Azure Landing Zones
 
@@ -148,4 +149,4 @@ az deployment mg create \
 
 ## Conclusion
 
-Azure Bicep is the better choice for Azure-only environments that want native ARM integration, no state file management, and tight Azure Policy integration. OpenTofu is the better choice for multi-cloud environments, teams already using Terraform/OpenTofu for other clouds, and organizations that want unified tooling across their infrastructure portfolio. Both support the same Azure resources — the choice is primarily about cloud scope and tooling consistency.
+Azure Bicep is the better choice for Azure-only environments that want native ARM integration, no state file management, and tight Azure Policy integration. OpenTofu is the better choice for multi-cloud environments, teams already using Terraform/OpenTofu for other clouds, and organizations that want unified tooling across their infrastructure portfolio. Both support the same Azure resources - the choice is primarily about cloud scope and tooling consistency.

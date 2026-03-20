@@ -31,6 +31,7 @@ sequenceDiagram
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install -y freeradius freeradius-utils
 
 # Verify installation
@@ -116,7 +117,7 @@ eap {
 ## Step 5: Configure the Access Point
 
 **Cisco Wireless (controller-based):**
-```
+```text
 wlan enterprise-ssid 1
   security wpa akm dot1x
   security dot1x authentication-list RADIUS-AUTH

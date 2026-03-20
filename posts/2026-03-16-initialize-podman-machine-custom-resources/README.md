@@ -25,6 +25,7 @@ Podman machines are lightweight Linux VMs that provide the Linux kernel needed t
 
 ```bash
 # Check if any machines exist
+
 podman machine list
 
 # View default machine settings
@@ -215,7 +216,7 @@ podman machine start
 podman machine inspect
 ```
 
-## Resource Planning Guidelines
+Resource Planning Guidelines
 
 Choose resources based on your workload:
 

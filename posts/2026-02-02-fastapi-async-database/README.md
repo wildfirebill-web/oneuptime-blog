@@ -78,6 +78,7 @@ First, install the necessary packages for async database operations with Postgre
 
 ```bash
 # Install FastAPI with all dependencies
+
 pip install fastapi[all]
 
 # Install SQLAlchemy 2.0+ with async support

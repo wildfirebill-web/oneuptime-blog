@@ -45,6 +45,7 @@ Change streams are enabled by default on DocumentDB 4.0 and later. If you are ru
 
 ```bash
 # Verify change streams are enabled
+
 aws docdb describe-db-cluster-parameters \
   --db-cluster-parameter-group-name default.docdb4.0 \
   --filters "Name=parameter-name,Values=change_stream_log_retention_duration"

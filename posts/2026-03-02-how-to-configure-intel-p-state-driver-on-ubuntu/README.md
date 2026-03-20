@@ -14,6 +14,7 @@ The Intel P-State driver is a CPU frequency scaling driver specifically designed
 
 ```bash
 # Check which driver is handling CPU frequency
+
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver
 
 # Intel P-State active output:

@@ -157,6 +157,7 @@ Install and configure the exporter:
 
 ```yaml
 # docker-compose.yml
+
 services:
   postgres_exporter:
     image: prometheuscommunity/postgres-exporter

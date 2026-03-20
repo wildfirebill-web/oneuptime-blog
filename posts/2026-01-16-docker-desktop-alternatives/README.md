@@ -37,6 +37,7 @@ Colima is a lightweight container runtime for macOS and Linux that uses Lima to 
 
 ```bash
 # macOS with Homebrew
+
 brew install colima docker docker-compose
 
 # Linux

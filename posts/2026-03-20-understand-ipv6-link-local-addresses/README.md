@@ -12,10 +12,10 @@ IPv6 link-local addresses are automatically assigned to every IPv6-enabled inter
 
 ## Properties of Link-Local Addresses
 
-```
+```text
 Prefix:     fe80::/10
 Range:      fe80:: to febf::
-Scope:      Link-only — NOT routable across subnets
+Scope:      Link-only - NOT routable across subnets
 Auto-assign: Mandatory on every IPv6 interface
 Uniqueness: Unique per link (not globally unique)
 
@@ -26,6 +26,7 @@ Full example: fe80::1a2b:3cff:fe4d:5e6f
 
 ```bash
 # EUI-64 from MAC address (RFC 4862)
+
 # MAC:    00:1a:2b:3c:4d:5e
 # Step 1: Split into two halves: 00:1a:2b | 3c:4d:5e
 # Step 2: Insert ff:fe in the middle: 00:1a:2b:ff:fe:3c:4d:5e
@@ -49,10 +50,10 @@ ifconfig en0 | grep "fe80"
 
 ## Zone ID (Interface Scope)
 
-Link-local addresses are ambiguous across interfaces — the same `fe80::1` could exist on `eth0` and `eth1`. A zone ID (interface name or number) disambiguates them:
+Link-local addresses are ambiguous across interfaces - the same `fe80::1` could exist on `eth0` and `eth1`. A zone ID (interface name or number) disambiguates them:
 
 ```bash
-# Linux — zone ID with %interface
+# Linux - zone ID with %interface
 ping6 fe80::21a:2bff:fe3c:4d5e%eth0
 ping6 fe80::1%eth1
 
@@ -67,7 +68,7 @@ sock.connect(addr)
 
 ## Key Uses of Link-Local Addresses
 
-```
+```text
 1. Neighbor Discovery Protocol (NDP)
    - Neighbor Solicitation/Advertisement
    - All NDP traffic uses link-local source addresses
@@ -96,7 +97,7 @@ ip -6 route show
 # default via fe80::1 dev eth0 proto ra metric 100 expires 1795sec
 # 2001:db8::/64 dev eth0 proto kernel scope link src 2001:db8::2
 
-# DHCPv6 — identify server from link-local source
+# DHCPv6 - identify server from link-local source
 tcpdump -i eth0 -n ip6 and udp port 546 or port 547
 ```
 

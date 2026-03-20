@@ -32,6 +32,7 @@ You cannot delete these, but you can create additional groups and move instances
 
 ```bash
 # List all instance groups
+
 curl -s -H "Authorization: Bearer ${AWX_TOKEN}" \
   https://awx.example.com/api/v2/instance_groups/ \
   | python3 -m json.tool

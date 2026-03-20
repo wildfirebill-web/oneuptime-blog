@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Molecule, Provisioner, Configuration, Testing
+Tags: Ansible, Molecule, Provisioners, Configuration, Testing
 
 Description: Deep dive into Molecule provisioner configuration options including ansible.cfg overrides, environment variables, and inventory management.
 
@@ -16,6 +16,7 @@ The provisioner section tells Molecule how to run Ansible. Here is the minimal c
 
 ```yaml
 # molecule/default/molecule.yml
+
 provisioner:
   name: ansible
 ```

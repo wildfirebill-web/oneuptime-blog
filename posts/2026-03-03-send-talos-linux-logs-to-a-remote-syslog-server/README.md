@@ -28,6 +28,7 @@ Talos Linux forwards logs using its built-in logging mechanism. Configure it in 
 
 ```yaml
 # Machine configuration for syslog forwarding
+
 machine:
   logging:
     destinations:

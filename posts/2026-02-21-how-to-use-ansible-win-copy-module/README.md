@@ -20,6 +20,7 @@ The most basic operation is copying one file from the controller to a Windows ho
 
 ```yaml
 # copy-single-file.yml - Copy a configuration file to Windows
+
 ---
 - name: Copy files to Windows servers
   hosts: windows_servers

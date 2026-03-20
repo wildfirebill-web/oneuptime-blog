@@ -46,6 +46,7 @@ Solution:
 
 ```bash
 # Step 1: Enable SDK debug logging to see what the exporter is doing
+
 export OTEL_LOG_LEVEL=debug
 
 # Step 2: Verify the collector endpoint is reachable from your service

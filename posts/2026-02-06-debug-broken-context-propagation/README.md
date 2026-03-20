@@ -43,6 +43,7 @@ Add debug logging to your HTTP client to see what headers are being sent:
 
 ```python
 # debug_injection.py - Log outgoing headers to verify injection
+
 import logging
 import requests
 from opentelemetry import trace

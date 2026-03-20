@@ -1,11 +1,10 @@
----
-title: "Using Git as a Module Source in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, git
-description: "Learn how to use Git repositories as module sources in OpenTofu with version pinning via refs and tags."
----
-
 # Using Git as a Module Source in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Git
+
+Description: Learn how to use Git repositories as module sources in OpenTofu with version pinning via refs and tags.
 
 Git repositories are a popular module source for private modules and when you need precise version control. OpenTofu supports both HTTPS and SSH Git URLs.
 
@@ -34,6 +33,7 @@ module "vpc" {
 
 ```hcl
 # Pin to a specific tag
+
 module "vpc" {
   source = "git::https://github.com/myorg/modules.git//vpc?ref=v2.0.0"
 }
@@ -43,7 +43,7 @@ module "vpc" {
   source = "git::https://github.com/myorg/modules.git//vpc?ref=a1b2c3d4"
 }
 
-# Use a branch (less stable — avoid in production)
+# Use a branch (less stable - avoid in production)
 module "vpc" {
   source = "git::https://github.com/myorg/modules.git//vpc?ref=main"
 }

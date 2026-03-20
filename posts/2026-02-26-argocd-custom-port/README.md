@@ -41,6 +41,7 @@ The most common need is to expose ArgoCD on a different Service port. This does 
 
 ```bash
 # Change the HTTPS port from 443 to 8443
+
 kubectl patch svc argocd-server -n argocd --type='json' \
   -p='[
     {"op": "replace", "path": "/spec/ports/0/port", "value": 8443},

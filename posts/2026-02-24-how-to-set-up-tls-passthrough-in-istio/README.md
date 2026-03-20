@@ -275,6 +275,7 @@ Test from outside the cluster:
 
 ```bash
 # Verify the TLS connection goes through to the backend
+
 curl -v --resolve "secure-app.example.com:443:<gateway-external-ip>" \
   https://secure-app.example.com
 

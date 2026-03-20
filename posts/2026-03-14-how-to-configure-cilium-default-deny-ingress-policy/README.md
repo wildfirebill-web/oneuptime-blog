@@ -28,6 +28,7 @@ This guide covers implementing default deny ingress with Cilium and building all
 
 ```yaml
 # default-deny-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

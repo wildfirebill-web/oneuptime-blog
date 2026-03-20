@@ -333,7 +333,7 @@ class IsolatedVectorOperations:
         )
 ```
 
-### Resource Isolation with Dedicated Pools
+Resource Isolation with Dedicated Pools
 
 ```python
 from dataclasses import dataclass
@@ -475,6 +475,7 @@ class Role:
     description: str = ""
 
 # Predefined roles
+
 PREDEFINED_ROLES = {
     "namespace:admin": Role(
         name="namespace:admin",

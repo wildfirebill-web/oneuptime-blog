@@ -75,6 +75,7 @@ Repeat this process for every node in the cluster.
 
 ```powershell
 # On each node after OS installation, configure networking via PowerShell
+
 # Set a static IP on the management adapter
 New-NetIPAddress -InterfaceAlias "Management" -IPAddress 10.0.0.11 -PrefixLength 24 -DefaultGateway 10.0.0.1
 

@@ -20,6 +20,7 @@ The `podman mount` command mounts the container's root filesystem to a directory
 
 ```bash
 # In rootful mode (requires sudo)
+
 sudo podman run -d --name my-app nginx:latest
 
 # Mount the container's filesystem

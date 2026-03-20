@@ -51,6 +51,7 @@ You can also switch from PowerShell or Command Prompt.
 
 ```powershell
 # Switch to Windows containers
+
 & "$Env:ProgramFiles\Docker\Docker\DockerCli.exe" -SwitchDaemon
 
 # Switch to Linux containers

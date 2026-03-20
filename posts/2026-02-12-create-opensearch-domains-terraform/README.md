@@ -337,6 +337,7 @@ These alarms cover the most critical OpenSearch metrics:
 
 ```hcl
 # Cluster status alarm
+
 resource "aws_cloudwatch_metric_alarm" "cluster_status_red" {
   alarm_name          = "opensearch-cluster-red"
   comparison_operator = "GreaterThanOrEqualToThreshold"

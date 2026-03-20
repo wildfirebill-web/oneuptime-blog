@@ -24,6 +24,7 @@ SeaweedFS's Kubernetes operator (or Helm chart) deploys three components: Master
 
 ```yaml
 # infrastructure/sources/seaweedfs-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

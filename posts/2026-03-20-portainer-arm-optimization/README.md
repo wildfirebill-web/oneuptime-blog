@@ -1,4 +1,4 @@
-# How to Optimize Portainer Performance on ARM Devices
+# How to Optimize Portainer Performance on ARM Devices - Optimization
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -38,6 +38,7 @@ ARM devices often have limited RAM. Swap helps prevent OOM kills:
 
 ```bash
 # Create a 2GB swapfile
+
 sudo fallocate -l 2G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
@@ -100,7 +101,7 @@ docker inspect nginx:alpine | jq '.[].Architecture'
 docker manifest inspect nginx:alpine | jq '.manifests[].platform'
 ```
 
-Use multi-arch images from official sources — they automatically pull the correct architecture.
+Use multi-arch images from official sources - they automatically pull the correct architecture.
 
 ## Step 6: Limit Portainer Polling
 

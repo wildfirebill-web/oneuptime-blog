@@ -125,6 +125,7 @@ Apply the DaemonSet:
 kubectl apply -f node-problem-detector.yaml
 
 # Verify NPD is running on all nodes
+
 kubectl get pods -n kube-system -l app=node-problem-detector -o wide
 ```
 

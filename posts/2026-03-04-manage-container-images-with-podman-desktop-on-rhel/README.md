@@ -16,6 +16,7 @@ In Podman Desktop, navigate to the "Images" tab and click "Pull an image". You c
 
 ```bash
 # Pull an image from the command line (visible in Podman Desktop immediately)
+
 podman pull registry.access.redhat.com/ubi9/ubi:latest
 
 # Pull from Docker Hub

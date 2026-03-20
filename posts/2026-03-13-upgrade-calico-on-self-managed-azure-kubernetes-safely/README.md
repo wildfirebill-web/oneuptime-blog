@@ -30,6 +30,7 @@ Verify Azure networking is healthy before the Calico upgrade.
 
 ```bash
 # Check Kubernetes nodes are all Ready
+
 kubectl get nodes -o wide
 
 # Check current Calico version

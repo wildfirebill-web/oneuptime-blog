@@ -14,6 +14,7 @@ UDP port scanning is fundamentally different from TCP scanning. There is no conn
 
 ```bash
 # UDP scan (requires root/sudo)
+
 sudo nmap -sU 10.20.0.5
 # Scans top 1000 UDP ports
 # Slow: nmap rate-limits to avoid flooding ICMP unreachable responses
@@ -30,7 +31,7 @@ sudo nmap -sU -p- 10.20.0.5
 
 ## Interpreting Results
 
-```
+```text
 UDP port states:
 - open         : Got an application response
 - open|filtered: No response received (could be open OR filtered by firewall)
@@ -122,4 +123,4 @@ nft list ruleset | grep -E "drop|reject"
 
 ## Conclusion
 
-`nmap -sU` is the standard tool for UDP port discovery, but it requires root privileges and is slow by default due to ICMP rate limiting. Use targeted scans of specific well-known ports rather than full range scans. An "open|filtered" result means the port might be open but isn't definitively confirmed — follow up with service-specific tools like `dig` for DNS or `snmpwalk` for SNMP to confirm open services. Version detection (`-sV`) provides the most reliable results by sending application-specific probes.
+`nmap -sU` is the standard tool for UDP port discovery, but it requires root privileges and is slow by default due to ICMP rate limiting. Use targeted scans of specific well-known ports rather than full range scans. An "open|filtered" result means the port might be open but isn't definitively confirmed - follow up with service-specific tools like `dig` for DNS or `snmpwalk` for SNMP to confirm open services. Version detection (`-sV`) provides the most reliable results by sending application-specific probes.

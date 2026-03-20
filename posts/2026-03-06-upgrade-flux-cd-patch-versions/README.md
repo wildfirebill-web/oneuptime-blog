@@ -29,6 +29,7 @@ Check what patch versions are available for your current minor release.
 
 ```bash
 # Check your current Flux version
+
 flux version
 
 # Example output:

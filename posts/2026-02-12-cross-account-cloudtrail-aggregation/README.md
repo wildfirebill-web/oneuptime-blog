@@ -38,6 +38,7 @@ This creates the S3 bucket with encryption and versioning enabled:
 
 ```bash
 # Create the bucket in the logging account
+
 aws s3api create-bucket \
   --bucket org-cloudtrail-logs-central \
   --region us-east-1

@@ -18,6 +18,7 @@ By default, Docker uses the `json-file` logging driver. Every line your applicat
 
 ```bash
 # Find where Docker stores container logs
+
 docker inspect --format '{{.LogPath}}' my-container
 ```
 

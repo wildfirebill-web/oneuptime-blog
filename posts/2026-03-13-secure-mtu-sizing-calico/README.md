@@ -25,6 +25,7 @@ Set consistent MTU across all nodes to prevent fragmentation:
 
 ```bash
 # Verify all nodes have consistent MTU
+
 kubectl get nodes -o custom-columns=NAME:.metadata.name,IP:.status.addresses[0].address | \
   while read name ip; do
     echo "Checking $name ($ip)..."

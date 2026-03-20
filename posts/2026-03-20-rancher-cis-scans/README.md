@@ -29,6 +29,7 @@ The CIS Kubernetes Benchmark provides prescriptive guidance for:
 
 ```bash
 # The CIS Benchmarks app is available in Rancher's Apps catalog
+
 # Navigate to: Apps -> Charts -> CIS Benchmark
 # Or install via kubectl with the Rancher chart
 

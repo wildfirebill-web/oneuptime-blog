@@ -16,6 +16,7 @@ State file structure is not a public API and can change between versions.
 
 ```bash
 # WRONG: Editing state directly
+
 vim terraform.tfstate  # NEVER do this
 # or
 sed -i 's/old-bucket-name/new-bucket-name/' terraform.tfstate  # NEVER do this

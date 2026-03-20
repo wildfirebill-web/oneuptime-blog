@@ -280,6 +280,7 @@ With Istio handling the networking, you get full observability for Knative servi
 
 ```bash
 # Check metrics
+
 istioctl dashboard prometheus
 
 # Check traces

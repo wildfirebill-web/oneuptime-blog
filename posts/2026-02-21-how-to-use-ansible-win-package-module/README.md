@@ -26,6 +26,7 @@ MSI installers are the most straightforward because they have a standard interfa
 
 ```yaml
 # install-msi.yml - Install software from MSI packages
+
 ---
 - name: Install MSI packages on Windows
   hosts: windows_servers

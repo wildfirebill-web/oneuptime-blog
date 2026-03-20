@@ -550,6 +550,7 @@ Playwright provides various ways to run your tests:
 
 ```bash
 # Run all tests
+
 npx playwright test
 
 # Run tests in headed mode (see the browser)

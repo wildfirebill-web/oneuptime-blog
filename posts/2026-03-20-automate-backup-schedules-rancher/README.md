@@ -8,7 +8,7 @@ Description: Automate backup schedules in Rancher for etcd, the Rancher manageme
 
 ## Introduction
 
-Manual backups are unreliable—they get missed during busy periods, forgotten after personnel changes, and untested until a disaster reveals they don't work. Automating backup schedules in Rancher ensures consistent, tested backups without operational overhead. This guide covers automating all three backup layers: etcd, Rancher management plane, and application data.
+Manual backups are unreliable-they get missed during busy periods, forgotten after personnel changes, and untested until a disaster reveals they don't work. Automating backup schedules in Rancher ensures consistent, tested backups without operational overhead. This guide covers automating all three backup layers: etcd, Rancher management plane, and application data.
 
 ## Step 1: Automated etcd Backups via RKE2
 
@@ -16,6 +16,7 @@ RKE2 has built-in etcd snapshot scheduling:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml on control plane nodes
+
 # Configure etcd snapshots with S3 upload
 
 etcd-snapshot-schedule-cron: "0 */4 * * *"    # Every 4 hours
@@ -226,4 +227,4 @@ spec:
 
 ## Conclusion
 
-Automated backup schedules in Rancher eliminate the operational risk of missed backups. RKE2 handles etcd snapshots with S3 upload, the Rancher Backup Operator handles management plane state, and Velero handles application workloads. The most valuable automation is automated restore testing—running a weekly restore to a test namespace validates that backups are actually restorable. Alert on backup failures so that the team responds before an actual disaster forces a recovery from a broken backup.
+Automated backup schedules in Rancher eliminate the operational risk of missed backups. RKE2 handles etcd snapshots with S3 upload, the Rancher Backup Operator handles management plane state, and Velero handles application workloads. The most valuable automation is automated restore testing-running a weekly restore to a test namespace validates that backups are actually restorable. Alert on backup failures so that the team responds before an actual disaster forces a recovery from a broken backup.

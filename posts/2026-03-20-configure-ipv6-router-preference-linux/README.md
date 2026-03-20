@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Router Preference, Routing, sysctl
+Tags: IPv6, Linux, Router Preference, Routing, Sysctl
 
 Description: Learn how IPv6 router preference works on Linux, how it is advertised in Router Advertisements, how the kernel uses it for route selection, and how to configure it via sysctl and static routes.
 
@@ -10,7 +10,7 @@ Description: Learn how IPv6 router preference works on Linux, how it is advertis
 
 IPv6 Router Advertisements (RAs) include a Default Router Preference field (RFC 4191) with values: High, Medium (default), or Low. Linux uses this preference when selecting among multiple default routers.
 
-```
+```text
 RA from Router A: preference=high   → metric 512
 RA from Router B: preference=medium → metric 1024 (default)
 RA from Router C: preference=low    → metric 2048
@@ -22,6 +22,7 @@ Lower metric values are preferred in the routing table.
 
 ```bash
 # Show default routes with their metrics (derived from RA preference)
+
 ip -6 route show default
 
 # Example output:
@@ -68,7 +69,7 @@ ip -6 route show default
 # default via 2001:db8::gw2 dev eth1 metric 200
 ```
 
-## accept_ra_rtr_pref — Honoring RA Router Preference
+## accept_ra_rtr_pref - Honoring RA Router Preference
 
 ```bash
 # This parameter controls whether the kernel uses the preference field from RAs

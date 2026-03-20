@@ -32,6 +32,7 @@ Capture slow commands that might indicate issues:
 
 ```bash
 # Configure slowlog
+
 CONFIG SET slowlog-log-slower-than 10000  # Log commands > 10ms
 CONFIG SET slowlog-max-len 1000           # Keep last 1000 entries
 

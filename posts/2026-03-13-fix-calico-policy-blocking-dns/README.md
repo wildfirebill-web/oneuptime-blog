@@ -62,6 +62,7 @@ spec:
 kubectl apply -f allow-dns-egress.yaml
 
 # Test DNS immediately
+
 kubectl exec <pod-name> -n <namespace> -- nslookup kubernetes.default
 # Expected: resolves to 10.96.0.1 or similar kubernetes service IP
 ```

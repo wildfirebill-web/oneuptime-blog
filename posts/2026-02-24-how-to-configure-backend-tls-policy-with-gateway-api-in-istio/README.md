@@ -369,6 +369,7 @@ Look for `transportSocket` with TLS configuration and `validationContext` with t
 
 ```bash
 # From inside the gateway pod, test TLS to the backend
+
 kubectl exec -it deploy/web-gateway-istio -c istio-proxy -n production -- \
   openssl s_client -connect secure-backend.production:443 -servername secure-backend.production.svc.cluster.local -CAfile /etc/ssl/certs/ca-certificates.crt
 ```

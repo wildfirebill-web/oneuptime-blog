@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, tc, netem, Traffic Control, Latency, Network Testing
+Tags: Linux, tc, Netem, Traffic Control, Latency, Network Testing
 
 Description: Simulate network latency on Linux using tc netem to add artificial delay to outgoing traffic, useful for testing application behavior under high-latency conditions.
 
@@ -14,6 +14,7 @@ Description: Simulate network latency on Linux using tc netem to add artificial 
 
 ```bash
 # Add 100ms delay to all outgoing traffic on eth0
+
 tc qdisc add dev eth0 root netem delay 100ms
 
 # Verify

@@ -87,6 +87,7 @@ Create a standard queue with the AWS CLI. This is great for automation and infra
 
 ```bash
 # Create a standard queue
+
 aws sqs create-queue \
     --queue-name my-application-queue \
     --attributes '{

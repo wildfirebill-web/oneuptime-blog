@@ -41,6 +41,7 @@ Network traffic dashboards in Grafana visualize bandwidth utilization, packet ra
 
 ```promql
 # Panel 1: Inbound bandwidth per interface (Mbps)
+
 rate(node_network_receive_bytes_total{device!~"lo|docker.*|veth.*",instance="$instance"}[5m]) * 8 / 1000000
 
 # Panel 2: Outbound bandwidth per interface (Mbps)

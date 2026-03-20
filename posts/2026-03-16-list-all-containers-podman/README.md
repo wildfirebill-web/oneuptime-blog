@@ -18,6 +18,7 @@ By default, `podman ps` only shows running containers. To see every container on
 
 ```bash
 # List ALL containers (running, stopped, created, paused)
+
 podman ps --all
 
 # Short flag form

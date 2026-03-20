@@ -16,6 +16,7 @@ This is a known and documented Docker design decision, not a bug. Docker manages
 
 ```bash
 # Start a simple web container
+
 docker run -d --name test-nginx -p 8080:80 nginx
 
 # Check UFW status - appears to deny 8080

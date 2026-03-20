@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Tuple, Structural Types, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Tuples, Structural Types, Infrastructure as Code, DevOps
 
 Description: A guide to using tuple type variables in OpenTofu for fixed-length sequences with mixed types.
 
@@ -14,6 +14,7 @@ Tuple variables define fixed-length sequences where each element can have a diff
 
 ```hcl
 # Tuple with two elements: string and number
+
 variable "server_spec" {
   type = tuple([string, number])
   # Example value: ["t3.micro", 20]

@@ -24,6 +24,7 @@ The Filelog receiver handles rename/create rotation well out of the box when you
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   filelog:
     include:

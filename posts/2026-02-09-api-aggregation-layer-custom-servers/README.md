@@ -110,6 +110,7 @@ Create a Docker image for your API server.
 
 ```bash
 # Create Dockerfile
+
 cat > Dockerfile <<EOF
 FROM golang:1.21 as builder
 WORKDIR /workspace

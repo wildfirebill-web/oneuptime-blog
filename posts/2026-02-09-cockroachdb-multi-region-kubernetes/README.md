@@ -22,6 +22,7 @@ Start by deploying the CockroachDB Kubernetes operator, which manages the lifecy
 
 ```bash
 # Add the CockroachDB Helm repository
+
 helm repo add cockroachdb https://charts.cockroachdb.com/
 helm repo update
 

@@ -49,6 +49,7 @@ Linkerd uses ServiceProfiles to configure retries. A ServiceProfile defines how 
 
 ```yaml
 # serviceprofile.yaml
+
 # Define retry behavior for the orders service
 apiVersion: linkerd.io/v1alpha2
 kind: ServiceProfile

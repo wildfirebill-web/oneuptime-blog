@@ -38,6 +38,7 @@ The number of xDS connections should match the number of pods with Istio sidecar
 
 ```bash
 # Count pods with the istio-proxy container
+
 kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{.spec.containers[*].name}{"\n"}{end}' | grep -c istio-proxy
 ```
 

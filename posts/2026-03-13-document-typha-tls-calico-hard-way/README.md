@@ -112,6 +112,7 @@ For compliance audits, document the following:
 
 ```bash
 # Typha TLS quick diagnosis (copy-paste for on-call use)
+
 echo "=== Cert Expiry ===" && \
   kubectl get secret calico-typha-tls -n calico-system -o jsonpath='{.data.tls\.crt}' | base64 -d | openssl x509 -enddate -noout && \
 echo "=== CA Match ===" && \

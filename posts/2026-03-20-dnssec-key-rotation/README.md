@@ -13,11 +13,11 @@ Description: Automate DNSSEC Zone Signing Key (ZSK) and Key Signing Key (KSK) ro
 | ZSK | Every 90 days | Pre-publication | Double-sign during transition |
 | KSK | Every 1-2 years | Double-KSK | Update DS at parent |
 
-Key rotation must be done carefully — a mistake breaks DNSSEC validation for your entire zone, causing SERVFAIL for all queries.
+Key rotation must be done carefully - a mistake breaks DNSSEC validation for your entire zone, causing SERVFAIL for all queries.
 
 ## ZSK Rotation: Pre-Publication Method
 
-```
+```text
 Timeline:
 Day 0:   Generate new ZSK
 Day 0-7: Publish new ZSK alongside old ZSK (DNS TTL propagation)
@@ -27,13 +27,14 @@ Day 14:  Remove old ZSK from zone
 
 ```bash
 #!/bin/bash
-# zsk-rotation.sh — Automated ZSK pre-publication rotation
+# zsk-rotation.sh - Automated ZSK pre-publication rotation
 
 ZONE="example.com"
 KEY_DIR="/var/named/keys/${ZONE}"
 ZONE_FILE="/var/named/${ZONE}.zone"
 
 # Phase 1: Generate new ZSK
+
 new_zsk=$(dnssec-keygen -a ECDSAP256SHA256 -n ZONE "${ZONE}")
 echo "Phase 1: New ZSK generated: ${new_zsk}"
 
@@ -68,7 +69,7 @@ echo "ACTION: Re-run with --phase3 after TTL expiry"
 
 ```bash
 #!/bin/bash
-# zsk-rotation-phase3.sh — Remove old ZSK
+# zsk-rotation-phase3.sh - Remove old ZSK
 
 ZONE="example.com"
 KEY_DIR="/var/named/keys/${ZONE}"
@@ -104,7 +105,7 @@ dig +dnssec AAAA www.${ZONE} @localhost | grep -E "RRSIG|ad"
 
 ```bash
 #!/bin/bash
-# ksk-rotation.sh — KSK rotation (requires DS update at registrar)
+# ksk-rotation.sh - KSK rotation (requires DS update at registrar)
 
 ZONE="example.com"
 KEY_DIR="/var/named/keys/${ZONE}"
@@ -141,7 +142,7 @@ dnssec-signzone \
     "${KEY_DIR}/${zsk}"
 
 rndc reload "${ZONE}"
-echo "Both KSKs in zone — submit new DS record to registrar NOW"
+echo "Both KSKs in zone - submit new DS record to registrar NOW"
 echo "WAIT: Until old DS TTL expires (check dig DS ${ZONE} @parent)"
 ```
 
@@ -182,7 +183,7 @@ echo "KSK rotation complete"
 
 ## BIND: Automated Key Rollover
 
-```
+```text
 // BIND 9.16+ supports fully automated key management
 // /etc/named.conf
 
@@ -219,7 +220,7 @@ zone "example.com" {
 # Check key rollover status
 rndc dnssec -status example.com
 
-# For KSK rollover — BIND alerts:
+# For KSK rollover - BIND alerts:
 # "zone example.com: key 12345/ECDSAP256SHA256 is ready for ksk-roll"
 # Then submit new DS to registrar and confirm:
 rndc dnssec -rollover -key 12345 example.com
@@ -229,7 +230,7 @@ rndc dnssec -rollover -key 12345 example.com
 
 ```bash
 #!/bin/bash
-# monitor-key-schedule.sh — Show upcoming key rotations
+# monitor-key-schedule.sh - Show upcoming key rotations
 
 ZONES=("example.com" "ip6.arpa.reverse")
 

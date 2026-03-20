@@ -95,6 +95,7 @@ tofu plan
 tofu apply
 
 # Check billing mode
+
 aws dynamodb describe-table \
   --table-name <table-name> \
   --query "Table.BillingModeSummary"
@@ -105,4 +106,4 @@ tofu apply -var="billing_mode=PROVISIONED"
 
 ## Conclusion
 
-Switch from On-Demand to Provisioned once your traffic patterns become predictable—Provisioned mode with Auto Scaling is typically 70-80% cheaper than On-Demand at steady-state traffic. After switching from On-Demand to Provisioned, DynamoDB sets initial capacity to the last 30-minute peak from On-Demand mode—review and adjust if needed. On-Demand tables can throttle requests if traffic increases more than 2x the previous peak within 30 minutes; pre-warming isn't possible, so build retry logic with exponential backoff into your application.
+Switch from On-Demand to Provisioned once your traffic patterns become predictable-Provisioned mode with Auto Scaling is typically 70-80% cheaper than On-Demand at steady-state traffic. After switching from On-Demand to Provisioned, DynamoDB sets initial capacity to the last 30-minute peak from On-Demand mode-review and adjust if needed. On-Demand tables can throttle requests if traffic increases more than 2x the previous peak within 30 minutes; pre-warming isn't possible, so build retry logic with exponential backoff into your application.

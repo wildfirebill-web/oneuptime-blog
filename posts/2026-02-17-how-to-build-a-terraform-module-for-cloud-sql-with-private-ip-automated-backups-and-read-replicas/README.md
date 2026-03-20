@@ -30,6 +30,7 @@ First, let us set up the variables that make the module flexible enough to reuse
 
 ```hcl
 # variables.tf - Input variables for the Cloud SQL module
+
 # Each variable has a description and sensible default where appropriate
 
 variable "project_id" {

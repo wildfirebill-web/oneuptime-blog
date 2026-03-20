@@ -6,12 +6,13 @@ Tags: Wireshark, DNS, IPv4, Networking, Diagnostics, Packet Analysis
 
 Description: Use Wireshark to capture and analyze DNS query and response packets, view resolved addresses, identify failures, and measure DNS lookup latency.
 
-DNS problems are invisible to most tools — applications just hang or fail without explaining why. Wireshark lets you see every DNS query and response, revealing exactly when resolution fails, times out, or returns unexpected results.
+DNS problems are invisible to most tools - applications just hang or fail without explaining why. Wireshark lets you see every DNS query and response, revealing exactly when resolution fails, times out, or returns unexpected results.
 
 ## Filter for DNS Traffic
 
 ```wireshark
 # Show all DNS traffic
+
 dns
 
 # DNS queries only (requests, not responses)
@@ -32,7 +33,7 @@ dns.qry.name contains "example"
 
 Expand a DNS packet in the packet detail pane:
 
-```
+```text
 Domain Name System (query)
   Transaction ID: 0x1234        ← Links query to response
   Flags: 0x0100 Standard query
@@ -124,7 +125,7 @@ dns and dns.flags.response == 0
 
 ## Build DNS Statistics
 
-```
+```text
 Statistics → DNS (shows breakdown of):
   - Query types (A, AAAA, MX, PTR distribution)
   - Response codes (how many NXDOMAIN, SERVFAIL, etc.)
@@ -132,4 +133,4 @@ Statistics → DNS (shows breakdown of):
   - Most queried names
 ```
 
-Analyzing DNS in Wireshark gives you ground truth about name resolution — you can see exactly which names are being queried, which resolver is being used, and precisely when lookups fail.
+Analyzing DNS in Wireshark gives you ground truth about name resolution - you can see exactly which names are being queried, which resolver is being used, and precisely when lookups fail.

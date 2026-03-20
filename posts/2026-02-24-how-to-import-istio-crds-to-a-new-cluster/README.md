@@ -35,6 +35,7 @@ If you're installing Istio fresh on the target cluster, the CRDs come with the i
 
 ```bash
 # Using istioctl
+
 istioctl install --set profile=default
 
 # Or using Helm (CRDs are in the base chart)

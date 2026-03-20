@@ -19,7 +19,7 @@ The address is derived from a one-way hash that combines:
 - A network ID (optional)
 - A secret key (generated randomly at boot)
 
-This means the same device gets the same address on the same network, but a different address on a different network — so cross-network tracking via the IID is not possible.
+This means the same device gets the same address on the same network, but a different address on a different network - so cross-network tracking via the IID is not possible.
 
 ```mermaid
 flowchart LR
@@ -39,6 +39,7 @@ The following command sets the address generation mode to `stable-privacy` for a
 
 ```bash
 # Set stable privacy address generation for eth0
+
 nmcli connection modify eth0 ipv6.addr-gen-mode stable-privacy
 
 # Apply the change

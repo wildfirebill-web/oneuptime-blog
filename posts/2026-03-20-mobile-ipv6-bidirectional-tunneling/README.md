@@ -32,7 +32,7 @@ sequenceDiagram
 
 ### Uplink (MN to CN via HA)
 
-```
+```text
 Outer IPv6 Header:
   Source:      2001:db8:foreign::50 (CoA)
   Destination: 2001:db8:home::1 (HA)
@@ -48,7 +48,7 @@ TCP/Application Payload
 
 ### Downlink (CN to MN via HA)
 
-```
+```text
 Outer IPv6 Header:
   Source:      2001:db8:home::1 (HA)
   Destination: 2001:db8:foreign::50 (CoA)
@@ -67,7 +67,8 @@ TCP/Application Payload
 The HA uses a ip6ip6 (IPv6-in-IPv6) tunnel interface.
 
 ```bash
-# On the Home Agent — create a tunnel interface for the MN
+# On the Home Agent - create a tunnel interface for the MN
+
 # (normally managed by the MIPv6 daemon)
 
 # Manual tunnel example

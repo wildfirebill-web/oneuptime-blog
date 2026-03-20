@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, kubernetes, import
+Tags: Rancher, Migration, Kubernetes, Import
 
 Description: Guide to importing existing self-managed Kubernetes clusters into Rancher for centralized management.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

@@ -49,6 +49,7 @@ With this config, if an endpoint returns 5 consecutive 5xx errors within 10 seco
 
 ```promql
 # Number of times a host was ejected
+
 envoy_cluster_outlier_detection_ejections_total
 
 # Number of currently ejected hosts

@@ -40,6 +40,7 @@ WAF Web ACLs for CloudFront must be created in `us-east-1`, regardless of where 
 
 ```bash
 # Create the Web ACL in us-east-1 for CloudFront
+
 aws wafv2 create-web-acl \
   --name cloudfront-waf \
   --scope CLOUDFRONT \

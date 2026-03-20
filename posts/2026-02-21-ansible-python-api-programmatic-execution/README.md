@@ -18,6 +18,7 @@ Here is the minimal setup for running an ad-hoc command:
 
 ```python
 # run_adhoc.py - Execute an ad-hoc command using Ansible Python API
+
 import json
 import shutil
 from ansible.module_utils.common.collections import ImmutableDict

@@ -30,6 +30,7 @@ S3 is the backbone of any AWS data lake. We need buckets with proper encryption,
 # modules/data_lake_storage/main.tf
 
 # One bucket per data zone
+
 resource "aws_s3_bucket" "zones" {
   for_each = toset(["raw", "processed", "curated"])
   bucket   = "${var.project_name}-${each.key}-${var.account_id}"

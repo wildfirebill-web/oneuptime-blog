@@ -30,6 +30,7 @@ Mutual TLS (mTLS) ensures both the client (calicoctl) and server (etcd) authenti
 
 ```bash
 # Generate a private key for calicoctl
+
 openssl genrsa -out calicoctl-key.pem 4096
 
 # Create a certificate signing request

@@ -14,6 +14,7 @@ Mounting NFS shares over IPv6 requires using bracket notation for the server add
 
 ```bash
 # Debian/Ubuntu
+
 apt-get install -y nfs-common
 
 # RHEL/CentOS/Rocky
@@ -151,17 +152,17 @@ dd if=/dev/zero of=/mnt/shared/test bs=1M count=100 oflag=direct
 ## Troubleshooting Common Issues
 
 ```bash
-# "No route to host" — check IPv6 connectivity
+# "No route to host" - check IPv6 connectivity
 ip -6 route get 2001:db8::1
 
-# "Permission denied" — check /etc/exports on server
+# "Permission denied" - check /etc/exports on server
 # Verify client's IPv6 is in the export's allowed range
 showmount -e [2001:db8::1]
 
-# "mount.nfs: Connection timed out" — check firewall
+# "mount.nfs: Connection timed out" - check firewall
 ip6tables -L INPUT -n | grep 2049
 
-# "RPC timeout" on NFSv3 — ensure rpcbind is running and accessible
+# "RPC timeout" on NFSv3 - ensure rpcbind is running and accessible
 rpcinfo -p "[2001:db8::1]"
 # If this fails, use NFSv4 instead
 ```

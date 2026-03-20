@@ -841,6 +841,7 @@ Here is how to use the working memory system in an AI agent.
 
 ```python
 # Initialize the system
+
 from sentence_transformers import SentenceTransformer
 
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')

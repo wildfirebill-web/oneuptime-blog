@@ -262,6 +262,7 @@ Once enabled, you can search the logs for failure details.
 
 ```bash
 # Search for delivery failures in the last hour
+
 aws logs filter-log-events \
   --log-group-name "sns/us-east-1/123456789/order-events/Failure" \
   --start-time $(date -d '1 hour ago' +%s)000 \

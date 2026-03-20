@@ -53,6 +53,7 @@ Before setting up ClusterMesh, ensure you have:
 
 ```bash
 # Verify Cilium CLI is installed
+
 cilium version
 
 # Expected output:

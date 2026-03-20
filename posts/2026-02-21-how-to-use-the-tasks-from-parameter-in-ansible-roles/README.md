@@ -16,6 +16,7 @@ When you include a role the standard way, Ansible loads `tasks/main.yml`:
 
 ```yaml
 # This runs roles/postgresql/tasks/main.yml
+
 - hosts: databases
   roles:
     - postgresql

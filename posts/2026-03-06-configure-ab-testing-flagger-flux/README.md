@@ -43,6 +43,7 @@ Create the base application that Flagger will manage for A/B testing.
 
 ```yaml
 # apps/frontend/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

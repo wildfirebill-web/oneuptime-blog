@@ -36,6 +36,7 @@ Lower your DNS TTL well in advance. Most resolvers honor TTL, but some cache agg
 
 ```bash
 # Lower TTL to 60 seconds at least 48 hours before cutover
+
 # This ensures all cached records expire before the migration window
 aws route53 change-resource-record-sets \
     --hosted-zone-id Z1234567890 \

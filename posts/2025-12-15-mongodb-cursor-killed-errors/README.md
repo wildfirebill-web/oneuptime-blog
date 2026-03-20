@@ -80,6 +80,7 @@ Cursors can be killed manually by administrators:
 
 ```bash
 # Admin kills long-running cursors
+
 db.currentOp().inprog.forEach(function(op) {
   if (op.secs_running > 300) {
     db.killOp(op.opid);

@@ -129,6 +129,7 @@ spec:
 
 ```yaml
 # Infrastructure logs
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:

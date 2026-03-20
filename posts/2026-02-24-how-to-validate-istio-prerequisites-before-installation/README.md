@@ -107,6 +107,7 @@ Test that pods can communicate across nodes:
 
 ```bash
 # Create test pods on different nodes
+
 kubectl run test-1 --image=busybox --restart=Never -- sleep 3600
 kubectl run test-2 --image=busybox --restart=Never -- sleep 3600
 

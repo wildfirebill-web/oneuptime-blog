@@ -31,6 +31,7 @@ The Storage Transfer Service uses a Google-managed service account. You need to 
 
 ```bash
 # Find the Storage Transfer Service account for your project
+
 gcloud transfer service-account --project=my-project-id
 ```
 

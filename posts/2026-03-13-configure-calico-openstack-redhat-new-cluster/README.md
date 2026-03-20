@@ -26,6 +26,7 @@ RHEL 8+ uses iptables-nft. Felix can work with either backend, but must be confi
 
 ```bash
 # Option 1: Use iptables-legacy
+
 sudo alternatives --set iptables /usr/sbin/iptables-legacy
 sudo alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 

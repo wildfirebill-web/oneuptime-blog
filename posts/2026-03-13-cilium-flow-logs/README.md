@@ -94,6 +94,7 @@ In Elasticsearch/Kibana or Loki, query for security events:
 
 ```bash
 # Elasticsearch query for policy drops
+
 GET cilium-flows/_search
 {
   "query": {

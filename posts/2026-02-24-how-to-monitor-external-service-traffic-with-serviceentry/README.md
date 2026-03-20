@@ -38,6 +38,7 @@ After creating a ServiceEntry, Istio automatically generates metrics. Here are t
 
 ```bash
 # Total requests to an external service
+
 istio_requests_total{
   destination_service="api.stripe.com",
   response_code="200"

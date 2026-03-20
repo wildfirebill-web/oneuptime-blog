@@ -18,6 +18,7 @@ The most important thing to know is that Kubernetes ConfigMaps have a hard size 
 
 ```bash
 # Check the size of a ConfigMap
+
 kubectl get configmap my-config -o json | wc -c
 
 # Check the size of specific config data

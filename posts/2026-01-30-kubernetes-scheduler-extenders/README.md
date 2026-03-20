@@ -549,6 +549,7 @@ Deploy the extender as a Deployment in your cluster:
 
 ```yaml
 # deploy/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

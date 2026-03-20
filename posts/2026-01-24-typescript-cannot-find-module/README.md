@@ -60,6 +60,7 @@ Many popular packages have community-maintained type definitions in the Definite
 
 ```bash
 # Check if types exist
+
 npm search @types/package-name
 
 # Install types for common packages

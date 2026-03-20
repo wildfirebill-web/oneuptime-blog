@@ -54,6 +54,7 @@ NAMESPACE="chaos-auto"
 PRODUCTPAGE_URL="http://productpage.${NAMESPACE}.svc.cluster.local:9080/productpage"
 
 # Function to check if productpage returns 200
+
 check_health() {
   local description=$1
   local expected_code=$2

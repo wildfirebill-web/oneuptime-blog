@@ -41,6 +41,7 @@ PCI DSS requires that all changes to system components are tested, documented, a
 
 ```yaml
 # Enforce manual sync for production - no auto-sync
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

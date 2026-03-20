@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, HCL, For_each, Infrastructure as Code
+Tags: Terraform, Troubleshooting, HCL, for_each, Infrastructure as Code
 
 Description: A practical guide to fixing Invalid for_each argument errors in Terraform caused by unknown values, wrong types, and computed dependencies.
 
@@ -36,6 +36,7 @@ This is the most common for_each error. You are passing a value that depends on 
 
 ```hcl
 # This FAILS - subnet IDs are not known until the VPC is created
+
 resource "aws_subnet" "private" {
   count             = 3
   vpc_id            = aws_vpc.main.id

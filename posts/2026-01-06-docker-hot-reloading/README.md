@@ -21,6 +21,7 @@ This fundamental pattern applies to all languages and frameworks. The volume mou
 
 ```yaml
 # The fundamental pattern for hot reloading in Docker
+
 services:
   app:
     volumes:

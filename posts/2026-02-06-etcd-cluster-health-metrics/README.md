@@ -125,6 +125,7 @@ Here are recommended alerting thresholds for etcd metrics:
 
 ```yaml
 # Critical alerts:
+
 # etcd_server_has_leader == 0 (no leader)
 # etcd_server_proposals_failed_total rate > 0 (proposals failing)
 # etcd_mvcc_db_total_size_in_bytes > 6GB (approaching default 8GB limit)

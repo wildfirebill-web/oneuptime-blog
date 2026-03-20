@@ -53,6 +53,7 @@ For a more controlled approach, create a service connection:
 
 ```hcl
 # infrastructure/main.tf
+
 terraform {
   cloud {
     organization = "your-org"
@@ -451,7 +452,7 @@ Add plan output as a PR comment:
       "comments": [
         {
           "parentCommentId": 0,
-          "content": "## Terraform Plan\n\n\`\`\`\n${PLAN_OUTPUT}\n\`\`\`",
+          "content": "## Terraform Plan\n\n```\n${PLAN_OUTPUT}\n```",
           "commentType": 1
         }
       ],

@@ -32,6 +32,7 @@ You will need:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install the Linode CLI

@@ -57,6 +57,7 @@ Vaultwarden must be accessed over HTTPS. Add a minimal Nginx reverse proxy confi
 
 ```nginx
 # /etc/nginx/sites-available/vaultwarden
+
 server {
     listen 443 ssl;
     server_name vault.example.com;

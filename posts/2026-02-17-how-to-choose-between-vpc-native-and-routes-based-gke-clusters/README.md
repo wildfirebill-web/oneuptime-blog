@@ -24,6 +24,7 @@ Here is how you create a VPC-native cluster:
 
 ```bash
 # First, create a subnet with secondary ranges for pods and services
+
 gcloud compute networks subnets create gke-subnet \
   --network my-vpc \
   --region us-central1 \

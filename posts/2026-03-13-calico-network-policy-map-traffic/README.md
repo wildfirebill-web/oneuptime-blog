@@ -54,6 +54,7 @@ A payment service pod communicates with a database pod. The database has a deny-
 
 ```bash
 # Verify which Calico policies apply to the database pod
+
 kubectl get pod db-pod -o jsonpath='{.metadata.labels}'
 # Use labels to find matching policies:
 calicoctl get networkpolicy -n database -o yaml | grep selector

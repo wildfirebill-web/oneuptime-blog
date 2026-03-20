@@ -28,6 +28,7 @@ Map your test plan against required coverage areas:
 
 ```bash
 # Check that the test plan covers all policy verdict paths
+
 echo "=== Coverage Matrix ==="
 echo "1. Allowed request (PASS verdict): ___"
 echo "2. Denied request (DROP verdict): ___"

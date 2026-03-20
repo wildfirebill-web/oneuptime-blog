@@ -341,6 +341,7 @@ WARNING: When using subPath, ConfigMap or Secret updates do NOT automatically pr
 
 ```yaml
 # This ConfigMap update won't be reflected in pods using subPath
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

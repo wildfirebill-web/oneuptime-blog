@@ -44,6 +44,7 @@ Or via the Portainer API:
 
 ```bash
 # Stop container by ID
+
 CONTAINER_ID="abc123def456"
 curl -s -X POST -H "Authorization: Bearer $TOKEN" \
   "https://portainer.example.com/api/endpoints/1/docker/containers/${CONTAINER_ID}/stop"

@@ -32,6 +32,7 @@ Before using the `managed-by` annotation, you need to configure ArgoCD to watch 
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

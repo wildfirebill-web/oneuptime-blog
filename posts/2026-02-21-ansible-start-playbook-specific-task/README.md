@@ -16,6 +16,7 @@ The `--start-at-task` flag takes the name of the task where you want execution t
 
 ```bash
 # Start execution at the task named "Deploy application files"
+
 ansible-playbook -i inventory.ini deploy.yml --start-at-task "Deploy application files"
 ```
 

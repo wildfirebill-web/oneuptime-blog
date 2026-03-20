@@ -16,6 +16,7 @@ By default, the `lookup()` function joins all results with a comma and returns a
 
 ```yaml
 # Demonstrating the problem: lookup returns a string, not a list
+
 - hosts: localhost
   gather_facts: false
   tasks:

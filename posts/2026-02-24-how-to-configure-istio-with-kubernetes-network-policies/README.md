@@ -187,6 +187,7 @@ Here is a full configuration for a three-tier application (frontend, backend, da
 
 ```yaml
 # Default deny for all namespaces
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

@@ -356,6 +356,7 @@ public class EndpointLogger implements ApplicationListener<ApplicationReadyEvent
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

@@ -25,6 +25,7 @@ Create a shell script that pipes Helm output through Kustomize.
 # scripts/kustomize-post-renderer.sh
 
 # Create temporary directory for kustomization
+
 TEMP_DIR=$(mktemp -d)
 trap "rm -rf $TEMP_DIR" EXIT
 

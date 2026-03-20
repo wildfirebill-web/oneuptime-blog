@@ -1,11 +1,10 @@
----
-title: "How to Use Date and Time Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, time
-description: "Learn how to use formatdate, timestamp, timeadd, timecmp, and plantimestamp functions in OpenTofu for time-based operations."
----
-
 # How to Use Date and Time Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Time
+
+Description: Learn how to use formatdate, timestamp, timeadd, timecmp, and plantimestamp functions in OpenTofu for time-based operations.
 
 OpenTofu provides time functions for working with dates and timestamps. These are useful for setting expiration dates, naming resources with timestamps, and implementing time-based logic.
 
@@ -27,7 +26,7 @@ locals {
 
 ## plantimestamp()
 
-Similar to `timestamp()` but is consistent throughout a plan — it returns the same value for all calls within a single plan execution:
+Similar to `timestamp()` but is consistent throughout a plan - it returns the same value for all calls within a single plan execution:
 
 ```hcl
 locals {

@@ -115,6 +115,7 @@ project:
   name: your-project
 
 # Define which licenses are acceptable for your project
+
 policy:
   # Licenses that are always allowed (permissive licenses)
   allowlist:

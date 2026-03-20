@@ -547,6 +547,7 @@ Add test scripts to your package.json:
 
 ```bash
 # Run all tests
+
 npm test
 
 # Run with coverage report

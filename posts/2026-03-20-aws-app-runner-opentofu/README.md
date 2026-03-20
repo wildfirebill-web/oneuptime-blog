@@ -20,6 +20,7 @@ AWS App Runner is a fully managed service for deploying containerized web applic
 
 ```hcl
 # IAM role for App Runner to access ECR
+
 resource "aws_iam_role" "app_runner_access" {
   name = "${var.project_name}-app-runner-access"
 

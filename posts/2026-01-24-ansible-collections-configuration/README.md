@@ -49,6 +49,7 @@ Ansible Galaxy is the official public repository for collections:
 
 ```bash
 # Install a single collection
+
 ansible-galaxy collection install community.general
 
 # Install specific version

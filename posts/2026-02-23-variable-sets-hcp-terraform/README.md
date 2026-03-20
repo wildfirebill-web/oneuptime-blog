@@ -32,6 +32,7 @@ Variables in a variable set behave exactly like workspace-specific variables. Th
 ```text
 Name: AWS Production Credentials
 Description: AWS credentials for production workspaces
+
 Scope: Specific workspaces and projects
 ```
 
@@ -39,6 +40,7 @@ Scope: Specific workspaces and projects
 
 ```text
 # Environment variable - AWS Access Key
+
 Key: AWS_ACCESS_KEY_ID
 Value: AKIA...
 Category: Environment variable

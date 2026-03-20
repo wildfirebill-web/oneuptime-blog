@@ -40,6 +40,7 @@ AKS has a built-in addon that installs the Secrets Store CSI driver and the Azur
 
 ```bash
 # Enable the Key Vault secrets provider addon on your AKS cluster
+
 az aks enable-addons \
   --addons azure-keyvault-secrets-provider \
   --resource-group myResourceGroup \

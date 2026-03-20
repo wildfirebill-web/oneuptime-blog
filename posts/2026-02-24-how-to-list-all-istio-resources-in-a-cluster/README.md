@@ -117,6 +117,7 @@ If your resources are labeled (and they should be), you can filter by labels:
 
 ```bash
 # Find all resources owned by a specific team
+
 kubectl get vs,dr -A -l team=backend
 
 # Find all resources managed by ArgoCD

@@ -77,6 +77,7 @@ The components work together:
 
 ```bash
 # Enable transform engine at default path
+
 vault secrets enable transform
 
 # Or at a custom path

@@ -35,6 +35,7 @@ Security teams typically want these log sources:
 
 ```bash
 # Authentication and authorization logs
+
 /var/log/secure
 
 # System messages

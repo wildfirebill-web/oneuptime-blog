@@ -8,7 +8,7 @@ Description: Learn how to configure comprehensive Docker security policies in Po
 
 ## Overview of Docker Security Policies in Portainer
 
-Portainer's environment security settings let administrators define a security baseline that non-admin users cannot override. These policies are enforced at the API level — even if a user crafts a direct Docker API call, Portainer rejects it.
+Portainer's environment security settings let administrators define a security baseline that non-admin users cannot override. These policies are enforced at the API level - even if a user crafts a direct Docker API call, Portainer rejects it.
 
 ## Accessing Security Settings
 
@@ -25,6 +25,7 @@ Privileged containers have full access to the host kernel. Disable for all non-a
 
 ```yaml
 # What a privileged container can do (and why it's dangerous)
+
 docker run --privileged ubuntu \
   mount /dev/sda1 /mnt  # Mount host disk
 ```
@@ -48,7 +49,7 @@ Toggle: **Allow bind mounts** → **OFF**
 
 ### Restrict Docker Socket Access
 
-Never allow mounting `/var/run/docker.sock` in containers — it provides Docker daemon control:
+Never allow mounting `/var/run/docker.sock` in containers - it provides Docker daemon control:
 
 ```bash
 # This is effectively root on the host - should never be allowed

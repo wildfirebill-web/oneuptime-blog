@@ -78,6 +78,7 @@ Bad order (VirtualService first):
 
 ```yaml
 # Applied first - references subset "canary" that does not exist yet
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

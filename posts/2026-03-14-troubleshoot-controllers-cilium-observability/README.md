@@ -30,6 +30,7 @@ Start by getting a clear picture of which controllers are in a failure state:
 
 ```bash
 # Quick check: number of failing controllers per node
+
 for pod in $(kubectl get pods -n kube-system -l k8s-app=cilium -o name); do
   node=$(kubectl -n kube-system get $pod -o jsonpath='{.spec.nodeName}')
   count=$(kubectl -n kube-system exec $pod -- cilium status controllers -o json 2>/dev/null | \
@@ -82,7 +83,7 @@ kubectl -n kube-system exec ds/cilium -- cilium status | grep "KubeProxyReplacem
 kubectl -n kube-system logs ds/cilium --tail=100 | grep -i "apiserver\|connection refused\|timeout"
 ```
 
-### Resource Exhaustion
+Resource Exhaustion
 
 ```bash
 # Error: "context deadline exceeded" or "resource exhausted"

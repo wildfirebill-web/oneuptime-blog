@@ -8,7 +8,7 @@ Description: Assign IPv6 addresses to Google Compute Engine VM instances, config
 
 ## Introduction
 
-Google Compute Engine VMs receive IPv6 addresses when placed in dual-stack subnets. Each VM's network interface can have both an IPv4 address and an IPv6 address. External IPv6 VMs get globally routable addresses, while internal IPv6 VMs get ULA addresses. IPv6 configuration in GCE is automatic — once the subnet supports IPv6, VMs launched in it receive IPv6 addresses.
+Google Compute Engine VMs receive IPv6 addresses when placed in dual-stack subnets. Each VM's network interface can have both an IPv4 address and an IPv6 address. External IPv6 VMs get globally routable addresses, while internal IPv6 VMs get ULA addresses. IPv6 configuration in GCE is automatic - once the subnet supports IPv6, VMs launched in it receive IPv6 addresses.
 
 ## Create VM with IPv6 Address
 
@@ -17,6 +17,7 @@ PROJECT="my-project"
 ZONE="us-east1-b"
 
 # Create VM in dual-stack subnet (gets IPv6 automatically)
+
 gcloud compute instances create vm-web-01 \
     --project="$PROJECT" \
     --zone="$ZONE" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Security, HTTPS, TLS, SSL, Certificates, Web Security, NGINX, Apache
+Tags: Security, HTTPS, TLS, SSL, Certificates, Web Security, Nginx, Apache
 
 Description: Learn how to properly configure HTTPS/TLS for your web servers with modern cipher suites, certificate management, and security headers.
 
@@ -39,6 +39,7 @@ Let's Encrypt provides free, automated certificates. Use Certbot for easy manage
 
 ```bash
 # Install Certbot on Ubuntu/Debian
+
 sudo apt update
 sudo apt install certbot python3-certbot-nginx
 

@@ -16,6 +16,7 @@ On RHEL, you can view the parameters that were passed to the currently running k
 
 ```bash
 # Show the current kernel command line
+
 cat /proc/cmdline
 ```
 

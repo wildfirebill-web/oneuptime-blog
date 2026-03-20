@@ -20,6 +20,7 @@ Install Trivy on your system:
 
 ```bash
 # On Fedora/RHEL
+
 sudo dnf install -y trivy
 
 # On Ubuntu/Debian

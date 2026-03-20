@@ -14,6 +14,7 @@ Containers write to stdout/stderr, and the container runtime captures those stre
 
 ```text
 # Docker (older clusters)
+
 /var/log/containers/<pod-name>_<namespace>_<container-name>-<container-id>.log
 
 # containerd / CRI-O (modern clusters)

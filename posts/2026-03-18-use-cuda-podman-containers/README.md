@@ -26,6 +26,7 @@ The host driver version determines the maximum CUDA version you can use. The CUD
 
 ```bash
 # Check your host driver version and maximum supported CUDA version
+
 nvidia-smi
 # Look for "CUDA Version: 12.x" in the top-right corner
 # This is the MAXIMUM CUDA version supported, not the installed version

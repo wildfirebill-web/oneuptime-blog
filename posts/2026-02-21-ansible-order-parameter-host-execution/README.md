@@ -26,6 +26,7 @@ Set the `order` parameter at the play level.
 
 ```yaml
 # ordered-playbook.yml - processes hosts in alphabetical order
+
 ---
 - name: Update all servers in alphabetical order
   hosts: all

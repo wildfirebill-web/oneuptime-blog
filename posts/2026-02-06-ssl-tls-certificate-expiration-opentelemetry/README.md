@@ -22,6 +22,7 @@ However, for dedicated certificate monitoring, the Collector Contrib distributio
 
 ```yaml
 # collector-cert-monitor.yaml
+
 # Monitor SSL/TLS certificate expiration for all public and internal endpoints.
 # The httpcheck receiver connects via TLS and we track certificate-related
 # connection metrics. Combine with a script-based approach for detailed cert info.

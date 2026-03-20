@@ -8,7 +8,7 @@ Description: Learn how to configure RDS encryption at rest using customer-manage
 
 ## Introduction
 
-RDS encryption at rest uses AWS KMS to encrypt database storage volumes, automated backups, read replicas, and snapshots. Encryption must be enabled at database creation time—you cannot encrypt an existing unencrypted database directly, but can create an encrypted copy via snapshot.
+RDS encryption at rest uses AWS KMS to encrypt database storage volumes, automated backups, read replicas, and snapshots. Encryption must be enabled at database creation time-you cannot encrypt an existing unencrypted database directly, but can create an encrypted copy via snapshot.
 
 ## Prerequisites
 
@@ -19,6 +19,7 @@ RDS encryption at rest uses AWS KMS to encrypt database storage volumes, automat
 
 ```hcl
 # Customer-managed KMS key for RDS encryption
+
 resource "aws_kms_key" "rds" {
   description             = "KMS key for RDS database encryption"
   deletion_window_in_days = 30
@@ -154,4 +155,4 @@ tofu apply
 
 ## Conclusion
 
-RDS encryption with customer-managed KMS keys provides the strongest protection for database data at rest. All data written to disk, including backups and read replicas, is automatically encrypted. Regularly rotate your KMS key (enable automatic rotation) and monitor key usage via CloudTrail. For new databases, always enable encryption at creation—the snapshot-copy-restore process for encrypting existing databases requires downtime during the cutover.
+RDS encryption with customer-managed KMS keys provides the strongest protection for database data at rest. All data written to disk, including backups and read replicas, is automatically encrypted. Regularly rotate your KMS key (enable automatic rotation) and monitor key usage via CloudTrail. For new databases, always enable encryption at creation-the snapshot-copy-restore process for encrypting existing databases requires downtime during the cutover.

@@ -16,6 +16,7 @@ The env lookup has a straightforward syntax.
 
 ```yaml
 # basic-env-lookup.yml
+
 # Reads environment variables using the lookup plugin
 ---
 - name: Read environment variables

@@ -95,6 +95,7 @@ In Python, configure retry behavior using environment variables or programmatica
 
 ```python
 # tracing_config.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

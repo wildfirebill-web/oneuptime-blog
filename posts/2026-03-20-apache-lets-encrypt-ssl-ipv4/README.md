@@ -20,6 +20,7 @@ Let's Encrypt provides free, automated TLS certificates via the ACME protocol. C
 
 ```bash
 # Debian/Ubuntu
+
 apt update && apt install certbot python3-certbot-apache -y
 
 # RHEL/Rocky/AlmaLinux (via EPEL)

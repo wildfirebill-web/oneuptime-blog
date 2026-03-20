@@ -27,6 +27,7 @@ In ECS, you allocate CPU and memory at the task level and optionally at the cont
 
 ```hcl
 # Kubernetes deployment with resource limits
+
 resource "kubernetes_deployment" "api" {
   metadata {
     name = "api-service"
@@ -77,7 +78,7 @@ resource "kubernetes_deployment" "api" {
 }
 ```
 
-### Resource Limits with Variables
+Resource Limits with Variables
 
 Use variables for flexible resource configuration across environments:
 

@@ -19,6 +19,7 @@ Flatpak is a universal package format similar to Snap but with a focus on deskto
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Flatpak

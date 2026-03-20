@@ -22,6 +22,7 @@ BookStack is an open-source, self-hosted documentation platform built on Laravel
 
 ```bash
 # Update system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install PHP and required extensions

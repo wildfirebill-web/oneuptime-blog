@@ -141,6 +141,7 @@ You can apply a key policy via the CLI or Terraform.
 
 ```bash
 # Apply the key policy from a JSON file
+
 aws kms put-key-policy \
   --key-id alias/production-database \
   --policy-name default \

@@ -297,6 +297,7 @@ The same pattern works in Python. This implementation uses Flask and Redis.
 
 ```python
 # rate_limiter.py
+
 import time
 import redis
 from functools import wraps

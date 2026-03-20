@@ -36,6 +36,7 @@ The first step is identifying what is still connected.
 
 ```bash
 # Inspect the network to see which containers are connected
+
 docker network inspect mynetwork --format '{{range .Containers}}{{.Name}} ({{.IPv4Address}}){{println}}{{end}}'
 ```
 

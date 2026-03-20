@@ -45,6 +45,7 @@ Here is how you set up the producer side in Python:
 
 ```python
 # kafka_producer_tracing.py
+
 from opentelemetry import trace, context
 from opentelemetry.propagate import inject
 from confluent_kafka import Producer

@@ -48,6 +48,7 @@ If your Heroku app uses a Procfile, you need to create a Dockerfile. Here is an 
 
 ```dockerfile
 # Dockerfile for a Node.js Heroku app
+
 FROM node:18-alpine
 
 WORKDIR /app

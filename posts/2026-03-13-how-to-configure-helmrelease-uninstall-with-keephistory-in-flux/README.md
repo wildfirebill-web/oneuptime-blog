@@ -169,6 +169,7 @@ After an uninstall with `keepHistory: true`, you can inspect the preserved histo
 
 ```bash
 # List preserved release secrets
+
 kubectl get secrets -n production -l owner=helm,name=my-app
 
 # View the last release details

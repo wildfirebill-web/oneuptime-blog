@@ -16,6 +16,7 @@ The `split` function divides a string into a list based on a separator.
 
 ```hcl
 # Basic syntax
+
 split(separator, string)
 ```
 

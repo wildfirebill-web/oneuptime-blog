@@ -20,6 +20,7 @@ The config key is `user.user-data` for cloud-config format, or `user.vendor-data
 
 ```bash
 # Set cloud-init user-data on a container before starting it
+
 lxc init ubuntu:24.04 mycontainer
 
 lxc config set mycontainer user.user-data - <<'EOF'

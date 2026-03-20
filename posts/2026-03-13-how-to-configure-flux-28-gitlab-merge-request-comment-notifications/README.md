@@ -43,6 +43,7 @@ Create a provider for GitLab commit status updates:
 
 ```yaml
 # gitlab-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

@@ -14,6 +14,7 @@ Mutual TLS (mTLS) requires both client and server to present valid certificates,
 
 ```hcl
 # main.tf - Private PKI for mTLS
+
 resource "tls_private_key" "ca" {
   algorithm   = "ECDSA"
   ecdsa_curve = "P384"
@@ -165,4 +166,4 @@ resource "kubernetes_manifest" "peer_auth_strict" {
 
 ## Summary
 
-mTLS configured with OpenTofu ensures every service-to-service connection is mutually authenticated with cryptographic certificates. The TLS provider in OpenTofu generates a private PKI and issues leaf certificates per service, which are stored as Kubernetes Secrets and mounted into pods. Istio's STRICT PeerAuthentication mode is the simplest operational path — it manages certificate rotation and enforcement automatically without application code changes.
+mTLS configured with OpenTofu ensures every service-to-service connection is mutually authenticated with cryptographic certificates. The TLS provider in OpenTofu generates a private PKI and issues leaf certificates per service, which are stored as Kubernetes Secrets and mounted into pods. Istio's STRICT PeerAuthentication mode is the simplest operational path - it manages certificate rotation and enforcement automatically without application code changes.

@@ -22,6 +22,7 @@ If any step in this chain fails, you get spans without Kubernetes metadata.
 
 ```bash
 # Check your spans in the backend - these attributes should be present
+
 # k8s.pod.name
 # k8s.namespace.name
 # k8s.deployment.name

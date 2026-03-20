@@ -8,7 +8,7 @@ Description: Build a comprehensive IPv6 address classifier that checks all IANA 
 
 ## Introduction
 
-Applications that handle IPv6 addresses often need to classify them — is this address routable? Is it documentation-only? Is it loopback? A single, comprehensive classification function handles all these cases.
+Applications that handle IPv6 addresses often need to classify them - is this address routable? Is it documentation-only? Is it loopback? A single, comprehensive classification function handles all these cases.
 
 ## Complete IPv6 Address Classifier
 
@@ -29,6 +29,7 @@ class IPv6AddressInfo:
     notes: str = ""
 
 # Registry of special-purpose blocks
+
 SPECIAL_PURPOSE_REGISTRY = [
     ("::1/128", "Loopback", "RFC 4291",
      True, True, False, False, "Host loopback"),

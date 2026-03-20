@@ -37,6 +37,7 @@ You can search and filter the catalog from the CLI:
 
 ```bash
 # Search for products in the Marketplace
+
 aws marketplace-catalog list-entities \
   --catalog "AWSMarketplace" \
   --entity-type "AmiProduct" \

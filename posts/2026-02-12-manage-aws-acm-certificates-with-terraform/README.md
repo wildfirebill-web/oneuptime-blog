@@ -20,6 +20,7 @@ This requests a certificate for a single domain with DNS validation:
 
 ```hcl
 # Request an ACM certificate
+
 resource "aws_acm_certificate" "main" {
   domain_name       = "example.com"
   validation_method = "DNS"

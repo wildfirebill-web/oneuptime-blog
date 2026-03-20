@@ -12,7 +12,7 @@ Sticky sessions ensure that a client always reaches the same backend server. Thi
 
 ## Source IP Hashing (balance source)
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 backend app-servers
@@ -27,9 +27,9 @@ backend app-servers
 
 ## Cookie-Based Persistence (Preferred)
 
-More accurate than IP-based — individual browser sessions stick regardless of NAT:
+More accurate than IP-based - individual browser sessions stick regardless of NAT:
 
-```
+```text
 backend app-servers
     balance roundrobin
     cookie SERVERID insert indirect nocache
@@ -44,7 +44,7 @@ HAProxy inserts a `Set-Cookie: SERVERID=app1` header. Subsequent requests with t
 
 Stick tables provide configurable, stateful client-to-server mapping:
 
-```
+```text
 backend app-servers
     balance roundrobin
     stick-table type ip size 200k expire 30m
@@ -62,7 +62,7 @@ backend app-servers
 
 Use a session token header as the stick key:
 
-```
+```text
 backend app-servers
     balance roundrobin
     stick-table type string len 32 size 100k expire 1h
@@ -83,6 +83,7 @@ Output shows client IPs and the server they are mapped to.
 
 ```bash
 # Clear all entries for a specific IP
+
 echo "clear table app-servers key 203.0.113.10" | sudo socat stdio /run/haproxy/admin.sock
 
 # Clear all entries

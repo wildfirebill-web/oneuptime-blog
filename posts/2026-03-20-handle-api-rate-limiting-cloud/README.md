@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Rate Limiting, Performance, Cloud Providers, Infrastructure as Code, AWS
+Tags: OpenTofu, Rate Limiting, Performance, Cloud Provider, Infrastructure as Code, AWS
 
 Description: Learn how to handle API rate limiting from AWS, GCP, and Azure when running large OpenTofu operations, including retry configuration, parallelism tuning, and request batching.
 
 ## Introduction
 
-Cloud providers enforce per-second and per-minute API call quotas. When OpenTofu issues many requests in parallel — especially during a large initial apply — it can exhaust these quotas, causing retried failures and slow applies. Handling rate limits gracefully keeps your pipelines reliable.
+Cloud providers enforce per-second and per-minute API call quotas. When OpenTofu issues many requests in parallel - especially during a large initial apply - it can exhaust these quotas, causing retried failures and slow applies. Handling rate limits gracefully keeps your pipelines reliable.
 
 ## AWS: Configuring Retry Behavior
 
@@ -33,6 +33,7 @@ Common rate-limited AWS services and their limits:
 
 ```bash
 # Lower concurrency prevents request bursts
+
 tofu apply -parallelism=5
 
 # For IAM-heavy configurations

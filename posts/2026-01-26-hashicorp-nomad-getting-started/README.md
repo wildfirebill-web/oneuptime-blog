@@ -67,6 +67,7 @@ Before starting, make sure you have:
 
 ```bash
 # Install required packages
+
 sudo apt update
 sudo apt install -y curl gnupg software-properties-common
 

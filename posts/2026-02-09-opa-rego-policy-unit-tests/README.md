@@ -16,6 +16,7 @@ In this guide, we'll write comprehensive unit tests for Rego policies using OPA'
 
 ```rego
 # policy.rego
+
 package kubernetes.admission
 
 deny[msg] {

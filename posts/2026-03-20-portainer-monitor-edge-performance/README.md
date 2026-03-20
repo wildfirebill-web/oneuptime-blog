@@ -43,6 +43,7 @@ For persistent metrics and alerting, deploy a monitoring stack via Portainer Edg
 
 ```yaml
 # monitoring-stack.yml
+
 # Deploy this as an Edge Stack to your monitoring group
 version: "3.8"
 
@@ -198,7 +199,7 @@ remote_write:
 - **Deploy monitoring as a baseline stack** to all edge groups from day one.
 - **Use local retention** (15-30 days) to handle connectivity gaps.
 - **Set memory limits** on monitoring containers to avoid starving application containers.
-- **Use remote_write sparingly** — send only high-priority metrics over limited bandwidth.
+- **Use remote_write sparingly** - send only high-priority metrics over limited bandwidth.
 
 ## Conclusion
 

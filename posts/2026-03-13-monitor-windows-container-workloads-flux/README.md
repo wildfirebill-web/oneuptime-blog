@@ -27,6 +27,7 @@ The `windows_exporter` (formerly `wmi_exporter`) is the Prometheus exporter for 
 
 ```yaml
 # infrastructure/monitoring/windows-exporter/daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

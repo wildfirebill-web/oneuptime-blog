@@ -1,4 +1,4 @@
-# How to Troubleshoot CrashLoopBackOff Errors in Portainer
+# How to Troubleshoot CrashLoopBackOff Errors in Portainer - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,29 +12,29 @@ CrashLoopBackOff means your container is starting, crashing, and Kubernetes is b
 
 ## Diagnostic Steps
 
-\`\`\`mermaid
+```mermaid
 graph TD
     CLB[CrashLoopBackOff] --> Logs[Check Previous Container Logs]
     Logs --> ExitCode[Check Exit Code in Events]
     ExitCode --> Config[Check Environment Variables]
     Config --> Deps[Check Dependency Connectivity]
     Deps --> Resources[Check Memory/CPU Limits]
-\`\`\`
+```
 
 ## Step 1: View Previous Container Logs
 
 In Portainer, open the pod, click **Logs**, and enable **Previous container**. This shows the stdout/stderr from the instance that crashed:
 
-\`\`\`bash
-# kubectl equivalent
+```bash
+## kubectl equivalent
 kubectl logs <pod-name> --previous -n <namespace>
-\`\`\`
+```
 
 Common crash messages to look for:
-- \`Error: cannot find module\` — missing dependency in image
-- \`connection refused\` — database or service not available
-- \`invalid value for environment variable\` — misconfigured env
-- \`OOMKilled\` — ran out of memory
+- \`Error: cannot find module\` - missing dependency in image
+- \`connection refused\` - database or service not available
+- \`invalid value for environment variable\` - misconfigured env
+- \`OOMKilled\` - ran out of memory
 
 ## Step 2: Check the Exit Code
 
@@ -51,21 +51,21 @@ In pod events, the exit code tells you what went wrong:
 
 Missing or wrong environment variables are a common crash cause. Use Portainer's pod detail to inspect configured env vars, or add a debug init container:
 
-\`\`\`yaml
+```yaml
 initContainers:
   - name: debug-env
     image: busybox
     command: ["env"]
-\`\`\`
+```
 
 ## Step 4: Use a Debug Container
 
 Replace the failing container with a long-running debug container to inspect the environment:
 
-\`\`\`yaml
-# Temporarily replace the command to prevent crash
+```yaml
+## Temporarily replace the command to prevent crash
 command: ["sleep", "3600"]
-\`\`\`
+```
 
 Deploy this version, exec into the container via Portainer's Console, and run the original startup command manually to see its output.
 
@@ -73,13 +73,13 @@ Deploy this version, exec into the container via Portainer's Console, and run th
 
 If exit code 137 (OOMKilled), increase the memory limit:
 
-\`\`\`yaml
+```yaml
 resources:
   limits:
     memory: "1Gi"   # Increase from previous value
   requests:
     memory: "512Mi"
-\`\`\`
+```
 
 ## Summary
 

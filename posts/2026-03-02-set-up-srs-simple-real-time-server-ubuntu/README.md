@@ -26,6 +26,7 @@ SRS provides pre-built Docker images and release binaries. For a bare-metal Ubun
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y wget tar
 

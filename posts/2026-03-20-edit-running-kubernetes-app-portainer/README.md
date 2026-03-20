@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Application Management, Rolling Update, DevOps
+Tags: Portainer, Kubernetes, Application Management, Rolling Updates, DevOps
 
 Description: Learn how to update a running Kubernetes application's configuration, image, and settings through the Portainer UI.
 
@@ -38,6 +38,7 @@ Portainer triggers a Kubernetes rolling update automatically.
 
 ```bash
 # Update the container image in a deployment
+
 kubectl set image deployment/my-app \
   my-app=registry.mycompany.com/my-app:2.0.0 \
   --namespace=production

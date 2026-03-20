@@ -693,6 +693,7 @@ Once metrics are exported to Prometheus, you can query them for analysis and ale
 
 ```promql
 # Request rate per service
+
 rate(platform_spans_http_server_request_count[5m])
 
 # P95 latency by service and route

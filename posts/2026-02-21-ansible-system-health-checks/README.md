@@ -57,6 +57,7 @@ Define thresholds that trigger warnings and critical alerts.
 
 ```yaml
 # group_vars/all.yml
+
 # CPU thresholds (percentage)
 health_cpu_warning: 80
 health_cpu_critical: 95

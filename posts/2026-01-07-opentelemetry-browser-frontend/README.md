@@ -1619,6 +1619,7 @@ To receive traces from the browser, you need to configure your OpenTelemetry Col
 
 ```yaml
 # otel-collector-config.yaml
+
 # OpenTelemetry Collector configuration for receiving browser traces.
 # This configuration handles CORS and exports to multiple backends.
 

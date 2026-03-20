@@ -1,4 +1,4 @@
-# How to Deploy Prometheus and Grafana via Portainer
+# How to Deploy Prometheus and Grafana via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Prometheus scrapes metrics from exporters and services. Grafana visualizes those
 
 ## Architecture
 
-```
+```bash
 Docker Host → Node Exporter → Prometheus (scrape) → Grafana (query + display)
 Containers  → cAdvisor     ↗
 Applications → /metrics    ↗
@@ -104,6 +104,7 @@ Create `/opt/monitoring/prometheus.yml` before deploying:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
@@ -126,7 +127,7 @@ scrape_configs:
 
 In Portainer's stack editor, under **Environment Variables**:
 
-```
+```text
 GRAFANA_PASSWORD=a-strong-password
 ```
 
@@ -140,8 +141,8 @@ After deployment:
 
 1. **Add Data Source**: Prometheus URL = `http://prometheus:9090`
 2. **Import Dashboards**:
-   - Dashboard ID `1860` — Node Exporter Full
-   - Dashboard ID `893` — Docker and System Monitoring
+   - Dashboard ID `1860` - Node Exporter Full
+   - Dashboard ID `893` - Docker and System Monitoring
 
 ## Conclusion
 

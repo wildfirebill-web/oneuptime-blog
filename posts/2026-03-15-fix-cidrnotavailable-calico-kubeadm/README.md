@@ -31,6 +31,7 @@ If the Calico IPPool CIDR does not match the kubeadm pod network CIDR, align the
 
 ```bash
 # Check current kubeadm pod CIDR
+
 KUBEADM_CIDR=$(kubectl get configmap -n kube-system kubeadm-config -o jsonpath='{.data.ClusterConfiguration}' | grep podSubnet | awk '{print $2}')
 echo "kubeadm CIDR: $KUBEADM_CIDR"
 

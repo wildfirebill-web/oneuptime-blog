@@ -35,6 +35,7 @@ Assign different sync wave numbers to control deployment order:
 
 ```yaml
 # infrastructure/cert-manager.yaml - Deploy first
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

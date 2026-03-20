@@ -59,6 +59,7 @@ import boto3
 import json
 
 # Create SNS client
+
 sns = boto3.client('sns', region_name='us-east-1')
 
 # Publish message with attributes

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: arp-scan, ARP, Linux, Network Discovery, LAN, Security
+Tags: Arp-scan, ARP, Linux, Network Discovery, LAN, Security
 
 Description: Use arp-scan to discover all devices on a local IPv4 network segment by sending ARP requests and collecting responses, revealing hosts that don't respond to ping.
 
@@ -12,6 +12,7 @@ arp-scan discovers hosts at Layer 2 using ARP, making it more reliable than ping
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install arp-scan -y
 
 # RHEL/CentOS
@@ -116,7 +117,7 @@ sudo arp-scan --interval 100 192.168.1.0/24
 
 ```bash
 #!/bin/bash
-# network-audit.sh — Find new devices and alert
+# network-audit.sh - Find new devices and alert
 
 KNOWN="/var/lib/network-audit/known-hosts.txt"
 CURRENT="/tmp/current-scan.txt"
@@ -137,4 +138,4 @@ fi
 cp "$CURRENT" "$KNOWN"
 ```
 
-arp-scan finds devices that refuse ICMP ping — printers, IoT devices, and hosts with strict firewalls all appear in arp-scan results, making it the most reliable local network discovery tool.
+arp-scan finds devices that refuse ICMP ping - printers, IoT devices, and hosts with strict firewalls all appear in arp-scan results, making it the most reliable local network discovery tool.

@@ -65,6 +65,7 @@ Basic comparisons:
 
 ```text
 # Exact equality
+
 filter level = "ERROR"
 
 # Numeric comparisons

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Private Link, IPv6, Private Endpoint, Dual-Stack, Service
+Tags: Azure, Private Link, IPv6, Private Endpoint, Dual-Stack, Services
 
 Description: Configure Azure Private Link endpoints with IPv6 addresses for private connectivity to Azure PaaS services.
 
@@ -20,6 +20,7 @@ Azure Private Link IPv6 enables private IPv6 connectivity between cloud resource
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 az network vnet show --resource-group myRG --name myVNet --query 'addressSpace'
 ```
 

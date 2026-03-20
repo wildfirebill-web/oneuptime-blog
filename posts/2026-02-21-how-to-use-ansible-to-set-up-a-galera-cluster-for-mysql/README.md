@@ -14,6 +14,7 @@ Galera Cluster provides synchronous multi-master replication for MySQL and Maria
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     galera_cluster:

@@ -22,6 +22,7 @@ First, install Nginx and open the firewall:
 
 ```bash
 # Install nginx
+
 sudo dnf install -y nginx
 
 # Allow HTTPS traffic

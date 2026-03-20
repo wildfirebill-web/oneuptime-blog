@@ -22,6 +22,7 @@ flowchart LR
 
 ```hcl
 # sg-alb.tf - Security group for dual-stack ALB
+
 resource "aws_security_group" "alb" {
   name        = "alb-sg"
   description = "Allow inbound HTTP/HTTPS from IPv4 and IPv6"
@@ -152,4 +153,4 @@ curl -6 "https://$ALB_DNS/"
 curl -4 "https://$ALB_DNS/"
 ```
 
-The `dualstack` IP address type on the ALB is the simplest way to serve both IPv4 and IPv6 clients without running separate load balancers — AWS handles the address family selection automatically based on the client's connection.
+The `dualstack` IP address type on the ALB is the simplest way to serve both IPv4 and IPv6 clients without running separate load balancers - AWS handles the address family selection automatically based on the client's connection.

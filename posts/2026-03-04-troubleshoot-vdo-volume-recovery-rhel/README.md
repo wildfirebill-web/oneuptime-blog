@@ -21,6 +21,7 @@ VDO volumes can enter a degraded state after power failures, kernel panics, or s
 
 ```bash
 # Check if VDO volumes are running
+
 sudo vdo list
 
 # Get detailed status

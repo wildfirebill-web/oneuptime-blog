@@ -150,6 +150,7 @@ Python's `start_as_current_span` is a context manager that calls `end()` automat
 
 ```python
 # This always calls span.end(), even if an exception occurs
+
 with tracer.start_as_current_span("process_order") as span:
     span.set_attribute("order.id", order_id)
     result = order_service.process(order_id)

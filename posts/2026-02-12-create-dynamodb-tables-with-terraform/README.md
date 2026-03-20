@@ -20,6 +20,7 @@ This creates a table with a partition key and sort key using on-demand billing:
 
 ```hcl
 # DynamoDB table with partition key and sort key
+
 resource "aws_dynamodb_table" "orders" {
   name         = "orders"
   billing_mode = "PAY_PER_REQUEST"  # On-demand capacity

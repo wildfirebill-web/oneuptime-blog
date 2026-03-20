@@ -27,6 +27,7 @@ The CPU frequency governor controls how the CPU scales frequency based on load:
 
 ```bash
 # Check current governor on all CPUs
+
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
 # Check available governors

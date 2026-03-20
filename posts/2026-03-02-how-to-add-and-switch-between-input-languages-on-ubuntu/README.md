@@ -27,6 +27,7 @@ You can also manage input sources from the terminal, which is useful for scripti
 
 ```bash
 # View current input sources
+
 gsettings get org.gnome.desktop.input-sources sources
 
 # Add English (US) and French layouts

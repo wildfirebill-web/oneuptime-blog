@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, systemd-resolved, Caching, Linux, Performance, Configuration
+Tags: DNS, Systemd-resolved, Caching, Linux, Performance, Configuration
 
 Description: Configure and monitor systemd-resolved as a local DNS cache to reduce DNS latency, improve reliability, and handle DNS over TLS on modern Linux systems.
 
@@ -14,6 +14,7 @@ Description: Configure and monitor systemd-resolved as a local DNS cache to redu
 
 ```bash
 # Check if it's running:
+
 systemctl status systemd-resolved
 
 # Check if /etc/resolv.conf points to it:
@@ -165,4 +166,4 @@ resolvectl dns eth0 10.20.0.1
 
 ## Conclusion
 
-`systemd-resolved` provides automatic DNS caching for all applications on the system. Monitor cache performance with `resolvectl statistics` — a hit rate above 80% means your TTLs and cache size are appropriate. Configure upstream DNS servers in `/etc/systemd/resolved.conf` with `DNSOverTLS=opportunistic` for privacy. For split-horizon DNS, route internal domains to internal DNS servers using `resolvectl domain interface ~internal.domain`. The `resolvectl flush-caches` command is the correct way to force fresh DNS lookups after record changes.
+`systemd-resolved` provides automatic DNS caching for all applications on the system. Monitor cache performance with `resolvectl statistics` - a hit rate above 80% means your TTLs and cache size are appropriate. Configure upstream DNS servers in `/etc/systemd/resolved.conf` with `DNSOverTLS=opportunistic` for privacy. For split-horizon DNS, route internal domains to internal DNS servers using `resolvectl domain interface ~internal.domain`. The `resolvectl flush-caches` command is the correct way to force fresh DNS lookups after record changes.

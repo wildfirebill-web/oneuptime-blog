@@ -116,7 +116,7 @@ volumes:
 
 Click **Deploy the stack**. The initial deployment takes 2–3 minutes for the database to initialize and Zabbix Server to apply the schema.
 
-Monitor progress in **Containers** — wait until all five containers show as **running**.
+Monitor progress in **Containers** - wait until all five containers show as **running**.
 
 ### Step 3: Access the Web Interface
 
@@ -142,6 +142,7 @@ For Linux targets:
 
 ```bash
 # Install Zabbix agent on Ubuntu/Debian
+
 wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-1+ubuntu22.04_all.deb
 sudo dpkg -i zabbix-release_7.0-1+ubuntu22.04_all.deb
 sudo apt update && sudo apt install -y zabbix-agent2

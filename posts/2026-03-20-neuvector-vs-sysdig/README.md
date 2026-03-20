@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: neuvector, sysdig, container-security, kubernetes, comparison, falco
+Tags: NeuVector, Sysdig, Container-security, Kubernetes, Comparison, Falco
 
 Description: A side-by-side comparison of NeuVector and Sysdig for Kubernetes security, covering runtime threat detection, observability, compliance, and total cost.
 
@@ -46,6 +46,7 @@ NeuVector uses behavioral learning at the container level. During a learning pha
 
 ```yaml
 # NeuVector AlertRule example
+
 apiVersion: neuvector.com/v1
 kind: NvSecurityRule
 metadata:

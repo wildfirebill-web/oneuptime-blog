@@ -18,6 +18,7 @@ Podman AI Lab includes a Playground feature that provides a chat-style interface
 
 ```bash
 # Ensure Podman is running and AI Lab is installed
+
 podman info --format '{{.Version.Version}}'
 
 # Verify you have at least one model downloaded

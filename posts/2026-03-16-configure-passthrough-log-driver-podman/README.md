@@ -18,6 +18,7 @@ The passthrough log driver in Podman is a specialized option that does not store
 
 ```bash
 # Run a container with the passthrough log driver
+
 podman run -d \
   --log-driver passthrough \
   --name my-app \

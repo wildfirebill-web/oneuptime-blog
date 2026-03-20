@@ -14,6 +14,7 @@ yamllint is a linter for YAML files that checks for syntax validity and enforces
 
 ```bash
 # Install yamllint
+
 pip install yamllint
 
 # Lint a single file

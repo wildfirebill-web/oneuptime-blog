@@ -8,7 +8,7 @@ Description: Configure Bidirectional Forwarding Detection (BFD) to enable sub-se
 
 ## Introduction
 
-BFD is a lightweight protocol that detects link or path failures between two forwarding engines in milliseconds — far faster than OSPF's default dead interval (40 seconds) or BGP's keepalive timeout (90 seconds). BFD operates independently of the routing protocol and notifies it immediately when a path fails.
+BFD is a lightweight protocol that detects link or path failures between two forwarding engines in milliseconds - far faster than OSPF's default dead interval (40 seconds) or BGP's keepalive timeout (90 seconds). BFD operates independently of the routing protocol and notifies it immediately when a path fails.
 
 ## How BFD Works
 
@@ -18,6 +18,7 @@ BFD creates a control session between two endpoints. Both send Hello packets at 
 
 ```bash
 # Enable the BFD daemon in FRR
+
 sed -i 's/bfdd=no/bfdd=yes/' /etc/frr/daemons
 systemctl restart frr
 

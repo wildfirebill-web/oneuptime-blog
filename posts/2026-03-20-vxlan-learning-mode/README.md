@@ -12,7 +12,7 @@ VXLAN source address learning (MAC learning) allows the VTEP to dynamically disc
 
 ## How VXLAN Learning Works
 
-```
+```text
 1. Host2 sends a packet from MAC aa:bb:cc:dd:ee:02 via VXLAN to Host1
 2. Host1's kernel sees the packet was encapsulated with source IP 10.0.0.2
 3. Kernel adds FDB entry: aa:bb:cc:dd:ee:02 → VTEP 10.0.0.2
@@ -23,7 +23,8 @@ VXLAN source address learning (MAC learning) allows the VTEP to dynamically disc
 ## Enabling MAC Learning (Default)
 
 ```bash
-# Learning is enabled by default — no special flag needed
+# Learning is enabled by default - no special flag needed
+
 ip link add vxlan10 type vxlan \
   id 10 \
   dstport 4789 \
@@ -51,7 +52,7 @@ ip link add vxlan10 type vxlan id 10 dstport 4789 local 10.0.0.1 ageing 60 ...
 ## Disabling Learning (nolearning)
 
 ```bash
-# Disable MAC learning — all entries must be static or via EVPN
+# Disable MAC learning - all entries must be static or via EVPN
 ip link add vxlan10 type vxlan \
   id 10 \
   dstport 4789 \

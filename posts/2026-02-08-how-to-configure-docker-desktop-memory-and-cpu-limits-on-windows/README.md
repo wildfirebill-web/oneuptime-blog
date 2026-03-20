@@ -36,6 +36,7 @@ Newer versions of Docker Desktop on WSL 2 defer resource management to the WSL 2
 
 ```bash
 # Check which backend Docker Desktop uses
+
 docker info --format '{{.OperatingSystem}}'
 # Output: Docker Desktop (if using Docker Desktop with WSL 2)
 ```

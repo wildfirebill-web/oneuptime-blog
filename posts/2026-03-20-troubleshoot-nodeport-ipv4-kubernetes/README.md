@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, NodePort, IPv4, Troubleshooting, Networking, kube-proxy
+Tags: Kubernetes, NodePort, IPv4, Troubleshooting, Networking, Kube-proxy
 
 Description: Diagnose and fix NodePort service accessibility issues where external clients cannot reach Kubernetes services via node IPv4 addresses and high ports.
 
@@ -12,11 +12,12 @@ NodePort services expose a service on every node's IPv4 address on a port betwee
 
 ```bash
 # Check what NodePort was assigned
+
 kubectl get svc my-nodeport-service
 # NAME                TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
 # my-nodeport-service NodePort   10.96.45.123   <none>        80:31234/TCP     5m
 
-# The NodePort is 31234 — accessible on any node IP at port 31234
+# The NodePort is 31234 - accessible on any node IP at port 31234
 ```
 
 ## Step 2: Test from Within the Cluster First

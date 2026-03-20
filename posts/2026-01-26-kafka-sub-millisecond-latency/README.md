@@ -137,6 +137,7 @@ Optimize broker settings for latency.
 # server.properties
 
 # Faster log flush (trade durability for speed)
+
 # WARNING: Risk of data loss on crash
 log.flush.interval.messages=1
 log.flush.interval.ms=0

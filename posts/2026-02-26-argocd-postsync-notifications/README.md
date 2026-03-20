@@ -378,6 +378,7 @@ This means a notification failure should not be critical. Use `|| true` or `|| e
 
 ```bash
 # Non-critical notification - do not fail the hook
+
 curl -sf -X POST "$SLACK_WEBHOOK" ... || echo "Slack notification failed, continuing"
 ```
 

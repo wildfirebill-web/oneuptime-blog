@@ -98,6 +98,7 @@ The root name servers are reachable over IPv6. Ensure your resolver has up-to-da
 
 ```bash
 # Download current root hints
+
 wget -O /etc/named.root https://www.internic.net/domain/named.root
 
 # Verify root hints include IPv6 addresses

@@ -93,6 +93,7 @@ Check that Prometheus is scraping your metrics.
 
 ```bash
 # List ServiceMonitors
+
 oc get servicemonitors
 
 # Check Prometheus targets (requires access)

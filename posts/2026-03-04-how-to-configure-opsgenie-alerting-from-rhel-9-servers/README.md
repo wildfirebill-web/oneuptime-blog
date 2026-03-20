@@ -46,6 +46,7 @@ sudo chmod +x /opt/scripts/opsgenie-alert.sh
 
 ```bash
 # Service monitoring
+
 sudo tee /etc/cron.d/opsgenie-service-alert <<EOF
 * * * * * root systemctl is-active httpd > /dev/null 2>&1 || /opt/scripts/opsgenie-alert.sh "httpd is down on \$(hostname)" P1
 EOF

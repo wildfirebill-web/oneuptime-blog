@@ -24,6 +24,7 @@ This guide covers every requirement check for generic Kubernetes deployments. It
 
 ```bash
 # Check kernel version on all nodes
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 
 # SSH to a node and check in detail

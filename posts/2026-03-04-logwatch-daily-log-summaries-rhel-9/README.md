@@ -39,6 +39,7 @@ Logwatch is available in the EPEL repository:
 
 ```bash
 # Enable EPEL repository if not already enabled
+
 sudo dnf install epel-release -y
 
 # Install Logwatch and its dependencies

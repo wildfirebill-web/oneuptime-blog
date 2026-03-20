@@ -161,6 +161,7 @@ Microservices often have deployment ordering requirements. For example, you migh
 
 ```yaml
 # Infrastructure resources first (wave -2)
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

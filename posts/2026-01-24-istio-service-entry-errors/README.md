@@ -33,6 +33,7 @@ The most common ServiceEntry error is DNS resolution not working. You will see e
 **Symptom:**
 ```bash
 # Testing from inside a pod
+
 $ curl https://api.example.com/v1/data
 curl: (6) Could not resolve host: api.example.com
 ```

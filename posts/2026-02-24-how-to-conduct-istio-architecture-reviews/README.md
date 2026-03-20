@@ -28,6 +28,7 @@ Start with the Istio control plane itself:
 
 ```bash
 # Check istiod pods
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check istiod resource usage

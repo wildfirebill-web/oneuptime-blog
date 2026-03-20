@@ -48,6 +48,7 @@ graph TD
 Check the current CNI configuration:
 ```bash
 # Identify the current CNI plugin configuration
+
 kubectl get cm -n kube-system | grep cni
 
 # View the current CNI configuration on a node

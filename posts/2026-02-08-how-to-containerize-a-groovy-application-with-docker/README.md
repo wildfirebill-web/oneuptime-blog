@@ -133,6 +133,7 @@ Create `application.yml`:
 
 ```yaml
 # src/main/resources/application.yml - Micronaut configuration
+
 micronaut:
   application:
     name: groovyDockerDemo

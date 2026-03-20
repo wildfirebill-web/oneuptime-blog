@@ -32,6 +32,7 @@ WireGuard is the most straightforward VPN for Ansible because it creates a stand
 
 ```ini
 # /etc/wireguard/wg0.conf on the Ansible controller
+
 # WireGuard configuration to reach the remote network
 [Interface]
 PrivateKey = <your_private_key>

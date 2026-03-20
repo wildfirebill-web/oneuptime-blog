@@ -21,6 +21,7 @@ The most flexible approach is a Python dynamic inventory script that queries Clo
 ```python
 #!/usr/bin/env python3
 # cfn_inventory.py
+
 # Dynamic inventory script that reads CloudFormation stack outputs
 
 import json

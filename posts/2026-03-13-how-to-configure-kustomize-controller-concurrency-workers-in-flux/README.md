@@ -24,6 +24,7 @@ The `--concurrent` flag controls how many Kustomization objects can be reconcile
 
 ```yaml
 # clusters/my-cluster/flux-system/kustomize-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

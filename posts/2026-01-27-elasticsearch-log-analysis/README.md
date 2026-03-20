@@ -447,6 +447,7 @@ flowchart LR
 
 ```ruby
 # /etc/logstash/conf.d/application-logs.conf
+
 # This pipeline processes application logs from Filebeat
 
 input {

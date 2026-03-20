@@ -172,6 +172,7 @@ Maintain a data classification document alongside your Collector config:
 
 ```yaml
 # data-classification.yaml (documentation only, not a Collector config)
+
 classifications:
   critical:
     description: "Must be completely removed"

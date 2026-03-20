@@ -14,6 +14,7 @@ Using percentage values with Ansible's `serial` keyword creates batch sizes that
 
 ```yaml
 # deploy-percent.yml - Update 25% of hosts per batch
+
 ---
 - name: Rolling deployment
   hosts: webservers

@@ -40,6 +40,7 @@ Cloud NGFW Enterprise requires several things to be in place:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable networksecurity.googleapis.com
 gcloud services enable compute.googleapis.com
 

@@ -47,6 +47,7 @@ First, create a GPG key pair for signing.
 
 ```bash
 # Generate a new GPG key
+
 gpg --full-generate-key
 
 # Choose:

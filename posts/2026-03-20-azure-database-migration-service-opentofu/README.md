@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Database Migration, DMS, PostgreSQL, Infrastructure as Code
+Tags: OpenTofu, Azure, Database Migrations, DMS, PostgreSQL, Infrastructure as Code
 
 Description: Learn how to provision Azure Database Migration Service and configure online migration projects using OpenTofu.
 
@@ -19,6 +19,7 @@ resource "azurerm_resource_group" "migration" {
 }
 
 # Register the DMS resource provider
+
 resource "azurerm_resource_provider_registration" "dms" {
   name = "Microsoft.DataMigration"
 }
@@ -147,4 +148,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Database Migration Service orchestrates data movement to Azure managed databases. OpenTofu provisions the DMS instance, migration project, VNet delegation, target database, and firewall rules — creating a repeatable migration infrastructure that can be used across environments.
+Azure Database Migration Service orchestrates data movement to Azure managed databases. OpenTofu provisions the DMS instance, migration project, VNet delegation, target database, and firewall rules - creating a repeatable migration infrastructure that can be used across environments.

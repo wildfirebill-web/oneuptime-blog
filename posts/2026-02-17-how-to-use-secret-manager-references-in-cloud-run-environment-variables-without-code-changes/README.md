@@ -45,6 +45,7 @@ You need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable run.googleapis.com secretmanager.googleapis.com
 ```
 

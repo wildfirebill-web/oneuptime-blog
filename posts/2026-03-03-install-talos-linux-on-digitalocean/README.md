@@ -16,6 +16,7 @@ Get your tools ready:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install doctl (DigitalOcean CLI)

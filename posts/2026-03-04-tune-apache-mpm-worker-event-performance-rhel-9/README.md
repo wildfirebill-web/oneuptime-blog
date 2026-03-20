@@ -49,6 +49,7 @@ graph TD
 
 ```bash
 # See which MPM is currently loaded
+
 httpd -V | grep MPM
 
 # Or check loaded modules

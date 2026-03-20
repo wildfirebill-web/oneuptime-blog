@@ -14,6 +14,7 @@ Migrating from MariaDB to PostgreSQL involves converting schemas, data types, an
 
 ```bash
 # Install pgloader from EPEL
+
 sudo dnf install -y epel-release
 sudo dnf install -y pgloader
 

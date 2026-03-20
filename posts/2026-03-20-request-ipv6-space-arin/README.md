@@ -1,4 +1,4 @@
-# How to Request IPv6 Address Space from ARIN
+# How to Request IPv6 Address Space from ARIN - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,7 +18,7 @@ ARIN serves the United States, Canada, and many Caribbean and North Atlantic ter
 
 ## Eligibility Requirements
 
-```
+```text
 For a /32 Direct Allocation (ISPs):
   - Be an ARIN member (annual fee)
   - Have an IPv4 allocation from ARIN, or
@@ -38,7 +38,7 @@ Fees (2024):
 
 ## Application Process
 
-```
+```text
 Step 1: Create ARIN Online account
   - Go to https://account.arin.net
   - Register organization
@@ -70,6 +70,7 @@ Step 5: Receive allocation
 
 ```bash
 # After receiving ARIN allocation, create RPKI ROA
+
 # Login to ARIN Online → RPKI → Create ROA
 
 # Or use ARIN's API
@@ -89,7 +90,7 @@ curl -s "https://api.bgpstuff.net/rpki?prefix=2600:db8::/32&asn=65001"
 
 ## ARIN Whois Registration
 
-```
+```text
 # After allocation, update ARIN Whois (ARIN Online)
 
 # Network object example:
@@ -111,7 +112,7 @@ curl -s "https://api.bgpstuff.net/rpki?prefix=2600:db8::/32&asn=65001"
 
 ```bash
 #!/bin/bash
-# post-arin-checklist.sh — Validate new ARIN allocation
+# post-arin-checklist.sh - Validate new ARIN allocation
 
 YOUR_PREFIX="2600:db8::/32"
 YOUR_ASN="65001"

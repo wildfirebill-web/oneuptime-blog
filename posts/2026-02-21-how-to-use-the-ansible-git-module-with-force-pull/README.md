@@ -30,6 +30,7 @@ The `force` parameter tells Ansible to discard any local changes and force the c
 
 ```yaml
 # playbook-force-pull.yml
+
 # Force pulls the latest code, discarding any local modifications
 - name: Force pull latest code
   hosts: webservers

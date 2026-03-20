@@ -35,6 +35,7 @@ Velero is the standard tool for backing up Kubernetes cluster resources and pers
 
 ```bash
 # Install Velero with AWS S3 as the backup storage
+
 velero install \
   --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0 \

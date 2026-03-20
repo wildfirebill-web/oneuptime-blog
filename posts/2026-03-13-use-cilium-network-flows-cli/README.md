@@ -24,6 +24,7 @@ Hubble flows contain rich metadata: source and destination pod names, namespaces
 
 ```bash
 # Download the latest release
+
 HUBBLE_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/hubble/master/stable.txt)
 curl -L --remote-name-all \
   https://github.com/cilium/hubble/releases/download/${HUBBLE_VERSION}/hubble-linux-amd64.tar.gz

@@ -32,6 +32,7 @@ tracer = trace.get_tracer("lrs.ingestion")
 meter = metrics.get_meter("lrs.ingestion")
 
 # Metrics for ingestion monitoring
+
 statements_received = meter.create_counter(
     "lrs.statements_received_total",
     description="Total xAPI statements received",

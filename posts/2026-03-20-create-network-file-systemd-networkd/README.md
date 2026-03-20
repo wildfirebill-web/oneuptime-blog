@@ -16,6 +16,7 @@ Description: Learn how to write systemd-networkd .network files to configure sta
 
 ```bash
 # Files live in:
+
 /etc/systemd/network/
 
 # Lower numbers are processed first

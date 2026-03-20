@@ -421,6 +421,7 @@ from datetime import datetime, timezone
 import random
 
 # Initialize the client
+
 es = Elasticsearch(
     ["http://localhost:9200"],
     basic_auth=("elastic", "your-password")

@@ -22,6 +22,7 @@ The LUKS header stores up to 8 key slots. Each key slot can hold a different pas
 
 ```bash
 # cryptsetup handles LUKS operations
+
 sudo apt update
 sudo apt install cryptsetup -y
 

@@ -118,6 +118,7 @@ Your application code doesn't need to know where the values come from. They show
 
 ```python
 # Your app just reads env vars normally
+
 import os
 
 db_password = os.environ["DB_PASSWORD"]

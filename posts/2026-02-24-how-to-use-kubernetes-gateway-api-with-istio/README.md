@@ -299,6 +299,7 @@ Use istioctl to inspect the generated Envoy configuration:
 
 ```bash
 # Check the gateway pod's listeners
+
 istioctl proxy-config listener deploy/my-gateway-istio -n production
 
 # Check routes

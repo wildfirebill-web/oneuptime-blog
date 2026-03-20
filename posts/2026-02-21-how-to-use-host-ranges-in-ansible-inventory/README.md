@@ -16,6 +16,7 @@ The most common use case is numeric ranges. Ansible uses the `[start:end]` synta
 
 ```ini
 # inventory.ini
+
 # Define 10 web servers using a numeric range
 [webservers]
 web-[01:10].example.com

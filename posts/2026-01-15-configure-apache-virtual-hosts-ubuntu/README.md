@@ -44,6 +44,7 @@ Before configuring virtual hosts, ensure you have:
 
 ```bash
 # Update your system packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install Apache if not already installed

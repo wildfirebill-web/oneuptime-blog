@@ -49,6 +49,7 @@ sequenceDiagram
 
 ```bash
 # Enable system-assigned managed identity on the app
+
 RESOURCE_GROUP="rg-spring-production"
 SPRING_SERVICE="myorg-spring-apps"
 APP_NAME="order-service"

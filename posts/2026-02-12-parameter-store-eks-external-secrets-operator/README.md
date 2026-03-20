@@ -64,6 +64,7 @@ You can also create parameters with the AWS CLI for quick testing:
 
 ```bash
 # Create a parameter directly from the command line
+
 aws ssm put-parameter \
   --name "/myapp/production/db-host" \
   --type "SecureString" \

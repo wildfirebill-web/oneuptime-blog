@@ -69,6 +69,7 @@ After creating the service account, generate a token:
 
 ```bash
 # Get service account ID first
+
 SA_ID=$(curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
   "http://grafana:3000/api/serviceaccounts/search?query=automation-bot" | \
   jq -r '.serviceAccounts[0].id')

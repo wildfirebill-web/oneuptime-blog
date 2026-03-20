@@ -106,6 +106,7 @@ Define an IP pool that fits within your desired aggregation boundary.
 
 ```yaml
 # metallb-bgp-pool.yaml
+
 # IP address pool for BGP-advertised services
 # The range fits entirely within a /24, making aggregation clean
 apiVersion: metallb.io/v1beta1

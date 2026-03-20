@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, Parsing, std::net, Networking
+Tags: Rust, IPv6, Parsing, Std::net, Networking
 
 Description: Parse IPv6 addresses in Rust from strings, log lines, URLs, and network packets using std::net and the ipnet crate.
 
@@ -23,7 +23,7 @@ fn main() {
 
     assert_eq!(a, b);
 
-    // IpAddr enum — handles both IPv4 and IPv6
+    // IpAddr enum - handles both IPv4 and IPv6
     let ip: IpAddr = "2001:db8::1".parse().unwrap();
     match ip {
         IpAddr::V6(v6) => println!("IPv6: {}", v6),
@@ -55,7 +55,7 @@ fn main() {
     let (ip, port) = parse_socket_addr("[2001:db8::1]:8080").unwrap();
     println!("IP: {}, Port: {}", ip, port);
 
-    // IPv4 socket address — same function works
+    // IPv4 socket address - same function works
     let (ip4, port4) = parse_socket_addr("192.168.1.1:80").unwrap();
     println!("IP: {}, Port: {}", ip4, port4);
 }
@@ -67,6 +67,7 @@ The `ipnet` crate provides `Ipv6Net` for CIDR prefix handling:
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 ipnet = "2"
 ```
@@ -189,4 +190,4 @@ fn main() {
 
 ## Conclusion
 
-Rust provides robust IPv6 parsing through `std::net::Ipv6Addr`'s `FromStr` implementation. Use `SocketAddr` for bracketed address+port strings. For CIDR prefix handling, the `ipnet` crate adds `Ipv6Net`. Raw bytes parse directly into `Ipv6Addr` via `from([u8; 16])`. Always propagate parse errors with `?` or pattern match the `Result` — Rust's type system ensures you handle malformed input explicitly.
+Rust provides robust IPv6 parsing through `std::net::Ipv6Addr`'s `FromStr` implementation. Use `SocketAddr` for bracketed address+port strings. For CIDR prefix handling, the `ipnet` crate adds `Ipv6Net`. Raw bytes parse directly into `Ipv6Addr` via `from([u8; 16])`. Always propagate parse errors with `?` or pattern match the `Result` - Rust's type system ensures you handle malformed input explicitly.

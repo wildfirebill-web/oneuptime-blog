@@ -15,6 +15,7 @@ Port conflicts are one of the most common Docker issues. When you try to bind a 
 ```bash
 docker run -p 8080:80 nginx
 # Error response from daemon: driver failed programming external connectivity
+
 # on endpoint nginx: Bind for 0.0.0.0:8080 failed: port is already allocated
 ```
 

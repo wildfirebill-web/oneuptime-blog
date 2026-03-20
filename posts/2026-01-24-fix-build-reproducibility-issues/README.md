@@ -56,6 +56,7 @@ Always use exact versions and commit your lockfile:
 
 ```bash
 # Generate package-lock.json with exact versions
+
 npm ci
 
 # Never use npm install in CI - it can update the lockfile

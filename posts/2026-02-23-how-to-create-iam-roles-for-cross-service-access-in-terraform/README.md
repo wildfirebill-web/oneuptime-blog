@@ -35,6 +35,7 @@ API Gateway needs permission to invoke Lambda functions.
 
 ```hcl
 # Trust policy for API Gateway
+
 data "aws_iam_policy_document" "apigateway_trust" {
   statement {
     effect = "Allow"

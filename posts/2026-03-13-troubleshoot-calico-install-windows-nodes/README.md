@@ -26,6 +26,7 @@ Windows networking troubleshooting requires familiarity with Windows-specific to
 Get-Service CalicoNode, CalicoFelix | Select-Object Name, Status
 
 # Check for service startup errors
+
 Get-EventLog -LogName Application -Source CalicoNode -Newest 20 | Format-List
 Get-EventLog -LogName Application -Source CalicoFelix -Newest 20 | Format-List
 ```

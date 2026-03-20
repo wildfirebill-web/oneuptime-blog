@@ -48,6 +48,7 @@ calicoctl ipam show --show-blocks
 
 ```bash
 # Get list of current nodes
+
 CURRENT_NODES=$(kubectl get nodes -o jsonpath='{.items[*].metadata.name}')
 
 # Get all block affinities

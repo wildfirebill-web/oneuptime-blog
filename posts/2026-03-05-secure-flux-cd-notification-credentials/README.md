@@ -27,6 +27,7 @@ Store provider credentials in Kubernetes Secrets:
 
 ```yaml
 # notification-secrets.yaml
+
 # Slack webhook URL secret
 apiVersion: v1
 kind: Secret

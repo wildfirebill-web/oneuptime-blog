@@ -16,6 +16,7 @@ Start by understanding the current state:
 
 ```bash
 # Show system clock, hardware clock, and NTP status
+
 timedatectl status
 
 # Example output:

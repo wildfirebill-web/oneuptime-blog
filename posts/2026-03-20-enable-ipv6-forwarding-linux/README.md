@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Forwarding, Routing, sysctl
+Tags: IPv6, Linux, Forwarding, Routing, Sysctl
 
 Description: Learn how to enable IPv6 packet forwarding on Linux to act as a router, including the interaction with Router Advertisements and how to make the setting persistent.
 
 ## What is IPv6 Forwarding?
 
-IPv6 forwarding allows a Linux host to route packets between interfaces — turning it into an IPv6 router. By default, Linux operates as a host and drops packets not destined for its own addresses.
+IPv6 forwarding allows a Linux host to route packets between interfaces - turning it into an IPv6 router. By default, Linux operates as a host and drops packets not destined for its own addresses.
 
-```
+```text
 Without forwarding (host):           With forwarding (router):
 eth0 → packet for eth1 → DROPPED    eth0 → packet for eth1 → FORWARDED
 ```
@@ -19,6 +19,7 @@ eth0 → packet for eth1 → DROPPED    eth0 → packet for eth1 → FORWARDED
 
 ```bash
 # Enable forwarding on all interfaces
+
 sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Verify
@@ -122,4 +123,4 @@ sysctl --system
 
 ## Summary
 
-Enable IPv6 forwarding with `sysctl -w net.ipv6.conf.all.forwarding=1` and persist it in `/etc/sysctl.d/`. When forwarding is enabled, `accept_ra` defaults to ignoring RAs — set `accept_ra=2` on your upstream interface if you need to learn a default route from a router advertisement. Verify with `ip -6 route show` and packet captures.
+Enable IPv6 forwarding with `sysctl -w net.ipv6.conf.all.forwarding=1` and persist it in `/etc/sysctl.d/`. When forwarding is enabled, `accept_ra` defaults to ignoring RAs - set `accept_ra=2` on your upstream interface if you need to learn a default route from a router advertisement. Verify with `ip -6 route show` and packet captures.

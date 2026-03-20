@@ -40,6 +40,7 @@ This command enables CTD for your entire organization.
 
 ```bash
 # Enable Container Threat Detection at the organization level
+
 gcloud scc settings services enable \
   --organization=123456789 \
   --service=CONTAINER_THREAT_DETECTION

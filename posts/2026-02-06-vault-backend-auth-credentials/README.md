@@ -14,6 +14,7 @@ A well-organized secret structure makes it easy to manage credentials for multip
 
 ```bash
 # Create a structured secret hierarchy
+
 # Pattern: secret/otel/<environment>/<backend-name>
 
 # Production backend credentials

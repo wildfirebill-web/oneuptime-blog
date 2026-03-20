@@ -16,6 +16,7 @@ The `sha256` function computes the SHA-256 hash of a given string and returns it
 
 ```hcl
 # Compute the SHA-256 hash of a string
+
 output "hash" {
   value = sha256("hello world")
   # Result: "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"

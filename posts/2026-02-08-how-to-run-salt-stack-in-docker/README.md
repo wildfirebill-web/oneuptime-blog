@@ -24,6 +24,7 @@ Start with a Dockerfile for the Salt master.
 
 ```dockerfile
 # Dockerfile.master - Salt master container
+
 FROM ubuntu:22.04
 
 # Install Salt master packages

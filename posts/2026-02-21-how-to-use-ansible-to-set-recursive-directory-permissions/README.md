@@ -18,6 +18,7 @@ Here is a straightforward example that sets ownership and permissions on a web r
 
 ```yaml
 # Set owner, group, and permissions recursively on the web root
+
 - name: Set permissions on /var/www/myapp
   ansible.builtin.file:
     path: /var/www/myapp

@@ -29,6 +29,7 @@ One of the most impactful lifecycle policies you can create is for S3 storage. M
 
 ```hcl
 # Define an S3 bucket with lifecycle rules for cost optimization
+
 resource "aws_s3_bucket" "data_lake" {
   bucket = "company-data-lake-${var.environment}"
 }

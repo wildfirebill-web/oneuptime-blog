@@ -18,6 +18,7 @@ Before adding nodes, ensure:
 
 ```bash
 # On the new node:
+
 # 1. Compatible OS (Ubuntu 20.04/22.04, RHEL 8+, etc.)
 # 2. Container runtime installed (containerd, CRI-O)
 # 3. kubeadm, kubelet, kubectl installed

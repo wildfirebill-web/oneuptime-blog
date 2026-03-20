@@ -40,6 +40,7 @@ From the CLI:
 
 ```bash
 # Show physical volumes
+
 sudo pvs
 
 # Show volume groups

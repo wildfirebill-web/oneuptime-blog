@@ -24,6 +24,7 @@ Deploy gateway collectors in each application cluster:
 
 ```yaml
 # tier1-collector.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -27,6 +27,7 @@ Let us build an external extension that captures telemetry data. First, create t
 
 ```python
 # extensions/telemetry-extension
+
 #!/usr/bin/env python3
 """
 External Lambda extension that captures telemetry data

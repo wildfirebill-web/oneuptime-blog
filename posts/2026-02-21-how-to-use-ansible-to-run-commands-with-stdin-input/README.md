@@ -18,6 +18,7 @@ Starting with Ansible 2.4, the `command` and `shell` modules support a `stdin` p
 
 ```yaml
 # pass a SQL query via stdin to the mysql command
+
 ---
 - name: Database operations via stdin
   hosts: db_servers

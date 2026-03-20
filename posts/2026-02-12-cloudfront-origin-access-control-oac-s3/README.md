@@ -25,6 +25,7 @@ OAC fixes all of these. It uses AWS Signature Version 4 (SigV4) for authenticati
 
 ```bash
 # Create an Origin Access Control for S3
+
 aws cloudfront create-origin-access-control \
   --origin-access-control-config '{
     "Name": "my-s3-oac",

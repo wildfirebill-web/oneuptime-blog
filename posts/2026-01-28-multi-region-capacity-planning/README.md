@@ -41,6 +41,7 @@ Each pattern has different capacity implications:
 
 ```python
 # multi_region_patterns.py - Define capacity requirements by pattern
+
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Dict

@@ -473,7 +473,7 @@ service:
       exporters: [otlp]
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Add contextual information to collected metrics.
 

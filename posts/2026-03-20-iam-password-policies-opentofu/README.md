@@ -19,6 +19,7 @@ AWS IAM password policies define requirements for passwords created by IAM users
 
 ```hcl
 # Account-level password policy for all IAM users
+
 # There is exactly one password policy per AWS account
 resource "aws_iam_account_password_policy" "main" {
   # Minimum password length (8-128 characters, recommend 14+)

@@ -38,6 +38,7 @@ Create the Helm resources for Traefik.
 
 ```yaml
 # traefik-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

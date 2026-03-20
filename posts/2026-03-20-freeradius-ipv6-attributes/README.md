@@ -22,6 +22,7 @@ RADIUS extended its attribute set to support IPv6 through several RFCs:
 
 ```bash
 # Verify IPv6 attributes are loaded in FreeRADIUS dictionary
+
 grep -i "ipv6\|IPv6" /usr/share/freeradius/dictionary.rfc3162
 grep -i "delegated" /usr/share/freeradius/dictionary.rfc4818
 
@@ -68,7 +69,7 @@ ss -6 -u -l -n | grep 1812  # UDP listening on IPv6
 
 ## Users File with IPv6 Attributes
 
-```
+```text
 # /etc/freeradius/3.0/users
 # Assign IPv6 prefix to user
 
@@ -121,7 +122,7 @@ sql {
 
 ## NAS Clients with IPv6 Addresses
 
-```
+```text
 # /etc/freeradius/3.0/clients.conf
 # Define NAS clients using IPv6 addresses
 
@@ -151,7 +152,7 @@ client dual_nas {
 ## Testing IPv6 Attributes with radtest
 
 ```bash
-# radtest doesn't support IPv6 directly — use radclient
+# radtest doesn't support IPv6 directly - use radclient
 
 # Create test request
 cat > /tmp/test-ipv6.txt << 'EOF'
@@ -182,7 +183,7 @@ radclient -x [2001:db8::radius]:1813 acct testing123 < /tmp/test-acct.txt
 
 ## Logging IPv6 Attributes
 
-```
+```text
 # /etc/freeradius/3.0/mods-enabled/detail
 # Log IPv6 attributes in accounting detail files
 
@@ -196,4 +197,4 @@ detail {
 
 ## Conclusion
 
-FreeRADIUS supports IPv6 through dictionary attributes defined in RFC 3162 and RFC 4818. Configure FreeRADIUS to listen on IPv6 by setting `ipaddr = ::` in the listen section. Assign IPv6 addresses to users via `Framed-IPv6-Prefix` (user's own /128 or /64), `Framed-IPv6-Route` (static routing), and `Delegated-IPv6-Prefix` (DHCPv6-PD). Define IPv6 NAS clients in `clients.conf` using `ipv6addr`. Test with `radclient` pointing to the bracketed IPv6 address `[2001:db8::radius]:1812`. The SQL module works with IPv6 database servers — use `::1` for localhost connections.
+FreeRADIUS supports IPv6 through dictionary attributes defined in RFC 3162 and RFC 4818. Configure FreeRADIUS to listen on IPv6 by setting `ipaddr = ::` in the listen section. Assign IPv6 addresses to users via `Framed-IPv6-Prefix` (user's own /128 or /64), `Framed-IPv6-Route` (static routing), and `Delegated-IPv6-Prefix` (DHCPv6-PD). Define IPv6 NAS clients in `clients.conf` using `ipv6addr`. Test with `radclient` pointing to the bracketed IPv6 address `[2001:db8::radius]:1812`. The SQL module works with IPv6 database servers - use `::1` for localhost connections.

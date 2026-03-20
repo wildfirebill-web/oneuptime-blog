@@ -200,6 +200,7 @@ Python's built-in logging module can be bridged to OpenTelemetry with a log hand
 
 ```python
 # setup_logging.py - Configure OpenTelemetry logging bridge
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler

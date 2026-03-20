@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Providers, Registry, Quality, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Provider, Registry, Quality, Best Practices, Infrastructure as Code
 
 Description: Learn how to evaluate the quality, maintenance status, and security posture of OpenTofu providers before adopting them in production infrastructure.
 
@@ -22,6 +22,7 @@ OpenTofu providers range from HashiCorp-maintained official providers to single-
 
 ```hcl
 # Check provider source and version in your lock file
+
 cat .terraform.lock.hcl
 
 # Example entry showing a community provider

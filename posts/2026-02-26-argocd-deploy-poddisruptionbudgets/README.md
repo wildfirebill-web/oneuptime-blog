@@ -28,6 +28,7 @@ Here is a PDB that ensures at least 2 pods of a web application are always runni
 
 ```yaml
 # apps/myapp/pdb.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

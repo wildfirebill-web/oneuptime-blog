@@ -28,6 +28,7 @@ Here is a limit range that sets sensible defaults for a typical namespace.
 
 ```yaml
 # limit-range-basic.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

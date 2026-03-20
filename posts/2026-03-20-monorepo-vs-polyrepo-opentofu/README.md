@@ -14,7 +14,7 @@ Whether to store all OpenTofu configurations in a single repository (monorepo) o
 
 All infrastructure configurations in a single repository:
 
-```
+```text
 infra-monorepo/
 ├── environments/
 │   ├── dev/
@@ -35,27 +35,28 @@ infra-monorepo/
 
 ### Monorepo Advantages
 
-```
+```text
 + Single place to see all infrastructure
 + Cross-team changes in one PR (e.g., module + consumer in one commit)
 + Shared modules are always co-located with consumers
-+ Simpler CI/CD — one pipeline to rule them all
++ Simpler CI/CD - one pipeline to rule them all
 + Easier to enforce organization-wide standards
 ```
 
 ### Monorepo Challenges
 
-```
+```text
 - Large repos slow down git operations
 - CI must determine which configs changed (use Terramate or path filters)
 - Merge conflicts when many teams work simultaneously
-- Access control is per-repo — can't restrict teams to their directory
+- Access control is per-repo - can't restrict teams to their directory
 ```
 
 ### Monorepo CI Pattern
 
 ```yaml
 # Only plan configurations that changed
+
 on:
   pull_request:
     paths:
@@ -70,7 +71,7 @@ jobs:
 
 Infrastructure split across multiple repositories:
 
-```
+```text
 infra-platform/       → VPC, IAM, shared services (platform team)
 infra-data/           → RDS, Kafka, data pipelines (data team)
 infra-app-frontend/   → CDN, static hosting (frontend team)
@@ -80,7 +81,7 @@ tf-modules/           → Shared modules (platform team)
 
 ### Polyrepo Advantages
 
-```
+```text
 + Natural team ownership and access control
 + Faster git operations on smaller repos
 + Teams release independently
@@ -90,7 +91,7 @@ tf-modules/           → Shared modules (platform team)
 
 ### Polyrepo Challenges
 
-```
+```text
 - Cross-team changes require multiple PRs
 - Module consumers may lag behind module updates
 - No single view of all infrastructure
@@ -111,7 +112,7 @@ tf-modules/           → Shared modules (platform team)
 
 Many organizations use a hybrid: a platform monorepo for shared infrastructure and team-specific polyrepos for applications:
 
-```
+```text
 infra-platform/    → Monorepo: networking, IAM, shared services
 app-team-alpha/    → Polyrepo: team Alpha's application infrastructure
 app-team-beta/     → Polyrepo: team Beta's application infrastructure
@@ -120,4 +121,4 @@ tf-modules/        → Shared module registry
 
 ## Conclusion
 
-Start with a monorepo for small teams and early-stage organizations — the simplicity wins. Move toward polyrepos (or a hybrid) as team boundaries solidify and access control becomes important. The decision is reversible: splitting a monorepo is easier than merging polyrepos, so err toward the simpler structure initially.
+Start with a monorepo for small teams and early-stage organizations - the simplicity wins. Move toward polyrepos (or a hybrid) as team boundaries solidify and access control becomes important. The decision is reversible: splitting a monorepo is easier than merging polyrepos, so err toward the simpler structure initially.

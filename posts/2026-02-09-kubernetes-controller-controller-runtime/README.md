@@ -22,6 +22,7 @@ cd my-controller
 go mod init github.com/example/my-controller
 
 # Install controller-runtime
+
 go get sigs.k8s.io/controller-runtime@latest
 ```
 

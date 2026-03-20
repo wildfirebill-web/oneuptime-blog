@@ -16,6 +16,7 @@ Molecule exposes several variables automatically that you can use in your molecu
 
 ```yaml
 # These are available in molecule.yml and all playbooks
+
 # MOLECULE_PROJECT_DIRECTORY - Root of the role
 # MOLECULE_SCENARIO_DIRECTORY - Current scenario directory
 # MOLECULE_EPHEMERAL_DIRECTORY - Temp directory for this run

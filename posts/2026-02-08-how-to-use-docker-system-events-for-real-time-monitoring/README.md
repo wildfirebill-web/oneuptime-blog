@@ -16,6 +16,7 @@ The simplest way to see events is to start the stream and then interact with Doc
 
 ```bash
 # Start watching events (this blocks and streams output)
+
 docker system events
 
 # Shorter alias

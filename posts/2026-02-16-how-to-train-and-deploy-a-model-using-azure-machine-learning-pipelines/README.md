@@ -27,6 +27,7 @@ You need an Azure ML workspace (see my previous post on creating one). Install t
 
 ```bash
 # Install the Azure ML SDK v2
+
 pip install azure-ai-ml azure-identity
 ```
 

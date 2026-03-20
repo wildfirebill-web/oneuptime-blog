@@ -14,6 +14,7 @@ In a dual-stack cluster, services should have both IPv4 and IPv6 ClusterIPs.
 
 ```bash
 # Check the service's IP addresses
+
 kubectl get svc <service-name> -o jsonpath='{.spec.clusterIPs}'
 
 # Full service spec to see ipFamilies and ipFamilyPolicy
@@ -111,4 +112,4 @@ kubectl exec -it dns-test -- curl -6 http://[<ipv6-clusterip>]:<port>/
 | DNS query times out | CoreDNS cannot reach IPv6 upstream | Check CoreDNS pod IPv6 connectivity |
 | EndpointSlice only has IPv4 | Pods missing IPv6 addresses | Fix CNI IPv6 IPAM configuration |
 
-Debugging service discovery requires checking DNS, kube-proxy rules, and endpoint allocation together — a problem in any one layer will prevent IPv6 service access.
+Debugging service discovery requires checking DNS, kube-proxy rules, and endpoint allocation together - a problem in any one layer will prevent IPv6 service access.

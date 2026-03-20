@@ -23,6 +23,7 @@ This guide covers migrate Advanced K8s NetworkPolicy in Calico with production-r
 
 ```yaml
 # Advanced Kubernetes NetworkPolicy combining namespace and pod selectors
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

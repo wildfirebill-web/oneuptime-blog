@@ -29,6 +29,7 @@ The single most impactful performance fix for most clusters:
 
 ```yaml
 # performance-fix-aggregation.yaml
+
 # Reduces the volume of events Hubble processes
 monitorAggregation: medium
 monitorAggregationInterval: 5s

@@ -147,6 +147,7 @@ EOF
 
 ```bash
 # Web frontend should reach backend
+
 kubectl exec -n azure-policy-test frontend -- wget -qO- http://backend-api
 
 # Intruder should be blocked

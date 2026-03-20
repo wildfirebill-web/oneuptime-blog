@@ -38,6 +38,7 @@ incident-response/
 
 ```yaml
 # playbooks/security-breach.yml
+
 # Immediate response to a security breach
 - name: Security incident response
   hosts: "{{ compromised_hosts | mandatory }}"

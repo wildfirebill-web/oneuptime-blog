@@ -24,6 +24,7 @@ Runbook operations typically modify existing infrastructure rather than creating
 
 ```hcl
 # runbooks/scale-web-tier/main.tf
+
 # Runbook: Scale the web tier up or down
 
 variable "action" {

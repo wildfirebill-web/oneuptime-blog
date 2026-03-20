@@ -42,6 +42,7 @@ Rancher will begin the cluster update process.
 
 ```bash
 # Watch the cluster nodes
+
 kubectl get nodes -w
 
 # Watch Calico components

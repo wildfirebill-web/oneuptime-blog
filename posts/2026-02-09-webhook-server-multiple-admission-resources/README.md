@@ -368,6 +368,7 @@ Test each webhook independently:
 
 ```bash
 # Test pod validation
+
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod

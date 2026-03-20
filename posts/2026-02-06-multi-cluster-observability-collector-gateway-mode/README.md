@@ -64,6 +64,7 @@ Each Kubernetes cluster needs a DaemonSet collector that acts as a local agent. 
 
 ```yaml
 # local-agent.yaml
+
 # DaemonSet collector running inside each Kubernetes cluster
 apiVersion: opentelemetry.io/v1beta1
 kind: OpenTelemetryCollector

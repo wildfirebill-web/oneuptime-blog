@@ -25,6 +25,7 @@ Start by checking the GitRepository status for the specific error message.
 
 ```bash
 # Get the status of the failing GitRepository
+
 flux get source git my-app
 
 # Get the detailed error message

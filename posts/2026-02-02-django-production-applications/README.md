@@ -57,6 +57,7 @@ Split your settings into multiple files to avoid production configuration mistak
 
 ```python
 # config/settings/base.py
+
 import os
 from pathlib import Path
 

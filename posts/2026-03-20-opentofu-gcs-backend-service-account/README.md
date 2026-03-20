@@ -1,8 +1,8 @@
-# How to Configure GCS Backend with Service Account Authentication in OpenTofu
+# How to Configure GCS Backend with Service Account Authentication in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, GCP
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, GCP
 
 Description: Learn how to configure Service Account authentication for the OpenTofu GCS backend for CI/CD and non-interactive deployments.
 
@@ -14,6 +14,7 @@ Service Account authentication is the standard approach for GCS backend access i
 
 ```bash
 # Create the service account
+
 gcloud iam service-accounts create tofu-state-sa \
   --description="OpenTofu state management" \
   --display-name="OpenTofu State SA"

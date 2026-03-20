@@ -73,6 +73,7 @@ For Java applications, AppDynamics typically runs as a javaagent. Remove it from
 
 ```bash
 # BEFORE: Java application with AppDynamics agent attached
+
 # The -javaagent flag loads the AppDynamics bytecode instrumentation
 # java -javaagent:/opt/appdynamics/javaagent/javaagent.jar \
 #      -Dappdynamics.controller.hostName=controller.example.com \

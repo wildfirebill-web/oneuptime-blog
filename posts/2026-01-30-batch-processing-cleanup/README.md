@@ -900,6 +900,7 @@ Centralize retention policies in configuration for easy adjustment without code 
 
 ```yaml
 # Batch cleanup configuration
+
 batch:
   cleanup:
     # Job repository retention settings

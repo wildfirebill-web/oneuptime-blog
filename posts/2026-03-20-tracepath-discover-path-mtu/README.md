@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tracepath, MTU, PMTUD, Linux, Networking, Troubleshooting
+Tags: Tracepath, MTU, PMTUD, Linux, Networking, Troubleshooting
 
 Description: Use tracepath to discover the path MTU between two hosts, interpret its output to find MTU bottlenecks, and compare tracepath with traceroute and ping for MTU discovery.
 
@@ -14,6 +14,7 @@ Description: Use tracepath to discover the path MTU between two hosts, interpret
 
 ```bash
 # Trace path to destination showing MTU:
+
 tracepath 10.20.0.5
 
 # With numeric output (no DNS resolution):
@@ -37,7 +38,7 @@ tracepath6 -n 2001:db8::1
 
 ## Interpret tracepath Output
 
-```
+```text
 tracepath output fields:
 
 1?: [LOCALHOST]   pmtu 1500
@@ -169,4 +170,4 @@ tracepath6 -n 2001:db8::1
 
 ## Conclusion
 
-`tracepath -n <destination>` is the fastest way to discover path MTU on Linux — it requires no root privileges and shows MTU at each hop. Look for `pmtu` values that decrease along the path to identify bottleneck routers. The final `Resume: pmtu N` line shows the effective path MTU. Use this value to configure application payload sizes, tunnel interface MTU, and TCP MSS clamping rules. For hops that don't respond, verify with `ping -M do` at specific sizes to confirm the MTU boundary.
+`tracepath -n <destination>` is the fastest way to discover path MTU on Linux - it requires no root privileges and shows MTU at each hop. Look for `pmtu` values that decrease along the path to identify bottleneck routers. The final `Resume: pmtu N` line shows the effective path MTU. Use this value to configure application payload sizes, tunnel interface MTU, and TCP MSS clamping rules. For hops that don't respond, verify with `ping -M do` at specific sizes to confirm the MTU boundary.

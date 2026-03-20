@@ -28,6 +28,7 @@ Hurricane Electric provides these values when you create a tunnel:
 
 ```bash
 # Load the SIT module
+
 modprobe sit
 
 # Create the SIT tunnel
@@ -118,4 +119,4 @@ Destination=::/0
 
 ## Conclusion
 
-SIT tunnels provide a straightforward path to IPv6 connectivity over IPv4 networks. They are widely used with IPv6 tunnel brokers for home and lab use. The `mode sit` creates a 6in4 tunnel — IPv6 packets are encapsulated in IPv4 with IP protocol 41. For production IPv6 connectivity, prefer native IPv6 from your ISP, using SIT tunnels as a transition mechanism.
+SIT tunnels provide a straightforward path to IPv6 connectivity over IPv4 networks. They are widely used with IPv6 tunnel brokers for home and lab use. The `mode sit` creates a 6in4 tunnel - IPv6 packets are encapsulated in IPv4 with IP protocol 41. For production IPv6 connectivity, prefer native IPv6 from your ISP, using SIT tunnels as a transition mechanism.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, CDN, Content Delivery, Performance, NGINX, Caching
+Tags: IPv6, CDN, Content Delivery, Performance, Nginx, Caching
 
 Description: Optimize content delivery over IPv6 by configuring CDN IPv6 support, NGINX caching, TCP tuning, and anycast routing for global low-latency asset delivery.
 
@@ -14,6 +14,7 @@ Major CDNs (Cloudflare, Fastly, Akamai) are fully dual-stack. Optimizing IPv6 co
 
 ```bash
 # Check if your CDN domain resolves to IPv6
+
 dig AAAA cdn.example.com
 # or
 dig AAAA mysite.cdn77.org
@@ -34,7 +35,7 @@ done
 ## Step 2: Configure NGINX Origin for IPv6 Delivery
 
 ```nginx
-# nginx.conf — optimized origin server for CDN pull
+# nginx.conf - optimized origin server for CDN pull
 
 http {
     # Enable sendfile for efficient static asset delivery
@@ -125,7 +126,7 @@ server {
 Configure split-horizon DNS to route users to the nearest CDN PoP.
 
 ```bash
-# BGP anycast for IPv6 — advertise the same /48 from multiple PoPs
+# BGP anycast for IPv6 - advertise the same /48 from multiple PoPs
 # Each PoP announces the same prefix, BGP selects the closest
 # (Requires ISP BGP peering and RIPE/ARIN address allocation)
 

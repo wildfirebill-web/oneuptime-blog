@@ -29,6 +29,7 @@ Azure Database for PostgreSQL Flexible Server supports versions 13 through 16. C
 
 ```bash
 # Check the source PostgreSQL version
+
 psql -c "SELECT version();"
 ```
 

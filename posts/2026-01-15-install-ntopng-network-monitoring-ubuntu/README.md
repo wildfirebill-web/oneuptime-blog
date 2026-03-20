@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ntopng, Network Monitoring, Ubuntu, Traffic Analysis, NetFlow, SFlow, Network Security, InfluxDB, SNMP
+Tags: Ntopng, Network Monitoring, Ubuntu, Traffic Analysis, NetFlow, sFlow, Network Security, InfluxDB, SNMP
 
 Description: A complete guide to installing, configuring, and using ntopng for comprehensive network traffic monitoring and analysis on Ubuntu systems.
 
@@ -37,6 +37,7 @@ The hardware requirements depend on the amount of traffic you plan to monitor.
 
 ```bash
 # Minimum requirements for small networks (< 100 Mbps)
+
 # - 2 CPU cores
 # - 4 GB RAM
 # - 20 GB disk space

@@ -48,6 +48,7 @@ First, install the required packages:
 
 ```bash
 # Core LangChain packages
+
 pip install langchain langchain-openai langchain-community
 
 # Vector store (we'll use Chroma for local development)

@@ -69,6 +69,7 @@ packages:
 ```bash
 sudo subscription-manager register --auto-attach
 # Or connect to Red Hat Insights:
+
 sudo insights-client --register
 ```
 

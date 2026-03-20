@@ -34,6 +34,7 @@ For managed identity, ensure the Azure resource (VM, ACI, or Azure DevOps) has t
 
 ```bash
 # Assign Contributor role to the managed identity
+
 az role assignment create   --assignee "<managed-identity-principal-id>"   --role "Contributor"   --scope "/subscriptions/$SUBSCRIPTION_ID"
 ```
 

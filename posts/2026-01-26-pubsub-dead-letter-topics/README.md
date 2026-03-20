@@ -44,6 +44,7 @@ First, create a topic to hold the failed messages:
 
 ```bash
 # Create the dead letter topic
+
 gcloud pubsub topics create orders-dlq
 
 # Create a subscription to process dead letters

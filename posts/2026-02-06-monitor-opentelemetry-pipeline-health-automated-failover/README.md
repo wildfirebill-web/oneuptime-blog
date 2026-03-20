@@ -18,6 +18,7 @@ Enable the health check extension and telemetry endpoint in your collector confi
 
 ```yaml
 # collector-health-config.yaml
+
 # Enable the health_check extension for liveness/readiness probes
 # and the zpages extension for debugging. The telemetry section
 # configures the Prometheus metrics endpoint.

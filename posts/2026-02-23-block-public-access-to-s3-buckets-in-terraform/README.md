@@ -30,6 +30,7 @@ For maximum security, enable all four.
 
 ```hcl
 # Create an S3 bucket
+
 resource "aws_s3_bucket" "data" {
   bucket_prefix = "app-data-"
 

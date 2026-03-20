@@ -20,6 +20,7 @@ RKE2 is Rancher's next-generation Kubernetes distribution that focuses on securi
 
 ```bash
 # Update system packages
+
 sudo apt-get update && sudo apt-get upgrade -y
 
 # Disable swap (required for Kubernetes)

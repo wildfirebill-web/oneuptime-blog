@@ -31,6 +31,7 @@ The overall application health is the worst status among all resources. If one D
 
 ```bash
 # List all resources and their health status
+
 argocd app resources my-app
 
 # Filter for non-healthy resources

@@ -20,6 +20,7 @@ For additional ADLS Gen2 accounts, you can configure linked services with variou
 
 ```bash
 # Create a Synapse workspace with ADLS Gen2 as primary storage
+
 az synapse workspace create \
   --name my-synapse-workspace \
   --resource-group my-resource-group \

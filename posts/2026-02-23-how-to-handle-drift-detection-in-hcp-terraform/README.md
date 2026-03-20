@@ -51,6 +51,7 @@ Drift detection is part of the workspace health assessment feature, available on
 
 ```bash
 # Enable health assessments (drift detection) for a workspace
+
 WORKSPACE_ID="ws-xxxxxxxxxxxxxxxx"
 
 curl \

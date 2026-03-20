@@ -18,6 +18,7 @@ Install CDK8s CLI and create a Python project:
 
 ```bash
 # Install CDK8s CLI
+
 npm install -g cdk8s-cli
 
 # Create new Python project

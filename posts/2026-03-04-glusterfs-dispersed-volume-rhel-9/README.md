@@ -93,6 +93,7 @@ Check what is stored on each brick:
 
 ```bash
 # On any node
+
 ls -la /data/glusterfs/disperse/brick1/data/
 ```
 

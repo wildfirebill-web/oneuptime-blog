@@ -32,6 +32,7 @@ Implement strong authentication and authorization:
 
 ```yaml
 # Talos cluster configuration for access control
+
 cluster:
   apiServer:
     extraArgs:

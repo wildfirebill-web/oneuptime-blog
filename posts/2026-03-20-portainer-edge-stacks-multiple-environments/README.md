@@ -8,7 +8,7 @@ Description: Learn how to use Portainer Edge Stacks to deploy containerized appl
 
 ## Introduction
 
-Portainer Edge Stacks allow you to define a Docker Compose application and deploy it across many edge endpoints at once — without SSH-ing into each device. This is invaluable for managing retail stores, factory floors, or any distributed environment where dozens or hundreds of devices need identical (or parameterized) workloads.
+Portainer Edge Stacks allow you to define a Docker Compose application and deploy it across many edge endpoints at once - without SSH-ing into each device. This is invaluable for managing retail stores, factory floors, or any distributed environment where dozens or hundreds of devices need identical (or parameterized) workloads.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ Create a `docker-compose.yml` for the application you want to deploy. Use enviro
 
 ```yaml
 # docker-compose.yml for edge deployment
+
 # Uses environment variables for per-device customization
 version: "3.8"
 
@@ -64,13 +65,13 @@ volumes:
 2. Click **Add edge stack**.
 3. Enter a **Name** for the stack (e.g., `retail-pos-app`).
 4. Choose the **build method**:
-   - **Web editor** — paste your compose YAML directly.
-   - **Upload** — upload a compose file from your machine.
-   - **Repository** — pull from a Git repo (recommended for CI/CD).
+   - **Web editor** - paste your compose YAML directly.
+   - **Upload** - upload a compose file from your machine.
+   - **Repository** - pull from a Git repo (recommended for CI/CD).
 
 ## Step 3: Select Target Edge Groups
 
-```
+```sql
 # In the Portainer UI, after entering the stack name and content:
 # - Select one or more Edge Groups under "Edge groups"
 # - Example: select "US-Retail-Stores" and "EU-Retail-Stores"
@@ -104,9 +105,9 @@ After creating the stack:
 1. Go to **Edge Compute > Edge Stacks**.
 2. Click your stack name.
 3. View the deployment status per endpoint:
-   - **OK** — Stack is running.
-   - **Deploying** — In progress.
-   - **Failed** — Check the edge device logs.
+   - **OK** - Stack is running.
+   - **Deploying** - In progress.
+   - **Failed** - Check the edge device logs.
 
 ## Step 6: Update the Stack Across All Environments
 
@@ -116,7 +117,7 @@ To roll out a new version:
 3. Portainer propagates the update to all assigned edge groups.
 
 ```yaml
-# Updated stack — bump APP_VERSION for a rolling update
+# Updated stack - bump APP_VERSION for a rolling update
 services:
   app:
     image: myorg/myapp:2.5.0  # Updated from 2.4.1
@@ -128,7 +129,7 @@ services:
 - **Pin image versions** in edge stacks to avoid unexpected updates from `:latest` tags.
 - **Use Git repositories** as the stack source for version-controlled rollouts.
 - **Test in a staging edge group** before promoting to production edge groups.
-- **Monitor failed deployments** promptly — edge devices may have resource constraints.
+- **Monitor failed deployments** promptly - edge devices may have resource constraints.
 
 ## Conclusion
 

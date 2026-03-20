@@ -24,6 +24,7 @@ After modifying IPAM configuration with `calicoctl ipam configure`, you must ver
 
 ```bash
 # Check the current configuration
+
 calicoctl ipam configure show
 
 # Expected output after enabling strict affinity:

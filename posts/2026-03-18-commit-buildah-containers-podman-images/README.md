@@ -18,6 +18,7 @@ The `buildah commit` command takes a working container with all its modification
 
 ```bash
 # Ensure both tools are installed
+
 buildah --version
 podman --version
 

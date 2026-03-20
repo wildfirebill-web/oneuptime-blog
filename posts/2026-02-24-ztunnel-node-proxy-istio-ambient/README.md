@@ -28,6 +28,7 @@ When you install Istio with the ambient profile, ztunnel is deployed as a Daemon
 
 ```bash
 # Install with ambient profile
+
 istioctl install --set profile=ambient
 
 # Verify ztunnel is running on all nodes
@@ -136,7 +137,7 @@ This policy allows traffic from the `frontend-sa` service account to port 8080 i
 
 Policies that reference HTTP methods, paths, or headers will NOT be enforced by ztunnel. Those require a waypoint proxy.
 
-## Resource Usage
+Resource Usage
 
 One of the main selling points of ztunnel is its low resource footprint. Since it is written in Rust and only handles L4 processing, it uses significantly less memory than Envoy:
 

@@ -904,6 +904,7 @@ Here is a complete example of a critical threshold monitoring system.
 
 ```yaml
 # prometheus-rules.yaml
+
 groups:
   - name: critical-thresholds
     rules:

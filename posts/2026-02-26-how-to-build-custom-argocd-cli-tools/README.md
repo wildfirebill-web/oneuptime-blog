@@ -20,6 +20,7 @@ ArgoCD is written in Go, and its client libraries are available as Go modules. T
 
 ```bash
 # Initialize a new Go project
+
 mkdir argocd-tools && cd argocd-tools
 go mod init github.com/company/argocd-tools
 

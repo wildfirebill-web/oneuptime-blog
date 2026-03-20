@@ -8,7 +8,7 @@ Description: Learn how to back up K3s cluster data including etcd snapshots, SQL
 
 ## Introduction
 
-Data loss in a Kubernetes cluster can be catastrophic — losing cluster state means losing all deployed workloads, configurations, and secrets. K3s supports two datastore backends: **SQLite** (default for single-node) and **embedded etcd** (for HA clusters). Both require different backup strategies. This guide covers backing up all critical K3s data.
+Data loss in a Kubernetes cluster can be catastrophic - losing cluster state means losing all deployed workloads, configurations, and secrets. K3s supports two datastore backends: **SQLite** (default for single-node) and **embedded etcd** (for HA clusters). Both require different backup strategies. This guide covers backing up all critical K3s data.
 
 ## Understanding K3s Data Stores
 
@@ -16,7 +16,7 @@ K3s stores cluster state in one of two ways:
 
 - **SQLite** (`/var/lib/rancher/k3s/server/db/state.db`): Default for single-server deployments
 - **Embedded etcd** (`/var/lib/rancher/k3s/server/db/etcd/`): Used for HA multi-server deployments
-- **External datastore**: PostgreSQL, MySQL, or etcd — managed externally
+- **External datastore**: PostgreSQL, MySQL, or etcd - managed externally
 
 ## Prerequisites
 
@@ -30,6 +30,7 @@ For single-node K3s installations using the default SQLite datastore:
 
 ```bash
 # Stop K3s to ensure data consistency (optional but recommended)
+
 systemctl stop k3s
 
 # Create backup directory with timestamp

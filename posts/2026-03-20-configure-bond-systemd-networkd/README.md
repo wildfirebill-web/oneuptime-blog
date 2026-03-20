@@ -14,6 +14,7 @@ systemd-networkd creates bond interfaces via `.netdev` files and attaches member
 
 ```ini
 # /etc/systemd/network/10-bond0.netdev
+
 [NetDev]
 Name=bond0
 Kind=bond

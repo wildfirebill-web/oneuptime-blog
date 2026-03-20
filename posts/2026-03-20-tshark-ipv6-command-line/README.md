@@ -14,6 +14,7 @@ Description: Use tshark, the command-line version of Wireshark, to capture and a
 
 ```bash
 # Capture all IPv6 traffic
+
 tshark -i eth0 -f "ip6"
 
 # Show only IPv6 frames with display filter

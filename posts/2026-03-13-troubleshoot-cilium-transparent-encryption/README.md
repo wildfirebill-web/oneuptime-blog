@@ -33,6 +33,7 @@ Expected output should show the encryption type and number of encrypted nodes/pe
 kubectl get cm -n kube-system cilium-config \
   -o jsonpath='{.data.enable-wireguard}'
 # or
+
 kubectl get cm -n kube-system cilium-config \
   -o jsonpath='{.data.enable-ipsec}'
 ```

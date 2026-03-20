@@ -32,6 +32,7 @@ Try these in order:
 
 ```bash
 # 1. Clear npm cache
+
 npm cache clean --force
 
 # 2. Delete node_modules and reinstall

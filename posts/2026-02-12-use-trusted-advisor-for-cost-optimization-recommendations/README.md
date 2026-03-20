@@ -38,6 +38,7 @@ You can retrieve Trusted Advisor recommendations programmatically:
 
 ```bash
 # List all available Trusted Advisor checks
+
 aws support describe-trusted-advisor-checks \
   --language en \
   --query "checks[?category=='cost_optimizing'].{Id: id, Name: name}" \

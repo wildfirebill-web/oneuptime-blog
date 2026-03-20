@@ -73,6 +73,7 @@ Document all active Spinnaker pipelines.
 
 ```bash
 # Using Spinnaker's spin CLI
+
 spin pipeline list --application my-app --output json | jq '.[].name'
 
 # Export each pipeline configuration

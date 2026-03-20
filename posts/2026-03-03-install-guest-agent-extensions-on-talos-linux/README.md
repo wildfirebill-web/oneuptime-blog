@@ -31,6 +31,7 @@ Add the QEMU guest agent extension to your Talos image:
 
 ```bash
 # Using Image Factory
+
 curl -X POST https://factory.talos.dev/schematics \
   -H "Content-Type: application/json" \
   -d '{

@@ -35,6 +35,7 @@ Start by provisioning your namespace and creating the topic with its subscriptio
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --name my-servicebus-ns \
   --resource-group my-rg \

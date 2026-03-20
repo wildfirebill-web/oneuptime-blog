@@ -16,6 +16,7 @@ The `timeadd` function takes a timestamp and a duration string:
 
 ```hcl
 # timeadd(timestamp, duration)
+
 timeadd("2026-02-23T00:00:00Z", "24h")
 # Result: "2026-02-24T00:00:00Z"
 ```

@@ -26,6 +26,7 @@ Before you can use the S3 backend, you need the bucket and DynamoDB table. Here 
 
 ```hcl
 # backend-setup/main.tf
+
 # This configuration creates the S3 backend infrastructure
 # Run this with local state first
 

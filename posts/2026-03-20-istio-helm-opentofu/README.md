@@ -14,6 +14,7 @@ Istio provides a full-featured service mesh with automatic mTLS between services
 
 ```hcl
 # main.tf - Deploy Istio via Helm (recommended multi-chart approach)
+
 resource "helm_release" "istio_base" {
   name             = "istio-base"
   repository       = "https://istio-release.storage.googleapis.com/charts"

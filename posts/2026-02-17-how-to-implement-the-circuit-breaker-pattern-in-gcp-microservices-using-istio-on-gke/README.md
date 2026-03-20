@@ -20,6 +20,7 @@ GKE offers a managed Istio installation through Anthos Service Mesh, or you can 
 
 ```bash
 # Option 1: Install Anthos Service Mesh (managed)
+
 gcloud container fleet mesh enable --project=my-project
 gcloud container fleet memberships register my-cluster \
     --gke-cluster=us-central1/my-cluster \

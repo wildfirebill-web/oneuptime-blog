@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, Troubleshooting, Authentication, Timeouts, Network Management
+Tags: SNMP, Troubleshooting, Authentication, Timeout, Network Management
 
 Description: Learn how to systematically diagnose and fix SNMP polling timeouts, authentication failures, and community string mismatches that prevent NMS tools from collecting device data.
 
@@ -17,10 +17,11 @@ Description: Learn how to systematically diagnose and fix SNMP polling timeouts,
 
 ## Step 1: Verify Basic SNMP Connectivity
 
-Start with the most basic test—a simple `snmpget` from your NMS:
+Start with the most basic test-a simple `snmpget` from your NMS:
 
 ```bash
 # Test SNMPv2c - get system description
+
 snmpget -v2c -c public 192.168.1.1 sysDescr.0
 
 # If this fails, check:
@@ -58,7 +59,7 @@ Router# show access-list 10
 
 ## Step 3: Verify Community String
 
-Authentication failures from wrong community strings appear as timeouts in SNMPv2c (no error is returned—the packet is silently dropped):
+Authentication failures from wrong community strings appear as timeouts in SNMPv2c (no error is returned-the packet is silently dropped):
 
 ```bash
 # Enable SNMP authentication failure traps on the device
@@ -77,7 +78,7 @@ Router# show log | include SNMP
 
 Enable SNMP debugging for real-time diagnosis:
 
-```
+```text
 ! Enable SNMP debug (use carefully - can be verbose)
 Router# debug snmp packets
 Router# debug snmp requests
@@ -110,7 +111,7 @@ snmpget -v3 -l authPriv -u nmsuser -a SHA -A "AuthPass@2026!" \
 
 Fix SNMPv3 credentials on Cisco IOS:
 
-```
+```text
 ! Re-create the SNMPv3 user with correct settings
 Router(config)# no snmp-server user nmsuser NetOpsGroup v3
 Router(config)# snmp-server user nmsuser NetOpsGroup v3 \
@@ -122,7 +123,7 @@ Router(config)# snmp-server user nmsuser NetOpsGroup v3 \
 
 If the device is CPU-loaded, SNMP responses may be delayed or dropped:
 
-```
+```text
 ! Check CPU utilization on Cisco
 Router# show processes cpu sorted
 
@@ -151,7 +152,7 @@ snmpget -v2c -c public 192.168.1.1 1.3.6.1.4.1.9.9.109.1.1.1.1.8.1
 
 ## Troubleshooting Checklist
 
-```
+```text
 □ Ping the device IP from the NMS server
 □ Test UDP port 161: nc -uzv device-ip 161
 □ Try snmpget with correct version and community

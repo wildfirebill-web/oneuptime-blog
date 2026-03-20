@@ -20,6 +20,7 @@ Use the `--hostname` (or `-h`) flag to assign a custom hostname:
 
 ```bash
 # Set a custom hostname
+
 podman run --rm --hostname my-web-server alpine hostname
 
 # Verify the full hostname configuration

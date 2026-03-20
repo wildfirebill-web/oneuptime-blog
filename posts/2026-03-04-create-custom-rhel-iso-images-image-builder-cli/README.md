@@ -16,6 +16,7 @@ Define a blueprint with your desired packages and customizations:
 
 ```toml
 # webserver-iso.toml
+
 name = "webserver-iso"
 description = "Custom RHEL ISO for web servers"
 version = "1.0.0"

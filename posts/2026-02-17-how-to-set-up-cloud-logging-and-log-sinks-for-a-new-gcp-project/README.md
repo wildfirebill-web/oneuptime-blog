@@ -35,6 +35,7 @@ Start by setting up log buckets with appropriate retention:
 
 ```bash
 # Update the default bucket retention to 60 days (from 30)
+
 gcloud logging buckets update _Default \
   --location=global \
   --retention-days=60 \

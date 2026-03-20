@@ -16,6 +16,7 @@ At the most basic level, Kubernetes services support TCP and UDP protocols nativ
 
 ```yaml
 # TCP service (default)
+
 apiVersion: v1
 kind: Service
 metadata:

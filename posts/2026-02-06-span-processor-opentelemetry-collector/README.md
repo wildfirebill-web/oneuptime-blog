@@ -40,6 +40,7 @@ Here's a minimal Span Processor configuration that renames spans based on attrib
 
 ```yaml
 # Configure receivers to accept traces
+
 receivers:
   otlp:
     protocols:

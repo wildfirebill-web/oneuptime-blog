@@ -28,6 +28,7 @@ The basic usage adds a host's SSH key to the known_hosts file:
 
 ```yaml
 # add a host key to known_hosts
+
 ---
 - name: Manage known_hosts entries
   hosts: localhost

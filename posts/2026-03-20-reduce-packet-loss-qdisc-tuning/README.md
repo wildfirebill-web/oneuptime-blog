@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: qdisc, tc, Traffic Control, Linux, Packet Loss, QoS, FQ-CoDel
+Tags: Qdisc, tc, Traffic Control, Linux, Packet Loss, QoS, FQ-CoDel
 
 Description: Learn how to configure Linux traffic control queue disciplines (qdiscs) to reduce packet loss, latency, and bufferbloat on network interfaces.
 
@@ -19,6 +19,7 @@ Problems with default qdisc:
 
 ```bash
 # View current qdisc for all interfaces
+
 tc qdisc show
 
 # Output:

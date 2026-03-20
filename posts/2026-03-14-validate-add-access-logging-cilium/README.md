@@ -231,6 +231,7 @@ Validate the complete logging pipeline in a cluster:
 
 ```bash
 # Send known traffic
+
 kubectl exec test-client -- protocol-client send --command GET --key "test1" --target myservice:9000
 kubectl exec test-client -- protocol-client send --command DELETE --key "test2" --target myservice:9000
 

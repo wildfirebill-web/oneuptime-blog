@@ -33,6 +33,7 @@ Define the CodeBuild project using CloudFormation or Terraform. Here is the Clou
 
 ```yaml
 # codebuild-project.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   CodeBuildProject:

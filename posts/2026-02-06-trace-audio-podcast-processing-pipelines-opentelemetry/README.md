@@ -223,6 +223,7 @@ Beyond per-job traces, you need aggregate metrics for pipeline health.
 
 ```python
 # Track jobs in each state
+
 jobs_in_progress = meter.create_up_down_counter(
     name="audio.pipeline.jobs_in_progress",
     description="Number of audio processing jobs currently running",

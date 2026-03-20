@@ -44,6 +44,7 @@ sequenceDiagram
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
   binaryauthorization.googleapis.com \
   containeranalysis.googleapis.com \

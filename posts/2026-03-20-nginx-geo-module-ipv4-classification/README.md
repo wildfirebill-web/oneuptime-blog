@@ -8,7 +8,7 @@ Description: Use the Nginx ngx_http_geo_module to classify client IPv4 addresses
 
 ## Introduction
 
-The `geo` module in Nginx maps client IP addresses to custom variable values. You can use it to classify internal vs external traffic, define regional groups, or set flags that downstream directives can act on—without any external dependencies.
+The `geo` module in Nginx maps client IP addresses to custom variable values. You can use it to classify internal vs external traffic, define regional groups, or set flags that downstream directives can act on-without any external dependencies.
 
 ## Basic geo Block Syntax
 
@@ -127,6 +127,7 @@ For real geographic classification, combine `geo` with the `geoip` module and Ma
 
 ```bash
 # Install GeoIP module and database
+
 sudo apt install nginx-module-geoip
 wget -O /etc/nginx/GeoIP.dat \
   https://dl.miyuru.lk/geoip/maxmind/country/maxmind4.dat.gz && \
@@ -153,4 +154,4 @@ http {
 
 ## Conclusion
 
-The Nginx `geo` module is a powerful, zero-dependency tool for IPv4-based traffic classification. Use it to segment internal vs external traffic, apply differentiated rate limits, route to regional backends, or enforce access controls—all driven by simple CIDR-based rules in your Nginx configuration.
+The Nginx `geo` module is a powerful, zero-dependency tool for IPv4-based traffic classification. Use it to segment internal vs external traffic, apply differentiated rate limits, route to regional backends, or enforce access controls-all driven by simple CIDR-based rules in your Nginx configuration.

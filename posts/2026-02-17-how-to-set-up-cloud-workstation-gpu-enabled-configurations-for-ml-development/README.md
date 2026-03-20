@@ -40,6 +40,7 @@ Not all regions and zones support GPUs for Cloud Workstations. Check availabilit
 
 ```bash
 # List available GPU types in your region
+
 gcloud compute accelerator-types list --filter="zone:us-central1-a"
 ```
 

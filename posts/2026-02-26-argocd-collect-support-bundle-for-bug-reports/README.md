@@ -29,6 +29,7 @@ Here is a comprehensive script that collects everything:
 ```bash
 #!/bin/bash
 # argocd-support-bundle.sh
+
 # Collects diagnostic information for ArgoCD bug reports
 
 set -e

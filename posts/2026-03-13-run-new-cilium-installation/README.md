@@ -28,6 +28,7 @@ The installation process requires pre-flight checks to verify kernel and system 
 Validate that all nodes meet Cilium's requirements before installation.
 ```bash
 # Run Cilium's pre-flight checker to validate node requirements
+
 cilium install --dry-run
 
 # For a detailed pre-flight check with kernel feature validation

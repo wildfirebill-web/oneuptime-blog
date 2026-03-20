@@ -59,6 +59,7 @@ The simplest generator uses a static list of elements:
 
 ```yaml
 # list-generator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

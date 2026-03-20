@@ -25,6 +25,7 @@ VPP's vectorized processing model means that performance improves with larger ba
 
 ```yaml
 # In vpp.conf ConfigMap
+
 buffers {
   buffers-per-numa 512000
   page-size 2m

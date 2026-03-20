@@ -43,6 +43,7 @@ ssl-apache/
 
 ```yaml
 # group_vars/all.yml
+
 server_name: www.example.com
 server_admin: admin@example.com
 document_root: /var/www/html

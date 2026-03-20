@@ -50,6 +50,7 @@ Everything in Forecast lives inside a dataset group:
 
 ```python
 # Create a dataset group for demand forecasting
+
 import boto3
 
 forecast = boto3.client('forecast', region_name='us-east-1')

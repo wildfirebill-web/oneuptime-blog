@@ -106,6 +106,7 @@ After creating the repository, push images using the AWS CLI:
 
 ```bash
 # Authenticate Docker with ECR
+
 aws ecr get-login-password --region us-east-1 \
   | docker login --username AWS --password-stdin \
     $(aws sts get-caller-identity --query Account --output text).dkr.ecr.us-east-1.amazonaws.com

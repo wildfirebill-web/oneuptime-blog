@@ -26,6 +26,7 @@ This guide covers setting up comprehensive monitoring for a Cilium installation.
 
 ```yaml
 # Enable metrics in Cilium
+
 prometheus:
   enabled: true
   port: 9962

@@ -24,6 +24,7 @@ You could use the `opa eval` command directly, but Conftest adds several conveni
 
 ```bash
 # macOS
+
 brew install conftest
 
 # Linux

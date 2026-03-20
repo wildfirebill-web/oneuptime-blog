@@ -34,6 +34,7 @@ flowchart TB
 # Run PowerShell as Administrator
 
 # Enable WSL
+
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 # Enable Virtual Machine Platform

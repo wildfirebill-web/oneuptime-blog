@@ -18,6 +18,7 @@ Start by defining what "compliant" means for your environment. Store these stand
 
 ```yaml
 # group_vars/all_network/compliance.yml - Network compliance baseline
+
 ---
 compliance_baseline:
   # Required NTP servers

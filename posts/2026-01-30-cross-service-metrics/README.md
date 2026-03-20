@@ -572,6 +572,7 @@ Configure Istio to expose detailed cross-service metrics:
 
 ```yaml
 # istio-telemetry.yaml
+
 # Apply with: kubectl apply -f istio-telemetry.yaml
 
 apiVersion: telemetry.istio.io/v1alpha1

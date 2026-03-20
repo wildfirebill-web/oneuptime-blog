@@ -51,6 +51,7 @@ ArgoCD ApplicationSets automate Application generation across clusters.
 
 ```bash
 # Create namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD

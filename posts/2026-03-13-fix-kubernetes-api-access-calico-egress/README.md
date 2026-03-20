@@ -32,6 +32,7 @@ This guide covers the fix for both Kubernetes-native NetworkPolicy and Calico-sp
 
 ```bash
 # Get kubernetes Service IP
+
 KUBE_IP=$(kubectl get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 echo "API Server Service IP: $KUBE_IP"
 

@@ -18,6 +18,7 @@ Caddy maintains an official APT repository for Debian-based systems. Using the o
 
 ```bash
 # Install required dependencies
+
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 
 # Add the Caddy GPG key

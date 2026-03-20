@@ -41,6 +41,7 @@ First, make sure your EKS resources are tagged for cost tracking. Tags flow thro
 
 ```bash
 # Tag your EKS cluster
+
 aws eks tag-resource \
   --resource-arn arn:aws:eks:us-west-2:123456789012:cluster/my-cluster \
   --tags Environment=production,Team=platform,Project=web-app

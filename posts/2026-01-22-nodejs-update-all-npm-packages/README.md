@@ -47,6 +47,7 @@ major.minor.patch
 
 ```bash
 # Show outdated packages
+
 npm outdated
 
 # Output:

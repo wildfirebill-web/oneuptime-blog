@@ -20,6 +20,7 @@ NetworkPolicies only work if your cluster has a network plugin that supports the
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

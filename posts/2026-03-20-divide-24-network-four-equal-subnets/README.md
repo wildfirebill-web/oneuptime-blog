@@ -74,6 +74,7 @@ for name, idx in segments.items():
 
 ```bash
 # Assign each /26 subnet to a VLAN interface
+
 sudo ip addr add 192.168.1.1/26 dev eth0.10    # Subnet 1 gateway
 sudo ip addr add 192.168.1.65/26 dev eth0.20   # Subnet 2 gateway
 sudo ip addr add 192.168.1.129/26 dev eth0.30  # Subnet 3 gateway

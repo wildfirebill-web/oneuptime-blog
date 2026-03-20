@@ -14,6 +14,7 @@ Redis is an in-memory data structure store used as a cache, database, and messag
 
 ```bash
 # Enable the Redis module from AppStream (if available)
+
 sudo dnf module list redis
 
 # Install Redis from the Remi repository for Redis 7

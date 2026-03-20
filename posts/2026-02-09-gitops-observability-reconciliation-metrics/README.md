@@ -31,6 +31,7 @@ Flux controllers expose metrics on port 8080 at `/metrics`.
 
 ```bash
 # Port forward to source-controller
+
 kubectl port-forward -n flux-system svc/source-controller 8080:80
 
 # View metrics

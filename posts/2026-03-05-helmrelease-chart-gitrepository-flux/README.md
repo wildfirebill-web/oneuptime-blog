@@ -32,6 +32,7 @@ First, create a GitRepository source that points to the repository containing yo
 
 ```yaml
 # GitRepository source pointing to a repo with Helm charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -103,6 +103,7 @@ Verify the directory structure in your repository matches the path patterns:
 
 ```bash
 # Clone the repo locally and check
+
 git clone https://github.com/my-org/platform-repo
 find platform-repo -type f | head -20
 ```

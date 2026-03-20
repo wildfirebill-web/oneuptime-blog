@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Service CIDR, ClusterIP, Dual-Stack, kube-apiserver
+Tags: Kubernetes, IPv6, Service CIDR, ClusterIP, Dual-Stack, Kube-apiserver
 
 Description: Configure IPv6 Service CIDR ranges in Kubernetes clusters, understand how ClusterIPs are allocated from service CIDRs, and verify that Services receive IPv6 ClusterIPs from the configured ranges.
 
 ## Introduction
 
-The service CIDR in Kubernetes defines the IP range for ClusterIPs assigned to Services. In dual-stack clusters, the service CIDR includes both IPv4 and IPv6 ranges. The kube-apiserver allocates ClusterIPs from these ranges when Services are created. The IPv6 service CIDR must be sized appropriately for the number of services in the cluster — a `/108` provides 1,048,576 addresses, sufficient for most deployments.
+The service CIDR in Kubernetes defines the IP range for ClusterIPs assigned to Services. In dual-stack clusters, the service CIDR includes both IPv4 and IPv6 ranges. The kube-apiserver allocates ClusterIPs from these ranges when Services are created. The IPv6 service CIDR must be sized appropriately for the number of services in the cluster - a `/108` provides 1,048,576 addresses, sufficient for most deployments.
 
 ## Configure Service CIDR in kubeadm
 
 ```yaml
-# kubeadm-config.yaml — service CIDR sizing
+# kubeadm-config.yaml - service CIDR sizing
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: v1.29.0
@@ -55,7 +56,7 @@ kubectl get svc kubernetes -o jsonpath='{.spec.clusterIPs}'
 
 ## IPv6 Service CIDR Sizing Guide
 
-```
+```text
 Service CIDR Size Reference:
   IPv6 /108:  2^20 = 1,048,576 service IPs     (recommended for production)
   IPv6 /112:  2^16 = 65,536 service IPs         (small/medium clusters)

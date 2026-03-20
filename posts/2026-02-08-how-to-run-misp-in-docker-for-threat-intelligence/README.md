@@ -35,6 +35,7 @@ You need the following on your host system:
 
 ```bash
 # Verify Docker is running
+
 docker info --format '{{.ServerVersion}}'
 ```
 

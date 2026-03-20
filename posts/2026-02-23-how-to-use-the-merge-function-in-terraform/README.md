@@ -18,6 +18,7 @@ The `merge` function combines multiple maps into a single map. If the same key a
 
 ```hcl
 # Combines maps, later values override earlier ones for duplicate keys
+
 merge(map1, map2, ...)
 ```
 

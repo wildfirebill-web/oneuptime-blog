@@ -59,6 +59,7 @@ def store_log_entry(bucket, log_data):
     return key
 
 # Each hour gets its own prefix, spreading the load
+
 key = store_log_entry('my-log-bucket', '{"level": "info", "message": "test"}')
 print(f"Stored at: {key}")
 ```

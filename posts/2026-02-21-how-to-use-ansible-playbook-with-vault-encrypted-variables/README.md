@@ -20,6 +20,7 @@ Create an encrypted variable string:
 
 ```bash
 # Encrypt a single string value with ansible-vault
+
 # This will prompt for a vault password and output the encrypted blob
 ansible-vault encrypt_string 'SuperSecretPassword123' --name 'db_password'
 ```

@@ -22,6 +22,7 @@ SELinux labels follow the format `user:role:type:level`. For containers, the mos
 
 ```bash
 # Check if SELinux is enabled and in enforcing mode
+
 # Enforcing means policies are actively applied
 getenforce
 

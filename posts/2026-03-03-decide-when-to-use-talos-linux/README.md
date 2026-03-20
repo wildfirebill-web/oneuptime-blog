@@ -32,6 +32,7 @@ If you are building infrastructure specifically to run Kubernetes and nothing el
 
 ```bash
 # A typical Talos deployment for dedicated Kubernetes
+
 talosctl gen config production-cluster https://k8s.example.com:6443
 
 # Apply to control plane nodes

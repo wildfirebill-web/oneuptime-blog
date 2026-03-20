@@ -43,6 +43,7 @@ flowchart TB
 
 ```bash
 # Storage metrics
+
 curl -s http://loki:3100/metrics | grep -E "loki_ingester_memory|loki_chunk|loki_store"
 
 # Disk usage

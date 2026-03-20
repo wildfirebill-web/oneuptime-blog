@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, count, for_each, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Count, for_each, Infrastructure as Code, DevOps
 
 Description: A guide to deciding whether to use count or for_each when creating multiple resources in OpenTofu.
 
@@ -23,6 +23,7 @@ Both `count` and `for_each` create multiple resource instances, but they have di
 
 ```hcl
 # Use count when:
+
 # 1. Resources are interchangeable (any instance can serve any purpose)
 # 2. The exact count is what matters, not the identity
 

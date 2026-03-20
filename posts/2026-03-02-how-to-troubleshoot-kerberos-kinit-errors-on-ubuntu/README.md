@@ -16,6 +16,7 @@ Before debugging specific errors, verify the configuration file:
 
 ```bash
 # Show current Kerberos configuration
+
 cat /etc/krb5.conf
 
 # Verify realm and KDC are configured

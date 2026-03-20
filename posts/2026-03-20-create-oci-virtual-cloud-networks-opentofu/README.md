@@ -55,6 +55,7 @@ resource "oci_core_route_table" "public" {
 
 ```hcl
 # Public subnet
+
 resource "oci_core_subnet" "public" {
   compartment_id    = var.compartment_id
   vcn_id            = oci_core_vcn.main.id

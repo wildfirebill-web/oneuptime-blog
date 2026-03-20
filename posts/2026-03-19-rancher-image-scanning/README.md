@@ -89,6 +89,7 @@ Install the Trivy CLI on your workstation or CI/CD pipeline:
 
 ```bash
 # Install Trivy CLI
+
 curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
 ```
 

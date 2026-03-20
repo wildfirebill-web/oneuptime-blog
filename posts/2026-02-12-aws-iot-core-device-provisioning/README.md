@@ -46,6 +46,7 @@ This is the simplest approach - register one device at a time with a unique cert
 
 ```bash
 # Create a thing (device) in IoT Core
+
 aws iot create-thing \
   --thing-name "sensor-001" \
   --thing-type-name "TemperatureSensor" \

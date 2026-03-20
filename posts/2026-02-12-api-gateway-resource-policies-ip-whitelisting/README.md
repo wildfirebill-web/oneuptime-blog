@@ -53,6 +53,7 @@ Apply the policy to your API:
 
 ```bash
 # Attach the resource policy
+
 aws apigateway update-rest-api \
   --rest-api-id abc123api \
   --patch-operations \

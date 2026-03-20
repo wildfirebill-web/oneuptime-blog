@@ -21,6 +21,7 @@ Before restricting access, understand what currently exists:
 
 ```bash
 # List all global role bindings
+
 kubectl get globalrolebindings -o custom-columns=\
 NAME:.metadata.name,\
 ROLE:.globalRoleName,\

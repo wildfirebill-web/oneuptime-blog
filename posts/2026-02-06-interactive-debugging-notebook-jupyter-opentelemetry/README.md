@@ -14,6 +14,7 @@ First, install the necessary packages and set up the connection to your trace ba
 
 ```python
 # Cell 1: Setup
+
 # Install dependencies (run once)
 # !pip install opentelemetry-api opentelemetry-sdk requests pandas matplotlib
 

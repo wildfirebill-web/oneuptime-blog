@@ -16,6 +16,7 @@ The `match` test checks if a regex matches at the **beginning** of the string. T
 
 ```yaml
 # Demonstrate the difference between match and search
+
 ---
 - name: match vs search comparison
   hosts: localhost

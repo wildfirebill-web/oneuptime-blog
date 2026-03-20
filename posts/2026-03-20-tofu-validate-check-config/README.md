@@ -1,4 +1,4 @@
-# How to Use tofu validate to Check Configuration
+# How to Use tofu validate to Check Configuration - Tofu Check Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use tofu validate to check your OpenTofu configuration
 
 ## Introduction
 
-`tofu validate` checks your OpenTofu configuration files for syntax errors, type mismatches, and invalid references — all without accessing the state backend or any cloud APIs. It's fast, offline, and should be a standard step in your development workflow and CI/CD pipelines.
+`tofu validate` checks your OpenTofu configuration files for syntax errors, type mismatches, and invalid references - all without accessing the state backend or any cloud APIs. It's fast, offline, and should be a standard step in your development workflow and CI/CD pipelines.
 
 ## Basic Usage
 
 ```bash
 # Validate configuration in the current directory
+
 tofu validate
 
 # Success output:
@@ -133,7 +134,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-```
+```text
 Error: Missing required argument
   The argument "ami" is required, but no definition was found.
 ```
@@ -146,7 +147,7 @@ resource "aws_security_group" "app" {
 }
 ```
 
-```
+```hcl
 Error: Reference to undeclared resource
   A managed resource "aws_vpc" "typo_here" has not been declared.
 ```

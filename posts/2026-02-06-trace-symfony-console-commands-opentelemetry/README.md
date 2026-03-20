@@ -568,6 +568,7 @@ Configure console instrumentation through environment variables:
 # .env
 
 # Enable/disable console command tracing
+
 OTEL_CONSOLE_ENABLED=true
 
 # Capture command arguments and options

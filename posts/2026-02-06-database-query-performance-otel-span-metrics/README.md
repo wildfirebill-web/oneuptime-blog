@@ -18,6 +18,7 @@ First, make sure your database calls generate proper spans. Most OpenTelemetry a
 
 ```python
 # db_instrumented.py
+
 import psycopg2
 from opentelemetry import trace
 from opentelemetry.semconv.trace import SpanAttributes

@@ -14,6 +14,7 @@ Database replication creates copies of your data on multiple servers. The primar
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     db_primary:

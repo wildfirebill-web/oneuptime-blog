@@ -24,6 +24,7 @@ Look for GC pauses that coincide with your p99 latency spikes. If every latency 
 
 ```bash
 # Monitor allocation rate with jstat
+
 jstat -gcutil <pid> 1000
 
 # High S0/S1 (survivor space) usage and frequent YGC (young GC) indicate high allocation

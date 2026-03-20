@@ -95,6 +95,7 @@ EOF
 
 ```bash
 # Should succeed
+
 kubectl exec -n policy-demo client-allowed -- wget --timeout=5 -qO- http://server-svc
 
 # Should still be blocked

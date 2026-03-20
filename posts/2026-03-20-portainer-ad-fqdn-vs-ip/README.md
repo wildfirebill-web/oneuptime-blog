@@ -1,4 +1,4 @@
-# How to Set Up AD with FQDN vs IP Address in Portainer
+# How to Set Up AD with FQDN vs IP Address in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ When configuring Active Directory authentication in Portainer, you must specify 
 
 ```bash
 # Verify DNS resolution from Portainer host
+
 nslookup dc01.corp.example.com
 # or
 dig dc01.corp.example.com
@@ -44,15 +45,15 @@ ldapsearch -x \
 ```
 
 **Portainer configuration with FQDN:**
-```
+```text
 Server: dc01.corp.example.com:389
 ```
 
 ## Using the Domain Name (Load Balanced)
 
-For load balancing across multiple domain controllers, use the domain name itself — Windows DNS SRV records will handle distribution:
+For load balancing across multiple domain controllers, use the domain name itself - Windows DNS SRV records will handle distribution:
 
-```
+```text
 Server: corp.example.com:389
 ```
 
@@ -62,7 +63,7 @@ This is the most resilient approach in multi-DC environments.
 
 If DNS is unavailable or unreliable, you may need to use an IP address:
 
-```
+```text
 Server: 192.168.1.10:389
 ```
 
@@ -134,4 +135,4 @@ volumes:
 
 ## Conclusion
 
-Use FQDN for Active Directory connections in Portainer — it's required for proper TLS certificate validation and follows AD best practices. If DNS resolution is unreliable in your Docker network, use `extra_hosts` in Docker Compose to add the domain controller's hostname manually. Only fall back to IP addresses when absolutely necessary, and disable certificate verification only as a last resort in non-production environments.
+Use FQDN for Active Directory connections in Portainer - it's required for proper TLS certificate validation and follows AD best practices. If DNS resolution is unreliable in your Docker network, use `extra_hosts` in Docker Compose to add the domain controller's hostname manually. Only fall back to IP addresses when absolutely necessary, and disable certificate verification only as a last resort in non-production environments.

@@ -16,7 +16,7 @@ The `abspath` function in OpenTofu converts a filesystem path to an absolute pat
 abspath(path)
 ```
 
-- **path** — a filesystem path (relative or absolute)
+- **path** - a filesystem path (relative or absolute)
 - Returns the absolute, normalized path
 
 ## Basic Examples
@@ -126,7 +126,8 @@ tofu console
 ## path.module vs abspath
 
 ```hcl
-# path.module is already absolute — no need to wrap:
+# path.module is already absolute - no need to wrap:
+
 file("${path.module}/config/app.json")  # Works directly
 
 # abspath is useful for paths that are NOT relative to path.module:

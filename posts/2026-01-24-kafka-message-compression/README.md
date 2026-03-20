@@ -138,6 +138,7 @@ Brokers can recompress messages if needed. Configure topic-level compression pol
 BOOTSTRAP="kafka:9092"
 
 # Create topic with compression type
+
 kafka-topics.sh --bootstrap-server $BOOTSTRAP \
     --create \
     --topic compressed-logs \

@@ -14,6 +14,7 @@ Regular database backups are non-negotiable. With databases running in Docker co
 
 ```yaml
 # docker-compose.yml - Database Backup Automation
+
 version: "3.8"
 
 networks:
@@ -321,4 +322,4 @@ docker exec db_backup ls -lh /opt/backups/
 
 ## Conclusion
 
-Your databases now have automated backup schedules with local storage and S3 offsite copies. The comprehensive backup script handles PostgreSQL, MySQL, and MongoDB with proper consistency guarantees. Portainer helps you monitor backup container health and view logs to ensure backups are completing successfully. Regular restore testing is equally important — a backup you haven't tested is a backup you can't trust.
+Your databases now have automated backup schedules with local storage and S3 offsite copies. The comprehensive backup script handles PostgreSQL, MySQL, and MongoDB with proper consistency guarantees. Portainer helps you monitor backup container health and view logs to ensure backups are completing successfully. Regular restore testing is equally important - a backup you haven't tested is a backup you can't trust.

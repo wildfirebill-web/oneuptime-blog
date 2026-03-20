@@ -32,6 +32,7 @@ Check both with the CLI:
 
 ```bash
 # Check sync and health status
+
 argocd app get my-app
 
 # Output shows both:

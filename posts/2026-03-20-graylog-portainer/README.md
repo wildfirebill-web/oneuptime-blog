@@ -8,7 +8,7 @@ Description: Deploy Graylog, the powerful centralized log management platform, a
 
 ## Introduction
 
-Graylog is an open-source log management platform that collects, indexes, and analyzes log data from any source. Combined with Portainer's stack management, you can deploy the entire Graylog ecosystem — including OpenSearch and MongoDB — with a single compose file.
+Graylog is an open-source log management platform that collects, indexes, and analyzes log data from any source. Combined with Portainer's stack management, you can deploy the entire Graylog ecosystem - including OpenSearch and MongoDB - with a single compose file.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Graylog is an open-source log management platform that collects, indexes, and an
 
 ```bash
 # Increase virtual memory for OpenSearch (required)
+
 sudo sysctl -w vm.max_map_count=262144
 
 # Make it permanent
@@ -40,7 +41,7 @@ chown -R 1000:1000 /opt/graylog/data/opensearch
 ```bash
 # Generate SHA-256 hash of your admin password
 echo -n "YourSecurePassword" | sha256sum | awk '{print $1}'
-# Save the output — you'll need it in the compose file
+# Save the output - you'll need it in the compose file
 
 # Generate a secret string (min 16 characters)
 pwgen -N 1 -s 96
@@ -54,7 +55,7 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor** and paste the follow
 version: "3.8"
 
 services:
-  # MongoDB — Graylog's configuration store
+  # MongoDB - Graylog's configuration store
   mongodb:
     image: mongo:6.0
     container_name: graylog-mongodb
@@ -64,7 +65,7 @@ services:
     networks:
       - graylog-net
 
-  # OpenSearch — Graylog's search and indexing backend
+  # OpenSearch - Graylog's search and indexing backend
   opensearch:
     image: opensearchproject/opensearch:2.15.0
     container_name: graylog-opensearch
@@ -86,7 +87,7 @@ services:
     networks:
       - graylog-net
 
-  # Graylog — the log management application
+  # Graylog - the log management application
   graylog:
     image: graylog/graylog:6.0
     container_name: graylog

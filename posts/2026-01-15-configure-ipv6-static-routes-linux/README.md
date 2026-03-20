@@ -65,6 +65,7 @@ Verify that your Linux system has IPv6 enabled and check the kernel version:
 
 ```bash
 # Check if IPv6 is enabled on the system
+
 # A value of 0 means IPv6 is enabled, 1 means disabled
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 

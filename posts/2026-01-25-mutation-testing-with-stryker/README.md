@@ -34,6 +34,7 @@ For JavaScript/TypeScript projects:
 
 ```bash
 # Initialize Stryker in your project
+
 npm init stryker
 
 # Or install manually

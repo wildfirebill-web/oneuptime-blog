@@ -20,6 +20,7 @@ HAProxy is a high-performance load balancer widely used in production environmen
 
 ```bash
 # Install HAProxy from the default repositories
+
 sudo dnf install -y haproxy
 
 # Enable and start the service

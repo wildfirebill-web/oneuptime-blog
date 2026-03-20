@@ -79,6 +79,7 @@ First, create the infrastructure that will hold your state. This is a chicken-an
 
 ```hcl
 # bootstrap/main.tf - Run this first with local state
+
 provider "aws" {
   region = "us-east-1"
 }

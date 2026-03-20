@@ -20,6 +20,7 @@ Start Redis with Docker Compose:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

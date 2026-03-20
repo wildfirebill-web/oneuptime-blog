@@ -1,4 +1,4 @@
-# How to Migrate from Docker Swarm to Rancher
+# How to Migrate from Docker Swarm to Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -125,6 +125,7 @@ In Swarm, secrets are mounted as files. In Kubernetes, use Secrets:
 
 ```bash
 # Get the secret value from Swarm (if accessible)
+
 docker secret inspect db_password
 
 # Create the Kubernetes Secret

@@ -16,6 +16,7 @@ Creating a hosted zone is simple. Getting it right for production takes a bit mo
 
 ```bash
 # Create a public hosted zone for your domain
+
 aws route53 create-hosted-zone \
   --name example.com \
   --caller-reference "example-com-$(date +%s)" \

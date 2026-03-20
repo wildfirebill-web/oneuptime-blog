@@ -39,6 +39,7 @@ From any machine on the same L2 network, capture ARP traffic for the LoadBalance
 
 ```bash
 # Capture ARP responses for the LoadBalancer IP
+
 # If you see more than one MAC address replying, you have the problem
 sudo tcpdump -i eth0 arp -nn -e \
   | grep "192.168.1.240"

@@ -33,6 +33,7 @@ DNS Servers: 8.8.8.8, 8.8.4.4
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install DHCP server

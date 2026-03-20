@@ -33,6 +33,7 @@ Before writing any Terraform, import the Talos Linux image into your GCP project
 
 ```bash
 # Download the Talos GCP image
+
 wget https://github.com/siderolabs/talos/releases/download/v1.7.0/gcp-amd64.tar.gz
 
 # Create a GCS bucket for the image

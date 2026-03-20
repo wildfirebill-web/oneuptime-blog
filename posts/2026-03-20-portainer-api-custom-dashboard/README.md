@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Dashboard, Automation, JavaScript
+Tags: Portainer, API, Dashboards, Automation, JavaScript
 
 Description: Build a custom real-time container monitoring dashboard by querying the Portainer REST API using JavaScript and HTML.
 
 ## Introduction
 
-The Portainer REST API exposes all the data visible in the Portainer UI, plus more. By building a custom dashboard, you can tailor the view to your organization's specific needs—whether that's a NOC display, a developer portal, or an executive summary.
+The Portainer REST API exposes all the data visible in the Portainer UI, plus more. By building a custom dashboard, you can tailor the view to your organization's specific needs-whether that's a NOC display, a developer portal, or an executive summary.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ The Portainer REST API exposes all the data visible in the Portainer UI, plus mo
 
 ```bash
 # Authenticate and retrieve a JWT token
+
 curl -s -X POST \
   -H "Content-Type: application/json" \
   -d '{"username": "admin", "password": "yourpassword"}' \

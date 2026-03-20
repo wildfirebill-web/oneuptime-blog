@@ -8,12 +8,13 @@ Description: Capture and analyze UDP traffic with tcpdump to monitor packet rate
 
 ## Introduction
 
-UDP traffic is stateless from the network perspective, making monitoring different from TCP. There is no connection establishment to observe — packets simply appear. `tcpdump` captures UDP at the packet level, letting you see the source, destination, ports, payload size, and timing of every datagram. This guide covers the essential tcpdump filters and analysis techniques for UDP traffic.
+UDP traffic is stateless from the network perspective, making monitoring different from TCP. There is no connection establishment to observe - packets simply appear. `tcpdump` captures UDP at the packet level, letting you see the source, destination, ports, payload size, and timing of every datagram. This guide covers the essential tcpdump filters and analysis techniques for UDP traffic.
 
 ## Basic UDP Capture
 
 ```bash
 # Capture all UDP traffic
+
 tcpdump -i eth0 -n udp
 
 # Capture UDP on a specific port

@@ -66,6 +66,7 @@ First, add the official Falco Helm repository and update your local cache.
 
 ```bash
 # Add the Falcosecurity Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 
 # Update repository cache to get the latest chart versions
@@ -505,7 +506,7 @@ kubectl label namespace falco pod-security.kubernetes.io/enforce=privileged
 
 ## Production Recommendations
 
-### Resource Limits
+Resource Limits
 
 Set appropriate resource limits to prevent Falco from impacting workloads.
 

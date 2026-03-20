@@ -40,6 +40,7 @@ Always create dedicated, least-privilege tokens for CI/CD:
 
 ```bash
 # Create a dedicated CI account
+
 kubectl patch configmap argocd-cm -n argocd --type merge -p '{
   "data": {
     "accounts.ci-deploy": "apiKey"

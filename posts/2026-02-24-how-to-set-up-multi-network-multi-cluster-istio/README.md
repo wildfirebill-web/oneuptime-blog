@@ -32,6 +32,7 @@ export CTX_CLUSTER1=cluster1
 export CTX_CLUSTER2=cluster2
 
 # Verify access
+
 kubectl --context=${CTX_CLUSTER1} get nodes
 kubectl --context=${CTX_CLUSTER2} get nodes
 ```

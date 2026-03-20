@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # ssl.tf
+
 resource "google_compute_managed_ssl_certificate" "main" {
   name = "${var.app_name}-cert-${var.environment}"
 
@@ -90,14 +91,14 @@ resource "google_compute_url_map" "main" {
   default_service = google_compute_backend_service.app.id
 }
 
-# SSL policy — enforce minimum TLS version
+# SSL policy - enforce minimum TLS version
 resource "google_compute_ssl_policy" "main" {
   name            = "${var.app_name}-ssl-policy"
   profile         = "MODERN"
   min_tls_version = "TLS_1_2"
 }
 
-# HTTPS target proxy — ties certificate to load balancer
+# HTTPS target proxy - ties certificate to load balancer
 resource "google_compute_target_https_proxy" "main" {
   name             = "${var.app_name}-https-proxy"
   url_map          = google_compute_url_map.main.id
@@ -105,7 +106,7 @@ resource "google_compute_target_https_proxy" "main" {
   ssl_policy       = google_compute_ssl_policy.main.id
 }
 
-# Forwarding rule — binds external IP to proxy
+# Forwarding rule - binds external IP to proxy
 resource "google_compute_global_forwarding_rule" "https" {
   name                  = "${var.app_name}-https"
   target                = google_compute_target_https_proxy.main.id
@@ -174,8 +175,8 @@ resource "kubernetes_manifest" "managed_cert" {
 
 ## Best Practices
 
-- Use Google-managed certificates for all public-facing services — they're free, automatically renewed, and require no operational overhead.
-- The DNS A record must exist and point to the correct load balancer IP before requesting a managed certificate — Google validates domain ownership by resolving the DNS name.
-- Google-managed certificates can take up to 60 minutes to provision after DNS propagates — plan for this delay in initial deployments.
+- Use Google-managed certificates for all public-facing services - they're free, automatically renewed, and require no operational overhead.
+- The DNS A record must exist and point to the correct load balancer IP before requesting a managed certificate - Google validates domain ownership by resolving the DNS name.
+- Google-managed certificates can take up to 60 minutes to provision after DNS propagates - plan for this delay in initial deployments.
 - Use `create_before_destroy = true` on certificate resources so replacement certificates are issued before the old one is detached.
-- Set `min_tls_version = "TLS_1_2"` on the SSL policy — TLS 1.0 and 1.1 are deprecated and should never be enabled in production.
+- Set `min_tls_version = "TLS_1_2"` on the SSL policy - TLS 1.0 and 1.1 are deprecated and should never be enabled in production.

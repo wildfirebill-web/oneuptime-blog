@@ -24,6 +24,7 @@ Ubuntu includes logrotate by default:
 
 ```bash
 # Check logrotate is installed
+
 logrotate --version
 
 # View main configuration

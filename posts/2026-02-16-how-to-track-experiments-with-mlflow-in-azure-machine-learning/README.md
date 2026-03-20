@@ -34,6 +34,7 @@ If you are running code inside Azure ML (on a compute instance or as a training 
 import mlflow
 
 # When running inside Azure ML, the tracking URI is set automatically
+
 print(f"Tracking URI: {mlflow.get_tracking_uri()}")
 ```
 

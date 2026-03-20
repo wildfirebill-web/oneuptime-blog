@@ -26,6 +26,7 @@ Extensions in Podman Desktop are packaged as OCI images and can add:
 
 ```bash
 # Podman Desktop extensions are OCI images
+
 # They follow a specific structure with package.json and extension code
 # The extension catalog is available directly in the UI
 ```

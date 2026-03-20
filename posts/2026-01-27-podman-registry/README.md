@@ -50,6 +50,7 @@ The main configuration file is `registries.conf`. Here's how to set it up.
 
 ```bash
 # System-wide configuration (requires root)
+
 /etc/containers/registries.conf
 
 # User-specific configuration (preferred for rootless Podman)

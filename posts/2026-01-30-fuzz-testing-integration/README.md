@@ -66,6 +66,7 @@ AFL++ is the actively maintained fork of AFL with additional features:
 
 ```bash
 # Install AFL++ on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y afl++
 

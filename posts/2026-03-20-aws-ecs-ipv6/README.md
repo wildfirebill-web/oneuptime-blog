@@ -14,6 +14,7 @@ AWS ECS supports IPv6 for both Fargate and EC2 launch types when deployed in dua
 
 ```bash
 # Create ECS cluster (cluster itself is region-level, IPv6 is per-task)
+
 aws ecs create-cluster \
     --cluster-name ipv6-cluster \
     --capacity-providers FARGATE FARGATE_SPOT

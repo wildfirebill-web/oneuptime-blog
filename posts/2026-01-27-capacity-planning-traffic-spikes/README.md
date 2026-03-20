@@ -59,6 +59,7 @@ For Kubernetes workloads, the HPA adjusts replica counts based on metrics. Confi
 
 ```yaml
 # hpa-web.yaml
+
 # Scales the web deployment based on CPU utilization
 # Targets 60% CPU to leave headroom for spike absorption
 apiVersion: autoscaling/v2

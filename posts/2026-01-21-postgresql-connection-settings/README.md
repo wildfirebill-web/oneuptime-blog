@@ -16,6 +16,7 @@ Connection settings significantly impact PostgreSQL performance and resource usa
 
 ```conf
 # postgresql.conf
+
 max_connections = 100  # Default
 
 # Each connection uses ~10MB RAM

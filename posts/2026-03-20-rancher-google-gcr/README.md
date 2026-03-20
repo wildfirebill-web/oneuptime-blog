@@ -22,6 +22,7 @@ Google Container Registry (GCR) and its successor Artifact Registry are Google C
 
 ```bash
 # Create a dedicated service account for registry pulls
+
 gcloud iam service-accounts create rancher-registry-sa \
   --display-name="Rancher Registry Service Account" \
   --project=my-project-id

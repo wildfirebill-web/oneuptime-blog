@@ -14,6 +14,7 @@ Least privilege access control limits user permissions to only what is needed, r
 
 ```bash
 # List all users with shell access
+
 grep -v "nologin\|false" /etc/passwd
 
 # List sudo privileges

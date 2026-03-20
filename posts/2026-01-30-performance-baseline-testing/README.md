@@ -60,6 +60,7 @@ Consistency is crucial for meaningful comparisons:
 
 ```yaml
 # baseline-test-config.yaml
+
 test_environment:
   # Use dedicated hardware or isolated cloud instances
   instance_type: "m5.xlarge"

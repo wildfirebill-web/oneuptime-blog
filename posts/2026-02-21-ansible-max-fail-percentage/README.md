@@ -16,6 +16,7 @@ This option tells Ansible: "If more than X% of hosts fail, stop the entire playb
 
 ```yaml
 # rolling-deploy.yml - stops if more than 20% of hosts fail
+
 ---
 - name: Rolling deployment
   hosts: webservers

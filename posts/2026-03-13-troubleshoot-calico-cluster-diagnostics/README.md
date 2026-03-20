@@ -16,6 +16,7 @@ Cluster-wide Calico failures affect all nodes simultaneously and typically trace
 
 ```bash
 # Identify which component is degraded
+
 kubectl get tigerastatus
 # Look for Available=False
 

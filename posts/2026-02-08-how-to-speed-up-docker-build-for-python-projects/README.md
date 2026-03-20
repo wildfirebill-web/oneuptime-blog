@@ -18,6 +18,7 @@ Here is the Dockerfile that most Python developers start with:
 
 ```dockerfile
 # BAD: Reinstalls all dependencies on every code change
+
 FROM python:3.12
 WORKDIR /app
 COPY . .

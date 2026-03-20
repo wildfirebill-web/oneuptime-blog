@@ -50,6 +50,7 @@ curl -X PUT "https://localhost:9200/products" \
 
 ```bash
 # Simple suggestion
+
 curl -X PUT "https://localhost:9200/products/_doc/1" \
   -H "Content-Type: application/json" \
   -u elastic:password \

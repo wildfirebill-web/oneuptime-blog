@@ -29,6 +29,7 @@ Workload Identity lets Kubernetes service accounts act as Google Cloud service a
 
 ```bash
 # Create the service account
+
 gcloud iam service-accounts create argocd-image-updater \
   --display-name="ArgoCD Image Updater" \
   --project=my-project

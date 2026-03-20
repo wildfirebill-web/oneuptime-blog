@@ -16,6 +16,7 @@ Start by understanding what RBAC resources Istio has created:
 
 ```bash
 # List all ClusterRoles created by Istio
+
 kubectl get clusterroles | grep istio
 
 # List all ClusterRoleBindings

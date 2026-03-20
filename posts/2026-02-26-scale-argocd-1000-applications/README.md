@@ -138,6 +138,7 @@ At this scale, cache hits versus cache misses make a massive difference in perfo
 
 ```yaml
 # Redis HA configuration
+
 redis-ha:
   enabled: true
   replicas: 3

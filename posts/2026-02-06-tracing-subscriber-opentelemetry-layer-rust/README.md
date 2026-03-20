@@ -35,6 +35,7 @@ Add these dependencies to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Core tracing infrastructure
+
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = [
     "env-filter",

@@ -14,6 +14,7 @@ MariaDB is the default MySQL-compatible database on RHEL. It is a community-deve
 
 ```bash
 # Install MariaDB server and client
+
 sudo dnf install -y mariadb-server mariadb
 
 # Start and enable MariaDB

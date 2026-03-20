@@ -28,6 +28,7 @@ az network route-table create \
 
 ```bash
 # Force all internet traffic through a Network Virtual Appliance (NVA)
+
 az network route-table route create \
   --resource-group $RESOURCE_GROUP \
   --route-table-name app-route-table \
@@ -116,4 +117,4 @@ az network vnet subnet update \
 
 ## Conclusion
 
-Create a route table with `az network route-table create`, add routes with `VirtualAppliance`, `VirtualNetworkGateway`, `Internet`, or `None` next hops, then associate it with subnets. Use `az network nic show-effective-route-table` to see which routes are actually applied to a VM — this is the first tool to reach for when debugging routing issues.
+Create a route table with `az network route-table create`, add routes with `VirtualAppliance`, `VirtualNetworkGateway`, `Internet`, or `None` next hops, then associate it with subnets. Use `az network nic show-effective-route-table` to see which routes are actually applied to a VM - this is the first tool to reach for when debugging routing issues.

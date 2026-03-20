@@ -116,6 +116,7 @@ Your API gateway or client middleware would set the `x-payload-size` header base
 
 ```python
 # Example in a Python API gateway
+
 content_length = int(request.headers.get('Content-Length', 0))
 if content_length > 10_000_000:  # 10MB
     request.headers['x-payload-size'] = 'large'

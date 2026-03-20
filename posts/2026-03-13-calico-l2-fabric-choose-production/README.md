@@ -34,6 +34,7 @@ Getting this decision wrong at cluster creation is expensive to fix - changing t
 Check your security group rules before choosing:
 ```bash
 # On a node, test IP-in-IP (protocol 4) connectivity to another node
+
 ping -c 3 <other-node-ip>  # First confirm basic connectivity
 
 # Test with protocol 4 specifically

@@ -26,6 +26,7 @@ Dashboards live in folders, and folder permissions cascade to contained dashboar
 
 ```bash
 # Create a folder via API
+
 curl -X POST http://grafana:3000/api/folders \
   -H "Authorization: Bearer YOUR_API_TOKEN" \
   -H "Content-Type: application/json" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, cross-region, aws, kubernetes, replication
+Tags: Rancher, Disaster-recovery, Cross-Region, AWS, Kubernetes, Replication
 
 Description: Configure disaster recovery for Rancher with automatic cross-region backup replication to protect against regional cloud failures.
 
@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Create primary bucket in us-east-1
+
 aws s3 mb s3://rancher-backups-primary --region us-east-1
 aws s3api put-bucket-versioning \
   --bucket rancher-backups-primary \

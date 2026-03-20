@@ -8,7 +8,7 @@ Description: Learn how to enable and configure filesystem trim (UNMAP/DISCARD) f
 
 ## Introduction
 
-When files are deleted inside a Longhorn volume, the storage space may not be immediately reclaimed — the blocks are marked as free in the filesystem, but Longhorn is not notified that those blocks are no longer needed. The trim (or UNMAP/DISCARD) feature tells Longhorn about unused blocks, allowing it to reclaim that space and reduce the actual disk usage of the volume.
+When files are deleted inside a Longhorn volume, the storage space may not be immediately reclaimed - the blocks are marked as free in the filesystem, but Longhorn is not notified that those blocks are no longer needed. The trim (or UNMAP/DISCARD) feature tells Longhorn about unused blocks, allowing it to reclaim that space and reduce the actual disk usage of the volume.
 
 This is particularly important for:
 - Environments where volumes grow and shrink frequently
@@ -48,6 +48,7 @@ The trim operation will run and reclaim unused space.
 
 ```bash
 # Get the volume name
+
 kubectl get volumes.longhorn.io -n longhorn-system
 
 # Trigger a filesystem trim on a specific volume

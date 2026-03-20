@@ -136,6 +136,7 @@ Create an audit policy file and configure RKE2:
 
 ```yaml
 # /etc/rancher/rke2/audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

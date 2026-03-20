@@ -18,6 +18,7 @@ Cloud Logging is the default destination for Batch job logs. You can configure i
 
 ```python
 # Logging configuration in a Batch job
+
 from google.cloud import batch_v1
 
 job = batch_v1.Job()

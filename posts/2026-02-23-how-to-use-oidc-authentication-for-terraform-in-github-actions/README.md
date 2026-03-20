@@ -32,6 +32,7 @@ Create the GitHub OIDC provider in your AWS account. You only need to do this on
 
 ```hcl
 # oidc-provider.tf
+
 # Create the GitHub Actions OIDC identity provider
 
 resource "aws_iam_openid_connect_provider" "github_actions" {

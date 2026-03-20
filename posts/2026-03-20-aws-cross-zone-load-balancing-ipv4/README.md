@@ -12,7 +12,7 @@ By default, an AWS load balancer distributes traffic only to targets in the same
 
 ## Why Cross-Zone Matters
 
-Without cross-zone load balancing, if you have 2 targets in us-east-1a and 8 targets in us-east-1b, each load balancer node sends 50% to its zone — meaning each us-east-1a target gets 4x more traffic per instance than us-east-1b targets.
+Without cross-zone load balancing, if you have 2 targets in us-east-1a and 8 targets in us-east-1b, each load balancer node sends 50% to its zone - meaning each us-east-1a target gets 4x more traffic per instance than us-east-1b targets.
 
 With cross-zone enabled, all 10 targets share traffic equally.
 
@@ -22,6 +22,7 @@ Cross-zone load balancing is **always enabled** and **cannot be disabled** on AL
 
 ```bash
 # Verify ALB cross-zone status
+
 aws elbv2 describe-load-balancer-attributes \
   --load-balancer-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/my-alb/abc123 \
   --query 'Attributes[?Key==`load_balancing.cross_zone.enabled`]'

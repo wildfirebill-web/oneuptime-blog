@@ -270,6 +270,7 @@ Add these settings to your `postgresql.conf`:
 
 ```ini
 # Enable autovacuum (should be on by default)
+
 autovacuum = on
 
 # Number of autovacuum worker processes

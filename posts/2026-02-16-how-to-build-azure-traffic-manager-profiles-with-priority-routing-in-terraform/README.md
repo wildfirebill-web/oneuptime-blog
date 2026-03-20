@@ -44,6 +44,7 @@ Let us build the complete setup. We will create web apps in two regions as endpo
 
 ```hcl
 # Provider and configuration
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -89,7 +90,7 @@ locals {
 }
 ```
 
-## Resource Group and App Service Setup
+Resource Group and App Service Setup
 
 Create the web apps that serve as Traffic Manager endpoints. In a real deployment, these would be your production application instances.
 

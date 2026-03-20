@@ -26,6 +26,7 @@ Deploying Longhorn through Flux CD gives you GitOps control over storage setting
 
 ```yaml
 # infrastructure/sources/longhorn-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

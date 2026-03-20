@@ -29,6 +29,7 @@ A complete Hubble flow event contains these field groups:
 
 ```bash
 # View a complete flow event to see all available fields
+
 hubble observe --last 1 -o json | python3 -m json.tool
 ```
 

@@ -23,6 +23,7 @@ Create a Certificate Authority (CA) for your service mesh:
 
 ```bash
 # Create CA directory structure
+
 mkdir -p certs/{ca,server,client}
 cd certs
 

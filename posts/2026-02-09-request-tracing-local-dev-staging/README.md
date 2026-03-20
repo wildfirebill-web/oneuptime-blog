@@ -257,6 +257,7 @@ Access the tracing UI from your local machine:
 echo "Setting up port forwards to staging observability stack..."
 
 # Forward Jaeger UI
+
 kubectl port-forward -n observability svc/jaeger-query 16686:16686 &
 JAEGER_PID=$!
 

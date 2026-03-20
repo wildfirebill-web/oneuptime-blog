@@ -289,6 +289,7 @@ Test your policies systematically:
 
 ```bash
 # Test from an allowed service
+
 kubectl exec -n checkout deployment/checkout-service -c checkout -- \
   curl -s -o /dev/null -w "%{http_code}" \
   -X POST http://order-service.backend.svc.cluster.local:8080/api/orders \

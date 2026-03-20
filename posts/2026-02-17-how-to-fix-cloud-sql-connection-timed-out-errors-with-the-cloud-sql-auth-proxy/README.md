@@ -33,6 +33,7 @@ This sounds basic, but it is wrong more often than you would expect. The connect
 
 ```bash
 # Get the correct instance connection name
+
 gcloud sql instances describe my-db \
     --format="value(connectionName)"
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Ingresses, Kubernetes, SSL, TLS, Cert-Manager, Lets-encrypt, Security, HTTPS
+Tags: Nginx, Ingresses, Kubernetes, SSL, TLS, Cert-Manager, Lets-encrypt, Security, HTTPS
 
 Description: A comprehensive guide to deploying NGINX Ingress Controller with automated SSL/TLS certificate management using cert-manager and Let's Encrypt.
 
@@ -62,6 +62,7 @@ First, add the NGINX Ingress Helm repository:
 
 ```bash
 # Add the ingress-nginx repository
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 ```

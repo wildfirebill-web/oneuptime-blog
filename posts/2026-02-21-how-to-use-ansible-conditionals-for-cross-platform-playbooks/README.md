@@ -26,6 +26,7 @@ Here is how to inspect these facts on a target host:
 
 ```yaml
 # Display OS-related facts for a host
+
 - name: Show platform facts
   hosts: all
   tasks:

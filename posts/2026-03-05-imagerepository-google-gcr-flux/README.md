@@ -32,6 +32,7 @@ The recommended approach on GKE is to use the `provider: gcp` field.
 
 ```yaml
 # imagerepository-gcr.yaml
+
 # Scan a GCR image using native GCP provider authentication
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

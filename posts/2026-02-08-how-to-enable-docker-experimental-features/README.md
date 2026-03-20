@@ -33,6 +33,7 @@ This command shows both client and server experimental status:
 
 ```bash
 # Check if experimental features are currently enabled
+
 docker version
 ```
 

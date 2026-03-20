@@ -49,6 +49,7 @@ Even though snapshots are incremental, each one is a complete backup. Deleting S
 
 ```bash
 # Create a snapshot of a volume
+
 aws ec2 create-snapshot \
     --volume-id vol-0123456789abcdef0 \
     --description "Daily backup - webapp data volume" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, Tomcat, AJP, mod_proxy_ajp, IPv4, Java, Web Server
+Tags: Apache, Tomcat, AJP, Mod_proxy_ajp, IPv4, Java, Web Server
 
 Description: Learn how to configure Apache's mod_proxy_ajp module to forward requests to a Tomcat backend over the AJP protocol on an IPv4 network.
 
@@ -14,6 +14,7 @@ AJP (Apache JServ Protocol) is a binary protocol optimized for communication bet
 
 ```bash
 # Enable proxy and AJP proxy modules
+
 a2enmod proxy proxy_ajp
 
 # Verify they are loaded

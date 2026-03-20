@@ -47,6 +47,7 @@ The simplest approach is to let BigQuery auto-detect the schema. It handles nest
 
 ```bash
 # Load nested JSON with schema auto-detection
+
 # BigQuery will infer STRUCTs for nested objects and ARRAYs for arrays
 bq load \
   --autodetect \

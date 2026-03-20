@@ -24,6 +24,7 @@ The simplest approach passes a cloud-init configuration through the instance's u
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

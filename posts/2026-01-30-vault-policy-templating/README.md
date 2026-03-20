@@ -40,6 +40,7 @@ Here is a basic templated policy that grants users access to their own secrets p
 
 ```hcl
 # Allow users to manage secrets under their own path
+
 # The {{identity.entity.name}} variable resolves to the authenticated user's entity name
 path "secret/data/users/{{identity.entity.name}}/*" {
   capabilities = ["create", "read", "update", "delete", "list"]

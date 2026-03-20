@@ -54,6 +54,7 @@ Move hardware interrupts to housekeeping CPUs:
 
 ```bash
 # View current IRQ assignments
+
 cat /proc/interrupts
 
 # Move a specific IRQ to CPU 0

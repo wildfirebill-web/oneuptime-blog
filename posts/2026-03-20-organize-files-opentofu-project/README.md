@@ -12,7 +12,7 @@ A well-organized OpenTofu project is easier to understand, maintain, and scale. 
 
 ## Pattern 1: Simple Single-Environment Project
 
-```
+```text
 infrastructure/
 ├── versions.tf          # Provider and version requirements
 ├── main.tf              # Core resources
@@ -30,7 +30,7 @@ infrastructure/
 
 Group files by infrastructure feature:
 
-```
+```text
 infrastructure/
 ├── versions.tf
 ├── variables.tf
@@ -47,7 +47,7 @@ infrastructure/
 
 ## Pattern 3: Multi-Environment with Workspaces
 
-```
+```text
 infrastructure/
 ├── main.tf
 ├── variables.tf
@@ -65,13 +65,14 @@ infrastructure/
 
 ```bash
 # Usage:
+
 tofu init -backend-config=backends/prod.hcl
 tofu plan -var-file=prod.tfvars
 ```
 
 ## Pattern 4: Environment-Specific Directories
 
-```
+```text
 infrastructure/
 ├── modules/              # Reusable modules
 │   ├── vpc/

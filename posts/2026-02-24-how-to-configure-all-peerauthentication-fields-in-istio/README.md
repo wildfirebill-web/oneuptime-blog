@@ -64,6 +64,7 @@ The `selector` field determines which workloads this policy applies to. It match
 
 ```yaml
 # Mesh-wide default
+
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:

@@ -20,6 +20,7 @@ Before running a container, make sure Podman is working:
 
 ```bash
 # Check Podman version
+
 podman --version
 
 # Check that the Podman machine is running (macOS/Windows)

@@ -191,6 +191,7 @@ You can even deploy Jenkins itself through ArgoCD:
 
 ```yaml
 # jenkins-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

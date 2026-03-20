@@ -18,6 +18,7 @@ Homebrew is the easiest way to install and keep kubectl updated on macOS.
 
 ```bash
 # Install kubectl via Homebrew
+
 brew install kubectl
 # Verify installation - shows the client version
 kubectl version --client

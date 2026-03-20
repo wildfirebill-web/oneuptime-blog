@@ -18,6 +18,7 @@ MIT Kerberos (krb5) has supported IPv6 since version 1.7. The KDC listens on all
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install krb5-kdc krb5-admin-server krb5-config -y
 
 # RHEL/CentOS

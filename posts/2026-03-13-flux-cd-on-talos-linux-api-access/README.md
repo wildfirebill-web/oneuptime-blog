@@ -27,6 +27,7 @@ This guide covers bootstrapping a Talos Linux cluster, generating the kubeconfig
 
 ```bash
 # Generate Talos secrets and configuration for a new cluster
+
 talosctl gen config my-cluster https://192.168.1.100:6443 \
   --output-dir ./talos-config
 

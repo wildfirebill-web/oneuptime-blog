@@ -27,6 +27,7 @@ Let us start with projecting a single Secret into a volume. First, create a Secr
 
 ```yaml
 # db-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

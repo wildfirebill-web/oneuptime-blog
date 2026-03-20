@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv4, CIDR, Networking, net package, Subnetting
+Tags: Go, IPv4, CIDR, Networking, Net package, Subnetting
 
 Description: Learn how to parse, validate, and perform calculations with IPv4 CIDR notation in Go using net.ParseCIDR and related net package functions.
 

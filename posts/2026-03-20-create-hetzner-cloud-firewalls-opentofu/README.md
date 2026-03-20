@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Firewalls, Security, Infrastructure as Code
+Tags: OpenTofu, Hetzner Cloud, Firewall, Security, Infrastructure as Code
 
 Description: Learn how to create Hetzner Cloud firewalls with OpenTofu to control inbound and outbound traffic to your servers.
 
@@ -142,4 +142,4 @@ resource "hcloud_firewall" "restricted" {
 
 ## Conclusion
 
-Hetzner Cloud Firewalls are lightweight and free — there is no extra charge for using them. Define rules with protocol, port, and IP range filters, then attach firewalls to servers using label selectors for scalable, automatic application to new servers as they are created with matching labels.
+Hetzner Cloud Firewalls are lightweight and free - there is no extra charge for using them. Define rules with protocol, port, and IP range filters, then attach firewalls to servers using label selectors for scalable, automatic application to new servers as they are created with matching labels.

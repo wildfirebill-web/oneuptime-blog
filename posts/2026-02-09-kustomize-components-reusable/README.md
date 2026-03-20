@@ -22,6 +22,7 @@ Create a monitoring component that adds Prometheus annotations:
 
 ```yaml
 # components/monitoring/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1alpha1
 kind: Component
 
@@ -319,7 +320,7 @@ spec:
       weight: 100
 ```
 
-## Resource management component
+Resource management component
 
 Component for resource quotas and limits:
 

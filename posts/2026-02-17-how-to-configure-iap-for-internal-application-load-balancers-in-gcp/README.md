@@ -42,6 +42,7 @@ Important: IAP for internal load balancers requires the regional internal applic
 
 ```bash
 # Enable the necessary APIs
+
 gcloud services enable iap.googleapis.com \
     compute.googleapis.com \
     --project=my-project-id

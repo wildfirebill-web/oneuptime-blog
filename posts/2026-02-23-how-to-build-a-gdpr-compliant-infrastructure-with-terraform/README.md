@@ -30,6 +30,7 @@ The first step is making sure all resources get created in EU regions only.
 
 ```hcl
 # providers.tf - Lock down to EU regions only
+
 provider "aws" {
   region = var.aws_region
 

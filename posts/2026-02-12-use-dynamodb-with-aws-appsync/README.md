@@ -30,6 +30,7 @@ First, define your GraphQL schema. This tells AppSync what types of data your AP
 
 ```graphql
 # AppSync schema defining a simple Task management API
+
 # Types, queries, mutations, and subscriptions
 
 type Task {

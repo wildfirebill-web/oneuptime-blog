@@ -49,6 +49,7 @@ Firehose requires an S3 bucket for records that fail to reach the destination. T
 
 ```bash
 # Create S3 bucket for failed delivery backup
+
 aws s3 mb s3://newrelic-metric-stream-backup \
   --region us-east-1
 ```

@@ -18,6 +18,7 @@ Manually building images for multiple architectures is tedious and error-prone. 
 
 ```yaml
 # .github/workflows/multiarch-build.yml
+
 name: Multi-Arch Build
 
 on:

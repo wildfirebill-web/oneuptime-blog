@@ -46,6 +46,7 @@ First, create a bucket for query results:
 
 ```bash
 # Create an S3 bucket for Athena query results
+
 aws s3 mb s3://my-athena-query-results-123456 --region us-east-1
 ```
 

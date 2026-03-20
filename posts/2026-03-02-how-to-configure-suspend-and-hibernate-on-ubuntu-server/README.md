@@ -25,6 +25,7 @@ On modern hardware, `suspend` typically refers to S3 (suspend to RAM), and `hibe
 
 ```bash
 # Check which sleep states the hardware supports
+
 cat /sys/power/state
 
 # Example output:

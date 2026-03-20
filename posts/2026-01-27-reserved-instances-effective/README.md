@@ -47,6 +47,7 @@ Scheduled RIs allow you to reserve capacity for specific time windows (minimum o
 
 ```bash
 # List available Scheduled Reserved Instance offerings
+
 # for a recurring daily window (9 AM to 5 PM UTC)
 
 aws ec2 describe-scheduled-instance-availability \

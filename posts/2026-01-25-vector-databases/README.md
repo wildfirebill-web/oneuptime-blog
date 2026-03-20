@@ -49,6 +49,7 @@ flowchart TD
 
 ```python
 # vectordb/pinecone_client.py
+
 from pinecone import Pinecone, ServerlessSpec
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass

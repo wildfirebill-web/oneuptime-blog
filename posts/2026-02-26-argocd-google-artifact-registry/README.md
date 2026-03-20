@@ -40,6 +40,7 @@ gcloud services enable artifactregistry.googleapis.com
 
 ```bash
 # Create a Docker repository
+
 gcloud artifacts repositories create my-docker-repo \
   --repository-format=docker \
   --location=us-central1 \

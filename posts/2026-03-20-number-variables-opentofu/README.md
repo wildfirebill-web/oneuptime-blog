@@ -8,12 +8,13 @@ Description: A guide to declaring and using number type variables in OpenTofu fo
 
 ## Introduction
 
-Number variables in OpenTofu hold numeric values — both integers and floating-point numbers. They are used for counts, sizes, ports, timeouts, and other numeric configuration values.
+Number variables in OpenTofu hold numeric values - both integers and floating-point numbers. They are used for counts, sizes, ports, timeouts, and other numeric configuration values.
 
 ## Declaring Number Variables
 
 ```hcl
 # Basic number variable
+
 variable "instance_count" {
   type = number
 }

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Caching, Proxy, Linux
+Tags: RHEL, Nginx, Caching, Proxy, Linux
 
 Description: How to configure Nginx as a caching reverse proxy on RHEL to reduce backend load and improve response times.
 
@@ -23,6 +23,7 @@ When Nginx sits in front of your application servers, it can cache responses and
 
 ```bash
 # Create the cache directory
+
 sudo mkdir -p /var/cache/nginx/proxy
 
 # Set ownership to nginx

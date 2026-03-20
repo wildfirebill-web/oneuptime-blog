@@ -28,6 +28,7 @@ View all events:
 
 ```bash
 # Get all events in current namespace
+
 kubectl get events
 
 # Get events from all namespaces

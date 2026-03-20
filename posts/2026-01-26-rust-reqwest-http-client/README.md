@@ -54,6 +54,7 @@ edition = "2021"
 
 [dependencies]
 # The main HTTP client library
+
 reqwest = { version = "0.12", features = ["json"] }
 
 # Async runtime - reqwest uses tokio under the hood

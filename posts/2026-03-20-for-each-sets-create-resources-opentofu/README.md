@@ -8,7 +8,7 @@ Description: Learn how to use for_each with sets of strings in OpenTofu to creat
 
 ---
 
-`for_each` accepts either a map or a set of strings. When using a set, each element becomes the resource's key (`each.key`), and `each.value` equals `each.key` (since sets have no separate value). This is ideal for creating resources from a list of unique names — like security group rules, IAM policies, or Route53 records.
+`for_each` accepts either a map or a set of strings. When using a set, each element becomes the resource's key (`each.key`), and `each.value` equals `each.key` (since sets have no separate value). This is ideal for creating resources from a list of unique names - like security group rules, IAM policies, or Route53 records.
 
 ---
 
@@ -39,7 +39,7 @@ resource "aws_route53_record" "domains" {
 
 ## Converting a List to a Set
 
-Sets require unique values — if your input is a list with potential duplicates, convert it with `toset()`:
+Sets require unique values - if your input is a list with potential duplicates, convert it with `toset()`:
 
 ```hcl
 variable "environments" {
@@ -62,6 +62,7 @@ resource "aws_iam_role" "env_roles" {
 }
 
 # Access a specific instance
+
 output "production_role_arn" {
   value = aws_iam_role.env_roles["production"].arn
 }
@@ -124,7 +125,7 @@ Like map-based `for_each`, set-based iteration is stable:
 variable "allowed_domains" {
   default = ["example.com", "api.example.com", "admin.example.com", "status.example.com"]
 }
-# OpenTofu only creates the new "status.example.com" record — others are untouched
+# OpenTofu only creates the new "status.example.com" record - others are untouched
 ```
 
 ---
@@ -141,4 +142,4 @@ variable "allowed_domains" {
 
 ## Summary
 
-`for_each` with sets of strings creates one resource per unique string value, using the string as both `each.key` and `each.value`. Convert lists to sets with `toset()` to use them with `for_each`. Sets are perfect for creating uniform resources identified by a string — like DNS records for a list of domains, security group rules for a list of IPs, or IAM roles for a list of environment names.
+`for_each` with sets of strings creates one resource per unique string value, using the string as both `each.key` and `each.value`. Convert lists to sets with `toset()` to use them with `for_each`. Sets are perfect for creating uniform resources identified by a string - like DNS records for a list of domains, security group rules for a list of IPs, or IAM roles for a list of environment names.

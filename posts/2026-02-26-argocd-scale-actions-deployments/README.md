@@ -289,6 +289,7 @@ The replica count will change and you will see new pods being created or old one
 
 ```bash
 # Scale up
+
 argocd app actions run my-app scale-up --kind Deployment --resource-name my-deployment
 
 # Scale down

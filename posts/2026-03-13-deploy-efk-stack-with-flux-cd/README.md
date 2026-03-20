@@ -30,6 +30,7 @@ Create a dedicated namespace and add the Elastic Helm repository as a Flux `Helm
 
 ```yaml
 # clusters/my-cluster/logging/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

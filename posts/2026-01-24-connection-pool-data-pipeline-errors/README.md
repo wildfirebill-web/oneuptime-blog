@@ -48,6 +48,7 @@ The most frequent cause of pool exhaustion is forgetting to close connections.
 
 ```python
 # connection_leak_bad.py
+
 # This code leaks connections - DO NOT use in production
 
 import psycopg2

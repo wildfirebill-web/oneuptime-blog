@@ -171,6 +171,7 @@ cd bug-report
 
 ```bash
 # Istiod logs - look for errors
+
 grep -i error istio-system/istiod-*/logs.txt
 
 # Proxy sync status

@@ -22,6 +22,7 @@ You can verify etcd is running and check its health using talosctl:
 
 ```bash
 # Check etcd service status on a control plane node
+
 talosctl service etcd --nodes 10.0.0.10
 
 # Check etcd member list

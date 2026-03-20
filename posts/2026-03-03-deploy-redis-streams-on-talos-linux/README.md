@@ -30,6 +30,7 @@ Redis Streams require AOF persistence to survive restarts:
 
 ```yaml
 # redis-streams-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

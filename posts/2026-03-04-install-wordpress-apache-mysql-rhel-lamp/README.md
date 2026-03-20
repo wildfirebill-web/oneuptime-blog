@@ -14,6 +14,7 @@ The LAMP stack (Linux, Apache, MySQL, PHP) is the classic foundation for hosting
 
 ```bash
 # Install Apache, MySQL, and PHP with required extensions
+
 sudo dnf install -y httpd mysql-server php php-mysqlnd \
   php-json php-xml php-mbstring php-curl php-zip php-gd php-intl
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, IPv4, Log Analysis, grep, awk, Shell, Security
+Tags: Linux, IPv4, Log Analysis, Grep, Awk, Shell, Security
 
 Description: Filter log files by IPv4 address using grep and awk one-liners, including exact match, CIDR range filtering, subnet filtering, and multi-file log analysis.
 
@@ -14,6 +14,7 @@ Filtering logs by IPv4 address is a daily task for operators. `grep` handles exa
 
 ```bash
 # Find all log lines for a specific IP
+
 grep "^203.0.113.42 " /var/log/nginx/access.log
 
 # Anywhere in the line (e.g., syslog format)
@@ -55,7 +56,7 @@ awk -F'[. ]' '
   $1 == 10 && $2 == 1 {print}
 ' /var/log/nginx/access.log
 
-# More precise — check all four octets
+# More precise - check all four octets
 awk '
 {
   split($1, ip, ".");

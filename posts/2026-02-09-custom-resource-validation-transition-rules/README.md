@@ -463,6 +463,7 @@ spec:
 
 ```bash
 # Create a database
+
 kubectl apply -f - <<EOF
 apiVersion: example.com/v1
 kind: Database

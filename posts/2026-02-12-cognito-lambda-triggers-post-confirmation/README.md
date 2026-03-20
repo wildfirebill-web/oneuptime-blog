@@ -23,6 +23,7 @@ Importantly, this trigger does NOT fire for admin-confirmed users (AdminConfirmS
 
 ```hcl
 # Lambda function for Post Confirmation
+
 resource "aws_lambda_function" "post_confirmation" {
   filename         = data.archive_file.post_confirmation.output_path
   source_code_hash = data.archive_file.post_confirmation.output_base64sha256

@@ -22,6 +22,7 @@ Start with a simple circuit breaker that limits concurrent connections and pendi
 
 ```yaml
 # envoy-circuit-breaker.yaml
+
 static_resources:
   clusters:
   - name: user_service

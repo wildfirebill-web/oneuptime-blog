@@ -77,6 +77,7 @@ Before starting, ensure you have:
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install WireGuard

@@ -31,6 +31,7 @@ When the primary target group recovers, traffic automatically fails back. This b
 
 ```bash
 # Create the primary target group
+
 aws elbv2 create-target-group \
     --name primary-app-tg \
     --protocol TCP \

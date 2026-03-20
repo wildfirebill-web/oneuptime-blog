@@ -30,6 +30,7 @@ The simplest pull-through cache is the official Docker registry configured in pr
 
 ```yaml
 # Docker registry pull-through cache deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

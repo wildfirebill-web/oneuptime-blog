@@ -51,6 +51,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Load model artifacts at startup
+
 # AIP_STORAGE_URI points to the GCS location of your model artifacts
 MODEL_DIR = os.environ.get("AIP_STORAGE_URI", "/models")
 

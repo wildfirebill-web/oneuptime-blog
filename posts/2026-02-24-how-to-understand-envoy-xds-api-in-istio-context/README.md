@@ -65,6 +65,7 @@ You can see exactly what configuration Istio is sending to each sidecar:
 
 ```bash
 # All listeners (LDS)
+
 istioctl proxy-config listener <pod-name> -n <namespace>
 
 # All routes (RDS)

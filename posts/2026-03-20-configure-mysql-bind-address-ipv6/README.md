@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MySQL, bind-address, Database Configuration
+Tags: IPv6, MySQL, Bind-address, Database Configuration
 
 Description: Learn how to configure MySQL's bind-address parameter to listen on IPv6 interfaces, including specific IPv6 addresses, all interfaces, and dual-stack configurations.
 
@@ -14,6 +14,7 @@ Description: Learn how to configure MySQL's bind-address parameter to listen on 
 [mysqld]
 
 # Default: only localhost (127.0.0.1)
+
 bind-address = 127.0.0.1
 
 # Listen on all IPv4 and IPv6 interfaces
@@ -129,4 +130,4 @@ ufw allow from 2001:db8:app::/48 to any port 3306
 
 ## Summary
 
-Configure MySQL to listen on IPv6 by setting `bind-address = ::` (all interfaces) or `bind-address = 2001:db8::10` (specific address) in `mysqld.cnf`. Restart MySQL after changes. Grant access with `CREATE USER 'user'@'2001:db8::%'` — MySQL uses the host portion of the user account to control access. Verify with `ss -6 -tlnp | grep mysql` and test with `mysql -h 2001:db8::10 -u user -p`.
+Configure MySQL to listen on IPv6 by setting `bind-address = ::` (all interfaces) or `bind-address = 2001:db8::10` (specific address) in `mysqld.cnf`. Restart MySQL after changes. Grant access with `CREATE USER 'user'@'2001:db8::%'` - MySQL uses the host portion of the user account to control access. Verify with `ss -6 -tlnp | grep mysql` and test with `mysql -h 2001:db8::10 -u user -p`.

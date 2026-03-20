@@ -27,6 +27,7 @@ Start by setting up the Azure provider in your Terraform configuration.
 
 ```hcl
 # versions.tf
+
 # Define required providers and their versions
 
 terraform {
@@ -50,7 +51,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group and Networking
+Resource Group and Networking
 
 AKS needs a VNet and subnet to operate. You can let AKS create its own networking, but defining it yourself gives you more control over IP ranges and peering.
 

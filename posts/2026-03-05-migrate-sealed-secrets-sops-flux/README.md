@@ -33,6 +33,7 @@ Age is the simplest encryption backend for SOPS. Generate a key pair:
 ```bash
 age-keygen -o age.agekey
 # Public key: age1ql3z7hjy54pw3hyww5ayyfg7zqgvc7w3j2elw8zmrj2kg5sfn9aqmcac8p
+
 ```
 
 Store the private key as a Kubernetes secret so the kustomize-controller can decrypt:

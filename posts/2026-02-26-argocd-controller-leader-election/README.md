@@ -48,6 +48,7 @@ Check which controller instance is the current leader:
 
 ```bash
 # View the leader election lease
+
 kubectl get lease -n argocd
 
 # Get details of the controller lease

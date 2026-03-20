@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: AWS, VPC, IPv4, CIDR, Subnetting, Network Planning
 
-Description: Plan IPv4 subnet sizes for an AWS VPC by calculating host counts, accounting for AWS reserved addresses, and allocating CIDR blocks for application, database, and public tiers across multiple availability zones.
+Description: Plan IPv4 subnet sizes for an AWS VPC by calculating host counts, accounting for AWS reserved addresses, and allocating CIDR blocks for application, database, and public tiers across multiple...
 
 ## Introduction
 
@@ -37,27 +37,27 @@ A /24 subnet has 256 total addresses minus 5 = **251 usable**.
 
 Starting with a `10.0.0.0/16` VPC:
 
-```
+```text
 VPC: 10.0.0.0/16  (65,536 IPs)
 
 ─── Public Subnets (web/load balancer tier) ───
-10.0.1.0/24   — public-1a  (251 usable)
-10.0.2.0/24   — public-1b
-10.0.3.0/24   — public-1c
+10.0.1.0/24   - public-1a  (251 usable)
+10.0.2.0/24   - public-1b
+10.0.3.0/24   - public-1c
 
 ─── App Subnets (EC2, ECS, Lambda) ───
-10.0.10.0/23  — app-1a  (507 usable per AZ)
-10.0.12.0/23  — app-1b
-10.0.14.0/23  — app-1c
+10.0.10.0/23  - app-1a  (507 usable per AZ)
+10.0.12.0/23  - app-1b
+10.0.14.0/23  - app-1c
 
 ─── Database Subnets ───
-10.0.20.0/24  — db-1a  (251 usable)
-10.0.21.0/24  — db-1b
-10.0.22.0/24  — db-1c
+10.0.20.0/24  - db-1a  (251 usable)
+10.0.21.0/24  - db-1b
+10.0.22.0/24  - db-1c
 
 ─── Reserved for future expansion ───
-10.0.100.0/22 — Kubernetes pod subnet
-10.0.200.0/24 — Management/VPN
+10.0.100.0/22 - Kubernetes pod subnet
+10.0.200.0/24 - Management/VPN
 ```
 
 ## Python Script to Validate No Overlaps
@@ -75,12 +75,13 @@ subnets = [
 networks = [ipaddress.IPv4Network(s) for s in subnets]
 
 # Check for overlaps
+
 for i, a in enumerate(networks):
     for j, b in enumerate(networks):
         if i < j and a.overlaps(b):
             print(f"OVERLAP: {a} and {b}")
 
-print("No overlaps found — plan is valid") if not any(
+print("No overlaps found - plan is valid") if not any(
     a.overlaps(b) for i, a in enumerate(networks)
     for j, b in enumerate(networks) if i < j
 ) else None

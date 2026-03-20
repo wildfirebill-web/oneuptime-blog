@@ -26,6 +26,7 @@ Here's a complete policy for a log analytics use case. Indexes start hot, move t
 
 ```bash
 # Create an ISM policy for log index lifecycle management
+
 curl -XPUT "https://search-domain.us-east-1.es.amazonaws.com/_plugins/_ism/policies/log-lifecycle" \
     -H "Content-Type: application/json" \
     -d '{

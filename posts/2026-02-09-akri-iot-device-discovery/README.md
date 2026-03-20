@@ -28,6 +28,7 @@ Install Akri using Helm:
 
 ```bash
 # Add Akri Helm repository
+
 helm repo add akri-helm-charts https://project-akri.github.io/akri/
 helm repo update
 

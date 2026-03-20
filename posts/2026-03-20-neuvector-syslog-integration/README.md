@@ -21,6 +21,7 @@ Integrating NeuVector with your syslog infrastructure enables centralized log co
 
 ```bash
 # Configure syslog forwarding
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/system/config" \
   -H "Content-Type: application/json" \
@@ -116,11 +117,11 @@ curl -sk -X PATCH \
 ```
 
 Available categories:
-- `event` — System and operational events
-- `security-event` — Security violations and threats
-- `audit` — User actions and configuration changes
-- `incident` — Correlated security incidents
-- `violation` — Policy violation details
+- `event` - System and operational events
+- `security-event` - Security violations and threats
+- `audit` - User actions and configuration changes
+- `incident` - Correlated security incidents
+- `violation` - Policy violation details
 
 ## Step 4: Configure for Splunk
 
@@ -149,7 +150,7 @@ curl -sk -X PATCH \
 ```
 
 Splunk search for NeuVector events:
-```
+```text
 index=security sourcetype=neuvector
 | where level="Critical" OR level="High"
 | stats count by source_container, event_type, action

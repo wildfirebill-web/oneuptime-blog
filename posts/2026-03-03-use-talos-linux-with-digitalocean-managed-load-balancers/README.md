@@ -31,6 +31,7 @@ If there is no pre-published Talos image for DigitalOcean, upload one:
 
 ```bash
 # Download the Talos DigitalOcean image
+
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.7.0/digital-ocean-amd64.raw.gz
 
 # Upload the image to DigitalOcean using the API

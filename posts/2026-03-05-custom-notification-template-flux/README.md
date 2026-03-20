@@ -31,6 +31,7 @@ The `spec.summary` field on the Alert resource prepends a custom message to ever
 
 ```yaml
 # Alert with a summary field for environment context
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

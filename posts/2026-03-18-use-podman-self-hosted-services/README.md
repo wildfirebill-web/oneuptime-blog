@@ -190,6 +190,7 @@ Configure automatic container updates for your self-hosted services:
 
 ```bash
 # Label containers for auto-update
+
 podman run -d \
   --name gitea-app \
   --label io.containers.autoupdate=registry \

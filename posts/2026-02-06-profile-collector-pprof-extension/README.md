@@ -28,6 +28,7 @@ Add the pprof extension to your collector configuration:
 
 ```yaml
 # Basic pprof extension configuration
+
 extensions:
   # pprof extension exposes profiling endpoints
   pprof:

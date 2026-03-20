@@ -831,6 +831,7 @@ SELECT * FROM get_worker_stats();
 
 ```bash
 # Build the extension
+
 make
 
 # Install (requires superuser)

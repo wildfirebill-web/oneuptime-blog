@@ -14,6 +14,7 @@ Ansible provides dedicated collections for automating network device configurati
 
 ```yaml
 # cisco-ipv6-interface.yml - Configure IPv6 on Cisco IOS interface
+
 ---
 - name: Configure IPv6 addresses on Cisco IOS devices
   hosts: cisco_routers

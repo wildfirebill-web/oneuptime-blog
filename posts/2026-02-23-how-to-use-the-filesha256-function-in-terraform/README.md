@@ -16,6 +16,7 @@ The `filesha256` function reads a file's contents and returns a hex-encoded SHA-
 
 ```hcl
 # filesha256(path)
+
 # Returns the hex-encoded SHA-256 hash of a file
 filesha256("${path.module}/configs/app.yaml")
 # Returns something like: "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
@@ -124,7 +125,7 @@ output "security_audit" {
 }
 ```
 
-## Resource Naming with Cryptographic Hashes
+Resource Naming with Cryptographic Hashes
 
 Generate unique resource names that change only when content changes:
 

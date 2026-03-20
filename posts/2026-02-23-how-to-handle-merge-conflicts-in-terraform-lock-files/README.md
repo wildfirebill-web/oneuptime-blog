@@ -18,6 +18,7 @@ The `.terraform.lock.hcl` file records the exact versions and checksums of every
 
 ```hcl
 # .terraform.lock.hcl
+
 provider "registry.terraform.io/hashicorp/aws" {
   version     = "5.31.0"
   constraints = "~> 5.0"

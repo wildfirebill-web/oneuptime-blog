@@ -20,6 +20,7 @@ By default, files served over NFS get the `nfs_t` SELinux type on the client sid
 
 ```bash
 # Check the SELinux context of NFS-mounted files
+
 ls -Z /mnt/nfs-shared/
 ```
 

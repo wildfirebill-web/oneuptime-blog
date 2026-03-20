@@ -16,6 +16,7 @@ To produce a map from a for expression, use curly braces `{ }` instead of square
 
 ```hcl
 # Square brackets produce a list
+
 # [for item in collection : transform]
 
 # Curly braces produce a map

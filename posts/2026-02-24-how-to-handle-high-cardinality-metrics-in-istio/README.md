@@ -37,6 +37,7 @@ Check your current cardinality:
 
 ```promql
 # Total number of Istio time series
+
 count({__name__=~"istio_.*"})
 
 # Time series per metric

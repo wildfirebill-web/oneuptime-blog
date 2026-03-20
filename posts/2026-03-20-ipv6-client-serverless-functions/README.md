@@ -62,6 +62,7 @@ def normalize_ipv6(ip: str) -> str:
 
 ```python
 # AWS Lambda with IPv6 client detection
+
 import json
 from typing import Any
 

@@ -31,6 +31,7 @@ Start with a high-level view:
 
 ```bash
 # Get the overall cluster status
+
 clusterctl describe cluster my-cluster
 
 # Check the cluster resource directly

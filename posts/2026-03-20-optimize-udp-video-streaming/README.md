@@ -8,11 +8,11 @@ Description: Optimize UDP for video streaming by tuning buffer sizes, configurin
 
 ## Introduction
 
-Video streaming is one of the primary use cases for UDP. Unlike file transfer (where every byte must arrive), video streaming can tolerate some packet loss — a lost frame can be concealed or skipped. The challenge is maintaining smooth, low-latency delivery at a sustained bitrate without overwhelming network buffers. Proper UDP tuning for streaming involves buffer sizing, packet pacing, and forward error correction.
+Video streaming is one of the primary use cases for UDP. Unlike file transfer (where every byte must arrive), video streaming can tolerate some packet loss - a lost frame can be concealed or skipped. The challenge is maintaining smooth, low-latency delivery at a sustained bitrate without overwhelming network buffers. Proper UDP tuning for streaming involves buffer sizing, packet pacing, and forward error correction.
 
 ## Understanding Video Streaming Requirements
 
-```
+```text
 Typical video bitrates:
 - SD (480p):  1-3 Mbps
 - HD (720p):  3-6 Mbps
@@ -61,6 +61,7 @@ def create_streaming_socket(multicast=False):
 
 ```bash
 # Without pacing: video encoder outputs bursts (many packets at once per frame)
+
 # Bursts cause buffer overflow and loss at network equipment
 
 # Enable packet pacing with Linux tc:

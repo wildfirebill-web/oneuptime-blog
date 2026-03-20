@@ -258,6 +258,7 @@ Test your handler locally by simulating SQS events with mixed success and failur
 import json
 
 # Simulate a batch with one bad message
+
 test_event = {
     "Records": [
         {

@@ -59,6 +59,7 @@ def create_batch_input(prompts, output_file, model_params=None):
     print(f"Created batch input with {len(prompts)} records: {output_file}")
 
 # Example: generate batch input for document summarization
+
 prompts = [
     {'id': f'doc-{i:04d}', 'text': f'Summarize this document: {doc}'}
     for i, doc in enumerate(documents_to_summarize)

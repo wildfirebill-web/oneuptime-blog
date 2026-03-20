@@ -12,7 +12,7 @@ MTU (Maximum Transmission Unit) is a Layer 3 concept: the maximum IP packet size
 
 ## MTU to MSS Calculation
 
-```
+```text
 MTU and MSS relationship:
 
   Ethernet MTU:      1500 bytes  (standard)
@@ -43,7 +43,7 @@ MTU and MSS relationship:
 
 ## How MSS is Negotiated
 
-```
+```text
 TCP three-way handshake with MSS:
 
   Client                            Server
@@ -69,6 +69,7 @@ Key points:
 
 ```bash
 # Capture TCP handshake and inspect MSS:
+
 tcpdump -i eth0 -n 'tcp[tcpflags] & tcp-syn != 0' -v
 
 # Look for lines like:
@@ -142,7 +143,7 @@ setsockopt(sock, IPPROTO_TCP, TCP_MAXSEG, &mss, sizeof(mss));
 
 ## Common MSS Values Reference
 
-```
+```text
 Interface Type      | Physical MTU | Overhead | Tunnel MTU | Correct MSS
 --------------------|--------------|----------|------------|------------
 Standard Ethernet   |    1500      |    0     |    1500    |    1460

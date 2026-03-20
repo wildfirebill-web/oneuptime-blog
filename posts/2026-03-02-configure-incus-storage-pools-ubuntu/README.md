@@ -26,6 +26,7 @@ For single-server setups on Ubuntu, Btrfs or ZFS provide the best combination of
 
 ```bash
 # List storage pools
+
 incus storage list
 
 # Show detailed information about a pool

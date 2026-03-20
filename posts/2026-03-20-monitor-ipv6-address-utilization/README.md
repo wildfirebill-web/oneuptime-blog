@@ -24,6 +24,7 @@ import ipaddress
 nb = pynetbox.api("http://netbox.internal", token="your-token")
 
 # Metrics
+
 PREFIX_UTILIZATION = Gauge(
     'netbox_prefix_utilization_percent',
     'IPv6 prefix utilization percentage',
@@ -183,7 +184,7 @@ from datetime import datetime
 
 nb = pynetbox.api("http://netbox.internal", token="your-token")
 
-print(f"IPv6 Utilization Report — {datetime.now().strftime('%Y-%m-%d')}")
+print(f"IPv6 Utilization Report - {datetime.now().strftime('%Y-%m-%d')}")
 print("=" * 70)
 
 # Check /48 prefix coverage (of the /32 organization block)
@@ -206,4 +207,4 @@ for site_prefix in sorted(site_prefixes, key=lambda p: str(p.prefix)):
 
 ## Conclusion
 
-IPv6 utilization monitoring focuses on DHCPv6 pool exhaustion (track assigned vs total pool addresses), prefix allocation density at /48 and /64 levels (track against planned maximums), and IPAM record freshness (stale records indicate reclamation opportunities). Prometheus with Kea's built-in statistics endpoint provides the most accurate DHCPv6 pool metrics. Alert at 80% pool utilization to allow time for expansion before exhaustion. For SLAAC-enabled /64 subnets, pool utilization metrics from IPAM are less meaningful since addresses are not centrally tracked — monitor NDP table size on the gateway instead.
+IPv6 utilization monitoring focuses on DHCPv6 pool exhaustion (track assigned vs total pool addresses), prefix allocation density at /48 and /64 levels (track against planned maximums), and IPAM record freshness (stale records indicate reclamation opportunities). Prometheus with Kea's built-in statistics endpoint provides the most accurate DHCPv6 pool metrics. Alert at 80% pool utilization to allow time for expansion before exhaustion. For SLAAC-enabled /64 subnets, pool utilization metrics from IPAM are less meaningful since addresses are not centrally tracked - monitor NDP table size on the gateway instead.

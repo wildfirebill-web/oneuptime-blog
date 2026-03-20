@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Timeouts, Resource Lifecycle, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Timeout, Resource Lifecycle, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to configure resource timeouts in OpenTofu to control how long create, update, and delete operations are allowed to run before OpenTofu marks them as failed.
 
 ---
 
-Some infrastructure operations — creating RDS databases, provisioning EKS clusters, waiting for DNS propagation — can take many minutes. OpenTofu supports `timeouts` blocks to define how long each operation should be permitted to run before the provider marks it as an error.
+Some infrastructure operations - creating RDS databases, provisioning EKS clusters, waiting for DNS propagation - can take many minutes. OpenTofu supports `timeouts` blocks to define how long each operation should be permitted to run before the provider marks it as an error.
 
 ---
 
@@ -37,7 +37,8 @@ The values use Go duration syntax: `"30s"`, `"10m"`, `"2h"`, `"1h30m"`.
 Not all resources support a `timeouts` block. Only resources where the provider implements async waiting for operations expose this configuration. Common examples include:
 
 ```hcl
-# RDS instances — provisioning takes many minutes
+# RDS instances - provisioning takes many minutes
+
 resource "aws_db_instance" "main" {
   identifier     = "mydb"
   engine         = "mysql"
@@ -56,7 +57,7 @@ resource "aws_db_instance" "main" {
 ```
 
 ```hcl
-# EKS clusters — control plane provisioning takes 10-20 minutes
+# EKS clusters - control plane provisioning takes 10-20 minutes
 resource "aws_eks_cluster" "main" {
   name     = "my-cluster"
   role_arn = aws_iam_role.eks.arn
@@ -152,4 +153,4 @@ If a `create` timeout is exceeded, OpenTofu marks the resource as failed and lea
 
 ## Summary
 
-The `timeouts` block controls how long OpenTofu waits for `create`, `update`, and `delete` operations to complete before treating them as failures. Not all resources support it — only those where the provider implements asynchronous waiting. Use Go duration strings (`"30m"`, `"2h"`) and increase timeouts for large resources like databases and Kubernetes clusters that take longer than provider defaults. Check the provider documentation for the specific operations each resource exposes in its `timeouts` block.
+The `timeouts` block controls how long OpenTofu waits for `create`, `update`, and `delete` operations to complete before treating them as failures. Not all resources support it - only those where the provider implements asynchronous waiting. Use Go duration strings (`"30m"`, `"2h"`) and increase timeouts for large resources like databases and Kubernetes clusters that take longer than provider defaults. Check the provider documentation for the specific operations each resource exposes in its `timeouts` block.

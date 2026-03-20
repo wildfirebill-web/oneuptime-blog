@@ -20,6 +20,7 @@ The simplest use is passing a comma-separated list of hosts:
 
 ```bash
 # Run a command on three specific hosts (note the trailing comma for single hosts)
+
 ansible -i 'web01.example.com,web02.example.com,web03.example.com,' all -m ping
 
 # Run on a single host (trailing comma tells Ansible this is a host list, not a file)

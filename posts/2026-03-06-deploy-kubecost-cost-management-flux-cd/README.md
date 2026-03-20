@@ -44,6 +44,7 @@ Define a dedicated namespace for Kubecost.
 
 ```yaml
 # clusters/production/kubecost/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -30,6 +30,7 @@ The canary pattern with Terraform involves:
 
 ```hcl
 # main.tf - Canary deployment infrastructure
+
 variable "canary_enabled" {
   description = "Whether to deploy a canary alongside the stable version"
   type        = bool

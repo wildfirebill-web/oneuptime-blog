@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Overlay Networks, Multi-Host, Networking, Clustering
+Tags: Portainer, Docker Swarm, Overlay Network, Multi-Host, Networking, Clustering
 
 Description: Configure overlay networks in a Docker Swarm cluster managed by Portainer to enable secure, encrypted container communication across multiple physical or virtual hosts.
 
@@ -22,6 +22,7 @@ Navigate to **Networks > Add Network** in your Swarm environment:
 
 ```yaml
 # Create via Portainer stack
+
 version: "3.8"
 networks:
   app-overlay:

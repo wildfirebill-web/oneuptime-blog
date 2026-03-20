@@ -67,6 +67,7 @@ This creates the proxy's IAM role.
 
 ```bash
 # Proxy role - access to secrets
+
 aws iam create-role \
   --role-name rds-proxy-lambda-role \
   --assume-role-policy-document '{

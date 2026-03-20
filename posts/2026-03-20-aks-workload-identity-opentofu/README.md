@@ -22,6 +22,7 @@ First, create or update an AKS cluster with OIDC issuer and workload identity en
 
 ```hcl
 # main.tf - AKS cluster with OIDC and Workload Identity enabled
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "my-aks-cluster"
   location            = azurerm_resource_group.rg.location

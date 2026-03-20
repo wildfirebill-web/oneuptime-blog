@@ -48,6 +48,7 @@ This is the most important thing to understand about `uuid()`: it generates a ne
 
 ```hcl
 # WARNING: This changes on every plan
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"

@@ -21,6 +21,7 @@ Increase TCP buffer sizes for high-bandwidth connections:
 
 ```bash
 # Maximum receive buffer
+
 sudo sysctl -w net.core.rmem_max=16777216
 
 # Maximum send buffer

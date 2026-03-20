@@ -6,7 +6,7 @@ Tags: OpenTofu, AWS, Azure, GCP, API Gateway, Rate Limiting, Throttling, Infrast
 
 Description: Learn how to configure API throttling and rate limiting across AWS API Gateway, Azure API Management, and GCP API Gateway using OpenTofu to protect backends from traffic spikes.
 
-API throttling prevents abuse, protects backend services from traffic spikes, and ensures fair usage across clients. Each cloud provider has distinct mechanisms — AWS API Gateway uses usage plans and stage-level throttling, Azure APIM uses rate-limit policies, and GCP API Gateway uses quota configurations. Managing throttling in OpenTofu ensures limits are consistently applied and documented.
+API throttling prevents abuse, protects backend services from traffic spikes, and ensures fair usage across clients. Each cloud provider has distinct mechanisms - AWS API Gateway uses usage plans and stage-level throttling, Azure APIM uses rate-limit policies, and GCP API Gateway uses quota configurations. Managing throttling in OpenTofu ensures limits are consistently applied and documented.
 
 ## AWS API Gateway Throttling
 
@@ -14,6 +14,7 @@ API throttling prevents abuse, protects backend services from traffic spikes, an
 
 ```hcl
 # HTTP API stage throttling (applies to all routes)
+
 resource "aws_apigatewayv2_stage" "production" {
   api_id      = aws_apigatewayv2_api.main.id
   name        = "production"
@@ -209,7 +210,7 @@ resource "aws_cloudwatch_metric_alarm" "api_throttled" {
     Stage = aws_apigatewayv2_stage.production.name
   }
 
-  alarm_description = "High rate of 4xx errors — possible throttling or abuse"
+  alarm_description = "High rate of 4xx errors - possible throttling or abuse"
   alarm_actions     = [aws_sns_topic.alerts.arn]
 }
 

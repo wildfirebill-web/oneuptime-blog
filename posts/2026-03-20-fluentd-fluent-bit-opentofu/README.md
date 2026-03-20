@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # fluent_bit.tf
+
 resource "helm_release" "fluent_bit" {
   name             = "fluent-bit"
   repository       = "https://fluent.github.io/helm-charts"
@@ -175,8 +176,8 @@ resource "helm_release" "fluentd" {
 
 ## Best Practices
 
-- Use Fluent Bit for node-level collection and Fluentd for aggregation — Fluent Bit is 10x more memory-efficient as a DaemonSet.
-- Set `Mem_Buf_Limit` in Fluent Bit to prevent OOM kills when log rates spike — data is dropped rather than causing the pod to crash.
+- Use Fluent Bit for node-level collection and Fluentd for aggregation - Fluent Bit is 10x more memory-efficient as a DaemonSet.
+- Set `Mem_Buf_Limit` in Fluent Bit to prevent OOM kills when log rates spike - data is dropped rather than causing the pod to crash.
 - Filter out system namespace logs (kube-system, logging, monitoring) in Fluentd to reduce noise and storage costs.
-- Use shared keys for Fluent Bit to Fluentd communication — don't accept unauthenticated log forwarding.
+- Use shared keys for Fluent Bit to Fluentd communication - don't accept unauthenticated log forwarding.
 - Archive logs to S3 in addition to Elasticsearch for long-term retention at low cost.

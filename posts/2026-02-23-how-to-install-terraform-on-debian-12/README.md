@@ -22,6 +22,7 @@ Confirm your Debian version:
 
 ```bash
 # Verify you are running Debian 12
+
 cat /etc/debian_version
 # Should output "12.x"
 

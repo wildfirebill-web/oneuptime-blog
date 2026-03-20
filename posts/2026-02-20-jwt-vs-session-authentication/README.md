@@ -38,6 +38,7 @@ sequenceDiagram
 
 ```python
 # session_auth.py
+
 # Session-based authentication implementation
 
 from fastapi import FastAPI, Request, Response, HTTPException

@@ -55,6 +55,7 @@ In Rancher UI:
 
 ```yaml
 # Machine pool configuration (shown in Rancher UI)
+
 controlPlane:
   count: 3
   cpus: 4
@@ -127,6 +128,6 @@ KUBECONFIG=~/.kube/harvester-cluster.yaml kubectl get nodes
 ## Best Practices
 
 - Use Harvester networks with VLANs to isolate production Kubernetes clusters from development.
-- Size VMs based on your workload — control plane nodes need more CPU and memory than their Kubernetes requirements suggest (add 20% for Harvester VM overhead).
+- Size VMs based on your workload - control plane nodes need more CPU and memory than their Kubernetes requirements suggest (add 20% for Harvester VM overhead).
 - Use Longhorn-backed Harvester storage for cluster disks to leverage Harvester's built-in replication.
 - Enable Rancher's cluster autoscaler for worker machine pools to handle variable workloads.

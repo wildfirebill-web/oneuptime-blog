@@ -55,6 +55,7 @@ The simplest bulkhead uses a semaphore to limit concurrent calls:
 
 ```python
 # bulkhead.py
+
 import asyncio
 from dataclasses import dataclass, field
 from typing import TypeVar, Callable, Any, Optional

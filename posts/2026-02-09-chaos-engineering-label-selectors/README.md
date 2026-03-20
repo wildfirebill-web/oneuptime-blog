@@ -26,6 +26,7 @@ Deploy applications with descriptive labels:
 
 ```yaml
 # multi-tier-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

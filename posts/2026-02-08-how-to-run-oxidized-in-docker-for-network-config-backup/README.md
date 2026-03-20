@@ -34,6 +34,7 @@ Get Oxidized running with a minimal setup.
 
 ```bash
 # Create directories for Oxidized configuration and data
+
 mkdir -p /opt/oxidized/{config,output}
 
 # Start Oxidized with default settings

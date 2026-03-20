@@ -49,6 +49,7 @@ Edit the `zoo.cfg` configuration file on each Zookeeper node:
 
 ```properties
 # zoo.cfg - Zookeeper configuration
+
 # Whitelist the administrative commands needed for monitoring
 4lw.commands.whitelist=mntr,ruok,srvr,stat,isro
 

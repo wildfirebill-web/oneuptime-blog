@@ -64,6 +64,7 @@ Use `skip-inbound-ports` when external systems need direct access to your pod.
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

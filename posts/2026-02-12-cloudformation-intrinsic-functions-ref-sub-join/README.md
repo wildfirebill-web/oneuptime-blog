@@ -18,6 +18,7 @@ For parameters, it returns the parameter value:
 
 ```yaml
 # Ref returns parameter values
+
 Parameters:
   Environment:
     Type: String

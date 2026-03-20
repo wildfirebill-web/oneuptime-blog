@@ -20,6 +20,7 @@ Consider fetching user profiles for a list of user IDs. The naive approach makes
 
 ```python
 # slow_approach.py
+
 # Making individual requests is slow and inefficient
 import asyncio
 import httpx

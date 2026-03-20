@@ -163,6 +163,7 @@ When pods are stuck in a not-ready state, start with these steps:
 
 ```bash
 # Check readiness status of all containers
+
 kubectl get pod -l app=my-api -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{range .status.containerStatuses[*]}{.name}:{.ready}{"\t"}{end}{"\n"}{end}'
 
 # Check the proxy readiness directly

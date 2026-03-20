@@ -37,6 +37,7 @@ flowchart TD
 # This script demonstrates the unary operator expected error
 
 # Variable is not set or empty
+
 my_var=""
 
 # This will cause "unary operator expected" error

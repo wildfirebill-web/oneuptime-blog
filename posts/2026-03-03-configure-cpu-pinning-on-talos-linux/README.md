@@ -24,6 +24,7 @@ The first step is telling the Linux kernel to keep certain CPUs free from genera
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

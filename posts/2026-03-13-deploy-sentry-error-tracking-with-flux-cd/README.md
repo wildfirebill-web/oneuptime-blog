@@ -30,6 +30,7 @@ This guide uses the `sentry-kubernetes` Helm chart to deploy the self-hosted Sen
 kubectl create namespace sentry
 
 # Sentry secret key (must be a cryptographically random string)
+
 kubectl create secret generic sentry-secret \
   --namespace sentry \
   --from-literal=secret-key=$(openssl rand -hex 32) \

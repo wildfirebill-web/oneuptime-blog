@@ -16,6 +16,7 @@ Kibana provides powerful visualization capabilities for Elasticsearch data. This
 
 ```yaml
 # kibana.yml
+
 server.host: "0.0.0.0"
 server.port: 5601
 server.name: "kibana"

@@ -18,6 +18,7 @@ The `spec.interval` field tells the Flux helm-controller how frequently to recon
 
 ```yaml
 # helmrelease.yaml - HelmRelease with reconciliation interval
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

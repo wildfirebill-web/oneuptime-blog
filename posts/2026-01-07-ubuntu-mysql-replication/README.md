@@ -93,6 +93,7 @@ Run these commands on all servers (master and replicas) to install MySQL:
 
 ```bash
 # Update the package index to ensure we get the latest package information
+
 sudo apt update
 
 # Install MySQL server package

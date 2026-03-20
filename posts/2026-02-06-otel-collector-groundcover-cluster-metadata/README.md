@@ -186,6 +186,7 @@ If you deploy the Collector using Helm, set environment variables for cluster id
 
 ```yaml
 # values.yaml for the OpenTelemetry Collector Helm chart
+
 mode: daemonset
 
 config:

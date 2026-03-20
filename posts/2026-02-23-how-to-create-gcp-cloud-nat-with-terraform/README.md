@@ -48,6 +48,7 @@ variable "region" {
 }
 
 # VPC network - no auto subnets since we want private-only
+
 resource "google_compute_network" "main" {
   name                    = "main-vpc"
   auto_create_subnetworks = false

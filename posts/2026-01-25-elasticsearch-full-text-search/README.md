@@ -45,6 +45,7 @@ Let's see this in action:
 
 ```bash
 # Analyze text to see how it's tokenized
+
 curl -X POST "localhost:9200/_analyze?pretty" -H 'Content-Type: application/json' -d'
 {
   "analyzer": "standard",

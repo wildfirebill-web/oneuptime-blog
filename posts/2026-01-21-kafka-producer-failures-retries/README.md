@@ -831,6 +831,7 @@ public class CircuitBreakerProducer {
 
 ```properties
 # Total time to deliver a message
+
 delivery.timeout.ms=120000
 
 # Individual request timeout

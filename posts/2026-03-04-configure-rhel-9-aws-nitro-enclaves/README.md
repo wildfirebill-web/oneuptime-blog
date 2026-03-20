@@ -36,6 +36,7 @@ graph TB
 
 ```bash
 # Launch an EC2 instance with Nitro Enclaves enabled
+
 aws ec2 run-instances \
   --image-id ami-rhel9-id \
   --instance-type m5.xlarge \

@@ -1,4 +1,4 @@
-# How to Monitor Agent Memory Usage in Portainer
+# How to Monitor Agent Memory Usage in Portainer - Monitoring
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The Portainer Agent is lightweight but can consume increasing memory in high-loa
 
 ```bash
 # Real-time memory stats
+
 docker stats portainer_agent --no-stream
 # Shows: CPU %, MEM USAGE/LIMIT, MEM %
 

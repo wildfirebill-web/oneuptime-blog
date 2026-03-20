@@ -29,6 +29,7 @@ The Hubble CLI supports filtering through command-line flags:
 
 ```bash
 # Start port-forward to Hubble relay
+
 cilium hubble port-forward &
 
 # Filter by namespace

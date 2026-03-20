@@ -27,6 +27,7 @@ graph TD
 
 ```bash
 # Install pip for the default Python 3.9
+
 sudo dnf install -y python3-pip
 
 # Verify the installation

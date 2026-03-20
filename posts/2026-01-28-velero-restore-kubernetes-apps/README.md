@@ -47,6 +47,7 @@ Start with fundamental restore commands that cover common scenarios.
 
 ```bash
 # List available backups to find the one you need
+
 velero backup get
 
 # View details of a specific backup
@@ -210,7 +211,7 @@ velero restore create mapped-restore \
     --storage-class-mappings "aws-ebs-gp2:azure-disk-premium,aws-efs:azure-file"
 ```
 
-## Resource Conflict Resolution
+Resource Conflict Resolution
 
 When restoring to a cluster with existing resources, you need a strategy for handling conflicts.
 

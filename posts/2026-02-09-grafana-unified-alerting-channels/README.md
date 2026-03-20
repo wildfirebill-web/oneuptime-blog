@@ -32,6 +32,7 @@ Configure in Grafana deployment:
 
 ```yaml
 # grafana-values.yaml (for kube-prometheus-stack)
+
 grafana:
   enabled: true
 

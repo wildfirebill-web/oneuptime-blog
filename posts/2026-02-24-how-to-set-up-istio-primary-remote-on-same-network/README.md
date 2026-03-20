@@ -84,6 +84,7 @@ The primary cluster configuration needs to make Istiod discoverable to the remot
 
 ```yaml
 # cluster1-primary.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

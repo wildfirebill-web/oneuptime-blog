@@ -31,6 +31,7 @@ Before troubleshooting SELinux, confirm it is actually causing the issue. Tempor
 
 ```bash
 # Switch to permissive mode - SELinux logs denials but does not enforce them
+
 sudo setenforce 0
 ```
 

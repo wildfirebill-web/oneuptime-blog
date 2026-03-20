@@ -33,6 +33,7 @@ Verify the setup is working.
 
 ```bash
 # Check that the Wasm runtime is available
+
 docker info | grep -i wasm
 
 # Run a test Wasm container

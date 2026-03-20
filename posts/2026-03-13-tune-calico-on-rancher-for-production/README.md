@@ -30,6 +30,7 @@ Before tuning, inspect the existing Calico setup to understand the baseline conf
 
 ```bash
 # Check current Calico version and installation mode
+
 kubectl get pods -n calico-system -o wide
 
 # View the current FelixConfiguration

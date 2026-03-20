@@ -33,6 +33,7 @@ For databases, static huge pages are almost always the right choice. THP can cau
 
 ```bash
 # View current huge page configuration
+
 grep Huge /proc/meminfo
 
 # Sample output:

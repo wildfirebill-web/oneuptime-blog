@@ -54,6 +54,7 @@ The foundation of gRPC load balancing in Envoy is proper HTTP/2 configuration. B
 
 ```yaml
 # envoy.yaml - Basic HTTP/2 configuration for gRPC
+
 # This configuration sets up Envoy to accept gRPC connections on port 8080
 # and forward them to backend services
 

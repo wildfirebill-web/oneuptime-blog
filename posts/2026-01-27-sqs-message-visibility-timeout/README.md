@@ -49,6 +49,7 @@ Consider these factors:
 
 ```python
 # Example calculation
+
 average_processing_time = 10  # seconds
 safety_multiplier = 6
 visibility_timeout = average_processing_time * safety_multiplier  # 60 seconds

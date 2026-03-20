@@ -14,6 +14,7 @@ Cilium uses eBPF programs attached to network interfaces to implement the Kubern
 
 ```bash
 # Install Cilium with full eBPF mode and IPv6
+
 helm repo add cilium https://helm.cilium.io/
 helm install cilium cilium/cilium \
   --namespace kube-system \
@@ -58,7 +59,7 @@ cilium monitor --type trace --from-ip "fd00:10::1" --to-ip "fd00:10::2"
 
 ```bash
 # Enable XDP acceleration (requires supported NIC)
-# XDP runs before the kernel network stack — fastest possible path
+# XDP runs before the kernel network stack - fastest possible path
 
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \

@@ -16,6 +16,7 @@ The most basic network check is finding out what IP addresses your servers have.
 
 ```bash
 # Get all IPv4 addresses using Ansible facts
+
 ansible all -m setup -a "filter=ansible_all_ipv4_addresses"
 ```
 

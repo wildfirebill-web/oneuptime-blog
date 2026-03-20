@@ -47,6 +47,7 @@ import time
 import numpy as np
 
 # Create a registry for ML metrics
+
 ml_registry = CollectorRegistry()
 
 # Prediction volume and latency

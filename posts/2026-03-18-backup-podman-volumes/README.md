@@ -103,6 +103,7 @@ For databases, use the database's own dump utility instead of copying raw files:
 
 ```bash
 # PostgreSQL
+
 podman exec postgres-db pg_dump -U postgres mydb > /backups/mydb-$(date +%Y%m%d-%H%M%S).sql
 
 # MySQL/MariaDB

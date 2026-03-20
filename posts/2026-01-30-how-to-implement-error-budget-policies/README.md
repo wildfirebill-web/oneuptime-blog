@@ -38,6 +38,7 @@ class ErrorBudget:
         }
 
 # Example: 99.9% SLO over 30 days
+
 budget = ErrorBudget(slo_target=0.999, window_days=30)
 status = budget.remaining_budget(consumed_seconds=1200)  # 20 minutes consumed
 print(f"Budget remaining: {status['remaining_percentage']:.1f}%")

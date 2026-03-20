@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Functions, for Expressions, Collections, Infrastructure
+Tags: OpenTofu, Terraform, Functions, For Expressions, Collections, Infrastructure
 
 Description: Learn how to transform lists of objects into maps using for expressions in OpenTofu, enabling for_each-based resource creation and efficient data lookups.
 
 ## Overview
 
-OpenTofu's `for_each` meta-argument requires a map or set, not a list. When configuration data arrives as a list of objects — from JSON files, variable inputs, or data sources — you need to convert it to a map keyed by a unique identifier. The `for` expression is the primary tool for this transformation.
+OpenTofu's `for_each` meta-argument requires a map or set, not a list. When configuration data arrives as a list of objects - from JSON files, variable inputs, or data sources - you need to convert it to a map keyed by a unique identifier. The `for` expression is the primary tool for this transformation.
 
 ## Basic List-to-Map Conversion
 
 ```hcl
 # Starting data: a list of objects
+
 locals {
   user_list = [
     { username = "alice", role = "admin",     email = "alice@example.com" },

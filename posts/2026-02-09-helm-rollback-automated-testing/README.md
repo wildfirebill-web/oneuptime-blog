@@ -18,6 +18,7 @@ View release history to see available rollback targets.
 
 ```bash
 # Show release history
+
 helm history myapp -n production
 
 # Output shows revisions

@@ -35,6 +35,7 @@ ssh <node-name> "iptables --version && ls -la /usr/sbin/iptables*"
 ```bash
 #!/bin/bash
 # felix-prereqs-check.sh
+
 echo "=== Felix Prerequisites Check ==="
 
 # Check iptables

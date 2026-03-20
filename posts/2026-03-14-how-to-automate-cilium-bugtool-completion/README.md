@@ -31,6 +31,7 @@ This guide covers scripted installation, version-aware regeneration, and CI/CD i
 ```bash
 #!/bin/bash
 # install-bugtool-completions.sh
+
 # Automated installer for cilium-bugtool shell completions
 
 set -euo pipefail

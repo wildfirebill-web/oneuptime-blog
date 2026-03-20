@@ -18,6 +18,7 @@ Cloud9 runs on an EC2 instance (or your own server via SSH) and gives you a full
 
 ```bash
 # Create a Cloud9 environment with an EC2 instance
+
 aws cloud9 create-environment-ec2 \
   --name "dev-environment" \
   --description "Standard development environment" \

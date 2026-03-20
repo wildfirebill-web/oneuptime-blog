@@ -55,6 +55,7 @@ graph TB
 
 ```python
 # local_storage.py
+
 # SQLite-based local storage for edge applications
 
 import sqlite3

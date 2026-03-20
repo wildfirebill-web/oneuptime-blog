@@ -8,7 +8,7 @@ Description: Configure VXLAN to use IP multicast for BUM (Broadcast, Unknown Uni
 
 ## Introduction
 
-VXLAN with multicast underlay uses an IP multicast group to handle BUM traffic â€” broadcasts, unknown unicast, and multicast frames. When a VTEP needs to send a frame but doesn't know the destination VTEP, it sends to the multicast group. All VTEPs subscribed to the group receive the frame and learn the source MAC-to-VTEP mapping.
+VXLAN with multicast underlay uses an IP multicast group to handle BUM traffic - broadcasts, unknown unicast, and multicast frames. When a VTEP needs to send a frame but doesn't know the destination VTEP, it sends to the multicast group. All VTEPs subscribed to the group receive the frame and learn the source MAC-to-VTEP mapping.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ VXLAN with multicast underlay uses an IP multicast group to handle BUM traffic â
 # On all VTEP hosts (each host runs this command)
 
 # Create VXLAN interface with multicast group 239.1.1.1
+
 ip link add vxlan0 type vxlan \
     id 100 \               # VNI
     dstport 4789 \         # UDP port

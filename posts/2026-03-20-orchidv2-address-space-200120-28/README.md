@@ -1,4 +1,4 @@
-# How to Understand the ORCHIDv2 Address Space (2001:20::/28)
+# How to Understand the ORCHIDv2 Address Space (2001:20::/28) - 200120
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,8 +12,8 @@ ORCHIDv2 (Overlay Routable Cryptographic Hash IDentifiers version 2), defined in
 
 ## ORCHIDv2 Structure
 
-```
-2001:20::/28 — ORCHIDv2 prefix
+```text
+2001:20::/28 - ORCHIDv2 prefix
   Prefix: 2001:20:: (28 bits)
   Hash: 100 bits derived from public key/hash input
 
@@ -56,6 +56,7 @@ def generate_orchidv2(public_key: bytes,
     return str(ipaddress.IPv6Address(orchid_int))
 
 # Example
+
 pubkey = os.urandom(32)  # Simulated public key
 orchid = generate_orchidv2(pubkey)
 print(f"ORCHIDv2: {orchid}")

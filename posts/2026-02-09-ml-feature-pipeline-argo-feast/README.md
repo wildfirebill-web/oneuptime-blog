@@ -41,6 +41,7 @@ First, install Feast. We'll deploy the Feast feature server that provides HTTP/g
 
 ```yaml
 # feast-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

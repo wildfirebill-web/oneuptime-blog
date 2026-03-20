@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes Operators, Database, PostgreSQL, MySQL, Operator Pattern
+Tags: Rancher, Kubernetes Operator, Database, PostgreSQL, MySQL, Operator Pattern
 
 Description: Learn how to install and configure Kubernetes database operators in Rancher to automate database provisioning, backups, and failover.
 
 ## Introduction
 
-Kubernetes Operators extend the Kubernetes API with custom resources for managing stateful applications. Database operators automate day-2 operations like backups, failover, scaling, and version upgrades—tasks that are error-prone when done manually.
+Kubernetes Operators extend the Kubernetes API with custom resources for managing stateful applications. Database operators automate day-2 operations like backups, failover, scaling, and version upgrades-tasks that are error-prone when done manually.
 
 ## Popular Database Operators
 
@@ -25,6 +25,7 @@ CloudNativePG is a CNCF sandbox operator for PostgreSQL. Install it cluster-wide
 
 ```bash
 # Add the CloudNativePG repository
+
 helm repo add cnpg https://cloudnative-pg.github.io/charts
 helm repo update
 

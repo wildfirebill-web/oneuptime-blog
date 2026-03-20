@@ -83,6 +83,7 @@ Use caret (the default for `npm install --save`) when:
 
 ```bash
 # npm uses caret by default
+
 npm install express
 # Results in: "express": "^4.18.2"
 ```

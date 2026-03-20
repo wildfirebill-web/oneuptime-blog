@@ -22,6 +22,7 @@ K3s ships with a simple built-in load balancer (klipper-lb/ServiceLB). Disable i
 
 ```bash
 # If installing fresh
+
 curl -sfL https://get.k3s.io | \
   INSTALL_K3S_EXEC="--disable servicelb" \
   sh -

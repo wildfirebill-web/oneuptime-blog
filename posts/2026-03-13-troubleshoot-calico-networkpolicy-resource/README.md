@@ -25,6 +25,7 @@ NetworkPolicy troubleshooting in Calico requires understanding the policy evalua
 
 ```bash
 # Check all policies that apply to the destination pod
+
 kubectl get pod backend -n production --show-labels
 calicoctl get networkpolicies -n production | grep "app == 'backend'"
 

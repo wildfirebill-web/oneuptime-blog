@@ -32,6 +32,7 @@ Create a configuration file that tells the exporter which metrics to expose:
 
 ```yaml
 # jmx-exporter-config.yml
+
 # Configuration for Prometheus JMX Exporter
 lowercaseOutputName: true
 lowercaseOutputLabelNames: true

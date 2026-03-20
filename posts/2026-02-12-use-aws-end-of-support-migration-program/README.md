@@ -58,6 +58,7 @@ Run the discovery tool on your existing server where the application is running.
 
 ```powershell
 # Launch the EMP discovery tool against your application
+
 emp-discovery.exe --application "C:\Program Files\LegacyApp\app.exe" --output "C:\emp-discovery\results"
 
 # Review the captured dependencies

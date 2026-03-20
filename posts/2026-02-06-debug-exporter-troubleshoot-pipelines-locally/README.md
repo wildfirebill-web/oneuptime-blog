@@ -38,6 +38,7 @@ Adding the debug exporter to your collector configuration takes three lines.
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

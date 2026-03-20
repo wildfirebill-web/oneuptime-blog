@@ -44,6 +44,7 @@ Here's a simple failover configuration with primary and backup exporters:
 
 ```yaml
 # Define exporters with different priorities
+
 exporters:
   # Primary exporter - preferred destination
   otlp/primary:

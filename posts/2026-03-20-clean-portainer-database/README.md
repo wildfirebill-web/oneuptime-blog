@@ -16,6 +16,7 @@ Before cleaning Portainer's database, clean up the actual Docker resources:
 
 ```bash
 # See what's consuming space
+
 docker system df
 # Shows:
 # TYPE                TOTAL     ACTIVE    SIZE      RECLAIMABLE
@@ -104,7 +105,7 @@ done
 
 ## Step 4: Compact the boltdb Database
 
-After removing data, the database file doesn't shrink automatically — it needs compaction:
+After removing data, the database file doesn't shrink automatically - it needs compaction:
 
 ```bash
 #!/bin/bash
@@ -208,4 +209,4 @@ fi
 
 ## Conclusion
 
-Portainer database maintenance is a routine task, not a one-time fix. Docker resource cleanup (container prune, image prune, volume prune) is the first step — it removes the actual resources so Portainer's next snapshot reflects a clean state. Removing stale endpoints and inactive stack records via the Portainer API eliminates stale snapshot data. Weekly automated cleanup jobs prevent gradual accumulation. Schedule database compaction monthly or whenever the database grows beyond 200MB to keep Portainer responsive.
+Portainer database maintenance is a routine task, not a one-time fix. Docker resource cleanup (container prune, image prune, volume prune) is the first step - it removes the actual resources so Portainer's next snapshot reflects a clean state. Removing stale endpoints and inactive stack records via the Portainer API eliminates stale snapshot data. Weekly automated cleanup jobs prevent gradual accumulation. Schedule database compaction monthly or whenever the database grows beyond 200MB to keep Portainer responsive.

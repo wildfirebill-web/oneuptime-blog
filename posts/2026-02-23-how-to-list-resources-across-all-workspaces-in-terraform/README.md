@@ -16,6 +16,7 @@ When you run `terraform state list`, you only see resources in the current works
 
 ```bash
 # This only shows resources in the current workspace
+
 terraform state list
 
 # There is no built-in way to do this:

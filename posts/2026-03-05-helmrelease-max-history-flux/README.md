@@ -18,6 +18,7 @@ The `spec.maxHistory` field sets the maximum number of Helm release history entr
 
 ```yaml
 # helmrelease.yaml - HelmRelease with max history configured
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

@@ -16,6 +16,7 @@ The `playbook_dir` variable contains the absolute path to the directory where th
 
 ```yaml
 # /opt/ansible/playbooks/deploy.yml
+
 ---
 - name: Show playbook_dir
   hosts: localhost

@@ -16,6 +16,7 @@ The auth can-i command checks whether a user or service account can perform spec
 
 ```bash
 # Check if you can create deployments
+
 kubectl auth can-i create deployments
 
 # Check if you can delete pods in a namespace

@@ -16,6 +16,7 @@ Start by seeing what the kernel knows about:
 
 ```bash
 # List all network interfaces recognized by the kernel
+
 ip link show
 
 # Alternatively

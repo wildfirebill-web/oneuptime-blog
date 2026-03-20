@@ -100,6 +100,7 @@ scrape_configs:
 
 ```yaml
 # For dynamic target lists, use file-based discovery:
+
 scrape_configs:
   - job_name: 'dynamic_nodes'
     file_sd_configs:
@@ -140,4 +141,4 @@ curl -s "http://10.0.0.5:9090/api/v1/targets?state=unhealthy" | python3 -m json.
 
 ## Conclusion
 
-Prometheus scrape targets using `static_configs` specify IPv4 addresses in `host:port` format. Add metadata labels to group targets by environment, role, and datacenter for Grafana dashboard filtering. Use `file_sd_configs` for dynamic target lists that change without Prometheus restart. Monitor target health at `/api/v1/targets` — unhealthy targets show the last scrape error.
+Prometheus scrape targets using `static_configs` specify IPv4 addresses in `host:port` format. Add metadata labels to group targets by environment, role, and datacenter for Grafana dashboard filtering. Use `file_sd_configs` for dynamic target lists that change without Prometheus restart. Monitor target health at `/api/v1/targets` - unhealthy targets show the last scrape error.

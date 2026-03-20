@@ -23,6 +23,7 @@ This guide covers installing and managing SQL Server on Linux using Ansible.
 
 ```ini
 # inventory/sqlserver.ini
+
 [sqlserver_nodes]
 sql-linux-1 ansible_host=10.0.11.10
 sql-linux-2 ansible_host=10.0.11.11

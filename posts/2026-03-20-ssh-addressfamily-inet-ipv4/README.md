@@ -18,6 +18,7 @@ Edit the user's SSH config to always connect over IPv4.
 # ~/.ssh/config (per-user)
 
 # Force all SSH connections to use IPv4
+
 Host *
     AddressFamily inet
 

@@ -25,6 +25,7 @@ When you read a file, OverlayFS looks in the upper layer first, then falls back 
 
 ```bash
 # Verify the kernel module is available
+
 modinfo overlay
 
 # Load the module if not already loaded

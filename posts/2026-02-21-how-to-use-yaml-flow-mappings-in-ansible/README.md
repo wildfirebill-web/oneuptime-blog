@@ -14,6 +14,7 @@ YAML has two representation styles: block style (the multi-line format you use m
 
 ```yaml
 # Block style mapping (standard Ansible)
+
 user:
   name: deploy
   uid: 1000

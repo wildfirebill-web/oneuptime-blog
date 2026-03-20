@@ -8,7 +8,7 @@ Description: To find the CIDR prefix length for a required number of hosts, calc
 
 ## The Formula
 
-```
+```text
 host_bits = ⌈log₂(required_hosts + 2)⌉
 prefix = 32 - host_bits
 usable_hosts = 2^host_bits - 2
@@ -41,6 +41,7 @@ def prefix_for_hosts(required_hosts: int) -> dict:
     }
 
 # Calculate for common scenarios
+
 scenarios = [2, 5, 14, 25, 50, 100, 200, 500, 1000, 4000, 65000]
 print(f"{'Required':>10} {'host_bits':>10} {'Prefix':>8} {'Usable':>8} {'Waste':>8}")
 print("-" * 52)
@@ -94,7 +95,7 @@ for p in [20, 22, 24, 25, 26, 27, 28, 29, 30]:
 
 ## Key Takeaways
 
-- host_bits = ⌈log₂(needed + 2)⌉ — always add 2 before taking the log.
+- host_bits = ⌈log₂(needed + 2)⌉ - always add 2 before taking the log.
 - prefix = 32 − host_bits.
 - The resulting prefix gives the smallest subnet that fits your requirement.
 - For /31 (RFC 3021 P2P), handle as a special case: 2 hosts with no broadcast.

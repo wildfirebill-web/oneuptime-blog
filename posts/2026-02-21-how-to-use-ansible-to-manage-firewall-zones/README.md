@@ -41,6 +41,7 @@ This playbook sets up firewalld with a secure default configuration:
 
 ```yaml
 # setup_firewalld.yml - Install and configure firewalld
+
 ---
 - name: Set up firewalld
   hosts: all

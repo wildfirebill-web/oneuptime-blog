@@ -26,6 +26,7 @@ First, configure your OTel Collector to write to Kafka:
 
 ```yaml
 # otel-collector.yaml
+
 receivers:
   otlp:
     protocols:

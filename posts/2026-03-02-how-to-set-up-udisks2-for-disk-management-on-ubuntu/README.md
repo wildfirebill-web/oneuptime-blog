@@ -16,6 +16,7 @@ udisks2 is usually installed by default on Ubuntu desktop systems. On server ins
 
 ```bash
 # Update package lists
+
 sudo apt-get update
 
 # Install udisks2 and the command-line interface

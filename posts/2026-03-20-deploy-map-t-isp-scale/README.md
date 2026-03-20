@@ -8,7 +8,7 @@ Description: Deploy MAP-T (Mapping of Address and Port - Translation) at ISP sca
 
 ## What is MAP-T?
 
-MAP-T (RFC 7599) is a stateless IPv4/IPv6 translation mechanism. Unlike DS-Lite or NAT64, MAP-T uses algorithmic address mapping — no per-session state is needed on the ISP side, making it highly scalable.
+MAP-T (RFC 7599) is a stateless IPv4/IPv6 translation mechanism. Unlike DS-Lite or NAT64, MAP-T uses algorithmic address mapping - no per-session state is needed on the ISP side, making it highly scalable.
 
 MAP-T uses a mathematical formula to map an IPv6 subscriber prefix to a shared IPv4 address and port range. Every customer router (CE) derives its IPv4 address and allowed port range from its IPv6 prefix.
 
@@ -21,7 +21,7 @@ MAP-T uses a mathematical formula to map an IPv6 subscriber prefix to a shared I
 
 ## MAP-T Rule Configuration Example
 
-```
+```text
 MAP-T Domain Parameters:
   IPv4 Prefix: 203.0.113.0/24  (256 IPv4 addresses)
   IPv6 Prefix: 2001:db8:map::/48
@@ -40,6 +40,7 @@ The BR handles translation between the MAP-T IPv6 domain and the IPv4 internet:
 
 ```bash
 # Install MAP-T support via Jool (SIIT)
+
 apt install jool-dkms jool-tools
 modprobe jool_siit
 
@@ -67,7 +68,7 @@ ip route add 0.0.0.0/0 dev mapt
 
 For OpenWRT CEes, MAP-T is supported via the `map` package:
 
-```
+```text
 opkg install map
 
 # /etc/config/map

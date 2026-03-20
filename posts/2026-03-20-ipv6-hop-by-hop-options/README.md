@@ -8,13 +8,13 @@ Description: Understand the IPv6 Hop-by-Hop Options extension header, how it is 
 
 ## Introduction
 
-The Hop-by-Hop Options Header (Next Header = 0) is the only IPv6 extension header that must be examined by every router along the path. It carries information that routers need to process before forwarding the packet. In practice, Hop-by-Hop is rare — most packets carry no extension headers at all. When present, the Hop-by-Hop header MUST be the first extension header immediately following the IPv6 base header.
+The Hop-by-Hop Options Header (Next Header = 0) is the only IPv6 extension header that must be examined by every router along the path. It carries information that routers need to process before forwarding the packet. In practice, Hop-by-Hop is rare - most packets carry no extension headers at all. When present, the Hop-by-Hop header MUST be the first extension header immediately following the IPv6 base header.
 
 ## Performance Warning
 
 A critical implementation detail: most modern routers slow-path any packet with a Hop-by-Hop header. While RFC 8200 says routers MUST process it, the hardware fast path typically cannot handle these packets, so they are sent to the router's CPU:
 
-```
+```text
 Normal IPv6 packet → ASIC hardware fast path → line-rate forwarding
 Hop-by-Hop packet → CPU slow path → ~1000x slower
 ```
@@ -23,7 +23,7 @@ This means sending traffic with Hop-by-Hop Options can unintentionally trigger a
 
 ## Header Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -41,7 +41,7 @@ Options must fill to 8-byte boundary (use Pad1/PadN options)
 
 Options within the header use TLV (Type-Length-Value) encoding:
 
-```
+```text
 Option Type (1 byte): Action bits + Option ID
 Option Length (1 byte): Length of the Value field in bytes
 Option Data (variable): The option payload
@@ -68,7 +68,7 @@ Option Type bits:
 
 ## Router Alert Option
 
-The Router Alert option (RFC 2711) signals to routers that they should examine the packet's payload — typically used for RSVP and MLD:
+The Router Alert option (RFC 2711) signals to routers that they should examine the packet's payload - typically used for RSVP and MLD:
 
 ```python
 import struct
@@ -108,6 +108,7 @@ def build_router_alert_option(alert_value: int = 0) -> bytes:
     return header
 
 # Build MLD Router Alert
+
 mld_alert = build_router_alert_option(0)  # 0 = Datagram contains MLD message
 print(f"Router Alert header (hex): {mld_alert.hex()}")
 print(f"Length: {len(mld_alert)} bytes")

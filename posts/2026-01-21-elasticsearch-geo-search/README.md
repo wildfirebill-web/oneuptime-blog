@@ -35,6 +35,7 @@ curl -X PUT "https://localhost:9200/stores" \
 
 ```bash
 # Object format
+
 curl -X PUT "https://localhost:9200/stores/_doc/1" \
   -H "Content-Type: application/json" \
   -u elastic:password \

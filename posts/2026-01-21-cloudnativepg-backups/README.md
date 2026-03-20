@@ -152,6 +152,7 @@ Create GCS credentials:
 
 ```bash
 # Create service account key in GCP
+
 gcloud iam service-accounts keys create gcs-key.json \
   --iam-account=postgres-backup@project-id.iam.gserviceaccount.com
 

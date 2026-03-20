@@ -58,12 +58,13 @@ The Application Controller is the primary bottleneck for scalability, as it hand
 | Horizontal Scaling | Sharding by namespace/label | Sharding by cluster |
 | Multi-cluster Model | Per-cluster installation | Centralized hub |
 
-## Resource Configuration
+Resource Configuration
 
 ### Flux CD: Controller Resource Tuning
 
 ```yaml
 # Customize Flux controller resources via Kustomize patches
+
 # File: clusters/production/flux-system/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

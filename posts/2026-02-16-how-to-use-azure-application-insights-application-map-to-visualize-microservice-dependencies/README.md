@@ -87,6 +87,7 @@ For a Python application.
 
 ```python
 # Configure Application Insights with a cloud role name
+
 from opencensus.ext.azure.trace_exporter import AzureExporter
 from opencensus.trace.tracer import Tracer
 

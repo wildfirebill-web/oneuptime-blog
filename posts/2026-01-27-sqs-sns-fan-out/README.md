@@ -32,6 +32,7 @@ The foundation is an SNS topic that SQS queues subscribe to. When a message hits
 
 ```hcl
 # Create the SNS topic that will broadcast messages
+
 resource "aws_sns_topic" "order_events" {
   name = "order-events"
 

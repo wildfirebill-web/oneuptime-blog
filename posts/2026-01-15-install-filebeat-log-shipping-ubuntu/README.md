@@ -38,6 +38,7 @@ Verify your Ubuntu version and available resources before proceeding.
 
 ```bash
 # Check Ubuntu version
+
 lsb_release -a
 
 # Verify available memory
@@ -945,7 +946,7 @@ filebeat.inputs:
     prospector.scanner.check_interval: 5s
 ```
 
-### Resource-Constrained Configuration
+Resource-Constrained Configuration
 
 ```yaml
 # Configuration for minimal resource usage

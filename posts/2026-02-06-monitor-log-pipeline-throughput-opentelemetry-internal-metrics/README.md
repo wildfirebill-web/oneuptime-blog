@@ -40,6 +40,7 @@ These tell you how many log records the collector is ingesting:
 
 ```text
 # Total log records accepted by the receiver
+
 otelcol_receiver_accepted_log_records{receiver="filelog"}
 
 # Total log records refused by the receiver (indicates backpressure)

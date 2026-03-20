@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Application, Debugging, Errors, Linux, Correlation
+Tags: TCP, Application, Debugging, Error, Linux, Correlation
 
 Description: Map TCP-level errors such as resets, timeouts, and retransmissions to application-level failures by correlating kernel statistics with application logs and traces.
 
 ## Introduction
 
-Application failures often manifest as TCP errors underneath. A "connection refused" in your app log corresponds to a TCP RST. A "request timeout" corresponds to TCP retransmits followed by an RTO timeout. Understanding the mapping between TCP errors and application behavior speeds up diagnosis dramatically — instead of guessing, you read what the kernel recorded.
+Application failures often manifest as TCP errors underneath. A "connection refused" in your app log corresponds to a TCP RST. A "request timeout" corresponds to TCP retransmits followed by an RTO timeout. Understanding the mapping between TCP errors and application behavior speeds up diagnosis dramatically - instead of guessing, you read what the kernel recorded.
 
 ## Common Mappings
 
@@ -25,6 +25,7 @@ Application failures often manifest as TCP errors underneath. A "connection refu
 
 ```bash
 # Application logs: find the error and timestamp
+
 journalctl -u myservice --since "10 minutes ago" | grep -E "refused|timeout|reset|error"
 
 # Or directly from app (example: curl)

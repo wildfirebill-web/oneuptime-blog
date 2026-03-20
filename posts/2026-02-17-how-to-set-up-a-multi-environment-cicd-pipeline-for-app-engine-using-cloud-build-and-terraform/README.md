@@ -35,6 +35,7 @@ Create a Terraform configuration that manages your App Engine setup across envir
 
 ```hcl
 # terraform/variables.tf
+
 variable "project_id" {
   description = "GCP project ID"
   type        = string

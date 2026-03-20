@@ -51,6 +51,7 @@ HCX Cloud Manager is automatically available in your GCVE private cloud, but you
 
 ```bash
 # Activate HCX on your GCVE private cloud
+
 gcloud vmware private-clouds hcx activate \
     --project=my-project \
     --private-cloud=my-private-cloud \

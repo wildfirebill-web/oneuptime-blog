@@ -40,6 +40,7 @@ The convention for naming HTTP spans is straightforward. For HTTP server spans, 
 
 ```text
 # Server span names
+
 GET /users/{id}
 POST /orders
 DELETE /sessions/{sessionId}

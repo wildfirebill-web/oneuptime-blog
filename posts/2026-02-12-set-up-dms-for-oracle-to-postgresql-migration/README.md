@@ -42,6 +42,7 @@ Download AWS SCT and create a project with your Oracle source and PostgreSQL tar
 
 ```bash
 # The assessment report tells you what percentage of code converts automatically
+
 # Typical results for Oracle to PostgreSQL:
 # - Table DDL: 90-95% automatic conversion
 # - Simple queries: 85-90% automatic

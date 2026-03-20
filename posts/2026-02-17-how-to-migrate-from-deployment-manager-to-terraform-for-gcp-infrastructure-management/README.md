@@ -49,6 +49,7 @@ Start by cataloging everything Deployment Manager manages.
 
 ```bash
 # List all deployments
+
 gcloud deployment-manager deployments list --project=YOUR_PROJECT_ID
 
 # For each deployment, list its resources

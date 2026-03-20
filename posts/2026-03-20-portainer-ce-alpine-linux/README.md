@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, alpine-linux, docker, installation, lightweight
+Tags: Portainer, Alpine-linux, Docker, Installation, Lightweight
 
 Description: A guide to installing Portainer Community Edition on Alpine Linux with Docker, ideal for minimal, resource-efficient container host deployments.
 
@@ -21,6 +21,7 @@ Alpine Linux is an extremely lightweight distribution popular for container base
 
 ```bash
 # Update package index
+
 apk update && apk upgrade
 
 # Install required tools
@@ -115,7 +116,7 @@ ip addr show eth0 | grep 'inet ' | awk '{print $2}'
 # Navigate to https://<ip>:9443
 ```
 
-## Resource Usage on Alpine
+Resource Usage on Alpine
 
 Alpine's minimal footprint means Portainer runs very efficiently:
 

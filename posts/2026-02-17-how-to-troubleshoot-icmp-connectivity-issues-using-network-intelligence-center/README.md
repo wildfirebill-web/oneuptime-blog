@@ -20,6 +20,7 @@ The first step is to check whether the basic ICMP firewall rule exists:
 
 ```bash
 # Check if any firewall rules allow ICMP in your network
+
 gcloud compute firewall-rules list \
   --filter="network=my-vpc AND allowed[].IPProtocol=icmp" \
   --format="table(name,direction,priority,sourceRanges.list(),allowed[].map().firewall_rule().list())" \

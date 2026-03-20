@@ -380,6 +380,7 @@ The Collector needs to handle the high volume of telemetry that Kafka applicatio
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

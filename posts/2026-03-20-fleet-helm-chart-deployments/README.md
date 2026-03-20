@@ -25,7 +25,7 @@ The most straightforward approach is to include your Helm chart directly in your
 
 ### Repository Structure
 
-```
+```text
 my-helm-app/
 ├── fleet.yaml          # Fleet configuration
 └── chart/
@@ -41,6 +41,7 @@ my-helm-app/
 
 ```yaml
 # fleet.yaml - Deploy a Helm chart from the repository
+
 defaultNamespace: my-helm-app
 
 helm:

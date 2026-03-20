@@ -120,6 +120,7 @@ Configure Kubernetes authentication in Vault:
 
 ```bash
 # Enable Kubernetes auth method
+
 vault auth enable kubernetes
 
 # Configure the auth method

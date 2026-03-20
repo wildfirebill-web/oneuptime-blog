@@ -44,6 +44,7 @@ The simplest sync command pushes a local directory to a blob container:
 
 ```bash
 # Sync a local directory to an Azure Blob container
+
 # Only uploads files that are new or modified
 azcopy sync "./local-data/" "https://mystorageaccount.blob.core.windows.net/mycontainer/"
 ```

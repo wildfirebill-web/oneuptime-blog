@@ -20,6 +20,7 @@ An unused image is one that is not referenced by any container, whether running 
 
 ```bash
 # See which images are actively used by containers
+
 podman ps -a --format "{{.Image}}" | sort -u
 
 # Compare with all local images

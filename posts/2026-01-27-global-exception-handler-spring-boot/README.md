@@ -630,6 +630,7 @@ Enable Spring to throw `NoHandlerFoundException` for undefined endpoints:
 
 ```yaml
 # application.yml
+
 spring:
   mvc:
     throw-exception-if-no-handler-found: true

@@ -31,6 +31,7 @@ tracer = trace.get_tracer("mam.workflow", "1.0.0")
 meter = metrics.get_meter("mam.metrics", "1.0.0")
 
 # Workflow-level metrics
+
 ingest_duration = meter.create_histogram(
     name="mam.ingest.total_duration",
     description="Total time to fully ingest and index an asset",

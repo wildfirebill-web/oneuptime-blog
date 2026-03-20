@@ -1,4 +1,4 @@
-# How to Override Resources in OpenTofu Tests
+# How to Override Resources in OpenTofu Tests - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -45,6 +45,7 @@ Define an override at the top level to apply it to all `run` blocks in the file:
 
 ```hcl
 # Apply this override to every run block
+
 override_resource {
   target = aws_kms_key.encryption
 
@@ -129,4 +130,4 @@ run "uses_correct_ami_from_data_source" {
 
 ## Conclusion
 
-`override_resource` gives you surgical control over which resources return mock values during testing. Combined with `mock_provider` and `override_data`, it enables you to build test scenarios that are both fast and precise—no real cloud calls, but full control over the values that flow between resources.
+`override_resource` gives you surgical control over which resources return mock values during testing. Combined with `mock_provider` and `override_data`, it enables you to build test scenarios that are both fast and precise-no real cloud calls, but full control over the values that flow between resources.

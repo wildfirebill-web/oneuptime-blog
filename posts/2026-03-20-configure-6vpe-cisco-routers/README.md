@@ -12,7 +12,7 @@ Description: Configure 6VPE (IPv6 VPN Provider Edge) on Cisco IOS and IOS XE rou
 
 ## 6VPE Configuration on PE Router
 
-```
+```bash
 ! PE1 - VRF Definition for Customer A (IPv6 VPN)
 vrf definition CUSTOMER-A
  rd 65000:100
@@ -39,7 +39,7 @@ vrf definition CUSTOMER-B
 
 ## CE-PE Interface Configuration
 
-```
+```text
 ! PE1 - CE-facing interface for Customer A
 interface GigabitEthernet0/1
  description Customer-A-CE-Site1
@@ -59,7 +59,7 @@ interface GigabitEthernet0/2
 
 ## MP-BGP VPNv6 Address Family
 
-```
+```text
 ! PE1 - MP-BGP for 6VPE
 router bgp 65000
  bgp router-id 10.0.0.1
@@ -94,7 +94,7 @@ router bgp 65000
 
 ## CE Router Configuration
 
-```
+```text
 ! Customer A CE1 Router
 interface GigabitEthernet0/0
  description To PE1
@@ -117,7 +117,7 @@ router bgp 65001
 
 ## Verify 6VPE Operation
 
-```
+```text
 ! Check VPNv6 BGP table
 show bgp vpnv6 unicast all summary
 ! Should show PE2 iBGP peer established
@@ -150,7 +150,7 @@ ping vrf CUSTOMER-A ipv6 2001:db8:cust-b-site1::10
 
 ## Route Distinguisher Best Practices
 
-```
+```text
 RD Allocation Strategies:
 
 Strategy 1: AS:site-id

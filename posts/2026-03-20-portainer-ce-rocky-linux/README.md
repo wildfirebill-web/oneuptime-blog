@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, rocky-linux, docker, installation, rhel-compatible
+Tags: Portainer, Rocky-linux, Docker, Installation, Rhel-compatible
 
 Description: A step-by-step guide to installing Portainer Community Edition on Rocky Linux 8 and 9 with Docker, the recommended CentOS replacement for enterprise environments.
 
@@ -26,6 +26,7 @@ sudo dnf update -y
 
 ```bash
 # Remove any conflicting packages
+
 sudo dnf remove -y docker docker-common docker-selinux \
   docker-engine podman runc 2>/dev/null
 
@@ -156,4 +157,4 @@ sudo systemctl restart docker
 
 ## Conclusion
 
-Rocky Linux is an excellent CentOS replacement for enterprise Portainer deployments. Its binary compatibility with RHEL ensures that enterprise software designed for RHEL works without modification. The SELinux enforcement requires using `:z` volume labels, and firewalld needs explicit port rules — both are standard enterprise Linux practices. Rocky Linux's 10-year support lifecycle makes it a stable foundation for production Portainer deployments.
+Rocky Linux is an excellent CentOS replacement for enterprise Portainer deployments. Its binary compatibility with RHEL ensures that enterprise software designed for RHEL works without modification. The SELinux enforcement requires using `:z` volume labels, and firewalld needs explicit port rules - both are standard enterprise Linux practices. Rocky Linux's 10-year support lifecycle makes it a stable foundation for production Portainer deployments.

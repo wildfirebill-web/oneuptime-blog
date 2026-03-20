@@ -63,6 +63,7 @@ Before scaling, measure current throughput and identify bottlenecks:
 
 ```bash
 # Check connector lag
+
 curl -s http://localhost:8083/connectors/inventory-connector/status | jq '.tasks[0]'
 
 # Monitor events per second
@@ -680,7 +681,7 @@ done
 4. **Plan for failure** - ensure HA at each layer
 5. **Document configuration** - track all scaling changes
 
-### Resource Planning
+Resource Planning
 
 | Throughput | Connect Workers | Memory per Worker | Tasks |
 |------------|-----------------|-------------------|-------|

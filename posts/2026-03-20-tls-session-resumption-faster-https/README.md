@@ -25,6 +25,7 @@ TLS 1.3 uses PSK (Pre-Shared Key) resumption, which supersedes both mechanisms.
 # /etc/nginx/conf.d/ssl.conf or server block
 
 # Shared SSL session cache (10MB ≈ ~40,000 sessions)
+
 ssl_session_cache   shared:SSL:10m;
 
 # Session timeout - how long to keep session parameters (default: 5m)
@@ -34,7 +35,7 @@ ssl_session_timeout 1d;   # 1 day for returning visitors
 ssl_session_tickets off;
 ```
 
-The `shared` keyword makes the cache shared across all worker processes—essential for multi-worker Nginx deployments.
+The `shared` keyword makes the cache shared across all worker processes-essential for multi-worker Nginx deployments.
 
 ## Step 2: Configure Session Tickets (Optional)
 
@@ -126,7 +127,7 @@ In your application, reject non-idempotent requests if `Early-Data: 1` is presen
 
 Estimate the cache size needed:
 
-```
+```text
 Cache entries needed = (peak concurrent sessions) * (session duration in seconds / session timeout)
 Memory per session ≈ 256 bytes
 10MB cache ≈ 40,000 sessions

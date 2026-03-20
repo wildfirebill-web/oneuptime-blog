@@ -12,6 +12,7 @@ Libreswan is the IPsec implementation included in Red Hat Enterprise Linux, Fedo
 
 ```bash
 # RHEL/CentOS/Fedora
+
 sudo dnf install libreswan
 
 # Debian/Ubuntu (less common)

@@ -31,6 +31,7 @@ Start by listing the Python modules available in your RHEL repositories.
 
 ```bash
 # List all available Python module streams
+
 sudo dnf module list python*
 
 # Check what Python packages are already installed

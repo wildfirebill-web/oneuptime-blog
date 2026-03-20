@@ -34,6 +34,7 @@ The easiest way to install `talosctl` on macOS is through Homebrew.
 
 ```bash
 # Add the Sidero Labs tap
+
 brew install siderolabs/tap/talosctl
 ```
 

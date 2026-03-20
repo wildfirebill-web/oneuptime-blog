@@ -14,6 +14,7 @@ A TCP RST (Reset) packet immediately terminates a connection, with no graceful s
 
 ```bash
 # Capture all RST packets
+
 tcpdump -i eth0 -n 'tcp[tcpflags] & tcp-rst != 0'
 
 # Capture RSTs for a specific destination
@@ -55,7 +56,7 @@ ss -tlnp | grep ":8080"
 
 # Check connection tracking timeout values
 sysctl net.ipv4.netfilter.ip_conntrack_tcp_timeout_established
-# Default: 432000 (5 days) — if lower, connections may be timing out
+# Default: 432000 (5 days) - if lower, connections may be timing out
 
 # Adjust if too low
 sysctl -w net.ipv4.netfilter.ip_conntrack_tcp_timeout_established=86400
@@ -82,7 +83,7 @@ sysctl -w net.ipv4.tcp_keepalive_probes=6     # Give up after 6 failures
 
 ```bash
 # Application calls close() with SO_LINGER set to 0 (abortive close)
-# Sends RST instead of FIN — intentional but may confuse other end
+# Sends RST instead of FIN - intentional but may confuse other end
 
 # In Python:
 import socket
@@ -96,10 +97,10 @@ s.close()  # This sends RST
 
 When examining a pcap in Wireshark:
 1. Filter: `tcp.flags.reset == 1`
-2. Look at the packet BEFORE the RST — what was the last normal packet?
+2. Look at the packet BEFORE the RST - what was the last normal packet?
 3. Check if the RST sequence number is within the valid window (legitimate RST)
-4. If RST has seq=0 — it's likely from a firewall/IDS
+4. If RST has seq=0 - it's likely from a firewall/IDS
 
 ## Conclusion
 
-TCP RSTs terminate connections abruptly and the source IP tells you who is responsible. RSTs from the server indicate application rejection or port closure. RSTs from intermediate devices (firewall, LB, NAT) indicate idle timeouts or policy drops. RSTs from your own host indicate local kernel or application issues. Packet captures are essential — RSTs are not logged by default.
+TCP RSTs terminate connections abruptly and the source IP tells you who is responsible. RSTs from the server indicate application rejection or port closure. RSTs from intermediate devices (firewall, LB, NAT) indicate idle timeouts or policy drops. RSTs from your own host indicate local kernel or application issues. Packet captures are essential - RSTs are not logged by default.

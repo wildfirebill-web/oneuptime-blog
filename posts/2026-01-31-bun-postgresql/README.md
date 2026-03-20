@@ -518,6 +518,7 @@ dbmate is a database-agnostic migration tool that works well with any runtime.
 
 ```bash
 # Install dbmate (on macOS)
+
 brew install dbmate
 
 # Create a new migration

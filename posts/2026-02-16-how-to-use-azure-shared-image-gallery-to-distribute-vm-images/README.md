@@ -28,6 +28,7 @@ Start by creating the gallery resource:
 
 ```bash
 # Create a resource group for the gallery
+
 az group create --name imageGalleryRG --location eastus
 
 # Create the gallery

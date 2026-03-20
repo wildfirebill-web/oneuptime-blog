@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netstat, IPv4, Connections, Diagnostics
+Tags: Windows, Networking, netstat, IPv4, Connection, Diagnostics
 
 Description: Use netstat on Windows to display active IPv4 TCP connections, listening ports, process associations, and connection state information for network troubleshooting.
 
@@ -92,6 +92,7 @@ netstat -s -p udp
 
 ```powershell
 # Get all TCP connections with process names
+
 Get-NetTCPConnection | Select-Object LocalAddress, LocalPort, RemoteAddress, RemotePort, State, OwningProcess |
     Sort-Object LocalPort | Format-Table -AutoSize
 
@@ -114,4 +115,4 @@ Get-NetTCPConnection -State Listen |
 
 ## Conclusion
 
-`netstat -ano` is the most practical netstat command — it shows all connections with ports and PIDs numerically. Combine with `tasklist | findstr <PID>` to identify which application owns a connection. Use PowerShell's `Get-NetTCPConnection` for richer, filterable output.
+`netstat -ano` is the most practical netstat command - it shows all connections with ports and PIDs numerically. Combine with `tasklist | findstr <PID>` to identify which application owns a connection. Use PowerShell's `Get-NetTCPConnection` for richer, filterable output.

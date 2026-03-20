@@ -49,6 +49,7 @@ The K3s server acts as the control plane and can also run workloads. Start with 
 
 ```bash
 # Download and install K3s with a single command
+
 # The INSTALL_K3S_EXEC flag customizes the installation
 curl -sfL https://get.k3s.io | sh -
 

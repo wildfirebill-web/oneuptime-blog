@@ -290,6 +290,7 @@ A typical progressive rollout changes weights in steps. Here's a script to autom
 #!/bin/bash
 
 # Progressive rollout: 5% -> 25% -> 50% -> 75% -> 100%
+
 STEPS=(5 25 50 75 100)
 
 for WEIGHT in "${STEPS[@]}"; do

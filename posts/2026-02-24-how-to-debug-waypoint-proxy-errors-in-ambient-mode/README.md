@@ -29,6 +29,7 @@ First, make sure you know how to deploy one correctly:
 
 ```bash
 # Deploy a waypoint for a namespace
+
 istioctl waypoint apply --namespace my-app
 
 # Verify it was created

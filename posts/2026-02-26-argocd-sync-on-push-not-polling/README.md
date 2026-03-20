@@ -74,6 +74,7 @@ data:
 
 ```bash
 # Apply the configuration
+
 kubectl apply -f argocd-cm.yaml
 
 # Restart the API server to pick up the new secret

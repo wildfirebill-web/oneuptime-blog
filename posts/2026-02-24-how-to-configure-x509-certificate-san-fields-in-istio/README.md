@@ -212,6 +212,7 @@ Check the certificate on a specific connection:
 
 ```bash
 # Get the certificate from a running connection
+
 kubectl exec <pod-name> -c istio-proxy -- \
   openssl s_client -connect <target-service>:443 -showcerts 2>/dev/null | \
   openssl x509 -text -noout | grep -A 5 "Subject Alternative Name"

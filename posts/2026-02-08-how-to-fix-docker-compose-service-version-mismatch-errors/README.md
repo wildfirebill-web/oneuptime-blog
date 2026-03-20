@@ -20,6 +20,7 @@ Check your currently installed versions:
 
 ```bash
 # Check Docker Compose V2 (plugin version)
+
 docker compose version
 
 # Check Docker Compose V1 (standalone, if installed)

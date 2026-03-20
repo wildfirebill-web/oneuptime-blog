@@ -20,6 +20,7 @@ Learn how to use OpenID Connect for keyless cloud authentication in GitHub Actio
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

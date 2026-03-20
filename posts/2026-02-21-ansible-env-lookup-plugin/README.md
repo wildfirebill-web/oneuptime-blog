@@ -26,6 +26,7 @@ Here is the most straightforward use case: reading an environment variable and u
 
 ```yaml
 # basic_env.yml - Read environment variables and use in tasks
+
 ---
 - name: Use environment variables in playbook
   hosts: all

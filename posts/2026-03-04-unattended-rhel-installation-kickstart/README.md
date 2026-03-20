@@ -33,6 +33,7 @@ A Kickstart file is a plain text file with directives organized into sections. L
 
 ```bash
 # kickstart.cfg - Unattended RHEL Server Installation
+
 # This file automates a full RHEL minimal server setup
 
 # Use text mode installer (no GUI needed for unattended install)

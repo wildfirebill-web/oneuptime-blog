@@ -25,6 +25,7 @@ With the `dir` backend, snapshots are full copies (rsync-based), which are slowe
 
 ```bash
 # Basic snapshot (container can be running or stopped)
+
 lxc snapshot mycontainer
 
 # LXD assigns an auto-generated name: snap0, snap1, snap2...

@@ -20,6 +20,7 @@ When you create a Google-managed SSL certificate and attach it to a load balance
 
 ```bash
 # Check the certificate status
+
 gcloud compute ssl-certificates describe my-cert \
     --global \
     --format="yaml(managed)"

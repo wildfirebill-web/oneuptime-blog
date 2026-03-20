@@ -30,6 +30,7 @@ Here is how to create a Private DNS Zone and link it to a virtual network.
 
 ```bash
 # Create a Private DNS Zone for Azure Storage blob private endpoints
+
 az network private-dns zone create \
   --resource-group rg-networking \
   --name "privatelink.blob.core.windows.net"

@@ -18,6 +18,7 @@ The simplest way to force reconciliation is with the Flux CLI.
 
 ```bash
 # Force reconcile a HelmRelease
+
 flux reconcile helmrelease my-app -n default
 ```
 

@@ -16,6 +16,7 @@ Unlike standard fact gathering (which runs the setup module), package informatio
 
 ```yaml
 # basic-package-facts.yml
+
 # Gathers and displays package information
 ---
 - name: Gather package facts

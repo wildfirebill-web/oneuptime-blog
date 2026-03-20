@@ -20,6 +20,7 @@ Before starting, verify your environment:
 
 ```bash
 # Confirm you are on s390x
+
 uname -m
 # Expected output: s390x
 

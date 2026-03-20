@@ -23,6 +23,7 @@ First, gather NeuVector's SAML service provider information:
 
 ```bash
 # NeuVector SAML Service Provider details
+
 # These values are needed when configuring your IdP:
 
 Entity ID (Audience URI): https://neuvector.company.com:8443
@@ -39,14 +40,14 @@ ACS URL (Reply URL): https://neuvector.company.com:8443/v1/token_auth_server/sam
 4. Select **SAML 2.0**
 5. Configure the app:
 
-```
+```text
 App name: NeuVector Security Platform
 App logo: (upload NeuVector logo)
 ```
 
 6. In SAML Settings:
 
-```
+```text
 Single Sign On URL (ACS URL): https://neuvector.company.com:8443/v1/token_auth_server/saml
 Audience URI (SP Entity ID): https://neuvector.company.com:8443
 Name ID format: EmailAddress
@@ -136,7 +137,7 @@ In Azure Portal:
 4. Go to **Single sign-on** > **SAML**
 5. Configure Basic SAML Configuration:
 
-```
+```text
 Identifier (Entity ID): https://neuvector.company.com:8443
 Reply URL (ACS URL): https://neuvector.company.com:8443/v1/token_auth_server/saml
 Sign on URL: https://neuvector.company.com:8443
@@ -144,7 +145,7 @@ Sign on URL: https://neuvector.company.com:8443
 
 6. Configure User Attributes & Claims:
 
-```
+```text
 Unique User Identifier: user.mail
 Additional claims:
 - username: user.userprincipalname

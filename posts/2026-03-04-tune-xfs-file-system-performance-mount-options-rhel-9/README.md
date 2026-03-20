@@ -244,6 +244,7 @@ Always benchmark before and after tuning to verify improvements:
 sudo dnf install fio -y
 
 # Sequential write test
+
 sudo fio --name=seq_write --directory=/data --rw=write --bs=1M \
   --size=2G --numjobs=1 --runtime=30 --time_based --group_reporting
 

@@ -31,7 +31,7 @@ This guide provides systematic approaches to diagnose and resolve cilium-bugtool
 
 Start by checking whether completions are loaded:
 
-\`\`\`bash
+```bash
 ## Bash: check if completion function exists
 complete -p cilium-bugtool 2>/dev/null || echo "No completion registered"
 
@@ -42,22 +42,22 @@ done
 
 ## Fish: check completion file
 ls ~/.config/fish/completions/cilium-bugtool.fish 2>/dev/null || echo "Not found"
-\`\`\`
+```
 
 ### Fixing Stale Cache (Zsh)
 
-\`\`\`bash
+```bash
 ## Remove zsh completion cache and rebuild
 rm -f ~/.zcompdump*
 autoload -Uz compinit && compinit
 
 ## Verify after rebuild
 echo \$_comps[cilium-bugtool]
-\`\`\`
+```
 
 ### Fixing Bash Completion Not Loading
 
-\`\`\`bash
+```bash
 ## Check if bash-completion is installed
 pkg-config --exists bash-completion 2>/dev/null && echo "Installed" || echo "Not installed"
 
@@ -67,11 +67,11 @@ ls /etc/bash_completion.d/cilium-bugtool 2>/dev/null
 ## Source manually to test
 source <(cilium-bugtool completion bash)
 cilium-bugtool <TAB>
-\`\`\`
+```
 
 ### Binary Not Found
 
-\`\`\`bash
+```bash
 ## Check if the binary is in PATH
 which cilium-bugtool || echo "Not in PATH"
 
@@ -79,13 +79,14 @@ which cilium-bugtool || echo "Not in PATH"
 CILIUM_POD=\$(kubectl -n kube-system get pods -l k8s-app=cilium   -o jsonpath='{.items[0].metadata.name}')
 
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-bugtool completion bash > /etc/bash_completion.d/cilium-bugtool
-\`\`\`
+```
 
 
 ## Verification
 
 ```bash
 # After applying fixes, verify completions work
+
 rm -f ~/.zcompdump*
 exec \$SHELL
 

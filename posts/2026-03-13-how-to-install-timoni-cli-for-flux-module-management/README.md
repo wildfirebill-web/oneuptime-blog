@@ -106,6 +106,7 @@ Run a comprehensive check:
 timoni version
 
 # Check available commands
+
 timoni --help
 ```
 

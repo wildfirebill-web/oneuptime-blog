@@ -32,6 +32,7 @@ Before applying a fix, confirm the exact nature of the problem through systemati
 
 ```bash
 # Check Cilium status for immediate issues
+
 cilium status --verbose
 
 # Review recent agent logs for error patterns

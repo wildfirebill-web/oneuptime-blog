@@ -20,6 +20,7 @@ Mealie is a self-hosted recipe manager that lets you store recipes, plan meals f
 
 ```yaml
 # docker-compose.yml - Mealie Recipe Manager
+
 version: "3.8"
 
 networks:

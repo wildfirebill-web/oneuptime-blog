@@ -69,6 +69,7 @@ Here is the complete configuration:
 
 ```yaml
 # ConfigMap to enable dynamic distribution
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

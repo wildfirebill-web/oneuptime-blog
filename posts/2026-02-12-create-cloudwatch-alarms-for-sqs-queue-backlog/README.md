@@ -45,6 +45,7 @@ The most straightforward alarm triggers when the number of visible messages exce
 
 ```bash
 # Alarm when queue depth exceeds 1000 messages
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "order-queue-backlog-high" \
   --alarm-description "Order queue has more than 1000 messages waiting" \

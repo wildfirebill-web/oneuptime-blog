@@ -1,8 +1,8 @@
-# How to Use the startswith and endswith Functions in OpenTofu
+# How to Use the startswith and endswith Functions in OpenTofu - Functions
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, startswith, endswith, String Functions, HCL, Infrastructure as Code
+Tags: OpenTofu, Startswith, Endswith, String Functions, HCL, Infrastructure as Code
 
 Description: Learn how to use the startswith and endswith functions in OpenTofu to check whether strings begin or end with specific substrings.
 

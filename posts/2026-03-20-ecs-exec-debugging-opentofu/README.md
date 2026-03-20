@@ -8,13 +8,13 @@ Description: Learn how to enable and use ECS Exec with OpenTofu to run interacti
 
 ---
 
-ECS Exec allows you to run interactive commands directly inside running ECS containers using AWS Systems Manager Session Manager — no SSH, no bastion hosts, no open ports required. This guide shows how to enable it with OpenTofu and use it for debugging.
+ECS Exec allows you to run interactive commands directly inside running ECS containers using AWS Systems Manager Session Manager - no SSH, no bastion hosts, no open ports required. This guide shows how to enable it with OpenTofu and use it for debugging.
 
 ---
 
 ## How ECS Exec Works
 
-```
+```text
 Developer → AWS CLI → SSM Session Manager → ECS Agent → Container
 ```
 
@@ -26,6 +26,7 @@ ECS Exec uses SSM to create a secure channel to the container without any inboun
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "ecs_task" {
   name = "ecs-task-role"
 
@@ -227,10 +228,10 @@ aws ecs describe-services --cluster app-cluster --services app-service \
 
 ## Best Practices
 
-1. **Restrict ECS Exec access with IAM** — use condition keys to limit who can exec into containers
+1. **Restrict ECS Exec access with IAM** - use condition keys to limit who can exec into containers
 2. **Enable audit logging** to S3/CloudWatch for compliance and security review
 3. **Use initProcessEnabled** to prevent zombie processes in the container
-4. **Disable in production** for highly sensitive workloads — use only for debugging
+4. **Disable in production** for highly sensitive workloads - use only for debugging
 5. **Use non-interactive commands** (`--command "ps aux"`) for quick diagnostics without shell access
 
 ---
@@ -241,4 +242,4 @@ ECS Exec provides a secure, auditability-first approach to container debugging. 
 
 ---
 
-*Monitor your ECS containers in production with [OneUptime](https://oneuptime.com) — full-stack observability.*
+*Monitor your ECS containers in production with [OneUptime](https://oneuptime.com) - full-stack observability.*

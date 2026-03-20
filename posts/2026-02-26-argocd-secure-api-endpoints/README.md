@@ -31,6 +31,7 @@ Option 1: ArgoCD handles TLS directly:
 
 ```yaml
 # The ArgoCD server uses TLS by default
+
 # To configure custom certificates:
 apiVersion: v1
 kind: Secret

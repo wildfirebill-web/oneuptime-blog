@@ -53,6 +53,7 @@ Using Microsoft Graph PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Application.ReadWrite.All"
 
 # Search for the application template in the gallery

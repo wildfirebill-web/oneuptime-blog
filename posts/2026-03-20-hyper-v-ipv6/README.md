@@ -14,6 +14,7 @@ Hyper-V on Windows Server supports IPv6 for both host management traffic and vir
 
 ```powershell
 # Create an external virtual switch (bridges to physical NIC)
+
 # IPv6 passes through transparently
 New-VMSwitch -Name "ExternalSwitch" `
     -NetAdapterName "Ethernet" `

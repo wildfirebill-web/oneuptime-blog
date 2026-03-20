@@ -30,6 +30,7 @@ Install the Calico plugin for Neutron on the controller nodes.
 
 ```bash
 # Install the Calico Neutron plugin
+
 pip install networking-calico
 
 # Verify the plugin is installed

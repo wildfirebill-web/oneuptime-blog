@@ -20,6 +20,7 @@ Define port mappings in the Pod spec using `hostPort`.
 
 ```yaml
 # web-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

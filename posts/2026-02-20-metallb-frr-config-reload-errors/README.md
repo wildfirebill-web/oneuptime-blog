@@ -44,6 +44,7 @@ The first sign of a reload error is usually that a new LoadBalancer service does
 
 ```bash
 # Search for FRR reload errors in the speaker logs
+
 # The speaker logs the result of every FRR configuration reload
 kubectl logs -n metallb-system \
   -l component=speaker \

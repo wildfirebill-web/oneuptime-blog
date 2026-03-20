@@ -22,6 +22,7 @@ Before you can publish, you need an Ubuntu One account, which also serves as you
 
 ```bash
 # Log in to the Snap Store
+
 snapcraft login
 
 # Enter your Ubuntu One credentials when prompted

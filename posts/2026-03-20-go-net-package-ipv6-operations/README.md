@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, net package, Networking, Programming
+Tags: Go, IPv6, Net package, Networking, Programming
 
 Description: Use Go's net package for IPv6 address parsing, network operations, and socket creation with practical examples.
 

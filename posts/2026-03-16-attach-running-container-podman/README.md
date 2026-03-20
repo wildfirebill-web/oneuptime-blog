@@ -20,6 +20,7 @@ The key difference between attach and exec:
 
 ```bash
 # exec: Creates a NEW process inside the container
+
 podman exec -it my-app /bin/bash
 
 # attach: Connects to the EXISTING main process (PID 1)

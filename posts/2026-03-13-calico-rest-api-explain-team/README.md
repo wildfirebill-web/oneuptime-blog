@@ -49,6 +49,7 @@ Show the team that `kubectl` and raw REST calls return the same data:
 
 ```bash
 # Start kubectl proxy
+
 kubectl proxy --port=8080 &
 
 # kubectl approach

@@ -24,6 +24,7 @@ Set up namespace structure:
 
 ```bash
 # Create top-level namespaces for teams
+
 vault namespace create team-a
 vault namespace create team-b
 vault namespace create shared

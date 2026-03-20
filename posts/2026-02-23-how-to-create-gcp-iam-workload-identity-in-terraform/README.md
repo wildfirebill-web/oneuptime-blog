@@ -18,6 +18,7 @@ Traditional approaches to authenticating external workloads with GCP involve cre
 
 ```hcl
 # Configure the Google Cloud provider
+
 terraform {
   required_providers {
     google = {

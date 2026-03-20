@@ -404,6 +404,7 @@ spec:
 
 ```bash
 # Port-forward to any Loki component
+
 kubectl port-forward -n loki svc/loki-distributor 3100:3100
 
 # View ring status
@@ -548,7 +549,7 @@ curl -G "http://loki:3100/loki/api/v1/query" \
 - Allows 1 failure with quorum
 - Higher for critical workloads
 
-### Resource Allocation
+Resource Allocation
 
 ```yaml
 # Per component recommendations (3 replicas each)

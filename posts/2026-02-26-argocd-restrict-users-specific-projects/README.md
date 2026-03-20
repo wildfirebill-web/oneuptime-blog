@@ -160,6 +160,7 @@ Restrict production access while keeping dev open:
 
 ```text
 # Full access to dev applications
+
 p, role:developer, applications, *, dev/*, allow
 
 # Read + sync for staging

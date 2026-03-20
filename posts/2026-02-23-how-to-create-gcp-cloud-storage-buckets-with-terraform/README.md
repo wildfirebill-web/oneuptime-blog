@@ -45,6 +45,7 @@ The simplest bucket configuration:
 
 ```hcl
 # Basic Cloud Storage bucket
+
 resource "google_storage_bucket" "basic" {
   name     = "${var.project_id}-basic-bucket"
   location = "US"

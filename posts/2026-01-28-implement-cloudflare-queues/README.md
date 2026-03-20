@@ -44,6 +44,7 @@ Set up your project configuration to define a queue:
 
 ```toml
 # wrangler.toml
+
 name = "queue-producer"
 main = "src/producer.ts"
 compatibility_date = "2024-01-01"

@@ -261,6 +261,7 @@ Configure the gRPC server in `application.properties`:
 
 ```properties
 # gRPC server port - Cloud Run requires using the PORT env variable
+
 grpc.server.port=${PORT:9090}
 
 # Enable health service for probes

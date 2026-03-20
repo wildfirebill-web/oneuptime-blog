@@ -162,6 +162,7 @@ The `value` field uses CEL (Common Expression Language). Here are the most usefu
 
 ```yaml
 # HTTP method
+
 value: "request.method"
 
 # Request path (careful - high cardinality!)

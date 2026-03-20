@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Fail2Ban, Security, SSH, NGINX
+Tags: Ubuntu, Fail2Ban, Security, SSH, Nginx
 
 Description: Detailed guide to configuring fail2ban jails on Ubuntu to block brute force attacks on SSH, Apache, and Nginx, including custom filters, ban actions, and monitoring failed attempts.
 
@@ -47,6 +47,7 @@ Create or edit `/etc/fail2ban/jail.local`:
 sudo tee /etc/fail2ban/jail.local << 'EOF'
 [DEFAULT]
 # IP addresses to never ban (space-separated list)
+
 # Add your management IPs here
 ignoreip = 127.0.0.1/8 ::1 192.168.1.0/24
 

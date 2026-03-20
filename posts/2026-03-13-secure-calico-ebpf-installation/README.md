@@ -24,6 +24,7 @@ A security-first eBPF installation establishes: default-deny global network poli
 
 ```bash
 # Audit what the Tigera Operator will do before applying
+
 curl -s https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml | \
   grep -E "apiGroups|resources|verbs" | head -40
 

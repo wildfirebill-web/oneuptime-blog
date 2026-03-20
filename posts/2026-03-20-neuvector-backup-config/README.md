@@ -31,6 +31,7 @@ NeuVector provides a REST API for configuration export:
 
 ```bash
 # Get the NeuVector controller service
+
 kubectl get svc -n cattle-neuvector-system | grep controller
 
 # Port-forward to the REST API
@@ -200,6 +201,6 @@ curl -sk -X POST \
 
 ## Best Practices
 
-- Back up NeuVector configuration before every policy update or NeuVector upgrade — this gives you a rollback point if the new policy causes unexpected behavior.
-- Store backup files in an S3 bucket with versioning enabled — this allows you to restore any historical policy state.
+- Back up NeuVector configuration before every policy update or NeuVector upgrade - this gives you a rollback point if the new policy causes unexpected behavior.
+- Store backup files in an S3 bucket with versioning enabled - this allows you to restore any historical policy state.
 - Test your restore procedure in a staging NeuVector instance regularly to confirm backups are valid and the import process works correctly.

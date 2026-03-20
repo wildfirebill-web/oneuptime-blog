@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, mod_remoteip, IPv4, Logging, Reverse Proxy, X-Forwarded-For
+Tags: Apache, Mod_remoteip, IPv4, Logging, Reverse Proxy, X-Forwarded-For
 
 Description: Configure Apache mod_remoteip to extract the real client IPv4 address from X-Forwarded-For headers when Apache is deployed behind a load balancer or reverse proxy.
 
@@ -14,6 +14,7 @@ When Apache sits behind a load balancer, CDN, or reverse proxy, `%h` in access l
 
 ```bash
 # Enable the module
+
 sudo a2enmod remoteip
 
 # Verify it's loaded
@@ -75,7 +76,7 @@ After enabling mod_remoteip, `%h` (hostname/IP) in log format automatically uses
 ```apache
 # /etc/apache2/conf-available/remoteip.conf
 
-# Standard combined log format — %h now shows real client IP
+# Standard combined log format - %h now shows real client IP
 LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
 
 # Extended format showing both real IP and proxy chain

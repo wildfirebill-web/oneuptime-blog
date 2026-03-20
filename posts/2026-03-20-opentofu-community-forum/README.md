@@ -25,6 +25,7 @@ Key channels:
 
 ```markdown
 # Tips for Slack:
+
 # - Search before asking (use Ctrl+K or /search)
 # - Provide version info and a code snippet when asking for help
 # - Keep discussions in threads to reduce noise
@@ -35,7 +36,7 @@ Key channels:
 
 Use for: Feature brainstorming, long-form discussions, sharing use cases
 
-```
+```text
 https://github.com/opentofu/opentofu/discussions
 ```
 
@@ -74,7 +75,7 @@ resource "aws_s3_bucket" "example" {
 ```
 
 ## The error or behavior I see
-```
+```hcl
 Error: Error creating S3 bucket: BucketAlreadyExists
 │   on main.tf line 1, in resource "aws_s3_bucket" "example":
 │    1: resource "aws_s3_bucket" "example" {
@@ -88,7 +89,7 @@ Error: Error creating S3 bucket: BucketAlreadyExists
 - OpenTofu: 1.9.0
 - AWS Provider: 5.31.0
 - OS: macOS 14.3
-```
+```text
 
 ## Giving Back to the Community
 

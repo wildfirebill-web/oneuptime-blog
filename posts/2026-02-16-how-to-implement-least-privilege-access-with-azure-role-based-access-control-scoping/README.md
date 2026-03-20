@@ -28,6 +28,7 @@ Before you tighten anything, understand what exists today. Pull a list of all cu
 
 ```bash
 # List all role assignments across the subscription
+
 # This shows who has what access and at which scope
 az role assignment list \
   --all \

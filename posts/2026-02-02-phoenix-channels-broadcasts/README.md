@@ -66,6 +66,7 @@ The socket handles the initial WebSocket connection and authentication. Here we 
 
 ```elixir
 # lib/my_app_web/channels/user_socket.ex
+
 defmodule MyAppWeb.UserSocket do
   use Phoenix.Socket
 

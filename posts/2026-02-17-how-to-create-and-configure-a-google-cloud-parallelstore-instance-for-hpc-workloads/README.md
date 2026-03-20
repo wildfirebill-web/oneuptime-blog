@@ -49,6 +49,7 @@ Parallelstore requires Private Service Access on your VPC. Set this up first.
 
 ```bash
 # Enable the Parallelstore API
+
 gcloud services enable parallelstore.googleapis.com
 
 # Allocate an IP range for Private Service Access if you haven't already

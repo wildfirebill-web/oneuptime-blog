@@ -40,6 +40,7 @@ pip install google-auth requests google-api-python-client
 
 ```yaml
 # create-service-account.yml - Create a purpose-specific service account
+
 ---
 - name: Create GCP Service Account
   hosts: localhost

@@ -38,6 +38,7 @@ Open PowerShell as Administrator and verify:
 
 ```powershell
 # Check if virtualization is enabled in BIOS
+
 systeminfo | findstr /i "Hyper-V"
 
 # Or use this command

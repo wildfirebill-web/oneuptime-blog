@@ -72,6 +72,7 @@ For automated deployments and infrastructure-as-code:
 
 ```bash
 # Create a composite index for filtering products by category and sorting by price
+
 gcloud firestore indexes composite create \
     --collection-group=products \
     --field-config=field-path=category,order=ASCENDING \

@@ -14,6 +14,7 @@ Description: Learn how to use the arping utility to test ARP resolution, detect 
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install arping
 
 # RHEL/CentOS
@@ -32,7 +33,7 @@ arping -I eth0 -c 4 192.168.1.1
 
 Sample output:
 
-```
+```text
 ARPING 192.168.1.1 from 192.168.1.10 eth0
 Unicast reply from 192.168.1.1 [aa:bb:cc:dd:ee:ff]  1.23ms
 Unicast reply from 192.168.1.1 [aa:bb:cc:dd:ee:ff]  1.18ms

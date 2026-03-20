@@ -44,6 +44,7 @@ graph TD
 az network nic show --ids /subscriptions/.../networkInterfaces/worker-1-nic \
   --query "enableIPForwarding"
 # If false:
+
 az network nic update --ids /subscriptions/.../networkInterfaces/worker-1-nic \
   --ip-forwarding true
 ```

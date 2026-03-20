@@ -16,6 +16,7 @@ All systems you want to compare must be registered with Red Hat Insights.
 
 ```bash
 # Ensure the insights-client is installed and registered
+
 sudo insights-client --register
 
 # Run a fresh data collection

@@ -57,6 +57,7 @@ The trailing slash on the source matters:
 
 ```bash
 # Copy a directory (contents only)
+
 rsync -av /home/user/documents/ /backup/documents/
 
 # Copy a directory (including the directory itself)

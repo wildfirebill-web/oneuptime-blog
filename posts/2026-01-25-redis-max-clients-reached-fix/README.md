@@ -14,6 +14,7 @@ The "ERR max number of clients reached" error occurs when Redis has reached its 
 
 ```python
 # Error message:
+
 # redis.exceptions.ConnectionError: max number of clients reached
 
 import redis

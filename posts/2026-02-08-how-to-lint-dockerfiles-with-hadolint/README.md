@@ -20,6 +20,7 @@ Install Hadolint on different platforms:
 
 ```bash
 # macOS via Homebrew
+
 brew install hadolint
 
 # Linux - download the binary directly

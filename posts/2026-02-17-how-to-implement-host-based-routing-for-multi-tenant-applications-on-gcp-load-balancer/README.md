@@ -32,6 +32,7 @@ Create separate backend services for different tenant tiers or groupings.
 
 ```bash
 # Create health checks
+
 gcloud compute health-checks create http tenant-hc \
   --port=8080 \
   --request-path=/health \

@@ -27,6 +27,7 @@ Kubernetes secrets are stored in etcd. By default, they are base64-encoded but n
 
 ```yaml
 # encryption-config.yaml
+
 apiVersion: apiserver.config.k8s.io/v1
 kind: EncryptionConfiguration
 resources:

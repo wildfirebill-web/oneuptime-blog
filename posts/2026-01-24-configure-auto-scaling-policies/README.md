@@ -44,6 +44,7 @@ Target tracking is the simplest and most effective policy type. It automatically
 
 ```yaml
 # CloudFormation for EC2 Auto Scaling
+
 Resources:
   WebServerGroup:
     Type: AWS::AutoScaling::AutoScalingGroup

@@ -14,6 +14,7 @@ By default, Portainer binds to all interfaces on port 9000 (HTTP) and 9443 (HTTP
 
 ```bash
 # Default: listens on all interfaces
+
 # HTTP:  0.0.0.0:9000
 # HTTPS: 0.0.0.0:9443
 ```

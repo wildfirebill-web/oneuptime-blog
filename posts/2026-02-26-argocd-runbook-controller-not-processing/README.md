@@ -30,6 +30,7 @@ When the ArgoCD application controller stops processing applications, the entire
 
 ```bash
 # Check if the controller pod is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-application-controller
 
 # Expected output: pod should be Running with 0 restarts

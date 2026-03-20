@@ -8,7 +8,7 @@ Description: Build a self-healing container system that automatically detects an
 
 ## Introduction
 
-A self-healing container system automatically detects unhealthy containers and takes corrective action—restarting, re-deploying, or alerting as appropriate. By combining Docker health checks, restart policies, and the Portainer API, you can build a system that maintains high availability with minimal human intervention.
+A self-healing container system automatically detects unhealthy containers and takes corrective action-restarting, re-deploying, or alerting as appropriate. By combining Docker health checks, restart policies, and the Portainer API, you can build a system that maintains high availability with minimal human intervention.
 
 ## Layer 1: Docker Restart Policies
 
@@ -62,6 +62,7 @@ headers = {"X-API-Key": API_KEY}
 base = f"{PORTAINER_URL}/api/endpoints/{ENDPOINT_ID}/docker"
 
 # Track failure counts and last restart times
+
 failure_counts = defaultdict(int)
 last_restart = {}
 

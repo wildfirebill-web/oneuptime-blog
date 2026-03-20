@@ -20,6 +20,7 @@ The Talos machine configuration controls which DNS servers the node itself uses.
 
 ```yaml
 # talos-dns-patch.yaml
+
 machine:
   network:
     nameservers:

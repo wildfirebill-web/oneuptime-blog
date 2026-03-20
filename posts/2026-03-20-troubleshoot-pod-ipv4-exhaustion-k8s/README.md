@@ -12,6 +12,7 @@ Pod IP exhaustion occurs when all IPv4 addresses in the node's CIDR block (or th
 
 ```bash
 # Pods stuck in ContainerCreating
+
 kubectl get pods --all-namespaces | grep ContainerCreating
 
 # Pod events showing CNI failures
@@ -64,7 +65,7 @@ DATASTORE_TYPE=kubernetes KUBECONFIG=~/.kube/config calicoctl ipam check
 # Check for leaked IPs
 DATASTORE_TYPE=kubernetes KUBECONFIG=~/.kube/config calicoctl ipam show --show-blocks
 
-# Release all leaked IPs (safe to run — only releases IPs not in use)
+# Release all leaked IPs (safe to run - only releases IPs not in use)
 DATASTORE_TYPE=kubernetes KUBECONFIG=~/.kube/config calicoctl ipam release --leaked-ips
 ```
 

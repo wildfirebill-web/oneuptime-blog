@@ -22,6 +22,7 @@ Podman's auto-update feature checks if a newer version of a container's image is
 
 ```bash
 # Check for available updates (dry run)
+
 podman auto-update --dry-run
 
 # Apply updates

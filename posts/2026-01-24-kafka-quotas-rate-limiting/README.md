@@ -70,6 +70,7 @@ User quotas apply to authenticated clients. They are enforced per broker, so the
 BOOTSTRAP="kafka:9092"
 
 # Set producer quota for user 'producer-app' (10 MB/s per broker)
+
 kafka-configs.sh --bootstrap-server $BOOTSTRAP \
     --alter \
     --add-config 'producer_byte_rate=10485760' \

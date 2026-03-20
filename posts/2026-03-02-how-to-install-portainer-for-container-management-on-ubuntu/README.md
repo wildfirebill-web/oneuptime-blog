@@ -20,6 +20,7 @@ Portainer itself runs as a Docker container and manages Docker via the Docker so
 
 ```bash
 # Ensure Docker is installed and running
+
 sudo apt update
 sudo apt install -y docker.io
 

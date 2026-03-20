@@ -109,6 +109,7 @@ module "app_stack" {
 
 ```hcl
 # Single output from all instances
+
 output "all_instance_ids" {
   value = [for m in module.worker : m.instance_id]
 }

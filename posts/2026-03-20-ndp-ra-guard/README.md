@@ -14,7 +14,7 @@ RA Guard is a switch-level security feature that blocks unauthorized Router Adve
 
 Without RA Guard, any host on a subnet can send an RA and become the default router for all other hosts on that segment.
 
-```
+```text
 Rogue RA Attack:
 
 [Legitimate Router]          [Attacker Host]
@@ -35,7 +35,7 @@ Only requires link-local access: any compromised host can do this.
 
 RA Guard operates on managed switches and classifies each port as either a router port or a host port.
 
-```
+```text
 RA Guard Port Classification:
 
 Switch Port Policy:
@@ -61,7 +61,7 @@ drops it if received on a port configured as a host port.
 
 Basic RA Guard only checks the port role. Enhanced RA Guard can also inspect RA content.
 
-```
+```text
 RA Guard Inspection Levels:
 
 Level 1 (Basic):
@@ -84,7 +84,7 @@ Enhanced RA Guard prevents:
 
 ## RA Guard vs SEND Comparison
 
-```
+```text
 Feature Comparison: RA Guard vs SEND
 
 RA Guard:
@@ -133,6 +133,7 @@ Use tcpdump or Wireshark to verify RAs are being dropped on host ports.
 
 ```bash
 # On a host connected to a protected port:
+
 # Run this and connect a rogue RA source on the same segment
 
 # Capture RA messages on the host
@@ -151,7 +152,7 @@ sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 134"
 
 ## Limitations of RA Guard
 
-```
+```text
 RA Guard Limitations:
 
 1. IPv6 Extension Headers (CVE-2011-2176 class):

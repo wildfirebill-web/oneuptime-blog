@@ -35,6 +35,7 @@ graph LR
 
 ```bash
 # Install LlamaIndex with Vertex AI and GCS integrations
+
 pip install llama-index llama-index-llms-vertex llama-index-embeddings-vertex llama-index-readers-google google-cloud-storage google-cloud-aiplatform
 ```
 

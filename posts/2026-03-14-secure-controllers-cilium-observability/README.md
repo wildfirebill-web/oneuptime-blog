@@ -30,6 +30,7 @@ Controller state is accessible through the Cilium agent's API socket and the cil
 
 ```bash
 # Check current RBAC for the Cilium service account
+
 kubectl get clusterrole cilium -o yaml | head -40
 kubectl get clusterrolebinding cilium -o yaml
 

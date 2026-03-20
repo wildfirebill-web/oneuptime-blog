@@ -28,6 +28,7 @@ Prometheus histograms store data in cumulative buckets:
 
 ```promql
 # Example histogram metric
+
 http_request_duration_seconds_bucket{le="0.1"}   1000  # <= 100ms
 http_request_duration_seconds_bucket{le="0.25"}  1200  # <= 250ms
 http_request_duration_seconds_bucket{le="0.5"}   1350  # <= 500ms

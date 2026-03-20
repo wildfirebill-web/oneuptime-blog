@@ -87,6 +87,7 @@ services:
 # schema-registry.properties
 
 # Kafka connection
+
 kafkastore.bootstrap.servers=kafka1:9092,kafka2:9092,kafka3:9092
 kafkastore.topic=_schemas
 kafkastore.topic.replication.factor=3

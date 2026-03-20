@@ -72,6 +72,7 @@ If expect is not installed, install it using the following commands:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install expect

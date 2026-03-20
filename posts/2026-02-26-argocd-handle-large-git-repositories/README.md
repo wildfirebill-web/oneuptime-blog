@@ -64,6 +64,7 @@ If your monorepo contains many applications but each ArgoCD Application only nee
 
 ```yaml
 # ArgoCD Application pointing to a specific subdirectory
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

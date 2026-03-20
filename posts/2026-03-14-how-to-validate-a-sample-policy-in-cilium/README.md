@@ -34,6 +34,7 @@ done
 
 ```bash
 # Check all selected endpoints enforce the policy
+
 kubectl get ciliumendpoints -n default -o json | jq '.items[] | {
   name: .metadata.name,
   ingress: .status.policy.ingress.enforcing,

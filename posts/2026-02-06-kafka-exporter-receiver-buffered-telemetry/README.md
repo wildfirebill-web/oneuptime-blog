@@ -18,6 +18,7 @@ The Kafka exporter lives in the `opentelemetry-collector-contrib` distribution. 
 
 ```yaml
 # producer-collector.yaml
+
 receivers:
   otlp:
     protocols:

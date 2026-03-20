@@ -1,4 +1,4 @@
-# How to Create a Macvlan Network in Portainer
+# How to Create a Macvlan Network in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ Macvlan requires the host interface to be in promiscuous mode:
 
 ```bash
 # Enable promiscuous mode on eth0:
+
 sudo ip link set eth0 promisc on
 
 # Verify:
@@ -63,14 +64,14 @@ sudo systemctl start macvlan-promisc
 2. Click **Add network**.
 3. Configure:
 
-```
+```text
 Name:       macvlan-lan
 Driver:     macvlan
 ```
 
 4. Under **Network configuration**:
 
-```
+```bash
 Subnet:       192.168.1.0/24   (your physical network subnet)
 Gateway:      192.168.1.1      (your router/gateway)
 IP Range:     192.168.1.128/26 (range for Docker containers: .128-.191)
@@ -78,7 +79,7 @@ IP Range:     192.168.1.128/26 (range for Docker containers: .128-.191)
 
 5. Under **Advanced configuration** > **Options**:
 
-```
+```text
 parent: eth0   (the physical network interface)
 ```
 
@@ -200,7 +201,7 @@ curl http://192.168.1.130:8080/health
 
 ## Step 8: Macvlan vs. Bridge: When to Choose
 
-```
+```text
 Use Bridge when:
   - Containers on the same host need to talk to each other
   - External access via port mapping is sufficient
@@ -231,4 +232,4 @@ arp-scan 192.168.1.128-192.168.1.191
 
 ## Conclusion
 
-Macvlan networks in Portainer give containers a first-class presence on your physical network with their own MAC and IP addresses. This is the right choice for containers that need to be reachable directly from the network without port mapping — particularly useful for DNS servers, industrial OPC-UA servers, and network monitoring tools. Remember that the host needs promiscuous mode enabled on the parent interface, and host-to-container communication requires a macvlan sub-interface workaround.
+Macvlan networks in Portainer give containers a first-class presence on your physical network with their own MAC and IP addresses. This is the right choice for containers that need to be reachable directly from the network without port mapping - particularly useful for DNS servers, industrial OPC-UA servers, and network monitoring tools. Remember that the host needs promiscuous mode enabled on the parent interface, and host-to-container communication requires a macvlan sub-interface workaround.

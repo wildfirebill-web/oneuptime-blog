@@ -123,6 +123,7 @@ OneUptime's synthetic monitors can validate DNSSEC responses directly.
 ```text
 Monitor Name: DNSSEC Validation - api.example.com
 Description: Validates DNSSEC chain for production API domain
+
 Check Interval: 5 minutes
 ```
 
@@ -209,6 +210,7 @@ Create a Kubernetes CronJob that validates DNSSEC and reports to OneUptime:
 
 ```yaml
 # dnssec-health-check.yaml
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

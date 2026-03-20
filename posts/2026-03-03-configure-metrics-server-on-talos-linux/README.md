@@ -32,6 +32,7 @@ Additionally, Talos Linux nodes may not have resolvable hostnames in the cluster
 
 ```bash
 # Add the Metrics Server Helm repository
+
 helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
 helm repo update
 ```

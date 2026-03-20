@@ -18,6 +18,7 @@ Ansible ships with modules specifically built for database operations. These are
 
 ```yaml
 # postgres_modules.yml - PostgreSQL management with dedicated modules
+
 ---
 - name: PostgreSQL management
   hosts: db_servers

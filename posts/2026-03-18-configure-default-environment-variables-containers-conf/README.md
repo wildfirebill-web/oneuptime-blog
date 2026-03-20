@@ -20,6 +20,7 @@ Define environment variables that apply to every container.
 
 ```bash
 # Create or update user-level configuration
+
 mkdir -p ~/.config/containers
 
 cat > ~/.config/containers/containers.conf << 'EOF'

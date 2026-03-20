@@ -43,6 +43,7 @@ Each ArgoCD Application maps to one directory:
 
 ```yaml
 # One ArgoCD Application per directory
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

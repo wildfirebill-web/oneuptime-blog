@@ -20,6 +20,7 @@ Podman evaluates each instruction against its cache. If the instruction, base la
 
 ```bash
 # Build an image for the first time (no cache)
+
 podman build -t myapp:latest .
 # Each step shows: --> abc123def456 (newly built)
 

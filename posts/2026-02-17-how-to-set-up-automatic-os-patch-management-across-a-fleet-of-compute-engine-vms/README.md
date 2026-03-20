@@ -18,6 +18,7 @@ OS Patch Management requires the VM Manager (OS Config) agent to be running on y
 
 ```bash
 # Enable the OS Config API
+
 gcloud services enable osconfig.googleapis.com
 ```
 

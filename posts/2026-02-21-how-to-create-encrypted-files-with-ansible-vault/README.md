@@ -29,6 +29,7 @@ The `ansible-vault create` command opens your default editor, lets you type the 
 
 ```bash
 # Create a new encrypted file
+
 ansible-vault create secrets.yml
 ```
 

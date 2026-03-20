@@ -75,6 +75,7 @@ Here is the Dockerfile that builds this into a scratch-based image.
 
 ```dockerfile
 # Stage 1: Build the static binary
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app

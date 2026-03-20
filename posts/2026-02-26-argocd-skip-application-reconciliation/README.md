@@ -26,6 +26,7 @@ The simplest approach is to remove auto-sync from the application. This stops au
 
 ```bash
 # Disable auto-sync using the CLI
+
 argocd app set my-app --sync-policy none
 ```
 

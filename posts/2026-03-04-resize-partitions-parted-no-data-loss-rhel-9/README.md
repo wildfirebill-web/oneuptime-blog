@@ -31,6 +31,7 @@ This is the safer and more common operation.
 
 ```bash
 # See the current partition table and free space
+
 sudo parted /dev/sdb print free
 
 # Check filesystem usage

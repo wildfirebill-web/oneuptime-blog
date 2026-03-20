@@ -32,6 +32,7 @@ sequenceDiagram
 
 ```bash
 # Check if TFO is supported and current setting
+
 sysctl net.ipv4.tcp_fastopen
 
 # Values:
@@ -84,7 +85,7 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 TCP_FASTOPEN_CONNECT = 30
 sock.setsockopt(socket.IPPROTO_TCP, TCP_FASTOPEN_CONNECT, 1)
 
-# Connect and send data — TFO handles the rest
+# Connect and send data - TFO handles the rest
 sock.connect(('192.168.1.100', 80))
 sock.sendall(b'GET / HTTP/1.1\r\nHost: example.com\r\n\r\n')
 ```

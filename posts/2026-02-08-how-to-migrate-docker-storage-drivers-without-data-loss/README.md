@@ -26,6 +26,7 @@ Check your current storage driver:
 
 ```bash
 # Show the current storage driver and Docker root directory
+
 docker info --format '{{.Driver}}'
 docker info --format '{{.DockerRootDir}}'
 

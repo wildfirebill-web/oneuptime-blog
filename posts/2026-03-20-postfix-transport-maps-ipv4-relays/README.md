@@ -14,14 +14,14 @@ Postfix transport maps let you route outbound email for specific recipient domai
 
 Transport maps override Postfix's default routing. Each entry maps a recipient domain or address to a delivery mechanism (transport and optional relay host).
 
-```
+```text
 Format: <pattern>  <transport>:[<nexthop>]
 ```
 
 Common transports:
-- `smtp` — Standard SMTP delivery
-- `lmtp` — Local Mail Transport Protocol
-- `error` — Reject delivery with an error
+- `smtp` - Standard SMTP delivery
+- `lmtp` - Local Mail Transport Protocol
+- `error` - Reject delivery with an error
 
 ## Step 1: Create the Transport Map File
 
@@ -29,6 +29,7 @@ Common transports:
 # /etc/postfix/transport
 
 # Route mail for partner.com through a dedicated IPv4 relay
+
 partner.com       smtp:[10.0.0.50]:25
 
 # Route mail for subsidiary.org through a different relay

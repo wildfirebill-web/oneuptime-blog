@@ -8,7 +8,7 @@ Description: A complete guide to migrating from Portainer 1.x to Portainer 2.x i
 
 ---
 
-Portainer 2.x introduced a redesigned architecture with a new data format, improved RBAC, and the agent-based connection model. Migration from 1.x requires a fresh install—data is not automatically migrated, but the process is well-documented.
+Portainer 2.x introduced a redesigned architecture with a new data format, improved RBAC, and the agent-based connection model. Migration from 1.x requires a fresh install-data is not automatically migrated, but the process is well-documented.
 
 ## Key Differences Between 1.x and 2.x
 
@@ -26,6 +26,7 @@ Before migrating, record your current setup:
 
 ```bash
 # Export the list of endpoints (environments) from Portainer 1.x API
+
 curl -s -X GET \
   http://localhost:9000/api/endpoints \
   -H "Authorization: Bearer <your-1x-jwt-token>" | \

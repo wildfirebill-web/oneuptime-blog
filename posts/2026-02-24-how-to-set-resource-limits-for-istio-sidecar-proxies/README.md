@@ -117,6 +117,7 @@ Before setting limits, measure what your sidecars actually use:
 
 ```bash
 # Get resource usage for all sidecar containers across the cluster
+
 kubectl top pods -n api-services --containers | grep istio-proxy
 
 # Get detailed resource usage for a specific pod

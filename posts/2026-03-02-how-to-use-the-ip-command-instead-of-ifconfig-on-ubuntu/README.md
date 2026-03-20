@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Ip Command, Ifconfig, Linux
+Tags: Ubuntu, Networking, ip command, ifconfig, Linux
 
 Description: A complete reference for replacing deprecated ifconfig commands with their modern ip command equivalents on Ubuntu systems.
 
@@ -38,6 +38,7 @@ One of the most common uses of `ifconfig` is listing network interfaces and thei
 
 ```bash
 # ifconfig equivalent - show all interfaces
+
 ifconfig -a
 
 # ip equivalent - show all interfaces with addresses

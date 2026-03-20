@@ -24,6 +24,7 @@ First, create a GPG key pair dedicated to container image signing.
 
 ```bash
 # Generate a GPG key for container signing
+
 gpg --batch --gen-key << 'EOF'
 %no-protection
 Key-Type: RSA

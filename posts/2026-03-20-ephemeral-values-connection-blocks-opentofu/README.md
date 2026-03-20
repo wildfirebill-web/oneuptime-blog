@@ -1,4 +1,4 @@
-# How to Use Ephemeral Values in Connection Blocks in OpenTofu
+# How to Use Ephemeral Values in Connection Blocks in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Connection blocks in OpenTofu define how provisioners connect to remote machines
 
 ```hcl
 # Generate an ephemeral SSH key for provisioning
+
 ephemeral "tls_private_key" "provisioner" {
   algorithm = "ED25519"
 }
@@ -228,4 +229,4 @@ resource "terraform_data" "configure_instance" {
 
 ## Conclusion
 
-Using ephemeral values in connection blocks prevents SSH private keys and passwords from being written to the state file — a critical security improvement. Every time OpenTofu runs, it fetches fresh credentials from your secrets management system, uses them for provisioning, and discards them. This approach works well with secrets rotation, as each deployment automatically picks up current credentials. Combine ephemeral SSH keys with short-lived key pairs (deleted after provisioning) for maximum security in production environments.
+Using ephemeral values in connection blocks prevents SSH private keys and passwords from being written to the state file - a critical security improvement. Every time OpenTofu runs, it fetches fresh credentials from your secrets management system, uses them for provisioning, and discards them. This approach works well with secrets rotation, as each deployment automatically picks up current credentials. Combine ephemeral SSH keys with short-lived key pairs (deleted after provisioning) for maximum security in production environments.

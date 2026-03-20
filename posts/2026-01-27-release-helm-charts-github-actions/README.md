@@ -30,6 +30,7 @@ Start by validating chart syntax and best practices:
 
 ```yaml
 # .github/workflows/helm-lint.yml
+
 name: Lint Helm Charts
 
 on:

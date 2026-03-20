@@ -16,6 +16,7 @@ Prefix your pattern with a tilde `~` to tell Ansible it is a regex:
 
 ```bash
 # Match hosts whose names start with "web"
+
 ansible '~^web' -i inventory.ini -m ping
 
 # Match hosts whose names end with ".example.com"

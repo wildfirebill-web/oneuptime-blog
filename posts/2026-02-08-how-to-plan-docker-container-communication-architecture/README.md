@@ -34,6 +34,7 @@ Demonstrate DNS-based container communication:
 
 ```bash
 # Create a custom network
+
 docker network create app-net
 
 # Start a web server

@@ -65,6 +65,7 @@ Before configuring profiles, verify AppArmor is running:
 
 ```bash
 # Check if AppArmor is enabled in the kernel
+
 cat /sys/module/apparmor/parameters/enabled
 # Output: Y (if enabled)
 

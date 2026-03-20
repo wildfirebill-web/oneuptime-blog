@@ -50,6 +50,7 @@ Navigate to Certificates & secrets > New client secret.
 
 ```text
 Description: Grafana OAuth Secret
+
 Expires: 24 months (or per your security policy)
 ```
 
@@ -81,6 +82,7 @@ Navigate to Token configuration > Add groups claim.
 
 ```yaml
 # Select these options:
+
 Group types: Security groups
 ID token claims:
   - Group ID

@@ -280,6 +280,7 @@ Track how your error handling is performing:
 
 ```bash
 # Check retry stats
+
 kubectl exec <pod-name> -c istio-proxy -- \
   curl -s localhost:15000/stats | grep retry
 

@@ -46,6 +46,7 @@ model = Model(
 )
 
 # Deploy as a real-time endpoint
+
 predictor = model.deploy(
     initial_instance_count=2,      # Two instances for high availability
     instance_type='ml.m5.xlarge',

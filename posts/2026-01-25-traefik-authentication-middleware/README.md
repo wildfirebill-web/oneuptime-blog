@@ -34,6 +34,7 @@ Traefik requires passwords in htpasswd format. Use the htpasswd utility or an on
 
 ```bash
 # Install htpasswd (part of apache2-utils on Debian/Ubuntu)
+
 sudo apt-get install apache2-utils
 
 # Generate a password hash for user "admin"

@@ -28,6 +28,7 @@ Set up monitoring for these sources. A simple approach:
 
 ```bash
 # Check for recent Istio security advisories
+
 curl -s https://istio.io/latest/news/security/ | grep -i "ISTIO-SECURITY"
 ```
 

@@ -48,6 +48,7 @@ Start with the Cloud Console to understand available metrics.
 
 ```bash
 # Navigate to Cloud Console > Monitoring > Dashboards
+
 # Click "Create Dashboard"
 
 # Or use gcloud to list existing dashboards

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, DHCP, Monitoring, IPv4, Lease, Network Management, OID
+Tags: SNMP, DHCP, Monitoring, IPv4, Leases, Network Management, OID
 
 Description: Learn how to monitor DHCP pool utilization and lease counts using SNMP OIDs from Microsoft DHCP Server and ISC DHCP, enabling proactive capacity management.
 
@@ -24,6 +24,7 @@ Microsoft's DHCP server exposes pool statistics via the `DHCP-MIB`:
 
 ```bash
 # Walk all DHCP scopes on a Windows DHCP server
+
 snmpwalk -v2c -c public 192.168.1.10 1.3.6.1.4.1.311.1.3.2.1
 
 # Get addresses in use for all scopes
@@ -33,7 +34,7 @@ snmpwalk -v2c -c public 192.168.1.10 1.3.6.1.4.1.311.1.3.2.1.1.3
 snmpwalk -v2c -c public 192.168.1.10 1.3.6.1.4.1.311.1.3.2.1.1.4
 ```
 
-### ISC DHCP Server (Linux) — via Custom Script
+### ISC DHCP Server (Linux) - via Custom Script
 
 ISC DHCP doesn't expose SNMP natively. Use a script to parse the lease file and expose it as an SNMP extend.
 
@@ -57,7 +58,7 @@ awk "BEGIN {printf \"%.1f\n\", ($ACTIVE/$POOL_SIZE)*100}"
 ```
 
 ```ini
-# /etc/snmp/snmpd.conf — expose via SNMP extend
+# /etc/snmp/snmpd.conf - expose via SNMP extend
 extend dhcp-active-leases /usr/local/bin/dhcp-lease-count.sh
 ```
 

@@ -34,6 +34,7 @@ First, get your CA certificate in PEM format.
 
 ```bash
 # If you have a DER-encoded certificate, convert to PEM
+
 openssl x509 -inform DER -in my-ca.der -out my-ca.pem
 
 # Verify the certificate

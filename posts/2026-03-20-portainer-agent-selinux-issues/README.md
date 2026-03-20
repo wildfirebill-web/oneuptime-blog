@@ -1,4 +1,4 @@
-# How to Fix SELinux Issues with Portainer Agent
+# How to Fix SELinux Issues with Portainer Agent - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Resolve SELinux permission denials that prevent the Portainer Agent
 
 ## Introduction
 
-On RHEL, CentOS, and other SELinux-enabled systems, SELinux may block the Portainer Agent from accessing the Docker socket or host volumes. These denials appear as silent failures — the container starts but cannot communicate with Docker. This guide covers diagnosing and fixing SELinux issues.
+On RHEL, CentOS, and other SELinux-enabled systems, SELinux may block the Portainer Agent from accessing the Docker socket or host volumes. These denials appear as silent failures - the container starts but cannot communicate with Docker. This guide covers diagnosing and fixing SELinux issues.
 
 ## Diagnosing SELinux Denials
 
 ```bash
 # Check if SELinux is enabled and enforcing
+
 getenforce
 # If: Enforcing - SELinux is active and blocking
 # If: Permissive - SELinux logs but doesn't block

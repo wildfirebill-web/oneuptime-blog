@@ -44,6 +44,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create a group with three environments
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -210,4 +211,4 @@ curl -X PUT \
 
 ## Conclusion
 
-Group-level access policies dramatically simplify permission management in large Portainer deployments. Instead of configuring access for every environment individually, you configure it once per group, and Portainer propagates the policy to all member environments. When teams change scope or new environments are added, updating the group policy updates access everywhere simultaneously — reducing administrative overhead and the risk of misconfigured permissions.
+Group-level access policies dramatically simplify permission management in large Portainer deployments. Instead of configuring access for every environment individually, you configure it once per group, and Portainer propagates the policy to all member environments. When teams change scope or new environments are added, updating the group policy updates access everywhere simultaneously - reducing administrative overhead and the risk of misconfigured permissions.

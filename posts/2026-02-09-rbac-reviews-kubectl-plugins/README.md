@@ -18,6 +18,7 @@ Use Krew, the kubectl plugin manager, to install RBAC tools:
 
 ```bash
 # Install Krew if not already installed
+
 (
   set -x; cd "$(mktemp -d)" &&
   OS="$(uname | tr '[:upper:]' '[:lower:]')" &&

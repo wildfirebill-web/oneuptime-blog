@@ -25,6 +25,7 @@ With pipenv:
 pipenv install requests flask    # Manages venv automatically
 pipenv run python app.py         # Runs in the venv without manual activation
 # Generates Pipfile (human-readable) and Pipfile.lock (reproducible)
+
 ```
 
 The lock file distinction matters: `requirements.txt` from `pip freeze` pins everything including transitive dependencies, making updates painful. `Pipfile` pins only your direct dependencies; `Pipfile.lock` handles the rest automatically.

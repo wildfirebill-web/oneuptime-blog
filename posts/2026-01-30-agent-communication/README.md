@@ -940,6 +940,7 @@ class Agent:
 
 
 # Example usage
+
 async def main():
     # Create infrastructure
     router = MessageRouter()

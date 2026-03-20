@@ -28,6 +28,7 @@ Felix is configured through the FelixConfiguration custom resource:
 
 ```bash
 # View the current Felix configuration
+
 calicoctl get felixconfiguration default -o yaml
 ```
 

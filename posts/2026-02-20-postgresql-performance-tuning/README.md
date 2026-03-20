@@ -54,6 +54,7 @@ SHOW shared_buffers;
 # /etc/postgresql/16/main/postgresql.conf
 
 # 25% of total RAM (32GB system)
+
 shared_buffers = 8GB
 ```
 

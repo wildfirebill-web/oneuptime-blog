@@ -1,4 +1,4 @@
-# How to Configure Google OAuth with Portainer
+# How to Configure Google OAuth with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,7 +25,7 @@ Google OAuth allows Portainer users to authenticate using their Google or Google
 5. Select **Web application** as the application type
 
 Fill in:
-```
+```text
 Name:             Portainer
 Authorized redirect URIs:
   https://portainer.example.com/
@@ -46,7 +46,7 @@ Authorized redirect URIs:
 
 Google's OIDC endpoints:
 
-```
+```text
 Authorization URL: https://accounts.google.com/o/oauth2/v2/auth
 Access Token URL:  https://oauth2.googleapis.com/token
 Resource URL:      https://openidconnect.googleapis.com/v1/userinfo
@@ -54,7 +54,7 @@ Resource URL:      https://openidconnect.googleapis.com/v1/userinfo
 
 In Settings → Authentication → OAuth → Google:
 
-```
+```text
 Client ID:         your-client-id.apps.googleusercontent.com
 Client Secret:     your-client-secret
 Authorization URL: https://accounts.google.com/o/oauth2/v2/auth
@@ -99,7 +99,7 @@ curl -X PUT \
 
 Add the `hd` parameter to the authorization URL to restrict login to your organization's domain:
 
-```
+```text
 Authorization URL: https://accounts.google.com/o/oauth2/v2/auth?hd=yourcompany.com
 ```
 
@@ -108,13 +108,14 @@ This ensures only users with `@yourcompany.com` Google accounts can log in.
 ## Restricting Access to Specific Users
 
 In Google Cloud Console:
-1. Set the consent screen to **Internal** — only your Workspace users can log in
+1. Set the consent screen to **Internal** - only your Workspace users can log in
 2. If you need to allow specific external emails, add them as test users during development
 
 ## Verifying the Configuration
 
 ```bash
 # Manually test the OAuth flow
+
 # Step 1: Generate the authorization URL
 CLIENT_ID="your-client-id.apps.googleusercontent.com"
 REDIRECT_URI="https://portainer.example.com/"
@@ -134,4 +135,4 @@ echo "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redire
 
 ## Conclusion
 
-Google OAuth provides a simple SSO experience for teams already using Google accounts. The setup requires only a few minutes in Google Cloud Console and Portainer's settings. For Google Workspace organizations, the `hd` parameter domain restriction ensures only corporate accounts can access Portainer — a simple but effective access control measure.
+Google OAuth provides a simple SSO experience for teams already using Google accounts. The setup requires only a few minutes in Google Cloud Console and Portainer's settings. For Google Workspace organizations, the `hd` parameter domain restriction ensures only corporate accounts can access Portainer - a simple but effective access control measure.

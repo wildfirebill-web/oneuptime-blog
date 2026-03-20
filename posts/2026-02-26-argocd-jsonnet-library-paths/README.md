@@ -25,6 +25,7 @@ ArgoCD lets you specify Jsonnet library paths in the Application spec under `dir
 
 ```yaml
 # argocd-app-with-libs.yaml - Application with Jsonnet library paths
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

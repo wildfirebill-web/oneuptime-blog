@@ -24,6 +24,7 @@ import re
 text = "Contact us at support@example.com for help"
 
 # Search for a pattern
+
 match = re.search(r'support@\w+\.com', text)
 
 if match:

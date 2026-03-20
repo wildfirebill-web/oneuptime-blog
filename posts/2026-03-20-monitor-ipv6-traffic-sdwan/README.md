@@ -14,6 +14,7 @@ Monitoring IPv6 in SD-WAN requires flow telemetry (IPFIX/NetFlow v9 with IPv6 ex
 
 ```bash
 # Configure nProbe for IPv6 flow collection
+
 # nProbe is a NetFlow/IPFIX probe for Linux
 
 # Install nProbe

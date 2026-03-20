@@ -20,6 +20,7 @@ Podman pods emit their own set of events separate from container events.
 
 ```bash
 # Pod events include:
+
 # create  - Pod was created
 # start   - Pod was started (infra container started)
 # stop    - Pod was stopped

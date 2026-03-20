@@ -117,13 +117,14 @@ You can observe this process:
 
 ```bash
 # Check configuration sync status
+
 istioctl proxy-status
 
 # See if any proxy is out of sync
 istioctl proxy-status | grep -v SYNCED
 ```
 
-## Resource Consumption
+Resource Consumption
 
 Understanding resource usage is important for capacity planning:
 

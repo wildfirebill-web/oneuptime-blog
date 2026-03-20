@@ -35,6 +35,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 # Configure metrics export
+
 reader = PeriodicExportingMetricReader(
     OTLPMetricExporter(endpoint="http://otel-collector:4317"),
     export_interval_millis=5000  # Export every 5 seconds for near-real-time visibility

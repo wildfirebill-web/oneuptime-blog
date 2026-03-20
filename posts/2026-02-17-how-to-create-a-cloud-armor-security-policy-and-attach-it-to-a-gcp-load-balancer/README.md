@@ -39,6 +39,7 @@ Create a new security policy with a default rule.
 
 ```bash
 # Create a security policy with a default allow rule
+
 gcloud compute security-policies create my-security-policy \
     --description="Security policy for production load balancer" \
     --project=my-project

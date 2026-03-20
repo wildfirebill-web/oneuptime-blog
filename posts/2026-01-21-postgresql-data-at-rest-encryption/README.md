@@ -24,6 +24,7 @@ Data-at-rest encryption protects data stored on disk from unauthorized access. T
 
 ```bash
 # Create encrypted volume
+
 sudo cryptsetup luksFormat /dev/sdb
 sudo cryptsetup luksOpen /dev/sdb pg_encrypted
 

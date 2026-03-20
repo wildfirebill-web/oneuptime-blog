@@ -35,6 +35,7 @@ Use your observability stack to gather metrics over a representative period (at 
 
 ```bash
 # Example: Query Prometheus for CPU and memory utilization
+
 # CPU utilization by container
 avg(rate(container_cpu_usage_seconds_total{namespace="production"}[5m])) by (pod)
 

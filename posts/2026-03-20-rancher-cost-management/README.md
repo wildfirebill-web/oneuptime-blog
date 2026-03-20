@@ -1,8 +1,8 @@
-# How to Set Up Cost Management for Rancher Clusters
+# How to Set Up Cost Management for Rancher Clusters - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, cost-management, kubecost, opencost, kubernetes, finops
+Tags: Rancher, Cost-Management, Kubecost, Opencost, Kubernetes, FinOps
 
 Description: A guide to implementing cost management for Rancher-managed Kubernetes clusters using OpenCost and Kubecost, including cost allocation, budgets, and optimization.
 
@@ -21,6 +21,7 @@ Without proper cost visibility, Kubernetes infrastructure costs can spiral out o
 
 ```bash
 # Install OpenCost with Prometheus integration
+
 # (Rancher Monitoring must already be installed)
 
 helm repo add opencost https://opencost.github.io/opencost-helm-chart

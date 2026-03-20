@@ -33,6 +33,7 @@ flowchart TD
 
 ```ini
 # inventory/databases.ini
+
 [database_servers]
 db-primary ansible_host=10.0.9.10
 

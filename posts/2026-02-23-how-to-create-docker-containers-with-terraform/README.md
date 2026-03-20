@@ -27,6 +27,7 @@ You need the following to follow along:
 
 ```hcl
 # Configure Terraform with the Docker provider
+
 terraform {
   required_providers {
     docker = {

@@ -20,6 +20,7 @@ Before building ppc64le images, you need Podman installed and QEMU user-static b
 
 ```bash
 # Install Podman (Fedora/RHEL)
+
 sudo dnf install -y podman
 
 # Install QEMU user-static for cross-architecture emulation

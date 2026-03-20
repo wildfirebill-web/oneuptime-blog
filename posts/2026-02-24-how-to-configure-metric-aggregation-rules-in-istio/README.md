@@ -83,6 +83,7 @@ Once you have recording rules, use them instead of the raw metrics:
 
 ```promql
 # Instead of this (slow, high cardinality):
+
 histogram_quantile(0.99,
   sum(rate(istio_request_duration_milliseconds_bucket{
     destination_service_name="my-api",

@@ -107,6 +107,7 @@ def compare_faces(source_bucket, source_key, target_bucket, target_key, threshol
     return matches
 
 # Compare an ID photo with a selfie for verification
+
 matches = compare_faces(
     'verification-bucket', 'id-photos/user123.jpg',
     'verification-bucket', 'selfies/user123-selfie.jpg',

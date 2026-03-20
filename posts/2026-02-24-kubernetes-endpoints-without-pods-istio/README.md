@@ -246,6 +246,7 @@ for ip in "${ENDPOINTS[@]}"; do
 done
 
 # Build the addresses JSON
+
 ADDRESSES=$(printf "%s," "${HEALTHY[@]}")
 ADDRESSES="[${ADDRESSES%,}]"
 

@@ -26,6 +26,7 @@ First, install ExternalDNS on each cluster:
 
 ```bash
 # Install ExternalDNS with your DNS provider
+
 # This example uses AWS Route53
 helm install external-dns bitnami/external-dns \
   --namespace kube-system \

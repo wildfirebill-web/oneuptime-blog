@@ -18,6 +18,7 @@ Here is how a simple S3 read policy looks using the data source:
 
 ```hcl
 # Define the policy using a data source
+
 data "aws_iam_policy_document" "s3_read" {
   statement {
     sid    = "AllowS3Read"

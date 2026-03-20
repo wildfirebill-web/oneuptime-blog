@@ -16,6 +16,7 @@ The simplest protection: mark the variable as `sensitive = true`:
 
 ```hcl
 # variables.tf
+
 variable "db_password" {
   type        = string
   description = "Database master password"
@@ -30,8 +31,8 @@ variable "api_key" {
 
 When a sensitive variable is used in a resource, OpenTofu redacts its value:
 
-```
-# Plan output — password is hidden
+```hcl
+# Plan output - password is hidden
   ~ resource "aws_db_instance" "main" {
       ~ password = (sensitive value)
     }
@@ -50,7 +51,7 @@ output "db_connection_string" {
 
 Sensitive outputs are still accessible programmatically but are masked in terminal output:
 
-```
+```text
 Outputs:
 
 db_connection_string = <sensitive>
@@ -99,7 +100,7 @@ Add a post-plan check that fails if the word "password" appears unredacted in pl
 
 ```bash
 #!/bin/bash
-# ci-check.sh — fail if plan output contains unredacted secrets
+# ci-check.sh - fail if plan output contains unredacted secrets
 PLAN_OUTPUT=$(tofu plan -no-color 2>&1)
 
 # Check that passwords are redacted

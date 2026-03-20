@@ -33,7 +33,7 @@ services:
       - WATCHTOWER_LABEL_ENABLE=true   # Only update labeled containers
 ```
 
-Setting `WATCHTOWER_LABEL_ENABLE=true` is critical — it tells Watchtower to only update containers that have the `com.centurylinklabs.watchtower.enable=true` label.
+Setting `WATCHTOWER_LABEL_ENABLE=true` is critical - it tells Watchtower to only update containers that have the `com.centurylinklabs.watchtower.enable=true` label.
 
 ## Enabling Updates on Specific Containers
 
@@ -82,7 +82,7 @@ services:
 
 ## Monitor-Only Mode
 
-Watchtower can monitor for updates without applying them — useful for Portainer-managed environments where you want notifications but manual control:
+Watchtower can monitor for updates without applying them - useful for Portainer-managed environments where you want notifications but manual control:
 
 ```yaml
 services:
@@ -123,4 +123,4 @@ After Watchtower applies an update:
 
 ## Conclusion
 
-Watchtower and Portainer complement each other well — Portainer provides visibility and manual control, while Watchtower handles automated image updates. Per-container labels give you precise control over which containers are updated automatically and which require manual intervention.
+Watchtower and Portainer complement each other well - Portainer provides visibility and manual control, while Watchtower handles automated image updates. Per-container labels give you precise control over which containers are updated automatically and which require manual intervention.

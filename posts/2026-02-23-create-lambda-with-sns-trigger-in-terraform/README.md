@@ -18,6 +18,7 @@ The setup requires three things: an SNS topic, a Lambda function, and an SNS sub
 
 ```hcl
 # SNS topic
+
 resource "aws_sns_topic" "notifications" {
   name = "app-notifications"
 

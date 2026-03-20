@@ -39,6 +39,7 @@ Harvester uses VM images to boot virtual machines. Download the Talos cloud imag
 
 ```bash
 # Download the Talos qcow2 image for cloud/VM environments
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/nocloud-amd64.raw.xz
 
 # Decompress it

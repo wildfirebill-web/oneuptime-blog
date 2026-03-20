@@ -16,6 +16,7 @@ VPP exposes runtime statistics through two channels: a stats socket (high-freque
 
 ```bash
 # calico-vpp-manager exposes metrics on port 9098 by default
+
 kubectl get pod -n calico-vpp-dataplane -l app=calico-vpp-node \
   -o jsonpath='{.items[0].metadata.name}' | xargs -I{} \
   kubectl exec -n calico-vpp-dataplane {} -c calico-vpp-manager -- \

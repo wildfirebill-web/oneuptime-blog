@@ -16,6 +16,7 @@ Pass one or more `-filter` flags with the path to a test file to run only those 
 
 ```bash
 # Run only the S3 bucket tests
+
 tofu test -filter=tests/s3_bucket.tftest.hcl
 
 # Run multiple specific test files
@@ -35,7 +36,7 @@ Append `::run_block_name` to filter down to a specific `run` block within a file
 tofu test -filter=tests/s3_bucket.tftest.hcl::creates_bucket_with_versioning
 ```
 
-This is especially useful when debugging a failing test—you can run just the one broken case without executing the entire file.
+This is especially useful when debugging a failing test-you can run just the one broken case without executing the entire file.
 
 ## Practical CI/CD Patterns
 

@@ -122,6 +122,7 @@ class NetBoxIPAM:
         return patch_resp.status_code == 200
 
 # Usage
+
 ipam = NetBoxIPAM("http://netbox.internal", "your-token")
 
 # Allocate address for new server
@@ -201,4 +202,4 @@ output "instance_ipv6_address" {
 
 ## Conclusion
 
-IPAM REST APIs enable IPv6 address management to become part of infrastructure-as-code workflows. The NetBox `available-ips` endpoint atomically allocates the next available address with a single POST request — the IPAM system handles concurrency and conflict prevention. Integrate IPAM allocation into provisioning pipelines (Terraform, Ansible, CI/CD) to ensure every address is tracked from creation. Use IPAM API calls in decommission workflows to mark addresses as deprecated, maintaining audit history without deleting records.
+IPAM REST APIs enable IPv6 address management to become part of infrastructure-as-code workflows. The NetBox `available-ips` endpoint atomically allocates the next available address with a single POST request - the IPAM system handles concurrency and conflict prevention. Integrate IPAM allocation into provisioning pipelines (Terraform, Ansible, CI/CD) to ensure every address is tracked from creation. Use IPAM API calls in decommission workflows to mark addresses as deprecated, maintaining audit history without deleting records.

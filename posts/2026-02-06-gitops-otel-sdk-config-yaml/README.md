@@ -44,6 +44,7 @@ Every configuration change follows the same pull request workflow as code:
 
 ```bash
 # Create a branch for the configuration change
+
 git checkout -b otel/increase-sampling-order-service
 
 # Edit the configuration

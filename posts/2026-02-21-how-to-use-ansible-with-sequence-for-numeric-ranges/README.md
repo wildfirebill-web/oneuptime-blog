@@ -16,6 +16,7 @@ The `with_sequence` lookup generates a sequence of numbers. At its simplest:
 
 ```yaml
 # Create directories numbered 1 through 5
+
 - name: Create data directories
   ansible.builtin.file:
     path: "/data/volume{{ item }}"

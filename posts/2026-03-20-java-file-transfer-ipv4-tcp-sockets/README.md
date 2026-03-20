@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, TCP, IPv4, File Transfer, Socket, Networking, I/O Streams
+Tags: Java, TCP, IPv4, File Transfer, Sockets, Networking, I/O Streams
 
 Description: Implement a file transfer server and client in Java using TCP sockets over IPv4 with buffered I/O streams and progress reporting.
 
 ## Introduction
 
-Java's socket and stream APIs make file transfer straightforward. By wrapping socket streams in `DataOutputStream`/`DataInputStream`, you can send structured headers (filename, file size) followed by the raw file bytes — a simple but effective file transfer protocol.
+Java's socket and stream APIs make file transfer straightforward. By wrapping socket streams in `DataOutputStream`/`DataInputStream`, you can send structured headers (filename, file size) followed by the raw file bytes - a simple but effective file transfer protocol.
 
 ## File Transfer Protocol
 
-```
+```text
 Client -> Server:
   [UTF string: filename]
   [long 8 bytes: file size]
@@ -180,6 +180,7 @@ public class FileTransferClient {
 
 ```bash
 # Compile
+
 javac FileTransferServer.java FileTransferClient.java
 
 # Start server

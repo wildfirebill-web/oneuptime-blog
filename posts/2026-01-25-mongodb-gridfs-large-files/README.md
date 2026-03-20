@@ -390,6 +390,7 @@ import gridfs
 from bson.objectid import ObjectId
 
 # Initialize GridFS
+
 client = MongoClient('mongodb://localhost:27017')
 db = client.filestore
 fs = gridfs.GridFS(db)

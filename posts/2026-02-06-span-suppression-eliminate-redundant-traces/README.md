@@ -75,6 +75,7 @@ A simpler Python approach using the OpenTelemetry SDK's environment variable con
 
 ```python
 # Suppress specific instrumentation libraries that generate
+
 # low-value spans. This disables them entirely at the SDK level.
 import os
 

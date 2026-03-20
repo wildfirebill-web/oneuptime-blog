@@ -219,6 +219,7 @@ If you already have Prometheus scraping Istio metrics, you can use Prometheus re
 
 ```yaml
 # prometheus remote write config
+
 remote_write:
   - url: https://<your-environment>.live.dynatrace.com/api/v2/metrics/ingest
     bearer_token: <YOUR_DT_API_TOKEN>

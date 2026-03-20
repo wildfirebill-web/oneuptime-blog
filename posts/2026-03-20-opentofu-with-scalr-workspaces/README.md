@@ -14,6 +14,7 @@ Scalr is a Terraform/OpenTofu automation platform that provides workspace-based 
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "remote" {
     hostname     = "your-account.scalr.io"

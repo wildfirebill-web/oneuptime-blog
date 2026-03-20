@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Private EKS cluster
+
 export CLUSTER_NAME="my-private-cluster"
 export REGION="us-east-1"
 

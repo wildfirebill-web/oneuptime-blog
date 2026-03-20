@@ -1,4 +1,4 @@
-# How to Bind Nginx to a Specific IPv4 Address and Port
+# How to Bind Nginx to a Specific IPv4 Address and Port - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Nginx to bind to a specific IPv4 address and
 
 ## Introduction
 
-By default, Nginx listens on all available network interfaces. Binding Nginx to a specific IPv4 address and port is useful when a server has multiple network interfaces and you want to restrict which interface serves web traffic — for example, serving public traffic only on an external IP and internal traffic on a private IP.
+By default, Nginx listens on all available network interfaces. Binding Nginx to a specific IPv4 address and port is useful when a server has multiple network interfaces and you want to restrict which interface serves web traffic - for example, serving public traffic only on an external IP and internal traffic on a private IP.
 
 ## Basic Binding to a Specific IP
 
@@ -92,6 +92,7 @@ This service is not reachable from the public internet.
 
 ```nginx
 # Public-facing server block
+
 server {
     listen 203.0.113.10:80;
     server_name example.com;
@@ -135,7 +136,7 @@ netstat -tlnp | grep nginx
 ```
 
 Expected output should show:
-```
+```text
 LISTEN  0  511  203.0.113.10:443  0.0.0.0:*  users:(("nginx",...))
 LISTEN  0  511  203.0.113.10:80   0.0.0.0:*  users:(("nginx",...))
 LISTEN  0  511  10.0.0.5:8080     0.0.0.0:*  users:(("nginx",...))

@@ -46,6 +46,7 @@ Verify your setup with these commands.
 
 ```bash
 # Check Azure CLI version
+
 az version
 
 # Verify you are logged in and have the right context

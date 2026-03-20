@@ -29,6 +29,7 @@ First, create the VPC infrastructure that App Runner will connect to:
 
 ```hcl
 # VPC for the private resources
+
 resource "aws_vpc" "main" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_support   = true

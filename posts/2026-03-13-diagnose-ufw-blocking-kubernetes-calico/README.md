@@ -36,6 +36,7 @@ This guide provides a systematic approach to diagnosing UFW-Calico conflicts.
 
 ```bash
 # On the affected node
+
 sudo ufw status verbose
 ```
 

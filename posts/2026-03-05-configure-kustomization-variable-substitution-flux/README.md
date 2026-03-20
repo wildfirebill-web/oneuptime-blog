@@ -31,6 +31,7 @@ Define variables directly in the Kustomization resource using `spec.postBuild.su
 
 ```yaml
 # kustomization-vars.yaml - Inline variable substitution
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

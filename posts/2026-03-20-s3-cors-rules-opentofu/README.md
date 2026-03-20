@@ -82,6 +82,7 @@ resource "aws_s3_bucket_cors_configuration" "web_assets" {
 
 ```python
 # Lambda function to generate pre-signed upload URLs
+
 import boto3
 import json
 import os

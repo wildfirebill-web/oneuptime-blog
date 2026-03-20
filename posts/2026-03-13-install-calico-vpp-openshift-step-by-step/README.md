@@ -41,6 +41,7 @@ spec:
 ```bash
 oc apply -f hugepages-machineconfig.yaml
 # Wait for nodes to cycle through the MCO
+
 oc get machineconfigpool worker -w
 ```
 

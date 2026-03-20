@@ -115,6 +115,7 @@ pip install opentelemetry-instrumentation-grpc
 
 ```python
 # server.py
+
 import grpc
 from concurrent import futures
 from opentelemetry.instrumentation.grpc import GrpcInstrumentorServer

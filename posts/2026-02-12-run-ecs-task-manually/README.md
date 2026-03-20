@@ -26,6 +26,7 @@ Running a Fargate task requires specifying the network configuration since Farga
 
 ```bash
 # Run a one-off task on Fargate
+
 aws ecs run-task \
   --cluster my-first-cluster \
   --task-definition web-app:1 \

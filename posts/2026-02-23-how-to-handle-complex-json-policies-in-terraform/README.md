@@ -16,6 +16,7 @@ The naive approach is to write JSON as a string directly in Terraform:
 
 ```hcl
 # Do NOT do this - hard to read, maintain, and validate
+
 resource "aws_iam_role_policy" "bad_example" {
   name = "bad-policy"
   role = aws_iam_role.main.id

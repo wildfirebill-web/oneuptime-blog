@@ -16,6 +16,7 @@ The `when` clause takes a Jinja2 expression that evaluates to true or false. Unl
 
 ```yaml
 # basic-when.yml - Simple conditional execution
+
 ---
 - name: Basic when examples
   hosts: all

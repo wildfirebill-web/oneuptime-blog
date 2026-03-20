@@ -36,6 +36,7 @@ First, deploy the KubeRay operator through ArgoCD:
 
 ```yaml
 # kuberay-operator-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

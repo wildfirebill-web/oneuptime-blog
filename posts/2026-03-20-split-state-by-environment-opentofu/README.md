@@ -14,7 +14,7 @@ Storing all environments in a single state file means a misconfigured plan for d
 
 The most common approach uses separate directories with environment-specific backend configurations.
 
-```
+```text
 infrastructure/
 ├── environments/
 │   ├── dev/
@@ -38,6 +38,7 @@ infrastructure/
 
 ```hcl
 # environments/dev/backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-company-tofu-state"

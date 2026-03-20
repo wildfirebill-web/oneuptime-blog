@@ -187,6 +187,7 @@ Test the impact of your changes:
 sudo dnf install fio -y
 
 # Sequential write throughput
+
 sudo fio --name=seq_write --directory=/vdo-data --rw=write --bs=1M \
   --size=4G --numjobs=1 --runtime=60 --time_based --group_reporting
 

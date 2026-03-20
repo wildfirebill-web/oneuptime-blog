@@ -12,7 +12,7 @@ IPv6-mapped IPv4 addresses have the form `::ffff:<IPv4>` (e.g., `::ffff:192.168.
 
 ## Format
 
-```
+```text
 IPv4:          192.168.1.100
 IPv6-mapped:   ::ffff:192.168.1.100
 Full notation: 0000:0000:0000:0000:0000:ffff:c0a8:0164
@@ -35,6 +35,7 @@ def mapped_to_ipv4(ipv6_str: str) -> str | None:
     return None
 
 # Examples
+
 print(ipv4_to_mapped("192.168.1.100"))           # ::ffff:192.168.1.100
 print(ipv4_to_mapped("10.0.0.1"))                # ::ffff:a00:1
 print(mapped_to_ipv4("::ffff:192.168.1.100"))    # 192.168.1.100

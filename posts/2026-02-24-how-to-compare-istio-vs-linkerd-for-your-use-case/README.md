@@ -20,7 +20,7 @@ Linkerd uses its own purpose-built proxy called linkerd2-proxy, written in Rust.
 
 The key architectural difference is that Envoy is a general-purpose proxy with hundreds of configuration options, while linkerd2-proxy is optimized for a single job. This shows up in resource usage and configuration complexity.
 
-## Resource Consumption
+Resource Consumption
 
 This is where Linkerd has a clear advantage. The Linkerd sidecar proxy typically uses around 10-20 MB of memory and very low CPU. Istio's Envoy sidecar starts at around 40-50 MB and can grow to 100+ MB depending on the number of services and configuration complexity.
 
@@ -83,6 +83,7 @@ Istio has had a more turbulent upgrade history, though it has improved significa
 
 ```bash
 # Istio canary upgrade
+
 istioctl install --set revision=1-20
 # Gradually migrate workloads to the new revision
 kubectl label namespace default istio.io/rev=1-20 --overwrite

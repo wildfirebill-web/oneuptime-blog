@@ -140,6 +140,7 @@ Create a sysctl configuration file with the following optimizations. These setti
 # /etc/sysctl.d/99-metallb-high-throughput.conf
 
 # Increase network buffer sizes
+
 net.core.rmem_max = 134217728
 net.core.wmem_max = 134217728
 net.core.rmem_default = 16777216
@@ -321,7 +322,7 @@ echo "RPS/XPS configured for $INTERFACE with mask $RPS_MASK"
 
 ## MetalLB Speaker Pod Optimization
 
-### Resource Allocation for Speaker Pods
+Resource Allocation for Speaker Pods
 
 High-throughput environments require adequate resources for MetalLB speakers. Create a custom values file for Helm deployment:
 

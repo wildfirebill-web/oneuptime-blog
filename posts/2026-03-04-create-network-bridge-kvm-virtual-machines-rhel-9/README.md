@@ -34,6 +34,7 @@ The bridge acts like a virtual switch. Your physical NIC and the virtual NICs fr
 
 ```bash
 # Verify KVM is installed
+
 rpm -q qemu-kvm libvirt
 systemctl status libvirtd
 ```

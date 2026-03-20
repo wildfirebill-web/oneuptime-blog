@@ -20,6 +20,7 @@ You need an Ansible control node with access to your RHEL managed hosts. Install
 
 ```bash
 # Install RHEL System Roles on the control node
+
 sudo dnf install rhel-system-roles -y
 ```
 

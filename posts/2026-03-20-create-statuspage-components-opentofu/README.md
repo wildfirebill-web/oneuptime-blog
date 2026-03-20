@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Statuspage, Status Page, Incident Communication, Infrastructure as Code
+Tags: OpenTofu, StatusPage, Status Page, Incident Communication, Infrastructure as Code
 
 Description: Learn how to manage Atlassian Statuspage components, component groups, and subscribers with OpenTofu for consistent status page configuration.
 
@@ -29,6 +29,7 @@ provider "statuspage" {
 
 ```hcl
 # Create a page reference (page must exist already)
+
 data "statuspage_page" "main" {
   page_id = var.statuspage_page_id
 }
@@ -60,7 +61,7 @@ resource "statuspage_component" "api_v1" {
   page_id     = data.statuspage_page.main.id
   group_id    = statuspage_component_group.api.id
   name        = "REST API v1"
-  description = "Public REST API — authentication, data access, and user management"
+  description = "Public REST API - authentication, data access, and user management"
   status      = "operational"  # operational, degraded_performance, partial_outage, major_outage
 }
 
@@ -157,4 +158,4 @@ resource "pagerduty_extension" "statuspage" {
 
 ## Conclusion
 
-Statuspage components managed in OpenTofu keep your status page synchronized with your actual service architecture. As services are added or renamed, update the OpenTofu configuration and apply — keeping the status page accurate. Output component IDs to wire up automatic incident status updates from PagerDuty or Datadog.
+Statuspage components managed in OpenTofu keep your status page synchronized with your actual service architecture. As services are added or renamed, update the OpenTofu configuration and apply - keeping the status page accurate. Output component IDs to wire up automatic incident status updates from PagerDuty or Datadog.

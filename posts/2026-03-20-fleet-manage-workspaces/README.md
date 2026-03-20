@@ -39,6 +39,7 @@ Each workspace has its own:
 
 ```bash
 # Create a new namespace to serve as a Fleet workspace
+
 kubectl create namespace fleet-team-alpha
 
 # Alternatively, use a manifest for reproducibility
@@ -201,7 +202,7 @@ kubectl get bundles -n fleet-team-alpha
 
 ### Recommended Workspace Structure
 
-```
+```text
 fleet-local           # Local Rancher cluster management
 fleet-default         # Shared/platform-wide deployments
 fleet-team-frontend   # Frontend team's clusters and apps
@@ -227,4 +228,4 @@ done
 
 ## Conclusion
 
-Fleet workspaces provide a clean isolation model for multi-team, multi-environment GitOps deployments. By using namespaces as workspaces and combining them with Kubernetes RBAC, you can give teams autonomy over their own deployments without risking interference with other teams. A thoughtful workspace design — whether team-based, environment-based, or a combination — forms the foundation of a scalable and secure Fleet deployment.
+Fleet workspaces provide a clean isolation model for multi-team, multi-environment GitOps deployments. By using namespaces as workspaces and combining them with Kubernetes RBAC, you can give teams autonomy over their own deployments without risking interference with other teams. A thoughtful workspace design - whether team-based, environment-based, or a combination - forms the foundation of a scalable and secure Fleet deployment.

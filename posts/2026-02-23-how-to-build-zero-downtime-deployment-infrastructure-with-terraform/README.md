@@ -31,6 +31,7 @@ Launch templates support versioning, which is key for rolling updates.
 
 ```hcl
 # Launch template for the application
+
 resource "aws_launch_template" "app" {
   name_prefix   = "app-"
   image_id      = var.ami_id

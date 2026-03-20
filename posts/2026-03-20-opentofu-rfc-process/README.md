@@ -23,7 +23,7 @@ Small bug fixes, documentation improvements, and minor enhancements do not need 
 
 ## RFC Repository Structure
 
-```
+```text
 opentofu/opentofu/
 └── rfc/
     ├── README.md          – RFC process documentation
@@ -53,6 +53,7 @@ Why is this change needed? What problem does it solve?
 Include concrete examples of the pain point:
 ```hcl
 # Current: requires repetitive code
+
 provider "aws" { alias = "us_east_1" region = "us-east-1" }
 provider "aws" { alias = "eu_west_1" region = "eu-west-1" }
 provider "aws" { alias = "ap_south" region = "ap-southeast-1" }
@@ -82,7 +83,7 @@ Why is this design the best approach? What alternatives were considered?
 - Edge case A: how should X behave?
 - Edge case B: should Y be allowed?
 - Implementation question: which internal package should own this?
-```
+```hcl
 
 ## Submitting an RFC
 

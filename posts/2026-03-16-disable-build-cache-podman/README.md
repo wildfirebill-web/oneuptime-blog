@@ -29,6 +29,7 @@ The simplest way to disable the cache is with `--no-cache`.
 
 ```bash
 # Build with cache disabled
+
 podman build --no-cache -t myapp:latest .
 
 # Every step is executed fresh

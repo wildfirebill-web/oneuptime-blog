@@ -24,6 +24,7 @@ Self-service modules need to be opinionated. They should have sensible defaults,
 
 ```hcl
 # modules/web-service/variables.tf
+
 # Variables designed for portal consumption
 
 variable "service_name" {

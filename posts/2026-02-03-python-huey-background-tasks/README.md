@@ -47,6 +47,7 @@ The following code creates a Huey instance connected to Redis. The name paramete
 
 ```python
 # tasks.py
+
 # Configure Huey with Redis as the backend storage
 from huey import RedisHuey
 from redis import ConnectionPool

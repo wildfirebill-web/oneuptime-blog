@@ -24,6 +24,7 @@ To use Dataflow Prime, you specify it as the runner mode in your pipeline option
 
 ```python
 # pipeline_options.py
+
 # Configure a pipeline to use Dataflow Prime
 from apache_beam.options.pipeline_options import PipelineOptions
 

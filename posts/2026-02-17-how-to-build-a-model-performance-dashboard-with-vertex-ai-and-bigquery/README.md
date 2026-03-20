@@ -31,6 +31,7 @@ Configure your Vertex AI Endpoint to log all prediction requests and responses t
 
 ```python
 # setup_logging.py
+
 from google.cloud import aiplatform
 
 aiplatform.init(project="my-project", location="us-central1")

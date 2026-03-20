@@ -57,6 +57,7 @@ Define your BGP peering sessions. You need a BGPPeer resource for each router yo
 
 ```yaml
 # bgp-peer.yaml
+
 apiVersion: metallb.io/v1beta2
 kind: BGPPeer
 metadata:

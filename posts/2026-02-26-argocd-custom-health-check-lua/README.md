@@ -295,6 +295,7 @@ ArgoCD provides a tool for testing Lua scripts:
 
 ```bash
 # Test a health check against a resource
+
 argocd admin settings resource-health /path/to/resource.yaml \
   --argocd-cm-path /path/to/argocd-cm.yaml
 ```

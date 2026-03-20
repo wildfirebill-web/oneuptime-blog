@@ -53,6 +53,7 @@ Create the directories:
 
 ```bash
 # Create the module directory
+
 mkdir -p modules/s3-bucket
 ```
 

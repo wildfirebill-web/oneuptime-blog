@@ -16,6 +16,7 @@ Inventory your existing deployments and resources.
 
 ```bash
 # List all deployments
+
 gcloud deployment-manager deployments list
 
 # Describe a specific deployment
@@ -62,7 +63,7 @@ resource "google_storage_bucket" "app" {
 
 ## Common Resource Type Translations
 
-```
+```hcl
 Deployment Manager Type              → OpenTofu Resource
 ----------------------------------------------------------
 compute.v1.instance                  → google_compute_instance
@@ -173,4 +174,4 @@ gcloud deployment-manager deployments delete my-app-deployment \
 
 ## Summary
 
-Migrating from Deployment Manager to OpenTofu requires translating YAML/Python templates to HCL, importing existing resources using their GCP resource paths, and abandoning the Deployment Manager deployment with `--delete-policy abandon`. The abandon flag is critical — it removes Deployment Manager's tracking of the resources without deleting them. After migration, manage all GCP resources through OpenTofu for better tooling, testing, and potential multi-cloud expansion.
+Migrating from Deployment Manager to OpenTofu requires translating YAML/Python templates to HCL, importing existing resources using their GCP resource paths, and abandoning the Deployment Manager deployment with `--delete-policy abandon`. The abandon flag is critical - it removes Deployment Manager's tracking of the resources without deleting them. After migration, manage all GCP resources through OpenTofu for better tooling, testing, and potential multi-cloud expansion.

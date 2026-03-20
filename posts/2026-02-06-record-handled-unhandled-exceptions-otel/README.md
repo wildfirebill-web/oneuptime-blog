@@ -23,6 +23,7 @@ This is the straightforward case. You catch the exception and record it:
 
 ```python
 # handled_exceptions.py
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("user-service")

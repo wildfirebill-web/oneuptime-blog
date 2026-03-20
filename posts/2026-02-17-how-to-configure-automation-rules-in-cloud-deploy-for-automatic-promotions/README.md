@@ -29,6 +29,7 @@ The most common automation is automatic promotion. After a release deploys succe
 
 ```yaml
 # auto-promote.yaml - Automatically promote from dev to staging
+
 apiVersion: deploy.cloud.google.com/v1
 kind: Automation
 metadata:

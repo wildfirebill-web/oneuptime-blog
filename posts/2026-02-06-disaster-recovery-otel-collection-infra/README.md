@@ -36,6 +36,7 @@ You cannot recover from what you cannot detect. Set up health monitoring for the
 
 ```yaml
 # otel-collector-self-monitoring.yaml
+
 # Collector config that exposes its own health metrics
 
 extensions:

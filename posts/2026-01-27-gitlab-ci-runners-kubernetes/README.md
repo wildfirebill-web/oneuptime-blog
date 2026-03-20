@@ -40,6 +40,7 @@ The operator simplifies runner management by using Custom Resource Definitions (
 
 ```bash
 # Add the GitLab Helm repository
+
 helm repo add gitlab https://charts.gitlab.io
 helm repo update
 
@@ -473,7 +474,7 @@ affinity:
           topologyKey: topology.kubernetes.io/zone
 ```
 
-## Resource Limits and Requests
+Resource Limits and Requests
 
 Proper resource configuration prevents job failures and cluster resource exhaustion.
 
@@ -510,7 +511,7 @@ runners:
         ephemeral_storage_request = "1Gi"
 ```
 
-### Resource Overrides in .gitlab-ci.yml
+Resource Overrides in .gitlab-ci.yml
 
 Jobs can override default resources using variables:
 

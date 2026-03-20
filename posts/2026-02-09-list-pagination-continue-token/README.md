@@ -33,6 +33,7 @@ You can use the `--chunk-size` flag with kubectl to enable pagination:
 
 ```bash
 # List all pods with pagination, fetching 100 at a time
+
 kubectl get pods --chunk-size=100
 
 # This is equivalent to making multiple API calls behind the scenes

@@ -30,6 +30,7 @@ You need:
 
 ```bash
 # Verify Istio is running
+
 kubectl get pods -n istio-system
 
 # Deploy a test application

@@ -52,6 +52,7 @@ To estimate your data size, consider:
 
 ```bash
 # Check the current data size of your database
+
 gcloud spanner databases describe my-database \
     --instance=my-spanner-instance
 ```

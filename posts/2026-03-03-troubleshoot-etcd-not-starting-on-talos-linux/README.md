@@ -18,6 +18,7 @@ Start by checking whether etcd is running:
 
 ```bash
 # Check etcd service status on a control plane node
+
 talosctl -n <cp-ip> service etcd
 ```
 

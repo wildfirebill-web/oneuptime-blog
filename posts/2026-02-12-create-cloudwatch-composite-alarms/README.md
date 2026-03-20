@@ -36,6 +36,7 @@ Let's say you have a web service with three individual alarms:
 
 ```bash
 # Alarm 1: High CPU
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "api-high-cpu" \
   --namespace "AWS/ECS" \

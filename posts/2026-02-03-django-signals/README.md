@@ -44,6 +44,7 @@ This receiver automatically generates a slug from the title before saving a blog
 
 ```python
 # signals.py
+
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 from django.utils.text import slugify

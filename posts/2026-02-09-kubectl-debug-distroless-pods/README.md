@@ -22,6 +22,7 @@ Ensure you have kubectl 1.18 or later:
 
 ```bash
 # Check kubectl version
+
 kubectl version --client
 
 # Verify debug command availability

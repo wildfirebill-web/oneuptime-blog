@@ -16,6 +16,7 @@ bmon is available in Ubuntu's package repositories:
 
 ```bash
 # Install bmon
+
 sudo apt-get update
 sudo apt-get install -y bmon
 

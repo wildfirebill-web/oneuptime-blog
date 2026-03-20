@@ -18,6 +18,7 @@ Before touching anything, assess your current installation:
 
 ```bash
 # Check current Istio version
+
 istioctl version
 
 # Check proxy versions across the mesh

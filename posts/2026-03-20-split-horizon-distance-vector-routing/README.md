@@ -31,6 +31,7 @@ Without split horizon, consider Router A and Router B directly connected:
 
 ```bash
 # Configure RIP with FRR
+
 # /etc/frr/frr.conf
 
 router rip
@@ -64,7 +65,7 @@ vtysh -c "show ip rip status"
 
 Split horizon can prevent valid route advertisements in **hub-and-spoke topologies** over NBMA (non-broadcast multi-access) networks:
 
-```
+```text
 Spoke A ----\
               Hub Router --- Backbone
 Spoke B ----/

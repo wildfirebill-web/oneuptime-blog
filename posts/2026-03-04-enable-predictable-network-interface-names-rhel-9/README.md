@@ -46,6 +46,7 @@ For wireless interfaces, the `en` prefix is replaced with `wl` (e.g., `wlp3s0`).
 
 ```bash
 # List all network interfaces with their names
+
 ip link show
 
 # Get more details including PCI location

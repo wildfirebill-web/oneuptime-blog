@@ -31,6 +31,7 @@ Store the Webex bot token in a Kubernetes secret. The address should point to th
 
 ```bash
 # Create a secret containing the Webex configuration
+
 # The address is the Webex API endpoint for messages
 kubectl create secret generic webex-secret \
   --namespace=flux-system \

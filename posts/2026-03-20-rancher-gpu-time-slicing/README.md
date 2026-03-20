@@ -2,12 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gpu, time-slicing, kubernetes, nvidia, sharing
+Tags: Rancher, GPU, Time-slicing, Kubernetes, NVIDIA, Sharing
 
 Description: Guide to configuring NVIDIA GPU time-slicing in Rancher to allow multiple workloads to share a single GPU.
+
 ## Introduction
 
-GPU time-slicing enables multiple pods to share a single physical GPU by allocating compute time in slices. Unlike MIG (which provides hard partitioning), time-slicing provides soft partitioning with shared memory—suitable for development and lighter workloads.
+GPU time-slicing enables multiple pods to share a single physical GPU by allocating compute time in slices. Unlike MIG (which provides hard partitioning), time-slicing provides soft partitioning with shared memory-suitable for development and lighter workloads.
 
 ## Time-Slicing vs MIG Comparison
 
@@ -23,6 +24,7 @@ GPU time-slicing enables multiple pods to share a single physical GPU by allocat
 
 ```yaml
 # time-slicing-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

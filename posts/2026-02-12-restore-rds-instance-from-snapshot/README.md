@@ -28,6 +28,7 @@ This lists your most recent snapshots for a specific instance.
 
 ```bash
 # List automated snapshots
+
 aws rds describe-db-snapshots \
   --db-instance-identifier my-production-db \
   --snapshot-type automated \

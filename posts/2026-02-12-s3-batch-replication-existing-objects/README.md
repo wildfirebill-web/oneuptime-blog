@@ -29,6 +29,7 @@ Make sure replication is configured.
 
 ```bash
 # Check existing replication configuration
+
 aws s3api get-bucket-replication --bucket source-bucket
 
 # If not configured, set it up

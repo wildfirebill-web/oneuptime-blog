@@ -24,6 +24,7 @@ The general pattern is:
 
 ```yaml
 # General pattern for extra volumes
+
 machine:
   files:
     - content: |

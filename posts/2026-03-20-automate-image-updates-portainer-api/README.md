@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, API, Docker, Image Updates, Automation, CI/CD
 
-Description: Use the Portainer REST API to automatically pull updated container images and redeploy services when new versions are pushed to your registry, enabling continuous delivery without manual Portainer interaction.
+Description: Use the Portainer REST API to automatically pull updated container images and redeploy services when new versions are pushed to your registry, enabling continuous delivery without manual Portainer...
 
 ---
 
@@ -28,6 +28,7 @@ Generate an API token in Portainer under **My Account > Access Tokens**.
 
 ```bash
 # List all stacks to get their IDs
+
 curl -s https://portainer:9443/api/stacks \
   -H "Authorization: Bearer $TOKEN" | jq '.[] | {id: .Id, name: .Name}'
 ```
@@ -111,4 +112,4 @@ Tag containers with `com.centurylinklabs.watchtower.enable=true` to opt in.
 
 ## Summary
 
-The Portainer API makes image update automation straightforward: pull the new image, update the stack definition with the new tag, and trigger a redeploy. Integrated into a CI/CD pipeline, this creates a complete continuous delivery workflow from code commit to running container — without manual Portainer interaction.
+The Portainer API makes image update automation straightforward: pull the new image, update the stack definition with the new tag, and trigger a redeploy. Integrated into a CI/CD pipeline, this creates a complete continuous delivery workflow from code commit to running container - without manual Portainer interaction.

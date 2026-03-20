@@ -66,6 +66,7 @@ Enabling HA mode is a single flag during cluster creation.
 
 ```bash
 # Create a high-availability Dataproc cluster
+
 gcloud dataproc clusters create ha-cluster \
   --region=us-central1 \
   --zone=us-central1-a \

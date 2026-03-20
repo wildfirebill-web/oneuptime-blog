@@ -344,6 +344,7 @@ When EnvoyFilters do not work as expected, enable Envoy's admin interface to ins
 
 ```bash
 # Port forward to a pod's Envoy admin interface
+
 kubectl port-forward pod/myapp-abc123 15000:15000
 
 # View the entire Envoy configuration

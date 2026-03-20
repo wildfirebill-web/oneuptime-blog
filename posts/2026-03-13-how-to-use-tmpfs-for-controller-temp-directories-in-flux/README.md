@@ -24,6 +24,7 @@ The source-controller uses `/tmp` for cloning repositories and downloading chart
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-tmpfs-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

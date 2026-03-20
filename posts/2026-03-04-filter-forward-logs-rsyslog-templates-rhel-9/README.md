@@ -33,6 +33,7 @@ The simplest type. You insert rsyslog properties using `%property%` syntax:
 
 ```bash
 # String template - formats log output as a custom string
+
 template(name="CustomFormat" type="string"
     string="%timestamp% %hostname% %syslogtag%%msg%\n"
 )

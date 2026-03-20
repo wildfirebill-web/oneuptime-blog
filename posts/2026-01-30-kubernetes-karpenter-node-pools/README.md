@@ -46,6 +46,7 @@ Before configuring Karpenter, ensure you have:
 
 ```bash
 # Set environment variables
+
 export KARPENTER_NAMESPACE="kube-system"
 export KARPENTER_VERSION="1.0.0"
 export CLUSTER_NAME="my-cluster"

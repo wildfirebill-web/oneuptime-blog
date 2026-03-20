@@ -90,6 +90,7 @@ Log in as admin and generate tokens for each service account:
 
 ```bash
 # Login as admin
+
 argocd login argocd.example.com --username admin --password '<admin-password>'
 
 # Generate a token with 30-day expiry

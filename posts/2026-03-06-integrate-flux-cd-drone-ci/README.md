@@ -42,6 +42,7 @@ Set up the registry credentials as secrets in Drone CI. You can do this through 
 
 ```bash
 # Install the Drone CLI
+
 # https://docs.drone.io/cli/install/
 
 # Set environment variables for the Drone CLI

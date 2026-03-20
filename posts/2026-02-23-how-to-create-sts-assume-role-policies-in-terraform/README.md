@@ -37,6 +37,7 @@ The trust policy on the role determines who can assume it.
 
 ```hcl
 # Trust policy allowing a specific role from another account
+
 data "aws_iam_policy_document" "assume_role_trust" {
   statement {
     sid    = "AllowAssumeFromSource"

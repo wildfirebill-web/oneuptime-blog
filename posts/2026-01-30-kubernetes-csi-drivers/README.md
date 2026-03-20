@@ -1160,6 +1160,7 @@ sequenceDiagram
 
 ```yaml
 # deploy/kubernetes/csi-driver.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: CSIDriver
 metadata:
@@ -1870,7 +1871,7 @@ klog.V(5).Infof("Full request: %+v", req)
 klog.Errorf("Failed to create volume: %v", err)
 ```
 
-### Resource Cleanup
+Resource Cleanup
 
 Always clean up resources on failure:
 

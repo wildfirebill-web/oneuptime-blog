@@ -20,6 +20,7 @@ HashiCorp Packer automates the creation of machine images for multiple platforms
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add HashiCorp repository

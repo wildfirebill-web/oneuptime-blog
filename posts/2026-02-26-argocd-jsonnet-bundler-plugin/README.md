@@ -40,6 +40,7 @@ This imports `kube-prometheus/main.libsonnet`, which is an external dependency d
 
 ```yaml
 # plugin.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ConfigManagementPlugin
 metadata:

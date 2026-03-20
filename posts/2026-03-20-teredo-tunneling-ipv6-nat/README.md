@@ -12,7 +12,7 @@ Teredo (RFC 4380) is a last-resort IPv6 tunneling mechanism that works even thro
 
 ## Teredo Address Format
 
-```
+```text
 Teredo address: 2001:0000:server_ip:flags:obscured_client_port:obscured_client_ip
 
 Example:
@@ -27,6 +27,7 @@ Example:
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install miredo
 
 # RHEL/CentOS
@@ -50,7 +51,7 @@ ServerAddress teredo.remlab.net
 # or:
 # ServerAddress teredo2.remlab.net
 
-# Local port (default 3544 — can change to avoid blocks)
+# Local port (default 3544 - can change to avoid blocks)
 BindPort 3544
 
 # Bind to specific IPv4 (optional)

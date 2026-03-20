@@ -24,6 +24,7 @@ Docker Scout comes bundled with Docker Desktop. For Docker Engine on Linux, inst
 
 ```bash
 # Check if Docker Scout is available
+
 docker scout version
 
 # If not installed, install the Scout CLI plugin

@@ -18,6 +18,7 @@ Before creating backups, you must configure a backup target. A backup target is 
 
 ```bash
 # Create a Kubernetes secret with your S3 credentials
+
 kubectl create secret generic longhorn-backup-secret \
   -n longhorn-system \
   --from-literal=AWS_ACCESS_KEY_ID="your-access-key-id" \

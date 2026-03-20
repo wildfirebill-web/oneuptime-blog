@@ -375,6 +375,7 @@ builder.Services.AddCors(options =>
 
 ```bash
 # Use curl to check CORS headers
+
 curl -i -X OPTIONS https://api.example.com/api/users \
   -H "Origin: https://app.example.com" \
   -H "Access-Control-Request-Method: GET"

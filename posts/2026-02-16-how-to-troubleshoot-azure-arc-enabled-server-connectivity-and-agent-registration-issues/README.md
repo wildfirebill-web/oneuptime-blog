@@ -30,6 +30,7 @@ Start by checking the agent status on the machine itself.
 
 ```bash
 # On Linux, check the agent service status
+
 sudo systemctl status himdsd
 sudo systemctl status gcad
 sudo systemctl status extd

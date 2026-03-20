@@ -37,6 +37,7 @@ The simplest approach uses Kubernetes Services with label selectors.
 
 ```yaml
 # blue-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -453,7 +454,7 @@ spec:
       app: myapp
 ```
 
-### Resource Management
+Resource Management
 
 Running two deployments doubles resource usage. Plan accordingly:
 

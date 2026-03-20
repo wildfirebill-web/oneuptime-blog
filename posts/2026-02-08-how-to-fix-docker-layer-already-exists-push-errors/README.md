@@ -32,6 +32,7 @@ This is expected and desirable in these situations:
 
 ```bash
 # Push a new tag for the same image - all layers already exist
+
 docker tag myapp:v1.0 myapp:latest
 docker push myapp:latest
 # Every layer shows "Layer already exists" - this is fine

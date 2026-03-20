@@ -30,6 +30,7 @@ Popular API gateways include Kong, AWS API Gateway, Apigee, Azure API Management
 
 ```yaml
 # Kong API Gateway route configuration
+
 apiVersion: configuration.konghq.com/v1
 kind: KongIngress
 metadata:

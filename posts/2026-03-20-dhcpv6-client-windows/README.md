@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, Windows, Networking, PowerShell, netsh
+Tags: DHCPv6, IPv6, Windows, Networking, PowerShell, Netsh
 
 Description: Learn how to configure and manage a DHCPv6 client on Windows using the GUI, netsh, and PowerShell to obtain IPv6 addresses from a DHCPv6 server.
 
@@ -84,6 +84,7 @@ PowerShell provides more granular control over IPv6 and DHCPv6 settings.
 
 ```powershell
 # List all IPv6 addresses
+
 Get-NetIPAddress -AddressFamily IPv6
 
 # Show only DHCPv6-assigned addresses
@@ -184,7 +185,7 @@ netsh interface ipv6 show route
 
 ## Best Practices
 
-1. **Keep Windows updated** — DHCPv6 client improvements ship with Windows updates
+1. **Keep Windows updated** - DHCPv6 client improvements ship with Windows updates
 2. **Use static ULA addresses** for servers; use DHCPv6 for clients needing managed addresses
 3. **Verify DNS** is received via DHCPv6 with `ipconfig /all`
 4. **Test with ping -6** after any configuration change
@@ -198,4 +199,4 @@ Windows provides robust DHCPv6 client support through built-in services. Whether
 
 ---
 
-*Monitor your IPv6 infrastructure with [OneUptime](https://oneuptime.com) — uptime monitoring with full IPv6 support across Windows and Linux environments.*
+*Monitor your IPv6 infrastructure with [OneUptime](https://oneuptime.com) - uptime monitoring with full IPv6 support across Windows and Linux environments.*

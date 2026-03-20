@@ -80,6 +80,7 @@ Open these ports between all cluster nodes:
 
 ```bash
 # Galera Cluster requires these ports:
+
 # - 3306: MySQL client connections
 # - 4567: Galera Cluster replication traffic (TCP and UDP)
 # - 4568: Incremental State Transfer (IST)

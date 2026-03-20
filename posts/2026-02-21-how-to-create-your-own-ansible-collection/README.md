@@ -18,6 +18,7 @@ The fastest way to start is with the `ansible-galaxy collection init` command:
 
 ```bash
 # Create a new collection skeleton
+
 ansible-galaxy collection init my_company.infrastructure
 ```
 

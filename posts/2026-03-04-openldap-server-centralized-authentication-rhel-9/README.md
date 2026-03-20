@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # Install 389 DS
+
 sudo dnf install 389-ds-base -y
 ```
 

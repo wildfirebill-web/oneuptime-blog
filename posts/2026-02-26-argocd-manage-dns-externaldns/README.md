@@ -229,6 +229,7 @@ ExternalDNS also supports a dedicated CRD for DNS records that are not tied to I
 
 ```yaml
 # Install the CRD source in ExternalDNS values
+
 # sources: [ingress, service, crd]
 
 apiVersion: externaldns.k8s.io/v1alpha1

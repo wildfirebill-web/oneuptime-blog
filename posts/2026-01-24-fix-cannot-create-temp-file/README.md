@@ -42,6 +42,7 @@ flowchart TD
 # These errors indicate temp file creation failures
 
 # Here-document failure
+
 ./script.sh: line 10: cannot create temp file for here-document: No space left on device
 
 # Redirection failure

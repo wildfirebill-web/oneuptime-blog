@@ -48,6 +48,7 @@ cadvisor (Container Advisor) is the primary tool for collecting cgroup metrics. 
 
 ```bash
 # cadvisor metrics are exposed through the kubelet
+
 # Verify they are accessible
 kubectl get --raw "/api/v1/nodes/<node-name>/proxy/metrics/cadvisor" | head -50
 ```

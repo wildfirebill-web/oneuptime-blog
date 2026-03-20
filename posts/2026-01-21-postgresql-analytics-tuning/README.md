@@ -38,6 +38,7 @@ For analytics, shared_buffers still matters but differently:
 # postgresql.conf
 
 # Analytics: 25% of RAM (same as OLTP)
+
 # But OS cache is more important for large scans
 shared_buffers = 8GB  # For 32GB system
 ```

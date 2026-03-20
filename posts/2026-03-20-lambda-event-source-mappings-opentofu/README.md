@@ -8,7 +8,7 @@ Description: Learn how to configure Lambda event source mappings with OpenTofu f
 
 ---
 
-Event source mappings connect Lambda functions to streaming or queue-based event sources. OpenTofu defines the mapping configuration — batch size, error handling, filtering, and concurrency — as code alongside the Lambda function and its event source.
+Event source mappings connect Lambda functions to streaming or queue-based event sources. OpenTofu defines the mapping configuration - batch size, error handling, filtering, and concurrency - as code alongside the Lambda function and its event source.
 
 ## Event Source Mapping Patterns
 
@@ -23,6 +23,7 @@ graph LR
 
 ```hcl
 # sqs_trigger.tf
+
 resource "aws_lambda_event_source_mapping" "sqs" {
   event_source_arn = aws_sqs_queue.input.arn
   function_name    = aws_lambda_function.processor.arn
@@ -186,5 +187,5 @@ resource "aws_iam_role_policy" "kinesis_consumer" {
 - Set SQS `visibility_timeout_seconds` to at least 6x the Lambda function timeout to prevent duplicate processing.
 - Use `ReportBatchItemFailures` with SQS to mark only failed messages for retry rather than reprocessing the entire batch.
 - Set `bisect_batch_on_function_error = true` for Kinesis to binary-search for the poisoned record rather than retrying indefinitely.
-- Always configure a `destination_config` with an on-failure destination for streams — otherwise unprocessable records are silently dropped.
-- Use `filter_criteria` to reduce Lambda invocations for events you don't need to process — you pay per invocation.
+- Always configure a `destination_config` with an on-failure destination for streams - otherwise unprocessable records are silently dropped.
+- Use `filter_criteria` to reduce Lambda invocations for events you don't need to process - you pay per invocation.

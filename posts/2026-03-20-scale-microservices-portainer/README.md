@@ -1,4 +1,4 @@
-# How to Scale Individual Microservices in Portainer
+# How to Scale Individual Microservices in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ For Docker Swarm services:
 
 ```yaml
 # docker-compose.yml - Scalable microservice stack
+
 version: "3.8"
 
 networks:
@@ -241,4 +242,4 @@ docker service ps myapp_order_service
 
 ## Conclusion
 
-Portainer makes horizontal scaling intuitive — just change the replica count in the UI. For production environments, combine manual scaling (for planned events like marketing campaigns) with auto-scaling scripts based on Prometheus metrics (for unexpected load spikes). Docker Swarm ensures replicas are distributed across nodes, and Traefik's load balancer automatically routes traffic to all healthy replicas. Resource limits prevent any single service from consuming all available CPU and memory.
+Portainer makes horizontal scaling intuitive - just change the replica count in the UI. For production environments, combine manual scaling (for planned events like marketing campaigns) with auto-scaling scripts based on Prometheus metrics (for unexpected load spikes). Docker Swarm ensures replicas are distributed across nodes, and Traefik's load balancer automatically routes traffic to all healthy replicas. Resource limits prevent any single service from consuming all available CPU and memory.

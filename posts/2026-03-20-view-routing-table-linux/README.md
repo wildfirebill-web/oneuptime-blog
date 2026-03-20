@@ -12,6 +12,7 @@ The modern command for viewing routing tables on Linux is `ip route`:
 
 ```bash
 # Show main routing table
+
 ip route show
 
 # Shorter alias
@@ -23,7 +24,7 @@ ip route show
 
 Sample output:
 
-```
+```text
 default via 192.168.1.1 dev eth0 proto dhcp src 192.168.1.10 metric 100
 192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.10
 10.0.0.0/8 via 10.0.0.1 dev eth1 proto static metric 50
@@ -62,7 +63,7 @@ ip route get 8.8.8.8
 
 Sample output of `ip route get`:
 
-```
+```text
 8.8.8.8 via 192.168.1.1 dev eth0 src 192.168.1.10
     cache
 ```
@@ -93,7 +94,7 @@ netstat -rn
 
 Sample `route -n` output:
 
-```
+```text
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.1     0.0.0.0         UG    100    0        0 eth0

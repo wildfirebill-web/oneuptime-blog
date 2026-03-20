@@ -161,6 +161,7 @@ Your application code would then include the header on requests it knows are saf
 
 ```bash
 # This request will be retried on failure
+
 curl -H "x-idempotent: true" http://api-service:8080/users/123
 
 # This request will NOT be retried

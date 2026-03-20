@@ -60,6 +60,7 @@ Create the resolver and its outbound endpoint. Each endpoint needs a dedicated s
 
 ```bash
 # Create the outbound endpoint subnet with delegation
+
 az network vnet subnet create \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

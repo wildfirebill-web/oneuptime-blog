@@ -29,6 +29,7 @@ Structure your repository so each environment is a separate Flux Kustomization. 
 
 ```yaml
 # clusters/production/apps/kustomization.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -26,6 +26,7 @@ Here is a clean structure for a root module that deploys a web application:
 
 ```hcl
 # root module structure
+
 # environments/production/
 #   main.tf          - Module calls and resource wiring
 #   providers.tf     - Provider configuration

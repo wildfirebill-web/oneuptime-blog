@@ -18,6 +18,7 @@ Before tuning, establish a baseline:
 
 ```bash
 # Install fio for storage benchmarking
+
 kubectl run fio-test --image=xridge/fio:latest --restart=Never \
   --overrides='{"spec":{"volumes":[{"name":"test","persistentVolumeClaim":{"claimName":"test-pvc"}}],"containers":[{"name":"fio","image":"xridge/fio:latest","command":["sleep","infinity"],"volumeMounts":[{"name":"test","mountPath":"/data"}]}]}}'
 
@@ -59,7 +60,7 @@ metadata:
   name: longhorn-perf
 provisioner: driver.longhorn.io
 parameters:
-  numberOfReplicas: "2"          # Reduce from 3 — less write amplification
+  numberOfReplicas: "2"          # Reduce from 3 - less write amplification
   staleReplicaTimeout: "20"
   dataLocality: "best-effort"    # Prefer local replica reads
   diskSelector: ""
@@ -82,7 +83,7 @@ kubectl patch setting -n longhorn-system \
 # Or configure per volume in StorageClass
 # dataLocality: "strict-local"   # Always use local replica (fastest)
 # dataLocality: "best-effort"    # Prefer local, fall back to remote
-# dataLocality: "disabled"       # Default — no preference
+# dataLocality: "disabled"       # Default - no preference
 ```
 
 ---
@@ -145,7 +146,7 @@ kubectl patch setting -n longhorn-system \
   -p '{"value":"true"}'
 ```
 
-Note: Disabling revision counter means Longhorn cannot detect dirty replicas after an unclean shutdown — enable only for workloads with application-level consistency guarantees.
+Note: Disabling revision counter means Longhorn cannot detect dirty replicas after an unclean shutdown - enable only for workloads with application-level consistency guarantees.
 
 ---
 
@@ -177,6 +178,6 @@ sysctl -w net.ipv4.tcp_wmem="4096 65536 268435456"
 
 ## Best Practices
 
-- Apply `dataLocality: strict-local` only for stateful workloads with node affinity — otherwise pod migrations will cause remote I/O.
-- Benchmark after each change to verify the improvement — not all optimizations help equally for all workload patterns.
+- Apply `dataLocality: strict-local` only for stateful workloads with node affinity - otherwise pod migrations will cause remote I/O.
+- Benchmark after each change to verify the improvement - not all optimizations help equally for all workload patterns.
 - Use dedicated SSDs for Longhorn data directories on database nodes and keep spinning disks for backup or archival volumes.

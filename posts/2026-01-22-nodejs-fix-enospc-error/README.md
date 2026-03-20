@@ -29,6 +29,7 @@ Error: ENOSPC: System limit for number of file watchers reached
 
 ```bash
 # Check disk space
+
 df -h
 
 # Check inode usage

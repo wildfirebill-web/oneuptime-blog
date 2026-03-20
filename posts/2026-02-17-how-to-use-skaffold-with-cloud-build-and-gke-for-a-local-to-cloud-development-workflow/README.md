@@ -32,6 +32,7 @@ If you need to create a GKE cluster quickly, here is the command.
 
 ```bash
 # Create an Autopilot GKE cluster in us-central1
+
 gcloud container clusters create-auto my-dev-cluster \
   --region=us-central1 \
   --project=my-gcp-project

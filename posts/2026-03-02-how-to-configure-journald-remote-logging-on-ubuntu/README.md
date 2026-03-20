@@ -24,6 +24,7 @@ Data flows one-way from clients to the server. The server stores received journa
 
 ```bash
 # Install on the server
+
 sudo apt update
 sudo apt install systemd-journal-remote
 ```

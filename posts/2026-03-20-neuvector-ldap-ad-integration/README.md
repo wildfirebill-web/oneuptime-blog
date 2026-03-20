@@ -21,7 +21,7 @@ Integrating NeuVector with LDAP (Lightweight Directory Access Protocol) or Micro
 
 Before configuring NeuVector, collect these details from your LDAP/AD administrator:
 
-```
+```text
 Server:           ldap.company.com or ad.company.com
 Port:             389 (LDAP) or 636 (LDAPS)
 Base DN:          DC=company,DC=com
@@ -37,6 +37,7 @@ Group DN:         OU=Security Groups,DC=company,DC=com
 
 ```bash
 # Configure LDAP/AD integration
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/system/config" \
   -H "Content-Type: application/json" \
@@ -91,7 +92,7 @@ curl -sk -X PATCH \
 2. Toggle **Enable** to **On**
 3. Fill in the form:
 
-```
+```text
 Directory Type: Microsoft AD / OpenLDAP
 Hostname: ad.company.com
 Port: 636
@@ -227,4 +228,4 @@ curl -sk \
 
 ## Conclusion
 
-LDAP/AD integration centralizes NeuVector authentication within your existing identity management infrastructure. By mapping LDAP groups to NeuVector roles, you automatically inherit your organization's existing access control structure — when an employee is added to or removed from an AD group, their NeuVector access updates automatically. Always keep the local admin account as an emergency fallback during LDAP outages.
+LDAP/AD integration centralizes NeuVector authentication within your existing identity management infrastructure. By mapping LDAP groups to NeuVector roles, you automatically inherit your organization's existing access control structure - when an employee is added to or removed from an AD group, their NeuVector access updates automatically. Always keep the local admin account as an emergency fallback during LDAP outages.

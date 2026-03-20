@@ -16,6 +16,7 @@ Unlike kubectl get which shows tabular summaries, kubectl describe provides deta
 
 ```bash
 # Describe a pod
+
 kubectl describe pod myapp-7d8f9b6c5d-k4m2n
 
 # Describe with namespace

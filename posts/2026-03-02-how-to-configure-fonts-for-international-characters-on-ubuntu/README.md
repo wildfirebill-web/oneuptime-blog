@@ -16,6 +16,7 @@ Unicode defines over 140,000 characters across hundreds of scripts. No single fo
 
 ```bash
 # Check which font will be used to render a specific Unicode character
+
 # 0x4e2d = Chinese character "中"
 fc-match --format='%{family}: %{file}\n' :charset=4e2d
 

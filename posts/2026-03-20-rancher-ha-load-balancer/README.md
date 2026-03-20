@@ -1,4 +1,4 @@
-# How to Configure Rancher HA with External Load Balancer
+# How to Configure Rancher HA with External Load Balancer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ An external load balancer is the entry point for all Rancher traffic in an HA co
 
 ```bash
 # Create target group for Rancher HTTPS
+
 aws elbv2 create-target-group \
   --name rancher-tg \
   --protocol HTTPS \
@@ -209,4 +210,4 @@ aws route53 change-resource-record-sets \
 
 ## Conclusion
 
-A properly configured load balancer is essential for Rancher HA's reliability and performance. Use NLB over ALB when possible for better WebSocket support—the persistent connections from Rancher cluster agents require long-lived TCP connections that NLB handles more efficiently. Configure generous idle timeouts (3600s+) to prevent premature connection termination, and use the `/ping` endpoint for fast health checks. For production deployments, test failover behavior by temporarily removing nodes from the target group to verify traffic shifts correctly.
+A properly configured load balancer is essential for Rancher HA's reliability and performance. Use NLB over ALB when possible for better WebSocket support-the persistent connections from Rancher cluster agents require long-lived TCP connections that NLB handles more efficiently. Configure generous idle timeouts (3600s+) to prevent premature connection termination, and use the `/ping` endpoint for fast health checks. For production deployments, test failover behavior by temporarily removing nodes from the target group to verify traffic shifts correctly.

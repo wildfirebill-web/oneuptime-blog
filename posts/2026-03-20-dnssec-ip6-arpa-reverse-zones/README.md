@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNSSEC, IPv6, Reverse DNS, ip6.arpa, BIND, PTR Records
+Tags: DNSSEC, IPv6, Reverse DNS, Ip6.arpa, BIND, PTR Records
 
 Description: Sign IPv6 reverse DNS zones (ip6.arpa) with DNSSEC including zone structure, key generation, signing procedures, and DS record delegation for reverse zones.
 
@@ -10,7 +10,7 @@ Description: Sign IPv6 reverse DNS zones (ip6.arpa) with DNSSEC including zone s
 
 IPv6 reverse DNS uses nibble format in `ip6.arpa`:
 
-```
+```text
 IPv6 address:  2001:0db8:0001:0002:0003:0004:0005:0006
 Reverse zone:  6.0.0.0.5.0.0.0.4.0.0.0.3.0.0.0.2.0.0.0.1.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa
 
@@ -21,7 +21,7 @@ Zone for /48:  1.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa
 
 ## Creating the ip6.arpa Zone File
 
-```
+```bash
 ; /var/named/2001:db8:1::-48.zone (or use a descriptive filename)
 ; Zone: 1.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa (2001:db8:1::/48)
 
@@ -53,7 +53,7 @@ $TTL 3600
 
 ```python
 #!/usr/bin/env python3
-# gen-ipv6-reverse.py — Generate ip6.arpa PTR records from AAAA records
+# gen-ipv6-reverse.py - Generate ip6.arpa PTR records from AAAA records
 
 import ipaddress
 import re
@@ -78,6 +78,7 @@ def zone_name_for_prefix(prefix: str) -> str:
     return ".".join(reversed(list(relevant_nibbles))) + ".ip6.arpa."
 
 # Parse forward zone and generate reverse records
+
 forward_zone = """
 www     IN AAAA 2001:db8:1::10
 ns1     IN AAAA 2001:db8:1::1
@@ -106,8 +107,8 @@ for line in forward_zone.strip().splitlines():
 
 ## BIND Configuration for ip6.arpa Zones
 
-```
-// /etc/named.conf — Configure ip6.arpa reverse zone
+```text
+// /etc/named.conf - Configure ip6.arpa reverse zone
 
 zone "1.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa" {
     type master;
@@ -151,7 +152,7 @@ dig +dnssec PTR \
 
 ## Delegating ip6.arpa to Your Authoritative Server
 
-```
+```text
 # Contact your RIR (ARIN, RIPE, APNIC) or ISP to delegate
 # They configure NS and DS records for your ip6.arpa zone
 
@@ -183,7 +184,7 @@ dig +dnssec PTR \
 host -t PTR 2001:db8:1::10
 
 # DNSViz visualization (shows full DNSSEC chain)
-# https://dnsviz.net/ — enter the ip6.arpa zone name
+# https://dnsviz.net/ - enter the ip6.arpa zone name
 ```
 
 ## Conclusion

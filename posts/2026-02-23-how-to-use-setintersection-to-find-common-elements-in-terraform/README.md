@@ -16,6 +16,7 @@ The `setintersection` function takes two or more sets and returns a new set cont
 
 ```hcl
 # Find common elements between two sets
+
 > setintersection(["a", "b", "c"], ["b", "c", "d"])
 toset([
   "b",

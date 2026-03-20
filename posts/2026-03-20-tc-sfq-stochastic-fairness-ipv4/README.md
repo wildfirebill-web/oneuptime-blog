@@ -18,6 +18,7 @@ SFQ uses a hash of the 5-tuple (source IP, destination IP, source port, destinat
 
 ```bash
 # Apply SFQ to the root of eth0
+
 sudo tc qdisc add dev eth0 root sfq perturb 10
 
 # Verify the rule
@@ -87,7 +88,7 @@ sudo tc filter add dev eth0 parent 1: protocol ip prio 1 u32 \
 sudo tc -s qdisc show dev eth0
 ```
 
-Look for `dropped` packets — a high drop rate indicates the queue is consistently full and the rate limit may be too low.
+Look for `dropped` packets - a high drop rate indicates the queue is consistently full and the rate limit may be too low.
 
 ## Removing SFQ Rules
 

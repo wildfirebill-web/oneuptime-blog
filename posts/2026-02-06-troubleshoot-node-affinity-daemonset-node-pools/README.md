@@ -12,6 +12,7 @@ You deployed the OpenTelemetry Collector as a DaemonSet expecting it to run on e
 
 ```bash
 # Check which nodes have Collector pods and which do not
+
 kubectl get pods -n observability -l app=otel-collector -o wide
 
 # Compare with the full node list

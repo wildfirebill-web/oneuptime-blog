@@ -1424,6 +1424,7 @@ android {
 # proguard-rules.pro
 
 # Keep Retrofit interfaces
+
 -keep,allowobfuscation interface * {
     @retrofit2.http.* <methods>;
 }

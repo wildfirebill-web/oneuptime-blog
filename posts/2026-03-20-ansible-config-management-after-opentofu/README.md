@@ -15,7 +15,8 @@ OpenTofu is ideal for provisioning cloud infrastructure (VMs, networks, database
 ## Phase 1: Provision Infrastructure with OpenTofu
 
 ```hcl
-# main.tf — provision an EC2 instance
+# main.tf - provision an EC2 instance
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"

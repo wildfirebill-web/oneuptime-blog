@@ -25,6 +25,7 @@ Create a simple PDB:
 
 ```yaml
 # basic-pdb.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

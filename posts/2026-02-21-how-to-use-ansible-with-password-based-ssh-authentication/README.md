@@ -18,6 +18,7 @@ Password-based SSH requires the `sshpass` utility on the Ansible controller. Ans
 
 ```bash
 # Install sshpass on Ubuntu/Debian
+
 sudo apt-get update && sudo apt-get install -y sshpass
 
 # Install sshpass on CentOS/RHEL

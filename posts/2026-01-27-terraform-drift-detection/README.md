@@ -42,6 +42,7 @@ The simplest drift detection is running `terraform plan`:
 terraform plan
 
 # Output shows drift:
+
 # aws_instance.web has changed
 #   ~ instance_type = "t3.medium" -> "t3.large"
 #   ~ tags = {

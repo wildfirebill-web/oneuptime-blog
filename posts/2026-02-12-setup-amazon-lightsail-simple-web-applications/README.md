@@ -43,6 +43,7 @@ You can create an instance through the CLI. Pick your blueprint (OS or applicati
 
 ```bash
 # List available blueprints to see what's offered
+
 aws lightsail get-blueprints \
   --query 'blueprints[?isActive==`true`].{Id: blueprintId, Name: name, Type: type}' \
   --output table

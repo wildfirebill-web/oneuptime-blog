@@ -28,7 +28,7 @@ CoAP (Constrained Application Protocol) is defined in RFC 7252 as a RESTful prot
 3. **ACK (Acknowledgement)**: Response to CON
 4. **RST (Reset)**: Error response
 
-```
+```text
 CON request:  CLIENT ─── [GET /temp] ──► SERVER
 ACK response: CLIENT ◄── [2.05 Content: 23°C] ─── SERVER
 
@@ -40,7 +40,7 @@ NON request (telemetry):
 
 CoAP uses URIs similar to HTTP:
 
-```
+```text
 coap://[2001:db8::1]/sensor/temperature
 coap://[2001:db8::1]:5683/actuator/led?state=on
 coaps://[2001:db8::1]:5684/secure/data   (DTLS-secured)
@@ -51,6 +51,7 @@ coaps://[2001:db8::1]:5684/secure/data   (DTLS-secured)
 ```python
 #!/usr/bin/env python3
 # coap_server.py - Simple CoAP server using aiocoap
+
 # pip install aiocoap
 
 import asyncio

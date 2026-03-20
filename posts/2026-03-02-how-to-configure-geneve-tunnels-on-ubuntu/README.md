@@ -30,6 +30,7 @@ For most use cases they are functionally equivalent. Choose GENEVE when you need
 
 ```bash
 # Check kernel support for GENEVE
+
 modinfo geneve 2>/dev/null && echo "GENEVE supported" || echo "Not supported"
 
 # Load the module

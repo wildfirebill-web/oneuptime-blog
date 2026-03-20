@@ -26,7 +26,7 @@ Portainer provides a comprehensive view of your Docker Swarm cluster, including 
 
 The Swarm dashboard shows a summary:
 
-```
+```bash
 Docker Swarm Environment
 ─────────────────────────────
 Services:          12         Running Swarm services
@@ -43,7 +43,7 @@ Navigate to **Swarm** in the sidebar to see node details:
 
 ### Cluster Information
 
-```
+```text
 Swarm ID:    9dh8x4...7f2a
 Managers:    1
 Workers:     4
@@ -68,7 +68,7 @@ Each node shows:
 
 Click on a node row to see detailed information:
 
-```
+```text
 Node ID:           abc123def456
 Hostname:          worker-01
 IP Address:        10.0.1.11
@@ -89,7 +89,7 @@ Labels:
 
 In the node detail view, scroll down to see tasks (containers) running on that node:
 
-```
+```text
 Tasks on worker-01
 ──────────────────────────────────────────────────────
 ID           Service              State     Image
@@ -130,6 +130,7 @@ View overlay networks used for inter-service communication:
 
 ```bash
 # View overlay networks from CLI
+
 docker network ls --filter driver=overlay
 
 # Inspect a specific overlay network
@@ -143,7 +144,7 @@ Docker Swarm configs and secrets are cluster-wide:
 - **Configs** → Navigate to **Swarm → Configs**
 - **Secrets** → Navigate to **Swarm → Secrets**
 
-These are distinct from environment variables — configs and secrets are distributed to containers that reference them in service definitions.
+These are distinct from environment variables - configs and secrets are distributed to containers that reference them in service definitions.
 
 ## Interpreting Node Status
 

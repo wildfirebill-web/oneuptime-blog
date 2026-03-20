@@ -33,6 +33,7 @@ Check how your kubelet is currently configured:
 
 ```bash
 # View kubelet process with all flags
+
 ps aux | grep kubelet
 
 # Example output:

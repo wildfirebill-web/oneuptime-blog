@@ -56,6 +56,7 @@ First, verify whether the queue actually exists on the RabbitMQ server.
 
 ```bash
 # List all queues in the default vhost
+
 rabbitmqctl list_queues name messages consumers
 
 # List queues in a specific vhost

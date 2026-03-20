@@ -195,6 +195,7 @@ If you need to get the certificate from a server:
 
 ```bash
 # Using openssl
+
 openssl s_client -connect internal-api.example.com:443 -showcerts </dev/null 2>/dev/null | openssl x509 -outform PEM > server-cert.pem
 
 # For the full chain

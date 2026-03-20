@@ -14,6 +14,7 @@ Active-active deployments run identical workloads in multiple regions simultaneo
 
 ```hcl
 # main.tf - Route53 latency routing across regions
+
 locals {
   regions = {
     "us-east-1" = {

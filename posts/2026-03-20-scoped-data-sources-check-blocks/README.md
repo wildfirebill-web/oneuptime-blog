@@ -1,4 +1,4 @@
-# How to Use Scoped Data Sources in Check Blocks in OpenTofu
+# How to Use Scoped Data Sources in Check Blocks in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Check blocks can contain a single `data` block whose scope is limited to that ch
 
 ```hcl
 check "block_name" {
-  # Scoped data source — evaluated only within this check
+  # Scoped data source - evaluated only within this check
   data "resource_type" "local_name" {
     # data source configuration
   }
@@ -130,12 +130,13 @@ check "database_is_multi_az" {
 ## Scoped vs Global Data Sources
 
 ```hcl
-# Global data source — accessible throughout the config
+# Global data source - accessible throughout the config
+
 data "aws_vpc" "main" {
   id = var.vpc_id
 }
 
-# Scoped data source — only accessible within this check block
+# Scoped data source - only accessible within this check block
 check "vpc_dns_enabled" {
   data "aws_vpc" "check_vpc" {
     id = var.vpc_id

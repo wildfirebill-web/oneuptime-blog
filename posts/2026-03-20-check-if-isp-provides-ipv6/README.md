@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ISP, Connectivity Test, Home Network, Consumer
+Tags: IPv6, ISP, Connectivity Tests, Home Network, Consumer
 
 Description: Multiple methods to check whether your Internet Service Provider supports IPv6, from web-based tests to command-line tools.
 
@@ -28,7 +28,7 @@ Other useful test sites:
 
 Log into your router admin panel and look at the WAN status page:
 
-```
+```text
 Expected with IPv6:
   WAN IPv4: 203.0.113.45
   WAN IPv6: 2001:db8:1234:5678::1/64   ← Global IPv6 address
@@ -45,6 +45,7 @@ Without IPv6:
 
 ```powershell
 # Check if you have a global IPv6 address (starts with 2xxx or 3xxx)
+
 ipconfig | Select-String "IPv6 Address"
 
 # Test connectivity to a well-known IPv6 address
@@ -120,4 +121,4 @@ Options include:
 
 ## Conclusion
 
-Checking for IPv6 support is quick — the `test-ipv6.com` website gives a definitive answer in seconds. If your ISP supports IPv6 but your devices don't have addresses, the issue is router configuration, covered in the other guides in this series.
+Checking for IPv6 support is quick - the `test-ipv6.com` website gives a definitive answer in seconds. If your ISP supports IPv6 but your devices don't have addresses, the issue is router configuration, covered in the other guides in this series.

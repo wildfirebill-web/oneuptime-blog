@@ -14,7 +14,7 @@ Module naming conventions govern both how you name module directories in your pr
 
 Local module directories use kebab-case (hyphens) by convention, matching the way module sources are referenced in registry addresses:
 
-```
+```text
 modules/
 ├── vpc/                    # Simple single-word module
 ├── eks-cluster/            # Multi-word: use hyphens
@@ -30,7 +30,8 @@ modules/
 Module call blocks (the `module` keyword in your `.tf` files) use snake_case:
 
 ```hcl
-# GOOD — snake_case, descriptive, matches the module's purpose
+# GOOD - snake_case, descriptive, matches the module's purpose
+
 module "vpc" {}
 module "eks_cluster" {}
 module "rds_postgres" {}
@@ -72,7 +73,7 @@ Module input variables should be descriptive and consistent within the module:
 ```hcl
 # modules/eks-cluster/variables.tf
 
-# GOOD — clear, consistent naming
+# GOOD - clear, consistent naming
 variable "cluster_name" {
   type        = string
   description = "Name of the EKS cluster"
@@ -94,8 +95,8 @@ variable "subnet_ids" {
   description = "List of subnet IDs for the cluster nodes"
 }
 
-# AVOID — ambiguous names
-variable "name" {}        # Too generic — name of what?
+# AVOID - ambiguous names
+variable "name" {}        # Too generic - name of what?
 variable "id" {}          # Which ID?
 variable "enabled" {}     # Enabled what?
 ```
@@ -105,7 +106,7 @@ variable "enabled" {}     # Enabled what?
 ```hcl
 # modules/eks-cluster/outputs.tf
 
-# GOOD — prefixed with the resource type for clarity
+# GOOD - prefixed with the resource type for clarity
 output "cluster_id" {
   description = "ID of the EKS cluster"
   value       = aws_eks_cluster.main.id

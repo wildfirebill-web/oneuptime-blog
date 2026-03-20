@@ -169,6 +169,7 @@ The Cloud Console is good for exploration, but gcloud is faster for targeted que
 
 ```bash
 # Get the last 50 error logs for a function
+
 gcloud logging read \
   'resource.type="cloud_function" AND resource.labels.function_name="my-function" AND severity>=ERROR' \
   --limit=50 \

@@ -23,6 +23,7 @@ Before any port forwarding will work, the Linux kernel needs to have IP forwardi
 
 ```yaml
 # enable_ip_forwarding.yml - Enable kernel IP forwarding
+
 ---
 - name: Enable IP forwarding
   hosts: gateway_servers

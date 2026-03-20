@@ -95,6 +95,7 @@ The following command creates a three-node DAX cluster with encryption enabled. 
 
 ```bash
 # Create a subnet group for DAX
+
 # Subnets should be in different Availability Zones for high availability
 aws dax create-subnet-group \
     --subnet-group-name my-dax-subnet-group \

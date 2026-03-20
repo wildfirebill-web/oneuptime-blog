@@ -18,6 +18,7 @@ The install disk is specified in the `machine.install.disk` field of your Talos 
 
 ```yaml
 # Basic install disk configuration
+
 machine:
   install:
     disk: /dev/sda

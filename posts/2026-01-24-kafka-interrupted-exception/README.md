@@ -742,6 +742,7 @@ public class KubernetesConsumer {
 
 ```yaml
 # Kubernetes deployment with proper termination settings
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

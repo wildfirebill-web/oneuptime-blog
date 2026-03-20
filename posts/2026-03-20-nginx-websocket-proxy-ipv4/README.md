@@ -8,7 +8,7 @@ Description: Learn how to configure Nginx as a reverse proxy for WebSocket conne
 
 ## Why WebSocket Proxying Needs Special Configuration
 
-Standard HTTP proxies buffer complete responses. WebSocket is a long-lived bidirectional connection that requires HTTP protocol upgrade — Nginx must be told to pass the `Upgrade` and `Connection` headers and use HTTP/1.1 for persistent connections.
+Standard HTTP proxies buffer complete responses. WebSocket is a long-lived bidirectional connection that requires HTTP protocol upgrade - Nginx must be told to pass the `Upgrade` and `Connection` headers and use HTTP/1.1 for persistent connections.
 
 ## Basic WebSocket Proxy
 
@@ -86,6 +86,7 @@ server {
 
 ```nginx
 # Separate server block for HTTP redirect
+
 server {
     listen 80;
     server_name ws.example.com;
@@ -120,7 +121,7 @@ server {
 
 | Directive | Purpose |
 |-----------|---------|
-| `proxy_http_version 1.1` | Required — HTTP/1.0 does not support keep-alive |
+| `proxy_http_version 1.1` | Required - HTTP/1.0 does not support keep-alive |
 | `proxy_set_header Upgrade $http_upgrade` | Forward the WebSocket upgrade request |
 | `proxy_set_header Connection "upgrade"` | Tell backend to keep the connection |
 | `proxy_read_timeout 3600s` | Prevent Nginx from closing idle WebSocket connections |

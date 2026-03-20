@@ -16,6 +16,7 @@ Every container-based CI/CD pipeline starts with a container registry. This modu
 
 ```hcl
 # modules/ecr/variables.tf
+
 variable "name" {
   description = "Name of the ECR repository"
   type        = string

@@ -83,6 +83,7 @@ Here's the full CloudFormation template. It's long, but every piece is necessary
 
 ```yaml
 # three-tier-vpc.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Three-tier VPC architecture
 

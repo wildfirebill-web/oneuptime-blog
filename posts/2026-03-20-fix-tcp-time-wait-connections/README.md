@@ -14,6 +14,7 @@ TIME_WAIT is a normal TCP state that every short-lived connection passes through
 
 ```bash
 # Count TIME_WAIT connections
+
 ss -tn state time-wait | wc -l
 
 # See which remote addresses have the most TIME_WAIT
@@ -26,8 +27,8 @@ ss -tn state time-wait | awk '{print $4}' | cut -d: -f2 | sort -n | head -5
 
 ## Understanding Why TIME_WAIT Happens
 
-```
-TIME_WAIT is created by the ACTIVE CLOSER — the side that sends the first FIN.
+```text
+TIME_WAIT is created by the ACTIVE CLOSER - the side that sends the first FIN.
 
 - HTTP/1.0 server closes connection after each request → server has TIME_WAIT
 - HTTP client with connection pooling → client has TIME_WAIT when pool shrinks
@@ -105,9 +106,9 @@ watch -n 5 "ss -tn state time-wait | wc -l"
 
 # After applying fixes, TIME_WAIT count should stabilize below port range exhaustion
 # A healthy system with short-lived connections may have thousands of TIME_WAIT
-# — this is normal as long as it doesn't exceed ~50,000
+# - this is normal as long as it doesn't exceed ~50,000
 ```
 
 ## Conclusion
 
-TIME_WAIT accumulation is a symptom of many short-lived connections, not a bug. The best fix is connection pooling and HTTP keep-alive to reduce connection churn. `tcp_tw_reuse=1` is a safe kernel-level mitigation for outbound connections. Expanding the local port range provides headroom. Avoid `tcp_tw_recycle` — it was removed in Linux 4.12 due to breaking NAT scenarios.
+TIME_WAIT accumulation is a symptom of many short-lived connections, not a bug. The best fix is connection pooling and HTTP keep-alive to reduce connection churn. `tcp_tw_reuse=1` is a safe kernel-level mitigation for outbound connections. Expanding the local port range provides headroom. Avoid `tcp_tw_recycle` - it was removed in Linux 4.12 due to breaking NAT scenarios.

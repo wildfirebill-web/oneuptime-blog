@@ -1,26 +1,26 @@
----
-title: "Setting Up a Local Provider Mirror in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, mirror
-description: "Learn how to set up a local filesystem provider mirror in OpenTofu for air-gapped environments and faster initialization."
----
-
 # Setting Up a Local Provider Mirror in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Mirror
+
+Description: Learn how to set up a local filesystem provider mirror in OpenTofu for air-gapped environments and faster initialization.
 
 A local filesystem provider mirror stores provider packages on disk, enabling OpenTofu to work without internet access. This is essential for air-gapped environments, improving init performance, and ensuring providers are always available.
 
 ## Why Use a Local Mirror?
 
-- **Air-gapped networks** — servers without internet access
-- **Faster CI/CD** — avoid downloading providers on every run
-- **Security compliance** — control exactly which providers are used
-- **Offline development** — work without internet connectivity
-- **Bandwidth savings** — download once, use everywhere
+- **Air-gapped networks** - servers without internet access
+- **Faster CI/CD** - avoid downloading providers on every run
+- **Security compliance** - control exactly which providers are used
+- **Offline development** - work without internet connectivity
+- **Bandwidth savings** - download once, use everywhere
 
 ## Creating a Filesystem Mirror
 
 ```bash
 # Create the mirror directory
+
 mkdir -p /opt/terraform-mirror
 
 # Use tofu providers mirror to download providers
@@ -32,7 +32,7 @@ tofu providers mirror /opt/terraform-mirror
 
 The mirror directory structure:
 
-```
+```text
 /opt/terraform-mirror/
 └── registry.opentofu.org/
     └── hashicorp/
@@ -71,7 +71,7 @@ provider_installation {
     path    = "/opt/terraform-mirror"
     include = ["registry.opentofu.org/*/*"]
   }
-  # No 'direct' block — never connect to the internet
+  # No 'direct' block - never connect to the internet
 }
 ```
 

@@ -233,6 +233,7 @@ When health checks fail, start with these steps:
 
 ```bash
 # Check the application health endpoint directly
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:8080/healthz
 
 # Check the pilot-agent proxy endpoint

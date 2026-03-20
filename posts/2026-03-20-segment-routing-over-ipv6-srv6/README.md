@@ -16,7 +16,7 @@ Segment Routing over IPv6 (SRv6) is a source-routing architecture that uses IPv6
 
 An SRv6 SID is a 128-bit IPv6 address structured as:
 
-```
+```javascript
 SID = Locator (prefix) + Function + Arguments
 
 Example SID: 2001:db8:1:1:e000::
@@ -29,7 +29,7 @@ Example SID: 2001:db8:1:1:e000::
 
 The SRH is an IPv6 Routing Header (Type 4) that carries the ordered list of SIDs.
 
-```
+```text
 IPv6 Header:
   Destination: first SID in the segment list
   Next Header: 43 (Routing Header)

@@ -16,6 +16,7 @@ grep searches for patterns in text. For log analysis, the key is knowing which f
 
 ```bash
 # Basic search
+
 grep "error" /var/log/syslog
 
 # Case-insensitive search

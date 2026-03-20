@@ -20,6 +20,7 @@ The WORKSPACE file is where you declare OpenTelemetry as an external dependency.
 
 ```python
 # WORKSPACE file - declare OpenTelemetry as an external dependency
+
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 # OpenTelemetry C++ SDK

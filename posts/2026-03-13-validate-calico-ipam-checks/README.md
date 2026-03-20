@@ -17,6 +17,7 @@ Validating Calico IPAM health goes beyond running `calicoctl ipam check` and rea
 ```bash
 #!/bin/bash
 # validate-calico-ipam.sh
+
 PASS=0
 FAIL=0
 WARN=0

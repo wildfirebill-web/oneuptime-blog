@@ -18,6 +18,7 @@ Before diving into troubleshooting, verify which endpoint you're trying to reach
 
 ```bash
 # Check your current kubeconfig context
+
 kubectl config view --minify
 
 # Extract the API server endpoint

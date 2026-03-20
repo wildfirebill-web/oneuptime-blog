@@ -20,6 +20,7 @@ The etcd data directory lives on the EPHEMERAL partition at `/var/lib/etcd`. Thi
 
 ```bash
 # Check etcd status on a control plane node
+
 talosctl service etcd --nodes 10.0.0.10
 
 # List etcd members

@@ -16,6 +16,7 @@ If the dashboard was not enabled during bootstrap:
 
 ```bash
 # Enable the dashboard module
+
 sudo ceph mgr module enable dashboard
 
 # Verify it is enabled

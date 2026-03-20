@@ -16,6 +16,7 @@ The `--limit` flag takes a host pattern and restricts execution to matching host
 
 ```bash
 # Run a playbook on only one specific host
+
 ansible-playbook -i inventory/hosts.yml site.yml --limit web01
 
 # Run on a specific group

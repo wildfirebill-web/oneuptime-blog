@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Typesense
+
 version: "3.8"
 
 services:
@@ -54,7 +55,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 TYPESENSE_API_KEY=your-admin-api-key-min-16-chars
 ```
 
@@ -141,4 +142,4 @@ console.log(searchResults.hits);
 
 ## Conclusion
 
-Typesense stores all data on disk (`/data` volume) and loads the index into memory for fast queries. The `--api-key` is the admin key — generate separate scoped API keys for client-side search to prevent users from modifying collections. Enable `--enable-cors` when Typesense is queried directly from browser JavaScript. For production, generate a read-only scoped key with field-level permissions using the `/keys` endpoint.
+Typesense stores all data on disk (`/data` volume) and loads the index into memory for fast queries. The `--api-key` is the admin key - generate separate scoped API keys for client-side search to prevent users from modifying collections. Enable `--enable-cors` when Typesense is queried directly from browser JavaScript. For production, generate a read-only scoped key with field-level permissions using the `/keys` endpoint.

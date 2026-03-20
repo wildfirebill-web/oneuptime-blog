@@ -14,6 +14,7 @@ Processors run in the order they are listed in the pipeline configuration. If `m
 
 ```yaml
 # Bad - memory_limiter runs after batch has already accumulated data
+
 service:
   pipelines:
     traces:

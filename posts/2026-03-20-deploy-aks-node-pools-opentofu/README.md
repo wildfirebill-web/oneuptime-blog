@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, AKS, Kubernetes, Node Pools, Infrastructure as Code
+Tags: OpenTofu, Azure, AKS, Kubernetes, Node Pool, Infrastructure as Code
 
 Description: Learn how to deploy an Azure Kubernetes Service cluster with multiple node pools using OpenTofu, including system and user node pools, autoscaling, and cluster configuration.
 
@@ -22,10 +22,11 @@ graph TB
     D --> G[Standard_NC6s_v3 x 0-5]
 ```
 
-## Resource Group and Identity
+Resource Group and Identity
 
 ```hcl
 # main.tf
+
 resource "azurerm_resource_group" "aks" {
   name     = "rg-${var.cluster_name}-${var.environment}"
   location = var.location
@@ -56,7 +57,7 @@ resource "azurerm_kubernetes_cluster" "main" {
   dns_prefix          = var.cluster_name
   kubernetes_version  = var.kubernetes_version
 
-  # System node pool — required
+  # System node pool - required
   default_node_pool {
     name                 = "system"
     node_count           = 3
@@ -204,7 +205,7 @@ output "kubelet_identity_object_id" {
 ## Best Practices
 
 - Enable `only_critical_addons_enabled` on the system node pool so it stays free for core Kubernetes components.
-- Use ephemeral OS disks for node pools — they're faster and cost less than managed disks for stateless nodes.
+- Use ephemeral OS disks for node pools - they're faster and cost less than managed disks for stateless nodes.
 - Enable Azure RBAC (`azure_rbac_enabled = true`) for fine-grained Kubernetes access control integrated with Entra ID.
 - Set `min_count = 0` for GPU and spot node pools to scale to zero when idle and reduce costs.
 - Use separate subnet IDs per node pool if you need network isolation between workloads.

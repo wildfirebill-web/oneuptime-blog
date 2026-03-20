@@ -21,6 +21,7 @@ When you set `-P 0`, Ansible starts the task and immediately returns without wai
 
 ```bash
 # Run a command in the background with a 1-hour timeout, check every 30 seconds
+
 ansible all -m shell -a "apt-get dist-upgrade -y" --become -B 3600 -P 30
 
 # Fire and forget: start the task and return immediately

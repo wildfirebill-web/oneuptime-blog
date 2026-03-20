@@ -131,6 +131,7 @@ If you want to change the global autovacuum settings across all tables, use Allo
 
 ```bash
 # Increase the number of autovacuum workers
+
 gcloud alloydb instances update my-primary \
   --cluster=my-alloydb-cluster \
   --region=us-central1 \

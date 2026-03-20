@@ -23,6 +23,7 @@ Many clusters disable port 10255 for security. If your receiver is configured to
 
 ```bash
 # Check the Collector logs for kubeletstats errors
+
 kubectl logs -n observability -l app=otel-collector | grep -i "kubelet\|stats"
 
 # Common errors:

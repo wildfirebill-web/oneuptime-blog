@@ -35,6 +35,7 @@ Create a docs folder in your repository:
 
 ```bash
 # Create the documentation structure in your repo
+
 mkdir -p docs/architecture
 mkdir -p docs/runbooks
 mkdir -p docs/adr

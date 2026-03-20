@@ -16,6 +16,7 @@ EfficientIP organizes addresses under "Spaces" (equivalent to VRFs or address do
 
 ```bash
 # Create IPv6 space via REST API
+
 curl -u admin:password \
     -H "Content-Type: application/json" \
     -X POST \

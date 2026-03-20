@@ -26,6 +26,7 @@ The fastest way to audit STIG compliance is with OpenSCAP:
 
 ```bash
 # Install OpenSCAP tools and STIG content
+
 sudo dnf install openscap-scanner scap-security-guide -y
 
 # Run a STIG scan focused on file permissions

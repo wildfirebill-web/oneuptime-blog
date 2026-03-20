@@ -22,6 +22,7 @@ First, your module needs to live in its own Git repository. While you can use mo
 
 ```hcl
 # A typical module repository structure
+
 # terraform-aws-vpc/
 #   main.tf
 #   variables.tf

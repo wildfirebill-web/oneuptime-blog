@@ -38,6 +38,7 @@ graph TD
 
 ```hcl
 # terraform/main.tf - Only provision infrastructure
+
 resource "aws_instance" "app" {
   count         = var.app_server_count
   ami           = var.ami_id

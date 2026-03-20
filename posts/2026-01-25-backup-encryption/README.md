@@ -64,6 +64,7 @@ BACKUP_FILE="$1"
 RECIPIENT="backup-key@example.com"
 
 # Encrypt with GPG
+
 gpg --encrypt --recipient "$RECIPIENT" --output "${BACKUP_FILE}.gpg" "$BACKUP_FILE"
 
 # Verify encryption

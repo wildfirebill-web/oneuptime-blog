@@ -171,6 +171,7 @@ After switching to strict mode, watch for connection failures:
 
 ```bash
 # Check for connection resets in proxy logs
+
 kubectl logs -l app=my-service -c istio-proxy --tail=200 | grep "connection_termination"
 
 # Check Envoy stats for TLS errors

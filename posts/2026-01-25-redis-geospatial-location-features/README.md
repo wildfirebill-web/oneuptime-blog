@@ -35,6 +35,7 @@ Store locations with their latitude and longitude:
 
 ```bash
 # GEOADD key longitude latitude member [longitude latitude member ...]
+
 # Note: longitude comes before latitude
 
 # Add restaurant locations

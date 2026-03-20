@@ -1,11 +1,10 @@
----
-title: "How to Use Hash and Crypto Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, crypto
-description: "Learn how to use md5, sha1, sha256, sha512, and bcrypt functions in OpenTofu for hashing and cryptographic operations."
----
-
 # How to Use Hash and Crypto Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+
+Description: Learn how to use md5, sha1, sha256, sha512, and bcrypt functions in OpenTofu for hashing and cryptographic operations.
 
 OpenTofu provides several hashing functions for generating checksums, unique identifiers, and verifying data integrity. These are commonly used for creating unique resource names, generating configuration fingerprints, and managing secrets.
 
@@ -93,6 +92,7 @@ Computes a BCrypt password hash. The cost argument (default 10) controls computa
 
 ```hcl
 # Useful for setting initial passwords in user accounts
+
 resource "aws_iam_user_login_profile" "admin" {
   user                    = aws_iam_user.admin.name
   pgp_key                 = var.pgp_public_key

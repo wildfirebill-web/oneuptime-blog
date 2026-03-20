@@ -29,6 +29,7 @@ This is the biggest factor. Every sidecar proxy maintains a gRPC connection to i
 
 ```bash
 # Count the number of connected proxies
+
 kubectl exec -n istio-system deploy/istiod -- curl -s localhost:15014/debug/connections | wc -l
 
 # Or check via istioctl

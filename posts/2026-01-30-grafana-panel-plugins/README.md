@@ -50,6 +50,7 @@ Verify your setup:
 
 ```bash
 # Check Node.js version
+
 node --version
 
 # Check npm version
@@ -1395,7 +1396,7 @@ The Grafana plugin ecosystem gives you full control over how data is visualized.
 
 ---
 
-## Resources
+Resources
 
 - [Grafana Plugin Tools Documentation](https://grafana.com/developers/plugin-tools/)
 - [Grafana UI Components](https://developers.grafana.com/ui/)

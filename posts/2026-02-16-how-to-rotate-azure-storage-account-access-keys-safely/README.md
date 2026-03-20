@@ -16,6 +16,7 @@ Azure gives you two keys (key1 and key2) specifically to enable zero-downtime ro
 
 ```bash
 # View the current access keys
+
 az storage account keys list \
   --account-name mystorageaccount \
   --resource-group my-resource-group \

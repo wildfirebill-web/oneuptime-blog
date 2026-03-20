@@ -20,6 +20,7 @@ Install Telepresence on your machine:
 
 ```bash
 # macOS
+
 brew install datawire/blackbird/telepresence
 
 # Linux

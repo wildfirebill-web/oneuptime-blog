@@ -33,6 +33,7 @@ graph LR
 
 ```bash
 # Install clang, llvm, and BPF development headers
+
 sudo dnf install -y clang llvm bpftool libbpf-devel kernel-headers gcc
 
 # Install iproute2 for loading XDP programs

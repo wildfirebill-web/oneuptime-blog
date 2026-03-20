@@ -29,6 +29,7 @@ Here's a script that installs all the benchmarking tools you'll need on Amazon L
 
 ```bash
 # Install benchmarking tools on Amazon Linux 2023
+
 sudo yum groupinstall "Development Tools" -y
 sudo yum install -y sysbench fio iperf3 stress-ng htop
 

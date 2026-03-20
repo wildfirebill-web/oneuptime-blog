@@ -31,6 +31,7 @@ There are several scenarios where private DNS zones become essential:
 
 ```bash
 # Create a resource group
+
 az group create --name rg-privatedns-demo --location eastus
 
 # Create a private DNS zone

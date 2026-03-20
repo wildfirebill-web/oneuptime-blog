@@ -12,7 +12,7 @@ RIPE NCC (Réseaux IP Européens Network Coordination Centre) is the Regional In
 
 ## RIPE NCC IPv6 Address Policy
 
-```
+```text
 RIPE IPv6 Address Allocation Hierarchy:
 
 IANA
@@ -24,7 +24,7 @@ IANA
 
 ## Obtaining IPv6 Space from RIPE NCC
 
-```
+```text
 Requirements to receive IPv6 address space from RIPE NCC:
 
 1. Become an LIR (Local Internet Registry):
@@ -49,6 +49,7 @@ Requirements to receive IPv6 address space from RIPE NCC:
 # After receiving IPv6 allocation, register in RIPE database
 
 # Create inet6num object for your allocation
+
 # Login to: https://apps.db.ripe.net/
 
 # Example inet6num object:
@@ -71,7 +72,7 @@ Requirements to receive IPv6 address space from RIPE NCC:
 
 ## RIPE IPv6 Deployment Best Practices
 
-```
+```text
 RIPE recommends following their "IPv6 Best Current Practices":
 
 1. Address Planning:
@@ -117,7 +118,7 @@ zone "8.b.d.0.1.0.0.2.ip6.arpa" {
 
 ## RIPE IPv6 Compliance Requirements for ISPs
 
-```
+```text
 ISP membership requirements relevant to IPv6:
 - Keep IPv6 allocation in active use
 - Register route6 objects for all advertised prefixes

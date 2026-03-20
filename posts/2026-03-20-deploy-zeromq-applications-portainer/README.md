@@ -14,18 +14,19 @@ ZeroMQ (0MQ) is a high-performance asynchronous messaging library that operates 
 
 ZeroMQ supports several messaging patterns:
 
-- **PUB/SUB** — publisher broadcasts to multiple subscribers
-- **PUSH/PULL** — fan-out task distribution (pipeline)
-- **REQ/REP** — request-reply (synchronous)
-- **DEALER/ROUTER** — async request-reply
+- **PUB/SUB** - publisher broadcasts to multiple subscribers
+- **PUSH/PULL** - fan-out task distribution (pipeline)
+- **REQ/REP** - request-reply (synchronous)
+- **DEALER/ROUTER** - async request-reply
 
 ## Deploy a Pub/Sub Application Stack
 
 ```yaml
 # zeromq-pubsub-stack.yml
+
 version: "3.8"
 services:
-  # Publisher service — produces data
+  # Publisher service - produces data
   publisher:
     image: myapp/zmq-publisher:1.0
     environment:
@@ -38,7 +39,7 @@ services:
     networks:
       - zmq-net
 
-  # Subscriber service — consumes data
+  # Subscriber service - consumes data
   subscriber-1:
     image: myapp/zmq-subscriber:1.0
     environment:
@@ -67,7 +68,7 @@ networks:
 ## Publisher Code Example
 
 ```python
-# publisher.py — runs inside the publisher container
+# publisher.py - runs inside the publisher container
 import zmq
 import time
 import json
@@ -97,7 +98,7 @@ For task distribution, use PUSH/PULL to distribute work across workers:
 # zeromq-worker-pool-stack.yml
 version: "3.8"
 services:
-  # Task distributor — pushes work to workers
+  # Task distributor - pushes work to workers
   task-ventilator:
     image: myapp/zmq-ventilator:1.0
     environment:
@@ -109,7 +110,7 @@ services:
     networks:
       - zmq-workers
 
-  # Worker pool — scale these for throughput
+  # Worker pool - scale these for throughput
   worker:
     image: myapp/zmq-worker:1.0
     environment:
@@ -129,7 +130,7 @@ networks:
 ## Worker Code Example
 
 ```python
-# worker.py — processes tasks from the ventilator
+# worker.py - processes tasks from the ventilator
 import zmq
 import time
 import os

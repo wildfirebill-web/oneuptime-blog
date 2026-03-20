@@ -57,6 +57,7 @@ For environments where you want Fleet outside of Rancher, install it directly vi
 
 ```bash
 # Add the Rancher Fleet Helm chart repository
+
 helm repo add fleet https://rancher.github.io/fleet-helm-charts/
 
 # Update your local Helm chart repository cache
@@ -99,7 +100,7 @@ kubectl get clusters.fleet.cattle.io -A
 
 Expected output should show Fleet manager pods in `Running` state:
 
-```
+```text
 NAME                                    READY   STATUS    RESTARTS   AGE
 fleet-controller-7d9b8c6f4-x2pqr       1/1     Running   0          2m
 fleet-gitjob-5c8b9f7d6-k4mnp           1/1     Running   0          2m

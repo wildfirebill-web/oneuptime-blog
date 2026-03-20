@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Oracle Cloud, OCI Compute, Infrastructure as Code, Virtual Machines
+Tags: OpenTofu, Oracle Cloud, OCI Compute, Infrastructure as Code, Virtual Machine
 
 Description: Learn how to create Oracle Cloud Infrastructure (OCI) compute instances with OpenTofu, including VCN placement, SSH keys, and cloud-init configuration.
 
@@ -12,6 +12,7 @@ OCI Compute provides virtual machine instances with flexible shapes and bare-met
 
 ```hcl
 # Get availability domains in your region
+
 data "oci_identity_availability_domains" "ads" {
   compartment_id = var.compartment_id
 }

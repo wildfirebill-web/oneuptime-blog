@@ -72,6 +72,7 @@ This script uses `skopeo` to copy images between tags without pulling and pushin
 set -euo pipefail
 
 # Configuration
+
 REGISTRY="ghcr.io/myorg"
 IMAGE="myapp"
 SOURCE_TAG="${1:?Usage: promote-tag.sh <source-tag> <target-tag>}"

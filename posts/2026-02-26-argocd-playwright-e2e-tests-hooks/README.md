@@ -28,6 +28,7 @@ First, create a Docker image with your E2E tests:
 
 ```dockerfile
 # Dockerfile.e2e
+
 FROM mcr.microsoft.com/playwright:v1.41.0-jammy
 
 WORKDIR /tests
@@ -366,7 +367,7 @@ containers:
             key: url
 ```
 
-## Resource Considerations
+Resource Considerations
 
 Playwright with Chromium needs significant resources. Size your pod accordingly:
 

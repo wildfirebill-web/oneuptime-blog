@@ -22,6 +22,7 @@ Grant the Cloud Functions service account access to the secret:
 
 ```bash
 # Find the service account used by the function
+
 # For 2nd gen functions, this is either the default compute SA or a custom one
 gcloud functions describe my-function \
   --gen2 \

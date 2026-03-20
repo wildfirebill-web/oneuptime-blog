@@ -75,6 +75,7 @@ volumes:
 
 ```python
 # app/app.py
+
 from flask import Flask, jsonify
 from celery import Celery
 import os
@@ -107,4 +108,4 @@ def health():
 
 ## Monitoring
 
-Use OneUptime to monitor `http://<host>:5000/health`. Also monitor the Celery worker by checking its container status in Portainer — a crashed worker means background tasks are not being processed.
+Use OneUptime to monitor `http://<host>:5000/health`. Also monitor the Celery worker by checking its container status in Portainer - a crashed worker means background tasks are not being processed.

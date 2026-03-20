@@ -22,6 +22,7 @@ Calico sidecar acceleration uses eBPF to optimize traffic flows involving sideca
 
 ```bash
 # Enable eBPF dataplane (prerequisite for sidecar acceleration)
+
 calicoctl patch felixconfiguration default --type merge \
   --patch '{"spec":{"bpfEnabled":true}}'
 

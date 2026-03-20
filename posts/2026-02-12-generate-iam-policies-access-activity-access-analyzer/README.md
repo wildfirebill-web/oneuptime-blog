@@ -43,6 +43,7 @@ Access Analyzer needs CloudTrail data to work. Here's a quick check using the AW
 
 ```bash
 # List existing trails to see if CloudTrail is already configured
+
 aws cloudtrail describe-trails --query 'trailList[*].{Name:Name,IsMultiRegion:IsMultiRegionTrail,IsLogging:HasCustomEventSelectors}'
 ```
 

@@ -72,6 +72,7 @@ Install Tailscale on your server or development machine.
 
 ```bash
 # On Ubuntu/Debian
+
 curl -fsSL https://tailscale.com/install.sh | sh
 
 # On macOS with Homebrew

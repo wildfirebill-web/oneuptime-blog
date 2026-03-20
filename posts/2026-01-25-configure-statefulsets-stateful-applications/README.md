@@ -46,6 +46,7 @@ Before creating a StatefulSet, you need:
 
 ```bash
 # List available storage classes
+
 kubectl get storageclass
 
 # Example output:

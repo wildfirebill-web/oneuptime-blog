@@ -74,6 +74,7 @@ Store the current Typha configuration in a human-readable inventory that is kept
 
 ```bash
 # Run this script to generate the current configuration inventory
+
 echo "=== Typha Configuration Inventory ===" > typha-inventory.txt
 echo "Generated: $(date -u)" >> typha-inventory.txt
 echo "" >> typha-inventory.txt

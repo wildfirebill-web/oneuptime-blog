@@ -218,4 +218,4 @@ resource "aws_wafv2_rule_group" "size_restrictions" {
 
 ## Conclusion
 
-WAFv2 rule groups in OpenTofu enable modular, reusable security policies. Group related rules by function (API protection, size limits, input validation), reference them from multiple Web ACLs, and override individual rule actions per ACL when needed. Calculate WCU capacity accurately — complex rules like regex and SQL injection detection use more WCUs than simple match conditions.
+WAFv2 rule groups in OpenTofu enable modular, reusable security policies. Group related rules by function (API protection, size limits, input validation), reference them from multiple Web ACLs, and override individual rule actions per ACL when needed. Calculate WCU capacity accurately - complex rules like regex and SQL injection detection use more WCUs than simple match conditions.

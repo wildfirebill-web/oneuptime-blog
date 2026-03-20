@@ -42,6 +42,7 @@ Add the hook annotation to any Kubernetes resource:
 
 ```yaml
 # pre-sync-migration.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

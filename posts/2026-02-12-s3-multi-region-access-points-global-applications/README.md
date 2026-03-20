@@ -41,6 +41,7 @@ This creates two buckets - one in US East and one in EU West.
 
 ```bash
 # Create a bucket in US East (N. Virginia)
+
 aws s3api create-bucket \
   --bucket my-app-data-us-east-1 \
   --region us-east-1

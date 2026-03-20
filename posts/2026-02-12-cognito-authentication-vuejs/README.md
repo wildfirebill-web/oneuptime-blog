@@ -21,6 +21,7 @@ npm create vue@latest cognito-vue-app -- --typescript --router --pinia
 cd cognito-vue-app
 
 # Install Cognito SDK and JWT decoder
+
 npm install @aws-sdk/client-cognito-identity-provider jwt-decode
 ```
 

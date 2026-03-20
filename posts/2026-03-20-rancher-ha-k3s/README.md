@@ -21,6 +21,7 @@ K3s is a lightweight Kubernetes distribution that works well for Rancher's local
 
 ```bash
 # Using keepalived for a VIP (Virtual IP) approach
+
 # Install keepalived on all server nodes
 apt install keepalived -y
 

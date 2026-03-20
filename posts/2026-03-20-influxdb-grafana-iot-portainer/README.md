@@ -1,4 +1,4 @@
-# How to Deploy InfluxDB + Grafana for IoT Data via Portainer
+# How to Deploy InfluxDB + Grafana for IoT Data via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Create a new stack in Portainer:
 
 ```yaml
 # docker-compose.yml for InfluxDB v2 + Grafana
+
 version: "3.8"
 
 services:

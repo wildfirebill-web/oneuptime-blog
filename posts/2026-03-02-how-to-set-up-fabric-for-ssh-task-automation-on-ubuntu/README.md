@@ -16,6 +16,7 @@ This guide covers Fabric 2 (the current version), which is substantially differe
 
 ```bash
 # Create a virtual environment for your automation scripts
+
 python3 -m venv ~/fabric-env
 source ~/fabric-env/bin/activate
 

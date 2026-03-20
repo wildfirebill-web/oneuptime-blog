@@ -37,6 +37,7 @@ The simplest approach is to add the project that hosts your Cloud Functions to t
 
 ```bash
 # Add the Cloud Functions project to the perimeter
+
 gcloud access-context-manager perimeters update my-perimeter \
   --add-resources="projects/FUNCTIONS_PROJECT_NUMBER" \
   --add-restricted-services="cloudfunctions.googleapis.com" \

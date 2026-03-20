@@ -10,7 +10,7 @@ Description: Learn how DNS resolution works in dual-stack IPv4/IPv6 environments
 
 In a dual-stack network, DNS must return both A records (IPv4) and AAAA records (IPv6) for hosts that support both protocols. The client's operating system and application then selects which address to use based on address selection policies defined in RFC 6724.
 
-Understanding how this selection happens—and how to influence it—is key to stable dual-stack operation.
+Understanding how this selection happens-and how to influence it-is key to stable dual-stack operation.
 
 ## Step 1: Verify Your DNS Server Returns AAAA Records
 
@@ -18,6 +18,7 @@ Use `dig` to confirm that your DNS server is configured to respond with AAAA rec
 
 ```bash
 # Query for IPv6 address records
+
 dig AAAA www.example.com
 
 # Query both A and AAAA in one shot
@@ -63,7 +64,7 @@ cat /etc/gai.conf
 # precedence ::ffff:0:0/96  100
 ```
 
-Modify this file carefully—changes affect all applications on the host.
+Modify this file carefully-changes affect all applications on the host.
 
 ## Step 4: Test DNS Resolution Behaviour
 

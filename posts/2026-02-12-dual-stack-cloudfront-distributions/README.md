@@ -20,6 +20,7 @@ Enable IPv6 on a new distribution:
 
 ```bash
 # Create a distribution with IPv6 enabled
+
 aws cloudfront create-distribution \
   --distribution-config '{
     "CallerReference": "dual-stack-dist-001",

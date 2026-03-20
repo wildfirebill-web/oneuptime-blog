@@ -14,6 +14,7 @@ The THC-IPv6 toolkit (The Hacker's Choice IPv6 Attack Toolkit) is one of the ear
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install thc-ipv6
 
 # From source

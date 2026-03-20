@@ -35,6 +35,7 @@ Create a database and table:
 
 ```python
 # Create Timestream database and table for IoT data
+
 import boto3
 
 timestream_write = boto3.client('timestream-write')

@@ -58,6 +58,7 @@ podman run --rm -it \
   cpp-build-env
 
 # Inside the container:
+
 mkdir -p output && cd output
 cmake .. -G Ninja
 ninja

@@ -139,6 +139,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 import requests
 
 # Decorator that retries on connection errors and server errors
+
 # Waits 1s, 2s, 4s, 8s, then 16s between retries
 @retry(
     stop=stop_after_attempt(5),

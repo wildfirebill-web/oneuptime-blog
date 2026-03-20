@@ -62,6 +62,7 @@ Apply minimal permissions to VPC security groups:
 
 ```bash
 # Create a restrictive security group for workers
+
 ibmcloud is security-group-create k8s-workers-secure
 
 # Allow only required inbound traffic

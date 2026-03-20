@@ -26,6 +26,7 @@ if [ -z "$WORKSPACE" ]; then
 fi
 
 # Try to select the workspace, create it if it does not exist
+
 terraform workspace select "$WORKSPACE" 2>/dev/null || \
   terraform workspace new "$WORKSPACE"
 ```

@@ -1,4 +1,4 @@
-# How to Configure IPvlan L3 Mode for Container Routing in Portainer
+# How to Configure IPvlan L3 Mode for Container Routing in Portainer - Networking
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,7 +22,7 @@ IPvlan L3 mode operates at the network layer. Containers get IP addresses in a s
 
 ## Creating an IPvlan L3 Network
 
-L3 containers live in their own subnet — no gateway is specified because the host routes traffic:
+L3 containers live in their own subnet - no gateway is specified because the host routes traffic:
 
 ```bash
 docker network create \
@@ -33,7 +33,7 @@ docker network create \
   ipvlan_l3_net
 ```
 
-Note: No `--gateway` flag — in L3 mode, the host kernel handles routing.
+Note: No `--gateway` flag - in L3 mode, the host kernel handles routing.
 
 ## Using IPvlan L3 in a Stack
 
@@ -64,6 +64,7 @@ Containers in L3 subnets are isolated by default. For external access, add a rou
 
 ```bash
 # On your router/gateway (example for Linux router):
+
 sudo ip route add 172.16.100.0/24 via 192.168.1.100   # 192.168.1.100 = Docker host IP
 
 # On the Docker host, enable IP forwarding
@@ -104,7 +105,7 @@ Containers on different subnets cannot communicate by default, providing natural
 docker exec -it $(docker ps -qf name=api) ip route
 
 # Expected output:
-# default via 0.0.0.0 dev eth0   (no gateway — host routes)
+# default via 0.0.0.0 dev eth0   (no gateway - host routes)
 # 172.16.100.0/24 dev eth0 proto kernel scope link
 
 # Verify host sees the route

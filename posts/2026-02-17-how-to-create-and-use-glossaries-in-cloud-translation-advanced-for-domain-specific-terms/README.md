@@ -33,6 +33,7 @@ Enable the Translation API v3 and install the library:
 
 ```bash
 # Enable the Translation API
+
 gcloud services enable translate.googleapis.com
 
 # Install the Python client (v3 is included in the standard package)

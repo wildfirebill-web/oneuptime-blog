@@ -33,6 +33,7 @@ services:
       - llm_small
 
 # Top-level models section - defines available AI models
+
 models:
   llm_small:
     # OCI artifact reference - version-pin like any Docker image

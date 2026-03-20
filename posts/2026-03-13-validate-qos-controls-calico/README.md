@@ -42,6 +42,7 @@ spec:
 
 ```bash
 # Find the pod's veth interface on the node
+
 NODE=
 POD_UID=
 

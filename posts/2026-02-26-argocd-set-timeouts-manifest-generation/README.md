@@ -40,6 +40,7 @@ This is the most important timeout. It controls how long the controller waits fo
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

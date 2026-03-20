@@ -45,6 +45,7 @@ mkdir -p $CERT_DIR
 cd $CERT_DIR
 
 # Generate CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Generate CA certificate

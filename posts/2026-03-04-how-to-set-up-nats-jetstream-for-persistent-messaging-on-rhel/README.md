@@ -16,6 +16,7 @@ Add the JetStream configuration to your NATS server config:
 
 ```conf
 # /etc/nats/nats-server.conf
+
 server_name: nats-1
 listen: 0.0.0.0:4222
 http_port: 8222

@@ -26,6 +26,7 @@ Create a namespace and supporting resources for firmware update operations:
 
 ```yaml
 # firmware-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

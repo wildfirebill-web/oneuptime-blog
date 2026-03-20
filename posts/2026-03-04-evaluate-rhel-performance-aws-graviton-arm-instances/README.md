@@ -14,6 +14,7 @@ AWS Graviton processors are custom ARM-based chips that offer better price-perfo
 
 ```bash
 # Use the AWS CLI to launch a Graviton instance with RHEL 9
+
 aws ec2 run-instances \
   --image-id ami-0abcdef1234567890 \
   --instance-type m7g.xlarge \

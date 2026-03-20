@@ -24,6 +24,7 @@ Spread pods evenly across availability zones:
 
 ```yaml
 # deployment-with-spread.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

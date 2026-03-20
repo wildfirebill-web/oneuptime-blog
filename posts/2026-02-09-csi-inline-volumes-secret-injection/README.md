@@ -30,6 +30,7 @@ First, install the Secrets Store CSI Driver:
 
 ```bash
 # Add the Secrets Store CSI Driver Helm repository
+
 helm repo add secrets-store-csi-driver \
   https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts
 

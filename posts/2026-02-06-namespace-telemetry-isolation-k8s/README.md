@@ -22,6 +22,7 @@ Use a Kubernetes operator or Helm to deploy isolated Collectors:
 
 ```yaml
 # namespace-collector.yaml
+
 # Deploy this in each tenant namespace
 apiVersion: apps/v1
 kind: DaemonSet

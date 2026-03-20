@@ -42,6 +42,7 @@ Create an `ExternalSecret` with a `kubernetes.io/tls` template to produce a prop
 
 ```yaml
 # clusters/my-cluster/platform/tls/externalsecret-wildcard.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

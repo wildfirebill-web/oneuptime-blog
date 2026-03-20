@@ -234,6 +234,7 @@ SELECT new_feature_column FROM users;
 
 ```bash
 # Compare schemas between databases
+
 mysqldump --no-data -u root -p dev_db > dev_schema.sql
 mysqldump --no-data -u root -p prod_db > prod_schema.sql
 diff dev_schema.sql prod_schema.sql

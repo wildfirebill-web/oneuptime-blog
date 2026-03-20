@@ -48,6 +48,7 @@ spec:
 
 ```bash
 # Apply policy
+
 calicoctl apply -f test-globalnetworkpolicy.yaml
 
 # Verify policy is active

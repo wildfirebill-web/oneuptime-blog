@@ -1,4 +1,4 @@
-# How to Deploy a Node.js + MongoDB Stack via Portainer
+# How to Deploy a Node.js + MongoDB Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Node.js and MongoDB form a natural pairing due to their shared JSON-based data m
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-alpine AS base
 
 # Install dumb-init for proper signal handling
@@ -99,7 +100,7 @@ services:
       timeout: 10s
       retries: 3
 
-  # Mongo Express — web-based MongoDB admin
+  # Mongo Express - web-based MongoDB admin
   mongo-express:
     image: mongo-express:1.0
     container_name: node-mongo-express
@@ -130,7 +131,7 @@ networks:
 ## Step 3: MongoDB Initialization
 
 ```javascript
-// mongo/init.js — runs once on first startup
+// mongo/init.js - runs once on first startup
 db = db.getSiblingDB('nodeapp');
 
 // Create application user with limited permissions
@@ -154,7 +155,7 @@ print('MongoDB initialized for nodeapp');
 ## Step 4: Node.js Application with Mongoose
 
 ```javascript
-// src/db.js — MongoDB connection with retry logic
+// src/db.js - MongoDB connection with retry logic
 const mongoose = require('mongoose');
 
 const connectWithRetry = async () => {
@@ -184,7 +185,7 @@ module.exports = { connectWithRetry };
 ```
 
 ```javascript
-// src/models/User.js — Mongoose schema
+// src/models/User.js - Mongoose schema
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
@@ -212,7 +213,7 @@ module.exports = mongoose.model('User', userSchema);
 ```
 
 ```javascript
-// src/index.js — Express server entry point
+// src/index.js - Express server entry point
 const express = require('express');
 const { connectWithRetry } = require('./db');
 

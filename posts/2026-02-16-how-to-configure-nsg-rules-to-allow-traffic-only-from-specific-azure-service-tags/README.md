@@ -64,6 +64,7 @@ Let me walk through a practical scenario. You have a VM that runs an application
 
 ```bash
 # Create the NSG
+
 az network nsg create \
   --resource-group myResourceGroup \
   --name app-vm-nsg \

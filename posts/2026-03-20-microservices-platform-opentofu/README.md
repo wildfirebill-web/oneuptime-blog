@@ -182,4 +182,4 @@ resource "kubernetes_resource_quota" "team" {
 
 ## Summary
 
-A microservices platform built with OpenTofu provisions EKS with managed node groups, ALB Ingress Controller for HTTP traffic, Cluster Autoscaler for dynamic scaling, External DNS for automatic Route53 record management, and team namespaces with resource quotas. The platform layer is separate from individual service deployments — platform team owns the cluster, application teams deploy services into their namespaces using IRSA for AWS service access.
+A microservices platform built with OpenTofu provisions EKS with managed node groups, ALB Ingress Controller for HTTP traffic, Cluster Autoscaler for dynamic scaling, External DNS for automatic Route53 record management, and team namespaces with resource quotas. The platform layer is separate from individual service deployments - platform team owns the cluster, application teams deploy services into their namespaces using IRSA for AWS service access.

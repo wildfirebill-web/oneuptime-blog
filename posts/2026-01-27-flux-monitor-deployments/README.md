@@ -57,6 +57,7 @@ The Flux CLI provides powerful commands to check the health of your deployments.
 
 ```bash
 # Install Flux CLI on macOS
+
 brew install fluxcd/tap/flux
 
 # Install on Linux

@@ -29,6 +29,7 @@ Enable function support in Crossplane:
 
 ```bash
 # Install Crossplane with functions enabled
+
 helm upgrade crossplane crossplane-stable/crossplane \
   -n crossplane-system \
   --set args='{--enable-composition-functions}' \

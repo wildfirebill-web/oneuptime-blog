@@ -31,6 +31,7 @@ The playbook provides the data:
 
 ```yaml
 # deploy-hosts.yml
+
 # Generates /etc/hosts from server list
 - name: Deploy hosts file
   hosts: all

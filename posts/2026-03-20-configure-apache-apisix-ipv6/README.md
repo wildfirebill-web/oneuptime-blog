@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: APISIX, API Gateway, IPv6, Networking, Lua, NGINX
+Tags: APISIX, API Gateway, IPv6, Networking, Lua, Nginx
 
 Description: Enable IPv6 support in Apache APISIX by configuring NGINX listeners, Admin API bindings, and upstream service definitions for dual-stack operation.
 
@@ -61,6 +61,7 @@ Use the Admin API to create an upstream that includes IPv6 backend addresses.
 
 ```bash
 # Create an upstream with IPv6 backend nodes
+
 curl -X PUT http://[::1]:9180/apisix/admin/upstreams/1 \
   -H "X-API-KEY: your-admin-key" \
   -H "Content-Type: application/json" \
@@ -145,7 +146,7 @@ curl -X PATCH http://[::1]:9180/apisix/admin/routes/1 \
 
 - **NGINX not binding to IPv6**: Verify the `node_listen` entries use `ip: "::"` not `ip: "::0"`.
 - **etcd connection refused**: Ensure etcd is listening on `::1` if using loopback.
-- **Upstream health checks failing**: Health check connections inherit the upstream address family — no extra config needed.
+- **Upstream health checks failing**: Health check connections inherit the upstream address family - no extra config needed.
 
 ## Conclusion
 

@@ -51,6 +51,7 @@ The Strategy Recommendations collector is a virtual appliance you deploy in your
 
 ```python
 # Configure and start the strategy assessment
+
 import boto3
 
 strategy = boto3.client('migrationhubstrategy')

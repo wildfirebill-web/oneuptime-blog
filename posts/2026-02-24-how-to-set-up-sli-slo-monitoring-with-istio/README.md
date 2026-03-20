@@ -31,6 +31,7 @@ The availability SLI measures the proportion of non-error responses:
 
 ```promql
 # Availability SLI: ratio of successful requests
+
 sum(rate(istio_requests_total{
   reporter="destination",
   destination_service_name="order-service",

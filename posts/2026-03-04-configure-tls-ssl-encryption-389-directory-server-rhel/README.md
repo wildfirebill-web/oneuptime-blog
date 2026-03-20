@@ -18,6 +18,7 @@ Make sure 389 Directory Server is already installed and running. You also need a
 
 ```bash
 # Create a directory for certificates
+
 mkdir -p /etc/dirsrv/slapd-localhost/certs
 
 # Generate a self-signed certificate using openssl

@@ -25,6 +25,7 @@ Before running an action, check what actions are available for a resource:
 
 ```bash
 # List available actions for a Deployment
+
 argocd app actions list my-app --kind Deployment --resource-name my-app
 
 # List available actions for a StatefulSet

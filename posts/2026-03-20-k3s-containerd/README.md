@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, containerd, Container Runtime
+Tags: K3s, Kubernetes, Rancher, Containerd, Container Runtime
 
 Description: Learn how to configure and customize the containerd runtime bundled with K3s, including snapshotter settings and containerd configuration overrides.
 
@@ -23,6 +23,7 @@ Key paths:
 
 ```bash
 # View the generated containerd config
+
 sudo cat /var/lib/rancher/k3s/agent/etc/containerd/config.toml
 
 # Use the bundled ctr tool to interact with containerd
@@ -231,4 +232,4 @@ sudo k3s ctr events
 
 ## Conclusion
 
-K3s's embedded containerd provides a robust container runtime with sensible defaults. Most users don't need to modify the containerd configuration, but when customization is needed — such as adding GPU or sandbox runtimes, tuning the snapshotter, or configuring custom GC settings — the `config.toml.tmpl` template mechanism provides a clean way to override defaults. The bundled `ctr` and `crictl` tools give you direct access to containerd for debugging and image management.
+K3s's embedded containerd provides a robust container runtime with sensible defaults. Most users don't need to modify the containerd configuration, but when customization is needed - such as adding GPU or sandbox runtimes, tuning the snapshotter, or configuring custom GC settings - the `config.toml.tmpl` template mechanism provides a clean way to override defaults. The bundled `ctr` and `crictl` tools give you direct access to containerd for debugging and image management.

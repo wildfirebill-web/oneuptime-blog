@@ -18,6 +18,7 @@ The `contains` function checks whether a given list contains a specific value. I
 
 ```hcl
 # Returns true if the list contains the value
+
 contains(list, value)
 ```
 

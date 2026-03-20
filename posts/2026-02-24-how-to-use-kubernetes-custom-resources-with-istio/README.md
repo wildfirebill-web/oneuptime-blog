@@ -310,7 +310,7 @@ For a specific file:
 istioctl analyze my-config.yaml
 ```
 
-## Resource Scoping
+Resource Scoping
 
 Istio resources can be scoped in different ways:
 

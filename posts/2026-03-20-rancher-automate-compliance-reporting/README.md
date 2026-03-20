@@ -1,8 +1,8 @@
-# How to Automate Compliance Reporting in Rancher
+# How to Automate Compliance Reporting in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, compliance, reporting, cis, automation, pci-dss
+Tags: Rancher, Compliance, Reporting, CIS, Automation, PCI-DSS
 
 Description: A guide to automating compliance reporting in Rancher for CIS benchmarks, PCI DSS, HIPAA, and custom compliance frameworks using scheduled scans and report generation.
 
@@ -16,6 +16,7 @@ Compliance reporting is a critical requirement for organizations in regulated in
 
 ```yaml
 # Schedule CIS scans for all clusters
+
 apiVersion: cis.cattle.io/v1
 kind: ScheduledClusterScan
 metadata:

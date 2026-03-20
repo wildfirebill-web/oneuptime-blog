@@ -16,6 +16,7 @@ Start with a high-level view before drilling down:
 
 ```bash
 # Check overall disk usage on all partitions
+
 df -h
 
 # Find the top-level directories consuming the most space

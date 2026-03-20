@@ -23,6 +23,7 @@ The init process in Talos is called `machined`. It is responsible for:
 
 ```bash
 # List all services running on a node
+
 talosctl services -n <node-ip>
 
 # You will see something like:

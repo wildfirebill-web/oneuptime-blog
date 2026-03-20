@@ -92,6 +92,7 @@ The following configuration shows the default network ranges used by K3s for pod
 
 ```yaml
 # Default K3s network configuration
+
 cluster-cidr: "10.42.0.0/16"     # Pod network range
 service-cidr: "10.43.0.0/16"     # Service network range
 cluster-dns: "10.43.0.10"        # CoreDNS service IP

@@ -25,6 +25,7 @@ When cloud-init processes network configuration, it writes Netplan YAML files to
 
 ```bash
 # Check what cloud-init wrote
+
 ls /etc/netplan/
 cat /etc/netplan/50-cloud-init.yaml
 

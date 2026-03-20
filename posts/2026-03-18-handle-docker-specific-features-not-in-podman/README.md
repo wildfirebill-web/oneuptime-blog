@@ -20,6 +20,7 @@ Docker Swarm is Docker's built-in orchestration system. Podman does not include 
 
 ```bash
 # Docker Swarm commands (not available in Podman)
+
 # docker swarm init
 # docker service create
 # docker stack deploy

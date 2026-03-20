@@ -31,6 +31,7 @@ Maintain a living inventory of all GlobalNetworkPolicy and HostEndpoint resource
 
 ```bash
 # Export all policies to YAML for version control
+
 calicoctl get globalnetworkpolicies -o yaml > policies/host-endpoint-policies.yaml
 calicoctl get hostendpoints -o yaml > policies/host-endpoints.yaml
 

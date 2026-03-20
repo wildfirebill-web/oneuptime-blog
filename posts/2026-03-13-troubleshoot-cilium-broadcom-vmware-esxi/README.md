@@ -29,6 +29,7 @@ ESXi vSwitch security policies must be configured to allow pod networking traffi
 
 ```bash
 # These settings must be configured in vSphere for the port group
+
 # used by Kubernetes node VMs:
 
 # Via PowerCLI (run on vCenter):

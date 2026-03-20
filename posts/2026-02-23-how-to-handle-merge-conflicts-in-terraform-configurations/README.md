@@ -20,12 +20,13 @@ Consider this scenario: two engineers both modify a security group. One adds an 
 
 ## Common Conflict Patterns
 
-### Resource Block Conflicts
+Resource Block Conflicts
 
 The most common conflict occurs when two branches modify the same resource:
 
 ```hcl
 # Branch A added a new tag
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.medium"

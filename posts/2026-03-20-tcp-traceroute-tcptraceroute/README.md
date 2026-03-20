@@ -10,9 +10,9 @@ Standard traceroute often hits firewalls that block ICMP or high UDP ports, show
 
 ## Why TCP Traceroute?
 
-```
+```text
 Traditional traceroute problems:
-  - Uses UDP to high ports (>33434) — often blocked by firewalls
+  - Uses UDP to high ports (>33434) - often blocked by firewalls
   - ICMP mode requires root and is commonly filtered
   - Shows *** even when the path is working for TCP traffic
 
@@ -27,6 +27,7 @@ tcptraceroute advantage:
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install tcptraceroute -y
 
 # RHEL/CentOS
@@ -71,7 +72,7 @@ sudo tcptraceroute -n 8.8.8.8 80
 ## Comparing Standard vs TCP Traceroute
 
 ```bash
-# Standard traceroute (UDP) — many stars due to firewall
+# Standard traceroute (UDP) - many stars due to firewall
 traceroute -n 8.8.8.8
 #  1  192.168.1.1   1ms
 #  2  * * *
@@ -79,7 +80,7 @@ traceroute -n 8.8.8.8
 #  4  * * *
 # (can't see the path)
 
-# TCP traceroute on port 80 — traverses same path as HTTP
+# TCP traceroute on port 80 - traverses same path as HTTP
 sudo tcptraceroute -n 8.8.8.8 80
 #  1  192.168.1.1   1ms
 #  2  10.1.0.1      8ms
@@ -124,4 +125,4 @@ sudo tcptraceroute -n problematic-server.com 443
 # → Get the last visible IP and check that device's ACL
 ```
 
-TCP traceroute is an essential tool for diagnosing application-level connectivity — it tests the actual path your application traffic takes, not just whether ICMP is allowed.
+TCP traceroute is an essential tool for diagnosing application-level connectivity - it tests the actual path your application traffic takes, not just whether ICMP is allowed.

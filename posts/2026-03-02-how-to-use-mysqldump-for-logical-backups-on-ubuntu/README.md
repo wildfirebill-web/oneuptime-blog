@@ -14,6 +14,7 @@ mysqldump creates logical backups by exporting database contents as SQL statemen
 
 ```bash
 # Basic syntax
+
 mysqldump [options] [database_name] [table_name] > output.sql
 
 # Backup a single database

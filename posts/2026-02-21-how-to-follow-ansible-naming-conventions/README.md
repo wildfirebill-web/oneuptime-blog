@@ -16,6 +16,7 @@ Role names should be lowercase with underscores separating words. They should de
 
 ```text
 # GOOD role names
+
 roles/
   nginx/
   postgresql/

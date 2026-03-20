@@ -102,6 +102,7 @@ Use a central repository for mesh-wide configuration and let each team manage th
 
 ```text
 # Central repo: istio-platform-config
+
 mesh/
   istio-operator.yaml
   peer-authentication.yaml

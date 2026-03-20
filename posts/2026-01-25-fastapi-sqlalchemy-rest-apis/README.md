@@ -34,6 +34,7 @@ Start by creating a virtual environment and installing the required packages:
 
 ```bash
 # Create and activate virtual environment
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 

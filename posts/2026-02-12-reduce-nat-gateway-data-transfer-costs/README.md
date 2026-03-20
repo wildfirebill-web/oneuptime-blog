@@ -27,6 +27,7 @@ Enable VPC Flow Logs if you haven't already. They'll show you exactly what traff
 
 ```bash
 # Create a CloudWatch log group for flow logs
+
 aws logs create-log-group --log-group-name vpc-flow-logs
 
 # Enable VPC Flow Logs

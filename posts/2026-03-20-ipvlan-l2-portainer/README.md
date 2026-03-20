@@ -24,6 +24,7 @@ IPvlan is similar to Macvlan but all containers share the host's MAC address. In
 
 ```bash
 # Check kernel version (IPvlan requires kernel 4.2+)
+
 uname -r
 
 # Verify network interface
@@ -121,7 +122,7 @@ services:
 
 Exclude the IPvlan range from your router's DHCP server to prevent conflicts:
 
-```
+```bash
 Router DHCP Configuration:
 - DHCP pool: 192.168.1.10 - 192.168.1.190
 - Reserved/excluded: 192.168.1.191 - 192.168.1.254
@@ -193,4 +194,4 @@ docker exec pihole_ipvlan ip route
 
 ## Conclusion
 
-IPvlan L2 provides a great alternative to Macvlan when you're in a MAC-restricted environment. Containers get real LAN IP addresses and are accessible directly from any device on your network without port mapping, while sharing the host's MAC address avoids issues with MAC address filtering and port security policies. Portainer manages these containers like any others — you get logs, stats, and restart capabilities from the same dashboard.
+IPvlan L2 provides a great alternative to Macvlan when you're in a MAC-restricted environment. Containers get real LAN IP addresses and are accessible directly from any device on your network without port mapping, while sharing the host's MAC address avoids issues with MAC address filtering and port security policies. Portainer manages these containers like any others - you get logs, stats, and restart capabilities from the same dashboard.

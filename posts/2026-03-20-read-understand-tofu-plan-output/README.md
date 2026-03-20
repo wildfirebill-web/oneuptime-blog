@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu plan, Plan Output, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu plan, Plan Output, Infrastructure as Code, DevOps
 
 Description: A guide to interpreting OpenTofu plan output to understand infrastructure changes before applying them.
 
@@ -21,7 +21,7 @@ A typical plan output has these sections:
 
 ## Understanding Change Symbols
 
-```
+```text
 + Resource will be CREATED (new resource)
 - Resource will be DESTROYED (removed)
 ~ Resource will be UPDATED IN-PLACE (modified without recreation)
@@ -29,6 +29,7 @@ A typical plan output has these sections:
 <= Data source will be READ
 
 # Specific attribute symbols within a resource block:
+
 + attribute will be added
 - attribute will be removed
 ~ attribute will be changed
@@ -38,7 +39,7 @@ A typical plan output has these sections:
 
 ## Reading a Create Action
 
-```
+```hcl
 # aws_instance.web_server will be created
 + resource "aws_instance" "web_server" {
     + ami                          = "ami-0c55b159cbfafe1f0"
@@ -61,7 +62,7 @@ Key things to check:
 
 ## Reading an Update Action
 
-```
+```hcl
 # aws_instance.web_server will be updated in-place
 ~ resource "aws_instance" "web_server" {
       id            = "i-0abc123def456"
@@ -72,7 +73,7 @@ Key things to check:
 
 ## Reading a Replace Action (Destroy + Create)
 
-```
+```hcl
 # aws_instance.web_server must be replaced
 -/+ resource "aws_instance" "web_server" {
     ~ id  = "i-0abc123def456" -> (known after apply)  # Will change
@@ -85,7 +86,7 @@ The `(forces replacement)` indicator means changing that attribute requires dest
 
 ## Reading a Destroy Action
 
-```
+```hcl
 # aws_instance.web_server will be destroyed
 - resource "aws_instance" "web_server" {
     - ami           = "ami-0c55b159cbfafe1f0" -> null
@@ -99,7 +100,7 @@ The `(forces replacement)` indicator means changing that attribute requires dest
 
 ## Reading Data Source Reads
 
-```
+```text
 # data.aws_ami.ubuntu will be read during apply
 <= data "aws_ami" "ubuntu" {
     + id   = (known after apply)
@@ -109,7 +110,7 @@ The `(forces replacement)` indicator means changing that attribute requires dest
 
 ## The Plan Summary Line
 
-```
+```text
 Plan: 3 to add, 1 to change, 0 to destroy.
 ```
 
@@ -135,7 +136,7 @@ resource "aws_security_group" "web" {
 }
 ```
 
-```
+```hcl
 # Example plan output for this:
 # aws_vpc.main will be created
 + resource "aws_vpc" "main" {

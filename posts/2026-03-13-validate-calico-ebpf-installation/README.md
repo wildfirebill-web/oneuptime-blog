@@ -22,6 +22,7 @@ Validating a fresh Calico eBPF installation is a multi-step process that confirm
 ```bash
 #!/bin/bash
 # validate-calico-ebpf-installation.sh
+
 set -euo pipefail
 FAILURES=0
 

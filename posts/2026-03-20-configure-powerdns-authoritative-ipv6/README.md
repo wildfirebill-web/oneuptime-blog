@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PowerDNS, DNS, IPv6, Authoritative, AAAA, pdns, Zone
+Tags: PowerDNS, DNS, IPv6, Authoritative, AAAA, Pdns, Zones
 
 Description: Configure PowerDNS Authoritative Server to serve zones with AAAA records over IPv6 transport, using the generic SQL backend.
 
@@ -14,6 +14,7 @@ PowerDNS Authoritative Server (pdns) supports multiple backends (MySQL, PostgreS
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y pdns-server pdns-backend-mysql
 
 # Initialize the schema

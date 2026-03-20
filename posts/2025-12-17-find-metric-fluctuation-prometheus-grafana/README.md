@@ -32,6 +32,7 @@ Standard deviation quantifies how spread out values are from the mean.
 
 ```promql
 # Standard deviation over 5 minutes
+
 stddev_over_time(http_request_duration_seconds[5m])
 
 # By service (stddev_over_time preserves labels per series; no by clause needed)

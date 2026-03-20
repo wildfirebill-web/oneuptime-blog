@@ -1,18 +1,18 @@
-# How to Set Up Rancher for Education
+# How to Set Up Rancher for Education - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Education, Kubernetes, Multi-Tenant, FERPA, Self-Service, Jupyter
 
-Description: Configure Rancher for educational institutions with multi-tenant namespaces for departments and courses, Jupyter notebook deployments, FERPA compliance, student self-service access, and integration with campus identity systems.
+Description: Configure Rancher for educational institutions with multi-tenant namespaces for departments and courses, Jupyter notebook deployments, FERPA compliance, student self-service access, and...
 
 ## Introduction
 
-Educational institutions use Kubernetes for research computing, data science courses, LMS infrastructure, and administrative systems. Rancher's multi-tenancy model—with Projects providing namespace isolation and resource quotas—maps naturally to the departmental structure of universities. FERPA compliance requires data isolation, and SSO integration with campus identity systems (Shibboleth, Azure AD) is essential.
+Educational institutions use Kubernetes for research computing, data science courses, LMS infrastructure, and administrative systems. Rancher's multi-tenancy model-with Projects providing namespace isolation and resource quotas-maps naturally to the departmental structure of universities. FERPA compliance requires data isolation, and SSO integration with campus identity systems (Shibboleth, Azure AD) is essential.
 
 ## Education Architecture
 
-```
+```text
 Rancher Management
 ├── Research HPC Cluster (GPU nodes)
 │   ├── Project: CS Department
@@ -32,6 +32,7 @@ Rancher Management
 
 ```yaml
 # Create department project with resource limits
+
 # Via Rancher API or UI: Cluster > Projects
 
 # Research computing quota per department
@@ -231,4 +232,4 @@ kubectl delete namespace cs101-spring-2026
 
 ## Conclusion
 
-Rancher's Project-based multi-tenancy aligns perfectly with university organizational structures—departments and courses map to Projects and namespaces. JupyterHub on Rancher provides self-service data science notebooks for students, while GPU job scheduling supports research computing. SSO integration with campus identity systems (Shibboleth, Azure AD) provides seamless access management, and namespace isolation enforces FERPA data protection. The Rancher Projects' resource quota system prevents any single course or department from monopolizing cluster resources.
+Rancher's Project-based multi-tenancy aligns perfectly with university organizational structures-departments and courses map to Projects and namespaces. JupyterHub on Rancher provides self-service data science notebooks for students, while GPU job scheduling supports research computing. SSO integration with campus identity systems (Shibboleth, Azure AD) provides seamless access management, and namespace isolation enforces FERPA data protection. The Rancher Projects' resource quota system prevents any single course or department from monopolizing cluster resources.

@@ -18,6 +18,7 @@ A test playbook typically follows this pattern:
 
 ```yaml
 # tests/test_webserver.yml
+
 # Test playbook that validates the webserver role deployment
 - name: Validate webserver deployment
   hosts: webservers

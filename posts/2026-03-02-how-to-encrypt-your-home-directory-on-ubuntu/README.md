@@ -42,6 +42,7 @@ The simplest approach is encrypting during user creation:
 
 ```bash
 # Create a new user with an encrypted home directory
+
 sudo useradd -m -s /bin/bash --encrypt-home username
 
 # Set the user's password

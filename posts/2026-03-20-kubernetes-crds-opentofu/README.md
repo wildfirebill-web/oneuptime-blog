@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Kubernetes, Infrastructure as Code, IaC, CRDs, Custom Resources
+Tags: OpenTofu, Kubernetes, Infrastructure as Code, IaC, CRD, Custom Resources
 
 Description: Learn how to install and manage Kubernetes Custom Resource Definitions with OpenTofu for operator-managed resources.
 
@@ -61,6 +61,7 @@ variable "environment" {
 
 ```hcl
 # Create namespace
+
 resource "kubernetes_namespace" "app" {
   metadata {
     name = var.namespace

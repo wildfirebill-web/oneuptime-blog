@@ -52,6 +52,7 @@ Strings are the foundation of Redis. Despite the name, they can store text, numb
 import redis
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 # Simple string operations

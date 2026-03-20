@@ -85,6 +85,7 @@ The most critical thing to monitor is certificate expiration. Istio sidecars exp
 
 ```promql
 # Time until certificate expires (in seconds)
+
 envoy_server_days_until_first_cert_expiring * 86400
 ```
 

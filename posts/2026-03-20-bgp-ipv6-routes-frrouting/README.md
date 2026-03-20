@@ -13,7 +13,8 @@ FRRouting provides a comprehensive set of `show bgp` commands via `vtysh` for ve
 ## Primary Verification Commands
 
 ```bash
-# BGP summary — all neighbors and prefix counts
+# BGP summary - all neighbors and prefix counts
+
 vtysh -c "show bgp ipv6 unicast summary"
 
 # Full BGP IPv6 table
@@ -25,7 +26,7 @@ ip -6 route show proto bgp
 
 ## show bgp ipv6 unicast summary
 
-```
+```text
 Router# show bgp ipv6 unicast summary
 
 BGP router identifier 1.1.1.1, local AS number 65001
@@ -39,7 +40,7 @@ Sessions in `Active` or `Idle` state indicate connectivity problems. Sessions sh
 
 ## show bgp ipv6 unicast (Full Table)
 
-```
+```text
 Router# show bgp ipv6 unicast
 
 BGP table version is 15, local router ID is 1.1.1.1

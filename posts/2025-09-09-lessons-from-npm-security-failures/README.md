@@ -35,6 +35,7 @@ The following commands demonstrate how package signing should work in a secure p
 
 ```bash
 # Package Signing Workflow
+
 # ========================
 # Publishers cryptographically sign packages before uploading to the registry
 

@@ -14,6 +14,7 @@ Deleting a CloudFormation stack removes every resource it manages. That includes
 
 ```bash
 # Delete a stack and all its resources
+
 aws cloudformation delete-stack \
   --stack-name my-app-dev
 

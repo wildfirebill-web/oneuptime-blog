@@ -23,6 +23,7 @@ This guide covers migrate High-Connection Workloads in Calico with production-re
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

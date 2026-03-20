@@ -10,6 +10,7 @@ Description: Learn how to use ifconfig to view, interpret, and filter IPv6 addre
 
 ```bash
 # Show all interfaces with all addresses
+
 ifconfig
 
 # Show a specific interface (en0 = Wi-Fi on most Macs)
@@ -36,10 +37,10 @@ en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 ```
 
 Address types explained:
-- `fe80::...%en0 scopeid 0x4` — Link-local, `%en0` is zone ID (interface scoping)
-- `2001:db8::... autoconf` — SLAAC-generated global address
-- `2001:db8::... autoconf temporary` — RFC 4941 privacy extension address
-- `fd12:3456:789a::10` — Static ULA address (no flags = static)
+- `fe80::...%en0 scopeid 0x4` - Link-local, `%en0` is zone ID (interface scoping)
+- `2001:db8::... autoconf` - SLAAC-generated global address
+- `2001:db8::... autoconf temporary` - RFC 4941 privacy extension address
+- `fd12:3456:789a::10` - Static ULA address (no flags = static)
 
 ## ifconfig Flags for IPv6 Addresses
 

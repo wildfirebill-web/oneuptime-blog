@@ -14,6 +14,7 @@ Installing a specific version of OpenTofu is essential for maintaining consisten
 
 ```bash
 # List all available releases via GitHub API
+
 curl -s https://api.github.com/repos/opentofu/opentofu/releases | \
   jq -r '.[].tag_name' | sort -V
 

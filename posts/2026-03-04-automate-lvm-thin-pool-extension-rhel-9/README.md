@@ -39,6 +39,7 @@ This means:
 
 ```bash
 # Enable and start the LVM monitoring service
+
 systemctl enable --now lvm2-monitor
 ```
 

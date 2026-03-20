@@ -22,6 +22,7 @@ Here is what a typical v1 setup looked like:
 
 ```yaml
 # Enable RBAC for the default namespace
+
 apiVersion: "rbac.istio.io/v1alpha1"
 kind: ClusterRbacConfig
 metadata:

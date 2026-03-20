@@ -43,6 +43,7 @@ For a domain where only one server sends mail:
 
 ```text
 # If your server's IP is 203.0.113.10:
+
 v=spf1 ip4:203.0.113.10 -all
 ```
 

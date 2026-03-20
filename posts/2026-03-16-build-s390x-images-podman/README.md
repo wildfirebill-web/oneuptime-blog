@@ -20,6 +20,7 @@ Install QEMU user-static to enable s390x binary emulation.
 
 ```bash
 # Fedora/RHEL/CentOS
+
 sudo dnf install qemu-user-static
 sudo systemctl restart systemd-binfmt
 

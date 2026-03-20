@@ -46,6 +46,7 @@ flowchart TB
 
 ```bash
 # macOS
+
 brew install chart-testing
 
 # Linux

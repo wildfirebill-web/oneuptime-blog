@@ -25,6 +25,7 @@ The server must have multiple IPv4 addresses assigned:
 
 ```bash
 # Add a second IPv4 address to your interface
+
 sudo ip addr add 203.0.113.11/24 dev eth0
 
 # Make it persistent (Ubuntu/Debian - /etc/netplan/01-netcfg.yaml)

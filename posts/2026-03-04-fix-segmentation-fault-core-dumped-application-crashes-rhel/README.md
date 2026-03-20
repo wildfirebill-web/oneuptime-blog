@@ -16,6 +16,7 @@ First, verify that core dumps are enabled:
 
 ```bash
 # Check the current core dump size limit
+
 ulimit -c
 
 # If it shows 0, enable core dumps for the current session

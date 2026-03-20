@@ -18,6 +18,7 @@ Enable the Cloud Tasks API and create a queue:
 
 ```bash
 # Enable the API
+
 gcloud services enable cloudtasks.googleapis.com
 
 # Create a queue with rate limiting

@@ -24,6 +24,7 @@ The replacement also enables Direct Server Return (DSR) for LoadBalancer service
 
 ```bash
 # Step 1: Disable kube-proxy
+
 kubectl patch ds -n kube-system kube-proxy \
   -p '{"spec":{"template":{"spec":{"nodeSelector":{"non-calico":"true"}}}}}'
 

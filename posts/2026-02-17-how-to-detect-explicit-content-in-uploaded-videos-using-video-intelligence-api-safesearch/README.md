@@ -112,6 +112,7 @@ from google.cloud import videointelligence_v1 as vi
 from collections import Counter
 
 # Define severity levels for moderation decisions
+
 SEVERITY_THRESHOLDS = {
     "adult": {
         vi.Likelihood.VERY_LIKELY: "block",

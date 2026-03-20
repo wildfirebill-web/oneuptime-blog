@@ -27,6 +27,7 @@ Key benefits:
 
 ```yaml
 # openshift-pipelines-subscription.yaml
+
 # This installs the OpenShift Pipelines Operator from the Red Hat Marketplace
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription

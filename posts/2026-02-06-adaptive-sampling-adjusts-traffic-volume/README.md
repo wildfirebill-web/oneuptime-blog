@@ -124,6 +124,7 @@ class AdaptiveSampler(Sampler):
         )
 
 # Target 50 traces per second regardless of traffic
+
 sampler = AdaptiveSampler(
     target_traces_per_second=50,
     adjustment_interval=10,

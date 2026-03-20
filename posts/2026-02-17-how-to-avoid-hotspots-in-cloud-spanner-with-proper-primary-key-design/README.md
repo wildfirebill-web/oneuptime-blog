@@ -54,6 +54,7 @@ When inserting data, generate the UUID in your application:
 import uuid
 
 # Generate a random UUID for each new row
+
 event_id = str(uuid.uuid4())  # e.g., "a3b8f042-7c91-4e3d-b5a1-9f2c8d4e6a1b"
 ```
 

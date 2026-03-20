@@ -14,6 +14,7 @@ Ceph self-heals by replicating data across OSDs, but losing enough nodes at once
 
 ```bash
 # Back up the monitor map
+
 sudo ceph mon getmap -o /backup/ceph/monmap.bin
 
 # Back up the OSD map

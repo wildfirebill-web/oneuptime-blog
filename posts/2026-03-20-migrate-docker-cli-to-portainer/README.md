@@ -8,12 +8,13 @@ Description: Learn how to transition from managing containers with the Docker CL
 
 ## Introduction
 
-The Docker CLI is powerful but requires remembering commands and offers limited visibility. Portainer provides a web-based GUI that exposes all Docker functionality visually while still allowing CLI access when needed. Migrating from Docker CLI to Portainer is non-disruptive—your existing containers keep running.
+The Docker CLI is powerful but requires remembering commands and offers limited visibility. Portainer provides a web-based GUI that exposes all Docker functionality visually while still allowing CLI access when needed. Migrating from Docker CLI to Portainer is non-disruptive-your existing containers keep running.
 
 ## Installing Portainer Alongside Docker
 
 ```bash
 # Create a volume for Portainer data
+
 docker volume create portainer_data
 
 # Deploy Portainer (your existing containers are unaffected)

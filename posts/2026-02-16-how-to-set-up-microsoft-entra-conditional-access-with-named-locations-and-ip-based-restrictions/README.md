@@ -45,6 +45,7 @@ Start by defining your corporate network locations. Navigate to Microsoft Entra 
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.ConditionalAccess"
 
 # Create a named location for your main office

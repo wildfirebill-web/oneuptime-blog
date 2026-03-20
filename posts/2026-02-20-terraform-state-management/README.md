@@ -65,6 +65,7 @@ The most common remote backend uses AWS S3 with DynamoDB for locking.
 
 ```hcl
 # backend.tf
+
 # Configure S3 backend with DynamoDB locking
 terraform {
   backend "s3" {

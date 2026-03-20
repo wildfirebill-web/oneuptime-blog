@@ -73,6 +73,7 @@ sequenceDiagram
 # NGINX configuration for WebSocket load balancing with sticky sessions
 
 # Define the upstream group of WebSocket servers
+
 upstream websocket_servers {
     # Use IP hash to ensure the same client always reaches the same server
     # This is critical for WebSocket connections that maintain state

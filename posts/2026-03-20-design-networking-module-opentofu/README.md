@@ -17,6 +17,7 @@ variable "name"        { type = string }
 variable "environment" { type = string }
 
 # VPC peering connections to establish
+
 variable "vpc_peering_connections" {
   type = map(object({
     requester_vpc_id  = string

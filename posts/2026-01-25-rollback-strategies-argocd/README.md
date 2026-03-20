@@ -31,6 +31,7 @@ The GitOps way to rollback is to revert changes in Git:
 
 ```bash
 # Find the commit that broke things
+
 git log --oneline -10
 
 # Revert the problematic commit

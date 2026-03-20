@@ -18,6 +18,7 @@ When you run `argocd cluster add`, it creates:
 
 ```yaml
 # ServiceAccount in the remote cluster
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

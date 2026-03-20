@@ -26,6 +26,7 @@ IPMI allows remote BIOS configuration on supported server hardware:
 
 ```bash
 # Install ipmitool
+
 sudo apt install -y ipmitool
 
 # Connect to local IPMI (if supported)

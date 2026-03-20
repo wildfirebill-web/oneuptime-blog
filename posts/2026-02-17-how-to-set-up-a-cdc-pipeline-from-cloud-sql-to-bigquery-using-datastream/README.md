@@ -37,6 +37,7 @@ Enable binary logging and set the required flags:
 
 ```bash
 # Enable binary logging on your Cloud SQL MySQL instance
+
 # This is required for CDC - Datastream reads changes from the binlog
 gcloud sql instances patch my-mysql-instance \
   --database-flags=log_bin=on,binlog_format=ROW,binlog_row_image=FULL

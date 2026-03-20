@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, Static Address, rc.conf, ifconfig
+Tags: IPv6, FreeBSD, Static Address, Rc.conf, ifconfig
 
 Description: Learn how to configure static IPv6 addresses on FreeBSD persistently via /etc/rc.conf and temporarily via ifconfig, including routing and DNS setup.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure static IPv6 addresses on FreeBSD persistentl
 
 ```bash
 # Add static IPv6 configuration to /etc/rc.conf
+
 cat >> /etc/rc.conf << 'EOF'
 # Static IPv6 address on em0
 ifconfig_em0_ipv6="inet6 2001:db8::10 prefixlen 64"

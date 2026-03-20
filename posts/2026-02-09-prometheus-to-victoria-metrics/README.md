@@ -26,6 +26,7 @@ Deploy Victoria Metrics using Helm:
 
 ```bash
 # Add Victoria Metrics Helm repository
+
 helm repo add vm https://victoriametrics.github.io/helm-charts/
 helm repo update
 

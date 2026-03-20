@@ -32,6 +32,7 @@ This is the single most important thing to understand about EXPOSE: it is metada
 
 ```dockerfile
 # Expose a single TCP port
+
 EXPOSE 8080
 
 # Expose multiple ports

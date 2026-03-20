@@ -32,7 +32,7 @@ sequenceDiagram
 
 ### /etc/swanctl/conf.d/remote-access.conf
 
-```
+```text
 connections {
     remote-access {
         version = 2
@@ -77,6 +77,7 @@ pools {
 }
 
 # User authentication secrets (also can use PAM/RADIUS)
+
 secrets {
     eap-alice {
         id = alice
@@ -147,7 +148,7 @@ rasdial "Corp VPN" alice "Alice-Strong-Password-123!"
 
 ## Client Configuration: Linux with strongSwan
 
-```
+```text
 # /etc/swanctl/conf.d/client.conf
 connections {
     corp-vpn {

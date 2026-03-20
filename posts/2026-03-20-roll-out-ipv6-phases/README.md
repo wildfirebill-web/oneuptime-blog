@@ -30,6 +30,7 @@ Enable IPv6 on infrastructure without affecting users:
 
 ```bash
 # Enable IPv6 on internal routers and switches
+
 # No user-visible change yet
 
 # Test internal IPv6 reachability
@@ -56,7 +57,7 @@ python -m pytest tests/test_ipv6_staging.py -v
 Publish AAAA records only for internal DNS resolvers:
 
 ```bind
-; Internal DNS zone — add AAAA records
+; Internal DNS zone - add AAAA records
 ; External DNS: A records only (no AAAA yet)
 internal.example.com.  IN  AAAA  2001:db8:1::1
 api.internal.example.com.  IN  AAAA  2001:db8:1::2
@@ -136,7 +137,7 @@ END {
 
 ```bash
 # Enable AAAA for all clients
-# Remove DNS weights — all clients get AAAA
+# Remove DNS weights - all clients get AAAA
 # Lower DNS TTL to 60s first for fast rollback capability
 
 # Verify from multiple external points
@@ -179,4 +180,4 @@ for addr in addrs:
 
 ## Conclusion
 
-A phased IPv6 rollout controls risk by limiting AAAA record publication, monitoring error rates at each phase, and requiring explicit exit criteria before proceeding. Use DNS weighted routing to control what percentage of clients get AAAA responses during phases 2 and 3. The most important monitoring signal is IPv6 error rate — if it exceeds 5x the IPv4 error rate, roll back and investigate before proceeding.
+A phased IPv6 rollout controls risk by limiting AAAA record publication, monitoring error rates at each phase, and requiring explicit exit criteria before proceeding. Use DNS weighted routing to control what percentage of clients get AAAA responses during phases 2 and 3. The most important monitoring signal is IPv6 error rate - if it exceeds 5x the IPv4 error rate, roll back and investigate before proceeding.

@@ -14,6 +14,7 @@ Edge Agent connections fail for different reasons than standard agent connection
 
 ```bash
 # View recent logs
+
 docker logs portainer_edge_agent --tail 50
 
 # Common successful log entries:

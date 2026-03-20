@@ -20,6 +20,7 @@ ArgoCD follows semantic versioning. You can see all available releases on GitHub
 
 ```bash
 # List the 20 most recent ArgoCD releases
+
 curl -s https://api.github.com/repos/argoproj/argo-cd/releases | \
   jq -r '.[0:20] | .[].tag_name'
 ```

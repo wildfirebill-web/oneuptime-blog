@@ -25,7 +25,7 @@ resource "aws_wafv2_web_acl" "owasp_protected" {
     priority = 10
 
     override_action {
-      count {}  # Start in count mode — monitor before switching to block
+      count {}  # Start in count mode - monitor before switching to block
       # Change to: none {} to enforce blocking
     }
 

@@ -1,4 +1,4 @@
-# How to Configure Per-Environment Access Control in Portainer
+# How to Configure Per-Environment Access Control in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -38,6 +38,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Set team access policies for environment 1
+
 # Team 2 = DevOps (Standard User), Team 3 = QA (Standard User), Team 4 = Support (Helpdesk)
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
@@ -65,7 +66,7 @@ curl -X PUT \
 
 ### Pattern 1: Environment-Per-Project
 
-```
+```text
 Production Environment:
   - Platform team (Admin): Administrator
   - DevOps team: Standard User
@@ -84,7 +85,7 @@ Development Environment:
 
 ### Pattern 2: Environment-Per-Team
 
-```
+```text
 Backend Environment:
   - Backend team: Standard User
   - Everyone else: No access

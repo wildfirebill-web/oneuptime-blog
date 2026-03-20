@@ -12,7 +12,7 @@ Effective IDS/IPS sensor placement for IPv6 networks requires visibility at mult
 
 ## IPv6 Network Visibility Considerations
 
-```
+```text
 Network Architecture:
   Internet (IPv6)
       |
@@ -31,6 +31,7 @@ Network Architecture:
 
 ```bash
 # Configure span port on border router for sensor
+
 # Cisco IOS example:
 # monitor session 1 source interface GigabitEthernet0/0
 # monitor session 1 destination interface GigabitEthernet0/1

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Firewall, Linux, Incoming Traffic
+Tags: IPv6, Ip6tables, Firewall, Linux, Incoming Traffic
 
 Description: Learn how to write comprehensive ip6tables rules for controlling incoming IPv6 traffic, including per-service rules, source restrictions, and rate limiting.
 
@@ -13,7 +13,8 @@ Incoming IPv6 traffic is controlled via the INPUT chain in ip6tables. A well-des
 ## Default Policy: Deny All Inbound
 
 ```bash
-# Start with DROP all — then explicitly allow what's needed
+# Start with DROP all - then explicitly allow what's needed
+
 ip6tables -P INPUT DROP
 ```
 
@@ -22,17 +23,17 @@ This means any traffic not explicitly matched by a rule is dropped.
 ## Essential Rules for Any Server
 
 ```bash
-# 1. Loopback — always allow
+# 1. Loopback - always allow
 ip6tables -A INPUT -i lo -j ACCEPT
 
-# 2. Established connections — allow replies
+# 2. Established connections - allow replies
 ip6tables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
-# 3. Invalid packets — drop immediately
+# 3. Invalid packets - drop immediately
 ip6tables -A INPUT -m conntrack --ctstate INVALID -j DROP
 
-# 4. Essential ICMPv6 — MUST allow (RFC 4890)
-# Packet Too Big — required for PMTUD (never block this)
+# 4. Essential ICMPv6 - MUST allow (RFC 4890)
+# Packet Too Big - required for PMTUD (never block this)
 ip6tables -A INPUT -p icmpv6 --icmpv6-type 2 -j ACCEPT
 
 # Destination Unreachable (type 1)
@@ -93,7 +94,7 @@ ip6tables -A INPUT -p tcp --dport 53 -j ACCEPT
 ```bash
 # SMTP inbound (port 25)
 ip6tables -A INPUT -p tcp --dport 25 -j ACCEPT
-# Submission (port 587) — from authorized users only
+# Submission (port 587) - from authorized users only
 ip6tables -A INPUT -p tcp --dport 587 -j ACCEPT
 # IMAP/POP
 ip6tables -A INPUT -p tcp --dport 993 -j ACCEPT
@@ -103,7 +104,7 @@ ip6tables -A INPUT -p tcp --dport 995 -j ACCEPT
 ### Database (Restrict by Source)
 
 ```bash
-# PostgreSQL — only from application servers
+# PostgreSQL - only from application servers
 ip6tables -A INPUT -p tcp --dport 5432 -s 2001:db8:app::/64 -j ACCEPT
 ip6tables -A INPUT -p tcp --dport 5432 -j DROP   # Deny all others explicitly
 ```

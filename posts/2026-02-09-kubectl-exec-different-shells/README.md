@@ -18,6 +18,7 @@ The standard syntax for executing commands in pods:
 
 ```bash
 # Execute command in single-container pod
+
 kubectl exec my-pod -- ls -la
 
 # Interactive shell in single-container pod

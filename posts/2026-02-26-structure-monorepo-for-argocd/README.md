@@ -76,6 +76,7 @@ Each service uses Kustomize with a base and environment-specific overlays. Here 
 
 ```yaml
 # manifests/backend-api/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

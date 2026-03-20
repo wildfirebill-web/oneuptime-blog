@@ -6,7 +6,7 @@ Tags: Wireshark, IPv6, Multicast, MLD, ICMPv6, Packet Analysis
 
 Description: A guide to analyzing IPv6 multicast traffic in Wireshark, including MLD messages, NDP multicast, and application multicast group membership.
 
-IPv6 uses multicast extensively — it replaces IPv4 broadcast, powers Neighbor Discovery Protocol, and supports multicast applications. Analyzing multicast traffic in Wireshark is essential for diagnosing NDP failures, MLD issues, and multicast application problems.
+IPv6 uses multicast extensively - it replaces IPv4 broadcast, powers Neighbor Discovery Protocol, and supports multicast applications. Analyzing multicast traffic in Wireshark is essential for diagnosing NDP failures, MLD issues, and multicast application problems.
 
 ## IPv6 Multicast Address Ranges
 
@@ -25,6 +25,7 @@ IPv6 uses multicast extensively — it replaces IPv4 broadcast, powers Neighbor 
 
 ```wireshark
 # Show ALL IPv6 multicast traffic
+
 ipv6.dst == ff00::/8
 
 # Show link-local multicast only (ff02::/16)
@@ -138,4 +139,4 @@ dns.flags.response == 0 && ipv6.dst == ff02::fb
 dns.flags.response == 1 && (ipv6.src == fe80::/10)
 ```
 
-IPv6 multicast analysis in Wireshark uncovers issues that are invisible at the unicast layer — from missing Router Advertisements that prevent SLAAC addressing to MLD failures that break multicast application delivery.
+IPv6 multicast analysis in Wireshark uncovers issues that are invisible at the unicast layer - from missing Router Advertisements that prevent SLAAC addressing to MLD failures that break multicast application delivery.

@@ -16,6 +16,7 @@ Before using facts in conditionals, you need to know what is available. Run the 
 
 ```bash
 # View all facts for a host
+
 ansible webserver-01 -m setup
 
 # Filter facts to find specific ones

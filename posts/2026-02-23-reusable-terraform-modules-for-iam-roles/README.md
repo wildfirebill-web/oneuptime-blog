@@ -68,6 +68,7 @@ variable "max_session_duration" {
 }
 
 # Trust policy - who can assume this role
+
 variable "trusted_services" {
   description = "List of AWS service principals that can assume this role"
   type        = list(string)

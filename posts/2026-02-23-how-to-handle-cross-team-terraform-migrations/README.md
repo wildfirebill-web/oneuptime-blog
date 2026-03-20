@@ -91,6 +91,7 @@ When transferring resources between team-owned state files:
 ```bash
 #!/bin/bash
 # state-handoff.sh
+
 # Transfer resources between team state files
 
 SOURCE_DIR=$1  # Exporting team's configuration

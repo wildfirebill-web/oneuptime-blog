@@ -22,6 +22,7 @@ Create a Fargate profile using AWS CLI:
 
 ```bash
 # Create Fargate profile
+
 aws eks create-fargate-profile \
   --cluster-name my-cluster \
   --fargate-profile-name default-profile \

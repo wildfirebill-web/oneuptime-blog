@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu's mock provider feature to run tests with
 
 ## Introduction
 
-Mock providers, introduced in OpenTofu 1.7, allow you to replace a real cloud provider with a simulated one during tests. The mock provider returns fake but structurally valid resource data without making any API calls. This enables true unit testing of infrastructure modules—no credentials, no cost, no waiting.
+Mock providers, introduced in OpenTofu 1.7, allow you to replace a real cloud provider with a simulated one during tests. The mock provider returns fake but structurally valid resource data without making any API calls. This enables true unit testing of infrastructure modules-no credentials, no cost, no waiting.
 
 ## Declaring a Mock Provider
 
@@ -18,6 +18,7 @@ Replace a real `provider` block with a `mock_provider` block in your test file:
 # tests/s3_unit.tftest.hcl
 
 # Instead of a real AWS provider, use a mock
+
 mock_provider "aws" {
   # Alias matches the provider alias used in the module, if any
   # alias = "us_east_1"

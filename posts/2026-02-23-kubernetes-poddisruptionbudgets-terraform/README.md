@@ -29,6 +29,7 @@ The `minAvailable` field specifies the minimum number of pods that must remain a
 
 ```hcl
 # A deployment with 3 replicas
+
 resource "kubernetes_deployment" "api" {
   metadata {
     name      = "api"

@@ -53,6 +53,7 @@ REPO_DIR="istio-config"
 mkdir -p "$REPO_DIR"
 
 # Get all namespaces with Istio resources
+
 NAMESPACES=$(kubectl get virtualservices,destinationrules,gateways,authorizationpolicies --all-namespaces --no-headers 2>/dev/null | awk '{print $1}' | sort -u)
 
 for ns in $NAMESPACES; do

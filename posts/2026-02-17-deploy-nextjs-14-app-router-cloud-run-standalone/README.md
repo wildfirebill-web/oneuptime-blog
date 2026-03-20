@@ -49,6 +49,7 @@ Here is a multi-stage Dockerfile optimized for Next.js 14 on Cloud Run.
 
 ```dockerfile
 # Stage 1: Install dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 

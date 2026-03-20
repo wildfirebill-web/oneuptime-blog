@@ -15,13 +15,14 @@ Poorly designed modules are hard to reuse, difficult to test, and create painful
 A module that creates a VPC, EKS cluster, RDS instance, and monitoring stack in one block is difficult to reuse independently.
 
 ```hcl
-# Bad — one module does everything
+# Bad - one module does everything
+
 module "entire_stack" {
   source = "./modules/everything"
   # Impossible to use just the networking part
 }
 
-# Good — single-responsibility modules
+# Good - single-responsibility modules
 module "networking" { source = "./modules/vpc" }
 module "cluster"    { source = "./modules/eks" }
 module "database"   { source = "./modules/rds" }
@@ -30,14 +31,14 @@ module "database"   { source = "./modules/rds" }
 ## Mistake 2: Hard-Coded Values
 
 ```hcl
-# Bad — hard-coded region and account ID
+# Bad - hard-coded region and account ID
 resource "aws_iam_role_policy" "this" {
   policy = jsonencode({
     Resource = "arn:aws:s3:::my-company-bucket"  # Hard-coded bucket name
   })
 }
 
-# Good — parameterize everything that changes
+# Good - parameterize everything that changes
 variable "bucket_name" {
   type        = string
   description = "Name of the S3 bucket to grant access to"
@@ -53,13 +54,13 @@ resource "aws_iam_role_policy" "this" {
 ## Mistake 3: Missing or Incorrect Output Declarations
 
 ```hcl
-# Bad — caller cannot reference the created resource
+# Bad - caller cannot reference the created resource
 resource "aws_vpc" "this" {
   cidr_block = var.cidr_block
 }
-# No outputs — callers cannot get the vpc_id
+# No outputs - callers cannot get the vpc_id
 
-# Good — expose everything a caller needs
+# Good - expose everything a caller needs
 output "vpc_id" {
   description = "ID of the created VPC"
   value       = aws_vpc.this.id
@@ -74,10 +75,10 @@ output "vpc_cidr_block" {
 ## Mistake 4: No Variable Descriptions or Types
 
 ```hcl
-# Bad — no type, no description
+# Bad - no type, no description
 variable "settings" {}
 
-# Good — typed, documented, validated
+# Good - typed, documented, validated
 variable "instance_type" {
   type        = string
   description = "EC2 instance type. Must be from the t3 or m5 family."
@@ -92,12 +93,12 @@ variable "instance_type" {
 ## Mistake 5: Configuring Providers Inside Modules
 
 ```hcl
-# Bad — provider configuration belongs in the root module
+# Bad - provider configuration belongs in the root module
 provider "aws" {
   region = "us-east-1"  # Never do this in a child module
 }
 
-# Good — accept providers via required_providers and let the root configure them
+# Good - accept providers via required_providers and let the root configure them
 terraform {
   required_providers {
     aws = {
@@ -112,15 +113,15 @@ terraform {
 
 Without examples, callers must guess how to invoke your module:
 
-```
+```text
 # Good module structure includes examples
 terraform-aws-vpc/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
 └── examples/
-    ├── basic/main.tf      — Minimal working example
-    └── complete/main.tf   — Full-featured example
+    ├── basic/main.tf      - Minimal working example
+    └── complete/main.tf   - Full-featured example
 ```
 
 ## Mistake 7: Ignoring Backwards Compatibility

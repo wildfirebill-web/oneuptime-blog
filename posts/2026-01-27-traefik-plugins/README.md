@@ -94,6 +94,7 @@ Enable the plugin in your Traefik static configuration:
 
 ```yaml
 # traefik.yml - Static configuration file
+
 # Defines which plugins Traefik should load at startup
 
 experimental:

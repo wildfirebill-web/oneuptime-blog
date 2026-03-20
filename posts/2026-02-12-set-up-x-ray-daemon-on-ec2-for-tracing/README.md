@@ -37,6 +37,7 @@ The X-Ray daemon needs permission to call the X-Ray API. The simplest approach i
 
 ```bash
 # Attach the X-Ray write policy to your EC2 instance role
+
 aws iam attach-role-policy \
   --role-name MyEC2InstanceRole \
   --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess

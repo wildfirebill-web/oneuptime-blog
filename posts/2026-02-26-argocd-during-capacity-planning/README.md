@@ -40,6 +40,7 @@ Before planning capacity, measure your current baseline.
 
 ```bash
 # Current resource usage for all ArgoCD components
+
 kubectl top pods -n argocd
 
 # Resource requests and limits

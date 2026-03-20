@@ -57,6 +57,7 @@ Store firmware binaries in Azure Blob Storage with SAS token access:
 
 ```bash
 # Create a storage account for firmware files
+
 RESOURCE_GROUP="rg-iot-production"
 STORAGE_ACCOUNT="iotfirmware01"
 

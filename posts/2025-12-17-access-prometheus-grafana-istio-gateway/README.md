@@ -35,6 +35,7 @@ Ensure the Istio ingress gateway is deployed and has an external IP.
 
 ```bash
 # Check ingress gateway deployment
+
 kubectl get pods -n istio-system -l istio=ingressgateway
 
 # Get external IP or hostname

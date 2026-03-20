@@ -1,8 +1,8 @@
-# How to Recreate a Container with Updated Settings in Portainer
+# How to Recreate a Container with Updated Settings in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Recreate, Update, Containers
+Tags: Portainer, Docker, Recreate, Updates, Containers
 
 Description: Recreate a running container in Portainer with new configuration settings while minimizing downtime.
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Get container ID by name
+
 CONTAINER_ID=$(curl -s "https://localhost:9443/api/endpoints/1/docker/containers/json?all=1" \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

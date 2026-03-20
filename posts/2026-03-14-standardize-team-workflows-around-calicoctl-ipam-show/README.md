@@ -39,6 +39,7 @@ scheduled:
 ```bash
 #!/bin/bash
 # team-ipam-show.sh
+
 echo "=== calicoctl ipam show ==="
 echo "Operator: $USER"
 echo "Cluster: $(kubectl config current-context)"

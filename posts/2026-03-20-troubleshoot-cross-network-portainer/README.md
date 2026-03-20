@@ -1,4 +1,4 @@
-# How to Troubleshoot Cross-Network Container Communication in Portainer
+# How to Troubleshoot Cross-Network Container Communication in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,7 +30,7 @@ Diagnose and fix cross-network communication issues between containers in Portai
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

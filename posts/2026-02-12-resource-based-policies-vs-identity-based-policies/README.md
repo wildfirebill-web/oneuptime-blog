@@ -50,6 +50,7 @@ Embedded directly in a user, group, or role. They can't be reused:
 
 ```bash
 # Attach an inline policy to a role
+
 aws iam put-role-policy \
   --role-name MyAppRole \
   --policy-name s3-read-inline \
@@ -67,7 +68,7 @@ aws iam put-role-policy \
 
 Use inline policies sparingly. They're harder to manage and audit.
 
-## Resource-Based Policies
+Resource-Based Policies
 
 These attach to the resource itself and specify who can access it. The key difference: they include a `Principal` element that says who the policy applies to.
 

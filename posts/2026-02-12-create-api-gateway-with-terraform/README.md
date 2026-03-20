@@ -30,6 +30,7 @@ First, define the API and its root resource:
 
 ```hcl
 # Create the REST API
+
 resource "aws_api_gateway_rest_api" "my_api" {
   name        = "my-application-api"
   description = "API for my application"

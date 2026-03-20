@@ -10,6 +10,7 @@ Description: A practical guide to setting up multiple Apache virtual hosts serve
 
 ```apache
 # In Apache, IPv6 addresses in VirtualHost must be in brackets
+
 # <VirtualHost [IPv6-address]:port>
 
 # All three syntax forms:
@@ -150,4 +151,4 @@ curl -6 http://[2001:db8::10]/ -H "Host: site1.example.com"
 
 ## Summary
 
-Configure Apache IPv6 virtual hosts with `<VirtualHost [::]:80>` for all-IPv6 interfaces or `<VirtualHost [2001:db8::10]:80>` for a specific address. Name-based hosting over IPv6 works the same as IPv4 — Apache matches `Host:` header to `ServerName`. Use `<VirtualHost *:80>` to match all Listen directives (both IPv4 and IPv6). Verify layout with `apache2ctl -S` and test with `curl -6 -H "Host: example.com"`.
+Configure Apache IPv6 virtual hosts with `<VirtualHost [::]:80>` for all-IPv6 interfaces or `<VirtualHost [2001:db8::10]:80>` for a specific address. Name-based hosting over IPv6 works the same as IPv4 - Apache matches `Host:` header to `ServerName`. Use `<VirtualHost *:80>` to match all Listen directives (both IPv4 and IPv6). Verify layout with `apache2ctl -S` and test with `curl -6 -H "Host: example.com"`.

@@ -24,6 +24,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Verify Flux installation
+
 flux check
 
 # List existing HelmReleases

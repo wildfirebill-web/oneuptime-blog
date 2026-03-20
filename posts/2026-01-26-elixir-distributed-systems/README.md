@@ -59,6 +59,7 @@ Every Elixir node needs a name and a shared cookie for authentication. Start nod
 
 ```bash
 # Start the first node with a short name (for local network)
+
 iex --sname node1 --cookie my_secret_cookie -S mix
 
 # Start another node on the same machine or network

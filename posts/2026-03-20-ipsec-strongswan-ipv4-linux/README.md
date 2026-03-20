@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPSec, StrongSwan, VPN, IPv4, Linux, IKE
+Tags: IPsec, strongSwan, VPN, IPv4, Linux, IKE
 
 Description: Install StrongSwan and configure an IPSec VPN with pre-shared key authentication for IPv4 connectivity on Linux.
 
@@ -12,6 +12,7 @@ StrongSwan is the leading open-source IPSec implementation for Linux. It support
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install strongswan strongswan-pki libcharon-extra-plugins -y
 
@@ -125,4 +126,4 @@ sudo journalctl -u strongswan -f
 sudo ipsec stroke loglevel ike 4
 ```
 
-StrongSwan is highly configurable — this PSK-based setup provides a working foundation that you can extend with certificate authentication for production environments.
+StrongSwan is highly configurable - this PSK-based setup provides a working foundation that you can extend with certificate authentication for production environments.

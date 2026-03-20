@@ -75,6 +75,7 @@ metadata:
   name: production
 ---
 # Quota for critical priority workloads
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

@@ -362,6 +362,7 @@ Check the status of provisioned databases:
 
 ```bash
 # View all database claims
+
 kubectl get databases -A
 
 # Check the composite resource status

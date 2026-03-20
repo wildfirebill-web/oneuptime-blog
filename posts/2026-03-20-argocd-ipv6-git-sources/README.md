@@ -14,6 +14,7 @@ ArgoCD connects to Git repositories as application sources for GitOps deployment
 
 ```bash
 # ArgoCD CLI: add a Git repository over IPv6
+
 argocd repo add "https://[2001:db8::git]:443/org/myrepo.git" \
     --username git \
     --password "$GIT_TOKEN" \

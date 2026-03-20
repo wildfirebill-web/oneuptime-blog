@@ -16,6 +16,7 @@ The first step in debugging is confirming that ArgoCD actually sees your sync wa
 
 ```bash
 # List all resources in an application with their sync wave numbers
+
 argocd app get my-app --show-operation
 
 # Get detailed resource information including waves
@@ -181,7 +182,7 @@ data:
 
 Be careful with this. Marking resources as always healthy defeats the purpose of sync wave ordering.
 
-## Resources Deploying Out of Expected Order
+Resources Deploying Out of Expected Order
 
 If resources seem to deploy out of order despite correct sync wave annotations, check these scenarios.
 

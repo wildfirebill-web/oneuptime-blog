@@ -57,6 +57,7 @@ resource "aws_route53_zone" "main" {
 }
 
 # Separate alias records from standard records
+
 locals {
   alias_records    = { for k, r in var.records : k => r if r.alias != null }
   standard_records = { for k, r in var.records : k => r if r.alias == null }

@@ -16,6 +16,7 @@ Jenkins by default listens on all interfaces. To explicitly bind to an IPv6 addr
 
 ```bash
 # For Jenkins installed as a systemd service
+
 # Edit the Jenkins service configuration
 sudo systemctl edit jenkins
 
@@ -186,4 +187,4 @@ java -Djava.net.preferIPv6Addresses=true \
 
 ## Conclusion
 
-Jenkins runs on Java, which natively supports IPv6 through JVM flags. Setting `-Djava.net.preferIPv6Addresses=true` and configuring the listener address to `::` enables Jenkins to serve both IPv4 and IPv6 clients. Agents follow the same pattern — launch with IPv6 JVM flags and connect to the master's IPv6 address. Docker-based agents require IPv6-enabled Docker networks to function correctly in dual-stack or IPv6-only environments.
+Jenkins runs on Java, which natively supports IPv6 through JVM flags. Setting `-Djava.net.preferIPv6Addresses=true` and configuring the listener address to `::` enables Jenkins to serve both IPv4 and IPv6 clients. Agents follow the same pattern - launch with IPv6 JVM flags and connect to the master's IPv6 address. Docker-based agents require IPv6-enabled Docker networks to function correctly in dual-stack or IPv6-only environments.

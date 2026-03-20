@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Global Services, DaemonSet, Infrastructure
+Tags: Portainer, Docker Swarm, Global Service, DaemonSet, Infrastructure
 
 Description: Deploy Docker Swarm global mode services through Portainer to run exactly one container per node across the entire cluster, equivalent to Kubernetes DaemonSets.
 
@@ -42,7 +42,7 @@ services:
 
 ## Step 2: Global Prometheus Node Exporter
 
-A classic global service use case — run Node Exporter on every node:
+A classic global service use case - run Node Exporter on every node:
 
 ```yaml
 version: "3.8"
@@ -75,7 +75,7 @@ deploy:
   mode: global
   placement:
     constraints:
-      # Only run on worker nodes — skip manager nodes
+      # Only run on worker nodes - skip manager nodes
       - node.role == worker
 ```
 

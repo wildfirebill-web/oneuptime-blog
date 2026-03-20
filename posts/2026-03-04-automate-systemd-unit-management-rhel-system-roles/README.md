@@ -22,6 +22,7 @@ Install the package on your Ansible control node:
 
 ```bash
 # Install the RHEL System Roles package
+
 sudo dnf install rhel-system-roles -y
 ```
 

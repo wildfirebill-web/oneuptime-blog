@@ -33,6 +33,7 @@ Each target account needs an IAM role that Terraform will assume. Create this ro
 # Run this in the target account (e.g., dev, staging, prod)
 
 # The role that Terraform will assume
+
 resource "aws_iam_role" "terraform_deploy" {
   name = "TerraformDeployRole"
 

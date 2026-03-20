@@ -45,6 +45,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.metrics import MeterProvider
 
 # Set up providers
+
 trace.set_tracer_provider(TracerProvider())
 metrics.set_meter_provider(MeterProvider())
 

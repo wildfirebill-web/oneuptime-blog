@@ -38,6 +38,7 @@ Set up Amazon Web Services credentials:
 ```plaintext
 Name: aws-production
 Description: Production AWS account credentials
+
 Access Key: AKIAIOSFODNN7EXAMPLE
 Secret Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default Region: us-east-1
@@ -101,6 +102,7 @@ Create a service principal with the required permissions using the Azure CLI:
 
 ```bash
 # Create a service principal
+
 az ad sp create-for-rbac \
   --name "rancher-node-provisioner" \
   --role Contributor \

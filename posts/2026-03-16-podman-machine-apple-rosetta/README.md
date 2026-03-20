@@ -25,6 +25,7 @@ Rosetta support in Podman machines requires:
 
 ```bash
 # Install Rosetta 2 if not already installed
+
 softwareupdate --install-rosetta --agree-to-license
 
 # Verify Rosetta is installed

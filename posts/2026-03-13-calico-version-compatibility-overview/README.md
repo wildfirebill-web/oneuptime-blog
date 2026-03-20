@@ -40,6 +40,7 @@ This means: if you are running Kubernetes 1.28, you need Calico 3.28 or later.
 
 ```bash
 # Check Calico version
+
 kubectl get pods -n calico-system -l k8s-app=calico-node \
   -o jsonpath='{.items[0].spec.containers[0].image}'
 # Expected: calico/node:v3.27.0 (or similar)

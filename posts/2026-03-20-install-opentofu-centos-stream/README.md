@@ -22,6 +22,7 @@ CentOS Stream is the upstream development platform for Red Hat Enterprise Linux 
 
 ```bash
 # Create the repository configuration file
+
 cat <<EOF | sudo tee /etc/yum.repos.d/opentofu.repo
 [opentofu]
 name=opentofu

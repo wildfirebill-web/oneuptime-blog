@@ -52,6 +52,7 @@ filebeat/
 
 ```yaml
 # roles/filebeat/defaults/main.yml
+
 filebeat_version: "8.11"
 
 # Output configuration (choose one)

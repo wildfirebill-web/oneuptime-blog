@@ -45,6 +45,7 @@ After the refactor, add the moved block alongside the renamed resource:
 
 ```hcl
 # Tell Terraform this resource was renamed
+
 moved {
   from = aws_instance.web
   to   = aws_instance.app_server

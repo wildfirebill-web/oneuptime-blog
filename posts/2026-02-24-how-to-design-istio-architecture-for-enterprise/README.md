@@ -24,6 +24,7 @@ Here is the setup for a multi-primary mesh on two clusters:
 
 ```bash
 # On cluster1
+
 istioctl install --set profile=default \
   --set values.global.meshID=enterprise-mesh \
   --set values.global.multiCluster.clusterName=cluster1 \

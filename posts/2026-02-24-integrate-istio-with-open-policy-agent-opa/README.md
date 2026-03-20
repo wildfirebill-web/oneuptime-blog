@@ -185,6 +185,7 @@ import rego.v1
 default allow := false
 
 # Role permissions mapping
+
 role_permissions := {
   "admin": ["GET", "POST", "PUT", "DELETE"],
   "editor": ["GET", "POST", "PUT"],

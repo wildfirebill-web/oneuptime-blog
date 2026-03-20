@@ -58,6 +58,7 @@ Before writing any code, install the NATS Python client and ensure you have a NA
 
 ```bash
 # Install the NATS Python client library
+
 pip install nats-py
 
 # For local development, run NATS server with Docker

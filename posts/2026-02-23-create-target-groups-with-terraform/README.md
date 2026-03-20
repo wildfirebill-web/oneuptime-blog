@@ -26,6 +26,7 @@ The most common type. Register EC2 instances and the ALB routes traffic to them.
 
 ```hcl
 # Instance-based target group for a web application
+
 resource "aws_lb_target_group" "web" {
   name_prefix = "web-"
   port        = 8080

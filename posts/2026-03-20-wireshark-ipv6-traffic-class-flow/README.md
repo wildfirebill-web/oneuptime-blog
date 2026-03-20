@@ -16,13 +16,14 @@ IPv6 headers include two fields for QoS and flow tracking: the **Traffic Class**
 | Flow Label | 20 bits | No equivalent | Identify a specific flow |
 
 ### Traffic Class Sub-fields
-- **DSCP (Differentiated Services Code Point)**: bits 0-5 — used for QoS
-- **ECN (Explicit Congestion Notification)**: bits 6-7 — congestion signaling
+- **DSCP (Differentiated Services Code Point)**: bits 0-5 - used for QoS
+- **ECN (Explicit Congestion Notification)**: bits 6-7 - congestion signaling
 
 ## Display Filters for Traffic Class
 
 ```wireshark
 # Show all IPv6 packets (Traffic Class is present in every IPv6 header)
+
 ipv6
 
 # Filter by specific Traffic Class value

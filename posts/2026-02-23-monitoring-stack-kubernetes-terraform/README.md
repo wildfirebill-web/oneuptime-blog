@@ -28,6 +28,7 @@ The kube-prometheus-stack Helm chart bundles Prometheus, Grafana, Alertmanager, 
 
 ```hcl
 # Create the monitoring namespace
+
 resource "kubernetes_namespace" "monitoring" {
   metadata {
     name = "monitoring"

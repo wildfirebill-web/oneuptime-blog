@@ -16,6 +16,7 @@ Start by installing the language pack for your target language. Language packs i
 
 ```bash
 # Install Arabic language support
+
 sudo apt install language-pack-ar language-pack-ar-base
 
 # Install Hebrew language support

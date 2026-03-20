@@ -41,6 +41,7 @@ The App Mesh Controller manages App Mesh resources in your cluster. Install it v
 
 ```yaml
 # appmesh-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -158,6 +158,7 @@ Use the stable policy for production and the edge policy for staging:
 
 ```yaml
 # Production
+
 image: docker.io/myorg/my-app:stable # {"$imagepolicy": "flux-system:my-app-stable"}
 
 # Staging

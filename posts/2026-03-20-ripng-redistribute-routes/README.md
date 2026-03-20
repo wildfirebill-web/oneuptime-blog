@@ -14,6 +14,7 @@ Route redistribution allows RIPng to advertise routes learned from other sources
 
 ```bash
 # FRRouting
+
 vtysh
 configure terminal
 
@@ -25,7 +26,7 @@ end
 write memory
 ```
 
-```
+```text
 ! Cisco
 Router(config)# ipv6 router rip RIPNG_PROCESS
 Router(config-rtr)# redistribute static metric 3
@@ -92,7 +93,7 @@ end
 write memory
 ```
 
-```
+```text
 ! Cisco: selective redistribution with route map
 Router(config)# ipv6 prefix-list STATIC_LIST seq 10 permit 2001:db8:branch::/48
 

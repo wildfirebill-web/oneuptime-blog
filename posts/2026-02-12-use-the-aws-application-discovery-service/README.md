@@ -48,6 +48,7 @@ After deployment, access the connector's web console and configure:
 
 ```python
 # Verify connector is registered and start data collection
+
 import boto3
 
 discovery = boto3.client('discovery')

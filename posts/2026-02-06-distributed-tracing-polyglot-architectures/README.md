@@ -214,6 +214,7 @@ For Java, the easiest approach is using the OpenTelemetry Java agent, which auto
 
 ```bash
 # Run the Java service with the OpenTelemetry agent attached
+
 # The agent automatically instruments Spring MVC, RestTemplate, and JDBC
 java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.service.name=auth-service \

@@ -16,6 +16,7 @@ Traefik is the most popular automatic certificate manager for Docker:
 
 ```yaml
 # traefik-letsencrypt-stack.yml
+
 version: "3.8"
 services:
   traefik:

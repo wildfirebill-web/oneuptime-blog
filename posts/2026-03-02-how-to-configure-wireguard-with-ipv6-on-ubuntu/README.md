@@ -18,6 +18,7 @@ Check that your kernel is recent enough to include WireGuard natively:
 
 ```bash
 # WireGuard is in the kernel since 5.6; check your version
+
 uname -r
 
 # On Ubuntu 20.04+ it's available as a kernel module

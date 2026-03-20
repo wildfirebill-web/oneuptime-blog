@@ -42,6 +42,7 @@ Install the Flux CLI on your local machine.
 
 ```bash
 # Install Flux CLI on macOS
+
 brew install fluxcd/tap/flux
 
 # Or install on Linux

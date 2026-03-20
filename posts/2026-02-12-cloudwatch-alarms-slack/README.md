@@ -24,6 +24,7 @@ Go to the AWS Chatbot console and click "Configure new client." Select Slack, an
 
 ```bash
 # Create a Chatbot configuration via CLI
+
 aws chatbot create-slack-channel-configuration \
   --configuration-name "cloudwatch-alerts" \
   --slack-workspace-id "T0123ABC" \

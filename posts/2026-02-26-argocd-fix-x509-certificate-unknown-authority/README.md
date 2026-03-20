@@ -37,6 +37,7 @@ First, get the CA certificate from your Git server:
 
 ```bash
 # Extract the CA certificate from the server
+
 openssl s_client -connect git.example.com:443 -showcerts < /dev/null 2>/dev/null | \
   awk '/BEGIN CERTIFICATE/,/END CERTIFICATE/{print}' > git-ca.crt
 

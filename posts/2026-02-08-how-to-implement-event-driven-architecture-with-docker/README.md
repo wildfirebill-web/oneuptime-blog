@@ -36,6 +36,7 @@ Docker Compose configuration for RabbitMQ with management UI:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

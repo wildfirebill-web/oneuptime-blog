@@ -53,6 +53,7 @@ The real power of Helm comes from custom values files. Create a structured value
 
 ```yaml
 # values-istiod.yaml
+
 pilot:
   autoscaleEnabled: true
   autoscaleMin: 2

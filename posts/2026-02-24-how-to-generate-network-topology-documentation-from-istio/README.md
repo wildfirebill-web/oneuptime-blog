@@ -209,6 +209,7 @@ echo "| Source Namespace | Destination Namespace | mTLS Mode |"
 echo "|-----------------|---------------------|-----------|"
 
 # Get PeerAuthentication policies
+
 kubectl get peerauthentications -A -o json | jq -r '
   .items[] |
   "| * | " + .metadata.namespace + " | " + (.spec.mtls.mode // "UNSET") + " |"

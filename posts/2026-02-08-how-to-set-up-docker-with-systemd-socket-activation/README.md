@@ -48,6 +48,7 @@ Check both units.
 
 ```bash
 # Check the Docker socket unit
+
 systemctl status docker.socket
 
 # Check the Docker service unit

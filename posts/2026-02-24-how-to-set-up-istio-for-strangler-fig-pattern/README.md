@@ -208,6 +208,7 @@ The new service might use different data models than the legacy system. An anti-
 
 ```python
 # notifications-service/app.py
+
 from flask import Flask, request, jsonify
 import requests
 

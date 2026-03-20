@@ -29,6 +29,7 @@ The syntax is straightforward:
 
 ```bash
 # Hold a single package
+
 sudo apt-mark hold <package-name>
 
 # Hold multiple packages at once

@@ -33,6 +33,7 @@ Deploy HNC using Flux-managed manifests:
 
 ```yaml
 # infrastructure/hnc/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

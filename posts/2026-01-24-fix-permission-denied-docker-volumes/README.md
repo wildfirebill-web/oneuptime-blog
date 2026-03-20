@@ -16,6 +16,7 @@ When you mount a host directory into a container, file ownership stays the same.
 
 ```bash
 # On host: file owned by your user (UID 1000)
+
 ls -la ./data/
 -rw-r--r-- 1 youruser youruser 1234 Jan 25 10:00 config.json
 

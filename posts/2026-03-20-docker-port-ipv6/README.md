@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Port Binding, Expose, Published Ports
+Tags: Docker, IPv6, Port Binding, EXPOSE, Published Ports
 
 Description: Publish Docker container ports on IPv6 addresses, configure port bindings for both IPv4 and IPv6, and handle the IPv6 wildcard address for dual-stack port exposure.
 
@@ -14,6 +14,7 @@ Docker port publishing (`-p` / `--publish`) binds container ports to the host's 
 
 ```bash
 # Publish port 80 on all interfaces (IPv4 + IPv6)
+
 docker run -d \
     -p 80:80 \
     --name web \

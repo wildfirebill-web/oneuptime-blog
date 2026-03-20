@@ -460,6 +460,7 @@ class AutocompleteService:
         ]
 
 # Usage
+
 autocomplete = AutocompleteService()
 results = autocomplete.suggest("iphone")
 for r in results:

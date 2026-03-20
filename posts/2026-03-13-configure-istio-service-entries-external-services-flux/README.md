@@ -28,6 +28,7 @@ First, configure Istio to block all unregistered external traffic:
 
 ```yaml
 # clusters/my-cluster/istio-egress/mesh-config-patch.yaml
+
 # Patch istiod ConfigMap to enable REGISTRY_ONLY mode
 apiVersion: v1
 kind: ConfigMap

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Actix-web, Rust, IPv6, Web Framework, Tokio, Dual-Stack, std::net
+Tags: Actix-web, Rust, IPv6, Web Framework, Tokio, Dual-Stack, Std::net
 
 Description: Configure the Actix-web Rust framework to listen on IPv6 addresses, extract client IPv6 from request extensions, and handle IPv6 in extractors.
 
@@ -63,28 +63,28 @@ use std::{
 
 pub struct ClientIPMiddleware;
 
-impl<S, B> Transform<S, ServiceRequest> for ClientIPMiddleware
+impl<Svc, Body> Transform<Svc, ServiceRequest> for ClientIPMiddleware
 where
-    S: Service<ServiceRequest, Response = ServiceResponse<B>, Error = Error>,
+    Svc: Service<ServiceRequest, Response = ServiceResponse<Body>, Error = Error>,
 {
-    type Response = ServiceResponse<B>;
+    type Response = ServiceResponse<Body>;
     type Error = Error;
     type InitError = ();
-    type Transform = ClientIPMiddlewareService<S>;
+    type Transform = ClientIPMiddlewareService<Svc>;
     type Future = Ready<Result<Self::Transform, Self::InitError>>;
 
-    fn new_transform(&self, service: S) -> Self::Future {
+    fn new_transform(&self, service: Svc) -> Self::Future {
         ready(Ok(ClientIPMiddlewareService { service }))
     }
 }
 
-pub struct ClientIPMiddlewareService<S> { service: S }
+pub struct ClientIPMiddlewareService<Svc> { service: Svc }
 
-impl<S, B> Service<ServiceRequest> for ClientIPMiddlewareService<S>
+impl<Svc, Body> Service<ServiceRequest> for ClientIPMiddlewareService<Svc>
 where
-    S: Service<ServiceRequest, Response = ServiceResponse<B>, Error = Error>,
+    Svc: Service<ServiceRequest, Response = ServiceResponse<Body>, Error = Error>,
 {
-    type Response = ServiceResponse<B>;
+    type Response = ServiceResponse<Body>;
     type Error = Error;
     type Future = Pin<Box<dyn Future<Output = Result<Self::Response, Self::Error>>>>;
 
@@ -151,6 +151,7 @@ pub async fn client_info(req: HttpRequest) -> HttpResponse {
 cargo build --release
 
 # Run
+
 ./target/release/myapp
 
 # Test IPv6

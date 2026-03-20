@@ -20,6 +20,7 @@ The doas configuration lives in `/etc/doas.conf` and uses a straightforward synt
 
 ```text
 # /etc/doas.conf
+
 # permit or deny, options, user, as target_user, command
 permit nopass deploy as root
 ```

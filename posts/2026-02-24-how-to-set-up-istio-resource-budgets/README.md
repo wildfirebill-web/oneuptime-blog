@@ -20,6 +20,7 @@ To figure out your total Istio overhead, add up these components:
 
 ```bash
 # Check current control plane resource requests
+
 kubectl get pods -n istio-system -o json | jq '
   [.items[].spec.containers[].resources.requests // {} |
     {cpu: (.cpu // "0"), memory: (.memory // "0")}

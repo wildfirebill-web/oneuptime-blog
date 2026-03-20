@@ -1,14 +1,14 @@
-# How to Configure FinOps Practices with Rancher
+# How to Configure FinOps Practices with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, finops, cost-optimization, kubernetes, cloud-economics
+Tags: Rancher, FinOps, Cost-Optimization, Kubernetes, Cloud-economics
 
 Description: A guide to implementing FinOps practices in Rancher environments, covering cost visibility, optimization strategies, accountability frameworks, and continuous cost governance.
 
 ## Overview
 
-FinOps (Financial Operations) is a practice that brings together technology, business, and finance teams to enable data-driven cloud spending decisions. For organizations running Rancher with multiple Kubernetes clusters, FinOps practices help align costs with business outcomes and prevent cloud waste. This guide covers implementing the core FinOps phases — Inform, Optimize, and Operate — in Rancher environments.
+FinOps (Financial Operations) is a practice that brings together technology, business, and finance teams to enable data-driven cloud spending decisions. For organizations running Rancher with multiple Kubernetes clusters, FinOps practices help align costs with business outcomes and prevent cloud waste. This guide covers implementing the core FinOps phases - Inform, Optimize, and Operate - in Rancher environments.
 
 ## FinOps Framework for Kubernetes
 
@@ -18,7 +18,7 @@ The FinOps Framework defines three phases:
 2. **Optimize**: Identify and act on cost reduction opportunities
 3. **Operate**: Build sustainable cost governance processes
 
-## Phase 1: Inform — Cost Visibility
+## Phase 1: Inform - Cost Visibility
 
 ### Mandatory Resource Tagging Policy
 
@@ -26,6 +26,7 @@ Enforce cost allocation tags via Kubewarden:
 
 ```yaml
 # Policy: Require cost allocation labels on all Deployments
+
 apiVersion: policies.kubewarden.io/v1
 kind: ClusterAdmissionPolicy
 metadata:
@@ -118,7 +119,7 @@ if __name__ == '__main__':
     print(f"\n  TOTAL: ${sum(aggregated.values()):,.2f}")
 ```
 
-## Phase 2: Optimize — Cost Reduction
+## Phase 2: Optimize - Cost Reduction
 
 ### Identify and Right-Size Over-Provisioned Workloads
 
@@ -232,7 +233,7 @@ spec:
           restartPolicy: OnFailure
 ```
 
-## Phase 3: Operate — Cost Governance
+## Phase 3: Operate - Cost Governance
 
 ### Monthly FinOps Review Process
 
@@ -335,4 +336,4 @@ data:
 
 ## Conclusion
 
-FinOps in Rancher environments requires combining tooling (OpenCost, Kubecost), policies (mandatory labels, ResourceQuotas), and processes (monthly reviews, chargeback reports). The three phases — Inform, Optimize, and Operate — provide a roadmap from basic cost visibility to continuous cost optimization. Start with mandatory cost allocation labels enforced via Kubewarden, deploy OpenCost for visibility, and schedule regular FinOps review meetings with engineering and finance stakeholders. Cost optimization is an ongoing practice, not a one-time project.
+FinOps in Rancher environments requires combining tooling (OpenCost, Kubecost), policies (mandatory labels, ResourceQuotas), and processes (monthly reviews, chargeback reports). The three phases - Inform, Optimize, and Operate - provide a roadmap from basic cost visibility to continuous cost optimization. Start with mandatory cost allocation labels enforced via Kubewarden, deploy OpenCost for visibility, and schedule regular FinOps review meetings with engineering and finance stakeholders. Cost optimization is an ongoing practice, not a one-time project.

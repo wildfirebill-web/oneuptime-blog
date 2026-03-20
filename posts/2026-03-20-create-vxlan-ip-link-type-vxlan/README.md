@@ -14,6 +14,7 @@ Description: Create a VXLAN tunnel interface using ip link add type vxlan to bui
 
 ```bash
 # Create a point-to-point VXLAN
+
 ip link add vxlan0 type vxlan \
     id 100 \
     dstport 4789 \

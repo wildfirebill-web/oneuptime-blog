@@ -55,6 +55,7 @@ Important notes:
 # redis.conf or via CONFIG SET
 
 # Log commands slower than 10 milliseconds (10000 microseconds)
+
 slowlog-log-slower-than 10000
 
 # Keep the last 128 slow commands

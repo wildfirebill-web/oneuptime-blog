@@ -33,6 +33,7 @@ def broken_example():
     root.mainloop()
 
 # The 'photo' variable goes out of scope when the function ends,
+
 # but before mainloop starts processing.
 # Python garbage collects the PhotoImage, leaving a blank label.
 ```

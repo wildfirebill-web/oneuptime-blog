@@ -1,4 +1,4 @@
-# How to Set Up Tekton Pipelines with Rancher
+# How to Set Up Tekton Pipelines with Rancher - Pipelines
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Tekton is a Kubernetes-native CI/CD framework that runs pipelines as Kubernetes 
 
 ```bash
 # Install Tekton Pipelines using kubectl
+
 kubectl apply --filename \
   https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
@@ -217,5 +218,5 @@ spec:
 ## Best Practices
 
 - Use Tekton ClusterTasks for reusable steps like `git-clone` and `kaniko-build` instead of writing custom tasks for common operations.
-- Always use workspaces with `volumeClaimTemplate` for pipeline runs — this ensures each run gets its own ephemeral storage.
+- Always use workspaces with `volumeClaimTemplate` for pipeline runs - this ensures each run gets its own ephemeral storage.
 - Expose the Tekton Dashboard through an Ingress with authentication to give developers visibility into pipeline runs without `kubectl` access.

@@ -18,6 +18,7 @@ A Kubernetes Job creates one or more pods and ensures they run to successful com
 
 ```bash
 # Run a batch processing container
+
 podman run -d --name data-processor \
   -e INPUT_PATH=/data/input \
   -e OUTPUT_PATH=/data/output \

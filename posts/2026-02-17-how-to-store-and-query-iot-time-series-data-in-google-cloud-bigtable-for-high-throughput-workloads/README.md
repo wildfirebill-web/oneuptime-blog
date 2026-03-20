@@ -31,6 +31,7 @@ Compared to BigQuery, Bigtable gives you millisecond reads instead of seconds, b
 
 ```bash
 # Install the Bigtable client library
+
 pip install google-cloud-bigtable
 
 # Install the cbt CLI tool

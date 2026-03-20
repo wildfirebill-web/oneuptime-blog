@@ -37,6 +37,7 @@ The Helm chart source renders templates into manifests. The Kustomize source pro
 
 ```yaml
 # app-with-helm-and-kustomize.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

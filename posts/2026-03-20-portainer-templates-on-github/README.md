@@ -26,7 +26,7 @@ GitHub is the most convenient place to host custom Portainer templates. By stori
 
 ## Step 2: Plan the Repository Structure
 
-```
+```text
 portainer-templates/
 ├── README.md                     # Documentation
 ├── templates.json                # Main template definitions file
@@ -169,6 +169,7 @@ volumes:
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/myorg/portainer-templates.git
 cd portainer-templates
 
@@ -188,13 +189,13 @@ git push origin main
 
 GitHub provides direct raw file access via:
 
-```
+```text
 https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
 ```
 
 For your templates file:
 
-```
+```text
 https://raw.githubusercontent.com/myorg/portainer-templates/main/templates.json
 ```
 
@@ -204,7 +205,7 @@ https://raw.githubusercontent.com/myorg/portainer-templates/main/templates.json
 2. Find **App Templates URL**
 3. Enter your raw GitHub URL:
 
-```
+```text
 https://raw.githubusercontent.com/myorg/portainer-templates/main/templates.json
 ```
 
@@ -213,7 +214,7 @@ https://raw.githubusercontent.com/myorg/portainer-templates/main/templates.json
 
 ## Step 8: Keep Templates Updated
 
-Since Portainer fetches the raw file on every access, any changes pushed to your repository are immediately reflected in Portainer — no configuration changes needed.
+Since Portainer fetches the raw file on every access, any changes pushed to your repository are immediately reflected in Portainer - no configuration changes needed.
 
 ```bash
 # Update a Compose file
@@ -250,7 +251,7 @@ git push origin v1.0.0
 
 Use the tagged URL in production Portainer:
 
-```
+```text
 https://raw.githubusercontent.com/myorg/portainer-templates/v1.0.0/templates.json
 ```
 

@@ -28,6 +28,7 @@ Reference `AWS::Include` using `Fn::Transform`:
 
 ```yaml
 # Main template that includes a snippet from S3
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Include
 Description: Template with included snippets

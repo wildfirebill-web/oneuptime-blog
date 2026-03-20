@@ -32,6 +32,7 @@ First, set up the connections to both SharePoint and Azure:
 
 ```powershell
 # Install required modules
+
 Install-Module -Name PnP.PowerShell -Force
 Install-Module -Name Az.Storage -Force
 Install-Module -Name Az.CosmosDB -Force

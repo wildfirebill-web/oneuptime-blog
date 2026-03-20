@@ -36,6 +36,7 @@ Before debugging Ansible, confirm you can SSH manually.
 
 ```bash
 # Test SSH with the same user and key that Ansible uses
+
 ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no deploy@192.168.1.10
 
 # If that fails, try with verbose output to see where authentication breaks

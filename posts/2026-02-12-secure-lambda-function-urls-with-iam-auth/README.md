@@ -18,6 +18,7 @@ When you create the Function URL, set the auth type to `AWS_IAM`:
 
 ```bash
 # Create a Function URL that requires IAM authentication
+
 aws lambda create-function-url-config \
   --function-name my-secure-api \
   --auth-type AWS_IAM

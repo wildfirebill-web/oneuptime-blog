@@ -53,6 +53,7 @@ The Encoding Extension requires configuration in both the extensions section and
 
 ```yaml
 # extensions section defines the encoding strategies
+
 extensions:
   # Define encoding extension for JSON to Protobuf conversion
   encoding:

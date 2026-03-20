@@ -21,6 +21,7 @@ HTTPS is no longer optional. Browsers flag unencrypted sites as insecure, and se
 
 ```bash
 # Install the Apache SSL module
+
 sudo dnf install -y mod_ssl
 
 # Enable the EPEL repository (Certbot lives here)

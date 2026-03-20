@@ -22,6 +22,7 @@ Use blktrace to trace I/O:
 
 ```bash
 # Install blktrace
+
 sudo dnf install -y blktrace
 
 # Trace I/O on a device for 10 seconds

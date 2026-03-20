@@ -16,6 +16,7 @@ The simplest Netplan DHCP configuration is minimal:
 
 ```yaml
 # /etc/netplan/01-dhcp.yaml
+
 network:
   version: 2
   renderer: networkd

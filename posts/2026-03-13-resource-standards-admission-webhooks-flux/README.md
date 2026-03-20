@@ -27,6 +27,7 @@ This guide covers installing Kyverno via Flux, defining resource standards as Ky
 
 ```yaml
 # infrastructure/controllers/kyverno.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

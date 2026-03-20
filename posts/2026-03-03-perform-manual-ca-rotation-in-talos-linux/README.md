@@ -20,6 +20,7 @@ Document your current cluster state before making changes.
 
 ```bash
 # Record all node IPs and roles
+
 kubectl get nodes -o wide > cluster-nodes.txt
 
 # Record etcd member list

@@ -36,6 +36,7 @@ Add Oban to your dependencies in `mix.exs`:
 
 ```elixir
 # mix.exs
+
 defp deps do
   [
     {:oban, "~> 2.17"}

@@ -243,6 +243,7 @@ Define the request and response models first:
 
 ```python
 # models.py
+
 # Pydantic models for bulk API request and response
 
 from pydantic import BaseModel, EmailStr, Field

@@ -25,6 +25,7 @@ Check your host's current MTU:
 
 ```bash
 # Show the MTU for all network interfaces on the host
+
 ip link show | grep mtu
 ```
 

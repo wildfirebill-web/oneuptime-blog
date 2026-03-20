@@ -41,6 +41,7 @@ Key differences from regular containers:
 
 ```yaml
 # pod-with-init.yaml
+
 # A pod that waits for a database to be reachable
 # before starting the application.
 apiVersion: v1
@@ -206,7 +207,7 @@ flowchart TD
     I --> J[Pod is Running]
 ```
 
-## Resource Management
+Resource Management
 
 Init containers can have their own resource requests and limits. Kubernetes takes the maximum of init container resources and the sum of app container resources when scheduling.
 

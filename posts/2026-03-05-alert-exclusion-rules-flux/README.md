@@ -27,6 +27,7 @@ Start by excluding the most common noisy event, which is a reconciliation that f
 
 ```yaml
 # Alert with a single exclusion rule
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

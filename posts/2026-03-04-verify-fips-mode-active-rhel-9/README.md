@@ -16,6 +16,7 @@ Enabling FIPS mode is one thing. Proving it is actually working is another. Audi
 
 ```bash
 # The primary method to check FIPS status
+
 fips-mode-setup --check
 # Expected output: FIPS mode is enabled.
 ```

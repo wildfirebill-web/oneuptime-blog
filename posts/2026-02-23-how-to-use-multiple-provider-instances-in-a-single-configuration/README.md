@@ -22,6 +22,7 @@ The `alias` meta-argument lets you create named instances of a provider:
 
 ```hcl
 # Default AWS provider - us-east-1
+
 provider "aws" {
   region = "us-east-1"
 }

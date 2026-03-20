@@ -42,6 +42,7 @@ Create a HelmRepository source pointing to the Emissary Ingress chart repository
 
 ```yaml
 # clusters/my-cluster/sources/emissary-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

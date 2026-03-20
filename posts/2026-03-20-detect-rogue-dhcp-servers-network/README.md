@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Rogue Server, Network Security, Monitoring, sysadmin
+Tags: DHCP, Rogue Server, Network Security, Monitoring, Sysadmin
 
 Description: Rogue DHCP servers can redirect client traffic by providing malicious gateway or DNS addresses, and can be detected using network scanning tools, dhcp-probe, and DHCP server logs.
 
@@ -18,6 +18,7 @@ A rogue DHCP server can:
 
 ```bash
 # Broadcast DHCP discover and collect all responses
+
 # Run from a client that currently has no DHCP lease
 sudo nmap --script broadcast-dhcp-discover -e eth0
 

@@ -62,6 +62,7 @@ VoiceOver is Apple's built-in screen reader available on all iOS devices. It pro
 
 ```bash
 # On iOS Simulator
+
 # Hardware > Siri > Enable "Hey Siri"
 # Or use Accessibility Shortcut: Triple-click Home/Side button
 

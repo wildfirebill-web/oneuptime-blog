@@ -244,6 +244,7 @@ Set up alerting for Jobs that do not complete within expected timeframes:
 
 ```bash
 # Find Jobs that are still running past their expected duration
+
 kubectl get jobs -A -o json | python3 -c "
 import json, sys
 from datetime import datetime, timezone

@@ -8,7 +8,7 @@ Description: Learn how to redistribute static routes into OSPF so that non-dynam
 
 ## When to Redistribute Static Routes
 
-Static routes handle networks that aren't directly connected or learned via a dynamic routing protocol—such as stub networks, default routes, or networks behind a third-party device. By redistributing them into OSPF, all OSPF routers learn about these destinations.
+Static routes handle networks that aren't directly connected or learned via a dynamic routing protocol-such as stub networks, default routes, or networks behind a third-party device. By redistributing them into OSPF, all OSPF routers learn about these destinations.
 
 ## Types of External OSPF Routes
 
@@ -22,7 +22,7 @@ E1 is more accurate for selecting optimal exit points; E2 is simpler and the def
 
 Static routes must exist in the routing table before redistribution:
 
-```
+```text
 ! Static route to a stub network
 Router(config)# ip route 172.20.0.0 255.255.0.0 10.0.0.5
 
@@ -32,7 +32,7 @@ Router(config)# ip route 0.0.0.0 0.0.0.0 203.0.113.1
 
 ## Step 2: Redistribute Static Routes into OSPF
 
-```
+```text
 router ospf 1
  ! Redistribute all static routes into OSPF
  ! 'subnets' is required to redistribute classless (non-classful) routes
@@ -51,7 +51,7 @@ Without `subnets`, OSPF only redistributes classful routes (e.g., /8, /16, /24 e
 
 The default route requires special handling:
 
-```
+```text
 router ospf 1
  ! Advertise a default route into OSPF (only if 0.0.0.0/0 exists in the RIB)
  default-information originate
@@ -65,9 +65,9 @@ router ospf 1
 
 ## Step 4: Use Route Maps to Filter Which Static Routes Are Redistributed
 
-Avoid redistributing all static routes blindly—use a route map to select only specific ones:
+Avoid redistributing all static routes blindly-use a route map to select only specific ones:
 
-```
+```text
 ! Define which static routes to redistribute
 ip prefix-list STATIC_ALLOW seq 10 permit 172.20.0.0/16
 ip prefix-list STATIC_ALLOW seq 20 permit 172.21.0.0/16
@@ -85,7 +85,7 @@ This prevents accidentally redistributing management routes, tunnel endpoints, o
 
 ## Step 5: Verify Redistributed Routes in OSPF
 
-```
+```text
 ! Check OSPF database for external LSAs
 Router# show ip ospf database external
 
@@ -106,7 +106,7 @@ Remote# show ip route ospf
 
 To advertise directly connected networks that aren't covered by the `network` command:
 
-```
+```text
 router ospf 1
  ! Redistribute connected networks
  redistribute connected subnets metric 10

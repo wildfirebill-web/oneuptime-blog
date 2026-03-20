@@ -51,6 +51,7 @@ export CLUSTER_ID="c-m-abc12345"
 export PROJECT_ID="c-m-abc12345:p-xyz789"
 
 # Create a scale-up webhook
+
 curl -s -k -X POST \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   -H "Content-Type: application/json" \

@@ -51,6 +51,7 @@ The default behavior of Terraform is to store state in a local `terraform.tfstat
 
 ```bash
 # This creates a local state file - NEVER do this for production
+
 terraform init
 terraform apply
 

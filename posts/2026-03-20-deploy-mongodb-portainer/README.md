@@ -56,7 +56,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 MONGO_ROOT_USER = admin
 MONGO_ROOT_PASSWORD = secure-root-password
 MONGO_DATABASE = myapp
@@ -135,6 +135,7 @@ db.users.createIndex({ createdAt: 1 }, { expireAfterSeconds: 2592000 })  // TTL 
 
 ```bash
 # Backup
+
 docker exec mongodb mongodump \
   -u admin \
   -p "${MONGO_ROOT_PASSWORD}" \

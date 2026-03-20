@@ -20,6 +20,7 @@ A minimal cron Dockerfile:
 
 ```dockerfile
 # Basic cron job container
+
 FROM debian:bookworm-slim
 
 # Install cron

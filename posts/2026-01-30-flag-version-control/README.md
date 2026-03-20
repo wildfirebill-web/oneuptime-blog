@@ -42,6 +42,7 @@ Store your feature flags in Git, not just a database:
 
 ```yaml
 # flags/production/user-features.yaml
+
 apiVersion: flags.example.com/v1
 kind: FeatureFlagConfig
 metadata:

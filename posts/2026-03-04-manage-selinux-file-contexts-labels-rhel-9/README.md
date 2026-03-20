@@ -32,6 +32,7 @@ The **type** field is what matters most. It determines which processes (domains)
 
 ```bash
 # Show SELinux context for files
+
 ls -Z /var/www/html/
 
 # Show context for a specific file

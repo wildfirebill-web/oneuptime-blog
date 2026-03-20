@@ -14,6 +14,7 @@ VRFs create isolated routing tables on a single router, enabling multiple tenant
 
 ```bash
 # Create two VRFs for two tenants
+
 ip link add VRF-A type vrf table 100
 ip link add VRF-B type vrf table 200
 
@@ -27,7 +28,7 @@ ip link set eth2 master VRF-B   # Tenant B's interface
 
 # Assign IP addresses (can overlap between VRFs)
 ip addr add 10.0.0.1/24 dev eth1
-ip addr add 10.0.0.1/24 dev eth2  # Same IP, different VRF — OK!
+ip addr add 10.0.0.1/24 dev eth2  # Same IP, different VRF - OK!
 
 # Verify VRF assignments
 ip link show type vrf
@@ -94,7 +95,7 @@ sysctl -p
 
 ## FRR Configuration File
 
-```
+```text
 # /etc/frr/frr.conf
 frr version 8.x
 frr defaults traditional

@@ -76,6 +76,7 @@ Scan for unresponsive IPs and reclaim them:
 
 ```bash
 # Ping sweep to find active hosts in a subnet
+
 nmap -sn 10.1.0.0/24 -oG - | grep "Up" | awk '{print $2}'
 
 # Compare with your IPAM database and flag IPs that are
@@ -86,7 +87,7 @@ nmap -sn 10.1.0.0/24 -oG - | grep "Up" | awk '{print $2}'
 
 Hierarchical addressing enables route aggregation. Instead of 8 separate /24 routes, advertise one /21:
 
-```
+```text
 10.0.0.0/24
 10.0.1.0/24
 10.0.2.0/24  →  Summarizes to 10.0.0.0/21
@@ -97,6 +98,6 @@ Hierarchical addressing enables route aggregation. Instead of 8 separate /24 rou
 ## Key Takeaways
 
 - Use IPAM software (Netbox, phpIPAM) to track all allocations centrally.
-- Apply VLSM to right-size subnets — don't give a /24 to a 5-host segment.
+- Apply VLSM to right-size subnets - don't give a /24 to a 5-host segment.
 - Audit utilization regularly and reclaim stale allocations.
 - Hierarchical addressing enables route summarization, reducing routing table size.

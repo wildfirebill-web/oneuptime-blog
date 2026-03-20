@@ -36,6 +36,7 @@ Here is a Python example that transfers money between two accounts:
 from google.cloud import spanner
 
 # Initialize the Spanner client and get a database reference
+
 client = spanner.Client()
 instance = client.instance("my-instance")
 database = instance.database("my-database")

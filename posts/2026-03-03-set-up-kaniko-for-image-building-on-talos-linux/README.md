@@ -45,6 +45,7 @@ Kaniko needs credentials to push images to your registry.
 
 ```bash
 # Create a Docker config secret
+
 kubectl create secret docker-registry kaniko-registry-credentials \
   --namespace ci \
   --docker-server=registry.example.com \

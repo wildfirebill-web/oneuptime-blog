@@ -98,6 +98,7 @@ SubPath has historical vulnerabilities related to symlink attacks:
 
 ```yaml
 # VULNERABLE: subPath with writable parent directory
+
 apiVersion: v1
 kind: Pod
 metadata:

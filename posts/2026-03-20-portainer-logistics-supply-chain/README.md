@@ -8,7 +8,7 @@ Description: Deploy and manage containerized logistics applications including wa
 
 ## Introduction
 
-Logistics and supply chain organizations operate complex distributed infrastructure: warehouse management systems, fleet tracking services, customs documentation, and last-mile delivery platforms. These systems run at hundreds of facilities—warehouses, distribution centers, cross-docking facilities, and ports. Portainer's Edge agent architecture enables centralized management of containerized logistics applications deployed across this distributed network.
+Logistics and supply chain organizations operate complex distributed infrastructure: warehouse management systems, fleet tracking services, customs documentation, and last-mile delivery platforms. These systems run at hundreds of facilities-warehouses, distribution centers, cross-docking facilities, and ports. Portainer's Edge agent architecture enables centralized management of containerized logistics applications deployed across this distributed network.
 
 ## Logistics Container Use Cases
 
@@ -23,6 +23,7 @@ Logistics and supply chain organizations operate complex distributed infrastruct
 
 ```bash
 # Central Portainer deployment
+
 docker run -d \
   --name portainer \
   --restart=always \

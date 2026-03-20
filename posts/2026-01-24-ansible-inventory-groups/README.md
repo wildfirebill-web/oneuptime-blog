@@ -46,6 +46,7 @@ flowchart TD
 
 ```ini
 # inventory/hosts.ini
+
 # Basic inventory using INI format
 
 # Ungrouped hosts (part of 'all' but no specific group)

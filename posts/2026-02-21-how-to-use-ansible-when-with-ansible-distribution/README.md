@@ -16,6 +16,7 @@ Ansible gathers several distribution-related facts during setup:
 
 ```yaml
 # show-distribution.yml - Display distribution facts
+
 ---
 - name: Show distribution information
   hosts: all

@@ -22,6 +22,7 @@ Run a single CouchDB instance.
 
 ```bash
 # Start CouchDB with admin credentials
+
 docker run -d \
   --name couchdb \
   -p 5984:5984 \

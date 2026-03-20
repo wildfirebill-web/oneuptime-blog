@@ -8,7 +8,7 @@ Description: Learn how to provision Azure Machine Learning workspaces, compute c
 
 ---
 
-Azure Machine Learning provides managed infrastructure for model training, experiment tracking, and deployment. OpenTofu provisions the workspace and all associated resources — compute clusters, storage, container registries, and online endpoints — as code.
+Azure Machine Learning provides managed infrastructure for model training, experiment tracking, and deployment. OpenTofu provisions the workspace and all associated resources - compute clusters, storage, container registries, and online endpoints - as code.
 
 ## Azure ML Architecture
 
@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # dependencies.tf
+
 resource "azurerm_resource_group" "ml" {
   name     = "rg-ml-${var.environment}"
   location = var.location
@@ -85,7 +86,7 @@ resource "azurerm_machine_learning_workspace" "main" {
     type = "SystemAssigned"
   }
 
-  # Public network access — disable for private workspaces
+  # Public network access - disable for private workspaces
   public_network_access_enabled = var.environment != "production"
 
   tags = {
@@ -202,8 +203,8 @@ resource "azurerm_role_assignment" "ml_operator" {
 
 ## Best Practices
 
-- Set `min_node_count = 0` on compute clusters — clusters scale to zero when idle, eliminating compute costs between training runs.
-- Set `scale_down_nodes_after_idle_duration = "PT2M"` — a 2-minute cooldown quickly releases expensive GPU instances after training completes.
-- Use `vm_priority = "LowPriority"` (spot) for experimentation clusters and `Dedicated` only for production training pipelines — spot VMs reduce costs by 60-80%.
+- Set `min_node_count = 0` on compute clusters - clusters scale to zero when idle, eliminating compute costs between training runs.
+- Set `scale_down_nodes_after_idle_duration = "PT2M"` - a 2-minute cooldown quickly releases expensive GPU instances after training completes.
+- Use `vm_priority = "LowPriority"` (spot) for experimentation clusters and `Dedicated` only for production training pipelines - spot VMs reduce costs by 60-80%.
 - Disable public network access (`public_network_access_enabled = false`) for production workspaces and use private endpoints for all workspace components.
 - Use role-based access control with Azure built-in ML roles (`AzureML Data Scientist`, `AzureML Compute Operator`) rather than granting broad Contributor access to the workspace.

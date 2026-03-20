@@ -42,6 +42,7 @@ This script lists all non-compliant resources for a specific policy assignment:
 
 ```bash
 # List non-compliant resources for a specific policy assignment
+
 az policy state list \
   --policy-assignment "require-disk-encryption" \
   --filter "complianceState eq 'NonCompliant'" \

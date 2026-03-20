@@ -81,6 +81,7 @@ Store your OPA constraint templates in Git and deploy them through ArgoCD:
 
 ```yaml
 # Git: policies/templates/required-labels.yaml
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

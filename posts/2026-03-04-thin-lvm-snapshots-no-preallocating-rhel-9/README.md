@@ -41,6 +41,7 @@ You need an existing thin pool with thin volumes. If you do not have one yet:
 
 ```bash
 # Create a thin pool
+
 lvcreate -L 100G --thinpool thinpool vg_data
 
 # Create a thin volume

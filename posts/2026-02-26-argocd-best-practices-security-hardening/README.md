@@ -43,6 +43,7 @@ If you must keep the admin account for emergency access, change the password imm
 
 ```bash
 # Change the default admin password
+
 argocd account update-password \
   --account admin \
   --current-password <initial-password> \

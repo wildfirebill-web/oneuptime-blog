@@ -27,6 +27,7 @@ EventBridge Pipes needs an IAM role with permissions to read from the source and
 
 ```hcl
 # IAM role for EventBridge Pipes
+
 resource "aws_iam_role" "pipe_role" {
   name = "eventbridge-pipe-role"
 

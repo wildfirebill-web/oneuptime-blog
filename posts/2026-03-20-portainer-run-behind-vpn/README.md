@@ -1,4 +1,4 @@
-# How to Run Portainer Behind a VPN for Secure Access
+# How to Run Portainer Behind a VPN for Secure Access - Run
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,25 +19,26 @@ Placing Portainer behind a VPN is one of the most effective security controls yo
 ## Architecture Options
 
 **Option A: Portainer on VPN-Only Network**
-```
+```text
 Internet → [Blocked by firewall]
 VPN Users → VPN Server → Private Network → Portainer Server
 ```
 
 **Option B: Server in Cloud with VPN Interface**
-```
+```text
 Internet → [Blocked: port 9443]
 VPN Users → WireGuard VPN → Server internal IP → Portainer
 ```
 
 ## Method 1: WireGuard VPN Setup
 
-WireGuard is the recommended VPN for modern setups — fast, simple, and secure.
+WireGuard is the recommended VPN for modern setups - fast, simple, and secure.
 
 ### Install WireGuard on the Server
 
 ```bash
 # Install WireGuard
+
 sudo apt update && sudo apt install wireguard -y
 
 # Generate server keys
@@ -168,7 +169,7 @@ docker run -d \
 Using Tailscale ACLs:
 
 ```json
-// Tailscale ACL — restrict Portainer access to specific tags
+// Tailscale ACL - restrict Portainer access to specific tags
 {
   "acls": [
     {

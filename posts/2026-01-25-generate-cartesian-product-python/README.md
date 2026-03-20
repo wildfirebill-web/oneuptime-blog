@@ -29,6 +29,7 @@ colors = ['red', 'blue']
 sizes = ['S', 'M', 'L']
 
 # Generate all color-size combinations
+
 for combination in product(colors, sizes):
     print(combination)
 

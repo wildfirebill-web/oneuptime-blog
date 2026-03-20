@@ -62,6 +62,7 @@ Python Azure Functions use the v2 programming model, which supports decorators f
 
 ```bash
 # Install OpenTelemetry SDK and OTLP exporter
+
 # The azure-functions package should already be in your requirements
 pip install opentelemetry-api \
             opentelemetry-sdk \

@@ -76,6 +76,7 @@ ext4 is the only choice if you need the ability to reduce filesystem size. XFS c
 
 ```bash
 # This is possible with ext4 but not with XFS
+
 sudo resize2fs /dev/vg_data/lv_data 20G
 ```
 

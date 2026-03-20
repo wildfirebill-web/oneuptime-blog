@@ -28,6 +28,7 @@ Deploy VPA without auto-apply mode, so it only generates recommendations without
 
 ```yaml
 # vpa-recommendation-only.yaml
+
 # VPA object that generates recommendations without auto-applying them
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler

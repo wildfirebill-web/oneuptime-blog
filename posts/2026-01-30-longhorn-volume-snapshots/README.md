@@ -36,6 +36,7 @@ Before working with snapshots, verify your Longhorn installation:
 
 ```bash
 # Check Longhorn pods are running
+
 kubectl get pods -n longhorn-system
 
 # Verify the Longhorn StorageClass exists

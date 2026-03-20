@@ -55,6 +55,7 @@ Install the Flux Operator in its own namespace:
 
 ```yaml
 # flux-operator-values.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

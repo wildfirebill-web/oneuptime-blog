@@ -22,6 +22,7 @@ The most common use of `talosctl config merge` is to add a new cluster's configu
 
 ```bash
 # After generating config for a new cluster
+
 talosctl gen config production-cluster https://10.0.1.100:6443
 
 # Merge the new talosconfig into your main config

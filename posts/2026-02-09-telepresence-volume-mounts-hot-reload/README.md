@@ -26,6 +26,7 @@ First, install Telepresence and set up the cluster-side components:
 
 ```bash
 # Install Telepresence CLI
+
 # For macOS
 brew install datawire/blackbird/telepresence
 

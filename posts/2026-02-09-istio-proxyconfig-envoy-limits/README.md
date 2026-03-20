@@ -24,6 +24,7 @@ Start by reviewing your current global proxy resource configuration:
 
 ```bash
 # View current proxy defaults
+
 kubectl get configmap -n istio-system istio -o yaml | grep -A 20 "defaultConfig:"
 ```
 

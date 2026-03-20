@@ -26,6 +26,7 @@ VPP exposes statistics through a stats socket that can be queried without vppctl
 
 ```bash
 # Install vpp-api-python if not available
+
 pip3 install vpp-papi
 
 # Query VPP stats

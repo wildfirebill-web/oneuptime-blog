@@ -36,6 +36,7 @@ Create a script that checks for image pull errors in the Calico namespace:
 NAMESPACE="calico-system"
 
 # Check for ImagePullBackOff or ErrImagePull
+
 FAILING_PODS=$(kubectl get pods -n "$NAMESPACE" \
   --field-selector=status.phase!=Running \
   -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.containerStatuses[*].state.waiting.reason}{"\n"}{end}' \

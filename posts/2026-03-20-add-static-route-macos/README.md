@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: macOS, Static Routes, route, Networking, Routing, Network Configuration
+Tags: macOS, Static Routes, Routes, Networking, Routing, Network Configuration
 
 Description: Add temporary and persistent static routes on macOS using the route command and System Preferences, or via networksetup for scripted configuration.
 
@@ -14,6 +14,7 @@ macOS supports static routes through the `route` command (BSD-style) and through
 
 ```bash
 # Add a route using BSD route command
+
 # Syntax: route add -net <destination>/<prefix> <gateway>
 sudo route add -net 192.168.2.0/24 10.0.0.1
 

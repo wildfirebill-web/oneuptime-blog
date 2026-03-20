@@ -18,6 +18,7 @@ Quadlet `.build` files define how to build a container image from a Containerfil
 
 ```ini
 # ~/.config/containers/systemd/myapp.build
+
 [Build]
 ImageTag=localhost/myapp:latest
 File=Containerfile

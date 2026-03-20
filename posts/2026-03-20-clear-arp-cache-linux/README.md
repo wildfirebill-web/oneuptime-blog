@@ -20,6 +20,7 @@ You may need to clear the ARP cache when:
 
 ```bash
 # Flush all entries on eth0 (replace with your interface)
+
 ip neigh flush dev eth0
 
 # Flush all entries on all interfaces

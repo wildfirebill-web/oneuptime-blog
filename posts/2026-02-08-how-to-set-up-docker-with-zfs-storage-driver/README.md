@@ -41,6 +41,7 @@ Install the ZFS kernel module and utilities:
 
 ```bash
 # Install ZFS packages on Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y zfsutils-linux
 ```

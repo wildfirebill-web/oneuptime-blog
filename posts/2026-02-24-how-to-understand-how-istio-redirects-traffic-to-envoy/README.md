@@ -35,6 +35,7 @@ This is the default method. The `istio-init` container sets up iptables REDIRECT
 
 ```bash
 # This is what the REDIRECT rule effectively does
+
 iptables -t nat -A ISTIO_REDIRECT -p tcp -j REDIRECT --to-ports 15001
 ```
 

@@ -36,6 +36,7 @@ Start with simple assignments:
 # rbac.tf - Basic role assignments
 
 # Get the current subscription
+
 data "azurerm_subscription" "current" {}
 
 # Assign Reader role to a security group at subscription scope

@@ -34,6 +34,7 @@ The `ios_interfaces` module handles the physical properties of an interface: des
 
 ```yaml
 # configure_physical.yml - Set physical interface properties
+
 ---
 - name: Configure physical interface properties
   hosts: switches

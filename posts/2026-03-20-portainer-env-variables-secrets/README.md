@@ -8,7 +8,7 @@ Description: Learn how to manage environment variables and secrets in Portainer 
 
 ---
 
-Environment variables are the most common way to pass configuration to containers. Portainer provides several mechanisms for managing them — from inline Compose definitions to Portainer's own stack environment variable store. This guide covers best practices for using environment variables for secrets without hardcoding sensitive values.
+Environment variables are the most common way to pass configuration to containers. Portainer provides several mechanisms for managing them - from inline Compose definitions to Portainer's own stack environment variable store. This guide covers best practices for using environment variables for secrets without hardcoding sensitive values.
 
 ---
 
@@ -18,6 +18,7 @@ Never put secrets directly in your Compose files. They'll end up in version cont
 
 ```yaml
 # BAD: secrets hardcoded in Compose file
+
 services:
   db:
     image: postgres:15
@@ -63,13 +64,13 @@ The values are stored in Portainer's database (not in the Compose file) and are 
 For stacks deployed from Git repositories, Portainer can load a `.env` file from the repository root.
 
 ```bash
-# .env file — committed without real values
+# .env file - committed without real values
 DB_PASSWORD=changeme
 DB_USER=appuser
 DB_NAME=myapp
 API_KEY=your-api-key-here
 
-# .env.production — NOT committed, contains real values
+# .env.production - NOT committed, contains real values
 DB_PASSWORD=production-super-secret-password
 DB_USER=produser
 DB_NAME=prodapp
@@ -85,7 +86,7 @@ In Portainer stack settings with Git source, upload your `.env.production` file 
 For Swarm deployments, use Docker secrets instead of environment variables.
 
 ```yaml
-# swarm-stack.yml — using secrets instead of env vars
+# swarm-stack.yml - using secrets instead of env vars
 version: "3.8"
 
 services:

@@ -18,6 +18,7 @@ resource "aws_secretsmanager_secret" "db_credentials" {
 }
 
 # Configure automatic rotation
+
 resource "aws_secretsmanager_secret_rotation" "db_credentials" {
   secret_id           = aws_secretsmanager_secret.db_credentials.id
   rotation_lambda_arn = aws_lambda_function.db_rotator.arn
@@ -141,7 +142,7 @@ resource "aws_cloudwatch_metric_alarm" "rotation_failed" {
   period              = 300
   statistic           = "Sum"
   threshold           = 0
-  alarm_description   = "Secret rotation failed — credential may be expired"
+  alarm_description   = "Secret rotation failed - credential may be expired"
   alarm_actions       = [aws_sns_topic.alerts.arn]
 }
 ```

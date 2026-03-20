@@ -30,6 +30,7 @@ These defaults cover the most important PostgreSQL settings. Override them per-h
 
 ```yaml
 # roles/postgresql_config/defaults/main.yml
+
 # Sensible defaults for PostgreSQL configuration
 ---
 postgresql_version: "16"

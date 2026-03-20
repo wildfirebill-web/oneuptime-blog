@@ -22,6 +22,7 @@ These numbers drive every other decision in your DR plan.
 
 ```bash
 # Example recovery objectives:
+
 # RTO: 30 minutes (cluster must be operational within 30 min)
 # RPO: 1 hour (we can lose up to 1 hour of cluster state changes)
 

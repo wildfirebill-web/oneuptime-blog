@@ -28,6 +28,7 @@ The most common approach uses Redis Sorted Sets to store suggestions with scores
 
 ```bash
 # Add suggestions with scores (higher = more popular)
+
 ZADD autocomplete:products 100 "iphone"
 ZADD autocomplete:products 95 "iphone 15"
 ZADD autocomplete:products 90 "iphone 15 pro"

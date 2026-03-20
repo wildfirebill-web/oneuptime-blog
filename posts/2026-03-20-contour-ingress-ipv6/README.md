@@ -13,7 +13,7 @@ Contour is a Kubernetes ingress controller that uses Envoy as the data plane. Co
 ## Install Contour with IPv6
 
 ```yaml
-# contour-values.yaml — Helm values for Contour with IPv6
+# contour-values.yaml - Helm values for Contour with IPv6
 
 envoy:
   service:
@@ -35,6 +35,7 @@ contour:
 
 ```bash
 # Install Contour via Helm
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install contour bitnami/contour \
     -n projectcontour \
@@ -55,7 +56,7 @@ kubectl get pods -n projectcontour -l app=envoy -o wide
 ## Contour ContourConfiguration for IPv6
 
 ```yaml
-# contour-config.yaml — Global Contour configuration
+# contour-config.yaml - Global Contour configuration
 
 apiVersion: projectcontour.io/v1alpha1
 kind: ContourConfiguration
@@ -113,7 +114,7 @@ spec:
 ## Contour HTTPProxy CRD
 
 ```yaml
-# httpproxy-ipv6.yaml — Contour native HTTPProxy resource
+# httpproxy-ipv6.yaml - Contour native HTTPProxy resource
 
 apiVersion: projectcontour.io/v1
 kind: HTTPProxy
@@ -225,7 +226,7 @@ kubectl logs -n projectcontour deployment/contour --tail=50 | \
 ## Contour with Cert-Manager for TLS
 
 ```yaml
-# certificate-ipv6.yaml — TLS cert for Contour ingress
+# certificate-ipv6.yaml - TLS cert for Contour ingress
 
 apiVersion: cert-manager.io/v1
 kind: Certificate
@@ -245,4 +246,4 @@ spec:
 
 ## Conclusion
 
-Contour automatically leverages Envoy's IPv6 capabilities when deployed in a dual-stack Kubernetes cluster — Envoy pods receive IPv6 addresses and listen on `::` for both IPv4 (via IPv4-mapped addresses) and IPv6 connections. The Envoy service uses `ipFamilyPolicy: PreferDualStack` to obtain IPv6 external load balancer addresses. Contour's HTTPProxy CRD provides richer configuration than standard Ingress, including health checks, rate limiting, and header manipulation — all of which work identically for IPv6 backends. The `numTrustedHops` setting in ContourConfiguration controls how many XFF hops are trusted for real client IPv6 address extraction. TLS certificates use DNS SANs with hostnames resolving to IPv6 addresses, not IP SANs.
+Contour automatically leverages Envoy's IPv6 capabilities when deployed in a dual-stack Kubernetes cluster - Envoy pods receive IPv6 addresses and listen on `::` for both IPv4 (via IPv4-mapped addresses) and IPv6 connections. The Envoy service uses `ipFamilyPolicy: PreferDualStack` to obtain IPv6 external load balancer addresses. Contour's HTTPProxy CRD provides richer configuration than standard Ingress, including health checks, rate limiting, and header manipulation - all of which work identically for IPv6 backends. The `numTrustedHops` setting in ContourConfiguration controls how many XFF hops are trusted for real client IPv6 address extraction. TLS certificates use DNS SANs with hostnames resolving to IPv6 addresses, not IP SANs.

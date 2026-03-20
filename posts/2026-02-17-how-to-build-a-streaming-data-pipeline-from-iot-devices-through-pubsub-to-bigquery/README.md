@@ -32,6 +32,7 @@ Devices send telemetry to an MQTT gateway (or directly via HTTP to Pub/Sub). Dat
 
 ```bash
 # Create the main telemetry topic
+
 gcloud pubsub topics create iot-telemetry
 
 # Create subscriptions

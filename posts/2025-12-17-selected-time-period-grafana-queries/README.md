@@ -45,6 +45,7 @@ The `$__range` variable represents the entire selected time period:
 
 ```promql
 # Calculate total requests over the selected time range
+
 increase(http_requests_total[$__range])
 
 # Average rate over the entire selected period

@@ -20,6 +20,7 @@ Snort IDS can be installed and configured on RHEL to provide robust functionalit
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

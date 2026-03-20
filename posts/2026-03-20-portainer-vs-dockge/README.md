@@ -14,7 +14,7 @@ Dockge is a newer, opinionated Docker Compose stack manager that focuses exclusi
 
 **Dockge** is focused: it manages only Docker Compose stacks with a file-first approach. Each stack is a directory on the filesystem with a `compose.yaml` file. Simple, transparent, and minimal.
 
-**Portainer** is comprehensive: it manages everything in the Docker ecosystem — individual containers, Swarm services, Compose stacks, Kubernetes workloads — from a single interface. More features, more complexity.
+**Portainer** is comprehensive: it manages everything in the Docker ecosystem - individual containers, Swarm services, Compose stacks, Kubernetes workloads - from a single interface. More features, more complexity.
 
 ## Feature Comparison
 
@@ -43,6 +43,7 @@ Dockge is a newer, opinionated Docker Compose stack manager that focuses exclusi
 
 ```bash
 # Dockge installation
+
 mkdir -p /opt/stacks /opt/dockge
 cd /opt/dockge
 
@@ -212,4 +213,4 @@ docker stats portainer --no-stream
 
 ## Conclusion
 
-Dockge and Portainer cater to different users. Dockge is the right choice if you exclusively use Docker Compose and want a minimal, fast, file-based tool with an excellent UI. Portainer CE or BE is the right choice if you need comprehensive container management beyond Compose — individual containers, Swarm, Kubernetes, multi-user access, or API automation. For homelab users running a handful of Compose stacks, Dockge is a compelling alternative. For professional and team environments, Portainer's breadth of features and multi-user support make it the better choice.
+Dockge and Portainer cater to different users. Dockge is the right choice if you exclusively use Docker Compose and want a minimal, fast, file-based tool with an excellent UI. Portainer CE or BE is the right choice if you need comprehensive container management beyond Compose - individual containers, Swarm, Kubernetes, multi-user access, or API automation. For homelab users running a handful of Compose stacks, Dockge is a compelling alternative. For professional and team environments, Portainer's breadth of features and multi-user support make it the better choice.

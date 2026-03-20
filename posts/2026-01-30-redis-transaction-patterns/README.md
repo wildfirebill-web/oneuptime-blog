@@ -95,6 +95,7 @@ def transfer_funds(from_account, to_account, amount):
     return results
 
 # Usage
+
 transfer_funds('alice', 'bob', 100)
 ```
 

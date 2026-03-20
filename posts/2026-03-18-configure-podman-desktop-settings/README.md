@@ -20,6 +20,7 @@ Open Podman Desktop settings through the application menu or the gear icon.
 
 ```bash
 # Launch Podman Desktop
+
 # On macOS:
 open -a "Podman Desktop"
 

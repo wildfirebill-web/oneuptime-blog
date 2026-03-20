@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, External Dependencies, Data Sources, Infrastructure as Code, Best Practices
+Tags: OpenTofu, External Dependencies, Data Source, Infrastructure as Code, Best Practices
 
 Description: Learn how to handle resources that depend on external systems, pre-existing infrastructure, and third-party services using data sources and preconditions in OpenTofu.
 
@@ -14,6 +14,7 @@ Not all dependencies live in the same OpenTofu configuration. Some resources dep
 
 ```hcl
 # Reference a VPC created by another team
+
 data "aws_vpc" "shared" {
   tags = {
     Name        = "shared-vpc"

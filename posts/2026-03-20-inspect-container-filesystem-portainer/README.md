@@ -1,4 +1,4 @@
-# How to Inspect Container Filesystem Changes in Portainer
+# How to Inspect Container Filesystem Changes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ Use the search and filter options in Portainer:
 
 ```bash
 # Using Docker CLI equivalent
+
 docker inspect container-name
 
 # View formatted output

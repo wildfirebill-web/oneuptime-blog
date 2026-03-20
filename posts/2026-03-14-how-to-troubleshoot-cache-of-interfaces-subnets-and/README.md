@@ -24,6 +24,7 @@ Common cache problems include: stale interface lists after node scaling, missing
 
 ```bash
 # Check operator logs for cache-related errors
+
 kubectl logs -n kube-system -l name=cilium-operator | \
   grep -iE "cache|resync|interface|subnet" | tail -30
 

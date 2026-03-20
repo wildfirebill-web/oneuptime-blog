@@ -366,6 +366,7 @@ spec:
 
 ```bash
 # Check if Istio is processing the Ingress
+
 kubectl get ingress myapp-ingress -o yaml
 # Look for the status.loadBalancer section
 ```

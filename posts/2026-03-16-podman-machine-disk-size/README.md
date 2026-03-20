@@ -23,6 +23,7 @@ Container images, build caches, and volumes can consume significant disk space. 
 
 ```bash
 # View machine configuration including disk size
+
 podman machine list
 
 # Get detailed disk information

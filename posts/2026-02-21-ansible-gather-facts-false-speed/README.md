@@ -18,6 +18,7 @@ Set `gather_facts: false` at the play level.
 
 ```yaml
 # fast-deploy.yml - skips fact gathering for faster execution
+
 ---
 - name: Quick deployment
   hosts: webservers

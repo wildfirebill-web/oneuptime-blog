@@ -39,6 +39,7 @@ Example: Your Prometheus query returns metrics for all containers, but you only 
 
 ```promql
 # Query returns many series
+
 container_memory_usage_bytes{namespace="production"}
 
 # Filter to show only app containers
@@ -436,7 +437,7 @@ Transformations:
    Hide: [Query A, Query B]
 ```
 
-### Resource Efficiency Score
+Resource Efficiency Score
 
 ```promql
 # Query A: CPU request

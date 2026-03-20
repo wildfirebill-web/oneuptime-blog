@@ -45,6 +45,7 @@ The most common issue. The ingress gateway receives traffic but returns 404.
 
 ```bash
 # View ingress gateway logs
+
 kubectl logs -n istio-system -l app=istio-ingressgateway --tail=100
 
 # Look for access log entries

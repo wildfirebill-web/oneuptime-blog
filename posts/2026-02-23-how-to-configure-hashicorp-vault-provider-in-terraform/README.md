@@ -27,6 +27,7 @@ The first step is declaring the Vault provider in your Terraform configuration. 
 
 ```hcl
 # versions.tf - Pin the Vault provider version
+
 terraform {
   required_version = ">= 1.0"
 

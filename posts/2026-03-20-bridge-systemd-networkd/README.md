@@ -14,6 +14,7 @@ systemd-networkd manages bridges through `.netdev` files (defining the bridge de
 
 ```ini
 # /etc/systemd/network/10-br0.netdev
+
 [NetDev]
 Name=br0
 Kind=bridge

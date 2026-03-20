@@ -60,6 +60,7 @@ Before tuning BFD intervals, measure the round-trip latency and jitter between M
 
 ```bash
 # Measure round-trip time to the router from a Kubernetes node
+
 # Run at least 100 pings to get a meaningful sample
 ping -c 100 10.0.0.1 | tail -1
 

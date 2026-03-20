@@ -17,6 +17,7 @@ apk add vlan
 # This installs the vconfig utility and ensures the 8021q module loads
 
 # Load the module immediately
+
 modprobe 8021q
 
 # Persist module loading

@@ -18,6 +18,7 @@ The `no_log` directive is the most straightforward way to hide task output. It s
 
 ```yaml
 # suppress output for tasks with sensitive or noisy output
+
 ---
 - name: Clean log examples
   hosts: all

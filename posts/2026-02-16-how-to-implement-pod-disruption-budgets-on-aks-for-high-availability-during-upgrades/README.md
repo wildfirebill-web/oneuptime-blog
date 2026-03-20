@@ -37,6 +37,7 @@ Here is a PDB that ensures at least 2 pods are always available for a deployment
 
 ```yaml
 # pdb-min-available.yaml
+
 # PDB ensuring at least 2 pods are always running
 apiVersion: policy/v1
 kind: PodDisruptionBudget

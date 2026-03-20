@@ -39,6 +39,7 @@ The failover VMs need a virtual network to land in. Create one that mirrors your
 
 ```bash
 # Create a virtual network in the DR region
+
 # Mirror the address space from the source region but use a different range to avoid conflicts
 az network vnet create \
     --resource-group rg-dr-centralus \

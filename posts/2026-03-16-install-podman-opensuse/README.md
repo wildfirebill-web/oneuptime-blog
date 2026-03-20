@@ -26,6 +26,7 @@ Refresh repositories and update packages:
 
 ```bash
 # Refresh repositories and update all packages
+
 sudo zypper refresh
 sudo zypper update -y
 ```

@@ -28,6 +28,7 @@ The load generators run as ECS Fargate tasks that can scale to generate massive 
 
 ```hcl
 # generators.tf - Load generator infrastructure
+
 resource "aws_ecs_cluster" "load_test" {
   name = "${var.project_name}-load-testing"
 

@@ -44,6 +44,7 @@ Before writing a Dockerfile, understand what the application needs:
 
 ```bash
 # On the current server, document the runtime environment
+
 # Operating system and version
 cat /etc/os-release
 

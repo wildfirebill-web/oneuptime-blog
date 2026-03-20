@@ -20,6 +20,7 @@ DynamoDB Gateway VPC Endpoints allow EC2 instances, Lambda functions in VPCs, an
 
 ```hcl
 # DynamoDB uses a Gateway endpoint (not Interface endpoint)
+
 # Gateway endpoints are free - no hourly or data transfer charges
 resource "aws_vpc_endpoint" "dynamodb" {
   vpc_id            = var.vpc_id
@@ -157,4 +158,4 @@ aws dynamodb list-tables \
 
 ## Conclusion
 
-DynamoDB Gateway Endpoints are free and should be deployed in every VPC that accesses DynamoDB—they reduce latency, eliminate NAT gateway charges for DynamoDB traffic, and improve security by keeping traffic on the AWS network. Use endpoint policies to restrict which DynamoDB tables are accessible via the endpoint, and add VPC endpoint conditions to IAM policies for defense-in-depth.
+DynamoDB Gateway Endpoints are free and should be deployed in every VPC that accesses DynamoDB-they reduce latency, eliminate NAT gateway charges for DynamoDB traffic, and improve security by keeping traffic on the AWS network. Use endpoint policies to restrict which DynamoDB tables are accessible via the endpoint, and add VPC endpoint conditions to IAM policies for defense-in-depth.

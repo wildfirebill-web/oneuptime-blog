@@ -46,6 +46,7 @@ JIT compilation trades startup time for runtime performance:
 
 ```bash
 # Default tiered compilation (recommended for most applications)
+
 java -XX:+TieredCompilation -jar app.jar
 
 # Tiered compilation levels:

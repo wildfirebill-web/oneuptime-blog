@@ -16,6 +16,7 @@ You should never dump the secret contents in plain text in a shared terminal, bu
 
 ```bash
 # See the keys (not values)
+
 kubectl get secret argocd-secret -n argocd -o jsonpath='{.data}' | jq 'keys'
 
 # Decode a specific key (be careful with this)

@@ -95,6 +95,7 @@ def generate_dashboard_link(
 
 
 # Example usage
+
 alert_time = datetime.now()
 link = generate_dashboard_link(
     base_url="https://grafana.example.com",

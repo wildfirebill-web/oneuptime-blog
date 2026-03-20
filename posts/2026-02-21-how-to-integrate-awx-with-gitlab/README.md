@@ -43,6 +43,7 @@ Generate a GitLab PAT with `read_repository` scope (add `api` scope if you also 
 
 ```bash
 # Create an SCM credential using GitLab PAT
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

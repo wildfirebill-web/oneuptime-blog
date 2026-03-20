@@ -41,6 +41,7 @@ Each Envoy proxy exposes a rich set of metrics on port 15090. You can scrape the
 
 ```yaml
 # Prometheus scrape config for Istio sidecars
+
 - job_name: 'envoy-stats'
   metrics_path: /stats/prometheus
   kubernetes_sd_configs:

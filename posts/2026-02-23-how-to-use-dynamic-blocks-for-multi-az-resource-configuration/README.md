@@ -60,6 +60,7 @@ resource "aws_vpc" "main" {
 }
 
 # Public subnets - one per AZ
+
 resource "aws_subnet" "public" {
   for_each = local.public_subnets
 

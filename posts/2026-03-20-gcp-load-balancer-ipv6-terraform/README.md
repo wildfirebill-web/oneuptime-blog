@@ -25,6 +25,7 @@ flowchart LR
 
 ```hcl
 # backend.tf - Backend service pointing to a managed instance group
+
 resource "google_compute_backend_service" "app" {
   name        = "app-backend"
   protocol    = "HTTP"

@@ -1,4 +1,4 @@
-# How to Configure K3s for Retail Store Edge Computing
+# How to Configure K3s for Retail Store Edge Computing - Computing
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ Retail edge hardware is often constrained. Configure K3s for minimal resource us
 # /etc/rancher/k3s/config.yaml
 
 # Disable unneeded components to save memory
+
 disable:
   - traefik          # use nginx or a simple L4 LB instead
   - metrics-server   # install separately only if needed
@@ -71,7 +72,7 @@ spec:
       containers:
         - name: pos
           image: registry.local:5000/pos-service:v2.1
-          # Use local cache — do not pull from internet
+          # Use local cache - do not pull from internet
           imagePullPolicy: IfNotPresent
           env:
             - name: OFFLINE_MODE
@@ -157,7 +158,7 @@ spec:
 Batch-sync transaction data to headquarters when connectivity is available:
 
 ```yaml
-# sync-job.yaml — runs hourly
+# sync-job.yaml - runs hourly
 apiVersion: batch/v1
 kind: CronJob
 metadata:

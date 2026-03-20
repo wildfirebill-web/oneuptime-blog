@@ -41,6 +41,7 @@ This is the most common error. It means the SDK cannot find valid credentials.
 
 ```bash
 # The error message looks like this
+
 google.auth.exceptions.DefaultCredentialsError: Could not automatically
 determine credentials.
 ```

@@ -12,6 +12,7 @@ In large Kubernetes clusters with thousands of pods, the OpenTelemetry Operator'
 
 ```bash
 # Pod creation fails with timeout errors
+
 kubectl apply -f my-pod.yaml
 # Error from server (InternalError): Internal error occurred: failed calling webhook
 # "mpod.kb.io": context deadline exceeded

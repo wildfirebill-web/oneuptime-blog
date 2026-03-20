@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, VLSM, Subnetting, Network Design, Address Planning
 
-Description: Designing a VLSM plan requires listing all network segments ordered by size, selecting the parent block, and sequentially allocating the smallest fitting prefix to each segment while preserving contiguous space.
+Description: Designing a VLSM plan requires listing all network segments ordered by size, selecting the parent block, and sequentially allocating the smallest fitting prefix to each segment while preserving...
 
 ## The VLSM Design Process
 
@@ -33,7 +33,7 @@ import ipaddress, math
 def design_vlsm(parent: str, segments: list) -> None:
     """
     Print a VLSM design table for the given segments.
-    segments: [(name, required_hosts), ...] — will be sorted internally.
+    segments: [(name, required_hosts), ...] - will be sorted internally.
     """
     parent_net = ipaddress.IPv4Network(parent, strict=False)
     sorted_segs = sorted(segments, key=lambda x: x[1], reverse=True)
@@ -99,7 +99,7 @@ print(f"Utilization: {100*needed/parent.num_addresses:.1f}%")
 2. **Check fit before allocating**: Verify remaining space can accommodate the segment.
 3. **Leave growth room**: Add 20-50% buffer to host estimates.
 4. **Document everything**: Record each allocation in an IPAM tool.
-5. **Use classless routing**: OSPF or BGP must be used — RIPv1 cannot handle VLSM.
+5. **Use classless routing**: OSPF or BGP must be used - RIPv1 cannot handle VLSM.
 
 ## Key Takeaways
 

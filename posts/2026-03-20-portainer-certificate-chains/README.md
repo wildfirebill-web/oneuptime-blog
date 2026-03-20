@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, certificate-chain, pki, intermediate-ca
+Tags: Portainer, SSL, TLS, Certificate-chain, PKI, Intermediate-ca
 
 Description: A guide to properly configuring certificate chains (including intermediate CAs) in Portainer to avoid trust errors.
 
@@ -18,7 +18,7 @@ Enterprise PKI environments commonly use certificate chains: a root CA signs an 
 
 ## Understanding Certificate Chains
 
-```
+```text
 Root CA (self-signed, in OS/browser trust store)
   └── Intermediate CA (signed by Root CA)
         └── Server Certificate (signed by Intermediate CA)
@@ -31,6 +31,7 @@ The Root CA is already trusted by clients.
 
 ```bash
 # You should have these files from your CA:
+
 # - server.crt   (your Portainer server certificate)
 # - intermediate.crt  (intermediate CA certificate)
 # - root.crt    (root CA - usually not included in chain)
@@ -40,7 +41,7 @@ cat server.crt intermediate.crt > fullchain.pem
 
 # For multi-level chains
 cat server.crt intermediate2.crt intermediate1.crt > fullchain.pem
-# Note: Order matters — server cert first, then intermediates from leaf to root
+# Note: Order matters - server cert first, then intermediates from leaf to root
 ```
 
 ## Step 2: Verify the Chain is Correct
@@ -132,7 +133,7 @@ openssl crl2pkcs7 -nocrl -certfile fullchain.pem | openssl pkcs7 -print_certs -t
 
 ```bash
 # This means the chain includes the root CA
-# Root CA should NOT be in the chain file — clients already have it
+# Root CA should NOT be in the chain file - clients already have it
 # Remove the last cert from your chain file if it's the root CA
 openssl x509 -in root.crt -noout -issuer
 # If Issuer == Subject, it's self-signed (root CA)

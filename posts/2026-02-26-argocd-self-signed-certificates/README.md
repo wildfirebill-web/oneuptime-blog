@@ -35,6 +35,7 @@ Create a certificate authority and server certificate:
 
 ```bash
 # Step 1: Generate a CA key and certificate
+
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -sha256 -days 3650 -key ca.key -out ca.crt \
   -subj "/C=US/ST=California/O=MyOrg/CN=MyOrg CA"

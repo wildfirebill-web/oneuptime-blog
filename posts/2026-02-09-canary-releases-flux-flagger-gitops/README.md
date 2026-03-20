@@ -32,6 +32,7 @@ Install Flagger with Flux:
 
 ```yaml
 # infrastructure/flagger/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

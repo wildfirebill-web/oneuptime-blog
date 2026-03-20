@@ -18,6 +18,7 @@ Let's start by enabling HTTP/2 for both downstream (client connections) and upst
 
 ```yaml
 # envoy-http2-config.yaml
+
 static_resources:
   listeners:
   - name: https_listener

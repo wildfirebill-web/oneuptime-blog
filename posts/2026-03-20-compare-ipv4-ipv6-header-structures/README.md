@@ -23,7 +23,7 @@ Description: IPv6 simplified the IP header compared to IPv4 by removing fragment
 | Source Address | 32-bit (4 bytes) | 128-bit (16 bytes) |
 | Destination Address | 32-bit (4 bytes) | 128-bit (16 bytes) |
 | Options | Variable | Extension Headers |
-| Flow Label | — | 20-bit |
+| Flow Label | - | 20-bit |
 
 ## IPv6 Header Improvements
 

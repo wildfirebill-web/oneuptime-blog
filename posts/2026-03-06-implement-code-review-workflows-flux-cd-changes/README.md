@@ -47,6 +47,7 @@ Generate human-readable diffs showing exactly what will change in the cluster wh
 
 ```yaml
 # .github/workflows/diff-preview.yaml
+
 # Generate and post Kustomize diffs as PR comments
 name: Diff Preview
 on:
@@ -102,7 +103,7 @@ jobs:
               "/tmp/pr-${cluster}.yaml" || true)
 
             if [ -n "$CLUSTER_DIFF" ]; then
-              DIFF_OUTPUT="${DIFF_OUTPUT}\n### Cluster: ${cluster}\n\`\`\`diff\n${CLUSTER_DIFF}\n\`\`\`\n"
+              DIFF_OUTPUT="${DIFF_OUTPUT}\n### Cluster: ${cluster}\n```diff\n${CLUSTER_DIFF}\n```\n"
             fi
           done
 

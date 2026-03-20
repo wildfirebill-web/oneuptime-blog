@@ -44,6 +44,7 @@ kubectl get nodes -o name | xargs kubectl cordon
 
 ```bash
 # For Flannel
+
 kubectl delete -f kube-flannel.yml
 
 # On each node, clean up CNI config files

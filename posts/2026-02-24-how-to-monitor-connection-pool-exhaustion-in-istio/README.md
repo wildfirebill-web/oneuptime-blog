@@ -45,6 +45,7 @@ Envoy exposes detailed connection pool statistics for every upstream cluster:
 
 ```promql
 # Number of times the connection pool overflowed
+
 envoy_cluster_upstream_cx_overflow
 
 # Requests that were pending and got rejected

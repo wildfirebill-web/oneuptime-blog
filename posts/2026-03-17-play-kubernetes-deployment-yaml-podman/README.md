@@ -18,6 +18,7 @@ Kubernetes Deployments are the standard way to manage stateless applications. Po
 
 ```bash
 # Create a Kubernetes Deployment manifest
+
 cat > /tmp/web-deployment.yaml << 'EOF'
 apiVersion: apps/v1
 kind: Deployment

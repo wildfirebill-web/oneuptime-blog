@@ -1,4 +1,4 @@
-# How to Deploy Prowlarr via Portainer
+# How to Deploy Prowlarr via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

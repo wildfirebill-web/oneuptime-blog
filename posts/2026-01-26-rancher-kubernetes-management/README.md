@@ -73,6 +73,7 @@ cert-manager handles automatic certificate provisioning for Rancher.
 
 ```bash
 # Add the Jetstack Helm repository for cert-manager
+
 helm repo add jetstack https://charts.jetstack.io
 
 # Update your local Helm chart repository cache

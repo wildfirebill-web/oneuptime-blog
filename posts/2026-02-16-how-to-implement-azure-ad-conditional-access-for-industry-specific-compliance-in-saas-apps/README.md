@@ -47,6 +47,7 @@ HIPAA does not explicitly mandate MFA, but it is considered a reasonable securit
 
 ```bash
 # Create a Conditional Access policy requiring MFA for the healthcare SaaS app
+
 # Using Microsoft Graph API via az rest
 
 az rest --method POST \

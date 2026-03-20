@@ -103,6 +103,7 @@ When an AI agent needs to interact with GitHub, it doesn't need a custom MCP ser
 
 ```bash
 # List open pull requests
+
 gh pr list --state open
 
 # Create a new issue

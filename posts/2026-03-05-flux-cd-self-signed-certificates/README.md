@@ -31,6 +31,7 @@ First, obtain the CA certificate that signed your internal server's TLS certific
 
 ```bash
 # Download the CA certificate from a server (if you don't have it)
+
 openssl s_client -showcerts -connect git.internal.company.com:443 </dev/null 2>/dev/null | \
   openssl x509 -outform PEM > ca-cert.pem
 

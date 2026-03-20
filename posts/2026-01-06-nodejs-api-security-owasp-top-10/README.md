@@ -556,6 +556,7 @@ Automate security scanning in your CI/CD pipeline to catch vulnerabilities early
 
 ```yaml
 # .github/workflows/security.yml
+
 name: Security Scan
 
 on:

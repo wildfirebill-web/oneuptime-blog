@@ -22,6 +22,7 @@ Deploy the Percona operator to manage XtraDB clusters:
 
 ```bash
 # Clone the Percona operator repository
+
 git clone https://github.com/percona/percona-xtradb-cluster-operator.git
 cd percona-xtradb-cluster-operator
 

@@ -31,6 +31,7 @@ The compat API handles the same request and response formats that Docker clients
 
 ```bash
 # Rootful
+
 sudo podman system service --time=0 unix:///var/run/docker.sock &
 
 # Rootless

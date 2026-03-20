@@ -20,6 +20,7 @@ Here is a bad example that teams commonly start with:
 
 ```hcl
 # DO NOT do this in production
+
 resource "aws_iam_policy" "too_broad" {
   name = "way-too-broad-policy"
   policy = jsonencode({

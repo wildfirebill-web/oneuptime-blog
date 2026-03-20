@@ -20,6 +20,7 @@ Make sure you have Podman 5.x or later with artifact support.
 
 ```bash
 # Verify Podman version
+
 podman --version
 
 # Confirm artifact commands are available

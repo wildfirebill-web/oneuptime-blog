@@ -31,6 +31,7 @@ A Molecule test scenario defines:
 
 ```bash
 # Install Python pip
+
 sudo dnf install -y python3-pip python3-devel gcc
 ```
 

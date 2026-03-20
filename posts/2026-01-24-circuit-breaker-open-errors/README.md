@@ -47,6 +47,7 @@ stateDiagram-v2
 
 ```bash
 # Check application metrics for circuit breaker state
+
 curl http://localhost:8080/actuator/metrics/resilience4j.circuitbreaker.state | jq
 
 # Check circuit breaker events

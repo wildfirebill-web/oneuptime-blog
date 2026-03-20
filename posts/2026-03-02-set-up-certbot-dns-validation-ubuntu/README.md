@@ -27,6 +27,7 @@ The snap version of Certbot is the current recommended installation method:
 
 ```bash
 # Remove any apt-installed certbot first
+
 sudo apt remove certbot
 
 # Install via snap

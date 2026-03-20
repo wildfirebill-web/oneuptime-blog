@@ -47,6 +47,7 @@ Before creating services, you need a Swarm cluster. Initialize one on your manag
 
 ```bash
 # Initialize the swarm on the manager node
+
 docker swarm init --advertise-addr <MANAGER-IP>
 
 # The output provides a join token for worker nodes
@@ -459,7 +460,7 @@ docker service create \
   myapp:latest
 ```
 
-## Resource Management
+Resource Management
 
 Control CPU and memory allocation for your services:
 

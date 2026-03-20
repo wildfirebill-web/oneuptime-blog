@@ -49,6 +49,7 @@ This configuration deploys a single PostgreSQL instance with persistent storage.
 
 ```yaml
 # Headless service for stable network identity
+
 apiVersion: v1
 kind: Service
 metadata:

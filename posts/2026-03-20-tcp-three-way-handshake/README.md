@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Networking, Protocols, Troubleshooting, Wireshark, IPv4
+Tags: TCP, Networking, Protocol, Troubleshooting, Wireshark, IPv4
 
 Description: Understand the TCP three-way handshake process, the role of SYN, SYN-ACK, and ACK packets, and how to observe and troubleshoot handshake failures.
 
@@ -33,6 +33,7 @@ sequenceDiagram
 
 ```bash
 # Capture a TCP handshake on port 80
+
 tcpdump -i eth0 -n 'tcp port 80 and (tcp-syn or tcp-ack)'
 
 # More readable: capture with sequence numbers
@@ -102,4 +103,4 @@ tcpdump -i eth0 -n 'tcp port 80'   # Watch the full exchange
 
 ## Conclusion
 
-The TCP three-way handshake is both a security mechanism (ISN prevents spoofing) and a connection setup protocol (window and option negotiation). Handshake failures are always visible in packet captures — the flag sequence tells you exactly which phase failed and which side is responsible. A missing SYN-ACK points to the server or its network; a missing final ACK or an immediate RST points to the client side.
+The TCP three-way handshake is both a security mechanism (ISN prevents spoofing) and a connection setup protocol (window and option negotiation). Handshake failures are always visible in packet captures - the flag sequence tells you exactly which phase failed and which side is responsible. A missing SYN-ACK points to the server or its network; a missing final ACK or an immediate RST points to the client side.

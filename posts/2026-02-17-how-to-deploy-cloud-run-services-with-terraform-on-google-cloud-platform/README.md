@@ -18,6 +18,7 @@ Here is the simplest Cloud Run deployment:
 
 ```hcl
 # cloudrun.tf - Basic Cloud Run service
+
 resource "google_cloud_run_v2_service" "api" {
   name     = "api-service"
   location = var.region

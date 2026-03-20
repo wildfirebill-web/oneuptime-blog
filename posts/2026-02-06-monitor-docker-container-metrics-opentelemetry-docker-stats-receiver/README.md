@@ -43,6 +43,7 @@ Here's a minimal collector configuration that uses the Docker Stats Receiver to 
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collector config that scrapes Docker container stats every 10 seconds
 receivers:
   docker_stats:

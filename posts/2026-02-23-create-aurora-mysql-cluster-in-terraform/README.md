@@ -28,6 +28,7 @@ In Terraform, you create the cluster first, then add instances to it.
 
 ```hcl
 # Aurora MySQL cluster
+
 resource "aws_rds_cluster" "mysql" {
   cluster_identifier = "myapp-aurora-mysql"
 

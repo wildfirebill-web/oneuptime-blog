@@ -30,6 +30,7 @@ Error: EMFILE: too many open files, watch '/path/to/directory'
 
 ```bash
 # Check soft limit
+
 ulimit -n
 
 # Check hard limit

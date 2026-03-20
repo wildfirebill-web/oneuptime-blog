@@ -73,6 +73,7 @@ args:
 - --maxmemory-policy
 - "allkeys-lru"
 # Disable RDB snapshots
+
 - --save
 - ""
 # Disable AOF persistence

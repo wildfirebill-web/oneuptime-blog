@@ -25,6 +25,7 @@ If you have not already installed the image automation controllers, bootstrap Fl
 
 ```bash
 # Bootstrap Flux with image automation components
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

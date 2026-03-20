@@ -18,6 +18,7 @@ Description: Learn a systematic approach to diagnosing and fixing common NAT tra
 
 ```bash
 # Linux: Check if forwarding is on
+
 cat /proc/sys/net/ipv4/ip_forward
 # Must be 1
 

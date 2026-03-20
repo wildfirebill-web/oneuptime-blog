@@ -97,6 +97,7 @@ Apply this and cert-manager will create a TLS secret called `my-app-tls` in the 
 kubectl apply -f certificate.yaml
 
 # Check the certificate status
+
 kubectl get certificate -n istio-system
 kubectl describe certificate my-app-cert -n istio-system
 ```

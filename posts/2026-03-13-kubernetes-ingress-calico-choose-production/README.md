@@ -70,6 +70,7 @@ Always include kubelet health check ingress in deny-all policies:
 ```yaml
 ingress:
 # Allow kubelet health checks
+
 - from: []
   ports:
   - port: 8080  # Your health check port

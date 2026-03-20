@@ -223,6 +223,7 @@ If you install ArgoCD with Helm, set security contexts in your values file:
 
 ```yaml
 # values-security.yaml
+
 global:
   securityContext:
     runAsNonRoot: true

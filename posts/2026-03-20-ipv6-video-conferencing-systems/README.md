@@ -14,6 +14,7 @@ Video conferencing systems use various protocols (WebRTC, SIP, H.323) for media 
 
 ```bash
 # Install Jitsi Meet with IPv6 support
+
 sudo apt install jitsi-meet -y
 
 # During installation, enter your FQDN: meet.example.com
@@ -46,7 +47,7 @@ interfaces = { "::" }
 
 ## SIP Video Endpoints over IPv6
 
-```
+```text
 SIP video phones and endpoints:
 - Most modern SIP endpoints (Polycom, Cisco, Yealink) support IPv6
 - Configure IPv6 in endpoint settings:
@@ -61,7 +62,7 @@ Contact: <sip:user@[2001:db8::client]:5060>
 
 ## Cisco Webex and Enterprise Video over IPv6
 
-```
+```text
 Cisco Webex IPv6:
 - Webex uses dual-stack by default
 - Media prefers IPv6 when available (Happy Eyeballs)
@@ -76,7 +77,7 @@ Cisco Video Infrastructure:
 
 ## Zoom IPv6 Considerations
 
-```
+```text
 Zoom IPv6 Support:
 - Zoom clients support IPv6 (Happy Eyeballs algorithm)
 - Media may prefer IPv6 when available
@@ -93,7 +94,7 @@ Verify Zoom IPv6 connectivity:
 
 ## H.323 Video Conferencing over IPv6
 
-```
+```text
 H.323 over IPv6 configuration:
 - Gatekeeper (OpenH323/GnuGk): enable IPv6 listener
   # GnuGk.ini

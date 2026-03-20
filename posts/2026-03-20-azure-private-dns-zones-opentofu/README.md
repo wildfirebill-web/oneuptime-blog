@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Private DNS, DNS Zones, Private Endpoints, VNet, Infrastructure as Code
+Tags: OpenTofu, Azure, Private DNS, DNS Zones, Private Endpoint, VNet, Infrastructure as Code
 
 Description: Learn how to configure Azure Private DNS Zones with OpenTofu for internal name resolution within VNets, including integration with private endpoints and auto-registration.
 
 ## Introduction
 
-Azure Private DNS Zones provide DNS resolution within Azure VNets without requiring custom DNS infrastructure. They are essential for Private Endpoint name resolution—when you create a Private Endpoint for a service like Azure Storage or SQL, the service's public DNS name must resolve to the private IP instead of the public IP from within the VNet. Private DNS Zones can also enable automatic VM hostname registration and split-horizon DNS scenarios.
+Azure Private DNS Zones provide DNS resolution within Azure VNets without requiring custom DNS infrastructure. They are essential for Private Endpoint name resolution-when you create a Private Endpoint for a service like Azure Storage or SQL, the service's public DNS name must resolve to the private IP instead of the public IP from within the VNet. Private DNS Zones can also enable automatic VM hostname registration and split-horizon DNS scenarios.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ resource "azurerm_private_dns_zone" "main" {
 }
 
 # Link zone to VNet for resolution
+
 resource "azurerm_private_dns_zone_virtual_network_link" "main" {
   name                  = "${var.project_name}-vnet-link"
   resource_group_name   = var.resource_group_name
@@ -176,4 +177,4 @@ az network private-dns record-set list \
 
 ## Conclusion
 
-Only one VNet per Private DNS Zone can have `registration_enabled = true`—only that VNet's VMs auto-register their hostnames. All other linked VNets can resolve names but don't register. The Private DNS Zone names for Azure services are fixed (e.g., `privatelink.blob.core.windows.net`)—always use these exact zone names when integrating with Private Endpoints. Use `private_dns_zone_group` on Private Endpoints to automatically create A records in the zone when the endpoint is created, rather than managing records manually.
+Only one VNet per Private DNS Zone can have `registration_enabled = true`-only that VNet's VMs auto-register their hostnames. All other linked VNets can resolve names but don't register. The Private DNS Zone names for Azure services are fixed (e.g., `privatelink.blob.core.windows.net`)-always use these exact zone names when integrating with Private Endpoints. Use `private_dns_zone_group` on Private Endpoints to automatically create A records in the zone when the endpoint is created, rather than managing records manually.

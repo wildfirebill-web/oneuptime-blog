@@ -28,6 +28,7 @@ Head over to the Talos Linux GitHub releases page or use the Image Factory to gr
 
 ```bash
 # Download the latest Talos Linux ISO for amd64
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/talos-amd64.iso
 ```
 

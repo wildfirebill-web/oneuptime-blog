@@ -17,6 +17,7 @@ sudo apt update
 sudo apt install libopenscap8 openscap-scanner openscap-utils -y
 
 # Verify installation
+
 oscap --version
 ```
 

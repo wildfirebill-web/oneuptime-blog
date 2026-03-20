@@ -339,6 +339,7 @@ import datetime
 import os
 
 # Load secret from environment
+
 SECRET_KEY = os.environ.get('JWT_SECRET', 'your-secret-key')
 
 def create_token(user_id: str, role: str) -> str:

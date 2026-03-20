@@ -26,6 +26,7 @@ Start with a properly configured rolling update strategy:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -28,6 +28,7 @@ Before creating any experiments, set up stop conditions. These automatically hal
 
 ```hcl
 # safety.tf - Stop conditions and guardrails
+
 # CloudWatch alarm that stops experiments if error rate spikes
 resource "aws_cloudwatch_metric_alarm" "chaos_stop_condition" {
   alarm_name          = "chaos-engineering-stop-condition"

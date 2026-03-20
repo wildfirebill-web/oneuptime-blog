@@ -18,6 +18,7 @@ Docker Swarm is built into Docker and is simpler to set up than Kubernetes. Ansi
 
 ```yaml
 # roles/swarm_manager/tasks/main.yml
+
 # Initialize Docker Swarm on the manager node
 - name: Check if Swarm is already initialized
   ansible.builtin.command: docker info --format '{{ "{{" }}.Swarm.LocalNodeState{{ "}}" }}'

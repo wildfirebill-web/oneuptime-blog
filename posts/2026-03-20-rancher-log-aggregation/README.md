@@ -1,4 +1,4 @@
-# How to Configure Log Aggregation Pipelines in Rancher
+# How to Configure Log Aggregation Pipelines in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Log aggregation centralizes logs from all your Kubernetes workloads for searchin
 
 ```bash
 # Install from Rancher Apps catalog or via Helm
+
 helm repo add rancher-charts https://charts.rancher.io
 
 helm install rancher-logging rancher-charts/rancher-logging \

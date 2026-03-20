@@ -44,6 +44,7 @@ The CLI equivalent:
 
 ```bash
 # Show all interfaces and their addresses
+
 ip addr show
 
 # Show a specific connection's details

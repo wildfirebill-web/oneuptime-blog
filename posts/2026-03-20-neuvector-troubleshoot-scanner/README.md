@@ -1,4 +1,4 @@
-# How to Troubleshoot NeuVector Scanner Issues
+# How to Troubleshoot NeuVector Scanner Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,6 +31,7 @@ Start by verifying the scanner pods are healthy:
 
 ```bash
 # Check scanner pod status
+
 kubectl get pods -n neuvector -l app=neuvector-scanner-pod
 
 # Look for common issues
@@ -44,7 +45,7 @@ kubectl logs -n neuvector -l app=neuvector-scanner-pod -f
 ```
 
 Common log patterns to look for:
-```
+```text
 # Good - scanner is working
 "Scanner connected to controller"
 "Scanning image: nginx:latest"

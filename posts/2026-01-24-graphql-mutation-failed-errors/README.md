@@ -60,6 +60,7 @@ Ensure your mutation input matches the schema exactly. Here is a properly struct
 
 ```graphql
 # Schema definition showing required fields
+
 type Mutation {
   createUser(input: CreateUserInput!): User!
 }

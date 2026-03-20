@@ -42,6 +42,7 @@ The retry policy controls the backoff behavior between redelivery attempts. Conf
 
 ```bash
 # Create a subscription with a custom retry policy
+
 gcloud pubsub subscriptions create order-processor-sub \
   --topic=order-events \
   --ack-deadline=30 \

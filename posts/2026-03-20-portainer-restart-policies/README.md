@@ -8,7 +8,7 @@ Description: Learn how to configure Docker container restart policies in Portain
 
 ## Introduction
 
-A restart policy determines what Docker does when a container exits — whether from a crash, an error, or a system reboot. Configuring the right restart policy is essential for production deployments. Portainer makes it easy to set restart policies through the web UI.
+A restart policy determines what Docker does when a container exits - whether from a crash, an error, or a system reboot. Configuring the right restart policy is essential for production deployments. Portainer makes it easy to set restart policies through the web UI.
 
 ## Prerequisites
 
@@ -45,10 +45,11 @@ Restart policies cannot be changed on a running container without re-creating it
 
 ## Restart Policy Deep Dive
 
-### `no` — No Restart
+### `no` - No Restart
 
 ```yaml
 # docker-compose.yml equivalent:
+
 services:
   one-shot-task:
     image: myorg/data-migrator:latest
@@ -60,7 +61,7 @@ Use for:
 - Manual tasks you want to run explicitly
 - Development containers you restart manually
 
-### `on-failure` — Restart on Non-Zero Exit
+### `on-failure` - Restart on Non-Zero Exit
 
 ```yaml
 services:
@@ -76,7 +77,7 @@ Use for:
 - Batch jobs that should retry on failure but stop when done
 - Applications that may need external intervention after multiple failures
 
-### `always` — Always Restart
+### `always` - Always Restart
 
 ```yaml
 services:
@@ -94,7 +95,7 @@ Use for:
 - Core production services that must always run
 - Services that start with the system
 
-### `unless-stopped` — Always Restart Unless Manually Stopped
+### `unless-stopped` - Always Restart Unless Manually Stopped
 
 ```yaml
 services:
@@ -119,7 +120,7 @@ In Docker Compose files (used by Portainer Stacks):
 version: "3.8"
 
 services:
-  # Always running — restart after reboot
+  # Always running - restart after reboot
   postgres:
     image: postgres:15-alpine
     restart: unless-stopped
@@ -133,7 +134,7 @@ services:
     ports:
       - "80:80"
 
-  # One-time migration — don't restart
+  # One-time migration - don't restart
   migrate:
     image: myorg/migrate:latest
     restart: "no"
@@ -163,7 +164,7 @@ If a container is constantly restarting ("restart loop"), Portainer will show it
 
 ## Choosing the Right Policy
 
-```
+```text
 One-time job or migration:     restart: "no"
 Development container:         restart: "no" or on-failure
 Production service (normal):   restart: unless-stopped
@@ -173,4 +174,4 @@ Batch job with retry:          restart: on-failure:5
 
 ## Conclusion
 
-Restart policies are a simple but critical configuration for container reliability. For production services, `unless-stopped` is usually the right choice — it ensures your service survives crashes and reboots, while giving you the ability to stop it intentionally during maintenance. Use `always` for truly critical services that should never stop regardless of operator intervention.
+Restart policies are a simple but critical configuration for container reliability. For production services, `unless-stopped` is usually the right choice - it ensures your service survives crashes and reboots, while giving you the ability to stop it intentionally during maintenance. Use `always` for truly critical services that should never stop regardless of operator intervention.

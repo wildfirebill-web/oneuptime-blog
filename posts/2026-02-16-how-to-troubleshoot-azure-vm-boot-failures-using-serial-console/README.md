@@ -38,6 +38,7 @@ Here is how to check and enable it using the Azure CLI:
 
 ```bash
 # Check if Serial Console is enabled for the subscription
+
 az vm diagnostics get-default-config --is-windows-os false
 
 # Enable boot diagnostics on a specific VM (required for Serial Console)

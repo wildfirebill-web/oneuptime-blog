@@ -31,6 +31,7 @@ If the service account lacks permission to create a resource, the apply will fai
 
 ```yaml
 # service-account.yaml - Service account for the tenant
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -303,6 +303,7 @@ Before relying on alerts in production, test them. You can use Prometheus's buil
 
 ```bash
 # Check that rules are loaded
+
 kubectl port-forward svc/prometheus-kube-prometheus-prometheus -n monitoring 9090:9090
 
 # Visit http://localhost:9090/alerts to see alert states

@@ -27,6 +27,7 @@ flowchart TD
 
 ```bash
 # Get controller pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-application-controller -o wide
 
 # Check for OOMKilled or CrashLoopBackOff

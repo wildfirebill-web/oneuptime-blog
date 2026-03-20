@@ -105,6 +105,7 @@ def train_processor_version(project_id, location, processor_id):
     return operation
 
 # Start training
+
 operation = train_processor_version(
     "my-gcp-project", "us", "my-processor-id"
 )

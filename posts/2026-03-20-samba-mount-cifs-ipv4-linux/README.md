@@ -8,12 +8,13 @@ Description: Mount Samba/SMB shares on Linux using the CIFS filesystem driver wi
 
 ## Introduction
 
-Linux mounts Samba/SMB shares using the CIFS kernel module via the `mount.cifs` command. You specify the server by IPv4 address, provide credentials, and choose mount options that match your use case—interactive desktop use differs from scripted backups.
+Linux mounts Samba/SMB shares using the CIFS kernel module via the `mount.cifs` command. You specify the server by IPv4 address, provide credentials, and choose mount options that match your use case-interactive desktop use differs from scripted backups.
 
 ## Installing CIFS Utils
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install cifs-utils
 
 # RHEL/CentOS/Fedora
@@ -26,7 +27,7 @@ mount.cifs --version
 ## Basic Mount Commands
 
 ```bash
-# Mount with password on command line (insecure — shows in process list)
+# Mount with password on command line (insecure - shows in process list)
 sudo mount -t cifs //203.0.113.10/shared /mnt/samba -o username=smbuser,password=secret
 
 # Mount with prompt for password
@@ -91,7 +92,7 @@ touch /mnt/samba/testfile  # Test write access
 ## Specifying SMB Version
 
 ```bash
-# SMB 3.0 (modern servers — Windows 2012+, Samba 4+)
+# SMB 3.0 (modern servers - Windows 2012+, Samba 4+)
 sudo mount -t cifs //203.0.113.10/shared /mnt/samba \
   -o credentials=/etc/samba/credentials,vers=3.0
 

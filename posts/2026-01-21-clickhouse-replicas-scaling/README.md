@@ -152,6 +152,7 @@ ORDER BY (user_id, event_time);
 
 ```python
 # Python example with round-robin
+
 import clickhouse_connect
 from itertools import cycle
 
@@ -415,7 +416,7 @@ GROUP BY minute
 ORDER BY minute;
 ```
 
-### Resource Usage per Replica
+Resource Usage per Replica
 
 ```sql
 -- CPU and memory per replica

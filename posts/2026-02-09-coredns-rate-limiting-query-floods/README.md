@@ -225,6 +225,7 @@ Choosing appropriate rate limit values requires understanding your cluster's nor
 
 ```bash
 # Get average queries per second
+
 kubectl logs -n kube-system -l k8s-app=kube-dns --tail=10000 | \
   grep -o 'NOERROR\|NXDOMAIN\|SERVFAIL' | wc -l
 ```

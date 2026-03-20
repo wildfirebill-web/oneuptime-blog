@@ -14,6 +14,7 @@ OpenTofu 1.7+ introduced native state encryption, allowing state files to be enc
 
 ```hcl
 # Configure Transit secrets engine in Vault
+
 resource "vault_mount" "transit" {
   path = "transit"
   type = "transit"

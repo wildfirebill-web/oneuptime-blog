@@ -30,6 +30,7 @@ You load it the same way as an HCL tfvars file:
 
 ```bash
 # Explicit loading
+
 terraform apply -var-file="production.tfvars.json"
 ```
 

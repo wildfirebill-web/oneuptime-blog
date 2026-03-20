@@ -23,6 +23,7 @@ If you are running a hybrid environment or maintaining on-premises infrastructur
 
 ```hcl
 # versions.tf - Declare the vSphere provider
+
 terraform {
   required_version = ">= 1.0"
 

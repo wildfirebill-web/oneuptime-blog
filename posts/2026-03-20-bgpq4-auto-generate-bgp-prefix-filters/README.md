@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, bgpq4, IRR, Prefix Filters, Route Security, Automation
+Tags: BGP, Bgpq4, IRR, Prefix Filters, Route Security, Automation
 
 Description: Learn how to use bgpq4 to automatically generate accurate BGP prefix filter lists from Internet Routing Registry (IRR) data, reducing manual effort and improving routing security.
 
 ## What Is bgpq4 and Why Use It?
 
-Maintaining accurate BGP prefix lists manually is error-prone and time-consuming. When a customer adds new prefixes, you need to update filters immediately—or traffic gets dropped. bgpq4 queries Internet Routing Registry (IRR) databases and automatically generates prefix-list configurations from AS-SET and route objects.
+Maintaining accurate BGP prefix lists manually is error-prone and time-consuming. When a customer adds new prefixes, you need to update filters immediately-or traffic gets dropped. bgpq4 queries Internet Routing Registry (IRR) databases and automatically generates prefix-list configurations from AS-SET and route objects.
 
 ## Step 1: Install bgpq4
 
 ```bash
 # On Ubuntu/Debian
+
 sudo apt-get install bgpq4
 
 # Or build from source

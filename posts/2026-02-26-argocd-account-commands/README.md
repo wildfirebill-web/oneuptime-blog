@@ -24,6 +24,7 @@ The built-in `admin` account is a local account that exists by default.
 
 ```bash
 # List all configured accounts
+
 argocd account list
 
 # Output:

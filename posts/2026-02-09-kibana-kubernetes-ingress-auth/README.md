@@ -16,6 +16,7 @@ Start with a basic Kibana deployment:
 
 ```yaml
 # kibana-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

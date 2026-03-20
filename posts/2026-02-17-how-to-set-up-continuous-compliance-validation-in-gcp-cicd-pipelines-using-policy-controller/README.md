@@ -22,6 +22,7 @@ First, enable Policy Controller on your GKE cluster if you have not already:
 
 ```bash
 # Enable Policy Controller on an existing GKE cluster
+
 gcloud container fleet policycontroller enable \
   --memberships=my-gke-cluster \
   --project=my-project-id

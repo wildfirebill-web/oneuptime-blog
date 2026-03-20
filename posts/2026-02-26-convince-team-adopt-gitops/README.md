@@ -36,6 +36,7 @@ This is the most common objection and it is partially valid. GitOps does add a n
 
 ```yaml
 # Before: Complex pipeline scripts that nobody understands
+
 deploy:
   script: |
     aws eks update-kubeconfig --name prod-cluster

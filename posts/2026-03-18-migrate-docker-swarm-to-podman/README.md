@@ -22,6 +22,7 @@ Before migrating, evaluate which Swarm features you actually use:
 
 ```bash
 # List current Swarm services
+
 docker service ls
 
 # Check service details

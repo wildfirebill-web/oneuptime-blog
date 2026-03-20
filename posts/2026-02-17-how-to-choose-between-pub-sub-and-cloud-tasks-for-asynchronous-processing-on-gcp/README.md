@@ -44,6 +44,7 @@ When something happens and multiple services need to react:
 
 ```python
 # Publishing an order event - multiple services will process it
+
 from google.cloud import pubsub_v1
 import json
 

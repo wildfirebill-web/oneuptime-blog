@@ -21,6 +21,7 @@ listen_ipv6=NO
 pasv_enable=YES
 
 # Define passive port range (100 ports for up to ~100 concurrent transfers)
+
 pasv_min_port=30000
 pasv_max_port=31000
 
@@ -95,7 +96,7 @@ sudo grep "PASV" /var/log/vsftpd.log | tail -20
 ## Small Range for High-Security Environments
 
 ```bash
-# /etc/vsftpd.conf — minimal range for low-traffic servers
+# /etc/vsftpd.conf - minimal range for low-traffic servers
 
 pasv_enable=YES
 pasv_min_port=30000
@@ -120,9 +121,9 @@ curl -v --ftp-pasv ftp://ftpuser:password@203.0.113.10/
 
 # Capture the PASV response to verify port range:
 # Should see: 227 Entering Passive Mode (203,0,113,10,p1,p2)
-# Port = p1*256 + p2 — should be between 30000 and 31000
+# Port = p1*256 + p2 - should be between 30000 and 31000
 ```
 
 ## Conclusion
 
-Use `pasv_min_port` and `pasv_max_port` to restrict vsftpd's passive data ports to a defined range. Size the range based on expected concurrent transfers — 100-500 ports is sufficient for most servers. Open exactly this range in your firewall and forward it through NAT if applicable. Monitor for `425 Failed to establish connection` errors as a sign that the range is exhausted.
+Use `pasv_min_port` and `pasv_max_port` to restrict vsftpd's passive data ports to a defined range. Size the range based on expected concurrent transfers - 100-500 ports is sufficient for most servers. Open exactly this range in your firewall and forward it through NAT if applicable. Monitor for `425 Failed to establish connection` errors as a sign that the range is exhausted.

@@ -68,6 +68,7 @@ my-library/
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: my-library
 description: Common Helm library chart

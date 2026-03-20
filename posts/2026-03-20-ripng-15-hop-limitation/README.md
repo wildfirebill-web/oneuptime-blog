@@ -36,6 +36,7 @@ graph LR
 
 ```bash
 # FRRouting: show RIPng routes with hop counts
+
 vtysh -c "show ipv6 ripng"
 
 # Output:
@@ -50,7 +51,7 @@ vtysh -c "show ipv6 ripng"
 
 RIPng is susceptible to the "count-to-infinity" problem. When a route fails, routers may keep incrementing the metric until it reaches 16:
 
-```
+```text
 Without Poison Reverse:
 Time 0: Link R1-R2 fails
 Time 30s: R3 tells R2 "I can reach R1 via 2 hops" (R2 updates to 3)

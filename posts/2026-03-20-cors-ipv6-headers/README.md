@@ -16,7 +16,7 @@ When working with IPv6 addresses in security contexts:
 - IPv6 addresses contain colons and may include brackets in URLs
 - IPv4-mapped IPv6 addresses (`::ffff:x.x.x.x`) must be normalized
 - IPv6 CIDR notation uses a slash: `2001:db8::/32`
-- A /64 IPv6 subnet contains trillions of addresses — rate limit at /64 level
+- A /64 IPv6 subnet contains trillions of addresses - rate limit at /64 level
 
 ## Configuration Example
 
@@ -46,6 +46,7 @@ def is_in_network(ip_str: str, network_str: str) -> bool:
         return False
 
 # Examples:
+
 print(normalize_ip("::ffff:192.168.1.1"))  # → 192.168.1.1
 print(normalize_ip("2001:db8::1"))          # → 2001:db8::1
 print(is_in_network("2001:db8::1", "2001:db8::/32"))  # → True

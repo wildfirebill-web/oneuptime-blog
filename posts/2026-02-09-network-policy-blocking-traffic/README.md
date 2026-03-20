@@ -28,6 +28,7 @@ Start by checking if network policies exist in the namespace and whether they se
 
 ```bash
 # List all network policies in namespace
+
 kubectl get networkpolicy -n production
 
 # Check which policies select your pod

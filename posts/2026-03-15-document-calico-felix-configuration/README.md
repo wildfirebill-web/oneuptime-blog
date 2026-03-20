@@ -29,6 +29,7 @@ Start by retrieving the active FelixConfiguration resource:
 
 ```bash
 # Get the default Felix configuration
+
 calicoctl get felixconfiguration default -o yaml > felix-config.yaml
 
 # View it directly

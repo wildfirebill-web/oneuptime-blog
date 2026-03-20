@@ -19,6 +19,7 @@ S3 server access logging records detailed information about every request made t
 
 ```hcl
 # Separate bucket to store access logs
+
 resource "aws_s3_bucket" "logs" {
   bucket = "${var.bucket_name}-access-logs"
   tags   = { Name = "s3-access-logs", Purpose = "Logging" }
@@ -153,4 +154,4 @@ tofu apply
 
 ## Conclusion
 
-S3 server access logging provides HTTP-level request records while CloudTrail data events provide API-level audit logging with caller identity information. For security monitoring, CloudTrail is more actionable as it captures the IAM principal making each request. Enable both for comprehensive coverage—server access logs for network-level analysis and CloudTrail for security investigations.
+S3 server access logging provides HTTP-level request records while CloudTrail data events provide API-level audit logging with caller identity information. For security monitoring, CloudTrail is more actionable as it captures the IAM principal making each request. Enable both for comprehensive coverage-server access logs for network-level analysis and CloudTrail for security investigations.

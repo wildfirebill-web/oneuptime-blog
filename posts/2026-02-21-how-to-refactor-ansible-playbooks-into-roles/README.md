@@ -16,6 +16,7 @@ Here is a typical playbook that has grown organically over time:
 
 ```yaml
 # site.yml - the kitchen sink playbook
+
 - hosts: webservers
   become: yes
   vars:

@@ -63,6 +63,7 @@ The first layer of validation ensures all YAML files are syntactically correct.
 
 ```yaml
 # .github/workflows/pr-validation.yaml
+
 name: PR Validation
 on:
   pull_request:

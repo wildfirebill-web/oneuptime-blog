@@ -16,6 +16,7 @@ RHEL requires an active subscription for package installation. Make sure your se
 
 ```ini
 # inventory/hosts
+
 [rhel9]
 rhel-web01 ansible_host=10.0.1.10
 rhel-db01  ansible_host=10.0.1.20

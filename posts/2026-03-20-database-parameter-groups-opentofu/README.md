@@ -8,7 +8,7 @@ Description: Learn how to create and apply custom RDS parameter groups using Ope
 
 ---
 
-RDS parameter groups control the database engine configuration — connection limits, query caching, memory allocation, and hundreds of other settings. OpenTofu manages parameter groups as code, ensuring consistent database tuning across environments.
+RDS parameter groups control the database engine configuration - connection limits, query caching, memory allocation, and hundreds of other settings. OpenTofu manages parameter groups as code, ensuring consistent database tuning across environments.
 
 ---
 

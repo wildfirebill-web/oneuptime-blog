@@ -25,6 +25,7 @@ You can have multiple workgroups sharing the same namespace, which is useful for
 
 ```bash
 # Create a namespace - this is where your data lives
+
 aws redshift-serverless create-namespace \
   --namespace-name analytics-ns \
   --db-name warehouse \

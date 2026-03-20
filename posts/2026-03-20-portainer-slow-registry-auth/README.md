@@ -1,4 +1,4 @@
-# How to Fix Slow Stack Deployments Due to Registry Authentication
+# How to Fix Slow Stack Deployments Due to Registry Authentication - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Speed up slow Portainer stack deployments caused by registry authen
 
 ## Introduction
 
-Stack deployments in Portainer can become extremely slow when registry authentication takes long — 30+ seconds or more for each image pull. This is commonly caused by DNS resolution delays for registry servers, stale authentication tokens, or pull-always policies on large images. This guide explains how to diagnose and fix each bottleneck.
+Stack deployments in Portainer can become extremely slow when registry authentication takes long - 30+ seconds or more for each image pull. This is commonly caused by DNS resolution delays for registry servers, stale authentication tokens, or pull-always policies on large images. This guide explains how to diagnose and fix each bottleneck.
 
 ## Step 1: Identify the Bottleneck
 
 ```bash
 # Time a manual image pull to measure the actual bottleneck
+
 time docker pull myregistry.com/myimage:v1.0
 
 # Compare stages:

@@ -63,6 +63,7 @@ The Calico issue tracker is at `github.com/projectcalico/calico/issues`. For eff
 
 ```bash
 # Fork and clone the repository
+
 git clone git@github.com:<your-github>/calico.git
 cd calico
 

@@ -1,10 +1,10 @@
-# How to Fix "Unable to Retrieve Image Details" After Docker Update
+# How to Fix 'Unable to Retrieve Image Details' After Docker Update (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Images, Docker Update
 
-Description: Resolve "Unable to Retrieve Image Details" errors in Portainer that appear after Docker Engine updates, caused by API changes, image format differences, and metadata compatibility issues.
+Description: Resolve 'Unable to Retrieve Image Details' errors in Portainer that appear after Docker Engine updates, caused by API changes, image format differences, and metadata compatibility issues.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ After updating Docker Engine, Portainer may show "Unable to Retrieve Image Detai
 
 ```bash
 # Check Portainer logs for image-related errors
+
 docker logs portainer 2>&1 | grep -i "image\|retrieve\|inspect\|error" | tail -30
 
 # Check Docker daemon logs for relevant errors
@@ -107,7 +108,7 @@ Docker Engine 29+ uses BuildKit by default, which creates images with different 
 docker history myimage:latest
 
 # If history shows missing layers from BuildKit build:
-# This is expected — BuildKit uses a different layer structure
+# This is expected - BuildKit uses a different layer structure
 
 # For Portainer to display details correctly:
 # Ensure Portainer 2.20+ is installed (it supports BuildKit image format)
@@ -151,7 +152,7 @@ sleep 10
 
 ```bash
 # Verify Portainer has access to the Docker images directory
-# This is accessed via the Docker socket — not directly
+# This is accessed via the Docker socket - not directly
 
 # Test Docker socket works
 curl --unix-socket /var/run/docker.sock \

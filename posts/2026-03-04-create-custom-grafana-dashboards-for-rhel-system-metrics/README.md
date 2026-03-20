@@ -20,6 +20,7 @@ Select your Prometheus data source, then use the PromQL queries below for each p
 
 ```promql
 # Overall CPU usage percentage (all modes except idle)
+
 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 
 # CPU usage broken down by mode

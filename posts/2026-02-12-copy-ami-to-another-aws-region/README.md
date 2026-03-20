@@ -30,6 +30,7 @@ The copy starts immediately. You'll get a new AMI ID in the destination region. 
 
 ```bash
 # Copy an AMI from us-east-1 to eu-west-1
+
 aws ec2 copy-image \
     --source-image-id ami-0123456789abcdef0 \
     --source-region us-east-1 \

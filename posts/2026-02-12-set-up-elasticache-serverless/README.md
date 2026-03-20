@@ -37,6 +37,7 @@ The scaling is automatic and transparent. Your application connects to a single 
 
 ```bash
 # Create a Redis Serverless cache
+
 aws elasticache create-serverless-cache \
   --serverless-cache-name my-app-cache \
   --engine redis \

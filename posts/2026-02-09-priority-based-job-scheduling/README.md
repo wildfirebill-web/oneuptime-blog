@@ -24,6 +24,7 @@ Define PriorityClasses for different job importance levels in your organization.
 
 ```yaml
 # High priority for critical business jobs
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:
@@ -398,7 +399,7 @@ Monitor preemption rates and adjust priorities if you see excessive preemption. 
 
 Implement checkpointing in job code so preempted pods can resume from their last checkpoint instead of starting over. This is especially important for long-running batch jobs.
 
-## Resource Planning with Priorities
+Resource Planning with Priorities
 
 When planning cluster capacity, account for priority-based scheduling patterns.
 

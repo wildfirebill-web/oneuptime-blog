@@ -26,6 +26,7 @@ Create separate providers for each namespace or team channel.
 
 ```yaml
 # Provider for development team notifications
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

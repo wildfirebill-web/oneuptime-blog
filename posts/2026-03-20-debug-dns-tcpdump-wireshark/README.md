@@ -8,12 +8,13 @@ Description: Capture and analyze DNS traffic with tcpdump and Wireshark to trace
 
 ## Introduction
 
-When `dig` shows the wrong answer or DNS is failing, packet capture reveals exactly what's happening at the wire level. `tcpdump` and Wireshark show whether queries are leaving the host, whether responses arrive, what the response contains, and whether DNSSEC validation is causing failures. This approach is definitive — it shows reality, not what the application thinks is happening.
+When `dig` shows the wrong answer or DNS is failing, packet capture reveals exactly what's happening at the wire level. `tcpdump` and Wireshark show whether queries are leaving the host, whether responses arrive, what the response contains, and whether DNSSEC validation is causing failures. This approach is definitive - it shows reality, not what the application thinks is happening.
 
 ## Capture DNS Traffic with tcpdump
 
 ```bash
 # Capture all DNS traffic (UDP and TCP):
+
 tcpdump -i eth0 -n 'port 53'
 
 # Save to file for analysis:
@@ -64,7 +65,7 @@ tcpdump -i eth0 -n -v 'port 53' 2>/dev/null | grep -i "SERVFAIL"
 
 ## Wireshark DNS Analysis
 
-```
+```text
 Wireshark display filters for DNS:
 
 # Show all DNS:

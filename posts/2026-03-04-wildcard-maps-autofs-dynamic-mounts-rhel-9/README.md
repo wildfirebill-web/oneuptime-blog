@@ -48,6 +48,7 @@ sudo systemctl restart autofs
 
 ```bash
 # Any directory name under /data/ triggers a mount
+
 ls /data/projects/    # Mounts nfsserver:/export/data/projects
 ls /data/archives/    # Mounts nfsserver:/export/data/archives
 ls /data/anything/    # Mounts nfsserver:/export/data/anything

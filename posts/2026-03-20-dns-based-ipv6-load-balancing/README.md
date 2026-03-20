@@ -29,6 +29,7 @@ Use short TTLs (300 seconds or less) for load-balanced records to enable quick f
 
 ```bash
 # Run multiple queries to observe address rotation
+
 for i in $(seq 1 5); do
     dig AAAA www.example.com @ns1.example.com +short
     echo "---"

@@ -26,6 +26,7 @@ Variables defined in the `vars` section of a play are available to all tasks, ha
 
 ```yaml
 # play-scope.yml
+
 # Demonstrates play-level variable scoping
 ---
 - name: First play

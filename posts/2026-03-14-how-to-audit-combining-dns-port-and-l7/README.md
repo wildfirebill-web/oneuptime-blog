@@ -30,6 +30,7 @@ Start by creating a complete inventory of all Cilium network policies:
 
 ```bash
 # Inventory all policies across the cluster
+
 kubectl get cnp --all-namespaces -o json | jq '.items[] | {ns: .metadata.namespace, name: .metadata.name}'
 ```
 

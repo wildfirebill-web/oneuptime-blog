@@ -1,4 +1,4 @@
-# How to Enable OPA Gatekeeper Policies with Portainer
+# How to Enable OPA Gatekeeper Policies with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,6 +31,7 @@ Or use the KubeShell:
 
 ```bash
 # Add Gatekeeper Helm repo
+
 helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
 helm repo update
 
@@ -51,7 +52,7 @@ kubectl get crd | grep -E "(constraint|gatekeeper)"
 A ConstraintTemplate defines the schema and Rego policy logic:
 
 ```yaml
-# require-labels-template.yaml — Require specific labels on namespaces
+# require-labels-template.yaml - Require specific labels on namespaces
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
@@ -93,7 +94,7 @@ kubectl apply -f require-labels-template.yaml
 A Constraint applies the template to specific resources:
 
 ```yaml
-# require-labels-constraint.yaml — Enforce labels on all namespaces
+# require-labels-constraint.yaml - Enforce labels on all namespaces
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
@@ -283,4 +284,4 @@ kubectl get constraints --all-namespaces -o wide
 
 ## Conclusion
 
-OPA Gatekeeper in Portainer-managed Kubernetes clusters provides policy-as-code enforcement that applies to all deployments regardless of how they're initiated — whether through Portainer's UI, API, kubectl, or CI/CD pipelines. Start with critical policies (no privileged containers, required resource limits), test in audit mode before enforcing, and gradually add more policies as your team becomes familiar with the constraints.
+OPA Gatekeeper in Portainer-managed Kubernetes clusters provides policy-as-code enforcement that applies to all deployments regardless of how they're initiated - whether through Portainer's UI, API, kubectl, or CI/CD pipelines. Start with critical policies (no privileged containers, required resource limits), test in audit mode before enforcing, and gradually add more policies as your team becomes familiar with the constraints.

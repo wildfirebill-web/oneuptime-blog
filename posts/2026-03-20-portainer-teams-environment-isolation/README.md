@@ -1,4 +1,4 @@
-# How to Isolate Tenants Using Portainer Teams and Environments
+# How to Isolate Tenants Using Portainer Teams and Environments (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -40,6 +40,7 @@ TOKEN="your-admin-jwt-token"
 PORTAINER="https://portainer.example.com"
 
 # Create Team A
+
 TEAM_A_ID=$(curl -s -X POST "$PORTAINER/api/teams" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -114,7 +115,7 @@ curl -s -H "Authorization: Bearer $TENANT_A_TOKEN" \
 Even with environment-level access control, containers on the same host can communicate if they share a network. For strict isolation:
 
 ```yaml
-# Tenant A stack — always use team-specific network names
+# Tenant A stack - always use team-specific network names
 networks:
   tenant_a_net:
     driver: bridge

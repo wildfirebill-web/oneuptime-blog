@@ -31,6 +31,7 @@ You should consider building a custom Operator when:
 
 ```bash
 # Install the Operator SDK
+
 brew install operator-sdk
 
 # Or download directly

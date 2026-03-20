@@ -63,6 +63,7 @@ Create a `tempo.yaml` configuration file:
 
 ```yaml
 # tempo.yaml
+
 # This configuration sets up Tempo with local storage for development
 
 # Server configuration

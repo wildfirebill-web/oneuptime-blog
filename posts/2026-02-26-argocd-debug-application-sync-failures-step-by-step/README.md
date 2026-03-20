@@ -34,6 +34,7 @@ Start by getting the full picture of what went wrong:
 
 ```bash
 # Get detailed application status
+
 argocd app get my-app
 
 # Get the sync result with details
@@ -121,7 +122,7 @@ argocd app get my-app -o json | jq '
 #     - Replace=true  # Use with caution
 ```
 
-### Resource Conflicts
+Resource Conflicts
 
 ```bash
 # Check if another controller manages the resource

@@ -16,6 +16,7 @@ Start with a minimal working configuration.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

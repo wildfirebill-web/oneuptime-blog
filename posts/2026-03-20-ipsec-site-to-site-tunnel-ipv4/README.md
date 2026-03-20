@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPSec, StrongSwan, VPN, IPv4, Site-to-Site, Networking
+Tags: IPsec, strongSwan, VPN, IPv4, Site-to-Site, Networking
 
 Description: Configure a StrongSwan IPSec site-to-site tunnel between two IPv4 networks using IKEv2 and pre-shared key authentication.
 
@@ -10,7 +10,7 @@ An IPSec site-to-site tunnel encrypts all traffic between two network sites at t
 
 ## Topology
 
-```
+```text
 Site A:               Site B:
 10.1.0.0/24           10.2.0.0/24
 [Gateway A]  <-IPSec-> [Gateway B]
@@ -50,6 +50,7 @@ conn site-to-site
 
 ```conf
 # /etc/ipsec.secrets on Gateway A
+
 @gateway-a @gateway-b : PSK "SharedSecret123!"
 ```
 

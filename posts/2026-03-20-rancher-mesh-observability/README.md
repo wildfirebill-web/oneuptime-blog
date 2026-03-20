@@ -23,6 +23,7 @@ Install the Rancher Monitoring stack from the Apps catalog:
 
 ```bash
 # Install Rancher Monitoring via Helm
+
 helm repo add rancher-charts https://charts.rancher.io
 helm install rancher-monitoring rancher-charts/rancher-monitoring \
   --namespace cattle-monitoring-system \

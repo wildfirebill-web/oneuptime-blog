@@ -18,6 +18,7 @@ Run the recommendations command against any image to get actionable fix suggesti
 
 ```bash
 # Get recommendations for a local image
+
 docker scout recommendations myapp:latest
 
 # Get recommendations for a remote image

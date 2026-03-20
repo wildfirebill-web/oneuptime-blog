@@ -29,6 +29,7 @@ The simplest configuration serves all files in a directory as static content:
 
 ```yaml
 # app.yaml - Basic static file serving
+
 runtime: python312
 
 handlers:

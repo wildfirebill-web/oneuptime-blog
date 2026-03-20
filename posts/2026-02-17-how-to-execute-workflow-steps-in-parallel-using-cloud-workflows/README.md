@@ -18,6 +18,7 @@ The `parallel` keyword creates branches that run simultaneously.
 
 ```yaml
 # basic-parallel.yaml
+
 # Fetch data from three independent APIs at the same time
 
 main:

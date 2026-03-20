@@ -83,6 +83,7 @@ Now when you upload objects, tag the ones that need replication:
 
 ```bash
 # This object will be replicated
+
 aws s3 cp report.pdf s3://my-source-bucket/reports/annual-report.pdf \
     --tagging "compliance=required"
 

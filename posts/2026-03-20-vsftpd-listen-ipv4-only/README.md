@@ -8,7 +8,7 @@ Description: Configure vsftpd to listen exclusively on IPv4 interfaces by settin
 
 ## Introduction
 
-vsftpd defaults vary by distribution—on some it listens on IPv6 (which may or may not also accept IPv4 depending on system config). Setting `listen=YES` and `listen_ipv6=NO` ensures IPv4-only operation.
+vsftpd defaults vary by distribution-on some it listens on IPv6 (which may or may not also accept IPv4 depending on system config). Setting `listen=YES` and `listen_ipv6=NO` ensures IPv4-only operation.
 
 ## Basic IPv4-Only Configuration
 
@@ -16,6 +16,7 @@ vsftpd defaults vary by distribution—on some it listens on IPv6 (which may or 
 # /etc/vsftpd.conf
 
 # Listen on IPv4 (standalone mode)
+
 listen=YES
 
 # Disable IPv6 listening

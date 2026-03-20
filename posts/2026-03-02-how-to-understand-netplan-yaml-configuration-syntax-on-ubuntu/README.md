@@ -17,6 +17,7 @@ Netplan reads all `.yaml` files in `/etc/netplan/` in lexicographic order. Files
 ```bash
 ls /etc/netplan/
 # Typical output:
+
 # 00-installer-config.yaml
 # 01-netcfg.yaml
 ```

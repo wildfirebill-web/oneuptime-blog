@@ -20,6 +20,7 @@ APM infrastructure often grows organically, with dashboards and alarms created a
 
 ```hcl
 # variables.tf - Define APM configuration variables
+
 variable "aws_region" {
   description = "AWS region"
   type        = string

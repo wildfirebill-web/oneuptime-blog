@@ -348,6 +348,7 @@ Track sampling metrics:
 
 ```promql
 # Traces sampled vs total
+
 rate(otelcol_processor_accepted_spans[5m])
 /
 rate(otelcol_processor_received_spans[5m])

@@ -8,7 +8,7 @@ Description: Configure DHCPv6 relay on Cisco IOS and IOS-XE routers to forward D
 
 ## Basic DHCPv6 Relay on Cisco IOS/IOS-XE
 
-```
+```text
 ! Enable IPv6 unicast routing (required)
 ipv6 unicast-routing
 
@@ -24,7 +24,7 @@ interface GigabitEthernet0/1
 
 ## Relay to Multiple Servers
 
-```
+```text
 ! Forward DHCPv6 to two servers for redundancy
 interface GigabitEthernet0/1
  ipv6 address 2001:db8:1::1/64
@@ -35,7 +35,7 @@ interface GigabitEthernet0/1
 
 ## Relay with Source Interface Specification
 
-```
+```text
 ! Specify source interface for relay messages (recommended)
 interface GigabitEthernet0/1
  ipv6 address 2001:db8:1::1/64
@@ -46,7 +46,7 @@ interface GigabitEthernet0/1
 
 ## DHCPv6 Relay with Option 37 (Remote ID) and Option 18 (Interface ID)
 
-```
+```text
 ! Enable vendor-specific relay options
 ipv6 dhcp relay option vpn
 ipv6 dhcp relay option enterprise-id
@@ -61,7 +61,7 @@ interface GigabitEthernet0/1
 
 ## Cisco IOS-XR DHCPv6 Relay
 
-```
+```text
 ! IOS-XR syntax for DHCPv6 relay (different from IOS)
 dhcp ipv6
  interface GigabitEthernet0/0/0/1
@@ -78,7 +78,7 @@ interface GigabitEthernet0/0/0/1
 
 ## Cisco NX-OS DHCPv6 Relay (Nexus)
 
-```
+```text
 ! Enable DHCPv6 relay feature
 feature dhcp
 
@@ -94,7 +94,7 @@ show ipv6 dhcp relay binding
 
 ## Verification Commands
 
-```
+```text
 ! IOS/IOS-XE verification
 show ipv6 dhcp relay statistics
 show ipv6 dhcp binding
@@ -112,7 +112,7 @@ clear ipv6 dhcp relay statistics
 
 ## Troubleshooting
 
-```
+```text
 ! Common issues:
 
 ! 1. No relay activity

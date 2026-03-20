@@ -35,6 +35,7 @@ Flux consists of several controllers, each responsible for a specific part of th
 
 ```bash
 # Install the Flux CLI
+
 brew install fluxcd/tap/flux
 
 # Verify the installation

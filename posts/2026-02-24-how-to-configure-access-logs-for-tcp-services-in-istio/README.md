@@ -271,6 +271,7 @@ If you're not seeing TCP logs at all:
 
 ```bash
 # Verify the service port naming
+
 kubectl get svc -n database -o yaml | grep -A5 ports
 
 # Check the Envoy listener configuration

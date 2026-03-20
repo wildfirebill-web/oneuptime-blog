@@ -55,6 +55,7 @@ Check your Cilium installation:
 
 ```bash
 # Verify Cilium is running
+
 cilium status
 
 # Check Cilium version

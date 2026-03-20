@@ -153,6 +153,7 @@ With variant labels on both traces and metrics across all services, you can buil
 # Example queries for your observability backend
 
 # Conversion rate by variant
+
 CONVERSION_QUERY = """
 SELECT
     attributes['experiment.variant'] as variant,

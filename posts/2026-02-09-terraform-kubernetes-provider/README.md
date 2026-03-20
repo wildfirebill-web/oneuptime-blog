@@ -24,6 +24,7 @@ Start with kubeconfig authentication:
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     kubernetes = {

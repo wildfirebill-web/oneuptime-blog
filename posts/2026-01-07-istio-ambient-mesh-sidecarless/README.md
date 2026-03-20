@@ -175,6 +175,7 @@ Before installing Istio Ambient Mesh, ensure your environment meets the followin
 
 ```bash
 # Check the Kubernetes server version to ensure compatibility
+
 kubectl version --short
 ```
 
@@ -1143,7 +1144,7 @@ istioctl dashboard prometheus
 
 ## Best Practices
 
-### Resource Planning
+Resource Planning
 
 ```yaml
 # Save this as ztunnel-resources.yaml

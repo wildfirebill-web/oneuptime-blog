@@ -64,6 +64,7 @@ def worker() -> None:
             task_queue.task_done()
 
 # Start worker threads
+
 for _ in range(WORKERS):
     threading.Thread(target=worker, daemon=True).start()
 
@@ -78,7 +79,7 @@ while True:
         task_queue.put_nowait((conn, addr))
     except queue.Full:
         conn.close()   # reject: server at capacity
-        print(f"Rejected {addr} — queue full")
+        print(f"Rejected {addr} - queue full")
 ```
 
 ## Java: Fixed Thread Pool
@@ -168,4 +169,4 @@ func main() {
 
 ## Conclusion
 
-A thread pool bounds memory usage and prevents thread exhaustion under load. Use `ThreadPoolExecutor` (Python), `Executors.newFixedThreadPool` (Java), or a buffered channel with worker goroutines (Go). When the pool is saturated, either reject new connections immediately (close and return a 503) or queue them with a bounded queue to provide backpressure. Choose the pool size based on the expected connection duration and the target concurrency — CPU-bound tasks need far fewer threads than I/O-bound tasks.
+A thread pool bounds memory usage and prevents thread exhaustion under load. Use `ThreadPoolExecutor` (Python), `Executors.newFixedThreadPool` (Java), or a buffered channel with worker goroutines (Go). When the pool is saturated, either reject new connections immediately (close and return a 503) or queue them with a bounded queue to provide backpressure. Choose the pool size based on the expected connection duration and the target concurrency - CPU-bound tasks need far fewer threads than I/O-bound tasks.

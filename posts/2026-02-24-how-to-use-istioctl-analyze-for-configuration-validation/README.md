@@ -46,6 +46,7 @@ You don't need a running cluster to use analyze. You can validate local YAML fil
 
 ```bash
 # Analyze a single file
+
 istioctl analyze -f virtual-service.yaml
 
 # Analyze multiple files

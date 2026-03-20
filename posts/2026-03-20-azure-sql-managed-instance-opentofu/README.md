@@ -16,6 +16,7 @@ SQL Managed Instance requires a dedicated subnet with specific delegations and r
 
 ```hcl
 # main.tf - VNet and subnet for SQL Managed Instance
+
 resource "azurerm_virtual_network" "vnet" {
   name                = "sql-mi-vnet"
   address_space       = ["10.0.0.0/16"]

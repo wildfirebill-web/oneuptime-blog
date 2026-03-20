@@ -205,6 +205,7 @@ Here is a quick reference for day-to-day work:
 
 ```bash
 # List running containers
+
 podman ps
 
 # List all containers including stopped ones

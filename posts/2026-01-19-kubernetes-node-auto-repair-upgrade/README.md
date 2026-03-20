@@ -43,6 +43,7 @@ flowchart TD
 
 ```bash
 # Enable auto-repair on new node pool
+
 gcloud container node-pools create auto-repair-pool \
   --cluster=my-cluster \
   --zone=us-central1-a \

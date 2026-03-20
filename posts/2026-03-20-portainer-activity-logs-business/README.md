@@ -48,6 +48,7 @@ For SIEM integration, stream activity logs to syslog:
 
 ```bash
 # Start Portainer with syslog logging enabled
+
 docker run -d \
   --name portainer \
   --log-driver syslog \

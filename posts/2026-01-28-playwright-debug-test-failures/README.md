@@ -38,6 +38,7 @@ The simplest debugging technique. Watch your test execute in a real browser.
 
 ```bash
 # Run all tests with visible browser
+
 npx playwright test --headed
 
 # Run a specific test file

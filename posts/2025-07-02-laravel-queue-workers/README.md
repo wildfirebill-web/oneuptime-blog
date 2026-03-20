@@ -82,6 +82,7 @@ Configure your queue driver in the `.env` file:
 # .env
 
 # Choose your queue driver
+
 QUEUE_CONNECTION=redis
 
 # Redis configuration

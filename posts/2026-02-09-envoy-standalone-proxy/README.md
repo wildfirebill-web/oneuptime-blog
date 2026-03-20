@@ -423,6 +423,7 @@ The admin interface provides powerful debugging and operational capabilities. Ac
 
 ```bash
 # Get cluster status
+
 kubectl port-forward svc/envoy-proxy 9901:9901
 curl http://localhost:9901/clusters
 

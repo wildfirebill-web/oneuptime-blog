@@ -25,6 +25,7 @@ Calico's `serviceAccountSelector` in `projectcalico.org/v3` ties network policy 
 
 ```yaml
 # Prevent pods from using the default service account for network access
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

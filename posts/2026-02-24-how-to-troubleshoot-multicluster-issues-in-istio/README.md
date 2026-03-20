@@ -28,6 +28,7 @@ Check east-west gateways in each cluster:
 
 ```bash
 # Cluster 1
+
 kubectl get svc -n istio-system istio-eastwestgateway --context cluster1
 ```
 

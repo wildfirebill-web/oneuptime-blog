@@ -59,6 +59,7 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.instrumentation.httpx import HTTPXClientInstrumentor
 
 # Configure OpenTelemetry with service metadata
+
 resource = Resource.create({
     "service.name": "httpx-async-client",
     "service.version": "1.0.0",

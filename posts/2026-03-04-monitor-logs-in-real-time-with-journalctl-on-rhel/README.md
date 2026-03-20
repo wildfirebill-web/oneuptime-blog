@@ -14,6 +14,7 @@ When you are actively troubleshooting an issue on RHEL, watching logs scroll by 
 
 ```bash
 # Follow all journal entries in real time
+
 journalctl -f
 
 # This shows new entries as they appear

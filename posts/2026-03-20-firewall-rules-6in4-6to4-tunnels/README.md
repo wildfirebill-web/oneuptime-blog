@@ -16,6 +16,7 @@ Before adding new rules, inspect what is already in place:
 
 ```bash
 # List all IPv4 filter rules with line numbers
+
 sudo iptables -L -n -v --line-numbers
 
 # Check if protocol 41 is currently being dropped

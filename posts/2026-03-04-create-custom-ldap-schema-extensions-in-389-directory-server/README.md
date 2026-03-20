@@ -75,6 +75,7 @@ Restart the instance to load the new schema file:
 
 ```bash
 # Restart to load the schema
+
 sudo dsctl localhost restart
 
 # Verify the schema was loaded

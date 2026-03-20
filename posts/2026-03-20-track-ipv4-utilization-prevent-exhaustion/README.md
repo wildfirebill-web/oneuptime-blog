@@ -13,6 +13,7 @@ IPv4 address exhaustion causes pod scheduling failures, VM provisioning errors, 
 ```python
 #!/usr/bin/env python3
 # check_ip_utilization.py
+
 import requests
 import json
 
@@ -61,7 +62,7 @@ else:
 
 ```bash
 #!/bin/bash
-# check-calico-ipam.sh — Alert when Calico IP pool > 80% used
+# check-calico-ipam.sh - Alert when Calico IP pool > 80% used
 
 THRESHOLD=80
 
@@ -111,7 +112,7 @@ for subnet in data.get('data', []):
 
 ```python
 #!/usr/bin/env python3
-# netbox_exporter.py — Export IP utilization metrics for Prometheus
+# netbox_exporter.py - Export IP utilization metrics for Prometheus
 from prometheus_client import start_http_server, Gauge
 import requests, time
 

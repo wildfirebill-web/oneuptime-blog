@@ -19,7 +19,7 @@ resource "aws_wafv2_web_acl" "bot_protected" {
     allow {}
   }
 
-  # AWS Bot Control — managed bot detection
+  # AWS Bot Control - managed bot detection
   rule {
     name     = "AWSManagedRulesBotControlRuleSet"
     priority = 5
@@ -169,7 +169,7 @@ resource "aws_cloudwatch_metric_alarm" "bot_traffic_spike" {
   period              = 300
   statistic           = "Sum"
   threshold           = 5000
-  alarm_description   = "Spike in WAF bot-blocked requests — potential bot attack"
+  alarm_description   = "Spike in WAF bot-blocked requests - potential bot attack"
   alarm_actions       = [aws_sns_topic.security_alerts.arn]
 
   dimensions = {

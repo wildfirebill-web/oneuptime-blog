@@ -16,9 +16,9 @@ The `replace` function in OpenTofu substitutes occurrences of a substring (or re
 replace(string, search, replacement)
 ```
 
-- **string** — the input string
-- **search** — the substring or regex pattern to find
-- **replacement** — the string to substitute
+- **string** - the input string
+- **search** - the substring or regex pattern to find
+- **replacement** - the string to substitute
 - Returns the modified string with all occurrences replaced
 - If **search** is wrapped in `/` (e.g., `/pattern/`), it is treated as a regex
 

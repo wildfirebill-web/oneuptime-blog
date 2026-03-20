@@ -44,6 +44,7 @@ The `to` address must match an existing resource block in your configuration:
 
 ```hcl
 # Wrong - resource block does not exist
+
 import {
   to = aws_instance.web_server
   id = "i-1234567890abcdef0"

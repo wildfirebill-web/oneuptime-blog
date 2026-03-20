@@ -14,6 +14,7 @@ Standard memory pages on x86_64 are 4KB. Huge pages (2MB or 1GB) reduce the numb
 
 ```bash
 # View current huge page allocation
+
 cat /proc/meminfo | grep -i huge
 
 # Key values:

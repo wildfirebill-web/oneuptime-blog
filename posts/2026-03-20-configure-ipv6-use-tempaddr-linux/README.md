@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Privacy Extensions, use_tempaddr, sysctl
+Tags: IPv6, Linux, Privacy Extensions, Use_tempaddr, Sysctl
 
 Description: A detailed reference for the use_tempaddr sysctl parameter on Linux, explaining all values, interaction with addr_gen_mode, and how to configure IPv6 privacy extensions for different use cases.
 
@@ -12,6 +12,7 @@ Description: A detailed reference for the use_tempaddr sysctl parameter on Linux
 
 ```bash
 # Path in /proc filesystem
+
 /proc/sys/net/ipv6/conf/<interface>/use_tempaddr
 
 # sysctl name

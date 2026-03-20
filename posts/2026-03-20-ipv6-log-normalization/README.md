@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Log Normalization, SIEM, ECS, CEF, LEEF, Data Pipeline
+Tags: IPv6, Log Normalization, SIEM, ECS, CEF, LEEF, Data Pipelines
 
 Description: Normalize IPv6 addresses across different log formats and representations to enable consistent SIEM analysis, correlation, and threat detection.
 
@@ -84,6 +84,7 @@ def classify_ipv6(addr: str) -> str:
     return "global"
 
 # Test
+
 tests = [
     "2001:0db8:0000:0000:0000:0000:0000:0001",
     "[2001:db8::1]:443",
@@ -123,7 +124,7 @@ filter {
           prefix64 = IPAddr.new(normalized).mask(64).to_s
           event.set("[source][prefix64]", prefix64)
         rescue => e
-          # Not an IPv6 address — leave as-is
+          # Not an IPv6 address - leave as-is
         end
       '
     }
@@ -175,7 +176,7 @@ print(result)
 
 ```bash
 #!/bin/bash
-# test-normalization.sh — Validate IPv6 normalization output
+# test-normalization.sh - Validate IPv6 normalization output
 
 python3 << 'EOF'
 import ipaddress
@@ -216,7 +217,7 @@ EOF
 
 ## SIEM Platform: Normalized Field Mapping
 
-```
+```text
 # Mapping table: raw field → normalized ECS field
 
 Platform    Raw Field           ECS Field           Normalization
@@ -231,4 +232,4 @@ LEEF        src                 source.ip           ipaddress.ip_address()
 
 ## Conclusion
 
-IPv6 log normalization is a prerequisite for effective SIEM correlation. Without it, the same host appears under a dozen different string representations, breaking deduplication, rate counting, and lookup enrichment. The canonical form (RFC 5952 lowercase compressed) is produced by Python's `ipaddress.ip_address()`, Ruby's `IPAddr`, or JavaScript's `new URL()` with IPv6 address parsing. Build normalization into the ingestion pipeline (Logstash filter, Splunk `eval`, or Elastic ingest pipeline) so all downstream analysis works on consistent data. Always extract and store the /64 prefix alongside the full address — it enables meaningful aggregation in large IPv6 deployments.
+IPv6 log normalization is a prerequisite for effective SIEM correlation. Without it, the same host appears under a dozen different string representations, breaking deduplication, rate counting, and lookup enrichment. The canonical form (RFC 5952 lowercase compressed) is produced by Python's `ipaddress.ip_address()`, Ruby's `IPAddr`, or JavaScript's `new URL()` with IPv6 address parsing. Build normalization into the ingestion pipeline (Logstash filter, Splunk `eval`, or Elastic ingest pipeline) so all downstream analysis works on consistent data. Always extract and store the /64 prefix alongside the full address - it enables meaningful aggregation in large IPv6 deployments.

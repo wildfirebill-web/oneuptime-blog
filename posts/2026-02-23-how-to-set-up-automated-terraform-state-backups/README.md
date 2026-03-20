@@ -29,6 +29,7 @@ If you use AWS S3 as your backend, enabling versioning is the simplest form of a
 
 ```hcl
 # backend.tf - Configure S3 backend with versioning support
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

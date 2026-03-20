@@ -40,6 +40,7 @@ Use a Git-based onboarding flow where developers create a PR to register their a
 
 ```yaml
 # onboarding/applications.yaml
+
 # Developers add entries here via PR
 applications:
   - name: checkout-service

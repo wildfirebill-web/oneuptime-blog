@@ -72,6 +72,7 @@ The source-controller is the foundation of the toolkit. It is responsible for ac
 
 ```yaml
 # The source-controller is deployed as a Kubernetes Deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

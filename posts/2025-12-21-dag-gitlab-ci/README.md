@@ -197,6 +197,7 @@ deploy:
 
 ```yaml
 # API stream
+
 build_api:
   stage: build
   script: npm run build:api

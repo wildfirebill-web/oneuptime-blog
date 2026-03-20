@@ -18,6 +18,7 @@ Start at the mesh level. Check if tracing is actually configured:
 
 ```bash
 # Check the mesh configuration
+
 kubectl get configmap istio -n istio-system -o yaml | grep -A10 "enableTracing\|extensionProviders"
 
 # Check Telemetry resources

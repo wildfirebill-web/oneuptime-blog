@@ -66,6 +66,7 @@ RDS Proxy authenticates to your database using credentials stored in Secrets Man
 
 ```bash
 # Create a secret with your database credentials
+
 aws secretsmanager create-secret \
   --name my-aurora-proxy-credentials \
   --description "Credentials for RDS Proxy to Aurora" \

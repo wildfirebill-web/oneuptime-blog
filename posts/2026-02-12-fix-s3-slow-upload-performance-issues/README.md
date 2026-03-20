@@ -29,6 +29,7 @@ The AWS CLI's `s3 cp` command uses multipart by default for files over 8 MB:
 
 ```bash
 # Upload with multipart (default threshold is 8MB)
+
 aws s3 cp large-file.zip s3://my-bucket/large-file.zip
 
 # Customize the multipart settings for even better performance

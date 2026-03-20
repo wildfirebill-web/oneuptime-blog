@@ -63,6 +63,7 @@ resource = Resource.create({
 })
 
 # Tracing setup
+
 trace_provider = TracerProvider(resource=resource)
 trace_provider.add_span_processor(
     BatchSpanProcessor(

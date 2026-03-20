@@ -28,6 +28,7 @@ Check pod logs and events:
 
 ```bash
 # Check pod status
+
 kubectl get pod my-pod -n your-namespace
 
 # Get detailed events

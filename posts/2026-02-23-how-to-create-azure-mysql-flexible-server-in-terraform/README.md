@@ -16,6 +16,7 @@ This post walks through provisioning a MySQL Flexible Server with Terraform, cov
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -36,7 +37,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group and Networking
+Resource Group and Networking
 
 For production MySQL, you want the server inside a VNet using a delegated subnet.
 

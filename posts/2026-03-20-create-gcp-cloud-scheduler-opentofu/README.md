@@ -134,6 +134,7 @@ resource "google_service_account" "scheduler" {
 }
 
 # Allow scheduler to invoke Cloud Run
+
 resource "google_cloud_run_service_iam_member" "scheduler_invoker" {
   service  = google_cloud_run_service.worker.name
   location = google_cloud_run_service.worker.location

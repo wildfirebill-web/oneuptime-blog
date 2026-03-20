@@ -231,6 +231,7 @@ Prevent individual users from running excessively expensive queries.
 
 ```bash
 # Set a custom quota for a specific user (10 TB per day)
+
 # This is configured through the Cloud Console or API
 # Navigate to BigQuery > Admin > Quotas
 ```

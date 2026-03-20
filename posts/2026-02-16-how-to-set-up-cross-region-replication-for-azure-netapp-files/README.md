@@ -49,6 +49,7 @@ If you do not already have a NetApp account and capacity pool in the secondary r
 
 ```bash
 # Create a resource group in the secondary region
+
 az group create --name netapp-dr-rg --location westus2
 
 # Create a virtual network in the secondary region

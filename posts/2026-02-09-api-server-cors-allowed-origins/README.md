@@ -24,6 +24,7 @@ For clusters created with kubeadm, edit the API server manifest:
 
 ```bash
 # Edit the API server static pod manifest
+
 sudo nano /etc/kubernetes/manifests/kube-apiserver.yaml
 ```
 

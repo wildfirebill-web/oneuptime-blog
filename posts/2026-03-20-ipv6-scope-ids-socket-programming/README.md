@@ -22,7 +22,7 @@ IPv6 scope IDs are interface identifiers required when using link-local addresse
 
 ## Scope ID Representations
 
-```
+```text
 Text format:    fe80::1%eth0         (interface name)
 Text format:    fe80::1%2            (interface index)
 Numeric:        scope_id = 2         (in struct sockaddr_in6)
@@ -180,6 +180,7 @@ int bind_link_local_server(const char *addr_str, const char *interface, int port
 import socket
 
 # Connect to link-local with scope ID using %interface notation
+
 def connect_link_local(addr: str, interface: str, port: int):
     # Get interface index
     scope_id = socket.if_nametoindex(interface)

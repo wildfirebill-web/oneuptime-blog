@@ -310,6 +310,7 @@ Should you use one VirtualService with multiple hosts or separate VirtualService
 
 ```yaml
 # Option A: One VirtualService
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

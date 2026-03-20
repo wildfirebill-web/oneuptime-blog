@@ -31,6 +31,7 @@ You need:
 
 ```bash
 # Verify cluster access
+
 oc whoami
 oc version
 

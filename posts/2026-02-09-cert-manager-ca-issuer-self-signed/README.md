@@ -36,6 +36,7 @@ Start by creating a self-signed root certificate authority. First, generate the 
 
 ```bash
 # Generate private key for CA
+
 openssl genrsa -out ca.key 4096
 
 # Create self-signed root certificate (valid 10 years)

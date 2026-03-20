@@ -124,6 +124,7 @@ app.listen(8080);
 
 ```nginx
 # nginx.conf
+
 # Configure message size limits for WebSocket proxy
 
 http {

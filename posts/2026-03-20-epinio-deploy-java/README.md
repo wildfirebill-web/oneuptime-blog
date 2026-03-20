@@ -21,6 +21,7 @@ How to Deploy a Java Application with Epinio demonstrates how Epinio simplifies 
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

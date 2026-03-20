@@ -45,6 +45,7 @@ connection = pika.BlockingConnection(
 channel = connection.channel()
 
 # Set prefetch count to 1 - process one message at a time
+
 channel.basic_qos(prefetch_count=1)
 
 def callback(ch, method, properties, body):

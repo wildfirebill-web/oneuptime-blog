@@ -69,6 +69,7 @@ Alternatively, use Azure CLI for a scriptable, repeatable setup:
 
 ```bash
 # Create a resource group in the DR region
+
 az group create \
     --name rg-dr-centralus \
     --location centralus

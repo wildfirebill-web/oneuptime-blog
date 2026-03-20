@@ -25,6 +25,7 @@ metrics.set_meter_provider(provider)
 meter = metrics.get_meter("event.bus.monitoring")
 
 # Observable gauge for current queue depth
+
 # This gets polled periodically by the metric reader
 queue_depth_gauge = meter.create_observable_gauge(
     name="event_bus.queue.depth",

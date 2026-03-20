@@ -1,14 +1,14 @@
-# How to Configure the Local Backend in OpenTofu
+# How to Configure the Local Backend in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the local backend in OpenTofu to store state on the filesystem, and when it is appropriate to use it.
 
 ## Introduction
 
-The local backend is OpenTofu's default — state is stored as a file on the local filesystem. It requires no external services and is ideal for personal projects, learning, and single-developer scenarios. For team environments, a remote backend is preferred.
+The local backend is OpenTofu's default - state is stored as a file on the local filesystem. It requires no external services and is ideal for personal projects, learning, and single-developer scenarios. For team environments, a remote backend is preferred.
 
 ## Default Behavior
 
@@ -16,6 +16,7 @@ Without any backend configuration, OpenTofu uses local state:
 
 ```bash
 # After tofu apply, state is created here:
+
 ls -la terraform.tfstate
 ls -la terraform.tfstate.backup  # Backup of previous state
 ```
@@ -124,4 +125,4 @@ tofu apply -state=/tmp/test-state.tfstate
 
 ## Conclusion
 
-The local backend is simple and zero-configuration — perfect for individual use and learning. It stores state as `terraform.tfstate` in your project directory. Switch to a remote backend (S3, GCS, azurerm) as soon as you work in a team or automate deployments through CI/CD. Migration is straightforward using `tofu init -migrate-state`.
+The local backend is simple and zero-configuration - perfect for individual use and learning. It stores state as `terraform.tfstate` in your project directory. Switch to a remote backend (S3, GCS, azurerm) as soon as you work in a team or automate deployments through CI/CD. Migration is straightforward using `tofu init -migrate-state`.

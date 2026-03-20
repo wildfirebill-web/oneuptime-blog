@@ -75,6 +75,7 @@ Add Pundit to your Gemfile:
 # Gemfile
 
 # Pundit for authorization
+
 gem 'pundit'
 ```
 

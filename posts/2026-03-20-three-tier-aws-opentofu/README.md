@@ -14,6 +14,7 @@ The three-tier architecture separates presentation (load balancer + static asset
 
 ```hcl
 # main.tf - Three-tier VPC
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"

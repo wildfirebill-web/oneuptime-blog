@@ -22,7 +22,7 @@ sequenceDiagram
     R->>S2: RELAY-FORW (copy 2)
     S1->>R: RELAY-REPL (ADVERTISE)
     S2->>R: RELAY-REPL (ADVERTISE)
-    R->>C: ADVERTISE (from S1 — faster)
+    R->>C: ADVERTISE (from S1 - faster)
     R->>C: ADVERTISE (from S2)
     C->>R: REQUEST (for S1's offer)
     R->>S1: RELAY-FORW (REQUEST)
@@ -30,10 +30,11 @@ sequenceDiagram
     R->>C: REPLY
 ```
 
-## Linux (dhcrelay) — Multiple Servers
+## Linux (dhcrelay) - Multiple Servers
 
 ```bash
 # dhcrelay: specify multiple server addresses
+
 dhcrelay -6 \
     -l eth0 \
     -u eth1 \
@@ -41,21 +42,21 @@ dhcrelay -6 \
     2001:db8::dhcp2
 
 # ISC Kea relay (kea-dhcp-ddns proxy mode)
-# kea-dhcp6.conf — server-side; relay is typically dhcrelay
+# kea-dhcp6.conf - server-side; relay is typically dhcrelay
 ```
 
-## Cisco IOS — Multiple Servers
+## Cisco IOS - Multiple Servers
 
-```
+```text
 ! Forward to two DHCPv6 servers
 interface GigabitEthernet0/1
  ipv6 dhcp relay destination 2001:db8::dhcp1
  ipv6 dhcp relay destination 2001:db8::dhcp2
 ```
 
-## Juniper — Server Groups with Redundancy
+## Juniper - Server Groups with Redundancy
 
-```
+```text
 # Junos: server group with multiple servers
 set forwarding-options dhcp-relay v6 server-group PRIMARY-SERVERS 2001:db8::dhcp1
 set forwarding-options dhcp-relay v6 server-group PRIMARY-SERVERS 2001:db8::dhcp2
@@ -70,7 +71,7 @@ set forwarding-options dhcp-relay v6 group CLIENTS backup-server-group BACKUP-SE
 ## ISC Kea with HA (High Availability)
 
 ```json
-// kea-dhcp6.conf — Primary server with HA
+// kea-dhcp6.conf - Primary server with HA
 {
     "Dhcp6": {
         "hooks-libraries": [
@@ -104,9 +105,9 @@ set forwarding-options dhcp-relay v6 group CLIENTS backup-server-group BACKUP-SE
 }
 ```
 
-## MikroTik — Multiple Relay Targets
+## MikroTik - Multiple Relay Targets
 
-```
+```text
 # MikroTik does not support forwarding to multiple servers natively
 # Workaround: use primary and backup with scripting
 
@@ -156,4 +157,4 @@ dhclient -6 -v eth1 2>&1 | grep -E "bound|no DHCP"
 
 ## Conclusion
 
-DHCPv6 relay agents forward client messages to all configured servers simultaneously. Clients use the first ADVERTISE response that arrives. For true high availability, use ISC Kea HA mode (hot-standby) which synchronizes lease databases between two servers. When both servers are healthy, the primary handles all requests; on failure, the standby takes over automatically. The relay itself doesn't need changes — it continues forwarding to both addresses.
+DHCPv6 relay agents forward client messages to all configured servers simultaneously. Clients use the first ADVERTISE response that arrives. For true high availability, use ISC Kea HA mode (hot-standby) which synchronizes lease databases between two servers. When both servers are healthy, the primary handles all requests; on failure, the standby takes over automatically. The relay itself doesn't need changes - it continues forwarding to both addresses.

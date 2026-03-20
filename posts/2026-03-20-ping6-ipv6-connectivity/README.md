@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ping6, Connectivity Testing, Network Diagnostics, Linux, Troubleshooting
+Tags: IPv6, Ping6, Connectivity Testing, Network Diagnostics, Linux, Troubleshooting
 
 Description: Use ping6 (and ping -6) to test IPv6 connectivity, diagnose network reachability, and interpret ICMPv6 responses for IPv6 troubleshooting.
 
@@ -14,6 +14,7 @@ Description: Use ping6 (and ping -6) to test IPv6 connectivity, diagnose network
 
 ```bash
 # Ping an IPv6 address
+
 ping6 2001:db8::1
 
 # On modern Linux, use ping with -6 flag

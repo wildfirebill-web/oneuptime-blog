@@ -419,6 +419,7 @@ spec:
 
 ```bash
 # Watch cluster status
+
 kubectl get cluster postgres-restored -w
 
 # Check pods

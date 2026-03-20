@@ -16,6 +16,7 @@ Importing RDS instances requires importing the instance itself plus associated r
 DB_ID="my-app-database"
 
 # Get full instance details
+
 aws rds describe-db-instances \
   --db-instance-identifier $DB_ID \
   --query 'DBInstances[0]' \
@@ -142,4 +143,4 @@ import {
 
 ## Conclusion
 
-RDS import requires careful attention to the parameter group and option group configurations — mismatches here cause OpenTofu to plan a replacement. The `ignore_changes = [password]` lifecycle rule is important because RDS passwords can't be read back from the API, so OpenTofu will always show a diff without it. Always verify with `tofu plan` before applying any changes after import.
+RDS import requires careful attention to the parameter group and option group configurations - mismatches here cause OpenTofu to plan a replacement. The `ignore_changes = [password]` lifecycle rule is important because RDS passwords can't be read back from the API, so OpenTofu will always show a diff without it. Always verify with `tofu plan` before applying any changes after import.

@@ -161,6 +161,7 @@ Here is the equivalent implementation using Python and boto3.
 
 ```python
 # DynamoDB pagination with boto3
+
 # This module provides reusable pagination utilities
 
 import boto3

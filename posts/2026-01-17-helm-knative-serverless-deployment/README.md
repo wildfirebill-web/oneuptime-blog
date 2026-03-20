@@ -62,6 +62,7 @@ flowchart TB
 
 ```bash
 # Check Kubernetes version (1.26+)
+
 kubectl version
 
 # Add Knative Helm repository

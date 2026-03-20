@@ -29,6 +29,7 @@ Build a custom explainer using SHAP:
 
 ```python
 # shap_explainer.py
+
 import kserve
 import logging
 from typing import Dict

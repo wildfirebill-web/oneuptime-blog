@@ -16,6 +16,7 @@ Terraform is an excellent tool for managing ephemeral environments because it ca
 
 ```hcl
 # modules/ephemeral-env/main.tf
+
 # Complete ephemeral environment module
 
 variable "branch_name" {

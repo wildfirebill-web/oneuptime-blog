@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, contains, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Contains, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the contains function in OpenTofu to check whether a list or set includes a specific value.
 
@@ -73,6 +73,7 @@ variable "enabled_features" {
 }
 
 # Only create CloudWatch alarms if monitoring is enabled
+
 resource "aws_cloudwatch_metric_alarm" "cpu" {
   count = contains(var.enabled_features, "monitoring") ? 1 : 0
 

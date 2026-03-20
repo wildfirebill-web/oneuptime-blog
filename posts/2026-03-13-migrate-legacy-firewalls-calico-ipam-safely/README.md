@@ -29,6 +29,7 @@ Catalog all firewall rules that reference Kubernetes pod or node IP ranges.
 
 ```bash
 # Export current IP pool configuration to understand pod CIDR ranges
+
 calicoctl get ippool -o yaml
 
 # List all nodes and their IPs to understand what's hitting the firewall

@@ -16,6 +16,7 @@ Importing S3 buckets is more complex than it appears because bucket configuratio
 BUCKET="my-existing-bucket"
 
 # Check versioning status
+
 aws s3api get-bucket-versioning --bucket $BUCKET
 
 # Check encryption

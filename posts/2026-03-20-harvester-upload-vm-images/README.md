@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, VM Images, Upload
+Tags: Harvester, Kubernetes, Virtualization, HCI, VM Image, Upload
 
 Description: Step-by-step instructions for uploading virtual machine disk images to Harvester from local files, URLs, and automated pipelines.
 
 ## Introduction
 
-Uploading VM images to Harvester is a critical first step before creating virtual machines. Harvester supports importing images from remote URLs and uploading local files — including QCOW2, RAW, and ISO formats. This guide covers all upload methods including the UI, API, and automation-friendly scripts.
+Uploading VM images to Harvester is a critical first step before creating virtual machines. Harvester supports importing images from remote URLs and uploading local files - including QCOW2, RAW, and ISO formats. This guide covers all upload methods including the UI, API, and automation-friendly scripts.
 
 ## Supported Image Formats
 
@@ -27,14 +27,14 @@ Uploading VM images to Harvester is a critical first step before creating virtua
 3. Click **Create**
 4. Fill in the form:
 
-```
+```text
 Name:         ubuntu-22-04-lts
 Namespace:    default
 Source Type:  Download
 URL:          https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 ```
 
-5. Click **Create** — Harvester will begin downloading and importing the image
+5. Click **Create** - Harvester will begin downloading and importing the image
 
 ### Uploading from a Local File
 
@@ -42,14 +42,14 @@ URL:          https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudim
 2. Switch the source to **Upload**
 3. Fill in:
 
-```
+```sql
 Name:         windows-server-2022
 Namespace:    default
 Source Type:  Upload
 File:         [Choose File] → Select your .qcow2 or .iso
 ```
 
-4. Click **Create** — the file upload begins immediately
+4. Click **Create** - the file upload begins immediately
 
 ## Method 2: Upload via kubectl
 
@@ -57,6 +57,7 @@ File:         [Choose File] → Select your .qcow2 or .iso
 
 ```yaml
 # image-from-url.yaml
+
 apiVersion: harvesterhci.io/v1beta1
 kind: VirtualMachineImage
 metadata:
@@ -249,4 +250,4 @@ kubectl run test-curl --image=curlimages/curl --rm -it -- \
 
 ## Conclusion
 
-Harvester provides flexible options for importing VM images — from simple URL downloads to scripted API uploads for large files or automation pipelines. Building a curated library of tested, labeled images sets a strong foundation for consistent VM deployments. Combine batch import scripts with a regular update schedule to keep your image library current with the latest OS patches and security updates.
+Harvester provides flexible options for importing VM images - from simple URL downloads to scripted API uploads for large files or automation pipelines. Building a curated library of tested, labeled images sets a strong foundation for consistent VM deployments. Combine batch import scripts with a regular update schedule to keep your image library current with the latest OS patches and security updates.

@@ -35,6 +35,7 @@ Python's introspection capabilities make it straightforward to capture code attr
 
 ```python
 # code_attrs.py
+
 # Helper functions to capture source location information
 # and attach it to OpenTelemetry spans automatically.
 

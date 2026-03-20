@@ -23,6 +23,7 @@ Plausible requires a secret key base. Generate one:
 
 ```bash
 # Generate a 64-character secret key
+
 openssl rand -base64 64 | tr -d '\n'
 ```
 
@@ -34,7 +35,7 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor**:
 version: "3.8"
 
 services:
-  # PostgreSQL — Plausible's primary database
+  # PostgreSQL - Plausible's primary database
   plausible_db:
     image: postgres:16-alpine
     container_name: plausible-db
@@ -53,7 +54,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # ClickHouse — Plausible's analytics event store
+  # ClickHouse - Plausible's analytics event store
   plausible_events_db:
     image: clickhouse/clickhouse-server:24.3.3.102-alpine
     container_name: plausible-events-db
@@ -118,7 +119,7 @@ networks:
 
 1. Name the stack `plausible`
 2. Click **Deploy the stack**
-3. Watch the logs — the first startup takes 30-60 seconds for database migrations
+3. Watch the logs - the first startup takes 30-60 seconds for database migrations
 
 ## Step 4: Create Your Admin Account
 
@@ -131,7 +132,7 @@ docker exec -it plausible /bin/sh
 exit
 ```
 
-Or visit `http://your-host:8000` — Plausible will prompt you to create the first user on the registration page.
+Or visit `http://your-host:8000` - Plausible will prompt you to create the first user on the registration page.
 
 ## Step 5: Add Your Website
 
@@ -195,4 +196,4 @@ environment:
 
 ## Conclusion
 
-Plausible Analytics running via Portainer gives you a privacy-respecting, cookie-free analytics platform that you fully control. With ClickHouse as the event store, it scales to billions of events while keeping resource usage minimal — and Portainer makes ongoing management, updates, and log inspection straightforward.
+Plausible Analytics running via Portainer gives you a privacy-respecting, cookie-free analytics platform that you fully control. With ClickHouse as the event store, it scales to billions of events while keeping resource usage minimal - and Portainer makes ongoing management, updates, and log inspection straightforward.

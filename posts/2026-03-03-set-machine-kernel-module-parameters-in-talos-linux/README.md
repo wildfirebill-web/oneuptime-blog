@@ -18,6 +18,7 @@ Kernel modules are configured under `machine.kernel` in the Talos machine config
 
 ```yaml
 # Load kernel modules with parameters
+
 machine:
   kernel:
     modules:

@@ -20,6 +20,7 @@ Before configuring container networks, determine the MTU of your host interface.
 
 ```bash
 # Check the MTU of the host's primary interface
+
 ip link show eth0 | grep mtu
 
 # Typical output: mtu 1500 qdisc fq_codel state UP

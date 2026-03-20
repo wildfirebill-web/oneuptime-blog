@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Reverse Proxy, Query String, URL Parameters, Configuration, Proxy_pass
+Tags: Nginx, Reverse Proxy, Query String, URL Parameters, Configuration, Proxy_pass
 
 Description: Learn how to properly forward query string parameters through Nginx proxy_pass directive, including common pitfalls and solutions for various URL rewriting scenarios.
 
@@ -62,6 +62,7 @@ When using `rewrite` before `proxy_pass`, query strings can be lost:
 
 ```nginx
 # WRONG - Query string is lost
+
 location /api/ {
     rewrite ^/api/(.*)$ /v2/$1 break;
     proxy_pass http://backend;

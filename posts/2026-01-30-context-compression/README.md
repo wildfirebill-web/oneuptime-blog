@@ -1103,6 +1103,7 @@ Here is how to use the complete compression pipeline in practice.
 
 ```python
 # Initialize the pipeline
+
 pipeline = ContextCompressionPipeline(
     total_budget=4000,
     relevance_threshold=0.25,

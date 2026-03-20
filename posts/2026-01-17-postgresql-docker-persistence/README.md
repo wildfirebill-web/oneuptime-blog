@@ -16,6 +16,7 @@ The simplest way to run PostgreSQL:
 
 ```bash
 # Run PostgreSQL with a named volume for persistence
+
 docker run -d \
   --name postgres-dev \
   -e POSTGRES_USER=devuser \
@@ -322,7 +323,7 @@ docker start postgres
 
 ## Production Considerations
 
-### Resource Limits
+Resource Limits
 
 ```yaml
 services:

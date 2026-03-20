@@ -89,6 +89,7 @@ backend http_back
     server backup1 10.0.2.10:8080 check backup
 
 # Circuit breaker with connection limits
+
 backend api_back
     balance roundrobin
 

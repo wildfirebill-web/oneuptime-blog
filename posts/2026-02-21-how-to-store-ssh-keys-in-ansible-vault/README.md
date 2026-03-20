@@ -31,6 +31,7 @@ The simplest approach is to encrypt the key file itself:
 
 ```bash
 # Generate a new SSH key pair for a service account
+
 ssh-keygen -t ed25519 -f /tmp/deploy_key -N "" -C "deploy@myapp"
 
 # Encrypt the private key file with Ansible Vault

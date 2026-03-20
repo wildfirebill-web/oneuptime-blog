@@ -75,6 +75,7 @@ ArgoCD evaluates Deployments by checking replica status:
 
 ```bash
 # Check what ArgoCD sees for Deployment health
+
 kubectl get deployment my-app -o json | jq '{
   replicas: .spec.replicas,
   updatedReplicas: .status.updatedReplicas,
@@ -233,7 +234,7 @@ Namespaces are always **Healthy** unless:
 
 ConfigMaps and Secrets do not have health checks. They are always considered **Healthy** if they exist. There is no way for ArgoCD to know if the data inside them is correct.
 
-## Resources Without Built-in Health Checks
+Resources Without Built-in Health Checks
 
 For resources that ArgoCD does not have a built-in health check for, it defaults to **Healthy** if the resource exists. This includes:
 

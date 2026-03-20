@@ -16,6 +16,7 @@ The `assert` module is the simplest validation tool. It checks conditions and fa
 
 ```yaml
 # playbook-basic-assert.yml
+
 # Validates basic properties of input variables before proceeding
 - name: Basic data validation
   hosts: localhost

@@ -28,6 +28,7 @@ If not already installed, add the image automation components to your Flux insta
 
 ```yaml
 # flux-system/gotk-components.yaml (or bootstrap with these flags)
+
 # flux bootstrap github \
 #   --components-extra=image-reflector-controller,image-automation-controller \
 #   --owner=myorg \

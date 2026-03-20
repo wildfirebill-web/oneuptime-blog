@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="myapp-rg"
 CLUSTER_NAME="myapp-aks"
 LOCATION="eastus"

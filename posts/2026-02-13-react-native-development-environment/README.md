@@ -43,6 +43,7 @@ If you do not have Homebrew already, install it first. Most of the tools below a
 
 ```bash
 # Install Homebrew package manager for macOS
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 

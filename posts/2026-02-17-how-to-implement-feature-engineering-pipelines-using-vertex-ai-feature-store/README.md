@@ -27,6 +27,7 @@ Create the Feature Store instance and define your feature groups.
 
 ```python
 # setup_feature_store.py
+
 from google.cloud import aiplatform
 from google.cloud.aiplatform import FeatureGroup, FeatureOnlineStore
 

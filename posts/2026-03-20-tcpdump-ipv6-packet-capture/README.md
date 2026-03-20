@@ -14,6 +14,7 @@ Description: Capture and analyze IPv6 packets using tcpdump with BPF filters, de
 
 ```bash
 # Capture all IPv6 traffic on eth0
+
 tcpdump -i eth0 ip6
 
 # Show all IPv6 with verbose output
@@ -122,7 +123,7 @@ tcpdump -i eth0 -n -c 1000 -w /tmp/ipv6-sample.pcap ip6
 
 Example tcpdump output for NDP:
 
-```
+```text
 # Neighbor Solicitation
 14:23:01.123456 IP6 fe80::1 > ff02::1:ff00:1: ICMP6, neighbor solicitation,
    who has 2001:db8::1, length 32

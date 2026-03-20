@@ -31,6 +31,7 @@ The simplest form runs pidstat once per second and shows CPU stats for all runni
 
 ```bash
 # Show CPU usage for all processes, refresh every 1 second
+
 pidstat 1
 ```
 

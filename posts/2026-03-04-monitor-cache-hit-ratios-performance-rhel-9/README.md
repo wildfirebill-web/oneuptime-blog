@@ -36,6 +36,7 @@ graph TD
 
 ```bash
 # Show cache stats for a cached LV
+
 lvs -o lv_name,cache_read_hits,cache_read_misses,cache_write_hits,cache_write_misses vg_data/lv_data
 ```
 

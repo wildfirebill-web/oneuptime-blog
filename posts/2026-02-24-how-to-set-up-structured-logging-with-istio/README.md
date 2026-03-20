@@ -209,6 +209,7 @@ For Elasticsearch/Fluentd/Kibana (EFK), Fluentd can parse JSON logs automaticall
 
 ```yaml
 # Fluentd config snippet
+
 <source>
   @type tail
   path /var/log/containers/*istio-proxy*.log

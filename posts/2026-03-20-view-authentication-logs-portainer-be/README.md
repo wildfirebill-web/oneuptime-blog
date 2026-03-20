@@ -1,4 +1,4 @@
-# How to View Authentication Logs in Portainer Business Edition
+# How to Access Authentication Logs in Portainer Business Edition
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -44,6 +44,7 @@ In the Portainer UI:
 
 ```bash
 # Get all authentication logs
+
 curl -s "https://portainer.mycompany.com/api/auth/logs" \
   -H "Authorization: Bearer ${ADMIN_TOKEN}" | \
   jq '[.[] | {

@@ -18,6 +18,7 @@ Start by querying your trace backend for slow requests. You want to find a repre
 
 ```text
 # Tempo/Grafana TraceQL - find traces between 3s and 6s
+
 {
   resource.service.name = "order-service"
   && name = "HTTP POST /api/v1/orders"

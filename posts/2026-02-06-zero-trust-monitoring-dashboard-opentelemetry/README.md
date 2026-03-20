@@ -27,6 +27,7 @@ Istio 1.20 and later supports exporting telemetry in OpenTelemetry format. Confi
 
 ```yaml
 # istio-mesh-config.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

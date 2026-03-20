@@ -21,6 +21,7 @@ Deploy KubeVirt operators and custom resource definitions to enable VM managemen
 KUBEVIRT_VERSION="v1.1.1"
 
 # Check if nodes support hardware virtualization
+
 kubectl get nodes -o json | jq '.items[].status.capacity' | grep -i "devices.kubevirt.io/kvm"
 
 # Install KubeVirt operator

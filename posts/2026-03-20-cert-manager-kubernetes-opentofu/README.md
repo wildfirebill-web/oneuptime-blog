@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, cert-manager, TLS, OpenTofu, Helm, Certificates, Let's Encrypt
+Tags: Kubernetes, Cert-Manager, TLS, OpenTofu, Helm, Certificates, Let's Encrypt
 
 Description: Learn how to deploy cert-manager on Kubernetes using OpenTofu and Helm to automate TLS certificate provisioning and renewal from Let's Encrypt and other issuers.
 
@@ -14,6 +14,7 @@ cert-manager automates TLS certificate management in Kubernetes. It integrates w
 
 ```hcl
 # main.tf - Deploy cert-manager via Helm
+
 terraform {
   required_providers {
     helm = {
@@ -235,4 +236,4 @@ resource "kubernetes_ingress_v1" "app" {
 
 ## Summary
 
-cert-manager deployed with OpenTofu automates TLS certificate lifecycle management. Combining HTTP-01 challenges for single-domain certificates and DNS-01 challenges for wildcard certificates covers all use cases. The annotated Ingress approach is the simplest path — cert-manager detects the annotation and provisions certificates automatically without requiring a separate Certificate resource.
+cert-manager deployed with OpenTofu automates TLS certificate lifecycle management. Combining HTTP-01 challenges for single-domain certificates and DNS-01 challenges for wildcard certificates covers all use cases. The annotated Ingress approach is the simplest path - cert-manager detects the annotation and provisions certificates automatically without requiring a separate Certificate resource.

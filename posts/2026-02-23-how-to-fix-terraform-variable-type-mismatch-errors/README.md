@@ -64,6 +64,7 @@ variable "port" {
 }
 
 # In terraform.tfvars
+
 port = "8080"  # This is a string, but Terraform will auto-convert it
 
 # However, this fails in some contexts

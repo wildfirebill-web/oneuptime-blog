@@ -34,6 +34,7 @@ This guide covers creating, configuring, and managing namespace-scoped Admission
 
 ```yaml
 # no-privileged-pods-policy.yaml
+
 apiVersion: policies.kubewarden.io/v1
 kind: AdmissionPolicy
 metadata:

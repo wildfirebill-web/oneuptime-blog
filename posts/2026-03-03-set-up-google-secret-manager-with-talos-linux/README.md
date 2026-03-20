@@ -27,6 +27,7 @@ Start by enabling the API and creating some test secrets.
 
 ```bash
 # Enable the Secret Manager API
+
 gcloud services enable secretmanager.googleapis.com
 
 # Create secrets

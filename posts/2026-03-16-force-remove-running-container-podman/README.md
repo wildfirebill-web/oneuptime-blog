@@ -18,6 +18,7 @@ Sometimes you need to remove a container immediately without going through the g
 
 ```bash
 # Start a long-running container
+
 podman run -d --name stubborn-app docker.io/library/alpine:latest sleep 3600
 
 # Force remove it (kills and removes in one step)

@@ -1,4 +1,4 @@
-# How to Create Your First OpenTofu Module
+# How to Create Your First OpenTofu Module - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -13,10 +13,10 @@ An OpenTofu module is a collection of `.tf` files in a directory that define inf
 ## What Makes a Module
 
 A module is simply a directory containing:
-- `main.tf` — resource definitions
-- `variables.tf` — input variable declarations
-- `outputs.tf` — output value declarations
-- `README.md` — documentation (recommended)
+- `main.tf` - resource definitions
+- `variables.tf` - input variable declarations
+- `outputs.tf` - output value declarations
+- `README.md` - documentation (recommended)
 
 ## Step-by-Step: Creating a Simple EC2 Module
 
@@ -162,11 +162,11 @@ module "<label>" {
 
 ## Key Benefits of Modules
 
-1. **DRY** — Define once, use many times
-2. **Encapsulation** — Hide complexity, expose clean interfaces
-3. **Versioning** — Pin module versions for stability
-4. **Testing** — Test modules independently
-5. **Composition** — Combine modules to build complex systems
+1. **DRY** - Define once, use many times
+2. **Encapsulation** - Hide complexity, expose clean interfaces
+3. **Versioning** - Pin module versions for stability
+4. **Testing** - Test modules independently
+5. **Composition** - Combine modules to build complex systems
 
 ## Conclusion
 

@@ -87,6 +87,7 @@ The Pod Security Admission controller is enabled by default in Kubernetes 1.23 a
 
 ```yaml
 # kube-apiserver configuration
+
 # File: /etc/kubernetes/manifests/kube-apiserver.yaml
 apiVersion: v1
 kind: Pod

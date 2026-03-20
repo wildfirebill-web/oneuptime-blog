@@ -115,6 +115,7 @@ MariaDB uses the same protocol and port as MySQL, so any MySQL client works.
 
 ```bash
 # Connect with the mariadb client
+
 mariadb -h my-app-mariadb.abc123.us-east-1.rds.amazonaws.com \
   -u admin -p \
   --port 3306

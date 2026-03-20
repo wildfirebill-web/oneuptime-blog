@@ -34,6 +34,7 @@ REM Multiple entries with same IP but different MAC = conflict
 **Linux/macOS:**
 ```bash
 # Check for conflict using arping
+
 sudo arping -c 5 192.168.1.50 -I wlan0
 
 # If multiple different MAC addresses respond, there's a conflict

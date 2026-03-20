@@ -32,6 +32,7 @@ Before starting, you need:
 
 ```bash
 # Verify your cluster is healthy
+
 kubectl get nodes
 
 # Confirm your ingress controller is running

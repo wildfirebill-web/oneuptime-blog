@@ -20,6 +20,7 @@ The following gcloud command creates a log sink that exports all logs to a BigQu
 
 ```bash
 # Create a log sink that exports logs to a BigQuery dataset
+
 gcloud logging sinks create log-to-bq \
   bigquery.googleapis.com/projects/my-project/datasets/application_logs \
   --log-filter='resource.type="k8s_container"' \

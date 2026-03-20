@@ -35,6 +35,7 @@ Assign your Namespace resources a lower sync wave number than the resources that
 
 ```yaml
 # namespace.yaml - Wave -1: Create namespace first
+
 apiVersion: v1
 kind: Namespace
 metadata:

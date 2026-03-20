@@ -31,47 +31,47 @@ This guide covers generating, installing, and using cilium-bugtool completions i
 
 Fish completions are stored in \`~/.config/fish/completions/\`:
 
-\`\`\`bash
+```bash
 ## Generate and install fish completions
 cilium-bugtool completion fish > ~/.config/fish/completions/cilium-bugtool.fish
 
 ## Verify the file was created
 ls -la ~/.config/fish/completions/cilium-bugtool.fish
-\`\`\`
+```
 
 Fish automatically picks up new completion files without restarting. Test immediately:
 
-\`\`\`fish
+```fish
 ## In fish shell, test completion
 cilium-bugtool <TAB>
-\`\`\`
+```
 
 ### System-Wide Installation
 
-\`\`\`bash
+```bash
 ## Install for all users
 cilium-bugtool completion fish > /usr/share/fish/vendor_completions.d/cilium-bugtool.fish
-\`\`\`
+```
 
 ### Generating from a Cilium Pod
 
-\`\`\`bash
+```bash
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium   -o jsonpath='{.items[0].metadata.name}')
 
 kubectl -n kube-system exec "$CILIUM_POD" -c cilium-agent --   cilium-bugtool completion fish > ~/.config/fish/completions/cilium-bugtool.fish
-\`\`\`
+```
 
 ### Understanding Fish Completion Format
 
 The generated file contains \`complete\` commands:
 
-\`\`\`fish
+```fish
 ## Example of generated fish completion entries
 complete -c cilium-bugtool -n '__fish_use_subcommand' -a completion -d 'Generate shell completion'
 complete -c cilium-bugtool -n '__fish_use_subcommand' -a help -d 'Help about any command'
 complete -c cilium-bugtool -l archive-type -d 'Archive type for output'
 complete -c cilium-bugtool -l commands -d 'Specific commands to run'
-\`\`\`
+```
 
 
 
@@ -80,6 +80,7 @@ complete -c cilium-bugtool -l commands -d 'Specific commands to run'
 
 ```bash
 # Verify file exists
+
 ls -la ~/.config/fish/completions/cilium-bugtool.fish
 
 # Test completions in fish

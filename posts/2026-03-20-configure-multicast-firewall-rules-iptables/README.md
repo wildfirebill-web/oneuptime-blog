@@ -8,7 +8,7 @@ Description: Write iptables rules to allow or restrict IPv4 multicast traffic, p
 
 ## Introduction
 
-By default, Linux iptables policies can block multicast traffic if set to DROP. Configuring explicit rules ensures legitimate multicast — such as mDNS, streaming, or routing protocols — flows correctly while unwanted multicast is filtered.
+By default, Linux iptables policies can block multicast traffic if set to DROP. Configuring explicit rules ensures legitimate multicast - such as mDNS, streaming, or routing protocols - flows correctly while unwanted multicast is filtered.
 
 ## Allow IGMP Control Messages
 
@@ -16,6 +16,7 @@ IGMP (IP protocol 2) must be permitted for group membership to work:
 
 ```bash
 # Allow incoming IGMP from any host on all interfaces
+
 sudo iptables -A INPUT -p igmp -j ACCEPT
 
 # Allow outgoing IGMP membership reports

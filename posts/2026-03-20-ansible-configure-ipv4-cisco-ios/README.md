@@ -12,6 +12,7 @@ Description: Learn how to write an Ansible playbook using the cisco.ios collecti
 pip install ansible
 
 # Install the Cisco IOS collection
+
 ansible-galaxy collection install cisco.ios
 
 # Verify

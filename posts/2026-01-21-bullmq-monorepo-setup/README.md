@@ -1054,6 +1054,7 @@ Run services in development:
 
 ```bash
 # Terminal 1: Start API
+
 pnpm --filter @monorepo/api dev
 
 # Terminal 2: Start email worker

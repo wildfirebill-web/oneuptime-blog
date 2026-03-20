@@ -20,6 +20,7 @@ Download the official Jenkins LTS image.
 
 ```bash
 # Pull the Jenkins LTS image
+
 podman pull docker.io/jenkins/jenkins:lts
 
 # Verify the image

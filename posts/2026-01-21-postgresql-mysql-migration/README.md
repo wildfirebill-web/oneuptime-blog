@@ -27,6 +27,7 @@ Migrating from MySQL to PostgreSQL requires careful planning for schema and data
 
 ```bash
 # Install pgloader
+
 sudo apt install pgloader
 
 # Migrate database

@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu's check blocks to define post-deployment 
 
 ## Introduction
 
-OpenTofu's `check` block (introduced in 1.5) lets you define custom assertions about your infrastructure that are evaluated during every plan and apply. Unlike `validation` blocks (which check input variables), `check` blocks verify the actual state of deployed resources — making them a powerful drift detection tool.
+OpenTofu's `check` block (introduced in 1.5) lets you define custom assertions about your infrastructure that are evaluated during every plan and apply. Unlike `validation` blocks (which check input variables), `check` blocks verify the actual state of deployed resources - making them a powerful drift detection tool.
 
 ## Basic Check Block Syntax
 
 ```hcl
 # A check block defines an assertion about deployed infrastructure
+
 check "web_instance_running" {
   # Optional: scope the check to specific data
   data "aws_instance" "web_check" {
@@ -56,7 +57,7 @@ check "s3_encryption_enabled" {
 
   assert {
     condition     = data.aws_s3_bucket.app_check.bucket != ""
-    error_message = "S3 bucket check failed — bucket may have been deleted externally."
+    error_message = "S3 bucket check failed - bucket may have been deleted externally."
   }
 }
 
@@ -83,7 +84,7 @@ check "rds_instance_available" {
 
   assert {
     condition     = data.aws_db_instance.main_check.db_instance_status == "available"
-    error_message = "RDS instance ${aws_db_instance.main.identifier} is not in available state — current: ${data.aws_db_instance.main_check.db_instance_status}"
+    error_message = "RDS instance ${aws_db_instance.main.identifier} is not in available state - current: ${data.aws_db_instance.main_check.db_instance_status}"
   }
 }
 ```
@@ -119,7 +120,7 @@ tofu plan 2>&1 | grep -A 3 "Warning:"
 # To treat check warnings as errors in CI:
 tofu plan 2>&1 | tee plan.log
 if grep -q "check block assertions failed" plan.log; then
-  echo "ERROR: Check assertions failed — drift detected!"
+  echo "ERROR: Check assertions failed - drift detected!"
   exit 1
 fi
 ```

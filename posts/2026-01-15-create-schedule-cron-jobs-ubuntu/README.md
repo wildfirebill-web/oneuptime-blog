@@ -50,6 +50,7 @@ Each cron job follows this format:
 
 ```bash
 # List current user's cron jobs
+
 crontab -l
 
 # View another user's crontab (requires root)

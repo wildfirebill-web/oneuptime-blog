@@ -18,6 +18,7 @@ Before you start copying data, take stock of what you are dealing with:
 
 ```bash
 # On the source NFS server, check total data size
+
 du -sh /exports/data
 
 # Count total files and directories

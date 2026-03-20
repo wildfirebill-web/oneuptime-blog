@@ -6,7 +6,7 @@ Tags: iptables, SSH, Brute Force, Security, Linux, Rate Limiting
 
 Description: Use iptables rate limiting with the hashlimit and recent modules to restrict SSH connection attempts per IP address, blocking brute force attacks without requiring Fail2Ban.
 
-SSH brute force attacks constantly probe for weak passwords. iptables rate limiting stops them at the network level — before they consume CPU resources or fill auth logs — without the overhead of log-parsing tools.
+SSH brute force attacks constantly probe for weak passwords. iptables rate limiting stops them at the network level - before they consume CPU resources or fill auth logs - without the overhead of log-parsing tools.
 
 ## Method 1: Rate Limit with hashlimit (Recommended)
 
@@ -14,6 +14,7 @@ The `hashlimit` module limits connections per source IP:
 
 ```bash
 # Allow SSH connections at max 3 per minute per source IP
+
 sudo iptables -A INPUT -p tcp --dport 22 \
   -m state --state NEW \
   -m hashlimit \
@@ -55,7 +56,7 @@ sudo iptables -A INPUT -p tcp --dport 22 \
 
 ## Method 3: Simple limit Module (Global Rate)
 
-A simpler but less precise approach — limits connections globally, not per IP:
+A simpler but less precise approach - limits connections globally, not per IP:
 
 ```bash
 # Allow 4 new SSH connections per minute globally

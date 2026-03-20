@@ -40,6 +40,7 @@ sequenceDiagram
 
 ```bash
 # Get last save information
+
 redis-cli INFO persistence
 
 # Key fields:

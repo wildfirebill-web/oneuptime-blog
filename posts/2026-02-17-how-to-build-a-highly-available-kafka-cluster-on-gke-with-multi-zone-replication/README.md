@@ -18,6 +18,7 @@ Start with a multi-zone GKE cluster that spans three availability zones. This is
 
 ```bash
 # Create a regional GKE cluster spanning three zones
+
 gcloud container clusters create kafka-cluster \
   --region=us-central1 \
   --num-nodes=3 \

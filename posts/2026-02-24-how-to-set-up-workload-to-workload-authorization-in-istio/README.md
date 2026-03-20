@@ -38,6 +38,7 @@ Before setting up workload authorization, make sure:
 
 ```bash
 # Check sidecar injection
+
 kubectl get namespace -L istio-injection
 
 # Verify mTLS status

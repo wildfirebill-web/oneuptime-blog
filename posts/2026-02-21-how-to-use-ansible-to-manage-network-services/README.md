@@ -57,6 +57,7 @@ The NetworkManager configuration template:
 
 ```ini
 # /etc/NetworkManager/NetworkManager.conf
+
 [main]
 plugins=ifupdown,keyfile
 dns={{ nm_dns_plugin | default('default') }}

@@ -117,6 +117,7 @@ During canary rollouts, people often set up percentage-based routing and forget 
 
 ```yaml
 # BAD: What happens to the other 90%?
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

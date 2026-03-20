@@ -14,6 +14,7 @@ A kernel panic with "Out of memory" means the system exhausted all available mem
 
 ```bash
 # After rebooting, check the previous boot's kernel log
+
 sudo journalctl -k -b -1 | grep -i "out of memory\|oom\|panic"
 
 # Check if the OOM killer was invoked before the panic

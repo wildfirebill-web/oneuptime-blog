@@ -22,6 +22,7 @@ A here document starts with `<<` followed by a delimiter, includes your content,
 #!/bin/bash
 
 # Basic heredoc syntax
+
 cat <<EOF
 This is line 1
 This is line 2

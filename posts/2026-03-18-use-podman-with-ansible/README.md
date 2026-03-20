@@ -32,6 +32,7 @@ Ensure Podman is installed on all target hosts. You can use Ansible itself for t
 
 ```yaml
 # install-podman.yml
+
 ---
 - name: Install Podman on target hosts
   hosts: all

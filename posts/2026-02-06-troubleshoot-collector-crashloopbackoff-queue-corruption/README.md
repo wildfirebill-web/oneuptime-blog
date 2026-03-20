@@ -42,6 +42,7 @@ Check the persistent volume:
 
 ```bash
 # Exec into a debug container that mounts the same PVC
+
 kubectl run debug --image=busybox --restart=Never \
   --overrides='{"spec":{"volumes":[{"name":"queue","persistentVolumeClaim":{"claimName":"otel-collector-queue"}}],"containers":[{"name":"debug","image":"busybox","command":["sh"],"stdin":true,"tty":true,"volumeMounts":[{"name":"queue","mountPath":"/queue"}]}]}}'
 

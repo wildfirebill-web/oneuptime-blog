@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS, Workspaces
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS, Workspaces
 
 Description: Learn how to configure the workspace_key_prefix option in the OpenTofu S3 backend to organize workspace-specific state files in a custom directory structure.
 
@@ -14,7 +14,7 @@ When using workspaces with the S3 backend, OpenTofu stores workspace state files
 
 Without configuration, OpenTofu uses `env:` as the workspace key prefix:
 
-```
+```text
 s3://my-tofu-state/
 ├── production/terraform.tfstate         (default workspace)
 └── env:/
@@ -37,7 +37,7 @@ terraform {
 
 This results in:
 
-```
+```text
 s3://my-tofu-state/
 ├── terraform.tfstate                          (default workspace)
 └── workspaces/
@@ -62,7 +62,7 @@ terraform {
 
 Workspaces and state paths:
 
-```
+```text
 s3://acme-corp-terraform-state/
 ├── infrastructure/terraform.tfstate              (default = production)
 └── environments/
@@ -76,6 +76,7 @@ Each application uses a different key but shares the workspace prefix convention
 
 ```hcl
 # apps/api/backend.tf
+
 terraform {
   backend "s3" {
     bucket               = "acme-terraform-state"
@@ -98,7 +99,7 @@ terraform {
 
 Results in:
 
-```
+```text
 s3://acme-terraform-state/
 ├── apps/
 │   ├── api/terraform.tfstate

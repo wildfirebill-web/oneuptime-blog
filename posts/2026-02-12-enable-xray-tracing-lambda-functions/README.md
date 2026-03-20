@@ -46,6 +46,7 @@ This command enables active tracing on an existing Lambda function:
 
 ```bash
 # Enable active tracing
+
 aws lambda update-function-configuration \
   --function-name order-processor \
   --tracing-config Mode=Active

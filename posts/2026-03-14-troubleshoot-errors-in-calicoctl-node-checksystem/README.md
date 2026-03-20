@@ -31,6 +31,7 @@ Calico requires kernel 5.10+ for full functionality:
 
 ```bash
 # Check current kernel version
+
 uname -r
 
 # On RHEL/CentOS, upgrade the kernel

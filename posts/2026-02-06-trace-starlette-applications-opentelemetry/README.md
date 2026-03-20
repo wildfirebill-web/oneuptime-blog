@@ -23,6 +23,7 @@ Without proper tracing, debugging performance issues in async code becomes nearl
 
 ```bash
 # Install Starlette and OpenTelemetry packages
+
 pip install starlette uvicorn
 pip install opentelemetry-api opentelemetry-sdk
 pip install opentelemetry-instrumentation-starlette

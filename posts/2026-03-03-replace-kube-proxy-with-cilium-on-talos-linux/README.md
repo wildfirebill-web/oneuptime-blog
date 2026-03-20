@@ -32,6 +32,7 @@ The first step is telling Talos not to deploy kube-proxy. This is done through t
 
 ```yaml
 # disable-kube-proxy.yaml
+
 # Disable kube-proxy so Cilium can replace it
 cluster:
   proxy:

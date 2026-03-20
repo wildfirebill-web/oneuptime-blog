@@ -45,6 +45,7 @@ Start with the standard HA VPN setup:
 
 ```bash
 # Create Cloud Router
+
 gcloud compute routers create vpn-router \
   --network=your-vpc \
   --region=us-central1 \

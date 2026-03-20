@@ -22,6 +22,7 @@ Arch is a rolling release distribution. Always update before installing new pack
 
 ```bash
 # Full system upgrade
+
 sudo pacman -Syu
 ```
 

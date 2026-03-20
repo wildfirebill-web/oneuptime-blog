@@ -18,6 +18,7 @@ First, create a new Go project and install the Prometheus client library.
 
 ```bash
 # Initialize a new Go module
+
 mkdir prometheus-client && cd prometheus-client
 go mod init prometheus-client
 

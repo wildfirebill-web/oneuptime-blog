@@ -266,6 +266,7 @@ Console.WriteLine("Indexing policy updated. Transformation running in background
 
 ```bash
 # Update indexing policy from a JSON file
+
 az cosmosdb sql container update \
     --account-name myCosmosAccount \
     --database-name mydb \

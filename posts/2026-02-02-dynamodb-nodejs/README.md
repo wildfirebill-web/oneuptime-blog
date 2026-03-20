@@ -87,6 +87,7 @@ Set up your environment variables for AWS credentials and region settings.
 
 ```bash
 # .env file
+
 AWS_REGION=us-east-1
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key

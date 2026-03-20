@@ -18,6 +18,7 @@ The simplest invocation shows the layer history of any image:
 
 ```bash
 # View the build history of the nginx image
+
 docker history nginx:latest
 ```
 

@@ -74,6 +74,7 @@ import boto3
 sts = boto3.client('sts')
 
 # Assume the role
+
 response = sts.assume_role(
     RoleArn='arn:aws:iam::111111111111:role/S3UploadsRole',
     RoleSessionName='upload-session',

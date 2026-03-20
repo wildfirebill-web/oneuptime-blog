@@ -29,6 +29,7 @@ The simplest way to detect monitors is through the graphical interface:
 
 ```bash
 # Open GNOME Settings directly to the Displays panel
+
 gnome-control-center displays
 ```
 

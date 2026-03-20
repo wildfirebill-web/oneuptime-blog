@@ -18,6 +18,7 @@ Port mapping connects a port on your host machine to a port inside the container
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

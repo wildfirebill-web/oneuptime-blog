@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, UFW, Firewall, Security, SysAdmin
+Tags: Ubuntu, UFW, Firewall, Security, Sysadmin
 
 Description: Safely reset UFW firewall rules to their defaults on Ubuntu, recover from misconfigured rules, and rebuild your firewall policy from a clean baseline.
 
@@ -31,6 +31,7 @@ Before resetting, document your current rules if you might need to reference the
 
 ```bash
 # Save current rules to a file for reference
+
 sudo ufw status numbered > /root/ufw-rules-backup-$(date +%Y%m%d).txt
 cat /root/ufw-rules-backup-$(date +%Y%m%d).txt
 

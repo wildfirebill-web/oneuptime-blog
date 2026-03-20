@@ -44,6 +44,7 @@ Test it:
 ```bash
 kubectl exec -n my-app deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://my-service:8080/anything
 # Returns: 403
+
 ```
 
 ## Namespace-Wide Deny-All

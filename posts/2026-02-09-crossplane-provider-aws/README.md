@@ -18,6 +18,7 @@ Install the provider package:
 
 ```bash
 # Install AWS provider
+
 kubectl crossplane install provider \
   xpkg.upbound.io/crossplane-contrib/provider-aws:v0.40.0
 

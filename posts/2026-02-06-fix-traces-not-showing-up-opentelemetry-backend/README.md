@@ -36,6 +36,7 @@ Start by adding a debug exporter or console exporter to confirm spans are being 
 
 ```python
 # Python example: verify spans are generated locally
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import (

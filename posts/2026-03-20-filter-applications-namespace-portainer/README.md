@@ -23,6 +23,7 @@ The application list updates immediately to show only resources in the selected 
 
 ```bash
 # List all deployments across all namespaces
+
 kubectl get deployments --all-namespaces
 
 # List deployments in a specific namespace

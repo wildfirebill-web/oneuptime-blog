@@ -99,6 +99,7 @@ The following code creates a basic chat interface using LangChain's ChatOpenAI m
 
 ```python
 # basic_chat.py
+
 # Minimal chat application using LangChain
 
 import os

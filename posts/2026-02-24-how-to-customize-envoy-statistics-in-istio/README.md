@@ -191,6 +191,7 @@ One of the nice things about the Telemetry API is that it supports namespace-sco
 
 ```yaml
 # Production gets minimal stats for performance
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

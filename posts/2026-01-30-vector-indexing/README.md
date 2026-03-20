@@ -64,6 +64,7 @@ def inner_product(a: np.ndarray, b: np.ndarray) -> float:
     return np.dot(a, b)
 
 # Example usage
+
 vec1 = np.array([1.0, 2.0, 3.0])
 vec2 = np.array([1.0, 2.0, 3.5])
 

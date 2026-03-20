@@ -28,6 +28,7 @@ This Collector config implements multi-policy tail sampling that keeps important
 
 ```yaml
 # cost-optimized-collector.yaml
+
 receivers:
   otlp:
     protocols:

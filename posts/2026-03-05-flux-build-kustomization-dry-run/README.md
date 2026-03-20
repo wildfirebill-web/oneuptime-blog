@@ -152,6 +152,7 @@ Add `flux build kustomization` to your CI pipeline to catch errors before they a
 
 ```yaml
 # .github/workflows/validate.yaml
+
 name: Validate Flux Kustomizations
 on:
   pull_request:

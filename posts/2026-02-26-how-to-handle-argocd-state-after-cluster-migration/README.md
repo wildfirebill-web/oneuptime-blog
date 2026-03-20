@@ -46,6 +46,7 @@ Export all Application resources, stripping out cluster-specific metadata.
 
 ```bash
 # Export all ArgoCD applications
+
 kubectl get applications -n argocd -o yaml | \
   yq eval 'del(.items[].metadata.resourceVersion,
               .items[].metadata.uid,

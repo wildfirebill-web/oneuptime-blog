@@ -18,6 +18,7 @@ Each ECR repository stores images for a single application or service. You'll ty
 
 ```bash
 # Create a repository
+
 aws ecr create-repository \
   --repository-name my-web-app \
   --image-scanning-configuration scanOnPush=true \

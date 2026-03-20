@@ -26,9 +26,10 @@ IPv6 QoS is implemented through the Traffic Class field (equivalent to IPv4 DSCP
 Use ip6tables to classify and mark traffic by service type.
 
 ```bash
-# /etc/network/qos-mark.sh — DSCP marking rules
+# /etc/network/qos-mark.sh - DSCP marking rules
 
 # Flush existing mangle rules
+
 ip6tables -t mangle -F OUTPUT
 ip6tables -t mangle -F POSTROUTING
 
@@ -57,7 +58,7 @@ ip6tables -t mangle -A OUTPUT \
 
 ```bash
 #!/bin/bash
-# qos-setup.sh — HTB-based IPv6 QoS
+# qos-setup.sh - HTB-based IPv6 QoS
 
 IFACE="eth0"
 BANDWIDTH="1gbit"
@@ -72,23 +73,23 @@ tc qdisc add dev $IFACE root handle 1: htb default 40
 tc class add dev $IFACE parent 1: classid 1:1 \
   htb rate $BANDWIDTH
 
-# Class 1:10 — Network Control (CS6) — 5%
+# Class 1:10 - Network Control (CS6) - 5%
 tc class add dev $IFACE parent 1:1 classid 1:10 \
   htb rate 50mbit ceil $BANDWIDTH prio 0
 
-# Class 1:20 — Real-Time (EF) — 20%
+# Class 1:20 - Real-Time (EF) - 20%
 tc class add dev $IFACE parent 1:1 classid 1:20 \
   htb rate 200mbit ceil $BANDWIDTH prio 1
 
-# Class 1:30 — Interactive (AF31-AF41) — 30%
+# Class 1:30 - Interactive (AF31-AF41) - 30%
 tc class add dev $IFACE parent 1:1 classid 1:30 \
   htb rate 300mbit ceil $BANDWIDTH prio 2
 
-# Class 1:40 — Default Best Effort — 40%
+# Class 1:40 - Default Best Effort - 40%
 tc class add dev $IFACE parent 1:1 classid 1:40 \
   htb rate 400mbit ceil $BANDWIDTH prio 3
 
-# Class 1:50 — Scavenger (LE/CS1) — 5%
+# Class 1:50 - Scavenger (LE/CS1) - 5%
 tc class add dev $IFACE parent 1:1 classid 1:50 \
   htb rate 50mbit ceil 200mbit prio 4
 

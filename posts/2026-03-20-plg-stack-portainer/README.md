@@ -14,6 +14,7 @@ The PLG stack offers a lightweight alternative to EFK for container log aggregat
 
 ```yaml
 # docker-compose.yml - Complete PLG stack
+
 version: "3.8"
 
 services:
@@ -284,4 +285,4 @@ services:
 
 ## Conclusion
 
-The PLG stack provides 80% of EFK's functionality at 20% of the resource cost. Loki's label-only indexing strategy makes it highly efficient for Docker environments where log volume is high but search patterns follow predictable label-based filters. Promtail's Docker service discovery eliminates the need for per-container logging configuration — it automatically picks up new containers as they start. With Grafana already in your monitoring stack, adding Loki as a datasource gives you a unified dashboard for both metrics and logs without deploying additional infrastructure.
+The PLG stack provides 80% of EFK's functionality at 20% of the resource cost. Loki's label-only indexing strategy makes it highly efficient for Docker environments where log volume is high but search patterns follow predictable label-based filters. Promtail's Docker service discovery eliminates the need for per-container logging configuration - it automatically picks up new containers as they start. With Grafana already in your monitoring stack, adding Loki as a datasource gives you a unified dashboard for both metrics and logs without deploying additional infrastructure.

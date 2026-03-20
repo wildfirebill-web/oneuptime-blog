@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, format, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Format, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the format function in OpenTofu to build strings using printf-style format specifiers for precise string construction.
 
 ---
 
-The `format()` function produces a string by applying printf-style format specifiers to a set of values. It provides more control than simple string interpolation when you need specific formatting — like padding, number formatting, or hexadecimal output.
+The `format()` function produces a string by applying printf-style format specifiers to a set of values. It provides more control than simple string interpolation when you need specific formatting - like padding, number formatting, or hexadecimal output.
 
 ---
 
@@ -122,6 +122,7 @@ locals {
 
 ```hcl
 # These are equivalent for simple cases:
+
 name1 = "app-${var.environment}"
 name2 = format("app-%s", var.environment)
 
@@ -136,4 +137,4 @@ name2 = format("app-%s", var.environment)
 
 ## Summary
 
-`format()` builds strings using printf-style format specifiers. Use `%s` for strings, `%d` for integers, `%f` for floats (with `.2f` for 2 decimal places), and `%05d` for zero-padded integers. It's most valuable when you need consistent numeric formatting — padded sequence numbers in resource names, formatted CIDR blocks, or precise floating-point display. For simple value embedding, string interpolation (`"${var}"`) is cleaner.
+`format()` builds strings using printf-style format specifiers. Use `%s` for strings, `%d` for integers, `%f` for floats (with `.2f` for 2 decimal places), and `%05d` for zero-padded integers. It's most valuable when you need consistent numeric formatting - padded sequence numbers in resource names, formatted CIDR blocks, or precise floating-point display. For simple value embedding, string interpolation (`"${var}"`) is cleaner.

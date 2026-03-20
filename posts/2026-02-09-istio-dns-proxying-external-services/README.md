@@ -92,6 +92,7 @@ Now applications can use `api.stripe.com` directly:
 import requests
 
 # Application code unchanged
+
 response = requests.get('https://api.stripe.com/v1/charges')
 ```
 

@@ -32,6 +32,7 @@ Schema migrations are essential for evolving your database schema safely and con
 
 ```bash
 # Download Flyway
+
 wget -qO- https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/9.22.0/flyway-commandline-9.22.0-linux-x64.tar.gz | tar xvz
 
 # Add to PATH

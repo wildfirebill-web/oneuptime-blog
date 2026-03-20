@@ -24,6 +24,7 @@ The main Talos image variants for ARM64 are:
 
 ```bash
 # Download the generic ARM64 metal image
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/metal-arm64.iso
 
 # Download the Raspberry Pi variant

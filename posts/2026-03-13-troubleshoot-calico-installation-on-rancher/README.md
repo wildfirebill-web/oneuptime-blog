@@ -80,6 +80,7 @@ For Rancher clusters on AWS, Azure, or GCP, security groups may block IPIP:
 
 ```bash
 # Check if IPIP protocol (protocol 4) is allowed between nodes
+
 # AWS: Check Security Groups allow protocol 4
 # Azure: Check NSG rules allow IP-in-IP
 ```

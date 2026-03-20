@@ -46,6 +46,7 @@ Before creating failback procedures, establish clear objectives:
 
 ```yaml
 # failback-objectives.yaml
+
 failback_objectives:
   # Maximum time to complete failback
   recovery_time_objective: "4 hours"

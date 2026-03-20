@@ -1,4 +1,4 @@
-# How to Deploy Gitea via Portainer
+# How to Deploy Gitea via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -71,13 +71,13 @@ volumes:
 
 ## Initial Setup
 
-Navigate to `http://<host>:3000`. The first visit presents the installation wizard — most settings are pre-filled from environment variables. Set an admin username and password, then click **Install Gitea**.
+Navigate to `http://<host>:3000`. The first visit presents the installation wizard - most settings are pre-filled from environment variables. Set an admin username and password, then click **Install Gitea**.
 
 ## SSH Access Configuration
 
 Add to `~/.ssh/config` on your client:
 
-```
+```text
 Host git.example.com
     HostName git.example.com
     Port 222

@@ -24,6 +24,7 @@ flowchart LR
 
 ```bash
 # Suricata IDS rule: detect RA from unauthorized source
+
 # /etc/suricata/rules/ipv6-ndp.rules
 
 # All RA messages (ICMPv6 type 134)
@@ -75,7 +76,7 @@ alert icmp6 any any -> any any (
 ```bash
 # Linux: Monitor for unexpected neighbor table changes
 #!/bin/bash
-# watch-ndp-changes.sh — Detect NDP cache poisoning
+# watch-ndp-changes.sh - Detect NDP cache poisoning
 
 LOGFILE="/var/log/ndp-changes.log"
 
@@ -101,7 +102,7 @@ done
 
 ## Attack 3: NS Flood Detection
 
-```
+```text
 # Splunk: detect NDP NS flooding (cache overflow attack)
 
 index=firewall protocol=icmpv6 icmpv6_type=135
@@ -155,7 +156,7 @@ done
 alert icmp6 any any -> any any (
     msg:"IPv6 DAD Denial of Service - Rapid NA Response";
     itype:136;
-    # Solicited flag NOT set (S=0) — unsolicited NA typical in DAD DoS
+    # Solicited flag NOT set (S=0) - unsolicited NA typical in DAD DoS
     icmp6.hdr:5,1,0x40,0x00;
     threshold: type threshold, track by_src, count 20, seconds 10;
     sid:9002005; rev:1;
@@ -199,4 +200,4 @@ groups:
 
 ## Conclusion
 
-NDP attack detection requires monitoring at multiple layers: IDS signatures (Suricata) for real-time packet-level detection, kernel NDP table monitoring for cache overflow and MAC changes, and SIEM correlation for multi-event attack patterns. The most critical rules: RA from non-link-local sources (rogue RA), NA with Override flag at high rate (cache poisoning), INCOMPLETE entry count > 500 (NS flood), and MAC changes for established NDP entries (cache poisoning). Enable RA Guard on switches as a preventive control — detection rules catch what RA Guard misses or what comes through trusted ports.
+NDP attack detection requires monitoring at multiple layers: IDS signatures (Suricata) for real-time packet-level detection, kernel NDP table monitoring for cache overflow and MAC changes, and SIEM correlation for multi-event attack patterns. The most critical rules: RA from non-link-local sources (rogue RA), NA with Override flag at high rate (cache poisoning), INCOMPLETE entry count > 500 (NS flood), and MAC changes for established NDP entries (cache poisoning). Enable RA Guard on switches as a preventive control - detection rules catch what RA Guard misses or what comes through trusted ports.

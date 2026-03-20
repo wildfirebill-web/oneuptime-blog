@@ -56,6 +56,7 @@ Each region that runs pipeline actions needs its own artifact bucket:
 
 ```bash
 # Create artifact bucket in us-east-1 (primary)
+
 aws s3 mb s3://pipeline-artifacts-us-east-1-123456789012 \
   --region us-east-1
 

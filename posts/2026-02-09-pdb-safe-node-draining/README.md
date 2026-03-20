@@ -58,6 +58,7 @@ Use minAvailable when you know the minimum capacity needed for acceptable servic
 
 ```yaml
 # Need at least 5 instances for load
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

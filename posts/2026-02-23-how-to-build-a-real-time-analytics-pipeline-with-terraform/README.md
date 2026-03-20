@@ -43,6 +43,7 @@ resource "aws_kinesis_stream" "events" {
 }
 
 # Dead letter stream for failed processing
+
 resource "aws_kinesis_stream" "dead_letter" {
   name             = "${var.project_name}-events-dlq"
   retention_period = 168

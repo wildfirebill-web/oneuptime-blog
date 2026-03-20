@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Configuration, Environment
+Tags: Helm, Kubernetes, DevOps, Configuration, Environments
 
 Description: Master Helm values files to manage dev, staging, and production configurations with values file layering, --set overrides, and secrets management.
 
@@ -49,6 +49,7 @@ Start with a base file containing settings shared across all environments. This 
 
 ```yaml
 # environments/values-base.yaml
+
 # Shared configuration across all environments
 
 image:

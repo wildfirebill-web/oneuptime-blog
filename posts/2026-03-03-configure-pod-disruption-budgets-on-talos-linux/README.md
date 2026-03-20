@@ -36,6 +36,7 @@ A PDB can specify either `minAvailable` or `maxUnavailable`, but not both:
 
 ```yaml
 # pdb-min-available.yaml
+
 # Ensure at least 2 replicas are always running
 apiVersion: policy/v1
 kind: PodDisruptionBudget

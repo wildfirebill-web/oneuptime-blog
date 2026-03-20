@@ -10,7 +10,7 @@ A well-planned IPv4 addressing scheme prevents future headaches, simplifies rout
 
 ## CIDR Notation Refresher
 
-```
+```text
 10.100.1.0/24 means:
 - Network: 10.100.1.0
 - Mask: /24 = 255.255.255.0
@@ -34,17 +34,17 @@ Quick reference:
 
 RFC 1918 private ranges:
 
-```
-10.0.0.0/8       — 16,777,216 addresses (large enterprises)
-172.16.0.0/12    — 1,048,576 addresses (medium enterprises)
-192.168.0.0/16   — 65,536 addresses (small offices/labs)
+```text
+10.0.0.0/8       - 16,777,216 addresses (large enterprises)
+172.16.0.0/12    - 1,048,576 addresses (medium enterprises)
+192.168.0.0/16   - 65,536 addresses (small offices/labs)
 ```
 
 For most enterprises, `10.0.0.0/8` provides enough space for hierarchy.
 
 ## Step 2: Design a Hierarchical Structure
 
-```
+```text
 10.0.0.0/8         ← Enterprise summary
 ├── 10.1.0.0/16    ← Site: New York
 │   ├── 10.1.1.0/24   ← VLAN 1: Servers
@@ -65,6 +65,7 @@ For most enterprises, `10.0.0.0/8` provides enough space for hierarchy.
 # Calculate subnet sizes using ipcalc or manual calculation
 
 # Install ipcalc
+
 sudo apt install ipcalc -y
 
 # Show details for a subnet
@@ -85,7 +86,7 @@ ipcalc -n --hosts 30
 
 Always reserve space for growth:
 
-```
+```text
 10.0.0.0/8 allocation plan:
 10.1.0.0/16 – 10.50.0.0/16   : Office sites (50 sites × /16 each)
 10.100.0.0/16 – 10.110.0.0/16: Data centers

@@ -31,6 +31,7 @@ You can create a worker environment alongside your existing web environment.
 
 ```bash
 # Create a worker environment
+
 eb create worker-env \
     --tier worker \
     --instance-type t3.small \

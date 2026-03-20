@@ -87,6 +87,7 @@ curl http://localhost:8080/tyk/keys \
   -d @key-definition.json
 
 # Returns: {"key":"eyJvcmciOiI1ZTlkOTU0NGE1M...","status":"ok","action":"added"}
+
 ```
 
 ## Policy-Based Rate Limiting

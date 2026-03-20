@@ -28,6 +28,7 @@ filemd5(path)
 filesha256(path)
 filebase64sha256(path)
 # etc.
+
 ```
 
 ## Basic Examples

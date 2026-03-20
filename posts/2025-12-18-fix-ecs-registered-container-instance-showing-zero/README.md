@@ -35,6 +35,7 @@ The most common cause is a missing or incorrectly configured IAM instance profil
 
 ```hcl
 # Correct IAM configuration for ECS instances
+
 resource "aws_iam_role" "ecs_instance_role" {
   name = "ecsInstanceRole"
 

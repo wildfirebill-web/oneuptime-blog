@@ -15,7 +15,8 @@ TensorFlow Serving is the production-grade inference server for TensorFlow model
 Export your trained model in the TensorFlow SavedModel format:
 
 ```python
-# export_model.py — run this in your training environment
+# export_model.py - run this in your training environment
+
 import tensorflow as tf
 import numpy as np
 
@@ -26,7 +27,7 @@ model = tf.keras.Sequential([
 ])
 model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
 
-# Save in SavedModel format — required by TF Serving
+# Save in SavedModel format - required by TF Serving
 # Directory structure must follow: /models/<model-name>/<version>/
 model.save("/opt/tf-models/mnist-classifier/1")
 print("Model exported to /opt/tf-models/mnist-classifier/1")
@@ -75,7 +76,7 @@ networks:
 Create `/opt/tf-models/models.config` on the host:
 
 ```protobuf
-# models.config — defines which models TF Serving loads
+# models.config - defines which models TF Serving loads
 # Supports multiple models and version policies
 
 model_config_list {
@@ -103,7 +104,7 @@ model_config_list {
 ## Step 4: Make Predictions via REST API
 
 ```python
-# predict_rest.py — client code for the REST API
+# predict_rest.py - client code for the REST API
 import requests
 import numpy as np
 import json
@@ -126,7 +127,7 @@ print(f"Predictions: {np.argmax(predictions, axis=1)}")
 ## Step 5: Make Predictions via gRPC
 
 ```python
-# predict_grpc.py — more efficient gRPC client
+# predict_grpc.py - more efficient gRPC client
 import grpc
 import numpy as np
 from tensorflow_serving.apis import predict_pb2, prediction_service_pb2_grpc
@@ -159,7 +160,7 @@ TF Serving polls the model directory every 60 seconds (as configured above). To 
 1. Copy the new model to `/opt/tf-models/mnist-classifier/2` (increment the version number)
 2. TF Serving automatically loads the new version and serves it
 3. Old versions are unloaded after the new version is healthy
-4. No container restart needed — update is seamless
+4. No container restart needed - update is seamless
 
 ## Monitoring
 

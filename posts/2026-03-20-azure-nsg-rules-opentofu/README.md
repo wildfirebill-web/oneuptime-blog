@@ -14,6 +14,7 @@ Azure Network Security Groups (NSGs) contain a list of security rules that allow
 
 ```hcl
 # main.tf - NSG for a web application tier
+
 resource "azurerm_network_security_group" "web_nsg" {
   name                = "web-tier-nsg"
   location            = azurerm_resource_group.rg.location

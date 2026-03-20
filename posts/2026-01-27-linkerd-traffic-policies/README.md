@@ -53,6 +53,7 @@ Before configuring policies, ensure your cluster is ready:
 
 ```bash
 # Check Linkerd version (need 2.12+ for policy CRDs)
+
 linkerd version
 
 # Verify policy controller is running

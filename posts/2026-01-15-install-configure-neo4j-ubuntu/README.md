@@ -41,6 +41,7 @@ Graph databases naturally represent:
 
 ```bash
 # Import GPG key
+
 curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/neo4j-archive-keyring.gpg
 
 # Add repository

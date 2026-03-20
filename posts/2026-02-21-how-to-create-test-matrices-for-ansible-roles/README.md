@@ -29,6 +29,7 @@ Molecule supports multiple test scenarios, each with its own platform configurat
 
 ```yaml
 # molecule/default/molecule.yml
+
 # Default Molecule scenario testing across multiple platforms
 dependency:
   name: galaxy

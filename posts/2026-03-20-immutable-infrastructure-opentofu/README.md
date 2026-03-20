@@ -27,6 +27,7 @@ OpenTofu's `create_before_destroy` lifecycle rule implements immutable replaceme
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -40,7 +41,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-# Launch template — new AMI ID triggers new instances
+# Launch template - new AMI ID triggers new instances
 resource "aws_launch_template" "app" {
   name_prefix   = "app-"
   image_id      = var.ami_id  # Change this to trigger replacement
@@ -53,7 +54,7 @@ resource "aws_launch_template" "app" {
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
-    # Minimal bootstrap — app config baked into the AMI
+    # Minimal bootstrap - app config baked into the AMI
     systemctl start app
   EOF
   )
@@ -126,7 +127,7 @@ data "aws_ami" "app" {
 
 # Or pin to a specific AMI ID for production stability
 variable "ami_id" {
-  description = "AMI ID to deploy — change this to trigger instance replacement"
+  description = "AMI ID to deploy - change this to trigger instance replacement"
   type        = string
   # Set explicitly in production: ami_id = "ami-0abc123def456"
 }
@@ -136,13 +137,13 @@ variable "ami_id" {
 
 ```hcl
 # no_drift.tf
-# Prevent SSH access — all changes must go through a new AMI
+# Prevent SSH access - all changes must go through a new AMI
 resource "aws_security_group" "app_no_ssh" {
   name        = "app-no-ssh"
-  description = "Security group with no SSH access — immutable instances"
+  description = "Security group with no SSH access - immutable instances"
   vpc_id      = var.vpc_id
 
-  # No port 22 ingress — enforces immutability
+  # No port 22 ingress - enforces immutability
   egress {
     from_port   = 0
     to_port     = 0
@@ -154,8 +155,8 @@ resource "aws_security_group" "app_no_ssh" {
 
 ## Best Practices
 
-- Build AMIs with Packer, baking in all application code and configuration — instances should start fully configured.
+- Build AMIs with Packer, baking in all application code and configuration - instances should start fully configured.
 - Include the AMI ID or app version in the Auto Scaling Group name to force resource replacement on every deployment.
-- Disable SSH access to production instances — if you need to debug, use AWS Systems Manager Session Manager.
+- Disable SSH access to production instances - if you need to debug, use AWS Systems Manager Session Manager.
 - Use `instance_refresh` on Auto Scaling Groups to perform rolling replacements without manual intervention.
 - Store AMI IDs with their build metadata in a registry so rollback means deploying a known-good AMI ID.

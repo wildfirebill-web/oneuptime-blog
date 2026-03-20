@@ -27,6 +27,7 @@ Enable mutual TLS so both the agent and relay authenticate each other:
 
 ```yaml
 # hubble-mtls-config.yaml
+
 hubble:
   enabled: true
   tls:

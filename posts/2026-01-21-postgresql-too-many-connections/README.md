@@ -80,6 +80,7 @@ ALTER SYSTEM SET max_connections = 200;
 
 ```ini
 # pgbouncer.ini
+
 [databases]
 myapp = host=localhost port=5432 dbname=myapp
 

@@ -36,6 +36,7 @@ For Kubernetes 1.26-1.27, enable the feature gate:
 
 ```yaml
 # In kube-apiserver configuration
+
 --feature-gates=ValidatingAdmissionPolicy=true
 ```
 

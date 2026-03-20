@@ -30,6 +30,7 @@ The control node is where you run Ansible commands. It can be your laptop, a bas
 
 ```bash
 # Update package index and install software-properties-common for add-apt-repository
+
 sudo apt update
 sudo apt install -y software-properties-common
 

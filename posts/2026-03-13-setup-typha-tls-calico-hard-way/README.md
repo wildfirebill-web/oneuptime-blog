@@ -27,6 +27,7 @@ cd /etc/calico/pki
 mkdir -p /etc/calico/pki
 
 # Generate CA private key and self-signed certificate
+
 openssl req -x509 -newkey rsa:4096 \
   -keyout /etc/calico/pki/typha-ca.key \
   -out /etc/calico/pki/typha-ca.crt \

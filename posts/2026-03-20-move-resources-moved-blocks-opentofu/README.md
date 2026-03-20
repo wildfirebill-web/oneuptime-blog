@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, moved, Refactoring, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Moved, Refactoring, Resources, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use moved blocks in OpenTofu to rename or reorganize resources in your configuration without destroying and recreating them.
 
 ---
 
-When you rename a resource or move it into a module, OpenTofu sees a new address and a missing old address — it plans to destroy the old resource and create a new one. The `moved` block tells OpenTofu that the resource was just renamed, not destroyed, preventing unnecessary recreation of infrastructure.
+When you rename a resource or move it into a module, OpenTofu sees a new address and a missing old address - it plans to destroy the old resource and create a new one. The `moved` block tells OpenTofu that the resource was just renamed, not destroyed, preventing unnecessary recreation of infrastructure.
 
 ---
 
@@ -16,12 +16,13 @@ When you rename a resource or move it into a module, OpenTofu sees a new address
 
 ```hcl
 # BEFORE: resource named "old"
+
 resource "aws_instance" "old" {
   ami           = "ami-123"
   instance_type = "t3.micro"
 }
 
-# AFTER: resource renamed to "new" — without moved block:
+# AFTER: resource renamed to "new" - without moved block:
 resource "aws_instance" "new" {
   ami           = "ami-123"
   instance_type = "t3.micro"
@@ -38,7 +39,7 @@ resource "aws_instance" "new" {
 ## The Solution: moved Block
 
 ```hcl
-# main.tf — add the moved block alongside the renamed resource
+# main.tf - add the moved block alongside the renamed resource
 resource "aws_instance" "new" {
   ami           = "ami-123"
   instance_type = "t3.micro"
@@ -52,7 +53,7 @@ moved {
 
 # Plan now shows:
 # ~ aws_instance.old will be moved to aws_instance.new
-# No destruction — just a rename in state
+# No destruction - just a rename in state
 ```
 
 ---
@@ -133,11 +134,11 @@ After all team members and CI/CD pipelines have applied the moved block, you can
 tofu apply
 
 # Later: remove the moved block from config
-# The state already has the new address — no move needed on future plans
+# The state already has the new address - no move needed on future plans
 ```
 
 ---
 
 ## Summary
 
-`moved` blocks allow renaming resources, moving them into modules, and changing from single resources to count/for_each instances without destroying and recreating infrastructure. Add the `moved` block with `from = <old-address>` and `to = <new-address>` alongside the renamed resource. After the team has applied, remove the `moved` block — it's a one-time migration helper.
+`moved` blocks allow renaming resources, moving them into modules, and changing from single resources to count/for_each instances without destroying and recreating infrastructure. Add the `moved` block with `from = <old-address>` and `to = <new-address>` alongside the renamed resource. After the team has applied, remove the `moved` block - it's a one-time migration helper.

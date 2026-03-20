@@ -14,6 +14,7 @@ Automating RHEL image builds with Ansible lets you integrate OS image creation i
 
 ```yaml
 # build-image.yml
+
 ---
 - name: Build custom RHEL image
   hosts: image-builder-host

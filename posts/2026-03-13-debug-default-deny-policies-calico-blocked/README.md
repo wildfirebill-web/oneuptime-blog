@@ -29,6 +29,7 @@ Start by reproducing the failure:
 
 ```bash
 # From the affected pod
+
 kubectl exec -n my-namespace my-pod -- curl -v --max-time 5 http://target-service:8080
 
 # Check pod events

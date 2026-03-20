@@ -69,6 +69,7 @@ Calico evaluates policies in ascending order (lower number = higher priority). A
 
 ```bash
 # Verify order before applying
+
 calicoctl get globalnetworkpolicies -o wide | sort -k3 -n
 ```
 

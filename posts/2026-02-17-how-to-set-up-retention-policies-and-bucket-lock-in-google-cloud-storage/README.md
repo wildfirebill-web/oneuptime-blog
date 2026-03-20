@@ -29,6 +29,7 @@ To add a retention policy to a bucket:
 
 ```bash
 # Set a 90-day retention policy on a bucket
+
 gcloud storage buckets update gs://my-compliance-bucket \
   --retention-period=90d
 ```

@@ -36,6 +36,7 @@ flowchart TB
 
 ```bash
 # Download from docker.com or use Homebrew
+
 brew install --cask docker
 
 # Start Docker Desktop from Applications
@@ -55,7 +56,7 @@ docker info | grep Architecture
 
 ## Performance Optimization
 
-### Resource Allocation
+Resource Allocation
 
 Open Docker Desktop > Settings > Resources:
 
@@ -77,7 +78,7 @@ Docker Desktop > Settings > General
 
 VirtioFS provides significantly faster file sharing than gRPC FUSE.
 
-### Resource Saver
+Resource Saver
 
 ```text
 Settings > Resources > Advanced

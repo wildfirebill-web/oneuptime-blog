@@ -57,6 +57,7 @@ import sys
 import os
 
 # Exit code definitions
+
 EXIT_SUCCESS = 0
 EXIT_TRANSIENT_ERROR = 1      # Network, temporary resource issues
 EXIT_CONFIG_ERROR = 2          # Invalid configuration

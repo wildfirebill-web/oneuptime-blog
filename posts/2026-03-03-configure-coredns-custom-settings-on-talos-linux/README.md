@@ -18,6 +18,7 @@ On a fresh Talos Linux cluster, CoreDNS runs as a Deployment in the kube-system 
 
 ```bash
 # View the current CoreDNS configuration
+
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 

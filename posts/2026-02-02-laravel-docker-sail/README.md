@@ -18,6 +18,7 @@ If you're starting a new Laravel project, Sail is included by default:
 
 ```bash
 # Create a new Laravel project with Sail
+
 curl -s "https://laravel.build/myapp" | bash
 
 # Move into the project directory

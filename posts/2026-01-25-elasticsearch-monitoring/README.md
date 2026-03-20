@@ -64,6 +64,7 @@ graph TB
 
 ```bash
 # Quick cluster health check
+
 curl -X GET "localhost:9200/_cluster/health?pretty"
 
 # Expected response

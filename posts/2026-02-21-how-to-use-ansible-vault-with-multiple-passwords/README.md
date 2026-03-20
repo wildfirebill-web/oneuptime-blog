@@ -32,6 +32,7 @@ Vault IDs are labels attached to encrypted content. When you encrypt something w
 
 ```bash
 # Encrypt a file with the 'dev' vault ID
+
 ansible-vault encrypt --vault-id dev@prompt secrets_dev.yml
 
 # Encrypt a file with the 'prod' vault ID

@@ -37,6 +37,7 @@ First, look at the stack events to understand exactly which resource caused the 
 
 ```bash
 # Get the resources that failed during rollback
+
 aws cloudformation describe-stack-events \
     --stack-name my-stuck-stack \
     --query 'StackEvents[?ResourceStatus==`UPDATE_ROLLBACK_FAILED` || ResourceStatus==`UPDATE_FAILED`].[Timestamp,LogicalResourceId,ResourceStatusReason]' \
@@ -110,7 +111,7 @@ aws cloudformation continue-update-rollback \
     --role-arn arn:aws:iam::123456789012:role/AdminRole
 ```
 
-### Resources With Dependencies
+Resources With Dependencies
 
 Sometimes the rollback fails because a resource has acquired dependencies since the update started. For example, a security group might have new rules added by another stack or process.
 

@@ -27,6 +27,7 @@ RxJS (Reactive Extensions for JavaScript) offers several advantages over simple 
 
 ```bash
 # Install RxJS
+
 npm install rxjs
 
 # TypeScript configuration should have strict mode enabled

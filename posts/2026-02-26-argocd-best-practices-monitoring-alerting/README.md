@@ -18,6 +18,7 @@ ArgoCD exposes Prometheus metrics on each component. Enable scraping:
 
 ```yaml
 # ServiceMonitor for all ArgoCD components
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

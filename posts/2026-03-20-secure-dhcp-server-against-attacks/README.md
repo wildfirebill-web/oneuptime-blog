@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Security, Networking, sysadmin, Network Security
+Tags: DHCP, Security, Networking, Sysadmin, Network Security
 
 Description: DHCP servers are vulnerable to starvation attacks, rogue server impersonation, and unauthorized access, and can be hardened through DHCP snooping, rate limiting, MAC filtering, and firewall rules.
 
@@ -18,7 +18,8 @@ Description: DHCP servers are vulnerable to starvation attacks, rogue server imp
 ## Defense 1: Restrict DHCP Server to Specific Interfaces
 
 ```bash
-# Only listen on internal interface — never on WAN
+# Only listen on internal interface - never on WAN
+
 sudo tee /etc/default/isc-dhcp-server << 'EOF'
 INTERFACESv4="eth1"   # LAN only, NOT eth0 (WAN)
 EOF
@@ -80,7 +81,7 @@ tsig-keygen -a HMAC-SHA256 dhcpKey >> /etc/dhcp/dhcpd.conf
 
 ## Defense 6: Enable Conflict Detection
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 # Ping before offering to prevent duplicate assignments
 ping-check true;

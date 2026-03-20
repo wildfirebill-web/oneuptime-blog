@@ -22,6 +22,7 @@ When you create containers without specifying a network, Podman places them on t
 
 ```bash
 # Both containers can communicate
+
 podman run -d --name web nginx
 podman run -d --name db postgres:16
 

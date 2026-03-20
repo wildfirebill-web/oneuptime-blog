@@ -340,6 +340,7 @@ Use Open Policy Agent for sophisticated validation:
 
 ```yaml
 # OPA policy
+
 package kubernetes.admission
 
 deny[msg] {

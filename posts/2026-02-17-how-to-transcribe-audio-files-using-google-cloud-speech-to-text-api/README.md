@@ -30,6 +30,7 @@ Get set up with the API and client library:
 
 ```bash
 # Enable the Speech-to-Text API
+
 gcloud services enable speech.googleapis.com
 
 # Install the Python client

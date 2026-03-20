@@ -10,7 +10,7 @@ A SYN flood exhausts the server's TCP connection backlog by sending thousands of
 
 ## How SYN Floods Work
 
-```
+```text
 Normal TCP Handshake:         SYN Flood Attack:
   Client → SYN →  Server        Attacker → SYN (fake src) → Server
   Client ← SYN-ACK ← Server    Server allocates memory (no ACK comes)
@@ -24,10 +24,10 @@ A flood of SYNs fills this queue, dropping legitimate users.
 
 With SYN cookies, the server encodes connection state into the SYN-ACK sequence number. No backlog entry is created. If the client completes the handshake (ACK), the state is reconstructed from the cookie:
 
-```
+```text
 SYN Cookie Flow:
   Client → SYN → Server
-  Server ← SYN-ACK (sequence = cryptographic cookie) — NO state stored
+  Server ← SYN-ACK (sequence = cryptographic cookie) - NO state stored
   Client → ACK → Server (ACK = cookie + 1)
   Server: validates cookie, creates connection entry
 ```
@@ -36,6 +36,7 @@ SYN Cookie Flow:
 
 ```bash
 # Enable SYN cookies immediately
+
 sudo sysctl -w net.ipv4.tcp_syncookies=1
 
 # Verify

@@ -33,6 +33,7 @@ The real power of structured output comes from programmatic access. You can retr
 
 ```bash
 # Get the plan for a specific run
+
 RUN_ID="run-abc123"
 
 # First, get the plan ID

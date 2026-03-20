@@ -72,6 +72,7 @@ Let me explain each OU:
 
 ```bash
 # Get your organization root ID first
+
 ROOT_ID=$(aws organizations list-roots --query 'Roots[0].Id' --output text)
 
 # Create top-level OUs

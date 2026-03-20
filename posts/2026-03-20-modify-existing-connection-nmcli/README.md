@@ -14,6 +14,7 @@ Description: Modify existing NetworkManager connection profiles using nmcli to c
 
 ```bash
 # General syntax
+
 nmcli connection modify <con-name> <property> <value>
 
 # List available connections to find the correct name

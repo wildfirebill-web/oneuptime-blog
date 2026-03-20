@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, Log Parsing, Collector
+Tags: OpenTelemetry, Nginx, Log Parsing, Collector
 
 Description: Parse NGINX access and error logs into structured OpenTelemetry log records using the Collector filelog receiver with regex operators.
 

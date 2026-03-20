@@ -27,6 +27,7 @@ Ensure each node meets the following requirements:
 
 ```bash
 # Disable swap
+
 sudo swapoff -a
 sudo sed -i '/swap/d' /etc/fstab
 

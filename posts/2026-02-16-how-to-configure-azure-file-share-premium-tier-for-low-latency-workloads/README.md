@@ -41,6 +41,7 @@ Premium file shares require a dedicated FileStorage account type. You cannot use
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-premium-files \
   --location eastus2

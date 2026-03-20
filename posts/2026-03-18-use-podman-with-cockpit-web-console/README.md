@@ -78,6 +78,7 @@ Cockpit provides buttons for common lifecycle operations. The equivalent CLI com
 
 ```bash
 # Start a stopped container
+
 podman start web-server
 
 # Stop a running container

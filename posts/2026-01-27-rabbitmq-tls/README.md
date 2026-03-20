@@ -41,6 +41,7 @@ Before configuring RabbitMQ, you need certificates. For production, use a truste
 ```bash
 #!/bin/bash
 # create-ca.sh
+
 # This script creates a self-signed Certificate Authority for signing server and client certificates
 
 # Create directory structure for the CA

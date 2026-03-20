@@ -80,6 +80,7 @@ Here is how to create the hierarchy using Azure CLI:
 
 ```bash
 # Create the intermediate root management group
+
 az account management-group create \
   --name "contoso" \
   --display-name "Contoso"

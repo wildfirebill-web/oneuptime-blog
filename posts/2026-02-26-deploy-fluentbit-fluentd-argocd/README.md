@@ -48,6 +48,7 @@ logging/
 
 ```yaml
 # logging/fluent-bit/Chart.yaml
+
 apiVersion: v2
 name: fluent-bit
 description: Wrapper chart for Fluent Bit

@@ -16,6 +16,7 @@ Inventory what you need to migrate.
 
 ```bash
 # Using the TFE API
+
 TFE_TOKEN="your-token"
 TFE_ORG="your-org"
 TFE_URL="https://app.terraform.io"
@@ -161,4 +162,4 @@ resource "spacelift_policy_attachment" "no_destroy_prod" {
 
 ## Summary
 
-Migrating from Terraform Enterprise to Spacelift with OpenTofu involves creating Spacelift stacks for each TFE workspace, migrating variables and state to your own backends, and replacing TFE Sentinel policies with OPA policies. Spacelift's native OpenTofu support means you can specify OpenTofu versions directly on each stack. The migration can be done incrementally — migrate one workspace at a time and validate before decommissioning TFE workspaces.
+Migrating from Terraform Enterprise to Spacelift with OpenTofu involves creating Spacelift stacks for each TFE workspace, migrating variables and state to your own backends, and replacing TFE Sentinel policies with OPA policies. Spacelift's native OpenTofu support means you can specify OpenTofu versions directly on each stack. The migration can be done incrementally - migrate one workspace at a time and validate before decommissioning TFE workspaces.

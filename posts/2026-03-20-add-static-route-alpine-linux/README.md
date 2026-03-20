@@ -14,6 +14,7 @@ Alpine Linux uses a minimal network configuration stack based on `/etc/network/i
 
 ```bash
 # Add a static route using ip route
+
 ip route add 192.168.2.0/24 via 10.0.0.1
 
 # Add using BusyBox route command (legacy)
@@ -92,4 +93,4 @@ CMD ["/bin/sh", "-c", "ip route add 192.168.2.0/24 via 10.0.0.1; exec myapp"]
 
 ## Conclusion
 
-Alpine Linux static routes use `ip route add` for temporary configuration and `post-up` directives in `/etc/network/interfaces` for persistence. The minimal Alpine environment means no NetworkManager or Netplan — stick with the interfaces file or OpenRC local scripts for persistent routing. The `/etc/local.d/*.start` pattern integrates cleanly with Alpine's OpenRC init system.
+Alpine Linux static routes use `ip route add` for temporary configuration and `post-up` directives in `/etc/network/interfaces` for persistence. The minimal Alpine environment means no NetworkManager or Netplan - stick with the interfaces file or OpenRC local scripts for persistent routing. The `/etc/local.d/*.start` pattern integrates cleanly with Alpine's OpenRC init system.

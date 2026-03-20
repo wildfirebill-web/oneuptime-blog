@@ -30,6 +30,7 @@ Docker Bench runs as a container itself. It needs access to the Docker socket an
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/docker/docker-bench-security.git
 cd docker-bench-security
 

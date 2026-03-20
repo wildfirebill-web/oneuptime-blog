@@ -36,6 +36,7 @@ REST is the most common synchronous pattern. It uses HTTP methods and JSON paylo
 
 ```python
 # order_service.py
+
 # The order service calls the inventory service synchronously
 # to check stock availability before placing an order.
 

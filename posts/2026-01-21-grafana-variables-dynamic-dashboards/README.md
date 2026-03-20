@@ -44,6 +44,7 @@ Use the variable in panel queries:
 
 ```promql
 # Filter by selected namespace
+
 sum by (pod) (
   rate(container_cpu_usage_seconds_total{namespace="$namespace"}[5m])
 )

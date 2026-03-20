@@ -18,6 +18,7 @@ Imagine you have a storage account defined at the root level.
 
 ```hcl
 # Before refactoring
+
 resource "azurerm_storage_account" "data" {
   name                     = "stdataproduction001"
   resource_group_name      = azurerm_resource_group.main.name

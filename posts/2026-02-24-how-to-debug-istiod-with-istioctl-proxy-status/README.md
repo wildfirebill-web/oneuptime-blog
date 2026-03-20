@@ -127,6 +127,7 @@ Other useful debug endpoints:
 
 ```bash
 # List all connected proxies
+
 kubectl exec -n istio-system deployment/istiod -- curl -s localhost:15014/debug/connections
 
 # Check push status

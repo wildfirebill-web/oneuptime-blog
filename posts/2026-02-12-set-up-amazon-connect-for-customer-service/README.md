@@ -20,6 +20,7 @@ An Amazon Connect instance is your contact center environment. Each instance is 
 
 ```bash
 # Create an Amazon Connect instance
+
 aws connect create-instance \
   --identity-management-type "CONNECT_MANAGED" \
   --instance-alias "my-contact-center" \

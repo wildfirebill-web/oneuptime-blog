@@ -24,9 +24,9 @@ These devices will work fine on IPv4 but will never receive an IPv6 address. Thi
 
 Modern devices use privacy extensions (RFC 4941) which generate temporary, random IPv6 addresses. You might see multiple IPv6 addresses per device:
 
-```
+```text
 fe80::1234:5678:9abc:def0   → Link-local (always present)
-2001:db8:home:1::1          → SLAAC EUI-64 (from MAC address) — may not be shown
+2001:db8:home:1::1          → SLAAC EUI-64 (from MAC address) - may not be shown
 2001:db8:home:1:a1b2:c3d4:e5f6:7890  → Temporary privacy address (used for outgoing)
 ```
 
@@ -38,6 +38,7 @@ Some devices are on isolated VLANs, behind a switch without RA forwarding, or co
 
 ```bash
 # Check if RA is reaching the device (run on the device)
+
 # Linux:
 tcpdump -i eth0 'icmp6 and ip6[40] == 134' -c 3
 

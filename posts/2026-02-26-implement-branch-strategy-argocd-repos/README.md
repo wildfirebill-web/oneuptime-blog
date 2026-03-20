@@ -27,6 +27,7 @@ graph LR
 
 ```yaml
 # ArgoCD Application for dev - tracks the dev branch
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

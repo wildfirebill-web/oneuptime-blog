@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # List existing workspaces (* marks the current one)
+
 terraform workspace list
 
 # Create new workspaces

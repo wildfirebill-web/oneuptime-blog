@@ -28,6 +28,7 @@ First, check the Dataflow job logs for hot key warnings:
 
 ```bash
 # Search for hot key warnings in Dataflow logs
+
 gcloud logging read 'resource.type="dataflow_step" AND resource.labels.job_id="JOB_ID" AND textPayload:"hot key"' \
     --limit=20 \
     --format="table(timestamp, textPayload)"

@@ -118,6 +118,7 @@ Create the corresponding Dockerfile.
 # .devcontainer/Dockerfile
 
 # Accept build argument for Python version
+
 ARG PYTHON_VERSION=3.12
 
 # Start from Microsoft's Python dev container base

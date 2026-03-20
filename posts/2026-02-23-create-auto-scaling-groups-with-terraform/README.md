@@ -22,6 +22,7 @@ provider "aws" {
 }
 
 # Look up existing VPC and subnets (or create them)
+
 data "aws_vpc" "main" {
   filter {
     name   = "tag:Name"

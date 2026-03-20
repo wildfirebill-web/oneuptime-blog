@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, net.Dialer, TCP, Networking, Client
+Tags: Go, IPv6, Net.Dialer, TCP, Networking, Client
 
 Description: Use Go's net.Dialer to make IPv6 TCP connections with timeout control, local address binding, and connection customization.
 

@@ -16,6 +16,7 @@ OpenTofu 1.8 enhanced the testing framework with provider mocking. Mocked provid
 # tests/main.tftest.hcl
 
 # Mock the AWS provider to avoid real API calls
+
 mock_provider "aws" {
   # Override resource behavior for tests
   mock_resource "aws_s3_bucket" {
@@ -49,7 +50,7 @@ run "creates_bucket_with_correct_name" {
 
 ## Testing a Module with Mocks
 
-```
+```text
 modules/s3-website/
 ├── main.tf
 ├── variables.tf

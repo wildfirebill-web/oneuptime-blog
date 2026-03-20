@@ -16,6 +16,7 @@ Create or update your `.tflint.hcl` configuration:
 
 ```hcl
 # .tflint.hcl
+
 plugin "azurerm" {
   enabled = true
   version = "0.26.0"

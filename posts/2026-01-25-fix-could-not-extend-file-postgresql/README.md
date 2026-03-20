@@ -39,6 +39,7 @@ The error indicates:
 
 ```bash
 # Check disk usage on all mounted filesystems
+
 df -h
 
 # Check specific PostgreSQL directories

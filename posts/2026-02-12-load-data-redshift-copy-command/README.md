@@ -206,6 +206,7 @@ Redshift loads fastest when the number of files is a multiple of the number of s
 
 ```bash
 # Split a large file into multiple smaller files
+
 # Aim for file sizes between 1MB and 1GB each
 split -l 1000000 large_file.csv orders_part_
 

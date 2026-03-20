@@ -207,6 +207,7 @@ storage:
       path: /var/tempo/blocks
 
 # Enable trace search
+
 search_enabled: true
 
 # Link traces to logs via trace ID

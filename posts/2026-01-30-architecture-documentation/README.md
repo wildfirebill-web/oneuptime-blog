@@ -250,6 +250,7 @@ ADR_DIR="docs/architecture/decisions"
 TEMPLATE="$ADR_DIR/template.md"
 
 # Get the next ADR number
+
 LAST_ADR=$(ls -1 "$ADR_DIR" | grep -E '^[0-9]{4}-' | sort -r | head -1)
 if [ -z "$LAST_ADR" ]; then
     NEXT_NUM="0001"

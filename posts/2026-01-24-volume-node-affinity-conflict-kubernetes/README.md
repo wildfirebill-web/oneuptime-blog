@@ -34,6 +34,7 @@ Start by examining the pod events:
 
 ```bash
 # Get pod status and events
+
 kubectl describe pod your-pod-name -n your-namespace
 
 # Look for events like:

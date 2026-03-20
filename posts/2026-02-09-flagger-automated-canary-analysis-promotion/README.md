@@ -30,6 +30,7 @@ Install Flagger with Helm:
 
 ```bash
 # Add the Flagger Helm repository
+
 helm repo add flagger https://flagger.app
 
 # Install Flagger for Istio (or use linkerd, nginx, etc.)

@@ -244,6 +244,7 @@ For Python Cloud Functions:
 
 ```python
 # main.py - CORS handling in Python Cloud Functions
+
 import functions_framework
 import json
 

@@ -14,6 +14,7 @@ OpenTofu uses a worker pool with a configurable concurrency limit (default: 10).
 
 ```bash
 # Increase parallelism for large configurations
+
 tofu apply -parallelism=20
 ```
 
@@ -79,7 +80,7 @@ All three subnets are provisioned simultaneously.
 
 ## Pattern 3: Avoid depends_on on Large Modules
 
-A `depends_on` on a module forces all resources in that module to complete before any resource in the dependent module starts — even resources with no real dependency:
+A `depends_on` on a module forces all resources in that module to complete before any resource in the dependent module starts - even resources with no real dependency:
 
 ```hcl
 # BAD: forces all of module.networking to finish before module.compute starts

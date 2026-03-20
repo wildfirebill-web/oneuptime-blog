@@ -28,6 +28,7 @@ Podman supports the following log drivers:
 
 ```bash
 # Check the default log driver for new containers
+
 podman info --format '{{.Host.LogDriver}}'
 
 # Check the log driver for an existing container

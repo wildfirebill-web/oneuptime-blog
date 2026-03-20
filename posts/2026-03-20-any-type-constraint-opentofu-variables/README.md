@@ -1,4 +1,4 @@
-# How to Use the any Type Constraint in OpenTofu Variables
+# How to Use the any Type Constraint in OpenTofu Variables - Variables
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn when and how to use the any type constraint for OpenTofu vari
 
 ---
 
-The `any` type constraint tells OpenTofu to accept a variable of any type without validation. OpenTofu infers the actual type from the provided value. While flexible, `any` should be used thoughtfully — it reduces type safety and can lead to unexpected behavior when callers pass incompatible types.
+The `any` type constraint tells OpenTofu to accept a variable of any type without validation. OpenTofu infers the actual type from the provided value. While flexible, `any` should be used thoughtfully - it reduces type safety and can lead to unexpected behavior when callers pass incompatible types.
 
 ---
 
@@ -20,7 +20,7 @@ Use `any` when:
 - You're wrapping another module and passing values through unchanged
 
 Avoid `any` when:
-- You know the expected type — use that type instead
+- You know the expected type - use that type instead
 - Type safety is important for preventing misconfiguration
 
 ---
@@ -28,14 +28,15 @@ Avoid `any` when:
 ## Basic Usage
 
 ```hcl
-# variables.tf — using the any type constraint
+# variables.tf - using the any type constraint
 
 variable "config" {
   type        = any
-  description = "Configuration object — accepts any structure"
+  description = "Configuration object - accepts any structure"
 }
 
 # Callers can pass different structures
+
 # module call 1:
 module "app" {
   source = "./modules/app"
@@ -61,7 +62,7 @@ module "service" {
 ```hcl
 variable "tags" {
   type        = map(any)   # map with values of any type
-  description = "Resource tags — values can be strings, numbers, or booleans"
+  description = "Resource tags - values can be strings, numbers, or booleans"
   default = {
     Name        = "my-resource"    # string
     version     = 2                 # number
@@ -140,4 +141,4 @@ variable "config" {
 
 ## Summary
 
-The `any` type constraint provides maximum flexibility but sacrifices type safety. Use it for truly generic pass-through variables or when building adapters between modules. For all other cases, use the most specific type you can — it produces better error messages and documentation. When you do use `any`, add validation blocks to enforce the structure you expect.
+The `any` type constraint provides maximum flexibility but sacrifices type safety. Use it for truly generic pass-through variables or when building adapters between modules. For all other cases, use the most specific type you can - it produces better error messages and documentation. When you do use `any`, add validation blocks to enforce the structure you expect.

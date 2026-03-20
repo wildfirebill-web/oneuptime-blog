@@ -318,6 +318,7 @@ Check Fluent Bit metrics:
 
 ```bash
 # Fluent Bit exposes metrics on port 2020
+
 kubectl port-forward -n logging daemonset/fluent-bit 2020:2020
 curl http://localhost:2020/api/v1/metrics
 ```

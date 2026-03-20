@@ -40,6 +40,7 @@ Verify what permissions the identity has.
 
 ```bash
 # Check which policies are attached to a user
+
 aws iam list-attached-user-policies --user-name myuser
 aws iam list-user-policies --user-name myuser
 

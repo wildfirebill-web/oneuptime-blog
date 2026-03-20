@@ -64,6 +64,7 @@ Proper heap sizing is one of the most impactful tuning decisions you can make.
 
 ```bash
 # Set initial and maximum heap size to 4GB
+
 java -Xms4g -Xmx4g -jar application.jar
 
 # For containerized environments, use percentage-based sizing

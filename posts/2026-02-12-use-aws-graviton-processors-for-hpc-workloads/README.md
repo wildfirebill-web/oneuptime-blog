@@ -41,6 +41,7 @@ Before provisioning instances, check that your HPC software stack supports ARM.
 
 ```bash
 # Check if your binary is compiled for ARM or x86
+
 file /path/to/your/binary
 # ARM output: ELF 64-bit LSB executable, ARM aarch64
 # x86 output: ELF 64-bit LSB executable, x86-64

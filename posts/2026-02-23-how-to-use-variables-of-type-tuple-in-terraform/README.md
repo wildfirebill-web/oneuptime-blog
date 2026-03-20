@@ -20,6 +20,7 @@ A tuple type specifies the type of each element by position:
 # variables.tf
 
 # A tuple with three elements: string, number, boolean
+
 variable "instance_spec" {
   description = "Instance specification: [type, count, monitoring]"
   type        = tuple([string, number, bool])

@@ -137,6 +137,7 @@ Create `.ebextensions` for Beanstalk-specific configuration.
 
 ```yaml
 # .ebextensions/01-nodecommand.config
+
 option_settings:
   aws:elasticbeanstalk:container:nodejs:
     NodeCommand: "npm start"

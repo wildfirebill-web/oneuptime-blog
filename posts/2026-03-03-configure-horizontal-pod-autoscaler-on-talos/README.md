@@ -20,6 +20,7 @@ The HPA relies on the Metrics Server to collect resource metrics from the kubele
 
 ```bash
 # Install Metrics Server using the official manifest
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 

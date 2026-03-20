@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Random, Resource Naming, random_id, random_string
+Tags: OpenTofu, Random, Resource Naming, Random_id, Random_string
 
 Description: Learn how to use OpenTofu's random_id and random_string resources to generate unique, stable identifiers for cloud resources that require globally unique names.
 
@@ -14,6 +14,7 @@ Cloud resources like S3 buckets, Azure storage accounts, and GCP Cloud Storage b
 
 ```hcl
 # main.tf - random_id for hex suffixes
+
 resource "random_id" "bucket_suffix" {
   byte_length = 8  # 8 bytes = 16 hex chars
 }

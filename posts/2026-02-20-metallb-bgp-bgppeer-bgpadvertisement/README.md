@@ -61,6 +61,7 @@ If MetalLB is not already installed, deploy it with the official manifests:
 
 ```bash
 # Apply the MetalLB namespace and deployment manifests
+
 # This creates the metallb-system namespace and deploys the controller and speakers
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.9/config/manifests/metallb-native.yaml
 ```

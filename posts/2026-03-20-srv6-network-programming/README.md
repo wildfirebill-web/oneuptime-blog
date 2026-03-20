@@ -30,32 +30,32 @@ RFC 8986 defines a set of standard behaviors (instructions):
 
 ### Transit Functions (no SRH processing)
 
-```
-T: Transit — forward without changing SRH
+```text
+T: Transit - forward without changing SRH
    SID format: none (implicit, no SRH for plain transit)
 ```
 
 ### Endpoint Functions (process SRH at this node)
 
-```
-End        — Update SL, forward to next SID destination
-End.X      — Update SL, forward out specific interface
-End.T      — Update SL, lookup in specified table
-End.B6     — Insert SRH (policy insertion at midpoint)
-End.B6.Encaps — Encapsulate with new SRH
+```text
+End        - Update SL, forward to next SID destination
+End.X      - Update SL, forward out specific interface
+End.T      - Update SL, lookup in specified table
+End.B6     - Insert SRH (policy insertion at midpoint)
+End.B6.Encaps - Encapsulate with new SRH
 
 Endpoint with Decapsulation:
-End.DX2    — Decap + L2 cross-connect
-End.DX4    — Decap + IPv4 cross-connect
-End.DX6    — Decap + IPv6 cross-connect
-End.DT4    — Decap + IPv4 table lookup (L3VPN)
-End.DT6    — Decap + IPv6 table lookup (L3VPN)
-End.DT46   — Decap + IPv4/IPv6 table lookup
+End.DX2    - Decap + L2 cross-connect
+End.DX4    - Decap + IPv4 cross-connect
+End.DX6    - Decap + IPv6 cross-connect
+End.DT4    - Decap + IPv4 table lookup (L3VPN)
+End.DT6    - Decap + IPv6 table lookup (L3VPN)
+End.DT46   - Decap + IPv4/IPv6 table lookup
 ```
 
 ## Service Chaining Example
 
-```
+```sql
 Goal: Route traffic through Firewall → IDS → Load Balancer → Server
 
 Step 1: Assign SIDs
@@ -76,6 +76,7 @@ Step 2: Source (or ingress PE) adds SRH
 
 ```bash
 # Configure End function (plain routing endpoint)
+
 ip -6 route add 5f00:1:1::1/128 \
   encap seg6local action End \
   dev lo

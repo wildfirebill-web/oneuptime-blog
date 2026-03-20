@@ -34,6 +34,7 @@ Turning it on is a single CLI command per table.
 
 ```bash
 # Enable Contributor Insights for the base table
+
 aws dynamodb update-contributor-insights \
   --table-name Users \
   --contributor-insights-action ENABLE

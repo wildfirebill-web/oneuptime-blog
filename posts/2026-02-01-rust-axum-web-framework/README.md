@@ -40,6 +40,7 @@ edition = "2021"
 
 [dependencies]
 # Axum web framework
+
 axum = { version = "0.7", features = ["ws"] }
 # Async runtime
 tokio = { version = "1.0", features = ["full"] }

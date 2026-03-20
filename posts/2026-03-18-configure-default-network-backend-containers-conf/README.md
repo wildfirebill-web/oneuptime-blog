@@ -20,6 +20,7 @@ Podman provides two backend options for container networking.
 
 ```bash
 # Check the current network backend
+
 podman info --format '{{.Host.NetworkBackend}}'
 
 # Check available network-related information

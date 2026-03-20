@@ -1,4 +1,4 @@
-# How to Configure Traefik TCP Routing for Portainer
+# How to Configure Traefik TCP Routing for Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Traefik TCP routing proxies these services on dedicated ports.
 
 ```yaml
 # traefik.yml
+
 entryPoints:
   web:
     address: ":80"
@@ -95,7 +96,7 @@ labels:
   - "traefik.tcp.services.mysql.loadbalancer.server.port=3306"
 ```
 
-With TLS passthrough, Traefik doesn't terminate TLS — the backend handles it. SNI-based routing allows multiplexing multiple backends on port 443.
+With TLS passthrough, Traefik doesn't terminate TLS - the backend handles it. SNI-based routing allows multiplexing multiple backends on port 443.
 
 ## TCP Routing on Port 443 with SNI
 
@@ -127,12 +128,12 @@ Port 443 can serve both HTTPS and TCP with SNI:
 
 ```yaml
 labels:
-  # HTTP service — routes by Host header
+  # HTTP service - routes by Host header
   - "traefik.http.routers.web.rule=Host(`app.example.com`)"
   - "traefik.http.routers.web.entrypoints=websecure"
   - "traefik.http.routers.web.tls.certresolver=letsencrypt"
 
-  # TCP service — routes by SNI (different subdomain)
+  # TCP service - routes by SNI (different subdomain)
   - "traefik.tcp.routers.db.rule=HostSNI(`db.example.com`)"
   - "traefik.tcp.routers.db.entrypoints=websecure"
   - "traefik.tcp.routers.db.tls.passthrough=true"

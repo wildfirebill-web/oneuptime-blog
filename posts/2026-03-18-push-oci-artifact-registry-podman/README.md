@@ -20,6 +20,7 @@ You need Podman 5.x or later and access to an OCI-compliant registry.
 
 ```bash
 # Verify Podman version
+
 podman --version
 
 # Check the push subcommand

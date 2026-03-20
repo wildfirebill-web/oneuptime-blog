@@ -16,6 +16,7 @@ IPAM release operations require strict security controls because they are irreve
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

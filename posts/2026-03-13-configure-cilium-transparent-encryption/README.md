@@ -85,6 +85,7 @@ For WireGuard, check interfaces:
 
 ```bash
 # Run on a node
+
 wg show
 ```
 

@@ -97,6 +97,7 @@ Test the credentials:
 
 ```bash
 # For SSH
+
 kubectl get secret my-repo-auth -n flux-system -o jsonpath='{.data.identity}' | base64 -d > /tmp/test-key
 ssh -i /tmp/test-key -T git@github.com
 rm /tmp/test-key

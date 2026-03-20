@@ -25,6 +25,7 @@ Here is a script that applies delete locks to all resources matching specific cr
 ```bash
 #!/bin/bash
 # lock-critical-resources.sh
+
 # Applies CanNotDelete locks to production databases, key vaults,
 # and storage accounts across all resource groups
 

@@ -18,6 +18,7 @@ First, you need an Azure Automation account. If you are managing this with Terra
 
 ```powershell
 # Create the Automation Account
+
 New-AzAutomationAccount `
   -ResourceGroupName "rg-automation" `
   -Name "aa-infra-maintenance" `

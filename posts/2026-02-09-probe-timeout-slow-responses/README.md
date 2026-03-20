@@ -38,6 +38,7 @@ Common production values:
 
 ```yaml
 # Fast, lightweight checks
+
 timeoutSeconds: 2
 
 # Standard checks

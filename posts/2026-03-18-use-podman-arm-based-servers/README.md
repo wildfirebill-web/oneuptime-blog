@@ -105,6 +105,7 @@ If an image only supports `amd64`, you will see an error when trying to pull it 
 
 ```bash
 # Create a pod for the application
+
 podman pod create --name webapp \
   -p 8080:8080 \
   -p 5432:5432

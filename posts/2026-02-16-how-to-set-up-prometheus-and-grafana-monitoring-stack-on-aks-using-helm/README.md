@@ -43,6 +43,7 @@ graph TD
 
 ```bash
 # Add the prometheus-community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 # Update your local chart cache

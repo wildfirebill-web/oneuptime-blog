@@ -31,6 +31,7 @@ flowchart TB
 
 ```bash
 # Run CPU benchmark
+
 docker run --rm severalnines/sysbench sysbench cpu --threads=4 run
 
 # Compare with/without CPU limits

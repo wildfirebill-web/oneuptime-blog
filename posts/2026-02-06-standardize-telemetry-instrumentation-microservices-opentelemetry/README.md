@@ -28,6 +28,7 @@ Document what "instrumented" means in your organization. Be specific enough that
 
 ```yaml
 # instrumentation-standard.yaml
+
 # The organization's telemetry instrumentation standard.
 # Services must meet these requirements to be considered "instrumented."
 version: "1.0"

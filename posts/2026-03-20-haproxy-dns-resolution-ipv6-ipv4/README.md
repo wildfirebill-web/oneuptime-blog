@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, DNS, IPv4, IPv6, Troubleshooting, Resolvers, Networking
+Tags: HAProxy, DNS, IPv4, IPv6, Troubleshooting, Resolver, Networking
 
 Description: Learn how to diagnose and fix HAProxy DNS resolution defaulting to IPv6 addresses instead of IPv4, causing connection failures to IPv4-only backends.
 
@@ -20,6 +20,7 @@ HAProxy can use DNS to resolve backend server hostnames dynamically. On dual-sta
 
 ```bash
 # Check what the system resolver returns for a hostname
+
 getent hosts backend.internal
 
 # Look in HAProxy runtime for resolved addresses
@@ -28,7 +29,7 @@ echo "show servers state" | socat stdio /var/run/haproxy/admin.sock | grep backe
 
 ## Fix 1: Use IPv4 Literals in the Backend
 
-The simplest fix — bypass DNS entirely by using IP addresses.
+The simplest fix - bypass DNS entirely by using IP addresses.
 
 ```haproxy
 backend app_servers
@@ -81,7 +82,7 @@ This affects all applications on the host, not just HAProxy.
 If you control the DNS server, return only A records for internal hostnames:
 
 ```bash
-# Example: BIND zone file entry — no AAAA record for backend
+# Example: BIND zone file entry - no AAAA record for backend
 backend-app1.internal.  IN  A  10.0.0.1
 ```
 

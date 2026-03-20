@@ -1,4 +1,4 @@
-# How to Deploy Multi-Stage Applications with Portainer Stacks
+# How to Deploy Multi-Stage Applications with Portainer Stacks - Apps
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Understanding Docker Compose stack features in Portainer helps you create more m
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 # Reusable configuration using YAML anchors

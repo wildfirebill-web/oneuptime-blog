@@ -48,6 +48,7 @@ Check the current zone configuration from the CLI:
 
 ```bash
 # Show the default zone
+
 firewall-cmd --get-default-zone
 
 # List all active zones and their interfaces

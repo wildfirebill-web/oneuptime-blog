@@ -45,6 +45,7 @@ Add a shell prompt indicator:
 
 ```bash
 # Add to ~/.bashrc or ~/.zshrc
+
 tf_prompt() {
   if [ -f .terraform/environment ]; then
     echo " [tf:$(cat .terraform/environment)]"

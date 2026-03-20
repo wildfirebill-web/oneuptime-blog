@@ -109,6 +109,7 @@ spec:
 
 ```bash
 # List all BGP peering policies
+
 kubectl get ciliumbgppeeringpolicies
 
 # Check IP pool allocations
@@ -118,7 +119,7 @@ kubectl get ciliumbgpclusterconfig
 kubectl describe ciliumbgppeeringpolicy spine-peering
 ```
 
-## Resource Relationships
+Resource Relationships
 
 ```mermaid
 flowchart TD

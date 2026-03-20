@@ -16,6 +16,7 @@ Common use cases: triggering a build when source files change, running a script 
 
 ```bash
 # inotifywait is part of the inotify-tools package
+
 sudo apt update
 sudo apt install -y inotify-tools
 

@@ -30,6 +30,7 @@ Begin by showing what a cluster looks like without a CNI. Create a kind cluster 
 kind create cluster --config kind-no-cni.yaml
 kubectl get nodes
 # All nodes show NotReady
+
 ```
 
 This makes the CNI's role concrete: without it, pods cannot be scheduled and nodes cannot communicate. Calico is what makes the cluster functional at the network layer.

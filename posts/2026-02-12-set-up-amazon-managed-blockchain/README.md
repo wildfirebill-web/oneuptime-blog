@@ -86,6 +86,7 @@ Let us start by creating a Hyperledger Fabric network. This is the foundation ev
 
 ```bash
 # Create a new Hyperledger Fabric network on Managed Blockchain
+
 aws managedblockchain create-network \
   --name "MySupplyChainNetwork" \
   --description "Supply chain tracking network" \

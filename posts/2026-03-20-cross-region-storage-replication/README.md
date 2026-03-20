@@ -125,6 +125,7 @@ resource "aws_s3_bucket_replication_configuration" "main" {
 
 ```bash
 # Upload a test object
+
 aws s3 cp test.txt s3://my-app-data-source/ --region us-east-1
 
 # Check replication status

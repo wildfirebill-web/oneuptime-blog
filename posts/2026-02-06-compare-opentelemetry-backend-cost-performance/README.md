@@ -48,6 +48,7 @@ Here is a rough cost comparison for self-hosted options processing 100,000 spans
 
 ```yaml
 # Estimated monthly infrastructure costs for self-hosted backends
+
 # Based on 100K spans/second, 30-day retention, AWS us-east-1 pricing
 # These are approximate and vary significantly with configuration
 

@@ -20,6 +20,7 @@ First, create a tar archive from the source volume:
 
 ```bash
 # On the source host: export the volume to a tar file
+
 docker run --rm -v mydata:/data -v $(pwd):/backup alpine \
   tar czf /backup/mydata-volume.tar.gz -C /data .
 ```

@@ -170,6 +170,7 @@ High merge throughput means Elasticsearch is doing a lot of background I/O. If m
 
 ```yaml
 # Indexing latency spike
+
 - alert: ElasticsearchSlowIndexing
   condition: avg_indexing_latency > 100ms
   for: 5m

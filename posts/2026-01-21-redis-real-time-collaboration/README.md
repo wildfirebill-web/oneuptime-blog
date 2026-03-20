@@ -139,6 +139,7 @@ class PresenceService:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 presence = PresenceService(r)
 

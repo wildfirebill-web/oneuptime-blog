@@ -33,6 +33,7 @@ The CNI plugin is the single biggest factor in pod networking performance. On Ta
 
 ```yaml
 # cilium-helm-values.yaml
+
 kubeProxyReplacement: true           # Replace kube-proxy entirely
 enableIPv4Masquerade: true
 bpf:

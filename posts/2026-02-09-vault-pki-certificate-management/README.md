@@ -22,6 +22,7 @@ Initialize the PKI secrets engine:
 
 ```bash
 # Enable PKI at root path
+
 vault secrets enable pki
 
 # Tune maximum lease TTL

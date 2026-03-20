@@ -87,6 +87,7 @@ The following workflow configuration triggers only when files in the web applica
 
 ```yaml
 # .github/workflows/web.yml
+
 name: Web App CI
 
 # Trigger workflow on pushes to main branch

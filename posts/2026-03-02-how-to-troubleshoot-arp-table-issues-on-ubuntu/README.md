@@ -25,6 +25,7 @@ Each ARP entry has a state:
 
 ```bash
 # Modern method: ip neighbor (ARP table uses neighbor discovery in Linux)
+
 ip neighbor show
 
 # Or shorter

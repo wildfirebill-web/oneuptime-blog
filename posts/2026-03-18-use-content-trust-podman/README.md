@@ -24,6 +24,7 @@ Unlike Docker which uses Notary, Podman relies on image signature verification t
 
 ```bash
 # View the current image trust policy
+
 cat /etc/containers/policy.json
 ```
 

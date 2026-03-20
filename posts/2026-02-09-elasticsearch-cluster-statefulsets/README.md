@@ -29,6 +29,7 @@ Start with a storage class optimized for Elasticsearch:
 
 ```yaml
 # elasticsearch-storage-class.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

@@ -18,6 +18,7 @@ Check the HelmRelease status:
 
 ```bash
 # List all HelmReleases with their status
+
 flux get helmreleases -A
 
 # Get the detailed error

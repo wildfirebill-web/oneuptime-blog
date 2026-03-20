@@ -49,6 +49,7 @@ flowchart TD
 
 ```bash
 # Navigate to your Android project
+
 cd MyAndroidApp
 
 # Initialize Amplify

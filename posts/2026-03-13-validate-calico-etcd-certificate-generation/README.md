@@ -27,6 +27,7 @@ Verify the certificate's subject, issuer, validity, and extensions:
 
 ```bash
 # Inspect CA certificate
+
 openssl x509 -in calico-etcd-ca.crt -noout \
   -subject -issuer -dates -serial
 

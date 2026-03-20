@@ -32,6 +32,7 @@ Treasure Data maintains the `td-agent` package, which is the recommended stable 
 
 ```bash
 # Install curl if not present
+
 sudo apt update && sudo apt install -y curl
 
 # Add the Fluentd repository and install td-agent

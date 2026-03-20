@@ -1,8 +1,8 @@
-# How to Configure Development Namespaces in Rancher
+# How to Configure Development Namespaces in Rancher - Dev
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Namespaces, Development, Multi-tenancy
+Tags: Rancher, Kubernetes, Namespaces, Development, Multi-Tenancy
 
 Description: Configure dedicated development namespaces in Rancher with resource quotas, network policies, RBAC, and developer self-service capabilities.
 
@@ -20,6 +20,7 @@ Well-configured development namespaces in Rancher enable team isolation, resourc
 
 ```bash
 # Or create via kubectl
+
 kubectl create namespace dev-team-alpha
 kubectl label namespace dev-team-alpha \
   env=development \

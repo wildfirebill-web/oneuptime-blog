@@ -28,6 +28,7 @@ Building from source is useful when you need a version not yet available in your
 
 ```bash
 # Install development tools and Podman build dependencies
+
 sudo dnf install -y \
   git \
   golang \

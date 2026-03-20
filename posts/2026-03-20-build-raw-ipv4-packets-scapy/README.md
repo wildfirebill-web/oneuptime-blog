@@ -12,6 +12,7 @@ Description: Scapy is a powerful Python library for building, sending, and analy
 pip install scapy
 
 # On Linux, raw socket operations require root privileges
+
 sudo python3 your_script.py
 ```
 

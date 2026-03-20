@@ -95,6 +95,7 @@ Create application metadata files:
 
 ```yaml
 # apps/api-gateway/app.yaml
+
 name: api-gateway
 namespace: production
 replicas: 3

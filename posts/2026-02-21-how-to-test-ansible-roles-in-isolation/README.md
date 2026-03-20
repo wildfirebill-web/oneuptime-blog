@@ -28,6 +28,7 @@ Molecule is the standard testing framework for Ansible roles. Install it with th
 
 ```bash
 # Install Molecule with Docker support
+
 pip install molecule molecule-plugins[docker]
 ```
 

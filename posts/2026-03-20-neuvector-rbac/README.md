@@ -8,7 +8,7 @@ Description: Configure NeuVector's role-based access control to assign fine-grai
 
 ## Introduction
 
-NeuVector's Role-Based Access Control (RBAC) system provides fine-grained access management for security operations. You can assign global roles, namespace-specific roles, and custom roles to users and groups, ensuring that each team member has exactly the access they need — no more, no less.
+NeuVector's Role-Based Access Control (RBAC) system provides fine-grained access management for security operations. You can assign global roles, namespace-specific roles, and custom roles to users and groups, ensuring that each team member has exactly the access they need - no more, no less.
 
 ## NeuVector Built-in Roles
 
@@ -30,6 +30,7 @@ NeuVector's Role-Based Access Control (RBAC) system provides fine-grained access
 
 ```bash
 # Create a new user with Reader role
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/user" \
   -H "Content-Type: application/json" \

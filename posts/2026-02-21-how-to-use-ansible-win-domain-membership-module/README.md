@@ -16,6 +16,7 @@ The basic operation is joining a standalone server to an existing AD domain.
 
 ```yaml
 # join-domain.yml - Join a Windows server to a domain
+
 ---
 - name: Join Server to Domain
   hosts: new_servers

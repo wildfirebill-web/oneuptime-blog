@@ -36,6 +36,7 @@ First, confirm the issue is Istio-related by testing from a pod without a sideca
 
 ```bash
 # Create a pod without sidecar injection
+
 kubectl run test-no-sidecar --image=curlimages/curl \
   --labels="sidecar.istio.io/inject=false" \
   --command -- sleep 3600

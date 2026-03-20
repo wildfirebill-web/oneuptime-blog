@@ -16,6 +16,7 @@ This guide covers setting up a three-node Galera Cluster on RHEL 9.
 
 ```bash
 # Install MariaDB server and Galera packages on all three nodes
+
 sudo dnf install -y mariadb-server mariadb-server-galera galera
 
 # Run the security script on each node

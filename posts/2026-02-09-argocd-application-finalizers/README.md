@@ -65,6 +65,7 @@ If you want to delete the Application but keep the resources in the cluster, rem
 
 ```bash
 # Remove finalizer using kubectl
+
 kubectl patch app my-application -n argocd \
   --type json \
   --patch='[ { "op": "remove", "path": "/metadata/finalizers" } ]'

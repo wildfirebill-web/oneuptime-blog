@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # Create a new NestJS project
+
 npx @nestjs/cli new tracing-demo
 cd tracing-demo
 

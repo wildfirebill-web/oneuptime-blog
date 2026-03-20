@@ -53,6 +53,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # For tabular classification - AutoML handles everything
+
 dataset = aiplatform.TabularDataset.create(
     display_name="churn-prediction-data",
     bq_source="bq://your-project.ml_data.customer_features",

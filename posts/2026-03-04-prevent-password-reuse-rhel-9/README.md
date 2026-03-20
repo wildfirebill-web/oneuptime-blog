@@ -42,6 +42,7 @@ sudo vi /etc/security/pwhistory.conf
 
 ```bash
 # Remember the last 12 passwords
+
 remember = 12
 
 # Apply the restriction to root as well

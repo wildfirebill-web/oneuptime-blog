@@ -82,6 +82,7 @@ Create a Tracetest definition that validates the trace captured during the Playw
 
 ```yaml
 # tracetest/checkout-assertions.yaml
+
 type: Test
 spec:
   name: Checkout Flow Trace Validation

@@ -45,6 +45,7 @@ Configure your Flask application with a secret key for CSRF protection:
 
 ```python
 # app.py
+
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
 

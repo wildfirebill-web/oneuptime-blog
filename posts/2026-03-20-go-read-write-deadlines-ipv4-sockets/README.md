@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Sockets, IPv4, TCP, Networking, Deadlines, Timeouts
+Tags: Go, Sockets, IPv4, TCP, Networking, Deadlines, Timeout
 
 Description: Configure read and write deadlines on Go TCP connections over IPv4 to prevent goroutine leaks and unresponsive connections from hanging indefinitely.
 
@@ -83,7 +83,7 @@ func handleConnection(conn net.Conn) {
         n, err := conn.Read(buf)
         if err != nil {
             if netErr, ok := err.(net.Error); ok && netErr.Timeout() {
-                fmt.Println("Connection idle timeout — closing")
+                fmt.Println("Connection idle timeout - closing")
             } else {
                 fmt.Printf("Read error: %v\n", err)
             }

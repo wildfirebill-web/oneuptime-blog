@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu destroy, Infrastructure Management, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu destroy, Infrastructure Management, Infrastructure as Code, DevOps
 
 Description: A guide to safely destroying OpenTofu-managed infrastructure using the tofu destroy command.
 
@@ -14,6 +14,7 @@ Description: A guide to safely destroying OpenTofu-managed infrastructure using 
 
 ```bash
 # Navigate to your project
+
 cd /path/to/your/project
 
 # Run destroy (shows plan and prompts for confirmation)

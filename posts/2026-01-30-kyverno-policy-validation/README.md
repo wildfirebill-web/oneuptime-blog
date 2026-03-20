@@ -42,6 +42,7 @@ Every Kyverno ClusterPolicy follows a consistent structure. Understanding this s
 
 ```yaml
 # policy-template.yaml
+
 # A ClusterPolicy applies across all namespaces
 # Use Policy instead for namespace-scoped rules
 apiVersion: kyverno.io/v1

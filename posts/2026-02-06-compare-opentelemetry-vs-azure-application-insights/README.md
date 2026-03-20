@@ -158,6 +158,7 @@ For Java applications, Azure has a particularly smooth auto-instrumentation expe
 
 ```yaml
 # Application Insights Java agent configuration
+
 # Provides zero-code instrumentation for Java applications
 {
   "connectionString": "InstrumentationKey=your-key;...",

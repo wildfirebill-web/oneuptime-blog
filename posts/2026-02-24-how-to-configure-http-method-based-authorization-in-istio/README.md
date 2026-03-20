@@ -303,6 +303,7 @@ spec:
 
 ```bash
 # Test GET (should be allowed)
+
 kubectl exec -n my-app deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://catalog-service:8080/api/products
 
 # Test POST (might be denied)

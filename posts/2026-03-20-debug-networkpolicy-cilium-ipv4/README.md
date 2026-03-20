@@ -12,6 +12,7 @@ Cilium provides powerful debugging tools through the Cilium CLI and Hubble obser
 
 ```bash
 # Check overall Cilium health
+
 cilium status
 
 # Verify all Cilium pods are healthy

@@ -16,6 +16,7 @@ In REDIRECT mode, iptables changes the destination address of packets to route t
 
 ```text
 # REDIRECT mode - NAT table
+
 -A ISTIO_IN_REDIRECT -p tcp -j REDIRECT --to-ports 15006
 ```
 

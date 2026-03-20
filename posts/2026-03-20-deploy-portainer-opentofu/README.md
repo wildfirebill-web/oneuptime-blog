@@ -156,6 +156,7 @@ resource "random_password" "portainer_admin" {
 }
 
 # Portainer expects bcrypt hash for admin password
+
 resource "aws_secretsmanager_secret" "portainer_admin" {
   name = "/portainer/${var.environment}/admin-password"
 }

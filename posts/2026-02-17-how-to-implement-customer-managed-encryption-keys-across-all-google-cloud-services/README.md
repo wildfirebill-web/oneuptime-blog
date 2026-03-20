@@ -31,6 +31,7 @@ This script creates a KMS project, key ring, and keys for multiple services.
 
 ```bash
 # Create a dedicated project for key management
+
 gcloud projects create my-org-kms-project --organization=123456789
 
 # Enable the Cloud KMS API

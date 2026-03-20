@@ -55,6 +55,7 @@ Check cluster status using rabbitmqctl:
 
 ```bash
 # Check cluster status - look for 'partitions' field
+
 rabbitmqctl cluster_status
 
 # Example output with partition:

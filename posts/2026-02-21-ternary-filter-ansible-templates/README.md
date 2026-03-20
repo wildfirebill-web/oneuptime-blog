@@ -73,6 +73,7 @@ Here is a complete example generating an application configuration file:
 
 ```yaml
 # deploy_app.yml - Deploy application with conditional config
+
 - name: Deploy application configuration
   hosts: app_servers
   vars:

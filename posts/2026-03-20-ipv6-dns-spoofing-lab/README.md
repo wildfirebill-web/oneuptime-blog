@@ -12,7 +12,7 @@ IPv6 DNS spoofing involves intercepting DNS queries and returning forged respons
 
 ## DNS Spoofing Attack Flow
 
-```
+```text
 Victim                  Attacker              Legitimate DNS
   |                        |                        |
   |-- DNS query A/AAAA --> |                        |
@@ -24,7 +24,7 @@ Victim                  Attacker              Legitimate DNS
 
 ## Prerequisites
 
-For DNS spoofing to work, the attacker must be able to intercept the victim's DNS traffic — either through MITM position (NDP cache poisoning) or by running a rogue DNS server.
+For DNS spoofing to work, the attacker must be able to intercept the victim's DNS traffic - either through MITM position (NDP cache poisoning) or by running a rogue DNS server.
 
 ## Method 1: Rogue DNS Server with dnsmasq
 
@@ -32,6 +32,7 @@ Run a fake DNS server that returns controlled AAAA records:
 
 ```bash
 # Install dnsmasq on the attacker machine
+
 sudo apt-get install dnsmasq
 
 # Configure dnsmasq to return controlled IPv6 addresses

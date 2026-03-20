@@ -22,6 +22,7 @@ Podman provides basic monitoring out of the box:
 
 ```bash
 # Real-time resource usage for all containers
+
 podman stats
 
 # Resource usage for specific containers

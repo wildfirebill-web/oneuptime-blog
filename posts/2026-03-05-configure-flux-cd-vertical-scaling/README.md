@@ -35,6 +35,7 @@ Before adjusting resource settings, measure the current usage of your Flux contr
 
 ```bash
 # Check current resource requests and limits for Flux controllers
+
 kubectl get deployments -n flux-system -o custom-columns=\
 NAME:.metadata.name,\
 CPU_REQ:.spec.template.spec.containers[0].resources.requests.cpu,\
@@ -280,7 +281,7 @@ kubectl logs -n flux-system deployment/kustomize-controller | grep "duration"
 kubectl get events -n flux-system --field-selector reason=OOMKilling
 ```
 
-## Resource Sizing Guidelines
+Resource Sizing Guidelines
 
 The following table provides general starting points based on cluster size:
 

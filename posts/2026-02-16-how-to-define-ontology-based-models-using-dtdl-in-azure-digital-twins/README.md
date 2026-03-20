@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Digital Twins, DTDL, Ontology, Digital Twin Modeling, IoT Architecture, Smart Buildings, Twin Graph
+Tags: Azure Digital Twins, DTDL, Ontology, Digital Twin Modeling, IoT Architecture, Smart Building, Twin Graph
 
 Description: Learn how to define ontology-based models using the Digital Twins Definition Language (DTDL) in Azure Digital Twins for structured domain modeling.
 
@@ -328,6 +328,7 @@ Use the Azure CLI or SDK to upload the models to your Azure Digital Twins instan
 
 ```bash
 # Upload all models at once (the service resolves dependencies)
+
 az dt model create \
   --dt-name my-digital-twins \
   --models '[

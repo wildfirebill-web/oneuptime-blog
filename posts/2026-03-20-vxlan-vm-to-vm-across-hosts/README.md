@@ -12,7 +12,7 @@ VXLAN extends a VM's Layer 2 segment across multiple physical hosts. VMs on Host
 
 ## Architecture
 
-```
+```text
 Host1 (eth0: 10.0.0.1)              Host2 (eth0: 10.0.0.2)
   br-vm ──── tap0 (VM1)               br-vm ──── tap0 (VM1')
     |                                   |
@@ -25,6 +25,7 @@ Host1 (eth0: 10.0.0.1)              Host2 (eth0: 10.0.0.2)
 
 ```bash
 # On Host1:
+
 ip link add vxlan10 type vxlan \
   id 10 dstport 4789 local 10.0.0.1 group 239.1.1.10 dev eth0
 ip link set vxlan10 up

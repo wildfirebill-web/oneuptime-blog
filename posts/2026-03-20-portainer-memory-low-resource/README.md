@@ -1,4 +1,4 @@
-# How to Fix Portainer Memory Issues on Low-Resource Hosts
+# How to Fix Portainer Memory Issues on Low-Resource Hosts - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Optimize Portainer's memory usage on VPS instances or edge devices 
 
 ## Introduction
 
-Portainer runs well on most modern servers, but on low-resource hosts (1-2 GB RAM VPS, Raspberry Pi, edge devices), it can consume significant memory — especially when managing many containers or large Docker environments. This guide covers techniques to reduce Portainer's footprint.
+Portainer runs well on most modern servers, but on low-resource hosts (1-2 GB RAM VPS, Raspberry Pi, edge devices), it can consume significant memory - especially when managing many containers or large Docker environments. This guide covers techniques to reduce Portainer's footprint.
 
 ## Understanding Portainer's Memory Usage
 
@@ -23,6 +23,7 @@ Portainer uses memory for:
 
 ```bash
 # Check Portainer's current memory consumption
+
 docker stats portainer --no-stream
 
 # Output example:

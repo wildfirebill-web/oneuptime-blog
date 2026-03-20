@@ -44,6 +44,7 @@ kubectl create namespace win-policy-ns
 
 ```yaml
 # windows-server.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

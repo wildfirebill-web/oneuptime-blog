@@ -1,10 +1,10 @@
-# How to Fix "bind() to 0.0.0.0:80 Failed" Errors in Nginx
+# How to Fix 'bind() to 0.0.0.0:80 Failed' Errors in Nginx
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Troubleshooting, IPv4, Port Conflict, bind error, Linux
+Tags: Nginx, Troubleshooting, IPv4, Port Conflict, Bind error, Linux
 
-Description: Diagnose and resolve Nginx "bind() to 0.0.0.0:80 failed" errors caused by port conflicts, permission issues, or misconfigured listen directives.
+Description: Diagnose and resolve Nginx 'bind() to 0.0.0.0:80 failed' errors caused by port conflicts, permission issues, or misconfigured listen directives.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Check the Nginx error log and systemd journal first:
 
 ```bash
 # Check Nginx error output
+
 sudo nginx -t
 
 # View systemd service logs
@@ -29,7 +30,7 @@ sudo lsof -i :80
 
 ## Cause 1: Another Process Is Using Port 80
 
-The most common cause—Apache, another Nginx instance, or another web server is already listening:
+The most common cause-Apache, another Nginx instance, or another web server is already listening:
 
 ```bash
 # Identify the conflicting process
@@ -121,7 +122,7 @@ server {
 ## Cause 6: Nginx Not Fully Stopped Before Restart
 
 ```bash
-# Graceful reload (preferred—no port binding needed)
+# Graceful reload (preferred-no port binding needed)
 sudo nginx -s reload
 
 # Full restart sequence

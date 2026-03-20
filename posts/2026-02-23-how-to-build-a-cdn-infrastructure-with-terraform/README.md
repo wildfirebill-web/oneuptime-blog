@@ -116,6 +116,7 @@ Different content types need different caching strategies:
 
 ```hcl
 # Static assets - long cache, immutable content with hash in filename
+
 resource "aws_cloudfront_cache_policy" "static_assets" {
   name        = "${var.project_name}-static-assets"
   comment     = "Cache static assets aggressively"

@@ -1,4 +1,4 @@
-# How to Configure Volume Drivers in Portainer
+# How to Configure Volume Drivers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure and use different Docker volume drivers in P
 
 ## Introduction
 
-Docker's volume driver system allows you to use different storage backends for container volumes — from local filesystem to NFS, cloud storage (AWS EBS, Azure File), and distributed storage systems (Ceph, GlusterFS). Portainer exposes volume driver configuration when creating volumes, giving you flexibility to connect containers to any storage system.
+Docker's volume driver system allows you to use different storage backends for container volumes - from local filesystem to NFS, cloud storage (AWS EBS, Azure File), and distributed storage systems (Ceph, GlusterFS). Portainer exposes volume driver configuration when creating volumes, giving you flexibility to connect containers to any storage system.
 
 ## Prerequisites
 
@@ -23,9 +23,10 @@ The default driver stores volumes on the local host filesystem:
 
 ```yaml
 # Default: local driver
+
 volumes:
   mydata:
-    driver: local  # Optional — local is the default
+    driver: local  # Optional - local is the default
 
 # Local driver with custom options (creates a bind mount-backed volume):
 volumes:
@@ -108,7 +109,7 @@ docker plugin ls
 3. Under **Driver**, select from installed drivers.
 4. Under **Driver options**, enter key-value pairs for the driver.
 
-```
+```text
 Name:    ebs-production-data
 Driver:  rexray/ebs
 Options:
@@ -229,7 +230,7 @@ docker volume rm test-ebs-volume
 
 ## Step 8: Volume Driver Selection Guide
 
-```
+```text
 Use Case                    → Recommended Driver
 Single host, local data     → local (default)
 Multiple hosts, shared data → NFS (local with NFS opts)

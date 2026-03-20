@@ -1,19 +1,20 @@
-# How to Chain Data Transformations in OpenTofu
+# How to Chain Data Transformations in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Data Transformation, HCL, Locals, Functions, Infrastructure as Code
 
-Description: Learn how to chain multiple data transformations in OpenTofu locals blocks — building complex data structures from simple inputs through a series of clear, composable transformation steps.
+Description: Learn how to chain multiple data transformations in OpenTofu locals blocks - building complex data structures from simple inputs through a series of clear, composable transformation steps.
 
 ## Introduction
 
-Complex OpenTofu configurations often need to transform input variables through multiple steps before they're ready to use in resources. Chaining transformations through `locals` blocks keeps each step clear and testable — each local variable is a named intermediate result.
+Complex OpenTofu configurations often need to transform input variables through multiple steps before they're ready to use in resources. Chaining transformations through `locals` blocks keeps each step clear and testable - each local variable is a named intermediate result.
 
 ## The Transformation Chain Pattern
 
 ```hcl
 # INPUT: flat list of servers
+
 variable "servers" {
   default = [
     { name = "web-1",  type = "web", az = "us-east-1a", size = "small" },

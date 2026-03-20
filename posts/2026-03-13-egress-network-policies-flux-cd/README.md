@@ -37,6 +37,7 @@ Egress allowed to:
 
 ```yaml
 # apps/myapp/network-policies/egress-default-deny.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

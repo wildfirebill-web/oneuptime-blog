@@ -8,7 +8,7 @@ Description: Learn how to enforce resource tagging compliance using OpenTofu val
 
 ---
 
-Untagged resources make cost attribution, security audits, and compliance reporting impossible. Enforcing tags at multiple layers — OpenTofu plan time, AWS Organizations policy level, and Config rule level — creates defense in depth against untagged resources.
+Untagged resources make cost attribution, security audits, and compliance reporting impossible. Enforcing tags at multiple layers - OpenTofu plan time, AWS Organizations policy level, and Config rule level - creates defense in depth against untagged resources.
 
 ## Tagging Enforcement Layers
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # modules/tagging/variables.tf
+
 variable "required_tags" {
   type = object({
     Environment = string
@@ -182,8 +183,8 @@ resource "aws_cloudwatch_event_rule" "weekly_tag_report" {
 
 ## Best Practices
 
-- Enforce tags at three levels: OpenTofu (plan time), Organizations tag policy (API level), and Config (running resources) — each layer catches different gaps.
+- Enforce tags at three levels: OpenTofu (plan time), Organizations tag policy (API level), and Config (running resources) - each layer catches different gaps.
 - Use `validation` blocks with regex patterns to enforce tag formats, not just presence.
 - Enable AWS Organizations tag policies in reporting mode first, then switch to enforcement after fixing existing violations.
 - Generate a weekly tag compliance report so teams see their non-compliant resources and have time to fix them.
-- Use provider `default_tags` to apply mandatory tags automatically — if you rely on individual resource blocks, tags will be missed.
+- Use provider `default_tags` to apply mandatory tags automatically - if you rely on individual resource blocks, tags will be missed.

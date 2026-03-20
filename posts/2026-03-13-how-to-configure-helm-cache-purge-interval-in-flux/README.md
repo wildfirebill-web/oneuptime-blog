@@ -44,6 +44,7 @@ This ensures that memory from expired entries is reclaimed promptly.
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-purge-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

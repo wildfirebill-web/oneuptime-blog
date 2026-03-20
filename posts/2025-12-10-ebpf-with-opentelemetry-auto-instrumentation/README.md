@@ -144,6 +144,7 @@ This DaemonSet configuration deploys the eBPF agent on every node in your cluste
 
 ```yaml
 # eBPF agent runs on every node to observe all pods
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -746,7 +747,7 @@ securityContext:
     type: RuntimeDefault  # Use container runtime's default profile
 ```
 
-### Resource Limits
+Resource Limits
 
 Always set resource limits on eBPF agents to prevent them from consuming excessive node resources during high-traffic periods.
 

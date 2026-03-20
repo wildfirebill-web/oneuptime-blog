@@ -58,6 +58,7 @@ Get Ubuntu's patched kernel (includes Ubuntu-specific patches):
 
 ```bash
 # Install source for current running kernel
+
 sudo apt source linux-image-$(uname -r)
 
 # Or install build environment

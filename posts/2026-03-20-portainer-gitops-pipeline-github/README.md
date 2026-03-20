@@ -1,4 +1,4 @@
-# How to Set Up a Complete GitOps Pipeline with Portainer and GitHub
+# How to Set Up a Complete GitOps Pipeline with Portainer and GitHub (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ A complete GitOps pipeline with Portainer and GitHub means: code changes in GitH
 
 ## Architecture Overview
 
-```
+```bash
 Developer → Push to GitHub main branch
            ↓
        GitHub Actions
@@ -34,7 +34,7 @@ Developer → Push to GitHub main branch
 
 ## Step 1: Structure Your Repository
 
-```
+```text
 my-app/
 ├── .github/
 │   └── workflows/
@@ -49,7 +49,8 @@ my-app/
 ## Step 2: Write the Dockerfile
 
 ```dockerfile
-# Dockerfile — Multi-stage build
+# Dockerfile - Multi-stage build
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
@@ -71,7 +72,7 @@ CMD ["node", "dist/server.js"]
 ## Step 3: Create the Docker Compose Stack File
 
 ```yaml
-# docker-compose.yml — Portainer stack definition
+# docker-compose.yml - Portainer stack definition
 version: "3.8"
 
 services:
@@ -268,7 +269,7 @@ jobs:
               echo "Health check passed (attempt $i)!"
               exit 0
             fi
-            echo "Attempt $i/$MAX_RETRIES (HTTP $STATUS) — waiting 15s..."
+            echo "Attempt $i/$MAX_RETRIES (HTTP $STATUS) - waiting 15s..."
             sleep 15
           done
 

@@ -8,7 +8,7 @@ Description: Step-by-step guide to deploying a production-ready WordPress site u
 
 ## Introduction
 
-WordPress is one of the most popular applications deployed in Docker environments. Portainer's template system makes it easy to deploy a complete WordPress stack — including the database — in minutes. This guide walks through deploying WordPress using a Portainer template and configuring it for production use.
+WordPress is one of the most popular applications deployed in Docker environments. Portainer's template system makes it easy to deploy a complete WordPress stack - including the database - in minutes. This guide walks through deploying WordPress using a Portainer template and configuring it for production use.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ WordPress is one of the most popular applications deployed in Docker environment
 
 Fill in the template variables:
 
-```
+```text
 Stack name:           wordpress-site
 
 WordPress port:       80          (or 8080 to avoid conflicts)
@@ -61,7 +61,7 @@ Watch the output for any errors.
 2. The WordPress installation wizard appears
 3. Complete the setup:
 
-```
+```text
 Site Title:      My WordPress Site
 Username:        admin
 Password:        [strong-admin-password]
@@ -86,10 +86,10 @@ Site Address (URL):      https://myblog.example.com
 
 Via `wp-admin → Plugins → Add New`, install:
 
-- **Wordfence Security** — Firewall and malware scanner
-- **UpdraftPlus** — Backup solution
-- **WP Super Cache** — Caching for performance
-- **Yoast SEO** — SEO optimization
+- **Wordfence Security** - Firewall and malware scanner
+- **UpdraftPlus** - Backup solution
+- **WP Super Cache** - Caching for performance
+- **Yoast SEO** - SEO optimization
 
 ## Step 6: Set Up a Reverse Proxy with SSL
 
@@ -97,6 +97,7 @@ For production, place WordPress behind Nginx Proxy Manager or Traefik:
 
 ```yaml
 # Add to your WordPress stack Compose file
+
 services:
   wordpress:
     image: wordpress:latest

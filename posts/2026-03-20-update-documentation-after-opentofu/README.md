@@ -16,6 +16,7 @@ Search your repository for Terraform references:
 
 ```bash
 # Find all files mentioning Terraform
+
 grep -r "terraform" docs/ wiki/ README.md --include="*.md" -l
 
 # Find command references
@@ -87,7 +88,7 @@ Or on macOS with Homebrew:
 ```bash
 brew install opentofu
 ```
-```
+```hcl
 
 ## Updating auto-generated Docs with terraform-docs
 
@@ -117,4 +118,4 @@ Search your wiki for "Terraform" and systematically review each page. Focus on:
 
 ## Conclusion
 
-Documentation updates after migrating to OpenTofu are mostly mechanical — replacing `terraform` with `tofu` in command references. Automated search and replace handles the bulk of changes, while manual review ensures context-specific references like version numbers and installation instructions are correctly updated.
+Documentation updates after migrating to OpenTofu are mostly mechanical - replacing `terraform` with `tofu` in command references. Automated search and replace handles the bulk of changes, while manual review ensures context-specific references like version numbers and installation instructions are correctly updated.

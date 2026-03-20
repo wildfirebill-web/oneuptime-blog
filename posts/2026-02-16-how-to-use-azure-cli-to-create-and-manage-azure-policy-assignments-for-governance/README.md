@@ -41,6 +41,7 @@ Azure provides hundreds of built-in policy definitions. Before writing custom on
 
 ```bash
 # List all built-in policy definitions (there are hundreds)
+
 az policy definition list --query "[?policyType=='BuiltIn'].{Name:displayName, Id:name}" --output table
 
 # Search for policies related to a specific topic

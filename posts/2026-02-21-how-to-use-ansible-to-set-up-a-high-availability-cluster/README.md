@@ -31,6 +31,7 @@ graph TD
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     ha_nodes:

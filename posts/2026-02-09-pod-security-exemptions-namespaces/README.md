@@ -212,6 +212,7 @@ Track usage of exemptions to prevent abuse:
 
 ```bash
 # List exempted namespaces
+
 kubectl get namespaces -l pod-security.kubernetes.io/enforce=privileged
 
 # Find pods in exempted namespaces

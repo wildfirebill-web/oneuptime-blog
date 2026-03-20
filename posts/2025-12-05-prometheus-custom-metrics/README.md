@@ -219,6 +219,7 @@ import time
 import random
 
 # Counter
+
 http_requests_total = Counter(
     'http_requests_total',
     'Total number of HTTP requests',

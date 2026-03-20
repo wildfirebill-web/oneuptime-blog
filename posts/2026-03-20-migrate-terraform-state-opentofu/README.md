@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Migration, State Management, Infrastructure as Code
 
-Description: Learn how to safely migrate existing Terraform state files to OpenTofu — including state file format compatibility, backend migration, and validation steps to ensure continuity.
+Description: Learn how to safely migrate existing Terraform state files to OpenTofu - including state file format compatibility, backend migration, and validation steps to ensure continuity.
 
 ## Introduction
 
-Terraform and OpenTofu share the same state file format (JSON). Migrating state is straightforward — OpenTofu reads and writes the same `.tfstate` format. The main tasks are: replacing the `terraform` binary with `tofu`, running `tofu init`, and validating the state is readable before making any changes.
+Terraform and OpenTofu share the same state file format (JSON). Migrating state is straightforward - OpenTofu reads and writes the same `.tfstate` format. The main tasks are: replacing the `terraform` binary with `tofu`, running `tofu init`, and validating the state is readable before making any changes.
 
 ## Step 1: Install OpenTofu Alongside Terraform
 
 ```bash
 # macOS
+
 brew install opentofu
 
 # Linux
@@ -31,7 +32,7 @@ OpenTofu reads Terraform state files directly. Test in a non-production environm
 ```bash
 cd your-terraform-project/
 
-# Run tofu plan against the existing Terraform state — should show no changes
+# Run tofu plan against the existing Terraform state - should show no changes
 tofu init
 tofu plan
 
@@ -43,10 +44,10 @@ If `tofu plan` shows no changes, the state is fully compatible.
 
 ## Step 3: Remote Backend Migration
 
-For remote backends, no state migration is needed — OpenTofu points to the same backend:
+For remote backends, no state migration is needed - OpenTofu points to the same backend:
 
 ```hcl
-# backend.tf — same configuration works for both Terraform and OpenTofu
+# backend.tf - same configuration works for both Terraform and OpenTofu
 terraform {
   backend "s3" {
     bucket         = "my-company-terraform-state"  # Same bucket
@@ -65,7 +66,7 @@ tofu init
 # Validate state is intact
 tofu show   # Should display current state
 
-# Run plan — should be no changes
+# Run plan - should be no changes
 tofu plan
 ```
 
@@ -133,7 +134,7 @@ tofu plan  # Should show no changes again
 
 # Check state version
 cat .terraform/terraform.tfstate | jq '.version'
-# OpenTofu writes format version 4 — same as Terraform
+# OpenTofu writes format version 4 - same as Terraform
 ```
 
 ## Rollback Plan
@@ -145,16 +146,16 @@ If you need to roll back to Terraform temporarily:
 terraform init
 terraform plan  # Should show no changes
 
-# The state file format is identical — no conversion needed
+# The state file format is identical - no conversion needed
 ```
 
 ## Migration Checklist
 
-```
+```hcl
 [ ] Install OpenTofu
 [ ] Test on non-production environment first
 [ ] Run tofu init in the project directory
-[ ] Run tofu plan — verify no unexpected changes
+[ ] Run tofu plan - verify no unexpected changes
 [ ] Delete and regenerate .terraform.lock.hcl
 [ ] Update CI/CD to use tofu binary (see separate post)
 [ ] Run tofu apply on a low-risk change
@@ -165,4 +166,4 @@ terraform plan  # Should show no changes
 
 ## Conclusion
 
-Migrating Terraform state to OpenTofu requires no state file conversion — the formats are identical. The migration is: install `tofu`, run `tofu init`, verify `tofu plan` shows no changes, regenerate the lock file, and update CI/CD. Test in non-production first, maintain a rollback path to Terraform for the first few weeks, and migrate production after the non-production validation period.
+Migrating Terraform state to OpenTofu requires no state file conversion - the formats are identical. The migration is: install `tofu`, run `tofu init`, verify `tofu plan` shows no changes, regenerate the lock file, and update CI/CD. Test in non-production first, maintain a rollback path to Terraform for the first few weeks, and migrate production after the non-production validation period.

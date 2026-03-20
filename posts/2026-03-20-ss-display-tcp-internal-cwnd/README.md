@@ -12,6 +12,7 @@ Description: Use ss -i to display TCP internal statistics including congestion w
 
 ```bash
 # Show internal TCP info for all established connections
+
 ss -ti
 
 # With IPv4 filter
@@ -42,7 +43,7 @@ ss -ti
 
 ## Key Fields Explained
 
-```
+```yaml
 Field           Description                        What to Look For
 --------------  ---------------------------------  ----------------------------
 rtt:X/Y         Round-trip time / variance         X=avg, Y=mean deviation
@@ -100,7 +101,7 @@ ss -ti dst 10.0.0.50
 
 ```bash
 #!/bin/bash
-# tcp-health.sh — Monitor TCP connection health
+# tcp-health.sh - Monitor TCP connection health
 
 while true; do
     echo "=== TCP Health $(date '+%H:%M:%S') ==="
@@ -116,4 +117,4 @@ while true; do
 done
 ```
 
-`ss -i` provides the richest TCP connection data available on Linux — it's the primary tool for understanding why a specific connection is performing poorly.
+`ss -i` provides the richest TCP connection data available on Linux - it's the primary tool for understanding why a specific connection is performing poorly.

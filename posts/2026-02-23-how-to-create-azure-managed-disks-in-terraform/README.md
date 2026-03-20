@@ -28,6 +28,7 @@ Let's start with a straightforward managed disk:
 
 ```hcl
 # Resource group for our storage resources
+
 resource "azurerm_resource_group" "storage" {
   name     = "rg-storage-prod-eastus"
   location = "East US"

@@ -14,6 +14,7 @@ Description: Learn how to use lsof on Ubuntu to list open files, find which proc
 
 ```bash
 # Check if installed
+
 which lsof
 
 # Install if needed

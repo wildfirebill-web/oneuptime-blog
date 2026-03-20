@@ -14,8 +14,9 @@ Ensuring consistent IPv6 privacy settings across an entire organization requires
 
 Before deploying, define the policy in writing:
 
-```
+```text
 # IPv6 Privacy Policy v1.0
+
 # All managed Linux systems must:
 # 1. Use stable-privacy (RFC 7217) for address generation (addr_gen_mode=2)
 # 2. Generate temporary addresses (use_tempaddr=2)
@@ -171,4 +172,4 @@ echo "Report saved to $REPORT"
 
 ## Conclusion
 
-Organization-wide IPv6 privacy policies are most effective when deployed and enforced through configuration management systems like Ansible, Puppet, or Chef. Define the policy explicitly in documentation, implement it as code, and schedule regular compliance checks. This ensures that all systems — from newly provisioned VMs to long-running bare-metal servers — maintain consistent, auditable IPv6 privacy settings.
+Organization-wide IPv6 privacy policies are most effective when deployed and enforced through configuration management systems like Ansible, Puppet, or Chef. Define the policy explicitly in documentation, implement it as code, and schedule regular compliance checks. This ensures that all systems - from newly provisioned VMs to long-running bare-metal servers - maintain consistent, auditable IPv6 privacy settings.

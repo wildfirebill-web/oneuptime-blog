@@ -20,6 +20,7 @@ Start by identifying which IRQs are assigned to your network interface.
 
 ```bash
 # List all IRQs and their CPU affinity
+
 cat /proc/interrupts | head -5
 
 # Find IRQs for a specific NIC (e.g., eth0 or ens3)

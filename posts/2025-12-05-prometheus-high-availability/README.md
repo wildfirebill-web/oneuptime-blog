@@ -57,6 +57,7 @@ The simplest HA setup runs identical Prometheus servers.
 
 ```yaml
 # prometheus-1.yml
+
 global:
   scrape_interval: 15s
   external_labels:

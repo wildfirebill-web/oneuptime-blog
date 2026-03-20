@@ -33,6 +33,7 @@ ArgoCD 2.9 introduced several significant changes including improved Application
 
 ```bash
 # Verify you are on 2.8.x
+
 argocd version
 kubectl get deploy -n argocd -o jsonpath='{.items[*].spec.template.spec.containers[*].image}' | tr ' ' '\n' | sort -u
 ```

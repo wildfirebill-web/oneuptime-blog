@@ -28,6 +28,7 @@ This guide covers two approaches: managing replica count overlays in Kustomize a
 Define separate overlays with reduced replica counts for off-hours.
 ```yaml
 # clusters/dev/overlays/off-hours/replica-patch.yaml
+
 # Kustomize patch scaling all deployments to zero for off-hours
 apiVersion: apps/v1
 kind: Deployment

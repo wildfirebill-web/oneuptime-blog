@@ -28,6 +28,7 @@ The simplest pattern uses a boolean variable with count.
 
 ```hcl
 # variables.tf
+
 variable "enable_monitoring" {
   type        = bool
   default     = false

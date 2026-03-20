@@ -29,6 +29,7 @@ The key advantage over Hybrid Connections is that WCF Relay preserves the SOAP m
 
 ```bash
 # Create the Relay namespace
+
 az relay namespace create \
   --name my-wcf-relay-ns \
   --resource-group rg-relay \

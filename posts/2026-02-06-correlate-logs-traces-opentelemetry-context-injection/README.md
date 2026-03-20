@@ -41,6 +41,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # Set up the tracer provider
+
 provider = TracerProvider()
 provider.add_span_processor(BatchSpanExporter(OTLPSpanExporter()))
 trace.set_tracer_provider(provider)

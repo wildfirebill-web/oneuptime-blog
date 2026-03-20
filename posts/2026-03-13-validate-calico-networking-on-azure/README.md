@@ -24,6 +24,7 @@ A complete validation covers: Azure VM NIC settings, NSG rules, Calico component
 
 ```bash
 # Check IP Forwarding status on all worker VM NICs
+
 for vm in $(kubectl get nodes -o name | cut -d/ -f2); do
   NIC_ID=$(az vm show -g k8s-rg -n $vm \
     --query "networkProfile.networkInterfaces[0].id" -o tsv 2>/dev/null)

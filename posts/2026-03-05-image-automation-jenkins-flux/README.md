@@ -142,6 +142,7 @@ kubectl create secret docker-registry registry-auth \
 
 ```yaml
 # image-automation/image-repository.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

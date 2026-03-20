@@ -54,6 +54,7 @@ graph LR
 
 ```bash
 # Install aiocoap for Python CoAP support
+
 pip install aiocoap
 
 # For DTLS support (security)

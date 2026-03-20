@@ -107,6 +107,7 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.empty import EmptyOperator
 
 # Define default arguments that apply to all tasks in the DAG
+
 default_args = {
     "owner": "data-engineering",
     "depends_on_past": False,  # Each run is independent

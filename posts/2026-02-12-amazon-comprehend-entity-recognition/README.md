@@ -58,6 +58,7 @@ def extract_entities(text, language='en'):
     return dict(grouped)
 
 # Extract entities from a news article
+
 text = """
 Apple CEO Tim Cook announced at WWDC 2024 in San Jose that the company
 would invest $5 billion in artificial intelligence research. The initiative,

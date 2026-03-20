@@ -53,6 +53,7 @@ Before setting up multi-cluster, ensure you have:
 
 ```bash
 # Verify Linkerd CLI version (2.14+ recommended)
+
 linkerd version
 
 # Check cluster connectivity

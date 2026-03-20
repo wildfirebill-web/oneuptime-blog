@@ -65,6 +65,7 @@ The easiest approach is using a DNS provider with built-in GeoDNS:
 
 ```bash
 # Create a geolocation record set using AWS CLI
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z1234567890ABC \
   --change-batch '{

@@ -41,6 +41,7 @@ These commands verify your system meets the requirements for rootless Docker. Us
 
 ```bash
 # Check kernel version (5.11+ recommended, 4.18+ minimum)
+
 uname -r
 
 # Verify user namespace support is enabled

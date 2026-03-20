@@ -14,6 +14,7 @@ The OpenTelemetry plugin for ATS is available in the ATS source tree. Build it w
 
 ```bash
 # Build ATS with the OTel plugin
+
 cd trafficserver
 ./configure --enable-experimental-plugins
 make

@@ -29,6 +29,7 @@ Start by generating multiple age keys for different purposes or teams:
 
 ```bash
 # Generate a key for the platform team
+
 age-keygen -o platform-team.agekey
 # Output: public key: age1platform...
 

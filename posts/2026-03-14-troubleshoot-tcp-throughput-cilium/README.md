@@ -30,6 +30,7 @@ Determine whether the bottleneck is Cilium-specific or infrastructure-related:
 
 ```bash
 # Test 1: Host-to-host throughput (bypasses Cilium entirely)
+
 # SSH to node1 and run iperf3 server
 # From node2, run: iperf3 -c <node1-ip> -t 30 -P 4
 # If this is slow, the problem is infrastructure, not Cilium

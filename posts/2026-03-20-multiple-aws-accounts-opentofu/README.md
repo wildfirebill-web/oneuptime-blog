@@ -14,6 +14,7 @@ Organizations using AWS Organizations typically split workloads across multiple 
 
 ```hcl
 # CI/CD account: where OpenTofu runs
+
 # Has credentials that can assume roles in other accounts
 
 # Management/shared services account
@@ -126,7 +127,7 @@ aws_accounts = {
 ```
 
 ```hcl
-# providers.tf — use account IDs from variable
+# providers.tf - use account IDs from variable
 provider "aws" {
   alias  = "prod"
   region = var.region

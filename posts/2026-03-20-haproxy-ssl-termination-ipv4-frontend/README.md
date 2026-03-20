@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, SSL, TLS, IPv4, HTTPS, Certificate, Security
+Tags: HAProxy, SSL, TLS, IPv4, HTTPS, Certificates, Security
 
 Description: Configure HAProxy to terminate SSL/TLS connections on a specific IPv4 frontend, decrypting HTTPS traffic and forwarding plain HTTP to backend servers.
 
@@ -16,6 +16,7 @@ HAProxy requires PEM bundles containing the certificate, chain, and private key:
 
 ```bash
 # Combine certificate, chain, and key into a single PEM bundle
+
 # (HAProxy requires this single-file format)
 cat /etc/letsencrypt/live/example.com/fullchain.pem \
     /etc/letsencrypt/live/example.com/privkey.pem \
@@ -78,7 +79,7 @@ backend app_servers
 
 ## Multiple Certificates with SNI
 
-Load multiple certificates from a directory—HAProxy uses SNI to select the correct one:
+Load multiple certificates from a directory-HAProxy uses SNI to select the correct one:
 
 ```haproxy
 frontend https_in

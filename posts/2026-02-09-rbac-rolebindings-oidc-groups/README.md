@@ -22,6 +22,7 @@ Configure the Kubernetes API server to use an OIDC provider.
 
 ```yaml
 # kube-apiserver configuration
+
 apiVersion: v1
 kind: Pod
 metadata:

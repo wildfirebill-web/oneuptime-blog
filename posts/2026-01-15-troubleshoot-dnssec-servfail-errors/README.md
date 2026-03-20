@@ -57,6 +57,7 @@ Before diving into troubleshooting, ensure you have these tools available:
 
 ```bash
 # Install dig (part of bind-utils/dnsutils)
+
 # On Ubuntu/Debian
 sudo apt-get install dnsutils
 

@@ -24,6 +24,7 @@ Caching is the single most impactful optimization for most pipelines. GitLab CI 
 # .gitlab-ci.yml
 
 # Define global cache settings that apply to all jobs
+
 # Using cache:key ensures different branches get separate caches
 cache:
   # Use CI_COMMIT_REF_SLUG to create branch-specific caches
@@ -731,7 +732,7 @@ publish-package:
 
 10. **Use minimal base images** - Alpine, slim, or distroless images reduce pull times significantly.
 
-### Resource Management
+Resource Management
 
 11. **Right-size runners** - Match runner resources to job requirements. Do not use large runners for small jobs.
 

@@ -79,6 +79,7 @@ Here is a realistic example generating a Kubernetes ConfigMap with properly form
 
 ```yaml
 # k8s_configmap.yml - Generate Kubernetes ConfigMap
+
 - name: Generate application ConfigMap
   hosts: localhost
   vars:

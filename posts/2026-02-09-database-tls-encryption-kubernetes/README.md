@@ -24,6 +24,7 @@ Deploy cert-manager to handle certificate generation and renewal:
 
 ```bash
 # Add Jetstack Helm repository
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

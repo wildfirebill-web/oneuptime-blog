@@ -23,6 +23,7 @@ Install and configure the Alibaba Cloud CLI:
 
 ```bash
 # Install
+
 curl -O https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz
 tar -xvf aliyun-cli-linux-latest-amd64.tgz
 sudo mv aliyun /usr/local/bin/

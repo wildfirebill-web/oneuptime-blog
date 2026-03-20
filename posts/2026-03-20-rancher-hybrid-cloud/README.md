@@ -32,6 +32,7 @@ For true hybrid management, run Rancher in a location accessible from all enviro
 
 ```bash
 # Option A: On-premises management cluster (recommended for data sovereignty)
+
 # Install RKE2 HA on-premises and deploy Rancher there
 
 # Option B: Dedicated cloud VPC
@@ -111,7 +112,7 @@ subjectKind: Group
 ## Step 5: Deploy Applications Across Clouds with Fleet
 
 ```yaml
-# gitops/fleet.yaml — Deploy an app to all production clusters
+# gitops/fleet.yaml - Deploy an app to all production clusters
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -144,7 +145,7 @@ helm install rancher-monitoring \
 ```
 
 ```yaml
-# prometheus-federation.yaml — Federate metrics to central Prometheus
+# prometheus-federation.yaml - Federate metrics to central Prometheus
 # Add to the central Prometheus configuration
 scrape_configs:
   - job_name: 'federate-aws-cluster'
@@ -172,7 +173,7 @@ resources:
 ```
 
 ```yaml
-# gitops/fleet.yaml — Apply policies to all clusters
+# gitops/fleet.yaml - Apply policies to all clusters
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:

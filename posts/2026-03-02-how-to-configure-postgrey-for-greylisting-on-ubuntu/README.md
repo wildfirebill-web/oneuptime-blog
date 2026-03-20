@@ -22,6 +22,7 @@ This creates a delay for first-time senders, but most users do not notice becaus
 
 ```bash
 # Install Postgrey
+
 sudo apt update
 sudo apt install -y postgrey
 

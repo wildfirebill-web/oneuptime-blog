@@ -57,6 +57,7 @@ First, set up the networking components that allow Cloud EKM to reach your exter
 
 ```bash
 # Create a VPC network for EKM connectivity
+
 gcloud compute networks create ekm-network \
   --project=my-kms-project \
   --subnet-mode=custom

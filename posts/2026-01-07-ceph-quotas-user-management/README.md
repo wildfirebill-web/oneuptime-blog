@@ -78,6 +78,7 @@ The following command creates a new CephX user with specific capabilities. The `
 
 ```bash
 # Create a new CephX user with capabilities for a specific pool
+
 # -n: Specify the entity name (client.<username>)
 # --gen-key: Auto-generate a secret key
 # --cap mon: Monitor capabilities (usually 'r' for read)

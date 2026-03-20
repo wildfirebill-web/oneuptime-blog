@@ -1,8 +1,8 @@
-# How to Deploy ActiveMQ on Rancher
+# How to Deploy ActiveMQ on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, ActiveMQ, Message Queue, JMS
+Tags: Rancher, Kubernetes, ActiveMQ, Message Queues, JMS
 
 Description: Deploy Apache ActiveMQ Artemis on Rancher for JMS-compliant messaging with support for AMQP, STOMP, and MQTT protocols.
 
@@ -21,6 +21,7 @@ Apache ActiveMQ Artemis is the next-generation ActiveMQ broker that supports mul
 
 ```bash
 # Install ArtemisCloud Operator
+
 helm repo add artemiscloud https://artemiscloud.io/helm-charts
 helm repo update
 

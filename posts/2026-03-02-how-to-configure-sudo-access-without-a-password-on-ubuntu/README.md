@@ -35,6 +35,7 @@ sudo reads its configuration from `/etc/sudoers` and any files in `/etc/sudoers.
 
 ```bash
 # NEVER edit /etc/sudoers directly - always use visudo
+
 sudo visudo
 
 # Or edit a file in sudoers.d (preferred for custom configurations)

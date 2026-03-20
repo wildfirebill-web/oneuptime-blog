@@ -44,6 +44,7 @@ This is the default mode. AWS applies runtime updates to your function within ro
 
 ```bash
 # Set runtime management to Auto (this is the default)
+
 aws lambda put-runtime-management-config \
   --function-name my-function \
   --update-runtime-on "Auto"

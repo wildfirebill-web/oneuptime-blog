@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Low resource function (API handler)
+
 gcloud functions deploy api-handler \
   --gen2 \
   --runtime=nodejs20 \

@@ -25,6 +25,7 @@ Deploying ScyllaDB through Flux CD ensures that cluster topology, shard configur
 
 ```yaml
 # infrastructure/sources/scylla-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

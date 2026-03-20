@@ -24,6 +24,7 @@ Here is a playbook that sends a simple Teams notification using the `uri` module
 
 ```yaml
 # playbooks/deploy-with-teams.yml
+
 # Deploy application and send notifications to Microsoft Teams
 ---
 - name: Deploy with Teams notifications

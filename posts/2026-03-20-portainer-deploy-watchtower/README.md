@@ -1,4 +1,4 @@
-# How to Deploy Watchtower Alongside Portainer
+# How to Deploy Watchtower Alongside Portainer - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -91,7 +91,7 @@ services:
       WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL: "${SLACK_WEBHOOK_URL}"
 ```
 
-In monitor mode, Watchtower sends notifications about available updates without restarting containers — useful for evaluating the impact before enabling auto-updates.
+In monitor mode, Watchtower sends notifications about available updates without restarting containers - useful for evaluating the impact before enabling auto-updates.
 
 ## Step 4: Configure Private Registry Authentication
 
@@ -99,6 +99,7 @@ For containers from private registries, Watchtower needs Docker credentials:
 
 ```bash
 # On the Docker host, authenticate to your private registry
+
 docker login registry.example.com -u username -p password
 
 # This creates/updates ~/.docker/config.json

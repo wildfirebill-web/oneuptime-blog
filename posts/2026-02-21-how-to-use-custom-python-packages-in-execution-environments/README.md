@@ -18,6 +18,7 @@ Start with the EE definition:
 
 ```yaml
 # execution-environment.yml
+
 ---
 version: 3
 

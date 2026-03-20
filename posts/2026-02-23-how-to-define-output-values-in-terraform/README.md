@@ -77,7 +77,7 @@ output "database_endpoint" {
 
 You can output virtually any value in Terraform.
 
-### Resource Attributes
+Resource Attributes
 
 ```hcl
 output "instance_id" {
@@ -114,6 +114,7 @@ output "ssh_command" {
 
 ```hcl
 # Output from count-based resources
+
 output "instance_ids" {
   description = "IDs of all created instances"
   value       = aws_instance.app[*].id

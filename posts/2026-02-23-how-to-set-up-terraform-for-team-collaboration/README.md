@@ -31,6 +31,7 @@ The most common setup for AWS users:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-company-terraform-state"
@@ -278,7 +279,7 @@ Configure branch protection rules in GitHub:
 
 Run `terraform plan` automatically on pull requests so reviewers can see the proposed changes:
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
 name: Terraform Plan
 
@@ -317,9 +318,9 @@ jobs:
         with:
           script: |
             const output = `#### Terraform Plan
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
             *Pushed by: @${{ github.actor }}*`;
 
             github.rest.issues.createComment({
@@ -332,7 +333,7 @@ jobs:
       - name: Plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 ### Apply After Merge
 

@@ -173,6 +173,7 @@ Verify locality load balancing works by examining Envoy statistics:
 
 ```bash
 # Get a pod name
+
 POD=$(kubectl get pod -n bookinfo -l app=productpage -o jsonpath='{.items[0].metadata.name}')
 
 # Check Envoy locality stats

@@ -1,4 +1,4 @@
-# How to Handle State File Sensitive Data Exposure in OpenTofu
+# How to Handle State File Sensitive Data Exposure in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to identify, mitigate, and prevent sensitive data exposur
 
 ## Introduction
 
-OpenTofu state files contain the full configuration and attribute values of every managed resource — including secrets such as database passwords, API keys, and private keys. This makes state files a high-value target for attackers and a compliance concern for regulated industries. Understanding and mitigating sensitive data exposure is critical.
+OpenTofu state files contain the full configuration and attribute values of every managed resource - including secrets such as database passwords, API keys, and private keys. This makes state files a high-value target for attackers and a compliance concern for regulated industries. Understanding and mitigating sensitive data exposure is critical.
 
 ## What Kind of Data Ends Up in State?
 
@@ -20,7 +20,7 @@ State files store all resource attributes, including:
 - Initial admin passwords for services
 - IAM access key pairs
 
-Example — a state entry for an RDS instance includes the password in plaintext:
+Example - a state entry for an RDS instance includes the password in plaintext:
 
 ```json
 {
@@ -43,6 +43,7 @@ OpenTofu supports native state encryption. Configure it to protect data at rest:
 
 ```hcl
 # encryption.tf
+
 terraform {
   encryption {
     key_provider "pbkdf2" "my_passphrase" {
@@ -122,7 +123,7 @@ resource "aws_db_instance" "main" {
 Limit who can read the state file:
 
 ```hcl
-# S3 bucket policy — restrict state access to specific roles
+# S3 bucket policy - restrict state access to specific roles
 resource "aws_s3_bucket_policy" "state" {
   bucket = aws_s3_bucket.state.id
 

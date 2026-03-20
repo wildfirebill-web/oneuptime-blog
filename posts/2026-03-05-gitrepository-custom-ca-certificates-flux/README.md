@@ -27,6 +27,7 @@ Export the CA certificate from your Git server:
 
 ```bash
 # Method 1: Download from the server using openssl
+
 openssl s_client -connect git.internal.company.com:443 -showcerts </dev/null 2>/dev/null \
   | openssl x509 -outform PEM > ca-cert.pem
 

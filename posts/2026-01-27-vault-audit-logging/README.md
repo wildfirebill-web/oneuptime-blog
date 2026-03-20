@@ -66,6 +66,7 @@ The most common choice. Writes JSON logs to a file on the Vault server.
 
 ```bash
 # Enable file audit device
+
 # The path is where logs will be written on the Vault server filesystem
 vault audit enable file file_path=/var/log/vault/audit.log
 

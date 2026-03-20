@@ -34,6 +34,7 @@ You can configure this option in your Application manifest:
 
 ```yaml
 # Application with background prune propagation
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

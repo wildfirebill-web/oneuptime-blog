@@ -29,6 +29,7 @@ Use `calicoctl` to list all WorkloadEndpoints in the cluster:
 
 ```bash
 # List all WorkloadEndpoints across all namespaces
+
 calicoctl get workloadendpoints -o wide
 
 # List WorkloadEndpoints in a specific namespace

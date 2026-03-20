@@ -24,6 +24,7 @@ After running `calicoctl ipam release`, you need to verify that the output makes
 
 ```bash
 # Run the command and capture output
+
 calicoctl ipam release --ip=10.244.0.5 2>&1 | tee /tmp/ipam-output.txt
 
 # Check for errors in output

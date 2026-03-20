@@ -16,6 +16,7 @@ Take stock of your current setup:
 
 ```bash
 # What does your current structure look like?
+
 tree -L 3 infrastructure/
 
 # How many modules do you have?

@@ -59,6 +59,7 @@ Currently, only SHA-1 (algorithm 1) is standardized for NSEC3. While SHA-1 has k
 
 ```bash
 # SHA-1 is the only supported algorithm
+
 # Algorithm number: 1
 ```
 

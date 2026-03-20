@@ -346,6 +346,7 @@ data:
 
 ```bash
 # Check the Certificate status
+
 kubectl get certificate my-cert -n production -o yaml
 
 # Check the latest CertificateRequest

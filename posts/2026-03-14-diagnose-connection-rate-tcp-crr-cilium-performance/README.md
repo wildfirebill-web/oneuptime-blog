@@ -27,6 +27,7 @@ This guide walks through diagnosing TCP_CRR performance issues in Cilium-managed
 
 ```bash
 # Deploy netperf server
+
 kubectl run netperf-server --image=cilium/netperf \
   --overrides='{"spec":{"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- netserver -D

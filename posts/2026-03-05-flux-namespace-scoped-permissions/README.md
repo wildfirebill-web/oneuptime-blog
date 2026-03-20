@@ -25,6 +25,7 @@ Create Roles (not ClusterRoles) in each namespace that Flux manages:
 
 ```yaml
 # role-flux-deployer-per-namespace.yaml
+
 # Namespace-scoped Role for Flux to manage resources in the "webapp" namespace
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role

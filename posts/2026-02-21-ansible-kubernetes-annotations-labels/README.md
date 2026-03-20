@@ -34,6 +34,7 @@ The distinction matters:
 
 ```yaml
 # playbook: add-labels.yml
+
 # Adds a standard set of labels to a Deployment
 ---
 - name: Add labels to Kubernetes resources

@@ -31,6 +31,7 @@ The following CLI command enables static website hosting and specifies the index
 
 ```bash
 # Enable static website hosting on the storage account
+
 az storage blob service-properties update \
   --account-name stmywebsite2026 \
   --static-website \

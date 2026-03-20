@@ -202,6 +202,7 @@ Check that Prometheus has picked up your rules:
 
 ```bash
 # List all PrometheusRule resources
+
 kubectl get prometheusrules -n cattle-monitoring-system
 
 # Check Prometheus configuration

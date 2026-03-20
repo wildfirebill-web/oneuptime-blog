@@ -25,6 +25,7 @@ Velero Schedules are Kubernetes custom resources that define cron-based backup p
 
 ```yaml
 # infrastructure/velero/schedules/full-cluster-backup.yaml
+
 apiVersion: velero.io/v1
 kind: Schedule
 metadata:

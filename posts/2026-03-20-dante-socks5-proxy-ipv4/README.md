@@ -8,7 +8,7 @@ Description: Install and configure Dante as a SOCKS5 proxy server for IPv4 traff
 
 ## Introduction
 
-Dante is a free SOCKS server implementation supporting SOCKS4 and SOCKS5 protocols. SOCKS5 supports TCP and UDP proxying and optional username/password authentication. Unlike HTTP proxies, SOCKS5 is protocol-agnostic — it can proxy any TCP or UDP application.
+Dante is a free SOCKS server implementation supporting SOCKS4 and SOCKS5 protocols. SOCKS5 supports TCP and UDP proxying and optional username/password authentication. Unlike HTTP proxies, SOCKS5 is protocol-agnostic - it can proxy any TCP or UDP application.
 
 ## Installing Dante
 
@@ -19,10 +19,11 @@ sudo apt-get install -y dante-server
 
 ## Basic Dante Configuration (No Authentication)
 
-```
+```text
 # /etc/danted.conf
 
 # Log settings
+
 logoutput: /var/log/danted.log
 
 # Server external interface (connects to internet)
@@ -53,7 +54,7 @@ socks pass {
 
 ## Configuration with Username/Password Authentication
 
-```
+```text
 # /etc/danted.conf
 
 logoutput: /var/log/danted.log
@@ -107,7 +108,7 @@ sudo ss -tlnp | grep danted
 
 ## Restricting Access by Destination
 
-```
+```text
 # Block access to private RFC 1918 ranges
 socks block {
     from: 0.0.0.0/0 to: 192.168.0.0/16

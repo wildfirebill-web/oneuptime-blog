@@ -44,6 +44,7 @@ When a blob is overwritten and soft delete is enabled, the previous content is s
 
 ```bash
 # Enable blob soft delete with a 14-day retention period
+
 az storage blob service-properties delete-policy update \
   --account-name mystorageaccount \
   --enable true \

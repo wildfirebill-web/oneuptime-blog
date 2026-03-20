@@ -51,6 +51,7 @@ OPA runs as a standalone binary. Here are the installation options for different
 
 ```bash
 # Install using Homebrew
+
 brew install opa
 
 # Verify the installation

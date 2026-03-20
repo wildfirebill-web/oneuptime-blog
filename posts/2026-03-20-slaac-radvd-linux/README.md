@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: radvd, SLAAC, Linux, Router Advertisement, IPv6, Router
+Tags: Radvd, SLAAC, Linux, Router Advertisement, IPv6, Router
 
 Description: Configure the Router Advertisement Daemon (radvd) on Linux to send IPv6 Router Advertisements for SLAAC, including prefix configuration, RDNSS, and deployment best practices.
 
@@ -14,6 +14,7 @@ Description: Configure the Router Advertisement Daemon (radvd) on Linux to send 
 
 ```bash
 # Install radvd
+
 sudo apt-get install radvd         # Debian/Ubuntu
 sudo yum install radvd             # RHEL/CentOS
 sudo dnf install radvd             # Fedora

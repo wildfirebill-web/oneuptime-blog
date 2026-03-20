@@ -1,4 +1,4 @@
-# How to Deploy Nextcloud via Portainer
+# How to Deploy Nextcloud via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -102,6 +102,7 @@ output_buffering = 0
 
 ```bash
 # Access Nextcloud container and run occ commands
+
 docker exec -it --user www-data nextcloud php occ status
 
 # Add missing database indexes
@@ -146,4 +147,4 @@ services:
 
 ## Conclusion
 
-Nextcloud deployed via Portainer with PostgreSQL and Redis provides a complete Google Workspace alternative that you control. The background cron container ensures Nextcloud's housekeeping tasks run reliably. With the OnlyOffice or Collabora Office app, you get real-time collaborative document editing — all self-hosted.
+Nextcloud deployed via Portainer with PostgreSQL and Redis provides a complete Google Workspace alternative that you control. The background cron container ensures Nextcloud's housekeeping tasks run reliably. With the OnlyOffice or Collabora Office app, you get real-time collaborative document editing - all self-hosted.

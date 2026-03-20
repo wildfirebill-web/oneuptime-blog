@@ -171,6 +171,7 @@ For asynchronous invocations, configure a dead letter queue (DLQ) to capture eve
 
 ```yaml
 # CloudFormation: Lambda with SQS dead letter queue
+
 Resources:
   MyFunction:
     Type: AWS::Lambda::Function

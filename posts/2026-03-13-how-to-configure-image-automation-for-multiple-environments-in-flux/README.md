@@ -71,6 +71,7 @@ Each environment has its own ImagePolicy with different version constraints:
 
 ```yaml
 # Development - track latest builds
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:

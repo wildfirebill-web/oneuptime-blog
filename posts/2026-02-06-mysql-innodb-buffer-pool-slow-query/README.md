@@ -191,6 +191,7 @@ FLUSH PRIVILEGES;
 
 ```yaml
 # Buffer pool hit ratio low
+
 - alert: MySQLBufferPoolLowHitRatio
   condition: buffer_pool_hit_ratio < 0.95
   for: 15m

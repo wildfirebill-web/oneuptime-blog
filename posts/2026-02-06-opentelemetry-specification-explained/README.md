@@ -46,6 +46,7 @@ The API specification defines the interfaces that application developers interac
 
 ```python
 # The API specification defines interfaces like this (conceptually)
+
 # Actual implementation follows these contracts
 
 from opentelemetry import trace

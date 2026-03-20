@@ -39,6 +39,7 @@ DSC configurations are PowerShell scripts that use a special syntax. Here is a p
 
 ```powershell
 # DSC Configuration: WebServerConfig
+
 # Purpose: Ensure IIS is installed, the default website is configured,
 # and required Windows features are present
 

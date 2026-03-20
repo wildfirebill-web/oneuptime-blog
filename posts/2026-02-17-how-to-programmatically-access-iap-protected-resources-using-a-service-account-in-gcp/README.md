@@ -40,6 +40,7 @@ First, you need to know the OAuth client ID that IAP uses for your backend servi
 
 ```bash
 # Get the OAuth client ID for an IAP-protected backend service
+
 gcloud compute backend-services describe my-backend-service \
     --global \
     --format="value(iap.oauth2ClientId)" \

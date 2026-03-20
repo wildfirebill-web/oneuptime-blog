@@ -1,8 +1,8 @@
-# How to Run Commands as a Specific User in Container Console
+# How to Run Commands as a Specific User in Container Console - Container Console
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Console, User, Security
+Tags: Portainer, Docker, Console, USER, Security
 
 Description: Execute commands as a non-root user in the container console from Portainer for security-compliant container access.
 
@@ -22,6 +22,7 @@ Navigate to **Containers > [Container Name] > Stats** to view:
 
 ```bash
 # Access container logs via Docker CLI
+
 docker logs my-container
 
 # Follow logs in real time

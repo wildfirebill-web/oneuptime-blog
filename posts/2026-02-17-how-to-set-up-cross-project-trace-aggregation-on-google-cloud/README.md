@@ -50,6 +50,7 @@ Configure each service to export traces to the central project using OpenTelemet
 
 ```python
 # Service in project-backend sending traces to project-central
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

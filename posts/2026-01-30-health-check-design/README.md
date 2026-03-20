@@ -43,6 +43,7 @@ Use startup checks when your application:
 
 ```python
 # startup_check.py
+
 import time
 from flask import Flask, jsonify
 

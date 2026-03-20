@@ -33,6 +33,7 @@ Start with a minimal security context that most applications can use:
 
 ```yaml
 # secure-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

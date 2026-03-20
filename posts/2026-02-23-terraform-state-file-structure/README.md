@@ -252,6 +252,7 @@ Nested modules use dot notation: `module.networking.module.subnets`.
 
 ```bash
 # List all resources in state
+
 terraform state list
 
 # Show details for a specific resource

@@ -128,6 +128,7 @@ For teams with custom tooling, use the status page API to post updates programma
 
 ```bash
 # Create an incident via API
+
 curl -X POST https://oneuptime.com/api/status-page/incident \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \

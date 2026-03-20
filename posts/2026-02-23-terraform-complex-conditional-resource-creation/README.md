@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Conditional Logic, Dynamic Blocks, For_each, Infrastructure as Code
+Tags: Terraform, Conditional Logic, Dynamic Blocks, for_each, Infrastructure as Code
 
 Description: Master advanced conditional resource creation in Terraform using count, for_each, dynamic blocks, and local value composition for sophisticated infrastructure logic.
 
@@ -16,6 +16,7 @@ The basic pattern everyone learns first:
 
 ```hcl
 # Simple: create or skip a single resource
+
 resource "aws_cloudwatch_metric_alarm" "cpu" {
   count = var.enable_monitoring ? 1 : 0
 

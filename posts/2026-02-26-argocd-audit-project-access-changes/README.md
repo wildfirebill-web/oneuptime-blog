@@ -47,6 +47,7 @@ data:
 
 ```bash
 # View API server logs
+
 kubectl logs -n argocd deployment/argocd-server -f
 
 # Filter for specific events

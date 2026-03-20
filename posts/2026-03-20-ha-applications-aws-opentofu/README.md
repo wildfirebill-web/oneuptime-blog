@@ -14,6 +14,7 @@ High availability on AWS distributes workloads across multiple Availability Zone
 
 ```hcl
 # main.tf - HA VPC spanning 3 AZs
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"

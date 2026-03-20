@@ -41,6 +41,7 @@ First, create an Azure Automation account and enable State Configuration. You ca
 
 ```hcl
 # Terraform configuration for Azure Automation State Configuration
+
 resource "azurerm_resource_group" "dsc" {
   name     = "rg-dsc-linux"
   location = "eastus2"

@@ -62,6 +62,7 @@ Create a service account in your cluster:
 
 ```yaml
 # k8s/gitlab-deploy-sa.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

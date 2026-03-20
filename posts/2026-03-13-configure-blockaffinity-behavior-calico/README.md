@@ -28,6 +28,7 @@ View the current block-to-node assignments in your cluster.
 
 ```bash
 # List all BlockAffinity resources across the cluster
+
 calicoctl get blockaffinities -o wide
 
 # Check which blocks are assigned to a specific node

@@ -18,6 +18,7 @@ Add the Azure.Identity NuGet package to your project.
 
 ```bash
 # Add via .NET CLI
+
 dotnet add package Azure.Identity
 
 # You will also need the SDK for whatever service you are using

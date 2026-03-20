@@ -48,6 +48,7 @@ Create a service network:
 
 ```bash
 # Create the service network
+
 aws vpc-lattice create-service-network \
   --name "production-services" \
   --auth-type AWS_IAM \

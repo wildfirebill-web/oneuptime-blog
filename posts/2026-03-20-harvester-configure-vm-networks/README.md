@@ -33,6 +33,7 @@ Before creating VM networks, understand your physical infrastructure:
 
 ```bash
 # View the current cluster network configuration
+
 kubectl get clusternetwork -A
 
 # View network configurations (defines which NICs are used)
@@ -178,7 +179,7 @@ When creating or editing a VM:
 1. Go to the **Networks** tab
 2. Click **Add Network**
 3. Select the network from the dropdown
-4. Configure the MAC address (optional — auto-generated if left blank)
+4. Configure the MAC address (optional - auto-generated if left blank)
 
 ### Via kubectl
 

@@ -18,6 +18,7 @@ Only site administrators can access admin settings. You become a site admin eith
 
 ```bash
 # Check if your user is a site admin
+
 curl -s \
   --header "Authorization: Bearer ${TFE_TOKEN}" \
   "${TFE_URL}/api/v2/account/details" | \

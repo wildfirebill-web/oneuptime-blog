@@ -24,6 +24,7 @@ fatal: [server1]: UNREACHABLE! => {
 
 ```ini
 # ansible.cfg - NOT recommended for production
+
 [defaults]
 host_key_checking = False
 ```

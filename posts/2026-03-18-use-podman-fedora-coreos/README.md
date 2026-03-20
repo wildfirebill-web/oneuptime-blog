@@ -87,6 +87,7 @@ Fedora CoreOS encourages running containers as systemd services. Quadlet is the 
 
 ```ini
 # /etc/containers/systemd/webapp.container
+
 [Container]
 ContainerName=webapp
 Image=docker.io/library/nginx:latest

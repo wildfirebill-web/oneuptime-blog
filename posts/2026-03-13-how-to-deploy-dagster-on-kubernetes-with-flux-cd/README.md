@@ -28,6 +28,7 @@ In this guide you will deploy the full Dagster stack on Kubernetes using the off
 
 ```yaml
 # clusters/production/sources/dagster.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

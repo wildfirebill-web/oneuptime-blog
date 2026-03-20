@@ -31,6 +31,7 @@ Running `terraform providers` with no subcommand shows you a tree of provider re
 
 ```bash
 # Run from your Terraform project root
+
 terraform providers
 ```
 

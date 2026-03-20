@@ -230,6 +230,7 @@ If the error is due to data corruption, you may need to repair the database:
 
 ```bash
 # Stop MongoDB first
+
 sudo systemctl stop mongod
 
 # Run repair (standalone mode)

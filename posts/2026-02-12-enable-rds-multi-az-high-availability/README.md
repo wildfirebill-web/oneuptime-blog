@@ -128,6 +128,7 @@ Check your instance's Multi-AZ status and identify which AZ hosts the primary.
 
 ```bash
 # Check Multi-AZ status
+
 aws rds describe-db-instances \
   --db-instance-identifier my-ha-db \
   --query 'DBInstances[0].{MultiAZ:MultiAZ,AZ:AvailabilityZone,SecondaryAZ:SecondaryAvailabilityZone}' \

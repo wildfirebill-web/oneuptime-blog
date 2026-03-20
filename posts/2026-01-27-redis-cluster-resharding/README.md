@@ -31,6 +31,7 @@ Redis Cluster has exactly 16,384 hash slots. Every key belongs to one slot, dete
 
 ```bash
 # Hash slot calculation
+
 SLOT = CRC16(key) mod 16384
 ```
 

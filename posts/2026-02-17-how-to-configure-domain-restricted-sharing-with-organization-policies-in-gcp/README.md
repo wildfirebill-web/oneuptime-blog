@@ -46,6 +46,7 @@ The gcloud approach gives you more control and is easier to script. First, creat
 
 ```yaml
 # domain-restricted-sharing-policy.yaml
+
 # This restricts IAM bindings to identities from specified domains only
 constraint: constraints/iam.allowedPolicyMemberDomains
 listPolicy:

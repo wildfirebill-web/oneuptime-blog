@@ -44,6 +44,7 @@ First, create the topics and subscriptions that form the communication backbone 
 
 ```bash
 # Create topics for each saga step and their compensations
+
 gcloud pubsub topics create order-created
 gcloud pubsub topics create payment-completed
 gcloud pubsub topics create payment-failed

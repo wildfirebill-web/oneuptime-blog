@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Environment, Blue-Green, Consistency
+Tags: DevOps, Environments, Blue-Green, Consistency
 
 Description: Learn to implement environment parity for consistent staging and production environments.
 
@@ -46,6 +46,7 @@ Here is a Dockerfile that creates a consistent Node.js application environment.
 
 ```dockerfile
 # Use a specific version tag, never 'latest'
+
 FROM node:20.11.0-alpine3.19
 
 # Set working directory

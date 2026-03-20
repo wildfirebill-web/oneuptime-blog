@@ -77,6 +77,7 @@ frontend http_in
 
 ```haproxy
 # Define peer synchronization so multiple HAProxy nodes share stick table data
+
 peers my_cluster
     peer haproxy1 192.168.1.11:1024
     peer haproxy2 192.168.1.12:1024

@@ -27,6 +27,7 @@ First, create a Slack app and incoming webhook:
 
 ```yaml
 # .github/workflows/terraform-notify.yml
+
 name: Terraform with Notifications
 on:
   pull_request:
@@ -93,7 +94,7 @@ jobs:
                   \"type\": \"section\",
                   \"text\": {
                     \"type\": \"mrkdwn\",
-                    \"text\": \"\`\`\`${{ steps.plan.outputs.summary }}\`\`\`\"
+                    \"text\": \"```${{ steps.plan.outputs.summary }}```\"
                   }
                 },
                 {
@@ -202,7 +203,7 @@ jobs:
                   \"type\": \"section\",
                   \"text\": {
                     \"type\": \"mrkdwn\",
-                    \"text\": \"*Environment:* production\\n*Applied by:* ${{ github.actor }}\\n\\n\`\`\`$(echo \"$ERROR_CONTEXT\" | head -10)\`\`\`\"
+                    \"text\": \"*Environment:* production\\n*Applied by:* ${{ github.actor }}\\n\\n```$(echo \"$ERROR_CONTEXT\" | head -10)```\"
                   }
                 },
                 {

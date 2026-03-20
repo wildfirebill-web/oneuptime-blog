@@ -149,6 +149,7 @@ For more sophisticated tests, build a dedicated test image:
 
 ```dockerfile
 # Dockerfile.smoke-tests
+
 FROM python:3.11-slim
 WORKDIR /tests
 COPY smoke_tests/ .

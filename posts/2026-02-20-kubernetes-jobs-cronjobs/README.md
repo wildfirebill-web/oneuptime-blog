@@ -31,6 +31,7 @@ Here is a Job that runs a database migration:
 
 ```yaml
 # migration-job.yaml
+
 # A Job that runs a database migration script.
 # It will retry up to 3 times on failure.
 apiVersion: batch/v1

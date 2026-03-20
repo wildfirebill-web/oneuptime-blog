@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Iperf3, Networks, Benchmarking, Performance
+Tags: Ubuntu, iperf3, Networks, Benchmarking, Performance
 
 Description: Use iperf3 on Ubuntu to measure network throughput, UDP packet loss, jitter, and bandwidth between hosts with TCP and UDP tests and multi-stream scenarios.
 
@@ -14,6 +14,7 @@ iperf3 is the standard tool for measuring network bandwidth between two hosts. I
 
 ```bash
 # Install iperf3 on Ubuntu (install on both client and server machines)
+
 sudo apt update
 sudo apt install iperf3 -y
 

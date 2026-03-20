@@ -37,6 +37,7 @@ Factory floor edge nodes are typically small form-factor computers running K3s. 
 
 ```yaml
 # applicationsets/factory-edge-gateways.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

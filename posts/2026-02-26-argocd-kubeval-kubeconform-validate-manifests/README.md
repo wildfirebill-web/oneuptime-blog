@@ -31,6 +31,7 @@ For new projects, use kubeconform. If you have existing kubeval pipelines, consi
 
 ```bash
 # macOS
+
 brew install kubeconform
 
 # Linux

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Floating IPs, Infrastructure as Code, Networking
+Tags: OpenTofu, Hetzner Cloud, Floating IP, Infrastructure as Code, Networking
 
 Description: Learn how to create Hetzner Cloud Floating IPs with OpenTofu and assign them to servers for flexible, transferable public IP addresses.
 
@@ -65,6 +65,7 @@ resource "hcloud_server" "web" {
 
 ```yaml
 # cloud-init.yaml
+
 #cloud-config
 runcmd:
   - ip addr add ${floating_ip}/32 dev eth0

@@ -16,6 +16,7 @@ Ansible is ideal for this because a bastion host configuration needs to be rock-
 
 ```yaml
 # roles/bastion/defaults/main.yml - Bastion host configuration
+
 bastion_ssh_port: 22
 bastion_allowed_ssh_cidrs:
   - 0.0.0.0/0

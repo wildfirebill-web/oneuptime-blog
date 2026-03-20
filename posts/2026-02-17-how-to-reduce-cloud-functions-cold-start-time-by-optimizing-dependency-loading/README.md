@@ -106,6 +106,7 @@ Check your dependency sizes:
 
 ```bash
 # List the size of each dependency in node_modules
+
 du -sh node_modules/* | sort -rh | head -20
 ```
 

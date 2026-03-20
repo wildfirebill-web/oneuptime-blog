@@ -33,6 +33,7 @@ Check if the helm-controller has been OOM-killed:
 
 ```bash
 # Check for OOMKilled status on helm-controller pods
+
 kubectl get pods -n flux-system -l app=helm-controller -o wide
 
 # Look at the pod's last termination reason

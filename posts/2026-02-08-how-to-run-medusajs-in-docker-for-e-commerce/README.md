@@ -25,6 +25,7 @@ Verify your Docker setup.
 
 ```bash
 # Confirm Docker and Compose are available
+
 docker --version
 docker compose version
 ```

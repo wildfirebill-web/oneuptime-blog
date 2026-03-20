@@ -18,6 +18,7 @@ Before diving into long syntax, here is what the short syntax looks like:
 
 ```yaml
 # docker-compose.yml - Short syntax port examples
+
 services:
   web:
     image: nginx:alpine

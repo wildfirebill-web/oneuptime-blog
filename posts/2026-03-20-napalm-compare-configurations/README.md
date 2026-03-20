@@ -26,6 +26,7 @@ device = driver(
 device.open()
 
 # Load intended config from file
+
 device.load_merge_candidate(filename='/etc/network/configs/router01.cfg')
 
 # Get the diff between running and intended

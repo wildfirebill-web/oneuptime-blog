@@ -35,6 +35,7 @@ To make `nomodeset` permanent while you fix the underlying driver:
 
 ```bash
 # Open the GRUB configuration
+
 sudo nano /etc/default/grub
 
 # Find this line:

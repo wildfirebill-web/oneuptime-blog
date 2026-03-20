@@ -33,6 +33,7 @@ Start with the basics - is your network interface up and properly configured?
 
 ```bash
 # List all network interfaces and their state
+
 ip link show
 # Look for "state DOWN" which indicates a disabled interface
 

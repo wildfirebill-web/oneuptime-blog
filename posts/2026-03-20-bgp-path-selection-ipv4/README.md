@@ -12,26 +12,27 @@ When BGP receives multiple paths to the same IPv4 prefix from different peers, i
 
 ## The BGP Path Selection Algorithm
 
-BGP evaluates attributes in strict order — the first differentiating attribute wins:
+BGP evaluates attributes in strict order - the first differentiating attribute wins:
 
-```
-1. Weight (Cisco-proprietary, highest wins — local to router only)
-2. Local Preference (highest wins — propagated within AS)
+```text
+1. Weight (Cisco-proprietary, highest wins - local to router only)
+2. Local Preference (highest wins - propagated within AS)
 3. Locally originated (prefer routes originated by this router)
 4. AS Path length (shortest wins)
 5. Origin code (IGP < EGP < Incomplete)
-6. MED / Multi-Exit Discriminator (lowest wins — sent to eBGP peers)
+6. MED / Multi-Exit Discriminator (lowest wins - sent to eBGP peers)
 7. eBGP over iBGP (prefer externally learned)
 8. IGP metric to next-hop (lowest wins)
 9. Oldest eBGP route (prefer more stable)
-10. Router ID (lowest BGP Router ID wins — tiebreaker)
-11. Neighbor IP address (lowest — final tiebreaker)
+10. Router ID (lowest BGP Router ID wins - tiebreaker)
+11. Neighbor IP address (lowest - final tiebreaker)
 ```
 
 ## Viewing BGP Path Selection in FRR
 
 ```bash
 # Show all paths for a prefix and which is selected (marked with >)
+
 vtysh -c "show ip bgp 10.10.0.0/24"
 
 # Example output:
@@ -95,7 +96,7 @@ router bgp 65001
 # Show why a specific path was selected
 vtysh -c "show ip bgp 10.10.0.0/24 bestpath"
 
-# Show BGP summary — number of prefixes and neighbor status
+# Show BGP summary - number of prefixes and neighbor status
 vtysh -c "show ip bgp summary"
 
 # Show the installed route in the kernel RIB

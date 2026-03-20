@@ -26,6 +26,7 @@ Start by confirming which types of external connectivity are broken.
 
 ```bash
 # Create a test pod for connectivity testing
+
 kubectl run connectivity-test --image=nicolaka/netshoot --restart=Never -- sleep 3600
 
 # Test DNS resolution (required before HTTP tests)

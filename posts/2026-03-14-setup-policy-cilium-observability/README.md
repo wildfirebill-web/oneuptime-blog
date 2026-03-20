@@ -30,6 +30,7 @@ Deploy Cilium with Hubble observability features:
 
 ```bash
 # Add the Cilium Helm repository
+
 helm repo add cilium https://helm.cilium.io/
 helm repo update
 

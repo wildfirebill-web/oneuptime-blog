@@ -19,6 +19,7 @@ When a Lambda function invoked asynchronously fails after all retries, the event
 
 ```hcl
 # Standard SQS queue as Dead Letter Queue for Lambda failures
+
 resource "aws_sqs_queue" "lambda_dlq" {
   name                      = "${var.function_name}-dlq"
   message_retention_seconds = 1209600  # 14 days (maximum)

@@ -27,6 +27,7 @@ Check the status of all Helm releases.
 
 ```bash
 # List all helm releases in the default namespace (flux-system)
+
 flux get helmreleases
 
 # List all helm releases across all namespaces

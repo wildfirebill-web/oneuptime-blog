@@ -33,6 +33,7 @@ etcd is a distributed, reliable key-value store for the most critical data of a 
 
 ```bash
 # Set version
+
 ETCD_VER=v3.5.11
 
 # Download

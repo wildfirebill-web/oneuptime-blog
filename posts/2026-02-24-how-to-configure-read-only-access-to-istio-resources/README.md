@@ -303,6 +303,7 @@ Test all common operations to make sure write access is properly blocked:
 
 ```bash
 # Should work - reading resources
+
 kubectl auth can-i get virtualservices.networking.istio.io --all-namespaces \
   --as-group=security-auditors --as=auditor1
 # Expected: yes

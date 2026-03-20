@@ -31,6 +31,7 @@ Work through the sections in order. Each section addresses a specific category o
 
 ```bash
 # Document the stuck state
+
 echo "=== Stuck Calico resources ==="
 kubectl get all -n kube-system | grep calico
 kubectl get crd | grep calico

@@ -18,6 +18,7 @@ A prepared statement is a named query template with `?` placeholders where param
 
 ```bash
 # Create a prepared statement for looking up sales by region and date range
+
 aws athena create-prepared-statement \
     --statement-name "sales_by_region" \
     --work-group "primary" \

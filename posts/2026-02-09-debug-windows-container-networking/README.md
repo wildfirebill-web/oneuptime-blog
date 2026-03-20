@@ -26,6 +26,7 @@ Start with fundamental connectivity tests. Verify the pod has an IP address:
 kubectl get pods -o wide
 
 # Check specific pod details
+
 kubectl describe pod <windows-pod-name>
 ```
 

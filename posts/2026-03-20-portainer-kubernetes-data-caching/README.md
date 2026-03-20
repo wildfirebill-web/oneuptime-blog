@@ -1,4 +1,4 @@
-# How to Enable Application Data Caching for Kubernetes in Portainer
+# How to Enable Application Data Caching for Kubernetes in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -44,6 +44,7 @@ The cache is refreshed on a configurable interval and when you manually trigger 
 
 ```bash
 # The cache sync interval is tied to the snapshot interval
+
 # To force an immediate cache refresh, restart Portainer
 docker restart portainer
 
@@ -66,7 +67,7 @@ docker logs portainer 2>&1 | grep -i "cache" | tail -20
 
 | Setting | Performance | Data Freshness |
 |---|---|---|
-| Caching OFF | Slower — live API calls | Always current |
-| Caching ON | Faster — cached responses | May be seconds/minutes stale |
+| Caching OFF | Slower - live API calls | Always current |
+| Caching ON | Faster - cached responses | May be seconds/minutes stale |
 
 For development clusters where you need to see changes immediately, keep caching off. For production monitoring where stability is prioritized, enable caching.

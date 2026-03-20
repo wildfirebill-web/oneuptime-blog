@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Local, Best Practices, Infrastructure as Code
+Tags: Terraform, HCL, Variables, Locals, Best Practices, Infrastructure as Code
 
 Description: Understand when to use Terraform input variables versus local values, with clear guidelines and practical examples that help you structure your configurations correctly.
 
@@ -20,6 +20,7 @@ This post gives you clear guidelines for when to use each, with examples that sh
 
 ```hcl
 # Variable - the caller sets this
+
 variable "environment" {
   description = "Deployment environment"
   type        = string

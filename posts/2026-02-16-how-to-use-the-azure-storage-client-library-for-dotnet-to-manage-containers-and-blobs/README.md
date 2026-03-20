@@ -16,6 +16,7 @@ Add the required NuGet packages to your project:
 
 ```bash
 # Install the Azure Storage Blobs package and Azure Identity for authentication
+
 dotnet add package Azure.Storage.Blobs
 dotnet add package Azure.Identity
 ```

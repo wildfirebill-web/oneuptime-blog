@@ -32,6 +32,7 @@ On the KVM host:
 
 ```bash
 # Install KVM and libvirt
+
 sudo apt-get update
 sudo apt-get install -y \
   qemu-kvm \

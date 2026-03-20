@@ -24,6 +24,7 @@ Check GPU topology:
 
 ```bash
 # Run nvidia-smi topo command on GPU node
+
 kubectl debug node/<gpu-node> -it --image=nvidia/cuda:12.0.0-base-ubuntu22.04 -- \
   nsenter -t 1 -m -- nvidia-smi topo -m
 

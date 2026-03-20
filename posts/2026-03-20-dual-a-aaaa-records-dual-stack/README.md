@@ -38,6 +38,7 @@ ns1     3600    IN  AAAA    2001:db8::200
 
 ```bash
 # Check both record types exist for the same hostname
+
 dig A www.example.com +short
 dig AAAA www.example.com +short
 
@@ -138,4 +139,4 @@ curl -v https://www.example.com/ 2>&1 | grep "Connected to"
 
 ## Summary
 
-Proper dual-stack DNS requires both A and AAAA records with matching TTLs for every hostname. Audit your zones to find hostnames missing either record type. With both records present, modern clients use Happy Eyeballs to automatically prefer IPv6 while falling back to IPv4 when needed — providing the best experience for all clients without any additional configuration.
+Proper dual-stack DNS requires both A and AAAA records with matching TTLs for every hostname. Audit your zones to find hostnames missing either record type. With both records present, modern clients use Happy Eyeballs to automatically prefer IPv6 while falling back to IPv4 when needed - providing the best experience for all clients without any additional configuration.

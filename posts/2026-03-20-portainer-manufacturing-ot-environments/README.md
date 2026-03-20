@@ -8,7 +8,7 @@ Description: Configure Portainer to manage containerized OPC-UA servers, MES int
 
 ---
 
-Modern manufacturing plants run a mix of OT (Operational Technology) systems — PLCs, SCADA, MES — and increasingly containerized middleware that bridges these systems to IT analytics platforms. Portainer manages these containerized workloads at the edge while respecting the isolation requirements of manufacturing OT networks.
+Modern manufacturing plants run a mix of OT (Operational Technology) systems - PLCs, SCADA, MES - and increasingly containerized middleware that bridges these systems to IT analytics platforms. Portainer manages these containerized workloads at the edge while respecting the isolation requirements of manufacturing OT networks.
 
 ## Manufacturing Container Use Cases
 
@@ -24,19 +24,20 @@ Modern manufacturing plants run a mix of OT (Operational Technology) systems —
 
 Organize manufacturing equipment into Portainer Edge Groups by line or cell:
 
-```
+```text
 Edge Group: line-1-assembly
 Edge Group: line-2-painting
 Edge Group: line-3-testing
 Edge Group: utilities-monitoring
 ```
 
-This enables targeted deployments — update only the assembly line containers without touching painting or testing.
+This enables targeted deployments - update only the assembly line containers without touching painting or testing.
 
 ## Step 2: Deploy OPC-UA Gateway Stack
 
 ```yaml
 # opcua-gateway-stack.yml
+
 version: "3.8"
 
 services:
@@ -73,7 +74,7 @@ Manufacturing plants often have weekly maintenance windows. Use Edge Jobs to aut
 
 ```bash
 #!/bin/bash
-# Maintenance job — run during planned downtime
+# Maintenance job - run during planned downtime
 # Pull updated images from local registry
 docker pull industrial-registry.internal/opcua-bridge:2.4.2
 docker pull industrial-registry.internal/mqtt-forwarder:1.1.1

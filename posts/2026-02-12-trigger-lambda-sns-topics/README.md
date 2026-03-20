@@ -95,6 +95,7 @@ These commands set up Lambda as an SNS subscriber:
 
 ```bash
 # Grant SNS permission to invoke the Lambda function
+
 aws lambda add-permission \
   --function-name order-processor \
   --statement-id sns-invoke \

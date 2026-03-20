@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, IPv4, hosts allow, Access Control, Security, Subnet
+Tags: Samba, IPv4, Hosts allow, Access Control, Security, Subnets
 
 Description: Use Samba's hosts allow and hosts deny directives to restrict SMB/CIFS access to specific IPv4 addresses and subnets at the global and per-share level.
 
 ## Introduction
 
-Samba's `hosts allow` and `hosts deny` directives control which client IP addresses can connect, independent of Samba authentication. These work at the connection level—denied clients never get a login prompt. This adds a network-level access control layer before user authentication.
+Samba's `hosts allow` and `hosts deny` directives control which client IP addresses can connect, independent of Samba authentication. These work at the connection level-denied clients never get a login prompt. This adds a network-level access control layer before user authentication.
 
 ## Global hosts allow Configuration
 
@@ -34,7 +34,7 @@ Samba's `hosts allow` and `hosts deny` directives control which client IP addres
 [global]
    workgroup = WORKGROUP
    security = user
-   # No global hosts allow — set per share
+   # No global hosts allow - set per share
 
 [public]
    path = /srv/samba/public
@@ -67,6 +67,7 @@ Samba's `hosts allow` and `hosts deny` directives control which client IP addres
 
 ```bash
 # Individual IP
+
 hosts allow = 10.0.0.5
 
 # Multiple IPs (space-separated)

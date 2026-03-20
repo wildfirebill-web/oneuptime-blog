@@ -25,6 +25,7 @@ GCP offers several types of NEGs, each suited for different architectures:
 
 ```hcl
 # main.tf - Standard Google provider setup
+
 terraform {
   required_version = ">= 1.0"
 

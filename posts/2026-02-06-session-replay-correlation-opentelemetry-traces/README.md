@@ -270,6 +270,7 @@ On the backend side, extract these headers and add them to your server-side span
 
 ```python
 # middleware/session_context.py
+
 from opentelemetry import trace
 
 class SessionContextMiddleware:

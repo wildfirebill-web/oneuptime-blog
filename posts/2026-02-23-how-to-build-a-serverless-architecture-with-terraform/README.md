@@ -47,6 +47,7 @@ First, configure the AWS provider and state backend:
 
 ```hcl
 # main.tf - Provider and backend configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

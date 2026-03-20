@@ -29,6 +29,7 @@ Start by verifying that your network interfaces are up and have the correct addr
 
 ```bash
 # List all network interfaces
+
 talosctl -n <node-ip> get links
 
 # Check IP addresses assigned to interfaces

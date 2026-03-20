@@ -20,6 +20,7 @@ There are two levels of SSL configuration: enabling SSL support (allowing SSL co
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

@@ -386,6 +386,7 @@ Istio automatically collects metrics for the gateway. Query them with Prometheus
 
 ```bash
 # Request rate
+
 istio_requests_total{destination_service_namespace="default",reporter="source"}
 
 # Request duration

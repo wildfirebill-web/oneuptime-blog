@@ -43,6 +43,7 @@ You can run GoogleSQL queries using the `cbt` CLI tool:
 
 ```bash
 # Run a GoogleSQL query against a Bigtable table
+
 cbt -project=my-project -instance=my-instance sql "SELECT * FROM user_activity LIMIT 10"
 ```
 

@@ -23,6 +23,7 @@ This guide covers zero trust High-Connection Workloads in Calico with production
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

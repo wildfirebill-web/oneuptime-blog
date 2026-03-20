@@ -1,4 +1,4 @@
-# How to Configure Git Webhooks for Auto-Updates in Portainer
+# How to Configure Git Webhooks for Auto-Updates in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to set up Git webhooks in Portainer for instant stack red
 
 ## Introduction
 
-Git webhooks provide near-instant deployment triggers — when you push to your repository, the Git host immediately calls Portainer's webhook URL, triggering a stack update within seconds. This is faster than polling-based updates and the preferred approach when Portainer is accessible from the internet or your Git host.
+Git webhooks provide near-instant deployment triggers - when you push to your repository, the Git host immediately calls Portainer's webhook URL, triggering a stack update within seconds. This is faster than polling-based updates and the preferred approach when Portainer is accessible from the internet or your Git host.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Git webhooks provide near-instant deployment triggers — when you push to your 
 
 ## How Webhooks Work
 
-```
+```text
 1. Developer pushes commit to Git repository
 2. Git host sends POST request to Portainer webhook URL
 3. Portainer receives request → pulls latest commit
@@ -35,8 +35,8 @@ Total time: typically under 30 seconds
 2. Go to **Stacks** and click your Git-connected stack.
 3. Find the **GitOps updates** section.
 4. Enable the **Webhook** toggle.
-5. Copy the generated webhook URL — it will look like:
-   ```
+5. Copy the generated webhook URL - it will look like:
+   ```text
    https://portainer.example.com/api/stacks/webhooks/abc123-def456-ghi789
    ```
 6. Click **Save**.
@@ -50,6 +50,7 @@ ENDPOINT_ID=1
 STACK_ID=3
 
 # Enable webhook (Portainer generates the token automatically)
+
 curl -s -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -127,7 +128,7 @@ This gives you more control than a direct repository webhook.
 
 ## Step 6: Secure Your Webhook
 
-The webhook URL itself is the secret — treat it like a password:
+The webhook URL itself is the secret - treat it like a password:
 
 ```bash
 # Store webhook URL in CI/CD secrets
@@ -140,7 +141,7 @@ curl -X POST "$PORTAINER_WEBHOOK_URL"
 
 Rotate the webhook if it's compromised:
 1. In Portainer, disable the webhook toggle.
-2. Re-enable it — Portainer generates a new token.
+2. Re-enable it - Portainer generates a new token.
 3. Update the webhook URL in your Git repository settings.
 
 ## Step 7: Test the Webhook

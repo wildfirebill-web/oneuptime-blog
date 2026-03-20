@@ -39,6 +39,7 @@ kubectl -n kube-system exec "$CILIUM_POD" -c cilium-agent -- \
 ```bash
 #!/bin/bash
 # parse-bgp-route-policies.sh
+
 INPUT="${1:-/tmp/bgp-route-policies-output.txt}"
 
 # Extract data rows (skip header)

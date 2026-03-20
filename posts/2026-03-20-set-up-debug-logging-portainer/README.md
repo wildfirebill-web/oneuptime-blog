@@ -8,7 +8,7 @@ Description: Enable debug logging in Portainer to capture detailed operational l
 
 ---
 
-When Portainer behaves unexpectedly — authentication fails, environments won't connect, or deployments error out — debug logging provides the detailed output needed to diagnose the root cause.
+When Portainer behaves unexpectedly - authentication fails, environments won't connect, or deployments error out - debug logging provides the detailed output needed to diagnose the root cause.
 
 ## Enable Debug Logging at Startup
 
@@ -16,6 +16,7 @@ Pass the `--log-level` flag when starting Portainer:
 
 ```bash
 # Start Portainer with debug logging enabled
+
 # Valid levels: DEBUG, INFO, WARN, ERROR
 docker run -d \
   -p 8000:8000 \

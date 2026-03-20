@@ -14,6 +14,7 @@ Compliance automation with Ansible turns manual audit checklists into executable
 
 ```yaml
 # roles/compliance/tasks/main.yml
+
 # Main compliance enforcement playbook
 - name: Include compliance checks
   ansible.builtin.include_tasks: "{{ item }}.yml"

@@ -305,6 +305,7 @@ Common WebSocket problems and how to troubleshoot them:
 
 ```bash
 # Check if the upgrade is happening
+
 curl -v -H "Upgrade: websocket" -H "Connection: Upgrade" http://ws-service.default.svc.cluster.local/ws
 
 # Check Envoy logs for upgrade requests

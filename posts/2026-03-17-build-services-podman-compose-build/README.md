@@ -18,6 +18,7 @@ When your compose file includes services with a `build` section, `podman-compose
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   app:

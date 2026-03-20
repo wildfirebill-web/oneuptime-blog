@@ -21,6 +21,7 @@ The lock file records two things for each provider:
 
 ```hcl
 # .terraform.lock.hcl
+
 provider "registry.terraform.io/hashicorp/aws" {
   version     = "5.35.0"
   constraints = "~> 5.35.0"

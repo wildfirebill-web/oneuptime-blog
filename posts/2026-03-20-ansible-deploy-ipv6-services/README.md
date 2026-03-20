@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, Services, nginx, Apache, Deployment, Automation
+Tags: Ansible, IPv6, Services, Nginx, Apache, Deployment, Automation
 
 Description: A guide to deploying IPv6-enabled services (nginx, Apache, SSH) on Linux servers using Ansible, ensuring services bind to IPv6 addresses.
 
-Deploying an IPv6 service requires more than just enabling IPv6 on the network — the application must also be configured to listen on IPv6 addresses. This guide covers deploying and verifying nginx, Apache, and SSH for IPv6 with Ansible.
+Deploying an IPv6 service requires more than just enabling IPv6 on the network - the application must also be configured to listen on IPv6 addresses. This guide covers deploying and verifying nginx, Apache, and SSH for IPv6 with Ansible.
 
 ## Deploy nginx with IPv6 Support
 
 ```yaml
 # deploy-nginx-ipv6.yml - Install and configure nginx to listen on IPv6
+
 ---
 - name: Deploy nginx with IPv6 support
   hosts: web_servers

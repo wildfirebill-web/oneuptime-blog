@@ -16,6 +16,7 @@ Your RHEL system must be joined to an Active Directory domain using `realm join`
 
 ```bash
 # Verify domain membership
+
 realm list
 
 # Confirm SSSD is running with the AD provider

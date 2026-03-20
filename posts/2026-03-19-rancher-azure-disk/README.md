@@ -259,6 +259,7 @@ ZRS replicates data across three availability zones, providing higher durability
 
 ```bash
 # List PVCs
+
 kubectl get pvc --all-namespaces
 
 # Check CSI driver health

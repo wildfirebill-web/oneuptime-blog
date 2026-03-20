@@ -31,6 +31,7 @@ The fastest way to enable an API is with gcloud:
 
 ```bash
 # Enable the Compute Engine API
+
 gcloud services enable compute.googleapis.com --project=my-project
 ```
 

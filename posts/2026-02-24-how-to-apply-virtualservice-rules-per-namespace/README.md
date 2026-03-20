@@ -76,6 +76,7 @@ Each namespace can have its own VirtualService for the same host:
 
 ```yaml
 # In the team-a namespace - team-a's view of the service
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

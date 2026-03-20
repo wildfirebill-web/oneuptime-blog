@@ -14,6 +14,7 @@ Description: Learn how to use nslookup to query and verify IPv6 AAAA records fro
 
 ```bash
 # Query AAAA record for a domain
+
 nslookup -type=AAAA example.com
 
 # Short form (some versions accept -query= as well)
@@ -28,7 +29,7 @@ nslookup -type=AAAA example.com 2001:4860:4860::8888
 
 ## Understanding nslookup Output
 
-```
+```bash
 $ nslookup -type=AAAA google.com 8.8.8.8
 
 Server:     8.8.8.8           ← DNS server used for query

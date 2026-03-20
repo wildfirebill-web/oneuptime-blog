@@ -29,6 +29,7 @@ Check the current state first.
 
 ```bash
 # Check if forwarding is already enabled
+
 sysctl net.ipv4.ip_forward
 
 # 0 means disabled, 1 means enabled

@@ -57,6 +57,7 @@ edition = "2021"
 
 [lib]
 # Expose the library for integration tests
+
 name = "myapp"
 path = "src/lib.rs"
 

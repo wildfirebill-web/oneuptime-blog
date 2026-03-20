@@ -26,6 +26,7 @@ GitHub Actions needs credentials to deploy to your Azure subscription. The clean
 
 ```bash
 # Create a service principal with Contributor access to your resource group
+
 # This limits the scope so the credential cannot modify other resource groups
 az ad sp create-for-rbac \
   --name "github-deploy-functions" \

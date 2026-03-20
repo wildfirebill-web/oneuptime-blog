@@ -1,11 +1,10 @@
----
-title: "How to Use textencodebase64() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, encoding
-description: "Learn how to use the textencodebase64() function in OpenTofu to encode text in a specific character encoding and then Base64-encode it."
----
-
 # How to Use textencodebase64() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+
+Description: Learn how to use the textencodebase64() function in OpenTofu to encode text in a specific character encoding and then Base64-encode it.
 
 The `textencodebase64()` function encodes a string using a specified character encoding and then Base64-encodes the result. This is useful when you need to provide text in a specific character set (like UTF-16) encoded as Base64.
 
@@ -19,6 +18,7 @@ textencodebase64(string, encoding)
 
 ```hcl
 # Encode UTF-8 text as Base64 (same as base64encode for ASCII)
+
 > textencodebase64("Hello, World!", "UTF-8")
 "SGVsbG8sIFdvcmxkIQ=="
 

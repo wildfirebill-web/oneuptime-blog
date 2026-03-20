@@ -136,6 +136,7 @@ First, check your current privacy extension status. The following command shows 
 
 ```bash
 # Check current status for all interfaces
+
 # 0 = disabled, 1 = enabled but prefer public, 2 = enabled and prefer temporary
 cat /proc/sys/net/ipv6/conf/*/use_tempaddr
 ```

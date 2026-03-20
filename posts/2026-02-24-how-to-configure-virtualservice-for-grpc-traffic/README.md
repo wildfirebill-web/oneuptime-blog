@@ -381,6 +381,7 @@ This injects a 3-second delay into 10% of requests and returns a gRPC UNAVAILABL
 
 ```bash
 # Check the proxy config
+
 istioctl proxy-config routes deploy/my-grpc-client -o json
 
 # Enable debug logging

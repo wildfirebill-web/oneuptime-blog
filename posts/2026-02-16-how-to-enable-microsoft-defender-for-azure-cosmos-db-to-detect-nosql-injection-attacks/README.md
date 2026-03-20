@@ -80,6 +80,7 @@ This Azure CLI command enables Defender for Cosmos DB across your entire subscri
 
 ```bash
 # Enable Microsoft Defender for Cosmos DB at the subscription level
+
 az security pricing create \
   --name CosmosDbs \
   --tier Standard

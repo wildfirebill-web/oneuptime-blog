@@ -29,6 +29,7 @@ Create wrapper modules that present a unified interface regardless of the underl
 
 ```hcl
 # modules/compute/main.tf
+
 variable "provider_type" {
   type        = string
   description = "Cloud provider: aws, azure, or gcp"

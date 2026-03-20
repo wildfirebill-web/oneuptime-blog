@@ -169,6 +169,7 @@ Verify that requests stick to the same backend:
 
 ```bash
 # Save cookies and make multiple requests
+
 curl -c cookies.txt -b cookies.txt http://your-haproxy/ && \
 curl -c cookies.txt -b cookies.txt http://your-haproxy/ && \
 curl -c cookies.txt -b cookies.txt http://your-haproxy/

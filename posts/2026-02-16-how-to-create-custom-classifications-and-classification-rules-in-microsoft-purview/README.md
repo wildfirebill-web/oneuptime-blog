@@ -78,6 +78,7 @@ headers = {
 }
 
 # Create the custom classification
+
 classification_payload = {
     "name": "Internal_Employee_ID",
     "kind": "Custom",

@@ -18,6 +18,7 @@ If you just want to see the Collector running and logging telemetry data to the 
 
 ```bash
 # Run the Collector with the default configuration
+
 # The debug exporter prints all received telemetry to stdout
 docker run --rm -p 4317:4317 -p 4318:4318 \
   otel/opentelemetry-collector-contrib:latest
@@ -293,7 +294,7 @@ docker kill --signal=SIGHUP otel-collector
 
 This reloads the configuration without dropping any in-flight telemetry. It is much faster than a full container restart.
 
-## Resource Limits for Local Testing
+Resource Limits for Local Testing
 
 Running the Collector alongside your application can consume significant memory if you are generating a lot of telemetry. Set resource limits in your Docker Compose file to prevent the Collector from starving your application:
 

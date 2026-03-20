@@ -35,6 +35,7 @@ Every Helm installation follows this pattern:
 
 ```bash
 # Basic syntax: helm install [RELEASE_NAME] [CHART] [FLAGS]
+
 helm install my-release bitnami/nginx
 
 # The release name must be unique within a namespace

@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, Port Knocking, Linux, Security, iptables, knockd
+Tags: SSH, Port Knocking, Linux, Security, iptables, Knockd
 
 Description: Set up port knocking using knockd and iptables to hide SSH behind a secret sequence of port packets, dramatically reducing SSH brute-force exposure.
 
-Port knocking keeps SSH completely invisible — port 22 is closed until you send a secret sequence of packets to a series of ports. Only a client that knows the sequence can open the firewall for their IP.
+Port knocking keeps SSH completely invisible - port 22 is closed until you send a secret sequence of packets to a series of ports. Only a client that knows the sequence can open the firewall for their IP.
 
 ## How Port Knocking Works
 
-```
+```text
 1. SSH port 22 is CLOSED by default (iptables DROP)
 2. Client sends packets to port 7000, then 8000, then 9000
 3. knockd detects the sequence from the client IP
@@ -23,6 +23,7 @@ Port knocking keeps SSH completely invisible — port 22 is closed until you sen
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install knockd -y
 
 # RHEL/CentOS
@@ -106,7 +107,7 @@ knock server-ip 9000 8000 7000
 
 ```bash
 #!/bin/bash
-# ssh-knock.sh — knock and connect
+# ssh-knock.sh - knock and connect
 
 SERVER="$1"
 USER="${2:-ubuntu}"
@@ -122,7 +123,7 @@ knock "$SERVER" 9000 8000 7000
 TCP SYN knocks appear in logs on some systems; UDP is quieter:
 
 ```conf
-# /etc/knockd.conf — UDP sequence
+# /etc/knockd.conf - UDP sequence
 [openSSH]
     sequence    = 7000:udp,8000:udp,9000:udp
     seq_timeout = 15
@@ -152,4 +153,4 @@ sudo tail -f /var/log/syslog | grep knockd
 # Mar 19 10:05:01 host knockd: 1.2.3.4: openSSH: OPEN SESAME
 ```
 
-Port knocking is an effective secondary security layer — an attacker scanning your server sees no open ports, making it impossible to know SSH is even running.
+Port knocking is an effective secondary security layer - an attacker scanning your server sees no open ports, making it impossible to know SSH is even running.

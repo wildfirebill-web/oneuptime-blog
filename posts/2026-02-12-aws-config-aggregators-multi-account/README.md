@@ -29,6 +29,7 @@ First, enable Config as a trusted service in Organizations.
 
 ```bash
 # Enable trusted access for Config
+
 aws organizations enable-aws-service-access \
   --service-principal config.amazonaws.com
 

@@ -108,6 +108,7 @@ Make multiple changes atomically:
 
 ```bash
 # Export the CIB
+
 sudo pcs cluster cib /tmp/working-cib.xml
 
 # Make changes against the file

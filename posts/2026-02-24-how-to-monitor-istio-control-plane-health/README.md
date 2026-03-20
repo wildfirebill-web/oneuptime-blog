@@ -29,6 +29,7 @@ The xDS API is how istiod distributes configuration to proxies. Track how long p
 
 ```promql
 # P99 configuration push time
+
 histogram_quantile(0.99,
   sum(rate(pilot_proxy_convergence_time_bucket[5m])) by (le)
 )
@@ -111,7 +112,7 @@ sum(rate(citadel_server_csr_parsing_err_count[5m]))
 sum(rate(citadel_server_success_cert_issuance_count[5m]))
 ```
 
-## Resource Utilization
+Resource Utilization
 
 Monitor istiod's own resource consumption:
 

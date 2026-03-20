@@ -18,6 +18,7 @@ When a pod is stopped, all of its containers are in an exited state. The `podman
 
 ```bash
 # Create a pod with containers
+
 podman pod create --name app-pod -p 8080:80
 podman run -d --pod app-pod --name web docker.io/library/nginx:alpine
 podman run -d --pod app-pod --name cache docker.io/library/redis:7-alpine

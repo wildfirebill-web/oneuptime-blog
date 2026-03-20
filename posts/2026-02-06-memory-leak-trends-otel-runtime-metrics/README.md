@@ -53,6 +53,7 @@ runtimeInstrumentation.setMeterProvider(meterProvider);
 
 ```python
 # runtime_metrics.py
+
 import gc
 import tracemalloc
 from opentelemetry import metrics

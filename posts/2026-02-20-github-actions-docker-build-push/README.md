@@ -33,6 +33,7 @@ GitHub Container Registry is the simplest option since authentication uses the b
 
 ```yaml
 # .github/workflows/docker.yml
+
 name: Build and Push Docker Image
 
 on:

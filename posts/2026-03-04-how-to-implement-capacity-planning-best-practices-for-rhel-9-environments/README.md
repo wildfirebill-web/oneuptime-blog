@@ -14,6 +14,7 @@ Capacity planning ensures your RHEL 9 infrastructure can handle growth without p
 
 ```bash
 # Install sysstat for historical data
+
 sudo dnf install -y sysstat
 sudo systemctl enable --now sysstat
 
@@ -81,7 +82,7 @@ echo "Month,CPU%,Memory%,Disk%,Network_Mbps" >> /var/log/capacity/growth.csv
 echo "$(date +%Y-%m),$(sar -u 1 1 | tail -1 | awk '{print 100-$NF}'),$(free | awk '/Mem:/{printf("%.0f", $3/$2*100)}'),$(df / | tail -1 | awk '{print $5}'),$(sar -n DEV 1 1 | grep eth0 | tail -1 | awk '{print $5}')" >> /var/log/capacity/growth.csv
 ```
 
-## Resource Right-Sizing
+Resource Right-Sizing
 
 ```bash
 # Identify over-provisioned systems

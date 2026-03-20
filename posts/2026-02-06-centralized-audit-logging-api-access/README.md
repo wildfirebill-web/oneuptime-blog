@@ -100,6 +100,7 @@ This collector config extracts spans with audit attributes and routes them to de
 
 ```yaml
 # otel-collector-audit.yaml
+
 receivers:
   otlp:
     protocols:

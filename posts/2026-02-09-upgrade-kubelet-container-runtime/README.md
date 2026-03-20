@@ -27,6 +27,7 @@ Before upgrading, identify what versions are currently running on your nodes.
 echo "Checking kubelet and runtime versions across cluster..."
 
 # Check kubelet versions
+
 echo "Kubelet versions:"
 kubectl get nodes -o custom-columns=\
 NODE:.metadata.name,\

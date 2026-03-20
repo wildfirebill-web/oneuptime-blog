@@ -39,6 +39,7 @@ The simplest and most common pattern is a single ArgoCD instance in the cloud th
 
 ```yaml
 # Cloud cluster registration (in-cluster, automatic)
+
 # Edge clusters registered as external clusters
 # ArgoCD hub manages both from the same Git repo
 

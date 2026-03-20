@@ -18,6 +18,7 @@ The single most important thing: stop writing to the affected filesystem right n
 
 ```bash
 # Unmount the affected partition to prevent further writes
+
 sudo umount /dev/sda2
 
 # If it won't unmount cleanly (busy)

@@ -23,6 +23,7 @@ Kali follows a rolling release model. Update your system before installing Docke
 
 ```bash
 # Full system update
+
 sudo apt-get update && sudo apt-get full-upgrade -y
 ```
 

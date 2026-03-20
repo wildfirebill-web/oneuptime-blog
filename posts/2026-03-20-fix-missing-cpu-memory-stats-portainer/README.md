@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Stats, Docker, cgroups, Raspberry Pi, LXC
+Tags: Portainer, Troubleshooting, Stats, Docker, Cgroups, Raspberry Pi, LXC
 
 Description: Learn how to fix missing CPU and memory statistics in Portainer, including enabling cgroup memory accounting, fixing LXC container limitations, and kernel parameter issues.
 
@@ -16,6 +16,7 @@ First verify the issue is at the Docker level, not just in Portainer:
 
 ```bash
 # Test if Docker can collect stats
+
 docker stats --no-stream
 
 # If all values show 0 or N/A for memory, the issue is in cgroups

@@ -12,7 +12,7 @@ Cisco IOS has limited SEND support, primarily in research and specialized platfo
 
 ## Cisco SEND Support Status
 
-```
+```text
 Cisco SEND implementation:
   - Research-level support on some platforms
   - Not available in standard IOS releases (as of most IOS versions)
@@ -24,7 +24,7 @@ For production security: use First Hop Security (not SEND)
 
 ## Cisco IPv6 First Hop Security (Practical Alternative)
 
-```
+```text
 Cisco IOS IPv6 First Hop Security commands:
 
 RA Guard (prevents rogue Router Advertisements):
@@ -48,7 +48,7 @@ IPv6 Source Guard:
 
 ## Configuring RA Guard on Cisco
 
-```
+```text
 ! Create RA Guard policy for router ports
 ipv6 nd raguard policy ROUTER_POLICY
  device-role router
@@ -75,7 +75,7 @@ show ipv6 nd raguard interface GigabitEthernet0/1
 
 ## Configuring Complete First Hop Security on Cisco
 
-```
+```text
 ! Step 1: Enable IPv6 snooping (builds binding table)
 ipv6 snooping policy SNOOPING_POLICY
  security-level guard
@@ -106,7 +106,7 @@ show ipv6 neighbor binding
 
 ## RSA Key Generation (for any SEND-capable platform)
 
-```
+```text
 ! Generate RSA keys for SEND (if platform supports it)
 crypto key generate rsa general-keys modulus 2048 label SEND_KEY
 

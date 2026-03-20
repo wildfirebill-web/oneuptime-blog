@@ -42,6 +42,7 @@ This playbook lists all listening ports on each server:
 
 ```yaml
 # scan_local_ports.yml - Enumerate listening ports from each server
+
 ---
 - name: Scan local listening ports
   hosts: all

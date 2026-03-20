@@ -14,6 +14,7 @@ Rust is a multiplayer survival game known for its brutal gameplay and active mod
 
 ```yaml
 # rust-stack.yml
+
 version: "3.8"
 
 services:
@@ -84,11 +85,11 @@ Place plugin `.cs` files in the plugins directory:
 # The plugins directory is at /steamcmd/rust/oxide/plugins/
 # Download popular plugins
 
-# Kits — predefined item kits
+# Kits - predefined item kits
 wget -O /var/lib/docker/volumes/rust-data/_data/oxide/plugins/Kits.cs \
   https://umod.org/plugins/Kits.cs
 
-# Clans — team/clan system
+# Clans - team/clan system
 wget -O /var/lib/docker/volumes/rust-data/_data/oxide/plugins/Clans.cs \
   https://umod.org/plugins/Clans.cs
 ```
@@ -101,7 +102,7 @@ Rust servers typically wipe on a schedule. Create a wipe script as a Portainer s
 
 ```bash
 #!/bin/bash
-# rust-wipe.sh — run monthly via Portainer scheduled job
+# rust-wipe.sh - run monthly via Portainer scheduled job
 
 # Stop server gracefully
 docker stop rust_rust_1

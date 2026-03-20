@@ -29,6 +29,7 @@ The query cache stores filter results in a bitset. When the same filter runs aga
 
 ```yaml
 # elasticsearch.yml
+
 indices.queries.cache.size: 10%
 ```
 

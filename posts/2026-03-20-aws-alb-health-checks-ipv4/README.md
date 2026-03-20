@@ -27,6 +27,7 @@ Health checks are how an AWS ALB determines whether a target (EC2 instance, IP, 
 
 ```bash
 # Create a target group with custom health check settings
+
 aws elbv2 create-target-group \
   --name my-app-tg \
   --protocol HTTP \

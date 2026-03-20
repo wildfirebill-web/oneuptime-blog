@@ -1,4 +1,4 @@
-# How to Set Up SSL Certificates for Portainer via Nginx Proxy Manager
+# How to Set Up SSL Certificates for Portainer via Nginx Proxy Manager (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,7 +25,7 @@ The simplest option for public-facing servers:
    - **Domain Names**: `portainer.yourdomain.com`
    - **Email**: your email for expiration notices
    - Check **I Agree to...**
-3. Click **Save** — NPM requests and stores the certificate
+3. Click **Save** - NPM requests and stores the certificate
 
 Or issue from the Proxy Host SSL tab directly.
 
@@ -38,14 +38,14 @@ For wildcard certificates (`*.yourdomain.com`) or servers behind NAT:
 3. Select your DNS provider (Cloudflare, Route53, etc.)
 4. Enter your DNS API credentials:
 
-```
+```text
 For Cloudflare:
   Credentials File Content:
     dns_cloudflare_api_token = YOUR_CLOUDFLARE_API_TOKEN
 ```
 
 5. Domain: `*.yourdomain.com` (or `yourdomain.com,*.yourdomain.com`)
-6. Save — NPM creates a DNS TXT record to verify domain ownership
+6. Save - NPM creates a DNS TXT record to verify domain ownership
 
 ## Method 3: Custom/Self-Signed Certificate
 
@@ -55,6 +55,7 @@ For internal use or corporate CA certificates:
 
 ```bash
 # Self-signed for internal use
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout portainer.key \
   -out portainer.crt \

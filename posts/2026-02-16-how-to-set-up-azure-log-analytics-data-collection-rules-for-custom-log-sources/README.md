@@ -37,6 +37,7 @@ Custom logs need a destination table. In Log Analytics, custom tables have a `_C
 
 ```bash
 # Create a custom log table in your Log Analytics workspace
+
 # The table schema must include a TimeGenerated column
 az monitor log-analytics workspace table create \
   --resource-group rg-monitoring \

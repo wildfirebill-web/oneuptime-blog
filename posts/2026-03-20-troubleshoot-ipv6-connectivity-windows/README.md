@@ -10,6 +10,7 @@ Description: A systematic guide to diagnosing and resolving IPv6 connectivity pr
 
 ```powershell
 # Check if IPv6 binding is enabled on adapters
+
 Get-NetAdapterBinding -ComponentID ms_tcpip6 | Select-Object Name, Enabled
 
 # Check registry for DisabledComponents

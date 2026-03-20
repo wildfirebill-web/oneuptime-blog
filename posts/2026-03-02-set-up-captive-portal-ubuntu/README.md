@@ -23,6 +23,7 @@ The captive portal setup works by:
 
 ```bash
 # Install required packages
+
 sudo apt update
 sudo apt install hostapd dnsmasq nginx iptables iptables-persistent -y
 

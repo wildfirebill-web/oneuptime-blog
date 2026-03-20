@@ -64,6 +64,7 @@ Set concurrency during deployment:
 
 ```bash
 # Deploy with concurrency set to 1 for CPU-bound work
+
 gcloud run deploy image-processor \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/image-processor:latest \
   --region=us-central1 \

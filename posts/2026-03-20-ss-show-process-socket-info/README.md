@@ -12,6 +12,7 @@ Knowing which process owns which socket is essential for debugging, security aud
 
 ```bash
 # Show all sockets with process info
+
 sudo ss -p
 
 # TCP sockets with process info
@@ -71,7 +72,7 @@ sudo ss -tnp state established | grep -oP 'users:\(\("\K[^"]+' | sort -u
 ## Trace a Port Conflict
 
 ```bash
-# "Address already in use" error — find the culprit
+# "Address already in use" error - find the culprit
 PORT="8080"
 sudo ss -tlnp | grep ":${PORT} "
 
@@ -102,7 +103,7 @@ sudo ss -tnp state established
 
 ```bash
 #!/bin/bash
-# port-map.sh — Build a map of all listening processes and their ports
+# port-map.sh - Build a map of all listening processes and their ports
 
 echo "=== Listening Services ==="
 printf "%-20s %-10s %-20s\n" "Process" "PID" "Address:Port"

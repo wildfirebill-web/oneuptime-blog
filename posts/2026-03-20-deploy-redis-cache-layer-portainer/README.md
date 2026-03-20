@@ -14,6 +14,7 @@ Redis is the most widely-used in-memory data store for caching. Deploying it via
 
 ```yaml
 # redis-cache-stack.yml
+
 version: "3.8"
 services:
   redis:
@@ -76,7 +77,7 @@ command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
 ## Step 3: Use Redis from Your Application
 
 ```python
-# cache.py — caching layer using Redis
+# cache.py - caching layer using Redis
 import redis
 import json
 import os
@@ -101,7 +102,7 @@ def cache_result(ttl_seconds=300):
             if cached:
                 return json.loads(cached)
             
-            # Not in cache — compute and store
+            # Not in cache - compute and store
             result = func(*args, **kwargs)
             r.setex(cache_key, ttl_seconds, json.dumps(result))
             return result
@@ -119,7 +120,7 @@ def get_user_profile(user_id):
 For production high-availability Redis:
 
 ```yaml
-# Redis Sentinel setup — 1 primary + 2 replicas + 3 sentinels
+# Redis Sentinel setup - 1 primary + 2 replicas + 3 sentinels
 services:
   redis-primary:
     image: redis:7.2-alpine

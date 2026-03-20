@@ -43,6 +43,7 @@ The most common cause is simply incorrect credentials.
 
 ```bash
 # List all users in RabbitMQ
+
 sudo rabbitmqctl list_users
 
 # Example output:

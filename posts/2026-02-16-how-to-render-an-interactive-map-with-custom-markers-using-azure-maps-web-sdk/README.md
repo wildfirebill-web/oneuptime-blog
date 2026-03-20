@@ -18,6 +18,7 @@ You need an Azure Maps account. Create one through the Azure portal or CLI.
 
 ```bash
 # Create an Azure Maps account
+
 az maps account create \
   --name my-maps-account \
   --resource-group maps-rg \

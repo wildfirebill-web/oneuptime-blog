@@ -27,6 +27,7 @@ Run this PowerShell script on Windows hosts to enable WinRM.
 
 ```powershell
 # ConfigureRemotingForAnsible.ps1
+
 # Run as Administrator
 
 # Enable WinRM

@@ -40,6 +40,7 @@ import os
 import subprocess
 
 # VULNERABLE: Using shell=True with user input
+
 def ping_host(hostname):
     # Attacker input: "google.com; cat /etc/passwd"
     result = os.system(f"ping -c 4 {hostname}")

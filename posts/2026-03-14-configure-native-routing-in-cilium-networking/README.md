@@ -30,6 +30,7 @@ Apply the following Helm values to configure native routing in cilium:
 
 ```yaml
 # cilium-native-routing-values.yaml
+
 # Native routing configuration for Cilium
 
 # Disable tunnel encapsulation

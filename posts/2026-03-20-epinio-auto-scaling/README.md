@@ -21,6 +21,7 @@ How to Configure Application Auto-Scaling in Epinio demonstrates how Epinio simp
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

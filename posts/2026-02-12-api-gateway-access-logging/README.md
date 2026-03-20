@@ -27,6 +27,7 @@ Create the logging role:
 
 ```bash
 # Create the trust policy
+
 cat > trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

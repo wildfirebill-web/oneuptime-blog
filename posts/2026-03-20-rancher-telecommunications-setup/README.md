@@ -1,8 +1,8 @@
-# How to Set Up Rancher for Telecommunications
+# How to Set Up Rancher for Telecommunications - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, telecommunications, 5g, edge, kubernetes, nfv
+Tags: Rancher, Telecommunications, 5G, Edge, Kubernetes, NFV
 
 Description: A guide to setting up Rancher for telecommunications environments, covering edge cluster management, NFV workloads, 5G core, and high-availability configurations.
 
@@ -24,6 +24,7 @@ Telco workloads require CPU pinning and hugepages:
 
 ```bash
 # Configure hugepages on worker nodes (1GB hugepages for DPDK)
+
 echo 'vm.nr_hugepages = 1024' >> /etc/sysctl.conf
 sysctl -p
 

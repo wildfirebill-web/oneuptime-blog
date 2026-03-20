@@ -51,6 +51,7 @@ Run the Portainer container:
 
 ```bash
 # Create a volume for Portainer data persistence
+
 sudo docker volume create portainer_data
 
 # Run Portainer CE

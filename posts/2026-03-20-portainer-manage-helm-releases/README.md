@@ -8,7 +8,7 @@ Description: Learn how to view, upgrade, rollback, and delete Helm releases in P
 
 ## Introduction
 
-Once you deploy applications via Helm in Portainer, managing their lifecycle — upgrades, rollbacks, and uninstalls — is equally important. Portainer provides a Helm releases view that gives you a centralized overview of all deployed Helm charts and the tools to manage them without leaving the UI.
+Once you deploy applications via Helm in Portainer, managing their lifecycle - upgrades, rollbacks, and uninstalls - is equally important. Portainer provides a Helm releases view that gives you a centralized overview of all deployed Helm charts and the tools to manage them without leaving the UI.
 
 ## Prerequisites
 
@@ -46,6 +46,7 @@ TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')
 
 # List all Helm releases in a namespace
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "https://portainer.example.com/api/endpoints/1/kubernetes/helm?namespace=production" | jq .
 

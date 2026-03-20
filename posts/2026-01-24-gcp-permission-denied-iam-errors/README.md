@@ -60,6 +60,7 @@ First, determine exactly which permission is needed. The error message usually t
 
 ```bash
 # Check what permissions a specific role grants
+
 gcloud iam roles describe roles/compute.instanceAdmin.v1
 
 # List all permissions for a custom role

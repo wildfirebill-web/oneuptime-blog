@@ -45,6 +45,7 @@ First, deploy PostgreSQL for Kong's backend:
 
 ```yaml
 # postgres-kong.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

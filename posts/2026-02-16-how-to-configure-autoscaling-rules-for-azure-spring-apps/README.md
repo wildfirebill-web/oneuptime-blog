@@ -22,6 +22,7 @@ Configure an autoscale setting for your application.
 
 ```bash
 # Get the resource ID of the Spring Apps app
+
 APP_RESOURCE_ID=$(az spring app show \
   --name order-service \
   --service my-spring-service \

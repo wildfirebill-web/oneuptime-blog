@@ -56,6 +56,7 @@ flowchart TB
 
 ```bash
 # Add Elastic repository
+
 helm repo add elastic https://helm.elastic.co
 
 # Update repositories
@@ -638,7 +639,7 @@ Create index patterns in Kibana:
 2. Create pattern: `kubernetes-*`
 3. Select `@timestamp` as time field
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 | Component | Small | Medium | Large |
 |-----------|-------|--------|-------|

@@ -26,6 +26,7 @@ Let's set up multivalue answer routing across four servers.
 
 ```bash
 # Server 1
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

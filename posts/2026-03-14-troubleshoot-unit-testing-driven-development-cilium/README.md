@@ -30,6 +30,7 @@ The most common testing problem is incorrect test Reader setup:
 
 ```bash
 # Run tests with verbose output to see failures
+
 go test ./proxylib/myprotocol/... -v -count=1 2>&1 | head -80
 ```
 

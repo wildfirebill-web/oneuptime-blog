@@ -14,6 +14,7 @@ When you run `podman machine init` and `podman machine start`, Podman creates a 
 
 ```bash
 # Check your Podman machine status
+
 podman machine info
 
 # See resource allocation

@@ -61,6 +61,7 @@ Start with a simple configuration that collects all journal entries:
 
 ```yaml
 # Basic Journald Receiver configuration
+
 # Collects all journal entries from the current boot
 receivers:
   journald:
@@ -434,7 +435,7 @@ service:
 
 This pattern allows different processing and routing for different service types. Web services might need info-level logs, while databases only need warnings. Application logs might include debug information during troubleshooting.
 
-## Resource Attributes
+Resource Attributes
 
 Add resource attributes to identify the log source:
 

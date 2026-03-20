@@ -1,4 +1,4 @@
-# How to Run K3s in Docker (K3d)
+# How to Run K3s in Docker (K3d) - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ K3d (K3s in Docker) is a lightweight wrapper that allows you to run K3s Kubernet
 
 ```bash
 # Install latest k3d
+
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 # Or install specific version
@@ -316,4 +317,4 @@ k3d cluster create perf-cluster \
 
 ## Conclusion
 
-K3d makes running K3s clusters in Docker trivially easy, enabling fast iteration cycles for developers and reliable CI/CD testing environments. The ability to create, test, and destroy clusters in seconds — combined with local registry support and port mapping — makes k3d an essential tool for Kubernetes development workflows. For CI/CD pipelines, k3d provides a real Kubernetes environment that closely mirrors production K3s deployments without requiring dedicated infrastructure.
+K3d makes running K3s clusters in Docker trivially easy, enabling fast iteration cycles for developers and reliable CI/CD testing environments. The ability to create, test, and destroy clusters in seconds - combined with local registry support and port mapping - makes k3d an essential tool for Kubernetes development workflows. For CI/CD pipelines, k3d provides a real Kubernetes environment that closely mirrors production K3s deployments without requiring dedicated infrastructure.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Groups, Organization, DevOps
+Tags: Portainer, Environments, Groups, Organizations, DevOps
 
 Description: Use environment groups in Portainer to logically organize and manage multiple environments by site, team, or purpose.
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List all environments
+
 curl -s https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

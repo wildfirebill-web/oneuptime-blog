@@ -28,6 +28,7 @@ The first thing to verify is that the machine configuration was actually applied
 
 ```bash
 # Check the current configuration status on the worker node
+
 talosctl -n <worker-ip> get machinestatus
 ```
 

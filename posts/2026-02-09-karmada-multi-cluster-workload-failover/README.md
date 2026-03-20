@@ -32,6 +32,7 @@ Install Karmada in the host cluster:
 
 ```bash
 # Initialize Karmada
+
 karmadactl init --kubeconfig ~/.kube/config
 ```
 

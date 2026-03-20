@@ -34,6 +34,7 @@ graph LR
 
 ```bash
 # Create directory
+
 sudo mkdir -p /opt/loki
 cd /opt/loki
 

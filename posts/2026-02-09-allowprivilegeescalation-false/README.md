@@ -50,6 +50,7 @@ You can verify that privilege escalation is blocked by testing with common setui
 
 ```bash
 # Exec into the pod
+
 kubectl exec -it no-privesc-demo -- bash
 
 # Try to run sudo (if available)

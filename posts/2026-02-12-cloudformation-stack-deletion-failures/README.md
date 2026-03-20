@@ -26,6 +26,7 @@ CloudFormation deletes resources in reverse dependency order. If any resource ca
 
 ```bash
 # Find which resources failed to delete and why
+
 aws cloudformation describe-stack-events \
   --stack-name my-stuck-stack \
   --query 'StackEvents[?ResourceStatus==`DELETE_FAILED`].[LogicalResourceId,ResourceType,ResourceStatusReason]' \

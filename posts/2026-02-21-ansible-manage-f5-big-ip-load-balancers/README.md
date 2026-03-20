@@ -18,6 +18,7 @@ Install the F5 collection and its dependencies.
 
 ```bash
 # Install the F5 Ansible collection
+
 ansible-galaxy collection install f5networks.f5_modules
 
 # Install the required Python SDK

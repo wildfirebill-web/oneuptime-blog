@@ -20,6 +20,7 @@ Consider a simple async web server that reads configuration files:
 
 ```python
 # The problem: synchronous file I/O in async code
+
 import asyncio
 
 async def handle_request(request):

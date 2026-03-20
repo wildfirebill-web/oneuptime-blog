@@ -245,6 +245,7 @@ You can query multiple Lambda log groups at once. In the Logs Insights console, 
 
 ```text
 # Compare performance across Lambda functions (select multiple log groups)
+
 filter @type = "REPORT"
 | stats avg(@duration) as avgDuration,
         pct(@duration, 99) as p99Duration,

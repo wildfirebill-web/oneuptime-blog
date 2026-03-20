@@ -32,6 +32,7 @@ When a single pod's sidecar is crashing:
 
 ```bash
 # Check the pod status
+
 kubectl get pod <pod-name> -n <namespace>
 
 # Look for restarts on the istio-proxy container

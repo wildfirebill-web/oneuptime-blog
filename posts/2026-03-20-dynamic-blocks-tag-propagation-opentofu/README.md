@@ -150,6 +150,7 @@ Create a reusable tagging module that generates consistent tag maps.
 
 ```hcl
 # modules/tags/main.tf
+
 variable "environment"  { type = string }
 variable "project"      { type = string }
 variable "team"         { type = string }
@@ -168,4 +169,4 @@ output "tags" {
 
 ## Conclusion
 
-Consistent tag propagation through dynamic blocks ensures every resource and its children carry the correct metadata. The Auto Scaling Group pattern with `propagate_at_launch` is particularly important — without it, EC2 instances launched by the ASG won't inherit tags, making cost allocation and compliance reporting inaccurate.
+Consistent tag propagation through dynamic blocks ensures every resource and its children carry the correct metadata. The Auto Scaling Group pattern with `propagate_at_launch` is particularly important - without it, EC2 instances launched by the ASG won't inherit tags, making cost allocation and compliance reporting inaccurate.

@@ -22,6 +22,7 @@ BigQuery can automatically add new columns when they appear in your data. This w
 
 ```bash
 # Load data with automatic schema update
+
 # --autodetect detects the schema from the data
 # --schema_update_option=ALLOW_FIELD_ADDITION adds new columns automatically
 bq load \

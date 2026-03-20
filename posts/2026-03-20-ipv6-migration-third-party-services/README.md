@@ -8,7 +8,7 @@ Description: Strategies for handling third-party SaaS services and APIs that lac
 
 ## Introduction
 
-Third-party services — payment gateways, analytics APIs, CDNs, monitoring SaaS, and data providers — are often the last to adopt IPv6. Your migration plan must account for dependencies that cannot be modified. This guide covers how to identify, categorize, and handle third-party IPv6 gaps.
+Third-party services - payment gateways, analytics APIs, CDNs, monitoring SaaS, and data providers - are often the last to adopt IPv6. Your migration plan must account for dependencies that cannot be modified. This guide covers how to identify, categorize, and handle third-party IPv6 gaps.
 
 ## Step 1: Inventory Third-Party IPv6 Status
 
@@ -88,6 +88,7 @@ If a third-party service already has AAAA records, your application can call it 
 import httpx
 
 # Force IPv6 for API call
+
 async with httpx.AsyncClient(transport=httpx.AsyncHTTPTransport(
     local_address="2001:db8::app"  # Bind to IPv6 source
 )) as client:
@@ -175,4 +176,4 @@ Please respond by [DATE] to help us plan accordingly.
 
 ## Conclusion
 
-Third-party services without IPv6 support require proxying or NAT64 — both are viable but add operational complexity. Inventory all third-party dependencies early (Phase 1 of migration) and engage vendors with IPv6 gaps immediately. The vendor engagement template provides a professional basis for escalation. For services without a credible IPv6 roadmap, NAT64 provides transparent translation for outbound calls and is preferable to indefinitely maintaining a patchwork of individual outbound proxies.
+Third-party services without IPv6 support require proxying or NAT64 - both are viable but add operational complexity. Inventory all third-party dependencies early (Phase 1 of migration) and engage vendors with IPv6 gaps immediately. The vendor engagement template provides a professional basis for escalation. For services without a credible IPv6 roadmap, NAT64 provides transparent translation for outbound calls and is preferable to indefinitely maintaining a patchwork of individual outbound proxies.

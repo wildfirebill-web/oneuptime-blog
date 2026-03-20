@@ -16,6 +16,7 @@ The `try` function evaluates a series of expressions and returns the result of t
 
 ```hcl
 # try(expression1, expression2, ..., fallback)
+
 > try("hello", "fallback")
 "hello"
 

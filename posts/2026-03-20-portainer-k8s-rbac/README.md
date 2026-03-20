@@ -1,4 +1,4 @@
-# How to Set Up Kubernetes RBAC Alongside Portainer RBAC
+# How to Set Up Kubernetes RBAC Alongside Portainer RBAC - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Kubernetes native RBAC policies alongside Portainer's acc
 
 ## Introduction
 
-Portainer Business Edition provides team-based access control at the namespace level. However, for production environments, layering Portainer's RBAC with Kubernetes native RBAC provides defense-in-depth—ensuring that even if Portainer access is compromised, Kubernetes RBAC limits what can be done.
+Portainer Business Edition provides team-based access control at the namespace level. However, for production environments, layering Portainer's RBAC with Kubernetes native RBAC provides defense-in-depth-ensuring that even if Portainer access is compromised, Kubernetes RBAC limits what can be done.
 
 ## How Portainer and Kubernetes RBAC Interact
 
@@ -21,6 +21,7 @@ When Portainer manages a Kubernetes cluster:
 
 ```yaml
 # portainer-rbac.yml - deploy via Portainer
+
 # Create a namespace-scoped role for developers
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role

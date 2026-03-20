@@ -50,6 +50,7 @@ Install the "canary" revision with a different Istio version:
 
 ```bash
 # Switch to the newer istioctl
+
 export PATH=/path/to/istio-1.21.0/bin:$PATH
 
 istioctl install --revision=canary --set profile=default -y
@@ -212,7 +213,7 @@ kubectl get mutatingwebhookconfiguration | grep stable
 
 The uninstall command should remove it, but verify to be safe.
 
-## Resource Considerations
+Resource Considerations
 
 Running multiple revisions means running multiple istiod instances. Each istiod instance uses CPU and memory, so plan your resource budgets accordingly.
 

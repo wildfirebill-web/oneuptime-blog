@@ -33,6 +33,7 @@ Before planning, know what you have:
 ```bash
 #!/bin/bash
 # inventory-ubuntu-versions.sh
+
 # Run on each server or via Ansible
 
 echo "=== Server: $(hostname -f) ==="

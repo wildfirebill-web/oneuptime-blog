@@ -22,6 +22,7 @@ Install the MinIO operator for declarative cluster management:
 
 ```bash
 # Install MinIO operator
+
 kubectl apply -f https://github.com/minio/operator/releases/latest/download/minio-operator.yaml
 
 # Create namespace

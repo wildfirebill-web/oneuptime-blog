@@ -207,6 +207,7 @@ Check proxy memory usage before and after applying Sidecar resources:
 
 ```bash
 # Before Sidecar resources
+
 kubectl top pod -n tenant-a -l app=my-service --containers | grep istio-proxy
 
 # Apply Sidecar resource, wait for config to propagate

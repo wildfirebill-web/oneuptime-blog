@@ -30,6 +30,7 @@ Deploy Mosquitto MQTT broker on your edge K3s cluster:
 
 ```yaml
 # mosquitto-edge.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

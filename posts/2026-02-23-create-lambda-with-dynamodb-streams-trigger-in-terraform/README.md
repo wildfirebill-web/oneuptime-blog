@@ -18,6 +18,7 @@ First, the DynamoDB table needs to have streams enabled:
 
 ```hcl
 # DynamoDB table with streams enabled
+
 resource "aws_dynamodb_table" "orders" {
   name         = "orders"
   billing_mode = "PAY_PER_REQUEST"

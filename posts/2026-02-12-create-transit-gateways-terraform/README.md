@@ -64,6 +64,7 @@ This attaches three VPCs to the Transit Gateway:
 
 ```hcl
 # Production VPC attachment
+
 resource "aws_ec2_transit_gateway_vpc_attachment" "production" {
   subnet_ids         = var.production_subnet_ids
   transit_gateway_id = aws_ec2_transit_gateway.main.id

@@ -20,6 +20,7 @@ Before pulling all tags, first discover what tags are available for an image.
 
 ```bash
 # List available tags for an image on Docker Hub
+
 podman search --list-tags docker.io/library/nginx
 
 # Limit the output to a specific number of tags

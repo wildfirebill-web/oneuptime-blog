@@ -56,6 +56,7 @@ Before installing OpenEBS, ensure your cluster meets these requirements:
 
 ```bash
 # Check Kubernetes version (1.21+ required)
+
 kubectl version --short
 
 # Verify iSCSI is installed (required for cStor/Jiva)

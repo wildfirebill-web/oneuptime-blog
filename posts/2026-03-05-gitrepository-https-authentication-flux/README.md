@@ -39,6 +39,7 @@ Create a Secret in the `flux-system` namespace containing your username and toke
 
 ```bash
 # Create the HTTPS authentication Secret
+
 kubectl create secret generic my-app-git-https \
   --namespace=flux-system \
   --from-literal=username=my-github-username \

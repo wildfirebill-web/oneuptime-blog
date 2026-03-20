@@ -92,6 +92,7 @@ Deploy the template:
 
 ```bash
 # Create resource group
+
 az group create --name myaks-rg --location eastus
 
 # Deploy Bicep template

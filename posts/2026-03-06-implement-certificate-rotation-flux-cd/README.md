@@ -27,6 +27,7 @@ Install cert-manager as part of your infrastructure stack managed by Flux CD.
 
 ```yaml
 # infrastructure/cert-manager/namespace.yaml
+
 # Dedicated namespace for cert-manager
 apiVersion: v1
 kind: Namespace

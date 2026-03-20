@@ -52,6 +52,7 @@ Use when clients already know the exact IP addresses. Istio passes traffic throu
 
 ```yaml
 # ServiceEntry for a fixed IP endpoint
+
 # Use case: On-premises database with static IP
 apiVersion: networking.istio.io/v1beta1
 kind: ServiceEntry

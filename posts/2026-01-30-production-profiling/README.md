@@ -68,6 +68,7 @@ function stopProfiling(filename) {
 
 ```python
 # Python: Using cProfile with controlled duration
+
 # Wrap specific code paths rather than the entire process
 
 import cProfile
@@ -264,7 +265,7 @@ flowchart TB
 
 Before enabling production profiling, establish clear limits and monitoring:
 
-### Resource Limits
+Resource Limits
 
 ```yaml
 # Kubernetes resource limits for profiling sidecar

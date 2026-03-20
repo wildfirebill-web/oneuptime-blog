@@ -30,6 +30,7 @@ The CodeStar Connection is a one-time setup that authorizes AWS to access your G
 
 ```bash
 # Create the connection
+
 aws codestar-connections create-connection \
   --provider-type GitHub \
   --connection-name my-github-connection

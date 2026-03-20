@@ -16,6 +16,7 @@ RHEL provides powerful profiling tools for diagnosing performance issues. `perf`
 
 ```bash
 # Install perf
+
 sudo dnf install -y perf
 ```
 

@@ -16,6 +16,7 @@ Run `--list-hosts` to see the target hosts:
 
 ```bash
 # List all hosts that the playbook would target
+
 ansible-playbook --list-hosts deploy.yml
 ```
 

@@ -151,6 +151,7 @@ resource "aws_rds_cluster_instance" "secondary" {
 
 ```bash
 # In a DR scenario, promote the secondary to primary
+
 aws rds failover-global-cluster \
   --global-cluster-identifier my-project-global-cluster \
   --target-db-cluster-identifier arn:aws:rds:eu-west-1:123456789:cluster:my-project-aurora-secondary
@@ -166,4 +167,4 @@ tofu apply
 
 ## Conclusion
 
-Aurora Global Databases provide the lowest possible RPO for cross-region database replication with sub-second lag. The dedicated replication infrastructure uses physical replication rather than logical, avoiding any performance impact on the primary cluster. For failover testing, AWS supports managed planned failovers that swap primary and secondary roles without data loss—test this regularly to validate your DR runbook.
+Aurora Global Databases provide the lowest possible RPO for cross-region database replication with sub-second lag. The dedicated replication infrastructure uses physical replication rather than logical, avoiding any performance impact on the primary cluster. For failover testing, AWS supports managed planned failovers that swap primary and secondary roles without data loss-test this regularly to validate your DR runbook.

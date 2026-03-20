@@ -54,6 +54,7 @@ ClusterIP is the default service type. It assigns a virtual IP from the cluster'
 
 ```yaml
 # clusterip-service.yaml
+
 # A backend API only accessed by other services in the cluster
 apiVersion: v1
 kind: Service

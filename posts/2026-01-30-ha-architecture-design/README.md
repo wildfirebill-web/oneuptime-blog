@@ -137,6 +137,7 @@ The following nginx configuration sets up upstream health checks that automatica
 
 ```nginx
 # nginx upstream configuration with health checks
+
 upstream backend {
     # Round-robin with health checks
     server backend1.example.com:8080 weight=5;

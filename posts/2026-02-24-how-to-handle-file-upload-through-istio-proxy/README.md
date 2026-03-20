@@ -61,6 +61,7 @@ If you do not need retries on upload endpoints, avoid the buffer filter entirely
 
 ```yaml
 # Disable buffer filter for upload routes
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

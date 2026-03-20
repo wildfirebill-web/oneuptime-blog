@@ -34,6 +34,7 @@ The easiest way to install Policy Controller is using Helm. First, add the Sigst
 
 ```bash
 # Add the Sigstore Helm repository
+
 helm repo add sigstore https://sigstore.github.io/helm-charts
 helm repo update
 ```

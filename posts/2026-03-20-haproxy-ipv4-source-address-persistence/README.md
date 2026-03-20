@@ -24,7 +24,7 @@ graph LR
 
 ## Method 1: balance source (Hash-Based)
 
-The simplest approach — no stick table required. HAProxy hashes the source IP and maps it to a server.
+The simplest approach - no stick table required. HAProxy hashes the source IP and maps it to a server.
 
 ```haproxy
 backend app_servers
@@ -98,6 +98,7 @@ backend pg_servers
 
 ```bash
 # Send multiple requests and confirm they hit the same backend
+
 for i in $(seq 1 5); do curl -s http://192.168.1.10/ | grep "Server:"; done
 
 # Check the stick table to see which server is recorded for your IP

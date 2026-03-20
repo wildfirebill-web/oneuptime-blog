@@ -42,6 +42,7 @@ Define a ClusterIssuer that uses Let's Encrypt:
 
 ```yaml
 # cluster-issuer.yaml
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

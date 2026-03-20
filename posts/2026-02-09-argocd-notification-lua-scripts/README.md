@@ -594,6 +594,7 @@ Test and debug Lua scripts:
 
 ```bash
 # Enable debug logging for notifications
+
 kubectl edit configmap argocd-notifications-cm -n argocd
 
 # Add to the ConfigMap:

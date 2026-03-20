@@ -26,6 +26,7 @@ Here are the checks you should run before allowing a merge:
 
 ```yaml
 # .github/workflows/observability-check.yaml
+
 name: Observability Validation
 on:
   pull_request:

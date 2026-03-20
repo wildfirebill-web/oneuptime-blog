@@ -46,6 +46,7 @@ Before deploying via Portainer, run these one-time init commands. Replace `vpn.e
 
 ```bash
 # Step 1: Generate the server configuration and PKI
+
 docker run --rm -v openvpn_data:/etc/openvpn kylemanna/openvpn \
   ovpn_genconfig -u udp://vpn.example.com
 

@@ -1,4 +1,4 @@
-# How to Fix Portainer Data Volume Permission Issues
+# How to Fix Portainer Data Volume Permission Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Portainer stores its configuration, users, environments, and database in a data 
 
 ```bash
 # Inspect the volume location on the host
+
 docker volume inspect portainer_data
 
 # Access the volume contents
@@ -114,7 +115,7 @@ docker run -d \
   portainer/portainer-ce:latest
 
 # :z = shared label (other containers can read)
-# :Z = private label (only this container can read) — use this for data volume
+# :Z = private label (only this container can read) - use this for data volume
 docker run -d \
   -p 9000:9000 \
   --name portainer \

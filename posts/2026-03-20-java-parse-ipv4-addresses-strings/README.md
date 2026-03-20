@@ -158,7 +158,7 @@ public class URLIPExtractor {
                 return host;  // Already a dotted-decimal IPv4
             }
         } catch (UnknownHostException e) {
-            // Host is not a valid IP — it's a hostname
+            // Host is not a valid IP - it's a hostname
         }
         
         return null;  // Host is a hostname, not a literal IP

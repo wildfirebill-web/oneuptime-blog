@@ -58,6 +58,7 @@ example.com. IN TXT "v=spf1 \
 
 ```bash
 # Query your SPF record
+
 dig TXT example.com | grep spf
 
 # Test SPF for a specific sending IP

@@ -243,6 +243,7 @@ Check what HTTP/2 settings Envoy is using:
 
 ```bash
 # Check cluster-level settings
+
 istioctl proxy-config cluster <pod-name> -n <namespace> --fqdn api-service.production.svc.cluster.local -o json
 
 # Check via Envoy admin

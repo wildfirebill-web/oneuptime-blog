@@ -27,6 +27,7 @@ This guide covers installing Calico with Ansible as the binary management layer 
 
 ```ini
 # inventory.ini
+
 [control_plane]
 master1 ansible_host=10.0.1.10
 

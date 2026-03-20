@@ -28,6 +28,7 @@ Here is the meter provider setup in Python:
 
 ```python
 # devex_metrics.py - Central module for all DevEx metric definitions
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

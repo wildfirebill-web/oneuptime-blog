@@ -315,6 +315,7 @@ Simpler deployment:
 
 ```yaml
 # Docker Compose - minimal setup
+
 services:
   clickhouse:
     image: clickhouse/clickhouse-server:latest

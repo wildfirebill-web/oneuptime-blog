@@ -59,6 +59,7 @@ Here is the basic configuration:
 
 ```yaml
 # config.yaml - NTP monitoring with the OpenTelemetry Collector
+
 receivers:
   hostmetrics:
     collection_interval: 60s

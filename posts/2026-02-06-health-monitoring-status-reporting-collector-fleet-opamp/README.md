@@ -25,6 +25,7 @@ First, make sure your collector configuration includes the health_check extensio
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   health_check:
     endpoint: 0.0.0.0:13133

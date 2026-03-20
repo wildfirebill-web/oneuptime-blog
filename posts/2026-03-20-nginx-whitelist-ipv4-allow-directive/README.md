@@ -8,7 +8,7 @@ Description: Use Nginx's allow and deny directives to whitelist specific IPv4 ad
 
 ## Introduction
 
-Nginx's `ngx_http_access_module` provides simple IP-based access control through `allow` and `deny` directives. Rules are evaluated top to bottom, so the order matters—place specific addresses before broader rules.
+Nginx's `ngx_http_access_module` provides simple IP-based access control through `allow` and `deny` directives. Rules are evaluated top to bottom, so the order matters-place specific addresses before broader rules.
 
 ## Basic IPv4 Whitelist
 
@@ -132,6 +132,7 @@ For large lists, maintain allowed IPs in a separate file:
 
 ```nginx
 # /etc/nginx/whitelist-ips.conf
+
 allow 203.0.113.0/24;
 allow 198.51.100.10;
 allow 198.51.100.11;

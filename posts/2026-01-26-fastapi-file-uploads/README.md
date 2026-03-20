@@ -43,6 +43,7 @@ Let's start with the essentials. First, install FastAPI and its dependencies:
 
 ```bash
 # Install FastAPI with all dependencies
+
 pip install fastapi[all] python-multipart aiofiles
 ```
 

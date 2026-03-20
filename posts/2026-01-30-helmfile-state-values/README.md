@@ -50,6 +50,7 @@ Before diving into state values, install Helmfile on your system.
 
 ```bash
 # macOS
+
 brew install helmfile
 
 # Linux

@@ -8,7 +8,7 @@ Description: Understand Proxy Mobile IPv6 (PMIPv6), a network-based mobility pro
 
 ## Introduction
 
-Proxy Mobile IPv6 (PMIPv6), defined in RFC 5213, is a network-based approach to IPv6 mobility. Unlike host-based MIPv6, the Mobile Node does not need any mobility software — the network infrastructure handles Binding Updates on the MN's behalf. This makes PMIPv6 ideal for LTE/4G and 5G core networks.
+Proxy Mobile IPv6 (PMIPv6), defined in RFC 5213, is a network-based approach to IPv6 mobility. Unlike host-based MIPv6, the Mobile Node does not need any mobility software - the network infrastructure handles Binding Updates on the MN's behalf. This makes PMIPv6 ideal for LTE/4G and 5G core networks.
 
 ## PMIPv6 vs MIPv6
 
@@ -54,9 +54,9 @@ The LMA is the PMIPv6 equivalent of the MIPv6 Home Agent:
 
 ## PMIPv6 Message Types
 
-### Proxy Binding Update (PBU) — MH Type 3 (same as standard BU with P flag)
+### Proxy Binding Update (PBU) - MH Type 3 (same as standard BU with P flag)
 
-```
+```text
 Sent by MAG to LMA when MN attaches:
   Handoff Indicator: 1 (new attachment)
   Access Technology Type: e.g., 8 (LTE)
@@ -64,9 +64,9 @@ Sent by MAG to LMA when MN attaches:
   Mobile Node Identifier: NAI or MAC address
 ```
 
-### Proxy Binding Acknowledgement (PBA) — MH Type 4
+### Proxy Binding Acknowledgement (PBA) - MH Type 4
 
-```
+```text
 Sent by LMA to MAG confirming binding:
   Status: 0 (success)
   Home Network Prefix Option: confirmed prefix
@@ -76,7 +76,7 @@ Sent by LMA to MAG confirming binding:
 ## Simplified PMIPv6 MAG Logic
 
 ```python
-# pmipv6_mag.py — simplified MAG event handler
+# pmipv6_mag.py - simplified MAG event handler
 
 class MobileAccessGateway:
     def __init__(self, lma_address, mag_address):
@@ -114,7 +114,7 @@ class MobileAccessGateway:
             print(f"Tunnel established for {pba.mn_identifier}")
 
     def on_mn_detach(self, mn_identifier: str):
-        """Called when MN detaches — send deregistration PBU."""
+        """Called when MN detaches - send deregistration PBU."""
         pbu = ProxyBindingUpdate(
             mn_identifier=mn_identifier,
             lifetime=0  # Deregistration
@@ -127,9 +127,10 @@ class MobileAccessGateway:
 
 ```bash
 # Install UMIP with PMIPv6 support
+
 sudo apt-get install umip-pmip
 
-# /etc/mip6d.conf — MAG configuration
+# /etc/mip6d.conf - MAG configuration
 NodeConfig MAG;
 
 MagAddressIngress 2001:db8:access::1;

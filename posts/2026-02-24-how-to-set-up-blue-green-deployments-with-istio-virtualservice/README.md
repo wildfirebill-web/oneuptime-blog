@@ -154,6 +154,7 @@ Before switching traffic, verify that the green deployment is healthy:
 
 ```bash
 # Check green pods are ready
+
 kubectl get pods -l app=my-app,version=green
 
 # Port-forward to test green directly

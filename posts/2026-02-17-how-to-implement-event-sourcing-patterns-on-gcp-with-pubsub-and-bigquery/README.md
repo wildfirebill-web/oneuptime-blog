@@ -55,6 +55,7 @@ First, create the Pub/Sub topic and subscription for your events.
 
 ```bash
 # Create the main event topic
+
 gcloud pubsub topics create domain-events
 
 # Create a subscription for the BigQuery sink

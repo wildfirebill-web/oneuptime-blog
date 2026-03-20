@@ -25,6 +25,7 @@ Traditional wiki software like MediaWiki works, but it feels dated. Wiki.js brin
 
 ```bash
 # Create the Wiki.js project directory
+
 mkdir -p ~/wikijs/{db,config}
 cd ~/wikijs
 ```

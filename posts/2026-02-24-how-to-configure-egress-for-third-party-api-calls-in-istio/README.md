@@ -207,6 +207,7 @@ After applying your ServiceEntry, test that traffic flows correctly:
 
 ```bash
 # Deploy a test pod if you don't have one
+
 kubectl run test-curl --image=curlimages/curl -it --rm -- sh
 
 # From inside the pod, try reaching the API

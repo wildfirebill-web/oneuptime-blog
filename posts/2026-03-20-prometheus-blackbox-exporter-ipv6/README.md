@@ -12,6 +12,7 @@ The Prometheus Blackbox Exporter performs active probing of endpoints and export
 
 ```bash
 # Download and install
+
 wget https://github.com/prometheus/blackbox_exporter/releases/latest/download/blackbox_exporter-*.linux-amd64.tar.gz
 tar xzf blackbox_exporter-*.linux-amd64.tar.gz
 sudo mv blackbox_exporter /usr/local/bin/

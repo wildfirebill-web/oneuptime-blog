@@ -40,6 +40,7 @@ def parse_ipv4_protocol(raw_packet: bytes) -> int:
     return protocol
 
 # Map protocol numbers to names
+
 PROTO_NAMES = {1: "ICMP", 6: "TCP", 17: "UDP", 47: "GRE", 89: "OSPF"}
 
 # Example: reading from a raw socket

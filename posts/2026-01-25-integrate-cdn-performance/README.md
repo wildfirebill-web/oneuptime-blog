@@ -56,6 +56,7 @@ CloudFlare is one of the most popular CDNs due to its generous free tier and eas
 
 ```bash
 # DNS Configuration
+
 # Point your domain to CloudFlare nameservers
 # CloudFlare will proxy traffic through their network
 

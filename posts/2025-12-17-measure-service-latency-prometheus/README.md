@@ -47,6 +47,7 @@ from prometheus_client import Histogram, start_http_server
 import time
 
 # Define histogram with appropriate buckets for web requests
+
 REQUEST_LATENCY = Histogram(
     'http_request_duration_seconds',
     'HTTP request latency in seconds',

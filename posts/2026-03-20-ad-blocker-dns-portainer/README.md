@@ -8,7 +8,7 @@ Description: Deploy Pi-hole or AdGuard Home as a network-wide DNS-based ad block
 
 ## Introduction
 
-A DNS-based ad blocker filters advertisement and tracking domains at the network level, blocking ads on every device including smart TVs, phones, and IoT devices — without installing any browser extension. Pi-hole and AdGuard Home are the two most popular solutions. This guide covers deploying both using Portainer.
+A DNS-based ad blocker filters advertisement and tracking domains at the network level, blocking ads on every device including smart TVs, phones, and IoT devices - without installing any browser extension. Pi-hole and AdGuard Home are the two most popular solutions. This guide covers deploying both using Portainer.
 
 ## Prerequisites
 
@@ -24,6 +24,7 @@ When a device requests `ads.doubleclick.net`, your DNS server (Pi-hole/AdGuard) 
 
 ```yaml
 # docker-compose.yml - Pi-hole
+
 version: "3.8"
 
 networks:
@@ -231,4 +232,4 @@ docker exec pihole pihole --white-regex '^ads\..*\.yoursite\.com$'
 
 ## Conclusion
 
-You now have a network-wide ad blocker running in Docker managed through Portainer. Every device on your network — phones, smart TVs, gaming consoles, and laptops — benefits from ad and tracker blocking without any configuration on individual devices. Pi-hole typically blocks 15-25% of all DNS queries in a household, significantly reducing tracking and improving page load times. Use Portainer to keep your ad blocker updated and monitor its resource usage.
+You now have a network-wide ad blocker running in Docker managed through Portainer. Every device on your network - phones, smart TVs, gaming consoles, and laptops - benefits from ad and tracker blocking without any configuration on individual devices. Pi-hole typically blocks 15-25% of all DNS queries in a household, significantly reducing tracking and improving page load times. Use Portainer to keep your ad blocker updated and monitor its resource usage.

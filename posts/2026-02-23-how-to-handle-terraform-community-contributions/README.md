@@ -22,6 +22,7 @@ Create clear, comprehensive contribution guidelines:
 
 ```markdown
 # CONTRIBUTING.md
+
 # Contributing to Our Terraform Module Library
 
 Thank you for your interest in contributing! This document

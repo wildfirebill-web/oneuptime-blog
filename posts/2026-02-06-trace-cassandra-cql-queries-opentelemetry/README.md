@@ -222,6 +222,7 @@ If you prefer not to modify application code, the OpenTelemetry Java agent autom
 
 ```bash
 # Download the OpenTelemetry Java agent
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 

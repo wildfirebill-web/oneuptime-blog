@@ -20,6 +20,7 @@ sudo dnf install -y stress-ng
 
 ```bash
 # Stress all CPU cores for 60 seconds
+
 stress-ng --cpu 0 --timeout 60s --metrics-brief
 
 # Specific CPU methods

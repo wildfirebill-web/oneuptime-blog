@@ -51,6 +51,7 @@ If you have not already created an account, use the Azure CLI.
 
 ```bash
 # Create a Spatial Anchors account in your Azure subscription
+
 az spatial-anchors-account create \
   --resource-group myResourceGroup \
   --name mySpatialAnchorsAccount \

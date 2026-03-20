@@ -16,6 +16,7 @@ AWX (the open-source upstream of Red Hat Ansible Automation Platform) provides a
 
 ```yaml
 # Deploy AWX using the AWX Operator on Kubernetes
+
 # awx-deployment.yml
 apiVersion: awx.ansible.com/v1beta1
 kind: AWX

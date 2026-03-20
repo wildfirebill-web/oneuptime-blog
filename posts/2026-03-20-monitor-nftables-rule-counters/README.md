@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, Monitoring, Counters, Networking, Security
+Tags: nftables, Linux, Firewall, Monitoring, Counter, Networking, Security
 
 Description: Add and read packet and byte counters to nftables rules to monitor traffic volumes and verify which firewall rules are being hit.
 
@@ -21,6 +21,7 @@ The `counter` keyword is placed anywhere in a rule. It is a non-terminal stateme
 
 ```bash
 # Add a counter to an existing rule
+
 nft add rule inet filter input tcp dport 22 counter accept
 
 # Add a counter to a drop rule
@@ -38,7 +39,7 @@ nft list chain inet filter input
 ```
 
 Output example:
-```
+```text
 table inet filter {
     chain input {
         ...

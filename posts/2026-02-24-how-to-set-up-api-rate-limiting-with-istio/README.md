@@ -381,6 +381,7 @@ Check rate limit metrics in Prometheus:
 
 ```text
 # Local rate limit
+
 envoy_http_local_rate_limit_enabled
 envoy_http_local_rate_limit_enforced
 envoy_http_local_rate_limit_ok

@@ -27,6 +27,7 @@ vi ~/.ssh/config
 
 ```bash
 # Web server
+
 Host web01
     HostName web01.prod.example.com
     User admin

@@ -54,6 +54,7 @@ OIDC_PROVIDER=$(aws eks describe-cluster \
   --output text | sed 's|https://||')
 
 # Create trust policy for the S3 controller
+
 cat > s3-trust-policy.json <<EOF
 {
   "Version": "2012-10-17",

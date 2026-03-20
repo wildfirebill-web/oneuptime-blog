@@ -29,6 +29,7 @@ CLUSTER_NAME="production"
 echo "Checking current EKS cluster versions..."
 
 # Get control plane version
+
 CONTROL_PLANE_VERSION=$(aws eks describe-cluster \
   --name $CLUSTER_NAME \
   --query 'cluster.version' \

@@ -20,6 +20,7 @@ The `--user` flag on `podman exec` lets you override the default user for the ex
 
 ```bash
 # Start a container for testing
+
 podman run -d --name my-app nginx:latest
 
 # Execute a command as root

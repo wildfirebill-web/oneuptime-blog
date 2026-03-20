@@ -55,6 +55,7 @@ Check your existing configuration files:
 
 ```bash
 # List all Netplan configuration files
+
 ls -la /etc/netplan/
 ```
 

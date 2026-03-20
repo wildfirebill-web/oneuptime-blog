@@ -18,6 +18,7 @@ A requirements file is a YAML document with two top-level keys: `roles` and `col
 
 ```yaml
 # requirements.yml - basic structure with both roles and collections
+
 ---
 roles:
   - name: geerlingguy.nginx

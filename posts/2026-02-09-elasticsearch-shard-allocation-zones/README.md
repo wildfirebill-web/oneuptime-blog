@@ -24,6 +24,7 @@ Set the zone attribute for each Elasticsearch node. In elasticsearch.yml:
 
 ```yaml
 # Node in zone us-east-1a
+
 node.attr.zone: us-east-1a
 
 # Node in zone us-east-1b

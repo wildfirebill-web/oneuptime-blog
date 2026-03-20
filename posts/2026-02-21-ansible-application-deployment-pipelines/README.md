@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # roles/deploy/defaults/main.yml - Deployment configuration
+
 app_name: myapp
 app_user: deploy
 app_group: deploy

@@ -42,6 +42,7 @@ IAP sits between the load balancer and your backend service. When an unauthentic
 
 ```bash
 # Enable the Identity-Aware Proxy API
+
 gcloud services enable iap.googleapis.com --project=my-project-id
 ```
 

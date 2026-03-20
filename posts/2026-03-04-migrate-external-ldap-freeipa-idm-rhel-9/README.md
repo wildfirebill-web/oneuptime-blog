@@ -37,6 +37,7 @@ Before migrating, understand what you are working with.
 
 ```bash
 # Count users in the source LDAP
+
 ldapsearch -x -H ldap://old-ldap.example.com \
   -D "cn=admin,dc=example,dc=com" -W \
   -b "ou=people,dc=example,dc=com" "(objectClass=posixAccount)" dn | grep "dn:" | wc -l

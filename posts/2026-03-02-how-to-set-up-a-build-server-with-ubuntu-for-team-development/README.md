@@ -20,6 +20,7 @@ For a team of 5-20 developers, a reasonable starting spec is:
 
 ```bash
 # Update the system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential build tools
@@ -202,7 +203,7 @@ echo 'export NPM_CONFIG_CACHE=/opt/build-cache/npm' | sudo tee /etc/profile.d/np
 echo 'export PIP_CACHE_DIR=/opt/build-cache/pip' | sudo tee /etc/profile.d/pip.sh
 ```
 
-## Resource Limits and cgroups
+Resource Limits and cgroups
 
 Prevent runaway builds from consuming all server resources.
 

@@ -30,6 +30,7 @@ graph LR
 
 ```bash
 # Create a dedicated user for SAP Router
+
 sudo groupadd -g 79 sapsys
 sudo useradd -u 1010 -g sapsys -d /opt/saprouter -m -s /bin/bash saprouter
 

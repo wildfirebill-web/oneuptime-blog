@@ -1,8 +1,8 @@
-# How to Handle Resource Timeouts in OpenTofu
+# How to Handle Resource Timeouts in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Timeouts, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Timeout, Infrastructure as Code, DevOps
 
 Description: A guide to configuring resource timeouts in OpenTofu to control how long operations wait before failing.
 
@@ -31,6 +31,7 @@ resource "aws_db_instance" "main" {
 
 ```hcl
 # EKS cluster can take 15-25 minutes to create
+
 resource "aws_eks_cluster" "main" {
   name     = "my-cluster"
   role_arn = aws_iam_role.eks.arn

@@ -27,6 +27,7 @@ Verify the image controllers are running:
 kubectl get pods -n flux-system | grep image
 
 # Expected output:
+
 # image-automation-controller-xxx
 # image-reflector-controller-xxx
 ```

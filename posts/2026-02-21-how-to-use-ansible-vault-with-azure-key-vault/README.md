@@ -16,6 +16,7 @@ Install the Azure Ansible collection and required Python packages:
 
 ```bash
 # Install the Azure collection for Ansible
+
 ansible-galaxy collection install azure.azcollection
 
 # Install required Python dependencies

@@ -120,6 +120,7 @@ This usually means DNS resolved fine, but the sidecar can't find any healthy end
 
 ```bash
 # Check endpoint health
+
 istioctl proxy-config endpoint deploy/my-app --cluster "outbound|8080||my-service.default.svc.cluster.local"
 ```
 

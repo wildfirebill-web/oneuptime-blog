@@ -82,6 +82,7 @@ First, examine the collector logs for error messages:
 
 ```bash
 # View collector logs (Docker)
+
 docker logs otel-collector 2>&1 | grep -i "error\|connection\|receiver"
 
 # View collector logs (Kubernetes)

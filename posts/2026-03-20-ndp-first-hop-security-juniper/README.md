@@ -12,7 +12,7 @@ Juniper EX Series switches provide IPv6 First Hop Security through the IPv6 Neig
 
 ## Juniper FHS Architecture
 
-```
+```text
 Juniper EX FHS Feature Mapping:
 
 Cisco Feature          → Juniper Equivalent
@@ -34,10 +34,11 @@ Configuration Location:
 
 ## Complete FHS Configuration
 
-```
+```text
 # Full Juniper EX FHS configuration for VLAN 10
 
 # Step 1: Configure VLANs
+
 set vlans v10 vlan-id 10
 set vlans v20 vlan-id 20
 
@@ -70,7 +71,7 @@ set interfaces ge-0/0/23 unit 0 family ethernet-switching dhcp-trusted
 
 ## Junos Hierarchy Format Configuration
 
-```
+```text
 # Complete configuration in Junos bracket format
 
 vlans {
@@ -161,7 +162,7 @@ show dhcp v6 snooping statistics
 
 For hosts that do not auto-learn (e.g., static address hosts), add manual bindings.
 
-```
+```text
 # Add static ND security binding
 set vlans v10 forwarding-options nd-security static-binding
   inet6-address 2001:db8::1
@@ -218,7 +219,7 @@ show version | match Junos
 
 ## Logging NDP Security Events
 
-```
+```text
 # Configure logging for ND security violations
 set system syslog file fhs-log any info
 

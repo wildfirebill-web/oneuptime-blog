@@ -52,6 +52,7 @@ NAMESPACE="argocd"
 mkdir -p "$BACKUP_DIR"
 
 # Export all ArgoCD data
+
 argocd admin export --namespace $NAMESPACE > "$BACKUP_DIR/argocd-export-${DATE}.yaml"
 
 # Backup ConfigMaps separately

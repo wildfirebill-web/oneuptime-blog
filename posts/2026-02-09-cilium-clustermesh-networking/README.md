@@ -22,6 +22,7 @@ Before deploying ClusterMesh, plan your network topology:
 
 ```bash
 # Cluster 1 (us-east)
+
 Pod CIDR: 10.1.0.0/16
 Service CIDR: 10.96.0.0/16
 Cluster ID: 1

@@ -34,6 +34,7 @@ graph TD
 
 ```bash
 # Create a system user for Prometheus (no home directory, no login shell)
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 ```
 

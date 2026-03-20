@@ -34,6 +34,7 @@ Verify WireGuard is available on your Talos nodes:
 
 ```bash
 # Check if the WireGuard kernel module is loaded
+
 talosctl -n 192.168.1.10 read /proc/modules | grep wireguard
 
 # If empty, the module might need to be loaded

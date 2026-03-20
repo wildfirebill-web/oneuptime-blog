@@ -16,6 +16,7 @@ The simplest and most commonly used method is the `dict2items` filter. It takes 
 
 ```yaml
 # playbook-dict2items.yml
+
 # Converts a dictionary of firewall rules into a list for iteration
 - name: Transform dictionary to list with dict2items
   hosts: localhost

@@ -27,6 +27,7 @@ FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memo
 
 ```bash
 # Increase to 4GB
+
 node --max-old-space-size=4096 app.js
 
 # Increase to 8GB

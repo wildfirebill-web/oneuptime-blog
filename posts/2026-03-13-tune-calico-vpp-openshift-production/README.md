@@ -54,6 +54,7 @@ oc patch configmap vpp-config -n calico-vpp-dataplane \
 
 ```yaml
 # In vpp.conf
+
 dpdk {
   dev 0000:01:00.0 {
     num-rx-queues 4

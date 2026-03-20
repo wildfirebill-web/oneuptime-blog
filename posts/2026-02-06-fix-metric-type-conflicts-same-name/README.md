@@ -18,6 +18,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("my-service")
 
 # First registration: Counter
+
 request_counter = meter.create_counter(
     name="http.requests",
     description="Total HTTP requests",

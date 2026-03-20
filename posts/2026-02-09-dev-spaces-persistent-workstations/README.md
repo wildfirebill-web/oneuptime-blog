@@ -30,6 +30,7 @@ Build a container image with common development tools:
 
 ```dockerfile
 # Dockerfile.devspace
+
 FROM ubuntu:22.04
 
 # Prevent interactive prompts

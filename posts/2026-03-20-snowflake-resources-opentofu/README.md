@@ -14,6 +14,7 @@ Snowflake separates compute (virtual warehouses) from storage, making it uniquel
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     snowflake = {
@@ -48,7 +49,7 @@ resource "snowflake_database" "production" {
 resource "snowflake_schema" "raw" {
   database = snowflake_database.production.name
   name     = "RAW"
-  comment  = "Raw ingested data — do not query directly"
+  comment  = "Raw ingested data - do not query directly"
   data_retention_time_in_days = 1  # Short retention for raw zone
 }
 
@@ -64,7 +65,7 @@ resource "snowflake_schema" "analytics" {
 
 ```hcl
 # warehouses.tf
-# ETL warehouse — suspend when idle to save credits
+# ETL warehouse - suspend when idle to save credits
 resource "snowflake_warehouse" "etl" {
   name           = "ETL_WAREHOUSE"
   warehouse_size = "MEDIUM"
@@ -78,7 +79,7 @@ resource "snowflake_warehouse" "etl" {
   scaling_policy    = "ECONOMY"
 }
 
-# Reporting warehouse — responsive for end users
+# Reporting warehouse - responsive for end users
 resource "snowflake_warehouse" "reporting" {
   name           = "REPORTING_WAREHOUSE"
   warehouse_size = "SMALL"
@@ -159,8 +160,8 @@ resource "snowflake_role_grants" "etl_role_grant" {
 
 ## Best Practices
 
-- Always set `auto_suspend` on warehouses — even 60 seconds of auto-suspend eliminates most idle costs.
+- Always set `auto_suspend` on warehouses - even 60 seconds of auto-suspend eliminates most idle costs.
 - Use Role-Based Access Control (RBAC) with functional roles rather than granting permissions directly to users.
 - Set `data_retention_time_in_days = 7` on production databases to enable time travel for data recovery.
-- Use Snowflake's `FUTURE GRANTS` where possible to automatically apply grants to new tables — OpenTofu models this with `on_future_schemas_in_database`.
+- Use Snowflake's `FUTURE GRANTS` where possible to automatically apply grants to new tables - OpenTofu models this with `on_future_schemas_in_database`.
 - Store Snowflake credentials in a secrets manager, not in OpenTofu variable files.

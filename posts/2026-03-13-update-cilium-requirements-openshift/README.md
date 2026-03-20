@@ -30,6 +30,7 @@ Verify the OpenShift version and underlying RHCOS kernel meet Cilium's requireme
 
 ```bash
 # Check OpenShift version
+
 oc version
 
 # Check RHCOS kernel version on nodes

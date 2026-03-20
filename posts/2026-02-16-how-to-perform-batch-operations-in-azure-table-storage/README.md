@@ -38,6 +38,7 @@ connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
 table_client = TableClient.from_connection_string(connection_string, "SensorReadings")
 
 # Build a list of operations for the batch
+
 # All entities must share the same PartitionKey
 operations = []
 

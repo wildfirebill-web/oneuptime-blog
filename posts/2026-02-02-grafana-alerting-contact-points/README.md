@@ -82,6 +82,7 @@ Add the SMTP configuration to your Grafana settings file:
 
 ```ini
 # grafana.ini
+
 # SMTP configuration for email notifications
 [smtp]
 enabled = true

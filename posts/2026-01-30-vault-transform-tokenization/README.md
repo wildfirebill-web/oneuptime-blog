@@ -55,6 +55,7 @@ First, enable the Transform secrets engine and configure it for tokenization:
 
 ```bash
 # Enable the transform secrets engine at the default path
+
 # This creates the endpoint at /transform for all tokenization operations
 vault secrets enable transform
 ```

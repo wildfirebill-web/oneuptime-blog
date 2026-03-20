@@ -1,8 +1,8 @@
-# How to Create Custom Automation Scripts for Rancher
+# How to Create Custom Automation Scripts for Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, automation, scripts, bash, python, api
+Tags: Rancher, Automation, Scripts, Bash, Python, API
 
 Description: A practical guide to writing custom automation scripts for Rancher using Bash and Python, covering common administrative tasks and workflow automation.
 
@@ -19,6 +19,7 @@ While Rancher provides a comprehensive UI and Terraform support, there are many 
 # rancher-auth.sh - Source this in your automation scripts
 
 # Set these via environment variables or a secrets manager
+
 RANCHER_URL="${RANCHER_URL:-https://rancher.example.com}"
 RANCHER_TOKEN="${RANCHER_TOKEN}"  # Format: token-xxx:secret
 

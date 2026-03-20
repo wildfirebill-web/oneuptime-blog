@@ -397,6 +397,7 @@ Test the endpoints using curl to verify they work before connecting an identity 
 
 ```bash
 # Get service provider config
+
 curl http://localhost:3000/scim/v2/ServiceProviderConfig \
   -H "Authorization: Bearer your-token"
 

@@ -18,6 +18,7 @@ Set up ReaR to use an NFS server for both the rescue ISO and the backup data:
 # /etc/rear/local.conf - NFS-based configuration
 
 # Create a bootable ISO rescue image
+
 OUTPUT=ISO
 
 # Store the ISO on the NFS server

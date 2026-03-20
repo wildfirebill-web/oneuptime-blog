@@ -32,6 +32,7 @@ fatal: [server1]: FAILED! => {
 
 ```bash
 # Test the key manually
+
 ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes ubuntu@server1
 
 # Check key permissions

@@ -37,6 +37,7 @@ Packer creates identical machine images for multiple platforms from a single con
 
 ```hcl
 # aws-app-server.pkr.hcl
+
 packer {
   required_plugins {
     amazon = {

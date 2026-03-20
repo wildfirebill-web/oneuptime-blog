@@ -23,6 +23,7 @@ Add a stats section to your HAProxy configuration:
 # /etc/haproxy/haproxy.cfg
 
 # Add this as a new frontend/listen section
+
 listen stats
     # Listen on port 8404 for the stats page
     bind *:8404

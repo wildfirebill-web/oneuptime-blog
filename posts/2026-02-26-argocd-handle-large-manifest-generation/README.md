@@ -42,6 +42,7 @@ The most effective solution is to break large applications into smaller, focused
 
 ```yaml
 # Before: One massive application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

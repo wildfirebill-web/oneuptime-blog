@@ -22,6 +22,7 @@ Here is a straightforward example using PowerShell commands through `win_shell`.
 
 ```yaml
 # basic-shell.yml - Run PowerShell commands on Windows hosts
+
 ---
 - name: Basic win_shell usage
   hosts: windows_servers

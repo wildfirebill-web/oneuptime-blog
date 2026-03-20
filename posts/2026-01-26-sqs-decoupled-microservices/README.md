@@ -49,6 +49,7 @@ Standard queues offer maximum throughput and at-least-once delivery.
 
 ```bash
 # Create a standard queue with sensible defaults
+
 aws sqs create-queue \
   --queue-name order-processing-queue \
   --attributes '{

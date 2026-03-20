@@ -27,6 +27,7 @@ Prometheus Node Exporter exposes detailed network metrics for each interface: by
 
 ```promql
 # Incoming bandwidth in Mbps (per interface)
+
 rate(node_network_receive_bytes_total[5m]) * 8 / 1000000
 
 # Outgoing bandwidth in Mbps

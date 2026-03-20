@@ -34,6 +34,7 @@ The first step is to find which resources are causing the drift.
 
 ```bash
 # Get the application diff
+
 argocd app diff my-app
 
 # If the diff is large, save it to a file for analysis

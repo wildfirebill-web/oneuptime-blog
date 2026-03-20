@@ -14,6 +14,7 @@ On RHEL, CentOS, and Fedora, nmcli modifies NetworkManager connection profiles t
 
 ```bash
 # Add a static route to the eth0 connection
+
 nmcli connection modify eth0 \
     +ipv4.routes "192.168.2.0/24 10.0.0.1"
 

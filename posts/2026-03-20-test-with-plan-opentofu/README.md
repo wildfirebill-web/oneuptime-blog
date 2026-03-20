@@ -14,7 +14,7 @@ OpenTofu tests support two modes: `command = plan` and `command = apply`. Plan-m
 
 ```hcl
 run "test_name" {
-  # command = plan is the default — you can omit it
+  # command = plan is the default - you can omit it
   command = plan
 
   assert {
@@ -70,6 +70,7 @@ Provider-computed values are unknown at plan time (unless using mock_provider):
 
 ```hcl
 # Without mock_provider, these are UNKNOWN at plan time:
+
 # - aws_instance.web.public_ip (assigned by AWS)
 # - aws_instance.web.id (assigned by AWS)
 # - aws_db_instance.main.endpoint (computed by RDS)

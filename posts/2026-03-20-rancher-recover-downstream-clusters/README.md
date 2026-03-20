@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, downstream-clusters, kubernetes, recovery
+Tags: Rancher, Disaster-recovery, Downstream-clusters, Kubernetes, Recovery
 
 Description: Guide to recovering and reconnecting downstream Kubernetes clusters after a Rancher management server failure.
 
 ## Introduction
 
-When Rancher fails, downstream clusters continue running their workloads independently. However, you lose the management plane—the ability to deploy, configure, and monitor through Rancher. This guide explains how to reconnect and recover downstream clusters after Rancher is restored.
+When Rancher fails, downstream clusters continue running their workloads independently. However, you lose the management plane-the ability to deploy, configure, and monitor through Rancher. This guide explains how to reconnect and recover downstream clusters after Rancher is restored.
 
 ## What Happens to Downstream Clusters During Rancher Failure
 
@@ -23,6 +23,7 @@ When Rancher fails, downstream clusters continue running their workloads indepen
 
 ```bash
 # If you have direct kubeconfig, use it to manage clusters
+
 export KUBECONFIG=/path/to/cluster-kubeconfig.yaml
 
 # Verify direct access
@@ -160,4 +161,4 @@ kubectl annotate gitrepo my-repo \
 
 ## Conclusion
 
-Downstream clusters are resilient to Rancher management server failures—workloads keep running. Recovery focuses on re-establishing the management connection between Rancher and each downstream cluster. Most clusters reconnect automatically after Rancher is restored. For those that don't, re-importing via the cluster import YAML is a reliable fallback.
+Downstream clusters are resilient to Rancher management server failures-workloads keep running. Recovery focuses on re-establishing the management connection between Rancher and each downstream cluster. Most clusters reconnect automatically after Rancher is restored. For those that don't, re-importing via the cluster import YAML is a reliable fallback.

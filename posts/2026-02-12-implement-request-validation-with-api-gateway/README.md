@@ -115,6 +115,7 @@ When a request doesn't match the schema, API Gateway returns a 400 error without
 
 ```bash
 # This gets rejected - missing required "name" field
+
 curl -X POST https://api-id.execute-api.us-east-1.amazonaws.com/prod/users \
   -H "Content-Type: application/json" \
   -d '{"email": "test@example.com"}'

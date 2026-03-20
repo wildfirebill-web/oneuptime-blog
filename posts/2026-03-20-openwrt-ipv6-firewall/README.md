@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenWrt, IPv6, Firewall, ip6tables, nftables
+Tags: OpenWrt, IPv6, Firewall, Ip6tables, nftables
 
 Description: Configure ip6tables-based IPv6 firewall rules on OpenWrt using the nftables fw4 framework or iptables-based rules.
 
@@ -30,6 +30,7 @@ OpenWrt uses UCI (Unified Configuration Interface) for all configuration:
 
 ```bash
 # View current network configuration
+
 uci show network
 
 # View IPv6 specific settings
@@ -54,7 +55,7 @@ uci commit network
 
 ### In /etc/config/network
 
-```
+```text
 config interface 'wan6'
     option device 'eth0'
     option proto 'dhcpv6'
@@ -72,7 +73,7 @@ config interface 'lan'
 
 ## DHCP/RA Configuration (/etc/config/dhcp)
 
-```
+```text
 config dhcp 'lan'
     option interface 'lan'
     option start '100'

@@ -16,6 +16,7 @@ The simplest approach uses Apache's built-in `Redirect` directive inside the HTT
 
 ```apache
 # /etc/apache2/sites-available/000-default.conf
+
 <VirtualHost *:80>
     ServerName example.com
     ServerAlias www.example.com

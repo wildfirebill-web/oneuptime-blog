@@ -18,6 +18,7 @@ You need an Azure subscription and the Azure CLI installed. Let me also mention 
 
 ```bash
 # Install the Python packages
+
 pip install azure-identity azure-keyvault-secrets
 ```
 

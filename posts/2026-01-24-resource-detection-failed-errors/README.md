@@ -101,6 +101,7 @@ For EKS with IRSA (IAM Roles for Service Accounts), ensure the metadata service 
 
 ```yaml
 # Kubernetes deployment with proper AWS configuration
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

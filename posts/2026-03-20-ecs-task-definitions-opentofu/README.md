@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ECS, Task Definitions, Fargate, Container Configuration, Infrastructure as Code
+Tags: OpenTofu, AWS, ECS, Task Definition, Fargate, Container Configuration, Infrastructure as Code
 
 Description: Learn how to create ECS task definitions with OpenTofu for Fargate and EC2 launch types, including container definitions, environment variables from Secrets Manager, and health checks.
 
 ## Introduction
 
-ECS task definitions are blueprints for running containerized applications, defining CPU and memory allocation, container images, port mappings, environment variables, secrets injection, and health checks. Task definitions are versioned—each update creates a new revision while preserving previous versions for rollback.
+ECS task definitions are blueprints for running containerized applications, defining CPU and memory allocation, container images, port mappings, environment variables, secrets injection, and health checks. Task definitions are versioned-each update creates a new revision while preserving previous versions for rollback.
 
 ## Prerequisites
 
@@ -205,6 +205,7 @@ tofu plan
 tofu apply
 
 # Describe the latest task definition revision
+
 aws ecs describe-task-definition \
   --task-definition my-project-app \
   --query 'taskDefinition.{Family: family, Revision: revision, CPU: cpu, Memory: memory}'
@@ -212,4 +213,4 @@ aws ecs describe-task-definition \
 
 ## Conclusion
 
-Task definitions use JSON container definitions with specific field names that differ from Docker Compose—use `essential: true` only for the primary container, `essential: false` for sidecars that shouldn't kill the task if they crash. Always define `healthCheck` with an appropriate `startPeriod` to prevent tasks from being marked unhealthy during startup. Use the `secrets` array for sensitive values—they're injected at container start without appearing in CloudWatch logs or environment variable listings.
+Task definitions use JSON container definitions with specific field names that differ from Docker Compose-use `essential: true` only for the primary container, `essential: false` for sidecars that shouldn't kill the task if they crash. Always define `healthCheck` with an appropriate `startPeriod` to prevent tasks from being marked unhealthy during startup. Use the `secrets` array for sensitive values-they're injected at container start without appearing in CloudWatch logs or environment variable listings.

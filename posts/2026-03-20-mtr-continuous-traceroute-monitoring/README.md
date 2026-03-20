@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTR, Traceroute, Linux, Networking, Monitoring, Latency
+Tags: mtr, Traceroute, Linux, Networking, Monitoring, Latency
 
 Description: Use MTR (My TraceRoute) to combine ping and traceroute into continuous monitoring that reveals packet loss and latency at every hop, not just the destination.
 
-MTR combines the hop discovery of traceroute with the continuous measurement of ping. It updates in real time, showing loss and latency statistics for every hop simultaneously — making it far more powerful for detecting intermittent problems.
+MTR combines the hop discovery of traceroute with the continuous measurement of ping. It updates in real time, showing loss and latency statistics for every hop simultaneously - making it far more powerful for detecting intermittent problems.
 
 ## Install MTR
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install mtr-tiny -y
 
 # RHEL/CentOS
@@ -27,13 +28,13 @@ brew install mtr
 # Run MTR interactively (Ctrl+C to quit)
 sudo mtr 8.8.8.8
 
-# Numeric output (no DNS lookups — faster)
+# Numeric output (no DNS lookups - faster)
 sudo mtr -n 8.8.8.8
 ```
 
 ## Reading MTR Output
 
-```
+```text
                              My traceroute  [v0.95]
 Keys:  Help   Display mode   Restart statistics   Order of fields   quit
                                      Packets               Pings
@@ -44,13 +45,13 @@ Keys:  Help   Display mode   Restart statistics   Order of fields   quit
  4. 8.8.8.8                         0.0%    50  12.8  13.0  12.1  14.2   0.5
 
 Columns:
-  Loss%  — Packet loss percentage (any > 0% is worth investigating)
-  Snt    — Packets sent
-  Last   — Last RTT in milliseconds
-  Avg    — Mean RTT
-  Best   — Minimum RTT (theoretical link latency)
-  Wrst   — Maximum RTT (worst case)
-  StDev  — Jitter (higher = less consistent = more congested)
+  Loss%  - Packet loss percentage (any > 0% is worth investigating)
+  Snt    - Packets sent
+  Last   - Last RTT in milliseconds
+  Avg    - Mean RTT
+  Best   - Minimum RTT (theoretical link latency)
+  Wrst   - Maximum RTT (worst case)
+  StDev  - Jitter (higher = less consistent = more congested)
 ```
 
 ## Generate a Report
@@ -70,7 +71,7 @@ sudo mtr --report --report-cycles=100 -n 8.8.8.8 > /tmp/mtr-report.txt
 
 ## MTR in Report Mode Output
 
-```
+```text
 Start: 2026-03-19T10:00:00+0000
 HOST: myserver              Loss%   Snt   Last   Avg  Best  Wrst StDev
   1.|-- 192.168.1.1          0.0%   100    1.1   1.2   1.0   2.0   0.2
@@ -121,4 +122,4 @@ sudo mtr -i 0.5 8.8.8.8
 sudo mtr --tos 46 8.8.8.8    # EF (expedited forwarding) DSCP
 ```
 
-MTR is the single best tool for diagnosing intermittent network problems — by continuously measuring every hop simultaneously, it catches transient issues that a single traceroute would miss.
+MTR is the single best tool for diagnosing intermittent network problems - by continuously measuring every hop simultaneously, it catches transient issues that a single traceroute would miss.

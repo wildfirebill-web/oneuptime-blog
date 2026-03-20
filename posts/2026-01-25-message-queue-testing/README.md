@@ -582,6 +582,7 @@ describe('Message Ordering', () => {
 
 ```yaml
 # .github/workflows/mq-tests.yaml
+
 name: Message Queue Tests
 
 on: [push, pull_request]

@@ -283,6 +283,7 @@ For infrastructure-as-code management, define templates in Terraform:
 
 ```hcl
 # Inspection template for standard PII detection
+
 resource "google_data_loss_prevention_inspect_template" "standard_pii" {
   parent       = "projects/${var.project_id}/locations/global"
   display_name = "Standard PII Detection"

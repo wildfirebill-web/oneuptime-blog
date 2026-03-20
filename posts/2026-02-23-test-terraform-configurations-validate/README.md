@@ -34,6 +34,7 @@ It does NOT check:
 
 ```bash
 # Initialize the configuration first (required for provider schemas)
+
 terraform init
 
 # Run validation

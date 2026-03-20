@@ -65,6 +65,7 @@ Other pods connect using:
 
 ```bash
 # Connect to service on port 80
+
 curl http://web-service:80
 # Or simply (port 80 is the default for HTTP)
 curl http://web-service

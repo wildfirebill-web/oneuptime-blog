@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Kubernetes, Ingress, NGINX, AWS Load Balancer Controller, Helm, Infrastructure as Code
+Tags: OpenTofu, Kubernetes, Ingress, Nginx, Aws load balancer controller, Helm, Infrastructure as Code
 
 Description: Learn how to deploy Kubernetes ingress controllers with OpenTofu using Helm, including NGINX Ingress Controller and the AWS Load Balancer Controller with proper IAM configuration.
 
@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # nginx_ingress.tf
+
 resource "helm_release" "nginx_ingress" {
   name             = "ingress-nginx"
   repository       = "https://kubernetes.github.io/ingress-nginx"
@@ -193,8 +194,8 @@ resource "kubernetes_ingress_v1" "app" {
 
 ## Best Practices
 
-- Deploy the ingress controller before application Ingress resources — use `depends_on` to enforce ordering.
+- Deploy the ingress controller before application Ingress resources - use `depends_on` to enforce ordering.
 - Use the AWS Load Balancer Controller for ALB-based ingress on EKS instead of the classic in-tree cloud provider.
 - Set `podDisruptionBudget` on the ingress controller to prevent all replicas from being evicted during node maintenance.
 - Use IRSA for the AWS Load Balancer Controller rather than node-level IAM permissions.
-- Pin Helm chart versions and review changes when upgrading — ingress controller upgrades can affect routing behavior.
+- Pin Helm chart versions and review changes when upgrading - ingress controller upgrades can affect routing behavior.

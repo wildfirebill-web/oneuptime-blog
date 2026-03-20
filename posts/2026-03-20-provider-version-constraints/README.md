@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Providers
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provider
 
 Description: Learn how to specify and manage provider version constraints in OpenTofu using required_providers blocks and version constraint syntax.
 
@@ -130,7 +130,8 @@ terraform {
 After running `tofu init`, a lock file records exact versions:
 
 ```hcl
-# .terraform.lock.hcl — commit this file to version control
+# .terraform.lock.hcl - commit this file to version control
+
 provider "registry.opentofu.org/hashicorp/aws" {
   version     = "5.31.0"
   constraints = "~> 5.31"
@@ -190,7 +191,7 @@ terraform {
 
 ## Version Constraint Best Practices
 
-1. Always specify version constraints — never omit them
+1. Always specify version constraints - never omit them
 2. In reusable modules: use ranges (e.g., `>= 4.0, < 6.0`) for flexibility
 3. In root configurations: use pessimistic constraints (e.g., `~> 5.31`) for stability
 4. Commit `.terraform.lock.hcl` to version control for reproducibility

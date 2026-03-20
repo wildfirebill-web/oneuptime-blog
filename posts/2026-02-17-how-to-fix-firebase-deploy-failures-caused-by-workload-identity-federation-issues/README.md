@@ -71,6 +71,7 @@ These commands show your current Workload Identity setup:
 
 ```bash
 # List workload identity pools
+
 gcloud iam workload-identity-pools list \
   --location="global" \
   --project YOUR_PROJECT_ID

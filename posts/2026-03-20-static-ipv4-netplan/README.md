@@ -1,4 +1,4 @@
-# How to Configure a Static IPv4 Address with Netplan
+# How to Configure a Static IPv4 Address with Netplan - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,6 +15,7 @@ Netplan is the default network configuration utility on Ubuntu 18.04 and later. 
 ```bash
 ip link show
 # or
+
 ip -br link
 ```
 
@@ -97,7 +98,7 @@ If the configuration fails to apply:
 sudo netplan --debug apply
 ```
 
-Check for YAML syntax errors — Netplan is strict about indentation (use spaces, not tabs).
+Check for YAML syntax errors - Netplan is strict about indentation (use spaces, not tabs).
 
 ## Setting Multiple IP Addresses
 

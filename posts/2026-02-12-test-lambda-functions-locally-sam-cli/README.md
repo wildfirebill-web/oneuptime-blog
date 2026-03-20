@@ -20,6 +20,7 @@ These commands install SAM CLI on different platforms:
 
 ```bash
 # macOS with Homebrew
+
 brew install aws-sam-cli
 
 # Linux

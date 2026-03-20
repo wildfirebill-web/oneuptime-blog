@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Routing Security, Filtering, Network
+Tags: BGP, IPv6, Routing Security, Filtering, Networks
 
 Description: Configure BGP prefix filters for IPv6 to prevent accepting invalid or bogon prefixes and protect your routing infrastructure.
 
@@ -18,8 +18,9 @@ BGP prefix filtering prevents:
 
 These IPv6 ranges should never appear in BGP:
 
-```
+```text
 # IPv6 Bogon Prefixes (never accept from BGP peers)
+
 ::/0            # Default route (only accept if explicitly wanted)
 ::/8            # Unspecified address range
 ::1/128         # Loopback
@@ -38,7 +39,7 @@ ff00::/8        # Multicast
 
 ## BIRD2 Prefix Filtering
 
-```
+```javascript
 # /etc/bird/bird.conf
 
 # Define IPv6 bogon prefix list
@@ -79,7 +80,7 @@ protocol bgp upstream_v6 {
 
 ## FRRouting Prefix Lists
 
-```
+```text
 # FRR configuration
 ! Create IPv6 prefix-list with bogon ranges
 ipv6 prefix-list BOGON-V6 seq 5 deny ::/0
@@ -102,7 +103,7 @@ router bgp 64496
 
 ## Cisco IOS Prefix Filtering
 
-```
+```text
 ! Define IPv6 prefix-list
 ipv6 prefix-list IPV6-BOGONS seq 10 deny ::/0
 ipv6 prefix-list IPV6-BOGONS seq 20 deny ::/8 le 128

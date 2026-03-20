@@ -59,6 +59,7 @@ Here is the same configuration using Azure CLI:
 
 ```bash
 # Enable DNS proxy on an existing Azure Firewall
+
 # The firewall will listen on port 53 and forward queries upstream
 az network firewall update \
   --name myAzureFirewall \

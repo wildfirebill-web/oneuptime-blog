@@ -32,6 +32,7 @@ For a simple Node.js project, create this configuration file in your project roo
 
 ```yaml
 # compose-dev.yaml - Development environment configuration
+
 services:
   app:
     # Use a pre-built development image with Node.js

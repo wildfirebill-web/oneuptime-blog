@@ -16,7 +16,7 @@ Portainer can poll a Git repository for stack changes and redeploy automatically
 
 1. In Portainer, create a stack from a **Git repository**.
 2. Enable **Auto update** and set a polling interval (e.g., every 5 minutes).
-3. Commit compose file changes to the repository — Portainer detects and applies them automatically.
+3. Commit compose file changes to the repository - Portainer detects and applies them automatically.
 
 For image updates, combine this with a CI step that updates the image tag in the compose file on commit.
 
@@ -36,6 +36,7 @@ Docker Hub webhooks send a POST to a URL when a new image is pushed. Since Docke
 
 ```bash
 # Simple bridge using a serverless function or tiny Node.js app
+
 # Docker Hub sends POST to your-bridge.example.com/hook
 # Bridge forwards to Portainer webhook URL
 curl -X POST "$PORTAINER_WEBHOOK_URL"
@@ -104,7 +105,7 @@ Use a long-lived API token instead of username/password for automation:
 # Create an API token in Portainer:
 # My Account > Access Tokens > Add access token
 
-# Use the token directly — no auth step needed
+# Use the token directly - no auth step needed
 curl -s -X POST \
   -H "x-api-key: YOUR_API_TOKEN" \
   "$PORTAINER_URL/api/stacks/$STACK_ID/images/update?pullImage=true"

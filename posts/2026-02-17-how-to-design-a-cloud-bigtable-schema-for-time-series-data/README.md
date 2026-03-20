@@ -53,6 +53,7 @@ For time-series data, organize column families based on how the data is accessed
 
 ```bash
 # Create the table and column families using cbt
+
 cbt createtable sensor-data
 
 # Raw readings - accessed frequently for recent data

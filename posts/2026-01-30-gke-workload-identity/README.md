@@ -53,6 +53,7 @@ This script enables the Container and IAM APIs, which are required for GKE and W
 
 ```bash
 # Set your project ID
+
 export PROJECT_ID="your-project-id"
 export REGION="us-central1"
 export CLUSTER_NAME="workload-identity-demo"

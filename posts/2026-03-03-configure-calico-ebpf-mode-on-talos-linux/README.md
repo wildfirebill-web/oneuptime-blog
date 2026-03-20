@@ -34,6 +34,7 @@ First, disable kube-proxy since Calico eBPF mode replaces it. Update your Talos 
 
 ```yaml
 # talos-ebpf-patch.yaml
+
 cluster:
   proxy:
     # Disable kube-proxy - Calico eBPF will handle service routing

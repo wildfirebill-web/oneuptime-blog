@@ -270,6 +270,7 @@ Set up dashboards and alerts to monitor the health of your integration:
 
 ```bash
 # Create an alert for failed Logic App runs
+
 az monitor metrics alert create \
   --resource-group rg-workflows \
   --name "SalesforceSyncFailures" \

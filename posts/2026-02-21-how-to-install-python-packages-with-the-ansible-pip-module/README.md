@@ -16,6 +16,7 @@ The simplest use case is installing a Python package system-wide:
 
 ```yaml
 # Install a Python package globally
+
 - name: Install the requests library
   ansible.builtin.pip:
     name: requests

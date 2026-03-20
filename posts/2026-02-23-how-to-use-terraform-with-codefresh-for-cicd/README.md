@@ -24,6 +24,7 @@ Create a Codefresh pipeline that runs Terraform operations.
 
 ```yaml
 # codefresh.yml
+
 # Basic Terraform pipeline in Codefresh
 version: '1.0'
 

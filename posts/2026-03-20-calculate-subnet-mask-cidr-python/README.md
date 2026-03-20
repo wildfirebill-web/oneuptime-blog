@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, CIDR, Subnet, ipaddress, Networking
+Tags: Python, IPv4, CIDR, Subnets, Ipaddress, Networking
 
 Description: Learn how to calculate IPv4 subnet masks from CIDR prefix lengths in Python, convert between dotted-decimal and prefix notation, and derive network details programmatically.
 
@@ -20,6 +20,7 @@ for prefix in [8, 16, 24, 25, 26, 27, 28, 29, 30, 32]:
     print(f"/{prefix:2d}  ->  {prefix_to_mask(prefix)}")
 
 # / 8  ->  255.0.0.0
+
 # /16  ->  255.255.0.0
 # /24  ->  255.255.255.0
 # /25  ->  255.255.255.128

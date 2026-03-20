@@ -34,6 +34,7 @@ Identify and group applications that handle PHI:
 
 ```bash
 # Label PHI-handling pods
+
 kubectl label pods -l app=patient-records phi-scope=true -n healthcare
 kubectl label pods -l app=ehr-system phi-scope=true -n healthcare
 kubectl label pods -l app=medical-imaging phi-scope=true -n healthcare

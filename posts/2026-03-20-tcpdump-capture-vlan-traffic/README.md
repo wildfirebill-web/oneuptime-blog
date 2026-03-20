@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: tcpdump, VLAN, 802.1Q, Packet Capture, Linux
 
-Description: Learn how to capture packets on a specific VLAN using tcpdump on Linux, including filtering by VLAN ID on trunk interfaces, creating VLAN subinterfaces for capture, and analyzing 802.1Q tagged traffic.
+Description: Learn how to capture packets on a specific VLAN using tcpdump on Linux, including filtering by VLAN ID on trunk interfaces, creating VLAN subinterfaces for capture, and analyzing 802.1Q tagged...
 
 ## VLAN Traffic and 802.1Q Tags
 
-VLANs use 802.1Q tagging — a 4-byte tag inserted into the Ethernet frame containing the VLAN ID. On trunk ports (carrying multiple VLANs), each frame has a tag. On access ports (single VLAN), frames are untagged at the port.
+VLANs use 802.1Q tagging - a 4-byte tag inserted into the Ethernet frame containing the VLAN ID. On trunk ports (carrying multiple VLANs), each frame has a tag. On access ports (single VLAN), frames are untagged at the port.
 
 ## Step 1: Capture Tagged VLAN Traffic on Trunk Interface
 
 ```bash
 # Capture all VLAN-tagged traffic (802.1Q)
+
 sudo tcpdump -i eth0 -n vlan
 
 # Capture traffic on a specific VLAN (VLAN 100)
@@ -55,7 +56,7 @@ ip link show eth0.100
 ## Step 3: Configure Persistent VLAN Interface
 
 ```bash
-# NetworkManager — create VLAN profile
+# NetworkManager - create VLAN profile
 nmcli con add type vlan \
     con-name "vlan100" \
     ifname eth0.100 \
@@ -101,7 +102,7 @@ tcpdump -r /tmp/all-vlans.pcap 'vlan 100'
 
 ## Step 5: Analyze VLAN Traffic in Wireshark
 
-```
+```text
 In Wireshark:
 
 1. Filter for specific VLAN:

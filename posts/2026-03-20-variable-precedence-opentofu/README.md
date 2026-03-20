@@ -12,7 +12,7 @@ When multiple sources provide values for the same variable, OpenTofu uses a defi
 
 ## Precedence Order (Lowest to Highest)
 
-```
+```text
 1. Default values (in variable blocks)       <- LOWEST
 2. terraform.tfvars
 3. terraform.tfvars.json
@@ -27,6 +27,7 @@ When multiple sources provide values for the same variable, OpenTofu uses a defi
 
 ```hcl
 # variables.tf
+
 variable "instance_count" {
   type    = number
   default = 1  # Level 1: Default

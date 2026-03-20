@@ -66,6 +66,7 @@ The following Kubernetes Deployment creates a gRPC server with three replicas, w
 
 ```yaml
 # grpc-server-deployment.yaml
+
 # This deployment creates a gRPC server with multiple replicas
 # The server responds with its pod name, allowing us to verify load distribution
 apiVersion: apps/v1

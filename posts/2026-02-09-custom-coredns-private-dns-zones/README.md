@@ -359,6 +359,7 @@ Serve different records for the same domain based on the query source:
 
 ```yaml
 # Internal view
+
 company.com:53 {
     errors
     log

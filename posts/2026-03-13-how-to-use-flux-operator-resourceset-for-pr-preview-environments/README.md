@@ -174,6 +174,7 @@ In your application repository, create a `deploy/preview` directory with a Kusto
 
 ```yaml
 # deploy/preview/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

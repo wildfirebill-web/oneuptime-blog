@@ -40,6 +40,7 @@ mkdir -p coredns-custom-plugin
 cd coredns-custom-plugin
 
 # Initialize Go module
+
 go mod init github.com/yourname/coredns-custom-plugin
 
 # Add CoreDNS dependency

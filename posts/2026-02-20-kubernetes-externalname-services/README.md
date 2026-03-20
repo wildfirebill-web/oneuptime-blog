@@ -41,6 +41,7 @@ With a ClusterIP service, DNS returns a virtual IP that kube-proxy routes to pod
 
 ```yaml
 # external-database.yaml
+
 # Maps the in-cluster name "database" to an external RDS endpoint
 apiVersion: v1
 kind: Service

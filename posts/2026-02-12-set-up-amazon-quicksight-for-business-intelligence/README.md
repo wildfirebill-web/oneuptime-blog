@@ -18,6 +18,7 @@ QuickSight has its own account system separate from your AWS account. You need t
 
 ```bash
 # Create a QuickSight account (Enterprise Edition)
+
 aws quicksight create-account-subscription \
   --edition ENTERPRISE \
   --authentication-method IAM_AND_QUICKSIGHT \

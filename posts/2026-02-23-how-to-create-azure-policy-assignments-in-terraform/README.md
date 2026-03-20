@@ -32,6 +32,7 @@ Start with the basic provider configuration:
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.3.0"
 

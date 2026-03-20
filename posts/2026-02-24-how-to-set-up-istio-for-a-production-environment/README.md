@@ -19,6 +19,7 @@ helm repo add istio https://istio-release.storage.googleapis.com/charts
 helm repo update
 
 # Install CRDs
+
 helm install istio-base istio/base -n istio-system --create-namespace
 
 # Install control plane
@@ -240,7 +241,7 @@ Set up alerts for these critical metrics:
 - **5xx error rates**: `istio_requests_total{response_code=~"5.."}`
 - **High proxy memory**: Envoy using more than 80% of its limit
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 Based on cluster size:
 

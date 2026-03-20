@@ -108,6 +108,7 @@ If your LDAP server uses a private CA, mount the certificate into the Dex contai
 
 ```yaml
 # Create a ConfigMap with the CA certificate
+
 kubectl -n argocd create configmap ldap-ca-cert \
   --from-file=ldap-ca.crt=/path/to/ldap-ca.crt
 ```

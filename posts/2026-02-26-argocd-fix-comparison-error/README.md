@@ -35,6 +35,7 @@ The most frequent cause of ComparisonError is that ArgoCD's repo server cannot g
 
 ```bash
 # Check the application status for the specific error message
+
 argocd app get my-app
 
 # Look at the repo server logs for detailed errors

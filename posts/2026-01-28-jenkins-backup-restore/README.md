@@ -30,6 +30,7 @@ Example (Linux):
 systemctl stop jenkins
 
 # Backup Jenkins home
+
 rsync -a /var/lib/jenkins/ /backups/jenkins/
 
 systemctl start jenkins

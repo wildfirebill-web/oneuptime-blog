@@ -26,6 +26,7 @@ Create a symmetric encryption key in AWS KMS that SOPS will use for encrypting a
 
 ```bash
 # Create a KMS key for SOPS encryption
+
 aws kms create-key \
   --description "SOPS encryption key for Flux CD secrets" \
   --key-usage ENCRYPT_DECRYPT \

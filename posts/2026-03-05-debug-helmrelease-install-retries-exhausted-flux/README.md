@@ -40,6 +40,7 @@ Verify that the HelmRelease is in the retries exhausted state:
 
 ```bash
 # Check the HelmRelease status
+
 flux get helmrelease my-app -n default
 
 # View the detailed conditions

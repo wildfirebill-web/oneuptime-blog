@@ -16,6 +16,7 @@ Docker creates isolated networks where containers can communicate using containe
 
 ```bash
 # List existing networks
+
 docker network ls
 
 # Inspect a network to see connected containers

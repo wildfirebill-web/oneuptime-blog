@@ -70,6 +70,7 @@ Apply and verify:
 kubectl apply -f rabbitmq-clusters.yaml
 
 # Verify shovel plugin is enabled
+
 kubectl exec -n rabbitmq source-cluster-server-0 -- \
   rabbitmq-plugins list | grep shovel
 ```

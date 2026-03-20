@@ -80,6 +80,7 @@ Download Flipper from the official website or install via package managers:
 
 ```bash
 # macOS with Homebrew
+
 brew install --cask flipper
 
 # Or download directly from

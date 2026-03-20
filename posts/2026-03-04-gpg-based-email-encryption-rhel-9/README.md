@@ -35,6 +35,7 @@ Ensure you have a GPG key pair:
 
 ```bash
 # Check for existing keys
+
 gpg --list-secret-keys
 
 # If no keys exist, generate one

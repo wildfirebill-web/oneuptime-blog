@@ -50,6 +50,7 @@ Start by establishing a baseline without Cilium in the critical path. Run a host
 
 ```bash
 # Deploy iperf3 server on node-1 with host networking
+
 kubectl run iperf-server --image=networkstatic/iperf3 \
   --overrides='{"spec":{"hostNetwork":true,"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- -s

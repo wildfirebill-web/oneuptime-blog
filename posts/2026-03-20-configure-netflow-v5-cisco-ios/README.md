@@ -27,7 +27,7 @@ Each NetFlow v5 record contains:
 
 Enable NetFlow monitoring on each interface you want to capture traffic from:
 
-```
+```text
 ! Enable NetFlow on the WAN-facing interface (captures inbound and outbound)
 Router(config)# interface GigabitEthernet0/0
 ! Capture inbound flows
@@ -45,7 +45,7 @@ Router(config-if)# ip flow ingress
 
 Point the router to your NetFlow collector:
 
-```
+```bash
 ! Specify the collector's IP and UDP port (2055 is common)
 Router(config)# ip flow-export destination 192.168.1.200 2055
 
@@ -60,7 +60,7 @@ Router(config)# ip flow-export source Loopback0
 
 Adjust how flows are cached and exported:
 
-```
+```bash
 ! Set active flow timeout (export active flows after this many minutes)
 Router(config)# ip flow-cache timeout active 5
 
@@ -73,7 +73,7 @@ Router# show ip flow-cache timeout
 
 ## Step 4: Verify NetFlow Is Capturing Flows
 
-```
+```text
 ! Show the flow cache (active flows)
 Router# show ip cache flow
 
@@ -92,7 +92,7 @@ Gi0/0     10.0.0.1        Gi0/1     8.8.8.8         11   00   00    10  1000   0
 
 ## Step 5: Verify Flow Export
 
-```
+```bash
 ! Show export statistics
 Router# show ip flow export
 
@@ -111,6 +111,7 @@ A growing `flows exported` count confirms data is being sent.
 
 ```bash
 # Install nfdump NetFlow collector
+
 sudo apt-get install -y nfdump
 
 # Start the collector listening on UDP 2055
@@ -129,7 +130,7 @@ nfdump -R /var/log/netflow/ \
 
 For full visibility into AS-level traffic:
 
-```
+```bash
 ! Enable BGP peer AS information in NetFlow records
 Router(config)# ip flow-export version 5 origin-as
 

@@ -16,6 +16,7 @@ Bare repositories are what Git servers use. They have no working directory:
 
 ```yaml
 # playbook-bare-repo.yml
+
 # Creates a bare Git repository on a server for receiving pushes
 - name: Create bare repositories
   hosts: git_servers

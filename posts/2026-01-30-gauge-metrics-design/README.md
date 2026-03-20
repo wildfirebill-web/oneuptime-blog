@@ -135,6 +135,7 @@ Python applications follow a similar pattern. This example demonstrates tracking
 
 ```python
 # metrics/gauges.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
@@ -229,7 +230,7 @@ The key question is whether the value represents cumulative totals or current st
 
 Several patterns emerge when implementing gauges in production systems. Here are the most useful ones.
 
-### Resource Pool Monitoring
+Resource Pool Monitoring
 
 Track utilization of bounded resources like connection pools or thread pools.
 

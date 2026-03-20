@@ -223,6 +223,7 @@ class FieldEncryption:
         return plaintext.decode('utf-8')
 
 # Usage with SQLAlchemy
+
 from sqlalchemy import TypeDecorator, String
 
 class EncryptedString(TypeDecorator):

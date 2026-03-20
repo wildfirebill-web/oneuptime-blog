@@ -12,7 +12,7 @@ Portainer enforces a minimum password length for all user accounts. By default, 
 
 ## Finding the Password Policy Settings
 
-Password policy settings are managed through the Portainer web UI under Settings. This is not configurable via CLI flags — it must be set after Portainer is running.
+Password policy settings are managed through the Portainer web UI under Settings. This is not configurable via CLI flags - it must be set after Portainer is running.
 
 ## Step 1: Access Security Settings
 
@@ -33,7 +33,7 @@ The UI shows a slider or input field where you can set the minimum from 1 to 100
 
 Portainer also supports additional password complexity rules:
 
-```
+```text
 Password rules:
 ☑ Minimum length: [12]
 ☑ Require at least one uppercase letter
@@ -48,6 +48,7 @@ For automation or infrastructure-as-code workflows, use the Portainer API:
 
 ```bash
 # First, get an authentication token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

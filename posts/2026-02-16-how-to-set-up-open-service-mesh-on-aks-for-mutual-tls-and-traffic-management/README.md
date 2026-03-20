@@ -30,6 +30,7 @@ Enable OSM as an AKS add-on. This is simpler and more maintainable than installi
 
 ```bash
 # Enable the OSM add-on on an existing cluster
+
 az aks enable-addons \
   --addons open-service-mesh \
   --resource-group myResourceGroup \

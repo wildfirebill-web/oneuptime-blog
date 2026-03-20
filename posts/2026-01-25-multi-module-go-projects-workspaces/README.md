@@ -47,6 +47,7 @@ Initialize the workspace from the project root. This creates a go.work file that
 
 ```bash
 # Create the workspace file at the project root
+
 cd myproject
 go work init
 

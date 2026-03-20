@@ -18,6 +18,7 @@ Boot diagnostics captures a screenshot of the VM console and the serial log outp
 
 ```bash
 # Enable boot diagnostics with managed storage (recommended)
+
 az vm boot-diagnostics enable \
   --resource-group myResourceGroup \
   --name myVM

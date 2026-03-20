@@ -14,6 +14,7 @@ Sendmail is one of the oldest MTAs and has supported IPv6 for many years. Config
 
 ```bash
 # Install Sendmail and tools on RHEL/CentOS
+
 sudo yum install -y sendmail sendmail-cf m4
 
 # Install on Ubuntu/Debian

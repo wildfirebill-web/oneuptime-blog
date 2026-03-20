@@ -12,8 +12,9 @@ Wireshark provides comprehensive NDP analysis through its ICMPv6 dissector, whic
 
 ## Essential NDP Wireshark Display Filters
 
-```
+```text
 # Show all NDP messages (Types 133-137)
+
 icmpv6.type >= 133 and icmpv6.type <= 137
 
 # Specific message types
@@ -56,7 +57,7 @@ icmpv6.type == 135 and not ipv6.dst matches "^ff"
 
 ## Diagnosing Specific NDP Issues
 
-```
+```text
 1. SLAAC not working (no address assigned):
    Filter: icmpv6.type == 133 or icmpv6.type == 134
    Look for: RS from host (133), RA response (134)

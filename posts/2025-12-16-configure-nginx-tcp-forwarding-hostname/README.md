@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, TCP Proxy, Stream Module, SNI, Load Balancing, SSL Passthrough
+Tags: Nginx, TCP Proxy, Stream Module, SNI, Load Balancing, SSL Passthrough
 
 Description: Learn how to configure Nginx stream module for TCP forwarding based on hostname using SNI, enabling routing of TLS traffic to different backends without terminating SSL.
 
@@ -32,6 +32,7 @@ Nginx must be compiled with the stream module:
 
 ```bash
 # Check if stream module is available
+
 nginx -V 2>&1 | grep -o with-stream
 
 # On Ubuntu/Debian, install nginx-full or nginx-extras

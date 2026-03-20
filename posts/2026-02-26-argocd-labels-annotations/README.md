@@ -68,6 +68,7 @@ You can add labels when creating an application:
 
 ```bash
 # Create an application with labels
+
 argocd app create payment-api \
   --repo https://github.com/myorg/services.git \
   --path services/payment-api \

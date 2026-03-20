@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Troubleshooting, Nodes, Scheduling
+Tags: Longhorn, Kubernetes, Storage, Troubleshooting, Node, Scheduling
 
 Description: Diagnose and fix issues that cause Longhorn nodes to be marked as not schedulable, preventing new volumes from being created or replicas from being placed.
 
@@ -22,6 +22,7 @@ A Longhorn node is considered schedulable when:
 
 ```bash
 # Check which Longhorn nodes are not schedulable
+
 kubectl get nodes.longhorn.io -n longhorn-system \
   -o custom-columns="NAME:.metadata.name,SCHEDULABLE:.spec.allowScheduling,STATUS:.status.conditions"
 
@@ -36,7 +37,7 @@ kubectl get nodes.longhorn.io -n longhorn-system -o yaml | \
 
 ## Issue 1: Manual Scheduling Disabled
 
-The most straightforward cause — scheduling was explicitly disabled.
+The most straightforward cause - scheduling was explicitly disabled.
 
 ```bash
 # Check if scheduling is disabled
@@ -60,7 +61,7 @@ kubectl get nodes.longhorn.io -n longhorn-system -o yaml | \
 # Check the minimum available percentage setting
 kubectl get settings.longhorn.io storage-minimal-available-percentage \
   -n longhorn-system -o yaml
-# Default is 25 — if available storage < 25% of total, node becomes non-schedulable
+# Default is 25 - if available storage < 25% of total, node becomes non-schedulable
 
 # Check actual disk usage
 kubectl get nodes.longhorn.io <node-name> -n longhorn-system -o yaml | \
@@ -221,4 +222,4 @@ Key conditions to look for:
 
 ## Conclusion
 
-Longhorn nodes becoming non-schedulable is a common issue that usually stems from disk space exhaustion, manual scheduling disabling, or node-level problems in Kubernetes. By regularly monitoring node schedulability through Prometheus alerts and the Longhorn UI, you can catch and address these issues before they impact volume health. Maintaining adequate disk headroom — at least 30% free space — is the most effective preventive measure.
+Longhorn nodes becoming non-schedulable is a common issue that usually stems from disk space exhaustion, manual scheduling disabling, or node-level problems in Kubernetes. By regularly monitoring node schedulability through Prometheus alerts and the Longhorn UI, you can catch and address these issues before they impact volume health. Maintaining adequate disk headroom - at least 30% free space - is the most effective preventive measure.

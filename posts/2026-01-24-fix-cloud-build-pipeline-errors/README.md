@@ -52,6 +52,7 @@ This is the most common Cloud Build error. The Cloud Build service account needs
 
 ```bash
 # Find your Cloud Build service account
+
 PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 SERVICE_ACCOUNT="${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com"
 

@@ -27,6 +27,7 @@ Create a Dataproc cluster with the BigQuery connector pre-installed:
 
 ```bash
 # Create a Dataproc cluster with the spark-bigquery connector
+
 # The connector is included by default in recent image versions
 gcloud dataproc clusters create bq-spark-cluster \
   --region=us-central1 \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, IP Addressing, Scopes, Address Pool, sysadmin
+Tags: DHCP, Networking, IP Addressing, Scope, Address Pool, Sysadmin
 
 Description: DHCP scopes define the range of IP addresses available for dynamic assignment within a subnet, along with options like gateway, DNS, and lease time that clients receive along with their address.
 
@@ -18,10 +18,11 @@ A DHCP scope is a pool of IP addresses that the DHCP server can assign to client
 
 ## ISC dhcpd: Multi-Scope Configuration
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Global defaults
+
 default-lease-time 86400;
 max-lease-time 604800;
 
@@ -34,17 +35,17 @@ subnet 10.0.10.0 netmask 255.255.255.0 {
     default-lease-time 86400;
 }
 
-# Scope 2: VoIP VLAN — shorter lease, specific options
+# Scope 2: VoIP VLAN - shorter lease, specific options
 subnet 10.0.30.0 netmask 255.255.255.0 {
     range 10.0.30.10 10.0.30.250;
     option routers 10.0.30.1;
     option domain-name-servers 10.0.0.53;
     # VoIP phones call manager IP
     option tftp-server-name "10.0.0.100";
-    default-lease-time 3600;    # 1 hour — phones re-register frequently
+    default-lease-time 3600;    # 1 hour - phones re-register frequently
 }
 
-# Scope 3: Guest WiFi — isolated pool
+# Scope 3: Guest WiFi - isolated pool
 subnet 10.0.99.0 netmask 255.255.255.0 {
     range 10.0.99.10 10.0.99.250;
     option routers 10.0.99.1;
@@ -55,7 +56,7 @@ subnet 10.0.99.0 netmask 255.255.255.0 {
 
 ## dnsmasq: Multiple Scopes by Interface
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Office LAN on eth0.10

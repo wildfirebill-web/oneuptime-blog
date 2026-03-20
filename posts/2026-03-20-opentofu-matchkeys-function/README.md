@@ -1,4 +1,4 @@
-# How to Use the matchkeys Function in OpenTofu
+# How to Use the matchkeys Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,9 +16,9 @@ The `matchkeys` function in OpenTofu filters elements from one list based on whe
 matchkeys(valueslist, keyslist, searchset)
 ```
 
-- **valueslist** — the list of values to filter
-- **keyslist** — the parallel list of keys to match against
-- **searchset** — the set of keys to match
+- **valueslist** - the list of values to filter
+- **keyslist** - the parallel list of keys to match against
+- **searchset** - the set of keys to match
 - Returns a list of values from `valueslist` where the corresponding `keyslist` element is in `searchset`
 
 ## Basic Examples

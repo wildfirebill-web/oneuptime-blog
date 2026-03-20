@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NetworkManager, Connection Profiles, Linux
+Tags: RHEL, NetworkManager, Connection Profile, Linux
 
 Description: Learn how to create, modify, clone, and manage NetworkManager connection profiles on RHEL, including keyfile format details and best practices for profile management.
 
@@ -40,6 +40,7 @@ The most common way to create profiles from the command line:
 
 ```bash
 # Create a basic ethernet profile with DHCP
+
 nmcli connection add \
   con-name "office-dhcp" \
   ifname ens192 \

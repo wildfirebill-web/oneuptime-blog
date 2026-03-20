@@ -18,6 +18,7 @@ Ansible has a built-in `cron` module that handles all the common cron operations
 
 ```yaml
 # manage-cron.yml - Manage cron jobs across the fleet
+
 ---
 - name: Manage cron jobs
   hosts: all

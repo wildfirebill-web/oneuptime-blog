@@ -1,4 +1,4 @@
-# How to Deploy Vaultwarden (Bitwarden) via Portainer
+# How to Deploy Vaultwarden (Bitwarden) via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -123,6 +123,7 @@ vault.example.com {
 
 ```bash
 # Backup Vaultwarden data
+
 docker stop vaultwarden
 
 docker run --rm \

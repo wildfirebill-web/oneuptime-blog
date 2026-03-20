@@ -58,6 +58,7 @@ When you want to keep a record of successful deployments:
 
 ```yaml
 # Keep successful audit records, discard failures
+
 apiVersion: batch/v1
 kind: Job
 metadata:

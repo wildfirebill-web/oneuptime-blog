@@ -86,6 +86,7 @@ For Kubernetes workloads, you can provide NFS storage through persistent volumes
 
 ```yaml
 # nfs-pv.yaml
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:

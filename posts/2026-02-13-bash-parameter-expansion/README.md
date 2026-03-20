@@ -16,6 +16,7 @@ Every time you write `$var` or `${var}`, you are using parameter expansion. The 
 
 ```bash
 # Without braces: ambiguous
+
 name="world"
 echo "$namewide"   # Bash looks for variable "namewide", not "name" + "wide"
 

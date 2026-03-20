@@ -22,6 +22,7 @@ Start with a simple GatewayClass that references a controller.
 
 ```yaml
 # gatewayclass-basic.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: GatewayClass
 metadata:

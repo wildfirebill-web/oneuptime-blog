@@ -142,6 +142,7 @@ CloudWatch Metrics Insights lets you calculate derived metrics directly in Grafa
 
 ```text
 # Error rate as a percentage
+
 # Query A: Errors (Sum)
 # Query B: Invocations (Sum)
 # Expression C:

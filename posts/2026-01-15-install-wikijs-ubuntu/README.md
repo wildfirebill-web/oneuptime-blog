@@ -59,6 +59,7 @@ Start by updating your Ubuntu system:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

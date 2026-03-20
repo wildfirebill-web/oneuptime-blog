@@ -20,6 +20,7 @@ Download the official MongoDB image.
 
 ```bash
 # Pull the official MongoDB image
+
 podman pull docker.io/library/mongo:7
 
 # Verify the image

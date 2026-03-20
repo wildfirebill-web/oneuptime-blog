@@ -14,6 +14,7 @@ Cloudflare R2 is S3-compatible object storage with no egress fees, making it ide
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     cloudflare = {
@@ -36,7 +37,7 @@ provider "cloudflare" {
 resource "cloudflare_r2_bucket" "media" {
   account_id = var.cloudflare_account_id
   name       = "${var.project_name}-media-${var.environment}"
-  location   = "WNAM"  # Western North America — EEUR, ENAM, APAC, WEUR, WNAM, OC
+  location   = "WNAM"  # Western North America - EEUR, ENAM, APAC, WEUR, WNAM, OC
 
   lifecycle {
     # Prevent accidental bucket deletion
@@ -131,8 +132,8 @@ output "r2_api_token" {
 
 ## Best Practices
 
-- Use Workers to serve R2 content on custom domains — R2 doesn't have built-in public URL support without Workers or the R2 public bucket feature.
+- Use Workers to serve R2 content on custom domains - R2 doesn't have built-in public URL support without Workers or the R2 public bucket feature.
 - Set `Cache-Control: immutable` headers for content-addressed (hash-named) assets to maximize CDN caching.
 - Use location hints when creating buckets to place storage closer to your primary user base.
 - Create scoped API tokens for each application rather than using your account-level API token.
-- Enable lifecycle rules once Cloudflare R2 supports them — monitor bucket growth to control storage costs.
+- Enable lifecycle rules once Cloudflare R2 supports them - monitor bucket growth to control storage costs.

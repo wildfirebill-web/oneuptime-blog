@@ -337,6 +337,7 @@ Deploy a web application that stays close to its Redis cache for optimal perform
 
 ```yaml
 # First deploy Redis cache
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

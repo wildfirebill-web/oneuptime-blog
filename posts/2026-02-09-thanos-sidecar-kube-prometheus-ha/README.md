@@ -34,6 +34,7 @@ Create an S3 bucket and configuration:
 
 ```yaml
 # thanos-storage-config.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

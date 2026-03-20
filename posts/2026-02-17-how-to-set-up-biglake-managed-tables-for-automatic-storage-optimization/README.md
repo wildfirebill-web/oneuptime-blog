@@ -24,6 +24,7 @@ You need a Cloud Resource connection and a Cloud Storage bucket for the managed 
 
 ```bash
 # Enable required APIs
+
 gcloud services enable biglake.googleapis.com
 gcloud services enable bigqueryconnection.googleapis.com
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, NGINX, Reverse Proxy, DevOps, Networking
+Tags: WebSocket, Nginx, Reverse Proxy, DevOps, Networking
 
 Description: Learn how to configure Nginx as a reverse proxy for WebSocket connections, including SSL termination, load balancing, and handling common issues.
 
@@ -16,6 +16,7 @@ WebSocket connections start as HTTP requests that upgrade to the WebSocket proto
 
 ```nginx
 # /etc/nginx/sites-available/websocket
+
 # Basic WebSocket proxy configuration
 
 upstream websocket_backend {

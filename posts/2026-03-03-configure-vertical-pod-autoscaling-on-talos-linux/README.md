@@ -28,6 +28,7 @@ The VPA is not built into Kubernetes. You need to install it separately. The off
 
 ```bash
 # Clone the VPA repository
+
 git clone https://github.com/kubernetes/autoscaler.git
 cd autoscaler/vertical-pod-autoscaler
 

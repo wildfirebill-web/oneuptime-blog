@@ -23,7 +23,7 @@ Zigbee IP (ZIP) is a standard developed by the Zigbee Alliance (now CSA) that co
 
 ## Zigbee IP Network Stack
 
-```
+```text
 Application:   ZCL (Zigbee Cluster Library) over HTTP/CoAP
 Transport:     TCP/UDP
 Network:       IPv6
@@ -37,6 +37,7 @@ On a Linux system with an IEEE 802.15.4 radio:
 
 ```bash
 # Configure 802.15.4 for Zigbee IP channel (typically channel 11-26 at 2.4 GHz)
+
 sudo iwpan phy phy0 set channel 0 11
 
 # Set PAN ID for the Zigbee IP network

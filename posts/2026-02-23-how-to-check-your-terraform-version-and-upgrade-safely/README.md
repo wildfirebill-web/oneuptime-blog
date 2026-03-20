@@ -18,6 +18,7 @@ The simplest check:
 
 ```bash
 # Check the installed Terraform version
+
 terraform version
 ```
 

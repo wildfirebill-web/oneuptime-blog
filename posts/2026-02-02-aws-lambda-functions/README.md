@@ -64,6 +64,7 @@ This function simply echoes back the event data it receives, which is useful for
 
 ```python
 # lambda_function.py
+
 import json
 
 def handler(event, context):

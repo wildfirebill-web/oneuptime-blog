@@ -27,6 +27,7 @@ flowchart TD
 
 ```bash
 # Check if the system booted in UEFI or BIOS mode
+
 ls /sys/firmware/efi 2>/dev/null && echo "UEFI" || echo "BIOS"
 
 # Another way to check

@@ -29,6 +29,7 @@ Install the Percona XtraDB Cluster Operator:
 
 ```bash
 # Clone the Percona operator repository
+
 git clone -b v1.14.0 https://github.com/percona/percona-xtradb-cluster-operator
 cd percona-xtradb-cluster-operator
 

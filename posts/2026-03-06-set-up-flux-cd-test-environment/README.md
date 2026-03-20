@@ -16,6 +16,7 @@ Testing Flux CD configurations against a live production cluster is risky and sl
 
 ```bash
 # Install Kind
+
 go install sigs.k8s.io/kind@latest
 # Or on macOS:
 brew install kind

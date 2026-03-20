@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Snapshots, Backup, Disaster Recovery, Infrastructure as Code
+Tags: OpenTofu, AWS, RDS, Snapshot, Backup, Disaster Recovery, Infrastructure as Code
 
 Description: Learn how to create manual RDS snapshots and manage snapshot copies across regions using OpenTofu for long-term backup retention and cross-region disaster recovery.
 
@@ -19,6 +19,7 @@ Manual RDS snapshots are user-initiated backups retained until explicitly delete
 
 ```hcl
 # Manual snapshot of an RDS instance
+
 resource "aws_db_snapshot" "pre_migration" {
   db_instance_identifier = aws_db_instance.main.id
   db_snapshot_identifier = "${var.project_name}-pre-migration-${formatdate("YYYYMMDD", timestamp())}"

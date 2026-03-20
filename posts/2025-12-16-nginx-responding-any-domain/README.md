@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Web Server, DNS, Configuration, Security
+Tags: Nginx, Web Server, DNS, Configuration, Security
 
 Description: Learn why Nginx responds to any domain name and how to configure a proper default server block to control which domains your server accepts, improving security and preventing unwanted traffic.
 
@@ -30,6 +30,7 @@ Here's a typical configuration that causes this issue:
 
 ```nginx
 # /etc/nginx/sites-enabled/mysite.conf
+
 server {
     listen 80;
     server_name mysite.com www.mysite.com;

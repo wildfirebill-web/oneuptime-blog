@@ -22,6 +22,7 @@ If you have not enabled the Spanner API yet, run this command to do so:
 
 ```bash
 # Enable the Cloud Spanner API for the current project
+
 gcloud services enable spanner.googleapis.com
 ```
 

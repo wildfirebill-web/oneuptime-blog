@@ -34,6 +34,7 @@ To enable pruning, set `spec.prune` to `true` in your Kustomization resource.
 
 ```yaml
 # kustomization-with-prune.yaml - Enable automatic pruning
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

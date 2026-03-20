@@ -8,7 +8,7 @@ Description: Learn how to configure automatic SSL certificate renewal with Certb
 
 ## Why Automatic Renewal Is Critical
 
-Let's Encrypt certificates expire after 90 days. Manual renewal is error-prone—it's easy to forget, and an expired certificate causes HTTPS errors for all visitors. Certbot provides automatic renewal that runs twice daily and renews certificates 30 days before expiry.
+Let's Encrypt certificates expire after 90 days. Manual renewal is error-prone-it's easy to forget, and an expired certificate causes HTTPS errors for all visitors. Certbot provides automatic renewal that runs twice daily and renews certificates 30 days before expiry.
 
 ## Step 1: Verify Renewal Is Already Set Up
 
@@ -16,6 +16,7 @@ When you install Certbot via snap, it automatically creates a renewal timer:
 
 ```bash
 # Check the renewal systemd timer
+
 sudo systemctl status snap.certbot.renew.timer
 
 # Or if installed via apt

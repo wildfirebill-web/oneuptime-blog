@@ -24,6 +24,7 @@ On Talos Linux, the minimal operating system overhead means more resources are a
 
 ```yaml
 # Example showing requests and limits
+
 spec:
   containers:
     - name: app

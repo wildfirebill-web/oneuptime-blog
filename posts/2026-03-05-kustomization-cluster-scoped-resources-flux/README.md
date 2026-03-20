@@ -31,6 +31,7 @@ A Kustomization that manages cluster-scoped resources looks similar to one manag
 
 ```yaml
 # Kustomization for cluster-scoped resources
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -1,4 +1,4 @@
-# How to Configure Drone CI with Rancher
+# How to Configure Drone CI with Rancher - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ helm repo add drone https://charts.drone.io
 helm repo update
 
 # Create a namespace for Drone
+
 kubectl create namespace drone
 
 # Create a secret with Drone credentials
@@ -142,8 +143,8 @@ steps:
 In the Drone UI, go to your repository settings and add organization or repository secrets:
 
 - `docker_username` / `docker_password`
-- `kube_token` — the Rancher service account token
-- `kube_server` — Rancher cluster API URL
+- `kube_token` - the Rancher service account token
+- `kube_server` - Rancher cluster API URL
 
 ---
 

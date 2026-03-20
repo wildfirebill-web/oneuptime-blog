@@ -31,6 +31,7 @@ Use the following formula to calculate required IP space:
 
 ```bash
 # IP planning formula:
+
 # Required IPs = (max_nodes * max_pods_per_node) * 1.5 (50% headroom for rolling updates)
 # Block size: typically /26 (64 IPs) - one block per ~60 pods on a node
 # Blocks per node: ceil(max_pods_per_node / IPs_per_block)

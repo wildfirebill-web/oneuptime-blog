@@ -30,6 +30,7 @@ Create a release using the `release` keyword in a job.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test
@@ -93,7 +94,7 @@ create_release:
 
 Generate the release description dynamically from commit history or a changelog file.
 
-```yaml
+````yaml
 create_release:
   stage: release
   image: registry.gitlab.com/gitlab-org/release-cli:latest
@@ -115,9 +116,9 @@ create_release:
 
       ## Installation
 
-      \`\`\`bash
+      ```bash
       npm install @myorg/mypackage@$CI_COMMIT_TAG
-      \`\`\`
+      ```
       EOF
 
       cat release_notes.md
@@ -164,7 +165,7 @@ create_release:
           link_type: package
   rules:
     - if: '$CI_COMMIT_TAG'
-```
+````
 
 ## Release with Multiple Asset Types
 
@@ -327,7 +328,7 @@ create_release:
 
 Here is a complete pipeline for automated releases.
 
-```yaml
+````yaml
 stages:
   - build
   - test
@@ -408,13 +409,13 @@ changelog:
 
       ### Installation
 
-      \`\`\`bash
+      ```bash
       # Linux/macOS
       curl -L ${CI_PROJECT_URL}/-/releases/${CI_COMMIT_TAG}/downloads/${PACKAGE_NAME}-${CI_COMMIT_TAG}-linux.tar.gz | tar xz
 
       # npm
       npm install @myorg/${PACKAGE_NAME}@${CI_COMMIT_TAG}
-      \`\`\`
+      ```
       EOF
 
       cat release_notes.md
@@ -453,7 +454,7 @@ create_release:
     - changelog
   rules:
     - if: '$CI_COMMIT_TAG'
-```
+````
 
 ## Triggering Releases
 

@@ -37,6 +37,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Create a resource that identifies your service
+
 resource = Resource(attributes={
     "service.name": "asyncio-service",
     "service.version": "1.0.0"

@@ -234,6 +234,7 @@ Track health check metrics:
 
 ```promql
 # Healthy hosts
+
 envoy_cluster_health_check_success
 
 # Failed health checks

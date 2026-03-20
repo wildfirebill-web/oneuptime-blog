@@ -26,6 +26,7 @@ echo "=== Demo App Security Audit ==="
 NAMESPACE="demo"
 
 # Check all pods have policies
+
 PODS=$(kubectl get pods -n $NAMESPACE --no-headers -o custom-columns=":metadata.name,:metadata.labels")
 echo "Pods in namespace:"
 kubectl get pods -n $NAMESPACE --show-labels

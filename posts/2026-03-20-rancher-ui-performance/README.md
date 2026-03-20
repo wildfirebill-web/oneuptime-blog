@@ -20,6 +20,7 @@ A slow Rancher UI frustrates operators managing many clusters. UI performance de
 
 ```nginx
 # nginx.conf - Optimized Rancher reverse proxy
+
 upstream rancher_servers {
     least_conn;
     server rancher-01:443;

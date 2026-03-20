@@ -28,6 +28,7 @@ Create two VirtualService configs. The first is for business hours:
 
 ```yaml
 # vs-business-hours.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

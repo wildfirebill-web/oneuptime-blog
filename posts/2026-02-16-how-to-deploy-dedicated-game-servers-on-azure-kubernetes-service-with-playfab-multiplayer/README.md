@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Kubernetes Service, PlayFab, Game Servers, Multiplayer Gaming, AKS, Dedicated Server, Game Development
+Tags: Azure Kubernetes Service, PlayFab, Game Server, Multiplayer Gaming, AKS, Dedicated Server, Game Development
 
 Description: Deploy dedicated game servers on Azure Kubernetes Service using PlayFab Multiplayer Servers for scalable multiplayer gaming experiences.
 
@@ -38,6 +38,7 @@ Here is a Dockerfile for a typical game server.
 
 ```dockerfile
 # Use a base image appropriate for your game engine
+
 FROM ubuntu:22.04
 
 # Install dependencies your game server needs

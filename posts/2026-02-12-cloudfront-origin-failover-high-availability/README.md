@@ -138,6 +138,7 @@ Point your cache behavior at the origin group:
 
 ```bash
 # Create the distribution with failover
+
 aws cloudfront create-distribution \
   --distribution-config file://failover-distribution.json
 ```

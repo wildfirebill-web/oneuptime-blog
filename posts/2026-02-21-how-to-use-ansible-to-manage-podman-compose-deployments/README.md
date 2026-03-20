@@ -18,6 +18,7 @@ Podman runs without a daemon, which eliminates a single point of failure. It sup
 
 ```yaml
 # roles/podman/tasks/install.yml
+
 # Install Podman and related tools
 - name: Install Podman on Debian/Ubuntu
   ansible.builtin.apt:

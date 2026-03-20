@@ -14,6 +14,7 @@ Database servers should never have their ports (3306, 5432) exposed to the inter
 
 ```bash
 # Create SSH tunnel: local port 3307 → MySQL on remote network
+
 ssh -4 -fN \
   -L 127.0.0.1:3307:192.168.1.50:3306 \
   user@bastion.example.com

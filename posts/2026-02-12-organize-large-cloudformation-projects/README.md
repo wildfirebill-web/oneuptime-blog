@@ -63,6 +63,7 @@ Here's a parent template that pulls together nested stacks for a typical web app
 
 ```yaml
 # master.yaml - Parent template orchestrating nested stacks
+
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Master stack for web application infrastructure
 

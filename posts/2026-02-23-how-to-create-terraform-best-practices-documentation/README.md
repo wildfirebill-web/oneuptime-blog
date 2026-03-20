@@ -18,6 +18,7 @@ Organize your documentation into logical sections that match the Terraform workf
 
 ```yaml
 # docs/structure.yaml
+
 # Best practices documentation outline
 
 sections:

@@ -472,6 +472,7 @@ module.exports = {
 
 ```bash
 # Run each test file in a separate process
+
 jest --runInBand --detectOpenHandles
 
 # Run a single test to see if it passes alone

@@ -46,6 +46,7 @@ For RKE2 clusters, add admission controllers via the config:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 kube-apiserver-arg:
   - "enable-admission-plugins=NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota,PodSecurityAdmission,NodeRestriction,AlwaysPullImages,DenyServiceExternalIPs"
 ```

@@ -339,6 +339,7 @@ WHERE ds.avg_temp > l.threshold;
 
 ```python
 # Export from TimescaleDB
+
 # psql -c "COPY metrics TO '/tmp/metrics.csv' WITH CSV HEADER"
 
 # Import to ClickHouse

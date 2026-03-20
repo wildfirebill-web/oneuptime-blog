@@ -8,7 +8,7 @@ Description: Learn how to use Terratest to write Go-based tests for OpenTofu mod
 
 ## Introduction
 
-Terratest is a Go testing library from Gruntwork that provides helpers for testing infrastructure code. It works well with OpenTofu, deploying real infrastructure, running assertions using Go's testing framework, and automatically cleaning up — even on test failure.
+Terratest is a Go testing library from Gruntwork that provides helpers for testing infrastructure code. It works well with OpenTofu, deploying real infrastructure, running assertions using Go's testing framework, and automatically cleaning up - even on test failure.
 
 ## Project Setup
 
@@ -191,6 +191,7 @@ func TestVPCModuleVariants(t *testing.T) {
 
 ```bash
 # Run all tests
+
 cd test && go test -v -timeout 30m ./...
 
 # Run a specific test
@@ -205,4 +206,4 @@ go test -v -run TestVPCModule -timeout 30m -skip-teardown ./...
 
 ## Conclusion
 
-Terratest provides the most comprehensive OpenTofu testing option — real infrastructure, real API calls, and Go's full testing ecosystem for assertions and parallelism. The `defer terraform.Destroy()` pattern ensures cleanup even on panics. For cost control, run Terratest in a dedicated test AWS account with budget alerts, and consider running the full suite only on main branch merges rather than every pull request.
+Terratest provides the most comprehensive OpenTofu testing option - real infrastructure, real API calls, and Go's full testing ecosystem for assertions and parallelism. The `defer terraform.Destroy()` pattern ensures cleanup even on panics. For cost control, run Terratest in a dedicated test AWS account with budget alerts, and consider running the full suite only on main branch merges rather than every pull request.

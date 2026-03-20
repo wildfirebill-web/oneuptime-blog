@@ -61,6 +61,7 @@ Each child application is a standard ArgoCD Application resource:
 
 ```yaml
 # apps/production/frontend.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

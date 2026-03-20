@@ -1,10 +1,10 @@
-# How to Understand Address Block Properties (Source, Destination, Forwardable, Globally Reachable)
+# How to Understand IPv6 Address Block Properties
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Address Properties, RFC 6890, Source, Destination, Forwardable, Networking
+Tags: IPv6, Address Properties, RFC 6890, Source, Destinations, Forwardable, Networking
 
-Description: Understand the four key properties of IPv6 address blocks — Source, Destination, Forwardable, and Globally Reachable — and how they determine valid usage.
+Description: Understand the four key properties of IPv6 address blocks - Source, Destination, Forwardable, and Globally Reachable - and how they determine valid usage.
 
 ## Introduction
 
@@ -107,6 +107,7 @@ ADDRESS_BLOCK_PROPERTIES = {
 # Based on properties, create appropriate firewall rules
 
 # Non-forwardable prefixes: block at FORWARD chain
+
 ip6tables -A FORWARD -s ::1/128 -j DROP         # Loopback
 ip6tables -A FORWARD -s fe80::/10 -j DROP        # Link-local
 ip6tables -A FORWARD -d ::1/128 -j DROP

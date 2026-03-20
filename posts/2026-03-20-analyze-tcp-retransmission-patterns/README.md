@@ -23,6 +23,7 @@ Not all TCP retransmissions are equal. Fast retransmits (triggered by 3 dup ACKs
 
 ```bash
 # Get all retransmission-related counters
+
 nstat -a | grep -iE "retrans|timeout|spurious|sack" | grep -v "^#"
 
 # Key counters:
@@ -70,7 +71,7 @@ done
 
 ## Wireshark Retransmission Analysis
 
-```
+```text
 # In Wireshark:
 
 # All retransmissions (any type)
@@ -113,4 +114,4 @@ sysctl -w net.ipv4.tcp_reordering=6
 
 ## Conclusion
 
-TCP retransmission analysis is most useful when you classify by type rather than counting all retransmissions together. A 1% fast retransmit rate is acceptable; any timeout retransmissions are concerning. High spurious retransmit rates indicate reordering, not true loss — increasing `tcp_reordering` tolerance prevents unnecessary CWND reductions. Monitor continuously with the rate script to detect when retransmissions start increasing.
+TCP retransmission analysis is most useful when you classify by type rather than counting all retransmissions together. A 1% fast retransmit rate is acceptable; any timeout retransmissions are concerning. High spurious retransmit rates indicate reordering, not true loss - increasing `tcp_reordering` tolerance prevents unnecessary CWND reductions. Monitor continuously with the rate script to detect when retransmissions start increasing.

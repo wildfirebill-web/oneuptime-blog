@@ -104,6 +104,7 @@ resource "aws_dynamodb_table" "encrypted" {
 
 ```bash
 # You can change encryption type for existing tables without downtime
+
 aws dynamodb update-table \
   --table-name my-existing-table \
   --sse-specification "Enabled=true,SSEType=KMS,KMSMasterKeyId=alias/my-project-dynamodb"
@@ -167,4 +168,4 @@ aws dynamodb describe-table \
 
 ## Conclusion
 
-Customer-managed KMS keys for DynamoDB provide the highest level of control over encryption, including the ability to audit all key usage via CloudTrail and revoke access by disabling the key. The encryption is transparent to applications—no code changes required—but applications need both DynamoDB and KMS permissions when using CMKs. Enable key rotation annually to limit the blast radius of key compromise.
+Customer-managed KMS keys for DynamoDB provide the highest level of control over encryption, including the ability to audit all key usage via CloudTrail and revoke access by disabling the key. The encryption is transparent to applications-no code changes required-but applications need both DynamoDB and KMS permissions when using CMKs. Enable key rotation annually to limit the blast radius of key compromise.

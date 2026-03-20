@@ -31,6 +31,7 @@ uname -r
 # Expected: 5.8 or higher for full Calico eBPF support
 
 # Check that BPF filesystem is mounted
+
 mount | grep bpf
 # Expected output includes: bpffs on /sys/fs/bpf type bpf
 ```

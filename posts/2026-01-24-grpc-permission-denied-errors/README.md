@@ -68,6 +68,7 @@ flowchart LR
 import grpc
 
 # BAD: No authentication credentials
+
 # This will result in PERMISSION_DENIED if server requires auth
 channel = grpc.insecure_channel('localhost:50051')
 stub = service_pb2_grpc.MyServiceStub(channel)

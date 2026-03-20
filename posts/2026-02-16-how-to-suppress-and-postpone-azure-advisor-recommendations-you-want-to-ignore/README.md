@@ -58,6 +58,7 @@ For bulk operations, the CLI is more practical than clicking through the portal 
 
 ```bash
 # List all active recommendations
+
 az advisor recommendation list \
   --query "[].{Name:name, Category:category, Impact:impact, Problem:shortDescription.problem}" \
   -o table

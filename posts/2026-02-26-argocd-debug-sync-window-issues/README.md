@@ -18,6 +18,7 @@ You triggered a sync but ArgoCD returned an error about the sync window blocking
 
 ```bash
 # List all sync windows for the project
+
 argocd proj windows list production
 
 # Example output:

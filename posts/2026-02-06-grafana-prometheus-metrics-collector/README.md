@@ -20,6 +20,7 @@ If metrics are not exposed, enable them in `grafana.ini`:
 
 ```ini
 # /etc/grafana/grafana.ini
+
 [metrics]
 enabled = true
 # Optionally require authentication

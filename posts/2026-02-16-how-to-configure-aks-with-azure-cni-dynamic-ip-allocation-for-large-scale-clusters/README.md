@@ -32,6 +32,7 @@ Create a VNet with separate subnets for nodes and pods.
 
 ```bash
 # Create a resource group
+
 az group create --name large-aks-rg --location eastus
 
 # Create the VNet

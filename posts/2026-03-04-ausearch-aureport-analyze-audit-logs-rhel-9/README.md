@@ -34,6 +34,7 @@ The key fields are:
 
 ```bash
 # Search for all events (shows everything)
+
 sudo ausearch -m ALL
 
 # Search for events by key name

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Maintenance, Checklist, SysAdmin, Linux
+Tags: RHEL, Maintenance, Checklist, Sysadmin, Linux
 
 Description: A practical monthly maintenance checklist for RHEL servers covering updates, log rotation, disk cleanup, and system health verification.
 
@@ -14,6 +14,7 @@ Regular monthly maintenance keeps RHEL servers healthy and prevents small issues
 
 ```bash
 # Check for available updates
+
 sudo dnf check-update
 
 # Review security advisories specifically

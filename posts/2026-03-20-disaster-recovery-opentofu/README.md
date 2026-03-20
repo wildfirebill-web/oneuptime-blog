@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu to automate disaster recovery by defining
 
 ---
 
-Disaster recovery (DR) is about recreating your infrastructure after a catastrophic failure. OpenTofu's declarative approach means your entire production environment is captured as code — enabling you to rebuild in a secondary region in minutes rather than days.
+Disaster recovery (DR) is about recreating your infrastructure after a catastrophic failure. OpenTofu's declarative approach means your entire production environment is captured as code - enabling you to rebuild in a secondary region in minutes rather than days.
 
 ## DR Architecture Patterns
 
@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -156,7 +157,7 @@ resource "aws_s3_bucket_replication_configuration" "primary_to_dr" {
 
 ```hcl
 # dr_activation.tf
-# DR compute — only active when deploy_to_dr = true
+# DR compute - only active when deploy_to_dr = true
 resource "aws_ecs_service" "app_dr" {
   provider = aws.dr
   count    = var.deploy_to_dr ? 1 : 0
@@ -167,7 +168,7 @@ resource "aws_ecs_service" "app_dr" {
   desired_count   = var.desired_count
 }
 
-# DNS failover — Route53 health check based routing
+# DNS failover - Route53 health check based routing
 resource "aws_route53_health_check" "primary" {
   fqdn              = var.primary_endpoint
   port              = 443
@@ -219,8 +220,8 @@ resource "aws_route53_record" "dr" {
 
 ## Best Practices
 
-- Define your Recovery Time Objective (RTO) and Recovery Point Objective (RPO) before designing the DR strategy — they determine which components need replication.
-- Test DR activation quarterly with a real failover drill — untested DR plans fail when needed most.
+- Define your Recovery Time Objective (RTO) and Recovery Point Objective (RPO) before designing the DR strategy - they determine which components need replication.
+- Test DR activation quarterly with a real failover drill - untested DR plans fail when needed most.
 - Use Route53 health check-based failover for automatic DNS-level failover without manual intervention.
 - Keep DR infrastructure warm (replicas running) for critical systems to meet aggressive RTOs.
 - Document the exact steps to fail over and fail back, including database promotion commands and DNS verification.

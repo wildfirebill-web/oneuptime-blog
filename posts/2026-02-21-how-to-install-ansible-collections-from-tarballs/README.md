@@ -30,6 +30,7 @@ If you have a machine with internet access, you can download collection tarballs
 
 ```bash
 # Download a single collection tarball
+
 ansible-galaxy collection download community.docker:3.8.0 -p ./tarballs/
 
 # Download multiple collections listed in requirements.yml

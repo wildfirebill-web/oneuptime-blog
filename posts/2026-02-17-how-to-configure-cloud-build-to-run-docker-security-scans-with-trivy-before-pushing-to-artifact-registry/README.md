@@ -20,6 +20,7 @@ Here is the Cloud Build configuration.
 
 ```yaml
 # cloudbuild.yaml - Build, scan, and push workflow
+
 steps:
   # Step 1: Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'

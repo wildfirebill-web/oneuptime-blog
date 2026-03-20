@@ -28,6 +28,7 @@ The most common approach is a gradual migration where you move workspaces from T
 
 ```bash
 # Use the Terraform CLI (still compatible) to pull state from TFE
+
 # You need a TFE API token
 export TFE_TOKEN="your-tfe-api-token"
 

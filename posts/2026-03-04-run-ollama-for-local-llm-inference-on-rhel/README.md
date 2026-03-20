@@ -14,6 +14,7 @@ Ollama makes it simple to run large language models locally on RHEL. It handles 
 
 ```bash
 # Download and install Ollama using the official install script
+
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Or install manually

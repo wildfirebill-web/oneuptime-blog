@@ -265,6 +265,7 @@ Iterating over nested structures:
 
 ```hcl
 # Convert to map for stable resource addresses
+
 locals {
   services_map = {
     for svc in var.services : svc.name => svc

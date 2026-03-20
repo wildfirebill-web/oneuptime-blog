@@ -29,6 +29,7 @@ Disable the default full-mesh and designate dedicated route reflector nodes:
 
 ```bash
 # Disable node-to-node mesh
+
 calicoctl patch bgpconfiguration default --type merge \
   --patch '{"spec":{"nodeToNodeMeshEnabled":false}}'
 ```

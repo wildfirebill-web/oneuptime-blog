@@ -95,6 +95,7 @@ Here's the same setup in Terraform, which is much cleaner.
 
 ```hcl
 # Task execution role - needed for pulling secrets at launch time
+
 resource "aws_iam_role" "ecs_execution" {
   name = "ecs-task-execution"
 

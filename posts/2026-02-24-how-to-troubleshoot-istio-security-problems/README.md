@@ -18,6 +18,7 @@ The first thing to check when you suspect a security issue is whether mTLS is wo
 
 ```bash
 # Check the mTLS status for a specific service
+
 istioctl authn tls-check <pod-name> -n production orders-service.production.svc.cluster.local
 ```
 

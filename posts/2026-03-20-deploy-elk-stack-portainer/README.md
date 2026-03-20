@@ -8,7 +8,7 @@ Description: Learn how to deploy the complete ELK Stack (Elasticsearch, Logstash
 
 ## ELK Stack Architecture
 
-```
+```text
 Application Logs
     ↓
 Logstash (collect + transform)
@@ -89,8 +89,9 @@ volumes:
 
 ## Logstash Pipeline for Docker Logs
 
-```
+```javascript
 # logstash-pipeline/docker-logs.conf
+
 input {
   beats {
     port => 5044

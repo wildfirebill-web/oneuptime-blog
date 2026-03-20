@@ -14,6 +14,7 @@ Collectd is a lightweight daemon that collects system and application performanc
 
 ```bash
 # Install collectd and common plugins
+
 sudo apt update
 sudo apt install -y collectd collectd-utils
 

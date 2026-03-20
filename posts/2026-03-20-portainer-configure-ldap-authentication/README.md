@@ -27,7 +27,7 @@ LDAP (Lightweight Directory Access Protocol) integration allows Portainer to aut
 
 ### Basic LDAP (Port 389)
 
-```
+```text
 LDAP Server: ldap.example.com:389
 Anonymous Bind: Off (use a service account)
 Service Account DN: cn=portainer-bind,ou=service-accounts,dc=example,dc=com
@@ -36,7 +36,7 @@ Service Account Password: [service account password]
 
 ### Secure LDAP (LDAPS, Port 636)
 
-```
+```sql
 LDAP Server: ldap.example.com:636
 Enable TLS: On (select "LDAPS")
 Skip TLS Verification: Off (verify cert, or On if using self-signed)
@@ -45,14 +45,14 @@ TLS CA Certificate: [paste CA certificate PEM]
 
 ## Step 3: Configure User Search Settings
 
-```
+```text
 User Base DN: ou=users,dc=example,dc=com
 Username Attribute: uid
 User Filter: (objectClass=inetOrgPerson)
 ```
 
 For Active Directory:
-```
+```text
 User Base DN: ou=users,dc=corp,dc=example,dc=com
 Username Attribute: sAMAccountName
 User Filter: (objectClass=person)
@@ -60,7 +60,7 @@ User Filter: (objectClass=person)
 
 ## Step 4: Configure Group Search (Optional)
 
-```
+```text
 Group Base DN: ou=groups,dc=example,dc=com
 Group Membership Attribute: memberOf
 Group Filter: (objectClass=groupOfNames)
@@ -72,6 +72,7 @@ For infrastructure-as-code deployments:
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
@@ -123,7 +124,7 @@ After saving, use the built-in test feature:
 
 1. In the LDAP settings page, find **Test LDAP connectivity**
 2. Enter a test username and password
-3. Click **Test** — Portainer will attempt to bind and search
+3. Click **Test** - Portainer will attempt to bind and search
 
 Via API:
 
@@ -152,7 +153,7 @@ curl -X POST \
 Enable automatic user creation on first LDAP login:
 
 In the LDAP settings:
-```
+```sql
 Automatic user provisioning: Enabled
 Default Team: [select team for new LDAP users]
 ```

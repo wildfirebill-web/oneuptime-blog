@@ -18,6 +18,7 @@ Think of Cloud NAT as your default internet gateway for private workloads. It is
 
 ```bash
 # Create a Cloud Router (required for Cloud NAT)
+
 gcloud compute routers create my-router \
   --network my-vpc \
   --region us-central1

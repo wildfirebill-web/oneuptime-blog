@@ -28,6 +28,7 @@ The profiler agent needs to be included in your container image. Download it dur
 
 ```dockerfile
 # Dockerfile for Java application with Cloud Profiler
+
 FROM eclipse-temurin:17-jre
 
 WORKDIR /app

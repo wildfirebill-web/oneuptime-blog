@@ -99,6 +99,7 @@ Here is a foundational querier configuration with inline explanations:
 
 ```yaml
 # tempo.yaml - Querier configuration section
+
 querier:
   # Maximum duration a query can run before timeout
   # Increase for complex TraceQL queries over large datasets

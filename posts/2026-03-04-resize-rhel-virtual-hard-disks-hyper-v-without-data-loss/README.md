@@ -16,6 +16,7 @@ You can resize the disk while the VM is running (online resize) on newer Hyper-V
 
 ```powershell
 # Check the current disk size
+
 Get-VHD -Path "C:\VMs\RHEL9-Server.vhdx" | Select-Object Size, FileSize
 
 # Resize the VHDX to 100 GB

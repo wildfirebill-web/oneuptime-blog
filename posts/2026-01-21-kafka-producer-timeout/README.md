@@ -40,6 +40,7 @@ Topic not present in metadata after 60000 ms
 
 ```bash
 # Test connection to brokers
+
 nc -zv broker1.example.com 9092
 nc -zv broker2.example.com 9092
 nc -zv broker3.example.com 9092

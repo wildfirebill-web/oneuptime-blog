@@ -56,6 +56,7 @@ Add TypeScript and necessary type definitions:
 
 ```bash
 # Install TypeScript as a dev dependency
+
 npm install --save-dev typescript
 
 # Install common type definitions

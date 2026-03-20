@@ -277,6 +277,7 @@ Before committing to a sort key design, test it with realistic data:
 
 ```python
 # Generate test items and verify query patterns work
+
 items = [
     {'pk': 'user-001', 'sk': f'ORDER#{date}#{i}'}
     for i, date in enumerate([

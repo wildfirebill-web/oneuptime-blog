@@ -89,6 +89,7 @@ The Dockerfile needs to include nodemon for development mode.
 
 ```dockerfile
 # Dockerfile - Development-friendly with nodemon included
+
 FROM node:20-alpine
 
 WORKDIR /app

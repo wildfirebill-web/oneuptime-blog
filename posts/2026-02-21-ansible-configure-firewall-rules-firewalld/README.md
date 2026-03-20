@@ -35,6 +35,7 @@ The simplest use case is opening ports and enabling services. Here is a playbook
 
 ```yaml
 # basic_firewalld.yml - Open ports and services with firewalld
+
 ---
 - name: Configure firewalld for web server
   hosts: webservers

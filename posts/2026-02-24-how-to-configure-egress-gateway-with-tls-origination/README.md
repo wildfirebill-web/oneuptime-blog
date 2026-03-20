@@ -276,6 +276,7 @@ To confirm the egress gateway is originating TLS and not sending plain HTTP:
 
 ```bash
 # Check the egress gateway's cluster configuration
+
 istioctl proxy-config clusters deploy/istio-egressgateway -n istio-system | grep api.external.com
 
 # Check the endpoint details

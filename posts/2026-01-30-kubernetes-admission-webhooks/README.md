@@ -508,6 +508,7 @@ Here is a script to generate self-signed certificates for development:
 ```bash
 #!/bin/bash
 # scripts/generate-certs.sh
+
 # Generate self-signed certificates for the webhook server
 
 set -e

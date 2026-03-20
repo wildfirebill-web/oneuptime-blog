@@ -1,4 +1,4 @@
-# How to Set Up a PHP/Laravel Development Environment with Portainer
+# How to Set Up a PHP/Laravel Development Environment with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Laravel is PHP's most popular framework, and containerizing your Laravel develop
 
 ```dockerfile
 # Dockerfile.dev - PHP-FPM for Laravel development
+
 FROM php:8.3-fpm-alpine
 
 # Install PHP extensions

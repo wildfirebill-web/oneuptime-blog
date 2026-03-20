@@ -206,6 +206,7 @@ If you manage ArgoCD with Helm, configure credential caching in your values:
 
 ```yaml
 # values.yaml
+
 repoServer:
   volumes:
     - name: gitconfig

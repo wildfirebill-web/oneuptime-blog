@@ -44,6 +44,7 @@ If you don't already have a destination bucket, create one:
 
 ```bash
 # Create the S3 bucket for snapshot exports
+
 aws s3 mb s3://my-aurora-exports --region us-east-1
 
 # Enable versioning for safety

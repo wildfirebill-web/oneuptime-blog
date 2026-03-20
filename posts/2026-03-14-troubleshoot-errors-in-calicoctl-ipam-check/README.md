@@ -24,6 +24,7 @@ The `calicoctl ipam check` command can fail to run (due to connectivity or permi
 
 ```bash
 # Verify datastore access
+
 export DATASTORE_TYPE=kubernetes
 calicoctl get nodes
 

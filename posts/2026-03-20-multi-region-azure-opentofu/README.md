@@ -14,6 +14,7 @@ Azure multi-region deployments use Traffic Manager for DNS-based routing, Cosmos
 
 ```hcl
 # main.tf - Multi-region Azure providers
+
 provider "azurerm" {
   alias           = "primary"
   features {}

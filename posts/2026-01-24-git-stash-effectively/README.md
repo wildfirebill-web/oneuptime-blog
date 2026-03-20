@@ -35,6 +35,7 @@ The simplest stash command saves all modified tracked files and staged changes.
 
 ```bash
 # Save current changes to the stash
+
 git stash
 
 # Output: Saved working directory and index state WIP on main: abc1234 Last commit message

@@ -39,6 +39,7 @@ ArgoCD performs shallow clones by default when the `targetRevision` is a branch 
 
 ```yaml
 # Good: branch reference supports shallow clone
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

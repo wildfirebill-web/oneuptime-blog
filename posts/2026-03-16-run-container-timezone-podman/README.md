@@ -22,6 +22,7 @@ Most containers default to UTC:
 
 ```bash
 # Check the default timezone
+
 podman run --rm alpine sh -c "
   date
   cat /etc/localtime 2>/dev/null | head -1 || echo 'No localtime file'

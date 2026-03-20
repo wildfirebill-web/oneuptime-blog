@@ -24,6 +24,7 @@ Exporting and importing Portainer configuration is useful when migrating to new 
 
 ```bash
 # Authenticate and get JWT token
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \
@@ -71,7 +72,7 @@ echo "CE export complete"
 2. Click **Restore from file**
 3. Select the backup `.tar.gz` file
 4. Enter the decryption password if the export was encrypted
-5. Click **Restore** — Portainer restarts with the imported configuration
+5. Click **Restore** - Portainer restarts with the imported configuration
 
 ### Via the API
 

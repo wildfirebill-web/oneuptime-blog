@@ -56,6 +56,7 @@ Create the service account and get its token:
 
 ```bash
 # In the remote cluster
+
 kubectl create serviceaccount argocd-manager -n kube-system
 
 # Create a token secret (required for Kubernetes 1.24+)

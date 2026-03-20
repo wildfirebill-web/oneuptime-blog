@@ -78,6 +78,7 @@ graph TD
 
 ```bash
 # Check interface counters via VPP CLI
+
 kubectl exec -n calico-vpp-dataplane ds/calico-vpp-node -c vpp -- \
   vppctl show interface counters
 

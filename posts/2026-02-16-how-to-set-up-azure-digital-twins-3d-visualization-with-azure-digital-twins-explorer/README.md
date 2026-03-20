@@ -33,6 +33,7 @@ Think of it as the visual interface for your digital twin instance. While you ca
 
 ```bash
 # Set up variables
+
 RESOURCE_GROUP="rg-digital-twins"
 ADT_NAME="adt-building-ops"
 LOCATION="eastus"

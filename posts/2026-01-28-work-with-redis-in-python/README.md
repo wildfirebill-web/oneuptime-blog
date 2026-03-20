@@ -20,6 +20,7 @@ This guide covers Redis fundamentals with Python, from basic operations to advan
 
 ```bash
 # Install redis-py
+
 pip install redis
 
 # For async support

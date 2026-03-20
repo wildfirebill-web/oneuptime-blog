@@ -8,7 +8,7 @@ Description: A guide to using the create_before_destroy lifecycle argument in Op
 
 ## Introduction
 
-By default, when OpenTofu needs to replace a resource, it destroys the old resource before creating the new one. The `create_before_destroy` lifecycle setting reverses this order — creating the replacement first, then destroying the old resource. This is crucial for zero-downtime deployments.
+By default, when OpenTofu needs to replace a resource, it destroys the old resource before creating the new one. The `create_before_destroy` lifecycle setting reverses this order - creating the replacement first, then destroying the old resource. This is crucial for zero-downtime deployments.
 
 ## Basic create_before_destroy
 
@@ -27,6 +27,7 @@ resource "aws_instance" "web" {
 
 ```hcl
 # DEFAULT BEHAVIOR (no lifecycle setting):
+
 # 1. Detect change requiring replacement (e.g., new AMI)
 # 2. DESTROY old instance <- Application unavailable here!
 # 3. CREATE new instance
@@ -158,4 +159,4 @@ resource "aws_instance" "web" {
 
 ## Conclusion
 
-`create_before_destroy` is essential for zero-downtime infrastructure updates. Use it for any resource that serves live traffic — EC2 instances, load balancers, security groups, and launch templates. Remember to use `name_prefix` instead of `name` for resources that would have naming conflicts during the creation-before-destruction window. The tradeoff is that you briefly run with both old and new resources simultaneously, which may incur short-term cost increases.
+`create_before_destroy` is essential for zero-downtime infrastructure updates. Use it for any resource that serves live traffic - EC2 instances, load balancers, security groups, and launch templates. Remember to use `name_prefix` instead of `name` for resources that would have naming conflicts during the creation-before-destruction window. The tradeoff is that you briefly run with both old and new resources simultaneously, which may incur short-term cost increases.

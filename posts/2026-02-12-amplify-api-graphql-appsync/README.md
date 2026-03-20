@@ -26,6 +26,7 @@ Here's how to add the API category to your project:
 
 ```bash
 # Add a GraphQL API to your Amplify project
+
 amplify add api
 
 # When prompted, select these options:

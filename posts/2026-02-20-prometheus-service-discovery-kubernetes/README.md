@@ -43,6 +43,7 @@ Here is a Prometheus configuration that discovers pods in Kubernetes:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

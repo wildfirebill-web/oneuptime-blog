@@ -30,6 +30,7 @@ Start with a simple inventory file listing your servers.
 
 ```ini
 # inventory.ini - Target servers for Docker installation
+
 [docker_hosts]
 server1 ansible_host=192.168.1.10
 server2 ansible_host=192.168.1.11

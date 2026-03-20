@@ -282,6 +282,7 @@ Keep an eye on how much storage Istio metrics consume:
 
 ```bash
 # Check Prometheus TSDB status
+
 curl -s http://localhost:9090/api/v1/status/tsdb | jq '.data.seriesCountByMetricName[] | select(.name | startswith("istio_"))'
 
 # Check total storage used

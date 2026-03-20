@@ -28,6 +28,7 @@ CloudTrail logs need to go somewhere. Create a dedicated bucket:
 
 ```bash
 # Create a bucket for CloudTrail logs
+
 aws s3 mb s3://my-company-cloudtrail-logs-123456789012 --region us-east-1
 
 # Enable versioning to prevent log tampering

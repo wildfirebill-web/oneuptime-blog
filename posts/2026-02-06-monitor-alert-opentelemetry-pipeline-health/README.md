@@ -50,6 +50,7 @@ Enable detailed internal metrics in your collector configuration:
 
 ```yaml
 # collector-config.yaml
+
 service:
   telemetry:
     metrics:
@@ -119,7 +120,7 @@ otelcol_exporter_queue_size / otelcol_exporter_queue_capacity * 100
 otelcol_exporter_queue_size
 ```
 
-### Resource Metrics
+Resource Metrics
 
 These tell you if the collector itself is healthy:
 

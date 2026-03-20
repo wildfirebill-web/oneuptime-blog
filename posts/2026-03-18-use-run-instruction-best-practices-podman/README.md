@@ -22,6 +22,7 @@ RUN supports two forms:
 
 ```dockerfile
 # Shell form: runs command through /bin/sh -c
+
 RUN apt-get update && apt-get install -y curl
 
 # Exec form: runs command directly without shell

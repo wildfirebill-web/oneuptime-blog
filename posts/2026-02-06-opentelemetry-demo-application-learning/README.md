@@ -39,6 +39,7 @@ Clone the repository and start the demo:
 
 ```bash
 # Clone the OpenTelemetry demo repository
+
 git clone https://github.com/open-telemetry/opentelemetry-demo.git
 cd opentelemetry-demo
 

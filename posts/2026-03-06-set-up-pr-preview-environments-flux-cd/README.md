@@ -54,6 +54,7 @@ Set up the base manifests that all PR environments will inherit from.
 
 ```yaml
 # apps/myapp/base/deployment.yaml
+
 # Base deployment template - PR overlays will customize this
 apiVersion: apps/v1
 kind: Deployment

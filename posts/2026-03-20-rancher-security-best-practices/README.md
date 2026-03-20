@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, security, best-practices, kubernetes, hardening
+Tags: Rancher, Security, Best-practices, Kubernetes, Hardening
 
 Description: Comprehensive security best practices guide for hardening Rancher deployments and protecting Kubernetes clusters.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

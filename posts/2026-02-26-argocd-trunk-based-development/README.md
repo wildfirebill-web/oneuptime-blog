@@ -44,6 +44,7 @@ In trunk-based development with ArgoCD, you typically use two repositories:
 
 ```text
 # Manifest repo structure
+
 k8s-manifests/
   base/
     deployment.yaml

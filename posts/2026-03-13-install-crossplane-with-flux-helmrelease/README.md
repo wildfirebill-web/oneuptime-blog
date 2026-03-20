@@ -29,6 +29,7 @@ Crossplane runs in its own namespace. Define it declaratively so Flux manages it
 
 ```yaml
 # infrastructure/crossplane/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

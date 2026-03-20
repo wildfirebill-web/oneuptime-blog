@@ -48,6 +48,7 @@ The service module cannot find the service on the target host.
 ```yaml
 ---
 # playbook.yml - Check if service exists before managing
+
 - name: Manage nginx service safely
   hosts: webservers
   become: yes

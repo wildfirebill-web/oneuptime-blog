@@ -8,9 +8,9 @@ Description: Understand how IPv6 Prefix Delegation works in home networks, how y
 
 ## The Problem Prefix Delegation Solves
 
-In IPv4, your home router gets one public IP address and uses NAT to share it across all devices. In IPv6, NAT is not needed — but you still need a way to give your entire home network a block of IPv6 addresses that belong to your ISP allocation.
+In IPv4, your home router gets one public IP address and uses NAT to share it across all devices. In IPv6, NAT is not needed - but you still need a way to give your entire home network a block of IPv6 addresses that belong to your ISP allocation.
 
-This is what DHCPv6 Prefix Delegation (PD) does — it delegates a block of IPv6 addresses to your router.
+This is what DHCPv6 Prefix Delegation (PD) does - it delegates a block of IPv6 addresses to your router.
 
 ## How Prefix Delegation Works
 
@@ -30,7 +30,7 @@ A typical ISP delegates a `/56` prefix to residential customers. This gives your
 - 256 individual `/64` subnets (one per VLAN or network segment)
 - Each `/64` supports trillions of device addresses
 
-```
+```text
 ISP delegates: 2001:db8:home::/56
 Your router uses for LAN: 2001:db8:home:1::/64
 Your router uses for IoT VLAN: 2001:db8:home:10::/64
@@ -41,7 +41,7 @@ Your router uses for Guest: 2001:db8:home:20::/64
 
 Once the router has a `/64` subnet, it sends Router Advertisement (RA) messages:
 
-```
+```text
 Router Advertisement (sent by your router):
   - Prefix: 2001:db8:home:1::/64
   - Valid lifetime: 30 days
@@ -58,9 +58,9 @@ Each device that receives this RA:
 
 ## Understanding the /64 Requirement
 
-IPv6 SLAAC requires a `/64` subnet on every link. This is why ISPs delegate at least a `/60` (16 subnets) or `/56` (256 subnets) — to ensure the router has enough room to assign a full `/64` to each interface.
+IPv6 SLAAC requires a `/64` subnet on every link. This is why ISPs delegate at least a `/60` (16 subnets) or `/56` (256 subnets) - to ensure the router has enough room to assign a full `/64` to each interface.
 
-You cannot use a `/65` or larger for SLAAC — it won't work.
+You cannot use a `/65` or larger for SLAAC - it won't work.
 
 ## Checking Your Delegated Prefix
 
@@ -68,6 +68,7 @@ From your router:
 
 ```bash
 # On OpenWRT: check delegated prefix
+
 ip -6 addr show dev br-lan | grep "scope global"
 
 # Expected: 2001:db8:home:1::1/64
@@ -96,4 +97,4 @@ If the ISP reassigns you a different `/56` (after a modem replacement or reconfi
 
 ## Conclusion
 
-IPv6 Prefix Delegation is the mechanism that gives your entire home network a proper block of IPv6 addresses from your ISP. Your router requests the block, sub-divides it into `/64` subnets, and sends Router Advertisements so devices can self-configure their addresses automatically — no manual assignment needed.
+IPv6 Prefix Delegation is the mechanism that gives your entire home network a proper block of IPv6 addresses from your ISP. Your router requests the block, sub-divides it into `/64` subnets, and sends Router Advertisements so devices can self-configure their addresses automatically - no manual assignment needed.

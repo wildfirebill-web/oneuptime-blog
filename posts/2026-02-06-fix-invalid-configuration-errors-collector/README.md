@@ -20,6 +20,7 @@ The Collector configuration has five main sections:
 
 ```yaml
 # Extensions: Optional capabilities (health checks, auth, etc.)
+
 extensions:
   health_check:
   pprof:

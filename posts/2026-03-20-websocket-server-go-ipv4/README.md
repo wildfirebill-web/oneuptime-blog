@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Go, IPv4, Networking, gorilla/websocket, HTTP
+Tags: WebSocket, Go, IPv4, Networking, Gorilla/websocket, HTTP
 
 Description: Learn how to create a WebSocket server in Go that listens on a specific IPv4 address using gorilla/websocket, with connection handling, hub-based broadcasting, and graceful shutdown.
 

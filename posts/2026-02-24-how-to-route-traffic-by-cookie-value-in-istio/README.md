@@ -232,6 +232,7 @@ spec:
 
 ```bash
 # Request with beta cookie
+
 kubectl exec deploy/sleep -c sleep -- curl -s -b "session=abc; beta=true" http://webapp.default.svc.cluster.local/
 
 # Request with A/B group cookie

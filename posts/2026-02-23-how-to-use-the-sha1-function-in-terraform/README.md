@@ -16,6 +16,7 @@ The `sha1` function takes a string input and returns its SHA-1 hash as a 40-char
 
 ```hcl
 # Compute the SHA-1 hash of a string
+
 output "hash" {
   value = sha1("hello world")
   # Result: "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed"

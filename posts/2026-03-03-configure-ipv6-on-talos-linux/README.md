@@ -30,6 +30,7 @@ To assign a static IPv6 address to a Talos Linux node, update the machine config
 
 ```yaml
 # Static IPv6 configuration in machine config
+
 machine:
   network:
     interfaces:

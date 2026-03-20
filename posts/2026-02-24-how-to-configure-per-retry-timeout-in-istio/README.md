@@ -130,6 +130,7 @@ Look at your service's actual response time distribution:
 
 ```bash
 # Get p99 response time from Istio metrics
+
 kubectl exec -n istio-system deploy/prometheus -- curl -s 'localhost:9090/api/v1/query?query=histogram_quantile(0.99,sum(rate(istio_request_duration_milliseconds_bucket{destination_service="inventory-service.production.svc.cluster.local"}[5m]))by(le))' | jq '.data.result[0].value[1]'
 ```
 

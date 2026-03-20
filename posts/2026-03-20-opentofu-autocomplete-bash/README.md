@@ -20,6 +20,7 @@ Shell autocompletion dramatically improves productivity when working with OpenTo
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install -y bash-completion
 
 # Fedora/RHEL/CentOS

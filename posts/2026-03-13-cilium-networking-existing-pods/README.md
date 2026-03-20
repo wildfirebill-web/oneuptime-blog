@@ -29,6 +29,7 @@ Configure how Cilium handles existing pods at startup:
 
 ```bash
 # Configure endpoint restoration timeout
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

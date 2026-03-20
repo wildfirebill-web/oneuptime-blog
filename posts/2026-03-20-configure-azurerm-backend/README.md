@@ -13,7 +13,7 @@ The `azurerm` backend stores OpenTofu state in Azure Blob Storage. It provides n
 ## Step 1: Create the Azure Storage Resources
 
 ```hcl
-# bootstrap/main.tf — Run once to create state storage
+# bootstrap/main.tf - Run once to create state storage
 
 provider "azurerm" {
   features {}
@@ -55,6 +55,7 @@ resource "azurerm_storage_container" "state" {
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "rg-terraform-state"
@@ -92,7 +93,7 @@ tofu init
 
 ## State File Organization in Azure Blob Storage
 
-```
+```text
 Storage Account: stterraformstate001
 Container: tfstate
 ├── prod/terraform.tfstate           ← production state

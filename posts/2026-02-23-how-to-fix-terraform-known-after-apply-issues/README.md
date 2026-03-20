@@ -23,6 +23,7 @@ During `terraform plan`, these values do not exist yet, so Terraform marks them 
 
 ```text
 # aws_instance.web will be created
+
 + resource "aws_instance" "web" {
     + ami                    = "ami-0c55b159cbfafe1f0"
     + arn                    = (known after apply)

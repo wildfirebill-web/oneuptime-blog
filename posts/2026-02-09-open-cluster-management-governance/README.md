@@ -24,6 +24,7 @@ Start by installing the OCM hub components on your management cluster:
 
 ```bash
 # Install clusteradm CLI tool
+
 curl -L https://raw.githubusercontent.com/open-cluster-management-io/clusteradm/main/install.sh | bash
 
 # Initialize the hub cluster

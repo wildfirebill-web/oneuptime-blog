@@ -33,6 +33,7 @@ flowchart LR
 
 ```bash
 # Install Prisma as a dev dependency and the client as a regular dependency
+
 npm install prisma --save-dev
 npm install @prisma/client
 

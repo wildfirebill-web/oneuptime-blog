@@ -84,6 +84,7 @@ Apply all data sources at once via ConfigMap:
 
 ```yaml
 # grafana-datasources-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

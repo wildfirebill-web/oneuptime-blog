@@ -61,6 +61,7 @@ Running CockroachDB locally with Docker provides a quick way to start developmen
 
 ```bash
 # Start a single-node CockroachDB cluster for development
+
 docker run -d \
   --name=cockroach \
   -p 26257:26257 \

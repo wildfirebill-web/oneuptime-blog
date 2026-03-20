@@ -33,6 +33,7 @@ kubectl logs -n calico-system -l k8s-app=calico-node -c calico-node | \
 **Prevention**: Check the compatibility matrix before any Kubernetes upgrade:
 ```bash
 # Check current versions
+
 kubectl version --short
 kubectl get pods -n calico-system -l k8s-app=calico-node \
   -o jsonpath='{.items[0].spec.containers[0].image}'

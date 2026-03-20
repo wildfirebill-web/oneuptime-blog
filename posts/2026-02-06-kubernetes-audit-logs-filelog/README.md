@@ -237,6 +237,7 @@ To keep audit log volume manageable, configure the audit policy on your API serv
 
 ```yaml
 # audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

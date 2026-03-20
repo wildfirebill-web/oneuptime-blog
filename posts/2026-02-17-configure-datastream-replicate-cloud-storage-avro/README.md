@@ -30,6 +30,7 @@ Create a dedicated bucket for Datastream output:
 
 ```bash
 # Create a regional bucket in the same region as your Datastream
+
 gsutil mb -l us-central1 -c standard gs://my-project-cdc-events/
 
 # Enable versioning for safety (optional but recommended)

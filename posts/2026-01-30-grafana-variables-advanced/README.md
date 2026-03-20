@@ -413,6 +413,7 @@ Use variable values to conditionally show panels:
 
 ```promql
 # Only show data when specific environment is selected
+
 up{environment="$environment"} * ($environment == "production")
 ```
 

@@ -301,6 +301,7 @@ Check that a new service picks up all the defaults:
 
 ```bash
 # Deploy a new service
+
 kubectl apply -f new-service.yaml -n team-backend
 
 # Verify mTLS

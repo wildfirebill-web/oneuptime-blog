@@ -16,6 +16,7 @@ The cleanest approach is to tell Ansible to output JSON:
 
 ```python
 # parse_json_output.py - Parse Ansible JSON callback output
+
 import subprocess
 import json
 import os

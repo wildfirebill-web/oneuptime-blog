@@ -69,6 +69,7 @@ resource "digitalocean_record" "mx_secondary" {
 
 ```hcl
 # SPF record
+
 resource "digitalocean_record" "spf" {
   domain = digitalocean_domain.main.id
   type   = "TXT"
@@ -138,4 +139,4 @@ resource "digitalocean_record" "lb" {
 
 ## Conclusion
 
-DigitalOcean DNS in OpenTofu is managed through `digitalocean_domain` and `digitalocean_record` resources. All common record types are supported — A, AAAA, CNAME, MX, TXT, SRV, CAA, and NS. Use `for_each` for bulk record creation and wire records directly to Droplet IPs or Load Balancer IPs for dynamic DNS management.
+DigitalOcean DNS in OpenTofu is managed through `digitalocean_domain` and `digitalocean_record` resources. All common record types are supported - A, AAAA, CNAME, MX, TXT, SRV, CAA, and NS. Use `for_each` for bulk record creation and wire records directly to Droplet IPs or Load Balancer IPs for dynamic DNS management.

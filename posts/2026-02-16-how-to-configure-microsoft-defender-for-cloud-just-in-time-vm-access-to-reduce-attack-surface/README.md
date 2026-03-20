@@ -63,6 +63,7 @@ For programmatic setup, use the REST API or Azure CLI. This script enables JIT o
 
 ```bash
 # Enable JIT access on a VM with custom port rules
+
 # This configures which ports can be requested and their maximum allowed time
 az rest --method PUT \
   --url "https://management.azure.com/subscriptions/<sub-id>/resourceGroups/rg-production/providers/Microsoft.Security/locations/eastus/jitNetworkAccessPolicies/default?api-version=2020-01-01" \

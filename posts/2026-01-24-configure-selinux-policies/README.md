@@ -28,6 +28,7 @@ flowchart TD
 
 ```bash
 # Check current SELinux status
+
 getenforce
 # Output: Enforcing, Permissive, or Disabled
 

@@ -26,6 +26,7 @@ The key requirement is that the disk must be attached to a running VM. The resiz
 
 ```bash
 # Check the current disk size
+
 az disk show \
   --name data-disk-01 \
   --resource-group my-resource-group \

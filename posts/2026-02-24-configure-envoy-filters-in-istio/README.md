@@ -267,6 +267,7 @@ After applying an EnvoyFilter, verify that the change took effect:
 
 ```bash
 # Check the full Envoy config dump
+
 istioctl proxy-config all <pod-name> -o json > config.json
 
 # Check specific listeners

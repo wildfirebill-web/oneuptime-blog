@@ -25,6 +25,7 @@ Kafka without authentication allows any client on the network to produce or cons
 # /etc/kafka/server.properties
 
 # Bind to the broker's IPv4 address
+
 listeners=SASL_PLAINTEXT://10.0.0.10:9092
 advertised.listeners=SASL_PLAINTEXT://10.0.0.10:9092
 
@@ -38,7 +39,7 @@ security.inter.broker.protocol=SASL_PLAINTEXT
 
 ## Step 2: Create JAAS Configuration for the Broker
 
-```
+```nginx
 # /etc/kafka/kafka_server_jaas.conf
 
 KafkaServer {

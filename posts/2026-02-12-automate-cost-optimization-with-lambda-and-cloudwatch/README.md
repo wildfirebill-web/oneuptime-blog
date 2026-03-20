@@ -323,6 +323,7 @@ Deploy all these functions with EventBridge schedules:
 
 ```bash
 # Daily: cost alert check (runs at 8am UTC)
+
 aws events put-rule \
   --name "daily-cost-check" \
   --schedule-expression "cron(0 8 * * ? *)" \

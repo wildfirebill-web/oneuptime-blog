@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Filtering, for Expressions, HCL, Collections, Infrastructure as Code
+Tags: OpenTofu, Filtering, For Expressions, HCL, Collections, Infrastructure as Code
 
-Description: Learn how to filter resources and collections in OpenTofu using for expressions with conditions, data source filters, and the can() function — selecting only the resources you need.
+Description: Learn how to filter resources and collections in OpenTofu using for expressions with conditions, data source filters, and the can() function - selecting only the resources you need.
 
 ## Introduction
 
@@ -79,6 +79,7 @@ resource "aws_instance" "service" {
 
 ```hcl
 # Filter AWS AMIs by criteria
+
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]

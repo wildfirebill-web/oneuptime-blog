@@ -93,6 +93,7 @@ There are thousands of stats. Filter for what you need:
 
 ```bash
 # gRPC-specific stats
+
 kubectl exec -it <pod-name> -c istio-proxy -- \
   pilot-agent request GET stats | grep "grpc"
 

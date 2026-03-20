@@ -20,6 +20,7 @@ You can check the confinement level of any installed snap with:
 
 ```bash
 # View confinement for a specific snap
+
 snap info firefox | grep confinement
 
 # View confinement for all installed snaps

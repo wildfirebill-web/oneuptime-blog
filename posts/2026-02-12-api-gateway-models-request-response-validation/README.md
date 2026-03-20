@@ -26,6 +26,7 @@ Create a model for an order request:
 
 ```bash
 # Create a model for order creation
+
 aws apigateway create-model \
   --rest-api-id abc123api \
   --name "CreateOrderRequest" \

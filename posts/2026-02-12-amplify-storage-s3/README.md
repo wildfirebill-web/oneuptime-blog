@@ -22,6 +22,7 @@ Configure storage with the CLI:
 amplify add storage
 
 # ? Select from one of the below mentioned services: Content (Images, audio, video, etc.)
+
 # ? Provide a friendly name for your resource: appfiles
 # ? Provide bucket name: my-app-files-bucket
 # ? Who should have access: Auth users only

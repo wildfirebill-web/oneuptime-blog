@@ -20,7 +20,8 @@ Description: Monitor FreeRADIUS server performance, IPv6 authentication statisti
 ## FreeRADIUS Status Server
 
 ```bash
-# FreeRADIUS status server — built-in metrics endpoint
+# FreeRADIUS status server - built-in metrics endpoint
+
 # /etc/freeradius/3.0/sites-enabled/status
 
 server status {
@@ -77,7 +78,7 @@ EOF
 
 ```bash
 #!/bin/bash
-# /usr/local/bin/radius-metrics.sh — Prometheus textfile collector
+# /usr/local/bin/radius-metrics.sh - Prometheus textfile collector
 
 OUTPUT="/var/lib/node_exporter/textfile_collector/radius.prom"
 
@@ -187,7 +188,7 @@ groups:
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Panel: Authentication success rate (%)
 rate(radius_auth_accepts_total[5m]) /
 rate(radius_auth_requests_total[5m]) * 100

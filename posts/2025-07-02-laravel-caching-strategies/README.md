@@ -147,6 +147,7 @@ return [
 
 ```bash
 # .env - Development (use CACHE_STORE in Laravel 11+)
+
 CACHE_STORE=file
 
 # .env - Production (use CACHE_STORE in Laravel 11+)

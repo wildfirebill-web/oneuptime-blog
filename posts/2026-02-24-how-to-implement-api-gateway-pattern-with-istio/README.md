@@ -291,6 +291,7 @@ Once everything is deployed, test your gateway setup:
 
 ```bash
 # Get the gateway external IP
+
 export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 

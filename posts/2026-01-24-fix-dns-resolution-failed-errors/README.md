@@ -40,6 +40,7 @@ Start by identifying where the DNS resolution is failing.
 
 ```bash
 # Test basic DNS resolution with different tools
+
 # nslookup queries DNS servers directly
 nslookup google.com
 

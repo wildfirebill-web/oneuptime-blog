@@ -14,6 +14,7 @@ The Kubernetes backend stores OpenTofu state as a Kubernetes Secret in a specifi
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "kubernetes" {
     namespace    = "opentofu-state"  # Kubernetes namespace

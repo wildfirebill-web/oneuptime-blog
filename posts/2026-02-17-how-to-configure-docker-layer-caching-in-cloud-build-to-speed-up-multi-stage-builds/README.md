@@ -24,6 +24,7 @@ Here is a Cloud Build configuration that implements layer caching.
 
 ```yaml
 # cloudbuild.yaml - Docker build with layer caching
+
 steps:
   # Step 1: Pull the previous image to use as cache
   - name: 'gcr.io/cloud-builders/docker'

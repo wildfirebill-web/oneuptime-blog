@@ -75,6 +75,7 @@ On Linux, the kernel version determines which RFC is used:
 
 ```bash
 # Check kernel version
+
 uname -r
 # Kernel 5.7+ uses RFC 8981-compatible PRNG (SHA-256 based)
 
@@ -123,4 +124,4 @@ sudo sysctl --system
 
 ## Conclusion
 
-RFC 8981 supersedes RFC 4941 with stronger cryptography and cleaner address lifecycle management. The practical difference for most deployments is minimal — both RFCs generate rotating temporary addresses that prevent cross-network tracking. However, deploying RFC 7217 stable-privacy addresses alongside RFC 8981 temporary addresses provides the strongest IPv6 privacy posture available today. Update to a modern kernel and OS to benefit from the SHA-256-based PRNG improvements in RFC 8981.
+RFC 8981 supersedes RFC 4941 with stronger cryptography and cleaner address lifecycle management. The practical difference for most deployments is minimal - both RFCs generate rotating temporary addresses that prevent cross-network tracking. However, deploying RFC 7217 stable-privacy addresses alongside RFC 8981 temporary addresses provides the strongest IPv6 privacy posture available today. Update to a modern kernel and OS to benefit from the SHA-256-based PRNG improvements in RFC 8981.

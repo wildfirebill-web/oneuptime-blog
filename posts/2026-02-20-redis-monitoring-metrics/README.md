@@ -47,6 +47,7 @@ The `INFO` command is the primary way to get Redis metrics. It returns a large s
 
 ```bash
 # Get all information
+
 redis-cli INFO
 
 # Get specific sections

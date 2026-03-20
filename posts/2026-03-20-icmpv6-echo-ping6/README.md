@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Echo Request, ping6, IPv6, Network Testing
+Tags: ICMPv6, Echo Request, Ping6, IPv6, Network Testing
 
 Description: Use ICMPv6 Echo Request and Reply for IPv6 connectivity testing, understand the message format, and use advanced ping6 options for troubleshooting.
 
@@ -12,7 +12,7 @@ ICMPv6 Echo Request (Type 128) and Echo Reply (Type 129) are the IPv6 equivalent
 
 ## ICMPv6 Echo Message Format
 
-```
+```text
 ICMPv6 Echo Request (Type 128) / Echo Reply (Type 129):
 
  0                   1                   2                   3
@@ -35,6 +35,7 @@ Data:           Arbitrary (typically a timestamp for RTT calculation)
 
 ```bash
 # Basic ping6 to an IPv6 address
+
 ping6 2001:db8::1
 
 # On modern Linux, 'ping' handles both IPv4 and IPv6:

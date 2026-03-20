@@ -36,6 +36,7 @@ locals {
 }
 
 # Request the ACM certificate
+
 resource "aws_acm_certificate" "main" {
   domain_name               = var.domain_name
   subject_alternative_names = var.subject_alternative_names
@@ -117,4 +118,4 @@ resource "aws_lb_listener" "https" {
 
 ## Conclusion
 
-The certificate module handles the full ACM workflow: request, DNS validation record creation, and validation waiting. The `create_before_destroy` lifecycle rule is critical — without it, replacing a certificate would briefly leave your service without TLS termination. The `wait_for_validation` flag lets you skip blocking in CI pipelines where you know validation will complete later.
+The certificate module handles the full ACM workflow: request, DNS validation record creation, and validation waiting. The `create_before_destroy` lifecycle rule is critical - without it, replacing a certificate would briefly leave your service without TLS termination. The `wait_for_validation` flag lets you skip blocking in CI pipelines where you know validation will complete later.

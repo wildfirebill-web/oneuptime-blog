@@ -259,6 +259,7 @@ Track JWT validation metrics:
 
 ```promql
 # JWT validation attempts
+
 envoy_http_jwt_authn_allowed
 
 # JWT validation failures

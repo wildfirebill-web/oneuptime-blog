@@ -48,6 +48,7 @@ Check what your Cloud Router is currently advertising:
 
 ```bash
 # Check the current advertisement mode and advertised routes
+
 gcloud compute routers describe your-router \
   --region=us-central1 \
   --format="yaml(bgp.advertiseMode, bgp.advertisedGroups, bgp.advertisedIpRanges)" \

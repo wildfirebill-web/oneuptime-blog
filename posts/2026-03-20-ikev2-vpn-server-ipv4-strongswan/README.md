@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IKEv2, StrongSwan, VPN, IPv4, PKI, Linux
+Tags: IKEv2, strongSwan, VPN, IPv4, PKI, Linux
 
 Description: Build a production-ready IKEv2 VPN server with StrongSwan using certificate authentication for secure IPv4 remote access.
 
@@ -12,6 +12,7 @@ IKEv2 is the modern standard for IPSec key exchange, offering faster renegotiati
 
 ```bash
 # Create directory for PKI material
+
 mkdir -p ~/pki/{cacerts,certs,private}
 chmod 700 ~/pki
 

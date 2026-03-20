@@ -24,6 +24,7 @@ Here is a minimal Collector configuration that downsamples all metrics from 15-s
 
 ```yaml
 # Collector config using the interval processor to reduce
+
 # metric export frequency from 15s to 60s.
 receivers:
   otlp:

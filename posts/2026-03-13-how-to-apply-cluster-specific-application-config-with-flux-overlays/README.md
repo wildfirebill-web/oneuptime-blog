@@ -483,6 +483,7 @@ Before pushing changes, validate the overlay output locally:
 
 ```bash
 # Build and inspect the dev overlay
+
 kustomize build apps/overlays/dev
 
 # Build and inspect the production overlay

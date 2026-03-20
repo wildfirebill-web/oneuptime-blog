@@ -1,14 +1,14 @@
-# How to Clear the Portainer Browser Cache to Fix UI Issues
+# How to Clear the Portainer Browser Cache to Fix UI Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Browser, UI, Cache
 
-Description: Fix Portainer UI issues by properly clearing browser cache, local storage, and cookies — the first troubleshooting step for most Portainer display and JavaScript errors.
+Description: Fix Portainer UI issues by properly clearing browser cache, local storage, and cookies - the first troubleshooting step for most Portainer display and JavaScript errors.
 
 ## Introduction
 
-Many Portainer UI issues — blank screens, outdated interfaces after upgrades, JavaScript errors, authentication loops, and stale data displays — are caused by cached browser data from a previous version. Clearing the browser cache is always the first troubleshooting step before investigating backend issues.
+Many Portainer UI issues - blank screens, outdated interfaces after upgrades, JavaScript errors, authentication loops, and stale data displays - are caused by cached browser data from a previous version. Clearing the browser cache is always the first troubleshooting step before investigating backend issues.
 
 ## What Browser Data Affects Portainer
 
@@ -25,7 +25,7 @@ Many Portainer UI issues — blank screens, outdated interfaces after upgrades, 
 
 Forces reload of all assets without clearing the full cache:
 
-```
+```sql
 Windows/Linux: Ctrl + Shift + R
 Mac: Cmd + Shift + R
 
@@ -35,11 +35,11 @@ Or:
 3. Select "Empty Cache and Hard Reload"
 ```
 
-## Method 2: Chrome — Clear Site Data
+## Method 2: Chrome - Clear Site Data
 
 The most thorough method:
 
-```
+```text
 1. Open DevTools (F12)
 2. Click the "Application" tab
 3. In left panel: Storage
@@ -60,7 +60,7 @@ The most thorough method:
 
 ### Chrome
 
-```
+```text
 1. Settings (⋮) → Settings
 2. Privacy and security → Clear browsing data
 3. Select: All time
@@ -74,7 +74,7 @@ Or use keyboard shortcut: `Ctrl+Shift+Delete`
 
 ### Firefox
 
-```
+```text
 1. Menu (☰) → History → Clear Recent History
 2. Time range: Everything
 3. Check:
@@ -89,7 +89,7 @@ Or: `Ctrl+Shift+Delete`
 
 ### Safari
 
-```
+```text
 1. Develop menu → Empty Caches
 2. And: Safari → Clear History
 ```
@@ -125,7 +125,7 @@ window.location.reload(true);
 
 Before clearing, test if the issue is cache-related:
 
-```
+```text
 Chrome: Ctrl+Shift+N → new incognito window
 Firefox: Ctrl+Shift+P → new private window
 Safari: File → New Private Window
@@ -170,6 +170,7 @@ Test in a completely different browser to isolate the issue:
 
 ```bash
 # If issue is specific to Chrome, try Firefox
+
 # If specific to Firefox, try Chrome or Edge
 # This quickly confirms if it's browser-specific vs server-side
 ```
@@ -203,4 +204,4 @@ If you changed Portainer's domain, old cached data from the old URL may cause is
 
 ## Conclusion
 
-Browser cache clearing is the fastest and most effective fix for the majority of Portainer UI issues. Always test in incognito mode first — if that works, clearing the full browser cache for the Portainer origin will resolve it. For post-upgrade issues, use the DevTools Application tab to clear all site data at once, including service workers and IndexedDB, to ensure no old code is cached.
+Browser cache clearing is the fastest and most effective fix for the majority of Portainer UI issues. Always test in incognito mode first - if that works, clearing the full browser cache for the Portainer origin will resolve it. For post-upgrade issues, use the DevTools Application tab to clear all site data at once, including service workers and IndexedDB, to ensure no old code is cached.

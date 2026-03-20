@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NAT64, TAYGA, IPv6, IPv4, Translation, Linux, Networking
+Tags: NAT64, Tayga, IPv6, IPv4, Translation, Linux, Networking
 
 Description: Install and configure TAYGA, a stateless NAT64 translator on Linux, to allow IPv6-only hosts to communicate with IPv4-only services.
 
@@ -12,7 +12,7 @@ NAT64 translates between IPv6 and IPv4, enabling IPv6-only clients to reach IPv4
 
 ## Architecture
 
-```
+```text
 IPv6-only client (2001:db8::10)
        ↓
   DNS64 (returns 64:ff9b::8.8.8.8 for google.com)
@@ -28,6 +28,7 @@ IPv6-only client (2001:db8::10)
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install tayga
 
 # RHEL/CentOS

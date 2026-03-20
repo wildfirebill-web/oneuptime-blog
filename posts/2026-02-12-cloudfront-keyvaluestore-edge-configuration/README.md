@@ -33,6 +33,7 @@ Create and populate a KeyValueStore:
 
 ```bash
 # Create the key-value store
+
 aws cloudfront-keyvaluestore create-key-value-store \
   --name "app-config" \
   --comment "Application configuration for edge functions"

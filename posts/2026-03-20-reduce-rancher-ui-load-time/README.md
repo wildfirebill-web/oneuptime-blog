@@ -1,4 +1,4 @@
-# How to Reduce Rancher UI Load Time
+# How to Reduce Rancher UI Load Time - Reduce Load Time
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Place an NGINX reverse proxy in front of Rancher to serve static assets with gzi
 
 ```nginx
 # nginx.conf for Rancher reverse proxy
+
 upstream rancher {
     server rancher.cattle-system.svc.cluster.local:443;
     keepalive 100;

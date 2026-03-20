@@ -58,6 +58,7 @@ The following command updates environment variables for a Lambda function, repla
 
 ```bash
 # aws_cli_set_env.sh
+
 # Update Lambda function environment variables
 # Note: replaces ALL existing variables
 

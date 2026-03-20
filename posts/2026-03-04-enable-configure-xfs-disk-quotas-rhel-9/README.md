@@ -47,6 +47,7 @@ Check your XFS tools version:
 
 ```bash
 # Verify xfsprogs is installed
+
 rpm -q xfsprogs
 ```
 

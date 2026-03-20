@@ -332,6 +332,7 @@ Track active connections and streaming health:
 
 ```bash
 # Active TCP connections per pod
+
 sum(envoy_server_total_connections{pod=~"ws-server.*"}) by (pod)
 
 # Connection duration distribution

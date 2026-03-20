@@ -28,6 +28,7 @@ First, enable the Artifact Registry API:
 
 ```hcl
 # apis.tf - Enable the Artifact Registry API
+
 resource "google_project_service" "artifactregistry" {
   project = var.project_id
   service = "artifactregistry.googleapis.com"

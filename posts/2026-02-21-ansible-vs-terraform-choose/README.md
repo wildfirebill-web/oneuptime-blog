@@ -35,6 +35,7 @@ Use Terraform when you need to:
 
 ```hcl
 # Terraform excels at this
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }

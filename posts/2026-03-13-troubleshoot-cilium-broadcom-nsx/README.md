@@ -29,6 +29,7 @@ MTU mismatches are the most common issue in NSX + Cilium environments.
 
 ```bash
 # Check Cilium's configured MTU
+
 kubectl get configmap cilium-config -n kube-system -o yaml | grep -E "mtu|tunnel"
 
 # Check the MTU of the node's primary interface (managed by NSX)

@@ -32,6 +32,7 @@ The first rule: always pin exact versions in production:
 
 ```yaml
 # requirements.yml - GOOD: Exact versions
+
 collections:
   - name: community.general
     version: 8.2.0

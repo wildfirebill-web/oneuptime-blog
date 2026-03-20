@@ -43,6 +43,7 @@ Start by adding Serilog packages to your project. The packages you need depend o
 
 ```bash
 # Core Serilog package
+
 dotnet add package Serilog
 
 # For ASP.NET Core integration

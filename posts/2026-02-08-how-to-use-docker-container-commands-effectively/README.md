@@ -396,6 +396,7 @@ Step-by-step debugging workflow for containers that exit immediately:
 
 ```bash
 # 1. Check the exit code
+
 docker container inspect --format '{{.State.ExitCode}}' my-app
 
 # 2. Check logs for error messages

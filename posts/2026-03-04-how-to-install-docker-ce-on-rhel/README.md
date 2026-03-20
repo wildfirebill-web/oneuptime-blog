@@ -14,6 +14,7 @@ Docker CE (Community Edition) provides container runtime capabilities on RHEL. W
 
 ```bash
 # Remove any conflicting packages
+
 sudo dnf remove -y docker \
   docker-client \
   docker-client-latest \

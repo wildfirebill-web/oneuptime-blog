@@ -14,6 +14,7 @@ The `cidrcontains` function in OpenTofu checks whether a given IP address or CID
 
 ```hcl
 # Check if an IP address falls within a CIDR block
+
 locals {
   vpc_cidr     = "10.0.0.0/16"
   db_server_ip = "10.0.5.42"

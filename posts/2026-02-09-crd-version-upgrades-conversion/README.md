@@ -406,6 +406,7 @@ NAMESPACE="default"
 SECRET_NAME="conversion-webhook-certs"
 
 # Generate CA key and certificate
+
 openssl genrsa -out ca.key 2048
 openssl req -x509 -new -nodes -key ca.key -days 365 -out ca.crt -subj "/CN=conversion-ca"
 

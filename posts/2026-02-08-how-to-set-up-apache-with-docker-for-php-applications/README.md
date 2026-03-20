@@ -20,6 +20,7 @@ Create a project directory and add a test file:
 
 ```bash
 # Set up the project structure
+
 mkdir -p php-docker/src
 cd php-docker
 ```

@@ -52,6 +52,7 @@ ALTER TABLE events_2024_01 SET SCHEMA archive;
 
 ```bash
 # Export archive data
+
 pg_dump -t orders_archive myapp > orders_archive.sql
 
 # Import to archive database

@@ -26,6 +26,7 @@ This guide walks through systematic validation of a Cilium installation.
 
 ```bash
 # Overall Cilium status
+
 cilium status
 
 # Verify all agents are running

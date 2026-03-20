@@ -29,6 +29,7 @@ Before configuring WireGuard, you need to generate key pairs. You can do this on
 
 ```bash
 # Generate a private key
+
 wg genkey > privatekey
 
 # Derive the public key from the private key

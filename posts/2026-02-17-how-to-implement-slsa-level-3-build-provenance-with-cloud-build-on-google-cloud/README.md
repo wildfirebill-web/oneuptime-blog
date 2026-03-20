@@ -31,6 +31,7 @@ The first step is making sure your Cloud Build configuration generates provenanc
 
 ```yaml
 # cloudbuild.yaml
+
 # Build configuration with SLSA provenance enabled
 options:
   # Request provenance verification - this enables SLSA attestation

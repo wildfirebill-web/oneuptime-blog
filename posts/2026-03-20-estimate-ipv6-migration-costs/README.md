@@ -26,6 +26,7 @@ Equipment that cannot be upgraded via firmware to support IPv6 must be replaced:
 
 ```python
 # Hardware cost estimation worksheet
+
 hardware_items = [
     # (item, quantity, unit_cost_low, unit_cost_high)
     ("Core routers", 4, 15000, 50000),
@@ -121,11 +122,11 @@ Timeline: 12–18 months
 
 ## Cost Reduction Strategies
 
-1. **Prioritize dual-stack over IPv6-only** — dual-stack reduces application change scope
-2. **Use open source IPAM (NetBox)** — saves $50,000–$150,000/year vs commercial
-3. **Phase hardware replacement with refresh cycles** — align IPv6 upgrades with existing replacement plans
-4. **Automate testing** — reduces QA labor cost by 40%
+1. **Prioritize dual-stack over IPv6-only** - dual-stack reduces application change scope
+2. **Use open source IPAM (NetBox)** - saves $50,000–$150,000/year vs commercial
+3. **Phase hardware replacement with refresh cycles** - align IPv6 upgrades with existing replacement plans
+4. **Automate testing** - reduces QA labor cost by 40%
 
 ## Conclusion
 
-IPv6 migration costs range from $250K for small organizations to $1M+ for enterprises with complex application estates. The largest cost driver is usually application development to remove IPv4 assumptions, not hardware. Build a phased cost model, align hardware replacement with existing refresh cycles, and use open source IPAM to reduce licensing spend. Present costs as a range with a contingency buffer — IPv6 migrations regularly surface unexpected application dependencies that add scope.
+IPv6 migration costs range from $250K for small organizations to $1M+ for enterprises with complex application estates. The largest cost driver is usually application development to remove IPv4 assumptions, not hardware. Build a phased cost model, align hardware replacement with existing refresh cycles, and use open source IPAM to reduce licensing spend. Present costs as a range with a contingency buffer - IPv6 migrations regularly surface unexpected application dependencies that add scope.

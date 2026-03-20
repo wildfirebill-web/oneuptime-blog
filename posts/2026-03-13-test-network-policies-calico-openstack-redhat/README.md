@@ -48,6 +48,7 @@ openstack server create --network openstack-redhat-net \
 ```bash
 SERVER_IP=$(openstack server show server-vm -f value -c addresses | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+')
 # From client-vm: ping -c3 $SERVER_IP (should succeed)
+
 ```
 
 ## Step 4: Test TCP Port Not in Security Group

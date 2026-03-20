@@ -63,6 +63,7 @@ The most important metrics to track for federation are:
 
 ```promql
 # Request rate through the east-west gateway
+
 sum(rate(istio_requests_total{
   reporter="destination",
   destination_service_name="istio-eastwestgateway"

@@ -73,6 +73,7 @@ Once enabled, the restricted admin role appears in the global roles list.
 
 ```bash
 # First, find the user ID
+
 curl -s 'https://<rancher-url>/v3/users' \
   -H 'Authorization: Bearer <api-token>' | \
   jq -r '.data[] | "\(.id)\t\(.username)"' | column -t

@@ -55,6 +55,7 @@ Replace `{region}` with your AWS region and `{arch}` with `amd64` or `arm64`.
 
 ```yaml
 # template.yaml (SAM/CloudFormation)
+
 Resources:
   MyFunction:
     Type: AWS::Serverless::Function
@@ -741,7 +742,7 @@ trace.set_tracer_provider(provider)
 | `order.id` | `ord_123` | Business context for filtering |
 | `error.type` | `ValidationError` | Categorize failures |
 
-### Resource Attributes
+Resource Attributes
 
 Always set these resource attributes for Lambda functions:
 

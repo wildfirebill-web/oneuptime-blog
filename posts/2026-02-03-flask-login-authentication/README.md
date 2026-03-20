@@ -56,6 +56,7 @@ Here is the basic setup to get Flask-Login working:
 
 ```python
 # app.py
+
 # Basic Flask-Login configuration and initialization
 from flask import Flask
 from flask_login import LoginManager

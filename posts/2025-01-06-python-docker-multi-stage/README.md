@@ -34,6 +34,7 @@ This Dockerfile demonstrates the multi-stage pattern: use a full build environme
 
 ```dockerfile
 # Dockerfile
+
 # Stage 1: Build - includes compilers and dev tools
 FROM python:3.12-slim AS builder
 

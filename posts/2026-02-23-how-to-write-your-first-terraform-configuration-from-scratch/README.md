@@ -18,6 +18,7 @@ Create a new directory for your Terraform project:
 
 ```bash
 # Create a project directory
+
 mkdir my-first-terraform && cd my-first-terraform
 ```
 

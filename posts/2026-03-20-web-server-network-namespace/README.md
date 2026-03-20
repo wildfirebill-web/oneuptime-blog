@@ -22,6 +22,7 @@ The simplest approach uses Python's built-in HTTP server:
 
 ```bash
 # Create and configure the namespace
+
 ip netns add webns
 ip link add veth-host type veth peer name veth-web
 ip link set veth-web netns webns

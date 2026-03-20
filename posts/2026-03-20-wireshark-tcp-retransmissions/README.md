@@ -2,22 +2,23 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, TCP, Retransmissions, Networking, Performance, Diagnostics
+Tags: Wireshark, TCP, Retransmission, Networking, Performance, Diagnostics
 
 Description: Use Wireshark display filters and the Expert Information panel to identify TCP retransmissions, duplicate ACKs, and out-of-order packets that indicate network packet loss.
 
-TCP retransmissions are the smoking gun for packet loss. Every retransmission means a packet was sent, didn't get acknowledged in time, and had to be re-sent — adding latency and reducing throughput.
+TCP retransmissions are the smoking gun for packet loss. Every retransmission means a packet was sent, didn't get acknowledged in time, and had to be re-sent - adding latency and reducing throughput.
 
 ## Filter for TCP Retransmissions
 
 ```wireshark
 # Show all TCP retransmission types
+
 tcp.analysis.retransmission or tcp.analysis.fast_retransmission
 
-# Fast retransmissions (triggered by 3 duplicate ACKs — reactive)
+# Fast retransmissions (triggered by 3 duplicate ACKs - reactive)
 tcp.analysis.fast_retransmission
 
-# Regular retransmissions (timeout-based — slower recovery)
+# Regular retransmissions (timeout-based - slower recovery)
 tcp.analysis.retransmission
 
 # Out-of-order segments (reordering or loss)
@@ -32,14 +33,14 @@ tcp.analysis.flags
 
 ## Understanding the Retransmission Types
 
-```
+```text
 Type                   Meaning
 ---------------------  ------------------------------------------
 Retransmission         Segment retransmitted after RTO timer expired
-                       (slow — waited for timeout)
+                       (slow - waited for timeout)
 
 Fast Retransmission    Retransmitted after 3 duplicate ACKs
-                       (fast — didn't wait for timeout)
+                       (fast - didn't wait for timeout)
 
 Out-of-Order           Segment arrived but earlier ones are missing
                        (reordering or loss of earlier segment)
@@ -53,7 +54,7 @@ Spurious Retransmission Retransmitted but original was received
 
 ## Use Expert Information for Overview
 
-```
+```text
 Analyze → Expert Information
 
 Shows all flagged events by severity:
@@ -94,7 +95,7 @@ echo "Retransmission rate: $RETRANS / $TOTAL"
 
 Wireshark colors retransmissions by default:
 
-```
+```text
 Black background  → Connection reset (RST)
 Red background    → TCP errors (retransmissions in some themes)
 Dark purple       → Bad TCP (retransmissions, out-of-order)
@@ -119,4 +120,4 @@ tcp.stream == 5 and tcp.analysis.retransmission
 # tcp.seq == <sequence number of lost packet>
 ```
 
-High retransmission rates correlate directly with slow application performance — every retransmission adds at least one RTT (often much more) to response times.
+High retransmission rates correlate directly with slow application performance - every retransmission adds at least one RTT (often much more) to response times.

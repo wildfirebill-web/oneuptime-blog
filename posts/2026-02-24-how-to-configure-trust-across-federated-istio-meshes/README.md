@@ -37,6 +37,7 @@ mkdir -p certs
 cd certs
 
 # Generate root CA key
+
 openssl req -newkey rsa:4096 -nodes -keyout root-key.pem \
   -x509 -days 3650 -out root-cert.pem \
   -subj "/O=MyOrg/CN=Root CA"

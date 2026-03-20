@@ -59,6 +59,7 @@ When starting CockroachDB nodes, specify locality information to help the databa
 
 ```bash
 # Start a node in US East region, zone us-east-1a
+
 cockroach start \
   --insecure \
   --advertise-addr=node1.us-east.example.com \

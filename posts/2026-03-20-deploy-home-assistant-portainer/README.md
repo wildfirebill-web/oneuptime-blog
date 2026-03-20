@@ -55,6 +55,7 @@ If you use a Zigbee or Z-Wave USB stick, pass the device through to the containe
 
 ```bash
 # List USB serial devices on the host
+
 ls /dev/ttyUSB* /dev/ttyACM*
 ```
 

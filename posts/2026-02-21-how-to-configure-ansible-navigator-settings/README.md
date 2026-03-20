@@ -26,6 +26,7 @@ Here is a starter configuration that covers the most common settings:
 
 ```yaml
 # ansible-navigator.yml - Basic configuration
+
 ---
 ansible-navigator:
   # Display mode: interactive (TUI) or stdout (like ansible-playbook)

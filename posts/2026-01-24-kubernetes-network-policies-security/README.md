@@ -52,6 +52,7 @@ Check your CNI:
 
 ```bash
 # List CNI pods
+
 kubectl get pods -n kube-system | grep -E 'calico|cilium|weave|flannel'
 
 # Check if NetworkPolicy resources work

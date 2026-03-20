@@ -16,6 +16,7 @@ This post covers creating MySQL users with Ansible, managing passwords securely,
 
 ```bash
 # Install the required Ansible collection and Python library
+
 ansible-galaxy collection install community.mysql
 pip install PyMySQL
 ```

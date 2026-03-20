@@ -24,6 +24,7 @@ Model retries as child spans under a parent span that represents the overall ope
 
 ```python
 # retry_instrumented.py
+
 import time
 from opentelemetry import trace
 

@@ -20,6 +20,7 @@ When you run terraform plan with the -generate-config-out flag and have import b
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

@@ -59,6 +59,7 @@ The connection manager tracks all WebSocket connections on the local server. It 
 
 ```python
 # connection_manager.py
+
 # Manages local WebSocket connections on this server instance
 from fastapi import WebSocket
 from typing import Dict, Set, Optional

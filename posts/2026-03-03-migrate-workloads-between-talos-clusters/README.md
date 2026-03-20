@@ -16,6 +16,7 @@ Before touching any kubectl command, you need a clear picture of what you are mi
 
 ```bash
 # Get all deployments across namespaces
+
 kubectl get deployments --all-namespaces -o wide
 
 # Get all statefulsets (these require extra care)

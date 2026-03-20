@@ -16,6 +16,7 @@ Add `vars_files` at the play level to load one or more YAML files.
 
 ```yaml
 # basic-vars-files.yml
+
 # Loads variables from external files at play level
 ---
 - name: Deploy application

@@ -28,6 +28,7 @@ Create an Ansible template for the service unit.
 
 ```ini
 # templates/calico-node.service.j2
+
 [Unit]
 Description=Calico Node
 After=network.target

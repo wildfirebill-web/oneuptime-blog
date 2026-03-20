@@ -20,6 +20,7 @@ Istio tracks request latency as a histogram. You can query it at various percent
 
 ```promql
 # P50 latency
+
 histogram_quantile(0.50,
   sum(rate(istio_request_duration_milliseconds_bucket{
     reporter="destination",

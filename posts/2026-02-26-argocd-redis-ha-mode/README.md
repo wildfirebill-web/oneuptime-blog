@@ -50,6 +50,7 @@ The ArgoCD Helm chart includes built-in support for Redis HA:
 # argocd-ha-values.yaml
 
 # Disable the default single-instance Redis
+
 redis:
   enabled: false
 

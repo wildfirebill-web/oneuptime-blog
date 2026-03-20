@@ -8,12 +8,13 @@ Description: Configure DKIM signing with OpenDKIM for IPv6 mail servers to authe
 
 ## Introduction
 
-DKIM (DomainKeys Identified Mail) adds a cryptographic signature to outbound email, allowing receiving servers to verify the message was sent from an authorized server and hasn't been tampered with. DKIM itself is protocol-agnostic — it works the same over IPv4 and IPv6 — but is especially important for IPv6 senders since IPv6 IP reputation is newer and less established.
+DKIM (DomainKeys Identified Mail) adds a cryptographic signature to outbound email, allowing receiving servers to verify the message was sent from an authorized server and hasn't been tampered with. DKIM itself is protocol-agnostic - it works the same over IPv4 and IPv6 - but is especially important for IPv6 senders since IPv6 IP reputation is newer and less established.
 
 ## Installing OpenDKIM
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install -y opendkim opendkim-tools
 
 # RHEL/CentOS
@@ -163,4 +164,4 @@ SigningTable    refile:/etc/opendkim/signing.table
 
 ## Conclusion
 
-DKIM configuration for IPv6 mail servers is identical to IPv4 — the signing process is at the application layer and protocol-agnostic. The key distinction is ensuring your `TrustedHosts` includes IPv6 addresses so the milter signs messages from your IPv6 Postfix instance correctly.
+DKIM configuration for IPv6 mail servers is identical to IPv4 - the signing process is at the application layer and protocol-agnostic. The key distinction is ensuring your `TrustedHosts` includes IPv6 addresses so the milter signs messages from your IPv6 Postfix instance correctly.

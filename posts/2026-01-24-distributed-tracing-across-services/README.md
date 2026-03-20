@@ -66,6 +66,7 @@ Here is a complete example with two services:
 
 ```python
 # service_a/main.py
+
 from flask import Flask, request, jsonify
 import requests
 from opentelemetry import trace

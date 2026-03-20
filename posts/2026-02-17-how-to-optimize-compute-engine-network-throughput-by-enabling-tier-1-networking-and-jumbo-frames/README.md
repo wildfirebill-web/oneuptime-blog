@@ -36,6 +36,7 @@ Check the bandwidth for your current machine type:
 
 ```bash
 # Describe a machine type to see its network performance
+
 gcloud compute machine-types describe c3-standard-88 \
     --zone=us-central1-a \
     --format="json(name, guestCpus, memoryMb, maximumPersistentDisksSizeGb)"

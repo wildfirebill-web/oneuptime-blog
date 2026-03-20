@@ -1,4 +1,4 @@
-# How to Use depends_on for Explicit Dependencies in OpenTofu
+# How to Use depends_on for Explicit Dependencies in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn when and how to use the depends_on meta-argument to express e
 
 ---
 
-OpenTofu automatically infers dependencies between resources when one resource references another's attributes. However, some dependencies are implicit — resources depend on each other through side effects that aren't expressed in attribute references. The `depends_on` meta-argument lets you declare these hidden dependencies explicitly.
+OpenTofu automatically infers dependencies between resources when one resource references another's attributes. However, some dependencies are implicit - resources depend on each other through side effects that aren't expressed in attribute references. The `depends_on` meta-argument lets you declare these hidden dependencies explicitly.
 
 ---
 
@@ -25,6 +25,7 @@ resource "aws_instance" "web" {
 These dependencies require `depends_on`:
 ```hcl
 # IAM policy attachment takes effect asynchronously
+
 # The EC2 instance should wait until the policy is fully attached
 resource "aws_instance" "app" {
   depends_on = [aws_iam_role_policy_attachment.app_role]
@@ -135,4 +136,4 @@ resource "null_resource" "configure" {
 
 ## Summary
 
-Use `depends_on` when resources have a real ordering requirement that OpenTofu can't infer from attribute references. Common cases include IAM policy propagation, DNS/certificate validation timing, and any resource that needs another to be fully operational (not just created). Avoid `depends_on` when a regular attribute reference already captures the dependency — it adds verbosity without value.
+Use `depends_on` when resources have a real ordering requirement that OpenTofu can't infer from attribute references. Common cases include IAM policy propagation, DNS/certificate validation timing, and any resource that needs another to be fully operational (not just created). Avoid `depends_on` when a regular attribute reference already captures the dependency - it adds verbosity without value.

@@ -34,6 +34,7 @@ You can use both simultaneously - session tokens for baseline protection and act
 
 ```bash
 # Create a score-based key for action tokens
+
 gcloud recaptcha keys create \
   --display-name="Action Token Key" \
   --web \

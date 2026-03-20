@@ -14,6 +14,7 @@ Sumo Logic is a cloud-native monitoring and analytics platform. Ansible can inst
 
 ```yaml
 # roles/sumo_logic/tasks/main.yml
+
 ---
 - name: Download Sumo Logic collector
   ansible.builtin.get_url:

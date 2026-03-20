@@ -28,6 +28,7 @@ First, create a resource group and two virtual networks. The following script se
 
 ```bash
 # Create a resource group for our networking resources
+
 az group create --name rg-vnet-peering-demo --location eastus
 
 # Create the first virtual network in East US

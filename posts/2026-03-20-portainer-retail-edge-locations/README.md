@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Retail, Edge Computing, Portainer, Docker, POS, Digital Signage, IoT
 
-Description: Deploy and manage containerized retail applications across multiple store locations using Portainer Edge Agent for centralized control of POS systems, digital signage, and inventory management containers.
+Description: Deploy and manage containerized retail applications across multiple store locations using Portainer Edge Agent for centralized control of POS systems, digital signage, and inventory management...
 
 ---
 
@@ -37,6 +37,7 @@ graph TB
 
 ```yaml
 # retail-edge-stack.yml
+
 version: "3.8"
 
 services:
@@ -52,7 +53,7 @@ services:
       - "8080:8080"
     volumes:
       - pos-data:/var/pos
-    restart: always    # Critical — must restart even without Portainer connectivity
+    restart: always    # Critical - must restart even without Portainer connectivity
     networks:
       - retail-net
 
@@ -119,7 +120,7 @@ Run promotional content updates across all stores simultaneously:
 
 ```bash
 #!/bin/bash
-# promotion-update.sh — runs via Portainer Edge Job
+# promotion-update.sh - runs via Portainer Edge Job
 # Pulls the latest promotional content for the signage player
 
 # Pull new promotions from the content server

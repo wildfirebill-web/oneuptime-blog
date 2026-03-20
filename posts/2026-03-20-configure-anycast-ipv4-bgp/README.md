@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Anycast, BGP, IPv4, Networking, High Availability, DNS
 
-Description: Anycast assigns the same IP address to multiple servers in different locations, and BGP routing ensures clients are directed to the nearest instance, enabling high availability and geographic load distribution.
+Description: Anycast assigns the same IP address to multiple servers in different locations, and BGP routing ensures clients are directed to the nearest instance, enabling high availability and geographic load...
 
 ## What Is Anycast?
 
@@ -28,7 +28,8 @@ On each PoP server, assign the anycast IP to the loopback:
 
 ```bash
 # On each anycast node (e.g., PoP in New York and London)
-# Add anycast IP to loopback — /32 host route
+
+# Add anycast IP to loopback - /32 host route
 sudo ip addr add 203.0.113.10/32 dev lo
 
 # Verify
@@ -37,7 +38,7 @@ ip addr show lo | grep 203.0.113.10
 
 Configure BGP on each node using FRRouting to advertise the /32:
 
-```
+```nginx
 # /etc/frr/frr.conf on each PoP node
 router bgp 65001
   bgp router-id 10.0.1.1       ! unique per node
@@ -61,7 +62,7 @@ Anycast requires withdrawing the route if the service is unhealthy:
 
 ```bash
 #!/bin/bash
-# health_check.sh — run every 30s via cron or systemd timer
+# health_check.sh - run every 30s via cron or systemd timer
 ANYCAST_IP="203.0.113.10"
 IFACE="lo"
 
@@ -70,10 +71,10 @@ if curl -sf http://127.0.0.1/health > /dev/null 2>&1; then
     ip addr show "$IFACE" | grep -q "$ANYCAST_IP" || \
         ip addr add "$ANYCAST_IP/32" dev "$IFACE"
 else
-    # Remove anycast IP — BGP will withdraw the route
+    # Remove anycast IP - BGP will withdraw the route
     ip addr show "$IFACE" | grep -q "$ANYCAST_IP" && \
         ip addr del "$ANYCAST_IP/32" dev "$IFACE"
-    echo "Service unhealthy — removed anycast IP"
+    echo "Service unhealthy - removed anycast IP"
 fi
 ```
 

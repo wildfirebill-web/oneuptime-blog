@@ -22,6 +22,7 @@ Prometheus Adapter bridges Prometheus metrics to the Kubernetes custom and exter
 
 ```yaml
 # clusters/production/infrastructure/monitoring.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

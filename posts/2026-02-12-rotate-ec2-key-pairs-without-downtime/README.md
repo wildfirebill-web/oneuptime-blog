@@ -40,6 +40,7 @@ Step 1 - Generate a new key pair locally:
 
 ```bash
 # Generate a new ED25519 key pair (more secure than RSA)
+
 ssh-keygen -t ed25519 -f ~/.ssh/ec2-new-key -C "ec2-rotated-$(date +%Y%m%d)"
 
 # Or RSA if your instance requires it

@@ -85,6 +85,7 @@ Verify the configuration was applied and the node is healthy:
 
 ```bash
 # Check node status
+
 talosctl get volumestatus STATE --nodes 192.168.1.10 -o yaml
 talosctl get volumestatus EPHEMERAL --nodes 192.168.1.10 -o yaml
 

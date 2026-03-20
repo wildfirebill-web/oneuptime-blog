@@ -61,6 +61,7 @@ Subsets are referenced in VirtualService routes:
 
 ```yaml
 # In the VirtualService
+
 - destination:
     host: reviews
     subset: v2

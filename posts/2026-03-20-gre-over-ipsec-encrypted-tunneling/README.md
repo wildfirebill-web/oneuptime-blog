@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, GRE, IPsec, StrongSwan, Tunnel, VPN, Encryption, Networking
+Tags: Linux, GRE, IPsec, strongSwan, Tunnel, VPN, Encryption, Networking
 
 Description: Combine GRE tunnels with IPsec transport mode to create encrypted GRE tunnels that provide both multi-protocol encapsulation and cryptographic security.
 
@@ -12,7 +12,7 @@ GRE tunnels carry traffic efficiently but provide no encryption. IPsec in transp
 
 ## Architecture
 
-```
+```text
 Plaintext Layer:  [IP][GRE][Inner IP][Payload]
 IPsec Transport:  [IP][ESP/AH][GRE][Inner IP][Payload]
 ```
@@ -26,8 +26,9 @@ IPsec Transport:  [IP][ESP/AH][GRE][Inner IP][Payload]
 
 ### /etc/ipsec.conf on Host A
 
-```
+```text
 # /etc/ipsec.conf
+
 config setup
     charondebug="ike 2, knl 2, cfg 2"
 
@@ -45,7 +46,7 @@ conn gre-ipsec
 
 ### /etc/ipsec.secrets
 
-```
+```text
 # /etc/ipsec.secrets
 10.0.0.1 10.0.0.2 : PSK "your-strong-preshared-key-here"
 ```
@@ -90,7 +91,7 @@ ping -c 5 172.16.0.2
 # Verify IPsec is encrypting GRE traffic
 ipsec statusall
 
-# Capture on eth0 — should see ESP packets (not plain GRE)
+# Capture on eth0 - should see ESP packets (not plain GRE)
 tcpdump -i eth0 esp -n
 # Should show: ESP encrypted packets, not readable GRE content
 ```

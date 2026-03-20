@@ -38,6 +38,7 @@ Before migrating, capture how your CoreOS/Flatcar nodes are configured:
 # On each CoreOS/Flatcar node, document the configuration
 
 # Check the Ignition config (CoreOS/Flatcar)
+
 cat /etc/ignition.json 2>/dev/null || \
 cat /usr/share/oem/config.ign 2>/dev/null
 

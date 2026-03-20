@@ -46,6 +46,7 @@ This converts an existing Key Vault from access policies to RBAC authorization:
 
 ```bash
 # Update Key Vault to use RBAC for data plane authorization
+
 az keyvault update \
   --name kv-production-secrets \
   --resource-group rg-production \

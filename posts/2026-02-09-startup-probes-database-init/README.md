@@ -286,6 +286,7 @@ if __name__ == '__main__':
 
 ```yaml
 # DO: Use init containers for migrations when possible
+
 initContainers:
 - name: migrations
   image: app:latest

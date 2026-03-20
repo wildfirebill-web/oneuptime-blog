@@ -22,6 +22,7 @@ Terraform workspaces provide isolated state management for the same configuratio
 
 ```hcl
 # main.tf - Base cluster configuration
+
 terraform {
   required_version = ">= 1.5"
 

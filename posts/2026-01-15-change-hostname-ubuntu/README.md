@@ -21,6 +21,7 @@ Ubuntu uses three hostname types:
 
 ```bash
 # Show all hostname information
+
 hostnamectl
 
 # Just the hostname

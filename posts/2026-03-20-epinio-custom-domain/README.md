@@ -21,6 +21,7 @@ How to Set Up a Custom Domain for Epinio Applications demonstrates how Epinio si
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

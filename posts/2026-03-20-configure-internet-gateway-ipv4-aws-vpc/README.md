@@ -16,6 +16,7 @@ An Internet Gateway (IGW) enables bidirectional IPv4 connectivity between a VPC 
 VPC_ID=vpc-0abc123def456
 
 # Create the internet gateway
+
 IGW_ID=$(aws ec2 create-internet-gateway \
   --tag-specifications 'ResourceType=internet-gateway,Tags=[{Key=Name,Value=prod-igw}]' \
   --query 'InternetGateway.InternetGatewayId' \
@@ -71,7 +72,7 @@ aws ec2 describe-route-tables \
 
 Expected output:
 
-```
+```text
 +------------------+-------------------+-------+
 | DestinationCidr  | GatewayId         | State |
 +------------------+-------------------+-------+

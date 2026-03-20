@@ -135,6 +135,7 @@ Now you can control logging at runtime:
 
 ```bash
 # Show everything
+
 RUST_LOG=trace ./my_app
 
 # Only warnings and errors

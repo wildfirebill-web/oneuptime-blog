@@ -27,6 +27,7 @@ The reconciliation loop for a Kustomization resource follows these steps:
 
 ```bash
 # View the current reconciliation status
+
 flux get kustomization my-app
 
 # See the last applied revision

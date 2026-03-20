@@ -20,6 +20,7 @@ Images are tagged with version numbers and architecture variants:
 
 ```bash
 # Latest stable version
+
 otel/opentelemetry-collector-contrib:0.93.0
 
 # Latest release (not recommended for production)
@@ -846,7 +847,7 @@ services:
         condition: service_healthy
 ```
 
-## Resource Limits
+Resource Limits
 
 Set resource limits to prevent container overload:
 

@@ -22,6 +22,7 @@ Export all cluster resources to YAML files:
 
 ```bash
 # Create backup directory
+
 mkdir -p cluster-backup/$(date +%Y%m%d)
 cd cluster-backup/$(date +%Y%m%d)
 

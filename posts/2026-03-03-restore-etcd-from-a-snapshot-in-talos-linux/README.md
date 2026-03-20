@@ -33,6 +33,7 @@ Verify your snapshot before starting the restore:
 
 ```bash
 # Check the snapshot is valid
+
 # If using etcdctl locally:
 etcdctl snapshot status ./etcd-snapshot.db --write-out=table
 

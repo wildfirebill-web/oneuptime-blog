@@ -22,6 +22,7 @@ def greet(**kwargs):
 
 greet(name="Alice", age=25, city="NYC")
 # Output:
+
 # name: Alice
 # age: 25
 # city: NYC

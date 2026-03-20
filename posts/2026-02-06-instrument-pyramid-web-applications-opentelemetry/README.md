@@ -24,6 +24,7 @@ Without instrumentation, debugging performance problems requires extensive loggi
 
 ```bash
 # Install Pyramid and supporting packages
+
 pip install pyramid waitress
 
 # Install OpenTelemetry packages

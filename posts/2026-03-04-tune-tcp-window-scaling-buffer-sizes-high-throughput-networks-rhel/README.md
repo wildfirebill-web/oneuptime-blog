@@ -14,6 +14,7 @@ TCP window size limits how much data can be in flight before waiting for an ackn
 
 ```bash
 # Calculate the bandwidth-delay product (BDP)
+
 # BDP = bandwidth (bits/sec) * round-trip time (seconds)
 # Example: 10 Gbps link with 50ms RTT
 # BDP = 10,000,000,000 * 0.050 = 500,000,000 bits = 62.5 MB

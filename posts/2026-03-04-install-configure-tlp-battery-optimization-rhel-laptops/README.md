@@ -16,6 +16,7 @@ TLP is available from the EPEL repository on RHEL.
 
 ```bash
 # Enable the EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install TLP

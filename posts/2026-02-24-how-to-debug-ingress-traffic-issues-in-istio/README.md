@@ -44,6 +44,7 @@ If EXTERNAL-IP shows `<pending>`, the cloud provider has not provisioned the loa
 
 ```bash
 # On GKE
+
 kubectl describe svc istio-ingressgateway -n istio-system | grep -A 5 Events
 
 # On AWS

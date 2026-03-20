@@ -22,6 +22,7 @@ Verify the cgroup freezer state:
 
 ```bash
 # Check if cgroup freezer is available on your system
+
 cat /sys/fs/cgroup/freezer/docker/*/freezer.state 2>/dev/null || \
   echo "Using cgroup v2 (freezer is integrated)"
 ```

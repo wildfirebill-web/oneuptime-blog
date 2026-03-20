@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Docker, NGINX, Containers, DevOps, Troubleshooting
+Tags: React, Docker, Nginx, Containers, DevOps, Troubleshooting
 
 Description: Learn how to fix the common issue of React applications exiting immediately with code 0 when containerized with Docker and Nginx. Understand the root cause and implement proper solutions.
 
@@ -33,6 +33,7 @@ The exit code 0 means the container completed successfully - there was no error.
 
 ```dockerfile
 # This Dockerfile will cause the container to exit immediately
+
 FROM node:18 AS build
 WORKDIR /app
 COPY package*.json ./

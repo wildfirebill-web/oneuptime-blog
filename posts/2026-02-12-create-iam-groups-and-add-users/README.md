@@ -61,6 +61,7 @@ The CLI makes group management scriptable and repeatable:
 
 ```bash
 # Create a new IAM group for developers
+
 aws iam create-group --group-name Developers
 
 # Create additional groups for different roles

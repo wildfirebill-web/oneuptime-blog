@@ -26,6 +26,7 @@ Common private Helm repository solutions include ChartMuseum, Harbor, JFrog Arti
 
 ```bash
 # Add with basic auth credentials
+
 argocd repo add https://charts.company.com \
   --type helm \
   --name internal-charts \

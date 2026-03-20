@@ -1,4 +1,4 @@
-# How to Configure RKE2 Server Nodes
+# How to Configure RKE2 Server Nodes - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ RKE2 reads its configuration from `/etc/rancher/rke2/config.yaml`. This file sup
 # /etc/rancher/rke2/config.yaml - Comprehensive server configuration
 
 # =====================
+
 # CLUSTER CONFIGURATION
 # =====================
 

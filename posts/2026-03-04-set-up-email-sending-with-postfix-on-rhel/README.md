@@ -14,6 +14,7 @@ Postfix is the default MTA (Mail Transfer Agent) on RHEL. This guide covers conf
 
 ```bash
 # Postfix is typically installed by default, but verify
+
 sudo dnf install -y postfix
 
 # Enable and start Postfix

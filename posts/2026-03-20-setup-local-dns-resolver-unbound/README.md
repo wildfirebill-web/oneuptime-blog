@@ -14,6 +14,7 @@ Unbound is a high-performance validating, recursive DNS resolver. Running Unboun
 
 ```bash
 # Ubuntu/Debian:
+
 apt-get install unbound -y
 
 # CentOS/RHEL:
@@ -156,4 +157,4 @@ unbound-control verbosity 1
 
 ## Conclusion
 
-Unbound provides a private, fast, DNSSEC-validating DNS resolver. Install it, point it at root hints, initialize the DNSSEC trust anchor, and configure systemd-resolved to forward to it. Add local zones for internal hostnames. Monitor with `unbound-control stats` to see cache hit rates — high cache hits mean lower latency for repeated queries. For privacy, Unbound with root resolution eliminates the need to trust a third-party recursive resolver with your DNS query history.
+Unbound provides a private, fast, DNSSEC-validating DNS resolver. Install it, point it at root hints, initialize the DNSSEC trust anchor, and configure systemd-resolved to forward to it. Add local zones for internal hostnames. Monitor with `unbound-control stats` to see cache hit rates - high cache hits mean lower latency for repeated queries. For privacy, Unbound with root resolution eliminates the need to trust a third-party recursive resolver with your DNS query history.

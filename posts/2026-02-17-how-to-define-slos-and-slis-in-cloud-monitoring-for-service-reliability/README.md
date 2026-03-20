@@ -30,6 +30,7 @@ Before creating SLOs, you need a service defined in Cloud Monitoring. Cloud Moni
 
 ```bash
 # List auto-detected services
+
 gcloud monitoring services list --project=my-project
 
 # Create a custom service if yours is not auto-detected

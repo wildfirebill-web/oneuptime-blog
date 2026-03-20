@@ -20,6 +20,7 @@ Podman tracks several types of image events:
 
 ```bash
 # Image event types:
+
 # pull    - Image was pulled from a registry
 # push    - Image was pushed to a registry
 # save    - Image was saved to a file

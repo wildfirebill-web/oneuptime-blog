@@ -17,7 +17,7 @@ Top-of-Rack switches are the first-hop network devices for servers. They must be
 
 Configure the ToR switch uplink and downlink interfaces with IPv6:
 
-```
+```text
 # Arista EOS - ToR switch configuration
 
 ! Uplink to Spine 1
@@ -44,8 +44,9 @@ interface Vlan100
 
 Configure Router Advertisements (RA) on server-facing VLAN interfaces to enable SLAAC:
 
-```
+```text
 # Cisco Nexus - RA configuration for server VLAN
+
 interface Vlan100
   ipv6 address 2001:db8:rack1::/64 eui-64
   ipv6 nd ra-interval 30
@@ -60,7 +61,7 @@ interface Ethernet1/1
 
 Peer with spine switches using BGP to advertise rack prefixes:
 
-```
+```text
 # Arista EOS BGP configuration
 router bgp 65100
    router-id 10.0.1.1
@@ -81,7 +82,7 @@ router bgp 65100
 
 Enable RA Guard on server-facing ports to prevent rogue RA attacks:
 
-```
+```text
 # Cisco Nexus - RA Guard on server ports
 ipv6 nd raguard policy SERVER-PORTS
   device-role host
@@ -111,7 +112,7 @@ show ipv6 nd interface Vlan100
 
 Enable MLD snooping on server VLANs to prevent unnecessary multicast flooding (IPv6 uses multicast for NDP):
 
-```
+```text
 # Enable MLD snooping on server VLANs
 vlan 100
   ipv6 mld snooping

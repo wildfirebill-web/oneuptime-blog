@@ -14,6 +14,7 @@ RabbitMQ is a widely-used open-source message broker that implements AMQP (Advan
 
 ```bash
 # Install Erlang from the RabbitMQ Erlang repository
+
 cat << 'REPO' | sudo tee /etc/yum.repos.d/rabbitmq-erlang.repo
 [rabbitmq-erlang]
 name=rabbitmq-erlang

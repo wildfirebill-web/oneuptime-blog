@@ -48,6 +48,7 @@ Before configuring IPv6 DNS, ensure your cluster supports it:
 
 ```bash
 # Check if your cluster is running dual-stack
+
 kubectl get nodes -o jsonpath='{.items[*].status.addresses}' | jq .
 
 # Verify CoreDNS is running
@@ -605,7 +606,7 @@ data:
 
 ## CoreDNS Performance Tuning for IPv6
 
-### Resource Configuration
+Resource Configuration
 
 ```yaml
 # coredns-deployment.yaml

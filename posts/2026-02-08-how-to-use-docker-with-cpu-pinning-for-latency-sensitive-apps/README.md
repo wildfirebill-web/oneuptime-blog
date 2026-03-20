@@ -32,6 +32,7 @@ Docker provides the `--cpuset-cpus` flag to restrict which CPU cores a container
 
 ```bash
 # Pin a container to cores 0 and 1
+
 docker run -d --cpuset-cpus="0,1" --name latency-app myapp:latest
 
 # Pin to a range of cores

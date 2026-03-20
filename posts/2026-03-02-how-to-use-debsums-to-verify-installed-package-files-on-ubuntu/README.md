@@ -21,6 +21,7 @@ sudo apt install debsums
 
 ```bash
 # Verify all installed packages
+
 sudo debsums
 
 # Verify a specific package
