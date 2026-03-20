@@ -4,240 +4,175 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Varnish, Caching, Docker, Web Performance
 
-Description: Deploy Varnish Cache as an HTTP accelerator using Portainer to dramatically improve web application performance.
+Description: Deploy Varnish Cache as an HTTP accelerator using Portainer to dramatically improve web application performance through edge caching.
 
 ## Introduction
 
-Deploy Varnish Cache as an HTTP accelerator using Portainer to dramatically improve web application performance. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Varnish Cache is a high-performance HTTP reverse proxy cache. It sits in front of web servers and caches responses, dramatically reducing backend load and improving response times. Varnish is configured via VCL (Varnish Configuration Language) for fine-grained cache rules.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- A backend web server or application to cache
 
-## Step 1: Create the Stack in Portainer
+## Step 1: Create VCL Configuration
 
-Navigate to **Stacks** > **Add Stack** and use the following configuration:
+Create the Varnish configuration on the host:
+
+```bash
+mkdir -p /opt/varnish/conf
+cat > /opt/varnish/conf/default.vcl << 'EOF'
+vcl 4.1;
+
+import std;
+
+# Backend — your application server
+backend default {
+    .host = "myapp";    # Docker service name on the same network
+    .port = "8080";
+    .probe = {
+        .url = "/health";
+        .interval = 10s;
+        .timeout = 5s;
+        .window = 3;
+        .threshold = 2;
+    }
+}
+
+sub vcl_recv {
+    # Remove tracking query strings
+    set req.url = regsuball(req.url, "utm_[a-z]+=[-_A-Za-z0-9]+&?", "");
+    set req.url = regsuball(req.url, "[?&]$", "");
+
+    # Do not cache POST/PUT/DELETE requests
+    if (req.method != "GET" && req.method != "HEAD") {
+        return(pass);
+    }
+
+    # Do not cache requests with Authorization header
+    if (req.http.Authorization) {
+        return(pass);
+    }
+
+    # Do not cache cookies from admin paths
+    if (req.url ~ "^/admin") {
+        return(pass);
+    }
+
+    return(hash);
+}
+
+sub vcl_backend_response {
+    # Cache successful responses for 5 minutes
+    if (beresp.status == 200) {
+        set beresp.ttl = 5m;
+        set beresp.grace = 1h;   # Serve stale for 1h while fetching fresh
+        unset beresp.http.Set-Cookie;
+    }
+
+    # Cache 404s briefly to reduce backend hits
+    if (beresp.status == 404) {
+        set beresp.ttl = 60s;
+    }
+}
+
+sub vcl_deliver {
+    # Add cache status header for debugging
+    if (obj.hits > 0) {
+        set resp.http.X-Cache = "HIT";
+        set resp.http.X-Cache-Hits = obj.hits;
+    } else {
+        set resp.http.X-Cache = "MISS";
+    }
+}
+EOF
+```
+
+## Step 2: Create the Stack in Portainer
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Varnish Cache
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  varnish:
+    image: varnish:7.4-alpine
+    container_name: varnish
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
+      - "80:80"        # Public HTTP (cached)
+      - "6082:6082"    # Varnish CLI management port
     volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
+      - /opt/varnish/conf/default.vcl:/etc/varnish/default.vcl:ro
+    command: >
+      varnishd
+      -F
+      -f /etc/varnish/default.vcl
+      -s malloc,512m
+      -a 0.0.0.0:80,HTTP
+      -T 0.0.0.0:6082
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "varnishstat", "-1", "-f", "MAIN.uptime"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - service-net
+      - web_net
 
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
+  myapp:
+    image: myapp:latest
+    container_name: myapp
+    restart: unless-stopped
     networks:
-      - service-net
-
-volumes:
-  service-data:
+      - web_net
 
 networks:
-  service-net:
+  web_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
-
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 3: Test Cache Behavior
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# First request — should be a MISS
+curl -I http://localhost/
 
-# Test connection to service
-curl http://service:port/health
+# Second request — should be a HIT
+curl -I http://localhost/
+# Look for: X-Cache: HIT
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
+# Purge a cached URL
+curl -X PURGE http://localhost/some/page
 
-# View service logs
-docker logs service --tail 50 -f
+# Check cache statistics
+docker exec varnish varnishstat -1 -f MAIN.cache_hit,MAIN.cache_miss,MAIN.uptime
 ```
 
-## Step 4: Production Configuration
-
-For production deployments, enhance security and reliability:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
+## Step 4: Reload VCL Without Restart
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# Load a new VCL while Varnish is running
+docker exec varnish varnishadm -T localhost:6082 vcl.load new_config /etc/varnish/default.vcl
+docker exec varnish varnishadm -T localhost:6082 vcl.use new_config
 
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
+# Check which VCL is active
+docker exec varnish varnishadm -T localhost:6082 vcl.list
 ```
 
-## Step 7: Scale and High Availability
+## Step 5: Monitor Cache Hit Rate
 
-For high availability, use multiple instances:
+```bash
+# Live statistics
+docker exec varnish varnishstat -f MAIN.cache_hit,MAIN.cache_miss
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-```
+# Calculate hit ratio
+docker exec varnish varnishstat -1 -f MAIN.cache_hit,MAIN.cache_miss | \
+  awk 'BEGIN{hits=0;miss=0} /cache_hit/{hits=$1} /cache_miss/{miss=$1} END{print "Hit rate:", hits/(hits+miss)*100"%"}'
 
-## Client Application Integration
-
-Example integration code:
-
-```python
-# Python client example
-import service_client
-
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
-
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+# Watch access log with cache status
+docker exec varnish varnishlog -g request -q "ReqMethod eq GET" -i ReqURL,VCL_call
 ```
 
 ## Conclusion
 
-Deploying Varnish Cache via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+Varnish Cache is extremely fast (serves from memory at microsecond speeds) and highly configurable via VCL. The `grace` period allows Varnish to serve stale content while fetching fresh data, eliminating thundering herd problems on cache expiry. Always include `X-Cache` headers in `vcl_deliver` to debug cache behavior from the client side. For static assets, set long TTLs (hours or days) and use versioned URLs for cache busting.

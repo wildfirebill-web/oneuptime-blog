@@ -4,179 +4,124 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, PocketBase, Backend as a Service, Docker, Self-Hosted
 
-Description: Deploy PocketBase as a single-file backend platform using Portainer for quick application development.
+Description: Deploy PocketBase open-source backend using Portainer as a single-file BaaS with built-in authentication, realtime subscriptions, and file storage.
 
 ## Introduction
 
-Deploy PocketBase as a single-file backend platform using Portainer for quick application development. Portainer's stack management capabilities make deploying and managing PocketBase straightforward for development and production environments.
+PocketBase is an open-source backend that packages a SQLite database, admin UI, REST API, real-time subscriptions, authentication, and file storage into a single Go binary. It runs as a single container with no external database dependencies.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Create the Stack in Portainer
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - PocketBase
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:0.22.14
     container_name: pocketbase
-    restart: always
+    restart: unless-stopped
     ports:
-      - "7700:7700"
+      - "8090:8090"
     volumes:
-      - app-data:/data
-    environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
+      - pocketbase_data:/pb/pb_data
+      - pocketbase_public:/pb/pb_public
+      - pocketbase_migrations:/pb/pb_migrations
+    command:
+      - --http=0.0.0.0:8090
+      - --dir=/pb/pb_data
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      test: ["CMD", "wget", "--quiet", "--output-document=-", "http://localhost:8090/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - app-net
-
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    networks:
-      - app-net
+      - pocketbase_net
 
 volumes:
-  app-data:
-  postgres-data:
+  pocketbase_data:
+  pocketbase_public:
+  pocketbase_migrations:
 
 networks:
-  app-net:
+  pocketbase_net:
     driver: bridge
 ```
 
-## Step 2: Configure Environment Variables
+## Step 2: Set Up the Admin Account
 
-Set the required environment variables in Portainer's stack editor:
+Open `http://<host>:8090/_/` to access the Admin UI. On first visit, create your admin account.
 
-```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
-```
+## Step 3: Create a Collection
 
-## Step 3: Initialize the Application
+In the Admin UI:
+1. Click **New collection**
+2. Name it (e.g., `posts`)
+3. Add fields: `title` (text), `content` (editor), `published` (bool)
+4. Configure auth rules
 
-After deployment, complete initial setup:
-
-```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
-
-# Check application health
-curl http://localhost:7700/health
-
-# View startup logs
-docker logs pocketbase --tail 50
-```
-
-## Step 4: Configure and Test
-
-Test the application functionality:
+## Step 4: Use the REST API
 
 ```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
+# List records
+curl http://localhost:8090/api/collections/posts/records \
+  -H 'Authorization: <user-auth-token>'
 
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
+# Create a record
+curl -X POST http://localhost:8090/api/collections/posts/records \
+  -H 'Authorization: <user-auth-token>' \
+  -H 'Content-Type: application/json' \
+  -d '{"title": "Hello World", "content": "My first post", "published": true}'
 
-# Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
+# Authenticate a user
+curl -X POST http://localhost:8090/api/collections/users/auth-with-password \
+  -H 'Content-Type: application/json' \
+  -d '{"identity": "user@example.com", "password": "your-password"}'
 ```
 
-## Step 5: Set Up Reverse Proxy
+## Step 5: JavaScript SDK Integration
 
-Expose the service securely via Nginx or Traefik:
+```javascript
+// npm install pocketbase
+import PocketBase from 'pocketbase';
 
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
+const pb = new PocketBase('http://localhost:8090');
+
+// Authenticate
+const authData = await pb.collection('users').authWithPassword(
+    'user@example.com', 'your-password'
+);
+
+// List records with pagination
+const posts = await pb.collection('posts').getList(1, 20, {
+    filter: 'published = true',
+    sort: '-created',
+});
+
+// Subscribe to real-time updates
+pb.collection('posts').subscribe('*', (e) => {
+    console.log(e.action, e.record);
+});
 ```
 
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Backups
-
-Automate data backups:
+## Step 6: Backup PocketBase Data
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/pocketbase"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# PocketBase has a built-in backup endpoint
+curl -X POST http://localhost:8090/api/backups \
+  -H 'Authorization: Admin <admin-token>'
 
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
+# Or copy the SQLite database file directly
+docker exec pocketbase ls /pb/pb_data/
+docker cp pocketbase:/pb/pb_data/data.db ./pocketbase_backup.db
 ```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
 
 ## Conclusion
 
-Deploying PocketBase via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+PocketBase's SQLite-backed design means zero external database dependencies — the entire application state lives in a single directory. The `pb_data` volume contains `data.db` (the SQLite database) and uploaded files. For production, mount `pb_data` on fast storage (SSD) and back up the directory regularly. PocketBase also supports JS/Go hooks for custom server-side logic via the `pb_hooks` directory.

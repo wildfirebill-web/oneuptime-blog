@@ -69,7 +69,7 @@ GRANT REPLICATION SLAVE ON *.* TO 'repl'@'192.168.1.11';
 FLUSH PRIVILEGES;
 
 -- Get the binary log position for the replica
-SHOW MASTER STATUS;
+SHOW BINARY LOG STATUS;
 ```
 
 ## Replica Server Configuration
@@ -87,26 +87,26 @@ ssl-key  = /etc/mysql/ssl/client-key.pem
 ```
 
 ```sql
--- Configure the replica to connect to the primary over SSL
-CHANGE MASTER TO
-  MASTER_HOST='192.168.1.10',
-  MASTER_USER='repl',
-  MASTER_PASSWORD='ReplPass123!',
-  MASTER_LOG_FILE='mysql-bin.000001',
-  MASTER_LOG_POS=4,
-  MASTER_SSL=1,
-  MASTER_SSL_CA='/etc/mysql/ssl/ca-cert.pem',
-  MASTER_SSL_CERT='/etc/mysql/ssl/client-cert.pem',
-  MASTER_SSL_KEY='/etc/mysql/ssl/client-key.pem';
+-- Configure the replica to connect to the primary over SSL (MySQL 8.0.23+)
+CHANGE REPLICATION SOURCE TO
+  SOURCE_HOST='192.168.1.10',
+  SOURCE_USER='repl',
+  SOURCE_PASSWORD='ReplPass123!',
+  SOURCE_LOG_FILE='mysql-bin.000001',
+  SOURCE_LOG_POS=4,
+  SOURCE_SSL=1,
+  SOURCE_SSL_CA='/etc/mysql/ssl/ca-cert.pem',
+  SOURCE_SSL_CERT='/etc/mysql/ssl/client-cert.pem',
+  SOURCE_SSL_KEY='/etc/mysql/ssl/client-key.pem';
 
-START SLAVE;
+START REPLICA;
 ```
 
 ## Verifying Encrypted Replication
 
 ```sql
--- Check replica status; look for Slave_IO_Running: Yes and SSL-related fields
-SHOW SLAVE STATUS\G
+-- Check replica status; look for Replica_IO_Running: Yes and SSL-related fields
+SHOW REPLICA STATUS\G
 
 -- On the primary: verify the replication thread uses SSL
 SELECT user, host, ssl_type FROM mysql.user WHERE user='repl';
@@ -117,5 +117,5 @@ SELECT user, host, ssl_type FROM mysql.user WHERE user='repl';
 
 - `REQUIRE SSL` in the `CREATE USER` statement enforces TLS for the replication connection.
 - Set `ssl-ca`, `ssl-cert`, and `ssl-key` on both primary and replica with matching CA.
-- Use `CHANGE MASTER TO ... MASTER_SSL=1` and provide the client certificate paths on the replica.
-- Verify with `SHOW SLAVE STATUS\G` and check `Master_SSL_Allowed: Yes`.
+- Use `CHANGE REPLICATION SOURCE TO ... SOURCE_SSL=1` and provide the client certificate paths on the replica.
+- Verify with `SHOW REPLICA STATUS\G` and check `Source_SSL_Allowed: Yes`.

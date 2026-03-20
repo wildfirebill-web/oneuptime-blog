@@ -118,14 +118,20 @@ docker run --rm \
 
 ```hcl
 # main.tf - Enforce the exact version required
+# Choose ONE of the following required_version expressions:
+
+# Require exactly version 1.8.5
 terraform {
-  # Require exactly version 1.8.5
   required_version = "= 1.8.5"
+}
 
-  # Or require a minimum version with patch flexibility
+# Or require a minimum version with patch flexibility
+terraform {
   required_version = "~> 1.8.0"
+}
 
-  # Or require within a range
+# Or require within a range
+terraform {
   required_version = ">= 1.8.0, < 1.9.0"
 }
 ```

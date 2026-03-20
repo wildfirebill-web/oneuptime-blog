@@ -4,271 +4,124 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Restic, Backup, Docker, Self-Hosted
 
-Description: Deploy Restic backup tool with REST server backend using Portainer for fast, encrypted, deduplicated backups.
+Description: Deploy Restic backup client with REST Server backend using Portainer for fast, encrypted, deduplicated backups.
 
 ## Introduction
 
-Deploy Restic backup tool with REST server backend using Portainer for fast, encrypted, deduplicated backups. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Restic is a fast, secure backup program. It supports multiple backends (S3, SFTP, REST, local) and provides content-addressed, deduplicated, encrypted backups. This guide deploys the Restic REST Server as a backup destination and runs Restic as a backup client container.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Restic + REST Server
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  rest-server:
+    image: restic/rest-server:0.13.0
+    container_name: restic_rest_server
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8000:8000"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - restic_repos:/data
+      - ./htpasswd:/etc/rest-server/.htpasswd:ro
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
+      - OPTIONS=--private-repos
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      test: ["CMD", "wget", "--quiet", "--output-document=-", "http://localhost:8000/"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - restic_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
+  restic-client:
+    image: restic/restic:0.16.4
+    container_name: restic_client
+    restart: unless-stopped
+    volumes:
+      - /var/lib/docker/volumes:/source:ro    # Source data to back up
+      - restic_cache:/root/.cache/restic
     environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      - RESTIC_REPOSITORY=rest:http://restic:${RESTIC_PASSWORD}@rest-server:8000/backups
+      - RESTIC_PASSWORD=${RESTIC_REPO_PASSWORD}
+    entrypoint: /bin/sh -c "restic snapshots || restic init; while true; do restic backup /source --tag docker-volumes; restic forget --keep-daily 7 --keep-weekly 4 --prune; sleep 86400; done"
+    depends_on:
+      - rest-server
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - restic_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  restic_repos:
+  restic_cache:
 
 networks:
-  app-net:
+  restic_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
-
-Set these environment variables in Portainer's stack editor:
+## Step 2: Create the htpasswd File
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+# Create credentials for the REST Server
+mkdir -p /opt/restic
+docker run --rm httpd:alpine htpasswd -Bbn restic your-restic-password > /opt/restic/htpasswd
 ```
 
-## Step 4: Initialize the Application
+## Step 3: Set Environment Variables in Portainer
 
-After deployment, run the initial setup:
+```
+RESTIC_PASSWORD=your-restic-password        # REST Server HTTP auth password
+RESTIC_REPO_PASSWORD=your-repo-encryption-password  # Restic repo encryption key
+```
+
+## Step 4: Initialize and Run Backups Manually
 
 ```bash
-# Access via Portainer container console
+# Initialize the repository
+docker exec restic_client restic init
 
-# Run database migrations
-docker exec app ./manage.py migrate
+# Run a backup
+docker exec restic_client restic backup /source --tag docker-volumes
 
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
+# List snapshots
+docker exec restic_client restic snapshots
 
-# Verify deployment
-curl http://localhost:8080/api/health
+# Check repository integrity
+docker exec restic_client restic check
 ```
 
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
+## Step 5: Restore from a Snapshot
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
+# List files in the latest snapshot
+docker exec restic_client restic ls latest
 
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
+# Restore the latest snapshot to /tmp/restore
+docker exec restic_client restic restore latest --target /tmp/restore
 
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
+# Restore a specific path
+docker exec restic_client restic restore latest \
+  --include /source/myapp_data \
+  --target /tmp/restore
 ```
 
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
+## Step 6: Prune Old Snapshots
 
 ```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# Keep 7 daily, 4 weekly, 6 monthly snapshots and remove the rest
+docker exec restic_client restic forget \
+  --keep-daily 7 --keep-weekly 4 --keep-monthly 6 \
+  --prune
 ```
 
 ## Conclusion
 
-Deploying Restic with REST Server via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Restic encrypts all data before sending it to the backend using AES-256-CTR with Poly1305-AES authentication. The `RESTIC_PASSWORD` unlocks the repository encryption; if lost, data is unrecoverable. The REST Server's `--private-repos` flag ensures each user (`/user/repo/path`) can only access their own repositories. For automated backups, replace the sleep loop with a cron-based container like `restic-cron` or a Kubernetes CronJob.

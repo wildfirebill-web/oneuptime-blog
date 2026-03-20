@@ -110,9 +110,9 @@ services:
     image: containrrr/watchtower:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /root/.docker/config.json:/config.json:ro    # Mount Docker credentials
+      - /root/.docker/config.json:/root/.docker/config.json:ro    # Mount Docker credentials
     environment:
-      DOCKER_CONFIG: "/config.json"    # Tell Watchtower where credentials are
+      DOCKER_CONFIG: "/root/.docker"    # Tell Watchtower where credentials are
 ```
 
 ## Step 5: Protect Portainer from Auto-Updates

@@ -60,8 +60,8 @@ resource "aws_nat_gateway" "main" {
     Name = "nat-gateway-${var.availability_zones[count.index]}"
   }
 
-  depends_on = [var.internet_gateway_id]
 }
+# Note: Add depends_on = [aws_internet_gateway.main] if the IGW is defined in the same module.
 ```
 
 ## Step 4: Create Private Route Tables

@@ -71,6 +71,7 @@ For environments where only IPv6 is needed:
 package main
 
 import (
+    "fmt"
     "net"
     "google.golang.org/grpc"
 )
@@ -197,6 +198,7 @@ func main() {
 package main
 
 import (
+    "fmt"
     "net"
     "google.golang.org/grpc"
     "google.golang.org/grpc/health"

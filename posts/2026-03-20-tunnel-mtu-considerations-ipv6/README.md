@@ -68,8 +68,8 @@ ip link show sit1
 
 # Test reachability and effective MTU using ping with a large packet
 # -M do: do not fragment, -s: payload size
-# 1452 = 1480 (MTU) - 28 (IPv6 + ICMPv6 header)
-ping6 -M do -s 1452 2001:db8:1::2
+# 1432 = 1480 (MTU) - 40 (IPv6 header) - 8 (ICMPv6 header)
+ping6 -M do -s 1432 2001:db8:1::2
 
 # Use tracepath6 to detect MTU bottlenecks along the path
 tracepath6 2001:db8:1::2

@@ -94,13 +94,13 @@ tcpdump -i eth0 -n \
 # Show routing table for VTEP endpoint
 ip -6 route get 2001:db8:2::1
 
-# Check MTU — VXLAN adds 50 bytes overhead over IPv6
+# Check MTU — VXLAN adds 56 bytes overhead over IPv6
 ip link show eth0 | grep mtu
 ```
 
 ## MTU Configuration
 
-VXLAN over IPv6 adds 50 bytes: 40 (IPv6) + 8 (UDP) + 8 (VXLAN) = 56 bytes:
+VXLAN over IPv6 adds 56 bytes of tunnel overhead: 40 (IPv6) + 8 (UDP) + 8 (VXLAN):
 
 ```bash
 # If physical MTU is 1500, set VXLAN interface MTU to 1444

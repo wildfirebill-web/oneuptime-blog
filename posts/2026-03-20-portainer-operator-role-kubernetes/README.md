@@ -56,9 +56,9 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoints/5/teamaccesspolicies \
   -d '{
-    "3": {"RoleId": 3}
+    "3": {"RoleId": 2}
   }'
-# RoleId 3 = Operator role
+# RoleId 2 = Operator role
 ```
 
 ## Namespace Access for Operators
@@ -90,7 +90,7 @@ curl -X PUT \
   -d "{
     \"teamAccessPolicies\": {
       \"${TEAM_ID}\": {
-        \"RoleId\": 3
+        \"RoleId\": 2
       }
     }
   }"

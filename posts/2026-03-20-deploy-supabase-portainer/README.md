@@ -4,179 +4,116 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Supabase, PostgreSQL, Docker, Backend as a Service
 
-Description: Deploy Supabase open-source Firebase alternative using Portainer for real-time databases and authentication.
+Description: Deploy Supabase open-source Firebase alternative using Portainer for a self-hosted backend with PostgreSQL, authentication, and real-time APIs.
 
 ## Introduction
 
-Deploy Supabase open-source Firebase alternative using Portainer for real-time databases and authentication. Portainer's stack management capabilities make deploying and managing Supabase straightforward for development and production environments.
+Supabase is an open-source Firebase alternative that provides a PostgreSQL database, authentication, instant REST and GraphQL APIs, real-time subscriptions, edge functions, and file storage. This guide deploys Supabase self-hosted using the official Docker Compose configuration.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
+- At least 2 GB RAM
+- A domain name for the `SITE_URL` and JWT configuration
 
-## Step 1: Deploy via Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
-
-```yaml
-# docker-compose.yml
-version: "3.8"
-
-services:
-  app:
-    image: app-image:latest
-    container_name: supabase
-    restart: always
-    ports:
-      - "7700:7700"
-    volumes:
-      - app-data:/data
-    environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
-    networks:
-      - app-net
-
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    networks:
-      - app-net
-
-volumes:
-  app-data:
-  postgres-data:
-
-networks:
-  app-net:
-    driver: bridge
-```
-
-## Step 2: Configure Environment Variables
-
-Set the required environment variables in Portainer's stack editor:
+## Step 1: Clone the Supabase Self-Hosted Repository
 
 ```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
+# Clone the official self-hosted compose files
+git clone --depth 1 https://github.com/supabase/supabase
+cd supabase/docker
+
+# Copy the example env file
+cp .env.example .env
 ```
 
-## Step 3: Initialize the Application
-
-After deployment, complete initial setup:
+## Step 2: Generate Required Secrets
 
 ```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
+# Generate JWT secret
+openssl rand -base64 32
 
-# Check application health
-curl http://localhost:7700/health
-
-# View startup logs
-docker logs supabase --tail 50
+# Generate ANON_KEY and SERVICE_ROLE_KEY (JWTs signed with the JWT_SECRET)
+# Use the Supabase JWT generator: https://supabase.com/docs/guides/self-hosting/docker#generate-api-keys
 ```
 
-## Step 4: Configure and Test
+## Step 3: Configure Environment Variables
 
-Test the application functionality:
+Edit `.env` with your values:
 
 ```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
+# Site URL
+SITE_URL=http://your-domain.com
+ADDITIONAL_REDIRECT_URLS=
 
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
+# API
+API_EXTERNAL_URL=http://your-domain.com
 
-# Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
+# JWT - generate with the Supabase JWT tool
+JWT_SECRET=your-super-secret-jwt-token-with-at-least-32-characters-long
+ANON_KEY=your-generated-anon-key
+SERVICE_ROLE_KEY=your-generated-service-role-key
+
+# Database
+POSTGRES_PASSWORD=your-super-secret-postgres-password
+
+# Dashboard
+DASHBOARD_USERNAME=supabase
+DASHBOARD_PASSWORD=your-dashboard-password
+
+# SMTP
+SMTP_ADMIN_EMAIL=admin@your-domain.com
+SMTP_HOST=smtp.your-domain.com
+SMTP_PORT=587
+SMTP_USER=your-smtp-user
+SMTP_PASS=your-smtp-password
+SMTP_SENDER_NAME=Supabase
 ```
 
-## Step 5: Set Up Reverse Proxy
+## Step 4: Deploy via Portainer
 
-Expose the service securely via Nginx or Traefik:
+In Portainer, navigate to **Stacks** > **Add Stack** > **Upload**, and upload the `docker-compose.yml` from the `supabase/docker` directory, along with the volumes directory.
 
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
+Alternatively, deploy from the Git repository:
+1. Select **Repository** as the build method
+2. Enter `https://github.com/supabase/supabase`
+3. Set the compose file path to `docker/docker-compose.yml`
+
+## Step 5: Access the Supabase Studio
+
+Open `http://<host>:3000` and log in with your `DASHBOARD_USERNAME` and `DASHBOARD_PASSWORD`.
+
+## Step 6: Use the Supabase Client SDK
+
+```javascript
+// npm install @supabase/supabase-js
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  'http://your-domain.com',
+  'your-anon-key'
+)
+
+// Query data
+const { data, error } = await supabase
+  .from('users')
+  .select('*')
+  .limit(10)
+
+// Insert a row
+const { data: newUser, error: insertError } = await supabase
+  .from('users')
+  .insert({ name: 'Alice', email: 'alice@example.com' })
+  .select()
+  .single()
+
+// Authenticate
+const { data: session, error: authError } = await supabase.auth.signInWithPassword({
+  email: 'user@example.com',
+  password: 'password'
+})
 ```
-
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Backups
-
-Automate data backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/supabase"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
-```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
 
 ## Conclusion
 
-Deploying Supabase via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+Supabase self-hosted deploys ~15 containers (Kong API gateway, PostgREST, GoTrue auth, Realtime, Storage, Analytics, PostgreSQL). The `ANON_KEY` is safe for client-side use and respects Row Level Security (RLS) policies. The `SERVICE_ROLE_KEY` bypasses RLS — keep it server-side only. Always enable RLS on tables before exposing them via the `ANON_KEY`.

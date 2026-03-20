@@ -8,7 +8,7 @@ Description: A guide to using lifecycle customizations with data sources in Open
 
 ## Introduction
 
-Data sources in OpenTofu support lifecycle customizations including preconditions, postconditions, and the `ignore_changes` argument. These allow you to validate assumptions about fetched data and control when data sources are refreshed.
+Data sources in OpenTofu support lifecycle customizations including preconditions and postconditions. These allow you to validate assumptions about fetched data. Note that `ignore_changes` and `prevent_destroy` are not supported on data sources — only `precondition` and `postcondition` lifecycle blocks are available.
 
 ## Preconditions on Data Sources
 

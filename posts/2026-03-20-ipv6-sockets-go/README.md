@@ -222,12 +222,12 @@ package main
 import (
     "fmt"
     "net"
-    "syscall"
+    "time"
 )
 
 func connectLinkLocal(addr, iface, port string) (net.Conn, error) {
-    // Get the interface index for scope ID
-    ifi, err := net.InterfaceByName(iface)
+    // Verify the interface exists
+    _, err := net.InterfaceByName(iface)
     if err != nil {
         return nil, fmt.Errorf("interface %s not found: %w", iface, err)
     }

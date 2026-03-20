@@ -4,271 +4,143 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, PostgREST, PostgreSQL, REST API, Docker
 
-Description: Deploy PostgREST using Portainer to instantly generate a RESTful API from your PostgreSQL database schema.
+Description: Deploy PostgREST using Portainer to auto-generate a RESTful API directly from your PostgreSQL database schema.
 
 ## Introduction
 
-Deploy PostgREST using Portainer to instantly generate a RESTful API from your PostgreSQL database schema. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+PostgREST is a standalone web server that turns your PostgreSQL database directly into a RESTful API. It uses PostgreSQL's role system for authentication and authorization, meaning all API business logic lives in the database.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- A PostgreSQL database (can be deployed in the same stack)
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - PostgREST
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  postgrest:
+    image: postgrest/postgrest:v12.0.2
+    container_name: postgrest
+    restart: unless-stopped
     ports:
-      - "8080:8080"
-    volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - "3000:3000"
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - PGRST_DB_URI=postgres://authenticator:${AUTHENTICATOR_PASSWORD}@postgres:5432/app_db
+      - PGRST_DB_SCHEMAS=api
+      - PGRST_DB_ANON_ROLE=anon
+      - PGRST_JWT_SECRET=${JWT_SECRET}
+      - PGRST_DB_POOL=10
     depends_on:
       postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - postgrest_net
 
   postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    image: postgres:16-alpine
+    container_name: postgrest_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    environment:
+      - POSTGRES_DB=app_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - postgrest_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  postgres_data:
 
 networks:
-  app-net:
+  postgrest_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Initialize the Database Schema
 
-Set these environment variables in Portainer's stack editor:
+Create `init.sql` on the host before deploying:
+
+```sql
+-- Create the API schema
+CREATE SCHEMA api;
+
+-- Create roles
+CREATE ROLE anon NOLOGIN;
+CREATE ROLE authenticated NOLOGIN;
+CREATE ROLE authenticator NOINHERIT LOGIN PASSWORD 'authenticator-password';
+
+GRANT anon TO authenticator;
+GRANT authenticated TO authenticator;
+
+-- Create a table in the api schema
+CREATE TABLE api.todos (
+    id SERIAL PRIMARY KEY,
+    task TEXT NOT NULL,
+    done BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Grant permissions
+GRANT USAGE ON SCHEMA api TO anon, authenticated;
+GRANT SELECT ON api.todos TO anon;
+GRANT ALL ON api.todos TO authenticated;
+GRANT USAGE, SELECT ON SEQUENCE api.todos_id_seq TO authenticated;
+```
+
+## Step 3: Set Environment Variables in Portainer
+
+```
+AUTHENTICATOR_PASSWORD=authenticator-password
+POSTGRES_PASSWORD=your-postgres-password
+JWT_SECRET=your-jwt-secret-min-32-chars
+```
+
+## Step 4: Query the API
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+# Read todos (as anonymous user)
+curl http://localhost:3000/todos
+
+# Filter with query parameters
+curl "http://localhost:3000/todos?done=eq.false&order=created_at.desc"
+
+# Create a todo (requires JWT)
+JWT_TOKEN=$(echo -n '{"role":"authenticated"}' | \
+  python3 -c "import sys,jwt; print(jwt.encode(eval(sys.stdin.read()), 'your-jwt-secret', algorithm='HS256'))")
+
+curl -X POST http://localhost:3000/todos \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"task": "Deploy PostgREST", "done": false}'
+
+# Update
+curl -X PATCH "http://localhost:3000/todos?id=eq.1" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"done": true}'
 ```
 
-## Step 4: Initialize the Application
+## Step 5: Use OpenAPI Documentation
 
-After deployment, run the initial setup:
+PostgREST auto-generates OpenAPI spec:
 
 ```bash
-# Access via Portainer container console
-
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+curl http://localhost:3000/ | python3 -m json.tool | head -50
 ```
 
 ## Conclusion
 
-Deploying PostgREST via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+PostgREST maps your PostgreSQL schema directly to HTTP endpoints — no application code needed. The `PGRST_DB_SCHEMAS` variable controls which schemas are exposed. All authorization is handled via PostgreSQL roles and Row Level Security (RLS) policies. JWT claims (like `role`) are passed to PostgreSQL as `request.jwt.claims`, enabling per-user row-level access control.

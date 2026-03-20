@@ -57,7 +57,7 @@ services:
     command: >
       bash -c "
         sleep 10 &&
-        mongo rocketchat-db/rocketchat --eval 'rs.initiate({_id: \"rs0\", members: [{_id: 0, host: \"rocketchat-db:27017\"}]})'
+        mongosh rocketchat-db/rocketchat --eval 'rs.initiate({_id: \"rs0\", members: [{_id: 0, host: \"rocketchat-db:27017\"}]})'
       "
     depends_on:
       - rocketchat-db

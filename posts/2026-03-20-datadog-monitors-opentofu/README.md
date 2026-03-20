@@ -8,150 +8,145 @@ Description: Learn how to create Datadog metric, log, and APM monitors with noti
 
 ## Introduction
 
-This guide covers How to Create Monitors with OpenTofu on Datadog using OpenTofu with practical examples and production-ready configurations.
+Datadog monitors are alerting rules that notify your team when metrics cross thresholds or anomalies are detected. Managing monitors as code with OpenTofu ensures consistent alerting configurations across environments and enables peer review for alerting changes.
 
 ## Prerequisites
 
 - OpenTofu v1.6+
-- API credentials for the relevant service
-- Basic understanding of OpenTofu concepts
+- Datadog API key and Application key
+- The `DataDog/datadog` OpenTofu provider
 
-## Step 1: Install and Configure the Provider
+## Provider Configuration
 
 ```hcl
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
-    # Provider configuration depends on the specific service
-    # Replace with the actual provider source and version
-    example = {
-      source  = "hashicorp/example"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
 }
 
-# Configure the provider with credentials
-provider "example" {
-  # Use environment variables for credentials
-  # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.
-  
-  # Or specify directly (not recommended for secrets)
-  # api_key = var.api_key
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
 }
 ```
 
-## Step 2: Set Up Authentication
+## Metric Alert Monitor
+
+```hcl
+# monitors.tf
+
+# High CPU usage monitor
+resource "datadog_monitor" "cpu_high" {
+  name    = "[${var.environment}] High CPU Usage"
+  type    = "metric alert"
+  message = <<-EOT
+    CPU usage on {{host.name}} is above threshold.
+    Current value: {{value}}%
+
+    Notify: @slack-alerts-${var.environment}
+  EOT
+
+  query = "avg(last_5m):avg:system.cpu.user{env:${var.environment}} by {host} > 90"
+
+  monitor_thresholds {
+    critical = 90
+    warning  = 80
+  }
+
+  notify_no_data    = false
+  renotify_interval = 60
+  include_tags      = true
+
+  tags = ["env:${var.environment}", "team:platform", "managed-by:opentofu"]
+}
+```
+
+## APM Latency Monitor
+
+```hcl
+resource "datadog_monitor" "api_latency" {
+  name    = "[${var.environment}] High API Latency (p99 > 1s)"
+  type    = "metric alert"
+  message = "API P99 latency is above 1s for {{service.name}}. @pagerduty-${var.environment}"
+
+  query = "percentile(last_10m):p99:trace.web.request{env:${var.environment}} by {service} > 1"
+
+  monitor_thresholds {
+    critical = 1       # 1 second
+    warning  = 0.5     # 500ms
+  }
+
+  notify_no_data    = true
+  no_data_timeframe = 10
+
+  tags = ["env:${var.environment}", "team:backend", "managed-by:opentofu"]
+}
+```
+
+## Error Rate Monitor
+
+```hcl
+resource "datadog_monitor" "error_rate" {
+  name    = "[${var.environment}] High Error Rate"
+  type    = "metric alert"
+  message = "Error rate is above 1% for {{service.name}}. Notify: @slack-oncall-${var.environment}"
+
+  # Error rate = errors / total requests * 100
+  query = "sum(last_5m):100 * sum:trace.web.request.errors{env:${var.environment}} by {service}.as_rate() / sum:trace.web.request.hits{env:${var.environment}} by {service}.as_rate() > 5"
+
+  monitor_thresholds {
+    critical = 5    # 5% error rate
+    warning  = 1    # 1% error rate
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+```
+
+## Log Error Monitor
+
+```hcl
+resource "datadog_monitor" "log_errors" {
+  name    = "[${var.environment}] Spike in Log Errors"
+  type    = "log alert"
+  message = "High number of error logs detected. Check the logs dashboard."
+
+  query = "logs(\"env:${var.environment} status:error\").index(\"main\").rollup(\"count\").last(\"5m\") > 100"
+
+  monitor_thresholds {
+    critical = 100
+    warning  = 50
+  }
+
+  enable_logs_sample = true  # Include sample logs in the alert
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+```
+
+## Outputs
+
+```hcl
+output "cpu_monitor_id" {
+  value = datadog_monitor.cpu_high.id
+}
+```
+
+## Deploy
 
 ```bash
-# Use environment variables for authentication
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_TOKEN="your-token"
-export PROVIDER_ORG="your-organization"
-```
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
 
-```hcl
-variable "api_key" {
-  description = "API key for authentication"
-  type        = string
-  sensitive   = true
-}
-
-variable "organization" {
-  description = "Organization name or ID"
-  type        = string
-}
-```
-
-## Step 3: Create Basic Resources
-
-```hcl
-# Example resource creation
-# Replace with actual resource types for the provider
-
-resource "example_project" "main" {
-  name        = "${var.environment}-project"
-  description = "Managed by OpenTofu"
-
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
-  }
-}
-
-# Configure access control
-resource "example_team" "developers" {
-  name    = "developers"
-  project = example_project.main.id
-  role    = "contributor"
-}
-```
-
-## Step 4: Configure Advanced Settings
-
-```hcl
-# Monitoring and alerting configuration
-resource "example_alert" "main" {
-  name      = "critical-alert"
-  project   = example_project.main.id
-  severity  = "critical"
-  threshold = 90
-
-  notification {
-    channel = var.notification_channel
-  }
-}
-
-# Backup and retention policies
-resource "example_backup_policy" "main" {
-  name              = "daily-backup"
-  project           = example_project.main.id
-  retention_days    = 30
-  schedule          = "0 2 * * *"  # Daily at 2 AM
-}
-```
-
-## Step 5: Define Outputs
-
-```hcl
-output "project_id" {
-  description = "The ID of the created project"
-  value       = example_project.main.id
-}
-
-output "project_name" {
-  description = "The name of the created project"
-  value       = example_project.main.name
-}
-```
-
-## Step 6: Deploy
-
-```bash
-# Initialize OpenTofu and download provider
 tofu init
-
-# Validate configuration syntax
-tofu validate
-
-# Preview planned changes
-tofu plan
-
-# Apply configuration
 tofu apply
 ```
 
-## Common Issues and Solutions
-
-### Authentication Errors
-Verify API keys are valid and have the required permissions. Check for typos in environment variable names.
-
-### Rate Limiting
-Add `depends_on` to serialize resource creation and avoid hitting API rate limits.
-
-### Provider Version Conflicts
-Pin to a specific provider version range to ensure reproducible deployments.
-
 ## Conclusion
 
-You have successfully configured How to Create Monitors with OpenTofu on Datadog using OpenTofu. This provider enables you to manage all aspects of the service as code, ensuring consistency and enabling GitOps workflows. Always use environment variables or secure secret stores for sensitive credentials.
+Datadog monitors managed with OpenTofu bring consistency and auditability to your alerting setup. Define `monitor_thresholds` for both `critical` and `warning` levels, include `{{host.name}}` and `{{value}}` template variables in `message` for actionable alerts, and tag monitors with `env:${var.environment}` for easy filtering. Use `notify_no_data = true` for critical services where missing data itself indicates an outage.

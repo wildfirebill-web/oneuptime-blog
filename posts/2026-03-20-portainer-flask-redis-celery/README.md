@@ -150,7 +150,7 @@ services:
     image: ${FLASK_IMAGE:-flask-app:latest}
     container_name: flask-beat
     restart: unless-stopped
-    command: celery -A app.celery beat --loglevel=info --scheduler celery.schedulers:PersistentScheduler
+    command: celery -A app.celery beat --loglevel=info --scheduler celery.beat:PersistentScheduler
     environment:
       CELERY_BROKER_URL: redis://redis:6379/0
       CELERY_RESULT_BACKEND: redis://redis:6379/1

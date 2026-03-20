@@ -4,240 +4,172 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Redis, Caching, Docker, Performance
 
-Description: Deploy Redis as a high-performance caching layer for your applications using Portainer.
+Description: Deploy Redis as a high-performance caching layer for your applications using Portainer with proper eviction policies and connection pooling.
 
 ## Introduction
 
-Deploy Redis as a high-performance caching layer for your applications using Portainer. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Redis is an in-memory data structure store commonly used as a cache, session store, and message broker. This guide configures Redis specifically for caching workloads — setting appropriate eviction policies, memory limits, and connecting your application to use it.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- An application that needs caching (optional for testing)
 
-## Step 1: Create the Stack in Portainer
+## Step 1: Create the Redis Cache Stack
 
 Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Redis Cache Layer
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  redis:
+    image: redis:7-alpine
+    container_name: redis_cache
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
+      - "6379:6379"
+    command: >
+      redis-server
+      --maxmemory 512mb
+      --maxmemory-policy allkeys-lru
+      --requirepass ${REDIS_PASSWORD}
+      --appendonly no
+      --save ""
     volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
+      - redis_cache_data:/data
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
-      - service-net
+      - cache_net
 
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
+  # Prometheus exporter for Redis metrics
+  redis_exporter:
+    image: oliver006/redis_exporter:latest
+    container_name: redis_exporter
+    restart: unless-stopped
+    ports:
+      - "9121:9121"
     environment:
-      - SERVICE_URL=service://service:port
+      - REDIS_ADDR=redis://redis_cache:6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    depends_on:
+      - redis
     networks:
-      - service-net
+      - cache_net
 
 volumes:
-  service-data:
+  redis_cache_data:
 
 networks:
-  service-net:
+  cache_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
+Eviction policy notes:
+- `allkeys-lru` — evict least recently used keys (best for pure caches)
+- `volatile-lru` — only evict keys with TTL set
+- `allkeys-lfu` — evict least frequently used keys (Redis 4+)
 
-Create configuration files via Portainer's Configs section:
+## Step 2: Configure Environment Variables
 
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
+In Portainer's Stack editor, add environment variables:
+
+```
+REDIS_PASSWORD=your-secure-password-here
 ```
 
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 3: Test the Cache
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Connect to Redis CLI inside the container
+docker exec -it redis_cache redis-cli -a your-secure-password-here
 
-# Test connection to service
-curl http://service:port/health
+# Test basic cache operations
+SET user:1000 '{"name":"Alice","email":"alice@example.com"}' EX 3600
+GET user:1000
+TTL user:1000
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
+# Check memory usage
+INFO memory | grep used_memory_human
 
-# View service logs
-docker logs service --tail 50 -f
+# Check hit rate
+INFO stats | grep -E "keyspace_hits|keyspace_misses"
 ```
 
-## Step 4: Production Configuration
+## Step 4: Python Application Integration
 
-For production deployments, enhance security and reliability:
+```python
+# pip install redis
+import redis
+import json
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
+r = redis.Redis(
+    host='localhost',
+    port=6379,
+    password='your-secure-password-here',
+    decode_responses=True
+)
+
+def get_user(user_id: int) -> dict:
+    """Get user with Redis caching."""
+    cache_key = f"user:{user_id}"
+
+    # Try cache first
+    cached = r.get(cache_key)
+    if cached:
+        return json.loads(cached)
+
+    # Cache miss — fetch from database
+    user = db.fetch_user(user_id)
+
+    # Store in cache for 1 hour
+    r.setex(cache_key, 3600, json.dumps(user))
+    return user
+
+# Check if Redis is responding
+r.ping()
 ```
 
-## Step 5: Set Up Monitoring
+## Step 5: Monitor Cache Performance
 
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
+Configure Prometheus to scrape Redis metrics:
 
 ```yaml
 # prometheus.yml
 scrape_configs:
-  - job_name: 'service'
+  - job_name: 'redis'
     static_configs:
-      - targets: ['service-exporter:9999']
+      - targets: ['redis_exporter:9121']
 ```
 
-## Step 6: Configure Persistence and Backups
+Key metrics to monitor:
+- `redis_memory_used_bytes` vs `redis_memory_max_bytes` — memory pressure
+- `redis_keyspace_hits_total` / `redis_keyspace_misses_total` — hit rate
+- `redis_evicted_keys_total` — keys evicted due to memory limits
+- `redis_connected_clients` — active connections
 
-Set up data persistence and automated backups:
+## Step 6: Connect Your App Container to the Cache
 
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
-```
-
-## Step 7: Scale and High Availability
-
-For high availability, use multiple instances:
+If your app runs in the same Portainer stack, connect it to the `cache_net` network:
 
 ```yaml
 services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-```
-
-## Client Application Integration
-
-Example integration code:
-
-```python
-# Python client example
-import service_client
-
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
-
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+  myapp:
+    image: myapp:latest
+    environment:
+      - REDIS_URL=redis://:${REDIS_PASSWORD}@redis_cache:6379/0
+    networks:
+      - cache_net
+    depends_on:
+      redis:
+        condition: service_healthy
 ```
 
 ## Conclusion
 
-Deploying Redis as a Cache Layer via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+Redis configured with `maxmemory` and `allkeys-lru` eviction is ideal for application caching. Disable RDB persistence (`--save ""`) and AOF (`--appendonly no`) for pure cache workloads — this improves performance and reduces disk I/O. Always require authentication with `requirepass`. Monitor the hit rate and eviction rate to tune memory allocation — a hit rate below 90% or high eviction count indicates the cache is too small.

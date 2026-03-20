@@ -58,24 +58,24 @@ resource "aws_lambda_function" "processor" {
   filename         = data.archive_file.zip.output_path
   source_code_hash = data.archive_file.zip.output_base64sha256
 
-  # Destinations require async invocations
-  # Configure retry behavior for async invocations
-  async_invocation_config {
-    maximum_event_age_in_seconds = 3600    # Retry for up to 1 hour
-    maximum_retry_attempts       = 2       # Retry twice before failure destination
+  tags = { Name = "async-processor" }
+}
 
-    destination_config {
-      on_success {
-        destination = aws_sqs_queue.success.arn
-      }
+# Configure retry behavior and destinations for async invocations
+resource "aws_lambda_function_event_invoke_config" "processor" {
+  function_name                = aws_lambda_function.processor.function_name
+  maximum_event_age_in_seconds = 3600    # Retry for up to 1 hour
+  maximum_retry_attempts       = 2       # Retry twice before failure destination
 
-      on_failure {
-        destination = aws_sqs_queue.failure.arn
-      }
+  destination_config {
+    on_success {
+      destination = aws_sqs_queue.success.arn
+    }
+
+    on_failure {
+      destination = aws_sqs_queue.failure.arn
     }
   }
-
-  tags = { Name = "async-processor" }
 }
 ```
 
@@ -83,7 +83,7 @@ resource "aws_lambda_function" "processor" {
 
 ```hcl
 # Route successful results to EventBridge for downstream processing
-resource "aws_lambda_event_invoke_config" "eventbridge_dest" {
+resource "aws_lambda_function_event_invoke_config" "eventbridge_dest" {
   function_name = aws_lambda_function.processor.function_name
 
   maximum_event_age_in_seconds = 7200

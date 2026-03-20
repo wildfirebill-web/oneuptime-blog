@@ -19,7 +19,7 @@ Longhorn exposes metrics at `http://longhorn-backend.longhorn-system.svc.cluster
 | Metric | Description |
 |---|---|
 | `longhorn_volume_state` | Volume attach state (0=detached, 1=attached) |
-| `longhorn_volume_robustness` | Volume health (0=unknown, 1=degraded, 2=faulted, 3=healthy) |
+| `longhorn_volume_robustness` | Volume health (0=unknown, 1=healthy, 2=degraded, 3=faulted) |
 | `longhorn_node_storage_capacity_bytes` | Total storage per node |
 | `longhorn_node_storage_usage_bytes` | Used storage per node |
 | `longhorn_backup_state` | Backup job state |
@@ -74,7 +74,7 @@ spec:
     - name: longhorn.health
       rules:
         - alert: LonghornVolumeDegraded
-          expr: longhorn_volume_robustness == 1
+          expr: longhorn_volume_robustness == 2
           for: 5m
           labels:
             severity: warning
@@ -83,7 +83,7 @@ spec:
             description: "Volume has fewer replicas than desired. Check replica health."
 
         - alert: LonghornVolumeFaulted
-          expr: longhorn_volume_robustness == 2
+          expr: longhorn_volume_robustness == 3
           for: 1m
           labels:
             severity: critical
@@ -125,7 +125,7 @@ Useful PromQL queries for investigating Longhorn health:
 sum by (volume) (longhorn_volume_usage_bytes) / sum by (volume) (longhorn_volume_capacity_bytes)
 
 # Number of degraded volumes
-count(longhorn_volume_robustness == 1)
+count(longhorn_volume_robustness == 2)
 
 # Backup success rate over the last 24 hours
 sum(increase(longhorn_backup_state{state="Completed"}[24h]))
@@ -140,6 +140,6 @@ deriv(longhorn_node_storage_usage_bytes[1h])
 
 ## Best Practices
 
-- Alert on `longhorn_volume_robustness != 3` (not healthy) with a 5-minute buffer to avoid flapping.
+- Alert on `longhorn_volume_robustness != 1` (not healthy) with a 5-minute buffer to avoid flapping.
 - Monitor `longhorn_node_storage_capacity_bytes - longhorn_node_storage_usage_bytes` to predict when to add nodes.
 - Set up a `dead man's switch` alert that fires if the Longhorn manager stops sending metrics.

@@ -109,10 +109,9 @@ resource "aws_apigatewayv2_stage" "production" {
   }
 
   default_route_settings {
-    throttling_burst_limit = 5000   # Concurrent requests
-    throttling_rate_limit  = 10000  # Requests per second
+    throttling_burst_limit   = 5000   # Concurrent requests
+    throttling_rate_limit    = 10000  # Requests per second
     detailed_metrics_enabled = true
-    logging_level            = "INFO"
   }
 }
 

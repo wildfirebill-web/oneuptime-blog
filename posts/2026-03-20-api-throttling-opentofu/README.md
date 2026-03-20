@@ -31,8 +31,14 @@ resource "aws_api_gateway_stage" "production" {
   rest_api_id   = aws_api_gateway_rest_api.main.id
   deployment_id = aws_api_gateway_deployment.main.id
   stage_name    = "production"
+}
 
-  default_route_settings {
+resource "aws_api_gateway_method_settings" "all" {
+  rest_api_id = aws_api_gateway_rest_api.main.id
+  stage_name  = aws_api_gateway_stage.production.stage_name
+  method_path = "*/*"  # Apply to all methods
+
+  settings {
     throttling_burst_limit = 5000
     throttling_rate_limit  = 10000
   }

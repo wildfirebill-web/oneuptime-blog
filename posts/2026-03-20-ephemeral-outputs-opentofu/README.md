@@ -8,7 +8,7 @@ Description: A guide to using ephemeral outputs in OpenTofu to expose temporary 
 
 ## Introduction
 
-Ephemeral outputs in OpenTofu (introduced in 1.10) are output values that exist only during the plan/apply execution and are never written to the state file. Unlike sensitive outputs (which are stored in state but masked in display), ephemeral outputs are truly transient — they cannot be persisted.
+Ephemeral outputs in OpenTofu (introduced in 1.11) are output values that exist only during the plan/apply execution and are never written to the state file. Unlike sensitive outputs (which are stored in state but masked in display), ephemeral outputs are truly transient — they cannot be persisted.
 
 ## Declaring Ephemeral Outputs
 

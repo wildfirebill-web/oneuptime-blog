@@ -4,271 +4,149 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, StackStorm, Automation, Docker, DevOps
 
-Description: Deploy StackStorm event-driven automation platform using Portainer for infrastructure automation and ChatOps.
+Description: Deploy StackStorm event-driven automation platform using Portainer for IT operations automation and ChatOps.
 
 ## Introduction
 
-Deploy StackStorm event-driven automation platform using Portainer for infrastructure automation and ChatOps. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+StackStorm (ST2) is an event-driven automation platform for DevOps and IT operations. It connects sensors (event sources) to actions (automated responses) via rules, with support for workflows, packs (integrations), and ChatOps via Slack/Teams.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- At least 2 GB RAM
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - StackStorm
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  stackstorm:
+    image: stackstorm/stackstorm:3.8.1
+    container_name: stackstorm
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "443:443"
+      - "80:80"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - stackstorm_packs:/opt/stackstorm/packs
+      - stackstorm_configs:/opt/stackstorm/configs
+      - stackstorm_log:/var/log/st2
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - ST2_AUTH_USERNAME=st2admin
+      - ST2_AUTH_PASSWORD=${ST2_PASSWORD}
+      - RABBITMQ_DEFAULT_USER=st2
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}
     depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
+      - mongo
+      - redis
+      - rabbitmq
     networks:
-      - app-net
+      - st2_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  mongo:
+    image: mongo:7.0
+    container_name: st2_mongo
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      - st2_mongo_data:/data/db
     networks:
-      - app-net
+      - st2_net
 
   redis:
     image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
+    container_name: st2_redis
+    restart: unless-stopped
     networks:
-      - app-net
+      - st2_net
+
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    container_name: st2_rabbitmq
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_DEFAULT_USER=st2
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}
+    networks:
+      - st2_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  stackstorm_packs:
+  stackstorm_configs:
+  stackstorm_log:
+  st2_mongo_data:
 
 networks:
-  app-net:
+  st2_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
+```
+ST2_PASSWORD=your-st2-admin-password
+RABBITMQ_PASSWORD=your-rabbitmq-password
+```
+
+## Step 3: Access the StackStorm UI
+
+Open `https://<host>` and log in with `st2admin` / your ST2 password.
+
+## Step 4: Use the ST2 CLI
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+# Authenticate
+docker exec stackstorm st2 auth st2admin -p your-st2-admin-password
+
+# List available packs
+docker exec stackstorm st2 pack list
+
+# Run an action
+docker exec stackstorm st2 run core.local cmd="echo Hello from StackStorm"
+
+# List triggers
+docker exec stackstorm st2 trigger list
 ```
 
-## Step 4: Initialize the Application
-
-After deployment, run the initial setup:
+## Step 5: Install a Pack
 
 ```bash
-# Access via Portainer container console
+# Install the Slack pack for ChatOps
+docker exec stackstorm st2 pack install slack
 
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
+# Configure the pack
+docker exec stackstorm st2 pack config slack
 ```
 
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
+## Step 6: Create a Rule
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
+# Create a rule file
+cat > /tmp/my_rule.yaml << 'EOF'
+name: "on_timer_hello"
+pack: "default"
+description: "Say hello every minute"
+trigger:
+  type: "core.st2.IntervalTimer"
+  parameters:
+    delta: 60
+    unit: "seconds"
+criteria: {}
+action:
+  ref: "core.local"
+  parameters:
+    cmd: "echo Hello from rule at $(date)"
+enabled: true
+EOF
 
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# Deploy the rule
+docker cp /tmp/my_rule.yaml stackstorm:/opt/stackstorm/rules/
+docker exec stackstorm st2 rule create /opt/stackstorm/rules/my_rule.yaml
 ```
 
 ## Conclusion
 
-Deploying StackStorm via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+StackStorm's event-driven model works via three components: Sensors (detect events), Triggers (events that rules react to), and Actions (automated tasks). Rules wire triggers to actions with optional criteria filters. Packs bundle sensors, triggers, actions, and rules for specific services (AWS, PagerDuty, Slack, JIRA). StackStorm uses MongoDB for state, RabbitMQ for messaging, and Redis for result caching.

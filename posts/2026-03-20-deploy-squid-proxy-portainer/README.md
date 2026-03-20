@@ -4,240 +4,159 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Squid, Proxy, Docker, Caching
 
-Description: Deploy Squid proxy server and caching layer using Portainer for forward proxy and caching capabilities.
+Description: Deploy Squid proxy server and caching layer using Portainer for forward proxy and HTTP caching capabilities.
 
 ## Introduction
 
-Deploy Squid proxy server and caching layer using Portainer for forward proxy and caching capabilities. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Squid is a caching and forwarding HTTP proxy. It reduces bandwidth usage by caching frequently requested content, controls outbound access from internal networks, and can intercept and log HTTP traffic. This guide deploys Squid as a Portainer Stack.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- Understanding of forward proxy concepts
 
-## Step 1: Create the Stack in Portainer
+## Step 1: Create Squid Configuration
 
-Navigate to **Stacks** > **Add Stack** and use the following configuration:
+Before deploying, create the Squid configuration file on the host:
+
+```bash
+mkdir -p /opt/squid/conf
+cat > /opt/squid/conf/squid.conf << 'EOF'
+# /etc/squid/squid.conf
+
+# ACLs
+acl localnet src 10.0.0.0/8
+acl localnet src 172.16.0.0/12
+acl localnet src 192.168.0.0/16
+acl SSL_ports port 443
+acl CONNECT method CONNECT
+
+# Allow local networks to use the proxy
+http_access allow localnet
+http_access allow localhost
+
+# Block CONNECT on non-SSL ports
+http_access deny CONNECT !SSL_ports
+
+# Deny everything else
+http_access deny all
+
+# Proxy port
+http_port 3128
+
+# Cache settings
+cache_mem 512 MB
+maximum_object_size 50 MB
+cache_dir ufs /var/spool/squid 4096 16 256
+
+# Log format
+access_log /var/log/squid/access.log squid
+cache_log /var/log/squid/cache.log
+
+# DNS servers
+dns_nameservers 8.8.8.8 1.1.1.1
+EOF
+```
+
+## Step 2: Create the Stack in Portainer
+
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Squid Proxy
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  squid:
+    image: ubuntu/squid:latest
+    container_name: squid
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
+      - "3128:3128"    # HTTP proxy port
     volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
+      - /opt/squid/conf/squid.conf:/etc/squid/squid.conf:ro
+      - squid_cache:/var/spool/squid
+      - squid_logs:/var/log/squid
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "squidclient", "-h", "localhost", "-p", "3128", "mgr:info"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - service-net
-
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
-    networks:
-      - service-net
+      - proxy_net
 
 volumes:
-  service-data:
+  squid_cache:
+  squid_logs:
 
 networks:
-  service-net:
+  proxy_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
-
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 3: Test the Proxy
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Test HTTP access through the proxy
+curl -x http://localhost:3128 http://example.com
 
-# Test connection to service
-curl http://service:port/health
+# Test HTTPS CONNECT tunnel
+curl -x http://localhost:3128 https://example.com
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
+# Check Squid access logs
+docker exec squid tail -f /var/log/squid/access.log
 
-# View service logs
-docker logs service --tail 50 -f
+# Check cache statistics
+docker exec squid squidclient -h localhost -p 3128 mgr:info | grep -E "Requests|Hits|Misses"
 ```
 
-## Step 4: Production Configuration
-
-For production deployments, enhance security and reliability:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
+## Step 4: Configure Applications to Use the Proxy
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# Set proxy for curl
+export http_proxy=http://squid-host:3128
+export https_proxy=http://squid-host:3128
+curl https://example.com
 
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
+# Python requests
+import requests
+proxies = {'http': 'http://squid-host:3128', 'https': 'http://squid-host:3128'}
+r = requests.get('https://api.example.com/data', proxies=proxies)
 
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
+# Docker pull through proxy
+docker pull --env HTTP_PROXY=http://squid-host:3128 alpine
 ```
 
-## Step 7: Scale and High Availability
+## Step 5: Add Authentication
 
-For high availability, use multiple instances:
+For controlled access, add basic authentication:
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
+```bash
+# Create password file on host
+mkdir -p /opt/squid/passwords
+docker run --rm ubuntu/squid htpasswd -bc /opt/squid/passwords/squid_users proxyuser securepassword
 ```
 
-## Client Application Integration
+Add to `squid.conf`:
 
-Example integration code:
+```
+auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/passwords/squid_users
+auth_param basic realm Squid Proxy
+acl authenticated proxy_auth REQUIRED
+http_access allow authenticated
+```
 
-```python
-# Python client example
-import service_client
+## Step 6: Monitor Cache Hit Rate
 
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
+```bash
+# View cache statistics
+docker exec squid squidclient -h localhost -p 3128 mgr:counters | \
+  grep -E "client_http|cache_hit"
 
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+# Or via cachemgr HTTP interface (add to squid.conf: http_access allow localhost)
+curl http://localhost:3128/squid-internal-mgr/info
 ```
 
 ## Conclusion
 
-Deploying Squid Proxy Cache via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+Squid caches HTTP/HTTPS content, reducing bandwidth for environments with many clients accessing the same external resources (e.g., container image pulls, package downloads). The `cache_mem` parameter controls RAM used for hot objects, while `cache_dir ufs` stores larger objects on disk. Monitor the cache hit ratio — below 50% suggests most content is not cacheable, and you should review whether the cache is beneficial for your workload.

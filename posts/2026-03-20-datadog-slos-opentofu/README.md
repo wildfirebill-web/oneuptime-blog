@@ -8,150 +8,149 @@ Description: Learn how to create Datadog Service Level Objectives with metric an
 
 ## Introduction
 
-This guide covers How to Create SLOs with OpenTofu on Datadog using OpenTofu with practical examples and production-ready configurations.
+Datadog Service Level Objectives (SLOs) define availability and latency targets and track error budget consumption. OpenTofu manages SLOs as code using the `datadog_service_level_objective` resource, enabling teams to version and review SLO definitions alongside their infrastructure.
 
 ## Prerequisites
 
 - OpenTofu v1.6+
-- API credentials for the relevant service
-- Basic understanding of OpenTofu concepts
+- Datadog API key and Application key
+- The `DataDog/datadog` OpenTofu provider
 
-## Step 1: Install and Configure the Provider
+## Provider Configuration
 
 ```hcl
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
-    # Provider configuration depends on the specific service
-    # Replace with the actual provider source and version
-    example = {
-      source  = "hashicorp/example"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
 }
 
-# Configure the provider with credentials
-provider "example" {
-  # Use environment variables for credentials
-  # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.
-  
-  # Or specify directly (not recommended for secrets)
-  # api_key = var.api_key
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
 }
 ```
 
-## Step 2: Set Up Authentication
+## Metric-Based SLO (Request Success Rate)
+
+A metric SLO measures the ratio of good events to total events over a rolling time window.
+
+```hcl
+# slos.tf
+
+resource "datadog_service_level_objective" "api_availability" {
+  name        = "[${var.environment}] API Availability"
+  type        = "metric"
+  description = "Percentage of successful API requests (non-5xx responses)"
+
+  # Good events = requests without errors
+  query {
+    numerator   = "sum:trace.web.request.hits{env:${var.environment},!http.status_class:5xx}.as_count()"
+    denominator = "sum:trace.web.request.hits{env:${var.environment}}.as_count()"
+  }
+
+  # 99.9% uptime target over 30 days
+  thresholds {
+    timeframe = "30d"
+    target    = 99.9
+    warning   = 99.95
+  }
+
+  # Additional 7-day window for shorter-term tracking
+  thresholds {
+    timeframe = "7d"
+    target    = 99.9
+    warning   = 99.95
+  }
+
+  tags = ["env:${var.environment}", "service:api", "managed-by:opentofu"]
+}
+```
+
+## Monitor-Based SLO
+
+A monitor SLO uses existing Datadog monitors to track uptime.
+
+```hcl
+resource "datadog_monitor" "api_health" {
+  name    = "[${var.environment}] API Health Check"
+  type    = "metric alert"
+  message = "API health check failing. @pagerduty-${var.environment}"
+  query   = "avg(last_1m):avg:http.response_time{env:${var.environment},check:api} > 5"
+
+  monitor_thresholds {
+    critical = 5.0
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+
+resource "datadog_service_level_objective" "api_uptime" {
+  name        = "[${var.environment}] API Uptime (Monitor-Based)"
+  type        = "monitor"
+  description = "API uptime based on health check monitor status"
+
+  monitor_ids = [datadog_monitor.api_health.id]
+
+  thresholds {
+    timeframe = "30d"
+    target    = 99.5
+    warning   = 99.7
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+```
+
+## SLO Alert (Error Budget Burn Rate)
+
+Alert when the error budget is being consumed too fast:
+
+```hcl
+resource "datadog_slo_alert" "burn_rate_high" {
+  slo_id       = datadog_service_level_objective.api_availability.id
+  name         = "[${var.environment}] API SLO - High Burn Rate"
+  type         = "burn_rate"
+  message      = "Error budget is burning too fast for the API availability SLO. @pagerduty-${var.environment}"
+  slo_timeframe = "30d"
+
+  thresholds {
+    timeframe = "1h"
+    value     = 14.4  # 14.4x burn rate = will exhaust monthly budget in 2 days
+  }
+
+  thresholds {
+    timeframe = "5m"
+    value     = 14.4
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+```
+
+## Outputs
+
+```hcl
+output "api_availability_slo_id" {
+  description = "ID of the API availability SLO"
+  value       = datadog_service_level_objective.api_availability.id
+}
+```
+
+## Deploy
 
 ```bash
-# Use environment variables for authentication
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_TOKEN="your-token"
-export PROVIDER_ORG="your-organization"
-```
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
 
-```hcl
-variable "api_key" {
-  description = "API key for authentication"
-  type        = string
-  sensitive   = true
-}
-
-variable "organization" {
-  description = "Organization name or ID"
-  type        = string
-}
-```
-
-## Step 3: Create Basic Resources
-
-```hcl
-# Example resource creation
-# Replace with actual resource types for the provider
-
-resource "example_project" "main" {
-  name        = "${var.environment}-project"
-  description = "Managed by OpenTofu"
-
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
-  }
-}
-
-# Configure access control
-resource "example_team" "developers" {
-  name    = "developers"
-  project = example_project.main.id
-  role    = "contributor"
-}
-```
-
-## Step 4: Configure Advanced Settings
-
-```hcl
-# Monitoring and alerting configuration
-resource "example_alert" "main" {
-  name      = "critical-alert"
-  project   = example_project.main.id
-  severity  = "critical"
-  threshold = 90
-
-  notification {
-    channel = var.notification_channel
-  }
-}
-
-# Backup and retention policies
-resource "example_backup_policy" "main" {
-  name              = "daily-backup"
-  project           = example_project.main.id
-  retention_days    = 30
-  schedule          = "0 2 * * *"  # Daily at 2 AM
-}
-```
-
-## Step 5: Define Outputs
-
-```hcl
-output "project_id" {
-  description = "The ID of the created project"
-  value       = example_project.main.id
-}
-
-output "project_name" {
-  description = "The name of the created project"
-  value       = example_project.main.name
-}
-```
-
-## Step 6: Deploy
-
-```bash
-# Initialize OpenTofu and download provider
 tofu init
-
-# Validate configuration syntax
-tofu validate
-
-# Preview planned changes
-tofu plan
-
-# Apply configuration
 tofu apply
 ```
 
-## Common Issues and Solutions
-
-### Authentication Errors
-Verify API keys are valid and have the required permissions. Check for typos in environment variable names.
-
-### Rate Limiting
-Add `depends_on` to serialize resource creation and avoid hitting API rate limits.
-
-### Provider Version Conflicts
-Pin to a specific provider version range to ensure reproducible deployments.
-
 ## Conclusion
 
-You have successfully configured How to Create SLOs with OpenTofu on Datadog using OpenTofu. This provider enables you to manage all aspects of the service as code, ensuring consistency and enabling GitOps workflows. Always use environment variables or secure secret stores for sensitive credentials.
+Datadog SLOs defined with OpenTofu make reliability targets explicit, versionable, and reviewable as code. Use metric SLOs for ratio-based availability (requests, errors) and monitor SLOs for existing check-based uptime tracking. Define burn rate alerts alongside SLOs to get early warning before error budgets are exhausted. Tag all SLOs with `env:${var.environment}` to enable environment-scoped SLO dashboards in Datadog.

@@ -30,10 +30,11 @@ The Token Bucket Filter (TBF) qdisc smooths bursts by queuing excess packets:
 ```bash
 # Shape outbound traffic on eth0 to 10 Mbit/s
 # TBF allows a burst of 32kb before queuing begins
+# rate: Sustained rate; burst: Burst bucket size; latency: Max packet wait time
 sudo tc qdisc add dev eth0 root handle 1: tbf \
-  rate 10mbit \         # Sustained rate
-  burst 32kbit \        # Burst bucket size
-  latency 200ms         # Maximum time a packet can wait in the queue
+  rate 10mbit \
+  burst 32kbit \
+  latency 200ms
 
 # Verify
 sudo tc -s qdisc show dev eth0
@@ -49,11 +50,12 @@ Policing drops packets immediately when the rate is exceeded. It is most commonl
 # Police ingress traffic to 10 Mbit/s (drop exceeding packets)
 sudo tc qdisc add dev eth0 ingress
 
+# police rate: Rate limit; burst: Burst allowance; conform-exceed: Action on excess
 sudo tc filter add dev eth0 parent ffff: protocol ip u32 \
   match u32 0 0 \
-  police rate 10mbit \    # Rate limit
-  burst 200k \            # Burst allowance
-  conform-exceed drop \   # Action on exceeding traffic: drop
+  police rate 10mbit \
+  burst 200k \
+  conform-exceed drop \
   flowid :1
 ```
 

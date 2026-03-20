@@ -36,10 +36,10 @@ With dots between each nibble and `.ip6.arpa.` appended:
 
 | Prefix Length | Nibbles (prefix length / 4) | Zone Suffix |
 |---|---|---|
-| /32 | 8 nibbles | `1.0.0.2.ip6.arpa` (for 2001::/32) |
-| /48 | 12 nibbles | `0.0.0.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8::/48) |
-| /56 | 14 nibbles | `0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8::/56) |
-| /64 | 16 nibbles | `1.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8::1:0:0:0/64) |
+| /32 | 8 nibbles | `8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8::/32) |
+| /48 | 12 nibbles | `e.f.a.c.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8:cafe::/48) |
+| /56 | 14 nibbles | `0.b.a.e.f.a.c.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8:cafe:ab00::/56) |
+| /64 | 16 nibbles | `d.c.b.a.e.f.a.c.8.b.d.0.1.0.0.2.ip6.arpa` (for 2001:db8:cafe:abcd::/64) |
 
 ## Non-Nibble-Boundary Delegation Problem
 

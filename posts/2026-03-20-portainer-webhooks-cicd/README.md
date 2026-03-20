@@ -33,7 +33,7 @@ The URL format: `https://portainer.yourdomain.com/api/webhooks/{uuid}`
 # Test webhook with curl (no authentication required)
 curl -X POST "https://portainer.yourdomain.com/api/webhooks/your-webhook-uuid"
 
-# Expected response: 200 OK (empty body)
+# Expected response: 204 No Content (empty body)
 # Portainer will pull the latest image and redeploy
 ```
 
@@ -64,7 +64,7 @@ jobs:
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
             -X POST "${{ secrets.PORTAINER_WEBHOOK_URL }}")
 
-          if [ "$HTTP_STATUS" = "200" ]; then
+          if [ "$HTTP_STATUS" = "204" ]; then
             echo "Deployment triggered successfully"
           else
             echo "Webhook failed with HTTP $HTTP_STATUS"
@@ -96,7 +96,7 @@ deploy:
       HTTP=$(curl -s -o /dev/null -w "%{http_code}" \
         -X POST "$PORTAINER_WEBHOOK_URL")
 
-      [ "$HTTP" = "200" ] && echo "Deployed!" || exit 1
+      [ "$HTTP" = "204" ] && echo "Deployed!" || exit 1
   environment:
     name: production
   only:

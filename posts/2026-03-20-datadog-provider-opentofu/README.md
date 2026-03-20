@@ -4,138 +4,145 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, Datadog Provider, Monitoring
 
-Description: Learn how to configure the Datadog provider in OpenTofu with API and app key authentication.
+Description: Learn how to configure the Datadog provider in OpenTofu with API and app key authentication to manage monitors, dashboards, and SLOs as code.
 
 ## Introduction
 
-This guide covers How to Configure the Datadog Provider in OpenTofu using OpenTofu with practical examples and production-ready configurations.
+The Datadog provider for OpenTofu lets you manage monitors, dashboards, SLOs, synthetic tests, and other Datadog resources as code. This guide covers configuring the provider, authenticating with API and application keys, and creating your first Datadog resources.
 
 ## Prerequisites
 
 - OpenTofu v1.6+
-- API credentials for the relevant service
-- Basic understanding of OpenTofu concepts
+- A Datadog account with API access
+- Datadog API key and Application key
 
 ## Step 1: Install and Configure the Provider
 
 ```hcl
+# versions.tf
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
-    # Provider configuration depends on the specific service
-    # Replace with the actual provider source and version
-    example = {
-      source  = "hashicorp/example"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
 }
 
-# Configure the provider with credentials
-provider "example" {
-  # Use environment variables for credentials
-  # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.
-  
-  # Or specify directly (not recommended for secrets)
-  # api_key = var.api_key
+# Configure the Datadog provider
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
+  api_url = "https://api.datadoghq.com/"  # Use api.datadoghq.eu for EU
 }
 ```
 
 ## Step 2: Set Up Authentication
 
 ```bash
-# Use environment variables for authentication
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_TOKEN="your-token"
-export PROVIDER_ORG="your-organization"
+# Use environment variables for authentication (recommended)
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
 ```
 
 ```hcl
-variable "api_key" {
-  description = "API key for authentication"
+# variables.tf
+variable "datadog_api_key" {
+  description = "Datadog API key"
   type        = string
   sensitive   = true
 }
 
-variable "organization" {
-  description = "Organization name or ID"
+variable "datadog_app_key" {
+  description = "Datadog Application key"
   type        = string
+  sensitive   = true
 }
 ```
 
-## Step 3: Create Basic Resources
+When environment variables `DD_API_KEY` and `DD_APP_KEY` are set, the provider reads them automatically and no explicit variable values are needed.
+
+## Step 3: Create a Monitor
 
 ```hcl
-# Example resource creation
-# Replace with actual resource types for the provider
+# monitors.tf
+resource "datadog_monitor" "cpu_high" {
+  name    = "High CPU Usage on ${var.environment}"
+  type    = "metric alert"
+  message = "CPU usage is above 90% on {{host.name}}. @pagerduty-alerts"
 
-resource "example_project" "main" {
-  name        = "${var.environment}-project"
-  description = "Managed by OpenTofu"
+  query = "avg(last_5m):avg:system.cpu.user{env:${var.environment}} by {host} > 90"
 
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
+  monitor_thresholds {
+    critical = 90
+    warning  = 80
   }
-}
 
-# Configure access control
-resource "example_team" "developers" {
-  name    = "developers"
-  project = example_project.main.id
-  role    = "contributor"
+  notify_no_data    = false
+  renotify_interval = 60
+
+  tags = ["env:${var.environment}", "team:platform", "managed-by:opentofu"]
 }
 ```
 
-## Step 4: Configure Advanced Settings
+## Step 4: Create a Dashboard
 
 ```hcl
-# Monitoring and alerting configuration
-resource "example_alert" "main" {
-  name      = "critical-alert"
-  project   = example_project.main.id
-  severity  = "critical"
-  threshold = 90
+# dashboards.tf
+resource "datadog_dashboard" "service_overview" {
+  title       = "${var.environment} Service Overview"
+  description = "Key metrics for ${var.environment} environment"
+  layout_type = "ordered"
 
-  notification {
-    channel = var.notification_channel
+  widget {
+    timeseries_definition {
+      title = "CPU Usage by Host"
+      request {
+        q            = "avg:system.cpu.user{env:${var.environment}} by {host}"
+        display_type = "line"
+      }
+    }
   }
-}
 
-# Backup and retention policies
-resource "example_backup_policy" "main" {
-  name              = "daily-backup"
-  project           = example_project.main.id
-  retention_days    = 30
-  schedule          = "0 2 * * *"  # Daily at 2 AM
+  widget {
+    query_value_definition {
+      title = "P99 Latency"
+      request {
+        q          = "p99:trace.web.request{env:${var.environment}}"
+        aggregator = "last"
+      }
+    }
+  }
 }
 ```
 
 ## Step 5: Define Outputs
 
 ```hcl
-output "project_id" {
-  description = "The ID of the created project"
-  value       = example_project.main.id
+# outputs.tf
+output "monitor_id" {
+  description = "The ID of the CPU monitor"
+  value       = datadog_monitor.cpu_high.id
 }
 
-output "project_name" {
-  description = "The name of the created project"
-  value       = example_project.main.name
+output "dashboard_url" {
+  description = "URL of the service overview dashboard"
+  value       = datadog_dashboard.service_overview.url
 }
 ```
 
 ## Step 6: Deploy
 
 ```bash
-# Initialize OpenTofu and download provider
+# Initialize OpenTofu and download the Datadog provider
 tofu init
 
 # Validate configuration syntax
 tofu validate
 
 # Preview planned changes
-tofu plan
+tofu plan -var="datadog_api_key=$DD_API_KEY" -var="datadog_app_key=$DD_APP_KEY"
 
 # Apply configuration
 tofu apply
@@ -144,14 +151,14 @@ tofu apply
 ## Common Issues and Solutions
 
 ### Authentication Errors
-Verify API keys are valid and have the required permissions. Check for typos in environment variable names.
+Verify the API key is an API key (not an App key) and the App key has the correct permissions (e.g., `monitors_write`, `dashboards_write`). Check for trailing spaces in environment variables.
 
 ### Rate Limiting
-Add `depends_on` to serialize resource creation and avoid hitting API rate limits.
+Datadog enforces API rate limits. Add `depends_on` to serialize resource creation, or use `-parallelism=5` with `tofu apply` to reduce concurrent API calls.
 
 ### Provider Version Conflicts
-Pin to a specific provider version range to ensure reproducible deployments.
+Pin to a specific provider version range (e.g., `~> 3.39`) to ensure reproducible deployments. Breaking changes in the Datadog provider are tracked in the [provider changelog](https://github.com/DataDog/terraform-provider-datadog/blob/master/CHANGELOG.md).
 
 ## Conclusion
 
-You have successfully configured How to Configure the Datadog Provider in OpenTofu using OpenTofu. This provider enables you to manage all aspects of the service as code, ensuring consistency and enabling GitOps workflows. Always use environment variables or secure secret stores for sensitive credentials.
+The Datadog provider (`DataDog/datadog`) lets you manage monitors, dashboards, SLOs, and synthetic tests as code. Authenticate with `DD_API_KEY` and `DD_APP_KEY` environment variables, or pass them as sensitive variables. Managing Datadog resources with OpenTofu ensures consistent alerting configurations across environments and enables code review for monitoring changes.

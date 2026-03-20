@@ -92,16 +92,13 @@ backend health_backend
 # /etc/nginx/nginx.conf
 
 upstream ipv6_backends {
-    # IPv6 upstream servers
+    # IPv6 upstream servers with weighted round-robin (default)
     server [2001:db8::server1]:8080 weight=3;
     server [2001:db8::server2]:8080 weight=2;
     server [2001:db8::server3]:8080 weight=1;
 
-    # Least connections
+    # Use one load balancing method: least_conn for active connection balancing
     least_conn;
-
-    # Session persistence by source IP
-    ip_hash;
 
     keepalive 32;    # Keep persistent connections to backends
 }

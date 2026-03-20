@@ -4,271 +4,142 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Prefect, Data Workflow, Docker, Python
 
-Description: Deploy Prefect modern data workflow platform using Portainer for orchestrating Python data pipelines.
+Description: Deploy Prefect workflow orchestration server using Portainer to schedule and monitor Python data pipelines.
 
 ## Introduction
 
-Deploy Prefect modern data workflow platform using Portainer for orchestrating Python data pipelines. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Prefect is a modern workflow orchestration framework for data pipelines. It provides a Python-first API to define flows (workflows) and tasks, plus a web UI for scheduling, monitoring, and managing runs. Prefect 2.x (Prefect Orion) supports self-hosted server deployments.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- Python 3.8+ for running local flows
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Prefect Server
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  prefect-server:
+    image: prefecthq/prefect:2.19.7-python3.12
+    container_name: prefect_server
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "4200:4200"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - prefect_data:/root/.prefect
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - PREFECT_UI_ENABLED=true
+      - PREFECT_API_URL=http://0.0.0.0:4200/api
+      - PREFECT_SERVER_API_HOST=0.0.0.0
+      - PREFECT_UI_API_URL=http://${PREFECT_HOST}:4200/api
+      - PREFECT_API_DATABASE_CONNECTION_URL=postgresql+asyncpg://prefect:${DB_PASSWORD}@prefect_postgres:5432/prefect
+    command: prefect server start --host 0.0.0.0 --port 4200
     depends_on:
-      postgres:
+      prefect_postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - prefect_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  prefect_postgres:
+    image: postgres:16-alpine
+    container_name: prefect_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - prefect_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=prefect
+      - POSTGRES_USER=prefect
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U prefect"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - prefect_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  prefect_data:
+  prefect_postgres_data:
 
 networks:
-  app-net:
+  prefect_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
+```
+DB_PASSWORD=your-postgres-password
+PREFECT_HOST=prefect.yourdomain.com
+```
+
+## Step 3: Access the Prefect UI
+
+Open `http://<host>:4200` to view the Prefect dashboard.
+
+## Step 4: Deploy a Flow
+
+Install the Prefect client and point it at your server:
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+pip install prefect
+
+# Configure Prefect client to use your server
+prefect config set PREFECT_API_URL=http://<host>:4200/api
 ```
 
-## Step 4: Initialize the Application
+Create a flow:
 
-After deployment, run the initial setup:
+```python
+# my_flow.py
+from prefect import flow, task
+from datetime import timedelta
+
+@task(retries=3, retry_delay_seconds=10)
+def fetch_data(url: str) -> dict:
+    import requests
+    response = requests.get(url)
+    return response.json()
+
+@task
+def process_data(data: dict) -> None:
+    print(f"Processing {len(data)} records")
+
+@flow(name="data-pipeline", log_prints=True)
+def data_pipeline(url: str = "https://api.example.com/data"):
+    data = fetch_data(url)
+    process_data(data)
+
+if __name__ == "__main__":
+    data_pipeline()
+```
+
+## Step 5: Schedule and Deploy the Flow
 
 ```bash
-# Access via Portainer container console
+# Create a deployment with a schedule
+prefect deployment build my_flow.py:data_pipeline \
+  --name "production" \
+  --cron "0 * * * *" \
+  --apply
 
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
+# Run the flow manually
+prefect deployment run "data-pipeline/production"
 ```
 
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
+## Step 6: Start a Worker to Execute Flows
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# Workers pull flow runs from the server and execute them
+prefect worker start --pool default-agent-pool
 ```
 
 ## Conclusion
 
-Deploying Prefect via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Prefect Server requires PostgreSQL for storing flow metadata, run history, and schedules. The `PREFECT_UI_API_URL` must be reachable from the browser — set it to the external hostname of your server. Workers (agents) poll the server for scheduled runs and execute them locally or in a Docker container. Use `@task(cache_key_fn=task_input_hash)` for idempotent pipelines that skip recomputation of unchanged inputs.

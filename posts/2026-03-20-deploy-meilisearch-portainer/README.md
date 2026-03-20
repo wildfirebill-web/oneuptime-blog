@@ -4,179 +4,139 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Meilisearch, Search, Docker, Self-Hosted
 
-Description: Deploy Meilisearch as a fast, typo-tolerant full-text search engine using Portainer.
+Description: Deploy Meilisearch fast, open-source search engine using Portainer for full-text search with typo tolerance.
 
 ## Introduction
 
-Deploy Meilisearch as a fast, typo-tolerant full-text search engine using Portainer. Portainer's stack management capabilities make deploying and managing Meilisearch straightforward for development and production environments.
+Meilisearch is a fast, open-source, RESTful search engine with typo tolerance, faceting, filtering, and geosearch built in. It is designed for end-user search experiences and requires no query language to operate.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Create the Stack in Portainer
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Meilisearch
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
+  meilisearch:
+    image: getmeili/meilisearch:v1.8.3
     container_name: meilisearch
-    restart: always
+    restart: unless-stopped
     ports:
       - "7700:7700"
     volumes:
-      - app-data:/data
+      - meilisearch_data:/meili_data
     environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_ENV=production
+      - MEILI_DB_PATH=/meili_data
+      - MEILI_HTTP_ADDR=0.0.0.0:7700
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - app-net
-
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    networks:
-      - app-net
+      - meilisearch_net
 
 volumes:
-  app-data:
-  postgres-data:
+  meilisearch_data:
 
 networks:
-  app-net:
+  meilisearch_net:
     driver: bridge
 ```
 
-## Step 2: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set the required environment variables in Portainer's stack editor:
-
-```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
+```
+MEILI_MASTER_KEY=your-master-key-min-16-chars
 ```
 
-## Step 3: Initialize the Application
+When `MEILI_ENV=production`, the master key is required and all API endpoints require authentication.
 
-After deployment, complete initial setup:
+## Step 3: Verify the Deployment
 
 ```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
-
-# Check application health
+# Check health (no auth needed for /health)
 curl http://localhost:7700/health
+# Returns: {"status":"available"}
 
-# View startup logs
-docker logs meilisearch --tail 50
+# Get server version
+curl http://localhost:7700/version \
+  -H 'Authorization: Bearer your-master-key'
 ```
 
-## Step 4: Configure and Test
-
-Test the application functionality:
+## Step 4: Index Documents
 
 ```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
+# Create an index and add documents
+curl -X POST http://localhost:7700/indexes/movies/documents \
+  -H 'Authorization: Bearer your-master-key' \
+  -H 'Content-Type: application/json' \
+  -d '[
+    {"id": 1, "title": "Carol", "genre": "Drama", "year": 2015},
+    {"id": 2, "title": "Wonder Woman", "genre": "Action", "year": 2017},
+    {"id": 3, "title": "Life of Pi", "genre": "Drama", "year": 2012}
+  ]'
 
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
+# Check indexing task status
+curl http://localhost:7700/tasks/0 \
+  -H 'Authorization: Bearer your-master-key'
+```
+
+## Step 5: Search
+
+```bash
+# Basic search with typo tolerance
+curl 'http://localhost:7700/indexes/movies/search' \
+  -H 'Authorization: Bearer your-master-key' \
+  -H 'Content-Type: application/json' \
+  -d '{"q": "caroll"}'
+
+# Search with filter and facets
+curl 'http://localhost:7700/indexes/movies/search' \
+  -H 'Authorization: Bearer your-master-key' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "q": "drama",
+    "filter": "year > 2013",
+    "sort": ["year:desc"],
+    "limit": 5
+  }'
+```
+
+## Step 6: Python Integration
+
+```python
+# pip install meilisearch
+import meilisearch
+
+client = meilisearch.Client('http://localhost:7700', 'your-master-key')
+
+# Index documents
+index = client.index('products')
+documents = [
+    {"id": 1, "name": "Laptop Pro", "brand": "TechCorp", "price": 1299},
+    {"id": 2, "name": "Wireless Mouse", "brand": "InputCo", "price": 49},
+]
+task = index.add_documents(documents)
+client.wait_for_task(task.task_uid)
 
 # Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
+results = index.search("laptop", {
+    "filter": "price < 1500",
+    "sort": ["price:asc"],
+    "limit": 10,
+})
+print(results["hits"])
 ```
-
-## Step 5: Set Up Reverse Proxy
-
-Expose the service securely via Nginx or Traefik:
-
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Backups
-
-Automate data backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/meilisearch"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
-```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
 
 ## Conclusion
 
-Deploying Meilisearch via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+Meilisearch stores all data and indexes in the `MEILI_DB_PATH` directory. In `production` mode, always set a `MEILI_MASTER_KEY` — all requests must include an `Authorization: Bearer <key>` header. Use the Meilisearch dashboard (available in development mode at `http://localhost:7700`) to explore indexes and test queries. Generate scoped API keys for client-side search to prevent users from accessing admin endpoints.

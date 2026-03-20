@@ -168,7 +168,7 @@ consul connect envoy \
 # Open Consul ports for IPv6
 sudo ip6tables -A INPUT -p tcp --dport 8300 -j ACCEPT  # Server RPC
 sudo ip6tables -A INPUT -p tcp --dport 8301 -j ACCEPT  # Serf LAN TCP
-sudo ip6tables -A UDP  --dport 8301 -j ACCEPT          # Serf LAN UDP
+sudo ip6tables -A INPUT -p udp --dport 8301 -j ACCEPT  # Serf LAN UDP
 sudo ip6tables -A INPUT -p tcp --dport 8302 -j ACCEPT  # Serf WAN
 sudo ip6tables -A INPUT -p tcp --dport 8500 -j ACCEPT  # HTTP API
 sudo ip6tables -A INPUT -p udp --dport 8600 -j ACCEPT  # DNS

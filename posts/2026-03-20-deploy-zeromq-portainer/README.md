@@ -4,240 +4,184 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, ZeroMQ, Messaging, Docker, Microservices
 
-Description: Deploy applications using ZeroMQ for high-performance asynchronous messaging via Portainer.
+Description: Deploy applications using ZeroMQ for high-performance asynchronous messaging via Portainer, covering PUB/SUB, PUSH/PULL, and REQ/REP patterns.
 
 ## Introduction
 
-Deploy applications using ZeroMQ for high-performance asynchronous messaging via Portainer. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+ZeroMQ (ZMQ) is a lightweight, high-performance messaging library that runs inside application processes — it has no separate broker process. It provides building blocks for message patterns: PUB/SUB (broadcast), PUSH/PULL (pipeline), and REQ/REP (request-reply). This guide deploys ZeroMQ-based microservices via Portainer.
 
-## Prerequisites
+## ZeroMQ Patterns Overview
 
-- Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+| Pattern | Use Case | Socket Types |
+|---------|----------|-------------|
+| PUB/SUB | Event broadcasting | `zmq.PUB` / `zmq.SUB` |
+| PUSH/PULL | Work distribution (pipeline) | `zmq.PUSH` / `zmq.PULL` |
+| REQ/REP | Remote procedure call | `zmq.REQ` / `zmq.REP` |
 
-## Step 1: Create the Stack in Portainer
+## Step 1: Build Application Images with ZeroMQ
 
-Navigate to **Stacks** > **Add Stack** and use the following configuration:
+Create a `Dockerfile` for your ZeroMQ service:
+
+```dockerfile
+# Dockerfile - Python service with ZeroMQ
+FROM python:3.12-slim
+
+WORKDIR /app
+RUN pip install pyzmq
+
+COPY publisher.py .
+CMD ["python", "publisher.py"]
+```
+
+```python
+# publisher.py - ZeroMQ PUB/SUB publisher
+import zmq
+import json
+import time
+
+context = zmq.Context()
+socket = context.socket(zmq.PUB)
+socket.bind("tcp://0.0.0.0:5556")
+
+print("Publisher started on port 5556")
+
+while True:
+    event = {
+        "type": "order.created",
+        "order_id": 1234,
+        "timestamp": time.time()
+    }
+    # Topic-based routing: "orders " prefix
+    socket.send_string(f"orders {json.dumps(event)}")
+    time.sleep(1)
+```
+
+```python
+# subscriber.py - ZeroMQ PUB/SUB subscriber
+import zmq
+import json
+
+context = zmq.Context()
+socket = context.socket(zmq.SUB)
+socket.connect("tcp://publisher:5556")
+socket.setsockopt_string(zmq.SUBSCRIBE, "orders")  # Subscribe to "orders" topic
+
+print("Subscriber connected, waiting for messages...")
+
+while True:
+    message = socket.recv_string()
+    topic, data = message.split(" ", 1)
+    event = json.loads(data)
+    print(f"Received {topic}: {event}")
+```
+
+## Step 2: Create the Stack in Portainer
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - ZeroMQ PUB/SUB Architecture
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
-    ports:
-      - "service-port:service-port"
-    volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
-    healthcheck:
-      test: ["CMD", "service-healthcheck"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+  publisher:
+    build:
+      context: ./publisher
+      dockerfile: Dockerfile
+    container_name: zmq_publisher
+    restart: unless-stopped
+    expose:
+      - "5556"    # PUB socket (do not expose externally)
     networks:
-      - service-net
+      - zmq_net
 
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
+  subscriber_1:
+    build:
+      context: ./subscriber
+      dockerfile: Dockerfile
+    container_name: zmq_subscriber_1
+    restart: unless-stopped
+    environment:
+      - SUBSCRIBER_ID=1
+    networks:
+      - zmq_net
     depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
-    networks:
-      - service-net
+      - publisher
 
-volumes:
-  service-data:
+  subscriber_2:
+    build:
+      context: ./subscriber
+      dockerfile: Dockerfile
+    container_name: zmq_subscriber_2
+    restart: unless-stopped
+    environment:
+      - SUBSCRIBER_ID=2
+    networks:
+      - zmq_net
+    depends_on:
+      - publisher
 
 networks:
-  service-net:
+  zmq_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
+## Step 3: PUSH/PULL Worker Pool
 
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
-
-```bash
-# Access the application container
-# Portainer > Containers > app > Console
-
-# Test connection to service
-curl http://service:port/health
-
-# Or use service-specific CLI
-service-cli ping
-service-cli info
-
-# View service logs
-docker logs service --tail 50 -f
-```
-
-## Step 4: Production Configuration
-
-For production deployments, enhance security and reliability:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
-```
-
-## Step 7: Scale and High Availability
-
-For high availability, use multiple instances:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-```
-
-## Client Application Integration
-
-Example integration code:
+For task distribution across worker containers:
 
 ```python
-# Python client example
-import service_client
+# task_producer.py - PUSH tasks to workers
+import zmq
+import json
 
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
+context = zmq.Context()
+socket = context.socket(zmq.PUSH)
+socket.bind("tcp://0.0.0.0:5557")
 
-# Test connection
-client.ping()
+for i in range(100):
+    task = {"id": i, "data": f"process item {i}"}
+    socket.send_json(task)
+    print(f"Sent task {i}")
+```
 
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+```python
+# worker.py - PULL tasks and process them
+import zmq
+import os
+
+context = zmq.Context()
+socket = context.socket(zmq.PULL)
+socket.connect("tcp://task_producer:5557")
+
+worker_id = os.getenv("WORKER_ID", "1")
+print(f"Worker {worker_id} ready")
+
+while True:
+    task = socket.recv_json()
+    print(f"Worker {worker_id} processing task {task['id']}")
+    # Process task here
+```
+
+## Step 4: Test Connectivity
+
+```bash
+# Check publisher is sending
+docker logs zmq_publisher --tail 10
+
+# Check subscriber received messages
+docker logs zmq_subscriber_1 --tail 10
+
+# Test ZeroMQ port from inside the network
+docker exec zmq_subscriber_1 python3 -c "
+import zmq
+ctx = zmq.Context()
+s = ctx.socket(zmq.SUB)
+s.connect('tcp://publisher:5556')
+s.setsockopt_string(zmq.SUBSCRIBE, '')
+msg = s.recv_string(flags=zmq.NOBLOCK)
+print('Received:', msg)
+"
 ```
 
 ## Conclusion
 
-Deploying ZeroMQ-Based Applications via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+ZeroMQ runs inside application processes with no separate broker, making it extremely fast (millions of messages/second) and operationally simple. Use PUB/SUB for broadcasting events to multiple consumers, PUSH/PULL for distributing work across a pool of workers, and REQ/REP for synchronous request-reply RPCs. In Docker environments, use Docker service names as ZeroMQ endpoints — subscribers `connect()` to publishers and workers `connect()` to task producers. Never expose ZeroMQ ports externally; keep them within Docker networks.

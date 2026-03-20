@@ -8,267 +8,130 @@ Description: Deploy Baserow open-source no-code database platform using Portaine
 
 ## Introduction
 
-Deploy Baserow open-source no-code database platform using Portainer as a self-hosted Airtable alternative. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Baserow is an open-source no-code database tool that functions as a self-hosted alternative to Airtable. It offers a spreadsheet-like interface backed by PostgreSQL, with REST API auto-generation and real-time collaboration.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- At least 2 GB RAM
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Baserow
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
-    ports:
-      - "8080:8080"
-    volumes:
-      - app-data:/app/data
-      - app-config:/app/config
-    environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
-    networks:
-      - app-net
-
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
-
-volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
-
-networks:
-  app-net:
-    driver: bridge
-```
-
-## Step 3: Configure Environment Variables
-
-Set these environment variables in Portainer's stack editor:
-
-```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
-```
-
-## Step 4: Initialize the Application
-
-After deployment, run the initial setup:
-
-```bash
-# Access via Portainer container console
-
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
+  baserow:
+    image: baserow/baserow:1.25.2
+    container_name: baserow
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
+      - baserow_data:/baserow/data
+    environment:
+      - BASEROW_PUBLIC_URL=http://${BASEROW_DOMAIN}
+      - DATABASE_HOST=baserow_postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=baserow
+      - DATABASE_USER=baserow
+      - DATABASE_PASSWORD=${DB_PASSWORD}
+      - REDIS_URL=redis://baserow_redis:6379
+      - SECRET_KEY=${SECRET_KEY}
+      - EMAIL_SMTP=true
+      - EMAIL_SMTP_HOST=${SMTP_HOST}
+      - EMAIL_SMTP_PORT=587
+      - EMAIL_SMTP_USE_TLS=true
+      - EMAIL_SMTP_USER=${SMTP_USER}
+      - EMAIL_SMTP_PASSWORD=${SMTP_PASSWORD}
+      - FROM_EMAIL=noreply@${BASEROW_DOMAIN}
     depends_on:
-      - app
+      baserow_postgres:
+        condition: service_healthy
+      baserow_redis:
+        condition: service_healthy
     networks:
-      - app-net
-```
+      - baserow_net
 
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
+  baserow_postgres:
+    image: postgres:15-alpine
+    container_name: baserow_postgres
+    restart: unless-stopped
     volumes:
-      - uptime-data:/app/data
+      - baserow_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=baserow
+      - POSTGRES_USER=baserow
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U baserow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - baserow_net
+
+  baserow_redis:
+    image: redis:7-alpine
+    container_name: baserow_redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - baserow_net
+
+volumes:
+  baserow_data:
+  baserow_postgres_data:
+
+networks:
+  baserow_net:
+    driver: bridge
 ```
 
-## Updating to New Versions
+## Step 2: Set Environment Variables in Portainer
 
-Safely update the application:
+```
+BASEROW_DOMAIN=baserow.yourdomain.com
+DB_PASSWORD=your-secure-db-password
+SECRET_KEY=your-50-char-secret-key
+SMTP_HOST=smtp.yourdomain.com
+SMTP_USER=noreply@yourdomain.com
+SMTP_PASSWORD=your-smtp-password
+```
 
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
+## Step 3: Access Baserow
 
-## Troubleshooting Common Issues
+Open `http://<host>` and register your first admin user.
+
+## Step 4: Use the REST API
+
+Baserow auto-generates a REST API for every table:
 
 ```bash
-# Container fails to start
-docker logs app --tail 100
+# Get your API token
+curl -X POST http://baserow.yourdomain.com/api/user/token-auth/ \
+  -H 'Content-Type: application/json' \
+  -d '{"username": "admin@example.com", "password": "your-password"}'
 
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
+# List rows from a table (table ID from URL)
+curl http://baserow.yourdomain.com/api/database/rows/table/1/ \
+  -H 'Authorization: Token <your-token>'
 
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# Create a row
+curl -X POST http://baserow.yourdomain.com/api/database/rows/table/1/ \
+  -H 'Authorization: Token <your-token>' \
+  -H 'Content-Type: application/json' \
+  -d '{"Name": "Alice", "Status": "Active"}'
 ```
 
 ## Conclusion
 
-Deploying Baserow via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Baserow packages all services (web, backend, worker, celery) into the single `baserow/baserow` image for simplified deployment. For production, set a strong `SECRET_KEY` and configure SMTP for invitation emails. Database backups should target the `baserow_postgres` container with `pg_dump`.

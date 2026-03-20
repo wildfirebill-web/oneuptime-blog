@@ -8,236 +8,146 @@ Description: Deploy Apache Pulsar distributed messaging and streaming platform u
 
 ## Introduction
 
-Deploy Apache Pulsar distributed messaging and streaming platform using Portainer for event-driven architectures. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Apache Pulsar is a cloud-native distributed messaging and streaming platform that supports multi-tenancy, geo-replication, and persistent message storage. This guide deploys a standalone Pulsar instance via Portainer Stacks for development and small production workloads.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- At least 4 GB RAM (Pulsar standalone includes broker, bookkeeper, and ZooKeeper)
+- Basic understanding of publish-subscribe messaging
 
 ## Step 1: Create the Stack in Portainer
 
 Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Apache Pulsar Standalone
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  pulsar:
+    image: apachepulsar/pulsar:3.2.0
+    container_name: pulsar
+    restart: unless-stopped
+    command: bin/pulsar standalone
     ports:
-      - "service-port:service-port"
+      - "6650:6650"    # Pulsar binary protocol
+      - "8080:8080"    # HTTP admin API
     volumes:
-      - service-data:/data
+      - pulsar_data:/pulsar/data
+      - pulsar_conf:/pulsar/conf
     environment:
-      - CONFIG_KEY=config-value
+      - PULSAR_MEM=-Xms512m -Xmx512m -XX:MaxDirectMemorySize=256m
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "bin/pulsar-admin", "brokers", "healthcheck"]
       interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+      timeout: 15s
+      retries: 5
+      start_period: 60s
     networks:
-      - service-net
-
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
-    networks:
-      - service-net
+      - pulsar_net
 
 volumes:
-  service-data:
+  pulsar_data:
+  pulsar_conf:
 
 networks:
-  service-net:
+  pulsar_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
-
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 2: Verify Deployment
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Check the broker is ready
+curl http://localhost:8080/admin/v2/brokers/ready
 
-# Test connection to service
-curl http://service:port/health
+# List tenants
+curl http://localhost:8080/admin/v2/tenants
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
-
-# View service logs
-docker logs service --tail 50 -f
+# Check topics
+curl http://localhost:8080/admin/v2/persistent/public/default
 ```
 
-## Step 4: Production Configuration
+## Step 3: Produce and Consume Messages
 
-For production deployments, enhance security and reliability:
+Test using the built-in CLI tools:
+
+```bash
+# Produce a message
+docker exec pulsar bin/pulsar-client produce \
+  persistent://public/default/test-topic \
+  --messages "Hello from Pulsar!"
+
+# Consume messages
+docker exec pulsar bin/pulsar-client consume \
+  persistent://public/default/test-topic \
+  --subscription-name test-sub \
+  --num-messages 10
+```
+
+## Step 4: Python Client Example
+
+```python
+# pip install pulsar-client
+import pulsar
+
+client = pulsar.Client('pulsar://localhost:6650')
+
+# Create a producer
+producer = client.create_producer('persistent://public/default/my-topic')
+producer.send(b'Hello, Pulsar!')
+producer.close()
+
+# Create a consumer
+consumer = client.subscribe(
+    'persistent://public/default/my-topic',
+    subscription_name='my-subscription'
+)
+msg = consumer.receive(timeout_millis=5000)
+print(f"Received: {msg.data()}")
+consumer.acknowledge(msg)
+consumer.close()
+
+client.close()
+```
+
+## Step 5: Create a Topic and Subscription
+
+```bash
+# Create a persistent topic with 5 partitions
+docker exec pulsar bin/pulsar-admin topics create-partitioned-topic \
+  persistent://public/default/orders \
+  --partitions 5
+
+# Create a subscription
+docker exec pulsar bin/pulsar-admin topics create-subscription \
+  persistent://public/default/orders \
+  --subscription order-processor \
+  --messageId earliest
+```
+
+## Step 6: Production Configuration
+
+For production, deploy Pulsar in cluster mode using Helm or the Pulsar Operator. For standalone Docker, increase memory limits:
 
 ```yaml
 services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
+  pulsar:
+    image: apachepulsar/pulsar:3.2.0
+    command: bin/pulsar standalone
     deploy:
       resources:
         limits:
-          cpus: '2.0'
-          memory: 2G
+          cpus: '4.0'
+          memory: 8G
         reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
+          cpus: '1.0'
+          memory: 2G
     environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
-```
-
-## Step 7: Scale and High Availability
-
-For high availability, use multiple instances:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-```
-
-## Client Application Integration
-
-Example integration code:
-
-```python
-# Python client example
-import service_client
-
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
-
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+      - PULSAR_MEM=-Xms2g -Xmx4g -XX:MaxDirectMemorySize=2g
 ```
 
 ## Conclusion
 
-Deploying Apache Pulsar via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+Apache Pulsar in standalone mode provides a complete messaging and streaming platform in a single container. For production workloads requiring high availability and geo-replication, deploy using the Pulsar Kubernetes Operator with separate broker, bookkeeper, and ZooKeeper tiers. The Pulsar admin API at port 8080 provides full topic and tenant management without additional tooling.

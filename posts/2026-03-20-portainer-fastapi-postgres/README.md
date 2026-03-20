@@ -48,6 +48,7 @@ fastapi==0.110.0
 uvicorn[standard]==0.27.1
 sqlalchemy==2.0.27
 alembic==1.13.1
+asyncpg==0.29.0
 psycopg2-binary==2.9.9
 pydantic==2.6.1
 pydantic-settings==2.2.1
@@ -277,4 +278,4 @@ docker exec fastapi-db psql -U fastapiuser -d fastapidb \
 
 ## Conclusion
 
-Deploying FastAPI with PostgreSQL via Portainer provides a high-performance Python API stack with automatic interactive documentation, async database access via SQLAlchemy 2.0, and Alembic for schema migrations. The lifespan context manager handles startup and shutdown cleanly, and the PostgreSQL health check ensures the API only starts after the database is ready. For production, add `asyncpg` to your requirements for full async PostgreSQL support, enable proper CORS restrictions, configure rate limiting, and use Alembic migrations exclusively rather than relying on `create_all`.
+Deploying FastAPI with PostgreSQL via Portainer provides a high-performance Python API stack with automatic interactive documentation, async database access via SQLAlchemy 2.0 and asyncpg, and Alembic for schema migrations. The lifespan context manager handles startup and shutdown cleanly, and the PostgreSQL health check ensures the API only starts after the database is ready. For production, enable proper CORS restrictions, configure rate limiting, and use Alembic migrations exclusively rather than relying on `create_all`.

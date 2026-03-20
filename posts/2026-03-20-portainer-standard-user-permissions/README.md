@@ -62,9 +62,9 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoints/1/teamaccesspolicies \
   -d '{
-    "2": {"RoleId": 2}
+    "2": {"RoleId": 4}
   }'
-# RoleId 2 = Standard User
+# RoleId 4 = Standard User
 
 # Assign individual user (ID: 5) to environment 1
 curl -X PUT \
@@ -72,7 +72,7 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoints/1/useraccesspolicies \
   -d '{
-    "5": {"RoleId": 2}
+    "5": {"RoleId": 4}
   }'
 ```
 

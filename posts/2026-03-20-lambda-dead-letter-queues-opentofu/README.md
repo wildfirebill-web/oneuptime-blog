@@ -98,12 +98,13 @@ resource "aws_lambda_function" "main" {
   dead_letter_config {
     target_arn = aws_sqs_queue.lambda_dlq.arn
   }
+}
 
-  # Async invocation retry configuration
-  async_invocation_config {
-    maximum_retry_attempts       = 2       # Retry up to 2 times before DLQ
-    maximum_event_age_in_seconds = 3600    # Maximum age before discarding
-  }
+# Async invocation retry configuration (separate resource)
+resource "aws_lambda_function_event_invoke_config" "main" {
+  function_name                = aws_lambda_function.main.function_name
+  maximum_retry_attempts       = 2       # Retry up to 2 times before DLQ
+  maximum_event_age_in_seconds = 3600    # Maximum age before discarding
 }
 ```
 

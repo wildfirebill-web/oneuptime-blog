@@ -4,271 +4,115 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Planka, Kanban, Docker, Self-Hosted
 
-Description: Deploy Planka open-source Trello alternative using Portainer for real-time project board management.
+Description: Deploy Planka open-source Kanban board using Portainer as a self-hosted Trello alternative for project management.
 
 ## Introduction
 
-Deploy Planka open-source Trello alternative using Portainer for real-time project board management. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Planka is a fast, open-source Kanban board built with React and Node.js, backed by PostgreSQL. It is a self-hosted alternative to Trello with boards, lists, cards, labels, members, and real-time updates.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Planka
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  planka:
+    image: ghcr.io/plankanban/planka:1.23.1
+    container_name: planka
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "1337:1337"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - planka_user_avatars:/app/public/user-avatars
+      - planka_project_background_images:/app/public/project-background-images
+      - planka_attachments:/app/private/attachments
     environment:
-      - NODE_ENV=production
+      - DATABASE_URL=postgresql://planka:${DB_PASSWORD}@planka_postgres/planka
       - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - BASE_URL=http://${PLANKA_DOMAIN}:1337
+      - DEFAULT_ADMIN_EMAIL=${ADMIN_EMAIL}
+      - DEFAULT_ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - DEFAULT_ADMIN_NAME=Admin
+      - DEFAULT_ADMIN_USERNAME=admin
     depends_on:
-      postgres:
+      planka_postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - planka_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  planka_postgres:
+    image: postgres:16-alpine
+    container_name: planka_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - planka_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=planka
+      - POSTGRES_USER=planka
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U planka"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - planka_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  planka_user_avatars:
+  planka_project_background_images:
+  planka_attachments:
+  planka_postgres_data:
 
 networks:
-  app-net:
+  planka_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
+```
+DB_PASSWORD=your-postgres-password
+SECRET_KEY=your-random-64-char-secret
+PLANKA_DOMAIN=planka.yourdomain.com
+ADMIN_EMAIL=admin@yourdomain.com
+ADMIN_PASSWORD=your-admin-password
+```
+
+Generate a secret key:
+```bash
+openssl rand -hex 64
+```
+
+## Step 3: Access Planka
+
+Open `http://<host>:1337` and log in with your `DEFAULT_ADMIN_EMAIL` and `DEFAULT_ADMIN_PASSWORD`.
+
+## Step 4: Create a Project and Board
+
+1. Click **Create project**
+2. Add lists (e.g., "To Do", "In Progress", "Done")
+3. Create cards within lists
+4. Add labels, due dates, and assign members
+
+## Step 5: Backup Planka Data
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
-```
-
-## Step 4: Initialize the Application
-
-After deployment, run the initial setup:
-
-```bash
-# Access via Portainer container console
-
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
 # Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
+docker exec planka_postgres pg_dump -U planka planka > planka_backup.sql
 
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# Backup file attachments
+docker run --rm -v planka_attachments:/data -v $(pwd):/backup alpine \
+  tar czf /backup/planka_attachments.tar.gz -C /data .
 ```
 
 ## Conclusion
 
-Deploying Planka (Trello Alternative) via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Planka stores all board data in PostgreSQL and files in Docker volumes. The `SECRET_KEY` is used for session signing — if changed, all existing sessions are invalidated. The `BASE_URL` must match the URL you use to access Planka, as it is used for email notifications and avatar generation.

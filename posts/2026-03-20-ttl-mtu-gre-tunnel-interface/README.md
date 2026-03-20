@@ -98,8 +98,8 @@ ip -d tunnel show gre0
 
 ```bash
 # Test with a large packet — should work without fragmentation
-ping -s 1452 -M do -c 3 172.16.0.2
-# -s 1452: payload size (1452 + 28 ICMP/IP = 1480 total, fits in 1476 tunnel MTU)
+ping -s 1448 -M do -c 3 172.16.0.2
+# -s 1448: payload size (1448 + 20 IP + 8 ICMP = 1476 total, exactly fits GRE tunnel MTU)
 # -M do: don't fragment
 
 # If this fails with "Message too long", the MTU setting is incorrect

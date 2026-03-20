@@ -4,179 +4,131 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Strapi, CMS, Docker, Headless CMS
 
-Description: Deploy Strapi headless CMS using Portainer for flexible content management with REST and GraphQL APIs.
+Description: Deploy Strapi open-source headless CMS using Portainer backed by PostgreSQL for content management.
 
 ## Introduction
 
-Deploy Strapi headless CMS using Portainer for flexible content management with REST and GraphQL APIs. Portainer's stack management capabilities make deploying and managing Strapi CMS straightforward for development and production environments.
+Strapi is the leading open-source headless CMS built with Node.js. It generates REST and GraphQL APIs for your content types and provides an admin panel for content editors. This guide deploys Strapi backed by PostgreSQL via Portainer.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
+- At least 1 GB RAM
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Create the Stack in Portainer
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Strapi
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
-    container_name: strapi-cms
-    restart: always
+  strapi:
+    image: strapi/strapi:4.22.0-node18-alpine
+    container_name: strapi
+    restart: unless-stopped
     ports:
-      - "7700:7700"
+      - "1337:1337"
     volumes:
-      - app-data:/data
+      - strapi_app:/srv/app
     environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=strapi_postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=${DB_PASSWORD}
+      - DATABASE_SSL=false
+      - JWT_SECRET=${JWT_SECRET}
+      - ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET}
+      - APP_KEYS=${APP_KEYS}
+      - API_TOKEN_SALT=${API_TOKEN_SALT}
+      - TRANSFER_TOKEN_SALT=${TRANSFER_TOKEN_SALT}
+      - NODE_ENV=production
+    depends_on:
+      strapi_postgres:
+        condition: service_healthy
     networks:
-      - app-net
+      - strapi_net
 
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  strapi_postgres:
+    image: postgres:16-alpine
+    container_name: strapi_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - strapi_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=strapi
+      - POSTGRES_USER=strapi
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U strapi"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
-      - app-net
+      - strapi_net
 
 volumes:
-  app-data:
-  postgres-data:
+  strapi_app:
+  strapi_postgres_data:
 
 networks:
-  app-net:
+  strapi_net:
     driver: bridge
 ```
 
-## Step 2: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set the required environment variables in Portainer's stack editor:
+Generate secrets using:
+```bash
+openssl rand -base64 32
+```
+
+```
+DB_PASSWORD=your-postgres-password
+JWT_SECRET=<generated-base64-secret>
+ADMIN_JWT_SECRET=<generated-base64-secret>
+APP_KEYS=<key1>,<key2>,<key3>,<key4>
+API_TOKEN_SALT=<generated-base64-secret>
+TRANSFER_TOKEN_SALT=<generated-base64-secret>
+```
+
+## Step 3: Access the Strapi Admin Panel
+
+Open `http://<host>:1337/admin` to create your first admin account.
+
+## Step 4: Create a Content Type
+
+1. Go to **Content-Type Builder** in the admin panel
+2. Create a **Collection Type** named `Article`
+3. Add fields: `title` (Text), `content` (Rich Text), `publishedAt` (Date)
+4. Click **Save** — Strapi auto-generates REST and GraphQL endpoints
+
+## Step 5: Use the API
 
 ```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
+# Get your API token: Settings > API Tokens > Create new API Token
+
+# List articles (public)
+curl http://localhost:1337/api/articles
+
+# List with population of relations
+curl http://localhost:1337/api/articles?populate=*
+
+# Create an article (requires token)
+curl -X POST http://localhost:1337/api/articles \
+  -H 'Authorization: Bearer <api-token>' \
+  -H 'Content-Type: application/json' \
+  -d '{"data": {"title": "Hello Strapi", "content": "My first article"}}'
+
+# GraphQL query
+curl -X POST http://localhost:1337/graphql \
+  -H 'Content-Type: application/json' \
+  -d '{"query": "{ articles { data { id attributes { title } } } }"}'
 ```
-
-## Step 3: Initialize the Application
-
-After deployment, complete initial setup:
-
-```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
-
-# Check application health
-curl http://localhost:7700/health
-
-# View startup logs
-docker logs strapi-cms --tail 50
-```
-
-## Step 4: Configure and Test
-
-Test the application functionality:
-
-```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
-
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
-
-# Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
-```
-
-## Step 5: Set Up Reverse Proxy
-
-Expose the service securely via Nginx or Traefik:
-
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Backups
-
-Automate data backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/strapi-cms"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
-```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
 
 ## Conclusion
 
-Deploying Strapi CMS via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+Strapi generates REST and GraphQL APIs automatically when you define content types. The `APP_KEYS` env var is used to sign session cookies and should be 4 unique random base64 strings. In production, set `NODE_ENV=production` to disable the content-type builder (to prevent accidental schema changes). Use the `strapi transfer` command to migrate content between environments.

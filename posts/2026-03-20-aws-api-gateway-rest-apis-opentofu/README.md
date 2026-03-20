@@ -156,8 +156,15 @@ resource "aws_api_gateway_stage" "production" {
   cache_cluster_size    = "0.5"  # 0.5 GB cache
 
   xray_tracing_enabled = true  # Enable X-Ray tracing
+}
 
-  default_route_settings {
+# Stage-level throttling for REST APIs uses aws_api_gateway_method_settings
+resource "aws_api_gateway_method_settings" "all" {
+  rest_api_id = aws_api_gateway_rest_api.main.id
+  stage_name  = aws_api_gateway_stage.production.stage_name
+  method_path = "*/*"  # Apply to all methods
+
+  settings {
     throttling_burst_limit = 5000
     throttling_rate_limit  = 10000
   }

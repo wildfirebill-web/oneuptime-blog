@@ -110,7 +110,7 @@ sysctl -w net.core.wmem_max=16777216
 
 # TCP-specific auto-tuning limits: min / default / max
 sysctl net.ipv4.tcp_rmem    # e.g. "4096 131072 6291456"
-setsockopt -w net.ipv4.tcp_wmem
+sysctl -w net.ipv4.tcp_wmem
 ```
 
 ## Calculating Optimal Buffer Size

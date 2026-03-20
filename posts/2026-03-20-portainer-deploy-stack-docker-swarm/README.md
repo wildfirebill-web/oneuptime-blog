@@ -143,7 +143,7 @@ services:
   # Redis cache
   redis:
     image: redis:7-alpine
-    command: redis-server --appendonly yes --requirepass-file /run/secrets/redis-password
+    command: sh -c "redis-server --appendonly yes --requirepass $$(cat /run/secrets/redis-password)"
     secrets:
       - redis-password
     volumes:

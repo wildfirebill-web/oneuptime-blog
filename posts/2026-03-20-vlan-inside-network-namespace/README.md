@@ -68,8 +68,8 @@ ip link set br0 up
 
 # Allow VLAN traffic through the bridge (VLAN-aware bridge)
 ip link set br0 type bridge vlan_filtering 1
-bridge vlan add dev veth-host vid 10 trunk
-bridge vlan add dev veth-host vid 20 trunk
+bridge vlan add dev veth-host vid 10 tagged
+bridge vlan add dev veth-host vid 20 tagged
 ```
 
 ## Complete Test: Two Namespaces on Different VLANs

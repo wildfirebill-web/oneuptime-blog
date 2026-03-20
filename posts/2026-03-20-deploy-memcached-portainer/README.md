@@ -8,236 +8,166 @@ Description: Deploy Memcached distributed memory caching system using Portainer 
 
 ## Introduction
 
-Deploy Memcached distributed memory caching system using Portainer for high-performance application caching. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Memcached is a high-performance, distributed in-memory key-value store designed for caching database query results, session data, and computed values. This guide deploys Memcached as a Portainer Stack and shows how to connect applications to it.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- At least 256 MB RAM available for Memcached
+- Application that needs caching (optional)
 
 ## Step 1: Create the Stack in Portainer
 
 Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Memcached
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  memcached:
+    image: memcached:1.6-alpine
+    container_name: memcached
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
-    volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
+      - "11211:11211"    # Memcached default port
+    command: >
+      memcached
+      -m 512
+      -c 1024
+      -t 4
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "sh", "-c", "echo stats | nc localhost 11211 | grep -q uptime"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - service-net
+      - cache_net
 
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
+  # Optional: Memcached Prometheus exporter
+  memcached_exporter:
+    image: prom/memcached-exporter:latest
+    container_name: memcached_exporter
+    restart: unless-stopped
+    ports:
+      - "9150:9150"
+    command:
+      - "--memcached.address=memcached:11211"
     depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
+      - memcached
     networks:
-      - service-net
-
-volumes:
-  service-data:
+      - cache_net
 
 networks:
-  service-net:
+  cache_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
+Command flags explained:
+- `-m 512` — allocate 512 MB of memory for caching
+- `-c 1024` — allow up to 1024 simultaneous connections
+- `-t 4` — use 4 threads
 
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 2: Test Connectivity
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Test Memcached from the host using netcat
+echo "stats" | nc localhost 11211
 
-# Test connection to service
-curl http://service:port/health
+# Or from inside a container on the same network
+docker run --rm --network cache_net alpine sh -c \
+  "apk add --no-cache netcat-openbsd && echo 'stats' | nc memcached 11211"
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
-
-# View service logs
-docker logs service --tail 50 -f
+# Expected output shows STAT fields including version, uptime, bytes, curr_items
 ```
 
-## Step 4: Production Configuration
+## Step 3: Python Application Integration
 
-For production deployments, enhance security and reliability:
+```python
+# pip install pymemcache
+from pymemcache.client.base import Client
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
+client = Client(('localhost', 11211))
+
+# Set a value (expires in 300 seconds)
+client.set('user:1000', '{"name": "Alice", "email": "alice@example.com"}', expire=300)
+
+# Get a value
+value = client.get('user:1000')
+print(value.decode())  # {"name": "Alice", "email": "alice@example.com"}
+
+# Delete a value
+client.delete('user:1000')
+
+# Increment/decrement counters
+client.set('page_views', b'0')
+client.incr('page_views', 1)
+count = client.get('page_views')
 ```
 
-## Step 5: Set Up Monitoring
+## Step 4: PHP Application Integration
 
-Monitor service performance through Portainer:
+```php
+// Using the Memcached PHP extension
+$memcached = new Memcached();
+$memcached->addServer('memcached', 11211);
 
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
+// Cache a database result for 10 minutes
+$key = 'product_' . $product_id;
+$product = $memcached->get($key);
+
+if ($product === false) {
+    // Cache miss — fetch from database
+    $product = $db->fetchProduct($product_id);
+    $memcached->set($key, $product, 600);  // Cache for 600 seconds
+}
 ```
 
-Configure Prometheus to scrape metrics:
+## Step 5: Monitor with Prometheus
+
+Configure Prometheus to scrape the Memcached exporter:
 
 ```yaml
 # prometheus.yml
 scrape_configs:
-  - job_name: 'service'
+  - job_name: 'memcached'
     static_configs:
-      - targets: ['service-exporter:9999']
+      - targets: ['memcached_exporter:9150']
 ```
 
-## Step 6: Configure Persistence and Backups
+Key metrics to watch:
+- `memcached_current_bytes` — bytes currently used
+- `memcached_limit_maxbytes` — total cache size
+- `memcached_items_evicted_total` — evictions (increase memory if high)
+- `memcached_get_hit_ratio` — cache hit rate (target > 90%)
 
-Set up data persistence and automated backups:
+## Step 6: Production Configuration
 
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
-```
-
-## Step 7: Scale and High Availability
-
-For high availability, use multiple instances:
+For production, never expose port 11211 publicly. Memcached has no authentication:
 
 ```yaml
 services:
-  service:
-    image: service-image:latest
+  memcached:
+    image: memcached:1.6-alpine
+    restart: unless-stopped
+    # Do NOT expose port 11211 externally in production
+    # Only accessible within the Docker network
+    command: >
+      memcached
+      -m 2048
+      -c 4096
+      -t 8
+      -l 0.0.0.0
     deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-```
-
-## Client Application Integration
-
-Example integration code:
-
-```python
-# Python client example
-import service_client
-
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
-
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+      resources:
+        limits:
+          memory: 2.5G
+        reservations:
+          memory: 2G
+    networks:
+      - cache_net
 ```
 
 ## Conclusion
 
-Deploying Memcached via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+Memcached is ideal for simple key-value caching with very high throughput requirements. It does not support persistence, replication, or authentication — keep it on an internal Docker network. For cache invalidation, use key prefixes with version numbers (e.g., `v2:user:1000`) to invalidate entire groups of keys by changing the prefix. Monitor evictions — if evictions are high, either increase the memory allocation or review your caching strategy.

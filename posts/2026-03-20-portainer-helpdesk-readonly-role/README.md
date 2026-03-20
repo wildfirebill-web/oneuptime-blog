@@ -53,9 +53,9 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoints/1/teamaccesspolicies \
   -d '{
-    "4": {"RoleId": 1}
+    "4": {"RoleId": 3}
   }'
-# RoleId 1 = Helpdesk (Read-Only)
+# RoleId 3 = Helpdesk (Read-Only)
 
 # Assign individual user (ID: 8) to environment 1 with Helpdesk role
 curl -X PUT \
@@ -63,7 +63,7 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoints/1/useraccesspolicies \
   -d '{
-    "8": {"RoleId": 1}
+    "8": {"RoleId": 3}
   }'
 ```
 
@@ -98,7 +98,7 @@ for endpoint_id in $ENDPOINTS; do
     -H "Authorization: Bearer $TOKEN" \
     -H "Content-Type: application/json" \
     "https://portainer.example.com/api/endpoints/${endpoint_id}/teamaccesspolicies" \
-    -d "{\"${TEAM_ID}\": {\"RoleId\": 1}}"
+    -d "{\"${TEAM_ID}\": {\"RoleId\": 3}}"
 done
 ```
 

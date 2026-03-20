@@ -79,7 +79,7 @@ def parse_fragment_header(data: bytes) -> dict:
         raise ValueError(f"Fragment header requires 8 bytes, got {len(data)}")
 
     next_header, reserved, offset_and_flags, identification = struct.unpack(
-        "!BBHl", data[:8]
+        "!BBHI", data[:8]
     )
 
     # offset_and_flags: 13 bits offset | 2 bits reserved | 1 bit M
@@ -94,7 +94,7 @@ def parse_fragment_header(data: bytes) -> dict:
         "fragment_offset_units": fragment_offset_units,
         "fragment_offset_bytes": fragment_offset_bytes,
         "more_fragments": bool(more_fragments),
-        "identification": identification & 0xFFFFFFFF,  # Treat as unsigned
+        "identification": identification,
         "is_first_fragment": fragment_offset_units == 0,
         "is_last_fragment": not bool(more_fragments),
         "is_atomic_fragment": fragment_offset_units == 0 and not bool(more_fragments),
@@ -102,7 +102,7 @@ def parse_fragment_header(data: bytes) -> dict:
 
 # Example: Parse a fragment header for the second fragment
 # Next Header = 6 (TCP), Offset = 184 bytes (23 units of 8), M=1, ID=0xABCD1234
-second_fragment_header = struct.pack("!BBHl", 6, 0, (23 << 3) | 1, 0xABCD1234)
+second_fragment_header = struct.pack("!BBHI", 6, 0, (23 << 3) | 1, 0xABCD1234)
 result = parse_fragment_header(second_fragment_header)
 
 for key, value in result.items():
@@ -134,7 +134,7 @@ def build_fragment_header(
     more_bit = 1 if more_fragments else 0
     offset_and_flags = (offset_units << 3) | more_bit
 
-    return struct.pack("!BBHl", next_header, 0, offset_and_flags, identification)
+    return struct.pack("!BBHI", next_header, 0, offset_and_flags, identification)
 
 # Build fragment headers for a 3000-byte UDP payload fragmented at 1480-byte boundary
 # Fragment 1: offset=0, more=True

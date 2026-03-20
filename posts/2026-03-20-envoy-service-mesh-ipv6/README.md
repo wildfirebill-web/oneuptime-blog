@@ -215,7 +215,7 @@ curl http://[::1]:9901/stats | grep "upstream_cx_total"
 ```yaml
 # Options for cluster DNS resolution:
 # AUTO: Try IPv6 first, fall back to IPv4 (default)
-# V4_ONLY: Only resolve IPv4 AAAA queries
+# V4_ONLY: Only resolve IPv4 A records (not AAAA)
 # V6_ONLY: Only resolve IPv6 AAAA queries
 # V4_PREFERRED: Prefer IPv4 but use IPv6 if unavailable
 # ALL: Return both IPv4 and IPv6 addresses

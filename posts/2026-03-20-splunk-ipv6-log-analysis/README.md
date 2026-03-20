@@ -145,7 +145,7 @@ fc00::/7,Unique local,ula
 ```splunk
 # Enrich logs with subnet information
 | inputlookup ipv6_subnets.csv
-| eval prefix_bits=tonumber(split(network,"/")#1)
+| eval prefix_bits=tonumber(split(network,"/")[1])
 ```
 
 ## Conclusion

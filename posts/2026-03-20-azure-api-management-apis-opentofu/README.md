@@ -1,6 +1,6 @@
 # How to Create Azure API Management APIs with OpenTofu
 
-Author: [nawazdhandala](https https://www.github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure, API Management, APIM, API Policies, Infrastructure as Code
 

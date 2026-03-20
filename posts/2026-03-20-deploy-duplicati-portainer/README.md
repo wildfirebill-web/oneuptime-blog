@@ -8,267 +8,107 @@ Description: Deploy Duplicati backup solution using Portainer to automate encryp
 
 ## Introduction
 
-Deploy Duplicati backup solution using Portainer to automate encrypted backups to cloud storage providers. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Duplicati is a free, open-source backup client that stores encrypted, incremental, compressed backups on cloud storage services (S3, Backblaze B2, Google Drive, SFTP, etc.) and local destinations. It runs as a web-based daemon that you access via a browser.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- A backup destination (S3 bucket, B2 bucket, SFTP server, etc.)
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Duplicati
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8200:8200"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - duplicati_config:/config
+      - /var/lib/docker/volumes:/source:ro    # Back up Docker volumes (read-only)
+      - /opt/backups:/backups                 # Local backup destination (optional)
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI_PASSWORD}
     networks:
-      - app-net
-
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - duplicati_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  duplicati_config:
 
 networks:
-  app-net:
+  duplicati_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
+```
+DUPLICATI_PASSWORD=your-web-ui-password
+```
+
+## Step 3: Access the Web UI
+
+Open `http://<host>:8200` in your browser. Enter the password you set in `DUPLICATI_PASSWORD`.
+
+## Step 4: Create a Backup Job
+
+1. Click **Add backup** > **Configure a new backup**
+2. Give your backup a name and set an encryption passphrase
+3. Choose a destination (e.g., S3):
+   - Bucket name: `my-backup-bucket`
+   - AWS Access Key ID / Secret Access Key
+   - Folder path: `duplicati/myserver`
+4. Select source folders (e.g., `/source/important_volume/_data`)
+5. Set a schedule (e.g., daily at 2:00 AM)
+6. Click **Save**
+
+## Step 5: Back Up to S3-Compatible Storage
+
+For S3 or S3-compatible destinations (MinIO, Backblaze B2):
+
+```
+Destination URL format:
+s3://s3.amazonaws.com/my-bucket/backups/?auth-username=AKIAXXXXXX&auth-password=YOUR_SECRET
+```
+
+For Backblaze B2:
+```
+b2://account_id:application_key@bucket-name/path
+```
+
+## Step 6: Test Restore
+
+1. In the Duplicati web UI, click **Restore**
+2. Select the backup job and a restore point
+3. Choose files to restore
+4. Select a destination (original location or a different path)
+5. Click **Restore**
+
+## Step 7: Monitor Backup Status via CLI
 
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
-```
+# Check Duplicati process inside the container
+docker exec duplicati duplicati-cli help
 
-## Step 4: Initialize the Application
-
-After deployment, run the initial setup:
-
-```bash
-# Access via Portainer container console
-
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# List backups via CLI (requires server to be running)
+docker exec duplicati duplicati-cli list \
+  "s3://s3.amazonaws.com/my-bucket/backups/" \
+  --auth-username=AKIAXXXXXX \
+  --auth-password=YOUR_SECRET \
+  --encryption-module=aes \
+  --passphrase="your-encryption-passphrase"
 ```
 
 ## Conclusion
 
-Deploying Duplicati for Backup Management via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Duplicati uses block-level deduplication and AES-256 encryption before uploading to the destination — your backup provider never sees unencrypted data. The `PUID`/`PGID` environment variables ensure the container runs as a non-root user with appropriate file permissions. Mount source directories as read-only (`ro`) to prevent accidental modification during backup.

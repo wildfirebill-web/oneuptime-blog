@@ -61,6 +61,13 @@ variable "allow_public_access" {
 # Bucket always has encryption, versioning, and access logging
 resource "aws_s3_bucket" "this" {
   bucket = "${var.environment}-${var.bucket_name}"
+
+  tags = {
+    Environment = var.environment
+    Team        = var.team
+    ManagedBy   = "opentofu"
+    Module      = "storage/s3-bucket"
+  }
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "this" {
@@ -83,18 +90,6 @@ resource "aws_s3_bucket_public_access_block" "this" {
   block_public_policy     = !var.allow_public_access
   ignore_public_acls      = !var.allow_public_access
   restrict_public_buckets = !var.allow_public_access
-}
-
-# Enforce standard tags — module users can't forget them
-resource "aws_s3_bucket" "this" {
-  bucket = "${var.environment}-${var.bucket_name}"
-
-  tags = {
-    Environment = var.environment
-    Team        = var.team
-    ManagedBy   = "opentofu"
-    Module      = "storage/s3-bucket"
-  }
 }
 ```
 

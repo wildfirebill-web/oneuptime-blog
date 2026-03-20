@@ -89,8 +89,11 @@ tshark -r capture.pcap   -o "tls.keylog_file:/tmp/tls-keys.log"   -Y "http"   -T
 ## Enable in curl and Python
 
 ```bash
-# curl
-curl -v --tls-earlydata /tmp/tls-keys.log https://api.example.com/
+# curl (requires curl 8.6+)
+curl -v --sslkeylogfile /tmp/tls-keys.log https://api.example.com/
+
+# Older curl versions: use environment variable
+SSLKEYLOGFILE=/tmp/tls-keys.log curl -v https://api.example.com/
 
 # Python requests (via urllib3 keylog)
 SSLKEYLOGFILE=/tmp/tls-keys.log python3 my_script.py

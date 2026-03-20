@@ -71,10 +71,8 @@ services:
       replicas: 1
     secrets:
       - db_password
-      - db_root_password
     environment:
       POSTGRES_PASSWORD_FILE: /run/secrets/db_password
-      POSTGRES_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
     networks:
       - app-network
 
@@ -92,8 +90,6 @@ services:
 
 secrets:
   db_password:
-    external: true
-  db_root_password:
     external: true
   app_secret_key:
     external: true

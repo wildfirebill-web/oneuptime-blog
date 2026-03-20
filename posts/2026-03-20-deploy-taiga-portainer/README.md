@@ -4,271 +4,159 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Taiga, Project Management, Docker, Self-Hosted
 
-Description: Deploy Taiga open-source agile project management platform using Portainer for team productivity.
+Description: Deploy Taiga open-source agile project management platform using Portainer for Scrum and Kanban workflows.
 
 ## Introduction
 
-Deploy Taiga open-source agile project management platform using Portainer for team productivity. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Taiga is an open-source agile project management platform supporting Scrum, Kanban, and issue tracking. It features a clean UI, epics, user stories, sprints, backlogs, and wikis. This guide deploys Taiga using the official Docker Compose setup.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- At least 2 GB RAM
+- A domain name for `TAIGA_SITES_DOMAIN`
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Taiga
 version: "3.8"
 
-services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
-    ports:
-      - "8080:8080"
-    volumes:
-      - app-data:/app/data
-      - app-config:/app/config
-    environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
-    networks:
-      - app-net
+x-environment: &default-back-environment
+  POSTGRES_DB: taiga
+  POSTGRES_USER: taiga
+  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  POSTGRES_HOST: taiga-db
+  TAIGA_SECRET_KEY: ${TAIGA_SECRET_KEY}
+  TAIGA_SITES_SCHEME: http
+  TAIGA_SITES_DOMAIN: ${TAIGA_DOMAIN}
+  TAIGA_SUBPATH: ""
 
-  postgres:
+services:
+  taiga-db:
     image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    container_name: taiga_db
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - taiga_db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: taiga
+      POSTGRES_USER: taiga
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U taiga"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
+      - taiga_net
 
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
+  taiga-back:
+    image: taigaio/taiga-back:6.8.1
+    container_name: taiga_back
+    restart: unless-stopped
     volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
+      - taiga_static:/taiga-back/static
+      - taiga_media:/taiga-back/media
+    environment:
+      <<: *default-back-environment
+      ENABLE_TELEMETRY: "False"
+    depends_on:
+      taiga-db:
+        condition: service_healthy
+      taiga-events-rabbitmq:
+        condition: service_started
     networks:
-      - app-net
+      - taiga_net
+
+  taiga-async:
+    image: taigaio/taiga-back:6.8.1
+    container_name: taiga_async
+    restart: unless-stopped
+    command: ["/taiga-back/docker/async_entrypoint.sh"]
+    volumes:
+      - taiga_static:/taiga-back/static
+      - taiga_media:/taiga-back/media
+    environment:
+      <<: *default-back-environment
+    depends_on:
+      - taiga-back
+    networks:
+      - taiga_net
+
+  taiga-front:
+    image: taigaio/taiga-front:6.8.1
+    container_name: taiga_front
+    restart: unless-stopped
+    environment:
+      TAIGA_URL: http://${TAIGA_DOMAIN}
+      TAIGA_WEBSOCKETS_URL: ws://${TAIGA_DOMAIN}
+    networks:
+      - taiga_net
+
+  taiga-events-rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    container_name: taiga_rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_ERLANG_COOKIE: ${RABBITMQ_ERLANG_COOKIE}
+      RABBITMQ_DEFAULT_USER: taiga
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
+    networks:
+      - taiga_net
+
+  taiga-gateway:
+    image: nginx:1.25-alpine
+    container_name: taiga_gateway
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./taiga.conf:/etc/nginx/conf.d/default.conf:ro
+      - taiga_static:/taiga/static:ro
+      - taiga_media:/taiga/media:ro
+    depends_on:
+      - taiga-front
+      - taiga-back
+    networks:
+      - taiga_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  taiga_db_data:
+  taiga_static:
+  taiga_media:
 
 networks:
-  app-net:
+  taiga_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
-
-```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+```
+POSTGRES_PASSWORD=your-postgres-password
+TAIGA_SECRET_KEY=your-secret-key-min-32-chars
+TAIGA_DOMAIN=taiga.yourdomain.com
+RABBITMQ_ERLANG_COOKIE=your-erlang-cookie
+RABBITMQ_PASSWORD=your-rabbitmq-password
 ```
 
-## Step 4: Initialize the Application
+## Step 3: Access Taiga
 
-After deployment, run the initial setup:
+Open `http://<host>` and log in with default credentials:
+- Username: `admin`
+- Password: `123123`
 
-```bash
-# Access via Portainer container console
+Change the password immediately after login.
 
-# Run database migrations
-docker exec app ./manage.py migrate
+## Step 4: Create a Project
 
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Automated Backups
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
-```
+1. Click **New Project**
+2. Choose **Scrum** or **Kanban**
+3. Add team members, create user stories, and organize sprints
 
 ## Conclusion
 
-Deploying Taiga (Project Management) via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Taiga's architecture separates backend (Django), frontend (Angular), async workers, and real-time events (via RabbitMQ). All user-uploaded media is stored in the `taiga_media` volume. The nginx gateway serves static assets and proxies API requests. For production, configure SMTP via `DEFAULT_FROM_EMAIL` and `EMAIL_*` environment variables in the backend service.

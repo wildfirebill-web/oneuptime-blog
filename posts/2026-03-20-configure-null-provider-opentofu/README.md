@@ -15,43 +15,36 @@ The Null provider for OpenTofu enables managing Null resources with the same pla
 ```hcl
 terraform {
   required_providers {
-    # Replace with the actual provider source
-    provider_name = {
-      source  = "provider-namespace/provider-name"
-      version = "~> 1.0"
+    null = {
+      source  = "hashicorp/null"
+      version = "~> 3.0"
     }
   }
   required_version = ">= 1.6.0"
 }
 ```
 
-## Authentication
+## Provider Configuration
 
-Most providers read credentials from environment variables:
-
-```bash
-# Set provider credentials via environment variables
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_API_SECRET="your-api-secret"
-```
+The null provider requires no configuration — it has no external service to authenticate with:
 
 ```hcl
-provider "provider_name" {
-  # Credentials are read from environment variables
-  # api_key = var.api_key  # Alternative: inline (not recommended)
-}
+provider "null" {}
 ```
 
-## Example Resource
+## null_resource Example
+
+`null_resource` runs local-exec or remote-exec provisioners without creating a real infrastructure resource:
 
 ```hcl
-# Example resource demonstrating provider usage
-resource "provider_example_resource" "main" {
-  name = "${var.name}-${var.environment}"
+resource "null_resource" "run_script" {
+  # Re-run triggers when this value changes
+  triggers = {
+    script_hash = filemd5("${path.module}/scripts/bootstrap.sh")
+  }
 
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
+  provisioner "local-exec" {
+    command = "bash ${path.module}/scripts/bootstrap.sh"
   }
 }
 ```
@@ -66,16 +59,15 @@ variable "environment" { type = string }
 ## Outputs
 
 ```hcl
-output "resource_id" { value = provider_example_resource.main.id }
+output "null_resource_id" { value = null_resource.run_script.id }
 ```
 
 ## Best Practices
 
-- Store API keys in environment variables or a secrets manager—never in .tf files
-- Pin provider versions in `required_providers` to prevent unexpected updates
+- Use `triggers` to control when a `null_resource` re-runs its provisioners
+- Prefer dedicated provider resources over `null_resource` with provisioners where possible
 - Commit the `.terraform.lock.hcl` file to lock exact provider versions
-- Use separate provider configurations per environment using aliases or workspaces
 
 ## Conclusion
 
-Managing Null resources with OpenTofu brings the same consistency and auditability to SaaS tooling as you get with cloud infrastructure. Start by codifying your most critical resources and gradually expand coverage over time.
+The `null` provider's primary use case is running provisioners tied to the OpenTofu lifecycle. Use `null_resource` with `triggers` to re-run scripts when specific inputs change, such as a file hash or a version string.

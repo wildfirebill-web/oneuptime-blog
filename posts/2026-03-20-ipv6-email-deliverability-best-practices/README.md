@@ -112,9 +112,9 @@ dnsbls = [
 ]
 
 # Reverse the IPv6 address for DNSBL lookup
-reversed_ip = ".".join(
-    reversed("".join(ip.split(":")))
-)
+import ipaddress
+expanded = ipaddress.IPv6Address(ip).exploded.replace(":", "")
+reversed_ip = ".".join(reversed(expanded))
 
 for dnsbl in dnsbls:
     query = f"{reversed_ip}.{dnsbl}"

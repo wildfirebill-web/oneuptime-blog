@@ -8,236 +8,157 @@ Description: Deploy NATS high-performance messaging system using Portainer for c
 
 ## Introduction
 
-Deploy NATS high-performance messaging system using Portainer for cloud-native microservices communication. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+NATS is a lightweight, high-performance messaging system designed for cloud-native applications. It supports publish-subscribe, request-reply, and queue group patterns with extremely low latency. NATS JetStream (included since NATS 2.2) adds persistence, stream replay, and consumer tracking.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- Basic understanding of publish-subscribe messaging
 
-## Step 1: Create the Stack in Portainer
+## Step 1: Deploy NATS with JetStream
 
 Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - NATS with JetStream
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  nats:
+    image: nats:2.10-alpine
+    container_name: nats
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
+      - "4222:4222"    # Client connections
+      - "8222:8222"    # HTTP monitoring
+      - "6222:6222"    # Cluster connections (for multi-node)
+    command: >
+      -js
+      -sd /data
+      -m 8222
+      -n nats-server
     volumes:
-      - service-data:/data
-    environment:
-      - CONFIG_KEY=config-value
+      - nats_data:/data
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "wget", "--quiet", "--output-document=-", "http://localhost:8222/healthz"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - service-net
-
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
-    networks:
-      - service-net
+      - nats_net
 
 volumes:
-  service-data:
+  nats_data:
 
 networks:
-  service-net:
+  nats_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
-
-Create configuration files via Portainer's Configs section:
-
-```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
-```
-
-## Step 3: Test the Connection
-
-After deployment, test from Portainer's container console:
+## Step 2: Verify Deployment
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Check server health
+curl http://localhost:8222/healthz
+# Returns: {"status":"ok","now":"..."}
 
-# Test connection to service
-curl http://service:port/health
+# View server info
+curl http://localhost:8222/varz | python3 -m json.tool | grep -E "version|max_connections|uptime"
 
-# Or use service-specific CLI
-service-cli ping
-service-cli info
-
-# View service logs
-docker logs service --tail 50 -f
+# Check JetStream status
+curl http://localhost:8222/jsz
 ```
 
-## Step 4: Production Configuration
-
-For production deployments, enhance security and reliability:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
+## Step 3: Install NATS CLI and Test
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# Install nats CLI
+curl -L https://github.com/nats-io/natscli/releases/latest/download/nats-linux-amd64.zip \
+  -o nats.zip && unzip nats.zip && sudo mv nats /usr/local/bin/
 
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
+# Connect and publish a message
+nats pub test.subject "Hello NATS!" --server nats://localhost:4222
 
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
+# Subscribe to messages
+nats sub test.subject --server nats://localhost:4222
 ```
 
-## Step 7: Scale and High Availability
+## Step 4: JetStream Streams and Consumers
 
-For high availability, use multiple instances:
+```bash
+# Create a stream for order events
+nats stream add ORDERS \
+  --subjects "orders.>" \
+  --storage file \
+  --retention limits \
+  --max-age 7d \
+  --server nats://localhost:4222
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
+# Create a durable consumer
+nats consumer add ORDERS order-processor \
+  --filter "orders.created" \
+  --ack explicit \
+  --deliver all \
+  --server nats://localhost:4222
+
+# Publish to the stream
+nats pub orders.created '{"id": "1234", "item": "widget"}' \
+  --server nats://localhost:4222
+
+# Consume messages
+nats consumer next ORDERS order-processor \
+  --server nats://localhost:4222
 ```
 
-## Client Application Integration
-
-Example integration code:
+## Step 5: Python Client Example
 
 ```python
-# Python client example
-import service_client
+# pip install nats-py
+import asyncio
+import nats
 
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
+async def main():
+    nc = await nats.connect("nats://localhost:4222")
 
-# Test connection
-client.ping()
+    # Publish
+    await nc.publish("orders.created", b'{"id": "1234"}')
 
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
+    # Subscribe
+    async def message_handler(msg):
+        print(f"Received on {msg.subject}: {msg.data.decode()}")
+        await msg.ack()
+
+    # Create JetStream context
+    js = nc.jetstream()
+    await js.subscribe("orders.>", cb=message_handler, durable="my-consumer")
+
+    await asyncio.sleep(5)
+    await nc.drain()
+
+asyncio.run(main())
 ```
+
+## Step 6: NATS with Authentication
+
+For production, enable token or credentials authentication:
+
+```yaml
+services:
+  nats:
+    image: nats:2.10-alpine
+    command: >
+      -js
+      -sd /data
+      -m 8222
+      --auth my-secure-token-here
+    volumes:
+      - nats_data:/data
+    networks:
+      - nats_net
+```
+
+Connect with: `nats pub subject "msg" --server nats://my-secure-token-here@localhost:4222`
 
 ## Conclusion
 
-Deploying NATS via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+NATS is exceptionally fast (millions of messages/second on modest hardware) and operationally simple. Use core NATS for ephemeral pub-sub patterns and fire-and-forget messaging. Enable JetStream (`-js`) when you need persistent streams, at-least-once delivery guarantees, or consumer tracking. The HTTP monitoring port (8222) provides real-time visibility into server and stream health without additional tooling.

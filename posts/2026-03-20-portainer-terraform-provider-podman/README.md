@@ -17,7 +17,7 @@ The Portainer Terraform provider lets you manage Portainer resources (environmen
 terraform {
   required_providers {
     portainer = {
-      source  = "splightplatform/portainer"
+      source  = "portainer/portainer"
       version = "~> 1.0"
     }
   }

@@ -61,8 +61,9 @@ module "vpc" {
 
 ```hcl
 # ~/.terraform.rc - authenticate with GitLab
+# Set TF_TOKEN_gitlab_company_com env var, or use a literal token:
 credentials "gitlab.company.com" {
-  token = var.gitlab_token  # Or set GITLAB_TOKEN env var
+  token = "your-gitlab-personal-access-token"
 }
 ```
 

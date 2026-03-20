@@ -8,7 +8,7 @@ Description: A guide to using ephemeral variables in OpenTofu to pass secrets th
 
 ## Introduction
 
-Ephemeral variables in OpenTofu (introduced in 1.10) are a special type of variable whose values are never stored in the state file. Unlike regular sensitive variables that are stored in state (but redacted in output), ephemeral variables exist only during the plan and apply execution. This makes them ideal for temporary credentials, one-time tokens, and secrets that should never persist.
+Ephemeral variables in OpenTofu (introduced in 1.11) are a special type of variable whose values are never stored in the state file. Unlike regular sensitive variables that are stored in state (but redacted in output), ephemeral variables exist only during the plan and apply execution. This makes them ideal for temporary credentials, one-time tokens, and secrets that should never persist.
 
 ## Declaring Ephemeral Variables
 

@@ -1,81 +1,214 @@
-# How to Datadog Synthetic Tests with OpenTofu
+# How to Manage Datadog Synthetic Tests with OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Provider, Automation, DevOps
+Tags: OpenTofu, Datadog, Infrastructure as Code, Synthetic Tests, Uptime Monitoring, API Tests
 
-Description: Learn how to configure and use the Datadog Synthetic Tests provider in OpenTofu to manage Datadog Synthetic Tests resources as code.
+Description: Learn how to create Datadog synthetic API tests and browser tests with assertions and alerting using OpenTofu.
 
 ## Introduction
 
-The Datadog Synthetic Tests provider for OpenTofu enables managing Datadog Synthetic Tests resources with the same plan/apply workflow as your cloud infrastructure. This guide covers authentication, basic resource configuration, and production best practices.
+Datadog Synthetic Tests proactively monitor your APIs and browser flows from Datadog-managed test locations worldwide. Managing synthetic tests as code with OpenTofu ensures consistent test coverage across environments and makes test configuration reviewable.
 
-## Provider Installation
+## Prerequisites
+
+- OpenTofu v1.6+
+- Datadog API key and Application key with `synthetics_write` permission
+- The `DataDog/datadog` OpenTofu provider
+
+## Provider Configuration
 
 ```hcl
 terraform {
+  required_version = ">= 1.6.0"
   required_providers {
-    # Replace with the actual provider source
-    provider_name = {
-      source  = "provider-namespace/provider-name"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
-  required_version = ">= 1.6.0"
+}
+
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
 }
 ```
 
-## Authentication
-
-Most providers read credentials from environment variables:
-
-```bash
-# Set provider credentials via environment variables
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_API_SECRET="your-api-secret"
-```
+## API HTTP Test
 
 ```hcl
-provider "provider_name" {
-  # Credentials are read from environment variables
-  # api_key = var.api_key  # Alternative: inline (not recommended)
-}
-```
+# synthetic_tests.tf
 
-## Example Resource
+resource "datadog_synthetics_test" "api_health" {
+  name    = "[${var.environment}] API Health Check"
+  type    = "api"
+  subtype = "http"
+  status  = "live"
 
-```hcl
-# Example resource demonstrating provider usage
-resource "provider_example_resource" "main" {
-  name = "${var.name}-${var.environment}"
-
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
+  request_definition {
+    method = "GET"
+    url    = "https://api.${var.domain}/health"
   }
+
+  request_headers = {
+    "Content-Type"  = "application/json"
+    "X-Environment" = var.environment
+  }
+
+  assertion {
+    type     = "statusCode"
+    operator = "is"
+    target   = "200"
+  }
+
+  assertion {
+    type     = "responseTime"
+    operator = "lessThan"
+    target   = "2000"  # 2 seconds max
+  }
+
+  assertion {
+    type     = "body"
+    operator = "contains"
+    target   = "\"status\":\"ok\""
+  }
+
+  locations = ["aws:us-east-1", "aws:eu-west-1", "aws:ap-southeast-1"]
+
+  options_list {
+    tick_every = 60  # Run every 60 seconds
+
+    retry {
+      count    = 2
+      interval = 300  # 300ms between retries
+    }
+
+    monitor_options {
+      renotify_interval = 120
+    }
+  }
+
+  tags = ["env:${var.environment}", "service:api", "managed-by:opentofu"]
 }
 ```
 
-## Variables
+## Multi-Step API Test
 
 ```hcl
-variable "name"        { type = string }
-variable "environment" { type = string }
+resource "datadog_synthetics_test" "user_workflow" {
+  name    = "[${var.environment}] User Login Workflow"
+  type    = "api"
+  subtype = "multi"
+  status  = "live"
+
+  api_step {
+    name = "Step 1: Login"
+    subtype = "http"
+    request_definition {
+      method = "POST"
+      url    = "https://api.${var.domain}/auth/login"
+      body   = jsonencode({ email = "test@example.com", password = "{{ DD_TEST_PASSWORD }}" })
+    }
+    assertion {
+      type     = "statusCode"
+      operator = "is"
+      target   = "200"
+    }
+    extracted_value {
+      name   = "AUTH_TOKEN"
+      type   = "http_body"
+      field  = "token"
+      parser {
+        type  = "json_path"
+        value = "$.token"
+      }
+    }
+  }
+
+  api_step {
+    name    = "Step 2: Get User Profile"
+    subtype = "http"
+    request_definition {
+      method = "GET"
+      url    = "https://api.${var.domain}/users/me"
+    }
+    request_headers = {
+      "Authorization" = "Bearer {{ AUTH_TOKEN }}"
+    }
+    assertion {
+      type     = "statusCode"
+      operator = "is"
+      target   = "200"
+    }
+  }
+
+  locations = ["aws:us-east-1", "aws:eu-west-1"]
+
+  options_list {
+    tick_every = 300  # Run every 5 minutes
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
+```
+
+## SSL Certificate Test
+
+```hcl
+resource "datadog_synthetics_test" "ssl_cert" {
+  name    = "[${var.environment}] SSL Certificate Expiry"
+  type    = "api"
+  subtype = "ssl"
+  status  = "live"
+
+  request_definition {
+    host = "api.${var.domain}"
+    port = "443"
+  }
+
+  assertion {
+    type     = "certificate"
+    operator = "isInMoreThan"
+    target   = "30"  # Alert if cert expires in < 30 days
+  }
+
+  locations = ["aws:us-east-1"]
+
+  options_list {
+    tick_every            = 86400  # Check daily
+    accept_self_signed    = false
+    check_certificate_revocation = true
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu"]
+}
 ```
 
 ## Outputs
 
 ```hcl
-output "resource_id" { value = provider_example_resource.main.id }
+output "api_health_test_id" {
+  description = "ID of the API health synthetic test"
+  value       = datadog_synthetics_test.api_health.id
+}
+
+output "api_health_monitor_id" {
+  description = "Monitor ID automatically created for the synthetic test"
+  value       = datadog_synthetics_test.api_health.monitor_id
+}
 ```
 
-## Best Practices
+## Deploy
 
-- Store API keys in environment variables or a secrets manager—never in .tf files
-- Pin provider versions in `required_providers` to prevent unexpected updates
-- Commit the `.terraform.lock.hcl` file to lock exact provider versions
-- Use separate provider configurations per environment using aliases or workspaces
+```bash
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
+
+tofu init
+tofu apply
+```
 
 ## Conclusion
 
-Managing Datadog Synthetic Tests resources with OpenTofu brings the same consistency and auditability to SaaS tooling as you get with cloud infrastructure. Start by codifying your most critical resources and gradually expand coverage over time.
+Datadog synthetic tests managed with OpenTofu make API coverage reproducible and reviewable. Use `api` + `http` subtype for single endpoint checks, `api` + `multi` for multi-step workflows like login flows, and `api` + `ssl` for certificate expiry monitoring. Each synthetic test automatically creates a Datadog monitor — use `monitor_id` in the output to reference it in SLO definitions. Test from multiple `locations` to detect regional outages.

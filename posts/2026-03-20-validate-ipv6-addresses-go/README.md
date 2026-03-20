@@ -50,6 +50,7 @@ package main
 
 import (
     "errors"
+    "fmt"
     "net/netip"
 )
 

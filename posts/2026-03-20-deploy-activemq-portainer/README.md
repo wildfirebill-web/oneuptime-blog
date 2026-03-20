@@ -2,242 +2,176 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, ActiveMQ, Messaging, Docker, JMS
+Tags: Portainer, ActiveMQ, Messaging, Docker, JMS, AMQP
 
-Description: Deploy Apache ActiveMQ message broker using Portainer for enterprise messaging and JMS-based applications.
+Description: Deploy Apache ActiveMQ Classic or ActiveMQ Artemis message broker as a Docker container using Portainer Stacks for enterprise messaging and JMS-based applications.
 
 ## Introduction
 
-Deploy Apache ActiveMQ message broker using Portainer for enterprise messaging and JMS-based applications. This guide provides step-by-step instructions for deploying and configuring this service in your containerized infrastructure.
+Apache ActiveMQ is a popular open-source message broker supporting JMS, AMQP, STOMP, MQTT, and WebSocket protocols. This guide deploys ActiveMQ Classic (v5) and ActiveMQ Artemis (next-gen) via Portainer Stacks.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2 GB RAM available
-- Basic understanding of messaging/caching concepts
+- At least 1 GB RAM available
+- Basic understanding of message brokers
 
-## Step 1: Create the Stack in Portainer
+## Option 1: Deploy ActiveMQ Classic (v5)
 
-Navigate to **Stacks** > **Add Stack** and use the following configuration:
+ActiveMQ Classic is the traditional broker widely used in Java EE environments.
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - ActiveMQ Classic
 version: "3.8"
 
 services:
-  # Main service
-  service:
-    image: service-image:latest
-    container_name: service
-    restart: always
+  activemq:
+    image: rmohr/activemq:latest
+    container_name: activemq
+    restart: unless-stopped
     ports:
-      - "service-port:service-port"
+      - "61616:61616"   # JMS/AMQP/STOMP/MQTT transport
+      - "8161:8161"     # Web console
+      - "5672:5672"     # AMQP
+      - "61613:61613"   # STOMP
+      - "1883:1883"     # MQTT
     volumes:
-      - service-data:/data
+      - activemq_data:/opt/activemq/data
+      - activemq_conf:/opt/activemq/conf
     environment:
-      - CONFIG_KEY=config-value
+      - ACTIVEMQ_ADMIN_LOGIN=admin
+      - ACTIVEMQ_ADMIN_PASSWORD=admin123
+      - ACTIVEMQ_CONFIG_MINMEMORY=512
+      - ACTIVEMQ_CONFIG_MAXMEMORY=2048
     healthcheck:
-      test: ["CMD", "service-healthcheck"]
+      test: ["CMD", "curl", "-f", "http://localhost:8161/admin"]
       interval: 30s
       timeout: 10s
       retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
     networks:
-      - service-net
-
-  # Application using the service
-  app:
-    image: my-app:latest
-    container_name: app
-    restart: always
-    depends_on:
-      service:
-        condition: service_healthy
-    environment:
-      - SERVICE_URL=service://service:port
-    networks:
-      - service-net
+      - messaging_net
 
 volumes:
-  service-data:
+  activemq_data:
+  activemq_conf:
 
 networks:
-  service-net:
+  messaging_net:
     driver: bridge
 ```
 
-## Step 2: Configure the Service
+### Access the Web Console
 
-Create configuration files via Portainer's Configs section:
+1. Open `http://<server-ip>:8161/admin`
+2. Login with `admin` / `admin123`
+3. Navigate to **Queues** or **Topics** to manage destinations
+
+## Option 2: Deploy ActiveMQ Artemis (Next-Gen)
+
+ActiveMQ Artemis is the successor with improved performance and multi-protocol support.
 
 ```yaml
-# Service configuration
-server:
-  host: 0.0.0.0
-  port: 6379
-  
-logging:
-  level: INFO
-  
-persistence:
-  enabled: true
-  directory: /data
-  
-security:
-  # Enable authentication in production
-  authentication: true
-  password: ${SERVICE_PASSWORD}
+# docker-compose.yml - ActiveMQ Artemis
+version: "3.8"
+
+services:
+  artemis:
+    image: apache/activemq-artemis:latest
+    container_name: artemis
+    restart: unless-stopped
+    ports:
+      - "61616:61616"   # All protocols (AMQP, CORE, STOMP, MQTT)
+      - "8161:8161"     # Web console
+      - "5672:5672"     # AMQP
+      - "1883:1883"     # MQTT
+    volumes:
+      - artemis_data:/var/lib/artemis-instance
+    environment:
+      - ARTEMIS_USER=admin
+      - ARTEMIS_PASSWORD=admin123
+      - ANONYMOUS_LOGIN=false
+      - EXTRA_ARGS=--relax-jolokia
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8161/console"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - messaging_net
+
+volumes:
+  artemis_data:
+
+networks:
+  messaging_net:
+    driver: bridge
 ```
 
 ## Step 3: Test the Connection
 
-After deployment, test from Portainer's container console:
+After deployment, test from the Portainer container console:
 
 ```bash
-# Access the application container
-# Portainer > Containers > app > Console
+# Test from inside a container on the same network
+docker run --rm --network messaging_net \
+  eclipse-mosquitto:latest \
+  mosquitto_pub -h artemis -p 1883 -t test/topic -m "hello"
 
-# Test connection to service
-curl http://service:port/health
-
-# Or use service-specific CLI
-service-cli ping
-service-cli info
-
-# View service logs
-docker logs service --tail 50 -f
+# Test AMQP connectivity
+docker exec artemis /var/lib/artemis-instance/bin/artemis producer \
+  --url "tcp://localhost:61616" \
+  --user admin --password admin123 \
+  --destination queue://test.queue \
+  --message-count 10
 ```
 
-## Step 4: Production Configuration
-
-For production deployments, enhance security and reliability:
-
-```yaml
-services:
-  service:
-    image: service-image:latest
-    restart: always
-    # Resource limits
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-        reservations:
-          cpus: '0.5'
-          memory: 512M
-    # TLS configuration
-    environment:
-      - TLS_ENABLED=true
-      - TLS_CERT_FILE=/certs/service.crt
-      - TLS_KEY_FILE=/certs/service.key
-      - PASSWORD=${SERVICE_PASSWORD}
-    secrets:
-      - service-tls-cert
-      - service-tls-key
-    
-secrets:
-  service-tls-cert:
-    external: true
-  service-tls-key:
-    external: true
-```
-
-## Step 5: Set Up Monitoring
-
-Monitor service performance through Portainer:
-
-```yaml
-  # Prometheus exporter for metrics
-  service-exporter:
-    image: service/exporter:latest
-    container_name: service-exporter
-    restart: always
-    environment:
-      - SERVICE_ADDR=service:port
-    ports:
-      - "9999:9999"
-    networks:
-      - service-net
-```
-
-Configure Prometheus to scrape metrics:
-
-```yaml
-# prometheus.yml
-scrape_configs:
-  - job_name: 'service'
-    static_configs:
-      - targets: ['service-exporter:9999']
-```
-
-## Step 6: Configure Persistence and Backups
-
-Set up data persistence and automated backups:
+## Step 4: Create Queues and Topics
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/service"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# Using the Artemis CLI inside the container
+docker exec artemis /var/lib/artemis-instance/bin/artemis queue create \
+  --name order.queue \
+  --address order.queue \
+  --anycast \
+  --url tcp://localhost:61616 \
+  --user admin --password admin123
 
-# Create backup
-docker exec service service-cli dump /tmp/backup.rdb
-docker cp service:/tmp/backup.rdb $BACKUP_DIR/backup-$DATE.rdb
-
-# Retain 7 days of backups
-find $BACKUP_DIR -name "*.rdb" -mtime +7 -delete
-
-echo "Backup complete: $BACKUP_DIR/backup-$DATE.rdb"
+# View all queues
+docker exec artemis /var/lib/artemis-instance/bin/artemis queue stat \
+  --url tcp://localhost:61616 \
+  --user admin --password admin123
 ```
 
-## Step 7: Scale and High Availability
+## Step 5: Java Client Example
 
-For high availability, use multiple instances:
+```java
+// Maven dependency: org.apache.activemq:activemq-client:5.18.0
+import org.apache.activemq.ActiveMQConnectionFactory;
+import jakarta.jms.*;
 
-```yaml
-services:
-  service:
-    image: service-image:latest
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-        failure_action: rollback
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
+ConnectionFactory factory = new ActiveMQConnectionFactory(
+    "admin", "admin123",
+    "tcp://localhost:61616"
+);
+Connection connection = factory.createConnection();
+connection.start();
+
+Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+Queue queue = session.createQueue("order.queue");
+
+MessageProducer producer = session.createProducer(queue);
+TextMessage message = session.createTextMessage("Order #1234");
+producer.send(message);
+System.out.println("Message sent!");
+connection.close();
 ```
 
-## Client Application Integration
+## Step 6: Monitor with Portainer
 
-Example integration code:
-
-```python
-# Python client example
-import service_client
-
-client = service_client.connect(
-    host='localhost',
-    port=port,
-    password='your-password'
-)
-
-# Test connection
-client.ping()
-
-# Use the service
-result = client.execute("operation", "key", "value")
-print(f"Result: {result}")
-```
+- View ActiveMQ container logs: **Portainer > Containers > activemq/artemis > Logs**
+- Check memory usage: **Portainer > Containers > Stats**
+- Access the management console at `http://<server-ip>:8161`
 
 ## Conclusion
 
-Deploying ActiveMQ via Portainer provides a managed, production-ready service that integrates seamlessly with your containerized infrastructure. Portainer's stack management simplifies configuration, updates, and monitoring while the persistent volume configuration ensures your data survives container restarts. Following the production configuration recommendations ensures your deployment is secure and reliable.
+ActiveMQ Classic is best for existing JMS applications requiring backward compatibility. ActiveMQ Artemis offers better performance, multi-protocol support (JMS, AMQP, STOMP, MQTT), and is recommended for new deployments. Both run well as Portainer-managed Docker containers with persistent volumes for message durability.

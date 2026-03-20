@@ -4,271 +4,143 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Huginn, Automation, Docker, Self-Hosted
 
-Description: Deploy Huginn open-source automation agent platform using Portainer for automated data monitoring and tasks.
+Description: Deploy Huginn automation platform using Portainer as a self-hosted alternative to IFTTT and Zapier.
 
 ## Introduction
 
-Deploy Huginn open-source automation agent platform using Portainer for automated data monitoring and tasks. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Huginn is a self-hosted automation system that creates agents that monitor the web, send and receive webhooks, process data, and trigger actions. It is a self-hosted alternative to IFTTT and Zapier.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
+- At least 1 GB RAM
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Huginn
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  huginn:
+    image: ghcr.io/huginn/huginn:latest
+    container_name: huginn
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "3000:3000"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
+      - huginn_data:/var/lib/mysql
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - RAILS_ENV=production
+      - DATABASE_ADAPTER=mysql2
+      - DATABASE_HOST=huginn_mysql
+      - DATABASE_PORT=3306
+      - DATABASE_NAME=huginn
+      - DATABASE_USERNAME=huginn
+      - DATABASE_PASSWORD=${DB_PASSWORD}
+      - SECRET_TOKEN=${SECRET_TOKEN}
+      - INVITATION_CODE=${INVITATION_CODE}
+      - DOMAIN=localhost:3000
+      - EMAIL_FROM_ADDRESS=huginn@yourdomain.com
+      - SMTP_DOMAIN=yourdomain.com
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=587
+      - SMTP_AUTHENTICATION=plain
+      - SMTP_USER_NAME=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
     depends_on:
-      postgres:
+      huginn_mysql:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - huginn_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  huginn_mysql:
+    image: mysql:8.0
+    container_name: huginn_mysql
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - huginn_mysql_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=huginn
+      - MYSQL_USER=huginn
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - huginn_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  huginn_data:
+  huginn_mysql_data:
 
 networks:
-  app-net:
+  huginn_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
+```
+DB_PASSWORD=your-db-password
+MYSQL_ROOT_PASSWORD=your-mysql-root-password
+SECRET_TOKEN=your-100-char-random-secret
+INVITATION_CODE=your-invite-code
+SMTP_HOST=smtp.yourdomain.com
+SMTP_USER=noreply@yourdomain.com
+SMTP_PASSWORD=your-smtp-password
+```
 
+Generate a secret token:
 ```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+openssl rand -hex 64
 ```
 
-## Step 4: Initialize the Application
+## Step 3: Access Huginn
 
-After deployment, run the initial setup:
+Open `http://<host>:3000` and log in with the default account:
+- Username: `admin`
+- Password: `password`
 
-```bash
-# Access via Portainer container console
+Change the admin password immediately after first login.
 
-# Run database migrations
-docker exec app ./manage.py migrate
+## Step 4: Create an Agent
 
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
+1. Click **New Agent**
+2. Select an agent type (e.g., **Website Agent** to scrape a page)
+3. Configure the agent:
 
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+```json
+{
+  "expected_update_period_in_days": "1",
+  "url": "https://news.ycombinator.com/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "title": {
+      "css": ".storylink",
+      "value": "string(.)"
+    },
+    "url": {
+      "css": ".storylink",
+      "value": "@href"
     }
+  }
 }
 ```
 
-## Step 6: Configure Automated Backups
+## Step 5: Create a Scenario (Agent Chain)
 
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
-
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
-```
+1. Create a **Website Agent** to scrape data
+2. Create a **Trigger Agent** to filter results
+3. Create an **Email Agent** (or **Slack Agent**) to send notifications
+4. Link them: set upstream agents in each agent's "Sources"
 
 ## Conclusion
 
-Deploying Huginn via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Huginn's agents run on a configurable schedule and pass events down a pipeline. The MySQL backend persists all agent state and event history. For production, configure SMTP for email notifications and set a strong `INVITATION_CODE` to prevent unauthorized registrations. The `ghcr.io/huginn/huginn` image is the community-maintained Docker image for Huginn.

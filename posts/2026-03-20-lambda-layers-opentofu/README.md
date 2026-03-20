@@ -21,7 +21,7 @@ Lambda Layers let you package dependencies, libraries, and shared code separatel
 ```bash
 # Build Python dependencies for the Lambda layer
 mkdir -p layer/python
-pip install -r requirements.txt -t layer/python/ --platform mlinux_2_x86_64 --python-version 3.12
+pip install -r requirements.txt -t layer/python/ --platform manylinux2014_x86_64 --python-version 3.12
 
 # Or for Node.js
 mkdir -p layer/nodejs

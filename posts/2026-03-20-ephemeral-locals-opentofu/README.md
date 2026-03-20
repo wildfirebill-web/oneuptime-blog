@@ -8,7 +8,7 @@ Description: A guide to using ephemeral local values in OpenTofu to compute and 
 
 ## Introduction
 
-Ephemeral locals in OpenTofu (introduced in 1.10) are local values derived from ephemeral sources (like ephemeral variables or resources). Like ephemeral variables, ephemeral locals are not stored in the state file, making them safe for working with temporary credentials and sensitive computed values.
+Ephemeral locals in OpenTofu (introduced in 1.11) are local values derived from ephemeral sources (like ephemeral variables or resources). Like ephemeral variables, ephemeral locals are not stored in the state file, making them safe for working with temporary credentials and sensitive computed values.
 
 ## Declaring Ephemeral Locals
 

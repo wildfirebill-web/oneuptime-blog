@@ -2,181 +2,163 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Appwrite, Backend as a Service, Docker, Self-Hosted
+Tags: Portainer, Appwrite, Backend-as-a-Service, Docker, Self-Hosted
 
-Description: Deploy Appwrite self-hosted backend platform using Portainer for authentication, databases, and storage.
+Description: Deploy Appwrite open-source backend-as-a-service platform using Portainer for authentication, databases, storage, and serverless functions.
 
 ## Introduction
 
-Deploy Appwrite self-hosted backend platform using Portainer for authentication, databases, and storage. Portainer's stack management capabilities make deploying and managing Appwrite straightforward for development and production environments.
+Appwrite is a self-hosted backend-as-a-service (BaaS) that provides authentication, databases, file storage, serverless functions, and real-time APIs. This guide deploys Appwrite using its official Docker Compose configuration via Portainer.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
+- Minimum 2 CPUs and 4 GB RAM
+- A domain name (optional, for TLS)
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Create the Stack in Portainer
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Appwrite
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
+  appwrite:
+    image: appwrite/appwrite:1.5.7
     container_name: appwrite
-    restart: always
-    ports:
-      - "7700:7700"
-    volumes:
-      - app-data:/data
-    environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
-    networks:
-      - app-net
-
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    networks:
-      - app-net
-
-volumes:
-  app-data:
-  postgres-data:
-
-networks:
-  app-net:
-    driver: bridge
-```
-
-## Step 2: Configure Environment Variables
-
-Set the required environment variables in Portainer's stack editor:
-
-```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
-```
-
-## Step 3: Initialize the Application
-
-After deployment, complete initial setup:
-
-```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
-
-# Check application health
-curl http://localhost:7700/health
-
-# View startup logs
-docker logs appwrite --tail 50
-```
-
-## Step 4: Configure and Test
-
-Test the application functionality:
-
-```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
-
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
-
-# Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
-```
-
-## Step 5: Set Up Reverse Proxy
-
-Expose the service securely via Nginx or Traefik:
-
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - appwrite_uploads:/storage/uploads
+      - appwrite_cache:/storage/cache
+      - appwrite_config:/storage/config
+      - appwrite_certificates:/storage/certificates
+    environment:
+      - _APP_ENV=production
+      - _APP_OPENSSL_KEY_V1=${APPWRITE_OPENSSL_KEY}
+      - _APP_DOMAIN=${APPWRITE_DOMAIN}
+      - _APP_DOMAIN_TARGET=${APPWRITE_DOMAIN}
+      - _APP_REDIS_HOST=appwrite-redis
+      - _APP_REDIS_PORT=6379
+      - _APP_DB_HOST=appwrite-mariadb
+      - _APP_DB_PORT=3306
+      - _APP_DB_USER=appwrite
+      - _APP_DB_PASS=${DB_PASSWORD}
+      - _APP_DB_SCHEMA=appwrite
     depends_on:
-      - app
+      - appwrite-mariadb
+      - appwrite-redis
     networks:
-      - app-net
+      - appwrite_net
+
+  appwrite-mariadb:
+    image: mariadb:10.11
+    container_name: appwrite_mariadb
+    restart: unless-stopped
+    volumes:
+      - appwrite_mariadb:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=appwrite
+      - MYSQL_USER=appwrite
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - appwrite_net
+
+  appwrite-redis:
+    image: redis:7-alpine
+    container_name: appwrite_redis
+    restart: unless-stopped
+    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - appwrite_redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - appwrite_net
+
+  appwrite-worker-functions:
+    image: appwrite/appwrite:1.5.7
+    container_name: appwrite_worker_functions
+    restart: unless-stopped
+    entrypoint: worker-functions
+    environment:
+      - _APP_ENV=production
+      - _APP_REDIS_HOST=appwrite-redis
+      - _APP_REDIS_PORT=6379
+      - _APP_DB_HOST=appwrite-mariadb
+      - _APP_DB_PORT=3306
+      - _APP_DB_USER=appwrite
+      - _APP_DB_PASS=${DB_PASSWORD}
+      - _APP_DB_SCHEMA=appwrite
+    depends_on:
+      - appwrite-mariadb
+      - appwrite-redis
+    networks:
+      - appwrite_net
+
+volumes:
+  appwrite_uploads:
+  appwrite_cache:
+  appwrite_config:
+  appwrite_certificates:
+  appwrite_mariadb:
+  appwrite_redis:
+
+networks:
+  appwrite_net:
+    driver: bridge
 ```
 
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
+## Step 2: Set Environment Variables in Portainer
+
+```
+APPWRITE_OPENSSL_KEY=your-random-32-char-secret
+APPWRITE_DOMAIN=appwrite.yourdomain.com
+DB_PASSWORD=your-db-password
+MYSQL_ROOT_PASSWORD=your-root-password
 ```
 
-## Step 6: Configure Backups
+## Step 3: Access the Console
 
-Automate data backups:
+Open `http://<host>` in your browser. Complete the first-run setup to create an admin account.
+
+## Step 4: Create a Project via CLI
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/appwrite"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
+# Install Appwrite CLI
+npm install -g appwrite-cli
 
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
+# Login
+appwrite login
 
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
+# Initialize a project
+appwrite init project
 ```
 
-## Step 7: Update the Application
+## Step 5: Test the API
 
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
+```bash
+# Create a document via REST API
+curl -X POST 'https://appwrite.yourdomain.com/v1/databases/{databaseId}/collections/{collectionId}/documents' \
+  -H 'X-Appwrite-Project: <project-id>' \
+  -H 'X-Appwrite-Key: <api-key>' \
+  -H 'Content-Type: application/json' \
+  -d '{"documentId":"unique()", "data": {"name": "Alice"}}'
+```
 
 ## Conclusion
 
-Deploying Appwrite via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+Appwrite provides a complete backend stack (database, auth, storage, functions) as a single self-hosted deployment. The worker services handle asynchronous tasks like function execution and email sending. For production, configure `_APP_SMTP_HOST` for email delivery and `_APP_STORAGE_LIMIT` to control file upload sizes.

@@ -35,15 +35,11 @@ network:
 
   ethernets:
     eth0:
-      # IPv4 configuration
+      # IPv4 and IPv6 addresses (combined in a single addresses list)
       addresses:
-        - 192.168.1.10/24
-      gateway4: 192.168.1.1
-
-      # IPv6 static address
-      addresses:
-        - 192.168.1.10/24
+        - 192.168.1.10/24          # IPv4 address
         - 2001:db8::10/64          # IPv6 address
+      gateway4: 192.168.1.1
 
       # Default IPv6 gateway
       gateway6: 2001:db8::1

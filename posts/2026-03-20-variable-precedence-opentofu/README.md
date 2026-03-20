@@ -18,9 +18,9 @@ When multiple sources provide values for the same variable, OpenTofu uses a defi
 3. terraform.tfvars.json
 4. *.auto.tfvars (alphabetical order)
 5. *.auto.tfvars.json (alphabetical order)
-6. -var-file flags (in order specified)
-7. -var flags (in order specified)
-8. TF_VAR_ environment variables             <- HIGHEST (for CLI)
+6. TF_VAR_ environment variables
+7. -var-file flags (in order specified)
+8. -var flags (in order specified)            <- HIGHEST
 ```
 
 ## Demonstration

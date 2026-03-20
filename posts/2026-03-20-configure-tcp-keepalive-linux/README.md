@@ -54,13 +54,9 @@ def create_socket_with_keepalive():
     s.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
 
     # Override kernel defaults for this socket (Linux-specific)
-    TCP_KEEPIDLE  = 4   # Start keepalive after 60 seconds idle
-    TCP_KEEPINTVL = 11  # Probe every 10 seconds
-    TCP_KEEPCNT   = 12  # 6 probes before giving up
-
-    s.setsockopt(socket.IPPROTO_TCP, TCP_KEEPIDLE, 60)
-    s.setsockopt(socket.IPPROTO_TCP, TCP_KEEPINTVL, 10)
-    s.setsockopt(socket.IPPROTO_TCP, TCP_KEEPCNT, 6)
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 60)   # Start keepalive after 60 seconds idle
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 10)  # Probe every 10 seconds
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 6)     # 6 probes before giving up
 
     return s
 ```

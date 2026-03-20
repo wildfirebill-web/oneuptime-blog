@@ -16,11 +16,8 @@ IPv6 addresses in URLs require square brackets. This is a common source of bugs 
 package main
 
 import (
-    "html/template"
+    "fmt"
     "net/netip"
-    "net/url"
-    "os"
-    "strings"
 )
 
 // IPv6 template helper functions
@@ -142,6 +139,7 @@ package main
 
 import (
     "bytes"
+    "net/netip"
     "text/template"
 )
 

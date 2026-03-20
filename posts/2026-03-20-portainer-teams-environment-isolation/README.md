@@ -79,17 +79,17 @@ Grant each team access only to their environment:
 ENV_A_ID=1   # Tenant A's environment
 ENV_B_ID=2   # Tenant B's environment
 
-# Grant Team A access to Environment A (role 3 = Operator)
+# Grant Team A access to Environment A (role 2 = Operator)
 curl -s -X PUT "$PORTAINER/api/environments/$ENV_A_ID/teams/$TEAM_A_ID" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"Role": 3}'
+  -d '{"Role": 2}'
 
 # Grant Team B access to Environment B
 curl -s -X PUT "$PORTAINER/api/environments/$ENV_B_ID/teams/$TEAM_B_ID" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"Role": 3}'
+  -d '{"Role": 2}'
 
 # Do NOT grant Team A access to Environment B, or vice versa
 ```

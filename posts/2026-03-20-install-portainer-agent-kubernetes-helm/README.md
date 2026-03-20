@@ -51,7 +51,7 @@ helm install portainer-agent portainer/portainer-agent \
   --set env.edge.enable=true \
   --set env.edge.id="YOUR-EDGE-ID" \
   --set env.edge.key="YOUR-EDGE-KEY" \
-  --set env.edge.inseucre=false
+  --set env.edge.insecure=false
 ```
 
 ## Verify the Installation

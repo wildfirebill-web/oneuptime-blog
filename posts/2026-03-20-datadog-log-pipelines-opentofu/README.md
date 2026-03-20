@@ -1,81 +1,170 @@
-# How to Datadog Log Pipelines with OpenTofu
+# How to Manage Datadog Log Pipelines with OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Provider, Automation, DevOps
+Tags: OpenTofu, Datadog, Infrastructure as Code, Log Pipelines, Log Processing, Observability
 
-Description: Learn how to configure and use the Datadog Log Pipelines provider in OpenTofu to manage Datadog Log Pipelines resources as code.
+Description: Learn how to configure and manage Datadog log processing pipelines with parsers, processors, and filters using OpenTofu.
 
 ## Introduction
 
-The Datadog Log Pipelines provider for OpenTofu enables managing Datadog Log Pipelines resources with the same plan/apply workflow as your cloud infrastructure. This guide covers authentication, basic resource configuration, and production best practices.
+Datadog log pipelines parse, enrich, and filter incoming logs before they are indexed. Managing pipelines as code with OpenTofu ensures consistent log processing configurations across environments and enables change review via pull requests.
 
-## Provider Installation
+## Prerequisites
+
+- OpenTofu v1.6+
+- Datadog API key and Application key with `logs_write_pipelines` permission
+- The `DataDog/datadog` OpenTofu provider
+
+## Provider Configuration
 
 ```hcl
 terraform {
+  required_version = ">= 1.6.0"
   required_providers {
-    # Replace with the actual provider source
-    provider_name = {
-      source  = "provider-namespace/provider-name"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
-  required_version = ">= 1.6.0"
+}
+
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
 }
 ```
 
-## Authentication
-
-Most providers read credentials from environment variables:
-
-```bash
-# Set provider credentials via environment variables
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_API_SECRET="your-api-secret"
-```
+## Create a Log Processing Pipeline
 
 ```hcl
-provider "provider_name" {
-  # Credentials are read from environment variables
-  # api_key = var.api_key  # Alternative: inline (not recommended)
-}
-```
+# log_pipelines.tf
+resource "datadog_logs_pipeline" "nginx" {
+  name       = "Nginx Access Logs"
+  is_enabled = true
+  filter {
+    query = "source:nginx"
+  }
 
-## Example Resource
+  processor {
+    grok_parser {
+      name       = "Parse Nginx access log"
+      is_enabled = true
+      source     = "message"
+      grok {
+        support_rules = ""
+        match_rules   = "access_log %{ip:network.client.ip} - - \\[%{date(\"dd/MMM/yyyy:HH:mm:ss Z\"):date_access}\\] \"%{word:http.method} %{notSpace:http.url} HTTP/%{number:http.version}\" %{integer:http.status_code} %{integer:network.bytes_written}"
+      }
+    }
+  }
 
-```hcl
-# Example resource demonstrating provider usage
-resource "provider_example_resource" "main" {
-  name = "${var.name}-${var.environment}"
+  processor {
+    status_remapper {
+      name       = "Define status from HTTP status code"
+      is_enabled = true
+      sources    = ["http.status_code"]
+    }
+  }
 
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
+  processor {
+    url_parser {
+      name              = "Parse request URL"
+      is_enabled        = true
+      sources           = ["http.url"]
+      target            = "http.url_details"
+      normalize_ending_slashes = false
+    }
   }
 }
 ```
 
-## Variables
+## Create a Log Processing Pipeline with Category Processor
 
 ```hcl
-variable "name"        { type = string }
-variable "environment" { type = string }
+resource "datadog_logs_pipeline" "app_logs" {
+  name       = "Application Logs"
+  is_enabled = true
+
+  filter {
+    query = "service:myapp"
+  }
+
+  # Remap the log level to Datadog's reserved status field
+  processor {
+    status_remapper {
+      name       = "Remap log level to status"
+      is_enabled = true
+      sources    = ["level", "log_level", "severity"]
+    }
+  }
+
+  # Categorize HTTP status codes
+  processor {
+    category_processor {
+      name       = "Categorize HTTP responses"
+      is_enabled = true
+      target     = "http.response_category"
+
+      category {
+        filter { query = "@http.status_code:[200 TO 299]" }
+        name = "success"
+      }
+      category {
+        filter { query = "@http.status_code:[400 TO 499]" }
+        name = "client_error"
+      }
+      category {
+        filter { query = "@http.status_code:[500 TO 599]" }
+        name = "server_error"
+      }
+    }
+  }
+
+  # Add the environment tag
+  processor {
+    string_builder_processor {
+      name              = "Set environment tag"
+      is_enabled        = true
+      template          = "%{env}"
+      target            = "environment"
+      is_replace_missing = true
+    }
+  }
+}
 ```
 
-## Outputs
+## Log Index with Exclusion Filter
 
 ```hcl
-output "resource_id" { value = provider_example_resource.main.id }
+resource "datadog_logs_index" "main" {
+  name           = "main"
+  daily_limit    = 150000000
+
+  retention_days = 15
+
+  # Exclude health check logs from being indexed
+  exclusion_filter {
+    name       = "Exclude health checks"
+    is_enabled = true
+    filter {
+      query       = "service:myapp @http.url_details.path:\"/health\""
+      sample_rate = 1.0  # Exclude 100% of matching logs
+    }
+  }
+}
 ```
 
-## Best Practices
+## Deploy
 
-- Store API keys in environment variables or a secrets manager—never in .tf files
-- Pin provider versions in `required_providers` to prevent unexpected updates
-- Commit the `.terraform.lock.hcl` file to lock exact provider versions
-- Use separate provider configurations per environment using aliases or workspaces
+```bash
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
+
+tofu init
+tofu validate
+tofu apply
+```
 
 ## Conclusion
 
-Managing Datadog Log Pipelines resources with OpenTofu brings the same consistency and auditability to SaaS tooling as you get with cloud infrastructure. Start by codifying your most critical resources and gradually expand coverage over time.
+Datadog log pipelines managed with OpenTofu provide reproducible, reviewable log processing configurations. Use `grok_parser` for unstructured log parsing, `status_remapper` to normalize log levels, and `category_processor` to add business-context tags. Define exclusion filters on log indexes to reduce indexing costs for high-volume, low-value logs like health checks. Changes to pipeline configuration are visible in Git history, making debugging log processing issues easier.

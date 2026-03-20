@@ -8,150 +8,171 @@ Description: Learn how to create Datadog dashboards with widgets, timeboards, an
 
 ## Introduction
 
-This guide covers How to Create Dashboards with OpenTofu on Datadog using OpenTofu with practical examples and production-ready configurations.
+Managing Datadog dashboards as code with OpenTofu ensures consistent monitoring views across teams and enables code review for dashboard changes. The `datadog_dashboard` resource supports timeboards and screenboards with metric graphs, query value widgets, and log search panels.
 
 ## Prerequisites
 
 - OpenTofu v1.6+
-- API credentials for the relevant service
-- Basic understanding of OpenTofu concepts
+- Datadog API key and Application key
+- The `DataDog/datadog` OpenTofu provider
 
-## Step 1: Install and Configure the Provider
+## Provider Configuration
 
 ```hcl
+# versions.tf
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
-    # Provider configuration depends on the specific service
-    # Replace with the actual provider source and version
-    example = {
-      source  = "hashicorp/example"
-      version = "~> 1.0"
+    datadog = {
+      source  = "DataDog/datadog"
+      version = "~> 3.39"
     }
   }
 }
 
-# Configure the provider with credentials
-provider "example" {
-  # Use environment variables for credentials
-  # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.
-  
-  # Or specify directly (not recommended for secrets)
-  # api_key = var.api_key
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
 }
 ```
 
-## Step 2: Set Up Authentication
-
-```bash
-# Use environment variables for authentication
-export PROVIDER_API_KEY="your-api-key"
-export PROVIDER_TOKEN="your-token"
-export PROVIDER_ORG="your-organization"
-```
+## Create a Timeboard with Metric Widgets
 
 ```hcl
-variable "api_key" {
-  description = "API key for authentication"
-  type        = string
-  sensitive   = true
-}
+# dashboards.tf
+resource "datadog_dashboard" "service_overview" {
+  title        = "[${var.environment}] Service Overview"
+  description  = "Key metrics for the ${var.environment} environment"
+  layout_type  = "ordered"
+  reflow_type  = "fixed"
 
-variable "organization" {
-  description = "Organization name or ID"
-  type        = string
+  # Timeseries widget — request rate
+  widget {
+    timeseries_definition {
+      title       = "Request Rate"
+      show_legend = true
+
+      request {
+        q            = "sum:trace.web.request.hits{env:${var.environment}}.as_rate()"
+        display_type = "line"
+        style {
+          palette    = "dog_classic"
+          line_type  = "solid"
+          line_width = "normal"
+        }
+      }
+
+      yaxis {
+        label = "requests/s"
+        min   = "0"
+      }
+    }
+  }
+
+  # Query value widget — P99 latency
+  widget {
+    query_value_definition {
+      title       = "P99 Latency"
+      live_span   = "1h"
+
+      request {
+        q          = "p99:trace.web.request{env:${var.environment}}"
+        aggregator = "last"
+
+        conditional_formats {
+          comparator = ">"
+          value      = 1000
+          palette    = "red_on_white"
+        }
+        conditional_formats {
+          comparator = ">"
+          value      = 500
+          palette    = "yellow_on_white"
+        }
+        conditional_formats {
+          comparator = "<="
+          value      = 500
+          palette    = "green_on_white"
+        }
+      }
+
+      autoscale  = true
+      precision  = 2
+      unit       = "ms"
+    }
+  }
+
+  # Heatmap widget — error rate by service
+  widget {
+    heatmap_definition {
+      title = "Error Rate by Service"
+
+      request {
+        q = "sum:trace.web.request.errors{env:${var.environment}} by {service}.as_rate() / sum:trace.web.request.hits{env:${var.environment}} by {service}.as_rate() * 100"
+      }
+
+      yaxis {
+        label = "error %"
+        min   = "0"
+        max   = "100"
+      }
+    }
+  }
+
+  tags = ["env:${var.environment}", "managed-by:opentofu", "team:platform"]
 }
 ```
 
-## Step 3: Create Basic Resources
+## Create a Screenboard with Log Search
 
 ```hcl
-# Example resource creation
-# Replace with actual resource types for the provider
+resource "datadog_dashboard" "logs_overview" {
+  title       = "[${var.environment}] Logs Overview"
+  layout_type = "free"
 
-resource "example_project" "main" {
-  name        = "${var.environment}-project"
-  description = "Managed by OpenTofu"
-
-  tags = {
-    environment = var.environment
-    managed_by  = "opentofu"
+  widget {
+    log_stream_definition {
+      title   = "Recent Errors"
+      indexes = ["main"]
+      query   = "env:${var.environment} status:error"
+      columns = ["core_host", "core_service", "core_status"]
+      show_date_column    = true
+      show_message_column = true
+      sort {
+        column    = "time"
+        order     = "desc"
+      }
+    }
+    widget_layout {
+      x      = 0
+      y      = 0
+      width  = 12
+      height = 6
+    }
   }
 }
-
-# Configure access control
-resource "example_team" "developers" {
-  name    = "developers"
-  project = example_project.main.id
-  role    = "contributor"
-}
 ```
 
-## Step 4: Configure Advanced Settings
+## Outputs
 
 ```hcl
-# Monitoring and alerting configuration
-resource "example_alert" "main" {
-  name      = "critical-alert"
-  project   = example_project.main.id
-  severity  = "critical"
-  threshold = 90
-
-  notification {
-    channel = var.notification_channel
-  }
-}
-
-# Backup and retention policies
-resource "example_backup_policy" "main" {
-  name              = "daily-backup"
-  project           = example_project.main.id
-  retention_days    = 30
-  schedule          = "0 2 * * *"  # Daily at 2 AM
+output "service_overview_url" {
+  description = "URL of the service overview dashboard"
+  value       = datadog_dashboard.service_overview.url
 }
 ```
 
-## Step 5: Define Outputs
-
-```hcl
-output "project_id" {
-  description = "The ID of the created project"
-  value       = example_project.main.id
-}
-
-output "project_name" {
-  description = "The name of the created project"
-  value       = example_project.main.name
-}
-```
-
-## Step 6: Deploy
+## Deploy
 
 ```bash
-# Initialize OpenTofu and download provider
+export DD_API_KEY="your-datadog-api-key"
+export DD_APP_KEY="your-datadog-app-key"
+
 tofu init
-
-# Validate configuration syntax
-tofu validate
-
-# Preview planned changes
-tofu plan
-
-# Apply configuration
+tofu plan -var="datadog_api_key=$DD_API_KEY" -var="datadog_app_key=$DD_APP_KEY"
 tofu apply
 ```
 
-## Common Issues and Solutions
-
-### Authentication Errors
-Verify API keys are valid and have the required permissions. Check for typos in environment variable names.
-
-### Rate Limiting
-Add `depends_on` to serialize resource creation and avoid hitting API rate limits.
-
-### Provider Version Conflicts
-Pin to a specific provider version range to ensure reproducible deployments.
-
 ## Conclusion
 
-You have successfully configured How to Create Dashboards with OpenTofu on Datadog using OpenTofu. This provider enables you to manage all aspects of the service as code, ensuring consistency and enabling GitOps workflows. Always use environment variables or secure secret stores for sensitive credentials.
+Datadog dashboards managed with OpenTofu can be versioned in Git, reviewed via pull requests, and deployed consistently across environments. Use the `datadog_dashboard` resource with `layout_type = "ordered"` for timeboards and `"free"` for screenboards. Parameterize with `var.environment` to generate environment-specific dashboards from a single module.

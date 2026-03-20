@@ -4,271 +4,111 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Focalboard, Project Management, Docker, Self-Hosted
 
-Description: Deploy Focalboard open-source project management and collaboration tool using Portainer.
+Description: Deploy Focalboard open-source project management tool via Portainer as a self-hosted alternative to Trello and Asana.
 
 ## Introduction
 
-Deploy Focalboard open-source project management and collaboration tool using Portainer. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Focalboard is an open-source, self-hosted project management tool that is an alternative to Trello, Notion, and Asana. It supports board, gallery, table, and calendar views backed by PostgreSQL. Note: Focalboard is now part of Mattermost and the standalone version is in maintenance mode; for active development use the Mattermost integration.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Focalboard
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  focalboard:
+    image: mattermost/focalboard:7.11.4
+    container_name: focalboard
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8000:8000"
     volumes:
-      - app-data:/app/data
-      - app-config:/app/config
-    environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - focalboard_data:/opt/focalboard/data
+      - ./config.json:/opt/focalboard/config.json:ro
     depends_on:
-      postgres:
+      focalboard_postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - focalboard_net
 
-  postgres:
+  focalboard_postgres:
     image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    container_name: focalboard_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - focalboard_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=focalboard
+      - POSTGRES_USER=focalboard
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U focalboard"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - focalboard_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  focalboard_data:
+  focalboard_postgres_data:
 
 networks:
-  app-net:
+  focalboard_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Create the Configuration File
 
-Set these environment variables in Portainer's stack editor:
-
-```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
-```
-
-## Step 4: Initialize the Application
-
-After deployment, run the initial setup:
+Create `config.json` on the host before starting the stack:
 
 ```bash
-# Access via Portainer container console
-
-# Run database migrations
-docker exec app ./manage.py migrate
-
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
+cat > /path/to/config.json << 'EOF'
+{
+    "serverRoot": "http://localhost:8000",
+    "port": 8000,
+    "dbtype": "postgres",
+    "dbconfig": "postgres://focalboard:YOUR_DB_PASSWORD@focalboard_postgres:5432/focalboard?sslmode=disable",
+    "useSSL": false,
+    "webpath": "./pack",
+    "filespath": "/opt/focalboard/data/files",
+    "telemetry": false,
+    "prometheus_address": ":9092",
+    "session_expire_time": 2592000,
+    "session_refresh_time": 18000,
+    "localOnly": false,
+    "enableLocalMode": true,
+    "localModeSocketLocation": "/var/tmp/focalboard_local.socket"
 }
-
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
+EOF
 ```
 
-## Step 6: Configure Automated Backups
+Update the `dbconfig` with your actual `DB_PASSWORD`.
+
+## Step 3: Access Focalboard
+
+Open `http://<host>:8000` and register a new user account.
+
+## Step 4: Use the REST API
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
+# Login
+curl -X POST http://localhost:8000/api/v2/login \
+  -H 'Content-Type: application/json' \
+  -d '{"type": "normal", "username": "admin", "password": "your-password"}'
 
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
-
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
-
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
-```
-
-## Step 7: Monitoring and Alerting
-
-View application health in Portainer:
-
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+# List boards
+curl http://localhost:8000/api/v2/boards \
+  -H 'Authorization: Bearer <token>'
 ```
 
 ## Conclusion
 
-Deploying Focalboard via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Focalboard uses a PostgreSQL backend for persistent storage. The `config.json` file controls database connection, file storage location, and session management. For new projects, consider using Mattermost's integrated Focalboard (Boards) for ongoing updates and active maintenance.

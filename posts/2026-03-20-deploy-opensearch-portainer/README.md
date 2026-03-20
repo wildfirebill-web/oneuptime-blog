@@ -4,179 +4,130 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, OpenSearch, Search, Elasticsearch, Docker
 
-Description: Deploy OpenSearch (Elasticsearch fork) using Portainer for full-text search and log analytics.
+Description: Deploy OpenSearch search and analytics engine using Portainer as an open-source alternative to Elasticsearch.
 
 ## Introduction
 
-Deploy OpenSearch (Elasticsearch fork) using Portainer for full-text search and log analytics. Portainer's stack management capabilities make deploying and managing OpenSearch straightforward for development and production environments.
+OpenSearch is an open-source, community-driven fork of Elasticsearch and Kibana. It provides distributed search, analytics, and observability with a permissive Apache 2.0 license. OpenSearch Dashboards (the OpenSearch equivalent of Kibana) provides visualization and exploration.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
+- At least 4 GB RAM (set `vm.max_map_count=262144` on the host)
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Set the Required Kernel Parameter
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+```bash
+# Required for OpenSearch/Elasticsearch
+sudo sysctl -w vm.max_map_count=262144
+
+# Make it persistent
+echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
+```
+
+## Step 2: Create the Stack in Portainer
+
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - OpenSearch + OpenSearch Dashboards
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
+  opensearch:
+    image: opensearchproject/opensearch:2.14.0
     container_name: opensearch
-    restart: always
+    restart: unless-stopped
     ports:
-      - "7700:7700"
+      - "9200:9200"
+      - "9300:9300"
     volumes:
-      - app-data:/data
+      - opensearch_data:/usr/share/opensearch/data
     environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
+      - cluster.name=opensearch-cluster
+      - node.name=opensearch-node1
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_ADMIN_PASSWORD}
+      - plugins.security.disabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      test: ["CMD-SHELL", "curl -s -k -u admin:${OPENSEARCH_ADMIN_PASSWORD} https://localhost:9200/_cluster/health | grep -qE 'green|yellow'"]
       interval: 30s
       timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+      retries: 5
     networks:
-      - app-net
+      - opensearch_net
 
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:2.14.0
+    container_name: opensearch_dashboards
+    restart: unless-stopped
+    ports:
+      - "5601:5601"
     environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - OPENSEARCH_HOSTS=["https://opensearch:9200"]
+      - OPENSEARCH_USERNAME=admin
+      - OPENSEARCH_PASSWORD=${OPENSEARCH_ADMIN_PASSWORD}
+    depends_on:
+      opensearch:
+        condition: service_healthy
     networks:
-      - app-net
+      - opensearch_net
 
 volumes:
-  app-data:
-  postgres-data:
+  opensearch_data:
 
 networks:
-  app-net:
+  opensearch_net:
     driver: bridge
 ```
 
-## Step 2: Configure Environment Variables
+## Step 3: Set Environment Variables in Portainer
 
-Set the required environment variables in Portainer's stack editor:
-
-```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
+```
+OPENSEARCH_ADMIN_PASSWORD=Admin@123Secure!
 ```
 
-## Step 3: Initialize the Application
+The `OPENSEARCH_INITIAL_ADMIN_PASSWORD` must meet the default security policy (uppercase, lowercase, number, special char, min 8 chars).
 
-After deployment, complete initial setup:
+## Step 4: Test the Cluster
 
 ```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
+# Check cluster health
+curl -k -u admin:Admin@123Secure! https://localhost:9200/_cluster/health?pretty
 
-# Check application health
-curl http://localhost:7700/health
-
-# View startup logs
-docker logs opensearch --tail 50
+# List indices
+curl -k -u admin:Admin@123Secure! https://localhost:9200/_cat/indices?v
 ```
 
-## Step 4: Configure and Test
-
-Test the application functionality:
+## Step 5: Index and Search Documents
 
 ```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
-
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
+# Index a document
+curl -k -u admin:Admin@123Secure! \
+  -X POST "https://localhost:9200/my-index/_doc/1" \
+  -H 'Content-Type: application/json' \
+  -d '{"title": "OpenSearch is great", "timestamp": "2024-01-01T00:00:00Z"}'
 
 # Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
+curl -k -u admin:Admin@123Secure! \
+  -X GET "https://localhost:9200/my-index/_search" \
+  -H 'Content-Type: application/json' \
+  -d '{"query": {"match": {"title": "OpenSearch"}}}'
 ```
 
-## Step 5: Set Up Reverse Proxy
+## Step 6: Access OpenSearch Dashboards
 
-Expose the service securely via Nginx or Traefik:
-
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-## Step 6: Configure Backups
-
-Automate data backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/opensearch"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
-```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
+Open `http://<host>:5601` and log in with username `admin` and your `OPENSEARCH_ADMIN_PASSWORD`.
 
 ## Conclusion
 
-Deploying OpenSearch via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+OpenSearch uses HTTPS and the security plugin by default in versions 2.x+. The `OPENSEARCH_INITIAL_ADMIN_PASSWORD` env var sets the admin user password on first run. For single-node deployments set `discovery.type=single-node` to avoid cluster bootstrap issues. The `vm.max_map_count=262144` kernel parameter is mandatory — without it, OpenSearch will fail to start.

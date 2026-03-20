@@ -4,271 +4,147 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Hasura, GraphQL, Docker, PostgreSQL
 
-Description: Deploy Hasura GraphQL engine using Portainer for instant real-time GraphQL APIs over your PostgreSQL database.
+Description: Deploy Hasura GraphQL Engine using Portainer to instantly generate a real-time GraphQL API over your PostgreSQL database.
 
 ## Introduction
 
-Deploy Hasura GraphQL engine using Portainer for instant real-time GraphQL APIs over your PostgreSQL database. This comprehensive guide walks through deployment, configuration, and maintenance using Portainer's visual management interface.
+Hasura GraphQL Engine connects to a PostgreSQL database and auto-generates a full-featured GraphQL API with queries, mutations, and subscriptions. It supports row-level authorization (permissions), remote schemas, event triggers, and scheduled triggers.
 
 ## Prerequisites
 
-- Portainer installed (CE or BE)
-- Docker environment connected to Portainer
-- Appropriate hardware resources
-- Basic Docker and networking knowledge
+- Portainer installed with Docker
 
-## Step 1: Prepare the Environment
+## Step 1: Create the Stack in Portainer
 
-Before deploying, ensure your environment is ready:
-
-```bash
-# Check available resources
-free -h          # Memory
-df -h            # Disk space
-nproc            # CPU cores
-
-# Verify Docker is running
-docker info
-```
-
-## Step 2: Create the Portainer Stack
-
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Hasura GraphQL Engine
 version: "3.8"
 
 services:
-  # Main application service
-  app:
-    image: app-image:latest
-    container_name: app
-    restart: always
+  hasura:
+    image: hasura/graphql-engine:v2.40.0
+    container_name: hasura
+    restart: unless-stopped
     ports:
       - "8080:8080"
-    volumes:
-      - app-data:/app/data
-      - app-config:/app/config
     environment:
-      - NODE_ENV=production
-      - SECRET_KEY=${SECRET_KEY}
-      - DATABASE_URL=postgresql://appuser:${DB_PASSWORD}@postgres:5432/appdb
-      - REDIS_URL=redis://redis:6379
+      - HASURA_GRAPHQL_DATABASE_URL=postgres://hasura:${DB_PASSWORD}@hasura_postgres:5432/hasura
+      - HASURA_GRAPHQL_ENABLE_CONSOLE=true
+      - HASURA_GRAPHQL_DEV_MODE=false
+      - HASURA_GRAPHQL_ENABLED_LOG_TYPES=startup,http-log,webhook-log,websocket-log,query-log
+      - HASURA_GRAPHQL_ADMIN_SECRET=${HASURA_ADMIN_SECRET}
+      - HASURA_GRAPHQL_JWT_SECRET=${HASURA_JWT_SECRET}
     depends_on:
-      postgres:
+      hasura_postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 2G
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "5"
     networks:
-      - app-net
+      - hasura_net
 
-  postgres:
-    image: postgres:15-alpine
-    container_name: app-postgres
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
+  hasura_postgres:
+    image: postgres:16-alpine
+    container_name: hasura_postgres
+    restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - hasura_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=hasura
+      - POSTGRES_USER=hasura
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      test: ["CMD-SHELL", "pg_isready -U hasura"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-net
-
-  redis:
-    image: redis:7-alpine
-    container_name: app-redis
-    restart: always
-    volumes:
-      - redis-data:/data
-    command: redis-server --appendonly yes
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - app-net
+      - hasura_net
 
 volumes:
-  app-data:
-  app-config:
-  postgres-data:
-  redis-data:
+  hasura_postgres_data:
 
 networks:
-  app-net:
+  hasura_net:
     driver: bridge
 ```
 
-## Step 3: Configure Environment Variables
+## Step 2: Set Environment Variables in Portainer
 
-Set these environment variables in Portainer's stack editor:
-
-```bash
-SECRET_KEY=generate-a-strong-random-key-here
-DB_PASSWORD=strong-database-password
-APP_URL=https://app.example.com
-ADMIN_EMAIL=admin@example.com
+```
+DB_PASSWORD=your-postgres-password
+HASURA_ADMIN_SECRET=your-admin-secret-min-32-chars
+HASURA_JWT_SECRET={"type":"HS256","key":"your-jwt-secret-min-32-chars"}
 ```
 
-## Step 4: Initialize the Application
+## Step 3: Access the Hasura Console
 
-After deployment, run the initial setup:
+Open `http://<host>:8080/console` and enter your `HASURA_ADMIN_SECRET`.
 
-```bash
-# Access via Portainer container console
+## Step 4: Track Tables and Run GraphQL Queries
 
-# Run database migrations
-docker exec app ./manage.py migrate
+In the Hasura Console:
+1. Go to **Data** > **Track all** to expose your tables as GraphQL types
+2. Set up relationships between tables
 
-# Create initial admin user
-docker exec -it app ./manage.py createsuperuser
-
-# Verify deployment
-curl http://localhost:8080/api/health
-```
-
-## Step 5: Configure SSL/TLS
-
-Set up HTTPS via reverse proxy:
-
-```yaml
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-server {
-    listen 80;
-    server_name app.example.com;
-    return 301 https://$server_name$request_uri;
+```graphql
+# Query example
+query GetUsers {
+  users(limit: 10, order_by: {created_at: desc}) {
+    id
+    name
+    email
+    created_at
+  }
 }
 
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    
-    location / {
-        proxy_pass http://app:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
+# Mutation example
+mutation InsertUser {
+  insert_users_one(object: {name: "Alice", email: "alice@example.com"}) {
+    id
+    created_at
+  }
+}
+
+# Subscription (real-time)
+subscription WatchUsers {
+  users(limit: 5, order_by: {created_at: desc}) {
+    id
+    name
+  }
 }
 ```
 
-## Step 6: Configure Automated Backups
+## Step 5: Apply Metadata with the CLI
 
 ```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/app"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p "$BACKUP_DIR/$DATE"
+# Install Hasura CLI
+curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
-# Backup PostgreSQL database
-docker exec app-postgres pg_dump -U appuser appdb |   gzip > "$BACKUP_DIR/$DATE/database.sql.gz"
+# Initialize a Hasura project
+hasura init my-project --endpoint http://localhost:8080 \
+  --admin-secret your-admin-secret
 
-# Backup application data volumes
-for volume in app-data app-config; do
-  docker run --rm     -v ${volume}:/source:ro     -v "$BACKUP_DIR/$DATE":/backup     alpine tar czf "/backup/${volume}.tar.gz" -C /source .
-done
+# Export current metadata
+cd my-project
+hasura metadata export
 
-echo "Backup complete in $BACKUP_DIR/$DATE"
-
-# Clean up old backups (keep 7 days)
-find $BACKUP_DIR -maxdepth 1 -type d -mtime +7 | xargs rm -rf
+# Apply metadata to a new instance
+hasura metadata apply
 ```
 
-## Step 7: Monitoring and Alerting
+## Step 6: Set Row-Level Permissions
 
-View application health in Portainer:
+In the Hasura Console under **Data** > **<table>** > **Permissions**:
 
-1. **Container Stats**: Portainer > Containers > app > Stats
-2. **Logs**: Portainer > Containers > app > Logs
-3. **Health Status**: Green indicator in container list
-
-Set up external monitoring:
-
-```yaml
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:latest
-    container_name: uptime-kuma
-    restart: always
-    ports:
-      - "3001:3001"
-    volumes:
-      - uptime-data:/app/data
-```
-
-## Updating to New Versions
-
-Safely update the application:
-
-1. Backup your data first (run backup.sh)
-2. Edit the stack in Portainer
-3. Update the image tag to new version
-4. Click **Update the stack**
-5. Monitor logs for successful startup
-6. Verify functionality
-
-## Troubleshooting Common Issues
-
-```bash
-# Container fails to start
-docker logs app --tail 100
-
-# Database connection issues
-docker exec app pg_isready -h postgres -U appuser
-
-# Permission issues
-docker exec app ls -la /app/data
-
-# Network connectivity
-docker exec app curl -I http://postgres:5432
+```json
+// Allow users to only read their own rows
+{
+  "user_id": {
+    "_eq": "X-Hasura-User-Id"
+  }
+}
 ```
 
 ## Conclusion
 
-Deploying Hasura GraphQL Engine via Portainer provides a streamlined, manageable approach to running this application in your infrastructure. With persistent storage for data, automated backups, SSL termination, and Portainer's visual management capabilities, this deployment is production-ready. The modular docker-compose structure makes it easy to customize and scale as your needs evolve.
+Hasura auto-generates a GraphQL API the moment you track your tables — no resolvers to write. The `HASURA_GRAPHQL_JWT_SECRET` enables token-based auth: include a JWT with `x-hasura-user-id` and `x-hasura-role` claims and Hasura enforces permissions automatically. Disable `HASURA_GRAPHQL_DEV_MODE` and `HASURA_GRAPHQL_ENABLE_CONSOLE` in production-facing deployments.

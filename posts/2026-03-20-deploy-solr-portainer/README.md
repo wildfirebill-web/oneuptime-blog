@@ -4,179 +4,125 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Solr, Search, Apache, Docker
 
-Description: Deploy Apache Solr enterprise search platform using Portainer for powerful full-text search capabilities.
+Description: Deploy Apache Solr enterprise search platform using Portainer with core management and REST API access.
 
 ## Introduction
 
-Deploy Apache Solr enterprise search platform using Portainer for powerful full-text search capabilities. Portainer's stack management capabilities make deploying and managing Solr straightforward for development and production environments.
+Apache Solr is an enterprise-grade, open-source search platform built on Apache Lucene. It provides full-text search, faceting, hit highlighting, geospatial search, and real-time indexing. Solr is used by major organizations for high-volume search requirements.
 
 ## Prerequisites
 
 - Portainer installed with Docker
-- At least 2-4 GB RAM
-- Sufficient disk space for data storage
+- At least 2 GB RAM
 
-## Step 1: Deploy via Portainer Stack
+## Step 1: Create the Stack in Portainer
 
-Navigate to **Stacks** > **Add Stack** in Portainer:
+Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
-# docker-compose.yml
+# docker-compose.yml - Apache Solr
 version: "3.8"
 
 services:
-  app:
-    image: app-image:latest
+  solr:
+    image: solr:9.6-slim
     container_name: solr
-    restart: always
+    restart: unless-stopped
     ports:
-      - "7700:7700"
+      - "8983:8983"
     volumes:
-      - app-data:/data
+      - solr_data:/var/solr
     environment:
-      - MASTER_KEY=${MASTER_KEY}
-      - ENV=production
+      - SOLR_HEAP=512m
+      - SOLR_JAVA_MEM=-Xms512m -Xmx512m
+    command:
+      - solr-foreground
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8983/solr/admin/info/system"]
       interval: 30s
       timeout: 10s
-      retries: 3
-    logging:
-      driver: json-file
-      options:
-        max-size: "100m"
-        max-file: "3"
+      retries: 5
     networks:
-      - app-net
-
-  # PostgreSQL for relational data (if needed)
-  postgres:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=appuser
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    networks:
-      - app-net
+      - solr_net
 
 volumes:
-  app-data:
-  postgres-data:
+  solr_data:
 
 networks:
-  app-net:
+  solr_net:
     driver: bridge
 ```
 
-## Step 2: Configure Environment Variables
-
-Set the required environment variables in Portainer's stack editor:
+## Step 2: Create a Core
 
 ```bash
-MASTER_KEY=your-secure-master-key
-DB_PASSWORD=secure-database-password
-APP_URL=https://app.example.com
+# Create a new Solr core named "products"
+docker exec solr solr create_core -c products
+
+# List all cores
+curl http://localhost:8983/solr/admin/cores?action=STATUS
 ```
 
-## Step 3: Initialize the Application
-
-After deployment, complete initial setup:
+## Step 3: Index Documents
 
 ```bash
-# Access the container via Portainer console
-# Portainer > Containers > app > Console
+# Index JSON documents
+curl -X POST "http://localhost:8983/solr/products/update/json/docs" \
+  -H 'Content-Type: application/json' \
+  -d '[
+    {"id": "1", "name": "Laptop Pro", "brand": "TechCorp", "price": 1299.99, "category": "Electronics"},
+    {"id": "2", "name": "Wireless Mouse", "brand": "InputCo", "price": 49.99, "category": "Accessories"},
+    {"id": "3", "name": "USB-C Hub", "brand": "ConnectCo", "price": 79.99, "category": "Accessories"}
+  ]'
 
-# Check application health
-curl http://localhost:7700/health
+# Commit the changes (make them searchable)
+curl "http://localhost:8983/solr/products/update?commit=true"
 
-# View startup logs
-docker logs solr --tail 50
+# Index from a CSV file
+curl "http://localhost:8983/solr/products/update/csv?commit=true&header=true" \
+  --data-binary @products.csv \
+  -H 'Content-Type: application/csv'
 ```
 
-## Step 4: Configure and Test
-
-Test the application functionality:
+## Step 4: Search
 
 ```bash
-# Create a test index/collection
-curl -X POST 'http://localhost:7700/indexes'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '{"uid": "test", "primaryKey": "id"}'
+# Basic search
+curl "http://localhost:8983/solr/products/select?q=laptop&wt=json&indent=true"
 
-# Add test documents
-curl -X POST 'http://localhost:7700/indexes/test/documents'   -H 'Authorization: Bearer your-master-key'   -H 'Content-Type: application/json'   --data-binary '[{"id": 1, "name": "test document", "content": "hello world"}]'
+# Filter query (doesn't affect relevance scoring)
+curl "http://localhost:8983/solr/products/select?q=*:*&fq=category:Electronics&wt=json"
 
-# Search
-curl 'http://localhost:7700/indexes/test/search?q=hello'   -H 'Authorization: Bearer your-master-key'
+# Faceted search
+curl "http://localhost:8983/solr/products/select?q=*:*&facet=true&facet.field=category&wt=json"
+
+# Full-text search with highlighting
+curl "http://localhost:8983/solr/products/select?q=name:wireless&hl=true&hl.fl=name&wt=json"
 ```
 
-## Step 5: Set Up Reverse Proxy
+## Step 5: Configure Schema
 
-Expose the service securely via Nginx or Traefik:
-
-```yaml
-# Add to your stack
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - app
-    networks:
-      - app-net
-```
-
-```nginx
-# nginx.conf
-server {
-    listen 443 ssl;
-    server_name app.example.com;
-    
-    ssl_certificate /etc/nginx/certs/cert.pem;
-    ssl_certificate_key /etc/nginx/certs/key.pem;
-    
-    location / {
-        proxy_pass http://app:7700;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+```bash
+# Add a field to the schema
+curl -X POST "http://localhost:8983/solr/products/schema" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "add-field": {
+      "name": "description",
+      "type": "text_general",
+      "stored": true,
+      "indexed": true
     }
-}
+  }'
+
+# View current schema
+curl "http://localhost:8983/solr/products/schema"
 ```
 
-## Step 6: Configure Backups
+## Step 6: Access the Admin UI
 
-Automate data backups:
-
-```bash
-#!/bin/bash
-# backup.sh
-BACKUP_DIR="/backups/solr"
-DATE=$(date +%Y%m%d_%H%M%S)
-mkdir -p $BACKUP_DIR
-
-docker run --rm   -v app-data:/source:ro   -v $BACKUP_DIR:/backup   alpine tar czf /backup/data-$DATE.tar.gz -C /source .
-
-echo "Backup complete: $BACKUP_DIR/data-$DATE.tar.gz"
-
-# Retain 7 days
-find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
-```
-
-## Step 7: Update the Application
-
-Update to newer versions via Portainer:
-
-1. Edit the stack in Portainer
-2. Update the image tag to the new version
-3. Click **Update the stack**
-4. Monitor logs during the update
+Open `http://<host>:8983/solr` to access the Solr Admin UI. Use the **Core Selector** to browse cores, run queries, and view schema.
 
 ## Conclusion
 
-Deploying Solr via Portainer provides a well-managed, production-ready instance that's easy to maintain. The persistent volume configuration ensures data survives container restarts and updates, while Portainer's visual interface simplifies ongoing management tasks. With proper backup automation and a reverse proxy for SSL termination, this deployment is suitable for production use.
+Solr uses cores (single search indexes) or collections (SolrCloud distributed indexes). For a single-node deployment, cores are sufficient. The `SOLR_HEAP` env var controls JVM heap size — set it to roughly 50% of available RAM. Use `commit=true` after bulk indexing to make documents searchable immediately, or configure `autoCommit` in `solrconfig.xml` for production workloads.
